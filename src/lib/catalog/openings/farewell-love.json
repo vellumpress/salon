@@ -1,0 +1,161 @@
+{
+  "id": "farewell-love",
+  "title": "Farewell Love!",
+  "author": "Matilde Serao (tr. Aline Harland)",
+  "year": "1906",
+  "note": "Project Gutenberg 54619 (tr. Aline Harland, per PG). Whole novel, Parts I–II, 12 chapters (PG l.257–9080), labelled 'Part n · Chapter n', ending 'So died Anna Acquaviva, innocent.', after the author's short dedication (l.127–131) as its own front section. The series ad list, illustration tags, title page, Gosse's introduction, the transcriber's contents, the colophon and the transcriber's notes out. The two voi / tu footnotes kept as Note: lines after their paragraphs; the other five footnotes dropped. Straight quotes kept as printed; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. EN 1906 (PG text: 'LONDON: LONDON BOOK CO. 1906'). PG reading-ease 83.6 — no invented Launch rank. Place: Naples, Italy. Sits: unwind. Host intro: Naples. Anna loves without measure: first a man who answers her with duty, then the cool, older husband she marries. Fast, hot and very Neapolitan. A heads-up before you start: the passion is obsessive, and at the end Anna shoots herself, shown directly.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Chapter I · Naples, Italy",
+      "place": "Part I · Chapter I · Naples, Italy",
+      "reentry": "Motionless under the white coverlet of her bed, Anna appeared to have been sleeping soundly for the past two hours.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Motionless under the white coverlet of her bed, Anna appeared to have been sleeping soundly for the past two hours."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Her sister Laura, who occupied a little cot at the other end of the big room, had that evening much prolonged her customary reading, which followed the last gossip of the day between the girls. But no sooner had she put out her candle than Anna opened her eyes and fixed them upon Laura's bed, which glimmered vaguely white in the distance."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Anna was wide awake."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "She dared not move, she dared not even sigh; and all her life was in her gaze, trying to penetrate the secret of the dusk—trying to see whether really her sister was asleep. It was a winter's night, and as the hour advanced the room became colder and colder; but Anna did not feel it."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "The moment the light had been extinguished a flame had leapt from her heart to her brain, diffusing itself through all her members, scalding her veins, scorching her flesh, quickening the beating of her pulses. As in the height of fever, she felt herself burning up; her tongue was dry, her head was hot; and the icy air that entered her lungs could not quench the fire in her, could not subdue the tumultuous irruption of her young blood."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Often, to relieve herself, she had longed to cry out, to moan; but the fear of waking Laura held her silent. It was not, however, so much from the great heat throbbing at her temples that she suffered, as from her inability to know for certain whether her sister was asleep."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Sometimes she thought of moving noisily, so that her bed should creak; then if Laura was awake, she would move in hers, and thus Anna could make sure. But the fear of thereby still further lengthening this time of waiting, kept her from letting the thought become an action. She lay as motionless as if her limbs were bound down by a thousand chains."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "She had lost all track of time, too; she had forgotten to count the last strokes of the clock—the clock that could be heard from the sitting-room adjoining. It seemed to her that she had been lying like this for years, that she had been waiting for years, burning with this maddening fire for years, that she had spent years trying to pierce the darkness with her eyes."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "And then the horrible thought crossed her mind—What if the hour had passed? Perhaps it had passed without her noticing it; she who had waited for it so impatiently had let it escape."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "But no. Presently, deadened by the distance and the doors closed between, she heard the clock ring out."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The hour had come."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Thereupon, with an infinite caution, born of infinite fear, slowly, trembling, holding her breath at every sound, pausing, starting back, going on, she sat up in bed, and at last slipped out of it."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "That vague spot of whiteness in the distance, where her sister lay, still fascinated her; she kept her head turned in its direction, while with her hands she felt for her shoes and stockings and clothes. They were all there, placed conveniently near; but every little difficulty she had to overcome in dressing, so as not to make the slightest noise, represented a world of precautions, of pauses, and of paralysing fears."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "When at last she had got on her frock of white serge, which shone out in the darkness, \"Perhaps Laura sees me,\" she thought."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "But she had made ready a big heavy black shawl, and in this she now wrapped herself from head to foot, and the whiteness of her frock was hidden."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Then, having accomplished the miracle of dressing herself, she stood still at her bedside; she had not dared to take a step as yet, sure that by doing so she would wake Laura."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"A little strength—Heaven send me a little strength,\" she prayed inwardly."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Then she set forth stealthily across the room. In the middle of it, seized by a sudden audacious impulse, she called her sister's name, in a whisper, \"Laura, Laura,\" listening intensely."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "No answer. She went on, past the door, through the sitting-room, the drawing-room, feeling her way amidst the chairs and tables. She struck her shoulder against the frame of the door between the sitting-room and the drawing-room, and halted for a moment, with a beating heart."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"*Madonna mia! Madonna mia!*\" she murmured in an agony of terror."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Then she had to pass before the room of her governess, Stella Martini; but the poor, good lady was a sound sleeper, and Anna knew it."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "When she reached the dining-room, it seemed to her that she must have traversed a hundred separate chambers, a hundred entire apartments, an endless chain of chambers and apartments."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "At last she opened the door that gave upon the terrace, and ran out into the night, the cold, the blackness. She crossed the terrace to the low dividing-wall between it and the next."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"Giustino—Giustino,\" she called."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "Suddenly the shadow of a man appeared on the other terrace, very near, very close to the wall of division."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "A voice answered: \"Here I am, Anna.\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "But she, taking his hand, drew him towards her, saying: \"Come, come.\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "He leapt over the little wall."
+    }
+  ]
+}

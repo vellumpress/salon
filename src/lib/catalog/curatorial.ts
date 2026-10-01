@@ -1164,6 +1164,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "doom-castle",
   "mayflower",
   "susan-proudleigh",
+  // Mira Thu 1 Oct 2026 POST-#217 CLEAR — Life and Death of Harriett Frean leads Next. Never Featured.
+  // LEAD kept — not Farewell Love!, not The Son of His Mother, not My Lady Nobody.
+  // New Year's Night is Rituals only (the one story), not this tail.
+  // Thu POST-#213 The Will to Live and the earlier packs stay ahead.
+  "life-and-death-of-harriett-frean",
+  "farewell-love",
+  "the-son-of-his-mother",
+  "my-lady-nobody",
 ] as const;
 
 /**

@@ -1,0 +1,251 @@
+{
+  "id": "my-lady-nobody",
+  "title": "My Lady Nobody",
+  "author": "Maarten Maartens",
+  "year": "1895",
+  "note": "Project Gutenberg 49903. Whole novel, Parts I–III, 49 chapters (PG l.221–17912) to THE END, labelled 'Part n · Chapter n · <title>' with the printed heads in sentence case, after the dedication (l.65–83) as its own front section. All 27 illustration tags (23 inside the bind), the contents, the list of illustrations, the title page and the half-title out. Curly quotes kept as printed; italics kept; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. 1895 (PG text: 'NEW YORK / HARPER & BROTHERS PUBLISHERS / 1895', 'Copyright, 1895'). PG reading-ease 76.3 — no invented Launch rank. Place: Horstwyk, Netherlands. Sits: unwind. Host intro: Horstwyk, a Dutch village, then The Hague. Ursula, the pastor's clear-eyed daughter, is drawn into the manor family next door: the reckless heir Gerard, his quiet elder brother Otto, home from Java, and a sprightly baroness. A dutiful marriage, a long misunderstanding, and money and class all round, with an ironic, fond narrator. Long. A heads-up before you start: once, the aristocrats talk about Jews in a period stereotype; Part III follows the colonial war in Aceh; and a suicide attempt over debt is reported.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Chapter I · Ursula · Horstwyk, Netherlands",
+      "place": "Part I · Chapter I · Ursula · Horstwyk, Netherlands",
+      "reentry": "It was a white-hot July morning. Long ago the impatient earth had cast aside her thin veil of summer twilight; already she lay, a Danae, in exultant swoon beneath the golden sun. Yet the bridegroom ha",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was a white-hot July morning. Long ago the impatient earth had cast aside her thin veil of summer twilight; already she lay, a Danae, in exultant swoon beneath the golden sun. Yet the bridegroom had barely leaped forth to the conquest; his rath kisses were still drinking the pearly freshness from the dawn, while the loud birds filled the resonant heavens with the tumult of their bridal song."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It was still so early, and already so immovably warm; all wide earth and deep sky agasp in the naked blaze. Ursula drew forward her broad-brimmed straw hat, where she stood picking pease among the tall lines of pale-green, blossom-speckled tangle."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "“Oof!” she said. Not as your burly farmer says it, but with the prettiest little high-pitched echo of the louder note. And she buried her soft brown cheeks in the cool moisture of her half-filled basket. Then she gravely resumed her work, and a great, big, booming bumblebee, which had thought to play hide and seek with Ursula’s nose, sailed away in disgust that on such a sun-soaked morning any of God’s creatures should bend to toil in his sight."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Ursula Rovers was not one of those who serve their Maker with dancing and a shout. Yet she sang to herself, very sedately, as she broke off each bursting pod, amid the fiercer jubilation of the passion-drunk blackbirds and finches,"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "“Stand then with girded loins, and see your lamps be burning; What though the sun lie fair upon your paths to-day, Who reads the evening sky? Who knows if winds be turning? The night comes surely. Watch and pray!”"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "The prim vegetable garden, with its ranks of gay salads and pompous cabbages, lay serenely roasting, as vegetable gardens delight to do, in unabated verdure. About Ursula’s corner the lattice-work of creepers put forth some faint attempt at a stunted shadow. Dominé Rovers came down the walk, his coat-flaps brushing the currant-bushes."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "“Who reads the evening sky? Who knows if winds be turning?”"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "“Ursula!”"
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "“Yes, Captain.”"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "“Come in and shell your pease, while I recite you my sermon.”"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "“But I must pick them first, father!”"
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "“True. What I love best in you, Ursula, is that you are as logical as if you were not a woman.”"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "The pastor drew nearer to the scaffolding of greenery, and strove vainly to shelter his tall figure in its shade. He was a spare, soldierly-looking man, with an honest complexion and silvery hair. You knew he had a very gentle countenance until you gave him cause to turn a wrathful look upon you."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "“I might as well begin at once,” he said, and, proud though she was of her father’s preaching, the girl’s soul rose in momentary protest on behalf of the birds and flowers. “I have chosen a text for to-morrow, Ursula, which has troubled my thoughts all through the week. All through the week, I couldn’t understand it. And when I came to look it out, it wasn’t there at all.”"
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Ursula’s dutiful lips said, “I see.”"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "“I imagined the verse to be as follows: ‘Flee from youthful lusts that war against the soul.’ But I see the word used is ‘Abstain.’ I could not believe it of St. Peter that he would have instructed any man to run away in battle. You will find the ‘flee’ in Timothy, my dear, but the connection is not the same.”"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Dominé Rovers paused and stood tenderly watching his natty daughter in her cool print dress. Suddenly he burst out quite impetuously, “Resist! Resist! That is the true Bible language. Resist the devil. Resist temptation. And so I shall tell them to-morrow morning. ‘Dearly beloved,’ I shall say, ‘life is a—’”"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "“War,” cried Ursula, facing round. A bold blackbird had alighted on one of the stakes, and sang loudly of peace and good-will."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "“Don’t interrupt me, child”—the Dominé’s eyes grew vexed—“I know I have said it before; they cannot hear the truth too often. Life is a battle, dearly beloved. Against the city of Mansoul all the powers of evil band themselves together. But in the vanguard march ever the lusts of the flesh. You cannot escape the conflict. And therefore”—the speaker lifted an energetic arm—“remember what said the Corinthians—the grandsires of St. Paul’s Corinthians—to the Spartans, their allies, ‘He that, for love of pleasure, shrinks from battle, will most swiftly be deprived of those very delights which caused him to abstain.’ My subject divides itself—Ursula, you are not attending—into seven natural parts: the enemy, the weapons, the—”"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Nobody listened. All God’s creation, busy with its individual loves and pleasures, luxuriously lapped in the sensuous sunlight and rejoicing in universal allurement, was twittering and fluttering and blushing and blooming in clouds of perfume and pollen. The great All-father smiled down upon his manifold children—and shrivelled them up."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Ursula was not listening. Her father was a dear, dear man, but she had heard it all so often before! And fortune had pity upon her and upon the sleepily staring marigolds, and created a diversion ere the sermon was ten sentences old."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Shrill shrieks of childish protest under punishment arose from beyond the garden-wall. The pastor of an unruly flock immediately ran to peer over the bushes. And Ursula followed more slowly, flitting into the full morning glow."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Out on the gleaming high-road a peasant-woman was belaboring an eight-year-old urchin in a whirlwind of dust. “I’ll teach you to use bad words,” she was screaming. “Damn me, I can’t make out, for the life o’ me, what taught the child to swear!”"
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "Ursula, leaning one round arm on the top of the garden-wall, turned spontaneously to her father, all her serious young face a swift ripple of fun; but the Dominé counted not a pennyworth of humor among his many militant virtues. He pressed his thin lips tight, under his Wellington nose. He was not going to reprove a mother in the presence of her son."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "“Discipline first,” said the Dominé. “One thing I note gratefully, Ursula, that the wretched habit of swearing is now confined to the lower classes in this country. In my time even gentlemen would swear—”"
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "A dog-cart had turned the sharp angle at the back, where the road breaks off to the Manor-house. In the dust and the skirmish it pulled up with a jerk, and a clear voice was heard crying,"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "“Confound you! Get out of the way, can’t you? Scuffling in the middle of the road!”"
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "The dog-cart was a very smart dog-cart, and the mare was a high-stepping mare. She fretted under the sudden restraint, amid an appetizing jingle and smell and glitter of harness. There was not so much promiscuous dust but that the speaker could instantaneously perceive the two heads over the low brown wall."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "He lifted his cap. “Good-morning, Dominé! Good-morning, Ursula!” he said, with nonchalance. “Awfully hot already, isn’t it?”"
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "The Dominé raised a flashing eye. The woman and boy had slipped away. “Gerard,” said the Dominé, “why do you swear at our people? How often must I remind you of our joint responsibility? We must lead them to what is right; I by my precept, you by your example.”"
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "“Oh, Dominé, I’ll exchange, if you’re agreeable,” retorted the young man, with a quick smile. The Dominé looked away."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "“You are going to the station to fetch your brother, Gerard?” interposed Ursula, carelessly cracking the pods in her basket."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "“Yes, at your service,” replied the young man, as he loosened the reins."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "“How strange it will be for you to meet Mynheer Otto again after all these years!”"
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "Gerard turned quickly from his prancing steed. “Are you going to call Otto ‘Mynheer’?” he asked."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "She blushed with annoyance, in an overflow of innocent confusion."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "“Oh, very well,” he went on. “Only, of course, you will have to call me Mynheer Gerard.”"
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "He raced off, laughing. “I *know* you,” she stammered; but the words were lost in the dog-cart’s departing rattle. She appealed to her father in dismay. “Why, father,” she cried, “I have known Gerard all my life!”"
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "Together they stood watching the dust-enfolded vehicle disappear into the far blue sunshine. Its occupant was young, light-hearted, and handsome. Evidently a cavalry officer: you could see that by the way in which his tweeds and he conjoined without combining."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "“Let us go in to breakfast,” said the Dominé. Father and daughter passed up between the stiff stalks of the gooseberry-bushes, among the sallow, swollen fruit. Both of them walked with a straight step, the figure erect, and a little self-reliant."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "The pastor fell back a few paces with meditative gaze. He was wont to rejoice tremulously in Ursula’s physical health, in the easy carriage of the head, the light swing of the hips. He rejoiced in the clear brown of her complexion and the calm depth of her brave brown eyes. No weak woman in blood or brain, this stately, strong-limbed maiden. He thanked God mournfully, ever reminiscent of the pervading sorrow of his life, the loss of the frail young creature who had dropped by the road-side wellnigh twenty years ago."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "It was that affliction which had made a cleric of Captain Roderick Rovers. By nature he was a soldier, recklessly brave and almost devil-may-care. A man who thought straight, if not far, and struck straight in the front. He had escaped from the inertia of the long Batavian peace to the red-hot tumult of Algerian desert war, and had come back, early bronzed and silvered, *plus* the Legion of Honor and *minus* an arm. He had married a pure white clinging thing, like a lily, that twined every tendril round his sturdy support, and then dropped from the stem. She was a good woman. To him she had come as a revelation. “I have fought the good fight,” she had whispered in dying. He, with the medals on his breast and the memory of not a few killed and wounded—could he have said as much face to face with death?"
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "He began to comprehend something of that battle which is not to the strong. On their wedding-day the bride had given her soldier-husband Bunyan’s *Holy War*—a Dutch translation—substituting it on his table for the weather-beaten little Thucydides which had been his companion in all his campaigns. He had demanded back the Greek historian. He now took up the spiritual conflict, and fought the powers of darkness, as he had ever met an enemy, at arm’s-length."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "His mutilation having incapacitated him from active service, he took orders, henceforth to do battle with his country’s inmost foes in the heart of every parishioner. The old militant spirit flamed in him still, and he led his slow flock like a regiment under the banner of the great Captain. On the high days of the Church he wore his Cross of the Legion in the pulpit. His clerical superiors had objected: he dared them to object. It was gained, he said, like their reverend titles, in honorable war."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "He had cherished the solitary treasure of his heart, but his care had been free from coddling; he had even combated the enervating influence of his sister-in-law, who kept house for him. “Coolness and cold water” was one of his maxims in any sudden emergency; late into the autumn you could have seen the gaunt father and the little solemn-featured girl wending their way towards the river for a swim. The bathless villagers watched and wondered. They judged the good man to be a little daft, no doubt, but they loved his cheery helpfulness. Dozing on the battle-field, they caught, between two yawns, the stir of his *réveillé*, and its clarion note passed like a breeze through the foulness of their sleeping-ditch."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "Then they turned in the trenches and fell asleep again."
+    }
+  ]
+}
