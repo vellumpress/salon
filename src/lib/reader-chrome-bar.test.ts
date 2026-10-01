@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import { execFileSync, spawn, type ChildProcess } from "node:child_process";
 import { existsSync, openSync } from "node:fs";
+import { dirname, join } from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 import { chromium, type Browser, type Page } from "playwright";
 import { READER_PHONE_VIEWPORT } from "./reader-chrome.ts";
 
@@ -47,17 +49,30 @@ async function healthy() {
   }
 }
 
+const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "../..");
+
 async function ensureServer() {
   if (await healthy()) return async () => {};
   const log = openSync("/tmp/reader-chrome-dev.log", "a");
   const child: ChildProcess = spawn("npm", ["run", "dev"], {
-    cwd: "/workspace",
+    cwd: repoRoot,
     detached: true,
     stdio: ["ignore", log, log],
+    env: process.env,
   });
-  const deadline = Date.now() + 90_000;
+  child.unref();
+  const failed = new Promise<never>((_, reject) => {
+    child.once("error", (error) => {
+      reject(new Error(`could not start the reader (${repoRoot}): ${error.message}`));
+    });
+  });
+  const deadline = Date.now() + 120_000;
   while (Date.now() < deadline) {
-    if (await healthy()) {
+    const ready = await Promise.race([
+      healthy().then((ok) => (ok ? "up" : "down")),
+      failed,
+    ]);
+    if (ready === "up") {
       return async () => {
         if (!child.pid) return;
         try {
@@ -69,7 +84,7 @@ async function ensureServer() {
     }
     await new Promise((resolve) => setTimeout(resolve, 400));
   }
-  throw new Error("reader dev server did not start");
+  throw new Error(`reader dev server did not start from ${repoRoot}`);
 }
 
 async function bar(page: Page) {
