@@ -4341,7 +4341,7 @@ test("Mira Emmeline FULL EN sits on Next, Rituals, and For you, never Featured",
     "botchan",
   ]);
   assert.deepEqual(next.slice(-165, -163), ["blacker", "a-lost-lady"]);
-  assert.equal(next.at(-159), "the-wanderer");
+  assert.equal(next.at(-163), "the-wanderer");
   assert.equal(next.includes("basilio"), true);
   assert.equal(next.includes("lady-macbeth"), false);
   assert.equal(next.includes("summer"), false);
@@ -4358,8 +4358,8 @@ test("Mira Emmeline FULL EN sits on Next, Rituals, and For you, never Featured",
   ]);
   assert.deepEqual(unwind?.workIds.slice(-166, -164), ["blacker", "a-lost-lady"]);
   assert.deepEqual(walk?.workIds.slice(-146, -144), ["blacker", "a-lost-lady"]);
-  assert.equal(unwind?.workIds.at(-160), "the-wanderer");
-  assert.equal(walk?.workIds.at(-143), "the-wanderer");
+  assert.equal(unwind?.workIds.at(-164), "the-wanderer");
+  assert.equal(walk?.workIds.at(-144), "the-wanderer");
   assert.equal(bite?.workIds.at(-1), "lady-macbeth");
   assert.deepEqual(waking?.workIds.slice(-40, -35), [
     "lady-macbeth",
@@ -4515,7 +4515,7 @@ test("Mira Fri ~10:04 CLEAR is Next lead Cabala, then Reuben and Sun, with Troop
     "reuben-sachs",
     "the-sun-also-rises",
   ]);
-  assert.equal(next.at(-159), "the-wanderer");
+  assert.equal(next.at(-163), "the-wanderer");
   assert.equal(next.includes("trooper-peter-halket-of-mashonaland"), false);
   assert.equal(next.includes("the-garden-party-and-other-stories"), false);
   assert.equal(next.includes("trooper-peter-halket"), true);
@@ -4535,8 +4535,8 @@ test("Mira Fri ~10:04 CLEAR is Next lead Cabala, then Reuben and Sun, with Troop
     "reuben-sachs",
     "the-sun-also-rises",
   ]);
-  assert.equal(unwind?.workIds.at(-157), "the-sun-also-rises");
-  assert.equal(walk?.workIds.at(-140), "the-sun-also-rises");
+  assert.equal(unwind?.workIds.at(-161), "the-sun-also-rises");
+  assert.equal(walk?.workIds.at(-141), "the-sun-also-rises");
   assert.equal(sleep?.workIds.includes("trooper-peter-halket-of-mashonaland"), true);
   assert.equal(waking?.workIds.at(-34), "the-garden-party-and-other-stories");
   assert.equal(unwind?.workIds.includes("the-garden-party-and-other-stories"), true);
@@ -4683,8 +4683,8 @@ test("Mira Fri ~2:04 noon CLEAR is Next lead Man of Property, then Awakening and
     "the-awakening",
     "theresa-raquin",
   ]);
-  assert.equal(unwind?.workIds.at(-154), "theresa-raquin");
-  assert.equal(walk?.workIds.at(-137), "theresa-raquin");
+  assert.equal(unwind?.workIds.at(-158), "theresa-raquin");
+  assert.equal(walk?.workIds.at(-138), "theresa-raquin");
   assert.equal(waking?.workIds.at(-33), "cane");
   assert.equal(waking?.workIds.at(-34), "the-garden-party-and-other-stories");
   assert.equal(forYou?.workIds.at(-1), "where-angels-fear-to-tread");
@@ -4847,8 +4847,8 @@ test("Mira Fri ~4:14 afternoon CLEAR is Next lead Confusion, then Pointed Roofs,
     "the-rise-of-silas-lapham",
     "indiana",
   ]);
-  assert.equal(unwind?.workIds.at(-150), "indiana");
-  assert.equal(walk?.workIds.at(-133), "indiana");
+  assert.equal(unwind?.workIds.at(-154), "indiana");
+  assert.equal(walk?.workIds.at(-134), "indiana");
   assert.equal(waking?.workIds.at(-32), "the-book-of-wonder");
   assert.equal(waking?.workIds.at(-33), "cane");
   assert.equal(curatorialTrack("the-book-of-wonder"), "later");
@@ -5024,9 +5024,9 @@ test("Mira Fri ~7:14 evening CLEAR is Next lead Hidden Force, then Home, Hunger,
     "hunger",
     "jude-the-obscure",
   ]);
-  assert.equal(unwind?.workIds.at(-146), "jude-the-obscure");
-  assert.equal(walk?.workIds.at(-129), "jude-the-obscure");
-  assert.equal(unwind?.workIds.at(-150), "indiana");
+  assert.equal(unwind?.workIds.at(-150), "jude-the-obscure");
+  assert.equal(walk?.workIds.at(-130), "jude-the-obscure");
+  assert.equal(unwind?.workIds.at(-154), "indiana");
   assert.equal(waking?.workIds.at(-31), "dubliners");
   assert.equal(waking?.workIds.at(-32), "the-book-of-wonder");
   assert.equal(featured.includes("enchanted-april"), true);
