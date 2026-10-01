@@ -581,6 +581,16 @@ const BLURBS: Record<string, string> = {
     "Aloysius Darvid built a fortune by iron toil, in Jeremiah Curtin's English.",
   "at-the-roadside-station":
     "Early spring at a bungalow by a small Russian station, and a gendarme who is terribly bored.",
+  "the-will-to-live":
+    "A heads-up before you start: the son elopes with a married woman, and he is charged with theft.",
+  "doom-castle":
+    "Count Victor rides alone into the Argyll glens and lands in a crumbling castle full of secrets.",
+  "mayflower":
+    "A heads-up before you start: the first chapter shows a drowned body, a man beats his wife, and there are deaths at sea.",
+  "susan-proudleigh":
+    "A note on period language: the book is full of the colour and class hierarchy of its day, and it uses the word ‘Chinaman’.",
+  "the-peat-moor":
+    "A wise old raven flies west to the last wild peat moor to dig up a sow’s ear he buried long ago.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",

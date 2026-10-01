@@ -1,0 +1,71 @@
+{
+  "id": "susan-proudleigh",
+  "title": "Susan Proudleigh",
+  "author": "Herbert G. de Lisser",
+  "year": "1915",
+  "note": "Project Gutenberg 56335. Whole novel, Books I–III, 26 chapters (PG l.131–8730), each labelled 'Book n · Chapter n · <title>' from the contents, after the serial note (l.123–126) as a Note: line in its own front section. Produced-by credit, the Colonial Library front matter, title page and contents, the printer's colophon and the publisher's advertisements out. The book's two footnotes kept as Note: lines after their paragraphs. Creole dialogue and its apostrophes kept as printed; two printed stray commas after closing quotes mended (l.150, 4296). Long paragraphs soft-broken into separate screens; no words changed. 1915 (PG text: 'First Published in 1915'). PG reading-ease 79.6 — no invented Launch rank. Place: Kingston, Jamaica, then Colón, Panama. Sits: unwind. Host intro: Kingston, Jamaica, then Colón and the Panama Canal works. Proud, status-hungry Susan Proudleigh loses her young man and sails for the Canal, with her family's pride and the lane's envy behind her. A Jamaican novel by a Jamaican author, first serialised in the island's own paper; ironic and fond, with lively Creole talk, kept as printed. A note on period language: the book is full of the colour and class hierarchy of its day, including segregation in the Canal Zone, and it uses the word 'Chinaman'. The text stays as printed.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Book I · Chapter I · Susan's Dilemma · Kingston, Jamaica",
+      "place": "Book I · Chapter I · Susan's Dilemma · Kingston, Jamaica",
+      "reentry": "“I know I ’ave enemies,” said Susan bitterly; “I know I am hated in this low neighbourhood. But I don’t see what them should hate me for, for I never interfere wid any of them.”",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "“I know I ’ave enemies,” said Susan bitterly; “I know I am hated in this low neighbourhood. But I don’t see what them should hate me for, for I never interfere wid any of them.”"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "“Them hate y’u because you are better than them, and because y’u don’t mix with them,” sagaciously answered Catherine, her second sister."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "“That they will never get me to do,” snapped Susan. “I wouldn’t mix with a lot of people who are not my companions, even if them was covered from top to toe with gold. It is bad enough that I have to live near them, but further than that I am not going. It is ‘good morning’ and ‘good evening’ with me, an’ that is all.”"
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "“Then them will always hate you,” said Catherine, “and if them can injure y’u them will try to do it.”"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Catherine referred to most of the people living in the immediate vicinity, between Susan and whom a fierce feud had existed for some months. It was born of envy and nurtured by malice, and Susan knew that well. She dressed better than most of the girls in the lane, she lived in a “front house,” while most of them had to be content with ordinary yard-rooms. She frequently went for rides on the electric cars, whereas they could only afford such pleasure on Sundays and on public holidays. She carried herself with an air of social superiority which was gall and wormwood to the envious; and often on walking through the lane she had noticed the contemptuous looks of those whom, with greater contempt, she called the common folks and treated with but half-concealed disdain. On the whole, she had rather enjoyed the hostility of these people, for it was in its way a tribute to her own importance. But now a discomforting development had taken place in the manner in which the dislike of the neighbourhood habitually showed itself."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "This evening Susan sat by one of the windows of the little house in which she lived, and which opened on the lane. It contained two tiny rooms: the inner apartment was her bedroom, her two sisters sleeping with her; the outer one was a sitting-room by day and a bedroom at night, when it was occupied by her father and mother. The house had originally been painted white and green, but the dust of Kingston had discoloured the painting somewhat; hence its appearance was now shabby and faded, though not as much so as that of the other buildings on either side of it. Opposite was an ancient fence dilapidated and almost black; behind this fence were two long ranges of rooms, in which people of the servant classes lived. The comparison between these and Susan’s residence was all in favour of the latter; and as this house overlooked the lane, and was detached from the buildings in the yard to which it belonged, its rental value was fairly high and its occupants were supposed to be of a superior social position."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "The gutters on both sides of the lane ran with dirty soap-water, and banana skins, orange peel and bits of brown paper were scattered over the roughly macadamized ground. Lean dogs reclined in the centre of the patch, or prowled about seeking scraps of food which they never seemed to find. In the daytime, scantily-clad children played in the gutters; a few slatternly women, black and brown, drawled out a conversation with one another as they lounged upon the doorsteps; all during the long hours of the sunlight the sound of singing was heard as some industrious housewives washed the clothes of their families and chanted hymns as they worked; and now and then a cab or cart passed down the lane, disturbing for a little while the peaceful tenor of its way."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "There were no sidewalks, or rather, there were only the vestiges of sidewalks to be seen. For the space which had been left for these by the original founders of the city had more or less been appropriated by householders who thought that they themselves could make excellent use of such valuable territory. Here a house was partly built on what was once a portion of the sidewalk; there a doorstep marked the encroachment that had taken place on public property; between these an empty space showed that the owner of the intermediate yard had not as yet been adventurous enough to extend his fence beyond its proper limits. Most of the houses that opened on the lane were of one storey, and built of wood, with foundations of red brick. An air of slow decay hung over nearly all of them, though now and then you saw a newly painted building which looked a little out of place in such surroundings."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Susan saw that hers was by no means the shabbiest of these houses, and Susan knew that she was the finest-looking young woman in that section of the lane in which she lived. It was her physical attractions that had helped her to comparative prosperity. In the euphemistic language of the country, she was “engaged” to a young man who was very liberal with his money; he came to see her two or three times a week; and though of late he had not seemed quite so ardent as before, Susan had not troubled to inquire the reason of his shortened visits. He had never hitherto failed on a Friday night to bring for her her weekly allowance, and that she regarded as a sufficiently substantial proof of his continued affection."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "But now she felt that she must take some thought of the future. Thrice during the current week she had been openly laughed at by Mother Smith, a peculiarly objectionable old woman who lived about a hundred yards farther up the lane. Mother Smith had passed her house, and, looking up at the window, had uttered with a malignant air of triumph, “If you can’t catch Quaco, you can catch his shirt.” Meaningless as the words might have appeared to the uninitiated, Susan had immediately divined their sinister significance. She knew that Mother Smith had a daughter of about her own age, whose challenging attractiveness had always irritated her. Because Maria, though black, was comely, Susan had made a point of ignoring Maria’s existence; she had never thought of Maria as a possible rival, however, so confident was she of her ascendancy over her lover, and so certain was she that Maria could never be awarded the prize for style and beauty if Susan Proudleigh happened to be near. Still, there could be no mistaking the triumphant insolence of Mother Smith’s glance or the meaning of her significant words."
+    }
+  ]
+}

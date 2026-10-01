@@ -1,0 +1,146 @@
+{
+  "id": "mayflower",
+  "title": "Mayflower",
+  "author": "Vicente Blasco Ibáñez (tr. Arthur Livingston)",
+  "year": "1921",
+  "note": "Project Gutenberg 29577 (tr. Arthur Livingston, per PG). Whole novel, Chapter I–X (PG l.117–5923), each labelled 'Chapter n · <title>' from the contents. Produced-by credit, title and copyright pages, contents, 'The End' and the publisher's list out. Spanish and Valencian words kept in italics; 'grewsome' kept as printed; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. EN 1921 (PG text: 'COPYRIGHT 1921 BY E. P. DUTTON & COMPANY', 'First printing March, 1921'). PG reading-ease 79.3 — no invented Launch rank. Place: the Cabanal, Valencia. Sits: unwind. Host intro: The Cabanal, the fishermen's quarter on the beach at Valencia. A widow turns the boat that drowned her husband into a tavern; one son saves for a boat of his own, the other is a handsome idler, and the book ends in a storm at sea. Loud, sunny and salty, in Arthur Livingston's lively English; the Spanish and Valencian words stay in italics. A heads-up before you start: the first chapter shows a drowned body, a man beats his wife, and there are deaths at sea.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · The Widow's Tavern · The Cabanal, Valencia",
+      "place": "Chapter I · The Widow's Tavern · The Cabanal, Valencia",
+      "reentry": "The morning of that day—it was a Tuesday of the Lenten season—could not have dawned more promisingly. The sea, off the Cabanal, was in flat calm, as smooth as a polished mirror. Not the slightest ripp",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The morning of that day—it was a Tuesday of the Lenten season—could not have dawned more promisingly. The sea, off the Cabanal, was in flat calm, as smooth as a polished mirror. Not the slightest ripple broke the shimmering triangular wake that the sun sent shoreward over the lifeless surface of the water."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The fishing fleet had headed, bright and early, for the grounds off the Cabo de San Antonio; and all the seines were out to take full advantage of the perfect weather. Prices on the market of Valencia were running high; and every skipper was trying to make a quick catch and get back first to the beach of the Cabanal, where the fisherwomen were waiting impatiently."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Toward noon the weather changed. An easterly wind came up, the dread *levante*, that can blow so wickedly in the gulf of Valencia. The sea at first was lightly wrinkled; but as the hurricane advanced the placid looking-glass gave way to a livid menacing chop, and piles of cloud came racing up from the horizon and blotted out the sun."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Great was the alarm along shore. In the eyes of those poor people, familiar with all the tragedies of the sea, wind from that quarter always meant one of those storms that bring sorrow and mourning to the homes of fishermen. In dismay, their skirts whipping in the blow, the women ran back and forth along the water's edge, wailing and praying to all the saints they trusted. The men at home, pale and frowning, bit nervously at the ends of their cigars, and, from the lee of the boats drawn up on the sand, studied the lowering horizon with the tense penetrating gaze of sailormen, or nervously watched the harbor entrance beyond the Breakwater on whose red rocks the first storm waves were breaking. What was happening to so many husbands and fathers caught with their nets down off shore? Each succeeding squall, as it sent the terrified watchers staggering along the beach, called up the thought of strong masts snapping at the level of the deck and triangular sails torn to shreds, perhaps at that very moment!"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "About three o'clock on the black horizon a line of sails appeared, driving before the gale like puffs of foam that vanished suddenly in the troughs of the waves to dart back into view again on the crests succeeding. The fleet was returning like a frightened herd in stampede, each boat plunging in the combers with the bellow of the tempest upon its heels. Would they make the lee of the Breakwater? The wind in devilish playfulness would here tear off a shred of canvas, there a yard, and there a mast or a tiller, till a rudderless craft, caught abeam by a mountain of greenish water, would seem surely to be swallowed up. Some of the boats got in. The sailors, drenched to the skin, accepted the embraces of their wives and children impassively, with vacant and expressionless eyes, like corpses suddenly resurrected from the tomb."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "That night was long remembered in the Cabanal."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Frenzied women, with their hair down and lashing in the hurricane, their voices hoarse from the prayers they shouted above the howling gale, spent the whole night on the Breakwater, in danger of being swept off by the towering surf, soaked with the brine from the biting spray, and peering out into the blackness as though bent on witnessing the lingering agony of the last stragglers."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Many boats did not appear. Where could they be... *ay Dios, Dios!* Happy the women who had their sons and husbands safe in their arms! Other boys were out in that tumbling hell, driving through the night in a floating coffin, tossing from white cap to white cap, dizzily plunging into the yawning trough, while decks groaned beneath their feet, and gray hills of water curled above to break down upon them in a destroying surge!"
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "It rained all night long. Many women waited out till sunrise, drawing their soaked cloaks about their shivering bodies, kneeling in the black mud and coal-dust on the Breakwater, shrieking their prayers to be sure that God would hear, or, again, in desperate rage, stopping to tear their hair and hurl the most frightful blasphemies of the Fishmarket up toward heaven."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "And when dawn came, what a glorious dawn it was! As if nothing at all had happened, the sun lifted a smiling hypocritical face above the line of a clean horizon, and spread a broad uneasy glitter of golden beauty over waters that peacefully carried long streaks of foam from the night's turmoil. The first thing that the rays of morning gilded was the battered hulk of a Norwegian barkentine ashore off the Beach of Nazaret, its nose buried in the sand, its midships awash, its bilges agape and in splinters, while strips of canvas floated from the rigging tangled about the broken masts."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The ship had carried a cargo of Northern lumber. Pushed gently along by the lapping waves, timbers and boards were slowly drifting ashore, where they were dragged out by swarms of black ants and disappeared as though sunk in the sand. And they worked hard, those ants. The storm was just what they had been waiting for. Beach-pirates were whipping up their horses gayly along all the roads leading to the *huerta* of Ruzafa. Boards like that would make such fine houses! And the booty was all theirs by rights! What did it matter if a girder were stained, perhaps, with the blood of one of those poor foreigners lying dead back there upon the shore?"
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Groups of idlers were gathered, with a few policemen, around some corpses that were stretched out on the beach some distance from the water. Strong, handsome fellows they had been, light-haired all; and bits of white skin, soft and smooth, though muscular, could be seen through the rents in their garments, while their blue eyes, glassy and staring in death, looked up at the sky with a mysterious fixity."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "The Norwegian had been the most sizeable wreck of the blow, and the newspapers in town gave columns to it. The population of Valencia turned out as on a pilgrimage to look at the hulk, half sunken in the shifting sands. No one gave a thought to the lost fishing boats, and people seemed not to understand the wailing and lamentations of the poor women whose men had not come home."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "The disaster to the fleet was not, however, so great as they had thought. The morning wore on and several boats came in that had been given up for lost. Some had made Denia or Gandia. Others had taken refuge in Cullera Harbor. And each craft that appeared roused cheers of rejoicing and thanksgiving throughout the village, which joyfully made vows to all the saints who look after men of the sea."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "In the end only one was not accounted for—the boat of *tio* Pascualo, the most thrifty saver of all the savers in the Cabanal, a man, decidedly, with an eye for money, a fisherman in winter and a smuggler in summer, a great skipper, and a frequent visitor to the coasts of Algiers and Oran, which he spoke of always as \"across the way,\" as though Africa were on the sidewalk across the street."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Pascualo's wife, Tona, spent more than a week on the Breakwater, a suckling baby in her arms and another child, a chubby little lad, clinging to her skirts. She was sure Pascualo would come home; and every time a fresh detail of the storm was given her, she would tear her hair and renew her screams for the Holy Virgin's help. The fishermen never talked right out to her, but always stopped at the significant shrug of the shoulders. They had seen Pascualo last off the Cabo, drifting before the gale, dismasted. He could not have gotten in. One man had even seen a huge green wave break over him, taking the boat abeam, though he could not swear the craft had foundered."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "In alternate spells of desperation and strange exhilarated hope, the miserable woman waited and waited with her two children. On the twelfth day, a revenue cutter came into the port of the Cabanal, towing *tio* Pascualo's boat behind, bottom-up, blackened, slimy and sticky, floating weirdly like a big coffin and surrounded by schools of fish, unknown to local waters, that seemed bent on getting at a bait they scented through the seams of the wrecked hull."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "The craft was righted and grounded on the sand. The masts were off even with the deck. The hold was full of water. When the fishermen went down inside to bail her out with pails, their bare feet, entangled in the mess of line and baskets and cordage, stepped finally on something soft. After a first instinctive cry of horrified revulsion, the men reached down under water with their hands and drew out—a corpse."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "*Tio* Pascualo was hardly recognizable. His body was swollen, green, the belly inflated to the point of bursting. The decaying flesh was gnawed away in places by hungry little fishes, some of which, loath to let go their prey, were still clinging to it by their teeth, wriggling their tails and giving an appearance of disgusting life to the horrible mass. The bold sailor's fate was clear. He had been hurled through the hatchway by a lunge of the deck before the boat had been lost. Inside there he had lain with his skull crushed. That boat—the dream of his life, the achievement of thirty years of penny-saving—had proved to be his coffin!"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "*Tio* Pascualo's widow, in her hysterical weeping, shrank from the repugnant body. The women of the Cabanal raised their voices in weird lamentation and trooped in company behind the wooden box that was carried at once to the cemetery. For a week *tio* Pascualo was the subject of every conversation. Then people forgot about him, save that the appearance of his mourning widow, with one child in her arms and another at her side, chanced to remind them of his grewsome end."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Tona, indeed, had lost not her husband only. Dire poverty was upon her, not the poverty that is hard but tolerable, but the poverty that is terrifying even to the poor, the want of the homeless and the bread-less, the want that holds out a mendicant hand from the street corner to beg a penny and give thanks for a crust of mildewed bread."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Help came readily while her misfortune was fresh in the minds of the villagers. A subscription was taken up among the fisherfolk, and on the proceeds, with other gifts that came in, she was able to get along for three or four months. Then people forgot. Tona was no longer the widow of a man lost at sea. She was a pauper ever on hand with the wail for alms. Many doors were at last shut in her face, and old friends of her girlhood, who had always welcomed her with a smile, now looked the other way when she went by."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "But Tona was not the woman to be crushed by general ostracism. *Eah!* Enough of this bawling! We've got to get out of the dumps! She was a woman with two arms like any other, and two brats that could eat and eat and eat!"
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "She had nothing left in the world but the wreck of her husband's boat, in which he had died. It lay rotting out there on the beach, high and dry, now soaked by the rains, now oozing tar under the flaming sun, the mosquitos breeding in the muck inside."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "Tona suddenly had an idea. That boat might be good for something. It had killed the father of those tots of hers. Why should it not help to feed them? *Tio* Mariano, a tight-fisted bachelor, first cousin to the late Pascualo, and supposed to be quite well off, had taken a liking to the widow's children; and however much it pained him, he went down into his pocket and gave her the money to make her start."
+    }
+  ]
+}

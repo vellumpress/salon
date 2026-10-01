@@ -1156,6 +1156,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-real-charlotte",
   "pembroke",
   "the-argonauts",
+  // Mira Thu 1 Oct 2026 POST-#213 CLEAR — The Will to Live leads Next. Never Featured.
+  // LEAD kept — not Doom Castle, not Mayflower, not Susan Proudleigh.
+  // The Peat Moor is Rituals only (the one story), not this tail.
+  // Thu POST-#212 Gone to Earth and the earlier packs stay ahead.
+  "the-will-to-live",
+  "doom-castle",
+  "mayflower",
+  "susan-proudleigh",
 ] as const;
 
 /**
