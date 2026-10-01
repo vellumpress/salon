@@ -1,0 +1,156 @@
+{
+  "id": "the-real-charlotte",
+  "title": "The Real Charlotte",
+  "author": "E. Œ. Somerville & Martin Ross",
+  "year": "1894",
+  "note": "Project Gutenberg 59138. Whole novel, Chapter I–LI (PG l.145–15667), after a short 'Publication note' section (PG l.132–135) set as a Note: line. Produced-by credit, the publisher's list of the authors' works, the 1915 'New Impression' title page, the colophon tag, the half-title, 'Finis' and the printer's line out. Irish speech kept as printed; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. 1894 (PG text: 'First published by Ward & Downey, in 3 volumes in 1894'). PG reading-ease 72.7 — no invented Launch rank. Place: Dublin and Lismoyle, Ireland. Sits: unwind. Host intro: Dublin, then the lake country of Lismoyle in the west of Ireland. Pretty, penniless Francie Fitzpatrick comes to stay with her cousin Charlotte Mullen, plain, clever and nursing old wants. Sharp comedy of Irish country society that darkens slowly. Rich and witty, and the talk is kept as printed.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Dublin & Lismoyle, Ireland",
+      "place": "Chapter I · Dublin & Lismoyle, Ireland",
+      "reentry": "An August Sunday afternoon in the north side of Dublin. Epitome of all that is hot, arid, and empty. Tall brick houses, browbeating each other in gloomy respectability across the white streets; broad ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "An August Sunday afternoon in the north side of Dublin. Epitome of all that is hot, arid, and empty. Tall brick houses, browbeating each other in gloomy respectability across the white streets; broad pavements, promenaded mainly by the nomadic cat; stifling squares, wherein the infant of unfashionable parentage is taken for the daily baking that is its substitute for the breezes and the press of perambulators on the Bray Esplanade or the Kingston pier. Few towns are duller out of the season than Dublin, but the dullness of its north side neither waxes nor wanes; it is immutable, unchangeable, fixed as the stars. So at least it appears to the observer whose impressions are only eye-deep, and are derived from the emptiness of the streets, the unvarying dirt of the window panes, and the almost forgotten type of ugliness of the window curtains."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "But even an August Sunday in the north side has its distractions for those who know where to seek them, and there are some of a sufficiently ingenuous disposition to find in Sunday-school a social excitement that is independent of fashion, except so far as its slow eddies may have touched the teacher's bonnet. Perhaps it is peculiar to Dublin that Sunday-school, as an institution, is by no means reserved for children of the poorer sort only, but permeates all ranks, and has as many recruits from the upper and middle as from the lower classes. Certainly the excellent Mrs. Fitzpatrick, of Number 0, Mountjoy Square, as she lay in mountainous repose on the sofa in her dining-room, had no thought that it was derogatory to the dignity of her daughters and her niece to sit, as they were now sitting, between the children of her grocer, Mr. Mulvany, and her chemist, Mr. Nolan. Sunday-school was, in her mind, an admirable institution that at one and the same time cleared her house of her offspring, and spared her the complications of their religious training, and her broad, black satin-clad bosom rose and fell in rhythmic accord with the snores that were the last expression of Sabbath peace and repose."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "It was nearly four o'clock, and the heat and dull clamour in the schoolhouse were beginning to tell equally upon teachers and scholars. Francie Fitzpatrick had yawned twice, though she had a sufficient sense of politeness to conceal the action behind her Bible; the pleasure of thrusting out in front of her, for the envious regard of her fellows, a new pair of side spring boots, with mock buttons and stitching, had palled upon her; the spider that had for a few quivering moments hung uncertainly above the gorgeous bonnet of Miss Bewley, the teacher, had drawn itself up again, staggered, no doubt, by the unknown tropic growths it found beneath; and the silver ring that Tommy Whitty had crammed upon her gloved finger before school, as a mark of devotion, had become perfectly immovable and was a source of at least as much anxiety as satisfaction. Even Miss Bewley's powers of exposition had melted away in the heat; she had called out her catechetical reserves, and was reduced to a dropping fire of questions as to the meaning of Scriptural names, when at length the superintendent mounted the rostrum and tapped thrice upon it. The closing hymn was sung, and then, class by class, the hot, tired children clattered out into the road."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "On Francie rested the responsibility of bringing home her four small cousins, of ages varying from six to eleven, but this duty did not seem to weigh very heavily on her. She had many acquaintances in the Sunday-school, and with Susie Brennan's and Fanny Hemphill's arms round her waist, and Tommy Whitty in close attendance, she was in no hurry to go home. Children are, if unconsciously, as much influenced by good looks as their elders, and even the raw angularities of fourteen, and Mrs. Fitzpatrick's taste in hats, could not prevent Francie from looking extremely pretty and piquante, as she held forth to an attentive audience on the charms of a young man who had on that day partaken of an early dinner at her Uncle Fitzpatrick's house."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Francie's accent and mode of expressing herself were alike deplorable; Dublin had done its worst for her in that respect, but unless the reader has some slight previous notion of how dreadful a thing is a pure-bred Dublin accent, it would be impossible for him to realise in any degree the tone in which she said:"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"But oh! Tommy Whitty! wait till I tell you what he said about the excursion! He said he'd come to it if I'd promise to stay with him the whole day; so now, see how grand I'll be! And he has a long black mustash!\" she concluded, as a side thrust at Tommy's smooth, apple cheeks."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Oh, indeed, I'm sure he's a bewty without paint,\" returned the slighted Tommy, with such sarcasm as he could muster; \"but unless you come in the van with me, the way you said you would, I'll take me ring back from you and give it to Lizzie Jemmison! So now!\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"Much I care!\" said Francie, tossing her long golden plait of hair, and giving a defiant skip as she walked; \"and what's more, I can't get it off, and nobody will till I die! and so now yourself!\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Her left hand was dangling over Fanny Hemphill's shoulder, and she thrust it forward, starfish-wise, in front of Tommy Whitty's face. The silver ring glittered sumptuously on its background of crimson silk glove, and the sudden snatch that her swain made at it was as much impelled by an unworthy desire to repossess the treasure as by the pangs of wounded affection."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"G'long, ye dirty fella'!\" screamed Francie, in high good-humour, at the same moment eluding the snatch and whirling herself free from the winding embrace of the Misses Hemphill and Brennan; \"I dare ye to take it from me!\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "She was off like a lapwing down the deserted street, pursued by the more cumbrous Tommy, and by the encouraging yells of the children, who were trooping along the pavement after them. Francie was lithe and swift beyond her fellows, and on ordinary occasions Tommy Whitty, with all his masculine advantage of costume and his two years of seniority, would have found it as much as he could do to catch her. But on this untoward day the traitorous new side spring boots played her false. That decorative band of white stitching across the toes began to press upon her like a vice, and, do what she would, she knew that she could not keep her lead much longer. Strategy was her only resource. Swinging herself round a friendly lamp-post, she stopped short with a suddenness that compelled her pursuer to shoot past her, and with an inspiration whose very daring made it the more delirious, she darted across the street, and sprang into a milk-cart that was waiting at a door. The meek white horse went on at once, and, with a breathless, goading hiss to hasten him, she tried to gather up the reins. Unfortunately, however, it happened that these were under his tail, and the more she tugged at them the tighter he clasped them to him, and the more lively became his trot. In spite of an irrepressible alarm as to the end of the adventure, Francie still retained sufficient presence of mind to put out her tongue at her baffled enemy, as, seated in front of the milk-cans, she clanked past him and the other children. There was a chorus, in tones varying from admiration to horror, of, \"Oh! *look* at Francie Fitzpatrick!\" and then Tommy Whitty's robuster accents, \"Ye'd better look out! the milkman's after ye!\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Francie looked round, and with terror beheld that functionary in enraged pursuit. It was vain to try blandishments with the horse, now making for his stable at a good round trot; vainer still to pull at the reins. They were nearing the end of the long street, and Francie and the milkman, from their different points of view, were feeling equally helpless and despairing, when a young man came round the corner, and apparently taking in the situation at a glance, ran out into the road, and caught the horse by the bridle."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Well, upon my word, Miss Francie,\" he said, as Miss Fitzpatrick hurriedly descended from the cart. \"You're a nice young lady! What on earth are you up to now?\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"Oh, Mr. Lambert—\" began Francie; but having got thus far in her statement, she perceived the justly incensed milkman close upon her, and once more taking to her heels, she left her rescuer to return the stolen property with what explanations he could. Round the corner she fled, and down the next street, till a convenient archway offered a hiding-place, and sheltering there, she laughed, now that the stress of terror was off her, till her blue eyes streamed with tears."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Presently she heard footsteps approaching, and peering cautiously out, saw Lambert striding along with the four Fitzpatrick children dancing round him, in their anxiety to present each a separate version of the escapade. The milkman was not to be seen, and Francie sallied forth to meet the party, secretly somewhat abashed, but resolved to bear an undaunted front before her cousins."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "The \"long black mustash,\" so adroitly utilised by Francie for the chastening of Tommy Whitty, was stretched in a wide smile as she looked tentatively at its owner. \"Will he tell Aunt Tish?\" was the question that possessed her as she entered upon her explanation. The children might be trusted. Their round, white-lashed eyes had witnessed many of her exploits, and their allegiance had never faltered; but this magnificent grown-up man, who talked to Aunt Tish and Uncle Robert on terms of equality, what trouble might he not get her into in his stupid desire to make a good story of it? \"Botheration to him!\" she thought, \"why couldn't he have been somebody else?\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Mr. Roderick Lambert marched blandly along beside her, with no wish to change places with anyone agitating his bosom. His handsome brown eyes rested approvingly on Francie's flushed face, and the thought that mainly occupied his mind was surprise that Nosey Fitzpatrick should have had such a pretty daughter. He was aware of Francie's diffident glances, but thought they were due to his good looks and his new suit of clothes, and he became even more patronising than before. At last, quite unconsciously, he hit the dreaded point."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"Well, and what do you think your aunt will say when she hears how I found you running away in the milk-cart?\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"I don't know,\" replied Francie, getting very red."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"Well, what will you say to me if I don't tell her?\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"Oh, Mr. Lambert, sure you won't tell mamma!\" entreated the Fitzpatrick children, faithful to their leader. \"Francie'd be killed if mamma thought she was playing with Tommy Whitty!\""
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "They were nearing the Fitzpatrick mansion by this time, and Lambert stood still at the foot of the steps and looked down at the small group of petitioners with indulgent self-satisfaction."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Well, Francie, what'll you do for me if I don't tell?\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "Francie walked stiffly up the steps."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"I don't know.\" Then with a defiance that she was far from feeling, \"You may tell her if you like!\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "Lambert laughed easily as he followed her up the steps."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "\"You're very angry with me now, aren't you? Well, never mind, we'll be friends, and I won't tell on you this time.\""
+    }
+  ]
+}

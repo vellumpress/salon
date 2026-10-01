@@ -1148,6 +1148,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "doctor-luke-of-the-labrador",
   "morrina",
   "a-happy-boy",
+  // Mira Thu 1 Oct 2026 POST-#212 CLEAR — Gone to Earth leads Next. Never Featured.
+  // LEAD kept — not The Real Charlotte, not Pembroke, not The Argonauts.
+  // At the Roadside Station is Rituals only (the one story), not this tail.
+  // Wed POST-#210 Liliecrona's Home and the earlier packs stay ahead.
+  "gone-to-earth",
+  "the-real-charlotte",
+  "pembroke",
+  "the-argonauts",
 ] as const;
 
 /**

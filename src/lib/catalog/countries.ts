@@ -228,6 +228,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   Ireland: [
     "Bram Stoker",
     "Charles Robert Maturin",
+    "E. Œ. Somerville & Martin Ross",
     "Ethel Lilian Voynich",
     "George Moore",
     "James Joyce",
@@ -244,6 +245,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Robert Louis Stevenson; Fanny Van de Grift Stevenson",
   ],
   Wales: ["Arthur Machen"],
+  England: ["Mary Webb"],
   France: [
     "Alain-Fournier",
     "Alexandre Dumas",
@@ -339,6 +341,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Ivan Turgenev",
     "Ivan Turgenev (trans. Constance Garnett)",
     "Leonid Andreyev",
+    "Leonid Andreyev (tr. W. H. Lowe)",
     "Leo Tolstoy",
     "Leo Tolstoy (tr. Aylmer Maude)",
     "Leo Tolstoy (trans. Louise Maude)",
@@ -469,6 +472,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   Poland: [
     "Adam Mickiewicz",
     "Bolesław Prus",
+    "Eliza Orzeszko (tr. Jeremiah Curtin)",
     "Henryk Sienkiewicz",
     "Henryk Sienkiewicz (trans. Jeremiah Curtin)",
     "I. L. Peretz",
@@ -685,6 +689,11 @@ const WORK_COUNTRY: Record<string, string> = {
   "morrina": "Spain",
   "a-happy-boy": "Norway",
   "the-desjardins": "Canada",
+  "gone-to-earth": "England",
+  "the-real-charlotte": "Ireland",
+  "pembroke": "United States",
+  "the-argonauts": "Poland",
+  "at-the-roadside-station": "Russia",
   "my-antonia": "United States",
   "look-back-on-happiness": "Norway",
   "father-of-yoto": "United Kingdom",

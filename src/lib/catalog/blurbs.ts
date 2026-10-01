@@ -571,6 +571,16 @@ const BLURBS: Record<string, string> = {
     "Oyvind, a cotter's son, loves a proud farmer's granddaughter and earns his way across the line.",
   "the-desjardins":
     "In the oldest house in Viger, a brother stands up at supper and says he is the Great Napoleon.",
+  "gone-to-earth":
+    "A heads-up before you start: the squire Reddin pursues Hazel sexually, there is blood sport all through, and the book ends in a fox-hunt tragedy.",
+  "the-real-charlotte":
+    "Francie Fitzpatrick comes to Lismoyle to stay with her cousin Charlotte Mullen, and the comedy darkens slowly.",
+  "pembroke":
+    "A heads-up before you start: later in the book a sick boy, Ephraim, dies after his mother beats him.",
+  "the-argonauts":
+    "Aloysius Darvid built a fortune by iron toil, in Jeremiah Curtin's English.",
+  "at-the-roadside-station":
+    "Early spring at a bungalow by a small Russian station, and a gendarme who is terribly bored.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
