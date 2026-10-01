@@ -1,0 +1,306 @@
+{
+  "id": "life-and-death-of-harriett-frean",
+  "title": "Life and Death of Harriett Frean",
+  "author": "May Sinclair",
+  "year": "1922",
+  "note": "Project Gutenberg 9298. Whole novella, sections I–XV (PG l.41–2964), labelled 'Chapter I' … 'Chapter XV'. Title page out. The indented nursery rhyme kept as one breath; the trailing four-hyphen break-offs set as a long dash '——'; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. 1922 (PG text: '1922' on the title page). PG reading-ease 85.1 — no invented Launch rank. Place: a London suburb, England. Sits: unwind. Host intro: A Victorian suburb near London. Harriett Frean is brought up to believe that behaving beautifully is everything, and she gives up the man she loves to her best friend. A whole quiet life of genteel self-sacrifice in about two hours, told close to Harriett and often as 'you'. Sharp and sad; the easiest read here.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · London suburb, England",
+      "place": "Chapter I · London suburb, England",
+      "reentry": "“Pussycat, Pussycat, where have you been?” / “I’ve been to London, to see the Queen.” / “Pussycat, Pussycat, what did you there?” / “I caught a little mouse under the chair,”",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "“Pussycat, Pussycat, where have you been?” / “I’ve been to London, to see the Queen.” / “Pussycat, Pussycat, what did you there?” / “I caught a little mouse under the chair,”"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Her mother said it three times. And each time the Baby Harriett laughed. The sound of her laugh was so funny that she laughed again at that; she kept on laughing, with shriller and shriller squeals."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "“I wonder why she thinks it’s funny,” her mother said."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Her father considered it. “I don’t know. The cat perhaps. The cat and the Queen. But no; that isn’t funny.”"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "“She sees something in it we don’t see, bless her,” said her mother."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Each kissed her in turn, and the Baby Harriett stopped laughing suddenly."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "“Mamma, *did* Pussycat see the Queen?”"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "“No,” said Mamma. “Just when the Queen was passing the little mouse came out of its hole and ran under the chair. That’s what Pussycat saw.”"
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Every evening before bedtime she said the same rhyme, and Harriett asked the same question."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "When Nurse had gone she would lie still in her cot, waiting. The door would open, the big pointed shadow would move over the ceiling, the lattice shadow of the fireguard would fade and go away, and Mamma would come in carrying the lighted candle. Her face shone white between her long, hanging curls. She would stoop over the cot and lift Harriett up, and her face would be hidden in curls. That was the kiss-me-to-sleep kiss. And when she had gone Harriett lay still again, waiting. Presently Papa would come in, large and dark in the firelight. He stooped and she leapt up into his arms. That was the kiss-me-awake kiss; it was their secret."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Then they played. Papa was the Pussycat and she was the little mouse in her hole under the bed-clothes. They played till Papa said, “*No* more!” and tucked the blankets tight in."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "“Now you’re kissing like Mamma——”"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Hours afterwards they would come again together and stoop over the cot and she wouldn’t see them; they would kiss her with soft, light kisses, and she wouldn’t know."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "She thought: To-night I’ll stay awake and see them. But she never did. Only once she dreamed that she heard footsteps and saw the lighted candle, going out of the room; going, going away."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "The blue egg stood on the marble top of the cabinet where you could see it from everywhere; it was supported by a gold waistband, by gold hoops and gold legs, and it wore a gold ball with a frill round it like a crown. You would never have guessed what was inside it. You touched a spring in its waistband and it flew open, and then it was a workbox. Gold scissors and thimble and stiletto sitting up in holes cut in white velvet."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "The blue egg was the first thing she thought of when she came into the room. There was nothing like that in Connie Hancock’s Papa’s house. It belonged to Mamma."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Harriett thought: If only she could have a birthday and wake up and find that the blue egg belonged to *her*——"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Ida, the wax doll, sat on the drawing-room sofa, dressed ready for the birthday. The darling had real person’s eyes made of glass, and real eyelashes and hair. Little finger and toenails were marked in the wax, and she smelt of the lavender her clothes were laid in."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "But Emily, the new birthday doll, smelt of composition and of gum and hay; she had flat, painted hair and eyes, and a foolish look on her face, like Nurse’s aunt, Mrs. Spinker, when she said “Lawk-a-daisy!” Although Papa had given her Emily, she could never feel for her the real, loving love she felt for Ida."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "And her mother had told her that she must lend Ida to Connie Hancock if Connie wanted her."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Mamma couldn’t see that such a thing was not possible."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "“My darling, you mustn’t be selfish. You must do what your little guest wants.”"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "“I can’t.”"
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "But she had to; and she was sent out of the room because she cried. It was much nicer upstairs in the nursery with Mimi, the Angora cat. Mimi knew that something sorrowful had happened. He sat still, just lifting the root of his tail as you stroked him. If only she could have stayed there with Mimi; but in the end she had to go back to the drawing-room."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "If only she could have told Mamma what it felt like to see Connie with Ida in her arms, squeezing her tight to her chest and patting her as if Ida had been *her* child. She kept on saying to herself that Mamma didn’t know; she didn’t know what she had done. And when it was all over she took the wax doll and put her in the long narrow box she had come in, and buried her in the bottom drawer in the spare-room wardrobe. She thought: If I can’t have her to myself I won’t have her at all. I’ve got Emily. I shall just have to pretend she’s not an idiot."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "She pretended Ida was dead; lying in her pasteboard coffin and buried in the wardrobe cemetery."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "It was hard work pretending that Emily didn’t look like Mrs. Spinker."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "She had a belief that her father’s house was nicer than other people’s houses. It stood off from the high road, in Black’s Lane, at the head of the town. You came to it by a row of tall elms standing up along Mr. Hancock’s wall. Behind the last tree its slender white end went straight up from the pavement, hanging out a green balcony like a bird cage above the green door."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "The lane turned sharp there and went on, and the long brown garden wall went with it. Behind the wall the lawn flowed down from the white house and the green veranda to the cedar tree at the bottom. Beyond the lawn was the kitchen garden, and beyond the kitchen garden the orchard; little crippled apple trees bending down in the long grass."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "She was glad to come back to the house after the walk with Eliza, the nurse, or Annie, the housemaid; to go through all the rooms looking for Mimi; looking for Mamma, telling her what had happened."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "“Mamma, the red-haired woman in the sweetie shop has got a little baby, and its hair’s red, too.... Some day I shall have a little baby. I shall dress him in a long gown——”"
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "“Robe.”"
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "“Robe, with bands of lace all down it, as long as *that*; and a white christening cloak sewn with white roses. Won’t he look sweet?”"
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "“Very sweet.”"
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "“He shall have lots of hair. I shan’t love him if he hasn’t.”"
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "“Oh, yes, you will.”"
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "“No. He must have thick, flossy hair like Mimi, so that I can stroke him. Which would you rather have, a little girl or a little boy?”"
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "“Well—what do you think——?”"
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "“I think—perhaps I’d rather have a little girl.”"
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "She would be like Mamma, and her little girl would be like herself. She couldn’t think of it any other way."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "The school-treat was held in Mr. Hancock’s field. All afternoon she had been with the children, playing Oranges and lemons, A ring, a ring of roses, and Here we come gathering nuts in May, *nuts* in May, *nuts* in May: over and over again. And she had helped her mother to hand cake and buns at the infants’ table."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "The guest-children’s tea was served last of all, up on the lawn under the immense, brown brick, many windowed house. There wasn’t room for everybody at the table, so the girls sat down first and the boys waited for their turn. Some of them were pushing and snatching."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "She knew what she would have. She would begin with a bun, and go on through two sorts of jam to Madeira cake, and end with raspberries and cream. Or perhaps it would be safer to begin with raspberries and cream. She kept her face very still, so as not to look greedy, and tried not to stare at the Madeira cake lest people should see she was thinking of it. Mrs. Hancock had given her somebody else’s crumby plate. She thought: I’m not greedy. I’m really and truly hungry. She could draw herself in at the waist with a flat, exhausted feeling, like the two ends of a concertina coming together."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "She was doing this when she saw her mother standing on the other side of the table, looking at her and making signs."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "“If you’ve finished, Hatty, you’d better get up and let that little boy have something.”"
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "They were all turning round and looking at her. And there was the crumby plate before her. They were thinking: “That greedy little girl has gone on and on eating.” She got up suddenly, not speaking, and left the table, the Madeira cake and the raspberries and cream. She could feel her skin all hot and wet with shame."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "And now she was sitting up in the drawing-room at home. Her mother had brought her a piece of seed-cake and a cup of milk with the cream on it. Mamma’s soft eyes kissed her as they watched her eating her cake with short crumbly bites, like a little cat. Mamma’s eyes made her feel so good, so good."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "“Why didn’t you tell me you hadn’t finished?”"
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "“Finished? I hadn’t even begun.”"
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "“Oh-h, darling, why didn’t you *tell* me?”"
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "“Because I—I don’t know.”"
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "“Well, I’m glad my little girl didn’t snatch and push. It’s better to go without than to take from other people. That’s ugly.”"
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "Ugly. Being naughty was just that. Doing ugly things. Being good was being beautiful like Mamma. She wanted to be like her mother. Sitting up there and being good felt delicious. And the smooth cream with the milk running under it, thin and cold, was delicious too."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "Suddenly a thought came rushing at her. There was God and there was Jesus. But even God and Jesus were not more beautiful than Mamma. They couldn’t be."
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "“You mustn’t say things like that, Hatty; you mustn’t, really. It might make something happen.”"
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "“Oh, no, it won’t. You don’t suppose they’re listening all the time.”"
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "Saying things like that made you feel good and at the same time naughty, which was more exciting than only being one or the other. But Mamma’s frightened face spoiled it. What did she think—what did she think God would do?"
+    }
+  ]
+}

@@ -591,6 +591,16 @@ const BLURBS: Record<string, string> = {
     "A note on period language: the book is full of the colour and class hierarchy of its day, and it uses the word ‘Chinaman’.",
   "the-peat-moor":
     "A wise old raven flies west to the last wild peat moor to dig up a sow’s ear he buried long ago.",
+  "life-and-death-of-harriett-frean":
+    "Harriett Frean gives up the man she loves and lives on the credit of behaving beautifully.",
+  "farewell-love":
+    "A heads-up before you start: the passion is obsessive, and at the end Anna shoots herself, shown directly.",
+  "the-son-of-his-mother":
+    "A heads-up before you start: the son dies of an illness in the last chapter.",
+  "my-lady-nobody":
+    "A heads-up before you start: once, the aristocrats talk about Jews in a period stereotype; Part III follows the colonial war in Aceh; and a suicide attempt over debt is reported.",
+  "new-years-night":
+    "A stifling New Year's Eve on a lonely selection at Dead Man's Gap, and the neighbours ride up through the storm.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",

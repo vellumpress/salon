@@ -179,6 +179,11 @@ test("known origin overrides", () => {
     "mayflower": "Spain",
     "susan-proudleigh": "Jamaica",
     "the-peat-moor": "Norway",
+    "life-and-death-of-harriett-frean": "England",
+    "farewell-love": "Italy",
+    "the-son-of-his-mother": "Germany",
+    "my-lady-nobody": "Netherlands",
+    "new-years-night": "Australia",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
