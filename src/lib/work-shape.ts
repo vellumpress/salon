@@ -179,6 +179,7 @@ export function inflateWork(packed: PackedWork): Work {
     reentry: chapter.reentry,
     prompt: chapter.prompt,
     wash: chapter.wash,
+    ...(chapter.front ? { front: true } : {}),
   }));
   const breaths = packed.chapters.flatMap((chapter) => breathsFor(chapter.id, chapter.lines));
   return {

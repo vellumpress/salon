@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
+import { openingBreathIndex } from "@/lib/opening-scene";
 import {
   chapterStartIndex,
   lookbackBreaths,
@@ -154,6 +155,7 @@ export function TbrReader({
   const overlayRef = useRef(overlay);
   overlayRef.current = overlay;
   const booted = useRef(false);
+  const seenBreaths = useRef(0);
   const breathSlotRef = useRef<HTMLDivElement>(null);
   const lookbackSlotRef = useRef<HTMLDivElement>(null);
 
@@ -162,7 +164,27 @@ export function TbrReader({
     if (sit !== undefined) {
       useTbr.getState().setSittingMinutes(sit);
     }
+    const grew = work.breaths.length > seenBreaths.current;
+    seenBreaths.current = work.breaths.length;
+    const deepLink =
+      typeof at === "number" &&
+      Number.isFinite(at) &&
+      at >= 0 &&
+      at < work.breaths.length
+        ? Math.floor(at)
+        : echoAt != null
+          ? echoAt
+          : null;
+    // The opening sit is already on the prose. When the full novel arrives,
+    // breath 0 can be a publication note or dedication. Nudge a fresh start
+    // past that leading front matter only — do not re-apply chapter jumps,
+    // and do not move a saved index that is already on the prose.
     if (booted.current) {
+      if (grew && !shuffle && deepLink === null) {
+        const index = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
+        const frontAt = openingBreathIndex(work);
+        if (index < frontAt) useTbr.getState().setBreath(work.id, frontAt);
+      }
       return;
     }
     booted.current = true;
@@ -175,15 +197,6 @@ export function TbrReader({
       setOverlay("none");
       return;
     }
-    const deepLink =
-      typeof at === "number" &&
-      Number.isFinite(at) &&
-      at >= 0 &&
-      at < work.breaths.length
-        ? Math.floor(at)
-        : echoAt != null
-          ? echoAt
-          : null;
     if (hostedSit) {
       rememberHostedSit(hostedSit);
     }
@@ -195,9 +208,10 @@ export function TbrReader({
       return;
     }
     const chapterAt = chapterStartIndex(work);
+    const startAt = Math.max(chapterAt, openingBreathIndex(work));
     const index = prior?.breathIndex ?? 0;
-    if (!prior?.entered || index < chapterAt) {
-      useTbr.getState().setBreath(work.id, chapterAt);
+    if (!prior?.entered || index < startAt) {
+      useTbr.getState().setBreath(work.id, startAt);
     }
     // Friend already joining with pair+sit — skip the gate.
     if (pair && sit !== undefined) {
