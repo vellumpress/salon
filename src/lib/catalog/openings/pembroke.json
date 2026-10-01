@@ -1,0 +1,181 @@
+{
+  "id": "pembroke",
+  "title": "Pembroke",
+  "author": "Mary E. Wilkins Freeman",
+  "year": "1894",
+  "note": "Project Gutenberg 17428. Whole novel, Chapter I–XIV (PG l.167–9819); the open starts at Chapter I, after the author's Introductory Sketch, which is out. Produced-by credit, Transcriber's Note, title page, the 15 illustration tags and their captions and 'The End' out; any sentence a caption split is rejoined. Yankee dialect kept exactly as printed; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. 1894 (PG Transcriber's Note: 'scanned from the 1894 edition'; title page Harper & Brothers, 1900). PG reading-ease 81.5 — no invented Launch rank. Place: Pembroke, a New England village. Sits: unwind. Host intro: A New England village in the days of Whigs and Democrats. On a Sunday night Barnabas Thayer quarrels with Charlotte Barnard's father over politics, walks out, and then cannot make himself go back. A whole village of stubborn, proud people, told with a dry, patient eye; the Yankee talk is kept as printed. A heads-up before you start: a sick boy, Ephraim, dies after his mother beats him.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Pembroke, New England",
+      "place": "Chapter I · Pembroke, New England",
+      "reentry": "At half-past six o'clock on Sunday night Barnabas came out of his bedroom. The Thayer house was only one story high, and there were no chambers. A number of little bedrooms were clustered around the t",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "At half-past six o'clock on Sunday night Barnabas came out of his bedroom. The Thayer house was only one story high, and there were no chambers. A number of little bedrooms were clustered around the three square rooms—the north and south parlors, and the great kitchen."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Barnabas walked out of his bedroom straight into the kitchen where the other members of the family were. They sat before the hearth fire in a semi-circle—Caleb Thayer, his wife Deborah, his son Ephraim, and his daughter Rebecca. It was May, but it was quite cold; there had been talk of danger to the apple blossoms; there was a crisp coolness in the back of the great room in spite of the hearth fire."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Caleb Thayer held a great leather-bound Bible on his knees, and was reading aloud in a solemn voice. His wife sat straight in her chair, her large face tilted with a judicial and argumentative air, and Rebecca's red cheeks bloomed out more brilliantly in the heat of the fire. She sat next her mother, and her smooth dark head with its carven comb arose from her Sunday kerchief with a like carriage. She and her mother did not look alike, but their motions were curiously similar, and perhaps gave evidence to a subtler resemblance in character and motive power."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Ephraim, undersized for his age, in his hitching, home-made clothes, twisted himself about when Barnabas entered, and stared at him with slow regard. He eyed the smooth, scented hair, the black satin vest with a pattern of blue flowers on it, the blue coat with brass buttons, and the shining boots, then he whistled softly under his breath."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"Ephraim!\" said his mother, sharply. She had a heavy voice and a slight lisp, which seemed to make it more impressive and more distinctively her own. Caleb read on ponderously."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Where ye goin', Barney?\" Ephraim inquired, with a chuckle and a grin, over the back of his chair."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Ephraim!\" repeated his mother. Her blue eyes frowned around his sister at him under their heavy sandy brows."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Ephraim twisted himself back into position. \"Jest wanted to know where he was goin',\" he muttered."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Barnabas stood by the window brushing his fine bell hat with a white duck's wing. He was a handsome youth; his profile showed clear and fine in the light, between the sharp points of his dicky bound about by his high stock. His cheeks were as red as his sister's."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "When he put on his hat and opened the door, his mother herself interrupted Caleb's reading."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Don't you stay later than nine o'clock, Barnabas,\" said she."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "The young man murmured something unintelligibly, but his tone was resentful."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"I ain't going to have you out as long as you were last Sabbath night,\" said his mother, in quick return. She jerked her chin down heavily as if it were made of iron."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "Barnabas went out quickly, and shut the door with a thud."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"If he was a few years younger, I'd make him come back an' shut that door over again,\" said his mother."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Caleb read on; he was reading now one of the imprecatory psalms. Deborah's blue eyes gleamed with warlike energy as she listened: she confused King David's enemies with those people who crossed her own will."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Barnabas went out of the yard, which was wide and deep on the south side of the house. The bright young grass was all snowed over with cherry blossoms. Three great cherry-trees stood in a row through the centre of the yard; they had been white with blossoms, but now they were turning green; and the apple-trees were in flower."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "There were many apple-trees behind the stone-walls that bordered the wood. The soft blooming branches looked strangely incongruous in the keen air. The western sky was clear and yellow, and there were a few reefs of violet cloud along it. Barnabas looked up at the apple blossoms over his head, and wondered if there would be a frost. From their apple orchard came a large share of the Thayer income, and Barnabas was vitally interested in such matters now, for he was to be married the last of June to Charlotte Barnard. He often sat down with a pencil and slate, and calculated, with intricate sums, the amounts of his income and their probable expenses. He had made up his mind that Charlotte should have one new silk gown every year, and two new bonnets—one for summer and one for winter. His mother had often noted, with scorn, that Charlotte Barnard wore her summer bonnet with another ribbon on it winters, and, moreover, had not had a new bonnet for three years."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"She looks handsomer in it than any girl in town, if she hasn't,\" Barnabas had retorted with quick resentment, but he nevertheless felt sensitive on the subject of Charlotte's bonnet, and resolved that she should have a white one trimmed with gauze ribbons for summer, and one of drawn silk, like Rebecca's, for winter, only the silk should be blue instead of pink, because Charlotte was fair."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Barnabas had even pondered with tender concern, before he bought his fine flowered satin waistcoat, if he might not put the money it would cost into a bonnet for Charlotte, but he had not dared to propose it. Once he had bought a little blue-figured shawl for her, and her father had bade her return it."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"I ain't goin' to have any young sparks buyin' your clothes while you are under my roof,\" he had said."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Charlotte had given the shawl back to her lover. \"Father don't feel as if I ought to take it, and I guess you'd better keep it now, Barney,\" she said, with regretful tears in her eyes."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Barnabas had the blue shawl nicely folded in the bottom of his little hair-cloth trunk, which he always kept locked."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "After a quarter of a mile the stone-walls and the spray of apple blossoms ended; there was a short stretch of new fence, and a new cottage-house only partly done. The yard was full of lumber, and a ladder slanted to the roof, which gleamed out with the fresh pinky yellow of unpainted pine."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "Barnabas stood before the house a few minutes, staring at it. Then he walked around it slowly, his face upturned. Then he went in the front door, swinging himself up over the sill, for there were no steps, and brushing the sawdust carefully from his clothes when he was inside. He went all over the house, climbing a ladder to the second story, and viewing with pride the two chambers under the slant of the new roof. He had repelled with scorn his father's suggestion that he have a one-story instead of a story-and-a-half house. Caleb had an inordinate horror and fear of wind, and his father, who had built the house in which he lived, had it before him. Deborah often descanted indignantly upon the folly of sleeping in little tucked-up bedrooms instead of good chambers, because folks' fathers had been scared to death of wind, and Barnabas agreed with her. If he had inherited any of his father's and grandfather's terror of wind, he made no manifestation of it."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "In the lower story of the new cottage were two square front rooms like those in his father's house, and behind them the great kitchen with a bedroom out of it, and a roof of its own."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Barnabas paused at last in the kitchen, and stood quite still, leaning against a window casement. The windows were not in, and the spaces let in the cool air and low light. Outside was a long reach of field sloping gently upward. In the distance, at the top of the hill, sharply outlined against the sky, was a black angle of roof and a great chimney. A thin column of smoke rose out of it, straight and dark. That was where Charlotte Barnard lived."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "Barnabas looked out and saw the smoke rising from the chimney of the Barnard house. There was a little hollow in the field that was quite blue with violets, and he noted that absently. A team passed on the road outside; it was as if he saw and heard everything from the innermost recesses of his own life, and everything seemed strange and far off."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "He turned to go, but suddenly stood still in the middle of the kitchen, as if some one had stopped him. He looked at the new fireless hearth, through the open door into the bedroom which he would occupy after he was married to Charlotte, and through others into the front rooms, which would be apartments of simple state, not so closely connected with every-day life. The kitchen windows would be sunny. Charlotte would think it a pleasant room."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Her rocking-chair can set there,\" said Barnabas aloud. The tears came into his eyes; he stepped forward, laid his smooth boyish cheek against a partition wall of this new house, and kissed it. It was a fervent demonstration, not towards Charlotte alone, nor the joy to come to him within those walls, but to all life and love and nature, although he did not comprehend it. He half sobbed as he turned away; his thoughts seemed to dazzle his brain, and he could not feel his feet. He passed through the north front room, which would be the little-used parlor, to the door, and suddenly started at a long black shadow on the floor. It vanished as he went on, and might have been due to his excited fancy, which seemed substantial enough to cast shadows."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "\"I shall marry Charlotte, we shall live here together all our lives, and die here,\" thought Barnabas, as he went up the hill. \"I shall lie in my coffin in the north room, and it will all be over,\" but his heart leaped with joy. He stepped out proudly like a soldier in a battalion, he threw back his shoulders in his Sunday coat."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "The yellow glow was paling in the west, the evening air was like a cold breath in his face. He could see the firelight flickering upon the kitchen wall of the Barnard house as he drew near. He came up into the yard and caught a glimpse of a fair head in the ruddy glow. There was a knocker on the door; he raised it gingerly and let it fall. It made but a slight clatter, but a woman's shadow moved immediately across the yard outside, and Barnabas heard the inner door open. He threw open the outer one himself, and Charlotte stood there smiling, and softly decorous. Neither of them spoke. Barnabas glanced at the inner door to see if it were closed, then he caught Charlotte's hands and kissed her."
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "id": "gone-to-earth",
+  "title": "Gone to Earth",
+  "author": "Mary Webb",
+  "year": "1917",
+  "note": "Project Gutenberg 7055. Whole novel, the dedication and Chapter 1–36 (PG l.52–11191). Produced-by credit and title page out; the dedication kept as its own short section before Chapter 1. One print slip mended (l.81 'few-women' → 'few women'). Single quotes and the border dialect kept exactly as printed; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. 1917 (PG title page). PG reading-ease 83.7 — no invented Launch rank. Place: the Welsh border hills, on the English side. Sits: unwind. Host intro: The Welsh border hills, on the English side. Hazel Woodus, half wild, lives with her father and her pet fox, Foxy, and is pulled between a gentle minister and the hard squire Reddin. Mary Webb's countryside is lush and strange, and the hill talk is kept as printed. A heads-up before you start: Reddin pursues Hazel sexually, there is blood sport throughout, and the book ends in a fox-hunt tragedy.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter 1 · Welsh border hills",
+      "place": "Chapter 1 · Welsh border hills",
+      "reentry": "Small feckless clouds were hurried across the vast untroubled sky—shepherdless, futile, imponderable—and were torn to fragments on the fangs of the mountains, so ending their ephemeral adventures with",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Small feckless clouds were hurried across the vast untroubled sky—shepherdless, futile, imponderable—and were torn to fragments on the fangs of the mountains, so ending their ephemeral adventures with nothing of their fugitive existence left but a few tears."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It was cold in the Callow—a spinney of silver birches and larches that topped a round hill. A purple mist hinted of buds in the tree-tops, and a fainter purple haunted the vistas between the silver and brown boles."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Only the crudeness of youth was here as yet, and not its triumph—only the sharp calyx-point, the pricking tip of the bud, like spears, and not the paten of the leaf, the chalice of the flower."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "For as yet spring had no flight, no song, but went like a half-fledged bird, hopping tentatively through the undergrowth. The bright springing mercury that carpeted the open spaces had only just hung out its pale flowers, and honeysuckle leaves were still tongues of green fire. Between the larch boles and under the thickets of honeysuckle and blackberry came a tawny silent form, wearing with the calm dignity of woodland creatures a beauty of eye and limb, a brilliance of tint, that few women could have worn without self-consciousness. Clear-eyed, lithe, it stood for a moment in the full sunlight—a year-old fox, round-headed and velvet-footed. Then it slid into the shadows. A shrill whistle came from the interior of the wood, and the fox bounded towards it."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "'Where you bin? You'm stray and lose yourself, certain sure!' said a girl's voice, chidingly motherly. 'And if you'm alost, I'm alost; so come you whome. The sun's undering, and there's bones for supper!'"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "With that she took to her heels, the little fox after her, racing down the Callow in the cold level light till they came to the Woodus's cottage."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Hazel Woodus, to whom the fox belonged, had always lived at the Callow. There her mother, a Welsh gipsy, had born her in bitter rebellion, hating marriage and a settled life and Abel Woodus as a wild cat hates a cage. She was a rover, born for the artist's joy and sorrow, and her spirit found no relief for its emotions; for it was dumb. To the linnet its flight, to the thrush its song; but she had neither flight nor song. Yet the tongueless thrush is a thrush still, and has golden music in its heart. The caged linnet may sit moping, but her soul knows the dip and rise of flight on an everlasting May morning."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "All the things she felt and could not say, all the stored honey, the black hatred, the wistful homesickness for the unfenced wild—all that other women would have put into their prayers, she gave to Hazel. The whole force of her wayward heart flowed into the softly beating heart of her baby. It was as if she passionately flung the life she did not value into the arms of her child."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "When Hazel was fourteen she died, leaving her treasure—an old, dirty, partially illegible manuscript-book of spells and charms and other gipsy lore—to her daughter."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Her one request was that she might be buried in the Callow under the yellow larch needles, and not in a churchyard. Abel Woodus did as she asked, and was regarded askance by most of the community for not burying her in Chrissen-ground. But this did not trouble him. He had his harp still, and while he had that he needed no other friend. It had been his absorption in his music that had prevented him understanding his wife, and in the early days of their marriage she had been wildly jealous of the tall gilt harp with its faded felt cover that stood in the corner of the living-room. Then her jealousy changed to love of it, and her one desire was to be able to draw music from its plaintive strings. She could never master even the rudiments of music, but she would sit on rainy evenings when Abel was away and run her thin hands over the strings with a despairing passion of grieving love. Yet she could not bear to hear Abel play. Just as some childless women with all their accumulated stores of love cannot bear to see a mother with her child, so Maray Woodus, with her sealed genius, her incapacity for expression, could not bear to hear the easy self-expression of another. For Abel was in his way a master of his art; he had dark places in his soul, and that is the very core of art and its substance. He had the lissom hands and cheerful self-absorption that bring success."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "He had met Maray at an Eisteddfod that had been held in days gone by on a hill five miles from the Callow, called God's Little Mountain, and crowned by a chapel. She had listened, swaying and weeping to the surge and lament of his harp, and when he won the harper's prize and laid it in her lap she had consented to be married in the chapel at the end of the Eisteddfod week. That was nineteen years ago, and she was fled like the leaves and the birds of departed summers; but God's Little Mountain still towered as darkly to the eastward; the wind still leapt sheer from the chapel to the young larches of the Callow; nothing had changed at all; only one more young, anxious, eager creature had come into the towering, subluminous scheme of things. Hazel had her mother's eyes, strange, fawn-coloured eyes like water, and in the large clear irises were tawny flecks. In their shy honesty they were akin to the little fox's. Her hair, too, of a richer colour than her father's, was tawny and foxlike, and her ways were graceful and covert as a wild creature's."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "She stood in the lane above the cottage, which nestled below with its roof on a level with the hedge-roots, and watched the sun dip. The red light from the west stained her torn old dress, her thin face, her eyes, till she seemed to be dipped in blood. The fox, wistfulness in her expression and the consciousness of coming supper in her mind, gazed obediently where her mistress gazed, and was touched with the same fierce beauty. They stood there fronting the crimson pools over the far hills, two small sentient things facing destiny with pathetic courage; they had, in the chill evening on the lonely hill, a look as of those predestined to grief, almost an air of martyrdom."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "The small clouds that went westward took each in its turn the prevailing colour, and vanished, dipped in blood."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "From the cottage, as Hazel went down the path, came the faint thrumming of the harp, changing as she reached the door to the air of 'The Ash Grove.' The cottage was very low, one-storied, and roofed with red corrugated iron. The three small windows had frames coloured with washing-blue and frills of crimson cotton within. There seemed scarcely room for even Hazel's small figure. The house was little larger than a good pigsty, and only the trail of smoke from its squat chimney showed that humanity dwelt there."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "Hazel gave Foxy her supper and put her to bed in the old washtub where she slept. Then she went into the cottage with an armful of logs from the wood heap. She threw them on the open fire."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "'I'm a-cold,' she said; 'the rain's cleared, and there'll be a duck's frost to-night.'"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Abel looked up absently, humming the air he intended to play next."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "'I bin in the Callow, and I've gotten a primmyrose,' continued Hazel, accustomed to his ways, and not discouraged. 'And I got a bit of blackthorn, white as a lady.'"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Abel was well on in 'Ap Jenkyn' by now."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Hazel moved about, seeing to supper, for she was as hungry as Foxy, talking all the time in her rather shrilly sweet voice, while she dumped the cracked cups and the loaf and margarine on the bare table. The kettle was not boiling, so she threw some bacon-grease on the fire, and a great tongue of flame sprang out and licked at Abel's beard. He raised a hand to it, continuing to play with the other."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Hazel laughed."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "'You be fair comic-struck,' she said."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "She always spoke in this tone of easy comradeship; they got on very well; they were so entirely indifferent to each other. There was nothing filial about her or parental about him. Neither did they ever evince the least affection for each other."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "He struck up 'It's a fine hunting day.'"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "'Oh! shut thy row with that drodsome thing!' said Hazel with sudden passion. 'Look'ee! I unna bide in if you go on.'"
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "'Ur?' queried Abel dreamily."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "'Play summat else!' said Hazel, 'not that; I dunna like it.'"
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "'You be a queer girl, 'Azel,' said Abel, coming out of his abstraction. 'But I dunna mind playing \"Why do the People?\" instead; it's just as heartening.'"
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "'Canna you stop meddling wi' the music and come to supper?' asked Hazel. The harp was always called 'the music,' just as Abel's mouth-organ was 'the little music.'"
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "She reached down the flitch to cut some bacon off, and her dress, already torn, ripped from shoulder to waist."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "'If you dunna take needle to that, you'll be mother-naked afore a week's out,' said Abel indifferently."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "'I mun get a new un,' said Hazel. 'It unna mend. I'll go to town to-morrow.'"
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "'Shall you bide with yer auntie the night over?'"
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "'Ah.'"
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "'I shanna look for your face till I see your shadow, then. You can bring a tuthree wreath-frames. There's old Samson at the Yeath unna last long; they'll want a wreath made.'"
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "Hazel sat and considered her new dress. She never had a new one till the old one fell off her back, and then she usually got a second-hand one, as a shilling or two would buy only material if new, but would stretch to a ready-made if second-hand."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "'Foxy'd like me to get a green velvet,' said Hazel. She always expressed her intense desires, which were few, in this formula. It was her unconscious protest against the lovelessness of her life. She put the blackthorn in water and contemplated its whiteness with delight; but it had not occurred to her that she might herself, with a little trouble, be as sweet and fresh as its blossom. The spiritualization of sex would be needed before such things would occur to her. At present she was sexless as a leaf. They sat by the fire till it went out; then they went to bed, not troubling to say good-night."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "In the middle of the night Foxy woke. The moon filled her kennel-mouth like a door, and the light shone in her eyes. This frightened her—so large a lantern in an unseen hand, held so purposefully before the tiny home of one defenceless little creature. She barked sharply. Hazel awoke promptly, as a mother at her child's cry. She ran straight out with her bare feet into the fierce moonlight."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "'What ails you?' she whispered. 'What ails you, little un?'"
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "The wind stalked through the Callow, and the Callow moaned. A moan came also from the plain, and black shapes moved there as the clouds drove onwards."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "'Maybe they're out,' muttered Hazel. 'Maybe the black meet's set for to-night and she's scented the jeath pack.' She looked about nervously. 'I can see summat driving dark o'er the pastures yonder; they'm abroad, surely.'"
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "She hurried Foxy into the cottage and bolted the door."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "'There!' she said. 'Now you lie good and quiet in the corner, and the death pack shanna get you.'"
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "It was said that the death pack, phantom hounds of a bad squire, whose gross body had been long since put to sweeter uses than any he put it to in life—changed into the clear-eyed daisy and the ardent pimpernel—scoured the country on dark stormy nights. Harm was for the house past which it streamed, death for those that heard it give tongue."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "This was the legend, and Hazel believed it implicitly. When she had found Foxy half dead outside her deserted earth, she had been quite sure that it was the death pack that had made away with Foxy's mother. She connected it also with her own mother's death. Hounds symbolized everything she hated, everything that was not young, wild and happy. She identified herself with Foxy, and so with all things hunted and snared and destroyed."
+    }
+  ]
+}

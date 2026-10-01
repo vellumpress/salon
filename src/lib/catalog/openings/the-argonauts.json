@@ -1,0 +1,106 @@
+{
+  "id": "the-argonauts",
+  "title": "The Argonauts",
+  "author": "Eliza Orzeszko (tr. Jeremiah Curtin)",
+  "year": "1901",
+  "note": "Project Gutenberg 20537 (tr. Jeremiah Curtin, per PG). Whole novel, Chapter I–XI (PG l.134–10604). Produced-by credit, Curtin's Introduction, the title lines, his dated signature and 'The End' out. Period language kept as printed; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens (the longest source paragraph runs 1,546 words); no words changed. EN 1901 (Curtin's Introduction is signed 'September 12, 1901'). PG reading-ease 78.6 — no invented Launch rank. Place: Poland. Sits: unwind. Host intro: A great city at the turn of the century, in a millionaire's mansion. Aloysius Darvid has built a fortune by iron toil and has no time left for his wife, his son or his daughter, and each of them drifts off in a different direction. Curtin's translation is plain and steady.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Poland",
+      "place": "Chapter I · Poland",
+      "reentry": "It was the mansion of a millionaire. On the furniture and the walls of drawing-rooms, colors and gleams played as on the surface of a pearl shell. Mirrors reflected pictures, and inlaid floors shone l",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was the mansion of a millionaire. On the furniture and the walls of drawing-rooms, colors and gleams played as on the surface of a pearl shell. Mirrors reflected pictures, and inlaid floors shone like mirrors. Here and there dark tapestry and massive curtains seemed to decrease the effect, but only at first sight, for, in fact, they lent the whole interior a dignity which was almost churchlike. At some points everything glistened, gleamed, changed into azure, scarlet, gold, bronze, and the various tints of white peculiar to plaster-of-Paris, marble, silk, porcelain. In that house were products of Chinese and Japanese skill; the styles of remote ages were there, and the most exquisite and elegant among modern styles, lamps, chandeliers, candlesticks, vases, ornamental art in its highest development. Withal much taste and skill was evident, a certain tact in placing things, and a keenness in disposing them, which indicated infallibly the hand and the mind of a woman who was far above mediocrity."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The furnishing of this mansion must have cost sums which to the poor would seem colossal, and very considerable even to the wealthy."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Aloysius Darvid, the owner of this mansion, had not inherited his millions; he had won them with his own iron labor, and he toiled continually to increase them. His industry, inventiveness, and energy were inexhaustible. To him business seemed to be what water is to a fish: the element which gives delight and freedom. What was his business? Great and complicated enterprises: the erection of public edifices, the purchase, sale, and exchange of values of various descriptions, exchanges in many markets and corporations. To finish all this business it was necessary to possess qualities of the most opposite character: the courage of the lion and the caution of the fox, the talons of the falcon and the elasticity of the cat. His life was passed at a gaming-table, composed of the whole surface of a gigantic State; that life was a species of continuous punting at a bank kept by blind chance rather frequently; for calculation and skill, which meant very much in his career, could not eliminate chance altogether, that power which appears independently. Hence, he must not let chance overthrow him; he might drop to the earth before its thrusts and contract a muscle, but only to parry, make an elastic spring, and seize new booty. His career was success rising and falling like a river, it was also a fever, ceaselessly bathed in cool calculation and reckoning."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "As to the rest, post-wagons, railways, bells at railway stations, urging to haste, glittering snows of the distant North, mountains towering on the boundary between two parts of the world, rivers cutting through uninhabited regions, horizons marked with the gloomy lines of Siberian forests, solitary since the beginning of ages. Then, as a change: noise, glitter, throngs, the brilliancy of capitals, and in those capitals a multitude of doors, some of which open with freedom, while others are closed hermetically; before doors of the second sort the pliancy of the cat's paw is needed; this finds a hole where the broad way is impossible."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "He was forced to be absent from his family for long months, sometimes for whole years, and even when living under the same roof with the members of it he was a rare guest, never a real confiding companion. For permanence, intimacy, tender feeling in relations, with even those who were nearest him, Darvid had not the time, just as he had not the time to concentrate his thoughts on any subject whatever unless it was connected with his lines, dates, and figures, or with the meshes of that net in which he enclosed his thoughts and his iron labor."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "As to amusements and delights of life, they were at intervals love-affairs, flashing up on a sudden, transient, fleeting, vanishing with the smoke of the locomotive which rushed forward, at times luxuries of the table peculiar to various climates, or majestic scenery which forced itself on the eye by its grandeur and disappeared quickly, or some hours of animated card-playing; but, above all, relations with social magnates, who were on the one hand of use, and on the other an immensely great honor to his vanity. Money and significance, these were the two poles around which all Darvid's thoughts, desires, and feelings circled; or, at least, it might seem all, for who can be certain that nothing exists in a man save that which is manifest in his actions? Surely no one, not the man himself even."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "After three years' absence, Darvid had returned only a few months before to his native city, and to his own house, where he was as ever a rare and inattentive guest. Pie was laboring again. In the first week, on the first day almost, he discovered a new field; he was very anxious to seize this field, and begin his Herculean efforts on it. But the seizure depended on a certain very highly placed personage to whom, up to that time, he had not been able to gain admittance."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The cat's paw had played about a number of times to open a crevice in the closed door, but in vain! He desired a confidential talk of two hours, but could not obtain it."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "He turned then to a method which had given him real service frequently."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "He found an individual who had the art of squeezing into all places, of winning everyone, of digging from under the earth circumstances, relations, influences. Individuals of this kind are generally dubious in character, but this concerned Darvid in no way. He considered that at the bottom of life dregs are found as surely as slime is in rivers which have golden sand. He thought of life's dregs and smiled contemptuously, but did not hesitate to handle those dregs, and see if there were golden grains in them. He called his dubious assistants hounds, for they tracked game in thickets inaccessible to the hunter. Small, almost invisible, they were still better able than he to contract muscles, creep up or spring over. He had let out such a hound a few days before to gain the desired audience, and had received no news from him thus far. This disturbed and annoyed Darvid greatly. He would rush into the new work like a lion into an arena, and spring at fresh prey."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "The evening twilight came down into the series of great and small chambers. Darvid, in his study, furnished with such dignified wealth that it was almost severe in the rich lamp-light, received men who came on affairs of various descriptions: with reports, accounts, requests, proposals."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "In that study everything was dark-colored, massive, grand in its proportions, of great price, but not flashy. Not the least object was showy or fantastic; nothing was visible save dignity and comfort. There were books behind the glass of a splendid bookcase, two great pictures on the wall, a desk with piles of papers, in the middle of the room a round table covered with maps, pamphlets, thick volumes; around the table, heavy, deep and low armchairs. The room was spacious with a lofty ceiling, from which hung over the round table a splendid lamp, burning brightly."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Darvid's remote prototype, the Argonaut Jason, must have had quite a different exterior when he sailed on toward Colchis to find the golden fleece. Time, which changes the methods of contest, changes the forms of its knights correspondingly. Jason trusted in the strength of his arm and his sword-blade. Darvid trusted in his brain and his nerves only. Hence, in him, brain and nerves were developed to the prejudice of muscles, creating a special power, which one had to know in order to recognize it in that slender and not lofty figure, in that face with shrunken cheeks, covered with skin which was dry, pale, and as mobile as if quivering from every breeze which carried his bark toward the shores which he longed for. On his cheeks shone narrow strips of whiskers, almost bronze-hued; the silky ends of these fell on his stiff, low collar; ruddy mustaches, short and firm, darkened his pale, thin lips, which had a smile in the changeableness of which was great expression; this smile encouraged, discouraged, attracted, repelled, believed, doubted, courted or jeered-jeered frequently. But the main seat of power in Darvid seemed to be his eyes, which rested long and attentively on that which he examined. These eyes had pupils of steel color, cold, very deep, and with a fullness of penetrating light which was often sharp, under brows which were prominent, whose ruddy lines were drawn under a high forehead, increased further by incipient baldness-a forehead which was smooth and had the polish of ivory; between the brows were numerous wrinkles, like a cloud of anxiety and care. His was a cold, reasoning face, energetic, with the stamp of thought fixed between the brows, and lines of irony which had made the mouth drawn."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "A jurist, one of the most renowned in that great city, held in his hand an open volume of the Code, and was reading aloud a series of extracts from it. Darvid was standing and listening attentively, but irony increased in his smile, and, when the jurist stopped reading, he began in a low voice. This voice with its tones suppressed, as it were, through caution, was one of Darvid's peculiarities."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"Pardon me, but what you have read has no relation to the point which concerns us.\" Taking the book he turned over its pages for a while and began then to read from it. In reading he used glasses with horn-rims; from these the yellowish pallor of his lean face became deeper. The renowned jurist was confused and astonished."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"You are right,\" said he. \"I was mistaken. You know law famously.\" How was he to avoid knowing it, since it was his weapon and safety-valve! The jurist sat down on one of the broad and low armchairs in silence, and now the architect unrolled on the table the plan of a public edifice to which the last finish was to be given during winter and before work began in spring."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "Darvid listened again in silent thought, looking at the plan with his steel-colored eyes, in which at times there flashed sparks of ideas coming from the brain-ideas which, after a while, he presented to the trained architect. He spoke in a voice low and fluent; he spoke connectedly and very clearly. The architect answered with respect, and, like, the jurist who had preceded, not without a certain astonishment. Great God! this man knows everything; he moves as freely in the fields of architecture, mathematics, and law as in his own chamber! Darvid noticed the astonishment of those around him, and irony settled on his thin lips. Did those men imagine that he could begin such undertakings and be like a blind man among colors? Some begin thus but are ruined! He understood that in our time immense knowledge is the only foundation for pyramidal fortunes, and his memory alone knew the long series of nights which had passed above his head while it was sleepless in winning knowledge."
+    }
+  ]
+}
