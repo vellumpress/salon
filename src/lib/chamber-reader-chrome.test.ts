@@ -26,11 +26,14 @@ test("reader turns underscore emphasis into italic markup", () => {
   assert.match(reader, /<em key=\{i\}>/);
 });
 
-test("a tap on the reading text brings the Keep bar back", () => {
+test("a page tap does not bring the Keep bar back", () => {
   assert.match(reader, /data-reader-text/);
   assert.match(reader, /data-turn/);
-  assert.match(reader, /closest\("\[data-reader-text\]"\)/);
-  assert.match(reader, /setStill\(false\)/);
+  assert.doesNotMatch(reader, /closest\("\[data-reader-text\]"\)/);
+  assert.match(reader, /reduceReaderBar\(state, "page"\)/);
+  assert.match(reader, /reduceReaderBar\(state, "hourglass"\)/);
+  const goTo = reader.slice(reader.indexOf("function goTo("), reader.indexOf("function advance("));
+  assert.doesNotMatch(goTo, /setStill|setBar|reduceReaderBar/);
 });
 
 test("reader mark always keeps You linked to /profile", () => {
