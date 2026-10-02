@@ -189,6 +189,11 @@ test("known origin overrides", () => {
     "dusty-answer": "England",
     "christine-of-the-hills": "Croatia",
     "the-story-of-a-woman": "India",
+    "daughters-of-men": "Greece",
+    "the-bright-shawl": "Cuba",
+    "irresolute-catherine": "Wales",
+    "the-old-room": "Denmark",
+    "the-fur-coat": "Sweden",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);

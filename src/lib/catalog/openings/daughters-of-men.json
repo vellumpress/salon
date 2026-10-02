@@ -1,0 +1,41 @@
+{
+  "id": "daughters-of-men",
+  "title": "Daughters of Men",
+  "author": "Hannah Lynch",
+  "year": "1892",
+  "note": "Project Gutenberg 65098. Whole novel, 32 chapters (PG l.99–11175) to THE END., labelled 'Chapter n · <title>' with the printed heads in sentence case, after the dedication to Demetrios Bikelas (l.66–89) as its own front section. The transcriber's note box, the title page and the half-title out. Curly quotes kept as printed; italics kept; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. 1892 (PG text: 'COPYRIGHT, 1892', l.55). PG reading-ease 70.7 — no invented Launch rank. Place: Athens and Tenos, Greece. Sits: unwind. Host intro: Athens and Tenos in the 1890s, seen by an Irishwoman with a sharp, fond eye: embassy balls, dowries, a pianist, a ridiculous duel, and a Turk in disguise who loves a Greek girl on Tenos. Worldly and ironic, and it ends on a bitter wedding tour. A heads-up before you start: the characters voice national prejudices, including one line calling the Greeks 'worse than the Jews', and there is a comic duel.",
+  "minutes": 4,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · At the Austrian embassy · Athens & Tenos, Greece",
+      "place": "Chapter I · At the Austrian embassy · Athens & Tenos, Greece",
+      "reentry": "The Austrian embassy at Athens was more largely and more brilliantly attended than usual. At nine o’clock the Patissia Road showed a line of carriages going backward towards the Platea Omonia from the",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The Austrian embassy at Athens was more largely and more brilliantly attended than usual. At nine o’clock the Patissia Road showed a line of carriages going backward towards the Platea Omonia from the gaily-lighted embassy. All the foreign ministers were there, as well as the Prime Minister of Greece, and whatever distinguished travellers Athens had the honour of entertaining at that time,—it being winter, there was a goodly number. A Russian Prince or two, presented by the Russian minister; two eminent English politicians on their way to Constantinople for a confidential exchange of views with the Sublime Sultan, to be remembered by jewelled snuff-boxes or some such trifles; a sprightly French mathematician straight from Paris the Blest; a half-dozen of celebrated archæologists, furnished by Europe and the United States, all viewing each other with more or less malevolence and suspicion—the Frenchman noticeably not on speaking terms with his distinguished brother from Germany; Dr. Jarovisky of world renown, fresh from Pergamos and recent discoveries at Argos, speaking various languages as badly as possible; a genial and witty Irish professor rushing through Greece with the intention of writing an exhaustive analysis of the country and the people, in that spirit of amiable impertinence so characteristic of hasty travellers."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "There was the flower of the so-called Greek aristocracy: Phanariote Princes, Græco-Italian Counts from Zante and Corfu, and retired merchants and speculators from Constantinople and Smyrna and London. There was a Greek poet, hardly distinguishable in accent and manner from a Parisian, except in a detail of appearance which gave him the head of a convict, so hideously do the Hellenes shave their heads to look as if they wore mouse-coloured skull caps; a prose translator of Shakespeare, who had lately visited the Immortal’s shrine at Warwick, and, in the interests of local colouring modelled himself since his return as closely as possible upon the accepted type of the English man of letters, and surveyed the frivolities under his eye with a British impassivity and glacial neutrality of gaze. All the musical dilettanti of the city of the Wise Maid were there, and all its presentable women. Some of the girls were pretty, and all were thickly powdered and richly dressed; all had large, brilliant dark eyes. And the gowns and frocks from Paris, the jewels, lace, aigrettes, flowers, and bare arms and shoulders made an effective and troublous contrast with the preponderance of masculine evening attire and semi-official splendour."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "This large and distinguished gathering had been convened in honour of the return to her native city of Mademoiselle Photini Natzelhuber, a celebrated pianiste, the rival and friend of Rubinstein, the pupil of Liszt and not greatly inferior to her master, who, at Vienna, had been publicly named by him Queen of Pianists to match his recognised kingliness. All Athens was on tiptoe of expectation, eager to hear her, and still more eager to see her. It is not known, but extravagantly conjectured, with what sum the Baroness von Hohenfels was able to bid over the heads of her rival salonists and procure the honour of the Natzelhuber’s first appearance in Athens. Sane and discerning persons were probably right in putting it down to francs represented by four figures, for Austrian baronesses have a pretty accurate knowledge of the value of money. But for the moment six figures were supposed to represent the sum, and the matter was discussed with that singular absence of reserve or delicacy with which fashionable and well-bred society is apt to discuss the affairs of its host in the host’s own house."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Through the confused mingling of languages French could be detected as the most universal. A fair, pale young man, with the grave questioning air of a stranger who is disagreeably conscious of being shy and ill at ease, and, above all, utterly and helplessly alone, was walking about the rooms, amazed and bewildered by this Babel of tongues and types, and seemed to entreat by his look of gentle fear that no one should notice him or talk to him. He stared around with unquiet, troubled blue eyes, so very blue, so hopelessly, stupidly frank and clear, like a child’s, that they made more noticeable the extreme youthfulness of his face and most slender figure. A mere boy, twenty-one years of innocence and ignorance leaving him on the brink of manhood with only the potentialities of his sex faintly shadowed in the lightest gold stain above the soft upper lip. He had just stepped into the glare and turmoil of life from the protected shadow of an isolated old castle in Rapolden Kirchen, with no more reliable and scientific guide to the mysteries of existence than a tender and nervous mother, who, after bringing him up like a girl, had left him for another sphere, and no other knowledge of the passions and their complex sensations than that to be gathered in a close and fervent study of music. It is easy to picture him. A reserved lad of high-bred Austrian type, with a glacially pure face, and heart fluttering with girlish timidity, half-frightened and half-attracted by the world he interprets in the vague light of his own pathetic ignorance, just conscious of opening curiosities upon the eternal feminine, and ready to sink with shame the instant a strange woman looked at him."
+    }
+  ]
+}

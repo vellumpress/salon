@@ -1180,6 +1180,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-sworn-brothers",
   "dusty-answer",
   "christine-of-the-hills",
+  // Mira Fri 2 Oct 2026 POST-#221 CLEAR — Daughters of Men leads Next. Never Featured.
+  // LEAD kept — not The Bright Shawl, not Irresolute Catherine, not The Old Room.
+  // The Fur Coat is Rituals only (the one story), not this tail.
+  // Fri POST-#218 The Old House and the earlier packs stay ahead.
+  "daughters-of-men",
+  "the-bright-shawl",
+  "irresolute-catherine",
+  "the-old-room",
 ] as const;
 
 /**

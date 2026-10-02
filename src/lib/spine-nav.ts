@@ -31,7 +31,15 @@ export function isSpineEndMatter(scene: Pick<Scene, "title" | "place" | "reentry
  */
 export function chapterPlace(workId: string, scene: Pick<Scene, "id" | "title" | "place"> | undefined) {
   if (!scene) return "";
-  if (workId !== "the-house-of-mirth") return scene.place;
+  if (workId !== "the-house-of-mirth") {
+    // A printed place wins. An empty place falls back to the chapter title.
+    // An untitled section (no title, no place) uses the reader's own break label.
+    const place = scene.place?.trim() ?? "";
+    if (place) return scene.place;
+    const title = scene.title?.trim() ?? "";
+    if (title) return scene.title;
+    return "· · ·";
+  }
   const n = /^s(\d+)$/.exec(scene.id);
   if (!n) return scene.place;
   const i = Number(n[1]);
