@@ -1172,6 +1172,14 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "farewell-love",
   "the-son-of-his-mother",
   "my-lady-nobody",
+  // Mira Fri 2 Oct 2026 POST-#218 CLEAR — The Old House leads Next. Never Featured.
+  // LEAD kept — not The Sworn Brothers, not Dusty Answer, not Christine of the Hills.
+  // The Story of a Woman is Rituals only (the one story), not this tail.
+  // Thu POST-#217 Harriett Frean and the earlier packs stay ahead.
+  "the-old-house",
+  "the-sworn-brothers",
+  "dusty-answer",
+  "christine-of-the-hills",
 ] as const;
 
 /**

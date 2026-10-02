@@ -601,6 +601,16 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: once, the aristocrats talk about Jews in a period stereotype; Part III follows the colonial war in Aceh; and a suicide attempt over debt is reported.",
   "new-years-night":
     "A stifling New Year's Eve on a lonely selection at Dead Man's Gap, and the neighbours ride up through the storm.",
+  "the-old-house":
+    "A heads-up before you start: there is a brief episode in the 1849 siege, when Pest is shelled and a minor character is shot.",
+  "the-sworn-brothers":
+    "A heads-up before you start: there is Viking feud violence, outlawry, and pagan sacrifice.",
+  "dusty-answer":
+    "A heads-up before you start: one cousin’s death in the war is told offstage; a same-sex attachment is handled delicately; and the period term ‘half-caste’ appears once.",
+  "christine-of-the-hills":
+    "A heads-up before you start: there is a shooting, there are whippings, and a predatory guardian, not shown explicitly.",
+  "the-story-of-a-woman":
+    "On a zenana rooftop in Bengal at the cow-dust hour, the women retell how Durga defied Shiva and quarrel over how the story ends.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
