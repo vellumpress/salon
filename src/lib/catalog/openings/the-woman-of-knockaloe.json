@@ -1,0 +1,271 @@
+{
+  "id": "the-woman-of-knockaloe",
+  "title": "The Woman of Knockaloe",
+  "author": "Hall Caine",
+  "year": "1923",
+  "note": "Project Gutenberg 66932. Whole novel: the author's Introductory, 16 chapters and the Conclusion (PG l.267–4411), labelled 'Introductory', 'First chapter' … 'Sixteenth chapter', 'Conclusion', after the epigraphs (the title-page Song of Songs lines and Coleridge's verses) as their own front section; the Introductory is a front section too. The title page, the publisher's editorial note and the Gladstone tribute out; the one footnote kept as a Note: line. Curly quotes kept as printed; italics kept; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. 1923 (PG text: 'COPYRIGHT, 1923, BY DODD, MEAD AND COMPANY, INC.', l.58–59). PG reading-ease 80.7 — no invented Launch rank. Place: Knockaloe, by Peel, Isle of Man. Sits: unwind. Host intro: Knockaloe farm, by Peel, on the Isle of Man, from August 1914, beside the real wartime camp for German internees. A farm girl who hates the whole German race falls in love with one of the prisoners working her land. Hall Caine's short parable against war, told in the present tense in short, stark scenes. A heads-up before you start: it ends in a double suicide; the characters voice wartime hatred ('Boche', 'Huns'); and she is called 'Harlot! Strumpet!'.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "First chapter · Knockaloe, by Peel, Isle of Man",
+      "place": "First chapter · Knockaloe, by Peel, Isle of Man",
+      "reentry": "Knockaloe is a large farm on the west of the Isle of Man, a little to the south of the fishing town of Peel. From the farmstead I can see the harbour and the breakwater, with the fishing boats moored ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Knockaloe is a large farm on the west of the Isle of Man, a little to the south of the fishing town of Peel. From the farmstead I can see the harbour and the breakwater, with the fishing boats moored within and the broad curve of the sea outside."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Note: Pronounced Knock-ā-loe."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "There is a ridge of hills that separates the farm from the coast, which is rocky and precipitous. On the crest of the hills there is a square tower that is commonly called “Corrin’s Folly,” and at the foot of the tower there is a small graveyard surrounded by a stone wall."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Too far inland to hear the roar of the sea except in winter, it is near enough to feel its salt breath in the summer. Not rich or leafy or luxuriant, but with a broad sunny bareness as of a place where a glacier has been and passed over, and with a deep peace, a glacial peace, always lying on it—such is Knockaloe."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "The farm-house lies in the valley, close under the shelter of the hills. It is a substantial building with large outhouses, and it is approached from the road by a long, straight, narrow lane that is bordered by short trees."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "The farmer is Robert Craine, a stalwart old man in a sleeve waistcoat. I seem to know him well. He has farmed Knockaloe all his life, following three or four generations of his family. But now he is a little past his best, and rarely goes far from home except on Sundays to one or other of the chapels round about, for he is a local preacher among the Wesleyans."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "“I’m not too good at the farming now,” he says, “but, man, I love to preach.”"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "His wife is dead, and she is buried in the churchyard of Kirk Patrick, which lies near his gate at the turn of the road to the railway station. He has a son and a daughter. The son, another Robert, but commonly called Robbie, is a fine young fellow with clear flashing eyes, about six and twenty, as fresh as the heather on the mountains, and his father’s right-hand man. The daughter is named Mona, and she is a splendid girl of about twenty-three or four, distinctly good-looking, tall, full-bosomed, strong of limb, even muscular, with firm step and upright figure, big brown eyes and coal-black hair—a picture of grown-up health. Since her mother’s death she has become “the big woman” of the farm, managing everything and everybody, the farm-servants of both sexes, her brother and even her father."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Mona has no sweetheart, but she has many suitors. The most persistent is heir to the cold and “boney” farm which makes boundary with Knockaloe. They call him “long John Corlett,” and his love-making is as crude as his figure."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "“Wouldn’t it be grand if we only had enough cattle between us to run milk into Douglas?”"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Mona reads him like a book and sends him about his business."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Knockaloe has a few fields under cultivation (I see some acres of oats and wheat), but it is chiefly a grazing farm, supplying most of the milk for the people of Peel. At six in the morning the maids milk the cows, and at seven Mona drives the milk into town in a shandry that is full of tall milk-cans."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "It is Sunday morning in the early part of August, nineteen hundred and fourteen. The sun has risen bright and clear, giving promise of another good day. Mona is driving out of the gate when she hears the crack of a rocket from the rocket-house connected with the lifeboat. She looks towards the sea. It lies as calm as a sleeping child, and there is not a ship in sight anywhere. What does it mean?"
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "A cock is crowing in the barn-yard, Robbie’s dog is barking among the sheep on the hill, the bees are humming in the hedges of yellow gorse and the larks are singing in the blue sky. There is no other sound except the rattle of the shandry in which the fine girl, as fresh as the morning, stands driving in the midst of her pails, and whistling to herself as she drives."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "On reaching Peel she sees men in the blue costume of the naval reserve bursting out of their houses, shouting hurried adieux to their wives and children, and then flying off with cries and laughter in the direction of the railway station."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "“What’s going on?” asks Mona of one of the wives."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "“Haven’t you heard, woman? It’s the war! Mobilization begins to-day, and four steamers are leaving Douglas”—the chief port of the island—“to take the men to their ships.”"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "“And who are we going to war with?”"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "“The Germans, of course.”"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "Germany has jumped on Belgium—the big brute on the little creature, and the men are going to show her how to mend her manners."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "“They will, too,” says Mona."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "They will give the Germans a jolly good thrashing and then the war will soon be over. She has always hated the Germans—she hardly knows why. May they get what they deserve this time!"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "Back at Knockaloe she finds Robbie visibly excited."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "“You’ve heard the news, then?”"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "“I have that.”"
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "“They’ll be calling you boys off the land next.”"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "“Will they? Do you think they will, girl?”"
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "Robbie’s black eyes were glistening. He looks round on the fields near the house. They are yellow and red; the harvest will soon be over, and then...."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "It is a fortnight later. There is high commotion in the island. Kitchener has put out his cry: “Your King and Country need you.” It is posted up on all the walls and printed in the insular newspapers. Young men from the remotest parts are hurrying off to the recruiting stations. Mona and Robbie are at work in the harvest fields. Mona cannot contain her excitement."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "“Oh, why am I not a man?”"
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "“Would you go yourself, girl?”"
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "“Wouldn’t I just,” says Mona, throwing up her head."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "The corn is cut and stooked; nothing remains but to stack it. Robbie has gone into town for the evening. Mona and her father are indoors. The old man is looking grave. He remembers the Crimean war and its consequences."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "“Robbie is getting restless,” he says."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "“What wonder?” says Mona."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "Suddenly, like a whirlwind, Robbie dashes into the house."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "“I’ve joined up, dad! I’ve joined up, Mona!”"
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "Mona flings her arms about his neck and kisses him. The old man says little, and after a while he goes up to bed."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "A few days pass. It is the evening of Robbie’s departure. The household (all except Robbie) are at tea in the kitchen—the old man at the top of the long table, the maids and men-servants at either side of it, and Mona serving, according to Manx custom. Robbie comes leaping downstairs in his khaki uniform. Mona has never before seen her brother look so fine."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "“Good-bye all! Good-bye!”"
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "Mona goes down to the gate with Robbie, linking arms with him, walking with long strides and talking excitedly. He is to kill more and more Germans. The dirts! The scoundrels! Oh, if she could only go with him!"
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "There is a joyful noise of men tramping on the high road. A company of khaki-clad lads on their way to the station come down from a mining village on the mountain, with high step, singing their “Tipperary.”"
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "Robbie falls in, and Mona watches him until he turns the corner by Kirk Patrick and the trees have hidden him. Then she goes slowly back to the house. Her father, with a heavy heart, has gone to bed. God’s way is on the sea, and His path is on the great deep."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "Two months have passed. Mona is managing the farm splendidly and everything is going well. About once a week there is a post-card from Robbie. At first the post-cards are playful, almost jubilant. War is a fine old game, a great adventure; he is to be sent to the front soon. Later there are letters from Robbie, and they are more serious. But nobody is to trouble about him. He is all right. They will lick these rascals before long and be home for Christmas."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "Every night after supper the old man sits by the fire and reads aloud to the household from an English newspaper, never before having read anything except his Bible and the weekly insular paper."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "There are hideous reports of German atrocities in Belgium. Mona is furious. Why doesn’t God hunt the whole race of wild beasts off the face of the earth? She would if she were God. The old man is silent. When the time comes to read the chapter from the Gospels he cannot do so, and creeps off to bed. Dark is the way of Providence. Who shall say what is meant by it?"
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "The winter is deepening. It is a wild night outside. The old man is reading a report of shocking treachery in London. Germans, whom the English people had believed to be loyal friends and honest servants, have turned out to be nothing but spies. There has been a Zeppelin raid over London, and, though no lives have been lost, it is clear that Germans have been giving signals."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "“Why doesn’t the Government put them all in prison?” says Mona. “Yes, every one of them. The hypocrites! The traitors! The assassins!”"
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "The old man, who had opened the Bible, closes it, and goes upstairs."
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "“You’re hard, woman, you’re hard,” he says."
+    }
+  ]
+}

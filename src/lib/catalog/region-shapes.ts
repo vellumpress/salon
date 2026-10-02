@@ -20,6 +20,7 @@ export type PlaceRegion =
   | "ua"
   | "hu"
   | "hr"
+  | "im"
   | "cz"
   | "pl"
   | "se"
@@ -145,6 +146,11 @@ export const REGION_SHAPES: Record<PlaceRegion, RegionShape> = {
   hr: {
     viewBox: "0 0 32 32",
     d: "M3.6 9.8 7.4 6.2 12.8 5.4 17.6 4.2 23.4 5.6 28.8 7.8 27.6 11.2 22.2 11.6 16.4 12.2 13.6 14.8 15.8 18.6 19.8 22.4 24.6 26.2 27.8 29.4 25.2 30.4 20.4 27.4 15.2 23.8 10.6 19.6 7.2 15.6 5.8 12.4Z",
+  },
+  /** Isle of Man — a narrow island running north-east to the Point of Ayre, south-west to the Calf. Original simplification. */
+  im: {
+    viewBox: "0 0 32 32",
+    d: "M25.4 3.0 28.2 4.6 27.4 7.8 25.6 11.2 23.8 14.6 21.2 17.8 18.2 20.8 14.8 23.6 11.2 26.0 8.0 27.8 5.2 29.0 3.6 27.6 4.0 25.4 5.4 21.6 7.0 17.6 9.4 13.6 12.6 10.0 16.4 6.8 20.6 4.2Z",
   },
   cz: {
     viewBox: "0 0 32 18",
@@ -383,6 +389,7 @@ export const REGION_TONE: Record<PlaceRegion, "ink" | "red" | "blue" | "forest">
   ua: "blue",
   hu: "red",
   hr: "red",
+  im: "red",
   cz: "blue",
   pl: "red",
   se: "blue",

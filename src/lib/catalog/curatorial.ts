@@ -1188,6 +1188,12 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-bright-shawl",
   "irresolute-catherine",
   "the-old-room",
+  // Mira Fri 2 Oct 2026 POST-#222 CLEAR — The Corsican Brothers leads Next, after The Old Room. Never Featured.
+  // LEAD kept — not Jocelyn, not The Woman of Knockaloe. Pearl of Pearl Island is cut.
+  // The Taking of the Redoubt is Rituals only (the one story, Host-only), not this tail.
+  "the-corsican-brothers",
+  "jocelyn",
+  "the-woman-of-knockaloe",
 ] as const;
 
 /**
