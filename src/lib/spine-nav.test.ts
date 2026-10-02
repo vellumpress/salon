@@ -82,7 +82,7 @@ test("an empty scene place falls back to the title, and an untitled section uses
     readFileSync(new URL("./catalog/texts/the-old-room.json", import.meta.url), "utf8"),
   ) as Work;
   const roomChapters = spineChapters(room, 0, true);
-  assert.equal(roomChapters[0]?.place, "Dedication, translator’s note and preface");
+  assert.equal(roomChapters[0]?.place, "Dedication and preface");
   assert.equal(roomChapters[1]?.place, "Part I · Cordt · Chapter I");
   assert.equal(roomChapters.at(-1)?.place, "Part II · Cordt’s son · Chapter XXIV");
 
