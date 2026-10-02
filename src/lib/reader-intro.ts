@@ -2,6 +2,7 @@ import { pitchFor } from "./catalog/pitches.ts";
 import { prefaceFor } from "./catalog/prefaces.ts";
 import { ritualPitchFor } from "./catalog/rituals.ts";
 import { shelfWork } from "./catalog/shelf.ts";
+import { isDeviceImport } from "./import/private.ts";
 import { splitSentences } from "./sentences.ts";
 import type { Work } from "./works.ts";
 
@@ -38,7 +39,7 @@ export function readerIntro(work: Work) {
       usableCopy(work.note);
     return trimReaderIntro(stored);
   }
-  if (work.id === "page") {
+  if (isDeviceImport(work.id)) {
     return trimReaderIntro(work.note);
   }
   return "";

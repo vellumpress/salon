@@ -120,11 +120,15 @@ function loadFull(id: string) {
   return pending;
 }
 
+function deviceImport(id: string) {
+  return id === "page" || id.startsWith("import-");
+}
+
 export async function loadWork(
   id: string,
   onUpdate?: (work: Work) => void,
 ): Promise<Work | undefined> {
-  if (!id || id === "page") return undefined;
+  if (!id || deviceImport(id)) return undefined;
   const cached = cache.get(id);
   if (cached) onUpdate?.(cached);
   if (cached && complete.get(id)) return cached;
@@ -173,13 +177,13 @@ export async function loadWork(
 }
 
 export function prefetchWork(id: string) {
-  if (!id || id === "page") return;
+  if (!id || deviceImport(id)) return;
   void loadWork(id);
 }
 
 /** Opening only — enough for the first page, without parsing a full novel. */
 export function prefetchOpening(id: string) {
-  if (!id || id === "page") return;
+  if (!id || deviceImport(id)) return;
   if (cache.get(id)) return;
   if (isLocalBound(id)) {
     const loader = openings[`./catalog/openings/${id}.json`];

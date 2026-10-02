@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { TbrReader } from "@/components/chamber-reader";
 import { shelfWork } from "@/lib/catalog/shelf";
+import { getImport } from "@/lib/import/idb";
+import { isDeviceImport } from "@/lib/import/private";
 import { loadWork, peekWork, type Work } from "@/lib/works";
 import { useTbr } from "@/lib/store";
 import { asSittingMinutes } from "@/lib/sitting";
@@ -58,15 +60,26 @@ function ReadPage() {
   const { workId } = Route.useParams();
   const { shuffle, sit, pair, at, episode, echo, hosted } = Route.useSearch();
   const pageWork = useTbr((s) => s.pageWork);
+  const device = isDeviceImport(workId);
   const meta = workId === "page" ? pageWork : shelfWork(workId);
   const [work, setWork] = useState<Work | null | undefined>(() =>
-    workId === "page" ? pageWork : (peekWork(workId) ?? undefined),
+    workId === "page" ? pageWork : device ? undefined : (peekWork(workId) ?? undefined),
   );
 
   useEffect(() => {
     if (workId === "page") {
       setWork(pageWork);
       return;
+    }
+    if (device) {
+      let live = true;
+      setWork(undefined);
+      void getImport(workId).then((row) => {
+        if (live) setWork(row?.work ?? null);
+      });
+      return () => {
+        live = false;
+      };
     }
     let live = true;
     const cached = peekWork(workId);
@@ -80,7 +93,7 @@ function ReadPage() {
     return () => {
       live = false;
     };
-  }, [workId, pageWork]);
+  }, [workId, pageWork, device]);
 
   if (work === undefined) {
     return (

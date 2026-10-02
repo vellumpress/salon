@@ -1,4 +1,5 @@
 import { shelfWork } from "./catalog/shelf.ts";
+import { isDeviceImport } from "./import/private.ts";
 import { lastReadCue, lastReadProgress } from "./continuity.ts";
 import { dayKey } from "./day-key.ts";
 import { contactId, type FriendContact } from "./friends.ts";
@@ -340,7 +341,7 @@ function readingNow(
     const item = graph.progress[last.id];
     if (item?.completedAt) {
       const open = Object.entries(graph.progress)
-        .filter(([id, row]) => id !== "page" && row.entered && !row.completedAt)
+        .filter(([id, row]) => !isDeviceImport(id) && row.entered && !row.completedAt)
         .sort((a, b) => (b[1].lastOpenedAt ?? 0) - (a[1].lastOpenedAt ?? 0))[0];
       if (!open) return undefined;
       return readingFromProgress(open[0], open[1]);
@@ -423,7 +424,7 @@ function collectActivity(handle: string, graph: FriendGraph, isSelf: boolean): F
 function selfShelfActivity(graph: FriendGraph): FriendActivity[] {
   const items: FriendActivity[] = [];
   for (const [workId, item] of Object.entries(graph.progress)) {
-    if (workId === "page" || !item?.entered) continue;
+    if (isDeviceImport(workId) || !item?.entered) continue;
     const meta = workMeta(workId);
     const atIndex = Math.max(0, item.breathIndex ?? 0);
     const progress = progressLabel(atIndex, meta.breaths);
@@ -471,6 +472,7 @@ function selfShelfActivity(graph: FriendGraph): FriendActivity[] {
     }
   }
   for (const sit of graph.sitHistory) {
+    if (isDeviceImport(sit.workId)) continue;
     const meta = workMeta(sit.workId);
     const minutes = sit.minutes > 0 ? `${Math.max(1, Math.round(sit.minutes))} min` : "";
     items.push({

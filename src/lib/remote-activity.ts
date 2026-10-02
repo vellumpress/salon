@@ -1,4 +1,5 @@
 import { shelfWork } from "./catalog/shelf.ts";
+import { isDeviceImport } from "./import/private.ts";
 import {
   openReadingFromActivity,
   type FriendActivity,
@@ -68,7 +69,7 @@ export function draftsFromLocal(input: LocalHistory): ActivityDraft[] {
   const drafts: ActivityDraft[] = [];
 
   for (const [workId, item] of Object.entries(input.progress)) {
-    if (!item || workId === "page" || !item.entered) continue;
+    if (!item || isDeviceImport(workId) || !item.entered) continue;
     const meta = metaFor(workId);
     if (!item.completedAt && item.lastOpenedAt) {
       const bucket = Math.floor(item.lastOpenedAt / READING_BUCKET_MS);
@@ -104,7 +105,7 @@ export function draftsFromLocal(input: LocalHistory): ActivityDraft[] {
   }
 
   for (const sit of input.sitHistory) {
-    if (!sit.workId || !sit.endedAt) continue;
+    if (!sit.workId || !sit.endedAt || isDeviceImport(sit.workId)) continue;
     const meta = metaFor(sit.workId);
     const minutes = sit.minutes > 0 ? Math.max(1, Math.round(sit.minutes)) : 0;
     drafts.push({

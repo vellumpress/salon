@@ -16,6 +16,7 @@ import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
 import { useVisitSeed } from "@/lib/use-visit-seed";
 import { prefetchOpening } from "@/lib/prefetch-work";
 import { Wordmark } from "@/components/wordmark";
+import { HomeImport } from "@/components/home-import";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
@@ -102,6 +103,7 @@ function Home() {
   }, [router, last]);
 
   return (
+    <>
     <main
       className={cn(
         "board board-alive board-doors",
@@ -199,5 +201,7 @@ function Home() {
         count={searching ? matches.length : catalogCount()}
       />
     </main>
+    <HomeImport />
+    </>
   );
 }

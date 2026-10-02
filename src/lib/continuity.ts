@@ -1,3 +1,4 @@
+import { isDeviceImport } from "./import/private.ts";
 import type { WorkProgress } from "./store";
 
 export type LastReadProgress = {
@@ -17,7 +18,7 @@ export function lastReadProgress(
   progress: Record<string, WorkProgress>,
 ): LastReadProgress | null {
   const row = Object.entries(progress)
-    .filter(([id, item]) => Boolean(item?.entered) && id !== "page")
+    .filter(([id, item]) => Boolean(item?.entered) && !isDeviceImport(id))
     .sort((a, b) => (b[1].lastOpenedAt ?? 0) - (a[1].lastOpenedAt ?? 0))[0];
   if (!row) return null;
   const [id, item] = row;
@@ -53,7 +54,7 @@ export function keptRefs(
 ): KeptRef[] {
   const rows: KeptRef[] = [];
   for (const [workId, item] of Object.entries(progress)) {
-    if (workId === "page") continue;
+    if (isDeviceImport(workId)) continue;
     for (const breathId of item.kept ?? []) {
       if (!breathId) continue;
       rows.push({

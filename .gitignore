@@ -4,6 +4,7 @@ node_modules/
 .env
 .env.*
 dist/
+public/pdf.worker.min.js
 .cache/
 .pg-cache/
 

@@ -23,6 +23,7 @@ test("lastReadProgress picks the newest entered work", () => {
       passing: progress({ entered: true, lastOpenedAt: 10, breathIndex: 3 }),
       we: progress({ entered: true, lastOpenedAt: 40, breathIndex: 8 }),
       page: progress({ entered: true, lastOpenedAt: 99, breathIndex: 1 }),
+      "import-local": progress({ entered: true, lastOpenedAt: 120, breathIndex: 4 }),
     })?.id,
     "we",
   );

@@ -1,3 +1,4 @@
+import { isDeviceImport } from "./import/private.ts";
 import { boardWork } from "./mondrian.ts";
 
 export const YOU_PREVIEW = 3;
@@ -24,7 +25,7 @@ export function favoriteWorks(ids: string[]): FavoriteWork[] {
   const out: FavoriteWork[] = [];
   for (let i = ids.length - 1; i >= 0; i--) {
     const id = ids[i];
-    if (!id || seen.has(id)) continue;
+    if (!id || seen.has(id) || isDeviceImport(id)) continue;
     seen.add(id);
     out.push(resolveFavoriteWork(id));
   }
