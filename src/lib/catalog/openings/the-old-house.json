@@ -1,0 +1,191 @@
+{
+  "id": "the-old-house",
+  "title": "The Old House",
+  "author": "Cécile Tormay (tr. Emil Torday)",
+  "year": "1922",
+  "note": "Project Gutenberg 66344 (tr. Emil Torday, per PG). Whole novel, 19 chapters (PG l.62–7874) to THE END, labelled 'Chapter I' … 'Chapter XIX'. The title-page block out; the bare-digit sub-section markers set as section breaks; the two footnotes (Canzelei, Iroda) kept as Note: lines after their paragraphs; the painted word 'IRODA.' kept in capitals as printed. Curly quotes kept as printed; italics kept; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. EN 1922 (PG text: 'Copyright, 1922, by Robert M. McBride & Co.', 'Published, September, 1922'). PG reading-ease 85.7 — no invented Launch rank. Place: Pest and Buda, Hungary. Sits: unwind. Host intro: Pest and Buda on the Danube, from the 1800s to the 1840s. Christopher Ulwing, a master carpenter from the German lands, builds himself into the first citizen of a small town that grows into a city, and builds the old house that holds three generations of his family. Money, class and a city changing, in short, clear, painterly scenes. A heads-up before you start: there is a brief episode in the 1849 siege, when Pest is shelled and a minor character is shot.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Pest and Buda, Hungary",
+      "place": "Chapter I · Pest and Buda, Hungary",
+      "reentry": "It was evening. Winter hung white over the earth. Great snowflakes crept over the snow towards the coach. They moved ghostlike over the silent, treeless plain. Mountains rose behind them in the snow. ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It was evening. Winter hung white over the earth. Great snowflakes crept over the snow towards the coach. They moved ghostlike over the silent, treeless plain. Mountains rose behind them in the snow. Small church towers and roofs crowded over each other. Here and there little squares flared up in the darkness."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Night fell as the coach reached the excise barrier. Beyond, two sentry boxes buried in the snow faced each other. The coachman shouted between his hands. A drowsy voice answered and white cockades began to move in the dark recesses of the boxes. The light of a lamp emerged from the guard’s cottage. Behind the gleam a man with a rifle over his arm strolled towards the vehicle."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The high-wheeled travelling coach was painted in two colours: the upper part dark green, the lower, including the wheels, bright yellow. From near the driver’s seat small oil lamps shed their light over the horses’ backs. The animals steamed in the cold."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The guard lifted his lantern. At the touch of the crude light, the coach window rattled and descended. In its empty frame appeared a powerful grey head. Two steady cold eyes looked into the guard’s face. The man stepped back. He bowed respectfully."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "“The Ulwing coach!” He drew the barrier aside. The civil guards in the sentry boxes presented arms."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "“You may pass!”"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "The light of the coach’s lamps wandered over crooked palings, over waste ground—a large deserted market—the wall of a church. Along the winding lanes lightless houses, squatting above the ditches, sulked with closed eyes in the dark. Further on the houses became higher. Not a living thing was to be seen until near the palace of Prince Grassalkovich a night-watchman waded through the snow. From the end of a stick he held in his hand dangled a lantern. The shadow of his halberd moved on the wall like some black beast rearing over his head."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "From the tower of the town hall a hoarse voice shouted into the quiet night: “Praised be the Lord Jesus!” and higher up the watchman announced that he was awake."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Then the township relapsed into silence. Snow fell leisurely between old gabled roofs. Under jutting eaves streets crept forth from all sides, crooked, suspicious, like conspirators. Where they met they formed a ramshackle square. In the middle of the square the Servites’ Fountain played in front of the church; water murmured frigidly from its spout like a voice from the dark that prayed slowly, haltingly."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "A solitary lamp at a corner house thrust out from an iron bracket into the street. Whenever it rocked at the wind’s pleasure, the chain creaked gently and the beam of its light shrunk on the wall till it was no bigger than a child’s fist. Another lone lamp in the middle of New Market Place. Its smoky light was absorbed by the falling snow and never reached the ground."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Christopher Ulwing drew his head into his fur-collared coat. The almanac proclaimed full moon for to-night. Whenever this happened, the civic authorities saved lamp-oil; could they accept responsibility if the heavens failed to comply with the calendar and left the town in darkness? In any case, at this time of night the only place for peaceful citizens was by their own fireside."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Two lamps alight.... And even these were superfluous."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Pest, the old-fashioned little town had gone to rest and the fancy came to Christopher Ulwing that it was asleep even in day time, and that he was the only person in it who was ever quite awake."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "He raised his head; the Leopold suburb had been reached. The carriage had come to the end of the rough, jerky cobbles. Under the wheels the ruts became soft and deep. The breeze blowing from the direction of the Danube ruffled the horses’ manes gently."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "All of a sudden, a clear, pleasant murmur broke the silence. The great life-giving river pursued its mysterious course through the darkness, invisible even as life itself."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Beyond it were massed the white hills of Buda. On the Pest side an uninterrupted plain stretched between the town and the river. In the white waste the house of Christopher Ulwing stood alone. For well nigh thirty years it had been called in town “the new house.” The building of it had been a great event. The citizens of the Inner Town used to make excursions on Sundays to see it. They looked at it, discussed it, and shook their heads. They could not grasp why Ulwing the builder should put his house there in the sand when plenty of building ground could be got cheaply, in the lovely narrow streets of the Inner Town. But he would have his own way and loved his house all the more. The child of his mind, the product of his work, his bricks, it was entirely his own. Though once upon a time...."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "While Christopher Ulwing listened unconsciously to the murmur of the Danube, silent shades rose from afar and spoke to his soul. He thought of the ancient Ulwings who had lived in the great dark German forest. They were woodcutters on the shores of the Danube and they followed their calling downstream. Some acquired citizenship in a small German town. They became master carpenters and smiths. They worked oak and iron, simple, rude materials, and were moulded in the image of the stuff they worked in. Honest, strong men. Then one happened to wander into Hungary; he settled down in Pozsony and became apprenticed to a goldsmith. He wrought in gold and ivory. His hand became lighter, his eye more sensitive than his ancestors’. He was an artist.... Christopher Ulwing thought of him—his father. There were two boys, he and his brother Sebastian, and when the parental house became empty, they too like those before them, heard the call. They left Pozsony on the banks of the Danube. They followed the river, orphans, poor."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Many a year had passed since. Many a thing had changed."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Christopher Ulwing drew out his snuff box. It was his father’s work and his only inheritance. He tapped it lightly with two fingers. As it sank back into his pocket, he bent towards the window."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "His house now became distinctly visible; the steep double roof, the compact storied front, the mullioned windows in the yellow wall, the door of solid oak with its semi-circular top like a pair of frowning eyebrows. Two urns stood above the ends of the cornice and two caryatid pillars flanked the door. Every recess, every protruding wall of the house appeared soft and white."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "Indoors the coach had been noticed. The windows of the upper story became first light and then dark again in quick succession. Someone was running along the rooms with a candle. The big oak gate opened. The wheels clattered, the travelling box was jerked against the back of the coach and all of a sudden the caryatids—human pillars—looked into the coach window. The noise of the hoofs and the wheels echoed like thunder under the archway of the porch."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "The manservant lowered the steps of the coach."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "A young man stood on the landing of the staircase. He held a candle high above his head. The light streamed over his thick fair hair. His face was in the shade."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "“Good evening, John Hubert!” shouted Ulwing to his son. His voice sounded deep and sharp, like a hammer dropping on steel. “How are the children?” He turned quickly round. This sudden movement flung the many capes of his coat over his shoulders."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "The servant’s good-natured face emerged from the darkness."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "“The book-keeper has been waiting for a long time....”"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "“Is everybody asleep in this town?”"
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "“Of course I am not asleep, of course I am not——” and there was Augustus Füger rushing down the stairs. He was always in a hurry, his breath came short, he held his small bald head on one side as if he were listening."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "Christopher Ulwing slapped him on the back."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "“Sorry, Füger. My day lasts as long as my work.”"
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "John Hubert came to meet his father. His coat was bottle green. His waistcoat and nankin trousers were buff. On his exaggeratedly high collar the necktie, twisted twice round, displayed itself in elegant folds. He bowed respectfully and kissed his father’s hand. He resembled him, but he was shorter, his eyes were paler and his face softer."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "A petticoat rustled on the square slabs of the dark corridor behind them."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "Christopher Ulwing did not even turn round. “Good evening, Mamsell. I am not hungry.” Throwing his overcoat on a chair, he went into his room."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "Mamsell Tini’s long, stiff face, flanked by two hair cushions covering her ears, looked disappointedly after the builder; she had kept his supper in vain. She threw her key-basket from one arm to the other and sailed angrily back into the darkness of the corridor."
+    }
+  ]
+}

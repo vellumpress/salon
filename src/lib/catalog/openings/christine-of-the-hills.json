@@ -1,0 +1,161 @@
+{
+  "id": "christine-of-the-hills",
+  "title": "Christine of the Hills",
+  "author": "Max Pemberton",
+  "year": "1897",
+  "note": "Project Gutenberg 72678. Whole novel, Prologue + 25 chapters (PG l.136–5728) to THE END., labelled 'Prologue · <title>' and 'Chapter n · <title>' with the printed heads in sentence case. 'Books by Max Pemberton', the illustration tags, the title page and the contents out. Thee / thou kept as printed. Curly quotes kept as printed; italics kept; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. 1897 (PG text: 'NEW YORK / DODD, MEAD AND COMPANY / 1897'). PG reading-ease 85.9 — no invented Launch rank. Place: Dalmatia, Croatia. Sits: commute. Host intro: The Dalmatian islands and hills on the Adriatic. Over a week of dinners, Barbarossa, an old boatman of Sebenico, tells an English traveller how Christine, a vagrant hill-girl, became a great lady. A fast, sunlit romance with a likeable storyteller; the peasants' thee and thou stay as printed. A heads-up before you start: there is a shooting, there are whippings, and a predatory guardian, not shown explicitly.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Prologue · The pavilion of the island · Dalmatia",
+      "place": "Prologue · The pavilion of the island · Dalmatia",
+      "reentry": "We had been sailing for some hours with no word between us, but Barbarossa woke up as the yacht went about under the lee of the promontory, and with a lordly sweep of his brown-burnt arms he indicated",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "We had been sailing for some hours with no word between us, but Barbarossa woke up as the yacht went about under the lee of the promontory, and with a lordly sweep of his brown-burnt arms he indicated the place."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "“*Olà*, excellency,” said he, “yonder is the pavilion of little Christine.”"
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "I had called him Barbarossa, though heaven knows he was neither Suabian nor renegade Greek of Mitylene, but an old sinner of Sebenico who chanced to have a yacht to let and a week to idle through."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "“Shew your excellency the islands?” cried he, when I had made him the offer. “*Madonna mia*, there is no man in all the city that knows them so well! From Trieste to Cattaro I shall lead you with a handkerchief upon my eyes. Hills and woods and cities—they are my children; the Adriatic—she is my daughter. Hasten to step in, excellency. God has been good to you in sending you to me.”"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "It was all very well for him thus to appropriate the special dispensations of Providence; but, as the fact went, he proved almost an ideal boatman. Silent when he saw that silence was my mood; gay when he read laughter in my voice; well-informed to the point of learning—this sage of Sebenico was a treasure. For days together I let him lead me through the silent islands and the infinitely blue channels of the “spouseless sea;” for days together we pitched our tent in some haven which the foot of man never seemed to tread. No bay or bight was there of which he had not the history; no island people whose story he could not write for you. Now rising in finely chosen heroics to the dead splendours of Venice, now cackling upon the trickeries of some village maiden, the resources of this guide of guides were infinite, beyond praise, above all experience. And I admitted the spell of mastership quickly, and avowed that Barbarossa was a miracle in a land where miracles were rare and to be prized."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "“Yonder is the pavilion of little Christine.”"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "It was early in the afternoon of the seventh day when the words were spoken. We were cruising upon the eastern side of an island whose name I did not then know. When the little yacht was put about she came suddenly into a bay, beautiful beyond any of the bays to which the sage had yet conducted me. Here the water was in colour like the deepest indigo; the hills, rising from a sweep of golden sand, were decked out with vines and orange-trees and rare shrubs, and beyond those, again, with shade-giving woods of chestnuts and of oaks. So powerful was the sunshine, though the month was September, that all the splendid foliage was mirrored in the waters; and looking down from the ship’s deck you could see phantom thickets and flowery dells and dark woods wherein the nereids might have loved to play. Yet I turned my eyes rather to the shore, for thereon was the house I had come to see, and there, if luck willed it, was the woman in whom my guide had interested me so deeply."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "We had held a slow course for many minutes in this haven of woods and flowers before Barbarossa was moved to a second outburst. Until that came I had observed little of the pavilion which he had spoken of, though its shape was plain, standing out white and prominent in a clearing of the woods. I saw at once that it was a new building, for the flowering creepers had scarce climbed above its lower windows, and gardeners were even then engaged in laying out formal terraces and in setting up fountains. But the house was no way remarkable, either for size or beauty, resembling nothing so much as the bungalows now common upon the banks of the Thames; and my first impression was one of disappointment, as the excellent Barbarossa did not fail to observe."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "“*Diamine*,” said he; “it is necessary to wait. To-day they build; to-morrow we praise. There will be no finer house in Dalmatia when the sirocco comes again. God grant that she is not alone then!”"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "He was stroking his fine beard as he spoke, and there was a troubled look upon his face; but at the very moment when it was on my lips to protest against his riddles he gripped me by the arm and pointed quickly to the shore."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "“*Accidente!*” cried he; “there is little Christine herself.”"
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "At the word, we had come quite close into the woods upon the northern side of the bay. Here was a great tangle of flowering bush and generous creeper rising up above a bank which sloped steeply to the water’s edge. Through the tracery of tree and thicket I could see the glades of the island, unsurpassably green, and rich in the finest grasses. Countless roses gave colour to the dark places of the woods, rare orchids, blossoms ripe in the deepest tones of violet and of purple, contrived the perfection of that natural garden. And conspicuous in it, nay—first to be observed—was the girl who had called the exclamation from Barbarossa."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "She was standing, as then I saw her, in a gap of the bank, in a tiny creek where the sea lapped gently and the bushes bent down their heads to the cool of the water. She had red stockings upon her feet, and a short skirt of dark blue stuff shewed her shapely limbs in all their perfection. I observed that the sun had burnt her naked arms to a tint of the deepest brown, and that the dress she wore hung upon her loosely and without affording protection even to her shoulders. Nor was there any token elsewhere in her attire of that state and condition to which rumour had elevated her. A tawdry Greek cap, such as skilled impostors sell to tourists for a gulden, scarce hid anything of the beauty of her gold-brown hair. Her hands, small to the point of absurdity, were without rings; her wrists without bracelets. She might have been a little vagrant of the hills, run out of school to let the waves lap about her feet, to gather roses from the banks above the sea."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "This, I say, she might have been; yet I knew well that she was not. Though I had led Barbarossa to believe me profoundly ignorant even of the existence of his “little Christine,” I had seen her once before—at Vienna, in the first week of the January of that year. She was driving a sleigh in the Prater then, and all the city pointed the finger and cried: “That is she.” I remember the look of girlish triumph upon her face as she drove through the throngs which were so eager to anticipate a victory for her; I could recollect even the splendour of her furs and the excellence of her horses; the muttered exclamations to which her coming gave birth. Yet here she was, become the peasant again, on the island of Zlarin."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "We had come upon the girl suddenly, as I have written, and the drift of our boat towards the shore was without wash of water, so that minutes passed and she did not see us. So close, for a truth, did the stream carry us to the bank that I could have put out my hand and clutched the roses as we passed. From this near point of view the child’s face was very plain to me. In many ways it was the face of the Mademoiselle Zlarin I had seen in Vienna; yet it lacked the feverish colour which then had been the subject of my remark, and there were lines now where no lines had been eight months before. Whatever had been her story, the fact that she had suffered much was plain to all the world. Yet suffering had but deepened that indescribable charm of feature and of expression which set Vienna running wild after her in the January of the year. She was of an age when a face loses nothing by repose. Her youth dominated all. She could yet reap of the years, and glean beauty from their harvest. Neither dress nor jewels were needed to round off that picture. I said to myself that she was the prettier a hundred times for her tawdry Greek cap and her skirt of common stuff. I declared that the *rôle* of peasant girl became her beyond any part that she had played in the life of the city. And with this thought there came the engrossing question—how was it that she, who had disappeared like a ray of sunlight from her haunts and her triumphs in the capital, should be here upon an island of the Adriatic, the mistress of a home which made the people about her raise their hands in wonder, the subject of a story of which no man was able to tell more than a chapter? And this was the question I now set myself to answer."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "All this passed through my mind quickly as our felucca lay flapping her sails in the wind, and we drifted slowly under the shadow of the bushes. I was still speculating upon it when the girl saw us, and awoke, as it were, from a reverie, to spring back and hide herself behind the bushes. But Barbarossa called out loudly at the action, and when she heard his voice she returned again to the water’s edge and kissed her hand to him most prettily. Then she ran away swiftly towards her house, and was instantly hidden from our sight by the foliage."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "“Barbarossa,” said I, when she was gone, “does your wife permit you often to come to these islands?”"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "The old rogue feigned astonishment for a moment, but pluming himself upon the compliment, he leered presently like some old man of the sea, and his body danced with his laughter."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "“Ho, ho, that is very good. Does my wife permit? *Per Baccho*, that I should have a woman at my heels—I, who am the father of the city and can kiss where I please! Ho, ho, excellency, what a fine wit you have!”"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "“But,” said I, with some indignation, “the lady had the bad taste to mean that salute for you and not for me.”"
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "He became grave instantly, stroking his long beard and carrying his mind back in thought."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "“*Securo!*” cried he, after a pause; “it was meant for me, and why not? Have I not been a father to her? Was it not to me that she came for bread when all the world cried out upon her for a vagrant and worthless? Did I not shelter her from her brother’s blows and the curses of the priest? Nay, she is my daughter—the little Christine that I love.”"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "I heard him out, silent in astonishment."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "“You know the story of her life, then?” I exclaimed."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "“Santa Maria! The story of her life! Who should know it if I do not?”"
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "“Then you shall tell it to me to-night, when we have dined, my friend.”"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "He nodded his head gravely at the words, repeating them after me."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "“To-night, when we have dined, the story of Christine. *Benissimo!* There are few that have my tongue, excellency. God was good to you in sending you to me.”"
+    }
+  ]
+}

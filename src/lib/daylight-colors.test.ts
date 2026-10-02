@@ -209,3 +209,27 @@ test("reader wires the toggle, the minute clock, and reduced motion", () => {
   assert.match(reduced, /\.reader-frame/);
   assert.match(reduced, /transition:\s*none\s*!important/);
 });
+
+test("italics, section breaks, and Note breaths use phase ink, not a hardcoded dark color", () => {
+  const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
+  const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
+  const dark = /#(?:111111|111|000000|0b0b0c|1a1a1a)\b|var\(\s*--color-ink\s*\)/;
+
+  const breakRule = css.match(/\.section-break\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(breakRule, /color:\s*currentColor/);
+  assert.doesNotMatch(breakRule, dark);
+
+  const inkBlock = css.match(
+    /\.reader-daylight \.breath-now,[\s\S]*?\.reader-daylight \.daylight-switch \{\s*color:\s*var\(--reader-ink\);\s*\}/,
+  )?.[0] ?? "";
+  assert.match(inkBlock, /\.reader-daylight \.breath-now em/);
+  assert.match(inkBlock, /\.reader-daylight \.look-line em/);
+  assert.match(inkBlock, /\.reader-daylight \.section-break/);
+  assert.doesNotMatch(inkBlock, dark);
+
+  assert.match(reader, /"breath-now relative z-\[1\] font-serif"/);
+  assert.doesNotMatch(reader, /breath-now[^"\n]*text-ink/);
+  assert.match(reader, /<em key=\{i\}>\{part\.value\}<\/em>/);
+  assert.doesNotMatch(reader, /Note:[\s\S]{0,180}(?:text-ink|#111)/);
+  assert.doesNotMatch(css, /\.note-breath|\.breath-note|\[data-note\]/);
+});

@@ -549,6 +549,16 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `It was a white-hot July morning. Part I, Chapter I — a white-hot July morning in Horstwyk, a Dutch village, and the pastor and his daughter Ursula. A heads-up before you start: once, the aristocrats talk about Jews in a period stereotype; Part III follows the colonial war in Aceh; and a suicide attempt over debt is reported. The text stays as printed. The dedication stays, as its own page before Chapter I; a fresh sit starts on the July morning and runs into Chapter II, the Dominé’s own story, stopping as his old soldiers fall asleep again. Maarten Maartens; the year is 1895, from the title page. Three parts, forty-nine chapters; long. The chapter titles are in sentence case. Some long paragraphs have been broken into shorter screens; no words are changed. Ursula is drawn into the manor family next door, and a dutiful marriage turns into a long misunderstanding. Ironic and fond. Soft Maartens, carefully. Soft Horstwyk, carefully. The Netherlands is primary. PG reading-ease 76.3 is plain going. No score is invented for this sit.`,
   "new-years-night":
     `It was dark enough for anything in Dead Man's Gap—a round, warm, close darkness, in which retreating sounds seemed to be cut off suddenly at a distance of a hundred yards or so, instead of growing faint and fainter, and dying away, to strike the ear once or twice again—and after minutes, it might seem—with startling distinctness, before being finally lost in the distance, as it is on clear, frosty nights. This sit is “New Year’s Night” only — a stifling New Year’s Eve on a lonely selection at Dead Man’s Gap, a husband fiddling alone, and a wife who breaks down. The sit stops as the storm rolls off and the stars come out; the story ends at “…the bright New Year’s Night twenty years ago.” Henry Lawson, from Over the Sliprails; the year is 1900, from the volume. One story this sit. The bush talk stays as printed. Warm, and it ends gently, so it suits bedtime. Soft Lawson, carefully. Soft New South Wales, carefully. Australia is primary. PG reading-ease 78.5 is for the whole volume. No score is invented for this sit.`,
+  "the-old-house":
+    `It was evening. Chapter I — a winter evening, a coach through the snow at the excise barrier, and old Christopher Ulwing, the master builder, coming home from Vienna to sleeping Pest. A heads-up before you start: there is a brief episode in the 1849 siege, when Pest is shelled and a minor character is shot. The first sit stops in his house, as the housekeeper sails off into the dark corridor, before the talk of his rival Münster’s ruin. Cécile Tormay, in Emil Torday’s English; the year is 1922, from the copyright line. Nineteen chapters. The two small footnotes stay as Note lines, and the painted signs keep their capitals. Some long paragraphs have been broken into shorter screens; no words are changed. A carpenter builds himself, and the house that outlives him, into a town that grows into Budapest. Three generations, money and class, in short, clear scenes. Soft Tormay, carefully. Soft Pest and Buda, carefully. Hungary is primary. The lead is this book, not The Sworn Brothers, not Dusty Answer, and not Christine of the Hills. PG reading-ease 85.7 is easy. No score is invented for this sit.`,
+  "the-sworn-brothers":
+    `In the red light of the fire in the midst of the hall, the age-browned pillars of the high-seat stood forth strongly lit in the middle of the main wall, against the background of smoky darkness which spread behind. Book I, Chapter I — a winter night by the hall fire on the Dalsfjord, young Ingolf among the carved gods, and his father in the high seat. A heads-up before you start: there is Viking feud violence, outlawry, and pagan sacrifice. The first sit stops in the quiet hall, just before his kinsman Rodmar and Leif come stamping in. Gunnar Gunnarsson, in William Emmé and Claud Field’s English; the year is 1921, from the copyright line. Three books, thirty-six chapters. Straight quotes stay as printed. Some long paragraphs have been broken into shorter screens; no words are changed. Two foster-brothers, grave Ingolf and mocking Leif, are driven out of Norway to settle an empty Iceland. A saga told as a modern novel, plain and quick. Soft Gunnarsson, carefully. Soft Dalsfjord, carefully. Iceland is primary. PG reading-ease 81.5 is easy. No score is invented for this sit.`,
+  "dusty-answer":
+    `When Judith was eighteen, she saw that the house next door, empty for years, was getting ready again. Part one, Chapter 1 — the house next door by the river coming back to life, and Judith remembering the cousins who dropped over the peach-tree wall. A heads-up before you start: one cousin’s death in the war is told offstage; a same-sex attachment is handled delicately; and the period term ‘half-caste’ appears once. The first sit stops at the first section break, after an autumn game of hide-and-seek. Rosamond Lehmann; the year is 1927, from the copyright line. The Meredith epigraph and the dedication stay, as their own page before Part one. Five parts. The single quotes stay as printed. Some long paragraphs have been broken into shorter screens; no words are changed. Judith loves the family next door one by one, and then, at Cambridge, bold, careless Jennifer. Lyrical and close-up. Soft Lehmann, carefully. Soft Thames-side and Cambridge, carefully. England is primary. PG reading-ease 84.5 is easy. No score is invented for this sit.`,
+  "christine-of-the-hills":
+    `We had been sailing for some hours with no word between us, but Barbarossa woke up as the yacht went about under the lee of the promontory, and with a lordly sweep of his brown-burnt arms he indicated the place. The Prologue — an English yacht among the Dalmatian islands, a white pavilion on the shore, and old Barbarossa promising the story of Christine. A heads-up before you start: there is a shooting, there are whippings, and a predatory guardian, not shown explicitly. The first sit is the whole Prologue. Max Pemberton; the year is 1897, from the title page. A prologue and twenty-five chapters. Barbarossa’s thee and thou, and the quote marks that open each paragraph of his telling, stay as printed. Some long paragraphs have been broken into shorter screens; no words are changed. A vagrant hill-girl becomes a great lady, told over a week of dinners by a garrulous boatman. Fast and sunlit. Soft Pemberton, carefully. Soft Dalmatia, carefully. Croatia is primary. PG reading-ease 85.9 is easy. No score is invented for this sit.`,
+  "the-story-of-a-woman":
+    `Now Dokhio, the Father of Durga, was wroth because Shiva, to whom he had given his daughter in marriage, though he had the reputation of a God, was as poor as any beggar. This sit is “The Story of a Woman” only — on a zenana rooftop in Bengal at the cow-dust hour, the women retell how Durga defied Shiva, and quarrel over how the story ends. The sit is the whole story, from the myth through the asterisk break to the rooftop at dusk, ending “…was what she said.” Cornelia Sorabji, from Between the Twilights; the year is 1908, from the volume. One story this sit. Warm and sly, and it ends quietly, so it suits bedtime. Soft Sorabji, carefully. Soft Bengal, carefully. India is primary. PG reading-ease 77.3 is for the whole volume. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1413,6 +1423,10 @@ export const RITUAL_LANES: RitualLane[] = [
       // Farewell Love!, The Son of His Mother, and My Lady Nobody stay off before-sleep (the content notes).
       // New Year's Night is the Host-only story and sits here only.
       "new-years-night",
+      // Mira Fri 2 Oct 2026 POST-#218 CLEAR — The Old House leads Next, and is not on this lane.
+      // The Old House, The Sworn Brothers, Dusty Answer, and Christine of the Hills stay off before-sleep (the content notes).
+      // The Story of a Woman is the Host-only story and sits here only.
+      "the-story-of-a-woman",
     ],
   },
   {
@@ -1866,6 +1880,14 @@ export const RITUAL_LANES: RitualLane[] = [
       "farewell-love",
       "the-son-of-his-mother",
       "my-lady-nobody",
+      // Mira Fri 2 Oct 2026 POST-#218 CLEAR — The Old House leads. Never Featured.
+      // LEAD kept — not The Sworn Brothers, not Dusty Answer, not Christine of the Hills.
+      // Christine of the Hills is the commute sit only, not this lane.
+      // The four novels carry content notes, so none are before-sleep.
+      // The Story of a Woman is before-sleep only (Host-only, the one story).
+      "the-old-house",
+      "the-sworn-brothers",
+      "dusty-answer",
     ],
   },
   {
@@ -2167,6 +2189,11 @@ export const RITUAL_LANES: RitualLane[] = [
       // Mayflower and Susan Proudleigh are unwind only. The Peat Moor is before-sleep only.
       // Doom Castle also sits here: the commute sit.
       "doom-castle",
+      // Mira Fri 2 Oct 2026 POST-#218 CLEAR — The Old House leads Next, and is not on this lane.
+      // Dusty Answer is unwind only. The Story of a Woman is before-sleep only.
+      // The Sworn Brothers and Christine of the Hills sit here: the commute sits.
+      "the-sworn-brothers",
+      "christine-of-the-hills",
     ],
   },
   {
@@ -2301,6 +2328,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-son-of-his-mother": 9,
   "my-lady-nobody": 10,
   "new-years-night": 9,
+  "the-old-house": 7,
+  "the-sworn-brothers": 9,
+  "dusty-answer": 9,
+  "christine-of-the-hills": 10,
+  "the-story-of-a-woman": 7,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,
