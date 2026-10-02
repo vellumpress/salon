@@ -136,6 +136,11 @@ test(
       await page.addInitScript(() => localStorage.clear());
       await page.goto(READER, { waitUntil: "domcontentloaded" });
       await page.getByRole("button", { name: "Next sentence" }).waitFor();
+      // The opening paints first. The full bind can replace a sentence's
+      // apostrophes, so snapshot only after that bind has landed.
+      await page.waitForFunction(
+        () => document.querySelector(".reader-frame")?.getAttribute("data-bound") === "full",
+      );
 
       const opened = await bar(page);
       assert.equal(opened.state, "closed");

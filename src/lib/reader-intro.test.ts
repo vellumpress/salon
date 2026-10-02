@@ -446,6 +446,15 @@ test("normalizes paragraph breaks while trimming About copy", () => {
   );
 });
 
+test("a heads-up that is the fourth sentence still shows before reading", () => {
+  assert.equal(
+    trimReaderIntro(
+      "One sentence in the room. A second sentence at the door. A third stays in. A heads-up before you start: the note stays on the card. A fifth stays out.",
+    ),
+    "One sentence in the room. A second sentence at the door. A third stays in. A heads-up before you start: the note stays on the card.",
+  );
+});
+
 test("Of Human Bondage has a stored 2–3 sentence preface", () => {
   const copy = readerIntro(shelfAsWork("of-human-bondage"));
   assert.match(copy, /club foot/i);

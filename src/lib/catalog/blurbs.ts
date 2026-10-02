@@ -611,6 +611,16 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: there is a shooting, there are whippings, and a predatory guardian, not shown explicitly.",
   "the-story-of-a-woman":
     "On a zenana rooftop in Bengal at the cow-dust hour, the women retell how Durga defied Shiva and quarrel over how the story ends.",
+  "daughters-of-men":
+    "A heads-up before you start: the characters voice national prejudices, including one line calling the Greeks “worse than the Jews”, and there is a comic duel.",
+  "the-bright-shawl":
+    "A heads-up before you start: there are executions and firing squads, and period race language in the characters’ and the narrator’s voices.",
+  "irresolute-catherine":
+    "A maidservant jilted at her own baptism turns toward the shepherd she was afraid of.",
+  "the-old-room":
+    "A heads-up before you start: there is frank talk of infidelity, a thought of murder-suicide, and the son’s suicide at the end.",
+  "the-fur-coat":
+    "Christmas Eve, a poor doctor borrows his friend’s fur coat, and in the dark hall his wife kisses him, thinking he is the friend.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",

@@ -1,0 +1,181 @@
+{
+  "id": "the-old-room",
+  "title": "The Old Room",
+  "author": "Carl Ewald (tr. Alexander Teixeira de Mattos)",
+  "year": "1908",
+  "note": "Project Gutenberg 62883 (tr. Alexander Teixeira de Mattos, per PG). Whole novel, Parts I–II, 24 chapters (PG l.193–6030) to THE END., labelled 'Part n · <part> · Chapter n', after the translator's note and the first-edition preface (l.99–176) as their own front section. The title page and the contents out; the author's second-edition dedication opens the front scene in sentence case; the doubled part head printed once. Curly quotes kept as printed; italics kept; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. EN 1908 (PG text: 'COPYRIGHT, 1908, BY CHARLES SCRIBNER’S SONS', l.56–57). PG reading-ease 91.7 — no invented Launch rank. Place: Denmark. Sits: unwind. Host intro: Denmark. A great house on a square, and in it a secret room where a husband and wife talk their marriage through; then, in Part II, their son's life in the same room. Very easy to read, adult and frank, told in a quiet, fable-like voice. A heads-up before you start: there is frank talk of infidelity, a thought of murder-suicide, and the son's suicide at the end.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Cordt · Chapter I",
+      "place": "",
+      "reentry": "The room looks out upon the square, which is so big and so fashionable that there is no business done in it.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The room looks out upon the square, which is so big and so fashionable that there is no business done in it."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "By day there is a sound of carriages, but at a distance; for the house that contains the room is thrust a long way back and its walls are as thick as the walls of a castle. In the evening, the square shines with a thousand lights; at night, you can hear the rippling of the fountain, which never begins and never stops, cries, no one knowing what they are, and solitary steps that approach and retreat again."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The room is built high over the square. Its window is a door and leads to a balcony filled with red flowers. When the wind lashes them, their petals fly right over into the basin of the fountain and rock upon the water."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The room is long and deep."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Where the window is, the light streams in through the wide, stained-glass panes; but, inside, where the fireplace rises to the ceiling, it is always dark."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "No one has ever seen the curtain drawn before the window. But, even if the sun could shine right into the room, it would never have seen a human being there. By day, the room is dead."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "It is placed so strangely in the house that it seems to form no part of it. The life of every day passes outside it; and, even when the whole house is lighted up and the horses paw the ground in the gateway and glasses clink and music sounds in the great drawing-room, the door of the room remains constantly closed."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "No one has ever crossed its threshold but the master of the house and his wife and the oldest servant in their employ."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "For the room is the soul of the house and its tradition and its secret chamber."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "It was destined for this purpose long ago by the man who built the house; and so cunningly did he contrive it that no one could guess that it was there, unless he knew of it. Then, when the work was ended, he sealed the architect’s tongue with a solemn oath and a heavy fee and the man kept his sworn word."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "And the builder of the house decorated the room as richly as was possible according to the means of those days, with gilt and figured leather hangings and stained-glass window-panes and costly carpets from the East. But he placed no furniture in it until the very last. Then he brought two splendid armchairs which he had had made for him in Milan."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "They were odd-looking chairs. They glided so smoothly over the floor that a child could move them, and were so large that people became quite small when they sat in them. Their woodwork was carved into birds and animals, whose faces grinned strangely in the dark but ceased to do so when the lights were lit."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "When everything was thus ordered for the best, he called an old servant, who had been in the house since he was a child, gave him a key of the room and told him to care for it faithfully. Every evening, when it grew dusk, he was to light the candles on the mantelpiece and he was to do this even if he knew that his master was travelling in distant lands. Every morning, he was to adjust the room with his own hands. None but himself was ever to cross the threshold."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "On the evening of the day when he took possession of his house, the master, having first shown her all its other beauties, brought his wife to the room."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "She looked round in wonder. But he made her sit in one of the great chairs, seated himself in the other and spoke to her in these words:"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "“Sweetheart, this room is for you and me and for none other in the world. I have placed it in the most secluded part of the house, far from the counting-house, where we work, from the passages, along which our servants go, and from the drawing-room, where we receive our guests, ay, even from our marriage-bed, where you will sleep by my side.”"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "She took his hand and kissed it and looked at him."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "“It shall be the temple of our marriage, hallowed by our love, which is greater than anything that we know. Here we will pray to Him Who gave us to each other. Here we will talk gladly and earnestly every evening when our hearts impel us to. And, when we come to die, our son shall bring his wife here and they shall do as we did.”"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "Thereupon he wrote down in a document how all this had happened and they both sealed it with their names. He hid the document in a secret recess in the wall. And, when all this was accomplished, they fell upon their knees and, folding their hands together, offered a simple prayer to God before they went to rest."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "These two are long since dead. But their son complied with their will and his son after him and so on and so forth until the present day."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "And, however riches might increase or diminish with the varying fortunes of the times, the old house in the square continued in the possession of the family. For he who was its head always lived in such a way that he kept his ancestral home."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "The room stood untouched, as was appointed, and the document grew old and yellow in the secret recess in the wall. Once only in the time of each master of the house was it taken out; and that was on the evening when he first brought his young wife to the secret chamber. Then they wrote their names upon it and put it away again."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "But it became the custom for each of them that took lawful possession of the room to adorn it with a piece of furniture after his own taste and heart. And they were strange objects that, in the course of time, gathered round the two great, strange chairs."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "There was one of the owners of the house who was kindly and cheerful to the end. He placed in the room, in his wife’s honor, a costly spinning-wheel, richly inlaid, which whirred merrily every evening for many a good year and which stood as it was, with thread upon the spindle."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "There was one whose thoughts were always roaming and never at rest and whose intellect was obscured before he died. He presented the room with an ingenious representation of the heavenly system. When a spring was pressed, the spheres lit up and ran their eternal courses; and he sat and played with the stars to his last day."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "There was another whose wife dreaded the deep silence of the room and never entered it but once. He waited for five years and then had a doll made, a woman, life-size and beautifully dressed. He put it on a chair in the window, so that the light fell on its vacant face. But his son, who loved his mother, drew the doll back, so that it was hidden in the curtain."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "There was one whose wife was in the habit of singing when she was sad, as she often was. She brought a spinet, with slender, beautiful notes, which sang like a mother singing her child to sleep. In time, its sound grew very thin. When it was played upon in the room at night, it sounded over the silent square like a humming in the air; and none that passed knew what it was."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "There was also one who had his wife’s portrait painted and hung the picture on the wall. He broke his wedding-vows and his grandson took the picture down. But, where it had been, a light stain remained that could not be removed."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "The man who was master of the house at the time when that happened which is related in this book had brought nothing as yet. But his wife had set up a thing that had caught her eye more than all that she had seen in the way of art on her long travels. This was a jar of a preposterous shape, large and bright and of a pale tint. On one side was the figure of a naked man writhing through thorns. It stood on a stone pedestal hewn from a rock near Jerusalem."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "That was how the room was."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "Each evening, when it grew dark, the oldest servant in the house lit the candles on the mantelpiece. Each morning, before any one was awake, he cleaned the room with his own hands and watered the red flowers on the balcony. When winter came, he strewed bread-crumbs for the sparrows that gathered on the baluster and twittered."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "But the name of him that owned the house was Cordt. And his wife was Fru Adelheid."
+    }
+  ]
+}

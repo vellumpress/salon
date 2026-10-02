@@ -853,6 +853,7 @@ export function TbrReader({
       )}
       style={daylight.style}
       data-daylight={daylight.active ? daylight.sample.phase : "off"}
+      data-bound={workIsComplete(work.id) ? "full" : "opening"}
     >
       <h1 className="sr-only">{work.title}</h1>
       {together && pair ? (

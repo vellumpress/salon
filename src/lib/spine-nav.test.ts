@@ -70,6 +70,28 @@ test("House of Mirth spine names both books and opens every chapter", () => {
   assert.equal(locked[15]?.open, false);
 });
 
+test("an empty scene place falls back to the title, and an untitled section uses the break label", () => {
+  const shawl = JSON.parse(
+    readFileSync(new URL("./catalog/texts/the-bright-shawl.json", import.meta.url), "utf8"),
+  ) as Work;
+  const chapters = spineChapters(shawl, 0, true);
+  assert.equal(chapters[0]?.place, "Dedication");
+  assert.equal(chapters.filter((chapter) => chapter.place === "· · ·").length, 32);
+
+  const room = JSON.parse(
+    readFileSync(new URL("./catalog/texts/the-old-room.json", import.meta.url), "utf8"),
+  ) as Work;
+  const roomChapters = spineChapters(room, 0, true);
+  assert.equal(roomChapters[0]?.place, "Dedication, translator’s note and preface");
+  assert.equal(roomChapters[1]?.place, "Part I · Cordt · Chapter I");
+  assert.equal(roomChapters.at(-1)?.place, "Part II · Cordt’s son · Chapter XXIV");
+
+  const coat = JSON.parse(
+    readFileSync(new URL("./catalog/texts/the-fur-coat.json", import.meta.url), "utf8"),
+  ) as Work;
+  assert.equal(spineChapters(coat, 0, true)[0]?.place, "The Fur Coat");
+});
+
 test("a full bind replaces a shorter opening and not the other way around", () => {
   const opening = JSON.parse(
     readFileSync(new URL("./catalog/openings/the-house-of-mirth.json", import.meta.url), "utf8"),

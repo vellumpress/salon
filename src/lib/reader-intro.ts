@@ -20,7 +20,11 @@ function usableCopy(value: string | undefined) {
 export function trimReaderIntro(value: string | undefined) {
   const copy = usableCopy(value);
   if (!copy) return "";
-  return splitSentences(copy, 3).join(" ").trim();
+  const sentences = splitSentences(copy, 4);
+  const shown = sentences.slice(0, 3);
+  const next = sentences[3];
+  if (next && /^A heads-up before you start\b/.test(next)) shown.push(next);
+  return shown.join(" ").trim();
 }
 
 /**
