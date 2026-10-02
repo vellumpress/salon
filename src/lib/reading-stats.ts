@@ -4,6 +4,7 @@ import { shelfWork, type ShelfForm } from "./catalog/shelf.ts";
 import { sitInvolves, type HostedSit } from "./hosted-sit.ts";
 import { formatHandle, normalizeHandle } from "./social.ts";
 import { dayKey } from "./day-key.ts";
+import { isDeviceImport } from "./import/private.ts";
 import type { SitSession, WorkProgress } from "./store.ts";
 import type { TogetherKeep } from "./together-keep.ts";
 import { buildRadarAxes, type RadarAxis } from "./you-radar.ts";
@@ -310,7 +311,7 @@ function workAuthor(workId: string) {
 function countBreaths(progress: Record<string, WorkProgress>) {
   let breaths = 0;
   for (const [id, item] of Object.entries(progress)) {
-    if (id === "page" || !item.entered) continue;
+    if (isDeviceImport(id) || !item.entered) continue;
     breaths += Math.max(0, item.breathIndex);
   }
   return breaths;
@@ -335,7 +336,7 @@ export function weekMinutesSeries(
 }
 
 export function ritualLanesUsed(workIds: Iterable<string>): LaneCount[] {
-  const ids = [...new Set(workIds)].filter((id) => id && id !== "page");
+  const ids = [...new Set(workIds)].filter((id) => id && !isDeviceImport(id));
   const counts: LaneCount[] = [];
   for (const lane of RITUAL_LANES) {
     if (lane.workIds.length === 0) continue;
@@ -400,7 +401,7 @@ function daysPresent(
     if (minutes > 0 && key >= since && key <= today) days.add(key);
   }
   for (const [id, item] of Object.entries(progress)) {
-    if (id === "page" || !item.entered || !item.lastOpenedAt) continue;
+    if (isDeviceImport(id) || !item.entered || !item.lastOpenedAt) continue;
     const key = dayKey(item.lastOpenedAt);
     if (key >= since && key <= today) days.add(key);
   }
@@ -471,6 +472,7 @@ export function activityTimeline(input: {
   const me = normalizeHandle(input.handle ?? "");
 
   for (const sit of input.sitHistory) {
+    if (isDeviceImport(sit.workId)) continue;
     items.push({
       at: sit.endedAt,
       kind: "sit",
@@ -507,7 +509,7 @@ export function activityTimeline(input: {
   }
 
   for (const [id, item] of Object.entries(input.progress)) {
-    if (id === "page" || !item.completedAt) continue;
+    if (isDeviceImport(id) || !item.completedAt) continue;
     items.push({
       at: item.completedAt,
       kind: "finished",
@@ -522,7 +524,7 @@ export function activityTimeline(input: {
 
 function deskWorks(progress: Record<string, WorkProgress>): DeskWork[] {
   return Object.entries(progress)
-    .filter(([id, item]) => id !== "page" && item.entered && !item.completedAt && item.breathIndex > 0)
+    .filter(([id, item]) => !isDeviceImport(id) && item.entered && !item.completedAt && item.breathIndex > 0)
     .map(([id, item]) => ({
       id,
       title: workTitle(id),
@@ -588,12 +590,13 @@ export function deriveReadingStats(input: {
 
   const minutesByWork: Record<string, number> = {};
   for (const sit of sitHistory) {
+    if (isDeviceImport(sit.workId)) continue;
     minutesByWork[sit.workId] = (minutesByWork[sit.workId] ?? 0) + sit.minutes;
   }
 
   const workIds = new Set<string>([
-    ...Object.keys(progress).filter((id) => progress[id]?.entered),
-    ...favorites,
+    ...Object.keys(progress).filter((id) => progress[id]?.entered && !isDeviceImport(id)),
+    ...favorites.filter((id) => !isDeviceImport(id)),
     ...Object.keys(minutesByWork),
   ]);
 
@@ -601,7 +604,7 @@ export function deriveReadingStats(input: {
   let completed = 0;
   let kept = 0;
   for (const [id, item] of Object.entries(progress)) {
-    if (id === "page" || !item.entered) continue;
+    if (isDeviceImport(id) || !item.entered) continue;
     opened += 1;
     if (item.completedAt) completed += 1;
     kept += item.kept?.length ?? 0;

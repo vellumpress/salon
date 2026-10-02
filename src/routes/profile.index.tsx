@@ -163,7 +163,7 @@ function ProfileBody({
   useEffect(() => {
     if (!hydrated || !liveUser || !liveBackendEnabled) return;
     const entries = Object.entries(progress)
-      .filter(([id, item]) => item.entered && id !== "page")
+      .filter(([id, item]) => item.entered && id !== "page" && !id.startsWith("import-"))
       .slice(0, 80)
       .map(([id, item]) => ({
         workId: id,

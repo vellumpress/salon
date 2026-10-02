@@ -22,6 +22,7 @@ import { closedReaderBar, reduceReaderBar, type ReaderBarState } from "@/lib/rea
 import { TogetherShell } from "@/components/sitting-room";
 import { estimateRitualMinutes } from "@/lib/catalog/rituals";
 import { shelfWork } from "@/lib/catalog/shelf";
+import { isDeviceImport } from "@/lib/import/private";
 import {
   serializeEpisode,
   serializeNightChrome,
@@ -97,6 +98,7 @@ export function TbrReader({
   hosted?: string;
 }) {
   const navigate = useNavigate();
+  const device = isDeviceImport(work.id);
   const sittingMinutes = useTbr((s) => s.sittingMinutes);
   const setSittingMinutes = useTbr((s) => s.setSittingMinutes);
   const progress = useTbr((s) => s.progress[work.id]);
@@ -275,7 +277,7 @@ export function TbrReader({
   const scene = breath ? sceneOf(work, breath.sceneId) : work.scenes[0];
   const placeLabel = chapterPlace(work.id, scene);
   const spine = useMemo(
-    () => spineChapters(work, index, workIsComplete(work.id)),
+    () => spineChapters(work, index, workIsComplete(work.id) || isDeviceImport(work.id)),
     [index, work],
   );
   const lookback = useMemo(
@@ -995,8 +997,8 @@ export function TbrReader({
             >
               Keep
             </button>
-            <FavoriteMark workId={work.id} className="border-r border-ink" />
-            {isKept ? (
+            {device ? null : <FavoriteMark workId={work.id} className="border-r border-ink" />}
+            {device ? null : isKept ? (
               <SalonCardShare
                 compact
                 workId={work.id}
@@ -1208,11 +1210,11 @@ export function TbrReader({
                   </button>
                 </label>
                 <p className="mt-2 font-sans text-xs text-muted">{sitLabel(sittingMinutes)}</p>
-                {gateMode === "full" ? (
+                {gateMode === "full" && !device ? (
                   <p className="mt-8 type-kicker text-muted">Read with a friend?</p>
                 ) : null}
               </div>
-              {gateMode === "full" ? (
+              {gateMode === "full" && !device ? (
                 <div className="flex shrink-0 flex-col gap-rule bg-ink">
                   <button
                     type="button"

@@ -33,6 +33,7 @@ import {
   type SitClock,
 } from "./active-read.ts";
 import { bumpDayCount, touchWorkOnDay } from "./reading-score.ts";
+import { isDeviceImport } from "./import/private.ts";
 
 export { dayKey };
 
@@ -545,7 +546,8 @@ export const useTbr = create<TbrState>()(
           if (clubInvites[clubId] === token) return {};
           return { clubInvites: { ...clubInvites, [clubId]: token } };
         }),
-      toggleFavorite: (workId) =>
+      toggleFavorite: (workId) => {
+        if (isDeviceImport(workId)) return;
         set((state) => {
           const favorites = state.favorites ?? [];
           return {
@@ -553,10 +555,11 @@ export const useTbr = create<TbrState>()(
               ? favorites.filter((id) => id !== workId)
               : [...favorites, workId],
           };
-        }),
+        });
+      },
       setFavorites: (favorites) =>
         set({
-          favorites: [...new Set(favorites.filter(Boolean))].slice(0, 200),
+          favorites: [...new Set(favorites.filter((id) => id && !isDeviceImport(id)))].slice(0, 200),
         }),
       setLastShuffle: (lastShuffle) => set({ lastShuffle }),
       setTaste: (taste) => set({ taste: taste.slice(0, 400) }),

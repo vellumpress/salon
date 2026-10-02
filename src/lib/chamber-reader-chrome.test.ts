@@ -10,7 +10,7 @@ test("reader lookback sits on scene boundaries", () => {
 });
 
 test("a complete book opens every spine chapter", () => {
-  assert.match(reader, /spineChapters\(work, index, workIsComplete\(work\.id\)\)/);
+  assert.match(reader, /spineChapters\(work, index, workIsComplete\(work\.id\)/);
   const spine = reader.slice(
     reader.indexOf('overlay === "spine"'),
     reader.indexOf('overlay === "sitting-end"'),

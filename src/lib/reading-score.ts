@@ -10,6 +10,7 @@
  */
 
 import { dayKey } from "./day-key.ts";
+import { isDeviceImport } from "./import/private.ts";
 
 const MS_DAY = 24 * 60 * 60 * 1000;
 
@@ -430,7 +431,7 @@ export function touchWorkOnDay(
   workId: string,
   cap = 40,
 ): Record<string, string[]> {
-  if (!workId || workId === "page") return map ?? {};
+  if (!workId || isDeviceImport(workId)) return map ?? {};
   const prev = map ?? {};
   const list = prev[day] ?? [];
   if (list.includes(workId)) return prev;

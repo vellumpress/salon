@@ -1,0 +1,7 @@
+# Pages CI does not deploy functions. verify_jwt stays true: a signed-in
+# session sends a user JWT as Authorization. The publishable key is not a
+# JWT and travels in the apikey header only.
+# Deploy by hand: supabase functions deploy import-url
+
+[functions.import-url]
+verify_jwt = true

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { listFavorites, pushFavorites } from "@/lib/account";
 import type { AppUser } from "@/lib/auth/use-current-user";
+import { isDeviceImport } from "@/lib/import/private";
 import { liveBackendEnabled } from "@/lib/site";
 import { useTbr } from "@/lib/store";
 
@@ -28,7 +29,9 @@ export function useFavoriteSync(user: AppUser | null) {
           setFavorites(merged);
         }
         favSyncRef.current = true;
-        void pushFavorites({ data: { workIds: merged } }).catch(() => undefined);
+        void pushFavorites({
+          data: { workIds: merged.filter((id) => !isDeviceImport(id)) },
+        }).catch(() => undefined);
       })
       .catch(() => {
         favSyncRef.current = true;
@@ -40,7 +43,9 @@ export function useFavoriteSync(user: AppUser | null) {
 
   useEffect(() => {
     if (!user || user.isDevFallback || !liveBackendEnabled || !hydrated || !favSyncRef.current) return;
-    void pushFavorites({ data: { workIds: favorites } }).catch(() => undefined);
+    void pushFavorites({
+      data: { workIds: favorites.filter((id) => !isDeviceImport(id)) },
+    }).catch(() => undefined);
   }, [user, hydrated, favorites]);
 
   return { hydrated, favorites };
