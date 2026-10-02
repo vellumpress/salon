@@ -621,6 +621,14 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: there is frank talk of infidelity, a thought of murder-suicide, and the son’s suicide at the end.",
   "the-fur-coat":
     "Christmas Eve, a poor doctor borrows his friend’s fur coat, and in the dark hall his wife kisses him, thinking he is the friend.",
+  "the-corsican-brothers":
+    "A heads-up before you start: there is vendetta talk, two pistol duels (not graphic), and a ghost.",
+  "jocelyn":
+    "A heads-up before you start: the love story is an adultery, and the wife dies of a morphia overdose, with suicide suspected.",
+  "the-woman-of-knockaloe":
+    "A heads-up before you start: it ends in a double suicide, and the characters voice wartime hatred.",
+  "the-taking-of-the-redoubt":
+    "A heads-up before you start: there is battle violence, and one graphic sentence about a death.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",

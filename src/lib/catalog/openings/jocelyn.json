@@ -1,0 +1,191 @@
+{
+  "id": "jocelyn",
+  "title": "Jocelyn",
+  "author": "John Galsworthy",
+  "year": "1898",
+  "note": "Project Gutenberg 73672. Whole novel, 3 parts, 28 chapters (PG l.92–6303) to THE END, labelled 'Part n · Chapter n', after the dedication to Joseph Conrad and the epigraph (l.69–82) as their own front section. The title block out; the three printed '* * * * *' breaks kept. Curly quotes kept as printed; italics kept; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. 1898 (PG field 'London: Duckworth & Co., 1898.'; title page l.52–58). PG reading-ease 79.1 — no invented Launch rank. Place: Mentone and Monte Carlo, the Riviera. Sits: unwind. Host intro: Mentone and Monte Carlo on the Riviera, in the 1890s. A reserved Englishman, ten years married to an invalid, falls in love with her young friend Jocelyn among the hotel terraces, the casino and the yachts. Galsworthy's first novel, published as John Sinjohn: worldly, adult and quietly intense. A heads-up before you start: the love story is an adultery, and the wife dies of a morphia overdose, with suicide suspected.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Chapter I · Mentone & Monte Carlo, the Riviera",
+      "place": "Part I · Chapter I · Mentone & Monte Carlo, the Riviera",
+      "reentry": "A light laugh came floating into the sunshine through the green shutters of a room in the Hôtel Milano. It grated on Giles Legard, who sat on the stone terrace outside, face to face with a naked fact ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "A light laugh came floating into the sunshine through the green shutters of a room in the Hôtel Milano. It grated on Giles Legard, who sat on the stone terrace outside, face to face with a naked fact for, perhaps, the first time in ten years. He uncrossed his legs, finished his coffee, and rose listlessly, looking down the dried river bed towards the smooth sea. He was alone with the sunlight, and it laid bare his face with a convincing stare. The indifferent, gentle egotism of the man had recoiled before the meaning of things for so long, that the reality painted itself upon him harshly."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "His long, sun-browned face had taken back momentarily its original pallor, his grey eyes were contracted, his square chin and jaw thrust forward doggedly; the thin curve of his dark moustache seemed to droop more than usual, and the lines of weariness round his mouth and eyes were deepened, till ridge and furrow were stamped as on a coin. His figure, tall and well knit, looked very lean and listless."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Yet, he had awakened to the dominating fact that he had blood in his veins—an overwhelming torrent of blood that sang in his head and throbbed in his hands, at a touch, that mastered his reason and his will, at a look. He was changed, absolutely changed, so that he felt he did not know himself any longer, that his outward manner alone remained to him—the merest superficial manner, standing as the only bar to revelations the depth of which he was now attempting to sound."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "The more effectually to cast the lead in the uncertain waters of reality, he crossed the terrace abruptly and leant against the half-opened French window of a large room, in the screened corner of which a woman, dressed in white, was lying in a long invalid chair, reading, and making pencil notes. She looked up as his shadow fell across the light."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "“Ah! Giles, I have not had the fortune to see you greatly to-day. Will you perhaps have the goodness to give me the little green book lying on that table? Do not stay, *je n’ suis pas bon compagnon*. It does not go well, so that I just lie and read my Tolstoi.”"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Her pale, sallow face lighted up with a smile of thanks as he put the book within her reach."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "“Have you been amusing yourself to-day, *mon cher*? Presently you shall tell the little English friend I should like to see her.”"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "“Jocelyn is in the next room,” said Giles slowly."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "“Ah! but not now, I have so much pain just now. Give her my love, and tell her—later.” Her black eyes from out of their hollows glanced half pitifully, half maliciously, at her husband, and then drooped resignedly with a quiver of bodily pain under brows that fell obliquely away from the furrow in the centre of her low Slav forehead."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "“I’m very sorry that you’re so ill to-day. Can I do anything for you?” said Legard. It was all he found to say, and his face in the maze of his emotions expressed no one of them."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "“Amuse yourself, *mon cher*, I have no want of anything, except to be alone, this is one of my bad days, you know.”"
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Again she looked at him, and, but for the pain of the whitened lips, one would have said she laughed. Giles turned away, but stopped at the window irresolutely; he had found no help. Irma Legard dropped her book with a slightly impatient gesture. A gleam of sun stealing round the screen fell on her face—she sat up, drew the screen forward, and sank back on her cushions with a sigh. The sound of a piano came from the next room."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "“I beg your pardon,” said Giles, “I am going,” and stepped into the sunshine."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "Through the green shutters of the adjoining room came a little petulant tune; Giles stopped, and his face quivered; the little tune gripped some string in his heart, it was as if the player had put her finger upon it, and pulled it towards her. He stood there leaning against the wall, with his hands in his pockets, and half-closed eyes. He had found the depth of those uncertain waters; they were just of that depth, whatever it might be, that mattered nothing. The reality of circumstance, of social relations and duties, no longer existed, *they* had become shadows to him; that which was real, the only thing which had substance, was the girl playing that tune in the shuttered room. Nothing else mattered. He had a momentary feeling of relief, the feeling which comes to the man whose life has been a compromise with circumstance, who has always been afraid of stretching out his hand too far, when, for the first time, he is conscious that his power of temporising has been taken from him—that in his life, it is to be all, or nothing. Shikari, the great brindled greyhound lying against the wall, paused in his occupation of lazily snapping at flies, and stretched himself to lick his master’s hand."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "“Amuse yourself, *mon cher*!” His wife’s words came into Legard’s mind, and he laughed. He did not find things amusing."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "The green shutters were opened gently, and a man stepped on to the terrace."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "“How do you do, my dear Legard?” he said in slow, suave, purring tones, putting on a soft, grey hat; “how very fortunate to see you. I am just off, you know.”"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Scrupulously dressed after the manner of the English, Gustavus Nielsen was unmistakably a foreigner. He was by birth a Swede, by education and adoption a Cosmopolitan. About forty years old, of medium height and substantial build, he carried a flaxen head stiffly upon his broad shoulders. His pale, sandy face, of a square moulding, was marked with innumerable little lines; one of two unfathomable eyes of a warm, reddish brown, was protected by a gold-rimmed eye-glass; and his tawny moustache curled walrus-like downwards to the level of his jaws. He carried under his arm a white, green-lined umbrella."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "The two men shook hands; in the looks they exchanged was all the antagonism of an unconfessed rivalry."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "“How goes the ‘system’?” said Legard. It was the most disagreeable thing he could think of at the moment."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "“Thank you,” said the other, his face immovable. “Pretty well, pretty well, but we ‘other’ gamblers never mention it; we are afraid, don’t you know. By the way, how is your dear wife? Give her my compliments. I am so sorry not to see her. I have been calling on Mrs. Travis and Miss Ley, and now I am afraid there isn’t time.”"
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "Legard winced, he had got the worst of the exchanges."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "“My wife is not very well, thank you. Good-bye, don’t let me make you lose your train.”"
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "“Good-bye, my dear fellow,” murmured Nielsen, putting up his green-lined umbrella, and disappearing at a slow, square walk in the direction of the railway station."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "Left to himself, Giles returned to his moody, eager contemplation of the closed, green shutters. The afternoon sun streamed obliquely through the yellow sprays of a huge mimosa that hung balancing over the terrace wall, and the scent of roses and heliotrope was heavy on the faint puffs of air that came from the great tideless sea. Small brown lizards chased each other up and down the smooth walls of the hotel, and a mazy, shifting web of humming things and of butterflies wove itself over the stony waste of the terrace."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "The domination of sex veiled all these things from Legard’s senses. Something different, something unseizably different in the pressure of a girl’s hand, and the world was changed to him."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Constitutionally lazy, constitutionally and unobtrusively egoist, he had come slowly to the realisation of the upheaval of foundations. It was too far, too foreign, too altogether strange. Yet, when it had come, it seemed to him the most natural thing to exchange a world of sun, of sweet sounds and scents, of colour, of resigned humdrum, of bored and gentle pleasure-seeking, for another world of fiercely passionate longing, of ache, of delight, of absolute absorption in the one idea—a world from which everything else was barred."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "All that spring at Mentone he had accepted the one more beautiful thing that had come into his life, as for many years he had accepted the sun, the air, the flowers, the sea, everything that was fair in a very fair and pleasant land. *They* had become to him a part of his nature, so that he no longer wondered at them, and, Englishman though he was, gazed at the bewildered tourist with the mildly contemptuous surprise of the Southerner, to whom these things were the merest necessities of existence."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "He had taken this one more beautiful thing as it came, without reflection, without thought, enjoying it day by day."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "He had got into the way of taking things like this. Ten years ago, at the age of twenty-five, he had married a Polish lady, and had brought her soon afterwards, a confirmed invalid, to a villa on the Italian Riviera. They had never again moved far from it, it was too much trouble. His wife was always ill, she had her writing, her friends, her flowers. As for himself, he drifted along in an existence pleasant enough, which slowly and surely sapped his energy, and left him a sense of waste and of weariness that did not diminish with the passing years."
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "He had no particular ties with England. His father, a man of some position in his county, died from a fall out hunting when Giles was only four years old. The death of his mother, a very beautiful and good woman, came just as he was leaving Eton, and left a big mark upon his mind, strengthening the silent reserve of his nature; and yet even with her, to whom he had been devoted, he had never spoken of things which affected him deeply; it seemed as if the power of a complete trustfulness were hidden from him, and reserved for something fuller and more intimate to reveal."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "At Oxford he made many friends, he was silently sympathetic to them, but when they came to sum him up, they were forced to confess that they did not know him, even in that ordinary degree in which youths know each other; they liked him, but they did not know him."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "When he left Oxford, he was in the position of a man with no decided leanings or dislikes in regard to a profession, with more than sufficient means, and with a nature which required the spur of necessity or of some vital interest to force it to exertion. He spent some years in travelling, generally with sport as an object; and then came his marriage. He had never been quite able afterwards to understand how it had come about; it had been a matter of friendship, of sentiment, of compassion; but there it had been for ten years an accomplished fact, bringing with it a life from which all purpose seemed to be barred."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "He had pursuits; for instance, he occasionally went over to Monte Carlo and gambled mildly, he made annual shooting trips to Algeria or Morocco, and he was continually yachting round the coast; but of work, nothing; of love—nothing!"
+    }
+  ]
+}

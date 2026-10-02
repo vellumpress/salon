@@ -1,0 +1,356 @@
+{
+  "id": "the-corsican-brothers",
+  "title": "The Corsican Brothers",
+  "author": "Alexandre Dumas (tr. Henry Frith)",
+  "year": "1880",
+  "note": "Project Gutenberg 41881 (tr. Henry Frith, per PG). Whole novel, 20 chapters (PG l.65–4519), labelled 'Chapter I' … 'Chapter XX', after the translator's dedication to Henry Irving (l.54–58) as its own front section. The title block, the printer's lines, the transcriber's note and the two inline '[See Transcriber's Note]' tags out. Straight quotes kept as printed; italics kept; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. EN 1880 (PG text: title page 'GEORGE ROUTLEDGE AND SONS … 1880', l.42–46). PG reading-ease 80.9 — no invented Launch rank. Place: Sullacaro, Corsica. Sits: commute / unwind. Host intro: Corsica in 1841, then Paris. A French traveller rides into a hill village scarred by vendetta and is taken in by a widowed mother and her twin sons, bound by a sympathy that crosses the sea. Brisk, charming and only gently uncanny. A heads-up before you start: there is vendetta talk, two pistol duels (not graphic), and a ghost.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Sullacaro, Corsica",
+      "place": "Chapter I · Sullacaro, Corsica",
+      "reentry": "In the beginning of March, 1841, I was travelling in Corsica.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "In the beginning of March, 1841, I was travelling in Corsica."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Nothing is more picturesque and more easy to accomplish than a journey in Corsica. You can embark at Toulon, in twenty hours you will be in Ajaccio, and then in twenty-four hours more you are at Bastia."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Once there you can hire or purchase a horse. If you wish to hire a horse you can do so for five francs a-day; if you purchase one you can have a good animal for one hundred and fifty francs. And don't sneer at the moderate price, for the horse hired or purchased will perform as great feats as the famous Gascon horse which leaped over the Pont Neuf, which neither Prospero nor Nautilus, the heroes of Chantilly and the Champ de Mars could do. He will traverse roads which Balmat himself could not cross without *crampons,* and will go over bridges upon which Auriol would need a balancing pole."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "As for the traveller, all he has to do is to give the horse his head and let him go as he pleases; he does not mind the danger. We may add that with this horse, which can go anywhere, the traveller can accomplish his fifteen leagues a day without stopping to bait."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "From time to time, while the tourist may be halting to examine some ancient castle, built by some old baron or legendary hero, or to sketch a tower built ages ago by the Genoese, the horse will be contented to graze by the road side, or to pluck the mosses from the rocks in the vicinity."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "As to lodging for the night, it is still more simple in Corsica. The traveller having arrived at a village, passes down through the principal street, and making his own choice of the house wherein he will rest, he knocks at the door. An instant after, the master or mistress will appear upon the threshold, invite the traveller to dismount; offer him a share of the family supper and the whole of his own bed, and next morning, when seeing him safely resume his journey, will thank him for the preference he has accorded to his house."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "As for remuneration, such a thing is never hinted at. The master would regard it as an insult if the subject were broached. If, however, the servant happen to be a young girl, one may fitly offer her a coloured handkerchief, with which she can make up a picturesque coiffure for a fête day. If the domestic be a male he will gladly accept a poignard, with which he can kill his enemy, should he meet him."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "There is one thing more to remark, and that is, as sometimes happens, the servants of the house are relatives of the owner, and the former being in reduced circumstances, offer their services to the latter in consideration of board and lodging and a few piastres per month."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "And it must not be supposed that the masters are not well served by their cousins to the fifteenth and sixteenth degree, because the contrary is the case, and the custom is not thought anything of. Corsica is a French Department certainly, but Corsica is very far from being France."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "As for robbers, one never hears of them, yet there are bandits in abundance; but these gentlemen must in no wise be confounded one with another."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "So go without fear to Ajaccio, to Bastia, with a purse full of money hanging to your saddle-bow, and you may traverse the whole island without a shadow of danger, but do not go from Oceana to Levaco, if you happen to have an enemy who has declared the Vendetta against you, for I would not answer for your safety during that short journey of six miles."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Well, then, I was in Corsica, as I have said, at the beginning of the month of March, and I was alone; Jadin having remained at Rome."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "I had come across from Elba, had disembarked at Bastia, and there had purchased a horse at the above-mentioned price."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "I had visited Corte and Ajaccio, and just then I was traversing the province of Sartène."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "On the particular day of which I am about to speak I was riding from Sartène to Sullacaro."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "The day's journey was short, perhaps a dozen leagues, in consequence of detours, and on account of my being obliged to climb the slopes of the mountain chain, which, like a backbone, runs through the island. I had a guide with me, for fear I should lose my way in the maquis."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "It was about five o'clock in the afternoon when we arrived at the summit of the hill, which at the same time overlooks Olmeto and Sullacaro. There we stopped a moment to look about us."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"Where would your Excellency wish to stay the night?\" asked the guide."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "I looked down upon the village, the streets of which appeared almost deserted. Only a few women were visible, and they walked quickly along, and frequently looked cautiously around them."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "As in virtue of the rules of Corsican hospitality, to which I have already referred, it was open to me to choose for my resting place any one of the hundred or hundred and twenty houses of which the village was composed, I therefore carried my eyes from house to house till they lighted upon one which promised comfortable quarters. It was a square mansion, built in a fortified sort of style and machicolated in front of the windows and above the door."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "This was the first time I had seen these domestic fortifications; but I may mention that the province of Sartène is the classic ground of the Vendetta."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"Ah, good!\" said my guide, as he followed the direction of my hand—\"that is the house of Madame Savilia de Franchi. Go on, go on, Signor, you have not made a bad choice, and I can see you do not want for experience in these matters.\""
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "I should note here that in this 86th department of France Italian is universally spoken."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"But,\" I said, \"may it not be inconvenient if I demand hospitality from a lady, for if I understand you rightly, this house belongs to a lady.\""
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"No doubt,\" he replied, with an air of astonishment; \"but what inconvenience does your lordship think you will cause?\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"If the lady be young,\" I replied, moved by a feeling of propriety—or, perhaps, let us say, of Parisian self-respect—\"a night passed under her roof might compromise her.\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "\"Compromise her!\" repeated the guide, endeavouring to probe the meaning of the word I had rendered in Italian with all the emphasis which one would hazard a word in a strange tongue."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "\"Yes, of course,\" I replied, beginning to feel impatient; \"the lady is a widow, I suppose?\""
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"Yes, Excellency.\""
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Well, then, will she receive a young man into her house?\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "In 1841 I was thirty-six years old, or thereabouts, and was entitled to call myself young."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "\"Will she receive a young man!\" exclaimed the guide; \"why, what difference can it make whether you are young or old?\""
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "I saw that I should get no information out of him by this mode of interrogation, so I resumed—"
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"How old is Madame Savilia?\""
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "\"Forty, or nearly so.\""
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "\"Ah,\" I said, replying more to my thoughts than to my guide, \"all the better. She has children, no doubt?\""
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "\"Yes, two sons—fine young men both.\""
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "\"Shall I see them?\""
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "\"You will see one of them—he lives at home.\""
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "\"Where is the other, then?\""
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "\"He lives in Paris.\""
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "\"How old are these sons?\""
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "\"Twenty-one.\""
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "\"What, both?\""
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "\"Yes, they are twins.\""
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "\"What professions do they follow?\""
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "\"The one in Paris is studying law.\""
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "\"And the other?\""
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "\"The other is a Corsican.\""
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "\"Indeed!\" was my reply to this characteristic answer, made in the most matter-of-fact tone. \"Well, now, let us push on for the house of Madame Savilia de Franchi.\""
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "We accordingly resumed our journey, and entered the village about ten minutes afterwards."
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "I now remarked what I had not noticed from the hill, namely, that every house was fortified similarly to Madame Savilia's. Not so completely, perhaps, for that the poverty of the inhabitants could not attain to, but purely and simply with oaken planks, by which the windows were protected, loop-holes only being left for rifle barrels; some apertures were simply bricked up."
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "I asked my guide what he called these loop-holes, and he said they were known as *archères*—a reply which convinced me that they were used anterior to the invention of firearms."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "As we advanced through the streets we were able the more fully to comprehend the profound character of the solitude and sadness of the place."
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "Many houses appeared to have sustained a siege, and the marks of the bullets dotted the walls."
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "From time to time as we proceeded we caught sight of a curious eye flashing upon us from an embrasure; but it was impossible to distinguish whether the spectator were a man or a woman."
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "We at length reached the house which I had indicated to my guide, and which was evidently the most considerable in the village."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "As we approached it more nearly, one thing struck me, and that was, fortified to all outward appearance as it was, it was not so in reality, for there were neither oaken planks, bricks, nor loop-holes, but simple squares of glass, protected at night by wooden shutters."
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "It is true that the shutters showed holes which could only have been made by the passage of a bullet; but they were of old date, and could not have been made within the previous ten years."
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "Scarcely had my guide knocked, when the door was opened, not hesitatingly, nor in a timid manner, but widely, and a valet, or rather I should say a man appeared."
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "It is the livery that makes the valet, and the individual who then opened the door to us wore a velvet waistcoat, trowsers of the same material, and leather gaiters. The breeches were fastened at the waist by a parti-coloured silk sash, from the folds of which protruded the handle of a Spanish knife."
+    },
+    {
+      "id": "sit-0-61",
+      "sceneId": "sit-0",
+      "text": "\"My friend,\" I said, \"is it indiscreet of me, who knows nobody in Sullacaro, to ask hospitality of your mistress?\""
+    },
+    {
+      "id": "sit-0-62",
+      "sceneId": "sit-0",
+      "text": "\"Certainly not, your Excellency,\" he replied; \"the stranger does honour to the house before which he stops.\" \"Maria,\" he continued, turning to a servant, who was standing behind him, \"will you inform Madame Savilia that a French traveller seeks hospitality?\""
+    },
+    {
+      "id": "sit-0-63",
+      "sceneId": "sit-0",
+      "text": "As he finished speaking he came down the eight rough ladder-like steps which led to the entrance door, and took the bridle of my horse."
+    },
+    {
+      "id": "sit-0-64",
+      "sceneId": "sit-0",
+      "text": "I dismounted."
+    },
+    {
+      "id": "sit-0-65",
+      "sceneId": "sit-0",
+      "text": "\"Your Excellency need have no further concern,\" he said; \"all your luggage will be taken to your room.\""
+    },
+    {
+      "id": "sit-0-66",
+      "sceneId": "sit-0",
+      "text": "I profited by this gracious invitation to idleness—one of the most agreeable which can be extended to a traveller."
+    }
+  ]
+}

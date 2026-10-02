@@ -109,6 +109,10 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "irresolute-catherine": { label: "Wye hills near Brecon, Wales", region: "gb" },
     "the-old-room": { label: "Denmark", region: "dk" },
     "the-fur-coat": { label: "Sweden", region: "se" },
+    "the-corsican-brothers": { label: "Sullacaro, Corsica", region: "fr" },
+    "jocelyn": { label: "Mentone & Monte Carlo, the Riviera", region: "fr" },
+    "the-woman-of-knockaloe": { label: "Knockaloe, by Peel, Isle of Man", region: "im" },
+    "the-taking-of-the-redoubt": { label: "Cheverino redoubt", region: "ru" },
     "growth-of-the-soil": { label: "Norway", region: "no" },
     "nada-the-lily": { label: "Zululand", region: "za" },
     "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
@@ -343,4 +347,15 @@ test("former no-place shelf rows now resolve a country chip", () => {
     assert.ok(work, id);
     assert.deepEqual(placeFor(work!), want, id);
   }
+});
+
+test("the Isle of Man has its own key and silhouette, never England", () => {
+  assert.ok(REGION_SHAPES.im?.d, "im shape");
+  const work = shelfWork("the-woman-of-knockaloe");
+  assert.ok(work);
+  assert.deepEqual(placeFor(work!), { label: "Knockaloe, by Peel, Isle of Man", region: "im" });
+  assert.doesNotMatch(placeFor(work!)?.label ?? "", /England/);
+  const redoubt = shelfWork("the-taking-of-the-redoubt");
+  assert.ok(redoubt);
+  assert.deepEqual(placeFor(redoubt!), { label: "Cheverino redoubt", region: "ru" });
 });

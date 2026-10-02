@@ -1,0 +1,271 @@
+{
+  "id": "the-taking-of-the-redoubt",
+  "title": "The Taking of the Redoubt",
+  "author": "Prosper Mérimée (tr. George Burnham Ives)",
+  "year": "1903",
+  "note": "Project Gutenberg 67643 (Prosper Mérimée's Short Stories, tr. George Burnham Ives, per PG). Host-only Rituals seat — \"The Taking of the Redoubt\" only (PG l.2685–2908), from \"A military friend of mine…\" to \"Finished, my boy, but the redoubt is taken!\" and the date line \"1829.\". The printed four-hyphen blanks after 'B' and 'C' set as 'B——' / 'C——'; curly quotes as printed; italics kept. The rest of the volume out. Story dated 1829 (the text's own date line); EN 1903 (PG field 'United States: G. P. Putnam's Sons, 1903.'; 'COPYRIGHT, 1903', l.65). PG reading-ease 79.5 (for the whole volume) — no invented Launch rank. Place: the redoubt of Cheverino (Shevardino, before Borodino, 1812), Russia. Sits: unwind, the evening seat (Host-only; never before-sleep). Host intro: One story for the evening. A young officer, newly joined, remembers his first battle: a red moon rising behind the redoubt, an old soldier's omen, the waiting under cannon fire, and the charge. Sober and unsentimental, one of the classics of French short fiction, and it stops on its last line. A heads-up before you start: there is battle violence, and one graphic sentence about a death.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "The Taking of the Redoubt · Cheverino redoubt",
+      "place": "The Taking of the Redoubt · Cheverino redoubt",
+      "reentry": "A military friend of mine, who died of a fever in Greece a few years ago, told me one day about the first action in which he took part. His story made such an impression on me that I wrote it down fro",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "A military friend of mine, who died of a fever in Greece a few years ago, told me one day about the first action in which he took part. His story made such an impression on me that I wrote it down from memory as soon as I had time. Here it is:"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "I joined the regiment on the fourth of September, in the evening. I found the colonel in camp. He received me rather roughly; but when he had read General B——’s recommendation, his manner changed and he said a few courteous words to me."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "I was presented by him to my captain, who had just returned from a reconnaissance. This captain, with whom I hardly had time to become acquainted, was a tall, dark man, with a harsh, repellent face. He had been a private and had won his epaulets and his cross on the battle-field. His voice, which was hoarse and weak, contrasted strangely with his almost gigantic stature. I was told that he owed that peculiar voice to a bullet which had passed through his lungs at the battle of Jena."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "When he learned that I was fresh from the school at Fontainebleau, he made a wry face and said:"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "“My lieutenant died yesterday.”"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "I understood that he meant to imply: “You ought to take his place, and you are not capable of it.”"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "A sharp retort came to my lips, but I restrained myself."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The moon rose behind the redoubt of Cheverino, about two gunshots from our bivouac. It was large and red, as it usually is when it rises. But on that evening it seemed to me of extraordinary size. For an instant the redoubt stood sharply out in black against the brilliant disk of the moon. It resembled the crater of a volcano at the instant of an eruption."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "An old soldier beside whom I happened to be, remarked upon the colour of the moon."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "“It is very red,” said he; “that’s a sign that it will cost us dear to take that famous redoubt!”"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "I have always been superstitious, and that prophecy, at that particular moment especially, affected me. I lay down, but I could not sleep. I rose and walked about for some time, watching the tremendously long line of camp-fires that covered the heights above the village of Cheverino."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "When I thought that the fresh, sharp night air had cooled my blood sufficiently, I returned to the fire; I wrapped myself carefully in my cloak and closed my eyes, hoping not to open them before dawn. But sleep refused to come. Insensibly my thoughts took a gloomy turn. I said to myself that I had not a friend among the hundred thousand men who covered that plain. If I were wounded, I should be taken to a hospital and treated roughly by ignorant surgeons. All that I had heard of surgical operations came to my mind. My heart beat violently, and I instinctively arranged my handkerchief, and the wallet that I had in my breast pocket, as a sort of cuirass. I was worn out with fatigue, I nodded every moment, and every moment some sinister thought returned with renewed force and roused me with a start."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "But weariness carried the day, and when they beat the reveille, I was sound asleep. We were drawn up in battle array, the roll was called, then we stacked arms, and everything indicated that we were to have a quiet day."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "About three o’clock an aide-de-camp appeared, bringing an order. We were ordered under arms again; our skirmishers spread out over the plain; we followed them slowly, and after about twenty minutes, we saw all the advanced posts of the Russians fall back and return inside the redoubt."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "A battery of artillery came into position at our right, another at our left, but both well in advance of us. They began a very hot fire at the enemy, who replied vigorously, and the redoubt of Cheverino soon disappeared beneath dense clouds of smoke."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Our regiment was almost protected from the Russian fire by a rise in the ground. Their balls, which, indeed, were rarely aimed at us, for they preferred to fire at our gunners, passed over our heads, or, at the worst, spattered us with dirt and small stones."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "As soon as we received the order to advance, my captain looked at me with a close scrutiny which compelled me to run my hand over my budding moustache twice or thrice, as unconcernedly as I could. Indeed, I was not frightened, and the only fear I had was that he should believe that I was frightened. Those harmless cannon-balls helped to maintain me in my heroically calm frame of mind. My self-esteem told me that I was really in danger, as I was at last under the fire of a battery. I was overjoyed to be so entirely at my ease, and I thought of the pleasure I should take in telling of the capture of the redoubt of Cheverino in Madame de B——’s salon on Rue de Provence."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "The colonel passed our company; he spoke to me:"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "“Well, you are going to see some sharp work for your début.”"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "I smiled with an altogether martial air as I brushed my coat sleeve, on which a shot that struck the ground thirty yards away had spattered a little dust."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "It seems that the Russians observed the ill success of their cannon-balls; for they replaced them with shells, which could more easily be made to reach us in the hollow where we were posted. A large piece of one took off my shako and killed a man near me."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "“I congratulate you,” said my captain, as I picked up my shako; “you’re safe now for to-day.”"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "I was acquainted with the military superstition which believes that the axiom, *Non bis in idem*, has the same application on a field of battle as in a court of justice. I proudly replaced my shako on my head."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "“That is making a fellow salute rather unceremoniously,” I said as gaily as I could. That wretched joke was considered first-rate, in view of the circumstances."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "“I congratulate you,” continued the captain; “you will get nothing worse, and you will command a company this evening; for I feel that the oven is being heated for me. Every time that I have been wounded the officer nearest me has been hit by a spent ball; and,” he added in a low tone and almost as if he were ashamed, “their names always began with a P.”"
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "I feigned incredulity; many men would have done the same; many men too would have been, as I was, profoundly impressed by those prophetic words. Conscript as I was, I realised that I could not confide my sensations to any one, and that I must always appear cool and fearless."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "After about half an hour the Russian fire sensibly diminished; thereupon we left our sheltered position to march upon the redoubt."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "Our regiment consisted of three battalions. The second was ordered to turn the redoubt on the side of the entrance; the other two were to make the assault. I was in the third battalion."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "As we came out from behind the species of ridge which had protected us, we were received by several volleys of musketry, which did little damage in our ranks. The whistling of the bullets surprised me; I kept turning my head, and thus induced divers jests on the part of my comrades, who were more familiar with that sound."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "“Take it all in all,” I said to myself, “a battle isn’t such a terrible thing.”"
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "We advanced at the double-quick, preceded by skirmishers; suddenly the Russians gave three hurrahs, three distinct hurrahs, then remained silent and ceased firing."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "“I don’t like this silence,” said my captain; “it bodes us no good.”"
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "I considered that our men were a little too noisy, and I could not forbear making a mental comparison between their tumultuous shouting and the enemy’s impressive silence."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "We speedily reached the foot of the redoubt; the palisades had been shattered and the earth torn up by our balls. The soldiers rushed at these newly made ruins with shouts of “*Vive l’Empereur!*” louder than one would have expected to hear from men who had already shouted so much."
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "I raised my eyes, and I shall never forget the spectacle that I saw. The greater part of the smoke had risen, and hung like a canopy about twenty feet above the redoubt. Through a bluish haze one could see the Russian grenadiers behind their half-destroyed parapet, with arms raised, motionless as statues. It seems to me that I can see now each soldier, with his left eye fastened upon us, the right hidden by the levelled musket. In an embrasure, a few yards away, a man stood beside a cannon, holding a fusee."
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "I shuddered, and I thought that my last hour had come."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "“The dance is going to begin,” cried my captain. “Bonsoir!”"
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "Those were the last words I heard him utter."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "The drums rolled inside the redoubt. I saw all the muskets drop. I closed my eyes, and I heard a most appalling crash, followed by shrieks and groans. I opened my eyes, surprised to find myself still among the living. The redoubt was filled with smoke once more. I was surrounded by dead and wounded. My captain lay at my feet; his head had been shattered by a cannon-ball, and I was covered with his brains and his blood. Of all my company only six men and myself were left on our feet."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "This carnage was succeeded by a moment of stupefaction. The colonel, placing his hat on the point of his sword, was the first to scale the parapet, shouting: “*Vive l’Empereur!*” He was followed instantly by all the survivors. I have a very dim remembrance of what followed. We entered the redoubt; how, I have no idea. We fought hand to hand, amid smoke so dense that we could not see one another. I believe that I struck, for my sabre was all bloody. At last I heard shouts of “Victory!” and as the smoke grew less dense, I saw blood and corpses completely covering the surface of the redoubt. The guns especially were buried beneath piles of bodies. About two hundred men, in the French uniform, were standing about in groups, with no pretence of order, some loading their muskets, others wiping their bayonets. Eleven hundred Russian prisoners were with them."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "The colonel, covered with blood, was lying on a shattered caisson near the ravine. A number of soldiers were bustling about him. I approached."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "“Where is the senior captain?” he asked a sergeant."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "The sergeant shrugged his shoulders most expressively."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "“And the senior lieutenant?”"
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "“Monsieur here, who arrived last night,” said the sergeant, in a perfectly matter-of-fact tone."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "The colonel smiled bitterly."
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "“Well, monsieur,” he said, “you command in chief; order the entrance to the redoubt to be strengthened with these waggons, for the enemy is in force; but General C—— will see that you are supported.”"
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "“Colonel,” I said, “are you severely wounded?”"
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "“Finished, my boy, but the redoubt is taken!”"
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "1829."
+    }
+  ]
+}
