@@ -53,6 +53,7 @@ import {
 } from "@/lib/together-keep";
 import { decodeHostedSit } from "@/lib/hosted-sit";
 import { formatHandle, normalizeHandle } from "@/lib/social";
+import { useReaderDaylight } from "@/lib/use-reader-daylight";
 
 type Overlay =
   | "none"
@@ -154,6 +155,7 @@ export function TbrReader({
   const [inviteHref, setInviteHref] = useState("");
   const [inviteCopied, setInviteCopied] = useState(false);
   const [tick, setTick] = useState(() => Date.now());
+  const daylight = useReaderDaylight();
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const lockUntil = useRef(0);
   const overlayRef = useRef(overlay);
@@ -733,7 +735,11 @@ export function TbrReader({
 
   if (!breath || !scene) {
     return (
-      <div className="frame-screen bg-paper text-ink">
+      <div
+        className={cn("frame-screen reader-frame bg-paper text-ink", daylight.className)}
+        style={daylight.style}
+        data-daylight={daylight.active ? daylight.sample.phase : "off"}
+      >
         <header className="relative z-20 flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/"
@@ -840,10 +846,13 @@ export function TbrReader({
   return (
     <div
       className={cn(
-        "frame-screen bg-paper text-ink",
+        "frame-screen reader-frame bg-paper text-ink",
+        daylight.className,
         together && "together-lock",
         still && overlay === "none" && "still",
       )}
+      style={daylight.style}
+      data-daylight={daylight.active ? daylight.sample.phase : "off"}
     >
       <h1 className="sr-only">{work.title}</h1>
       {together && pair ? (
@@ -980,6 +989,16 @@ export function TbrReader({
                   Close
                 </button>
               </label>
+              <button
+                type="button"
+                role="switch"
+                aria-checked={daylight.enabled}
+                onClick={() => daylight.setEnabled(!daylight.enabled)}
+                className="daylight-switch"
+              >
+                <span>Daylight colors</span>
+                <span aria-hidden="true">{daylight.enabled ? "On" : "Off"}</span>
+              </button>
             </div>
           ) : null}
           <footer
@@ -1021,7 +1040,7 @@ export function TbrReader({
               </button>
             )}
               {kept.length > 0 ? (
-                <div className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto bg-paper px-2">
+                <div className="kept-dots flex min-w-0 flex-1 items-center gap-1 overflow-x-auto bg-paper px-2">
                   {kept.map((id) => (
                     <button
                       key={id}

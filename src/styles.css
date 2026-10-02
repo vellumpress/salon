@@ -2708,3 +2708,208 @@ html.together-compose .chat-field {
 .board-alive .adapted-lane > *:nth-child(5) {
   animation-delay: 0.32s;
 }
+
+/* Reader daylight — local clock colors on the reading page only.
+   Brand cells (ink Home, yellow Rituals, red Together) keep their tokens.
+   Text color snaps so a blend never passes through an unreadable gray.
+   Background eases only after the first paint, and only while daylight stays on. */
+@property --reader-bg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f3f1eb;
+}
+
+@property --reader-keep {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #c41230;
+}
+
+@property --reader-sand {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #e2c200;
+}
+
+.reader-daylight.frame-screen,
+.reader-daylight .reading-pane,
+.reader-daylight .nav-reveal,
+.reader-daylight .reader-glass,
+.reader-daylight .sand-cue,
+.reader-daylight .veil,
+.reader-daylight .bg-paper {
+  background-color: var(--reader-bg);
+  color: var(--reader-ink);
+}
+
+.reader-daylight-motion.frame-screen,
+.reader-daylight-motion .reading-pane,
+.reader-daylight-motion .nav-reveal,
+.reader-daylight-motion .reader-glass,
+.reader-daylight-motion .sand-cue,
+.reader-daylight-motion .veil,
+.reader-daylight-motion .bg-paper,
+.reader-daylight-motion .sit-preset,
+.reader-daylight-motion .nav-reveal-btn,
+.reader-daylight-motion .sand-cue-btn {
+  transition:
+    background-color 20s linear,
+    border-color 20s linear;
+}
+
+.reader-daylight .breath-now,
+.reader-daylight .breath-now em,
+.reader-daylight .look-line,
+.reader-daylight .look-line em,
+.reader-daylight .veil .italic,
+.reader-daylight .palimpsest,
+.reader-daylight .nav-reveal,
+.reader-daylight .nav-reveal .text-ink,
+.reader-daylight .nav-reveal input,
+.reader-daylight .daylight-switch {
+  color: var(--reader-ink);
+}
+
+.reader-daylight .text-muted,
+.reader-daylight .veil-note,
+.reader-daylight .veil-preface-note,
+.reader-daylight .nav-reveal input::placeholder,
+.reader-daylight .chat-aside {
+  color: var(--reader-muted);
+}
+
+.reader-daylight .nav-reveal input::placeholder {
+  -webkit-text-fill-color: var(--reader-muted);
+}
+
+.reader-daylight .breath-now.border-red {
+  border-left-color: var(--reader-keep);
+}
+
+.reader-daylight .kept-dots .bg-red {
+  background-color: var(--reader-keep);
+}
+
+.reader-daylight .kept-dots .bg-ink {
+  background-color: var(--reader-ink);
+}
+
+.reader-daylight .bg-red.text-paper {
+  box-shadow: inset 0 0 0 1px var(--reader-ink);
+}
+
+.reader-daylight .reader-glass .fill-yellow {
+  fill: var(--reader-sand);
+}
+
+.reader-daylight-motion .reader-glass .fill-yellow {
+  transition: fill 20s linear;
+}
+
+.reader-daylight .border-ink,
+.reader-daylight .veil-field,
+.reader-daylight .veil-room,
+.reader-daylight .sand-cue {
+  border-color: var(--reader-rule);
+}
+
+.reader-daylight .sit-presets,
+.reader-daylight .nav-reveal-nav,
+.reader-daylight .sand-cue-actions {
+  background: var(--reader-rule);
+  border-color: var(--reader-rule);
+}
+
+.reader-daylight .sit-preset,
+.reader-daylight .nav-reveal-btn,
+.reader-daylight .sand-cue-btn {
+  background: var(--reader-bg);
+  color: var(--reader-ink);
+}
+
+.reader-daylight .sit-preset-on,
+.reader-daylight .nav-reveal-btn-ink,
+.reader-daylight .sand-cue-btn-again,
+.reader-daylight .veil-action-full {
+  background: var(--reader-ink);
+  color: var(--reader-bg);
+}
+
+.reader-daylight .bg-paper-deep {
+  background-color: color-mix(in srgb, var(--reader-ink) 16%, var(--reader-bg));
+}
+
+.reader-daylight .breath-slot.overflows::-webkit-scrollbar-thumb {
+  background: var(--reader-ink);
+}
+
+.reader-daylight .chat-compose,
+html.together-compose.together-kb .reader-daylight .chat-compose {
+  background-color: var(--reader-bg);
+  border-top-color: var(--reader-rule);
+}
+
+.reader-daylight .chat-field,
+.reader-daylight .chat-field:focus,
+.reader-daylight .chat-field:focus-visible,
+html.together-compose.together-kb .reader-daylight .chat-field {
+  background-color: var(--reader-bg);
+  color: var(--reader-ink);
+  caret-color: var(--reader-ink);
+  -webkit-text-fill-color: var(--reader-ink);
+}
+
+.reader-daylight .chat-field::placeholder {
+  color: var(--reader-muted);
+  -webkit-text-fill-color: var(--reader-muted);
+}
+
+.reader-daylight .chat-field:-webkit-autofill,
+.reader-daylight .chat-field:-webkit-autofill:hover,
+.reader-daylight .chat-field:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--reader-ink);
+  caret-color: var(--reader-ink);
+  box-shadow: 0 0 0 1000px var(--reader-bg) inset;
+}
+
+.reader-daylight .chat-send {
+  background-color: var(--reader-ink);
+  color: var(--reader-bg);
+  -webkit-text-fill-color: var(--reader-bg);
+  border-left-color: var(--reader-rule);
+}
+
+.reader-daylight .chat-line {
+  color: var(--reader-ink);
+}
+
+.daylight-switch {
+  display: flex;
+  width: 100%;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border: 0;
+  border-top: 1px solid var(--color-ink);
+  background: transparent;
+  padding: 0.35rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: var(--text-kicker);
+  font-weight: 400;
+  letter-spacing: var(--tracking-kicker);
+  line-height: var(--text-kicker--line-height);
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.reader-daylight .daylight-switch {
+  border-top-color: var(--reader-rule);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reader-frame,
+  .reader-frame * {
+    transition: none !important;
+  }
+}
