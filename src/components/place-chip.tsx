@@ -1,4 +1,4 @@
-import { placeFor, placeForId, type PlaceRef, type WorkPlace } from "@/lib/catalog/places";
+import { chipOnlyLabel, placeFor, placeForId, type PlaceRef, type WorkPlace } from "@/lib/catalog/places";
 import { REGION_SHAPES, REGION_TONE, type PlaceRegion } from "@/lib/catalog/region-shapes";
 import { cn } from "@/lib/utils";
 
@@ -38,7 +38,16 @@ export function PlaceChip({
   className?: string;
 }) {
   const resolved = place ?? (work ? placeFor(work) : workId ? placeForId(workId) : null);
-  if (!resolved) return null;
+  if (!resolved) {
+    // chip-only setting (no country key, no silhouette): the printed label alone
+    const label = place === undefined ? chipOnlyLabel(work?.id ?? workId) : null;
+    if (!label) return null;
+    return (
+      <span className={cn("place-chip", className)}>
+        <span className="place-chip-label">{label}</span>
+      </span>
+    );
+  }
   const accent = tone === "accent" ? REGION_TONE[resolved.region] : null;
   return (
     <span

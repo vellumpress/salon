@@ -637,6 +637,12 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: there are slave raids, and one line about a living slave built into a pillar.",
   "his-dead-wifes-photograph":
     "A heads-up before you start: a wife and baby die in childbirth.",
+  "the-face-in-the-abyss":
+    "A heads-up before you start: three of the narrator's companions die, one man is strangled, and a child is threatened with a whip. The book also uses the period terms 'half-breeds' and 'Indian hell-brew', left as printed.",
+  "mary-magdalen":
+    "A heads-up before you start: chariot drivers are killed in the opening race, John the Baptist is later beheaded, and the crucifixion is told. One early line calls a city crowd a 'mongrel rabble', left as printed.",
+  "the-hoop":
+    "A heads-up before you start: the old man at the heart of this story dies at the end, quietly.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
@@ -1276,7 +1282,12 @@ export function blurbFor(work: ShelfWork | string): string {
   const item = typeof work === "string" ? shelfWork(work) : work;
   if (!item) return "";
   const curated = BLURBS[item.id];
-  if (curated) return oneSentence(curated);
+  if (curated) {
+    const copy = curated.replace(/\s+/g, " ").trim();
+    // Content notes are the card, including a second sentence ("left as printed").
+    if (/^A heads-up before you start\b/.test(copy)) return copy;
+    return oneSentence(copy);
+  }
   const fromPitch = oneSentence(PITCHES[item.id] ?? "");
   if (fromPitch) return fromPitch;
   const fromRitual = oneSentence(RITUAL_PITCHES[item.id] ?? "");

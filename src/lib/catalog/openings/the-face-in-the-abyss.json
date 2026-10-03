@@ -1,0 +1,121 @@
+{
+  "id": "the-face-in-the-abyss",
+  "title": "The Face in the Abyss",
+  "author": "A. Merritt",
+  "year": "1923",
+  "note": "Project Gutenberg 79106. Whole novelette, 9 chapters (PG l.79–3977), labelled 'Chapter I · Out of the haunted hills' … 'Chapter IX · \"I am going back to her!\"' (sentence case). The magazine title block and the editors' Introduction (Argosy-Allstory Weekly) out; the one printed break (l.3884) kept. Straight quotes kept as printed; Spanish words in italics, stops outside them; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. EN 1923 (PG field 'New York, NY: The Frank A. Munsey Company, 1923'). PG gives no reading-ease score for this text — none cited, no invented Launch rank. Place: Chupan, in the Andes of Peru. Sits: unwind. Host intro: The high Andes, in the 1920s. At an inn in the village of Chupan a traveller nurses a fevered American, Nicholas Graydon, and hears how he and three treasure-hunters followed an Inca trail into a hidden valley ruled by the Snake Mother, where a gold-spear girl named Suarra and a vast stone face are waiting. A fast, colourful lost-world romance from the pulp magazines. A heads-up before you start: Graydon's three companions die, there is a strangling attack, a murder is planned, and a child is threatened.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Out of the haunted hills · Chupan",
+      "place": "Chapter I · Out of the haunted hills · Chupan",
+      "reentry": "It has been just three years since I met Nicholas Graydon in the little Andean village of Chupan, high on the eastern slopes of the Peruvian uplands. I had stopped there to renew my supplies, expectin",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "It has been just three years since I met Nicholas Graydon in the little Andean village of Chupan, high on the eastern slopes of the Peruvian uplands. I had stopped there to renew my supplies, expecting to stay not more than a day or two. But after my *arrieros* had unlimbered my luggage from the two burros, and I entered the unusually clean and commodious *posada*, its keeper told me that another North American was stopping there."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "He would be very glad to see me, said the innkeeper, since he was very ill and there was no other *Americanos* in the hamlet. Yes, he was so ill that he was, to tell me all the truth, certain to die, and it would beyond doubt comfort him much to have a fellow countryman with him when that sad moment came. That is, he added, if he were able to recognize a fellow countryman, since all the time the *señor* had been at the *posada* he had been out of his mind with fever, and would probably pass away so."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Then with a curiously intense anxiety he implored me to stay on until death did come; a matter, he assured me, that could be one of only a few days—maybe hours."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "I bluntly asked him whether his desire for me to remain was through solicitude for my ailing countryman or through fear for himself. And after a little hesitation he answered that it was both. The *señor* had come to the village a week before, with one burro and neither guides nor *arrieros*. He had been very weak, as though from privations and long journeying. But weaker far from a wound on his neck which had become badly infected. The wound seemed to have been made by either an arrow or a spear. The *señor* had been taken care of as well as the limited knowledge of the *cura* and himself permitted. His burro had been looked after and his saddlebags kept scrupulously closed. But I could understand that questions might be raised after the *señor's* death. If I remained I could report to the authorities that everything possible had been done for the *señor's* comfort and testify that none in Chupan was responsible for his injuries."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "This did not sound very convincing to me, and I said so. Then the worthy innkeeper revealed what actually was in his mind. The *señor*, he said, had spoken in his ravings, of dreadful things, things both accursed and devilish. What were they? Well—he crossed himself—if I remained I would no doubt hear for myself. But they had even greatly disturbed the good *cura*, despite that he was under the direct protection of God. The *señor* had come, so his ravings indicated, from a haunted place—no less a place, the innkeeper whispered crossing himself again, than the shunned Cordillera de Carabaya, which every one knew was filled with evil spirits. Yes, evil spirits which would not lightly give up any one who had once been in their power!"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "And, in fine, the idea seemed to be that some of these demons of the Cordillera—about which, as a matter of fact, I had heard some strange tales—might come at any time for the sick man. If they did, they would be more apt to wreak their fury on one of the *señor's* own countrymen—especially if he was in the same room. The keeper of the *posada* did not put it that way, of course; he said that one of his own people was better qualified to protect the *señor* in such case than any strangers were. Nevertheless the theory plainly was that if I stayed I would act as a lightning rod for any levin of hell that might strike!"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "I went to the room of the sick man. At first glance I could see that here was no *anderine*, no mountain vagabond. Neither fever nor scrub beard could hide the fineness, the sensitivity, the intelligence of the face on which I looked. He was, I judged, about thirty, and he was in ill case indeed. His temperature showed 105 point 6. At the moment he was in delirium."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "My first shock of surprise came when I examined his wound. It seemed to me more like the stab of some great bird beak than the work of spear or arrow. It was a puncture—or better, perhaps, a punch—clear through the muscles of the back and left shoulder and base of the neck. It had missed the arteries of the last by the narrowest of margins. I knew of no bird which could make such a wound as this, yet the closer I looked and probed the more sure I was that it had been inflicted by no weapon of man."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "That night, after I had arranged my own matters and had him sleeping under a hypodermic, I opened up his saddlebags. Papers in them showed his name to be Nicholas Graydon, a mining engineer, a graduate of the Harvard School of Mines, his birthplace, Philadelphia. There was a diary that revealed so much of him truly likable that had I not already made up my mind to stop on with him it would have impelled me to do so. Its last entry was about a month before and ran:"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "Two weeks now since our *arrieros* deserted us, and we seem to be pretty thoroughly lost. Effects upon the three are curious. Sterrett manages to keep himself evenly drunk all the time. That spare burro of his must be loaded with nothing but that Indian hell-brew. Dancre is moody and sullen. Soames seems to have developed a morbid suspicion of all of us. Strange how the wilderness, the jungle, the desert, bring out the latent man in all of us. In Quito none of the three was half bad. But now—well, the luckiest thing for me will be for us to find no treasure. If we do, my throat will probably be the first to be cut."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Further down in the bag were two parcels, each most carefully and securely wrapped. Opening the first I found a long black feather oddly marked with white. I did not recognize the plume as belonging to any bird I knew. Its shaft was inlaid with little bands of gold, altogether a curiously delicate bit of goldsmith's work."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "But the contents of the second package made me gasp with amazement. It was a golden bracelet, clearly exceedingly ancient, the band an inch broad and expanding into an oval disk perhaps three inches long by two wide. That disk held in high relief the most extraordinary bit of carving I had ever seen. Four monsters held on uplifted paws, a bowl on which lay coiled a serpent with a woman's face and woman's breasts. Nor had I ever beheld such suggestion of united wisdom and weirdness as the maker had stamped upon the snake woman's face."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Yet it was not that which called forth the full measure of my wonder; no. There are certain pictures, certain sculptures, certain works of art which carry to their beholders conviction that no fantasy, no imagination, went into their making and that they are careful, accurate copies of something seen by those who made them. This bit of golden carving carried that conviction."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "The four monsters which held up the snake woman were—dinosaurs!"
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "There was no mistaking them. I had examined too many of the reconstructions made by scientists from the fossil bones of these gigantic, monstrous reptilian creatures to be in error. But these giants were supposed to have died off millions of years before man first appeared on earth! Yet here they were, carved with such fidelity to detail, such impress of photographic accuracy, that it was impossible to believe that the ancient goldsmith who made this thing had not had before him living models!"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Marveling, I held the bracelet closer to the light and as I did so I thought I heard far away in the blackness of the mountains and high in air a sound like a tiny bugle. In that note was something profoundly, alienly weird. I went to the window and listened, but the sound did not come again. I turned to find the eyes of Graydon opened and regarding me. For a moment he had slipped from the thrall of the fever—and the thought came to me that it had been that elfin bugling which had awakened him."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "It was six weeks before I had Graydon well out of danger. And in that time he had told me bit by bit that well nigh incredible experience of his in the haunted hills of the Cordillera de Carabaya and what it was that had sent him so far down into the valley of the shadow."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Three years it has been since then. Three years and I have heard nothing of him. Three years and he has not returned from his journey back to the Cordillera de Carabaya where he went to seek mystery, ancient beyond all memory of man, he believed was hidden there. But more than that—to seek Suarra."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"If you don't hear from me in three years, tell the story and let the people who knew me know what became of me,\" he said, as I left him at the beginning of that strange trail he had determined to retrace."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "And so I tell it, reconstructing it from his reticences as well as his confidences, since only so may a full measure of judgment of that story be gained."
+    }
+  ]
+}

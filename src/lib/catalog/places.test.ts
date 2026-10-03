@@ -5,7 +5,7 @@ import { ADAPTED_BY_SALON_IDS, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { RITUAL_LANES } from "./rituals.ts";
 import { SHELF, shelfWork } from "./shelf.ts";
 import { REGION_SHAPES } from "./region-shapes.ts";
-import { placeFor, placeForId, surfacedPlaceWorkIds } from "./places.ts";
+import { chipOnlyLabel, CHIP_ONLY_PLACE, placeFor, placeForId, surfacedPlaceWorkIds } from "./places.ts";
 
 test("named settings keep reader-friendly labels and real regions", () => {
   const expect = {
@@ -117,6 +117,8 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "wang-the-ninth": { label: "Ten Li Hamlet", region: "cn" },
     "garram-the-hunter": { label: "the Hills and the Plains", region: "ng" },
     "his-dead-wifes-photograph": { label: "India", region: "in" },
+    "the-face-in-the-abyss": { label: "Chupan", region: "pe" },
+    "the-hoop": { label: "Russia", region: "ru" },
     "growth-of-the-soil": { label: "Norway", region: "no" },
     "nada-the-lily": { label: "Zululand", region: "za" },
     "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
@@ -211,7 +213,9 @@ test("Locked recommend, Next, and ritual-lane works all resolve a place with a s
       continue;
     }
     const place = placeFor(work);
-    if (!place) missing.push(id);
+    if (!place) {
+      if (!chipOnlyLabel(id)) missing.push(id);
+    }
     else if (!REGION_SHAPES[place.region]) shapeless.push(`${id}=${place.region}`);
   }
   assert.deepEqual(missing, [], `missing place: ${missing.join("; ")}`);
@@ -300,8 +304,9 @@ test("every shelf work resolves a place with a silhouette", () => {
   const shapeless: string[] = [];
   for (const work of SHELF) {
     const place = placeFor(work);
-    if (!place) missing.push(`${work.id} (${work.author}, ${work.language})`);
-    else if (!REGION_SHAPES[place.region]) shapeless.push(`${work.id}=${place.region}`);
+    if (!place) {
+      if (!chipOnlyLabel(work.id)) missing.push(`${work.id} (${work.author}, ${work.language})`);
+    } else if (!REGION_SHAPES[place.region]) shapeless.push(`${work.id}=${place.region}`);
   }
   assert.deepEqual(missing, [], `missing place: ${missing.join("; ")}`);
   assert.deepEqual(shapeless, [], `no silhouette: ${shapeless.join("; ")}`);
@@ -378,4 +383,25 @@ test("Nigeria has its own key and silhouette; South Africa, China and India reus
   const photo = shelfWork("his-dead-wifes-photograph");
   assert.ok(photo);
   assert.deepEqual(placeFor(photo!), { label: "India", region: "in" });
+});
+
+test("POST-#225 places reuse Peru and Russia; no new region key", () => {
+  assert.ok(REGION_SHAPES.pe?.d, "pe shape");
+  assert.ok(REGION_SHAPES.ru?.d, "ru shape");
+  const face = shelfWork("the-face-in-the-abyss");
+  assert.ok(face);
+  assert.deepEqual(placeFor(face!), { label: "Chupan", region: "pe" });
+  const hoop = shelfWork("the-hoop");
+  assert.ok(hoop);
+  assert.deepEqual(placeFor(hoop!), { label: "Russia", region: "ru" });
+});
+
+test("chip-only settings carry a label but no country key and no silhouette", () => {
+  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee" });
+  const mary = shelfWork("mary-magdalen");
+  assert.ok(mary);
+  assert.equal(placeFor(mary!), null);
+  assert.equal(chipOnlyLabel("mary-magdalen"), "Tiberias, Galilee");
+  assert.equal(chipOnlyLabel("the-face-in-the-abyss"), null);
+  for (const id of Object.keys(CHIP_ONLY_PLACE)) assert.ok(shelfWork(id), id);
 });

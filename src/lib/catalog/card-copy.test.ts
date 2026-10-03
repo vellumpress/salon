@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { SHELF } from "./shelf.ts";
 import { LOCAL_WORKS } from "./full-pdf.ts";
 import { countryFor, isCityHubLabel } from "./countries.ts";
+import { chipOnlyLabel } from "./places.ts";
 import { blurbFor, sentenceCount } from "./blurbs.ts";
 import { isBoundLocal } from "./en-rights.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
@@ -68,7 +69,9 @@ test("every shelf work has a country that is not a map city hub", () => {
   const cities: string[] = [];
   for (const work of SHELF) {
     const country = countryFor(work);
-    if (!country) missing.push(`${work.id} (${work.author}, ${work.language})`);
+    if (!country) {
+      if (!chipOnlyLabel(work.id)) missing.push(`${work.id} (${work.author}, ${work.language})`);
+    }
     else if (isCityHubLabel(country)) cities.push(`${work.id}=${country}`);
   }
   assert.deepEqual(missing, [], `missing country: ${missing.join("; ")}`);
@@ -202,6 +205,8 @@ test("known origin overrides", () => {
     "wang-the-ninth": "China",
     "garram-the-hunter": "Nigeria",
     "his-dead-wifes-photograph": "India",
+    "the-face-in-the-abyss": "Peru",
+    "the-hoop": "Russia",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
@@ -224,8 +229,10 @@ test("every local homepage work has a one-sentence blurb", () => {
   const multi: string[] = [];
   for (const work of LOCAL_WORKS) {
     const blurb = blurbFor(work);
+    const sentences = sentenceCount(blurb);
+    const headsUp = /^A heads-up before you start\b/.test(blurb) && sentences <= 2;
     if (!blurb) missing.push(work.id);
-    else if (sentenceCount(blurb) !== 1) multi.push(`${work.id}: ${blurb}`);
+    else if (sentences !== 1 && !headsUp) multi.push(`${work.id}: ${blurb}`);
   }
   assert.deepEqual(missing, [], `missing blurb: ${missing.join("; ")}`);
   assert.deepEqual(multi, [], `not one sentence: ${multi.join(" | ")}`);

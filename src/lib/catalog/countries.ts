@@ -728,6 +728,8 @@ const WORK_COUNTRY: Record<string, string> = {
   "wang-the-ninth": "China",
   "garram-the-hunter": "Nigeria",
   "his-dead-wifes-photograph": "India",
+  "the-face-in-the-abyss": "Peru",
+  "the-hoop": "Russia",
   "my-antonia": "United States",
   "look-back-on-happiness": "Norway",
   "father-of-yoto": "United Kingdom",
