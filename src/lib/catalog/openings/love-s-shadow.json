@@ -1,0 +1,306 @@
+{
+  "id": "love-s-shadow",
+  "title": "Love's Shadow",
+  "author": "Ada Leverson",
+  "year": "1908",
+  "note": "Project Gutenberg 9786. Whole novel, 39 chapters (PG l.73–7978), labelled 'Chapter I · Hyacinth' … 'Chapter XXXIX · The Solution' (the printed titles), after the Shakespeare epigraph (l.63–68) as its own front section. The title page, the series line and the illustration tag out. Straight quotes kept as printed; italics kept, stops outside them; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. EN 1908 (text: 'First Published London, 1908.', l.50). PG reading-ease 85.0 — no invented Launch rank. Place: Knightsbridge, London. Sits: unwind. Host intro: Edwardian London. In a very new, very small, very white flat in Knightsbridge, Edith Ottley humours her fussy, self-important husband Bruce over breakfast, while her friend Hyacinth Verney, rich, lovely and an orphan, is in love with a young man who may not want to be caught. Ada Leverson's quick, dry comedy of marriage and manners, told almost entirely in talk. A heads-up before you start: there are no deaths on the page; one later chapter describes a fancy-dress costume with a period slur.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Hyacinth · Knightsbridge, London",
+      "place": "Chapter I · Hyacinth · Knightsbridge, London",
+      "reentry": "'There's only one thing I must really implore you, Edith,' said Bruce anxiously. '*Don't* make me late at the office!'",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "'There's only one thing I must really implore you, Edith,' said Bruce anxiously. '*Don't* make me late at the office!'"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "'Certainly not, Bruce,' answered Edith sedately. She was seated opposite her husband at breakfast in a very new, very small, very white flat in Knightsbridge—exactly like thousands of other new, small, white flats. She was young and pretty, but not obvious. One might suppose that she was more subtle than was shown by her usual expression, which was merely cheerful and intelligent."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "'Now I have to write that letter before I go,' Bruce exclaimed, starting up and looking at her reproachfully. 'Why didn't I write it last night?'"
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Edith hadn't the slightest idea, as she had heard nothing of the letter before, but, in the course of three years, she had learnt that it saved time to accept trifling injustices. So she looked guilty and a little remorseful. He magnanimously forgave her, and began to write the letter at a neat white writing-table."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "'How many g's are there in \"Raggett\"?' he asked suspiciously."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "She didn't answer, apparently overtaken by a sudden fit of absence of mind."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "'Only one, of course. How absurd you are!' said her husband, laughing, as he finished the letter and came back to the table."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "She poured out more coffee."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "'It's a curious thing,' he went on in a tone of impartial regret, 'that, with all the fuss about modern culture and higher education nowadays, girls are not even taught to spell!'"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "'Yes, isn't it? But even if I had been taught, it might not have been much use. I might just not have been taught to spell \"Raggett\". It's a name, isn't it?'"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "'It's a very well-known name,' said Bruce."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "'I daresay it is, but I don't know it. Would you like to see the boy before you go?'"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "'What a question! I always like to see the boy. But you know perfectly well I haven't time this morning.'"
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "'Very well, dear. You can see him this afternoon.'"
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "'Why do you say that? You know I'm going golfing with Goldthorpe! It really is hard, Edith, when a man has to work so much that he has scarcely any time for his wife and child.'"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "She looked sympathetic."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "'What are you doing today?' he asked."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "'Hyacinth's coming to fetch me for a drive in the motor.'"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "His face brightened. He said kindly, 'I *am* so glad, darling, that you have such a delightful friend—when I can't be with you. I admire Hyacinth very much, in every way. She seems devoted to you, too, which is really very nice of her. What I mean to say is, that in her position she might know anybody. You see my point?'"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "'Quite.'"
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "'How did you meet her originally?'"
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "'We were school-friends.'"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "'She's such a lovely creature; I wonder she doesn't marry.'"
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "'Yes, but she has to find someone else whom *she* thinks a lovely creature, too.'"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "'Edith, dear.'"
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "'Yes, Bruce.'"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "'I wish you wouldn't snap me up like that. Oh, I know you don't mean it, but it's growing on you, rather.'"
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "She tried to look serious, and said gently, 'Is it, really? I am sorry.'"
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "'You don't mind me telling you of it, do you?'"
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "'Not at all. I'm afraid you will be late, Bruce.'"
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "He started up and hurried away, reminding Edith that dinner was to be at eight. They parted with affectionate smiles."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "When he had gone down in the lift, Edith took an inextensive walk through the entire flat, going into each room, and looking at herself in every looking-glass. She appeared to like herself best in the dining-room mirror, for she returned, stared into it rather gravely for some little time, and then said to herself: 'Yes, I'm beginning to look bored.'"
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "Then she rang the bell, and the nurse brought in a pretty little boy of nearly two, Huffily dressed in white, who was excited at the prospect of his great morning treat—going down in the lift. Speaking of him with some formality as Master Archie, she asked the nurse a few questions, which she mistakenly supposed gave that personage the impression that she knew all that there was to be known about children. When she was alone with him for a minute she rushed at him impulsively, saying, privately, 'Heavenly pet! Divine angel! Duck!' in return for which he pulled her hair down and scratched her face with a small empty Noah's Ark that he was taking out with him for purposes of his own."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "When he had gone she did her hair up again in a different way—parted in the middle. It was very pretty, wavy, fair hair, and she had small, regular features, so the new way suited her very well. Then she said again—"
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "'Yes, if it were not for Hyacinth I should soon look bored to death!'"
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "Hyacinth Verney was the romance of Edith's life. She also provided a good deal of romance in the lives of several other people. Her position was unusual, and her personality fascinating. She had no parents, was an heiress, and lived alone with a companion in a quaint little house just out of Berkeley Square, with a large studio, that was never used for painting. She had such an extraordinary natural gift for making people of both sexes fond of her, that it would have been difficult to say which, of all the persons who loved her, showed the most intense devotion in the most immoderate way. Probably her cousin and guardian, Sir Charles Cannon, and her companion, Anne Yeo, spent more thought and time in her service than did anybody else. Edith's imagination had been fired in their school-days by her friend's beauty and cleverness, and by the fact that she had a guardian, like a book. Then Hyacinth had come out and gone in for music, for painting, and for various other arts and pursuits of an absorbing character. She had hardly any acquaintances except her relations, but possessed an enormously large number of extremely intimate friends—a characteristic that had remained to her from her childhood."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "Hyacinth's ideal of society was to have no padding, so that most of the members of her circle were types. Still, as she had a perfect passion for entertaining, there remained, of course, a residue; distant elderly connections with well-sounding names (as ballast), and a few vague hangers-on; several rather dull celebrities, some merely pretty and well-dressed women, and a steadily increasing number of good-looking young men. Hyacinth was fond of decoration."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "As she frankly admitted, she had rather fallen back on Edith, finding her, after many experiments, the most agreeable of friends, chiefly because in their intercourses everything was always taken for granted. Like sisters, they understood one another without explanation—*a demi-mot*."
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "While Edith waited impatiently in the hall of the flat, Anne Yeo, her unacknowledged rival in Hyacinth's affections, was doing needlework in the window-seat of the studio, and watching Hyacinth, who, dressed to go out, was walking up and down the room. With a rather wooden face, high cheek-bones, a tall, thin figure, and no expression, Anne might have been any age; but she was not. She made every effort to look quite forty so as to appear more suitable as a chaperone, but was in reality barely thirty. She was thinking, as she often thought, that Hyacinth looked too romantic for everyday life. When they had travelled together this fact had been rather a nuisance."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "'Why, when you call at the Stores to order groceries, must you look as if you were going to elope?' she asked dryly. 'In an ordinary motorveil you have the air of hastening to some mysterious appointment.'"
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "'But I'm only going to fetch Edith Ottley for a drive,' said Hyacinth. 'How bored she must get with her little Foreign Office clerk! The way he takes his authority as a husband seriously is pathetic. He hasn't the faintest idea the girl is cleverer than he is.'"
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "'You'd far better leave her alone, and not point it out,' said Anne. 'You're always bothering about these little Ottleys now. But you've been very restless lately. Whenever you try to do people good, and especially when you motor so much and so fast, I recognise the symptoms. It's coming on again, and you're trying to get away from it.'"
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "'Don't say that. I'm never going to care about anyone again,' said Hyacinth."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "'You don't know it, but when you're not in love you're not yourself,' Anne continued. 'It's all you live for.'"
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "'Oh, Anne!'"
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "'It's quite true. It's nearly three months since you—had an attack. Blair was the last. Now you're beginning to take the same sort of interest in Cecil Reeve.'"
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "'How mistaken you are, Anne! I don't take at all the same interest in him. It's a totally different thing. I don't really even like him.'"
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "'You wouldn't go out today if you were expecting him.'"
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "'Yes, but I'm not... and he doesn't care two straws about me. Once he said he never worshipped in a crowded temple!'"
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "'It's a curious coincidence that ever since then you've been out to everyone else,' said Anne."
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "'I don't really like him—so very much. When he *does* smile, of course it's rather nice. Why does he hate me?'"
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "'I can't think,' said Anne."
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "'He doesn't hate me! How can you say so?' cried Hyacinth."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "'Doesn't he?'"
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "'Perhaps it's because he thinks I look Spanish. He may disapprove of looking Spanish,' suggested Hyacinth."
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "'Very likely.'"
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "Hyacinth laughed, kissed her, and went out. Anne followed her graceful figure with disapproving, admiring eyes."
+    }
+  ]
+}

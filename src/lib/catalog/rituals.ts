@@ -591,6 +591,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `“Three to one on Scarlet!” Chapter I — the chariot races in the new circus at Tiberias, Herod Antipas and Herodias in the tribune, Mary of Magdala admired from every tier, and Judas watching her. The first sit is Chapter I whole, ending on Judas's aside: “…it would be the birthday of my life.” A heads-up before you start: chariot drivers are killed in the opening race, John the Baptist is later beheaded, and the crucifixion is told. One early line calls a city crowd a 'mongrel rabble', left as printed. Edgar Saltus; the year is 1891, from the copyright line. Ten chapters. Curly quotes stay as printed. The Gospel story told from the court of Antipas and the house at Magdala, jewelled, sardonic and adult; it follows Mary to the cross and the empty tomb. Soft Saltus, carefully. Soft Tiberias, carefully. Galilee is primary. PG reading-ease 81.5 is easy. No score is invented for this sit.`,
   "the-hoop":
     `A woman was taking her morning stroll in a lonely suburban street; a boy of four was with her. This sit is “The Hoop” only — an old factory hand, a small boy's bright new hoop, and an old barrel hoop played with in secret in the woods. The sit is the whole story, in seven short sections, ending “…his beloved mother had followed him with her eyes.” A heads-up before you start: the old man at the heart of this story dies at the end, quietly. Fyodor Sologub, in John Cournos's English, from The Old House and Other Tales; the year is 1916. One story this sit. Tender and quiet, for the evening rather than for sleep. Soft Sologub, carefully. Russia is primary. PG reading-ease 83.5 is for the whole volume. No score is invented for this sit.`,
+  "love-s-shadow":
+    `'There's only one thing I must really implore you, Edith,' said Bruce anxiously. 'Don't make me late at the office!' Chapter I — breakfast in a very new, very small, very white flat in Knightsbridge, Bruce Ottley fussing over a letter and his spelling while Edith humours him, then Hyacinth Verney, an orphaned heiress, talking over Cecil Reeve with her companion Anne. The first sit is Chapter I whole, ending “…with disapproving, admiring eyes.” A heads-up before you start: much later in the book, a fancy-dress scene uses a period slur for a costume, left as printed. Ada Leverson; the year is 1908, from the title page. The Shakespeare epigraph stays at the front of the book. Thirty-nine short chapters. Straight quotes stay as printed. A quick, dry Edwardian comedy of marriage and manners, told almost entirely in talk. Soft Leverson, carefully. Soft Knightsbridge, carefully. London is primary. The lead is this book, not Lewis and Irene. PG reading-ease 85.0 is easy. No score is invented for this sit.`,
+  "lewis-and-irene":
+    `"Fifteen," said Lewis. Part One, Chapter I — the funeral of Monsieur Vandémanque at Père Lachaise, a young financier counting beards in the pews for a game, and the boardroom coup that killed the old banker. The first sit is Part One, Chapter I whole, ending “…phosphates, oxygen).” A heads-up before you start: an old banker dies of shock in the opening pages, a suicide is reported later, and there is gossip about 'Jewish blood'. Part Two makes sweeping racial claims about Greek bankers, describes 'big black satyrs' grunting like pigs, and prints the word 'negro' twice, all left as printed. Paul Morand, in Vyvyan Holland's English (the title page signs it H. B. V.); the year is 1925, from the London edition. Three parts, 44 short chapters, one printed break kept. Straight quotes stay as printed. Lewis meets Irene, of a Greek banking house, over a deal for Sicilian mines, and love turns into a contest between two fortunes. Glittering, cynical and epigrammatic. Soft Morand, carefully. Soft Paris, carefully. France is primary. PG reading-ease 70.2 is denser than the lead. No score is invented for this sit.`,
+  "a-monkey":
+    `Yes, it was really a monkey that had nearly procured me 'Laudabilis' in my final law examination. This sit is “A Monkey” only — a law student the night before his final examination, a coffee-stain drawn into a monkey on page 496 of Schweigaard's Process, creaking inspectors' boots and a paper that bears on exactly that page. The sit is the whole story, with one printed break, ending “'A monkey!' I replied.” A heads-up before you start: this is one long comic monologue of exam-night nerves, with four short translator notes on the grading set in as you go. Alexander Kielland, in R. L. Cassie's English, from Norse Tales and Sketches; the year is 1896. The translator's four short notes are kept. One story this sit. Light and comic, for the evening rather than for sleep. Soft Kielland, carefully. Norway is primary. PG reading-ease 74.7 is for the whole volume. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1470,6 +1476,8 @@ export const RITUAL_LANES: RitualLane[] = [
       // (a death in childbirth, a ghost), and the three novels carry content notes.
       // Mira Sat 3 Oct 2026 POST-#225 CLEAR — none of the three sits here: The Hoop is never before-sleep
       // (the old man dies at the end), and the two novels carry content notes.
+      // Mira Sat 3 Oct 2026 POST-#227 CLEAR — none of the three sits here: A Monkey is Host-only on unwind
+      // (Launch: never before-sleep), and the two novels are evening reads.
     ],
   },
   {
@@ -1959,6 +1967,12 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-face-in-the-abyss",
       "mary-magdalen",
       "the-hoop",
+      // Mira Sat 3 Oct 2026 POST-#227 CLEAR — Love's Shadow leads. Never Featured.
+      // Lewis and Irene sits here, carefully (the content notes).
+      // A Monkey is the Host-only story: unwind only, the evening seat, never before-sleep.
+      "love-s-shadow",
+      "lewis-and-irene",
+      "a-monkey",
     ],
   },
   {
@@ -2427,6 +2441,9 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-face-in-the-abyss": 8,
   "mary-magdalen": 8,
   "the-hoop": 7,
+  "love-s-shadow": 8,
+  "lewis-and-irene": 7,
+  "a-monkey": 9,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,

@@ -643,6 +643,12 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: chariot drivers are killed in the opening race, John the Baptist is later beheaded, and the crucifixion is told. One early line calls a city crowd a 'mongrel rabble', left as printed.",
   "the-hoop":
     "A heads-up before you start: the old man at the heart of this story dies at the end, quietly.",
+  "love-s-shadow":
+    "A heads-up before you start: much later in the book, a fancy-dress scene uses a period slur for a costume, left as printed.",
+  "lewis-and-irene":
+    "A heads-up before you start: an old banker dies of shock in the opening pages, a suicide is reported later, and there is gossip about 'Jewish blood'. Part Two makes sweeping racial claims about Greek bankers, describes 'big black satyrs' grunting like pigs, and prints the word 'negro' twice, all left as printed.",
+  "a-monkey":
+    "A heads-up before you start: this is one long comic monologue of exam-night nerves, with four short translator notes on the grading set in as you go.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",

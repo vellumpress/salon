@@ -1205,6 +1205,11 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // The Hoop is Rituals only (the one story, Host-only), not this tail.
   "the-face-in-the-abyss",
   "mary-magdalen",
+  // Mira Sat 3 Oct 2026 POST-#227 CLEAR — Love's Shadow leads Next, after Mary Magdalen. Never Featured.
+  // LEAD kept — not Lewis and Irene (Next carefully: the content notes). Old Dances is not used.
+  // A Monkey is Rituals only (the one story, Host-only), not this tail.
+  "love-s-shadow",
+  "lewis-and-irene",
 ] as const;
 
 /**
