@@ -119,6 +119,9 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "his-dead-wifes-photograph": { label: "India", region: "in" },
     "the-face-in-the-abyss": { label: "Chupan", region: "pe" },
     "the-hoop": { label: "Russia", region: "ru" },
+    "love-s-shadow": { label: "Knightsbridge, London", region: "gb" },
+    "lewis-and-irene": { label: "Paris", region: "fr" },
+    "a-monkey": { label: "Christiania", region: "no" },
     "growth-of-the-soil": { label: "Norway", region: "no" },
     "nada-the-lily": { label: "Zululand", region: "za" },
     "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
@@ -404,4 +407,12 @@ test("chip-only settings carry a label but no country key and no silhouette", ()
   assert.equal(chipOnlyLabel("mary-magdalen"), "Tiberias, Galilee");
   assert.equal(chipOnlyLabel("the-face-in-the-abyss"), null);
   for (const id of Object.keys(CHIP_ONLY_PLACE)) assert.ok(shelfWork(id), id);
+});
+
+test("POST-#227 places reuse gb, fr and no; no new region key", () => {
+  for (const key of ["gb", "fr", "no"] as const) assert.ok(REGION_SHAPES[key]?.d, `${key} shape`);
+  assert.deepEqual(placeFor(shelfWork("love-s-shadow")!), { label: "Knightsbridge, London", region: "gb" });
+  assert.deepEqual(placeFor(shelfWork("lewis-and-irene")!), { label: "Paris", region: "fr" });
+  assert.deepEqual(placeFor(shelfWork("a-monkey")!), { label: "Christiania", region: "no" });
+  for (const id of ["love-s-shadow", "lewis-and-irene", "a-monkey"]) assert.equal(CHIP_ONLY_PLACE[id], undefined, id);
 });

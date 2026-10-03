@@ -534,6 +534,47 @@ test("Mary Magdalen's Scarlet opening is not cut at '!' and the POST-#225 heads-
   assert.equal(hoop.breaths.filter((breath) => isSectionBreak(breath.text)).length, 6);
 });
 
+test("POST-#227 heads-ups stay exact and survive the preface trim", () => {
+  const heads = {
+    "love-s-shadow":
+      "A heads-up before you start: much later in the book, a fancy-dress scene uses a period slur for a costume, left as printed.",
+    "lewis-and-irene":
+      "A heads-up before you start: an old banker dies of shock in the opening pages, a suicide is reported later, and there is gossip about 'Jewish blood'. Part Two makes sweeping racial claims about Greek bankers, describes 'big black satyrs' grunting like pigs, and prints the word 'negro' twice, all left as printed.",
+    "a-monkey":
+      "A heads-up before you start: this is one long comic monologue of exam-night nerves, with four short translator notes on the grading set in as you go.",
+  } as const;
+  for (const [id, note] of Object.entries(heads)) {
+    assert.equal(note.includes("!"), false, id);
+    assert.equal(blurbFor(id), note, id);
+    assert.ok(pitchFor(id)?.includes(note), id);
+    assert.ok(prefaceFor(id)?.includes(note), id);
+    assert.ok(ritualPitchFor(id)?.includes(note), id);
+    const veil = readerIntro(shelfAsWork(id));
+    assert.ok(veil.includes(note), veil);
+  }
+
+  const love = JSON.parse(
+    readFileSync(new URL("./catalog/texts/love-s-shadow.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  const loveOpen = love.breaths[2]?.text ?? "";
+  assert.match(loveOpen, /\*Don't\*/);
+  assert.equal(
+    splitEmphasis(loveOpen)
+      .map((part) => part.value)
+      .join(""),
+    loveOpen.replace(/\*([^*\n]+)\*/g, "$1"),
+  );
+  assert.equal(/[“”‘’]/.test(love.breaths.map((breath) => breath.text).join("\n")), false);
+
+  const lewis = JSON.parse(
+    readFileSync(new URL("./catalog/texts/lewis-and-irene.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  const lewisJoined = lewis.breaths.map((breath) => breath.text).join("\n");
+  assert.deepEqual(lewisJoined.match(/\bsalon\b/gi), ["salon", "Salon"]);
+  assert.match(lewisJoined, /her salon which was nothing but a society clinic/);
+  assert.match(lewisJoined, /Unlike the Magnac Salon/);
+});
+
 test("Of Human Bondage has a stored 2–3 sentence preface", () => {
   const copy = readerIntro(shelfAsWork("of-human-bondage"));
   assert.match(copy, /club foot/i);

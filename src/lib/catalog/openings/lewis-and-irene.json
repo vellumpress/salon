@@ -1,0 +1,166 @@
+{
+  "id": "lewis-and-irene",
+  "title": "Lewis and Irene",
+  "author": "Paul Morand (tr. Vyvyan Beresford Holland)",
+  "year": "1925",
+  "note": "Project Gutenberg 71047 (Paul Morand, Lewis and Irene, translated by Vyvyan Beresford Holland per the PG field; the title page prints 'H. B. V.'; London: Chatto & Windus, 1925). Whole novel, three parts of 11, 15 and 18 chapters (PG l.120–4090), labelled 'Part I · Chapter I' … 'Part III · Chapter XVIII'. The title page, the books-by list and the contents out; the one printed break (l.2110) kept. Straight quotes kept as printed; the small-caps chapter openings in sentence case; printed notices kept in capitals; the quotation table set row by row; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. EN 1925 (PG field 'United Kingdom: Chatto & Windus, 1925'). PG reading-ease 70.2 — no invented Launch rank. Place: Paris. Sits: unwind. Host intro: Paris after the Great War. Lewis, a young financier who plays the market like a game, buries the old banker his coup has ruined and goes south to Sicily, where he meets Irene, the head of a Greek banking house, and their love affair becomes a contest of two fortunes. Paul Morand's glittering, cynical, epigrammatic modern novel, in Vyvyan Holland's English. A heads-up before you start: in the first sit the old banker dies of shock and there is his funeral; later a suicide is reported. In Parts Two and Three the narration makes period racial generalizations about the Greek bankers ('Orientals, jealous, passionate, untutored', their skin called yellow), a character speaks of 'black satyrs', and there is 'Jewish blood' gossip about Lewis's birth — all left as printed.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Part I · Chapter I · Paris",
+      "place": "Part I · Chapter I · Paris",
+      "reentry": "\"Fifteen,\" said Lewis.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "\"Fifteen,\" said Lewis."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The morning papers predicted mist with occasional showers from the Atlantic. In spite of this the morning presented a cloudless sky, though it had been a little late in producing it. The Paris sycamores persisted in their homage to the autumn; hardly were their leaves swept up than it had to be done again."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"Fifteen and fifteen, thirty,\" went on Lewis, catching sight of a beautiful outward curling beard which came to join the imperial of his next-door neighbour, the general, each of whose statements began with the expression: \"Upon my soul and honour...!\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "It was the first funeral since the return from the holidays. Nobody had yet had time to get back their pallor; from starched collars and mourning dresses protruded the tanned cheeks and sunburnt hands of the congregation."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Whilst the black-moustached undertaker's men were emptying the contents of the hearse on to the bier and carrying the be-ribboned wreaths and other floral expressions of regret one by one into the church, the organ, like a concertina in the hands of some inebriated and tearful sailor, sent its gigantic windy harmonies soaring amongst the church hangings, beneath the vaulted roof and right out into the street. The beadles with their glittering halberds pierced like absinthe spoons, towered above all the bald heads. The footmen of the deceased, in their amethystine livery, and holding their top-hats in their hands, added to the majesty of the scene. One felt that the least touch of sorrow would have impaired and the least incivility have shattered the good humour of this obscure gathering of men and women in their common enjoyment of the taste of the morning, of toothpaste and of not being dead."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Forty.\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "It was the new game of \"Beaver,\" popular that summer in England, which Lewis, an anglomaniac Frenchman, had imported into France. A society game. Each beard met with, or caught sight of, counted one point: the same scoring as at lawn tennis, fifteen, thirty, forty and game. The winner was the man who saw the greatest number of beards first. It was played at Ascot, in the Temple, at Lords, in omnibuses. The game of \"Beaver\" became so intense that at a Royal Garden Party Lewis had noticed subjects of the King in whom the zest for the game outweighed the respect due to sovereigns, and who even whilst making their bow mentally credited themselves with the Royal Beard. Certain champions with a practised eye scored with incredible rapidity, even amongst crowds to all appearances clean shaven. Just think then of Sunday round the bandstands of French provincial towns where beards, perfumed with verbena or tobacco juice, are still cultivated, and where on some of the benches entire games can be won at a single stroke!"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Robust and full of life, the heirs in a blaze of candle-light, the Board of Directors and all the lesser employés of the Franco-African Bank abandoned themselves to their grief. Business men embarrassed by being brought face to face with nothingness at an hour when typewriters are usually clicking; bored society people turning their backs to the altar and scanning the assembly. Everything went off in perfect order. One felt that at the hour ordained by God certain important fractions of middle-class wealth and fat dividends had slipped from the strong room of the deceased to that of the beneficiaries, without any fuss and without attracting the attention of the Treasury or the envy of subordinates. A transfer of accounts amid sobs was all that was necessary. One was reminded that a hundred years before this church of La Madeleine, in which they were, had so nearly been a bank."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"Beaver and game,\" said Lewis at the sudden thought that close beside him in the coffin a thick white curling beard was still sprouting. If, as happens in some countries, the corpse had lain with its face uncovered, no one could have denied Lewis a brilliant win. The dead man, Monsieur Vandémanque, had been one of those ornamental and costly old idols secured to the pediments of our financial concerns, whose number increases uselessly with the increase of capital and who are exhibited once a year before the eyes of the shareholders, whom the sight of so much age reassures instead of alarming them—heaven only knows why. One of those men who collect soup tureens of the East India Company, know the Æneid by heart, have never seen a bill of exchange, are possessed of savage vanity and greed whilst all the time morbidly grabbing their directors' fees, and appear outwardly to us as greedy children either snivelling or sucking at the shrivelled udder of their dividends in their sleep."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "A picture of a majestically-robed Christ in a side window took Lewis back to his first board meeting—nearly three years before—when he had braved Monsieur Vandémanque seated in all his glory as Chairman of the Board, at the top of a green table, on a raised armchair. Above the twenty-five hairless pates (Lewis alone had black hair) allegories chased one another across the gilded panels. On the lower floors of the bank, through the thick pile carpet, the funnel-like pigeon-holes could be heard sucking slender Gallic savings into the cellars. In the old counting-house in the basement the nation's sustenance was being prepared: thrift and the love of securities seasoned with the lure of impossible dividends."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "It was the culminating point of a six months' struggle, carried on by the retiring members of the board, to prevent the young Lewis from having a seat on the board when the time came for their re-election. Monsieur Vandémanque loathed this bold iconoclast with his ill-breeding, vanity and the haphazard methods of a financial dabbler."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "After the reading of the directors' report, Lewis got up very sedately, and mercilessly criticized the previous year's management, particularly with regard to current accounts and the use made of the reserve, and, after casually breaking it to them that he held about three times as many shares as they imagined, announced his intention of entering a protest denouncing the resolutions submitted to the two last meetings as being irregular."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Lewis sat down in the midst of a horrified audience, composed of intelligent, respectable men, who, the associates of other respectable people, always shrank from anything crude or obvious, beneath the limp banner of the words \"the correct thing.\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "They muttered amongst themselves:—\"These young fellows must be made to fall into line.\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"If that isn't enough for you, the next time I shall not come unsupported,\" said Lewis out loud."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"Who will you have with you?\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "He smiled."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "\"... Proof.\""
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"The Franco-African is and will always be a house of crystal.\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"Then it will break.\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "He was sure of controlling the majority of shares before another year passed; and he did."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"What exactly do you intend to do?\" Monsieur Vandémanque, eager for compromise, had asked, on the day when Lewis had forced himself in as general manager, nominated by the shareholders."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Play an open game, that's all,\" he answered. \"Pass the ball to the three-quarter line when I get it, and win the game as quickly as possible.\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "The old man looked at him uncomprehendingly, but his face was purple."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"You are going to reduce me...\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"To obedience or penury,\" answered Lewis, with his usual brutality. A year before he would not have dared talk like that."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "The shock killed Monsieur Vandémanque. Six months later his high-priest's hands ceased to tremble and the veins on his forehead to bulge, and now he was lying there beneath the first chrysanthemums of the year."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "Lewis, having successfully broken through that crust which our traditions and our morals pile up on youth, and having renounced the immortal principle of the commerce and the spirit of France, namely:—*always be suspicious of what you are creating*, had, among the first of his generation, struggled out into the open air. It enabled him to experience the obloquy that is always hurled at any form of youthful success. Exhausted France, divided between the struggle for existence and the struggle to keep up her reputation as a jealous nation, accepted his innovations with reluctance."
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "In one year Lewis trebled his business interests and succeeded in getting hold of the controlling number of shares. Where before everything was done clandestinely (Lewis could almost hear Monsieur Vandémanque's: \"good wine needs no bush\"), all business was now conducted in the full glare of publicity; whereas before only one telephone line connected the Rue Scribe with the Bourse, now there were eighteen lines devoted solely to foreign exchange dealing. Lewis was now managing the Franco-African Bank and its affiliated companies practically without control, the Ætas Assurance Company, which was expanding enormously since its new re-insurance contract with Lloyds, and the Fidius Research Corporation (chemical products, commercial rubber, phosphates, oxygen)."
+    }
+  ]
+}

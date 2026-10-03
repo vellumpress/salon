@@ -22,12 +22,26 @@ export function trimReaderIntro(value: string | undefined) {
   if (!copy) return "";
   const sentences = splitSentences(copy);
   const shown = sentences.slice(0, 3);
-  const next = sentences[3];
+  let index = 3;
+  // An interior '!' can split the sentence just before the note
+  // (“'A monkey!' I replied.”). Keep that fragment, then the note.
+  const shifted = sentences[index];
+  const afterShift = sentences[index + 1];
+  if (
+    shifted &&
+    !/^A heads-up before you start\b/.test(shifted) &&
+    afterShift &&
+    /^A heads-up before you start\b/.test(afterShift)
+  ) {
+    shown.push(shifted);
+    index += 1;
+  }
+  const next = sentences[index];
   if (next && /^A heads-up before you start\b/.test(next)) {
     shown.push(next);
     // A heads-up may continue one sentence ("…left as printed.") before the author line.
     // Do not stop that note on an earlier '!' in the opening sentence.
-    const follow = sentences[4];
+    const follow = sentences[index + 1];
     if (follow && /left as printed[.!?]?$/.test(follow.trim())) shown.push(follow);
   }
   return shown.join(" ").trim();
