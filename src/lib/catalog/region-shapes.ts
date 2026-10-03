@@ -21,6 +21,7 @@ export type PlaceRegion =
   | "hu"
   | "hr"
   | "im"
+  | "ng"
   | "cz"
   | "pl"
   | "se"
@@ -151,6 +152,11 @@ export const REGION_SHAPES: Record<PlaceRegion, RegionShape> = {
   im: {
     viewBox: "0 0 32 32",
     d: "M25.4 3.0 28.2 4.6 27.4 7.8 25.6 11.2 23.8 14.6 21.2 17.8 18.2 20.8 14.8 23.6 11.2 26.0 8.0 27.8 5.2 29.0 3.6 27.6 4.0 25.4 5.4 21.6 7.0 17.6 9.4 13.6 12.6 10.0 16.4 6.8 20.6 4.2Z",
+  },
+  /** Nigeria — a broad block: the long northern border, Lake Chad at the north-east corner, the Niger delta on the southern coast. Original simplification. */
+  ng: {
+    viewBox: "0 0 32 28",
+    d: "M3.6 7.4 8.8 4.6 14.2 5.4 19.6 3.8 24.8 4.0 28.6 6.8 28.2 11.0 26.4 14.8 25.2 19.0 22.2 22.4 18.6 23.0 15.8 25.6 12.8 24.4 9.6 21.8 5.6 22.2 4.8 17.6 3.2 12.6Z",
   },
   cz: {
     viewBox: "0 0 32 18",
@@ -390,6 +396,7 @@ export const REGION_TONE: Record<PlaceRegion, "ink" | "red" | "blue" | "forest">
   hu: "red",
   hr: "red",
   im: "red",
+  ng: "forest",
   cz: "blue",
   pl: "red",
   se: "blue",

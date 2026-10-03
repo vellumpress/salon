@@ -1194,6 +1194,12 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-corsican-brothers",
   "jocelyn",
   "the-woman-of-knockaloe",
+  // Mira Sat 3 Oct 2026 POST-#224 CLEAR — The Man in the Brown Suit leads Next, after The Woman of Knockaloe. Never Featured.
+  // LEAD kept — not Wang the Ninth, not Garram the Hunter. Gay-Neck is cut.
+  // His Dead Wife's Photograph is Rituals only (the one story, Host-only), not this tail.
+  "the-man-in-the-brown-suit",
+  "wang-the-ninth",
+  "garram-the-hunter",
 ] as const;
 
 /**

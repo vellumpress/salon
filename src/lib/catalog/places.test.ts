@@ -113,6 +113,10 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "jocelyn": { label: "Mentone & Monte Carlo, the Riviera", region: "fr" },
     "the-woman-of-knockaloe": { label: "Knockaloe, by Peel, Isle of Man", region: "im" },
     "the-taking-of-the-redoubt": { label: "Cheverino redoubt", region: "ru" },
+    "the-man-in-the-brown-suit": { label: "Paris, France", region: "fr" },
+    "wang-the-ninth": { label: "Ten Li Hamlet", region: "cn" },
+    "garram-the-hunter": { label: "the Hills and the Plains", region: "ng" },
+    "his-dead-wifes-photograph": { label: "India", region: "in" },
     "growth-of-the-soil": { label: "Norway", region: "no" },
     "nada-the-lily": { label: "Zululand", region: "za" },
     "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
@@ -358,4 +362,20 @@ test("the Isle of Man has its own key and silhouette, never England", () => {
   const redoubt = shelfWork("the-taking-of-the-redoubt");
   assert.ok(redoubt);
   assert.deepEqual(placeFor(redoubt!), { label: "Cheverino redoubt", region: "ru" });
+});
+
+test("Nigeria has its own key and silhouette; South Africa, China and India reuse theirs", () => {
+  assert.ok(REGION_SHAPES.ng?.d, "ng shape");
+  const garram = shelfWork("garram-the-hunter");
+  assert.ok(garram);
+  assert.deepEqual(placeFor(garram!), { label: "the Hills and the Plains", region: "ng" });
+  const brown = shelfWork("the-man-in-the-brown-suit");
+  assert.ok(brown);
+  assert.deepEqual(placeFor(brown!), { label: "Paris, France", region: "fr" });
+  const wang = shelfWork("wang-the-ninth");
+  assert.ok(wang);
+  assert.deepEqual(placeFor(wang!), { label: "Ten Li Hamlet", region: "cn" });
+  const photo = shelfWork("his-dead-wifes-photograph");
+  assert.ok(photo);
+  assert.deepEqual(placeFor(photo!), { label: "India", region: "in" });
 });

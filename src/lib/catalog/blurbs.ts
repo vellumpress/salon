@@ -629,6 +629,14 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: it ends in a double suicide, and the characters voice wartime hatred.",
   "the-taking-of-the-redoubt":
     "A heads-up before you start: there is battle violence, and one graphic sentence about a death.",
+  "the-man-in-the-brown-suit":
+    "A heads-up before you start: there is a strangling, inquest talk of suicide, and a violent strike on the Rand.",
+  "wang-the-ninth":
+    "A heads-up before you start: there is famine, children are sold, and the narrator makes period generalizations about “all Chinese”.",
+  "garram-the-hunter":
+    "A heads-up before you start: there are slave raids, and one line about a living slave built into a pillar.",
+  "his-dead-wifes-photograph":
+    "A heads-up before you start: it is a gentle ghost story.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
