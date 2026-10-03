@@ -636,7 +636,7 @@ const BLURBS: Record<string, string> = {
   "garram-the-hunter":
     "A heads-up before you start: there are slave raids, and one line about a living slave built into a pillar.",
   "his-dead-wifes-photograph":
-    "A heads-up before you start: it is a gentle ghost story.",
+    "A heads-up before you start: a wife and baby die in childbirth.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
