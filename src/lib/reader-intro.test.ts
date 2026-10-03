@@ -492,14 +492,17 @@ test("Mary Magdalen's Scarlet opening is not cut at '!' and the POST-#225 heads-
   assert.match(readerIntro(shelfAsWork("the-hoop")), /dies at the end, quietly/);
 
   const maryShelf = SHELF.find((item) => item.id === "mary-magdalen");
-  assert.match(maryShelf?.intro ?? "", /John the Baptist is beheaded/);
+  assert.ok(maryShelf);
+  assert.match(maryShelf.intro ?? "", /John the Baptist is beheaded/);
   assert.equal(placeFor(maryShelf), null);
   assert.equal(chipOnlyLabel("mary-magdalen"), "Tiberias, Galilee");
-  assert.equal(countryFor(maryShelf!), "");
+  assert.equal(countryFor(maryShelf), "");
   const face = SHELF.find((item) => item.id === "the-face-in-the-abyss");
+  assert.ok(face);
   assert.deepEqual(placeFor(face), { label: "Chupan", region: "pe" });
-  assert.equal(countryFor(face!), "Peru");
+  assert.equal(countryFor(face), "Peru");
   const hoopShelf = SHELF.find((item) => item.id === "the-hoop");
+  assert.ok(hoopShelf);
   assert.deepEqual(placeFor(hoopShelf), { label: "Russia", region: "ru" });
 
   const open = JSON.parse(
