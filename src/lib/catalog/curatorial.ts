@@ -1200,6 +1200,11 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-man-in-the-brown-suit",
   "wang-the-ninth",
   "garram-the-hunter",
+  // Mira Sat 3 Oct 2026 POST-#225 CLEAR — The Face in the Abyss leads Next, after Garram the Hunter. Never Featured.
+  // LEAD kept — not Mary Magdalen. At the Emperor's Wish and Kronstadt are cut; no alternates.
+  // The Hoop is Rituals only (the one story, Host-only), not this tail.
+  "the-face-in-the-abyss",
+  "mary-magdalen",
 ] as const;
 
 /**

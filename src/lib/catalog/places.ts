@@ -195,6 +195,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-man-in-the-brown-suit": { label: "Paris, France", region: "fr" },
   "wang-the-ninth": { label: "Ten Li Hamlet", region: "cn" },
   "garram-the-hunter": { label: "the Hills and the Plains", region: "ng" },
+  "the-face-in-the-abyss": { label: "Chupan", region: "pe" },
   "look-back-on-happiness": { label: "Norway forest", region: "no" },
   "father-of-yoto": { label: "Limehouse", region: "gb" },
   "growth-of-the-soil": { label: "Norway", region: "no" },
@@ -496,6 +497,18 @@ const COUNTRY_PLACE: Record<string, WorkPlace> = {
   Israel: { label: "Israel", region: "il" },
   Ghana: { label: "Ghana", region: "gh" },
 };
+
+/**
+ * Chip-only settings: a printed place label with no country key and no silhouette (Launch, POST-#225).
+ * placeFor() stays null for these ids; PlaceChip shows the label alone.
+ */
+export const CHIP_ONLY_PLACE: Record<string, string> = {
+  "mary-magdalen": "Tiberias, Galilee",
+};
+
+export function chipOnlyLabel(id: string | undefined): string | null {
+  return id ? (CHIP_ONLY_PLACE[id] ?? null) : null;
+}
 
 function withShape(place: WorkPlace | undefined): WorkPlace | null {
   if (!place) return null;

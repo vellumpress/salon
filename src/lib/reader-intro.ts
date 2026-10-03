@@ -20,10 +20,16 @@ function usableCopy(value: string | undefined) {
 export function trimReaderIntro(value: string | undefined) {
   const copy = usableCopy(value);
   if (!copy) return "";
-  const sentences = splitSentences(copy, 4);
+  const sentences = splitSentences(copy);
   const shown = sentences.slice(0, 3);
   const next = sentences[3];
-  if (next && /^A heads-up before you start\b/.test(next)) shown.push(next);
+  if (next && /^A heads-up before you start\b/.test(next)) {
+    shown.push(next);
+    // A heads-up may continue one sentence ("…left as printed.") before the author line.
+    // Do not stop that note on an earlier '!' in the opening sentence.
+    const follow = sentences[4];
+    if (follow && /left as printed[.!?]?$/.test(follow.trim())) shown.push(follow);
+  }
   return shown.join(" ").trim();
 }
 

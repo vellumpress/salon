@@ -1,6 +1,14 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
+import { blurbFor } from "./catalog/blurbs.ts";
+import { countryFor } from "./catalog/countries.ts";
+import { pitchFor } from "./catalog/pitches.ts";
+import { chipOnlyLabel, placeFor } from "./catalog/places.ts";
+import { prefaceFor } from "./catalog/prefaces.ts";
+import { ritualPitchFor } from "./catalog/rituals.ts";
 import { SHELF } from "./catalog/shelf.ts";
+import { isSectionBreak, splitEmphasis } from "./emphasized-text.ts";
 import { readerIntro, trimReaderIntro } from "./reader-intro.ts";
 import type { Work } from "./works.ts";
 
@@ -453,6 +461,74 @@ test("a heads-up that is the fourth sentence still shows before reading", () => 
     ),
     "One sentence in the room. A second sentence at the door. A third stays in. A heads-up before you start: the note stays on the card.",
   );
+});
+
+test("Mary Magdalen's Scarlet opening is not cut at '!' and the POST-#225 heads-ups stay exact", () => {
+  const heads = {
+    "the-face-in-the-abyss":
+      "A heads-up before you start: three of the narrator's companions die, one man is strangled, and a child is threatened with a whip. The book also uses the period terms 'half-breeds' and 'Indian hell-brew', left as printed.",
+    "mary-magdalen":
+      "A heads-up before you start: chariot drivers are killed in the opening race, John the Baptist is later beheaded, and the crucifixion is told. One early line calls a city crowd a 'mongrel rabble', left as printed.",
+    "the-hoop":
+      "A heads-up before you start: the old man at the heart of this story dies at the end, quietly.",
+  } as const;
+  for (const [id, note] of Object.entries(heads)) {
+    assert.equal(note.includes("!"), false, id);
+    assert.equal(blurbFor(id), note, id);
+    assert.ok(pitchFor(id)?.includes(note), id);
+    assert.ok(prefaceFor(id)?.includes(note), id);
+    assert.ok(ritualPitchFor(id)?.includes(note), id);
+  }
+
+  const veil = readerIntro(shelfAsWork("mary-magdalen"));
+  assert.match(veil, /“Three to one on Scarlet!”/);
+  assert.match(veil, /Chapter I — the chariot races/);
+  assert.ok(veil.indexOf("Chapter I") > veil.indexOf("Scarlet!"), veil);
+  assert.match(veil, /mongrel rabble/);
+  assert.match(veil, /left as printed\./);
+  const faceVeil = readerIntro(shelfAsWork("the-face-in-the-abyss"));
+  assert.match(faceVeil, /half-breeds/);
+  assert.match(faceVeil, /Indian hell-brew/);
+  assert.match(readerIntro(shelfAsWork("the-hoop")), /dies at the end, quietly/);
+
+  const maryShelf = SHELF.find((item) => item.id === "mary-magdalen");
+  assert.match(maryShelf?.intro ?? "", /John the Baptist is beheaded/);
+  assert.equal(placeFor(maryShelf), null);
+  assert.equal(chipOnlyLabel("mary-magdalen"), "Tiberias, Galilee");
+  assert.equal(countryFor(maryShelf!), "");
+  const face = SHELF.find((item) => item.id === "the-face-in-the-abyss");
+  assert.deepEqual(placeFor(face), { label: "Chupan", region: "pe" });
+  assert.equal(countryFor(face!), "Peru");
+  const hoopShelf = SHELF.find((item) => item.id === "the-hoop");
+  assert.deepEqual(placeFor(hoopShelf), { label: "Russia", region: "ru" });
+
+  const open = JSON.parse(
+    readFileSync(new URL("./catalog/openings/mary-magdalen.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  const full = JSON.parse(
+    readFileSync(new URL("./catalog/texts/mary-magdalen.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.equal(open.breaths[0]?.text, "“Three to one on Scarlet!”");
+  assert.equal(open.breaths.length, 23);
+  assert.match(open.breaths[1]?.text ?? "", /^Throughout the brand-new circus/);
+  assert.equal(
+    open.breaths.some((breath) => breath.text === "“They are off!”"),
+    true,
+  );
+  for (let i = 0; i < open.breaths.length; i += 1) {
+    const text = open.breaths[i]?.text ?? "";
+    assert.equal(text, full.breaths[i]?.text, `sit ${i}`);
+    const rendered = splitEmphasis(text)
+      .map((part) => part.value)
+      .join("");
+    assert.equal(rendered, text.replace(/\*([^*\n]+)\*/g, "$1"), `render ${i}`);
+  }
+  assert.match(full.breaths.map((breath) => breath.text).join("\n"), /slips of vellum/);
+
+  const hoop = JSON.parse(
+    readFileSync(new URL("./catalog/texts/the-hoop.json", import.meta.url), "utf8"),
+  ) as { breaths: { text: string }[] };
+  assert.equal(hoop.breaths.filter((breath) => isSectionBreak(breath.text)).length, 6);
 });
 
 test("Of Human Bondage has a stored 2–3 sentence preface", () => {
