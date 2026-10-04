@@ -39,10 +39,35 @@ export function trimReaderIntro(value: string | undefined) {
   const next = sentences[index];
   if (next && /^A heads-up before you start\b/.test(next)) {
     shown.push(next);
-    // A heads-up may continue one sentence ("…left as printed.") before the author line.
-    // Do not stop that note on an earlier '!' in the opening sentence.
-    const follow = sentences[index + 1];
-    if (follow && /left as printed[.!?]?$/.test(follow.trim())) shown.push(follow);
+    // A heads-up may continue through "left as printed." before the author line,
+    // plus one trailing "The first sitting…" line. Do not stop that note on an
+    // earlier '!' in the opening sentence.
+    const endsNote = (value: string) => /left as printed[.!?]?$/.test(value.trim());
+    const authorCredit = (value: string) =>
+      /;\s+the year is\b/.test(value) ||
+      /^[\p{Lu}].{0,80},\s+(?:in|from)\b/u.test(value);
+    if (!endsNote(next)) {
+      // Only keep a run that closes on "left as printed" before the author line.
+      // A '!' fragment that never closes that way stays off the card.
+      const extra: string[] = [];
+      let cursor = index + 1;
+      let closed = false;
+      while (cursor < sentences.length && cursor <= index + 6) {
+        const follow = sentences[cursor];
+        if (!follow || authorCredit(follow)) break;
+        extra.push(follow);
+        cursor += 1;
+        if (endsNote(follow)) {
+          closed = true;
+          break;
+        }
+      }
+      if (closed) {
+        shown.push(...extra);
+        const after = sentences[cursor];
+        if (after && /^The first sitting\b/.test(after)) shown.push(after);
+      }
+    }
   }
   return shown.join(" ").trim();
 }

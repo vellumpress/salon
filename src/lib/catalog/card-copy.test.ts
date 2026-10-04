@@ -210,6 +210,7 @@ test("known origin overrides", () => {
     "love-s-shadow": "United Kingdom",
     "lewis-and-irene": "France",
     "a-monkey": "Norway",
+    "the-counterfeiters": "France",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);
@@ -233,7 +234,7 @@ test("every local homepage work has a one-sentence blurb", () => {
   for (const work of LOCAL_WORKS) {
     const blurb = blurbFor(work);
     const sentences = sentenceCount(blurb);
-    const headsUp = /^A heads-up before you start\b/.test(blurb) && sentences <= 2;
+    const headsUp = /^A heads-up before you start\b/.test(blurb) && sentences <= 5;
     if (!blurb) missing.push(work.id);
     else if (sentences !== 1 && !headsUp) multi.push(`${work.id}: ${blurb}`);
   }

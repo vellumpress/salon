@@ -199,6 +199,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "love-s-shadow": { label: "Knightsbridge, London", region: "gb" },
   "lewis-and-irene": { label: "Paris", region: "fr" },
   "a-monkey": { label: "Christiania", region: "no" },
+  "the-counterfeiters": { label: "Luxembourg Gardens, Paris", region: "fr" },
   "look-back-on-happiness": { label: "Norway forest", region: "no" },
   "father-of-yoto": { label: "Limehouse", region: "gb" },
   "growth-of-the-soil": { label: "Norway", region: "no" },
