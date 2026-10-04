@@ -2337,6 +2337,15 @@ html.together-compose .chat-field {
   color: var(--color-ink);
 }
 
+.home-import-error-detail {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  color: var(--color-ink-soft);
+  overflow-wrap: anywhere;
+}
+
 .home-import-list-label {
   margin-top: 1.35rem;
   color: var(--color-muted);
