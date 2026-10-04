@@ -1,4 +1,6 @@
-import { getDocument, GlobalWorkerOptions, PasswordException, type PDFDocumentProxy, type PDFPageProxy } from "pdfjs-dist";
+import { installPromiseWithResolvers } from "./promise-with-resolvers.ts";
+import { getDocument, GlobalWorkerOptions, PasswordException } from "pdfjs-dist/legacy/build/pdf.mjs";
+import type { PDFDocumentProxy, PDFPageProxy } from "pdfjs-dist";
 import { withBase } from "../site.ts";
 import { PDF_FAIL, PDF_LOCKED, PDF_MAX_BYTES, PDF_NOT, PDF_TOO_LARGE, SCANNED_PDF } from "./messages.ts";
 import { workFromPdfPages, type PdfOutlineHeading, type PdfTextLine, type PdfTextPage } from "./pdf-text.ts";
@@ -163,6 +165,7 @@ export async function workFromPdfFile(file: File): Promise<Work> {
   if (bytes.byteLength > PDF_MAX_BYTES) throw new Error(PDF_TOO_LARGE);
   if (!isPdfMagic(bytes)) throw new Error(PDF_NOT);
 
+  installPromiseWithResolvers();
   ensureWorker();
   const task = getDocument({
     data: bytes,
@@ -200,6 +203,7 @@ export async function workFromPdfFile(file: File): Promise<Work> {
       if (err.message === SCANNED_PDF || err.message === PDF_TOO_LARGE || err.message === PDF_NOT) throw err;
       if (err instanceof PasswordException || /password/i.test(err.message)) throw new Error(PDF_LOCKED);
     }
+    console.error(err);
     throw new Error(PDF_FAIL);
   } finally {
     await doc?.cleanup().catch(() => undefined);
