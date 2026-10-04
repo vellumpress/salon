@@ -1,7 +1,8 @@
 /**
  * Serve pdf.js's legacy worker as a Vite asset URL.
  * The import is `pdfjs-dist/legacy/build/pdf.worker.min.mjs?url`.
- * This writes a .js copy with the Promise.withResolvers polyfill first,
+ * This writes a .js copy with the Promise.withResolvers polyfill and the
+ * ReadableStream async-iterator polyfill first,
  * then hands that file to Vite's `?url` pipeline so the build emits
  * /salon/assets/pdf.worker.min-<hash>.js. The .js name is what GitHub Pages
  * serves as JavaScript. The hash changes when the worker bytes change.
@@ -9,7 +10,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { LEGACY_WORKER_REL, WITH_RESOLVERS_POLYFILL } from "./copy-pdf-worker.mjs";
+import { LEGACY_WORKER_REL, WORKER_PREAMBLE } from "./copy-pdf-worker.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -22,7 +23,7 @@ export function writePolyfilledWorker() {
   const source = join(root, LEGACY_WORKER_REL);
   const dest = join(root, POLYFILLED_WORKER_REL);
   mkdirSync(dirname(dest), { recursive: true });
-  writeFileSync(dest, WITH_RESOLVERS_POLYFILL + readFileSync(source, "utf8"));
+  writeFileSync(dest, WORKER_PREAMBLE + readFileSync(source, "utf8"));
   return dest;
 }
 

@@ -1,9 +1,11 @@
+import { installReadableStreamAsyncIterator } from "./readable-stream-async-iterator.js";
 import { getDocument, GlobalWorkerOptions, PasswordException, PDFWorker, shadow } from "pdfjs-dist/legacy/build/pdf.mjs";
 import type { PDFDocumentProxy, PDFPageProxy } from "pdfjs-dist";
 import workerUrl from "pdfjs-dist/legacy/build/pdf.worker.min.mjs?url";
 import type { Work } from "../literature.ts";
 import { PDF_LOCKED, PDF_MAX_BYTES, PDF_NOT, PDF_TOO_LARGE, SCANNED_PDF } from "./messages.ts";
 import { isKnownPdfMessage, isWorkerStartupError, pdfFail } from "./pdf-error.ts";
+import { isTextContentTypeError, loadPageText } from "./pdf-page-text.ts";
 import { workFromPdfPages, type PdfOutlineHeading, type PdfTextLine, type PdfTextPage } from "./pdf-text.ts";
 import { installPromiseWithResolvers } from "./promise-with-resolvers.ts";
 
@@ -72,6 +74,7 @@ function fail(err: unknown): never {
  * the main thread.
  */
 async function useMainThreadWorker() {
+  installReadableStreamAsyncIterator();
   installPromiseWithResolvers();
   const mod = await import("pdfjs-dist/legacy/build/pdf.worker.min.mjs");
   const handler = mod.WorkerMessageHandler;
@@ -92,8 +95,8 @@ function italicFace(family: string, fontName: string, font: { italic?: boolean; 
   return /italic|oblique/i.test(name);
 }
 
-async function pageLines(page: PDFPageProxy): Promise<PdfTextLine[]> {
-  const content = await page.getTextContent();
+async function pageLines(page: PDFPageProxy, mainThread: boolean): Promise<PdfTextLine[]> {
+  const content = await loadPageText(page, mainThread);
   const styles = content.styles ?? {};
   const italicCache = new Map<string, boolean>();
   const buckets = new Map<number, TextItemLike[]>();
@@ -192,7 +195,7 @@ async function outlineOf(doc: PDFDocumentProxy): Promise<PdfOutlineHeading[]> {
   return out;
 }
 
-async function readPdf(bytes: Uint8Array, file: File): Promise<Work> {
+async function readPdf(bytes: Uint8Array, file: File, mainThread: boolean): Promise<Work> {
   const task = getDocument({
     data: bytes.slice(),
     disableRange: true,
@@ -209,7 +212,7 @@ async function readPdf(bytes: Uint8Array, file: File): Promise<Work> {
     for (let n = 1; n <= doc.numPages; n += 1) {
       const page = await doc.getPage(n);
       try {
-        const lines = await pageLines(page);
+        const lines = await pageLines(page, mainThread);
         chars += lines.reduce((sum, line) => sum + line.text.length, 0);
         pages.push({ lines });
       } finally {
@@ -239,19 +242,20 @@ export async function workFromPdfFile(file: File): Promise<Work> {
   if (bytes.byteLength > PDF_MAX_BYTES) throw new Error(PDF_TOO_LARGE);
   if (!isPdfMagic(bytes)) throw new Error(PDF_NOT);
 
+  installReadableStreamAsyncIterator();
   installPromiseWithResolvers();
   ensureWorker();
   try {
-    return await readPdf(bytes, file);
+    return await readPdf(bytes, file, false);
   } catch (err) {
     if (err instanceof Error && isKnownPdfMessage(err.message)) throw err;
     if (isLocked(err)) throw new Error(PDF_LOCKED);
-    if (!isWorkerStartupError(err)) throw fail(err);
+    if (!isWorkerStartupError(err) && !isTextContentTypeError(err)) throw fail(err);
   }
 
   try {
     await useMainThreadWorker();
-    return await readPdf(bytes, file);
+    return await readPdf(bytes, file, true);
   } catch (err) {
     if (err instanceof Error && isKnownPdfMessage(err.message)) throw err;
     if (isLocked(err)) throw new Error(PDF_LOCKED);

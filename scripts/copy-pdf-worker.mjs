@@ -4,8 +4,10 @@
  *   /salon/pdf.worker.min.js
  * The legacy build avoids Map.getOrInsertComputed, Math.sumPrecise, and
  * Uint8Array.fromBase64, which iOS Safari does not implement. It still
- * calls Promise.withResolvers (missing before iOS 17.4), so a tiny polyfill
- * is the first statement of the copied worker. The bytes stay an ES module.
+ * calls Promise.withResolvers (missing before iOS 17.4) and
+ * `for await` over ReadableStream (missing on iOS Safari 16–18). Both
+ * polyfills are the first statements of the copied worker. The bytes stay
+ * an ES module.
  * The .js name is what GitHub Pages serves as JavaScript.
  * Not committed — generated before dev and build.
  */
@@ -30,6 +32,17 @@ export const WITH_RESOLVERS_POLYFILL = `if (typeof Promise.withResolvers !== "fu
 }
 `;
 
+const readableStreamSource = readFileSync(
+  join(root, "src/lib/import/readable-stream-async-iterator.js"),
+  "utf8",
+);
+
+/** Same install as the main thread, without the ESM export keyword. */
+export const READABLE_STREAM_POLYFILL = `${readableStreamSource.replace(/^export /m, "").trim()}\n`;
+
+/** Prepended onto the legacy worker, before pdf.js runs. */
+export const WORKER_PREAMBLE = WITH_RESOLVERS_POLYFILL + READABLE_STREAM_POLYFILL;
+
 export function copyPdfWorker() {
   const source = join(root, LEGACY_WORKER_REL);
   const dest = join(root, "public/pdf.worker.min.js");
@@ -38,7 +51,7 @@ export function copyPdfWorker() {
     process.exit(1);
   }
   mkdirSync(dirname(dest), { recursive: true });
-  writeFileSync(dest, WITH_RESOLVERS_POLYFILL + readFileSync(source, "utf8"));
+  writeFileSync(dest, WORKER_PREAMBLE + readFileSync(source, "utf8"));
   console.log("[copy-pdf-worker] public/pdf.worker.min.js");
 }
 
