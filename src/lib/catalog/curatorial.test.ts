@@ -15692,7 +15692,21 @@ test("Mira POST-#228 CLEAR is Next carefully lead The Counterfeiters, after Lewi
       "A heads-up before you start: later in the novel, a schoolboy shoots himself in class with a pistol his classmates loaded as a dare. Two other characters attempt suicide, one woman is presumed drowned, a girl dies of illness, and a shipwreck story describes people drowning. Adult men pursue adolescent boys, there is adultery, and the book has period slurs and a journal passage that generalizes about Catholics, Jews and Protestants. All of it is left as printed. The first sitting contains none of the deaths or slurs.";
     assert.equal(blurbFor(id), headsUp, id);
     assert.ok((work.intro ?? "").includes(headsUp), id);
-    assert.ok(readerIntro({ ...work, note: work.intro ?? "" } as Work).includes(headsUp), id);
+    assert.ok(
+      readerIntro({
+        id,
+        title: work.title,
+        author: work.author,
+        year: String(work.year ?? ""),
+        note: work.intro ?? "",
+        minutes: work.minutes,
+        cover: "",
+        coverAlt: "",
+        scenes: [],
+        breaths: [],
+      }).includes(headsUp),
+      id,
+    );
     assert.match(work.intro ?? "", /PG reading-ease/, id);
     const opened = JSON.parse(
       readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8"),
