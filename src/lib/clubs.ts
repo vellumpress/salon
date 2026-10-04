@@ -6,6 +6,7 @@ import {
 } from "@/lib/catalog/serialize";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { fillOf, type Fill } from "@/lib/mondrian";
+import { isOffline } from "@/lib/net";
 import { getSupabase } from "@/lib/supabase";
 import { CLUBS } from "@/lib/social";
 import {
@@ -247,6 +248,7 @@ function raise(error: unknown): never {
 }
 
 async function requireUserId() {
+  if (isOffline()) throw new Error("Offline");
   const { data, error } = await getSupabase().auth.getSession();
   if (error) raise(error);
   const id = data.session?.user?.id;
@@ -285,6 +287,7 @@ export async function createClub(input: z.input<typeof createInput>): Promise<Bo
 }
 
 export async function listUpcomingSessions(): Promise<UpcomingSit[]> {
+  if (isOffline()) return [];
   const { data, error } = await getSupabase().from("clubs").select("*");
   if (error) {
     if (clubDirectoryMessage(error).includes(MIGRATION)) return [];
@@ -298,6 +301,7 @@ export async function listUpcomingSessions(): Promise<UpcomingSit[]> {
 export async function getClubByInvite(token: string): Promise<BookClubView | null> {
   const parsed = asInviteToken(token);
   if (!parsed) return null;
+  if (isOffline()) throw new Error("Offline");
   const { data, error } = await getSupabase().rpc("club_by_invite", { p_token: parsed });
   if (error) raise(error);
   if (!data || typeof data !== "object") return null;
@@ -319,6 +323,7 @@ export async function getBookClub(id: string): Promise<BookClubView | null> {
 export async function listBookClubs(ids: string[]): Promise<BookClubView[]> {
   const parsed = [...new Set(ids.map((id) => asClubId(id)).filter((id): id is string => Boolean(id)))].slice(0, 40);
   if (parsed.length === 0) return [];
+  if (isOffline()) return [];
   const { data, error } = await getSupabase().from("clubs").select("*").in("id", parsed);
   if (error) {
     if (clubDirectoryMessage(error).includes(MIGRATION)) return [];

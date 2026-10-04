@@ -2,6 +2,7 @@ import { useEffect, useState, useSyncExternalStore } from "react";
 import { activityFromRow, type ActivityRow } from "./remote-activity.ts";
 import type { FriendActivity } from "./friend-profile.ts";
 import { normalizeHandle } from "./social.ts";
+import { isOffline } from "./net.ts";
 import { getSupabase } from "./supabase.ts";
 
 export type DirectoryProfile = {
@@ -81,7 +82,7 @@ function likePrefix(handle: string) {
 
 export async function searchProfiles(raw: string): Promise<DirectoryProfile[]> {
   const handle = normalizeHandle(raw);
-  if (handle.length < 2) return [];
+  if (handle.length < 2 || isOffline()) return [];
   const { data, error } = await getSupabase()
     .from("profiles")
     .select("id, handle, display_name, bio")
@@ -96,7 +97,7 @@ export async function searchProfiles(raw: string): Promise<DirectoryProfile[]> {
 
 export async function fetchProfile(raw: string): Promise<DirectoryProfile | null> {
   const handle = normalizeHandle(raw);
-  if (handle.length < 2) return null;
+  if (handle.length < 2 || isOffline()) return null;
   const { data, error } = await getSupabase()
     .from("profiles")
     .select("id, handle, display_name, bio")
@@ -196,6 +197,7 @@ export async function dropFollows(userId: string, handles: string[]) {
 }
 
 export async function refreshFollowedActivity(userId: string) {
+  if (isOffline()) return;
   const supabase = getSupabase();
   const follows = await supabase.from("follows").select("followee_id").eq("follower_id", userId);
   if (follows.error) return;
@@ -246,7 +248,7 @@ export async function publishActivity(
   already: Set<string>,
 ): Promise<string[]> {
   const pending = drafts.filter((row) => row.key && !already.has(row.key)).slice(0, 40);
-  if (!pending.length) return [];
+  if (!pending.length || isOffline()) return [];
   const supabase = getSupabase();
   const rows = pending.map((row) => ({
     user_id: userId,

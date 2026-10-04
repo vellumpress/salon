@@ -1,16 +1,42 @@
 import { useEffect, useState } from "react";
 import type { ErrorComponentProps } from "@tanstack/react-router";
 import { TriangleAlert } from "lucide-react";
-import { forceChunkReload, isChunkLoadError, recoverFromChunkLoad } from "@/lib/chunk-reload";
+import { forceChunkReload, isChunkLoadError, isOfflineNow, recoverFromChunkLoad } from "@/lib/chunk-reload";
 
 export function AppErrorComponent({ error }: ErrorComponentProps) {
   const chunk = isChunkLoadError(error);
-  const [mode, setMode] = useState<"refresh" | "reload" | "error">(chunk ? "refresh" : "error");
+  const [mode, setMode] = useState<"refresh" | "reload" | "offline" | "error">(
+    chunk ? "refresh" : "error",
+  );
 
   useEffect(() => {
     if (!chunk) return;
+    if (isOfflineNow()) {
+      setMode("offline");
+      return;
+    }
     setMode(recoverFromChunkLoad() ? "refresh" : "reload");
   }, [chunk]);
+
+  if (mode === "offline") {
+    return (
+      <main
+        className="flex min-h-svh flex-col justify-end bg-paper p-8 text-ink"
+        data-offline=""
+        aria-live="polite"
+      >
+        <p className="type-kicker text-muted">Offline</p>
+        <p className="mt-2 type-title">tbr is on this phone.</p>
+        <button
+          type="button"
+          className="mt-6 inline-flex h-12 w-fit items-center justify-center bg-ink px-4 text-sm text-paper"
+          onClick={() => location.reload()}
+        >
+          Retry
+        </button>
+      </main>
+    );
+  }
 
   if (mode === "refresh") {
     return (

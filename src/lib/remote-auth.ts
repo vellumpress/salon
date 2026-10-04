@@ -76,8 +76,11 @@ export function shouldPreserveRecoverySession(event: string | null | undefined, 
 
 export function isNetworkError(error: unknown) {
   if (error instanceof TypeError) return true;
+  const name =
+    error && typeof error === "object" && "name" in error ? String((error as { name: unknown }).name) : "";
+  if (name === "AbortError") return true;
   const message = error instanceof Error ? error.message : String(error ?? "");
-  return /failed to fetch|network|load failed/i.test(message);
+  return /failed to fetch|network|load failed|aborted|timeout/i.test(message);
 }
 
 export function mapAuthError(error: { message?: string; code?: string } | null): AuthStep {

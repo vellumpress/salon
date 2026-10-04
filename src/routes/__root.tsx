@@ -2,6 +2,7 @@ import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-r
 import { useEffect } from "react";
 import { AuthProvider } from "@/lib/auth/provider";
 import { DeferredRemoteSync } from "@/components/deferred-remote-sync";
+import { OfflineMark } from "@/components/offline-mark";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { APP_DESCRIPTION, APP_NAME, WORDMARK, withBase } from "@/lib/site";
 import { attachVisualViewport } from "@/lib/vvh";
@@ -84,6 +85,7 @@ export const Route = createRootRoute({
         <VisualViewport />
         <DeferredFonts />
         <DeferredRemoteSync />
+        <OfflineMark />
         <AuthProvider>
           <Outlet />
         </AuthProvider>

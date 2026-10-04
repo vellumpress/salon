@@ -10,21 +10,28 @@ export function DeferredRemoteSync() {
   useEffect(() => {
     let cancel = false;
     const run = () => {
-      void import("@/components/remote-sync").then((mod) => {
-        if (!cancel) setSync(() => mod.RemoteSync);
-      });
+      if (cancel) return;
+      if (typeof navigator !== "undefined" && navigator.onLine === false) return;
+      void import("@/components/remote-sync")
+        .then((mod) => {
+          if (!cancel) setSync(() => mod.RemoteSync);
+        })
+        .catch(() => undefined);
     };
+    window.addEventListener("online", run);
     if (typeof requestIdleCallback === "function") {
       const id = requestIdleCallback(run, { timeout: 2200 });
       return () => {
         cancel = true;
         cancelIdleCallback(id);
+        window.removeEventListener("online", run);
       };
     }
     const id = window.setTimeout(run, 1400);
     return () => {
       cancel = true;
       window.clearTimeout(id);
+      window.removeEventListener("online", run);
     };
   }, []);
 

@@ -4,6 +4,7 @@ import test from "node:test";
 import {
   confirmEmailMessage,
   HANDLE_TAKEN_MESSAGE,
+  isNetworkError,
   mapAuthError,
   recoveryLinkKind,
   RESET_EMAIL_RATE,
@@ -19,6 +20,10 @@ test("auth errors stay honest about confirmation and a taken handle", () => {
   assert.match(confirmEmailMessage("mina"), /Check your email to confirm @mina/);
   assert.match(confirmEmailMessage("mina"), /this phone/);
   assert.equal(HANDLE_TAKEN_MESSAGE, "That @handle is taken.");
+  const aborted = new Error("The operation was aborted.");
+  aborted.name = "AbortError";
+  assert.equal(isNetworkError(aborted), true);
+  assert.equal(isNetworkError(new TypeError("Failed to fetch")), true);
 });
 
 test("password reset mail stays neutral except for the send rate limit", () => {

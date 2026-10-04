@@ -31,6 +31,7 @@ import {
 } from "@/lib/clubs";
 import { defaultSitClock, etWallToIso, formatClubWhen, formatClubWhenLong } from "@/lib/club-time";
 import { enterClubCompose, exitClubCompose, syncVisualViewport } from "@/lib/vvh";
+import { isOffline } from "@/lib/net";
 import { salonShareText, salonShareTitle, staticActionMiss } from "@/lib/site";
 import { useShelfSearch } from "@/components/shelf-search";
 import { HostSitForm } from "@/components/host-sit-form";
@@ -86,6 +87,7 @@ function TogetherPage() {
   useEffect(() => setHydrated(true), []);
 
   useEffect(() => {
+    if (isOffline()) return;
     let live = true;
     void listUpcomingSessions()
       .then((rows) => {
@@ -127,6 +129,7 @@ function TogetherPage() {
       setJoinMissing(false);
       return;
     }
+    if (isOffline()) return;
     let live = true;
     void getClubByInvite(join)
       .then(async (club) => {

@@ -128,6 +128,17 @@ export async function loadWork(
   id: string,
   onUpdate?: (work: Work) => void,
 ): Promise<Work | undefined> {
+  try {
+    return await loadWorkInner(id, onUpdate);
+  } catch {
+    return cache.get(id);
+  }
+}
+
+async function loadWorkInner(
+  id: string,
+  onUpdate?: (work: Work) => void,
+): Promise<Work | undefined> {
   if (!id || deviceImport(id)) return undefined;
   const cached = cache.get(id);
   if (cached) onUpdate?.(cached);
@@ -135,7 +146,7 @@ export async function loadWork(
 
   const localLoader = isLocalBound(id) ? files[`./catalog/texts/${id}.json`] : undefined;
   if (typeof localLoader === "function") {
-    void hydrateLocal(id);
+    void hydrateLocal(id).catch(() => undefined);
     const opened = cached ?? (await loadLocalOpening(id));
     // The full bind can land while the opening is parsing. Publish that,
     // not the sit, or the reader stays on the first pages.

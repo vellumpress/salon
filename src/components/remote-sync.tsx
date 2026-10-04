@@ -14,6 +14,7 @@ import {
   wantedFollowHandles,
 } from "@/lib/remote-directory";
 import { normalizeHandle } from "@/lib/social";
+import { isOffline } from "@/lib/net";
 import { getSupabase } from "@/lib/supabase";
 import { useTbr } from "@/lib/store";
 
@@ -29,7 +30,9 @@ export function RemoteSync() {
   useEffect(() => {
     const supabase = getSupabase();
     const apply = (id: string | null) => setRemoteSession(id);
-    void supabase.auth.getSession().then(({ data }) => apply(data.session?.user.id ?? null));
+    if (!isOffline()) {
+      void supabase.auth.getSession().then(({ data }) => apply(data.session?.user.id ?? null));
+    }
     const { data } = supabase.auth.onAuthStateChange((_event, session) => {
       apply(session?.user.id ?? null);
     });
@@ -41,6 +44,7 @@ export function RemoteSync() {
     let cancel = false;
 
     const claimAndFollow = async (refreshActivity: boolean) => {
+      if (isOffline()) return;
       const state = useTbr.getState();
       const mine = normalizeHandle(state.handle ?? "");
       const wanted = wantedFollowHandles(mine, state.following ?? [], state.contacts ?? []);
@@ -96,6 +100,7 @@ export function RemoteSync() {
       window.clearTimeout(timer);
       timer = window.setTimeout(() => {
         void (async () => {
+          if (isOffline()) return;
           const { data } = await getSupabase().auth.getSession();
           const session = data.session;
           if (cancel || !session) return;
