@@ -1968,10 +1968,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "mary-magdalen",
       "the-hoop",
       // Mira Sat 3 Oct 2026 POST-#227 CLEAR — Love's Shadow leads. Never Featured.
-      // Lewis and Irene sits here, carefully (the content notes).
+      // Lewis and Irene is Next carefully only, not on any Ritual lane (a novel sit).
       // A Monkey is the Host-only story: unwind only, the evening seat, never before-sleep.
       "love-s-shadow",
-      "lewis-and-irene",
       "a-monkey",
     ],
   },
