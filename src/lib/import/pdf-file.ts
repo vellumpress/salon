@@ -1,10 +1,11 @@
-import { installPromiseWithResolvers } from "./promise-with-resolvers.ts";
-import { getDocument, GlobalWorkerOptions, PasswordException } from "pdfjs-dist/legacy/build/pdf.mjs";
+import { getDocument, GlobalWorkerOptions, PasswordException, PDFWorker, shadow } from "pdfjs-dist/legacy/build/pdf.mjs";
 import type { PDFDocumentProxy, PDFPageProxy } from "pdfjs-dist";
-import { withBase } from "../site.ts";
-import { PDF_FAIL, PDF_LOCKED, PDF_MAX_BYTES, PDF_NOT, PDF_TOO_LARGE, SCANNED_PDF } from "./messages.ts";
-import { workFromPdfPages, type PdfOutlineHeading, type PdfTextLine, type PdfTextPage } from "./pdf-text.ts";
+import workerUrl from "pdfjs-dist/legacy/build/pdf.worker.min.mjs?url";
 import type { Work } from "../literature.ts";
+import { PDF_LOCKED, PDF_MAX_BYTES, PDF_NOT, PDF_TOO_LARGE, SCANNED_PDF } from "./messages.ts";
+import { isKnownPdfMessage, isWorkerStartupError, pdfFail } from "./pdf-error.ts";
+import { workFromPdfPages, type PdfOutlineHeading, type PdfTextLine, type PdfTextPage } from "./pdf-text.ts";
+import { installPromiseWithResolvers } from "./promise-with-resolvers.ts";
 
 const PAGE_CAP = 500;
 
@@ -48,9 +49,41 @@ let workerSet = false;
 
 function ensureWorker() {
   if (workerSet) return;
-  // Vite copies this to /salon/pdf.worker.min.js (Pages base). Module worker.
-  GlobalWorkerOptions.workerSrc = withBase("/pdf.worker.min.js");
+  // Vite emits /salon/assets/pdf.worker.min-<hash>.js, polyfill prepended.
+  // The hash changes when the worker bytes change, so a cached copy cannot
+  // outlive the build that produced it.
+  GlobalWorkerOptions.workerSrc = workerUrl;
   workerSet = true;
+}
+
+function isLocked(err: unknown) {
+  return err instanceof PasswordException || (err instanceof Error && /password/i.test(err.message));
+}
+
+function fail(err: unknown): never {
+  console.error(err);
+  throw pdfFail(err);
+}
+
+/**
+ * pdf.js tries its own fake worker by importing workerSrc. If that import
+ * already failed, the rejection is cached. Publishing the bundled worker on
+ * globalThis.pdfjsWorker, and replacing that cache, runs the next open on
+ * the main thread.
+ */
+async function useMainThreadWorker() {
+  installPromiseWithResolvers();
+  const mod = await import("pdfjs-dist/legacy/build/pdf.worker.min.mjs");
+  const handler = mod.WorkerMessageHandler;
+  const scope = globalThis as typeof globalThis & {
+    pdfjsWorker?: { WorkerMessageHandler: typeof handler };
+  };
+  scope.pdfjsWorker = { WorkerMessageHandler: handler };
+  try {
+    shadow(PDFWorker, "_setupFakeWorkerGlobal", Promise.resolve(handler));
+  } catch {
+    /* The getter still prefers globalThis.pdfjsWorker when it has not run. */
+  }
 }
 
 function italicFace(family: string, fontName: string, font: { italic?: boolean; name?: string } | null) {
@@ -159,16 +192,9 @@ async function outlineOf(doc: PDFDocumentProxy): Promise<PdfOutlineHeading[]> {
   return out;
 }
 
-export async function workFromPdfFile(file: File): Promise<Work> {
-  if (file.size > PDF_MAX_BYTES) throw new Error(PDF_TOO_LARGE);
-  const bytes = new Uint8Array(await file.arrayBuffer());
-  if (bytes.byteLength > PDF_MAX_BYTES) throw new Error(PDF_TOO_LARGE);
-  if (!isPdfMagic(bytes)) throw new Error(PDF_NOT);
-
-  installPromiseWithResolvers();
-  ensureWorker();
+async function readPdf(bytes: Uint8Array, file: File): Promise<Work> {
   const task = getDocument({
-    data: bytes,
+    data: bytes.slice(),
     disableRange: true,
     disableStream: true,
   });
@@ -182,10 +208,13 @@ export async function workFromPdfFile(file: File): Promise<Work> {
     let chars = 0;
     for (let n = 1; n <= doc.numPages; n += 1) {
       const page = await doc.getPage(n);
-      const lines = await pageLines(page);
-      chars += lines.reduce((sum, line) => sum + line.text.length, 0);
-      pages.push({ lines });
-      page.cleanup();
+      try {
+        const lines = await pageLines(page);
+        chars += lines.reduce((sum, line) => sum + line.text.length, 0);
+        pages.push({ lines });
+      } finally {
+        page.cleanup();
+      }
       if (n % 8 === 0) await new Promise((resolve) => setTimeout(resolve, 0));
     }
     if (chars < 40) throw new Error(SCANNED_PDF);
@@ -198,15 +227,34 @@ export async function workFromPdfFile(file: File): Promise<Work> {
       pages,
       outline,
     });
-  } catch (err) {
-    if (err instanceof Error) {
-      if (err.message === SCANNED_PDF || err.message === PDF_TOO_LARGE || err.message === PDF_NOT) throw err;
-      if (err instanceof PasswordException || /password/i.test(err.message)) throw new Error(PDF_LOCKED);
-    }
-    console.error(err);
-    throw new Error(PDF_FAIL);
   } finally {
     await doc?.cleanup().catch(() => undefined);
     await task.destroy().catch(() => undefined);
+  }
+}
+
+export async function workFromPdfFile(file: File): Promise<Work> {
+  if (file.size > PDF_MAX_BYTES) throw new Error(PDF_TOO_LARGE);
+  const bytes = new Uint8Array(await file.arrayBuffer());
+  if (bytes.byteLength > PDF_MAX_BYTES) throw new Error(PDF_TOO_LARGE);
+  if (!isPdfMagic(bytes)) throw new Error(PDF_NOT);
+
+  installPromiseWithResolvers();
+  ensureWorker();
+  try {
+    return await readPdf(bytes, file);
+  } catch (err) {
+    if (err instanceof Error && isKnownPdfMessage(err.message)) throw err;
+    if (isLocked(err)) throw new Error(PDF_LOCKED);
+    if (!isWorkerStartupError(err)) throw fail(err);
+  }
+
+  try {
+    await useMainThreadWorker();
+    return await readPdf(bytes, file);
+  } catch (err) {
+    if (err instanceof Error && isKnownPdfMessage(err.message)) throw err;
+    if (isLocked(err)) throw new Error(PDF_LOCKED);
+    throw fail(err);
   }
 }

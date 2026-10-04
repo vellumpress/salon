@@ -9,6 +9,7 @@ import {
   type SavedImport,
 } from "@/lib/import/idb";
 import { SAVE_FAIL } from "@/lib/import/messages";
+import { pdfFailDetail } from "@/lib/import/pdf-error";
 import { useTbr } from "@/lib/store";
 
 function pace(index: number, total: number, done: boolean) {
@@ -25,6 +26,7 @@ export function HomeImport() {
   const [url, setUrl] = useState("");
   const [busy, setBusy] = useState<"pdf" | "link" | null>(null);
   const [error, setError] = useState("");
+  const [errorDetail, setErrorDetail] = useState("");
 
   useEffect(() => {
     let live = true;
@@ -61,16 +63,27 @@ export function HomeImport() {
     await navigate({ to: "/read/$workId", params: { workId: id } });
   }
 
+  function showError(err: unknown, fallback: string) {
+    if (err instanceof Error && err.message) {
+      setError(err.message);
+      setErrorDetail(pdfFailDetail(err));
+      return;
+    }
+    setError(fallback);
+    setErrorDetail("");
+  }
+
   async function onPdf(file: File | undefined) {
     if (!file || busy) return;
     setBusy("pdf");
     setError("");
+    setErrorDetail("");
     try {
       const { workFromPdfFile } = await import("@/lib/import/pdf-file");
       const work = await workFromPdfFile(file);
       await openSaved(work, file.name || "PDF", "pdf");
     } catch (err) {
-      setError(err instanceof Error ? err.message : "This PDF would not open.");
+      showError(err, "This PDF would not open.");
       setBusy(null);
     }
   }
@@ -81,6 +94,7 @@ export function HomeImport() {
     if (next.length < 4 || busy) return;
     setBusy("link");
     setError("");
+    setErrorDetail("");
     try {
       const { workFromLink } = await import("@/lib/import/fetch-link");
       const work = await workFromLink(next);
@@ -92,7 +106,7 @@ export function HomeImport() {
       }
       await openSaved(work, source, "link");
     } catch (err) {
-      setError(err instanceof Error ? err.message : "This page would not come.");
+      showError(err, "This page would not come.");
       setBusy(null);
     }
   }
@@ -160,6 +174,7 @@ export function HomeImport() {
       {error ? (
         <p className="home-import-error" role="alert">
           {error}
+          {errorDetail ? <span className="home-import-error-detail">{errorDetail}</span> : null}
         </p>
       ) : null}
 

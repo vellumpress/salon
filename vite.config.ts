@@ -18,6 +18,8 @@ import { isMigrationFile } from "./scripts/migration-plan.mjs";
 import { writeSpa404Html } from "./scripts/spa-pages-fallback.mjs";
 // @ts-expect-error JS plugin alongside the TS vite config
 import { ssrMatchIdNulPlugin } from "./scripts/ssr-nul.mjs";
+// @ts-expect-error JS plugin alongside the TS vite config
+import { pdfWorkerUrlPlugin } from "./scripts/pdf-worker-url-plugin.mjs";
 
 /** The files `src/lib/db.ts` globs — same directory, same non-recursive scope. */
 function hasGlobbedMigrations(root: string): boolean {
@@ -185,6 +187,8 @@ export default defineConfig(({ command, isPreview }) => {
     },
     resolve: { tsconfigPaths: true },
     plugins: [
+      // Hashed pdf.js worker URL. Before other resolvers claim the ?url import.
+      pdfWorkerUrlPlugin(),
       // Before prerender: match ids must not dehydrate "/" as a raw NUL.
       ssrMatchIdNulPlugin(),
       pgliteBootstrapPlugin(),
