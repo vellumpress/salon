@@ -1,0 +1,316 @@
+{
+  "id": "maximina",
+  "title": "Maximina",
+  "author": "Armando Palacio Valdés (trans. Nathan Haskell Dole)",
+  "year": "1888",
+  "note": "Project Gutenberg 33244 (Armando Palacio Valdés, Maximina, translated by Nathan Haskell Dole; New York: Thomas Y. Crowell & Co., copyright 1888). Whole novel, 31 untitled chapters (PG l.78–14206), labelled 'Chapter I' … 'Chapter XXXI'. The title page, 'END OF THE NOVEL.' and the PG boilerplate out (no dedication or preface printed). Straight quotes kept as printed; 'Dona', 'senorito' and the other Spanish words without tildes, as printed; the translator's 62 footnotes each a Note: line after its paragraph; double hyphens set as em dashes (the colon-dash before speech as ':—'); the four-hyphen name blanks as long dashes; italics kept, stops outside them. Long paragraphs soft-broken into separate screens; no words changed. EN 1888. PG reading-ease 78.1 (for the whole book) — no invented Launch rank. Place: Pasajes (Spain). Sits: Next carefully only. Host intro: Miguel Rivera comes back to Pasajes to marry Maximina, the shy young girl he met in the fishing village; they marry, set up house in Madrid among his step-mother, his sister Julia and his political friends, and the novel follows the marriage — the sequel to Riverita. Armando Palacio Valdés, in Nathan Haskell Dole's English. A heads-up before you start: later chapters include a suicide, an attempted assault, and a death from fever. A young man shoots himself in the head and dies, blind, twelve days later; a man forces his attentions on Maximina and she holds a razor to her own throat to stop him; and near the end Maximina dies of a fever, and the book closes on Miguel's grief and religious despair. Maximina also gives birth, revolvers are drawn, a child's death from measles is recalled, duels are talked of, and there is a period slur in passing and a period generalization about women. All of it is left as printed. The first sitting is a homecoming and an engagement party in Pasajes, and contains none of these.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Pasajes",
+      "place": "Chapter I · Pasajes",
+      "reentry": "Miguel reached Pasajes late Friday afternoon. On alighting from the train he found Ursula's boat moored to the shore.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Miguel reached Pasajes late Friday afternoon. On alighting from the train he found Ursula's boat moored to the shore."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"Good afternoon, Don Miguel,\" said the boat-woman, showing genuine joy in her face, where the fires of alcohol were flaming more than ever brilliantly; \"I was beginning to think that I should not see you again.\""
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"Indeed!\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"How should I know?... Men are so queer about getting married!.... But, senorito, you can't imagine how glad everybody in the village was to hear about it!.... Only a few jealous women would not believe it.... How I will make 'em fume to-night! I'm going all around telling everybody that I myself brought you over to Don Valentin's.\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"Don't think of making any one fume,\" replied the young man, laughing; \"but bend to your oars a little more.\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Are you in a hurry to see Maximina?\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Of course I am.\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "It was the twilight hour: the shadows clustering in the recesses of the bay had already crept far up on the mountains. On the few vessels at anchor the hands were busy loading and unloading their cargoes, and their shouts and the creaking of windlasses were the only sounds that disturbed the peacefulness of the place."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Directly in front a few lights began to appear in the houses. Miguel did not take his eyes from one that gleamed faintly in the dwelling of the ex-captain of the *Rapido*. He felt a pleasant and delicious desire which from time to time made his lips tremble and his heart beat more rapidly. But no one as yet was in sight on the wooden balcony where so many times he had reclined, watching the arrival and departure of the ships. His eager face betrayed the thoughts that possessed him. Ursula smiled as her sharp eyes watched him covertly."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "He leaped on shore, dismissed the boat-woman, mounted the uneven stone stairway, and made his way through the single, crooked street of the village. As he reached the little square, he saw on the balcony of his sweetheart's house a figure which quickly disappeared. The young man smiled with joy, and with a rapid step made his way through the doorway. Without looking in at the tobacconist's shop he rapped on the door with his knuckles."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Who is it?\" cried a sweet, mellow voice within, which echoed in his heart like heavenly music."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "\"It is Miguel.\""
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "The latch was raised; he pushed the door open and saw Maximina herself, with a candle in her hand, on the first landing of the stairway."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "She wore a dress of black and white plaid, and her hair was in a braid as usual. She was a little paler than ordinary, and around her soft blue eyes delicate circles were traced, showing the effect of her recent anxieties. She smiled and blushed at sight of Miguel, who in two bounds cleared the distance between them, and clasping her in his arms, imprinted a reasonable score of kisses on her face in spite of the girl's protestations and endeavors to tear herself away."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"I am looking at you!\" said a voice from overhead."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "It was Dona Rosalia. In spite of the jocose tone in which she spoke, Maximina was so startled that she let the candle fall, and they were left in perfect darkness, until Dona Rosalia, choking with laughter, came with a lamp; but her niece had disappeared."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"Did you ever see a girl like her? She is going to be married to-morrow, and yet she is as bashful as though she had known you only since yesterday.... Most likely she has locked herself up in her room.... It will make you some trouble to get her out now!\""
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Miguel went up to her room and called gently at the door."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "There was no answer."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"Maximina,\" he said, with difficulty restraining his laughter."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"I don't want to! I don't want to!\" replied the girl, with amusing desperation."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"But what is it that you do not want to do?\""
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"I don't want to come out!\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"Ah! you don't want to come out?... Then see here; the cure is not going to marry us with so much wood separating us!...\" A few minutes of silence followed. Miguel put his mouth down to the key-hole, and said, lowering his voice:—"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"Why won't you open the door, *tonta*?... Does it make you feel bashful?\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "Note: Foolish maiden."
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "\"Yes,\" whispered the girl, on the other side."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "\"Don't be alarmed! Your aunt isn't here.\""
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "After some time, and by dint of many persuasive words, she made up her mind to open the door. Even then she was blushing to her ears. Miguel captured her hands, and said, with a gentle reproach in his voice:—"
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Come now, little rogue, why didn't you wait for me on the balcony?... Why, I looked for you there until I almost put my eyes out! But not a sign of Maximina!\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "\"Yes, yes!\""
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "\"What does 'yes, yes' mean? Did you wait for me?\""
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "\"I have been on the balcony ever since dinner! I saw you get into the boat; I saw you talking and laughing with Ursula; and I saw you jump on shore, and then from the other balcony I saw you when you reached the square....\""
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"That last I know you did.... But we shall see; when are you going to dismount from your high horse? Are you going to treat me this way after we are married?\""
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "\"Oh, no!\""
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "They went down into the parlor, where they found Don Valentin, Adolfo, and the girls, who warmly welcomed the young man. The welcome extended him by the ex-captain was not unlike that of an uncommunicative whale; but there was something about him that made it evident that he was satisfied."
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "Dona Rosalia at that instant came in; and when she saw Maximina, she could not refrain from laughing, whereupon the maiden dashed out of the room with all haste, and flew up the stairs like a hurricane: but Miguel succeeded in overtaking her before she reached her chamber. While he was exhausting all his powers of persuasion to induce her to return with him to the sitting-room, Dona Rosalia, vexed at her running away, called from below:—"
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "\"Leave her, Don Miguel; leave that foolish little goose! I don't see how any one can fall in love with her! ough! what a simpleton!\""
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "Of course Maximina, at this new indignity, began to cry; but Miguel was there to comfort her, and no one in the world could do so with greater success."
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "After a little, the lovers came down again, and quite a little *tertulia* or reception, composed of neighbors who dropped in to congratulate them, was held in the parlor. Dona Rosalia did not appear for some time. She was unquestionably annoyed with her niece because of her terrible crime of being bashful."
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "The nucleus of the *tertulia* was formed by a dozen young girls eager to see Miguel's gifts; and he, by refusing to accede to this desire, which he could scarcely understand, gave them an hour of real torture. At last Dona Rosalia called him aside and assured him that it would be the proper thing for him to exhibit them."
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "The young man was persuaded to do this, and he dragged into the middle of the room his trunk and a grip-sack in which he had brought some jewels. He pulled out the two solitary dresses which he had brought for his bride: the one she was to wear during the ceremony; the other was her travelling-dress. Both aroused great admiration by their softness and elegance; the same with the set of diamonds and pearls. The village maidens could not handle and praise these trinkets enough, and they showed by the extravagance of their exclamations that they regarded the possession of such things as the greatest joy in the world."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "Maximina, standing behind, with her eyes wide open, looked on with more astonishment than curiosity; her young friends from time to time cast on her vivacious and questioning glances, to which she answered with a slight and unnatural smile, without losing the frightened expression from her face; this was even increased when she saw lifted out of the trunk her wedding-dress made of white silk trimmed with orange flowers. A deep color spread over her face, and neither the flush nor her trepidation departed from her during the evening."
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "They spent the time in gayly singing and dancing to the music of the guitar. Don Valentin—oh, unheard of gallantry!—danced a *zorcio* with a handsome maiden, who, by her persuasive eloquence succeeded in warming up his heels; but he had to give it up suddenly in disgust, owing to an excruciating attack of the gout which paralyzed his right foot. His sweet spouse consoled him by saying:—"
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "\"Fine employment that is for you!... Simply to show off!\""
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "Miguel danced the *giraldilla*, constantly taking Maximina for his partner. When they became tired, they would go and sit down together in some corner of the room and exchange few words, but numberless glances. The brigadier's son, seeing that his lady-love was suffocating, took a fan and began to fan her; but Maximina, noticing that they were watched and that some smiled, stopped him, gently saying:—"
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "\"I don't need to be fanned, thank you very much. You are much more heated than I....\""
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "\"Why do you address me so formally? Is that the way we ought to do?\""
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "Note: She says *Usted esta* instead of *tu estas*."
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "\"Well, then, *thou* art more heated than I.... Fan thyself.\""
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "At ten o'clock all departed, taking leave of the lovers, with smiles more or less malicious."
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "\"Good night, Maximina; sleep well.\"—\"Your last night of maidenhood, dear! Beware! Your last night!\" said one ancient matron, the mother of at least eleven sons."
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "Maximina smiled, abashed."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "\"*Adios! adios!*... How it will pain us to have you leave us!\""
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "And a few of the young maidens kissed her again and again, with great manifestations of love."
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "\"Girl, don't you forget that this is your last night of maidenhood! Ponder on it! It is a solemn thing!\" said the matron once more."
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "Again Maximina smiled."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "Then the old woman frowned, and whispered to the one who was standing next her:—"
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "\"That child imagines that she is going on a pilgrimage! *Ay Dios!* It is evident that she has not a grain of feeling. Marriage is a very serious affair... very serious.\" And until she reached her own house she did not cease discoursing long and learnedly on the seriousness of this tie."
+    }
+  ]
+}

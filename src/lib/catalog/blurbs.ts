@@ -655,6 +655,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: Thérèse has been tried for trying to poison her husband with arsenic, and the novel goes back over how she did it. Her family talks with open antisemitism and makes generalizations about race, she thinks about suicide, an aunt dies, a mother dies in childbirth, and Thérèse is shut away in the house until she wastes away. All of it is left as printed. The first sitting covers only her acquittal.",
   "elysium":
     "A heads-up before you start: the First World War sits just behind this story. The soldier is home from the front in Flanders on five days' leave.",
+  "maximina":
+    "A heads-up before you start: later in the novel, a man forces his attentions on Maximina and she holds a razor to her own throat to make him leave. A young man shoots himself in the head and dies, blind, twelve days later. Maximina gives birth, and near the end she dies of a fever. A child's death from measles is recalled, revolvers are drawn, and the word gypsy appears twice as a period slur. All of it is left as printed. The first sitting covers only the homecoming and the engagement party in Pasajes.",
   "wedding-day":
     "On his wedding morning Bert cuts off his moustache while the cab waits, just to feel free.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":

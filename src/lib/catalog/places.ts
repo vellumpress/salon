@@ -202,6 +202,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-counterfeiters": { label: "Luxembourg Gardens, Paris", region: "fr" },
   "therese": { label: "Argelouse", region: "fr" },
   "elysium": { label: "Pall Mall, London", region: "gb" },
+  "maximina": { label: "Pasajes", region: "es" },
   "look-back-on-happiness": { label: "Norway forest", region: "no" },
   "father-of-yoto": { label: "Limehouse", region: "gb" },
   "growth-of-the-soil": { label: "Norway", region: "no" },

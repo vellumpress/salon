@@ -125,6 +125,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "the-counterfeiters": { label: "Luxembourg Gardens, Paris", region: "fr" },
     "therese": { label: "Argelouse", region: "fr" },
     "elysium": { label: "Pall Mall, London", region: "gb" },
+    "maximina": { label: "Pasajes", region: "es" },
     "growth-of-the-soil": { label: "Norway", region: "no" },
     "nada-the-lily": { label: "Zululand", region: "za" },
     "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
@@ -446,4 +447,10 @@ test("POST-v3 Ritual: NO_PRINTED_PLACE is only Wedding-Day, and it resolves no c
     assert.equal(chipOnlyLabel(id), null, id);
     assert.equal(id in CHIP_ONLY_PLACE, false, id);
   }
+});
+
+test("Sun 4 Oct PM place reuses es; no new region key", () => {
+  assert.ok(REGION_SHAPES.es?.d, "es shape");
+  assert.deepEqual(placeFor(shelfWork("maximina")!), { label: "Pasajes", region: "es" });
+  assert.equal(CHIP_ONLY_PLACE["maximina"], undefined);
 });

@@ -410,6 +410,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
   Spain: [
     "Armando Palacio Valdés",
     "Armando Palacio Valdés (trans. Minna Caroline Smith)",
+    "Armando Palacio Valdés (trans. Nathan Haskell Dole)",
     "Benito Pérez Galdós",
     "Emilia Pardo Bazán",
     "Emilia Pardo Bazán (tr. Mary J. Serrano)",
@@ -736,6 +737,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-counterfeiters": "France",
   "therese": "France",
   "elysium": "United Kingdom",
+  "maximina": "Spain",
   "my-antonia": "United States",
   "look-back-on-happiness": "Norway",
   "father-of-yoto": "United Kingdom",
