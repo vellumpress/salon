@@ -1,0 +1,136 @@
+{
+  "id": "therese",
+  "title": "Thérèse",
+  "author": "François Mauriac (tr. Eric Sutton)",
+  "year": "1928",
+  "note": "Project Gutenberg 73670 (François Mauriac, Thérèse (Thérèse Desqueyroux), translated by Eric Sutton; New York: Boni & Liveright, 1928; the French original 1927). Whole novel, thirteen untitled chapters (PG l.122–3789), labelled 'Chapter I' … 'Chapter XIII', after the Baudelaire epigraph and the author's preface to Thérèse (l.64–107) as its own front section. The half-title, title page, copyright, 'THE END' and the transcriber's note out. Curly quotes kept as printed; the epigraph's capitals kept as printed; the printed breaks kept; italics kept, stops outside them; double hyphens set as em dashes. Long paragraphs soft-broken into separate screens; no words changed. EN 1928 (Boni & Liveright). PG lists no reading-ease score for this book — none invented. Place: Argelouse. Sits: Next carefully only. Host intro: The Landes pine country near Bordeaux, the 1920s. Thérèse Desqueyroux walks out of the law-courts free: the case against her is dismissed, because her husband Bernard has backed her story. On the night drive home to Argelouse she goes over the marriage that brought her to this, and what she must say to him. François Mauriac's novel, in Eric Sutton's English. A heads-up before you start: the book turns on Thérèse's attempted poisoning of her husband with arsenic and forged prescriptions, and the inquiry and the dismissed case; the first sit opens as the case ends. Later Bernard's family talk is antisemitic, there are generalizations about race, Thérèse considers suicide, Aunt Clara dies, and Thérèse is shut away in the house and wastes away, all left as printed.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · Argelouse",
+      "place": "Chapter I · Argelouse",
+      "reentry": "The lawyer opened a door. Thérèse Desqueyroux, as she stood in that remote corridor of the law-courts, felt the fog upon her face and inhaled it deeply. She was afraid some one might be waiting for he",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The lawyer opened a door. Thérèse Desqueyroux, as she stood in that remote corridor of the law-courts, felt the fog upon her face and inhaled it deeply. She was afraid some one might be waiting for her, and hesitated to go out. A man with his coat collar turned up appeared from the shadow of a plane tree, and she recognised her father."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "“All right,” cried the lawyer; “case dismissed”; and, turning to Thérèse, he added, “You can go out now; no one is there.”"
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "She went down the damp steps; the little Square seemed indeed deserted. Her father did not kiss her, did not even look at her. He asked a few questions of Duros, the lawyer, who answered in low tones, as though he were afraid of being overheard. She just managed to catch what they were saying."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "“I shall get the official notification to-morrow.”"
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "“I suppose nothing can go wrong now?”"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "“No, nothing; it’s all over.”"
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "“I suppose after my son-in-law’s statement, it was a certainty?”"
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "“Well, I’m not so sure.... You never can tell.”"
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "“But after he’d said definitely that he had not counted the drops....”"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "“My dear Larroque, in affairs of this kind the victim’s evidence....”"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "Here Thérèse broke in; “But there wasn’t any victim.”"
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "“I meant by victim, the victim of his own imprudence, Madame.”"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "The two men stared at her for a moment as she stood there motionless, wrapped in her cloak, and looked curiously at her expressionless face. She asked where the carriage was; her father had arranged for it to wait on the Budos road, outside the town, so as not to attract attention."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "They crossed the Square, where leaves from the plane trees were sticking to the rain-soaked benches. Fortunately the days had grown much shorter: besides, to get to the Budos road, they could go through the most unfrequented streets of the little provincial town. Thérèse walked between the two men (she was nearly half a head taller than either of them), and they began a further discussion as if she had not been there; but finding the intervening feminine presence inconvenient they began unconsciously to elbow her out of the way. She accordingly dropped a little behind, and took the glove off her left hand so as to be able to pick the moss off the ancient stone walls at her side. From time to time a workman on a bicycle, or a trap came past, and she drew close in to the houses to avoid being splashed with mud. But Thérèse was hidden by the gathering dusk, and no one recognised her. The smell of fog and baking bread was for her not merely the usual evening smell of a little town; it was the perfume of the life that had been restored to her at last. She shut her eyes to savour the moist leafy fragrance of the sleeping earth, and tried not to listen to the words of the short bandy-legged gentleman who did not once turn his head towards his daughter. She might have fallen at the roadside and neither he, nor Duros, would have noticed it. They were no longer afraid to raise their voices."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "“Monsieur Desqueyroux’s statement was all that could be desired, but there was that prescription,—in point of fact, it was a question of forgery. And it was Doctor Pédemay who had brought the charge....”"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "“But he withdrew it.”"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "“I know; but her explanation—this mysterious individual who handed her a prescription....”"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "Thérèse walked more slowly, not because she was tired, but to get out of earshot of these phrases that had been dinned into her brain for so many weeks; but it was no use. She could not help hearing her father’s raucous accents:"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "“I told her over and over again that she *must* try to think of something else.”"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "He was quite right, he had indeed said so very often. But what was he worrying about now? What he called the honour of the name, was safe: the whole story would have been forgotten by the time of the Senatorial elections, Thérèse thought to herself, as she did her best not to catch up the two men; but in the heat of the discussion, they stopped, gesticulating at each other, half-way down the street."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "“My advice to you, Larroque, is to face the thing out: take the offensive in next Sunday’s *Semeur*: I’ll see about it if you like. Get them to put in a notice headed ‘An Infamous Rumour’ or something like that.”"
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "“I don’t agree with you, my dear fellow: as a matter of fact there is no case to answer, the prosecution obviously had not a leg to stand on; they did not even consult hand-writing experts. I am sure the best thing will be to say nothing, and hush it all up. I will do what is necessary and I won’t spare expense: we can’t afford to have any scandal, for the sake of the family.”"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "They had walked on again by this time, and Thérèse did not hear Duros’ answer. She inhaled the damp night air once more as though she were afraid of choking; and suddenly there came before her mind the unknown face of her maternal grandmother Julie Bellade: it was indeed unknown, for neither the Larroque nor the Desqueyroux families possessed a single likeness of her, and nothing was known about her except that she had one day disappeared. Thérèse realised that she too might have been wiped out of existence, and later on not even her little daughter Marie would have been allowed to find in an album the likeness of one who had brought her into the world. At that moment Marie was already asleep in a room at Argelouse, where Thérèse would arrive late that evening: she would listen in the darkness to the murmur of that childish slumber; she would lean over the bed and her lips would drink in the sweetness of that sleeping life like a draught of clear water."
+    }
+  ]
+}
