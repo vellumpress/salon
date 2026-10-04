@@ -1215,6 +1215,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-counterfeiters",
   // Thérèse follows immediately, Next carefully only. Never Featured. Off every Ritual lane.
   "therese",
+  // Mira Sun 4 Oct 2026 PM — Maximina follows Thérèse immediately, Next carefully only (the content notes are on the card).
+  // Never Featured. Off every Ritual lane (unwind, on-a-walk, before-sleep).
+  "maximina",
 ] as const;
 
 /**
