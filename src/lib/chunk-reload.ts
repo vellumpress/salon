@@ -11,8 +11,6 @@ export const CHUNK_RELOAD_STORAGE_KEY = "tbr-chunk-reload";
 const CHUNK_LOAD_MESSAGE =
   /Importing a module script failed|Failed to fetch dynamically imported module|error loading dynamically imported module|ChunkLoadError/i;
 
-const SHELL_CACHES = ["tbr-shell-v3", "tbr-shell-v2", "tbr-shell"] as const;
-
 export type ChunkReloadStorage = {
   getItem: (key: string) => string | null;
   setItem: (key: string, value: string) => void;
@@ -68,32 +66,40 @@ function sessionStore(): ChunkReloadStorage {
   }
 }
 
-async function clearStaleShellCache(): Promise<void> {
-  if (typeof caches !== "undefined") {
-    await Promise.all(
-      SHELL_CACHES.map(async (name) => {
-        try {
-          const cache = await caches.open(name);
-          const keys = await cache.keys();
-          await Promise.all(
-            keys.map(async (req) => {
-              let path = "";
-              try {
-                path = new URL(req.url).pathname;
-              } catch {
-                return;
-              }
-              if (path === "/salon" || path === "/salon/" || path === "/salon/index.html") {
-                await cache.delete(req);
-              }
-            }),
-          );
-        } catch {
-          /* ignore */
-        }
-      }),
-    );
+/** Home Screen airplane mode. A chunk miss must not delete the only shell. */
+export function isOfflineNow(): boolean {
+  return typeof navigator !== "undefined" && navigator.onLine === false;
+}
+
+/**
+ * True when a replacement document can actually be fetched. `navigator.onLine`
+ * stays true on some phones with no route, and deleting the shell then leaves
+ * the next launch with nothing to paint.
+ */
+async function shellReplacementReachable(): Promise<boolean> {
+  if (typeof fetch !== "function") return false;
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 2500);
+  try {
+    const res = await fetch("/salon/", { cache: "no-store", signal: ctrl.signal });
+    return res.ok && (res.headers.get("content-type") || "").includes("text/html");
+  } catch {
+    return false;
+  } finally {
+    clearTimeout(timer);
   }
+}
+
+async function clearStaleShellCache(): Promise<void> {
+  if (isOfflineNow()) return;
+  const canTouchCache =
+    typeof caches !== "undefined" ||
+    (typeof navigator !== "undefined" && Boolean(navigator.serviceWorker));
+  if (!canTouchCache) return;
+  if (!(await shellReplacementReachable())) return;
+  // Do not delete the cached document here. The service worker overwrites it
+  // only after the replacement and its entry assets are stored. A failed
+  // fetch must leave the shell the phone already has.
   if (typeof navigator === "undefined" || !navigator.serviceWorker) return;
   try {
     const reg = await navigator.serviceWorker.getRegistration("/salon/");
@@ -135,11 +141,13 @@ async function runChunkReload() {
 }
 
 /**
- * Clear the stale shell, ask the service worker to update, and hard-reload
- * once. Returns false when a reload already ran inside the window.
+ * Ask the service worker to swap in a fresh shell, then hard-reload once.
+ * Returns false when a reload already ran inside the window, or when the
+ * phone is offline (the cached shell must stay).
  */
 export function recoverFromChunkLoad(now = Date.now()): boolean {
   if (typeof window === "undefined") return false;
+  if (isOfflineNow()) return false;
   if (startedThisDocument) return true;
   const storage = sessionStore();
   if (chunkReloadBlocked(storage, now)) return false;
@@ -152,6 +160,14 @@ export function recoverFromChunkLoad(now = Date.now()): boolean {
 /** Manual Reload button. Not suppressed by the automatic window. */
 export function forceChunkReload(now = Date.now()): void {
   if (typeof window === "undefined") return;
+  if (isOfflineNow()) {
+    try {
+      location.reload();
+    } catch {
+      /* ignore */
+    }
+    return;
+  }
   startedThisDocument = true;
   markAttempt(sessionStore(), now);
   void runChunkReload();

@@ -24,6 +24,7 @@ import {
   signOutHosted,
   updateHostedHandle,
 } from "@/lib/remote-auth";
+import { isOffline } from "@/lib/net";
 import { getSupabase } from "@/lib/supabase";
 import { liveAuthAvailable, withBase } from "@/lib/site";
 import { formatHandle, normalizeHandle } from "@/lib/social";
@@ -167,9 +168,11 @@ export function useReaderSession() {
         /* handle-taken stays on the form that caused it */
       }
     };
-    void getSupabase()
-      .auth.getSession()
-      .then(({ data }) => apply(data.session));
+    if (!isOffline()) {
+      void getSupabase()
+        .auth.getSession()
+        .then(({ data }) => apply(data.session));
+    }
     const { data } = getSupabase().auth.onAuthStateChange((event, session) => {
       void apply(session, event);
     });

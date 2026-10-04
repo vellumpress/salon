@@ -1,4 +1,5 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+import { isOffline, networkFetch } from "./net.ts";
 
 /** Hosted tbr directory. Publishable key only — safe in the client. */
 export const SUPABASE_URL = "https://thuxsshowkxacbfjdaks.supabase.co";
@@ -16,9 +17,14 @@ export function getSupabase(): SupabaseClient {
     client = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
       auth: {
         persistSession: true,
-        autoRefreshToken: true,
+        // A refresh at launch waits on the network. Skip it when the radio is off
+        // so getSession can return the stored session without a hanging fetch.
+        autoRefreshToken: !isOffline(),
         detectSessionInUrl: true,
         storageKey: SUPABASE_AUTH_STORAGE_KEY,
+      },
+      global: {
+        fetch: networkFetch,
       },
     });
   }

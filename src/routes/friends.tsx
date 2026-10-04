@@ -13,6 +13,7 @@ import { boardKeptLines, fitRailHeight, friendsFeed, youCard, type BoardKeptLine
 import { mergeDirectorySearch, searchHandles } from "@/lib/handle-search";
 import { withRemoteActivity } from "@/lib/remote-activity";
 import { updateHostedHandle } from "@/lib/remote-auth";
+import { isOffline } from "@/lib/net";
 import { refreshFollowedActivity, useRemoteBundle, useRemoteHandleSearch } from "@/lib/remote-directory";
 import {
   booksOnTbrLabel,
@@ -84,8 +85,8 @@ function FriendsPage() {
   const remoteSearch = useRemoteHandleSearch(query);
 
   useEffect(() => {
-    if (!remote.userId) return;
-    void refreshFollowedActivity(remote.userId);
+    if (!remote.userId || isOffline()) return;
+    void refreshFollowedActivity(remote.userId).catch(() => undefined);
   }, [remote.userId]);
   const [pledgeTo, setPledgeTo] = useState("");
   const [pledgeWindow, setPledgeWindow] = useState<EveningWindow>("tonight");

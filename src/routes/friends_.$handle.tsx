@@ -60,12 +60,16 @@ function FriendProfilePage() {
     if (lookedUp.length < 2) return;
     let cancel = false;
     setLookup("pending");
-    void fetchProfile(lookedUp).then((row) => {
-      if (cancel) return;
-      setFetched(row);
-      setLookup("done");
-    });
-    if (remote.userId) void refreshFollowedActivity(remote.userId);
+    void fetchProfile(lookedUp)
+      .then((row) => {
+        if (cancel) return;
+        setFetched(row);
+        setLookup("done");
+      })
+      .catch(() => {
+        if (!cancel) setLookup("done");
+      });
+    if (remote.userId) void refreshFollowedActivity(remote.userId).catch(() => undefined);
     return () => {
       cancel = true;
     };

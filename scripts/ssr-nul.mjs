@@ -21,8 +21,8 @@
  * the byte would turn `__root__/` into `__root__` and the client would
  * reject the SSR match.
  */
-import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const SLASH_TO_NUL = /replaceAll\(\s*(["'])\/\1\s*,\s*(["'])\\(?:0|u0000)\2\s*\)/g;
@@ -180,6 +180,14 @@ export const SHELL_CACHE_NAME = "tbr-shell-v3";
 export const SHELL_ASSET_CACHE_NAME = "tbr-assets";
 /** Previous shell cache. Kept as an offline fallback until a v3 shell commits. */
 export const RETIRED_SHELL_CACHE_NAME = "tbr-shell-v2";
+/**
+ * Icons, manifest, favicon, and font files. Not hashed, so they update in
+ * place (stale-while-revalidate). Activate must not delete this cache.
+ */
+export const STATIC_CACHE_NAME = "tbr-static";
+/** Reading faces. Cached with the static set so a cold offline launch still has type. */
+export const FONT_STYLESHEET =
+  "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap";
 
 /**
  * Home Screen cold start.
@@ -191,7 +199,8 @@ export const RETIRED_SHELL_CACHE_NAME = "tbr-shell-v2";
  * js/css stay cache-first when the cached bytes are real code. A cached HTML
  * body or 404 is never returned for those URLs until the network has been
  * tried. NUL bytes are refused so a poisoned document cannot stick. Book
- * texts are not intercepted.
+ * texts ship as hashed chunks under `/salon/assets/` and are precached with
+ * the rest of the build manifest; they are not stored in the HTML shell.
  *
  * Repeat launches paint the cached shell. The network is given a short race
  * (`SHELL_RACE_MS`). If that response's asset list differs from the cached
@@ -202,13 +211,35 @@ export const RETIRED_SHELL_CACHE_NAME = "tbr-shell-v2";
  * cached shell still references, including lazy chunks recorded while it was
  * current, stay in the asset cache until that shell is replaced.
  *
- * A navigation whose query contains `__fresh=` skips the shell cache.
+ * A navigation whose query contains `__fresh=` prefers the network, then the
+ * cached shell (current, then retired), then a small offline page. The
+ * promise passed to respondWith never rejects — an offline `fetch` must not
+ * surface as Safari "cannot open page".
+ *
+ * @param {{ precache?: string[], boot?: string[], extras?: string[] }} [manifest]
+ *   `precache` is every built `/salon/assets/*.(js|mjs|css)`, app shell first
+ *   and then book chunks smallest-first. `boot` is the app shell only
+ *   (routes, reader, desk, shelf, pdf). Install waits for `boot`. The rest
+ *   fills in after claim and stops if the origin cache quota is hit, so a
+ *   long novel cannot evict the document needed to launch. `extras` is
+ *   same-origin static files (manifest, icons, favicon).
  */
-export function renderShellServiceWorker() {
-  return `/* tbr shell: cached HTML for repeat launches; hashed js/css are cache-first. A new deploy swaps the shell when its asset manifest differs. */
+export function renderShellServiceWorker(manifest = {}) {
+  const precacheList = Array.isArray(manifest.precache) ? manifest.precache : [];
+  const bootList = Array.isArray(manifest.boot) ? manifest.boot : precacheList;
+  const precache = JSON.stringify(precacheList);
+  const boot = JSON.stringify(bootList);
+  const extras = JSON.stringify(Array.isArray(manifest.extras) ? manifest.extras : []);
+  const fontCss = JSON.stringify(FONT_STYLESHEET);
+  return `/* tbr shell: cached HTML for repeat launches; hashed js/css are cache-first. A new deploy swaps the shell when its asset manifest differs. Navigations never reject: cached shell, then retired shell, then an offline page. */
 var SHELL = "${SHELL_CACHE_NAME}";
 var ASSETS = "${SHELL_ASSET_CACHE_NAME}";
 var RETIRED = "${RETIRED_SHELL_CACHE_NAME}";
+var STATIC = "${STATIC_CACHE_NAME}";
+var PRECACHE = ${precache};
+var BOOT = ${boot};
+var EXTRAS = ${extras};
+var FONT_CSS = ${fontCss};
 var SHELL_RACE_MS = 600;
 var commitChain = Promise.resolve();
 var reloadedClients = {};
@@ -363,10 +394,12 @@ function pruneToGenerations(urls) {
       var live = lists[1];
       var keep = {};
       var i;
+      var baked = precacheHrefs();
       var hasLive = live.length > 0;
       for (i = 0; i < urls.length; i++) keep[urls[i]] = 1;
       for (i = 0; i < prev.length; i++) keep[prev[i]] = 1;
       for (i = 0; i < live.length; i++) keep[live[i]] = 1;
+      for (i = 0; i < baked.length; i++) keep[baked[i]] = 1;
       return cache.keys().then(function (reqs) {
         return Promise.all(reqs.map(function (req) {
           if (req.url === manifestUrl() || req.url === liveUrl()) return Promise.resolve();
@@ -403,6 +436,8 @@ function commitShell(html) {
       return warmAssets(urls);
     }).then(function () {
       return pruneToGenerations(urls);
+    }).then(function () {
+      return precacheBuild();
     }).then(function () { return true; });
   });
 }
@@ -518,64 +553,240 @@ function cacheFirstAsset(req) {
     });
   });
 }
+function absList(list) {
+  var out = [];
+  var i;
+  for (i = 0; i < list.length; i++) {
+    try { out.push(new URL(list[i], self.location.origin).href); } catch (err) {}
+  }
+  return out;
+}
+function precacheHrefs() {
+  return absList(PRECACHE);
+}
+function extraHrefs() {
+  return absList(EXTRAS);
+}
+function precacheBatched(urls) {
+  var i = 0;
+  var stopped = false;
+  function next() {
+    if (stopped || i >= urls.length) return Promise.resolve();
+    var slice = urls.slice(i, i + 6);
+    i += 6;
+    return caches.open(ASSETS).then(function (cache) {
+      return Promise.all(slice.map(function (url) {
+        return cache.match(url).then(function (hit) {
+          if (hit && isServableCode(hit)) return "ok";
+          return fetch(url, { cache: "no-cache" }).then(function (res) {
+            if (!res || !res.ok || res.type === "opaque" || !isServableCode(res)) return "skip";
+            return cache.put(url, res.clone()).then(function () { return "ok"; }, function (err) {
+              var name = err && err.name ? String(err.name) : "";
+              if (name === "QuotaExceededError" || /quota/i.test(String(err && err.message || err))) return "quota";
+              return "skip";
+            });
+          }).catch(function () { return "skip"; });
+        });
+      })).then(function (flags) {
+        var j;
+        for (j = 0; j < flags.length; j++) if (flags[j] === "quota") stopped = true;
+        return next();
+      });
+    }).catch(function () {});
+  }
+  return next();
+}
+function warmStatic(urls) {
+  if (!urls || !urls.length) return Promise.resolve();
+  return caches.open(STATIC).then(function (cache) {
+    var i = 0;
+    function next() {
+      if (i >= urls.length) return;
+      var slice = urls.slice(i, i + 6);
+      i += 6;
+      return Promise.all(slice.map(function (url) {
+        return cache.match(url).then(function (hit) {
+          if (hit) return;
+          return fetch(url).then(function (res) {
+            if (!res || (!res.ok && res.type !== "opaque")) return;
+            return cache.put(url, res.clone());
+          }).catch(function () {});
+        });
+      })).then(next, next);
+    }
+    return next();
+  }).catch(function () {});
+}
+function warmFonts() {
+  if (!FONT_CSS) return Promise.resolve();
+  return fetch(FONT_CSS).then(function (res) {
+    if (!res || !res.ok) return;
+    var copy = res.clone();
+    return caches.open(STATIC).then(function (cache) {
+      return cache.put(FONT_CSS, copy).then(function () { return res.text(); });
+    }).then(function (css) {
+      var re = /url\\(([^)]+)\\)/g;
+      var urls = [];
+      var seen = {};
+      var match;
+      while ((match = re.exec(css))) {
+        var raw = String(match[1] || "").replace(/["']/g, "").trim();
+        if (!raw || raw.indexOf("data:") === 0) continue;
+        try {
+          var abs = new URL(raw, FONT_CSS).href;
+          if (seen[abs]) continue;
+          seen[abs] = 1;
+          urls.push(abs);
+        } catch (err) {}
+      }
+      return warmStatic(urls);
+    });
+  }).catch(function () {});
+}
+function bootHrefs() {
+  return absList(BOOT);
+}
+function precacheBuild() {
+  var boot = bootHrefs();
+  var seen = {};
+  var i;
+  var rest = [];
+  var all = precacheHrefs();
+  for (i = 0; i < boot.length; i++) seen[boot[i]] = 1;
+  for (i = 0; i < all.length; i++) if (!seen[all[i]]) rest.push(all[i]);
+  return precacheBatched(boot.concat(rest)).then(function () {
+    return warmStatic(extraHrefs());
+  }).then(function () {
+    return warmFonts();
+  }).catch(function () {});
+}
+function offlinePage() {
+  var html = "<!DOCTYPE html><html lang=\\"en\\"><head><meta charset=\\"utf-8\\"><meta name=\\"viewport\\" content=\\"width=device-width,initial-scale=1\\"><title>tbr</title><style>html,body{margin:0;background:#F3F1EB;color:#111111;font:16px/1.45 ui-sans-serif,system-ui,sans-serif}main{min-height:100vh;box-sizing:border-box;display:flex;flex-direction:column;justify-content:flex-end;padding:32px}button{margin-top:24px;height:48px;padding:0 18px;border:0;background:#111111;color:#F3F1EB;font:inherit;cursor:pointer}</style></head><body><main><p>Offline</p><p style=\\"margin-top:8px\\">tbr is on this phone. Connect once so it can open without a network.</p><button type=\\"button\\" onclick=\\"location.reload()\\">Retry</button></main></body></html>";
+  return new Response(html, {
+    status: 200,
+    headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" },
+  });
+}
+function fallbackShell() {
+  return readCachedShell().then(function (hit) {
+    if (hit) return hit;
+    return readRetiredShell();
+  }).then(function (hit) {
+    return hit || offlinePage();
+  }).catch(function () { return offlinePage(); });
+}
 function handleNavigate(event) {
   var fresh = false;
   try { fresh = new URL(event.request.url).search.indexOf("__fresh=") !== -1; } catch (err) {}
   var incoming = networkShell(event);
+  var decided;
   if (fresh) {
-    return incoming.then(function (html) {
-      if (!html) return fetch(event.request);
+    decided = incoming.then(function (html) {
+      if (!html) return fallbackShell();
       event.waitUntil(enqueueCommit(html));
       return shellResponse(html);
     });
-  }
-  return readCachedShellHtml().then(function (prevHtml) {
-    return withTimeout(incoming, SHELL_RACE_MS).then(function (html) {
-      if (html && shellAssetsDiffer(prevHtml, html)) {
-        event.waitUntil(enqueueCommit(html));
-        return shellResponse(html);
-      }
-      if (html && prevHtml) {
-        event.waitUntil(enqueueCommit(html));
-        return shellResponse(prevHtml);
-      }
-      // Network missed the short race. Paint the cached shell so a cold
-      // start stays short, then swap once if the later body is a new build.
-      event.waitUntil(incoming.then(function (later) {
-        if (!later) return;
-        var changed = shellAssetsDiffer(prevHtml, later);
-        return enqueueCommit(later).then(function () {
-          if (changed) return reloadOpenClients();
-        });
-      }));
-      if (prevHtml) return shellResponse(prevHtml);
-      return readRetiredShell().then(function (old) {
-        if (old) return old;
-        return incoming.then(function (later) {
-          if (later) return shellResponse(later);
-          return fetch(event.request);
+  } else {
+    decided = readCachedShellHtml().then(function (prevHtml) {
+      return withTimeout(incoming, SHELL_RACE_MS).then(function (html) {
+        if (html && shellAssetsDiffer(prevHtml, html)) {
+          event.waitUntil(enqueueCommit(html));
+          return shellResponse(html);
+        }
+        if (html && prevHtml) {
+          event.waitUntil(enqueueCommit(html));
+          return shellResponse(prevHtml);
+        }
+        // Network missed the short race. Paint the cached shell so a cold
+        // start stays short, then swap once if the later body is a new build.
+        event.waitUntil(incoming.then(function (later) {
+          if (!later) return;
+          var changed = shellAssetsDiffer(prevHtml, later);
+          return enqueueCommit(later).then(function () {
+            if (changed) return reloadOpenClients();
+          });
+        }).catch(function () {}));
+        if (prevHtml) return shellResponse(prevHtml);
+        return readRetiredShell().then(function (old) {
+          if (old) return old;
+          return incoming.then(function (later) {
+            if (later) return shellResponse(later);
+            return fallbackShell();
+          });
         });
       });
     });
+  }
+  return Promise.resolve(decided).then(function (res) {
+    return res || offlinePage();
+  }).catch(function () { return offlinePage(); });
+}
+function isFontHost(url) {
+  return url.hostname === "fonts.googleapis.com" || url.hostname === "fonts.gstatic.com";
+}
+function isStaticAsset(url) {
+  if (isFontHost(url)) return true;
+  if (url.origin !== self.location.origin) return false;
+  if (url.pathname.indexOf("/salon/") !== 0) return false;
+  if (isCodeAsset(url)) return false;
+  return /\\/(?:manifest\\.webmanifest|favicon\\.(?:ico|svg)|icon-\\d+\\.png|og\\.jpg|pdf\\.worker\\.min\\.js)$/i.test(url.pathname)
+    || /\\.(?:json|webmanifest|png|svg|ico|jpe?g|webp|gif|woff2?)$/i.test(url.pathname);
+}
+function staleWhileRevalidate(event, req) {
+  return caches.open(STATIC).then(function (cache) {
+    return cache.match(req).then(function (hit) {
+      var refresh = fetch(req).then(function (res) {
+        if (res && (res.ok || res.type === "opaque")) {
+          var copy = res.clone();
+          return cache.put(req, copy).then(function () { return res; }, function () { return res; });
+        }
+        return res;
+      }).catch(function () { return null; });
+      if (hit) {
+        event.waitUntil(refresh);
+        return hit;
+      }
+      return refresh.then(function (res) {
+        return res || plainMiss(504);
+      });
+    });
+  }).catch(function () {
+    return fetch(req).catch(function () { return plainMiss(504); });
   });
 }
+function dropShellForRecovery() {
+  if (self.navigator && self.navigator.onLine === false) return Promise.resolve(false);
+  return networkShell(null).then(function (html) {
+    if (!html) return false;
+    // Replace the cached document only when its entry assets can be stored.
+    // Deleting first would leave the next offline launch with no shell.
+    return enqueueCommit(html).then(function (ok) { return ok === true; });
+  }).catch(function () { return false; });
+}
 
-self.addEventListener("install", function () {
-  self.skipWaiting();
+self.addEventListener("install", function (event) {
+  event.waitUntil(precacheBatched(bootHrefs()).then(function () {
+    return warmStatic(extraHrefs());
+  }).then(function () {
+    return warmFonts();
+  }).then(function () { return self.skipWaiting(); }, function () { return self.skipWaiting(); }));
 });
 self.addEventListener("activate", function (event) {
   var current = SHELL;
   var assets = ASSETS;
+  var stat = STATIC;
   event.waitUntil(
     caches.keys().then(function (keys) {
       return Promise.all(keys.map(function (key) {
-        if (key === current || key === assets || key === RETIRED) return Promise.resolve();
+        if (key === current || key === assets || key === RETIRED || key === stat) return Promise.resolve();
         return caches.delete(key);
       }));
     }).then(function () {
       if (self.registration.navigationPreload) return self.registration.navigationPreload.enable();
     }).then(function () {
       return self.clients.claim();
+    }).then(function () {
+      return precacheBuild();
     }).then(function () {
       return networkShell(null).then(function (html) {
         if (!html) return;
@@ -596,11 +807,7 @@ self.addEventListener("message", function (event) {
     return;
   }
   if (data.type === "recover-shell") {
-    event.waitUntil(Promise.all([SHELL, RETIRED].map(function (name) {
-      return caches.open(name).then(function (cache) {
-        return cache.delete(shellUrl());
-      });
-    })));
+    event.waitUntil(dropShellForRecovery());
     return;
   }
   if (data.type !== "warm-assets" || !data.urls || !data.urls.length) return;
@@ -614,7 +821,7 @@ self.addEventListener("message", function (event) {
   }
   event.waitUntil(warmAssets(urls).then(function () { return networkShell(null).then(function (html) {
     if (html) return enqueueCommit(html);
-  }); }));
+  }); }).then(function () { return precacheBuild(); }));
 });
 self.addEventListener("fetch", function (event) {
   var req = event.request;
@@ -622,13 +829,17 @@ self.addEventListener("fetch", function (event) {
   var url;
   try { url = new URL(req.url); } catch (err) { return; }
   if (isCodeAsset(url)) {
-    event.respondWith(cacheFirstAsset(req));
+    event.respondWith(cacheFirstAsset(req).catch(function () { return plainMiss(504); }));
+    return;
+  }
+  if (isStaticAsset(url) && req.mode !== "navigate") {
+    event.respondWith(staleWhileRevalidate(event, req));
     return;
   }
   if (req.mode !== "navigate") return;
   if (url.origin !== self.location.origin) return;
   if (url.pathname !== "/salon" && url.pathname.indexOf("/salon/") !== 0) return;
-  event.respondWith(handleNavigate(event));
+  event.respondWith(handleNavigate(event).catch(function () { return offlinePage(); }));
 });
 `;
 }
@@ -737,6 +948,74 @@ export function injectShellNetworkHints(html) {
   return html.replace(/<head([^>]*)>/i, `<head$1>${hints}`);
 }
 
+const CATALOG_CHUNK_ROOT = join(dirname(fileURLToPath(import.meta.url)), "../src/lib/catalog");
+
+function catalogChunkIds() {
+  const ids = new Set();
+  for (const folder of ["texts", "openings"]) {
+    const dir = join(CATALOG_CHUNK_ROOT, folder);
+    if (!existsSync(dir)) continue;
+    for (const name of readdirSync(dir)) {
+      if (name.endsWith(".json")) ids.add(name.slice(0, -".json".length));
+    }
+  }
+  return ids;
+}
+
+/** Vite chunk names end in `-[hash]` of 8. Book texts use the catalog id as the name. */
+function assetChunkId(filename) {
+  return filename.replace(/-[A-Za-z0-9_-]{8}\.(?:js|mjs|css)$/i, "");
+}
+
+const STATIC_SHELL_FILES = [
+  "manifest.webmanifest",
+  "favicon.ico",
+  "favicon.svg",
+  "icon-180.png",
+  "icon-192.png",
+  "icon-512.png",
+  "og.jpg",
+  "pdf.worker.min.js",
+];
+
+/**
+ * Every hashed script and stylesheet the build emitted, plus same-origin
+ * files the shell requests outside `/assets/` (manifest, icons, favicon).
+ * Book texts are `import.meta.glob` chunks under `/salon/assets/`, so they
+ * are in `precache`, not a separate JSON fetch.
+ * @param {string} destDir
+ */
+export function collectShellPrecache(destDir) {
+  const bookIds = catalogChunkIds();
+  const rows = [];
+  const assetsDir = join(destDir, "assets");
+  if (existsSync(assetsDir)) {
+    for (const name of readdirSync(assetsDir)) {
+      if (!/\.(?:js|mjs|css)$/i.test(name)) continue;
+      const path = `/salon/assets/${name}`;
+      let size = 0;
+      try { size = statSync(join(assetsDir, name)).size; } catch { size = 0; }
+      rows.push({ path, size, book: bookIds.has(assetChunkId(name)) });
+    }
+  }
+  const precache = rows.map((row) => row.path).sort();
+  const boot = rows.filter((row) => !row.book).map((row) => row.path).sort();
+  const books = rows.filter((row) => row.book).sort((a, b) => a.size - b.size || (a.path < b.path ? -1 : 1));
+  const fill = boot.concat(books.map((row) => row.path));
+  const extras = [];
+  for (const name of STATIC_SHELL_FILES) {
+    if (existsSync(join(destDir, name))) extras.push(`/salon/${name}`);
+  }
+  const imagesDir = join(destDir, "images");
+  if (existsSync(imagesDir)) {
+    for (const name of readdirSync(imagesDir)) {
+      if (/\.(?:png|jpe?g|svg|webp|gif|ico)$/i.test(name)) extras.push(`/salon/images/${name}`);
+    }
+  }
+  extras.sort();
+  return { precache, boot, fill, extras };
+}
+
 /**
  * Pages-only: less sticky HTML shell, plus a hard NUL strip of every HTML file.
  * @param {string} destDir
@@ -748,6 +1027,14 @@ export function applyPagesHtmlSafety(destDir) {
     const next = injectShellNetworkHints(html);
     if (next !== html) writeFileSync(indexPath, next);
   }
-  writeFileSync(join(destDir, "sw.js"), renderShellServiceWorker());
+  const listed = collectShellPrecache(destDir);
+  writeFileSync(
+    join(destDir, "sw.js"),
+    renderShellServiceWorker({
+      precache: listed.fill,
+      boot: listed.boot,
+      extras: listed.extras,
+    }),
+  );
   return stripNulBytesInHtmlTree(destDir);
 }

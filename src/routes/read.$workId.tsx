@@ -87,9 +87,13 @@ function ReadPage() {
     else setWork(undefined);
     void loadWork(workId, (next) => {
       if (live) setWork(next);
-    }).then((next) => {
-      if (live) setWork(next ?? null);
-    });
+    })
+      .then((next) => {
+        if (live) setWork(next ?? null);
+      })
+      .catch(() => {
+        if (live) setWork(peekWork(workId) ?? null);
+      });
     return () => {
       live = false;
     };
@@ -132,7 +136,11 @@ function ReadPage() {
           <p className="mt-2 type-title">
             {meta?.title ?? "This sitting"}
           </p>
-          <p className="mt-3 font-serif text-lg text-ink/70">This text would not come.</p>
+          <p className="mt-3 font-serif text-lg text-ink/70">
+            {typeof navigator !== "undefined" && navigator.onLine === false
+              ? "Offline"
+              : "This text would not come."}
+          </p>
           {workId === "page" ? (
             <Link
               to="/page"

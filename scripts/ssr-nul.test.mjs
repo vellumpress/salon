@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
@@ -9,6 +9,7 @@ import {
   SHELL_CACHE_NAME,
   applyPagesHtmlSafety,
   injectShellNetworkHints,
+  collectShellPrecache,
   renderBootWatchScript,
   renderShellServiceWorker,
   rewriteDehydrateSsrMatchId,
@@ -169,5 +170,38 @@ test("boot watch reloads once when the entry module never hydrates", () => {
   assert.match(script, /recover-shell/);
   assert.match(script, /\/salon\/assets\//);
   assert.match(script, /20000/);
+  assert.match(script, /navigator\.onLine === false/);
   assert.doesNotMatch(script, /type="module"/);
+});
+
+test("the built asset manifest is precached with the shell", () => {
+  const dest = mkdtempSync(join(tmpdir(), "salon-precache-"));
+  const assets = join(dest, "assets");
+  mkdirSync(assets);
+  writeFileSync(join(assets, "index-abc.js"), "export {}");
+  writeFileSync(join(assets, "routes-def.js"), "export {}");
+  writeFileSync(join(assets, "reader-ghi.js"), "export {}");
+  writeFileSync(join(assets, "app-jkl.css"), "body{}");
+  writeFileSync(join(assets, "note.txt"), "skip");
+  writeFileSync(join(dest, "manifest.webmanifest"), "{}");
+  writeFileSync(join(dest, "favicon.svg"), "<svg/>");
+  const listed = collectShellPrecache(dest);
+  assert.deepEqual(listed.precache, [
+    "/salon/assets/app-jkl.css",
+    "/salon/assets/index-abc.js",
+    "/salon/assets/reader-ghi.js",
+    "/salon/assets/routes-def.js",
+  ]);
+  assert.deepEqual(listed.extras, ["/salon/favicon.svg", "/salon/manifest.webmanifest"]);
+  const sw = renderShellServiceWorker(listed);
+  assert.match(sw, /\/salon\/assets\/routes-def\.js/);
+  assert.match(sw, /\/salon\/assets\/reader-ghi\.js/);
+  assert.match(sw, /precacheBuild/);
+  assert.match(sw, /tbr-static/);
+  assert.match(sw, /fonts\.googleapis\.com/);
+  assert.doesNotMatch(sw, /return fetch\(event\.request\)/);
+  assert.match(sw, /function offlinePage/);
+  assert.match(sw, /function fallbackShell/);
+  assert.match(sw, /Retry/);
+  assert.match(sw, /self\.navigator && self\.navigator\.onLine === false/);
 });

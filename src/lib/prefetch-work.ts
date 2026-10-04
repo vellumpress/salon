@@ -5,11 +5,15 @@
  */
 export function prefetchWork(id: string) {
   if (!id || id === "page" || id.startsWith("import-") || typeof window === "undefined") return;
-  void import("./works").then((mod) => mod.prefetchWork(id));
+  void import("./works")
+    .then((mod) => mod.prefetchWork(id))
+    .catch(() => undefined);
 }
 
 /** Warm the first page of the resume sit without pulling the rest of the book. */
 export function prefetchOpening(id: string) {
   if (!id || id === "page" || id.startsWith("import-") || typeof window === "undefined") return;
-  void import("./works").then((mod) => mod.prefetchOpening(id));
+  void import("./works")
+    .then((mod) => mod.prefetchOpening(id))
+    .catch(() => undefined);
 }

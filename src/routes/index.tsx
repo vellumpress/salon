@@ -66,6 +66,7 @@ function Home() {
     const timers: number[] = [];
     const warm = () => {
       if (cancel) return;
+      if (typeof navigator !== "undefined" && navigator.onLine === false) return;
       const jobs = [
         () => router.preloadRoute({ to: "/rituals" }),
         () => router.preloadRoute({ to: "/together" }),
@@ -81,7 +82,7 @@ function Home() {
       for (const [index, job] of jobs.entries()) {
         timers.push(
           window.setTimeout(() => {
-            if (!cancel) void job();
+            if (!cancel) void Promise.resolve(job()).catch(() => undefined);
           }, index * 80),
         );
       }

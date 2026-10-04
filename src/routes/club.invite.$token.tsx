@@ -37,6 +37,10 @@ function InviteLanding() {
       setState({ status: "missing" });
       return;
     }
+    if (typeof navigator !== "undefined" && navigator.onLine === false) {
+      setState({ status: "missing" });
+      return;
+    }
     void getClubByInvite(invite)
       .then(async (club) => {
         if (!live) return;
@@ -97,7 +101,11 @@ function InviteLanding() {
           <p className="type-title">
             This invite
           </p>
-          <p className="mt-3 font-serif text-lg text-ink/70">This invite would not come</p>
+          <p className="mt-3 font-serif text-lg text-ink/70">
+            {typeof navigator !== "undefined" && navigator.onLine === false
+              ? "Offline"
+              : "This invite would not come"}
+          </p>
         </div>
       </div>
     );

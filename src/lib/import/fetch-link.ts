@@ -1,5 +1,6 @@
 import { Readability } from "@mozilla/readability";
 import { parseHTML } from "linkedom";
+import { isOffline } from "../net.ts";
 import { getSupabase } from "../supabase.ts";
 import { workFromArticleHtml, workFromPlainText } from "./html-text.ts";
 import { PAGE_EMPTY, PAGE_FAIL, PAGE_TOO_LARGE, URL_BAD, URL_PRIVATE, URL_SCHEME } from "./messages.ts";
@@ -75,6 +76,7 @@ function throwForMessage(message: string): never {
  * publishable key is not a JWT, so it is not placed in Authorization.
  */
 export async function workFromLink(raw: string): Promise<Work> {
+  if (isOffline()) throw new Error(PAGE_FAIL);
   const url = assertImportUrl(raw);
   let payload: ImportPayload | null = null;
   try {
