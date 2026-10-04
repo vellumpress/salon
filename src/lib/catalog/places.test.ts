@@ -5,7 +5,7 @@ import { ADAPTED_BY_SALON_IDS, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { RITUAL_LANES } from "./rituals.ts";
 import { SHELF, shelfWork } from "./shelf.ts";
 import { REGION_SHAPES } from "./region-shapes.ts";
-import { chipOnlyLabel, CHIP_ONLY_PLACE, placeFor, placeForId, surfacedPlaceWorkIds } from "./places.ts";
+import { chipOnlyLabel, CHIP_ONLY_PLACE, NO_PRINTED_PLACE, placeFor, placeForId, surfacedPlaceWorkIds } from "./places.ts";
 
 test("named settings keep reader-friendly labels and real regions", () => {
   const expect = {
@@ -124,6 +124,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "a-monkey": { label: "Christiania", region: "no" },
     "the-counterfeiters": { label: "Luxembourg Gardens, Paris", region: "fr" },
     "therese": { label: "Argelouse", region: "fr" },
+    "elysium": { label: "Pall Mall, London", region: "gb" },
     "growth-of-the-soil": { label: "Norway", region: "no" },
     "nada-the-lily": { label: "Zululand", region: "za" },
     "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
@@ -219,7 +220,7 @@ test("Locked recommend, Next, and ritual-lane works all resolve a place with a s
     }
     const place = placeFor(work);
     if (!place) {
-      if (!chipOnlyLabel(id)) missing.push(id);
+      if (!chipOnlyLabel(id) && !NO_PRINTED_PLACE.has(id)) missing.push(id); // NO_PRINTED_PLACE: the story prints no place; never invent one
     }
     else if (!REGION_SHAPES[place.region]) shapeless.push(`${id}=${place.region}`);
   }
@@ -310,7 +311,8 @@ test("every shelf work resolves a place with a silhouette", () => {
   for (const work of SHELF) {
     const place = placeFor(work);
     if (!place) {
-      if (!chipOnlyLabel(work.id)) missing.push(`${work.id} (${work.author}, ${work.language})`);
+      // NO_PRINTED_PLACE: the story prints no place; never invent one
+      if (!chipOnlyLabel(work.id) && !NO_PRINTED_PLACE.has(work.id)) missing.push(`${work.id} (${work.author}, ${work.language})`);
     } else if (!REGION_SHAPES[place.region]) shapeless.push(`${work.id}=${place.region}`);
   }
   assert.deepEqual(missing, [], `missing place: ${missing.join("; ")}`);
@@ -425,4 +427,23 @@ test("POST-#228 place reuses fr; no new region key", () => {
   assert.equal(CHIP_ONLY_PLACE["the-counterfeiters"], undefined);
   assert.deepEqual(placeFor(shelfWork("therese")!), { label: "Argelouse", region: "fr" });
   assert.equal(CHIP_ONLY_PLACE["therese"], undefined);
+});
+
+test("mid Rituals places reuse gb; no new region key; Elysium is a named chip, not chip-only", () => {
+  assert.ok(REGION_SHAPES.gb?.d, "gb shape");
+  assert.deepEqual(placeFor(shelfWork("elysium")!), { label: "Pall Mall, London", region: "gb" });
+  assert.equal(CHIP_ONLY_PLACE["elysium"], undefined);
+  assert.equal(NO_PRINTED_PLACE.has("elysium"), false);
+});
+
+test("POST-v3 Ritual: NO_PRINTED_PLACE is only Wedding-Day, and it resolves no chip and no country", () => {
+  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day"]);
+  for (const id of NO_PRINTED_PLACE) {
+    const work = shelfWork(id);
+    assert.ok(work, id);
+    assert.equal(placeFor(work!), null, id);
+    assert.equal(placeForId(id), null, id);
+    assert.equal(chipOnlyLabel(id), null, id);
+    assert.equal(id in CHIP_ONLY_PLACE, false, id);
+  }
 });

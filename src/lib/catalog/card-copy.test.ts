@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import { SHELF } from "./shelf.ts";
 import { LOCAL_WORKS } from "./full-pdf.ts";
 import { countryFor, isCityHubLabel } from "./countries.ts";
-import { chipOnlyLabel } from "./places.ts";
+import { chipOnlyLabel, NO_PRINTED_PLACE } from "./places.ts";
 import { blurbFor, sentenceCount } from "./blurbs.ts";
 import { isBoundLocal } from "./en-rights.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
@@ -70,7 +70,8 @@ test("every shelf work has a country that is not a map city hub", () => {
   for (const work of SHELF) {
     const country = countryFor(work);
     if (!country) {
-      if (!chipOnlyLabel(work.id)) missing.push(`${work.id} (${work.author}, ${work.language})`);
+      // NO_PRINTED_PLACE: the story prints no place; never invent one
+      if (!chipOnlyLabel(work.id) && !NO_PRINTED_PLACE.has(work.id)) missing.push(`${work.id} (${work.author}, ${work.language})`);
     }
     else if (isCityHubLabel(country)) cities.push(`${work.id}=${country}`);
   }
@@ -212,6 +213,7 @@ test("known origin overrides", () => {
     "a-monkey": "Norway",
     "the-counterfeiters": "France",
     "therese": "France",
+    "elysium": "United Kingdom",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);

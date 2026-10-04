@@ -201,6 +201,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "a-monkey": { label: "Christiania", region: "no" },
   "the-counterfeiters": { label: "Luxembourg Gardens, Paris", region: "fr" },
   "therese": { label: "Argelouse", region: "fr" },
+  "elysium": { label: "Pall Mall, London", region: "gb" },
   "look-back-on-happiness": { label: "Norway forest", region: "no" },
   "father-of-yoto": { label: "Limehouse", region: "gb" },
   "growth-of-the-soil": { label: "Norway", region: "no" },
@@ -510,6 +511,14 @@ const COUNTRY_PLACE: Record<string, WorkPlace> = {
 export const CHIP_ONLY_PLACE: Record<string, string> = {
   "mary-magdalen": "Tiberias, Galilee",
 };
+
+/**
+ * Works whose text prints no place at all (Mira, POST-v3 Ritual): no chip and no country.
+ * placeFor() and countryFor() stay null/empty for these ids; PlaceChip renders nothing.
+ */
+export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
+  "wedding-day", // story prints no place; never invent one
+]);
 
 export function chipOnlyLabel(id: string | undefined): string | null {
   return id ? (CHIP_ONLY_PLACE[id] ?? null) : null;
