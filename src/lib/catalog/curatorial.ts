@@ -1213,6 +1213,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Sun 4 Oct 2026 POST-#228 CLEAR — The Counterfeiters leads Next carefully, after Lewis and Irene. Never Featured.
   // One work this pack (the content notes are on the card).
   "the-counterfeiters",
+  // Thérèse follows immediately, Next carefully only. Never Featured. Off every Ritual lane.
+  "therese",
 ] as const;
 
 /**
