@@ -1210,6 +1210,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // A Monkey is Rituals only (the one story, Host-only), not this tail.
   "love-s-shadow",
   "lewis-and-irene",
+  // Mira Sun 4 Oct 2026 POST-#228 CLEAR — The Counterfeiters leads Next carefully, after Lewis and Irene. Never Featured.
+  // One work this pack (the content notes are on the card).
+  "the-counterfeiters",
 ] as const;
 
 /**

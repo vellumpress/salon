@@ -122,6 +122,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "love-s-shadow": { label: "Knightsbridge, London", region: "gb" },
     "lewis-and-irene": { label: "Paris", region: "fr" },
     "a-monkey": { label: "Christiania", region: "no" },
+    "the-counterfeiters": { label: "Luxembourg Gardens, Paris", region: "fr" },
     "growth-of-the-soil": { label: "Norway", region: "no" },
     "nada-the-lily": { label: "Zululand", region: "za" },
     "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
@@ -415,4 +416,10 @@ test("POST-#227 places reuse gb, fr and no; no new region key", () => {
   assert.deepEqual(placeFor(shelfWork("lewis-and-irene")!), { label: "Paris", region: "fr" });
   assert.deepEqual(placeFor(shelfWork("a-monkey")!), { label: "Christiania", region: "no" });
   for (const id of ["love-s-shadow", "lewis-and-irene", "a-monkey"]) assert.equal(CHIP_ONLY_PLACE[id], undefined, id);
+});
+
+test("POST-#228 place reuses fr; no new region key", () => {
+  assert.ok(REGION_SHAPES.fr?.d, "fr shape");
+  assert.deepEqual(placeFor(shelfWork("the-counterfeiters")!), { label: "Luxembourg Gardens, Paris", region: "fr" });
+  assert.equal(CHIP_ONLY_PLACE["the-counterfeiters"], undefined);
 });
