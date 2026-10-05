@@ -1,0 +1,186 @@
+{
+  "id": "love-among-the-chickens",
+  "title": "Love Among the Chickens",
+  "author": "P. G. Wodehouse",
+  "year": "1920",
+  "note": "Project Gutenberg 3829 (P. G. Wodehouse, Love Among the Chickens). The PG file prints no publisher, edition or copyright line; the dedication to W. Townend is signed 'London, 1920.' and speaks of 'the 1906 edition' as the text the author has 'practically re-written'. Year 1920, from the dedication. The dedication (PG l.52–95) is its own leading section; the novel follows whole: 23 titled chapters (PG l.134–6578), labelled 'Chapter I · A Letter with a Postscript' … 'Chapter XXIII · After the Storm'. The title page, the contents, the half-title, 'THE END' and the PG boilerplate out. Straight quotes kept as printed; double hyphens set as em dashes (the colon-dash before speech as ':—'); the five-hyphen name blanks as long dashes; italics kept, stops outside them; the twelve asterisk rows as breaks. Long paragraphs soft-broken into separate screens; no words changed. EN 1920. PG reading-ease 84.6 (for the whole book) — no invented Launch rank. Place: London (United Kingdom). Sits: Next only. Host intro: Garnet, a young novelist in London lodgings, hears that his old friend Stanley Featherstonehaugh Ukridge — the man who borrows the cab fare and starts the fight with the cabman — is on his trail; Ukridge then sweeps him off to Dorset to run a chicken farm on credit, and Garnet falls in love with an Irish professor's daughter. P. G. Wodehouse; the revised text of 1920 (the dedication to W. Townend, dated London, 1920, says the book was practically re-written from the 1906 edition).",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I · A Letter with a Postscript · London",
+      "place": "Chapter I · A Letter with a Postscript · London",
+      "reentry": "\"A gentleman called to see you when you were out last night, sir,\" said Mrs. Medley, my landlady, removing the last of the breakfast things.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "\"A gentleman called to see you when you were out last night, sir,\" said Mrs. Medley, my landlady, removing the last of the breakfast things."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "\"Yes?\" I said, in my affable way."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "\"A gentleman,\" said Mrs. Medley meditatively, \"with a very powerful voice.\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Caruso?\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "\"Sir?\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"I said, did he leave a name?\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "\"Yes, sir. Mr. Ukridge.\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"Oh, my sainted aunt!\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"Sir!\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"Nothing, nothing.\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Thank you, sir,\" said Mrs. Medley, withdrawing from the presence."
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Ukridge! Oh, hang it! I had not met him for years, and, glad as I am, as a general thing, to see the friends of my youth when they drop in for a chat, I doubted whether I was quite equal to Ukridge at the moment. A stout fellow in both the physical and moral sense of the words, he was a trifle too jumpy for a man of my cloistered and intellectual life, especially as just now I was trying to plan out a new novel, a tricky job demanding complete quiet and seclusion. It had always been my experience that, when Ukridge was around, things began to happen swiftly and violently, rendering meditation impossible. Ukridge was the sort of man who asks you out to dinner, borrows the money from you to pay the bill, and winds up the evening by embroiling you in a fight with a cabman. I have gone to Covent Garden balls with Ukridge, and found myself legging it down Henrietta Street in the grey dawn, pursued by infuriated costermongers."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "I wondered how he had got my address, and on that problem light was immediately cast by Mrs. Medley, who returned, bearing an envelope."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"It came by the morning post, sir, but it was left at Number Twenty by mistake.\""
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"Oh, thank you.\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"Thank you, sir,\" said Mrs. Medley."
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "I recognised the handwriting. The letter, which bore a Devonshire postmark, was from an artist friend of mine, one Lickford, who was at present on a sketching tour in the west. I had seen him off at Waterloo a week before, and I remember that I had walked away from the station wishing that I could summon up the energy to pack and get off to the country somewhere. I hate London in July."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "The letter was a long one, but it was the postscript which interested me most."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"... By the way, at Yeovil I ran into an old friend of ours, Stanley Featherstonehaugh Ukridge, of all people. As large as life—quite six foot two, and tremendously filled out. I thought he was abroad. The last I heard of him was that he had started for Buenos Ayres in a cattle ship, with a borrowed pipe by way of luggage. It seems he has been in England for some time. I met him in the refreshment-room at Yeovil Station. I was waiting for a down train; he had changed on his way to town. As I opened the door, I heard a huge voice entreating the lady behind the bar to 'put it in a pewter'; and there was S. F. U. in a villainous old suit of grey flannels (I'll swear it was the one he had on last time I saw him) with pince-nez tacked on to his ears with ginger-beer wire as usual, and a couple of inches of bare neck showing between the bottom of his collar and the top of his coat—you remember how he could never get a stud to do its work. He also wore a mackintosh, though it was a blazing day."
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"He greeted me with effusive shouts. Wouldn't hear of my standing the racket. Insisted on being host. When we had finished, he fumbled in his pockets, looked pained and surprised, and drew me aside. 'Look here, Licky, old horse,' he said, 'you know I never borrow money. It's against my principles. But I *must* have a couple of bob. Can you, my dear good fellow, oblige me with a couple of bob till next Tuesday? I'll tell you what I'll do. (In a voice full of emotion). I'll let you have this (producing a beastly little threepenny bit with a hole in it which he had probably picked up in the street) until I can pay you back. This is of more value to me than I can well express, Licky, my boy. A very, very dear friend gave it to me when we parted, years ago... It's a wrench... Still,—no, no... You must take it, you must take it. Licky, old man, shake hands, old horse. Shake hands, my boy.' He then tottered to the bar, deeply moved, and paid up out of the five shillings which he had made it as an after-thought. He asked after you, and said you were one of the noblest men on earth. I gave him your address, not being able to get out of it, but if I were you I should fly while there is yet time.\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "It seemed to me that the advice was good and should be followed. I needed a change of air. London may have suited Doctor Johnson, but in the summer time it is not for the ordinary man. What I wanted, to enable me to give the public of my best (as the reviewer of a weekly paper, dealing with my last work, had expressed a polite hope that I would continue to do) was a little haven in the country somewhere."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "I rang the bell."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Sir?\" said Mrs. Medley."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"I'm going away for a bit,\" I said."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"Yes, sir.\""
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"I don't know where. I'll send you the address, so that you can forward letters.\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "\"Yes, sir.\""
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "\"And, if Mr. Ukridge calls again...\""
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "At this point a thunderous knocking on the front door interrupted me. Something seemed to tell me who was at the end of that knocker. I heard Mrs. Medley's footsteps pass along the hall. There was the click of the latch. A volume of sound rushed up the stairs."
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Is Mr. Garnet in? Where is he? Show me the old horse. Where is the man of wrath? Exhibit the son of Belial.\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "There followed a violent crashing on the stairs, shaking the house."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "\"Garnet! Where are you, laddie? Garnet!! GARNET!!!!!\""
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "Stanley Featherstonehaugh Ukridge was in my midst."
+    }
+  ]
+}
