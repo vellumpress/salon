@@ -185,9 +185,25 @@ export const RETIRED_SHELL_CACHE_NAME = "tbr-shell-v2";
  * place (stale-while-revalidate). Activate must not delete this cache.
  */
 export const STATIC_CACHE_NAME = "tbr-static";
-/** Reading faces. Cached with the static set so a cold offline launch still has type. */
-export const FONT_STYLESHEET =
-  "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap";
+/**
+ * Same-origin Outfit and Cormorant Garamond files. Install stores every
+ * one in the static cache so a Home Screen launch with no network still
+ * has the reading faces.
+ */
+export const FONT_FILES = [
+  "/salon/fonts/outfit-latin-300-normal.woff2",
+  "/salon/fonts/outfit-latin-400-normal.woff2",
+  "/salon/fonts/outfit-latin-500-normal.woff2",
+  "/salon/fonts/outfit-latin-ext-300-normal.woff2",
+  "/salon/fonts/outfit-latin-ext-400-normal.woff2",
+  "/salon/fonts/outfit-latin-ext-500-normal.woff2",
+  "/salon/fonts/cormorant-garamond-latin-400-normal.woff2",
+  "/salon/fonts/cormorant-garamond-latin-400-italic.woff2",
+  "/salon/fonts/cormorant-garamond-latin-500-normal.woff2",
+  "/salon/fonts/cormorant-garamond-latin-ext-400-normal.woff2",
+  "/salon/fonts/cormorant-garamond-latin-ext-400-italic.woff2",
+  "/salon/fonts/cormorant-garamond-latin-ext-500-normal.woff2",
+];
 
 /**
  * Home Screen cold start.
@@ -230,7 +246,7 @@ export function renderShellServiceWorker(manifest = {}) {
   const precache = JSON.stringify(precacheList);
   const boot = JSON.stringify(bootList);
   const extras = JSON.stringify(Array.isArray(manifest.extras) ? manifest.extras : []);
-  const fontCss = JSON.stringify(FONT_STYLESHEET);
+  const fontFiles = JSON.stringify(FONT_FILES);
   return `/* tbr shell: cached HTML for repeat launches; hashed js/css are cache-first. A new deploy swaps the shell when its asset manifest differs. Navigations never reject: cached shell, then retired shell, then an offline page. */
 var SHELL = "${SHELL_CACHE_NAME}";
 var ASSETS = "${SHELL_ASSET_CACHE_NAME}";
@@ -239,7 +255,7 @@ var STATIC = "${STATIC_CACHE_NAME}";
 var PRECACHE = ${precache};
 var BOOT = ${boot};
 var EXTRAS = ${extras};
-var FONT_CSS = ${fontCss};
+var FONT_FILES = ${fontFiles};
 var SHELL_RACE_MS = 600;
 var commitChain = Promise.resolve();
 var reloadedClients = {};
@@ -618,30 +634,7 @@ function warmStatic(urls) {
   }).catch(function () {});
 }
 function warmFonts() {
-  if (!FONT_CSS) return Promise.resolve();
-  return fetch(FONT_CSS).then(function (res) {
-    if (!res || !res.ok) return;
-    var copy = res.clone();
-    return caches.open(STATIC).then(function (cache) {
-      return cache.put(FONT_CSS, copy).then(function () { return res.text(); });
-    }).then(function (css) {
-      var re = /url\\(([^)]+)\\)/g;
-      var urls = [];
-      var seen = {};
-      var match;
-      while ((match = re.exec(css))) {
-        var raw = String(match[1] || "").replace(/["']/g, "").trim();
-        if (!raw || raw.indexOf("data:") === 0) continue;
-        try {
-          var abs = new URL(raw, FONT_CSS).href;
-          if (seen[abs]) continue;
-          seen[abs] = 1;
-          urls.push(abs);
-        } catch (err) {}
-      }
-      return warmStatic(urls);
-    });
-  }).catch(function () {});
+  return warmStatic(absList(FONT_FILES));
 }
 function bootHrefs() {
   return absList(BOOT);
@@ -661,7 +654,7 @@ function precacheBuild() {
   }).catch(function () {});
 }
 function offlinePage() {
-  var html = "<!DOCTYPE html><html lang=\\"en\\"><head><meta charset=\\"utf-8\\"><meta name=\\"viewport\\" content=\\"width=device-width,initial-scale=1\\"><title>tbr</title><style>html,body{margin:0;background:#F3F1EB;color:#111111;font:16px/1.45 ui-sans-serif,system-ui,sans-serif}main{min-height:100vh;box-sizing:border-box;display:flex;flex-direction:column;justify-content:flex-end;padding:32px}button{margin-top:24px;height:48px;padding:0 18px;border:0;background:#111111;color:#F3F1EB;font:inherit;cursor:pointer}</style></head><body><main><p>Offline</p><p style=\\"margin-top:8px\\">tbr is on this phone. Connect once so it can open without a network.</p><button type=\\"button\\" onclick=\\"location.reload()\\">Retry</button></main></body></html>";
+  var html = "<!DOCTYPE html><html lang=\\"en\\"><head><meta charset=\\"utf-8\\"><meta name=\\"viewport\\" content=\\"width=device-width,initial-scale=1\\"><title>tbr</title><style>@font-face{font-family:\\"Outfit\\";font-style:normal;font-weight:400;font-display:block;src:url(\\"/salon/fonts/outfit-latin-400-normal.woff2\\") format(\\"woff2\\")}html,body{margin:0;background:#F3F1EB;color:#111111;font:16px/1.45 \\"Outfit\\"}main{min-height:100vh;box-sizing:border-box;display:flex;flex-direction:column;justify-content:flex-end;padding:32px}button{margin-top:24px;height:48px;padding:0 18px;border:0;background:#111111;color:#F3F1EB;font:inherit;cursor:pointer}</style></head><body><main><p>Offline</p><p style=\\"margin-top:8px\\">tbr is on this phone. Connect once so it can open without a network.</p><button type=\\"button\\" onclick=\\"location.reload()\\">Retry</button></main></body></html>";
   return new Response(html, {
     status: 200,
     headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" },
@@ -721,11 +714,7 @@ function handleNavigate(event) {
     return res || offlinePage();
   }).catch(function () { return offlinePage(); });
 }
-function isFontHost(url) {
-  return url.hostname === "fonts.googleapis.com" || url.hostname === "fonts.gstatic.com";
-}
 function isStaticAsset(url) {
-  if (isFontHost(url)) return true;
   if (url.origin !== self.location.origin) return false;
   if (url.pathname.indexOf("/salon/") !== 0) return false;
   if (isCodeAsset(url)) return false;
@@ -1010,6 +999,12 @@ export function collectShellPrecache(destDir) {
   if (existsSync(imagesDir)) {
     for (const name of readdirSync(imagesDir)) {
       if (/\.(?:png|jpe?g|svg|webp|gif|ico)$/i.test(name)) extras.push(`/salon/images/${name}`);
+    }
+  }
+  const fontsDir = join(destDir, "fonts");
+  if (existsSync(fontsDir)) {
+    for (const name of readdirSync(fontsDir)) {
+      if (/\.woff2$/i.test(name)) extras.push(`/salon/fonts/${name}`);
     }
   }
   extras.sort();

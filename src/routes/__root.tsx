@@ -7,8 +7,6 @@ import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { APP_DESCRIPTION, APP_NAME, WORDMARK, withBase } from "@/lib/site";
 import { attachVisualViewport } from "@/lib/vvh";
 import appCss from "../styles.css?url";
-const FONT_HREF =
-  "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap";
 
 function VisualViewport() {
   useEffect(() => attachVisualViewport(), []);
@@ -22,18 +20,6 @@ function VisualViewport() {
 function BootMark() {
   useEffect(() => {
     document.documentElement.setAttribute("data-boot", "ready");
-  }, []);
-  return null;
-}
-
-/** Apply the reading faces after first paint so they cannot block the shell. */
-function DeferredFonts() {
-  useEffect(() => {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = FONT_HREF;
-    document.head.appendChild(link);
-    return () => link.remove();
   }, []);
   return null;
 }
@@ -66,9 +52,27 @@ export const Route = createRootRoute({
       { rel: "icon", href: withBase("/favicon.ico"), sizes: "32x32" },
       { rel: "icon", type: "image/svg+xml", href: withBase("/favicon.svg") },
       { rel: "stylesheet", href: appCss },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "preload", href: FONT_HREF, as: "style" },
+      {
+        rel: "preload",
+        href: withBase("/fonts/outfit-latin-400-normal.woff2"),
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "preload",
+        href: withBase("/fonts/cormorant-garamond-latin-400-normal.woff2"),
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "preload",
+        href: withBase("/fonts/cormorant-garamond-latin-400-italic.woff2"),
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous",
+      },
       { rel: "manifest", href: withBase("/manifest.webmanifest") },
       { rel: "apple-touch-icon", href: withBase("/icon-180.png") },
       { rel: "apple-touch-icon", sizes: "192x192", href: withBase("/icon-192.png") },
@@ -83,7 +87,6 @@ export const Route = createRootRoute({
         <PreviewHostBridge />
         <BootMark />
         <VisualViewport />
-        <DeferredFonts />
         <DeferredRemoteSync />
         <OfflineMark />
         <AuthProvider>

@@ -93,7 +93,7 @@ export function paintSalonCard(
   ctx.fillStyle = accent;
   ctx.fillRect(rule, rule, width - rule * 2, 96);
   ctx.fillStyle = fill === "yellow" || fill === "paper" ? INK : PAPER;
-  ctx.font = '500 28px "Outfit", ui-sans-serif, sans-serif';
+  ctx.font = '500 28px "Outfit"';
   ctx.textBaseline = "middle";
   ctx.fillText(APP_NAME, inset, rule + 48);
 
@@ -103,7 +103,7 @@ export function paintSalonCard(
   const quoteTop = rule + 96 + rule + 80;
   const quoteWidth = width - inset * 2;
   ctx.fillStyle = INK;
-  ctx.font = 'italic 64px "Cormorant Garamond", "Times New Roman", serif';
+  ctx.font = 'italic 64px "Cormorant Garamond"';
   const lines = wrapLines(ctx, input.text, quoteWidth, 8);
   let y = quoteTop;
   for (const line of lines) {
@@ -120,9 +120,9 @@ export function paintSalonCard(
   ctx.fillRect(rule + 160, bandTop + rule, width - rule * 2 - 160, height - bandTop - rule * 2);
 
   ctx.fillStyle = INK;
-  ctx.font = '500 22px "Outfit", ui-sans-serif, sans-serif';
+  ctx.font = '500 22px "Outfit"';
   ctx.fillText((input.author || "Anonymous").toUpperCase(), inset + 160, bandTop + 78);
-  ctx.font = '400 40px "Cormorant Garamond", "Times New Roman", serif';
+  ctx.font = '400 40px "Cormorant Garamond"';
   ctx.fillText(clipLine(input.title || "A sitting", 42), inset + 160, bandTop + 132);
 }
 
@@ -135,7 +135,7 @@ export async function renderSalonCard(input: SalonCardInput): Promise<Blob> {
   try {
     await document.fonts?.ready;
   } catch {
-    /* system fonts still paint */
+    /* the card still draws if the face list is unavailable */
   }
   paintSalonCard(ctx, input);
   return new Promise((resolve, reject) => {
