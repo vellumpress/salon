@@ -629,7 +629,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "the-knights-of-the-cross": `Henryk Sienkiewicz’s 1900 novel The Knights of the Cross. Sit with the world a moment before the first breath.`,
   "the-kreutzer-sonata": `Leo Tolstoy’s 1889 novel The Kreutzer Sonata. Sit with the world a moment before the first breath.`,
   "the-ladies-paradise": `Émile Zola’s 1883 novel The Ladies' Paradise. Sit with the world a moment before the first breath.`,
-  "the-lady-with-the-dog-and-other-stories": `Gurov at Yalta sees the lady in the *béret*. Title story only, Chapter I per sit — Garnett’s English, PG 13415. Gurov’s contempt for women (“the lower race”) is period misogyny; Host may name it. Not the same day as the Adapted late-season remake.`,
+  "the-lady-with-the-dog-and-other-stories": `Gurov at Yalta sees the lady in the *béret*. Title story only, Chapter I per sit — Garnett’s English, PG 13415. Gurov’s contempt for women (“the lower race”) is period misogyny; Host may name it.`,
   "the-lair-of-the-white-worm": `Stoker’s later English countryside, with something older under the well. Sit with the world a moment before the first breath.`,
   "the-last-man": `Sea-surrounded England, and the narrator’s ruined lineage — a plague and exile epic. Heavy; a later sit.`,
   "the-light-that-failed": `The Light That Failed (1891): the empire still in the room while the story jokes. Sit with the world a moment before the first breath.`,
