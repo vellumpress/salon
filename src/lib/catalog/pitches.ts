@@ -1,35 +1,35 @@
 /** Synopsis-style pitches for the reader threshold (hand-curated). */
 export const PITCHES: Record<string, string> = {
   blacker:
-    "Emma Lou on her “luscious black complexion,” and the family that trained her to mourn it — a Harlem colorism sit. Period intra-community color hierarchy language is the book; Host may name it, and don’t sanitize.",
+    "Emma Lou on her “luscious black complexion,” and the family that trained her to mourn it — a Harlem novel of colorism. The period language of color hierarchy within the community is the book itself, left as printed.",
   "a-lost-lady":
     "Sweet Water along the Burlington — Niel’s memory of Marian Forrester when the frontier ethos dies into money. Soft against Death Comes for the Archbishop.",
   "lady-macbeth":
-    "Katerina Lvovna is bored in her rich father-in-law’s empty house in Mtsensk. Chamot’s 1923 English. An adultery and murder novella; Host OK.",
+    "Katerina Lvovna is bored in her rich father-in-law’s empty house in Mtsensk. Chamot’s 1923 English. An adultery and murder novella.",
   summer:
     "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires. Soft against Bunner Sisters.",
   "jacob-s-room":
     "Betty Flanders writing in the sand — Cornwall, then the room that will be Jacob’s. The experimental voice is the sit.",
   "the-tenant-of-wildfell-hall":
-    "“You must go back with me to the autumn of 1827” — Gilbert Markham’s Yorkshire frame. A long novel; Host OK.",
+    "“You must go back with me to the autumn of 1827” — Gilbert Markham’s Yorkshire frame. A long novel.",
   herland:
-    "The narrator writes from memory the journey into a country of women. An idea-led utopia; Host OK.",
+    "The narrator writes from memory the journey into a country of women. An idea-led utopia.",
   "the-last-man":
     "Sea-surrounded England, and the narrator’s ruined lineage — a plague and exile epic. Heavy; a later sit.",
   "the-wanderer":
-    "He arrived at our home on a Sunday of November, 189… — Sainte-Agathe, and the schoolhouse that is no longer theirs. Delisle’s 1928 English. The year ellipsis stays; Host may leave it.",
+    "He arrived at our home on a Sunday of November, 189… — Sainte-Agathe, and the schoolhouse that is no longer theirs. Delisle’s 1928 English. The year’s ellipsis is the book’s own.",
   "the-late-mattia-pascal":
-    "One of the few things he was sure of was his name: Mattia Pascal — the library at Miragno. Livingston’s 1923 English. Comic self-narration; Host OK.",
+    "One of the few things he was sure of was his name: Mattia Pascal — the library at Miragno. Livingston’s 1923 English. Comic self-narration.",
   basilio:
-    "Lisbon breakfast, the cuckoo-clock strikes eleven, and Luiza reads that Cousin Bazilio is coming home. Serrano’s 1889 English, PG 74442, is abridged and bowdlerized. Adultery and household power; Host OK. Sit with it as Dragon’s Teeth.",
+    "Lisbon breakfast, the cuckoo-clock strikes eleven, and Luiza reads that Cousin Bazilio is coming home. Serrano’s 1889 English, PG 74442, is abridged and bowdlerized. Adultery and household power. Sit with it as Dragon’s Teeth.",
   oblomov:
-    "Oblomov in bed on Gorokhovaya Street with a dreaded letter from his estate. Hogarth’s English, PG 54700, abridged. Serf-era master and servant (Zakhar, *barin*) and period class language; Host note, don’t sanitize.",
+    "Oblomov in bed on Gorokhovaya Street with a dreaded letter from his estate. Hogarth’s English, PG 54700, abridged. Expect serf-era master and servant (Zakhar, *barin*) and period class language, left as printed.",
   "the-lady-with-the-dog-and-other-stories":
-    "Gurov at Yalta sees the lady in the *béret*. Title story only, Chapter I per sit — Garnett’s English, PG 13415. Gurov’s contempt for women (“the lower race”) is period misogyny; Host may name it.",
+    "Gurov at Yalta sees the lady in the *béret*. Title story only, Chapter I per sit — Garnett’s English, PG 13415. Gurov’s contempt for women (“the lower race”) is period misogyny, left as printed.",
   zeno:
-    "Zeno’s first cigarettes and the last-cigarette habit, in Trieste. De Zoete’s English; PG 79453 gives the original publication as 1930. Comic self-deception; Host OK.",
+    "Zeno’s first cigarettes and the last-cigarette habit, in Trieste. De Zoete’s English; PG 79453 gives the original publication as 1930. Comic self-deception.",
   "the-book-of-khalid":
-    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony; Host note, don’t sanitize.",
+    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Expect Expect Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony, left as printed.",
   vengeance:
     "Sholem Asch’s Yiddish theater of desire and shame: a house of pleasure that wants respectability. The room keeps score while everyone pretends the door is locked.",
   naomi:
@@ -41,29 +41,29 @@ export const PITCHES: Record<string, string> = {
   manhattan:
     "Dos Passos cuts New York as montage: arrivals, ads, and lives slicing across each other. The city as newsreel you can walk through.",
   tropic:
-    "The whistle blew for eleven o'clock. One tale: Drought — a white hillside quarry, then Coggins Rum, then the walk home through the marl. Stop at the tale boundary. Heat, labor, and racial violence are in the stretch; name them if you Host further, and don’t sanitize.",
+    "The whistle blew for eleven o'clock. One tale: Drought — a white hillside quarry, then Coggins Rum, then the walk home through the marl. Stop at the tale boundary. Heat, labor, and racial violence are in this stretch, left as printed.",
   "the-painted-veil":
-    "Shuttered Hong Kong room after tiffin; someone tries the door; Kitty whispers “Walter.” Colonial household language (*amah*, “boys”) stays, and the sit opens on “How shall I get out?” The closed sit is Chapter I only — adultery and colonial heat; Host may name them, and don’t sanitize.",
+    "Shuttered Hong Kong room after tiffin; someone tries the door; Kitty whispers “Walter.” Colonial household language (*amah*, “boys”) is left as printed, and it opens on “How shall I get out?” Chapter I only: adultery, in the colonial heat.",
   "growth-of-the-soil":
-    "The long moor road north; red-beard Isak with the first sack. The settler open uses the period word “Lapp” for Sámi herders on the common — Worster’s English only. Loneliness and land hunger — Host OK; if you Host further, keep that named for the room.",
+    "The long moor road north; red-beard Isak with the first sack. The settler open uses the period word “Lapp” for Sámi herders on the common — Worster’s English only. Loneliness and land hunger; read on and that period word stays in Worster’s English.",
   "the-purple-land":
-    "“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Soft against Green Mansions. Guerrilla and gaucho country — Host OK.",
+    "“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Soft against Green Mansions. Guerrilla and gaucho country.",
   "noli-me-tangere":
-    "Capitan Tiago announces a dinner at the last minute in Binondo and the Walled City. The closed sit is Chapter I only — colonial friar power; Host may name it, and don’t sanitize.",
+    "Capitan Tiago announces a dinner at the last minute in Binondo and the Walled City. Chapter I only; the colonial power of the friars is on the page from the start.",
   "bread-givers":
-    "Potato peel; Bessie home without work; rent hollering. Soft against Bunner Sisters. Poverty and an Old World father — Host OK.",
+    "Potato peel; Bessie home without work; rent hollering. Soft against Bunner Sisters. Poverty and an Old World father.",
   "the-story-of-gosta-berling":
     "The long lake, the mist, and the Värmland plains come before Gösta enters — Flach’s English, soft against Growth of the Soil. At last the priest is in the pulpit, and the parish remembers him reeling out of the inn.",
   "bertha-garlan":
-    "She takes the vine-path hillside with the boy, straw hat, near six o’clock. Widow desire — Host OK. No translator is named on this sit.",
+    "She takes the vine-path hillside with the boy, straw hat, near six o’clock. A widow’s desire.",
   "letters-of-a-javanese-princess":
-    "Kartini writes from colonial Java in 1899, hungry for the modern girl while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is Letter I, the cloistered-arms beat; if you Host further, name that colonial frame for the room first.",
+    "Kartini writes from colonial Java in 1899, hungry for the modern girl while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. Letter I comes first, the cloistered-arms beat; the letters that follow keep the same colonial frame.",
   "a-hero-of-our-time":
-    "Travelling post from Tiflis into the Koishaur Valley at sunset — a dukhan crowd and a caravan of camels. Imperial Caucasus violence in Bela; Host may name it, and don’t sanitize. Skip the translators’ foreword; the novel continues.",
+    "Travelling post from Tiflis into the Koishaur Valley at sunset — a dukhan crowd and a caravan of camels. Bela carries imperial violence in the Caucasus, left as printed. Skip the translators’ foreword; the novel continues.",
   "after-the-divorce":
-    "A woman weeping in the Porru house’s strangers’ room. Sardinian honor and a wrongful conviction — Host OK.",
+    "A woman weeping in the Porru house’s strangers’ room. Sardinian honor and a wrongful conviction.",
   "blood-and-sand":
-    "Gallardo’s bullfight-day breakfast: meat, black coffee, a huge cigar, and a dining room that treats the matador like family glory. Bullring gore and animal death are in the book; name them if you Host further, and don’t sanitize.",
+    "Gallardo’s bullfight-day breakfast: meat, black coffee, a huge cigar, and a dining room that treats the matador like family glory. Further on, the book has bullring gore and animal death.",
   "white-nights":
     "It was a wonderful night — the dreamer’s starry Petersburg. First Night only, and not Notes from Underground.",
   "west-african-folk-tales":
@@ -405,7 +405,7 @@ export const PITCHES: Record<string, string> = {
   "liza-of-lambeth":
     "A factory girl in Lambeth learns how little the street forgives. Maugham’s early London — heat, gossip, and no soft landing.",
   banjo:
-    "Lincoln Agrippa Daily patrols the Marseilles breakwater with a banjo — McKay’s 1929 beach-boy dialect and the Ditch stay as written, not sanitized.",
+    "Lincoln Agrippa Daily patrols the Marseilles breakwater with a banjo — McKay’s 1929 beach-boy dialect and the Ditch stay as written.",
   "in-our-time":
     `A drunk battery on a dark road—then a Michigan lake at dawn, and Nick Adams in a rowboat with his father. Ernest Hemingway’s 1925 American collection opens with a war vignette snapped against “Indian Camp”: spare sentences, long silences, the method already underway.`,
   "the-sun-also-rises":
@@ -451,7 +451,7 @@ export const PITCHES: Record<string, string> = {
   "plum-bun":
     `Opal Street is no jewel — only imitation — and a Philadelphia household where color and ambition share a narrow parlor. Jessie Redmon Fauset’s 1929 novel opens on that street before Angela Murray takes the train toward a different mask.`,
   cheri:
-    "Léa’s wrought-iron bed; Chéri wants the pearls. Janet Flanner’s English is the only bind, with no catalog number invented. Desire and the kept boy stay in the sit — do not sanitize — and it stays soft against Bel-Ami.",
+    "Léa’s wrought-iron bed; Chéri wants the pearls. In Janet Flanner’s English. Desire and a kept boy are the story, told frankly.",
   liliom:
     "Carousel barker, cheap room, day-pass from the dead — Glazer’s Theatre Guild Liliom. Molnár’s rough tenderness between the carnival and the afterlife.",
   "the-cherry-orchard":

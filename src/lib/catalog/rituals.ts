@@ -41,7 +41,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "a-few-figs-from-thistles":
     "My candle burns at both ends. This sit is First Fig and Recuerdo — the ferry, the apples, the subway fare — about five minutes. Each poem is its own chapter; the book continues.",
   "a-hero-of-our-time":
-    "Travelling post from Tiflis into the Koishaur Valley at sunset — a dukhan crowd and a caravan of camels. Imperial Caucasus violence in Bela; Host may name it, and don’t sanitize. Skip the translators’ foreword; the novel continues.",
+    "Travelling post from Tiflis into the Koishaur Valley at sunset — a dukhan crowd and a caravan of camels. Bela carries imperial violence in the Caucasus, left as printed. Skip the translators’ foreword; the novel continues.",
   "strange-tales":
     "A Kiang-si gentleman and Mr. Chu step into a monastery chapel and find a painted wall: Chih Kung, and a fairy picking flowers. Skip the Giles introduction. This sit is The Painted Wall only; the studio continues.",
   "short-stories-from-the-balkans":
@@ -49,7 +49,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-awakening":
     "A green and yellow parrot at Grand Isle keeps repeating Allez vous-en. The sit is the Pontellier gallery, Chapter I. The novel continues; the selected shorts stay out.",
   tropic:
-    "The whistle blew for eleven o'clock. One tale: Drought — a white hillside quarry, then Coggins Rum, then the walk home through the marl. Stop at the tale boundary. Heat, labor, and racial violence are in the stretch; name them if you Host further, and don’t sanitize.",
+    "The whistle blew for eleven o'clock. One tale: Drought — a white hillside quarry, then Coggins Rum, then the walk home through the marl. Stop at the tale boundary. Heat, labor, and racial violence are in this stretch, left as printed.",
   "there-is-confusion":
     "Joanna climbs onto her father’s knee and asks for a story about somebody great. The sit runs through Mammy’s chair and stops when she wants a man who put out a fire. Chapter I continues. Fauset’s 1924 novel.",
   "pointed-roofs":
@@ -65,7 +65,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "miss-lulu-bett":
     "The Deacons were at supper. A tulip under the gas jet, and creamed salmon. Chapter I, April — a Midwest house. Skip the contents. Gale’s novel, inventory Appleton 1920 / the 1921 header. Soft Midwest is new. Inventory is easy. No score is invented for this sit. The For you seat stays.",
   color:
-    "I doubt not God is good, well-meaning, kind. Open Yet Do I Marvel, then Incident — a Baltimore memory that speaks a slur; warn the room before that poem. Each poem is its own chapter; the book continues.",
+    "I doubt not God is good, well-meaning, kind. Open Yet Do I Marvel, then Incident — a Baltimore memory; a heads-up that Incident prints a racial slur. Each poem is its own chapter; the book continues.",
   "songs-of-innocence-and-of-experience":
     "Blake’s paired songs: nursery light on one side, harder truths on the other. Read them as morning weather — clear, then clouded.",
   "second-april":
@@ -132,7 +132,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-weary-blues":
     `Harlem, late night—a piano that won’t quit, and a young poet listening hard. Langston Hughes’s 1926 first book opens with Proem (“I am a Negro”), then the title poem and a short run of cabaret pieces. Blues and jazz aren’t decoration here; they’re the beat the lines move to.`,
   cheri:
-    "Léa’s wrought-iron bed; Chéri wants the pearls. Janet Flanner’s English is the only bind, with no catalog number invented. Desire and the kept boy stay in the sit — do not sanitize — and it stays soft against Bel-Ami.",
+    "Léa’s wrought-iron bed; Chéri wants the pearls. In Janet Flanner’s English. Desire and a kept boy are the story, told frankly.",
   dalloway:
     "One London day: Clarissa buys the flowers herself and walks the city awake. Parties, memory, and the war still echoing in the street.",
   "north-of-boston":
@@ -150,11 +150,11 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "death-comes-for-the-archbishop":
     "ONE afternoon in the autumn of 1851 a solitary horseman pushes through central New Mexico. Skip the Rome prologue. Open Book One, The Cruciform Tree.",
   banjo:
-    "Heaving along the Marseilles breakwater, Banjo carries the Ditch. McKay’s 1929 beach-boy dialect stays as written — do not sanitize.",
+    "Heaving along the Marseilles breakwater, Banjo carries the Ditch. McKay’s 1929 beach-boy dialect is left as written.",
   anandamath:
     "A hot day in Padachinha, 1176 B.S-. Sen-Gupta’s 1906 Abbey of Bliss, not Poison Tree. Bengali year marks stay, and no catalog number is invented.",
   "african-tragedy":
-    "Two reasons made Robert Zulu leave teaching at Siam Village School. Stop at the end of Chapter I. Lovedale’s mission frame moralizes town life — name that blind-spot, and do not sanitize.",
+    "Two reasons made Robert Zulu leave teaching at Siam Village School. Stop at the end of Chapter I. Lovedale’s Christian-mission frame moralizes town life, and that view is the book’s own.",
   demian:
     "Two worlds pass through a little-town Latin school — home of clean clothes and Christmas, and rooms of secrecy. Childhood two-worlds map — not the later Abraxas sermon. Priday 1923 EN only.",
   "the-getting-of-wisdom":
@@ -182,9 +182,9 @@ export const RITUAL_PITCHES: Record<string, string> = {
   rashomon:
     `Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate. Akutagawa’s Kyoto opens on desolation before the crime story blooms.`,
   "high-wind-jamaica":
-    `This sit opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant, then Ferndale. Hughes’s 1929 voice uses period racial language in this stretch — flag, do not sanitize. Stop after the Ferndale frame so the timed sit stays bounded; if you Host further into the chapter, warn the room first.`,
+    `It opens on Jamaica after Emancipation: plantation ruins, bush up to the door, Derby Hill held open by a rank plant, then Ferndale. Hughes’s 1929 voice uses period racial language in this stretch, left as printed. This opening stops after Ferndale; read on into the chapter and that period language continues.`,
   "noli-me-tangere":
-    `Capitan Tiago announces a dinner at the last minute in Binondo and the Walled City. The closed sit is Chapter I only — colonial friar power; Host may name it, and don’t sanitize.`,
+    `Capitan Tiago announces a dinner at the last minute in Binondo and the Walled City. Chapter I only; the colonial power of the friars is on the page from the start.`,
   vera:
     `Cornwall, noon heat, a garden gate, and a daughter who has lost everything—and feels nothing yet. Same author as Enchanted April, colder register. Wemyss intensifies later; this open stays clean emptiness.`,
   "on-a-chinese-screen":
@@ -194,11 +194,11 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-comedienne":
     `Bukowiec station on the Dombrowa railroad, a winding line among beech and pine hills. Skip the Publishers’ Note. Obecny’s English of Reymont. The novel continues.`,
   "the-moon-and-sixpence":
-    `I confess that when first I made acquaintance with Charles Strickland I never for a moment discerned that there was in him anything out of the ordinary. Yet now few will be found to deny his greatness. The sit stops when the Rev. Robert Strickland’s biography is named as an attempt to remove misconceptions. Maugham’s 1919 novel. Tahiti later is not Hong Kong and not a London medical apprenticeship. If you Host further, the Tahiti stretch uses period racial language — flag, do not sanitize.`,
+    `I confess that when first I made acquaintance with Charles Strickland I never for a moment discerned that there was in him anything out of the ordinary. Yet now few will be found to deny his greatness. The sit stops when the Rev. Robert Strickland’s biography is named as an attempt to remove misconceptions. Maugham’s 1919 novel. Tahiti later is not Hong Kong and not a London medical apprenticeship. Later, the Tahiti stretch uses period racial language, left as printed.`,
   "my-brilliant-career":
-    `“Boo, hoo!” — the first recollection, then gum-trees and the salt-shed at Possum Gully. Skip the special notice and the England preface. Franklin’s 1901 novel. Australia, the preferred bush window. Later chapters use period words for Aboriginal people and Chinese workers — flag, do not sanitize.`,
+    `“Boo, hoo!” — the first recollection, then gum-trees and the salt-shed at Possum Gully. Skip the special notice and the England preface. Franklin’s 1901 novel. Australia, the preferred bush window. Later chapters use period words for Aboriginal people and Chinese workers, left as printed.`,
   "the-plumed-serpent":
-    `Sunday after Easter, the last bull-fight of the season in Mexico City, and Kate’s heart sank. Skip the contents and the reprint notes. Lawrence’s 1926 novel. Mystic-expat Mexico, not a revolution in the sierra and not Pamplona. If you Host further into the bullfight, “half-savage” and later “aboriginal” are period racial language — flag, do not sanitize.`,
+    `Sunday after Easter, the last bull-fight of the season in Mexico City, and Kate’s heart sank. Skip the contents and the reprint notes. Lawrence’s 1926 novel. Mystic-expat Mexico, not a revolution in the sierra and not Pamplona. Further into the bullfight, “half-savage” and later “aboriginal” are period racial language, left as printed.`,
   "the-red-room":
     `An evening in the beginning of May. The little garden on Moses Height, on the south side of Stockholm, and the wind over the town. Skip the same-author list and the contents. Schleussner’s English (Swedish 1879, Latimer 1913). Stockholm bohemia, not a Kristiania attic, and not Inferno.`,
   "african-farm":
@@ -220,7 +220,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "poison-tree":
     `His wife makes him promise: if a storm rises, leave the boat. On the Ganges in Joisto, the weather keeps that promise.`,
   "trooper-peter-halket":
-    `A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the open already frames colonial scouting; missionary and racial language harden after the night-watch open-at—before the stranger arrives. If you Host further, name that colonial frame up front.`,
+    `A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the open already frames colonial scouting; missionary and racial language harden after the night watch, before the stranger arrives.`,
   "the-home-and-the-world":
     `Mother’s vermilion mark, a red-bordered *sari*, and a daughter furious with her mirror who wanted to be an ideal wife. The sit is Bimala’s story in the Rajah’s house. This is not Anandamath.`,
   "where-angels-fear-to-tread":
@@ -238,23 +238,23 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "casanovas-homecoming":
     `Casanova was in his fifty-third year. Though no longer driven by the lust of adventure that had spurred him in his youth, he was still hunted athwart the world. The opening — the fifty-third year, a wounded bird, and the Supreme Council. Skip the front matter. Arthur Schnitzler, in Eden and Cedar Paul’s English, 1918. The German year is 1918; the English is 1922. Soft Vienna, carefully. This is not The Road to the Open or Bertha Garlan. Inventory 84 is medium. No score is invented for this sit.`,
   "letters-of-a-javanese-princess":
-    `Kartini writes from colonial Java in 1899, hungry for the modern girl while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. The Rituals sit is Letter I, the cloistered-arms beat; if you Host further, name that colonial frame for the room first.`,
+    `Kartini writes from colonial Java in 1899, hungry for the modern girl while age-long traditions hold her cloistered. Period phrases like “Indian world” and “pale sisters” mean the Indies and Western women — historical voice, not today’s usage. Letter I comes first, the cloistered-arms beat; the letters that follow keep the same colonial frame.`,
   "blood-and-sand":
-    `Gallardo’s bullfight-day breakfast: meat, black coffee, a huge cigar, and a dining room that treats the matador like family glory. Bullring gore and animal death are in the book; name them if you Host further, and don’t sanitize.`,
+    `Gallardo’s bullfight-day breakfast: meat, black coffee, a huge cigar, and a dining room that treats the matador like family glory. Further on, the book has bullring gore and animal death.`,
   ecstasy:
     `After dinner on the Scheveningen Road — rosewood, vieux-rose silk, an onyx lamp like a six-petalled flower — and a promise not to wake the boy.`,
   "an-outcast-of-the-islands":
-    `A little excursion off the straight path — neatly done, quickly forgotten. Conrad’s Malay Archipelago world — colonial hierarchy and racialized language intensify after the open-at. If you Host further, name that frame for the room first.`,
+    `A little excursion off the straight path — neatly done, quickly forgotten. Conrad’s Malay Archipelago world — colonial hierarchy and racialized language intensify after the opening.`,
   "the-underdogs":
     `Dog barking in the sierra — tortillas, a *cántaro*, a rifle under the mat — and hoofbeats in the quarry.`,
   "diary-of-a-chambermaid":
     `Twelfth place in two years — rainy September, *Figaro* ad, dirty souls, and no interview with Madame.`,
   "the-painted-veil":
-    `Shuttered Hong Kong room after tiffin; someone tries the door; Kitty whispers “Walter.” Colonial household language (*amah*, “boys”) stays, and the sit opens on “How shall I get out?” The closed sit is Chapter I only — adultery and colonial heat; Host may name them, and don’t sanitize.`,
+    `Shuttered Hong Kong room after tiffin; someone tries the door; Kitty whispers “Walter.” Colonial household language (*amah*, “boys”) is left as printed, and it opens on “How shall I get out?” Chapter I only: adultery, in the colonial heat.`,
   "the-good-soldier":
     `This is the saddest story I have ever heard. Part I, Chapter I — the Ashburnhams and nine seasons at Nauheim. Skip the Contents. Ford Madox Ford’s 1915 novel. Soft England, carefully. This is not Kipps, and not Antic Hay. Soft Germany, carefully. This is not Smoke. Nauheim is primary. Inventory 72 is medium. No score is invented for this sit.`,
   "growth-of-the-soil":
-    `The long moor road north; red-beard Isak with the first sack. The settler open uses the period word “Lapp” for Sámi herders on the common — Worster’s English only. Loneliness and land hunger — Host OK; if you Host further, keep that named for the room.`,
+    `The long moor road north; red-beard Isak with the first sack. The settler open uses the period word “Lapp” for Sámi herders on the common — Worster’s English only. Loneliness and land hunger; read on and that period word stays in Worster’s English.`,
   "of-human-bondage":
     `A club foot, a medical student, and a love that humiliates on purpose. Skip the title matter and open Chapter I on the gray morning — Wake up, Philip — and keep the first sit to that chapter only. Sit with that weather before the first breath.`,
   "green-mansions":
@@ -264,21 +264,21 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "hadji-murad":
     `I was returning home by the fields. It was midsummer; the hay harvest was over, and they were just beginning to reap the rye. Skip the editor’s notes and stop after the crushed thistle turns into the Caucasian episode.`,
   "nada-the-lily":
-    `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zulu epic is told through an invented oral narrator (Mopo) inside late-Victorian imperial romance — the White Man / Great Queen frame — and is not ethnographic authority or a substitute for Zulu-authored history. Name that frame for the room before you Host further, and do not sanitize mid-bind.`,
+    `You ask for the youth of Umslopogaas and his love for Nada — and the old man who answers is not the name you think. Haggard’s Zulu epic is told through an invented oral narrator (Mopo) inside late-Victorian imperial romance — the White Man / Great Queen frame — and is not ethnographic authority or a substitute for Zulu-authored history.`,
   "all-quiet-on-the-western-front":
-    `Five miles behind the front — bellies full of beef and haricot beans, double sausage, and a cook who won’t stop ladling. This sit is the rest billet; later chapters bring trench violence and period enemy language, and you should not sanitize them. Warn the room if you Host further.`,
+    `Five miles behind the front — bellies full of beef and haricot beans, double sausage, and a cook who won’t stop ladling. This opening is the rest billet; later chapters bring trench violence and period language about the enemy, left as printed.`,
   we:
     `Cheeks burning — D-503 will straighten the wild curve into the wisest of lines, and call the record *We*.`,
   "the-story-of-gosta-berling":
     `The long lake, the mist, and the Värmland plains come before Gösta enters — Flach’s English, soft against Growth of the Soil. At last the priest is in the pulpit, and the parish remembers him reeling out of the inn.`,
   thais:
-    `Part First — The Lotus. Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Desire and conversion irony intensify after this atlas-like open; warn the room if you Host into Paphnutius / Thaïs.`,
+    `Part First — The Lotus. Nile banks dense with hermits’ huts — clay, crosses, bread and hyssop after sunset — and stranger caves beyond. Further in, the novel turns to the monk Paphnutius and the courtesan Thaïs, and its desire and its irony about conversion grow stronger.`,
   "bunner-sisters":
-    `Stuyvesant Square side-street; a basement shop; blotchy gold on a black sign; horse-car pace. Poverty and manners without ballroom gloss — Host OK. The sit stays on Part I.`,
+    `Stuyvesant Square side-street; a basement shop; blotchy gold on a black sign; horse-car pace. Poverty and manners without ballroom gloss.`,
   "bread-givers":
-    `Potato peel; Bessie home without work; rent hollering. Soft against Bunner Sisters. Poverty and an Old World father — Host OK.`,
+    `Potato peel; Bessie home without work; rent hollering. Soft against Bunner Sisters. Poverty and an Old World father.`,
   "bertha-garlan":
-    `She takes the vine-path hillside with the boy, straw hat, near six o’clock. Widow desire — Host OK. No translator is named on this sit.`,
+    `She takes the vine-path hillside with the boy, straw hat, near six o’clock. A widow’s desire.`,
   "after-the-divorce":
     `Nineteen Hundred and Seven. In the strangers’ room of the Porru house a woman sat crying. Chapter I — the courtyard cricket. Skip the St Luke epigraph. Deledda, in Maria Hornor Lansdale’s English, Italian 1902 / 1905. Sardinia is not Sicily. No score is invented for this sit.`,
   "white-nights":
@@ -608,9 +608,9 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
-    `Kerbelai Hassan, barber of Ispahan, and the razor that starts the road. Skip the Curzon introduction and the Macmillan apparatus. First 1824; this printing is 1895. Period Orientalism stays as printed — flag, do not sanitize.`,
+    `Kerbelai Hassan, barber of Ispahan, and the razor that starts the road. Skip the Curzon introduction and the Macmillan apparatus. First 1824; this printing is 1895. Period Orientalism is left as printed.`,
   "the-purple-land":
-    `“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Skip the 1904 preface. Hudson’s 1885 novel. Uruguay, not Guyana. Guerrilla and gaucho country — Host OK.`,
+    `“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Skip the 1904 preface. Hudson’s 1885 novel. Uruguay, not Guyana. Guerrilla and gaucho country.`,
   "the-master-of-ballantrae":
     `The full truth of this odd matter — Durrisdeer in 1745, and the heir who should ride by his King’s bridle. Skip the dedication and the contents rhymes. Stevenson’s 1889 novel.`,
   "a-set-of-six":
@@ -622,7 +622,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-imperialist":
     `It would have been idle to inquire into the antecedents of old Mother Beggarlegs. Skip the produced-by credit. Duncan’s 1904 novel, Elgin, Ontario. No score is invented for this sit. The first breath is 585 words — phone-hard, left as printed.`,
   kim:
-    `He sat, in defiance of municipal orders, astride the gun Zam Zammah opposite the Wonder House, as the natives call the Lahore Museum. Skip the verse epigraph. Kipling’s 1901 novel. “Half-caste” and “burned black as any native” stay as printed — flag, do not sanitize. Calvary stays held.`,
+    `He sat, in defiance of municipal orders, astride the gun Zam Zammah opposite the Wonder House, as the natives call the Lahore Museum. Skip the verse epigraph. Kipling’s 1901 novel. “Half-caste” and “burned black as any native” are period racial language, left as printed. Calvary stays held.`,
   "mogens-and-other-stories":
     `Summer it was, in the middle of the day, in a corner of the enclosure. This sit is Mogens only, a timed cut; the whole novella is too long for one sitting. Skip the introduction. Jacobsen, in Grabow’s 1921 English of the 1882 Danish. Denmark is not Stockholm after The Red Room. The other three tales stay in the book.`,
   "the-road-to-the-open":
@@ -664,7 +664,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” The closed sit is Chapter I only, and it stays soft against Mr. Fortune’s Maggot.`,
   "brazilian-tales":
-    `One tale only: The Fortune-Teller. Rita explains Camillo with Hamlet’s line, then the cards on Guarda-Velha Street. Stop at the tale boundary — this sit does not open The Attendant's Confession, and it is not the Tropic rail. Later tales in the volume use period racial language — flag, do not sanitize.`,
+    `One tale only: The Fortune-Teller. Rita explains Camillo with Hamlet’s line, then the cards on Guarda-Velha Street. Stop at the tale boundary — this sit does not open The Attendant's Confession, and it is not the Tropic rail. Later tales in the volume use period racial language, left as printed.`,
   "the-house-of-mirth":
     `Grand Central, a Monday in early September—the afternoon rush, the heat, the crowd. Lawrence Selden notices Lily Bart standing apart from it all, vivid against the dull tints of the station. Edith Wharton’s 1905 New York novel begins with a chance meeting that doesn’t feel accidental.`,
   carmilla:
@@ -704,37 +704,37 @@ export const RITUAL_PITCHES: Record<string, string> = {
   botchan:
     `A Tokyo kid who cannot fake manners jumps from a school window on a dare, then takes a knife to his own thumb to prove the blade is sharp. Natsume Sōseki’s 1906 novel opens on that hereditary recklessness — and the scar that will be there until his death.`,
   "nacha-regules":
-    "An August night — Buenos Aires ablaze for the Centennial. Gálvez in Ongley’s English includes cabaret sex-work and violence; do not sanitize or pitch it as light romance.",
+    "An August night — Buenos Aires ablaze for the Centennial. Gálvez, in Ongley’s English, includes cabaret sex-work and violence; this is not a light romance.",
   krakatit:
     "With the evening the fog of the cold, damp day grew thicker on the Old Town embankment — then suddenly a pair of penetrating eyes fixed on him. Stop before the Krakatit-box densifies. The novel continues.",
   "the-peasants":
-    "Agatha and the priest on the autumn road — “Praised be Jesus Christ!” Dziewicki’s English of the Autumn volume, PG 75846. Village poverty, Catholic period speech, and a Jewish ragpicker on the road; Host may name the ethnic and period register, and don’t sanitize.",
+    "Agatha and the priest on the autumn road — “Praised be Jesus Christ!” Dziewicki’s English of the Autumn volume, PG 75846. Expect village poverty, Catholic period speech, and a Jewish ragpicker on the road, with the period’s ethnic language left as printed.",
   "a-hungarian-nabob":
-    "Rain on the puszta, 1822 — Peter Bús’s “Break-’em-tear-’em” csárda. Bain’s English, PG 20978. Hungarian class satire and period ethnic vocabulary stay in the sit; Host OK.",
+    "Rain on the puszta, 1822 — Peter Bús’s “Break-’em-tear-’em” csárda. Bain’s English, PG 20978. Hungarian class satire, with period ethnic vocabulary left as printed.",
   "an-iceland-fisherman":
-    "Five Breton seamen drink in a bilge-water cabin. Cambon’s English, PG 2196, year 1886 only. Rough marriage talk and sea-labor desire; soft against Growth of the Soil and Gösta Berling — a different country. Host may name the soft.",
+    "Five Breton seamen drink in a bilge-water cabin. Cambon’s English, PG 2196, year 1886 only. Rough marriage talk and sea-labor desire.",
   "the-song-of-the-blood-red-flower":
-    "A strawberry song and the girls’ ring — the Gazelle chase. Logger eros under the village dance; Host may name the sensual chase, and don’t sanitize.",
+    "A strawberry song and the girls’ ring — the Gazelle chase. Logger eros runs under the village dance, and the chase is frankly sensual.",
   "irish-fairy-tales":
-    "Finnian of Moville goes after the disapproved gods, and meets Tuan mac Cairill. Chapter I only — the sit ends when Time laughs at Tuan. Christian and pagan clash, and the “magician” framing; Host OK.",
+    "Finnian of Moville goes after the disapproved gods, and meets Tuan mac Cairill. Chapter I only — it ends when Time laughs at Tuan. Christian and pagan clash, with the “magician” framing.",
   blacker:
-    "Emma Lou on her “luscious black complexion,” and the family that trained her to mourn it — a Harlem colorism sit. Period intra-community color hierarchy language is the book; Host may name it, and don’t sanitize.",
+    "Emma Lou on her “luscious black complexion,” and the family that trained her to mourn it — a Harlem novel of colorism. The period language of color hierarchy within the community is the book itself, left as printed.",
   "a-lost-lady":
     "Sweet Water along the Burlington — Niel’s memory of Marian Forrester when the frontier ethos dies into money. Soft against Death Comes for the Archbishop.",
   "lady-macbeth":
-    "Katerina Lvovna is bored in her rich father-in-law’s empty house in Mtsensk. Chamot’s 1923 English. An adultery and murder novella; Host OK.",
+    "Katerina Lvovna is bored in her rich father-in-law’s empty house in Mtsensk. Chamot’s 1923 English. An adultery and murder novella.",
   summer:
     "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires. Soft against Bunner Sisters.",
   "jacob-s-room":
     "Betty Flanders writing in the sand — Cornwall, then the room that will be Jacob’s. The experimental voice is the sit.",
   "the-tenant-of-wildfell-hall":
-    "“You must go back with me to the autumn of 1827” — Gilbert Markham’s Yorkshire frame. A long novel; Host OK.",
+    "“You must go back with me to the autumn of 1827” — Gilbert Markham’s Yorkshire frame. A long novel.",
   herland:
-    "The narrator writes from memory the journey into a country of women. An idea-led utopia; Host OK.",
+    "The narrator writes from memory the journey into a country of women. An idea-led utopia.",
   "the-last-man":
     "Sea-surrounded England, and the narrator’s ruined lineage — a plague and exile epic. Heavy; a later sit.",
   "the-wanderer":
-    "He arrived at our home on a Sunday of November, 189… — Sainte-Agathe, and the schoolhouse that is no longer theirs. Delisle’s 1928 English. The year ellipsis stays; Host may leave it.",
+    "He arrived at our home on a Sunday of November, 189… — Sainte-Agathe, and the schoolhouse that is no longer theirs. Delisle’s 1928 English. The year’s ellipsis is the book’s own.",
   "the-cabala":
     "The train that first carried me into Rome was late, across the Campagna in a Virgilian sigh, and this sit stops when the air of Naples generates legend. Wilder’s 1926 novel. The compartment comedy comes after. This is not The Bridge of San Luis Rey.",
   "reuben-sachs":
@@ -746,19 +746,19 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "theresa-raquin":
     "The Arcade of the Pont Neuf is a damp corridor of dumpy shops. Skip the translator’s preface. Vizetelly’s English of Zola’s 1867 novel continues. This is not Bel-Ami.",
   "trooper-peter-halket-of-mashonaland":
-    "A dark night on a Mashonaland kopje, Trooper Peter Halket’s fire quivering, a burnt kraal already in the dark. Skip the glossary. Schreiner’s 1897 novella keeps the Chartered Company frame — name it, and don’t sanitize. Not the Africa novel pile.",
+    "A dark night on a Mashonaland kopje, Trooper Peter Halket’s fire quivering, a burnt kraal already in the dark. Skip the glossary. Schreiner’s 1897 novella keeps the Chartered Company frame, left as printed. Not the Africa novel pile.",
   "the-late-mattia-pascal":
-    "One of the few things he was sure of was his name: Mattia Pascal — the library at Miragno. Livingston’s 1923 English. Comic self-narration; Host OK.",
+    "One of the few things he was sure of was his name: Mattia Pascal — the library at Miragno. Livingston’s 1923 English. Comic self-narration.",
   basilio:
-    "Lisbon breakfast, the cuckoo-clock strikes eleven, and Luiza reads that Cousin Bazilio is coming home. Serrano’s 1889 English, PG 74442, is abridged and bowdlerized. Adultery and household power; Host OK. Sit with it as Dragon’s Teeth.",
+    "Lisbon breakfast, the cuckoo-clock strikes eleven, and Luiza reads that Cousin Bazilio is coming home. Serrano’s 1889 English, PG 74442, is abridged and bowdlerized. Adultery and household power. Sit with it as Dragon’s Teeth.",
   oblomov:
-    "Oblomov in bed on Gorokhovaya Street with a dreaded letter from his estate. Hogarth’s English, PG 54700, abridged. Serf-era master and servant (Zakhar, *barin*) and period class language; Host note, don’t sanitize.",
+    "Oblomov in bed on Gorokhovaya Street with a dreaded letter from his estate. Hogarth’s English, PG 54700, abridged. Expect serf-era master and servant (Zakhar, *barin*) and period class language, left as printed.",
   "the-lady-with-the-dog-and-other-stories":
-    "Gurov at Yalta sees the lady in the *béret*. Title story only, Chapter I per sit — Garnett’s English, PG 13415. Gurov’s contempt for women (“the lower race”) is period misogyny; Host may name it.",
+    "Gurov at Yalta sees the lady in the *béret*. Title story only, Chapter I per sit — Garnett’s English, PG 13415. Gurov’s contempt for women (“the lower race”) is period misogyny, left as printed.",
   zeno:
-    "Zeno’s first cigarettes and the last-cigarette habit, in Trieste. De Zoete’s English; PG 79453 gives the original publication as 1930. Comic self-deception; Host OK.",
+    "Zeno’s first cigarettes and the last-cigarette habit, in Trieste. De Zoete’s English; PG 79453 gives the original publication as 1930. Comic self-deception.",
   "the-book-of-khalid":
-    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony; Host note, don’t sanitize.",
+    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Expect Expect Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony, left as printed.",
   cane:
     "Karintha: her skin is like dusk on the eastern horizon. Skip the foreword. This sit is Karintha only — later Georgia sketches are later sits.",
   generosity:

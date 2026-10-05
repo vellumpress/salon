@@ -91,7 +91,7 @@ test("A High Wind in Jamaica uses the before-sleep rank-plant sit", () => {
   assert.match(copy, /Jamaica after Emancipation/);
   assert.match(copy, /rank plant/);
   assert.match(copy, /period racial language/);
-  assert.match(copy, /warn the room first/);
+  assert.match(copy, /that period language continues/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|do not extend|locked/i);
 });
 
@@ -232,7 +232,7 @@ test("The Immoralist uses the before-sleep freedom-line sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
 });
 
-test("Letters of a Javanese Princess shows the hardened Host note before the sit", () => {
+test("Letters of a Javanese Princess shows the colonial-frame heads-up before the sit", () => {
   const copy = readerIntro(shelfAsWork("letters-of-a-javanese-princess"));
   assert.match(copy, /Indian world/);
   assert.match(copy, /pale sisters/);
@@ -249,11 +249,11 @@ test("Ecstasy uses the before-sleep Scheveningen boudoir sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend/i);
 });
 
-test("An Outcast of the Islands shows the required Host frame before the sit", () => {
+test("An Outcast of the Islands shows the colonial-frame heads-up before the sit", () => {
   const copy = readerIntro(shelfAsWork("an-outcast-of-the-islands"));
   assert.match(copy, /straight path/);
   assert.match(copy, /racialized language/);
-  assert.match(copy, /Host further/);
+  assert.match(copy, /intensify after the opening/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|SOFT-full/i);
 });
 
@@ -286,7 +286,7 @@ test("The Good Soldier uses the Nauheim sit", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
-test("Growth of the Soil shows the soft Host note for period Lapp / Sámi", () => {
+test("Growth of the Soil shows the period Lapp / Sámi heads-up", () => {
   const copy = readerIntro(shelfAsWork("growth-of-the-soil"));
   assert.match(copy, /sack/);
   assert.match(copy, /\bLapp\b/);
@@ -298,7 +298,7 @@ test("All Quiet on the Western Front uses the before-sleep double-rations sit", 
   const copy = readerIntro(shelfAsWork("all-quiet-on-the-western-front"));
   assert.match(copy, /five miles behind the front/i);
   assert.match(copy, /double sausage/);
-  assert.match(copy, /Warn the room if you Host further/);
+  assert.match(copy, /trench violence/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
@@ -396,12 +396,12 @@ test("Thaïs uses the before-sleep Nile-huts sit and names the Host frame", () =
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
-test("Nada the Lily shows the required colonial Host note before the sit", () => {
+test("Nada the Lily shows the colonial-frame heads-up before the sit", () => {
   const copy = readerIntro(shelfAsWork("nada-the-lily"));
   assert.match(copy, /Umslopogaas/);
   assert.match(copy, /White Man/);
   assert.match(copy, /Great Queen/);
-  assert.match(copy, /Name that frame for the room before you Host further/);
+  assert.match(copy, /Great Queen frame/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
@@ -423,7 +423,7 @@ test("Lolly Willowes opens on Caroline’s spare-room sit", () => {
 test("uses a locked recommend pitch before Ritual copy", () => {
   assert.equal(
     readerIntro(work("cheri", "This LE About copy should not win.")),
-    "Léa’s wrought-iron bed; Chéri wants the pearls. Janet Flanner’s English is the only bind, with no catalog number invented. Desire and the kept boy stay in the sit — do not sanitize — and it stays soft against Bel-Ami.",
+    "Léa’s wrought-iron bed; Chéri wants the pearls. In Janet Flanner’s English. Desire and a kept boy are the story, told frankly.",
   );
 });
 
