@@ -1218,6 +1218,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Sun 4 Oct 2026 PM — Maximina follows Thérèse immediately, Next carefully only (the content notes are on the card).
   // Never Featured. Off every Ritual lane (unwind, on-a-walk, before-sleep).
   "maximina",
+  // Mira Mon 5 Oct 2026 POST-#238 — Love Among the Chickens follows Maximina, plain Next. Never Featured. Off every Ritual lane.
+  "love-among-the-chickens",
 ] as const;
 
 /**
