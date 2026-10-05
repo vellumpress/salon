@@ -22,6 +22,8 @@ import { STORED_PREFACES } from "./prefaces-stored.ts";
 import { PITCHES } from "./pitches.ts";
 import { RITUAL_PITCHES } from "./rituals.ts";
 import { SHELF } from "./shelf.ts";
+import { readerIntro } from "../reader-intro.ts";
+import type { Work } from "../works.ts";
 
 /** Documented exceptions. Prefer zero. */
 export const PIPELINE_LEAK_ALLOWLIST: readonly string[] = [];
@@ -70,6 +72,39 @@ export const HOST_STAFF_PATTERNS: { name: string; pattern: RegExp }[] = [
 ];
 
 /**
+ * Audit and shelf-placement boilerplate ("No score is invented for this sit.",
+ * "Inventory 81 is medium.", "PG reading-ease 82.0 is easy.", "Soft England,
+ * carefully.", "France is primary.", "The lead is this book, not …").
+ * The figures stay in bind notes (texts/openings JSON) for the pipeline;
+ * reader copy never carries them. Bind notes are checked through
+ * readerIntro, the one path where a note can reach a reader.
+ */
+export const BOILERPLATE_PATTERNS: { name: string; pattern: RegExp }[] = [
+  { name: "no score invented", pattern: /\bNo (?:reading-ease )?score is invented\b/i },
+  { name: "inventory", pattern: /\binventory\b/i },
+  { name: "reading-ease", pattern: /reading-ease/i },
+  { name: "Launch", pattern: /\bLaunch\b/ },
+  { name: "Notion", pattern: /\bNotion\b/ },
+  { name: "inflate", pattern: /\b(?:soft-)?inflate\b/i },
+  { name: "For you seat", pattern: /\bFor you seat\b/i },
+  { name: "soft against", pattern: /\bsoft against\b/i },
+  { name: "Soft X, carefully", pattern: /\bSoft [A-Z][^.]*, carefully\b/ },
+  { name: "Long, carefully", pattern: /\b(?:Long|The sit is longer), carefully\./ },
+  { name: "is primary", pattern: /\b(?:is|are) primary\b/ },
+  { name: "the lead is this", pattern: /\bThe lead (?:is|stays) this\b/ },
+  { name: "weighted lead", pattern: /-weighted lead\b/ },
+  { name: "invented for this sit", pattern: /\bis invented for this sit\b/i },
+  { name: "no catalog number", pattern: /\bno catalog number\b/i },
+  { name: "year/translator invented", pattern: /\b(?:year|translator) is (?:invented|cited)\b/ },
+  { name: "bind", pattern: /\b(?:only|local|this|the) bind\b/ },
+  { name: "stays held", pattern: /\bstays held\b/ },
+  { name: "densify", pattern: /densif/i },
+  { name: "not Next", pattern: /\bnot Next\b/ },
+  { name: "Resident-only", pattern: /Resident-only/ },
+  { name: "CLEAR EN", pattern: /\bCLEAR EN\b/ },
+];
+
+/**
  * Editorial surfaces (intros, host notes, blurbs, pitches, prefaces).
  * Name tokens are banned here because this copy is ours, not the book.
  */
@@ -86,6 +121,9 @@ const EDITORIAL_PATTERNS: { name: string; pattern: RegExp }[] = [
   { name: "Salon", pattern: /\bSalon\b/ },
   ...HOST_STAFF_PATTERNS,
 ];
+
+/** Copy a reader sees directly: editorial patterns plus audit boilerplate. */
+const READER_COPY_PATTERNS = [...EDITORIAL_PATTERNS, ...BOILERPLATE_PATTERNS];
 
 type Hit = { where: string; name: string; snippet: string };
 
@@ -114,22 +152,22 @@ test("reader-facing copy has no pipeline leaks (allowlist empty)", () => {
   const hits: Hit[] = [];
 
   for (const work of SHELF) {
-    if (work.intro) consider(hits, `shelf.intro:${work.id}`, work.intro, EDITORIAL_PATTERNS);
+    if (work.intro) consider(hits, `shelf.intro:${work.id}`, work.intro, READER_COPY_PATTERNS);
     if (work.opening) consider(hits, `shelf.opening:${work.id}`, work.opening, BREATH_PATTERNS);
     const blurb = blurbFor(work);
-    if (blurb) consider(hits, `blurb:${work.id}`, blurb, EDITORIAL_PATTERNS);
+    if (blurb) consider(hits, `blurb:${work.id}`, blurb, READER_COPY_PATTERNS);
   }
   for (const [id, copy] of Object.entries(PITCHES)) {
-    consider(hits, `pitch:${id}`, copy, EDITORIAL_PATTERNS);
+    consider(hits, `pitch:${id}`, copy, READER_COPY_PATTERNS);
   }
   for (const [id, copy] of Object.entries(RITUAL_PITCHES)) {
-    consider(hits, `ritual:${id}`, copy, EDITORIAL_PATTERNS);
+    consider(hits, `ritual:${id}`, copy, READER_COPY_PATTERNS);
   }
   for (const [id, copy] of Object.entries(PREFACES)) {
-    consider(hits, `preface:${id}`, copy, EDITORIAL_PATTERNS);
+    consider(hits, `preface:${id}`, copy, READER_COPY_PATTERNS);
   }
   for (const [id, copy] of Object.entries(STORED_PREFACES)) {
-    consider(hits, `stored-preface:${id}`, copy, EDITORIAL_PATTERNS);
+    consider(hits, `stored-preface:${id}`, copy, READER_COPY_PATTERNS);
   }
 
   const here = fileURLToPath(new URL(".", import.meta.url));
@@ -190,4 +228,33 @@ test("reader-voice heads-ups survive the Host-staff scrub", () => {
   assert.deepEqual(missing, []);
   assert.doesNotMatch(ritual("bertha-garlan"), /translator/i);
   assert.doesNotMatch(ritual("bunner-sisters"), /Part I\./);
+});
+
+/**
+ * Bind notes keep pipeline metadata (inventory, reading-ease, "Host: Ch I …"
+ * scope labels). They are internal unless readerIntro falls back to one, so
+ * check the copy a reader actually gets at the threshold, note included.
+ */
+test("reader threshold copy carries no audit boilerplate, even via a bind note", () => {
+  const here = fileURLToPath(new URL(".", import.meta.url));
+  const noteFor = (id: string) => {
+    for (const folder of ["texts", "openings"] as const) {
+      try {
+        const data = JSON.parse(readFileSync(join(here, folder, `${id}.json`), "utf8")) as { note?: string };
+        if (typeof data.note === "string") return data.note;
+      } catch {
+        // no bind for this folder
+      }
+    }
+    return undefined;
+  };
+  const hits: Hit[] = [];
+  for (const work of SHELF) {
+    const copy = readerIntro({ ...work, note: noteFor(work.id) } as unknown as Work);
+    consider(hits, `readerIntro:${work.id}`, copy, [...BOILERPLATE_PATTERNS, ...HOST_STAFF_PATTERNS, { name: "Host: label", pattern: /\bHost:/ }]);
+  }
+  assert.deepEqual(
+    hits.map((hit) => `${hit.where} [${hit.name}] ${hit.snippet}`),
+    [],
+  );
 });

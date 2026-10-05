@@ -346,7 +346,7 @@ test("Bliss uses the before-sleep radiant-mirror sit and names the Host frame", 
   const copy = readerIntro(shelfAsWork("bliss"));
   assert.match(copy, /radiant mirror/);
   assert.match(copy, /dinner-party turn/);
-  assert.match(copy, /never Prelude/);
+  assert.doesNotMatch(copy, /never Prelude/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
@@ -361,7 +361,7 @@ test("Dubliners uses the Araby sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("dubliners"));
   assert.match(copy, /North Richmond Street/);
   assert.match(copy, /Araby only/);
-  assert.match(copy, /not Irish Fairy Tales/);
+  assert.doesNotMatch(copy, /not Irish Fairy Tales/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open|The Sisters only/i);
 });
 
@@ -416,7 +416,7 @@ test("Lolly Willowes opens on Caroline’s spare-room sit", () => {
   const copy = readerIntro(shelfAsWork("lolly-willowes"));
   assert.match(copy, /Of course, you will come to us/);
   assert.match(copy, /Chapter I only/);
-  assert.match(copy, /Maggot/);
+  assert.doesNotMatch(copy, /Maggot/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured/i);
 });
 

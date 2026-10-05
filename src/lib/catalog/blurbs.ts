@@ -183,7 +183,7 @@ const BLURBS: Record<string, string> = {
     "A dog barks in the sierra and Demetrio is told to hide from the soldiers.",
   rur: "A factory makes artificial workers; the workers decide they are the future.",
   "bread-givers":
-    "Potato peel and Bessie home without work — soft against Bunner Sisters.",
+    "Potato peel and Bessie home without work.",
   dalloway:
     "One London day: Clarissa buys the flowers herself and walks the city awake.",
   orlando:
