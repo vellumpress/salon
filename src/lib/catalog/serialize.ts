@@ -25,7 +25,6 @@ export type SerializePlan = {
   cadence: string;
   openAt: string;
   why: string;
-  shipNotes: string;
   /** Shelf work id when a local bind exists; null = catalogued, text not live. */
   shelfWorkId: string | null;
   episodes: SerializeEpisode[];
@@ -47,7 +46,6 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "cadence": "Nightly 8–15 min; allow ~18 min for fight/fiesta peaks",
     "openAt": "Skip Scribner front matter and dedication if desired; begin Book I, Chapter 1 (Robert Cohn was once...). Keep Stein/Ecclesiastes epigraphs as optional pre-roll.",
     "why": "Contemporary listeners already live inside Jake's problem: performative cool over unfixable want. The novel serializes cleanly because Hemingway's chapters are scene-shaped — cafes, trains, fights — with natural stop-points. Brett Ashley reads now as both liberated and trapped; Cohn's grievance politics feel uncomfortably current. Pamplona gives the back half seasonal event-series energy. Ending on the Madrid taxi line gives the shelf a signature closer people quote.",
-    "shipNotes": "Project Gutenberg #67138 (Distributed Proofreaders Canada text; confirm US territory on board) PG 67138 is the Canada DP text. Confirm US PD/storefront rights on the board before wide US push. Structure: Book I Ch. 1–7; Book II Ch. 8–18; Book III Ch. 19 (19 chapters total).",
     "shelfWorkId": "the-sun-also-rises",
     "episodes": [
       {
@@ -227,7 +225,6 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "cadence": "Every other night or nightly; Parts Two–Four split halves (~15 min)",
     "openAt": "Begin Part One immediately after title/illustrations; no long front matter.",
     "why": "It is already a prestige limited series: cold open disaster, then character dossiers, then philosophical finale. Contemporary audiences raised on nonlinear TV (accident first, lives in flashback) will feel at home. Questions of providence and why these five map onto modern talk about randomness and meaning. The Abbess and the Marquesa give the book a feminist aftertaste without modern jargon. At about 8 episodes it is an ideal complete-in-two-weeks tbr object.",
-    "shipNotes": "Project Gutenberg #69768 1927 Wilder; confirm territory PD on board. Text and Amy Drevenstedt illustrations on PG 69768 — decide whether to ship illustrations as optional art. Do not invent chapter names inside parts.",
     "shelfWorkId": "the-bridge-of-san-luis-rey",
     "episodes": [
       {
@@ -317,7 +314,6 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "cadence": "Nightly or every other night; 12–14 min easy",
     "openAt": "Begin Part One, Chapter 1 (the letter). Skip any modern introduction in your bound file.",
     "why": "Passing is short, hot, and structurally perfect for serialization: letter, reunion, infiltration, disaster. Race, gender, marriage, and surveillance read as contemporary without modernization. Irene's controlled voice is premium audio — every polite sentence hides a knife. The unresolved ending is a feature for tbr: listeners argue. Six nights fits a novella sprint product.",
-    "shipNotes": "BOUND LOCAL / Launch shelf — NOT on Project Gutenberg (confirmed: no Larsen records). Check rights board for US PD (pub. 1929; author d. 1964). SHIP BLOCKER CANDIDATE: not on PG. Use bound local text only after board clears PD/rights. Do not invent chapter titles — parts are Encounter / Re-encounter / Finale with numbered chapters 1–4 each (Knopf 1929 convention). Word counts estimated (~27k total).",
     "shelfWorkId": "passing",
     "episodes": [
       {
@@ -389,7 +385,6 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "cadence": "Nightly ~14 min; 12 episodes across 3 Parts",
     "openAt": "Begin Part I opening sentence; skip publisher imprint. No chapter titles in this edition — episodes are production beats within Parts I / 2 / 3 only.",
     "why": "Aunt-spinster liberation narrative with a witchcraft turn lands perfectly for contemporary feminist and queer-adjacent shelves. Warner's sentences are audio gold — dry, exact, funny. The three-part move (family absorption, escape, supernatural contract) is a ready-made act structure. Listeners burned out on marriage-plot fiction get a heroine who opts out and means it. Great Mop becomes a destination brand inside the app.",
-    "shipNotes": "Project Gutenberg #72223 Edition uses Part I, Part 2, Part 3 (arabic 2–3 in PG text). Do not invent chapter names. PD via PG 72223.",
     "shelfWorkId": "lolly-willowes",
     "episodes": [
       {
@@ -515,7 +510,6 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "cadence": "Nightly ~12–14 min",
     "openAt": "Skip title/imprint/dedication if desired; begin Part 1 Home, Chapter I. Keep epigraph (To market, to market…) as optional pre-roll — it teaches the structure.",
     "why": "Passing-as-plot with an artist's coming-of-age — mashup of Larsen's theme and a broader social novel. The nursery-rhyme part titles (Home / Market / Plum Bun / Home Again / Market Is Done) are ready-made season titles in the app. Contemporary listeners get colorism, class, and the feel of selling yourself to institutions. Angela is flawed and watchable; Virginia prevents a single-voice tract. Twelve nights is a standard tbr novel length.",
-    "shipNotes": "BOUND LOCAL — Standard Ebooks / Wikisource (not on PG as Plum Bun; PG has Fauset's There Is Confusion #78915 only). Board must clear rights. SHIP BLOCKER CANDIDATE: not on Project Gutenberg under this title. Prefer Standard Ebooks text for chapter roman numerals matching this map (Home I–VI; Market I–VII; Plum Bun I–V; Home Again I–VI; Market Is Done I–III). Confirm PD (1928). Do not invent chapter names.",
     "shelfWorkId": "plum-bun",
     "episodes": [
       {
@@ -641,7 +635,6 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "cadence": "Nightly 14–16 min; trial/caves nights may hit ~16–18",
     "openAt": "Begin Chapter I; skip by-the-same-writer lists. Optional: keep dedication to Syed Ross Masood as pre-roll.",
     "why": "Still the novel people argue about when they argue about empire, friendship, and whether liberalism is enough. Three titled parts give the serial a trilogy feel inside one purchase. The Marabar echo is a built-in mid-season event horizon. Courtroom episode is pure appointment listening. The ending's not yet keeps the story ethically unfinished — perfect for audiences suspicious of neat reconciliation.",
-    "shipNotes": "Project Gutenberg #61221 PG 61221. Period anti-Indian racism is depicted — frame in shelf copy as critique, not endorsement. Some chapters are very short (X, XXI, XXXII); this map bundles them rather than inventing titles. 37 chapters across Parts I Mosque, II Caves, III Temple.",
     "shelfWorkId": "a-passage-to-india",
     "episodes": [
       {
@@ -785,7 +778,6 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "cadence": "Nightly or 4×/week; ~12–16 min; finale may run ~18",
     "openAt": "Begin Prologue (Rome). Then Book One section The Cruciform Tree.",
     "why": "Already written as a season of vignettes — Cather's named sections are episode titles waiting to happen. Anti-spectacular Western: patience, friendship, land, and institutional building. Contemporary interest in borderlands and Indigenous presence gives shelf heat without rewriting Cather. Latour/Vaillant is one of American fiction's great male friendships. Death arrives as weather, not twist — a premium closer.",
-    "shipNotes": "Project Gutenberg #69730 PG 69730. Use Cather's own section titles only (listed in episode spans). Book Nine has no internal named subsections in this edition — ship as one finale episode.",
     "shelfWorkId": "death-comes-for-the-archbishop",
     "episodes": [
       {
@@ -947,7 +939,6 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "cadence": "Nightly ~14–15 min; Ch. VII split across two nights",
     "openAt": "Skip TOC and Zelda dedication if desired; begin Chapter I. Keep the Thomas Parke d'Invilliers epigraph as optional pre-roll.",
     "why": "Everyone thinks they know it — serialization makes them hear the sentences again. Nine chapters become twelve nights by splitting the long set-pieces (party, Plaza, ending). Class, hustle, and invented identity are contemporary catnip. The green light is already merch; the funeral emptiness is the gut-punch closer. Low education barrier, high prestige — core tbr acquisition title.",
-    "shipNotes": "Project Gutenberg #64317 (plain text confirmed). If board previously had PDF-only, prefer PG text for production. Earlier board note said PDF-only — outdated if PG 64317 is cleared for your territories. Still verify US storefront rights on board. Chapters are untitled beyond roman numerals — do not invent literary chapter names in product UI; use episode titles only.",
     "shelfWorkId": "gatsby",
     "episodes": [
       {
@@ -1073,7 +1064,6 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "cadence": "Nightly ~14–16 min; finale ~18",
     "openAt": "Skip Contents; begin Chapter I journal. Optional: keep Stoker's note on how these papers were placed if present in your file.",
     "why": "Epistolary form is serialization's best friend: dates and document types create clean stops. Horror audiences are huge and underserved by serious PD shelves. Mina's arc reads as modern competence under patriarchal sidelining. The mid-book Lucy tragedy is a built-in midseason finale. Everyone knows the Count; almost nobody has heard the whole document chain.",
-    "shipNotes": "Project Gutenberg #345 PG 345. Chapters run 25–40 min unbroken — this plan splits at journal date / document boundaries, not invented titles. Prefer cutting on dated entries (e.g. 5 May) inside long chapters when audio timing needs +/-2 minutes.",
     "shelfWorkId": "dracula",
     "episodes": [
       {
@@ -1235,7 +1225,6 @@ export const SERIALIZE_PLANS: SerializePlan[] = [
     "cadence": "Nightly ~14–16 min; Ch. VII is a short palate-cleanser",
     "openAt": "Begin Chapter I after Contents. Keep Stevenson's editorial frame if present.",
     "why": "Sibling war plus pirate romance plus unreliable domestic narrator — a genre smoothie that still feels fresh. Mackellar's steward voice is premium audio (judgment curling under every sentence). The 1745 setting gives historical heft without requiring prior knowledge. Long chapters split cleanly into summary vs scene nights. The wilderness ending is stranger than most listeners expect from Stevenson.",
-    "shipNotes": "Project Gutenberg #864 PG 864. Use Stevenson's full chapter titles (they are already episodic). Ch. III–IV exceed 50 min unbroken — splits are production halves, not new names. Exact titles: see episode spans.",
     "shelfWorkId": "the-master-of-ballantrae",
     "episodes": [
       {

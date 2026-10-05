@@ -10,7 +10,7 @@
     "predev": "node scripts/copy-pdf-worker.mjs",
     "prebuild": "node scripts/copy-pdf-worker.mjs",
     "dev": "node scripts/with-app-env.mjs vite dev --host 0.0.0.0 --port 8080",
-    "build": "node scripts/with-app-env.mjs vite build && node scripts/prepare-pages.mjs && npm run db:migrate",
+    "build": "node scripts/with-app-env.mjs vite build && node scripts/prepare-pages.mjs && node scripts/strip-bind-notes.mjs && npm run db:migrate",
     "build:vercel": "NITRO_PRESET=vercel node scripts/with-app-env.mjs vite build && node scripts/fix-ssr-exports.mjs && npm run db:migrate",
     "db:migrate": "node scripts/migrate.mjs",
     "build:dev": "node scripts/with-app-env.mjs vite build --mode development",
