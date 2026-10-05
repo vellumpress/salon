@@ -1185,7 +1185,7 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       year: 1896,
       opening: /^When he stepped off the straight and narrow path/,
       breaths: 7108,
-      intro: /if you Host further, name that frame for the room first/i,
+      intro: /racialized language intensify after the opening\./,
     },
     "the-getting-of-wisdom": {
       gutenberg: 3728,
@@ -1226,7 +1226,7 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       year: 1897,
       opening: /^It was a dark night/,
       breaths: 1181,
-      intro: /name that colonial frame up front/,
+      intro: /missionary and racial language harden after the night watch/,
     },
     "martin-bircks-youth": {
       gutenberg: 78363,

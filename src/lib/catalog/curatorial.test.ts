@@ -3544,7 +3544,7 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
   assert.match(arch?.intro ?? "", /Rome prologue/);
   assert.doesNotMatch(arch?.opening ?? "", /^ONE afternoon in the autumn of 1851 a solitary horseman was in Rome/);
   const banjo = SHELF.find((item) => item.id === "banjo");
-  assert.match(banjo?.intro ?? "", /do not sanitize/);
+  assert.match(banjo?.intro ?? "", /language is left as written/);
   assert.match(banjo?.intro ?? "", /dialect/);
   assert.equal(banjo?.gutenberg, undefined);
   const abbey = SHELF.find((item) => item.id === "anandamath");
@@ -3554,13 +3554,13 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
   assert.equal(abbey?.gutenberg, undefined);
   const nacha = SHELF.find((item) => item.id === "nacha-regules");
   assert.match(nacha?.author ?? "", /Ongley/);
-  assert.match(nacha?.intro ?? "", /do not sanitize/);
+  assert.match(nacha?.intro ?? "", /not a light romance/);
   assert.match(nacha?.intro ?? "", /sex-work/);
   const tragedy = SHELF.find((item) => item.id === "african-tragedy");
   assert.match(tragedy?.opening ?? "", /^Two reasons made Robert Zulu leave teaching/);
   assert.doesNotMatch(tragedy?.opening ?? "", /EVILS OF TOWN LIFE/);
   assert.match(tragedy?.intro ?? "", /chapter boundary/);
-  assert.match(tragedy?.intro ?? "", /do not sanitize/);
+  assert.match(tragedy?.intro ?? "", /that view is the book’s own/);
   assert.equal(tragedy?.gutenberg, undefined);
   for (const id of Object.keys(expect)) {
     assert.equal(featured.includes(id), false, id);
@@ -3748,7 +3748,7 @@ test("Mira Noon Wed 23 Sep CLEAR sits on Next, For you, and Rituals, never a new
   const dogs = SHELF.find((item) => item.id === "underdogs");
   assert.match(dogs?.opening ?? "", /^That's no animal, I tell you!/);
   assert.doesNotMatch(dogs?.opening ?? "", /How beautiful the revolution/);
-  assert.match(dogs?.intro ?? "", /do not sanitize/);
+  assert.match(dogs?.intro ?? "", /Soldiers and violence are already in this stretch/);
   assert.equal(dogs?.gutenberg, 549);
   const thais = SHELF.find((item) => item.id === "thais");
   assert.equal(thais?.gutenberg, 2078);
@@ -3961,13 +3961,13 @@ test("Mira ~4:14 Wed 23 Sep CLEAR sits on Next and Rituals, never a new Featured
   const cheri = SHELF.find((item) => item.id === "cheri");
   assert.equal(cheri?.gutenberg, undefined);
   assert.match(cheri?.intro ?? "", /wrought-iron/);
-  assert.match(cheri?.intro ?? "", /no catalog number/);
-  assert.match(cheri?.intro ?? "", /Bel-Ami/);
-  assert.match(cheri?.intro ?? "", /do not sanitize/);
+  assert.match(cheri?.intro ?? "", /Janet Flanner’s English/);
+  assert.doesNotMatch(cheri?.intro ?? "", /soft against|Bel-Ami/);
+  assert.match(cheri?.intro ?? "", /kept boy are the story/);
   const quiet = SHELF.find((item) => item.id === "all-quiet-on-the-western-front");
   assert.match(quiet?.intro ?? "", /beef and haricot beans/);
-  assert.match(quiet?.intro ?? "", /not sanitize/);
-  assert.match(quiet?.intro ?? "", /Warn the room if you Host further/);
+  assert.match(quiet?.intro ?? "", /trench violence and period language about the enemy/);
+  assert.doesNotMatch(quiet?.intro ?? "", /Warn the room|Host further/);
   assert.equal(quiet?.gutenberg, 75011);
   const gadfly = SHELF.find((item) => item.id === "the-gadfly");
   assert.match(gadfly?.intro ?? "", /Fragola/);
@@ -5814,7 +5814,7 @@ test("Mira Sat MIDDAY CLEAR is Next lead Green Carnation, then Hajji, Purple Lan
   assert.equal(cycle.scenes[0]?.title, "Gaspar Ruiz");
   assert.ok(cycle.scenes.some((scene) => scene.title === "The Informer"));
   assert.ok(cycle.scenes.some((scene) => scene.title === "Il Conde"));
-  assert.match(SHELF.find((item) => item.id === "hajji-baba")?.intro ?? "", /do not sanitize/);
+  assert.match(SHELF.find((item) => item.id === "hajji-baba")?.intro ?? "", /Period Orientalism is left as printed/);
   assert.match(SHELF.find((item) => item.id === "hajji-baba")?.intro ?? "", /1824/);
   assert.match(SHELF.find((item) => item.id === "hajji-baba")?.intro ?? "", /1895/);
 });
@@ -5991,7 +5991,7 @@ test("Mira Sat AFTERNOON CLEAR is Next lead Hill of Dreams, then African Farm, T
   assert.equal(imperialist.breaths[0]?.text.trim().split(/\s+/).length, 585);
   assert.match(SHELF.find((item) => item.id === "the-imperialist")?.intro ?? "", /585/);
   assert.match(SHELF.find((item) => item.id === "the-imperialist")?.intro ?? "", /phone-hard/);
-  assert.match(SHELF.find((item) => item.id === "kim")?.intro ?? "", /do not sanitize/);
+  assert.match(SHELF.find((item) => item.id === "kim")?.intro ?? "", /period racial language, left as printed/);
   assert.match(
     imperialist.breaths.map((breath) => breath.text).join("\n") +
       JSON.parse(readFileSync(new URL("./openings/kim.json", import.meta.url), "utf8")).breaths

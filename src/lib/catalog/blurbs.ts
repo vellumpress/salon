@@ -17,7 +17,7 @@ const BLURBS: Record<string, string> = {
     "Babel’s Black Sea city: gangsters, sun, and sudden violence between jokes.",
   we: "D-503 will straighten the wild curve into the wisest of lines, and call the record We.",
   "all-quiet-on-the-western-front":
-    "A rest billet five miles behind the front opens on beef and haricot beans, and the war is not sanitized.",
+    "A rest billet five miles behind the front opens on beef and haricot beans, and the war is not softened.",
   demian:
     "Two worlds pass through a little-town Latin school — clean clothes and Christmas on one pole, secrecy on the other.",
   "the-story-of-gosta-berling":
@@ -44,7 +44,7 @@ const BLURBS: Record<string, string> = {
   "high-wind-jamaica":
     "After Emancipation, Derby Hill is swallowed by bush until a rank plant holds the front door open, and the sit runs on to Ferndale.",
   "noli-me-tangere":
-    "Capitan Tiago announces a dinner in Binondo — Chapter I only, and the friar power is not sanitized.",
+    "Capitan Tiago announces a dinner in Binondo — Chapter I only, with the friars’ colonial power on the page.",
   vera:
     "Cornwall noon heat at a garden gate: a daughter who has lost everything—and feels nothing yet.",
   "on-a-chinese-screen":
@@ -71,7 +71,7 @@ const BLURBS: Record<string, string> = {
   "letters-of-a-javanese-princess":
     "Letter I only: the modern girl, and the cloistered arms that still hold her.",
   "blood-and-sand":
-    "Gallardo’s bullfight-day breakfast, and the bullring gore is not sanitized.",
+    "Gallardo’s bullfight-day breakfast, and the bullring gore is not softened.",
   ecstasy:
     "After dinner on the Scheveningen Road: rosewood, an onyx lamp, and a promise not to wake the boy.",
   "an-outcast-of-the-islands":
@@ -104,11 +104,11 @@ const BLURBS: Record<string, string> = {
   "liza-of-lambeth":
     "A factory girl in Lambeth learns how little the street forgives.",
   banjo:
-    "Lincoln Agrippa Daily patrols the Marseilles breakwater with a banjo — McKay’s 1929 beach-boy dialect and the Ditch stay as written, not sanitized.",
+    "Lincoln Agrippa Daily patrols the Marseilles breakwater with a banjo — McKay’s 1929 beach-boy dialect and the Ditch stay as written.",
   "in-our-time":
     "Nick Adams stories with war vignettes snapped in like news photos — Hemingway’s early cuts.",
   cheri:
-    "Léa’s wrought-iron bed and the pearls Chéri wants stay in Flanner’s English, unsanitized and soft against Bel-Ami.",
+    "Léa’s wrought-iron bed and the pearls Chéri wants, in Flanner’s English.",
   liliom:
     "A carousel barker, a cheap room, and a day-pass from the dead — Molnár’s rough tenderness.",
   "the-cherry-orchard":

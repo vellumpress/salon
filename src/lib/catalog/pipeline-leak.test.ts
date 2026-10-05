@@ -46,6 +46,30 @@ const BREATH_PATTERNS: { name: string; pattern: RegExp }[] = [
 ];
 
 /**
+ * Host-process remarks written for staff, not readers ("Host OK", "warn the
+ * room", "don’t sanitize"). Reader copy says what is in the book instead
+ * ("period racial language, left as printed"). “Host” and “sit” on their own
+ * are product words (Host a sit), so only the staff phrasings are banned.
+ * Editorial surfaces only: a story breath may say “sanitize” or “for the room”.
+ */
+export const HOST_STAFF_PATTERNS: { name: string; pattern: RegExp }[] = [
+  { name: "Host OK", pattern: /\bHost OK\b/i },
+  { name: "Host note", pattern: /\bHost notes?\b/i },
+  { name: "if you Host", pattern: /\bif you Host\b/i },
+  { name: "Host may", pattern: /\bHost may\b/i },
+  { name: "Host into", pattern: /\bHost into\b/i },
+  { name: "Host further", pattern: /\bHost further\b/i },
+  { name: "before you Host", pattern: /\bbefore you Host\b/i },
+  { name: "warn the room", pattern: /\bwarn the room\b/i },
+  { name: "for the room", pattern: /\bfor the room\b/i },
+  { name: "sanitize", pattern: /sanitiz/i },
+  { name: "flag, do not", pattern: /\bflag, do not\b/i },
+  { name: "translator on this sit", pattern: /\bNo translator is named on this sit\b/i },
+  { name: "sit stays on Part", pattern: /\bThe sit stays on Part\b/i },
+  { name: "mid-bind", pattern: /\bmid-bind\b/i },
+];
+
+/**
  * Editorial surfaces (intros, host notes, blurbs, pitches, prefaces).
  * Name tokens are banned here because this copy is ours, not the book.
  */
@@ -60,6 +84,7 @@ const EDITORIAL_PATTERNS: { name: string; pattern: RegExp }[] = [
   { name: "Glam", pattern: /\bGlam\b/ },
   { name: "Vellum", pattern: /\bVellum\b/ },
   { name: "Salon", pattern: /\bSalon\b/ },
+  ...HOST_STAFF_PATTERNS,
 ];
 
 type Hit = { where: string; name: string; snippet: string };
@@ -133,4 +158,36 @@ test("reader-facing copy has no pipeline leaks (allowlist empty)", () => {
     hits.map((hit) => `${hit.where} [${hit.name}] ${hit.snippet}`),
     [],
   );
+});
+
+/**
+ * The Host-voice rewrite kept each content heads-up. A cut that drops the
+ * warning itself (not just the staff phrasing) fails here.
+ */
+test("reader-voice heads-ups survive the Host-staff scrub", () => {
+  const ritual = (id: string) => RITUAL_PITCHES[id] ?? "";
+  const expect: [string, RegExp][] = [
+    ["thais", /Paphnutius and the courtesan Thaïs/],
+    ["high-wind-jamaica", /period racial language in this stretch, left as printed/],
+    ["color", /Incident prints a racial slur/],
+    ["all-quiet-on-the-western-front", /trench violence and period language about the enemy/],
+    ["tropic", /racial violence are in this stretch, left as printed/],
+    ["blacker", /color hierarchy within the community/],
+    ["a-hero-of-our-time", /imperial violence in the Caucasus/],
+    ["noli-me-tangere", /colonial power of the friars/],
+    ["blood-and-sand", /bullring gore and animal death/],
+    ["the-painted-veil", /adultery, in the colonial heat/],
+    ["oblomov", /period class language, left as printed/],
+    ["the-book-of-khalid", /self-Orientalizing irony, left as printed/],
+    ["the-peasants", /ethnic language left as printed/],
+    ["the-song-of-the-blood-red-flower", /frankly sensual/],
+    ["growth-of-the-soil", /period word “Lapp” for Sámi/],
+    ["letters-of-a-javanese-princess", /same colonial frame/],
+    ["banjo", /dialect is left as written/],
+    ["african-tragedy", /Christian-mission frame moralizes town life/],
+  ];
+  const missing = expect.filter(([id, pattern]) => !pattern.test(ritual(id))).map(([id]) => id);
+  assert.deepEqual(missing, []);
+  assert.doesNotMatch(ritual("bertha-garlan"), /translator/i);
+  assert.doesNotMatch(ritual("bunner-sisters"), /Part I\./);
 });
