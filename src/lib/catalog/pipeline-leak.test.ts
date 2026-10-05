@@ -24,6 +24,7 @@ import { RITUAL_PITCHES } from "./rituals.ts";
 import { SHELF } from "./shelf.ts";
 import { readerIntro } from "../reader-intro.ts";
 import type { Work } from "../works.ts";
+import { scanStaffText, stripCatalogBookSource } from "../../../scripts/strip-bind-notes.mjs";
 
 /** Documented exceptions. Prefer zero. */
 export const PIPELINE_LEAK_ALLOWLIST: readonly string[] = [];
@@ -75,9 +76,10 @@ export const HOST_STAFF_PATTERNS: { name: string; pattern: RegExp }[] = [
  * Audit and shelf-placement boilerplate ("No score is invented for this sit.",
  * "Inventory 81 is medium.", "PG reading-ease 82.0 is easy.", "Soft England,
  * carefully.", "France is primary.", "The lead is this book, not …").
- * The figures stay in bind notes (texts/openings JSON) for the pipeline;
- * reader copy never carries them. Bind notes are checked through
- * readerIntro, the one path where a note can reach a reader.
+ * The figures stay in source bind notes for the pipeline. Production
+ * chunks drop `note` (see scripts/strip-bind-notes.mjs), and reader copy
+ * never carries them. Bind notes are still checked through readerIntro,
+ * the one path where a note can reach a reader.
  */
 export const BOILERPLATE_PATTERNS: { name: string; pattern: RegExp }[] = [
   { name: "no score invented", pattern: /\bNo (?:reading-ease )?score is invented\b/i },
@@ -327,5 +329,55 @@ test("editorial copy and the reader intro never carry licensing language", () =>
     if (PUBLIC_DOMAIN.test(intro)) hits.push(`readerIntro:${work.id}`);
     if (!parensBalanced(intro)) hits.push(`readerIntro:${work.id} [unbalanced parentheses]`);
   }
+  assert.deepEqual(hits, []);
+});
+
+/**
+ * Bind notes are pipeline metadata. They stay in source JSON and are stripped
+ * before a texts/openings file becomes a production chunk. This gate scans
+ * that shipped payload (note removed), the serialize plan that ships in the
+ * client, and reader copy. `npm run build` scans `dist/` with the same
+ * patterns. Literary collisions are allowlisted in scripts/strip-bind-notes.mjs.
+ */
+test("shipped book chunks and reader assets carry no bind-note staff metadata", () => {
+  const hits: string[] = [];
+  const here = fileURLToPath(new URL(".", import.meta.url));
+  for (const folder of ["texts", "openings"] as const) {
+    const dir = join(here, folder);
+    for (const name of readdirSync(dir)) {
+      if (!name.endsWith(".json")) continue;
+      const raw = readFileSync(join(dir, name), "utf8");
+      const shipped = stripCatalogBookSource(raw) ?? raw;
+      const id = name.slice(0, -5);
+      for (const hit of scanStaffText(shipped, `${folder}:${id}`)) {
+        hits.push(`${hit.where} [${hit.name}] ${hit.snippet}`);
+      }
+    }
+  }
+
+  const serialize = readFileSync(join(here, "serialize.ts"), "utf8");
+  if (serialize.includes("shipNotes")) {
+    hits.push("serialize.ts [shipNotes] unused staff field still ships");
+  }
+  for (const hit of scanStaffText(serialize, "serialize.ts")) {
+    hits.push(`${hit.where} [${hit.name}] ${hit.snippet}`);
+  }
+
+  const reader: Array<[string, string]> = [];
+  for (const work of SHELF) {
+    if (work.intro) reader.push([`shelf.intro:${work.id}`, work.intro]);
+    const blurb = blurbFor(work);
+    if (blurb) reader.push([`blurb:${work.id}`, blurb]);
+  }
+  for (const [id, copy] of Object.entries(PITCHES)) reader.push([`pitch:${id}`, copy]);
+  for (const [id, copy] of Object.entries(RITUAL_PITCHES)) reader.push([`ritual:${id}`, copy]);
+  for (const [id, copy] of Object.entries(PREFACES)) reader.push([`preface:${id}`, copy]);
+  for (const [id, copy] of Object.entries(STORED_PREFACES)) reader.push([`stored-preface:${id}`, copy]);
+  for (const [where, copy] of reader) {
+    for (const hit of scanStaffText(copy, where)) {
+      hits.push(`${hit.where} [${hit.name}] ${hit.snippet}`);
+    }
+  }
+
   assert.deepEqual(hits, []);
 });
