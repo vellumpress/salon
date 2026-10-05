@@ -17,7 +17,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { blurbFor } from "./blurbs.ts";
-import { PREFACES } from "./prefaces.ts";
+import { PREFACES, prefaceFor } from "./prefaces.ts";
 import { STORED_PREFACES } from "./prefaces-stored.ts";
 import { PITCHES } from "./pitches.ts";
 import { RITUAL_PITCHES } from "./rituals.ts";
@@ -257,4 +257,75 @@ test("reader threshold copy carries no audit boilerplate, even via a bind note",
     hits.map((hit) => `${hit.where} [${hit.name}] ${hit.snippet}`),
     [],
   );
+});
+
+/**
+ * Preface integrity. The sentence splitter breaks after "(ed. ", "(trans. ",
+ * "(incl. ", "(Vol. " and bare initials, and a stored preface built from that
+ * split keeps only the stub ("Various (ed. Enter one room at a time.").
+ * Every preface must close its brackets and must not open on a lone initial
+ * or a sub-25-character fragment glued to an invitation line.
+ */
+const INVITATION =
+  /(?:Enter one room at a time|Sit with the world|Let the first line arrive|The house is still dark|A night sitting)/;
+const INITIAL_STUB = new RegExp(`^(?:[A-Z]\\.(?:-[A-Z]\\.)?\\s)+${INVITATION.source}`);
+const SHORT_STUB = new RegExp(`^[^.]{0,25}\\.\\s${INVITATION.source}`);
+const BROKEN_CREDIT = /\((?:eds?|trans|tr|incl|vol)\.\s+(?=Enter one room|Sit with the world|Let the first line|The house is still dark|A night sitting)/i;
+
+function parensBalanced(text: string) {
+  // Quoted source text stays as printed, so a curly-quoted cut such as
+  // lewis-and-irene's “…phosphates, oxygen).” does not count against the copy.
+  const own = text.replace(/“[^”]*”/g, "");
+  let depth = 0;
+  for (const ch of own) {
+    if (ch === "(") depth += 1;
+    else if (ch === ")") {
+      depth -= 1;
+      if (depth < 0) return false;
+    }
+  }
+  return depth === 0;
+}
+
+function prefaceProblems(where: string, copy: string): string[] {
+  const out: string[] = [];
+  if (!parensBalanced(copy)) out.push(`${where} [unbalanced parentheses] ${copy.slice(0, 90)}`);
+  if (INITIAL_STUB.test(copy)) out.push(`${where} [initial stub] ${copy.slice(0, 90)}`);
+  if (SHORT_STUB.test(copy)) out.push(`${where} [fragment stub] ${copy.slice(0, 90)}`);
+  if (BROKEN_CREDIT.test(copy)) out.push(`${where} [broken credit] ${copy.slice(0, 90)}`);
+  return out;
+}
+
+test("stored and composed prefaces are whole sentences, not split-off credit stubs", () => {
+  const problems: string[] = [];
+  for (const [id, copy] of Object.entries(PREFACES)) problems.push(...prefaceProblems(`PREFACES:${id}`, copy));
+  for (const [id, copy] of Object.entries(STORED_PREFACES)) problems.push(...prefaceProblems(`STORED_PREFACES:${id}`, copy));
+  for (const work of SHELF) {
+    const copy = prefaceFor(work.id);
+    if (copy) problems.push(...prefaceProblems(`prefaceFor:${work.id}`, copy));
+    const blurb = blurbFor(work);
+    if (blurb && !parensBalanced(blurb)) problems.push(`blurbFor:${work.id} [unbalanced parentheses] ${blurb}`);
+  }
+  assert.deepEqual(problems, []);
+});
+
+test("editorial copy and the reader intro never carry licensing language", () => {
+  const PUBLIC_DOMAIN = /public[\s-]domain/i;
+  const hits: string[] = [];
+  const sources: Array<[string, Record<string, string>]> = [
+    ["PITCHES", PITCHES],
+    ["RITUAL_PITCHES", RITUAL_PITCHES],
+    ["PREFACES", PREFACES],
+    ["STORED_PREFACES", STORED_PREFACES],
+  ];
+  for (const [name, table] of sources) {
+    for (const [id, copy] of Object.entries(table)) if (PUBLIC_DOMAIN.test(copy)) hits.push(`${name}:${id}`);
+  }
+  for (const work of SHELF) {
+    if (work.intro && PUBLIC_DOMAIN.test(work.intro)) hits.push(`shelf.intro:${work.id}`);
+    const intro = readerIntro(work as unknown as Work);
+    if (PUBLIC_DOMAIN.test(intro)) hits.push(`readerIntro:${work.id}`);
+    if (!parensBalanced(intro)) hits.push(`readerIntro:${work.id} [unbalanced parentheses]`);
+  }
+  assert.deepEqual(hits, []);
 });

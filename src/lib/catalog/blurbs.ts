@@ -65,7 +65,7 @@ const BLURBS: Record<string, string> = {
   "where-angels-fear-to-tread":
     "Charing Cross chaos — Lilia laughing like royalty while Philip names Monteriano, and the sit stops on the foot-warmer.",
   "the-gadfly":
-    "Pisa seminary heat, a lost sermon page, and Fragola called down the street — Risorgimento Italy, not Enchanted April.",
+    "Pisa seminary heat, a lost sermon page, and Fragola called down the street — Risorgimento Italy.",
   "the-immoralist":
     "Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for.",
   "letters-of-a-javanese-princess":
@@ -183,7 +183,7 @@ const BLURBS: Record<string, string> = {
     "A dog barks in the sierra and Demetrio is told to hide from the soldiers.",
   rur: "A factory makes artificial workers; the workers decide they are the future.",
   "bread-givers":
-    "Potato peel and Bessie home without work.",
+    "Anzia Yezierska’s 1925 novel opens with potatoes to peel, Bessie home without work, and the landlord hollering for the rent.",
   dalloway:
     "One London day: Clarissa buys the flowers herself and walks the city awake.",
   orlando:
@@ -304,7 +304,7 @@ const BLURBS: Record<string, string> = {
   arrowsmith: "A doctor tries to stay honest inside American medicine’s hustle.",
   "the-custom-of-the-country":
     "Undine Spragg wants the next room, the next husband, the next New York.",
-  summer: "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires.",
+  summer: "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires, at the beginning of a June afternoon. Edith Wharton’s 1917 novel opens on a village that lies high and in the open, without the lavish shade of more sheltered towns.",
   "the-reef": "Wharton in France: desire among people who thought they had already chosen.",
   "bunner-sisters":
     "A Stuyvesant Square basement shop, blotchy gold on a black sign, and horse-car pace.",
@@ -335,7 +335,7 @@ const BLURBS: Record<string, string> = {
   "african-tragedy":
     "Two reasons made Robert Zulu leave teaching at Siam Village School — Dhlomo’s Lovedale frame moralizes town life, and the first sit stops at the end of that chapter.",
   anandamath:
-    "A hot day in Padachinha opens Sen-Gupta’s 1906 Abbey of Bliss — Bengali year marks stay, and this is not Poison Tree.",
+    "A hot day in Padachinha opens Sen-Gupta’s 1906 Abbey of Bliss — Bengali year marks stay as printed.",
   "kwaidan-stories-and-studies-of-strange-things":
     "One tale: Mimi-Nashi-Hōïchi at Dan-no-ura, where demon-fires burn and a blind minstrel is about to be summoned.",
   "chita-a-memory-of-last-island":
@@ -925,7 +925,7 @@ const BLURBS: Record<string, string> = {
   "the-titan": "Cowperwood in Chicago, buying the city as if it were a utility.",
   "an-american-tragedy": "A lake, a pregnant girl, and an American climb that needs her gone.",
   "the-song-of-the-lark": "Cather’s prairie girl becomes a singer and leaves the town that made her ears.",
-  "a-lost-lady": "Sweet Water along the Burlington — Niel’s memory of Marian Forrester.",
+  "a-lost-lady": "Sweet Water along the Burlington, and Niel’s memory of Marian Forrester.",
   "the-wanderer": "He arrived at our home on a Sunday of November, 189… — Sainte-Agathe.",
   "the-late-mattia-pascal": "One of the few things he was sure of was his name: Mattia Pascal.",
   "the-troll-garden-and-selected-stories": "Early Cather: artists, hunger, and the Midwest watching.",
@@ -966,8 +966,10 @@ const BLURBS: Record<string, string> = {
   "the-man-from-snowy-river": "Paterson’s bush ballads: a ride, a horse, a legend already moving.",
   "hajji-baba":
     "Kerbelai Hassan, barber of Ispahan, and a razor that starts the road. Period language stays.",
+  "best-russian-short-stories": "Best Russian Short Stories (1917), edited by Thomas Seltzer.",
+  "three-hundred-tang-poems": "Three Hundred Tang Poems (1763), with Li Bai and Du Fu among the poets.",
   "the-purple-land":
-    "Three chapters in the story of a life open into the Banda Oriental — Uruguay, not Guyana.",
+    "Three chapters in the story of a life open into the Banda Oriental, in Uruguay.",
   "malay-sketches": "A quarter of a century ago, where stream meets tide, this sit is A Malay Romance only.",
   "in-court-and-kampong": "Clifford’s Malay world: court, village, and the Englishman taking dictation.",
   "malay-annals-sejarah-melayu": "The Sejarah Melayu: kings, cities, and the peninsula remembering itself.",
@@ -1226,10 +1228,29 @@ function usable(value: string | undefined) {
   return copy;
 }
 
+const HOLD = "\u2060";
+const PAREN_ABBREV = /\((eds?|trans|tr|incl|vol)\.\s+/gi;
+const LEADING_INITIALS = /^(?:[A-Z]\.(?:-[A-Z]\.)?\s+)+/;
+
+/**
+ * Bracketed credit abbreviations — "(ed. ", "(trans. ", "(incl. ", "(Vol. " — are not
+ * sentence ends, and leading initials ("I. L. Peretz") would otherwise peel off as a
+ * roman-numeral heading. Hold those spaces with a word joiner while splitting.
+ */
+function holdCredits(copy: string) {
+  return copy
+    .replace(PAREN_ABBREV, (_m, abbrev: string) => `(${abbrev}.${HOLD}`)
+    .replace(LEADING_INITIALS, (initials: string) => initials.replace(/\s+/g, HOLD));
+}
+
+function releaseCredits(copy: string) {
+  return copy.split(HOLD).join(" ");
+}
+
 export function oneSentence(text: string): string {
   const copy = usable(text);
   if (!copy) return "";
-  const first = (splitSentences(copy, 1)[0] ?? "").trim();
+  const first = releaseCredits(splitSentences(holdCredits(copy), 1)[0] ?? "").trim();
   if (!first) return "";
   return /[.!?…]$/.test(first) ? first : `${first}.`;
 }
@@ -1250,7 +1271,7 @@ function formPhrase(form: ShelfForm) {
 }
 
 function shortAuthor(author: string) {
-  return author.replace(/\s*\([^)]*tr\.[\s\S]*$/i, "").replace(/;.*$/, "").trim();
+  return author.replace(/\s*\([^)]*\btr(?:ans)?\.[\s\S]*$/i, "").replace(/;.*$/, "").trim();
 }
 
 function yearPhrase(work: ShelfWork) {
@@ -1298,5 +1319,5 @@ export function blurbFor(work: ShelfWork | string): string {
 }
 
 export function sentenceCount(text: string) {
-  return splitSentences(text).length;
+  return splitSentences(holdCredits(text)).length;
 }

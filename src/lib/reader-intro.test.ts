@@ -353,7 +353,7 @@ test("Bliss uses the before-sleep radiant-mirror sit and names the Host frame", 
 test("A Hundred and Seventy Chinese Poems uses the Winter Night sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("a-hundred-and-seventy-chinese-poems"));
   assert.match(copy, /Winter Night/);
-  assert.match(copy, /Battle/);
+  assert.doesNotMatch(copy, /Battle/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
