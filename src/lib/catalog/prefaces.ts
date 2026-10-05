@@ -272,7 +272,7 @@ export const PREFACES: Record<string, string> = {
   "the-painted-veil":
     "Shuttered Hong Kong room after tiffin; someone tries the door; Kitty whispers “Walter.” The closed sit is Chapter I only. The sit opens on “How shall I get out?”",
   "the-moon-and-sixpence":
-    "I confess that when first I made acquaintance with Charles Strickland I never for a moment discerned that there was in him anything out of the ordinary. Yet now few will be found to deny his greatness. Tahiti later is not Hong Kong.",
+    "I confess that when first I made acquaintance with Charles Strickland I never for a moment discerned that there was in him anything out of the ordinary. Yet now few will be found to deny his greatness. Tahiti comes later in the novel.",
   "o-pioneers":
     "Alexandra Bergson stays with the land when everyone else wants to leave it. Cather’s 1913 Nebraska novel is work before romance. Sit with the Divide a moment.",
   falcon:
@@ -306,7 +306,7 @@ function formWord(form: ShelfForm) {
 }
 
 function shortAuthor(author: string) {
-  return author.replace(/\s*\([^)]*tr\.[\s\S]*$/i, "").replace(/;.*$/, "").trim();
+  return author.replace(/\s*\([^)]*\btr(?:ans)?\.[\s\S]*$/i, "").replace(/;.*$/, "").trim();
 }
 
 function laneSit(id: string): string {

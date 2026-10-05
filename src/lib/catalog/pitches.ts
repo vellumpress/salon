@@ -3,11 +3,11 @@ export const PITCHES: Record<string, string> = {
   blacker:
     "Emma Lou on her “luscious black complexion,” and the family that trained her to mourn it — a Harlem novel of colorism. The period language of color hierarchy within the community is the book itself, left as printed.",
   "a-lost-lady":
-    "Sweet Water along the Burlington — Niel’s memory of Marian Forrester when the frontier ethos dies into money.",
+    "Sweet Water, one of the grey towns along the Burlington railroad, and a house known from Omaha to Denver for its hospitality. Willa Cather’s 1923 novel is Niel’s memory of Marian Forrester when the frontier ethos dies into money.",
   "lady-macbeth":
     "Katerina Lvovna is bored in her rich father-in-law’s empty house in Mtsensk. Chamot’s 1923 English. An adultery and murder novella.",
   summer:
-    "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires.",
+    "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires, at the beginning of a June afternoon. Edith Wharton’s 1917 novel opens on a village that lies high and in the open, without the lavish shade of more sheltered towns.",
   "jacob-s-room":
     "Betty Flanders writing in the sand — Cornwall, then the room that will be Jacob’s. The experimental voice is the sit.",
   "the-tenant-of-wildfell-hall":
@@ -51,7 +51,7 @@ export const PITCHES: Record<string, string> = {
   "noli-me-tangere":
     "Capitan Tiago announces a dinner at the last minute in Binondo and the Walled City. Chapter I only; the colonial power of the friars is on the page from the start.",
   "bread-givers":
-    "Potato peel; Bessie home without work; rent hollering. Poverty and an Old World father.",
+    "Anzia Yezierska’s 1925 novel opens with potatoes to peel, Bessie home without work, and the landlord hollering for the rent. Poverty, and an Old World father.",
   "the-story-of-gosta-berling":
     "The long lake, the mist, and the Värmland plains come before Gösta enters — in Flach’s English. At last the priest is in the pulpit, and the parish remembers him reeling out of the inn.",
   "bertha-garlan":
@@ -65,7 +65,7 @@ export const PITCHES: Record<string, string> = {
   "blood-and-sand":
     "Gallardo’s bullfight-day breakfast: meat, black coffee, a huge cigar, and a dining room that treats the matador like family glory. Further on, the book has bullring gore and animal death.",
   "white-nights":
-    "It was a wonderful night — the dreamer’s starry Petersburg. First Night only, and not Notes from Underground.",
+    "It was a wonderful night — the dreamer’s starry Petersburg. First Night only.",
   "west-african-folk-tales":
     "In the olden days all the stories which men told were stories of Nyankupon, the chief of the gods. This sit is How We Got the Name ‘Spider Tales’ only — Nyankupon, Anansi, and a jar of bees. Skip the contents, the introduction, and the other tales. One tale this sit; the cycle continues.",
   erewhon:
@@ -151,7 +151,7 @@ export const PITCHES: Record<string, string> = {
   "three-soldiers":
     "The company stood at attention, each man looking straight before him at the empty parade ground. Part One, I — the company, the empty parade ground, and cinder piles in a purple evening. Skip the Contents. John Dos Passos’s 1921 novel.",
   "doctor-pascal":
-    "In the heat of the glowing July afternoon, the room, with blinds carefully closed, was full of a great calm. Chapter I — July blinds and Dr. Pascal’s press papers. Skip the Contents. Émile Zola, in Mary J. Serrano’s English, 1893. Plassans is not the war, and not Provence or Paris.",
+    "In the heat of the glowing July afternoon, the room, with blinds carefully closed, was full of a great calm. Chapter I — July blinds and Dr. Pascal’s press papers. Skip the Contents. Émile Zola, in Mary J. Serrano’s English, 1893.",
   "in-the-world":
     "I went out into the world as shop-boy at a fashionable boot-shop in the main street of the town. Chapter I — the shop-boy, green teeth, and watery eyes. Skip the front matter. Maksim Gorky, in Gertrude M. Foakes’s English, 1916. The Russian year is 1916; the English is 1917.",
   "leila":

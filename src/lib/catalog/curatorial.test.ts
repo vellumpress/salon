@@ -3562,7 +3562,7 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
   assert.equal(banjo?.gutenberg, undefined);
   const abbey = SHELF.find((item) => item.id === "anandamath");
   assert.match(abbey?.author ?? "", /Sen-Gupta/);
-  assert.match(abbey?.intro ?? "", /Poison Tree/);
+  assert.doesNotMatch(abbey?.intro ?? "", /Poison Tree/);
   assert.doesNotMatch(abbey?.intro ?? "", /no catalog number/);
   assert.equal(abbey?.gutenberg, undefined);
   const nacha = SHELF.find((item) => item.id === "nacha-regules");
@@ -3989,7 +3989,7 @@ test("Mira ~4:14 Wed 23 Sep CLEAR sits on Next and Rituals, never a new Featured
   assert.match(tales?.intro ?? "", /One tale only/);
   assert.match(tales?.intro ?? "", /Attendant's Confession/);
   assert.match(tales?.intro ?? "", /tale boundary/);
-  assert.match(tales?.intro ?? "", /Tropic/);
+  assert.doesNotMatch(tales?.intro ?? "", /Tropic/);
   const talesOpen = JSON.parse(
     readFileSync(new URL("./openings/brazilian-tales.json", import.meta.url), "utf8"),
   ) as { scenes: { title: string }[] };
@@ -6203,7 +6203,7 @@ test("Mira Sat EVENING CLEAR is Next lead Road to the Open, then Calvary, Anna, 
   assert.equal(anna.breaths[0]?.text.trim().split(/\s+/).length, 371);
   assert.match(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /371/);
   assert.match(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /phone-hard/);
-  assert.match(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /not London/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /not London/);
   const calvaryOpen = JSON.parse(
     readFileSync(new URL("./openings/calvary.json", import.meta.url), "utf8"),
   ) as PackedSit & { scenes: { title?: string }[] };
@@ -6635,18 +6635,18 @@ test("Mira Sun AM CLEAR is Next lead Marrow, then Zuleika, Eugenie, and Seven Br
     readFileSync(new URL("./texts/the-marrow-of-tradition.json", import.meta.url), "utf8"),
   ) as { year?: string };
   assert.equal(marrowFull.year, "1901");
-  assert.match(SHELF.find((item) => item.id === "the-marrow-of-tradition")?.intro ?? "", /not Georgia/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "the-marrow-of-tradition")?.intro ?? "", /not Georgia/);
   const zuleika = JSON.parse(
     readFileSync(new URL("./openings/zuleika-dobson.json", import.meta.url), "utf8"),
   ) as PackedSit;
   assert.doesNotMatch(zuleika.breaths.map((breath) => breath.text).join("\n"), /\bNOTE\b|ILLI ALMAE/);
-  assert.match(SHELF.find((item) => item.id === "zuleika-dobson")?.intro ?? "", /not London/);
-  assert.match(SHELF.find((item) => item.id === "zuleika-dobson")?.intro ?? "", /Potteries/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "zuleika-dobson")?.intro ?? "", /not London/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "zuleika-dobson")?.intro ?? "", /Potteries/);
   const eugenie = JSON.parse(
     readFileSync(new URL("./openings/eugenie-grandet.json", import.meta.url), "utf8"),
   ) as PackedSit & { year?: string };
   assert.doesNotMatch(eugenie.breaths.map((breath) => breath.text).join("\n"), /To Maria|Paris/);
-  assert.match(SHELF.find((item) => item.id === "eugenie-grandet")?.intro ?? "", /Saumur is not the Orne/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "eugenie-grandet")?.intro ?? "", /Saumur is not the Orne/);
   assert.equal(eugenie.year, "1833");
   const brothersFull = JSON.parse(
     readFileSync(new URL("./texts/seven-brothers.json", import.meta.url), "utf8"),
@@ -6664,7 +6664,7 @@ test("Mira Sun AM CLEAR is Next lead Marrow, then Zuleika, Eugenie, and Seven Br
   assert.equal(laosFull.year, "1899");
   assert.equal(laosFull.scenes[0]?.title, "A Child of The Woods");
   assert.ok(laosFull.scenes.length > 1);
-  assert.match(SHELF.find((item) => item.id === "laos-folk-lore")?.intro ?? "", /not Pampanga/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "laos-folk-lore")?.intro ?? "", /not Pampanga/);
 });
 
 test("Mira POST-#169 CLEAR is Next lead Born in Exile, then Four Horsemen, After the Divorce, and Virgin Soil, with Hungry Hearts Wings on Rituals", () => {
@@ -6848,8 +6848,8 @@ test("Mira POST-#169 CLEAR is Next lead Born in Exile, then Four Horsemen, After
   ) as PackedSit & { scenes: { title?: string }[]; year?: string };
   assert.match(exile.scenes[0]?.title ?? "", /Kingsmill/);
   assert.equal(exile.year, "1892");
-  assert.match(SHELF.find((item) => item.id === "born-in-exile")?.intro ?? "", /not Oxford/);
-  assert.match(SHELF.find((item) => item.id === "born-in-exile")?.intro ?? "", /Potteries/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "born-in-exile")?.intro ?? "", /not Oxford/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "born-in-exile")?.intro ?? "", /Potteries/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "born-in-exile")?.intro ?? "", /lead stays/);
   const horsemen = JSON.parse(
     readFileSync(new URL("./openings/the-four-horsemen-of-the-apocalypse.json", import.meta.url), "utf8"),
@@ -6862,13 +6862,13 @@ test("Mira POST-#169 CLEAR is Next lead Born in Exile, then Four Horsemen, After
   ) as PackedSit & { scenes: { title?: string }[]; year?: string };
   assert.match(horsemenFull.scenes[0]?.title ?? "", /Tryst/);
   assert.equal(horsemenFull.year, "1916 / 1918");
-  assert.match(SHELF.find((item) => item.id === "the-four-horsemen-of-the-apocalypse")?.intro ?? "", /not Uruguay/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "the-four-horsemen-of-the-apocalypse")?.intro ?? "", /not Uruguay/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-four-horsemen-of-the-apocalypse")?.intro ?? "", /do not inflate/);
   const divorce = JSON.parse(
     readFileSync(new URL("./texts/after-the-divorce.json", import.meta.url), "utf8"),
   ) as { year?: string };
   assert.equal(divorce.year, "1902 / 1905");
-  assert.match(SHELF.find((item) => item.id === "after-the-divorce")?.intro ?? "", /not Sicily/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "after-the-divorce")?.intro ?? "", /not Sicily/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "after-the-divorce")?.intro ?? "", /No score is invented/);
   const soil = JSON.parse(
     readFileSync(new URL("./texts/virgin-soil.json", import.meta.url), "utf8"),
@@ -6888,7 +6888,7 @@ test("Mira POST-#169 CLEAR is Next lead Born in Exile, then Four Horsemen, After
   assert.equal(hearts.year, "1920");
   assert.equal(hearts.scenes[0]?.title, "Wings");
   assert.ok(hearts.scenes.some((scene) => scene.title === "Hunger"));
-  assert.match(SHELF.find((item) => item.id === "hungry-hearts")?.intro ?? "", /not Laos/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "hungry-hearts")?.intro ?? "", /not Laos/);
   assert.match(SHELF.find((item) => item.id === "hungry-hearts")?.intro ?? "", /Wings only/);
 });
 
@@ -9794,7 +9794,7 @@ test("Mira POST-#182 CLEAR is Next lead Three Soldiers, then Doctor Pascal, In t
   assert.equal(pascal.year, "1893");
   assert.match(pascal.author ?? "", /Mary J\. Serrano/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "doctor-pascal")?.intro ?? "", /Theresa Raquin/);
-  assert.match(SHELF.find((item) => item.id === "doctor-pascal")?.intro ?? "", /Plassans/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "doctor-pascal")?.intro ?? "", /Plassans/);
   assert.match(bindNote("doctor-pascal"), /Inventory 83/);
 
   const world = JSON.parse(

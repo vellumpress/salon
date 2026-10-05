@@ -79,7 +79,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   harmonium:
     "A mind of winter: frost, junipers, and the nothing that is. Open The Snow Man only — never Earthy Anecdote.",
   "a-hundred-and-seventy-chinese-poems":
-    "Gentler China lyrics for a night sit. Open Winter Night — not Battle.",
+    "Arthur Waley’s 1918 English, one poem to a chapter. It opens on Winter Night: “My bed is so empty that I keep on waking up”.",
   bliss:
     "Desire lands hard; the opening ends on the radiant mirror. The dinner-party turn is the knife of the story. Open on the title story, Bliss.",
   dubliners:
@@ -93,7 +93,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   silhouettes:
     "At Dieppe after sunset—the sea quieted, grape-flush on the clouds, a sickle moon and one gold star. Silhouettes opens on atmosphere, not argument. Arthur Symons’s 1892 seaside lyrics — a short After Sunset sit before sleep.",
   "the-garden-party-and-other-stories":
-    "Very early morning. Crescent Bay is hidden under a white sea-mist until the shepherd is out of sight. At the Bay, part I only — one story this sit. The title story is a later sit in the same book, and this is not Bliss.",
+    "Very early morning. Crescent Bay is hidden under a white sea-mist until the shepherd is out of sight. At the Bay, part I only — one story this sit. The title story comes later in the same book.",
   "bliss-and-other-stories":
     "More Mansfield rooms where the furniture shimmers and then stings. Marriage, desire, and the sentence that rearranges the afternoon.",
   "miss-brill-adapted":
@@ -152,7 +152,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   banjo:
     "Heaving along the Marseilles breakwater, Banjo carries the Ditch. McKay’s 1929 beach-boy dialect is left as written.",
   anandamath:
-    "A hot day in Padachinha, 1176 B.S-. Sen-Gupta’s 1906 Abbey of Bliss, not Poison Tree. Bengali year marks stay as printed.",
+    "A hot day in Padachinha, 1176 B.S-. Sen-Gupta’s 1906 Abbey of Bliss. Bengali year marks stay as printed.",
   "african-tragedy":
     "Two reasons made Robert Zulu leave teaching at Siam Village School. Stop at the end of Chapter I. Lovedale’s Christian-mission frame moralizes town life, and that view is the book’s own.",
   demian:
@@ -194,13 +194,13 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-comedienne":
     `Bukowiec station on the Dombrowa railroad, a winding line among beech and pine hills. Skip the Publishers’ Note. Obecny’s English of Reymont. The novel continues.`,
   "the-moon-and-sixpence":
-    `I confess that when first I made acquaintance with Charles Strickland I never for a moment discerned that there was in him anything out of the ordinary. Yet now few will be found to deny his greatness. The sit stops when the Rev. Robert Strickland’s biography is named as an attempt to remove misconceptions. Maugham’s 1919 novel. Tahiti later is not Hong Kong and not a London medical apprenticeship. Later, the Tahiti stretch uses period racial language, left as printed.`,
+    `I confess that when first I made acquaintance with Charles Strickland I never for a moment discerned that there was in him anything out of the ordinary. Yet now few will be found to deny his greatness. The sit stops when the Rev. Robert Strickland’s biography is named as an attempt to remove misconceptions. Maugham’s 1919 novel. Later, the Tahiti stretch uses period racial language, left as printed.`,
   "my-brilliant-career":
     `“Boo, hoo!” — the first recollection, then gum-trees and the salt-shed at Possum Gully. Skip the special notice and the England preface. Franklin’s 1901 novel. Australia, the preferred bush window. Later chapters use period words for Aboriginal people and Chinese workers, left as printed.`,
   "the-plumed-serpent":
-    `Sunday after Easter, the last bull-fight of the season in Mexico City, and Kate’s heart sank. Skip the contents and the reprint notes. Lawrence’s 1926 novel. Mystic-expat Mexico, not a revolution in the sierra and not Pamplona. Further into the bullfight, “half-savage” and later “aboriginal” are period racial language, left as printed.`,
+    `Sunday after Easter, the last bull-fight of the season in Mexico City, and Kate’s heart sank. Skip the contents and the reprint notes. Lawrence’s 1926 novel. Mystic-expat Mexico. Further into the bullfight, “half-savage” and later “aboriginal” are period racial language, left as printed.`,
   "the-red-room":
-    `An evening in the beginning of May. The little garden on Moses Height, on the south side of Stockholm, and the wind over the town. Skip the same-author list and the contents. Schleussner’s English (Swedish 1879, Latimer 1913). Stockholm bohemia, not a Kristiania attic, and not Inferno.`,
+    `An evening in the beginning of May. The little garden on Moses Height, on the south side of Stockholm, and the wind over the town. Skip the same-author list and the contents. Schleussner’s English (Swedish 1879, Latimer 1913). Stockholm bohemia.`,
   "african-farm":
     `The full African moon poured down its light from the blue sky into the wide, lonely plain. Stunted karoo bushes and milk-bushes follow in the white light, then a solitary kopje of ironstones. Stop before the farm household takes over.`,
   "a-passage-to-india":
@@ -276,13 +276,13 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "bunner-sisters":
     `Stuyvesant Square side-street; a basement shop; blotchy gold on a black sign; horse-car pace. Poverty and manners without ballroom gloss.`,
   "bread-givers":
-    `Potato peel; Bessie home without work; rent hollering. Poverty and an Old World father.`,
+    `Anzia Yezierska’s 1925 novel opens with potatoes to peel, Bessie home without work, and the landlord hollering for the rent. Poverty, and an Old World father.`,
   "bertha-garlan":
     `She takes the vine-path hillside with the boy, straw hat, near six o’clock. A widow’s desire.`,
   "after-the-divorce":
-    `Nineteen Hundred and Seven. In the strangers’ room of the Porru house a woman sat crying. Chapter I — the courtyard cricket. Skip the St Luke epigraph. Deledda, in Maria Hornor Lansdale’s English, Italian 1902 / 1905. Sardinia is not Sicily.`,
+    `Nineteen Hundred and Seven. In the strangers’ room of the Porru house a woman sat crying. Chapter I — the courtyard cricket. Skip the St Luke epigraph. Deledda, in Maria Hornor Lansdale’s English, Italian 1902 / 1905.`,
   "white-nights":
-    `It was a wonderful night — the dreamer’s starry Petersburg. First Night only, and not Notes from Underground.`,
+    `It was a wonderful night — the dreamer’s starry Petersburg. First Night only.`,
   "west-african-folk-tales":
     `In the olden days all the stories which men told were stories of Nyankupon, the chief of the gods. This sit is How We Got the Name ‘Spider Tales’ only — Nyankupon, Anansi, and a jar of bees. Skip the contents, the introduction, and the other tales. W. H. Barker and Cecilia Sinclair’s 1917 book. One tale this sit; the cycle continues.`,
   candide:
@@ -374,7 +374,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "three-soldiers":
     `The company stood at attention, each man looking straight before him at the empty parade ground. Part One, I — the company, the empty parade ground, and cinder piles in a purple evening. Skip the Contents. John Dos Passos’s 1921 novel.`,
   "doctor-pascal":
-    `In the heat of the glowing July afternoon, the room, with blinds carefully closed, was full of a great calm. Chapter I — July blinds and Dr. Pascal’s press papers. Skip the Contents. Émile Zola, in Mary J. Serrano’s English, 1893. Plassans is not the war, and not Provence or Paris.`,
+    `In the heat of the glowing July afternoon, the room, with blinds carefully closed, was full of a great calm. Chapter I — July blinds and Dr. Pascal’s press papers. Skip the Contents. Émile Zola, in Mary J. Serrano’s English, 1893.`,
   "in-the-world":
     `I went out into the world as shop-boy at a fashionable boot-shop in the main street of the town. Chapter I — the shop-boy, green teeth, and watery eyes. Skip the front matter. Maksim Gorky, in Gertrude M. Foakes’s English, 1916. The Russian year is 1916; the English is 1917.`,
   "leila":
@@ -610,67 +610,67 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "hajji-baba":
     `Kerbelai Hassan, barber of Ispahan, and the razor that starts the road. Skip the Curzon introduction and the Macmillan apparatus. First 1824; this printing is 1895. Period Orientalism is left as printed.`,
   "the-purple-land":
-    `“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Skip the 1904 preface. Hudson’s 1885 novel. Uruguay, not Guyana. Guerrilla and gaucho country.`,
+    `“Three chapters in the story of my life…” opens the frame into the Banda Oriental. Skip the 1904 preface. Hudson’s 1885 novel. Guerrilla and gaucho country.`,
   "the-master-of-ballantrae":
     `The full truth of this odd matter — Durrisdeer in 1745, and the heir who should ride by his King’s bridle. Skip the dedication and the contents rhymes. Stevenson’s 1889 novel.`,
   "a-set-of-six":
-    `One tale only: Gaspar Ruiz. A revolutionary war raises strange characters, and this sit stops while the detachment is still running. It does not open The Informer. Conrad’s 1908 set. Chile’s register is not the Banda Oriental.`,
+    `One tale only: Gaspar Ruiz. A revolutionary war raises strange characters, and this sit stops while the detachment is still running. It does not open The Informer. Conrad’s 1908 set.`,
   "the-hill-of-dreams":
     `There was a glow in the sky as if great furnace doors were opened. Lucian Taylor goes out to lose himself on the Gwent hill lane. Skip the credit block and the contents. Machen’s 1907 novel. The opening stays in Gwent; London comes later.`,
   "the-story-of-an-african-farm":
-    `The full African moon poured down its light from the blue sky into the wide, lonely plain. Skip the preface, the glossary, and the epigraph. Schreiner’s 1883 novel, first issued as Ralph Iron. The Karoo is not Mashonaland, not Mhudi, and not Gaspar Ruiz.`,
+    `The full African moon poured down its light from the blue sky into the wide, lonely plain. Skip the preface, the glossary, and the epigraph. Schreiner’s 1883 novel, first issued as Ralph Iron.`,
   "the-imperialist":
     `It would have been idle to inquire into the antecedents of old Mother Beggarlegs. Skip the produced-by credit. Duncan’s 1904 novel, Elgin, Ontario. The first breath is 585 words — phone-hard, left as printed.`,
   kim:
     `He sat, in defiance of municipal orders, astride the gun Zam Zammah opposite the Wonder House, as the natives call the Lahore Museum. Skip the verse epigraph. Kipling’s 1901 novel. “Half-caste” and “burned black as any native” are period racial language, left as printed.`,
   "mogens-and-other-stories":
-    `Summer it was, in the middle of the day, in a corner of the enclosure. This sit is Mogens only, a timed cut; the whole novella is too long for one sitting. Skip the introduction. Jacobsen, in Grabow’s 1921 English of the 1882 Danish. Denmark is not Stockholm after The Red Room. The other three tales stay in the book.`,
+    `Summer it was, in the middle of the day, in a corner of the enclosure. This sit is Mogens only, a timed cut; the whole novella is too long for one sitting. Skip the introduction. Jacobsen, in Grabow’s 1921 English of the 1882 Danish. The other three tales stay in the book.`,
   "the-road-to-the-open":
     `George von Wergenthin sat at table quite alone to-day. The empty chair at the top of the table, and the September sun through the open window. Skip the title page. Schnitzler’s novel, Horace Samuel’s English, German 1908 / Latimer 1913.`,
   calvary:
     `I was born one evening in October at Saint-Michel-les-Hêtres, a small town in the department of Orne. The sit stays in the Orne and the Tourouvre forest. Mirbeau, Louis Rich’s English, French 1886 / 1922. The novel continues.`,
   "anna-of-the-five-towns":
-    `The yard was all silent and empty under the burning afternoon heat. Chapter I, The Kindling of Love — the Sunday-school yard and the prize-books. Skip the edition table, the dedication, and the epigraph. Bennett’s 1902 novel. The Five Towns, not London. The first breath is 371 words — phone-hard, left as printed.`,
+    `The yard was all silent and empty under the burning afternoon heat. Chapter I, The Kindling of Love — the Sunday-school yard and the prize-books. Skip the edition table, the dedication, and the epigraph. Bennett’s 1902 novel. The first breath is 371 words — phone-hard, left as printed.`,
   "small-souls":
-    `It was pouring with rain, and Dorine van Lowe dropped in on Karel and Cateau with a wet umbrella. Skip the translator’s note. Couperus, Teixeira’s English, Dutch 1901 / 1914. The Hague is not the Java Residency.`,
+    `It was pouring with rain, and Dorine van Lowe dropped in on Karel and Cateau with a wet umbrella. Skip the translator’s note. Couperus, Teixeira’s English, Dutch 1901 / 1914.`,
   "stories-and-pictures":
     `Down here, in this world, Bontzye Shweig’s death made no impression at all. This sit is Bontzye Shweig only. Skip the preface and the other tales. Peretz, Helena Frank’s English, Yiddish 1894 / 1906.`,
   "white-jacket":
-    `It was not a very white jacket, but white enough. Chapter I, The Jacket — Callao, and a US frigate bound for Cape Horn. Skip the note and the contents. Melville’s 1850 novel. A man-of-war, not Tahiti after The Moon and Sixpence.`,
+    `It was not a very white jacket, but white enough. Chapter I, The Jacket — Callao, and a US frigate bound for Cape Horn. Skip the note and the contents. Melville’s 1850 novel.`,
   "a-japanese-nightingale":
     `The last rays of sunset were tingeing the land above the bay. Chapter I, The Storm Dance — a tea-house island. Skip the illustration list and the contents. Eaton’s 1901 novel, published as Onoto Watanna.`,
   "maria-chapdelaine":
-    `The door opened, and the men of the congregation began to come out of the church at Peribonka. Chapter I — April snow on the church steps. Skip the reprint table. Hémon, in Blake’s English, French 1913 / 1921. Peribonka is not Elgin, Ontario.`,
+    `The door opened, and the men of the congregation began to come out of the church at Peribonka. Chapter I — April snow on the church steps. Skip the reprint table. Hémon, in Blake’s English, French 1913 / 1921.`,
   "the-house-by-the-medlar-tree":
-    `Once the Malavoglia were as numerous as the stones on the old road to Trezza. Chapter I — Padron ’Ntoni and the Provvidenza. Skip Howells’s introduction. Verga, in Mary A. Craig’s English, Italian 1881 / 1890. Sicily is not Rome.`,
+    `Once the Malavoglia were as numerous as the stones on the old road to Trezza. Chapter I — Padron ’Ntoni and the Provvidenza. Skip Howells’s introduction. Verga, in Mary A. Craig’s English, Italian 1881 / 1890.`,
   "filipino-popular-tales":
     `There was once an old woman who had an only son named Suan. This sit is Suan’s Good Luck only. Skip the preface, the other tales, and the notes. Fansler’s 1921 collection. One tale this sit; the book continues.`,
   "the-marrow-of-tradition":
-    `Stay here beside her, major. Chapter I, At Break of Day — a Wilmington sickroom, the heat, a cicada, magnolias. Skip the contents and the Lamb epigraph. Chesnutt’s 1901 novel. The printed line “not he needed” stays. Wilmington is not Georgia after Cane.`,
+    `Stay here beside her, major. Chapter I, At Break of Day — a Wilmington sickroom, the heat, a cicada, magnolias. Skip the contents and the Lamb epigraph. Chesnutt’s 1901 novel. The printed line “not he needed” stays.`,
   "zuleika-dobson":
-    `That old bell, presage of a train, had just sounded through Oxford station. Chapter I — undergraduates on the platform, and the Warden of Judas. Skip the 1922 note. Beerbohm’s 1911 novel. Oxford is not London, and not the Potteries.`,
+    `That old bell, presage of a train, had just sounded through Oxford station. Chapter I — undergraduates on the platform, and the Warden of Judas. Skip the 1922 note. Beerbohm’s 1911 novel.`,
   "eugenie-grandet":
-    `There are houses in certain provincial towns whose aspect inspires melancholy. Section I — Saumur’s steep street and the Grandet house. Skip the dedication to Maria. Balzac, in Katharine Prescott Wormeley’s English, French 1833. Saumur is not the Orne, and not Paris.`,
+    `There are houses in certain provincial towns whose aspect inspires melancholy. Section I — Saumur’s steep street and the Grandet house. Skip the dedication to Maria. Balzac, in Katharine Prescott Wormeley’s English, French 1833.`,
   "seven-brothers":
     `Jukola Farm, in the south of the province of Häme, stands on the northern slope of a hill, near the village of Toukola. Chapter I. Skip the Faber apparatus and the preface. Kivi, in Alex Matson’s English, Finnish 1870 / 1929.`,
   "laos-folk-lore":
-    `Deep in the forest of the North there is a large village of jungle people. This sit is A Child of The Woods only. Skip the introduction, the other tales, and the footnotes. Fleeson’s 1899 collection. One tale this sit; the book continues. Laos is not Pampanga after Suan.`,
+    `Deep in the forest of the North there is a large village of jungle people. This sit is A Child of The Woods only. Skip the introduction, the other tales, and the footnotes. Fleeson’s 1899 collection. One tale this sit; the book continues.`,
   "born-in-exile":
-    `The summer day in 1874 which closed the annual session of Whitelaw College. Part I, Chapter I — the Kingsmill statue and the smoke-canopy. Skip the Part-label apparatus. Gissing’s 1892 novel. Kingsmill is not Oxford, not London, and not the Potteries.`,
+    `The summer day in 1874 which closed the annual session of Whitelaw College. Part I, Chapter I — the Kingsmill statue and the smoke-canopy. Skip the Part-label apparatus. Gissing’s 1892 novel.`,
   "the-four-horsemen-of-the-apocalypse":
-    `In 1870 Marcelo Desnoyers was nineteen years old. Chapter II, Madariaga, the Centaur — Buenos Aires and the ranch. Skip Chapter I, The Tryst. Blasco Ibáñez, in Charlotte Brewster Jordan’s English, Spanish 1916 / 1918. Argentina is not Uruguay, and not Gaspar Ruiz.`,
+    `In 1870 Marcelo Desnoyers was nineteen years old. Chapter II, Madariaga, the Centaur — Buenos Aires and the ranch. Skip Chapter I, The Tryst. Blasco Ibáñez, in Charlotte Brewster Jordan’s English, Spanish 1916 / 1918.`,
   "virgin-soil":
     `At one o’clock in the afternoon of a spring day in the year 1868, a young man climbs the back staircase on Officers Street. Section I. Skip the epigraph and the introduction. Turgenev, in R. S. Townsend’s English, Russian 1877.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” Chapter I only.`,
   "brazilian-tales":
-    `One tale only: The Fortune-Teller. Rita explains Camillo with Hamlet’s line, then the cards on Guarda-Velha Street. Stop at the tale boundary — this sit does not open The Attendant's Confession, and it is not the Tropic rail. Later tales in the volume use period racial language, left as printed.`,
+    `One tale only: The Fortune-Teller. Rita explains Camillo with Hamlet’s line, then the cards on Guarda-Velha Street. Stop at the tale boundary — this sit does not open The Attendant's Confession. Later tales in the volume use period racial language, left as printed.`,
   "the-house-of-mirth":
     `Grand Central, a Monday in early September—the afternoon rush, the heat, the crowd. Lawrence Selden notices Lily Bart standing apart from it all, vivid against the dull tints of the station. Edith Wharton’s 1905 New York novel begins with a chance meeting that doesn’t feel accidental.`,
   carmilla:
     `A lonely schloss in Styria. A teenage narrator with too few neighbors. And a childhood night she still can’t forget—a pretty face at the bedside, then a pain like needles. Sheridan Le Fanu’s gothic novella (serialized 1871–72; collected 1872) opens on solitude and that first fright, before any carriage has rolled in.`,
   "hungry-hearts":
-    `My heart chokes in me like in a prison. This sit is Wings only — a janitor’s basement on a May Sunday. Skip the contents, the other tales, and the dedication. Yezierska’s 1920 collection. One tale this sit; the book continues. The Lower East Side is not Laos.`,
+    `My heart chokes in me like in a prison. This sit is Wings only — a janitor’s basement on a May Sunday. Skip the contents, the other tales, and the dedication. Yezierska’s 1920 collection. One tale this sit; the book continues.`,
   "the-sport-of-the-gods":
     `Fiction has said so much in regret of the old days when there were plantations and overseers and masters and slaves. Chapter I, The Hamiltons — the Berry cottage, the Oakley mansion, and a butler’s dignity. Skip the contents. This timed sit stops before the New York chapters. Dunbar’s 1902 novel. The book continues north. The Host stays in the South, after Wings on the Lower East Side.`,
   ramuntcho:
@@ -720,11 +720,11 @@ export const RITUAL_PITCHES: Record<string, string> = {
   blacker:
     "Emma Lou on her “luscious black complexion,” and the family that trained her to mourn it — a Harlem novel of colorism. The period language of color hierarchy within the community is the book itself, left as printed.",
   "a-lost-lady":
-    "Sweet Water along the Burlington — Niel’s memory of Marian Forrester when the frontier ethos dies into money.",
+    "Sweet Water, one of the grey towns along the Burlington railroad, and a house known from Omaha to Denver for its hospitality. Willa Cather’s 1923 novel is Niel’s memory of Marian Forrester when the frontier ethos dies into money.",
   "lady-macbeth":
     "Katerina Lvovna is bored in her rich father-in-law’s empty house in Mtsensk. Chamot’s 1923 English. An adultery and murder novella.",
   summer:
-    "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires.",
+    "Charity Royall stands on the doorstep of North Dormer’s one street, in the Berkshires, at the beginning of a June afternoon. Edith Wharton’s 1917 novel opens on a village that lies high and in the open, without the lavish shade of more sheltered towns.",
   "jacob-s-room":
     "Betty Flanders writing in the sand — Cornwall, then the room that will be Jacob’s. The experimental voice is the sit.",
   "the-tenant-of-wildfell-hall":
