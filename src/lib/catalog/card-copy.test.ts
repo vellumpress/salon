@@ -217,6 +217,7 @@ test("known origin overrides", () => {
     "maximina": "Spain",
     "love-among-the-chickens": "United Kingdom",
     "the-fresco": "China",
+    "the-taoist-priest-of-lao-shan": "China",
   } as const;
   for (const [id, country] of Object.entries(expect)) {
     const work = byId.get(id);

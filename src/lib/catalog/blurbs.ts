@@ -639,6 +639,8 @@ const BLURBS: Record<string, string> = {
     "Ukridge drops in on Garnet's London lodgings with that powerful voice, and Garnet knows his quiet morning is over.",
   "the-fresco":
     "Two students lose themselves in Pekin's lanes, enter a temple, and one follows a goddess who steps out of a fresco.",
+  "the-taoist-priest-of-lao-shan":
+    "Wang learns to walk through walls at Lao-shan, brags at home, and finishes in a heap on the floor.",
   "wedding-day":
     "On his wedding morning Bert cuts off his moustache while the cab waits, just to feel free.",
   "the-strange-case-of-dr-jekyll-and-mr-hyde":

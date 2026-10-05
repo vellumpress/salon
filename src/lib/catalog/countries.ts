@@ -730,6 +730,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "maximina": "Spain",
   "love-among-the-chickens": "United Kingdom",
   "the-fresco": "China",
+  "the-taoist-priest-of-lao-shan": "China",
   "my-antonia": "United States",
   "look-back-on-happiness": "Norway",
   "father-of-yoto": "United Kingdom",

@@ -205,6 +205,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "maximina": { label: "Pasajes", region: "es" },
   "love-among-the-chickens": { label: "London", region: "gb" },
   "the-fresco": { label: "Pekin", region: "cn" },
+  "the-taoist-priest-of-lao-shan": { label: "Lao-shan", region: "cn" },
   "look-back-on-happiness": { label: "Norway forest", region: "no" },
   "father-of-yoto": { label: "Limehouse", region: "gb" },
   "growth-of-the-soil": { label: "Norway", region: "no" },

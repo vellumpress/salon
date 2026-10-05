@@ -128,6 +128,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "maximina": { label: "Pasajes", region: "es" },
     "love-among-the-chickens": { label: "London", region: "gb" },
     "the-fresco": { label: "Pekin", region: "cn" },
+    "the-taoist-priest-of-lao-shan": { label: "Lao-shan", region: "cn" },
     "growth-of-the-soil": { label: "Norway", region: "no" },
     "nada-the-lily": { label: "Zululand", region: "za" },
     "all-quiet-on-the-western-front": { label: "Western Front", region: "fr" },
@@ -456,4 +457,10 @@ test("Mon 5 Oct mid Ritual place reuses cn; Pekin chip; no new region key", () =
   assert.ok(REGION_SHAPES.cn?.d, "cn shape");
   assert.deepEqual(placeFor(shelfWork("the-fresco")!), { label: "Pekin", region: "cn" });
   assert.equal(CHIP_ONLY_PLACE["the-fresco"], undefined);
+});
+
+test("Mon 5 Oct PM Ritual place reuses cn; Lao-shan chip; no new region key", () => {
+  assert.ok(REGION_SHAPES.cn?.d, "cn shape");
+  assert.deepEqual(placeFor(shelfWork("the-taoist-priest-of-lao-shan")!), { label: "Lao-shan", region: "cn" });
+  assert.equal(CHIP_ONLY_PLACE["the-taoist-priest-of-lao-shan"], undefined);
 });
