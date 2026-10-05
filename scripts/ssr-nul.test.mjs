@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
@@ -10,6 +10,7 @@ import {
   applyPagesHtmlSafety,
   injectShellNetworkHints,
   collectShellPrecache,
+  FONT_FILES,
   renderBootWatchScript,
   renderShellServiceWorker,
   rewriteDehydrateSsrMatchId,
@@ -198,10 +199,37 @@ test("the built asset manifest is precached with the shell", () => {
   assert.match(sw, /\/salon\/assets\/reader-ghi\.js/);
   assert.match(sw, /precacheBuild/);
   assert.match(sw, /tbr-static/);
-  assert.match(sw, /fonts\.googleapis\.com/);
+  assert.match(sw, /warmFonts/);
+  assert.doesNotMatch(sw, /fonts\.googleapis\.com|fonts\.gstatic\.com/);
+  for (const file of FONT_FILES) assert.match(sw, new RegExp(file.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   assert.doesNotMatch(sw, /return fetch\(event\.request\)/);
   assert.match(sw, /function offlinePage/);
   assert.match(sw, /function fallbackShell/);
   assert.match(sw, /Retry/);
   assert.match(sw, /self\.navigator && self\.navigator\.onLine === false/);
+});
+
+test("reading faces are local files and the offline page uses them", () => {
+  const css = readFileSync(new URL("../src/styles.css", import.meta.url), "utf8");
+  const root = readFileSync(new URL("../src/routes/__root.tsx", import.meta.url), "utf8");
+  const card = readFileSync(new URL("../src/lib/salon-card.ts", import.meta.url), "utf8");
+  const popup = readFileSync(new URL("../src/lib/auth/popup.server.ts", import.meta.url), "utf8");
+  assert.doesNotMatch(`${css}\n${root}\n${card}\n${popup}`, /fonts\.googleapis\.com|fonts\.gstatic\.com|Times New Roman|system-ui|ui-sans-serif|ui-serif|\bArial\b/);
+  for (const file of FONT_FILES) {
+    assert.match(css, new RegExp(file.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+    const onDisk = new URL(`../public${file.replace(/^\/salon/, "")}`, import.meta.url);
+    assert.equal(existsSync(onDisk), true, file);
+  }
+  assert.match(css, /--font-sans:\s*"Outfit"/);
+  assert.match(css, /--font-serif:\s*"Cormorant Garamond"/);
+  const sw = renderShellServiceWorker();
+  const offline = sw.slice(sw.indexOf("function offlinePage"), sw.indexOf("function fallbackShell"));
+  assert.match(offline, /font-family:\\"Outfit\\"/);
+  assert.match(offline, /\/salon\/fonts\/outfit-latin-400-normal\.woff2/);
+  assert.doesNotMatch(offline, /system-ui|Times New Roman|Arial|ui-sans-serif|sans-serif/);
+  const dest = mkdtempSync(join(tmpdir(), "salon-fonts-"));
+  mkdirSync(join(dest, "fonts"));
+  writeFileSync(join(dest, "fonts", "outfit-latin-400-normal.woff2"), "woff");
+  const listed = collectShellPrecache(dest);
+  assert.ok(listed.extras.includes("/salon/fonts/outfit-latin-400-normal.woff2"));
 });

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import vm from "node:vm";
-import { renderShellServiceWorker } from "./ssr-nul.mjs";
+import { FONT_FILES, renderShellServiceWorker } from "./ssr-nul.mjs";
 
 const ORIGIN = "https://vellumpress.github.io";
 const SHELL_URL = `${ORIGIN}/salon/`;
@@ -54,6 +54,7 @@ class FakeCaches {
 
 function loadWorker({ onLine = false, fetchImpl } = {}) {
   const caches = new FakeCaches();
+  const listeners = {};
   const sandbox = {
     Response,
     Request,
@@ -79,7 +80,9 @@ function loadWorker({ onLine = false, fetchImpl } = {}) {
   };
   sandbox.self = {
     location: { origin: ORIGIN, href: `${ORIGIN}/salon/sw.js` },
-    addEventListener() {},
+    addEventListener(type, fn) {
+      listeners[type] = fn;
+    },
     skipWaiting() { return Promise.resolve(); },
     clients: {
       claim() { return Promise.resolve(); },
@@ -91,10 +94,10 @@ function loadWorker({ onLine = false, fetchImpl } = {}) {
   sandbox.globalThis = sandbox;
   vm.createContext(sandbox);
   vm.runInContext(
-    `${renderShellServiceWorker()}\nglobalThis.__tbr = { handleNavigate: handleNavigate, dropShellForRecovery: dropShellForRecovery, offlinePage: offlinePage };`,
+    `${renderShellServiceWorker()}\nglobalThis.__tbr = { handleNavigate: handleNavigate, dropShellForRecovery: dropShellForRecovery, offlinePage: offlinePage, warmFonts: warmFonts, isStaticAsset: isStaticAsset };`,
     sandbox,
   );
-  return { caches, api: sandbox.__tbr, sandbox };
+  return { caches, api: sandbox.__tbr, sandbox, listeners };
 }
 
 function navEvent(href) {
@@ -111,6 +114,59 @@ async function putShell(caches, name, html = shellHtml()) {
     SHELL_URL,
     new Response(html, { status: 200, headers: { "content-type": "text/html; charset=utf-8" } }),
   );
+}
+
+test("install stores reading faces, and an offline launch still serves them", async () => {
+  const bodies = new Map();
+  let online = true;
+  const { caches, api, listeners } = loadWorker({
+    onLine: true,
+    fetchImpl(input) {
+      if (!online) return Promise.reject(new TypeError("Failed to fetch"));
+      const url = String(input?.url || input);
+      if (url.includes("/salon/fonts/") && url.endsWith(".woff2")) {
+        const body = `face:${url}`;
+        bodies.set(url, body);
+        return Promise.resolve(new Response(body, { status: 200, headers: { "content-type": "font/woff2" } }));
+      }
+      return Promise.reject(new TypeError("Failed to fetch"));
+    },
+  });
+  await api.warmFonts();
+  online = false;
+  const cache = await caches.open("tbr-static");
+  for (const file of FONT_FILES) {
+    const url = `${ORIGIN}${file}`;
+    const hit = await cache.match(url);
+    assert.ok(hit, file);
+    assert.equal(await hit.text(), bodies.get(url));
+  }
+
+  sandboxOffline(listeners);
+  const fontUrl = `${ORIGIN}/salon/fonts/outfit-latin-400-normal.woff2`;
+  const event = {
+    request: { url: fontUrl, method: "GET", mode: "cors" },
+    waitUntil() {},
+    respondWith(promise) {
+      event.result = promise;
+    },
+  };
+  listeners.fetch(event);
+  const res = await event.result;
+  assert.equal(res.status, 200);
+  assert.equal(res.headers.get("content-type"), "font/woff2");
+  assert.equal(await res.text(), bodies.get(fontUrl));
+
+  const page = await api.offlinePage();
+  const html = await page.text();
+  assert.match(html, /font-family:"Outfit"/);
+  assert.match(html, /\/salon\/fonts\/outfit-latin-400-normal\.woff2/);
+  assert.doesNotMatch(html, /system-ui|Times New Roman|Arial|ui-sans-serif/);
+  assert.equal(api.isStaticAsset(new URL(fontUrl)), true);
+});
+
+function sandboxOffline(listeners) {
+  assert.equal(typeof listeners.fetch, "function");
 }
 
 test("a __fresh navigation offline falls back to the cached shell", async () => {
