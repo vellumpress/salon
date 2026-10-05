@@ -701,6 +701,7 @@ test("Adapted by tbr remakes are their own track — never locked recommend or N
     "scarlet-letter-kyoto",
     "wuthering-heights-rio",
   ]) {
+    assert.equal(SHELF.some((item) => item.id === id), false, id);
     assert.equal(isAdaptedBySalon(id), false, id);
     assert.notEqual(curatorialTrack(id), "adapted", id);
     assert.notEqual(curatorialTrack(id), "featured", id);

@@ -383,7 +383,7 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   assert.match(home, /useShelfSearch\("local"\)/);
   assert.doesNotMatch(home, /useShelfSearch\("fullPdf"\)/);
 
-  assert.equal(LOCAL_WORKS.length, 1196);
+  assert.equal(LOCAL_WORKS.length, 1185);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 
@@ -456,51 +456,43 @@ test("routes and components have no reader-facing Featured label", () => {
   assert.deepEqual(hits, []);
 });
 
-test("Madame Bovary Tokyo is soft-held off Adapted — not Featured, not a timed sit", () => {
-  const id = "madame-bovary-tokyo";
-  const gone = [
-    "madame-bovary-tokyo-waking",
-    "madame-bovary-tokyo-unwind",
-    "madame-bovary-tokyo-before-sleep",
-  ] as const;
-  assert.equal(isAdaptedBySalon(id), false);
-  assert.notEqual(curatorialTrack(id), "adapted");
-  assert.notEqual(curatorialTrack(id), "featured");
-  assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false);
-  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false);
-  assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false);
-  assert.equal(ADAPTED_WORKS.some((item) => item.id === id), false);
-  for (const sibling of gone) {
-    assert.equal(isAdaptedBySalon(sibling), false, sibling);
-    assert.equal(shelfWork(sibling), undefined, sibling);
-  }
-  for (const lane of RITUAL_LANES) {
-    assert.equal(lane.workIds.includes(id), false, lane.id);
-    for (const sibling of gone) {
-      assert.equal(lane.workIds.includes(sibling), false, `${sibling} ${lane.id}`);
+test("novel-length Adapted remakes are off the live shelf", () => {
+  const here = fileURLToPath(new URL(".", import.meta.url));
+  const archive = join(here, "off-shelf", "novel-remakes");
+  const classics: Record<string, { id: string; title: string }> = {
+    "madame-bovary-tokyo": { id: "bovary", title: "Madame Bovary" },
+    "dorian-gray-shanghai": { id: "dorian", title: "The Picture of Dorian Gray" },
+    "anna-karenina-milan": { id: "anna", title: "Anna Karenina" },
+    "dracula-istanbul": { id: "dracula", title: "Dracula" },
+    "crime-punishment-cape-town": { id: "crime", title: "Crime and Punishment" },
+    "age-of-innocence-venice": { id: "the-age-of-innocence", title: "The Age of Innocence" },
+  };
+  assert.equal(NOVEL_REMAKE_IDS.length, 11);
+  for (const id of NOVEL_REMAKE_IDS) {
+    assert.equal(shelfWork(id), undefined, id);
+    assert.equal(isAdaptedBySalon(id), false, id);
+    assert.notEqual(curatorialTrack(id), "adapted", id);
+    assert.notEqual(curatorialTrack(id), "featured", id);
+    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
+    assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
+    assert.equal(ADAPTED_WORKS.some((item) => item.id === id), false, id);
+    assert.equal(LOCAL_WORKS.some((item) => item.id === id), false, id);
+    assert.equal(id in RITUAL_PITCHES, false, id);
+    for (const lane of RITUAL_LANES) {
+      assert.equal(lane.workIds.includes(id), false, `${id} ${lane.id}`);
+    }
+    for (const kind of ["texts", "openings"] as const) {
+      assert.equal(existsSync(join(here, kind, `${id}.json`)), false, `${kind}/${id}`);
+      assert.equal(existsSync(join(archive, kind, `${id}.json`)), true, `archive ${kind}/${id}`);
+    }
+    const classic = classics[id];
+    if (classic) {
+      const source = SHELF.find((item) => item.id === classic.id);
+      assert.ok(source, classic.id);
+      assert.equal(source!.title, classic.title);
     }
   }
-  const classic = SHELF.find((item) => item.id === "bovary");
-  assert.ok(classic);
-  assert.equal(classic!.title, "Madame Bovary");
-  assert.notEqual(classic!.id, id);
-
-  const packed = JSON.parse(
-    readFileSync(new URL("./openings/madame-bovary-tokyo.json", import.meta.url), "utf8"),
-  ) as { note: string; scenes: { title: string }[] };
-  assert.match(packed.note, /self-poisoning/);
-  assert.match(packed.note, /Warn the room before you Host it/);
-  assert.match(packed.note, /Ginza/);
-  assert.doesNotMatch(packed.note, /Host note \(required|Featured/i);
-  assert.equal(packed.scenes.length, 3);
-  assert.match(packed.scenes[0]?.title ?? "", /Asaka/i);
-  assert.ok(packed.scenes.some((scene) => /Hotel Glass/i.test(scene.title)));
-  assert.ok(packed.scenes.some((scene) => /Tokyo Continues/i.test(scene.title)));
-
-  const work = shelfWork(id);
-  assert.ok(work);
-  assert.match(work!.intro ?? "", /self-poisoning/);
-  assert.match(work!.intro ?? "", /Warn the room before you Host it/i);
 });
 
 test("Adapted remakes are whole stories — never waking/unwind/before-sleep siblings", () => {
@@ -595,128 +587,6 @@ test("FINAL LOCK KEEP 14 is live Adapted; CUT shorts and uninvented remakes stay
   }
   assert.equal(isAdaptedBySalon("miss-brill-adapted"), true);
   assert.equal(shelfWork("miss-brill-adapted")?.title, "Katherine Mansfield, Miss Brill recast");
-});
-
-test("novel remakes stay off Adapted, Featured, and ritual lanes", () => {
-  const hostRequired = new Set([
-    "madame-bovary-tokyo",
-    "dorian-gray-shanghai",
-    "anna-karenina-milan",
-    "jane-eyre-singapore",
-    "dracula-istanbul",
-    "crime-punishment-cape-town",
-    "tess-lisbon",
-    "scarlet-letter-kyoto",
-    "wuthering-heights-rio",
-  ]);
-  const classics: Record<string, { id: string; title: string }> = {
-    "madame-bovary-tokyo": { id: "bovary", title: "Madame Bovary" },
-    "dorian-gray-shanghai": { id: "dorian", title: "The Picture of Dorian Gray" },
-    "anna-karenina-milan": { id: "anna", title: "Anna Karenina" },
-    "dracula-istanbul": { id: "dracula", title: "Dracula" },
-    "crime-punishment-cape-town": { id: "crime", title: "Crime and Punishment" },
-    "age-of-innocence-venice": { id: "the-age-of-innocence", title: "The Age of Innocence" },
-  };
-  for (const id of NOVEL_REMAKE_IDS) {
-    assert.equal(isAdaptedBySalon(id), false, id);
-    assert.notEqual(curatorialTrack(id), "adapted", id);
-    assert.notEqual(curatorialTrack(id), "featured", id);
-    assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
-    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
-    assert.equal((FIRST_SESSION_RITUAL_IDS as readonly string[]).includes(id), false, id);
-    assert.equal(ADAPTED_WORKS.some((item) => item.id === id), false, id);
-    assert.equal(CLASSIC_LOCAL_WORKS.some((item) => item.id === id), false, id);
-    assert.equal(id in RITUAL_PITCHES, false, `${id} leftover ritual pitch`);
-    for (const suffix of ["waking", "unwind", "before-sleep"] as const) {
-      const sibling = `${id}-${suffix}`;
-      assert.equal(isAdaptedBySalon(sibling), false, sibling);
-      assert.equal(shelfWork(sibling), undefined, sibling);
-    }
-    for (const lane of RITUAL_LANES) {
-      assert.equal(lane.workIds.includes(id), false, `${id} ${lane.id}`);
-    }
-    const packed = JSON.parse(
-      readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8"),
-    ) as { note: string; scenes: { title: string }[]; breaths: { text: string }[] };
-    const full = JSON.parse(
-      readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8"),
-    ) as { breaths: { text: string }[] };
-    assert.ok(packed.scenes.length >= 1, id);
-    assert.equal(full.breaths.length, packed.breaths.length, `${id} full sit`);
-    assert.doesNotMatch(packed.note, /Host note \(required|Featured/i, id);
-    if (hostRequired.has(id)) {
-      assert.match(packed.note, /Warn the room before you Host it/, id);
-      assert.match(shelfWork(id)?.intro ?? "", /warn the room before you Host it/i, id);
-    } else {
-      assert.doesNotMatch(packed.note, /Host it|Hosting/i, id);
-      assert.doesNotMatch(shelfWork(id)?.intro ?? "", /Host it|Hosting/i, id);
-    }
-    const classic = classics[id];
-    if (classic) {
-      const source = SHELF.find((item) => item.id === classic.id);
-      assert.ok(source, classic.id);
-      assert.equal(source!.title, classic.title);
-      assert.notEqual(source!.id, id);
-    }
-  }
-});
-
-test("novels-glam-10 remakes use Mira city reseats, not raw Gutenberg extracts", () => {
-  const dorian = readFileSync(new URL("./texts/dorian-gray-shanghai.json", import.meta.url), "utf8");
-  const anna = readFileSync(new URL("./texts/anna-karenina-milan.json", import.meta.url), "utf8");
-  const jane = readFileSync(new URL("./texts/jane-eyre-singapore.json", import.meta.url), "utf8");
-  const pride = readFileSync(
-    new URL("./texts/pride-prejudice-buenos-aires.json", import.meta.url),
-    "utf8",
-  );
-  const dracula = readFileSync(new URL("./texts/dracula-istanbul.json", import.meta.url), "utf8");
-  const crime = readFileSync(
-    new URL("./texts/crime-punishment-cape-town.json", import.meta.url),
-    "utf8",
-  );
-  const age = readFileSync(new URL("./texts/age-of-innocence-venice.json", import.meta.url), "utf8");
-  const tess = readFileSync(new URL("./texts/tess-lisbon.json", import.meta.url), "utf8");
-  const scarlet = readFileSync(new URL("./texts/scarlet-letter-kyoto.json", import.meta.url), "utf8");
-  const wuthering = readFileSync(
-    new URL("./texts/wuthering-heights-rio.json", import.meta.url),
-    "utf8",
-  );
-  assert.match(dorian, /Huangpu/);
-  assert.match(dorian, /Bai Sheng|Du Yan/);
-  assert.match(anna, /Via della Spiga/);
-  assert.match(anna, /Anna Valenti/);
-  assert.match(jane, /Katong/);
-  assert.match(jane, /Mei-Lin Teo/);
-  assert.match(pride, /Recoleta|Alvear/);
-  assert.match(pride, /Elena Benítez|Sra\. Benítez/);
-  assert.match(dracula, /Bosphorus|yalı/);
-  assert.match(dracula, /Yunus Akman/);
-  assert.match(crime, /Long Street|Table Mountain/);
-  assert.match(crime, /Ruan Steyn/);
-  assert.match(age, /Fenice/);
-  assert.match(age, /Niccolò Archi/);
-  assert.match(tess, /Alentejo|Tagus/);
-  assert.match(tess, /Teresa Duarte|João Duarte/);
-  assert.match(scarlet, /Kyoto/);
-  assert.match(scarlet, /Hisako/);
-  assert.match(wuthering, /Rio/);
-  assert.match(wuthering, /Heitor|Catarina/);
-  assert.doesNotMatch(wuthering, /Mr\. Lockwood, a soft coastal tenant/);
-  assert.doesNotMatch(dorian, /Basil Hallward/);
-  assert.doesNotMatch(jane, /Jane Eyre learned early/);
-  assert.doesNotMatch(dracula, /Jonathan Harker steamed/);
-  assert.doesNotMatch(crime, /Rodion Romanovich Raskolnikov/);
-  assert.doesNotMatch(age, /Newland Archer arrived/);
-  assert.doesNotMatch(tess, /Tess Durbeyfield walked/);
-  assert.doesNotMatch(scarlet, /Hester Prynne stood/);
-  assert.doesNotMatch(dorian, /The artist is the creator of beautiful things/);
-  assert.doesNotMatch(
-    pride,
-    /It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife/,
-  );
-  assert.doesNotMatch(dracula, /Left Munich at 8:35/);
-  assert.doesNotMatch(crime, /On an exceptionally hot evening early in July/);
-  assert.doesNotMatch(age, /Christine Nilsson was singing in Faust/);
 });
 
 test("glam-10 remakes use Mira city reseats, not raw Gutenberg extracts", () => {

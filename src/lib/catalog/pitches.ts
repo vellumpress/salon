@@ -25,7 +25,7 @@ export const PITCHES: Record<string, string> = {
   oblomov:
     "Oblomov in bed on Gorokhovaya Street with a dreaded letter from his estate. Hogarth’s English, PG 54700, abridged. Serf-era master and servant (Zakhar, *barin*) and period class language; Host note, don’t sanitize.",
   "the-lady-with-the-dog-and-other-stories":
-    "Gurov at Yalta sees the lady in the *béret*. Title story only, Chapter I per sit — Garnett’s English, PG 13415. Gurov’s contempt for women (“the lower race”) is period misogyny; Host may name it. Not the same day as the Adapted late-season remake.",
+    "Gurov at Yalta sees the lady in the *béret*. Title story only, Chapter I per sit — Garnett’s English, PG 13415. Gurov’s contempt for women (“the lower race”) is period misogyny; Host may name it.",
   zeno:
     "Zeno’s first cigarettes and the last-cigarette habit, in Trieste. De Zoete’s English; PG 79453 gives the original publication as 1930. Comic self-deception; Host OK.",
   "the-book-of-khalid":
