@@ -601,6 +601,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Wedding-day. It was curiously unreal. This sit is “Wedding-Day” only — on the morning of his wedding Bert looks in the glass, sees forty years of breakfasts and the eight-thirteen to town ahead, and cuts off his moustache while the cab waits. The sit is the whole story, ending ‘The forty years began.’ A heads-up before you start: no hazards; an uncle's death is mentioned only for the legacy that made the wedding possible. Gerald Bullett, from The Street of the Eye and nine other tales; the year is 1923. One story this sit. Dry and comic, for the evening rather than for sleep. Soft Bullett, carefully. The story names no place. PG reading-ease 75.0 is for the whole volume. No score is invented for this sit.`,
   "elysium":
     `The Triad came into my life as I walked underneath the arch by which the sentinels sit in Olympian state upon their rather long-legged chargers, receiving, as is their due, the silent homage of the passing nurserymaids. This sit is “Elysium” only — a soldier just back from the Flanders front walks home through St. James's with his sweetheart on one arm and his sister on the other, past the clubs and two old colonels on the steps, wrapped apart from the whole world. The sit is the whole sketch, ending “for five long days.” A heads-up before you start: the First World War sits just behind this story. The soldier is home from the front in Flanders on five days' leave. R. B. Cunninghame Graham, from Brought Forward; the year is 1916. One story this sit. Quiet and tender, for the last minutes before sleep. Soft Cunninghame Graham, carefully. Pall Mall, London. No reading-ease score is invented for this sit.`,
+  "the-fresco":
+    `In the Great Highway of Eternal Fixity, Mong Flowing-spring and his friend Choo Little-lotus were slowly walking, clothed in the long light green dress of the students. This sit is “The Fresco” only — two successful students lose themselves in the lanes of Pekin, enter a temple of the Mysterious-way, and Mong Flowing-spring follows a goddess who steps out of a fresco. The sit is the whole story, ending “Love has touched her. She has become a woman and is waiting for you in your village.” Pu Songling, in G. Soulié de Morant's English, from Strange Stories from the Lodge of Leisures; the year is 1913, from the Houghton Mifflin title page. One story this sit. Soft and magical, for the last minutes before sleep. Soft Pu Songling, carefully. Soft Pekin, carefully. China is primary. PG reading-ease 77.8 is for the whole volume. No score is invented for this sit.`,
   "the-green-carnation":
     `He slipped a green carnation into his evening coat and looked at himself in the Piccadilly glass — a Burne-Jones angel a little weary of its own life. Skip the credit block. Hichens’s 1894 novel. Soft London after Reuben Sachs and the Forsytes; coded desire stays as printed.`,
   "hajji-baba":
@@ -1485,6 +1487,8 @@ export const RITUAL_LANES: RitualLane[] = [
       // Mira Sun 4 Oct 2026 POST-v3 Ritual — Wedding-Day does not sit here: Host-only on unwind (never before-sleep).
       // Mira Sun 4 Oct 2026 mid Rituals — Elysium is the Host-only story and sits here only (never unwind). Never Featured, no Next.
       "elysium",
+      // Mira Mon 5 Oct 2026 mid Ritual — The Fresco is the Host-only story and sits here only (never unwind / on-a-walk). Never Featured, no Next.
+      "the-fresco",
     ],
   },
   {
@@ -2456,6 +2460,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "a-monkey": 9,
   "wedding-day": 6,
   "elysium": 5,
+  "the-fresco": 5,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,
