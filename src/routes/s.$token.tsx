@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { getSentenceShare } from "@/lib/sentence-share";
 import { shelfWork } from "@/lib/catalog/shelf";
+import { useChromeStatusBar } from "@/lib/use-reader-daylight";
 
 export const Route = createFileRoute("/s/$token")({
   component: ShareLanding,
@@ -9,6 +10,7 @@ export const Route = createFileRoute("/s/$token")({
 
 function ShareLanding() {
   const { token } = Route.useParams();
+  useChromeStatusBar();
   const [state, setState] = useState<
     | { status: "loading" }
     | { status: "missing" }
@@ -57,9 +59,7 @@ function ShareLanding() {
         </header>
         <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
           <p className="type-kicker text-muted">Opening</p>
-          <p className="mt-2 type-title">
-            A shared sentence
-          </p>
+          <p className="mt-2 type-title">A shared sentence</p>
         </div>
       </div>
     );
@@ -77,12 +77,8 @@ function ShareLanding() {
           </Link>
         </header>
         <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
-          <p className="mt-2 type-title">
-            This share
-          </p>
-          <p className="mt-3 font-serif text-lg text-ink/70">
-            This share would not come
-          </p>
+          <p className="mt-2 type-title">This share</p>
+          <p className="mt-3 font-serif text-lg text-ink/70">This share would not come</p>
         </div>
       </div>
     );
@@ -101,12 +97,8 @@ function ShareLanding() {
         </Link>
       </header>
       <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
-        <p className="type-kicker text-muted">
-          {meta?.author ?? ""}
-        </p>
-        <p className="mt-2 type-title">
-          {meta?.title ?? "A shared sentence"}
-        </p>
+        <p className="type-kicker text-muted">{meta?.author ?? ""}</p>
+        <p className="mt-2 type-title">{meta?.title ?? "A shared sentence"}</p>
         <blockquote className="mt-6 border-l-2 border-ink pl-4 font-serif text-lg leading-relaxed text-ink/80 sm:text-xl">
           {state.sentenceText}
         </blockquote>
