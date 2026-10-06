@@ -873,7 +873,7 @@ const BLURBS: Record<string, string> = {
   "royal-highness": "Noon on the Albrechtstrasse: a general and a lieutenant in grey great-coats.",
   ramona: "Sheep-shearing is late at the Senora Moreno’s Mission ranch, and Felipe is still ill.",
   "almayers-folly": "Kaspar! Makan! — a decaying house on the Pantai at sunset.",
-  "the-crux": "The Foote Girls bustle along Margate Street, and the Host opens on the Back Way.",
+  "the-crux": "The Foote Girls bustle along Margate Street, and the book opens on the Back Way.",
   "the-black-dog": "A freckled rustic pockets his fare, and the reading is the title tale only.",
   "a-hero-of-our-time":
     "Post from Tiflis: a dukhan crowd and camels at the foot of Mount Koishaur.",

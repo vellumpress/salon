@@ -10339,7 +10339,7 @@ test("Mira POST-#184 CLEAR is Next lead Smoke, then Niels Lyhne, The Emancipated
   assert.match(germinal.author ?? "", /Havelock Ellis/);
   assert.match(SHELF.find((item) => item.id === "germinal")?.intro ?? "", /Montsou/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "germinal")?.intro ?? "", /Doctor Pascal/);
-  assert.match(SHELF.find((item) => item.id === "germinal")?.intro ?? "", /Three Soldiers/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "germinal")?.intro ?? "", /Three Soldiers/);
   assert.match(bindNote("germinal"), /Inventory 71/);
 
   const pillar = JSON.parse(
