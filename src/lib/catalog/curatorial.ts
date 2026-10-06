@@ -1225,6 +1225,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Tue 6 Oct 2026 — The Golden Age follows, Next carefully only (the content notes are on the card). Never Featured.
   // Its one Ritual lane is on-a-walk (Alarums and Excursions); never unwind or before-sleep.
   "the-golden-age",
+  // Mira Tue 6 Oct 2026 MID — The Spoilt Child follows, Next carefully only (the content notes are on the card). Never Featured. Off every Ritual lane.
+  "the-spoilt-child",
 ] as const;
 
 /**

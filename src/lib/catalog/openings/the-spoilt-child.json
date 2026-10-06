@@ -1,0 +1,66 @@
+{
+  "id": "the-spoilt-child",
+  "title": "The Spoilt Child",
+  "author": "Peary Chand Mitra (tr. G. D. Oswell)",
+  "year": "1893",
+  "note": "Project Gutenberg 69173. English: Calcutta, Thacker, Spink and Co., 1893 (year printed on the title page). Translator G. D. Oswell, printed. Bengali original Alaler Gharer Dulal (book form 1858). Footnote markers stripped from the body; the translator's Notes and Glossary stay as their own scenes. First sit: Chapter I whole.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I. Matilall at Home",
+      "place": "Chapter I. Matilall at Home",
+      "reentry": "BABURAM BABU, a resident of Vaidyabati, was a man of large experience in business affairs: he was famous for his long service in the Revenue and Criminal Courts. Now to walk uprightly without taking b",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "BABURAM BABU, a resident of Vaidyabati, was a man of large experience in business affairs: he was famous for his long service in the Revenue and Criminal Courts. Now to walk uprightly without taking bribes when engaged in the public service, is not a very long-established custom. Baburam Babu's procedure was in accordance with the old style, and being skilful at his work, he had succeeded, by servility and cringing, in imposing on his superior officers; as a consequence of which he had acquired considerable wealth within a very short time. In this country a man's reputation keeps pace with the increase of his riches or with his advancement: learning and character have not anything like the same respect paid to them. There had been a time when Baburam Babu's position had been a very inferior one, and when only a few individuals in his village had paid him any attention; but later, as he came into the possession of fine buildings, gardens, estates, and a good deal of influence in many ways, he found himself with a host of friends as his followers and advisers. Whenever during his intervals of leisure he went to his house, his reception-room would be crowded with people. It is always the case that when a man has a sudden accession of wealth there is a rush of people to him, just as the shop of a sweetmeat seller will become full of flies as long as there are sweetmeats to be had. At whatever time you might visit Baburam Babu's house you would always find people with him: rich and poor, they would all sit round and flatter him, the more intelligent among them in indirect fashion only, the lesser folk outright and unblushingly, agreeing with everything he said. After some time spent in the way we have described, Baburam Babu took his pension, and remained at home occupied in the management of his estates and in trade."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "Now in this world, entire happiness is the lot of hardly any one, and it is rare to find intelligence displayed in all the concerns of life. Baburam Babu had turned his attention solely to amassing wealth: the questions which had alone exercised his mind had been how to increase his resources, how to make the whole village aware of his importance, so that all might salute him properly, and how to celebrate his religious festivals on a larger scale than those of his neighbours. He had a son and two daughters: being himself a descendant of the great Kulin, Balaram Thakur, he had, with a view to the preservation of his caste, married the two girls at great expense almost immediately after their birth; but their husbands, being Kulins, had taken to themselves wives in a number of places, and would not so much as peep into the house of their father-in-law of Vaidyabati, except on condition of receiving a handsome remuneration for their trouble."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "His son, Matilall, having been indulged in every possible way from his boyhood, was exceedingly self-willed; at times, he would say to his father: \"Father, I want to catch hold of the moon!\" \"Father, I want to eat a cannon-ball!\" Now and then he would roar and cry, so that all the neighbours would say: \"We cannot get any sleep owing to that dreadful boy.\" Having been so spoilt by his parents, the boy would not tolerate the bare idea of going to school, and thus it was that the duty of teaching him devolved upon the house clerk. On his very first visit to his teacher, Matilall howled aloud, and scratched and bit him. His tutor therefore went to the master of the house and said to him: \"Sir, it is quite beyond my power to instruct your son.\" The master of the house replied: \"Ah, he is my only darling, my Krishna! use flattery and caresses if you will, only do teach him.\""
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Matilall was afterwards induced by means of many stratagems to attend school; and when his teacher was leaning up against the wall, nodding drowsily, with his legs crossed and a cane in his hand, reiterating — \"Write boys, write,\" Matilall would rise from his seat, make contemptuous gestures, and dance about the room. The teacher would go on snoring away, ignorant of what his pupil was doing, and when he opened his eyes again, Matilall would be seated near his writing materials of dry palm-leaves, drawing figures of crows and cranes. When later in the afternoon he had commenced the repetition lesson, Matilall, amid the confused babel of tongues, would utter cries of *Hori Bol*, and cleverly outwit his teacher by uttering the last letters only of the words that were being recited. Occasionally when his teacher was napping, he would tickle his nose or throw a live piece of charcoal into his lap, and then dart away like an arrow. When the hour for refreshment came, he would occasionally get some boy to give the master lime and water to drink, pretending that it was buttermilk."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "The teacher saw that the boy was a thorough good-for-nothing, who had made up his mind to have nothing more to do with education; so he concluded that as the boy had profited naught from all the canings he had had, but only learnt the art of playing tricks upon his teacher, it was high time to be released from the hands of such a pupil. The master of the house however would not hear of it, so he had to have recourse to stratagem. The occupation of clerk seemed to him to be better than that of teacher: in the latter occupation his wages were two rupees a month besides food and clothing, while his gains over and above that would be merely a present of rice and a pair of cloths or so at the time of the boy's being first initiated into school-life: on the other hand, in the occupation of a clerk who superintended all purchases in the market, there were constant pickings. Revolving such thoughts in his mind, he went to the master of the house and told him that Matilall's education was complete so far as his writing was concerned, and that he had also been thoroughly taught to keep accounts, so far as estate-management was concerned. Baburam Babu was overwhelmed with joy on receiving this intelligence, and all his neighbours in conclave with him said: \"Why should it not be so? Can a lion's whelp ever become a jackal?\""
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "Baburam Babu now thought that he ought to have his son taught the rudiments of Sanskrit grammar and a smattering of Persian. Having come to this determination, he called the priest who was in charge of the family worship, and said: \"You sir! have you any knowledge of grammar?\" This Brahman was the densest of blockheads, but he thought to himself: \"I am now getting only rice and plantains, quite insufficient for me: here I see at length a means of making a living.\" So he replied: \"Yes, sir, I studied grammar for five years continuously in the Sanskrit *Tol* of Ishvar Chandra Vedanta Vagishwar of Kunnimora. But I have been very unlucky: I have gained nothing from all my learning: I am no more than your humble servant in spite of it all, and my food is but coarse grain and water.\" Baburam Babu thereupon appointed him to teach his son the rudiments of Sanskrit grammar from that day. The Brahman, inebriated with hope, speedily got by heart a page or two of the *Mugdha Bodh* Grammar, and set about teaching the boy."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Thought Matilall to himself:— \"I have escaped from the hands of my old teacher; how am I to get rid of this rice-and-plantain-eating old Brahman? I am my father and mother's darling, and whether I can write or not, they will say nothing to me. The only object of learning after all is to gain money, and my father has boundless wealth: what then is the good of my learning? It is quite enough for me to be able to sign my name; besides what will my intimate friends have left to do if I take to learning? their occupation in ministering to my pleasures will be gone! The present is the time for enjoyment: has the pain of learning any attractions for me just now? surely none!\" Having come to this determination, Matilall thus addressed his preceptor:— \"Old Brahman, if you come here any more to plague me with this grammatical rubbish, I will throw away the family idol, and with it your last hope of a livelihood; and if you go to my father and tell him what I have said to you, I will just drop a brick onto you from the roof: then your wife will soon become a widow, and have to remove her bracelet from her wrist.\""
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "The Brahman, distressed by such remarks about his teaching, thought to himself: \"For six months past I have been labouring at the peril of my life, and I have not yet been paid anything: the whole occupation is one that is most repugnant to my feelings, and I am in constant danger of my life. Let me now only get clear of him and I care not what happens to me afterwards.\" As the Brahman was revolving all this in his mind, Matilall looked in his face and said: \"Well, what are you in such a brown study about? Are you in want of money? Here, take this! But you must go to my father, and tell him that I have learned every thing.\" The Brahman accordingly went to the boy's father and said to him: \"Sir, your Matilall is no common boy! he has a most extraordinary memory; he will remember for ever what he may have heard only once.\" There was an astrologer at the time with Baburam, who observed to the Babu: \"There is no necessity for you to give me an introduction to Matilall: he is a boy whose birth was at an auspicious moment; if only he lives he is bound to become a very great man.\""
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "Baburam Babu next set about searching for a Munshi to teach his son Persian. After a long search, the grandfather of Aladi the tailor, Habibala Hoshan by name, was appointed to the post on a salary of one rupee eight annas a month, together with oil and firewood. The Munshi Saheb was a man with toothless gums, a grey beard, and a moustache like tow: his eyes would get inflamed whenever he was teaching, and when he bade his pupils repeat the letters after him, his face became hideously distorted in pronouncing the guttural Persian letters *kaph, gaph, ain, ghain.* The benefit that Matilall derived from learning Persian was pretty much what might have been expected from his possessing no taste whatever for the pursuit of knowledge, and having such a preceptor. As the Munshi Saheb was one day stooping over his book, repeating the maxims of Masnavi in a sing-song manner and keeping time with his hand, Matilall seized the opportunity to drop a lighted match from behind onto his beard. The poor Munshi's beard at once flared up, crackling as it blazed, upon which Matilall remarked: \"How now, Mussulman? you will not teach me any more after this, I expect.\" The Munshi Saheb left speedily, shaking his head and exclaiming \"*Tauba! Tauba!*\" Then as the pain of the burn intensified, he shrieked: \"Never, never have I seen so mad and wicked a boy as this: of a surety field labour in my own country were better than such slavery: it is cruel work coming to a place like this! *Tauba! Tauba!*\""
+    }
+  ]
+}
