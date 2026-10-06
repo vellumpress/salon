@@ -162,7 +162,9 @@
     min-height: 100%;
     min-height: 100dvh;
     overflow-x: clip;
-    background: var(--color-paper);
+    /* Mark row absorbs the iOS status bar once the page draws underneath it. */
+    --mark-row: calc(3rem + env(safe-area-inset-top, 0px));
+    background: var(--status-page, var(--color-paper));
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-synthesis: none;
@@ -387,9 +389,27 @@ html.together-compose.together-kb .chat-slot {
 
 .cell-mark {
   grid-column: 1 / -1;
-  height: 3rem;
-  min-height: 3rem;
+  box-sizing: border-box;
+  height: var(--mark-row, 3rem);
+  min-height: var(--mark-row, 3rem);
+  padding-top: env(safe-area-inset-top, 0px);
   background: var(--color-paper);
+}
+
+/* Paints the iOS status-bar band. Height is 0 where there is no safe-area inset. */
+.status-bar-fill {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 80;
+  height: env(safe-area-inset-top, 0px);
+  pointer-events: none;
+  background: var(--status-strip, var(--status-page, var(--color-paper)));
+}
+
+html[data-status-motion="1"] .status-bar-fill {
+  transition: background-color 20s linear;
 }
 
 .cell-label {
@@ -927,7 +947,7 @@ html.together-compose.together-kb .chat-slot {
   align-content: stretch;
   grid-template-columns: 1fr;
   /* mark · pillars · adapted · works · bottom search — no extra chrome gap */
-  grid-template-rows: 3rem minmax(10rem, 1fr) minmax(10rem, 1fr) auto auto auto;
+  grid-template-rows: var(--mark-row, 3rem) minmax(10rem, 1fr) minmax(10rem, 1fr) auto auto auto;
   grid-auto-rows: auto;
 }
 
@@ -938,7 +958,7 @@ html.together-compose.together-kb .chat-slot {
 }
 
 .board.board-doors.has-resume {
-  grid-template-rows: 3rem minmax(8.25rem, auto) minmax(7.5rem, 1fr) minmax(7.5rem, 1fr) auto auto auto;
+  grid-template-rows: var(--mark-row, 3rem) minmax(8.25rem, auto) minmax(7.5rem, 1fr) minmax(7.5rem, 1fr) auto auto auto;
 }
 
 .board.board-doors > .cell-resume {
@@ -959,7 +979,7 @@ html.together-compose.together-kb .chat-slot {
   min-height: var(--vvh, 100dvh);
   overflow: visible;
   align-content: start;
-  grid-template-rows: 3rem;
+  grid-template-rows: var(--mark-row, 3rem);
   grid-auto-rows: auto;
 }
 
@@ -1390,7 +1410,7 @@ html.together-compose.together-kb .chat-slot {
   }
   .board.board-doors {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: 3rem minmax(14rem, 1fr) minmax(14rem, 1fr) auto auto auto;
+    grid-template-rows: var(--mark-row, 3rem) minmax(14rem, 1fr) minmax(14rem, 1fr) auto auto auto;
     min-height: 100svh;
     height: var(--vvh, 100dvh);
   }
@@ -1403,7 +1423,7 @@ html.together-compose.together-kb .chat-slot {
     overflow: hidden;
   }
   .board.board-doors.has-resume {
-    grid-template-rows: 3rem minmax(10rem, auto) minmax(12rem, 1fr) minmax(12rem, 1fr) auto auto auto;
+    grid-template-rows: var(--mark-row, 3rem) minmax(10rem, auto) minmax(12rem, 1fr) minmax(12rem, 1fr) auto auto auto;
   }
   .board.board-doors > .cell-resume {
     grid-column: 1 / 13;
@@ -1422,7 +1442,7 @@ html.together-compose.together-kb .chat-slot {
     grid-column: 1 / 13;
   }
   .board.board-doors.is-searching {
-    grid-template-rows: 3rem;
+    grid-template-rows: var(--mark-row, 3rem);
     height: auto;
     max-height: none;
   }

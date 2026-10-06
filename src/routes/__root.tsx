@@ -1,10 +1,21 @@
-import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
-import { useEffect } from "react";
+import {
+  createRootRoute,
+  HeadContent,
+  Outlet,
+  Scripts,
+  useRouterState,
+} from "@tanstack/react-router";
+import { useEffect, useLayoutEffect } from "react";
 import { AuthProvider } from "@/lib/auth/provider";
 import { DeferredRemoteSync } from "@/components/deferred-remote-sync";
 import { OfflineMark } from "@/components/offline-mark";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { APP_DESCRIPTION, APP_NAME, WORDMARK, withBase } from "@/lib/site";
+import {
+  PAGE_PAPER,
+  applyStatusBarColorToDocument,
+  readChromeBackground,
+} from "@/lib/status-bar-color";
 import { attachVisualViewport } from "@/lib/vvh";
 import appCss from "../styles.css?url";
 
@@ -22,6 +33,20 @@ function BootMark() {
     document.documentElement.setAttribute("data-boot", "ready");
   }, []);
   return null;
+}
+
+/**
+ * Safari: `theme-color` follows the page. Installed PWA: the strip paints the
+ * safe area (deepened only when white status glyphs would fail). Daylight owns
+ * the color while a live reader frame is on screen.
+ */
+function StatusBarSync() {
+  const pathname = useRouterState({ select: (state) => state.location.pathname });
+  useLayoutEffect(() => {
+    if (document.querySelector('[data-daylight]:not([data-daylight="off"])')) return;
+    applyStatusBarColorToDocument(readChromeBackground(document) ?? PAGE_PAPER);
+  }, [pathname]);
+  return <div className="status-bar-fill" aria-hidden="true" />;
 }
 
 export const Route = createRootRoute({
@@ -44,7 +69,7 @@ export const Route = createRootRoute({
       { name: "theme-color", content: "#F3F1EB" },
       { name: "mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
-      { name: "apple-mobile-web-app-status-bar-style", content: "default" },
+      { name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
       { name: "apple-mobile-web-app-title", content: APP_NAME },
       { name: "application-name", content: APP_NAME },
     ],
@@ -85,6 +110,7 @@ export const Route = createRootRoute({
       </head>
       <body>
         <PreviewHostBridge />
+        <StatusBarSync />
         <BootMark />
         <VisualViewport />
         <DeferredRemoteSync />
