@@ -19,7 +19,7 @@
       "id": "s1",
       "title": "Trespassers",
       "place": "Trespassers",
-      "reentry": "Will BE",
+      "reentry": "Will Be",
       "prompt": "A word from this stretch."
     },
     {
@@ -83,7 +83,7 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "Will BE"
+      "text": "Will Be"
     },
     {
       "id": "s1-1",
@@ -1093,7 +1093,7 @@
     {
       "id": "s4-61",
       "sceneId": "s4",
-      "text": "“BAD Rocket? BAD Rocket?” he said, as he whirled through the air; “impossible! Grand Rocket, that is what the man said. BAD and Grand sound very much the same, indeed they often are the same”; and he fell into the mud."
+      "text": "“BAD Rocket? BAD Rocket?” he said, as he whirled through the air; “impossible! GRAND Rocket, that is what the man said. BAD and GRAND sound very much the same, indeed they often are the same”; and he fell into the mud."
     },
     {
       "id": "s4-62",
@@ -1243,7 +1243,7 @@
     {
       "id": "s4-91",
       "sceneId": "s4",
-      "text": "“OLD Stick!” said the Rocket, “impossible! Gold Stick, that is what he said. Gold Stick is very complimentary. In fact, he mistakes me for one of the Court dignitaries!”"
+      "text": "“OLD Stick!” said the Rocket, “impossible! GOLD Stick, that is what he said. Gold Stick is very complimentary. In fact, he mistakes me for one of the Court dignitaries!”"
     },
     {
       "id": "s4-92",
@@ -1323,7 +1323,7 @@
     {
       "id": "s4-107",
       "sceneId": "s4",
-      "text": "Printed by Ballantyne & CO. Limited Tavistock Street, Covent Garden, London"
+      "text": "Printed by Ballantyne & Co. Limited Tavistock Street, Covent Garden, London"
     },
     {
       "id": "s4-108",

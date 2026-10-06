@@ -26,7 +26,7 @@
       "id": "s2",
       "title": "Chapter III — The Recruit",
       "place": "Chapter III — The Recruit",
-      "reentry": "THE Recruit",
+      "reentry": "The Recruit",
       "prompt": "What does the poem hold?"
     },
     {
@@ -201,14 +201,14 @@
       "id": "s27",
       "title": "Chapter XXVIII — The Welsh Marches",
       "place": "Chapter XXVIII — The Welsh Marches",
-      "reentry": "THE Welsh Marches",
+      "reentry": "The Welsh Marches",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s28",
       "title": "Chapter XXIX — The Lent Lily",
       "place": "Chapter XXIX — The Lent Lily",
-      "reentry": "THE Lent Lily",
+      "reentry": "The Lent Lily",
       "prompt": "What does the poem hold?"
     },
     {
@@ -243,7 +243,7 @@
       "id": "s33",
       "title": "Chapter XXXIV — The New Mistress",
       "place": "Chapter XXXIV — The New Mistress",
-      "reentry": "THE NEW Mistress",
+      "reentry": "The New Mistress",
       "prompt": "What does the poem hold?"
     },
     {
@@ -299,14 +299,14 @@
       "id": "s41",
       "title": "Chapter XLII — The Merry Guide",
       "place": "Chapter XLII — The Merry Guide",
-      "reentry": "THE Merry Guide",
+      "reentry": "The Merry Guide",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s42",
       "title": "Chapter XLIII — The Immortal Part",
       "place": "Chapter XLIII — The Immortal Part",
-      "reentry": "THE Immortal Part",
+      "reentry": "The Immortal Part",
       "prompt": "What does the poem hold?"
     },
     {
@@ -334,7 +334,7 @@
       "id": "s46",
       "title": "Chapter XLVII — The Carpenter's Son",
       "place": "Chapter XLVII — The Carpenter's Son",
-      "reentry": "THE Carpenter'S SON",
+      "reentry": "The Carpenter's Son",
       "prompt": "What does the poem hold?"
     },
     {
@@ -376,7 +376,7 @@
       "id": "s52",
       "title": "Chapter LIII — The True Lover",
       "place": "Chapter LIII — The True Lover",
-      "reentry": "THE True Lover",
+      "reentry": "The True Lover",
       "prompt": "What does the poem hold?"
     },
     {
@@ -397,7 +397,7 @@
       "id": "s55",
       "title": "Chapter LVI — The Day of Battle",
       "place": "Chapter LVI — The Day of Battle",
-      "reentry": "THE DAY OF Battle",
+      "reentry": "The Day of Battle",
       "prompt": "What does the poem hold?"
     },
     {
@@ -418,7 +418,7 @@
       "id": "s58",
       "title": "Chapter LIX — The Isle of Portland",
       "place": "Chapter LIX — The Isle of Portland",
-      "reentry": "THE Isle OF Portland",
+      "reentry": "The Isle of Portland",
       "prompt": "What does the poem hold?"
     },
     {
@@ -514,7 +514,7 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "THE Recruit"
+      "text": "The Recruit"
     },
     {
       "id": "s2-1",
@@ -1094,7 +1094,7 @@
     {
       "id": "s27-0",
       "sceneId": "s27",
-      "text": "THE Welsh Marches"
+      "text": "The Welsh Marches"
     },
     {
       "id": "s27-1",
@@ -1144,7 +1144,7 @@
     {
       "id": "s28-0",
       "sceneId": "s28",
-      "text": "THE Lent Lily"
+      "text": "The Lent Lily"
     },
     {
       "id": "s28-1",
@@ -1249,7 +1249,7 @@
     {
       "id": "s33-0",
       "sceneId": "s33",
-      "text": "THE NEW Mistress"
+      "text": "The New Mistress"
     },
     {
       "id": "s33-1",
@@ -1379,7 +1379,7 @@
     {
       "id": "s41-0",
       "sceneId": "s41",
-      "text": "THE Merry Guide"
+      "text": "The Merry Guide"
     },
     {
       "id": "s41-1",
@@ -1459,7 +1459,7 @@
     {
       "id": "s42-0",
       "sceneId": "s42",
-      "text": "THE Immortal Part"
+      "text": "The Immortal Part"
     },
     {
       "id": "s42-1",
@@ -1574,7 +1574,7 @@
     {
       "id": "s46-0",
       "sceneId": "s46",
-      "text": "THE Carpenter'S SON"
+      "text": "The Carpenter's Son"
     },
     {
       "id": "s46-1",
@@ -1709,7 +1709,7 @@
     {
       "id": "s52-0",
       "sceneId": "s52",
-      "text": "THE True Lover"
+      "text": "The True Lover"
     },
     {
       "id": "s52-1",
@@ -1789,7 +1789,7 @@
     {
       "id": "s55-0",
       "sceneId": "s55",
-      "text": "THE DAY OF Battle"
+      "text": "The Day of Battle"
     },
     {
       "id": "s55-1",
@@ -1834,7 +1834,7 @@
     {
       "id": "s58-0",
       "sceneId": "s58",
-      "text": "THE Isle OF Portland"
+      "text": "The Isle of Portland"
     },
     {
       "id": "s58-1",

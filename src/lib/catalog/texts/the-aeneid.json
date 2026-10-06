@@ -12,84 +12,84 @@
       "id": "s0",
       "title": "Book I",
       "place": "Book I",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s1",
       "title": "Book II",
       "place": "Book II",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s2",
       "title": "Book III",
       "place": "Book III",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s3",
       "title": "Book IV",
       "place": "Book IV",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s4",
       "title": "Book V",
       "place": "Book V",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s5",
       "title": "Book VI",
       "place": "Book VI",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s6",
       "title": "Book VII",
       "place": "Book VII",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s7",
       "title": "Book VIII",
       "place": "Book VIII",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s8",
       "title": "Book IX",
       "place": "Book IX",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s9",
       "title": "Book X",
       "place": "Book X",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s10",
       "title": "Book XI",
       "place": "Book XI",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s11",
       "title": "Book XII",
       "place": "Book XII",
-      "reentry": "THE Argument.",
+      "reentry": "The Argument.",
       "prompt": "What does the poem hold?"
     }
   ],
@@ -97,7 +97,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s0-1",
@@ -292,7 +292,7 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s1-1",
@@ -437,7 +437,7 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s2-1",
@@ -617,7 +617,7 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s3-1",
@@ -842,7 +842,7 @@
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s4-1",
@@ -1042,7 +1042,7 @@
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s5-1",
@@ -1207,7 +1207,7 @@
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s6-1",
@@ -1442,7 +1442,7 @@
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s7-1",
@@ -1577,7 +1577,7 @@
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s8-1",
@@ -1857,7 +1857,7 @@
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s9-1",
@@ -2202,7 +2202,7 @@
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s10-1",
@@ -2467,7 +2467,7 @@
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "THE Argument."
+      "text": "The Argument."
     },
     {
       "id": "s11-1",

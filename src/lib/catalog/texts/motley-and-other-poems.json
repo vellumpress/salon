@@ -12,14 +12,14 @@
       "id": "s0",
       "title": "The Cage",
       "place": "The Cage",
-      "reentry": "THE Revenant Music",
+      "reentry": "The Revenant Music",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s1",
       "title": "The Remonstrance",
       "place": "The Remonstrance",
-      "reentry": "Nocturne THE Exile",
+      "reentry": "Nocturne the Exile",
       "prompt": "What does the poem hold?"
     },
     {
@@ -33,14 +33,14 @@
       "id": "s3",
       "title": "Eyes",
       "place": "Eyes",
-      "reentry": "Life THE Disguise",
+      "reentry": "Life the Disguise",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s4",
       "title": "Vain Questioning",
       "place": "Vain Questioning",
-      "reentry": "Vigil THE OLD MEN",
+      "reentry": "Vigil the Old Men",
       "prompt": "What does the poem hold?"
     },
     {
@@ -82,14 +82,14 @@
       "id": "s10",
       "title": "For All the Grief",
       "place": "For All the Grief",
-      "reentry": "THE Scribe Fare Well",
+      "reentry": "The Scribe Fare Well",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s11",
       "title": "The Little Salamander",
       "place": "The Little Salamander",
-      "reentry": "TO Margot",
+      "reentry": "To Margot",
       "prompt": "What does the poem hold?"
     },
     {
@@ -2617,12 +2617,12 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "THE Revenant Music"
+      "text": "The Revenant Music"
     },
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "Nocturne THE Exile"
+      "text": "Nocturne the Exile"
     },
     {
       "id": "s2-0",
@@ -2632,12 +2632,12 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "Life THE Disguise"
+      "text": "Life the Disguise"
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "Vigil THE OLD MEN"
+      "text": "Vigil the Old Men"
     },
     {
       "id": "s5-0",
@@ -2667,12 +2667,12 @@
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "THE Scribe Fare Well"
+      "text": "The Scribe Fare Well"
     },
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "TO Margot"
+      "text": "To Margot"
     },
     {
       "id": "s12-0",

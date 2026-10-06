@@ -19,7 +19,7 @@
       "id": "s1",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "THE Broom-Tree",
+      "reentry": "The Broom-Tree",
       "prompt": "A word from this stretch."
     },
     {
@@ -47,7 +47,7 @@
       "id": "s5",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "THE Saffron-Flower",
+      "reentry": "The Saffron-Flower",
       "prompt": "A word from this stretch."
     },
     {
@@ -61,7 +61,7 @@
       "id": "s7",
       "title": "Chapter VIII",
       "place": "Chapter VIII",
-      "reentry": "THE Flower Feast",
+      "reentry": "The Flower Feast",
       "prompt": "A word from this stretch."
     },
     {
@@ -421,7 +421,7 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "THE Broom-Tree"
+      "text": "The Broom-Tree"
     },
     {
       "id": "s1-1",
@@ -2236,7 +2236,7 @@
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "THE Saffron-Flower"
+      "text": "The Saffron-Flower"
     },
     {
       "id": "s5-1",
@@ -2836,7 +2836,7 @@
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "THE Flower Feast"
+      "text": "The Flower Feast"
     },
     {
       "id": "s7-1",

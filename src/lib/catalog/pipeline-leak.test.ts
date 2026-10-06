@@ -496,15 +496,7 @@ test("reader intros and their source copy carry no staff skip/sit instructions",
  * the signature they trip. The allowlist must shrink: an entry that no longer
  * trips fails the test so it gets removed.
  */
-const SPEAKER_PREFIX_PENDING: Record<string, string> = {
-  "faust-part-i": "verse drama filed as poem; 96 cue lines carry the previous speaker (\"Poet: MERRY-ANDREW\")",
-  "the-hesperides-and-noble-numbers": "\"Epig.\" read as a speaker; Hunger run of 269; 81 prefixed headings",
-  "the-fugitive": "Devayani on 28% of breaths, a run of 186 across unrelated poems",
-  limbo: "Henrika runs 545 breaths across Happily Ever After",
-  "the-beautiful-and-damned": "Otis runs 634 breaths over narrative; Muriel/Maury/Adam Patch runs too",
-  "the-wild-swans-at-coole": "Aherne/Ille prefixed on poem headings",
-  "song-of-songs": "cue lines (\"Solomon: THE SHULAMITE.\") carry the previous speaker",
-};
+const SPEAKER_PREFIX_PENDING: Record<string, string> = {};
 
 const SPEAKER_LABEL = /^([A-Z][\w’'.-]*(?: [A-Z][\w’'.-]*){0,3}): \S/;
 const LABELLED_HEADING = /^[^:]{1,40}: [A-Z0-9][A-Z0-9 .,'’-]{3,}$/;
@@ -588,6 +580,7 @@ const BODY_RESIDUE: { name: string; pattern: RegExp }[] = [
   { name: "e-text note", pattern: /\be-?text\b(?! of)/i },
   { name: "transcriber's note heading", pattern: /^\W*transcriber(?:[’']s)? (?:notes?|changes)\W*$/i },
   { name: "typo list", pattern: /Typographical errors corrected/i },
+  { name: "e-book production notes", pattern: /Production notes for e-?Book edition/i },
   { name: "producer credit", pattern: /^\W*(?:Produced|Prepared|Transcribed|Scanned|Digitized) (?:by|from) [A-Z0-9]|File was produced from images/ },
   { name: "Internet Archive / pglaf", pattern: /\bInternet Archive\b|archive\.org\/details|pglaf\.org/i },
   { name: "transcription note", pattern: /Lines longer than \d+ characters|\bThis transcription is based\b|^\W*Note on text:/i },
@@ -632,10 +625,9 @@ const CARD_OPENING_RESIDUE: { name: string; pattern: RegExp }[] = [
   { name: "copyright / imprint", pattern: /^\W*(?:Copyright|Printed in|All Rights Reserved|This volume was first published)\b|^[A-Z][\w&.,' ]+ (?:Company|Co\.|Press)\b.*\b1[89]\d\d$/i },
 ];
 
-// Tier B batch pins require these openings to equal breath 0, and breath 0 is
-// the printed title page (copyright line / intro byline). Fixing the card means
-// cutting front matter at the head, which shifts saved positions: listed, not cut.
-const CARD_OPENING_PENDING = new Set(["the-forerunner-his-parables-and-poems", "skipper-worse"]);
+// Title-page heads stay in the book (no saved position moves); the leading
+// scenes are tagged front, so the card and a fresh Sit open on the first line.
+const CARD_OPENING_PENDING = new Set<string>([]);
 
 test("card openings are the book's first line, not producer or title-page residue", () => {
   const hits: string[] = [];

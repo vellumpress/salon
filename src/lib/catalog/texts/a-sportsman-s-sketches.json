@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Chapter I — Hor and Kalinitch",
       "place": "Chapter I — Hor and Kalinitch",
-      "reentry": "HOR AND Kalinitch",
+      "reentry": "Hor and Kalinitch",
       "prompt": "A word from this stretch."
     },
     {
@@ -33,14 +33,14 @@
       "id": "s3",
       "title": "Chapter IV — The District Doctor",
       "place": "Chapter IV — The District Doctor",
-      "reentry": "THE District Doctor",
+      "reentry": "The District Doctor",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
       "title": "Chapter V — My Neighbour Radilov",
       "place": "Chapter V — My Neighbour Radilov",
-      "reentry": "MY Neighbour Radilov",
+      "reentry": "My Neighbour Radilov",
       "prompt": "A word from this stretch."
     },
     {
@@ -75,14 +75,14 @@
       "id": "s9",
       "title": "Chapter X — The Agent",
       "place": "Chapter X — The Agent",
-      "reentry": "THE Agent",
+      "reentry": "The Agent",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
       "title": "Chapter XI — The Counting-House",
       "place": "Chapter XI — The Counting-House",
-      "reentry": "THE Counting-House",
+      "reentry": "The Counting-House",
       "prompt": "A word from this stretch."
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "HOR AND Kalinitch"
+      "text": "Hor and Kalinitch"
     },
     {
       "id": "s0-1",
@@ -1296,7 +1296,7 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "THE District Doctor"
+      "text": "The District Doctor"
     },
     {
       "id": "s3-1",
@@ -1356,7 +1356,7 @@
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "MY Neighbour Radilov"
+      "text": "My Neighbour Radilov"
     },
     {
       "id": "s4-1",
@@ -4546,7 +4546,7 @@
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "THE Agent"
+      "text": "The Agent"
     },
     {
       "id": "s9-1",
@@ -5026,7 +5026,7 @@
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "THE Counting-House"
+      "text": "The Counting-House"
     },
     {
       "id": "s10-1",

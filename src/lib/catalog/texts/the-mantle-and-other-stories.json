@@ -47,7 +47,7 @@
       "id": "s5",
       "title": "Chapter II — The Village Headman",
       "place": "Chapter II — The Village Headman",
-      "reentry": "THE Village Headman",
+      "reentry": "The Village Headman",
       "prompt": "A word from this stretch."
     },
     {
@@ -68,14 +68,14 @@
       "id": "s8",
       "title": "Chapter V — The Drowned Girl",
       "place": "Chapter V — The Drowned Girl",
-      "reentry": "THE Drowned Girl",
+      "reentry": "The Drowned Girl",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s9",
       "title": "Chapter VI — The Awakening",
       "place": "Chapter VI — The Awakening",
-      "reentry": "THE Awakening",
+      "reentry": "The Awakening",
       "prompt": "A word from this stretch."
     },
     {
@@ -1052,7 +1052,7 @@
     {
       "id": "s3-4",
       "sceneId": "s3",
-      "text": "Memoirs OF A Madman"
+      "text": "Memoirs of a Madman"
     },
     {
       "id": "s3-5",
@@ -1737,7 +1737,7 @@
     {
       "id": "s3-141",
       "sceneId": "s3",
-      "text": "A MAY Night"
+      "text": "A May Night"
     },
     {
       "id": "s4-0",
@@ -1962,7 +1962,7 @@
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "THE Village Headman"
+      "text": "The Village Headman"
     },
     {
       "id": "s5-1",
@@ -2627,7 +2627,7 @@
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "THE Drowned Girl"
+      "text": "The Drowned Girl"
     },
     {
       "id": "s8-1",
@@ -2777,7 +2777,7 @@
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "THE Awakening"
+      "text": "The Awakening"
     },
     {
       "id": "s9-1",

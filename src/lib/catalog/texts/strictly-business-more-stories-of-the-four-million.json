@@ -26,21 +26,21 @@
       "id": "s2",
       "title": "Chapter III — Babes in the Jungle",
       "place": "Chapter III — Babes in the Jungle",
-      "reentry": "Babes IN THE Jungle",
+      "reentry": "Babes in the Jungle",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
       "title": "Chapter IV — The Day Resurgent",
       "place": "Chapter IV — The Day Resurgent",
-      "reentry": "THE DAY Resurgent",
+      "reentry": "The Day Resurgent",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
       "title": "Chapter V — The Fifth Wheel",
       "place": "Chapter V — The Fifth Wheel",
-      "reentry": "THE Fifth Wheel",
+      "reentry": "The Fifth Wheel",
       "prompt": "A word from this stretch."
     },
     {
@@ -54,7 +54,7 @@
       "id": "s6",
       "title": "Chapter VII — The Robe of Peace",
       "place": "Chapter VII — The Robe of Peace",
-      "reentry": "THE Robe OF Peace",
+      "reentry": "The Robe of Peace",
       "prompt": "A word from this stretch."
     },
     {
@@ -68,28 +68,28 @@
       "id": "s8",
       "title": "Chapter IX — The Call of the Tame",
       "place": "Chapter IX — The Call of the Tame",
-      "reentry": "THE Call OF THE Tame",
+      "reentry": "The Call of the Tame",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s9",
       "title": "Chapter X — The Unknown Quantity",
       "place": "Chapter X — The Unknown Quantity",
-      "reentry": "THE Unknown Quantity",
+      "reentry": "The Unknown Quantity",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
-      "title": "Chapter XI — The Thing’S the Play",
-      "place": "Chapter XI — The Thing’S the Play",
-      "reentry": "THE Thing’S THE Play",
+      "title": "Chapter XI — The Thing’s the Play",
+      "place": "Chapter XI — The Thing’s the Play",
+      "reentry": "The Thing’s the Play",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
       "title": "Chapter XII — A Ramble in Aphasia",
       "place": "Chapter XII — A Ramble in Aphasia",
-      "reentry": "A Ramble IN Aphasia",
+      "reentry": "A Ramble in Aphasia",
       "prompt": "A word from this stretch."
     },
     {
@@ -110,7 +110,7 @@
       "id": "s14",
       "title": "Chapter XV — A Bird of Bagdad",
       "place": "Chapter XV — A Bird of Bagdad",
-      "reentry": "A Bird OF Bagdad",
+      "reentry": "A Bird of Bagdad",
       "prompt": "A word from this stretch."
     },
     {
@@ -138,35 +138,35 @@
       "id": "s18",
       "title": "Chapter XIX — Proof of the Pudding",
       "place": "Chapter XIX — Proof of the Pudding",
-      "reentry": "Proof OF THE Pudding",
+      "reentry": "Proof of the Pudding",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s19",
-      "title": "Chapter XX — Past One at Rooney’S",
-      "place": "Chapter XX — Past One at Rooney’S",
-      "reentry": "Past ONE AT Rooney’S",
+      "title": "Chapter XX — Past One at Rooney’s",
+      "place": "Chapter XX — Past One at Rooney’s",
+      "reentry": "Past One at Rooney’s",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s20",
       "title": "Chapter XXI — The Venturers",
       "place": "Chapter XXI — The Venturers",
-      "reentry": "THE Venturers",
+      "reentry": "The Venturers",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s21",
       "title": "Chapter XXII — The Duel",
       "place": "Chapter XXII — The Duel",
-      "reentry": "THE Duel",
+      "reentry": "The Duel",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s22",
       "title": "Chapter XXIII — “What You Want”",
       "place": "Chapter XXIII — “What You Want”",
-      "reentry": "“What YOU Want”",
+      "reentry": "“WHAT YOU WANT”",
       "prompt": "A word from this stretch."
     }
   ],
@@ -889,7 +889,7 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "Babes IN THE Jungle"
+      "text": "Babes in the Jungle"
     },
     {
       "id": "s2-1",
@@ -1134,7 +1134,7 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "THE DAY Resurgent"
+      "text": "The Day Resurgent"
     },
     {
       "id": "s3-1",
@@ -1454,7 +1454,7 @@
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "THE Fifth Wheel"
+      "text": "The Fifth Wheel"
     },
     {
       "id": "s4-1",
@@ -2294,7 +2294,7 @@
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "THE Robe OF Peace"
+      "text": "The Robe of Peace"
     },
     {
       "id": "s6-1",
@@ -2609,7 +2609,7 @@
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "THE Call OF THE Tame"
+      "text": "The Call of the Tame"
     },
     {
       "id": "s8-1",
@@ -2884,7 +2884,7 @@
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "THE Unknown Quantity"
+      "text": "The Unknown Quantity"
     },
     {
       "id": "s9-1",
@@ -3154,7 +3154,7 @@
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "THE Thing’S THE Play"
+      "text": "The Thing’s the Play"
     },
     {
       "id": "s10-1",
@@ -3429,7 +3429,7 @@
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "A Ramble IN Aphasia"
+      "text": "A Ramble in Aphasia"
     },
     {
       "id": "s11-1",
@@ -4269,7 +4269,7 @@
     {
       "id": "s12-58",
       "sceneId": "s12",
-      "text": "For the first time I saw him smile. He knew; *he knew*. HE Knew."
+      "text": "For the first time I saw him smile. He knew; *he knew*. HE KNEW."
     },
     {
       "id": "s12-59",
@@ -4844,7 +4844,7 @@
     {
       "id": "s14-0",
       "sceneId": "s14",
-      "text": "A Bird OF Bagdad"
+      "text": "A Bird of Bagdad"
     },
     {
       "id": "s14-1",
@@ -4954,7 +4954,7 @@
     {
       "id": "s14-22",
       "sceneId": "s14",
-      "text": "The Story of the Young Man and the Harness Maker’S Riddle"
+      "text": "The Story of the Young Man and the Harness Maker’s Riddle"
     },
     {
       "id": "s14-23",
@@ -6334,7 +6334,7 @@
     {
       "id": "s18-0",
       "sceneId": "s18",
-      "text": "Proof OF THE Pudding"
+      "text": "Proof of the Pudding"
     },
     {
       "id": "s18-1",
@@ -6759,7 +6759,7 @@
     {
       "id": "s19-0",
       "sceneId": "s19",
-      "text": "Past ONE AT Rooney’S"
+      "text": "Past One at Rooney’s"
     },
     {
       "id": "s19-1",
@@ -7344,7 +7344,7 @@
     {
       "id": "s20-0",
       "sceneId": "s20",
-      "text": "THE Venturers"
+      "text": "The Venturers"
     },
     {
       "id": "s20-1",
@@ -7774,7 +7774,7 @@
     {
       "id": "s21-0",
       "sceneId": "s21",
-      "text": "THE Duel"
+      "text": "The Duel"
     },
     {
       "id": "s21-1",
@@ -7909,7 +7909,7 @@
     {
       "id": "s22-0",
       "sceneId": "s22",
-      "text": "“What YOU Want”"
+      "text": "“WHAT YOU WANT”"
     },
     {
       "id": "s22-1",

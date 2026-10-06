@@ -3379,7 +3379,7 @@
       "id": "s481",
       "title": "Harbarthsljoth",
       "place": "Harbarthsljoth",
-      "reentry": "THE Poem OF Harbarth",
+      "reentry": "The Poem of Harbarth",
       "prompt": "What does the poem hold?"
     },
     {
@@ -3932,7 +3932,7 @@
       "id": "s560",
       "title": "Hymiskvitha",
       "place": "Hymiskvitha",
-      "reentry": "THE LAY OF Hymir",
+      "reentry": "The Lay of Hymir",
       "prompt": "What does the poem hold?"
     },
     {
@@ -4275,7 +4275,7 @@
       "id": "s609",
       "title": "Lokasenna",
       "place": "Lokasenna",
-      "reentry": "Loki’S Wrangling",
+      "reentry": "Loki’s Wrangling",
       "prompt": "What does the poem hold?"
     },
     {
@@ -5213,7 +5213,7 @@
       "id": "s743",
       "title": "Thrymskvitha",
       "place": "Thrymskvitha",
-      "reentry": "THE LAY OF Thrym",
+      "reentry": "The Lay of Thrym",
       "prompt": "What does the poem hold?"
     },
     {
@@ -5479,7 +5479,7 @@
       "id": "s781",
       "title": "Alvissmol",
       "place": "Alvissmol",
-      "reentry": "THE Ballad OF Alvis",
+      "reentry": "The Ballad of Alvis",
       "prompt": "What does the poem hold?"
     },
     {
@@ -5927,7 +5927,7 @@
       "id": "s845",
       "title": "Baldrs Draumar",
       "place": "Baldrs Draumar",
-      "reentry": "Baldr’S Dreams",
+      "reentry": "Baldr’s Dreams",
       "prompt": "What does the poem hold?"
     },
     {
@@ -6095,7 +6095,7 @@
       "id": "s869",
       "title": "Rigsthula",
       "place": "Rigsthula",
-      "reentry": "THE Song OF RIG",
+      "reentry": "The Song of Rig",
       "prompt": "What does the poem hold?"
     },
     {
@@ -6515,7 +6515,7 @@
       "id": "s929",
       "title": "Hyndluljoth",
       "place": "Hyndluljoth",
-      "reentry": "THE Poem OF Hyndla",
+      "reentry": "The Poem of Hyndla",
       "prompt": "What does the poem hold?"
     },
     {
@@ -6970,7 +6970,7 @@
       "id": "s994",
       "title": "I. Grougaldr",
       "place": "I. Grougaldr",
-      "reentry": "Groa’S Spell",
+      "reentry": "Groa’s Spell",
       "prompt": "What does the poem hold?"
     },
     {
@@ -7138,7 +7138,7 @@
       "id": "s1018",
       "title": "Ii. Fjolsvinnsmol",
       "place": "Ii. Fjolsvinnsmol",
-      "reentry": "THE LAY OF Fjolsvith",
+      "reentry": "The Lay of Fjolsvith",
       "prompt": "What does the poem hold?"
     },
     {
@@ -7831,7 +7831,7 @@
       "id": "s1117",
       "title": "Volume Ii",
       "place": "Volume Ii",
-      "reentry": "Lays OF THE Heroes",
+      "reentry": "Lays of the Heroes",
       "prompt": "What does the poem hold?"
     },
     {
@@ -9924,7 +9924,7 @@
       "id": "s1416",
       "title": "Fra Dautha Sinfjotla",
       "place": "Fra Dautha Sinfjotla",
-      "reentry": "OF Sinfjotli’S Death",
+      "reentry": "Of Sinfjotli’s Death",
       "prompt": "What does the poem hold?"
     },
     {
@@ -9952,7 +9952,7 @@
       "id": "s1420",
       "title": "Gripisspo",
       "place": "Gripisspo",
-      "reentry": "Gripir’S Prophecy",
+      "reentry": "Gripir’s Prophecy",
       "prompt": "What does the poem hold?"
     },
     {
@@ -10715,7 +10715,7 @@
       "id": "s1529",
       "title": "Reginsmol",
       "place": "Reginsmol",
-      "reentry": "THE Ballad OF Regin",
+      "reentry": "The Ballad of Regin",
       "prompt": "What does the poem hold?"
     },
     {
@@ -11023,7 +11023,7 @@
       "id": "s1573",
       "title": "Fafnismol",
       "place": "Fafnismol",
-      "reentry": "THE Ballad OF Fafnir",
+      "reentry": "The Ballad of Fafnir",
       "prompt": "What does the poem hold?"
     },
     {
@@ -13060,7 +13060,7 @@
       "id": "s1864",
       "title": "Helreith Brynhildar",
       "place": "Helreith Brynhildar",
-      "reentry": "Brynhild’S Hell-Ride",
+      "reentry": "Brynhild’s Hell-Ride",
       "prompt": "What does the poem hold?"
     },
     {
@@ -13767,7 +13767,7 @@
       "id": "s1965",
       "title": "Oddrunargratr",
       "place": "Oddrunargratr",
-      "reentry": "THE Lament OF Oddrun",
+      "reentry": "The Lament of Oddrun",
       "prompt": "What does the poem hold?"
     },
     {
@@ -14628,7 +14628,7 @@
       "id": "s2088",
       "title": "Guthrunarhvot",
       "place": "Guthrunarhvot",
-      "reentry": "Guthrun’S Inciting",
+      "reentry": "Guthrun’s Inciting",
       "prompt": "What does the poem hold?"
     },
     {
@@ -22801,7 +22801,7 @@
     {
       "id": "s481-0",
       "sceneId": "s481",
-      "text": "THE Poem OF Harbarth"
+      "text": "The Poem of Harbarth"
     },
     {
       "id": "s482-0",
@@ -23406,7 +23406,7 @@
     {
       "id": "s560-0",
       "sceneId": "s560",
-      "text": "THE LAY OF Hymir"
+      "text": "The Lay of Hymir"
     },
     {
       "id": "s561-0",
@@ -23996,7 +23996,7 @@
     {
       "id": "s609-0",
       "sceneId": "s609",
-      "text": "Loki’S Wrangling"
+      "text": "Loki’s Wrangling"
     },
     {
       "id": "s610-0",
@@ -24946,7 +24946,7 @@
     {
       "id": "s743-0",
       "sceneId": "s743",
-      "text": "THE LAY OF Thrym"
+      "text": "The Lay of Thrym"
     },
     {
       "id": "s744-0",
@@ -25386,7 +25386,7 @@
     {
       "id": "s781-0",
       "sceneId": "s781",
-      "text": "THE Ballad OF Alvis"
+      "text": "The Ballad of Alvis"
     },
     {
       "id": "s782-0",
@@ -25831,7 +25831,7 @@
     {
       "id": "s845-0",
       "sceneId": "s845",
-      "text": "Baldr’S Dreams"
+      "text": "Baldr’s Dreams"
     },
     {
       "id": "s846-0",
@@ -26051,7 +26051,7 @@
     {
       "id": "s869-0",
       "sceneId": "s869",
-      "text": "THE Song OF RIG"
+      "text": "The Song of Rig"
     },
     {
       "id": "s870-0",
@@ -26776,7 +26776,7 @@
     {
       "id": "s929-0",
       "sceneId": "s929",
-      "text": "THE Poem OF Hyndla"
+      "text": "The Poem of Hyndla"
     },
     {
       "id": "s930-0",
@@ -27511,7 +27511,7 @@
     {
       "id": "s994-0",
       "sceneId": "s994",
-      "text": "Groa’S Spell"
+      "text": "Groa’s Spell"
     },
     {
       "id": "s995-0",
@@ -27676,7 +27676,7 @@
     {
       "id": "s1018-0",
       "sceneId": "s1018",
-      "text": "THE LAY OF Fjolsvith"
+      "text": "The Lay of Fjolsvith"
     },
     {
       "id": "s1018-1",
@@ -28331,7 +28331,7 @@
     {
       "id": "s1117-0",
       "sceneId": "s1117",
-      "text": "Lays OF THE Heroes"
+      "text": "Lays of the Heroes"
     },
     {
       "id": "s1118-0",
@@ -31511,7 +31511,7 @@
     {
       "id": "s1416-0",
       "sceneId": "s1416",
-      "text": "OF Sinfjotli’S Death"
+      "text": "Of Sinfjotli’s Death"
     },
     {
       "id": "s1417-0",
@@ -31551,7 +31551,7 @@
     {
       "id": "s1420-0",
       "sceneId": "s1420",
-      "text": "Gripir’S Prophecy"
+      "text": "Gripir’s Prophecy"
     },
     {
       "id": "s1421-0",
@@ -32246,7 +32246,7 @@
     {
       "id": "s1529-0",
       "sceneId": "s1529",
-      "text": "THE Ballad OF Regin"
+      "text": "The Ballad of Regin"
     },
     {
       "id": "s1530-0",
@@ -32746,7 +32746,7 @@
     {
       "id": "s1573-0",
       "sceneId": "s1573",
-      "text": "THE Ballad OF Fafnir"
+      "text": "The Ballad of Fafnir"
     },
     {
       "id": "s1574-0",
@@ -35841,7 +35841,7 @@
     {
       "id": "s1864-0",
       "sceneId": "s1864",
-      "text": "Brynhild’S Hell-Ride"
+      "text": "Brynhild’s Hell-Ride"
     },
     {
       "id": "s1865-0",
@@ -36911,7 +36911,7 @@
     {
       "id": "s1965-0",
       "sceneId": "s1965",
-      "text": "THE Lament OF Oddrun"
+      "text": "The Lament of Oddrun"
     },
     {
       "id": "s1966-0",
@@ -39036,7 +39036,7 @@
     {
       "id": "s2088-0",
       "sceneId": "s2088",
-      "text": "Guthrun’S Inciting"
+      "text": "Guthrun’s Inciting"
     },
     {
       "id": "s2089-0",

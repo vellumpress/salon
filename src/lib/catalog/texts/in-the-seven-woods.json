@@ -2161,7 +2161,7 @@
       "id": "s307",
       "title": "But one's away after a flinty heart",
       "place": "But one's away after a flinty heart",
-      "reentry": "THE Young King.",
+      "reentry": "The Young King.",
       "prompt": "What does the poem hold?"
     },
     {
@@ -2357,7 +2357,7 @@
       "id": "s335",
       "title": "What is your message?",
       "place": "What is your message?",
-      "reentry": "Young MAN.",
+      "reentry": "Young Man.",
       "prompt": "What does the poem hold?"
     },
     {
@@ -2770,7 +2770,7 @@
       "id": "s394",
       "title": "I had a fancy for",
       "place": "I had a fancy for",
-      "reentry": "Second OLD King.",
+      "reentry": "Second Old King.",
       "prompt": "What does the poem hold?"
     },
     {
@@ -2812,7 +2812,7 @@
       "id": "s400",
       "title": "For when we sent an army to her land--",
       "place": "For when we sent an army to her land--",
-      "reentry": "Second OLD King.",
+      "reentry": "Second Old King.",
       "prompt": "What does the poem hold?"
     },
     {
@@ -2889,7 +2889,7 @@
       "id": "s411",
       "title": "Would scatter them like water from a dish",
       "place": "Would scatter them like water from a dish",
-      "reentry": "Young MAN.",
+      "reentry": "Young Man.",
       "prompt": "What does the poem hold?"
     },
     {
@@ -5238,7 +5238,7 @@
     {
       "id": "s307-0",
       "sceneId": "s307",
-      "text": "THE Young King."
+      "text": "The Young King."
     },
     {
       "id": "s308-0",
@@ -5393,7 +5393,7 @@
     {
       "id": "s335-0",
       "sceneId": "s335",
-      "text": "Young MAN."
+      "text": "Young Man."
     },
     {
       "id": "s336-0",
@@ -5713,7 +5713,7 @@
     {
       "id": "s394-0",
       "sceneId": "s394",
-      "text": "Second OLD King."
+      "text": "Second Old King."
     },
     {
       "id": "s395-0",
@@ -5743,7 +5743,7 @@
     {
       "id": "s400-0",
       "sceneId": "s400",
-      "text": "Second OLD King."
+      "text": "Second Old King."
     },
     {
       "id": "s401-0",
@@ -5798,7 +5798,7 @@
     {
       "id": "s411-0",
       "sceneId": "s411",
-      "text": "Young MAN."
+      "text": "Young Man."
     },
     {
       "id": "s412-0",

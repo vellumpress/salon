@@ -9,10 +9,18 @@
   "coverAlt": "",
   "scenes": [
     {
+      "id": "s0-front",
+      "title": "Title page, contents and translator's note",
+      "place": "Title page, contents and translator's note",
+      "reentry": "The Wonderful Adventures of Nils",
+      "prompt": "A word from this stretch.",
+      "front": true
+    },
+    {
       "id": "s0",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "THE Wonderful Adventures of Nils",
+      "reentry": "THE BOY",
       "prompt": "A word from this stretch."
     },
     {
@@ -89,269 +97,269 @@
       "id": "s11",
       "title": "Section 12",
       "place": "Section 12",
-      "reentry": "Vermland AND Dalsland",
+      "reentry": "Vermland and Dalsland",
       "prompt": "A word from this stretch."
     }
   ],
   "breaths": [
     {
       "id": "s0-1",
-      "sceneId": "s0",
-      "text": "THE Wonderful Adventures of Nils"
+      "sceneId": "s0-front",
+      "text": "The Wonderful Adventures of Nils"
     },
     {
       "id": "s0-2",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "by"
     },
     {
       "id": "s0-3",
-      "sceneId": "s0",
-      "text": "Selma LAGERLÖF"
+      "sceneId": "s0-front",
+      "text": "Selma Lagerlöf"
     },
     {
       "id": "s0-4",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Translated From the Swedish By Velma Swanston Howard"
     },
     {
       "id": "s0-5",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Contents"
     },
     {
       "id": "s0-6",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Boy"
     },
     {
       "id": "s0-7",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Akka from Kebnekaise"
     },
     {
       "id": "s0-8",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Wonderful Journey of Nils"
     },
     {
       "id": "s0-9",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Glimminge Castle"
     },
     {
       "id": "s0-10",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Great Crane Dance on Kullaberg"
     },
     {
       "id": "s0-11",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "In Rainy Weather"
     },
     {
       "id": "s0-12",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Stairway with the Three Steps"
     },
     {
       "id": "s0-13",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "By Ronneby River"
     },
     {
       "id": "s0-14",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Karlskrona"
     },
     {
       "id": "s0-15",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Trip to Öland"
     },
     {
       "id": "s0-16",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Öland's Southern Point"
     },
     {
       "id": "s0-17",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Big Butterfly"
     },
     {
       "id": "s0-18",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Little Karl's Island"
     },
     {
       "id": "s0-19",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Two Cities"
     },
     {
       "id": "s0-20",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Legend of Småland"
     },
     {
       "id": "s0-21",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Crows"
     },
     {
       "id": "s0-22",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Old Peasant Woman"
     },
     {
       "id": "s0-23",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "From Taberg to Huskvarna"
     },
     {
       "id": "s0-24",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Big Bird Lake"
     },
     {
       "id": "s0-25",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Ulvåsa-Lady"
     },
     {
       "id": "s0-26",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Homespun Cloth"
     },
     {
       "id": "s0-27",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Story of Karr and Grayskin"
     },
     {
       "id": "s0-28",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Wind Witch"
     },
     {
       "id": "s0-29",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Breaking Up of the Ice"
     },
     {
       "id": "s0-30",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Thumbietot and the Bears"
     },
     {
       "id": "s0-31",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Flood"
     },
     {
       "id": "s0-32",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Dunfin"
     },
     {
       "id": "s0-33",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Stockholm"
     },
     {
       "id": "s0-34",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Gorgo the Eagle"
     },
     {
       "id": "s0-35",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "On Over Gästrikland"
     },
     {
       "id": "s0-36",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "A Day in Hälsingland"
     },
     {
       "id": "s0-37",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "In Medelpad"
     },
     {
       "id": "s0-38",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "A Morning in Ångermanland"
     },
     {
       "id": "s0-39",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Westbottom and Lapland"
     },
     {
       "id": "s0-40",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Osa, the Goose Girl, and Little Mats"
     },
     {
       "id": "s0-41",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "With the Laplanders"
     },
     {
       "id": "s0-42",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Homeward Bound"
     },
     {
       "id": "s0-43",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Legends from Härjedalen"
     },
     {
       "id": "s0-44",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Vermland and Dalsland"
     },
     {
       "id": "s0-45",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Treasure on the Island"
     },
     {
       "id": "s0-46",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Journey to Vemminghög"
     },
     {
       "id": "s0-47",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Home at Last"
     },
     {
       "id": "s0-48",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The Parting with the Wild Geese"
     },
     {
       "id": "s0-49",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "_Some of the purely geographical matter in the Swedish original of the \"Further Adventures of Nils\" has been eliminated from the English version."
     },
     {
       "id": "s0-50",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "The author has rendered valuable assistance in cutting certain chapters and abridging others. Also, with the author's approval, cuts have been made where the descriptive matter was merely of local interest."
     },
     {
       "id": "s0-51",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "But the story itself is intact."
     },
     {
       "id": "s0-52",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "V.S.H_."
     },
     {
@@ -542,7 +550,7 @@
     {
       "id": "s0-90",
       "sceneId": "s0",
-      "text": "THE Wild Geese"
+      "text": "The Wild Geese"
     },
     {
       "id": "s0-91",
@@ -827,7 +835,7 @@
     {
       "id": "s0-147",
       "sceneId": "s0",
-      "text": "THE BIG Checked Cloth"
+      "text": "The Big Checked Cloth"
     },
     {
       "id": "s0-148",
@@ -1552,7 +1560,7 @@
     {
       "id": "s1-9",
       "sceneId": "s1",
-      "text": "ON THE Farm"
+      "text": "On the Farm"
     },
     {
       "id": "s1-10",
@@ -1852,7 +1860,7 @@
     {
       "id": "s1-69",
       "sceneId": "s1",
-      "text": "IN ÖVID Cloister Park"
+      "text": "In Övid Cloister Park"
     },
     {
       "id": "s1-70",
@@ -2097,7 +2105,7 @@
     {
       "id": "s1-118",
       "sceneId": "s1",
-      "text": "Black Rats AND Gray Rats"
+      "text": "Black Rats and Gray Rats"
     },
     {
       "id": "s1-119",
@@ -2157,7 +2165,7 @@
     {
       "id": "s1-130",
       "sceneId": "s1",
-      "text": "THE Stork"
+      "text": "The Stork"
     },
     {
       "id": "s1-131",
@@ -2347,7 +2355,7 @@
     {
       "id": "s1-168",
       "sceneId": "s1",
-      "text": "THE RAT Charmer"
+      "text": "The Rat Charmer"
     },
     {
       "id": "s1-169",
@@ -2602,7 +2610,7 @@
     {
       "id": "s2-24",
       "sceneId": "s2",
-      "text": "IN Rainy Weather"
+      "text": "In Rainy Weather"
     },
     {
       "id": "s2-25",
@@ -2872,7 +2880,7 @@
     {
       "id": "s2-78",
       "sceneId": "s2",
-      "text": "BY Ronneby River"
+      "text": "By Ronneby River"
     },
     {
       "id": "s2-79",
@@ -3382,7 +3390,7 @@
     {
       "id": "s2-180",
       "sceneId": "s2",
-      "text": "THE Trip TO ÖLAND"
+      "text": "The Trip to Öland"
     },
     {
       "id": "s2-181",
@@ -3537,7 +3545,7 @@
     {
       "id": "s3-15",
       "sceneId": "s3",
-      "text": "ÖLAND'S Southern Point"
+      "text": "Öland's Southern Point"
     },
     {
       "id": "s3-16",
@@ -3757,7 +3765,7 @@
     {
       "id": "s3-59",
       "sceneId": "s3",
-      "text": "THE BIG Butterfly"
+      "text": "The Big Butterfly"
     },
     {
       "id": "s3-60",
@@ -3867,12 +3875,12 @@
     {
       "id": "s3-81",
       "sceneId": "s3",
-      "text": "Little Karl'S Island"
+      "text": "Little Karl's Island"
     },
     {
       "id": "s3-82",
       "sceneId": "s3",
-      "text": "THE Storm"
+      "text": "The Storm"
     },
     {
       "id": "s3-83",
@@ -3942,7 +3950,7 @@
     {
       "id": "s3-96",
       "sceneId": "s3",
-      "text": "THE Sheep"
+      "text": "The Sheep"
     },
     {
       "id": "s3-97",
@@ -4052,7 +4060,7 @@
     {
       "id": "s3-118",
       "sceneId": "s3",
-      "text": "Hell'S Hole"
+      "text": "Hell's Hole"
     },
     {
       "id": "s3-119",
@@ -4162,7 +4170,7 @@
     {
       "id": "s3-140",
       "sceneId": "s3",
-      "text": "TWO Cities"
+      "text": "Two Cities"
     },
     {
       "id": "s3-141",
@@ -4452,7 +4460,7 @@
     {
       "id": "s3-198",
       "sceneId": "s3",
-      "text": "THE Living City"
+      "text": "The Living City"
     },
     {
       "id": "s3-199",
@@ -4587,7 +4595,7 @@
     {
       "id": "s4-8",
       "sceneId": "s4",
-      "text": "THE Legend OF SMÅLAND"
+      "text": "The Legend of Småland"
     },
     {
       "id": "s4-9",
@@ -4722,12 +4730,12 @@
     {
       "id": "s4-35",
       "sceneId": "s4",
-      "text": "THE Crows"
+      "text": "The Crows"
     },
     {
       "id": "s4-36",
       "sceneId": "s4",
-      "text": "THE Earthen Crock"
+      "text": "The Earthen Crock"
     },
     {
       "id": "s4-37",
@@ -4827,7 +4835,7 @@
     {
       "id": "s4-56",
       "sceneId": "s4",
-      "text": "Kidnapped BY Crows"
+      "text": "Kidnapped by Crows"
     },
     {
       "id": "s4-57",
@@ -5082,7 +5090,7 @@
     {
       "id": "s4-107",
       "sceneId": "s4",
-      "text": "THE Cabin"
+      "text": "The Cabin"
     },
     {
       "id": "s4-108",
@@ -5172,7 +5180,7 @@
     {
       "id": "s4-125",
       "sceneId": "s4",
-      "text": "THE OLD Peasant Woman"
+      "text": "The Old Peasant Woman"
     },
     {
       "id": "s4-126",
@@ -5432,7 +5440,7 @@
     {
       "id": "s4-177",
       "sceneId": "s4",
-      "text": "From Taberg TO Huskvarna"
+      "text": "From Taberg to Huskvarna"
     },
     {
       "id": "s4-178",
@@ -5517,12 +5525,12 @@
     {
       "id": "s5-5",
       "sceneId": "s5",
-      "text": "THE BIG Bird Lake"
+      "text": "The Big Bird Lake"
     },
     {
       "id": "s5-6",
       "sceneId": "s5",
-      "text": "Jarro, THE Wild Duck"
+      "text": "Jarro, the Wild Duck"
     },
     {
       "id": "s5-7",
@@ -5682,7 +5690,7 @@
     {
       "id": "s5-38",
       "sceneId": "s5",
-      "text": "THE Decoy-Duck"
+      "text": "The Decoy-Duck"
     },
     {
       "id": "s5-39",
@@ -5787,7 +5795,7 @@
     {
       "id": "s5-59",
       "sceneId": "s5",
-      "text": "THE Lowering OF THE Lake"
+      "text": "The Lowering of the Lake"
     },
     {
       "id": "s5-60",
@@ -5937,7 +5945,7 @@
     {
       "id": "s5-89",
       "sceneId": "s5",
-      "text": "THE Prophecy"
+      "text": "The Prophecy"
     },
     {
       "id": "s5-90",
@@ -6132,7 +6140,7 @@
     {
       "id": "s5-128",
       "sceneId": "s5",
-      "text": "THE Homespun Cloth"
+      "text": "The Homespun Cloth"
     },
     {
       "id": "s5-129",
@@ -6412,7 +6420,7 @@
     {
       "id": "s5-184",
       "sceneId": "s5",
-      "text": "Grayskin'S Flight"
+      "text": "Grayskin's Flight"
     },
     {
       "id": "s5-185",
@@ -6887,7 +6895,7 @@
     {
       "id": "s6-36",
       "sceneId": "s6",
-      "text": "THE NUN Moths"
+      "text": "The Nun Moths"
     },
     {
       "id": "s6-37",
@@ -7182,7 +7190,7 @@
     {
       "id": "s6-95",
       "sceneId": "s6",
-      "text": "THE BIG WAR OF THE Moths"
+      "text": "The Big War of the Moths"
     },
     {
       "id": "s6-96",
@@ -7917,7 +7925,7 @@
     {
       "id": "s6-242",
       "sceneId": "s6",
-      "text": "THE Wind Witch"
+      "text": "The Wind Witch"
     },
     {
       "id": "s6-243",
@@ -7987,7 +7995,7 @@
     {
       "id": "s6-256",
       "sceneId": "s6",
-      "text": "Market EVE"
+      "text": "Market Eve"
     },
     {
       "id": "s6-257",
@@ -8737,12 +8745,12 @@
     {
       "id": "s7-59",
       "sceneId": "s7",
-      "text": "Thumbietot AND THE Bears"
+      "text": "Thumbietot and the Bears"
     },
     {
       "id": "s7-60",
       "sceneId": "s7",
-      "text": "THE Ironworks"
+      "text": "The Ironworks"
     },
     {
       "id": "s7-61",
@@ -9352,12 +9360,12 @@
     {
       "id": "s7-182",
       "sceneId": "s7",
-      "text": "THE Flood"
+      "text": "The Flood"
     },
     {
       "id": "s7-183",
       "sceneId": "s7",
-      "text": "THE Swans"
+      "text": "The Swans"
     },
     {
       "id": "s7-184",
@@ -9687,7 +9695,7 @@
     {
       "id": "s7-249",
       "sceneId": "s7",
-      "text": "THE NEW Watch-DOG"
+      "text": "The New Watch-Dog"
     },
     {
       "id": "s7-250",
@@ -10037,7 +10045,7 @@
     {
       "id": "s7-319",
       "sceneId": "s7",
-      "text": "THE Sisters"
+      "text": "The Sisters"
     },
     {
       "id": "s7-320",
@@ -10812,12 +10820,12 @@
     {
       "id": "s8-152",
       "sceneId": "s8",
-      "text": "Gorgo, THE Eagle"
+      "text": "Gorgo, the Eagle"
     },
     {
       "id": "s8-153",
       "sceneId": "s8",
-      "text": "IN THE Mountain Glen"
+      "text": "In the Mountain Glen"
     },
     {
       "id": "s8-154",
@@ -11062,7 +11070,7 @@
     {
       "id": "s8-202",
       "sceneId": "s8",
-      "text": "IN Captivity"
+      "text": "In Captivity"
     },
     {
       "id": "s8-203",
@@ -11252,12 +11260,12 @@
     {
       "id": "s8-240",
       "sceneId": "s8",
-      "text": "ON Over GÄSTRIKLAND"
+      "text": "On over Gästrikland"
     },
     {
       "id": "s8-241",
       "sceneId": "s8",
-      "text": "THE Precious Girdle"
+      "text": "The Precious Girdle"
     },
     {
       "id": "s8-242",
@@ -11412,7 +11420,7 @@
     {
       "id": "s8-272",
       "sceneId": "s8",
-      "text": "Forest DAY"
+      "text": "Forest Day"
     },
     {
       "id": "s8-273",
@@ -11637,7 +11645,7 @@
     {
       "id": "s9-32",
       "sceneId": "s9",
-      "text": "The Animals' New Year'S Eve"
+      "text": "The Animals' New Year's Eve"
     },
     {
       "id": "s9-33",
@@ -11972,7 +11980,7 @@
     {
       "id": "s9-99",
       "sceneId": "s9",
-      "text": "IN Medelpad"
+      "text": "In Medelpad"
     },
     {
       "id": "s9-100",
@@ -12212,7 +12220,7 @@
     {
       "id": "s9-147",
       "sceneId": "s9",
-      "text": "THE Bread"
+      "text": "The Bread"
     },
     {
       "id": "s9-148",
@@ -12342,7 +12350,7 @@
     {
       "id": "s9-173",
       "sceneId": "s9",
-      "text": "THE Forest Fire"
+      "text": "The Forest Fire"
     },
     {
       "id": "s9-174",
@@ -12462,12 +12470,12 @@
     {
       "id": "s9-197",
       "sceneId": "s9",
-      "text": "Westbottom AND Lapland"
+      "text": "Westbottom and Lapland"
     },
     {
       "id": "s9-198",
       "sceneId": "s9",
-      "text": "THE Five Scouts"
+      "text": "The Five Scouts"
     },
     {
       "id": "s9-199",
@@ -12607,7 +12615,7 @@
     {
       "id": "s9-226",
       "sceneId": "s9",
-      "text": "THE Moving Landscape"
+      "text": "The Moving Landscape"
     },
     {
       "id": "s9-227",
@@ -12902,7 +12910,7 @@
     {
       "id": "s10-11",
       "sceneId": "s10",
-      "text": "HE HAD Arrived!"
+      "text": "He Had Arrived!"
     },
     {
       "id": "s10-12",
@@ -12912,7 +12920,7 @@
     {
       "id": "s10-13",
       "sceneId": "s10",
-      "text": "THE Meeting"
+      "text": "The Meeting"
     },
     {
       "id": "s10-14",
@@ -13297,7 +13305,7 @@
     {
       "id": "s10-90",
       "sceneId": "s10",
-      "text": "With THE Laplanders"
+      "text": "With the Laplanders"
     },
     {
       "id": "s10-91",
@@ -13382,7 +13390,7 @@
     {
       "id": "s10-107",
       "sceneId": "s10",
-      "text": "THE Next Morning"
+      "text": "The Next Morning"
     },
     {
       "id": "s10-108",
@@ -13792,7 +13800,7 @@
     {
       "id": "s10-189",
       "sceneId": "s10",
-      "text": "THE First Travelling DAY"
+      "text": "The First Travelling Day"
     },
     {
       "id": "s10-190",
@@ -13997,7 +14005,7 @@
     {
       "id": "s10-230",
       "sceneId": "s10",
-      "text": "Legends From HÄRJEDALEN"
+      "text": "Legends from Härjedalen"
     },
     {
       "id": "s10-231",
@@ -14522,7 +14530,7 @@
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "Vermland AND Dalsland"
+      "text": "Vermland and Dalsland"
     },
     {
       "id": "s11-1",
@@ -14857,7 +14865,7 @@
     {
       "id": "s11-67",
       "sceneId": "s11",
-      "text": "ON Their WAY TO THE SEA"
+      "text": "On Their Way to the Sea"
     },
     {
       "id": "s11-68",
@@ -15297,7 +15305,7 @@
     {
       "id": "s11-155",
       "sceneId": "s11",
-      "text": "Home AT Last"
+      "text": "Home at Last"
     },
     {
       "id": "s11-156",
@@ -16017,7 +16025,7 @@
     {
       "id": "s11-299",
       "sceneId": "s11",
-      "text": "Table OF Pronunciation"
+      "text": "Table of Pronunciation"
     },
     {
       "id": "s11-300",

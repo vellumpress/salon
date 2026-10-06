@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Book II",
       "place": "Book II",
-      "reentry": "THE Garland 109",
+      "reentry": "The Garland 109",
       "prompt": "A word from this stretch."
     },
     {
@@ -27,7 +27,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "THE Garland 109"
+      "text": "The Garland 109"
     },
     {
       "id": "s1-0",
@@ -37,7 +37,7 @@
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "Book ONE"
+      "text": "Book One"
     },
     {
       "id": "s1-2",
@@ -3167,12 +3167,12 @@
     {
       "id": "s1-627",
       "sceneId": "s1",
-      "text": "Book TWO"
+      "text": "Book Two"
     },
     {
       "id": "s1-628",
       "sceneId": "s1",
-      "text": "THE Garland"
+      "text": "The Garland"
     },
     {
       "id": "s1-629",
@@ -3182,7 +3182,7 @@
     {
       "id": "s1-630",
       "sceneId": "s1",
-      "text": "Aasmund BJÖRGULFSÖN’S church-boat stood in round the point of Hovedö early one Sunday at the end of April, while the bells were ringing in the cloister-church and were answered from across the bay by the chimes of bells from the town, now louder and now fainter as the breeze rose or fell."
+      "text": "AASMUND BJÖRGULFSÖN’S church-boat stood in round the point of Hovedö early one Sunday at the end of April, while the bells were ringing in the cloister-church and were answered from across the bay by the chimes of bells from the town, now louder and now fainter as the breeze rose or fell."
     },
     {
       "id": "s1-631",
@@ -6762,7 +6762,7 @@
     {
       "id": "s1-1346",
       "sceneId": "s1",
-      "text": "Lavrans BJÖRGULFSÖN"
+      "text": "Lavrans Björgulfsön"
     },
     {
       "id": "s1-1347",

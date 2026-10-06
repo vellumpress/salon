@@ -12,56 +12,71 @@
       "id": "s0",
       "title": "Songs and Satires",
       "place": "Songs and Satires",
-      "reentry": "Songs AND Satires",
-      "prompt": "What does the poem hold?"
+      "reentry": "Songs and Satires",
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s1",
       "title": "Melbourne",
       "place": "Melbourne",
       "reentry": "The Macmillan Co. of Canada, Ltd. Toronto",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s2",
       "title": "Author Of",
       "place": "Author Of",
       "reentry": "\"Spoon River Anthology\"",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s3",
       "title": "New York",
       "place": "New York",
-      "reentry": "THE Macmillan Company",
-      "prompt": "What does the poem hold?"
+      "reentry": "The Macmillan Company",
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s4",
       "title": "1916",
       "place": "1916",
       "reentry": "*All rights reserved*",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s5",
       "title": "By the Macmillan Company",
       "place": "By the Macmillan Company",
       "reentry": "Set up and electrotyped. Published March, 1916. Reprinted March, June, 1916.",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s6",
       "title": "J. S. Cushing Co.--Berwick & Smith Co",
       "place": "J. S. Cushing Co.--Berwick & Smith Co",
       "reentry": "Norwood, Mass., U.S.A",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
+    },
+    {
+      "id": "s7-front",
+      "title": "Contents",
+      "place": "Contents",
+      "reentry": "St. Francis and Lady Clare 4",
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s7",
       "title": "Silence                            1",
       "place": "Silence                            1",
-      "reentry": "St. Francis and Lady Clare 4",
+      "reentry": "Silence",
       "prompt": "What does the poem hold?"
     },
     {
@@ -951,12 +966,12 @@
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "Songs AND Satires"
+      "text": "Songs and Satires"
     },
     {
       "id": "s0-2",
       "sceneId": "s0",
-      "text": "THE Macmillan Company"
+      "text": "The Macmillan Company"
     },
     {
       "id": "s1-0",
@@ -971,7 +986,7 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "THE Macmillan Company"
+      "text": "The Macmillan Company"
     },
     {
       "id": "s4-0",
@@ -1000,228 +1015,228 @@
     },
     {
       "id": "s7-0",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "St. Francis and Lady Clare 4"
     },
     {
       "id": "s7-1",
-      "sceneId": "s7",
-      "text": "THE Cocked HAT 10"
+      "sceneId": "s7-front",
+      "text": "The Cocked Hat 10"
     },
     {
       "id": "s7-2",
-      "sceneId": "s7",
-      "text": "THE Vision 18"
+      "sceneId": "s7-front",
+      "text": "The Vision 18"
     },
     {
       "id": "s7-3",
-      "sceneId": "s7",
-      "text": "SO WE Grew Together 21"
+      "sceneId": "s7-front",
+      "text": "So We Grew Together 21"
     },
     {
       "id": "s7-4",
-      "sceneId": "s7",
-      "text": "Rain IN MY Heart 31"
+      "sceneId": "s7-front",
+      "text": "Rain in My Heart 31"
     },
     {
       "id": "s7-5",
-      "sceneId": "s7",
-      "text": "THE Loop 32"
+      "sceneId": "s7-front",
+      "text": "The Loop 32"
     },
     {
       "id": "s7-6",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "When Under the Icy Eaves 40"
     },
     {
       "id": "s7-7",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "IN THE CAR 41"
     },
     {
       "id": "s7-8",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "Simon Surnamed Peter 43"
     },
     {
       "id": "s7-9",
-      "sceneId": "s7",
-      "text": "ALL Life IN A Life 47"
+      "sceneId": "s7-front",
+      "text": "All Life in a Life 47"
     },
     {
       "id": "s7-10",
-      "sceneId": "s7",
-      "text": "What YOU Will 56"
+      "sceneId": "s7-front",
+      "text": "What You Will 56"
     },
     {
       "id": "s7-11",
-      "sceneId": "s7",
-      "text": "THE City 57"
+      "sceneId": "s7-front",
+      "text": "The City 57"
     },
     {
       "id": "s7-12",
-      "sceneId": "s7",
-      "text": "THE Idiot 65"
+      "sceneId": "s7-front",
+      "text": "The Idiot 65"
     },
     {
       "id": "s7-13",
-      "sceneId": "s7",
-      "text": "Helen OF Troy 68"
+      "sceneId": "s7-front",
+      "text": "Helen of Troy 68"
     },
     {
       "id": "s7-14",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "O Glorious France 71"
     },
     {
       "id": "s7-15",
-      "sceneId": "s7",
-      "text": "FOR A Dance 74"
+      "sceneId": "s7-front",
+      "text": "For a Dance 74"
     },
     {
       "id": "s7-16",
-      "sceneId": "s7",
-      "text": "When Life IS Real 76"
+      "sceneId": "s7-front",
+      "text": "When Life Is Real 76"
     },
     {
       "id": "s7-17",
-      "sceneId": "s7",
-      "text": "THE Question 78"
+      "sceneId": "s7-front",
+      "text": "The Question 78"
     },
     {
       "id": "s7-18",
-      "sceneId": "s7",
-      "text": "THE Answer 79"
+      "sceneId": "s7-front",
+      "text": "The Answer 79"
     },
     {
       "id": "s7-19",
-      "sceneId": "s7",
-      "text": "THE Sign 80"
+      "sceneId": "s7-front",
+      "text": "The Sign 80"
     },
     {
       "id": "s7-20",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "William Marion Reedy 82"
     },
     {
       "id": "s7-21",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "A Study 85"
     },
     {
       "id": "s7-22",
-      "sceneId": "s7",
-      "text": "Portrait OF A Woman 88"
+      "sceneId": "s7-front",
+      "text": "Portrait of a Woman 88"
     },
     {
       "id": "s7-23",
-      "sceneId": "s7",
-      "text": "IN THE Cage 91"
+      "sceneId": "s7-front",
+      "text": "In the Cage 91"
     },
     {
       "id": "s7-24",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "Saving a Woman: One Phase 95"
     },
     {
       "id": "s7-25",
-      "sceneId": "s7",
-      "text": "Love IS A Madness 97"
+      "sceneId": "s7-front",
+      "text": "Love Is a Madness 97"
     },
     {
       "id": "s7-26",
-      "sceneId": "s7",
-      "text": "ON A Bust 98"
+      "sceneId": "s7-front",
+      "text": "On a Bust 98"
     },
     {
       "id": "s7-27",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "Arabel 101"
     },
     {
       "id": "s7-28",
-      "sceneId": "s7",
-      "text": "Jim and Arabel'S Sister 108"
+      "sceneId": "s7-front",
+      "text": "Jim and Arabel's Sister 108"
     },
     {
       "id": "s7-29",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "The Sorrow of Dead Faces 116"
     },
     {
       "id": "s7-30",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "THE CRY 119"
     },
     {
       "id": "s7-31",
-      "sceneId": "s7",
-      "text": "THE Helping Hand 120"
+      "sceneId": "s7-front",
+      "text": "The Helping Hand 120"
     },
     {
       "id": "s7-32",
-      "sceneId": "s7",
-      "text": "THE Door 121"
+      "sceneId": "s7-front",
+      "text": "The Door 121"
     },
     {
       "id": "s7-33",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "Supplication 122"
     },
     {
       "id": "s7-34",
-      "sceneId": "s7",
-      "text": "THE Conversation 125"
+      "sceneId": "s7-front",
+      "text": "The Conversation 125"
     },
     {
       "id": "s7-35",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "Terminus 130"
     },
     {
       "id": "s7-36",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "Madeline 132"
     },
     {
       "id": "s7-37",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "Marcia 134"
     },
     {
       "id": "s7-38",
-      "sceneId": "s7",
-      "text": "THE Altar 135"
+      "sceneId": "s7-front",
+      "text": "The Altar 135"
     },
     {
       "id": "s7-39",
-      "sceneId": "s7",
-      "text": "Soul'S Desire 137"
+      "sceneId": "s7-front",
+      "text": "Soul's Desire 137"
     },
     {
       "id": "s7-40",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "Ballad of Launcelot and Elaine 140"
     },
     {
       "id": "s7-41",
-      "sceneId": "s7",
+      "sceneId": "s7-front",
       "text": "The Death of Launcelot 149"
     },
     {
       "id": "s7-42",
-      "sceneId": "s7",
-      "text": "IN Michigan 156"
+      "sceneId": "s7-front",
+      "text": "In Michigan 156"
     },
     {
       "id": "s7-43",
-      "sceneId": "s7",
-      "text": "THE Star 166"
+      "sceneId": "s7-front",
+      "text": "The Star 166"
     },
     {
       "id": "s7-44",
-      "sceneId": "s7",
-      "text": "Songs AND Satires"
+      "sceneId": "s7-front",
+      "text": "Songs and Satires"
     },
     {
       "id": "s7-45",
@@ -1341,7 +1356,7 @@
     {
       "id": "s10-1",
       "sceneId": "s10",
-      "text": "THE Cocked HAT"
+      "text": "The Cocked Hat"
     },
     {
       "id": "s10-2",
@@ -1406,7 +1421,7 @@
     {
       "id": "s16-1",
       "sceneId": "s16",
-      "text": "THE Vision"
+      "text": "The Vision"
     },
     {
       "id": "s16-2",
@@ -1421,7 +1436,7 @@
     {
       "id": "s17-1",
       "sceneId": "s17",
-      "text": "\"SO WE Grew Together\""
+      "text": "\"SO WE GREW TOGETHER\""
     },
     {
       "id": "s17-2",
@@ -1486,7 +1501,7 @@
     {
       "id": "s18-1",
       "sceneId": "s18",
-      "text": "Rain IN MY Heart"
+      "text": "Rain in My Heart"
     },
     {
       "id": "s18-2",
@@ -1511,7 +1526,7 @@
     {
       "id": "s19-1",
       "sceneId": "s19",
-      "text": "THE Loop"
+      "text": "The Loop"
     },
     {
       "id": "s19-2",
@@ -1541,7 +1556,7 @@
     {
       "id": "s20-1",
       "sceneId": "s20",
-      "text": "When Under THE ICY Eaves"
+      "text": "When under the Icy Eaves"
     },
     {
       "id": "s20-2",
@@ -1706,7 +1721,7 @@
     {
       "id": "s48-1",
       "sceneId": "s48",
-      "text": "THE Idiot"
+      "text": "The Idiot"
     },
     {
       "id": "s48-2",
@@ -1796,7 +1811,7 @@
     {
       "id": "s58-1",
       "sceneId": "s58",
-      "text": "THE Question"
+      "text": "The Question"
     },
     {
       "id": "s58-2",
@@ -1811,7 +1826,7 @@
     {
       "id": "s59-1",
       "sceneId": "s59",
-      "text": "THE Answer"
+      "text": "The Answer"
     },
     {
       "id": "s60-0",
@@ -1821,7 +1836,7 @@
     {
       "id": "s60-1",
       "sceneId": "s60",
-      "text": "THE Sign"
+      "text": "The Sign"
     },
     {
       "id": "s61-0",
@@ -1866,7 +1881,7 @@
     {
       "id": "s67-1",
       "sceneId": "s67",
-      "text": "Portrait OF A Woman"
+      "text": "Portrait of a Woman"
     },
     {
       "id": "s68-0",
@@ -2121,7 +2136,7 @@
     {
       "id": "s107-1",
       "sceneId": "s107",
-      "text": "Soul'S Desire"
+      "text": "Soul's Desire"
     },
     {
       "id": "s108-0",
