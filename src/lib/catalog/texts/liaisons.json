@@ -17,15 +17,15 @@
     },
     {
       "id": "s1",
-      "title": "Letter Iii",
-      "place": "Letter Iii",
+      "title": "Letter III",
+      "place": "Letter III",
       "reentry": "Cecilia Volanges *to* Sophia Carnay.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
-      "title": "Letter Iv",
-      "place": "Letter Iv",
+      "title": "Letter IV",
+      "place": "Letter IV",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
@@ -38,15 +38,15 @@
     },
     {
       "id": "s4",
-      "title": "Letter Vi",
-      "place": "Letter Vi",
+      "title": "Letter VI",
+      "place": "Letter VI",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s5",
-      "title": "Letter Vii",
-      "place": "Letter Vii",
+      "title": "Letter VII",
+      "place": "Letter VII",
       "reentry": "Cecilia Volanges *to* Sophia Carnay.[1]",
       "prompt": "A word from this stretch."
     },
@@ -59,15 +59,15 @@
     },
     {
       "id": "s7",
-      "title": "Letter Viii",
-      "place": "Letter Viii",
+      "title": "Letter VIII",
+      "place": "Letter VIII",
       "reentry": "Presidente de Tourvel *to* Madame de Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s8",
-      "title": "Letter Ix",
-      "place": "Letter Ix",
+      "title": "Letter IX",
+      "place": "Letter IX",
       "reentry": "Madame de Volanges *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
@@ -80,15 +80,15 @@
     },
     {
       "id": "s10",
-      "title": "Letter Xi",
-      "place": "Letter Xi",
+      "title": "Letter XI",
+      "place": "Letter XI",
       "reentry": "*The* Presidente de Tourvel *to* Madame Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
-      "title": "Letter Xii",
-      "place": "Letter Xii",
+      "title": "Letter XII",
+      "place": "Letter XII",
       "reentry": "Cecilia Volanges *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
@@ -101,8 +101,8 @@
     },
     {
       "id": "s13",
-      "title": "Letter Xiii",
-      "place": "Letter Xiii",
+      "title": "Letter XIII",
+      "place": "Letter XIII",
       "reentry": "*The* Marchioness de Merteuil *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
@@ -115,253 +115,253 @@
     },
     {
       "id": "s15",
-      "title": "Letter Xiv",
-      "place": "Letter Xiv",
+      "title": "Letter XIV",
+      "place": "Letter XIV",
       "reentry": "Cecilia Volanges *to* Sophia Carnay.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s16",
-      "title": "Letter Xv",
-      "place": "Letter Xv",
+      "title": "Letter XV",
+      "place": "Letter XV",
       "reentry": "Viscount Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s17",
-      "title": "Letter Xvi",
-      "place": "Letter Xvi",
+      "title": "Letter XVI",
+      "place": "Letter XVI",
       "reentry": "Cecilia Volanges *to* Sophia Carnay.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s18",
-      "title": "Letter Xvii",
-      "place": "Letter Xvii",
+      "title": "Letter XVII",
+      "place": "Letter XVII",
       "reentry": "*The Chevalier* Danceny *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s19",
-      "title": "Letter Xviii",
-      "place": "Letter Xviii",
+      "title": "Letter XVIII",
+      "place": "Letter XVIII",
       "reentry": "Cecilia Volanges *to* Sophia Carnay.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s20",
-      "title": "Letter Xix",
-      "place": "Letter Xix",
+      "title": "Letter XIX",
+      "place": "Letter XIX",
       "reentry": "Cecilia Volanges *to* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s21",
-      "title": "Letter Xx",
-      "place": "Letter Xx",
+      "title": "Letter XX",
+      "place": "Letter XX",
       "reentry": "*The* Marchioness de Merteuil *to* Viscount Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s22",
-      "title": "Letter Xxi",
-      "place": "Letter Xxi",
+      "title": "Letter XXI",
+      "place": "Letter XXI",
       "reentry": "*From* Viscount Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s23",
-      "title": "Letter Xxii",
-      "place": "Letter Xxii",
+      "title": "Letter XXII",
+      "place": "Letter XXII",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s24",
-      "title": "Letter Xxiii",
-      "place": "Letter Xxiii",
+      "title": "Letter XXIII",
+      "place": "Letter XXIII",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s25",
-      "title": "Letter Xxiv",
-      "place": "Letter Xxiv",
+      "title": "Letter XXIV",
+      "place": "Letter XXIV",
       "reentry": "Viscount Valmont *to the* Presidente Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s26",
-      "title": "Letter Xxv",
-      "place": "Letter Xxv",
+      "title": "Letter XXV",
+      "place": "Letter XXV",
       "reentry": "Viscount Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s27",
-      "title": "Letter Xxvi",
-      "place": "Letter Xxvi",
+      "title": "Letter XXVI",
+      "place": "Letter XXVI",
       "reentry": "*The* Presidente de Tourvel *to* Viscount Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s28",
-      "title": "Letter Xxvii",
-      "place": "Letter Xxvii",
+      "title": "Letter XXVII",
+      "place": "Letter XXVII",
       "reentry": "Cecilia Volanges *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s29",
-      "title": "Letter Xxviii",
-      "place": "Letter Xxviii",
+      "title": "Letter XXVIII",
+      "place": "Letter XXVIII",
       "reentry": "Chevalier Danceny *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s30",
-      "title": "Letter Xxix",
-      "place": "Letter Xxix",
+      "title": "Letter XXIX",
+      "place": "Letter XXIX",
       "reentry": "Cecilia Volanges *to* Sophia Carnay.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s31",
-      "title": "Letter Xxx",
-      "place": "Letter Xxx",
+      "title": "Letter XXX",
+      "place": "Letter XXX",
       "reentry": "Cecilia Volanges *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s32",
-      "title": "Letter Xxxi",
-      "place": "Letter Xxxi",
+      "title": "Letter XXXI",
+      "place": "Letter XXXI",
       "reentry": "Chevalier Danceny *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s33",
-      "title": "Letter Xxxii",
-      "place": "Letter Xxxii",
+      "title": "Letter XXXII",
+      "place": "Letter XXXII",
       "reentry": "Madame de Volanges *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s34",
-      "title": "Letter Xxxiii",
-      "place": "Letter Xxxiii",
+      "title": "Letter XXXIII",
+      "place": "Letter XXXIII",
       "reentry": "*The* Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s35",
-      "title": "Letter Xxxiv",
-      "place": "Letter Xxxiv",
+      "title": "Letter XXXIV",
+      "place": "Letter XXXIV",
       "reentry": "Viscount Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s36",
-      "title": "Letter Xxxv",
-      "place": "Letter Xxxv",
+      "title": "Letter XXXV",
+      "place": "Letter XXXV",
       "reentry": "Viscount Valmont *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s37",
-      "title": "Letter Xxxvi",
-      "place": "Letter Xxxvi",
+      "title": "Letter XXXVI",
+      "place": "Letter XXXVI",
       "reentry": "Viscount Valmont *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s38",
-      "title": "Letter Xxxvii",
-      "place": "Letter Xxxvii",
+      "title": "Letter XXXVII",
+      "place": "Letter XXXVII",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s39",
-      "title": "Letter Xxxviii",
-      "place": "Letter Xxxviii",
+      "title": "Letter XXXVIII",
+      "place": "Letter XXXVIII",
       "reentry": "*The* Marchioness de Merteuil *to* Viscount Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s40",
-      "title": "Letter Xxxix",
-      "place": "Letter Xxxix",
+      "title": "Letter XXXIX",
+      "place": "Letter XXXIX",
       "reentry": "Cecilia Volanges *to* Sophia Carnay.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s41",
-      "title": "Letter Xl",
-      "place": "Letter Xl",
+      "title": "Letter XL",
+      "place": "Letter XL",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s42",
-      "title": "Letter Xli",
-      "place": "Letter Xli",
+      "title": "Letter XLI",
+      "place": "Letter XLI",
       "reentry": "*The* Presidente de Tourvel *to* Viscount Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s43",
-      "title": "Letter Xlii",
-      "place": "Letter Xlii",
+      "title": "Letter XLII",
+      "place": "Letter XLII",
       "reentry": "Viscount de Valmont *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s44",
-      "title": "Letter Xliii",
-      "place": "Letter Xliii",
+      "title": "Letter XLIII",
+      "place": "Letter XLIII",
       "reentry": "*The* Presidente de Tourvel *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s45",
-      "title": "Letter Xliv",
-      "place": "Letter Xliv",
+      "title": "Letter XLIV",
+      "place": "Letter XLIV",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s46",
-      "title": "Letter Xlv",
-      "place": "Letter Xlv",
+      "title": "Letter XLV",
+      "place": "Letter XLV",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s47",
-      "title": "Letter Xlvi",
-      "place": "Letter Xlvi",
+      "title": "Letter XLVI",
+      "place": "Letter XLVI",
       "reentry": "*The* Chevalier Danceny *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s48",
-      "title": "Letter Xlvii",
-      "place": "Letter Xlvii",
+      "title": "Letter XLVII",
+      "place": "Letter XLVII",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s49",
-      "title": "Letter Xlviii",
-      "place": "Letter Xlviii",
+      "title": "Letter XLVIII",
+      "place": "Letter XLVIII",
       "reentry": "*The* Viscount de Valmont *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s50",
-      "title": "Letter Xlix",
-      "place": "Letter Xlix",
+      "title": "Letter XLIX",
+      "place": "Letter XLIX",
       "reentry": "Cecilia Volanges *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
@@ -409,8 +409,8 @@
     },
     {
       "id": "s57",
-      "title": "Letter Li",
-      "place": "Letter Li",
+      "title": "Letter LI",
+      "place": "Letter LI",
       "reentry": "*The* Marchioness de Merteuil *to* Viscount Valmont.",
       "prompt": "A word from this stretch."
     },
@@ -423,50 +423,50 @@
     },
     {
       "id": "s59",
-      "title": "Letter Lii",
-      "place": "Letter Lii",
+      "title": "Letter LII",
+      "place": "Letter LII",
       "reentry": "Viscount de Valmont *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s60",
-      "title": "Letter Liii",
-      "place": "Letter Liii",
+      "title": "Letter LIII",
+      "place": "Letter LIII",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s61",
-      "title": "Letter Liv",
-      "place": "Letter Liv",
+      "title": "Letter LIV",
+      "place": "Letter LIV",
       "reentry": "*The* Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s62",
-      "title": "Letter Lv",
-      "place": "Letter Lv",
+      "title": "Letter LV",
+      "place": "Letter LV",
       "reentry": "Cecilia Volanges *to* Sophia Carnay.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s63",
-      "title": "Letter Lvi",
-      "place": "Letter Lvi",
+      "title": "Letter LVI",
+      "place": "Letter LVI",
       "reentry": "*The* Presidente de Tourvel *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s64",
-      "title": "Letter Lvii",
-      "place": "Letter Lvii",
+      "title": "Letter LVII",
+      "place": "Letter LVII",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s65",
-      "title": "Letter Lviii",
-      "place": "Letter Lviii",
+      "title": "Letter LVIII",
+      "place": "Letter LVIII",
       "reentry": "Viscount de Valmont *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
@@ -479,50 +479,50 @@
     },
     {
       "id": "s67",
-      "title": "Letter Lix",
-      "place": "Letter Lix",
+      "title": "Letter LIX",
+      "place": "Letter LIX",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s68",
-      "title": "Letter Lx",
-      "place": "Letter Lx",
+      "title": "Letter LX",
+      "place": "Letter LX",
       "reentry": "Chevalier Danceny *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s69",
-      "title": "Letter Lxi",
-      "place": "Letter Lxi",
+      "title": "Letter LXI",
+      "place": "Letter LXI",
       "reentry": "Cecilia Volanges *to* Sophia Carnay.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s70",
-      "title": "Letter Lxii",
-      "place": "Letter Lxii",
+      "title": "Letter LXII",
+      "place": "Letter LXII",
       "reentry": "Madame de Volanges *to* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s71",
-      "title": "Letter Lxiii",
-      "place": "Letter Lxiii",
+      "title": "Letter LXIII",
+      "place": "Letter LXIII",
       "reentry": "Marchioness de Merteuil *to* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s72",
-      "title": "Letter Lxiv",
-      "place": "Letter Lxiv",
+      "title": "Letter LXIV",
+      "place": "Letter LXIV",
       "reentry": "*The* Chevalier Danceny *to* Madame de Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s73",
-      "title": "Letter Lxv",
-      "place": "Letter Lxv",
+      "title": "Letter LXV",
+      "place": "Letter LXV",
       "reentry": "Chevalier Danceny *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
@@ -535,113 +535,113 @@
     },
     {
       "id": "s75",
-      "title": "Letter Lxvi",
-      "place": "Letter Lxvi",
+      "title": "Letter LXVI",
+      "place": "Letter LXVI",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s76",
-      "title": "Letter Lxvii",
-      "place": "Letter Lxvii",
+      "title": "Letter LXVII",
+      "place": "Letter LXVII",
       "reentry": "*The* Presidente de Tourvel *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s77",
-      "title": "Letter Lxviii",
-      "place": "Letter Lxviii",
+      "title": "Letter LXVIII",
+      "place": "Letter LXVIII",
       "reentry": "Viscount de Valmont *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s78",
-      "title": "Letter Lxix",
-      "place": "Letter Lxix",
+      "title": "Letter LXIX",
+      "place": "Letter LXIX",
       "reentry": "Cecilia Volanges *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s79",
-      "title": "Letter Lxx",
-      "place": "Letter Lxx",
+      "title": "Letter LXX",
+      "place": "Letter LXX",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s80",
-      "title": "Letter Lxxi",
-      "place": "Letter Lxxi",
+      "title": "Letter LXXI",
+      "place": "Letter LXXI",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s81",
-      "title": "Letter Lxxii",
-      "place": "Letter Lxxii",
+      "title": "Letter LXXII",
+      "place": "Letter LXXII",
       "reentry": "Chevalier Danceny *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s82",
-      "title": "Letter Lxxiii",
-      "place": "Letter Lxxiii",
+      "title": "Letter LXXIII",
+      "place": "Letter LXXIII",
       "reentry": "Viscount de Valmont *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s83",
-      "title": "Letter Lxxiv",
-      "place": "Letter Lxxiv",
+      "title": "Letter LXXIV",
+      "place": "Letter LXXIV",
       "reentry": "Marchioness de Merteuil *to* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s84",
-      "title": "Letter Lxxv",
-      "place": "Letter Lxxv",
+      "title": "Letter LXXV",
+      "place": "Letter LXXV",
       "reentry": "Cecilia Volanges *to* Sophia Carnay.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s85",
-      "title": "Letter Lxxvi",
-      "place": "Letter Lxxvi",
+      "title": "Letter LXXVI",
+      "place": "Letter LXXVI",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s86",
-      "title": "Letter Lxxvii",
-      "place": "Letter Lxxvii",
+      "title": "Letter LXXVII",
+      "place": "Letter LXXVII",
       "reentry": "Viscount de Valmont *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s87",
-      "title": "Letter Lxxviii",
-      "place": "Letter Lxxviii",
+      "title": "Letter LXXVIII",
+      "place": "Letter LXXVIII",
       "reentry": "*The* Presidente de Tourvel *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s88",
-      "title": "Letter Lxxix",
-      "place": "Letter Lxxix",
+      "title": "Letter LXXIX",
+      "place": "Letter LXXIX",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s89",
-      "title": "Letter Lxxx",
-      "place": "Letter Lxxx",
+      "title": "Letter LXXX",
+      "place": "Letter LXXX",
       "reentry": "Chevalier Danceny *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s90",
-      "title": "Letter Lxxxi",
-      "place": "Letter Lxxxi",
+      "title": "Letter LXXXI",
+      "place": "Letter LXXXI",
       "reentry": "*The* Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
@@ -654,29 +654,29 @@
     },
     {
       "id": "s92",
-      "title": "Letter Lxxxii",
-      "place": "Letter Lxxxii",
+      "title": "Letter LXXXII",
+      "place": "Letter LXXXII",
       "reentry": "Cecilia Volanges *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s93",
-      "title": "Letter Lxxxiii",
-      "place": "Letter Lxxxiii",
+      "title": "Letter LXXXIII",
+      "place": "Letter LXXXIII",
       "reentry": "Viscount de Valmont, *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s94",
-      "title": "Letter Lxxxiv",
-      "place": "Letter Lxxxiv",
+      "title": "Letter LXXXIV",
+      "place": "Letter LXXXIV",
       "reentry": "Viscount de Valmont *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s95",
-      "title": "Letter Lxxxv",
-      "place": "Letter Lxxxv",
+      "title": "Letter LXXXV",
+      "place": "Letter LXXXV",
       "reentry": "Marchioness de Merteuil *to* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
@@ -689,15 +689,15 @@
     },
     {
       "id": "s97",
-      "title": "Letter Lxxxvi",
-      "place": "Letter Lxxxvi",
+      "title": "Letter LXXXVI",
+      "place": "Letter LXXXVI",
       "reentry": "*The* Marechale de —— *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s98",
-      "title": "Letter Lxxxvii",
-      "place": "Letter Lxxxvii",
+      "title": "Letter LXXXVII",
+      "place": "Letter LXXXVII",
       "reentry": "*The* Marchioness de Merteuil *to* Madame de Volanges.",
       "prompt": "A word from this stretch."
     },
@@ -717,50 +717,50 @@
     },
     {
       "id": "s101",
-      "title": "Vol. Iii",
-      "place": "Vol. Iii",
+      "title": "Vol. III",
+      "place": "Vol. III",
       "reentry": "London: Printed for T. Hookham,",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s102",
-      "title": "Letter Lxxxviii",
-      "place": "Letter Lxxxviii",
+      "title": "Letter LXXXVIII",
+      "place": "Letter LXXXVIII",
       "reentry": "Cecilia Volanges *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s103",
-      "title": "Letter Lxxxix",
-      "place": "Letter Lxxxix",
+      "title": "Letter LXXXIX",
+      "place": "Letter LXXXIX",
       "reentry": "*The* Viscount de Valmont *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s104",
-      "title": "Letter Xc",
-      "place": "Letter Xc",
+      "title": "Letter XC",
+      "place": "Letter XC",
       "reentry": "*The* Presidente de Tourvel *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s105",
-      "title": "Letter Xci",
-      "place": "Letter Xci",
+      "title": "Letter XCI",
+      "place": "Letter XCI",
       "reentry": "Viscount de Valmont *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s106",
-      "title": "Letter Xcii",
-      "place": "Letter Xcii",
+      "title": "Letter XCII",
+      "place": "Letter XCII",
       "reentry": "Chevalier Danceny *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s107",
-      "title": "Letter Xciii",
-      "place": "Letter Xciii",
+      "title": "Letter XCIII",
+      "place": "Letter XCIII",
       "reentry": "Chevalier Danceny *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
@@ -773,43 +773,43 @@
     },
     {
       "id": "s109",
-      "title": "Letter Xciv",
-      "place": "Letter Xciv",
+      "title": "Letter XCIV",
+      "place": "Letter XCIV",
       "reentry": "Cecilia Volanges *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s110",
-      "title": "Letter Xcv",
-      "place": "Letter Xcv",
+      "title": "Letter XCV",
+      "place": "Letter XCV",
       "reentry": "Cecilia Volanges *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s111",
-      "title": "Letter Xcvi",
-      "place": "Letter Xcvi",
+      "title": "Letter XCVI",
+      "place": "Letter XCVI",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s112",
-      "title": "Letter Xcvii",
-      "place": "Letter Xcvii",
+      "title": "Letter XCVII",
+      "place": "Letter XCVII",
       "reentry": "Cecilia Volanges *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s113",
-      "title": "Letter Xcviii",
-      "place": "Letter Xcviii",
+      "title": "Letter XCVIII",
+      "place": "Letter XCVIII",
       "reentry": "Madame de Volanges *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s114",
-      "title": "Letter Xcix",
-      "place": "Letter Xcix",
+      "title": "Letter XCIX",
+      "place": "Letter XCIX",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
@@ -822,71 +822,71 @@
     },
     {
       "id": "s116",
-      "title": "Letter Ci",
-      "place": "Letter Ci",
+      "title": "Letter CI",
+      "place": "Letter CI",
       "reentry": "*The* Viscount de Valmont *to* Azolan, *his Huntsman.*",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s117",
-      "title": "Letter Cii",
-      "place": "Letter Cii",
+      "title": "Letter CII",
+      "place": "Letter CII",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s118",
-      "title": "Letter Ciii",
-      "place": "Letter Ciii",
+      "title": "Letter CIII",
+      "place": "Letter CIII",
       "reentry": "Madame de Rosemonde *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s119",
-      "title": "Letter Civ",
-      "place": "Letter Civ",
+      "title": "Letter CIV",
+      "place": "Letter CIV",
       "reentry": "*The* Marchioness de Merteuil *to* Madame de Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s120",
-      "title": "Letter Cv",
-      "place": "Letter Cv",
+      "title": "Letter CV",
+      "place": "Letter CV",
       "reentry": "*The* Marchioness de Merteuil *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s121",
-      "title": "Letter Cvi",
-      "place": "Letter Cvi",
+      "title": "Letter CVI",
+      "place": "Letter CVI",
       "reentry": "*The* Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s122",
-      "title": "Letter Cvii",
-      "place": "Letter Cvii",
+      "title": "Letter CVII",
+      "place": "Letter CVII",
       "reentry": "Azolan *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s123",
-      "title": "Letter Cviii",
-      "place": "Letter Cviii",
+      "title": "Letter CVIII",
+      "place": "Letter CVIII",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s124",
-      "title": "Letter Cix",
-      "place": "Letter Cix",
+      "title": "Letter CIX",
+      "place": "Letter CIX",
       "reentry": "Cecilia Volanges *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s125",
-      "title": "Letter Cx",
-      "place": "Letter Cx",
+      "title": "Letter CX",
+      "place": "Letter CX",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
@@ -899,99 +899,99 @@
     },
     {
       "id": "s127",
-      "title": "Letter Cxi",
-      "place": "Letter Cxi",
+      "title": "Letter CXI",
+      "place": "Letter CXI",
       "reentry": "Count Gercourt *to* Madame de Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s128",
-      "title": "Letter Cxii",
-      "place": "Letter Cxii",
+      "title": "Letter CXII",
+      "place": "Letter CXII",
       "reentry": "Madame de Rosemonde *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s129",
-      "title": "Letter Cxiii",
-      "place": "Letter Cxiii",
+      "title": "Letter CXIII",
+      "place": "Letter CXIII",
       "reentry": "Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s130",
-      "title": "Letter Cxiv",
-      "place": "Letter Cxiv",
+      "title": "Letter CXIV",
+      "place": "Letter CXIV",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s131",
-      "title": "Letter Cxv",
-      "place": "Letter Cxv",
+      "title": "Letter CXV",
+      "place": "Letter CXV",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s132",
-      "title": "Letter Cxvi",
-      "place": "Letter Cxvi",
+      "title": "Letter CXVI",
+      "place": "Letter CXVI",
       "reentry": "Chevalier Danceny *to* Cecilia Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s133",
-      "title": "Letter Cxvii",
-      "place": "Letter Cxvii",
+      "title": "Letter CXVII",
+      "place": "Letter CXVII",
       "reentry": "Cecilia Volanges *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s134",
-      "title": "Letter Cxviii",
-      "place": "Letter Cxviii",
+      "title": "Letter CXVIII",
+      "place": "Letter CXVIII",
       "reentry": "Chevalier Danceny *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s135",
-      "title": "Letter Cxix",
-      "place": "Letter Cxix",
+      "title": "Letter CXIX",
+      "place": "Letter CXIX",
       "reentry": "Madame de Rosemonde *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s136",
-      "title": "Letter Cxx",
-      "place": "Letter Cxx",
+      "title": "Letter CXX",
+      "place": "Letter CXX",
       "reentry": "Viscount de Valmont *to* Father Anselmus,",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s137",
-      "title": "Letter Cxxi",
-      "place": "Letter Cxxi",
+      "title": "Letter CXXI",
+      "place": "Letter CXXI",
       "reentry": "*The* Marchioness de Merteuil *to* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s138",
-      "title": "Letter Cxxii",
-      "place": "Letter Cxxii",
+      "title": "Letter CXXII",
+      "place": "Letter CXXII",
       "reentry": "Madame de Rosemonde *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s139",
-      "title": "Letter Cxxiii",
-      "place": "Letter Cxxiii",
+      "title": "Letter CXXIII",
+      "place": "Letter CXXIII",
       "reentry": "Father Anselmus *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s140",
-      "title": "Letter Cxxiv",
-      "place": "Letter Cxxiv",
+      "title": "Letter CXXIV",
+      "place": "Letter CXXIV",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
@@ -1004,15 +1004,15 @@
     },
     {
       "id": "s142",
-      "title": "Vol. Iv",
-      "place": "Vol. Iv",
+      "title": "Vol. IV",
+      "place": "Vol. IV",
       "reentry": "London: Printed for T. Hookham,",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s143",
-      "title": "Letter Cxxv",
-      "place": "Letter Cxxv",
+      "title": "Letter CXXV",
+      "place": "Letter CXXV",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
@@ -1025,57 +1025,57 @@
     },
     {
       "id": "s145",
-      "title": "Letter Cxxvi",
-      "place": "Letter Cxxvi",
+      "title": "Letter CXXVI",
+      "place": "Letter CXXVI",
       "reentry": "Madame de Rosemonde *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s146",
-      "title": "Letter Cxxvii",
-      "place": "Letter Cxxvii",
+      "title": "Letter CXXVII",
+      "place": "Letter CXXVII",
       "reentry": "*The* Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s147",
-      "title": "Letter Cxxviii",
-      "place": "Letter Cxxviii",
+      "title": "Letter CXXVIII",
+      "place": "Letter CXXVIII",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s148",
-      "title": "Letter Cxxix",
-      "place": "Letter Cxxix",
+      "title": "Letter CXXIX",
+      "place": "Letter CXXIX",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s149",
-      "title": "Letter Cxxx",
-      "place": "Letter Cxxx",
+      "title": "Letter CXXX",
+      "place": "Letter CXXX",
       "reentry": "Madame de Rosemonde, *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s150",
-      "title": "Letter Cxxxi",
-      "place": "Letter Cxxxi",
+      "title": "Letter CXXXI",
+      "place": "Letter CXXXI",
       "reentry": "*The* Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s151",
-      "title": "Letter Cxxxii",
-      "place": "Letter Cxxxii",
+      "title": "Letter CXXXII",
+      "place": "Letter CXXXII",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s152",
-      "title": "Letter Cxxxiii",
-      "place": "Letter Cxxxiii",
+      "title": "Letter CXXXIII",
+      "place": "Letter CXXXIII",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
@@ -1088,36 +1088,36 @@
     },
     {
       "id": "s154",
-      "title": "Letter Cxxxiv",
-      "place": "Letter Cxxxiv",
+      "title": "Letter CXXXIV",
+      "place": "Letter CXXXIV",
       "reentry": "Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s155",
-      "title": "Letter Cxxxv",
-      "place": "Letter Cxxxv",
+      "title": "Letter CXXXV",
+      "place": "Letter CXXXV",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s156",
-      "title": "Letter Cxxxvi",
-      "place": "Letter Cxxxvi",
+      "title": "Letter CXXXVI",
+      "place": "Letter CXXXVI",
       "reentry": "*The* Presidente de Tourvel *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s157",
-      "title": "Letter Cxxxvii",
-      "place": "Letter Cxxxvii",
+      "title": "Letter CXXXVII",
+      "place": "Letter CXXXVII",
       "reentry": "Viscount de Valmont *to the* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s158",
-      "title": "Letter Cxxxviii",
-      "place": "Letter Cxxxviii",
+      "title": "Letter CXXXVIII",
+      "place": "Letter CXXXVIII",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
@@ -1130,106 +1130,106 @@
     },
     {
       "id": "s160",
-      "title": "Letter Cxxxix",
-      "place": "Letter Cxxxix",
+      "title": "Letter CXXXIX",
+      "place": "Letter CXXXIX",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s161",
-      "title": "Letter Cxl",
-      "place": "Letter Cxl",
+      "title": "Letter CXL",
+      "place": "Letter CXL",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s162",
-      "title": "Letter Cxli",
-      "place": "Letter Cxli",
+      "title": "Letter CXLI",
+      "place": "Letter CXLI",
       "reentry": "*The* Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s163",
-      "title": "Letter Cxlii",
-      "place": "Letter Cxlii",
+      "title": "Letter CXLII",
+      "place": "Letter CXLII",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s164",
-      "title": "Letter Cxliii",
-      "place": "Letter Cxliii",
+      "title": "Letter CXLIII",
+      "place": "Letter CXLIII",
       "reentry": "*The* Presidente de Tourvel *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s165",
-      "title": "Letter Cxliv",
-      "place": "Letter Cxliv",
+      "title": "Letter CXLIV",
+      "place": "Letter CXLIV",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s166",
-      "title": "Letter Cxlv",
-      "place": "Letter Cxlv",
+      "title": "Letter CXLV",
+      "place": "Letter CXLV",
       "reentry": "*The* Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s167",
-      "title": "Letter Cxlvi",
-      "place": "Letter Cxlvi",
+      "title": "Letter CXLVI",
+      "place": "Letter CXLVI",
       "reentry": "*The* Marchioness de Merteuil *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s168",
-      "title": "Letter Cxlvii",
-      "place": "Letter Cxlvii",
+      "title": "Letter CXLVII",
+      "place": "Letter CXLVII",
       "reentry": "Madame de Volanges *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s169",
-      "title": "Letter Cxlviii",
-      "place": "Letter Cxlviii",
+      "title": "Letter CXLVIII",
+      "place": "Letter CXLVIII",
       "reentry": "*The* Chevalier Danceny *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s170",
-      "title": "Letter Cxlix",
-      "place": "Letter Cxlix",
+      "title": "Letter CXLIX",
+      "place": "Letter CXLIX",
       "reentry": "Madame de Volanges *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s171",
-      "title": "Letter Cl",
-      "place": "Letter Cl",
+      "title": "Letter CL",
+      "place": "Letter CL",
       "reentry": "Chevalier Danceny *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s172",
-      "title": "Letter Cli",
-      "place": "Letter Cli",
+      "title": "Letter CLI",
+      "place": "Letter CLI",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s173",
-      "title": "Letter Clii",
-      "place": "Letter Clii",
+      "title": "Letter CLII",
+      "place": "Letter CLII",
       "reentry": "*The* Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s174",
-      "title": "Letter Cliii",
-      "place": "Letter Cliii",
+      "title": "Letter CLIII",
+      "place": "Letter CLIII",
       "reentry": "Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
@@ -1242,8 +1242,8 @@
     },
     {
       "id": "s176",
-      "title": "Letter Cliv",
-      "place": "Letter Cliv",
+      "title": "Letter CLIV",
+      "place": "Letter CLIV",
       "reentry": "Madame de Volanges *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
@@ -1256,57 +1256,57 @@
     },
     {
       "id": "s178",
-      "title": "Letter Clv",
-      "place": "Letter Clv",
+      "title": "Letter CLV",
+      "place": "Letter CLV",
       "reentry": "*The* Viscount de Valmont *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s179",
-      "title": "Letter Clvi",
-      "place": "Letter Clvi",
+      "title": "Letter CLVI",
+      "place": "Letter CLVI",
       "reentry": "Cecilia Volanges *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s180",
-      "title": "Letter Clvii",
-      "place": "Letter Clvii",
+      "title": "Letter CLVII",
+      "place": "Letter CLVII",
       "reentry": "*The* Chevalier Danceny *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s181",
-      "title": "Letter Clviii",
-      "place": "Letter Clviii",
+      "title": "Letter CLVIII",
+      "place": "Letter CLVIII",
       "reentry": "*The* Viscount de Valmont *to the* Marchioness de Merteuil.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s182",
-      "title": "Letter Clix",
-      "place": "Letter Clix",
+      "title": "Letter CLIX",
+      "place": "Letter CLIX",
       "reentry": "*The* Marchioness de Merteuil *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s183",
-      "title": "Letter Clx",
-      "place": "Letter Clx",
+      "title": "Letter CLX",
+      "place": "Letter CLX",
       "reentry": "Madame de Volanges *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s184",
-      "title": "Letter Clxi",
-      "place": "Letter Clxi",
+      "title": "Letter CLXI",
+      "place": "Letter CLXI",
       "reentry": "*The* Presidente de Tourvel.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s185",
-      "title": "Letter Clxii",
-      "place": "Letter Clxii",
+      "title": "Letter CLXII",
+      "place": "Letter CLXII",
       "reentry": "Chevalier Danceny *to the* Viscount de Valmont.",
       "prompt": "A word from this stretch."
     },
@@ -1319,8 +1319,8 @@
     },
     {
       "id": "s187",
-      "title": "Letter Clxiii",
-      "place": "Letter Clxiii",
+      "title": "Letter CLXIII",
+      "place": "Letter CLXIII",
       "reentry": "M. Bertrand *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
@@ -1333,15 +1333,15 @@
     },
     {
       "id": "s189",
-      "title": "Letter Clxiv",
-      "place": "Letter Clxiv",
+      "title": "Letter CLXIV",
+      "place": "Letter CLXIV",
       "reentry": "Madame de Rosemonde *to* M. Bertrand.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s190",
-      "title": "Letter Clxv",
-      "place": "Letter Clxv",
+      "title": "Letter CLXV",
+      "place": "Letter CLXV",
       "reentry": "Madame de Volanges *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
@@ -1354,8 +1354,8 @@
     },
     {
       "id": "s192",
-      "title": "Letter Clxvi",
-      "place": "Letter Clxvi",
+      "title": "Letter CLXVI",
+      "place": "Letter CLXVI",
       "reentry": "M. Bertrand *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
@@ -1368,15 +1368,15 @@
     },
     {
       "id": "s194",
-      "title": "Letter Clxvii",
-      "place": "Letter Clxvii",
+      "title": "Letter CLXVII",
+      "place": "Letter CLXVII",
       "reentry": "Anonymous *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s195",
-      "title": "Letter Clxviii",
-      "place": "Letter Clxviii",
+      "title": "Letter CLXVIII",
+      "place": "Letter CLXVIII",
       "reentry": "Madame de Volanges *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
@@ -1389,8 +1389,8 @@
     },
     {
       "id": "s197",
-      "title": "Letter Clxix",
-      "place": "Letter Clxix",
+      "title": "Letter CLXIX",
+      "place": "Letter CLXIX",
       "reentry": "*The* Chevalier Danceny *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
@@ -1410,29 +1410,29 @@
     },
     {
       "id": "s200",
-      "title": "Letter Clxx",
-      "place": "Letter Clxx",
+      "title": "Letter CLXX",
+      "place": "Letter CLXX",
       "reentry": "Madame de Volanges *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s201",
-      "title": "Letter Clxxi",
-      "place": "Letter Clxxi",
+      "title": "Letter CLXXI",
+      "place": "Letter CLXXI",
       "reentry": "Madame de Rosemonde *to the* Chevalier Danceny.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s202",
-      "title": "Letter Clxxii",
-      "place": "Letter Clxxii",
+      "title": "Letter CLXXII",
+      "place": "Letter CLXXII",
       "reentry": "Madame de Rosemonde *to* Madame de Volanges.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s203",
-      "title": "Letter Clxxiii",
-      "place": "Letter Clxxiii",
+      "title": "Letter CLXXIII",
+      "place": "Letter CLXXIII",
       "reentry": "Madame de Volanges *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
@@ -1445,15 +1445,15 @@
     },
     {
       "id": "s205",
-      "title": "Letter Clxxiv",
-      "place": "Letter Clxxiv",
+      "title": "Letter CLXXIV",
+      "place": "Letter CLXXIV",
       "reentry": "*The* Chevalier Danceny *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s206",
-      "title": "Letter Clxxv",
-      "place": "Letter Clxxv",
+      "title": "Letter CLXXV",
+      "place": "Letter CLXXV",
       "reentry": "Madame de Volanges *to* Madame de Rosemonde.",
       "prompt": "A word from this stretch."
     },

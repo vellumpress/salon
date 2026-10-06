@@ -17,30 +17,30 @@
     },
     {
       "id": "s1",
-      "title": "Book Ii",
-      "place": "Book Ii",
-      "reentry": "I. the Charter of the Cities 65",
+      "title": "Book II",
+      "place": "Book II",
+      "reentry": "I. The Charter of the Cities 65",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
-      "title": "Book Iii",
-      "place": "Book Iii",
-      "reentry": "I. the Mental Condition of Adam Wayne 125",
+      "title": "Book III",
+      "place": "Book III",
+      "reentry": "I. The Mental Condition of Adam Wayne 125",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
-      "title": "Book Iv",
-      "place": "Book Iv",
-      "reentry": "I. the Battle of the Lamps 189",
+      "title": "Book IV",
+      "place": "Book IV",
+      "reentry": "I. The Battle of the Lamps 189",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
       "title": "Book V",
       "place": "Book V",
-      "reentry": "I. the Empire of Notting Hill 259",
+      "reentry": "I. The Empire of Notting Hill 259",
       "prompt": "A word from this stretch."
     },
     {
@@ -175,17 +175,17 @@
     {
       "id": "s0-3",
       "sceneId": "s0",
-      "text": "Iii. the Hill of Humour 49"
+      "text": "III. The Hill of Humour 49"
     },
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "I. the Charter of the Cities 65"
+      "text": "I. The Charter of the Cities 65"
     },
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "Ii. the Council of the Provosts 82"
+      "text": "II. The Council of the Provosts 82"
     },
     {
       "id": "s1-2",
@@ -195,37 +195,37 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "I. the Mental Condition of Adam Wayne 125"
+      "text": "I. The Mental Condition of Adam Wayne 125"
     },
     {
       "id": "s2-1",
       "sceneId": "s2",
-      "text": "Ii. the Remarkable Mr. Turnbull 147"
+      "text": "II. The Remarkable Mr. Turnbull 147"
     },
     {
       "id": "s2-2",
       "sceneId": "s2",
-      "text": "Iii. the Experiment of Mr. Buck 163"
+      "text": "III. The Experiment of Mr. Buck 163"
     },
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "I. the Battle of the Lamps 189"
+      "text": "I. The Battle of the Lamps 189"
     },
     {
       "id": "s3-1",
       "sceneId": "s3",
-      "text": "Ii. the Correspondent of the \"Court Journal\" 208"
+      "text": "II. The Correspondent of the \"Court Journal\" 208"
     },
     {
       "id": "s3-2",
       "sceneId": "s3",
-      "text": "Iii. the Great Army of South Kensington 224"
+      "text": "III. The Great Army of South Kensington 224"
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "I. the Empire of Notting Hill 259"
+      "text": "I. The Empire of Notting Hill 259"
     },
     {
       "id": "s4-1",
