@@ -127,6 +127,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "elysium": { label: "Pall Mall, London", region: "gb" },
     "maximina": { label: "Pasajes", region: "es" },
     "love-among-the-chickens": { label: "London", region: "gb" },
+    "muslin": { label: "Galway", region: "ie" },
     "the-fresco": { label: "Pekin", region: "cn" },
     "the-taoist-priest-of-lao-shan": { label: "Lao-shan", region: "cn" },
     "growth-of-the-soil": { label: "Norway", region: "no" },
@@ -451,6 +452,12 @@ test("Mon 5 Oct POST-#238 place reuses gb London; no new region key", () => {
   assert.ok(REGION_SHAPES.gb?.d, "gb shape");
   assert.deepEqual(placeFor(shelfWork("love-among-the-chickens")!), { label: "London", region: "gb" });
   assert.equal(CHIP_ONLY_PLACE["love-among-the-chickens"], undefined);
+});
+
+test("Tue 6 Oct AM place reuses ie; Galway; no new region key", () => {
+  assert.ok(REGION_SHAPES.ie?.d, "ie shape");
+  assert.deepEqual(placeFor(shelfWork("muslin")!), { label: "Galway", region: "ie" });
+  assert.equal(CHIP_ONLY_PLACE["muslin"], undefined);
 });
 
 test("Mon 5 Oct mid Ritual place reuses cn; Pekin chip; no new region key", () => {

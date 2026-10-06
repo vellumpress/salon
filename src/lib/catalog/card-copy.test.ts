@@ -236,6 +236,7 @@ test("known origin overrides", () => {
     "elysium": "United Kingdom",
     "maximina": "Spain",
     "love-among-the-chickens": "United Kingdom",
+    "muslin": "Ireland",
     "the-fresco": "China",
     "the-taoist-priest-of-lao-shan": "China",
   } as const;

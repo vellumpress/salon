@@ -1220,6 +1220,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "maximina",
   // Mira Mon 5 Oct 2026 POST-#238 — Love Among the Chickens follows Maximina, plain Next. Never Featured. Off every Ritual lane.
   "love-among-the-chickens",
+  // Mira Tue 6 Oct 2026 AM — Muslin follows Love Among the Chickens, plain Next. Never Featured. Off every Ritual lane.
+  "muslin",
 ] as const;
 
 /**
