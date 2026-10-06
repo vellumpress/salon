@@ -105,7 +105,7 @@ export const PITCHES: Record<string, string> = {
   "numa-roumestan":
     "That Sunday was a scorching hot Sunday in July, at the yearly competitions. Chapter I, To the Arena — the amphitheatre at Aps, the July festival, and Numa. Alphonse Daudet, in Charles De Kay’s English, French 1881.",
   dracula:
-    "3 May, Bistritz. Left Munich at 8:35 in the evening. Chapter I, Harker’s Journal — Bistritz and paprika hendl. The Host opens in Transylvania. Bram Stoker’s 1897 novel.",
+    "3 May, Bistritz. Left Munich at 8:35 in the evening. Chapter I, Harker’s Journal — Bistritz and paprika hendl. It opens in Transylvania. Bram Stoker’s 1897 novel.",
   "the-tug-of-love":
     "When Elias Goldenberg, Belcovitch’s head cutter, betrothed himself to Fanny Fersht. This reading is just The Tug of Love — Elias, Fanny, Sugarman, and the ring. Israel Zangwill’s 1907 book.",
   "the-house-of-the-seven-gables":
@@ -175,7 +175,7 @@ export const PITCHES: Record<string, string> = {
   "the-emancipated":
     "By a window looking from Posillipo upon the Bay of Naples sat an English lady, engaged in letter-writing. Part I, Chapter I — Posillipo, a widow’s letter, and November sunlight. George Gissing’s 1890 novel. Naples is secular. The first breath is 251 words, left as printed.",
   germinal:
-    "Over the open plain, beneath a starless sky as dark and thick as ink, a man walked alone along the highway from Marchiennes to Montsou. Part One, Chapter I — the Marchiennes–Montsou highway, a starless sky, and beetroot fields. Émile Zola, in Havelock Ellis’s English, 1885. Montsou is not the war of Three Soldiers.",
+    "Over the open plain, beneath a starless sky as dark and thick as ink, a man walked alone along the highway from Marchiennes to Montsou. Part One, Chapter I — the Marchiennes–Montsou highway, a starless sky, and beetroot fields. Émile Zola, in Havelock Ellis’s English, 1885.",
   "our-lady-of-the-pillar":
     "In 1474, a year abounding in divine favours for all Christendom, when King Henry IV. reigned in Castile, there came to live in the city of Segovia a youthful knight named Don Ruy de Cardenas. This reading is just Our Lady of the Pillar — 1474 Segovia and Don Ruy de Cardenas. This reading ends with the tale. Eça de Queirós, in Edgar Prestage’s English, 1906.",
   kipps:
@@ -211,7 +211,7 @@ export const PITCHES: Record<string, string> = {
   "elmer-gantry":
     `Elmer Gantry was drunk. He was eloquently drunk, lovingly and pugnaciously drunk. He leaned against the bar of the Old Home Sample Room, the most gilded and urbane saloon in Cato, Missouri. Chapter I — Cato, Missouri, the Old Home Sample Room, and a man eloquently drunk. Sinclair Lewis’s 1927 novel.`,
   "colonels-dream":
-    `Two gentlemen were seated, one March morning in 189--, in the private office of French and Company, Limited, on lower Broadway. Chapter One — Broadway, French and Company, and an electric clock, then Clarendon in the South. Charles W. Chesnutt’s 1905 novel. The Broadway open is careful after The Rise of David Levinsky.`,
+    `Two gentlemen were seated, one March morning in 189--, in the private office of French and Company, Limited, on lower Broadway. Chapter One — Broadway, French and Company, and an electric clock, then Clarendon in the South. Charles W. Chesnutt’s 1905 novel.`,
   "hard-times":
     `'NOW, what I want is, Facts. Teach these boys and girls nothing but Facts. Facts alone are wanted in life. Book the First, Chapter I, The One Thing Needful — a Facts school-room and Gradgrind. Charles Dickens’s 1854 novel.`,
   "great-god-pan":
@@ -219,7 +219,7 @@ export const PITCHES: Record<string, string> = {
   "manalive":
     `A wind sprang high in the west, like a wave of unreasonable happiness, and tore eastward across England, trailing with it the frosty scent of forests and the cold intoxication of the sea. Part I, Chapter I — a great wind, unreasonable happiness, and Beacon House. G. K. Chesterton’s 1912 novel. The first breath is 337 words, left as printed.`,
   "captain-blood":
-    `Peter Blood, bachelor of medicine and several other things besides, smoked a pipe and tended the geraniums boxed on the sill of his window above Water Lane in the town of Bridgewater. Chapter I, The Messenger — Bridgewater, Water Lane, and geraniums. Rafael Sabatini’s 1922 novel. The Bridgewater open is careful.`,
+    `Peter Blood, bachelor of medicine and several other things besides, smoked a pipe and tended the geraniums boxed on the sill of his window above Water Lane in the town of Bridgewater. Chapter I, The Messenger — Bridgewater, Water Lane, and geraniums. Rafael Sabatini’s 1922 novel.`,
   "the-monomaniac":
     `Roubaud, on entering the room, placed the loaf, the pâté, and the bottle of white wine on the table. Chapter I — Roubaud, the Impasse d’Amsterdam, and a station window. Émile Zola, in Edward Vizetelly’s English, 1890. Vizetelly is named in the About only.`,
   "tartarin-de-tarascon":
@@ -227,7 +227,7 @@ export const PITCHES: Record<string, string> = {
   "the-time-machine":
     `The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. This reading is just The Time Machine — the Time Traveller, a fire, and silver lilies. It opens at the Introduction. This reading ends with the novel. H. G. Wells’s 1895 novel.`,
   "prisoner-of-zenda":
-    `"I wonder when in the world you're going to do anything, Rudolf?" said my brother's wife. Chapter 1 — a Rassendyll breakfast, Elphberg hair, and doing nothing. Anthony Hope’s 1894 novel. The England breakfast is the open.`,
+    `"I wonder when in the world you're going to do anything, Rudolf?" said my brother's wife. Chapter 1 — a Rassendyll breakfast, Elphberg hair, and doing nothing. Anthony Hope’s 1894 novel.`,
   "kidnapped":
     `I will begin the story of my adventures with a certain morning early in the month of June, the year of grace 1751, when I took the key for the last time out of the door of my father's house. Chapter I — Essendean, a June morning, a key, and the House of Shaws. Robert Louis Stevenson’s 1886 novel.`,
   "revolt-of-the-angels":
@@ -241,7 +241,7 @@ export const PITCHES: Record<string, string> = {
   "the-joy-of-captain-ribot":
     `In Malaga they cook it not at all badly; in Vigo better yet; in Bilbao I have eaten it deliciously seasoned on more than one occasion. Chapter I — the Gijón wharf, with Valencia to come. Sylvester Baxter’s introduction is in the full book, not in this opening. Armando Palacio Valdés, in Minna Caroline Smith’s English, 1900. Smith is named in the About only. The English year is 1900. Accents stay on Señor, Señora, Señorita, and Capitán. Marti is printed as Marti.`,
   "saracinesca":
-    `The hour was six o'clock, and the rooms of the Embassy were as full as they were likely to be that day. Chapter II — the Embassy rooms, Rome. Chapter I stays in the book and is not the open. F. Marion Crawford’s 1887 novel. Reputation, marriage, and gossip in Roman high society. The first breath is 334 words, left as printed.`,
+    `The hour was six o'clock, and the rooms of the Embassy were as full as they were likely to be that day. Chapter II — the Embassy rooms, Rome. Chapter I stays in the book. F. Marion Crawford’s 1887 novel. Reputation, marriage, and gossip in Roman high society. The first breath is 334 words, left as printed.`,
   "the-torrents-of-spring":
     `… At two o'clock in the night he had gone back to his study. The frame, then Chapter I — the summer of 1840, in Frankfort as printed. Ivan Turgenev, in Constance Garnett’s English, 1897. Garnett is named in the About only. The English year is 1897. This is The Torrents of Spring only. It ends at preparing to go to America. First Love is not in this book, and Mumu is not in this book.`,
   "the-bet":
@@ -249,7 +249,7 @@ export const PITCHES: Record<string, string> = {
   "the-bitter-tea-of-general-yen":
     `Megan, drawing her chair over to the window, saw that the rain had given an air of transience to the solid Chinese earth. Chapter I — a rainy road by the French Concession, Shanghai. Grace Zaring Stone’s 1930 novel. The printed word “transcience” in the first sentence is corrected to “transience”. A heads-up before you start: this is a 1930 novel and it sounds like one. The word “coolie” turns up often, and one American character uses a racial slur in dialogue. The book also looks at China and at General Yen through a Western, Orientalist lens, which is partly what the story is about and partly its own blind spot.`,
   "the-woman-of-andros":
-    `The earth sighed as it turned in its course; the shadow of night crept gradually along the Mediterranean, and Asia was left in darkness. Section I — nightfall over the Mediterranean, Brynos. The Terence and Menander note is the Epigraph and stays in the book; this open starts at Section I. Thornton Wilder’s 1930 novel. The eight sections are unnumbered in print and labelled Section I–VIII here.`,
+    `The earth sighed as it turned in its course; the shadow of night crept gradually along the Mediterranean, and Asia was left in darkness. Section I — nightfall over the Mediterranean, Brynos. The Terence and Menander note is the Epigraph and stays in the book; it opens at Section I. Thornton Wilder’s 1930 novel. The eight sections are unnumbered in print and labelled Section I–VIII here.`,
   "bella-donna":
     `Doctor Meyer Isaacson had got on as only a modern Jew whose home is London can get on, with a rapidity that was alarming. Chapter I — Doctor Meyer Isaacson, London, with Egypt to come from Chapter XI. Robert Hichens’s 1908 novel. Two things to know going in. The very first sentence sums Dr. Isaacson up as “a modern Jew” who has got on in London, the kind of sweeping generalization about Jewish people that was common in 1908, even about a character the book admires. Once the story reaches Egypt, Baroudi and the Egyptians around him are painted in a heavily Orientalist way: exotic, sensual, and menacing. Both are the book’s attitudes.`,
   "nina-balatka":
@@ -261,15 +261,15 @@ export const PITCHES: Record<string, string> = {
   "alice-adams":
     `The patient, an old-fashioned man, thought the nurse made a mistake in keeping both of the windows open, and her sprightly disregard of his protests added something to his hatred of her. Chapter I — Virgil Adams’s sleepless night in a smoky Midwestern city; Alice comes in with Chapter II. Booth Tarkington’s 1921 novel. The year is from the Wikipedia page the PG page links to; neither the PG page nor the PG text prints one. Words printed in capitals for emphasis are set in italics. A heads-up before you start: this is a 1921 novel and it uses the period’s racial language, including an old slur for Black people a few times, and a scene at the dance leans on a stereotype of the Black cloakroom staff. Those are the book’s attitudes.`,
   "quartet":
-    `It was about half-past five on an October afternoon when Marya Zelli came out of the Café Lavenue, which is a dignified and comparatively expensive establishment on the Boulevard du Montparnasse. Chapter One — the Café Lavenue and the Boulevard du Montparnasse, Paris. The R. C. Dunning epigraph is the Epigraph and stays in the book; this open starts at Chapter One. Jean Rhys’s 1928 novel, first published as Postures. The dialogue is set in double quotes; “She begun” stays as printed. Before you start: this is a bleak book about a stranded woman kept inside a cruel triangle. It carries the period’s antisemitic phrasing, in the narration and in dialogue, and one racial slur. Those are the book’s 1928 voices.`,
+    `It was about half-past five on an October afternoon when Marya Zelli came out of the Café Lavenue, which is a dignified and comparatively expensive establishment on the Boulevard du Montparnasse. Chapter One — the Café Lavenue and the Boulevard du Montparnasse, Paris. The R. C. Dunning epigraph is the Epigraph and stays in the book; it opens at Chapter One. Jean Rhys’s 1928 novel, first published as Postures. The dialogue is set in double quotes; “She begun” stays as printed. Before you start: this is a bleak book about a stranded woman kept inside a cruel triangle. It carries the period’s antisemitic phrasing, in the narration and in dialogue, and one racial slur. Those are the book’s 1928 voices.`,
   "song-of-songs-sudermann":
     `Lilly was fourteen years old when her father, Kilian Czepanek, the music-master, suddenly disappeared. Part I, Chapter I — the music-master’s flight, in a garrison town in eastern Germany. Hermann Sudermann, in Thomas Seltzer’s English. Seltzer is named in the About only. The English year is 1909. The chapters are labelled Part I and Part II, because the numbering starts again. A few things to know going in: it is frank, for its day, about seduction, adultery, and a woman kept by one man after another, and it carries the period’s antisemitic phrasing and one racial slur in a story someone tells. Those are the book’s attitudes.`,
   "its-wavering-image":
     `Pan was a half white, half Chinese girl. This reading is just “Its Wavering Image” — Chinatown, San Francisco, from her father’s bazaar on Dupont Street to a high room open to the stars. This reading stops when Pan is comforted. Sui Sin Far’s 1912 story, from Mrs. Spring Fragrance. The four numbered sections, the song, and the break before the last scene stay as printed. A light note: the story uses the words of its time, “half white, half Chinese”, and frames Chinatown as picturesque and quaint the way the white reporter sees it; the story is on Pan’s side. This is not the title story, Mrs. Spring Fragrance.`,
   "java-head":
-    `Very late indeed in May, but early in the morning, Laurel Ammidon lay in bed considering two widely different aspects of chairs. Section I — Laurel Ammidon and the chairs, on a May morning in Salem. The Chwang-Tze epigraph is the Epigraph and stays in the book; this open starts at Section I and stops at her piano scales. Joseph Hergesheimer’s 1918 novel. The sections are numbered I to X, as printed; no chapter titles are added. Two print errors are fixed: “rerepeated” is set as “repeated”, and a missing period is restored. A heads-up before you start: it carries the period’s slurs and labels for Chinese people, one racial slur in a character’s speech, and Orientalist framing of Taou Yuen, and the ending turns on opium. Those are the book’s 1918 voices.`,
+    `Very late indeed in May, but early in the morning, Laurel Ammidon lay in bed considering two widely different aspects of chairs. Section I — Laurel Ammidon and the chairs, on a May morning in Salem. The Chwang-Tze epigraph is the Epigraph and stays in the book; it opens at Section I and stops at her piano scales. Joseph Hergesheimer’s 1918 novel. The sections are numbered I to X, as printed; no chapter titles are added. Two print errors are fixed: “rerepeated” is set as “repeated”, and a missing period is restored. A heads-up before you start: it carries the period’s slurs and labels for Chinese people, one racial slur in a character’s speech, and Orientalist framing of Taou Yuen, and the ending turns on opium. Those are the book’s 1918 voices.`,
   "sunshine-sketches-of-a-little-town":
-    `I don't know whether you know Mariposa. Ch ONE: The Hostelry of Mr. Smith — the town, the lake and the Mariposa Belle, until the summer visitors go. Leacock’s own Preface comes first in the book and stays; this open starts at Ch ONE. Stephen Leacock’s 1912 book. The year is from the Wikipedia page the PG page links to; the Preface is signed June 1912. Each chapter carries its sketch title, and each sketch stands on its own. The signs, placards and headlines printed in capitals are set in italics. A light heads-up: a few period phrases date it, a passing line about Black performers and some “Indian” relics and jokes. Those are the book’s 1912 voices.`,
+    `I don't know whether you know Mariposa. Ch ONE: The Hostelry of Mr. Smith — the town, the lake and the Mariposa Belle, until the summer visitors go. Leacock’s own Preface comes first in the book and stays; it opens at Ch ONE. Stephen Leacock’s 1912 book. The year is from the Wikipedia page the PG page links to; the Preface is signed June 1912. Each chapter carries its sketch title, and each sketch stands on its own. The signs, placards and headlines printed in capitals are set in italics. A light heads-up: a few period phrases date it, a passing line about Black performers and some “Indian” relics and jokes. Those are the book’s 1912 voices.`,
   "guest-the-one-eyed":
     `Snow, snow, snow! Book I, Chapter I — Christmas snow on the heights above Borg, and a poor man coming home with an empty sack. Gunnar Gunnarsson, in W. W. Worster’s English, as the 1922 title page credits him. Worster is named in the About only. The English year is 1922. The chapters are labelled by Book, because each Book starts again at Chapter I. A few things to know going in: it is a long saga, about nine hours, over two generations of one farm, with a Copenhagen strand; the thee and thou are only in prayers and scripture. Some of the long paragraphs have been broken into shorter screens; no words are changed.`,
   "the-blind-musician":
@@ -447,7 +447,7 @@ export const PITCHES: Record<string, string> = {
   cane:
     `Karintha: her skin is like dusk on the eastern horizon. This reading is just Karintha — the later Georgia sketches come in later readings.`,
   "the-awakening":
-    `A green and yellow parrot at Grand Isle keeps repeating Allez vous-en. This reading is the Pontellier gallery, Chapter I. The novel continues; the selected shorts stay out.`,
+    `A green and yellow parrot at Grand Isle keeps repeating Allez vous-en. This reading is the Pontellier gallery, Chapter I. The novel continues.`,
   "lolly-willowes":
     `When her father died, Laura Willowes went to live in London. Caroline’s spare-room negotiation — eiderdown, bureau — lands on “Of course, you will come to us.” Chapter I only.`,
   "a-passage-to-india":
