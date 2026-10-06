@@ -1,6 +1,7 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { HoldLeave, Hourglass } from "@/components/hourglass";
+import { useChromeStatusBar } from "@/lib/use-reader-daylight";
 
 export const Route = createFileRoute("/glass")({
   component: GlassPage,
@@ -19,6 +20,7 @@ function formatLeft(ms: number) {
 
 function GlassPage() {
   const navigate = useNavigate();
+  useChromeStatusBar();
   const [minutes, setMinutes] = useState<number>(20);
   const [phase, setPhase] = useState<Phase>("pick");
   const [endsAt, setEndsAt] = useState(0);
@@ -153,10 +155,13 @@ function GlassPage() {
     return () => document.removeEventListener("contextmenu", block);
   }, []);
 
-  useEffect(() => () => {
-    clearHold();
-    void unlockScreen();
-  }, []);
+  useEffect(
+    () => () => {
+      clearHold();
+      void unlockScreen();
+    },
+    [],
+  );
 
   if (phase === "pick") {
     return (
@@ -169,9 +174,7 @@ function GlassPage() {
           >
             Home
           </button>
-          <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
-            Hourglass
-          </h1>
+          <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">Hourglass</h1>
         </header>
         <div className="flex min-h-0 flex-1 flex-col justify-end overflow-y-auto p-5 sm:p-10">
           <p className="font-serif text-lg text-ink/70">A sitting for a book in the hand.</p>

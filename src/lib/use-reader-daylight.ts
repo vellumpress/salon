@@ -6,7 +6,36 @@ import {
   writeDaylightEnabled,
   type DaylightSample,
 } from "./daylight-colors.ts";
-import { PAGE_PAPER, applyStatusBarColorToDocument } from "./status-bar-color.ts";
+import {
+  PAGE_PAPER,
+  applyStatusBarColorToDocument,
+  readChromeBackground,
+} from "./status-bar-color.ts";
+
+/** Cold open matches the server (noon, not yet live). */
+const SERVER_SAMPLE_AT = new Date(2026, 0, 1, 12, 0, 0);
+
+/**
+ * Client-only clock already read by a gate frame (device-import loading).
+ * The reader that replaces that frame paints the same color on its first
+ * commit, so the status bar does not fall back to paper. Never read this
+ * during SSR — a warm server would leak another request's clock into HTML.
+ */
+type RememberedDaylight = {
+  enabled: boolean;
+  sample: DaylightSample;
+};
+
+let remembered: RememberedDaylight | null = null;
+
+function rememberedNow(): RememberedDaylight | null {
+  if (typeof window === "undefined") return null;
+  return remembered;
+}
+
+function remember(enabled: boolean, sample: DaylightSample) {
+  remembered = { enabled, sample };
+}
 
 export type ReaderDaylight = {
   /** Persisted preference. Default on, including before storage is read. */
@@ -24,16 +53,21 @@ export type ReaderDaylight = {
  * After mount, the clock is read and then checked on each minute boundary.
  */
 export function useReaderDaylight(): ReaderDaylight {
-  const [enabled, setEnabledState] = useState(true);
-  const [live, setLive] = useState(false);
+  const [enabled, setEnabledState] = useState(() => rememberedNow()?.enabled ?? true);
+  const [live, setLive] = useState(() => rememberedNow() != null);
   const [motion, setMotion] = useState(false);
-  const [sample, setSample] = useState<DaylightSample>(() =>
-    daylightAt(new Date(2026, 0, 1, 12, 0, 0)),
+  const [sample, setSample] = useState<DaylightSample>(
+    () => rememberedNow()?.sample ?? daylightAt(SERVER_SAMPLE_AT),
   );
 
   useEffect(() => {
-    setEnabledState(readDaylightEnabled());
-    const sync = () => setSample(daylightAt(new Date()));
+    const on = readDaylightEnabled();
+    setEnabledState(on);
+    const sync = () => {
+      const next = daylightAt(new Date());
+      remember(readDaylightEnabled(), next);
+      setSample(next);
+    };
     sync();
     setLive(true);
     let interval = 0;
@@ -43,7 +77,10 @@ export function useReaderDaylight(): ReaderDaylight {
       interval = window.setInterval(sync, 60_000);
     }, wait);
     const onStorage = (event: StorageEvent) => {
-      if (event.key === DAYLIGHT_COLORS_KEY) setEnabledState(readDaylightEnabled());
+      if (event.key !== DAYLIGHT_COLORS_KEY) return;
+      const next = readDaylightEnabled();
+      if (remembered) remembered = { ...remembered, enabled: next };
+      setEnabledState(next);
     };
     window.addEventListener("storage", onStorage);
     return () => {
@@ -68,6 +105,7 @@ export function useReaderDaylight(): ReaderDaylight {
 
   function setEnabled(on: boolean) {
     writeDaylightEnabled(on);
+    if (remembered) remembered = { ...remembered, enabled: on };
     setEnabledState(on);
   }
 
@@ -75,7 +113,10 @@ export function useReaderDaylight(): ReaderDaylight {
 
   useLayoutEffect(() => {
     const root = document.documentElement;
-    if (!active) {
+    // Before the clock is read, leave whatever StatusBarSync sampled. Forcing
+    // paper here is what left a paper status bar after a device import mounted.
+    if (!live) return;
+    if (!enabled) {
       root.removeAttribute("data-status-motion");
       applyStatusBarColorToDocument(PAGE_PAPER);
       return;
@@ -83,7 +124,7 @@ export function useReaderDaylight(): ReaderDaylight {
     if (motion) root.setAttribute("data-status-motion", "1");
     else root.removeAttribute("data-status-motion");
     applyStatusBarColorToDocument(sample.background);
-  }, [active, motion, sample.background]);
+  }, [live, enabled, motion, sample.background]);
 
   useLayoutEffect(() => {
     return () => {
@@ -116,4 +157,16 @@ export function useReaderDaylight(): ReaderDaylight {
       : undefined,
     style,
   };
+}
+
+/**
+ * Paper and other route chrome. Samples the frame the same way the root
+ * status-bar sync does, and yields when a live reader already published
+ * `--status-page`.
+ */
+export function useChromeStatusBar() {
+  useLayoutEffect(() => {
+    if (document.querySelector('[data-daylight]:not([data-daylight="off"])')) return;
+    applyStatusBarColorToDocument(readChromeBackground(document) ?? PAGE_PAPER);
+  }, []);
 }

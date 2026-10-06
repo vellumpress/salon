@@ -17,6 +17,7 @@ import { shareOrCopy } from "@/lib/shuffle";
 import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
 import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
+import { useChromeStatusBar } from "@/lib/use-reader-daylight";
 
 export const Route = createFileRoute("/sit/$token")({
   component: HostedSitPage,
@@ -35,6 +36,7 @@ function HostedSitPage() {
   const stored = hostedSits.find((row) => row.id === decoded?.id);
   const sit = stored ?? decoded ?? null;
   const [copied, setCopied] = useState(false);
+  useChromeStatusBar();
 
   useEffect(() => {
     if (decoded) rememberHostedSit(decoded);
@@ -121,7 +123,13 @@ function HostedSitPage() {
       </header>
 
       <div className="min-h-0 flex-1 overflow-y-auto">
-        <div className={cn("flex min-h-40 flex-col justify-end p-5 sm:p-8", fillClass(fill), fillInk(fill))}>
+        <div
+          className={cn(
+            "flex min-h-40 flex-col justify-end p-5 sm:p-8",
+            fillClass(fill),
+            fillInk(fill),
+          )}
+        >
           <p className="type-kicker opacity-80">
             {formatHandle(room.hostHandle)} · {sitDurationLabel(room.minutes)}
           </p>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { TbrReader } from "@/components/chamber-reader";
 import { shelfWork } from "@/lib/catalog/shelf";
@@ -8,6 +8,8 @@ import { loadWork, peekWork, type Work } from "@/lib/works";
 import { useTbr } from "@/lib/store";
 import { asSittingMinutes } from "@/lib/sitting";
 import { asPairCode, searchFlag } from "@/lib/shuffle";
+import { useReaderDaylight } from "@/lib/use-reader-daylight";
+import { cn } from "@/lib/utils";
 
 type ReadSearch = {
   shuffle?: boolean;
@@ -48,13 +50,35 @@ export const Route = createFileRoute("/read/$workId")({
     if (typeof search.echo === "string" && search.echo.length >= 8 && search.echo.length <= 2400) {
       next.echo = search.echo;
     }
-    if (typeof search.hosted === "string" && search.hosted.length >= 8 && search.hosted.length <= 2400) {
+    if (
+      typeof search.hosted === "string" &&
+      search.hosted.length >= 8 &&
+      search.hosted.length <= 2400
+    ) {
       next.hosted = search.hosted;
     }
     return next;
   },
   component: ReadPage,
 });
+
+/**
+ * Loading and error frames sit on the same daylight path as `TbrReader`.
+ * A device import paints this gate first; when the reader mounts it reuses
+ * the clock already published to `--status-page`, so the bar does not stay paper.
+ */
+function ReadGate({ children }: { children: ReactNode }) {
+  const daylight = useReaderDaylight();
+  return (
+    <div
+      className={cn("frame-screen bg-paper text-ink", daylight.className)}
+      style={daylight.style}
+      data-daylight={daylight.active ? daylight.sample.phase : "off"}
+    >
+      {children}
+    </div>
+  );
+}
 
 function ReadPage() {
   const { workId } = Route.useParams();
@@ -101,7 +125,7 @@ function ReadPage() {
 
   if (work === undefined) {
     return (
-      <div className="frame-screen bg-paper text-ink">
+      <ReadGate>
         <header className="flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/"
@@ -112,17 +136,15 @@ function ReadPage() {
         </header>
         <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
           <p className="type-kicker text-muted">{meta?.author ?? ""}</p>
-          <p className="mt-2 type-title">
-            {meta?.title ?? "Opening"}
-          </p>
+          <p className="mt-2 type-title">{meta?.title ?? "Opening"}</p>
         </div>
-      </div>
+      </ReadGate>
     );
   }
 
   if (!work) {
     return (
-      <div className="frame-screen bg-paper text-ink">
+      <ReadGate>
         <header className="flex shrink-0 items-stretch border-b border-ink">
           <Link
             to="/"
@@ -133,10 +155,8 @@ function ReadPage() {
         </header>
         <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
           <p className="type-kicker text-muted">{meta?.author ?? ""}</p>
-          <p className="mt-2 type-title">
-            {meta?.title ?? "This sitting"}
-          </p>
-          <p className="mt-3 font-serif text-lg text-ink/70">
+          <p className="mt-2 type-title">{meta?.title ?? "This sitting"}</p>
+          <p className="mt-3 font-serif text-lg text-muted">
             {typeof navigator !== "undefined" && navigator.onLine === false
               ? "Offline"
               : "This text would not come."}
@@ -150,7 +170,7 @@ function ReadPage() {
             </Link>
           ) : null}
         </div>
-      </div>
+      </ReadGate>
     );
   }
 

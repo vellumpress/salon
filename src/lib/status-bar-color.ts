@@ -2,7 +2,9 @@
  * iOS status bar color.
  *
  * Safari reads `<meta name="theme-color">` live and picks dark or light
- * glyphs from the luminance. An installed PWA with
+ * glyphs from the luminance. iOS 26 ignores that meta and samples the html/body
+ * background, or a fixed edge at the top of the viewport — `--status-page` is
+ * that paint. An installed PWA with
  * `apple-mobile-web-app-status-bar-style: black-translucent` draws the page
  * under the status bar and always uses white glyphs, so a light page gets a
  * strip deepened toward ink until those glyphs clear WCAG AA (4.5). The page

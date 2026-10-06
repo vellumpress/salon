@@ -3,6 +3,7 @@ import { useEffect, useState, type DragEvent, type FormEvent } from "react";
 import { fetchPage } from "@/lib/fetch-page";
 import { useTbr } from "@/lib/store";
 import type { Work } from "@/lib/literature";
+import { useChromeStatusBar } from "@/lib/use-reader-daylight";
 
 export const Route = createFileRoute("/page")({
   component: ImportPage,
@@ -17,6 +18,7 @@ function looksLikePdf(name: string, type: string) {
 
 function ImportPage() {
   const [live, setLive] = useState(false);
+  useChromeStatusBar();
   useEffect(() => setLive(true), []);
 
   return (
@@ -28,9 +30,7 @@ function ImportPage() {
         >
           Home
         </Link>
-        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
-          Import
-        </h1>
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">Import</h1>
       </header>
       {live ? <ImportBody /> : <ImportShell />}
     </div>
@@ -42,9 +42,7 @@ function ImportShell() {
     <div className="flex min-h-0 flex-1 flex-col justify-end overflow-y-auto">
       <div className="flex min-h-36 flex-col justify-end p-5 sm:p-10">
         <p className="type-kicker text-muted">A sitting from elsewhere</p>
-        <p className="mt-2 type-title">
-          A page or a PDF
-        </p>
+        <p className="mt-2 type-title">A page or a PDF</p>
       </div>
     </div>
   );
@@ -128,15 +126,11 @@ function ImportBody() {
     >
       <div className="flex min-h-36 flex-col justify-end p-5 sm:p-10">
         <p className="type-kicker text-muted">A sitting from elsewhere</p>
-        <p className="mt-2 type-title">
-          A page or a PDF
-        </p>
+        <p className="mt-2 type-title">A page or a PDF</p>
       </div>
       <form onSubmit={onSubmit} className="flex flex-col">
         <label className="flex items-stretch border-t border-ink">
-          <span className="flex w-20 shrink-0 items-center px-4 type-kicker text-muted">
-            Link
-          </span>
+          <span className="flex w-20 shrink-0 items-center px-4 type-kicker text-muted">Link</span>
           <input
             value={url}
             onChange={(event) => setUrl(event.target.value)}
@@ -151,7 +145,9 @@ function ImportBody() {
           />
         </label>
         {error ? (
-          <p className="border-t border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">{error}</p>
+          <p className="border-t border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">
+            {error}
+          </p>
         ) : null}
         <button
           type="submit"
