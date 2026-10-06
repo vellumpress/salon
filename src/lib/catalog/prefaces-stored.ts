@@ -531,7 +531,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "the-black-riders-and-other-lines": `The Black Riders, and Other Lines (1895): war, streets, and sentences that refuse consolation. Let the first line arrive when you are ready.`,
   "the-black-tulip": `Haarlem, a tulip, and a prisoner who grows a fortune through a prison window. Sit with the world a moment before the first breath.`,
   "the-blithedale-romance": `A utopian farm, a veiled lady, and a drowning that ends the experiment. Sit with the world a moment before the first breath.`,
-  "the-book-of-khalid": `Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Expect Expect Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony, left as printed.`,
+  "the-book-of-khalid": `Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Expect Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony, left as printed.`,
   "the-book-of-the-birds-paksi-pakaranam": `A Siamese bird epic, in Crosby’s English. Enter one room at a time.`,
   "the-bostonians": `Boston reformers, a Southern cousin, and a fight over a woman’s voice. Sit with the world a moment before the first breath.`,
   "the-bridge": `Hart Crane’s 1930 poems: The Bridge. Let the first line arrive when you are ready.`,

@@ -29,7 +29,7 @@ export const PITCHES: Record<string, string> = {
   zeno:
     "Zeno’s first cigarettes and the last-cigarette habit, in Trieste. De Zoete’s English; PG 79453 gives the original publication as 1930. Comic self-deception.",
   "the-book-of-khalid":
-    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Expect Expect Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony, left as printed.",
+    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Expect Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony, left as printed.",
   vengeance:
     "Sholem Asch’s Yiddish theater of desire and shame: a house of pleasure that wants respectability. The room keeps score while everyone pretends the door is locked.",
   naomi:
