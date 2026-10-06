@@ -124,6 +124,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "a-monkey": { label: "Christiania", region: "no" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-spoilt-child": { label: "Vaidyabati", region: "in" },
+    "winnie-the-pooh": { label: "the forest", region: "gb" },
     "the-counterfeiters": { label: "Luxembourg Gardens, Paris", region: "fr" },
     "therese": { label: "Argelouse", region: "fr" },
     "elysium": { label: "Pall Mall, London", region: "gb" },
@@ -484,4 +485,10 @@ test("Tue 6 Oct MID place reuses in; Vaidyabati; no new region key", () => {
   assert.ok(REGION_SHAPES.in?.d, "in shape");
   assert.deepEqual(placeFor(shelfWork("the-spoilt-child")!), { label: "Vaidyabati", region: "in" });
   assert.equal(CHIP_ONLY_PLACE["the-spoilt-child"], undefined);
+});
+
+test("Tue 6 Oct MID Pooh place reuses gb; the forest; no new region key", () => {
+  assert.ok(REGION_SHAPES.gb?.d, "gb shape");
+  assert.deepEqual(placeFor(shelfWork("winnie-the-pooh")!), { label: "the forest", region: "gb" });
+  assert.equal(CHIP_ONLY_PLACE["winnie-the-pooh"], undefined);
 });

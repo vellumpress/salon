@@ -726,6 +726,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "a-monkey": "Norway",
   "the-golden-age": "United Kingdom",
   "the-spoilt-child": "India",
+  "winnie-the-pooh": "United Kingdom",
   "the-counterfeiters": "France",
   "therese": "France",
   "elysium": "United Kingdom",

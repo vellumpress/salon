@@ -1,0 +1,416 @@
+{
+  "id": "winnie-the-pooh",
+  "title": "Winnie-the-Pooh",
+  "author": "A. A. Milne",
+  "year": "1926",
+  "note": "Project Gutenberg 67098. Year 1926 printed (Copyright, Canada, 1926; First Printing, October, 1926). Cycle bind: Chapter II (In Which Pooh Goes Visiting and Gets into a Tight Place) is seated first for the waking-up reading; Dedication and Introduction stay as front scenes; the other nine chapters follow in printed order.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter II. In Which Pooh Goes Visiting and Gets into a Tight Place",
+      "place": "Chapter II. In Which Pooh Goes Visiting and Gets into a Tight Place",
+      "reentry": "Edward Bear, known to his friends as Winnie-the-Pooh, or Pooh for short, was walking through the forest one day, humming proudly to himself. He had made up a little hum that very morning, as he was do",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "Edward Bear, known to his friends as Winnie-the-Pooh, or Pooh for short, was walking through the forest one day, humming proudly to himself. He had made up a little hum that very morning, as he was doing his Stoutness Exercises in front of the glass: *Tra-la-la, tra-la-la*, as he stretched up as high as he could go, and then *Tra-la-la, tra-la—oh, help!—la*, as he tried to reach his toes. After breakfast he had said it over and over to himself until he had learnt it off by heart, and now he was humming it right through, properly. It went like this:"
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "*Tra-la-la, tra-la-la,* / *Tra-la-la, tra-la-la,* / *Rum-tum-tiddle-um-tum.* / *Tiddle-iddle, tiddle-iddle,* / *Tiddle-iddle, tiddle-iddle,* / *Rum-tum-tum-tiddle-um.*"
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Well, he was humming this hum to himself, and walking along gaily, wondering what everybody else was doing, and what it felt like, being somebody else, when suddenly he came to a sandy bank, and in the bank was a large hole."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "\"Aha!\" said Pooh. (*Rum-tum-tiddle-um-tum.*) \"If I know anything about anything, that hole means Rabbit,\" he said, \"and Rabbit means Company,\" he said, \"and Company means Food and Listening-to-Me-Humming and such like. *Rum-tum-tum-tiddle-um.*\""
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "So he bent down, put his head into the hole, and called out:"
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "\"Is anybody at home?\""
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "There was a sudden scuffling noise from inside the hole, and then silence."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "\"What I said was, 'Is anybody at home?'\" called out Pooh very loudly."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "\"No!\" said a voice; and then added, \"You needn't shout so loud. I heard you quite well the first time.\""
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "\"Bother!\" said Pooh. \"Isn't there anybody here at all?\""
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "\"Nobody.\""
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "Winnie-the-Pooh took his head out of the hole, and thought for a little, and he thought to himself, \"There must be somebody there, because somebody must have *said* 'Nobody.'\" So he put his head back in the hole, and said:"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "\"Hallo, Rabbit, isn't that you?\""
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "\"No,\" said Rabbit, in a different sort of voice this time."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "\"But isn't that Rabbit's voice?\""
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "\"I don't *think* so,\" said Rabbit. \"It isn't *meant* to be.\""
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "\"Oh!\" said Pooh."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "He took his head out of the hole, and had another think, and then he put it back, and said:"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "\"Well, could you very kindly tell me where Rabbit is?\""
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "\"He has gone to see his friend Pooh Bear, who is a great friend of his.\""
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "\"But this *is* Me!\" said Bear, very much surprised."
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "\"What sort of Me?\""
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "\"Pooh Bear.\""
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "\"Are you sure?\" said Rabbit, still more surprised."
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "\"Quite, quite sure,\" said Pooh."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "\"Oh, well, then, come in.\""
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "So Pooh pushed and pushed and pushed his way through the hole, and at last he got in."
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "\"You were quite right,\" said Rabbit, looking at him all over. \"It *is* you. Glad to see you.\""
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "\"Who did you think it was?\""
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "\"Well, I wasn't sure. You know how it is in the Forest. One can't have *anybody* coming into one's house. One has to be *careful*. What about a mouthful of something?\""
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "Pooh always liked a little something at eleven o'clock in the morning, and he was very glad to see Rabbit getting out the plates and mugs; and when Rabbit said, \"Honey or condensed milk with your bread?\" he was so excited that he said, \"Both,\" and then, so as not to seem greedy, he added, \"But don't bother about the bread, please.\" And for a long time after that he said nothing ... until at last, humming to himself in a rather sticky voice, he got up, shook Rabbit lovingly by the paw, and said that he must be going on."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "\"Must you?\" said Rabbit politely."
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "\"Well,\" said Pooh, \"I could stay a little longer if it—if you——\" and he tried very hard to look in the direction of the larder."
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "\"As a matter of fact,\" said Rabbit, \"I was going out myself directly.\""
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "\"Oh, well, then, I'll be going on. Good-bye.\""
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "\"Well, good-bye, if you're sure you won't have any more.\""
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "\"*Is* there any more?\" asked Pooh quickly."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "Rabbit took the covers off the dishes, and said, \"No, there wasn't.\""
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "\"I thought not,\" said Pooh, nodding to himself. \"Well, good-bye. I must be going on.\""
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "So he started to climb out of the hole. He pulled with his front paws, and pushed with his back paws, and in a little while his nose was out in the open again ... and then his ears ... and then his front paws ... and then his shoulders ... and then——"
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "\"Oh, help!\" said Pooh. \"I'd better go back.\""
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "\"Oh, bother!\" said Pooh. \"I shall have to go on.\""
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "\"I can't do either!\" said Pooh. \"Oh, help *and* bother!\""
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "Now by this time Rabbit wanted to go for a walk too, and finding the front door full, he went out by the back door, and came round to Pooh, and looked at him."
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "\"Hallo, are you stuck?\" he asked."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "\"N-no,\" said Pooh carelessly. \"Just resting and thinking and humming to myself.\""
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "\"Here, give us a paw.\""
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "Pooh Bear stretched out a paw, and Rabbit pulled and pulled and pulled...."
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "\"*Ow!*\" cried Pooh. \"You're hurting!\""
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "\"The fact is,\" said Rabbit, \"you're stuck.\""
+    },
+    {
+      "id": "sit-0-50",
+      "sceneId": "sit-0",
+      "text": "\"It all comes,\" said Pooh crossly, \"of not having front doors big enough.\""
+    },
+    {
+      "id": "sit-0-51",
+      "sceneId": "sit-0",
+      "text": "\"It all comes,\" said Rabbit sternly, \"of eating too much. I thought at the time,\" said Rabbit, \"only I didn't like to say anything,\" said Rabbit, \"that one of us was eating too much,\" said Rabbit, \"and I knew if wasn't *me*,\" he said. \"Well, well, I shall go and fetch Christopher Robin.\""
+    },
+    {
+      "id": "sit-0-52",
+      "sceneId": "sit-0",
+      "text": "Christopher Robin lived at the other end of the Forest, and when he came back with Rabbit, and saw the front half of Pooh, he said, \"Silly old Bear,\" in such a loving voice that everybody felt quite hopeful again."
+    },
+    {
+      "id": "sit-0-53",
+      "sceneId": "sit-0",
+      "text": "\"I was just beginning to think,\" said Bear, sniffing slightly, \"that Rabbit might never be able to use his front door again. And I should *hate* that,\" he said."
+    },
+    {
+      "id": "sit-0-54",
+      "sceneId": "sit-0",
+      "text": "\"So should I,\" said Rabbit."
+    },
+    {
+      "id": "sit-0-55",
+      "sceneId": "sit-0",
+      "text": "\"Use his front door again?\" said Christopher Robin. \"Of course he'll use his front door again.\""
+    },
+    {
+      "id": "sit-0-56",
+      "sceneId": "sit-0",
+      "text": "\"Good,\" said Rabbit."
+    },
+    {
+      "id": "sit-0-57",
+      "sceneId": "sit-0",
+      "text": "\"If we can't pull you out, Pooh, we might push you back.\""
+    },
+    {
+      "id": "sit-0-58",
+      "sceneId": "sit-0",
+      "text": "Rabbit scratched his whiskers thoughtfully, and pointed out that, when once Pooh was pushed back, he was back, and of course nobody was more glad to see Pooh than *he* was, still there it was, some lived in trees and some lived underground, and——"
+    },
+    {
+      "id": "sit-0-59",
+      "sceneId": "sit-0",
+      "text": "\"You mean I'd *never* get out?\" said Pooh."
+    },
+    {
+      "id": "sit-0-60",
+      "sceneId": "sit-0",
+      "text": "\"I mean,\" said Rabbit, \"that having got *so* far, it seems a pity to waste it.\""
+    },
+    {
+      "id": "sit-0-61",
+      "sceneId": "sit-0",
+      "text": "Christopher Robin nodded."
+    },
+    {
+      "id": "sit-0-62",
+      "sceneId": "sit-0",
+      "text": "\"Then there's only one thing to be done,\" he said. \"We shall have to wait for you to get thin again.\""
+    },
+    {
+      "id": "sit-0-63",
+      "sceneId": "sit-0",
+      "text": "\"How long does getting thin take?\" asked Pooh anxiously."
+    },
+    {
+      "id": "sit-0-64",
+      "sceneId": "sit-0",
+      "text": "\"About a week, I should think.\""
+    },
+    {
+      "id": "sit-0-65",
+      "sceneId": "sit-0",
+      "text": "\"But I can't stay here for a *week*!\""
+    },
+    {
+      "id": "sit-0-66",
+      "sceneId": "sit-0",
+      "text": "\"You can *stay* here all right, silly old Bear. It's getting you out which is so difficult.\""
+    },
+    {
+      "id": "sit-0-67",
+      "sceneId": "sit-0",
+      "text": "\"We'll read to you,\" said Rabbit cheerfully. \"And I hope it won't snow,\" he added. \"And I say, old fellow, you're taking up a good deal of room in my house—*do* you mind if I use your back legs as a towel-horse? Because, I mean, there they are—doing nothing—and it would be very convenient just to hang the towels on them.\""
+    },
+    {
+      "id": "sit-0-68",
+      "sceneId": "sit-0",
+      "text": "\"A week!\" said Pooh gloomily. \"*What about meals?*\""
+    },
+    {
+      "id": "sit-0-69",
+      "sceneId": "sit-0",
+      "text": "\"I'm afraid no meals,\" said Christopher Robin, \"because of getting thin quicker. But we *will* read to you.\""
+    },
+    {
+      "id": "sit-0-70",
+      "sceneId": "sit-0",
+      "text": "Bear began to sigh, and then found he couldn't because he was so tightly stuck; and a tear rolled down his eye, as he said:"
+    },
+    {
+      "id": "sit-0-71",
+      "sceneId": "sit-0",
+      "text": "\"Then would you read a Sustaining Book, such as would help and comfort a Wedged Bear in Great Tightness?\""
+    },
+    {
+      "id": "sit-0-72",
+      "sceneId": "sit-0",
+      "text": "So for a week Christopher Robin read that sort of book at the North end of Pooh, and Rabbit hung his washing on the South end ... and in between Bear felt himself getting slenderer and slenderer. And at the end of the week Christopher Robin said, \"*Now!*\""
+    },
+    {
+      "id": "sit-0-73",
+      "sceneId": "sit-0",
+      "text": "So he took hold of Pooh's front paws and Rabbit took hold of Christopher Robin, and all Rabbit's friends and relations took hold of Rabbit, and they all pulled together...."
+    },
+    {
+      "id": "sit-0-74",
+      "sceneId": "sit-0",
+      "text": "And for a long time Pooh only said \"*Ow!*\" ..."
+    },
+    {
+      "id": "sit-0-75",
+      "sceneId": "sit-0",
+      "text": "And \"*Oh!*\" ..."
+    },
+    {
+      "id": "sit-0-76",
+      "sceneId": "sit-0",
+      "text": "And then, all of a sudden, he said \"*Pop!*\" just as if a cork were coming out of a bottle."
+    },
+    {
+      "id": "sit-0-77",
+      "sceneId": "sit-0",
+      "text": "And Christopher Robin and Rabbit and all Rabbit's friends and relations went head-over-heels backwards ... and on the top of them came Winnie-the-Pooh—free!"
+    },
+    {
+      "id": "sit-0-78",
+      "sceneId": "sit-0",
+      "text": "So, with a nod of thanks to his friends, he went on with his walk through the forest, humming proudly to himself. But, Christopher Robin looked after him lovingly, and said to himself, \"Silly old Bear!\""
+    }
+  ]
+}

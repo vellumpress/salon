@@ -605,6 +605,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `The Triad came into my life as I walked underneath the arch by which the sentinels sit in Olympian state upon their rather long-legged chargers, receiving, as is their due, the silent homage of the passing nurserymaids. This reading is just “Elysium” — a soldier just back from the Flanders front walks home through St. James's with his sweetheart on one arm and his sister on the other, past the clubs and two old colonels on the steps, wrapped apart from the whole world. This reading is the whole sketch, ending “for five long days.” A heads-up before you start: the First World War sits just behind this story. The soldier is home from the front in Flanders on five days' leave. R. B. Cunninghame Graham, from Brought Forward; the year is 1916. Quiet and tender, for the last minutes before sleep. Pall Mall, London.`,
   "the-golden-age":
     `“Alarums and Excursions” is one complete story from The Golden Age — on a hot June day three children are playing at knights in the orchard when a troop of soldiers jingles past the hedge, and the narrator and his little brother Harold chase it across country, sure a battle lies ahead. It ends “…to the fact that the battle had been postponed.” A heads-up before you start: on the way the narrator tells Harold that Indians scalp and burn their prisoners, a schoolboy notion of the period, left as printed; and the boys get lost in the rain before the old doctor drives them home. Kenneth Grahame; the year is 1895, when the book first appeared. One story; the book continues with the Prologue and sixteen more. Bright and comic, made for walking. An English village and the fields beyond it.`,
+  "winnie-the-pooh":
+    `Edward Bear, known to his friends as Winnie-the-Pooh, or Pooh for short, was walking through the forest one day, humming proudly to himself. “In Which Pooh Goes Visiting and Gets into a Tight Place” is one complete chapter from Winnie-the-Pooh — after morning Stoutness Exercises and a brand-new hum, Pooh calls on Rabbit, stays for honey, and finds the front door a little tight on the way out. It ends “…Silly old Bear!” A. A. Milne; the year is 1926, printed on the Canadian title page. One chapter; the book continues. Bright and comic, made for waking. The forest.`,
   "the-fresco":
     `In the Great Highway of Eternal Fixity, Mong Flowing-spring and his friend Choo Little-lotus were slowly walking, clothed in the long light green dress of the students. This reading is just “The Fresco” — two successful students lose themselves in the lanes of Pekin, enter a temple of the Mysterious-way, and Mong Flowing-spring follows a goddess who steps out of a fresco. This reading is the whole story, ending “Love has touched her. She has become a woman and is waiting for you in your village.” Pu Songling, in G. Soulié de Morant's English, from Strange Stories from the Lodge of Leisures; the year is 1913, from the Houghton Mifflin title page. Soft and magical, for the last minutes before sleep.`,
   "the-green-carnation":
@@ -1607,6 +1609,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-invisible-man",
       // Mira Tue 29 Sep 2026 POST-#192 CLEAR — Nina Balatka. Waking up only (walk seat removed).
       "nina-balatka",
+      // Mira Tue 6 Oct 2026 MID — Winnie-the-Pooh: Chapter II is the waking reading (whole chapter). Waking-up only.
+      "winnie-the-pooh",
     ],
   },
   {
@@ -2470,6 +2474,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-taoist-priest-of-lao-shan": 6,
   "elysium": 5,
   "the-fresco": 5,
+  "winnie-the-pooh": 7,
   "the-golden-age": 9,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
