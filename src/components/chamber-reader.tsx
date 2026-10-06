@@ -180,6 +180,8 @@ export function TbrReader({
   const upcomingSlotRef = useRef<HTMLDivElement>(null);
   const placedIndex = useRef<number | null>(null);
   const motionArmed = useRef(false);
+  /** Height of the breath just read, plus the gap under it. Advance travels up by this. */
+  const lastTravel = useRef(0);
 
   useLayoutEffect(() => {
     ensure(work.id);
@@ -788,21 +790,42 @@ export function TbrReader({
             lineTop,
             lineHeight: targetRect.height,
           });
+      const travel = Math.min(Math.max(0, lastTravel.current), height);
       const motion =
         animate &&
         motionArmed.current &&
         stepped &&
         !reduceMotion &&
         !tooTall &&
+        travel > 1 &&
         track.dataset.ready === "1";
-      if (!motion) track.dataset.ready = "0";
-      if (motion) holdMotionUntil = performance.now() + 320;
-      track.style.transform = `translate3d(0, ${shift}px, 0)`;
-      if (!motion && !reduceMotion) {
-        requestAnimationFrame(() => {
-          if (live && track.isConnected) track.dataset.ready = "1";
-        });
+      if (motion) {
+        // Land on the true center, but start one breath lower so the column
+        // moves up. Windowed lookback can change height by much more than a
+        // breath; that jump is applied before paint, and only the breath
+        // travels in view.
+        holdMotionUntil = performance.now() + 320;
+        track.dataset.ready = "0";
+        track.style.transform = `translate3d(0, ${shift + travel}px, 0)`;
+        void track.offsetHeight;
+        track.dataset.ready = "1";
+        void track.offsetHeight;
+        track.style.transform = `translate3d(0, ${shift}px, 0)`;
+      } else {
+        track.dataset.ready = "0";
+        track.style.transform = `translate3d(0, ${shift}px, 0)`;
+        if (!reduceMotion) {
+          requestAnimationFrame(() => {
+            if (live && track.isConnected) track.dataset.ready = "1";
+          });
+        }
       }
+      const aheadLine = ahead?.querySelector<HTMLElement>(".look-line");
+      const lineRect = line.getBoundingClientRect();
+      const gapPx = aheadLine
+        ? Math.max(0, aheadLine.getBoundingClientRect().top - lineRect.bottom)
+        : 10;
+      lastTravel.current = lineRect.height + gapPx;
 
       const overflowsNow = tooTall || slot.scrollHeight - slot.clientHeight > 1;
       setOverflows((prev) => (prev === overflowsNow ? prev : overflowsNow));
