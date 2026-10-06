@@ -9,11 +9,13 @@ import type { SitSession, WorkProgress } from "./store.ts";
 import type { TogetherKeep } from "./together-keep.ts";
 import { buildRadarAxes, type RadarAxis } from "./you-radar.ts";
 import {
+  buildReadingScore,
   dayScoreInput,
-  deriveWindowScores,
-  scoreForDay,
   type DailyScore,
+  type ReadingModel,
+  type SitPoint,
   type WindowScore,
+  type WorkSnapshot,
 } from "./reading-score.ts";
 
 export type FormCount = { form: ShelfForm; label: string; count: number };
@@ -93,10 +95,12 @@ export type ReadingStats = {
   favorites: number;
   kept: number;
   readiness: Readiness;
-  /** Daily reading score (0–100) — active-tap pillars. Hero number on You. */
+  /** Daily reading score. Hero number on You. */
   dailyScore: DailyScore;
   weeklyScore: WindowScore;
   monthlyScore: WindowScore;
+  /** Week, month, and year views, plus the day’s insight. */
+  readingModel: ReadingModel;
   breaths: number;
   /** Forward advances today — taps that moved to a new breath. */
   advancesToday: number;
@@ -522,6 +526,94 @@ export function activityTimeline(input: {
   return items.sort((a, b) => b.at - a.at).slice(0, 12);
 }
 
+function sitPoints(history: SitSession[]): SitPoint[] {
+  return history
+    .filter((sit) => sit.workId && !isDeviceImport(sit.workId) && sit.endedAt > 0)
+    .map((sit) => ({ workId: sit.workId, minutes: sit.minutes, endedAt: sit.endedAt }));
+}
+
+function workSnapshots(
+  progress: Record<string, WorkProgress>,
+  history: SitSession[],
+  touched: Record<string, string[]>,
+): WorkSnapshot[] {
+  const ids = new Set<string>();
+  for (const id of Object.keys(progress)) {
+    if (progress[id]?.entered && !isDeviceImport(id)) ids.add(id);
+  }
+  for (const sit of history) {
+    if (sit.workId && !isDeviceImport(sit.workId)) ids.add(sit.workId);
+  }
+  for (const list of Object.values(touched)) {
+    for (const id of list) if (id && !isDeviceImport(id)) ids.add(id);
+  }
+  return [...ids].map((id) => {
+    const shelf = shelfWork(id);
+    const item = progress[id];
+    const breaths = shelf?.breaths;
+    const progressValue =
+      item?.completedAt && item.completedAt > 0
+        ? 1
+        : breaths && breaths > 0 && item
+          ? Math.max(0, Math.min(1, item.breathIndex / breaths))
+          : null;
+    const country = shelf ? countryFor(shelf) : "";
+    return {
+      id,
+      title: shelf?.title,
+      form: shelf?.form ?? null,
+      country: country || null,
+      year: shelf?.year ?? null,
+      progress: progressValue,
+      finishedAt: item?.completedAt ?? null,
+    };
+  });
+}
+
+function noonOf(key: string): number {
+  const [y, m, d] = key.split("-").map(Number);
+  return new Date(y ?? 1970, (m ?? 1) - 1, d ?? 1, 12, 0, 0, 0).getTime();
+}
+
+function connectionInput(input: {
+  joined: string[];
+  togetherKeeps: TogetherKeep[];
+  hostedSits: HostedSit[];
+  hostOpensByDay: Record<string, number>;
+  clubTouchesByDay: Record<string, number>;
+}): { optIn: boolean; sessions: number[]; keeps: number[] } {
+  const sessions: number[] = [];
+  for (const [key, count] of Object.entries(input.clubTouchesByDay)) {
+    const stamp = noonOf(key);
+    for (let i = 0; i < Math.max(0, Math.round(count) || 0); i++) sessions.push(stamp);
+  }
+  for (const [key, count] of Object.entries(input.hostOpensByDay)) {
+    const stamp = noonOf(key);
+    for (let i = 0; i < Math.max(0, Math.round(count) || 0); i++) sessions.push(stamp);
+  }
+  for (const sit of input.hostedSits) {
+    if (sit.createdAt) sessions.push(sit.createdAt);
+  }
+  const keeps = input.togetherKeeps.map((keep) => keep.createdAt).filter((at) => at > 0);
+  const optIn =
+    input.joined.length > 0 ||
+    input.togetherKeeps.length > 0 ||
+    input.hostedSits.length > 0 ||
+    sessions.length > 0 ||
+    keeps.length > 0;
+  return { optIn, sessions, keeps };
+}
+
+function latestTogether(keeps: TogetherKeep[]): { handle: string; workTitle: string; at: number } | null {
+  const latest = [...keeps].filter((keep) => keep.createdAt > 0).sort((a, b) => b.createdAt - a.createdAt)[0];
+  if (!latest) return null;
+  return {
+    handle: latest.theirs.handle || latest.yours.handle,
+    workTitle: latest.workTitle || "A book",
+    at: latest.createdAt,
+  };
+}
+
 function deskWorks(progress: Record<string, WorkProgress>): DeskWork[] {
   return Object.entries(progress)
     .filter(([id, item]) => !isDeviceImport(id) && item.entered && !item.completedAt && item.breathIndex > 0)
@@ -554,6 +646,12 @@ export function deriveReadingStats(input: {
   handle?: string;
   sittingMinutes?: number;
   now?: number;
+  joined?: string[];
+  daylight?: boolean;
+  pausedAt?: number | null;
+  ignoredDays?: string[];
+  dismissedInsights?: string[];
+  lastInsight?: { id: string; day: string } | null;
 }): ReadingStats {
   const progress = input.progress ?? {};
   const favorites = input.favorites ?? [];
@@ -698,14 +796,49 @@ export function deriveReadingStats(input: {
     sitsByDay,
     clubTouchesByDay,
   };
-  const { daily: dailyScore, weekly: weeklyScore, monthly: monthlyScore } =
-    deriveWindowScores(ledgers, now);
+  const readingModel = buildReadingScore({
+    ledgers,
+    now,
+    sittingMinutes,
+    daylight: Boolean(input.daylight),
+    sits: sitPoints(sitHistory),
+    works: workSnapshots(progress, sitHistory, worksTouchedByDay),
+    connection: connectionInput({
+      joined: input.joined ?? [],
+      togetherKeeps,
+      hostedSits,
+      hostOpensByDay,
+      clubTouchesByDay,
+    }),
+    ignoredDays: input.ignoredDays ?? [],
+    dismissedInsights: input.dismissedInsights ?? [],
+    lastInsight: input.lastInsight ?? null,
+    together: latestTogether(togetherKeeps),
+    pausedAt: input.pausedAt ?? null,
+  });
+  const dailyScore = readingModel.daily;
+  const weeklyScore: WindowScore = {
+    total: readingModel.week.score ?? 0,
+    label: "Week",
+    detail: readingModel.week.detail,
+  };
+  const monthlyScore: WindowScore = {
+    total: readingModel.month.score ?? 0,
+    label: "Month",
+    detail: readingModel.month.detail,
+  };
   const weekDays: DayActivity[] = weekMinutesSeries(byDay, now).map((day) => {
     const detail = dayScoreInput(ledgers, day.key);
-    const scored = scoreForDay(ledgers, day.key);
+    const trend = readingModel.week.days.find((row) => row.key === day.key);
+    const score =
+      day.key === dayKey(now)
+        ? dailyScore.kind === "reading"
+          ? dailyScore.total
+          : 0
+        : (trend?.score ?? 0);
     return {
       ...day,
-      score: scored.total,
+      score,
       breaths: Math.max(0, Math.round(detail.advances) || 0),
       keeps: Math.max(0, Math.round(detail.keeps) || 0),
       sits: Math.max(0, Math.round(detail.sits) || 0),
@@ -789,6 +922,7 @@ export function deriveReadingStats(input: {
     dailyScore,
     weeklyScore,
     monthlyScore,
+    readingModel,
     breaths,
     advancesToday,
     advancesAll,

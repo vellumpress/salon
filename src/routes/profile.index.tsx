@@ -2,25 +2,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { getMe, pushReading, saveSettings, type Me } from "@/lib/account";
 import { SIT_PRESETS } from "@/lib/sitting";
-import { FavoriteWorks } from "@/components/favorite-works";
 import { ReaderAuthForm } from "@/components/reader-auth-form";
 import { SignOutMark } from "@/components/sign-out";
-import { CLUBS, formatHandle } from "@/lib/social";
-import { fillClass, fillInk } from "@/lib/mondrian";
+import { YouReading } from "@/components/you-reading";
+import { formatHandle } from "@/lib/social";
 import { useTbr } from "@/lib/store";
 import { deriveReadingStats } from "@/lib/reading-stats";
+import { readDaylightEnabled } from "@/lib/daylight-colors";
 import { RITUAL_LANES, worksForRitualLane } from "@/lib/catalog/rituals";
-import { clubPair } from "@/lib/shuffle";
-import { KeptSentences } from "@/components/kept-sentences";
-import { ResumeLink, useLastRead } from "@/components/resume-link";
-import {
-  DeskStrip,
-  LaneStrip,
-  ReadinessHero,
-  WeekActivity,
-  YouActivity,
-  YouEmptyInvite,
-} from "@/components/you-stats";
+import { useLastRead } from "@/components/resume-link";
 import { cn } from "@/lib/utils";
 import { mixSeed, takeShuffled } from "@/lib/recommend";
 import { useFavoriteSync } from "@/lib/use-favorite-sync";
@@ -78,7 +68,6 @@ function ProfilePage() {
           <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
             You
           </h1>
-          <ResumeLink className="h-12 border-l border-ink" />
           <Link
             to="/friends"
             className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
@@ -117,6 +106,10 @@ function ProfileBody({
   const sitHistory = useTbr((s) => s.sitHistory) ?? [];
   const togetherKeeps = useTbr((s) => s.togetherKeeps) ?? [];
   const hostedSits = useTbr((s) => s.hostedSits) ?? [];
+  const scorePausedAt = useTbr((s) => s.scorePausedAt);
+  const scoreIgnoredDays = useTbr((s) => s.scoreIgnoredDays);
+  const insightDismissed = useTbr((s) => s.insightDismissed);
+  const insightSeen = useTbr((s) => s.insightSeen);
   const handle = useTbr((s) => s.handle) ?? "";
   const setTaste = useTbr((s) => s.setTaste);
   const setSittingMinutes = useTbr((s) => s.setSittingMinutes);
@@ -196,6 +189,12 @@ function ProfileBody({
         hostedSits,
         handle,
         sittingMinutes,
+        joined,
+        daylight: readDaylightEnabled(),
+        pausedAt: scorePausedAt,
+        ignoredDays: scoreIgnoredDays,
+        dismissedInsights: insightDismissed,
+        lastInsight: insightSeen,
       }),
     [
       progress,
@@ -214,6 +213,11 @@ function ProfileBody({
       hostedSits,
       handle,
       sittingMinutes,
+      joined,
+      scorePausedAt,
+      scoreIgnoredDays,
+      insightDismissed,
+      insightSeen,
     ],
   );
 
@@ -225,10 +229,7 @@ function ProfileBody({
     return { ...base, work: pick };
   }, [visit]);
 
-  const mine = hydrated ? CLUBS.filter((club) => joined.includes(club.id)) : [];
   const shownHandle = formatHandle(identity?.handle || handle);
-  const shownName =
-    shownHandle || name.trim() || identity?.displayName || "You";
 
   async function submitCreate(input: { handle: string; email: string; password: string }) {
     setAuthBusy(true);
@@ -287,297 +288,147 @@ function ProfileBody({
 
   return (
     <div className="frame-screen bg-paper text-ink">
-      <header className="flex shrink-0 items-stretch border-b border-ink">
-        <Link
-          to="/"
-          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
-        >
-          Home
-        </Link>
-        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
-          You
-        </h1>
-        <ResumeLink className="h-12 border-l border-ink" />
-        <Link
-          to="/friends"
-          preload="intent"
-          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
-        >
-          Friends
-        </Link>
-        {me?.role === "staff" ? (
-          <Link
-            to="/desk"
-            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
-          >
-            Desk
-          </Link>
-        ) : null}
-        {identity ? <SignOutMark className="border-l border-paper" /> : null}
-        {!identity ? (
-          <Link
-            to="/login"
-            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
-          >
-            Sign in
-          </Link>
-        ) : null}
-      </header>
-      <div className="min-h-0 min-w-0 flex-1 overflow-x-clip overflow-y-auto">
-        {!hydrated ? (
-          <div className="grid grid-cols-2 gap-px bg-ink sm:grid-cols-4">
-            <div className="min-h-40 bg-ink sm:min-h-48" />
-            <div className="min-h-40 bg-yellow sm:min-h-48" />
-            <div className="min-h-40 bg-red sm:min-h-48" />
-            <div className="min-h-40 bg-blue sm:min-h-48" />
-          </div>
-        ) : (
-          <ReadinessHero reading={reading} handle={shownHandle} name={shownName} />
-        )}
-
-        {confirmNote ? (
-          <p className="border-b border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">{confirmNote}</p>
-        ) : null}
-
-        {hydrated ? <WeekActivity reading={reading} /> : null}
-
-        <FavoriteWorks
-          ids={favorites}
-          hydrated={hydrated}
-          preview
-          rail
-          heading="Favorites"
-          empty="Heart a work while reading — it will live here."
-        />
-
-        <KeptSentences
-          progress={progress}
-          hydrated={hydrated}
-          preview
-          rail
-          empty="Tap Keep on a sentence. It will live in your collection."
-        />
-
-        {!identity ? (
-          <section>
-            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-              {authMode === "up" ? "Create an account" : "Sign in"}
-            </p>
-            <ReaderAuthForm
-              mode={authMode}
-              onMode={setAuthMode}
-              defaultHandle={storeHandle}
-              busy={authBusy}
-              error={authError}
-              onCreate={(input) => void submitCreate(input)}
-              onSignIn={(input) => void submitSignIn(input)}
-            />
-          </section>
-        ) : null}
-
-        {last ? (
-          <section>
-            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-              Resume
-            </p>
-            <Link
-              to="/read/$workId"
-              params={{ workId: last.id }}
-              search={{ at: last.breathIndex }}
-              className="flex items-stretch border-b border-ink bg-forest text-paper"
-            >
-              <span className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5">
-                <span className="type-kicker opacity-80">
-                  {last.author}
-                </span>
-                <span className="mt-1 type-lede">
-                  {last.title}
-                </span>
-              </span>
-              <span className="flex items-center px-4 font-sans text-sm opacity-80">Continue</span>
-            </Link>
-          </section>
-        ) : null}
-
-        {hydrated && reading.desk.length > 0 ? <DeskStrip works={reading.desk} /> : null}
-
-        {hydrated && reading.hasSignal ? (
+      <YouReading
+        reading={reading}
+        hydrated={hydrated}
+        handle={shownHandle}
+        progress={progress}
+        favorites={favorites}
+        last={last}
+        notice={confirmNote || undefined}
+        headerEnd={
           <>
-            <YouActivity items={reading.activity} />
-            <LaneStrip lanes={reading.lanes} />
-            <section>
-              <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-                For now
-              </p>
-              <div className="rail" role="list" aria-label="For now">
-                <div role="listitem" className="you-tile is-half bg-yellow text-ink">
-                  <span className="type-kicker opacity-80">{prompt.label}</span>
-                  <span className="mt-1 type-lede">
-                    {prompt.line}
+            {me?.role === "staff" ? (
+              <Link
+                to="/desk"
+                className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
+              >
+                Desk
+              </Link>
+            ) : null}
+            {identity ? <SignOutMark className="border-l border-paper" /> : null}
+            {!identity ? (
+              <Link
+                to="/login"
+                className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
+              >
+                Sign in
+              </Link>
+            ) : null}
+          </>
+        }
+        settings={
+          <>
+            {!identity ? (
+              <section>
+                <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
+                  {authMode === "up" ? "Create an account" : "Sign in"}
+                </p>
+                <ReaderAuthForm
+                  mode={authMode}
+                  onMode={setAuthMode}
+                  defaultHandle={storeHandle}
+                  busy={authBusy}
+                  error={authError}
+                  onCreate={(input) => void submitCreate(input)}
+                  onSignIn={(input) => void submitSignIn(input)}
+                />
+              </section>
+            ) : (
+              <section>
+                <div className="flex items-stretch border-b border-ink">
+                  <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
+                    @name
+                  </span>
+                  <span className="flex h-12 min-w-0 flex-1 items-center font-serif text-xl">
+                    {formatHandle(identity.handle)}
                   </span>
                 </div>
-                {prompt.work ? (
-                  <Link
-                    to="/read/$workId"
-                    params={{ workId: prompt.work.id }}
-                    role="listitem"
-                    className="you-tile is-half bg-blue text-paper"
-                  >
-                    <span className="type-kicker opacity-80">
-                      {prompt.work.author}
-                    </span>
-                    <span className="mt-1 type-lede">
-                      {prompt.work.title}
-                    </span>
-                    <span className="mt-2 font-sans text-sm opacity-80">Sit</span>
-                  </Link>
-                ) : (
-                  <Link
-                    to="/rituals"
-                    role="listitem"
-                    className="you-tile is-half bg-blue text-paper"
-                  >
-                    <span className="type-kicker opacity-80">Rituals</span>
-                    <span className="mt-1 type-lede">
-                      Open a timed sit
-                    </span>
-                  </Link>
-                )}
-              </div>
-            </section>
-          </>
-        ) : hydrated ? (
-          <YouEmptyInvite
-            label={prompt.label}
-            line="Sit once — minutes, keeps, and a quiet rhythm will gather here."
-            workId={prompt.work?.id}
-          />
-        ) : null}
-
-        <section>
-          <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-            Clubs
-          </p>
-          {mine.length === 0 ? (
-            <Link
-              to="/together"
-              className="flex items-center justify-between border-b border-ink px-4 py-5"
-            >
-              <span>
-                <span className="block type-lede">
-                  No rooms yet
-                </span>
-                <span className="mt-1 block font-serif text-sm text-ink/70">
-                  Join a club and sit the book live, with chat.
-                </span>
-              </span>
-              <span className="font-sans text-sm">Together</span>
-            </Link>
-          ) : (
-            <div className="rail" role="list" aria-label="Clubs">
-              {mine.map((club) => (
-                <div
-                  key={club.id}
-                  role="listitem"
-                  className={cn("you-tile is-wide is-flush", fillClass(club.fill), fillInk(club.fill))}
-                >
-                  <Link
-                    to="/club/$clubId"
-                    params={{ clubId: club.id }}
-                    className="you-tile-link"
-                  >
-                    <span className="type-kicker opacity-80">{club.place}</span>
-                    <span className="mt-1 type-lede">
-                      {club.name}
-                    </span>
-                  </Link>
-                  <Link
-                    to="/read/$workId"
-                    params={{ workId: club.workId }}
-                    search={{ pair: clubPair(club.id), sit: 0 }}
-                    className={cn(
-                      "you-tile-action",
-                      club.fill === "yellow" || club.fill === "paper"
-                        ? "bg-ink text-paper"
-                        : "bg-paper text-ink",
-                    )}
-                  >
-                    Sit
-                  </Link>
+                <div className="flex items-stretch border-b border-ink">
+                  <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
+                    Email
+                  </span>
+                  <span className="flex h-12 min-w-0 flex-1 items-center font-serif text-xl">
+                    {identity.email}
+                  </span>
                 </div>
-              ))}
-            </div>
-          )}
-        </section>
-
-        {identity ? (
+                <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
+                  A sitting
+                </p>
+                <div className="rail" role="list" aria-label="A sitting">
+                  {SIT_PRESETS.map((option, i) => {
+                    const fills = [
+                      "bg-red text-paper",
+                      "bg-blue text-paper",
+                      "bg-yellow text-ink",
+                      "bg-forest text-paper",
+                      "bg-ink text-paper",
+                      "bg-paper-deep text-ink",
+                    ];
+                    return (
+                      <button
+                        key={option.minutes}
+                        type="button"
+                        role="listitem"
+                        onClick={() => setSit(option.minutes)}
+                        className={cn(
+                          "you-tile is-sit font-sans text-sm",
+                          fills[i % fills.length],
+                          sit === option.minutes ? "opacity-100" : "opacity-55",
+                        )}
+                      >
+                        {option.label}
+                      </button>
+                    );
+                  })}
+                </div>
+                {error ? (
+                  <p className="border-b border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">
+                    {error}
+                  </p>
+                ) : null}
+                <button
+                  type="button"
+                  disabled={saving}
+                  onClick={() => void save()}
+                  className="flex h-14 w-full items-center justify-center bg-ink font-sans text-sm text-paper disabled:opacity-60"
+                >
+                  {saving ? "Keeping…" : saved ? "Kept" : "Keep"}
+                </button>
+                <SignOutMark className="h-14 w-full border-0" />
+              </section>
+            )}
+          </>
+        }
+        trendsEnd={
           <section>
-            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-              Settings
-            </p>
-            <div className="flex items-stretch border-b border-ink">
-              <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
-                @name
-              </span>
-              <span className="flex h-12 min-w-0 flex-1 items-center font-serif text-xl">
-                {formatHandle(identity.handle)}
-              </span>
+            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">For now</p>
+            <div className="rail" role="list" aria-label="For now">
+              <div role="listitem" className="you-tile is-half bg-yellow text-ink">
+                <span className="type-kicker opacity-80">{prompt.label}</span>
+                <span className="mt-1 type-lede">{prompt.line}</span>
+              </div>
+              {prompt.work ? (
+                <Link
+                  to="/read/$workId"
+                  params={{ workId: prompt.work.id }}
+                  role="listitem"
+                  className="you-tile is-half bg-blue text-paper"
+                >
+                  <span className="type-kicker opacity-80">{prompt.work.author}</span>
+                  <span className="mt-1 type-lede">{prompt.work.title}</span>
+                  <span className="mt-2 font-sans text-sm opacity-80">Sit</span>
+                </Link>
+              ) : (
+                <Link to="/rituals" role="listitem" className="you-tile is-half bg-blue text-paper">
+                  <span className="type-kicker opacity-80">Rituals</span>
+                  <span className="mt-1 type-lede">Open a timed sit</span>
+                </Link>
+              )}
             </div>
-            <div className="flex items-stretch border-b border-ink">
-              <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
-                Email
-              </span>
-              <span className="flex h-12 min-w-0 flex-1 items-center font-serif text-xl">
-                {identity.email}
-              </span>
-            </div>
-            <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-              A sitting
-            </p>
-            <div className="rail" role="list" aria-label="A sitting">
-              {SIT_PRESETS.map((option, i) => {
-                const fills = [
-                  "bg-red text-paper",
-                  "bg-blue text-paper",
-                  "bg-yellow text-ink",
-                  "bg-forest text-paper",
-                  "bg-ink text-paper",
-                  "bg-paper-deep text-ink",
-                ];
-                return (
-                  <button
-                    key={option.minutes}
-                    type="button"
-                    role="listitem"
-                    onClick={() => setSit(option.minutes)}
-                    className={cn(
-                      "you-tile is-sit font-sans text-sm",
-                      fills[i % fills.length],
-                      sit === option.minutes ? "opacity-100" : "opacity-55",
-                    )}
-                  >
-                    {option.label}
-                  </button>
-                );
-              })}
-            </div>
-            {error ? (
-              <p className="border-b border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">
-                {error}
-              </p>
-            ) : null}
-            <button
-              type="button"
-              disabled={saving}
-              onClick={() => void save()}
-              className="flex h-14 w-full items-center justify-center bg-ink font-sans text-sm text-paper disabled:opacity-60"
-            >
-              {saving ? "Keeping…" : saved ? "Kept" : "Keep"}
-            </button>
-            <SignOutMark className="h-14 w-full border-0" />
           </section>
-        ) : null}
-      </div>
+        }
+      />
     </div>
   );
 }
