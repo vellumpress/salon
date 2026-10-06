@@ -729,6 +729,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "elysium": "United Kingdom",
   "maximina": "Spain",
   "love-among-the-chickens": "United Kingdom",
+  "muslin": "Ireland",
   "the-fresco": "China",
   "the-taoist-priest-of-lao-shan": "China",
   "my-antonia": "United States",

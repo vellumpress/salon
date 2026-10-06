@@ -1,0 +1,156 @@
+{
+  "id": "muslin",
+  "title": "Muslin",
+  "author": "George Moore",
+  "year": "1915",
+  "note": "Project Gutenberg 14659. The 1915 New Edition (first published 1886 as 'A Drama in Muslin'; PG l.37/39). Whole novel, Chapters I–XXIX to THE END; Moore's 1915 preface kept as a front scene; the first sit is Chapter I whole (PG l.451–609).",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "The convent was situated on a hilltop, and through the green garden the white dresses of the schoolgirls fluttered like the snowy plumage of a hundred doves. Obeying a sudden impulse, a flock of littl",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The convent was situated on a hilltop, and through the green garden the white dresses of the schoolgirls fluttered like the snowy plumage of a hundred doves. Obeying a sudden impulse, a flock of little ones would race through a deluge of leaf-entangled rays towards a pet companion standing at the end of a gravel-walk examining the flower she has just picked, the sunlight glancing along her little white legs proudly and charmingly advanced. The elder girls in their longer skirts were more dignified, but when they caught sight of a favourite sister, they too ran forward, and then retreated timidly, as if afraid of committing an indiscretion."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "It was prize-day in the Convent of the Holy Child, and since early morning all had been busy preparing for the arrival of the Bishop. His throne had been set at one end of the school-hall, and at the other the carpenters had erected a stage for the performance of *King Cophetua*, a musical sketch written by Miss Alice Barton for the occasion."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "Alice Barton was what is commonly known as a plain girl. At home, during the holidays, she often heard that the dressmaker could not fit her; but though her shoulders were narrow and prim, her arms long and almost awkward, there was a character about the figure that commanded attention. Alice was now turned twenty; she was the eldest, the best-beloved, and the cleverest girl in the school. It was not, therefore, on account of any backwardness in her education that she had been kept so long out of society, but because Mrs. Barton thought that, as her two girls were so different in appearance, it would be well for them to come out together. Against this decision Alice said nothing, and, like a tall arum lily, she had grown in the convent from girl to womanhood. To her the little children ran to be comforted; and to walk with her in the garden was considered an honour and a pleasure that even the Reverend Mother was glad to participate in."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "Lady Cecilia Cullen sat next to Alice, and her high shoulders and long face and pathetic eyes drew attention to her shoulders—they were a little wry, the right seemingly higher than the left. Her eyes were on Alice, and it was plain that she wished the other girls away, and that her nature was delicate, sensitive, obscure, if not a little queer. At home her elder sisters complained that an ordinary look or gesture often shocked her, and so deeply that she would remain for hours sitting apart refusing all consolation; and it was true that a spot on the tablecloth or presence of one repellent to her was sufficient to extinguish a delight or an appetite."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Violet Scully occupied the other end of the garden bench. She was very thin, but withal elegantly made. Her face was neat and delicate, and it was set with light blue eyes; and when she was not changing her place restlessly, or looking round as if she fancied someone was approaching, when she was still (which was seldom), a rigidity of feature and an almost complete want of bosom gave her the appearance of a convalescent boy."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "If May Gould, who stood at the back, her hand leaning affectionately on Alice's shoulder, had been three inches taller, she would have been classed a fine figure, but her features were too massive for her height. Her hair was not of an inherited red. It was the shade of red that is only seen in the children of dark-haired parents. In great coils it rolled over the dimpled cream of her neck, and with the exception of Alice, May was the cleverest girl in the school. For public inspection she made large water-coloured drawings of Swiss scenery; for private view, pen-and-ink sketches of officers sitting in conservatories with young ladies. The former were admired by the nuns, the latter occasioned some discussion among a select few."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "Violet Scully and May Gould would appeal to different imaginations."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "Olive, Alice's sister, was more beautiful than either, but there was danger that her corn-coloured hair, wound round a small shapely head, might fail to excite more than polite admiration. Her nose was finely chiselled, but it was high and aquiline, and though her eyes were well drawn and coloured, they lacked personal passion and conviction; but no flower could show more delicate tints than her face—rose tints fading into cream, cream rising into rose. Her ear was curved like a shell, her mouth was faint and weak as a rose, and her moods alternated between sudden discontent and sudden gaiety."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "'I don't see, Alice, why you couldn't have made King Cophetua marry the Princess. Whoever heard of a King marrying a beggar-maid? Besides, I hear that lots of people are going to be present, and to be jilted before them all isn't very nice. I am sure mamma wouldn't like it.'"
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "'But you are not jilted, my dear Olive. You don't like the King, and you show your nobleness of mind by refusing him.'"
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "'I don't see that. Whoever refused a King?'"
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "'Well, what do you want?' exclaimed May. 'I never saw anyone so selfish in all my life; you wouldn't be satisfied unless you played the whole piece by yourself.'"
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "Olive would probably have made a petulant and passionate reply, but at that moment visitors were coming up the drive."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "'It's papa,' cried Olive."
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "'And he is with mamma,' said Violet; and she tripped after Olive."
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "Mr. Barton, a tall, handsome man, seemed possessed of all the beauty of a cameo, and Olive had inherited his high aquiline nose and the moulding of his romantic forehead; and his colour, too. He wore a flowing beard, and his hair and beard were the colour of pale *cafe-au-lait*. Giving a hand to each daughter, he said:"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "'Here is learning and here is beauty. Could a father desire more? And you, Violet, and you, May, are about to break into womanhood. I used to kiss you in old times, but I suppose you are too big now. How strange—how strange! There you are, a row of brunettes and blondes, who before many days are over will be charming the hearts of all the young men in Galway. I suppose it was in talking of such things that you spent the morning?'"
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "'Our young charges have been, I assure you, very busy all the morning. We are not as idle as you think, Mr. Barton,' said the nun in a tone of voice that showed that she thought Mr. Barton's remark ill-considered. 'We have been arranging the stage for the representation of a little play that your daughter Alice composed.'"
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "'Oh yes, I know; she wrote to me about it. *King Cophetua* is the name, isn't it? I am very curious indeed, for I have set Tennyson's ballad to music myself. I sing it to the guitar, and if life were not so hurried I should have sent it to you. However—however, we are all going home to-morrow. I have promised to take charge of Cecilia, and Mrs. Scully is going to look after May.'"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "'Oh, how nice! Oh, how jolly that will be!' Olive cried; and, catching Violet by the hands, she romped with her for glee."
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "But the nun, taking advantage of this break in the conversation, said:"
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "'Come, now, young ladies, it is after two o'clock; we shall never be ready in time if you don't make haste—and it won't do to keep the Bishop waiting.' Like a hen gathering her chickens, the Sister hurried away with Violet, Olive, and May."
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "'How happy they seem in this beautiful retreat!' said Mrs. Scully, drawing her black lace shawl about her grey-silk shoulders. 'How little they know of the troubles of the world! I am afraid it would be hard to persuade them to leave their convent if they knew the trials that await them.'"
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "'We cannot escape our trials,' a priest said, who had just joined the group; 'they are given to us that we may overcome them.'"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "'I suppose so, indeed,' said Mrs. Scully; and, trying to find consolation in the remark, she sighed. Another priest, as if fearing further religious shop from his fellow-worker, informed Mr. Barton, in a cheerful tone of voice, that he had heard he was a great painter."
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "'I don't know—I don't know,' replied Mr. Barton; 'painting is, after all, only dreaming. I should like to be put at the head of an army, but when I am seized with an idea I have to rush to put it down.'"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "Finding no appropriate answer to these somewhat erratic remarks, the priest joined in a discussion that had been started concerning the action taken by the Church during the present agrarian agitation. Mr. Barton, who was weary of the subject, stepped aside, and, sitting on one of the terrace benches between Cecilia and Alice, he feasted his eyes on the colour-changes that came over the sea, and in long-drawn-out and disconnected phrases explained his views on nature and art until the bell was rung for the children to assemble in the school-hall."
+    }
+  ]
+}
