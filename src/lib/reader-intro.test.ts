@@ -169,7 +169,7 @@ test("Bel-Ami opens on the five-franc piece", () => {
 
 test("Magnhild opens on the storm, preface skipped", () => {
   const copy = readerIntro(shelfAsWork("magnhild"));
-  assert.match(copy, /Preface/);
+  assert.match(copy, /fjord/);
   assert.match(copy, /Magnhild/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured|Dust/i);
 });
@@ -329,8 +329,8 @@ test("Death Comes for the Archbishop uses the Cruciform Tree sit and names the H
   const copy = readerIntro(shelfAsWork("death-comes-for-the-archbishop"));
   assert.match(copy, /solitary horseman/);
   assert.match(copy, /New Mexico/);
-  assert.match(copy, /Cruciform Tree/);
-  assert.match(copy, /Rome prologue/);
+  assert.match(copy, /It opens at Book One, The Cruciform Tree/);
+  assert.doesNotMatch(copy, /Skip the/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
@@ -360,15 +360,15 @@ test("A Hundred and Seventy Chinese Poems uses the Winter Night sit and names th
 test("Dubliners uses the Araby sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("dubliners"));
   assert.match(copy, /North Richmond Street/);
-  assert.match(copy, /Araby only/);
+  assert.match(copy, /This reading is just Araby/);
   assert.doesNotMatch(copy, /not Irish Fairy Tales/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open|The Sisters only/i);
 });
 
 test("Gitanjali uses the before-sleep poem-1 sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("gitanjali"));
-  assert.match(copy, /Yeats/);
-  assert.match(copy, /poem 1/);
+  assert.match(copy, /It opens on poem 1/);
+  assert.doesNotMatch(copy, /Skip the/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
@@ -383,7 +383,7 @@ test("Harmonium uses the before-sleep Snow Man sit and names the Host frame", ()
 test("Martin Birck's Youth uses the before-sleep garden sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("martin-bircks-youth"));
   assert.match(copy, /childhood dream/i);
-  assert.match(copy, /Stork preface/);
+  assert.match(copy, /It opens with The Old Street/);
   assert.match(copy, /1930 English only/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });

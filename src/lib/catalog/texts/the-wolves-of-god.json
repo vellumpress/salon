@@ -182,13 +182,6 @@
       "place": "\"Vengeance Is Mine\"",
       "reentry": "1",
       "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s25",
-      "title": "The End",
-      "place": "The End",
-      "reentry": "Transcriber's notes",
-      "prompt": "A word from this stretch."
     }
   ],
   "breaths": [
@@ -8911,96 +8904,6 @@
       "id": "s24-194",
       "sceneId": "s24",
       "text": "A fugitive memory flashed for an instant through the other's brain as he listened. He had an odd feeling for a second that he had heard this conversation before somewhere. A ghostly sense of familiarity brushed his mind, then vanished. At dinner that night the table in front of him was unoccupied. He did not, however, notice that it was unoccupied."
-    },
-    {
-      "id": "s25-0",
-      "sceneId": "s25",
-      "text": "Transcriber's notes"
-    },
-    {
-      "id": "s25-1",
-      "sceneId": "s25",
-      "text": "Punctuation errors have been corrected. Also the following changes have been made, on page"
-    },
-    {
-      "id": "s25-2",
-      "sceneId": "s25",
-      "text": "39 \"pleasel\" changed to \"pleased\" (to what dream he pleased.)"
-    },
-    {
-      "id": "s25-3",
-      "sceneId": "s25",
-      "text": "107 \"peform\" changed to \"perform\" (father will perform the sacrifice)"
-    },
-    {
-      "id": "s25-4",
-      "sceneId": "s25",
-      "text": "124 \"morever\" changed to \"moreover\" (leisure, moreover. Grimwood)"
-    },
-    {
-      "id": "s25-5",
-      "sceneId": "s25",
-      "text": "126 \"be\" changed to \"he\" (where had he come from)"
-    },
-    {
-      "id": "s25-6",
-      "sceneId": "s25",
-      "text": "182 \"it\" changed to \"is\" (the house is getting on)"
-    },
-    {
-      "id": "s25-7",
-      "sceneId": "s25",
-      "text": "190 \"hanging\" changed to \"banging\" (the front door banging)"
-    },
-    {
-      "id": "s25-8",
-      "sceneId": "s25",
-      "text": "195 \"saidly\" changed to \"sadly\" (he said sadly)"
-    },
-    {
-      "id": "s25-9",
-      "sceneId": "s25",
-      "text": "240 \"implicity\" changed to \"implicitly\" (had obeyed implicitly, believing everything)"
-    },
-    {
-      "id": "s25-10",
-      "sceneId": "s25",
-      "text": "254 \"additioin\" changed to \"addition\" (respect in addition to his gratitude.)"
-    },
-    {
-      "id": "s25-11",
-      "sceneId": "s25",
-      "text": "256 \"yho\" changed to \"who\" (but a man who has served)"
-    },
-    {
-      "id": "s25-12",
-      "sceneId": "s25",
-      "text": "262 \"sunride\" changed to \"sunrise\" (from the sunrise end.)"
-    },
-    {
-      "id": "s25-13",
-      "sceneId": "s25",
-      "text": "266 \"has\" changed to \"his\" (Purdy had gone his way again)"
-    },
-    {
-      "id": "s25-14",
-      "sceneId": "s25",
-      "text": "278 \"incredudous\" changed to \"incredulous\" (of incredulous surprise)"
-    },
-    {
-      "id": "s25-15",
-      "sceneId": "s25",
-      "text": "286 \"deliberatelly\" changed to \"deliberately\" (away as deliberately as she had turned to look"
-    },
-    {
-      "id": "s25-16",
-      "sceneId": "s25",
-      "text": "307 \"diety\" changed to \"deity\" (against the very deity he had worshipped)."
-    },
-    {
-      "id": "s25-17",
-      "sceneId": "s25",
-      "text": "Otherwise the original text has been preserved, including inconsistent spelling and hyphenation."
     }
   ]
 }

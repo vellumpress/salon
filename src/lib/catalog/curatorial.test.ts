@@ -1868,23 +1868,23 @@ test("BATCH-5 CLEAR inventory binds are local Next / before-sleep sits, never Fe
 test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
   const expect = {
     "a-house-of-gentlefolk": { opening: "A bright spring day was fading into evening. High overhead in the clear heavens small rosy clouds se", breaths: 1083, scenes: 45, gutenberg: 5721 },
-    "artists-wives": { opening: "*Stretched at full length, on the great divan of a studio, cigar in mouth, two friends--a poet and a", breaths: 338, scenes: 13, gutenberg: 22522 },
-    "blix": { opening: "It had just struck nine from the cuckoo clock that hung over the mantelpiece in the dining-room, whe", breaths: 1235, scenes: 14, gutenberg: 401 },
+    "artists-wives": { opening: "*Stretched at full length, on the great divan of a studio, cigar in mouth, two friends--a poet and a", breaths: 337, scenes: 13, gutenberg: 22522 },
+    "blix": { opening: "It had just struck nine from the cuckoo clock that hung over the mantelpiece in the dining-room, whe", breaths: 1234, scenes: 14, gutenberg: 401 },
     "emaux-et-camees": { opening: "(1794-1894)", breaths: 675, scenes: 62, gutenberg: 37733 },
-    "eves-ransom": { opening: "On the station platform at Dudley Port, in the dusk of a February afternoon, half-a-dozen people wai", breaths: 1862, scenes: 27, gutenberg: 4297 },
-    "fraternity": { opening: "In the afternoon of the last day of April, 190--, a billowy sea of little broken clouds crowned the ", breaths: 2813, scenes: 41, gutenberg: 2773 },
+    "eves-ransom": { opening: "On the station platform at Dudley Port, in the dusk of a February afternoon, half-a-dozen people wai", breaths: 1861, scenes: 27, gutenberg: 4297 },
+    "fraternity": { opening: "In the afternoon of the last day of April, 190--, a billowy sea of little broken clouds crowned the ", breaths: 2812, scenes: 41, gutenberg: 2773 },
     "hania": { opening: "When old Mikolai on his death-bed left Hania to my guardianship and conscience, I was sixteen years of age;", breaths: 1090, scenes: 12, gutenberg: 36583 },
     "indian-summer": { opening: "Midway of the Ponte Vecchio at Florence, where three arches break the lines of the little jewellers'", breaths: 2495, scenes: 24, gutenberg: 7359 },
-    "les-heures-claires": { opening: "Tissée en or dans l'air de soie!", breaths: 122, scenes: 30, gutenberg: 10061 },
-    "les-trophees": { opening: "À Leconte de L'Isle", breaths: 664, scenes: 81, gutenberg: 14805 },
+    "les-heures-claires": { opening: "Tissée en or dans l'air de soie!", breaths: 121, scenes: 30, gutenberg: 10061 },
+    "les-trophees": { opening: "À Leconte de L'Isle", breaths: 663, scenes: 81, gutenberg: 14805 },
     "numa-roumestan": { opening: "That Sunday--it was a scorching hot Sunday in July at the time of the yearly competitions for the department--there was a great open-air festival held in the ancient amphitheatre of Aps in Provence.", breaths: 1651, scenes: 20, gutenberg: 69808 },
     "royal-highness": { opening: "The scene is the Albrechtstrasse, the main artery of the capital, which runs from Albrechtsplatz and the Old Schloss to", breaths: 1407, scenes: 10, gutenberg: 36028 },
     "the-emancipated": { opening: "By a window looking from Posillipo upon the Bay of Naples sat an English lady, engaged in letter-wri", breaths: 3897, scenes: 33, gutenberg: 4311 },
     "the-great-hunger": { opening: "For sheer havoc, there is no gale like a good northwester, when it roars in, through the long winter", breaths: 1744, scenes: 27, gutenberg: 2943 },
     "the-patrician": { opening: "Light, entering the vast room—a room so high that its carved ceiling refused itself to exact scrutin", breaths: 2176, scenes: 51, gutenberg: 2774 },
     "the-price-of-love": { opening: "In the evening dimness of old Mrs. Maldon's sitting-room stood the youthful virgin, Rachel Louisa Fl", breaths: 2475, scenes: 19, gutenberg: 12912 },
-    "the-private-papers-of-henry-ryecroft": { opening: "I.", breaths: 534, scenes: 4, gutenberg: 1463 },
-    "unhuman-tour-kusamakura": { opening: "Climbing the mountain, I was caught up into a train of thought.", breaths: 1013, scenes: 13, gutenberg: 73131 },
+    "the-private-papers-of-henry-ryecroft": { opening: "I.", breaths: 480, scenes: 4, gutenberg: 1463 },
+    "unhuman-tour-kusamakura": { opening: "Climbing the mountain, I was caught up into a train of thought.", breaths: 990, scenes: 13, gutenberg: 73131 },
   } as const;
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
   const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
@@ -2014,7 +2014,7 @@ test("BATCH-13 CLEAR inventory binds are local Next / before-sleep sits, never F
     "baudelaire-prose-and-poetry": { opening: "The Moon, who is caprice itself, looked in through the window when you lay asleep in your cradle, an", breaths: 1124, scenes: 112, gutenberg: 47032 },
     "tales-grotesque-and-curious": { opening: "There was nobody at Ike-no-O who did not know about the nose of Zenchi Naigu. It was five or six inc", breaths: 41, scenes: 1, gutenberg: 78105 },
     "a-book-barnes": { opening: "Toward dusk, in the Summer of the year, a man dressed in a frock coat and top hat, and carrying a ca", breaths: 1635, scenes: 22, gutenberg: 60904 },
-    "a-spring-time-case": { opening: "It was around the tolling of the fifth hour in the early evening that a fish monger, of the next str", breaths: 448, scenes: 5, gutenberg: 73132 },
+    "a-spring-time-case": { opening: "It was around the tolling of the fifth hour in the early evening that a fish monger, of the next str", breaths: 425, scenes: 5, gutenberg: 73132 },
   } as const;
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
   const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
@@ -2069,12 +2069,12 @@ test("BATCH-15 CLEAR inventory binds are local Next / before-sleep sits, never F
   const expect = {
     "rootabaga-stories": { opening: "Gimme the Ax lived in a house where everything is the same as it always was.", breaths: 58, scenes: 1, gutenberg: 27085, scene: "How They Broke Away to Go to the Rootabaga Country" },
     "rootabaga-pigeons": { opening: "Blixie Bimber’s mother was chopping hash. And the hatchet broke. So Blixie started downtown with fif", breaths: 20, scenes: 1, gutenberg: 61553, scene: "The Skyscraper to the Moon" },
-    "auguste-rodin": { opening: "Rodin has pronounced Rilke's essay the supreme interpretation of his work. A few years ago the sculp", breaths: 115, scenes: 2, gutenberg: 45605, scene: "Preface" },
+    "auguste-rodin": { opening: "Rodin has pronounced Rilke's essay the supreme interpretation of his work. A few years ago the sculp", breaths: 114, scenes: 2, gutenberg: 45605, scene: "Preface" },
     "lucky-pehr": { opening: "*Scene: A Room in the Church Tower.*", breaths: 917, scenes: 5, gutenberg: 8510, scene: "Act I" },
     "the-dream-play": { opening: "*The background represents cloud banks that resemble corroding slate cliffs with ruins of castles and fortresses*.", breaths: 1062, scenes: 2, gutenberg: 45375, scene: "Prologue" },
     "the-father": { opening: "[The sitting room at the Captain's. There is a door a little to the right at the back. In the middle of the room, a large, round table strewn with newspapers and magazines. To righ", breaths: 725, scenes: 3, gutenberg: 8499, scene: "Act I" },
     "easter": { opening: "[Thursday before Easter. The music before curtain is: Haydn: Sieben Worte des Erloesers. Introduction: Maestoso Adagio.]", breaths: 802, scenes: 3, gutenberg: 8500, scene: "Act I" },
-    "the-inferno": { opening: "An American critic says \"Strindberg is the greatest subjectivist of all time.\" Certainly neither Aug", breaths: 651, scenes: 17, gutenberg: 44108, scene: "Introduction" },
+    "the-inferno": { opening: "An American critic says \"Strindberg is the greatest subjectivist of all time.\" Certainly neither Aug", breaths: 650, scenes: 17, gutenberg: 44108, scene: "Introduction" },
     "trafalgar": { opening: "I trust that, before relating the important events of which I have been an eye-witness, I may be all", breaths: 556, scenes: 17, gutenberg: 47980, scene: "Chapter I" },
     "saragossa": { opening: "It was, I believe, the evening of the eighteenth when we saw Saragossa in the distance. As we entere", breaths: 1034, scenes: 31, gutenberg: 47769, scene: "Chapter I" },
     "leon-roch": { opening: "“*Ugoibea*, AUGUST 30th.", breaths: 1334, scenes: 32, gutenberg: 48752, scene: "Chapter I" },
@@ -2599,7 +2599,7 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     "les-civilises": { opening: "«Cap'taine Torral,» grogna Mévil à ses coureurs en redescendant.", breaths: 1844, scenes: 35, gutenberg: 47712, scene: "Chapter II" },
     "ein-landarzt": { opening: "Wir haben einen neuen Advokaten, den Dr. Bucephalus. In seinem Äußern erinnert wenig an die Zeit, da er noch Streitroß A", breaths: 120, scenes: 14, gutenberg: 21989, scene: "Der neue Advokat" },
     "hien-le-maboul": { opening: "Le clairon traversa la route, s’avança jusqu’au bord de la digue de pierres sèches et sonna le réveil. Les notes alertes", breaths: 1177, scenes: 22, gutenberg: 68588, scene: "Chapter II · Le clairon traversa la route, s’avança jusqu’au bord de la digue de" },
-    "knulp": { opening: "Anfang der neunziger Jahre mußte unser Freund Knulp einmal mehrere Wochen im Spital liegen, und als er entlassen wurde, ", breaths: 656, scenes: 3, gutenberg: 17622, scene: "Vorfrühling" },
+    "knulp": { opening: "Anfang der neunziger Jahre mußte unser Freund Knulp einmal mehrere Wochen im Spital liegen, und als er entlassen wurde, ", breaths: 648, scenes: 3, gutenberg: 17622, scene: "Vorfrühling" },
     "iracema": { opening: "Iracema passou entre as arvores, silenciosa como uma sombra: seu olhar scintillante coava entre as folhas, quaes frouxos", breaths: 968, scenes: 27, gutenberg: 67740, scene: "Chapter VII" },
     "tristana": { opening: "Resignada en absoluto no, porque más de una vez, en aquel año que precedió a lo que se va a referir, la linda figurilla ", breaths: 627, scenes: 28, gutenberg: 66979, scene: "Chapter II · Resignada en absoluto no, porque más de una vez, en aquel año que" },
     "niels": { opening: "She had the black, luminous eyes of the Blid family with delicate, straight eyebrows; she had their boldly shaped nose, ", breaths: 933, scenes: 14, gutenberg: 55389, scene: "Chapter I" },
@@ -2713,7 +2713,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-heart-of-happy-hollow": {
       opening:
         "The law is usually supposed to be a stern mistress, not to be lightly wooed, and yielding only to the most ardent pursuit.",
-      breaths: 2558,
+      breaths: 2557,
       scenes: 2,
       gutenberg: 24716,
     },
@@ -2733,7 +2733,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "the-mystery-of-choice": {
       opening: "The Purple Emperor watched me in silence.",
-      breaths: 3863,
+      breaths: 3862,
       scenes: 36,
       gutenberg: 46581,
     },
@@ -2839,13 +2839,13 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "red-oleanders": {
       opening: "*The Curtain rises on a window covered by a network of intricate pattern in front of the Palace.*",
-      breaths: 1729,
+      breaths: 1724,
       scenes: 50,
       gutenberg: 77892,
     },
     "stories-from-tagore": {
       opening: "My five years' old daughter Mini cannot live without chattering. I really believe that in all her life she has not wasted a minute in silence. Her mother is oft",
-      breaths: 1037,
+      breaths: 1031,
       scenes: 10,
       gutenberg: 33525,
     },
@@ -3286,8 +3286,8 @@ test("Mira 6PM CLEAR sits on Next, For you, and Rituals, never Featured", () => 
     },
     "jamaica-anansi-stories": {
       opening: "One great hungry time.",
-      breaths: 9041,
-      scenes: 347,
+      breaths: 9040,
+      scenes: 346,
       minutes: 1356,
       year: 1924,
       gutenberg: 72735,
@@ -3554,7 +3554,7 @@ test("Mira Wed 8AM CLEAR sits on Next, For you, and Rituals, never Featured", ()
 
   const arch = SHELF.find((item) => item.id === "death-comes-for-the-archbishop");
   assert.match(arch?.intro ?? "", /Cruciform Tree/);
-  assert.match(arch?.intro ?? "", /Rome prologue/);
+  assert.match(arch?.intro ?? "", /It opens at Book One, The Cruciform Tree/);
   assert.doesNotMatch(arch?.opening ?? "", /^ONE afternoon in the autumn of 1851 a solitary horseman was in Rome/);
   const banjo = SHELF.find((item) => item.id === "banjo");
   assert.match(banjo?.intro ?? "", /language is left as written/);
@@ -3988,7 +3988,7 @@ test("Mira ~4:14 Wed 23 Sep CLEAR sits on Next and Rituals, never a new Featured
   const tales = SHELF.find((item) => item.id === "brazilian-tales");
   assert.match(tales?.intro ?? "", /One tale only/);
   assert.match(tales?.intro ?? "", /Attendant's Confession/);
-  assert.match(tales?.intro ?? "", /tale boundary/);
+  assert.match(tales?.intro ?? "", /This reading ends with that tale/);
   assert.doesNotMatch(tales?.intro ?? "", /Tropic/);
   const talesOpen = JSON.parse(
     readFileSync(new URL("./openings/brazilian-tales.json", import.meta.url), "utf8"),
@@ -4108,7 +4108,7 @@ test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Feature
   const nabob = SHELF.find((item) => item.id === "a-hungarian-nabob");
   assert.equal(nabob?.gutenberg, 20978);
   assert.equal(nabob?.opening, "An Oddity, 1822.");
-  assert.equal(nabob?.breaths, 2347);
+  assert.equal(nabob?.breaths, 2337);
   assert.equal(curatorialTrack("a-hungarian-nabob"), "next");
   assert.equal(RITUAL_SIT_MINUTES["a-hungarian-nabob"], 8);
   const nabobOpen = JSON.parse(
@@ -4251,7 +4251,7 @@ test("Mira Thu eve 24 Sep CLEAR sits on Next, Rituals, and For you, never a new 
     basilio: {
       title: "Dragon’s Teeth",
       gutenberg: 74442,
-      breaths: 8199,
+      breaths: 8194,
       opening: "The cuckoo-clock in the dining-room had just struck eleven.",
       em: "",
     },
@@ -4279,7 +4279,7 @@ test("Mira Thu eve 24 Sep CLEAR sits on Next, Rituals, and For you, never a new 
     "the-book-of-khalid": {
       title: "The Book of Khalid",
       gutenberg: 29257,
-      breaths: 4507,
+      breaths: 4493,
       opening: "The City of Baal, or Baalbek, is between the desert and the deep sea.",
       em: "they",
     },
@@ -6889,7 +6889,7 @@ test("Mira POST-#169 CLEAR is Next lead Born in Exile, then Four Horsemen, After
   assert.equal(hearts.scenes[0]?.title, "Wings");
   assert.ok(hearts.scenes.some((scene) => scene.title === "Hunger"));
   assert.doesNotMatch(SHELF.find((item) => item.id === "hungry-hearts")?.intro ?? "", /not Laos/);
-  assert.match(SHELF.find((item) => item.id === "hungry-hearts")?.intro ?? "", /Wings only/);
+  assert.match(SHELF.find((item) => item.id === "hungry-hearts")?.intro ?? "", /just Wings/);
 });
 
 test("Mira POST-#170 CLEAR is Next lead The Sport of the Gods, then Ramuntcho, Miss Lulu Bett, and The Pit, with Reginald on Rituals", () => {
@@ -7103,7 +7103,7 @@ test("Mira POST-#170 CLEAR is Next lead The Sport of the Gods, then Ramuntcho, M
   assert.equal(reginaldFull.year, "1904");
   assert.equal(reginaldFull.scenes[0]?.title, "Reginald");
   assert.ok(reginaldFull.scenes.some((scene) => scene.title === "Reginald on Christmas Presents"));
-  assert.match(SHELF.find((item) => item.id === "reginald")?.intro ?? "", /title sketch only/);
+  assert.match(SHELF.find((item) => item.id === "reginald")?.intro ?? "", /just the title sketch/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "reginald")?.intro ?? "", /Soft London/);
 });
 
@@ -7310,7 +7310,7 @@ test("Mira POST-#171 CLEAR is Next lead Royal Highness, then Ramona, Almayer’s
   assert.equal(dogFull.year, "1923");
   assert.equal(dogFull.scenes[0]?.title, "The Black Dog");
   assert.ok(dogFull.scenes.some((scene) => scene.title === "Alas, Poor Bollington!"));
-  assert.match(SHELF.find((item) => item.id === "the-black-dog")?.intro ?? "", /title tale only/);
+  assert.match(SHELF.find((item) => item.id === "the-black-dog")?.intro ?? "", /just the title tale/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-black-dog")?.intro ?? "", /after Reginald/);
 });
 
@@ -7531,7 +7531,7 @@ test("Mira POST-#172 CLEAR is Next lead Daisy Miller, then South Wind, The Villa
   assert.equal(berniceFull.year, "1920");
   assert.equal(berniceFull.scenes[0]?.title, "Bernice Bobs Her Hair");
   assert.ok(berniceFull.scenes.some((scene) => scene.title === "The Offshore Pirate"));
-  assert.match(SHELF.find((item) => item.id === "flappers-and-philosophers")?.intro ?? "", /Bernice Bobs Her Hair only/);
+  assert.match(SHELF.find((item) => item.id === "flappers-and-philosophers")?.intro ?? "", /just Bernice Bobs Her Hair/);
   assert.match(SHELF.find((item) => item.id === "flappers-and-philosophers")?.intro ?? "", /One tale this sit/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "flappers-and-philosophers")?.intro ?? "", /Launch shelf is no/);
 });
@@ -7755,7 +7755,7 @@ test("Mira MIDDAY CLEAR is Next lead Candide, then Iola Leroy, Esther Waters, an
   assert.equal(spiderFull.year, "1917");
   assert.match(spiderFull.scenes[0]?.title ?? "", /Spider Tales/);
   assert.ok(spiderFull.scenes.some((scene) => /How Wisdom Became/.test(scene.title ?? "")));
-  assert.match(SHELF.find((item) => item.id === "west-african-folk-tales")?.intro ?? "", /Spider Tales’ only|Spider Tales' only/);
+  assert.match(SHELF.find((item) => item.id === "west-african-folk-tales")?.intro ?? "", /just How We Got the Name ‘Spider Tales’|just How We Got the Name 'Spider Tales'/);
   assert.match(SHELF.find((item) => item.id === "west-african-folk-tales")?.intro ?? "", /One tale this sit/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "west-african-folk-tales")?.intro ?? "", /Launch shelf is no/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "west-african-folk-tales")?.intro ?? "", /not Caribbean Anansi/);
@@ -7984,7 +7984,7 @@ test("Mira POST-#174 CLEAR is Next lead Erewhon, then Ann Veronica, The Great Hu
   assert.equal(frost.year, "1902");
   assert.match(frost.scenes[0]?.title ?? "", /Law of Life/);
   assert.ok(frost.scenes.some((scene) => /In the Forests of the North/.test(scene.title ?? "")));
-  assert.match(SHELF.find((item) => item.id === "children-of-the-frost")?.intro ?? "", /Law of Life only/);
+  assert.match(SHELF.find((item) => item.id === "children-of-the-frost")?.intro ?? "", /just The Law of Life/);
   assert.match(SHELF.find((item) => item.id === "children-of-the-frost")?.intro ?? "", /One tale this sit/);
 });
 
@@ -8210,7 +8210,7 @@ test("Mira POST-#175 CLEAR is Next lead The Poison Tree, then Cosmopolis, The Wo
   assert.doesNotMatch(billy.author ?? "", /trans/i);
   assert.match(billy.scenes[0]?.title ?? "", /Chapter I/);
   assert.equal(billy.scenes.some((scene) => /Daniel Orme|other prose/i.test(scene.title ?? "")), false);
-  assert.match(SHELF.find((item) => item.id === "billy-budd")?.intro ?? "", /Foretopman only/);
+  assert.match(SHELF.find((item) => item.id === "billy-budd")?.intro ?? "", /just Billy Budd, Foretopman/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "billy-budd")?.intro ?? "", /not White Jacket/);
 
   const romance = JSON.parse(
@@ -8225,7 +8225,7 @@ test("Mira POST-#175 CLEAR is Next lead The Poison Tree, then Cosmopolis, The Wo
   assert.equal(sketches.year, "1895");
   assert.match(sketches.scenes[0]?.title ?? "", /Real Malay/);
   assert.ok(sketches.scenes.some((scene) => /A Malay Romance/.test(scene.title ?? "")));
-  assert.match(SHELF.find((item) => item.id === "malay-sketches")?.intro ?? "", /A Malay Romance only/);
+  assert.match(SHELF.find((item) => item.id === "malay-sketches")?.intro ?? "", /just A Malay Romance/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "malay-sketches")?.intro ?? "", /Launch shelf is no/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "malay-sketches")?.intro ?? "", /do not inflate/);
 });
@@ -8431,7 +8431,7 @@ test("Mira POST-#176 CLEAR is Next lead Cousin Betty, then Sorrows of Satan, Kin
   assert.match(SHELF.find((item) => item.id === "the-king-of-schnorrers")?.intro ?? "", /King only/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-king-of-schnorrers")?.intro ?? "", /Pale Bontzye/);
   const grotesques = SHELF.find((item) => item.id === "the-king-of-schnorrers-grotesques-and-fantasies");
-  assert.equal(grotesques?.breaths, 6706);
+  assert.equal(grotesques?.breaths, 6705);
   assert.equal(grotesques?.title, "The King of Schnorrers: Grotesques and Fantasies");
 
   const hania = JSON.parse(
@@ -8440,7 +8440,7 @@ test("Mira POST-#176 CLEAR is Next lead Cousin Betty, then Sorrows of Satan, Kin
   assert.equal(hania.year, "1897");
   assert.match(hania.author ?? "", /Jeremiah Curtin/);
   assert.equal(hania.scenes.some((scene) => /Prologue|Tartar/i.test(scene.title ?? "")), false);
-  assert.match(SHELF.find((item) => item.id === "hania")?.intro ?? "", /novella only/);
+  assert.match(SHELF.find((item) => item.id === "hania")?.intro ?? "", /just the Hania novella/);
   assert.match(SHELF.find((item) => item.id === "hania")?.intro ?? "", /1876/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "hania")?.intro ?? "", /not The Peasants/);
 
@@ -8451,7 +8451,7 @@ test("Mira POST-#176 CLEAR is Next lead Cousin Betty, then Sorrows of Satan, Kin
   assert.equal(toys.author, "Saki");
   assert.equal(toys.scenes.length, 1);
   assert.match(toys.scenes[0]?.title ?? "", /The Toys of Peace/);
-  assert.match(SHELF.find((item) => item.id === "the-toys-of-peace")?.intro ?? "", /The Toys of Peace only/);
+  assert.match(SHELF.find((item) => item.id === "the-toys-of-peace")?.intro ?? "", /just The Toys of Peace/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-toys-of-peace")?.intro ?? "", /not Reginald/);
 });
 
@@ -8658,7 +8658,7 @@ test("Mira POST-#177 CLEAR is Next lead Tess, then Captains Courageous, Numa Rou
   assert.equal(tug.author, "Israel Zangwill");
   assert.equal(tug.scenes.length, 1);
   assert.match(tug.scenes[0]?.title ?? "", /The Tug of Love/);
-  assert.match(SHELF.find((item) => item.id === "the-tug-of-love")?.intro ?? "", /The Tug of Love only/);
+  assert.match(SHELF.find((item) => item.id === "the-tug-of-love")?.intro ?? "", /just The Tug of Love/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-tug-of-love")?.intro ?? "", /Schnorrers/);
 });
 
@@ -8878,7 +8878,7 @@ test("Mira POST-#178 CLEAR is Next lead Seven Gables, then Heart of Darkness, To
   assert.match(slav.author ?? "", /Rosa Savary Graham/);
   assert.equal(slav.scenes.length, 1);
   assert.match(slav.scenes[0]?.title ?? "", /A Slav Soul/);
-  assert.match(SHELF.find((item) => item.id === "a-slav-soul")?.intro ?? "", /A Slav Soul only/);
+  assert.match(SHELF.find((item) => item.id === "a-slav-soul")?.intro ?? "", /just A Slav Soul/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "a-slav-soul")?.intro ?? "", /Virgin Soil/);
   const slavOpen = JSON.parse(
     readFileSync(new URL("./openings/a-slav-soul.json", import.meta.url), "utf8"),
@@ -9109,7 +9109,7 @@ test("Mira POST-#179 CLEAR is Next lead Cabbages and Kings, then Dorian Gray, Th
   assert.equal(cross.author, "George Egerton");
   assert.equal(cross.scenes.length, 1);
   assert.match(cross.scenes[0]?.title ?? "", /A Cross Line/);
-  assert.match(SHELF.find((item) => item.id === "a-cross-line")?.intro ?? "", /A Cross Line only/);
+  assert.match(SHELF.find((item) => item.id === "a-cross-line")?.intro ?? "", /just A Cross Line/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "a-cross-line")?.intro ?? "", /Heavenly Twins/);
   const crossOpen = JSON.parse(
     readFileSync(new URL("./openings/a-cross-line.json", import.meta.url), "utf8"),
@@ -9340,7 +9340,7 @@ test("Mira POST-#180 CLEAR is Next lead The Shadow of the Cathedral, then Way of
   assert.equal(fair.title, "The Beckoning Fair One");
   assert.equal(fair.scenes.length, 12);
   assert.match(fair.scenes[0]?.title ?? "", /Beckoning Fair One/);
-  assert.match(SHELF.find((item) => item.id === "widdershins")?.intro ?? "", /Beckoning Fair One only/);
+  assert.match(SHELF.find((item) => item.id === "widdershins")?.intro ?? "", /just The Beckoning Fair One/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "widdershins")?.intro ?? "", /Seven Gables/);
   const fairOpen = JSON.parse(
     readFileSync(new URL("./openings/widdershins.json", import.meta.url), "utf8"),
@@ -9583,7 +9583,7 @@ test("Mira POST-#181 CLEAR is Next lead Typee, then Kangaroo, Casanova’s Homec
   assert.equal(lord.title, "Lord Arthur Savile’s Crime");
   assert.equal(lord.scenes.length, 6);
   assert.match(lord.scenes[0]?.title ?? "", /Lord Arthur Savile/);
-  assert.match(SHELF.find((item) => item.id === "lord-arthur-saviles-crime")?.intro ?? "", /Lord Arthur Savile’s Crime only/);
+  assert.match(SHELF.find((item) => item.id === "lord-arthur-saviles-crime")?.intro ?? "", /just Lord Arthur Savile’s Crime/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "lord-arthur-saviles-crime")?.intro ?? "", /Dorian Gray/);
   const lordOpen = JSON.parse(
     readFileSync(new URL("./openings/lord-arthur-saviles-crime.json", import.meta.url), "utf8"),
@@ -9823,7 +9823,7 @@ test("Mira POST-#182 CLEAR is Next lead Three Soldiers, then Doctor Pascal, In t
   assert.equal(charan.title, "CHARAN");
   assert.equal(charan.scenes.length, 1);
   assert.match(charan.scenes[0]?.title ?? "", /CHARAN/);
-  assert.match(SHELF.find((item) => item.id === "charan")?.intro ?? "", /CHARAN only/);
+  assert.match(SHELF.find((item) => item.id === "charan")?.intro ?? "", /just CHARAN/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "charan")?.intro ?? "", /Beckoning Fair One/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "charan")?.intro ?? "", /Lord Arthur Savile/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "charan")?.intro ?? "", /Inventory \d+/);
@@ -9909,7 +9909,7 @@ test("Mira POST-#183 CLEAR is Next lead Sister Carrie, then Antic Hay, A spring-
   assert.equal(SHELF.filter((item) => item.id === "a-spring-time-case").length, 1);
   assert.equal(SHELF.filter((item) => item.id === "the-hungry-stones-and-other-stories").length, 1);
   assert.equal(SHELF.find((item) => item.id === "a-spring-time-case")?.gutenberg, 73132);
-  assert.equal(SHELF.find((item) => item.id === "a-spring-time-case")?.breaths, 448);
+  assert.equal(SHELF.find((item) => item.id === "a-spring-time-case")?.breaths, 425);
   assert.equal(SHELF.find((item) => item.id === "a-spring-time-case")?.year, 1915);
   assert.equal(SHELF.find((item) => item.id === "the-hungry-stones-and-other-stories")?.breaths, 748);
   assert.equal(SHELF.find((item) => item.id === "the-hungry-stones-and-other-stories")?.gutenberg, 2518);
@@ -10083,7 +10083,7 @@ test("Mira POST-#183 CLEAR is Next lead Sister Carrie, then Antic Hay, A spring-
   assert.equal(stones.title, "The Hungry Stones");
   assert.equal(stones.scenes.length, 1);
   assert.match(stones.scenes[0]?.title ?? "", /Hungry Stones/);
-  assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /Hungry Stones only/);
+  assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /just The Hungry Stones/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /Poison Tree/);
   assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /several hands/);
   assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /phone-hard/);
@@ -10330,7 +10330,7 @@ test("Mira POST-#184 CLEAR is Next lead Smoke, then Niels Lyhne, The Emancipated
   assert.equal(pillar.title, "Our Lady of the Pillar");
   assert.equal(pillar.scenes.length, 4);
   assert.match(pillar.scenes[0]?.title ?? "", /Our Lady of the Pillar/);
-  assert.match(SHELF.find((item) => item.id === "our-lady-of-the-pillar")?.intro ?? "", /Our Lady of the Pillar only/);
+  assert.match(SHELF.find((item) => item.id === "our-lady-of-the-pillar")?.intro ?? "", /just Our Lady of the Pillar/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "our-lady-of-the-pillar")?.intro ?? "", /Dragon/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "our-lady-of-the-pillar")?.intro ?? "", /Toledo/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "our-lady-of-the-pillar")?.intro ?? "", /No wider inventory score/);
@@ -10413,7 +10413,7 @@ test("Mira POST-#185 CLEAR is Next lead Kipps, then The Professor, A Room with a
   assert.equal(SHELF.filter((item) => item.id === "madame-heurtebise").length, 1);
   assert.equal(SHELF.filter((item) => item.id === "artists-wives").length, 1);
   assert.equal(SHELF.find((item) => item.id === "artists-wives")?.gutenberg, 22522);
-  assert.equal(SHELF.find((item) => item.id === "artists-wives")?.breaths, 338);
+  assert.equal(SHELF.find((item) => item.id === "artists-wives")?.breaths, 337);
 
   const opens = {
     kipps: {
@@ -10581,7 +10581,7 @@ test("Mira POST-#185 CLEAR is Next lead Kipps, then The Professor, A Room with a
   assert.equal(heurtebise.title, "Madame Heurtebise");
   assert.equal(heurtebise.scenes.length, 1);
   assert.match(heurtebise.scenes[0]?.title ?? "", /Madame Heurtebise/);
-  assert.match(SHELF.find((item) => item.id === "madame-heurtebise")?.intro ?? "", /Madame Heurtebise only/);
+  assert.match(SHELF.find((item) => item.id === "madame-heurtebise")?.intro ?? "", /just Madame Heurtebise/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "madame-heurtebise")?.intro ?? "", /Numa Roumestan/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "madame-heurtebise")?.intro ?? "", /Nabob/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "madame-heurtebise")?.intro ?? "", /Germinal/);
@@ -10841,7 +10841,7 @@ test("Mira POST-#186 CLEAR is Next lead Une Vie, then My Ántonia, Look Back on 
   assert.equal(yoto.title, "The Father of Yoto");
   assert.equal(yoto.scenes.length, 1);
   assert.match(yoto.scenes[0]?.title ?? "", /Father of Yoto/);
-  assert.match(SHELF.find((item) => item.id === "father-of-yoto")?.intro ?? "", /Father of Yoto only/);
+  assert.match(SHELF.find((item) => item.id === "father-of-yoto")?.intro ?? "", /just The Father of Yoto/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "father-of-yoto")?.intro ?? "", /Heurtebise/);
   assert.match(bindNote("father-of-yoto"), /Inventory 76/);
 
@@ -11077,8 +11077,8 @@ test("Mira POST-#187 CLEAR is Next lead Crime and Punishment, then Uncle Silas, 
   assert.equal(bottle.title, "The Bottle Imp");
   assert.equal(bottle.scenes.length, 1);
   assert.match(bottle.scenes[0]?.title ?? "", /Bottle Imp/);
-  assert.match(SHELF.find((item) => item.id === "bottle-imp")?.intro ?? "", /Bottle Imp only/);
-  assert.match(SHELF.find((item) => item.id === "bottle-imp")?.intro ?? "", /Falesá/);
+  assert.match(SHELF.find((item) => item.id === "bottle-imp")?.intro ?? "", /just The Bottle Imp/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "bottle-imp")?.intro ?? "", /Skip the/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "bottle-imp")?.intro ?? "", /Typee/);
   assert.match(bindNote("bottle-imp"), /Inventory 78/);
 
@@ -11331,7 +11331,7 @@ test("Mira POST-#188 CLEAR is Next lead Death in Venice, then Elmer Gantry, The 
   assert.equal(pan.title, "The Great God Pan");
   assert.equal(pan.scenes.length, 8);
   assert.match(pan.scenes[0]?.title ?? "", /Experiment/);
-  assert.match(SHELF.find((item) => item.id === "great-god-pan")?.intro ?? "", /Great God Pan only/);
+  assert.match(SHELF.find((item) => item.id === "great-god-pan")?.intro ?? "", /just The Great God Pan/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "great-god-pan")?.intro ?? "", /Hill of Dreams/);
   assert.match(bindNote("great-god-pan"), /Inventory 93/);
 
@@ -11569,7 +11569,7 @@ test("Mira POST-#189 CLEAR is Next lead Manalive, then Captain Blood, The Monoma
   assert.equal(machine.author, "H. G. Wells");
   assert.equal(machine.title, "The Time Machine");
   assert.equal(machine.scenes.length, 17);
-  assert.match(SHELF.find((item) => item.id === "the-time-machine")?.intro ?? "", /Time Machine only/);
+  assert.match(SHELF.find((item) => item.id === "the-time-machine")?.intro ?? "", /just The Time Machine/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-time-machine")?.intro ?? "", /Kipps/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-time-machine")?.intro ?? "", /PG reading-ease is easy/);
 
@@ -11811,7 +11811,7 @@ test("Mira POST-#190 CLEAR is Next lead The Prisoner of Zenda, then Kidnapped, T
   assert.equal(invisible.author, "H. G. Wells");
   assert.equal(invisible.title, "The Invisible Man");
   assert.equal(invisible.scenes.length, 29);
-  assert.match(SHELF.find((item) => item.id === "the-invisible-man")?.intro ?? "", /Invisible Man only/);
+  assert.match(SHELF.find((item) => item.id === "the-invisible-man")?.intro ?? "", /just The Invisible Man/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-invisible-man")?.intro ?? "", /Time Machine/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-invisible-man")?.intro ?? "", /Kipps/);
   assert.match(bindNote("the-invisible-man"), /PG reading-ease 83\.2/);
@@ -15907,7 +15907,7 @@ test("Mira POST-v3 Ritual: Wedding-Day is a Host-only unwind story, after A Monk
   assert.equal(SHELF.filter((item) => item.gutenberg === 74101).length, 1);
   assert.deepEqual(SHELF.filter((item) => item.author.includes("Bullett")).map((item) => item.id), [ritualOnly]);
   assert.equal(RITUAL_SIT_MINUTES[ritualOnly], 6);
-  assert.match(RITUAL_PITCHES[ritualOnly] ?? "", /This sit is “Wedding-Day” only/);
+  assert.match(RITUAL_PITCHES[ritualOnly] ?? "", /This reading is just “Wedding-Day”/);
   assert.match(work.intro ?? "", /A heads-up before you start: no hazards/);
   assert.doesNotMatch(work.intro ?? "", /PG reading-ease 75\.0 is for the whole volume/);
   assert.doesNotMatch(`${work.intro ?? ""}\n${RITUAL_PITCHES[ritualOnly] ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b|England|London/);
@@ -15966,7 +15966,7 @@ test("Mira mid Rituals: Elysium is a Host-only before-sleep story, after The Fur
   assert.equal(SHELF.filter((item) => item.gutenberg === 47930).length, 1);
   assert.deepEqual(SHELF.filter((item) => item.author.includes("Cunninghame")).map((item) => item.id), [ritualOnly]);
   assert.equal(RITUAL_SIT_MINUTES[ritualOnly], 5);
-  assert.match(RITUAL_PITCHES[ritualOnly] ?? "", /This sit is “Elysium” only/);
+  assert.match(RITUAL_PITCHES[ritualOnly] ?? "", /This reading is just “Elysium”/);
   const headsUp = "A heads-up before you start: the First World War sits just behind this story. The soldier is home from the front in Flanders on five days' leave.";
   assert.equal(blurbFor(work), headsUp);
   assert.ok((work.intro ?? "").includes(headsUp));
@@ -16192,11 +16192,11 @@ test("Mira Mon 5 Oct mid Ritual: The Fresco is a Host-only before-sleep story, a
   assert.deepEqual(SHELF.filter((item) => item.author.includes("Pu Songling")).map((item) => item.id).sort(), ["strange-tales", "the-fresco", "the-taoist-priest-of-lao-shan"].sort());
   assert.equal(SHELF.some((item) => /souli|lodge of leisures|fresco/i.test(`${item.id} ${item.title} ${item.author}`) && item.id !== ritualOnly), false);
   assert.equal(RITUAL_SIT_MINUTES[ritualOnly], 5);
-  assert.match(RITUAL_PITCHES[ritualOnly] ?? "", /This sit is “The Fresco” only/);
+  assert.match(RITUAL_PITCHES[ritualOnly] ?? "", /This reading is just “The Fresco”/);
   assert.equal(/heads-up/i.test(RITUAL_PITCHES[ritualOnly] ?? ""), false);
   assert.equal(blurbFor(work), "Two students lose themselves in Pekin's lanes, enter a temple, and one follows a goddess who steps out of a fresco.");
   assert.equal(/heads-up/i.test(blurbFor(work)), false);
-  assert.ok((work.intro ?? "").includes("This sit is “The Fresco” only"));
+  assert.ok((work.intro ?? "").includes("This reading is just “The Fresco”"));
   assert.equal(PITCHES[ritualOnly], RITUAL_PITCHES[ritualOnly]);
   assert.equal(PREFACES[ritualOnly], RITUAL_PITCHES[ritualOnly]);
   assert.equal(STORED_PREFACES[ritualOnly], RITUAL_PITCHES[ritualOnly]);
@@ -16255,11 +16255,11 @@ test("Mira Mon 5 Oct PM Ritual: The Taoist Priest of Lao-shan is a Host-only unw
   assert.deepEqual(SHELF.filter((item) => item.author.includes("Pu Songling")).map((item) => item.id).sort(), ["strange-tales", "the-fresco", ritualOnly].sort());
   assert.equal(SHELF.some((item) => item.gutenberg === 43629 && item.id !== "strange-tales"), false);
   assert.equal(RITUAL_SIT_MINUTES[ritualOnly], 6);
-  assert.match(RITUAL_PITCHES[ritualOnly] ?? "", /This sit is “The Taoist Priest of Lao-shan” only/);
+  assert.match(RITUAL_PITCHES[ritualOnly] ?? "", /This reading is just “The Taoist Priest of Lao-shan”/);
   assert.equal(/heads-up/i.test(RITUAL_PITCHES[ritualOnly] ?? ""), false);
   assert.equal(blurbFor(work), "Wang learns to walk through walls at Lao-shan, brags at home, and finishes in a heap on the floor.");
   assert.equal(/heads-up/i.test(blurbFor(work)), false);
-  assert.ok((work.intro ?? "").includes("This sit is “The Taoist Priest of Lao-shan” only"));
+  assert.ok((work.intro ?? "").includes("This reading is just “The Taoist Priest of Lao-shan”"));
   assert.equal(PITCHES[ritualOnly], RITUAL_PITCHES[ritualOnly]);
   assert.equal(PREFACES[ritualOnly], RITUAL_PITCHES[ritualOnly]);
   assert.equal(STORED_PREFACES[ritualOnly], RITUAL_PITCHES[ritualOnly]);

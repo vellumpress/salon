@@ -1042,7 +1042,7 @@ test("Harmonium opens on The Snow Man only, not Earthy Anecdote", () => {
   assert.doesNotMatch(packed.note, /Featured-track|Recommend|cold-open/i);
   assert.match(full.note, /The Snow Man/);
   assert.match(full.note, /never Earthy Anecdote/);
-  assert.equal(full.scenes.length, 121);
+  assert.equal(full.scenes.length, 120);
   assert.match(full.scenes[0]?.title ?? "", /^The Snow Man$/);
   assert.match(packed.scenes[0]?.title ?? "", /The Snow Man/i);
   assert.equal(packed.scenes.length, 1);
@@ -2379,7 +2379,7 @@ test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => 
     sanctuary: { gutenberg: 7517, form: "novel", scenes: 12, breaths: 541 },
     "the-angels-of-mons": { gutenberg: 14044, form: "stories", scenes: 4, breaths: 133 },
     "the-card": { gutenberg: 12986, form: "novel", scenes: 12, breaths: 1695 },
-    "the-flying-inn": { gutenberg: 59239, form: "novel", scenes: 25, breaths: 1417 },
+    "the-flying-inn": { gutenberg: 59239, form: "novel", scenes: 25, breaths: 1416 },
     "the-nabob": { gutenberg: 2077, form: "novel", scenes: 25, breaths: 1949 },
     "the-shadow-of-the-cathedral": { gutenberg: 12041, form: "novel", scenes: 10, breaths: 1199 },
     thyrza: { gutenberg: 4302, form: "novel", scenes: 41, breaths: 5397 },
