@@ -321,7 +321,8 @@ test("Demian uses the before-sleep two-worlds sit and names the Host frame", () 
   assert.match(copy, /two worlds/i);
   assert.match(copy, /Latin school/);
   assert.match(copy, /Childhood two-worlds map/);
-  assert.match(copy, /Priday 1923 EN only/);
+  assert.match(copy, /In N\. H\. Priday’s 1923 English\./);
+  assert.doesNotMatch(copy, /EN only/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
