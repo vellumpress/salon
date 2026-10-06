@@ -226,6 +226,114 @@ test("recover-shell does not delete a cached shell while offline or while the ne
   assert.ok(await still.match(SHELL_URL));
 });
 
+test("a navigation to the web app manifest is the file, not the shelf shell", async () => {
+  const manifest = `{
+  "name": "tbr.",
+  "start_url": "/salon/",
+  "scope": "/salon/"
+}
+`;
+  let manifestFetches = 0;
+  const { caches, listeners } = loadWorker({
+    onLine: true,
+    fetchImpl(input) {
+      const url = String(input?.url || input);
+      if (url.includes("/salon/manifest.webmanifest")) {
+        manifestFetches += 1;
+        return Promise.resolve(
+          new Response(manifest, {
+            status: 200,
+            headers: { "content-type": "application/octet-stream" },
+          }),
+        );
+      }
+      if (url.endsWith("/salon/") || url.endsWith("/salon/index.html")) {
+        return Promise.resolve(
+          new Response(shellHtml(), {
+            status: 200,
+            headers: { "content-type": "text/html; charset=utf-8" },
+          }),
+        );
+      }
+      return Promise.reject(new TypeError("Failed to fetch"));
+    },
+  });
+  await putShell(caches, "tbr-shell-v3");
+
+  const event = {
+    request: {
+      url: `${ORIGIN}/salon/manifest.webmanifest`,
+      method: "GET",
+      mode: "navigate",
+    },
+    waitUntil() {},
+    respondWith(promise) {
+      event.result = promise;
+    },
+  };
+  listeners.fetch(event);
+  const res = await event.result;
+  assert.equal(res.status, 200);
+  assert.equal(res.headers.get("content-type"), "application/manifest+json; charset=utf-8");
+  const body = await res.text();
+  assert.match(body, /"name": "tbr."/);
+  assert.match(body, /"start_url": "\/salon\/"/);
+  assert.doesNotMatch(body, /data-spa-pages-restore|not on the shelf|<!DOCTYPE html>/i);
+  assert.ok(manifestFetches >= 1);
+
+  const book = {
+    request: { url: `${ORIGIN}/salon/read/passing`, method: "GET", mode: "navigate" },
+    waitUntil() {},
+    respondWith(promise) {
+      book.result = promise;
+    },
+  };
+  listeners.fetch(book);
+  const bookRes = await book.result;
+  assert.equal(bookRes.headers.get("content-type"), "text/html; charset=utf-8");
+  assert.match(await bookRes.text(), /data-spa-pages-restore/);
+});
+
+test("a cached app shell is not reused as the web app manifest", async () => {
+  const manifest = '{"name":"tbr.","start_url":"/salon/"}';
+  const { caches, listeners } = loadWorker({
+    onLine: true,
+    fetchImpl(input) {
+      const url = String(input?.url || input);
+      if (url.includes("/salon/manifest.webmanifest")) {
+        return Promise.resolve(
+          new Response(manifest, {
+            status: 200,
+            headers: { "content-type": "application/manifest+json" },
+          }),
+        );
+      }
+      return Promise.reject(new TypeError("Failed to fetch"));
+    },
+  });
+  const href = `${ORIGIN}/salon/manifest.webmanifest`;
+  const cache = await caches.open("tbr-static");
+  await cache.put(
+    href,
+    new Response(shellHtml(), {
+      status: 200,
+      headers: { "content-type": "text/html; charset=utf-8" },
+    }),
+  );
+  const event = {
+    request: { url: href, method: "GET", mode: "navigate" },
+    waitUntil() {},
+    respondWith(promise) {
+      event.result = promise;
+    },
+  };
+  listeners.fetch(event);
+  const res = await event.result;
+  assert.equal(res.status, 200);
+  assert.equal(res.headers.get("content-type"), "application/manifest+json; charset=utf-8");
+  assert.equal(await res.text(), manifest);
+});
+
 test("recover-shell may replace the shell only after a new document is fetched", async () => {
   let shellFetches = 0;
   const { caches, api } = loadWorker({
