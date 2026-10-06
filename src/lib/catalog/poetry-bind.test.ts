@@ -138,7 +138,7 @@ test("Harmonium is poem-per-scene and opens on The Snow Man", () => {
   assert.equal(full!.scenes[0]?.title, "The Snow Man");
   assert.match(full!.scenes[0]?.reentry ?? "", /^One must have a mind of winter/);
   assert.equal(full!.scenes[1]?.title, "Earthy Anecdote");
-  assert.equal(full!.scenes.length, 121);
+  assert.equal(full!.scenes.length, 120);
   assert.ok(full!.scenes.some((scene) => scene.title === "Earthy Anecdote"));
   const first = full!.breaths.filter((b) => b.sceneId === full!.scenes[0]!.id);
   assert.equal(

@@ -429,7 +429,7 @@ const BLURBS: Record<string, string> = {
   "rise-of-david-levinsky":
     "A cloak-and-suit man looks back at four cents in his pocket and the metamorphosis that followed.",
   "bottle-imp":
-    "Keawe of Hawaii buys a bottle between Honaunau and the Hamakua coast, and this sit stops when that story ends.",
+    "Keawe of Hawaii buys a bottle between Honaunau and the Hamakua coast, and this reading stops when that story ends.",
   "the-brothers-karamazov": "A father, three sons, and a murder the family has been rehearsing.",
   "war-and-peace": "Napoleon enters Russia; a dozen lives refuse to be a single plot.",
   "the-metamorphosis": "Gregor Samsa wakes as an insect and the family starts adjusting the furniture.",
@@ -649,7 +649,7 @@ const BLURBS: Record<string, string> = {
   "death-in-venice": "On a spring afternoon Gustav Aschenbach leaves the Prinzregentenstrasse in Munich, and the sit is already turning toward Venice.",
   "elmer-gantry": "Elmer Gantry leans, eloquently drunk, against the bar of the Old Home Sample Room in Cato, Missouri.",
   "colonels-dream": "Two gentlemen sit in French and Company’s private office on lower Broadway, and Clarendon in the South is where the dream turns.",
-  "great-god-pan": "Clarke comes for the experiment, and this sit stops when the novella ends.",
+  "great-god-pan": "Clarke comes for the experiment, and this reading stops when the novella ends.",
   manalive: "A wind of unreasonable happiness tears into Beacon House, and the boarding-house garden is already a pantomime.",
   "captain-blood": "Peter Blood tends the geraniums on Water Lane in Bridgewater, and the Caribbean is where the sit turns.",
   "the-monomaniac": "Roubaud sets the loaf and the white wine on the table, and the Paris–Le Havre railway is already in the window.",
@@ -836,7 +836,7 @@ const BLURBS: Record<string, string> = {
   "seven-brothers":
     "Jukola Farm stands on the Häme slope, near the village of Toukola.",
   "imperium-in-imperio": "Griggs’ secret Black nation inside the United States — a political thought-experiment.",
-  cane: "Karintha at Georgia dusk: her skin is like dusk on the eastern horizon. This sit is Karintha only.",
+  cane: "Karintha at Georgia dusk: her skin is like dusk on the eastern horizon. This reading is just Karintha.",
   "nacha-regules":
     "An August night finds Buenos Aires ablaze for the Centennial — Gálvez’s cabaret includes sex-work and violence in Ongley’s English, not a soft romance.",
   krakatit:

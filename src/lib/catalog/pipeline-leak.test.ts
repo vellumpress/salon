@@ -381,3 +381,82 @@ test("shipped book chunks and reader assets carry no bind-note staff metadata", 
 
   assert.deepEqual(hits, []);
 });
+
+/**
+ * Project Gutenberg apparatus belongs to the source file, not the book.
+ * Book bodies (texts/openings breaths and scene labels) end at the work's own
+ * last line; the "*** END OF THE PROJECT GUTENBERG …" marker, the licence and
+ * the "Updated editions will replace…" boilerplate are stripped at bind time.
+ */
+const PG_BODY_PATTERNS: { name: string; pattern: RegExp }[] = [
+  { name: "PG end marker", pattern: /\*{3}\s*END OF (?:THE|THIS) PROJECT GUTENBERG/i },
+  { name: "PG start marker", pattern: /\*{3}\s*START OF (?:THE|THIS) PROJECT GUTENBERG/i },
+  { name: "old PG end line", pattern: /\bEnd of (?:the |this )?Project Gutenberg/i },
+  { name: "PG updated editions", pattern: /\bUpdated editions will replace the previous one\b/i },
+  { name: "PG full licence", pattern: /\bFULL (?:PROJECT GUTENBERG )?LICENSE\b|\bFull Project Gutenberg(?:-tm|™)? License\b/ },
+  { name: "PG trademark", pattern: /\bProject Gutenberg[-‐ ]?(?:tm|™)/i },
+  { name: "PG foundation", pattern: /\bProject Gutenberg Literary Archive Foundation\b/i },
+  { name: "PG licence URL", pattern: /gutenberg\.org\/license/i },
+];
+
+test("book bodies carry no Project Gutenberg end marker or licence text", () => {
+  const hits: string[] = [];
+  const here = fileURLToPath(new URL(".", import.meta.url));
+  for (const folder of ["texts", "openings"] as const) {
+    const dir = join(here, folder);
+    for (const name of readdirSync(dir)) {
+      if (!name.endsWith(".json")) continue;
+      const book = JSON.parse(readFileSync(join(dir, name), "utf8")) as {
+        scenes: { id: string; title?: string; place?: string; reentry?: string }[];
+        breaths: { id: string; text: string }[];
+      };
+      const id = name.slice(0, -5);
+      const fields: Array<[string, string]> = [];
+      for (const scene of book.scenes) {
+        for (const key of ["title", "place", "reentry"] as const) {
+          const value = scene[key];
+          if (value) fields.push([`${folder}:${id}:${scene.id}.${key}`, value]);
+        }
+      }
+      for (const breath of book.breaths) fields.push([`${folder}:${id}:${breath.id}`, breath.text]);
+      for (const [where, value] of fields) {
+        for (const { name: label, pattern } of PG_BODY_PATTERNS) {
+          if (pattern.test(value)) hits.push(`${where} [${label}] ${value.slice(0, 80)}`);
+        }
+      }
+    }
+  }
+  assert.deepEqual(hits, []);
+});
+
+/**
+ * Reader intros speak to the reader. Staff instructions ("Skip the preface",
+ * "This sit is X only") belong to the bind, not the threshold card; the house
+ * phrasing is "It opens at …" / "This reading is just …".
+ */
+test("reader intros and their source copy carry no staff skip/sit instructions", () => {
+  const STAFF = [
+    { name: "Skip the", pattern: /\bSkip the\b/i },
+    { name: "This sit is", pattern: /\bThis sit is\b/ },
+    { name: "this sit stops", pattern: /\bthis sit stops\b/i },
+  ];
+  const copy: Array<[string, string]> = [];
+  for (const work of SHELF) {
+    const intro = readerIntro(work as unknown as Work);
+    if (intro) copy.push([`readerIntro:${work.id}`, intro]);
+    if (work.intro) copy.push([`shelf.intro:${work.id}`, work.intro]);
+    const blurb = blurbFor(work);
+    if (blurb) copy.push([`blurb:${work.id}`, blurb]);
+  }
+  for (const [id, text] of Object.entries(PITCHES)) copy.push([`pitch:${id}`, text]);
+  for (const [id, text] of Object.entries(RITUAL_PITCHES)) copy.push([`ritual:${id}`, text]);
+  for (const [id, text] of Object.entries(PREFACES)) copy.push([`preface:${id}`, text]);
+  for (const [id, text] of Object.entries(STORED_PREFACES)) copy.push([`stored-preface:${id}`, text]);
+  const hits: string[] = [];
+  for (const [where, text] of copy) {
+    for (const { name, pattern } of STAFF) {
+      if (pattern.test(text)) hits.push(`${where} [${name}]`);
+    }
+  }
+  assert.deepEqual(hits, []);
+});

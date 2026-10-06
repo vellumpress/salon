@@ -7258,17 +7258,12 @@
     {
       "id": "s24-21",
       "sceneId": "s24",
-      "text": "● Transcriber’s Notes: ○ Missing or obscured punctuation was silently corrected. ○ Typographical errors were silently corrected. ○ The notation “H_{2}O” uses the underscore and braces to mean a subscripted"
+      "text": "Transcriber’s note: The notation “H_{2}O” uses the underscore and braces to mean a subscripted"
     },
     {
       "id": "s24-22",
       "sceneId": "s24",
       "text": "character. In this case the formula for water."
-    },
-    {
-      "id": "s24-23",
-      "sceneId": "s24",
-      "text": "○ Inconsistent spelling and hyphenation were made consistent only when a predominant form was found in this book. ○ Text that was in italics is enclosed by underscores (*italics*)."
     }
   ]
 }

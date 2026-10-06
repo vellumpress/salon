@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Online Distributed Proofreading Team (http://www.pgdp.net/)",
+      "reentry": "THE Colonel'S Dream",
       "prompt": "A word from this stretch."
     },
     {
@@ -94,16 +94,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "Online Distributed Proofreading Team (http://www.pgdp.net/)"
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "+--------------------------------------------------------------+ | Transcriber's Note: | | | | Inconsistent hyphenation and dialect spelling in the | | original document have been preserved. | | | | Obvious typographical errors have been corrected in this | | text. For a complete list, please see the end of document. | | | +--------------------------------------------------------------+"
-    },
     {
       "id": "s0-2",
       "sceneId": "s0",
@@ -7883,11 +7873,6 @@
       "id": "s11-126",
       "sceneId": "s11",
       "text": "But Clarendon has had its chance, nor seems yet to have had another. Other towns, some not far from it, lying nearer the main lines of travel, have been swept into the current of modern life, but not yet Clarendon. There the grass grows thicker in the streets. The meditative cows still graze in the vacant lot between the post-office and the bank, where the public library was to stand. The old academy has grown more dilapidated than ever, and a large section of plaster has fallen from the wall, carrying with it the pencil drawing made in the colonel's schooldays; and if Miss Laura Treadwell sees that the graves of the old Frenches are not allowed to grow up in weeds and grass, the colonel knows nothing of it. The pigs and the loafers--leaner pigs and lazier loafers--still sleep in the shade, when the pound keeper and the constable are not active. The limpid water of the creek still murmurs down the slope and ripples over the stone foundation of what was to have been the new dam, while the birds have nested for some years in the vines that soon overgrew the unfinished walls of the colonel's cotton mill. White men go their way, and black men theirs, and these ways grow wider apart, and no one knows the outcome. But there are those who hope, and those who pray, that this condition will pass, that some day our whole land will be truly free, and the strong will cheerfully help to bear the burdens of the weak, and Justice, the seed, and Peace, the flower, of liberty, will prevail throughout all our borders."
-    },
-    {
-      "id": "s11-127",
-      "sceneId": "s11",
-      "text": "+--------------------------------------------------------------+ | Typographical errors corrected in text: | | | | Page 114: resposeful replaced with reposeful | | Page 120: retrogade replaced with retrograde | | Page 149: h'anted replaced with ha'nted | | | +--------------------------------------------------------------+"
     }
   ]
 }
