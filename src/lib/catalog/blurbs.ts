@@ -42,7 +42,7 @@ const BLURBS: Record<string, string> = {
   rashomon:
     "Evening under Rashōmon—one lackey waiting out the rain, and no one else in the gate.",
   "high-wind-jamaica":
-    "After Emancipation, Derby Hill is swallowed by bush until a rank plant holds the front door open, and the sit runs on to Ferndale.",
+    "After Emancipation, Derby Hill is swallowed by bush until a rank plant holds the front door open, and the reading runs on to Ferndale.",
   "noli-me-tangere":
     "Capitan Tiago announces a dinner in Binondo — Chapter I only, with the friars’ colonial power on the page.",
   vera:
@@ -63,7 +63,7 @@ const BLURBS: Record<string, string> = {
     "A blood-red moon over the Lange Laan, and the Residency waiting at the end of it.",
   hunger: "A man starves in a Christiania attic while the clock below strikes six.",
   "where-angels-fear-to-tread":
-    "Charing Cross chaos — Lilia laughing like royalty while Philip names Monteriano, and the sit stops on the foot-warmer.",
+    "Charing Cross chaos — Lilia laughing like royalty while Philip names Monteriano, and the reading stops on the foot-warmer.",
   "the-gadfly":
     "Pisa seminary heat, a lost sermon page, and Fragola called down the street — Risorgimento Italy.",
   "the-immoralist":
@@ -81,7 +81,7 @@ const BLURBS: Record<string, string> = {
   "diary-of-a-chambermaid":
     "Twelfth place in two years: a rainy September, a Figaro ad, and no interview with Madame.",
   "the-painted-veil":
-    "A shuttered Hong Kong room after tiffin; Kitty whispers Walter, and the sit stays in Chapter I.",
+    "A shuttered Hong Kong room after tiffin; Kitty whispers Walter, and the reading stays in Chapter I.",
   "the-good-soldier":
     "This is the saddest story: nine seasons with the Ashburnhams at Nauheim.",
   "growth-of-the-soil":
@@ -233,15 +233,15 @@ const BLURBS: Record<string, string> = {
   "o-pioneers":
     "Alexandra Bergson stays with the land when everyone else wants to leave it.",
   "death-comes-for-the-archbishop":
-    "ONE afternoon in the autumn of 1851 a solitary horseman crosses central New Mexico — open on the Cruciform Tree, never the Rome prologue.",
+    "ONE afternoon in the autumn of 1851 a solitary horseman crosses central New Mexico — it opens on the Cruciform Tree, not the Rome prologue.",
   "the-bridge-of-san-luis-rey":
     "Five travellers fall from a Peruvian bridge — Wilder asks whether those lives were accident or intention.",
   "the-sun-also-rises":
-    "Robert Cohn was once Princeton’s middleweight, and the sit stops at his flattened nose.",
+    "Robert Cohn was once Princeton’s middleweight, and the reading stops at his flattened nose.",
   "the-cabala":
     "The train into Rome is late across the Campagna, and the air of Naples generates legend.",
   "lolly-willowes":
-    "Caroline’s spare room lands on “Of course, you will come to us,” and the sit stays in Chapter I.",
+    "Caroline’s spare room lands on “Of course, you will come to us,” and the reading stays in Chapter I.",
   "plum-bun":
     "Opal Street, a Philadelphia parlor, and the cost of passing told from inside the family.",
   "the-secret-agent":
@@ -251,11 +251,11 @@ const BLURBS: Record<string, string> = {
   "the-island-of-doctor-moreau":
     "A Pacific island where a doctor teaches beasts to walk like men.",
   "the-time-machine":
-    "The Time Traveller talks by the fire among silver lilies, and this sit is the whole short novel.",
+    "The Time Traveller talks by the fire among silver lilies, and this reading is the whole short novel.",
   "the-war-of-the-worlds":
     "Martians land in the Home Counties and London learns it is not the center.",
   "the-invisible-man":
-    "A stranger reaches the Coach and Horses through Bramblehurst snow, and this sit is the whole short novel.",
+    "A stranger reaches the Coach and Horses through Bramblehurst snow, and this reading is the whole short novel.",
   "sons-and-lovers":
     "A Nottingham miner’s son cannot leave his mother’s claim on him.",
   "women-in-love":
@@ -284,7 +284,7 @@ const BLURBS: Record<string, string> = {
   "night-and-day": "London talk, two couples, and the long negotiation of who gets to want what.",
   "monday-or-tuesday": "Short Woolf pieces that catch a mind in the act of looking.",
   "of-human-bondage":
-    "The day broke gray and dull — Wake up, Philip, and keep the first sit to Chapter I.",
+    "The day broke gray and dull — Wake up, Philip, and the first reading keeps to Chapter I.",
   "the-moon-and-sixpence":
     "Strickland’s greatness, and the biographer who wants to remove the misconceptions. Tahiti later, not Hong Kong.",
   "the-magician": "Paris occult, a charlatan who might not be, and a marriage that becomes a dare.",
@@ -319,7 +319,7 @@ const BLURBS: Record<string, string> = {
   "the-fruit-of-the-tree": "A mill, a marriage, and the question of who may end a suffering life.",
   "this-side-of-paradise": "Amory Blaine comes of age as the Jazz Age is still learning its name.",
   "the-beautiful-and-damned": "Gloria and Anthony drink through a fortune and a war they barely touch.",
-  "flappers-and-philosophers": "After dark on Saturday night the country-club windows glow yellow from the first tee, and this sit is Bernice only.",
+  "flappers-and-philosophers": "After dark on Saturday night the country-club windows glow yellow from the first tee, and this reading is Bernice only.",
   "tales-of-the-jazz-age": "More Fitzgerald stories from the years when the hangover was the point.",
   "all-the-sad-young-men": "Later Fitzgerald stories of money thinning and charm not quite covering it.",
   "the-vegetable": "Fitzgerald’s play: a man dreams of the White House and wakes to the joke.",
@@ -333,7 +333,7 @@ const BLURBS: Record<string, string> = {
   mhudi:
     "Two centuries ago the Bechuana tribes inhabited the extensive areas between Central Transvaal and the Kalahari Desert.",
   "african-tragedy":
-    "Two reasons made Robert Zulu leave teaching at Siam Village School — Dhlomo’s Lovedale frame moralizes town life, and the first sit stops at the end of that chapter.",
+    "Two reasons made Robert Zulu leave teaching at Siam Village School — Dhlomo’s Lovedale frame moralizes town life, and the first reading stops at the end of that chapter.",
   anandamath:
     "A hot day in Padachinha opens Sen-Gupta’s 1906 Abbey of Bliss — Bengali year marks stay as printed.",
   "kwaidan-stories-and-studies-of-strange-things":
@@ -366,7 +366,7 @@ const BLURBS: Record<string, string> = {
     "A young Millay climbs a mountain of sky and comes back changed.",
   "mountain-interval":
     "Frost’s yellow wood, two roads, and the talk that gets you going.",
-  gitanjali: "Tagore’s first song offering — skip Yeats and open on Poem 1.",
+  gitanjali: "Tagore’s first song offering — it opens on Poem 1.",
   "songs-of-kabir":
     "Kabir, through Tagore’s English: mystic poems that don’t need a church.",
   "pictures-of-the-floating-world":
@@ -485,18 +485,18 @@ const BLURBS: Record<string, string> = {
     "Stevenson tales of wreckers, islands, and weather that wants a share.",
   "island-nights-entertainments": "South Sea stories: a bottle, a beach, and a bargain.",
   "treasure-island": "A map, a mutiny, and a boy who keeps the ship’s accounts in his head.",
-  "kidnapped": "David Balfour leaves Essendean on a June morning with a key, and the Highlands are where the sit turns.",
+  "kidnapped": "David Balfour leaves Essendean on a June morning with a key, and the Highlands are where the reading turns.",
   "prisoner-of-zenda": "Rudolf’s sister-in-law asks when he will do anything, and the red Elphberg hair is already the trouble.",
-  "revolt-of-the-angels": "Under St. Sulpice the d’Esparvieu mansion stands among chestnut trees, and the angel revolt is where the sit turns.",
-  "children-of-the-soil": "Pan Stanislav comes toward Kremen in the midnight mist, and the Poland estate is where the sit turns.",
+  "revolt-of-the-angels": "Under St. Sulpice the d’Esparvieu mansion stands among chestnut trees, and the angel revolt is where the reading turns.",
+  "children-of-the-soil": "Pan Stanislav comes toward Kremen in the midnight mist, and the Poland estate is where the reading turns.",
   "the-village-in-the-jungle":
-    "Beddagama means the village in the jungle, and the sit opens on that name. A violent book, with a grim ending.",
+    "Beddagama means the village in the jungle, and the reading opens on that name. A violent book, with a grim ending.",
   "the-joy-of-captain-ribot":
-    "In Malaga they cook it not at all badly, and the captain’s sit opens there, with Valencia still to come.",
+    "In Malaga they cook it not at all badly, and the captain’s story opens there, with Valencia still to come.",
   saracinesca:
     "Six o’clock at the Embassy in Rome, and the rooms are as full as they are likely to be.",
   "the-torrents-of-spring":
-    "At two o’clock in the night he goes back to his study, and Frankfort is where the sit turns.",
+    "At two o’clock in the night he goes back to his study, and Frankfort is where the reading turns.",
   "the-bet":
     "A dark autumn night, an old banker in his study, and one story through the fireproof safe.",
   "the-bitter-tea-of-general-yen":
@@ -504,7 +504,7 @@ const BLURBS: Record<string, string> = {
   "the-woman-of-andros":
     "Night creeps along the Mediterranean toward Brynos, and Chrysis keeps a house the island will not quite keep.",
   "bella-donna":
-    "Doctor Isaacson has got on in London with alarming speed, and the Nile is where the sit turns.",
+    "Doctor Isaacson has got on in London with alarming speed, and the Nile is where the reading turns.",
   "nina-balatka":
     "Nina Balatka of Prague loves a Jew, and the city’s prejudice is the story.",
   "la-lupa":
@@ -514,7 +514,7 @@ const BLURBS: Record<string, string> = {
   "alice-adams":
     "An old-fashioned patient hates the open windows, and the Midwestern night is already turning toward Alice.",
   "quartet":
-    "Marya Zelli leaves the Café Lavenue at half-past five, and Montparnasse is where the sit turns.",
+    "Marya Zelli leaves the Café Lavenue at half-past five, and Montparnasse is where the reading turns.",
   "song-of-songs-sudermann":
     "Lilly was fourteen when the music-master disappeared, and the road runs from a garrison town to Berlin.",
   "its-wavering-image":
@@ -646,12 +646,12 @@ const BLURBS: Record<string, string> = {
   "the-strange-case-of-dr-jekyll-and-mr-hyde":
     "A respectable doctor finds a door in himself and walks through it.",
   "hard-times": "Gradgrind wants Facts, and nothing but Facts, in the Coketown school-room.",
-  "death-in-venice": "On a spring afternoon Gustav Aschenbach leaves the Prinzregentenstrasse in Munich, and the sit is already turning toward Venice.",
+  "death-in-venice": "On a spring afternoon Gustav Aschenbach leaves the Prinzregentenstrasse in Munich, and the reading is already turning toward Venice.",
   "elmer-gantry": "Elmer Gantry leans, eloquently drunk, against the bar of the Old Home Sample Room in Cato, Missouri.",
   "colonels-dream": "Two gentlemen sit in French and Company’s private office on lower Broadway, and Clarendon in the South is where the dream turns.",
   "great-god-pan": "Clarke comes for the experiment, and this reading stops when the novella ends.",
   manalive: "A wind of unreasonable happiness tears into Beacon House, and the boarding-house garden is already a pantomime.",
-  "captain-blood": "Peter Blood tends the geraniums on Water Lane in Bridgewater, and the Caribbean is where the sit turns.",
+  "captain-blood": "Peter Blood tends the geraniums on Water Lane in Bridgewater, and the Caribbean is where the reading turns.",
   "the-monomaniac": "Roubaud sets the loaf and the white wine on the table, and the Paris–Le Havre railway is already in the window.",
   "tartarin-de-tarascon": "Tartarin’s villa on the Avignon road keeps an exotic garden, and Algeria is where the boast turns.",
   "little-dorrit": "A child of the Marshalsea, a family of prisoners who are not all inside.",
@@ -706,7 +706,7 @@ const BLURBS: Record<string, string> = {
   "the-hill-of-dreams": "A furnace-glow sky, and Lucian Taylor loses himself on a Gwent hill lane.",
   "the-story-of-an-african-farm": "The full African moon pours onto a Karoo plain and a solitary kopje.",
   "the-imperialist": "Old Mother Beggarlegs sells gingerbread in the Elgin market, and the first breath stays 585 words as printed.",
-  "mogens-and-other-stories": "Summer it was, in a corner of the enclosure, and this sit is Mogens only.",
+  "mogens-and-other-stories": "Summer it was, in a corner of the enclosure, and this reading is Mogens only.",
   "the-willows": "Two men camp on a Danube island that does not want visitors.",
   "three-john-silence-stories": "Blackwood’s psychic doctor, called in when the house is the patient.",
   "incredible-adventures": "Blackwood’s longer strange journeys — less jump than a slow wrongness.",
@@ -733,7 +733,7 @@ const BLURBS: Record<string, string> = {
   hymen: "H.D. on marriage, myth, and the body’s public ceremony.",
   harmonium:
     "Stevens’ first book opens on The Snow Man — a mind of winter, never Earthy Anecdote.",
-  color: "Open Yet Do I Marvel, then Incident; each poem is its own chapter.",
+  color: "It opens with Yet Do I Marvel, then Incident; each poem is its own chapter.",
   "the-harp-weaver-and-other-poems": "Millay’s later lyrics, still spending the candle.",
   "sword-blades-and-poppy-seed": "Lowell’s imagist cut and the smoke afterward.",
   "can-grande-s-castle": "Lowell’s polyphonic prose — history as a set of rooms.",
@@ -783,7 +783,7 @@ const BLURBS: Record<string, string> = {
   clayhanger: "Bennett’s Five Towns again: a printer’s son and a long provincial life.",
   "anna-of-the-five-towns": "A Sunday-school yard in the Five Towns, and a first breath of 371 words left as printed.",
   "the-road-to-the-open": "George sits alone, and the September sun falls on his father’s empty chair.",
-  calvary: "An October birth in Saint-Michel-les-Hêtres, and the sit stays in the Orne.",
+  calvary: "An October birth in Saint-Michel-les-Hêtres, and the reading stays in the Orne.",
   "small-souls": "Hague rain, and Dorine van Lowe comes in with a wet umbrella.",
   "stories-and-pictures": "Bontzye Shweig dies down here, and only heaven asks his name.",
   "riceyman-steps": "A Clerkenwell bookseller, a miser, and a marriage in a shop of dust.",
@@ -824,11 +824,11 @@ const BLURBS: Record<string, string> = {
   "the-complete-poems-of-paul-laurence-dunbar":
     "Dunbar’s lyrics in dialect and in the English he was told not to waste.",
   "the-sport-of-the-gods":
-    "Berry Hamilton’s cottage sits back from the Oakley mansion, and the butler’s dignity opens the sit.",
+    "Berry Hamilton’s cottage sits back from the Oakley mansion, and the butler’s dignity opens the reading.",
   "iola-leroy": "\"Good mornin', Bob\" — the butter is fresh, and a prayer-meeting is already being planned.",
   "of-one-blood": "Hopkins’ Boston and Meroe: a mystery of race that goes underground.",
   "gentlemen-prefer-blondes":
-    "March 16th at the Ritz — Lorelei’s diary opens on diamonds, brains, and the joke that starts the sit.",
+    "March 16th at the Ritz — Lorelei’s diary opens on diamonds, brains, and the joke that starts the reading.",
   "lady-into-fox":
     "Wonderful events are irregular — then Mrs. Tebrick’s change into a vixen is an established fact.",
   "maria-chapdelaine":
@@ -842,7 +842,7 @@ const BLURBS: Record<string, string> = {
   krakatit:
     "Evening fog thickens on the Old Town embankment until a pair of penetrating eyes fix on him.",
   "the-peasants":
-    "Agatha and the priest on the autumn road — Praised be Jesus Christ — village poverty and period speech stay in the sit.",
+    "Agatha and the priest on the autumn road — Praised be Jesus Christ — village poverty and period speech stay as printed.",
   "the-quest-of-the-silver-fleece": "Du Bois’ cotton novel: a crop, a school, and the northern money in it.",
   "main-travelled-roads": "Garland’s Midwest farms, without the calendar art.",
   "the-country-of-the-pointed-firs": "Jewett’s Maine harbor, visited slowly, left with the tide.",
@@ -865,12 +865,12 @@ const BLURBS: Record<string, string> = {
   "miss-lulu-bett": "The Deacons were at supper, a tulip under the gas jet in an April Midwest house.",
   ramuntcho: "Sad curlews flee a gray squall over the Bidassoa, and the path starts in moss and rope soles.",
   "the-pit": "Laura Dearborn waits in the Auditorium vestibule while a February draught moves through Chicago.",
-  reginald: "Reginald is persuaded to the McKillops’ garden-party, and the sit is that sketch only.",
+  reginald: "Reginald is persuaded to the McKillops’ garden-party, and the reading is that sketch only.",
   "royal-highness": "Noon on the Albrechtstrasse: a general and a lieutenant in grey great-coats.",
   ramona: "Sheep-shearing is late at the Senora Moreno’s Mission ranch, and Felipe is still ill.",
   "almayers-folly": "Kaspar! Makan! — a decaying house on the Pantai at sunset.",
   "the-crux": "The Foote Girls bustle along Margate Street, and the Host opens on the Back Way.",
-  "the-black-dog": "A freckled rustic pockets his fare, and the sit is the title tale only.",
+  "the-black-dog": "A freckled rustic pockets his fare, and the reading is the title tale only.",
   "a-hero-of-our-time":
     "Post from Tiflis: a dukhan crowd and camels at the foot of Mount Koishaur.",
   "strange-tales":
@@ -970,7 +970,7 @@ const BLURBS: Record<string, string> = {
   "three-hundred-tang-poems": "Three Hundred Tang Poems (1763), with Li Bai and Du Fu among the poets.",
   "the-purple-land":
     "Three chapters in the story of a life open into the Banda Oriental, in Uruguay.",
-  "malay-sketches": "A quarter of a century ago, where stream meets tide, this sit is A Malay Romance only.",
+  "malay-sketches": "A quarter of a century ago, where stream meets tide, this reading is A Malay Romance only.",
   "in-court-and-kampong": "Clifford’s Malay world: court, village, and the Englishman taking dictation.",
   "malay-annals-sejarah-melayu": "The Sejarah Melayu: kings, cities, and the peninsula remembering itself.",
   "the-autobiography-of-munshi-abdullah-hikayat-abdullah":
@@ -979,13 +979,13 @@ const BLURBS: Record<string, string> = {
   "laos-folk-lore-of-farther-india": "Fleeson’s Lao tales, collected as if the hills were a library.",
   "jamaican-song-and-story": "Jekyll’s Anansi, songs, and the island talking in two tongues.",
   "jamaica-anansi-stories":
-    "One great hungry time — one Anansi tale per sit, and this one is the fish pot.",
+    "One great hungry time — one Anansi tale per reading, and this one is the fish pot.",
   "green-mansions":
     "Now that we are cool, he said, and regret that we hurt each other, I am not sorry that it happened.",
   "hadji-murad":
     "I was returning home by the fields, midsummer, the hay in and the rye just beginning.",
   "south-african-folk-tales": "Honey’s collection of southern African tales, animals arguing like people.",
-  "west-african-folk-tales": "In the olden days the stories belonged to Nyankupon, and this sit is Spider Tales only.",
+  "west-african-folk-tales": "In the olden days the stories belonged to Nyankupon, and this reading is Spider Tales only.",
   "candide": "In a castle of Westphalia, Candide is expelled from the house of Thunder-ten-Tronckh.",
   "aphrodite": "On the quay at Alexandria a singing-girl stands with two flute-girls on the white parapet.",
   erewhon: "The narrator leaves home for waste crown-land and a sheep-farm across the range.",
@@ -1004,7 +1004,7 @@ const BLURBS: Record<string, string> = {
   "laos-folk-lore": "Deep in the forest of the North, a jungle village honors one old woman — A Child of The Woods only.",
   "born-in-exile": "The summer day in 1874 closes Whitelaw College under the Kingsmill smoke-canopy.",
   "the-four-horsemen-of-the-apocalypse":
-    "In 1870 Marcelo Desnoyers is nineteen, and the sit opens on Madariaga’s Buenos Aires ranch.",
+    "In 1870 Marcelo Desnoyers is nineteen, and the reading opens on Madariaga’s Buenos Aires ranch.",
   "virgin-soil": "At one o’clock in 1868, a shabby young man climbs the back staircase on Officers Street.",
   "the-book-of-khalid":
     "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid.",

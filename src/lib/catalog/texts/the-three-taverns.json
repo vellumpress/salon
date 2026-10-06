@@ -10,16 +10,16 @@
   "scenes": [
     {
       "id": "s0",
-      "title": "[Note on text:  Italicized words or phrases are CAPITALIZED",
-      "place": "[Note on text:  Italicized words or phrases are CAPITALIZED",
-      "reentry": "Lines longer than 78 characters are broken and the continuation is indented two spaces. Some obvious errors may have been corrected.]",
+      "title": "The Three Taverns",
+      "place": "The Three Taverns",
+      "reentry": "The Three Taverns",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s1",
       "title": "Author of \"The Man Against the Sky\", \"Merlin, a Poem\", etc",
       "place": "Author of \"The Man Against the Sky\", \"Merlin, a Poem\", etc",
-      "reentry": "[American (Maine) Poet. 1869-1935.]",
+      "reentry": "To Thomas Sergeant Perry and Lilla Cabot Perry",
       "prompt": "What does the poem hold?"
     },
     {
@@ -977,19 +977,9 @@
   ],
   "breaths": [
     {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "Lines longer than 78 characters are broken and the continuation is indented two spaces. Some obvious errors may have been corrected.]"
-    },
-    {
       "id": "s0-1",
       "sceneId": "s0",
       "text": "The Three Taverns"
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "[American (Maine) Poet. 1869-1935.]"
     },
     {
       "id": "s1-1",

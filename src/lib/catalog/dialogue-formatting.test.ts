@@ -179,3 +179,38 @@ test("no local pack may contain cue-only breaths", () => {
   }
   assert.deepEqual(failures, [], failures.join("\n"));
 });
+
+test("a speaker never carries past an unrecognised cue or the next poem's heading", () => {
+  // Poems & Ballads: the masque's one-off queens and the next poem's title used
+  // to inherit "King David: " to the end of the book.
+  const merged = mergeAttributedSpeech(
+    [
+      "KING DAVID",
+      "Knights mine, all that be in hall,",
+      "I have a counsel to you all,",
+      "PRIMUS MILES",
+      "Sir, note this that I will say;",
+      "KING DAVID",
+      "Yea, my good knave, and is it said",
+      "AHOLIBAH",
+      "I am the queen Aholibah.",
+      "KING DAVID",
+      "For any thief to hear.",
+      "ST. DOROTHY",
+      "It hath been seen and yet it shall be seen",
+    ],
+    new Set(["KING DAVID", "PRIMUS MILES"]),
+    new Set(["KING DAVID", "PRIMUS MILES"]),
+  );
+  assert.deepEqual(merged, [
+    "King David: Knights mine, all that be in hall,",
+    "King David: I have a counsel to you all,",
+    "Primus Miles: Sir, note this that I will say;",
+    "King David: Yea, my good knave, and is it said",
+    "AHOLIBAH",
+    "I am the queen Aholibah.",
+    "King David: For any thief to hear.",
+    "ST. DOROTHY",
+    "It hath been seen and yet it shall be seen",
+  ]);
+});

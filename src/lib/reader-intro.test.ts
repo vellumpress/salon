@@ -375,8 +375,8 @@ test("Gitanjali uses the before-sleep poem-1 sit and names the Host frame", () =
 test("Harmonium uses the before-sleep Snow Man sit and names the Host frame", () => {
   const copy = readerIntro(shelfAsWork("harmonium"));
   assert.match(copy, /mind of winter/i);
-  assert.match(copy, /The Snow Man only/);
-  assert.match(copy, /never Earthy Anecdote/);
+  assert.match(copy, /This reading is just The Snow Man\./);
+  assert.doesNotMatch(copy, /Earthy Anecdote|^Open |\. Open /);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
@@ -384,7 +384,7 @@ test("Martin Birck's Youth uses the before-sleep garden sit and names the Host f
   const copy = readerIntro(shelfAsWork("martin-bircks-youth"));
   assert.match(copy, /childhood dream/i);
   assert.match(copy, /It opens with The Old Street/);
-  assert.match(copy, /1930 English only/);
+  assert.doesNotMatch(copy, /Ship the|1930 English only/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|cold-open/i);
 });
 
