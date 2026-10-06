@@ -19,21 +19,21 @@
       "id": "s1",
       "title": "Part II",
       "place": "Part II",
-      "reentry": "I. THE Hospital 194 II. THE Hospital (*continued*) 209 III. THE Hospital (*continued*) 225 IV. THE Husband OF Akoulka 248 V. THE Summer Season 264 VI. THE Animals AT THE Convict Establishment 286 VII. Grievances 302 VIII. MY Companions 325 ",
+      "reentry": "I. THE HOSPITAL 194 II. THE HOSPITAL (*continued*) 209 III. THE HOSPITAL (*continued*) 225 IV. THE HUSBAND OF AKOULKA 248 V. THE SUMMER SEASON 264 VI. THE ANIMALS AT THE CONVICT ESTABLISHMENT 286 VII. GRIEVANCES 302 VIII. MY COMPANIONS 325 ",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "TEN Years A Convict",
+      "reentry": "Ten Years a Convict",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "THE Dead-House",
+      "reentry": "The Dead-House",
       "prompt": "A word from this stretch."
     },
     {
@@ -61,14 +61,14 @@
       "id": "s7",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "THE First Month",
+      "reentry": "The First Month",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s8",
       "title": "Chapter VII",
       "place": "Chapter VII",
-      "reentry": "THE First Month (*continued*)",
+      "reentry": "The First Month (*continued*)",
       "prompt": "A word from this stretch."
     },
     {
@@ -103,28 +103,28 @@
       "id": "s13",
       "title": "Chapter XII",
       "place": "Chapter XII",
-      "reentry": "THE Performance.",
+      "reentry": "The Performance.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s14",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "THE Hospital",
+      "reentry": "The Hospital",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s15",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "THE Hospital (*continued*).",
+      "reentry": "The Hospital (*continued*).",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s16",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "THE Hospital[4] (*continued*).",
+      "reentry": "The Hospital[4] (*continued*).",
       "prompt": "A word from this stretch."
     },
     {
@@ -138,7 +138,7 @@
       "id": "s18",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "THE Summer Season",
+      "reentry": "The Summer Season",
       "prompt": "A word from this stretch."
     },
     {
@@ -159,14 +159,14 @@
       "id": "s21",
       "title": "Chapter VIII",
       "place": "Chapter VIII",
-      "reentry": "MY Companions",
+      "reentry": "My Companions",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s22",
       "title": "Chapter IX",
       "place": "Chapter IX",
-      "reentry": "THE Escape",
+      "reentry": "The Escape",
       "prompt": "A word from this stretch."
     },
     {
@@ -186,12 +186,12 @@
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "I. TEN Years A Convict 1 II. THE Dead-House 7 III. First Impressions 24 IV. First Impressions (*continued*) 43 V. First Impressions (*continued*) 61 VI. THE First Month 80 VII. THE First Month (*continued*) 95 VIII. NEW Acquaintances--Petroff 110 IX. MEN OF Determination--Luka 125 X. Isaiah Fomitch--THE Bath--Baklouchin 133 XI. THE Christmas Holidays 152 XII. THE Performance 171"
+      "text": "I. TEN YEARS A CONVICT 1 II. THE DEAD-HOUSE 7 III. FIRST IMPRESSIONS 24 IV. FIRST IMPRESSIONS (*continued*) 43 V. FIRST IMPRESSIONS (*continued*) 61 VI. THE FIRST MONTH 80 VII. THE FIRST MONTH (*continued*) 95 VIII. NEW ACQUAINTANCES--PETROFF 110 IX. MEN OF DETERMINATION--LUKA 125 X. ISAIAH FOMITCH--THE BATH--BAKLOUCHIN 133 XI. THE CHRISTMAS HOLIDAYS 152 XII. THE PERFORMANCE 171"
     },
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "I. THE Hospital 194 II. THE Hospital (*continued*) 209 III. THE Hospital (*continued*) 225 IV. THE Husband OF Akoulka 248 V. THE Summer Season 264 VI. THE Animals AT THE Convict Establishment 286 VII. Grievances 302 VIII. MY Companions 325 IX. THE Escape 344 X. Freedom! 363"
+      "text": "I. THE HOSPITAL 194 II. THE HOSPITAL (*continued*) 209 III. THE HOSPITAL (*continued*) 225 IV. THE HUSBAND OF AKOULKA 248 V. THE SUMMER SEASON 264 VI. THE ANIMALS AT THE CONVICT ESTABLISHMENT 286 VII. GRIEVANCES 302 VIII. MY COMPANIONS 325 IX. THE ESCAPE 344 X. FREEDOM! 363"
     },
     {
       "id": "s1-1",
@@ -201,7 +201,7 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "TEN Years A Convict"
+      "text": "Ten Years a Convict"
     },
     {
       "id": "s2-1",
@@ -266,7 +266,7 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "THE Dead-House"
+      "text": "The Dead-House"
     },
     {
       "id": "s3-1",
@@ -1841,7 +1841,7 @@
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "THE First Month"
+      "text": "The First Month"
     },
     {
       "id": "s7-1",
@@ -2051,7 +2051,7 @@
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "THE First Month (*continued*)"
+      "text": "The First Month (*continued*)"
     },
     {
       "id": "s8-1",
@@ -4176,7 +4176,7 @@
     {
       "id": "s13-0",
       "sceneId": "s13",
-      "text": "THE Performance."
+      "text": "The Performance."
     },
     {
       "id": "s13-1",
@@ -4496,7 +4496,7 @@
     {
       "id": "s14-0",
       "sceneId": "s14",
-      "text": "THE Hospital"
+      "text": "The Hospital"
     },
     {
       "id": "s14-1",
@@ -4766,7 +4766,7 @@
     {
       "id": "s15-0",
       "sceneId": "s15",
-      "text": "THE Hospital (*continued*)."
+      "text": "The Hospital (*continued*)."
     },
     {
       "id": "s15-1",
@@ -5141,7 +5141,7 @@
     {
       "id": "s16-0",
       "sceneId": "s16",
-      "text": "THE Hospital[4] (*continued*)."
+      "text": "The Hospital[4] (*continued*)."
     },
     {
       "id": "s16-1",
@@ -6586,7 +6586,7 @@
     {
       "id": "s18-0",
       "sceneId": "s18",
-      "text": "THE Summer Season"
+      "text": "The Summer Season"
     },
     {
       "id": "s18-1",
@@ -8116,7 +8116,7 @@
     {
       "id": "s21-0",
       "sceneId": "s21",
-      "text": "MY Companions"
+      "text": "My Companions"
     },
     {
       "id": "s21-1",
@@ -8446,7 +8446,7 @@
     {
       "id": "s22-0",
       "sceneId": "s22",
-      "text": "THE Escape"
+      "text": "The Escape"
     },
     {
       "id": "s22-1",

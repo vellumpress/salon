@@ -11,6 +11,8 @@ import { isBoundLocal } from "./en-rights.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import { curatorialTrack, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES } from "./rituals.ts";
+import { openingBreathIndex } from "../opening-scene.ts";
+import type { Work } from "../literature.ts";
 
 /** Full local novels whose stub openings were deleted so Pages cannot strand readers. */
 const FULL_NOVEL_NO_STUB = [
@@ -54,6 +56,24 @@ function textWork(id: string) {
     scenes: { title: string; reentry?: string }[];
     breaths: { text: string }[];
   };
+}
+
+/**
+ * The card opening is the line a fresh Sit opens on: breath 0, or, when the
+ * leading scenes are tagged front matter, the first line after them (a short
+ * printed heading may sit between). Front matter stays in the book, so saved
+ * breath indexes never move.
+ */
+function opensOnFirstLine(full: unknown, opening: string) {
+  const work = full as Work;
+  if ((work.breaths[0]?.text ?? "").startsWith(opening)) return true;
+  const at = openingBreathIndex(work);
+  for (let i = at; i <= at + 2 && i < work.breaths.length; i++) {
+    const text = work.breaths[i]?.text ?? "";
+    if (text.startsWith(opening)) return true;
+    if (text.length > 60) return false;
+  }
+  return false;
 }
 
 function assertNoStubOpening(id: string) {
@@ -1733,10 +1753,7 @@ test("Tier B batches 1–2 are local format-min binds, never Featured", () => {
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(
-      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
-      `${id} shelf opening`,
-    );
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
@@ -1905,10 +1922,7 @@ test("Tier B batches 3–4 are local format-min binds, never Featured", () => {
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(
-      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
-      `${id} shelf opening`,
-    );
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
@@ -1988,10 +2002,7 @@ test("Tier B batches 5–6 are local format-min binds, never Featured", () => {
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(
-      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
-      `${id} shelf opening`,
-    );
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
@@ -2075,10 +2086,7 @@ test("Tier B batches 11–12 are local format-min binds, never Featured", () => 
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(
-      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
-      `${id} shelf opening`,
-    );
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
@@ -2149,10 +2157,7 @@ test("Tier B batches 9–10 are local format-min binds, never Featured", () => {
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(
-      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
-      `${id} shelf opening`,
-    );
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
     assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
@@ -2226,10 +2231,7 @@ test("Tier B batches 13–14 are local format-min binds, never Featured", () => 
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(
-      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
-      `${id} shelf opening`,
-    );
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
   const salammbo = SHELF.find((item) => item.id === "salammbo");
@@ -2298,10 +2300,7 @@ test("Tier B batches 15–16 are local format-min binds, never Featured", () => 
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(
-      (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
-      `${id} shelf opening`,
-    );
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
@@ -2379,7 +2378,7 @@ test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => 
     sanctuary: { gutenberg: 7517, form: "novel", scenes: 12, breaths: 541 },
     "the-angels-of-mons": { gutenberg: 14044, form: "stories", scenes: 4, breaths: 133 },
     "the-card": { gutenberg: 12986, form: "novel", scenes: 12, breaths: 1695 },
-    "the-flying-inn": { gutenberg: 59239, form: "novel", scenes: 25, breaths: 1416 },
+    "the-flying-inn": { gutenberg: 59239, form: "novel", scenes: 25, breaths: 1414 },
     "the-nabob": { gutenberg: 2077, form: "novel", scenes: 25, breaths: 1949 },
     "the-shadow-of-the-cathedral": { gutenberg: 12041, form: "novel", scenes: 10, breaths: 1199 },
     thyrza: { gutenberg: 4302, form: "novel", scenes: 41, breaths: 5397 },

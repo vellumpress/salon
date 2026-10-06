@@ -10,8 +10,8 @@
   "scenes": [
     {
       "id": "s0",
-      "title": "The Doll’S House",
-      "place": "The Doll’S House",
+      "title": "The Doll’s House",
+      "place": "The Doll’s House",
       "reentry": "When dear old Mrs. Hay went back to town after staying with the Burnells she sent the children a doll’s house. It was so big that the carter and Pat carried it into the courtyard, and there it stayed, propped up on two wooden boxes beside t",
       "prompt": "A word from this stretch."
     },
@@ -66,8 +66,8 @@
     },
     {
       "id": "s8",
-      "title": "A Married Man’S Story",
-      "place": "A Married Man’S Story",
+      "title": "A Married Man’s Story",
+      "place": "A Married Man’s Story",
       "reentry": "It is evening. Supper is over. We have left the small, cold dining-room, we have come back to the sitting-room where there is a fire. All is as usual. I am sitting at my writing table which is placed across a corner so that I am behind it, ",
       "prompt": "A word from this stretch."
     },

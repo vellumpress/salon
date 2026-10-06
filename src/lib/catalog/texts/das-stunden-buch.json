@@ -13,14 +13,16 @@
       "title": "Book I · Das Stunden-Buch",
       "place": "Book I · Das Stunden-Buch",
       "reentry": "Das Stunden-Buch",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s1",
       "title": "Book I · Vom mœnchischen Leben /",
       "place": "Book I · Vom mœnchischen Leben /",
       "reentry": "Vom mœnchischen Leben / Von der Pilgerschaft / Von der Armuth und vom Tode",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s2",

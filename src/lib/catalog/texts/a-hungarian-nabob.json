@@ -26,7 +26,7 @@
       "id": "s2",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "THE Whitsun King.",
+      "reentry": "The Whitsun King.",
       "prompt": "A word from this stretch."
     },
     {
@@ -47,7 +47,7 @@
       "id": "s5",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "Paid IN Full.",
+      "reentry": "Paid in Full.",
       "prompt": "A word from this stretch."
     },
     {
@@ -82,21 +82,21 @@
       "id": "s10",
       "title": "Chapter XI",
       "place": "Chapter XI",
-      "reentry": "THE Female Friend.",
+      "reentry": "The Female Friend.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
       "title": "Chapter XII",
       "place": "Chapter XII",
-      "reentry": "THE House-Warming.",
+      "reentry": "The House-Warming.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s12",
       "title": "Chapter XIII",
       "place": "Chapter XIII",
-      "reentry": "THE Hunt.",
+      "reentry": "The Hunt.",
       "prompt": "A word from this stretch."
     },
     {
@@ -1759,7 +1759,7 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "THE Whitsun King."
+      "text": "The Whitsun King."
     },
     {
       "id": "s2-1",
@@ -3784,7 +3784,7 @@
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "Paid IN Full."
+      "text": "Paid in Full."
     },
     {
       "id": "s5-1",
@@ -7084,7 +7084,7 @@
     {
       "id": "s8-133",
       "sceneId": "s8",
-      "text": "\"MY Dear Aunt,"
+      "text": "\"MY DEAR AUNT,"
     },
     {
       "id": "s8-134",
@@ -8219,7 +8219,7 @@
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "THE Female Friend."
+      "text": "The Female Friend."
     },
     {
       "id": "s10-1",
@@ -8394,7 +8394,7 @@
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "THE House-Warming."
+      "text": "The House-Warming."
     },
     {
       "id": "s11-1",
@@ -8479,7 +8479,7 @@
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "THE Hunt."
+      "text": "The Hunt."
     },
     {
       "id": "s12-1",

@@ -13,21 +13,24 @@
       "title": "By Lafcadio Hearn",
       "place": "By Lafcadio Hearn",
       "reentry": "Houghton Mifflin and Company Boston and New York 1905",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s1",
       "title": "Goblin Poetry      51",
       "place": "Goblin Poetry      51",
       "reentry": "\"Ultimate Questions\" 103",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s2",
       "title": "Introduction",
       "place": "Introduction",
       "reentry": "Lafcadio Hearn, known to Nippon as Yakumo Koizumi, was born in Leucadia in the Ionian Islands, June 27, 1850. His father was an Irish surgeon in the British Army; his mother was a Greek. Both parents died while Hearn was still a child, and ",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s3",
@@ -264,7 +267,7 @@
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "THE Mirror Maiden 125"
+      "text": "The Mirror Maiden 125"
     },
     {
       "id": "s1-2",

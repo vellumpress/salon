@@ -12,21 +12,21 @@
       "id": "s0",
       "title": "Book I",
       "place": "Book I",
-      "reentry": "I. Life OF Saint MAËL II. THE Apostolical Vocation OF Saint MAËL III. THE Temptation OF Saint MAËL IV. ST. MAËL’S Navigation ON THE Ocean OF ICE V. THE Baptism OF THE Penguins VI. AN Assembly IN Paradise VII. AN Assembly IN Paradise (Contin",
+      "reentry": "I. LIFE OF SAINT MAËL II. THE APOSTOLICAL VOCATION OF SAINT MAËL III. THE TEMPTATION OF SAINT MAËL IV. ST. MAËL’S NAVIGATION ON THE OCEAN OF ICE V. THE BAPTISM OF THE PENGUINS VI. AN ASSEMBLY IN PARADISE VII. AN ASSEMBLY IN PARADISE (Contin",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s1",
       "title": "Book II",
       "place": "Book II",
-      "reentry": "I. THE First Clothes II. THE First Clothes (Continuation and End) III. Setting Bounds TO THE Fields AND THE Origin OF Property IV. THE First Assembly OF THE Estates OF Penguinia V. THE Marriage OF Kraken AND Orberosia VI. THE Dragon OF Alca",
+      "reentry": "I. THE FIRST CLOTHES II. THE FIRST CLOTHES (Continuation and End) III. SETTING BOUNDS TO THE FIELDS AND THE ORIGIN OF PROPERTY IV. THE FIRST ASSEMBLY OF THE ESTATES OF PENGUINIA V. THE MARRIAGE OF KRAKEN AND ORBEROSIA VI. THE DRAGON OF ALCA",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
       "title": "Book III",
       "place": "Book III",
-      "reentry": "I. Brian THE Good AND Queen Glamorgan II. Draco THE Great (Translation of the Relics of St. Orberosia) III. Queen Crucha IV. Letters: Johannes Talpa V. THE Arts: THE Primitives OF Penguin Painting VI. Marbodius VII. Signs IN THE Moon",
+      "reentry": "I. BRIAN THE GOOD AND QUEEN GLAMORGAN II. DRACO THE GREAT (Translation of the Relics of St. Orberosia) III. QUEEN CRUCHA IV. LETTERS: JOHANNES TALPA V. THE ARTS: THE PRIMITIVES OF PENGUIN PAINTING VI. MARBODIUS VII. SIGNS IN THE MOON",
       "prompt": "A word from this stretch."
     },
     {
@@ -40,7 +40,7 @@
       "id": "s4",
       "title": "Book V",
       "place": "Book V",
-      "reentry": "I. the Reverend Fathers Agaric and Cornemuse Ii. Prince Crucho Iii. the Cabal Iv. Viscountess Olive V. the Prince Des Boscénos Vi. the Emiral’S Fall Vii. Conclusion",
+      "reentry": "I. THE REVEREND FATHERS AGARIC AND CORNEMUSE II. PRINCE CRUCHO III. THE CABAL IV. VISCOUNTESS OLIVE V. THE PRINCE DES BOSCÉNOS VI. THE EMIRAL’S FALL VII. CONCLUSION",
       "prompt": "A word from this stretch."
     },
     {
@@ -54,7 +54,7 @@
       "id": "s6",
       "title": "Book VII",
       "place": "Book VII",
-      "reentry": "I. Madame Clarence’S Drawing-Room Ii. the Charity of St. Orberosia Iii. Hippolyte Cérès Iv. a Politician’S Marriage V. the Visire Cabinet Vi. the Sofa of the Favourite Vii. the First Consequences Viii. Further Consequences Ix. the Final Con",
+      "reentry": "I. MADAME CLARENCE’S DRAWING-ROOM II. THE CHARITY OF ST. ORBEROSIA III. HIPPOLYTE CÉRÈS IV. A POLITICIAN’S MARRIAGE V. THE VISIRE CABINET VI. THE SOFA OF THE FAVOURITE VII. THE FIRST CONSEQUENCES VIII. FURTHER CONSEQUENCES IX. THE FINAL CON",
       "prompt": "A word from this stretch."
     },
     {
@@ -68,7 +68,7 @@
       "id": "s8",
       "title": "Book II",
       "place": "Book II",
-      "reentry": "I. THE First Clothes",
+      "reentry": "I. The First Clothes",
       "prompt": "A word from this stretch."
     },
     {
@@ -96,14 +96,14 @@
       "id": "s12",
       "title": "Book VII",
       "place": "Book VII",
-      "reentry": "Madame CÉRÈS",
+      "reentry": "Madame Cérès",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s13",
       "title": "Book VIII",
       "place": "Book VIII",
-      "reentry": "THE Endless History",
+      "reentry": "The Endless History",
       "prompt": "A word from this stretch."
     }
   ],
@@ -111,17 +111,17 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "I. Life OF Saint MAËL II. THE Apostolical Vocation OF Saint MAËL III. THE Temptation OF Saint MAËL IV. ST. MAËL’S Navigation ON THE Ocean OF ICE V. THE Baptism OF THE Penguins VI. AN Assembly IN Paradise VII. AN Assembly IN Paradise (Continuation and End) VIII. Metamorphosis OF THE Penguins"
+      "text": "I. LIFE OF SAINT MAËL II. THE APOSTOLICAL VOCATION OF SAINT MAËL III. THE TEMPTATION OF SAINT MAËL IV. ST. MAËL’S NAVIGATION ON THE OCEAN OF ICE V. THE BAPTISM OF THE PENGUINS VI. AN ASSEMBLY IN PARADISE VII. AN ASSEMBLY IN PARADISE (Continuation and End) VIII. METAMORPHOSIS OF THE PENGUINS"
     },
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "I. THE First Clothes II. THE First Clothes (Continuation and End) III. Setting Bounds TO THE Fields AND THE Origin OF Property IV. THE First Assembly OF THE Estates OF Penguinia V. THE Marriage OF Kraken AND Orberosia VI. THE Dragon OF Alca VII. THE Dragon OF Alca (Continuation) VIII. THE Dragon OF Alca (Continuation) IX. THE Dragon OF Alca (Continuation) X. THE Dragon OF Alca (Continuation) XI. THE Dragon OF Alca (Continuation) XII. THE Dragon OF Alca (Continuation) XIII. THE Dragon OF Alca (Continuation and End)"
+      "text": "I. THE FIRST CLOTHES II. THE FIRST CLOTHES (Continuation and End) III. SETTING BOUNDS TO THE FIELDS AND THE ORIGIN OF PROPERTY IV. THE FIRST ASSEMBLY OF THE ESTATES OF PENGUINIA V. THE MARRIAGE OF KRAKEN AND ORBEROSIA VI. THE DRAGON OF ALCA VII. THE DRAGON OF ALCA (Continuation) VIII. THE DRAGON OF ALCA (Continuation) IX. THE DRAGON OF ALCA (Continuation) X. THE DRAGON OF ALCA (Continuation) XI. THE DRAGON OF ALCA (Continuation) XII. THE DRAGON OF ALCA (Continuation) XIII. THE DRAGON OF ALCA (Continuation and End)"
     },
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "I. Brian THE Good AND Queen Glamorgan II. Draco THE Great (Translation of the Relics of St. Orberosia) III. Queen Crucha IV. Letters: Johannes Talpa V. THE Arts: THE Primitives OF Penguin Painting VI. Marbodius VII. Signs IN THE Moon"
+      "text": "I. BRIAN THE GOOD AND QUEEN GLAMORGAN II. DRACO THE GREAT (Translation of the Relics of St. Orberosia) III. QUEEN CRUCHA IV. LETTERS: JOHANNES TALPA V. THE ARTS: THE PRIMITIVES OF PENGUIN PAINTING VI. MARBODIUS VII. SIGNS IN THE MOON"
     },
     {
       "id": "s3-0",
@@ -131,7 +131,7 @@
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "I. the Reverend Fathers Agaric and Cornemuse Ii. Prince Crucho Iii. the Cabal Iv. Viscountess Olive V. the Prince Des Boscénos Vi. the Emiral’S Fall Vii. Conclusion"
+      "text": "I. THE REVEREND FATHERS AGARIC AND CORNEMUSE II. PRINCE CRUCHO III. THE CABAL IV. VISCOUNTESS OLIVE V. THE PRINCE DES BOSCÉNOS VI. THE EMIRAL’S FALL VII. CONCLUSION"
     },
     {
       "id": "s5-0",
@@ -141,7 +141,7 @@
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "I. Madame Clarence’S Drawing-Room Ii. the Charity of St. Orberosia Iii. Hippolyte Cérès Iv. a Politician’S Marriage V. the Visire Cabinet Vi. the Sofa of the Favourite Vii. the First Consequences Viii. Further Consequences Ix. the Final Consequences"
+      "text": "I. MADAME CLARENCE’S DRAWING-ROOM II. THE CHARITY OF ST. ORBEROSIA III. HIPPOLYTE CÉRÈS IV. A POLITICIAN’S MARRIAGE V. THE VISIRE CABINET VI. THE SOFA OF THE FAVOURITE VII. THE FIRST CONSEQUENCES VIII. FURTHER CONSEQUENCES IX. THE FINAL CONSEQUENCES"
     },
     {
       "id": "s7-0",
@@ -446,7 +446,7 @@
     {
       "id": "s7-60",
       "sceneId": "s7",
-      "text": "Iv. St. Maël’S Navigation on the Ocean of Ice"
+      "text": "IV. St. Maël’s Navigation on the Ocean of Ice"
     },
     {
       "id": "s7-61",
@@ -881,7 +881,7 @@
     {
       "id": "s7-147",
       "sceneId": "s7",
-      "text": "VII. AN Assembly IN Paradise (*Continuation and End*)"
+      "text": "VII. An Assembly in Paradise (*Continuation and End*)"
     },
     {
       "id": "s7-148",
@@ -1131,7 +1131,7 @@
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "I. THE First Clothes"
+      "text": "I. The First Clothes"
     },
     {
       "id": "s8-1",
@@ -1281,7 +1281,7 @@
     {
       "id": "s8-30",
       "sceneId": "s8",
-      "text": "II. THE First Clothes (*Continuation and End*)"
+      "text": "II. The First Clothes (*Continuation and End*)"
     },
     {
       "id": "s8-31",
@@ -1851,7 +1851,7 @@
     {
       "id": "s8-144",
       "sceneId": "s8",
-      "text": "VII. THE Dragon OF Alca (*Continuation*)"
+      "text": "VII. The Dragon of Alca (*Continuation*)"
     },
     {
       "id": "s8-145",
@@ -1896,7 +1896,7 @@
     {
       "id": "s8-153",
       "sceneId": "s8",
-      "text": "VIII. THE Dragon OF Alca (*Continuation*)"
+      "text": "VIII. The Dragon of Alca (*Continuation*)"
     },
     {
       "id": "s8-154",
@@ -1981,7 +1981,7 @@
     {
       "id": "s8-170",
       "sceneId": "s8",
-      "text": "IX. THE Dragon OF Alca (*Continuation*)"
+      "text": "IX. The Dragon of Alca (*Continuation*)"
     },
     {
       "id": "s8-171",
@@ -2061,7 +2061,7 @@
     {
       "id": "s8-186",
       "sceneId": "s8",
-      "text": "X. THE Dragon OF Alca (*Continuation*)"
+      "text": "X. The Dragon of Alca (*Continuation*)"
     },
     {
       "id": "s8-187",
@@ -2141,7 +2141,7 @@
     {
       "id": "s8-202",
       "sceneId": "s8",
-      "text": "XI. THE Dragon OF Alca (*Continuation*)"
+      "text": "XI. The Dragon of Alca (*Continuation*)"
     },
     {
       "id": "s8-203",
@@ -2266,7 +2266,7 @@
     {
       "id": "s8-227",
       "sceneId": "s8",
-      "text": "XII. THE Dragon OF Alca (*Continuation*)"
+      "text": "XII. The Dragon of Alca (*Continuation*)"
     },
     {
       "id": "s8-228",
@@ -2381,7 +2381,7 @@
     {
       "id": "s8-250",
       "sceneId": "s8",
-      "text": "XIII. THE Dragon OF Alca (*Continuation and End*)"
+      "text": "XIII. The Dragon of Alca (*Continuation and End*)"
     },
     {
       "id": "s8-251",
@@ -2646,7 +2646,7 @@
     {
       "id": "s9-35",
       "sceneId": "s9",
-      "text": "II. Draco THE Great (*Translation of the Relics of St. Orberosia*)"
+      "text": "II. Draco the Great (*Translation of the Relics of St. Orberosia*)"
     },
     {
       "id": "s9-36",
@@ -2911,7 +2911,7 @@
     {
       "id": "s9-88",
       "sceneId": "s9",
-      "text": "Margaritone’S Vision"
+      "text": "Margaritone’s Vision"
     },
     {
       "id": "s9-89",
@@ -4006,7 +4006,7 @@
     {
       "id": "s11-74",
       "sceneId": "s11",
-      "text": "III. THE Cabal"
+      "text": "III. The Cabal"
     },
     {
       "id": "s11-75",
@@ -4571,7 +4571,7 @@
     {
       "id": "s11-187",
       "sceneId": "s11",
-      "text": "Vi. the Emiral’S Fall"
+      "text": "VI. THE EMIRAL’S FALL"
     },
     {
       "id": "s11-188",
@@ -6211,7 +6211,7 @@
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "Madame CÉRÈS"
+      "text": "Madame Cérès"
     },
     {
       "id": "s12-1",
@@ -6221,7 +6221,7 @@
     {
       "id": "s12-2",
       "sceneId": "s12",
-      "text": "I. Madame Clarence’S Drawing-Room"
+      "text": "I. Madame Clarence’s Drawing-Room"
     },
     {
       "id": "s12-3",
@@ -6396,7 +6396,7 @@
     {
       "id": "s12-37",
       "sceneId": "s12",
-      "text": "III. Hippolyte CÉRÈS"
+      "text": "III. Hippolyte Cérès"
     },
     {
       "id": "s12-38",
@@ -6601,7 +6601,7 @@
     {
       "id": "s12-78",
       "sceneId": "s12",
-      "text": "Iv. a Politician’S Marriage"
+      "text": "IV. A POLITICIAN’S MARRIAGE"
     },
     {
       "id": "s12-79",
@@ -7306,7 +7306,7 @@
     {
       "id": "s13-0",
       "sceneId": "s13",
-      "text": "THE Endless History"
+      "text": "The Endless History"
     },
     {
       "id": "s13-1",

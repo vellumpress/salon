@@ -12,106 +12,121 @@
       "id": "s0",
       "title": "New York       Alfred · a · Knopf      Mcmxx",
       "place": "New York       Alfred · a · Knopf      Mcmxx",
-      "reentry": "Copyright, 1920, BY",
-      "prompt": "What does the poem hold?"
+      "reentry": "Copyright, 1920, by",
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s1",
       "title": "Kahlil Gibran",
       "place": "Kahlil Gibran",
       "reentry": "Printed in the United States of America",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s2",
-      "title": "God’S Fool  9",
-      "place": "God’S Fool  9",
+      "title": "God’s Fool  9",
+      "place": "God’s Fool  9",
       "reentry": "Love 15",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s3",
       "title": "The King-Hermit 17",
       "place": "The King-Hermit 17",
-      "reentry": "The Lion’S Daughter 22",
-      "prompt": "What does the poem hold?"
+      "reentry": "The Lion’s Daughter 22",
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s4",
       "title": "Tyranny 26",
       "place": "Tyranny 26",
-      "reentry": "THE Saint 27",
-      "prompt": "What does the poem hold?"
+      "reentry": "The Saint 27",
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s5",
       "title": "The Plutocrat 29",
       "place": "The Plutocrat 29",
-      "reentry": "THE Greater Self 30",
-      "prompt": "What does the poem hold?"
+      "reentry": "The Greater Self 30",
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s6",
       "title": "War and the Small Nations 32",
       "place": "War and the Small Nations 32",
       "reentry": "Critics 33",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s7",
       "title": "Poets 35",
       "place": "Poets 35",
-      "reentry": "THE Weather-Cock 37",
-      "prompt": "What does the poem hold?"
+      "reentry": "The Weather-Cock 37",
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s8",
       "title": "The King of Aradus 38",
       "place": "The King of Aradus 38",
       "reentry": "Out of My Deeper Heart 39",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s9",
       "title": "Dynasties 41",
       "place": "Dynasties 41",
       "reentry": "Knowledge and Half-Knowledge 44",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s10",
       "title": "“Said a Sheet of Snow-White Paper....” 46",
       "place": "“Said a Sheet of Snow-White Paper....” 46",
       "reentry": "The Scholar and the Poet 47",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s11",
       "title": "Values 50",
       "place": "Values 50",
       "reentry": "Other Seas 51",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s12",
       "title": "Repentance 52",
       "place": "Repentance 52",
       "reentry": "The Dying Man and the Vulture 53",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s13",
       "title": "Beyond My Solitude 55",
       "place": "Beyond My Solitude 55",
-      "reentry": "THE Last Watch 57",
-      "prompt": "What does the poem hold?"
+      "reentry": "The Last Watch 57",
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s14",
       "title": "The Five Illustrations",
       "place": "The Five Illustrations",
       "reentry": "In This Volume Are Re- Produced from Original",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s15",
@@ -122,8 +137,8 @@
     },
     {
       "id": "s16",
-      "title": "God’S Fool",
-      "place": "God’S Fool",
+      "title": "God’s Fool",
+      "place": "God’s Fool",
       "reentry": "Once there came from the desert to the great city of Sharia a man who was a dreamer, and he had naught but his garment and a staff.",
       "prompt": "What does the poem hold?"
     },
@@ -192,8 +207,8 @@
     },
     {
       "id": "s26",
-      "title": "The Lion’S Daughter",
-      "place": "The Lion’S Daughter",
+      "title": "The Lion’s Daughter",
+      "place": "The Lion’s Daughter",
       "reentry": "Four slaves stood fanning an old queen who was asleep upon her throne. And she was snoring. And upon the queen’s lap a cat lay purring and gazing lazily at the slaves.",
       "prompt": "What does the poem hold?"
     },
@@ -447,7 +462,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Copyright, 1920, BY"
+      "text": "Copyright, 1920, by"
     },
     {
       "id": "s1-0",
@@ -462,17 +477,17 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "The Lion’S Daughter 22"
+      "text": "The Lion’s Daughter 22"
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "THE Saint 27"
+      "text": "The Saint 27"
     },
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "THE Greater Self 30"
+      "text": "The Greater Self 30"
     },
     {
       "id": "s6-0",
@@ -482,7 +497,7 @@
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "THE Weather-Cock 37"
+      "text": "The Weather-Cock 37"
     },
     {
       "id": "s8-0",
@@ -512,7 +527,7 @@
     {
       "id": "s13-0",
       "sceneId": "s13",
-      "text": "THE Last Watch 57"
+      "text": "The Last Watch 57"
     },
     {
       "id": "s14-0",

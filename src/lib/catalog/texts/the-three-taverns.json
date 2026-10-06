@@ -13,35 +13,40 @@
       "title": "The Three Taverns",
       "place": "The Three Taverns",
       "reentry": "The Three Taverns",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s1",
       "title": "Author of \"The Man Against the Sky\", \"Merlin, a Poem\", etc",
       "place": "Author of \"The Man Against the Sky\", \"Merlin, a Poem\", etc",
       "reentry": "To Thomas Sergeant Perry and Lilla Cabot Perry",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s2",
       "title": "Several poems included in this book appeared originally",
       "place": "Several poems included in this book appeared originally",
       "reentry": "in American periodicals, as follows: The Three Taverns, London Bridge,",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s3",
       "title": "A Song at Shannon's, the New Tenants, Discovery, John Brown;",
       "place": "A Song at Shannon's, the New Tenants, Discovery, John Brown;",
       "reentry": "Archibald's Example, The Valley of the Shadow; Nimmo; The Wandering Jew, Souvenir; Neighbors, Tact; Demos; The Mill, An Evangelist's Wife;",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s4",
       "title": "Firelight; Late Summer; Inferential; the Flying Dutchman;",
       "place": "Firelight; Late Summer; Inferential; the Flying Dutchman;",
       "reentry": "On the Way, The False Gods; Peace on Earth; The Old King's New Jester.",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s5",

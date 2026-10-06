@@ -10,9 +10,9 @@
   "scenes": [
     {
       "id": "s0",
-      "title": "Calverly’S--",
-      "place": "Calverly’S--",
-      "reentry": "Calverly’S 41",
+      "title": "Calverly’s--",
+      "place": "Calverly’s--",
+      "reentry": "Calverly’s 41",
       "prompt": "What does the poem hold?"
     },
     {
@@ -727,7 +727,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Calverly’S 41"
+      "text": "Calverly’s 41"
     },
     {
       "id": "s1-0",
@@ -737,17 +737,17 @@
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "Miscellaneous-- Pasa Thalassa Thalassa 59 Momus 64 Uncle Ananias 66 the Whip 68 the White Lights 71 Exit 73 Normandy 74 Leonora 76 the Wise Brothers 78 But for the Grace of God 80 Au Revoir 83 for Arvia 85 the Sunken Crown 87 Doctor of Billiards 89 Shadrach O’Leary 91 How Annandale Went Out 93 Alma Mater 95 Miniver Cheevy 97 the Pilot 100 Vickery’S Mountain 102 Bon Voyage 106 the Companion 109 Atherton’S Gambit 111 for a Dead Lady 114 Two Gardens in Linndale 116"
+      "text": "MISCELLANEOUS-- PASA THALASSA THALASSA 59 MOMUS 64 UNCLE ANANIAS 66 THE WHIP 68 THE WHITE LIGHTS 71 EXIT 73 NORMANDY 74 LEONORA 76 THE WISE BROTHERS 78 BUT FOR THE GRACE OF GOD 80 AU REVOIR 83 FOR ARVIA 85 THE SUNKEN CROWN 87 DOCTOR OF BILLIARDS 89 SHADRACH O’LEARY 91 HOW ANNANDALE WENT OUT 93 ALMA MATER 95 MINIVER CHEEVY 97 THE PILOT 100 VICKERY’S MOUNTAIN 102 BON VOYAGE 106 THE COMPANION 109 ATHERTON’S GAMBIT 111 FOR A DEAD LADY 114 TWO GARDENS IN LINNDALE 116"
     },
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "THE Revealer 123"
+      "text": "The Revealer 123"
     },
     {
       "id": "s1-3",
       "sceneId": "s1",
-      "text": "THE Master[1]"
+      "text": "The Master[1]"
     },
     {
       "id": "s1-4",
@@ -822,7 +822,7 @@
     {
       "id": "s6-1",
       "sceneId": "s6",
-      "text": "THE Town Down THE River"
+      "text": "The Town Down the River"
     },
     {
       "id": "s6-2",
@@ -947,7 +947,7 @@
     {
       "id": "s11-1",
       "sceneId": "s11",
-      "text": "AN Island"
+      "text": "An Island"
     },
     {
       "id": "s11-2",
@@ -1007,12 +1007,12 @@
     {
       "id": "s15-1",
       "sceneId": "s15",
-      "text": "Calverly’S"
+      "text": "Calverly’s"
     },
     {
       "id": "s15-2",
       "sceneId": "s15",
-      "text": "Calverly’S"
+      "text": "Calverly’s"
     },
     {
       "id": "s16-0",
@@ -1197,7 +1197,7 @@
     {
       "id": "s41-1",
       "sceneId": "s41",
-      "text": "THE Whip"
+      "text": "The Whip"
     },
     {
       "id": "s42-0",
@@ -1207,7 +1207,7 @@
     {
       "id": "s42-1",
       "sceneId": "s42",
-      "text": "THE White Lights"
+      "text": "The White Lights"
     },
     {
       "id": "s42-2",
@@ -1317,7 +1317,7 @@
     {
       "id": "s52-1",
       "sceneId": "s52",
-      "text": "THE Wise Brothers"
+      "text": "The Wise Brothers"
     },
     {
       "id": "s53-0",
@@ -1387,7 +1387,7 @@
     {
       "id": "s60-1",
       "sceneId": "s60",
-      "text": "AU Revoir"
+      "text": "Au Revoir"
     },
     {
       "id": "s60-2",
@@ -1467,7 +1467,7 @@
     {
       "id": "s70-1",
       "sceneId": "s70",
-      "text": "THE Pilot"
+      "text": "The Pilot"
     },
     {
       "id": "s71-0",
@@ -1487,7 +1487,7 @@
     {
       "id": "s72-1",
       "sceneId": "s72",
-      "text": "Vickery’S Mountain"
+      "text": "Vickery’s Mountain"
     },
     {
       "id": "s72-2",
@@ -1507,7 +1507,7 @@
     {
       "id": "s74-1",
       "sceneId": "s74",
-      "text": "BON Voyage"
+      "text": "Bon Voyage"
     },
     {
       "id": "s74-2",
@@ -1552,7 +1552,7 @@
     {
       "id": "s74-10",
       "sceneId": "s74",
-      "text": "THE Companion"
+      "text": "The Companion"
     },
     {
       "id": "s74-11",
@@ -1577,7 +1577,7 @@
     {
       "id": "s76-1",
       "sceneId": "s76",
-      "text": "Atherton’S Gambit"
+      "text": "Atherton’s Gambit"
     },
     {
       "id": "s76-2",
@@ -1627,7 +1627,7 @@
     {
       "id": "s81-1",
       "sceneId": "s81",
-      "text": "FOR A Dead Lady"
+      "text": "For a Dead Lady"
     },
     {
       "id": "s82-0",
@@ -1657,7 +1657,7 @@
     {
       "id": "s84-1",
       "sceneId": "s84",
-      "text": "TWO Gardens IN Linndale"
+      "text": "Two Gardens in Linndale"
     },
     {
       "id": "s85-0",

@@ -740,7 +740,7 @@
       "id": "s104",
       "title": "Conall       Conall's Wife",
       "place": "Conall       Conall's Wife",
-      "reentry": "Cuchulain Laeg, *Cuchulain's chariot-driver* Emer RED MAN, *A Spirit*",
+      "reentry": "CUCHULAIN LAEG, *Cuchulain's chariot-driver* EMER RED MAN, *A Spirit*",
       "prompt": "What does the poem hold?"
     },
     {
@@ -880,7 +880,7 @@
       "id": "s124",
       "title": "Go away, go away, go away",
       "place": "Go away, go away, go away",
-      "reentry": "Young MAN",
+      "reentry": "Young Man",
       "prompt": "What does the poem hold?"
     },
     {
@@ -943,7 +943,7 @@
       "id": "s133",
       "title": "For it's a luckier house",
       "place": "For it's a luckier house",
-      "reentry": "Young MAN",
+      "reentry": "Young Man",
       "prompt": "What does the poem hold?"
     },
     {
@@ -957,7 +957,7 @@
       "id": "s135",
       "title": "Go out or I will make you",
       "place": "Go out or I will make you",
-      "reentry": "Young MAN",
+      "reentry": "Young Man",
       "prompt": "What does the poem hold?"
     },
     {
@@ -1545,7 +1545,7 @@
       "id": "s219",
       "title": "Let the Helmet be taken from Conall",
       "place": "Let the Helmet be taken from Conall",
-      "reentry": "A Stable BOY",
+      "reentry": "A Stable Boy",
       "prompt": "What does the poem hold?"
     },
     {
@@ -1657,7 +1657,7 @@
       "id": "s235",
       "title": "Mine is the better to look at",
       "place": "Mine is the better to look at",
-      "reentry": "Conall'S Wife",
+      "reentry": "Conall's Wife",
       "prompt": "What does the poem hold?"
     },
     {
@@ -1699,7 +1699,7 @@
       "id": "s241",
       "title": "My nails in your neck and shoulder",
       "place": "My nails in your neck and shoulder",
-      "reentry": "Laegaire'S Wife",
+      "reentry": "Laegaire's Wife",
       "prompt": "What does the poem hold?"
     },
     {
@@ -1811,14 +1811,14 @@
       "id": "s257",
       "title": "A share of your honour",
       "place": "A share of your honour",
-      "reentry": "Laegaire'S Wife",
+      "reentry": "Laegaire's Wife",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s258",
       "title": "You lie, for your man would take from my man",
       "place": "You lie, for your man would take from my man",
-      "reentry": "Conall'S Wife",
+      "reentry": "Conall's Wife",
       "prompt": "What does the poem hold?"
     },
     {
@@ -1895,21 +1895,21 @@
       "id": "s269",
       "title": "CONALL draw their swords to strike CUCHULAIN]",
       "place": "CONALL draw their swords to strike CUCHULAIN]",
-      "reentry": "Laegaire'S Wife",
+      "reentry": "Laegaire's Wife",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s270",
       "title": "Deafen her singing with horns!",
       "place": "Deafen her singing with horns!",
-      "reentry": "Conall'S Wife",
+      "reentry": "Conall's Wife",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s271",
       "title": "Cry aloud! blow horns! make a noise!",
       "place": "Cry aloud! blow horns! make a noise!",
-      "reentry": "Laegaire'S Wife",
+      "reentry": "Laegaire's Wife",
       "prompt": "What does the poem hold?"
     },
     {
@@ -2042,7 +2042,7 @@
       "id": "s290",
       "title": "The man who hits my fancy",
       "place": "The man who hits my fancy",
-      "reentry": "[*He places the Helmet on Cuchulain'S head*]",
+      "reentry": "[*He places the Helmet on CUCHULAIN'S head*]",
       "prompt": "What does the poem hold?"
     },
     {
@@ -2577,7 +2577,7 @@
     {
       "id": "s104-0",
       "sceneId": "s104",
-      "text": "Cuchulain Laeg, *Cuchulain's chariot-driver* Emer RED MAN, *A Spirit*"
+      "text": "CUCHULAIN LAEG, *Cuchulain's chariot-driver* EMER RED MAN, *A Spirit*"
     },
     {
       "id": "s105-0",
@@ -2702,7 +2702,7 @@
     {
       "id": "s124-0",
       "sceneId": "s124",
-      "text": "Young MAN"
+      "text": "Young Man"
     },
     {
       "id": "s124-1",
@@ -2757,7 +2757,7 @@
     {
       "id": "s133-0",
       "sceneId": "s133",
-      "text": "Young MAN"
+      "text": "Young Man"
     },
     {
       "id": "s134-0",
@@ -2767,12 +2767,12 @@
     {
       "id": "s135-0",
       "sceneId": "s135",
-      "text": "Young MAN"
+      "text": "Young Man"
     },
     {
       "id": "s135-1",
       "sceneId": "s135",
-      "text": "[*Forcing up Laegaire'S arm, passing him and putting his shield on the wall over the chair*]"
+      "text": "[*Forcing up LAEGAIRE'S arm, passing him and putting his shield on the wall over the chair*]"
     },
     {
       "id": "s136-0",
@@ -3252,7 +3252,7 @@
     {
       "id": "s219-0",
       "sceneId": "s219",
-      "text": "A Stable BOY"
+      "text": "A Stable Boy"
     },
     {
       "id": "s220-0",
@@ -3382,7 +3382,7 @@
     {
       "id": "s235-0",
       "sceneId": "s235",
-      "text": "Conall'S Wife"
+      "text": "Conall's Wife"
     },
     {
       "id": "s235-1",
@@ -3427,7 +3427,7 @@
     {
       "id": "s241-0",
       "sceneId": "s241",
-      "text": "Laegaire'S Wife"
+      "text": "Laegaire's Wife"
     },
     {
       "id": "s242-0",
@@ -3522,12 +3522,12 @@
     {
       "id": "s257-0",
       "sceneId": "s257",
-      "text": "Laegaire'S Wife"
+      "text": "Laegaire's Wife"
     },
     {
       "id": "s258-0",
       "sceneId": "s258",
-      "text": "Conall'S Wife"
+      "text": "Conall's Wife"
     },
     {
       "id": "s259-0",
@@ -3592,27 +3592,27 @@
     {
       "id": "s268-1",
       "sceneId": "s268",
-      "text": "[_She sings the same words as before, flourishing her dagger about. While she is singing, Conall'S Wife and Laegaire'S Wife draw their daggers and run at her, but Cuchulain forces them back. Laegaire and"
+      "text": "[_She sings the same words as before, flourishing her dagger about. While she is singing, CONALL'S WIFE and LAEGAIRE'S WIFE draw their daggers and run at her, but CUCHULAIN forces them back. LAEGAIRE and"
     },
     {
       "id": "s269-0",
       "sceneId": "s269",
-      "text": "Laegaire'S Wife"
+      "text": "Laegaire's Wife"
     },
     {
       "id": "s269-1",
       "sceneId": "s269",
-      "text": "[*Crying out so as to be heard through Emer'S singing*]"
+      "text": "[*Crying out so as to be heard through EMER'S singing*]"
     },
     {
       "id": "s270-0",
       "sceneId": "s270",
-      "text": "Conall'S Wife"
+      "text": "Conall's Wife"
     },
     {
       "id": "s271-0",
       "sceneId": "s271",
-      "text": "Laegaire'S Wife"
+      "text": "Laegaire's Wife"
     },
     {
       "id": "s271-1",
@@ -3747,7 +3747,7 @@
     {
       "id": "s290-0",
       "sceneId": "s290",
-      "text": "[*He places the Helmet on Cuchulain'S head*]"
+      "text": "[*He places the Helmet on CUCHULAIN'S head*]"
     },
     {
       "id": "s291-0",

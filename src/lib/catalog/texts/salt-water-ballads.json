@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Dallas · Atlanta · San Francisco",
       "place": "Dallas · Atlanta · San Francisco",
-      "reentry": "Macmillan & CO., Limited",
+      "reentry": "Macmillan & Co., Limited",
       "prompt": "What does the poem hold?"
     },
     {
@@ -26,7 +26,7 @@
       "id": "s2",
       "title": "New York",
       "place": "New York",
-      "reentry": "THE Macmillan Company",
+      "reentry": "The Macmillan Company",
       "prompt": "What does the poem hold?"
     },
     {
@@ -80,8 +80,8 @@
     },
     {
       "id": "s10",
-      "title": "‘Rest Her Soul, She’S Dead!’",
-      "place": "‘Rest Her Soul, She’S Dead!’",
+      "title": "‘Rest Her Soul, She’s Dead!’",
+      "place": "‘Rest Her Soul, She’s Dead!’",
       "reentry": "She has done with the sea’s sorrow and the world’s way 97",
       "prompt": "What does the poem hold?"
     },
@@ -500,8 +500,8 @@
     },
     {
       "id": "s70",
-      "title": "A Night At Dago Tom’S",
-      "place": "A Night At Dago Tom’S",
+      "title": "A Night At Dago Tom’s",
+      "place": "A Night At Dago Tom’s",
       "reentry": "Oh yesterday, I t’ink it was, while cruisin’ down the street, I met with Bill.--‘Hullo,’ he says, ‘let’s give the girls a treat.’ We’d red bandanas round our necks ’n’ our shrouds new rattled down, So we filled a couple of Santy Cruz and cl",
       "prompt": "What does the poem hold?"
     },
@@ -1454,7 +1454,7 @@
       "id": "s206",
       "title": "By Fannie Stearns Davis",
       "place": "By Fannie Stearns Davis",
-      "reentry": "Myself AND I $1.00 net",
+      "reentry": "Myself and I $1.00 net",
       "prompt": "What does the poem hold?"
     }
   ],
@@ -1462,7 +1462,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Macmillan & CO., Limited"
+      "text": "Macmillan & Co., Limited"
     },
     {
       "id": "s1-0",
@@ -1492,7 +1492,7 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "THE Macmillan Company"
+      "text": "The Macmillan Company"
     },
     {
       "id": "s3-0",
@@ -1587,7 +1587,7 @@
     {
       "id": "s6-7",
       "sceneId": "s6",
-      "text": "One of the Bo’Sun’S Yarns"
+      "text": "One of the Bo’sun’s Yarns"
     },
     {
       "id": "s6-8",
@@ -1597,7 +1597,7 @@
     {
       "id": "s6-9",
       "sceneId": "s6",
-      "text": "Hell’S Pavement"
+      "text": "Hell’s Pavement"
     },
     {
       "id": "s6-10",
@@ -1627,7 +1627,7 @@
     {
       "id": "s6-15",
       "sceneId": "s6",
-      "text": "THE Turn OF THE Tide"
+      "text": "The Turn of the Tide"
     },
     {
       "id": "s6-16",
@@ -1637,7 +1637,7 @@
     {
       "id": "s6-17",
       "sceneId": "s6",
-      "text": "ONE OF Wally’S Yarns"
+      "text": "One of Wally’s Yarns"
     },
     {
       "id": "s6-18",
@@ -1657,7 +1657,7 @@
     {
       "id": "s6-21",
       "sceneId": "s6",
-      "text": "A Night AT Dago TOM’S"
+      "text": "A Night at Dago Tom’s"
     },
     {
       "id": "s6-22",
@@ -1667,7 +1667,7 @@
     {
       "id": "s6-23",
       "sceneId": "s6",
-      "text": "‘Port OF Many Ships’"
+      "text": "‘PORT OF MANY SHIPS’"
     },
     {
       "id": "s6-24",
@@ -1707,7 +1707,7 @@
     {
       "id": "s6-31",
       "sceneId": "s6",
-      "text": "Evening--Regatta DAY"
+      "text": "Evening--Regatta Day"
     },
     {
       "id": "s6-32",
@@ -1767,7 +1767,7 @@
     {
       "id": "s6-43",
       "sceneId": "s6",
-      "text": "A Wanderer’S Song"
+      "text": "A Wanderer’s Song"
     },
     {
       "id": "s6-44",
@@ -1777,7 +1777,7 @@
     {
       "id": "s6-45",
       "sceneId": "s6",
-      "text": "Cardigan BAY"
+      "text": "Cardigan Bay"
     },
     {
       "id": "s6-46",
@@ -1802,7 +1802,7 @@
     {
       "id": "s7-3",
       "sceneId": "s7",
-      "text": "THE Tarry Buccaneer"
+      "text": "The Tarry Buccaneer"
     },
     {
       "id": "s7-4",
@@ -1812,7 +1812,7 @@
     {
       "id": "s7-5",
       "sceneId": "s7",
-      "text": "A Ballad OF John Silver"
+      "text": "A Ballad of John Silver"
     },
     {
       "id": "s7-6",
@@ -1852,7 +1852,7 @@
     {
       "id": "s7-13",
       "sceneId": "s7",
-      "text": "THE West Wind"
+      "text": "The West Wind"
     },
     {
       "id": "s7-14",
@@ -1862,7 +1862,7 @@
     {
       "id": "s7-15",
       "sceneId": "s7",
-      "text": "THE Galley-Rowers"
+      "text": "The Galley-Rowers"
     },
     {
       "id": "s7-16",
@@ -1872,7 +1872,7 @@
     {
       "id": "s7-17",
       "sceneId": "s7",
-      "text": "Sorrow OF Mydath"
+      "text": "Sorrow of Mydath"
     },
     {
       "id": "s7-18",
@@ -1942,7 +1942,7 @@
     {
       "id": "s9-3",
       "sceneId": "s9",
-      "text": "ON Eastnor Knoll"
+      "text": "On Eastnor Knoll"
     },
     {
       "id": "s9-4",
@@ -1957,7 +1957,7 @@
     {
       "id": "s10-1",
       "sceneId": "s10",
-      "text": "‘ALL YE That Pass BY’"
+      "text": "‘ALL YE THAT PASS BY’"
     },
     {
       "id": "s10-2",
@@ -1992,7 +1992,7 @@
     {
       "id": "s11-5",
       "sceneId": "s11",
-      "text": "A Song AT Parting"
+      "text": "A Song at Parting"
     },
     {
       "id": "s11-6",
@@ -2742,7 +2742,7 @@
     {
       "id": "s103-1",
       "sceneId": "s103",
-      "text": "Christmas EVE AT SEA"
+      "text": "Christmas Eve at Sea"
     },
     {
       "id": "s104-0",
@@ -2937,7 +2937,7 @@
     {
       "id": "s134-1",
       "sceneId": "s134",
-      "text": "THE Dead Knight"
+      "text": "The Dead Knight"
     },
     {
       "id": "s135-0",
@@ -2967,7 +2967,7 @@
     {
       "id": "s139-1",
       "sceneId": "s139",
-      "text": "ON Malvern Hill"
+      "text": "On Malvern Hill"
     },
     {
       "id": "s140-0",
@@ -3027,7 +3027,7 @@
     {
       "id": "s148-1",
       "sceneId": "s148",
-      "text": "IN Memory OF A. P. R."
+      "text": "In Memory of a. P. R."
     },
     {
       "id": "s148-2",
@@ -3267,17 +3267,17 @@
     {
       "id": "s184-2",
       "sceneId": "s184",
-      "text": "Published BY"
+      "text": "Published by"
     },
     {
       "id": "s184-3",
       "sceneId": "s184",
-      "text": "THE Macmillan Company 64-66 Fifth Avenue New York"
+      "text": "The Macmillan Company 64-66 Fifth Avenue New York"
     },
     {
       "id": "s184-4",
       "sceneId": "s184",
-      "text": "John Masefield’S"
+      "text": "John Masefield’s"
     },
     {
       "id": "s185-0",
@@ -3287,7 +3287,7 @@
     {
       "id": "s185-1",
       "sceneId": "s185",
-      "text": "NEW AND Revised Edition"
+      "text": "New and Revised Edition"
     },
     {
       "id": "s185-2",
@@ -3327,12 +3327,12 @@
     {
       "id": "s191-1",
       "sceneId": "s191",
-      "text": "Published BY"
+      "text": "Published by"
     },
     {
       "id": "s191-2",
       "sceneId": "s191",
-      "text": "THE Macmillan Company"
+      "text": "The Macmillan Company"
     },
     {
       "id": "s191-3",
@@ -3382,12 +3382,12 @@
     {
       "id": "s199-1",
       "sceneId": "s199",
-      "text": "Published BY"
+      "text": "Published by"
     },
     {
       "id": "s199-2",
       "sceneId": "s199",
-      "text": "THE Macmillan Company 64-66 Fifth Avenue New York"
+      "text": "The Macmillan Company 64-66 Fifth Avenue New York"
     },
     {
       "id": "s200-0",
@@ -3432,7 +3432,7 @@
     {
       "id": "s206-0",
       "sceneId": "s206",
-      "text": "Myself AND I $1.00 net"
+      "text": "Myself and I $1.00 net"
     },
     {
       "id": "s206-1",
@@ -3442,12 +3442,12 @@
     {
       "id": "s206-2",
       "sceneId": "s206",
-      "text": "Published BY"
+      "text": "Published by"
     },
     {
       "id": "s206-3",
       "sceneId": "s206",
-      "text": "THE Macmillan Company 64-66 Fifth Avenue New York"
+      "text": "The Macmillan Company 64-66 Fifth Avenue New York"
     }
   ]
 }

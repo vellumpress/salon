@@ -54,7 +54,7 @@
       "id": "s6",
       "title": "The Story of Princess Hase",
       "place": "The Story of Princess Hase",
-      "reentry": "A Story OF OLD Japan",
+      "reentry": "A Story of Old Japan",
       "prompt": "A word from this stretch."
     },
     {
@@ -75,7 +75,7 @@
       "id": "s9",
       "title": "The Mirror of Matsuyama",
       "place": "The Mirror of Matsuyama",
-      "reentry": "A Story OF OLD Japan",
+      "reentry": "A Story of Old Japan",
       "prompt": "A word from this stretch."
     },
     {
@@ -166,7 +166,7 @@
       "id": "s22",
       "title": "The Stones of Five Colors and the Empress Jokwa",
       "place": "The Stones of Five Colors and the Empress Jokwa",
-      "reentry": "AN OLD Chinese Story",
+      "reentry": "An Old Chinese Story",
       "prompt": "A word from this stretch."
     }
   ],
@@ -1724,7 +1724,7 @@
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "A Story OF OLD Japan"
+      "text": "A Story of Old Japan"
     },
     {
       "id": "s6-1",
@@ -2634,7 +2634,7 @@
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "A Story OF OLD Japan"
+      "text": "A Story of Old Japan"
     },
     {
       "id": "s9-1",
@@ -5629,7 +5629,7 @@
     {
       "id": "s19-27",
       "sceneId": "s19",
-      "text": "On hearing this the old man and his wife were very happy. They had cried night and day for sorrow at having no child to help them in their lonely old age, and now that their prayer was answered they were so lost with joy that they did not know where to put their hands or their feet. First the old man took the child up in his arms, and then the old woman did the same; and they named him Momotaro, OR SON OF A Peach, because he had come out of a peach."
+      "text": "On hearing this the old man and his wife were very happy. They had cried night and day for sorrow at having no child to help them in their lonely old age, and now that their prayer was answered they were so lost with joy that they did not know where to put their hands or their feet. First the old man took the child up in his arms, and then the old woman did the same; and they named him MOMOTARO, OR SON OF A PEACH, because he had come out of a peach."
     },
     {
       "id": "s19-28",
@@ -6654,7 +6654,7 @@
     {
       "id": "s22-0",
       "sceneId": "s22",
-      "text": "AN OLD Chinese Story"
+      "text": "An Old Chinese Story"
     },
     {
       "id": "s22-1",

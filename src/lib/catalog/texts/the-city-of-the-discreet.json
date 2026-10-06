@@ -47,7 +47,7 @@
       "id": "s5",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "Concerning an Adventure of Quentin’S in the Neighbourhood of El Potro",
+      "reentry": "Concerning an Adventure of Quentin’s in the Neighbourhood of El Potro",
       "prompt": "A word from this stretch."
     },
     {
@@ -96,7 +96,7 @@
       "id": "s12",
       "title": "Chapter XIII",
       "place": "Chapter XIII",
-      "reentry": "A Picnic AND A Ride",
+      "reentry": "A Picnic and a Ride",
       "prompt": "A word from this stretch."
     },
     {
@@ -166,7 +166,7 @@
       "id": "s22",
       "title": "Chapter XXIII",
       "place": "Chapter XXIII",
-      "reentry": "Pursuit AND Escape",
+      "reentry": "Pursuit and Escape",
       "prompt": "A word from this stretch."
     },
     {
@@ -201,7 +201,7 @@
       "id": "s27",
       "title": "Chapter XXVIII",
       "place": "Chapter XXVIII",
-      "reentry": "THE Mason’S Message",
+      "reentry": "The Mason’s Message",
       "prompt": "A word from this stretch."
     },
     {
@@ -222,7 +222,7 @@
       "id": "s30",
       "title": "Chapter XXXI",
       "place": "Chapter XXXI",
-      "reentry": "Night AND DAY",
+      "reentry": "Night and Day",
       "prompt": "A word from this stretch."
     },
     {
@@ -236,7 +236,7 @@
       "id": "s32",
       "title": "Chapter XXXIII",
       "place": "Chapter XXXIII",
-      "reentry": "THE Departure",
+      "reentry": "The Departure",
       "prompt": "A word from this stretch."
     },
     {
@@ -3451,7 +3451,7 @@
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "Concerning an Adventure of Quentin’S in the Neighbourhood of El Potro"
+      "text": "Concerning an Adventure of Quentin’s in the Neighbourhood of El Potro"
     },
     {
       "id": "s5-1",
@@ -7981,7 +7981,7 @@
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "A Picnic AND A Ride"
+      "text": "A Picnic and a Ride"
     },
     {
       "id": "s12-1",
@@ -12841,7 +12841,7 @@
     {
       "id": "s22-0",
       "sceneId": "s22",
-      "text": "Pursuit AND Escape"
+      "text": "Pursuit and Escape"
     },
     {
       "id": "s22-1",
@@ -16126,7 +16126,7 @@
     {
       "id": "s27-0",
       "sceneId": "s27",
-      "text": "THE Mason’S Message"
+      "text": "The Mason’s Message"
     },
     {
       "id": "s27-1",
@@ -18056,7 +18056,7 @@
     {
       "id": "s30-0",
       "sceneId": "s30",
-      "text": "Night AND DAY"
+      "text": "Night and Day"
     },
     {
       "id": "s30-1",
@@ -19161,7 +19161,7 @@
     {
       "id": "s32-0",
       "sceneId": "s32",
-      "text": "THE Departure"
+      "text": "The Departure"
     },
     {
       "id": "s32-1",
@@ -20636,7 +20636,7 @@
     {
       "id": "s33-163",
       "sceneId": "s33",
-      "text": "EL Paular, June, 1905."
+      "text": "El Paular, June, 1905."
     },
     {
       "id": "s33-164",

@@ -206,8 +206,8 @@
     },
     {
       "id": "s28",
-      "title": "The Judge’S House",
-      "place": "The Judge’S House",
+      "title": "The Judge’s House",
+      "place": "The Judge’s House",
       "reentry": "Thirty years ago, an elderly man, to whom I paid quarterly a small annuity charged on some property of mine, came on the quarter-day to receive it. He was a dry, sad, quiet man, who had known better days, and had always maintained an unexce",
       "prompt": "A word from this stretch."
     },
@@ -284,7 +284,7 @@
     {
       "id": "s0-1",
       "sceneId": "s0",
-      "text": "J. Sheridan LE Fanu,"
+      "text": "J. Sheridan Le Fanu,"
     },
     {
       "id": "s0-2",
@@ -304,7 +304,7 @@
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "Brinsley Homan, ESQ."
+      "text": "Brinsley Homan, Esq."
     },
     {
       "id": "s1-3",
@@ -319,12 +319,12 @@
     {
       "id": "s1-5",
       "sceneId": "s1",
-      "text": "BY HIS OLD Friend"
+      "text": "By His Old Friend"
     },
     {
       "id": "s1-6",
       "sceneId": "s1",
-      "text": "THE Author."
+      "text": "The Author."
     },
     {
       "id": "s1-7",
@@ -1654,7 +1654,7 @@
     {
       "id": "s17-23",
       "sceneId": "s17",
-      "text": "THE Watcher."
+      "text": "The Watcher."
     },
     {
       "id": "s17-24",
@@ -1674,7 +1674,7 @@
     {
       "id": "s17-27",
       "sceneId": "s17",
-      "text": "“THE Watcher.”"
+      "text": "“THE WATCHER.”"
     },
     {
       "id": "s17-28",
@@ -4214,7 +4214,7 @@
     {
       "id": "s37-20",
       "sceneId": "s37",
-      "text": "END OF THE First Volume."
+      "text": "End of the First Volume."
     }
   ]
 }

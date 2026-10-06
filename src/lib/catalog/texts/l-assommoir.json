@@ -19,7 +19,7 @@
       "id": "s1",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "Gervaise AND Coupeau",
+      "reentry": "Gervaise and Coupeau",
       "prompt": "A word from this stretch."
     },
     {
@@ -47,21 +47,21 @@
       "id": "s5",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "Goujet AT HIS Forge",
+      "reentry": "Goujet at His Forge",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s6",
       "title": "Chapter VII",
       "place": "Chapter VII",
-      "reentry": "A Birthday FÊTE",
+      "reentry": "A Birthday Fête",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s7",
       "title": "Chapter VIII",
       "place": "Chapter VIII",
-      "reentry": "AN OLD Acquaintance",
+      "reentry": "An Old Acquaintance",
       "prompt": "A word from this stretch."
     },
     {
@@ -96,7 +96,7 @@
       "id": "s12",
       "title": "Chapter XIII",
       "place": "Chapter XIII",
-      "reentry": "THE Hospital",
+      "reentry": "The Hospital",
       "prompt": "A word from this stretch."
     }
   ],
@@ -1374,7 +1374,7 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "Gervaise AND Coupeau"
+      "text": "Gervaise and Coupeau"
     },
     {
       "id": "s1-1",
@@ -2129,7 +2129,7 @@
     {
       "id": "s1-151",
       "sceneId": "s1",
-      "text": "Up to the sixth floor came the noises from the *rez-de-chaussee*--the rattling of dishes being washed, the scraping of saucepans, and all that sort of thing. On one floor Gervaise saw through an open door on which were the words Designer AND Draughtsman in large letters two men seated at a table covered with a varnished cloth; they were disputing violently amid thick clouds of smoke from their pipes. The second and third floors were the quietest. Here through the open doors came the sound of a cradle rocking, the wail of a baby, a woman's voice, the rattle of a spoon against a cup. On one door she read a placard, MME Gaudron, Carder; on the next, M. Madinier, Manufacturer OF Boxes."
+      "text": "Up to the sixth floor came the noises from the *rez-de-chaussee*--the rattling of dishes being washed, the scraping of saucepans, and all that sort of thing. On one floor Gervaise saw through an open door on which were the words DESIGNER AND DRAUGHTSMAN in large letters two men seated at a table covered with a varnished cloth; they were disputing violently amid thick clouds of smoke from their pipes. The second and third floors were the quietest. Here through the open doors came the sound of a cradle rocking, the wail of a baby, a woman's voice, the rattle of a spoon against a cup. On one door she read a placard, MME GAUDRON, CARDER; on the next, M. MADINIER, MANUFACTURER OF BOXES."
     },
     {
       "id": "s1-152",
@@ -4394,7 +4394,7 @@
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "Goujet AT HIS Forge"
+      "text": "Goujet at His Forge"
     },
     {
       "id": "s5-1",
@@ -4829,7 +4829,7 @@
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "A Birthday FÊTE"
+      "text": "A Birthday Fête"
     },
     {
       "id": "s6-1",
@@ -5644,7 +5644,7 @@
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "AN OLD Acquaintance"
+      "text": "An Old Acquaintance"
     },
     {
       "id": "s7-1",
@@ -10354,7 +10354,7 @@
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "THE Hospital"
+      "text": "The Hospital"
     },
     {
       "id": "s12-1",

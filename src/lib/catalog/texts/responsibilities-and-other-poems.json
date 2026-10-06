@@ -12,14 +12,14 @@
       "id": "s0",
       "title": "Chapter I — The Witch",
       "place": "Chapter I — The Witch",
-      "reentry": "THE Witch",
+      "reentry": "The Witch",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s1",
       "title": "Chapter II — The Peacock",
       "place": "Chapter II — The Peacock",
-      "reentry": "THE Peacock",
+      "reentry": "The Peacock",
       "prompt": "What does the poem hold?"
     },
     {
@@ -40,14 +40,14 @@
       "id": "s4",
       "title": "Chapter I — The Magi",
       "place": "Chapter I — The Magi",
-      "reentry": "THE Magi",
+      "reentry": "The Magi",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s5",
       "title": "Chapter II — The Dolls",
       "place": "Chapter II — The Dolls",
-      "reentry": "THE Dolls",
+      "reentry": "The Dolls",
       "prompt": "What does the poem hold?"
     }
   ],
@@ -55,7 +55,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "THE Witch"
+      "text": "The Witch"
     },
     {
       "id": "s0-1",
@@ -65,7 +65,7 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "THE Peacock"
+      "text": "The Peacock"
     },
     {
       "id": "s1-1",
@@ -75,7 +75,7 @@
     {
       "id": "s1-2",
       "sceneId": "s1",
-      "text": "THE Mountain Tomb"
+      "text": "The Mountain Tomb"
     },
     {
       "id": "s1-3",
@@ -115,7 +115,7 @@
     {
       "id": "s3-2",
       "sceneId": "s3",
-      "text": "A Memory OF Youth"
+      "text": "A Memory of Youth"
     },
     {
       "id": "s3-3",
@@ -160,7 +160,7 @@
     {
       "id": "s3-11",
       "sceneId": "s3",
-      "text": "THE Cold Heaven"
+      "text": "The Cold Heaven"
     },
     {
       "id": "s3-12",
@@ -170,7 +170,7 @@
     {
       "id": "s3-13",
       "sceneId": "s3",
-      "text": "That THE Night Come"
+      "text": "That the Night Come"
     },
     {
       "id": "s3-14",
@@ -180,7 +180,7 @@
     {
       "id": "s3-15",
       "sceneId": "s3",
-      "text": "AN Appointment"
+      "text": "An Appointment"
     },
     {
       "id": "s3-16",
@@ -190,7 +190,7 @@
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "THE Magi"
+      "text": "The Magi"
     },
     {
       "id": "s4-1",
@@ -200,7 +200,7 @@
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "THE Dolls"
+      "text": "The Dolls"
     },
     {
       "id": "s5-1",
@@ -230,7 +230,7 @@
     {
       "id": "s5-6",
       "sceneId": "s5",
-      "text": "HIS Dream"
+      "text": "His Dream"
     },
     {
       "id": "s5-7",
@@ -280,7 +280,7 @@
     {
       "id": "s5-16",
       "sceneId": "s5",
-      "text": "THE Consolation"
+      "text": "The Consolation"
     },
     {
       "id": "s5-17",
@@ -305,7 +305,7 @@
     {
       "id": "s5-21",
       "sceneId": "s5",
-      "text": "NO Second Troy"
+      "text": "No Second Troy"
     },
     {
       "id": "s5-22",
@@ -325,7 +325,7 @@
     {
       "id": "s5-25",
       "sceneId": "s5",
-      "text": "King AND NO King"
+      "text": "King and No King"
     },
     {
       "id": "s5-26",
@@ -410,7 +410,7 @@
     {
       "id": "s5-42",
       "sceneId": "s5",
-      "text": "THE Mask"
+      "text": "The Mask"
     },
     {
       "id": "s5-43",
@@ -440,7 +440,7 @@
     {
       "id": "s5-48",
       "sceneId": "s5",
-      "text": "AT THE Abbey Theatre"
+      "text": "At the Abbey Theatre"
     },
     {
       "id": "s5-49",
@@ -455,7 +455,7 @@
     {
       "id": "s5-51",
       "sceneId": "s5",
-      "text": "These ARE THE Clouds"
+      "text": "These Are the Clouds"
     },
     {
       "id": "s5-52",
@@ -465,7 +465,7 @@
     {
       "id": "s5-53",
       "sceneId": "s5",
-      "text": "AT Galway Races"
+      "text": "At Galway Races"
     },
     {
       "id": "s5-54",
@@ -475,7 +475,7 @@
     {
       "id": "s5-55",
       "sceneId": "s5",
-      "text": "A Friend'S Illness"
+      "text": "A Friend's Illness"
     },
     {
       "id": "s5-56",
@@ -495,7 +495,7 @@
     {
       "id": "s5-59",
       "sceneId": "s5",
-      "text": "THE Young MAN'S Song"
+      "text": "The Young Man's Song"
     },
     {
       "id": "s5-60",
@@ -510,12 +510,12 @@
     {
       "id": "s5-62",
       "sceneId": "s5",
-      "text": "THE Hour-Glass"
+      "text": "The Hour-Glass"
     },
     {
       "id": "s5-63",
       "sceneId": "s5",
-      "text": "NEW Version--1912"
+      "text": "New Version--1912"
     },
     {
       "id": "s5-64",
@@ -525,7 +525,7 @@
     {
       "id": "s5-65",
       "sceneId": "s5",
-      "text": "Wise MAN. Bridget, his wife. Teigue, a fool. Angel. Children and Pupils."
+      "text": "WISE MAN. BRIDGET, his wife. TEIGUE, a fool. ANGEL. Children and Pupils."
     },
     {
       "id": "s5-66",
@@ -765,7 +765,7 @@
     {
       "id": "s5-113",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-114",
@@ -785,7 +785,7 @@
     {
       "id": "s5-117",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-118",
@@ -835,7 +835,7 @@
     {
       "id": "s5-127",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-128",
@@ -865,7 +865,7 @@
     {
       "id": "s5-133",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-134",
@@ -915,7 +915,7 @@
     {
       "id": "s5-143",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-144",
@@ -950,7 +950,7 @@
     {
       "id": "s5-150",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-151",
@@ -970,7 +970,7 @@
     {
       "id": "s5-154",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-155",
@@ -990,7 +990,7 @@
     {
       "id": "s5-158",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-159",
@@ -1010,7 +1010,7 @@
     {
       "id": "s5-162",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-163",
@@ -1030,7 +1030,7 @@
     {
       "id": "s5-166",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-167",
@@ -1050,7 +1050,7 @@
     {
       "id": "s5-170",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-171",
@@ -1070,7 +1070,7 @@
     {
       "id": "s5-174",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-175",
@@ -1090,7 +1090,7 @@
     {
       "id": "s5-178",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-179",
@@ -1110,7 +1110,7 @@
     {
       "id": "s5-182",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-183",
@@ -1130,7 +1130,7 @@
     {
       "id": "s5-186",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-187",
@@ -1150,7 +1150,7 @@
     {
       "id": "s5-190",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-191",
@@ -1170,7 +1170,7 @@
     {
       "id": "s5-194",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-195",
@@ -1190,7 +1190,7 @@
     {
       "id": "s5-198",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-199",
@@ -1210,7 +1210,7 @@
     {
       "id": "s5-202",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-203",
@@ -1230,7 +1230,7 @@
     {
       "id": "s5-206",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-207",
@@ -1250,7 +1250,7 @@
     {
       "id": "s5-210",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-211",
@@ -1270,7 +1270,7 @@
     {
       "id": "s5-214",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-215",
@@ -1290,7 +1290,7 @@
     {
       "id": "s5-218",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-219",
@@ -1310,7 +1310,7 @@
     {
       "id": "s5-222",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-223",
@@ -1330,7 +1330,7 @@
     {
       "id": "s5-226",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-227",
@@ -1350,7 +1350,7 @@
     {
       "id": "s5-230",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-231",
@@ -1440,7 +1440,7 @@
     {
       "id": "s5-248",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-249",
@@ -1460,7 +1460,7 @@
     {
       "id": "s5-252",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-253",
@@ -1480,7 +1480,7 @@
     {
       "id": "s5-256",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-257",
@@ -1500,7 +1500,7 @@
     {
       "id": "s5-260",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-261",
@@ -1520,7 +1520,7 @@
     {
       "id": "s5-264",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-265",
@@ -1540,7 +1540,7 @@
     {
       "id": "s5-268",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-269",
@@ -1560,7 +1560,7 @@
     {
       "id": "s5-272",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-273",
@@ -1580,7 +1580,7 @@
     {
       "id": "s5-276",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-277",
@@ -1610,7 +1610,7 @@
     {
       "id": "s5-282",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-283",
@@ -1740,7 +1740,7 @@
     {
       "id": "s5-308",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-309",
@@ -1765,7 +1765,7 @@
     {
       "id": "s5-313",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-314",
@@ -1805,7 +1805,7 @@
     {
       "id": "s5-321",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-322",
@@ -1825,7 +1825,7 @@
     {
       "id": "s5-325",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-326",
@@ -1845,7 +1845,7 @@
     {
       "id": "s5-329",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-330",
@@ -1885,7 +1885,7 @@
     {
       "id": "s5-337",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-338",
@@ -1945,7 +1945,7 @@
     {
       "id": "s5-349",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-350",
@@ -1965,7 +1965,7 @@
     {
       "id": "s5-353",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-354",
@@ -1995,7 +1995,7 @@
     {
       "id": "s5-359",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-360",
@@ -2020,7 +2020,7 @@
     {
       "id": "s5-364",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-365",
@@ -2100,7 +2100,7 @@
     {
       "id": "s5-380",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-381",
@@ -2135,7 +2135,7 @@
     {
       "id": "s5-387",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-388",
@@ -2170,7 +2170,7 @@
     {
       "id": "s5-394",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-395",
@@ -2190,7 +2190,7 @@
     {
       "id": "s5-398",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-399",
@@ -2210,7 +2210,7 @@
     {
       "id": "s5-402",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-403",
@@ -2245,7 +2245,7 @@
     {
       "id": "s5-409",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-410",
@@ -2265,7 +2265,7 @@
     {
       "id": "s5-413",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-414",
@@ -2305,7 +2305,7 @@
     {
       "id": "s5-421",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-422",
@@ -2325,7 +2325,7 @@
     {
       "id": "s5-425",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-426",
@@ -2345,7 +2345,7 @@
     {
       "id": "s5-429",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-430",
@@ -2375,7 +2375,7 @@
     {
       "id": "s5-435",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-436",
@@ -2395,7 +2395,7 @@
     {
       "id": "s5-439",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-440",
@@ -2420,7 +2420,7 @@
     {
       "id": "s5-444",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-445",
@@ -2455,7 +2455,7 @@
     {
       "id": "s5-451",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-452",
@@ -2480,7 +2480,7 @@
     {
       "id": "s5-456",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-457",
@@ -2505,7 +2505,7 @@
     {
       "id": "s5-461",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-462",
@@ -2555,7 +2555,7 @@
     {
       "id": "s5-471",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-472",
@@ -2615,7 +2615,7 @@
     {
       "id": "s5-483",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-484",
@@ -2635,7 +2635,7 @@
     {
       "id": "s5-487",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-488",
@@ -2655,7 +2655,7 @@
     {
       "id": "s5-491",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-492",
@@ -2675,7 +2675,7 @@
     {
       "id": "s5-495",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-496",
@@ -2695,7 +2695,7 @@
     {
       "id": "s5-499",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-500",
@@ -2715,7 +2715,7 @@
     {
       "id": "s5-503",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-504",
@@ -2740,7 +2740,7 @@
     {
       "id": "s5-508",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-509",
@@ -2765,7 +2765,7 @@
     {
       "id": "s5-513",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-514",
@@ -2785,7 +2785,7 @@
     {
       "id": "s5-517",
       "sceneId": "s5",
-      "text": "Wise MAN"
+      "text": "Wise Man"
     },
     {
       "id": "s5-518",
@@ -2875,7 +2875,7 @@
     {
       "id": "s5-535",
       "sceneId": "s5",
-      "text": "THE Dolls"
+      "text": "The Dolls"
     },
     {
       "id": "s5-536",
@@ -2885,7 +2885,7 @@
     {
       "id": "s5-537",
       "sceneId": "s5",
-      "text": "THE Hour-Glass"
+      "text": "The Hour-Glass"
     },
     {
       "id": "s5-538",
@@ -2965,7 +2965,7 @@
     {
       "id": "s5-553",
       "sceneId": "s5",
-      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+      "text": "The Macmillan Company Publishers 64-66 Fifth Avenue New York"
     },
     {
       "id": "s5-554",
@@ -3025,7 +3025,7 @@
     {
       "id": "s5-565",
       "sceneId": "s5",
-      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+      "text": "The Macmillan Company Publishers 64-66 Fifth Avenue New York"
     },
     {
       "id": "s5-566",
@@ -3065,7 +3065,7 @@
     {
       "id": "s5-573",
       "sceneId": "s5",
-      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+      "text": "The Macmillan Company Publishers 64-66 Fifth Avenue New York"
     },
     {
       "id": "s5-574",
@@ -3115,7 +3115,7 @@
     {
       "id": "s5-583",
       "sceneId": "s5",
-      "text": "THE Macmillan Company Publishers 64-66 Fifth Avenue New York"
+      "text": "The Macmillan Company Publishers 64-66 Fifth Avenue New York"
     }
   ]
 }

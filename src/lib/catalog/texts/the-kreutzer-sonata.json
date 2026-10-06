@@ -19,7 +19,7 @@
       "id": "s1",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "THE Candle.",
+      "reentry": "The Candle.",
       "prompt": "A word from this stretch."
     },
     {
@@ -359,12 +359,12 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "THE Candle."
+      "text": "The Candle."
     },
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "Translator’S Preface."
+      "text": "Translator’s Preface."
     },
     {
       "id": "s1-2",
@@ -399,7 +399,7 @@
     {
       "id": "s1-8",
       "sceneId": "s1",
-      "text": "THE Kreutzer Sonata."
+      "text": "The Kreutzer Sonata."
     },
     {
       "id": "s2-0",
@@ -3019,7 +3019,7 @@
     {
       "id": "s29-57",
       "sceneId": "s29",
-      "text": "Ivan THE Fool."
+      "text": "Ivan the Fool."
     },
     {
       "id": "s30-0",
@@ -5969,7 +5969,7 @@
     {
       "id": "s47-32",
       "sceneId": "s47",
-      "text": "THE Candle."
+      "text": "The Candle."
     },
     {
       "id": "s47-33",

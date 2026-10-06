@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Salomé",
       "place": "Terrace of Herod's palace",
-      "reentry": "Scene--THE Great Terrace Outside THE Palace.",
+      "reentry": "Scene--The Great Terrace Outside the Palace.",
       "prompt": "A line from this act."
     }
   ],
@@ -20,7 +20,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Scene--THE Great Terrace Outside THE Palace."
+      "text": "Scene--The Great Terrace Outside the Palace."
     },
     {
       "id": "s0-1",

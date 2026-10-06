@@ -12,14 +12,14 @@
       "id": "s0",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "ON THE Upper Deck",
+      "reentry": "On the Upper Deck",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s1",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "ON THE Lower Deck",
+      "reentry": "On the Lower Deck",
       "prompt": "A word from this stretch."
     },
     {
@@ -40,7 +40,7 @@
       "id": "s4",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "A Cochero’S Christmas Eve",
+      "reentry": "A Cochero’s Christmas Eve",
       "prompt": "A word from this stretch."
     },
     {
@@ -75,7 +75,7 @@
       "id": "s9",
       "title": "Chapter X",
       "place": "Chapter X",
-      "reentry": "Wealth AND Want",
+      "reentry": "Wealth and Want",
       "prompt": "A word from this stretch."
     },
     {
@@ -96,7 +96,7 @@
       "id": "s12",
       "title": "Chapter XIII",
       "place": "Chapter XIII",
-      "reentry": "THE Class IN Physics",
+      "reentry": "The Class in Physics",
       "prompt": "A word from this stretch."
     },
     {
@@ -110,7 +110,7 @@
       "id": "s14",
       "title": "Chapter XV",
       "place": "Chapter XV",
-      "reentry": "SEÑOR Pasta",
+      "reentry": "Señor Pasta",
       "prompt": "A word from this stretch."
     },
     {
@@ -124,7 +124,7 @@
       "id": "s16",
       "title": "Chapter XVII",
       "place": "Chapter XVII",
-      "reentry": "THE Quiapo Fair",
+      "reentry": "The Quiapo Fair",
       "prompt": "A word from this stretch."
     },
     {
@@ -138,14 +138,14 @@
       "id": "s18",
       "title": "Chapter XIX",
       "place": "Chapter XIX",
-      "reentry": "THE Fuse",
+      "reentry": "The Fuse",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s19",
       "title": "Chapter XX",
       "place": "Chapter XX",
-      "reentry": "THE Arbiter",
+      "reentry": "The Arbiter",
       "prompt": "A word from this stretch."
     },
     {
@@ -159,7 +159,7 @@
       "id": "s21",
       "title": "Chapter XXII",
       "place": "Chapter XXII",
-      "reentry": "THE Performance",
+      "reentry": "The Performance",
       "prompt": "A word from this stretch."
     },
     {
@@ -180,7 +180,7 @@
       "id": "s24",
       "title": "Chapter XXV",
       "place": "Chapter XXV",
-      "reentry": "Smiles AND Tears",
+      "reentry": "Smiles and Tears",
       "prompt": "A word from this stretch."
     },
     {
@@ -222,7 +222,7 @@
       "id": "s30",
       "title": "Chapter XXXI",
       "place": "Chapter XXXI",
-      "reentry": "THE High Official",
+      "reentry": "The High Official",
       "prompt": "A word from this stretch."
     },
     {
@@ -236,35 +236,35 @@
       "id": "s32",
       "title": "Chapter XXXIII",
       "place": "Chapter XXXIII",
-      "reentry": "LA Ultima RAZÓN [69]",
+      "reentry": "La Ultima Razón [69]",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s33",
       "title": "Chapter XXXIV",
       "place": "Chapter XXXIV",
-      "reentry": "THE Wedding",
+      "reentry": "The Wedding",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s34",
       "title": "Chapter XXXV",
       "place": "Chapter XXXV",
-      "reentry": "THE Fiesta",
+      "reentry": "The Fiesta",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s35",
       "title": "Chapter XXXVI",
       "place": "Chapter XXXVI",
-      "reentry": "BEN-Zayb’S Afflictions",
+      "reentry": "Ben-Zayb’s Afflictions",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s36",
       "title": "Chapter XXXVII",
       "place": "Chapter XXXVII",
-      "reentry": "THE Mystery",
+      "reentry": "The Mystery",
       "prompt": "A word from this stretch."
     },
     {
@@ -286,7 +286,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "ON THE Upper Deck"
+      "text": "On the Upper Deck"
     },
     {
       "id": "s0-1",
@@ -646,7 +646,7 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "ON THE Lower Deck"
+      "text": "On the Lower Deck"
     },
     {
       "id": "s1-1",
@@ -1411,7 +1411,7 @@
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "A Cochero’S Christmas Eve"
+      "text": "A Cochero’s Christmas Eve"
     },
     {
       "id": "s4-1",
@@ -2016,7 +2016,7 @@
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "Wealth AND Want"
+      "text": "Wealth and Want"
     },
     {
       "id": "s9-1",
@@ -3411,7 +3411,7 @@
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "THE Class IN Physics"
+      "text": "The Class in Physics"
     },
     {
       "id": "s12-1",
@@ -4316,7 +4316,7 @@
     {
       "id": "s14-0",
       "sceneId": "s14",
-      "text": "SEÑOR Pasta"
+      "text": "Señor Pasta"
     },
     {
       "id": "s14-1",
@@ -4936,7 +4936,7 @@
     {
       "id": "s16-0",
       "sceneId": "s16",
-      "text": "THE Quiapo Fair"
+      "text": "The Quiapo Fair"
     },
     {
       "id": "s16-1",
@@ -5426,7 +5426,7 @@
     {
       "id": "s18-0",
       "sceneId": "s18",
-      "text": "THE Fuse"
+      "text": "The Fuse"
     },
     {
       "id": "s18-1",
@@ -5776,7 +5776,7 @@
     {
       "id": "s19-0",
       "sceneId": "s19",
-      "text": "THE Arbiter"
+      "text": "The Arbiter"
     },
     {
       "id": "s19-1",
@@ -5896,7 +5896,7 @@
     {
       "id": "s19-24",
       "sceneId": "s19",
-      "text": "Like an old lover who discovers a moldy package of amorous epistles, Don Custodio arose and approached the desk. The first envelope, thick, swollen, and plethoric, bore the title: Projects IN Project."
+      "text": "Like an old lover who discovers a moldy package of amorous epistles, Don Custodio arose and approached the desk. The first envelope, thick, swollen, and plethoric, bore the title: PROJECTS IN PROJECT."
     },
     {
       "id": "s19-25",
@@ -6346,7 +6346,7 @@
     {
       "id": "s21-0",
       "sceneId": "s21",
-      "text": "THE Performance"
+      "text": "The Performance"
     },
     {
       "id": "s21-1",
@@ -6791,7 +6791,7 @@
     {
       "id": "s21-89",
       "sceneId": "s21",
-      "text": "“MY Dove: Your letter has reached me late, for I have already handed in my decision, and it has been approved. However, as if I had guessed your wish, I have decided the matter according to the desires of your protégés. I’ll be at the theater and wait for you after the performance."
+      "text": "“MY DOVE: Your letter has reached me late, for I have already handed in my decision, and it has been approved. However, as if I had guessed your wish, I have decided the matter according to the desires of your protégés. I’ll be at the theater and wait for you after the performance."
     },
     {
       "id": "s21-90",
@@ -7376,7 +7376,7 @@
     {
       "id": "s24-0",
       "sceneId": "s24",
-      "text": "Smiles AND Tears"
+      "text": "Smiles and Tears"
     },
     {
       "id": "s24-1",
@@ -8826,7 +8826,7 @@
     {
       "id": "s27-71",
       "sceneId": "s27",
-      "text": "“The sentiment of charity, More Prevalent IN Catholic Countries Than IN Others, and the thought of Him who, influenced by that same feeling, sacrificed himself for humanity, moves (sic) us to compassion over the misfortunes of our kind and to render thanks that in this country, so scourged by cyclones, there are not enacted scenes so desolating as that which the inhabitants of the United States mus have witnessed!”"
+      "text": "“The sentiment of charity, MORE PREVALENT IN CATHOLIC COUNTRIES THAN IN OTHERS, and the thought of Him who, influenced by that same feeling, sacrificed himself for humanity, moves (sic) us to compassion over the misfortunes of our kind and to render thanks that in this country, so scourged by cyclones, there are not enacted scenes so desolating as that which the inhabitants of the United States mus have witnessed!”"
     },
     {
       "id": "s27-72",
@@ -9216,7 +9216,7 @@
     {
       "id": "s30-0",
       "sceneId": "s30",
-      "text": "THE High Official"
+      "text": "The High Official"
     },
     {
       "id": "s30-1",
@@ -9451,7 +9451,7 @@
     {
       "id": "s32-0",
       "sceneId": "s32",
-      "text": "LA Ultima RAZÓN [69]"
+      "text": "La Ultima Razón [69]"
     },
     {
       "id": "s32-1",
@@ -9596,7 +9596,7 @@
     {
       "id": "s33-0",
       "sceneId": "s33",
-      "text": "THE Wedding"
+      "text": "The Wedding"
     },
     {
       "id": "s33-1",
@@ -9666,7 +9666,7 @@
     {
       "id": "s34-0",
       "sceneId": "s34",
-      "text": "THE Fiesta"
+      "text": "The Fiesta"
     },
     {
       "id": "s34-1",
@@ -10001,7 +10001,7 @@
     {
       "id": "s35-0",
       "sceneId": "s35",
-      "text": "BEN-Zayb’S Afflictions"
+      "text": "Ben-Zayb’s Afflictions"
     },
     {
       "id": "s35-1",
@@ -10156,7 +10156,7 @@
     {
       "id": "s36-0",
       "sceneId": "s36",
-      "text": "THE Mystery"
+      "text": "The Mystery"
     },
     {
       "id": "s36-1",
@@ -10621,7 +10621,7 @@
     {
       "id": "s38-3",
       "sceneId": "s38",
-      "text": "MY Dear Chaplain,—I have just received from the commandant a telegram that says, “Spaniard hidden house Padre Florentino capture forward alive dead.” As the telegram is quite explicit, warn your friend not to be there when I come to arrest him at eight tonight."
+      "text": "MY DEAR CHAPLAIN,—I have just received from the commandant a telegram that says, “Spaniard hidden house Padre Florentino capture forward alive dead.” As the telegram is quite explicit, warn your friend not to be there when I come to arrest him at eight tonight."
     },
     {
       "id": "s38-4",

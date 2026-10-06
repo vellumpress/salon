@@ -5278,7 +5278,7 @@
     {
       "id": "s18-54",
       "sceneId": "s18",
-      "text": "“H_{2}O,” answered the Captain, “I take it without milk myself.”"
+      "text": "“H₂O,” answered the Captain, “I take it without milk myself.”"
     },
     {
       "id": "s18-55",
@@ -7254,16 +7254,6 @@
       "id": "s24-20",
       "sceneId": "s24",
       "text": "“I understand,” said Joan, and kissed her cousin, not without tears of her own."
-    },
-    {
-      "id": "s24-21",
-      "sceneId": "s24",
-      "text": "Transcriber’s note: The notation “H_{2}O” uses the underscore and braces to mean a subscripted"
-    },
-    {
-      "id": "s24-22",
-      "sceneId": "s24",
-      "text": "character. In this case the formula for water."
     }
   ]
 }

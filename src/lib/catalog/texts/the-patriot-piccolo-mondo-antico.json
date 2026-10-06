@@ -26,21 +26,21 @@
       "id": "s2",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "THE Great Step 39",
+      "reentry": "The Great Step 39",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "Carlin'S Letter 68",
+      "reentry": "Carlin's Letter 68",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "THE Rogue AT Work 85",
+      "reentry": "The Rogue at Work 85",
       "prompt": "A word from this stretch."
     },
     {
@@ -68,7 +68,7 @@
       "id": "s8",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "THE Gloved Hand 169",
+      "reentry": "The Gloved Hand 169",
       "prompt": "A word from this stretch."
     },
     {
@@ -124,7 +124,7 @@
       "id": "s16",
       "title": "Chapter XI",
       "place": "Chapter XI",
-      "reentry": "Shadows AND Dawn 331",
+      "reentry": "Shadows and Dawn 331",
       "prompt": "A word from this stretch."
     },
     {
@@ -145,7 +145,7 @@
       "id": "s19",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "THE Sage Speaks 391",
+      "reentry": "The Sage Speaks 391",
       "prompt": "A word from this stretch."
     },
     {
@@ -159,7 +159,7 @@
       "id": "s21",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Risotto AND Truffles",
+      "reentry": "Risotto and Truffles",
       "prompt": "A word from this stretch."
     },
     {
@@ -173,21 +173,21 @@
       "id": "s23",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "THE Great Step",
+      "reentry": "The Great Step",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s24",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "Carlin'S Letter",
+      "reentry": "Carlin's Letter",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s25",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "THE Rogue AT Work",
+      "reentry": "The Rogue at Work",
       "prompt": "A word from this stretch."
     },
     {
@@ -215,7 +215,7 @@
       "id": "s29",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "THE Gloved Hand",
+      "reentry": "The Gloved Hand",
       "prompt": "A word from this stretch."
     },
     {
@@ -250,7 +250,7 @@
       "id": "s34",
       "title": "Chapter VIII",
       "place": "Chapter VIII",
-      "reentry": "Hours OF Bitterness",
+      "reentry": "Hours of Bitterness",
       "prompt": "A word from this stretch."
     },
     {
@@ -271,7 +271,7 @@
       "id": "s37",
       "title": "Chapter XI",
       "place": "Chapter XI",
-      "reentry": "Shadows AND Dawn",
+      "reentry": "Shadows and Dawn",
       "prompt": "A word from this stretch."
     },
     {
@@ -292,14 +292,14 @@
       "id": "s40",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "THE Sage Speaks",
+      "reentry": "The Sage Speaks",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s41",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "THE Summons TO Arms",
+      "reentry": "The Summons to Arms",
       "prompt": "A word from this stretch."
     }
   ],
@@ -317,17 +317,17 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "THE Great Step 39"
+      "text": "The Great Step 39"
     },
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "Carlin'S Letter 68"
+      "text": "Carlin's Letter 68"
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "THE Rogue AT Work 85"
+      "text": "The Rogue at Work 85"
     },
     {
       "id": "s5-0",
@@ -352,7 +352,7 @@
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "THE Gloved Hand 169"
+      "text": "The Gloved Hand 169"
     },
     {
       "id": "s9-0",
@@ -392,7 +392,7 @@
     {
       "id": "s16-0",
       "sceneId": "s16",
-      "text": "Shadows AND Dawn 331"
+      "text": "Shadows and Dawn 331"
     },
     {
       "id": "s17-0",
@@ -412,7 +412,7 @@
     {
       "id": "s19-0",
       "sceneId": "s19",
-      "text": "THE Sage Speaks 391"
+      "text": "The Sage Speaks 391"
     },
     {
       "id": "s20-0",
@@ -427,7 +427,7 @@
     {
       "id": "s21-0",
       "sceneId": "s21",
-      "text": "Risotto AND Truffles"
+      "text": "Risotto and Truffles"
     },
     {
       "id": "s21-1",
@@ -1412,7 +1412,7 @@
     {
       "id": "s23-0",
       "sceneId": "s23",
-      "text": "THE Great Step"
+      "text": "The Great Step"
     },
     {
       "id": "s23-1",
@@ -2432,7 +2432,7 @@
     {
       "id": "s24-0",
       "sceneId": "s24",
-      "text": "Carlin'S Letter"
+      "text": "Carlin's Letter"
     },
     {
       "id": "s24-1",
@@ -2732,7 +2732,7 @@
     {
       "id": "s25-0",
       "sceneId": "s25",
-      "text": "THE Rogue AT Work"
+      "text": "The Rogue at Work"
     },
     {
       "id": "s25-1",
@@ -4472,7 +4472,7 @@
     {
       "id": "s29-0",
       "sceneId": "s29",
-      "text": "THE Gloved Hand"
+      "text": "The Gloved Hand"
     },
     {
       "id": "s29-1",
@@ -6317,7 +6317,7 @@
     {
       "id": "s34-0",
       "sceneId": "s34",
-      "text": "Hours OF Bitterness"
+      "text": "Hours of Bitterness"
     },
     {
       "id": "s34-1",
@@ -7532,7 +7532,7 @@
     {
       "id": "s35-14",
       "sceneId": "s35",
-      "text": "Luisa TO Franco."
+      "text": "Luisa to Franco."
     },
     {
       "id": "s35-15",
@@ -7632,7 +7632,7 @@
     {
       "id": "s35-34",
       "sceneId": "s35",
-      "text": "Franco TO Luisa."
+      "text": "Franco to Luisa."
     },
     {
       "id": "s35-35",
@@ -7692,7 +7692,7 @@
     {
       "id": "s35-46",
       "sceneId": "s35",
-      "text": "Luisa TO Franco. \"*September 24, 1855.*"
+      "text": "Luisa to Franco. \"*September 24, 1855.*"
     },
     {
       "id": "s35-47",
@@ -8332,7 +8332,7 @@
     {
       "id": "s37-0",
       "sceneId": "s37",
-      "text": "Shadows AND Dawn"
+      "text": "Shadows and Dawn"
     },
     {
       "id": "s37-1",
@@ -9312,7 +9312,7 @@
     {
       "id": "s40-0",
       "sceneId": "s40",
-      "text": "THE Sage Speaks"
+      "text": "The Sage Speaks"
     },
     {
       "id": "s40-1",
@@ -9397,7 +9397,7 @@
     {
       "id": "s40-17",
       "sceneId": "s40",
-      "text": "\"Turin, *February 18, 1859*. \"My OWN Luisa,--"
+      "text": "\"Turin, *February 18, 1859*. \"My OWN LUISA,--"
     },
     {
       "id": "s40-18",
@@ -9817,7 +9817,7 @@
     {
       "id": "s41-0",
       "sceneId": "s41",
-      "text": "THE Summons TO Arms"
+      "text": "The Summons to Arms"
     },
     {
       "id": "s41-1",
@@ -10197,7 +10197,7 @@
     {
       "id": "s41-76",
       "sceneId": "s41",
-      "text": "G. P. Putnam'S Sons"
+      "text": "G. P. Putnam's Sons"
     },
     {
       "id": "s41-77",
@@ -10267,7 +10267,7 @@
     {
       "id": "s41-90",
       "sceneId": "s41",
-      "text": "IL Santo *Crown 8vo. $1.50*"
+      "text": "Il Santo *Crown 8vo. $1.50*"
     },
     {
       "id": "s41-91",
@@ -10282,12 +10282,12 @@
     {
       "id": "s41-93",
       "sceneId": "s41",
-      "text": "SAN Celestino"
+      "text": "San Celestino"
     },
     {
       "id": "s41-94",
       "sceneId": "s41",
-      "text": "BY John Ayscough"
+      "text": "By John Ayscough"
     },
     {
       "id": "s41-95",
@@ -10342,7 +10342,7 @@
     {
       "id": "s41-105",
       "sceneId": "s41",
-      "text": "Henry OF Navarre By May Wynne A Romance of August, 1572"
+      "text": "Henry of Navarre By May Wynne A Romance of August, 1572"
     },
     {
       "id": "s41-106",
@@ -10407,7 +10407,7 @@
     {
       "id": "s41-118",
       "sceneId": "s41",
-      "text": "Plays By John Galsworthy THE Silver BOX--JOY--Strife"
+      "text": "Plays By John Galsworthy The Silver Box--Joy--Strife"
     },
     {
       "id": "s41-119",
@@ -10492,7 +10492,7 @@
     {
       "id": "s41-135",
       "sceneId": "s41",
-      "text": "G. P. Putnam'S Sons"
+      "text": "G. P. Putnam's Sons"
     },
     {
       "id": "s41-136",

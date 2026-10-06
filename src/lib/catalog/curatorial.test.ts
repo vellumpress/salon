@@ -22,6 +22,24 @@ import { openingBreathIndex } from "../opening-scene.ts";
 import type { Work } from "../literature.ts";
 
 /**
+ * The card opening is the line a fresh Sit opens on: breath 0, or, when the
+ * leading scenes are tagged front matter, the first line after them (a short
+ * printed heading may sit between). Front matter stays in the book, so saved
+ * breath indexes never move.
+ */
+function opensOnFirstLine(full: unknown, opening: string) {
+  const work = full as Work;
+  if ((work.breaths[0]?.text ?? "").startsWith(opening)) return true;
+  const at = openingBreathIndex(work);
+  for (let i = at; i <= at + 2 && i < work.breaths.length; i++) {
+    const text = work.breaths[i]?.text ?? "";
+    if (text.startsWith(opening)) return true;
+    if (text.length > 60) return false;
+  }
+  return false;
+}
+
+/**
  * Bind-note metadata (texts/openings JSON `note`). Inventory and PG
  * reading-ease figures are kept here for the pipeline; reader copy no
  * longer carries them (see pipeline-leak.test.ts).
@@ -1751,7 +1769,7 @@ test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "songs-from-vagabondia": { opening: "VAGABONDIA.", breaths: 306, scenes: 7, gutenberg: 18238 },
     "songs-of-childhood": { opening: "As I lay awake in the white moonlight, I heard a sweet singing in the wood-- 'Out of bed, Sleepyhead", breaths: 332, scenes: 43, gutenberg: 23545 },
     "ten-minute-stories": { opening: "At the moorland cross-roads Martin stood examining the sign-post for several minutes in some bewilde", breaths: 833, scenes: 28, gutenberg: 72928 },
-    "the-everlasting-mercy": { opening: "THE EVERLASTING MERCY", breaths: 128, scenes: 1, gutenberg: 41467 },
+    "the-everlasting-mercy": { opening: "From ’41 to ’51 I was my folk’s contrary son; I bit my father’s hand right through And broke my mother’s heart in two.", breaths: 128, scenes: 2, gutenberg: 41467 },
     "the-golden-bowl": { opening: "The Prince had always liked his London, when it had come to him; he was one of the modern Romans who", breaths: 2497, scenes: 42, gutenberg: 4264 },
     "the-rainbow": { opening: "Chapter I. HOW TOM BRANGWEN MARRIED A POLISH LADY", breaths: 4518, scenes: 101, gutenberg: 28948 },
     "the-sword-of-welleran": { opening: "Where the great plain of Tarphet runs up, as the sea in estuaries, among the Cyresian mountains, the", breaths: 434, scenes: 11, gutenberg: 10806 },
@@ -1795,7 +1813,7 @@ test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     };
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
-    assert.ok(full.breaths[0]?.text.startsWith(want.opening.slice(0, 40)), id);
+    assert.ok(opensOnFirstLine(full, want.opening.slice(0, 40)), id);
   }
 });
 
@@ -1861,7 +1879,7 @@ test("BATCH-5 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     };
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
-    assert.ok(full.breaths[0]?.text.startsWith(want.opening.slice(0, 40)), id);
+    assert.ok(opensOnFirstLine(full, want.opening.slice(0, 40)), id);
   }
 });
 
@@ -1929,7 +1947,7 @@ test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     };
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
-    assert.ok(full.breaths[0]?.text.startsWith(want.opening.slice(0, 40)), id);
+    assert.ok(opensOnFirstLine(full, want.opening.slice(0, 40)), id);
   }
 });
 
@@ -1996,7 +2014,7 @@ test("BATCH-9 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
     assert.ok(full.breaths.length >= 3, id);
-    assert.ok(full.breaths[0]?.text.startsWith(want.opening.slice(0, 40)), id);
+    assert.ok(opensOnFirstLine(full, want.opening.slice(0, 40)), id);
   }
 });
 
@@ -2604,7 +2622,7 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     "tristana": { opening: "Resignada en absoluto no, porque más de una vez, en aquel año que precedió a lo que se va a referir, la linda figurilla ", breaths: 627, scenes: 28, gutenberg: 66979, scene: "Chapter II · Resignada en absoluto no, porque más de una vez, en aquel año que" },
     "niels": { opening: "She had the black, luminous eyes of the Blid family with delicate, straight eyebrows; she had their boldly shaped nose, ", breaths: 933, scenes: 14, gutenberg: 55389, scene: "Chapter I" },
     "amor-de-perdicao": { opening: "Domingos José Correia Botelho de Mesquita e Menezes, fidalgo de linhagem, e um dos mais antigos solarengos de Villa Real", breaths: 1569, scenes: 19, gutenberg: 16425, scene: "Part 1 · Chapter I" },
-    "das-stunden-buch": { opening: "Das Stunden-Buch", breaths: 429, scenes: 309, gutenberg: 24288, scene: "Book I · Das Stunden-Buch" },
+    "das-stunden-buch": { opening: "Da neigt sich die Stunde und rührt mich an mit klarem metallenem Schlag: mir zittern die Sinne.", breaths: 429, scenes: 309, gutenberg: 24288, scene: "Book I · Das Stunden-Buch" },
     "misericordia": { opening: "Dos caras, como algunas personas, tiene la parroquia de San Sebastián... mejor será decir la iglesia... dos caras que se", breaths: 1500, scenes: 40, gutenberg: 21831, scene: "Chapter I" },
     "the-mandarin": { opening: "Decorreu um mez.", breaths: 359, scenes: 7, gutenberg: 16384, scene: "Chapter II" },
     "policarpo": { opening: "Como de habito, Polycarpo Quaresma, mais conhecido por major Quaresma, bateu em casa ás 4 e 15 da tarde. Havia mais de v", breaths: 1966, scenes: 15, gutenberg: 67535, scene: "Part I · Chapter I · A Lição De Violão" },
@@ -2649,7 +2667,7 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
     assert.equal(full.scenes[0]?.title, want.scene, id);
-    assert.ok((full.breaths[0]?.text ?? "").startsWith(want.opening), id);
+    assert.ok(opensOnFirstLine(full, want.opening), id);
   }
   const french = SHELF.find((item) => item.id === "meaulnes");
   assert.ok(french);
@@ -2670,7 +2688,7 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
 test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
   const expect = {
     "bay-a-book-of-poems": {
-      opening: "SHADES Shall I tell you, then, how it is?--",
+      opening: "SHADES SHALL I tell you, then, how it is?--",
       breaths: 178,
       scenes: 6,
       gutenberg: 22734,
@@ -2795,7 +2813,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
     assert.ok(full.breaths.length >= 3, id);
-    assert.ok((full.breaths[0]?.text ?? "").startsWith(want.opening), id);
+    assert.ok(opensOnFirstLine(full, want.opening), id);
   }
 });
 
@@ -2923,7 +2941,7 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
     assert.ok(full.breaths.length >= 3, id);
-    assert.ok((full.breaths[0]?.text ?? "").startsWith(want.opening), id);
+    assert.ok(opensOnFirstLine(full, want.opening), id);
   }
   const bertha = SHELF.find((item) => item.id === "bertha-garlan");
   assert.ok(bertha);

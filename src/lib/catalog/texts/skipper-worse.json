@@ -12,15 +12,17 @@
       "id": "s0",
       "title": "Chapter I — By H. H. Boyesen",
       "place": "Chapter I — By H. H. Boyesen",
-      "reentry": "BY H. H. Boyesen",
-      "prompt": "A word from this stretch."
+      "reentry": "By H. H. Boyesen",
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s1",
       "title": "Chapter II — By William H. Carpenter",
       "place": "Chapter II — By William H. Carpenter",
       "reentry": "By William H. Carpenter",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s2",
@@ -132,7 +134,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "BY H. H. Boyesen"
+      "text": "By H. H. Boyesen"
     },
     {
       "id": "s0-1",

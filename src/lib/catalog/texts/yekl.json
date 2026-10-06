@@ -12,28 +12,28 @@
       "id": "s0",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Jake AND Yekl.",
+      "reentry": "Jake and Yekl.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s1",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "THE NEW York Ghetto.",
+      "reentry": "The New York Ghetto.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "IN THE Grip OF HIS Past.",
+      "reentry": "In the Grip of His Past.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "THE Meeting.",
+      "reentry": "The Meeting.",
       "prompt": "A word from this stretch."
     },
     {
@@ -54,7 +54,7 @@
       "id": "s6",
       "title": "Chapter VII",
       "place": "Chapter VII",
-      "reentry": "Mrs. Kavarsky'S Coup D'État.",
+      "reentry": "Mrs. Kavarsky's Coup D'État.",
       "prompt": "A word from this stretch."
     },
     {
@@ -68,7 +68,7 @@
       "id": "s8",
       "title": "Chapter IX",
       "place": "Chapter IX",
-      "reentry": "THE Parting.",
+      "reentry": "The Parting.",
       "prompt": "A word from this stretch."
     },
     {
@@ -83,7 +83,7 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Jake AND Yekl."
+      "text": "Jake and Yekl."
     },
     {
       "id": "s0-1",
@@ -473,7 +473,7 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "THE NEW York Ghetto."
+      "text": "The New York Ghetto."
     },
     {
       "id": "s1-1",
@@ -928,7 +928,7 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "IN THE Grip OF HIS Past."
+      "text": "In the Grip of His Past."
     },
     {
       "id": "s2-1",
@@ -1158,7 +1158,7 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "THE Meeting."
+      "text": "The Meeting."
     },
     {
       "id": "s3-1",
@@ -2268,7 +2268,7 @@
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "Mrs. Kavarsky'S Coup D'État."
+      "text": "Mrs. Kavarsky's Coup D'État."
     },
     {
       "id": "s6-1",
@@ -2973,7 +2973,7 @@
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "THE Parting."
+      "text": "The Parting."
     },
     {
       "id": "s8-1",
@@ -3203,12 +3203,12 @@
     {
       "id": "s9-13",
       "sceneId": "s9",
-      "text": "Stephen Crane'S Books."
+      "text": "Stephen Crane's Books."
     },
     {
       "id": "s9-14",
       "sceneId": "s9",
-      "text": "*Maggie: A Girl OF THE Streets.* By Stephen Crane, author of \"The Red Badge of Courage,\" etc. Uniform with \"The Red Badge of Courage.\" 12mo. Cloth, 75 cents."
+      "text": "*MAGGIE: A GIRL OF THE STREETS.* By STEPHEN CRANE, author of \"The Red Badge of Courage,\" etc. Uniform with \"The Red Badge of Courage.\" 12mo. Cloth, 75 cents."
     },
     {
       "id": "s9-15",
@@ -3223,7 +3223,7 @@
     {
       "id": "s9-17",
       "sceneId": "s9",
-      "text": "*THE RED Badge OF Courage. An Episode of the American Civil War.* By Stephen Crane. 12mo. Cloth, $1.00."
+      "text": "*THE RED BADGE OF COURAGE. An Episode of the American Civil War.* By STEPHEN CRANE. 12mo. Cloth, $1.00."
     },
     {
       "id": "s9-18",
@@ -3263,7 +3263,7 @@
     {
       "id": "s9-25",
       "sceneId": "s9",
-      "text": "New York: D. Appleton & CO., 72 Fifth Avenue."
+      "text": "New York: D. Appleton & Co., 72 Fifth Avenue."
     },
     {
       "id": "s9-26",
@@ -3273,7 +3273,7 @@
     {
       "id": "s9-27",
       "sceneId": "s9",
-      "text": "*THE Folly OF Eustace.* By R. S. Hichens, author of \"An Imaginative Man,\" \"The Green Carnation,\" etc. 16mo. Cloth, 75 cents."
+      "text": "*THE FOLLY OF EUSTACE.* By R. S. HICHENS, author of \"An Imaginative Man,\" \"The Green Carnation,\" etc. 16mo. Cloth, 75 cents."
     },
     {
       "id": "s9-28",
@@ -3303,7 +3303,7 @@
     {
       "id": "s9-33",
       "sceneId": "s9",
-      "text": "*Courtship BY Command*. By M. M. Blake. 16mo. Cloth, 75 cents."
+      "text": "*COURTSHIP BY COMMAND*. By M. M. BLAKE. 16mo. Cloth, 75 cents."
     },
     {
       "id": "s9-34",
@@ -3313,7 +3313,7 @@
     {
       "id": "s9-35",
       "sceneId": "s9",
-      "text": "*THE Watter'S MOU'.* By Bram Stoker. 16mo. Cloth, 75 cents."
+      "text": "*THE WATTER'S MOU'.* By BRAM STOKER. 16mo. Cloth, 75 cents."
     },
     {
       "id": "s9-36",
@@ -3323,7 +3323,7 @@
     {
       "id": "s9-37",
       "sceneId": "s9",
-      "text": "*Master AND MAN.* By Count LEO Tolstoy. With an Introduction by W. D. Howells. 16mo. Cloth, 75 cts."
+      "text": "*MASTER AND MAN.* By COUNT LEO TOLSTOY. With an Introduction by W. D. HOWELLS. 16mo. Cloth, 75 cts."
     },
     {
       "id": "s9-38",
@@ -3333,7 +3333,7 @@
     {
       "id": "s9-39",
       "sceneId": "s9",
-      "text": "*THE Zeit-Geist.* By L. Dougall, author of \"The Mermaid,\" \"Beggars All,\" etc. 16mo. Cloth, 75 cents."
+      "text": "*THE ZEIT-GEIST.* By L. DOUGALL, author of \"The Mermaid,\" \"Beggars All,\" etc. 16mo. Cloth, 75 cents."
     },
     {
       "id": "s9-40",
@@ -3348,7 +3348,7 @@
     {
       "id": "s9-42",
       "sceneId": "s9",
-      "text": "New York: D. Appleton & CO., 72 Fifth Avenue."
+      "text": "New York: D. Appleton & Co., 72 Fifth Avenue."
     },
     {
       "id": "s9-43",
@@ -3358,12 +3358,12 @@
     {
       "id": "s9-44",
       "sceneId": "s9",
-      "text": "Gilbert Parker'S Best Books."
+      "text": "Gilbert Parker's Best Books."
     },
     {
       "id": "s9-45",
       "sceneId": "s9",
-      "text": "*THE Seats OF THE Mighty.* Being the Memoirs of Captain Robert Moray, sometime an Officer in the Virginia Regiment, and afterwards of Amherst's Regiment. 12mo. Cloth, illustrated, $1.50."
+      "text": "*THE SEATS OF THE MIGHTY.* Being the Memoirs of Captain Robert Moray, sometime an Officer in the Virginia Regiment, and afterwards of Amherst's Regiment. 12mo. Cloth, illustrated, $1.50."
     },
     {
       "id": "s9-46",
@@ -3378,7 +3378,7 @@
     {
       "id": "s9-48",
       "sceneId": "s9",
-      "text": "*THE Trail OF THE Sword.* A Novel. 12mo. Paper, 50 cents; cloth, $1.00."
+      "text": "*THE TRAIL OF THE SWORD.* A Novel. 12mo. Paper, 50 cents; cloth, $1.00."
     },
     {
       "id": "s9-49",
@@ -3393,7 +3393,7 @@
     {
       "id": "s9-51",
       "sceneId": "s9",
-      "text": "*THE Trespasser.* 12mo. Paper, 50 cents; cloth, $1.00."
+      "text": "*THE TRESPASSER.* 12mo. Paper, 50 cents; cloth, $1.00."
     },
     {
       "id": "s9-52",
@@ -3408,7 +3408,7 @@
     {
       "id": "s9-54",
       "sceneId": "s9",
-      "text": "*THE Translation OF A Savage.* 16mo. Flexible cloth, 75 cents."
+      "text": "*THE TRANSLATION OF A SAVAGE.* 16mo. Flexible cloth, 75 cents."
     },
     {
       "id": "s9-55",
@@ -3428,17 +3428,17 @@
     {
       "id": "s9-58",
       "sceneId": "s9",
-      "text": "New York: D. Appleton & CO., 72 Fifth Avenue."
+      "text": "New York: D. Appleton & Co., 72 Fifth Avenue."
     },
     {
       "id": "s9-59",
       "sceneId": "s9",
-      "text": "BY S. R. Crockett."
+      "text": "By S. R. Crockett."
     },
     {
       "id": "s9-60",
       "sceneId": "s9",
-      "text": "*Cleg Kelly, Arab OF THE City. His Progress and Adventures.* Uniform with \"The Lilac Sunbonnet\" and \"Bog-Myrtle and Peat.\" Illustrated. 12mo. Cloth, $1.50."
+      "text": "*CLEG KELLY, ARAB OF THE CITY. His Progress and Adventures.* Uniform with \"The Lilac Sunbonnet\" and \"Bog-Myrtle and Peat.\" Illustrated. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-61",
@@ -3458,7 +3458,7 @@
     {
       "id": "s9-64",
       "sceneId": "s9",
-      "text": "*BOG-Myrtle AND Peat.* Third edition. 12mo. Cloth, $1.50."
+      "text": "*BOG-MYRTLE AND PEAT.* Third edition. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-65",
@@ -3478,7 +3478,7 @@
     {
       "id": "s9-68",
       "sceneId": "s9",
-      "text": "*THE Lilac Sunbonnet.* Sixth edition. 12mo. Cloth, $1.50."
+      "text": "*THE LILAC SUNBONNET.* Sixth edition. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-69",
@@ -3498,12 +3498,12 @@
     {
       "id": "s9-72",
       "sceneId": "s9",
-      "text": "BY A. Conan Doyle."
+      "text": "By a. Conan Doyle."
     },
     {
       "id": "s9-73",
       "sceneId": "s9",
-      "text": "*THE Exploits OF Brigadier Gerard. A Romance of the Life of a Typical Napoleonic Soldier.* Illustrated. 12mo. Cloth, $1.50."
+      "text": "*THE EXPLOITS OF BRIGADIER GERARD. A Romance of the Life of a Typical Napoleonic Soldier.* Illustrated. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-74",
@@ -3518,7 +3518,7 @@
     {
       "id": "s9-76",
       "sceneId": "s9",
-      "text": "*THE Stark Munro Letters.* Being a Series of Twelve Letters written by Stark Munro, M. B., to his friend and former fellow-student, Herbert Swanborough, of Lowell, Massachusetts, during the years 1881-1884. Illustrated. 12mo. Buckram, $1.50."
+      "text": "*THE STARK MUNRO LETTERS.* Being a Series of Twelve Letters written by STARK MUNRO, M. B., to his friend and former fellow-student, Herbert Swanborough, of Lowell, Massachusetts, during the years 1881-1884. Illustrated. 12mo. Buckram, $1.50."
     },
     {
       "id": "s9-77",
@@ -3558,7 +3558,7 @@
     {
       "id": "s9-84",
       "sceneId": "s9",
-      "text": "*Round THE RED Lamp.* Being Facts and Fancies of Medical Life. 12mo. Cloth, $1.50."
+      "text": "*Round the Red Lamp.* Being Facts and Fancies of Medical Life. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-85",
@@ -3578,12 +3578,12 @@
     {
       "id": "s9-88",
       "sceneId": "s9",
-      "text": "Miss F. F. Montrésor'S Books."
+      "text": "Miss F. F. Montrésor's Books."
     },
     {
       "id": "s9-89",
       "sceneId": "s9",
-      "text": "*False Coin OR True?* 12mo. Cloth, $1.25."
+      "text": "*False Coin or True?* 12mo. Cloth, $1.25."
     },
     {
       "id": "s9-90",
@@ -3608,7 +3608,7 @@
     {
       "id": "s9-94",
       "sceneId": "s9",
-      "text": "*THE ONE WHO Looked ON.* 12mo. Cloth, $1.25."
+      "text": "*The One Who Looked on.* 12mo. Cloth, $1.25."
     },
     {
       "id": "s9-95",
@@ -3633,7 +3633,7 @@
     {
       "id": "s9-99",
       "sceneId": "s9",
-      "text": "*Into THE High Ways AND Hedges.* 12mo. Paper, 50 cents; cloth, $1.00."
+      "text": "*INTO THE HIGH WAYS AND HEDGES.* 12mo. Paper, 50 cents; cloth, $1.00."
     },
     {
       "id": "s9-100",
@@ -3658,7 +3658,7 @@
     {
       "id": "s9-104",
       "sceneId": "s9",
-      "text": "*THE Chronicles OF Count Antonio.* By Anthony Hope, author of \"The God in the Car,\" \"The Prisoner of Zenda,\" etc. With photogravure Frontispiece by S. W. Van Schaick. Third edition. 12mo. Cloth, $1.50."
+      "text": "*THE CHRONICLES OF COUNT ANTONIO.* By ANTHONY HOPE, author of \"The God in the Car,\" \"The Prisoner of Zenda,\" etc. With photogravure Frontispiece by S. W. Van Schaick. Third edition. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-105",
@@ -3713,12 +3713,12 @@
     {
       "id": "s9-115",
       "sceneId": "s9",
-      "text": "Novels BY Hall Caine."
+      "text": "Novels by Hall Caine."
     },
     {
       "id": "s9-116",
       "sceneId": "s9",
-      "text": "*THE Manxman.* 12mo. Cloth, $1.50."
+      "text": "*The Manxman.* 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-117",
@@ -3738,7 +3738,7 @@
     {
       "id": "s9-120",
       "sceneId": "s9",
-      "text": "*THE Deemster. A Romance of the Isle of Man.* 12mo. Cloth, $1.50."
+      "text": "*The Deemster. A Romance of the Isle of Man.* 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-121",
@@ -3763,7 +3763,7 @@
     {
       "id": "s9-125",
       "sceneId": "s9",
-      "text": "*THE Bondman.* New edition. 12mo. Cloth, $1.50."
+      "text": "*THE BONDMAN.* New edition. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-126",
@@ -3773,7 +3773,7 @@
     {
       "id": "s9-127",
       "sceneId": "s9",
-      "text": "*Capt'N Davy'S Honeymoon. A Manx Yarn.* 12mo. Paper, 50 cents; cloth, $1.00."
+      "text": "*CAPT'N DAVY'S HONEYMOON. A Manx Yarn.* 12mo. Paper, 50 cents; cloth, $1.00."
     },
     {
       "id": "s9-128",
@@ -3793,7 +3793,7 @@
     {
       "id": "s9-131",
       "sceneId": "s9",
-      "text": "*HIS Honour, AND A Lady.* Illustrated. 12mo. Cloth, $1.50."
+      "text": "*His Honour, and a Lady.* Illustrated. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-132",
@@ -3803,7 +3803,7 @@
     {
       "id": "s9-133",
       "sceneId": "s9",
-      "text": "*THE Story OF Sonny Sahib.* Illustrated. 12mo. Cloth, $1.00"
+      "text": "*The Story of Sonny Sahib.* Illustrated. 12mo. Cloth, $1.00"
     },
     {
       "id": "s9-134",
@@ -3813,7 +3813,7 @@
     {
       "id": "s9-135",
       "sceneId": "s9",
-      "text": "*Vernon'S Aunt.* With many Illustrations. 12mo. Cloth, $1.25."
+      "text": "*VERNON'S AUNT.* With many Illustrations. 12mo. Cloth, $1.25."
     },
     {
       "id": "s9-136",
@@ -3823,7 +3823,7 @@
     {
       "id": "s9-137",
       "sceneId": "s9",
-      "text": "*A Daughter OF TO-DAY.* A Novel. 12mo. Cloth, $1.50."
+      "text": "*A Daughter of to-Day.* A Novel. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-138",
@@ -3843,7 +3843,7 @@
     {
       "id": "s9-141",
       "sceneId": "s9",
-      "text": "*AN American Girl IN London.* With 80 Illustrations by F. H. Townsend. 12mo. Paper, 75 cents; cloth, $1.50."
+      "text": "*AN AMERICAN GIRL IN LONDON.* With 80 Illustrations by F. H. TOWNSEND. 12mo. Paper, 75 cents; cloth, $1.50."
     },
     {
       "id": "s9-142",
@@ -3853,7 +3853,7 @@
     {
       "id": "s9-143",
       "sceneId": "s9",
-      "text": "*THE Simple Adventures OF A Memsahib.* With 37 Illustrations by *F. H. Townsend*. 12mo. Cloth, $1.50."
+      "text": "*The Simple Adventures of a Memsahib.* With 37 Illustrations by *F. H. Townsend*. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-144",
@@ -3868,7 +3868,7 @@
     {
       "id": "s9-146",
       "sceneId": "s9",
-      "text": "*THE Greater Glory. A Story of High Life.* By Maarten Maartens, author of \"God's Fool,\" \"Joost Avelingh,\" etc. 12mo. Cloth, $1.50."
+      "text": "*THE GREATER GLORY. A Story of High Life.* By MAARTEN MAARTENS, author of \"God's Fool,\" \"Joost Avelingh,\" etc. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-147",
@@ -3888,7 +3888,7 @@
     {
       "id": "s9-150",
       "sceneId": "s9",
-      "text": "*GOD'S Fool.* By Maarten Maartens. 12mo. Cloth, $1.50."
+      "text": "*God's Fool.* By Maarten Maartens. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-151",
@@ -3963,7 +3963,7 @@
     {
       "id": "s9-165",
       "sceneId": "s9",
-      "text": "*A Journey IN Other Worlds. A Romance of the Future.* By John Jacob Astor. With 9 full-page Illustrations by Dan Beard. 12mo. Cloth, $1.50."
+      "text": "*A JOURNEY IN OTHER WORLDS. A Romance of the Future.* By JOHN JACOB ASTOR. With 9 full-page Illustrations by Dan Beard. 12mo. Cloth, $1.50."
     },
     {
       "id": "s9-166",
@@ -4023,12 +4023,12 @@
     {
       "id": "s9-177",
       "sceneId": "s9",
-      "text": "*NOW Ready.*"
+      "text": "*Now Ready.*"
     },
     {
       "id": "s9-178",
       "sceneId": "s9",
-      "text": "*THE Story OF THE Indian.* By George Bird Grinnell, author of \"Pawnee Hero Stories,\" \"Blackfoot Lodge Tales,\" etc. 12mo. Cloth. Illustrated. $1.50."
+      "text": "*THE STORY OF THE INDIAN.* By GEORGE BIRD GRINNELL, author of \"Pawnee Hero Stories,\" \"Blackfoot Lodge Tales,\" etc. 12mo. Cloth. Illustrated. $1.50."
     },
     {
       "id": "s9-179",
@@ -4058,7 +4058,7 @@
     {
       "id": "s9-184",
       "sceneId": "s9",
-      "text": "*IN Preparation.*"
+      "text": "*In Preparation.*"
     },
     {
       "id": "s9-185",
@@ -4068,7 +4068,7 @@
     {
       "id": "s9-186",
       "sceneId": "s9",
-      "text": "New York: D. Appleton & CO., 72 Fifth Avenue."
+      "text": "New York: D. Appleton & Co., 72 Fifth Avenue."
     }
   ]
 }

@@ -96,7 +96,7 @@
       "id": "s12",
       "title": "Part I",
       "place": "Part I",
-      "reentry": "Book THE First.",
+      "reentry": "Book the First.",
       "prompt": "A word from this stretch."
     },
     {
@@ -222,7 +222,7 @@
       "id": "s30",
       "title": "Chapter XI",
       "place": "Chapter XI",
-      "reentry": "THE Caskets.",
+      "reentry": "The Caskets.",
       "prompt": "A word from this stretch."
     },
     {
@@ -264,7 +264,7 @@
       "id": "s36",
       "title": "Chapter XVII",
       "place": "Chapter XVII",
-      "reentry": "THE Last Resource.",
+      "reentry": "The Last Resource.",
       "prompt": "A word from this stretch."
     },
     {
@@ -285,7 +285,7 @@
       "id": "s39",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "THE Effect OF Snow.",
+      "reentry": "The Effect of Snow.",
       "prompt": "A word from this stretch."
     },
     {
@@ -313,14 +313,14 @@
       "id": "s43",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "THE Awaking.",
+      "reentry": "The Awaking.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s44",
       "title": "Part II",
       "place": "Part II",
-      "reentry": "Book THE First.",
+      "reentry": "Book the First.",
       "prompt": "A word from this stretch."
     },
     {
@@ -397,7 +397,7 @@
       "id": "s55",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "THE Duchess Josiana.",
+      "reentry": "The Duchess Josiana.",
       "prompt": "A word from this stretch."
     },
     {
@@ -572,7 +572,7 @@
       "id": "s80",
       "title": "Chapter X",
       "place": "Chapter X",
-      "reentry": "An Outsider’S View of Men and Things.",
+      "reentry": "An Outsider’s View of Men and Things.",
       "prompt": "A word from this stretch."
     },
     {
@@ -593,7 +593,7 @@
       "id": "s83",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "THE Tadcaster INN.",
+      "reentry": "The Tadcaster Inn.",
       "prompt": "A word from this stretch."
     },
     {
@@ -621,7 +621,7 @@
       "id": "s87",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "THE Wapentake.",
+      "reentry": "The Wapentake.",
       "prompt": "A word from this stretch."
     },
     {
@@ -663,7 +663,7 @@
       "id": "s93",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "From GAY TO Grave.",
+      "reentry": "From Gay to Grave.",
       "prompt": "A word from this stretch."
     },
     {
@@ -726,7 +726,7 @@
       "id": "s102",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "AN Awakening.",
+      "reentry": "An Awakening.",
       "prompt": "A word from this stretch."
     },
     {
@@ -754,7 +754,7 @@
       "id": "s106",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "What HE DID.",
+      "reentry": "What He Did.",
       "prompt": "A word from this stretch."
     },
     {
@@ -782,7 +782,7 @@
       "id": "s110",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "THE Awakening.",
+      "reentry": "The Awakening.",
       "prompt": "A word from this stretch."
     },
     {
@@ -831,14 +831,14 @@
       "id": "s117",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "THE OLD Hall.",
+      "reentry": "The Old Hall.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s118",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "THE OLD Chamber.",
+      "reentry": "The Old Chamber.",
       "prompt": "A word from this stretch."
     },
     {
@@ -880,7 +880,7 @@
       "id": "s124",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "THE Dregs.",
+      "reentry": "The Dregs.",
       "prompt": "A word from this stretch."
     },
     {
@@ -908,7 +908,7 @@
       "id": "s128",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "NAY; ON High!",
+      "reentry": "Nay; on High!",
       "prompt": "A word from this stretch."
     }
   ],
@@ -1571,7 +1571,7 @@
     {
       "id": "s5-9",
       "sceneId": "s5",
-      "text": "THE Comprachicos."
+      "text": "The Comprachicos."
     },
     {
       "id": "s6-0",
@@ -1826,7 +1826,7 @@
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "Book THE First."
+      "text": "Book the First."
     },
     {
       "id": "s12-1",
@@ -2751,12 +2751,12 @@
     {
       "id": "s19-20",
       "sceneId": "s19",
-      "text": "Book THE Second."
+      "text": "Book the Second."
     },
     {
       "id": "s19-21",
       "sceneId": "s19",
-      "text": "*THE Hooker AT SEA*."
+      "text": "*The Hooker at Sea*."
     },
     {
       "id": "s20-0",
@@ -4731,7 +4731,7 @@
     {
       "id": "s30-0",
       "sceneId": "s30",
-      "text": "THE Caskets."
+      "text": "The Caskets."
     },
     {
       "id": "s30-1",
@@ -5346,7 +5346,7 @@
     {
       "id": "s36-0",
       "sceneId": "s36",
-      "text": "THE Last Resource."
+      "text": "The Last Resource."
     },
     {
       "id": "s36-1",
@@ -5841,7 +5841,7 @@
     {
       "id": "s37-49",
       "sceneId": "s37",
-      "text": "The southern Basque signed, AVE Maria: *Robber*."
+      "text": "The southern Basque signed, AVE MARIA: *Robber*."
     },
     {
       "id": "s37-50",
@@ -6196,7 +6196,7 @@
     {
       "id": "s37-120",
       "sceneId": "s37",
-      "text": "Book THE Third."
+      "text": "Book the Third."
     },
     {
       "id": "s37-121",
@@ -6316,7 +6316,7 @@
     {
       "id": "s39-0",
       "sceneId": "s39",
-      "text": "THE Effect OF Snow."
+      "text": "The Effect of Snow."
     },
     {
       "id": "s39-1",
@@ -7631,7 +7631,7 @@
     {
       "id": "s43-0",
       "sceneId": "s43",
-      "text": "THE Awaking."
+      "text": "The Awaking."
     },
     {
       "id": "s43-1",
@@ -7901,7 +7901,7 @@
     {
       "id": "s44-0",
       "sceneId": "s44",
-      "text": "Book THE First."
+      "text": "Book the First."
     },
     {
       "id": "s44-1",
@@ -8166,7 +8166,7 @@
     {
       "id": "s55-0",
       "sceneId": "s55",
-      "text": "THE Duchess Josiana."
+      "text": "The Duchess Josiana."
     },
     {
       "id": "s55-1",
@@ -10381,7 +10381,7 @@
     {
       "id": "s70-116",
       "sceneId": "s70",
-      "text": "Book THE Second."
+      "text": "Book the Second."
     },
     {
       "id": "s70-117",
@@ -11551,7 +11551,7 @@
     {
       "id": "s80-0",
       "sceneId": "s80",
-      "text": "An Outsider’S View of Men and Things."
+      "text": "An Outsider’s View of Men and Things."
     },
     {
       "id": "s80-1",
@@ -11711,7 +11711,7 @@
     {
       "id": "s82-7",
       "sceneId": "s82",
-      "text": "“Here is to be seen Gwynplaine, deserted at the age of ten, on the night of the 29th of January, 1690, by the villainous Comprachicos, on the coast of Portland. The little boy has grown up, and is called now, THE Laughing MAN.”"
+      "text": "“Here is to be seen Gwynplaine, deserted at the age of ten, on the night of the 29th of January, 1690, by the villainous Comprachicos, on the coast of Portland. The little boy has grown up, and is called now, THE LAUGHING MAN.”"
     },
     {
       "id": "s82-8",
@@ -11781,7 +11781,7 @@
     {
       "id": "s82-21",
       "sceneId": "s82",
-      "text": "Book THE Third."
+      "text": "Book the Third."
     },
     {
       "id": "s82-22",
@@ -11791,7 +11791,7 @@
     {
       "id": "s83-0",
       "sceneId": "s83",
-      "text": "THE Tadcaster INN."
+      "text": "The Tadcaster Inn."
     },
     {
       "id": "s83-1",
@@ -12286,7 +12286,7 @@
     {
       "id": "s87-0",
       "sceneId": "s87",
-      "text": "THE Wapentake."
+      "text": "The Wapentake."
     },
     {
       "id": "s87-1",
@@ -14146,7 +14146,7 @@
     {
       "id": "s91-57",
       "sceneId": "s91",
-      "text": "Book THE Fourth."
+      "text": "Book the Fourth."
     },
     {
       "id": "s91-58",
@@ -14346,7 +14346,7 @@
     {
       "id": "s93-0",
       "sceneId": "s93",
-      "text": "From GAY TO Grave."
+      "text": "From Gay to Grave."
     },
     {
       "id": "s93-1",
@@ -16036,7 +16036,7 @@
     {
       "id": "s99-161",
       "sceneId": "s99",
-      "text": "Book THE Fifth."
+      "text": "Book the Fifth."
     },
     {
       "id": "s99-162",
@@ -16821,7 +16821,7 @@
     {
       "id": "s102-0",
       "sceneId": "s102",
-      "text": "AN Awakening."
+      "text": "An Awakening."
     },
     {
       "id": "s102-1",
@@ -17351,7 +17351,7 @@
     {
       "id": "s104-54",
       "sceneId": "s104",
-      "text": "Book THE Sixth."
+      "text": "Book the Sixth."
     },
     {
       "id": "s104-55",
@@ -17391,7 +17391,7 @@
     {
       "id": "s106-0",
       "sceneId": "s106",
-      "text": "What HE DID."
+      "text": "What He Did."
     },
     {
       "id": "s106-1",
@@ -19466,17 +19466,17 @@
     {
       "id": "s109-140",
       "sceneId": "s109",
-      "text": "Book THE Seventh."
+      "text": "Book the Seventh."
     },
     {
       "id": "s109-141",
       "sceneId": "s109",
-      "text": "*THE Titaness.*"
+      "text": "*The Titaness.*"
     },
     {
       "id": "s110-0",
       "sceneId": "s110",
-      "text": "THE Awakening."
+      "text": "The Awakening."
     },
     {
       "id": "s110-1",
@@ -20316,7 +20316,7 @@
     {
       "id": "s114-38",
       "sceneId": "s114",
-      "text": "Book THE Eighth."
+      "text": "Book the Eighth."
     },
     {
       "id": "s114-39",
@@ -20931,7 +20931,7 @@
     {
       "id": "s117-0",
       "sceneId": "s117",
-      "text": "THE OLD Hall."
+      "text": "The Old Hall."
     },
     {
       "id": "s117-1",
@@ -21036,7 +21036,7 @@
     {
       "id": "s118-0",
       "sceneId": "s118",
-      "text": "THE OLD Chamber."
+      "text": "The Old Chamber."
     },
     {
       "id": "s118-1",
@@ -22671,12 +22671,12 @@
     {
       "id": "s122-27",
       "sceneId": "s122",
-      "text": "Book THE Ninth."
+      "text": "Book the Ninth."
     },
     {
       "id": "s122-28",
       "sceneId": "s122",
-      "text": "*IN Ruins.*"
+      "text": "*In Ruins.*"
     },
     {
       "id": "s123-0",
@@ -22846,7 +22846,7 @@
     {
       "id": "s124-0",
       "sceneId": "s124",
-      "text": "THE Dregs."
+      "text": "The Dregs."
     },
     {
       "id": "s124-1",
@@ -24046,7 +24046,7 @@
     {
       "id": "s128-0",
       "sceneId": "s128",
-      "text": "NAY; ON High!"
+      "text": "Nay; on High!"
     },
     {
       "id": "s128-1",

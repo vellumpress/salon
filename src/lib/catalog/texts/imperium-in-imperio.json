@@ -26,14 +26,14 @@
       "id": "s2",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "THE School.",
+      "reentry": "The School.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "THE Parson'S Advice.",
+      "reentry": "The Parson's Advice.",
       "prompt": "A word from this stretch."
     },
     {
@@ -75,21 +75,21 @@
       "id": "s9",
       "title": "Chapter IX",
       "place": "Chapter IX",
-      "reentry": "Love AND Politics.",
+      "reentry": "Love and Politics.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
       "title": "Chapter X",
       "place": "Chapter X",
-      "reentry": "Cupid Again AT Work.",
+      "reentry": "Cupid Again at Work.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
       "title": "Chapter XI",
       "place": "Chapter XI",
-      "reentry": "NO Befitting Name.",
+      "reentry": "No Befitting Name.",
       "prompt": "A word from this stretch."
     },
     {
@@ -110,7 +110,7 @@
       "id": "s14",
       "title": "Chapter XIV",
       "place": "Chapter XIV",
-      "reentry": "Married AND YET NOT Married. (Continued.)",
+      "reentry": "Married and Yet Not Married. (Continued.)",
       "prompt": "A word from this stretch."
     },
     {
@@ -138,14 +138,14 @@
       "id": "s18",
       "title": "Chapter XVIII",
       "place": "Chapter XVIII",
-      "reentry": "THE Storm'S Master.",
+      "reentry": "The Storm's Master.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s19",
       "title": "Chapter XIX",
       "place": "Chapter XIX",
-      "reentry": "THE Parting OF Ways.",
+      "reentry": "The Parting of Ways.",
       "prompt": "A word from this stretch."
     },
     {
@@ -210,7 +210,7 @@
     {
       "id": "s0-10",
       "sceneId": "s0",
-      "text": "Imperium IN Imperio"
+      "text": "Imperium in Imperio"
     },
     {
       "id": "s1-0",
@@ -295,7 +295,7 @@
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "THE School."
+      "text": "The School."
     },
     {
       "id": "s2-1",
@@ -475,7 +475,7 @@
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "THE Parson'S Advice."
+      "text": "The Parson's Advice."
     },
     {
       "id": "s3-1",
@@ -1735,7 +1735,7 @@
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "Love AND Politics."
+      "text": "Love and Politics."
     },
     {
       "id": "s9-1",
@@ -2070,7 +2070,7 @@
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "Cupid Again AT Work."
+      "text": "Cupid Again at Work."
     },
     {
       "id": "s10-1",
@@ -2295,7 +2295,7 @@
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "NO Befitting Name."
+      "text": "No Befitting Name."
     },
     {
       "id": "s11-1",
@@ -3020,7 +3020,7 @@
     {
       "id": "s14-0",
       "sceneId": "s14",
-      "text": "Married AND YET NOT Married. (Continued.)"
+      "text": "Married and Yet Not Married. (Continued.)"
     },
     {
       "id": "s14-1",
@@ -3650,7 +3650,7 @@
     {
       "id": "s17-37",
       "sceneId": "s17",
-      "text": "OUR Civil Rights."
+      "text": "Our Civil Rights."
     },
     {
       "id": "s17-38",
@@ -3730,7 +3730,7 @@
     {
       "id": "s17-53",
       "sceneId": "s17",
-      "text": "Courts OF Justice."
+      "text": "Courts of Justice."
     },
     {
       "id": "s17-54",
@@ -3885,7 +3885,7 @@
     {
       "id": "s18-0",
       "sceneId": "s18",
-      "text": "THE Storm'S Master."
+      "text": "The Storm's Master."
     },
     {
       "id": "s18-1",
@@ -4065,7 +4065,7 @@
     {
       "id": "s18-36",
       "sceneId": "s18",
-      "text": "THE Labor Question."
+      "text": "The Labor Question."
     },
     {
       "id": "s18-37",
@@ -4085,7 +4085,7 @@
     {
       "id": "s18-40",
       "sceneId": "s18",
-      "text": "OUR Civil Rights."
+      "text": "Our Civil Rights."
     },
     {
       "id": "s18-41",
@@ -4125,7 +4125,7 @@
     {
       "id": "s18-48",
       "sceneId": "s18",
-      "text": "Courts OF Justice."
+      "text": "Courts of Justice."
     },
     {
       "id": "s18-49",
@@ -4330,7 +4330,7 @@
     {
       "id": "s19-0",
       "sceneId": "s19",
-      "text": "THE Parting OF Ways."
+      "text": "The Parting of Ways."
     },
     {
       "id": "s19-1",

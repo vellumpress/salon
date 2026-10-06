@@ -19,7 +19,7 @@
       "id": "s1",
       "title": "To",
       "place": "To",
-      "reentry": "MY Wife",
+      "reentry": "My Wife",
       "prompt": "What does the poem hold?"
     },
     {
@@ -432,7 +432,7 @@
       "id": "s60",
       "title": "Auguries, By Laurence Binyon",
       "place": "Auguries, By Laurence Binyon",
-      "reentry": "THE Bird OF Time, by Sarojini Naidu. With portrait of Author, and",
+      "reentry": "The Bird of Time, by Sarojini Naidu. With portrait of Author, and",
       "prompt": "What does the poem hold?"
     },
     {
@@ -462,7 +462,7 @@
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "MY Wife"
+      "text": "My Wife"
     },
     {
       "id": "s1-1",
@@ -1182,7 +1182,7 @@
     {
       "id": "s60-0",
       "sceneId": "s60",
-      "text": "THE Bird OF Time, by Sarojini Naidu. With portrait of Author, and"
+      "text": "The Bird of Time, by Sarojini Naidu. With portrait of Author, and"
     },
     {
       "id": "s61-0",
