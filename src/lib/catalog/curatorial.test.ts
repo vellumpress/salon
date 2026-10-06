@@ -1751,7 +1751,7 @@ test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "songs-from-vagabondia": { opening: "VAGABONDIA.", breaths: 306, scenes: 7, gutenberg: 18238 },
     "songs-of-childhood": { opening: "As I lay awake in the white moonlight, I heard a sweet singing in the wood-- 'Out of bed, Sleepyhead", breaths: 332, scenes: 43, gutenberg: 23545 },
     "ten-minute-stories": { opening: "At the moorland cross-roads Martin stood examining the sign-post for several minutes in some bewilde", breaths: 833, scenes: 28, gutenberg: 72928 },
-    "the-everlasting-mercy": { opening: "Produced by Al Haines.", breaths: 210, scenes: 1, gutenberg: 41467 },
+    "the-everlasting-mercy": { opening: "THE EVERLASTING MERCY", breaths: 128, scenes: 1, gutenberg: 41467 },
     "the-golden-bowl": { opening: "The Prince had always liked his London, when it had come to him; he was one of the modern Romans who", breaths: 2497, scenes: 42, gutenberg: 4264 },
     "the-rainbow": { opening: "Chapter I. HOW TOM BRANGWEN MARRIED A POLISH LADY", breaths: 4518, scenes: 101, gutenberg: 28948 },
     "the-sword-of-welleran": { opening: "Where the great plain of Tarphet runs up, as the sea in estuaries, among the Cyresian mountains, the", breaths: 434, scenes: 11, gutenberg: 10806 },
@@ -1803,7 +1803,7 @@ test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Fe
 test("BATCH-5 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
   const expect = {
     "a-changed-man": { opening: "A Committee Man of 'The Terror' Master John Horseleigh, Knight The Duke's Reappearance A Mere Interlude", breaths: 1806, scenes: 11, gutenberg: 3058 },
-    "ballads-of-a-bohemian": { opening: "Alas! upon some starry height, The Gods of Excellence to please, This hand of mine will never smite The Harp of High Ser", breaths: 732, scenes: 67, gutenberg: 995 },
+    "ballads-of-a-bohemian": { opening: "Alas! upon some starry height, The Gods of Excellence to please, This hand of mine will never smite The Harp of High Ser", breaths: 715, scenes: 67, gutenberg: 995 },
     "ballads-of-a-cheechako": { opening: "My rhymes are rough, and often in my rhyming I've drifted, silver-sailed, on seas of dream, Hearing afar the bells of El", breaths: 301, scenes: 20, gutenberg: 259 },
     "crucial-instances": { opening: "Have you ever questioned the long shuttered front of an old Italian house, that motionless mask, smooth, mute, equivocal", breaths: 1090, scenes: 7, gutenberg: 7516 },
     "filipino-popular-tales": { opening: "There was once an old woman who had an only son named Suan.", breaths: 1868, scenes: 82, gutenberg: 8299 },
@@ -1884,7 +1884,7 @@ test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "the-patrician": { opening: "Light, entering the vast room—a room so high that its carved ceiling refused itself to exact scrutin", breaths: 2176, scenes: 51, gutenberg: 2774 },
     "the-price-of-love": { opening: "In the evening dimness of old Mrs. Maldon's sitting-room stood the youthful virgin, Rachel Louisa Fl", breaths: 2475, scenes: 19, gutenberg: 12912 },
     "the-private-papers-of-henry-ryecroft": { opening: "I.", breaths: 480, scenes: 4, gutenberg: 1463 },
-    "unhuman-tour-kusamakura": { opening: "Climbing the mountain, I was caught up into a train of thought.", breaths: 990, scenes: 13, gutenberg: 73131 },
+    "unhuman-tour-kusamakura": { opening: "Climbing the mountain, I was caught up into a train of thought.", breaths: 972, scenes: 13, gutenberg: 73131 },
   } as const;
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
   const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
@@ -2604,7 +2604,7 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     "tristana": { opening: "Resignada en absoluto no, porque más de una vez, en aquel año que precedió a lo que se va a referir, la linda figurilla ", breaths: 627, scenes: 28, gutenberg: 66979, scene: "Chapter II · Resignada en absoluto no, porque más de una vez, en aquel año que" },
     "niels": { opening: "She had the black, luminous eyes of the Blid family with delicate, straight eyebrows; she had their boldly shaped nose, ", breaths: 933, scenes: 14, gutenberg: 55389, scene: "Chapter I" },
     "amor-de-perdicao": { opening: "Domingos José Correia Botelho de Mesquita e Menezes, fidalgo de linhagem, e um dos mais antigos solarengos de Villa Real", breaths: 1569, scenes: 19, gutenberg: 16425, scene: "Part 1 · Chapter I" },
-    "das-stunden-buch": { opening: "Produced by Markus Brenner and the Online Distributed Proofreading Team at http://www.pgdp.net", breaths: 430, scenes: 309, gutenberg: 24288, scene: "Book I · Produced by Markus Brenner and the Online Distributed" },
+    "das-stunden-buch": { opening: "Das Stunden-Buch", breaths: 429, scenes: 309, gutenberg: 24288, scene: "Book I · Das Stunden-Buch" },
     "misericordia": { opening: "Dos caras, como algunas personas, tiene la parroquia de San Sebastián... mejor será decir la iglesia... dos caras que se", breaths: 1500, scenes: 40, gutenberg: 21831, scene: "Chapter I" },
     "the-mandarin": { opening: "Decorreu um mez.", breaths: 359, scenes: 7, gutenberg: 16384, scene: "Chapter II" },
     "policarpo": { opening: "Como de habito, Polycarpo Quaresma, mais conhecido por major Quaresma, bateu em casa ás 4 e 15 da tarde. Havia mais de v", breaths: 1966, scenes: 15, gutenberg: 67535, scene: "Part I · Chapter I · A Lição De Violão" },
@@ -2678,8 +2678,8 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "black-spirits-and-white-a-book-of-ghost-stories": {
       opening:
         "When in May, 1886, I found myself at last in Paris, I naturally determined to throw myself on the charity of an old chum of mine, Eugene Marie d'Ardeche, who had forsaken Boston a year or more ago on receiving word of th",
-      breaths: 1300,
-      scenes: 40,
+      breaths: 1058,
+      scenes: 30,
       gutenberg: 26687,
     },
     "fir-flower-tablets": {
@@ -2733,7 +2733,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "the-mystery-of-choice": {
       opening: "The Purple Emperor watched me in silence.",
-      breaths: 3862,
+      breaths: 3855,
       scenes: 36,
       gutenberg: 46581,
     },
@@ -2809,7 +2809,7 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "essays-and-soliloquies": {
       opening: "No writer ever stood less in need of an introduction than Miguel de Unamuno, for probably none ever revealed himself so naturally and so nakedly in his writings",
-      breaths: 752,
+      breaths: 732,
       scenes: 21,
       gutenberg: 71260,
     },
@@ -2845,7 +2845,7 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "stories-from-tagore": {
       opening: "My five years' old daughter Mini cannot live without chattering. I really believe that in all her life she has not wasted a minute in silence. Her mother is oft",
-      breaths: 1031,
+      breaths: 1030,
       scenes: 10,
       gutenberg: 33525,
     },
@@ -4601,7 +4601,7 @@ test("Mira Fri ~10:04 CLEAR is Next lead Cabala, then Reuben and Sun, with Troop
     "reuben-sachs": {
       gutenberg: 74419,
       year: 1888,
-      breaths: 1670,
+      breaths: 1669,
       opening: "Reuben Sachs was the pride of his family.",
       stop: "must marry money.",
     },
@@ -6003,7 +6003,7 @@ test("Mira Sat AFTERNOON CLEAR is Next lead Hill of Dreams, then African Farm, T
   ) as PackedSit;
   assert.equal(imperialist.breaths[0]?.text.trim().split(/\s+/).length, 585);
   assert.match(SHELF.find((item) => item.id === "the-imperialist")?.intro ?? "", /585/);
-  assert.match(SHELF.find((item) => item.id === "the-imperialist")?.intro ?? "", /phone-hard/);
+  assert.match(SHELF.find((item) => item.id === "the-imperialist")?.intro ?? "", /first breath is \d+ words, left as printed\./);
   assert.match(SHELF.find((item) => item.id === "kim")?.intro ?? "", /period racial language, left as printed/);
   assert.match(
     imperialist.breaths.map((breath) => breath.text).join("\n") +
@@ -6202,7 +6202,7 @@ test("Mira Sat EVENING CLEAR is Next lead Road to the Open, then Calvary, Anna, 
   ) as PackedSit;
   assert.equal(anna.breaths[0]?.text.trim().split(/\s+/).length, 371);
   assert.match(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /371/);
-  assert.match(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /phone-hard/);
+  assert.match(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /first breath is \d+ words, left as printed\./);
   assert.doesNotMatch(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /not London/);
   const calvaryOpen = JSON.parse(
     readFileSync(new URL("./openings/calvary.json", import.meta.url), "utf8"),
@@ -6518,7 +6518,7 @@ test("Mira Sun AM CLEAR is Next lead Marrow, then Zuleika, Eugenie, and Seven Br
   assert.equal(curatorialTrack("laos-folk-lore"), "later");
   const priorLaos = SHELF.find((item) => item.id === "laos-folk-lore-of-farther-india");
   assert.equal(priorLaos?.opening, "Tales of the Jungle");
-  assert.equal(priorLaos?.breaths, 1181);
+  assert.equal(priorLaos?.breaths, 1113);
 
   const lanes = {
     "the-marrow-of-tradition": "next",
@@ -7532,7 +7532,7 @@ test("Mira POST-#172 CLEAR is Next lead Daisy Miller, then South Wind, The Villa
   assert.equal(berniceFull.scenes[0]?.title, "Bernice Bobs Her Hair");
   assert.ok(berniceFull.scenes.some((scene) => scene.title === "The Offshore Pirate"));
   assert.match(SHELF.find((item) => item.id === "flappers-and-philosophers")?.intro ?? "", /just Bernice Bobs Her Hair/);
-  assert.match(SHELF.find((item) => item.id === "flappers-and-philosophers")?.intro ?? "", /One tale this sit/);
+  assert.match(SHELF.find((item) => item.id === "flappers-and-philosophers")?.intro ?? "", /The other tales follow in the book\./);
   assert.doesNotMatch(SHELF.find((item) => item.id === "flappers-and-philosophers")?.intro ?? "", /Launch shelf is no/);
 });
 
@@ -7756,7 +7756,7 @@ test("Mira MIDDAY CLEAR is Next lead Candide, then Iola Leroy, Esther Waters, an
   assert.match(spiderFull.scenes[0]?.title ?? "", /Spider Tales/);
   assert.ok(spiderFull.scenes.some((scene) => /How Wisdom Became/.test(scene.title ?? "")));
   assert.match(SHELF.find((item) => item.id === "west-african-folk-tales")?.intro ?? "", /just How We Got the Name ‘Spider Tales’|just How We Got the Name 'Spider Tales'/);
-  assert.match(SHELF.find((item) => item.id === "west-african-folk-tales")?.intro ?? "", /One tale this sit/);
+  assert.match(SHELF.find((item) => item.id === "west-african-folk-tales")?.intro ?? "", /The other tales follow in the book\./);
   assert.doesNotMatch(SHELF.find((item) => item.id === "west-african-folk-tales")?.intro ?? "", /Launch shelf is no/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "west-african-folk-tales")?.intro ?? "", /not Caribbean Anansi/);
 });
@@ -7985,7 +7985,7 @@ test("Mira POST-#174 CLEAR is Next lead Erewhon, then Ann Veronica, The Great Hu
   assert.match(frost.scenes[0]?.title ?? "", /Law of Life/);
   assert.ok(frost.scenes.some((scene) => /In the Forests of the North/.test(scene.title ?? "")));
   assert.match(SHELF.find((item) => item.id === "children-of-the-frost")?.intro ?? "", /just The Law of Life/);
-  assert.match(SHELF.find((item) => item.id === "children-of-the-frost")?.intro ?? "", /One tale this sit/);
+  assert.match(SHELF.find((item) => item.id === "children-of-the-frost")?.intro ?? "", /The other tales follow in the book\./);
 });
 
 test("Mira POST-#175 CLEAR is Next lead The Poison Tree, then Cosmopolis, The Woman Who Did, and Billy Budd, with A Malay Romance on Rituals", () => {
@@ -8431,7 +8431,7 @@ test("Mira POST-#176 CLEAR is Next lead Cousin Betty, then Sorrows of Satan, Kin
   assert.match(SHELF.find((item) => item.id === "the-king-of-schnorrers")?.intro ?? "", /King only/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-king-of-schnorrers")?.intro ?? "", /Pale Bontzye/);
   const grotesques = SHELF.find((item) => item.id === "the-king-of-schnorrers-grotesques-and-fantasies");
-  assert.equal(grotesques?.breaths, 6705);
+  assert.equal(grotesques?.breaths, 6611);
   assert.equal(grotesques?.title, "The King of Schnorrers: Grotesques and Fantasies");
 
   const hania = JSON.parse(
@@ -10086,7 +10086,7 @@ test("Mira POST-#183 CLEAR is Next lead Sister Carrie, then Antic Hay, A spring-
   assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /just The Hungry Stones/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /Poison Tree/);
   assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /several hands/);
-  assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /phone-hard/);
+  assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /first breath is \d+ words, left as printed\./);
   assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /277/);
   const stonesOpen = JSON.parse(
     readFileSync(new URL("./openings/hungry-stones.json", import.meta.url), "utf8"),
@@ -10308,7 +10308,7 @@ test("Mira POST-#184 CLEAR is Next lead Smoke, then Niels Lyhne, The Emancipated
   assert.equal(emancipated.author, "George Gissing");
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "", /Born in Exile/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "", /Leila/);
-  assert.match(SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "", /phone-hard/);
+  assert.match(SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "", /first breath is \d+ words, left as printed\./);
   assert.match(SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "", /251/);
   assert.match(bindNote("the-emancipated"), /Inventory 81/);
 
@@ -10758,7 +10758,7 @@ test("Mira POST-#186 CLEAR is Next lead Une Vie, then My Ántonia, Look Back on 
     assert.equal(opened.breaths[0]?.text.trim().split(/\s+/).length, want.firstWords, id);
     if (id === "une-vie") {
       assert.ok(want.firstWords > 250, id);
-      assert.match(work.intro ?? "", /phone-hard/);
+      assert.match(work.intro ?? "", /first breath is \d+ words, left as printed\./);
       assert.match(work.intro ?? "", /582/);
     } else {
       assert.ok(want.firstWords <= 250, id);
@@ -12053,7 +12053,7 @@ test("Mira POST-#191 CLEAR is Next lead The Village in the Jungle, then Ribot, S
   assert.match(sara.scenes[1]?.title ?? "", /Chapter I/);
   assert.match(sara.scenes[2]?.title ?? "", /Chapter II/);
   assert.match(SHELF.find((item) => item.id === "saracinesca")?.intro ?? "", /334 words/);
-  assert.match(SHELF.find((item) => item.id === "saracinesca")?.intro ?? "", /phone-hard/);
+  assert.match(SHELF.find((item) => item.id === "saracinesca")?.intro ?? "", /first breath is \d+ words, left as printed\./);
   assert.match(bindNote("saracinesca"), /PG reading-ease 69\.4/);
   const saraOpen = JSON.parse(
     readFileSync(new URL("./openings/saracinesca.json", import.meta.url), "utf8"),

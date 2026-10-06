@@ -580,9 +580,26 @@ export function mergeAttributedSpeech(
       if (parsed.dialogue) nest = emitLine(out, parsed.dialogue, speaker, nest);
       continue;
     }
+    if (parsed.dialogue && endsSpeakerRun(parsed.dialogue)) {
+      // An unrecognised cue (a one-off speaker such as a masque's queens) or an
+      // ALL-CAPS heading (the next poem's title) ends the current speech. Keep
+      // the line as printed and do not carry the last speaker into it or past it.
+      speaker = null;
+      nest = emitLine(out, parsed.dialogue, null, nest);
+      continue;
+    }
     if (parsed.dialogue) nest = emitLine(out, parsed.dialogue, speaker, nest);
   }
   return out;
+}
+
+/** True for a line that cannot continue the previous speaker's speech. */
+export function endsSpeakerRun(text: string) {
+  const t = text.trim();
+  if (!t) return false;
+  if (isStructuralHeader(t)) return true;
+  if (matchCueOnlyBreath(t)) return true;
+  return isAllCapsHeading(t) && !/[!?]/.test(t);
 }
 
 function reindexBreaths(sceneId: string, lines: string[]): Breath[] {

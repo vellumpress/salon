@@ -435,10 +435,30 @@ test("book bodies carry no Project Gutenberg end marker or licence text", () => 
  * phrasing is "It opens at …" / "This reading is just …".
  */
 test("reader intros and their source copy carry no staff skip/sit instructions", () => {
+  // Widened in the leftovers pass: every card surface (intro, shelf intro,
+  // blurb, pitch, ritual pitch, composed and stored prefaces), and the staff
+  // imperatives as well as the "sit" jargon. House phrasing instead:
+  // "It opens at …", "This reading is just …", "This reading stops …".
+  const LEAD = String.raw`(?:^|[.!?…]["”’)]?\s+|—\s+|;\s+)`;
   const STAFF = [
     { name: "Skip the", pattern: /\bSkip the\b/i },
     { name: "This sit is", pattern: /\bThis sit is\b/ },
     { name: "this sit stops", pattern: /\bthis sit stops\b/i },
+    { name: "imperative Ship/Skip/Cut/Bind/Drop", pattern: new RegExp(`${LEAD}(?:Ship|Skip|Cut|Bind|Drop)\\s`) },
+    { name: "imperative Stop at/after/when/before/on", pattern: new RegExp(`${LEAD}Stop (?:at|after|when|before|on)\\b`) },
+    { name: "imperative Keep the", pattern: new RegExp(`${LEAD}Keep the\\b`) },
+    { name: "imperative Open …", pattern: new RegExp(`${LEAD}Open (?:at |on |with )?(?:Chapter|Part|Book|Act|Canto|Capítulo|the |[A-Z])`) },
+    { name: "lowercase skip/stop/open/ship after a dash", pattern: /[—;]\s+(?:skip|ship|stop (?:at|after|when|before|on)|open (?:at|on|with))\b/ },
+    { name: "the sit / this sit / first sit", pattern: /\b(?:the|this|a|first|fresh|closed|unwind) sit\b(?! (?:with|down|still|here|by|beside|in|on|at|up|alone|under)\b)/i },
+    { name: "per sit / one … this sit", pattern: /\bper sit\b|\bthis sit[.;,]/i },
+    { name: "sit + verb", pattern: /\bsit (?:is|stops|runs|opens|stays|ends|turns)\b/i },
+    { name: "Internet Archive", pattern: /\bInternet Archive\b/ },
+    { name: "OCR", pattern: /\bOCR\b/ },
+    { name: "PG number", pattern: /\bPG \d+/ },
+    { name: "mojibake / soft hyphens", pattern: /\bmojibake\b|\bsoft hyphens\b/i },
+    { name: "e-text / transcriber", pattern: /\be-?text\b|\btranscriber\b/i },
+    { name: "phone-hard", pattern: /\bphone-hard\b/i },
+    { name: "scan texture", pattern: /\bscan texture\b/i },
   ];
   const copy: Array<[string, string]> = [];
   for (const work of SHELF) {
@@ -447,6 +467,8 @@ test("reader intros and their source copy carry no staff skip/sit instructions",
     if (work.intro) copy.push([`shelf.intro:${work.id}`, work.intro]);
     const blurb = blurbFor(work);
     if (blurb) copy.push([`blurb:${work.id}`, blurb]);
+    const preface = prefaceFor(work.id);
+    if (preface) copy.push([`prefaceFor:${work.id}`, preface]);
   }
   for (const [id, text] of Object.entries(PITCHES)) copy.push([`pitch:${id}`, text]);
   for (const [id, text] of Object.entries(RITUAL_PITCHES)) copy.push([`ritual:${id}`, text]);
@@ -455,7 +477,173 @@ test("reader intros and their source copy carry no staff skip/sit instructions",
   const hits: string[] = [];
   for (const [where, text] of copy) {
     for (const { name, pattern } of STAFF) {
-      if (pattern.test(text)) hits.push(`${where} [${name}]`);
+      const m = pattern.exec(text);
+      if (m) hits.push(`${where} [${name}] …${text.slice(Math.max(0, m.index - 30), m.index + 50)}…`);
+    }
+  }
+  assert.deepEqual(hits, []);
+});
+
+/**
+ * The bind-time dialogue formatter writes `Speaker: line`. In a non-play work
+ * a speaker that carries past an unrecognised cue or into the next poem's
+ * heading prefixes hundreds of breaths with the wrong name (Poems & Ballads
+ * had "King David:" on every breath from the masque to the end of the book).
+ * Fail when one label dominates a non-play work, runs unbroken for a long
+ * stretch, or sits in front of ALL-CAPS headings.
+ *
+ * Known offenders still waiting for a source-aligned fix are listed below with
+ * the signature they trip. The allowlist must shrink: an entry that no longer
+ * trips fails the test so it gets removed.
+ */
+const SPEAKER_PREFIX_PENDING: Record<string, string> = {
+  "faust-part-i": "verse drama filed as poem; 96 cue lines carry the previous speaker (\"Poet: MERRY-ANDREW\")",
+  "the-hesperides-and-noble-numbers": "\"Epig.\" read as a speaker; Hunger run of 269; 81 prefixed headings",
+  "the-fugitive": "Devayani on 28% of breaths, a run of 186 across unrelated poems",
+  limbo: "Henrika runs 545 breaths across Happily Ever After",
+  "the-beautiful-and-damned": "Otis runs 634 breaths over narrative; Muriel/Maury/Adam Patch runs too",
+  "the-wild-swans-at-coole": "Aherne/Ille prefixed on poem headings",
+  "song-of-songs": "cue lines (\"Solomon: THE SHULAMITE.\") carry the previous speaker",
+};
+
+const SPEAKER_LABEL = /^([A-Z][\w’'.-]*(?: [A-Z][\w’'.-]*){0,3}): \S/;
+const LABELLED_HEADING = /^[^:]{1,40}: [A-Z0-9][A-Z0-9 .,'’-]{3,}$/;
+const NOT_A_SPEAKER = new Set(["Note", "Notes", "Footnote", "N.B", "P.S"]);
+
+function speakerPrefixProblems(texts: string[]): string[] {
+  const labels = texts.map((text) => {
+    const label = SPEAKER_LABEL.exec(text)?.[1] ?? null;
+    return label && !NOT_A_SPEAKER.has(label) ? label : null;
+  });
+  const counts = new Map<string, number>();
+  for (const label of labels) if (label) counts.set(label, (counts.get(label) ?? 0) + 1);
+  const problems: string[] = [];
+  const [top, topCount] = [...counts.entries()].sort((a, b) => b[1] - a[1])[0] ?? ["", 0];
+  if (texts.length >= 100 && topCount / texts.length >= 0.25) {
+    problems.push(`${top} on ${topCount}/${texts.length} breaths`);
+  }
+  let run = 0;
+  let best = 0;
+  let bestLabel = "";
+  let previous: string | null = null;
+  for (const label of labels) {
+    run = label && label === previous ? run + 1 : label ? 1 : 0;
+    previous = label;
+    if (run > best) [best, bestLabel] = [run, label ?? ""];
+  }
+  if (best >= 120) problems.push(`${bestLabel} runs ${best} breaths`);
+  const headings = texts.filter((text, i) => labels[i] && LABELLED_HEADING.test(text)).length;
+  if (headings >= 5) problems.push(`${headings} prefixed ALL-CAPS headings`);
+  return problems;
+}
+
+test("no non-play work carries a dominant or runaway speaker prefix", () => {
+  const here = fileURLToPath(new URL(".", import.meta.url));
+  const hits: string[] = [];
+  const stale: string[] = [];
+  for (const work of SHELF) {
+    if (work.form === "play") continue;
+    let book: { breaths: { text: string }[] };
+    try {
+      book = JSON.parse(readFileSync(join(here, "texts", `${work.id}.json`), "utf8"));
+    } catch {
+      continue;
+    }
+    const problems = speakerPrefixProblems(book.breaths.map((breath) => breath.text ?? ""));
+    if (work.id in SPEAKER_PREFIX_PENDING) {
+      if (problems.length === 0) stale.push(work.id);
+      continue;
+    }
+    if (problems.length) hits.push(`${work.id}: ${problems.join("; ")}`);
+  }
+  assert.deepEqual(hits, []);
+  assert.deepEqual(stale, [], "fixed works must leave SPEAKER_PREFIX_PENDING");
+});
+
+test("the speaker-prefix gate trips on the King David carry-over", () => {
+  const breaths = [
+    ...Array.from({ length: 60 }, (_, i) => `Opening line ${i}`),
+    ...Array.from({ length: 140 }, (_, i) => `King David: Line ${i} of the poems after the masque`),
+  ];
+  assert.ok(speakerPrefixProblems(breaths).length > 0);
+});
+
+/**
+ * Producer and transcriber residue in book bodies: credits, e-text notes and
+ * transcriber's-note headings. The Canterbury glosses are inline readers' aids
+ * and FitzGerald's notes in the Rubáiyát carry two "[Greek … deleted from
+ * etext]" markers mid-text; Marius the Epicurean has an e-text editor's
+ * translation of Pater's Greek inside a mid-book notes section. These sit
+ * mid-body (cutting would shift saved positions) and are listed, not cut.
+ */
+const BODY_RESIDUE_ALLOW = new Set([
+  "the-canterbury-tales",
+  "the-rubaiyat-of-omar-khayyam",
+  "marius-the-epicurean",
+]);
+const BODY_RESIDUE: { name: string; pattern: RegExp }[] = [
+  { name: "Project Gutenberg", pattern: /\bProject Gutenberg\b/ },
+  { name: "PG e-text", pattern: /\bPG [Ee]-?[Tt]ext\b/ },
+  { name: "pgdp credit", pattern: /pgdp\.net|Distributed Proofread/i },
+  { name: "e-text note", pattern: /\be-?text\b(?! of)/i },
+  { name: "transcriber's note heading", pattern: /^\W*transcriber(?:[’']s)? (?:notes?|changes)\W*$/i },
+  { name: "typo list", pattern: /Typographical errors corrected/i },
+  { name: "producer credit", pattern: /^\W*(?:Produced|Prepared|Transcribed|Scanned|Digitized) (?:by|from) [A-Z0-9]|File was produced from images/ },
+  { name: "Internet Archive / pglaf", pattern: /\bInternet Archive\b|archive\.org\/details|pglaf\.org/i },
+  { name: "transcription note", pattern: /Lines longer than \d+ characters|\bThis transcription is based\b|^\W*Note on text:/i },
+];
+
+test("book bodies carry no producer credit or transcriber's-note residue", () => {
+  const here = fileURLToPath(new URL(".", import.meta.url));
+  const hits: string[] = [];
+  for (const folder of ["texts", "openings"] as const) {
+    for (const name of readdirSync(join(here, folder))) {
+      if (!name.endsWith(".json")) continue;
+      const id = name.slice(0, -5);
+      if (BODY_RESIDUE_ALLOW.has(id)) continue;
+      const book = JSON.parse(readFileSync(join(here, folder, name), "utf8")) as {
+        scenes: { id: string; title?: string; place?: string }[];
+        breaths: { id: string; text: string }[];
+      };
+      const fields: Array<[string, string]> = [
+        ...book.scenes.map((scene): [string, string] => [`${scene.id}.title`, scene.title ?? ""]),
+        ...book.scenes.map((scene): [string, string] => [`${scene.id}.place`, scene.place ?? ""]),
+        ...book.breaths.map((breath): [string, string] => [breath.id, breath.text ?? ""]),
+      ];
+      for (const [where, value] of fields) {
+        for (const { name: label, pattern } of BODY_RESIDUE) {
+          if (pattern.test(value)) hits.push(`${folder}:${id}:${where} [${label}] ${value.slice(0, 80)}`);
+        }
+      }
+    }
+  }
+  assert.deepEqual(hits, []);
+});
+
+/**
+ * The shelf `opening` is the line printed on the board card. It should be the
+ * book's first real line, never a producer credit, an e-text note, a bare
+ * "BY" byline or a copyright/imprint line from the title page.
+ */
+const CARD_OPENING_RESIDUE: { name: string; pattern: RegExp }[] = [
+  { name: "producer / e-text", pattern: /\be-?text\b|\btranscri|Project Gutenberg|^\W*Produced by [A-Z]|Internet Archive|pglaf|@/i },
+  { name: "transcription note", pattern: /Lines longer than \d+ characters/i },
+  { name: "byline", pattern: /^(?:BY|By)(?:\s+[A-Z][\w.]*\.?){0,4}\s*$/ },
+  { name: "copyright / imprint", pattern: /^\W*(?:Copyright|Printed in|All Rights Reserved|This volume was first published)\b|^[A-Z][\w&.,' ]+ (?:Company|Co\.|Press)\b.*\b1[89]\d\d$/i },
+];
+
+// Tier B batch pins require these openings to equal breath 0, and breath 0 is
+// the printed title page (copyright line / intro byline). Fixing the card means
+// cutting front matter at the head, which shifts saved positions: listed, not cut.
+const CARD_OPENING_PENDING = new Set(["the-forerunner-his-parables-and-poems", "skipper-worse"]);
+
+test("card openings are the book's first line, not producer or title-page residue", () => {
+  const hits: string[] = [];
+  for (const work of SHELF) {
+    if (CARD_OPENING_PENDING.has(work.id)) continue;
+    const opening = (work as { opening?: string }).opening ?? "";
+    for (const { name, pattern } of CARD_OPENING_RESIDUE) {
+      if (pattern.test(opening)) hits.push(`${work.id} [${name}] ${opening.slice(0, 80)}`);
     }
   }
   assert.deepEqual(hits, []);

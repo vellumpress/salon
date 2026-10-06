@@ -10,9 +10,9 @@
   "scenes": [
     {
       "id": "s0",
-      "title": "Book I · Produced by Markus Brenner and the Online Distributed",
-      "place": "Book I · Produced by Markus Brenner and the Online Distributed",
-      "reentry": "Produced by Markus Brenner and the Online Distributed Proofreading Team at http://www.pgdp.net",
+      "title": "Book I · Das Stunden-Buch",
+      "place": "Book I · Das Stunden-Buch",
+      "reentry": "Das Stunden-Buch",
       "prompt": "What does the poem hold?"
     },
     {
@@ -2173,11 +2173,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "Produced by Markus Brenner and the Online Distributed Proofreading Team at http://www.pgdp.net"
-    },
     {
       "id": "s0-1",
       "sceneId": "s0",

@@ -12,7 +12,7 @@
       "id": "s0",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "retained in this etext.]",
+      "reentry": "THE Wonderful Adventures of Nils",
       "prompt": "A word from this stretch."
     },
     {
@@ -94,11 +94,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "retained in this etext.]"
-    },
     {
       "id": "s0-1",
       "sceneId": "s0",

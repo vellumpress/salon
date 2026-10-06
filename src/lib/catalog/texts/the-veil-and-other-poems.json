@@ -630,20 +630,6 @@
       "place": "Was lovely too; nor would she grieve to be",
       "reentry": "Sharing in solitude her dreams with thee.",
       "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s89",
-      "title": "Transcriber'S Notes",
-      "place": "Transcriber'S Notes",
-      "reentry": "1. Silently corrected simple spelling, grammar, and typographical",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s90",
-      "title": "Errors",
-      "place": "Errors",
-      "reentry": "2. Retained anachronistic and non-standard spellings as printed. 3. Enclosed italics font in *underscores*.",
-      "prompt": "What does the poem hold?"
     }
   ],
   "breaths": [
@@ -1556,16 +1542,6 @@
       "id": "s88-0",
       "sceneId": "s88",
       "text": "Sharing in solitude her dreams with thee."
-    },
-    {
-      "id": "s89-0",
-      "sceneId": "s89",
-      "text": "1. Silently corrected simple spelling, grammar, and typographical"
-    },
-    {
-      "id": "s90-0",
-      "sceneId": "s90",
-      "text": "2. Retained anachronistic and non-standard spellings as printed. 3. Enclosed italics font in *underscores*."
     }
   ]
 }
