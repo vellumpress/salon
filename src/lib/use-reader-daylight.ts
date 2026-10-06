@@ -1,4 +1,4 @@
-import { useEffect, useState, type CSSProperties } from "react";
+import { useEffect, useLayoutEffect, useState, type CSSProperties } from "react";
 import {
   DAYLIGHT_COLORS_KEY,
   daylightAt,
@@ -6,6 +6,7 @@ import {
   writeDaylightEnabled,
   type DaylightSample,
 } from "./daylight-colors.ts";
+import { PAGE_PAPER, applyStatusBarColorToDocument } from "./status-bar-color.ts";
 
 export type ReaderDaylight = {
   /** Persisted preference. Default on, including before storage is read. */
@@ -26,7 +27,9 @@ export function useReaderDaylight(): ReaderDaylight {
   const [enabled, setEnabledState] = useState(true);
   const [live, setLive] = useState(false);
   const [motion, setMotion] = useState(false);
-  const [sample, setSample] = useState<DaylightSample>(() => daylightAt(new Date(2026, 0, 1, 12, 0, 0)));
+  const [sample, setSample] = useState<DaylightSample>(() =>
+    daylightAt(new Date(2026, 0, 1, 12, 0, 0)),
+  );
 
   useEffect(() => {
     setEnabledState(readDaylightEnabled());
@@ -69,6 +72,25 @@ export function useReaderDaylight(): ReaderDaylight {
   }
 
   const active = live && enabled;
+
+  useLayoutEffect(() => {
+    const root = document.documentElement;
+    if (!active) {
+      root.removeAttribute("data-status-motion");
+      applyStatusBarColorToDocument(PAGE_PAPER);
+      return;
+    }
+    if (motion) root.setAttribute("data-status-motion", "1");
+    else root.removeAttribute("data-status-motion");
+    applyStatusBarColorToDocument(sample.background);
+  }, [active, motion, sample.background]);
+
+  useLayoutEffect(() => {
+    return () => {
+      document.documentElement.removeAttribute("data-status-motion");
+    };
+  }, []);
+
   const style: CSSProperties | undefined = active
     ? {
         backgroundColor: sample.background,
