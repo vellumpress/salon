@@ -20,7 +20,9 @@ import { blurbFor } from "./blurbs.ts";
 import { PREFACES, prefaceFor } from "./prefaces.ts";
 import { STORED_PREFACES } from "./prefaces-stored.ts";
 import { PITCHES } from "./pitches.ts";
-import { RITUAL_PITCHES } from "./rituals.ts";
+import { RITUAL_LANES, RITUAL_PITCHES } from "./rituals.ts";
+import { SERIALIZE_PLANS } from "./serialize.ts";
+import { GUEST_CURATORS } from "./curated.ts";
 import { SHELF } from "./shelf.ts";
 import { readerIntro } from "../reader-intro.ts";
 import type { Work } from "../works.ts";
@@ -727,4 +729,169 @@ test("card openings are not a run of contents entries", () => {
   }
   assert.deepEqual(hits, []);
   assert.deepEqual(stale, [], "fixed works must leave CONTENTS_OPENING_PENDING");
+});
+
+/**
+ * Curation talk: staff choosing books, written into copy a reader sees ("Not the
+ * Africa novel pile.", "Montsou is not the war of Three Soldiers.", "The Broadway
+ * open is careful after The Rise of David Levinsky.", "The Host stays in the
+ * South, after Wings …", "this open starts at Section I", "Priday 1923 EN only.").
+ * Editorial surfaces only — intros, cards, pitches, ritual notes, prefaces, the
+ * threshold intro, lane labels, serial framing and curator copy — never book
+ * bodies. The words also have real senses (a Gwent hill lane, cinder piles, slate
+ * cliffs, a colder register, the top floor, picks up The Times, a taste for
+ * adventure, the open plain), so each pattern needs a staff context.
+ *
+ * Allowlist: `where: name`, with the reason beside it. Empty after the sweep.
+ */
+export const CURATION_ALLOWLIST: readonly string[] = [];
+
+export const CURATION_PATTERNS: { name: string; pattern: RegExp }[] = [
+  { name: "book pile", pattern: /\b(?:novel|book|title|reading|story|stories|poetry|classics?)\s+piles?\b|\b(?:on|off|from|onto|into|to) the (?:[\w’'-]+ ){0,3}pile\b/i },
+  { name: "slate", pattern: /\b(?:on|off|the|this|our|today[’']s|tonight[’']s|next|reading) slate\b(?! (?:cliffs?|roofs?|grey|gray|blue|sky|tiles?|quarr\w*))|\bslated (?:for|to|as)\b/i },
+  { name: "queue", pattern: /\b(?:the|this|our|reading|Next|Featured|Rituals?) queue\b|\bqueued (?:for|behind|after)\b/i },
+  { name: "lane (staff)", pattern: /\b(?:Ritual|Rituals|unwind|before-sleep|on-a-walk|walk|waking-up|soft-mourning|bite-sized|For you|serialize|commute)\s+lanes?\b|\b(?:every|each|one|any|another|other|its) (?:Ritual )?lanes?\b|\blanes? only\b|\boff (?:the|every|all) lanes?\b/i },
+  { name: "floor (staff)", pattern: /\b(?:score|ease|reading-ease|word-count|minutes?|length|quality|inventory)\s+floor\b|\bfloor (?:is|of|at) \d|\babove the floor\b/i },
+  { name: "register (staff)", pattern: /\b(?:the|our|this) (?:Thea |Mira |curation |catalog |launch |rights |shelf |reading )?register (?:entry|row|line|says|lists|has)\b|\bregister(?:ed)? (?:as|for) (?:Next|Featured|Rituals?|For you|the shelf)\b/i },
+  { name: "shortlist", pattern: /\bshort-?list(?:s|ed|ing)?\b/i },
+  { name: "picks / runners-up", pattern: /\brunners?-up\b|\b(?:our|top|first|second|lead|alternate|staff|editors?[’']?|curators?[’']?) picks?\b|\bpick(?:s|ed)? (?:over|instead of|ahead of)\b|\bpicked for (?:Next|Featured|Rituals?|the shelf)\b/i },
+  { name: "taste (staff)", pattern: /\btaste (?:call|pick|match|fit|profile|signal|score|lead|test)\b|\b(?:on|house|reader|our|Thea[’']s|Mira[’']s) taste\b(?! (?:for|of))/i },
+  { name: "Not the … pile/list/shelf", pattern: /\bNot the [^.]{0,40}\b(?:pile|slate|queue|lane|list|shortlist|shelf|track|carousel|pick|lead)s?\b/i },
+  { name: "the open (staff noun)", pattern: /\b(?:this|the|[A-Z][\w’'-]+) open (?:is|stays|starts|already|runs|ends)\b|\b(?:is|not) the open\b/i },
+  { name: "the Host opens/stays", pattern: /\b[Tt]he Host (?:opens|stays|starts|runs|ends|turns|sits)\b/ },
+  { name: "selected … stay out", pattern: /\bselected [\w ]{0,24}(?:stays?|left) out\b/i },
+  { name: "EN only", pattern: /\bEN only\b/ },
+  { name: "open is careful", pattern: /\bopen is careful\b|\bis careful after\b/i },
+  { name: "Next placement", pattern: /\bNext carefully\b|\bplain Next\b|\bleads Next\b/ },
+];
+
+const escapeTitle = (title: string) => title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const SHELF_TITLES = [...new Set(SHELF.map((work) => work.title))].filter((title) => title.length >= 4).sort((a, b) => b.length - a.length);
+/** "is not the war of Three Soldiers": another shelf title as a comparison (two-word titles and up). */
+const NOT_TITLE = new RegExp(
+  String.raw`\bnot (?:the )?(?:[\w’'-]+ ){0,3}(?:of )?(${SHELF_TITLES.filter((title) => title.includes(" ")).map(escapeTitle).join("|")})(?![\w’'-])`,
+  "g",
+);
+/** "is careful after The Rise of David Levinsky", "stays in the South, after Wings": placement after another title. */
+const AFTER_TITLE = new RegExp(
+  String.raw`\b(?:careful|stays?|sits?|comes?|follows?|placed|seated|lands?)\b[^.]{0,40}\bafter (${SHELF_TITLES.map(escapeTitle).join("|")})(?![\w’'-])`,
+  "g",
+);
+
+export function curationHits(text: string, selfTitle = ""): string[] {
+  const hits: string[] = [];
+  for (const { name, pattern } of CURATION_PATTERNS) if (pattern.test(text)) hits.push(name);
+  for (const [name, pattern] of [["not the … another title", NOT_TITLE], ["placed after another title", AFTER_TITLE]] as const) {
+    for (const match of text.matchAll(pattern)) {
+      if (match[1] !== selfTitle) {
+        hits.push(name);
+        break;
+      }
+    }
+  }
+  return hits;
+}
+
+function curationCopy(): Array<[string, string, string]> {
+  const here = fileURLToPath(new URL(".", import.meta.url));
+  const noteFor = (id: string) => {
+    for (const folder of ["texts", "openings"] as const) {
+      try {
+        const data = JSON.parse(readFileSync(join(here, folder, `${id}.json`), "utf8")) as { note?: string };
+        if (typeof data.note === "string") return data.note;
+      } catch {
+        // no bind for this folder
+      }
+    }
+    return undefined;
+  };
+  const titleOf = new Map(SHELF.map((work) => [work.id, work.title]));
+  const copy: Array<[string, string, string]> = [];
+  for (const work of SHELF) {
+    if (work.intro) copy.push([`shelf.intro:${work.id}`, work.intro, work.title]);
+    const blurb = blurbFor(work);
+    if (blurb) copy.push([`blurb:${work.id}`, blurb, work.title]);
+    const preface = prefaceFor(work.id);
+    if (preface) copy.push([`prefaceFor:${work.id}`, preface, work.title]);
+    const intro = readerIntro({ ...work, note: noteFor(work.id) } as unknown as Work);
+    if (intro) copy.push([`readerIntro:${work.id}`, intro, work.title]);
+  }
+  for (const [id, text] of Object.entries(PITCHES)) copy.push([`pitch:${id}`, text, titleOf.get(id) ?? ""]);
+  for (const [id, text] of Object.entries(RITUAL_PITCHES)) copy.push([`ritual:${id}`, text, titleOf.get(id) ?? ""]);
+  for (const [id, text] of Object.entries(PREFACES)) copy.push([`preface:${id}`, text, titleOf.get(id) ?? ""]);
+  for (const [id, text] of Object.entries(STORED_PREFACES)) copy.push([`stored-preface:${id}`, text, titleOf.get(id) ?? ""]);
+  for (const lane of RITUAL_LANES) {
+    copy.push([`lane.label:${lane.id}`, lane.label, ""]);
+    if (lane.hint) copy.push([`lane.hint:${lane.id}`, lane.hint, ""]);
+  }
+  for (const plan of SERIALIZE_PLANS) copy.push([`serialize.framing:${plan.id}`, plan.framing, plan.title]);
+  for (const curator of GUEST_CURATORS) {
+    copy.push([`curator.note:${curator.slug}`, curator.note, ""]);
+    const walk = (value: unknown, where: string) => {
+      if (typeof value === "string") copy.push([where, value, ""]);
+      else if (Array.isArray(value)) value.forEach((item, i) => walk(item, `${where}[${i}]`));
+      else if (value && typeof value === "object") {
+        for (const [key, item] of Object.entries(value)) if (key === "blurb" || key === "entries" || key === "pick" || key === "alt" || typeof item === "object") walk(item, `${where}.${key}`);
+      }
+    };
+    walk(curator.groups, `curator.groups:${curator.slug}`);
+  }
+  return copy;
+}
+
+test("reader-facing copy carries no curation talk (piles, slates, lanes, picks, 'not the X')", () => {
+  const hits: string[] = [];
+  for (const [where, text, title] of curationCopy()) {
+    for (const name of curationHits(text, title)) {
+      if (CURATION_ALLOWLIST.includes(`${where}: ${name}`)) continue;
+      hits.push(`${where} [${name}] ${text.slice(0, 120)}`);
+    }
+  }
+  assert.deepEqual(hits, []);
+});
+
+test("the curation gate trips on the leaked lines and passes ordinary prose", () => {
+  const halket =
+    "A dark night on a Mashonaland kopje, Trooper Peter Halket’s fire quivering, a burnt kraal already in the dark. It opens at Chapter I. Schreiner’s 1897 novella keeps the Chartered Company frame, left as printed. Not the Africa novel pile.";
+  assert.ok(curationHits(halket).length > 0, "original Halket ritual note");
+  for (const bad of [
+    "Montsou is not the war of Three Soldiers.",
+    "The Broadway open is careful after The Rise of David Levinsky.",
+    "The Host stays in the South, after Wings on the Lower East Side.",
+    "Childhood two-worlds map. Priday 1923 EN only.",
+    "The novel continues; the selected shorts stay out.",
+    "The epigraph stays in the book; this open starts at Section I.",
+    "The England breakfast is the open.",
+    "The Host opens in Vevey; Rome comes later in the book.",
+    "It sits on the walk lane only.",
+    "Off the slate this week.",
+    "A shortlist of three.",
+    "The runner-up was Kim.",
+    "A taste call, not a rule.",
+  ]) {
+    assert.ok(curationHits(bad).length > 0, bad);
+  }
+  for (const good of [
+    "the company, the empty parade ground, and cinder piles in a purple evening.",
+    "Cloud banks like corroding slate cliffs open Strindberg’s Dream Play.",
+    "Lucian Taylor loses himself on a Gwent hill lane.",
+    "a stranger led through the lanes of Stambul after dark.",
+    "tended the geraniums boxed on the sill of his window above Water Lane.",
+    "Same author as Enchanted April, colder register.",
+    "Their names are in the parish register.",
+    "takes the attic on the top floor, and arrives with two trunks.",
+    "finishes in a heap on the floor.",
+    "Mrs. Wilkins picks up The Times.",
+    "An orphan with a taste for adventure.",
+    "an estate, a scandal, and the class that calls it taste.",
+    "Over the open plain, beneath a starless sky.",
+    "a village that lies high and in the open, without the lavish shade.",
+    "It opens in Vevey; Rome comes later in the book.",
+    "London learns it is not the center.",
+    "This is not the title story, Mrs. Spring Fragrance.",
+    "Tender and quiet, for the evening rather than for sleep.",
+  ]) {
+    assert.deepEqual(curationHits(good), [], good);
+  }
+  assert.deepEqual(CURATION_ALLOWLIST, []);
 });
