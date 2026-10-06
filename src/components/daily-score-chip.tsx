@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useMemo } from "react";
 import { usePersistHydrated } from "@/components/resume-link";
+import { readDaylightEnabled } from "@/lib/daylight-colors";
 import { dailyScoreGlance } from "@/lib/reading-score";
 import { deriveReadingStats } from "@/lib/reading-stats";
 import { useTbr } from "@/lib/store";
@@ -38,6 +39,11 @@ export function DailyScoreChip({
   const hostedSits = useTbr((s) => s.hostedSits);
   const handle = useTbr((s) => s.handle);
   const sittingMinutes = useTbr((s) => s.sittingMinutes);
+  const joined = useTbr((s) => s.joined);
+  const scorePausedAt = useTbr((s) => s.scorePausedAt);
+  const scoreIgnoredDays = useTbr((s) => s.scoreIgnoredDays);
+  const insightDismissed = useTbr((s) => s.insightDismissed);
+  const insightSeen = useTbr((s) => s.insightSeen);
 
   const daily = useMemo(() => {
     if (!hydrated) return null;
@@ -58,6 +64,12 @@ export function DailyScoreChip({
       hostedSits,
       handle,
       sittingMinutes,
+      joined,
+      daylight: readDaylightEnabled(),
+      pausedAt: scorePausedAt,
+      ignoredDays: scoreIgnoredDays,
+      dismissedInsights: insightDismissed,
+      lastInsight: insightSeen,
     }).dailyScore;
   }, [
     hydrated,
@@ -77,6 +89,11 @@ export function DailyScoreChip({
     hostedSits,
     handle,
     sittingMinutes,
+    joined,
+    scorePausedAt,
+    scoreIgnoredDays,
+    insightDismissed,
+    insightSeen,
   ]);
 
   const text = dailyScoreGlance(daily);

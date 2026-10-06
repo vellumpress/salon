@@ -1,0 +1,970 @@
+import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { Link } from "@tanstack/react-router";
+import { FavoriteWorks } from "@/components/favorite-works";
+import { useKeptLines } from "@/components/kept-sentences";
+import { KeptSentences } from "@/components/kept-sentences";
+import { LaneStrip, YouActivity } from "@/components/you-stats";
+import {
+  CONTRIBUTOR_IDS,
+  CONTRIBUTOR_WEIGHTS,
+  type ContributorId,
+  type ContributorResult,
+  type ReadingModel,
+  type TrendDay,
+} from "@/lib/reading-score";
+import type { DeskWork, ReadingStats } from "@/lib/reading-stats";
+import { formatActiveMinutes } from "@/lib/reading-stats";
+import { useTbr, type WorkProgress } from "@/lib/store";
+import { cn } from "@/lib/utils";
+
+const COLOR: Record<ContributorId, string> = {
+  immersion: "var(--color-forest)",
+  rhythm: "var(--color-yellow)",
+  return: "var(--color-blue)",
+  range: "var(--color-red)",
+  restfulness: "var(--color-ink)",
+  connection: "var(--color-navy)",
+};
+
+const NAME: Record<ContributorId, string> = {
+  immersion: "Immersion",
+  rhythm: "Rhythm",
+  return: "Return",
+  range: "Range",
+  restfulness: "Restfulness",
+  connection: "Connection",
+};
+
+const ABOUT: Record<ContributorId, { evidence: string; about: string; why: string; try: string; how: string }> = {
+  immersion: {
+    evidence: "Strong",
+    about: "Long, quiet stretches with a story — the reading most tied to comprehension.",
+    why: "Screen readers drift more under time pressure. Unhurried reading narrows the gap with paper. One long study found that; it isn’t a promise about a single sit.",
+    try: "Set tonight’s sit to 20 minutes and leave the phone face-up on the page.",
+    how: "Focused minutes, compared with your usual sit over the last 28 reading days (your sit length until four days are in). Time past one and a half times that usual adds nothing. Breaths much faster than your own pace don’t count. Unbroken runs need a log we don’t keep yet, so that part stays out and the rest of Immersion scales up.",
+  },
+  rhythm: {
+    evidence: "Strong",
+    about: "A regular habit, measured gently over two weeks.",
+    why: "Habits form through a repeated cue. One miss doesn’t undo them, so a missed day is a small dip, not a reset.",
+    try: "A ten-minute sit tonight picks the thread back up.",
+    how: "Each of the last 14 days counts a little less than the day after it. That weight is compared with how often you read over the previous eight weeks. A quick visit — under three focused minutes — neither helps nor hurts. There is no streak.",
+  },
+  return: {
+    evidence: "Moderate",
+    about: "Coming back to the same story, and later to the lines you kept.",
+    why: "Spacing a return over a few days keeps characters and plot in place. Trying to recall a line helps it stay. That second part is still learning on this device.",
+    try: "Open yesterday’s book before starting a new one.",
+    how: "Over the last week, the share of sits that continued a book you’d already opened in the previous three days. Starting a new book is never a penalty. How many lines you keep is not scored.",
+  },
+  range: {
+    evidence: "Mixed",
+    about: "Variety over a month — or real commitment to one long book.",
+    why: "A life of reading is linked with later language and knowledge. There isn’t direct evidence that hopping between books helps, so one novel can score the whole contributor.",
+    try: "Stay with the book on your desk. Or sit with a form you haven’t opened this month.",
+    how: "The better of two routes over 28 days: several forms, countries, and eras with at least 15 focused minutes each, or one work you have carried at least a fifth of the way. No monthly cap.",
+  },
+  restfulness: {
+    evidence: "Moderate",
+    about: "Evening reading with a place to stop.",
+    why: "Hours of bright screens before bed are hard on sleep. This only notices whether the sit was bounded and whether it ran past 1am. It does not claim Daylight colors improve sleep.",
+    try: "Tonight, try a 20-minute sit — the hourglass will tell you when to stop.",
+    how: "Scored only on days you read after 8pm. A timed sit that ends near its plan scores highest. Sessions past 1am, or more than twice the planned length, step down. Other days leave it out.",
+  },
+  connection: {
+    evidence: "Moderate",
+    about: "Reading with other people: a shared sit, a club, a line kept together.",
+    why: "Guided shared reading is linked with company and mood, though the studies are small. Solitary readers are never marked down.",
+    try: "If you already read with someone, keep one line together.",
+    how: "Opt-in, once you’ve joined a club or read with a friend. Over 14 days, one shared session is 70 and two or more is 100, with a small lift for a line kept together. It never counts friends or compares you with them.",
+  },
+};
+
+type View = "today" | "trends" | "lines" | "settings" | "calc";
+type TrendSpan = "week" | "month" | "year";
+
+export function YouReading({
+  reading,
+  hydrated,
+  handle,
+  progress,
+  favorites,
+  last,
+  notice,
+  headerEnd,
+  settings,
+  trendsEnd,
+}: {
+  reading: ReadingStats;
+  hydrated: boolean;
+  handle: string;
+  progress: Record<string, WorkProgress>;
+  favorites: string[];
+  last: { id: string; title: string; author: string; breathIndex: number } | null;
+  notice?: string;
+  headerEnd?: ReactNode;
+  settings: ReactNode;
+  trendsEnd?: ReactNode;
+}) {
+  const model = reading.readingModel;
+  const scoreHide = useTbr((s) => s.scoreHide);
+  const scorePausedAt = useTbr((s) => s.scorePausedAt);
+  const setScoreHide = useTbr((s) => s.setScoreHide);
+  const setScorePaused = useTbr((s) => s.setScorePaused);
+  const dismissInsight = useTbr((s) => s.dismissInsight);
+  const noteInsight = useTbr((s) => s.noteInsight);
+  const [view, setView] = useState<View>("today");
+  const [detail, setDetail] = useState<ContributorId | null>(null);
+  const [span, setSpan] = useState<TrendSpan>("week");
+
+  useEffect(() => {
+    const card = model.insight;
+    if (!card || !hydrated) return;
+    const day = model.week.days[model.week.days.length - 1]?.key;
+    if (!day) return;
+    noteInsight(card.id, day);
+  }, [model.insight, model.week.days, hydrated, noteInsight]);
+
+  return (
+    <>
+      <header className="flex shrink-0 items-stretch border-b border-ink">
+        <Link
+          to="/"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
+        >
+          Home
+        </Link>
+        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">You</h1>
+        <button
+          type="button"
+          onClick={() => {
+            setDetail(null);
+            setView(view === "settings" ? "today" : "settings");
+          }}
+          className={cn(
+            "type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink px-4",
+            view === "settings" ? "bg-yellow text-ink" : "bg-paper text-ink",
+          )}
+          aria-pressed={view === "settings"}
+        >
+          Settings
+        </button>
+        <Link
+          to="/friends"
+          preload="intent"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
+        >
+          Friends
+        </Link>
+        {headerEnd}
+      </header>
+      <div className="min-h-0 min-w-0 flex-1 overflow-x-clip overflow-y-auto">
+        {notice ? (
+          <p className="border-b border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">{notice}</p>
+        ) : null}
+        {!hydrated ? (
+          <div className="grid grid-cols-2 gap-px bg-ink sm:grid-cols-4">
+            <div className="min-h-40 bg-ink sm:min-h-48" />
+            <div className="min-h-40 bg-yellow sm:min-h-48" />
+            <div className="min-h-40 bg-red sm:min-h-48" />
+            <div className="min-h-40 bg-blue sm:min-h-48" />
+          </div>
+        ) : view === "settings" ? (
+          <SettingsView
+            settings={settings}
+            scoreHide={scoreHide}
+            paused={scorePausedAt != null}
+            onHide={setScoreHide}
+            onPause={setScorePaused}
+            onCalculated={() => setView("calc")}
+          />
+        ) : view === "calc" ? (
+          <HowCalculated onBack={() => setView("settings")} />
+        ) : detail ? (
+          <ContributorSheet
+            id={detail}
+            part={model.daily.contributors.find((row) => row.id === detail) ?? null}
+            model={model}
+            scoreHide={scoreHide}
+            paused={scorePausedAt != null}
+            onBack={() => setDetail(null)}
+            onHide={setScoreHide}
+            onPause={setScorePaused}
+            onCalculated={() => {
+              setDetail(null);
+              setView("calc");
+            }}
+          />
+        ) : (
+          <>
+            <YouNav view={view} onView={setView} />
+            {view === "trends" ? (
+              <Trends
+                reading={reading}
+                model={model}
+                span={span}
+                onSpan={setSpan}
+                onOpen={setDetail}
+                end={trendsEnd}
+              />
+            ) : view === "lines" ? (
+              <YourLines progress={progress} favorites={favorites} hydrated={hydrated} />
+            ) : (
+              <Today
+                reading={reading}
+                model={model}
+                handle={handle}
+                last={last}
+                progress={progress}
+                hydrated={hydrated}
+                scoreHide={scoreHide}
+                paused={scorePausedAt != null}
+                onOpen={setDetail}
+                onDismiss={(id) => dismissInsight(id)}
+              />
+            )}
+          </>
+        )}
+      </div>
+    </>
+  );
+}
+
+function YouNav({ view, onView }: { view: View; onView: (view: View) => void }) {
+  const tabs: { id: View; label: string }[] = [
+    { id: "today", label: "Today" },
+    { id: "trends", label: "Trends" },
+    { id: "lines", label: "Your lines" },
+  ];
+  return (
+    <nav className="flex border-b border-ink" aria-label="You">
+      {tabs.map((tab) => (
+        <button
+          key={tab.id}
+          type="button"
+          onClick={() => onView(tab.id)}
+          className={cn(
+            "type-kicker min-h-12 flex-1 px-2",
+            view === tab.id ? "bg-ink text-paper" : "bg-paper text-ink",
+          )}
+          aria-current={view === tab.id ? "page" : undefined}
+        >
+          {tab.label}
+        </button>
+      ))}
+      <Link
+        to="/together"
+        className="type-kicker inline-flex min-h-12 flex-1 items-center justify-center border-l border-ink bg-paper px-2 text-ink"
+      >
+        Clubs
+      </Link>
+    </nav>
+  );
+}
+
+function Today({
+  reading,
+  model,
+  handle,
+  last,
+  progress,
+  hydrated,
+  scoreHide,
+  paused,
+  onOpen,
+  onDismiss,
+}: {
+  reading: ReadingStats;
+  model: ReadingModel;
+  handle: string;
+  last: { id: string; title: string; author: string; breathIndex: number } | null;
+  progress: Record<string, WorkProgress>;
+  hydrated: boolean;
+  scoreHide: boolean;
+  paused: boolean;
+  onOpen: (id: ContributorId) => void;
+  onDismiss: (id: string) => void;
+}) {
+  const daily = model.daily;
+  const readingDay = daily.kind === "reading";
+  return (
+    <>
+      <section className="border-b border-ink bg-paper px-4 py-6 text-ink">
+        <p className="type-kicker text-muted">{handle || "This sitting"}</p>
+        <ScoreRing model={model} hide={scoreHide} paused={paused} />
+        {paused ? (
+          <p className="mx-auto mt-4 max-w-sm text-center font-serif text-lg text-ink/80">
+            Scoring is paused. Baselines stay where they were, so coming back won’t look like a decline.
+          </p>
+        ) : null}
+        {daily.learningNote ? (
+          <p className="mx-auto mt-3 max-w-sm text-center font-sans text-sm text-ink/70">{daily.learningNote}</p>
+        ) : null}
+        {readingDay && daily.versusUsual != null && !scoreHide ? (
+          <p className="mx-auto mt-4 inline-flex bg-yellow px-3 py-2 font-sans text-sm text-ink">
+            {versusCopy(daily.versusUsual)}
+          </p>
+        ) : null}
+        {!readingDay ? (
+          <p className="mx-auto mt-4 max-w-sm text-center font-serif text-lg text-ink/80">
+            {daily.line}
+            {model.week.score != null ? ` This week is ${model.week.score}.` : ""}
+          </p>
+        ) : (
+          <p className="mx-auto mt-3 max-w-sm text-center font-serif text-lg text-ink/75">{daily.line}</p>
+        )}
+      </section>
+      <ContributorBars parts={daily.contributors} onOpen={onOpen} />
+      {model.insight ? <InsightCard card={model.insight} onDismiss={onDismiss} /> : null}
+      <ReadingNow last={last} desk={reading.desk} />
+      <LineOfDay progress={progress} hydrated={hydrated} />
+    </>
+  );
+}
+
+function ScoreRing({ model, hide, paused }: { model: ReadingModel; hide: boolean; paused: boolean }) {
+  const daily = model.daily;
+  const scored = daily.contributors.filter((part) => part.status === "scored" && part.value != null);
+  const weight = scored.reduce((sum, part) => sum + CONTRIBUTOR_WEIGHTS[part.id], 0);
+  const r = 46;
+  const c = 2 * Math.PI * r;
+  let offset = 0;
+  const showNumber = daily.kind === "reading" && !hide;
+  const center = paused && !showNumber ? "Paused" : showNumber ? String(daily.total) : daily.label;
+  return (
+    <figure className="relative mx-auto mt-4 h-52 w-52">
+      <svg viewBox="0 0 120 120" className="h-full w-full" role="img" aria-label={ringLabel(model, hide, paused)}>
+        <circle cx="60" cy="60" r={r} fill="none" stroke="var(--color-paper-deep)" strokeWidth="10" />
+        {daily.kind === "reading"
+          ? scored.map((part) => {
+              const frac = weight > 0 ? CONTRIBUTOR_WEIGHTS[part.id] / weight : 0;
+              const dash = Math.max(0, frac * c - 1.5);
+              const node = (
+                <circle
+                  key={part.id}
+                  cx="60"
+                  cy="60"
+                  r={r}
+                  fill="none"
+                  stroke={COLOR[part.id]}
+                  strokeWidth="10"
+                  strokeDasharray={`${dash} ${c - dash}`}
+                  strokeDashoffset={-offset}
+                  transform="rotate(-90 60 60)"
+                />
+              );
+              offset += frac * c;
+              return node;
+            })
+          : null}
+      </svg>
+      <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-8 text-center">
+        <span className={cn("font-serif text-ink", showNumber ? "text-5xl leading-none" : "text-3xl leading-none")}>
+          {center}
+        </span>
+        {showNumber ? <span className="type-kicker mt-2 text-ink/70">{daily.label}</span> : null}
+      </div>
+    </figure>
+  );
+}
+
+function ringLabel(model: ReadingModel, hide: boolean, paused: boolean) {
+  if (paused) return "Scoring is paused";
+  if (model.daily.kind !== "reading") return model.daily.label;
+  if (hide) return model.daily.label;
+  return `Reading score ${model.daily.total}, ${model.daily.label}`;
+}
+
+function versusCopy(delta: number) {
+  if (delta > 0) return `↑ ${delta} vs your usual`;
+  if (delta < 0) return `↓ ${Math.abs(delta)} vs your usual`;
+  return "Level with your usual";
+}
+
+function ContributorBars({
+  parts,
+  onOpen,
+}: {
+  parts: ContributorResult[];
+  onOpen: (id: ContributorId) => void;
+}) {
+  const order = CONTRIBUTOR_IDS.map((id) => parts.find((part) => part.id === id)).filter(
+    (part): part is ContributorResult => Boolean(part),
+  );
+  return (
+    <section aria-label="Contributors">
+      {order.map((part) => {
+        const width = part.status === "scored" && part.value != null ? part.value : 0;
+        const value =
+          part.status === "scored" && part.value != null
+            ? String(part.value)
+            : part.status === "learning"
+              ? "Still learning"
+              : "—";
+        return (
+          <button
+            key={part.id}
+            type="button"
+            onClick={() => onOpen(part.id)}
+            className="flex w-full items-center gap-3 border-b border-ink bg-paper px-4 py-3 text-left"
+          >
+            <span className="w-[6.5rem] shrink-0 font-sans text-sm text-ink">{NAME[part.id]}</span>
+            <span className="relative h-2.5 flex-1 bg-paper-deep" aria-hidden>
+              <span className="absolute inset-y-0 left-0" style={{ width: `${width}%`, background: COLOR[part.id] }} />
+            </span>
+            <span
+              className={cn(
+                "shrink-0 text-right text-ink",
+                part.status === "scored" ? "w-10 font-serif text-2xl leading-none" : "w-24 font-sans text-xs",
+              )}
+            >
+              {value}
+            </span>
+          </button>
+        );
+      })}
+    </section>
+  );
+}
+
+function InsightCard({
+  card,
+  onDismiss,
+}: {
+  card: ReadingModel["insight"];
+  onDismiss: (id: string) => void;
+}) {
+  if (!card) return null;
+  return (
+    <section className="border-b border-ink bg-yellow px-4 py-5 text-ink">
+      <p className="type-kicker">{card.kicker}</p>
+      <h2 className="mt-2 font-serif text-3xl leading-none">{card.title}</h2>
+      <p className="mt-3 max-w-prose font-serif text-lg leading-snug">{card.body}</p>
+      <button
+        type="button"
+        onClick={() => onDismiss(card.id)}
+        className="mt-4 font-sans text-sm text-ink/70 underline decoration-ink/30 underline-offset-4"
+      >
+        Don’t show this kind again
+      </button>
+    </section>
+  );
+}
+
+function ReadingNow({
+  last,
+  desk,
+}: {
+  last: { id: string; title: string; author: string; breathIndex: number } | null;
+  desk: DeskWork[];
+}) {
+  const primary =
+    last ??
+    (desk[0]
+      ? { id: desk[0].id, title: desk[0].title, author: desk[0].author, breathIndex: desk[0].breathIndex }
+      : null);
+  const more = desk.filter((work) => work.id !== primary?.id);
+  const [open, setOpen] = useState(false);
+  if (!primary) {
+    return (
+      <section className="border-b border-ink bg-paper px-4 py-5">
+        <p className="type-kicker text-muted">Reading now</p>
+        <p className="mt-2 font-serif text-2xl">Nothing open on the desk.</p>
+        <Link to="/rituals" className="mt-3 inline-flex font-sans text-sm text-ink underline underline-offset-4">
+          Open a ritual
+        </Link>
+      </section>
+    );
+  }
+  return (
+    <section className="border-b border-ink bg-forest text-paper">
+      <div className="flex items-stretch">
+        <Link
+          to="/read/$workId"
+          params={{ workId: primary.id }}
+          search={{ at: primary.breathIndex }}
+          className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5"
+        >
+          <span className="type-kicker opacity-80">Reading now</span>
+          <span className="mt-1 font-serif text-3xl leading-none">{primary.title}</span>
+          {primary.author ? <span className="mt-2 font-serif text-lg opacity-80">{primary.author}</span> : null}
+        </Link>
+        <Link
+          to="/read/$workId"
+          params={{ workId: primary.id }}
+          search={{ at: primary.breathIndex }}
+          className="flex items-center border-l border-paper/30 px-4 font-sans text-sm"
+        >
+          Continue
+        </Link>
+      </div>
+      {more.length > 0 ? (
+        <button
+          type="button"
+          onClick={() => setOpen((value) => !value)}
+          className="flex min-h-12 w-full items-center border-t border-paper/30 px-4 text-left font-sans text-sm"
+          aria-expanded={open}
+        >
+          {more.length === 1 ? "1 more on your desk" : `${more.length} more on your desk`}
+        </button>
+      ) : null}
+      {open
+        ? more.map((work) => (
+            <Link
+              key={work.id}
+              to="/read/$workId"
+              params={{ workId: work.id }}
+              search={{ at: work.breathIndex }}
+              className="block border-t border-paper/30 px-4 py-3"
+            >
+              <span className="type-kicker opacity-75">{work.author}</span>
+              <span className="mt-1 block font-serif text-xl">{work.title}</span>
+            </Link>
+          ))
+        : null}
+    </section>
+  );
+}
+
+function LineOfDay({
+  progress,
+  hydrated,
+}: {
+  progress: Record<string, WorkProgress>;
+  hydrated: boolean;
+}) {
+  const lines = useKeptLines(progress, hydrated, 24);
+  const now = new Date();
+  const day = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+  const line = useMemo(() => {
+    if (lines.length === 0) return null;
+    let hash = 0;
+    for (const char of day) hash = (hash * 33 + char.charCodeAt(0)) >>> 0;
+    return lines[hash % lines.length] ?? lines[0] ?? null;
+  }, [lines, day]);
+  const [shown, setShown] = useState<"hidden" | "remember" | "show">("hidden");
+  if (!line) {
+    return (
+      <section className="border-b border-ink px-4 py-5">
+        <p className="type-kicker text-muted">Line of the day</p>
+        <p className="mt-2 font-serif text-2xl">No line waiting. Keep one while you read.</p>
+      </section>
+    );
+  }
+  const cloaked = cloakLine(line.text);
+  const reveal = shown !== "hidden";
+  return (
+    <section className="border-b border-ink bg-paper px-4 py-5 text-ink">
+      <p className="type-kicker text-muted">Line of the day · Kept</p>
+      <p className="mt-1 font-sans text-sm text-ink/60">
+        {line.title}
+        {line.author ? ` · ${line.author}` : ""}
+      </p>
+      <blockquote className="mt-3 font-serif text-2xl leading-snug">
+        “{reveal ? line.text : cloaked}”
+      </blockquote>
+      {shown === "remember" ? (
+        <p className="mt-3 font-serif text-lg text-ink/75">Trying to recall it helps it stay.</p>
+      ) : null}
+      <div className="mt-4 flex gap-px bg-ink">
+        <button
+          type="button"
+          onClick={() => setShown("remember")}
+          className="min-h-12 flex-1 bg-ink px-3 font-sans text-sm text-paper"
+        >
+          I remember
+        </button>
+        <button
+          type="button"
+          onClick={() => setShown("show")}
+          className="min-h-12 flex-1 bg-yellow px-3 font-sans text-sm text-ink"
+        >
+          Show me
+        </button>
+      </div>
+    </section>
+  );
+}
+
+function cloakLine(text: string) {
+  const words = text.trim().split(/\s+/);
+  if (words.length < 6) return words.slice(0, Math.max(2, words.length - 2)).join(" ") + " …";
+  const cut = Math.min(8, Math.max(3, Math.ceil(words.length * 0.28)));
+  return words.slice(0, words.length - cut).join(" ") + " …";
+}
+
+function Trends({
+  reading,
+  model,
+  span,
+  onSpan,
+  onOpen,
+  end,
+}: {
+  reading: ReadingStats;
+  model: ReadingModel;
+  span: TrendSpan;
+  onSpan: (span: TrendSpan) => void;
+  onOpen: (id: ContributorId) => void;
+  end?: ReactNode;
+}) {
+  return (
+    <>
+      <div className="grid grid-cols-3 border-b border-ink" role="tablist" aria-label="Trends">
+        {(["week", "month", "year"] as const).map((id) => (
+          <button
+            key={id}
+            type="button"
+            role="tab"
+            aria-selected={span === id}
+            onClick={() => onSpan(id)}
+            className={cn(
+              "type-kicker min-h-12 capitalize",
+              span === id ? "bg-blue text-paper" : "bg-paper text-ink",
+            )}
+          >
+            {id}
+          </button>
+        ))}
+      </div>
+      {span === "week" ? <WeekTrend model={model} /> : null}
+      {span === "month" ? <MonthTrend model={model} /> : null}
+      {span === "year" ? <YearTrend model={model} /> : null}
+      <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Contributor trends · 4 weeks</p>
+      <ContributorBars parts={model.week.contributors} onOpen={onOpen} />
+      <YouActivity items={reading.activity} />
+      <LaneStrip lanes={reading.lanes} />
+      {end}
+    </>
+  );
+}
+
+function WeekTrend({ model }: { model: ReadingModel }) {
+  const days = model.week.days;
+  const band = model.week.usualBand;
+  return (
+    <section>
+      <div className="border-b border-ink px-4 py-4">
+        <p className="font-serif text-4xl leading-none">{model.week.score ?? "—"}</p>
+        <p className="mt-2 font-sans text-sm text-ink/70">{model.week.detail}</p>
+      </div>
+      <div className="grid grid-cols-7 gap-px bg-ink" role="group" aria-label="This week">
+        {days.map((day) => (
+          <WeekBar key={day.key} day={day} band={band} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function WeekBar({ day, band }: { day: TrendDay; band: { low: number; high: number } | null }) {
+  const height = day.score != null ? Math.max(12, Math.round((day.score / 100) * 88)) : 8;
+  const label = day.kind === "reading" ? String(day.score) : day.kind === "quick-visit" ? "visit" : day.kind === "paused" ? "pause" : "rest";
+  return (
+    <div className={cn("flex min-h-36 flex-col justify-end px-1 py-2", day.kind === "reading" ? "bg-paper text-ink" : "bg-paper-deep text-ink/70")}>
+      <span className="relative mx-auto mb-2 w-3 flex-1">
+        {band && day.kind === "reading" ? (
+          <span
+            className="absolute inset-x-[-4px] bg-yellow/70"
+            style={{
+              bottom: `${band.low}%`,
+              height: `${Math.max(4, band.high - band.low)}%`,
+            }}
+            aria-hidden
+          />
+        ) : null}
+        {day.score != null ? (
+          <span className="absolute inset-x-0 bottom-0 bg-forest" style={{ height }} aria-hidden />
+        ) : null}
+      </span>
+      <span className="text-center font-sans text-[11px] uppercase">{day.label}</span>
+      <span className="mt-1 text-center font-sans text-[11px]">{label}</span>
+      {day.minutes > 0 && day.kind !== "reading" ? (
+        <span className="sr-only">{formatActiveMinutes(day.minutes)} active</span>
+      ) : null}
+    </div>
+  );
+}
+
+function MonthTrend({ model }: { model: ReadingModel }) {
+  return (
+    <section className="border-b border-ink bg-paper px-4 py-5">
+      <p className="type-kicker text-muted">This month</p>
+      <p className="mt-2 font-serif text-4xl leading-none">{model.month.score ?? "—"}</p>
+      <p className="mt-3 max-w-prose font-serif text-xl leading-snug">{model.month.line}</p>
+      {model.month.versusPrior != null ? (
+        <p className="mt-3 font-sans text-sm text-ink/70">{versusCopy(model.month.versusPrior)} over the previous months</p>
+      ) : null}
+    </section>
+  );
+}
+
+function YearTrend({ model }: { model: ReadingModel }) {
+  const year = model.year;
+  const peak = Math.max(1, ...year.months.map((month) => month.score ?? 0));
+  return (
+    <section className="border-b border-ink px-4 py-5">
+      <p className="type-kicker text-muted">Year so far</p>
+      <p className="mt-2 font-serif text-2xl leading-snug">
+        {year.books} {year.books === 1 ? "book" : "books"} · {year.hours} h · {year.lines}{" "}
+        {year.lines === 1 ? "line" : "lines"} · {year.countries} {year.countries === 1 ? "country" : "countries"}
+      </p>
+      {year.forms > 0 ? (
+        <p className="mt-1 font-sans text-sm text-ink/65">
+          {year.forms} {year.forms === 1 ? "form" : "forms"}
+        </p>
+      ) : null}
+      <div className="mt-5 flex items-end gap-1" aria-label="Monthly scores">
+        {year.months.map((month) => (
+          <div key={month.key} className="flex min-w-0 flex-1 flex-col items-center">
+            <span
+              className="w-full bg-blue"
+              style={{ height: month.score != null ? Math.max(4, Math.round((month.score / peak) * 72)) : 2, opacity: month.score != null ? 1 : 0.25 }}
+            />
+            <span className="mt-1 font-sans text-[10px] text-ink/60">{month.label}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function YourLines({
+  progress,
+  favorites,
+  hydrated,
+}: {
+  progress: Record<string, WorkProgress>;
+  favorites: string[];
+  hydrated: boolean;
+}) {
+  return (
+    <>
+      <FavoriteWorks
+        ids={favorites}
+        hydrated={hydrated}
+        preview
+        rail
+        heading="Favorites"
+        empty="Heart a work while reading — it will live here."
+      />
+      <KeptSentences
+        progress={progress}
+        hydrated={hydrated}
+        preview
+        rail
+        empty="Tap Keep on a sentence. It will live in your collection."
+      />
+    </>
+  );
+}
+
+function ContributorSheet({
+  id,
+  part,
+  model,
+  scoreHide,
+  paused,
+  onBack,
+  onHide,
+  onPause,
+  onCalculated,
+}: {
+  id: ContributorId;
+  part: ContributorResult | null;
+  model: ReadingModel;
+  scoreHide: boolean;
+  paused: boolean;
+  onBack: () => void;
+  onHide: (hide: boolean) => void;
+  onPause: (paused: boolean) => void;
+  onCalculated: () => void;
+}) {
+  const copy = ABOUT[id];
+  const value = part?.status === "scored" && part.value != null ? String(part.value) : part?.status === "learning" ? "Still learning" : "—";
+  return (
+    <section className="bg-paper text-ink">
+      <button type="button" onClick={onBack} className="type-kicker flex min-h-12 items-center px-4">
+        ← Today
+      </button>
+      <div className="border-y border-ink px-4 py-5" style={{ background: COLOR[id], color: id === "rhythm" ? "var(--color-ink)" : "var(--color-paper)" }}>
+        <p className="type-kicker opacity-80">{NAME[id]}</p>
+        <p className="mt-2 font-serif text-6xl leading-none">{scoreHide && part?.status === "scored" ? NAME[id] : value}</p>
+        <p className="mt-3 font-sans text-sm opacity-80">
+          Weight {CONTRIBUTOR_WEIGHTS[id]}%
+          {model.daily.usualMinutes != null && id === "immersion"
+            ? ` · your usual ${Math.round(model.daily.usualMinutes)} min`
+            : ""}
+        </p>
+      </div>
+      <div className="px-4 py-5">
+        <p className="font-serif text-2xl leading-snug">{copy.about}</p>
+        <p className="mt-3 font-serif text-lg text-ink/75">{part?.note}</p>
+        <dl className="mt-5 grid grid-cols-1 gap-px bg-ink sm:grid-cols-2">
+          {factsFor(id, model).map((fact) => (
+            <div key={fact.label} className="bg-paper px-3 py-3">
+              <dt className="type-kicker text-muted">{fact.label}</dt>
+              <dd className="mt-1 font-serif text-xl">{fact.value}</dd>
+            </div>
+          ))}
+        </dl>
+        <p className="mt-5 type-kicker text-muted">Why it matters · {copy.evidence}</p>
+        <p className="mt-2 font-serif text-lg leading-snug">{copy.why}</p>
+        <p className="mt-5 type-kicker text-muted">Try</p>
+        <p className="mt-2 font-serif text-lg leading-snug">{copy.try}</p>
+        <button type="button" onClick={onCalculated} className="mt-5 font-sans text-sm underline underline-offset-4">
+          How this is calculated
+        </button>
+      </div>
+      <ScoreSwitches scoreHide={scoreHide} paused={paused} onHide={onHide} onPause={onPause} />
+    </section>
+  );
+}
+
+function factsFor(id: ContributorId, model: ReadingModel): { label: string; value: string }[] {
+  const daily = model.daily;
+  if (id === "immersion") {
+    return [
+      { label: "Focused minutes", value: daily.minutes > 0 ? `${formatActiveMinutes(daily.minutes)}` : "—" },
+      {
+        label: "Counted",
+        value: daily.skimmed ? `${formatActiveMinutes(daily.plausibleMinutes)} after pace` : daily.minutes > 0 ? formatActiveMinutes(daily.plausibleMinutes) : "—",
+      },
+      {
+        label: "Your usual",
+        value: daily.usualMinutes != null ? `${Math.round(daily.usualMinutes)} min` : "Still learning",
+      },
+      { label: "Longest unbroken run", value: "Still learning" },
+      { label: "Times you left the app", value: "Still learning" },
+      {
+        label: "Breaths at a skim pace",
+        value: !daily.paceKnown ? "Still learning" : daily.skimmed ? "Faster than twice your usual" : "Not on today’s average",
+      },
+    ];
+  }
+  if (id === "rhythm") {
+    return [
+      { label: "Reading days", value: model.week.detail },
+      { label: "Usual week", value: model.week.usualDays ?? "Still learning" },
+      { label: "Streaks", value: "Not used" },
+    ];
+  }
+  if (id === "return") {
+    return [
+      { label: "Book continuity", value: daily.contributors.find((part) => part.id === "return")?.status === "scored" ? "In the score" : "Still learning" },
+      { label: "Kept-line revisits", value: "Still learning" },
+    ];
+  }
+  if (id === "range") {
+    return [
+      { label: "Routes", value: "Variety or one long book" },
+      { label: "Month cap", value: "Removed" },
+    ];
+  }
+  if (id === "restfulness") {
+    return [
+      { label: "When it counts", value: "Evenings you read" },
+      { label: "Bedtime", value: "Still learning" },
+      { label: "Daylight colors", value: "Comfort only, not a sleep score" },
+    ];
+  }
+  return [
+    { label: "Who it includes", value: "People you already read with" },
+    { label: "Club messages", value: "Still learning" },
+    { label: "Comparisons", value: "Never" },
+  ];
+}
+
+function HowCalculated({ onBack }: { onBack: () => void }) {
+  return (
+    <section>
+      <button type="button" onClick={onBack} className="type-kicker flex min-h-12 items-center px-4">
+        ← Settings
+      </button>
+      <div className="border-y border-ink px-4 py-5">
+        <h2 className="font-serif text-4xl leading-none">How this is calculated</h2>
+        <p className="mt-3 font-serif text-lg text-ink/75">
+          The score stays on this device. It explains the reading. It doesn’t rank anyone, and it doesn’t send a notification.
+        </p>
+      </div>
+      {CONTRIBUTOR_IDS.map((id) => (
+        <article key={id} className="border-b border-ink px-4 py-4">
+          <p className="type-kicker" style={{ color: COLOR[id] }}>
+            {NAME[id]} · {CONTRIBUTOR_WEIGHTS[id]}% · {ABOUT[id].evidence}
+          </p>
+          <p className="mt-2 font-serif text-lg leading-snug">{ABOUT[id].how}</p>
+        </article>
+      ))}
+    </section>
+  );
+}
+
+function SettingsView({
+  settings,
+  scoreHide,
+  paused,
+  onHide,
+  onPause,
+  onCalculated,
+}: {
+  settings: ReactNode;
+  scoreHide: boolean;
+  paused: boolean;
+  onHide: (hide: boolean) => void;
+  onPause: (paused: boolean) => void;
+  onCalculated: () => void;
+}) {
+  return (
+    <section>
+      <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Settings</p>
+      <ScoreSwitches scoreHide={scoreHide} paused={paused} onHide={onHide} onPause={onPause} />
+      <button
+        type="button"
+        onClick={onCalculated}
+        className="flex min-h-14 w-full items-center border-b border-ink px-4 text-left font-serif text-xl"
+      >
+        How this is calculated
+      </button>
+      {settings}
+    </section>
+  );
+}
+
+function ScoreSwitches({
+  scoreHide,
+  paused,
+  onHide,
+  onPause,
+}: {
+  scoreHide: boolean;
+  paused: boolean;
+  onHide: (hide: boolean) => void;
+  onPause: (paused: boolean) => void;
+}) {
+  return (
+    <div className="grid grid-cols-2 gap-px border-b border-ink bg-ink">
+      <button
+        type="button"
+        onClick={() => onHide(!scoreHide)}
+        className={cn("min-h-16 px-3 py-3 text-left", scoreHide ? "bg-yellow text-ink" : "bg-paper text-ink")}
+        aria-pressed={scoreHide}
+      >
+        <span className="type-kicker">{scoreHide ? "Score hidden" : "Hide score"}</span>
+        <span className="mt-1 block font-serif text-lg leading-tight">
+          {scoreHide ? "Contributors stay" : "Keep the bars, hide the number"}
+        </span>
+      </button>
+      <button
+        type="button"
+        onClick={() => onPause(!paused)}
+        className={cn("min-h-16 px-3 py-3 text-left", paused ? "bg-ink text-paper" : "bg-paper text-ink")}
+        aria-pressed={paused}
+      >
+        <span className="type-kicker">{paused ? "Paused" : "Pause scoring"}</span>
+        <span className="mt-1 block font-serif text-lg leading-tight">
+          {paused ? "Resume when you’re ready" : "Travel, illness, or a rest"}
+        </span>
+      </button>
+    </div>
+  );
+}

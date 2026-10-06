@@ -78,6 +78,15 @@ type TbrState = {
   theme: "paper" | "dusk";
   /** Timed sit length in minutes; 0 = open (no hourglass end). */
   sittingMinutes: number;
+  /** Hide the score number. Contributors and the insight stay. */
+  scoreHide: boolean;
+  /** When set, the score is frozen at this instant. */
+  scorePausedAt: number | null;
+  /** Calendar days a pause asked the score to ignore. */
+  scoreIgnoredDays: string[];
+  /** Insight kinds the reader turned off. */
+  insightDismissed: string[];
+  insightSeen: { id: string; day: string } | null;
   progress: Record<string, WorkProgress>;
   pageWork: Work | null;
   following: string[];
@@ -134,6 +143,10 @@ type TbrState = {
   setTheme: (theme: "paper" | "dusk") => void;
   completeSerializeNight: (planId: string, n: number) => void;
   setSittingMinutes: (minutes: number) => void;
+  setScoreHide: (hide: boolean) => void;
+  setScorePaused: (paused: boolean) => void;
+  dismissInsight: (id: string) => void;
+  noteInsight: (id: string, day: string) => void;
   setPageWork: (work: Work | null) => void;
   toggleFollow: (readerId: string) => void;
   setHandle: (handle: string) => { ok: true; handle: string } | { ok: false; error: string };
@@ -375,6 +388,11 @@ export const useTbr = create<TbrState>()(
     (set, get) => ({
       theme: "paper",
       sittingMinutes: 20,
+      scoreHide: false,
+      scorePausedAt: null,
+      scoreIgnoredDays: [],
+      insightDismissed: [],
+      insightSeen: null,
       progress: {},
       pageWork: null,
       following: [],
@@ -467,6 +485,40 @@ export const useTbr = create<TbrState>()(
         })),
       setTheme: (theme) => set({ theme }),
       setSittingMinutes: (sittingMinutes) => set({ sittingMinutes: asSittingMinutes(sittingMinutes) }),
+      setScoreHide: (scoreHide) => set({ scoreHide }),
+      setScorePaused: (paused) =>
+        set((state) => {
+          if (paused) {
+            if (state.scorePausedAt) return {};
+            return { scorePausedAt: Date.now() };
+          }
+          if (!state.scorePausedAt) return { scorePausedAt: null };
+          const from = new Date(state.scorePausedAt);
+          from.setHours(12, 0, 0, 0);
+          const today = new Date();
+          today.setHours(12, 0, 0, 0);
+          const extra: string[] = [];
+          for (let t = from.getTime(); t < today.getTime(); t += 24 * 60 * 60 * 1000) {
+            extra.push(dayKey(t));
+          }
+          return {
+            scorePausedAt: null,
+            scoreIgnoredDays: [...new Set([...(state.scoreIgnoredDays ?? []), ...extra])],
+          };
+        }),
+      dismissInsight: (id) =>
+        set((state) => {
+          if (!id) return {};
+          const insightDismissed = state.insightDismissed ?? [];
+          if (insightDismissed.includes(id)) return {};
+          return { insightDismissed: [...insightDismissed, id] };
+        }),
+      noteInsight: (id, day) =>
+        set((state) => {
+          const next = id && day ? { id, day } : null;
+          if (state.insightSeen?.id === next?.id && state.insightSeen?.day === next?.day) return {};
+          return { insightSeen: next };
+        }),
       setPageWork: (pageWork) => set({ pageWork }),
       toggleFollow: (readerId) =>
         set((state) => {
@@ -805,6 +857,11 @@ export const useTbr = create<TbrState>()(
       partialize: (state) => ({
         theme: state.theme,
         sittingMinutes: state.sittingMinutes,
+        scoreHide: state.scoreHide,
+        scorePausedAt: state.scorePausedAt,
+        scoreIgnoredDays: state.scoreIgnoredDays,
+        insightDismissed: state.insightDismissed,
+        insightSeen: state.insightSeen,
         progress: state.progress,
         following: state.following,
         handle: state.handle,

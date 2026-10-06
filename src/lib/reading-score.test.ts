@@ -2,141 +2,334 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
 import {
-  consistencyPts,
-  dailyReadingScore,
+  buildReadingScore,
   dailyScoreGlance,
-  depthPts,
   deriveWindowScores,
-  engagementPts,
-  focusedTimePts,
-  mixPts,
-  monthlyReadingScore,
-  scoreForDay,
-  weeklyReadingScore,
+  plausibleMinutes,
+  restfulnessPoints,
+  scoreLabel,
+  weightedContributorScore,
+  type SitPoint,
+  type WorkSnapshot,
 } from "./reading-score.ts";
 import { deriveReadingStats } from "./reading-stats.ts";
 import { dayKey } from "./day-key.ts";
 
-test("focused time is linear to 40 at 30 active minutes and never exceeds 40", () => {
-  assert.equal(focusedTimePts(0), 0);
-  assert.equal(focusedTimePts(15), 20);
-  assert.equal(focusedTimePts(30), 40);
-  assert.equal(focusedTimePts(90), 40);
+const NOW = Date.parse("2026-06-15T16:00:00");
+const MS_DAY = 24 * 60 * 60 * 1000;
+
+function keyAt(offset: number, now = NOW) {
+  return dayKey(now - offset * MS_DAY);
+}
+
+function atHour(offset: number, hour: number, minute = 0, now = NOW) {
+  const date = new Date(now - offset * MS_DAY);
+  date.setHours(hour, minute, 0, 0);
+  return date.getTime();
+}
+
+function fillDays(days: number, minutes: number, advances: number, now = NOW) {
+  const readingMinutesByDay: Record<string, number> = {};
+  const advancesByDay: Record<string, number> = {};
+  const worksTouchedByDay: Record<string, string[]> = {};
+  for (let i = 0; i < days; i++) {
+    const key = keyAt(i, now);
+    readingMinutesByDay[key] = minutes;
+    advancesByDay[key] = advances;
+    worksTouchedByDay[key] = ["the-house-of-mirth"];
+  }
+  return { readingMinutesByDay, advancesByDay, worksTouchedByDay };
+}
+
+const novel: WorkSnapshot = {
+  id: "the-house-of-mirth",
+  title: "The House of Mirth",
+  form: "novel",
+  country: "United States",
+  year: 1905,
+  progress: 0.4,
+  finishedAt: null,
+};
+
+test("example day lands on 81, Settled, with Connection left out", () => {
+  const total = weightedContributorScore([
+    { weight: 35, raw: 82 },
+    { weight: 20, raw: 88 },
+    { weight: 15, raw: 75 },
+    { weight: 10, raw: 60 },
+    { weight: 10, raw: 90 },
+  ]);
+  assert.equal(total, 81);
+  assert.equal(scoreLabel(81), "Settled");
+  assert.equal(scoreLabel(49), "Light");
+  assert.equal(scoreLabel(50), "Present");
+  assert.equal(scoreLabel(69), "Present");
+  assert.equal(scoreLabel(70), "Settled");
+  assert.equal(scoreLabel(84), "Settled");
+  assert.equal(scoreLabel(85), "Deep");
+  assert.equal(scoreLabel(100), "Deep");
 });
 
-test("depth scores peeking (no advance) at zero and fills with breaths or a scene", () => {
-  assert.equal(depthPts(0, 0), 0);
-  assert.ok(depthPts(5, 0) > 0);
-  assert.ok(depthPts(5, 0) < 25);
-  assert.equal(depthPts(20, 0), 25);
-  assert.ok(depthPts(2, 1) >= 10);
-  assert.equal(depthPts(20, 3), 25);
-});
-
-test("engagement fills on any keep, host open, sit, or club touch", () => {
-  assert.equal(engagementPts({ keeps: 0, hostOpens: 0, sits: 0, clubTouches: 0 }), 0);
-  assert.equal(engagementPts({ keeps: 1, hostOpens: 0, sits: 0, clubTouches: 0 }), 15);
-  assert.equal(engagementPts({ keeps: 0, hostOpens: 1, sits: 0, clubTouches: 0 }), 15);
-  assert.equal(engagementPts({ keeps: 0, hostOpens: 0, sits: 1, clubTouches: 0 }), 15);
-  assert.equal(engagementPts({ keeps: 0, hostOpens: 0, sits: 0, clubTouches: 2 }), 15);
-});
-
-test("consistency and mix pillars", () => {
-  assert.equal(consistencyPts(false), 0);
-  assert.equal(consistencyPts(true), 10);
-  assert.equal(mixPts(1, 0), 0);
-  assert.equal(mixPts(2, 0), 10);
-  assert.equal(mixPts(1, 1), 10);
-});
-
-test("band: under ~10 min usually stays below 50", () => {
-  const score = dailyReadingScore({
-    minutes: 9,
-    advances: 8,
-    sceneCrosses: 0,
-    keeps: 0,
-    hostOpens: 0,
-    sits: 0,
-    clubTouches: 0,
-    worksTouched: 1,
+test("one tap then close is a quick visit and does not score", () => {
+  const model = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers: {
+      readingMinutesByDay: { [keyAt(0)]: 1.5 },
+      advancesByDay: { [keyAt(0)]: 1 },
+      sitsByDay: { [keyAt(0)]: 1 },
+    },
+    sits: [{ workId: "the-house-of-mirth", minutes: 1.5, endedAt: atHour(0, 21, 5) }],
   });
-  assert.ok(score.total < 50, `expected <50, got ${score.total}`);
+  assert.equal(model.daily.kind, "quick-visit");
+  assert.equal(model.daily.total, 0);
+  assert.equal(model.daily.hasSignal, false);
+  assert.equal(dailyScoreGlance(model.daily), "—");
+  assert.equal(model.daily.label, "Quick visit");
 });
 
-test("band: 15–20 min with depth lands in the 70s when engaged", () => {
-  const score = dailyReadingScore({
-    minutes: 18,
-    advances: 20,
-    sceneCrosses: 1,
-    keeps: 1,
-    hostOpens: 0,
-    sits: 0,
-    clubTouches: 0,
-    worksTouched: 1,
+test("skimming 20 breaths in a minute does not score", () => {
+  const model = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers: {
+      readingMinutesByDay: { [keyAt(0)]: 1 },
+      advancesByDay: { [keyAt(0)]: 20 },
+      sitsByDay: { [keyAt(0)]: 1 },
+    },
   });
-  assert.ok(score.total >= 70 && score.total < 90, `expected 70s, got ${score.total}`);
-  // Mix optional — 90 without second work
-  assert.equal(score.pillars.mix, 0);
+  assert.equal(model.daily.kind, "quick-visit");
+  assert.equal(model.daily.total, 0);
+  assert.equal(dailyScoreGlance(model.daily), "—");
 });
 
-test("band: 30+ min attentive with keep or chapter → 90+; mix optional", () => {
-  const base = dailyReadingScore({
-    minutes: 30,
-    advances: 20,
-    sceneCrosses: 1,
-    keeps: 1,
-    hostOpens: 0,
-    sits: 0,
-    clubTouches: 0,
-    worksTouched: 1,
+test("a longer skim against a slow baseline does not score high", () => {
+  const ledgers = fillDays(40, 20, 20);
+  const today = keyAt(0);
+  ledgers.readingMinutesByDay[today] = 12;
+  ledgers.advancesByDay[today] = 240;
+  const model = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers,
+    works: [novel],
+    sits: [{ workId: novel.id, minutes: 12, endedAt: atHour(0, 15) }],
   });
-  assert.equal(base.total, 90);
-  assert.equal(base.pillars.mix, 0);
+  const immersion = model.daily.contributors.find((part) => part.id === "immersion");
+  assert.ok(
+    model.daily.kind === "quick-visit" || (immersion?.value ?? 100) < 50,
+    `expected a low or unscored skim, kind ${model.daily.kind} immersion ${immersion?.value}`,
+  );
+  if (model.daily.kind === "reading") {
+    assert.ok(model.daily.total < 70, `skim day scored ${model.daily.total}`);
+  }
+});
 
-  const full = dailyReadingScore({
-    minutes: 30,
-    advances: 20,
-    sceneCrosses: 1,
-    keeps: 1,
-    hostOpens: 0,
-    sits: 1,
-    clubTouches: 0,
-    worksTouched: 1,
+test("time past one and a half times the usual sit earns nothing extra", () => {
+  const usual = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers: {
+      ...fillDays(20, 20, 16),
+    },
   });
-  assert.equal(full.total, 100);
+  const longLedgers = fillDays(20, 20, 16);
+  longLedgers.readingMinutesByDay[keyAt(0)] = 80;
+  longLedgers.advancesByDay[keyAt(0)] = 64;
+  const long = buildReadingScore({ now: NOW, sittingMinutes: 20, ledgers: longLedgers });
+  const usualImmersion = usual.daily.contributors.find((part) => part.id === "immersion")?.value;
+  const longImmersion = long.daily.contributors.find((part) => part.id === "immersion")?.value;
+  assert.equal(usualImmersion, 100);
+  assert.equal(longImmersion, usualImmersion);
 });
 
-test("empty day is 0, not NaN", () => {
-  const score = dailyReadingScore({
-    minutes: 0,
-    advances: 0,
-    sceneCrosses: 0,
-    keeps: 0,
-    hostOpens: 0,
-    sits: 0,
-    clubTouches: 0,
-    worksTouched: 0,
+test("a missed day costs a daily reader about 2 points", () => {
+  const days = 80;
+  const fullMinutes: Record<string, number> = {};
+  const fullAdvances: Record<string, number> = {};
+  const touched: Record<string, string[]> = {};
+  const sits: SitPoint[] = [];
+  for (let i = 0; i < days; i++) {
+    const key = keyAt(i);
+    fullMinutes[key] = 20;
+    fullAdvances[key] = 16;
+    touched[key] = [novel.id];
+    sits.push({ workId: novel.id, minutes: 20, endedAt: atHour(i, i === 0 ? 21 : 15, 10) });
+  }
+  const missedMinutes = { ...fullMinutes };
+  const missedAdvances = { ...fullAdvances };
+  const missedTouched = { ...touched };
+  const missedSits = sits.filter((sit) => dayKey(sit.endedAt) !== keyAt(1));
+  delete missedMinutes[keyAt(1)];
+  delete missedAdvances[keyAt(1)];
+  delete missedTouched[keyAt(1)];
+
+  const shared = {
+    sittingMinutes: 20,
+    works: [novel],
+    connection: { optIn: true, sessions: [atHour(0, 21), atHour(2, 15)], keeps: [] },
+  };
+  const steady = buildReadingScore({
+    now: NOW,
+    ...shared,
+    ledgers: { readingMinutesByDay: fullMinutes, advancesByDay: fullAdvances, worksTouchedByDay: touched },
+    sits,
   });
-  assert.equal(score.total, 0);
-  assert.equal(score.label, "Unopened");
-  assert.equal(Number.isNaN(score.total), false);
+  const missed = buildReadingScore({
+    now: NOW,
+    ...shared,
+    ledgers: {
+      readingMinutesByDay: missedMinutes,
+      advancesByDay: missedAdvances,
+      worksTouchedByDay: missedTouched,
+    },
+    sits: missedSits,
+  });
+
+  const steadyRhythm = steady.daily.contributors.find((part) => part.id === "rhythm");
+  const missedRhythm = missed.daily.contributors.find((part) => part.id === "rhythm");
+  assert.equal(steadyRhythm?.value, 100);
+  assert.equal(missedRhythm?.value, 88);
+  const drop = steady.daily.total - missed.daily.total;
+  assert.ok(drop >= 2 && drop <= 3, `expected about 2 points, drop was ${drop} (${steady.daily.total} → ${missed.daily.total})`);
+  assert.equal(steady.daily.label, "Deep");
+  assert.notEqual(missed.daily.label, "Full");
 });
 
-test("weekly uses best 5 of 7 and adds a streak bonus at ≥5 reading days", () => {
-  const soft = weeklyReadingScore([90, 90, 90, 90, 90, 10, 0], 5);
-  // avg of five 90s = 90, +4 bonus
-  assert.equal(soft.total, 94);
-
-  const thin = weeklyReadingScore([80, 0, 0, 0, 0, 0, 0], 1);
-  assert.equal(thin.total, 16); // (80+0+0+0+0)/5
+test("quick visits do not credit or penalise rhythm", () => {
+  const ledgers = fillDays(70, 20, 16);
+  const yesterday = keyAt(1);
+  ledgers.readingMinutesByDay[yesterday] = 1;
+  ledgers.advancesByDay[yesterday] = 1;
+  const withVisit = buildReadingScore({ now: NOW, sittingMinutes: 20, ledgers, works: [novel] });
+  delete ledgers.readingMinutesByDay[yesterday];
+  delete ledgers.advancesByDay[yesterday];
+  const withMiss = buildReadingScore({ now: NOW, sittingMinutes: 20, ledgers, works: [novel] });
+  const visitRhythm = withVisit.daily.contributors.find((part) => part.id === "rhythm")?.value ?? 0;
+  const missRhythm = withMiss.daily.contributors.find((part) => part.id === "rhythm")?.value ?? 0;
+  assert.ok(visitRhythm > missRhythm, `visit ${visitRhythm} should beat a real miss ${missRhythm}`);
+  assert.ok(visitRhythm >= 98);
 });
 
-test("monthly mean soft-caps without breadth across three works", () => {
-  const capped = monthlyReadingScore([95, 95, 95, 95], 1);
-  assert.ok(capped.total <= 81, `expected soft-cap, got ${capped.total}`);
+test("connection drops out until the reader opts in, and weights scale up", () => {
+  const ledgers = fillDays(70, 20, 16);
+  const solitary = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers,
+    works: [novel],
+    sits: [{ workId: novel.id, minutes: 20, endedAt: atHour(0, 15) }],
+  });
+  const connection = solitary.daily.contributors.find((part) => part.id === "connection");
+  assert.equal(connection?.status, "excluded");
+  assert.equal(connection?.value, null);
+  assert.equal(solitary.daily.total, 100);
+});
 
-  const open = monthlyReadingScore([95, 95, 95, 95], 3);
-  assert.equal(open.total, 95);
+test("restfulness is only scored on evenings, and falls after 1am", () => {
+  assert.equal(
+    restfulnessPoints({ endedAt: atHour(0, 21, 10), minutes: 20, planned: 20, daylight: false }),
+    100,
+  );
+  const late = restfulnessPoints({
+    endedAt: atHour(0, 1, 40),
+    minutes: 20,
+    planned: 20,
+    daylight: false,
+  });
+  assert.ok(late < 90, `expected a late sit to fall, got ${late}`);
+
+  const afternoon = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers: fillDays(10, 20, 16),
+    sits: [{ workId: novel.id, minutes: 20, endedAt: atHour(0, 15) }],
+    works: [novel],
+  });
+  assert.equal(afternoon.daily.contributors.find((part) => part.id === "restfulness")?.status, "excluded");
+
+  const evening = buildReadingScore({
+    now: Date.parse("2026-06-15T22:30:00"),
+    sittingMinutes: 20,
+    ledgers: fillDays(10, 20, 16),
+    sits: [{ workId: novel.id, minutes: 20, endedAt: atHour(0, 21, 10) }],
+    works: [novel],
+  });
+  assert.equal(evening.daily.contributors.find((part) => part.id === "restfulness")?.status, "scored");
+  assert.equal(evening.daily.contributors.find((part) => part.id === "restfulness")?.value, 100);
+});
+
+test("a new reader’s missing contributors stay learning and do not invent numbers", () => {
+  const model = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 12,
+    ledgers: {
+      readingMinutesByDay: { [keyAt(0)]: 12 },
+      advancesByDay: { [keyAt(0)]: 8 },
+    },
+  });
+  assert.equal(model.daily.kind, "reading");
+  assert.match(model.daily.learningNote ?? "", /Learning your rhythm/);
+  const rhythm = model.daily.contributors.find((part) => part.id === "rhythm");
+  const returned = model.daily.contributors.find((part) => part.id === "return");
+  const range = model.daily.contributors.find((part) => part.id === "range");
+  assert.equal(rhythm?.status, "learning");
+  assert.equal(rhythm?.value, null);
+  assert.equal(returned?.status, "learning");
+  assert.equal(range?.status, "learning");
+  assert.equal(model.daily.contributors.find((part) => part.id === "immersion")?.status, "scored");
+  assert.ok(model.daily.total > 0 && model.daily.total <= 100);
+});
+
+test("kept lines do not raise the score by how many were collected", () => {
+  const base = {
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers: fillDays(8, 20, 16),
+    works: [novel],
+  };
+  const few = buildReadingScore(base);
+  const many = buildReadingScore({
+    ...base,
+    ledgers: { ...base.ledgers, keepsByDay: { [keyAt(0)]: 40, [keyAt(1)]: 40 } },
+  });
+  assert.equal(few.daily.total, many.daily.total);
+});
+
+test("one novel can still reach a high month — no breadth cap, partial weeks are not zero-filled", () => {
+  const ledgers = fillDays(20, 20, 16);
+  const model = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers,
+    works: [novel],
+    sits: Array.from({ length: 20 }, (_, i) => ({
+      workId: novel.id,
+      minutes: 20,
+      endedAt: atHour(i, 15),
+    })),
+  });
+  assert.ok((model.month.score ?? 0) > 81, `month ${model.month.score} should clear the old cap`);
+  assert.equal(model.month.detail.includes("breadth"), false);
+});
+
+test("skim pace scales minutes and a slow pace does not", () => {
+  assert.equal(plausibleMinutes(10, 20, null).skimmed, false);
+  const skim = plausibleMinutes(10, 200, 60);
+  assert.equal(skim.skimmed, true);
+  assert.ok(skim.minutes < 3);
+  const steady = plausibleMinutes(20, 20, 60);
+  assert.equal(steady.skimmed, false);
+  assert.equal(steady.minutes, 20);
+});
+
+test("rest day and empty glance stay a dash, never zero", () => {
+  const rest = buildReadingScore({ now: NOW, ledgers: {}, sittingMinutes: 20 });
+  assert.equal(rest.daily.kind, "rest");
+  assert.equal(rest.daily.total, 0);
+  assert.equal(dailyScoreGlance(rest.daily), "—");
+  assert.equal(dailyScoreGlance(null), "—");
+  assert.equal(dailyScoreGlance({ total: 0, hasSignal: true }), "—");
 });
 
 test("homepage glance matches the You-page daily total and stays soft at zero", () => {
@@ -153,18 +346,13 @@ test("homepage glance matches the You-page daily total and stays soft at zero", 
     sitsByDay: { [today]: 1 },
     now,
   });
-  assert.equal(reading.dailyScore.total, 100);
-  assert.equal(dailyScoreGlance(reading.dailyScore), "100");
+  assert.equal(reading.dailyScore.kind, "reading");
+  assert.ok(reading.dailyScore.total > 0 && reading.dailyScore.total <= 100);
   assert.equal(dailyScoreGlance(reading.dailyScore), String(reading.dailyScore.total));
 
   const empty = deriveReadingStats({ progress: {}, favorites: [], now });
   assert.equal(empty.dailyScore.total, 0);
   assert.equal(dailyScoreGlance(empty.dailyScore), "—");
-  assert.equal(dailyScoreGlance(null), "—");
-  assert.equal(
-    dailyScoreGlance({ total: 0, hasSignal: true }),
-    "—",
-  );
 });
 
 test("homepage score tile sits beside the resume column and reuses the You daily score", () => {
@@ -229,8 +417,9 @@ test("deriveWindowScores wires daily / weekly / monthly from day ledgers", () =>
     clubTouchesByDay: {},
   };
   const windows = deriveWindowScores(ledgers, now);
-  assert.equal(windows.daily.total, 100);
+  assert.equal(windows.daily.kind, "reading");
+  assert.ok(windows.daily.total > 0);
   assert.ok(windows.weekly.total > 0);
   assert.ok(windows.monthly.total > 0);
-  assert.equal(scoreForDay(ledgers, "1999-01-01").total, 0);
+  assert.equal(windows.daily.label === "Full", false);
 });
