@@ -2738,7 +2738,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-hesperides-and-noble-numbers": {
       opening:
         "I sing of brooks, of blossoms, birds and bowers, Of April, May, of June and July-flowers; I sing of May-poles, hock-carts, wassails, wakes, Of bridegrooms, brides and of their bridal cakes; I write of youth, of love, and",
-      breaths: 6876,
+      breaths: 6846,
       scenes: 504,
       gutenberg: 22421,
     },

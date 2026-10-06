@@ -13,83 +13,102 @@
       "title": "Dallas · Atlanta · San Francisco",
       "place": "Dallas · Atlanta · San Francisco",
       "reentry": "Macmillan & Co., Limited",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s1",
       "title": "Melbourne",
       "place": "Melbourne",
       "reentry": "The Macmillan Co. of Canada, Ltd.",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s2",
       "title": "New York",
       "place": "New York",
       "reentry": "The Macmillan Company",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s3",
       "title": "1915",
       "place": "1915",
       "reentry": "Set up and electrotyped. Published September, 1913 Reprinted April, 1915.",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s4",
       "title": "Years ago. J. M",
       "place": "Years ago. J. M",
       "reentry": "*9th June 1913*",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s5",
       "title": "Page",
       "place": "Page",
       "reentry": "A Consecration",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s6",
       "title": "‘He’s deader ’n nails,’ the fo’c’s’le said, ‘’n’",
       "place": "‘He’s deader ’n nails,’ the fo’c’s’le said, ‘’n’",
       "reentry": "gone to his long sleep’ 11",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s7",
       "title": "Christmas Eve At Sea",
       "place": "Christmas Eve At Sea",
       "reentry": "A wind is rustling ‘south and soft’ 64",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s8",
       "title": "The Dead Knight",
       "place": "The Dead Knight",
       "reentry": "The cleanly rush of the mountain air 89",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s9",
       "title": "On Malvern Hill",
       "place": "On Malvern Hill",
       "reentry": "A wind is brushing down the clover 92",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s10",
       "title": "‘Rest Her Soul, She’s Dead!’",
       "place": "‘Rest Her Soul, She’s Dead!’",
       "reentry": "She has done with the sea’s sorrow and the world’s way 97",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
+    },
+    {
+      "id": "s11-front",
+      "title": "Contents and epigraph",
+      "place": "Contents and epigraph",
+      "reentry": "Once in the windy wintry weather 101",
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s11",
       "title": "In Memory of A. P. R",
       "place": "In Memory of A. P. R",
-      "reentry": "Once in the windy wintry weather 101",
+      "reentry": "A Consecration",
       "prompt": "What does the poem hold?"
     },
     {
@@ -1966,52 +1985,52 @@
     },
     {
       "id": "s11-0",
-      "sceneId": "s11",
+      "sceneId": "s11-front",
       "text": "Once in the windy wintry weather 101"
     },
     {
       "id": "s11-1",
-      "sceneId": "s11",
+      "sceneId": "s11-front",
       "text": "TO-Morrow"
     },
     {
       "id": "s11-2",
-      "sceneId": "s11",
+      "sceneId": "s11-front",
       "text": "Oh yesterday the cutting edge drank thirstily and deep 102"
     },
     {
       "id": "s11-3",
-      "sceneId": "s11",
+      "sceneId": "s11-front",
       "text": "Cavalier"
     },
     {
       "id": "s11-4",
-      "sceneId": "s11",
+      "sceneId": "s11-front",
       "text": "All the merry kettle-drums are thudding into rhyme 104"
     },
     {
       "id": "s11-5",
-      "sceneId": "s11",
+      "sceneId": "s11-front",
       "text": "A Song at Parting"
     },
     {
       "id": "s11-6",
-      "sceneId": "s11",
+      "sceneId": "s11-front",
       "text": "The tick of the blood is settling slow, my heart will soon be still 106"
     },
     {
       "id": "s11-7",
-      "sceneId": "s11",
+      "sceneId": "s11-front",
       "text": "Glossary 109"
     },
     {
       "id": "s11-8",
-      "sceneId": "s11",
+      "sceneId": "s11-front",
       "text": "‘The mariners are a pleasant people, but little like those in the towns, and they can speak no other language than that used in ships.’"
     },
     {
       "id": "s11-9",
-      "sceneId": "s11",
+      "sceneId": "s11-front",
       "text": "*The Licenciate Vidriera.*"
     },
     {

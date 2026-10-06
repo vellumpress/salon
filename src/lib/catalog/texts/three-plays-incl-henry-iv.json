@@ -10,22 +10,22 @@
   "scenes": [
     {
       "id": "s0",
-      "title": "Act Ii",
-      "place": "Act Ii",
+      "title": "Act II",
+      "place": "Act II",
       "reentry": "*The stage call-bells ring to warn the company that the play is about to begin again.*",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s1",
-      "title": "Act Iii",
-      "place": "Act Iii",
+      "title": "Act III",
+      "place": "Act III",
       "reentry": "*When the curtain goes up again, it is seen that the stage hands have shifted the bit of scenery used in the last part, and have rigged up instead at the back of the stage a drop, with some trees, and one or two wings. A portion of a founta",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
-      "title": "\"Henry Iv.\"",
-      "place": "\"Henry Iv.\"",
+      "title": "\"Henry IV.\"",
+      "place": "\"Henry IV.\"",
       "reentry": "(*Enrico Quarto*)",
       "prompt": "A word from this stretch."
     },
@@ -38,8 +38,8 @@
     },
     {
       "id": "s4",
-      "title": "\"Henry Iv.\" the Marchioness Matilda",
-      "place": "\"Henry Iv.\" the Marchioness Matilda",
+      "title": "\"Henry IV.\" the Marchioness Matilda",
+      "place": "\"Henry IV.\" the Marchioness Matilda",
       "reentry": "SPINA, HER DAUGHTER FRIDA. THE YOUNG MARQUIS CHARLES DI NOLLI. BARON TITO BELCREDI. DOCTOR DIONYSIUS GENONI. THE FOUR PRIVATE COUNSELLORS: HAROLD (FRANK), LANDOLPH (LOLO), ORDULPH (MOMO), BERTHOLD (FINO). (*The names in brackets are nick-na",
       "prompt": "A word from this stretch."
     },
@@ -59,8 +59,8 @@
     },
     {
       "id": "s7",
-      "title": "Act Ii",
-      "place": "Act Ii",
+      "title": "Act II",
+      "place": "Act II",
       "reentry": "(*Another room of the villa, adjoining the throne room. Its furniture is antique and severe. Principal exit at rear in the background. To the left, two windows looking on the garden. To the right, a door opening into the throne room.*",
       "prompt": "A word from this stretch."
     },
@@ -115,8 +115,8 @@
     },
     {
       "id": "s15",
-      "title": "Act Ii",
-      "place": "Act Ii",
+      "title": "Act II",
+      "place": "Act II",
       "reentry": "*Councillor Agazzi's study in the same house. Antique furnishings with old paintings on the walls. A portière over the rear entrance and over the door to the left which opens into the drawing room shown in the first act. To the right a subs",
       "prompt": "A word from this stretch."
     },
@@ -129,8 +129,8 @@
     },
     {
       "id": "s17",
-      "title": "Act Iii",
-      "place": "Act Iii",
+      "title": "Act III",
+      "place": "Act III",
       "reentry": "*The same scene. As the curtain rises, Laudisi is sprawling in an easy chair, reading a book. Through the door that leads into the parlor on the left comes the confused murmur of many voices.*",
       "prompt": "A word from this stretch."
     },

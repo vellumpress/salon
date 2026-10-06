@@ -13,49 +13,56 @@
       "title": "Book I",
       "place": "Book I",
       "reentry": "I. LIFE OF SAINT MAËL II. THE APOSTOLICAL VOCATION OF SAINT MAËL III. THE TEMPTATION OF SAINT MAËL IV. ST. MAËL’S NAVIGATION ON THE OCEAN OF ICE V. THE BAPTISM OF THE PENGUINS VI. AN ASSEMBLY IN PARADISE VII. AN ASSEMBLY IN PARADISE (Contin",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s1",
       "title": "Book II",
       "place": "Book II",
       "reentry": "I. THE FIRST CLOTHES II. THE FIRST CLOTHES (Continuation and End) III. SETTING BOUNDS TO THE FIELDS AND THE ORIGIN OF PROPERTY IV. THE FIRST ASSEMBLY OF THE ESTATES OF PENGUINIA V. THE MARRIAGE OF KRAKEN AND ORBEROSIA VI. THE DRAGON OF ALCA",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s2",
       "title": "Book III",
       "place": "Book III",
       "reentry": "I. BRIAN THE GOOD AND QUEEN GLAMORGAN II. DRACO THE GREAT (Translation of the Relics of St. Orberosia) III. QUEEN CRUCHA IV. LETTERS: JOHANNES TALPA V. THE ARTS: THE PRIMITIVES OF PENGUIN PAINTING VI. MARBODIUS VII. SIGNS IN THE MOON",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s3",
       "title": "Book IV",
       "place": "Book IV",
       "reentry": "I. Mother Rouquin Ii. Trinco Iii. the Journey of Doctor Obnubile",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s4",
       "title": "Book V",
       "place": "Book V",
       "reentry": "I. THE REVEREND FATHERS AGARIC AND CORNEMUSE II. PRINCE CRUCHO III. THE CABAL IV. VISCOUNTESS OLIVE V. THE PRINCE DES BOSCÉNOS VI. THE EMIRAL’S FALL VII. CONCLUSION",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s5",
       "title": "Book VI",
       "place": "Book VI",
       "reentry": "I. General Greatauk, Duke of Skull Ii. Pyrot Iii. Count De Maubec De La Dentdulynx Iv. Colomban V. the Reverend Fathers Agaric and Cornemuse Vi. the Seven Hundred Pyrotists Vii. Bidault-Coquille and Maniflore, the Socialists Viii. the Colom",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s6",
       "title": "Book VII",
       "place": "Book VII",
       "reentry": "I. MADAME CLARENCE’S DRAWING-ROOM II. THE CHARITY OF ST. ORBEROSIA III. HIPPOLYTE CÉRÈS IV. A POLITICIAN’S MARRIAGE V. THE VISIRE CABINET VI. THE SOFA OF THE FAVOURITE VII. THE FIRST CONSEQUENCES VIII. FURTHER CONSEQUENCES IX. THE FINAL CON",
-      "prompt": "A word from this stretch."
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s7",
@@ -89,7 +96,7 @@
       "id": "s11",
       "title": "Book V",
       "place": "Book V",
-      "reentry": "I. the Reverend Fathers Agaric and Cornemuse",
+      "reentry": "I. The Reverend Fathers Agaric and Cornemuse",
       "prompt": "A word from this stretch."
     },
     {
@@ -176,7 +183,7 @@
     {
       "id": "s7-6",
       "sceneId": "s7",
-      "text": "Ii. the Apostolical Vocation of Saint Maël"
+      "text": "II. The Apostolical Vocation of Saint Maël"
     },
     {
       "id": "s7-7",
@@ -301,7 +308,7 @@
     {
       "id": "s7-31",
       "sceneId": "s7",
-      "text": "Iii. the Temptation of Saint Maël"
+      "text": "III. The Temptation of Saint Maël"
     },
     {
       "id": "s7-32",
@@ -536,7 +543,7 @@
     {
       "id": "s7-78",
       "sceneId": "s7",
-      "text": "V. the Baptism of the Penguins"
+      "text": "V. The Baptism of the Penguins"
     },
     {
       "id": "s7-79",
@@ -641,7 +648,7 @@
     {
       "id": "s7-99",
       "sceneId": "s7",
-      "text": "Vi. an Assembly in Paradise"
+      "text": "VI. An Assembly in Paradise"
     },
     {
       "id": "s7-100",
@@ -1036,7 +1043,7 @@
     {
       "id": "s7-178",
       "sceneId": "s7",
-      "text": "Viii. Metamorphosis of the Penguins"
+      "text": "VIII. Metamorphosis of the Penguins"
     },
     {
       "id": "s7-179",
@@ -1296,7 +1303,7 @@
     {
       "id": "s8-33",
       "sceneId": "s8",
-      "text": "Iii. Setting Bounds to the Fields and the Origin of Property"
+      "text": "III. Setting Bounds to the Fields and the Origin of Property"
     },
     {
       "id": "s8-34",
@@ -1436,7 +1443,7 @@
     {
       "id": "s8-61",
       "sceneId": "s8",
-      "text": "Iv. the First Assembly of the Estates of Penguinia"
+      "text": "IV. The First Assembly of the Estates of Penguinia"
     },
     {
       "id": "s8-62",
@@ -1521,7 +1528,7 @@
     {
       "id": "s8-78",
       "sceneId": "s8",
-      "text": "V. the Marriage of Kraken and Orberosia"
+      "text": "V. The Marriage of Kraken and Orberosia"
     },
     {
       "id": "s8-79",
@@ -1646,7 +1653,7 @@
     {
       "id": "s8-103",
       "sceneId": "s8",
-      "text": "Vi. the Dragon of Alca"
+      "text": "VI. The Dragon of Alca"
     },
     {
       "id": "s8-104",
@@ -2796,7 +2803,7 @@
     {
       "id": "s9-65",
       "sceneId": "s9",
-      "text": "Iv. Letters: Johannes Talpa"
+      "text": "IV. Letters: Johannes Talpa"
     },
     {
       "id": "s9-66",
@@ -2851,7 +2858,7 @@
     {
       "id": "s9-76",
       "sceneId": "s9",
-      "text": "V. the Arts: the Primitives of Penguin Painting"
+      "text": "V. The Arts: the Primitives of Penguin Painting"
     },
     {
       "id": "s9-77",
@@ -3181,7 +3188,7 @@
     {
       "id": "s9-142",
       "sceneId": "s9",
-      "text": "Vii. Signs in the Moon"
+      "text": "VII. Signs in the Moon"
     },
     {
       "id": "s9-143",
@@ -3456,7 +3463,7 @@
     {
       "id": "s10-46",
       "sceneId": "s10",
-      "text": "Iii. the Journey of Doctor Obnubile"
+      "text": "III. The Journey of Doctor Obnubile"
     },
     {
       "id": "s10-47",
@@ -3636,7 +3643,7 @@
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "I. the Reverend Fathers Agaric and Cornemuse"
+      "text": "I. The Reverend Fathers Agaric and Cornemuse"
     },
     {
       "id": "s11-1",
@@ -4146,7 +4153,7 @@
     {
       "id": "s11-102",
       "sceneId": "s11",
-      "text": "Iv. Viscountess Olive"
+      "text": "IV. Viscountess Olive"
     },
     {
       "id": "s11-103",
@@ -4391,7 +4398,7 @@
     {
       "id": "s11-151",
       "sceneId": "s11",
-      "text": "V. the Prince Des Boscénos"
+      "text": "V. The Prince Des Boscénos"
     },
     {
       "id": "s11-152",
@@ -5046,7 +5053,7 @@
     {
       "id": "s11-282",
       "sceneId": "s11",
-      "text": "Book Vi. Modern Times: the Affair of the Eighty Thousand Trusses of Hay"
+      "text": "Book VI. Modern Times: the Affair of the Eighty Thousand Trusses of Hay"
     },
     {
       "id": "s11-283",
@@ -5261,7 +5268,7 @@
     {
       "id": "s11-325",
       "sceneId": "s11",
-      "text": "Iii. Count De Maubec De La Dentdulynx"
+      "text": "III. Count De Maubec De La Dentdulynx"
     },
     {
       "id": "s11-326",
@@ -5376,7 +5383,7 @@
     {
       "id": "s11-348",
       "sceneId": "s11",
-      "text": "V. the Reverend Fathers Agaric and Cornemuse"
+      "text": "V. The Reverend Fathers Agaric and Cornemuse"
     },
     {
       "id": "s11-349",
@@ -5486,7 +5493,7 @@
     {
       "id": "s11-370",
       "sceneId": "s11",
-      "text": "Vi. the Seven Hundred Pyrotists"
+      "text": "VI. The Seven Hundred Pyrotists"
     },
     {
       "id": "s11-371",
@@ -5606,7 +5613,7 @@
     {
       "id": "s11-394",
       "sceneId": "s11",
-      "text": "Vii. Bidault-Coquille and Maniflore, the Socialists"
+      "text": "VII. Bidault-Coquille and Maniflore, the Socialists"
     },
     {
       "id": "s11-395",
@@ -5756,7 +5763,7 @@
     {
       "id": "s11-424",
       "sceneId": "s11",
-      "text": "Viii. the Colomban Trial"
+      "text": "VIII. The Colomban Trial"
     },
     {
       "id": "s11-425",
@@ -6306,7 +6313,7 @@
     {
       "id": "s12-19",
       "sceneId": "s12",
-      "text": "Ii. the Charity of St. Orberosia"
+      "text": "II. The Charity of St. Orberosia"
     },
     {
       "id": "s12-20",
@@ -6716,7 +6723,7 @@
     {
       "id": "s12-101",
       "sceneId": "s12",
-      "text": "V. the Visire Cabinet"
+      "text": "V. The Visire Cabinet"
     },
     {
       "id": "s12-102",
@@ -6806,7 +6813,7 @@
     {
       "id": "s12-119",
       "sceneId": "s12",
-      "text": "Vi. the Sofa of the Favourite"
+      "text": "VI. The Sofa of the Favourite"
     },
     {
       "id": "s12-120",
@@ -6876,7 +6883,7 @@
     {
       "id": "s12-133",
       "sceneId": "s12",
-      "text": "Vii. the First Consequences"
+      "text": "VII. The First Consequences"
     },
     {
       "id": "s12-134",
@@ -6956,7 +6963,7 @@
     {
       "id": "s12-149",
       "sceneId": "s12",
-      "text": "Viii. Further Consequences"
+      "text": "VIII. Further Consequences"
     },
     {
       "id": "s12-150",
@@ -7161,7 +7168,7 @@
     {
       "id": "s12-190",
       "sceneId": "s12",
-      "text": "Ix. the Final Consequences"
+      "text": "IX. The Final Consequences"
     },
     {
       "id": "s12-191",

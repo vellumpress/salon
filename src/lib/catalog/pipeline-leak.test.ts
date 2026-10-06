@@ -640,3 +640,91 @@ test("card openings are the book's first line, not producer or title-page residu
   }
   assert.deepEqual(hits, []);
 });
+
+/**
+ * Roman numerals in headings stay all caps. The old bind casing ran
+ * str.title() over caps headings ("Rune Iv", "Chap. Xxxix", "Ii. a Game of
+ * Chess") and #251's de-shout lowered line references ("[Ii.1-303]"). Scene
+ * titles and heading-length breaths are checked: a title-cased numeral after a
+ * heading word, opening the line before a period, or inside a bracketed line
+ * reference, and a lower-case word straight after a numbered heading.
+ */
+const ROMAN_NUMERAL = /^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/;
+const NUMERAL_HEADWORD =
+  String.raw`(?:Chap\.|Chapter|Chapters|Book|Books|Part|Volume|Vol\.|Canto|Rune|Act|Scene|Letter|Fable|Fables|Psalm|Section|Lib\.)`;
+const TITLE_CASED_NUMERAL: RegExp[] = [
+  new RegExp(String.raw`\b${NUMERAL_HEADWORD} ([IVXLC][ivxlc]+)\b`, "g"),
+  /^["“‘(*]*([IVXLC][ivxlc]+)\.(?:\s|$)/g,
+  /\[([IVXLC][ivxlc]+)\.\d/g,
+];
+const LOWER_AFTER_NUMBERED_HEADING = /^["“‘(*]*(?:[IVXLC]{2,}|\d+)\.\s+(the|a|an|in|at|on)\s+[A-Z]/;
+
+export function titleCasedNumerals(text: string): string[] {
+  const hits: string[] = [];
+  for (const pattern of TITLE_CASED_NUMERAL) {
+    for (const match of text.matchAll(pattern)) {
+      if (ROMAN_NUMERAL.test(match[1].toUpperCase())) hits.push(match[0]);
+    }
+  }
+  const lower = LOWER_AFTER_NUMBERED_HEADING.exec(text);
+  if (lower) hits.push(lower[0]);
+  return hits;
+}
+
+test("headings keep Roman numerals in caps and capitalise the word after a numbered heading", () => {
+  const here = fileURLToPath(new URL(".", import.meta.url));
+  const hits: string[] = [];
+  for (const folder of ["texts", "openings"] as const) {
+    for (const name of readdirSync(join(here, folder))) {
+      if (!name.endsWith(".json")) continue;
+      const book = JSON.parse(readFileSync(join(here, folder, name), "utf8")) as {
+        scenes: { id: string; title?: string; place?: string }[];
+        breaths: { id: string; text: string }[];
+      };
+      const fields: Array<[string, string]> = [
+        ...book.scenes.map((scene): [string, string] => [`${scene.id}.title`, scene.title ?? ""]),
+        ...book.scenes.map((scene): [string, string] => [`${scene.id}.place`, scene.place ?? ""]),
+        ...book.breaths
+          .filter((breath) => (breath.text ?? "").length <= 80)
+          .map((breath): [string, string] => [breath.id, breath.text]),
+      ];
+      for (const [where, value] of fields) {
+        for (const hit of titleCasedNumerals(value)) hits.push(`${folder}:${name}:${where} ${hit}`);
+      }
+    }
+  }
+  assert.deepEqual(hits, []);
+});
+
+test("the numeral gate trips on title-cased numerals and passes printed ones", () => {
+  for (const bad of ["Rune Iv", "Chap. Xxxix", "Ii. a Game of Chess", "[Ii.1-303] The Creation", "Letter Lxxiii", "VI. the Gods of Greece"]) {
+    assert.ok(titleCasedNumerals(bad).length > 0, bad);
+  }
+  for (const good of ["Rune IV", "Chap. XXXIX", "II. A Game of Chess", "[II.1-303] The Creation", "Vi sat ved bordet.", "Liv and Mix", "II. v. 81-84.", "L. of G.’s Purport"]) {
+    assert.deepEqual(titleCasedNumerals(good), [], good);
+  }
+});
+
+/**
+ * A card opening is a line of the book, not a contents run ("I. LIFE OF … II.
+ * … III. …"). The Ramayan card still opens on its canto list; it is listed
+ * here until its contents are tagged front.
+ */
+const CONTENTS_OPENING_PENDING = new Set<string>(["the-ramayan-of-valmiki"]);
+
+test("card openings are not a run of contents entries", () => {
+  const hits: string[] = [];
+  const stale: string[] = [];
+  for (const work of SHELF) {
+    const opening = (work as { opening?: string }).opening ?? "";
+    const numbered = opening.match(/(?:^|\s)(?:[IVXLC]+|\d+)\.\s+[A-Z]/g) ?? [];
+    const contents = numbered.length >= 3;
+    if (CONTENTS_OPENING_PENDING.has(work.id)) {
+      if (!contents) stale.push(work.id);
+      continue;
+    }
+    if (contents) hits.push(`${work.id}: ${opening.slice(0, 80)}`);
+  }
+  assert.deepEqual(hits, []);
+  assert.deepEqual(stale, [], "fixed works must leave CONTENTS_OPENING_PENDING");
+});

@@ -59,9 +59,9 @@
     },
     {
       "id": "s7",
-      "title": "V. the Tarn of Sacrifice                 86",
-      "place": "V. the Tarn of Sacrifice                 86",
-      "reentry": "Vi. the Valley of the Beasts 113",
+      "title": "V. The Tarn of Sacrifice                 86",
+      "place": "V. The Tarn of Sacrifice                 86",
+      "reentry": "VI. The Valley of the Beasts 113",
       "prompt": "A word from this stretch."
     },
     {
@@ -253,7 +253,7 @@
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "Vi. the Valley of the Beasts 113"
+      "text": "VI. The Valley of the Beasts 113"
     },
     {
       "id": "s7-1",
@@ -263,7 +263,7 @@
     {
       "id": "s7-2",
       "sceneId": "s7",
-      "text": "Viii. Egyptian Sorcery 151"
+      "text": "VIII. Egyptian Sorcery 151"
     },
     {
       "id": "s7-3",
@@ -273,7 +273,7 @@
     {
       "id": "s7-4",
       "sceneId": "s7",
-      "text": "X. the Man Who Found Out 192"
+      "text": "X. The Man Who Found Out 192"
     },
     {
       "id": "s7-5",
@@ -283,7 +283,7 @@
     {
       "id": "s7-6",
       "sceneId": "s7",
-      "text": "Xii. Wireless Confusion 230"
+      "text": "XII. Wireless Confusion 230"
     },
     {
       "id": "s7-7",
@@ -293,12 +293,12 @@
     {
       "id": "s7-8",
       "sceneId": "s7",
-      "text": "Xiv. the Lane That Ran East and West 259"
+      "text": "XIV. The Lane That Ran East and West 259"
     },
     {
       "id": "s7-9",
       "sceneId": "s7",
-      "text": "Xv. \"Vengeance Is Mine\" 279"
+      "text": "XV. \"Vengeance Is Mine\" 279"
     },
     {
       "id": "s7-10",
