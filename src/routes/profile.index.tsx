@@ -340,7 +340,7 @@ function ProfileBody({
                   <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
                     @name
                   </span>
-                  <span className="flex h-12 min-w-0 flex-1 items-center font-serif text-xl">
+                  <span className="type-lede flex h-12 min-w-0 flex-1 items-center">
                     {formatHandle(identity.handle)}
                   </span>
                 </div>
@@ -348,7 +348,7 @@ function ProfileBody({
                   <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
                     Email
                   </span>
-                  <span className="flex h-12 min-w-0 flex-1 items-center font-serif text-xl">
+                  <span className="type-lede flex h-12 min-w-0 flex-1 items-center">
                     {identity.email}
                   </span>
                 </div>
