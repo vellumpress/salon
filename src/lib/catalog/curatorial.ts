@@ -1222,6 +1222,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "love-among-the-chickens",
   // Mira Tue 6 Oct 2026 AM — Muslin follows Love Among the Chickens, plain Next. Never Featured. Off every Ritual lane.
   "muslin",
+  // Mira Tue 6 Oct 2026 — The Golden Age follows, Next carefully only (the content notes are on the card). Never Featured.
+  // Its one Ritual lane is on-a-walk (Alarums and Excursions); never unwind or before-sleep.
+  "the-golden-age",
 ] as const;
 
 /**
