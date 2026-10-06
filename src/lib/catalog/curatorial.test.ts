@@ -16495,7 +16495,7 @@ test("Mira Tue 6 Oct MID: The Spoilt Child is Next carefully after the-golden-ag
   assert.equal(opened.scenes.length, 1);
   assert.equal(opened.breaths.length, 9);
   for (let i = 0; i < opened.breaths.length; i += 1) assert.equal(opened.breaths[i]?.text, full.breaths[at + i]?.text, `open ${i}`);
-  assert.equal(opened.breaths.at(-1)?.text.endsWith("*Tauba! Tauba!*"), true);
+  assert.equal(opened.breaths.at(-1)?.text.endsWith("*Tauba! Tauba!*\""), true);
   assert.ok(opened.breaths.some((breath) => breath.text.includes("Mussulman")));
   assert.equal(opened.breaths.every((breath) => !/\[\d+\]/.test(breath.text)), true);
   const words = opened.breaths.reduce((n, breath) => n + breath.text.trim().split(/\s+/).length, 0);
