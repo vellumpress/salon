@@ -627,6 +627,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: an old banker dies of shock in the opening pages, a suicide is reported later, and there is gossip about 'Jewish blood'. Part Two makes sweeping racial claims about Greek bankers, describes 'big black satyrs' grunting like pigs, and prints the word 'negro' twice, all left as printed.",
   "a-monkey":
     "A heads-up before you start: this is one long comic monologue of exam-night nerves, with four short translator notes on the grading set in as you go.",
+  "the-golden-age":
+    "A heads-up before you start: one boy's war talk repeats a period stereotype about Indians, and later stories play at Indians; it's left as printed. Two boys trail a troop of soldiers through the village, sure a battle is coming, and get lost in the rain until the old doctor drives them home.",
   "the-counterfeiters":
     "A heads-up before you start: later in the novel, a schoolboy shoots himself in class with a pistol his classmates loaded as a dare. Two other characters attempt suicide, one woman is presumed drowned, a girl dies of illness, and a shipwreck story describes people drowning. Adult men pursue adolescent boys, there is adultery, and the book has period slurs and a journal passage that generalizes about Catholics, Jews and Protestants. All of it is left as printed. The first sitting contains none of the deaths or slurs.",
   "therese":

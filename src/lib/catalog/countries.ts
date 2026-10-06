@@ -724,6 +724,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "love-s-shadow": "United Kingdom",
   "lewis-and-irene": "France",
   "a-monkey": "Norway",
+  "the-golden-age": "United Kingdom",
   "the-counterfeiters": "France",
   "therese": "France",
   "elysium": "United Kingdom",
