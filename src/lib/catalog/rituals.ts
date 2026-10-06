@@ -607,6 +607,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `“Alarums and Excursions” is one complete story from The Golden Age — on a hot June day three children are playing at knights in the orchard when a troop of soldiers jingles past the hedge, and the narrator and his little brother Harold chase it across country, sure a battle lies ahead. It ends “…to the fact that the battle had been postponed.” A heads-up before you start: on the way the narrator tells Harold that Indians scalp and burn their prisoners, a schoolboy notion of the period, left as printed; and the boys get lost in the rain before the old doctor drives them home. Kenneth Grahame; the year is 1895, when the book first appeared. One story; the book continues with the Prologue and sixteen more. Bright and comic, made for walking. An English village and the fields beyond it.`,
   "winnie-the-pooh":
     `Edward Bear, known to his friends as Winnie-the-Pooh, or Pooh for short, was walking through the forest one day, humming proudly to himself. “In Which Pooh Goes Visiting and Gets into a Tight Place” is one complete chapter from Winnie-the-Pooh — after morning Stoutness Exercises and a brand-new hum, Pooh calls on Rabbit, stays for honey, and finds the front door a little tight on the way out. It ends “…Silly old Bear!” A. A. Milne; the year is 1926, printed on the Canadian title page. One chapter; the book continues. Bright and comic, made for waking. The forest.`,
+  "the-mist":
+    `The sun had just set. This reading is just “The Mist” — after sunset, mist rises over a quiet village meadow and tells a night-flower how he is dew, cloud, and spring-water in turn, until morning blows him into a dew-drop and the sun laughs. This reading is the whole story, ending “You’re right enough there!” said the sun. And he laughed. Carl Ewald, in Alexander Teixeira de Mattos’s English, from The Spider and Other Tales; the year is 1907, from the copyright line. Quiet and gently comic, for the last minutes before sleep. The glade.`,
   "the-fresco":
     `In the Great Highway of Eternal Fixity, Mong Flowing-spring and his friend Choo Little-lotus were slowly walking, clothed in the long light green dress of the students. This reading is just “The Fresco” — two successful students lose themselves in the lanes of Pekin, enter a temple of the Mysterious-way, and Mong Flowing-spring follows a goddess who steps out of a fresco. This reading is the whole story, ending “Love has touched her. She has become a woman and is waiting for you in your village.” Pu Songling, in G. Soulié de Morant's English, from Strange Stories from the Lodge of Leisures; the year is 1913, from the Houghton Mifflin title page. Soft and magical, for the last minutes before sleep.`,
   "the-green-carnation":
@@ -1495,6 +1497,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "elysium",
       // Mira Mon 5 Oct 2026 mid Ritual — The Fresco is the Host-only story and sits here only (never unwind / on-a-walk). Never Featured, no Next.
       "the-fresco",
+      // Mira Tue 6 Oct 2026 PM — The Mist: one story from The Spider and Other Tales; before-sleep only.
+      "the-mist",
     ],
   },
   {
@@ -2474,6 +2478,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-taoist-priest-of-lao-shan": 6,
   "elysium": 5,
   "the-fresco": 5,
+  "the-mist": 9,
   "winnie-the-pooh": 7,
   "the-golden-age": 9,
   "growth-of-the-soil": 2,

@@ -1,0 +1,271 @@
+{
+  "id": "the-mist",
+  "title": "The Mist",
+  "author": "Carl Ewald (tr. Alexander Teixeira de Mattos)",
+  "year": "1907",
+  "note": "Ritual sit: the whole story.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "sit-0",
+      "title": "The Mist",
+      "place": "The Mist",
+      "reentry": "The sun had just set.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "sit-0-0",
+      "sceneId": "sit-0",
+      "text": "The sun had just set."
+    },
+    {
+      "id": "sit-0-1",
+      "sceneId": "sit-0",
+      "text": "The frog was croaking his even-song, which took so long that there seemed to be no end to it. The bee crept into her hive and the little children cried because it was bed-time. The flowers closed their petals and bent their heads, the bird hid his beak under his wing and the stag lay down to rest in the tall, soft grass of the glade."
+    },
+    {
+      "id": "sit-0-2",
+      "sceneId": "sit-0",
+      "text": "The bells of the village-church rang in the night and, when that was done, the old sexton went off home, chatted a little with the villagers who were taking their evening stroll or standing at their doors smoking a pipe, bade them good-night and shut his door."
+    },
+    {
+      "id": "sit-0-3",
+      "sceneId": "sit-0",
+      "text": "By and by, it was quite still and darkness fell. There was still a light in the parsonage and at the doctor’s. But at the farm-houses it was dark, for the farmers rise early in the summer and therefore have to go early to bed."
+    },
+    {
+      "id": "sit-0-4",
+      "sceneId": "sit-0",
+      "text": "Then the stars shone forth in the sky and the moon rose higher and higher. A dog barked down in the village. But he was certainly dreaming, for there was really nothing to bark at."
+    },
+    {
+      "id": "sit-0-5",
+      "sceneId": "sit-0",
+      "text": "“Is any one here?” asked the mist."
+    },
+    {
+      "id": "sit-0-6",
+      "sceneId": "sit-0",
+      "text": "But no one answered, for there was no one there."
+    },
+    {
+      "id": "sit-0-7",
+      "sceneId": "sit-0",
+      "text": "So the mist went on in his light, gleaming clothes. He danced over the meadows, up and down, to and fro. Now he would lie quite still for a while and then begin to dance again. He skipped across the pond and into the wood, where he flung his long, wet arms round the trunks of the trees."
+    },
+    {
+      "id": "sit-0-8",
+      "sceneId": "sit-0",
+      "text": "“Who are you, friend?” asked the night-scented rocket, who stood and distilled her perfume for her own pleasure."
+    },
+    {
+      "id": "sit-0-9",
+      "sceneId": "sit-0",
+      "text": "The mist did not reply, but went on dancing."
+    },
+    {
+      "id": "sit-0-10",
+      "sceneId": "sit-0",
+      "text": "“I asked who you were,” said the rocket. “And, as you don’t answer me, I conclude that you are an ill-mannered churl.”"
+    },
+    {
+      "id": "sit-0-11",
+      "sceneId": "sit-0",
+      "text": "“I’ll conclude you!” said the mist."
+    },
+    {
+      "id": "sit-0-12",
+      "sceneId": "sit-0",
+      "text": "And he lay down round the night-scented rocket, till her petals were dripping wet."
+    },
+    {
+      "id": "sit-0-13",
+      "sceneId": "sit-0",
+      "text": "“Hi! Hi!” screamed the rocket. “Keep your fingers to yourself, my friend! I feel as if I had been dipped in the pond. You needn’t be so angry, just because I ask you who you are.”"
+    },
+    {
+      "id": "sit-0-14",
+      "sceneId": "sit-0",
+      "text": "The mist rose up again:"
+    },
+    {
+      "id": "sit-0-15",
+      "sceneId": "sit-0",
+      "text": "“Who I am?” he repeated. “Why, you wouldn’t understand if I told you.”"
+    },
+    {
+      "id": "sit-0-16",
+      "sceneId": "sit-0",
+      "text": "“Try,” said the rocket."
+    },
+    {
+      "id": "sit-0-17",
+      "sceneId": "sit-0",
+      "text": "“I am the dew-drop on the flowers, the cloud in the sky and the mist on the fields,” he answered."
+    },
+    {
+      "id": "sit-0-18",
+      "sceneId": "sit-0",
+      "text": "“I beg your pardon?” said the rocket. “Would you mind saying that again? Why, I know the dew-drop. He settles on my petals every morning; and I don’t see any resemblance between you.”"
+    },
+    {
+      "id": "sit-0-19",
+      "sceneId": "sit-0",
+      "text": "“Ah, I am the dew-drop, for all that!” said the mist, sadly. “But nobody knows me. I have to spend my life in many shapes. Sometimes I am dew and sometimes I am rain and sometimes I trickle in the form of a clear, cool spring through the wood. But, when I dance over the meadow in the evening, then people say that the mist is rising.”"
+    },
+    {
+      "id": "sit-0-20",
+      "sceneId": "sit-0",
+      "text": "“That’s a queer story,” said the rocket. “Have you any more to tell me? The night is long and sometimes I feel a little bored.”"
+    },
+    {
+      "id": "sit-0-21",
+      "sceneId": "sit-0",
+      "text": "“It is a sad story,” answered the mist. “But you shall hear it if you like.”"
+    },
+    {
+      "id": "sit-0-22",
+      "sceneId": "sit-0",
+      "text": "And he made as though to lie down, but the night-scented rocket shook all her petals in alarm."
+    },
+    {
+      "id": "sit-0-23",
+      "sceneId": "sit-0",
+      "text": "“Be so good and keep a little farther off,” she said, “at least, until you have introduced yourself properly. I have never cared to be intimate with people whom I don’t know.”"
+    },
+    {
+      "id": "sit-0-24",
+      "sceneId": "sit-0",
+      "text": "The mist lay down a few steps away and began his story:"
+    },
+    {
+      "id": "sit-0-25",
+      "sceneId": "sit-0",
+      "text": "“I was born deep down in the ground,” he said, “much deeper than your roots grow. I and my brothers—for you must know that we are a big family—came into the world in the shape of clear crystal spring-water and lay long in our hiding-place. But, one day, we sprang suddenly from under a gentle hill, into the midst of the full, bright sunshine. Believe me, it was delightful to run through the wood. We rippled over the stones and splashed against the banks. Dear little fishes played among us and the trees bent over us and reflected their green splendour. If a leaf fell, we rocked it and caressed it and bore it into the wide world. Oh, how delightful it was! It was really the happiest time in my life.”"
+    },
+    {
+      "id": "sit-0-26",
+      "sceneId": "sit-0",
+      "text": "“Shall I soon hear how you came to be mist?” asked the night-scented rocket, impatiently. “I know the brook. On a very still night, I can hear her babbling from where I stand.”"
+    },
+    {
+      "id": "sit-0-27",
+      "sceneId": "sit-0",
+      "text": "The mist rose and took a little dance across the meadow. Then he came back and continued:"
+    },
+    {
+      "id": "sit-0-28",
+      "sceneId": "sit-0",
+      "text": "“That is the worst of this world; we are never satisfied with what we have. For instance, we ran on and on until, at last, we came to a big lake, where the water-lilies rocked on the water and the dragon-flies buzzed around on their great stiff wings. On the surface, the water was as clear as a mirror; but, whether we wanted to or not, we had to run along the bottom and there it was dark and dismal. I could not bear it. I longed for the sunbeams. I knew them so well from the time when I ran in the brook. Now they looked down upon us through the leaves and cast a bright light over me. I wanted to see them again and therefore I crept up to the surface and lay down in the sunshine among the white water-lilies and their big green leaves. But oh, how the sun burnt upon the lake! It was almost unendurable and I bitterly regretted that I had not remained at the bottom.”"
+    },
+    {
+      "id": "sit-0-29",
+      "sceneId": "sit-0",
+      "text": "“All this is very dull,” said the rocket. “When are we coming to the mist?”"
+    },
+    {
+      "id": "sit-0-30",
+      "sceneId": "sit-0",
+      "text": "“Here he is!” said the mist and lay down around the flower, who almost lost her breath."
+    },
+    {
+      "id": "sit-0-31",
+      "sceneId": "sit-0",
+      "text": "“Hi! Hi!” screamed the rocket. “You’re the roughest playfellow I know. Go away and tell your story in your own manner, if you must.”"
+    },
+    {
+      "id": "sit-0-32",
+      "sceneId": "sit-0",
+      "text": "“In the evening, when the sun had gone down, I suddenly became wonderfully light,” said the mist. “I don’t know how it happened, but I felt that I must rise up and fly away from the lake. And, in fact, before I knew it, I was hovering over the water, away from the dragon-flies and the water-lilies. The evening-wind carried me along; I flew high in the air and there I met many of my brothers, who had been as inquisitive as I and had met with the same fortune. We were wafted up to the sky; we had turned into clouds: do you understand?”"
+    },
+    {
+      "id": "sit-0-33",
+      "sceneId": "sit-0",
+      "text": "“I am not quite sure,” said the rocket. “It does not sound very probable.”"
+    },
+    {
+      "id": "sit-0-34",
+      "sceneId": "sit-0",
+      "text": "“But it’s true, for all that,” said the mist. “Now listen. The wind carried us for some time through the sky. Then, suddenly, he grew tired of us and let us go. And we fell down upon the earth in pouring rain. The flowers lost no time in closing their petals and the birds took shelter, all except the ducks and geese, who were the better pleased the wetter it was. Oh; and the farmer, too: he stood there rejoicing, because his crops needed rain. He did not care how wet he got. But, otherwise, we really caused a great disturbance.”"
+    },
+    {
+      "id": "sit-0-35",
+      "sceneId": "sit-0",
+      "text": "“Ah, so you’re the rain too, are you?” asked the night-scented rocket. “I say, you seem to have plenty to do.”"
+    },
+    {
+      "id": "sit-0-36",
+      "sceneId": "sit-0",
+      "text": "“Yes, I never have any rest,” said the mist."
+    },
+    {
+      "id": "sit-0-37",
+      "sceneId": "sit-0",
+      "text": "“All the same, I haven’t yet heard how you became mist,” said the rocket. “Now don’t fly into a passion again: you promised to tell me and I would rather hear the whole story over again than once more shiver in your horrid damp arms.”"
+    },
+    {
+      "id": "sit-0-38",
+      "sceneId": "sit-0",
+      "text": "The mist lay and wept for a moment and then continued:"
+    },
+    {
+      "id": "sit-0-39",
+      "sceneId": "sit-0",
+      "text": "“When I had fallen on the ground as rain, I sank through the black earth and was glad to think I was returning to my native place, the deep subterranean source. There at least I had known peace and been free from cares. But, just as I was sinking, the roots of the trees sucked me up again and, all day long, I had to wander around in the branches and leaves. They used me as a beast of burden, you see. I had to drag up from the roots all the food that the leaves and flowers needed. I was not free until the evening. When the sun had gone down, all the trees and flowers heaved deep sighs and in their sighs my brothers and I were sent forth as a light, gleaming mist. At night, we dance over the fields. But, in the morning, when the sun rises, we turn into beautiful, clear dew-drops and come and hang on your petals. Then you shake us off and we sink deeper and deeper until we come to the source where we were born, unless some root or other snatches us up on the way. And so it goes on: through the brook, into the lake, up in the sky and back again to earth....”"
+    },
+    {
+      "id": "sit-0-40",
+      "sceneId": "sit-0",
+      "text": "“Stop!” cried the night-scented rocket. “It makes my head swim to listen to you!”"
+    },
+    {
+      "id": "sit-0-41",
+      "sceneId": "sit-0",
+      "text": "Now the frog began to stir. He stretched his legs and went down to the ditch to take his morning bath. The birds began to chirp in the wood and the stag belled among the trees."
+    },
+    {
+      "id": "sit-0-42",
+      "sceneId": "sit-0",
+      "text": "Morning began to break and the sun peeped over the hill:"
+    },
+    {
+      "id": "sit-0-43",
+      "sceneId": "sit-0",
+      "text": "“What’s this?” he said. “What does it all mean? One can’t see one’s hand before one’s eyes. Morning-wind! Up with you, you sluggard, and blow that nasty mist away!”"
+    },
+    {
+      "id": "sit-0-44",
+      "sceneId": "sit-0",
+      "text": "And the morning-wind flew across the fields and blew away the mist. At the same moment, the sun sent his first rays straight down upon the night-scented rocket."
+    },
+    {
+      "id": "sit-0-45",
+      "sceneId": "sit-0",
+      "text": "“Hullo!” said the flower. “Here’s the sun! Now I must be quick and close my petals. Where in the name of wonder has the mist gone to?”"
+    },
+    {
+      "id": "sit-0-46",
+      "sceneId": "sit-0",
+      "text": "“Here I am,” said the dew-drop hanging from her stalk."
+    },
+    {
+      "id": "sit-0-47",
+      "sceneId": "sit-0",
+      "text": "But the night-scented rocket shook her head fretfully:"
+    },
+    {
+      "id": "sit-0-48",
+      "sceneId": "sit-0",
+      "text": "“Tell that to the children,” she said. “I don’t believe a word of all you’ve said. You’re just water and nothing more.”"
+    },
+    {
+      "id": "sit-0-49",
+      "sceneId": "sit-0",
+      "text": "“You’re right enough there!” said the sun. And he laughed."
+    }
+  ]
+}
