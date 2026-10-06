@@ -54,6 +54,13 @@ import {
 import { decodeHostedSit } from "@/lib/hosted-sit";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
+import {
+  CENTER_LINE_ANCHOR,
+  centerLineOffset,
+  upcomingBreaths,
+  upcomingOpacity,
+} from "@/lib/center-line";
+import { useCenterLine } from "@/lib/use-center-line";
 
 type Overlay =
   | "none"
@@ -156,6 +163,8 @@ export function TbrReader({
   const [inviteCopied, setInviteCopied] = useState(false);
   const [tick, setTick] = useState(() => Date.now());
   const daylight = useReaderDaylight();
+  const centerLine = useCenterLine();
+  const centerOn = centerLine.enabled;
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const lockUntil = useRef(0);
   const overlayRef = useRef(overlay);
@@ -164,6 +173,13 @@ export function TbrReader({
   const seenBreaths = useRef(0);
   const breathSlotRef = useRef<HTMLDivElement>(null);
   const lookbackSlotRef = useRef<HTMLDivElement>(null);
+  const readingPaneRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const topPadRef = useRef<HTMLDivElement>(null);
+  const bottomPadRef = useRef<HTMLDivElement>(null);
+  const upcomingSlotRef = useRef<HTMLDivElement>(null);
+  const placedIndex = useRef<number | null>(null);
+  const motionArmed = useRef(false);
 
   useLayoutEffect(() => {
     ensure(work.id);
@@ -285,6 +301,10 @@ export function TbrReader({
   const lookback = useMemo(
     () => lookbackBreaths(work, index, LOOKBACK),
     [index, work],
+  );
+  const upcoming = useMemo(
+    () => (centerOn ? upcomingBreaths(work, index) : []),
+    [centerOn, index, work],
   );
   const kept = progress?.kept ?? [];
   const isKept = breath ? kept.includes(breath.id) : false;
@@ -674,44 +694,154 @@ export function TbrReader({
     return () => setReadingNow(null);
   }, [breath, placeLabel, scene, setReadingNow, work.author, work.id, work.title]);
 
+  useEffect(() => {
+    motionArmed.current = true;
+  }, []);
+
   useLayoutEffect(() => {
     const slot = breathSlotRef.current;
+    const stepped =
+      placedIndex.current !== null && Math.abs(index - placedIndex.current) === 1;
+    placedIndex.current = index;
     if (!slot) {
       setOverflows(false);
       setAtEnd(true);
       return;
     }
     slot.scrollTop = 0;
+
+    if (!centerOn) {
+      let live = true;
+      const measure = () => {
+        if (!live) return;
+        const next = slot.scrollHeight - slot.clientHeight > 1;
+        setOverflows((prev) => (prev === next ? prev : next));
+        const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
+        setAtEnd((prev) => (prev === end ? prev : end));
+        const look = lookbackSlotRef.current;
+        if (look) {
+          const height = Math.round(look.getBoundingClientRect().height);
+          setLookbackPx((prev) => (prev === height ? prev : height));
+        }
+      };
+      measure();
+      const ro = new ResizeObserver(measure);
+      ro.observe(slot);
+      const inner = slot.querySelector(".breath-now");
+      if (inner) ro.observe(inner);
+      const pane = slot.parentElement;
+      if (pane) ro.observe(pane);
+      const look = lookbackSlotRef.current;
+      if (look) ro.observe(look);
+      slot.addEventListener("scroll", measure, { passive: true });
+      void document.fonts?.ready.then(measure);
+      return () => {
+        live = false;
+        ro.disconnect();
+        slot.removeEventListener("scroll", measure);
+      };
+    }
+
+    const pane = readingPaneRef.current;
+    const track = trackRef.current;
+    if (!pane || !track) return;
+
     let live = true;
-    const measure = () => {
+    let layoutSig = "";
+    let holdMotionUntil = 0;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const place = (animate: boolean) => {
       if (!live) return;
-      const next = slot.scrollHeight - slot.clientHeight > 1;
-      setOverflows((prev) => (prev === next ? prev : next));
+      const line = slot.querySelector<HTMLElement>(".breath-now");
+      const topPad = topPadRef.current;
+      const bottomPad = bottomPadRef.current;
+      if (!line) return;
+      const height = pane.clientHeight;
+      const anchorPx = height * CENTER_LINE_ANCHOR;
+      const tooTall = line.scrollHeight > height * 0.9;
+      const look = lookbackSlotRef.current;
+      const ahead = upcomingSlotRef.current;
+      if (tooTall) {
+        if (topPad) topPad.style.height = "0px";
+        if (bottomPad) bottomPad.style.height = "0px";
+        slot.style.maxHeight = `${Math.floor(height)}px`;
+        slot.style.overflowY = "auto";
+        if (look) look.style.display = "none";
+        if (ahead) ahead.style.display = "none";
+      } else {
+        if (topPad) topPad.style.height = `${anchorPx}px`;
+        if (bottomPad) bottomPad.style.height = `${Math.max(0, height - anchorPx)}px`;
+        slot.style.maxHeight = "";
+        slot.style.overflowY = "";
+        if (look) look.style.display = "";
+        if (ahead) ahead.style.display = "";
+      }
+
+      const trackRect = track.getBoundingClientRect();
+      const targetRect = line.getBoundingClientRect();
+      const lineTop = targetRect.top - trackRect.top;
+      const shift = tooTall
+        ? 0
+        : centerLineOffset({
+            paneHeight: height,
+            lineTop,
+            lineHeight: targetRect.height,
+          });
+      const motion =
+        animate &&
+        motionArmed.current &&
+        stepped &&
+        !reduceMotion &&
+        !tooTall &&
+        track.dataset.ready === "1";
+      if (!motion) track.dataset.ready = "0";
+      if (motion) holdMotionUntil = performance.now() + 320;
+      track.style.transform = `translate3d(0, ${shift}px, 0)`;
+      if (!motion && !reduceMotion) {
+        requestAnimationFrame(() => {
+          if (live && track.isConnected) track.dataset.ready = "1";
+        });
+      }
+
+      const overflowsNow = tooTall || slot.scrollHeight - slot.clientHeight > 1;
+      setOverflows((prev) => (prev === overflowsNow ? prev : overflowsNow));
       const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
       setAtEnd((prev) => (prev === end ? prev : end));
-      const look = lookbackSlotRef.current;
-      if (look) {
-        const height = Math.round(look.getBoundingClientRect().height);
-        setLookbackPx((prev) => (prev === height ? prev : height));
-      }
+      const lookHeight = tooTall || !look ? 0 : Math.round(look.getBoundingClientRect().height);
+      setLookbackPx((prev) => (prev === lookHeight ? prev : lookHeight));
+      layoutSig = `${pane.clientHeight}:${line.clientHeight}`;
     };
-    measure();
-    const ro = new ResizeObserver(measure);
-    ro.observe(slot);
-    const inner = slot.querySelector(".breath-now");
-    if (inner) ro.observe(inner);
-    const pane = slot.parentElement;
-    if (pane) ro.observe(pane);
-    const look = lookbackSlotRef.current;
-    if (look) ro.observe(look);
-    slot.addEventListener("scroll", measure, { passive: true });
-    void document.fonts?.ready.then(measure);
+
+    place(true);
+    const onScroll = () => {
+      if (!live) return;
+      const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
+      setAtEnd((prev) => (prev === end ? prev : end));
+    };
+    slot.addEventListener("scroll", onScroll, { passive: true });
+    const ro = new ResizeObserver(() => {
+      if (performance.now() < holdMotionUntil) return;
+      const lineNow = slot.querySelector(".breath-now");
+      const sig = `${pane.clientHeight}:${lineNow?.clientHeight ?? 0}`;
+      if (sig === layoutSig) return;
+      layoutSig = sig;
+      place(false);
+    });
+    ro.observe(pane);
+    const line = slot.querySelector(".breath-now");
+    if (line) ro.observe(line);
+    if (!motionArmed.current) {
+      void document.fonts?.ready.then(() => {
+        if (live) place(false);
+      });
+    }
     return () => {
       live = false;
       ro.disconnect();
-      slot.removeEventListener("scroll", measure);
+      slot.removeEventListener("scroll", onScroll);
     };
-  }, [index, breath?.text, together, overlay]);
+  }, [index, breath?.text, together, overlay, centerOn]);
 
   const durationMs = sittingMinutes > 0 ? sittingMinutes * 60 * 1000 : 0;
   const endsAt =
@@ -763,6 +893,36 @@ export function TbrReader({
     );
   }
 
+  const readLines = lookback.map((item, i) => {
+    const last = lookback.length - 1;
+    const opacity = last <= 0 ? 0.38 : 0.1 + (i / last) * 0.4;
+    return (
+      <p key={item.id} className="look-line text-ink" style={{ opacity }}>
+        <EmphasizedText text={item.text} />
+      </p>
+    );
+  });
+  const previewLines = upcoming.map((item, i) => (
+    <p
+      key={item.id}
+      className="look-line text-ink"
+      style={{ opacity: upcomingOpacity(i, upcoming.length) }}
+    >
+      <EmphasizedText text={item.text} />
+    </p>
+  ));
+  const currentLine = (
+    <p
+      className={cn(
+        "breath-now relative z-[1] font-serif",
+        isKept && "border-l-2 border-red pl-4",
+      )}
+    >
+      <EmphasizedText text={breath.text} />
+    </p>
+  );
+  const breathClass = cn("breath-slot", overflows && "overflows", atEnd && "at-end");
+
   const pane = (
     <div
       data-reader-text
@@ -811,34 +971,39 @@ export function TbrReader({
         onClick={advance}
       />
 
-      <div className="reading-pane z-0">
+      <div
+        ref={readingPaneRef}
+        className={cn("reading-pane z-0", centerOn && "reading-pane-centered")}
+      >
         {showPalimpsest ? <p className="palimpsest font-display">{palimpsest}</p> : null}
-
-        <div ref={lookbackSlotRef} className="lookback-slot" aria-hidden>
-          {lookback.map((item, i) => {
-            const last = lookback.length - 1;
-            const opacity = last <= 0 ? 0.38 : 0.1 + (i / last) * 0.4;
-            return (
-              <p key={item.id} className="look-line text-ink" style={{ opacity }}>
-                <EmphasizedText text={item.text} />
-              </p>
-            );
-          })}
-        </div>
-
-        <div
-          ref={breathSlotRef}
-          className={cn("breath-slot", overflows && "overflows", atEnd && "at-end")}
-        >
-          <p
-            className={cn(
-              "breath-now relative z-[1] font-serif",
-              isKept && "border-l-2 border-red pl-4",
-            )}
-          >
-            <EmphasizedText text={breath.text} />
-          </p>
-        </div>
+        {centerOn ? (
+          <div ref={trackRef} className="center-track">
+            <div ref={topPadRef} className="center-pad" aria-hidden />
+            <div className="center-lines">
+              <div ref={lookbackSlotRef} className="lookback-slot" aria-hidden>
+                {readLines}
+              </div>
+              <div ref={breathSlotRef} className={breathClass}>
+                {currentLine}
+              </div>
+              <div ref={upcomingSlotRef} className="upcoming-slot" aria-hidden>
+                {previewLines}
+              </div>
+            </div>
+            <div ref={bottomPadRef} className="center-pad" aria-hidden />
+          </div>
+        ) : (
+          /* bottom-anchor */
+          <>
+            <div ref={lookbackSlotRef} className="lookback-slot" aria-hidden>
+              {readLines}
+            </div>
+            <div ref={breathSlotRef} className={breathClass}>
+              {currentLine}
+            </div>
+            {/* bottom-anchor-end */}
+          </>
+        )}
       </div>
     </div>
   );
@@ -853,6 +1018,7 @@ export function TbrReader({
       )}
       style={daylight.style}
       data-daylight={daylight.active ? daylight.sample.phase : "off"}
+      data-center-line={centerOn ? "on" : "off"}
       data-bound={workIsComplete(work.id) ? "full" : "opening"}
     >
       <h1 className="sr-only">{work.title}</h1>
@@ -999,6 +1165,16 @@ export function TbrReader({
               >
                 <span>Daylight colors</span>
                 <span aria-hidden="true">{daylight.enabled ? "On" : "Off"}</span>
+              </button>
+              <button
+                type="button"
+                role="switch"
+                aria-checked={centerLine.enabled}
+                onClick={() => centerLine.setEnabled(!centerLine.enabled)}
+                className="daylight-switch"
+              >
+                <span>Center the line</span>
+                <span aria-hidden="true">{centerLine.enabled ? "On" : "Off"}</span>
               </button>
             </div>
           ) : null}
