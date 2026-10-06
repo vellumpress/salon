@@ -22,27 +22,9 @@ function ShelfMark() {
   );
 }
 
-function isWebAppManifestPath(pathname: string) {
-  return /\/manifest\.webmanifest$/i.test(pathname);
-}
-
 function NotFoundPage() {
   const [shown, setShown] = useState(false);
   useEffect(() => {
-    const path = window.location.pathname || "";
-    // The shell must not own this URL. One document load lets the service
-    // worker (or Pages) answer with the manifest file instead of this miss.
-    if (isWebAppManifestPath(path)) {
-      const key = "tbr-manifest-file";
-      try {
-        if (sessionStorage.getItem(key) === path) return;
-        sessionStorage.setItem(key, path);
-      } catch {
-        return;
-      }
-      window.location.replace(window.location.href);
-      return;
-    }
     setShown(true);
   }, []);
   if (!shown) return <ShelfMark />;

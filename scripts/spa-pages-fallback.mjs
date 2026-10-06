@@ -18,6 +18,19 @@ export const PATH_SEGMENTS_TO_KEEP = 1;
 export const SPA_RESTORE_ATTR = "data-spa-pages-restore";
 
 /**
+ * Real files. A 404 shim must not fold these into the SPA, or a navigation
+ * to the web manifest becomes index.html at that same address.
+ */
+export const STATIC_PUBLIC_FILE =
+  /\.(?:webmanifest|json|js|mjs|css|png|svg|ico|jpe?g|webp|gif|woff2?|map|txt|xml)$/i;
+
+/** @param {string} pathname */
+export function isStaticPublicPath(pathname) {
+  const path = String(pathname || "").split("?")[0].split("#")[0];
+  return STATIC_PUBLIC_FILE.test(path);
+}
+
+/**
  * @param {{ pathname: string, search?: string, hash?: string }} loc
  * @param {number} [keep]
  */
@@ -65,7 +78,13 @@ export function renderSpaRestoreScript() {
     return s.replace(/~and~/g, "&");
   }).join("?");
   var base = l.pathname.endsWith("/") ? l.pathname.slice(0, -1) : l.pathname;
-  window.history.replaceState(null, "", base + decoded + l.hash);
+  var next = base + decoded + l.hash;
+  var pathOnly = (base + decoded).split("?")[0].split("#")[0];
+  if (/\\.(?:webmanifest|json|js|mjs|css|png|svg|ico|jpe?g|webp|gif|woff2?|map|txt|xml)$/i.test(pathOnly)) {
+    l.replace(next);
+    return;
+  }
+  window.history.replaceState(null, "", next);
 }(window.location));
 </script>`;
 }
@@ -87,6 +106,9 @@ export function renderSpa404Html() {
       var pathSegmentsToKeep = ${PATH_SEGMENTS_TO_KEEP};
 
       var l = window.location;
+      // Static files (the web manifest especially) must stay files.
+      // Folding a miss into /salon/?/… serves index.html at that address.
+      if (!/\\.(?:webmanifest|json|js|mjs|css|png|svg|ico|jpe?g|webp|gif|woff2?|map|txt|xml)$/i.test(l.pathname || "")) {
       l.replace(
         l.protocol +
           "//" +
@@ -98,6 +120,7 @@ export function renderSpa404Html() {
           (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
           l.hash
       );
+      }
     </script>
   </head>
   <body>

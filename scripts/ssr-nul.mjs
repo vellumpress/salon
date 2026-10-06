@@ -212,8 +212,10 @@ export const FONT_FILES = [
  * phone that slept past ten minutes re-fetches the whole boot graph. The
  * shell is one SPA document: serve the cached `/salon/` HTML for every
  * navigation under the scope (deep links included — no 404 hop). The web
- * app manifest is a real file, not a shelf id: `/salon/manifest.webmanifest`
- * is denied from that fallback and answered as `application/manifest+json`.
+ * app manifest is a real file, not a shelf id. A document navigation to
+ * `/salon/manifest.webmanifest` is not claimed: the browser loads the Pages
+ * file itself (`application/manifest+json`). A script-built Response was
+ * still committed as this shell in the browser.
  * Hashed
  * js/css stay cache-first when the cached bytes are real code. A cached HTML
  * body or 404 is never returned for those URLs until the network has been
@@ -537,8 +539,12 @@ function reloadOpenClients() {
       try { url = new URL(client.url); } catch (err) { return Promise.resolve(); }
       if (url.origin !== self.location.origin) return Promise.resolve();
       if (url.pathname !== "/salon" && url.pathname.indexOf("/salon/") !== 0) return Promise.resolve();
-      if (isWebAppManifest(url)) return Promise.resolve();
       if (url.search.indexOf("__fresh=") !== -1) return Promise.resolve();
+      if (isWebAppManifest(url)) {
+        reloadedClients[client.id] = now;
+        if (!client.navigate) return Promise.resolve();
+        return client.navigate(url.origin + url.pathname + url.hash);
+      }
       reloadedClients[client.id] = now;
       url.searchParams.set("__fresh", String(now));
       if (!client.navigate) return Promise.resolve();
@@ -858,6 +864,9 @@ self.addEventListener("fetch", function (event) {
   var url;
   try { url = new URL(req.url); } catch (err) { return; }
   if (isWebAppManifest(url)) {
+    // Document loads must be the static file. respondWith() of a built
+    // Response was still the SPA shell (wordmark only, data-boot set).
+    if (req.mode === "navigate") return;
     event.respondWith(serveWebAppManifest(event, req).catch(function () { return plainMiss(504); }));
     return;
   }

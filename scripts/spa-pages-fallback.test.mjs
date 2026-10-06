@@ -9,8 +9,10 @@ import {
   applySpaPagesFallback,
   encodeSpaRedirectPath,
   injectSpaRestoreScript,
+  isStaticPublicPath,
   public404Path,
   renderSpa404Html,
+  renderSpaRestoreScript,
   restoreSpaRedirectPath,
 } from "./spa-pages-fallback.mjs";
 
@@ -97,8 +99,19 @@ test("404.html is the redirect shim, not a copy of the SPA shell", () => {
   assert.match(html, /pathSegmentsToKeep = 1/);
   assert.match(html, /spa-github-pages/);
   assert.match(html, /l\.replace/);
+  assert.match(html, /webmanifest/);
   assert.doesNotMatch(html, /\$_TSR|modulepreload|board-doors/);
   assert.equal(readFileSync(public404Path(), "utf8"), html);
+});
+
+test("the Pages shim does not fold the web manifest into the SPA", () => {
+  assert.equal(isStaticPublicPath("/salon/manifest.webmanifest"), true);
+  assert.equal(isStaticPublicPath("/salon/read/passing"), false);
+  const html = renderSpa404Html();
+  const restore = renderSpaRestoreScript();
+  assert.match(html, /webmanifest/);
+  assert.match(restore, /l\.replace\(next\)/);
+  assert.doesNotMatch(html, /\breturn;/);
 });
 
 test("injects the restore script once, first thing in head", () => {
