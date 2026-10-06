@@ -211,7 +211,10 @@ export const FONT_FILES = [
  * GitHub Pages sends `cache-control: max-age=600` even for hashed files, so a
  * phone that slept past ten minutes re-fetches the whole boot graph. The
  * shell is one SPA document: serve the cached `/salon/` HTML for every
- * navigation under the scope (deep links included — no 404 hop). Hashed
+ * navigation under the scope (deep links included — no 404 hop). The web
+ * app manifest is a real file, not a shelf id: `/salon/manifest.webmanifest`
+ * is denied from that fallback and answered as `application/manifest+json`.
+ * Hashed
  * js/css stay cache-first when the cached bytes are real code. A cached HTML
  * body or 404 is never returned for those URLs until the network has been
  * tried. NUL bytes are refused so a poisoned document cannot stick. Book
@@ -534,6 +537,7 @@ function reloadOpenClients() {
       try { url = new URL(client.url); } catch (err) { return Promise.resolve(); }
       if (url.origin !== self.location.origin) return Promise.resolve();
       if (url.pathname !== "/salon" && url.pathname.indexOf("/salon/") !== 0) return Promise.resolve();
+      if (isWebAppManifest(url)) return Promise.resolve();
       if (url.search.indexOf("__fresh=") !== -1) return Promise.resolve();
       reloadedClients[client.id] = now;
       url.searchParams.set("__fresh", String(now));
@@ -714,6 +718,42 @@ function handleNavigate(event) {
     return res || offlinePage();
   }).catch(function () { return offlinePage(); });
 }
+function isWebAppManifest(url) {
+  return url.origin === self.location.origin && /\\/manifest\\.webmanifest$/i.test(url.pathname);
+}
+function isHtmlBody(body) {
+  var trimmed = String(body || "").replace(/^\\uFEFF/, "").trim();
+  return !trimmed || trimmed.charAt(0) === "<";
+}
+function manifestFile(body) {
+  return new Response(body, {
+    status: 200,
+    headers: { "content-type": "application/manifest+json; charset=utf-8" },
+  });
+}
+function manifestFromResponse(res, req, allowRefetch) {
+  if (!res || !res.ok) {
+    if (allowRefetch) return refetchManifest(req);
+    return Promise.resolve(plainMiss(res && res.status ? res.status : 404));
+  }
+  return res.text().then(function (body) {
+    if (isHtmlBody(body)) {
+      if (allowRefetch) return refetchManifest(req);
+      return plainMiss(404);
+    }
+    return manifestFile(body);
+  });
+}
+function refetchManifest(req) {
+  return fetch(req, { cache: "no-store" }).then(function (fresh) {
+    return manifestFromResponse(fresh, req, false);
+  }).catch(function () { return plainMiss(504); });
+}
+function serveWebAppManifest(event, req) {
+  return staleWhileRevalidate(event, req).then(function (res) {
+    return manifestFromResponse(res, req, true);
+  }).catch(function () { return plainMiss(504); });
+}
 function isStaticAsset(url) {
   if (url.origin !== self.location.origin) return false;
   if (url.pathname.indexOf("/salon/") !== 0) return false;
@@ -817,6 +857,10 @@ self.addEventListener("fetch", function (event) {
   if (req.method !== "GET") return;
   var url;
   try { url = new URL(req.url); } catch (err) { return; }
+  if (isWebAppManifest(url)) {
+    event.respondWith(serveWebAppManifest(event, req).catch(function () { return plainMiss(504); }));
+    return;
+  }
   if (isCodeAsset(url)) {
     event.respondWith(cacheFirstAsset(req).catch(function () { return plainMiss(504); }));
     return;
