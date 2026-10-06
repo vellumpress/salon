@@ -758,7 +758,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   zeno:
     "Zeno’s first cigarettes and the last-cigarette habit, in Trieste. De Zoete’s English; PG 79453 gives the original publication as 1930. Comic self-deception.",
   "the-book-of-khalid":
-    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Expect Expect Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony, left as printed.",
+    "Baalbek’s ruins, the bazaar, and the donkey-boy Khalid. Rihani wrote it in English, PG 29257. Opens at Chapter II. Expect Ottoman and imperial politics (“Time and the Turks,” the Kaiser pilfering temples) and self-Orientalizing irony, left as printed.",
   cane:
     "Karintha: her skin is like dusk on the eastern horizon. Skip the foreword. This sit is Karintha only — later Georgia sketches are later sits.",
   generosity:
