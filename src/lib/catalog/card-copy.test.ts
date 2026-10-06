@@ -232,6 +232,7 @@ test("known origin overrides", () => {
     "lewis-and-irene": "France",
     "a-monkey": "Norway",
     "the-golden-age": "United Kingdom",
+    "the-mist": "Denmark",
     "a-japanese-blossom": "Canada",
     "the-spoilt-child": "India",
     "winnie-the-pooh": "United Kingdom",

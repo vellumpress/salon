@@ -123,6 +123,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "lewis-and-irene": { label: "Paris", region: "fr" },
     "a-monkey": { label: "Christiania", region: "no" },
     "the-golden-age": { label: "England", region: "gb" },
+    "the-mist": { label: "the glade", region: "dk" },
     "a-japanese-blossom": { label: "Japan", region: "jp" },
     "the-spoilt-child": { label: "Vaidyabati", region: "in" },
     "winnie-the-pooh": { label: "the forest", region: "gb" },
@@ -498,4 +499,10 @@ test("Tue 6 Oct PM A Japanese Blossom place reuses jp; Japan; no new region key"
   assert.ok(REGION_SHAPES.jp?.d, "jp shape");
   assert.deepEqual(placeFor(shelfWork("a-japanese-blossom")!), { label: "Japan", region: "jp" });
   assert.equal(CHIP_ONLY_PLACE["a-japanese-blossom"], undefined);
+});
+
+test("Tue 6 Oct PM The Mist place reuses dk; the glade; no new region key", () => {
+  assert.ok(REGION_SHAPES.dk?.d, "dk shape");
+  assert.deepEqual(placeFor(shelfWork("the-mist")!), { label: "the glade", region: "dk" });
+  assert.equal(CHIP_ONLY_PLACE["the-mist"], undefined);
 });
