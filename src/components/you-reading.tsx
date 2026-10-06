@@ -293,25 +293,25 @@ function Today({
         <p className="type-kicker text-muted">{handle || "This sitting"}</p>
         <ScoreRing model={model} hide={scoreHide} paused={paused} />
         {paused ? (
-          <p className="mx-auto mt-4 max-w-sm text-center font-serif text-lg text-ink/80">
+          <p className="type-pitch mx-auto mt-4 max-w-sm text-center text-ink/80">
             Scoring is paused. Baselines stay where they were, so coming back won’t look like a decline.
           </p>
         ) : null}
         {daily.learningNote ? (
-          <p className="mx-auto mt-3 max-w-sm text-center font-sans text-sm text-ink/70">{daily.learningNote}</p>
+          <p className="type-pitch mx-auto mt-3 max-w-sm text-center text-ink/70">{daily.learningNote}</p>
         ) : null}
         {readingDay && daily.versusUsual != null && !scoreHide ? (
-          <p className="mx-auto mt-4 inline-flex bg-yellow px-3 py-2 font-sans text-sm text-ink">
+          <p className="type-chrome mx-auto mt-4 inline-flex bg-yellow px-3 py-2 text-ink">
             {versusCopy(daily.versusUsual)}
           </p>
         ) : null}
         {!readingDay ? (
-          <p className="mx-auto mt-4 max-w-sm text-center font-serif text-lg text-ink/80">
+          <p className="type-pitch mx-auto mt-4 max-w-sm text-center text-ink/80">
             {daily.line}
             {model.week.score != null ? ` This week is ${model.week.score}.` : ""}
           </p>
         ) : (
-          <p className="mx-auto mt-3 max-w-sm text-center font-serif text-lg text-ink/75">{daily.line}</p>
+          <p className="type-pitch mx-auto mt-3 max-w-sm text-center text-ink/75">{daily.line}</p>
         )}
       </section>
       <ContributorBars parts={daily.contributors} onOpen={onOpen} />
@@ -359,7 +359,7 @@ function ScoreRing({ model, hide, paused }: { model: ReadingModel; hide: boolean
           : null}
       </svg>
       <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-8 text-center">
-        <span className={cn("font-serif text-ink", showNumber ? "text-5xl leading-none" : "text-3xl leading-none")}>
+        <span className="type-title tabular-nums text-ink">
           {center}
         </span>
         {showNumber ? <span className="type-kicker mt-2 text-ink/70">{daily.label}</span> : null}
@@ -408,14 +408,14 @@ function ContributorBars({
             onClick={() => onOpen(part.id)}
             className="flex w-full items-center gap-3 border-b border-ink bg-paper px-4 py-3 text-left"
           >
-            <span className="w-[6.5rem] shrink-0 font-sans text-sm text-ink">{NAME[part.id]}</span>
+            <span className="type-chrome w-[6.5rem] shrink-0 text-ink">{NAME[part.id]}</span>
             <span className="relative h-2.5 flex-1 bg-paper-deep" aria-hidden>
               <span className="absolute inset-y-0 left-0" style={{ width: `${width}%`, background: COLOR[part.id] }} />
             </span>
             <span
               className={cn(
                 "shrink-0 text-right text-ink",
-                part.status === "scored" ? "w-10 font-serif text-2xl leading-none" : "w-24 font-sans text-xs",
+                part.status === "scored" ? "type-card w-10 tabular-nums" : "type-kicker w-24",
               )}
             >
               {value}
@@ -438,12 +438,12 @@ function InsightCard({
   return (
     <section className="border-b border-ink bg-yellow px-4 py-5 text-ink">
       <p className="type-kicker">{card.kicker}</p>
-      <h2 className="mt-2 font-serif text-3xl leading-none">{card.title}</h2>
-      <p className="mt-3 max-w-prose font-serif text-lg leading-snug">{card.body}</p>
+      <h2 className="type-lede mt-2">{card.title}</h2>
+      <p className="type-pitch mt-3 max-w-prose">{card.body}</p>
       <button
         type="button"
         onClick={() => onDismiss(card.id)}
-        className="mt-4 font-sans text-sm text-ink/70 underline decoration-ink/30 underline-offset-4"
+        className="type-chrome mt-4 text-ink/70 underline decoration-ink/30 underline-offset-4"
       >
         Don’t show this kind again
       </button>
@@ -469,8 +469,8 @@ function ReadingNow({
     return (
       <section className="border-b border-ink bg-paper px-4 py-5">
         <p className="type-kicker text-muted">Reading now</p>
-        <p className="mt-2 font-serif text-2xl">Nothing open on the desk.</p>
-        <Link to="/rituals" className="mt-3 inline-flex font-sans text-sm text-ink underline underline-offset-4">
+        <p className="type-lede mt-2">Nothing open on the desk.</p>
+        <Link to="/rituals" className="type-chrome mt-3 inline-flex text-ink underline underline-offset-4">
           Open a ritual
         </Link>
       </section>
@@ -486,14 +486,14 @@ function ReadingNow({
           className="flex min-w-0 flex-1 flex-col justify-end px-4 py-5"
         >
           <span className="type-kicker opacity-80">Reading now</span>
-          <span className="mt-1 font-serif text-3xl leading-none">{primary.title}</span>
-          {primary.author ? <span className="mt-2 font-serif text-lg opacity-80">{primary.author}</span> : null}
+          <span className="type-lede mt-1">{primary.title}</span>
+          {primary.author ? <span className="type-pitch mt-2 opacity-80">{primary.author}</span> : null}
         </Link>
         <Link
           to="/read/$workId"
           params={{ workId: primary.id }}
           search={{ at: primary.breathIndex }}
-          className="flex items-center border-l border-paper/30 px-4 font-sans text-sm"
+          className="type-chrome flex items-center border-l border-paper/30 px-4"
         >
           Continue
         </Link>
@@ -502,7 +502,7 @@ function ReadingNow({
         <button
           type="button"
           onClick={() => setOpen((value) => !value)}
-          className="flex min-h-12 w-full items-center border-t border-paper/30 px-4 text-left font-sans text-sm"
+          className="type-chrome flex min-h-12 w-full items-center border-t border-paper/30 px-4 text-left"
           aria-expanded={open}
         >
           {more.length === 1 ? "1 more on your desk" : `${more.length} more on your desk`}
@@ -518,7 +518,7 @@ function ReadingNow({
               className="block border-t border-paper/30 px-4 py-3"
             >
               <span className="type-kicker opacity-75">{work.author}</span>
-              <span className="mt-1 block font-serif text-xl">{work.title}</span>
+              <span className="type-card mt-1 block">{work.title}</span>
             </Link>
           ))
         : null}
@@ -547,7 +547,7 @@ function LineOfDay({
     return (
       <section className="border-b border-ink px-4 py-5">
         <p className="type-kicker text-muted">Line of the day</p>
-        <p className="mt-2 font-serif text-2xl">No line waiting. Keep one while you read.</p>
+        <p className="type-lede mt-2">No line waiting. Keep one while you read.</p>
       </section>
     );
   }
@@ -556,28 +556,28 @@ function LineOfDay({
   return (
     <section className="border-b border-ink bg-paper px-4 py-5 text-ink">
       <p className="type-kicker text-muted">Line of the day · Kept</p>
-      <p className="mt-1 font-sans text-sm text-ink/60">
+      <p className="type-chrome mt-1 text-ink/60">
         {line.title}
         {line.author ? ` · ${line.author}` : ""}
       </p>
-      <blockquote className="mt-3 font-serif text-2xl leading-snug">
+      <blockquote className="type-lede mt-3">
         “{reveal ? line.text : cloaked}”
       </blockquote>
       {shown === "remember" ? (
-        <p className="mt-3 font-serif text-lg text-ink/75">Trying to recall it helps it stay.</p>
+        <p className="type-pitch mt-3 text-ink/75">Trying to recall it helps it stay.</p>
       ) : null}
       <div className="mt-4 flex gap-px bg-ink">
         <button
           type="button"
           onClick={() => setShown("remember")}
-          className="min-h-12 flex-1 bg-ink px-3 font-sans text-sm text-paper"
+          className="type-chrome min-h-12 flex-1 bg-ink px-3 text-paper"
         >
           I remember
         </button>
         <button
           type="button"
           onClick={() => setShown("show")}
-          className="min-h-12 flex-1 bg-yellow px-3 font-sans text-sm text-ink"
+          className="type-chrome min-h-12 flex-1 bg-yellow px-3 text-ink"
         >
           Show me
         </button>
@@ -645,8 +645,8 @@ function WeekTrend({ model }: { model: ReadingModel }) {
   return (
     <section>
       <div className="border-b border-ink px-4 py-4">
-        <p className="font-serif text-4xl leading-none">{model.week.score ?? "—"}</p>
-        <p className="mt-2 font-sans text-sm text-ink/70">{model.week.detail}</p>
+        <p className="type-title tabular-nums">{model.week.score ?? "—"}</p>
+        <p className="type-pitch mt-2 text-ink/70">{model.week.detail}</p>
       </div>
       <div className="grid grid-cols-7 gap-px bg-ink" role="group" aria-label="This week">
         {days.map((day) => (
@@ -677,8 +677,8 @@ function WeekBar({ day, band }: { day: TrendDay; band: { low: number; high: numb
           <span className="absolute inset-x-0 bottom-0 bg-forest" style={{ height }} aria-hidden />
         ) : null}
       </span>
-      <span className="text-center font-sans text-[11px] uppercase">{day.label}</span>
-      <span className="mt-1 text-center font-sans text-[11px]">{label}</span>
+      <span className="type-kicker text-center">{day.label}</span>
+      <span className="type-kicker mt-1 text-center tabular-nums">{label}</span>
       {day.minutes > 0 && day.kind !== "reading" ? (
         <span className="sr-only">{formatActiveMinutes(day.minutes)} active</span>
       ) : null}
@@ -690,10 +690,10 @@ function MonthTrend({ model }: { model: ReadingModel }) {
   return (
     <section className="border-b border-ink bg-paper px-4 py-5">
       <p className="type-kicker text-muted">This month</p>
-      <p className="mt-2 font-serif text-4xl leading-none">{model.month.score ?? "—"}</p>
-      <p className="mt-3 max-w-prose font-serif text-xl leading-snug">{model.month.line}</p>
+      <p className="type-title mt-2 tabular-nums">{model.month.score ?? "—"}</p>
+      <p className="type-pitch mt-3 max-w-prose">{model.month.line}</p>
       {model.month.versusPrior != null ? (
-        <p className="mt-3 font-sans text-sm text-ink/70">{versusCopy(model.month.versusPrior)} over the previous months</p>
+        <p className="type-chrome mt-3 text-ink/70">{versusCopy(model.month.versusPrior)} over the previous months</p>
       ) : null}
     </section>
   );
@@ -705,12 +705,12 @@ function YearTrend({ model }: { model: ReadingModel }) {
   return (
     <section className="border-b border-ink px-4 py-5">
       <p className="type-kicker text-muted">Year so far</p>
-      <p className="mt-2 font-serif text-2xl leading-snug">
+      <p className="type-lede mt-2">
         {year.books} {year.books === 1 ? "book" : "books"} · {year.hours} h · {year.lines}{" "}
         {year.lines === 1 ? "line" : "lines"} · {year.countries} {year.countries === 1 ? "country" : "countries"}
       </p>
       {year.forms > 0 ? (
-        <p className="mt-1 font-sans text-sm text-ink/65">
+        <p className="type-pitch mt-1 text-ink/65">
           {year.forms} {year.forms === 1 ? "form" : "forms"}
         </p>
       ) : null}
@@ -721,7 +721,7 @@ function YearTrend({ model }: { model: ReadingModel }) {
               className="w-full bg-blue"
               style={{ height: month.score != null ? Math.max(4, Math.round((month.score / peak) * 72)) : 2, opacity: month.score != null ? 1 : 0.25 }}
             />
-            <span className="mt-1 font-sans text-[10px] text-ink/60">{month.label}</span>
+            <span className="type-kicker mt-1 text-ink/60">{month.label}</span>
           </div>
         ))}
       </div>
@@ -789,8 +789,8 @@ function ContributorSheet({
       </button>
       <div className="border-y border-ink px-4 py-5" style={{ background: COLOR[id], color: id === "rhythm" ? "var(--color-ink)" : "var(--color-paper)" }}>
         <p className="type-kicker opacity-80">{NAME[id]}</p>
-        <p className="mt-2 font-serif text-6xl leading-none">{scoreHide && part?.status === "scored" ? NAME[id] : value}</p>
-        <p className="mt-3 font-sans text-sm opacity-80">
+        <p className="type-title mt-2 tabular-nums">{scoreHide && part?.status === "scored" ? NAME[id] : value}</p>
+        <p className="type-chrome mt-3 opacity-80">
           Weight {CONTRIBUTOR_WEIGHTS[id]}%
           {model.daily.usualMinutes != null && id === "immersion"
             ? ` · your usual ${Math.round(model.daily.usualMinutes)} min`
@@ -798,21 +798,21 @@ function ContributorSheet({
         </p>
       </div>
       <div className="px-4 py-5">
-        <p className="font-serif text-2xl leading-snug">{copy.about}</p>
-        <p className="mt-3 font-serif text-lg text-ink/75">{part?.note}</p>
+        <p className="type-lede">{copy.about}</p>
+        <p className="type-pitch mt-3 text-ink/75">{part?.note}</p>
         <dl className="mt-5 grid grid-cols-1 gap-px bg-ink sm:grid-cols-2">
           {factsFor(id, model).map((fact) => (
             <div key={fact.label} className="bg-paper px-3 py-3">
               <dt className="type-kicker text-muted">{fact.label}</dt>
-              <dd className="mt-1 font-serif text-xl">{fact.value}</dd>
+              <dd className="type-lede mt-1">{fact.value}</dd>
             </div>
           ))}
         </dl>
         <p className="mt-5 type-kicker text-muted">Why it matters · {copy.evidence}</p>
-        <p className="mt-2 font-serif text-lg leading-snug">{copy.why}</p>
+        <p className="type-pitch mt-2">{copy.why}</p>
         <p className="mt-5 type-kicker text-muted">Try</p>
-        <p className="mt-2 font-serif text-lg leading-snug">{copy.try}</p>
-        <button type="button" onClick={onCalculated} className="mt-5 font-sans text-sm underline underline-offset-4">
+        <p className="type-pitch mt-2">{copy.try}</p>
+        <button type="button" onClick={onCalculated} className="type-chrome mt-5 underline underline-offset-4">
           How this is calculated
         </button>
       </div>
@@ -882,8 +882,8 @@ function HowCalculated({ onBack }: { onBack: () => void }) {
         ← Settings
       </button>
       <div className="border-y border-ink px-4 py-5">
-        <h2 className="font-serif text-4xl leading-none">How this is calculated</h2>
-        <p className="mt-3 font-serif text-lg text-ink/75">
+        <h2 className="type-title">How this is calculated</h2>
+        <p className="type-pitch mt-3 text-ink/75">
           The score stays on this device. It explains the reading. It doesn’t rank anyone, and it doesn’t send a notification.
         </p>
       </div>
@@ -892,7 +892,7 @@ function HowCalculated({ onBack }: { onBack: () => void }) {
           <p className="type-kicker" style={{ color: COLOR[id] }}>
             {NAME[id]} · {CONTRIBUTOR_WEIGHTS[id]}% · {ABOUT[id].evidence}
           </p>
-          <p className="mt-2 font-serif text-lg leading-snug">{ABOUT[id].how}</p>
+          <p className="type-pitch mt-2">{ABOUT[id].how}</p>
         </article>
       ))}
     </section>
@@ -921,7 +921,7 @@ function SettingsView({
       <button
         type="button"
         onClick={onCalculated}
-        className="flex min-h-14 w-full items-center border-b border-ink px-4 text-left font-serif text-xl"
+        className="type-lede flex min-h-14 w-full items-center border-b border-ink px-4 text-left"
       >
         How this is calculated
       </button>
@@ -950,7 +950,7 @@ function ScoreSwitches({
         aria-pressed={scoreHide}
       >
         <span className="type-kicker">{scoreHide ? "Score hidden" : "Hide score"}</span>
-        <span className="mt-1 block font-serif text-lg leading-tight">
+        <span className="type-pitch mt-1 block">
           {scoreHide ? "Contributors stay" : "Keep the bars, hide the number"}
         </span>
       </button>
@@ -961,7 +961,7 @@ function ScoreSwitches({
         aria-pressed={paused}
       >
         <span className="type-kicker">{paused ? "Paused" : "Pause scoring"}</span>
-        <span className="mt-1 block font-serif text-lg leading-tight">
+        <span className="type-pitch mt-1 block">
           {paused ? "Resume when you’re ready" : "Travel, illness, or a rest"}
         </span>
       </button>
