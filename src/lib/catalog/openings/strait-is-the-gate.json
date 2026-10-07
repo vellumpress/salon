@@ -1,0 +1,101 @@
+{
+  "id": "strait-is-the-gate",
+  "title": "Strait Is the Gate",
+  "author": "André Gide (tr. Dorothy Bussy)",
+  "year": "1924",
+  "note": "Opening sit: Chapter I to its first printed break.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "Some people might have made a book out of it; but the story I am going to tell is one which it took all my strength to live and over which I spent all my virtue. So I shall set down my recollections q",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Some people might have made a book out of it; but the story I am going to tell is one which it took all my strength to live and over which I spent all my virtue. So I shall set down my recollections quite simply, and if in places they are ragged I shall have recourse to no invention and neither patch nor connect them; any effort I might make to dress them up would take away from the last pleasure I hope to get in telling them."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "I lost my father before I was twelve years old. As there was nothing to keep my mother at Le Havre, where my father had had a practice as a doctor, she decided to go to Paris where she thought I should be better able to finish my education. She took a small apartment near the Luxembourg and Miss Ashburton came to live with us. Miss Flora Ashburton, who had no relations of her own, had begun by being my mother’s governess; she afterwards became her companion and later on her friend. I spent my childhood in the society of these two women whom I remember as equally gentle and equally sad and always dressed in mourning. One day—it was a good long time, I think, after my father’s death—my mother changed the black ribbon in her morning cap for a mauve one."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "“Oh, mamma!” I cried. “That colour doesn’t suit you at all.” The next morning the black ribbon was back again."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "My health was delicate. My mother and Miss Ashburton had only one thought—to keep me from ailing. If I have not become an idler as a result of their solicitude it must really be that my love of work is ingrained. At the very beginning of the fine weather they both used to persuade themselves that it was time for me to leave town, that I was growing pale. About the middle of June we would start for Fongueusemare in the neighbourhood of Le Havre, where we used to spend the summer every year at my uncle Bucolin’s."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Standing in a garden which is neither very large nor very fine, and which has nothing special to distinguish it from a number of other Normandy gardens, the Bucolins’ house, a white two-storied building, resembles a great many country houses of the century before last. A score of large windows look east on to the front of the garden; as many more on to the back; there are none at the sides. The windows have small panes; some of them, which have been recently replaced, seem too light in colour among the old ones, which look green and dull beside them. Certain others have flaws in the glass which our parents used to call “bubbles”; a tree seen through them becomes distorted; when the postman passes he suddenly develops a hump."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "The garden is rectangular and is enclosed by a wall. The part which lies in front of the house consists of a fairly large, shady lawn with a gravel path all round it. On this side the wall is lower and allows a view of the farmyard and buildings which lie round the garden. The farm is bordered according to the custom of the country, by an avenue of beeches."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Behind the house on the west side the garden spreads more spaciously. A walk gay with flowers runs along the south espalier wall and is protected from the sea winds by a thick screen of Portugal laurel and a few trees. Another walk running along the north wall disappears under a mass of branches. My cousins used to call it the “dark walk” and would not venture along it after twilight. These two paths lead to the kitchen-garden, which continues the flower-garden on a lower level, and which you reach by a small flight of steps. Then, at the bottom of the kitchen-garden, a little gate with a secret fastening leads, on the other side of the wall, to a coppice in which the beach avenue terminates right and left. As one stands on the door-step of the west front one can look over the top of this clump of trees to the plateau beyond with its admirable clothing of crops. On the horizon, at no great distance, can be seen the church of a little village and, when the air is still, the smoke rising from half-a-dozen houses."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Every fine summer evening after dinner we used to go down to the “lower garden.” We went out by the little secret gate and walked as far as a bench in the avenue from which there was a view over the country; there, near the thatched roof of a deserted marl-pit, my uncle, my mother and Miss Ashburton would sit down; before us the little valley filled with mist, and over the distant woods we watched the sky turn golden. Afterwards we would linger for a while at the lower end of the garden where it had already grown dark. When we came in we found my aunt in the drawing-room. She hardly ever went out with us. For us children the evening ended here; but very often we were still reading in our rooms when we heard our elders go up to bed."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Almost every hour of the day which we did not spend in the garden we spent in the “school-room,” my uncle’s study, in which some school desks had been placed for us. My cousin Robert and I worked side by side—behind us were Juliette and Alissa. Alissa was two years older than I, and Juliette one year younger; Robert was the youngest of us four."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "I am not writing here an account of my early recollections, but only of those which refer to my story. It really begins, I may say, in the year of my father’s death. Perhaps my sensibility—over-stimulated as it had been by our bereavement and if not by my own grief at any rate by the sight of my mother’s—predisposed me at this time to new emotions. I had matured precociously, so that when we went back to Fongueusemare that year, Juliette and Robert seemed to me all the younger by comparison, but when I saw Alissa I understood on a sudden that we two had ceased to be children."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Yes, it was certainly the year of my father’s death; my recollection is confirmed by a conversation which, I remember, took place between my mother and Miss Ashburton immediately after our arrival. I had come unexpectedly into the room where my mother and her friend were talking together; the subject of their talk was my aunt. My mother was indignant that she had not gone into mourning or had gone out again so soon. (To tell the truth it was as impossible for me to imagine Aunt Bucolin dressed in black as my mother in colours). The day of our arrival Lucile Bucolin, as far as I can remember, was wearing a muslin gown. Miss Ashburton, conciliatory as ever, was trying to calm my mother."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "“After all,” she argued timidly, “white is mourning too.”"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "“And do you call that red shawl she has round her shoulders mourning too? Flora, I am ashamed of you,” cried my mother."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "It was only during the holidays that I saw my aunt and no doubt the warm summer weather was the reason of her wearing the transparent, low-necked bodices in which I always remember her; but still more than the brilliant colour of the scarves which she used to throw over her bare shoulders, it was my aunt’s low necks that shocked my mother."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Lucile Bucolin was very beautiful. I still have by me a little portrait of her, in which I can see her as she then was, looking so young that she might have been taken for the elder sister of her daughters, sitting sideways in an attitude which was habitual to her, her head leaning on her left hand, her little finger curved rather affectedly towards her lip. A large meshed net confines the masses of her curly hair, which fall half-uncoiled upon her neck. In the opening of her bodice a locket of Italian mosaic hangs from a loosely tied black velvet neck ribbon. Her black velvet sash, with its wide floating bow, her broad-brimmed soft straw hat which is dangling from the back of her chair—everything adds to the childishness of her appearance. Her right hand hangs by her side, holding a shut book."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Lucile Bucolin came from a West Indian family; she had either never known her parents or lost them very early. My mother told me later that when she was left an orphan, or, possibly even deserted, she was taken in by Pasteur Vautier and his wife, who at that time had no children of their own. They left Martinique soon after, taking her with them to Le Havre, where the Bucolins were settled. The Vautiers and the Bucolins used to see a good deal of each other. My uncle was at that time employed in a bank abroad, and it was only three years later, when he came home to stay with his people, that he saw little Lucile. He fell in love with her and at once asked her to marry him, to the great grief of his parents and of my mother. Lucile was then sixteen years old. In the meantime Madame Vautier had had two children; she was beginning to be anxious as to the influence their adopted sister—whose character was developing more and more oddly every month—might have over them; the household, moreover, was in straitened circumstances. My mother told me all this in order to explain why the Vautiers accepted her brother’s proposal so gladly. What I suppose for my own part is, that Miss Lucile was becoming terribly embarrassing. I am well enough acquainted with Le Havre society to imagine the kind of reception that a girl of such fascinations would meet with. Pasteur Vautier, whom I knew later on, was a gentle creature, at once circumspect and ingenuous, incapable of coping with intrigue and quite defenceless against evil—the worthy man must have been at the end of his tether. I can say nothing of Madame Vautier; she died in giving birth to a fourth child who was about my own age and who afterwards became my friend."
+    }
+  ]
+}
