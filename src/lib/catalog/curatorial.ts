@@ -1229,6 +1229,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-spoilt-child",
   // Mira Tue 6 Oct 2026 PM — A Japanese Blossom follows, Next carefully only (the content notes are on the card). Never Featured. Off every Ritual lane.
   "a-japanese-blossom",
+  // Mira Wed 7 Oct 2026 AM — Fräulein Schmidt and Mr. Anstruther follows, plain Next (no heads-up card). Never Featured. Off every Ritual lane.
+  "fraulein-schmidt-and-mr-anstruther",
 ] as const;
 
 /**

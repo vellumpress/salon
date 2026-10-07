@@ -1,0 +1,118 @@
+{
+  "id": "fraulein-schmidt-and-mr-anstruther",
+  "title": "Fräulein Schmidt and Mr. Anstruther",
+  "author": "Elizabeth von Arnim",
+  "year": "1907",
+  "note": "Opening sit: Letters I–II.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Letter I",
+      "place": "Jena, Nov. 6th.",
+      "reentry": "Dear Roger,—This is only to tell you that I love you, supposing you should have forgotten it by the time you get to London. The letter will follow you by the train after the one you left by, and you w",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Letter II",
+      "place": "Jena, Nov. 7th.",
+      "reentry": "Dear Roger,—You left on Tuesday night—that's yesterday—and you'll get to London on Thursday morning—that's to-morrow—and first you'll want to wash yourself, and have breakfast—please notice my extreme",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Dear Roger,—This is only to tell you that I love you, supposing you should have forgotten it by the time you get to London. The letter will follow you by the train after the one you left by, and you will have it with your breakfast the day after to-morrow. Then you will be eating the marmalade Jena could not produce, and you'll say, 'What a very indiscreet young woman to write first.' But look at the Dear Roger, and you'll see I'm not so indiscreet after all. What could be more sober? And you've no idea of all the nice things I could have put instead of that, only I wouldn't. It is a most extraordinary thing that this time yesterday we were on the polite-conversation footing, you, in your beautiful new German, carefully calling me *gnädiges Fräulein* at every second breath, and I making appropriate answers to the Mr. Anstruther who in one bewildering hour turned for me into Dear Roger. Did you always like me so much?—I mean, love me so much?"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "My spirit is rather unbendable as yet to the softnesses of these strange words, stiff for want of use, so forgive a tendency to go round them. Don't you think it is very wonderful that you should have been here a whole year, living with us, seeing me every day, practising your German on me—oh, wasn't I patient?—and never have shown the least sign, that I could see, of thinking of me or of caring for me at all except as a dim sort of young lady who assisted her step-mother in the work of properly mending and feeding you? And then an hour ago, just one hour by that absurd cuckoo-clock here in this room where we said good-by, you suddenly turned into something marvellous, splendid, soul-thrilling—well, into Dear Roger. It is so funny that I've been laughing, and so sweet that I've been crying. I'm so happy that I can't help writing, though I do think it rather gushing—loathsome word—to write first."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "But then you strictly charged me not to tell a soul yet, and how can I keep altogether quiet? You, then, my poor Roger, must be the one to listen. Do you know what Jena looks like to-night? It is the most dazzling place in the world, radiant with promise, shining and dancing with all sorts of little lovely lights that I know are only the lamps being lit in people's rooms down the street, but that look to me extraordinarily like stars of hope come out, in defiance of nature and fog, to give me a glorious welcome. You see, I'm new, and they know it. I'm not the Rose-Marie they've twinkled down on from the day I was born till to-night. She was a dull person: a mere ordinary, dull person, climbing doggedly up the rows of hours each day set before her, doggedly doing certain things she was told were her daily duties, equally doggedly circumventing certain others, and actually supposing she was happy."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Happy? She was not. She was most wretched. She was blind and deaf. She was asleep. She was only half a woman. What is the good or the beauty of anything, alive or dead, in the world, that has not fulfilled its destiny? And I never saw that before. I never saw a great many things before. I am amazed at the suddenness of my awaking. Love passed through this house today, this house that other people think is just the same dull place it was yesterday, and behold—well, I won't grow magnificent, and it is what you do if you begin a sentence with Behold. But really there's a splendor—oh well. And as for this room where you—where I—where we—well, I won't grow sentimental either, though now I know, I who always scoffed at it, how fatally easy a thing it is to be. That is, supposing one has had great provocation; and haven't I? Oh, haven't I?"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "I had got as far as that when your beloved Professor Martens came in, very much agitated because he had missed you at the station, where he had been to give you a send-off. And what do you think he said? He said, why did I sit in this dreary hole without a lamp, and why didn't I draw the curtains, and shut out the fog and drizzle. Fog and drizzle? It really seemed too funny. Why, the whole sky is shining. And as for the dreary hole—gracious heavens, is it possible that just being old made him not able to feel how the air of the room was still quivering with all you said to me, with all the sweet, wonderful, precious things you said to me? The place was full of you. And there was your darling coffee-cup still where you had put it down, and the very rug we stood on still all ruffled up."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "'I think it's a glorious hole,' I couldn't help saying."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "'*De gustibus*' said he indulgently; and he stretched himself in the easy-chair—the one you used to sit in—and said he should miss young Anstruther."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "'Shall you?' said I."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "'Fräulein Rose-Marie,' said he solemnly, 'he was a most intelligent young man. Quite the most intelligent young man I have ever had here.'"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "'Really?' said I, smiling all over my silly face."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "And so of course you were, or how would you ever have found out that I—well, that I'm not wholly unlovable?"
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Yours quite, quite truly, / R.-M."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Dear Roger,—You left on Tuesday night—that's yesterday—and you'll get to London on Thursday morning—that's to-morrow—and first you'll want to wash yourself, and have breakfast—please notice my extreme reasonableness—and it will be about eleven before you are able to begin to write to me. I shan't get the letter till Saturday, and today is only Wednesday, so how can I stop myself from writing to you again, I should like to know? I simply can't. Besides, I want to tell you all the heaps of important things I would have told you yesterday, if there had been time when you asked me in that amazing sudden way if I'd marry you."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Do you know I'm poor? Of course you do. You couldn't have lived with us a year and not seen by the very sort of puddings we have that we are poor. Do you think that anybody who can help it would have *dicker Reis* three times a week? And then if we were not, my step-mother would never bother to take in English young men who want to study German; she would do quite different sorts of things, and we should have different sorts of puddings,—proud ones, with *Schlagsahne* on their tops—and two servants instead of one, and I would never have met you. Well, you know then that we are poor; but I don't believe you know *how* poor. When girls here marry, their parents give them, as a matter-of-course, house-linen enough to last them all their lives, furniture enough to furnish all their house, clothes enough for several generations, and so much a year besides. Then, greatly impoverished, they spend the evenings of their days doing without things and congratulating themselves on having married off their daughter. The man need give only himself."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "You've heard that my own mother, who died ten years ago, was English? Yes, I remember I told you that, when you were so much surprised at what you called, in politest German, my colossally good English. From her I know that people in England do not buy their son-in-law's carpets and saucepans, but confine their helpfulness to suggesting Maple. It is the husband, they think, who should, like the storks of the Fatherland, prepare and beautify the nest for the wife. If the girl has money, so much the better; but if she has not, said my mother, it doesn't put an absolute stop to her marrying."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Here, it does; and I belong here. My mother had some money, or my father would never have let himself fall in love with her—I believe you can nip these things in the bud if you see the bud in time—and you know my father is not a mercenary man; he only, like the rest of us, could not get away altogether from his bringing-up and the points of view he had been made to stare from ever since he stared at all. It was a hundred a year (pounds, thank heaven, not marks), and it is all we have except what he gets for his books, when he does get anything, which is never, and what my step-mother has, which is an annuity of a hundred and fifty pounds. So the hundred a year will be the whole sum of my riches, for I have no aunts. What I want you to consider is the awfulness of marrying a woman absolutely without saucepans. Not a single towel will she be able to add to your linen-room, not a single pot to your kitchen. All Jena when it hears of it will say, 'Poor, infatuated young man,' and if I had sisters all England would refuse in future to send its sons to my step-mother. Why, if you were making a decently suitable marriage do you suppose your *Braut* would have to leave off writing to you at this point, in the very middle of luminous prophecy, and hurry into the kitchen and immerse herself in the preparation of potato soup? Yet that is exactly what your *Braut,* who has caught sight of the clock, is about to do. So good-by."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Your poor, but infinitely honest, / R.-M."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "See how wise and practical I am today. I believe my letter last night was rather aflame. Now comes morning with its pails of cold water, and drenches me back into discretion. Thank God, say I, for mornings."
+    }
+  ]
+}
