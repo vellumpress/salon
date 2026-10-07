@@ -224,3 +224,137 @@ test(
     }
   },
 );
+
+async function focusInPane(page: Page) {
+  await page.getByRole("button", { name: "Next sentence" }).waitFor();
+  await page.waitForFunction(
+    () => document.querySelector(".reader-frame")?.getAttribute("data-bound") === "full",
+  );
+  await page.waitForFunction(() => {
+    const pane = document.querySelector(".reading-pane");
+    const line = document.querySelector(".breath-now");
+    if (!pane || !line) return false;
+    const box = pane.getBoundingClientRect();
+    const row = line.getBoundingClientRect();
+    return row.height > 8 && row.top > box.top + 24 && row.bottom < box.bottom - 8;
+  });
+}
+
+test(
+  "a touch on the already-read lines goes back and does not open the bar",
+  { timeout: 240_000 },
+  async () => {
+    const stop = await ensureServer();
+    const browser = await launchBrowser();
+    try {
+      const context = await browser.newContext({
+        viewport: {
+          width: READER_PHONE_VIEWPORT.width,
+          height: READER_PHONE_VIEWPORT.height,
+        },
+        hasTouch: true,
+        isMobile: true,
+        deviceScaleFactor: 2,
+      });
+      const page = await context.newPage();
+      await page.addInitScript(() => localStorage.clear());
+      await page.goto(READER, { waitUntil: "domcontentloaded" });
+      await focusInPane(page);
+
+      const spot = await page.evaluate(() => {
+        const line = document.querySelector(".breath-now");
+        const pane = document.querySelector(".reading-pane");
+        if (!line || !pane) return null;
+        const row = line.getBoundingClientRect();
+        const upcoming = [...document.querySelectorAll(".upcoming-slot .look-line")];
+        const lowest = upcoming.reduce(
+          (max, el) => Math.max(max, el.getBoundingClientRect().bottom),
+          0,
+        );
+        const glass = document.querySelector(".reader-glass")?.getBoundingClientRect();
+        return {
+          text: line.textContent ?? "",
+          backX: Math.round(window.innerWidth * 0.72),
+          backY: Math.round(row.top - 28),
+          lowest,
+          innerHeight: window.innerHeight,
+          paneBottom: pane.getBoundingClientRect().bottom,
+          glass: glass
+            ? {
+                x: glass.x + glass.width / 2,
+                y: glass.y + glass.height / 2,
+              }
+            : null,
+        };
+      });
+      assert.ok(spot, "focus line missing");
+      assert.ok(spot.text.length > 0);
+      assert.ok(
+        spot.lowest >= spot.innerHeight - 12,
+        `upcoming preview ended at ${spot.lowest}, viewport ${spot.innerHeight}`,
+      );
+      assert.ok(spot.paneBottom >= spot.innerHeight - 2, "reading pane stops above the screen bottom");
+
+      await page.touchscreen.tap(spot.backX, spot.backY);
+      await page.waitForFunction(
+        (prev) => document.querySelector(".breath-now")?.textContent !== prev,
+        spot.text,
+      );
+      const afterBack = await bar(page);
+      assert.notEqual(afterBack.text, spot.text, "tap above the focus did not go back");
+      assert.equal(afterBack.state, "closed", "back tap opened the bar");
+
+      // Advance ignores taps inside the short lock that a retreat just set.
+      await page.waitForTimeout(200);
+      const nextSpot = await page.evaluate(() => {
+        const row = document.querySelector(".breath-now")?.getBoundingClientRect();
+        if (!row) return null;
+        const y = Math.min(window.innerHeight - 72, Math.max(row.top + 8, row.bottom + 28));
+        return {
+          x: Math.round(window.innerWidth * 0.28),
+          y: Math.round(y),
+        };
+      });
+      assert.ok(nextSpot, "focus line missing after going back");
+      await page.touchscreen.tap(nextSpot.x, nextSpot.y);
+      await page.waitForFunction(
+        (prev) => document.querySelector(".breath-now")?.textContent !== prev,
+        afterBack.text,
+      );
+      const afterForward = await bar(page);
+      assert.equal(afterForward.text, spot.text, "tap below the focus did not advance");
+      assert.equal(afterForward.state, "closed", "forward tap opened the bar");
+
+      assert.ok(spot.glass, "hourglass missing");
+      const beforeGlass = afterForward.text;
+      await page.touchscreen.tap(spot.glass.x, spot.glass.y);
+      await page.waitForFunction(
+        () => document.querySelector("[data-reader-bar]")?.getAttribute("data-reader-bar") === "open",
+      );
+      const opened = await bar(page);
+      assert.equal(opened.state, "open", "hourglass tap did not open the bar");
+      assert.equal(opened.text, beforeGlass, "hourglass tap turned the page");
+
+      await page.goto(`${ORIGIN}/salon/read/passing?at=0`, { waitUntil: "domcontentloaded" });
+      await focusInPane(page);
+      const first = await page.evaluate(() => {
+        const line = document.querySelector(".breath-now");
+        const row = line?.getBoundingClientRect();
+        return {
+          text: line?.textContent ?? "",
+          x: Math.round(window.innerWidth * 0.62),
+          y: row ? Math.round(row.top - 24) : 80,
+        };
+      });
+      assert.ok(first.text.length > 0);
+      await page.touchscreen.tap(first.x, first.y);
+      await page.waitForTimeout(400);
+      const stayed = await bar(page);
+      assert.equal(stayed.text, first.text, "back from the first sentence changed the line");
+      assert.equal(stayed.state, "closed", "no-op back tap opened the bar");
+    } finally {
+      await browser.close();
+      await stop();
+    }
+  },
+);

@@ -7,6 +7,7 @@ import {
   UPCOMING_WINDOW,
   breathTooTall,
   centerLineOffset,
+  focusAnchorPx,
   readCenterLineEnabled,
   upcomingBreaths,
   upcomingOpacity,
@@ -76,7 +77,33 @@ test("center the line defaults on and persists like the other reader settings", 
 
 test("the focus sentence rests in the lower band of the reading area", () => {
   assert.ok(CENTER_LINE_ANCHOR >= 0.62 && CENTER_LINE_ANCHOR <= 0.66);
-  assert.ok(UPCOMING_WINDOW >= 4 && UPCOMING_WINDOW <= 16);
+  assert.ok(UPCOMING_WINDOW >= 16 && UPCOMING_WINDOW <= 28);
+});
+
+test("the anchor stays at 64% of the area above the hourglass", () => {
+  assert.equal(focusAnchorPx(800, 0), 800 * CENTER_LINE_ANCHOR);
+  assert.equal(focusAnchorPx(800, 80), 720 * CENTER_LINE_ANCHOR);
+  assert.equal(focusAnchorPx(0, 40), 0);
+  assert.equal(focusAnchorPx(100, 400), 0);
+  assert.equal(focusAnchorPx(Number.NaN, 10), 0);
+});
+
+test("upcoming window fills a tall phone below the focus, including the hourglass", () => {
+  const phone = 956;
+  const header = 48;
+  const safeTop = 47;
+  const hourglass = 48;
+  const homeIndicator = 34;
+  const pane = phone - safeTop - header;
+  const overlap = hourglass + homeIndicator;
+  const anchor = focusAnchorPx(pane, overlap);
+  const below = pane - anchor;
+  const shortLine = 28;
+  assert.ok(anchor > pane * 0.5, "focus stays in the lower band of the reading area");
+  assert.ok(
+    UPCOMING_WINDOW * shortLine >= below,
+    `window ${UPCOMING_WINDOW} does not cover ${below}px below the anchor`,
+  );
 });
 
 test("center offset keeps the breath on the anchor at the start, middle, and end", () => {

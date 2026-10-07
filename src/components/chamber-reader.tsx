@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type TouchEvent } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { openingBreathIndex } from "@/lib/opening-scene";
@@ -55,12 +55,13 @@ import { decodeHostedSit } from "@/lib/hosted-sit";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
 import {
-  CENTER_LINE_ANCHOR,
   breathTooTall,
   centerLineOffset,
+  focusAnchorPx,
   upcomingBreaths,
   upcomingOpacity,
 } from "@/lib/center-line";
+import { turnZone } from "@/lib/reader-turn";
 import { useCenterLine } from "@/lib/use-center-line";
 
 type Overlay =
@@ -153,6 +154,8 @@ export function TbrReader({
   const [overflows, setOverflows] = useState(false);
   const [atEnd, setAtEnd] = useState(true);
   const [lookbackPx, setLookbackPx] = useState(0);
+  /** Top of the focus line, relative to the reading column. Taps above it go back. */
+  const [prevZonePx, setPrevZonePx] = useState(0);
   const [sandCue, setSandCue] = useState(false);
   const [customSit, setCustomSit] = useState("");
   /** threshold: full = length+company; length = pair already set, sit missing; share = invite friend */
@@ -167,6 +170,8 @@ export function TbrReader({
   const centerLine = useCenterLine();
   const centerOn = centerLine.enabled;
   const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const turnedByTouch = useRef(false);
+  const turnHostRef = useRef<HTMLDivElement>(null);
   const lockUntil = useRef(0);
   const overlayRef = useRef(overlay);
   overlayRef.current = overlay;
@@ -761,8 +766,12 @@ export function TbrReader({
       const bottomPad = bottomPadRef.current;
       if (!line) return;
       const height = pane.clientHeight;
-      const anchorPx = height * CENTER_LINE_ANCHOR;
-      const tooTall = breathTooTall(line.scrollHeight, height);
+      const host = turnHostRef.current;
+      const marginBottom = host ? Number.parseFloat(getComputedStyle(host).marginBottom) : 0;
+      const overlap = Number.isFinite(marginBottom) && marginBottom < 0 ? -marginBottom : 0;
+      const readingHeight = Math.max(0, height - overlap);
+      const anchorPx = focusAnchorPx(height, overlap);
+      const tooTall = breathTooTall(line.scrollHeight, readingHeight || height);
       const look = lookbackSlotRef.current;
       const ahead = upcomingSlotRef.current;
       if (tooTall) {
@@ -779,6 +788,7 @@ export function TbrReader({
         slot.style.overflowY = "";
         if (look) look.style.display = "";
         if (ahead) ahead.style.display = "";
+        if (look) void look.offsetHeight;
       }
 
       const trackRect = track.getBoundingClientRect();
@@ -790,6 +800,7 @@ export function TbrReader({
             paneHeight: height,
             lineTop,
             lineHeight: targetRect.height,
+            anchor: height > 0 ? anchorPx / height : undefined,
           });
       const travel = Math.min(Math.max(0, lastTravel.current), height);
       const motion =
@@ -834,7 +845,21 @@ export function TbrReader({
       setAtEnd((prev) => (prev === end ? prev : end));
       const lookHeight = tooTall || !look ? 0 : Math.round(look.getBoundingClientRect().height);
       setLookbackPx((prev) => (prev === lookHeight ? prev : lookHeight));
-      layoutSig = `${pane.clientHeight}:${line.clientHeight}`;
+      const hostRect = host?.getBoundingClientRect();
+      const focusTop = line.getBoundingClientRect().top - (hostRect?.top ?? 0);
+      const zone = hostRect
+        ? Math.max(0, Math.min(Math.round(hostRect.height), Math.round(focusTop)))
+        : 0;
+      setPrevZonePx((prev) => (prev === zone ? prev : zone));
+      layoutSig = sigNow();
+    };
+
+    const sigNow = () => {
+      const lineNow = slot.querySelector<HTMLElement>(".breath-now");
+      const hostEl = turnHostRef.current;
+      const margin = hostEl ? Number.parseFloat(getComputedStyle(hostEl).marginBottom) : 0;
+      const overlapNow = Number.isFinite(margin) && margin < 0 ? Math.round(-margin) : 0;
+      return `${Math.round(pane.clientHeight)}:${lineNow?.clientHeight ?? 0}:${lookbackSlotRef.current?.offsetHeight ?? 0}:${upcomingSlotRef.current?.offsetHeight ?? 0}:${overlapNow}`;
     };
 
     place(true);
@@ -845,16 +870,24 @@ export function TbrReader({
     };
     slot.addEventListener("scroll", onScroll, { passive: true });
     const ro = new ResizeObserver(() => {
-      if (performance.now() < holdMotionUntil) return;
-      const lineNow = slot.querySelector(".breath-now");
-      const sig = `${pane.clientHeight}:${lineNow?.clientHeight ?? 0}`;
-      if (sig === layoutSig) return;
-      layoutSig = sig;
-      place(false);
+      const finish = () => {
+        if (!live) return;
+        const sig = sigNow();
+        if (sig === layoutSig) return;
+        layoutSig = sig;
+        place(false);
+      };
+      if (performance.now() < holdMotionUntil) {
+        window.setTimeout(finish, Math.max(16, holdMotionUntil - performance.now() + 16));
+        return;
+      }
+      finish();
     });
     ro.observe(pane);
     const line = slot.querySelector(".breath-now");
     if (line) ro.observe(line);
+    if (lookbackSlotRef.current) ro.observe(lookbackSlotRef.current);
+    if (upcomingSlotRef.current) ro.observe(upcomingSlotRef.current);
     if (!motionArmed.current) {
       void document.fonts?.ready.then(() => {
         if (live) place(false);
@@ -947,52 +980,109 @@ export function TbrReader({
   );
   const breathClass = cn("breath-slot", overflows && "overflows", atEnd && "at-end");
 
+  function turnFromTouch(e: TouchEvent, go: () => void) {
+    const start = touchStart.current;
+    const t = e.changedTouches[0];
+    if (!start || !t) return;
+    const dx = t.clientX - start.x;
+    const dy = t.clientY - start.y;
+    if (Math.abs(dx) >= 48 && Math.abs(dx) > Math.abs(dy)) return;
+    if (Math.abs(dx) > 18 || Math.abs(dy) > 18) return;
+    turnedByTouch.current = true;
+    go();
+    setBar((state) => reduceReaderBar(state, "page"));
+  }
+
+  function turnFromClick(go: () => void) {
+    if (turnedByTouch.current) {
+      turnedByTouch.current = false;
+      return;
+    }
+    go();
+  }
+
   const pane = (
     <div
+      ref={turnHostRef}
       data-reader-text
-      className="relative flex min-h-0 flex-1"
+      className={cn("reader-turn relative flex min-h-0 flex-1", !together && "reader-turn-bleed")}
       onTouchStart={(e) => {
         const t = e.changedTouches[0];
         touchStart.current = { x: t.clientX, y: t.clientY };
+      }}
+      onClick={() => {
+        if (turnedByTouch.current) turnedByTouch.current = false;
       }}
       onTouchEnd={(e) => {
         const start = touchStart.current;
         touchStart.current = null;
         if (!start) return;
         const t = e.changedTouches[0];
+        if (!t) return;
         const dx = t.clientX - start.x;
         const dy = t.clientY - start.y;
-        if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy)) return;
-        if (dx < 0) advance();
-        else retreat();
+        const swipe = Math.abs(dx) >= 48 && Math.abs(dx) > Math.abs(dy);
+        if (swipe) {
+          turnedByTouch.current = true;
+          if (dx < 0) advance();
+          else retreat();
+          setBar((state) => reduceReaderBar(state, "page"));
+          return;
+        }
+        if (Math.abs(dx) > 18 || Math.abs(dy) > 18) return;
+        if (turnedByTouch.current) return;
+        const host = turnHostRef.current;
+        const line = breathSlotRef.current?.querySelector(".breath-now");
+        if (!host) return;
+        const hostRect = host.getBoundingClientRect();
+        const lineRect = line?.getBoundingClientRect();
+        const zone = turnZone({
+          x: t.clientX,
+          y: t.clientY,
+          host: {
+            left: hostRect.left,
+            top: hostRect.top,
+            right: hostRect.right,
+            bottom: hostRect.bottom,
+            width: hostRect.width,
+          },
+          focusTop: lineRect ? lineRect.top : null,
+          focusBottom: lineRect ? lineRect.bottom : null,
+        });
+        if (!zone) return;
+        turnedByTouch.current = true;
+        if (zone === "prev") retreat();
+        else advance();
         setBar((state) => reduceReaderBar(state, "page"));
       }}
     >
       <button
         type="button"
-        data-turn=""
+        data-turn="prev"
         tabIndex={-1}
         aria-label="Previous sentence"
         className={cn(
-          "absolute left-0 z-10 w-1/3 cursor-w-resize",
-          overflows ? "top-0" : "inset-y-0",
+          "absolute top-0 z-10 cursor-w-resize",
+          overflows ? "left-0 w-1/3" : "inset-x-0",
         )}
-        style={overflows ? { height: lookbackPx } : undefined}
+        style={{ height: overflows ? lookbackPx : Math.max(0, prevZonePx) }}
         onMouseDown={(e) => e.preventDefault()}
-        onClick={retreat}
+        onTouchEnd={(e) => turnFromTouch(e, retreat)}
+        onClick={() => turnFromClick(retreat)}
       />
       <button
         type="button"
-        data-turn=""
+        data-turn="next"
         tabIndex={-1}
         aria-label="Next sentence"
         className={cn(
-          "absolute right-0 z-10 w-2/3 cursor-e-resize",
-          overflows ? "top-0" : "inset-y-0",
+          "absolute z-10 cursor-e-resize",
+          overflows ? "right-0 top-0 w-2/3" : "inset-x-0 bottom-0",
         )}
-        style={overflows ? { height: lookbackPx } : undefined}
+        style={overflows ? { height: lookbackPx } : { top: Math.max(0, prevZonePx) }}
         onMouseDown={(e) => e.preventDefault()}
-        onClick={advance}
+        onTouchEnd={(e) => turnFromTouch(e, advance)}
+        onClick={() => turnFromClick(advance)}
       />
 
       <div
