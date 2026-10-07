@@ -56,6 +56,7 @@ import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
 import {
   CENTER_LINE_ANCHOR,
+  breathTooTall,
   centerLineOffset,
   upcomingBreaths,
   upcomingOpacity,
@@ -761,7 +762,7 @@ export function TbrReader({
       if (!line) return;
       const height = pane.clientHeight;
       const anchorPx = height * CENTER_LINE_ANCHOR;
-      const tooTall = line.scrollHeight > height * 0.9;
+      const tooTall = breathTooTall(line.scrollHeight, height);
       const look = lookbackSlotRef.current;
       const ahead = upcomingSlotRef.current;
       if (tooTall) {

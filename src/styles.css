@@ -1625,10 +1625,10 @@ html[data-status-motion="1"] .status-bar-fill::before {
   }
 }
 
-/* Center the line — the current breath sits on the reading-area anchor.
-   Pads keep that anchor at the start and end of a chapter. The track's
-   transform is the same ease the reader already uses; reduced motion
-   clears every transition under .reader-frame. */
+/* The current breath rests low in the reading pane. Pads keep that
+   anchor at the start and end of a chapter. The track's transform is the
+   same ease the reader already uses; reduced motion clears every
+   transition under .reader-frame. */
 .reading-pane-centered {
   display: block;
 }
@@ -1679,6 +1679,16 @@ html[data-status-motion="1"] .status-bar-fill::before {
   flex-direction: column;
   gap: 0.65rem;
   pointer-events: none;
+  /* One layer for the whole preview. A filter on each line re-rasterizes
+     while the track translates on iPhone Safari. The focus line is outside
+     this slot, so it stays sharp. */
+  filter: blur(2px);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .upcoming-slot {
+    filter: none;
+  }
 }
 
 .reading-pane-centered .breath-slot.overflows {

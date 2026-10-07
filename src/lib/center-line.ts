@@ -1,8 +1,8 @@
 import type { Breath, Work } from "./literature.ts";
 
 /**
- * Reader preference: keep the current breath near the middle of the reading
- * area, with a short preview of what comes next. Stored beside Daylight colors.
+ * Reader preference: keep the current breath low in the reading area, with a
+ * short preview of what comes next. Stored beside Daylight colors.
  * Missing key is on. Only an explicit off value restores the bottom anchor.
  */
 export const CENTER_LINE_KEY = "salon-center-line";
@@ -10,8 +10,9 @@ export const CENTER_LINE_KEY = "salon-center-line";
 /**
  * Vertical center of the current breath, as a fraction of the reading pane
  * (the area between the top nav / safe area and the bottom bar).
+ * Already-read lines fill the space above this; the next lines sit below.
  */
-export const CENTER_LINE_ANCHOR = 0.475;
+export const CENTER_LINE_ANCHOR = 0.64;
 
 /**
  * Upcoming breaths drawn under the current line. Same bound as lookback so a
@@ -76,6 +77,19 @@ export function upcomingBreaths(work: Work, index: number, limit = UPCOMING_WIND
 }
 
 /**
+ * A breath whose center sits on the anchor stays inside the pane only while
+ * it is no taller than the shorter side of that anchor. Past that — and past
+ * 90% of the pane — it scrolls in place instead of clipping.
+ */
+export function breathTooTall(scrollHeight: number, paneHeight: number, anchor = CENTER_LINE_ANCHOR): boolean {
+  if (!Number.isFinite(paneHeight) || paneHeight <= 0) return false;
+  if (!Number.isFinite(scrollHeight) || scrollHeight <= 0) return false;
+  const anchorPx = paneHeight * anchor;
+  const fitLimit = 2 * Math.min(anchorPx, Math.max(0, paneHeight - anchorPx));
+  return scrollHeight > Math.min(paneHeight * 0.9, fitLimit);
+}
+
+/**
  * Translate so the breath's vertical center lands on the anchor.
  * `lineTop` is the breath's layout top inside the moving track (no transform).
  * A short lookback or a short preview still lands on the anchor — the caller
@@ -97,12 +111,12 @@ export function centerLineOffset(input: {
 }
 
 /**
- * Preview opacity. The nearest upcoming line is a touch fainter than the
- * nearest read line (0.5). The far edge stays readable — it is a preview,
- * not a fade to nothing.
+ * Preview opacity. The nearest upcoming line is fainter than a just-read
+ * line, and a single soft blur on the upcoming slot (styles.css) does the
+ * rest of the defocus. The far edge stays a readable shape.
  */
 export function upcomingOpacity(index: number, count: number): number {
-  if (count <= 1) return 0.4;
+  if (count <= 1) return 0.36;
   const t = index / (count - 1);
-  return 0.44 - t * 0.12;
+  return 0.4 - t * 0.1;
 }
