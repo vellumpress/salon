@@ -201,6 +201,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "a-monkey": { label: "Christiania", region: "no" },
   "the-golden-age": { label: "England", region: "gb" },
   "the-mist": { label: "the glade", region: "dk" },
+  "fraulein-schmidt-and-mr-anstruther": { label: "Jena", region: "de" },
   "a-japanese-blossom": { label: "Japan", region: "jp" },
   "the-spoilt-child": { label: "Vaidyabati", region: "in" },
   "winnie-the-pooh": { label: "the forest", region: "gb" },
