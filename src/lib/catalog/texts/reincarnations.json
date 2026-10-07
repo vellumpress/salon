@@ -1428,48 +1428,6 @@
       "place": "To empty pockets",
       "reentry": "See Douglas Hyde's *Life of Raftery*.",
       "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s203",
-      "title": "By James Stephens",
-      "place": "By James Stephens",
-      "reentry": "The Charwoman's Daughter. Cr. 8vo. 4s. 6d. net.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s204",
-      "title": "The Crock of Gold.  Cr. 8vo.  6s. net",
-      "place": "The Crock of Gold.  Cr. 8vo.  6s. net",
-      "reentry": "Here are Ladies. Cr. 8vo. 6s. net.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s205",
-      "title": "The Demi-Gods.  Cr. 8vo.  6s. net",
-      "place": "The Demi-Gods.  Cr. 8vo.  6s. net",
-      "reentry": "Songs from the Clay. Poems. Cr. 8vo. 4s. 6d. net.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s206",
-      "title": "Some New Books",
-      "place": "Some New Books",
-      "reentry": "Moments of Vision and Miscellaneous Verses. By Thomas Hardy. Cr. 8vo. 6s. net.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s207",
-      "title": "By ALGERNON BLACKWOOD and VIOLET PEARN.  Cr. 8vo",
-      "place": "By ALGERNON BLACKWOOD and VIOLET PEARN.  Cr. 8vo",
-      "reentry": "Twenty: A volume of Poems. By Stella Benson, author of \"I Pose.\" Cr. 8vo.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s208",
-      "title": "By Sir Rabindranath Tagore",
-      "place": "By Sir Rabindranath Tagore",
-      "reentry": "Lover's Gift and Crossing. Cr. 8vo. 5s. net.",
-      "prompt": "What does the poem hold?"
     }
   ],
   "breaths": [
@@ -2567,71 +2525,6 @@
       "id": "s202-2",
       "sceneId": "s202",
       "text": "THE END"
-    },
-    {
-      "id": "s203-0",
-      "sceneId": "s203",
-      "text": "The Charwoman's Daughter. Cr. 8vo. 4s. 6d. net."
-    },
-    {
-      "id": "s204-0",
-      "sceneId": "s204",
-      "text": "Here are Ladies. Cr. 8vo. 6s. net."
-    },
-    {
-      "id": "s205-0",
-      "sceneId": "s205",
-      "text": "Songs from the Clay. Poems. Cr. 8vo. 4s. 6d. net."
-    },
-    {
-      "id": "s205-1",
-      "sceneId": "s205",
-      "text": "The Adventures of Seumas Beg: The Rocky Road to Dublin. Cr. 8vo. 4s. 6d. net."
-    },
-    {
-      "id": "s206-0",
-      "sceneId": "s206",
-      "text": "Moments of Vision and Miscellaneous Verses. By Thomas Hardy. Cr. 8vo. 6s. net."
-    },
-    {
-      "id": "s206-1",
-      "sceneId": "s206",
-      "text": "Per Amica Silentia Lunae. By William Butler Yeats. Cr. 8vo. 4s. 6d. net."
-    },
-    {
-      "id": "s206-2",
-      "sceneId": "s206",
-      "text": "Whin: A volume of Poems. By Wilfrid Wilson Gibson, author of \"Livelihood.\" Cr. 8vo. 3s. 6d. net."
-    },
-    {
-      "id": "s206-3",
-      "sceneId": "s206",
-      "text": "Poems. By Ralph Hodgson. Fifth Impression. Fcap. 8vo. 3s. 6d. net."
-    },
-    {
-      "id": "s206-4",
-      "sceneId": "s206",
-      "text": "Karma. A Re-incarnation Play in Prologue, Epilogue, and Three Acts."
-    },
-    {
-      "id": "s207-0",
-      "sceneId": "s207",
-      "text": "Twenty: A volume of Poems. By Stella Benson, author of \"I Pose.\" Cr. 8vo."
-    },
-    {
-      "id": "s208-0",
-      "sceneId": "s208",
-      "text": "Lover's Gift and Crossing. Cr. 8vo. 5s. net."
-    },
-    {
-      "id": "s208-1",
-      "sceneId": "s208",
-      "text": "Mashi and other Stories. Cr. 8vo. 5s. net."
-    },
-    {
-      "id": "s208-2",
-      "sceneId": "s208",
-      "text": "London: Macmillan and Co., Ltd."
     }
   ]
 }

@@ -420,27 +420,6 @@
       "place": "L'art",
       "reentry": "Oui, l'oeuvre sort plus belle D'une forme au travail Rebelle, Vers, marbre, onyx, émail.",
       "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s59",
-      "title": "Préface 1",
-      "place": "Préface 1",
-      "reentry": "AFFINITÉS SECRÈTES, madrigal panthéiste 3",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s60",
-      "title": "Rondalla 59",
-      "place": "Rondalla 59",
-      "reentry": "NOSTALGIES D'OBÉLISQUES.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s61",
-      "title": "L'art 187",
-      "place": "L'art 187",
-      "reentry": "Imp. de Malherbe, 12, passage des Favorites, Paris",
-      "prompt": "What does the poem hold?"
     }
   ],
   "breaths": [
@@ -3728,96 +3707,6 @@
       "id": "s58-13",
       "sceneId": "s58",
       "text": "Sculpte, lime, cisèle; Que ton rêve flottant Se scelle Dans le bloc résistant!"
-    },
-    {
-      "id": "s58-14",
-      "sceneId": "s58",
-      "text": "TABLE"
-    },
-    {
-      "id": "s59-0",
-      "sceneId": "s59",
-      "text": "AFFINITÉS SECRÈTES, madrigal panthéiste 3"
-    },
-    {
-      "id": "s59-1",
-      "sceneId": "s59",
-      "text": "LE POÈME DE LA FEMME, marbre de Paros 7"
-    },
-    {
-      "id": "s59-2",
-      "sceneId": "s59",
-      "text": "ÉTUDE DE MAINS."
-    },
-    {
-      "id": "s59-3",
-      "sceneId": "s59",
-      "text": "I. Impéria 11"
-    },
-    {
-      "id": "s59-4",
-      "sceneId": "s59",
-      "text": "II. Lacenaire 15"
-    },
-    {
-      "id": "s59-5",
-      "sceneId": "s59",
-      "text": "VARIATIONS SUR LE CARNAVAL DE VENISE."
-    },
-    {
-      "id": "s59-6",
-      "sceneId": "s59",
-      "text": "I. Dans la rue 19"
-    },
-    {
-      "id": "s59-7",
-      "sceneId": "s59",
-      "text": "II. Sur les lagunes 23"
-    },
-    {
-      "id": "s59-8",
-      "sceneId": "s59",
-      "text": "III. Carnaval 27"
-    },
-    {
-      "id": "s59-9",
-      "sceneId": "s59",
-      "text": "IV. Clair de lune sentimental 31"
-    },
-    {
-      "id": "s60-0",
-      "sceneId": "s60",
-      "text": "NOSTALGIES D'OBÉLISQUES."
-    },
-    {
-      "id": "s60-1",
-      "sceneId": "s60",
-      "text": "I. L'obélisque de Paris 63"
-    },
-    {
-      "id": "s60-2",
-      "sceneId": "s60",
-      "text": "II. L'obélisque de Luxor 67"
-    },
-    {
-      "id": "s60-3",
-      "sceneId": "s60",
-      "text": "VIEUX DE LA VIEILLE, 15 décembre 71"
-    },
-    {
-      "id": "s61-0",
-      "sceneId": "s61",
-      "text": "Imp. de Malherbe, 12, passage des Favorites, Paris"
-    },
-    {
-      "id": "s61-1",
-      "sceneId": "s61",
-      "text": "Liste des modifications:"
-    },
-    {
-      "id": "s61-2",
-      "sceneId": "s61",
-      "text": "Page 52: «Touve» remplacé par «Trouve» (Trouve dans sa métamorphose) Page 68: «caparaces» par «carapaces» (Demi-cuits dans leurs carapaces) Page 105: «quelque» par «quelques» (Qui sait?--Après quelques détours) Page 115: «livide» par «livides» (Seulement deux flammes livides) Page 136: «suspens» par «suspends» (Je m'y suspends avec ma griffe) Page 137: «mer» par «mers» (Plaines brunes, pics blancs, mers bleues) Page 142: «chevrotte» par «chevrote» (L'émotion chevrote et tremble) Page 150: «Elle» par «Elles» (Elles se mettent en arrêt.) Page 167: «vielle» par «vieille» (Qu'une vieille au maigre profil) Page 189: «fort» par «forts» (Plus forts que les airains.)"
     }
   ]
 }

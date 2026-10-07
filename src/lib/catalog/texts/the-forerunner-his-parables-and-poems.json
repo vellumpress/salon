@@ -9,22 +9,6 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "New York       Alfred · a · Knopf      Mcmxx",
-      "place": "New York       Alfred · a · Knopf      Mcmxx",
-      "reentry": "Copyright, 1920, by",
-      "prompt": "What does the poem hold?",
-      "front": true
-    },
-    {
-      "id": "s1",
-      "title": "Kahlil Gibran",
-      "place": "Kahlil Gibran",
-      "reentry": "Printed in the United States of America",
-      "prompt": "What does the poem hold?",
-      "front": true
-    },
-    {
       "id": "s2",
       "title": "God’s Fool  9",
       "place": "God’s Fool  9",
@@ -459,16 +443,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "Copyright, 1920, by"
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "Printed in the United States of America"
-    },
     {
       "id": "s2-0",
       "sceneId": "s2",

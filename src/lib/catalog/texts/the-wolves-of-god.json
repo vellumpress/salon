@@ -37,13 +37,6 @@
       "prompt": "A word from this stretch."
     },
     {
-      "id": "s4",
-      "title": "By E. P. Dutton & Company",
-      "place": "By E. P. Dutton & Company",
-      "reentry": "*All rights reserved*",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s5",
       "title": "To the Memory",
       "place": "To the Memory",
@@ -214,21 +207,6 @@
       "id": "s3-0",
       "sceneId": "s3",
       "text": "681 Fifth Avenue"
-    },
-    {
-      "id": "s3-1",
-      "sceneId": "s3",
-      "text": "Copyright, 1921"
-    },
-    {
-      "id": "s4-0",
-      "sceneId": "s4",
-      "text": "*All rights reserved*"
-    },
-    {
-      "id": "s4-1",
-      "sceneId": "s4",
-      "text": "*Printed in the United States of America*"
     },
     {
       "id": "s5-0",

@@ -2604,13 +2604,6 @@
       "place": "Thou have paid thy utmost blessing;",
       "reentry": "Since that all things thou wouldst praise Beauty took from those who loved them",
       "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s371",
-      "title": "In other days",
-      "place": "In other days",
-      "reentry": "Printed by T. and A. Constable, Printers to His Majesty at the Edinburgh University Press",
-      "prompt": "What does the poem hold?"
     }
   ],
   "breaths": [
@@ -4568,11 +4561,6 @@
       "id": "s370-0",
       "sceneId": "s370",
       "text": "Since that all things thou wouldst praise Beauty took from those who loved them"
-    },
-    {
-      "id": "s371-0",
-      "sceneId": "s371",
-      "text": "Printed by T. and A. Constable, Printers to His Majesty at the Edinburgh University Press"
     }
   ]
 }
