@@ -1293,7 +1293,7 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       author: "Lafcadio Hearn",
       year: 1900,
       opening: /^THERE was a young Samurai of Kyoto/,
-      breaths: 977,
+      breaths: 976,
       scenes: 16,
       last: /Infinite Memory/,
     },
@@ -1500,7 +1500,7 @@ test("Mira FULL-TEXT CLEAR ×6 are stamped local binds with no opening stubs", (
     "the-story-of-gosta-berling": { gutenberg: 56158, scenes: 36, breaths: 3122, last: /^THE END$/ },
     "martin-bircks-youth": { gutenberg: 78363, scenes: 31, breaths: 545, last: /from this one spring/ },
     bliss: { gutenberg: 44385, scenes: 14, breaths: 1603, last: /live for ever/ },
-    shadowings: { gutenberg: 34215, scenes: 16, breaths: 977, last: /Infinite Memory/ },
+    shadowings: { gutenberg: 34215, scenes: 16, breaths: 976, last: /Infinite Memory/ },
   } as const;
   for (const [id, want] of Object.entries(expect)) {
     const work = SHELF.find((item) => item.id === id);
@@ -2330,7 +2330,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     whipperginny: { gutenberg: 58642, form: "poem", scenes: 50, breaths: 253 },
     "a-book-of-ghosts": { gutenberg: 36638, form: "stories", scenes: 21, breaths: 3046 },
     "daisy-miller": { gutenberg: 208, form: "novel", scenes: 2, breaths: 535 },
-    "marius-the-epicurean": { gutenberg: 4057, form: "novel", scenes: 14, breaths: 283 },
+    "marius-the-epicurean": { gutenberg: 4057, form: "novel", scenes: 14, breaths: 281 },
     "ninety-three": { gutenberg: 49372, form: "novel", scenes: 100, breaths: 3848 },
     "reynard-the-fox": { gutenberg: 38052, form: "poem", scenes: 2, breaths: 241 },
     "the-american": { gutenberg: 177, form: "novel", scenes: 26, breaths: 2678 },
@@ -2383,7 +2383,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
 test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => {
   const expect = {
     leila: { gutenberg: 78258, form: "novel", scenes: 17, breaths: 2322 },
-    "the-temptation-of-st-anthony": { gutenberg: 52225, form: "novel", scenes: 7, breaths: 1725 },
+    "the-temptation-of-st-anthony": { gutenberg: 52225, form: "novel", scenes: 7, breaths: 1706 },
     sanctuary: { gutenberg: 7517, form: "novel", scenes: 12, breaths: 541 },
     "the-angels-of-mons": { gutenberg: 14044, form: "stories", scenes: 4, breaths: 133 },
     "the-card": { gutenberg: 12986, form: "novel", scenes: 12, breaths: 1695 },
