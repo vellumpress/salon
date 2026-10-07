@@ -1697,6 +1697,13 @@ html[data-status-motion="1"] .status-bar-fill::before {
   filter: blur(2px);
 }
 
+.reader-turn {
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
 .reader-turn [data-turn] {
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;

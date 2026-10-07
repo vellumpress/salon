@@ -11,13 +11,14 @@ export function workFromPage(opts: {
   author: string;
   breaths: string[];
 }): Work {
+  const lines = opts.breaths.map((line) => line.trim()).filter((line) => line.length > 0);
   const size = 20;
   const scenes = [];
   const breaths = [];
-  for (let i = 0; i < opts.breaths.length; i += size) {
+  for (let i = 0; i < lines.length; i += size) {
     const n = Math.floor(i / size);
     const id = `p${n}`;
-    const slice = opts.breaths.slice(i, i + size);
+    const slice = lines.slice(i, i + size);
     scenes.push({
       id,
       title: `Part ${n + 1}`,
@@ -39,7 +40,7 @@ export function workFromPage(opts: {
     author: opts.author || host,
     year: "",
     note: opts.url,
-    minutes: Math.max(8, Math.round(opts.breaths.length / 4)),
+    minutes: Math.max(8, Math.round(lines.length / 4)),
     cover: "",
     coverAlt: "",
     scenes,
