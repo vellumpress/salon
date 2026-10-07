@@ -6,7 +6,8 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { chromium, devices, type Browser, type Page } from "playwright";
 
-const ORIGIN = "http://127.0.0.1:8080";
+const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
+const LOCAL_ORIGIN = !process.env.READER_ORIGIN;
 const BACKS = 32;
 const PHONE = devices["iPhone 12"];
 
@@ -128,6 +129,7 @@ async function healthy() {
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
 async function ensureServer() {
+  if (!LOCAL_ORIGIN) return async () => {};
   if (await healthy()) return async () => {};
   const log = openSync("/tmp/reader-back-tap-dev.log", "a");
   const child: ChildProcess = spawn("npm", ["run", "dev"], {
@@ -457,9 +459,10 @@ test(
         );
       }
       // Part breaks every 20 sentences. Step onto one, then back across it.
+      // The top of the column stays a back tap while the line is still sliding.
       while ((await breathIndex(page)) > 40) {
         const spot = await spots(page);
-        await page.touchscreen.tap(spot.x, spot.justAbove);
+        await page.touchscreen.tap(spot.x, spot.nearTop);
         await page.waitForFunction(
           (want) =>
             document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
