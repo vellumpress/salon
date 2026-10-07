@@ -165,9 +165,12 @@ async function ensureServer() {
 
 async function phonePage(browser: Browser) {
   const context = await browser.newContext({
-    ...PHONE,
+    viewport: { width: 390, height: 844 },
+    screen: { width: 390, height: 844 },
     hasTouch: true,
     isMobile: true,
+    deviceScaleFactor: PHONE.deviceScaleFactor,
+    userAgent: PHONE.userAgent,
   });
   const page = await context.newPage();
   const viewport = page.viewportSize();
@@ -339,7 +342,8 @@ test(
       const rapidStart = 40;
       for (let i = 0; i < 12; i += 1) {
         const spot = await spots(page);
-        await page.touchscreen.tap(spot.x, spot.justAbove);
+        // The top of the column stays above the focus line while it slides.
+        await page.touchscreen.tap(spot.x, spot.nearTop);
         await page.waitForFunction(
           (want) =>
             document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
