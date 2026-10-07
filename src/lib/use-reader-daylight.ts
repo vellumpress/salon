@@ -37,6 +37,26 @@ function remember(enabled: boolean, sample: DaylightSample) {
   remembered = { enabled, sample };
 }
 
+function publishReaderStatusBar(
+  live: boolean,
+  enabled: boolean,
+  motion: boolean,
+  background: string,
+) {
+  const root = document.documentElement;
+  // Before the clock is read, leave whatever StatusBarSync sampled. Forcing
+  // paper here is what left a paper status bar after a device import mounted.
+  if (!live) return;
+  if (!enabled) {
+    root.removeAttribute("data-status-motion");
+    applyStatusBarColorToDocument(PAGE_PAPER);
+    return;
+  }
+  if (motion) root.setAttribute("data-status-motion", "1");
+  else root.removeAttribute("data-status-motion");
+  applyStatusBarColorToDocument(background);
+}
+
 export type ReaderDaylight = {
   /** Persisted preference. Default on, including before storage is read. */
   enabled: boolean;
@@ -112,23 +132,28 @@ export function useReaderDaylight(): ReaderDaylight {
   const active = live && enabled;
 
   useLayoutEffect(() => {
-    const root = document.documentElement;
-    // Before the clock is read, leave whatever StatusBarSync sampled. Forcing
-    // paper here is what left a paper status bar after a device import mounted.
-    if (!live) return;
-    if (!enabled) {
-      root.removeAttribute("data-status-motion");
-      applyStatusBarColorToDocument(PAGE_PAPER);
-      return;
-    }
-    if (motion) root.setAttribute("data-status-motion", "1");
-    else root.removeAttribute("data-status-motion");
-    applyStatusBarColorToDocument(sample.background);
+    publishReaderStatusBar(live, enabled, motion, sample.background);
+  }, [live, enabled, motion, sample.background]);
+
+  // After the root sync's passive effect. An import open sets paper in that
+  // sync before this frame exists; this writes the tint again once it does,
+  // and again when the clock steps to the next color.
+  useEffect(() => {
+    publishReaderStatusBar(live, enabled, motion, sample.background);
   }, [live, enabled, motion, sample.background]);
 
   useLayoutEffect(() => {
     return () => {
       document.documentElement.removeAttribute("data-status-motion");
+      // The root sync can run while this frame is still mounted and then
+      // yield. After the route swap, paint cream if no reader remains.
+      // A replacement reader (import gate → text) is already in the document
+      // by the time this task runs, and keeps its tint. Html/body are not
+      // sampled: their paint is the tint being cleared.
+      window.setTimeout(() => {
+        if (document.querySelector('[data-daylight]:not([data-daylight="off"])')) return;
+        applyStatusBarColorToDocument(readChromeBackground(document) ?? PAGE_PAPER);
+      }, 0);
     };
   }, []);
 

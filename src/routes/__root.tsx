@@ -5,7 +5,7 @@ import {
   Scripts,
   useRouterState,
 } from "@tanstack/react-router";
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { AuthProvider } from "@/lib/auth/provider";
 import { DeferredRemoteSync } from "@/components/deferred-remote-sync";
 import { OfflineMark } from "@/components/offline-mark";
@@ -39,13 +39,44 @@ function BootMark() {
  * Safari: `theme-color` follows the page. Installed PWA: the strip paints the
  * safe area (deepened only when white status glyphs would fail). Daylight owns
  * the color while a live reader frame is on screen.
+ *
+ * The address changes before the leaving reader unmounts. A single pass yields
+ * on that frame and never comes back, so the homepage keeps the reader tint.
+ * Wait until the route is idle, then until the frame is actually gone.
  */
 function StatusBarSync() {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
-  useLayoutEffect(() => {
-    if (document.querySelector('[data-daylight]:not([data-daylight="off"])')) return;
-    applyStatusBarColorToDocument(readChromeBackground(document) ?? PAGE_PAPER);
-  }, [pathname]);
+  const status = useRouterState({ select: (state) => state.status });
+  useEffect(() => {
+    if (status !== "idle") return;
+    let stopped = false;
+    let observer: MutationObserver | null = null;
+    const publish = () => {
+      if (stopped) return;
+      if (document.querySelector('[data-daylight]:not([data-daylight="off"])')) return;
+      applyStatusBarColorToDocument(readChromeBackground(document) ?? PAGE_PAPER);
+      stopped = true;
+      observer?.disconnect();
+    };
+    publish();
+    if (stopped) return;
+    observer = new MutationObserver(publish);
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["data-daylight"],
+    });
+    const timer = window.setTimeout(() => {
+      publish();
+      observer?.disconnect();
+    }, 1500);
+    return () => {
+      stopped = true;
+      observer?.disconnect();
+      window.clearTimeout(timer);
+    };
+  }, [pathname, status]);
   return <div className="status-bar-fill" aria-hidden="true" />;
 }
 

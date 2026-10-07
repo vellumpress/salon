@@ -135,6 +135,25 @@ export function applyStatusBarColor(
   return paint;
 }
 
+/**
+ * Safari on iPhone reads `theme-color` when the node is inserted. Editing
+ * `content` on the existing tag — what the catalog reader used to do on the
+ * second paint — leaves the status bar on the previous color. Import opens
+ * do that second paint (paper from the homepage, then the daylight tint).
+ * Drop every current tag and insert one fresh node.
+ */
+export function publishThemeColor(doc: Document, color: string): void {
+  const head = doc.head;
+  if (!head) return;
+  for (const node of [...head.querySelectorAll('meta[name="theme-color"]')]) {
+    node.parentNode?.removeChild(node);
+  }
+  const meta = doc.createElement("meta");
+  meta.setAttribute("name", "theme-color");
+  meta.setAttribute("content", color);
+  head.appendChild(meta);
+}
+
 export function applyStatusBarColorToDocument(
   page: string,
   doc: Document = document,
@@ -145,31 +164,30 @@ export function applyStatusBarColorToDocument(
     nav,
     view?.matchMedia?.("(display-mode: standalone)")?.matches === true,
   );
-  const existing = doc.querySelector('meta[name="theme-color"]');
-  return applyStatusBarColor(
+  const paint = applyStatusBarColor(
     page,
     {
       root: doc.documentElement,
-      meta: existing,
-      ensureMeta() {
-        const el = doc.createElement("meta");
-        el.setAttribute("name", "theme-color");
-        doc.head.appendChild(el);
-        return el;
-      },
+      meta: null,
     },
     standalone,
   );
+  publishThemeColor(doc, paint.page);
+  return paint;
 }
 
-/** Background that will show in the status-bar band: the reader frame, else the mark bar. */
+/**
+ * Background that will show in the status-bar band: the reader frame, else the
+ * mark bar. Html and body are not sources — their background is `--status-page`,
+ * so sampling them republishes the tint that is already up.
+ */
 export function readChromeBackground(doc: Document): string | null {
-  const start = doc.querySelector(".frame-screen") ?? doc.querySelector(".cell-mark") ?? doc.body;
+  const start = doc.querySelector(".frame-screen") ?? doc.querySelector(".cell-mark");
   const view = doc.defaultView;
   if (!start || !view) return null;
   const colors: string[] = [];
   let node: Element | null = start;
-  while (node) {
+  while (node && node !== doc.body && node !== doc.documentElement) {
     colors.push(view.getComputedStyle(node).backgroundColor);
     node = node.parentElement;
   }
