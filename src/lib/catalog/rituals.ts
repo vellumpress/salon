@@ -605,6 +605,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `The Triad came into my life as I walked underneath the arch by which the sentinels sit in Olympian state upon their rather long-legged chargers, receiving, as is their due, the silent homage of the passing nurserymaids. This reading is just “Elysium” — a soldier just back from the Flanders front walks home through St. James's with his sweetheart on one arm and his sister on the other, past the clubs and two old colonels on the steps, wrapped apart from the whole world. This reading is the whole sketch, ending “for five long days.” A heads-up before you start: the First World War sits just behind this story. The soldier is home from the front in Flanders on five days' leave. R. B. Cunninghame Graham, from Brought Forward; the year is 1916. Quiet and tender, for the last minutes before sleep. Pall Mall, London.`,
   "the-golden-age":
     `“Alarums and Excursions” is one complete story from The Golden Age — on a hot June day three children are playing at knights in the orchard when a troop of soldiers jingles past the hedge, and the narrator and his little brother Harold chase it across country, sure a battle lies ahead. It ends “…to the fact that the battle had been postponed.” A heads-up before you start: on the way the narrator tells Harold that Indians scalp and burn their prisoners, a schoolboy notion of the period, left as printed; and the boys get lost in the rain before the old doctor drives them home. Kenneth Grahame; the year is 1895, when the book first appeared. One story; the book continues with the Prologue and sixteen more. Bright and comic, made for walking. An English village and the fields beyond it.`,
+  "the-dancing-master":
+    `“The Dancing-Master” is one complete story from Parisian Points of View — asked by a hostess to engage old Morin, a dancing-master, for her little girls, a guest goes behind the scenes at the opera one February night in 1881, finds him on stage as a bishop in “The Prophet,” and in the wings gets an earnest lecture on why France needs more dancing. It ends “…withstood the shock of this avalanche of dancers.” A heads-up before you start: the old teacher talks frankly, in the manner of his day, about sizing up a partner's figure while waltzing. Ludovic Halévy, in Edith V.B. Matthews's English; the year is 1894, from the Harper copyright line. The two snatches of French verse stay in French, in italics, line by line. Amused and brisk, for a walk. Paris.`,
   "winnie-the-pooh":
     `Edward Bear, known to his friends as Winnie-the-Pooh, or Pooh for short, was walking through the forest one day, humming proudly to himself. “In Which Pooh Goes Visiting and Gets into a Tight Place” is one complete chapter from Winnie-the-Pooh — after morning Stoutness Exercises and a brand-new hum, Pooh calls on Rabbit, stays for honey, and finds the front door a little tight on the way out. It ends “…Silly old Bear!” A. A. Milne; the year is 1926, printed on the Canadian title page. One chapter; the book continues. Bright and comic, made for waking. The forest.`,
   "the-mist":
@@ -2316,6 +2318,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-corsican-brothers",
       // Mira Tue 6 Oct 2026 — The Golden Age: Alarums and Excursions is the walk reading (whole story). On-a-walk only.
       "the-golden-age",
+      // Mira Wed 7 Oct 2026 MID — The Dancing-Master: one story from Parisian Points of View (Halévy). On-a-walk only; never Next or Featured.
+      "the-dancing-master",
     ],
   },
   {
@@ -2481,6 +2485,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-mist": 9,
   "winnie-the-pooh": 7,
   "the-golden-age": 9,
+  "the-dancing-master": 10,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
   "all-quiet-on-the-western-front": 2,

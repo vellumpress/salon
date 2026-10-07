@@ -122,6 +122,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "love-s-shadow": { label: "Knightsbridge, London", region: "gb" },
     "lewis-and-irene": { label: "Paris", region: "fr" },
     "a-monkey": { label: "Christiania", region: "no" },
+    "the-dancing-master": { label: "Paris", region: "fr" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
     "fraulein-schmidt-and-mr-anstruther": { label: "Jena", region: "de" },
@@ -512,4 +513,10 @@ test("Wed 7 Oct AM Fräulein Schmidt place reuses de; Jena; no new region key", 
   assert.ok(REGION_SHAPES.de?.d, "de shape");
   assert.deepEqual(placeFor(shelfWork("fraulein-schmidt-and-mr-anstruther")!), { label: "Jena", region: "de" });
   assert.equal(CHIP_ONLY_PLACE["fraulein-schmidt-and-mr-anstruther"], undefined);
+});
+
+test("Wed 7 Oct MID The Dancing-Master place reuses fr; Paris; no new region key", () => {
+  assert.ok(REGION_SHAPES.fr?.d, "fr shape");
+  assert.deepEqual(placeFor(shelfWork("the-dancing-master")!), { label: "Paris", region: "fr" });
+  assert.equal(CHIP_ONLY_PLACE["the-dancing-master"], undefined);
 });

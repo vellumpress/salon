@@ -1,0 +1,216 @@
+{
+  "id": "the-dancing-master",
+  "title": "The Dancing-Master",
+  "author": "Ludovic Halévy (tr. Edith V.B. Matthews)",
+  "year": "1894",
+  "note": "Project Gutenberg 15465 (Parisian Points of View). Only “The Dancing-Master” is bound (l.1018–1237). Copyright, 1894, by Harper & Brothers. Translated by Edith V.B. Matthews.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Dancing-Master",
+      "place": "The Dancing-Master",
+      "reentry": "I was dining at the house of some friends, and in the course of the evening the hostess said to me:",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I was dining at the house of some friends, and in the course of the evening the hostess said to me:"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "\"Do you often go to the opera?\""
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "\"Yes, very often.\""
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "\"And do you go behind the scenes?\""
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"Yes, I go behind.\""
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"Then you can do me a favor. In the ballet department there's an old man called Morin, who is perfectly respectable, it seems. He is the little B——'s dancing-master. He gives excellent lessons. I should like to have him for my little girls, so ask him if he could come twice a week.\""
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "I willingly undertook the delicate mission."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "The next day, February 17, 1881, about ten in the evening, I arrived at the opera, and went behind the scenes to search for Monsieur Morin. \"The Prophet\" was being played, and the third act had just begun. On the stage the Anabaptists were singing forcibly:"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"*Du sang! que Judas succombe!* / *Du sang! Dansons sur leur tombe!* / *Du sang! Voila l'hécatombe* / *Que Dieu nous demande encor!*\""
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Axes were raised over the heads of a crowd of hapless prisoners, who were barons, bishops, monks, and grand ladies. In the wings, balanced on their skates, all the ballet-girls were waiting the right moment to"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"*Effleurer la glace* / *Sans laisser de trace.*\""
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "I respectfully begged one of the young Westphalian peasant-girls to point out to me the man named Morin."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"Morin,\" she replied, \"is not one of the skaters. Look, he is on the stage. That's he over there, the one who is doing the bishop; that bishop, you see, who is being pushed and pulled. Wait, he will be off directly.\""
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "One of the Anabaptist leaders intervened, however, declaring that the nobles and priests who could pay ransom should be spared. Morin escaped with his life, and I had the honor of being presented to him by the little Westphalian peasant-girl."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "He had quite a venerable air, with his long gray beard and his fine purple robe with his large pastoral cross. While he was arranging somewhat his costume, which had been so roughly pulled by those violent Anabaptists, I asked him if he would be willing to give lessons to two young girls of good family."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The pious bishop accepted with alacrity. His price was ten francs an hour."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "The little skaters had gone on the stage, and were performing wonderful feats. The wings had suddenly become calm and silent. We gave ourselves up, his Reverence and myself, to a little friendly chat."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "\"Yes, sir,\" his Highness said to me, \"I give dancing lessons. I have many patrons among the aristocracy and the bankers. I have no reason to complain; and yet one must admit things were better once, much better. Dancing is going out, sir, dancing is going out.\""
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"Is it possible?\""
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"It is as I have the honor of telling you. Women still learn to dance; but no longer the young men, sir, no longer. Baccarat, races, and the minor theatres—that's what they enjoy. It's a little the fault of the Government.\""
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"How can that be?\""
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "\"M. Jules Ferry has recently rearranged the curriculum of the University. He has made certain studies obligatory—modern languages, for instance. I don't blame him for that; the study of modern languages has great advantages. But dancing, sir; nothing has been done for dancing, and it is dancing which ought, after all, to have been made obligatory. There ought to be a dancing-master in every high-school, and a normal-school for dancing with examinations and competitions in dancing. Dancing ought to be studied the same as Latin or Greek. Dancing, too, is a language, and a language that every well-bred man ought to be able to speak. Well, do you know what happens nowadays? Sometimes it happens, sir, that diplomatic posts are given to people who get confused in the figures of a quadrille, and who are incapable of waltzing for two minutes. They know very well that their education is incomplete. Quite lately a young man came to me—a young man of great merit, it seems, except in regard to dancing. He had just been attached to a great embassy. He had never danced in his life—never. Do you understand? Never! It is scarcely to be credited, and yet it is true. That's the way M. Barthélémy-Saint-Hilaire picks them out. Oh, this beard smothers me! Will you permit me?\""
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "\"Certainly.\""
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "He took off his gray beard, and thus looked much less venerable. He then continued:"
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "\"I said to this young man: 'We will try, but it will be hard work. One oughtn't to begin dancing at twenty-eight.' I limbered him up as best I could. I had only two weeks to do it in. I begged him to put off his departure, to obtain a reprieve of three or four months—I could have made something of him. He would not. He went without knowing anything. I often think of him. He will represent us out there; he will represent us very badly; he will not be an honor to his country. Please to remember that he may be called upon to take part in some official quadrille—to dance, for instance, with an archduchess. Well, if he slips up in it, with his archduchess, it will be charming! All this is very sad indeed. I am a Republican, sir, an old Republican, and it is painful to think that the republic is represented by diplomats who cannot distinguish between a change of foot and a simple step. Do you know what is said in foreign courts? 'Why, who are those savages that France sends us?' Yes, that's what they say. The diplomatic corps in the time of the Empire was not brilliant. Oh no; those gentlemen did many foolish things. Oh yes; but still they knew how to dance!\""
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "And the good old bishop, seeing that I listened with much interest, went on with his brilliant improvisation."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "\"Dancing, sir, is not merely a pleasure, an amusement; no, it is of great social interest. Why, the question of marriage is closely connected with dancing. At present, in France, marriage is languishing. That is proved by statistics. Well, I am convinced that if there are fewer marriages it is because there is less dancing. Consider this first of all, that to know how to dance well, very well, is, for an agreeable young man who is without fortune, a great advantage in society. One of my pupils, sir, has recently married extremely well. He was a very ordinary kind of youth, who had tried everything and had succeeded in nothing; but he was a first-rate waltzer, and he danced away with two millions.\""
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "\"Two millions!\""
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"Yes, two millions, and they were two cash millions; she was an orphan, no father nor mother—all that can be dreamed of. He clasped that young lady (she was very plump). Well, in his arms, she felt herself light as a feather. She thought of but one thing—waltzing with him. She was as one wild. He gave her a new sensation, and what is it women desire above all things? To have new sensations, in short, she refused marquises, counts, and millionaires. She wanted him only. She got him, and he was penniless, and his name is Durand. Ah, do not repeat his name; I oughtn't to have told you.\""
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "\"Don't be afraid.\""
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"After all, you can repeat it; it doesn't matter, it's such a common name. There is public policy in love-matches which cause a rich girl to marry a poor man, or a poor girl to marry a rich man. It sets money circulating, it prevents its remaining in the same place, it keeps capital moving. Well, three-fourths of the love-matches were formerly made by the dance. Now there are short interviews in parlors, in galleries, and at the Opéra Comique. They chat; that's all right, but chatting is not sufficient. Wit is something, but not everything. A waltz furnishes much knowledge that conversation cannot. Dress-makers nowadays are so wily. They know how to bring out this point and hide that; they remodel bad figures. They give plumpness and roundness to the thin; they make hips, shoulders—everything, in fact. One doesn't know what to expect, science has made such advances. The eye may be deceived, but the hand of an experienced dancer never! A waltzer with tact knows how to find out the exact truth about things.\""
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "\"Oh! oh!\""
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "\"Remaining all the time, sir, perfectly respectful and perfectly reserved. Good heavens! look at myself, for instance. It is to waltzing that I owe my happiness. Mme. Morin was not then Mme. Morin. I kept my eye on her, but I hesitated. She appeared thin, and—well, I'll admit that to marry a thin woman didn't suit my ideas. You know every one has his ideals. So, sir, I was still hesitating, when one evening, at the wedding of one of my friends, a very capable young man, a deputy manager of a department at the Ministry of Religion, they started a little dance. For the first waltz I asked the one who was to be my companion through life. Immediately I felt in my hand a delightful figure—one of those full but supple figures; and while waltzing, quite enchanted, I was saying to myself, 'She isn't really thin! she isn't really thin!' I took her back to her place after the waltz, and went at once to her mother to ask for her hand, which was granted me. For fourteen years I have been the happiest of men, and perhaps I shouldn't have made that marriage if I hadn't known how to waltz. You see, sir, the results of a waltz?\""
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"Perfectly.\""
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "\"That is not all, sir. Thanks to dancing, one discovers not only the agreeable points of a person, the fulness of her figure, the lithesomeness of her waist, but also, in a briskly led waltz, a little examination of the health and constitution of a woman can be had. I remember one evening twelve or so years ago—in the Rue Le Peletier, in the old Opéra-house, which has burned down—I was on the stage awaiting my cue for the dance in 'William Tell,' you know, in the third act. Two subscribers were talking quite close to me, in the wings. One of the gentlemen was an old pupil of mine. I have had so many pupils! Without wishing to, I heard scraps of the conversation, and these two sentences struck my ear: 'Well, have you decided?' 'Oh,' replied my pupil, 'I find her very charming, but I have heard that she is weak in the lungs.' Then, sir, I did a very unusual thing for me. I begged pardon for having heard unintentionally, and I said to my old pupil: 'I think I have guessed that a marriage is in question. Will you authorize me to give you a piece of advice—advice drawn from the practice of my profession? Do they allow this young lady to waltz?' You know there are mothers who do not permit—\""
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"I know, I know.\""
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "We had arrived at this point in that interesting conversation when the ballet ended. The bishop and myself were assailed by an actual whirlwind of skaters, and my little Westphalian peasant-girl found me where she had left me."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "\"I declare!\" she said to me, \"so you come to confess at the opera? Give him absolution, Morin, and give it to me, too. Now then, come along to the greenroom.\""
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "She took my arm, and we went off together, while the excellent Morin, with gravity and dignity beneath his sacred ornaments, withstood the shock of this avalanche of dancers."
+    }
+  ]
+}

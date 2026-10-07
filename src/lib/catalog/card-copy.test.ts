@@ -231,6 +231,7 @@ test("known origin overrides", () => {
     "love-s-shadow": "United Kingdom",
     "lewis-and-irene": "France",
     "a-monkey": "Norway",
+    "the-dancing-master": "France",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",
     "fraulein-schmidt-and-mr-anstruther": "Germany",
