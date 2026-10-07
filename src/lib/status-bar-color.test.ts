@@ -2,15 +2,19 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { DAYLIGHT_SOLIDS, contrastRatio, relativeLuminance } from "./daylight-colors.ts";
+import { parseHTML } from "linkedom";
 import {
   PAGE_PAPER,
   STATUS_GLYPH,
   STATUS_INK,
   STATUS_MIN_CONTRAST,
   applyStatusBarColor,
+  applyStatusBarColorToDocument,
   cssColorToHex,
   firstOpaqueBackground,
   isStandaloneDisplay,
+  publishThemeColor,
+  readChromeBackground,
   statusBarPaint,
   statusStripColor,
 } from "./status-bar-color.ts";
@@ -96,6 +100,69 @@ test("chrome sampling skips a transparent layer and keeps an opaque page color",
   assert.equal(cssColorToHex("#F3F1EB"), PAGE_PAPER);
 });
 
+test("leaving the reader does not read the status tint back off the page", () => {
+  const mark = { parentElement: null as unknown };
+  const body = { parentElement: null as unknown };
+  const root = { parentElement: null as unknown };
+  mark.parentElement = body;
+  body.parentElement = root;
+  const view = {
+    getComputedStyle(node: unknown) {
+      if (node === mark) return { backgroundColor: "rgb(243, 241, 235)" };
+      return { backgroundColor: "rgb(255, 208, 0)" };
+    },
+  };
+  const doc = {
+    body,
+    documentElement: root,
+    defaultView: view,
+    querySelector(selector: string) {
+      if (selector === ".frame-screen") return null;
+      if (selector === ".cell-mark") return mark;
+      return null;
+    },
+  };
+  assert.equal(readChromeBackground(doc as unknown as Document), PAGE_PAPER);
+
+  const bare = {
+    ...doc,
+    querySelector() {
+      return null;
+    },
+  };
+  assert.equal(readChromeBackground(bare as unknown as Document), null);
+});
+
+test("a second theme-color publish replaces the node, so Safari leaves the homepage cream", () => {
+  const { document: doc } = parseHTML(
+    `<!doctype html><html><head>
+      <meta name="theme-color" content="#F3F1EB">
+      <meta name="theme-color" content="#F3F1EB">
+    </head><body></body></html>`,
+  );
+  const stale = doc.querySelector('meta[name="theme-color"]');
+  publishThemeColor(doc, "#f3f1eb");
+  const paper = [...doc.querySelectorAll('meta[name="theme-color"]')];
+  assert.equal(paper.length, 1);
+  assert.notEqual(paper[0], stale);
+  assert.equal(paper[0]?.getAttribute("content"), "#f3f1eb");
+
+  const morning = DAYLIGHT_SOLIDS.morning.background;
+  const painted = applyStatusBarColorToDocument(morning, doc);
+  const live = [...doc.querySelectorAll('meta[name="theme-color"]')];
+  assert.equal(live.length, 1);
+  assert.notEqual(live[0], paper[0]);
+  assert.equal(live[0]?.getAttribute("content"), morning);
+  assert.equal(painted.page, morning);
+  assert.equal(painted.strip, morning);
+  assert.equal(doc.documentElement.style.getPropertyValue("--status-page"), morning);
+
+  const home = applyStatusBarColorToDocument("rgb(243, 241, 235)", doc);
+  assert.equal(home.page, PAGE_PAPER);
+  assert.equal(doc.querySelector('meta[name="theme-color"]')?.getAttribute("content"), PAGE_PAPER);
+  assert.equal(doc.documentElement.style.getPropertyValue("--status-page"), PAGE_PAPER);
+});
+
 test("the shell paints under the status bar and daylight publishes theme-color", () => {
   const root = readFileSync(new URL("../routes/__root.tsx", import.meta.url), "utf8");
   const hook = readFileSync(new URL("./use-reader-daylight.ts", import.meta.url), "utf8");
@@ -105,7 +172,11 @@ test("the shell paints under the status bar and daylight publishes theme-color",
   assert.match(root, /apple-mobile-web-app-status-bar-style", content: "black-translucent"/);
   assert.match(root, /status-bar-fill/);
   assert.match(root, /readChromeBackground/);
+  const sync = root.slice(root.indexOf("function StatusBarSync"));
+  assert.match(sync, /useEffect\(\(\) => \{/);
+  assert.doesNotMatch(sync, /useLayoutEffect/);
   assert.match(hook, /applyStatusBarColorToDocument/);
+  assert.match(hook, /useEffect\(\(\) => \{\s*publishReaderStatusBar/);
   assert.match(hook, /data-status-motion/);
   assert.match(css, /\.status-bar-fill\s*\{[^}]*env\(safe-area-inset-top/);
   assert.match(css, /\.frame-screen\s*\{[^}]*padding-top:\s*env\(safe-area-inset-top/);
