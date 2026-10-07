@@ -1667,6 +1667,17 @@ html[data-status-motion="1"] .status-bar-fill::before {
   gap: 0.65rem;
 }
 
+/* The bottom-anchor rule collapses lookback while a breath scrolls.
+   Same specificity, so it must be restated here: a collapsed lookback
+   makes the anchor math think the column is empty, and the focus
+   sentence lands below the page. Back taps then appear to do nothing. */
+.reading-pane-centered:has(.breath-slot.overflows) .lookback-slot {
+  flex: 0 0 auto;
+  min-height: auto;
+  overflow: visible;
+  gap: 0.65rem;
+}
+
 .reading-pane-centered .breath-slot {
   flex: 0 0 auto;
   max-height: none;
@@ -1681,8 +1692,41 @@ html[data-status-motion="1"] .status-bar-fill::before {
   pointer-events: none;
   /* One layer for the whole preview. A filter on each line re-rasterizes
      while the track translates on iPhone Safari. The focus line is outside
-     this slot, so it stays sharp. */
+     this slot, so it stays sharp. pointer-events stays none so the blur
+     cannot sit above the sentence buttons on iPhone. */
   filter: blur(2px);
+}
+
+.reader-turn [data-turn] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+}
+
+/* The column runs to the screen bottom, under the hourglass and the
+   home indicator. The negative margin matches the footer (3rem row plus
+   safe-area padding). Text in that band stays behind the hourglass. */
+.reader-frame:not(.together-lock) {
+  padding-bottom: 0;
+}
+
+.reader-turn-bleed {
+  margin-bottom: calc(-1 * (3rem + env(safe-area-inset-bottom, 0px)));
+}
+
+.reader-frame:not(.together-lock) > footer {
+  pointer-events: none;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background: transparent;
+}
+
+.reader-frame:not(.together-lock) > footer .reader-glass {
+  z-index: 35;
+  pointer-events: auto;
+}
+
+.reader-frame:not(.together-lock):not(.still) > footer .chrome-fade {
+  pointer-events: auto;
 }
 
 @media (prefers-reduced-transparency: reduce) {

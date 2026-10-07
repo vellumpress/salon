@@ -15,10 +15,11 @@ export const CENTER_LINE_KEY = "salon-center-line";
 export const CENTER_LINE_ANCHOR = 0.64;
 
 /**
- * Upcoming breaths drawn under the current line. Same bound as lookback so a
- * long book never mounts the rest of its text.
+ * Upcoming breaths drawn under the current line. Enough to fill the space
+ * below a 64% anchor on a tall phone, including the band behind the hourglass,
+ * without mounting the rest of the book. Lookback stays the shorter window.
  */
-export const UPCOMING_WINDOW = 12;
+export const UPCOMING_WINDOW = 20;
 
 type Store = {
   getItem(key: string): string | null;
@@ -81,6 +82,17 @@ export function upcomingBreaths(work: Work, index: number, limit = UPCOMING_WIND
  * it is no taller than the shorter side of that anchor. Past that — and past
  * 90% of the pane — it scrolls in place instead of clipping.
  */
+/**
+ * Y of the focus anchor inside a pane that may run behind the hourglass.
+ * `overlapPx` is that band (hourglass row plus the home indicator). The
+ * anchor stays 64% of the reading area above the band.
+ */
+export function focusAnchorPx(paneHeight: number, overlapPx = 0, anchor = CENTER_LINE_ANCHOR): number {
+  if (!Number.isFinite(paneHeight) || paneHeight <= 0) return 0;
+  const overlap = Number.isFinite(overlapPx) ? Math.min(paneHeight, Math.max(0, overlapPx)) : 0;
+  return (paneHeight - overlap) * anchor;
+}
+
 export function breathTooTall(scrollHeight: number, paneHeight: number, anchor = CENTER_LINE_ANCHOR): boolean {
   if (!Number.isFinite(paneHeight) || paneHeight <= 0) return false;
   if (!Number.isFinite(scrollHeight) || scrollHeight <= 0) return false;
