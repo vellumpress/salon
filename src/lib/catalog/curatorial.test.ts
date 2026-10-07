@@ -4155,7 +4155,8 @@ test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Feature
   ) as { note?: string; breaths: { text: string }[] };
   assert.match(icelandOpen.breaths[0]?.text ?? "", /^There they were, five huge, square-built seamen/);
   assert.match(icelandOpen.note ?? "", /2196/);
-  assert.match(iceland?.intro ?? "", /1886 only/);
+  assert.doesNotMatch(iceland?.intro ?? "", /1886 only/);
+  assert.ok((iceland?.intro ?? "").includes("Cambon’s English. Rough marriage talk and sea-labor desire."));
   assert.doesNotMatch(iceland?.intro ?? "", /189\d|190\d|191\d/);
 
   const flower = SHELF.find((item) => item.id === "the-song-of-the-blood-red-flower");
@@ -5853,7 +5854,8 @@ test("Mira Sat MIDDAY CLEAR is Next lead Green Carnation, then Hajji, Purple Lan
   assert.ok(cycle.scenes.some((scene) => scene.title === "Il Conde"));
   assert.match(SHELF.find((item) => item.id === "hajji-baba")?.intro ?? "", /Period Orientalism is left as printed/);
   assert.match(SHELF.find((item) => item.id === "hajji-baba")?.intro ?? "", /1824/);
-  assert.match(SHELF.find((item) => item.id === "hajji-baba")?.intro ?? "", /1895/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "hajji-baba")?.intro ?? "", /1895|this printing/);
+  assert.ok((SHELF.find((item) => item.id === "hajji-baba")?.intro ?? "").includes("Morier’s novel, first published in 1824."));
 });
 
 test("Mira Sat AFTERNOON CLEAR is Next lead Hill of Dreams, then African Farm, The Imperialist, and Kim, with Mogens on Rituals", () => {
@@ -6026,8 +6028,8 @@ test("Mira Sat AFTERNOON CLEAR is Next lead Hill of Dreams, then African Farm, T
     readFileSync(new URL("./openings/the-imperialist.json", import.meta.url), "utf8"),
   ) as PackedSit;
   assert.equal(imperialist.breaths[0]?.text.trim().split(/\s+/).length, 585);
-  assert.match(SHELF.find((item) => item.id === "the-imperialist")?.intro ?? "", /585/);
-  assert.match(SHELF.find((item) => item.id === "the-imperialist")?.intro ?? "", /first breath is \d+ words, left as printed\./);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "the-imperialist")?.intro ?? "", /585|first breath/);
+  assert.ok((SHELF.find((item) => item.id === "the-imperialist")?.intro ?? "").endsWith("Duncan’s 1904 novel, Elgin, Ontario."));
   assert.match(SHELF.find((item) => item.id === "kim")?.intro ?? "", /period racial language, left as printed/);
   assert.match(
     imperialist.breaths.map((breath) => breath.text).join("\n") +
@@ -6225,8 +6227,8 @@ test("Mira Sat EVENING CLEAR is Next lead Road to the Open, then Calvary, Anna, 
     readFileSync(new URL("./openings/anna-of-the-five-towns.json", import.meta.url), "utf8"),
   ) as PackedSit;
   assert.equal(anna.breaths[0]?.text.trim().split(/\s+/).length, 371);
-  assert.match(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /371/);
-  assert.match(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /first breath is \d+ words, left as printed\./);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /371|first breath/);
+  assert.ok((SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "").endsWith("Bennett’s 1902 novel."));
   assert.doesNotMatch(SHELF.find((item) => item.id === "anna-of-the-five-towns")?.intro ?? "", /not London/);
   const calvaryOpen = JSON.parse(
     readFileSync(new URL("./openings/calvary.json", import.meta.url), "utf8"),
@@ -7743,7 +7745,8 @@ test("Mira MIDDAY CLEAR is Next lead Candide, then Iola Leroy, Esther Waters, an
   ) as { year?: string; author?: string };
   assert.equal(iola.year, "1892");
   assert.equal(iola.author, "Frances E. W. Harper");
-  assert.match(SHELF.find((item) => item.id === "iola-leroy")?.intro ?? "", /1893/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "iola-leroy")?.intro ?? "", /1893|title page/);
+  assert.ok((SHELF.find((item) => item.id === "iola-leroy")?.intro ?? "").endsWith("Frances E. W. Harper’s novel, 1892."));
   assert.doesNotMatch(SHELF.find((item) => item.id === "iola-leroy")?.intro ?? "", /not Dunbar/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "iola-leroy")?.intro ?? "", /not Chesnutt/);
 
@@ -7752,7 +7755,8 @@ test("Mira MIDDAY CLEAR is Next lead Candide, then Iola Leroy, Esther Waters, an
   ) as { year?: string; author?: string };
   assert.equal(esther.year, "1894");
   assert.equal(esther.author, "George Moore");
-  assert.match(SHELF.find((item) => item.id === "esther-waters")?.intro ?? "", /1899/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "esther-waters")?.intro ?? "", /1899|imprint/);
+  assert.ok((SHELF.find((item) => item.id === "esther-waters")?.intro ?? "").endsWith("George Moore’s novel, 1894."));
   assert.doesNotMatch(SHELF.find((item) => item.id === "esther-waters")?.intro ?? "", /not The Heavenly Twins/);
 
   const aphrodite = JSON.parse(
@@ -10110,8 +10114,8 @@ test("Mira POST-#183 CLEAR is Next lead Sister Carrie, then Antic Hay, A spring-
   assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /just The Hungry Stones/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /Poison Tree/);
   assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /several hands/);
-  assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /first breath is \d+ words, left as printed\./);
-  assert.match(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /277/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "", /277|first breath/);
+  assert.ok((SHELF.find((item) => item.id === "hungry-stones")?.intro ?? "").endsWith("Rabindranath Tagore’s 1916 tale. The preface is several hands."));
   const stonesOpen = JSON.parse(
     readFileSync(new URL("./openings/hungry-stones.json", import.meta.url), "utf8"),
   ) as PackedSit & { scenes: { title?: string }[] };
@@ -10332,8 +10336,8 @@ test("Mira POST-#184 CLEAR is Next lead Smoke, then Niels Lyhne, The Emancipated
   assert.equal(emancipated.author, "George Gissing");
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "", /Born in Exile/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "", /Leila/);
-  assert.match(SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "", /first breath is \d+ words, left as printed\./);
-  assert.match(SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "", /251/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "", /251|first breath/);
+  assert.ok((SHELF.find((item) => item.id === "the-emancipated")?.intro ?? "").endsWith("George Gissing’s 1890 novel. Naples is secular."));
   assert.match(bindNote("the-emancipated"), /Inventory 81/);
 
   const germinal = JSON.parse(
@@ -10566,7 +10570,8 @@ test("Mira POST-#185 CLEAR is Next lead Kipps, then The Professor, A Room with a
   assert.doesNotMatch(SHELF.find((item) => item.id === "kipps")?.intro ?? "", /Ann Veronica/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "kipps")?.intro ?? "", /Antic Hay/);
   assert.match(SHELF.find((item) => item.id === "kipps")?.intro ?? "", /New Romney/);
-  assert.match(SHELF.find((item) => item.id === "kipps")?.intro ?? "", /1906/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "kipps")?.intro ?? "", /1906|imprint/);
+  assert.ok((SHELF.find((item) => item.id === "kipps")?.intro ?? "").endsWith("H. G. Wells’s 1905 novel."));
   assert.match(bindNote("kipps"), /Inventory 79/);
 
   const professor = JSON.parse(
@@ -10782,8 +10787,8 @@ test("Mira POST-#186 CLEAR is Next lead Une Vie, then My Ántonia, Look Back on 
     assert.equal(opened.breaths[0]?.text.trim().split(/\s+/).length, want.firstWords, id);
     if (id === "une-vie") {
       assert.ok(want.firstWords > 250, id);
-      assert.match(work.intro ?? "", /first breath is \d+ words, left as printed\./);
-      assert.match(work.intro ?? "", /582/);
+      assert.doesNotMatch(work.intro ?? "", /582|first breath|no separate translator/);
+      assert.ok((work.intro ?? "").endsWith("Guy de Maupassant, in Albert M. C. McMaster and A. E. Henderson’s English, 1883."));
     } else {
       assert.ok(want.firstWords <= 250, id);
     }
@@ -12058,8 +12063,8 @@ test("Mira POST-#191 CLEAR is Next lead The Village in the Jungle, then Ribot, S
   ) as { year?: string; author?: string };
   assert.equal(ribot.year, "1900");
   assert.match(ribot.author ?? "", /Minna Caroline Smith/);
-  assert.match(SHELF.find((item) => item.id === "the-joy-of-captain-ribot")?.intro ?? "", /Baxter/);
-  assert.match(SHELF.find((item) => item.id === "the-joy-of-captain-ribot")?.intro ?? "", /Marti/);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "the-joy-of-captain-ribot")?.intro ?? "", /Baxter|Marti|named in the About|Accents stay/);
+  assert.ok((SHELF.find((item) => item.id === "the-joy-of-captain-ribot")?.intro ?? "").endsWith("Armando Palacio Valdés, in Minna Caroline Smith’s English, 1900."));
   assert.match(bindNote("the-joy-of-captain-ribot"), /PG reading-ease 70\.8/);
   const ribotOpen = JSON.parse(
     readFileSync(new URL("./openings/the-joy-of-captain-ribot.json", import.meta.url), "utf8"),
@@ -12076,8 +12081,8 @@ test("Mira POST-#191 CLEAR is Next lead The Village in the Jungle, then Ribot, S
   assert.equal(sara.author, "F. Marion Crawford");
   assert.match(sara.scenes[1]?.title ?? "", /Chapter I/);
   assert.match(sara.scenes[2]?.title ?? "", /Chapter II/);
-  assert.match(SHELF.find((item) => item.id === "saracinesca")?.intro ?? "", /334 words/);
-  assert.match(SHELF.find((item) => item.id === "saracinesca")?.intro ?? "", /first breath is \d+ words, left as printed\./);
+  assert.doesNotMatch(SHELF.find((item) => item.id === "saracinesca")?.intro ?? "", /334 words|first breath|stays in the book/);
+  assert.ok((SHELF.find((item) => item.id === "saracinesca")?.intro ?? "").endsWith("F. Marion Crawford’s 1887 novel. Reputation, marriage, and gossip in Roman high society."));
   assert.match(bindNote("saracinesca"), /PG reading-ease 69\.4/);
   const saraOpen = JSON.parse(
     readFileSync(new URL("./openings/saracinesca.json", import.meta.url), "utf8"),
@@ -16143,8 +16148,8 @@ test("Mira Mon 5 Oct POST-#238: Love Among the Chickens is plain Next after Maxi
   assert.deepEqual(placeFor(work), { label: "London", region: "gb" });
   assert.doesNotMatch(`${work.intro ?? ""}\n${work.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/);
   assert.doesNotMatch(work.intro ?? "", /PG reading-ease 84\.6 is for the whole book/);
-  assert.match(work.intro ?? "", /the year is 1920, from the dedication/);
-  assert.ok((work.intro ?? "").includes("dedication to W. Townend stays at the front of the book"));
+  assert.doesNotMatch(work.intro ?? "", /the year is|front of the book/);
+  assert.ok((work.intro ?? "").endsWith("This is the 1920 version, which Wodehouse’s dedication says was practically re-written from the 1906 book. Twenty-three chapters."));
   const card =
     "Ukridge drops in on Garnet's London lodgings with that powerful voice, and Garnet knows his quiet morning is over.";
   assert.equal(card.includes("!"), false);
@@ -16341,7 +16346,8 @@ test("Mira Tue 6 Oct AM: Muslin is plain Next after Love Among the Chickens, nev
   assert.equal(countryFor(work), "Ireland");
   assert.deepEqual(placeFor(work), { label: "Galway", region: "ie" });
   assert.doesNotMatch(`${work.intro ?? ""}\n${work.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b|\bsit\b/);
-  assert.match(work.intro ?? "", /the year is 1915, the New Edition this text follows/);
+  assert.doesNotMatch(work.intro ?? "", /the year is|this text follows/);
+  assert.ok((work.intro ?? "").endsWith("The novel first appeared in 1886 as A Drama in Muslin; this is Moore’s 1915 version. Twenty-nine chapters."));
   const card = "Prize day at a hilltop convent: clever, plain Alice and her lovely sister Olive are about to leave school for the ballrooms of Galway.";
   assert.equal(card.includes("!"), false);
   assert.equal(blurbFor(work), card);
@@ -16415,7 +16421,8 @@ test("Mira Tue 6 Oct: The Golden Age is Next carefully after muslin, on-a-walk o
   assert.equal(PITCHES[id], RITUAL_PITCHES[id]);
   assert.equal(PREFACES[id], RITUAL_PITCHES[id]);
   assert.equal(STORED_PREFACES[id], RITUAL_PITCHES[id]);
-  assert.match(work.intro ?? "", /the year is 1895, when the book first appeared/);
+  assert.doesNotMatch(work.intro ?? "", /the year is|One story; the book continues/);
+  assert.ok((work.intro ?? "").endsWith("Bright and comic, made for walking. An English village and the fields beyond it."));
   const card = "A heads-up before you start: one boy's war talk repeats a period stereotype about Indians, and later stories play at Indians; it's left as printed. Two boys trail a troop of soldiers through the village, sure a battle is coming, and get lost in the rain until the old doctor drives them home.";
   assert.ok(readFileSync(new URL("./blurbs.ts", import.meta.url), "utf8").includes("\"A heads-up before you start: one boy's war talk repeats a period stereotype about Indians, and later stories play at Indians; it's left as printed. Two boys trail a troop of soldiers through the village, sure a battle is coming, and get lost in the rain until the old doctor drives them home.\""));
   assert.equal(blurbFor(work), card);
@@ -16484,7 +16491,8 @@ test("Mira Tue 6 Oct MID: The Spoilt Child is Next carefully after the-golden-ag
   assert.equal(PITCHES[id], work.intro);
   assert.equal(PREFACES[id], work.intro);
   assert.equal(STORED_PREFACES[id], work.intro);
-  assert.match(work.intro ?? "", /the year is 1893, from the Calcutta Thacker/);
+  assert.doesNotMatch(work.intro ?? "", /the year is|Thacker/);
+  assert.ok((work.intro ?? "").endsWith("All of it is left as printed. The Bengali original, Alaler Gharer Dulal, first appeared in book form in 1858. Thirty chapters."));
   assert.doesNotMatch(`${work.intro ?? ""}\n${card}`, /\bFeatured(?:-track)?\b|\bFEATURED\b|\bsit\b|\bSkip\b|\bHost\b|Gutenberg|Vellum|Salon|Mira|Thea|pile|slate|queue/i);
   const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
   const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as { scenes: { title?: string }[]; breaths: { text: string }[] };
@@ -16606,7 +16614,8 @@ test("Mira Tue 6 Oct PM: A Japanese Blossom is Next carefully after the-spoilt-c
   assert.equal(PITCHES[id], work.intro);
   assert.equal(PREFACES[id], work.intro);
   assert.equal(STORED_PREFACES[id], work.intro);
-  assert.match(work.intro ?? "", /the year is 1906, from the Harper/);
+  assert.doesNotMatch(work.intro ?? "", /the year is|Harper/);
+  assert.ok((work.intro ?? "").endsWith("All of it is left as printed. Twenty-nine chapters."));
   assert.doesNotMatch(`${work.intro ?? ""}\n${card}`, /\bFeatured(?:-track)?\b|\bFEATURED\b|\bsit\b|\bSkip\b|\bHost\b|Gutenberg|Vellum|Salon|Mira|Thea|pile|slate|queue/i);
   const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
   const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as { scenes: { title?: string }[]; breaths: { text: string }[] };
@@ -16726,7 +16735,8 @@ test("Mira Wed 7 Oct AM: Fräulein Schmidt and Mr. Anstruther is plain Next afte
   assert.equal(PITCHES[id], work.intro);
   assert.equal(PREFACES[id], work.intro);
   assert.equal(STORED_PREFACES[id], work.intro);
-  assert.match(work.intro ?? "", /the year is 1907, from the title page/);
+  assert.doesNotMatch(work.intro ?? "", /the year is|title page|printed date|Quotes stay/);
+  assert.ok((work.intro ?? "").endsWith("It was first published as by the author of “Elizabeth and Her German Garden.” The whole novel is told in Rose-Marie's letters, eighty-one of them, each under its date."));
   assert.match(work.intro ?? "", /told in Rose-Marie's letters/);
   assert.doesNotMatch(`${work.intro ?? ""}\n${card}`, /\bFeatured(?:-track)?\b|\bFEATURED\b|\bsit\b|\bSkip\b|\bHost\b|Gutenberg|Vellum|Salon|Mira|Thea|pile|slate|queue|\blane\b|EN only|Next carefully/i);
   const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
@@ -16797,7 +16807,8 @@ test("Mira Wed 7 Oct MID: The Dancing-Master is on-a-walk only after the-golden-
   assert.equal(PITCHES[id], RITUAL_PITCHES[id]);
   assert.equal(PREFACES[id], RITUAL_PITCHES[id]);
   assert.equal(STORED_PREFACES[id], RITUAL_PITCHES[id]);
-  assert.match(work.intro ?? "", /the year is 1894, from the Harper copyright line/);
+  assert.doesNotMatch(work.intro ?? "", /the year is|copyright|stay in French|line by line/);
+  assert.ok((work.intro ?? "").endsWith("while waltzing. Amused and brisk, for a walk. Paris."));
   assert.match(work.intro ?? "", /It ends “…withstood the shock of this avalanche of dancers\.”/);
   const card = "A heads-up before you start: frank period talk of sizing up a partner's figure. Backstage at the opera, a dancing-master dressed as a bishop explains why France needs more waltzing.";
   assert.equal(blurbFor(work), card);
@@ -16871,7 +16882,8 @@ test("Mira Wed 7 Oct PM: Strait Is the Gate is in Next just before Fräulein Sch
   assert.equal(PITCHES[id], work.intro);
   assert.equal(PREFACES[id], work.intro);
   assert.equal(STORED_PREFACES[id], work.intro);
-  assert.match(work.intro ?? "", /the year is 1924, from the Toronto title page/);
+  assert.doesNotMatch(work.intro ?? "", /the year is|title page|Quotes stay|breaks kept/);
+  assert.ok((work.intro ?? "").endsWith("there are deaths in the family later in the book. Eight chapters, then Alissa’s journal."));
   assert.match(work.intro ?? "", /ending “…who afterwards became my friend\.”/);
   assert.doesNotMatch(`${work.intro ?? ""}\n${card}`, /\bFeatured(?:-track)?\b|\bFEATURED\b|\bsit\b|\bSkip\b|\bHost\b|Gutenberg|Vellum|Salon|Mira|Thea|pile|slate|queue|\blane\b|EN only|Next carefully/i);
   const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
