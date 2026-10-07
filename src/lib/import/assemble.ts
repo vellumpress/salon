@@ -24,7 +24,10 @@ export function assembleWork(input: {
 }): Work {
   const chunks: { title: string; lines: string[] }[] = [];
   for (const block of input.blocks) {
-    const lines = block.paragraphs.flatMap((para) => splitSentences(para));
+    const lines = block.paragraphs
+      .flatMap((para) => splitSentences(para))
+      .map((line) => line.trim())
+      .filter((line) => line.length > 0);
     if (!lines.length) continue;
     chunks.push({ title: block.title.trim(), lines });
   }

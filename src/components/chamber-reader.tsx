@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type TouchEvent } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { openingBreathIndex } from "@/lib/opening-scene";
@@ -169,14 +169,20 @@ export function TbrReader({
   const daylight = useReaderDaylight();
   const centerLine = useCenterLine();
   const centerOn = centerLine.enabled;
-  const touchStart = useRef<{ x: number; y: number } | null>(null);
-  const turnedByTouch = useRef(false);
   const turnHostRef = useRef<HTMLDivElement>(null);
-  const lockUntil = useRef(0);
+  /** One finger-down. The matching pointerup is the only turn. */
+  const gestureRef = useRef<{ id: number; x: number; y: number; t: number } | null>(null);
+  /** iOS sends a click after pointerup. That click must not turn again. */
+  const swallowClickRef = useRef(false);
+  const swallowTimerRef = useRef(0);
   const overlayRef = useRef(overlay);
   overlayRef.current = overlay;
   const booted = useRef(false);
   const seenBreaths = useRef(0);
+  /** Share link past the opening excerpt. Applied when the rest of the book arrives. */
+  const awaitingAt = useRef<number | null>(
+    typeof at === "number" && Number.isFinite(at) && at >= 0 ? Math.floor(at) : null,
+  );
   const breathSlotRef = useRef<HTMLDivElement>(null);
   const lookbackSlotRef = useRef<HTMLDivElement>(null);
   const readingPaneRef = useRef<HTMLDivElement>(null);
@@ -210,6 +216,15 @@ export function TbrReader({
     // past that leading front matter only — do not re-apply chapter jumps,
     // and do not move a saved index that is already on the prose.
     if (booted.current) {
+      const waiting = awaitingAt.current;
+      if (grew && waiting !== null && waiting < work.breaths.length) {
+        awaitingAt.current = null;
+        startSitting(work.id);
+        setBreath(work.id, waiting);
+        setShowPreface(false);
+        setOverlay("none");
+        return;
+      }
       if (grew && !shuffle && deepLink === null) {
         const index = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
         const frontAt = openingBreathIndex(work);
@@ -231,6 +246,7 @@ export function TbrReader({
       rememberHostedSit(hostedSit);
     }
     if (deepLink !== null) {
+      awaitingAt.current = null;
       startSitting(work.id);
       setBreath(work.id, deepLink);
       setShowPreface(false);
@@ -268,7 +284,10 @@ export function TbrReader({
 
   useEffect(() => {
     document.documentElement.classList.add("sitting");
-    return () => document.documentElement.classList.remove("sitting");
+    return () => {
+      document.documentElement.classList.remove("sitting");
+      window.clearTimeout(swallowTimerRef.current);
+    };
   }, []);
 
   // Idle, background, and the threshold / timer sheets are not reading.
@@ -329,38 +348,49 @@ export function TbrReader({
     }
   }
 
+  function liveIndex() {
+    const raw = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
+    const last = Math.max(0, work.breaths.length - 1);
+    if (!Number.isFinite(raw)) return 0;
+    return Math.min(last, Math.max(0, Math.floor(raw)));
+  }
+
   function goTo(next: number) {
     if (next < 0 || next >= work.breaths.length) return;
-    const target = work.breaths[next];
-    const words = target ? target.text.split(/\s+/).length : 8;
-    const wait = Math.min(140, 36 + words * 5);
-    lockUntil.current = Date.now() + wait;
+    const at = liveIndex();
+    const from = work.breaths[at];
+    const to = work.breaths[next];
     // Only a step onto the next breath is active reading. Retreats, jumps,
-    // and scrolling the line do not add time.
-    if (next === index + 1) {
-      const from = work.breaths[index];
-      const to = work.breaths[next];
-      const crossedScene = Boolean(from && to && from.sceneId !== to.sceneId);
-      advanceBreath(work.id, next, { crossedScene });
+    // and scrolling the line do not add time. The index is read from the
+    // store so a second tap in the same frame moves again.
+    if (next === at + 1) {
+      advanceBreath(work.id, next, {
+        crossedScene: Boolean(from && to && from.sceneId !== to.sceneId),
+      });
     } else setBreath(work.id, next);
   }
 
-  function advance() {
+  function stepBy(delta: 1 | -1) {
     if (overlayRef.current !== "none") return;
-    if (Date.now() < lockUntil.current) return;
-    if (!breath) return;
-    if (index >= work.breaths.length - 1) {
-      if (!workIsComplete(work.id)) return;
-      complete(work.id);
-      setOverlay("end");
+    const at = liveIndex();
+    const next = at + delta;
+    if (next < 0) return;
+    if (next >= work.breaths.length) {
+      if (delta > 0 && workIsComplete(work.id)) {
+        complete(work.id);
+        setOverlay("end");
+      }
       return;
     }
-    goTo(index + 1);
+    goTo(next);
+  }
+
+  function advance() {
+    stepBy(1);
   }
 
   function retreat() {
-    if (overlayRef.current !== "none") return;
-    goTo(index - 1);
+    stepBy(-1);
   }
 
   function beginFromReentry() {
@@ -811,33 +841,46 @@ export function TbrReader({
         !tooTall &&
         travel > 1 &&
         track.dataset.ready === "1";
-      if (motion) {
-        // Land on the true center, but start one breath lower so the column
-        // moves up. Windowed lookback can change height by much more than a
-        // breath; that jump is applied before paint, and only the breath
-        // travels in view.
-        holdMotionUntil = performance.now() + 320;
-        track.dataset.ready = "0";
-        track.style.transform = `translate3d(0, ${shift + travel}px, 0)`;
-        void track.offsetHeight;
-        track.dataset.ready = "1";
-        void track.offsetHeight;
-        track.style.transform = `translate3d(0, ${shift}px, 0)`;
-      } else {
-        track.dataset.ready = "0";
-        track.style.transform = `translate3d(0, ${shift}px, 0)`;
-        if (!reduceMotion) {
-          requestAnimationFrame(() => {
-            if (live && track.isConnected) track.dataset.ready = "1";
-          });
-        }
-      }
+      // Measure the landed line, not the first frame of the slide. A zone
+      // taken mid-animation sits below the sentence the reader sees, and the
+      // next-sentence button then covers the back area until the next resize.
+      const previousTransition = track.style.transition;
+      track.style.transition = "none";
+      track.dataset.ready = "0";
+      track.style.transform = `translate3d(0, ${shift}px, 0)`;
+      void track.offsetHeight;
       const aheadLine = ahead?.querySelector<HTMLElement>(".look-line");
       const lineRect = line.getBoundingClientRect();
       const gapPx = aheadLine
         ? Math.max(0, aheadLine.getBoundingClientRect().top - lineRect.bottom)
         : 10;
       lastTravel.current = lineRect.height + gapPx;
+      const hostRect = host?.getBoundingClientRect();
+      const focusTop = lineRect.top - (hostRect?.top ?? 0);
+      const zone = hostRect
+        ? Math.max(0, Math.min(Math.round(hostRect.height), Math.round(focusTop)))
+        : 0;
+      setPrevZonePx((prev) => (prev === zone ? prev : zone));
+      if (motion) {
+        // Land on the true center, but start one breath lower so the column
+        // moves up. Windowed lookback can change height by much more than a
+        // breath; that jump is applied before paint, and only the breath
+        // travels in view.
+        holdMotionUntil = performance.now() + 320;
+        track.style.transform = `translate3d(0, ${shift + travel}px, 0)`;
+        void track.offsetHeight;
+        track.style.transition = previousTransition;
+        track.dataset.ready = "1";
+        void track.offsetHeight;
+        track.style.transform = `translate3d(0, ${shift}px, 0)`;
+      } else {
+        track.style.transition = previousTransition;
+        if (!reduceMotion) {
+          requestAnimationFrame(() => {
+            if (live && track.isConnected) track.dataset.ready = "1";
+          });
+        }
+      }
 
       const overflowsNow = tooTall || slot.scrollHeight - slot.clientHeight > 1;
       setOverflows((prev) => (prev === overflowsNow ? prev : overflowsNow));
@@ -845,12 +888,6 @@ export function TbrReader({
       setAtEnd((prev) => (prev === end ? prev : end));
       const lookHeight = tooTall || !look ? 0 : Math.round(look.getBoundingClientRect().height);
       setLookbackPx((prev) => (prev === lookHeight ? prev : lookHeight));
-      const hostRect = host?.getBoundingClientRect();
-      const focusTop = line.getBoundingClientRect().top - (hostRect?.top ?? 0);
-      const zone = hostRect
-        ? Math.max(0, Math.min(Math.round(hostRect.height), Math.round(focusTop)))
-        : 0;
-      setPrevZonePx((prev) => (prev === zone ? prev : zone));
       layoutSig = sigNow();
     };
 
@@ -980,25 +1017,95 @@ export function TbrReader({
   );
   const breathClass = cn("breath-slot", overflows && "overflows", atEnd && "at-end");
 
-  function turnFromTouch(e: TouchEvent, go: () => void) {
-    const start = touchStart.current;
-    const t = e.changedTouches[0];
-    if (!start || !t) return;
-    const dx = t.clientX - start.x;
-    const dy = t.clientY - start.y;
-    if (Math.abs(dx) >= 48 && Math.abs(dx) > Math.abs(dy)) return;
-    if (Math.abs(dx) > 18 || Math.abs(dy) > 18) return;
-    turnedByTouch.current = true;
-    go();
+  function armSwallowClick() {
+    swallowClickRef.current = true;
+    window.clearTimeout(swallowTimerRef.current);
+    swallowTimerRef.current = window.setTimeout(() => {
+      swallowClickRef.current = false;
+    }, 900);
+  }
+
+  function zoneAt(x: number, y: number) {
+    const host = turnHostRef.current;
+    if (!host) return null;
+    const line = breathSlotRef.current?.querySelector(".breath-now");
+    const hostRect = host.getBoundingClientRect();
+    const lineRect = line?.getBoundingClientRect();
+    return turnZone({
+      x,
+      y,
+      host: {
+        left: hostRect.left,
+        top: hostRect.top,
+        right: hostRect.right,
+        bottom: hostRect.bottom,
+        width: hostRect.width,
+      },
+      focusTop: lineRect ? lineRect.top : null,
+      focusBottom: lineRect ? lineRect.bottom : null,
+    });
+  }
+
+  function turnAt(x: number, y: number) {
+    const zone = zoneAt(x, y);
+    if (!zone) return;
+    armSwallowClick();
+    if (zone === "prev") retreat();
+    else advance();
     setBar((state) => reduceReaderBar(state, "page"));
   }
 
-  function turnFromClick(go: () => void) {
-    if (turnedByTouch.current) {
-      turnedByTouch.current = false;
+  function beginTurn(e: ReactPointerEvent<HTMLDivElement>) {
+    if (e.button !== 0) return;
+    const host = turnHostRef.current;
+    if (!host) return;
+    gestureRef.current = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now() };
+    const target = e.target as HTMLElement | null;
+    const scrolling = Boolean(target?.closest?.(".breath-slot.overflows"));
+    if (scrolling) return;
+    try {
+      host.setPointerCapture(e.pointerId);
+    } catch {
+      /* the pointer already ended */
+    }
+    // Stops the text callout and the extra click iOS fires after a tap.
+    e.preventDefault();
+  }
+
+  function endTurn(e: ReactPointerEvent<HTMLDivElement>) {
+    const start = gestureRef.current;
+    gestureRef.current = null;
+    if (!start || start.id !== e.pointerId) return;
+    const dx = e.clientX - start.x;
+    const dy = e.clientY - start.y;
+    const dt = performance.now() - start.t;
+    if (dt > 900) {
+      armSwallowClick();
       return;
     }
-    go();
+    // A shaky finger is still a tap. Only a real sideways flick swipes.
+    if (Math.abs(dx) >= 56 && Math.abs(dx) > Math.abs(dy) * 1.25) {
+      armSwallowClick();
+      if (dx < 0) advance();
+      else retreat();
+      setBar((state) => reduceReaderBar(state, "page"));
+      return;
+    }
+    if (Math.hypot(dx, dy) > 44) {
+      armSwallowClick();
+      return;
+    }
+    turnAt(e.clientX, e.clientY);
+  }
+
+  function onTurnClick(e: ReactMouseEvent<HTMLDivElement>) {
+    if (swallowClickRef.current) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+    e.preventDefault();
+    turnAt(e.clientX, e.clientY);
   }
 
   const pane = (
@@ -1006,55 +1113,12 @@ export function TbrReader({
       ref={turnHostRef}
       data-reader-text
       className={cn("reader-turn relative flex min-h-0 flex-1", !together && "reader-turn-bleed")}
-      onTouchStart={(e) => {
-        const t = e.changedTouches[0];
-        touchStart.current = { x: t.clientX, y: t.clientY };
+      onPointerDownCapture={beginTurn}
+      onPointerUpCapture={endTurn}
+      onPointerCancelCapture={() => {
+        gestureRef.current = null;
       }}
-      onClick={() => {
-        if (turnedByTouch.current) turnedByTouch.current = false;
-      }}
-      onTouchEnd={(e) => {
-        const start = touchStart.current;
-        touchStart.current = null;
-        if (!start) return;
-        const t = e.changedTouches[0];
-        if (!t) return;
-        const dx = t.clientX - start.x;
-        const dy = t.clientY - start.y;
-        const swipe = Math.abs(dx) >= 48 && Math.abs(dx) > Math.abs(dy);
-        if (swipe) {
-          turnedByTouch.current = true;
-          if (dx < 0) advance();
-          else retreat();
-          setBar((state) => reduceReaderBar(state, "page"));
-          return;
-        }
-        if (Math.abs(dx) > 18 || Math.abs(dy) > 18) return;
-        if (turnedByTouch.current) return;
-        const host = turnHostRef.current;
-        const line = breathSlotRef.current?.querySelector(".breath-now");
-        if (!host) return;
-        const hostRect = host.getBoundingClientRect();
-        const lineRect = line?.getBoundingClientRect();
-        const zone = turnZone({
-          x: t.clientX,
-          y: t.clientY,
-          host: {
-            left: hostRect.left,
-            top: hostRect.top,
-            right: hostRect.right,
-            bottom: hostRect.bottom,
-            width: hostRect.width,
-          },
-          focusTop: lineRect ? lineRect.top : null,
-          focusBottom: lineRect ? lineRect.bottom : null,
-        });
-        if (!zone) return;
-        turnedByTouch.current = true;
-        if (zone === "prev") retreat();
-        else advance();
-        setBar((state) => reduceReaderBar(state, "page"));
-      }}
+      onClickCapture={onTurnClick}
     >
       <button
         type="button"
@@ -1067,8 +1131,6 @@ export function TbrReader({
         )}
         style={{ height: overflows ? lookbackPx : Math.max(0, prevZonePx) }}
         onMouseDown={(e) => e.preventDefault()}
-        onTouchEnd={(e) => turnFromTouch(e, retreat)}
-        onClick={() => turnFromClick(retreat)}
       />
       <button
         type="button"
@@ -1081,8 +1143,6 @@ export function TbrReader({
         )}
         style={overflows ? { height: lookbackPx } : { top: Math.max(0, prevZonePx) }}
         onMouseDown={(e) => e.preventDefault()}
-        onTouchEnd={(e) => turnFromTouch(e, advance)}
-        onClick={() => turnFromClick(advance)}
       />
 
       <div
@@ -1134,6 +1194,7 @@ export function TbrReader({
       data-daylight={daylight.active ? daylight.sample.phase : "off"}
       data-center-line={centerOn ? "on" : "off"}
       data-bound={workIsComplete(work.id) ? "full" : "opening"}
+      data-breath-index={index}
     >
       <h1 className="sr-only">{work.title}</h1>
       {together && pair ? (
