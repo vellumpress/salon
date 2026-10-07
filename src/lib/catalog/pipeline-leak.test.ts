@@ -895,3 +895,136 @@ test("the curation gate trips on the leaked lines and passes ordinary prose", ()
   }
   assert.deepEqual(CURATION_ALLOWLIST, []);
 });
+
+/**
+ * Provenance and production notes: where a year or credit was sourced and how
+ * the text was set ("the year is 1894, from the Harper copyright line", "the
+ * Toronto title page", "Quotes stay as printed.", "the printed breaks kept",
+ * "The dedication stays at the front of the book.", "The two snatches of French
+ * verse stay in French", "This tbr cut stops on …", "named in the About only",
+ * "The first breath is 334 words"). That is bind talk, not copy for a reader.
+ * The card already shows author, translator and year.
+ *
+ * Content heads-ups keep "left as printed" (it tells a reader the period
+ * language is unaltered), and the first-reading line keeps "up to its first
+ * printed break", so neither is banned here. Every reader-copy surface is
+ * checked: shelf intros, blurbs, pitches, ritual pitches, composed and stored
+ * prefaces, and the threshold intro.
+ *
+ * Allowlist: `where: name`, with the reason beside it. Empty on purpose.
+ */
+export const PROVENANCE_ALLOWLIST: readonly string[] = [];
+
+export const PROVENANCE_PATTERNS: { name: string; pattern: RegExp }[] = [
+  { name: "the year is", pattern: /\byear is\b/i },
+  { name: "copyright", pattern: /\bcopyright\b/i },
+  { name: "title page", pattern: /\btitle page\b/i },
+  { name: "imprint", pattern: /\bimprint\b/i },
+  { name: "printing (source)", pattern: /\b(?:this|the|magazine|first) printing (?:is|named|of)\b|\bthis printing\b|\bmagazine printing\b/i },
+  { name: "edition (source)", pattern: /\bthe edition gives\b|\bthis text follows\b|\b(?:second|third) edition\b|\bfirst-edition year\b|\bfrom the (?:[A-Z][\w&.,' ]+ )?edition\b/ },
+  { name: "as printed (not a heads-up)", pattern: /(?<!\bleft )(?<!\bleft exactly )\bas printed\b/i },
+  { name: "stays in French / italics", pattern: /\bstays? in (?:French|italics)\b|\bline by line\b/i },
+  { name: "kept (production)", pattern: /\bprinted breaks? kept\b|\b(?:breaks?|notes?|footnotes?|spelling) (?:is |are )?kept\b|\bkept as a note\b/i },
+  { name: "front of the book", pattern: /\bfront of the book\b/i },
+  { name: "own page", pattern: /\bas (?:its|their) own (?:short )?page\b/i },
+  { name: "set as / set in italics", pattern: /\bis set as\b|\bare set in italics\b|\bset as “/i },
+  { name: "print errors / corrected", pattern: /\bprint errors?\b|\bis corrected to\b|\btypographic slips?\b/i },
+  { name: "tbr cut", pattern: /\btbr cut\b|\bcut stops\b/i },
+  { name: "named in the About", pattern: /\bnamed in the About\b/i },
+  { name: "Wikipedia / PG page", pattern: /\bWikipedia\b|\bPG (?:page|text)\b/ },
+  { name: "first breath N words", pattern: /\bfirst breath (?:is|of|stays) \d/i },
+  { name: "Note line", pattern: /\bNote lines?\b/ },
+  { name: "shorter screens", pattern: /\bshorter screens\b|\bno words are changed\b/i },
+  { name: "One story; the book continues", pattern: /\bOne (?:story|chapter|tale); the (?:book|cycle|collection) continues\b/ },
+  { name: "stays in the book / stays out", pattern: /\bstays? in the book\b|\b(?:preface|introduction|tales?) stays? out\b|\b(?:is|are) not included\b|\bare out;/i },
+  { name: "dropped (production)", pattern: /\b(?:is|are) dropped\b/ },
+  { name: "no translator listed", pattern: /\bno (?:separate )?translator (?:is listed|preface)\b/i },
+  { name: "quote typography", pattern: /\b(?:straight|curly|single|double) quotes\b|\bquotes stay\b|\bquote marks\b/i },
+  { name: "accents stay", pattern: /\baccents stay\b|\bwithout tildes\b/i },
+  { name: "printed as (spelling note)", pattern: /\bis printed as\b|\bprinted without\b/i },
+];
+
+export function provenanceHits(text: string): string[] {
+  return PROVENANCE_PATTERNS.filter(({ pattern }) => pattern.test(text)).map(({ name }) => name);
+}
+
+test("reader-facing copy carries no provenance or production notes (allowlist empty)", () => {
+  const copy: Array<[string, string]> = [];
+  for (const work of SHELF) {
+    if (work.intro) copy.push([`shelf.intro:${work.id}`, work.intro]);
+    const blurb = blurbFor(work);
+    if (blurb) copy.push([`blurb:${work.id}`, blurb]);
+    const preface = prefaceFor(work.id);
+    if (preface) copy.push([`prefaceFor:${work.id}`, preface]);
+    const intro = readerIntro(work as unknown as Work);
+    if (intro) copy.push([`readerIntro:${work.id}`, intro]);
+  }
+  for (const [id, text] of Object.entries(PITCHES)) copy.push([`pitch:${id}`, text]);
+  for (const [id, text] of Object.entries(RITUAL_PITCHES)) copy.push([`ritual:${id}`, text]);
+  for (const [id, text] of Object.entries(PREFACES)) copy.push([`preface:${id}`, text]);
+  for (const [id, text] of Object.entries(STORED_PREFACES)) copy.push([`stored-preface:${id}`, text]);
+  const hits: string[] = [];
+  for (const [where, text] of copy) {
+    for (const name of provenanceHits(text)) {
+      if (PROVENANCE_ALLOWLIST.includes(`${where}: ${name}`)) continue;
+      const pattern = PROVENANCE_PATTERNS.find((item) => item.name === name)!.pattern;
+      const m = pattern.exec(text);
+      const at = m?.index ?? 0;
+      hits.push(`${where} [${name}] …${text.slice(Math.max(0, at - 40), at + 60)}…`);
+    }
+  }
+  assert.deepEqual(hits, []);
+});
+
+test("the provenance gate trips on the leaked lines and passes heads-ups and story copy", () => {
+  for (const bad of [
+    "Ludovic Halévy, in Edith V.B. Matthews's English; the year is 1894, from the Harper copyright line.",
+    "Elizabeth von Arnim; the year is 1907, from the title page, which names her only as the author of “Elizabeth and Her German Garden.”",
+    "André Gide, in Dorothy Bussy's English; the year is 1924, from the Toronto title page.",
+    "Quotes stay as printed.",
+    "Marti is printed as Marti.",
+    "Straight quotes stay as printed.",
+    "Eight chapters and Alissa’s journal, the printed breaks kept.",
+    "The dedication “To M. A. G.” stays at the front of the book.",
+    "The two snatches of French verse stay in French, in italics, line by line.",
+    "Kenneth Grahame; the year is 1895, when the book first appeared.",
+    "One story; the book continues with the Prologue and sixteen more.",
+    "Faithful friends summoned to a distant house. This tbr cut stops on the freedom line.",
+    "The English year is 1897.",
+    "The Scribner imprint is 1906.",
+    "Garnett is named in the About only.",
+    "The first breath is 334 words, left as printed.",
+    "The dedication stays, as its own page before Chapter I.",
+    "The Irish talk stays as printed.",
+    "“BOOK 1” is set as Book I, to match Books II–V.",
+    "Two print errors are fixed: “rerepeated” is set as “repeated”.",
+    "Some long paragraphs have been broken into shorter screens; no words are changed.",
+    "The year is from the Wikipedia page the PG page links to.",
+    "Morier’s novel, first 1824, this printing 1895.",
+    "Thirty-one chapters, the translator's 62 notes kept.",
+    "The preface stays out.",
+    "The heading’s “I.” is dropped.",
+  ]) {
+    assert.ok(provenanceHits(bad).length > 0, bad);
+  }
+  for (const good of [
+    "A heads-up before you start: on the way the narrator tells Harold that Indians scalp and burn their prisoners, a schoolboy notion of the period, left as printed.",
+    "The Jamaican Creole talk is left as printed.",
+    "The Yankee village talk is left exactly as printed.",
+    "The first reading is Chapter I up to its first printed break, ending “…who afterwards became my friend.”",
+    "This reading is the whole story, through its three printed breaks, ending “…the last seconds of happiness I have known in my life.”",
+    "It ends “…withstood the shock of this avalanche of dancers.”",
+    "Amused and brisk, for a walk. Paris.",
+    "From Over the Sliprails.",
+    "First published in Norwegian in 1883; this translation is from 1920.",
+    "There was a man of the Island of Hawaii, whom I shall call Keawe; for the truth is, he still lives, and his name must be kept secret.",
+    "Desire and a kept boy are the story, told frankly.",
+    "Stephen Crane’s Maggie, first published in 1893 under the pseudonym Johnston Smith (Crane paid for a private printing himself).",
+    "Expect dense, older English and a few rough spots from the old printing; this is a reading edition, not a critical text.",
+    "The novel is set in Paris, and the reading stays in Chapter I.",
+    "It was pouring with rain, and Dorine van Lowe dropped in on Karel and Cateau.",
+  ]) {
+    assert.deepEqual(provenanceHits(good), [], good);
+  }
+  assert.deepEqual(PROVENANCE_ALLOWLIST, []);
+});

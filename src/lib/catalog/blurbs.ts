@@ -335,7 +335,7 @@ const BLURBS: Record<string, string> = {
   "african-tragedy":
     "Two reasons made Robert Zulu leave teaching at Siam Village School — Dhlomo’s Lovedale frame moralizes town life, and the first reading stops at the end of that chapter.",
   anandamath:
-    "A hot day in Padachinha opens Sen-Gupta’s 1906 Abbey of Bliss — Bengali year marks stay as printed.",
+    "A hot day in Padachinha opens Sen-Gupta’s 1906 Abbey of Bliss.",
   "kwaidan-stories-and-studies-of-strange-things":
     "One tale: Mimi-Nashi-Hōïchi at Dan-no-ura, where demon-fires burn and a blind minstrel is about to be summoned.",
   "chita-a-memory-of-last-island":
@@ -723,7 +723,7 @@ const BLURBS: Record<string, string> = {
   "the-great-god-pan": "A London experiment that lets something older into a girl’s nerves.",
   "the-hill-of-dreams": "A furnace-glow sky, and Lucian Taylor loses himself on a Gwent hill lane.",
   "the-story-of-an-african-farm": "The full African moon pours onto a Karoo plain and a solitary kopje.",
-  "the-imperialist": "Old Mother Beggarlegs sells gingerbread in the Elgin market, and the first breath stays 585 words as printed.",
+  "the-imperialist": "Old Mother Beggarlegs sells gingerbread in the Elgin market.",
   "mogens-and-other-stories": "Summer it was, in a corner of the enclosure, and this reading is Mogens only.",
   "the-willows": "Two men camp on a Danube island that does not want visitors.",
   "three-john-silence-stories": "Blackwood’s psychic doctor, called in when the house is the patient.",
@@ -799,7 +799,7 @@ const BLURBS: Record<string, string> = {
   "the-club-of-queer-trades": "Chesterton’s club of men who invented impossible jobs.",
   "the-wisdom-of-father-brown": "More Father Brown: the criminal as a soul the priest can still see.",
   clayhanger: "Bennett’s Five Towns again: a printer’s son and a long provincial life.",
-  "anna-of-the-five-towns": "A Sunday-school yard in the Five Towns, and a first breath of 371 words left as printed.",
+  "anna-of-the-five-towns": "A Sunday-school yard in the Five Towns.",
   "the-road-to-the-open": "George sits alone, and the September sun falls on his father’s empty chair.",
   calvary: "An October birth in Saint-Michel-les-Hêtres, and the reading stays in the Orne.",
   "small-souls": "Hague rain, and Dorine van Lowe comes in with a wet umbrella.",
@@ -860,7 +860,7 @@ const BLURBS: Record<string, string> = {
   krakatit:
     "Evening fog thickens on the Old Town embankment until a pair of penetrating eyes fix on him.",
   "the-peasants":
-    "Agatha and the priest on the autumn road — Praised be Jesus Christ — village poverty and period speech stay as printed.",
+    "Agatha and the priest on the autumn road — Praised be Jesus Christ — village poverty and period speech, left as printed.",
   "the-quest-of-the-silver-fleece": "Du Bois’ cotton novel: a crop, a school, and the northern money in it.",
   "main-travelled-roads": "Garland’s Midwest farms, without the calendar art.",
   "the-country-of-the-pointed-firs": "Jewett’s Maine harbor, visited slowly, left with the tide.",
@@ -1042,7 +1042,7 @@ const BLURBS: Record<string, string> = {
   "stories-of-red-hanrahan": "Yeats’s Hanrahan: a poet cursed into wandering his own country.",
   "a-hungarian-nabob":
     "Rain on the puszta in 1822 opens on Peter Bús’s Break-’em-tear-’em csárda.",
-  "an-iceland-fisherman": "Five Breton seamen drink in a bilge-water cabin, year 1886.",
+  "an-iceland-fisherman": "Five Breton seamen drink in a bilge-water cabin.",
   "the-song-of-the-blood-red-flower":
     "A strawberry song and the girls’ ring open the Gazelle chase.",
   "irish-fairy-tales":

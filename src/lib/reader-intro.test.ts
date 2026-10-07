@@ -155,7 +155,8 @@ test("Mhudi opens on the Bechuana tribes, not the chapter subtitle", () => {
 test("María opens on the Bogotá college, distinct from Marianela", () => {
   const copy = readerIntro(shelfAsWork("maria"));
   assert.match(copy, /Bogotá/);
-  assert.match(copy, /Marianela/);
+  assert.doesNotMatch(copy, /Marianela/);
+  assert.ok(copy.endsWith("Ogden’s English, 1890."));
   assert.doesNotMatch(copy, /The sun had set/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured/i);
 });
