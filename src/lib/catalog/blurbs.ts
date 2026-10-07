@@ -633,6 +633,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: one boy's war talk repeats a period stereotype about Indians, and later stories play at Indians; it's left as printed. Two boys trail a troop of soldiers through the village, sure a battle is coming, and get lost in the rain until the old doctor drives them home.",
   "the-mist":
     "After sunset, mist rises over a quiet village meadow and tells a night-flower how he is dew, cloud, and spring-water in turn — until morning blows him away.",
+  "strait-is-the-gate":
+    "A heads-up before you start: an aunt makes a sexual advance on the boy; her Martinique roots are told in period terms; family members die. He loves Alissa, who prefers holiness.",
   "fraulein-schmidt-and-mr-anstruther":
     "An hour after the English student lodging with her family suddenly proposes, Rose-Marie sits in the unlit room in Jena and writes him the first of her letters before he has even reached London.",
   "a-japanese-blossom":

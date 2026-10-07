@@ -234,6 +234,7 @@ test("known origin overrides", () => {
     "the-dancing-master": "France",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",
+    "strait-is-the-gate": "France",
     "fraulein-schmidt-and-mr-anstruther": "Germany",
     "a-japanese-blossom": "Canada",
     "the-spoilt-child": "India",
