@@ -5,6 +5,7 @@ import {
   CENTER_LINE_ANCHOR,
   CENTER_LINE_KEY,
   UPCOMING_WINDOW,
+  breathTooTall,
   centerLineOffset,
   readCenterLineEnabled,
   upcomingBreaths,
@@ -73,8 +74,8 @@ test("center the line defaults on and persists like the other reader settings", 
   assert.equal(readCenterLineEnabled(null), true);
 });
 
-test("the anchor sits in the middle band of the reading area", () => {
-  assert.ok(CENTER_LINE_ANCHOR >= 0.45 && CENTER_LINE_ANCHOR <= 0.5);
+test("the focus sentence rests in the lower band of the reading area", () => {
+  assert.ok(CENTER_LINE_ANCHOR >= 0.62 && CENTER_LINE_ANCHOR <= 0.66);
   assert.ok(UPCOMING_WINDOW >= 4 && UPCOMING_WINDOW <= 16);
 });
 
@@ -92,6 +93,17 @@ test("center offset keeps the breath on the anchor at the start, middle, and end
     centerLineOffset({ paneHeight: pane, lineTop: anchor - height / 2, lineHeight: height }),
     0,
   );
+});
+
+test("a breath that cannot sit on the lower anchor scrolls instead of clipping", () => {
+  const pane = 800;
+  assert.equal(breathTooTall(80, pane), false);
+  assert.equal(breathTooTall(pane * 0.7, pane), false);
+  assert.equal(breathTooTall(pane * 0.73, pane), true);
+  assert.equal(breathTooTall(pane * 0.95, pane, 0.5), true);
+  assert.equal(breathTooTall(pane * 0.8, pane, 0.5), false);
+  assert.equal(breathTooTall(10, 0), false);
+  assert.equal(breathTooTall(0, pane), false);
 });
 
 test("upcoming breaths are a scene-bounded window, not the rest of the book", () => {
@@ -133,13 +145,29 @@ test("a long book only walks the upcoming window", () => {
 });
 
 test("upcoming preview stays fainter than the current line and still legible", () => {
-  assert.equal(upcomingOpacity(0, 1), 0.4);
+  assert.equal(upcomingOpacity(0, 1), 0.36);
   const count = UPCOMING_WINDOW;
   for (let i = 0; i < count; i += 1) {
     const opacity = upcomingOpacity(i, count);
-    assert.ok(opacity >= 0.3 && opacity <= 0.46, `index ${i} opacity ${opacity}`);
+    assert.ok(opacity >= 0.3 && opacity <= 0.42, `index ${i} opacity ${opacity}`);
   }
   assert.ok(upcomingOpacity(0, count) > upcomingOpacity(count - 1, count));
+  assert.ok(upcomingOpacity(0, count) < 0.44, "nearest preview is a step fainter than before");
+});
+
+test("upcoming preview is one soft blur and the focus line stays sharp", () => {
+  const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
+  const slot = css.match(/\.upcoming-slot\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(slot, /filter:\s*blur\(2px\)/);
+  assert.doesNotMatch(slot, /\.breath-now|\.look-line/);
+  const breath = css.match(/\.look-line,\s*\n\.breath-now\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.ok(breath.length > 0, "focus line rule missing");
+  assert.doesNotMatch(breath, /blur|filter/);
+  const transparent = css.slice(css.indexOf("@media (prefers-reduced-transparency: reduce)"));
+  assert.match(transparent, /\.upcoming-slot\s*\{[^}]*filter:\s*none/);
+  const motion = css.slice(css.lastIndexOf("@media (prefers-reduced-motion: reduce)"));
+  assert.match(motion, /\.reader-frame \*/);
+  assert.match(motion, /transition:\s*none\s*!important/);
 });
 
 test("the hourglass sheet toggles Center the line next to Daylight colors", () => {
