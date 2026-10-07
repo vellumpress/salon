@@ -216,7 +216,6 @@ export const STORED_PREFACES: Record<string, string> = {
   "hymen": `H.D. on marriage, myth, and the body’s public ceremony. Let the first line arrive when you are ready.`,
   "idylls-of-the-king": `Alfred, Lord Tennyson’s 1859 poems: Idylls of the King. Let the first line arrive when you are ready.`,
   "immensee": `Theodor Storm’s 1850 novel Immensee. Sit with the world a moment before the first breath.`,
-  "immoralist": `André Gide’s 1902 novel The Immoralist. Sit with the world a moment before the first breath.`,
   "imperium-in-imperio": `Griggs’ secret Black nation inside the United States — a political thought-experiment. Sit with the world a moment before the first breath.`,
   "in-a-german-pension": `Mansfield’s first book: a New Zealander watching Germans at table. Enter one room at a time.`,
   "in-court-and-kampong": `Clifford’s Malay world: court, village, and the Englishman taking dictation. Enter one room at a time.`,

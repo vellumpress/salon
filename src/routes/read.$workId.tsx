@@ -1,7 +1,8 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, redirect } from "@tanstack/react-router";
 import { TbrReader } from "@/components/chamber-reader";
 import { shelfWork } from "@/lib/catalog/shelf";
+import { canonicalWorkId } from "@/lib/work-id-alias";
 import { getImport } from "@/lib/import/idb";
 import { isDeviceImport } from "@/lib/import/private";
 import { loadWork, peekWork, type Work } from "@/lib/works";
@@ -32,6 +33,16 @@ function asEpisodeNumber(value: unknown): number | undefined {
 }
 
 export const Route = createFileRoute("/read/$workId")({
+  beforeLoad: ({ params, search }) => {
+    const workId = canonicalWorkId(params.workId);
+    if (workId !== params.workId) {
+      throw redirect({
+        to: "/read/$workId",
+        params: { workId },
+        search,
+      });
+    }
+  },
   validateSearch: (search: Record<string, unknown>): ReadSearch => {
     const next: ReadSearch = {};
     if (searchFlag(search.shuffle)) next.shuffle = true;

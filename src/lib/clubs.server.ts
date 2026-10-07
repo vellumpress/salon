@@ -8,6 +8,7 @@ import {
   serializePlan,
 } from "@/lib/catalog/serialize";
 import { shelfWork } from "@/lib/catalog/shelf";
+import { canonicalWorkId } from "@/lib/work-id-alias";
 import { fillOf, type Fill } from "@/lib/mondrian";
 import { CLUBS } from "@/lib/social";
 import type { BookClubView, ClubSessionView, UpcomingSit } from "./clubs";
@@ -111,7 +112,7 @@ function toClub(row: ClubRow, sessions: SessionRow[]): BookClubView {
   return {
     id: row.id,
     name: row.name,
-    workId: row.work_id,
+    workId: canonicalWorkId(row.work_id),
     workTitle: meta.workTitle,
     author: meta.author,
     fill: asClubFill(row.fill),
@@ -209,6 +210,7 @@ export async function createClubHandler(input: {
   startEpisode?: number;
   hostUserId: string | null;
 }): Promise<BookClubView> {
+  input = { ...input, workId: canonicalWorkId(input.workId) };
   requireLocalWork(input.workId);
   const serial = requireSerialize(input.workId, input.serializePlanId, input.startEpisode);
   const startsAt = requireStartsAt(input.startsAt);
@@ -312,7 +314,7 @@ export async function listUpcomingSessionsHandler(): Promise<UpcomingSit[]> {
       sessionId: Number(row.id),
       clubId: row.club_id,
       name: row.name,
-      workId: row.work_id,
+      workId: canonicalWorkId(row.work_id),
       workTitle: meta.workTitle,
       author: meta.author,
       fill: asClubFill(row.fill),

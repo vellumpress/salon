@@ -9,8 +9,9 @@ import {
   isAdaptedBySalon,
   NEXT_FEATURED_TRACK_IDS,
 } from "./curatorial.ts";
-import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES, RITUAL_PITCHES, RITUAL_SIT_MINUTES } from "./rituals.ts";
-import { SHELF } from "./shelf.ts";
+import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES, RITUAL_PITCHES, RITUAL_SIT_MINUTES, ritualPitchFor } from "./rituals.ts";
+import { SHELF, shelfWork } from "./shelf.ts";
+import { canonicalWorkId, remapAliasedWorkIds } from "../work-id-alias.ts";
 import { blurbFor } from "./blurbs.ts";
 import { STORED_PREFACES } from "./prefaces-stored.ts";
 import { isBoundLocal, isEnReadableOff } from "./en-rights.ts";
@@ -1014,12 +1015,53 @@ test("The Immoralist is a local before-sleep bind on Next", () => {
   );
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-immoralist"), false);
   assert.equal(curatorialTrack("the-immoralist"), "next");
-  const stub = SHELF.find((item) => item.id === "immoralist");
-  assert.ok(stub);
-  assert.equal(stub.local, undefined);
-  assert.equal(stub.language, "English");
-  assert.equal(stub.gutenberg, 78975);
-  assert.notEqual(stub.id, work.id);
+  assert.equal(SHELF.filter((item) => item.id === "immoralist").length, 0);
+  assert.equal(SHELF.filter((item) => item.gutenberg === 78975).length, 1);
+  assert.equal(canonicalWorkId("immoralist"), "the-immoralist");
+  assert.equal(shelfWork("immoralist")?.id, work.id);
+  assert.equal(shelfWork("immoralist"), work);
+  assert.equal(STORED_PREFACES.immoralist, undefined);
+  assert.match(
+    RITUAL_PITCHES["the-immoralist"] ?? "",
+    /The first reading is Michel’s opening letter to his friends, ending “…more simply than if I were talking to myself\. Listen:”$/,
+  );
+  assert.doesNotMatch(RITUAL_PITCHES["the-immoralist"] ?? "", /freedom line/);
+  const book = JSON.parse(readFileSync(new URL("./texts/the-immoralist.json", import.meta.url), "utf8")) as {
+    breaths: { text: string }[];
+  };
+  assert.equal(
+    book.breaths[0]?.text.endsWith("more simply than if I were talking to myself. Listen:"),
+    true,
+  );
+});
+
+test("immoralist alias keeps saved progress, Kept lines, and the read link", () => {
+  assert.equal(canonicalWorkId("the-immoralist"), "the-immoralist");
+  assert.equal(`/read/${canonicalWorkId("immoralist")}`, "/read/the-immoralist");
+  const remapped = remapAliasedWorkIds({
+    progress: {
+      immoralist: { lastOpenedAt: 20, kept: ["letter", "listen"] },
+      "the-immoralist": { lastOpenedAt: 5, kept: ["listen", "friends"] },
+    },
+    favorites: ["immoralist", "the-immoralist", "dracula"],
+    lastShuffle: "immoralist",
+    readingNow: { id: "immoralist" },
+    worksTouchedByDay: { "2026-10-07": ["immoralist", "the-immoralist"] },
+    sitHistory: [{ workId: "immoralist" }],
+    togetherKeeps: [{ workId: "immoralist" }],
+    hostedSits: [{ workId: "immoralist" }],
+  });
+  assert.deepEqual(Object.keys(remapped.progress ?? {}), ["the-immoralist"]);
+  assert.equal(remapped.progress?.["the-immoralist"]?.lastOpenedAt, 20);
+  assert.deepEqual(remapped.progress?.["the-immoralist"]?.kept, ["letter", "listen", "friends"]);
+  assert.deepEqual(remapped.favorites, ["the-immoralist", "dracula"]);
+  assert.equal(remapped.lastShuffle, "the-immoralist");
+  assert.equal(remapped.readingNow?.id, "the-immoralist");
+  assert.deepEqual(remapped.worksTouchedByDay?.["2026-10-07"], ["the-immoralist"]);
+  assert.equal(remapped.sitHistory?.[0]?.workId, "the-immoralist");
+  assert.equal(remapped.togetherKeeps?.[0]?.workId, "the-immoralist");
+  assert.equal(remapped.hostedSits?.[0]?.workId, "the-immoralist");
+  assert.equal(ritualPitchFor("immoralist"), RITUAL_PITCHES["the-immoralist"]);
 });
 
 test("Letters of a Javanese Princess is a local waking bind on Next, not locked recommend", () => {
@@ -15676,7 +15718,7 @@ test("Mira POST-#228 CLEAR is Next carefully lead The Counterfeiters, after Lewi
 
   assert.deepEqual(next.slice(-10, -9), [...tail]);
   assert.deepEqual(next.slice(-13, -10), [...prior]);
-  assert.deepEqual(SHELF.filter((item) => item.author.startsWith("André Gide")).map((item) => item.id).sort(), ["immoralist", "strait-is-the-gate", "the-counterfeiters", "the-immoralist"]);
+  assert.deepEqual(SHELF.filter((item) => item.author.startsWith("André Gide")).map((item) => item.id).sort(), ["strait-is-the-gate", "the-counterfeiters", "the-immoralist"]);
   for (const id of tail) {
     assert.equal(next.indexOf(id), next.lastIndexOf(id), id);
     assert.equal(curatorialTrack(id), "next", id);
@@ -16861,7 +16903,7 @@ test("Mira Wed 7 Oct PM: Strait Is the Gate is in Next just before Fräulein Sch
   for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes(id), false, lane.id);
   assert.equal(RITUAL_SIT_MINUTES[id], undefined);
   assert.equal(RITUAL_PITCHES[id], undefined);
-  assert.deepEqual(SHELF.filter((item) => item.author.startsWith("André Gide")).map((item) => item.id).sort(), ["immoralist", "the-counterfeiters", "the-immoralist", id].sort());
+  assert.deepEqual(SHELF.filter((item) => item.author.startsWith("André Gide")).map((item) => item.id).sort(), ["the-counterfeiters", "the-immoralist", id].sort());
   assert.equal(SHELF.filter((item) => item.gutenberg === 79693).length, 1);
   assert.equal(SHELF.some((item) => /strait is the gate|porte [ée]troite/i.test(item.title) && item.id !== id), false);
   const work = SHELF.find((item) => item.id === id);

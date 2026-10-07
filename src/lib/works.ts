@@ -1,5 +1,6 @@
 import { isLocalBound } from "./catalog/full-pdf";
 import { readableIds } from "./catalog/shelf";
+import { canonicalWorkId } from "./work-id-alias";
 import { fetchShelfWork } from "./fetch-work";
 import type { Work } from "./literature";
 import { preferLoadedWork } from "./spine-nav";
@@ -26,11 +27,11 @@ const fullWait = new Map<string, Promise<Work | undefined>>();
 const localWait = new Map<string, Promise<Work | undefined>>();
 
 export function peekWork(id: string) {
-  return cache.get(id);
+  return cache.get(canonicalWorkId(id));
 }
 
 export function workIsComplete(id: string) {
-  return complete.get(id) === true;
+  return complete.get(canonicalWorkId(id)) === true;
 }
 
 export function catalogIds() {
@@ -139,6 +140,7 @@ async function loadWorkInner(
   id: string,
   onUpdate?: (work: Work) => void,
 ): Promise<Work | undefined> {
+  id = canonicalWorkId(id);
   if (!id || deviceImport(id)) return undefined;
   const cached = cache.get(id);
   if (cached) onUpdate?.(cached);
@@ -188,12 +190,14 @@ async function loadWorkInner(
 }
 
 export function prefetchWork(id: string) {
+  id = canonicalWorkId(id);
   if (!id || deviceImport(id)) return;
   void loadWork(id);
 }
 
 /** Opening only — enough for the first page, without parsing a full novel. */
 export function prefetchOpening(id: string) {
+  id = canonicalWorkId(id);
   if (!id || deviceImport(id)) return;
   if (cache.get(id)) return;
   if (isLocalBound(id)) {

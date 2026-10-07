@@ -1,5 +1,6 @@
 import { randomBytes } from "node:crypto";
 import { getSql } from "@/lib/db";
+import { canonicalWorkId } from "@/lib/work-id-alias";
 
 export type SentenceShare = {
   token: string;
@@ -30,7 +31,7 @@ function makeToken() {
 function toShare(row: SentenceShareRow): SentenceShare {
   return {
     token: row.token,
-    workId: row.work_id,
+    workId: canonicalWorkId(row.work_id),
     breathIndex: Number(row.breath_index),
     sentenceText: row.sentence_text,
     toPhone: row.to_phone,
@@ -64,13 +65,14 @@ export async function createSentenceShareHandler(input: {
   const toPhone = (input.toPhone ?? "").trim().slice(0, 40);
   const createdBy = input.createdBy?.trim() || null;
   const sentenceText = input.sentenceText.slice(0, 4000);
+  const workId = canonicalWorkId(input.workId);
 
   await sql`
     insert into sentence_shares (
       token, work_id, breath_index, sentence_text, to_phone, created_by
     ) values (
       ${token},
-      ${input.workId},
+      ${workId},
       ${input.breathIndex},
       ${sentenceText},
       ${toPhone},
@@ -80,7 +82,7 @@ export async function createSentenceShareHandler(input: {
 
   return {
     token,
-    workId: input.workId,
+    workId,
     breathIndex: input.breathIndex,
     sentenceText,
   };

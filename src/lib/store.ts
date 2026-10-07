@@ -34,6 +34,7 @@ import {
 } from "./active-read.ts";
 import { bumpDayCount, touchWorkOnDay } from "./reading-score.ts";
 import { isDeviceImport } from "./import/private.ts";
+import { canonicalWorkId, remapAliasedWorkIds } from "./work-id-alias.ts";
 
 export { dayKey };
 
@@ -599,19 +600,24 @@ export const useTbr = create<TbrState>()(
           return { clubInvites: { ...clubInvites, [clubId]: token } };
         }),
       toggleFavorite: (workId) => {
-        if (isDeviceImport(workId)) return;
+        const id = canonicalWorkId(workId);
+        if (isDeviceImport(id)) return;
         set((state) => {
-          const favorites = state.favorites ?? [];
+          const favorites = (state.favorites ?? []).map(canonicalWorkId);
           return {
-            favorites: favorites.includes(workId)
-              ? favorites.filter((id) => id !== workId)
-              : [...favorites, workId],
+            favorites: favorites.includes(id)
+              ? favorites.filter((item) => item !== id)
+              : [...favorites, id],
           };
         });
       },
       setFavorites: (favorites) =>
         set({
-          favorites: [...new Set(favorites.filter((id) => id && !isDeviceImport(id)))].slice(0, 200),
+          favorites: [
+            ...new Set(
+              favorites.map(canonicalWorkId).filter((id) => id && !isDeviceImport(id)),
+            ),
+          ].slice(0, 200),
         }),
       setLastShuffle: (lastShuffle) => set({ lastShuffle }),
       setTaste: (taste) => set({ taste: taste.slice(0, 400) }),
@@ -852,7 +858,9 @@ export const useTbr = create<TbrState>()(
       // v2: active-advance clock. v0/v1 ledgers were open→close wall time.
       version: 2,
       migrate: (persisted, version) =>
-        migrateReadingClock((persisted ?? {}) as ReadingClockState, version),
+        remapAliasedWorkIds(
+          migrateReadingClock((persisted ?? {}) as ReadingClockState, version),
+        ),
       storage: createJSONStorage(() => persistStorage),
       partialize: (state) => ({
         theme: state.theme,
