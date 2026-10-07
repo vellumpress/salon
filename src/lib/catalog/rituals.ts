@@ -1,6 +1,7 @@
 import { SHELF, type ShelfWork } from "./shelf.ts";
 import { isLocalBound } from "./full-pdf.ts";
 import { mixSeed, pinThenShuffle } from "../recommend.ts";
+import { canonicalWorkId } from "../work-id-alias.ts";
 import { SERIALIZE_LANE_ID } from "./serialize.ts";
 
 /** Ritual lanes — LE-polished local binds only (Gutenberg-only stay searchable elsewhere). */
@@ -228,7 +229,7 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "the-gadfly":
     `Pisa seminary heat — a lost sermon page, a caressing *Padre*, and a fruitseller calling *Fragola!* down the street. Later violence comes after this reading. This is Risorgimento Italy, not a comedy of manners.`,
   "the-immoralist":
-    `Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for. This reading opens on the frame letter and stops on the freedom line.`,
+    `Faithful friends summoned to a distant house — Michel can free himself; he cannot yet say what freedom is for. The first reading is Michel’s opening letter to his friends, ending “…more simply than if I were talking to myself. Listen:”`,
   "the-hidden-force":
     `The full moon wore the hue of tragedy that evening — a blood-red ball behind the tamarind-trees in the Lange Laan, then the Residency far back in its grounds. It opens at Chapter I. This reading stops at the town-clock. Teixeira’s English of the Java novel.`,
   hunger:
@@ -2883,7 +2884,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
 };
 
 export function ritualPitchFor(id: string): string | undefined {
-  return RITUAL_PITCHES[id];
+  return RITUAL_PITCHES[canonicalWorkId(id)];
 }
 
 export function worksForRitualLane(lane: RitualLane): ShelfWork[] {

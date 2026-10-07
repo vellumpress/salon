@@ -1,5 +1,6 @@
 import { getSql, type Sql } from "@/lib/db";
 import { shelfWork } from "@/lib/catalog/shelf";
+import { canonicalWorkId } from "@/lib/work-id-alias";
 import { asSittingMinutes } from "@/lib/sitting";
 
 type Role = "reader" | "staff";
@@ -99,7 +100,7 @@ export async function featuredRows(): Promise<FeaturedPin[]> {
     select work_id, sort, note from featured order by sort asc
   `;
   return rows.map((row) => ({
-    workId: row.work_id,
+    workId: canonicalWorkId(row.work_id),
     sort: row.sort,
     note: row.note,
   }));
@@ -170,13 +171,14 @@ export async function pushReadingHandler(
   const sql = await getSql();
   await ensureProfile(sql, userId);
   for (const entry of entries) {
-    if (!shelfWork(entry.workId)) continue;
+    const workId = canonicalWorkId(entry.workId);
+    if (!shelfWork(workId)) continue;
     const opened = new Date(entry.lastOpenedAt || Date.now()).toISOString();
     await sql`
       insert into reading (user_id, work_id, breath_index, kept, completed, last_opened_at)
       values (
         ${userId},
-        ${entry.workId},
+        ${workId},
         ${entry.breathIndex},
         ${entry.kept},
         ${entry.completed},
@@ -233,8 +235,9 @@ export async function setFeaturedHandler(userId: string, rawIds: string[]): Prom
   await requireStaff(sql, userId);
   const ids: string[] = [];
   for (const id of rawIds) {
-    if (!shelfWork(id) || ids.includes(id)) continue;
-    ids.push(id);
+    const workId = canonicalWorkId(id);
+    if (!shelfWork(workId) || ids.includes(workId)) continue;
+    ids.push(workId);
     if (ids.length >= 12) break;
   }
   await sql`delete from featured`;
@@ -303,7 +306,9 @@ export async function listFavoritesHandler(userId: string): Promise<string[]> {
     where user_id = ${userId}
     order by created_at desc
   `;
-  return rows.map((row) => row.work_id).filter((id) => Boolean(shelfWork(id)));
+  return [
+    ...new Set(rows.map((row) => canonicalWorkId(row.work_id)).filter((id) => Boolean(shelfWork(id)))),
+  ];
 }
 
 export async function pushFavoritesHandler(userId: string, workIds: string[]) {
@@ -311,8 +316,9 @@ export async function pushFavoritesHandler(userId: string, workIds: string[]) {
   await ensureProfile(sql, userId);
   const clean: string[] = [];
   for (const id of workIds) {
-    if (!shelfWork(id) || clean.includes(id)) continue;
-    clean.push(id);
+    const workId = canonicalWorkId(id);
+    if (!shelfWork(workId) || clean.includes(workId)) continue;
+    clean.push(workId);
     if (clean.length >= 200) break;
   }
   await sql`delete from favorites where user_id = ${userId}`;

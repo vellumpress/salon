@@ -1,4 +1,5 @@
 import { isBoundReadable } from "./en-rights.ts";
+import { canonicalWorkId } from "../work-id-alias.ts";
 
 export type ShelfForm = "novel" | "stories" | "play" | "poem" | "other";
 
@@ -140,7 +141,6 @@ export const SHELF: ShelfWork[] = [
   { id: "dracula", title: "Dracula", author: "Bram Stoker", year: 1897, form: "novel", language: "English", minutes: 800, local: true, gutenberg: 345, opening: "*3 May. Bistritz.*--Left Munich at 8:35 P. M., on 1st May, arriving at Vienna early next morning; should have arrived at 6:46, but train was an hour late.", breaths: 1940, intro: "3 May, Bistritz. Left Munich at 8:35 in the evening. Chapter I, Harker’s Journal — Bistritz and paprika hendl. It opens in Transylvania. Bram Stoker’s 1897 novel." },
   { id: "casmurro", title: "Dom Casmurro", author: "Machado de Assis", year: 1899, form: "novel", language: "Portuguese", minutes: 819, local: true, gutenberg: 55752, opening: "Do titulo.", breaths: 1631, intro: "The title comes first, and Dom Casmurro is already explaining the name. It opens at Chapter I." },
   { id: "hidden-force", title: "The Hidden Force", author: "Louis Couperus", year: 1900, form: "novel", language: "Dutch", minutes: 160, gutenberg: 34725 },
-  { id: "immoralist", title: "The Immoralist", author: "André Gide", year: 1902, form: "novel", language: "English", minutes: 160, gutenberg: 78975 },
   {
     id: "the-immoralist",
     title: "The Immoralist",
@@ -3165,7 +3165,7 @@ export const SHELF: ShelfWork[] = [
 const BY_ID = new Map(SHELF.map((item) => [item.id, item]));
 
 export function shelfWork(id: string) {
-  return BY_ID.get(id);
+  return BY_ID.get(canonicalWorkId(id));
 }
 
 export function readableIds() {

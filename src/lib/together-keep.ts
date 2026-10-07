@@ -1,4 +1,5 @@
 import { shelfWork } from "./catalog/shelf.ts";
+import { canonicalWorkId } from "./work-id-alias.ts";
 import { clipLine, decodeShare, encodeShare, makeShortId } from "./share-codec.ts";
 import { publicUrl } from "./site.ts";
 import { formatHandle, normalizeHandle, readerByHandle } from "./social.ts";
@@ -70,7 +71,7 @@ export function decodeEchoInvite(token: string): EchoInvite | null {
   const wire = decodeShare<EchoWire>(token);
   if (!wire || wire.v !== 1 || wire.k !== "echo") return null;
   const handle = normalizeHandle(wire.h ?? "");
-  const workId = (wire.w ?? "").trim();
+  const workId = canonicalWorkId((wire.w ?? "").trim());
   if (!handle || !workId) return null;
   const catalog = readerByHandle(handle);
   return {

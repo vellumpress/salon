@@ -3,6 +3,7 @@ import { RITUAL_LANES } from "./rituals.ts";
 import { SERIALIZE_LANE_ID } from "./serialize.ts";
 import { shelfWork, type ShelfForm, type ShelfWork } from "./shelf.ts";
 import { STORED_PREFACES } from "./prefaces-stored.ts";
+import { canonicalWorkId } from "../work-id-alias.ts";
 
 /**
  * Hand-tuned settle-in copy for first-open. Wins over the stored catalog
@@ -373,10 +374,11 @@ export function composePreface(work: ShelfWork): string {
 }
 
 export function prefaceFor(id: string): string | undefined {
-  const tuned = PREFACES[id];
+  const key = canonicalWorkId(id);
+  const tuned = PREFACES[key];
   if (tuned) return tuned;
-  const stored = STORED_PREFACES[id];
+  const stored = STORED_PREFACES[key];
   if (stored) return stored;
-  const shelf = shelfWork(id);
+  const shelf = shelfWork(key);
   return shelf ? composePreface(shelf) : undefined;
 }

@@ -1,4 +1,5 @@
 import { shelfWork } from "./catalog/shelf.ts";
+import { canonicalWorkId } from "./work-id-alias.ts";
 import { asSittingMinutes, sitLabel, type SittingMinutes } from "./sitting.ts";
 import { clipLine, decodeShare, encodeShare, makeShortId } from "./share-codec.ts";
 import { publicUrl } from "./site.ts";
@@ -94,7 +95,7 @@ export function decodeHostedSit(token: string): HostedSit | null {
   const wire = decodeShare<SitWire>(token);
   if (!wire || wire.v !== 1 || wire.k !== "sit") return null;
   const hostHandle = normalizeHandle(wire.h ?? "");
-  const workId = (wire.w ?? "").trim();
+  const workId = canonicalWorkId((wire.w ?? "").trim());
   const id = (wire.id ?? "").trim();
   if (!hostHandle || !workId || !id) return null;
   const work = shelfWork(workId);
@@ -135,7 +136,7 @@ export function createHostedSit(input: {
   createdAt?: number;
 }): HostedSit | null {
   const hostHandle = normalizeHandle(input.hostHandle);
-  const workId = input.workId.trim();
+  const workId = canonicalWorkId(input.workId.trim());
   if (!hostHandle || !workId) return null;
   const work = shelfWork(workId);
   const invitees = [...new Set((input.invitees ?? []).map(normalizeHandle).filter((h) => h.length >= 2 && h !== hostHandle))];

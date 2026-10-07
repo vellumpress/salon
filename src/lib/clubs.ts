@@ -5,6 +5,7 @@ import {
   serializePlan,
 } from "@/lib/catalog/serialize";
 import { shelfWork } from "@/lib/catalog/shelf";
+import { canonicalWorkId } from "@/lib/work-id-alias";
 import { fillOf, type Fill } from "@/lib/mondrian";
 import { isOffline } from "@/lib/net";
 import { getSupabase } from "@/lib/supabase";
@@ -186,7 +187,7 @@ function toClub(row: ClubRecord): BookClubView {
   return {
     id: row.id,
     name: row.name,
-    workId: row.work_id,
+    workId: canonicalWorkId(row.work_id),
     workTitle: meta.workTitle,
     author: meta.author,
     fill: asClubFill(row.fill),
@@ -267,10 +268,10 @@ export async function createClub(input: z.input<typeof createInput>): Promise<Bo
   const record: ClubRecord = {
     id,
     name: data.name,
-    work_id: data.workId,
+    work_id: canonicalWorkId(data.workId),
     owner_id: ownerId,
     invite_token: makeInviteToken(),
-    fill: fillOf(data.workId),
+    fill: fillOf(canonicalWorkId(data.workId)),
     note: data.note?.trim() ?? "",
     created_at: new Date().toISOString(),
     serialize_plan_id: serial.serializePlanId,
