@@ -9,195 +9,161 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "Part I",
-      "place": "Part I",
-      "reentry": "Chap. Page",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s1",
-      "title": "Part II",
-      "place": "Part II",
-      "reentry": "I. THE HOSPITAL 194 II. THE HOSPITAL (*continued*) 209 III. THE HOSPITAL (*continued*) 225 IV. THE HUSBAND OF AKOULKA 248 V. THE SUMMER SEASON 264 VI. THE ANIMALS AT THE CONVICT ESTABLISHMENT 286 VII. GRIEVANCES 302 VIII. MY COMPANIONS 325 ",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s2",
-      "title": "Chapter I",
-      "place": "Chapter I",
+      "title": "Part I · Chapter I",
+      "place": "Part I · Chapter I",
       "reentry": "Ten Years a Convict",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
-      "title": "Chapter II",
-      "place": "Chapter II",
+      "title": "Part I · Chapter II",
+      "place": "Part I · Chapter II",
       "reentry": "The Dead-House",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
-      "title": "Chapter III",
-      "place": "Chapter III",
+      "title": "Part I · Chapter III",
+      "place": "Part I · Chapter III",
       "reentry": "First Impressions",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s5",
-      "title": "Chapter IV",
-      "place": "Chapter IV",
+      "title": "Part I · Chapter IV",
+      "place": "Part I · Chapter IV",
       "reentry": "First Impressions (*continued*).",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s6",
-      "title": "Chapter V",
-      "place": "Chapter V",
+      "title": "Part I · Chapter V",
+      "place": "Part I · Chapter V",
       "reentry": "First Impressions (*continued*)",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s7",
-      "title": "Chapter VI",
-      "place": "Chapter VI",
+      "title": "Part I · Chapter VI",
+      "place": "Part I · Chapter VI",
       "reentry": "The First Month",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s8",
-      "title": "Chapter VII",
-      "place": "Chapter VII",
+      "title": "Part I · Chapter VII",
+      "place": "Part I · Chapter VII",
       "reentry": "The First Month (*continued*)",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s9",
-      "title": "Chapter VIII",
-      "place": "Chapter VIII",
+      "title": "Part I · Chapter VIII",
+      "place": "Part I · Chapter VIII",
       "reentry": "New Acquaintances--Petroff",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
-      "title": "Chapter IX",
-      "place": "Chapter IX",
+      "title": "Part I · Chapter IX",
+      "place": "Part I · Chapter IX",
       "reentry": "Men of Determination--Luka",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
-      "title": "Chapter X",
-      "place": "Chapter X",
+      "title": "Part I · Chapter X",
+      "place": "Part I · Chapter X",
       "reentry": "Isaiah Fomitch--The Bath--Baklouchin.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s12",
-      "title": "Chapter XI",
-      "place": "Chapter XI",
+      "title": "Part I · Chapter XI",
+      "place": "Part I · Chapter XI",
       "reentry": "The Christmas Holidays",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s13",
-      "title": "Chapter XII",
-      "place": "Chapter XII",
+      "title": "Part I · Chapter XII",
+      "place": "Part I · Chapter XII",
       "reentry": "The Performance.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s14",
-      "title": "Chapter I",
-      "place": "Chapter I",
+      "title": "Part II · Chapter I",
+      "place": "Part II · Chapter I",
       "reentry": "The Hospital",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s15",
-      "title": "Chapter II",
-      "place": "Chapter II",
+      "title": "Part II · Chapter II",
+      "place": "Part II · Chapter II",
       "reentry": "The Hospital (*continued*).",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s16",
-      "title": "Chapter III",
-      "place": "Chapter III",
+      "title": "Part II · Chapter III",
+      "place": "Part II · Chapter III",
       "reentry": "The Hospital (*continued*).",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s17",
-      "title": "Chapter IV",
-      "place": "Chapter IV",
+      "title": "Part II · Chapter IV",
+      "place": "Part II · Chapter IV",
       "reentry": "The Husband of Akoulka",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s18",
-      "title": "Chapter V",
-      "place": "Chapter V",
+      "title": "Part II · Chapter V",
+      "place": "Part II · Chapter V",
       "reentry": "The Summer Season",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s19",
-      "title": "Chapter VI",
-      "place": "Chapter VI",
+      "title": "Part II · Chapter VI",
+      "place": "Part II · Chapter VI",
       "reentry": "The Animals at the Convict Establishment",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s20",
-      "title": "Chapter VII",
-      "place": "Chapter VII",
+      "title": "Part II · Chapter VII",
+      "place": "Part II · Chapter VII",
       "reentry": "Grievances",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s21",
-      "title": "Chapter VIII",
-      "place": "Chapter VIII",
+      "title": "Part II · Chapter VIII",
+      "place": "Part II · Chapter VIII",
       "reentry": "My Companions",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s22",
-      "title": "Chapter IX",
-      "place": "Chapter IX",
+      "title": "Part II · Chapter IX",
+      "place": "Part II · Chapter IX",
       "reentry": "The Escape",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s23",
-      "title": "Chapter X",
-      "place": "Chapter X",
+      "title": "Part II · Chapter X",
+      "place": "Part II · Chapter X",
       "reentry": "Freedom!",
       "prompt": "A word from this stretch."
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "Chap. Page"
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "I. TEN YEARS A CONVICT 1 II. THE DEAD-HOUSE 7 III. FIRST IMPRESSIONS 24 IV. FIRST IMPRESSIONS (*continued*) 43 V. FIRST IMPRESSIONS (*continued*) 61 VI. THE FIRST MONTH 80 VII. THE FIRST MONTH (*continued*) 95 VIII. NEW ACQUAINTANCES--PETROFF 110 IX. MEN OF DETERMINATION--LUKA 125 X. ISAIAH FOMITCH--THE BATH--BAKLOUCHIN 133 XI. THE CHRISTMAS HOLIDAYS 152 XII. THE PERFORMANCE 171"
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "I. THE HOSPITAL 194 II. THE HOSPITAL (*continued*) 209 III. THE HOSPITAL (*continued*) 225 IV. THE HUSBAND OF AKOULKA 248 V. THE SUMMER SEASON 264 VI. THE ANIMALS AT THE CONVICT ESTABLISHMENT 286 VII. GRIEVANCES 302 VIII. MY COMPANIONS 325 IX. THE ESCAPE 344 X. FREEDOM! 363"
-    },
-    {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "Prison Life in Siberia."
-    },
     {
       "id": "s2-0",
       "sceneId": "s2",
