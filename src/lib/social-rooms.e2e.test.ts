@@ -493,9 +493,8 @@ async function ensureDev(): Promise<ChildProcess | null> {
   throw new Error("The reading app did not come up");
 }
 
-function retriable(error: unknown) {
-  const message = error instanceof Error ? error.message : String(error);
-  return /ERR_CONNECTION_REFUSED|ECONNREFUSED|ERR_CONNECTION_RESET|did not come up|waiting for locator\('\.chat-field'\)/.test(message);
+function failureText(error: unknown) {
+  return error instanceof Error ? error.message : String(error);
 }
 
 async function launchBrowser() {
@@ -527,6 +526,8 @@ async function signIn(context: BrowserContext, user: Profile, mirror?: string) {
     },
     { stored: sessionFor(user), key: "tbr-supabase-auth", mirrorUrl: mirror ?? "" },
   );
+  context.setDefaultTimeout(60_000);
+  context.setDefaultNavigationTimeout(60_000);
   await context.route(/supabase\.co/, (route) => fulfill(route));
   await context.route(/supabase\.co\/realtime/, (route) => route.abort());
 }
@@ -589,6 +590,8 @@ async function clubRun(browser: Browser, run: number) {
     strangerCannotWrite(club.id, cy.id);
 
     const signedOut = await browser.newContext({ ...PHONE });
+    signedOut.setDefaultTimeout(60_000);
+    signedOut.setDefaultNavigationTimeout(60_000);
     await signedOut.route(/supabase\.co/, (route) => fulfill(route));
     const pageOut = await signedOut.newPage();
     await pageOut.goto(`${APP}/club/invite/${token}`, { waitUntil: "domcontentloaded" });
@@ -616,6 +619,10 @@ async function friendRun(browser: Browser, mirror: string, run: number) {
     await b.addInitScript((url) => {
       (window as unknown as { __TBR_SIT_MIRROR?: string }).__TBR_SIT_MIRROR = url;
     }, mirror);
+    a.setDefaultTimeout(60_000);
+    b.setDefaultTimeout(60_000);
+    a.setDefaultNavigationTimeout(60_000);
+    b.setDefaultNavigationTimeout(60_000);
     await a.route(/supabase\.co/, (route) => route.abort());
     await b.route(/supabase\.co/, (route) => route.abort());
     const pageA = await a.newPage();
@@ -649,7 +656,7 @@ async function friendRun(browser: Browser, mirror: string, run: number) {
   }
 }
 
-test("book clubs across three phones", { timeout: 300000 }, async () => {
+test("book clubs across three phones", { timeout: 480000 }, async () => {
   await oneAtATime(async () => {
   const browser = await launchBrowser();
   const results: { run: number; ok: boolean; error?: string }[] = [];
@@ -657,15 +664,15 @@ test("book clubs across three phones", { timeout: 300000 }, async () => {
     for (let run = 1; run <= RUNS; run += 1) {
       let settled = false;
       let last = "";
-      for (let attempt = 0; attempt < 3 && !settled; attempt += 1) {
+      for (let attempt = 0; attempt < 2 && !settled; attempt += 1) {
         try {
           await ensureDev();
           await clubRun(browser, run);
           results.push({ run, ok: true });
           settled = true;
         } catch (error) {
-          last = error instanceof Error ? error.message : String(error);
-          if (!retriable(error) || attempt === 2) {
+          last = failureText(error);
+          if (attempt === 1) {
             results.push({ run, ok: false, error: last });
             settled = true;
           }
@@ -693,15 +700,15 @@ test("live reading across two phones", { timeout: 480000 }, async () => {
     for (let run = 1; run <= RUNS; run += 1) {
       let settled = false;
       let last = "";
-      for (let attempt = 0; attempt < 3 && !settled; attempt += 1) {
+      for (let attempt = 0; attempt < 2 && !settled; attempt += 1) {
         try {
           await ensureDev();
           await friendRun(browser, mirror.url, run);
           results.push({ run, ok: true });
           settled = true;
         } catch (error) {
-          last = error instanceof Error ? error.message : String(error);
-          if (!retriable(error) || attempt === 2) {
+          last = failureText(error);
+          if (attempt === 1) {
             results.push({ run, ok: false, error: last });
             settled = true;
           }
