@@ -672,19 +672,19 @@ html[data-status-motion="1"] .status-bar-fill::before {
 .score-glass-svg {
   display: block;
   width: auto;
-  height: 9.75rem;
+  height: 10rem;
   max-width: 100%;
-  aspect-ratio: 120 / 220;
+  aspect-ratio: 200 / 206;
 }
 
 .score-glass-label {
   display: flex;
   width: 100%;
-  min-height: 2.55rem;
+  height: 2.7rem;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
   padding-inline: 0.25rem;
   text-align: center;
 }

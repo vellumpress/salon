@@ -4,7 +4,8 @@ import test from "node:test";
 import { CONTRIBUTOR_IDS, CONTRIBUTOR_WEIGHTS, type ContributorResult } from "./reading-score.ts";
 import {
   GLASS,
-  GLASS_OUTLINE,
+  GLASS_LOWER_CLIP,
+  GLASS_UPPER_CLIP,
   SCORE_SAND_COLOR,
   SCORE_TRACK,
   SETTLE_MS,
@@ -33,19 +34,22 @@ const scoredParts: ContributorResult[] = [
   part("connection", "scored", 75),
 ];
 
-test("the score glass reuses the reader hourglass bowtie", () => {
+test("the score glass is the reader bowtie, opened to the ring's square", () => {
   const reader = readFileSync(new URL("../components/hourglass.tsx", import.meta.url), "utf8");
-  assert.match(reader, new RegExp(GLASS_OUTLINE.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
-  assert.equal(GLASS.outline, GLASS_OUTLINE);
-  assert.equal(GLASS.upper.top, 22);
-  assert.equal(GLASS.lower.bottom, 198);
+  assert.match(reader, /16,12 104,12 60,110 104,208 16,208 60,110/);
+  const pts = GLASS.outline.split(" ");
+  assert.equal(pts.length, 6);
+  assert.equal(pts[2], pts[5]);
+  assert.equal(GLASS.upper.apexY - GLASS.upper.top, GLASS.lower.bottom - GLASS.lower.apexY);
+  assert.match(GLASS_UPPER_CLIP, /26,22 174,22 100,98/);
+  assert.match(GLASS_LOWER_CLIP, /100,112/);
 });
 
 test("sand level tracks the score: 0 on top, 100 on the bottom, 50 split by height", () => {
   const bands = sandBands(scoredParts);
   assert.equal(bands.some((band) => band.id === "rhythm"), false);
   const full = sandHeight(sandLayers(0, bands).upper);
-  assert.ok(full > 80, `expected a full upper bulb, got ${full}`);
+  assert.ok(full > 70, `expected a full upper bulb, got ${full}`);
 
   const empty = sandLayers(0, bands);
   assert.equal(sandHeight(empty.lower), 0);
@@ -231,7 +235,7 @@ test("You renders the hourglass in the ring's box and does not draw the ring", (
   assert.match(glass, /type-title/);
   assert.match(glass, /prefers-reduced-motion/);
   assert.match(glass, /SETTLE_MS/);
-  assert.match(css, /\.score-glass-svg\s*\{[^}]*height:\s*9\.75rem/);
+  assert.match(css, /\.score-glass-svg\s*\{[^}]*height:\s*10rem/);
   assert.match(css, /\.score-glass-label\s*\{/);
   for (const id of CONTRIBUTOR_IDS) {
     assert.match(glass, /sandBands|sandLayers/);
@@ -240,6 +244,8 @@ test("You renders the hourglass in the ring's box and does not draw the ring", (
 });
 
 test("polygon area of a triangle matches base times height over two", () => {
-  const area = polygonArea("22,22 98,22 60,108");
-  assert.ok(Math.abs(area - (76 * 86) / 2) < 1, `area ${area}`);
+  const area = polygonArea(GLASS_UPPER_CLIP);
+  const base = GLASS.upper.right - GLASS.upper.left;
+  const height = GLASS.upper.apexY - GLASS.upper.top;
+  assert.ok(Math.abs(area - (base * height) / 2) < 1, `area ${area}`);
 });

@@ -1,28 +1,32 @@
 /**
- * Score hourglass geometry. The bowtie, caps, and sand triangles match the
- * reader hourglass in `components/hourglass.tsx` so the mark on You uses the
- * same glass. Fill height follows the score, the same way the reader glass
- * fills: 0 keeps the top bulb full, 100 leaves the sand in the bottom.
+ * Score hourglass geometry. Same drawing as the reader hourglass in
+ * `components/hourglass.tsx` — flat caps, straight bulbs, one neck — opened
+ * wider so it holds the ring's square. Fill height follows the score the way
+ * the reader glass fills: 0 keeps the top bulb full, 100 leaves the sand
+ * in the bottom.
  */
 
 import { CONTRIBUTOR_WEIGHTS, type ContributorId, type ContributorResult, type DayKind } from "./reading-score.ts";
 
-/** Same bowtie the reader hourglass strokes. */
-export const GLASS_OUTLINE = "16,12 104,12 60,110 104,208 16,208 60,110";
-
+/**
+ * Reader bowtie, widened for the ring's square. Same parts: flat caps,
+ * two straight bulbs, a single neck. The timer icon stays narrow
+ * (`16,12 104,12 60,110 …`); this one is the same drawing opened up so
+ * it holds the 13rem box.
+ */
 export const GLASS = {
-  viewW: 120,
-  viewH: 220,
-  outline: GLASS_OUTLINE,
-  stroke: 2.25,
-  cap: { x: 10, width: 100, height: 6, top: 8, bottom: 206 },
-  /** Inner sand field. Inset from the stroke, same triangles as the reader. */
-  upper: { left: 22, right: 98, top: 22, apexX: 60, apexY: 108 },
-  lower: { left: 22, right: 98, bottom: 198, apexX: 60, apexY: 112 },
+  viewW: 200,
+  viewH: 206,
+  outline: "18,14 182,14 100,105 182,196 18,196 100,105",
+  stroke: 2.5,
+  cap: { x: 12, width: 176, height: 6, top: 6, bottom: 198 },
+  /** Sand field, just inside the stroke. Both bulbs are the same height. */
+  upper: { left: 26, right: 174, top: 22, apexX: 100, apexY: 98 },
+  lower: { left: 26, right: 174, bottom: 188, apexX: 100, apexY: 112 },
 } as const;
 
-export const GLASS_UPPER_CLIP = "22,22 98,22 60,108";
-export const GLASS_LOWER_CLIP = "22,198 98,198 60,112";
+export const GLASS_UPPER_CLIP = `${GLASS.upper.left},${GLASS.upper.top} ${GLASS.upper.right},${GLASS.upper.top} ${GLASS.upper.apexX},${GLASS.upper.apexY}`;
+export const GLASS_LOWER_CLIP = `${GLASS.lower.apexX},${GLASS.lower.apexY} ${GLASS.lower.right},${GLASS.lower.bottom} ${GLASS.lower.left},${GLASS.lower.bottom}`;
 
 /** Empty glass. Same neutral the score ring used for its track. */
 export const SCORE_TRACK = "var(--color-paper-deep)";
