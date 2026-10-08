@@ -12,7 +12,7 @@ import { NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { RITUAL_LANES, RITUAL_SIT_MINUTES, worksForRitualLane } from "./rituals.ts";
 import { FULL_TEXT_WORKS, LOCAL_WORKS, withFullPdf, withLocalBound } from "./full-pdf.ts";
 
-/** OPEN-FIX-2 language sweep: shelf texts that are 98–100% non-English, plus Doña Perfecta. */
+/** OPEN-FIX-2 language sweep: shelf texts that are 98–100% non-English. Doña Perfecta left in DONA-PERFECTA (English re-bind). */
 const LANGUAGE_SWEEP_OFF_IDS = [
   "bruges-la-morte",
   "calligrammes",
@@ -55,7 +55,6 @@ const LANGUAGE_SWEEP_OFF_IDS = [
   "libro-de-poemas",
   "misericordia",
   "martin-fierro",
-  "dona-perfecta",
 ];
 
 test("hold/pull ids are marked off English readable", () => {
@@ -116,7 +115,6 @@ test("hold/pull ids are marked off English readable", () => {
     "libro-de-poemas",
     "misericordia",
     "martin-fierro",
-    "dona-perfecta",
   ]) {
     assert.equal(isEnReadableOff(id), true, id);
     assert.equal(EN_OFF_READABLE_IDS.has(id), true, id);
@@ -301,7 +299,7 @@ test("Mira PM4 Next sits are readable local EN binds", () => {
 });
 
 test("OPEN-FIX-2 language sweep: non-English binds leave every reader surface, rows and texts stay", () => {
-  assert.equal(LANGUAGE_SWEEP_OFF_IDS.length, 42);
+  assert.equal(LANGUAGE_SWEEP_OFF_IDS.length, 41);
   const next = new Set<string>(NEXT_FEATURED_TRACK_IDS as readonly string[]);
   const local = new Set(LOCAL_WORKS.map((work) => work.id));
   const full = new Set(FULL_TEXT_WORKS.map((work) => work.id));
@@ -325,4 +323,17 @@ test("OPEN-FIX-2 language sweep: non-English binds leave every reader surface, r
   }
   // Pan Tadeusz is re-bound in English in its own pack.
   assert.equal(isEnReadableOff("pan-tadeusz"), false);
+});
+
+test("DONA-PERFECTA: the English re-bind (PG 2462, Serrano) is readable again, still off Next and before-sleep", () => {
+  const work = SHELF.find((item) => item.id === "dona-perfecta");
+  assert.ok(work);
+  assert.equal(isEnReadableOff("dona-perfecta"), false);
+  assert.equal(work!.language, "English");
+  assert.equal(work!.gutenberg, 2462);
+  assert.equal(isBoundLocal(work!), true);
+  assert.equal(LOCAL_WORKS.some((item) => item.id === "dona-perfecta"), true);
+  assert.equal(withLocalBound(searchShelf("Doña Perfecta")).some((item) => item.id === "dona-perfecta"), true);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("dona-perfecta"), false);
+  for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes("dona-perfecta"), false, lane.id);
 });

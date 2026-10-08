@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import { SHELF } from "./shelf.ts";
 import { LOCAL_WORKS } from "./full-pdf.ts";
 import { countryFor, isCityHubLabel } from "./countries.ts";
-import { chipOnlyLabel, NO_PRINTED_PLACE } from "./places.ts";
+import { chipOnlyLabel, NO_PRINTED_PLACE, placeForId } from "./places.ts";
 import { blurbFor, sentenceCount } from "./blurbs.ts";
 import { isBoundLocal } from "./en-rights.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
@@ -36,6 +36,8 @@ const OPEN_FIX_2_REAL_MINUTES_IDS = [
   "last-poems-housman",
   "poems-by-emily-dickinson-series-one",
   "copper-sun",
+  // DONA-PERFECTA English re-bind
+  "dona-perfecta",
 ] as const;
 const REAL_MINUTES_IDS: readonly string[] = [...POETRY_REBIND_IDS, ...MIXED_REBIND_IDS, ...OPEN_FIX_2_REAL_MINUTES_IDS];
 import type { Work } from "../literature.ts";
@@ -2128,7 +2130,7 @@ const TIER_B_BATCH_11_12 = [
   "without-dogma",
   "a-family-of-noblemen",
   "anna",
-  // dona-perfecta left: OPEN-FIX-2 language sweep (Spanish original, EN_OFF_READABLE_IDS).
+  "dona-perfecta", // DONA-PERFECTA: back as Serrano's English (PG 2462)
   "karamazov",
   "l-assommoir",
   "malavoglia",
@@ -2142,7 +2144,7 @@ const TIER_B_BATCH_11_12 = [
 ] as const;
 
 test("Tier B batches 11–12 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_11_12.length, 29);
+  assert.equal(TIER_B_BATCH_11_12.length, 30);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",
@@ -2761,15 +2763,38 @@ test("OPEN-FIX-2: Copper Sun's The Touch ends on Under the Mistletoe, the librar
   const full = textWork("copper-sun") as Work;
   const touch = full.breaths.filter((breath) => breath.sceneId === "s24");
   assert.equal(full.scenes.at(-1)?.title, "The Touch");
-  assert.equal(touch.length, 40);
+  // DONA-PERFECTA pack: the printed page numbers 87, 88, 89 are cut too.
+  assert.equal(touch.length, 37);
   assert.equal(touch[0]!.text, "AM no longer lame since Spring");
-  assert.equal(touch.at(-2)!.text, "Or else I’d never dared.");
-  assert.equal(touch.at(-1)!.id, "s24-39");
+  assert.equal(touch.at(-1)!.text, "Or else I’d never dared.");
+  assert.equal(touch.at(-1)!.id, "s24-38");
   const all = full.breaths.map((breath) => breath.text).join("\n");
   assert.doesNotMatch(all, /RULES FOR BORROWERS|Oregon State Library|Pressure Sensitive|MAIL\s+ORDER/);
   const map = remap["copper-sun"]!;
-  assert.equal(Object.keys(map).length, 70);
-  for (let i = 40; i <= 109; i++) assert.equal(map[`s24-${i}`], "s24-38", `s24-${i}`);
+  assert.equal(Object.keys(map).length, 109);
+  for (let i = 39; i <= 109; i++) assert.equal(map[`s24-${i}`], "s24-38", `s24-${i}`);
+});
+
+test("DONA-PERFECTA: Copper Sun has no printed page-number breaths; the section numerals stay", () => {
+  const remap = JSON.parse(readFileSync(new URL("./at-remap.json", import.meta.url), "utf8")) as Record<string, Record<string, string>>;
+  const full = textWork("copper-sun") as Work;
+  const ids = new Set(full.breaths.map((breath) => breath.id));
+  const bare = full.breaths.filter((breath) => /^\W*\d+\W*$/.test(breath.text.trim()));
+  // Only the "2" that follows "I" in Black and in Variations on a Theme remains.
+  assert.deepEqual(bare.map((breath) => `${breath.id}:${breath.text}`), ["s0-15:2", "s4-40:2"]);
+  assert.equal(full.breaths[full.breaths.findIndex((breath) => breath.id === "s0-15") - 4]!.text, "I");
+  assert.equal(full.breaths[full.breaths.findIndex((breath) => breath.id === "s4-40") - 17]!.text, "I");
+  const map = remap["copper-sun"]!;
+  // Page numbers map to the breath before them.
+  assert.equal(map["s1-20"], "s1-19");
+  assert.equal(map["s11-21"], "s11-20");
+  assert.equal(map["s20-20"], "s20-19");
+  for (const [from, to] of Object.entries(map)) {
+    assert.equal(ids.has(from), false, from);
+    assert.equal(ids.has(to), true, `${from} → ${to}`);
+  }
+  const work = SHELF.find((item) => item.id === "copper-sun")!;
+  assert.equal(work.breaths, 937);
 });
 
 test("OPEN-FIX-2: Karamazov opens on the novel, its notes after the citing paragraph", () => {
@@ -2906,4 +2931,40 @@ test("CARD-PASS: The House of the Dead remap lands on the new first breath, no c
     }
   }
   assert.ok(ids.has("s2-1") && !ids.has("s2-0"));
+});
+
+test("DONA-PERFECTA: Serrano's English from PG 2462 replaces the Spanish student edition", () => {
+  const remap = JSON.parse(readFileSync(new URL("./at-remap.json", import.meta.url), "utf8")) as Record<string, Record<string, string>>;
+  const full = textWork("dona-perfecta") as Work;
+  const work = SHELF.find((item) => item.id === "dona-perfecta")!;
+  assert.equal(work.author, "Benito Pérez Galdós (tr. Mary J. Serrano)");
+  assert.equal(full.author, work.author);
+  assert.equal(work.year, 1876);
+  assert.equal(work.language, "English");
+  assert.equal(work.gutenberg, 2462);
+  assert.equal(full.note, "Project Gutenberg 2462");
+  assert.equal(full.scenes.length, 32);
+  assert.equal(full.breaths.length, 1746);
+  assert.equal(work.breaths, full.breaths.length);
+  const words = full.breaths.flatMap((breath) => breath.text.split(/\s+/)).filter((word) => word && word !== "/").length;
+  assert.equal(work.minutes, Math.round(words / 200));
+  assert.equal(full.minutes, work.minutes);
+  for (const scene of full.scenes) assert.match(scene.title, /^Chapter [IVXL]+ · \S/, scene.id);
+  assert.equal(full.scenes[0]!.title, "Chapter I · Villahorrenda! Five Minutes!");
+  assert.equal(full.scenes.at(-1)!.title, "Chapter XXXII · Conclusion");
+  // Howells's introduction (on Clarín) and the title lines are cut; the book starts on Chapter I.
+  const all = full.breaths.map((breath) => breath.text).join("\n");
+  assert.doesNotMatch(all, /Clar[ií]n|Howells|HOWELLS|Translated from the Spanish|PEREZ GALDOS/);
+  assert.equal(openingBreathIndex(full), 0);
+  assert.ok(full.breaths[0]!.text.startsWith(work.opening!));
+  assert.match(work.opening!, /^When the down train No\. 65--of what line it is unnecessary to say--stopped .* unsheltered platform\.$/);
+  // The one printed footnote follows its paragraph, marker stripped.
+  assert.doesNotMatch(all, /\[\*\]|\[\d+\]/);
+  const note = full.breaths.findIndex((breath) => breath.text === "Note: Rich in garlic.");
+  assert.ok(note > 0);
+  assert.ok(full.breaths[note - 1]!.text.includes("the termination *ajosa* are of the opinion"));
+  assert.equal(full.breaths.at(-1)!.text, "Our story is ended. This is all we have to say for the present concerning persons who seem, but are not good.");
+  assert.deepEqual(placeForId("dona-perfecta"), { label: "Spain", region: "es" });
+  assert.equal(countryFor(work), "Spain");
+  assert.equal(remap["dona-perfecta"], undefined, "Spanish breath ids are not mapped onto the English text");
 });
