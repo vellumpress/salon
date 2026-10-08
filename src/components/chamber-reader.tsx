@@ -18,7 +18,7 @@ import { useTbr } from "@/lib/store";
 import { fillClass, planeOf, type Fill } from "@/lib/mondrian";
 import { readerIntro } from "@/lib/reader-intro";
 import { isSectionBreak, splitEmphasis } from "@/lib/emphasized-text";
-import { shouldShowPreface } from "@/lib/reader-threshold";
+import { openSitInProgress, shouldShowPreface } from "@/lib/reader-threshold";
 import { FavoriteMark } from "@/components/favorite-mark";
 import { PlaceChip } from "@/components/place-chip";
 import { Hourglass } from "@/components/hourglass";
@@ -259,10 +259,6 @@ export function TbrReader({
 
   useLayoutEffect(() => {
     let cancel = false;
-    ensure(work.id);
-    if (sit !== undefined) {
-      useTbr.getState().setSittingMinutes(sit);
-    }
     const grew = work.breaths.length > seenBreaths.current;
     seenBreaths.current = work.breaths.length;
     const deepLink =
@@ -301,6 +297,23 @@ export function TbrReader({
     }
 
     void (async () => {
+      if (!useTbr.persist.hasHydrated()) {
+        await new Promise<void>((resolve) => {
+          const unsub = useTbr.persist.onFinishHydration(() => {
+            unsub();
+            resolve();
+          });
+          if (useTbr.persist.hasHydrated()) {
+            unsub();
+            resolve();
+          }
+        });
+      }
+      if (cancel) return;
+      ensure(work.id);
+      if (sit !== undefined) {
+        useTbr.getState().setSittingMinutes(sit);
+      }
       // The opening sit is already on the prose. When the full novel arrives,
       // breath 0 can be a publication note or dedication. Nudge a fresh start
       // past that leading front matter only — do not re-apply chapter jumps,
@@ -344,6 +357,13 @@ export function TbrReader({
         awaitingAt.current = null;
         startSitting(work.id);
         setBreath(work.id, deepLink, stampAt(work, deepLink));
+        setShowPreface(false);
+        setOverlay("none");
+        return;
+      }
+      // A reload mid-sit (service worker, or a new build) keeps this breath.
+      // The clock stays. A book with no open sit still asks how long.
+      if (openSitInProgress(prior)) {
         setShowPreface(false);
         setOverlay("none");
         return;

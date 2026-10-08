@@ -52,7 +52,7 @@ class FakeCaches {
   }
 }
 
-function loadWorker({ onLine = false, fetchImpl } = {}) {
+function loadWorker({ onLine = false, fetchImpl, clients = [] } = {}) {
   const caches = new FakeCaches();
   const listeners = {};
   const sandbox = {
@@ -86,7 +86,7 @@ function loadWorker({ onLine = false, fetchImpl } = {}) {
     skipWaiting() { return Promise.resolve(); },
     clients: {
       claim() { return Promise.resolve(); },
-      matchAll() { return Promise.resolve([]); },
+      matchAll() { return Promise.resolve(clients); },
     },
     registration: { navigationPreload: { enable() { return Promise.resolve(); } } },
     navigator: { onLine },
@@ -328,6 +328,91 @@ test("a cached app shell is not served for a manifest navigation", async () => {
   };
   listeners.fetch(event);
   assert.equal(event.result, undefined);
+});
+
+function shellFetch(html) {
+  return (input) => {
+    const url = String(input && input.url ? input.url : input);
+    let path = "";
+    try { path = new URL(url).pathname; } catch { path = ""; }
+    if (path === "/salon" || path === "/salon/" || path === "/salon/index.html") {
+      return Promise.resolve(
+        new Response(html, { status: 200, headers: { "content-type": "text/html; charset=utf-8" } }),
+      );
+    }
+    if (url.includes("/salon/assets/")) {
+      const type = url.endsWith(".css") ? "text/css" : "text/javascript";
+      return Promise.resolve(new Response("/* asset */", { status: 200, headers: { "content-type": type } }));
+    }
+    return Promise.resolve(new Response("", { status: 200, headers: { "content-type": "text/plain" } }));
+  };
+}
+
+function openReader() {
+  const navigated = [];
+  const client = {
+    id: "mid-sit",
+    url: `${ORIGIN}/salon/read/the-house-of-mirth?sit=5`,
+    navigate(href) {
+      navigated.push(href);
+      return Promise.resolve();
+    },
+  };
+  return { client, navigated };
+}
+
+async function runActivate(worker) {
+  let pending = Promise.resolve();
+  worker.listeners.activate({
+    waitUntil(task) {
+      pending = Promise.resolve(task);
+    },
+  });
+  await pending;
+}
+
+test("a first install does not reload a reader who is already mid-sit", async () => {
+  const { client, navigated } = openReader();
+  const html = shellHtml("/salon/assets/index-roOwEHpA.js");
+  const worker = loadWorker({
+    onLine: true,
+    fetchImpl: shellFetch(html),
+    clients: [client],
+  });
+  await runActivate(worker);
+  assert.deepEqual(navigated, []);
+  const cache = await worker.caches.open("tbr-shell-v3");
+  const stored = await cache.match(SHELL_URL);
+  assert.ok(stored);
+  assert.match(await stored.text(), /index-roOwEHpA\.js/);
+});
+
+test("a shell commit of the same build does not reload an open reader", async () => {
+  const { client, navigated } = openReader();
+  const html = shellHtml("/salon/assets/index-roOwEHpA.js");
+  const worker = loadWorker({
+    onLine: true,
+    fetchImpl: shellFetch(html),
+    clients: [client],
+  });
+  await putShell(worker.caches, "tbr-shell-v3", html);
+  await runActivate(worker);
+  assert.deepEqual(navigated, []);
+});
+
+test("a new build reloads an open reader through __fresh and keeps the sit query", async () => {
+  const { client, navigated } = openReader();
+  const worker = loadWorker({
+    onLine: true,
+    fetchImpl: shellFetch(shellHtml("/salon/assets/index-newBuild.js")),
+    clients: [client],
+  });
+  await putShell(worker.caches, "tbr-shell-v3", shellHtml("/salon/assets/index-roOwEHpA.js"));
+  await runActivate(worker);
+  assert.equal(navigated.length, 1);
+  assert.match(navigated[0], /\/salon\/read\/the-house-of-mirth/);
+  assert.match(navigated[0], /sit=5/);
+  assert.match(navigated[0], /__fresh=/);
 });
 
 test("a shell refresh keeps the Pages shim query", () => {
