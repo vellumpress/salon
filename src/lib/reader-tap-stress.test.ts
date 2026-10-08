@@ -236,18 +236,31 @@ async function openAt(page: Page, id: string, at: number) {
   await page
     .evaluate(() => sessionStorage.removeItem("keep-progress"))
     .catch(() => undefined);
-  await page.goto(`${ORIGIN}/salon/read/${id}?at=${at}`, { waitUntil: "domcontentloaded" });
-  await page.locator(".breath-now").waitFor({ timeout: 30_000 });
-  await page.waitForFunction(
-    (want) => {
-      const frame = document.querySelector(".reader-frame");
-      const full = frame?.getAttribute("data-bound") === "full";
-      const index = frame?.getAttribute("data-breath-index");
-      return full && index === String(want) && !document.querySelector(".veil");
-    },
-    at,
-    { timeout: 30_000 },
-  );
+  let last: unknown;
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      await page.goto(`${ORIGIN}/salon/read/${id}?at=${at}`, {
+        waitUntil: "domcontentloaded",
+        timeout: 30_000,
+      });
+      await page.locator(".breath-now").waitFor({ timeout: 30_000 });
+      await page.waitForFunction(
+        (want) => {
+          const frame = document.querySelector(".reader-frame");
+          const full = frame?.getAttribute("data-bound") === "full";
+          const index = frame?.getAttribute("data-breath-index");
+          return full && index === String(want) && !document.querySelector(".veil");
+        },
+        at,
+        { timeout: 30_000 },
+      );
+      return;
+    } catch (error) {
+      last = error;
+    }
+  }
+  const message = last instanceof Error ? last.message.split("\n")[0] : String(last);
+  throw new Error(`${id} at ${at} did not open (${message})`);
 }
 
 async function passGate(page: Page) {
