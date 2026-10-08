@@ -9,18 +9,12 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "In a Glass Darkly",
-      "place": "In a Glass Darkly",
-      "reentry": "BY",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s1",
-      "title": "R. Bentley & Son, New Burlington Street",
-      "place": "R. Bentley & Son, New Burlington Street",
-      "reentry": "1872.",
-      "prompt": "A word from this stretch."
+      "title": "Dedication",
+      "place": "Dedication",
+      "reentry": "TO",
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s2",
@@ -277,26 +271,6 @@
   ],
   "breaths": [
     {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "BY"
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "J. Sheridan Le Fanu,"
-    },
-    {
-      "id": "s0-2",
-      "sceneId": "s0",
-      "text": "Author of “Uncle Silas,” &C."
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "1872."
-    },
-    {
       "id": "s1-1",
       "sceneId": "s1",
       "text": "TO"
@@ -325,11 +299,6 @@
       "id": "s1-6",
       "sceneId": "s1",
       "text": "The Author."
-    },
-    {
-      "id": "s1-7",
-      "sceneId": "s1",
-      "text": "In a Glass Darkly."
     },
     {
       "id": "s2-0",

@@ -9,24 +9,10 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "Letras itálicas son denotadas con líneas",
-      "place": "Letras itálicas son denotadas con líneas",
-      "reentry": "Las versalitas (letras mayúsculas de tamaño igual a las minúsculas) han sido sustituidas por letras mayúsculas de tamaño normal.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s1",
-      "title": "De",
-      "place": "De",
-      "reentry": "Enrique Ochoa",
-      "prompt": "What does the poem hold?"
-    },
-    {
       "id": "s2",
       "title": "Palabras Liminares",
       "place": "Palabras Liminares",
-      "reentry": "*DESPUÉS de* Azul.. *después de* Los Raros, _voces insinuantes, buena y mala intención, entusiasmo sonoro y envidia subterránea--todo bella cosecha--, solicitaron lo que, en conciencia, no he creído fructuoso ni",
+      "reentry": "Palabras Liminares",
       "prompt": "What does the poem hold?"
     },
     {
@@ -1005,73 +991,13 @@
   ],
   "breaths": [
     {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "Las versalitas (letras mayúsculas de tamaño igual a las minúsculas) han sido sustituidas por letras mayúsculas de tamaño normal."
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "Prosas Profanas Y Otros Poemas"
-    },
-    {
-      "id": "s0-2",
-      "sceneId": "s0",
-      "text": "[Ilustración]"
-    },
-    {
-      "id": "s0-3",
-      "sceneId": "s0",
-      "text": "Prosas Profanas"
-    },
-    {
-      "id": "s0-4",
-      "sceneId": "s0",
-      "text": "POR"
-    },
-    {
-      "id": "s0-5",
-      "sceneId": "s0",
-      "text": "Rubén Dario"
-    },
-    {
-      "id": "s0-6",
-      "sceneId": "s0",
-      "text": "Ilustraciones"
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "Enrique Ochoa"
-    },
-    {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "Volumen II de las obras completas. Administración: Editorial Mundo Latino"
-    },
-    {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "Madrid."
-    },
-    {
-      "id": "s1-3",
-      "sceneId": "s1",
-      "text": "[Ilustración]"
-    },
-    {
-      "id": "s1-4",
-      "sceneId": "s1",
-      "text": "Es Propiedad"
-    },
-    {
       "id": "s1-5",
-      "sceneId": "s1",
+      "sceneId": "s2",
       "text": "Palabras Liminares"
     },
     {
       "id": "s1-6",
-      "sceneId": "s1",
+      "sceneId": "s2",
       "text": "[Ilustración]"
     },
     {

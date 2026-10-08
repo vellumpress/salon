@@ -9,20 +9,6 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "Book I",
-      "place": "Book I",
-      "reentry": "By Command of the Padishah.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s1",
-      "title": "Book II",
-      "place": "Book II",
-      "reentry": "The Devil's Garden.",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s2",
       "title": "Book I",
       "place": "Book I",
@@ -171,31 +157,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "By Command of the Padishah."
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "Chap. Page I. a Hunt in the Year 1666 1 Ii. the House at Ebesfalva 18 Iii. a Prince in His Own Despite 27 Iv. a Banquet with the Prince of Transylvania 37 V. Bodola 45 Vi. the Battle of Nagy Szöllös 57 Vii. the Princess 70 Viii. the Peri 85 Ix. the Prince and His Minister 105"
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "The Devil's Garden."
-    },
-    {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "I. the Patrol 125 Ii. Sange Moarte 135 Iii. an Hungarian Magnate in the Sixteenth Century 155 Iv. the Midnight Battle 173 V. the Banquet Tribunal 189 Vi. the Diet of Karoly-Fehervár 197 Vii. the Jus Ligatum 210 Viii. Death for a Kiss 218 Ix. Consort and Concubine 228 X. the Sentence 257"
-    },
-    {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "'Midst the Wild Carpathians."
-    },
     {
       "id": "s2-0",
       "sceneId": "s2",

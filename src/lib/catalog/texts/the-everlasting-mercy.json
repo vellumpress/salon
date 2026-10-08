@@ -10,9 +10,9 @@
   "scenes": [
     {
       "id": "s0-front",
-      "title": "Title page and dedication",
-      "place": "Title page and dedication",
-      "reentry": "THE EVERLASTING MERCY",
+      "title": "Dedication",
+      "place": "Dedication",
+      "reentry": "TO MY WIFE",
       "prompt": "A word from this stretch.",
       "front": true
     },
@@ -25,26 +25,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-1",
-      "sceneId": "s0-front",
-      "text": "THE EVERLASTING MERCY"
-    },
-    {
-      "id": "s0-2",
-      "sceneId": "s0-front",
-      "text": "BY JOHN MASEFIELD"
-    },
-    {
-      "id": "s0-3",
-      "sceneId": "s0-front",
-      "text": "AUTHOR OF \"THE TRAGEDY OF POMPEY THE GREAT\" \"THE TRAGEDY OF NAN,\" ETC."
-    },
-    {
-      "id": "s0-4",
-      "sceneId": "s0-front",
-      "text": "LONDON SIDGWICK & JACKSON LTD. 3 ADAM STREET, ADELPHI MCMXIII"
-    },
     {
       "id": "s0-14",
       "sceneId": "s0-front",

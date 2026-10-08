@@ -1646,7 +1646,7 @@ test("tbr noon CLEAR ×5 are local Next / Rituals binds, never Featured", () => 
     "strange-tales": {
       track: "next",
       opening: /^A Kiang-si gentleman, named Mêng Lung-t‘an/,
-      breaths: 470,
+      breaths: 466,
     },
     "short-stories-from-the-balkans": {
       track: "next",
@@ -1817,7 +1817,7 @@ test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "songs-from-vagabondia": { opening: "VAGABONDIA.", breaths: 306, scenes: 7, gutenberg: 18238 },
     "songs-of-childhood": { opening: "As I lay awake in the white moonlight, I heard a sweet singing in the wood-- 'Out of bed, Sleepyhead", breaths: 331, scenes: 43, gutenberg: 23545 },
     "ten-minute-stories": { opening: "At the moorland cross-roads Martin stood examining the sign-post for several minutes in some bewilde", breaths: 832, scenes: 28, gutenberg: 72928 },
-    "the-everlasting-mercy": { opening: "From ’41 to ’51 I was my folk’s contrary son; I bit my father’s hand right through And broke my mother’s heart in two.", breaths: 119, scenes: 2, gutenberg: 41467 },
+    "the-everlasting-mercy": { opening: "From ’41 to ’51 I was my folk’s contrary son; I bit my father’s hand right through And broke my mother’s heart in two.", breaths: 115, scenes: 2, gutenberg: 41467 },
     "the-golden-bowl": { opening: "The Prince had always liked his London, when it had come to him; he was one of the modern Romans who", breaths: 2497, scenes: 42, gutenberg: 4264 },
     "the-rainbow": { opening: "Chapter I. HOW TOM BRANGWEN MARRIED A POLISH LADY", breaths: 4518, scenes: 101, gutenberg: 28948 },
     "the-sword-of-welleran": { opening: "Where the great plain of Tarphet runs up, as the sea in estuaries, among the Cyresian mountains, the", breaths: 434, scenes: 11, gutenberg: 10806 },
@@ -2670,7 +2670,7 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     "tristana": { opening: "Resignada en absoluto no, porque más de una vez, en aquel año que precedió a lo que se va a referir, la linda figurilla ", breaths: 627, scenes: 28, gutenberg: 66979, scene: "Chapter II · Resignada en absoluto no, porque más de una vez, en aquel año que" },
     "niels": { opening: "She had the black, luminous eyes of the Blid family with delicate, straight eyebrows; she had their boldly shaped nose, ", breaths: 896, scenes: 14, gutenberg: 55389, scene: "Chapter I" },
     "amor-de-perdicao": { opening: "Domingos José Correia Botelho de Mesquita e Menezes, fidalgo de linhagem, e um dos mais antigos solarengos de Villa Real", breaths: 1569, scenes: 19, gutenberg: 16425, scene: "Part 1 · Chapter I" },
-    "das-stunden-buch": { opening: "Da neigt sich die Stunde und rührt mich an mit klarem metallenem Schlag: mir zittern die Sinne.", breaths: 429, scenes: 309, gutenberg: 24288, scene: "Book I · Das Stunden-Buch" },
+    "das-stunden-buch": { opening: "Da neigt sich die Stunde und rührt mich an mit klarem metallenem Schlag: mir zittern die Sinne.", breaths: 423, scenes: 308, gutenberg: 24288, scene: "Dedication" },
     "misericordia": { opening: "Dos caras, como algunas personas, tiene la parroquia de San Sebastián... mejor será decir la iglesia... dos caras que se", breaths: 1500, scenes: 40, gutenberg: 21831, scene: "Chapter I" },
     "the-mandarin": { opening: "Decorreu um mez.", breaths: 359, scenes: 7, gutenberg: 16384, scene: "Chapter II" },
     "policarpo": { opening: "Como de habito, Polycarpo Quaresma, mais conhecido por major Quaresma, bateu em casa ás 4 e 15 da tarde. Havia mais de v", breaths: 1966, scenes: 15, gutenberg: 67535, scene: "Part I · Chapter I · A Lição De Violão" },
@@ -5423,8 +5423,8 @@ test("Mira Fri ~6PM CLEAR is Next lead High Wind, then Vera, Futility, and The C
     "strange-tales": {
       gutenberg: 43629,
       year: 1880,
-      breaths: 470,
-      scenes: 152,
+      breaths: 466,
+      scenes: 151,
       minutes: 5,
       opening: "A Kiang-si gentleman, named Mêng Lung-t‘an",
       stop: "went away.",

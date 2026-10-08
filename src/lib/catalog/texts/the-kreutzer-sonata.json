@@ -9,18 +9,12 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "Chapter XII",
-      "place": "Chapter XII",
-      "reentry": "A Lost Opportunity.",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s1",
-      "title": "Chapter VI",
-      "place": "Chapter VI",
-      "reentry": "The Candle.",
-      "prompt": "A word from this stretch."
+      "title": "Translator’s Preface",
+      "place": "Translator’s Preface",
+      "reentry": "Translator’s Preface.",
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s2",
@@ -347,21 +341,6 @@
   ],
   "breaths": [
     {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "A Lost Opportunity."
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "“Polikushka.” Chapter I. Chapter II."
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "The Candle."
-    },
-    {
       "id": "s1-1",
       "sceneId": "s1",
       "text": "Translator’s Preface."
@@ -395,11 +374,6 @@
       "id": "s1-7",
       "sceneId": "s1",
       "text": "For much valuable assistance in the work of these translations, I am deeply indebted to the bright English scholarship of my devoted wife."
-    },
-    {
-      "id": "s1-8",
-      "sceneId": "s1",
-      "text": "The Kreutzer Sonata."
     },
     {
       "id": "s2-0",

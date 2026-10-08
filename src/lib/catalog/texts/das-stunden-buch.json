@@ -9,18 +9,10 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "Book I · Das Stunden-Buch",
-      "place": "Book I · Das Stunden-Buch",
-      "reentry": "Das Stunden-Buch",
-      "prompt": "What does the poem hold?",
-      "front": true
-    },
-    {
       "id": "s1",
-      "title": "Book I · Vom mœnchischen Leben /",
-      "place": "Book I · Vom mœnchischen Leben /",
-      "reentry": "Vom mœnchischen Leben / Von der Pilgerschaft / Von der Armuth und vom Tode",
+      "title": "Dedication",
+      "place": "Dedication",
+      "reentry": "Gelegt in die Hände von Lou",
       "prompt": "What does the poem hold?",
       "front": true
     },
@@ -2175,36 +2167,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "Das Stunden-Buch"
-    },
-    {
-      "id": "s0-2",
-      "sceneId": "s0",
-      "text": "enthaltend die drei Bücher:"
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "Vom mœnchischen Leben / Von der Pilgerschaft / Von der Armuth und vom Tode"
-    },
-    {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "Rainer Maria Rilke"
-    },
-    {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "Insel-Verlag / Leipzig / im Jahre 1918"
-    },
-    {
-      "id": "s1-3",
-      "sceneId": "s1",
-      "text": "Das 12. bis 16. Tausend"
-    },
     {
       "id": "s1-4",
       "sceneId": "s1",

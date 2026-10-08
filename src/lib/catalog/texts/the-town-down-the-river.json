@@ -9,17 +9,10 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "Calverly’s--",
-      "place": "Calverly’s--",
-      "reentry": "Calverly’s 41",
-      "prompt": "What does the poem hold?"
-    },
-    {
       "id": "s1",
-      "title": "Leffingwell--",
-      "place": "Leffingwell--",
-      "reentry": "I. the Lure 44 Ii. the Quickstep 46 Iii. Requiescat 48 Clavering 50 Lingard and the Stars 54",
+      "title": "The Master",
+      "place": "The Master",
+      "reentry": "The Master[1]",
       "prompt": "What does the poem hold?"
     },
     {
@@ -724,26 +717,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "Calverly’s 41"
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "I. the Lure 44 Ii. the Quickstep 46 Iii. Requiescat 48 Clavering 50 Lingard and the Stars 54"
-    },
-    {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "MISCELLANEOUS-- PASA THALASSA THALASSA 59 MOMUS 64 UNCLE ANANIAS 66 THE WHIP 68 THE WHITE LIGHTS 71 EXIT 73 NORMANDY 74 LEONORA 76 THE WISE BROTHERS 78 BUT FOR THE GRACE OF GOD 80 AU REVOIR 83 FOR ARVIA 85 THE SUNKEN CROWN 87 DOCTOR OF BILLIARDS 89 SHADRACH O’LEARY 91 HOW ANNANDALE WENT OUT 93 ALMA MATER 95 MINIVER CHEEVY 97 THE PILOT 100 VICKERY’S MOUNTAIN 102 BON VOYAGE 106 THE COMPANION 109 ATHERTON’S GAMBIT 111 FOR A DEAD LADY 114 TWO GARDENS IN LINNDALE 116"
-    },
-    {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "The Revealer 123"
-    },
     {
       "id": "s1-3",
       "sceneId": "s1",
