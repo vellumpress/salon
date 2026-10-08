@@ -232,7 +232,10 @@ async function safeArea(page: Page) {
 }
 
 async function openAt(page: Page, id: string, at: number) {
-  await page.evaluate(() => sessionStorage.removeItem("keep-progress"));
+  // A fresh page is about:blank, which refuses storage. Nothing is saved there.
+  await page
+    .evaluate(() => sessionStorage.removeItem("keep-progress"))
+    .catch(() => undefined);
   await page.goto(`${ORIGIN}/salon/read/${id}?at=${at}`, { waitUntil: "domcontentloaded" });
   await page.locator(".breath-now").waitFor({ timeout: 30_000 });
   await page.waitForFunction(
@@ -573,7 +576,9 @@ async function mix(
 }
 
 async function importPdf(page: Page) {
-  await page.evaluate(() => sessionStorage.removeItem("keep-progress"));
+  await page
+    .evaluate(() => sessionStorage.removeItem("keep-progress"))
+    .catch(() => undefined);
   await page.goto(`${ORIGIN}/salon/page`, { waitUntil: "domcontentloaded" });
   await page.locator('input[type="file"]').setInputFiles({
     name: "stress.pdf",
