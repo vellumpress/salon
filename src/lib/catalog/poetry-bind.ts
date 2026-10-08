@@ -39,6 +39,34 @@ export const MIRA_STAMPED_POEM_IDS = [
   "a-few-figs-from-thistles",
 ] as const;
 
+/**
+ * Mira poetry re-bind pack: bound from source, one scene per printed poem
+ * (or printed part), one breath per poem or part, lines joined by " / ".
+ * Do not flatten these with the generic rebind either.
+ */
+export const POETRY_REBIND_IDS = [
+  "motley-and-other-poems",
+  "poems-of-passion",
+  "das-stunden-buch",
+  "salt-water-ballads",
+  "the-ballad-of-the-white-horse",
+  "peacock-pie",
+  "charmides-and-other-poems",
+  "the-three-taverns",
+  "the-town-down-the-river",
+  "songs-and-satires",
+  "the-veil-and-other-poems",
+  "prosas-profanas",
+  "rhymes-of-a-red-cross-man",
+  "dauber",
+  "the-waste-land",
+  "the-rime-of-the-ancient-mariner",
+  "cathay",
+  "war-is-kind",
+  "lamia",
+  "tortoises",
+] as const;
+
 /** Waley 1918 headings from Winter Night through Last Poem (PG 42290). */
 const WALEY_TITLES = [
   "Winter Night",

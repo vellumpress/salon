@@ -5,11 +5,13 @@ import { SHELF } from "./shelf.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import {
   FIRST_SCENE_TITLE,
+  POETRY_REBIND_IDS,
   TIMED_SIT_TITLE,
   fixPoetryOcr,
   poemTitleBleed,
 } from "./poetry-bind.ts";
 import type { Work } from "../literature.ts";
+import { openingBreathIndex } from "../opening-scene.ts";
 
 function lookbackBreaths(work: Work, index: number, limit = 12) {
   const current = work.breaths[index];
@@ -330,4 +332,113 @@ test("The Pier-Glass binds all 25 poems of the 1921 Secker edition, one breath e
   const shelf = SHELF.find((item) => item.id === "the-pier-glass");
   assert.equal(shelf?.breaths, titles.length);
   assert.ok(full.breaths[0]!.text.startsWith(shelf!.opening!), "shelf opening is the first stanza as printed");
+});
+
+test("Mira poetry re-bind pack: one scene per printed poem, counts and card from the bind", () => {
+  assert.equal(POETRY_REBIND_IDS.length, 20);
+  for (const id of POETRY_REBIND_IDS) {
+    const full = load("texts", id);
+    assert.ok(full, id);
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, id);
+    const sceneIds = new Set(full!.scenes.map((scene) => scene.id));
+    assert.equal(sceneIds.size, full!.scenes.length, `${id} scene ids unique`);
+    for (const scene of full!.scenes) {
+      assert.doesNotMatch(scene.title, /,\s*$/, `${id}#${scene.id} verse line as title`);
+      assert.doesNotMatch(scene.title, TIMED_SIT_TITLE, `${id}#${scene.id} timed-sit title`);
+      assert.ok(full!.breaths.some((breath) => breath.sceneId === scene.id), `${id}#${scene.id} empty scene`);
+    }
+    for (const breath of full!.breaths) {
+      assert.ok(sceneIds.has(breath.sceneId), `${id}#${breath.id} orphan breath`);
+      assert.ok(breath.text.trim().length > 0, `${id}#${breath.id} empty breath`);
+    }
+    const words = full!.breaths
+      .flatMap((breath) => breath.text.split(/\s+/))
+      .filter((word) => word && word !== "/").length;
+    assert.equal(work!.breaths, full!.breaths.length, `${id} shelf breaths`);
+    assert.equal(work!.minutes, Math.round(words / 200), `${id} shelf minutes = words/200`);
+    assert.equal(full!.minutes, work!.minutes, `${id} text minutes`);
+    const opening = work!.opening ?? "\u0000";
+    const at = full!.breaths.findIndex((breath) => breath.text.startsWith(opening));
+    const start = openingBreathIndex(full!);
+    assert.ok(at >= start && at <= start + 2, `${id} card is the first real lines (at ${at}, start ${start})`);
+  }
+});
+
+test("Motley and Poems of Passion no longer open mid-verse", () => {
+  const motley = load("texts", "motley-and-other-poems")!;
+  const card = SHELF.find((item) => item.id === "motley-and-other-poems")!.opening ?? "";
+  assert.ok(card.startsWith("When I go free, / I think 'twill be / A night of stars and snow,"), card);
+  assert.equal(motley.scenes.some((scene) => scene.title.startsWith("I think 'twill be")), false);
+  const passion = load("texts", "poems-of-passion")!;
+  assert.equal(passion.scenes.filter((scene) => /,\s*$/.test(scene.title)).length, 0);
+  assert.ok(passion.scenes.length >= 80, `poems-of-passion scenes ${passion.scenes.length}`);
+});
+
+/** Phone cap for one breath in the re-bind pack: about 40 verse lines or 350 words. */
+const REBIND_BREATH_MAX_LINES = 40;
+const REBIND_BREATH_MAX_WORDS = 350;
+
+/**
+ * Over-cap breaths that are a single printed stanza, verse paragraph or prose
+ * paragraph in the source (no blank-line break inside), so they stay whole
+ * rather than being cut mid-stanza. `id#breathId` → why.
+ */
+const REBIND_LONG_STANZAS: Readonly<Record<string, string>> = {
+  "the-ballad-of-the-white-horse#s0-1": "Prefatory Note: one prose paragraph, 395 words",
+  "peacock-pie#s31-0": "The Lost Shoe: one poem printed without stanza breaks, 44 lines / 150 words",
+  "peacock-pie#s34-0": "Off the Ground: one poem printed without stanza breaks, 114 lines / 416 words",
+  "the-three-taverns#s7-3": "The Three Taverns: one printed verse paragraph, 98 lines / 835 words",
+  "the-three-taverns#s7-5": "The Three Taverns: one printed verse paragraph, 46 lines / 367 words",
+  "the-three-taverns#s7-7": "The Three Taverns: one printed verse paragraph, 65 lines / 557 words",
+  "the-three-taverns#s13-1": "John Brown: one printed verse paragraph, 43 lines / 366 words",
+  "the-three-taverns#s13-2": "John Brown: one printed verse paragraph, 76 lines / 656 words",
+  "the-three-taverns#s17-3": "Tasker Norcross: one printed verse paragraph, 52 lines / 439 words",
+  "the-three-taverns#s17-5": "Tasker Norcross: one printed verse paragraph, 70 lines / 596 words",
+  "the-three-taverns#s25-1": "Rahel to Varnhagen: one printed verse paragraph, 60 lines / 524 words",
+  "the-three-taverns#s25-3": "Rahel to Varnhagen: one printed verse paragraph, 65 lines / 572 words",
+  "the-three-taverns#s25-4": "Rahel to Varnhagen: one printed verse paragraph, 108 lines / 917 words",
+  "the-three-taverns#s31-1": "Lazarus: one printed verse paragraph, 47 lines / 403 words",
+  "the-town-down-the-river#s2-6": "An Island: one printed verse paragraph, 50 lines / 327 words",
+  "songs-and-satires#s3-6": "The Cocked Hat: one printed verse paragraph, 45 lines / 312 words",
+  "songs-and-satires#s4-0": "The Vision: one printed verse paragraph, 69 lines / 522 words",
+  "songs-and-satires#s7-2": "The Loop: one printed verse paragraph, 54 lines / 408 words",
+  "songs-and-satires#s7-3": "The Loop: one printed verse paragraph, 85 lines / 668 words",
+  "songs-and-satires#s30-1": "Jim and Arabel's Sister: one printed verse paragraph, 47 lines / 381 words",
+  "songs-and-satires#s36-1": "The Conversation: one printed verse paragraph, 43 lines / 325 words",
+  "songs-and-satires#s44-7": "In Michigan: one printed verse paragraph, 41 lines / 287 words",
+  "rhymes-of-a-red-cross-man#s42-1": "Wounded: one printed verse paragraph, 58 lines / 489 words",
+  "rhymes-of-a-red-cross-man#s51-0": "Afternoon Tea: one printed verse paragraph, 41 lines / 489 words",
+  "rhymes-of-a-red-cross-man#s51-1": "Afternoon Tea: one printed verse paragraph, 49 lines / 624 words",
+  "cathay#s9-2": "The Seafarer: one printed verse paragraph, 77 lines / 525 words",
+  "lamia#s0-0": "Part 1: one printed verse paragraph, 46 lines / 357 words",
+  "lamia#s0-2": "Part 1: one printed verse paragraph, 78 lines / 598 words",
+  "lamia#s0-5": "Part 1: one printed verse paragraph, 150 lines / 1164 words",
+  "lamia#s1-1": "Part 2: one printed verse paragraph, 90 lines / 692 words",
+  "lamia#s1-6": "Part 2: one printed verse paragraph, 73 lines / 550 words",
+};
+
+function breathSize(text: string) {
+  const lines = text.split(" / ").length;
+  const words = text.split(/\s+/).filter((word) => word && word !== "/").length;
+  return { lines, words };
+}
+
+test("Mira poetry re-bind pack: no breath over the phone cap unless it is one printed stanza", () => {
+  const over: string[] = [];
+  const stillOver = new Set<string>();
+  for (const id of POETRY_REBIND_IDS) {
+    const full = load("texts", id)!;
+    for (const breath of full.breaths) {
+      const { lines, words } = breathSize(breath.text);
+      if (lines <= REBIND_BREATH_MAX_LINES && words <= REBIND_BREATH_MAX_WORDS) continue;
+      const key = `${id}#${breath.id}`;
+      stillOver.add(key);
+      if (!(key in REBIND_LONG_STANZAS)) over.push(`${key} ${lines} lines / ${words} words`);
+    }
+  }
+  assert.deepEqual(over, []);
+  for (const key of Object.keys(REBIND_LONG_STANZAS)) {
+    assert.ok(stillOver.has(key), `${key} is no longer over the cap; drop it from REBIND_LONG_STANZAS`);
+  }
 });
