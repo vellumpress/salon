@@ -96,13 +96,16 @@ export function keptIncludes(kept: readonly unknown[] | undefined, breathId: str
 /**
  * Compare sentences across a re-bind: whitespace, quotation marks, and
  * italics markup (`_em_`, `*em*`, `<em>`) do not count as a different line.
+ * A moved footnote does not either: `[n]` markers and a leading `Note: `
+ * are the same sentence.
  */
 export function normalizeKeptText(text: string): string {
   const stripped = text
     .replace(/<em>([\s\S]*?)<\/em>/gi, "$1")
     .replace(/_([^_\n]+)_/g, "$1")
     .replace(/\*([^*\n]+)\*/g, "$1")
-    .replace(/[_*]/g, "");
+    .replace(/[_*]/g, "")
+    .replace(/\s*\[\d+\]/g, "");
   let quotes = "";
   for (const ch of stripped) {
     quotes +=
@@ -114,8 +117,22 @@ export function normalizeKeptText(text: string): string {
   }
   return quotes
     .replace(/\s+/g, " ")
+    .replace(/^(?:Note:\s+)+/i, "")
     .replace(/(?:…|\.{3})+$/g, "")
     .trim();
+}
+
+/** True when a saved breath id is no longer in the text, so the remap may help. */
+export function keptIdsNeedRemap(
+  kept: readonly unknown[] | undefined,
+  breaths: readonly { id: string }[] | undefined,
+): boolean {
+  if (!kept?.length || !breaths?.length) return false;
+  const live = new Set(breaths.map((breath) => breath.id));
+  return kept.some((entry) => {
+    const id = keptBreathId(entry);
+    return Boolean(id) && !live.has(id);
+  });
 }
 
 export function keptTextsMatch(a: string, b: string): boolean {

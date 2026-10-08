@@ -6,8 +6,9 @@ import { YOU_PREVIEW } from "@/lib/favorites";
 import { fillClass, fillInk, mosaicFills } from "@/lib/mondrian";
 import { cn } from "@/lib/utils";
 import { shelfWork } from "@/lib/catalog/shelf";
-import { readBreathRemap } from "@/lib/breath-remap";
+import { breathRemapLoaded, loadBreathRemap, readBreathRemap } from "@/lib/breath-remap";
 import {
+  keptIdsNeedRemap,
   keptProgressKey,
   resolveKeptOpen,
   visibleKeptLines,
@@ -55,14 +56,30 @@ export function useKeptLines(
       setTotal(all.length);
     }
 
+    function warmRemap() {
+      if (breathRemapLoaded()) return;
+      const missing = workIds.some((id) =>
+        keptIdsNeedRemap(progress[id]?.kept, peekWork(id)?.breaths),
+      );
+      if (!missing) return;
+      void loadBreathRemap().then(() => {
+        if (live) paint();
+      });
+    }
+
     paint();
+    warmRemap();
     void Promise.all(
       workIds.map((id) =>
         loadWork(id, () => {
           paint();
+          warmRemap();
         }),
       ),
-    ).then(() => paint());
+    ).then(() => {
+      paint();
+      warmRemap();
+    });
 
     return () => {
       live = false;
@@ -77,13 +94,29 @@ async function openKeptLine(
   target: { workId: string; breathId?: string; text?: string },
 ) {
   try {
-    const opened = await resolveKeptOpen({
+    const load = (id: string) => loadWork(id);
+    let remap = readBreathRemap();
+    let opened = await resolveKeptOpen({
       workId: target.workId,
       breathId: target.breathId,
       text: target.text,
-      remap: readBreathRemap(),
-      load: (id) => loadWork(id),
+      remap,
+      load,
     });
+    if (target.breathId && !breathRemapLoaded()) {
+      const work = await load(target.workId);
+      const live = work?.breaths.some((breath) => breath.id === target.breathId);
+      if (work && !live) {
+        remap = await loadBreathRemap();
+        opened = await resolveKeptOpen({
+          workId: target.workId,
+          breathId: target.breathId,
+          text: target.text,
+          remap,
+          load,
+        });
+      }
+    }
     if (opened.nextId && target.breathId && opened.nextId !== target.breathId) {
       useTbr.getState().retargetKept(target.workId, target.breathId, opened.nextId);
     }

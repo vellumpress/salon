@@ -33,9 +33,10 @@ import {
   type SitClock,
 } from "./active-read.ts";
 import { bumpDayCount, touchWorkOnDay } from "./reading-score.ts";
-import { readBreathRemap } from "./breath-remap.ts";
+import { breathRemapLoaded, loadBreathRemap, readBreathRemap } from "./breath-remap.ts";
 import { isDeviceImport } from "./import/private.ts";
 import {
+  keptIdsNeedRemap,
   keptIncludes,
   migrateKeptList,
   needsKeptBackfill,
@@ -983,7 +984,7 @@ function scheduleKeptBackfill() {
 }
 
 async function backfillKeptLines() {
-  const remap = readBreathRemap();
+  let remap = readBreathRemap();
   const { loadWork, workIsComplete } = await import("./works.ts");
   const started = useTbr.getState().progress;
   const updates: { workId: string; before: string; kept: WorkProgress["kept"] }[] = [];
@@ -998,6 +999,9 @@ async function backfillKeptLines() {
     }
     const fresh = useTbr.getState().progress[workId];
     if (!fresh || JSON.stringify(fresh.kept ?? []) !== before) continue;
+    if (work && keptIdsNeedRemap(fresh.kept, work.breaths) && !breathRemapLoaded()) {
+      remap = await loadBreathRemap();
+    }
     const result = migrateKeptList(
       workId,
       fresh.kept,

@@ -187,6 +187,15 @@ export default defineConfig(({ command, isPreview }) => {
       port: 8081,
       strictPort: true,
     },
+    build: {
+      rolldownOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.replaceAll("\\", "/").includes("/catalog/at-remap.json")) return "at-remap";
+          },
+        },
+      },
+    },
     resolve: { tsconfigPaths: true },
     plugins: [
       // Drop staff bind notes from texts/openings chunks. Before the JSON plugin.

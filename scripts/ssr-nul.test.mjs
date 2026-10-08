@@ -209,6 +209,26 @@ test("the built asset manifest is precached with the shell", () => {
   assert.match(sw, /self\.navigator && self\.navigator\.onLine === false/);
 });
 
+test("the breath-id map is precached after install, not in the boot set", () => {
+  const dest = mkdtempSync(join(tmpdir(), "salon-remap-"));
+  const assets = join(dest, "assets");
+  mkdirSync(assets);
+  writeFileSync(join(assets, "index-abc.js"), "export {}");
+  writeFileSync(join(assets, "store-def.js"), "export {}");
+  writeFileSync(join(assets, "at-remap-Abcdef12.js"), "export default {}");
+  const listed = collectShellPrecache(dest);
+  const remap = "/salon/assets/at-remap-Abcdef12.js";
+  assert.ok(listed.precache.includes(remap));
+  assert.ok(listed.fill.includes(remap));
+  assert.equal(listed.boot.includes(remap), false);
+  assert.ok(listed.boot.includes("/salon/assets/index-abc.js"));
+  assert.ok(listed.boot.includes("/salon/assets/store-def.js"));
+  const sw = renderShellServiceWorker(listed);
+  assert.match(sw, /at-remap-Abcdef12\.js/);
+  const boot = sw.slice(sw.indexOf("var BOOT"), sw.indexOf("var EXTRAS"));
+  assert.doesNotMatch(boot, /at-remap/);
+});
+
 test("reading faces are local files and the offline page uses them", () => {
   const css = readFileSync(new URL("../src/styles.css", import.meta.url), "utf8");
   const root = readFileSync(new URL("../src/routes/__root.tsx", import.meta.url), "utf8");
