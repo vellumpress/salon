@@ -9,17 +9,9 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "The Three Taverns",
-      "place": "The Three Taverns",
-      "reentry": "The Three Taverns",
-      "prompt": "What does the poem hold?",
-      "front": true
-    },
-    {
       "id": "s1",
-      "title": "Author of \"The Man Against the Sky\", \"Merlin, a Poem\", etc",
-      "place": "Author of \"The Man Against the Sky\", \"Merlin, a Poem\", etc",
+      "title": "Dedication",
+      "place": "Dedication",
       "reentry": "To Thomas Sergeant Perry and Lilla Cabot Perry",
       "prompt": "What does the poem hold?",
       "front": true
@@ -982,24 +974,9 @@
   ],
   "breaths": [
     {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "The Three Taverns"
-    },
-    {
       "id": "s1-1",
       "sceneId": "s1",
       "text": "To Thomas Sergeant Perry and Lilla Cabot Perry"
-    },
-    {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "Contents"
-    },
-    {
-      "id": "s1-3",
-      "sceneId": "s1",
-      "text": "The Valley of the Shadow The Wandering Jew Neighbors The Mill The Dark Hills The Three Taverns Demos I Demos II The Flying Dutchman Tact On the Way John Brown The False Gods Archibald's Example London Bridge Tasker Norcross A Song at Shannon's Souvenir Discovery Firelight The New Tenants Inferential The Rat Rahel to Varnhagen Nimmo Peace on Earth Late Summer An Evangelist's Wife The Old King's New Jester Lazarus"
     },
     {
       "id": "s2-0",
@@ -1015,11 +992,6 @@
       "id": "s4-0",
       "sceneId": "s4",
       "text": "On the Way, The False Gods; Peace on Earth; The Old King's New Jester."
-    },
-    {
-      "id": "s4-1",
-      "sceneId": "s4",
-      "text": "------------------- The Three Taverns -------------------"
     },
     {
       "id": "s4-2",

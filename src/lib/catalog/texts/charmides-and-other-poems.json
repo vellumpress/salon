@@ -9,31 +9,10 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "London",
-      "place": "London",
-      "reentry": "*This volume was first published in 1913*",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s1",
-      "title": "* * * * *",
-      "place": "* * * * *",
-      "reentry": "*Wilde’s Poems*, *a selection of which is given in this volume*, *were first published in volume form in* 1881, *and were reprinted four times before the end of* 1882. *A new Edition with additional poems*, *including Ravenna*, *The Sphinx*",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s2",
-      "title": "Charmides                                              9",
-      "place": "Charmides                                              9",
-      "reentry": "Requiescat 67 San Miniato 69 Rome Unvisited 71 Humanitad 77 Louis Napoleon 114 Endymion 116 Le Jardin 119 La Mer 120 Le Panneau 121 Les Ballons 124 Canzonet 126 Le Jardin Des Tuileries 129 Pan: Double Villanelle 131 in the Forest 135 Sympho",
-      "prompt": "What does the poem hold?"
-    },
-    {
       "id": "s3",
-      "title": "Sonnets",
-      "place": "Sonnets",
-      "reentry": "Hélas! 139 to Milton 140 on the Massacre of the Christians in Bulgaria 141 Holy Week At Genoa 142 Urbs Sacra Æterna 143 E Tenebris 144 At Verona 145 on the Sale By Auction of Keats’ Love Letters 146 the New Remorse 147",
+      "title": "Charmides",
+      "place": "Charmides",
+      "reentry": "Charmides",
       "prompt": "What does the poem hold?"
     },
     {
@@ -682,36 +661,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "*This volume was first published in 1913*"
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "*Wilde’s Poems*, *a selection of which is given in this volume*, *were first published in volume form in* 1881, *and were reprinted four times before the end of* 1882. *A new Edition with additional poems*, *including Ravenna*, *The Sphinx*, *and The Ballad of Reading Goal*, *was first published* (*limited issues on hand-made paper and Japanese vellum*) *by Methuen & Co. in March* 1908. *A further Edition* (*making the seventh*) *with some omissions from the issue of* 1908, *but including two new poems*, *was published in September*, 1909. *Eighth Edition*, *November* 1909. *Ninth Edition*, *December* 1909. *Tenth Edition*, *December* 1910. *Eleventh Edition*, *December*, 1911. *Twelfth Edition*, *May*, 1913."
-    },
-    {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "*A further selection of the poems*, *including The Ballad of Reading Gaol*, *is published uniform with this volume*."
-    },
-    {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "Contents"
-    },
-    {
-      "id": "s2-0",
-      "sceneId": "s2",
-      "text": "Requiescat 67 San Miniato 69 Rome Unvisited 71 Humanitad 77 Louis Napoleon 114 Endymion 116 Le Jardin 119 La Mer 120 Le Panneau 121 Les Ballons 124 Canzonet 126 Le Jardin Des Tuileries 129 Pan: Double Villanelle 131 in the Forest 135 Symphony in Yellow 136"
-    },
-    {
-      "id": "s3-0",
-      "sceneId": "s3",
-      "text": "Hélas! 139 to Milton 140 on the Massacre of the Christians in Bulgaria 141 Holy Week At Genoa 142 Urbs Sacra Æterna 143 E Tenebris 144 At Verona 145 on the Sale By Auction of Keats’ Love Letters 146 the New Remorse 147"
-    },
     {
       "id": "s3-1",
       "sceneId": "s3",

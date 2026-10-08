@@ -9,20 +9,6 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "Part I",
-      "place": "Part I",
-      "reentry": "Madame Swann at Home *A break in the narrative: old friends in new aspects--The Marquis de Norpois--Bergotte--How I cease for the time being to see Gilberte: a general outline of the sorrow caused by a parting and of the irregular process o",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s1",
-      "title": "Part II",
-      "place": "Part II",
-      "reentry": "Place-Names: The Place (continued) *First impressions of M. de Charlus and of Robert de Saint-Loup--Dinner with Bloch and his family.*",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s2",
       "title": "Part I",
       "place": "Part I",
@@ -38,31 +24,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "Madame Swann at Home *A break in the narrative: old friends in new aspects--The Marquis de Norpois--Bergotte--How I cease for the time being to see Gilberte: a general outline of the sorrow caused by a parting and of the irregular process of oblivion.*"
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "Place-Names: The Place *My first visit to Balbec*"
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "Place-Names: The Place (continued) *First impressions of M. de Charlus and of Robert de Saint-Loup--Dinner with Bloch and his family.*"
-    },
-    {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "Seascape, with Frieze of Girls *Dinners at Rivebelle--Enter Albertine.*"
-    },
-    {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "Within a Budding Grove"
-    },
     {
       "id": "s2-0",
       "sceneId": "s2",

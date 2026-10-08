@@ -9,22 +9,6 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "By Lafcadio Hearn",
-      "place": "By Lafcadio Hearn",
-      "reentry": "Houghton Mifflin and Company Boston and New York 1905",
-      "prompt": "A word from this stretch.",
-      "front": true
-    },
-    {
-      "id": "s1",
-      "title": "Goblin Poetry      51",
-      "place": "Goblin Poetry      51",
-      "reentry": "\"Ultimate Questions\" 103",
-      "prompt": "A word from this stretch.",
-      "front": true
-    },
-    {
       "id": "s2",
       "title": "Introduction",
       "place": "Introduction",
@@ -244,36 +228,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "Houghton Mifflin and Company Boston and New York 1905"
-    },
-    {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "\"Ultimate Questions\" 103"
-    },
-    {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "The Mirror Maiden 125"
-    },
-    {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "The Story of It[=O] Norisuk['E] 139"
-    },
-    {
-      "id": "s1-3",
-      "sceneId": "s1",
-      "text": "Stranger Than Fiction 167"
-    },
-    {
-      "id": "s1-4",
-      "sceneId": "s1",
-      "text": "A Letter From Japan 179"
-    },
     {
       "id": "s2-0",
       "sceneId": "s2",

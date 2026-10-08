@@ -1536,8 +1536,8 @@ test("tbr noon CLEAR ×5 load as local full binds on the Host open", () => {
       absent: /TRANSLATOR|translator’s foreword/i,
     },
     "strange-tales": {
-      scenes: 152,
-      breaths: 470,
+      scenes: 151,
+      breaths: 466,
       opening: /^A Kiang-si gentleman, named Mêng Lung-t‘an/,
       scene: /^The Painted Wall$/,
       absent: /Giles’ Introduction|INTRODUCTION/i,
@@ -1849,6 +1849,13 @@ test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
         full.breaths.some((breath) => (breath.text ?? "").startsWith(work!.opening ?? "\u0000")),
         `${id} shelf opening`,
       );
+    } else if (id === "kristin" || id === "within-a-budding-grove") {
+      // Front-matter sweep cut the contents lists; only short book and part
+      // headings ("Book One", "JÖRUNDGAARD", "1", "*Madame Swann at Home*")
+      // now sit above the first prose breath.
+      const at = full.breaths.findIndex((breath) => (breath.text ?? "").startsWith(work!.opening ?? "\u0000"));
+      assert.ok(at > 0 && at <= 3, `${id} shelf opening`);
+      assert.ok(full.breaths.slice(0, at).every((breath) => breath.text.length <= 40), `${id} headings only`);
     } else {
       assert.ok(
         (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),

@@ -9,17 +9,18 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "Poems",
-      "place": "Poems",
-      "reentry": "*By*",
-      "prompt": "What does the poem hold?"
-    },
-    {
       "id": "s1",
       "title": "Note",
       "place": "Note",
       "reentry": "Seven of the poems included in this collection were written for Drawings by Miss Pamela Bianco, and were first published by Mr. Heinemann in a volume entitled *Flora*. The author's thanks are due to Mr. Sydney Pawling for permission to repr",
+      "prompt": "What does the poem hold?",
+      "front": true
+    },
+    {
+      "id": "s1-poem",
+      "title": "The Imp Within",
+      "place": "The Imp Within",
+      "reentry": "The Imp Within",
       "prompt": "What does the poem hold?"
     },
     {
@@ -634,68 +635,38 @@
   ],
   "breaths": [
     {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "*By*"
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "Walter De La Mare"
-    },
-    {
-      "id": "s0-2",
-      "sceneId": "s0",
-      "text": "New York Henry Holt and Company 1922"
-    },
-    {
       "id": "s1-0",
       "sceneId": "s1",
       "text": "Seven of the poems included in this collection were written for Drawings by Miss Pamela Bianco, and were first published by Mr. Heinemann in a volume entitled *Flora*. The author's thanks are due to Mr. Sydney Pawling for permission to reprint these poems; to Mr. Cyril Beaumont for the use of 'Tidings' from a Play for Children, entitled *Crossings*; and, for permission to include several other poems, to the Editors of the *London Mercury*, the *New Republic*, the *Spectator*, the *Nation*, the *Century Magazine*, the *Cambridge Magazine*, the *Literary Review*, the *Sphere*, the *New Statesman*, the *Bookman's Journal*, the *Broom*, the *Outlook*, the *Athenæum*, and the *Westminster Gazette*."
     },
     {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "Contents"
-    },
-    {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "PAGE THE IMP WITHIN 3 THE OLD ANGLER 5 THE WILLOW 10 TITMOUSE 11 THE VEIL 12 THE FAIRY IN WINTER 13 THE FLOWER 14 BEFORE DAWN 15 THE SPECTRE 17 THE VOICE 18 THE HOUR-GLASS 19 IN THE DOCK 20 THE WRECK 21 THE SUICIDE 22 DRUGGED 23 WHO'S THAT? 25 HOSPITAL 26 A SIGN 28 GOOD-BYE 30 THE MONOLOGUE 31 AWAKE! 34 FORGIVENESS 35 THE MOTH 36 NOT THAT WAY 37 CRAZED 39 FOG 40 *SOTTO VOCE* 42 THE IMAGINATION'S PRIDE 44 THE WANDERERS 46 THE CORNER STONE 48 THE SPIRIT OF AIR 50 THE UNFINISHED DREAM 51 MUSIC 54 TIDINGS 56 THE SON OF MELANCHOLY 57 THE QUIET ENEMY 60 THE FAMILIAR 61 MAERCHEN 63 GOLD 64 MIRAGE 65 FLOTSAM 67 MOURN'ST THOU NOW? 68 THE GALLIASS 69 THE DECOY 70 SUNK LYONESSE 71 THE CATECHISM 72 FUTILITY 73 BITTER WATERS 74 WHO? 76 A RIDDLE 77 THE OWL 79 THE LAST COACHLOAD 80 AN EPITAPH 84"
-    },
-    {
-      "id": "s1-3",
-      "sceneId": "s1",
-      "text": "The Veil and Other Poems"
-    },
-    {
       "id": "s1-4",
-      "sceneId": "s1",
+      "sceneId": "s1-poem",
       "text": "The Imp Within"
     },
     {
       "id": "s1-5",
-      "sceneId": "s1",
+      "sceneId": "s1-poem",
       "text": "'Rouse now, my dullard, and thy wits awake; 'Tis first of the morning. And I bid thee make— No, not a vow; we have munched our fill of these From crock of bone-dry crusts and mouse-gnawn cheese— Nay, just one whisper in that long, long ear— Awake; rejoice. Another Day is here:—"
     },
     {
       "id": "s1-6",
-      "sceneId": "s1",
+      "sceneId": "s1-poem",
       "text": "'A virgin wilderness, which, hour by hour, Mere happy idleness shall bring to flower. Barren and arid though its sands now seem, Wherein oasis becks not, shines no stream, Yet wake—and lo, 'tis lovelier than a dream."
     },
     {
       "id": "s1-7",
-      "sceneId": "s1",
+      "sceneId": "s1-poem",
       "text": "'Plunge on, thy every footprint shall make fair Its thirsty waste; and thy foregone despair Undarken into sweet birds in the air, Whose coursing wings and love-crazed summoning cries Into infinity shall attract thine eyes."
     },
     {
       "id": "s1-8",
-      "sceneId": "s1",
+      "sceneId": "s1-poem",
       "text": "'No...? Well, lest promise in performance faint, A less inviting prospect will I paint. I bid thee adjure thy Yesterday, and say: \"As *thou* wast, Enemy, so be To-day.— Immure me in the same close narrow room; Be hated toil the lamp to light its gloom; Make stubborn my pen; sift dust into my ink; Forbid mine eyes to see, my brain to think. Scare off the words whereon the mind is set. Make memory the power to forget. Constrain imagination; bind its wing; Forbid the unseen Enchantresses to sing. Ay, do thy worst!\""
     },
     {
       "id": "s1-9",
-      "sceneId": "s1",
+      "sceneId": "s1-poem",
       "text": "'Vexed Spectre, prythee smile. Even though that yesterday was bleak and sour, Art thou a slave beneath its thong to cower?"
     },
     {

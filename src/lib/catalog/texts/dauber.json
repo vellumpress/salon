@@ -9,24 +9,18 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "Author Of",
-      "place": "Author Of",
-      "reentry": "\"The Everlasting Mercy,\" Etc.",
-      "prompt": "What does the poem hold?"
-    },
-    {
       "id": "s1",
-      "title": "To",
-      "place": "To",
+      "title": "Dedication and Note",
+      "place": "Dedication and Note",
       "reentry": "My Wife",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s2",
-      "title": "For October, 1912",
-      "place": "For October, 1912",
-      "reentry": "The persons and events described in this poem are entirely imaginary, and no reference is made or intended to any living person.",
+      "title": "Dauber",
+      "place": "Dauber",
+      "reentry": "Dauber",
       "prompt": "What does the poem hold?"
     },
     {
@@ -431,16 +425,6 @@
   ],
   "breaths": [
     {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "\"The Everlasting Mercy,\" Etc."
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "London William Heinemann"
-    },
-    {
       "id": "s1-0",
       "sceneId": "s1",
       "text": "My Wife"
@@ -448,11 +432,11 @@
     {
       "id": "s1-1",
       "sceneId": "s1",
-      "text": "Note.--I thank the editor and proprietors of the *English Review* for permitting me to reprint this poem, which first appeared in their issue"
+      "text": "Note.--I thank the editor and proprietors of the *English Review* for permitting me to reprint this poem, which first appeared in their issue for October, 1912."
     },
     {
       "id": "s2-0",
-      "sceneId": "s2",
+      "sceneId": "s1",
       "text": "The persons and events described in this poem are entirely imaginary, and no reference is made or intended to any living person."
     },
     {

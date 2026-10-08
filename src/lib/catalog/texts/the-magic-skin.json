@@ -9,10 +9,18 @@
   "coverAlt": "",
   "scenes": [
     {
+      "id": "s0-front",
+      "title": "Dedication",
+      "place": "Dedication",
+      "reentry": "To Monsieur Savary, Member of Le Academie des Sciences.",
+      "prompt": "A word from this stretch.",
+      "front": true
+    },
+    {
       "id": "s0",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "By Honore De Balzac",
+      "reentry": "I. The Talisman",
       "prompt": "A word from this stretch."
     },
     {
@@ -95,34 +103,19 @@
   ],
   "breaths": [
     {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "By Honore De Balzac"
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "Translated by Ellen Marriage"
-    },
-    {
       "id": "s0-2",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "To Monsieur Savary, Member of Le Academie des Sciences."
     },
     {
       "id": "s0-3",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "[omitted: a drawing representing the serpentine path made by the tip of a stick when flourished.]"
     },
     {
       "id": "s0-4",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Sterne--Tristram Shandy, ch. cccxxii."
-    },
-    {
-      "id": "s0-5",
-      "sceneId": "s0",
-      "text": "The Magic Skin"
     },
     {
       "id": "s0-6",

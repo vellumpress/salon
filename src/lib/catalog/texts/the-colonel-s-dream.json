@@ -9,10 +9,18 @@
   "coverAlt": "",
   "scenes": [
     {
+      "id": "s0-front",
+      "title": "Dedication and List of Characters",
+      "place": "Dedication and List of Characters",
+      "reentry": "Dedication",
+      "prompt": "A word from this stretch.",
+      "front": true
+    },
+    {
       "id": "s0",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "THE COLONEL'S DREAM",
+      "reentry": "One",
       "prompt": "A word from this stretch."
     },
     {
@@ -95,143 +103,108 @@
   ],
   "breaths": [
     {
-      "id": "s0-2",
-      "sceneId": "s0",
-      "text": "THE COLONEL'S DREAM"
-    },
-    {
-      "id": "s0-3",
-      "sceneId": "s0",
-      "text": "A Novel"
-    },
-    {
-      "id": "s0-4",
-      "sceneId": "s0",
-      "text": "by"
-    },
-    {
-      "id": "s0-5",
-      "sceneId": "s0",
-      "text": "Charles W. Chesnutt"
-    },
-    {
-      "id": "s0-6",
-      "sceneId": "s0",
-      "text": "Harlem Moon Broadway Books New York"
-    },
-    {
-      "id": "s0-7",
-      "sceneId": "s0",
-      "text": "Published in 1905 by Doubleday, New York."
-    },
-    {
-      "id": "s0-8",
-      "sceneId": "s0",
-      "text": "The Colonel's Dream"
-    },
-    {
       "id": "s0-9",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "Dedication"
     },
     {
       "id": "s0-10",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*To the great number of those who are seeking, in whatever manner or degree, from near at hand or far away, to bring the forces of enlightenment to bear upon the vexed problems which harass the South, this volume is inscribed, with the hope that it may contribute to the same good end.*"
     },
     {
       "id": "s0-11",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*If there be nothing new between its covers, neither is love new, nor faith, nor hope, nor disappointment, nor sorrow. Yet life is not the less worth living because of any of these, nor has any man truly lived until he has tasted of them all.*"
     },
     {
       "id": "s0-12",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "List of Characters"
     },
     {
       "id": "s0-13",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Colonel Henry French*, A Retired Merchant"
     },
     {
       "id": "s0-14",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Mr. Kirby*, } *Mrs. Jerviss*, } His Former Partners"
     },
     {
       "id": "s0-15",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Philip French*, The Colonel's Son"
     },
     {
       "id": "s0-16",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Peter French*, His Old Servant"
     },
     {
       "id": "s0-17",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Mrs. Treadwell*, An Old Lady"
     },
     {
       "id": "s0-18",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Miss Laura Treadwell*, Her Daughter"
     },
     {
       "id": "s0-19",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Graciella Treadwell*, Her Granddaughter"
     },
     {
       "id": "s0-20",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Malcolm Dudley*, A Treasure-Seeker"
     },
     {
       "id": "s0-21",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Ben Dudley*, His Nephew"
     },
     {
       "id": "s0-22",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Viney*, His Housekeeper"
     },
     {
       "id": "s0-23",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*William Fetters*, A Convict Labour Contractor"
     },
     {
       "id": "s0-24",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Barclay Fetters*, HIS SON"
     },
     {
       "id": "s0-25",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Bud Johnson*, A Convict Labourer"
     },
     {
       "id": "s0-26",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Caroline*, His Wife"
     },
     {
       "id": "s0-27",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Henry Taylor*, A Negro Schoolmaster"
     },
     {
       "id": "s0-28",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*William Nichols*, A Mulatto Barber"
     },
     {
       "id": "s0-29",
-      "sceneId": "s0",
+      "sceneId": "s0-front",
       "text": "*Haynes*, A Constable"
     },
     {

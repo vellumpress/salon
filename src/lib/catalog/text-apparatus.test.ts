@@ -14,6 +14,10 @@
  * ads, printer lines and catalogue pages after the end, and page-number
  * indexes (index of first lines, name indexes) at the back.
  *
+ * The front-matter gates at the end cover the other side of the book: title
+ * pages, imprints and contents lists bound as breaths at the front, plate
+ * captions, and scene titles that are imprint, publisher or contents lines.
+ *
  * Allowlist entries are `textId#breathId` with the reason beside them. Each
  * one is a breath that matches a pattern and was left on purpose. Do not
  * widen the patterns to skip a hit. Remove the entry when the breath is fixed.
@@ -355,4 +359,344 @@ test("back-matter patterns catch what they were written for, and spare the book"
     TEXT_APPARATUS_PATTERNS.some(({ pattern }) => pattern.test("TN: The crest was a small emblem worn on top of a knight’s helmet.")),
     "“TN:” notes must be caught",
   );
+});
+
+/* ------------------------------------------------------------------------ */
+/* Front matter: title pages, imprints and contents bound as scenes/breaths. */
+/* ------------------------------------------------------------------------ */
+
+/**
+ * Scene titles that are really title-page or imprint lines. The binder
+ * promoted whatever line sat above a block to a scene title, so readers saw
+ * "Dallas · San Francisco", "Copyright" or "J. S. Cushing Co.--Berwick & Smith
+ * Co" as the place they were in.
+ */
+const IMPRINT_CITY =
+  "(?:New York|London|Boston|Toronto|Melbourne|Dallas|Atlanta|San Francisco|Chicago|Philadelphia|Bombay|Calcutta|Madras|Leipzig|Edinburgh|Glasgow|Sydney|Garden City)";
+
+export const SCENE_TITLE_PATTERNS: { name: string; pattern: RegExp; frontOnly?: true }[] = [
+  { name: "copyright", pattern: /\bcopyright\b/i },
+  {
+    name: "with drawings/illustrations by",
+    pattern: /\b(?:with\s+(?:\w+\s+)?(?:drawings|illustrations|plates|decorations|a\s+frontispiece)|illustrated|decorations|drawings)\s+by\b/i,
+  },
+  {
+    name: "contents or list heading",
+    pattern: /^\W*(?:table\s+of\s+)?(?:contents|list\s+of\s+(?:illustrations|plates)|illustrations|frontispiece|page|chap\.?\s+page)\W*$/i,
+  },
+  {
+    name: "publisher or printer name",
+    pattern: /&\s*(?:co\b|company\b|sons?\b)|\bco\.\s*(?:,|--|—|of\b|$)|\b(?:co\.?|company),?\s+(?:ltd|limited)\b|\bpublishers?\b|\bverlag\b|\bprinted\s+by\b/i,
+  },
+  {
+    name: "imprint cities",
+    pattern: new RegExp(`^\\W*${IMPRINT_CITY}(?:\\s*(?:·|,|&|and|-)\\s*${IMPRINT_CITY})+\\W*$`, "i"),
+  },
+  { name: "author-of line", pattern: /^\W*author\s+of\b/i },
+  // "By Lafcadio Hearn" as one of a book's first three scenes. Later on,
+  // "By Rihaku" (Cathay) or "BY COURIER" (The Four Million) is a real title.
+  {
+    name: "by-line",
+    pattern: /^\W*(?:by|BY|By)\s+[A-Z][\w.'’-]*(?:\s+[A-Z][\w.'’-]*){0,3}\W*$/,
+    frontOnly: true,
+  },
+  { name: "contents page number", pattern: /\S\s{2,}\d{1,4}\s*$/ },
+];
+
+/** `textId#sceneId` (or `textId#*` for every scene of a book) → reason. */
+export const SCENE_TITLE_ALLOWLIST: Readonly<Record<string, string>> = {
+  "don-juan#s1847":
+    "a real line of Byron's verse (“Death to his publisher, to him ’tis sport;”); it is one of the verse-line titles counted in VERSE_LINE_TITLE_BASELINE, not an imprint",
+  "the-red-room#s4": "Wells's printed chapter title “At the Publisher's”",
+  "revolt-of-the-angels#s15":
+    "Anatole France's printed chapter heading ends “…Is Illustrated by the Terrible Example of”; story text, not an illustration credit",
+  "tono-bungay#s56":
+    "the CONTENTS. heading belongs to the magazine page Wells sets inside the novel (Book III), not to the book's own contents",
+  "visible-and-invisible#s0":
+    "all six scenes carry the last line of a lost contents page (“RODERICK’S STORY 269”, then “… · 2” to “… · 6”); the story titles and boundaries need a rebind from the source, flagged in the front-matter pack",
+};
+
+/**
+ * Verse lines promoted to scene titles ("Sighing for Lebanon,") are a
+ * rebind problem in the poetry binds below. Counts may only fall: a book not
+ * listed must have none, and a listed count must match exactly so the
+ * baseline is lowered when a book is rebound.
+ */
+export const VERSE_LINE_TITLE_BASELINE: Readonly<Record<string, number>> = {
+  "a-diversity-of-creatures": 2,
+  "amores": 134,
+  "atalanta-in-calydon": 266,
+  "barrack-room-ballads": 172,
+  "birds-beasts-and-flowers": 310,
+  "bruges-la-morte": 1,
+  "bunner-sisters": 1,
+  "cathay": 49,
+  "charmides-and-other-poems": 34,
+  "country-sentiment": 166,
+  "das-stunden-buch": 137,
+  "dauber": 1,
+  "domesday-book": 931,
+  "don-juan": 1692,
+  "hajji-baba": 5,
+  "heliodora-and-other-poems": 140,
+  "idylls-of-the-king": 1145,
+  "in-a-glass-darkly": 1,
+  "in-the-seven-woods": 69,
+  "kalevala": 4886,
+  "lamia": 79,
+  "les-civilises": 1,
+  "liaisons": 4,
+  "misericordia": 1,
+  "motley-and-other-poems": 100,
+  "nights": 1,
+  "peacock-pie": 38,
+  "pictures-of-the-floating-world": 2,
+  "poems-of-passion": 190,
+  "prosas-profanas": 21,
+  "reincarnations": 65,
+  "revolt-of-the-angels": 1,
+  "rhymes-of-a-red-cross-man": 4,
+  "salt-water-ballads": 64,
+  "silhouettes": 2,
+  "six-characters": 1,
+  "songs-and-satires": 26,
+  "spectra-a-book-of-poetic-experiments": 77,
+  "stray-birds": 1,
+  "the-ballad-of-the-white-horse": 60,
+  "the-defence-of-guenevere-and-other-poems": 533,
+  "the-emperor-of-portugallia": 1,
+  "the-flowers-of-evil": 172,
+  "the-forerunner-his-parables-and-poems": 7,
+  "the-garden-of-bright-waters": 119,
+  "the-gardener": 1,
+  "the-green-helmet-and-other-poems": 39,
+  "the-hesperides-and-noble-numbers": 1,
+  "the-literature-of-arabia": 145,
+  "the-nibelungenlied": 5,
+  "the-persian-mystics-jalalu-d-din-rumi": 60,
+  "the-poems-of-giacomo-leopardi": 593,
+  "the-poetic-edda": 327,
+  "the-rime-of-the-ancient-mariner": 71,
+  "the-spell-of-the-yukon-and-other-verses": 89,
+  "the-three-taverns": 32,
+  "the-town-down-the-river": 32,
+  "the-veil-and-other-poems": 23,
+  "the-waste-land": 19,
+  "three-plays-incl-henry-iv": 1,
+  "tortoises": 74,
+  "tristana": 2,
+  "venus-in-furs": 1,
+  "war-is-kind": 69,
+  "white-jacket": 2,
+};
+
+/** Lines that belong to a title page or imprint, not to the book. */
+const FRONT_PUBLISHER =
+  /\b(?:the\s+macmillan\s+co|macmillan\s+(?:&|and)\s+co|harper\s+(?:&|and)\s+brothers|houghton,?\s+mifflin|henry\s+holt\s+and\s+company|e\.\s*p\.\s*dutton|doubleday|william\s+heinemann|sidgwick\s+&\s+jackson|charles\s+scribner|john\s+lane|methuen\s+&|chatto\s+(?:&|and)\s+windus|smith,?\s+elder|longmans,?\s+green|g\.\s*p\.\s*putnam|little,?\s+brown|alfred\s+a\.\s+knopf|boni\s+(?:&|and)\s+liveright|insel-verlag|editorial\s+mundo|t\.\s*fisher\s+unwin|r\.\s*bentley|ward,?\s+lock|cassell\s+(?:&|and)|constable\s+(?:&|and)|broadway\s+books|harlem\s+moon)\b/i;
+
+export const FRONT_BREATH_PATTERNS: { name: string; test: (text: string) => boolean }[] = [
+  { name: "bare by-line", test: (t) => /^\W*(?:by|por)\W*$/i.test(t) },
+  { name: "author of …", test: (t) => /^\W*author\s+of\b/i.test(t) },
+  // Prose that names a publisher is long; a title-page imprint line is short.
+  { name: "publisher or imprint line", test: (t) => t.length <= 120 && FRONT_PUBLISHER.test(t) },
+  { name: "publication note", test: (t) => /^\W*(?:this\s+volume\s+was\s+)?(?:first\s+)?published\b.{0,40}\b1[5-9]\d\d\b/i.test(t) },
+  { name: "contents heading", test: (t) => /^\W*(?:table\s+of\s+)?(?:contents|list\s+of\s+illustrations)\W*$/i.test(t) },
+];
+
+/** A contents entry: a short title with a page number after it ("Love 15"). */
+const CONTENTS_ENTRY = /[A-Za-z’'".!?)\]]\s+\d{1,3}\s*$/;
+
+/** A plate caption carried over from an illustrated edition. */
+export const DRAWING_CAPTION = /^[\W_]*from\s+a\s+drawing\s+by\b/i;
+
+/** `textId#breathId` → reason. */
+export const FRONT_MATTER_ALLOWLIST: Readonly<Record<string, string>> = {};
+
+type SceneBook = {
+  id: string;
+  folder: "texts" | "openings";
+  scenes: { id: string; title: string; front?: boolean }[];
+  breaths: { id: string; sceneId: string; text: string }[];
+};
+
+let sceneBooks: SceneBook[] | undefined;
+function allSceneBooks(): SceneBook[] {
+  if (sceneBooks) return sceneBooks;
+  const here = fileURLToPath(new URL(".", import.meta.url));
+  const out: SceneBook[] = [];
+  for (const folder of ["texts", "openings"] as const) {
+    const dir = join(here, folder);
+    for (const name of readdirSync(dir)) {
+      if (!name.endsWith(".json")) continue;
+      const data = JSON.parse(readFileSync(join(dir, name), "utf8")) as Partial<SceneBook>;
+      out.push({
+        id: name.slice(0, -5),
+        folder,
+        scenes: (data.scenes ?? []).filter((s) => typeof s?.title === "string"),
+        breaths: (data.breaths ?? []).filter((b) => typeof b?.text === "string"),
+      });
+    }
+  }
+  sceneBooks = out;
+  return out;
+}
+
+/** The first 15 breaths and every breath of a scene tagged `front`. */
+function frontWindow(book: SceneBook) {
+  const front = new Set(book.scenes.filter((s) => s.front === true).map((s) => s.id));
+  return book.breaths.filter((b, i) => i < 15 || front.has(b.sceneId));
+}
+
+function titleAllowed(id: string, sceneId: string) {
+  return `${id}#${sceneId}` in SCENE_TITLE_ALLOWLIST || `${id}#*` in SCENE_TITLE_ALLOWLIST;
+}
+
+test("no scene is titled with a title-page, imprint or contents line", () => {
+  const unexpected: string[] = [];
+  for (const book of allSceneBooks()) {
+    if (book.folder !== "texts") continue;
+    for (const [at, scene] of book.scenes.entries()) {
+      const hit = SCENE_TITLE_PATTERNS.find(
+        ({ pattern, frontOnly }) => (!frontOnly || at < 3) && pattern.test(scene.title),
+      );
+      if (!hit || titleAllowed(book.id, scene.id)) continue;
+      unexpected.push(`${book.id}#${scene.id} [${hit.name}] ${scene.title.slice(0, 100)}`);
+    }
+  }
+  assert.deepEqual(unexpected, []);
+});
+
+test("verse lines promoted to scene titles only fall", () => {
+  const counts: Record<string, number> = {};
+  for (const book of allSceneBooks()) {
+    if (book.folder !== "texts") continue;
+    const n = book.scenes.filter((s) => /,\s*$/.test(s.title)).length;
+    if (n) counts[book.id] = n;
+  }
+  const unexpected: string[] = [];
+  for (const [id, n] of Object.entries(counts)) {
+    if (!(id in VERSE_LINE_TITLE_BASELINE)) unexpected.push(`${id}: ${n} new comma-ended scene titles`);
+    else if (n > VERSE_LINE_TITLE_BASELINE[id]) unexpected.push(`${id}: ${n} > baseline ${VERSE_LINE_TITLE_BASELINE[id]}`);
+  }
+  for (const [id, n] of Object.entries(VERSE_LINE_TITLE_BASELINE)) {
+    if ((counts[id] ?? 0) < n) unexpected.push(`${id}: ${counts[id] ?? 0} < baseline ${n}; lower the baseline`);
+  }
+  assert.deepEqual(unexpected, []);
+});
+
+test("no title-page, imprint or contents breath opens a book", () => {
+  const unexpected: string[] = [];
+  for (const book of allSceneBooks()) {
+    const window = frontWindow(book);
+    let run = 0;
+    for (const breath of window) {
+      const key = `${book.id}#${breath.id}`;
+      run = CONTENTS_ENTRY.test(breath.text) && breath.text.length < 90 ? run + 1 : 0;
+      if (run === 3 && !(key in FRONT_MATTER_ALLOWLIST)) {
+        unexpected.push(`${book.folder}/${key} [contents list] ${breath.text.slice(0, 80)}`);
+      }
+      const hit = FRONT_BREATH_PATTERNS.find(({ test: t }) => t(breath.text));
+      if (!hit || key in FRONT_MATTER_ALLOWLIST) continue;
+      unexpected.push(`${book.folder}/${key} [${hit.name}] ${breath.text.slice(0, 100)}`);
+    }
+    for (const breath of book.breaths) {
+      if (!DRAWING_CAPTION.test(breath.text)) continue;
+      const key = `${book.id}#${breath.id}`;
+      if (key in FRONT_MATTER_ALLOWLIST) continue;
+      unexpected.push(`${book.folder}/${key} [plate caption] ${breath.text.slice(0, 100)}`);
+    }
+  }
+  assert.deepEqual(unexpected, []);
+});
+
+test("front-matter allowlist entries still match, and have a reason", () => {
+  const books = allSceneBooks().filter((b) => b.folder === "texts");
+  for (const [key, reason] of Object.entries(SCENE_TITLE_ALLOWLIST)) {
+    assert.ok(reason.trim().length > 20, `${key} needs a reason`);
+    const [id, sceneId] = key.split("#");
+    const book = books.find((b) => b.id === id);
+    const scenes = (book?.scenes ?? []).filter((s) => sceneId === "*" || s.id === sceneId);
+    assert.ok(
+      scenes.length > 0 && scenes.every((s) => SCENE_TITLE_PATTERNS.some(({ pattern }) => pattern.test(s.title))),
+      `${key} no longer matches`,
+    );
+  }
+  for (const [key, reason] of Object.entries(FRONT_MATTER_ALLOWLIST)) {
+    assert.ok(reason.trim().length > 20, `${key} needs a reason`);
+    const [id, breathId] = key.split("#");
+    const book = books.find((b) => b.id === id);
+    const breath = book && frontWindow(book).find((b) => b.id === breathId);
+    assert.ok(
+      breath && (FRONT_BREATH_PATTERNS.some(({ test: t }) => t(breath.text)) || DRAWING_CAPTION.test(breath.text)),
+      `${key} no longer matches`,
+    );
+  }
+});
+
+test("front-matter patterns catch what they were written for, and spare the book", () => {
+  const titles = [
+    "Dallas · San Francisco",
+    "Dallas · Atlanta · San Francisco",
+    "With Drawings By W. Graham Robertson",
+    "Copyright",
+    "J. S. Cushing Co.--Berwick & Smith Co",
+    "R. Bentley & Son, New Burlington Street",
+    "E. P. Dutton & Company",
+    "Contents",
+    "Frontispiece",
+    "Author Of",
+    "By Lafcadio Hearn",
+    "Goblin Poetry      51",
+    "Printed by",
+  ];
+  const byLine = SCENE_TITLE_PATTERNS.find(({ name }) => name === "by-line");
+  assert.ok(byLine?.frontOnly && byLine.pattern.test("BY COURIER"), "by-line is checked on the first three scenes only");
+  for (const t of titles) {
+    assert.ok(SCENE_TITLE_PATTERNS.some(({ pattern }) => pattern.test(t)), `scene-title gate missed: ${t}`);
+  }
+  const realTitles = [
+    "The Man Whom the Trees Loved",
+    "Dedication",
+    "Prefatory Note",
+    "Chicago",
+    "Limited",
+    "By the River",
+    "By Command of the Padishah",
+    "London Bridge",
+    "Sonnet 18",
+    "Chapter XII",
+    "Book Two · The Garland",
+  ];
+  for (const t of realTitles) {
+    assert.ok(!SCENE_TITLE_PATTERNS.some(({ pattern }) => pattern.test(t)), `scene-title gate too wide: ${t}`);
+  }
+  const front = [
+    "BY",
+    "*By*",
+    "Author of “Uncle Silas,” &C.",
+    "The Macmillan Co. of Canada, Ltd.",
+    "Macmillan and Co., Limited St. Martin’s Street, London 1912",
+    "New York Henry Holt and Company 1922",
+    "Harlem Moon Broadway Books New York",
+    "*This volume was first published in 1913*",
+    "Published in 1905 by Doubleday, New York.",
+    "Contents",
+  ];
+  for (const t of front) {
+    assert.ok(FRONT_BREATH_PATTERNS.some(({ test: x }) => x(t)), `front gate missed: ${t}`);
+  }
+  const book = [
+    "To",
+    "M. S.-K.",
+    "My thanks are due to the Editor of the *Westminster Gazette* for permission to include in this volume three stories.",
+    "He painted trees as by some special divining instinct of their essential qualities.",
+    "Apart from my college work, I have written two books, one called \"Literary Lapses\" and the other \"Nonsense Novels.\" Each of these is published by John Lane (London and New York), and either of them can be obtained, absolutely as good as new, at any second-hand book stall.",
+  ];
+  for (const t of book) {
+    assert.ok(!FRONT_BREATH_PATTERNS.some(({ test: x }) => x(t)), `front gate too wide: ${t}`);
+  }
+  assert.ok(CONTENTS_ENTRY.test("Love 15"));
+  assert.ok(CONTENTS_ENTRY.test("The Temptation of the Clay 419"));
+  assert.ok(DRAWING_CAPTION.test("_From a drawing by J. Wagrez_."));
+  assert.ok(!DRAWING_CAPTION.test("He made a drawing by candlelight."));
 });
