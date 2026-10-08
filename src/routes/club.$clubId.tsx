@@ -13,11 +13,13 @@ import {
   hostedUserId,
   joinClubByInvite,
   leaveClub,
+  SIGN_IN_LEAVE_CLUB,
   listClubMessages,
   listClubRoster,
   mergeClubMessages,
   postClubMessage,
   subscribeClubMessages,
+  updateClub,
   type BookClubView,
   type ClubMemberView,
   type ClubMessage,
@@ -157,7 +159,7 @@ function HouseClub({ clubId }: { clubId: string }) {
             isIn ? "bg-paper text-ink" : "bg-red text-paper",
           )}
         >
-          {isIn ? "Leave" : "Join"}
+          {isIn ? "Leave this phone" : "Join on this phone"}
         </button>
       }
     >
@@ -180,6 +182,9 @@ function HouseClub({ clubId }: { clubId: string }) {
       <div className="border-b border-ink px-5 py-6 sm:px-8">
         <p className="type-lede">{club.prompt}</p>
       </div>
+      <p className="border-b border-ink px-5 py-3 font-sans text-sm text-ink sm:px-8">
+        This room lives on this phone. Joining here does not open a shared club.
+      </p>
       <div className="border-b border-ink px-5 py-5 sm:px-8">
         <p className="mb-4 type-kicker text-muted">Members</p>
         {isIn ? (
@@ -268,17 +273,25 @@ function LiveClub({
   const [time, setTime] = useState(clock.time);
   const [saving, setSaving] = useState(false);
   const [leaving, setLeaving] = useState(false);
-  const [signedIn, setSignedIn] = useState<boolean | null>(null);
+  const [userId, setUserId] = useState<string | null | undefined>(undefined);
+  const [editing, setEditing] = useState(false);
+  const [editName, setEditName] = useState(club.name);
+  const [editNote, setEditNote] = useState(club.note);
+  const [editSaving, setEditSaving] = useState(false);
   const storeReady = usePersistHydrated();
   useEffect(() => {
     let live = true;
     void hostedUserId().then((id) => {
-      if (live) setSignedIn(Boolean(id));
+      if (live) setUserId(id);
     });
     return () => {
       live = false;
     };
   }, [club.id]);
+  useEffect(() => {
+    setEditName(club.name);
+    setEditNote(club.note);
+  }, [club.id, club.name, club.note]);
   useEffect(() => {
     if (!storeReady) return;
     rememberInvite(club.id, club.inviteToken);
@@ -288,6 +301,7 @@ function LiveClub({
   }, [storeReady, club.id, club.inviteToken, joinClub, rememberInvite, leftClubs]);
 
   const isIn = storeReady && joined.includes(club.id) && shouldAutoJoin(leftClubs, club.id);
+  const isOwner = Boolean(userId && club.hostUserId && userId === club.hostUserId);
   const token = clubInvites[club.id] ?? club.inviteToken;
   const when = club.nextSession ? formatClubWhenLong(club.nextSession.startsAt) : "";
 
@@ -298,7 +312,7 @@ function LiveClub({
     try {
       await leaveClub(club.id);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Could not leave just yet.");
+      setError(err instanceof Error ? err.message : SIGN_IN_LEAVE_CLUB);
     } finally {
       setLeaving(false);
     }
@@ -346,6 +360,25 @@ function LiveClub({
     }
   }
 
+  async function saveEdit() {
+    const name = editName.trim();
+    if (!name) {
+      setError("Name the club.");
+      return;
+    }
+    setEditSaving(true);
+    setError("");
+    try {
+      const next = await updateClub({ id: club.id, name, note: editNote });
+      onClub(next);
+      setEditing(false);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Could not edit the club");
+    } finally {
+      setEditSaving(false);
+    }
+  }
+
   return (
     <ClubFrame
       title={club.name}
@@ -390,7 +423,7 @@ function LiveClub({
       >
         {copied ? "Copied" : "Invite"}
       </button>
-      {signedIn === false ? (
+      {userId === null ? (
         <Link
           to="/login"
           search={{ next: `/club/${club.id}` }}
@@ -400,6 +433,48 @@ function LiveClub({
         </Link>
       ) : null}
       {error ? <p className="border-b border-ink bg-yellow px-5 py-3 font-sans text-sm text-ink">{error}</p> : null}
+      {isOwner ? (
+        <div className="border-b border-ink">
+          <button
+            type="button"
+            onClick={() => setEditing((open) => !open)}
+            className="flex h-14 w-full items-center justify-center bg-paper font-sans text-sm text-ink"
+          >
+            {editing ? "Close" : "Edit the club"}
+          </button>
+          {editing ? (
+            <div>
+              <label className="flex items-stretch border-t border-ink">
+                <span className="flex w-20 shrink-0 items-center px-4 type-kicker text-muted">Name</span>
+                <input
+                  value={editName}
+                  onChange={(event) => setEditName(event.target.value)}
+                  maxLength={80}
+                  className="h-14 min-w-0 flex-1 border-0 bg-transparent px-2 font-serif text-lg text-ink focus-visible:outline-none"
+                />
+              </label>
+              <label className="flex items-stretch border-t border-ink">
+                <span className="flex w-20 shrink-0 items-center px-4 type-kicker text-muted">Note</span>
+                <input
+                  value={editNote}
+                  onChange={(event) => setEditNote(event.target.value)}
+                  maxLength={240}
+                  placeholder="Optional"
+                  className="h-14 min-w-0 flex-1 border-0 bg-transparent px-2 font-serif text-lg text-ink placeholder:text-muted focus-visible:outline-none"
+                />
+              </label>
+              <button
+                type="button"
+                disabled={editSaving}
+                onClick={() => void saveEdit()}
+                className="flex h-14 w-full items-center justify-center border-t border-ink bg-ink font-sans text-sm text-paper disabled:opacity-60"
+              >
+                {editSaving ? "Saving…" : "Save the club"}
+              </button>
+            </div>
+          ) : null}
+        </div>
+      ) : null}
       {club.note ? (
         <div className="border-b border-ink px-5 py-6 sm:px-8">
           <p className="type-lede">{club.note}</p>

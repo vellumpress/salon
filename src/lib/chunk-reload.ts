@@ -119,12 +119,28 @@ async function clearStaleShellCache(): Promise<void> {
   }
 }
 
+/**
+ * Add `__fresh` without letting URLSearchParams encode a Pages shim query.
+ * `/salon/?/club/invite/token` must stay `?/…`, not `?%2F…=`.
+ */
+export function freshReloadHref(href: string, now: number): string {
+  const url = new URL(href);
+  if (url.search[1] === "/") {
+    const parts = url.search
+      .slice(1)
+      .split("&")
+      .filter((part) => part && !part.startsWith("__fresh="));
+    parts.push(`__fresh=${now}`);
+    return `${url.pathname}?${parts.join("&")}${url.hash}`;
+  }
+  url.searchParams.set("__fresh", String(now));
+  return `${url.pathname}${url.search}${url.hash}`;
+}
+
 function hardReload() {
   const now = Date.now();
   try {
-    const next = new URL(location.href);
-    next.searchParams.set("__fresh", String(now));
-    location.replace(`${next.pathname}${next.search}${next.hash}`);
+    location.replace(freshReloadHref(location.href, now));
   } catch {
     location.reload();
   }

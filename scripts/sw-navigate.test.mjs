@@ -94,7 +94,7 @@ function loadWorker({ onLine = false, fetchImpl } = {}) {
   sandbox.globalThis = sandbox;
   vm.createContext(sandbox);
   vm.runInContext(
-    `${renderShellServiceWorker()}\nglobalThis.__tbr = { handleNavigate: handleNavigate, dropShellForRecovery: dropShellForRecovery, offlinePage: offlinePage, warmFonts: warmFonts, isStaticAsset: isStaticAsset };`,
+    `${renderShellServiceWorker()}\nglobalThis.__tbr = { handleNavigate: handleNavigate, dropShellForRecovery: dropShellForRecovery, offlinePage: offlinePage, warmFonts: warmFonts, isStaticAsset: isStaticAsset, withFreshParam: withFreshParam };`,
     sandbox,
   );
   return { caches, api: sandbox.__tbr, sandbox, listeners };
@@ -328,6 +328,18 @@ test("a cached app shell is not served for a manifest navigation", async () => {
   };
   listeners.fetch(event);
   assert.equal(event.result, undefined);
+});
+
+test("a shell refresh keeps the Pages shim query", () => {
+  const { api } = loadWorker();
+  assert.equal(
+    api.withFreshParam(`${ORIGIN}/salon/?/club/invite/AbcdEfgh12`, 99),
+    `${ORIGIN}/salon/?/club/invite/AbcdEfgh12&__fresh=99`,
+  );
+  assert.equal(
+    api.withFreshParam(`${ORIGIN}/salon/login?next=%2Fclub%2Finvite%2FAbcdEfgh12`, 99),
+    `${ORIGIN}/salon/login?next=%2Fclub%2Finvite%2FAbcdEfgh12&__fresh=99`,
+  );
 });
 
 test("recover-shell may replace the shell only after a new document is fetched", async () => {
