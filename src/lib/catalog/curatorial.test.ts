@@ -186,7 +186,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "lady-windermeres-fan",
     "pans-garden",
     "peacock-pie",
-    "prosas-profanas",
     "resurrection",
     "rosmersholm",
     "salome",
@@ -239,8 +238,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "day-and-night-stories",
     "fifty-one-tales",
     "jude-the-obscure",
-    "les-villes-tentaculaires",
-    "neue-gedichte",
     "over-the-brazier",
     "rolling-stones",
     "salammbo",
@@ -276,13 +273,10 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "a-house-of-gentlefolk",
     "artists-wives",
     "blix",
-    "emaux-et-camees",
     "eves-ransom",
     "fraternity",
     "hania",
     "indian-summer",
-    "les-heures-claires",
-    "les-trophees",
     "numa-roumestan",
     "royal-highness",
     "the-emancipated",
@@ -291,51 +285,20 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "the-price-of-love",
     "the-private-papers-of-henry-ryecroft",
     "unhuman-tour-kusamakura",
-    "ubirajara",
-    "cecilia",
-    "la-regenta",
-    "los-pazos-de-ulloa",
-    "nazarin",
     "the-octopus",
     "the-red-and-the-black",
-    "alcools",
-    "petersburg",
     "st-peter-s-umbrella",
     "caesar-or-nothing",
-    "calligrammes",
-    "martin-fierro",
     "the-complete-original-short-stories",
     "the-cabin",
-    "les-chants-de-maldoror",
     "pan-tadeusz",
     "the-red-laugh",
     "before-adam",
-    "bruges-la-morte",
-    "casmurro",
-    "les-civilises",
-    "ein-landarzt",
-    "hien-le-maboul",
-    "knulp",
-    "iracema",
-    "tristana",
     "niels",
-    "amor-de-perdicao",
-    "das-stunden-buch",
-    "misericordia",
-    "the-mandarin",
-    "policarpo",
-    "quincas",
     "marianela",
-    "pepita-jimenez",
-    "a-illustre-casa-de-ramires",
     "an-iceland-fisherman",
     "aphrodite",
-    "azul",
-    "contes-cruels",
-    "les-amours-jaunes",
-    "libro-de-poemas",
     "on-the-eve",
-    "papeis-avulsos",
     "piping-hot",
     "ramuntcho",
     "smoke",
@@ -343,14 +306,11 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "the-paying-guest",
     "the-triumph-of-death",
     "the-witch-and-other-stories",
-    "therese-raquin",
-    "tradiciones-peruanas",
     "watch-and-ward",
     "bay-a-book-of-poems",
     "black-spirits-and-white-a-book-of-ghost-stories",
     "fir-flower-tablets",
     "hugh-selwyn-mauberley",
-    "os-lusiadas",
     "the-black-monk-and-other-stories",
     "the-heart-of-happy-hollow",
     "the-hesperides-and-noble-numbers",
@@ -1879,8 +1839,6 @@ test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "day-and-night-stories": { opening: "\"*Je suis la première au rendez-vous. Je vous attends.*\"", breaths: 995, scenes: 15, gutenberg: 45964 },
     "fifty-one-tales": { opening: "Fame singing in the highways, and trifling as she sang, with sordid adventurers, passed the poet by.", breaths: 451, scenes: 49, gutenberg: 7838 },
     "jude-the-obscure": { opening: "The schoolmaster was leaving the village, and everybody seemed sorry.", breaths: 3562, scenes: 53, gutenberg: 153 },
-    "les-villes-tentaculaires": { opening: "*Tous les chemins vont vers la ville.*", breaths: 520, scenes: 32, gutenberg: 45590 },
-    "neue-gedichte": { opening: "Wie manches Mal durch das noch unbelaubte Gezweig ein Morgen durchsieht, der schon ganz im Frühling", breaths: 344, scenes: 64, gutenberg: 33863 },
     "over-the-brazier": { opening: "The youngest poet down the shelves was fumbling In a dim library, just behind the chair From which t", breaths: 89, scenes: 20, gutenberg: 47144 },
     "rolling-stones": { opening: "[This was the last work of O. Henry. The *Cosmopolitan Magazine* had ordered it from him and, after", breaths: 1496, scenes: 21, gutenberg: 3815 },
     "salammbo": { opening: "It was at Megara, a suburb of Carthage, in the gardens of Hamilcar. The soldiers whom he had command", breaths: 1924, scenes: 15, gutenberg: 1290 },
@@ -2007,13 +1965,10 @@ test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "a-house-of-gentlefolk": { opening: "A bright spring day was fading into evening. High overhead in the clear heavens small rosy clouds se", breaths: 1083, scenes: 45, gutenberg: 5721 },
     "artists-wives": { opening: "*Stretched at full length, on the great divan of a studio, cigar in mouth, two friends--a poet and a", breaths: 337, scenes: 13, gutenberg: 22522 },
     "blix": { opening: "It had just struck nine from the cuckoo clock that hung over the mantelpiece in the dining-room, whe", breaths: 1234, scenes: 14, gutenberg: 401 },
-    "emaux-et-camees": { opening: "(1794-1894)", breaths: 657, scenes: 59, gutenberg: 37733 },
     "eves-ransom": { opening: "On the station platform at Dudley Port, in the dusk of a February afternoon, half-a-dozen people wai", breaths: 1861, scenes: 27, gutenberg: 4297 },
     "fraternity": { opening: "In the afternoon of the last day of April, 190--, a billowy sea of little broken clouds crowned the ", breaths: 2812, scenes: 41, gutenberg: 2773 },
     "hania": { opening: "When old Mikolai on his death-bed left Hania to my guardianship and conscience, I was sixteen years of age;", breaths: 1090, scenes: 12, gutenberg: 36583 },
     "indian-summer": { opening: "Midway of the Ponte Vecchio at Florence, where three arches break the lines of the little jewellers'", breaths: 2495, scenes: 24, gutenberg: 7359 },
-    "les-heures-claires": { opening: "Tissée en or dans l'air de soie!", breaths: 121, scenes: 30, gutenberg: 10061 },
-    "les-trophees": { opening: "Le temple est en ruine au haut du promontoire.", breaths: 663, scenes: 81, gutenberg: 14805 },
     "numa-roumestan": { opening: "That Sunday--it was a scorching hot Sunday in July at the time of the yearly competitions for the department--there was a great open-air festival held in the ancient amphitheatre of Aps in Provence.", breaths: 1651, scenes: 20, gutenberg: 69808 },
     "royal-highness": { opening: "The scene is the Albrechtstrasse, the main artery of the capital, which runs from Albrechtsplatz and the Old Schloss to", breaths: 1407, scenes: 10, gutenberg: 36028 },
     "the-emancipated": { opening: "By a window looking from Posillipo upon the Bay of Naples sat an English lady, engaged in letter-wri", breaths: 3897, scenes: 33, gutenberg: 4311 },
@@ -2072,15 +2027,9 @@ test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Fe
 
 test("BATCH-9 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
   const expect = {
-    "a-illustre-casa-de-ramires": { opening: "Desde as quatro horas da tarde, no calor e silencio do domingo de Junho, o Fidalgo da Torre, em chin", breaths: 2387, scenes: 12, gutenberg: 23145 },
     "an-iceland-fisherman": { opening: "There they were, five huge, square-built seamen, drinking away together in the dismal cabin, which r", breaths: 952, scenes: 53, gutenberg: 2196 },
     "aphrodite": { opening: "On the quay at Alexandria a singing-girl was standing singing.", breaths: 1727, scenes: 32, gutenberg: 36378 },
-    "azul": { opening: "¡Amigo! el cielo está opaco, el aire frío, el día triste. Un cuento alegre.., así como para distraer", breaths: 556, scenes: 38, gutenberg: 52894 },
-    "contes-cruels": { opening: "«Le soldat prussien fait son café dans une lanterne sourde.»", breaths: 1882, scenes: 23, gutenberg: 62874 },
-    "les-amours-jaunes": { opening: "Un poète ayant rimé, IMPRIMÉ Vit sa Muse dépourvue De marraine, et presque nue: Pas le plus petit mo", breaths: 1005, scenes: 107, gutenberg: 16883 },
-    "libro-de-poemas": { opening: "Viento del Sur. Moreno, ardiente, Llegas sobre mi carne, Trayéndome semilla De brillantes Miradas, e", breaths: 609, scenes: 69, gutenberg: 75703 },
     "on-the-eve": { opening: "On one of the hottest days of the summer of 1853, in the shade of a tall lime-tree on the bank of th", breaths: 1251, scenes: 35, gutenberg: 6902 },
-    "papeis-avulsos": { opening: "As chronicas da villa de ltaguahy dizem que em tempos remotos vivera alli um certo medico, o Dr. Sim", breaths: 1003, scenes: 11, gutenberg: 57001 },
     "piping-hot": { opening: "In the Rue Neuve-Saint-Augustin, a block of vehicles arrested the cab which was bringing Octave Mour", breaths: 3026, scenes: 18, gutenberg: 54686 },
     "ramuntcho": { opening: "The sad curlews, annunciators of the autumn, had just appeared in a mass in a gray squall, fleeing f", breaths: 894, scenes: 40, gutenberg: 9616 },
     "smoke": { opening: "On the 10th of August 1862, at four o'clock in the afternoon, a great number of people were throngin", breaths: 1238, scenes: 28, gutenberg: 40813 },
@@ -2088,8 +2037,6 @@ test("BATCH-9 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "the-paying-guest": { opening: "It was Mumford who saw the advertisement and made the suggestion. His wife gave him a startled look.", breaths: 631, scenes: 9, gutenberg: 4298 },
     "the-triumph-of-death": { opening: "When she perceived a group of men leaning against the parapet and looking down into the street below", breaths: 2639, scenes: 43, gutenberg: 54272 },
     "the-witch-and-other-stories": { opening: "IT was approaching nightfall. The sexton, Savely Gykin, was lying in his huge bed in the hut adjoini", breaths: 1584, scenes: 15, gutenberg: 1944 },
-    "therese-raquin": { opening: "Au bout de la rue Guénégaud, lorsqu'on vient des quais, on trouve le passage du Pont-Neuf, une sorte", breaths: 972, scenes: 32, gutenberg: 7461 },
-    "tradiciones-peruanas": { opening: "Esta tradición no tiene otra fuente de autoridad que el relato del pueblo. Todos la conocen en el Cu", breaths: 1031, scenes: 23, gutenberg: 21282 },
     "watch-and-ward": { opening: "Roger Lawrence had come to town for the express purpose of doing a certain act, but as the hour for ", breaths: 662, scenes: 11, gutenberg: 72355 },
   } as const;
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
@@ -2654,22 +2601,12 @@ test("Locked recommend five stay findable on ritual lanes, not a homepage rail",
 
 test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
   const expect = {
-    "ubirajara": { opening: "Pela marjem do grande rio caminha Jaguar\u00ea, o joven ca\u00e7ador.", breaths: 985, scenes: 9, gutenberg: 38496 },
-    "cecilia": { opening: "*Tal es el fruto de la culpa, Tello, cosecha de dolor.*", breaths: 3963, scenes: 45, gutenberg: 28281 },
-    "la-regenta": { opening: "La heroica ciudad dorm\u00eda la siesta. El viento Sur, caliente y perezoso, empujaba las nubes blanqueci", breaths: 5902, scenes: 30, gutenberg: 17073 },
-    "los-pazos-de-ulloa": { opening: "Por m\u00e1s que el jinete trataba de sofrenarlo agarr\u00e1ndose con todas sus fuerzas a la \u00fanica rienda de c", breaths: 1293, scenes: 30, gutenberg: 18005 },
-    "nazarin": { opening: "A un periodista de los de nuevo cu\u00f1o, de estos que designamos con el ex\u00f3tico nombre de *reporter*, d", breaths: 1162, scenes: 35, gutenberg: 73322 },
     "the-octopus": { opening: "Just after passing Caraher's saloon, on the County Road that ran south from Bonneville, and that div", breaths: 3563, scenes: 15, gutenberg: 268 },
     "the-red-and-the-black": { opening: "Put thousands together less bad, But the cage less gay.--*Hobbes*.", breaths: 3449, scenes: 74, gutenberg: 44747 },
-    "alcools": { opening: "\u00c0 la fin tu es las de ce monde ancien", breaths: 542, scenes: 44, gutenberg: 15462 },
-    "petersburg": { opening: "Apollon Apollonowitsch Ableuchow war von h\u00f6chst w\u00fcrdiger Abstammung: er hatte Adam zum Vorfahren geh", breaths: 4563, scenes: 8, gutenberg: 39919 },
     "st-peter-s-umbrella": { opening: "The schoolmaster's widow at the Halap was dead.", breaths: 1856, scenes: 17, gutenberg: 31945 },
     "caesar-or-nothing": { opening: "*MARSEILLES!*", breaths: 3586, scenes: 46, gutenberg: 8444 },
-    "calligrammes": { opening: "Comme c'\u00e9tait la veille du quatorze juillet Vers les quatre heures de l'apr\u00e8s-midi Je descendis dans", breaths: 424, scenes: 15, gutenberg: 55569 },
-    "martin-fierro": { opening: "1 Aqu\u00ed me pongo a cantar Al comp\u00e1s de la vig\u00fcela, Que el hombre que lo desvela Una pena estraordinar", breaths: 395, scenes: 12, gutenberg: 14765 },
     "the-complete-original-short-stories": { opening: "For several days in succession fragments of a defeated army had passed through the town. They were m", breaths: 13590, scenes: 186, gutenberg: 3090 },
     "the-cabin": { opening: "The vast plain stretched out under the blue splendour of dawn, a broad sash of light which appeared ", breaths: 1205, scenes: 10, gutenberg: 38165 },
-    "les-chants-de-maldoror": { opening: "Pl\u00fbt au ciel que le lecteur, enhardi et devenu momentan\u00e9ment f\u00e9roce comme ce qu'il lit, trouve, sans", breaths: 189, scenes: 6, gutenberg: 12005 },
     "pan-tadeusz": { opening: "LITHUANIA, my country, thou art like health; how much thou shouldst be prized only he can learn who has lost thee.", breaths: 1106, scenes: 12, gutenberg: 28240 },
     "the-red-laugh": { opening: "..... Horror and madness.", breaths: 458, scenes: 19, gutenberg: 62460 },
   } as const;
@@ -2678,7 +2615,9 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
   assert.ok(sleep);
   assert.ok(forYou);
-  assert.equal(Object.keys(expect).length, 18);
+  // OPEN-FIX-2 language sweep: non-English binds left this batch (EN_OFF_READABLE_IDS).
+  // pan-tadeusz stays, so the batch pin is 8.
+  assert.equal(Object.keys(expect).length, 8);
   assert.deepEqual(forYou.workIds.slice(0, 3), [
     "the-house-of-mirth",
     "quicksand",
@@ -2731,25 +2670,11 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
 test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
   const expect = {
     "before-adam": { opening: "Pictures! Pictures! Pictures! Often, before I learned, did I wonder whence came the multitudes of pictures that thronged", breaths: 423, scenes: 18, gutenberg: 310, scene: "Chapter I" },
-    "bruges-la-morte": { opening: "Hugues recommençait chaque soir le même itinéraire, suivant la ligne des quais, d'une marche indécise, un peu voûté déjà", breaths: 400, scenes: 14, gutenberg: 14911, scene: "Chapter II · Hugues recommençait chaque soir le même itinéraire, suivant la" },
-    "casmurro": { opening: "Do titulo.", breaths: 1631, scenes: 90, gutenberg: 55752, scene: "Chapter I" },
-    "les-civilises": { opening: "«Cap'taine Torral,» grogna Mévil à ses coureurs en redescendant.", breaths: 1844, scenes: 35, gutenberg: 47712, scene: "Chapter II" },
-    "ein-landarzt": { opening: "Wir haben einen neuen Advokaten, den Dr. Bucephalus. In seinem Äußern erinnert wenig an die Zeit, da er noch Streitroß A", breaths: 120, scenes: 14, gutenberg: 21989, scene: "Der neue Advokat" },
-    "hien-le-maboul": { opening: "Le clairon traversa la route, s’avança jusqu’au bord de la digue de pierres sèches et sonna le réveil. Les notes alertes", breaths: 1174, scenes: 22, gutenberg: 68588, scene: "Chapter II · Le clairon traversa la route, s’avança jusqu’au bord de la digue de" },
-    "knulp": { opening: "Anfang der neunziger Jahre mußte unser Freund Knulp einmal mehrere Wochen im Spital liegen, und als er entlassen wurde, ", breaths: 648, scenes: 3, gutenberg: 17622, scene: "Vorfrühling" },
-    "iracema": { opening: "Iracema passou entre as arvores, silenciosa como uma sombra: seu olhar scintillante coava entre as folhas, quaes frouxos", breaths: 968, scenes: 27, gutenberg: 67740, scene: "Chapter VII" },
-    "tristana": { opening: "Resignada en absoluto no, porque más de una vez, en aquel año que precedió a lo que se va a referir, la linda figurilla ", breaths: 627, scenes: 28, gutenberg: 66979, scene: "Chapter II · Resignada en absoluto no, porque más de una vez, en aquel año que" },
     "niels": { opening: "She had the black, luminous eyes of the Blid family with delicate, straight eyebrows; she had their boldly shaped nose, ", breaths: 896, scenes: 14, gutenberg: 55389, scene: "Chapter I" },
-    "amor-de-perdicao": { opening: "Domingos José Correia Botelho de Mesquita e Menezes, fidalgo de linhagem, e um dos mais antigos solarengos de Villa Real", breaths: 1569, scenes: 19, gutenberg: 16425, scene: "Part 1 · Chapter I" },
-    "das-stunden-buch": { opening: "Da neigt sich die Stunde und rührt mich an / mit klarem metallenem Schlag: / mir zittern die Sinne. Ich fühle: ich kann – / und ich fasse den plastischen Tag.", breaths: 153, scenes: 136, gutenberg: 24288, scene: "Dedication" },
-    "misericordia": { opening: "Dos caras, como algunas personas, tiene la parroquia de San Sebastián... mejor será decir la iglesia... dos caras que se", breaths: 1500, scenes: 40, gutenberg: 21831, scene: "Chapter I" },
-    "the-mandarin": { opening: "Decorreu um mez.", breaths: 359, scenes: 7, gutenberg: 16384, scene: "Chapter II" },
-    "policarpo": { opening: "Como de habito, Polycarpo Quaresma, mais conhecido por major Quaresma, bateu em casa ás 4 e 15 da tarde. Havia mais de v", breaths: 1966, scenes: 15, gutenberg: 67535, scene: "Part I · Chapter I · A Lição De Violão" },
-    "quincas": { opening: "Rubião fitava a enseada,--eram oito horas da manhã. Quem o visse, com os polegares mettidos no cordão do chambre, á jane", breaths: 1829, scenes: 201, gutenberg: 55682, scene: "Chapter I" },
     "marianela": { opening: "The sun had set. After the brief interval of twilight the night fell calm and dark, and in its gloomy bosom the last sounds of a sleepy world died gently away. The traveller went forward on his way, hastening his step as night came on; the path he followed was narrow and worn by the constant tread of men and beasts, and led gently up a hill on whose verdant slopes grew picturesque clumps of wild cherry trees, beeches and oaks.--The reader perceives that we are in the north of Spain.", breaths: 1138, scenes: 22, gutenberg: 48818, scene: "Chapter I · Gone Astray" },
-    "pepita-jimenez": { opening: "Querido tío y venerado maestro: Hace cuatro días que llegué con toda felicidad a este lugar de mi nacimiento, donde he hallado bien de salud a mi padre, al señor vicario y a los amigos y parientes.", breaths: 850, scenes: 3, gutenberg: 17223, scene: "Chapter I · Cartas de mi sobrino" },
   } as const;
-  assert.equal(Object.keys(expect).length, 18);
+  // OPEN-FIX-2 language sweep: non-English binds left this batch (EN_OFF_READABLE_IDS).
+  assert.equal(Object.keys(expect).length, 3);
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
   const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
@@ -2833,13 +2758,6 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
       scenes: 11,
       gutenberg: 23538,
     },
-    "os-lusiadas": {
-      opening:
-        "1 As armas e os barões assinalados, Que da ocidental praia Lusitana, Por mares nunca de antes navegados, Passaram ainda ",
-      breaths: 1104,
-      scenes: 10,
-      gutenberg: 3333,
-    },
     "the-black-monk-and-other-stories": {
       opening:
         "Andrei Vasilyevitch Kovrin, Magister, had worn himself out, and unsettled his nerves. He made no effort to undergo regul",
@@ -2895,7 +2813,8 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
   assert.ok(sleep);
   assert.ok(forYou);
-  assert.equal(Object.keys(expect).length, 12);
+  // OPEN-FIX-2 language sweep: non-English binds left this batch (EN_OFF_READABLE_IDS).
+  assert.equal(Object.keys(expect).length, 11);
   assert.deepEqual(forYou.workIds.slice(0, 3), [
     "the-house-of-mirth",
     "quicksand",

@@ -6,6 +6,57 @@ import {
   isBoundReadable,
   isEnReadableOff,
 } from "./en-rights.ts";
+import { existsSync } from "node:fs";
+import { SHELF, searchShelf } from "./shelf.ts";
+import { NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
+import { RITUAL_LANES, RITUAL_SIT_MINUTES, worksForRitualLane } from "./rituals.ts";
+import { FULL_TEXT_WORKS, LOCAL_WORKS, withFullPdf, withLocalBound } from "./full-pdf.ts";
+
+/** OPEN-FIX-2 language sweep: shelf texts that are 98–100% non-English, plus Doña Perfecta. */
+const LANGUAGE_SWEEP_OFF_IDS = [
+  "bruges-la-morte",
+  "calligrammes",
+  "das-stunden-buch",
+  "ein-landarzt",
+  "les-chants-de-maldoror",
+  "les-trophees",
+  "os-lusiadas",
+  "policarpo",
+  "therese-raquin",
+  "ubirajara",
+  "meaulnes",
+  "papeis-avulsos",
+  "hien-le-maboul",
+  "les-civilises",
+  "prosas-profanas",
+  "les-villes-tentaculaires",
+  "alcools",
+  "contes-cruels",
+  "a-illustre-casa-de-ramires",
+  "quincas",
+  "tradiciones-peruanas",
+  "emaux-et-camees",
+  "knulp",
+  "iracema",
+  "neue-gedichte",
+  "azul",
+  "casmurro",
+  "les-heures-claires",
+  "petersburg",
+  "nazarin",
+  "pepita-jimenez",
+  "cecilia",
+  "the-mandarin",
+  "la-regenta",
+  "tristana",
+  "les-amours-jaunes",
+  "los-pazos-de-ulloa",
+  "amor-de-perdicao",
+  "libro-de-poemas",
+  "misericordia",
+  "martin-fierro",
+  "dona-perfecta",
+];
 
 test("hold/pull ids are marked off English readable", () => {
   for (const id of [
@@ -24,6 +75,48 @@ test("hold/pull ids are marked off English readable", () => {
     "trophees",
     "emaux",
     "cousin-basilio",
+    "bruges-la-morte",
+    "calligrammes",
+    "das-stunden-buch",
+    "ein-landarzt",
+    "les-chants-de-maldoror",
+    "les-trophees",
+    "os-lusiadas",
+    "policarpo",
+    "therese-raquin",
+    "ubirajara",
+    "meaulnes",
+    "papeis-avulsos",
+    "hien-le-maboul",
+    "les-civilises",
+    "prosas-profanas",
+    "les-villes-tentaculaires",
+    "alcools",
+    "contes-cruels",
+    "a-illustre-casa-de-ramires",
+    "quincas",
+    "tradiciones-peruanas",
+    "emaux-et-camees",
+    "knulp",
+    "iracema",
+    "neue-gedichte",
+    "azul",
+    "casmurro",
+    "les-heures-claires",
+    "petersburg",
+    "nazarin",
+    "pepita-jimenez",
+    "cecilia",
+    "the-mandarin",
+    "la-regenta",
+    "tristana",
+    "les-amours-jaunes",
+    "los-pazos-de-ulloa",
+    "amor-de-perdicao",
+    "libro-de-poemas",
+    "misericordia",
+    "martin-fierro",
+    "dona-perfecta",
   ]) {
     assert.equal(isEnReadableOff(id), true, id);
     assert.equal(EN_OFF_READABLE_IDS.has(id), true, id);
@@ -205,4 +298,31 @@ test("Mira PM4 Next sits are readable local EN binds", () => {
     assert.equal(isBoundLocal({ id, local: true }), true, id);
     assert.equal(isBoundReadable({ id, local: true, gutenberg }), true, id);
   }
+});
+
+test("OPEN-FIX-2 language sweep: non-English binds leave every reader surface, rows and texts stay", () => {
+  assert.equal(LANGUAGE_SWEEP_OFF_IDS.length, 42);
+  const next = new Set<string>(NEXT_FEATURED_TRACK_IDS as readonly string[]);
+  const local = new Set(LOCAL_WORKS.map((work) => work.id));
+  const full = new Set(FULL_TEXT_WORKS.map((work) => work.id));
+  for (const id of LANGUAGE_SWEEP_OFF_IDS) {
+    assert.equal(isEnReadableOff(id), true, id);
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, `${id} catalog row stays`);
+    assert.notEqual(work!.language, "English", id);
+    assert.ok(existsSync(new URL(`./texts/${id}.json`, import.meta.url)), `${id} text file kept`);
+    assert.equal(local.has(id), false, `${id} LOCAL_WORKS`);
+    assert.equal(full.has(id), false, `${id} FULL_TEXT_WORKS`);
+    const found = searchShelf(work!.title);
+    assert.equal(withLocalBound(found).some((item) => item.id === id), false, `${id} local search`);
+    assert.equal(withFullPdf(found).some((item) => item.id === id), false, `${id} full-text search`);
+    assert.equal(next.has(id), false, `${id} Next queue`);
+    assert.equal(id in RITUAL_SIT_MINUTES, false, `${id} sit minutes`);
+    for (const lane of RITUAL_LANES) {
+      assert.equal(lane.workIds.includes(id), false, `${id} listed in ${lane.id}`);
+      assert.equal(worksForRitualLane(lane).some((item) => item.id === id), false, `${id} shown in ${lane.id}`);
+    }
+  }
+  // Pan Tadeusz is re-bound in English in its own pack.
+  assert.equal(isEnReadableOff("pan-tadeusz"), false);
 });

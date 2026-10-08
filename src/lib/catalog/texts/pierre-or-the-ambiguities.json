@@ -4,23 +4,17 @@
   "author": "Herman Melville",
   "year": "1852",
   "note": "Project Gutenberg 34970",
-  "minutes": 160,
+  "minutes": 758,
   "cover": "",
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "Book XX",
-      "place": "Book XX",
-      "reentry": "Book Xxi. Pierre Immaturely Attempts a Mature Book. Tidings from the Meadows. Plinlimmon Book Xxii. the Flower-Curtain Lifted from Before a Tropical Author; with Some Remarks on the Transcendental Flesh-Brush Philosophy Book Xxiii. a Letter",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s1",
-      "title": "Book XXIV",
-      "place": "Book XXIV",
-      "reentry": "Book Xxv. Lucy, Isabel, and Pierre. Pierre at His Book. Enceladus Book Xxvi. a Walk; a Foreign Portrait; a Sail. and the End",
-      "prompt": "A word from this stretch."
+      "id": "s142",
+      "title": "To Greylock's Most Excellent Majesty",
+      "place": "To Greylock's Most Excellent Majesty",
+      "reentry": "In old times authors were proud of the privilege of dedicating their works to Majesty. A right noble custom, which we of Berkshire must revive. For whether we will or no, Majesty is all around us here in Berkshire, sitting as in a grand Congress of Vienna of majestical hill-tops, and eternally challenging our homage.",
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s2",
@@ -33,42 +27,42 @@
       "id": "s3",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "There are some strange summer mornings in the country, when he who is but a sojourner from the city shall early walk forth into the fields, and be wonder-smitten with the trance-like aspect of the green and golden world. Not a flower stirs;",
+      "reentry": "There are some strange summer mornings in the country, when he who is but a sojourner from the city shall early walk forth into the fields, and be wonder-smitten with the trance-like aspect of the green and golden world. Not a flower stirs; the trees forget to wave; the grass itself seems to have ceased to grow; and all Nature, as if suddenly become conscious of her own profound mystery, and feeling no refuge from it but silence, sinks into this wonderful and indescribable repose.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "Pierre was the only son of an affluent, and haughty widow; a lady who externally furnished a singular example of the preservative and beautifying influences of unfluctuating rank, health, and wealth, when joined to a fine mind of medium cul",
+      "reentry": "Pierre was the only son of an affluent, and haughty widow; a lady who externally furnished a singular example of the preservative and beautifying influences of unfluctuating rank, health, and wealth, when joined to a fine mind of medium culture, uncankered by any inconsolable grief, and never worn by sordid cares. In mature age, the rose still miraculously clung to her cheek; litheness had not yet completely uncoiled itself from her waist, nor smoothness unscrolled itself from her brow, nor diamondness departed from her eyes. So that when lit up and bediademed by ball-room lights, Mrs. Glendinning still eclipsed far younger charms, and had she chosen to encourage them, would have been followed by a train of infatuated suitors, little less young than her own son Pierre.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s5",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "It has been said that the beautiful country round about Pierre appealed to very proud memories. But not only through the mere chances of things, had that fine country become ennobled by the deeds of his sires, but in Pierre's eyes, all its ",
+      "reentry": "It has been said that the beautiful country round about Pierre appealed to very proud memories. But not only through the mere chances of things, had that fine country become ennobled by the deeds of his sires, but in Pierre's eyes, all its hills and swales seemed as sanctified through their very long uninterrupted possession by his race.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s6",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "In general terms we have been thus decided in asserting the great genealogical and real-estate dignity of some families in America, because in so doing we poetically establish the richly aristocratic condition of Master Pierre Glendinning, ",
+      "reentry": "In general terms we have been thus decided in asserting the great genealogical and real-estate dignity of some families in America, because in so doing we poetically establish the richly aristocratic condition of Master Pierre Glendinning, for whom we have before claimed some special family distinction. And to the observant reader the sequel will not fail to show, how important is this circumstance, considered with reference to the singularly developed character and most singular life-career of our hero. Nor will any man dream that the last chapter was merely intended for a foolish bravado, and not with a solid purpose in view.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s7",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "\"Sister Mary,\" said Pierre, returned from his sunrise stroll, and tapping at his mother's chamber door:--\"do you know, sister Mary, that the trees which have been up all night, are all abroad again this morning before you?--Do you not smell",
+      "reentry": "\"Sister Mary,\" said Pierre, returned from his sunrise stroll, and tapping at his mother's chamber door:--\"do you know, sister Mary, that the trees which have been up all night, are all abroad again this morning before you?--Do you not smell something like coffee, my sister?\"",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s8",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "There was one little uncelestial trait, which, in the opinion of some, may mar the romantic merits of the gentlemanly Pierre Glendinning. He always had an excellent appetite, and especially for his breakfast. But when we consider that thoug",
+      "reentry": "There was one little uncelestial trait, which, in the opinion of some, may mar the romantic merits of the gentlemanly Pierre Glendinning. He always had an excellent appetite, and especially for his breakfast. But when we consider that though Pierre's hands were small, and his ruffles white, yet his arm was by no means dainty, and his complexion inclined to brown; and that he generally rose with the sun, and could not sleep without riding his twenty, or walking his twelve miles a day, or felling a fair-sized hemlock in the forest, or boxing, or fencing, or boating, or performing some other gymnastical feat; when we consider these athletic habitudes of Pierre, and the great fullness of brawn and muscle they built round about him; all of which manly brawn and muscle, three times a day loudly clamored for attention; we shall very soon perceive that to have a bountiful appetite, was not only no vulgar reproach, but a right royal grace and honor to Pierre; attesting him a man and a gentleman; for a thoroughly developed gentleman is always robust and healthy; and Robustness and Health are great trencher-men.",
       "prompt": "A word from this stretch."
     },
     {
@@ -89,42 +83,42 @@
       "id": "s11",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "While Pierre and Lucy are now rolling along under the elms, let it be said who Lucy Tartan was. It is needless to say that she was a beauty; because chestnut-haired, bright-cheeked youths like Pierre Glendinning, seldom fall in love with an",
+      "reentry": "While Pierre and Lucy are now rolling along under the elms, let it be said who Lucy Tartan was. It is needless to say that she was a beauty; because chestnut-haired, bright-cheeked youths like Pierre Glendinning, seldom fall in love with any but a beauty. And in the times to come, there must be--as in the present times, and in the times gone by--some splendid men, and some transcendent women; and how can they ever be, unless always, throughout all time, here and there, a handsome youth weds with a handsome maid!",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s12",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "In the fine old robust times of Pierre's grandfather, an American gentleman of substantial person and fortune spent his time in a somewhat different style from the green-house gentlemen of the present day. The grandfather of Pierre measured",
+      "reentry": "In the fine old robust times of Pierre's grandfather, an American gentleman of substantial person and fortune spent his time in a somewhat different style from the green-house gentlemen of the present day. The grandfather of Pierre measured six feet four inches in height; during a fire in the old manorial mansion, with one dash of his foot, he had smitten down an oaken door, to admit the buckets of his negro slaves; Pierre had often tried on his military vest, which still remained an heirloom at Saddle Meadows, and found the pockets below his knees, and plenty additional room for a fair-sized quarter-cask within its buttoned girth; in a night-scuffle in the wilderness before the Revolutionary War, he had annihilated two Indian savages by making reciprocal bludgeons of their heads. And all this was done by the mildest hearted, and most blue-eyed gentleman in the world, who, according to the patriarchal fashion of those days, was a gentle, white-haired worshiper of all the household gods; the gentlest husband, and the gentlest father; the kindest of masters to his slaves; of the most wonderful unruffledness of temper; a serene smoker of his after-dinner pipe; a forgiver of many injuries; a sweet-hearted, charitable Christian; in fine, a pure, cheerful, child-like, blue-eyed, divine old man; in whose meek, majestic soul, the lion and the lamb embraced--fit image of his God.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s13",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "But Love has more to do with his own possible and probable posterities, than with the once living but now impossible ancestries in the past. So Pierre's glow of family pride quickly gave place to a deeper hue, when Lucy bade love's banner b",
+      "reentry": "But Love has more to do with his own possible and probable posterities, than with the once living but now impossible ancestries in the past. So Pierre's glow of family pride quickly gave place to a deeper hue, when Lucy bade love's banner blush out from his cheek.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s14",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "And this self-same morning Pierre was very mystical; not continually, though; but most mystical one moment, and overflowing with mad, unbridled merriment, the next. He seemed a youthful Magian, and almost a mountebank together. Chaldaic imp",
+      "reentry": "And this self-same morning Pierre was very mystical; not continually, though; but most mystical one moment, and overflowing with mad, unbridled merriment, the next. He seemed a youthful Magian, and almost a mountebank together. Chaldaic improvisations burst from him, in quick Golden Verses, on the heel of humorous retort and repartee. More especially, the bright glance of Lucy was transporting to him. Now, reckless of his horses, with both arms holding Lucy in his embrace, like a Sicilian diver he dives deep down in the Adriatic of her eyes, and brings up some king's-cup of joy. All the waves in Lucy's eyes seemed waves of infinite glee to him. And as if, like veritable seas, they did indeed catch the reflected irradiations of that pellucid azure morning; in Lucy's eyes, there seemed to shine all the blue glory of the general day, and all the sweet inscrutableness of the sky. And certainly, the blue eye of woman, like the sea, is not uninfluenced by the atmosphere. Only in the open air of some divinest, summer day, will you see its ultramarine,--its fluid lapis lazuli. Then would Pierre burst forth in some screaming shout of joy; and the striped tigers of his chestnut eyes leaped in their lashed cages with a fierce delight. Lucy shrank from him in extreme love; for the extremest top of love, is Fear and Wonder.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s15",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "After seeing Lucy into her aunt's most cheerful parlor, and seating her by the honeysuckle that half clambered into the window there; and near to which was her easel for crayon-sketching, upon part of whose frame Lucy had cunningly trained ",
+      "reentry": "After seeing Lucy into her aunt's most cheerful parlor, and seating her by the honeysuckle that half clambered into the window there; and near to which was her easel for crayon-sketching, upon part of whose frame Lucy had cunningly trained two slender vines, into whose earth-filled pots two of the three legs of the easel were inserted; and sitting down himself by her, and by his pleasant, lightsome chat, striving to chase the last trace of sadness from her; and not till his object seemed fully gained; Pierre rose to call her good aunt to her, and so take his leave till evening, when Lucy called him back, begging him first to bring her the blue portfolio from her chamber, for she wished to kill her last lingering melancholy--if any indeed did linger now--by diverting her thoughts, in a little pencil sketch, to scenes widely different from those of Saddle Meadows and its hills.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s16",
       "title": "Chapter VII",
       "place": "Chapter VII",
-      "reentry": "As Pierre drove through the silent village, beneath the vertical shadows of the noon-day trees, the sweet chamber scene abandoned him, and the mystical face recurred to him, and kept with him. At last, arrived at home, he found his mother a",
+      "reentry": "As Pierre drove through the silent village, beneath the vertical shadows of the noon-day trees, the sweet chamber scene abandoned him, and the mystical face recurred to him, and kept with him. At last, arrived at home, he found his mother absent; so passing straight through the wide middle hall of the mansion, he descended the piazza on the other ride, and wandered away in reveries down to the river bank.",
       "prompt": "A word from this stretch."
     },
     {
@@ -138,14 +132,14 @@
       "id": "s18",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "The face, of which Pierre and Lucy so strangely and fearfully hinted, was not of enchanted air; but its mortal lineaments of mournfulness had been visibly beheld by Pierre. Nor had it accosted him in any privacy; or in any lonely byeway; or",
+      "reentry": "The face, of which Pierre and Lucy so strangely and fearfully hinted, was not of enchanted air; but its mortal lineaments of mournfulness had been visibly beheld by Pierre. Nor had it accosted him in any privacy; or in any lonely byeway; or beneath the white light of the crescent moon; but in a joyous chamber, bright with candles, and ringing with two score women's gayest voices. Out of the heart of mirthfulness, this shadow had come forth to him. Encircled by bandelets of light, it had still beamed upon him; vaguely historic and prophetic; backward, hinting of some irrevocable sin; forward, pointing to some inevitable ill. One of those faces, which now and then appear to man, and without one word of speech, still reveal glimpses of some fearful gospel. In natural guise, but lit by supernatural light; palpable to the senses, but inscrutable to the soul; in their perfectest impression on us, ever hovering between Tartarean misery and Paradisaic beauty; such faces, compounded so of hell and heaven, overthrow in us all foregone persuasions, and make us wondering children in this world again.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s19",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "So Pierre, gladly plunging into this welcome current of talk, was enabled to attend his mother home without furnishing further cause for her concern or wonderment. But not by any means so readily could he allay his own concern and wondermen",
+      "reentry": "So Pierre, gladly plunging into this welcome current of talk, was enabled to attend his mother home without furnishing further cause for her concern or wonderment. But not by any means so readily could he allay his own concern and wonderment. Too really true in itself, however evasive in its effect at the time, was that earnest answer to his mother, declaring that never in his whole existence had he been so profoundly stirred. The face haunted him as some imploring, and beauteous, impassioned, ideal Madonna's haunts the morbidly longing and enthusiastic, but ever-baffled artist. And ever, as the mystic face thus rose before his fancy's sight, another sense was touched in him; the long-drawn, unearthly, girlish shriek pealed through and through his soul; for now he knew the shriek came from the face--such Delphic shriek could only come from such a source. And wherefore that shriek? thought Pierre. Bodes it ill to the face, or me, or both? How am I changed, that my appearance on any scene should have power to work such woe? But it was mostly the face--the face, that wrought upon him. The shriek seemed as incidentally embodied there.",
       "prompt": "A word from this stretch."
     },
     {
@@ -159,21 +153,21 @@
       "id": "s21",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "After this morning of gayety, this noon of tragedy, and this evening so full of chequered pensiveness; Pierre now possessed his soul in joyful mildness and steadfastness; feeling none of that wild anguish of anticipative rapture, which, in ",
+      "reentry": "After this morning of gayety, this noon of tragedy, and this evening so full of chequered pensiveness; Pierre now possessed his soul in joyful mildness and steadfastness; feeling none of that wild anguish of anticipative rapture, which, in weaker minds, too often dislodges Love's sweet bird from her nest.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s22",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "\"The name at the end of this letter will be wholly strange to thee. Hitherto my existence has been utterly unknown to thee. This letter will touch thee and pain thee. Willingly would I spare thee, but I can not. My heart bears me witness, t",
+      "reentry": "\"The name at the end of this letter will be wholly strange to thee. Hitherto my existence has been utterly unknown to thee. This letter will touch thee and pain thee. Willingly would I spare thee, but I can not. My heart bears me witness, that did I think that the suffering these lines would give thee, would, in the faintest degree, compare with what mine has been, I would forever withhold them.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s23",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "This letter, inscribed in a feminine, but irregular hand, and in some places almost illegible, plainly attesting the state of the mind which had dictated it;--stained, too, here and there, with spots of tears, which chemically acted upon by",
+      "reentry": "This letter, inscribed in a feminine, but irregular hand, and in some places almost illegible, plainly attesting the state of the mind which had dictated it;--stained, too, here and there, with spots of tears, which chemically acted upon by the ink, assumed a strange and reddish hue--as if blood and not tears had dropped upon the sheet;--and so completely torn in two by Pierre's own hand, that it indeed seemed the fit scroll of a torn, as well as bleeding heart;--this amazing letter, deprived Pierre for the time of all lucid and definite thought or feeling. He hung half-lifeless in his chair; his hand, clutching the letter, was pressed against his heart, as if some assassin had stabbed him and fled; and Pierre was now holding the dagger in the wound, to stanch the outgushing of the blood.",
       "prompt": "A word from this stretch."
     },
     {
@@ -187,7 +181,7 @@
       "id": "s25",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "In their precise tracings-out and subtile causations, the strongest and fieriest emotions of life defy all analytical insight. We see the cloud, and feel its bolt; but meteorology only idly essays a critical scrutiny as to how that cloud be",
+      "reentry": "In their precise tracings-out and subtile causations, the strongest and fieriest emotions of life defy all analytical insight. We see the cloud, and feel its bolt; but meteorology only idly essays a critical scrutiny as to how that cloud became charged, and how this bolt so stuns. The metaphysical writers confess, that the most impressive, sudden, and overwhelming event, as well as the minutest, is but the product of an infinite series of infinitely involved and untraceable foregoing occurrences. Just so with every motion of the heart. Why this cheek kindles with a noble enthusiasm; why that lip curls in scorn; these are things not wholly imputable to the immediate apparent cause, which is only one link in the chain; but to a long line of dependencies whose further part is lost in the mid-regions of the impalpable air.",
       "prompt": "A word from this stretch."
     },
     {
@@ -201,21 +195,21 @@
       "id": "s27",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "In the cold courts of justice the dull head demands oaths, and holy writ proofs; but in the warm halls of the heart one single, untestified memory's spark shall suffice to enkindle such a blaze of evidence, that all the corners of convictio",
+      "reentry": "In the cold courts of justice the dull head demands oaths, and holy writ proofs; but in the warm halls of the heart one single, untestified memory's spark shall suffice to enkindle such a blaze of evidence, that all the corners of conviction are as suddenly lighted up as a midnight city by a burning building, which on every side whirls its reddened brands.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s28",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "\"Tell me, aunt,\" the child Pierre had early said to her, long before the portrait became his--\"tell me, aunt, how this chair-portrait, as you call it, was painted;--who painted it?--whose chair was this?--have you the chair now?--I don't se",
+      "reentry": "\"Tell me, aunt,\" the child Pierre had early said to her, long before the portrait became his--\"tell me, aunt, how this chair-portrait, as you call it, was painted;--who painted it?--whose chair was this?--have you the chair now?--I don't see it in your room here;--what is papa looking at so strangely?--I should like to know now, what papa was thinking of, then. Do, now, dear aunt, tell me all about this picture, so that when it is mine, as you promise me, I shall know its whole history.\"",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s29",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "If, when the mind roams up and down in the ever-elastic regions of evanescent invention, any definite form or feature can be assigned to the multitudinous shapes it creates out of the incessant dissolvings of its own prior creations; then m",
+      "reentry": "If, when the mind roams up and down in the ever-elastic regions of evanescent invention, any definite form or feature can be assigned to the multitudinous shapes it creates out of the incessant dissolvings of its own prior creations; then might we here attempt to hold and define the least shadowy of those reasons, which about the period of adolescence we now treat of, more frequently occurred to Pierre, whenever he essayed to account for his mother's remarkable distaste for the portrait. Yet will we venture one sketch.",
       "prompt": "A word from this stretch."
     },
     {
@@ -229,35 +223,35 @@
       "id": "s31",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "It was long after midnight when Pierre returned to the house. He had rushed forth in that complete abandonment of soul, which, in so ardent a temperament, attends the first stages of any sudden and tremendous affliction; but now he returned",
+      "reentry": "It was long after midnight when Pierre returned to the house. He had rushed forth in that complete abandonment of soul, which, in so ardent a temperament, attends the first stages of any sudden and tremendous affliction; but now he returned in pallid composure, for the calm spirit of the night, and the then risen moon, and the late revealed stars, had all at last become as a strange subduing melody to him, which, though at first trampled and scorned, yet by degrees had stolen into the windings of his heart, and so shed abroad its own quietude in him. Now, from his height of composure, he firmly gazed abroad upon the charred landscape within him; as the timber man of Canada, forced to fly from the conflagration of his forests, comes back again when the fires have waned, and unblinkingly eyes the immeasurable fields of fire-brands that here and there glow beneath the wide canopy of smoke.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s32",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "But if the presentiment in Pierre of his mother's pride, as bigotedly hostile to the noble design he cherished; if this feeling was so wretched to him; far more so was the thought of another and a deeper hostility, arising from her more spi",
+      "reentry": "But if the presentiment in Pierre of his mother's pride, as bigotedly hostile to the noble design he cherished; if this feeling was so wretched to him; far more so was the thought of another and a deeper hostility, arising from her more spiritual part. For her pride would not be so scornful, as her wedded memories reject with horror, the unmentionable imputation involved in the mere fact of Isabel's existence. In what galleries of conjecture, among what horrible haunting toads and scorpions, would such a revelation lead her? When Pierre thought of this, the idea of at all divulging his secret to his mother, not only was made repelling by its hopelessness, as an infirm attack upon her citadel of pride, but was made in the last degree inhuman, as torturing her in her tenderest recollections, and desecrating the whitest altar in her sanctuary.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s33",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "Most melancholy of all the hours of earth, is that one long, gray hour, which to the watcher by the lamp intervenes between the night and day; when both lamp and watcher, over-tasked, grow sickly in the pallid light; and the watcher, seekin",
+      "reentry": "Most melancholy of all the hours of earth, is that one long, gray hour, which to the watcher by the lamp intervenes between the night and day; when both lamp and watcher, over-tasked, grow sickly in the pallid light; and the watcher, seeking for no gladness in the dawn, sees naught but garish vapors there; and almost invokes a curse upon the public day, that shall invade his lonely night of sufferance.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s34",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "His stroll was longer than he meant; and when he returned up the Linden walk leading to the breakfast-room, and ascended the piazza steps, and glanced into the wide window there, he saw his mother seated not far from the table; her face tur",
+      "reentry": "His stroll was longer than he meant; and when he returned up the Linden walk leading to the breakfast-room, and ascended the piazza steps, and glanced into the wide window there, he saw his mother seated not far from the table; her face turned toward his own; and heard her gay voice, and peculiarly light and buoyant laugh, accusing him, and not her, of being the morning's laggard now. Dates was busy among some spoons and napkins at a side-stand.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s35",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "The swiftness and unrepellableness of the billow which, with its first shock, had so profoundly whelmed Pierre, had not only poured into his soul a tumult of entirely new images and emotions, but, for the time, it almost entirely drove out ",
+      "reentry": "The swiftness and unrepellableness of the billow which, with its first shock, had so profoundly whelmed Pierre, had not only poured into his soul a tumult of entirely new images and emotions, but, for the time, it almost entirely drove out of him all previous ones. The things that any way bore directly upon the pregnant fact of Isabel, these things were all animate and vividly present to him; but the things which bore more upon himself, and his own personal condition, as now forever involved with his sister's, these things were not so animate and present to him. The conjectured past of Isabel took mysterious hold of his father; therefore, the idea of his father tyrannized over his imagination; and the possible future of Isabel, as so essentially though indirectly compromisable by whatever course of conduct his mother might hereafter ignorantly pursue with regard to himself, as henceforth, through Isabel, forever altered to her; these considerations brought his mother with blazing prominence before him.",
       "prompt": "A word from this stretch."
     },
     {
@@ -285,35 +279,35 @@
       "id": "s39",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Half wishful that the hour would come; half shuddering that every moment it still came nearer and more near to him; dry-eyed, but wet with that dark day's rain; at fall of eve, Pierre emerged from long wanderings in the primeval woods of Sa",
+      "reentry": "Half wishful that the hour would come; half shuddering that every moment it still came nearer and more near to him; dry-eyed, but wet with that dark day's rain; at fall of eve, Pierre emerged from long wanderings in the primeval woods of Saddle Meadows, and for one instant stood motionless upon their sloping skirt.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s40",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "He stands before the door; the house is steeped in silence; he knocks; the casement light flickers for a moment, and then moves away; within, he hears a door creak on its hinges; then his whole heart beats wildly as the outer latch is lifte",
+      "reentry": "He stands before the door; the house is steeped in silence; he knocks; the casement light flickers for a moment, and then moves away; within, he hears a door creak on its hinges; then his whole heart beats wildly as the outer latch is lifted; and holding the light above her supernatural head, Isabel stands before him. It is herself. No word is spoken; no other soul is seen. They enter the room of the double casement; and Pierre sits down, overpowered with bodily faintness and spiritual awe. He lifts his eyes to Isabel's gaze of loveliness and loneliness; and then a low, sweet, half-sobbing voice of more than natural musicalness is heard:--",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s41",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "\"I never knew a mortal mother. The farthest stretch of my life's memory can not recall one single feature of such a face. If, indeed, mother of mine hath lived, she is long gone, and cast no shadow on the ground she trod. Pierre, the lips t",
+      "reentry": "\"I never knew a mortal mother. The farthest stretch of my life's memory can not recall one single feature of such a face. If, indeed, mother of mine hath lived, she is long gone, and cast no shadow on the ground she trod. Pierre, the lips that do now speak to thee, never touched a woman's breast; I seem not of woman born. My first dim life-thoughts cluster round an old, half-ruinous house in some region, for which I now have no chart to seek it out. If such a spot did ever really exist, that too seems to have been withdrawn from all the remainder of the earth. It was a wild, dark house, planted in the midst of a round, cleared, deeply-sloping space, scooped out of the middle of deep stunted pine woods. Ever I shrunk at evening from peeping out of my window, lest the ghostly pines should steal near to me, and reach out their grim arms to snatch me into their horrid shadows. In summer the forest unceasingly hummed with unconjecturable voices of unknown birds and beasts. In winter its deep snows were traced like any paper map, with dotting night-tracks of four-footed creatures, that, even to the sun, were never visible, and never were seen by man at all. In the round open space the dark house stood, without one single green twig or leaf to shelter it; shadeless and shelterless in the heart of shade and shelter. Some of the windows were rudely boarded up, with boards nailed straight up and down; and those rooms were utterly empty, and never were entered, though they were doorless. But often, from the echoing corridor, I gazed into them with fear; for the great fire-places were all in ruins; the lower tier of back-stones were burnt into one white, common crumbling; and the black bricks above had fallen upon the hearths, heaped here and there with the still falling soot of long-extinguished fires. Every hearth-stone in that house had one long crack through it; every floor drooped at the corners; and outside, the whole base of the house, where it rested on the low foundation of greenish stones, was strewn with dull, yellow molderings of the rotting sills. No name; no scrawled or written thing; no book, was in the house; no one memorial speaking of its former occupants. It was dumb as death. No grave-stone, or mound, or any little hillock around the house, betrayed any past burials of man or child. And thus, with no trace then to me of its past history, thus it hath now entirely departed and perished from my slightest knowledge as to where that house so stood, or in what region it so stood. None other house like it have I ever seen. But once I saw plates of the outside of French chateaux which powerfully recalled its dim image to me, especially the two rows of small dormer windows projecting from the inverted hopper-roof. But that house was of wood, and these of stone. Still, sometimes I think that house was not in this country, but somewhere in Europe; perhaps in France; but it is all bewildering to me; and so you must not start at me, for I can not but talk wildly upon so wild a theme.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s42",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "Filled with nameless wonderings at this strange being, Pierre sat mute, intensely regarding her half-averted aspect. Her immense soft tresses of the jettiest hair had slantingly fallen over her as though a curtain were half drawn from befor",
+      "reentry": "Filled with nameless wonderings at this strange being, Pierre sat mute, intensely regarding her half-averted aspect. Her immense soft tresses of the jettiest hair had slantingly fallen over her as though a curtain were half drawn from before some saint enshrined. To Pierre, she seemed half unearthly; but this unearthliness was only her mysteriousness, not any thing that was repelling or menacing to him. And still, the low melodies of her far interior voice hovered in sweet echoes in the room; and were trodden upon, and pressed like gushing grapes, by the steady invisible pacing on the floor above.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s43",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "\"I must have been nine, or ten, or eleven years old, when the pleasant-looking woman carried me away from the large house. She was a farmer's wife; and now that was my residence, the farm-house. They taught me to sew, and work with wool, an",
+      "reentry": "\"I must have been nine, or ten, or eleven years old, when the pleasant-looking woman carried me away from the large house. She was a farmer's wife; and now that was my residence, the farm-house. They taught me to sew, and work with wool, and spin the wool; I was nearly always busy now. This being busy, too, this it must have been, which partly brought to me the power of being sensible of myself as something human. Now I began to feel strange differences. When I saw a snake trailing through the grass, and darting out the fire-fork from its mouth, I said to myself, That thing is not human, but I am human. When the lightning flashed, and split some beautiful tree, and left it to rot from all its greenness, I said, That lightning is not human, but I am human. And so with all other things. I can not speak coherently here; but somehow I felt that all good, harmless men and women were human things, placed at cross-purposes, in a world of snakes and lightnings, in a world of horrible and inscrutable inhumanities. I have had no training of any sort. All my thoughts well up in me; I know not whether they pertain to the old bewilderings or not; but as they are, they are, and I can not alter them, for I had nothing to do with putting them in my mind, and I never affect any thoughts, and I never adulterate any thoughts; but when I speak, think forth from the tongue, speech being sometimes before the thought; so, often, my own tongue teaches me new things.",
       "prompt": "A word from this stretch."
     },
     {
@@ -334,56 +328,56 @@
       "id": "s46",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Not immediately, not for a long time, could Pierre fully, or by any approximation, realize the scene which he had just departed. But the vague revelation was now in him, that the visible world, some of which before had seemed but too common",
+      "reentry": "Not immediately, not for a long time, could Pierre fully, or by any approximation, realize the scene which he had just departed. But the vague revelation was now in him, that the visible world, some of which before had seemed but too common and prosaic to him; and but too intelligible; he now vaguely felt, that all the world, and every misconceivedly common and prosaic thing in it, was steeped a million fathoms in a mysteriousness wholly hopeless of solution. First, the enigmatical story of the girl, and the profound sincerity of it, and yet the ever accompanying haziness, obscurity, and almost miraculousness of it;--first, this wonderful story of the girl had displaced all commonness and prosaicness from his soul; and then, the inexplicable spell of the guitar, and the subtleness of the melodious appealings of the few brief words from Isabel sung in the conclusion of the melody--all this had bewitched him, and enchanted him, till he had sat motionless and bending over, as a tree-transformed and mystery-laden visitant, caught and fast bound in some necromancer's garden.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s47",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "He saluted her; but she looked gravely and yet alarmedly, and then in a sudden, illy-repressed panic, upon him. Then he knew he must be wonderfully changed. But his mother spoke not to him, only to return his good-morning. He saw that she w",
+      "reentry": "He saluted her; but she looked gravely and yet alarmedly, and then in a sudden, illy-repressed panic, upon him. Then he knew he must be wonderfully changed. But his mother spoke not to him, only to return his good-morning. He saw that she was deeply offended with him, on many accounts; moreover, that she was vaguely frightened about him, and finally that notwithstanding all this, her stung pride conquered all apprehensiveness in her; and he knew his mother well enough to be very certain that, though he should unroll a magician's parchment before her now, she would verbally express no interest, and seek no explanation from him. Nevertheless, he could not entirely abstain from testing the power of her reservedness.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s48",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "As the door of the breakfast-room closed upon Pierre, Mrs. Glendinning rose, her fork unconsciously retained in her hand. Presently, as she paced the room in deep, rapid thought, she became conscious of something strange in her grasp, and w",
+      "reentry": "As the door of the breakfast-room closed upon Pierre, Mrs. Glendinning rose, her fork unconsciously retained in her hand. Presently, as she paced the room in deep, rapid thought, she became conscious of something strange in her grasp, and without looking at it, to mark what it was, impulsively flung it from her. A dashing noise was heard, and then a quivering. She turned; and hanging by the side of Pierre's portrait, she saw her own smiling picture pierced through, and the fork, whose silver tines had caught in the painted bosom, vibratingly rankled in the wound.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s49",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "Pierre plunged deep into the woods, and paused not for several miles; paused not till he came to a remarkable stone, or rather, smoothed mass of rock, huge as a barn, which, wholly isolated horizontally, was yet sweepingly overarched by bee",
+      "reentry": "Pierre plunged deep into the woods, and paused not for several miles; paused not till he came to a remarkable stone, or rather, smoothed mass of rock, huge as a barn, which, wholly isolated horizontally, was yet sweepingly overarched by beech-trees and chestnuts.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s50",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "Yet now advancing steadily, and as if by some interior pre-determination, and eying the mass unfalteringly; he then threw himself prone upon the wood's last year's leaves, and slid himself straight into the horrible interspace, and lay ther",
+      "reentry": "Yet now advancing steadily, and as if by some interior pre-determination, and eying the mass unfalteringly; he then threw himself prone upon the wood's last year's leaves, and slid himself straight into the horrible interspace, and lay there as dead. He spoke not, for speechless thoughts were in him. These gave place at last to things less and less unspeakable; till at last, from beneath the very brow of the beetlings and the menacings of the Terror Stone came the audible words of Pierre:--",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s51",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "When in his imaginative ruminating moods of early youth, Pierre had christened the wonderful stone by the old resounding name of Memnon, he had done so merely from certain associative remembrances of that Egyptian marvel, of which all Easte",
+      "reentry": "When in his imaginative ruminating moods of early youth, Pierre had christened the wonderful stone by the old resounding name of Memnon, he had done so merely from certain associative remembrances of that Egyptian marvel, of which all Eastern travelers speak. And when the fugitive thought had long ago entered him of desiring that same stone for his head-stone, when he should be no more; then he had only yielded to one of those innumerable fanciful notions, tinged with dreamy painless melancholy, which are frequently suggested to the mind of a poetic boy. But in after-times, when placed in far different circumstances from those surrounding him at the Meadows, Pierre pondered on the stone, and his young thoughts concerning it, and, later, his desperate act in crawling under it; then an immense significance came to him, and the long-passed unconscious movements of his then youthful heart seemed now prophetic to him, and allegorically verified by the subsequent events.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s52",
       "title": "Chapter VII",
       "place": "Chapter VII",
-      "reentry": "As Pierre went on through the woods, all thoughts now left him but those investing Isabel. He strove to condense her mysterious haze into some definite and comprehensible shape. He could not but infer that the feeling of bewilderment, which",
+      "reentry": "As Pierre went on through the woods, all thoughts now left him but those investing Isabel. He strove to condense her mysterious haze into some definite and comprehensible shape. He could not but infer that the feeling of bewilderment, which she had so often hinted of during their interview, had caused her continually to go aside from the straight line of her narration; and finally to end it in an abrupt and enigmatical obscurity. But he also felt assured, that as this was entirely unintended, and now, doubtless, regretted by herself, so their coming second interview would help to clear up much of this mysteriousness; considering that the elapsing interval would do much to tranquilize her, and rally her into less of wonderfulness to him; he did not therefore so much accuse his unthinkingness in naming the postponing hour he had. For, indeed, looking from the morning down the vista of the day, it seemed as indefinite and interminable to him. He could not bring himself to confront any face or house; a plowed field, any sign of tillage, the rotted stump of a long-felled pine, the slightest passing trace of man was uncongenial and repelling to him. Likewise in his own mind all remembrances and imaginings that had to do with the common and general humanity had become, for the time, in the most singular manner distasteful to him. Still, while thus loathing all that was common in the two different worlds--that without, and that within--nevertheless, even in the most withdrawn and subtlest region of his own essential spirit, Pierre could not now find one single agreeable twig of thought whereon to perch his weary soul.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s53",
       "title": "Chapter VIII",
       "place": "Chapter VIII",
-      "reentry": "The issue of these reconsiderings was the conviction, that all he could now reasonably anticipate from Isabel, in further disclosure on the subject of her life, were some few additional particulars bringing it down to the present moment; an",
+      "reentry": "The issue of these reconsiderings was the conviction, that all he could now reasonably anticipate from Isabel, in further disclosure on the subject of her life, were some few additional particulars bringing it down to the present moment; and, also, possibly filling out the latter portion of what she had already revealed to him. Nor here, could he persuade himself, that she would have much to say. Isabel had not been so digressive and withholding as he had thought. What more, indeed, could she now have to impart, except by what strange means she had at last come to find her brother out; and the dreary recital of how she had pecuniarily wrestled with her destitute condition; how she had come to leave one place of toiling refuge for another, till now he found her in humble servitude at farmer Ulver's? Is it possible then, thought Pierre, that there lives a human creature in this common world of everydays, whose whole history may be told in little less than two-score words, and yet embody in that smallness a fathomless fountain of ever-welling mystery? Is it possible, after all, that spite of bricks and shaven faces, this world we live in is brimmed with wonders, and I and all mankind, beneath our garbs of common-placeness, conceal enigmas that the stars themselves, and perhaps the highest seraphim can not resolve?",
       "prompt": "A word from this stretch."
     },
     {
@@ -404,28 +398,28 @@
       "id": "s56",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "\"My brother, thou wilt remember that certain part of my story which in reference to my more childish years spent remote from here, introduced the gentleman--my--yes, *our* father, Pierre. I can not describe to thee, for indeed, I do not mys",
+      "reentry": "\"My brother, thou wilt remember that certain part of my story which in reference to my more childish years spent remote from here, introduced the gentleman--my--yes, *our* father, Pierre. I can not describe to thee, for indeed, I do not myself comprehend how it was, that though at the time I sometimes called him my father, and the people of the house also called him so, sometimes when speaking of him to me; yet--partly, I suppose, because of the extraordinary secludedness of my previous life--I did not then join in my mind with the word father, all those peculiar associations which the term ordinarily inspires in children. The word father only seemed a word of general love and endearment to me--little or nothing more; it did not seem to involve any claims of any sort, one way or the other. I did not ask the name of my father; for I could have had no motive to hear him named, except to individualize the person who was so peculiarly kind to me; and individualized in that way he already was, since he was generally called by us *the gentleman*, and sometimes *my father*. As I have no reason to suppose that had I then or afterward, questioned the people of the house as to what more particular name my father went by in the world, they would have at all disclosed it to me; and, indeed, since, for certain singular reasons, I now feel convinced that on that point they were pledged to secrecy; I do not know that I ever would have come to learn my father's name,--and by consequence, ever have learned the least shade or shadow of knowledge as to you, Pierre, or any of your kin--had it not been for the merest little accident, which early revealed it to me, though at the moment I did not know the value of that knowledge. The last time my father visited the house, he chanced to leave his handkerchief behind him. It was the farmer's wife who first discovered it. She picked it up, and fumbling at it a moment, as if rapidly examining the corners, tossed it to me, saying, 'Here, Isabel, here is the good gentleman's handkerchief; keep it for him now, till he comes to see little Bell again.' Gladly I caught the handkerchief, and put it into my bosom. It was a white one; and upon closely scanning it, I found a small line of fine faded yellowish writing in the middle of it. At that time I could not read either print or writing, so I was none the wiser then; but still, some secret instinct told me, that the woman would not so freely have given me the handkerchief, had she known there was any writing on it. I forbore questioning her on the subject; I waited till my father should return, to secretly question him. The handkerchief had become dusty by lying on the uncarpeted floor. I took it to the brook and washed it, and laid it out on the grass where none would chance to pass; and I ironed it under my little apron, so that none would be attracted to it, to look at it again. But my father never returned; so, in my grief, the handkerchief became the more and the more endeared to me; it absorbed many of the secret tears I wept in memory of my dear departed friend, whom, in my child-like ignorance, I then equally called *my father* and *the gentleman*. But when the impression of his death became a fixed thing to me, then again I washed and dried and ironed the precious memorial of him, and put it away where none should find it but myself, and resolved never more to soil it with my tears; and I folded it in such a manner, that the name was invisibly buried in the heart of it, and it was like opening a book and turning over many blank leaves before I came to the mysterious writing, which I knew should be one day read by me, without direct help from any one. Now I resolved to learn my letters, and learn to read, in order that of myself I might learn the meaning of those faded characters. No other purpose but that only one, did I have in learning then to read. I easily induced the woman to give me my little teachings, and being uncommonly quick, and moreover, most eager to learn, I soon mastered the alphabet, and went on to spelling, and by-and-by to reading, and at last to the complete deciphering of the talismanic word--Glendinning. I was yet very ignorant. *Glendinning*, thought I, what is that? It sounds something like *gentleman*;--Glen-din-ning;--just as many syllables as *gentleman*; and--G--it begins with the same letter; yes, it must mean *my father*. I will think of him by that word now;--I will not think of the *gentleman*, but of *Glendinning*. When at last I removed from that house and went to another, and still another, and as I still grew up and thought more to myself, that word was ever humming in my head, I saw it would only prove the key to more. But I repressed all undue curiosity, if any such has ever filled my breast. I would not ask of any one, who it was that had been Glendinning; where he had lived; whether, ever any other girl or boy had called him father as I had done. I resolved to hold myself in perfect patience, as somehow mystically certain, that Fate would at last disclose to me, of itself, and at the suitable time, whatever Fate thought it best for me to know. But now, my brother, I must go aside a little for a moment.--Hand me the guitar.\"",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s57",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "Almost deprived of consciousness by the spell flung over him by the marvelous girl, Pierre unknowingly gazed away from her, as on vacancy; and when at last stillness had once more fallen upon the room--all except the stepping--and he recove",
+      "reentry": "Almost deprived of consciousness by the spell flung over him by the marvelous girl, Pierre unknowingly gazed away from her, as on vacancy; and when at last stillness had once more fallen upon the room--all except the stepping--and he recovered his self-possession, and turned to look where he might now be, he was surprised to see Isabel composedly, though avertedly, seated on the bench; the longer and fuller tresses of her now ungleaming hair flung back, and the guitar quietly leaning in the corner.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s58",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "\"Thou rememberest, my brother, my telling thee last night, how the--the--thou knowest what I mean--*that, there*\"--avertedly pointing to the guitar; \"thou rememberest how it came into my possession. But perhaps I did not tell thee, that the",
+      "reentry": "\"Thou rememberest, my brother, my telling thee last night, how the--the--thou knowest what I mean--*that, there*\"--avertedly pointing to the guitar; \"thou rememberest how it came into my possession. But perhaps I did not tell thee, that the pedler said he had got it in barter from the servants of a great house some distance from the place where I was then residing.\"",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s59",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "\"Though but one day hath passed, my brother, since we first met in life, yet thou hast that heavenly magnet in thee, which draws all my soul's interior to thee. I will go on.--Having to wait for a neighbor's wagon, I arrived but late at the",
+      "reentry": "\"Though but one day hath passed, my brother, since we first met in life, yet thou hast that heavenly magnet in thee, which draws all my soul's interior to thee. I will go on.--Having to wait for a neighbor's wagon, I arrived but late at the Sewing Circle. When I entered, the two joined rooms were very full. With the farmer's girls, our neighbors, I passed along to the further corner, where thou didst see me; and as I went, some heads were turned, and some whisperings I heard, of--'She's the new help at poor Walter Ulver's--the strange girl they've got--she thinks herself 'mazing pretty, I'll be bound;--but nobody knows her--Oh, how demure!--but not over-good, I guess;--I wouldn't be her, not I--mayhap she's some other ruined Delly, run away;--minx!' It was the first time poor Bell had ever mixed in such a general crowded company; and knowing little or nothing of such things, I had thought, that the meeting being for charity's sweet sake, uncharity could find no harbor there; but no doubt it was mere thoughtlessness, not malice in them. Still, it made my heart ache in me sadly; for then I very keenly felt the dread suspiciousness, in which a strange and lonely grief invests itself to common eyes; as if grief itself were not enough, nor innocence any armor to us, but despite must also come, and icy infamy! Miserable returnings then I had--even in the midst of bright-budding girls and full-blown women--miserable returnings then I had of the feeling, the bewildering feeling of the inhumanities I spoke of in my earlier story. But Pierre, blessed Pierre, do not look so sadly and half-reproachfully upon me. Lone and lost though I have been, I love my kind; and charitably and intelligently pity them, who uncharitably and unintelligently do me despite. And thou, *thou*, blessed brother, hath glorified many somber places in my soul, and taught me once for all to know, that my kind are capable of things which would be glorious in angels. So look away from me, dear Pierre, till thou hast taught thine eyes more wonted glances.\"",
       "prompt": "A word from this stretch."
     },
     {
@@ -439,7 +433,7 @@
       "id": "s61",
       "title": "Chapter VII",
       "place": "Chapter VII",
-      "reentry": "We know not Pierre Glendinning's thoughts as he gained the village and passed on beneath its often shrouding trees, and saw no light from man, and heard no sound from man, but only, by intervals, saw at his feet the soft ground-lightnings, ",
+      "reentry": "We know not Pierre Glendinning's thoughts as he gained the village and passed on beneath its often shrouding trees, and saw no light from man, and heard no sound from man, but only, by intervals, saw at his feet the soft ground-lightnings, snake-like, playing in and out among the blades of grass; and between the trees, caught the far dim light from heaven, and heard the far wide general hum of the sleeping but still breathing earth.",
       "prompt": "A word from this stretch."
     },
     {
@@ -453,28 +447,28 @@
       "id": "s63",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "In those Hyperborean regions, to which enthusiastic Truth, and Earnestness, and Independence, will invariably lead a mind fitted by nature for profound and fearless thought, all objects are seen in a dubious, uncertain, and refracting light",
+      "reentry": "In those Hyperborean regions, to which enthusiastic Truth, and Earnestness, and Independence, will invariably lead a mind fitted by nature for profound and fearless thought, all objects are seen in a dubious, uncertain, and refracting light. Viewed through that rarefied atmosphere the most immemorially admitted maxims of men begin to slide and fluctuate, and finally become wholly inverted; the very heavens themselves being not innocent of producing this confounding effect, since it is mostly in the heavens themselves that these wonderful mirages are exhibited.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s64",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "In the profoundly silent heart of a house full of sleeping serving-men and maids, Pierre now sat in his chamber before his accustomed round table, still tossed with the books and the papers which, three days before, he had abruptly left, fo",
+      "reentry": "In the profoundly silent heart of a house full of sleeping serving-men and maids, Pierre now sat in his chamber before his accustomed round table, still tossed with the books and the papers which, three days before, he had abruptly left, for a sudden and more absorbing object. Uppermost and most conspicuous among the books were the Inferno of Dante, and the Hamlet of Shakspeare.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s65",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "The man Dante Alighieri received unforgivable affronts and insults from the world; and the poet Dante Alighieri bequeathed his immortal curse to it, in the sublime malediction of the Inferno. The fiery tongue whose political forkings lost h",
+      "reentry": "The man Dante Alighieri received unforgivable affronts and insults from the world; and the poet Dante Alighieri bequeathed his immortal curse to it, in the sublime malediction of the Inferno. The fiery tongue whose political forkings lost him the solacements of this world, found its malicious counterpart in that muse of fire, which would forever bar the vast bulk of mankind from all solacement in the worlds to come. Fortunately for the felicity of the Dilletante in Literature, the horrible allegorical meanings of the Inferno, lie not on the surface; but unfortunately for the earnest and youthful piercers into truth and reality, those horrible meanings, when first discovered, infuse their poison into a spot previously unprovided with that sovereign antidote of a sense of uncapitulatable security, which is only the possession of the furthest advanced and profoundest souls.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s66",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "Torn into a hundred shreds the printed pages of Hell and Hamlet lay at his feet, which trampled them, while their vacant covers mocked him with their idle titles. Dante had made him fierce, and Hamlet had insinuated that there was none to s",
+      "reentry": "Torn into a hundred shreds the printed pages of Hell and Hamlet lay at his feet, which trampled them, while their vacant covers mocked him with their idle titles. Dante had made him fierce, and Hamlet had insinuated that there was none to strike. Dante had taught him that he had bitter cause of quarrel; Hamlet taunted him with faltering in the fight. Now he began to curse anew his fate, for now he began to see that after all he had been finely juggling with himself, and postponing with himself, and in meditative sentimentalities wasting the moments consecrated to instant action.",
       "prompt": "A word from this stretch."
     },
     {
@@ -488,21 +482,21 @@
       "id": "s68",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Glorified be his gracious memory who first said, The deepest gloom precedes the day. We care not whether the saying will prove true to the utmost bounds of things; sufficient that it sometimes does hold true within the bounds of earthly fin",
+      "reentry": "Glorified be his gracious memory who first said, The deepest gloom precedes the day. We care not whether the saying will prove true to the utmost bounds of things; sufficient that it sometimes does hold true within the bounds of earthly finitude.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s69",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "If next to that resolve concerning his lasting fraternal succor to Isabel, there was at this present time any determination in Pierre absolutely inflexible, and partaking at once of the sacredness and the indissolubleness of the most solemn",
+      "reentry": "If next to that resolve concerning his lasting fraternal succor to Isabel, there was at this present time any determination in Pierre absolutely inflexible, and partaking at once of the sacredness and the indissolubleness of the most solemn oath, it was the enthusiastic, and apparently wholly supererogatory resolution to hold his father's memory untouched; nor to one single being in the world reveal the paternity of Isabel. Unrecallably dead and gone from out the living world, again returned to utter helplessness, so far as this world went; his perished father seemed to appeal to the dutifulness and mercifulness of Pierre, in terms far more moving than though the accents proceeded from his mortal mouth. And what though not through the sin of Pierre, but through his father's sin, that father's fair fame now lay at the mercy of the son, and could only be kept inviolate by the son's free sacrifice of all earthly felicity;--what if this were so? It but struck a still loftier chord in the bosom of the son, and filled him with infinite magnanimities. Never had the generous Pierre cherished the heathenish conceit, that even in the general world, Sin is a fair object to be stretched on the cruelest racks by self-complacent Virtue, that self-complacent Virtue may feed her lily-liveredness on the pallor of Sin's anguish. For perfect Virtue does not more loudly claim our approbation, than repented Sin in its concludedness does demand our utmost tenderness and concern. And as the more immense the Virtue, so should be the more immense our approbation; likewise the more immense the Sin, the more infinite our pity. In some sort, Sin hath its sacredness, not less than holiness. And great Sin calls forth more magnanimity than small Virtue. What man, who is a man, does not feel livelier and more generous emotions toward the great god of Sin--Satan,--than toward yonder haberdasher, who only is a sinner in the small and entirely honorable way of trade?",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s70",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "There is a dark, mad mystery in some human hearts, which, sometimes, during the tyranny of a usurper mood, leads them to be all eagerness to cast off the most intense beloved bond, as a hindrance to the attainment of whatever transcendental",
+      "reentry": "There is a dark, mad mystery in some human hearts, which, sometimes, during the tyranny of a usurper mood, leads them to be all eagerness to cast off the most intense beloved bond, as a hindrance to the attainment of whatever transcendental object that usurper mood so tyrannically suggests. Then the beloved bond seems to hold us to no essential good; lifted to exalted mounts, we can dispense with all the vale; endearments we spurn; kisses are blisters to us; and forsaking the palpitating forms of mortal love, we emptily embrace the boundless and the unbodied air. We think we are not human; we become as immortal bachelors and gods; but again, like the Greek gods themselves, prone we descend to earth; glad to be uxorious once more; glad to hide these god-like heads within the bosoms made of too-seducing clay.",
       "prompt": "A word from this stretch."
     },
     {
@@ -516,7 +510,7 @@
       "id": "s72",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Sucked within the Maelstrom, man must go round. Strike at one end the longest conceivable row of billiard balls in close contact, and the furthermost ball will start forth, while all the rest stand still; and yet that last ball was not stru",
+      "reentry": "Sucked within the Maelstrom, man must go round. Strike at one end the longest conceivable row of billiard balls in close contact, and the furthermost ball will start forth, while all the rest stand still; and yet that last ball was not struck at all. So, through long previous generations, whether of births or thoughts, Fate strikes the present man. Idly he disowns the blow's effect, because he felt no blow, and indeed, received no blow. But Pierre was not arguing Fixed Fate and Free Will, now; Fixed Fate and Free Will were arguing him, and Fixed Fate got the better in the debate.",
       "prompt": "A word from this stretch."
     },
     {
@@ -537,7 +531,7 @@
       "id": "s75",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "Passing through the broad court-yard's postern, Pierre closed it after him, and then turned and leaned upon it, his eyes fixed upon the great central chimney of the mansion, from which a light blue smoke was wreathing gently into the mornin",
+      "reentry": "Passing through the broad court-yard's postern, Pierre closed it after him, and then turned and leaned upon it, his eyes fixed upon the great central chimney of the mansion, from which a light blue smoke was wreathing gently into the morning air.",
       "prompt": "A word from this stretch."
     },
     {
@@ -551,7 +545,7 @@
       "id": "s77",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "When on the previous night Pierre had left the farm-house where Isabel harbored, it will be remembered that no hour, either of night or day, no special time at all had been assigned for a succeeding interview. It was Isabel, who for some do",
+      "reentry": "When on the previous night Pierre had left the farm-house where Isabel harbored, it will be remembered that no hour, either of night or day, no special time at all had been assigned for a succeeding interview. It was Isabel, who for some doubtlessly sufficient reason of her own, had, for the first meeting, assigned the early hour of darkness.",
       "prompt": "A word from this stretch."
     },
     {
@@ -593,7 +587,7 @@
       "id": "s83",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "Next morning, by break of day, at four o'clock, the four swift hours were personified in four impatient horses, which shook their trappings beneath the windows of the inn. Three figures emerged into the cool dim air and took their places in",
+      "reentry": "Next morning, by break of day, at four o'clock, the four swift hours were personified in four impatient horses, which shook their trappings beneath the windows of the inn. Three figures emerged into the cool dim air and took their places in the coach.",
       "prompt": "A word from this stretch."
     },
     {
@@ -607,14 +601,14 @@
       "id": "s85",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "All profound things, and emotions of things are preceded and attended by Silence. What a silence is that with which the pale bride precedes the responsive *I will*, to the priest's solemn question, *Wilt thou have this man for thy husband?*",
+      "reentry": "All profound things, and emotions of things are preceded and attended by Silence. What a silence is that with which the pale bride precedes the responsive *I will*, to the priest's solemn question, *Wilt thou have this man for thy husband?* In silence, too, the wedded hands are clasped. Yea, in silence the child Christ was born into the world. Silence is the general consecration of the universe. Silence is the invisible laying on of the Divine Pontiff's hands upon the world. Silence is at once the most harmless and the most awful thing in all nature. It speaks of the Reserved Forces of Fate. Silence is the only Voice of our God.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s86",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "Sooner or later in this life, the earnest, or enthusiastic youth comes to know, and more or less appreciate this startling solecism:--That while, as the grand condition of acceptance to God, Christianity calls upon all men to renounce this ",
+      "reentry": "Sooner or later in this life, the earnest, or enthusiastic youth comes to know, and more or less appreciate this startling solecism:--That while, as the grand condition of acceptance to God, Christianity calls upon all men to renounce this world; yet by all odds the most Mammonish part of this world--Europe and America--are owned by none but professed Christian nations, who glory in the owning, and seem to have some reason therefor.",
       "prompt": "A word from this stretch."
     },
     {
@@ -642,14 +636,14 @@
       "id": "s90",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "But little would we comprehend the peculiar relation between Pierre and Glen--a relation involving in the end the most serious results--were there not here thrown over the whole equivocal, preceding account of it, another and more comprehen",
+      "reentry": "But little would we comprehend the peculiar relation between Pierre and Glen--a relation involving in the end the most serious results--were there not here thrown over the whole equivocal, preceding account of it, another and more comprehensive equivocalness, which shall absorb all minor ones in itself; and so make one pervading ambiguity the only possible explanation for all the ambiguous details.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s91",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "Now the matter of the house had remained in precisely the above-stated awaiting predicament, down to the time of Pierre's great life-revolution, the receipt of Isabel's letter. And though, indeed, Pierre could not but naturally hesitate at ",
+      "reentry": "Now the matter of the house had remained in precisely the above-stated awaiting predicament, down to the time of Pierre's great life-revolution, the receipt of Isabel's letter. And though, indeed, Pierre could not but naturally hesitate at still accepting the use of the dwelling, under the widely different circumstances in which he now found himself; and though at first the strongest possible spontaneous objections on the ground of personal independence, pride, and general scorn, all clamorously declared in his breast against such a course; yet, finally, the same uncompunctuous, ever-adaptive sort of motive which had induced his original acceptation, prompted him, in the end, still to maintain it unrevoked. It would at once set him at rest from all immediate tribulations of mere bed and board; and by affording him a shelter, for an indefinite term, enable him the better to look about him, and consider what could best be done to further the permanent comfort of those whom Fate had intrusted to his charge.",
       "prompt": "A word from this stretch."
     },
     {
@@ -691,7 +685,7 @@
       "id": "s97",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Among the various conflicting modes of writing history, there would seem to be two grand practical distinctions, under which all the rest must subordinately range. By the one mode, all contemporaneous circumstances, facts, and events must b",
+      "reentry": "Among the various conflicting modes of writing history, there would seem to be two grand practical distinctions, under which all the rest must subordinately range. By the one mode, all contemporaneous circumstances, facts, and events must be set down contemporaneously; by the other, they are only to be set down as the general stream of the narrative shall dictate; for matters which are kindred in time, may be very irrelative in themselves. I elect neither of these; I am careless of either; both are well enough in their way; I write precisely as I please.",
       "prompt": "A word from this stretch."
     },
     {
@@ -705,7 +699,7 @@
       "id": "s99",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "But it was more especially the Lecture invitations coming from venerable, gray-headed metropolitan Societies, and indited by venerable gray-headed Secretaries, which far from elating filled the youthful Pierre with the sincerest sense of hu",
+      "reentry": "But it was more especially the Lecture invitations coming from venerable, gray-headed metropolitan Societies, and indited by venerable gray-headed Secretaries, which far from elating filled the youthful Pierre with the sincerest sense of humility. Lecture? lecture? such a stripling as I lecture to fifty benches, with ten gray heads on each? five hundred gray heads in all! Shall my one, poor, inexperienced brain presume to lay down the law in a lecture to five hundred life-ripened understandings? It seemed too absurd for thought. Yet the five hundred, through their spokesman, had voluntarily extended this identical invitation to him. Then how could it be otherwise, than that an incipient Timonism should slide into Pierre, when he considered all the disgraceful inferences to be derived from such a fact. He called to mind, how that once upon a time, during a visit of his to the city, the police were called out to quell a portentous riot, occasioned by the vast press and contention for seats at the first lecture of an illustrious lad of nineteen, the author of \"A Week at Coney Island.\"",
       "prompt": "A word from this stretch."
     },
     {
@@ -719,14 +713,14 @@
       "id": "s101",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Inasmuch as by various indirect intimations much more than ordinary natural genius has been imputed to Pierre, it may have seemed an inconsistency, that only the merest magazine papers should have been thus far the sole productions of his m",
+      "reentry": "Inasmuch as by various indirect intimations much more than ordinary natural genius has been imputed to Pierre, it may have seemed an inconsistency, that only the merest magazine papers should have been thus far the sole productions of his mind. Nor need it be added, that, in the soberest earnest, those papers contained nothing uncommon; indeed--entirely now to drop all irony, if hitherto any thing like that has been indulged in--those fugitive things of Master Pierre's were the veriest common-place.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s102",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "It may have been already inferred, that the pecuniary plans of Pierre touching his independent means of support in the city were based upon his presumed literary capabilities. For what else could he do? He knew no profession, no trade. Glad",
+      "reentry": "It may have been already inferred, that the pecuniary plans of Pierre touching his independent means of support in the city were based upon his presumed literary capabilities. For what else could he do? He knew no profession, no trade. Glad now perhaps might he have been, if Fate had made him a blacksmith, and not a gentleman, a Glendinning, and a genius. But here he would have been unpardonably rash, had he not already, in some degree, actually tested the fact, in his own personal experience, that it is not altogether impossible for a magazine contributor to Juvenile American literature to receive a few pence in exchange for his ditties. Such cases stand upon imperishable record, and it were both folly and ingratitude to disown them.",
       "prompt": "A word from this stretch."
     },
     {
@@ -740,14 +734,14 @@
       "id": "s104",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "In the lower old-fashioned part of the city, in a narrow street--almost a lane--once filled with demure-looking dwellings, but now chiefly with immense lofty warehouses of foreign importers; and not far from the corner where the lane inters",
+      "reentry": "In the lower old-fashioned part of the city, in a narrow street--almost a lane--once filled with demure-looking dwellings, but now chiefly with immense lofty warehouses of foreign importers; and not far from the corner where the lane intersected with a very considerable but contracted thoroughfare for merchants and their clerks, and their carmen and porters; stood at this period a rather singular and ancient edifice, a relic of the more primitive time. The material was a grayish stone, rudely cut and masoned into walls of surprising thickness and strength; along two of which walls--the side ones--were distributed as many rows of arched and stately windows. A capacious, square, and wholly unornamented tower rose in front to twice the height of the body of the church; three sides of this tower were pierced with small and narrow apertures. Thus far, in its external aspect, the building--now more than a century old,--sufficiently attested for what purpose it had originally been founded. In its rear, was a large and lofty plain brick structure, with its front to the rearward street, but its back presented to the back of the church, leaving a small, flagged, and quadrangular vacancy between. At the sides of this quadrangle, three stories of homely brick colonnades afforded covered communication between the ancient church, and its less elderly adjunct. A dismantled, rusted, and forlorn old railing of iron fencing in a small courtyard in front of the rearward building, seemed to hint, that the latter had usurped an unoccupied space formerly sacred as the old church's burial inclosure. Such a fancy would have been entirely true. Built when that part of the city was devoted to private residences, and not to warehouses and offices as now, the old Church of the Apostles had had its days of sanctification and grace; but the tide of change and progress had rolled clean through its broad-aisle and side-aisles, and swept by far the greater part of its congregation two or three miles up town. Some stubborn and elderly old merchants and accountants, lingered awhile among its dusty pews, listening to the exhortations of a faithful old pastor, who, sticking to his post in this flight of his congregation, still propped his half-palsied form in the worm-eaten pulpit, and occasionally pounded--though now with less vigorous hand--the moth-eaten covering of its desk. But it came to pass, that this good old clergyman died; and when the gray-headed and bald-headed remaining merchants and accountants followed his coffin out of the broad-aisle to see it reverently interred; then that was the last time that ever the old edifice witnessed the departure of a regular worshiping assembly from its walls. The venerable merchants and accountants held a meeting, at which it was finally decided, that, hard and unwelcome as the necessity might be, yet it was now no use to disguise the fact, that the building could no longer be efficiently devoted to its primitive purpose. It must be divided into stores; cut into offices; and given for a roost to the gregarious lawyers. This intention was executed, even to the making offices high up in the tower; and so well did the thing succeed, that ultimately the church-yard was invaded for a supplemental edifice, likewise to be promiscuously rented to the legal crowd. But this new building very much exceeded the body of the church in height. It was some seven stories; a fearful pile of Titanic bricks, lifting its tiled roof almost to a level with the top of the sacred tower.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s105",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "On the third night following the arrival of the party in the city, Pierre sat at twilight by a lofty window in the rear building of the Apostles'. The chamber was meager even to meanness. No carpet on the floor, no picture on the wall; noth",
+      "reentry": "On the third night following the arrival of the party in the city, Pierre sat at twilight by a lofty window in the rear building of the Apostles'. The chamber was meager even to meanness. No carpet on the floor, no picture on the wall; nothing but a low, long, and very curious-looking single bedstead, that might possibly serve for an indigent bachelor's pallet, a large, blue, chintz-covered chest, a rickety, rheumatic, and most ancient mahogany chair, and a wide board of the toughest live-oak, about six feet long, laid upon two upright empty flour-barrels, and loaded with a large bottle of ink, an unfastened bundle of quills, a pen-knife, a folder, and a still unbound ream of foolscap paper, significantly stamped, \"Ruled; Blue.\"",
       "prompt": "A word from this stretch."
     },
     {
@@ -768,7 +762,7 @@
       "id": "s108",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "When arrived in the city, and discovering the heartless neglect of Glen, Pierre,--looking about him for whom to apply to in this strait,--bethought him of his old boy-companion Charlie, and went out to seek him, and found him at last; he sa",
+      "reentry": "When arrived in the city, and discovering the heartless neglect of Glen, Pierre,--looking about him for whom to apply to in this strait,--bethought him of his old boy-companion Charlie, and went out to seek him, and found him at last; he saw before him, a tall, well-grown, but rather thin and pale yet strikingly handsome young man of two-and-twenty; occupying a small dusty law-office on the third floor of the older building of the Apostles; assuming to be doing a very large, and hourly increasing business among empty pigeon-holes, and directly under the eye of an unopened bottle of ink; his mother and sisters dwelling in a chamber overhead; and himself, not only following the law for a corporeal living, but likewise inter-linked with the peculiar secret, theologico-politico-social schemes of the masonic order of the seedy-coated Apostles; and pursuing some crude, transcendental Philosophy, for both a contributory means of support, as well as for his complete intellectual aliment.",
       "prompt": "A word from this stretch."
     },
     {
@@ -782,21 +776,21 @@
       "id": "s110",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "We are now to behold Pierre permanently lodged in three lofty adjoining chambers of the Apostles. And passing on a little further in time, and overlooking the hundred and one domestic details, of how their internal arrangements were finally",
+      "reentry": "We are now to behold Pierre permanently lodged in three lofty adjoining chambers of the Apostles. And passing on a little further in time, and overlooking the hundred and one domestic details, of how their internal arrangements were finally put into steady working order; how poor Delly, now giving over the sharper pangs of her grief, found in the lighter occupations of a handmaid and familiar companion to Isabel, the only practical relief from the memories of her miserable past; how Isabel herself in the otherwise occupied hours of Pierre, passed some of her time in mastering the chirographical incoherencies of his manuscripts, with a view to eventually copying them out in a legible hand for the printer; or went below stairs to the rooms of the Millthorpes, and in the modest and amiable society of the three young ladies and their excellent mother, found some little solace for the absence of Pierre; or, when his day's work was done, sat by him in the twilight, and played her mystic guitar till Pierre felt chapter after chapter born of its wondrous suggestiveness; but alas! eternally incapable of being translated into words; for where the deepest words end, there music begins with its supersensuous and all-confounding intimations.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s111",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "He had been engaged some weeks upon his book--in pursuance of his settled plan avoiding all contact with any of his city-connections or friends, even as in his social downfall they sedulously avoided seeking him out--nor ever once going or ",
+      "reentry": "He had been engaged some weeks upon his book--in pursuance of his settled plan avoiding all contact with any of his city-connections or friends, even as in his social downfall they sedulously avoided seeking him out--nor ever once going or sending to the post-office, though it was but a little round the corner from where he was, since having dispatched no letters himself, he expected none; thus isolated from the world, and intent upon his literary enterprise, Pierre had passed some weeks, when verbal tidings came to him, of three most momentous events.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s112",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "As Pierre, now hurrying from his chamber, was rapidly passing through one of the higher brick colonnades connecting the ancient building with the modern, there advanced toward him from the direction of the latter, a very plain, composed, ma",
+      "reentry": "As Pierre, now hurrying from his chamber, was rapidly passing through one of the higher brick colonnades connecting the ancient building with the modern, there advanced toward him from the direction of the latter, a very plain, composed, manly figure, with a countenance rather pale if any thing, but quite clear and without wrinkle. Though the brow and the beard, and the steadiness of the head and settledness of the step indicated mature age, yet the blue, bright, but still quiescent eye offered a very striking contrast. In that eye, the gay immortal youth Apollo, seemed enshrined; while on that ivory-throned brow, old Saturn cross-legged sat. The whole countenance of this man, the whole air and look of this man, expressed a cheerful content. Cheerful is the adjective, for it was the contrary of gloom; content--perhaps acquiescence--is the substantive, for it was not Happiness or Delight. But while the personal look and air of this man were thus winning, there was still something latently visible in him which repelled. That something may best be characterized as non-Benevolence. Non-Benevolence seems the best word, for it was neither Malice nor Ill-will; but something passive. To crown all, a certain floating atmosphere seemed to invest and go along with this man. That atmosphere seems only renderable in words by the term Inscrutableness. Though the clothes worn by this man were strictly in accordance with the general style of any unobtrusive gentleman's dress, yet his clothes seemed to disguise this man. One would almost have said, his very face, the apparently natural glance of his very eye disguised this man.",
       "prompt": "A word from this stretch."
     },
     {
@@ -810,7 +804,7 @@
       "id": "s114",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Some days passed after the fatal tidings from the Meadows, and at length, somewhat mastering his emotions, Pierre again sits down in his chamber; for grieve how he will, yet work he must. And now day succeeds day, and week follows week, and",
+      "reentry": "Some days passed after the fatal tidings from the Meadows, and at length, somewhat mastering his emotions, Pierre again sits down in his chamber; for grieve how he will, yet work he must. And now day succeeds day, and week follows week, and Pierre still sits in his chamber. The long rows of cooled brick-kilns around him scarce know of the change; but from the fair fields of his great-great-great-grandfather's manor, Summer hath flown like a swallow-guest; the perfidious wight, Autumn, hath peeped in at the groves of the maple, and under pretense of clothing them in rich russet and gold, hath stript them at last of the slightest rag, and then ran away laughing; prophetic icicles depend from the arbors round about the old manorial mansion--now locked up and abandoned; and the little, round, marble table in the viny summer-house where, of July mornings, he had sat chatting and drinking negus with his gay mother, is now spread with a shivering napkin of frost; sleety varnish hath encrusted that once gay mother's grave, preparing it for its final cerements of wrapping snow upon snow; wild howl the winds in the woods: it is Winter. Sweet Summer is done; and Autumn is done; but the book, like the bitter winter, is yet to be finished.",
       "prompt": "A word from this stretch."
     },
     {
@@ -824,7 +818,7 @@
       "id": "s116",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "Some hours pass. Let us peep over the shoulder of Pierre, and see what it is he is writing there, in that most melancholy closet. Here, topping the reeking pile by his side, is the last sheet from his hand, the frenzied ink not yet entirely",
+      "reentry": "Some hours pass. Let us peep over the shoulder of Pierre, and see what it is he is writing there, in that most melancholy closet. Here, topping the reeking pile by his side, is the last sheet from his hand, the frenzied ink not yet entirely dry. It is much to our purpose; for in this sheet, he seems to have directly plagiarized from his own experiences, to fill out the mood of his apparent author-hero, Vivia, who thus soliloquizes: \"A deep-down, unutterable mournfulness is in me. Now I drop all humorous or indifferent disguises, and all philosophical pretensions. I own myself a brother of the clod, a child of the Primeval Gloom. Hopelessness and despair are over me, as pall on pall. Away, ye chattering apes of a sophomorean Spinoza and Plato, who once didst all but delude me that the night was day, and pain only a tickle. Explain this darkness, exorcise this devil, ye can not. Tell me not, thou inconceivable coxcomb of a Goethe, that the universe can not spare thee and thy immortality, so long as--like a hired waiter--thou makest thyself 'generally useful.' Already the universe gets on without thee, and could still spare a million more of the same identical kidney. Corporations have no souls, and thy Pantheism, what was that? Thou wert but the pretensious, heartless part of a man. Lo! I hold thee in this hand, and thou art crushed in it like an egg from which the meat hath been sucked.\"",
       "prompt": "A word from this stretch."
     },
     {
@@ -845,28 +839,28 @@
       "id": "s119",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "If a frontier man be seized by wild Indians, and carried far and deep into the wilderness, and there held a captive, with no slightest probability of eventual deliverance; then the wisest thing for that man is to exclude from his memory by ",
+      "reentry": "If a frontier man be seized by wild Indians, and carried far and deep into the wilderness, and there held a captive, with no slightest probability of eventual deliverance; then the wisest thing for that man is to exclude from his memory by every possible method, the least images of those beloved objects now forever reft from him. For the more delicious they were to him in the now departed possession, so much the more agonizing shall they be in the present recalling. And though a strong man may sometimes succeed in strangling such tormenting memories; yet, if in the beginning permitted to encroach upon him unchecked, the same man shall, in the end, become as an idiot. With a continent and an ocean between him and his wife--thus sundered from her, by whatever imperative cause, for a term of long years;--the husband, if passionately devoted to her, and by nature broodingly sensitive of soul, is wise to forget her till he embrace her again;--is wise never to remember her if he hear of her death. And though such complete suicidal forgettings prove practically impossible, yet is it the shallow and ostentatious affections alone which are bustling in the offices of obituarian memories. *The love deep as death*--what mean those five words, but that such love can not live, and be continually remembering that the loved one is no more? If it be thus then in cases where entire unremorsefulness as regards the beloved absent objects is presumed, how much more intolerable, when the knowledge of their hopeless wretchedness occurs, attended by the visitations of before latent upbraidings in the rememberer as having been any way--even unwillingly--the producers of their sufferings. There seems no other sane recourse for some moody organizations on whom such things, under such circumstances intrude, but right and left to flee them, whatever betide.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s120",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "\"This morning I vowed it, my own dearest, dearest Pierre I feel stronger to-day; for to-day I have still more thought of thine own superhuman, angelical strength; which so, has a very little been transferred to me. Oh, Pierre, Pierre, with ",
+      "reentry": "\"This morning I vowed it, my own dearest, dearest Pierre I feel stronger to-day; for to-day I have still more thought of thine own superhuman, angelical strength; which so, has a very little been transferred to me. Oh, Pierre, Pierre, with what words shall I write thee now;--now, when still knowing nothing, yet something of thy secret I, as a seer, suspect. Grief,--deep, unspeakable grief, hath made me this seer. I could murder myself, Pierre, when I think of my previous blindness; but that only came from my swoon. It was horrible and most murdersome; but now I see thou wert right in being so instantaneous with me, and in never afterward writing to me, Pierre; yes, now I see it, and adore thee the more.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s121",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "When surrounded by the base and mercenary crew, man, too long wonted to eye his race with a suspicious disdain, suddenly is brushed by some angelical plume of humanity, and the human accents of superhuman love, and the human eyes of superhu",
+      "reentry": "When surrounded by the base and mercenary crew, man, too long wonted to eye his race with a suspicious disdain, suddenly is brushed by some angelical plume of humanity, and the human accents of superhuman love, and the human eyes of superhuman beauty and glory, suddenly burst on his being; then how wonderful and fearful the shock! It is as if the sky-cope were rent, and from the black valley of Jehoshaphat, he caught upper glimpses of the seraphim in the visible act of adoring.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s122",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "Though by the unexpected petition to enter his privacy--a petition he could scarce ever deny to Isabel, since she so religiously abstained from preferring it, unless for some very reasonable cause, Pierre, in the midst of those conflicting,",
+      "reentry": "Though by the unexpected petition to enter his privacy--a petition he could scarce ever deny to Isabel, since she so religiously abstained from preferring it, unless for some very reasonable cause, Pierre, in the midst of those conflicting, secondary emotions, immediately following the first wonderful effect of Lucy's strange letter, had been forced to put on, toward Isabel, some air of assurance and understanding concerning its contents; yet at bottom, he was still a prey to all manner of devouring mysteries.",
       "prompt": "A word from this stretch."
     },
     {
@@ -880,14 +874,14 @@
       "id": "s124",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "Next morning, the recently appropriated room adjoining on the other side of the dining-room, presented a different aspect from that which met the eye of Delly upon first unlocking it with Pierre on the previous evening. Two squares of faded",
+      "reentry": "Next morning, the recently appropriated room adjoining on the other side of the dining-room, presented a different aspect from that which met the eye of Delly upon first unlocking it with Pierre on the previous evening. Two squares of faded carpeting of different patterns, covered the middle of the floor, leaving, toward the surbase, a wide, blank margin around them. A small glass hung in the pier; beneath that, a little stand, with a foot or two of carpet before it. In one corner was a cot, neatly equipped with bedding. At the outer side of the cot, another strip of carpeting was placed. Lucy's delicate feet should not shiver on the naked floor.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s125",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "They had not been there long, when Pierre, who had been pacing up and down, suddenly paused, as if struck by some laggard thought, which had just occurred to him at the eleventh hour. First he looked toward Delly, as if about to bid her qui",
+      "reentry": "They had not been there long, when Pierre, who had been pacing up and down, suddenly paused, as if struck by some laggard thought, which had just occurred to him at the eleventh hour. First he looked toward Delly, as if about to bid her quit the apartment, while he should say something private to Isabel; but as if, on a second thought, holding the contrary of this procedure most advisable, he, without preface, at once addressed Isabel, in his ordinary conversational tone, so that Delly could not but plainly hear him, whether she would or no.",
       "prompt": "A word from this stretch."
     },
     {
@@ -915,35 +909,35 @@
       "id": "s129",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "A day or two after the arrival of Lucy, when she had quite recovered from any possible ill-effects of recent events,--events conveying such a shock to both Pierre and Isabel,--though to each in a quite different way,--but not, apparently, a",
+      "reentry": "A day or two after the arrival of Lucy, when she had quite recovered from any possible ill-effects of recent events,--events conveying such a shock to both Pierre and Isabel,--though to each in a quite different way,--but not, apparently, at least, moving Lucy so intensely--as they were all three sitting at coffee, Lucy expressed her intention to practice her crayon art professionally. It would be so pleasant an employment for her, besides contributing to their common fund. Pierre well knew her expertness in catching likenesses, and judiciously and truthfully beautifying them; not by altering the features so much, as by steeping them in a beautifying atmosphere. For even so, said Lucy, thrown into the Lagoon, and there beheld--as I have heard--the roughest stones, without transformation, put on the softest aspects. If Pierre would only take a little trouble to bring sitters to her room, she doubted not a fine harvest of heads might easily be secured. Certainly, among the numerous inmates of the old Church, Pierre must know many who would have no objections to being sketched. Moreover, though as yet she had had small opportunity to see them; yet among such a remarkable company of poets, philosophers, and mystics of all sorts, there must be some striking heads. In conclusion, she expressed her satisfaction at the chamber prepared for her, inasmuch as having been formerly the studio of an artist, one window had been considerably elevated, while by a singular arrangement of the interior shutters, the light could in any direction be thrown about at will.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s130",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "Notwithstanding the maternal visit of Mrs. Tartan, and the peremptoriness with which it had been closed by her declared departure never to return, and her vow to teach all Lucy's relatives and friends, and Lucy's own brothers, and her suito",
+      "reentry": "Notwithstanding the maternal visit of Mrs. Tartan, and the peremptoriness with which it had been closed by her declared departure never to return, and her vow to teach all Lucy's relatives and friends, and Lucy's own brothers, and her suitor, to disown her, and forget her; yet Pierre fancied that he knew too much in general of the human heart, and too much in particular of the character of both Glen and Frederic, to remain entirely untouched by disquietude, concerning what those two fiery youths might now be plotting against him, as the imagined monster, by whose infernal tricks Lucy Tartan was supposed to have been seduced from every earthly seemliness. Not happily, but only so much the more gloomily, did he augur from the fact, that Mrs. Tartan had come to Lucy unattended; and that Glen and Frederic had let eight-and-forty hours and more go by, without giving the slightest hostile or neutral sign. At first he thought, that bridling their impulsive fierceness, they were resolved to take the slower, but perhaps the surer method, to wrest Lucy back to them, by instituting some legal process. But this idea was repulsed by more than one consideration.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s131",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "As a statue, planted on a revolving pedestal, shows now this limb, now that; now front, now back, now side; continually changing, too, its general profile; so does the pivoted, statued soul of man, when turned by the hand of Truth. Lies onl",
+      "reentry": "As a statue, planted on a revolving pedestal, shows now this limb, now that; now front, now back, now side; continually changing, too, its general profile; so does the pivoted, statued soul of man, when turned by the hand of Truth. Lies only never vary; look for no invariableness in Pierre. Nor does any canting showman here stand by to announce his phases as he revolves. Catch his phases as your insight may.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s132",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "During this state of semi-unconsciousness, or rather trance, a remarkable dream or vision came to him. The actual artificial objects around him slid from him, and were replaced by a baseless yet most imposing spectacle of natural scenery. B",
+      "reentry": "During this state of semi-unconsciousness, or rather trance, a remarkable dream or vision came to him. The actual artificial objects around him slid from him, and were replaced by a baseless yet most imposing spectacle of natural scenery. But though a baseless vision in itself, this airy spectacle assumed very familiar features to Pierre. It was the phantasmagoria of the Mount of the Titans, a singular height standing quite detached in a wide solitude not far from the grand range of dark blue hills encircling his ancestral manor.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s133",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "Nor did Pierre's random knowledge of the ancient fables fail still further to elucidate the vision which so strangely had supplied a tongue to muteness. But that elucidation was most repulsively fateful and foreboding; possibly because Pier",
+      "reentry": "Nor did Pierre's random knowledge of the ancient fables fail still further to elucidate the vision which so strangely had supplied a tongue to muteness. But that elucidation was most repulsively fateful and foreboding; possibly because Pierre did not leap the final barrier of gloom; possibly because Pierre did not willfully wrest some final comfort from the fable; did not flog this stubborn rock as Moses his, and force even aridity itself to quench his painful thirst.",
       "prompt": "A word from this stretch."
     },
     {
@@ -957,42 +951,42 @@
       "id": "s135",
       "title": "Chapter I",
       "place": "Chapter I",
-      "reentry": "\"Come, Isabel, come, Lucy; we have not had a single walk together yet. It is cold, but clear; and once out of the city, we shall find it sunny. Come: get ready now, and away for a stroll down to the wharf, and then for some of the steamers ",
+      "reentry": "\"Come, Isabel, come, Lucy; we have not had a single walk together yet. It is cold, but clear; and once out of the city, we shall find it sunny. Come: get ready now, and away for a stroll down to the wharf, and then for some of the steamers on the bay. No doubt, Lucy, you will find in the bay scenery some hints for that secret sketch you are so busily occupied with--ere real living sitters do come--and which you so devotedly work at, all alone and behind closed doors.\"",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s136",
       "title": "Chapter II",
       "place": "Chapter II",
-      "reentry": "As they hurried on, Pierre was silent; but wild thoughts were hurrying and shouting in his heart. The most tremendous displacing and revolutionizing thoughts were upheaving in him, with reference to Isabel; nor--though at the time he was ha",
+      "reentry": "As they hurried on, Pierre was silent; but wild thoughts were hurrying and shouting in his heart. The most tremendous displacing and revolutionizing thoughts were upheaving in him, with reference to Isabel; nor--though at the time he was hardly conscious of such a thing--were these thoughts wholly unwelcome to him.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s137",
       "title": "Chapter III",
       "place": "Chapter III",
-      "reentry": "In the midst of all these mental confusions they arrived at the wharf; and selecting the most inviting of the various boats which lay about them in three or four adjacent ferry-slips, and one which was bound for a half-hour's sail across th",
+      "reentry": "In the midst of all these mental confusions they arrived at the wharf; and selecting the most inviting of the various boats which lay about them in three or four adjacent ferry-slips, and one which was bound for a half-hour's sail across the wide beauty of that glorious bay; they soon found themselves afloat and in swift gliding motion.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s138",
       "title": "Chapter IV",
       "place": "Chapter IV",
-      "reentry": "Gaining the Apostles', and leaving his two companions to the privacy of their chambers, Pierre sat silent and intent by the stove in the dining-room for a time, and then was on the point of entering his closet from the corridor, when Delly,",
+      "reentry": "Gaining the Apostles', and leaving his two companions to the privacy of their chambers, Pierre sat silent and intent by the stove in the dining-room for a time, and then was on the point of entering his closet from the corridor, when Delly, suddenly following him, said to him, that she had forgotten to mention it before, but he would find two letters in his room, which had been separately left at the door during the absence of the party.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s139",
       "title": "Chapter V",
       "place": "Chapter V",
-      "reentry": "Pierre passed on to a remote quarter of the building, and abruptly entered the room of one of the Apostles whom he knew. There was no one in it. He hesitated an instant; then walked up to a book-case, with a chest of drawers in the lower pa",
+      "reentry": "Pierre passed on to a remote quarter of the building, and abruptly entered the room of one of the Apostles whom he knew. There was no one in it. He hesitated an instant; then walked up to a book-case, with a chest of drawers in the lower part.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s140",
       "title": "Chapter VI",
       "place": "Chapter VI",
-      "reentry": "That sundown, Pierre stood solitary in a low dungeon of the city prison. The cumbersome stone ceiling almost rested on his brow; so that the long tiers of massive cell-galleries above seemed partly piled on him. His immortal, immovable, ble",
+      "reentry": "That sundown, Pierre stood solitary in a low dungeon of the city prison. The cumbersome stone ceiling almost rested on his brow; so that the long tiers of massive cell-galleries above seemed partly piled on him. His immortal, immovable, bleached cheek was dry; but the stone cheeks of the walls were trickling. The pent twilight of the contracted yard, coming through the barred arrow-slit, fell in dim bars upon the granite floor.",
       "prompt": "A word from this stretch."
     },
     {
@@ -1005,19 +999,24 @@
   ],
   "breaths": [
     {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "Book Xxi. Pierre Immaturely Attempts a Mature Book. Tidings from the Meadows. Plinlimmon Book Xxii. the Flower-Curtain Lifted from Before a Tropical Author; with Some Remarks on the Transcendental Flesh-Brush Philosophy Book Xxiii. a Letter for Pierre. Isabel. Arrival of Lucy's Easel and Trunks at the Apostles'"
+      "id": "s142-0",
+      "sceneId": "s142",
+      "text": "In old times authors were proud of the privilege of dedicating their works to Majesty. A right noble custom, which we of Berkshire must revive. For whether we will or no, Majesty is all around us here in Berkshire, sitting as in a grand Congress of Vienna of majestical hill-tops, and eternally challenging our homage."
     },
     {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "Book Xxv. Lucy, Isabel, and Pierre. Pierre at His Book. Enceladus Book Xxvi. a Walk; a Foreign Portrait; a Sail. and the End"
+      "id": "s142-1",
+      "sceneId": "s142",
+      "text": "But since the majestic mountain, Greylock--my own more immediate sovereign lord and king--hath now, for innumerable ages, been the one grand dedicatee of the earliest rays of all the Berkshire mornings, I know not how his Imperial Purple Majesty (royal-born: Porphyrogenitus) will receive the dedication of my own poor solitary ray."
     },
     {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "Pierre."
+      "id": "s142-2",
+      "sceneId": "s142",
+      "text": "Nevertheless, forasmuch as I, dwelling with my loyal neighbors, the Maples and the Beeches, in the amphitheater over which his central majesty presides, have received his most bounteous and unstinted fertilizations, it is but meet, that I here devoutly kneel, and render up my gratitude, whether, thereto, The Most Excellent Purple Majesty of Greylock benignantly incline his hoary crown or no."
+    },
+    {
+      "id": "s142-3",
+      "sceneId": "s142",
+      "text": "*Pittsfield, Mass.*"
     },
     {
       "id": "s2-0",

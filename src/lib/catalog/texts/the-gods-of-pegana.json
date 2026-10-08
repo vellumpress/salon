@@ -9,17 +9,10 @@
   "coverAlt": "",
   "scenes": [
     {
-      "id": "s0",
-      "title": "The Chaunt",
-      "place": "The Chaunt",
-      "reentry": "The Sayings of Limpang-Tung",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s1",
       "title": "Preface",
       "place": "Preface",
-      "reentry": "In the mists before THE BEGINNING, Fate and Chance cast lots to decide whose the Game should be; and he that won strode through the mists to MANA-YOOD-SUSHAI and said: “Now make gods for Me, for I have won the cast and the Game is to be Min",
+      "reentry": "In the mists before THE BEGINNING, Fate and Chance cast lots to decide whose the Game should be; and he that won strode through the mists to MANA-YOOD-SUSHAI and said: “Now make gods for Me, for I have won the cast and the Game is to be Mine.” Who it was that won the cast, and whether it was Fate or whether Chance that went through the mists before THE BEGINNING to MANA-YOOD-SUSHAI--*none knoweth.*",
       "prompt": "A word from this stretch."
     },
     {
@@ -33,7 +26,7 @@
       "id": "s3",
       "title": "Of Skarl the Drummer",
       "place": "Of Skarl the Drummer",
-      "reentry": "When Mana-Yood-Sushai had made the gods and Skarl, Skarl made a drum, and began to beat upon it that he might drum for ever. Then because he was weary after the making of the gods, and because of the drumming of Skarl, did Mana-Yood-Sushai ",
+      "reentry": "When Mana-Yood-Sushai had made the gods and Skarl, Skarl made a drum, and began to beat upon it that he might drum for ever. Then because he was weary after the making of the gods, and because of the drumming of Skarl, did Mana-Yood-Sushai grow drowsy and fall asleep.",
       "prompt": "A word from this stretch."
     },
     {
@@ -121,13 +114,6 @@
       "prompt": "A word from this stretch."
     },
     {
-      "id": "s16",
-      "title": "Z‰nÎs, and Seg·strion?”",
-      "place": "Z‰nÎs, and Seg·strion?”",
-      "reentry": "Then Mung went down into a waste of Afrik, and came upon the drought Umbool as he sat in the desert upon iron rocks, clawing with miserly grasp at the bones of men and breathing hot.",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s17",
       "title": "Of Dorozhand",
       "place": "Of Dorozhand",
@@ -138,14 +124,14 @@
       "id": "s18",
       "title": "The Eye in the Waste",
       "place": "The Eye in the Waste",
-      "reentry": "There lie seven deserts beyond Bodrahan, which is the city of the caravans’ end. None goeth beyond. In the first desert lie the tracks of mighty travellers outward from Bodrahan, and some returning. And in the second lie only outward tracks",
+      "reentry": "There lie seven deserts beyond Bodrahan, which is the city of the caravans’ end. None goeth beyond. In the first desert lie the tracks of mighty travellers outward from Bodrahan, and some returning. And in the second lie only outward tracks, and none return.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s19",
       "title": "Of the Thing That Is Neither God Nor Beast",
       "place": "Of the Thing That Is Neither God Nor Beast",
-      "reentry": "Seeing that wisdom is not in cities nor happiness in wisdom, and because Yadin the prophet was doomed by the gods ere he was born to go in search of wisdom, he followed the caravans to Bodrahan. There in the evening, where the camels rest, ",
+      "reentry": "Seeing that wisdom is not in cities nor happiness in wisdom, and because Yadin the prophet was doomed by the gods ere he was born to go in search of wisdom, he followed the caravans to Bodrahan. There in the evening, where the camels rest, when the wind of the day ebbs out into the desert sighing amid the palms its last farewells and leaving the caravans still, he sent his prayer with the wind to drift into the desert calling to Hoodrazai.",
       "prompt": "A word from this stretch."
     },
     {
@@ -178,8 +164,8 @@
     },
     {
       "id": "s24",
-      "title": "Building of the Tower of the Ending of Days",
-      "place": "Building of the Tower of the Ending of Days",
+      "title": "Of the Calamity That Befel Yun-Hara by the Sea, and of the Building of the Tower of the Ending of Days",
+      "place": "Of the Calamity That Befel Yun-Hara by the Sea, and of the Building of the Tower of the Ending of Days",
       "reentry": "When Kabok and his fears had rest the people sought a prophet who should have no fear of Mung, whose hand was against the prophets.",
       "prompt": "A word from this stretch."
     },
@@ -192,8 +178,8 @@
     },
     {
       "id": "s26",
-      "title": "The Gods Save One",
-      "place": "The Gods Save One",
+      "title": "Of How Imbaun Became High Prophet in Aradec of all the Gods Save One",
+      "place": "Of How Imbaun Became High Prophet in Aradec of all the Gods Save One",
       "reentry": "Imbaun was to be made High Prophet in Aradec, of All the Gods save One.",
       "prompt": "A word from this stretch."
     },
@@ -208,7 +194,7 @@
       "id": "s28",
       "title": "Pegana",
       "place": "Pegana",
-      "reentry": "The prophet of the gods cried out to the gods: “O! All the gods save One” for none may pray to Mana-Yood-Sushai, “where shall the life of a man abide when Mung hath made against his body the sign of Mung?--for the people with whom ye play h",
+      "reentry": "The prophet of the gods cried out to the gods: “O! All the gods save One” for none may pray to Mana-Yood-Sushai, “where shall the life of a man abide when Mung hath made against his body the sign of Mung?--for the people with whom ye play have sought to know.”",
       "prompt": "A word from this stretch."
     },
     {
@@ -222,21 +208,21 @@
       "id": "s30",
       "title": "Of How Imbaun Spake of Death to the King",
       "place": "Of How Imbaun Spake of Death to the King",
-      "reentry": "There trod such pestilence in Aradec that, the King as he looked abroad out of his palace saw men die. And when the King saw Death he feared that one day even the King should die. Therefore he commanded guards to bring before him the wisest",
+      "reentry": "There trod such pestilence in Aradec that, the King as he looked abroad out of his palace saw men die. And when the King saw Death he feared that one day even the King should die. Therefore he commanded guards to bring before him the wisest prophet that should be found in Aradec.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s31",
       "title": "Of Ood",
       "place": "Of Ood",
-      "reentry": "Men say that if thou comest to Sundari, beyond all the plains, and shalt climb to his summit before thou art seized by the avalanche which sitteth always on his slopes, that then there lie before thee many peaks. And if thou shalt climb the",
+      "reentry": "Men say that if thou comest to Sundari, beyond all the plains, and shalt climb to his summit before thou art seized by the avalanche which sitteth always on his slopes, that then there lie before thee many peaks. And if thou shalt climb these and cross their valleys (of which there be seven and also seven peaks) thou shalt come at last to the land of forgotten hills, where amid many valleys and white snow there standeth the “Great Temple of One god Only.”",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s32",
       "title": "The River",
       "place": "The River",
-      "reentry": "There arises a river in Pegana that is neither a river of water nor yet a river of fire, and it flows through the skies and the Worlds to the Rim of the Worlds, a river of silence. Through all the Worlds are sounds, the noises of moving, an",
+      "reentry": "There arises a river in Pegana that is neither a river of water nor yet a river of fire, and it flows through the skies and the Worlds to the Rim of the Worlds, a river of silence. Through all the Worlds are sounds, the noises of moving, and the echoes of voices and song; but upon the River is no sound ever heard, for there all echoes die.",
       "prompt": "A word from this stretch."
     },
     {
@@ -248,111 +234,6 @@
     }
   ],
   "breaths": [
-    {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "The Sayings of Limpang-Tung"
-    },
-    {
-      "id": "s0-1",
-      "sceneId": "s0",
-      "text": "Of Yoharneth-Lahai"
-    },
-    {
-      "id": "s0-2",
-      "sceneId": "s0",
-      "text": "Of Roon, the God of Going, and the Thousand Home Gods"
-    },
-    {
-      "id": "s0-3",
-      "sceneId": "s0",
-      "text": "The Revolt of the Home Gods"
-    },
-    {
-      "id": "s0-4",
-      "sceneId": "s0",
-      "text": "Of Dorozhand"
-    },
-    {
-      "id": "s0-5",
-      "sceneId": "s0",
-      "text": "The Eye in the Waste"
-    },
-    {
-      "id": "s0-6",
-      "sceneId": "s0",
-      "text": "Of the Thing That Is Neither God Nor Beast"
-    },
-    {
-      "id": "s0-7",
-      "sceneId": "s0",
-      "text": "Yonath the Prophet"
-    },
-    {
-      "id": "s0-8",
-      "sceneId": "s0",
-      "text": "Yug the Prophet"
-    },
-    {
-      "id": "s0-9",
-      "sceneId": "s0",
-      "text": "Alhireth-Hotep The Prophet"
-    },
-    {
-      "id": "s0-10",
-      "sceneId": "s0",
-      "text": "Kabok The Prophet"
-    },
-    {
-      "id": "s0-11",
-      "sceneId": "s0",
-      "text": "Of the Calamity That Befel Yun-Hara by the Sea, and of the Building of the Tower of the Ending of Days"
-    },
-    {
-      "id": "s0-12",
-      "sceneId": "s0",
-      "text": "Of How the Gods Whelmed Sidith"
-    },
-    {
-      "id": "s0-13",
-      "sceneId": "s0",
-      "text": "Of How Imbaun Became High Prophet in Aradec of all the Gods Save One"
-    },
-    {
-      "id": "s0-14",
-      "sceneId": "s0",
-      "text": "Of How Imbaun Met Zodrak"
-    },
-    {
-      "id": "s0-15",
-      "sceneId": "s0",
-      "text": "Pegana"
-    },
-    {
-      "id": "s0-16",
-      "sceneId": "s0",
-      "text": "The Sayings of Imbaun"
-    },
-    {
-      "id": "s0-17",
-      "sceneId": "s0",
-      "text": "Of How Imbaun Spake of Death to the King"
-    },
-    {
-      "id": "s0-18",
-      "sceneId": "s0",
-      "text": "Of Ood"
-    },
-    {
-      "id": "s0-19",
-      "sceneId": "s0",
-      "text": "The River"
-    },
-    {
-      "id": "s0-20",
-      "sceneId": "s0",
-      "text": "The Bird of Doom and the End"
-    },
     {
       "id": "s1-0",
       "sceneId": "s1",
@@ -1196,66 +1077,66 @@
     {
       "id": "s15-6",
       "sceneId": "s15",
-      "text": "And still the home gods spread their hands across their rivers, with their fingers wide apart, and the waters rose and rose, and the voice of their torrent grew louder, crying: “Are we not EimÎs,"
+      "text": "And still the home gods spread their hands across their rivers, with their fingers wide apart, and the waters rose and rose, and the voice of their torrent grew louder, crying: “Are we not EimÎs, Z‰nÎs, and Seg·strion?”"
     },
     {
       "id": "s16-0",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "Then Mung went down into a waste of Afrik, and came upon the drought Umbool as he sat in the desert upon iron rocks, clawing with miserly grasp at the bones of men and breathing hot."
     },
     {
       "id": "s16-1",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "And Mung stood before him as his dry sides heaved, and ever as they sank his hot breath blasted dry sticks and bones."
     },
     {
       "id": "s16-2",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "Then Mung said: “Friend of Mung! Go, thou and grin before the faces of EimÎs, Z‰nÎs, and Seg·strion till they see whether it be wise to rebel against the gods of Pegana.”"
     },
     {
       "id": "s16-3",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "And Umbool answered: “I am the beast of Mung.”"
     },
     {
       "id": "s16-4",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "And Umbool came and crouched upon a hill upon the other side of the waters and grinned across them at the rebellious home gods."
     },
     {
       "id": "s16-5",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "And whenever EimÎs, Z‰nÎs, and Seg·strion stretched out their hands over their rivers they saw before their faces the grinning of Umbool; and because the grinning was like death in a hot and hideous land therefore they turned away and spread their hands no more over their rivers, and the waters sank and sank."
     },
     {
       "id": "s16-6",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "But when Umbool had grinned for thirty days the waters fell back into the river beds and the lords of the rivers slunk away back again to their homes: still Umbool sat and grinned."
     },
     {
       "id": "s16-7",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "Then EimÎs sought to hide himself in a great pool beneath a rock, and Z‰nÎs crept into the middle of a wood, and Seg·strion lay and panted on the sand--still Umbool sat and grinned."
     },
     {
       "id": "s16-8",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "And EimÎs grew lean, and was forgotten, so that the men of the plain would say: “Here once was EimÎs”; and Z‰nÎs scarce had strength to lead his river to the sea; and as Seg·strion lay and panted a man stepped over his stream, and Seg·strion said: “It is the foot of a man that has passed across my neck, and I have sought to be greater than the gods of Pegana.”"
     },
     {
       "id": "s16-9",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "Then said the gods of Pegana: “It is enough. We are the gods of Pegana, and none are equal.”"
     },
     {
       "id": "s16-10",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "Then Mung sent Umbool back to his waste in Afrik to breathe again upon the rocks, and parch the desert, and to sear the memory of Afrik into the brains of all who ever bring their bones away."
     },
     {
       "id": "s16-11",
-      "sceneId": "s16",
+      "sceneId": "s15",
       "text": "And EimÎs, Z‰nÎs, and Seg·strion sang again, and walked once more in their accustomed haunts, and played the game of Life and Death with fishes and frogs, but never essayed to play it any more with men, as do the gods of Pegana."
     },
     {
