@@ -5,8 +5,11 @@
  */
 import assert from "node:assert/strict";
 import { spawn, type ChildProcess } from "node:child_process";
+import { existsSync } from "node:fs";
 import { createServer, type IncomingMessage, type ServerResponse } from "node:http";
+import { dirname, join } from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 import { chromium, devices, type Browser, type BrowserContext, type Page, type Route } from "playwright";
 
 import {
@@ -22,8 +25,26 @@ import {
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const APP = `${ORIGIN}/salon`;
 const PHONE = devices["iPhone 12"];
-const CHROME = "/opt/google/chrome/chrome";
 const RUNS = Number(process.env.SOCIAL_RUNS ?? 5) || 5;
+const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "../..");
+const CHROME_CANDIDATES = [
+  "/opt/google/chrome/chrome",
+  "/usr/bin/google-chrome",
+  "/usr/bin/chromium",
+  "/usr/bin/chromium-browser",
+];
+
+/** Other reader tests share port 8080 and may stop a server they started. */
+let turn: Promise<unknown> = Promise.resolve();
+
+function oneAtATime<T>(fn: () => Promise<T>): Promise<T> {
+  const run = turn.then(fn, fn);
+  turn = run.then(
+    () => undefined,
+    () => undefined,
+  );
+  return run;
+}
 
 type ClubRow = {
   id: string;
@@ -460,7 +481,7 @@ async function handleMirror(rooms: Map<string, SitRoom>, req: IncomingMessage, r
 async function ensureDev(): Promise<ChildProcess | null> {
   if (await devUp()) return null;
   const child = spawn("npm", ["run", "dev"], {
-    cwd: "/workspace",
+    cwd: repoRoot,
     stdio: "ignore",
     detached: true,
   });
@@ -470,6 +491,23 @@ async function ensureDev(): Promise<ChildProcess | null> {
     await new Promise((resolve) => setTimeout(resolve, 1000));
   }
   throw new Error("The reading app did not come up");
+}
+
+function serverDown(error: unknown) {
+  const message = error instanceof Error ? error.message : String(error);
+  return /ERR_CONNECTION_REFUSED|ECONNREFUSED|ERR_CONNECTION_RESET|did not come up/.test(message);
+}
+
+async function launchBrowser() {
+  for (const executablePath of CHROME_CANDIDATES) {
+    if (!existsSync(executablePath)) continue;
+    try {
+      return await chromium.launch({ executablePath, headless: true });
+    } catch {
+      /* try the next browser */
+    }
+  }
+  return chromium.launch({ headless: true });
 }
 
 async function devUp() {
@@ -599,6 +637,7 @@ async function friendRun(browser: Browser, mirror: string, run: number) {
     await pageA.locator('[data-sit-status="offline"]').waitFor({ timeout: 10000 });
     await pageB.locator('[data-sit-status="waiting"]').waitFor({ timeout: 10000 });
     await pageA.context().setOffline(false);
+    await ensureDev();
     await pageA.reload({ waitUntil: "domcontentloaded" });
     await pageA.getByText(line).waitFor({ timeout: 20000 });
 
@@ -611,16 +650,26 @@ async function friendRun(browser: Browser, mirror: string, run: number) {
 }
 
 test("book clubs across three phones", { timeout: 300000 }, async () => {
-  const browser = await chromium.launch({ executablePath: CHROME, headless: true });
+  await oneAtATime(async () => {
+  const browser = await launchBrowser();
   const results: { run: number; ok: boolean; error?: string }[] = [];
   try {
-    await ensureDev();
     for (let run = 1; run <= RUNS; run += 1) {
-      try {
-        await clubRun(browser, run);
-        results.push({ run, ok: true });
-      } catch (error) {
-        results.push({ run, ok: false, error: error instanceof Error ? error.message : String(error) });
+      let settled = false;
+      let last = "";
+      for (let attempt = 0; attempt < 3 && !settled; attempt += 1) {
+        try {
+          await ensureDev();
+          await clubRun(browser, run);
+          results.push({ run, ok: true });
+          settled = true;
+        } catch (error) {
+          last = error instanceof Error ? error.message : String(error);
+          if (!serverDown(error) || attempt === 2) {
+            results.push({ run, ok: false, error: last });
+            settled = true;
+          }
+        }
       }
     }
   } finally {
@@ -632,20 +681,31 @@ test("book clubs across three phones", { timeout: 300000 }, async () => {
     Array.from({ length: RUNS }, () => true),
     JSON.stringify(results),
   );
+  });
 });
 
 test("live reading across two phones", { timeout: 300000 }, async () => {
+  await oneAtATime(async () => {
   const mirror = await startMirror();
-  const browser = await chromium.launch({ executablePath: CHROME, headless: true });
+  const browser = await launchBrowser();
   const results: { run: number; ok: boolean; error?: string }[] = [];
   try {
-    await ensureDev();
     for (let run = 1; run <= RUNS; run += 1) {
-      try {
-        await friendRun(browser, mirror.url, run);
-        results.push({ run, ok: true });
-      } catch (error) {
-        results.push({ run, ok: false, error: error instanceof Error ? error.message : String(error) });
+      let settled = false;
+      let last = "";
+      for (let attempt = 0; attempt < 3 && !settled; attempt += 1) {
+        try {
+          await ensureDev();
+          await friendRun(browser, mirror.url, run);
+          results.push({ run, ok: true });
+          settled = true;
+        } catch (error) {
+          last = error instanceof Error ? error.message : String(error);
+          if (!serverDown(error) || attempt === 2) {
+            results.push({ run, ok: false, error: last });
+            settled = true;
+          }
+        }
       }
     }
   } finally {
@@ -658,4 +718,5 @@ test("live reading across two phones", { timeout: 300000 }, async () => {
     Array.from({ length: RUNS }, () => true),
     JSON.stringify(results),
   );
+  });
 });
