@@ -1,13 +1,11 @@
 import assert from "node:assert/strict";
-import { execFileSync, spawn, type ChildProcess } from "node:child_process";
-import { existsSync, openSync, readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { execFileSync } from "node:child_process";
+import { existsSync, readFileSync } from "node:fs";
 import test from "node:test";
-import { fileURLToPath } from "node:url";
 import { chromium, devices, type Browser, type Page } from "playwright";
+import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
-const LOCAL_ORIGIN = !process.env.READER_ORIGIN;
 const BACKS = 32;
 const PHONE = devices["iPhone 12"];
 
@@ -117,52 +115,8 @@ async function launchBrowser(): Promise<Browser> {
   }
 }
 
-async function healthy() {
-  try {
-    const res = await fetch(`${ORIGIN}/salon/`, { signal: AbortSignal.timeout(2000) });
-    return res.ok;
-  } catch {
-    return false;
-  }
-}
-
-const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "../..");
-
-async function ensureServer() {
-  if (!LOCAL_ORIGIN) return async () => {};
-  if (await healthy()) return async () => {};
-  const log = openSync("/tmp/reader-back-tap-dev.log", "a");
-  const child: ChildProcess = spawn("npm", ["run", "dev"], {
-    cwd: repoRoot,
-    detached: true,
-    stdio: ["ignore", log, log],
-    env: process.env,
-  });
-  child.unref();
-  const failed = new Promise<never>((_, reject) => {
-    child.once("error", (error) => {
-      reject(new Error(`could not start the reader (${repoRoot}): ${error.message}`));
-    });
-  });
-  const deadline = Date.now() + 120_000;
-  while (Date.now() < deadline) {
-    const ready = await Promise.race([
-      healthy().then((ok) => (ok ? "up" : "down")),
-      failed,
-    ]);
-    if (ready === "up") {
-      return async () => {
-        if (!child.pid) return;
-        try {
-          process.kill(-child.pid, "SIGTERM");
-        } catch {
-          child.kill("SIGTERM");
-        }
-      };
-    }
-    await new Promise((resolve) => setTimeout(resolve, 400));
-  }
-  throw new Error(`reader dev server did not start from ${repoRoot}`);
+function ensureServer() {
+  return ensureReaderServer();
 }
 
 async function phonePage(browser: Browser) {
@@ -309,21 +263,32 @@ async function backSeries(
 }
 
 async function openCatalog(page: Page, at: number) {
-  await page.goto(`${ORIGIN}/salon/read/the-house-of-mirth?at=${at}`, {
-    waitUntil: "domcontentloaded",
-  });
-  await page.locator(".breath-now").waitFor();
-  await page.waitForFunction(
-    (want) => {
-      const frame = document.querySelector(".reader-frame");
-      const full = frame?.getAttribute("data-bound") === "full";
-      const index = frame?.getAttribute("data-breath-index");
-      const gate = document.querySelector(".veil");
-      return full && index === String(want) && !gate;
-    },
-    at,
-    { timeout: 30_000 },
-  );
+  let last: unknown;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      await page.goto(`${ORIGIN}/salon/read/the-house-of-mirth?at=${at}`, {
+        waitUntil: "domcontentloaded",
+      });
+      await page.locator(".breath-now").waitFor();
+      await page.waitForFunction(
+        (want) => {
+          const frame = document.querySelector(".reader-frame");
+          const full = frame?.getAttribute("data-bound") === "full";
+          const index = frame?.getAttribute("data-breath-index");
+          const gate = document.querySelector(".veil");
+          return full && index === String(want) && !gate;
+        },
+        at,
+        { timeout: 30_000 },
+      );
+      return;
+    } catch (error) {
+      last = error;
+      if (!readerDown(error) || attempt === 2) break;
+      await ensureServer();
+    }
+  }
+  throw last;
 }
 
 test(

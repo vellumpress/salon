@@ -1,14 +1,14 @@
 import assert from "node:assert/strict";
-import { execFileSync, spawn, type ChildProcess } from "node:child_process";
-import { existsSync, openSync, readdirSync, readFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { readableIds } from "./catalog/shelf.ts";
+import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
-const LOCAL_ORIGIN = !process.env.READER_ORIGIN;
 const PHONE = devices["iPhone 12"];
 const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "../..");
 const TAPS = 500;
@@ -156,32 +156,8 @@ async function launchWebkit(): Promise<Browser | null> {
   }
 }
 
-async function healthy() {
-  try {
-    const res = await fetch(`${ORIGIN}/salon/`, { signal: AbortSignal.timeout(2000) });
-    return res.ok;
-  } catch {
-    return false;
-  }
-}
-
-async function ensureServer() {
-  if (!LOCAL_ORIGIN) return async () => {};
-  if (await healthy()) return async () => {};
-  const log = openSync("/tmp/reader-tap-stress-dev.log", "a");
-  const child: ChildProcess = spawn("npm", ["run", "dev"], {
-    cwd: repoRoot,
-    detached: true,
-    stdio: ["ignore", log, log],
-    env: process.env,
-  });
-  child.unref();
-  const deadline = Date.now() + 120_000;
-  while (Date.now() < deadline) {
-    if (await healthy()) return async () => {};
-    await new Promise((resolve) => setTimeout(resolve, 400));
-  }
-  throw new Error("reader did not start");
+function ensureServer() {
+  return ensureReaderServer();
 }
 
 async function phone(browser: Browser) {
@@ -243,7 +219,7 @@ async function openAt(page: Page, id: string, at: number) {
     .evaluate(() => sessionStorage.removeItem("keep-progress"))
     .catch(() => undefined);
   let last: unknown;
-  for (let attempt = 0; attempt < 2; attempt += 1) {
+  for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
       await page.goto(`${ORIGIN}/salon/read/${id}?at=${at}`, {
         waitUntil: "domcontentloaded",
@@ -263,6 +239,9 @@ async function openAt(page: Page, id: string, at: number) {
       return;
     } catch (error) {
       last = error;
+      const down = readerDown(error);
+      if (attempt >= (down ? 2 : 1)) break;
+      if (down) await ensureServer();
     }
   }
   const message = last instanceof Error ? last.message.split("\n")[0] : String(last);
@@ -284,6 +263,21 @@ async function passGate(page: Page) {
 }
 
 async function resume(page: Page, id: string, at: number) {
+  let last: unknown;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      await resumeOnce(page, id, at);
+      return;
+    } catch (error) {
+      last = error;
+      if (!readerDown(error) || attempt === 2) break;
+      await ensureServer();
+    }
+  }
+  throw last;
+}
+
+async function resumeOnce(page: Page, id: string, at: number) {
   const saved = JSON.stringify({
     state: {
       activeReadVersion: 1,
@@ -356,9 +350,14 @@ async function aim(
         x = direction < 0 ? host.left + Math.max(12, host.width * 0.12) : host.left + host.width * 0.72;
         y = Math.min(limit - 1, host.top + Math.max(24, host.height * 0.45));
       } else if (direction < 0) {
-        if (!(row.top > host.top + 28)) return { ok: false as const, reason: "no back band" };
-        y = host.top + 12;
-        x = host.left + host.width * 0.72;
+        // A line that rests just under the header still has a back band above
+        // the words. Keep the tap in the left third too, so a tall sentence's
+        // back control and a short sentence's above-the-line zone agree.
+        y = Math.min(row.top - 4, host.top + 12);
+        if (!(y >= host.top && y < row.top && y < limit)) {
+          return { ok: false as const, reason: "no back band" };
+        }
+        x = host.left + Math.max(12, host.width * 0.12);
       } else {
         y = Math.min(limit - 1, host.bottom - 20);
         if (!(y >= row.top)) return { ok: false as const, reason: "no forward band" };
@@ -595,20 +594,31 @@ async function mix(
 }
 
 async function importPdf(page: Page) {
-  await page
-    .evaluate(() => sessionStorage.removeItem("keep-progress"))
-    .catch(() => undefined);
-  await page.goto(`${ORIGIN}/salon/page`, { waitUntil: "domcontentloaded" });
-  await page.locator('input[type="file"]').setInputFiles({
-    name: "stress.pdf",
-    mimeType: "application/pdf",
-    buffer: Buffer.from(stressPdf()),
-  });
-  await page.waitForURL(/\/read\/page/, { timeout: 30_000 });
-  await passGate(page);
-  await page.waitForFunction(
-    () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "0",
-  );
+  let last: unknown;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      await page
+        .evaluate(() => sessionStorage.removeItem("keep-progress"))
+        .catch(() => undefined);
+      await page.goto(`${ORIGIN}/salon/page`, { waitUntil: "domcontentloaded" });
+      await page.locator('input[type="file"]').setInputFiles({
+        name: "stress.pdf",
+        mimeType: "application/pdf",
+        buffer: Buffer.from(stressPdf()),
+      });
+      await page.waitForURL(/\/read\/page/, { timeout: 30_000 });
+      await passGate(page);
+      await page.waitForFunction(
+        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "0",
+      );
+      return;
+    } catch (error) {
+      last = error;
+      if (!readerDown(error) || attempt === 2) break;
+      await ensureServer();
+    }
+  }
+  throw last;
 }
 
 test(
