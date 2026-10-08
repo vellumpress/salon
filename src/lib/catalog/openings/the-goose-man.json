@@ -1,0 +1,190 @@
+{
+  "id": "the-goose-man",
+  "title": "The Goose Man",
+  "author": "Jakob Wassermann (tr. Ludwig Lewisohn and Allen W. Porterfield)",
+  "year": "1915",
+  "note": "Opening sit: Chapter I, §§ I–III, ending at the returned receipt.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I · A mother seeks her son · § I",
+      "place": "Chapter I · A mother seeks her son · § I",
+      "reentry": "The landscape shows many shades of green; deep forests, mostly coniferous, extend from the valley of the Rednitz to that of the Tauber. Yet the villages lie in the midst of great circles of cultivated land, for the tillage of man is immemor",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Chapter I · A mother seeks her son · § II",
+      "place": "Chapter I · A mother seeks her son · § II",
+      "reentry": "A day came on which his trade seemed to come to a halt. The weavers in all the land complained that they could not keep their old pace. It was as though a creeping paralysis had come upon them. The market prices suddenly dropped, and the ch",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Chapter I · A mother seeks her son · § III",
+      "place": "Chapter I · A mother seeks her son · § III",
+      "reentry": "On the square of the grain merchants in Nuremberg, Jason Philip Schimmelweis, the husband of Marian's sister, had his bookbinder's shop.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "The landscape shows many shades of green; deep forests, mostly coniferous, extend from the valley of the Rednitz to that of the Tauber. Yet the villages lie in the midst of great circles of cultivated land, for the tillage of man is immemorial here. Around the many weirs the grass grows higher, so high often that you can see only the beaks of the droves of geese, and were it not for their cackle you might take these beaks to be strangely mobile flowers."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The little town of Eschenbach lies quite flat on the plain. In it a fragment of the Middle Ages has survived, but no strangers know it, since hours of travel divide it from any railway. Ansbach is the nearest point in the great system of modern traffic; to get there you must use a stage-coach. And that is as true to-day as it was in the days when Gottfried Nothafft, the weaver, lived there."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "The town walls are overgrown with moss and ivy; the old drawbridges still cross the moats and take you through the round, ruined gates into the streets. The houses have bay-windows and far-projecting overhangs, and their interlacing beams look like the criss-cross of muscles on an anatomical chart."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Concerning the poet who was once born here and who sang the song of Parsifal, all living memory has faded. Perhaps the fountains whisper of him by night; perhaps sometimes when the moon is up, his shadow hovers about the church or the town-hall. The men and women know nothing of him any more."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "The little house of the weaver, withdrawn by a short distance from the street, stood not far from the inn at the sign of the Ox. Three worn steps took you to its door, and six windows looked out upon the quiet square. It is strange to reflect that the spirit of modern industrialism hewed its destructive path even to this forgotten nook of the world."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "In 1849, at the time of Gottfried Nothafft's marriage--his wife, Marian, was one of the two Hoellriegel sisters of Nuremberg--he had still been able to earn a tolerable living. So the couple desired a child, but desired it for years in vain. Often, at the end of the day's work, when Gottfried sat on the bench in front of his house and smoked his pipe, he would say: \"How good it would be if we had a son.\" Marian would fall silent and lower her eyes."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "As time passed, he stopped saying that, because he would not put the woman to shame. But his expression betrayed his desire all the more clearly."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "A day came on which his trade seemed to come to a halt. The weavers in all the land complained that they could not keep their old pace. It was as though a creeping paralysis had come upon them. The market prices suddenly dropped, and the character of the goods was changed."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "This took place toward the end of the eighteen hundred and fifties, when the new power looms were being introduced from America. No toil profited anything. The cheap product which the machines could furnish destroyed the sale of the hand-made weaves."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "At first Gottfried Nothafft refused to be cast down. Thus the wheel of a machine will run on for a space after the power has been cut off. But gradually his courage failed. His hair turned grey in a single winter, and at the age of forty-five he was a broken man."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "And just as poverty appeared threatening at their door, and the soul of Marian began to be stained by hatred, the longing of the couple was fulfilled, and the wife became pregnant in the tenth year of their marriage."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "The hatred which she nourished was directed against the power loom. In her dreams she saw the machine as a monster with thighs of steel, which screamed out its malignity and devoured the hearts of men. She was embittered by the injustice of a process which gave to impudence and sloth the product that had once come thoughtfully and naturally from the careful hands of men."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "One journeyman after another had to be discharged, and one hand-loom after another to be stored in the attic. On many days Marian would slip up the stairs and crouch for hours beside the looms, which had once been set in motion by a determinable and beneficent exertion and were like corpses now."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Gottfried wandered across country, peddling the stock of goods he had on hand. Once on his return he brought with him a piece of machine-made cloth which a merchant of Noerdlingen had given him. \"Look, Marian, see what sort of stuff it is,\" he said, and handed it to her. But Marian drew her hand away, and shuddered as though she had seen the booty of a murderer."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "After the birth of her boy she lost these morbid feelings; Gottfried on the other hand seemed to dwindle from month to month. Though he outlasted the years, there was no cheer left in him and he got no comfort even from his growing boy. When he had sold all his own wares, he took those of others, and dragged himself wearily in summer and winter from village to village."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "In spite of the scarcity that prevailed in the house, Marian was convinced that Gottfried had put by money, and certain hints which he threw out confirmed her in this hope. It was one of his peculiar views that it was better to leave his wife in the dark regarding the true state of their fortunes. As their circumstances grew worse, he became wholly silent on this point."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "On the square of the grain merchants in Nuremberg, Jason Philip Schimmelweis, the husband of Marian's sister, had his bookbinder's shop."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Schimmelweis was a Westphalian. Hatred against the junkers and the priests had driven him to this Protestant city of the South, where from the beginning he had acquired the respect of people through his ready wit and speech. Theresa Hoellriegel had lodged in the house in which he opened his shop, and gained her living as a seamstress. He had thought that she had some money, but it had proved to be too little for his ambitious notions. When he discovered that, he treated Theresa as though she had cheated him."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "He held his trade in contempt, and was ambitious of greater things. He felt that he was called to be a bookseller; but he had no capital wherewith to realise this plan. So he sat morosely in his subterranean shop, pasted and folded and quarrelled with his lot, and in his hours of leisure read the writings of socialists and freethinkers."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "It was the Autumn in which the war against France was raging. On that very morning had come the news of the battle of Sedan. All the church bells were ringing."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "To the surprise of Jason Philip, Gottfried Nothafft stepped into his shop. His long, patriarchal beard and tall stature gave something venerable to his appearance, even though his face looked tired and his eyes were dull."
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "\"God bless you, brother,\" he said and held out his hand. \"The fatherland has better luck than its citizens.\""
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "Schimmelweis, who did not like the visits of kinsmen, returned the salutation with careful coolness. His features did not brighten until he heard that his brother-in-law was stopping at the Red Cock Inn. He asked what errand had brought Gottfried to the city."
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "\"I must have a talk with you,\" Nothafft replied."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "They entered a room behind the shop and sat down. Jason Philip's eyes harboured even now a definitely negative answer to any proposal that might cost him money or trouble. But he was to be agreeably disappointed."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "\"I want to tell you, brother,\" Gottfried Nothafft said, \"that I have put by three thousand taler during the nineteen years of my married life. And since I have the feeling that I am not long for this world, I have come to ask you to take charge of the money for Marian and the boy. It has been troublesome enough not to touch it in these evil times that have come. Marian knows nothing of it, and I don't want her to know. She is a weak woman, and women do not understand money nor the worth and dignity it has when it has been earned so bitterly hard. In some hour of difficulty she would begin to use it, and presently it would be gone. But I want to ease Daniel's entry into life, when his years of training and apprenticeship are over. He is twelve now. In another twelve years he will be, God willing, a man. You can help Marian with the interest, and all I ask of you is to be silent and to act a father's part toward the boy when I shall be no more.\""
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "Jason Philip Schimmelweis arose. He was moved and wrung Gottfried Nothafft's hand. \"You may rely upon me,\" he said, \"as you would on the Bank of England.\""
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "\"I thought that would be your answer, brother, and that is why I came.\""
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "He put down on the table three thousand taler in bank notes of the realm, and Jason Philip wrote out a receipt. Then he urged him to stay that night at his house. But Gottfried Nothafft said that he must return home to his wife and child, and that a single night in the noisy city had been enough for him."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "When they returned to the shop, they found Theresa sitting there. In her lap she held Philippina, her first-born, who was three years old. The child had a large head and homely features. Gottfried hardly stopped to answer his sister-in-law's questions. Later Theresa asked her husband what Gottfried's business had been. Jason Philip answered brusquely: \"Nothing a woman would understand.\""
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "Three days later Gottfried sent back the receipt. On the back of it he had written: \"The paper is of no use; it might even betray my secret. I have your word and your hand. That is enough. With thanks for your friendship and your services, I am your faithful kinsman, Gottfried Nothafft.\""
+    }
+  ]
+}

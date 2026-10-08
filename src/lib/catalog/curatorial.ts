@@ -1192,6 +1192,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Wed 7 Oct 2026 PM — Strait Is the Gate goes in just before Fräulein Schmidt, so Schmidt stays the newest entry. Content notes are on the card. Never Featured. Off every Ritual lane.
   "strait-is-the-gate",
   "fraulein-schmidt-and-mr-anstruther",
+  // Mira Thu 8 Oct 2026 AM GOOSE-MAN — The Goose Man follows Fräulein Schmidt, Next carefully only (the content notes are on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (Chapter I, §§ I–III) is never unwind or before-sleep.
+  "the-goose-man",
 ] as const;
 
 /**

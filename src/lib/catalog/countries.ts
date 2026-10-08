@@ -730,6 +730,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-mist": "Denmark",
   "strait-is-the-gate": "France",
   "fraulein-schmidt-and-mr-anstruther": "Germany",
+  "the-goose-man": "Germany",
   "a-japanese-blossom": "Canada",
   "the-spoilt-child": "India",
   "winnie-the-pooh": "United Kingdom",

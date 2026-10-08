@@ -2771,7 +2771,8 @@ test("OPEN-FIX-2: Copper Sun's The Touch ends on Under the Mistletoe, the librar
   const all = full.breaths.map((breath) => breath.text).join("\n");
   assert.doesNotMatch(all, /RULES FOR BORROWERS|Oregon State Library|Pressure Sensitive|MAIL\s+ORDER/);
   const map = remap["copper-sun"]!;
-  assert.equal(Object.keys(map).length, 109);
+  // GOOSE-MAN pack: three Love Tree scan-junk breaths (s7-20…s7-22) are cut too.
+  assert.equal(Object.keys(map).length, 112);
   for (let i = 39; i <= 109; i++) assert.equal(map[`s24-${i}`], "s24-38", `s24-${i}`);
 });
 
@@ -2794,7 +2795,7 @@ test("DONA-PERFECTA: Copper Sun has no printed page-number breaths; the section 
     assert.equal(ids.has(to), true, `${from} → ${to}`);
   }
   const work = SHELF.find((item) => item.id === "copper-sun")!;
-  assert.equal(work.breaths, 937);
+  assert.equal(work.breaths, 934);
 });
 
 test("OPEN-FIX-2: Karamazov opens on the novel, its notes after the citing paragraph", () => {
@@ -2967,4 +2968,71 @@ test("DONA-PERFECTA: Serrano's English from PG 2462 replaces the Spanish student
   assert.deepEqual(placeForId("dona-perfecta"), { label: "Spain", region: "es" });
   assert.equal(countryFor(work), "Spain");
   assert.equal(remap["dona-perfecta"], undefined, "Spanish breath ids are not mapped onto the English text");
+});
+
+test("GOOSE-MAN furniture: stranded chapter numbers, page numbers and running heads are cut; ids map to the breath before", () => {
+  const remap = JSON.parse(readFileSync(new URL("./at-remap.json", import.meta.url), "utf8")) as Record<string, Record<string, string>>;
+  const check = (id: string, cuts: Record<string, string>, breaths: number) => {
+    const full = textWork(id) as Work;
+    const ids = new Set(full.breaths.map((breath) => breath.id));
+    const map = remap[id]!;
+    for (const [from, to] of Object.entries(cuts)) {
+      assert.equal(ids.has(from), false, `${id} ${from}`);
+      assert.equal(map[from], to, `${id} ${from}`);
+      assert.equal(ids.has(to), true, `${id} ${to}`);
+    }
+    for (const [from, to] of Object.entries(map)) {
+      assert.equal(ids.has(from), false, `${id} ${from}`);
+      assert.equal(ids.has(to), true, `${id} ${from} → ${to}`);
+    }
+    for (const scene of full.scenes) assert.ok(full.breaths.some((breath) => breath.sceneId === scene.id), `${id}#${scene.id} empty`);
+    assert.equal(full.breaths.length, breaths, id);
+    assert.equal(SHELF.find((item) => item.id === id)!.breaths, breaths, id);
+    return full;
+  };
+  // The Maltese Falcon: chapters 10–20 no longer end on their own number; no chapter opens on one either.
+  const falconCuts: Record<string, string> = { "s4-46": "s4-45" };
+  for (const [scene, last] of [[8, 212], [9, 340], [10, 336], [11, 273], [12, 250], [13, 250], [14, 295], [15, 314], [16, 356], [17, 407], [18, 566]] as const) {
+    falconCuts[`s${scene}-${last}`] = `s${scene}-${last - 1}`;
+  }
+  const falcon = check("falcon", falconCuts, 6154);
+  assert.equal(falcon.breaths.some((breath) => /^\d+$/.test(breath.text.trim())), false);
+  assert.ok(falcon.breaths.find((breath) => breath.id === "s4-45")!.text.endsWith("a Shanghai insurance-broker’s business-card; and four sheets of Hotel Belvedere writing paper, on one of which was written in small precise letters Samuel Spade’s name and the addresses of his office and his apartment."));
+  assert.equal(falcon.breaths.find((breath) => breath.id === "s18-565")!.text, "I leave you the _rara avis_ on the table as a little memento.”");
+  assert.equal(falcon.breaths.find((breath) => breath.sceneId === "s9")!.text.startsWith("BEGINNING day had reduced night"), true);
+  // Munshi Abdullah: the OCR running heads and bare page numbers are gone (chapter numbers stay).
+  const munshiHeads = ["s0-59", "s3-21", "s6-12", "s7-12", "s8-37", "s10-16", "s10-43", "s18-42", "s19-12", "s20-14", "s22-31", "s24-31", "s28-13", "s29-61", "s30-14", "s30-15", "s30-37", "s31-35", "s33-18", "s33-47", "s34-25", "s34-43", "s35-19", "s37-10", "s39-16", "s40-16", "s40-62", "s40-76", "s41-11", "s44-20", "s46-10", "s46-11", "s48-10", "s49-12"];
+  const munshiPages = ["s7-13", "s8-38", "s18-43", "s19-13", "s22-32", "s24-32", "s29-23", "s29-62", "s31-36", "s33-19", "s33-48", "s34-26", "s35-41", "s36-13", "s40-63", "s41-24", "s44-21", "s48-11", "s48-42"];
+  const munshiId = "the-autobiography-of-munshi-abdullah-hikayat-abd";
+  assert.equal(Object.keys(remap[munshiId]!).length, munshiHeads.length + munshiPages.length);
+  const munshi = check(munshiId, {}, 2003);
+  for (const cut of [...munshiHeads, ...munshiPages]) assert.equal(munshi.breaths.some((breath) => breath.id === cut), false, cut);
+  // Heads glued into a printed sentence stay for now (s9-13, s29-22, and s36-12 after "Mr."); only whole-furniture breaths were cut.
+  const heads = munshi.breaths.filter((breath) => /AUTOB|ArTOB|AT'TOB|AUTUB|AFTOB|AUTOR|AL'TOB|Al'TOB|AUTUH|AITTO|autobiography/i.test(breath.text)).map((breath) => breath.id);
+  assert.deepEqual(heads, ["s0-1", "s9-13", "s29-22", "s36-12"]);
+  assert.equal(munshi.breaths.some((breath) => breath.text.trim().length <= 5 && /\d/.test(breath.text) && breath.text.trim() !== "11."), false);
+  assert.equal(remap[munshiId]!["s0-59"], "s0-58");
+  assert.equal(remap[munshiId]!["s30-15"], "s30-13");
+  assert.equal(remap[munshiId]!["s46-11"], "s46-9");
+  const munshiOpen = JSON.parse(readFileSync(new URL(`./openings/${munshiId}.json`, import.meta.url), "utf8")) as Work;
+  assert.equal(munshiOpen.breaths.some((breath) => /AUTOB|ArTOB/.test(breath.text)), false);
+  assert.equal(munshiOpen.breaths.length, 95);
+  // Smoke and Steel: the "253838" page-number run and its running head.
+  const smoke = check("smoke-and-steel", { "s23-7": "s23-6", "s23-8": "s23-6" }, 2062);
+  assert.equal(smoke.breaths.some((breath) => breath.text === "253838" || breath.text === "38 Smoke and Steel"), false);
+  // Malay Annals: page 259 sat inside "sur-/prised"; the word is whole again.
+  const annals = check("malay-annals-sejarah-melayu", { "s4-369": "s4-368", "s4-370": "s4-368" }, 2954);
+  assert.ok(annals.breaths.find((breath) => breath.id === "s4-368")!.text.startsWith("Every body was surprised at this, and that Tun Isup had taught the horse"));
+  assert.equal(annals.breaths.some((breath) => breath.text === "259"), false);
+  // Chéri: the stray "2247".
+  const cheri = check("cheri", { "s4-51": "s4-50" }, 3115);
+  assert.equal(cheri.breaths.some((breath) => breath.text === "2247"), false);
+  // Copper Sun: scan junk after The Love Tree; the printed section title "At Cambridge" stays.
+  const copper = textWork("copper-sun") as Work;
+  for (const cut of ["s7-20", "s7-21", "s7-22"]) assert.equal(remap["copper-sun"]![cut], "s7-18", cut);
+  const cambridge = copper.breaths.findIndex((breath) => breath.id === "s7-23");
+  assert.equal(copper.breaths[cambridge]!.text, "At Cambridge");
+  assert.equal(copper.breaths[cambridge - 1]!.text, "grow.");
+  assert.equal(copper.breaths[cambridge + 1]!.text, "(With grateful appreciation to Robert S. Hillyer)");
+  assert.equal(copper.breaths.some((breath) => /Hoy\s+pets|^\W*\|\W*$|^i\s+\|$/.test(breath.text.trim())), false);
 });
