@@ -23,6 +23,11 @@ export type KeptStored = string | KeptLineRecord;
 export type BreathRemap = {
   byWork: Record<string, Record<string, string>>;
   flat: Record<string, string>;
+  /**
+   * Breath count of the bind a remap replaces, per work.
+   * An index-only save can scale against this when it has no breath id.
+   */
+  fromCount?: Record<string, number>;
 };
 
 export type KeptBreath = { id: string; text: string; sceneId?: string };
@@ -59,7 +64,7 @@ const MIN_CONTAIN_CHARS = 16;
 const WRAPPER_KEYS = new Set(["works", "breaths", "map", "ids", "at", "remap"]);
 
 export function emptyBreathRemap(): BreathRemap {
-  return { byWork: {}, flat: {} };
+  return { byWork: {}, flat: {}, fromCount: {} };
 }
 
 export function keptBreathId(entry: unknown): string {
@@ -122,7 +127,11 @@ export function normalizeKeptText(text: string): string {
     .trim();
 }
 
-/** True when a saved breath id is no longer in the text, so the remap may help. */
+/**
+ * True when a saved id is missing, or an id-only line may have been reused
+ * by a re-bind (the id is still in the book, so the old "missing id" check
+ * would never open the remap).
+ */
 export function keptIdsNeedRemap(
   kept: readonly unknown[] | undefined,
   breaths: readonly { id: string }[] | undefined,
@@ -131,7 +140,9 @@ export function keptIdsNeedRemap(
   const live = new Set(breaths.map((breath) => breath.id));
   return kept.some((entry) => {
     const id = keptBreathId(entry);
-    return Boolean(id) && !live.has(id);
+    if (!id) return false;
+    if (!live.has(id)) return true;
+    return asKeptRecord(entry) === null;
   });
 }
 
@@ -168,6 +179,12 @@ function absorbRemap(raw: unknown, into: BreathRemap, workId?: string) {
   }
   if (!raw || typeof raw !== "object") return;
   for (const [key, value] of Object.entries(raw as Record<string, unknown>)) {
+    if (typeof value === "number" && Number.isFinite(value) && value >= 0) {
+      if (workId && (key === "fromCount" || key === "_count")) {
+        into.fromCount = { ...(into.fromCount ?? {}), [workId]: Math.floor(value) };
+      }
+      continue;
+    }
     if (typeof value === "string") {
       putRemap(into, key.trim(), value.trim(), workId);
       continue;
@@ -175,8 +192,10 @@ function absorbRemap(raw: unknown, into: BreathRemap, workId?: string) {
     if (!value || typeof value !== "object") continue;
     const nested = value as Record<string, unknown>;
     const leaves = Object.values(nested).filter((item) => item != null);
-    const allStrings = leaves.length > 0 && leaves.every((item) => typeof item === "string");
-    if (allStrings) {
+    const countable =
+      leaves.length > 0 &&
+      leaves.every((item) => typeof item === "string" || typeof item === "number");
+    if (countable && leaves.some((item) => typeof item === "string")) {
       absorbRemap(nested, into, key.trim());
       continue;
     }
@@ -196,7 +215,11 @@ export function mergeRemap(base: BreathRemap, extra: BreathRemap): BreathRemap {
   for (const [workId, map] of Object.entries(extra.byWork)) {
     byWork[workId] = { ...(byWork[workId] ?? {}), ...map };
   }
-  return { byWork, flat: { ...base.flat, ...extra.flat } };
+  return {
+    byWork,
+    flat: { ...base.flat, ...extra.flat },
+    fromCount: { ...(base.fromCount ?? {}), ...(extra.fromCount ?? {}) },
+  };
 }
 
 export function remapBreathId(
@@ -399,6 +422,39 @@ function retargetRecord(
   return { ...record, id: mapped };
 }
 
+/**
+ * A re-bind can reuse an id for a different paragraph. The remap target is
+ * the passage when that paragraph is a different length or a different chapter.
+ */
+export function reusedBreathId(live: KeptBreath, mapped: KeptBreath): boolean {
+  if (!live.id || !mapped.id || live.id === mapped.id) return false;
+  if (live.sceneId && mapped.sceneId && live.sceneId !== mapped.sceneId) return true;
+  return live.text.trim().length !== mapped.text.trim().length;
+}
+
+function breathAt(breaths: readonly KeptBreath[], id: string): { index: number; breath: KeptBreath } | null {
+  const index = breathIndex(breaths, id);
+  const breath = index >= 0 ? breaths[index] : undefined;
+  if (!breath) return null;
+  return { index, breath };
+}
+
+/** Remap wins when the live id was reused. Otherwise the id, then the remap. */
+export function resolveBreathId(
+  workId: string,
+  id: string,
+  breaths: readonly KeptBreath[],
+  remap: BreathRemap | undefined,
+): { index: number; breath: KeptBreath } | null {
+  const direct = id ? breathAt(breaths, id) : null;
+  const mappedId = remapBreathId(remap, workId, id);
+  const mapped = mappedId ? breathAt(breaths, mappedId) : null;
+  if (direct && mapped && reusedBreathId(direct.breath, mapped.breath)) return mapped;
+  if (direct) return direct;
+  if (mapped) return mapped;
+  return null;
+}
+
 /** A bare id resolves, or a published remap names a breath that does. No text search. */
 function resolveIdOnly(
   workId: string,
@@ -407,13 +463,8 @@ function resolveIdOnly(
   remap: BreathRemap | undefined,
   complete: boolean,
 ): KeptBreath | undefined {
-  const direct = breathIndex(work.breaths, id);
-  if (direct >= 0) return work.breaths[direct];
-  const mapped = remapBreathId(remap, workId, id);
-  if (mapped) {
-    const at = breathIndex(work.breaths, mapped);
-    if (at >= 0) return work.breaths[at];
-  }
+  const found = resolveBreathId(workId, id, work.breaths, remap);
+  if (found) return found.breath;
   if (!complete) return undefined;
   return undefined;
 }
@@ -436,6 +487,18 @@ export function anchorKeptLine(
     if (text && !keptTextsMatch(text, breath.text)) return null;
     return { index, breathId: breath.id, updated: breath.id !== id };
   };
+
+  if (!text && id) {
+    const found = resolveBreathId(workId, id, breaths, remap);
+    if (found) {
+      return {
+        index: found.index,
+        breathId: found.breath.id,
+        updated: found.breath.id !== id,
+      };
+    }
+    return miss;
+  }
 
   const direct = id ? byId(id) : null;
   if (direct) return direct;

@@ -45,11 +45,20 @@ import {
   type KeptStored,
 } from "./kept-lines.ts";
 import { canonicalWorkId, remapAliasedWorkIds } from "./work-id-alias.ts";
+import type { PlaceStamp } from "./rebind-guard.ts";
 
 export { dayKey };
 
 export type WorkProgress = {
   breathIndex: number;
+  /**
+   * Breath id at `breathIndex`, and the bind it was saved against.
+   * A later re-bind re-anchors from these instead of trusting the index.
+   * Missing on saves from before the guard.
+   */
+  breathId?: string;
+  breathCount?: number;
+  bindHash?: string;
   lastOpenedAt: number;
   sittingStartedAt: number | null;
   keywords: Record<string, string>;
@@ -183,12 +192,12 @@ type TbrState = {
   pushCurator: (turn: CuratorTurn) => void;
   setReadingNow: (now: ReadingNow | null) => void;
   ensure: (workId: string) => WorkProgress;
-  setBreath: (workId: string, index: number) => void;
+  setBreath: (workId: string, index: number, place?: PlaceStamp) => void;
   /** Forward advance: move to `index` and credit clamped active time. */
   advanceBreath: (
     workId: string,
     index: number,
-    opts?: { crossedScene?: boolean },
+    opts?: { crossedScene?: boolean; place?: PlaceStamp },
   ) => void;
   /** Drop the open-sentence anchor (hidden, overlay, leaving). No credit. */
   pauseActiveRead: (workId: string) => void;
@@ -208,6 +217,16 @@ type TbrState = {
   resetWork: (workId: string) => void;
   stale: (workId: string, index: number) => void;
 };
+
+function stamped(index: number, place?: PlaceStamp): Pick<WorkProgress, "breathIndex" | "breathId" | "breathCount" | "bindHash"> {
+  if (!place) return { breathIndex: index };
+  return {
+    breathIndex: index,
+    breathId: place.breathId,
+    breathCount: place.breathCount,
+    bindHash: place.bindHash,
+  };
+}
 
 const emptyProgress = (): WorkProgress => ({
   breathIndex: 0,
@@ -696,7 +715,7 @@ export const useTbr = create<TbrState>()(
         }));
         return fresh;
       },
-      setBreath: (workId, index) =>
+      setBreath: (workId, index, place) =>
         set((state) => {
           const now = Date.now();
           const current = state.progress[workId] ?? emptyProgress();
@@ -710,7 +729,7 @@ export const useTbr = create<TbrState>()(
               ...state.progress,
               [workId]: {
                 ...writeClock(current, clock),
-                breathIndex: index,
+                ...stamped(index, place),
                 lastOpenedAt: now,
                 entered: true,
               },
@@ -730,7 +749,7 @@ export const useTbr = create<TbrState>()(
                 ...state.progress,
                 [workId]: {
                   ...writeClock(current, clock),
-                  breathIndex: index,
+                  ...stamped(index, opts?.place),
                   lastOpenedAt: now,
                   entered: true,
                 },
@@ -745,7 +764,7 @@ export const useTbr = create<TbrState>()(
             ...credited,
             progress: {
               ...credited.progress,
-              [workId]: { ...row, breathIndex: index },
+              [workId]: { ...row, ...stamped(index, opts?.place) },
             },
           };
         }),
@@ -999,7 +1018,11 @@ async function backfillKeptLines() {
     }
     const fresh = useTbr.getState().progress[workId];
     if (!fresh || JSON.stringify(fresh.kept ?? []) !== before) continue;
-    if (work && keptIdsNeedRemap(fresh.kept, work.breaths) && !breathRemapLoaded()) {
+    if (
+      work &&
+      (needsKeptBackfill(fresh.kept) || keptIdsNeedRemap(fresh.kept, work.breaths)) &&
+      !breathRemapLoaded()
+    ) {
       remap = await loadBreathRemap();
     }
     const result = migrateKeptList(

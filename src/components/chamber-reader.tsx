@@ -10,7 +10,8 @@ import {
   workIsComplete,
   type Work,
 } from "@/lib/works";
-import { readBreathRemap } from "@/lib/breath-remap";
+import { breathRemapLoaded, loadBreathRemap, readBreathRemap } from "@/lib/breath-remap";
+import { placeStamp, reanchorProgress, shouldLoadBindRemap } from "@/lib/rebind-guard";
 import { anchorKeptLine, keptBreathId, keptIncludes, type KeptStored } from "@/lib/kept-lines";
 import { chapterPlace, spineChapters } from "@/lib/spine-nav";
 import { useTbr } from "@/lib/store";
@@ -235,7 +236,20 @@ export function TbrReader({
   /** Height of the breath just read, plus the gap under it. Advance travels up by this. */
   const lastTravel = useRef(0);
 
+  function fullBind(book: Work) {
+    if (isDeviceImport(book.id)) return book.breaths.length > 0;
+    if (workIsComplete(book.id)) return true;
+    const shelf = shelfWork(book.id);
+    return shelf?.breaths != null && shelf.breaths === book.breaths.length;
+  }
+
+  function stampAt(book: Work, index: number) {
+    if (!fullBind(book) || index < 0 || index >= book.breaths.length) return undefined;
+    return placeStamp(book.breaths, index);
+  }
+
   useLayoutEffect(() => {
+    let cancel = false;
     ensure(work.id);
     if (sit !== undefined) {
       useTbr.getState().setSittingMinutes(sit);
@@ -251,75 +265,111 @@ export function TbrReader({
         : echoAt != null
           ? echoAt
           : null;
-    // The opening sit is already on the prose. When the full novel arrives,
-    // breath 0 can be a publication note or dedication. Nudge a fresh start
-    // past that leading front matter only — do not re-apply chapter jumps,
-    // and do not move a saved index that is already on the prose.
-    if (booted.current) {
-      const waiting = awaitingAt.current;
-      if (grew && waiting !== null && waiting < work.breaths.length) {
-        awaitingAt.current = null;
-        startSitting(work.id);
-        setBreath(work.id, waiting);
+
+    async function settlePlace(book: Work) {
+      if (!fullBind(book)) return;
+      const prior = useTbr.getState().progress[book.id];
+      if (!prior?.entered) return;
+      let remap = readBreathRemap();
+      if (shouldLoadBindRemap(prior, book.breaths) && !breathRemapLoaded()) {
+        remap = await loadBreathRemap();
+      }
+      if (cancel) return;
+      const next = reanchorProgress(prior, book.breaths, remap, book.id);
+      if (
+        prior.breathIndex === next.index &&
+        prior.breathId === next.breathId &&
+        prior.breathCount === next.breathCount &&
+        prior.bindHash === next.bindHash
+      ) {
+        return;
+      }
+      useTbr.getState().setBreath(book.id, next.index, {
+        breathId: next.breathId,
+        breathCount: next.breathCount,
+        bindHash: next.bindHash,
+      });
+    }
+
+    void (async () => {
+      // The opening sit is already on the prose. When the full novel arrives,
+      // breath 0 can be a publication note or dedication. Nudge a fresh start
+      // past that leading front matter only — do not re-apply chapter jumps,
+      // and do not move a saved index that is already on the prose.
+      if (booted.current) {
+        const waiting = awaitingAt.current;
+        if (grew && waiting !== null && waiting < work.breaths.length) {
+          if (cancel) return;
+          awaitingAt.current = null;
+          startSitting(work.id);
+          setBreath(work.id, waiting, stampAt(work, waiting));
+          setShowPreface(false);
+          setOverlay("none");
+          return;
+        }
+        if (grew && !shuffle && deepLink === null) {
+          await settlePlace(work);
+          if (cancel) return;
+          const index = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
+          const frontAt = openingBreathIndex(work);
+          if (index < frontAt) setBreath(work.id, frontAt, stampAt(work, frontAt));
+        }
+        return;
+      }
+      if (!shuffle && deepLink === null) await settlePlace(work);
+      if (cancel) return;
+      booted.current = true;
+      const prior = useTbr.getState().progress[work.id];
+      const firstSit = shouldShowPreface(prior);
+      setShowPreface(firstSit);
+      if (shuffle) {
+        useTbr.getState().startShuffle(work.id);
         setShowPreface(false);
         setOverlay("none");
         return;
       }
-      if (grew && !shuffle && deepLink === null) {
-        const index = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
-        const frontAt = openingBreathIndex(work);
-        if (index < frontAt) useTbr.getState().setBreath(work.id, frontAt);
+      if (hostedSit) {
+        rememberHostedSit(hostedSit);
       }
-      return;
-    }
-    booted.current = true;
-    const prior = useTbr.getState().progress[work.id];
-    const firstSit = shouldShowPreface(prior);
-    setShowPreface(firstSit);
-    if (shuffle) {
-      useTbr.getState().startShuffle(work.id);
-      setShowPreface(false);
-      setOverlay("none");
-      return;
-    }
-    if (hostedSit) {
-      rememberHostedSit(hostedSit);
-    }
-    if (deepLink !== null) {
-      awaitingAt.current = null;
-      startSitting(work.id);
-      setBreath(work.id, deepLink);
-      setShowPreface(false);
-      setOverlay("none");
-      return;
-    }
-    const chapterAt = chapterStartIndex(work);
-    const startAt = Math.max(chapterAt, openingBreathIndex(work));
-    const index = prior?.breathIndex ?? 0;
-    if (!prior?.entered || index < startAt) {
-      useTbr.getState().setBreath(work.id, startAt);
-    }
-    // Friend already joining with pair+sit — skip the gate.
-    if (pair && sit !== undefined) {
-      startSitting(work.id);
-      setShowPreface(false);
-      setOverlay("none");
-      return;
-    }
-    if (sit === undefined) {
-      const shelf = shelfWork(work.id);
-      if (shelf) {
-        useTbr
-          .getState()
-          .setSittingMinutes(nearestSitPreset(estimateRitualMinutes(shelf)));
+      if (deepLink !== null) {
+        awaitingAt.current = null;
+        startSitting(work.id);
+        setBreath(work.id, deepLink, stampAt(work, deepLink));
+        setShowPreface(false);
+        setOverlay("none");
+        return;
       }
-    }
-    // pair without sit → length only; otherwise always ask length + company.
-    setCompany(null);
-    setInvitePair(null);
-    setInviteHref("");
-    setGateMode(pair ? "length" : "full");
-    setOverlay("threshold");
+      const chapterAt = chapterStartIndex(work);
+      const startAt = Math.max(chapterAt, openingBreathIndex(work));
+      const index = prior?.breathIndex ?? 0;
+      if (!prior?.entered || index < startAt) {
+        useTbr.getState().setBreath(work.id, startAt, stampAt(work, startAt));
+      }
+      // Friend already joining with pair+sit — skip the gate.
+      if (pair && sit !== undefined) {
+        startSitting(work.id);
+        setShowPreface(false);
+        setOverlay("none");
+        return;
+      }
+      if (sit === undefined) {
+        const shelf = shelfWork(work.id);
+        if (shelf) {
+          useTbr
+            .getState()
+            .setSittingMinutes(nearestSitPreset(estimateRitualMinutes(shelf)));
+        }
+      }
+      // pair without sit → length only; otherwise always ask length + company.
+      setCompany(null);
+      setInvitePair(null);
+      setInviteHref("");
+      setGateMode(pair ? "length" : "full");
+      setOverlay("threshold");
+    })();
+    return () => {
+      cancel = true;
+    };
   }, [at, echoAt, ensure, hostedSit, pair, rememberHostedSit, setBreath, shuffle, sit, startSitting, work]);
 
   useEffect(() => {
@@ -418,8 +468,9 @@ export function TbrReader({
     if (next === at + 1) {
       advanceBreath(work.id, next, {
         crossedScene: Boolean(from && to && from.sceneId !== to.sceneId),
+        place: stampAt(work, next),
       });
-    } else setBreath(work.id, next);
+    } else setBreath(work.id, next, stampAt(work, next));
   }
 
   function stepBy(delta: 1 | -1) {
@@ -449,7 +500,7 @@ export function TbrReader({
     setSandCue(false);
     startSitting(work.id, { restart: true });
     setOverlay("none");
-    setBreath(work.id, liveIndex());
+    setBreath(work.id, liveIndex(), stampAt(work, liveIndex()));
   }
 
   function crossThreshold() {
@@ -591,7 +642,7 @@ export function TbrReader({
     if (anchor.index == null) return;
     setOverlay("none");
     if (anchor.index < work.breaths.length) goTo(anchor.index);
-    else setBreath(work.id, anchor.index);
+    else setBreath(work.id, anchor.index, stampAt(work, anchor.index));
   }
 
   function keepCurrent() {
