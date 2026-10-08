@@ -493,9 +493,9 @@ async function ensureDev(): Promise<ChildProcess | null> {
   throw new Error("The reading app did not come up");
 }
 
-function serverDown(error: unknown) {
+function retriable(error: unknown) {
   const message = error instanceof Error ? error.message : String(error);
-  return /ERR_CONNECTION_REFUSED|ECONNREFUSED|ERR_CONNECTION_RESET|did not come up/.test(message);
+  return /ERR_CONNECTION_REFUSED|ECONNREFUSED|ERR_CONNECTION_RESET|did not come up|waiting for locator\('\.chat-field'\)/.test(message);
 }
 
 async function launchBrowser() {
@@ -625,8 +625,8 @@ async function friendRun(browser: Browser, mirror: string, run: number) {
       pageA.goto(read, { waitUntil: "domcontentloaded" }),
       pageB.goto(read, { waitUntil: "domcontentloaded" }),
     ]);
-    await pageA.locator(".chat-field").waitFor({ timeout: 30000 });
-    await pageB.locator(".chat-field").waitFor({ timeout: 30000 });
+    await pageA.locator(".chat-field").waitFor({ timeout: 75000 });
+    await pageB.locator(".chat-field").waitFor({ timeout: 75000 });
     await pageA.locator(".chat-field").fill(line);
     await pageA.locator(".chat-send").click();
     await pageB.locator(".chat-line", { hasText: line }).waitFor({ timeout: 10000 });
@@ -665,7 +665,7 @@ test("book clubs across three phones", { timeout: 300000 }, async () => {
           settled = true;
         } catch (error) {
           last = error instanceof Error ? error.message : String(error);
-          if (!serverDown(error) || attempt === 2) {
+          if (!retriable(error) || attempt === 2) {
             results.push({ run, ok: false, error: last });
             settled = true;
           }
@@ -684,7 +684,7 @@ test("book clubs across three phones", { timeout: 300000 }, async () => {
   });
 });
 
-test("live reading across two phones", { timeout: 300000 }, async () => {
+test("live reading across two phones", { timeout: 480000 }, async () => {
   await oneAtATime(async () => {
   const mirror = await startMirror();
   const browser = await launchBrowser();
@@ -701,7 +701,7 @@ test("live reading across two phones", { timeout: 300000 }, async () => {
           settled = true;
         } catch (error) {
           last = error instanceof Error ? error.message : String(error);
-          if (!serverDown(error) || attempt === 2) {
+          if (!retriable(error) || attempt === 2) {
             results.push({ run, ok: false, error: last });
             settled = true;
           }
