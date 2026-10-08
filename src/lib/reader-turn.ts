@@ -15,6 +15,9 @@ type Box = {
 export const TAP_SLOP_PX = 10;
 export const TAP_MS = 350;
 
+/** A tall sentence starts scrolling only after the finger has clearly dragged. */
+export const SCROLL_ARM_PX = 24;
+
 /**
  * Ghost mouse that iOS and Chromium synthesize after a touch.
  * The click itself is swallowed by a counter, not this clock. The window
@@ -125,13 +128,13 @@ export function classifyTurnGesture(input: {
   }
   if (
     input.canScroll &&
-    Math.abs(input.dy) >= TAP_SLOP_PX &&
+    Math.abs(input.dy) >= SCROLL_ARM_PX &&
     Math.abs(input.dy) >= Math.abs(input.dx)
   ) {
     return "scroll";
   }
   if (dist <= TAP_SLOP_PX && input.dt <= TAP_MS) return "tap";
-  const slop = input.canScroll ? TAP_SLOP_PX : 44;
+  const slop = input.canScroll ? SCROLL_ARM_PX : 44;
   const limit = input.canScroll ? 700 : 900;
   if (dist <= slop && input.dt <= limit) return "tap";
   return "ignore";

@@ -68,6 +68,7 @@ import {
   classifyTurnGesture,
   GHOST_MOUSE_MS,
   ghostMousePointer,
+  SCROLL_ARM_PX,
   turnZone,
 } from "@/lib/reader-turn";
 import { useCenterLine } from "@/lib/use-center-line";
@@ -212,6 +213,8 @@ export function TbrReader({
     split: 0,
     ready: false,
   });
+  /** While the sentence is still sliding, taps use the rested split. */
+  const slidingUntilRef = useRef(0);
   const overlayRef = useRef(overlay);
   overlayRef.current = overlay;
   const booted = useRef(false);
@@ -964,6 +967,7 @@ export function TbrReader({
         // breath; that jump is applied before paint, and only the breath
         // travels in view.
         holdMotionUntil = performance.now() + 320;
+        slidingUntilRef.current = holdMotionUntil;
         track.style.transform = `translate3d(0, ${shift + travel}px, 0)`;
         void track.offsetHeight;
         track.style.transition = previousTransition;
@@ -971,6 +975,7 @@ export function TbrReader({
         void track.offsetHeight;
         track.style.transform = `translate3d(0, ${shift}px, 0)`;
       } else {
+        slidingUntilRef.current = 0;
         track.style.transition = previousTransition;
         if (!reduceMotion) {
           requestAnimationFrame(() => {
@@ -1173,6 +1178,13 @@ export function TbrReader({
     return slot.scrollHeight - slot.clientHeight > 24;
   }
 
+  function lineIsSliding() {
+    if (performance.now() < slidingUntilRef.current) return true;
+    const track = trackRef.current;
+    if (!track) return false;
+    return track.getAnimations().some((anim) => anim.playState === "running");
+  }
+
   function zoneAt(x: number, y: number) {
     const host = turnHostRef.current;
     if (!host) return null;
@@ -1187,9 +1199,9 @@ export function TbrReader({
     if (pinnedToTop()) {
       return turnZone({ x, y, host: box, focusTop: null, focusBottom: null, tall: true });
     }
-    // The sentence on screen is the boundary while it is in the column.
-    // When it is still sliding in from below, that box is off screen and the
-    // right-hand fallback would turn a back tap into forward.
+    // The sentence on screen is the boundary once it has settled.
+    // While it is still sliding, the moving box sits lower than the rested
+    // line, and a second tap on the same spot would reverse the first.
     const line = breathSlotRef.current?.querySelector(".breath-now");
     const lineRect = line?.getBoundingClientRect();
     const lineInColumn =
@@ -1197,7 +1209,7 @@ export function TbrReader({
       lineRect.height > 0 &&
       lineRect.bottom > hostRect.top &&
       lineRect.top < hostRect.bottom;
-    if (lineInColumn && lineRect) {
+    if (!lineIsSliding() && lineInColumn && lineRect) {
       return turnZone({
         x,
         y,
@@ -1290,7 +1302,7 @@ export function TbrReader({
     const dy = e.clientY - start.y;
     const dx = e.clientX - start.x;
     if (!start.scrolled) {
-      if (Math.abs(dy) < 10 || Math.abs(dy) < Math.abs(dx)) return;
+      if (Math.abs(dy) < SCROLL_ARM_PX || Math.abs(dy) < Math.abs(dx)) return;
       start.scrolled = true;
       start.scrollTop = slot.scrollTop;
     }

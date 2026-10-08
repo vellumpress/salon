@@ -281,17 +281,28 @@ function lineAtTop(spot: Column) {
 
 function backPoint(spot: Column) {
   const limit = Math.min(spot.host.bottom - 8, spot.footerTop - 12);
-  // Left third only when the sentence fills the column from the top.
-  // A line that still sits in the column goes back from anywhere above it.
-  if (spot.overflows && lineAtTop(spot)) {
+  // A sentence pinned to the top has no band above the words. The left third
+  // is back, including while a taller line is still arriving.
+  if (lineAtTop(spot)) {
+    // Near the top, not the middle. A line can sit under the header for a
+    // frame and then drop to the center; a point halfway down would land on
+    // the words and step forward.
     return {
-      x: Math.round(spot.host.left + spot.host.width * 0.12),
-      y: Math.round(Math.min(limit, spot.host.top + spot.host.height * 0.42)),
+      x: Math.round(spot.host.left + Math.max(12, spot.host.width * 0.12)),
+      y: Math.round(Math.min(limit, spot.host.top + 16)),
     };
   }
   const band = spot.lineTop - spot.host.top;
-  const y = Math.round(spot.host.top + Math.max(10, Math.min(band - 6, band * 0.45)));
-  return { x: Math.round(spot.host.left + spot.host.width * 0.72), y };
+  // Stay near the top of the column. A line still below the screen makes the
+  // gap look huge, and a point halfway down that gap is on the sentence once
+  // it comes to rest.
+  const y = Math.round(
+    Math.min(limit - 1, spot.lineTop - 8, spot.host.top + Math.max(12, Math.min(band - 8, 18))),
+  );
+  return {
+    x: Math.round(spot.host.left + spot.host.width * 0.72),
+    y: Math.max(Math.round(spot.host.top + 4), y),
+  };
 }
 
 function forwardPoint(spot: Column) {
@@ -365,6 +376,46 @@ async function openAt(page: Page, id: string, at: number) {
     at,
     { timeout: 30_000 },
   );
+}
+
+async function sameSpotTwice(
+  page: Page,
+  direction: 1 | -1,
+  label: string,
+) {
+  await page
+    .waitForFunction(
+      () => {
+        const track = document.querySelector(".center-track");
+        if (!(track instanceof Element)) return true;
+        return !track.getAnimations().some((anim) => anim.playState === "running");
+      },
+      { timeout: 2000 },
+    )
+    .catch(() => undefined);
+  const spot = await column(page);
+  const limit = Math.min(spot.host.bottom - 8, spot.footerTop - 12);
+  const point =
+    direction < 0
+      ? backPoint(spot)
+      : {
+          x: Math.round(spot.host.left + spot.host.width * 0.72),
+          y: Math.round(Math.min(limit, Math.max(spot.lineTop + 8, spot.host.bottom - 24))),
+        };
+  await assertOnColumn(page, point, label);
+  const start = spot.index;
+  await page.touchscreen.tap(point.x, point.y);
+  await page.touchscreen.tap(point.x, point.y);
+  try {
+    await waitIndex(page, start + direction * 2);
+  } catch (error) {
+    const now = await breathIndex(page);
+    throw new Error(
+      `${label}: index ${now}, expected ${start + direction * 2} (${error instanceof Error ? error.message : error})`,
+    );
+  }
+  const bar = await page.locator("[data-reader-bar]").getAttribute("data-reader-bar");
+  assert.equal(bar, "closed", `${label} opened Keep/Send`);
 }
 
 async function burst(
@@ -534,6 +585,11 @@ async function runReaderMatrix(name: EngineName) {
     assert.equal(await breathIndex(page), 842, `${tag} twenty backs`);
     await burst(page, 1, 20, 100, `${tag} passing rapid forward`);
     assert.equal(await breathIndex(page), 862, `${tag} twenty forwards did not return`);
+
+    await openAt(page, "passing", 120);
+    await sameSpotTwice(page, -1, `${tag} passing double back on one spot`);
+    await openAt(page, "passing", 120);
+    await sameSpotTwice(page, 1, `${tag} passing double forward on one spot`);
 
     await openAt(page, "passing", 862);
     await slowBack(page, `${tag} passing slow back`);

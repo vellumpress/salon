@@ -388,6 +388,7 @@ test(
       await frames(page);
       assert.equal(await breathIndex(page), rapidStart - 12, "rapid back taps did not all land");
 
+      await lineSettled(page);
       const beforeDouble = await breathIndex(page);
       const spot = await spots(page);
       await page.evaluate(
@@ -460,6 +461,7 @@ test(
       }
       await frames(page);
       assert.equal(await breathIndex(page), 70);
+      await lineSettled(page);
 
       await backSeries(page, "justAbove", BACKS);
       assert.equal(await breathIndex(page), 70 - BACKS);
@@ -476,6 +478,7 @@ test(
         );
       }
       assert.equal(await breathIndex(page), 70);
+      await lineSettled(page);
       await backSeries(page, "middle", BACKS);
 
       for (let i = 0; i < BACKS; i += 1) {
