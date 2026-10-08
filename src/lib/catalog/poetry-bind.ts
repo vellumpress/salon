@@ -98,6 +98,13 @@ export const POETRY_REBIND_IDS = [
   "the-poetic-edda",
   "in-the-seven-woods",
   "the-green-helmet-and-other-poems",
+  // CARD-PASS: Toward the Gulf, Young Adventure and Drum-Taps one scene per
+  // printed poem, a breath per printed stanza or verse paragraph (one past the
+  // 40-line / 350-word cap split at a sentence end, else a clause end);
+  // contents cut, dedications, forewords and editorial notes tagged front.
+  "toward-the-gulf",
+  "young-adventure",
+  "drum-taps",
 ] as const;
 
 /**

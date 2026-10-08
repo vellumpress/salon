@@ -13,7 +13,8 @@
       "title": "Épître liminaire",
       "place": "Épître liminaire",
       "reentry": "À Leconte de L'Isle",
-      "prompt": "What does the poem hold?"
+      "prompt": "What does the poem hold?",
+      "front": true
     },
     {
       "id": "s1",

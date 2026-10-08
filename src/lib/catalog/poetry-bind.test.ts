@@ -338,7 +338,7 @@ test("The Pier-Glass binds all 25 poems of the 1921 Secker edition, one breath e
 });
 
 test("Mira poetry re-bind pack: one scene per printed poem, counts and card from the bind", () => {
-  assert.equal(POETRY_REBIND_IDS.length, 43);
+  assert.equal(POETRY_REBIND_IDS.length, 46);
   for (const id of POETRY_REBIND_IDS) {
     const full = load("texts", id);
     assert.ok(full, id);
@@ -425,6 +425,7 @@ const REBIND_LONG_STANZAS: Readonly<Record<string, string>> = {
   "atalanta-in-calydon#s4-72": "Atalanta in Calydon: one printed verse paragraph with no sentence break that keeps both parts under the cap, 42 lines / 345 words",
   "atalanta-in-calydon#s4-163": "Atalanta in Calydon: one printed verse paragraph with no sentence break that keeps both parts under the cap, 43 lines / 359 words",
   "heliodora-and-other-poems#s29-3": "Charioteer: one printed stanza, 41 lines / 150 words",
+  "drum-taps#s1-21": "Introduction (The Times Literary Supplement): one prose paragraph, 396 words",
 };
 
 function breathSize(text: string) {
