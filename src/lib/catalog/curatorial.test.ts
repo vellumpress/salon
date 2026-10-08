@@ -16964,3 +16964,27 @@ test("Mira Wed 7 Oct PM: Strait Is the Gate is in Next just before Fräulein Sch
   assert.equal(/Gutenberg|Produced by|eBook|ALISSA’S JOURNAL|TORONTO|PRINTED IN/.test(joined), false);
   assert.equal(full.breaths.at(-1)?.text, "A servant came in, bringing the lamp.");
 });
+
+test("The Room in the Tower opens on the first story, not Mills & Boon notices", () => {
+  const id = "the-room-in-the-tower-and-other-stories";
+  const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
+  const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as Work;
+  const joined = full.breaths.map((breath) => breath.text).join("\n");
+  assert.doesNotMatch(joined, /MORNING POST|PALL MALL GAZETTE|Mills & Boon’s New Novels|Crown 8vo/);
+  assert.equal(full.scenes[0]?.title, "Preface");
+  assert.equal(full.scenes[0]?.front, true);
+  assert.match(full.breaths[0]!.text, /^These stories have been written in the hopes/);
+  const first = "It is probable that everybody who is at all a constant dreamer has had at least one experience of an event or a sequence of circumstances which have come to his mind in sleep being subsequently realised in the material world.";
+  const at = openingBreathIndex(full);
+  assert.equal(full.breaths[at]?.text, first);
+  assert.equal(opened.breaths[0]?.text, first);
+  assert.equal(opened.breaths.at(-1)?.text, "But I felt the intensest curiosity as to what was going to happen.");
+  const lastScene = opened.breaths.at(-1)!.sceneId;
+  assert.equal(full.breaths.filter((breath) => breath.sceneId === lastScene).at(-1)?.id, opened.breaths.at(-1)?.id);
+  for (let i = 0; i < opened.breaths.length; i += 1) {
+    assert.deepEqual(opened.breaths[i], full.breaths[at + i], `${id} open ${i}`);
+  }
+  const work = SHELF.find((item) => item.id === id);
+  assert.equal(work?.opening, first);
+  assert.equal(work?.breaths, full.breaths.length);
+});

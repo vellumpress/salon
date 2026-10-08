@@ -303,3 +303,31 @@ test("Mira CLEAR precipitations and sour-grapes stay poem-per-scene", () => {
     "next poem leaked into Midnight Worship",
   );
 });
+
+test("The Pier-Glass binds all 25 poems of the 1921 Secker edition, one breath each", () => {
+  const titles = [
+    "The Stake", "The Troll's Nosegay", "The Pier-glass", "The Finding of Love", "Reproach",
+    "The Magical Picture", "Distant Smoke", "Morning Phoenix", "Catherine Drury", "Raising the Stone",
+    "The Treasure Box", "The Kiss", "Lost Love", "Fox's Dingle", "The Gnat", "The Patchwork Bonnet",
+    "Kit Logan and Lady Helen", "Down", "Saul of Tarsus", "Storm: at the Farm Window",
+    "Black Horse Lane", "Return", "Incubus", "The Hills of May", "The Coronation Murder",
+  ];
+  const full = load("texts", "the-pier-glass")!;
+  assert.deepEqual(full.scenes.map((scene) => scene.title), titles);
+  assert.equal(full.breaths.length, titles.length);
+  for (const scene of full.scenes) {
+    const breaths = full.breaths.filter((breath) => breath.sceneId === scene.id);
+    assert.equal(breaths.length, 1, scene.title);
+    assert.equal(scene.reentry, breaths[0]!.text, scene.title);
+    for (const line of breaths[0]!.text.split(" / ")) {
+      assert.equal((line.match(/\*/g) ?? []).length % 2, 0, `${scene.title}: ${line}`);
+    }
+  }
+  const joined = full.breaths.map((breath) => breath.text).join("\n");
+  assert.doesNotMatch(joined, /POETRY BY THE SAME AUTHOR|Martin Secker|Gutenberg|_[A-Za-z]|--/);
+  assert.match(full.breaths[0]!.text, /^Naseboro' held him guilty, \/ Crowther took his part, \//);
+  assert.match(full.breaths.at(-1)!.text, /Thus, he stabs 'em; there, they lie\.$/);
+  const shelf = SHELF.find((item) => item.id === "the-pier-glass");
+  assert.equal(shelf?.breaths, titles.length);
+  assert.ok(full.breaths[0]!.text.startsWith(shelf!.opening!), "shelf opening is the first stanza as printed");
+});
