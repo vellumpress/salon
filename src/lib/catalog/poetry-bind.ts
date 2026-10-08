@@ -91,6 +91,27 @@ export const POETRY_REBIND_IDS = [
   "the-gardener",
   "the-forerunner-his-parables-and-poems",
   "the-spell-of-the-yukon-and-other-verses",
+  // Pack 4: The Poetic Edda one scene per printed poem (stanzas with their
+  // printed numbers, the codex prose links as italic breaths, translator's
+  // notes cut); Yeats's In the Seven Woods and The Green Helmet one scene per
+  // poem, the two plays as "Character: dialogue".
+  "the-poetic-edda",
+  "in-the-seven-woods",
+  "the-green-helmet-and-other-poems",
+] as const;
+
+/**
+ * Mira re-bind pack 4, prose and mixed prose-and-verse books bound from
+ * source: the Nibelungenlied (Shumway's prose translation) one scene per
+ * printed Adventure with a breath per printed paragraph; The Literature of
+ * Arabia and The Persian Mystics one scene per printed section or piece, prose
+ * one paragraph per breath, verse under the verse rules. A prose paragraph is
+ * kept whole even past the phone cap; a verse breath never is.
+ */
+export const MIXED_REBIND_IDS = [
+  "the-nibelungenlied",
+  "the-literature-of-arabia",
+  "the-persian-mystics-jalalu-d-din-rumi",
 ] as const;
 
 /**
