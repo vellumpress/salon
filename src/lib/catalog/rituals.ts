@@ -89,8 +89,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Childhood dream: a green twilight garden, then the flower that turns red. It opens with The Old Street.",
   "songs-of-kabir":
     "Kabir, through Tagore’s English: mystic poems that don’t need a church. Straight talk about God, dust, and the body walking between them.",
-  "pictures-of-the-floating-world":
-    "Lowell’s lacquer prints and quiet looking — Japan as color, surface, and pause. Poems that invite you to stand still and see.",
   silhouettes:
     "At Dieppe after sunset—the sea quieted, grape-flush on the clouds, a sickle moon and one gold star. Silhouettes opens on atmosphere, not argument. Arthur Symons’s 1892 seaside lyrics — a short After Sunset reading before sleep.",
   "the-garden-party-and-other-stories":
@@ -1639,7 +1637,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "noli-me-tangere",
       "nacha-regules",
       "songs-of-kabir",
-      "pictures-of-the-floating-world",
       "silhouettes",
       "the-garden-party-and-other-stories",
       "bliss-and-other-stories",

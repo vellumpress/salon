@@ -6,6 +6,7 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import {
   FIRST_SCENE_TITLE,
   CARD_AFTER_PRINTED_NOTE_IDS,
+  MIXED_REBIND_IDS,
   PLAY_AND_STORY_REBIND_IDS,
   POETRY_REBIND_IDS,
   TIMED_SIT_TITLE,
@@ -337,7 +338,7 @@ test("The Pier-Glass binds all 25 poems of the 1921 Secker edition, one breath e
 });
 
 test("Mira poetry re-bind pack: one scene per printed poem, counts and card from the bind", () => {
-  assert.equal(POETRY_REBIND_IDS.length, 40);
+  assert.equal(POETRY_REBIND_IDS.length, 43);
   for (const id of POETRY_REBIND_IDS) {
     const full = load("texts", id);
     assert.ok(full, id);
@@ -584,4 +585,97 @@ test("Mira re-bind pack 3: plays bind every act as “Character: dialogue”, st
     "In the Tube",
     "Roderick’s Story",
   ]);
+});
+
+/** Notes, endnotes and Middle High German strophes are apparatus, not text. */
+const PACK4_APPARATUS =
+  /INTRODUCTORY NOTE|^NOTES?\b|ENDNOTES|Pronouncing Index|\[Footnote|\[\d+\]|\bUns ist in alten m|Gutenberg|BY THE SAME WRITER/m;
+
+test("Mira re-bind pack 4: mixed prose and verse books bind by printed section, apparatus cut", () => {
+  for (const id of MIXED_REBIND_IDS) {
+    const full = load("texts", id)!;
+    const work = SHELF.find((item) => item.id === id)!;
+    const words = full.breaths
+      .flatMap((breath) => breath.text.split(/\s+/))
+      .filter((word) => word && word !== "/").length;
+    assert.equal(work.breaths, full.breaths.length, `${id} shelf breaths`);
+    assert.equal(work.minutes, Math.round(words / 200), `${id} shelf minutes = words/200`);
+    assert.equal(full.minutes, work.minutes, `${id} text minutes`);
+    const start = openingBreathIndex(full);
+    const at = full.breaths.findIndex((breath) => breath.text.startsWith(work.opening ?? "\u0000"));
+    assert.ok(at >= start && at <= start + 2, `${id} card is the first real lines (at ${at}, start ${start})`);
+    for (const breath of full.breaths.slice(start, at)) assert.ok(breath.text.length <= 60, `${id}#${breath.id} before the card`);
+    for (const scene of full.scenes) {
+      assert.doesNotMatch(scene.title, /,\s*$|\(\d+\)/, `${id}#${scene.id} title`);
+      assert.ok(full.breaths.some((breath) => breath.sceneId === scene.id), `${id}#${scene.id} empty scene`);
+    }
+    for (const breath of full.breaths) {
+      assert.doesNotMatch(breath.text, PACK4_APPARATUS, `${id}#${breath.id} apparatus`);
+      const { lines, words } = breathSize(breath.text);
+      // a printed prose paragraph stays whole; a verse breath keeps the phone cap
+      if (lines > 1) assert.ok(lines <= REBIND_BREATH_MAX_LINES && words <= REBIND_BREATH_MAX_WORDS, `${id}#${breath.id} verse over cap`);
+    }
+  }
+  const nib = load("texts", "the-nibelungenlied")!;
+  assert.deepEqual(nib.scenes.slice(0, 4).map((scene) => scene.title), [
+    "Preface",
+    "Introductory Sketch",
+    "Adventure I",
+    "Adventure II. Of Siegfried",
+  ]);
+  assert.equal(nib.scenes.filter((scene) => scene.title.startsWith("Adventure ")).length, 39);
+  for (const breath of nib.breaths) assert.doesNotMatch(breath.text, /\s\(\d{1,3}\)/, `the-nibelungenlied#${breath.id} endnote ref`);
+  assert.match(nib.breaths.at(-1)!.text, /The tale hath here an end\. This is the Nibelungs' fall\.$/);
+  const arabia = load("texts", "the-literature-of-arabia")!;
+  assert.deepEqual(arabia.scenes.slice(0, 2).map((scene) => scene.title), [
+    "The Romance of Antar · Introduction",
+    "The Early Fortunes of Antar",
+  ]);
+  assert.equal(arabia.scenes.at(-1)!.title, "Aladdin's Wonderful Lamp");
+  const persian = load("texts", "the-persian-mystics-jalalu-d-din-rumi")!;
+  const firstPoem = persian.scenes.findIndex((scene) => !scene.front);
+  assert.equal(persian.scenes[firstPoem]!.title, "\"I Am Silent\"");
+  assert.ok(persian.scenes.slice(0, firstPoem).every((scene) => scene.front), "editorial introductions are front matter");
+  assert.equal(
+    SHELF.find((item) => item.id === "the-persian-mystics-jalalu-d-din-rumi")!.opening,
+    "I am silent. Speak Thou, O Soul of Soul of Soul, / From desire of whose Face every atom grew articulate.",
+  );
+});
+
+test("Mira re-bind pack 4: the Edda binds one scene per poem, codex prose kept, translator's notes cut", () => {
+  const edda = load("texts", "the-poetic-edda")!;
+  assert.equal(edda.scenes[0]!.title, "General Introduction");
+  assert.equal(edda.scenes[0]!.front, true);
+  assert.equal(edda.scenes.length, 36);
+  assert.equal(edda.scenes[1]!.title, "Voluspo · The Wise-Woman’s Prophecy");
+  assert.equal(edda.scenes.at(-1)!.title, "Hamthesmol · The Ballad of Hamther");
+  for (const breath of edda.breaths) assert.doesNotMatch(breath.text, PACK4_APPARATUS, `the-poetic-edda#${breath.id}`);
+  const grimnir = edda.scenes.find((scene) => scene.title.startsWith("Grimnismol"))!;
+  const grim = edda.breaths.filter((breath) => breath.sceneId === grimnir.id).map((breath) => breath.text);
+  assert.match(grim[0]!, /^\*King Hrauthung had two sons: one was called Agnar, and the other Geirröth\./);
+  assert.match(grim[2]!, /^1\. Hot art thou, fire! \| too fierce by far; \//);
+  assert.equal(
+    SHELF.find((item) => item.id === "the-poetic-edda")!.opening,
+    "1. Hearing I ask | from the holy races, / From Heimdall’s sons, | both high and low; / Thou wilt, Valfather, | that well I relate / Old tales I remember | of men long ago.",
+  );
+});
+
+test("Mira re-bind pack 4: Yeats books bind poems as scenes and the plays as “Character: dialogue”", () => {
+  const woods = load("texts", "in-the-seven-woods")!;
+  assert.equal(woods.scenes.length, 13);
+  assert.equal(woods.scenes.at(-1)!.title, "On Baile's Strand: A Play");
+  const strand = woods.breaths.filter((breath) => breath.sceneId === woods.scenes.at(-1)!.id).map((b) => b.text);
+  assert.match(strand[0]!, /^\*The Persons of the Play\* \/ Cuchullain, the King of Muirthemne\./);
+  assert.match(strand[1]!, /^\*Scene: A great hall by the sea close to Dundalgan\./);
+  assert.ok(strand.includes("Fintain: What is his name, fool?"));
+  const helmet = load("texts", "the-green-helmet-and-other-poems")!;
+  assert.equal(helmet.scenes.length, 26);
+  assert.equal(helmet.scenes.at(-1)!.title, "The Green Helmet");
+  const farce = helmet.breaths.filter((breath) => breath.sceneId === helmet.scenes.at(-1)!.id).map((b) => b.text);
+  assert.equal(farce[0], "*An Heroic Farce*");
+  assert.match(farce[4]!, /^Laegaire: What is that\? I had thought that I saw, though but in the wink of an eye, \//);
+  for (const id of ["in-the-seven-woods", "the-green-helmet-and-other-poems"]) {
+    const full = load("texts", id)!;
+    for (const breath of full.breaths) assert.doesNotMatch(breath.text, /\[Illustration\]|BY THE SAME WRITER|^\[/, `${id}#${breath.id}`);
+  }
 });

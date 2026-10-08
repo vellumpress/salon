@@ -424,12 +424,11 @@ export const SCENE_TITLE_ALLOWLIST: Readonly<Record<string, string>> = {
  * re-bound) leaves 642 in 6.
  */
 export const VERSE_LINE_TITLE_BASELINE: Readonly<Record<string, number>> = {
-  "in-the-seven-woods": 69,
+  // Held: no proofread public-domain e-text of Lowell's 1919 book exists yet
+  // (no Gutenberg edition; the Wikisource transcription has only its front
+  // matter and contents), so it cannot be re-bound from source. The two
+  // titles are "A SCHOLAR," and "UPRIGHTNESS," from the live OCR bind.
   "pictures-of-the-floating-world": 2,
-  "the-green-helmet-and-other-poems": 39,
-  "the-literature-of-arabia": 145,
-  "the-persian-mystics-jalalu-d-din-rumi": 60,
-  "the-poetic-edda": 327,
 };
 
 /** Lines that belong to a title page or imprint, not to the book. */
