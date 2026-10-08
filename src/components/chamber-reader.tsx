@@ -65,8 +65,8 @@ import {
   upcomingOpacity,
 } from "@/lib/center-line";
 import {
-  breathPageTop,
   classifyTurnGesture,
+  GHOST_MOUSE_MS,
   ghostMousePointer,
   turnZone,
 } from "@/lib/reader-turn";
@@ -192,23 +192,25 @@ export function TbrReader({
     scrollTop: number;
     scrolled: boolean;
     turned: boolean;
+    zone: "prev" | "next" | null;
   } | null>(null);
   /** Clicks owed to pointer gestures. Each one is swallowed, not turned. */
   const owedClicksRef = useRef(0);
+  /** When a pointer gesture last turned. A click in this window is that finger. */
+  const turnedAtRef = useRef(0);
   /** Last real touch, so the synthesized mouse that follows is ignored. */
   const lastTouchAtRef = useRef(0);
+  const lastTouchPointRef = useRef<{ x: number; y: number } | null>(null);
   /**
-   * Landed split between back and forward, in host pixels.
-   * The column animates after this is stored, so a tap during the slide
-   * uses the sentence the reader is landing on.
+   * Fallback split when the focus line has no box yet.
+   * A tap uses the line on screen at finger-down, and the sentence index
+   * comes from the store, never from how far the column has scrolled.
    */
   const zoneRef = useRef<{ tall: boolean; split: number; ready: boolean }>({
     tall: false,
     split: 0,
     ready: false,
   });
-  /** Where a tall breath should open when the index changes. */
-  const landRef = useRef<{ index: number; edge: "start" | "end" } | null>(null);
   const overlayRef = useRef(overlay);
   overlayRef.current = overlay;
   const booted = useRef(false);
@@ -432,12 +434,10 @@ export function TbrReader({
   }
 
   function advance() {
-    landRef.current = { index: liveIndex() + 1, edge: "start" };
     stepBy(1);
   }
 
   function retreat() {
-    landRef.current = { index: liveIndex() - 1, edge: "end" };
     stepBy(-1);
   }
 
@@ -445,7 +445,7 @@ export function TbrReader({
     setSandCue(false);
     startSitting(work.id, { restart: true });
     setOverlay("none");
-    setBreath(work.id, index);
+    setBreath(work.id, liveIndex());
   }
 
   function crossThreshold() {
@@ -819,16 +819,13 @@ export function TbrReader({
       zoneRef.current = { tall: false, split: 0, ready: false };
       return;
     }
-    const land = landRef.current?.index === index ? landRef.current.edge : "start";
     let didLand = false;
-    const landScroll = (tall: boolean) => {
+    const landScroll = () => {
       if (didLand) return;
       didLand = true;
-      if (tall && land === "end") {
-        slot.scrollTop = slot.scrollHeight;
-      } else {
-        slot.scrollTop = 0;
-      }
+      // Every sentence opens on its first line. The index in the store is
+      // where we are; scroll position is not another sentence.
+      slot.scrollTop = 0;
     };
     const rememberZone = (tall: boolean) => {
       const host = turnHostRef.current;
@@ -852,7 +849,7 @@ export function TbrReader({
       const measure = () => {
         if (!live) return;
         const next = slot.scrollHeight - slot.clientHeight > 1;
-        landScroll(next);
+        landScroll();
         setOverflows((prev) => (prev === next ? prev : next));
         const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
         setAtEnd((prev) => (prev === end ? prev : end));
@@ -917,7 +914,7 @@ export function TbrReader({
         if (ahead) ahead.style.display = "";
         if (look) void look.offsetHeight;
       }
-      landScroll(tooTall);
+      landScroll();
 
       const trackRect = track.getBoundingClientRect();
       const targetRect = line.getBoundingClientRect();
@@ -982,7 +979,6 @@ export function TbrReader({
       }
 
       const overflowsNow = tooTall || slot.scrollHeight - slot.clientHeight > 1;
-      if (overflowsNow !== tooTall) zoneRef.current = { ...zoneRef.current, tall: true };
       setOverflows((prev) => (prev === overflowsNow ? prev : overflowsNow));
       const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
       setAtEnd((prev) => (prev === end ? prev : end));
@@ -1120,6 +1116,11 @@ export function TbrReader({
     turnHostRef.current?.setAttribute("data-swallow-owed", String(owedClicksRef.current));
   }
 
+  function rememberTouch(x: number, y: number) {
+    lastTouchAtRef.current = performance.now();
+    lastTouchPointRef.current = { x, y };
+  }
+
   function ghostPointer(e: ReactPointerEvent<HTMLDivElement>) {
     return ghostMousePointer({
       pointerType: e.pointerType,
@@ -1129,13 +1130,40 @@ export function TbrReader({
       ),
       now: performance.now(),
       lastTouchAt: lastTouchAtRef.current,
+      x: e.clientX,
+      y: e.clientY,
+      lastX: lastTouchPointRef.current?.x,
+      lastY: lastTouchPointRef.current?.y,
     });
+  }
+
+  function ghostClick(x: number, y: number) {
+    return ghostMousePointer({
+      pointerType: "mouse",
+      now: performance.now(),
+      lastTouchAt: lastTouchAtRef.current,
+      x,
+      y,
+      lastX: lastTouchPointRef.current?.x,
+      lastY: lastTouchPointRef.current?.y,
+    });
+  }
+
+  function pinnedToTop() {
+    const slot = breathSlotRef.current;
+    const host = turnHostRef.current;
+    if (!slot || !host) return false;
+    const line = slot.querySelector(".breath-now");
+    if (!line) return zoneRef.current.tall;
+    // Scene-length lines are pinned under the header. Nothing sits above
+    // them, so the left third is the back tap even when they do not scroll.
+    return line.getBoundingClientRect().top <= host.getBoundingClientRect().top + 12;
   }
 
   function columnScrolls() {
     const slot = breathSlotRef.current;
     if (!slot) return false;
-    return zoneRef.current.tall || slot.scrollHeight - slot.clientHeight > 2;
+    return slot.scrollHeight - slot.clientHeight > 24;
   }
 
   function zoneAt(x: number, y: number) {
@@ -1149,8 +1177,22 @@ export function TbrReader({
       bottom: hostRect.bottom,
       width: hostRect.width,
     };
-    if (columnScrolls()) {
+    if (pinnedToTop()) {
       return turnZone({ x, y, host: box, focusTop: null, focusBottom: null, tall: true });
+    }
+    // The sentence on screen is the boundary, including while it is still
+    // sliding into place. A stored split from the landed position sits above
+    // that moving line, and a tap just above the words would step forward.
+    const line = breathSlotRef.current?.querySelector(".breath-now");
+    const lineRect = line?.getBoundingClientRect();
+    if (lineRect && lineRect.height > 0) {
+      return turnZone({
+        x,
+        y,
+        host: box,
+        focusTop: lineRect.top,
+        focusBottom: lineRect.bottom,
+      });
     }
     const zone = zoneRef.current;
     if (zone.ready) {
@@ -1163,40 +1205,18 @@ export function TbrReader({
         focusBottom: focusTop + 1,
       });
     }
-    const line = breathSlotRef.current?.querySelector(".breath-now");
-    const lineRect = line?.getBoundingClientRect();
-    return turnZone({
-      x,
-      y,
-      host: box,
-      focusTop: lineRect ? lineRect.top : null,
-      focusBottom: lineRect ? lineRect.bottom : null,
-    });
+    return turnZone({ x, y, host: box, focusTop: null, focusBottom: null });
   }
 
-  function pageBreath(direction: 1 | -1) {
-    const slot = breathSlotRef.current;
-    if (!slot || !columnScrolls()) return false;
-    const top = breathPageTop({
-      scrollTop: slot.scrollTop,
-      clientHeight: slot.clientHeight,
-      scrollHeight: slot.scrollHeight,
-      direction,
-    });
-    if (top == null) return false;
-    slot.scrollTop = top;
-    const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
-    setAtEnd(end);
-    return true;
+  function stepZone(zone: "prev" | "next" | null) {
+    if (!zone) return;
+    if (zone === "prev") retreat();
+    else advance();
+    setBar((state) => reduceReaderBar(state, "page"));
   }
 
   function turnAt(x: number, y: number) {
-    const zone = zoneAt(x, y);
-    if (!zone) return;
-    if (zone === "prev") {
-      if (!pageBreath(-1)) retreat();
-    } else if (!pageBreath(1)) advance();
-    setBar((state) => reduceReaderBar(state, "page"));
+    stepZone(zoneAt(x, y));
   }
 
   function beginTurn(e: ReactPointerEvent<HTMLDivElement>) {
@@ -1215,7 +1235,7 @@ export function TbrReader({
     ) {
       return;
     }
-    if (e.pointerType === "touch") lastTouchAtRef.current = performance.now();
+    if (e.pointerType === "touch") rememberTouch(e.clientX, e.clientY);
     const slot = breathSlotRef.current;
     // Arm before the lift. iOS can deliver the compatibility click before
     // pointerup; that click must not turn, and the lift still does.
@@ -1231,6 +1251,9 @@ export function TbrReader({
       scrollTop: slot?.scrollTop ?? 0,
       scrolled: false,
       turned: false,
+      // Frozen at finger-down. The sentence keeps sliding after the touch,
+      // and reading the line again on the lift flips a back tap into forward.
+      zone: zoneAt(e.clientX, e.clientY),
     };
     try {
       host.setPointerCapture(e.pointerId);
@@ -1268,7 +1291,10 @@ export function TbrReader({
     if (!start || start.id !== e.pointerId) return;
     gestureRef.current = null;
     if (start.turned) return;
-    if (start.pointerType === "touch") lastTouchAtRef.current = performance.now();
+    turnedAtRef.current = performance.now();
+    if (start.pointerType === "touch") {
+      rememberTouch(cancelled ? start.lastX : e.clientX, cancelled ? start.lastY : e.clientY);
+    }
     if (start.scrolled) return;
     const dx = (cancelled ? start.lastX : e.clientX) - start.x;
     const dy = (cancelled ? start.lastY : e.clientY) - start.y;
@@ -1282,17 +1308,15 @@ export function TbrReader({
     });
     if (cancelled && kind !== "tap") return;
     if (kind === "swipe-next") {
-      if (!pageBreath(1)) advance();
-      setBar((state) => reduceReaderBar(state, "page"));
+      stepZone("next");
       return;
     }
     if (kind === "swipe-prev") {
-      if (!pageBreath(-1)) retreat();
-      setBar((state) => reduceReaderBar(state, "page"));
+      stepZone("prev");
       return;
     }
     if (kind !== "tap") return;
-    turnAt(start.x, start.y);
+    stepZone(start.zone);
   }
 
   function endTurn(e: ReactPointerEvent<HTMLDivElement>) {
@@ -1311,12 +1335,20 @@ export function TbrReader({
     // this click is that finger: turn now, and let the lift do nothing.
     if (start && !start.turned && owedClicksRef.current === 1) {
       start.turned = true;
+      turnedAtRef.current = performance.now();
       noteOwed(-1);
-      if (!start.scrolled) turnAt(start.x, start.y);
+      if (!start.scrolled) stepZone(start.zone);
       return;
     }
     if (owedClicksRef.current > 0) {
       noteOwed(-1);
+      return;
+    }
+    // The phone's extra click can land after the sentence has moved, on the
+    // same spot, and step forward. That undoes the back tap. A mouse click
+    // somewhere else still turns.
+    if (ghostClick(e.clientX, e.clientY)) return;
+    if (turnedAtRef.current > 0 && performance.now() - turnedAtRef.current < GHOST_MOUSE_MS) {
       return;
     }
     turnAt(e.clientX, e.clientY);

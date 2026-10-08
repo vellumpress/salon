@@ -23,6 +23,14 @@ export const TAP_MS = 350;
  */
 export const GHOST_MOUSE_MS = 1500;
 
+/**
+ * A compatibility click can sit in the queue behind a long layout, so it
+ * arrives after the short window. It still lands on the finger. A real
+ * mouse click somewhere else is not that finger.
+ */
+export const GHOST_PLACE_MS = 12_000;
+export const GHOST_PLACE_PX = 24;
+
 export type TurnGesture = "tap" | "swipe-next" | "swipe-prev" | "scroll" | "ignore";
 
 /**
@@ -70,11 +78,21 @@ export function ghostMousePointer(input: {
   now: number;
   lastTouchAt: number;
   windowMs?: number;
+  x?: number;
+  y?: number;
+  lastX?: number | null;
+  lastY?: number | null;
 }): boolean {
   if (input.pointerType !== "mouse") return false;
   if (input.firesTouchEvents) return true;
+  if (!(input.lastTouchAt > 0)) return false;
   const windowMs = input.windowMs ?? GHOST_MOUSE_MS;
-  return input.lastTouchAt > 0 && input.now - input.lastTouchAt < windowMs;
+  if (input.now - input.lastTouchAt < windowMs) return true;
+  if (input.now - input.lastTouchAt >= GHOST_PLACE_MS) return false;
+  if (input.lastX == null || input.lastY == null || input.x == null || input.y == null) {
+    return false;
+  }
+  return Math.hypot(input.x - input.lastX, input.y - input.lastY) <= GHOST_PLACE_PX;
 }
 
 /**

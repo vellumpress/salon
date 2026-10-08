@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { execFileSync, spawn, type ChildProcess } from "node:child_process";
 import { existsSync, openSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
-import test from "node:test";
+import test, { type TestContext } from "node:test";
 import { fileURLToPath } from "node:url";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 
@@ -142,6 +142,18 @@ function sampleBounds(bounds: number[], max: number) {
   return [...picked].sort((a, b) => a - b);
 }
 
+async function webkitInstalled() {
+  try {
+    const browser = await webkit.launch();
+    await browser.close();
+    return true;
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    if (!/Executable doesn't exist|browserType\.launch/.test(message)) throw error;
+    return false;
+  }
+}
+
 async function launchEngine(name: EngineName): Promise<Browser> {
   if (name === "webkit") return webkit.launch();
   const args = ["--no-sandbox"];
@@ -263,9 +275,15 @@ async function column(page: Page): Promise<Column> {
   return spot;
 }
 
+function lineAtTop(spot: Column) {
+  return spot.lineTop <= spot.host.top + 12;
+}
+
 function backPoint(spot: Column) {
   const limit = Math.min(spot.host.bottom - 8, spot.footerTop - 12);
-  if (spot.overflows) {
+  // Left third only when the sentence fills the column from the top.
+  // A line that still sits in the column goes back from anywhere above it.
+  if (spot.overflows && lineAtTop(spot)) {
     return {
       x: Math.round(spot.host.left + spot.host.width * 0.12),
       y: Math.round(Math.min(limit, spot.host.top + spot.host.height * 0.42)),
@@ -445,78 +463,19 @@ async function dispatchGhost(page: Page, x: number, y: number, clickBeforeUp: bo
   );
 }
 
-async function pageWithin(page: Page, id: string, at: number, label: string) {
+async function tallSteps(page: Page, id: string, at: number, label: string) {
   await openAt(page, id, at);
   const opened = await column(page);
-  assert.equal(opened.overflows, true, `${label} did not scroll in place`);
+  assert.equal(opened.overflows, true, `${label} is not taller than the column`);
   assert.ok(opened.scrollTop < 4, `${label} did not open at the start`);
   assert.equal(opened.slotTouch, "manipulation", `${label} slot still pans natively`);
-  const forward = forwardPoint(opened);
-  await assertOnColumn(page, forward, `${label} forward`);
-  await page.touchscreen.tap(forward.x, forward.y);
-  await page.waitForFunction(
-    (prev) => {
-      const slot = document.querySelector(".breath-slot") as HTMLElement | null;
-      const frame = document.querySelector("[data-breath-index]");
-      if (!slot || !frame) return false;
-      return (
-        frame.getAttribute("data-breath-index") === String(prev) && slot.scrollTop > 20
-      );
-    },
-    at,
-    { timeout: 4000 },
-  );
-  const paged = await column(page);
-  assert.equal(paged.index, at, `${label} forward stepped instead of paging`);
-  const back = backPoint(paged);
-  await page.touchscreen.tap(back.x, back.y);
-  await page.waitForFunction(
-    (prev) => {
-      const slot = document.querySelector(".breath-slot") as HTMLElement | null;
-      const frame = document.querySelector("[data-breath-index]");
-      if (!slot || !frame) return false;
-      return (
-        frame.getAttribute("data-breath-index") === String(prev.index) &&
-        slot.scrollTop < prev.scrollTop - 12
-      );
-    },
-    { index: at, scrollTop: paged.scrollTop },
-    { timeout: 4000 },
-  );
-  let guard = 0;
-  let spot = await column(page);
-  while (spot.scrollHeight - spot.scrollTop - spot.clientHeight > 3) {
-    guard += 1;
-    assert.ok(guard < 48, `${label} never reached the end of the breath`);
-    const next = forwardPoint(spot);
-    await page.touchscreen.tap(next.x, next.y);
-    const beforeTop = spot.scrollTop;
-    await page.waitForFunction(
-      (prev) => {
-        const slot = document.querySelector(".breath-slot") as HTMLElement | null;
-        const frame = document.querySelector("[data-breath-index]");
-        if (!slot || !frame) return false;
-        const index = frame.getAttribute("data-breath-index");
-        return index === String(prev.index) && slot.scrollTop > prev.top + 12;
-      },
-      { index: at, top: beforeTop },
-      { timeout: 4000 },
-    );
-    spot = await column(page);
-    assert.equal(spot.index, at, `${label} stepped before the end was visible`);
-  }
-  const leaving = forwardPoint(spot);
-  await tapIndex(page, leaving, at + 1, `${label} advance after the end`);
-  const after = await column(page);
-  const retreat = after.overflows ? backPoint(after) : backPoint(after);
-  await tapIndex(page, retreat, at, `${label} retreat onto the tall breath`);
+  await tapIndex(page, forwardPoint(opened), at + 1, `${label} forward`);
+  const next = await column(page);
+  assert.ok(next.scrollTop < 4, `${label} next sentence did not open at the start`);
+  await tapIndex(page, backPoint(next), at, `${label} back onto the tall sentence`);
   const landed = await column(page);
-  assert.equal(landed.overflows, true, `${label} retreat left the tall breath`);
-  const max = landed.scrollHeight - landed.clientHeight;
-  assert.ok(
-    landed.scrollTop >= max - 4,
-    `${label} retreat landed at scroll ${landed.scrollTop}, end is ${max}`,
-  );
+  assert.equal(landed.index, at, `${label} back skipped or stuck`);
+  assert.ok(landed.scrollTop < 4, `${label} back stopped partway through the sentence`);
 }
 
 async function dragTall(page: Page, label: string) {
@@ -562,8 +521,9 @@ async function runReaderMatrix(name: EngineName) {
   const tag = name;
   try {
     const page = await phonePage(browser);
-    const touchPoints = await page.evaluate(() => navigator.maxTouchPoints);
-    assert.ok(touchPoints > 0, `${tag} viewport is not touch-capable`);
+    const viewport = page.viewportSize();
+    assert.equal(viewport?.width, 390, `${tag} viewport width`);
+    assert.equal(viewport?.height, 844, `${tag} viewport height`);
 
     await openAt(page, "passing", 862);
     const touch = await column(page);
@@ -659,13 +619,13 @@ async function runReaderMatrix(name: EngineName) {
     await burst(page, 1, 8, 40, `${tag} miss julie forward`);
     assert.equal(await breathIndex(page), 47);
 
-    await pageWithin(page, "lamia", 5, `${tag} lamia`);
+    await tallSteps(page, "lamia", 5, `${tag} lamia`);
     await openAt(page, "lamia", 5);
     await dragTall(page, `${tag} lamia drag`);
-    await pageWithin(page, "strait-is-the-gate", 16, `${tag} strait`);
-    await pageWithin(page, "nights", 4, `${tag} nights`);
-    await pageWithin(page, "shahnameh", 49, `${tag} shahnameh`);
-    await pageWithin(page, "strange-tales", 84, `${tag} strange tales`);
+    await tallSteps(page, "strait-is-the-gate", 16, `${tag} strait`);
+    await tallSteps(page, "nights", 4, `${tag} nights`);
+    await tallSteps(page, "shahnameh", 49, `${tag} shahnameh`);
+    await tallSteps(page, "strange-tales", 84, `${tag} strange tales`);
 
     await openAt(page, "passing", 18);
     const beforeGlass = await column(page);
@@ -756,59 +716,12 @@ async function runPdfMatrix(name: EngineName) {
     assert.ok(found >= 0, `${tag} long pdf paragraph did not scroll in place`);
     const tall = await column(again);
     assert.ok(tall.scrollTop < 4, `${tag} long pdf breath was not at the start`);
-    await again.touchscreen.tap(forwardPoint(tall).x, forwardPoint(tall).y);
-    await again.waitForFunction(
-      (prev) => {
-        const slot = document.querySelector(".breath-slot") as HTMLElement | null;
-        const frame = document.querySelector("[data-breath-index]");
-        return (
-          slot != null &&
-          frame?.getAttribute("data-breath-index") === String(prev) &&
-          slot.scrollTop > 20
-        );
-      },
-      found,
-      { timeout: 4000 },
-    );
-    const paged = await column(again);
-    assert.equal(paged.index, found, `${tag} pdf forward stepped a tall paragraph`);
-    await again.touchscreen.tap(backPoint(paged).x, backPoint(paged).y);
-    await again.waitForFunction(
-      (prev) => {
-        const slot = document.querySelector(".breath-slot") as HTMLElement | null;
-        const frame = document.querySelector("[data-breath-index]");
-        return (
-          slot != null &&
-          frame?.getAttribute("data-breath-index") === String(prev.index) &&
-          slot.scrollTop < prev.top - 12
-        );
-      },
-      { index: found, top: paged.scrollTop },
-      { timeout: 4000 },
-    );
-    let guard = 0;
-    let spot = await column(again);
-    while (spot.scrollTop > 3) {
-      guard += 1;
-      assert.ok(guard < 48, `${tag} pdf never paged back to the top`);
-      const top = spot.scrollTop;
-      await again.touchscreen.tap(backPoint(spot).x, backPoint(spot).y);
-      await again.waitForFunction(
-        (prev) => {
-          const slot = document.querySelector(".breath-slot") as HTMLElement | null;
-          const frame = document.querySelector("[data-breath-index]");
-          if (!slot || !frame) return false;
-          const index = Number(frame.getAttribute("data-breath-index"));
-          return index === prev.index && slot.scrollTop < prev.top - 12;
-        },
-        { index: found, top },
-        { timeout: 4000 },
-      );
-      spot = await column(again);
-    }
-    if (found > 0) {
-      await tapIndex(again, backPoint(await column(again)), found - 1, `${tag} pdf back off the tall paragraph`);
-    }
+    await tapIndex(again, forwardPoint(tall), found + 1, `${tag} pdf forward off a tall paragraph`);
+    const stepped = await column(again);
+    assert.ok(stepped.scrollTop < 4, `${tag} pdf next sentence opened partway`);
+    await tapIndex(again, backPoint(stepped), found, `${tag} pdf back onto a tall paragraph`);
+    const returned = await column(again);
+    assert.ok(returned.scrollTop < 4, `${tag} pdf back stopped partway through the paragraph`);
     await again.close();
   } finally {
     await browser.close();
@@ -831,7 +744,11 @@ test(
 test(
   "touch back is one breath on WebKit, including rapid taps and scene edges",
   { timeout: 900_000 },
-  async () => {
+  async (t: TestContext) => {
+    if (!(await webkitInstalled())) {
+      t.skip("WebKit is not installed");
+      return;
+    }
     const stop = await ensureServer();
     try {
       await runReaderMatrix("webkit");
@@ -844,11 +761,12 @@ test(
 test(
   "touch back is one breath in an imported PDF on Chromium and WebKit",
   { timeout: 900_000 },
-  async () => {
+  async (t: TestContext) => {
     const stop = await ensureServer();
     try {
       await runPdfMatrix("chromium");
-      await runPdfMatrix("webkit");
+      if (await webkitInstalled()) await runPdfMatrix("webkit");
+      else t.diagnostic("WebKit is not installed; PDF matrix ran on Chromium only");
     } finally {
       await stop();
     }

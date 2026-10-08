@@ -114,6 +114,42 @@ test("a ghost mouse after touch is the same finger", () => {
     }),
     false,
   );
+  assert.equal(
+    ghostMousePointer({
+      pointerType: "mouse",
+      now: 5000,
+      lastTouchAt: 1000,
+      x: 200,
+      y: 400,
+      lastX: 204,
+      lastY: 398,
+    }),
+    true,
+  );
+  assert.equal(
+    ghostMousePointer({
+      pointerType: "mouse",
+      now: 5000,
+      lastTouchAt: 1000,
+      x: 40,
+      y: 80,
+      lastX: 200,
+      lastY: 400,
+    }),
+    false,
+  );
+  assert.equal(
+    ghostMousePointer({
+      pointerType: "mouse",
+      now: 20_000,
+      lastTouchAt: 1000,
+      x: 200,
+      y: 400,
+      lastX: 200,
+      lastY: 400,
+    }),
+    false,
+  );
 });
 
 test("a short still touch is a tap, and a vertical drag in a tall breath scrolls", () => {

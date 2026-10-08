@@ -245,6 +245,27 @@ async function frames(page: Page) {
   );
 }
 
+async function lineSettled(page: Page) {
+  await page.waitForFunction(
+    () => {
+      const line = document.querySelector(".breath-now");
+      if (!line) return false;
+      const track = document.querySelector(".center-track");
+      const animating =
+        track instanceof Element &&
+        track.getAnimations().some((anim) => anim.playState === "running");
+      const top = String(Math.round(line.getBoundingClientRect().top));
+      const prev = line.getAttribute("data-settled-top");
+      const count = Number(line.getAttribute("data-settled-n") ?? "0");
+      const same = prev === top && !animating;
+      line.setAttribute("data-settled-top", top);
+      line.setAttribute("data-settled-n", same ? String(count + 1) : "0");
+      return same && count + 1 >= 3;
+    },
+    { timeout: 4000 },
+  );
+}
+
 async function settle(page: Page, expected: number) {
   await page.waitForFunction(
     (want) =>
@@ -253,9 +274,9 @@ async function settle(page: Page, expected: number) {
     expected,
     { timeout: 4000 },
   );
-  // A compatibility click is swallowed whenever it arrives. Two frames let a
-  // click already queued in this turn run; the index, not a clock, is the check.
-  await frames(page);
+  // The sentence is still sliding. A point taken just above it moves with
+  // the line; wait until that top stops, not for a fixed pause.
+  await lineSettled(page);
   assert.equal(await breathIndex(page), expected);
   const bar = await page.locator("[data-reader-bar]").getAttribute("data-reader-bar");
   assert.equal(bar, "closed", "a page tap opened Keep/Send");
