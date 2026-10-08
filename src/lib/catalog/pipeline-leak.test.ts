@@ -500,11 +500,19 @@ test("reader intros and their source copy carry no staff skip/sit instructions",
  */
 const SPEAKER_PREFIX_PENDING: Record<string, string> = {};
 
+/**
+ * Verse dramas shelved as poems and bound in the house form from the printed
+ * cues: one speaker legitimately carries a large share (Althaea speaks on
+ * about a quarter of Atalanta in Calydon's breaths). The run and labelled-
+ * heading checks still apply.
+ */
+const VERSE_DRAMA_IDS = new Set(["atalanta-in-calydon"]);
+
 const SPEAKER_LABEL = /^([A-Z][\w’'.-]*(?: [A-Z][\w’'.-]*){0,3}): \S/;
 const LABELLED_HEADING = /^[^:]{1,40}: [A-Z0-9][A-Z0-9 .,'’-]{3,}$/;
 const NOT_A_SPEAKER = new Set(["Note", "Notes", "Footnote", "N.B", "P.S"]);
 
-function speakerPrefixProblems(texts: string[]): string[] {
+function speakerPrefixProblems(texts: string[], opts: { verseDrama?: boolean } = {}): string[] {
   const labels = texts.map((text) => {
     const label = SPEAKER_LABEL.exec(text)?.[1] ?? null;
     return label && !NOT_A_SPEAKER.has(label) ? label : null;
@@ -513,7 +521,7 @@ function speakerPrefixProblems(texts: string[]): string[] {
   for (const label of labels) if (label) counts.set(label, (counts.get(label) ?? 0) + 1);
   const problems: string[] = [];
   const [top, topCount] = [...counts.entries()].sort((a, b) => b[1] - a[1])[0] ?? ["", 0];
-  if (texts.length >= 100 && topCount / texts.length >= 0.25) {
+  if (!opts.verseDrama && texts.length >= 100 && topCount / texts.length >= 0.25) {
     problems.push(`${top} on ${topCount}/${texts.length} breaths`);
   }
   let run = 0;
@@ -543,7 +551,10 @@ test("no non-play work carries a dominant or runaway speaker prefix", () => {
     } catch {
       continue;
     }
-    const problems = speakerPrefixProblems(book.breaths.map((breath) => breath.text ?? ""));
+    const problems = speakerPrefixProblems(
+      book.breaths.map((breath) => breath.text ?? ""),
+      { verseDrama: VERSE_DRAMA_IDS.has(work.id) },
+    );
     if (work.id in SPEAKER_PREFIX_PENDING) {
       if (problems.length === 0) stale.push(work.id);
       continue;

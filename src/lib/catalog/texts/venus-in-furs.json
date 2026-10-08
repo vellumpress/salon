@@ -79,13 +79,6 @@
       "prompt": "A word from this stretch."
     },
     {
-      "id": "s10",
-      "title": "“My Beloved,",
-      "place": "“My Beloved,",
-      "reentry": "I do not care to see you to-day or to-morrow, and not until evening the day after tomorrow, and then *as my slave*.",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s11",
       "title": "Wanda.”",
       "place": "Wanda.”",
@@ -2212,13 +2205,18 @@
       "text": "“Be it,” I exclaimed, “and my dreams will be fulfilled. I am yours for good or evil, choose. The destiny that lies concealed within my breast drives me on—demoniacally—relentlessly.”"
     },
     {
+      "id": "s10-t",
+      "sceneId": "s9",
+      "text": "“My Beloved,"
+    },
+    {
       "id": "s10-0",
-      "sceneId": "s10",
+      "sceneId": "s9",
       "text": "I do not care to see you to-day or to-morrow, and not until evening the day after tomorrow, and then *as my slave*."
     },
     {
       "id": "s10-1",
-      "sceneId": "s10",
+      "sceneId": "s9",
       "text": "Your mistress"
     },
     {
