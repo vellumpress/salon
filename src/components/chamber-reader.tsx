@@ -64,7 +64,13 @@ import {
   upcomingBreaths,
   upcomingOpacity,
 } from "@/lib/center-line";
-import { turnZone } from "@/lib/reader-turn";
+import {
+  classifyTurnGesture,
+  GHOST_MOUSE_MS,
+  ghostMousePointer,
+  SCROLL_ARM_PX,
+  turnZone,
+} from "@/lib/reader-turn";
 import { useCenterLine } from "@/lib/use-center-line";
 
 type Overlay =
@@ -156,7 +162,6 @@ export function TbrReader({
   const navReveal = bar.navReveal;
   const [overflows, setOverflows] = useState(false);
   const [atEnd, setAtEnd] = useState(true);
-  const [lookbackPx, setLookbackPx] = useState(0);
   /** Top of the focus line, relative to the reading column. Taps above it go back. */
   const [prevZonePx, setPrevZonePx] = useState(0);
   const [sandCue, setSandCue] = useState(false);
@@ -173,11 +178,43 @@ export function TbrReader({
   const centerLine = useCenterLine();
   const centerOn = centerLine.enabled;
   const turnHostRef = useRef<HTMLDivElement>(null);
-  /** One finger-down. The matching pointerup is the only turn. */
-  const gestureRef = useRef<{ id: number; x: number; y: number; t: number } | null>(null);
-  /** iOS sends a click after pointerup. That click must not turn again. */
-  const swallowClickRef = useRef(false);
-  const swallowTimerRef = useRef(0);
+  /**
+   * One finger-down. The matching pointerup is the only turn.
+   * A ghost mouse sequence after the touch must not start another one.
+   */
+  const gestureRef = useRef<{
+    id: number;
+    x: number;
+    y: number;
+    lastX: number;
+    lastY: number;
+    t: number;
+    pointerType: string;
+    scrollTop: number;
+    scrolled: boolean;
+    turned: boolean;
+    zone: "prev" | "next" | null;
+  } | null>(null);
+  /** Clicks owed to pointer gestures. Each one is swallowed, not turned. */
+  const owedClicksRef = useRef(0);
+  /** When a pointer gesture last turned. A click in this window is that finger. */
+  const turnedAtRef = useRef(0);
+  /** Last real touch, so the synthesized mouse that follows is ignored. */
+  const lastTouchAtRef = useRef(0);
+  const lastTouchPointRef = useRef<{ x: number; y: number } | null>(null);
+  const touchPlacesRef = useRef<{ x: number; y: number; t: number }[]>([]);
+  /**
+   * Fallback split when the focus line has no box yet.
+   * A tap uses the line on screen at finger-down, and the sentence index
+   * comes from the store, never from how far the column has scrolled.
+   */
+  const zoneRef = useRef<{ tall: boolean; split: number; ready: boolean }>({
+    tall: false,
+    split: 0,
+    ready: false,
+  });
+  /** While the sentence is still sliding, taps use the rested split. */
+  const slidingUntilRef = useRef(0);
   const overlayRef = useRef(overlay);
   overlayRef.current = overlay;
   const booted = useRef(false);
@@ -289,9 +326,21 @@ export function TbrReader({
     document.documentElement.classList.add("sitting");
     return () => {
       document.documentElement.classList.remove("sitting");
-      window.clearTimeout(swallowTimerRef.current);
     };
   }, []);
+
+  useEffect(() => {
+    const host = turnHostRef.current;
+    if (!host) return;
+    const blockCallout = (event: TouchEvent) => {
+      if (event.touches.length !== 1) return;
+      const target = event.target;
+      if (target instanceof Element && target.closest("a[href], input, textarea, select")) return;
+      if (event.cancelable) event.preventDefault();
+    };
+    host.addEventListener("touchstart", blockCallout, { passive: false });
+    return () => host.removeEventListener("touchstart", blockCallout);
+  }, [centerOn, overlay]);
 
   // Idle, background, and the threshold / timer sheets are not reading.
   // The anchor is cleared so the next advance cannot claim that gap.
@@ -400,7 +449,7 @@ export function TbrReader({
     setSandCue(false);
     startSitting(work.id, { restart: true });
     setOverlay("none");
-    setBreath(work.id, index);
+    setBreath(work.id, liveIndex());
   }
 
   function crossThreshold() {
@@ -771,23 +820,45 @@ export function TbrReader({
     if (!slot) {
       setOverflows(false);
       setAtEnd(true);
+      zoneRef.current = { tall: false, split: 0, ready: false };
       return;
     }
-    slot.scrollTop = 0;
+    let didLand = false;
+    const landScroll = () => {
+      if (didLand) return;
+      didLand = true;
+      // Every sentence opens on its first line. The index in the store is
+      // where we are; scroll position is not another sentence.
+      slot.scrollTop = 0;
+    };
+    const rememberZone = (tall: boolean) => {
+      const host = turnHostRef.current;
+      const line = slot.querySelector(".breath-now");
+      if (!host || !line) {
+        zoneRef.current = { tall, split: 0, ready: false };
+        return 0;
+      }
+      const hostRect = host.getBoundingClientRect();
+      const lineRect = line.getBoundingClientRect();
+      const split = Math.max(
+        0,
+        Math.min(Math.round(hostRect.height), Math.round(lineRect.top - hostRect.top)),
+      );
+      zoneRef.current = { tall, split, ready: true };
+      return split;
+    };
 
     if (!centerOn) {
       let live = true;
       const measure = () => {
         if (!live) return;
         const next = slot.scrollHeight - slot.clientHeight > 1;
+        landScroll();
         setOverflows((prev) => (prev === next ? prev : next));
         const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
         setAtEnd((prev) => (prev === end ? prev : end));
-        const look = lookbackSlotRef.current;
-        if (look) {
-          const height = Math.round(look.getBoundingClientRect().height);
-          setLookbackPx((prev) => (prev === height ? prev : height));
-        }
+        const split = rememberZone(next);
+        setPrevZonePx((prev) => (prev === split ? prev : split));
       };
       measure();
       const ro = new ResizeObserver(measure);
@@ -847,6 +918,7 @@ export function TbrReader({
         if (ahead) ahead.style.display = "";
         if (look) void look.offsetHeight;
       }
+      landScroll();
 
       const trackRect = track.getBoundingClientRect();
       const targetRect = line.getBoundingClientRect();
@@ -887,6 +959,7 @@ export function TbrReader({
       const zone = hostRect
         ? Math.max(0, Math.min(Math.round(hostRect.height), Math.round(focusTop)))
         : 0;
+      zoneRef.current = { tall: tooTall, split: zone, ready: true };
       setPrevZonePx((prev) => (prev === zone ? prev : zone));
       if (motion) {
         // Land on the true center, but start one breath lower so the column
@@ -894,6 +967,7 @@ export function TbrReader({
         // breath; that jump is applied before paint, and only the breath
         // travels in view.
         holdMotionUntil = performance.now() + 320;
+        slidingUntilRef.current = holdMotionUntil;
         track.style.transform = `translate3d(0, ${shift + travel}px, 0)`;
         void track.offsetHeight;
         track.style.transition = previousTransition;
@@ -901,6 +975,7 @@ export function TbrReader({
         void track.offsetHeight;
         track.style.transform = `translate3d(0, ${shift}px, 0)`;
       } else {
+        slidingUntilRef.current = 0;
         track.style.transition = previousTransition;
         if (!reduceMotion) {
           requestAnimationFrame(() => {
@@ -913,8 +988,6 @@ export function TbrReader({
       setOverflows((prev) => (prev === overflowsNow ? prev : overflowsNow));
       const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
       setAtEnd((prev) => (prev === end ? prev : end));
-      const lookHeight = tooTall || !look ? 0 : Math.round(look.getBoundingClientRect().height);
-      setLookbackPx((prev) => (prev === lookHeight ? prev : lookHeight));
       layoutSig = sigNow();
     };
 
@@ -1044,94 +1117,268 @@ export function TbrReader({
   );
   const breathClass = cn("breath-slot", overflows && "overflows", atEnd && "at-end");
 
-  function armSwallowClick() {
-    swallowClickRef.current = true;
-    window.clearTimeout(swallowTimerRef.current);
-    swallowTimerRef.current = window.setTimeout(() => {
-      swallowClickRef.current = false;
-    }, 900);
+  function noteOwed(by: number) {
+    owedClicksRef.current = Math.max(0, owedClicksRef.current + by);
+    turnHostRef.current?.setAttribute("data-swallow-owed", String(owedClicksRef.current));
+  }
+
+  function rememberTouch(x: number, y: number) {
+    const now = performance.now();
+    lastTouchAtRef.current = now;
+    lastTouchPointRef.current = { x, y };
+    const places = touchPlacesRef.current.filter((place) => now - place.t < 12_000);
+    places.push({ x, y, t: now });
+    touchPlacesRef.current = places.slice(-24);
+  }
+
+  function ghostPointer(e: ReactPointerEvent<HTMLDivElement>) {
+    return ghostMousePointer({
+      pointerType: e.pointerType,
+      firesTouchEvents: Boolean(
+        (e.nativeEvent as { sourceCapabilities?: { firesTouchEvents?: boolean } }).sourceCapabilities
+          ?.firesTouchEvents,
+      ),
+      now: performance.now(),
+      lastTouchAt: lastTouchAtRef.current,
+      x: e.clientX,
+      y: e.clientY,
+      lastX: lastTouchPointRef.current?.x,
+      lastY: lastTouchPointRef.current?.y,
+      places: touchPlacesRef.current,
+    });
+  }
+
+  function ghostClick(x: number, y: number) {
+    return ghostMousePointer({
+      pointerType: "mouse",
+      now: performance.now(),
+      lastTouchAt: lastTouchAtRef.current,
+      x,
+      y,
+      lastX: lastTouchPointRef.current?.x,
+      lastY: lastTouchPointRef.current?.y,
+      places: touchPlacesRef.current,
+    });
+  }
+
+  function pinnedToTop() {
+    const slot = breathSlotRef.current;
+    const host = turnHostRef.current;
+    if (!slot || !host) return false;
+    const line = slot.querySelector(".breath-now");
+    if (!line) return zoneRef.current.tall;
+    // Scene-length lines are pinned under the header. Nothing sits above
+    // them, so the left third is the back tap even when they do not scroll.
+    return line.getBoundingClientRect().top <= host.getBoundingClientRect().top + 12;
+  }
+
+  function columnScrolls() {
+    const slot = breathSlotRef.current;
+    if (!slot) return false;
+    return slot.scrollHeight - slot.clientHeight > 24;
+  }
+
+  function lineIsSliding() {
+    if (performance.now() < slidingUntilRef.current) return true;
+    const track = trackRef.current;
+    if (!track) return false;
+    return track.getAnimations().some((anim) => anim.playState === "running");
   }
 
   function zoneAt(x: number, y: number) {
     const host = turnHostRef.current;
     if (!host) return null;
-    const line = breathSlotRef.current?.querySelector(".breath-now");
     const hostRect = host.getBoundingClientRect();
+    const box = {
+      left: hostRect.left,
+      top: hostRect.top,
+      right: hostRect.right,
+      bottom: hostRect.bottom,
+      width: hostRect.width,
+    };
+    if (pinnedToTop()) {
+      return turnZone({ x, y, host: box, focusTop: null, focusBottom: null, tall: true });
+    }
+    // The sentence on screen is the boundary once it has settled.
+    // While it is still sliding, the moving box sits lower than the rested
+    // line, and a second tap on the same spot would reverse the first.
+    const line = breathSlotRef.current?.querySelector(".breath-now");
     const lineRect = line?.getBoundingClientRect();
-    return turnZone({
-      x,
-      y,
-      host: {
-        left: hostRect.left,
-        top: hostRect.top,
-        right: hostRect.right,
-        bottom: hostRect.bottom,
-        width: hostRect.width,
-      },
-      focusTop: lineRect ? lineRect.top : null,
-      focusBottom: lineRect ? lineRect.bottom : null,
-    });
+    const lineInColumn =
+      lineRect &&
+      lineRect.height > 0 &&
+      lineRect.bottom > hostRect.top &&
+      lineRect.top < hostRect.bottom;
+    if (!lineIsSliding() && lineInColumn && lineRect) {
+      return turnZone({
+        x,
+        y,
+        host: box,
+        focusTop: lineRect.top,
+        focusBottom: lineRect.bottom,
+      });
+    }
+    const zone = zoneRef.current;
+    if (zone.ready && zone.tall) {
+      return turnZone({ x, y, host: box, focusTop: null, focusBottom: null, tall: true });
+    }
+    if (zone.ready) {
+      const focusTop = hostRect.top + zone.split;
+      return turnZone({
+        x,
+        y,
+        host: box,
+        focusTop,
+        focusBottom: focusTop + 1,
+      });
+    }
+    return turnZone({ x, y, host: box, focusTop: null, focusBottom: null });
   }
 
-  function turnAt(x: number, y: number) {
-    const zone = zoneAt(x, y);
+  function stepZone(zone: "prev" | "next" | null) {
     if (!zone) return;
-    armSwallowClick();
     if (zone === "prev") retreat();
     else advance();
     setBar((state) => reduceReaderBar(state, "page"));
   }
 
+  function turnAt(x: number, y: number) {
+    stepZone(zoneAt(x, y));
+  }
+
   function beginTurn(e: ReactPointerEvent<HTMLDivElement>) {
-    if (e.button !== 0) return;
+    if (e.button !== 0 || !e.isPrimary) return;
+    if (ghostPointer(e)) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
     const host = turnHostRef.current;
     if (!host) return;
-    gestureRef.current = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now() };
-    const target = e.target as HTMLElement | null;
-    const scrolling = Boolean(target?.closest?.(".breath-slot.overflows"));
-    if (scrolling) return;
+    const target = e.target;
+    if (
+      target instanceof Element &&
+      target.closest("a[href], input, textarea, select, label")
+    ) {
+      return;
+    }
+    if (e.pointerType === "touch") rememberTouch(e.clientX, e.clientY);
+    const slot = breathSlotRef.current;
+    // Arm before the lift. iOS can deliver the compatibility click before
+    // pointerup; that click must not turn, and the lift still does.
+    noteOwed(1);
+    const zone = zoneAt(e.clientX, e.clientY);
+    gestureRef.current = {
+      id: e.pointerId,
+      x: e.clientX,
+      y: e.clientY,
+      lastX: e.clientX,
+      lastY: e.clientY,
+      t: performance.now(),
+      pointerType: e.pointerType,
+      scrollTop: slot?.scrollTop ?? 0,
+      scrolled: false,
+      turned: false,
+      // Frozen at finger-down. The sentence keeps sliding after the touch,
+      // and reading the line again on the lift flips a back tap into forward.
+      zone,
+    };
     try {
       host.setPointerCapture(e.pointerId);
     } catch {
       /* the pointer already ended */
     }
-    // Stops the text callout and the extra click iOS fires after a tap.
+    // Stops the text callout, native scrolling, and the extra click after a tap.
     e.preventDefault();
+  }
+
+  function moveTurn(e: ReactPointerEvent<HTMLDivElement>) {
+    const start = gestureRef.current;
+    if (!start || start.id !== e.pointerId || ghostPointer(e)) return;
+    start.lastX = e.clientX;
+    start.lastY = e.clientY;
+    const slot = breathSlotRef.current;
+    if (!slot || !columnScrolls()) return;
+    const dy = e.clientY - start.y;
+    const dx = e.clientX - start.x;
+    if (!start.scrolled) {
+      if (Math.abs(dy) < SCROLL_ARM_PX || Math.abs(dy) < Math.abs(dx)) return;
+      start.scrolled = true;
+      start.scrollTop = slot.scrollTop;
+    }
+    slot.scrollTop = start.scrollTop - (e.clientY - start.y);
+    if (e.cancelable) e.preventDefault();
+  }
+
+  function finishTurn(e: ReactPointerEvent<HTMLDivElement>, cancelled: boolean) {
+    if (ghostPointer(e)) {
+      e.preventDefault();
+      return;
+    }
+    const start = gestureRef.current;
+    if (!start || start.id !== e.pointerId) return;
+    gestureRef.current = null;
+    if (start.turned) return;
+    turnedAtRef.current = performance.now();
+    if (start.pointerType === "touch") {
+      rememberTouch(cancelled ? start.lastX : e.clientX, cancelled ? start.lastY : e.clientY);
+    }
+    if (start.scrolled) return;
+    const dx = (cancelled ? start.lastX : e.clientX) - start.x;
+    const dy = (cancelled ? start.lastY : e.clientY) - start.y;
+    const dt = performance.now() - start.t;
+    const kind = classifyTurnGesture({
+      dx,
+      dy,
+      dt,
+      canScroll: columnScrolls(),
+      scrolled: false,
+    });
+    if (cancelled && kind !== "tap") return;
+    if (kind === "swipe-next") {
+      stepZone("next");
+      return;
+    }
+    if (kind === "swipe-prev") {
+      stepZone("prev");
+      return;
+    }
+    if (kind !== "tap") return;
+    stepZone(start.zone);
   }
 
   function endTurn(e: ReactPointerEvent<HTMLDivElement>) {
-    const start = gestureRef.current;
-    gestureRef.current = null;
-    if (!start || start.id !== e.pointerId) return;
-    const dx = e.clientX - start.x;
-    const dy = e.clientY - start.y;
-    const dt = performance.now() - start.t;
-    if (dt > 900) {
-      armSwallowClick();
-      return;
-    }
-    // A shaky finger is still a tap. Only a real sideways flick swipes.
-    if (Math.abs(dx) >= 56 && Math.abs(dx) > Math.abs(dy) * 1.25) {
-      armSwallowClick();
-      if (dx < 0) advance();
-      else retreat();
-      setBar((state) => reduceReaderBar(state, "page"));
-      return;
-    }
-    if (Math.hypot(dx, dy) > 44) {
-      armSwallowClick();
-      return;
-    }
-    turnAt(e.clientX, e.clientY);
+    finishTurn(e, false);
+  }
+
+  function cancelTurn(e: ReactPointerEvent<HTMLDivElement>) {
+    finishTurn(e, true);
   }
 
   function onTurnClick(e: ReactMouseEvent<HTMLDivElement>) {
-    if (swallowClickRef.current) {
-      e.preventDefault();
-      e.stopPropagation();
+    e.preventDefault();
+    e.stopPropagation();
+    const start = gestureRef.current;
+    // The compatibility click can beat pointerup. One open gesture means
+    // this click is that finger: turn now, and let the lift do nothing.
+    if (start && !start.turned && owedClicksRef.current === 1) {
+      start.turned = true;
+      turnedAtRef.current = performance.now();
+      noteOwed(-1);
+      if (!start.scrolled) stepZone(start.zone);
       return;
     }
-    e.preventDefault();
+    if (owedClicksRef.current > 0) {
+      noteOwed(-1);
+      return;
+    }
+    // The phone's extra click can land after the sentence has moved, on the
+    // same spot, and step forward. That undoes the back tap. A mouse click
+    // somewhere else still turns.
+    if (ghostClick(e.clientX, e.clientY)) return;
+    if (turnedAtRef.current > 0 && performance.now() - turnedAtRef.current < GHOST_MOUSE_MS) {
+      return;
+    }
     turnAt(e.clientX, e.clientY);
   }
 
@@ -1139,13 +1386,14 @@ export function TbrReader({
     <div
       ref={turnHostRef}
       data-reader-text
+      data-swallow-owed="0"
       className={cn("reader-turn relative flex min-h-0 flex-1", !together && "reader-turn-bleed")}
       onPointerDownCapture={beginTurn}
+      onPointerMoveCapture={moveTurn}
       onPointerUpCapture={endTurn}
-      onPointerCancelCapture={() => {
-        gestureRef.current = null;
-      }}
+      onPointerCancelCapture={cancelTurn}
       onClickCapture={onTurnClick}
+      onContextMenu={(e) => e.preventDefault()}
     >
       <button
         type="button"
@@ -1154,9 +1402,9 @@ export function TbrReader({
         aria-label="Previous sentence"
         className={cn(
           "absolute top-0 z-10 cursor-w-resize",
-          overflows ? "left-0 w-1/3" : "inset-x-0",
+          overflows ? "left-0 h-full w-1/3" : "inset-x-0",
         )}
-        style={{ height: overflows ? lookbackPx : Math.max(0, prevZonePx) }}
+        style={overflows ? undefined : { height: Math.max(0, prevZonePx) }}
         onMouseDown={(e) => e.preventDefault()}
       />
       <button
@@ -1166,9 +1414,9 @@ export function TbrReader({
         aria-label="Next sentence"
         className={cn(
           "absolute z-10 cursor-e-resize",
-          overflows ? "right-0 top-0 w-2/3" : "inset-x-0 bottom-0",
+          overflows ? "top-0 right-0 h-full w-2/3" : "inset-x-0 bottom-0",
         )}
-        style={overflows ? { height: lookbackPx } : { top: Math.max(0, prevZonePx) }}
+        style={overflows ? undefined : { top: Math.max(0, prevZonePx) }}
         onMouseDown={(e) => e.preventDefault()}
       />
 
@@ -1222,6 +1470,7 @@ export function TbrReader({
       data-center-line={centerOn ? "on" : "off"}
       data-bound={workIsComplete(work.id) ? "full" : "opening"}
       data-breath-index={index}
+      data-breath-count={work.breaths.length}
     >
       <h1 className="sr-only">{work.title}</h1>
       {together && pair ? (

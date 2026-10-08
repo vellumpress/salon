@@ -236,6 +236,36 @@ async function breathIndex(page: Page) {
   return Number(raw);
 }
 
+async function frames(page: Page) {
+  await page.evaluate(
+    () =>
+      new Promise<void>((resolve) => {
+        requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
+      }),
+  );
+}
+
+async function lineSettled(page: Page) {
+  await page.waitForFunction(
+    () => {
+      const line = document.querySelector(".breath-now");
+      if (!line) return false;
+      const track = document.querySelector(".center-track");
+      const animating =
+        track instanceof Element &&
+        track.getAnimations().some((anim) => anim.playState === "running");
+      const top = String(Math.round(line.getBoundingClientRect().top));
+      const prev = line.getAttribute("data-settled-top");
+      const count = Number(line.getAttribute("data-settled-n") ?? "0");
+      const same = prev === top && !animating;
+      line.setAttribute("data-settled-top", top);
+      line.setAttribute("data-settled-n", same ? String(count + 1) : "0");
+      return same && count + 1 >= 3;
+    },
+    { timeout: 4000 },
+  );
+}
+
 async function settle(page: Page, expected: number) {
   await page.waitForFunction(
     (want) =>
@@ -244,8 +274,9 @@ async function settle(page: Page, expected: number) {
     expected,
     { timeout: 4000 },
   );
-  // Long enough for a delayed compatibility click to step again if it is not swallowed.
-  await page.waitForTimeout(360);
+  // The sentence is still sliding. A point taken just above it moves with
+  // the line; wait until that top stops, not for a fixed pause.
+  await lineSettled(page);
   assert.equal(await breathIndex(page), expected);
   const bar = await page.locator("[data-reader-bar]").getAttribute("data-reader-bar");
   assert.equal(bar, "closed", "a page tap opened Keep/Send");
@@ -323,7 +354,7 @@ test(
       const first = await spots(page);
       assert.equal(first.look, 0);
       await page.touchscreen.tap(first.x, first.justAbove);
-      await page.waitForTimeout(400);
+      await frames(page);
       assert.equal(await breathIndex(page), 0, "back from the first sentence moved");
       assert.equal(
         await page.locator("[data-reader-bar]").getAttribute("data-reader-bar"),
@@ -354,9 +385,10 @@ test(
           { timeout: 4000 },
         );
       }
-      await page.waitForTimeout(1000);
+      await frames(page);
       assert.equal(await breathIndex(page), rapidStart - 12, "rapid back taps did not all land");
 
+      await lineSettled(page);
       const beforeDouble = await breathIndex(page);
       const spot = await spots(page);
       await page.evaluate(
@@ -413,7 +445,7 @@ test(
       assert.equal(start.index, 0);
       assert.equal(start.look, 0);
       await page.touchscreen.tap(start.x, start.justAbove);
-      await page.waitForTimeout(400);
+      await frames(page);
       assert.equal(await breathIndex(page), 0, "back from the first imported sentence moved");
 
       for (let i = 0; i < 70; i += 1) {
@@ -427,8 +459,9 @@ test(
           { timeout: 4000 },
         );
       }
-      await page.waitForTimeout(1000);
+      await frames(page);
       assert.equal(await breathIndex(page), 70);
+      await lineSettled(page);
 
       await backSeries(page, "justAbove", BACKS);
       assert.equal(await breathIndex(page), 70 - BACKS);
@@ -445,6 +478,7 @@ test(
         );
       }
       assert.equal(await breathIndex(page), 70);
+      await lineSettled(page);
       await backSeries(page, "middle", BACKS);
 
       for (let i = 0; i < BACKS; i += 1) {
