@@ -511,7 +511,7 @@ async function launchBrowser() {
 
 async function devUp() {
   try {
-    const response = await fetch(`${APP}/`);
+    const response = await fetch(`${APP}/`, { signal: AbortSignal.timeout(2000) });
     return response.ok;
   } catch {
     return false;
