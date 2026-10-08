@@ -675,13 +675,19 @@ export function TbrReader({
   breathRef.current = breath;
   keepRef.current = keepCurrent;
 
+  // The gate, the end card, and a re-entry used to force Keep open. Starting
+  // the sit only clears that sheet, so the bar was already up when the page
+  // appeared and stayed up until the first turn. The hourglass is the only
+  // control that opens it. Send and the spine fold the length sheet and
+  // leave an already-open bar alone.
   useEffect(() => {
-    if (together || overlay !== "none") {
-      setBar((state) =>
-        !state.still && !state.navReveal ? state : { still: false, navReveal: false },
-      );
+    if (overlay === "none") return;
+    if (overlay === "send" || overlay === "spine") {
+      setBar((state) => (state.navReveal ? { ...state, navReveal: false } : state));
+      return;
     }
-  }, [together, overlay]);
+    setBar((state) => (state.still && !state.navReveal ? state : closedReaderBar));
+  }, [overlay]);
 
   useEffect(() => {
     if (together || overlay !== "none" || still || navReveal) return;
@@ -1463,7 +1469,7 @@ export function TbrReader({
         "frame-screen reader-frame bg-paper text-ink",
         daylight.className,
         together && "together-lock",
-        still && overlay === "none" && "still",
+        still && "still",
       )}
       style={daylight.style}
       data-daylight={daylight.active ? daylight.sample.phase : "off"}

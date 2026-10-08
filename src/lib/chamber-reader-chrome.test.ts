@@ -12,8 +12,8 @@ test("reader lookback sits on scene boundaries", () => {
 test("a complete book opens every spine chapter", () => {
   assert.match(reader, /spineChapters\(work, index, workIsComplete\(work\.id\)/);
   const spine = reader.slice(
-    reader.indexOf('overlay === "spine"'),
-    reader.indexOf('overlay === "sitting-end"'),
+    reader.indexOf('{overlay === "spine"'),
+    reader.indexOf('{overlay === "sitting-end"'),
   );
   assert.match(spine, /disabled=\{!item\.open\}/);
   assert.doesNotMatch(spine, /start <= index/);
@@ -32,6 +32,8 @@ test("a page tap does not bring the Keep bar back", () => {
   assert.doesNotMatch(reader, /closest\("\[data-reader-text\]"\)/);
   assert.match(reader, /reduceReaderBar\(state, "page"\)/);
   assert.match(reader, /reduceReaderBar\(state, "hourglass"\)/);
+  assert.doesNotMatch(reader, /still:\s*false,\s*navReveal:\s*false/);
+  assert.match(reader, /still && "still"/);
   const goTo = reader.slice(reader.indexOf("function goTo("), reader.indexOf("function advance("));
   assert.doesNotMatch(goTo, /setStill|setBar|reduceReaderBar/);
 });
@@ -77,10 +79,9 @@ test("sand-run sheet Again restarts the sit as an equal pair with Continue", () 
   assert.ok(hideAt > -1, "Again must dismiss the sand-run sheet");
   assert.ok(restartAt < hideAt, "restart the clock before hiding the sheet");
 
-  const sheet = reader.slice(
-    reader.indexOf('className="sand-cue"'),
-    reader.indexOf('overlay === "send"'),
-  );
+  const cueAt = reader.indexOf('className="sand-cue"');
+  assert.ok(cueAt > -1, "sand-cue sheet missing");
+  const sheet = reader.slice(cueAt, reader.indexOf('{overlay === "send"', cueAt));
   assert.match(sheet, /className="sand-cue-actions"/);
   assert.match(sheet, /onClick=\{sitContinue\}/);
   assert.match(sheet, /onClick=\{sitAgain\}/);
@@ -117,7 +118,7 @@ test("Send Share uses a local deep link and native share, not a blocking phone p
     assert.match(sendFn, /liveBackendEnabled/);
   }
   const sheet = reader.slice(
-    reader.indexOf('overlay === "send"'),
+    reader.indexOf('{overlay === "send"'),
     reader.indexOf("export const ChamberReader"),
   );
   assert.match(sheet, /Friend's phone — for later/);
