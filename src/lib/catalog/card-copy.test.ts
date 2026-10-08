@@ -2478,3 +2478,85 @@ test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => 
     assert.ok(countryFor(work!), id);
   }
 });
+
+/**
+ * OPEN-FIX: a card is never a contents line, a note, a title-page line or a
+ * dedication, and a fresh Sit never opens on one. These cards still open on a
+ * printed heading or editorial introduction and wait on an editorial call
+ * (scene structure, not just the card): `id` → why.
+ */
+const CARD_APPARATUS_PENDING: Readonly<Record<string, string>> = {
+  "red-chamber": "translator's Preface sits in the scene titled Book I; needs the Book I heading moved to the chapters",
+  "drum-taps": "editorial Introduction sits in a scene titled from a newspaper supplement; poem scenes are titled by stray lines",
+  she: "Haggard's fictional editor's Introduction is part of the novel; card is its heading",
+  "toward-the-gulf":
+    "card is the tail of the contents list, filed as the scene Draw the Sword, O Republic, whose poem is bound inside another scene; needs a re-bind",
+};
+const CARD_APPARATUS =
+  /^(?:Chap\.|Contents\b|Table of Contents\b|Page\b|N\.\s?B\.)|^(?:Preface|Introduction|Note|In Memoriam|Dedication|Contents)\.?$/i;
+
+/** A heading-like card, or a long all-caps run (a contents list or title-page line). */
+function isApparatusCard(card: string) {
+  const letters = card.replace(/[^A-Za-z]/g, "");
+  const shouting = card.length > 100 && letters.length > 0 && letters.replace(/[^A-Z]/g, "").length / letters.length > 0.9;
+  return CARD_APPARATUS.test(card) || shouting;
+}
+
+test("OPEN-FIX: no card is a contents, note, title-page or dedication line", () => {
+  const hits: string[] = [];
+  for (const work of SHELF) {
+    const card = work.opening ?? "";
+    if (!isApparatusCard(card) || work.id in CARD_APPARATUS_PENDING) continue;
+    hits.push(`${work.id}: ${card.slice(0, 80)}`);
+  }
+  assert.deepEqual(hits, []);
+  for (const id of Object.keys(CARD_APPARATUS_PENDING)) {
+    const card = SHELF.find((item) => item.id === id)!.opening ?? "";
+    assert.ok(isApparatusCard(card), `${id} is fixed; drop it from CARD_APPARATUS_PENDING`);
+  }
+});
+
+test("OPEN-FIX: The House of the Dead opens on its first chapter, contents cut", () => {
+  const full = textWork("the-house-of-the-dead") as Work;
+  const work = SHELF.find((item) => item.id === "the-house-of-the-dead")!;
+  for (const breath of full.breaths) {
+    assert.doesNotMatch(breath.text, /^Chap\. Page$|TEN YEARS A CONVICT 1 |THE HOSPITAL 194 /, breath.id);
+  }
+  assert.equal(full.scenes.length, 22);
+  assert.equal(full.scenes[0]!.title, "Part I · Chapter I");
+  assert.equal(full.scenes[12]!.title, "Part II · Chapter I");
+  assert.equal(full.scenes.at(-1)!.title, "Part II · Chapter X");
+  assert.equal(openingBreathIndex(full), 0);
+  assert.equal(full.breaths[0]!.text, "Ten Years a Convict");
+  assert.equal(
+    work.opening,
+    "In the midst of the steppes, of the mountains, of the impenetrable forests of the desert regions of Siberia, one meets from time to time with little towns of a thousand or two inhabitants, built entirely of wood, very ugly, with two churches--one in the centre of the town, the other in the cemetery--in a word, towns which bear much more resemblance to a good-sized village in the suburbs of Moscow than to a town properly so called.",
+  );
+  assert.ok(full.breaths[1]!.text.startsWith(work.opening!));
+  assert.equal(work.breaths, full.breaths.length);
+  assert.equal(work.minutes, full.minutes);
+});
+
+test("OPEN-FIX: a fresh Sit skips a leading note or dedication and the card is the first real line", () => {
+  const cases: Array<[string, string, string]> = [
+    ["pelle-the-conqueror", "Note", "It was dawn on the first of May, 1877."],
+    [
+      "the-ballad-of-reading-gaol",
+      "In Memoriam",
+      "He did not wear his scarlet coat, For blood and wine are red, And blood and wine were on his hands When they found him with the dead, The poor dead woman whom he loved, And murdered in her bed.",
+    ],
+    ["the-persian-mystics-jalalu-d-din-rumi", "Dedication", "I am silent. Speak Thou, O Soul of Soul of Soul, / From desire of whose Face every atom grew articulate."],
+  ];
+  for (const [id, frontTitle, card] of cases) {
+    const full = textWork(id) as Work;
+    const work = SHELF.find((item) => item.id === id)!;
+    assert.equal(full.scenes[0]!.title, frontTitle, id);
+    assert.equal(full.scenes[0]!.front, true, `${id} ${frontTitle} is front matter`);
+    const start = openingBreathIndex(full);
+    assert.notEqual(full.breaths[start]!.sceneId, full.scenes[0]!.id, `${id} fresh Sit skips ${frontTitle}`);
+    assert.equal(work.opening, card, id);
+    assert.ok(opensOnFirstLine(full, card), `${id} card is the first real line`);
+  }
+  const pym = SHELF.find((item) => item.id === "the-narrative-of-arthur-gordon-pym-of-nantucket")!;
+  assert.ok((textWork(pym.id) as Work).breaths[0]!.text.startsWith(pym.opening!), "Pym card is the first printed line, not the title page");
+});
