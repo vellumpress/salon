@@ -1009,6 +1009,11 @@ function assetChunkId(filename) {
   return filename.replace(/-[A-Za-z0-9_-]{8}\.(?:js|mjs|css)$/i, "");
 }
 
+/** The breath-id map is a lazy chunk. Install must not wait on it. */
+function isLazyRemapChunk(filename) {
+  return assetChunkId(filename) === "at-remap";
+}
+
 const STATIC_SHELL_FILES = [
   "manifest.webmanifest",
   "favicon.ico",
@@ -1024,7 +1029,9 @@ const STATIC_SHELL_FILES = [
  * Every hashed script and stylesheet the build emitted, plus same-origin
  * files the shell requests outside `/assets/` (manifest, icons, favicon).
  * Book texts are `import.meta.glob` chunks under `/salon/assets/`, so they
- * are in `precache`, not a separate JSON fetch.
+ * are in `precache`, not a separate JSON fetch. The breath-id map
+ * (`at-remap-*.js`) is in that fill too, after install, so a cold launch
+ * does not wait on it. The first fetch is also stored by the asset cache.
  * @param {string} destDir
  */
 export function collectShellPrecache(destDir) {
@@ -1037,13 +1044,21 @@ export function collectShellPrecache(destDir) {
       const path = `/salon/assets/${name}`;
       let size = 0;
       try { size = statSync(join(assetsDir, name)).size; } catch { size = 0; }
-      rows.push({ path, size, book: bookIds.has(assetChunkId(name)) });
+      const id = assetChunkId(name);
+      rows.push({
+        path,
+        size,
+        book: bookIds.has(id),
+        lazy: isLazyRemapChunk(name),
+      });
     }
   }
   const precache = rows.map((row) => row.path).sort();
-  const boot = rows.filter((row) => !row.book).map((row) => row.path).sort();
-  const books = rows.filter((row) => row.book).sort((a, b) => a.size - b.size || (a.path < b.path ? -1 : 1));
-  const fill = boot.concat(books.map((row) => row.path));
+  const boot = rows.filter((row) => !row.book && !row.lazy).map((row) => row.path).sort();
+  const later = rows
+    .filter((row) => row.book || row.lazy)
+    .sort((a, b) => a.size - b.size || (a.path < b.path ? -1 : 1));
+  const fill = boot.concat(later.map((row) => row.path));
   const extras = [];
   for (const name of STATIC_SHELL_FILES) {
     if (existsSync(join(destDir, name))) extras.push(`/salon/${name}`);

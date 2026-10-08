@@ -32,6 +32,38 @@ test("normalizeKeptText folds whitespace, quotes, and italics markup", () => {
   assert.equal(normalizeKeptText("She said <em>hello</em>."), "She said hello.");
 });
 
+test("normalizeKeptText ignores note markers and a leading Note label", () => {
+  assert.equal(
+    normalizeKeptText('asked a *barin*[1] of about forty'),
+    "asked a barin of about forty",
+  );
+  assert.equal(normalizeKeptText("word [1]."), normalizeKeptText("word."));
+  assert.equal(normalizeKeptText("Note: Yasen was the village."), "Yasen was the village.");
+  assert.equal(normalizeKeptText("[1] Yasen was the village."), "Yasen was the village.");
+  assert.equal(
+    normalizeKeptText("[12] Yasen was the village."),
+    normalizeKeptText("Note: Yasen was the village."),
+  );
+});
+
+test("a saved sentence re-anchors after its note marker becomes a Note line", () => {
+  const moved = anchorKeptLine(
+    { id: "s0-2", text: "She asked a *barin*[1] of about forty." },
+    [
+      { id: "s0-2", text: "Note: a gentleman." },
+      { id: "s0-3", text: "She asked a *barin* of about forty." },
+    ],
+  );
+  assert.equal(moved.breathId, "s0-3");
+  assert.equal(moved.updated, true);
+
+  const note = anchorKeptLine({ id: "old-note", text: "[1] Yasen was the village." }, [
+    { id: "s24-9", text: "Note: Yasen was the village." },
+  ]);
+  assert.equal(note.breathId, "s24-9");
+  assert.equal(note.index, 0);
+});
+
 test("saving a line stores the sentence, the book, and when it was kept", () => {
   const kept = toggleKeptList("passing", [], "s0-0", {
     text: "  She wrote the letter. ",
