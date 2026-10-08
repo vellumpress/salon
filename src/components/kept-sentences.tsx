@@ -7,7 +7,10 @@ import { fillClass, fillInk, mosaicFills } from "@/lib/mondrian";
 import { cn } from "@/lib/utils";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { breathRemapLoaded, loadBreathRemap, readBreathRemap } from "@/lib/breath-remap";
+import { REBOUND_FROM_COUNT } from "@/lib/rebind-guard";
 import {
+  asKeptRecord,
+  keptBreathId,
   keptIdsNeedRemap,
   keptProgressKey,
   resolveKeptOpen,
@@ -59,7 +62,7 @@ export function useKeptLines(
     function warmRemap() {
       if (breathRemapLoaded()) return;
       const missing = workIds.some((id) =>
-        keptIdsNeedRemap(progress[id]?.kept, peekWork(id)?.breaths),
+        keptIdsNeedRemap(progress[id]?.kept, peekWork(id)?.breaths, id, REBOUND_FROM_COUNT),
       );
       if (!missing) return;
       void loadBreathRemap().then(() => {
@@ -95,27 +98,31 @@ async function openKeptLine(
 ) {
   try {
     const load = (id: string) => loadWork(id);
+    const stored = useTbr.getState().progress[target.workId]?.kept;
+    const entry = Array.isArray(stored)
+      ? stored.find((item) => keptBreathId(item) === (target.breathId ?? ""))
+      : undefined;
+    const record = asKeptRecord(entry);
+    // An id-only save has no sentence to match. Text painted from the live
+    // id can be a reused paragraph; let the remap choose.
+    const text = record?.text ?? (entry ? "" : (target.text ?? ""));
     let remap = readBreathRemap();
     let opened = await resolveKeptOpen({
       workId: target.workId,
       breathId: target.breathId,
-      text: target.text,
+      text,
       remap,
       load,
     });
     if (target.breathId && !breathRemapLoaded()) {
-      const work = await load(target.workId);
-      const live = work?.breaths.some((breath) => breath.id === target.breathId);
-      if (work && !live) {
-        remap = await loadBreathRemap();
-        opened = await resolveKeptOpen({
-          workId: target.workId,
-          breathId: target.breathId,
-          text: target.text,
-          remap,
-          load,
-        });
-      }
+      remap = await loadBreathRemap();
+      opened = await resolveKeptOpen({
+        workId: target.workId,
+        breathId: target.breathId,
+        text,
+        remap,
+        load,
+      });
     }
     if (opened.nextId && target.breathId && opened.nextId !== target.breathId) {
       useTbr.getState().retargetKept(target.workId, target.breathId, opened.nextId);
