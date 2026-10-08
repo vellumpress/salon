@@ -10,6 +10,7 @@ import { fillOf, type Fill } from "@/lib/mondrian";
 import { isOffline } from "@/lib/net";
 import { getSupabase } from "@/lib/supabase";
 import { CLUBS } from "@/lib/social";
+import { mergeClubMessages } from "./club-flow";
 import {
   asClubFill,
   asClubId,
@@ -78,8 +79,19 @@ export type ClubMessage = {
   id: number;
   clubId: string;
   userId: string;
+  handle: string;
   body: string;
   createdAt: string;
+};
+
+export type ClubMemberView = {
+  userId: string;
+  handle: string;
+  name: string;
+  joinedAt: string;
+  breathIndex: number | null;
+  place: string;
+  workId: string;
 };
 
 const MIGRATION = "supabase/migrations/20260929180000_clubs.sql";
@@ -248,11 +260,16 @@ function raise(error: unknown): never {
   throw new Error(clubDirectoryMessage(error));
 }
 
+export async function hostedUserId(): Promise<string | null> {
+  if (isOffline()) return null;
+  const { data, error } = await getSupabase().auth.getSession();
+  if (error) return null;
+  return data.session?.user?.id ?? null;
+}
+
 async function requireUserId() {
   if (isOffline()) throw new Error("Offline");
-  const { data, error } = await getSupabase().auth.getSession();
-  if (error) raise(error);
-  const id = data.session?.user?.id;
+  const id = await hostedUserId();
   if (!id) throw new Error("Sign in to open a club.");
   return id;
 }
@@ -347,15 +364,19 @@ export async function addClubSession(input: {
   if (!club) throw new Error("This invite would not come.");
   const startsAt = new Date(input.startsAt);
   if (Number.isNaN(startsAt.getTime())) throw new Error("Pick a day and time in Eastern time.");
-  const nextId = club.sessions.reduce((max, session) => Math.max(max, session.id), 0) + 1;
   const serial = serializeView(club.serializePlanId, club.startEpisode, club.sessions.length);
+  const label = input.label?.trim() || serial.serializeLabel || "";
+  const rpc = await getSupabase().rpc("add_club_sitting", {
+    p_club: club.id,
+    p_starts_at: startsAt.toISOString(),
+    p_label: label,
+  });
+  if (!rpc.error && rpc.data && typeof rpc.data === "object") return toClub(rpc.data as ClubRecord);
+  if (rpc.error && rpc.error.code !== "PGRST202") raise(rpc.error);
+  const nextId = club.sessions.reduce((max, session) => Math.max(max, session.id), 0) + 1;
   const sittings = [
     ...club.sessions,
-    {
-      id: nextId,
-      startsAt: startsAt.toISOString(),
-      label: input.label?.trim() || serial.serializeLabel || "",
-    },
+    { id: nextId, startsAt: startsAt.toISOString(), label },
   ];
   const { data, error } = await getSupabase()
     .from("clubs")
@@ -365,6 +386,16 @@ export async function addClubSession(input: {
     .single();
   if (error) raise(error);
   return toClub(data as ClubRecord);
+}
+
+export async function leaveClub(clubId: string): Promise<void> {
+  const parsed = asClubId(clubId);
+  if (!parsed) return;
+  await requireUserId();
+  const { error } = await getSupabase().rpc("leave_club", { p_club: parsed });
+  if (!error) return;
+  if (error.code === "PGRST202") return;
+  raise(error);
 }
 
 export async function joinClubByInvite(token: string): Promise<BookClubView | null> {
@@ -383,14 +414,35 @@ function toMessage(row: {
   user_id: string;
   body: string;
   created_at: string;
+  handle?: string;
 }): ClubMessage {
   return {
     id: Number(row.id),
     clubId: row.club_id,
     userId: row.user_id,
+    handle: row.handle ?? "",
     body: row.body,
     createdAt: asIso(row.created_at),
   };
+}
+
+async function handlesFor(userIds: string[]): Promise<Map<string, { handle: string; name: string }>> {
+  const ids = [...new Set(userIds.filter(Boolean))].slice(0, 40);
+  const map = new Map<string, { handle: string; name: string }>();
+  if (ids.length === 0) return map;
+  const { data, error } = await getSupabase()
+    .from("profiles")
+    .select("id, handle, display_name")
+    .in("id", ids);
+  if (error || !data) return map;
+  for (const row of data) {
+    const id = typeof row.id === "string" ? row.id : "";
+    const handle = typeof row.handle === "string" ? row.handle : "";
+    if (!id || !handle) continue;
+    const name = typeof row.display_name === "string" ? row.display_name : "";
+    map.set(id, { handle, name });
+  }
+  return map;
 }
 
 export async function listClubMessages(clubId: string): Promise<ClubMessage[]> {
@@ -406,7 +458,76 @@ export async function listClubMessages(clubId: string): Promise<ClubMessage[]> {
     if (clubDirectoryMessage(error).includes(MIGRATION)) return [];
     raise(error);
   }
-  return (data ?? []).map((row) => toMessage(row));
+  const rows = (data ?? []).map((row) => toMessage(row));
+  const names = await handlesFor(rows.map((row) => row.userId));
+  return rows.map((row) => {
+    const who = names.get(row.userId);
+    return who ? { ...row, handle: who.handle } : row;
+  });
+}
+
+export async function listClubRoster(clubId: string): Promise<ClubMemberView[]> {
+  const parsed = asClubId(clubId);
+  if (!parsed || isOffline()) return [];
+  const members = await getSupabase()
+    .from("club_members")
+    .select("user_id, joined_at")
+    .eq("club_id", parsed);
+  if (members.error || !members.data) return [];
+  const ids = members.data.map((row) => String(row.user_id ?? "")).filter(Boolean);
+  const names = await handlesFor(ids);
+  const progress = await getSupabase()
+    .from("club_progress")
+    .select("user_id, work_id, breath_index, place")
+    .eq("club_id", parsed);
+  const byUser = new Map<string, { workId: string; breathIndex: number; place: string }>();
+  if (!progress.error) {
+    for (const row of progress.data ?? []) {
+      const id = String(row.user_id ?? "");
+      if (!id) continue;
+      byUser.set(id, {
+        workId: typeof row.work_id === "string" ? row.work_id : "",
+        breathIndex: Number(row.breath_index) || 0,
+        place: typeof row.place === "string" ? row.place : "",
+      });
+    }
+  }
+  return members.data.map((row) => {
+    const userId = String(row.user_id ?? "");
+    const who = names.get(userId);
+    const seat = byUser.get(userId);
+    return {
+      userId,
+      handle: who?.handle ?? "",
+      name: who?.name ?? "",
+      joinedAt: asIso(String(row.joined_at ?? "")),
+      breathIndex: seat ? seat.breathIndex : null,
+      place: seat?.place ?? "",
+      workId: seat?.workId ?? "",
+    };
+  });
+}
+
+export async function publishClubProgress(
+  clubId: string,
+  input: { workId: string; breathIndex: number; place: string },
+): Promise<void> {
+  const parsed = asClubId(clubId);
+  if (!parsed || isOffline() || !input.workId) return;
+  const userId = await hostedUserId();
+  if (!userId) return;
+  const { error } = await getSupabase().from("club_progress").upsert(
+    {
+      club_id: parsed,
+      user_id: userId,
+      work_id: input.workId,
+      breath_index: Math.max(0, Math.min(999999, Math.floor(input.breathIndex))),
+      place: input.place.slice(0, 80),
+      updated_at: new Date().toISOString(),
+    },
+    { onConflict: "club_id,user_id" },
+  );
+  if (error && error.code !== "PGRST205" && error.code !== "42P01") return;
 }
 
 export async function postClubMessage(clubId: string, body: string): Promise<ClubMessage> {
@@ -426,12 +547,14 @@ export async function postClubMessage(clubId: string, body: string): Promise<Clu
 export function subscribeClubMessages(clubId: string, onInsert: (message: ClubMessage) => void) {
   const parsed = asClubId(clubId);
   if (!parsed) return () => undefined;
+  let closed = false;
   const channel = getSupabase()
-    .channel(`club-messages:${parsed}`)
+    .channel(`club-messages:${parsed}:${Math.random().toString(36).slice(2, 8)}`)
     .on(
       "postgres_changes",
       { event: "INSERT", schema: "public", table: "club_messages", filter: `club_id=eq.${parsed}` },
       (payload) => {
+        if (closed) return;
         const row = payload.new as {
           id: number;
           club_id: string;
@@ -439,11 +562,20 @@ export function subscribeClubMessages(clubId: string, onInsert: (message: ClubMe
           body: string;
           created_at: string;
         };
-        if (row?.body) onInsert(toMessage(row));
+        if (!row?.body) return;
+        const message = toMessage(row);
+        void handlesFor([message.userId]).then((names) => {
+          if (closed) return;
+          const who = names.get(message.userId);
+          onInsert(who ? { ...message, handle: who.handle } : message);
+        });
       },
     )
     .subscribe();
   return () => {
+    closed = true;
     void getSupabase().removeChannel(channel);
   };
 }
+
+export { mergeClubMessages };

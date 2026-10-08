@@ -108,6 +108,8 @@ type TbrState = {
   handle: string;
   contacts: FriendContact[];
   joined: string[];
+  /** Clubs this phone left. A visit must not quietly rejoin them. */
+  leftClubs: string[];
   clubInvites: Record<string, string>;
   lastShuffle: string | null;
   taste: string;
@@ -170,6 +172,7 @@ type TbrState = {
   removeContact: (id: string) => void;
   toggleJoin: (clubId: string) => void;
   joinClub: (clubId: string) => void;
+  leaveClubLocal: (clubId: string) => void;
   rememberInvite: (clubId: string, token: string) => void;
   toggleFavorite: (workId: string) => void;
   setFavorites: (ids: string[]) => void;
@@ -419,6 +422,7 @@ export const useTbr = create<TbrState>()(
       handle: "",
       contacts: [],
       joined: [],
+      leftClubs: [],
       clubInvites: {},
       lastShuffle: null,
       taste: "",
@@ -595,21 +599,40 @@ export const useTbr = create<TbrState>()(
       toggleJoin: (clubId) =>
         set((state) => {
           const joined = state.joined ?? [];
+          const leftClubs = state.leftClubs ?? [];
           const adding = !joined.includes(clubId);
           const day = dayKey(Date.now());
           return {
             joined: adding ? [...joined, clubId] : joined.filter((id) => id !== clubId),
+            leftClubs: adding
+              ? leftClubs.filter((id) => id !== clubId)
+              : leftClubs.includes(clubId)
+                ? leftClubs
+                : [...leftClubs, clubId].slice(-40),
             ...(adding ? { clubTouchesByDay: bumpDayCount(state.clubTouchesByDay, day, 1) } : {}),
           };
         }),
       joinClub: (clubId) =>
         set((state) => {
           const joined = state.joined ?? [];
-          if (joined.includes(clubId)) return {};
+          const leftClubs = (state.leftClubs ?? []).filter((id) => id !== clubId);
+          const already = joined.includes(clubId) && leftClubs.length === (state.leftClubs ?? []).length;
+          if (already) return {};
           const day = dayKey(Date.now());
           return {
-            joined: [...joined, clubId],
-            clubTouchesByDay: bumpDayCount(state.clubTouchesByDay, day, 1),
+            joined: joined.includes(clubId) ? joined : [...joined, clubId],
+            leftClubs,
+            ...(joined.includes(clubId)
+              ? {}
+              : { clubTouchesByDay: bumpDayCount(state.clubTouchesByDay, day, 1) }),
+          };
+        }),
+      leaveClubLocal: (clubId) =>
+        set((state) => {
+          const leftClubs = state.leftClubs ?? [];
+          return {
+            joined: (state.joined ?? []).filter((id) => id !== clubId),
+            leftClubs: leftClubs.includes(clubId) ? leftClubs : [...leftClubs, clubId].slice(-40),
           };
         }),
       rememberInvite: (clubId, token) =>
@@ -918,6 +941,7 @@ export const useTbr = create<TbrState>()(
         handle: state.handle,
         contacts: state.contacts,
         joined: state.joined,
+        leftClubs: state.leftClubs,
         clubInvites: state.clubInvites,
         lastShuffle: state.lastShuffle,
         taste: state.taste,

@@ -13,6 +13,7 @@ import {
 import { asShareToken } from "@/lib/share-codec";
 import { salonShareText, salonShareTitle } from "@/lib/site";
 import { formatHandle, normalizeHandle } from "@/lib/social";
+import { asPairCode } from "@/lib/pair";
 import { shareOrCopy } from "@/lib/shuffle";
 import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
 import { useTbr } from "@/lib/store";
@@ -181,7 +182,11 @@ function HostedSitPage() {
           <Link
             to="/read/$workId"
             params={{ workId: room.workId }}
-            search={{ sit: room.minutes, hosted: encodeHostedSit(room) }}
+            search={{
+              sit: room.minutes,
+              pair: asPairCode(room.id),
+              hosted: encodeHostedSit(room),
+            }}
             className="flex h-14 items-center justify-center bg-ink font-sans text-sm text-paper"
           >
             {ghost ? "Open the work" : "Sit"}

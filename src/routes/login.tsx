@@ -9,6 +9,7 @@ import {
 import { ReaderAuthForm } from "@/components/reader-auth-form";
 import { Wordmark } from "@/components/wordmark";
 import { liveAuthAvailable, withBase } from "@/lib/site";
+import { safeAuthNext } from "@/lib/auth-return";
 import { confirmEmailMessage } from "@/lib/remote-auth";
 import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { cn } from "@/lib/utils";
@@ -19,10 +20,13 @@ type Door = "reader" | "staff";
 const STAFF_DOMAIN = "@vellum.press";
 
 export const Route = createFileRoute("/login")({
-  validateSearch: (search: Record<string, unknown>): { door?: Door } => {
-    if (search.door === "staff") return { door: "staff" };
-    if (search.door === "reader") return { door: "reader" };
-    return {};
+  validateSearch: (search: Record<string, unknown>): { door?: Door; next?: string } => {
+    const next: { door?: Door; next?: string } = {};
+    if (search.door === "staff") next.door = "staff";
+    if (search.door === "reader") next.door = "reader";
+    const back = safeAuthNext(search.next);
+    if (back) next.next = back;
+    return next;
   },
   component: LoginPage,
 });
@@ -58,7 +62,8 @@ function LoginHeader() {
 }
 
 function LoginPage() {
-  const { door } = Route.useSearch();
+  const { door, next } = Route.useSearch();
+  const after = next || (door === "staff" ? "/desk" : "/profile");
   const { identity, isPending, hasAccounts, storeHandle, createAccount, signIn } =
     useReaderSession();
   const [mode, setMode] = useState<ReaderAuthMode>(hasAccounts ? "in" : "up");
@@ -91,6 +96,10 @@ function LoginPage() {
   }, [door]);
 
   if (leave && identity && !busy && !hold) {
+    if (next) {
+      window.location.replace(withBase(next));
+      return null;
+    }
     return <Navigate to={door === "staff" ? "/desk" : "/profile"} />;
   }
 
@@ -107,7 +116,7 @@ function LoginPage() {
         return;
       }
       setHold(false);
-      window.location.assign(withBase("/profile"));
+      window.location.assign(withBase(after));
     } catch (err) {
       setLeave(false);
       setHold(false);
@@ -129,7 +138,7 @@ function LoginPage() {
         return;
       }
       setHold(false);
-      window.location.assign(withBase("/profile"));
+      window.location.assign(withBase(after));
     } catch (err) {
       setLeave(false);
       setHold(false);

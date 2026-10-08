@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import {
   clubInviteUrl,
   getClubByInvite,
+  hostedUserId,
   joinClubByInvite,
   type BookClubView,
 } from "@/lib/clubs";
@@ -25,10 +26,12 @@ function InviteLanding() {
   const rememberInvite = useTbr((s) => s.rememberInvite);
   const [state, setState] = useState<
     | { status: "loading" }
+    | { status: "offline" }
     | { status: "missing" }
-    | { status: "ready"; club: BookClubView }
+    | { status: "ready"; club: BookClubView; signedIn: boolean }
   >({ status: "loading" });
   const [copied, setCopied] = useState(false);
+  const [retry, setRetry] = useState(0);
 
   useEffect(() => {
     let live = true;
@@ -38,7 +41,7 @@ function InviteLanding() {
       return;
     }
     if (typeof navigator !== "undefined" && navigator.onLine === false) {
-      setState({ status: "missing" });
+      setState({ status: "offline" });
       return;
     }
     void getClubByInvite(invite)
@@ -48,22 +51,37 @@ function InviteLanding() {
           setState({ status: "missing" });
           return;
         }
-        joinClub(club.id);
         rememberInvite(club.id, club.inviteToken);
-        setState({ status: "ready", club });
+        const userId = await hostedUserId();
+        if (!live) return;
+        if (!userId) {
+          setState({ status: "ready", club, signedIn: false });
+          return;
+        }
         try {
           await joinClubByInvite(club.inviteToken);
-        } catch {
-          /* local join still holds */
+          joinClub(club.id);
+          setState({ status: "ready", club, signedIn: true });
+        } catch (err) {
+          const message = err instanceof Error ? err.message : "";
+          setState({ status: "ready", club, signedIn: !/sign in/i.test(message) });
         }
       })
-      .catch(() => {
-        if (live) setState({ status: "missing" });
+      .catch((err) => {
+        if (!live) return;
+        const message = err instanceof Error ? err.message : "";
+        setState(/offline/i.test(message) ? { status: "offline" } : { status: "missing" });
       });
     return () => {
       live = false;
     };
-  }, [token, joinClub, rememberInvite]);
+  }, [token, joinClub, rememberInvite, retry]);
+
+  useEffect(() => {
+    const onOnline = () => setRetry((n) => n + 1);
+    window.addEventListener("online", onOnline);
+    return () => window.removeEventListener("online", onOnline);
+  }, []);
 
   if (state.status === "loading") {
     return (
@@ -86,6 +104,32 @@ function InviteLanding() {
     );
   }
 
+  if (state.status === "offline") {
+    return (
+      <div className="frame-screen bg-paper text-ink">
+        <header className="flex shrink-0 items-stretch border-b border-ink">
+          <Link
+            to="/together"
+            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
+          >
+            Together
+          </Link>
+        </header>
+        <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
+          <p className="type-title">This invite</p>
+          <p className="mt-3 font-serif text-lg text-ink/70">Offline. The door will open when you are back.</p>
+          <button
+            type="button"
+            onClick={() => setRetry((n) => n + 1)}
+            className="mt-6 flex h-14 items-center justify-center bg-ink font-sans text-sm text-paper"
+          >
+            Try again
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   if (state.status === "missing") {
     return (
       <div className="frame-screen bg-paper text-ink">
@@ -102,16 +146,14 @@ function InviteLanding() {
             This invite
           </p>
           <p className="mt-3 font-serif text-lg text-ink/70">
-            {typeof navigator !== "undefined" && navigator.onLine === false
-              ? "Offline"
-              : "This invite would not come"}
+            This invite would not come
           </p>
         </div>
       </div>
     );
   }
 
-  const { club } = state;
+  const { club, signedIn } = state;
   const when = club.nextSession ? formatClubWhenLong(club.nextSession.startsAt) : "";
 
   async function share() {
@@ -175,14 +217,24 @@ function InviteLanding() {
             <p className="type-lede">{club.note}</p>
           </div>
         ) : null}
-        <Link
-          to="/read/$workId"
-          params={{ workId: club.workId }}
-          search={clubInviteReadSearch(club)}
-          className="flex h-14 items-center justify-center bg-ink font-sans text-sm text-paper"
-        >
-          Sit together
-        </Link>
+        {signedIn ? (
+          <Link
+            to="/read/$workId"
+            params={{ workId: club.workId }}
+            search={clubInviteReadSearch(club)}
+            className="flex h-14 items-center justify-center bg-ink font-sans text-sm text-paper"
+          >
+            Sit together
+          </Link>
+        ) : (
+          <Link
+            to="/login"
+            search={{ next: `/club/invite/${club.inviteToken}` }}
+            className="flex h-14 items-center justify-center bg-yellow font-sans text-sm text-ink"
+          >
+            Sign in to join. You’ll return here.
+          </Link>
+        )}
         <button
           type="button"
           onClick={() => void share()}

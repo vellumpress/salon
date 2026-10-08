@@ -444,10 +444,10 @@ function FriendsPage() {
                 <span className="type-kicker opacity-80">A room people can join</span>
                 <span className="mt-1 type-lede">Start a book club</span>
               </Link>
-              <button type="button" onClick={() => void invite()} className="friends-action bg-yellow text-ink">
-                <span className="type-kicker opacity-80">Send your @name</span>
-                <span className="mt-1 type-lede">Invite someone to sit</span>
-              </button>
+              <Link to="/shuffle" search={{ together: true }} className="friends-action bg-yellow text-ink">
+                <span className="type-kicker opacity-80">A live page</span>
+                <span className="mt-1 type-lede">Sit with a friend</span>
+              </Link>
             </div>
             <form onSubmit={sendPledge}>
               <Rail label="I'll sit tonight">
