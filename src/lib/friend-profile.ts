@@ -1,5 +1,6 @@
 import { shelfWork } from "./catalog/shelf.ts";
 import { isDeviceImport } from "./import/private.ts";
+import { asKeptRecord, keptBreathId } from "./kept-lines.ts";
 import { lastReadCue, lastReadProgress } from "./continuity.ts";
 import { dayKey } from "./day-key.ts";
 import { contactId, type FriendContact } from "./friends.ts";
@@ -456,18 +457,21 @@ function selfShelfActivity(graph: FriendGraph): FriendActivity[] {
         progress,
       });
     }
-    for (const breathId of item.kept ?? []) {
+    for (const entry of item.kept ?? []) {
+      const breathId = keptBreathId(entry);
       if (!breathId) continue;
+      const stored = asKeptRecord(entry);
       items.push({
         id: `kept:${workId}:${breathId}`,
-        at: item.lastOpenedAt || 0,
+        at: stored?.savedAt || item.lastOpenedAt || 0,
         kind: "kept",
         label: "Kept",
-        summary: `kept a line from ${meta.workTitle || workId}`,
+        summary: `kept a line from ${stored?.title || meta.workTitle || workId}`,
         workId: meta.workId,
-        workTitle: meta.workTitle,
-        author: meta.author,
+        workTitle: stored?.title || meta.workTitle,
+        author: stored?.author || meta.author,
         breathId,
+        line: stored?.text || undefined,
       });
     }
   }

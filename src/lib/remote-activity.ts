@@ -1,5 +1,6 @@
 import { shelfWork } from "./catalog/shelf.ts";
 import { isDeviceImport } from "./import/private.ts";
+import { asKeptRecord, keptBreathId } from "./kept-lines.ts";
 import {
   openReadingFromActivity,
   type FriendActivity,
@@ -92,14 +93,22 @@ export function draftsFromLocal(input: LocalHistory): ActivityDraft[] {
         payload: bookPayload(meta, `finished ${meta.workTitle || workId}`),
       });
     }
-    for (const breathId of item.kept ?? []) {
+    for (const entry of item.kept ?? []) {
+      const breathId = keptBreathId(entry);
       if (!breathId) continue;
+      const stored = asKeptRecord(entry);
+      const extra: Record<string, string | number> = { breathId };
+      if (stored?.text) extra.line = stored.text;
       drafts.push({
         key: `kept:${workId}:${breathId}`,
         kind: "kept",
         bookId: meta.workId,
-        at: item.lastOpenedAt || item.completedAt || 0,
-        payload: bookPayload(meta, `kept a line from ${meta.workTitle || workId}`, { breathId }),
+        at: stored?.savedAt || item.lastOpenedAt || item.completedAt || 0,
+        payload: bookPayload(
+          meta,
+          `kept a line from ${stored?.title || meta.workTitle || workId}`,
+          extra,
+        ),
       });
     }
   }

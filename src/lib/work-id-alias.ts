@@ -1,3 +1,5 @@
+import { mergeKept, type KeptStored } from "./kept-lines.ts";
+
 /**
  * Retired catalog ids. Saved progress, Kept lines, favorites, and share
  * links may still name the old id. Resolve them to the live book.
@@ -13,7 +15,7 @@ export function canonicalWorkId(id: string): string {
 
 type ProgressRow = {
   lastOpenedAt?: number;
-  kept?: string[];
+  kept?: KeptStored[];
 };
 
 type AliasState = {
@@ -28,12 +30,12 @@ type AliasState = {
 };
 
 function preferProgress(current: ProgressRow | undefined, incoming: ProgressRow): ProgressRow {
-  if (!current) return { ...incoming, kept: [...(incoming.kept ?? [])] };
+  if (!current) return { ...incoming, kept: mergeKept(incoming.kept, []) };
   const winner = (incoming.lastOpenedAt ?? 0) > (current.lastOpenedAt ?? 0) ? incoming : current;
   const other = winner === incoming ? current : incoming;
   return {
     ...winner,
-    kept: [...new Set([...(winner.kept ?? []), ...(other.kept ?? [])])],
+    kept: mergeKept(winner.kept, other.kept),
   };
 }
 

@@ -1,78 +1,58 @@
-import { Link } from "@tanstack/react-router";
-import { useEffect, useMemo, useState } from "react";
+import { Link, useNavigate } from "@tanstack/react-router";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { CollectionHeader } from "@/components/collection-header";
 import { SalonCardShare } from "@/components/salon-card-share";
-import { keptRefs } from "@/lib/continuity";
 import { YOU_PREVIEW } from "@/lib/favorites";
-import { boardWork, fillClass, fillInk, mosaicFills } from "@/lib/mondrian";
+import { fillClass, fillInk, mosaicFills } from "@/lib/mondrian";
 import { cn } from "@/lib/utils";
 import { shelfWork } from "@/lib/catalog/shelf";
-import { loadWork, peekWork } from "@/lib/works";
-import type { WorkProgress } from "@/lib/store";
+import { readBreathRemap } from "@/lib/breath-remap";
+import {
+  keptProgressKey,
+  resolveKeptOpen,
+  visibleKeptLines,
+  type VisibleKeptLine,
+} from "@/lib/kept-lines";
+import { isDeviceImport } from "@/lib/import/private";
+import { loadWork, peekWork, workIsComplete } from "@/lib/works";
+import { useTbr, type WorkProgress } from "@/lib/store";
 
-export type KeptLine = {
-  workId: string;
-  breathId: string;
-  text: string;
-  title: string;
-  author: string;
-  at: number;
-};
-
-function lineFromWork(
-  workId: string,
-  breathId: string,
-  work: { title: string; author: string; breaths: { id: string; text: string }[] } | undefined,
-): KeptLine | null {
-  const meta = shelfWork(workId) ?? boardWork(workId);
-  const at = work?.breaths.findIndex((breath) => breath.id === breathId) ?? -1;
-  const text = at >= 0 ? (work?.breaths[at]?.text ?? "").trim() : "";
-  if (!text) return null;
-  return {
-    workId,
-    breathId,
-    text,
-    title: work?.title ?? meta?.title ?? workId,
-    author: work?.author ?? meta?.author ?? "",
-    at,
-  };
-}
+export type KeptLine = VisibleKeptLine;
 
 export function useKeptLines(
   progress: Record<string, WorkProgress>,
   hydrated: boolean,
   limit = 24,
-): KeptLine[] {
-  const keptKey = useMemo(
-    () =>
-      Object.entries(progress)
-        .map(([id, item]) => `${id}:${(item.kept ?? []).join(",")}`)
-        .sort()
-        .join("|"),
-    [progress],
-  );
-  const refs = useMemo(
-    () => (hydrated ? keptRefs(progress, limit) : []),
-    [hydrated, keptKey, progress, limit],
-  );
+): { lines: KeptLine[]; total: number } {
+  const keptKey = useMemo(() => (hydrated ? keptProgressKey(progress) : ""), [hydrated, progress]);
   const [lines, setLines] = useState<KeptLine[]>([]);
+  const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    if (refs.length === 0) {
+    if (!hydrated || !keptKey) {
       setLines([]);
+      setTotal(0);
       return;
     }
     let live = true;
-    const workIds = [...new Set(refs.map((ref) => ref.workId))];
+    const workIds = Object.entries(progress)
+      .filter(([id, item]) => !isDeviceImport(id) && (item.kept?.length ?? 0) > 0)
+      .map(([id]) => id);
 
     function paint() {
       if (!live) return;
-      const next: KeptLine[] = [];
-      for (const ref of refs) {
-        const line = lineFromWork(ref.workId, ref.breathId, peekWork(ref.workId));
-        if (line) next.push(line);
-      }
-      setLines(next);
+      const all = visibleKeptLines(progress, (id) => peekWork(id), {
+        remap: readBreathRemap(),
+        complete: workIsComplete,
+        skip: isDeviceImport,
+        meta: (id) => {
+          const shelf = shelfWork(id);
+          return shelf ? { title: shelf.title, author: shelf.author } : undefined;
+        },
+      });
+      const cap = Number.isFinite(limit) ? Math.max(0, Math.floor(limit)) : all.length;
+      setLines(all.slice(0, cap));
+      setTotal(all.length);
     }
 
     paint();
@@ -87,9 +67,75 @@ export function useKeptLines(
     return () => {
       live = false;
     };
-  }, [refs]);
+  }, [hydrated, keptKey, limit, progress]);
 
-  return lines;
+  return { lines, total };
+}
+
+async function openKeptLine(
+  navigate: ReturnType<typeof useNavigate>,
+  target: { workId: string; breathId?: string; text?: string },
+) {
+  try {
+    const opened = await resolveKeptOpen({
+      workId: target.workId,
+      breathId: target.breathId,
+      text: target.text,
+      remap: readBreathRemap(),
+      load: (id) => loadWork(id),
+    });
+    if (opened.nextId && target.breathId && opened.nextId !== target.breathId) {
+      useTbr.getState().retargetKept(target.workId, target.breathId, opened.nextId);
+    }
+    await navigate({
+      to: "/read/$workId",
+      params: { workId: target.workId },
+      search: typeof opened.at === "number" ? { at: opened.at } : {},
+    });
+  } catch {
+    try {
+      await navigate({
+        to: "/read/$workId",
+        params: { workId: target.workId },
+        search: {},
+      });
+    } catch {
+      /* Stay on the page. The book is still on the shelf. */
+    }
+  }
+}
+
+export function KeptReadLink({
+  workId,
+  breathId,
+  text,
+  at = -1,
+  className,
+  children,
+}: {
+  workId: string;
+  breathId?: string;
+  text?: string;
+  at?: number;
+  className?: string;
+  children: ReactNode;
+}) {
+  const navigate = useNavigate();
+  const search = typeof at === "number" && at >= 0 ? { at } : {};
+  return (
+    <Link
+      to="/read/$workId"
+      params={{ workId }}
+      search={search}
+      className={className}
+      onClick={(event) => {
+        event.preventDefault();
+        void openKeptLine(navigate, { workId, breathId, text });
+      }}
+    >
+      {children}
+    </Link>
+  );
 }
 
 export function KeptSentences({
@@ -111,12 +157,8 @@ export function KeptSentences({
   sectionId?: string;
 }) {
   const cap = preview ? YOU_PREVIEW : Number.POSITIVE_INFINITY;
-  const lines = useKeptLines(progress, hydrated, cap);
-  const keptCount = useMemo(() => {
-    if (!hydrated) return 0;
-    return keptRefs(progress, Number.POSITIVE_INFINITY).length;
-  }, [hydrated, progress]);
-  const hidden = preview ? Math.max(0, keptCount - lines.length) : 0;
+  const { lines, total } = useKeptLines(progress, hydrated, cap);
+  const hidden = preview ? Math.max(0, total - lines.length) : 0;
   const fills = mosaicFills(lines.length + (hidden > 0 ? 1 : 0), "kept");
 
   return (
@@ -143,10 +185,11 @@ export function KeptSentences({
                 role="listitem"
                 className={cn("you-tile is-quote", fillClass(fill), fillInk(fill))}
               >
-                <Link
-                  to="/read/$workId"
-                  params={{ workId: line.workId }}
-                  search={{ at: line.at }}
+                <KeptReadLink
+                  workId={line.workId}
+                  breathId={line.breathId}
+                  text={line.text}
+                  at={line.at}
                   className="you-tile-link"
                 >
                   <p className="type-lede italic leading-snug">{line.text}</p>
@@ -154,7 +197,7 @@ export function KeptSentences({
                     {line.title}
                     {line.author ? ` · ${line.author}` : ""}
                   </p>
-                </Link>
+                </KeptReadLink>
                 <SalonCardShare
                   workId={line.workId}
                   at={line.at}
@@ -188,10 +231,11 @@ export function KeptSentences({
         <>
           {lines.map((line) => (
             <div key={`${line.workId}-${line.breathId}`} className="border-b border-ink">
-              <Link
-                to="/read/$workId"
-                params={{ workId: line.workId }}
-                search={{ at: line.at }}
+              <KeptReadLink
+                workId={line.workId}
+                breathId={line.breathId}
+                text={line.text}
+                at={line.at}
                 className="block px-4 py-5"
               >
                 <p className="type-lede italic leading-snug">
@@ -201,7 +245,7 @@ export function KeptSentences({
                   {line.title}
                   {line.author ? ` · ${line.author}` : ""}
                 </p>
-              </Link>
+              </KeptReadLink>
               <SalonCardShare
                 workId={line.workId}
                 at={line.at}

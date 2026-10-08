@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
-import { useKeptLines } from "@/components/kept-sentences";
+import { KeptReadLink, useKeptLines } from "@/components/kept-sentences";
 import { ResumeLink, usePersistHydrated } from "@/components/resume-link";
 import {
   friendProfilePath,
@@ -90,7 +90,7 @@ function FriendsPage() {
   }, [remote.userId]);
   const [pledgeTo, setPledgeTo] = useState("");
   const [pledgeWindow, setPledgeWindow] = useState<EveningWindow>("tonight");
-  const kept = useKeptLines(progress, hydrated);
+  const { lines: kept } = useKeptLines(progress, hydrated);
 
   const graph = useMemo<FriendGraph>(
     () =>
@@ -970,14 +970,15 @@ function KeptLineCard({ line, onShare }: { line: BoardKeptLine; onShare: () => v
         <span className="mt-1 font-serif text-sm opacity-80">{line.workTitle}</span>
       </Link>
       <div className="you-tile-actions">
-        <Link
-          to="/read/$workId"
-          params={{ workId: line.workId }}
-          search={line.atIndex >= 0 ? { at: line.atIndex } : {}}
+        <KeptReadLink
+          workId={line.workId}
+          breathId={line.breathId}
+          text={line.line}
+          at={line.atIndex}
           className={followBar(false, fill)}
         >
           Read
-        </Link>
+        </KeptReadLink>
         <button type="button" onClick={onShare} className={followBar(true, fill)}>
           Share link
         </button>

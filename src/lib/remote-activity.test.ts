@@ -36,10 +36,10 @@ test("local history becomes hosted activity drafts without dropping the handle",
     drafts.some((row) => row.kind === "reading" && row.bookId === "passing"),
     true,
   );
-  assert.equal(
-    drafts.some((row) => row.kind === "kept" && row.key === "kept:passing:line-1"),
-    true,
-  );
+  const keptDraft = drafts.find((row) => row.kind === "kept" && row.key === "kept:passing:line-1");
+  assert.ok(keptDraft);
+  assert.equal(keptDraft.payload.breathId, "line-1");
+  assert.equal(keptDraft.payload.line, undefined);
   assert.equal(
     drafts.some((row) => row.kind === "sit"),
     true,
@@ -83,6 +83,47 @@ test("a synced row becomes a friend activity and does not invent people", () => 
   assert.equal(graph.contacts[0]?.reading, "passing");
   assert.equal(listFriends(graph).some((row) => row.handle === "ghost"), false);
   assert.equal(listFriends(graph).find((row) => row.handle === "mina")?.readingTitle, "Passing");
+});
+
+test("a kept line syncs its sentence without requiring it on older rows", () => {
+  const drafts = draftsFromLocal({
+    handle: "mina",
+    progress: {
+      passing: progress({
+        entered: true,
+        lastOpenedAt: 20,
+        kept: [
+          {
+            v: 1,
+            id: "s0-1",
+            text: "She wrote the letter.",
+            workId: "passing",
+            title: "Passing",
+            author: "Nella Larsen",
+            savedAt: 20,
+          },
+        ],
+      }),
+    },
+    sitHistory: [],
+    hostedSits: [],
+    sitPledges: [],
+    togetherKeeps: [],
+  });
+  const kept = drafts.find((row) => row.kind === "kept");
+  assert.equal(kept?.payload.line, "She wrote the letter.");
+  assert.equal(kept?.payload.breathId, "s0-1");
+  assert.equal(kept?.key, "kept:passing:s0-1");
+  const older = activityFromRow({
+    id: 4,
+    user_id: "user",
+    kind: "kept",
+    book_id: "passing",
+    payload: { summary: "kept a line from Passing", breathId: "s0-1" },
+    created_at: "2026-09-24T12:00:00.000Z",
+  });
+  assert.equal(older?.breathId, "s0-1");
+  assert.equal(older?.line, undefined);
 });
 
 function emptyHistory() {

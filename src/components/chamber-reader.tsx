@@ -4,11 +4,14 @@ import { cn } from "@/lib/utils";
 import { openingBreathIndex } from "@/lib/opening-scene";
 import {
   chapterStartIndex,
+  loadWork,
   lookbackBreaths,
   sceneOf,
   workIsComplete,
   type Work,
 } from "@/lib/works";
+import { readBreathRemap } from "@/lib/breath-remap";
+import { anchorKeptLine, keptBreathId, keptIncludes, type KeptStored } from "@/lib/kept-lines";
 import { chapterPlace, spineChapters } from "@/lib/spine-nav";
 import { useTbr } from "@/lib/store";
 import { fillClass, planeOf, type Fill } from "@/lib/mondrian";
@@ -334,7 +337,7 @@ export function TbrReader({
     [centerOn, index, work],
   );
   const kept = progress?.kept ?? [];
-  const isKept = breath ? kept.includes(breath.id) : false;
+  const isKept = breath ? keptIncludes(kept, breath.id) : false;
   const plane: Fill = planeOf(breath?.sceneId ?? work.id);
   const intro = showPreface ? readerIntro(work) : "";
   const palimpsest = progress?.keywords[breath?.sceneId ?? ""] ?? "";
@@ -517,18 +520,42 @@ export function TbrReader({
     setBar(closedReaderBar);
   }
 
-  function jumpKept(breathId: string) {
-    const next = work.breaths.findIndex((item) => item.id === breathId);
-    if (next < 0) return;
+  async function jumpKept(entry: KeptStored) {
+    const fromId = keptBreathId(entry);
+    const stored = typeof entry === "string" ? "" : (entry.text ?? "");
+    let breaths = work.breaths;
+    let anchor = anchorKeptLine({ id: fromId, text: stored }, breaths, readBreathRemap(), work.id);
+    if (anchor.index == null && stored && !workIsComplete(work.id)) {
+      try {
+        const full = await loadWork(work.id);
+        if (full) {
+          breaths = full.breaths;
+          anchor = anchorKeptLine({ id: fromId, text: stored }, breaths, readBreathRemap(), work.id);
+        }
+      } catch {
+        /* Stay on the sentence already open. */
+      }
+    }
+    if (anchor.updated && anchor.breathId && fromId && anchor.breathId !== fromId) {
+      useTbr.getState().retargetKept(work.id, fromId, anchor.breathId);
+    }
+    if (anchor.index == null) return;
     setOverlay("none");
-    goTo(next);
+    if (anchor.index < work.breaths.length) goTo(anchor.index);
+    else setBreath(work.id, anchor.index);
   }
 
   function keepCurrent() {
     const current = work.breaths[Math.min(lastBreath, Math.max(0, progress?.breathIndex ?? 0))];
     if (!current) return;
-    const already = (progress?.kept ?? []).includes(current.id);
-    toggleKept(work.id, current.id);
+    const already = keptIncludes(progress?.kept, current.id);
+    const sceneTitle = sceneOf(work, current.sceneId)?.title;
+    toggleKept(work.id, current.id, {
+      text: current.text,
+      title: work.title,
+      author: work.author,
+      scene: sceneTitle,
+    });
     if (already) return;
     const you = normalizeHandle(myHandle);
     if (echo && you) {
@@ -1393,18 +1420,22 @@ export function TbrReader({
             )}
               {kept.length > 0 ? (
                 <div className="kept-dots flex min-w-0 flex-1 items-center gap-1 overflow-x-auto bg-paper px-2">
-                  {kept.map((id) => (
-                    <button
-                      key={id}
-                      type="button"
-                      aria-label="Return to a kept sentence"
-                      onClick={() => jumpKept(id)}
-                      className={cn(
-                        "size-2.5 shrink-0",
-                        id === breath.id ? "bg-ink" : "bg-red",
-                      )}
-                    />
-                  ))}
+                  {kept.map((entry, dot) => {
+                    const id = keptBreathId(entry);
+                    if (!id) return null;
+                    return (
+                      <button
+                        key={`${id}-${dot}`}
+                        type="button"
+                        aria-label="Return to a kept sentence"
+                        onClick={() => void jumpKept(entry)}
+                        className={cn(
+                          "size-2.5 shrink-0",
+                          id === breath.id ? "bg-ink" : "bg-red",
+                        )}
+                      />
+                    );
+                  })}
                 </div>
               ) : (
                 <div className="min-w-0 flex-1 bg-paper" />
