@@ -4,7 +4,7 @@
   "author": "Lafcadio Hearn",
   "year": "1900",
   "note": "Project Gutenberg 34215",
-  "minutes": 80,
+  "minutes": 189,
   "cover": "",
   "coverAlt": "",
   "scenes": [
@@ -12,42 +12,42 @@
       "id": "s0",
       "title": "The Reconciliation",
       "place": "The Reconciliation",
-      "reentry": "The original story is to be found in the curious volume entitled _Konseki-Monogatari_",
+      "reentry": "THERE was a young Samurai of Kyoto who had been reduced to poverty by the ruin of his lord, and found himself obliged to leave his home, and to take service with the Governor of a distant province. Before quitting the capital, this Samurai divorced his wife,--a good and beautiful woman,--under the belief that he could better obtain promotion by another alliance. He then married the daughter of a family of some distinction, and took her with him to the district whither he had been called.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s1",
       "title": "A Legend of Fugen-Bosatsu",
       "place": "A Legend of Fugen-Bosatsu",
-      "reentry": "From the old story-book, _Jikkun-sho_",
+      "reentry": "THERE was once a very pious and learned priest, called Shoku Shonin, who lived in the province of Harima. For many years he meditated daily upon the chapter of Fugen-Bosatsu [the Bodhisattva Samantabhadra] in the Sutra of the Lotos of the Good Law; and he used to pray, every morning and evening, that he might at some time be permitted to behold Fugen-Bosatsu as a living presence, and in the form described in the holy text.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
       "title": "The Screen-Maiden",
       "place": "The Screen-Maiden",
-      "reentry": "Related in the _Otogi-Hyaku-Monogatari_",
+      "reentry": "SAYS the old Japanese author, Hakubai-En Rosui:--",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
       "title": "The Corpse-Rider",
       "place": "The Corpse-Rider",
-      "reentry": "From the _Konseki-Monogatari_",
+      "reentry": "THE body was cold as ice; the heart had long ceased to beat: yet there were no other signs of death. Nobody even spoke of burying the woman. She had died of grief and anger at having been divorced. It would have been useless to bury her,--because the last undying wish of a dying person for vengeance can burst asunder any tomb and rift the heaviest graveyard stone. People who lived near the house in which she was lying fled from their homes. They knew that she was only _waiting for the return of the man who had divorced her_.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
       "title": "The Sympathy of Benten",
       "place": "The Sympathy of Benten",
-      "reentry": "The original story is in the _Otogi-Hyaku-Monogatari_",
+      "reentry": "IN Kyoto there is a famous temple called Amadera. Sadazumi Shinno, the fifth son of the Emperor Seiwa, passed the greater part of his life there as a priest; and the graves of many celebrated persons are to be seen in the temple-grounds.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s5",
       "title": "The Gratitude of the Samebito",
       "place": "The Gratitude of the Samebito",
-      "reentry": "The original of this story may be found in the book called _Kibun-Anbaiyoshi_",
+      "reentry": "THERE was a man named Tawaraya Totaro, who lived in the Province of Omi. His house was situated on the shore of Lake Biwa, not far from the famous temple called Ishiyamadera. He had some property, and lived in comfort; but at the age of twenty-nine he was still unmarried. His greatest ambition was to marry a very beautiful woman; and he had not been able to find a girl to his liking.",
       "prompt": "A word from this stretch."
     },
     {
@@ -61,42 +61,42 @@
       "id": "s7",
       "title": "Japanese Female Names",
       "place": "Japanese Female Names",
-      "reentry": "BY the Japanese a certain kind of girl is called a Rose-Girl,--_Bara-Musume_. Perhaps my reader will think of Tennyson's \"queen-rose of the rosebud-garden of girls,\" and imagine some analogy between the Japanese and the English idea of femi",
+      "reentry": "BY the Japanese a certain kind of girl is called a Rose-Girl,--_Bara-Musume_. Perhaps my reader will think of Tennyson's \"queen-rose of the rosebud-garden of girls,\" and imagine some analogy between the Japanese and the English idea of femininity symbolized by the rose. But there is no analogy whatever. The _Bara-Musume_ is not so called because she is delicate and sweet, nor because she blushes, nor because she is rosy; indeed, a rosy face is not admired in Japan. No; she is compared to a rose chiefly for the reason that a rose has thorns. The man who tries to pull a Japanese rose is likely to hurt his fingers. The man who tries to win a _Bara-Musume_ is apt to hurt himself much more seriously,--even unto death. It were better, alone and unarmed, to meet a tiger than to invite the caress of a Rose-Girl.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s8",
       "title": "Old Japanese Songs",
       "place": "Old Japanese Songs",
-      "reentry": "THIS New Year's morning I find upon my table two most welcome gifts from a young poet of my literary class. One is a roll of cloth for a new kimono,--cloth such as my Western reader never saw. The brown warp is cotton thread; but the woof i",
+      "reentry": "THIS New Year's morning I find upon my table two most welcome gifts from a young poet of my literary class. One is a roll of cloth for a new kimono,--cloth such as my Western reader never saw. The brown warp is cotton thread; but the woof is soft white paper string, irregularly speckled with black. When closely examined, the black specklings prove to be Chinese and Japanese characters;--for the paper woof is made out of manuscript,--manuscript of poems,--which has been deftly twisted into fine cord, with the written surface outwards. The general effect of the white, black, and brown in the texture is a warm mouse-grey. In many Izumo homes a similar kind of cloth is manufactured for family use; but this piece was woven especially for me by the mother of my pupil. It will make a most comfortable winter-robe; and when wearing it, I shall be literally clothed with poetry,--even as a divinity might be clothed with the sun.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s9",
       "title": "Noctilucae",
       "place": "Noctilucae",
-      "reentry": "THE moon had not yet risen; but the vast of the night was all seething with stars, and bridged by a Milky Way of extraordinary brightness. There was no wind; but the sea, far as sight could reach, was running in ripples of fire,--a vision o",
+      "reentry": "THE moon had not yet risen; but the vast of the night was all seething with stars, and bridged by a Milky Way of extraordinary brightness. There was no wind; but the sea, far as sight could reach, was running in ripples of fire,--a vision of infernal beauty. Only the ripplings were radiant (between them was blackness absolute);--and the luminosity was amazing. Most of the undulations were yellow like candle-flame; but there were crimson lampings also,--and azure, and orange, and emerald. And the sinuous flickering of all seemed, not a pulsing of many waters, but a laboring of many wills,--a fleeting conscious and monstrous,--a writhing and a swarming incalculable, as of dragon-life in some depth of Erebus.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
       "title": "A Mystery of Crowds",
       "place": "A Mystery of Crowds",
-      "reentry": "WHO has not at some time leaned over the parapet of a bridge to watch the wrinklings and dimplings of the current below,--to wonder at the trembling permanency of surface-shapes that never change, though the substance of them is never for t",
+      "reentry": "WHO has not at some time leaned over the parapet of a bridge to watch the wrinklings and dimplings of the current below,--to wonder at the trembling permanency of surface-shapes that never change, though the substance of them is never for two successive moments the same? The mystery of the spectacle fascinates; and it is worth thinking about. Symbols of the riddle of our own being are those shuddering forms. In ourselves likewise the substance perpetually changes with the flow of the Infinite Stream; but the shapes, though ever agitated by various inter-opposing forces, remain throughout the years.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
       "title": "Gothic Horror",
       "place": "Gothic Horror",
-      "reentry": "LONG before I had arrived at what catechisms call the age of reason, I was frequently taken, much against my will, to church. The church was very old; and I can see the interior of it at this moment just as plainly as I saw it forty years a",
+      "reentry": "LONG before I had arrived at what catechisms call the age of reason, I was frequently taken, much against my will, to church. The church was very old; and I can see the interior of it at this moment just as plainly as I saw it forty years ago, when it appeared to me like an evil dream. There I first learned to know the peculiar horror that certain forms of Gothic architecture can inspire.... I am using the word \"horror\" in a classic sense,--in its antique meaning of ghostly fear.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s12",
       "title": "Levitation",
       "place": "Levitation",
-      "reentry": "OUT of some upper-story window I was looking into a street of yellow-tinted houses,--a colonial street, old-fashioned, narrow, with palm-heads showing above its roofs of tile. There were no shadows; there was no sun,--only a grey soft light",
+      "reentry": "OUT of some upper-story window I was looking into a street of yellow-tinted houses,--a colonial street, old-fashioned, narrow, with palm-heads showing above its roofs of tile. There were no shadows; there was no sun,--only a grey soft light, as of early gloaming.",
       "prompt": "A word from this stretch."
     },
     {
@@ -117,20 +117,20 @@
       "id": "s15",
       "title": "In a Pair of Eyes",
       "place": "In a Pair of Eyes",
-      "reentry": "THERE is one adolescent moment never to be forgotten,--the moment when the boy learns that this world contains nothing more wonderful than a certain pair of eyes. At first the surprise of the discovery leaves him breathless: instinctively h",
+      "reentry": "THERE is one adolescent moment never to be forgotten,--the moment when the boy learns that this world contains nothing more wonderful than a certain pair of eyes. At first the surprise of the discovery leaves him breathless: instinctively he turns away his gaze. That vision seemed too delicious to be true. But presently he ventures to look again,--fearing with a new fear,--afraid of the reality, afraid also of being observed;--and lo! his doubt dissolves in a new shock of ecstasy. Those eyes are even more wonderful than he had imagined--nay! they become more and yet more entrancing every successive time that he looks at them! Surely in all the universe there cannot be another such pair of eyes! What can lend them such enchantment? Why do they appear divine?... He feels that he must ask somebody to explain,--must propound to older and wiser heads the riddle of his new emotions. Then he makes his confession, with a faint intuitive fear of being laughed at, but with a strange, fresh sense of rapture in the telling. Laughed at he is--tenderly; but this does not embarrass him nearly so much as the fact that he can get no answer to his question,--to the simple \"Why?\" made so interesting by his frank surprise and his timid blushes. No one is able to enlighten him; but all can sympathize with the bewilderment of his sudden awakening from the long soul-sleep of childhood.",
       "prompt": "A word from this stretch."
     }
   ],
   "breaths": [
     {
-      "id": "s0-0",
-      "sceneId": "s0",
-      "text": "The original story is to be found in the curious volume entitled _Konseki-Monogatari_"
-    },
-    {
       "id": "s0-1",
       "sceneId": "s0",
       "text": "THERE was a young Samurai of Kyoto who had been reduced to poverty by the ruin of his lord, and found himself obliged to leave his home, and to take service with the Governor of a distant province. Before quitting the capital, this Samurai divorced his wife,--a good and beautiful woman,--under the belief that he could better obtain promotion by another alliance. He then married the daughter of a family of some distinction, and took her with him to the district whither he had been called."
+    },
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Note: The original story is to be found in the curious volume entitled _Konseki-Monogatari_"
     },
     {
       "id": "s0-2",
@@ -168,14 +168,14 @@
       "text": "\"There is no one in that house,\" said the person questioned. \"It used to belong to the wife of a Samurai who left the city several years ago. He divorced her in order to marry another woman before he went away; and she fretted a great deal, and so became sick. She had no relatives in Kyoto, and nobody to care for her; and she died in the autumn of the same year,--on the tenth day of the ninth month....\""
     },
     {
-      "id": "s1-0",
-      "sceneId": "s1",
-      "text": "From the old story-book, _Jikkun-sho_"
-    },
-    {
       "id": "s1-1",
       "sceneId": "s1",
       "text": "THERE was once a very pious and learned priest, called Shoku Shonin, who lived in the province of Harima. For many years he meditated daily upon the chapter of Fugen-Bosatsu [the Bodhisattva Samantabhadra] in the Sutra of the Lotos of the Good Law; and he used to pray, every morning and evening, that he might at some time be permitted to behold Fugen-Bosatsu as a living presence, and in the form described in the holy text."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Note: From the old story-book, _Jikkun-sho_"
     },
     {
       "id": "s1-2",
@@ -238,14 +238,14 @@
       "text": "The monk by whom the foregoing legend was recorded, comments upon it thus:--The condition of a _yujo_ is low and miserable, since she is condemned to serve the lusts of men. Who therefore could imagine that such a woman might be the _nirmanakaya_, or incarnation, of a Bodhisattva. But we must remember that the Buddhas and the Bodhisattvas may appear in this world in countless different forms; choosing, for the purpose of their divine compassion, even the most humble or contemptible shapes when such shapes can serve them to lead men into the true path, and to save them from the perils of illusion."
     },
     {
-      "id": "s2-0",
-      "sceneId": "s2",
-      "text": "Related in the _Otogi-Hyaku-Monogatari_"
-    },
-    {
       "id": "s2-1",
       "sceneId": "s2",
       "text": "SAYS the old Japanese author, Hakubai-En Rosui:--"
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Note: Related in the _Otogi-Hyaku-Monogatari_"
     },
     {
       "id": "s2-2",
@@ -398,14 +398,14 @@
       "text": "\"How very seldom do such things happen in this world!\""
     },
     {
-      "id": "s3-0",
-      "sceneId": "s3",
-      "text": "From the _Konseki-Monogatari_"
-    },
-    {
       "id": "s3-1",
       "sceneId": "s3",
       "text": "THE body was cold as ice; the heart had long ceased to beat: yet there were no other signs of death. Nobody even spoke of burying the woman. She had died of grief and anger at having been divorced. It would have been useless to bury her,--because the last undying wish of a dying person for vengeance can burst asunder any tomb and rift the heaviest graveyard stone. People who lived near the house in which she was lying fled from their homes. They knew that she was only _waiting for the return of the man who had divorced her_."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "Note: From the _Konseki-Monogatari_"
     },
     {
       "id": "s3-2",
@@ -473,14 +473,14 @@
       "text": "This village-name does not appear in any Japanese directory of to-day. But the names of many towns and villages have been changed since the foregoing story was written."
     },
     {
-      "id": "s4-0",
-      "sceneId": "s4",
-      "text": "The original story is in the _Otogi-Hyaku-Monogatari_"
-    },
-    {
       "id": "s4-1",
       "sceneId": "s4",
       "text": "IN Kyoto there is a famous temple called Amadera. Sadazumi Shinno, the fifth son of the Emperor Seiwa, passed the greater part of his life there as a priest; and the graves of many celebrated persons are to be seen in the temple-grounds."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Note: The original story is in the _Otogi-Hyaku-Monogatari_"
     },
     {
       "id": "s4-2",
@@ -653,14 +653,14 @@
       "text": "\"The spirit-bride was really formed out of the _tanzaku_. So it is possible that the real girl did not know anything about the meeting at the temple of Benten. When she wrote those beautiful characters upon the _tanzaku_, something of her spirit passed into them. Therefore it was possible to evoke from the writing the double of the writer.\""
     },
     {
-      "id": "s5-0",
-      "sceneId": "s5",
-      "text": "The original of this story may be found in the book called _Kibun-Anbaiyoshi_"
-    },
-    {
       "id": "s5-1",
       "sceneId": "s5",
       "text": "THERE was a man named Tawaraya Totaro, who lived in the Province of Omi. His house was situated on the shore of Lake Biwa, not far from the famous temple called Ishiyamadera. He had some property, and lived in comfort; but at the age of twenty-nine he was still unmarried. His greatest ambition was to marry a very beautiful woman; and he had not been able to find a girl to his liking."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Note: The original of this story may be found in the book called _Kibun-Anbaiyoshi_"
     },
     {
       "id": "s5-2",

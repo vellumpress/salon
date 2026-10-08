@@ -4,10 +4,24 @@
   "author": "Selma Lagerlöf (tr. Pauline Bancroft Flach)",
   "year": "1898",
   "note": "Project Gutenberg 56158",
-  "minutes": 160,
+  "minutes": 640,
   "cover": "",
   "coverAlt": "",
   "scenes": [
+    {
+      "id": "s36",
+      "title": "Introduction · I. The Priest",
+      "place": "Introduction · I. The Priest",
+      "reentry": "At last the minister stood in the pulpit. The heads of the congregation were lifted. Well, there he finally was. There would be no default this Sunday, as on the last and on many other Sundays before.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s37",
+      "title": "Introduction · II. The Beggar",
+      "place": "Introduction · II. The Beggar",
+      "reentry": "One cold December day a beggar came wandering up the slopes of Broby. He was dressed in the most miserable rags, and his shoes were so worn that the cold snow wet his feet.",
+      "prompt": "A word from this stretch."
+    },
     {
       "id": "s0",
       "title": "Part I · Chapter I. The Landscape",
@@ -54,14 +68,14 @@
       "id": "s6",
       "title": "Part I · Chapter VII. The Old Vehicles",
       "place": "Part I · Chapter VII. The Old Vehicles",
-      "reentry": "If it should happen to you that you are sitting or lying and reading this at night, as I am writing it during the silent hours, then do not draw a sigh of relief here and think that the good pensioners were allowed to have an undisturbed sl",
+      "reentry": "If it should happen to you that you are sitting or lying and reading this at night, as I am writing it during the silent hours, then do not draw a sigh of relief here and think that the good pensioners were allowed to have an undisturbed sleep, after they had come back with Marianne and made her a good bed in the best guest-room beyond the big drawing-room.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s7",
       "title": "Part I · Chapter VIII. The Great Bear In Gurlitta Cliff",
       "place": "Part I · Chapter VIII. The Great Bear In Gurlitta Cliff",
-      "reentry": "In the darkness of the forests dwell unholy creatures, whose jaws are armed with horrible, glittering teeth or sharp beaks, whose feet have pointed claws, which long to sink themselves in a blood-filled throat, and whose eyes shine with mur",
+      "reentry": "In the darkness of the forests dwell unholy creatures, whose jaws are armed with horrible, glittering teeth or sharp beaks, whose feet have pointed claws, which long to sink themselves in a blood-filled throat, and whose eyes shine with murderous desires.",
       "prompt": "A word from this stretch."
     },
     {
@@ -96,14 +110,14 @@
       "id": "s12",
       "title": "Part I · Chapter XIII. Mamselle Marie",
       "place": "Part I · Chapter XIII. Mamselle Marie",
-      "reentry": "There is a buzzing over my head. It must be a bumblebee. And such a perfume! As true as I live, it is sweet marjoram and lavender and hawthorn and lilacs and Easter lilies. It is glorious to feel it on a gray autumn evening in the midst of",
+      "reentry": "There is a buzzing over my head. It must be a bumblebee. And such a perfume! As true as I live, it is sweet marjoram and lavender and hawthorn and lilacs and Easter lilies. It is glorious to feel it on a gray autumn evening in the midst of the town. I only have to think of that little blessed corner of the earth to have it immediately begin to hum and smell fragrant about me, and I am transported to a little square rose-garden, filled with flowers and protected by a privet hedge. In the corners are lilac arbors with small wooden benches, and round about the flower-beds, which are in the shapes of hearts and stars, wind narrow paths strewed with white sea-sand. On three sides of the rose-garden stands the forest, silent and dark.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s13",
       "title": "Part II · Chapter I. Cousin Christopher",
       "place": "Part II · Chapter I. Cousin Christopher",
-      "reentry": "They had an old bird of prey up in the pensioners’ wing. He always sat in the corner by the fire and saw that it did not go out. He was rough and gray. His little head with the big nose and the sunken eyes hung sorrowfully on the long, thin",
+      "reentry": "They had an old bird of prey up in the pensioners’ wing. He always sat in the corner by the fire and saw that it did not go out. He was rough and gray. His little head with the big nose and the sunken eyes hung sorrowfully on the long, thin neck which stuck up out of a fluffy fur collar. For the bird of prey wore furs both winter and summer.",
       "prompt": "A word from this stretch."
     },
     {
@@ -117,7 +131,7 @@
       "id": "s15",
       "title": "Part II · Chapter III. Penitence",
       "place": "Part II · Chapter III. Penitence",
-      "reentry": "Dear friends, if it should ever happen that you meet a pitiful wretch on your way, a little distressed creature, who lets his hat hang on his back and holds his shoes in his hand, so as not to have any protection from the heat of the sun an",
+      "reentry": "Dear friends, if it should ever happen that you meet a pitiful wretch on your way, a little distressed creature, who lets his hat hang on his back and holds his shoes in his hand, so as not to have any protection from the heat of the sun and the stones of the road, one without defence, who of his own free will calls down destruction on his head,—well, pass him by in silent fear! It is a penitent, do you understand?—a penitent on his way to the holy sepulchre.",
       "prompt": "A word from this stretch."
     },
     {
@@ -131,21 +145,21 @@
       "id": "s17",
       "title": "Part II · Chapter V. Lilliecrona’s Home",
       "place": "Part II · Chapter V. Lilliecrona’s Home",
-      "reentry": "Among the pensioners was one whom I have often mentioned as a great musician. He was a tall, heavily built man, with a big head and bushy, black hair. He was certainly not more than forty years old at that time, but he had an ugly, large-fe",
+      "reentry": "Among the pensioners was one whom I have often mentioned as a great musician. He was a tall, heavily built man, with a big head and bushy, black hair. He was certainly not more than forty years old at that time, but he had an ugly, large-featured face and a pompous manner. This made many think him old. He was a good man, but low-spirited.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s18",
       "title": "Part II · Chapter VI. The Witch Of Dovre",
       "place": "Part II · Chapter VI. The Witch Of Dovre",
-      "reentry": "The witch of Dovre walks on Löfven’s shores. People have seen her there, little and bent, in a leather skirt and a belt of silver plates. Why has she come out of the wolf-holes to a human world? What does the old creature of the mountains w",
+      "reentry": "The witch of Dovre walks on Löfven’s shores. People have seen her there, little and bent, in a leather skirt and a belt of silver plates. Why has she come out of the wolf-holes to a human world? What does the old creature of the mountains want in the green of the valley?",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s19",
       "title": "Part II · Chapter VII. Midsummer",
       "place": "Part II · Chapter VII. Midsummer",
-      "reentry": "Midsummer was hot then as now when I am writing. It was the most beautiful season of the year. It was the season when Sintram, the wicked ironmaster at Fors, fretted and grieved. He resented the sun’s triumphal march through the hours of th",
+      "reentry": "Midsummer was hot then as now when I am writing. It was the most beautiful season of the year. It was the season when Sintram, the wicked ironmaster at Fors, fretted and grieved. He resented the sun’s triumphal march through the hours of the day, and the overthrow of darkness. He raged at the leafy dress which clothed the trees, and at the many-colored carpet which covered the ground.",
       "prompt": "A word from this stretch."
     },
     {
@@ -159,28 +173,28 @@
       "id": "s21",
       "title": "Part II · Chapter IX. The Broby Clergyman",
       "place": "Part II · Chapter IX. The Broby Clergyman",
-      "reentry": "Eros, all-powerful god, you know well that it often seems as if a man should have freed himself from your might. All the tender feelings which unite mankind seem dead in his heart. Madness stretches its claws after the unhappy one, but then",
+      "reentry": "Eros, all-powerful god, you know well that it often seems as if a man should have freed himself from your might. All the tender feelings which unite mankind seem dead in his heart. Madness stretches its claws after the unhappy one, but then you come in all your power, and like the great saint’s staff the dried-up heart bursts into bloom.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s22",
       "title": "Part II · Chapter X. Patron Julius",
       "place": "Part II · Chapter X. Patron Julius",
-      "reentry": "Patron Julius carried down his red painted wooden chest from the pensioners’ wing. He filled with fragrant brandy a green keg, which had followed him on many journeys, and in the big carved luncheon-box he put butter, bread, and seasoned ch",
+      "reentry": "Patron Julius carried down his red painted wooden chest from the pensioners’ wing. He filled with fragrant brandy a green keg, which had followed him on many journeys, and in the big carved luncheon-box he put butter, bread, and seasoned cheese, deliciously shading in green and brown, fat ham, and pan-cakes swimming in raspberry jam.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s23",
       "title": "Part II · Chapter XI. The Plaster Saints",
       "place": "Part II · Chapter XI. The Plaster Saints",
-      "reentry": "Svartsjö church is white both outside and in: the walls are white, the pulpit, the seats, the galleries, the roof, the window-sashes, the altar-cloth,—everything is white. In Svartsjö church are no decorations, no pictures, no coats of arms",
+      "reentry": "Svartsjö church is white both outside and in: the walls are white, the pulpit, the seats, the galleries, the roof, the window-sashes, the altar-cloth,—everything is white. In Svartsjö church are no decorations, no pictures, no coats of arms. Over the altar stands only a wooden cross with a white linen cloth. But it was not always so. Once the roof was covered with paintings, and many colored images of stone and plaster stood in that house of God.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s24",
       "title": "Part II · Chapter XII. God’s Wayfarer",
       "place": "Part II · Chapter XII. God’s Wayfarer",
-      "reentry": "God’s wayfarer, Captain Lennart, came one afternoon in August wandering up to the Broby inn and walked into the kitchen there. He was on his way to his home, Helgesäter, which lies a couple of miles northwest of Broby, close to the edge of",
+      "reentry": "God’s wayfarer, Captain Lennart, came one afternoon in August wandering up to the Broby inn and walked into the kitchen there. He was on his way to his home, Helgesäter, which lies a couple of miles northwest of Broby, close to the edge of the wood.",
       "prompt": "A word from this stretch."
     },
     {
@@ -201,14 +215,14 @@
       "id": "s27",
       "title": "Part II · Chapter XV. Death, The Deliverer",
       "place": "Part II · Chapter XV. Death, The Deliverer",
-      "reentry": "My pale friend, Death the deliverer, came in August, when the nights were white with moonlight, to the house of Captain Uggla. But he did not dare to go direct into that hospitable home, for they are few who love him, and he does not wish t",
+      "reentry": "My pale friend, Death the deliverer, came in August, when the nights were white with moonlight, to the house of Captain Uggla. But he did not dare to go direct into that hospitable home, for they are few who love him, and he does not wish to be greeted with weeping, rather with quiet joy,—he who comes to set free the soul from the fetters of pain, he who delivers the soul from the burden of the body and lets it enjoy the beautiful life of the spheres.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s28",
       "title": "Part II · Chapter XVI. The Drought",
       "place": "Part II · Chapter XVI. The Drought",
-      "reentry": "If dead things love, if earth and water distinguish friends from enemies, I should like to possess their love. I should like the green earth not to feel my step as a heavy burden. I should like her to forgive that she for my sake is wounded",
+      "reentry": "If dead things love, if earth and water distinguish friends from enemies, I should like to possess their love. I should like the green earth not to feel my step as a heavy burden. I should like her to forgive that she for my sake is wounded by plough and harrow, and willingly to open for my dead body. And I should like the waves, whose shining mirror is broken by my oars, to have the same patience with me as a mother has with an eager child when it climbs up on her knee, careless of the uncrumpled silk of her dress.",
       "prompt": "A word from this stretch."
     },
     {
@@ -229,7 +243,7 @@
       "id": "s31",
       "title": "Part II · Chapter XIX. The Broom-Girl",
       "place": "Part II · Chapter XIX. The Broom-Girl",
-      "reentry": "No one knows the place in the lee of the mountain where the pines grow thickest and deep layers of moss cover the ground. How should any one know it? No man’s foot has ever trodden it before; no man’s tongue has given it a name. No path lea",
+      "reentry": "No one knows the place in the lee of the mountain where the pines grow thickest and deep layers of moss cover the ground. How should any one know it? No man’s foot has ever trodden it before; no man’s tongue has given it a name. No path leads to that hidden spot. It is the most solitary tract in the forest, and now thousands of people are looking for it.",
       "prompt": "A word from this stretch."
     },
     {
@@ -243,7 +257,7 @@
       "id": "s33",
       "title": "Part II · Chapter XXI. Broby Fair",
       "place": "Part II · Chapter XXI. Broby Fair",
-      "reentry": "On the first Friday in October the big Broby Fair begins, and lasts one week. It is the festival of the autumn. There is slaughtering and baking in every house; the new winter clothes are then worn for the first time; the brandy rations are",
+      "reentry": "On the first Friday in October the big Broby Fair begins, and lasts one week. It is the festival of the autumn. There is slaughtering and baking in every house; the new winter clothes are then worn for the first time; the brandy rations are doubled; work rests. There is feasting on all the estates. The servants and laborers draw their pay and hold long conferences over what they shall buy at the Fair. People from a distance come in small companies with knapsacks on their backs and staffs in their hands. Many are driving their cattle before them to the market. Small, obstinate young bulls and goats stand still and plant their forefeet, causing much vexation to their owners and much amusement to the by-standers. The guest-rooms at the manors are filled with guests, bits of news are exchanged, and the prices of cattle discussed.",
       "prompt": "A word from this stretch."
     },
     {
@@ -257,11 +271,1026 @@
       "id": "s35",
       "title": "Part II · Chapter XXIII. Margareta Celsing",
       "place": "Part II · Chapter XXIII. Margareta Celsing",
-      "reentry": "A few days before Christmas the major’s wife started on her journey down to the Löfsjö district; but it was not till Christmas Eve that she came to Ekeby. During the whole journey she was ill. Yet, in spite of cold and fever, people had nev",
+      "reentry": "A few days before Christmas the major’s wife started on her journey down to the Löfsjö district; but it was not till Christmas Eve that she came to Ekeby. During the whole journey she was ill. Yet, in spite of cold and fever, people had never seen her in better spirits nor heard her speak more friendly words.",
       "prompt": "A word from this stretch."
     }
   ],
   "breaths": [
+    {
+      "id": "s36-0",
+      "sceneId": "s36",
+      "text": "At last the minister stood in the pulpit. The heads of the congregation were lifted. Well, there he finally was. There would be no default this Sunday, as on the last and on many other Sundays before."
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "The minister was young, tall, slender, and strikingly handsome. With a helmet on his head, and girt with sword and shirt of mail, he could have been cut in marble and taken for an ideal of Grecian beauty."
+    },
+    {
+      "id": "s36-2",
+      "sceneId": "s36",
+      "text": "He had a poet’s deep eyes, and a general’s firm, rounded chin; everything about him was beautiful, noble, full of feeling, glowing with genius and spiritual life."
+    },
+    {
+      "id": "s36-3",
+      "sceneId": "s36",
+      "text": "The people in the church felt themselves strangely subdued to see him so. They were more used to see him come reeling out of the public house with his good friends, Beerencreutz, the Colonel with the thick, white moustaches, and the stalwart Captain Christian Bergh."
+    },
+    {
+      "id": "s36-4",
+      "sceneId": "s36",
+      "text": "He had drunk so deeply that he had not been able to attend to his duties for many weeks, and the congregation had been obliged to complain, first to the dean, and then to the bishop and the chapters. Now the bishop had come to the parish to make a strict inquiry. He sat in the choir with the gold cross on his breast; the clergymen of the neighboring parishes sat round about him."
+    },
+    {
+      "id": "s36-5",
+      "sceneId": "s36",
+      "text": "There was no doubt that the minister’s conduct had gone beyond the permissible limit. At that time, in the twenties, much in the matter of drinking was overlooked, but this man had deserted his post for the sake of drink, and now must lose it."
+    },
+    {
+      "id": "s36-6",
+      "sceneId": "s36",
+      "text": "He stood in the pulpit and waited while the last verse of the psalm was sung."
+    },
+    {
+      "id": "s36-7",
+      "sceneId": "s36",
+      "text": "A feeling came over him as he stood there, that he had only enemies in the church, enemies in all the seats. Among the gentry in the pews, among the peasants in the farther seats, among the little boys in the choir, he had enemies, none but enemies. It was an enemy who worked the organ-bellows, an enemy who played. In the churchwardens’ pews he had enemies. They all hated him, every one,—from the children in arms, who were carried into the church, to the sexton, a formal and stiff old soldier, who had been at Leipsic."
+    },
+    {
+      "id": "s36-8",
+      "sceneId": "s36",
+      "text": "He longed to throw himself on his knees and to beg for mercy."
+    },
+    {
+      "id": "s36-9",
+      "sceneId": "s36",
+      "text": "But a moment after, a dull rage came over him. He remembered well what he had been when, a year ago, he first stood in this pulpit. He was then a blameless man, and now he stood there and looked down on the man with the gold cross on his breast, who had come to pass sentence on him."
+    },
+    {
+      "id": "s36-10",
+      "sceneId": "s36",
+      "text": "While he read the introduction, wave after wave of blood surged up in his face,—it was rage."
+    },
+    {
+      "id": "s36-11",
+      "sceneId": "s36",
+      "text": "It was true enough that he had drunk, but who had a right to blame him for that? Had they seen the vicarage where he had to live? Pine forests grew dark and gloomy close up to his windows. The dampness dripped from the black roofs and ran down the mouldy walls. Was not brandy needed to keep the spirits up when rain and driving snow streamed in through the broken panes, when the neglected earth would not give bread enough to keep hunger away?"
+    },
+    {
+      "id": "s36-12",
+      "sceneId": "s36",
+      "text": "He thought that he was just such a minister as they deserved. For they all drank. Why should he alone control himself? The man who had buried his wife got drunk at the funeral feast; the father who had baptized his child had a carouse afterwards. The congregation drank on the way back from church, so that most of them were drunk when they reached home. A drunken priest was good enough for them."
+    },
+    {
+      "id": "s36-13",
+      "sceneId": "s36",
+      "text": "It was on his pastoral visits, when he drove in his thin cloak over miles of frozen seas, where all the icy winds met, it was when his boat was tossed about on these same seas in storm and pouring rain, it was when he must climb out of his sledge in blinding snow to clear the way for his horse through drifts high as houses, or when he waded through the forest swamps,—it was then that he learned to love brandy."
+    },
+    {
+      "id": "s36-14",
+      "sceneId": "s36",
+      "text": "The year had dragged itself out in heavy gloom. Peasant and master had passed their days with their thoughts on the soil, but at evening their spirits cast off their yokes, freed by brandy. Inspiration came, the heart grew warm, life became glowing, the song rang out, roses shed their perfume. The public-house bar-room seemed to him a tropical garden: grapes and olives hung down over his head, marble statues shone among dark leaves, songsters and poets wandered under the palms and plane-trees."
+    },
+    {
+      "id": "s36-15",
+      "sceneId": "s36",
+      "text": "No, he, the priest, up there in the pulpit, knew that without brandy life could not be borne in this end of the world; all his congregation knew that, and yet they wished to judge him."
+    },
+    {
+      "id": "s36-16",
+      "sceneId": "s36",
+      "text": "They wished to tear his vestments from him, because he had come drunken into God’s house. Oh, all these people, had they believed, did they want to believe, that they had any other God than brandy?"
+    },
+    {
+      "id": "s36-17",
+      "sceneId": "s36",
+      "text": "He had finished the exordium, and he kneeled to say the Lord’s Prayer."
+    },
+    {
+      "id": "s36-18",
+      "sceneId": "s36",
+      "text": "There was a breathless silence in the church during the prayer. But suddenly the minister with both hands caught hold of the ribbons which held his surplice. It seemed to him as if the whole congregation, with the bishop at the head, were stealing up the pulpit steps to take his bands from him. He was kneeling and his head was turned away, but he could feel how they were dragging, and he saw them so plainly, the bishop and the deans, the clergymen, the churchwardens, the sexton, and the whole assemblage in a long line, tearing and straining to get his surplice off. And he could picture to himself how all these people who were dragging so eagerly would fall over one another down the steps when the bands gave way, and the whole row of them below, who had not got up as far as his cape, but only to the skirts of his coat, would also fall."
+    },
+    {
+      "id": "s36-19",
+      "sceneId": "s36",
+      "text": "He saw it all so plainly that he had to smile as he knelt, but at the same time a cold sweat broke out on his forehead. The whole thing was too horrible."
+    },
+    {
+      "id": "s36-20",
+      "sceneId": "s36",
+      "text": "That he should now become a dishonored man for the sake of brandy. A clergyman, dismissed! Was there anything on God’s earth more wretched?"
+    },
+    {
+      "id": "s36-21",
+      "sceneId": "s36",
+      "text": "He should be one of the beggars at the roadside, lie drunk at the edge of a ditch, go dressed in rags, with vagrants for companions."
+    },
+    {
+      "id": "s36-22",
+      "sceneId": "s36",
+      "text": "The prayer was ended. He should read his sermon. Then a thought came to him and checked the words on his lips. He thought that it was the last time he should stand in the pulpit and proclaim the glory of God."
+    },
+    {
+      "id": "s36-23",
+      "sceneId": "s36",
+      "text": "For the last time—that took hold of him. He forgot the brandy and the bishop. He thought that he must use the chance, and testify to the glory of God."
+    },
+    {
+      "id": "s36-24",
+      "sceneId": "s36",
+      "text": "He thought that the floor of the church with all his hearers sank deep, deep down, and the roof was lifted off, so that he saw far into the sky. He stood alone, quite alone in his pulpit; his spirit took its flight to the heavens opened above him; his voice became strong and powerful, and he proclaimed the glory of God."
+    },
+    {
+      "id": "s36-25",
+      "sceneId": "s36",
+      "text": "He was inspired. He left what he had written; thoughts came to him like a flock of tame doves. He felt, as if it were not he who spoke, but he felt too that it was the best earth had to give, and that no one could reach a greater height of brilliancy and splendor than he who stood there and proclaimed the glory of God."
+    },
+    {
+      "id": "s36-26",
+      "sceneId": "s36",
+      "text": "As long as the flame of inspiration burned in him he continued to speak, but when it died out, and the roof sank down over the church, and the floor came up again from far, far below, he bowed his head and wept, for he thought that the best of life, for him, was now over."
+    },
+    {
+      "id": "s36-27",
+      "sceneId": "s36",
+      "text": "After the service came the inspection and the vestry meeting. The bishop asked if the congregation had any complaints to make against their clergyman."
+    },
+    {
+      "id": "s36-28",
+      "sceneId": "s36",
+      "text": "The minister was no longer angry and defiant as before the sermon. Now he was ashamed and hung his head. Oh, all the miserable brandy stories, which were coming now!"
+    },
+    {
+      "id": "s36-29",
+      "sceneId": "s36",
+      "text": "But none came. There was a deep silence about the long table in the parish-hall."
+    },
+    {
+      "id": "s36-30",
+      "sceneId": "s36",
+      "text": "The minister looked first at the sexton,—no, he was silent; then at the churchwardens, then at the powerful peasants and mine-owners; they were all silent. They sat with their lips pressed close together and looked embarrassed down on the table."
+    },
+    {
+      "id": "s36-31",
+      "sceneId": "s36",
+      "text": "“They are waiting for somebody to begin,” thought the minister."
+    },
+    {
+      "id": "s36-32",
+      "sceneId": "s36",
+      "text": "One of the churchwardens cleared his throat."
+    },
+    {
+      "id": "s36-33",
+      "sceneId": "s36",
+      "text": "“I think we’ve got a fine minister,” he said."
+    },
+    {
+      "id": "s36-34",
+      "sceneId": "s36",
+      "text": "“Your Reverence has heard how he preaches,” interrupted the sexton."
+    },
+    {
+      "id": "s36-35",
+      "sceneId": "s36",
+      "text": "The bishop spoke of repeated absences."
+    },
+    {
+      "id": "s36-36",
+      "sceneId": "s36",
+      "text": "“The minister has the right to be ill, as well as another,” was the peasants’ opinion."
+    },
+    {
+      "id": "s36-37",
+      "sceneId": "s36",
+      "text": "The bishop hinted at their dissatisfaction with the minister’s mode of life."
+    },
+    {
+      "id": "s36-38",
+      "sceneId": "s36",
+      "text": "They defended him with one voice. He was so young, their minister; there was nothing wrong with him. No; if he would only always preach as he had done to-day they would not exchange him for the bishop himself."
+    },
+    {
+      "id": "s36-39",
+      "sceneId": "s36",
+      "text": "There were no accusers; there could be no judge."
+    },
+    {
+      "id": "s36-40",
+      "sceneId": "s36",
+      "text": "The minister felt how his heart swelled and how swiftly the blood flew through his veins. Could it be that he was no longer among enemies; that he had won them over when he had least thought of it; that he should still be their priest?"
+    },
+    {
+      "id": "s36-41",
+      "sceneId": "s36",
+      "text": "After the inspection the bishop and the clergymen of the neighborhood and the deans and the chief men of the parish dined at the vicarage. The wife of one of the neighbors had taken charge of the dinner; for the minister was not married. She had arranged it all so well that it made him open his eyes, for the vicarage was not so dreadful. The long dining-table was spread out under the pines and shone with its white cloth, with its blue and white china, its glittering glass and folded napkins. Two birches bent over the door, the floor of the entry was strewn with rushes, a wreath of flowers hung from the rafters, there were flowers in all the rooms; the mouldy smell was gone, and the green window-panes shone bravely in the sunshine."
+    },
+    {
+      "id": "s36-42",
+      "sceneId": "s36",
+      "text": "He was glad to the bottom of his heart, the minister; he thought that he would never drink again."
+    },
+    {
+      "id": "s36-43",
+      "sceneId": "s36",
+      "text": "There was not one who was not glad at that dinner-table. Those who had been generous and had forgiven were glad, and the priests in authority were glad because they had escaped a scandal."
+    },
+    {
+      "id": "s36-44",
+      "sceneId": "s36",
+      "text": "The good bishop raised his glass and said that he had started on this journey with a heavy heart, for he had heard many evil rumors. He had gone forth to meet Saul, but lo, Saul was already changed to a Paul, who should accomplish more than any of them. And the worthy man spoke of the rich gifts which their young brother possessed, and praised them. Not that he should be proud, but that he should strain every nerve and keep a close watch over himself, as he must do who bears an exceedingly heavy and costly burden on his shoulders."
+    },
+    {
+      "id": "s36-45",
+      "sceneId": "s36",
+      "text": "The minister was not drunk at that dinner, but he was intoxicated. All this great unlooked-for happiness went to his head. Heaven had let the flame of inspiration burn in him, and these people had given him their love. His blood was at fever heat, and at raging speed rushed through his veins still when the evening came and his guests departed. Far into the night he sat awake in his room, and let the night air stream in through the open window to cool this fever of happiness, this pleasant restlessness which would not let him sleep."
+    },
+    {
+      "id": "s36-46",
+      "sceneId": "s36",
+      "text": "He heard a voice."
+    },
+    {
+      "id": "s36-47",
+      "sceneId": "s36",
+      "text": "“Are you awake?”"
+    },
+    {
+      "id": "s36-48",
+      "sceneId": "s36",
+      "text": "A man came over the lawn up to the window. The minister looked out and recognized Captain Christian Bergh, one of his trusty boon-companions. He was a wayfarer without house or land, this Captain Bergh, and a giant in stature and strength; big was he as Goliath, malicious and stupid as a mountain goblin."
+    },
+    {
+      "id": "s36-49",
+      "sceneId": "s36",
+      "text": "“Of course I am up, Captain Christian,” answered the minister. “Do you think I could sleep to-night?”"
+    },
+    {
+      "id": "s36-50",
+      "sceneId": "s36",
+      "text": "And hear now what this Captain Bergh says to him! The giant had guessed, he had understood, that the minister would now be afraid to drink. He would never have any peace, thought Captain Christian; for those priests from Karlstad, who had been here once, could come again and take his surplice from him if he drank."
+    },
+    {
+      "id": "s36-51",
+      "sceneId": "s36",
+      "text": "But now Captain Christian had put his heavy hand to the good work; now he had arranged that those priests never should come again, neither they nor the bishop. Henceforth the minister and his friends could drink as much as they liked at the vicarage."
+    },
+    {
+      "id": "s36-52",
+      "sceneId": "s36",
+      "text": "Hear what a deed he had done, he, Christian Bergh, the mighty Captain. When the bishop and the two deans had climbed into their closed carriage, and the doors had been shut tight on them, then he had mounted on the box and driven them ten miles or so in the light summer night."
+    },
+    {
+      "id": "s36-53",
+      "sceneId": "s36",
+      "text": "And then had Christian Bergh taught the reverend gentlemen how loose life sits in the human body. He had let the horses run at the maddest pace. That was because they would not let an honorable man get drunk in peace."
+    },
+    {
+      "id": "s36-54",
+      "sceneId": "s36",
+      "text": "Do you suppose he followed the road with them; do you believe he saved them from jolts? He drove over ditches and ploughed fields; he drove in a dizzy gallop down the hills; he drove along the water’s edge, till the waves covered the wheels; he almost stuck in a bog; he drove down over bare rocks, where the horses slid with legs held stiff."
+    },
+    {
+      "id": "s36-55",
+      "sceneId": "s36",
+      "text": "And all the time the bishop and the priests sat with blanched faces behind the leather curtains and murmured prayers. It was the worst journey they had ever made."
+    },
+    {
+      "id": "s36-56",
+      "sceneId": "s36",
+      "text": "And think how they must have looked when they came to Rissäter’s inn, living, but shaken like shot in a leather pouch."
+    },
+    {
+      "id": "s36-57",
+      "sceneId": "s36",
+      "text": "“What does this mean, Captain Christian?” says the bishop, as he opens the door for them."
+    },
+    {
+      "id": "s36-58",
+      "sceneId": "s36",
+      "text": "“It means that you shall think twice, bishop, before you make a new journey of inspection to Gösta Berling,” says Captain Christian; and he had thought that sentence well out beforehand, so as not to get it wrong."
+    },
+    {
+      "id": "s36-59",
+      "sceneId": "s36",
+      "text": "“Tell Gösta Berling,” says the bishop, “that to him neither I nor any other bishop will ever come again.”"
+    },
+    {
+      "id": "s36-60",
+      "sceneId": "s36",
+      "text": "This exploit the mighty Captain Christian stands and relates at the open window in the summer night. For Captain Christian has only just left the horses at the inn, and has come directly to the minister with his news."
+    },
+    {
+      "id": "s36-61",
+      "sceneId": "s36",
+      "text": "“Now you can be at rest, comrade,” he says."
+    },
+    {
+      "id": "s36-62",
+      "sceneId": "s36",
+      "text": "Ah, Captain Christian, the clergymen sat with pale faces behind the leather curtains, but the priest at the window looks in the bright summer night far, far paler. Ah, Captain Christian!"
+    },
+    {
+      "id": "s36-63",
+      "sceneId": "s36",
+      "text": "The minister raised his arm and measured a terrible blow at the giant’s coarse, stupid face, but checked himself. He shut the window with a bang, and stood in the middle of the room, shaking his clenched fist on high."
+    },
+    {
+      "id": "s36-64",
+      "sceneId": "s36",
+      "text": "He in whom the fire of inspiration had flamed, he who had been able to proclaim the glory of God, stood there and thought that God had made a fool of him."
+    },
+    {
+      "id": "s36-65",
+      "sceneId": "s36",
+      "text": "Would not the bishop believe that Captain Christian had been sent by the minister? Would he not believe that he had dissembled and lied the whole day? Now he would investigate everything about him in earnest; now he would suspend him and dismiss him."
+    },
+    {
+      "id": "s36-66",
+      "sceneId": "s36",
+      "text": "When the dawn broke the minister was far from his home. He did not care to stay and defend himself. God had mocked at him. God would not help him. He knew that he would be dismissed. God would have it. He might as well go at once."
+    },
+    {
+      "id": "s36-67",
+      "sceneId": "s36",
+      "text": "All this happened in the beginning of the twenties in a far-a-way parish in Western Värmland."
+    },
+    {
+      "id": "s36-68",
+      "sceneId": "s36",
+      "text": "It was the first misfortune which befell Gösta Berling; it was not the last."
+    },
+    {
+      "id": "s36-69",
+      "sceneId": "s36",
+      "text": "For colts who cannot bear spur or whips find life hard. For every pain which comes to them they bolt down wild ways to yawning chasms. As soon as the road is stony and the way hard they know no other remedy than to cast off their load and rush away in frenzy."
+    },
+    {
+      "id": "s37-0",
+      "sceneId": "s37",
+      "text": "One cold December day a beggar came wandering up the slopes of Broby. He was dressed in the most miserable rags, and his shoes were so worn that the cold snow wet his feet."
+    },
+    {
+      "id": "s37-1",
+      "sceneId": "s37",
+      "text": "Löfven is a long, narrow lake in Värmland, intersected in several places by long narrow sounds. In the north it stretches up to the Finn forests, in the south down to the lake Väner. There are many parishes along its shores, but the parish of Bro is the largest and richest. It takes up a large part of the lake’s shores both on the east and west sides, but on the west side are the largest estates, such as Ekeby and Björne, known far and wide for wealth and beauty, and Broby, with its large village and inn, courthouse, sheriff-quarters, vicarage, and market-place."
+    },
+    {
+      "id": "s37-2",
+      "sceneId": "s37",
+      "text": "Broby lies on a steep slope. The beggar had come past the inn, which lies at the foot of the hill, and was struggling up towards the parsonage, which lies at the top."
+    },
+    {
+      "id": "s37-3",
+      "sceneId": "s37",
+      "text": "A little girl went in front of him up the hill; she dragged a sledge laden with a bag of meal. The beggar caught up with the child and began to talk to her."
+    },
+    {
+      "id": "s37-4",
+      "sceneId": "s37",
+      "text": "“A little horse for such a heavy load,” he said."
+    },
+    {
+      "id": "s37-5",
+      "sceneId": "s37",
+      "text": "The child turned and looked at him. She was a little creature about twelve years old, with sharp, suspicious eyes, and lips pressed together."
+    },
+    {
+      "id": "s37-6",
+      "sceneId": "s37",
+      "text": "“Would to God the horse was smaller and the load larger; it might last longer,” answered the girl."
+    },
+    {
+      "id": "s37-7",
+      "sceneId": "s37",
+      "text": "“Is it then your own food you are dragging home?”"
+    },
+    {
+      "id": "s37-8",
+      "sceneId": "s37",
+      "text": "“By God’s grace it is; I have to get my own food, although I am so little.”"
+    },
+    {
+      "id": "s37-9",
+      "sceneId": "s37",
+      "text": "The beggar seized the sled rope to drag it up."
+    },
+    {
+      "id": "s37-10",
+      "sceneId": "s37",
+      "text": "The girl turned and looked at him."
+    },
+    {
+      "id": "s37-11",
+      "sceneId": "s37",
+      "text": "“You needn’t think that you will get anything for this,” she said."
+    },
+    {
+      "id": "s37-12",
+      "sceneId": "s37",
+      "text": "The beggar laughed."
+    },
+    {
+      "id": "s37-13",
+      "sceneId": "s37",
+      "text": "“You must be the daughter of the Broby clergyman.”"
+    },
+    {
+      "id": "s37-14",
+      "sceneId": "s37",
+      "text": "“Yes, yes, I am indeed. Many have poorer fathers, but none have worse. That’s the Lord’s truth, although it’s a shame that his own child should have to say it.”"
+    },
+    {
+      "id": "s37-15",
+      "sceneId": "s37",
+      "text": "“I hear he is mean and ill-natured, your father.”"
+    },
+    {
+      "id": "s37-16",
+      "sceneId": "s37",
+      "text": "“Mean he is, and ill-natured he is, but they say his daughter will be worse if she lives so long; that’s what people say.”"
+    },
+    {
+      "id": "s37-17",
+      "sceneId": "s37",
+      "text": "“I fancy people are right. What I would like to know is, where you found this meal-bag.”"
+    },
+    {
+      "id": "s37-18",
+      "sceneId": "s37",
+      "text": "“It makes no difference if I tell you. I took the grain out of father’s store-house this morning, and now I have been to the mill.”"
+    },
+    {
+      "id": "s37-19",
+      "sceneId": "s37",
+      "text": "“May he not see you when you come dragging it behind you?”"
+    },
+    {
+      "id": "s37-20",
+      "sceneId": "s37",
+      "text": "“You have left school too early. Father is away on his parish visits, can’t you see?”"
+    },
+    {
+      "id": "s37-21",
+      "sceneId": "s37",
+      "text": "“Somebody is driving up the hill behind us; I hear the creaking of the runners. Think if it were he who is coming!”"
+    },
+    {
+      "id": "s37-22",
+      "sceneId": "s37",
+      "text": "The girl listened and peered down, then she burst into tears."
+    },
+    {
+      "id": "s37-23",
+      "sceneId": "s37",
+      "text": "“It is father,” she sobbed. “He will kill me! He will kill me!”"
+    },
+    {
+      "id": "s37-24",
+      "sceneId": "s37",
+      "text": "“Yes, good advice is now precious, and prompt advice better than silver and gold,” said the beggar."
+    },
+    {
+      "id": "s37-25",
+      "sceneId": "s37",
+      "text": "“Look here,” said the child, “you can help me. Take the rope and drag the sledge; then father will believe it is yours.”"
+    },
+    {
+      "id": "s37-26",
+      "sceneId": "s37",
+      "text": "“What shall I do with it afterwards?” asked the beggar, and put the rope round his shoulders."
+    },
+    {
+      "id": "s37-27",
+      "sceneId": "s37",
+      "text": "“Take it where you like for the moment, but come up to the parsonage with it when it is dark. I shall be looking out for you. You are to come with the bag and the sledge, you understand.”"
+    },
+    {
+      "id": "s37-28",
+      "sceneId": "s37",
+      "text": "“I shall try.”"
+    },
+    {
+      "id": "s37-29",
+      "sceneId": "s37",
+      "text": "“God help you if you don’t come!” called the girl, while she ran, hurrying to get home before her father."
+    },
+    {
+      "id": "s37-30",
+      "sceneId": "s37",
+      "text": "The beggar turned the sledge with a heavy heart and dragged it down to the inn."
+    },
+    {
+      "id": "s37-31",
+      "sceneId": "s37",
+      "text": "The poor fellow had had his dream, as he went in the snow with half-naked feet. He had thought of the great woods north of lake Löfven, of the great Finn forests."
+    },
+    {
+      "id": "s37-32",
+      "sceneId": "s37",
+      "text": "Here in the parish of Bro, where he was now wandering along the sound which connects the upper and lower Löfven,—in this rich and smiling country, where one estate joins another, factory lies near factory—here all the roads seemed to him too heavy, the rooms too small, the beds too hard. Here he longed for the peace of the great, eternal forests."
+    },
+    {
+      "id": "s37-33",
+      "sceneId": "s37",
+      "text": "Here he heard the blows echoing in all the barns as they threshed out the grain. Loads of timber and charcoal-vans kept coming down from the inexhaustible forests. Endless loads of metal followed the deep ruts which the hundreds gone before had cut. Here he saw sleighs filled with travellers speed from house to house, and it seemed to him as if pleasure held the reins, and beauty and love stood on the runners. Oh, how he longed for the peace of the forest."
+    },
+    {
+      "id": "s37-34",
+      "sceneId": "s37",
+      "text": "There the trees rise straight and pillarlike from the even ground, there the snow rests in heavy layers on the motionless pines, there the wind is powerless and only plays softly in the topmost leaves, there he would wander deeper and still farther in, until at last his strength would fail him, and he would drop under the great trees, dying of hunger and cold."
+    },
+    {
+      "id": "s37-35",
+      "sceneId": "s37",
+      "text": "He longed for the great murmuring grave above the Löfven, where he would be overcome by the powers of annihilation, where at last hunger, cold, fatigue, and brandy should succeed in destroying his poor body, which had endured everything."
+    },
+    {
+      "id": "s37-36",
+      "sceneId": "s37",
+      "text": "He came down to the inn to await the evening. He went into the bar-room and threw himself down on a bench by the door, dreaming of the eternal forests."
+    },
+    {
+      "id": "s37-37",
+      "sceneId": "s37",
+      "text": "The innkeeper’s wife felt sorry for him and gave him a glass of brandy. She even gave him another, he implored her so eagerly."
+    },
+    {
+      "id": "s37-38",
+      "sceneId": "s37",
+      "text": "But more she would not give him, and the beggar was in despair. He must have more of the strong, sweet brandy. He must once again feel his heart dance in his body and his thoughts flame up in intoxication. Oh, that sweet spirit of the corn!"
+    },
+    {
+      "id": "s37-39",
+      "sceneId": "s37",
+      "text": "The summer sun, the song of the birds, perfume and beauty floated in its white wave. Once more, before he disappears into the night and the darkness, let him drink sunshine and happiness."
+    },
+    {
+      "id": "s37-40",
+      "sceneId": "s37",
+      "text": "So he bartered first the meal, then the meal-sack, and last the sledge, for brandy. On it he got thoroughly drunk, and slept the greater part of the afternoon on a bench in the bar-room."
+    },
+    {
+      "id": "s37-41",
+      "sceneId": "s37",
+      "text": "When he awoke he understood that there was left for him only one thing to do. Since his miserable body had taken possession of his soul, since he had been capable of drinking up what a child had confided to him, since he was a disgrace to the earth, he must free it of the burden of such wretchedness. He must give his soul its liberty, let it go to its God."
+    },
+    {
+      "id": "s37-42",
+      "sceneId": "s37",
+      "text": "He lay on the bench in the bar-room and passed sentence on himself: “Gösta Berling, dismissed priest, accused of having drunk up the food of a hungry child, is condemned to death. What death? Death in the snow-drifts.”"
+    },
+    {
+      "id": "s37-43",
+      "sceneId": "s37",
+      "text": "He seized his cap and reeled out. He was neither quite awake nor quite sober. He wept in pity for himself, for his poor, soiled soul, which he must set free."
+    },
+    {
+      "id": "s37-44",
+      "sceneId": "s37",
+      "text": "He did not go far, and did not turn from the road. At the very roadside lay a deep drift, and there he threw himself down to die. He closed his eyes and tried to sleep."
+    },
+    {
+      "id": "s37-45",
+      "sceneId": "s37",
+      "text": "No one knows how long he lay there; but there was still life in him when the daughter of the minister of Broby came running along the road with a lantern in her hand, and found him in the drift by the roadside. She had stood for hours and waited for him; now she had run down Broby hill to look for him."
+    },
+    {
+      "id": "s37-46",
+      "sceneId": "s37",
+      "text": "She recognized him instantly, and she began to shake him and to scream with all her might to get him awake."
+    },
+    {
+      "id": "s37-47",
+      "sceneId": "s37",
+      "text": "She must know what he had done with her meal-bag."
+    },
+    {
+      "id": "s37-48",
+      "sceneId": "s37",
+      "text": "She must call him back to life, at least for so long a time that he could tell her what had become of her sledge and her meal-bag. Her father would kill her if she had lost his sledge. She bit the beggar’s finger and scratched his face, and at the same time she screamed madly."
+    },
+    {
+      "id": "s37-49",
+      "sceneId": "s37",
+      "text": "Then some one came driving along the road."
+    },
+    {
+      "id": "s37-50",
+      "sceneId": "s37",
+      "text": "“Who the devil is screaming so?” asked a harsh voice."
+    },
+    {
+      "id": "s37-51",
+      "sceneId": "s37",
+      "text": "“I want to know what this fellow has done with my meal-bag and my sledge,” sobbed the child, and beat with clenched fists on the beggar’s breast."
+    },
+    {
+      "id": "s37-52",
+      "sceneId": "s37",
+      "text": "“Are you clawing a frozen man? Away with you, wild-cat!”"
+    },
+    {
+      "id": "s37-53",
+      "sceneId": "s37",
+      "text": "The traveller was a large and coarse woman. She got out of the sleigh and came over to the drift. She took the child by the back of the neck and threw her on one side. Then she leaned over, thrust her arms under the beggar’s body, and lifted him up. Then she carried him to the sleigh and laid him in it."
+    },
+    {
+      "id": "s37-54",
+      "sceneId": "s37",
+      "text": "“Come with me to the inn, wild-cat,” she called to the child, “that we may hear what you know of all this.”"
+    },
+    {
+      "id": "s37-55",
+      "sceneId": "s37",
+      "text": "An hour later the beggar sat on a chair by the door in the best room of the inn, and in front of him stood the powerful woman who had rescued him from the drift."
+    },
+    {
+      "id": "s37-56",
+      "sceneId": "s37",
+      "text": "Just as Gösta Berling now saw her, on her way home from the charcoal kilns, with sooty hands, and a clay-pipe in her mouth, dressed in a short, unlined sheepskin jacket and striped homespun skirt, with tarred shoes on her feet and a sheath-knife in her bosom, as he saw her with gray hair combed back from an old, beautiful face, so had he heard her described a thousand times, and he knew that he had come across the far-famed major’s wife of Ekeby."
+    },
+    {
+      "id": "s37-57",
+      "sceneId": "s37",
+      "text": "She was the most influential woman in all Värmland, mistress of seven iron-works, accustomed to command and to be obeyed; and he was only a poor, condemned man, stripped of everything, knowing that every road was too heavy for him, every room too crowded. His body shook with terror, while her glance rested on him."
+    },
+    {
+      "id": "s37-58",
+      "sceneId": "s37",
+      "text": "She stood silent and looked at the human wretchedness before her, the red, swollen hands, the emaciated form, and the splendid head, which even in its ruin and neglect shone in wild beauty."
+    },
+    {
+      "id": "s37-59",
+      "sceneId": "s37",
+      "text": "“You are Gösta Berling, the mad priest?” she said, peering at him."
+    },
+    {
+      "id": "s37-60",
+      "sceneId": "s37",
+      "text": "The beggar sat motionless."
+    },
+    {
+      "id": "s37-61",
+      "sceneId": "s37",
+      "text": "“I am the mistress of Ekeby.”"
+    },
+    {
+      "id": "s37-62",
+      "sceneId": "s37",
+      "text": "A shudder passed over the beggar’s body. He clasped his hands and raised his eyes with a longing glance. What would she do with him? Would she force him to live? He shook before her strength. And yet he had so nearly reached the peace of the eternal forests."
+    },
+    {
+      "id": "s37-63",
+      "sceneId": "s37",
+      "text": "She began the struggle by telling him the minister’s daughter had got her sledge and her meal-sack again, and that she, the major’s wife, had a shelter for him as for so many other homeless wretches in the bachelor’s wing at Ekeby."
+    },
+    {
+      "id": "s37-64",
+      "sceneId": "s37",
+      "text": "She offered him a life of idleness and pleasure, but he answered he must die."
+    },
+    {
+      "id": "s37-65",
+      "sceneId": "s37",
+      "text": "Then she struck the table with her clenched fist and let him hear what she thought of him."
+    },
+    {
+      "id": "s37-66",
+      "sceneId": "s37",
+      "text": "“So you want to die, that’s what you want. That would not surprise me, if you were alive. Look, such a wasted body and such powerless limbs and such dull eyes, and you think that there is something left of you to die. Do you think that you have to lie stiff and stark with a coffin-lid nailed down over you to be dead? Don’t you believe that I stand here and see how dead you are, Gösta Berling?"
+    },
+    {
+      "id": "s37-67",
+      "sceneId": "s37",
+      "text": "“I see that you have a skull for a head, and it seems to me as if the worms were creeping out of the sockets of your eyes. Do you not feel that your mouth is full of dust? Do you not hear how your bones rattle when you move?"
+    },
+    {
+      "id": "s37-68",
+      "sceneId": "s37",
+      "text": "“You have drowned yourself in brandy, Gösta Berling, and you are dead."
+    },
+    {
+      "id": "s37-69",
+      "sceneId": "s37",
+      "text": "“That which now moves in you is only death spasms, and you will not allow them to live, if you call that life. It is just as if you grudged the dead a dance over the graves in the starlight."
+    },
+    {
+      "id": "s37-70",
+      "sceneId": "s37",
+      "text": "“Are you ashamed that you were dismissed, since you wish to die now? It would have been more to your honor had you made use of your gifts and been of some use on God’s green earth, I tell you. Why did you not come directly to me? I should have arranged everything for you. Yes, now you expect much glory from being wrapped in a winding-sheet and laid on saw-dust and called a beautiful corpse.”"
+    },
+    {
+      "id": "s37-71",
+      "sceneId": "s37",
+      "text": "The beggar sat calm, almost smiling, while she thundered out her angry words. There was no danger, he rejoiced, no danger. The eternal forests wait, and she has no power to turn thy soul from them."
+    },
+    {
+      "id": "s37-72",
+      "sceneId": "s37",
+      "text": "But the major’s wife was silent and walked a couple of times up and down the room; then she took a seat before the fire, put her feet on the fender, and leaned her elbows on her knees."
+    },
+    {
+      "id": "s37-73",
+      "sceneId": "s37",
+      "text": "“Thousand devils!” she said, and laughed softly to herself. “It is truer, what I am saying, than I myself thought. Don’t you believe, Gösta Berling, that most of the people in this world are dead or half-dead? Do you think that I am alive? No! No, indeed!"
+    },
+    {
+      "id": "s37-74",
+      "sceneId": "s37",
+      "text": "“Yes, look at me! I am the mistress of Ekeby, and I am the most powerful in Värmland. If I wave one finger the governor comes, if I wave with two the bishop comes, and if I wave with three all the chapter and the aldermen and mine-owners in Värmland dance to my music in Karlstad’s market-place. A thousand devils! Boy, I tell you that I am only a dressed-up corpse. God knows how little life there is in me.”"
+    },
+    {
+      "id": "s37-75",
+      "sceneId": "s37",
+      "text": "The beggar leaned forward on his chair and listened with strained attention. The old woman sat and rocked before the fire. She did not look at him while she talked."
+    },
+    {
+      "id": "s37-76",
+      "sceneId": "s37",
+      "text": "“Don’t you know,” she continued, “that if I were a living being, and saw you sitting there, wretched and deplorable with suicidal thoughts, don’t you believe that I should take them out of you in a second? I should have tears for you and prayers, which would turn you upside down, and I should save your soul; but now I am dead."
+    },
+    {
+      "id": "s37-77",
+      "sceneId": "s37",
+      "text": "“Have you heard that I once was the beautiful Margareta Celsing? That was not yesterday, but I can still sit and weep my old eyes red for her. Why shall Margareta Celsing be dead, and Margareta Samzelius live? Why shall the major’s wife at Ekeby live?—tell me that, Gösta Berling."
+    },
+    {
+      "id": "s37-78",
+      "sceneId": "s37",
+      "text": "“Do you know what Margareta Celsing was like? She was slender and delicate and modest and innocent, Gösta Berling. She was one over whose grave angels weep."
+    },
+    {
+      "id": "s37-79",
+      "sceneId": "s37",
+      "text": "“She knew nothing of evil, no one had ever given her pain, she was good to all. And she was beautiful, really beautiful."
+    },
+    {
+      "id": "s37-80",
+      "sceneId": "s37",
+      "text": "“There was a man, his name was Altringer. God knows how he happened to be travelling up there in Älfdal wildernesses, where her parents had their iron-works. Margareta Celsing saw him; he was a handsome man, and she loved him."
+    },
+    {
+      "id": "s37-81",
+      "sceneId": "s37",
+      "text": "“But he was poor, and they agreed to wait for one another five years, as it is in the legend. When three years had passed another suitor came. He was ugly and bad, but her parents believed that he was rich, and they forced Margareta Celsing, by fair means and foul, by blows and hard words, to take him for her husband. And that day, you see, Margareta Celsing died."
+    },
+    {
+      "id": "s37-82",
+      "sceneId": "s37",
+      "text": "“After that there was no Margareta Celsing, only Major Samzelius’s wife, and she was not good nor modest; she believed in much evil and never thought of the good."
+    },
+    {
+      "id": "s37-83",
+      "sceneId": "s37",
+      "text": "“You know well enough what happened afterwards. We lived at Sjö by the Lake Löfven, the major and I. But he was not rich, as people had said. I often had hard days."
+    },
+    {
+      "id": "s37-84",
+      "sceneId": "s37",
+      "text": "“Then Altringer came again, and now he was rich. He became master of Ekeby, which lies next to Sjö; he made himself master of six other estates by Lake Löfven. He was able, thrifty; he was a man of mark."
+    },
+    {
+      "id": "s37-85",
+      "sceneId": "s37",
+      "text": "“He helped us in our poverty; we drove in his carriages; he sent food to our kitchen, wine to our cellar. He filled my life with feasting and pleasure. The major went off to the wars, but what did we care for that? One day I was a guest at Ekeby, the next he came to Sjö. Oh, it was like a long dance of delight on Löfven’s shores."
+    },
+    {
+      "id": "s37-86",
+      "sceneId": "s37",
+      "text": "“But there was evil talk of Altringer and me. If Margareta Celsing had been living, it would have given her much pain, but it made no difference to me. But as yet I did not understand that it was because I was dead that I had no feeling."
+    },
+    {
+      "id": "s37-87",
+      "sceneId": "s37",
+      "text": "“At last the tales of us reached my father and mother, as they went among the charcoal kilns up in Älfdal’s forest. My mother did not stop to think; she travelled hither to talk to me."
+    },
+    {
+      "id": "s37-88",
+      "sceneId": "s37",
+      "text": "“One day, when the major was away and I sat dining with Altringer and several others, she arrived. I saw her come into the room, but I could not feel that she was my mother, Gösta Berling. I greeted her as a stranger, and invited her to sit down at my table and take part in the meal."
+    },
+    {
+      "id": "s37-89",
+      "sceneId": "s37",
+      "text": "“She wished to talk with me, as if I had been her daughter, but I said to her that she was mistaken, that my parents were dead, they had both died on my wedding day."
+    },
+    {
+      "id": "s37-90",
+      "sceneId": "s37",
+      "text": "“Then she agreed to the comedy. She was sixty years old; a hundred and twenty miles had she driven in three days. Now she sat without ceremony at the dinner-table and ate her food; she was a strong and capable woman."
+    },
+    {
+      "id": "s37-91",
+      "sceneId": "s37",
+      "text": "“She said that it was very sad that I had had such a loss just on that day."
+    },
+    {
+      "id": "s37-92",
+      "sceneId": "s37",
+      "text": "“‘The saddest thing was,’ I said, ‘that my parents did not die a day sooner; then the wedding would never have taken place.’"
+    },
+    {
+      "id": "s37-93",
+      "sceneId": "s37",
+      "text": "“‘Is not the gracious lady pleased with her marriage?’ she then asked."
+    },
+    {
+      "id": "s37-94",
+      "sceneId": "s37",
+      "text": "“‘Oh, yes,’ said I, ‘I am pleased. I shall always be pleased to obey my dear parents’ wish!’"
+    },
+    {
+      "id": "s37-95",
+      "sceneId": "s37",
+      "text": "“She asked if it had been my parents’ wish that I should heap shame upon myself and them and deceive my husband. I did my parents little honor by making myself a byword in every man’s mouth."
+    },
+    {
+      "id": "s37-96",
+      "sceneId": "s37",
+      "text": "“‘They must lie as they have made their bed,’ I answered her. And moreover I wished her to understand, that I did not intend to allow any one to calumniate my parents’ daughter."
+    },
+    {
+      "id": "s37-97",
+      "sceneId": "s37",
+      "text": "“We ate, we two. The men about us sat silent and could not lift knife nor fork."
+    },
+    {
+      "id": "s37-98",
+      "sceneId": "s37",
+      "text": "“She stayed a day to rest, then she went. But all the time I saw her, I could not understand that she was my mother. I only knew that my mother was dead."
+    },
+    {
+      "id": "s37-99",
+      "sceneId": "s37",
+      "text": "“When she was ready to leave, Gösta Berling, and I stood beside her on the steps, and the carriage was before the door, she said to me:—"
+    },
+    {
+      "id": "s37-100",
+      "sceneId": "s37",
+      "text": "“‘Twenty-four hours have I been here, without your greeting me as your mother. By lonely roads I came here, a hundred and twenty miles in three days. And for shame for you my body is trembling, as if it had been beaten with rods. May you be disowned, as I have been disowned, repudiated as I have been repudiated! May the highway be your home, the hay-stack your bed, the charcoal-kiln your stove! May shame and dishonor be your reward; may others strike you, as I strike you!’"
+    },
+    {
+      "id": "s37-101",
+      "sceneId": "s37",
+      "text": "“And she gave me a heavy blow on the cheek."
+    },
+    {
+      "id": "s37-102",
+      "sceneId": "s37",
+      "text": "“But I lifted her up, carried her down the steps, and put her in her carriage."
+    },
+    {
+      "id": "s37-103",
+      "sceneId": "s37",
+      "text": "“‘Who are you, that you curse me?’ I asked; ‘who are you that you strike me? That I will suffer from no one.’"
+    },
+    {
+      "id": "s37-104",
+      "sceneId": "s37",
+      "text": "“And I gave her the blow again."
+    },
+    {
+      "id": "s37-105",
+      "sceneId": "s37",
+      "text": "“The carriage drove away, but then, at that moment, Gösta Berling, I knew that Margareta Celsing was dead."
+    },
+    {
+      "id": "s37-106",
+      "sceneId": "s37",
+      "text": "“She was good and innocent; she knew no evil. Angels had wept at her grave. If she had lived, she would not have struck her mother.”"
+    },
+    {
+      "id": "s37-107",
+      "sceneId": "s37",
+      "text": "The beggar by the door had listened, and the words for a moment had drowned the sound of the eternal forests’ alluring murmur. For see, this great lady, she made herself his equal in sin, his sister in perdition, to give him courage to live. For he should learn that sorrow and wrong-doing weighed down other heads than his. He rose and went over to the major’s wife."
+    },
+    {
+      "id": "s37-108",
+      "sceneId": "s37",
+      "text": "“Will you live now? Gösta Berling?” she asked with a voice which broke with tears. “Why should you die? You could have been such a good priest, but it was never Gösta Berling whom you drowned in brandy, he as gleamingly innocent-white as that Margareta Celsing I suffocated in hate. Will you live?”"
+    },
+    {
+      "id": "s37-109",
+      "sceneId": "s37",
+      "text": "Gösta fell on his knees before her."
+    },
+    {
+      "id": "s37-110",
+      "sceneId": "s37",
+      "text": "“Forgive me,” he said, “I cannot.”"
+    },
+    {
+      "id": "s37-111",
+      "sceneId": "s37",
+      "text": "“I am an old woman, hardened by much sorrow,” answered the major’s wife, “and I sit here and give myself as a prize to a beggar, whom I have found half-frozen in a snow-drift by the roadside. It serves me right. Let him go and kill himself; then at least he won’t be able to tell of my folly.”"
+    },
+    {
+      "id": "s37-112",
+      "sceneId": "s37",
+      "text": "“I am no suicide, I am condemned to die. Do not make the struggle too hard for me! I may not live. My body has taken possession of my soul, therefore I must let it escape and go to God.”"
+    },
+    {
+      "id": "s37-113",
+      "sceneId": "s37",
+      "text": "“And so you believe you will get there?”"
+    },
+    {
+      "id": "s37-114",
+      "sceneId": "s37",
+      "text": "“Farewell, and thank you!”"
+    },
+    {
+      "id": "s37-115",
+      "sceneId": "s37",
+      "text": "“Farewell, Gösta Berling.”"
+    },
+    {
+      "id": "s37-116",
+      "sceneId": "s37",
+      "text": "The beggar rose and walked with hanging head and dragging step to the door. This woman made the way up to the great forests heavy for him."
+    },
+    {
+      "id": "s37-117",
+      "sceneId": "s37",
+      "text": "When he came to the door, he had to look back. Then he met her glance, as she sat still and looked after him. He had never seen such a change in any face, and he stood and stared at her. She, who had just been angry and threatening, sat transfigured, and her eyes shone with a pitying, compassionate love."
+    },
+    {
+      "id": "s37-118",
+      "sceneId": "s37",
+      "text": "There was something in him, in his own wild heart, which burst before that glance; he leaned his forehead against the door-post, stretched his arms up over his head, and wept as if his heart would break."
+    },
+    {
+      "id": "s37-119",
+      "sceneId": "s37",
+      "text": "The major’s wife tossed her clay-pipe into the fire and came over to Gösta. Her movements were as tender as a mother’s."
+    },
+    {
+      "id": "s37-120",
+      "sceneId": "s37",
+      "text": "“There, there, my boy!”"
+    },
+    {
+      "id": "s37-121",
+      "sceneId": "s37",
+      "text": "And she got him down beside her on the bench by the door, so that he wept with his head on her knees."
+    },
+    {
+      "id": "s37-122",
+      "sceneId": "s37",
+      "text": "“Will you still die?”"
+    },
+    {
+      "id": "s37-123",
+      "sceneId": "s37",
+      "text": "Then he wished to rush away. She had to hold him back by force."
+    },
+    {
+      "id": "s37-124",
+      "sceneId": "s37",
+      "text": "“Now I tell you that you may do as you please. But I promise you that, if you will live, I will take to me the daughter of the Broby minister and make a human being of her, so that she can thank her God that you stole her meal. Now will you?”"
+    },
+    {
+      "id": "s37-125",
+      "sceneId": "s37",
+      "text": "He raised his head and looked her right in the eyes."
+    },
+    {
+      "id": "s37-126",
+      "sceneId": "s37",
+      "text": "“Do you mean it?”"
+    },
+    {
+      "id": "s37-127",
+      "sceneId": "s37",
+      "text": "“I do, Gösta Berling.”"
+    },
+    {
+      "id": "s37-128",
+      "sceneId": "s37",
+      "text": "Then he wrung his hands in anguish. He saw before him the peering eyes, the compressed lips, the wasted little hands. This young creature would get protection and care, and the marks of degradation be effaced from her body, anger from her soul. Now the way up to the eternal forests was closed to him."
+    },
+    {
+      "id": "s37-129",
+      "sceneId": "s37",
+      "text": "“I shall not kill myself as long as she is under your care,” he said. “I knew well enough that you would force me to live. I felt that you were stronger than I.”"
+    },
+    {
+      "id": "s37-130",
+      "sceneId": "s37",
+      "text": "“Gösta Berling,” she said solemnly, “I have fought for you as for myself. I said to God: ‘If there is anything of Margareta Celsing living in me, let her come forward and show herself, so that this man may not go and kill himself.’ And He granted it, and you saw her, and therefore you could not go. And she whispered to me that for that poor child’s sake you would give up your plan of dying. Ah, you fly, you wild birds, but our Lord knows the net which will catch you.”"
+    },
+    {
+      "id": "s37-131",
+      "sceneId": "s37",
+      "text": "“He is a great and wonderful God,” said Gösta Berling. “He has mocked me and cast me out, but He will not let me die. May His will be done!”"
+    },
+    {
+      "id": "s37-132",
+      "sceneId": "s37",
+      "text": "From that day Gösta Berling became a guest at Ekeby. Twice he tried to leave and make himself a way to live by his own work. The first time the major’s wife gave him a cottage near Ekeby; he moved thither and meant to live as a laborer. This succeeded for a while, but he soon wearied of the loneliness and the daily labor, and again returned as a guest. There was another time, when he became tutor at Borg for Count Henry Dohna. During this time he fell in love with the young Ebba Dohna, the count’s sister; but when she died, just as he thought he had nearly won her, he gave up every thought of being anything but guest at Ekeby. It seemed to him that for a dismissed priest all ways to make amends were closed."
+    },
     {
       "id": "s0-0",
       "sceneId": "s0",

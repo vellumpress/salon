@@ -241,7 +241,9 @@ test("Mira batch-2 poem-chapter binds stay one poem per scene", () => {
     const full = load("texts", id);
     assert.ok(full, id);
     assert.ok(full!.scenes.length >= want.minScenes, `${id} scenes ${full!.scenes.length}`);
-    assert.equal(full!.scenes[0]?.title, want.first, id);
+    // OPEN-FIX-2: a re-bound book may keep its dedication and acknowledgment
+    // as front scenes; the first poem is the first scene a fresh Sit opens on.
+    assert.equal(full!.scenes.find((scene) => scene.front !== true)?.title, want.first, id);
     assert.equal(
       full!.scenes.some((scene) => /^(Chapter|Part|Introduction|Two Poems|Title)\b/i.test(scene.title)),
       false,
@@ -338,7 +340,7 @@ test("The Pier-Glass binds all 25 poems of the 1921 Secker edition, one breath e
 });
 
 test("Mira poetry re-bind pack: one scene per printed poem, counts and card from the bind", () => {
-  assert.equal(POETRY_REBIND_IDS.length, 46);
+  assert.equal(POETRY_REBIND_IDS.length, 51);
   for (const id of POETRY_REBIND_IDS) {
     const full = load("texts", id);
     assert.ok(full, id);

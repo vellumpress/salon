@@ -105,6 +105,16 @@ export const POETRY_REBIND_IDS = [
   "toward-the-gulf",
   "young-adventure",
   "drum-taps",
+  // OPEN-FIX-2: older verse books that were bound one line per breath, re-bound
+  // from source one scene per printed poem with a breath per printed stanza
+  // (A Boy's Will's stanza breaks, lost in Gutenberg 3021, taken from the
+  // 1915 Holt printing); contents cut, dedications, acknowledgments,
+  // prefaces and introductions tagged front.
+  "a-boy-s-will",
+  "the-listeners-and-other-poems",
+  "the-black-christ-and-other-poems",
+  "poems-jessie-lemont-translation",
+  "poems-hot-houses-bernard-miall",
 ] as const;
 
 /**
