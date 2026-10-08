@@ -12,7 +12,7 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import { curatorialTrack, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES } from "./rituals.ts";
 import { openingBreathIndex } from "../opening-scene.ts";
-import { POETRY_REBIND_IDS } from "./poetry-bind.ts";
+import { CARD_AFTER_PRINTED_NOTE_IDS, POETRY_REBIND_IDS } from "./poetry-bind.ts";
 import type { Work } from "../literature.ts";
 
 /** Full local novels whose stub openings were deleted so Pages cannot strand readers. */
@@ -75,6 +75,21 @@ function opensOnFirstLine(full: unknown, opening: string) {
     if (text.length > 60) return false;
   }
   return false;
+}
+
+/**
+ * Plays whose first scene opens on a printed note to the reader (Six
+ * Characters' "N.B. The Comedy is without acts or scenes…") card the first
+ * real lines of the play just after that note, so the card never shows the
+ * note above "Act I". The note stays in the book as the act's first breath.
+ */
+function opensAfterPrintedNote(full: unknown, opening: string) {
+  const work = full as Work;
+  const at = openingBreathIndex(work);
+  return (
+    (work.breaths[at]?.text ?? "").startsWith("*N.B. ") &&
+    (work.breaths[at + 1]?.text ?? "").startsWith(opening)
+  );
 }
 
 function assertNoStubOpening(id: string) {
@@ -2261,7 +2276,13 @@ test("Tier B batches 13–14 are local format-min binds, never Featured", () => 
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
+    const opening = work!.opening ?? "\u0000";
+    assert.ok(
+      (CARD_AFTER_PRINTED_NOTE_IDS as readonly string[]).includes(id)
+        ? opensAfterPrintedNote(full, opening)
+        : opensOnFirstLine(full, opening),
+      `${id} shelf opening`,
+    );
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
   const salammbo = SHELF.find((item) => item.id === "salammbo");

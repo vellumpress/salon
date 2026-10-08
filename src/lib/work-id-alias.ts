@@ -4,6 +4,7 @@
  */
 export const WORK_ID_ALIASES: Readonly<Record<string, string>> = {
   immoralist: "the-immoralist",
+  "three-plays": "three-plays-incl-henry-iv",
 };
 
 export function canonicalWorkId(id: string): string {
