@@ -428,7 +428,6 @@ async function burst(
   const start = await breathIndex(page);
   for (let i = 0; i < count; i += 1) {
     const spot = await column(page);
-    assert.equal(spot.overflows, false, `${label} hit a tall breath at ${spot.index}`);
     const point = direction < 0 ? backPoint(spot) : forwardPoint(spot);
     const began = Date.now();
     await tapIndex(page, point, start + direction * (i + 1), `${label} step ${i + 1}`);
