@@ -1,4 +1,5 @@
 import { isDeviceImport } from "./import/private.ts";
+import { keptBreathId } from "./kept-lines.ts";
 import type { WorkProgress } from "./store";
 
 export type LastReadProgress = {
@@ -55,7 +56,8 @@ export function keptRefs(
   const rows: KeptRef[] = [];
   for (const [workId, item] of Object.entries(progress)) {
     if (isDeviceImport(workId)) continue;
-    for (const breathId of item.kept ?? []) {
+    for (const entry of item.kept ?? []) {
+      const breathId = keptBreathId(entry);
       if (!breathId) continue;
       rows.push({
         workId,

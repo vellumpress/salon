@@ -533,7 +533,7 @@ function LineOfDay({
   progress: Record<string, WorkProgress>;
   hydrated: boolean;
 }) {
-  const lines = useKeptLines(progress, hydrated, 24);
+  const { lines } = useKeptLines(progress, hydrated, 24);
   const now = new Date();
   const day = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
   const line = useMemo(() => {

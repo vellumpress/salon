@@ -33,7 +33,16 @@ import {
   type SitClock,
 } from "./active-read.ts";
 import { bumpDayCount, touchWorkOnDay } from "./reading-score.ts";
+import { readBreathRemap } from "./breath-remap.ts";
 import { isDeviceImport } from "./import/private.ts";
+import {
+  keptIncludes,
+  migrateKeptList,
+  needsKeptBackfill,
+  retargetKeptList,
+  toggleKeptList,
+  type KeptStored,
+} from "./kept-lines.ts";
 import { canonicalWorkId, remapAliasedWorkIds } from "./work-id-alias.ts";
 
 export { dayKey };
@@ -43,7 +52,11 @@ export type WorkProgress = {
   lastOpenedAt: number;
   sittingStartedAt: number | null;
   keywords: Record<string, string>;
-  kept: string[];
+  /**
+   * Kept sentences. A string is a breath id from an older save. A record
+   * also holds the sentence, so a later re-bind cannot erase it.
+   */
+  kept: KeptStored[];
   completedAt: number | null;
   entered: boolean;
   /**
@@ -180,7 +193,13 @@ type TbrState = {
   startSitting: (workId: string, opts?: { restart?: boolean }) => void;
   endSitting: (workId: string) => void;
   saveKeyword: (workId: string, sceneId: string, keyword: string) => void;
-  toggleKept: (workId: string, breathId: string) => void;
+  toggleKept: (
+    workId: string,
+    breathId: string,
+    snapshot?: { text: string; title: string; author: string; scene?: string },
+  ) => void;
+  /** Point a kept line at a breath id that still holds its sentence. */
+  retargetKept: (workId: string, fromId: string, toId: string) => void;
   complete: (workId: string) => void;
   resetWork: (workId: string) => void;
   stale: (workId: string, index: number) => void;
@@ -766,14 +785,25 @@ export const useTbr = create<TbrState>()(
             },
           };
         }),
-      toggleKept: (workId, breathId) =>
+      toggleKept: (workId, breathId, snapshot) =>
         set((state) => {
           const current = state.progress[workId] ?? emptyProgress();
-          const adding = !current.kept.includes(breathId);
-          const kept = adding
-            ? [...current.kept, breathId]
-            : current.kept.filter((id) => id !== breathId);
           const now = Date.now();
+          const adding = !keptIncludes(current.kept, breathId);
+          const kept = toggleKeptList(
+            workId,
+            current.kept,
+            breathId,
+            snapshot
+              ? {
+                  text: snapshot.text,
+                  title: snapshot.title,
+                  author: snapshot.author,
+                  scene: snapshot.scene,
+                  savedAt: now,
+                }
+              : null,
+          );
           const day = dayKey(now);
           return {
             progress: {
@@ -781,6 +811,19 @@ export const useTbr = create<TbrState>()(
               [workId]: { ...current, kept, lastOpenedAt: now },
             },
             ...(adding ? { keepsByDay: bumpDayCount(state.keepsByDay, day, 1) } : {}),
+          };
+        }),
+      retargetKept: (workId, fromId, toId) =>
+        set((state) => {
+          const current = state.progress[workId];
+          if (!current) return {};
+          const kept = retargetKeptList(current.kept, fromId, toId);
+          if (kept === current.kept) return {};
+          return {
+            progress: {
+              ...state.progress,
+              [workId]: { ...current, kept },
+            },
           };
         }),
       complete: (workId) =>
@@ -902,6 +945,60 @@ export const useTbr = create<TbrState>()(
 
 export const useChamber = useTbr;
 
+let keptBackfillStarted = false;
+
+/** Id-only keeps: copy the sentence from the catalog when the breath is still there. */
+function scheduleKeptBackfill() {
+  if (keptBackfillStarted || typeof window === "undefined") return;
+  keptBackfillStarted = true;
+  const run = () => {
+    void backfillKeptLines();
+  };
+  if (useTbr.persist.hasHydrated()) run();
+  else useTbr.persist.onFinishHydration(run);
+}
+
+async function backfillKeptLines() {
+  const remap = readBreathRemap();
+  const { loadWork, workIsComplete } = await import("./works.ts");
+  const started = useTbr.getState().progress;
+  const updates: { workId: string; before: string; kept: WorkProgress["kept"] }[] = [];
+  for (const [workId, row] of Object.entries(started)) {
+    if (!row || isDeviceImport(workId) || !needsKeptBackfill(row.kept)) continue;
+    const before = JSON.stringify(row.kept ?? []);
+    let work;
+    try {
+      work = await loadWork(workId);
+    } catch {
+      work = undefined;
+    }
+    const fresh = useTbr.getState().progress[workId];
+    if (!fresh || JSON.stringify(fresh.kept ?? []) !== before) continue;
+    const result = migrateKeptList(
+      workId,
+      fresh.kept,
+      work,
+      remap,
+      Boolean(work) && workIsComplete(workId),
+      fresh.lastOpenedAt || 0,
+    );
+    if (!result.changed) continue;
+    updates.push({ workId, before, kept: result.kept });
+  }
+  if (updates.length === 0) return;
+  useTbr.setState((state) => {
+    let progress = state.progress;
+    let changed = false;
+    for (const update of updates) {
+      const latest = progress[update.workId];
+      if (!latest || JSON.stringify(latest.kept ?? []) !== update.before) continue;
+      progress = { ...progress, [update.workId]: { ...latest, kept: update.kept } };
+      changed = true;
+    }
+    return changed ? { progress } : {};
+  });
+}
+
 if (typeof window !== "undefined") {
   window.addEventListener("pagehide", () => {
     const progress = pauseAllAnchors(useTbr.getState().progress);
@@ -918,6 +1015,7 @@ if (typeof window !== "undefined") {
     }
     flushPersist();
   });
+  scheduleKeptBackfill();
 }
 
 export function shouldReenter(progress: WorkProgress | undefined) {

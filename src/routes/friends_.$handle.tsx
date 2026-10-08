@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState, type ReactNode } from "react";
-import { useKeptLines } from "@/components/kept-sentences";
+import { KeptReadLink, useKeptLines } from "@/components/kept-sentences";
 import { usePersistHydrated } from "@/components/resume-link";
 import {
   compactWhen,
@@ -135,7 +135,7 @@ function FriendProfilePage() {
     if (!hosted) return null;
     return profileFromDirectory(hosted, following, remote.byHandle[hosted.handle] ?? []);
   }, [hydrated, rawHandle, graph, hosted, following, remote.byHandle]);
-  const kept = useKeptLines(profile?.isSelf ? progress : {}, hydrated);
+  const { lines: kept } = useKeptLines(profile?.isSelf ? progress : {}, hydrated);
   const activity = useMemo(() => {
     if (!profile) return [];
     return profile.activity.map((item) => {
@@ -494,17 +494,32 @@ function ActivityRow({
         ) : null}
       </div>
       {item.workId ? (
-        <Link
-          to="/read/$workId"
-          params={{ workId: item.workId }}
-          search={typeof item.atIndex === "number" && item.atIndex >= 0 ? { at: item.atIndex } : {}}
-          className="flex h-12 items-center gap-3 border-t border-ink px-4 font-sans text-sm"
-        >
-          <span className="shrink-0">Read along</span>
-          {item.workTitle ? (
-            <span className="min-w-0 flex-1 truncate text-right font-serif text-ink/60">{item.workTitle}</span>
-          ) : null}
-        </Link>
+        item.kind === "kept" ? (
+          <KeptReadLink
+            workId={item.workId}
+            breathId={item.breathId}
+            text={item.line}
+            at={item.atIndex}
+            className="flex h-12 items-center gap-3 border-t border-ink px-4 font-sans text-sm"
+          >
+            <span className="shrink-0">Read along</span>
+            {item.workTitle ? (
+              <span className="min-w-0 flex-1 truncate text-right font-serif text-ink/60">{item.workTitle}</span>
+            ) : null}
+          </KeptReadLink>
+        ) : (
+          <Link
+            to="/read/$workId"
+            params={{ workId: item.workId }}
+            search={typeof item.atIndex === "number" && item.atIndex >= 0 ? { at: item.atIndex } : {}}
+            className="flex h-12 items-center gap-3 border-t border-ink px-4 font-sans text-sm"
+          >
+            <span className="shrink-0">Read along</span>
+            {item.workTitle ? (
+              <span className="min-w-0 flex-1 truncate text-right font-serif text-ink/60">{item.workTitle}</span>
+            ) : null}
+          </Link>
+        )
       ) : null}
       {pledgePending && onSat && onAside ? (
         <div className="grid grid-cols-2 border-t border-ink">

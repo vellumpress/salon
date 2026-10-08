@@ -54,6 +54,29 @@ test("lastReadCue names progress without requiring a catalog lookup", () => {
   assert.equal(lastReadPercent(3), null);
 });
 
+test("keptRefs reads a line stored with its sentence", () => {
+  const rows = keptRefs({
+    passing: progress({
+      lastOpenedAt: 5,
+      kept: [
+        {
+          v: 1,
+          id: "s0-1",
+          text: "The letter.",
+          workId: "passing",
+          title: "Passing",
+          author: "Nella Larsen",
+          savedAt: 5,
+        },
+      ],
+    }),
+  });
+  assert.deepEqual(
+    rows.map((row) => row.breathId),
+    ["s0-1"],
+  );
+});
+
 test("keptRefs honors a small limit and Infinity for the full collection", () => {
   const progressMap = Object.fromEntries(
     Array.from({ length: 30 }, (_, i) => [

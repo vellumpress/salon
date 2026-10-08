@@ -48,7 +48,7 @@ export type ReadProgress = {
   entered?: boolean;
   completedAt?: number | null;
   breathIndex?: number;
-  kept?: string[];
+  kept?: readonly unknown[];
 };
 
 const LANE_BY_WORK = new Map<string, string>();
