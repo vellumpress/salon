@@ -316,3 +316,128 @@ test(
     }
   },
 );
+
+function pdfEscape(text: string) {
+  return text.replace(/[\\()]/g, (ch) => `\\${ch}`);
+}
+
+/** A few sentences on one page, same shape as the tap-test PDF. */
+function fixturePdf(count: number): Uint8Array {
+  const lines: string[] = [];
+  for (let i = 1; i <= count; i += 1) {
+    lines.push(`Imported sentence ${String(i).padStart(2, "0")} ends here.`);
+  }
+  const ops = ["BT", "/F1 12 Tf", "72 740 Td"];
+  lines.forEach((line, i) => {
+    if (i > 0) ops.push("0 -28 Td");
+    ops.push(`(${pdfEscape(line)}) Tj`);
+  });
+  ops.push("ET");
+  const stream = ops.join("\n");
+  const chunks = [
+    { id: 1, body: "<< /Type /Catalog /Pages 2 0 R >>" },
+    { id: 2, body: "<< /Type /Pages /Kids [4 0 R] /Count 1 >>" },
+    { id: 3, body: "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>" },
+    {
+      id: 4,
+      body: "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 5 0 R /Resources << /Font << /F1 3 0 R >> >> >>",
+    },
+    { id: 5, body: `<< /Length ${stream.length} >>\nstream\n${stream}\nendstream` },
+  ];
+  let pdf = "%PDF-1.4\n";
+  const offsets: number[] = [0];
+  for (const obj of chunks) {
+    offsets[obj.id] = pdf.length;
+    pdf += `${obj.id} 0 obj\n${obj.body}\nendobj\n`;
+  }
+  const xref = pdf.length;
+  pdf += `xref\n0 ${chunks.length + 1}\n`;
+  pdf += "0000000000 65535 f \n";
+  for (let i = 1; i <= chunks.length; i += 1) {
+    pdf += `${String(offsets[i]).padStart(10, "0")} 00000 n \n`;
+  }
+  pdf += `trailer\n<< /Size ${chunks.length + 1} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF\n`;
+  return new TextEncoder().encode(pdf);
+}
+
+async function phone(browser: Browser) {
+  const context = await browser.newContext({
+    viewport: {
+      width: READER_PHONE_VIEWPORT.width,
+      height: READER_PHONE_VIEWPORT.height,
+    },
+    hasTouch: READER_PHONE_VIEWPORT.hasTouch,
+    isMobile: READER_PHONE_VIEWPORT.isMobile,
+    deviceScaleFactor: 2,
+  });
+  const page = await context.newPage();
+  await page.addInitScript(() => localStorage.clear());
+  return page;
+}
+
+async function beginSit(page: Page) {
+  const veil = page.locator(".veil");
+  await veil.waitFor({ timeout: 20_000 });
+  const alone = veil.getByRole("button", { name: "Alone", exact: true });
+  const begin = veil.getByRole("button", { name: "Begin", exact: true });
+  const sit = veil.getByRole("button", { name: "Sit", exact: true });
+  if (await alone.count()) await alone.click();
+  else if (await begin.count()) await begin.click();
+  else await sit.last().click();
+  await page.locator(".breath-now").waitFor({ timeout: 20_000 });
+  await page.waitForFunction(() => !document.querySelector(".veil"), { timeout: 15_000 });
+}
+
+/** The bar must stay shut across the paint after the gate lifts, before any turn. */
+async function assertBarStaysClosed(page: Page) {
+  const started = Date.now();
+  while (Date.now() - started < 600) {
+    const snap = await bar(page);
+    assert.equal(snap.state, "closed", "opening the sit showed the bar");
+    assert.equal(snap.opacity, "0", "Keep was visible when the sit opened");
+    await page.waitForTimeout(40);
+  }
+}
+
+async function openFromHourglass(page: Page) {
+  const before = await bar(page);
+  await page.locator(".reader-glass").click();
+  await page.waitForFunction(
+    () => document.querySelector("[data-reader-bar]")?.getAttribute("data-reader-bar") === "open",
+  );
+  const opened = await bar(page);
+  assert.equal(opened.state, "open", "hourglass tap did not open the bar");
+  assert.equal(opened.opacity, "1");
+  assert.equal(opened.text, before.text, "hourglass tap turned the page");
+}
+
+test(
+  "opening a sit keeps the bar shut until the hourglass, in a book and an imported PDF",
+  { timeout: 240_000 },
+  async () => {
+    const stop = await ensureServer();
+    const browser = await launchBrowser();
+    try {
+      const catalog = await phone(browser);
+      await catalog.goto(`${ORIGIN}/salon/read/passing`, { waitUntil: "domcontentloaded" });
+      await beginSit(catalog);
+      await assertBarStaysClosed(catalog);
+      await openFromHourglass(catalog);
+
+      const imported = await phone(browser);
+      await imported.goto(`${ORIGIN}/salon/page`, { waitUntil: "domcontentloaded" });
+      await imported.locator('input[type="file"]').setInputFiles({
+        name: "fixture.pdf",
+        mimeType: "application/pdf",
+        buffer: Buffer.from(fixturePdf(4)),
+      });
+      await imported.waitForURL(/\/read\/page/, { timeout: 30_000 });
+      await beginSit(imported);
+      await assertBarStaysClosed(imported);
+      await openFromHourglass(imported);
+    } finally {
+      await browser.close();
+      await stop();
+    }
+  },
+);
