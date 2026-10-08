@@ -82,17 +82,24 @@ export function ghostMousePointer(input: {
   y?: number;
   lastX?: number | null;
   lastY?: number | null;
+  places?: { x: number; y: number; t: number }[];
 }): boolean {
   if (input.pointerType !== "mouse") return false;
   if (input.firesTouchEvents) return true;
   if (!(input.lastTouchAt > 0)) return false;
   const windowMs = input.windowMs ?? GHOST_MOUSE_MS;
   if (input.now - input.lastTouchAt < windowMs) return true;
-  if (input.now - input.lastTouchAt >= GHOST_PLACE_MS) return false;
-  if (input.lastX == null || input.lastY == null || input.x == null || input.y == null) {
-    return false;
-  }
-  return Math.hypot(input.x - input.lastX, input.y - input.lastY) <= GHOST_PLACE_PX;
+  const x = input.x;
+  const y = input.y;
+  if (x == null || y == null) return false;
+  const places =
+    input.places ??
+    (input.lastX != null && input.lastY != null
+      ? [{ x: input.lastX, y: input.lastY, t: input.lastTouchAt }]
+      : []);
+  return places.some(
+    (place) => input.now - place.t < GHOST_PLACE_MS && Math.hypot(x - place.x, y - place.y) <= GHOST_PLACE_PX,
+  );
 }
 
 /**

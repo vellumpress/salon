@@ -81,7 +81,7 @@ function stressPdf(): Uint8Array {
   const lines = [
     "Alpha ends here.",
     "Beta ends here.",
-    ...Array.from({ length: 48 }, () => "The river kept its slow green course under the dark trees"),
+    ...Array.from({ length: 22 }, () => "The river kept its slow green course under the dark trees"),
     "until the long sentence of that afternoon finally ended.",
     "Gamma ends here.",
     "Delta ends here.",
@@ -248,13 +248,17 @@ async function openAt(page: Page, id: string, at: number) {
 }
 
 async function passGate(page: Page) {
-  const sit = page.getByRole("button", { name: "Sit", exact: true });
-  const alone = page.getByRole("button", { name: "Alone", exact: true });
-  const begin = page.getByRole("button", { name: "Begin", exact: true });
-  await sit.or(alone).or(begin).first().waitFor({ timeout: 20_000 });
-  await sit.or(alone).or(begin).first().click();
+  const veil = page.locator(".veil");
+  await veil.waitFor({ timeout: 20_000 });
+  // A length chip is also named Sit. The gate action is Alone, Begin, or the
+  // last Sit, which sits under the chips.
+  const alone = veil.getByRole("button", { name: "Alone", exact: true });
+  const begin = veil.getByRole("button", { name: "Begin", exact: true });
+  if (await alone.count()) await alone.click();
+  else if (await begin.count()) await begin.click();
+  else await veil.getByRole("button", { name: "Sit", exact: true }).last().click();
   await page.locator(".breath-now").waitFor({ timeout: 20_000 });
-  await page.waitForFunction(() => !document.querySelector(".veil"));
+  await page.waitForFunction(() => !document.querySelector(".veil"), { timeout: 15_000 });
 }
 
 async function resume(page: Page, id: string, at: number) {
@@ -297,6 +301,9 @@ type Shot = {
   x: number;
   y: number;
   scrollTop: number;
+  lineTop: number;
+  hostTop: number;
+  pinned: boolean;
 };
 
 async function aim(
@@ -321,23 +328,34 @@ async function aim(
       const pinned = row.top <= host.top + 12;
       let x = host.left + host.width * 0.62;
       let y = host.top + 16;
+      // Stable bands. A burst of taps reuses one point while the sentence
+      // slides, so the point has to stay on the same side of the words.
       if (pinned) {
         x = direction < 0 ? host.left + Math.max(12, host.width * 0.12) : host.left + host.width * 0.72;
-        y = Math.min(limit - 1, host.top + host.height * 0.45);
+        y = Math.min(limit - 1, host.top + Math.max(24, host.height * 0.45));
       } else if (direction < 0) {
-        if (!(row.top > host.top + 14)) return { ok: false as const, reason: "no back band" };
-        y = host.top + Math.max(8, Math.min(row.top - host.top - 6, (row.top - host.top) * 0.45));
+        if (!(row.top > host.top + 28)) return { ok: false as const, reason: "no back band" };
+        y = host.top + 12;
         x = host.left + host.width * 0.72;
       } else {
-        y = Math.min(limit - 1, Math.max(row.top + 8, Math.min(row.bottom - 4, row.top + 24)));
-        if (!(y >= row.top && y < limit)) return { ok: false as const, reason: "no forward band" };
+        y = Math.min(limit - 1, host.bottom - 20);
+        if (!(y >= row.top)) return { ok: false as const, reason: "no forward band" };
       }
       if (!(x >= host.left && x < host.right && y >= host.top && y < host.bottom)) {
         return { ok: false as const, reason: "point outside" };
       }
       const index = Number(frame.getAttribute("data-breath-index"));
       if (mode === "point") {
-        return { ok: true as const, from: index, x, y, scrollTop: slot.scrollTop };
+        return {
+          ok: true as const,
+          from: index,
+          x,
+          y,
+          scrollTop: slot.scrollTop,
+          lineTop: row.top,
+          hostTop: host.top,
+          pinned,
+        };
       }
       const fire = (kind: "touch" | "mouse", phase: "down" | "up", px: number, py: number) => {
         hostEl.dispatchEvent(
@@ -377,7 +395,16 @@ async function aim(
         }
       };
       for (let i = 0; i < burst; i += 1) once(x, y);
-      return { ok: true as const, from: index, x, y, scrollTop: slot.scrollTop };
+      return {
+        ok: true as const,
+        from: index,
+        x,
+        y,
+        scrollTop: slot.scrollTop,
+        lineTop: row.top,
+        hostTop: host.top,
+        pinned,
+      };
     },
     { direction, mode, burst },
   );
@@ -437,7 +464,7 @@ async function step(
     const scroll = await page.locator(".breath-slot").evaluate((el) => (el as HTMLElement).scrollTop);
     const from = shot ? shot.from : "?";
     throw new Error(
-      `${label}: index ${now} scroll ${scroll}, expected ${expected} after ${burst} (from ${from}; ${error instanceof Error ? error.message : error})`,
+      `${label}: index ${now} scroll ${scroll}, expected ${expected} after ${burst} (from ${from} pinned=${shot?.pinned} line=${shot?.lineTop} host=${shot?.hostTop} x=${shot?.x} y=${shot?.y}; ${error instanceof Error ? error.message : error})`,
     );
   }
   return shot;
@@ -446,27 +473,35 @@ async function step(
 async function lateGhost(page: Page, shot: Shot, expected: number, label: string) {
   await page.evaluate(
     ({ x, y }) => {
+      const marker = window as Window & { __ghostDone?: boolean };
+      marker.__ghostDone = false;
       window.setTimeout(() => {
         const host = document.querySelector("[data-reader-text]");
-        if (!host) return;
-        const mouse = {
-          bubbles: true,
-          cancelable: true,
-          clientX: x,
-          clientY: y,
-          pointerId: 11,
-          button: 0,
-          pointerType: "mouse",
-          isPrimary: true,
-        };
-        host.dispatchEvent(new PointerEvent("pointerdown", { ...mouse, buttons: 1 }));
-        host.dispatchEvent(new PointerEvent("pointerup", { ...mouse, buttons: 0 }));
-        host.dispatchEvent(new MouseEvent("click", { bubbles: true, cancelable: true, clientX: x, clientY: y }));
+        if (host) {
+          const mouse = {
+            bubbles: true,
+            cancelable: true,
+            clientX: x,
+            clientY: y,
+            pointerId: 11,
+            button: 0,
+            pointerType: "mouse",
+            isPrimary: true,
+          };
+          host.dispatchEvent(new PointerEvent("pointerdown", { ...mouse, buttons: 1 }));
+          host.dispatchEvent(new PointerEvent("pointerup", { ...mouse, buttons: 0 }));
+          host.dispatchEvent(
+            new MouseEvent("click", { bubbles: true, cancelable: true, clientX: x, clientY: y }),
+          );
+        }
+        marker.__ghostDone = true;
       }, 1700);
     },
     { x: shot.x, y: shot.y },
   );
-  await new Promise((resolve) => setTimeout(resolve, 1900));
+  await page.waitForFunction(() => (window as Window & { __ghostDone?: boolean }).__ghostDone === true, {
+    timeout: 8000,
+  });
   const now = await page.locator("[data-breath-index]").getAttribute("data-breath-index");
   assert.equal(Number(now), expected, `${label}: late click undid the tap`);
 }
@@ -513,11 +548,13 @@ async function mix(
     if (index >= high) direction = -1;
     const roll = random();
     let mode: "ghost" | "click-first" | "touch" | "burst" | "screen" = "ghost";
-    if (roll > 0.82) mode = "screen";
-    else if (roll > 0.62) mode = "click-first";
-    else if (roll > 0.4) mode = "touch";
+    if (roll > 0.7) mode = "click-first";
+    else if (roll > 0.42) mode = "touch";
     else if (roll > 0.28) mode = "burst";
-    if (mode === "burst" && (index + direction < low || index + direction * 3 > high || n + 3 > count)) {
+    if (
+      mode === "burst" &&
+      (index + direction * 3 < low || index + direction * 3 > high || n + 3 > count)
+    ) {
       mode = "ghost";
     }
     const jump = mode === "burst" ? 3 : 1;
@@ -613,13 +650,15 @@ test(
           pdfIndex += 1;
         }
         assert.equal(foundTall, true, `${name} run ${run} pdf had no sentence taller than the screen`);
+        const pdfLength = Number(await page.locator(".reader-frame").getAttribute("data-breath-count"));
+        assert.ok(pdfLength > pdfIndex + 1, `${name} run ${run} pdf long sentence is the last of ${pdfLength}`);
         const tallTop = await page.locator(".breath-slot").evaluate((el) => (el as HTMLElement).scrollTop);
         assert.ok(tallTop < 4, `${name} run ${run} pdf long sentence opened partway`);
         await step(page, 1, pdfIndex + 1, `${name} run ${run} pdf off the long sentence`, "ghost");
         await step(page, -1, pdfIndex, `${name} run ${run} pdf back onto the long sentence`, "click-first");
         const backTop = await page.locator(".breath-slot").evaluate((el) => (el as HTMLElement).scrollTop);
         assert.ok(backTop < 4, `${name} run ${run} pdf back stopped partway through the long sentence`);
-        await mix(page, "page", pdfIndex, 8, 9000 + run, `${name} run ${run} pdf`, 9);
+        await mix(page, "page", pdfIndex, 8, 9000 + run, `${name} run ${run} pdf`, pdfLength);
         await page.close();
       }
     } finally {

@@ -201,6 +201,7 @@ export function TbrReader({
   /** Last real touch, so the synthesized mouse that follows is ignored. */
   const lastTouchAtRef = useRef(0);
   const lastTouchPointRef = useRef<{ x: number; y: number } | null>(null);
+  const touchPlacesRef = useRef<{ x: number; y: number; t: number }[]>([]);
   /**
    * Fallback split when the focus line has no box yet.
    * A tap uses the line on screen at finger-down, and the sentence index
@@ -1117,8 +1118,12 @@ export function TbrReader({
   }
 
   function rememberTouch(x: number, y: number) {
-    lastTouchAtRef.current = performance.now();
+    const now = performance.now();
+    lastTouchAtRef.current = now;
     lastTouchPointRef.current = { x, y };
+    const places = touchPlacesRef.current.filter((place) => now - place.t < 12_000);
+    places.push({ x, y, t: now });
+    touchPlacesRef.current = places.slice(-24);
   }
 
   function ghostPointer(e: ReactPointerEvent<HTMLDivElement>) {
@@ -1134,6 +1139,7 @@ export function TbrReader({
       y: e.clientY,
       lastX: lastTouchPointRef.current?.x,
       lastY: lastTouchPointRef.current?.y,
+      places: touchPlacesRef.current,
     });
   }
 
@@ -1146,6 +1152,7 @@ export function TbrReader({
       y,
       lastX: lastTouchPointRef.current?.x,
       lastY: lastTouchPointRef.current?.y,
+      places: touchPlacesRef.current,
     });
   }
 
@@ -1180,12 +1187,17 @@ export function TbrReader({
     if (pinnedToTop()) {
       return turnZone({ x, y, host: box, focusTop: null, focusBottom: null, tall: true });
     }
-    // The sentence on screen is the boundary, including while it is still
-    // sliding into place. A stored split from the landed position sits above
-    // that moving line, and a tap just above the words would step forward.
+    // The sentence on screen is the boundary while it is in the column.
+    // When it is still sliding in from below, that box is off screen and the
+    // right-hand fallback would turn a back tap into forward.
     const line = breathSlotRef.current?.querySelector(".breath-now");
     const lineRect = line?.getBoundingClientRect();
-    if (lineRect && lineRect.height > 0) {
+    const lineInColumn =
+      lineRect &&
+      lineRect.height > 0 &&
+      lineRect.bottom > hostRect.top &&
+      lineRect.top < hostRect.bottom;
+    if (lineInColumn && lineRect) {
       return turnZone({
         x,
         y,
@@ -1195,6 +1207,9 @@ export function TbrReader({
       });
     }
     const zone = zoneRef.current;
+    if (zone.ready && zone.tall) {
+      return turnZone({ x, y, host: box, focusTop: null, focusBottom: null, tall: true });
+    }
     if (zone.ready) {
       const focusTop = hostRect.top + zone.split;
       return turnZone({
@@ -1240,6 +1255,7 @@ export function TbrReader({
     // Arm before the lift. iOS can deliver the compatibility click before
     // pointerup; that click must not turn, and the lift still does.
     noteOwed(1);
+    const zone = zoneAt(e.clientX, e.clientY);
     gestureRef.current = {
       id: e.pointerId,
       x: e.clientX,
@@ -1253,7 +1269,7 @@ export function TbrReader({
       turned: false,
       // Frozen at finger-down. The sentence keeps sliding after the touch,
       // and reading the line again on the lift flips a back tap into forward.
-      zone: zoneAt(e.clientX, e.clientY),
+      zone,
     };
     try {
       host.setPointerCapture(e.pointerId);
@@ -1442,6 +1458,7 @@ export function TbrReader({
       data-center-line={centerOn ? "on" : "off"}
       data-bound={workIsComplete(work.id) ? "full" : "opening"}
       data-breath-index={index}
+      data-breath-count={work.breaths.length}
     >
       <h1 className="sr-only">{work.title}</h1>
       {together && pair ? (
