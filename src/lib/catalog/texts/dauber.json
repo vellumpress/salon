@@ -427,20 +427,6 @@
       "place": "Square-rigged ships",
       "reentry": "+Yards+. The steel or wooden spars (placed across masts) from which square sails are set.",
       "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s60",
-      "title": "Auguries, By Laurence Binyon",
-      "place": "Auguries, By Laurence Binyon",
-      "reentry": "The Bird of Time, by Sarojini Naidu. With portrait of Author, and",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s61",
-      "title": "The Lure of the Sea, By J. E. Patterson",
-      "place": "The Lure of the Sea, By J. E. Patterson",
-      "reentry": "Wm. Heinemann, 21 Bedford Street, W.C.",
-      "prompt": "What does the poem hold?"
     }
   ],
   "breaths": [
@@ -453,11 +439,6 @@
       "id": "s0-1",
       "sceneId": "s0",
       "text": "London William Heinemann"
-    },
-    {
-      "id": "s0-2",
-      "sceneId": "s0",
-      "text": "Copyright, 1913 New Impressions, 1913 and 1914"
     },
     {
       "id": "s1-0",
@@ -1173,21 +1154,6 @@
       "id": "s59-0",
       "sceneId": "s59",
       "text": "+Yards+. The steel or wooden spars (placed across masts) from which square sails are set."
-    },
-    {
-      "id": "s59-1",
-      "sceneId": "s59",
-      "text": "Billing and Sons, Ltd., Printers, Guildford"
-    },
-    {
-      "id": "s60-0",
-      "sceneId": "s60",
-      "text": "The Bird of Time, by Sarojini Naidu. With portrait of Author, and"
-    },
-    {
-      "id": "s61-0",
-      "sceneId": "s61",
-      "text": "Wm. Heinemann, 21 Bedford Street, W.C."
     }
   ]
 }

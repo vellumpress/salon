@@ -41,26 +41,10 @@
       "front": true
     },
     {
-      "id": "s4",
-      "title": "1916",
-      "place": "1916",
-      "reentry": "*All rights reserved*",
-      "prompt": "What does the poem hold?",
-      "front": true
-    },
-    {
-      "id": "s5",
-      "title": "By the Macmillan Company",
-      "place": "By the Macmillan Company",
-      "reentry": "Set up and electrotyped. Published March, 1916. Reprinted March, June, 1916.",
-      "prompt": "What does the poem hold?",
-      "front": true
-    },
-    {
       "id": "s6",
       "title": "J. S. Cushing Co.--Berwick & Smith Co",
       "place": "J. S. Cushing Co.--Berwick & Smith Co",
-      "reentry": "Norwood, Mass., U.S.A",
+      "reentry": "For permission to print in book form certain of these poems I wish to acknowledge an indebtedness to *Poetry*, *The Smart Set*, *The Little Review*, *The Cosmopolitan Magazine*, and William Marion Reedy, Editor of *Reedy's Mirror*.",
       "prompt": "What does the poem hold?",
       "front": true
     },
@@ -987,21 +971,6 @@
       "id": "s3-0",
       "sceneId": "s3",
       "text": "The Macmillan Company"
-    },
-    {
-      "id": "s4-0",
-      "sceneId": "s4",
-      "text": "*All rights reserved*"
-    },
-    {
-      "id": "s5-0",
-      "sceneId": "s5",
-      "text": "Set up and electrotyped. Published March, 1916. Reprinted March, June, 1916."
-    },
-    {
-      "id": "s6-0",
-      "sceneId": "s6",
-      "text": "Norwood, Mass., U.S.A"
     },
     {
       "id": "s6-1",

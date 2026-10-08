@@ -3619,34 +3619,6 @@
       "place": "Fintain",
       "reentry": "There will be nobody in the houses. Come this way, come quickly; the ovens will be full; we will put our hands into the ovens. (They go out.)",
       "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s516",
-      "title": "Essays, Etc",
-      "place": "Essays, Etc",
-      "reentry": "*By* William Butler Yeats",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s517",
-      "title": "The Celtic Twilight",
-      "place": "The Celtic Twilight",
-      "reentry": "With portrait and some new chapters. $1.50, *net*.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s518",
-      "title": "Ideas of Good and Evil",
-      "place": "Ideas of Good and Evil",
-      "reentry": "Cloth. 12mo. $1.50, *net*.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s519",
-      "title": "Where There Is Nothing",
-      "place": "Where There Is Nothing",
-      "reentry": "Vol. I. of \"Plays for an Irish Theatre.\" Cloth. $1.25, *net*. Large paper limited edition (100 numbered copies) on Japanese vellum, $5.00, *net*.",
-      "prompt": "What does the poem hold?"
     }
   ],
   "breaths": [
@@ -6354,51 +6326,6 @@
       "id": "s515-0",
       "sceneId": "s515",
       "text": "There will be nobody in the houses. Come this way, come quickly; the ovens will be full; we will put our hands into the ovens. (They go out.)"
-    },
-    {
-      "id": "s516-0",
-      "sceneId": "s516",
-      "text": "*By* William Butler Yeats"
-    },
-    {
-      "id": "s516-1",
-      "sceneId": "s516",
-      "text": "\"Leader of one of the most notable contemporary movements--the Celtic revival in Ireland, decidedly a force to be reckoned with both at the present moment and in the future.\"--*Boston Transcript.*"
-    },
-    {
-      "id": "s517-0",
-      "sceneId": "s517",
-      "text": "With portrait and some new chapters. $1.50, *net*."
-    },
-    {
-      "id": "s517-1",
-      "sceneId": "s517",
-      "text": "\"Subtle, elusive, keen with insight, and beautiful with the haunting beauty of the aptly chosen word ... a veritable contribution to literature.\"--*The New York Herald.*"
-    },
-    {
-      "id": "s518-0",
-      "sceneId": "s518",
-      "text": "Cloth. 12mo. $1.50, *net*."
-    },
-    {
-      "id": "s518-1",
-      "sceneId": "s518",
-      "text": "\"The best book of its kind that has appeared since Maeterlinck's 'Buried Temple,' full of deep thought, of excellent criticism, and of beautiful writing.\"--London letter to the *Chicago Evening Post*."
-    },
-    {
-      "id": "s519-0",
-      "sceneId": "s519",
-      "text": "Vol. I. of \"Plays for an Irish Theatre.\" Cloth. $1.25, *net*. Large paper limited edition (100 numbered copies) on Japanese vellum, $5.00, *net*."
-    },
-    {
-      "id": "s519-1",
-      "sceneId": "s519",
-      "text": "The Macmillan Company, Publishers"
-    },
-    {
-      "id": "s519-2",
-      "sceneId": "s519",
-      "text": "66 Fifth Avenue, New York"
     }
   ]
 }

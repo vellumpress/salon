@@ -371,13 +371,6 @@
       "place": "Chapter LII",
       "reentry": "The months went on till I began to think it was a long time since anything had been heard of father. I didn't expect to have a letter or anything, but I knew he must take a run outside now and again; and so sure as he did it would come to m",
       "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s55",
-      "title": "Popular Novels by the Same Author.",
-      "place": "Popular Novels by the Same Author.",
-      "reentry": "Popular Novels by the Same Author.",
-      "prompt": "A word from this stretch."
     }
   ],
   "breaths": [
@@ -4749,7 +4742,7 @@
     {
       "id": "s16-38",
       "sceneId": "s16",
-      "text": "After the bull had been sworn to by Mr. Hood and another witness, they brought up some more evidence, as they called it, about the other cattle we had sold in Adelaide. They had fetched some of the farmers up that had been at the sale. They swore straight enough to having bought cattle with certain brands from Starlight. They didn't know, of course, at the time whose they were, but they could describe the brands fast enough. There was one fellow that couldn't read nor write, but he remembered all the brands, about a dozen, in the pen of steers he bought, and described them one by one. One brand, he said, was like a long-handled shovel. It turned out to be--D. [*] TD--Tom Dawson's, of Mungeree. About a hundred of his were in the mob. They had drawn back for Mungeree, as was nearly all frontage and cold in the winter. He was the worst witness for us of the lot, very near. He'd noticed everything and forgot nothing."
+      "text": "After the bull had been sworn to by Mr. Hood and another witness, they brought up some more evidence, as they called it, about the other cattle we had sold in Adelaide. They had fetched some of the farmers up that had been at the sale. They swore straight enough to having bought cattle with certain brands from Starlight. They didn't know, of course, at the time whose they were, but they could describe the brands fast enough. There was one fellow that couldn't read nor write, but he remembered all the brands, about a dozen, in the pen of steers he bought, and described them one by one. One brand, he said, was like a long-handled shovel. It turned out to be--D. TD--Tom Dawson's, of Mungeree. About a hundred of his were in the mob. They had drawn back for Mungeree, as was nearly all frontage and cold in the winter. He was the worst witness for us of the lot, very near. He'd noticed everything and forgot nothing."
     },
     {
       "id": "s16-40",
@@ -15275,81 +15268,6 @@
       "id": "s51-78",
       "sceneId": "s51",
       "text": "THE END"
-    },
-    {
-      "id": "s55-7",
-      "sceneId": "s55",
-      "text": "Popular Novels by the Same Author."
-    },
-    {
-      "id": "s55-8",
-      "sceneId": "s55",
-      "text": "The Miner's Right. A Tale of the Australian Gold-Fields."
-    },
-    {
-      "id": "s55-9",
-      "sceneId": "s55",
-      "text": "Athenaeum--“The picture is unquestionably interesting, thanks to the very detail and fidelity which tend to qualify its attractiveness for those who like excitement and incident before anything else.”"
-    },
-    {
-      "id": "s55-10",
-      "sceneId": "s55",
-      "text": "World--“Full of good passages, passages abounding in vivacity, in the colour and play of life.... The pith of the book lies in its singularly fresh and vivid pictures of the humours of the gold-fields,--tragic humours enough they are, too, here and again....”"
-    },
-    {
-      "id": "s55-11",
-      "sceneId": "s55",
-      "text": "Manchester Examiner--“The characters are sketched with real life and picturesqueness. Mr. Boldrewood accomplishes the very difficult feat of enabling his readers not only to understand the bewildering complexities of mining law, but to be interested in the situations which arise out of their operation, while his fund of incident seems to be large enough to meet all the demands made upon it. Indeed, the book is lively and readable from first to last.”"
-    },
-    {
-      "id": "s55-12",
-      "sceneId": "s55",
-      "text": "The Squatter's Dream."
-    },
-    {
-      "id": "s55-13",
-      "sceneId": "s55",
-      "text": "Saturday Review--“It is not often that stories of colonial life are so interesting as Mr. Boldrewood's 'Squatter's Dream'. There is enough story in the book to give connected interest to the various incidents, and these are all told with considerable spirit and at times picturesqueness.”"
-    },
-    {
-      "id": "s55-14",
-      "sceneId": "s55",
-      "text": "Field--“The details are filled in by a hand evidently well conversant with his subject, and everything is 'ben trovato', if not actually true. A perusal of these cheerfully-written pages will probably give a better idea of realities of Australian life than could be obtained from many more pretentious works.”"
-    },
-    {
-      "id": "s55-15",
-      "sceneId": "s55",
-      "text": "A Sydney-Side Saxon."
-    },
-    {
-      "id": "s55-16",
-      "sceneId": "s55",
-      "text": "Glasgow Herald--“The interest never flags, and altogether 'A Sydney-Side Saxon' is a really refreshing book.”"
-    },
-    {
-      "id": "s55-17",
-      "sceneId": "s55",
-      "text": "Anti-Jacobin--“Thoroughly well worth reading.... A clever book, admirably written.... Brisk in incident, truthful and lifelike in character.... Beyond and above all it has that stimulating hygienic quality, that cheerful, unconscious healthfulness, which makes a story like 'Robinson Crusoe', or 'The Vicar of Wakefield', so unspeakably refreshing after a course of even good contemporary fiction.”"
-    },
-    {
-      "id": "s55-18",
-      "sceneId": "s55",
-      "text": "A Colonial Reformer."
-    },
-    {
-      "id": "s55-19",
-      "sceneId": "s55",
-      "text": "Athenaeum--“A series of natural and entertaining pictures of Australian life, which are, above all things, readable.”"
-    },
-    {
-      "id": "s55-20",
-      "sceneId": "s55",
-      "text": "Glasgow Herald--“One of the most interesting books about Australia we have ever read.”"
-    },
-    {
-      "id": "s55-21",
-      "sceneId": "s55",
-      "text": "Saturday Review--“Mr. Boldrewood can tell what he knows with great point and vigour, and there is no better reading than the adventurous parts of his books.”"
     }
   ]
 }

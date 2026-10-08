@@ -10304,13 +10304,6 @@
       "place": "Still strain the banner-poles",
       "reentry": "Through the wind's song, Westward the banner rolls",
       "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s1471",
-      "title": "The End",
-      "place": "The End",
-      "reentry": "Printed by Ballantyne, Hanson & Co. Edinburgh & London",
-      "prompt": "What does the poem hold?"
     }
   ],
   "breaths": [
@@ -17863,11 +17856,6 @@
       "id": "s1470-0",
       "sceneId": "s1470",
       "text": "Through the wind's song, Westward the banner rolls"
-    },
-    {
-      "id": "s1471-0",
-      "sceneId": "s1471",
-      "text": "Printed by Ballantyne, Hanson & Co. Edinburgh & London"
     }
   ]
 }

@@ -1727,7 +1727,7 @@ test("tbr PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => {
     buddenbrooks: {
       track: "later",
       opening: /^“And--and--what comes next\?”$/,
-      breaths: 1845,
+      breaths: 1842,
       forYou: false,
     },
     "miss-lulu-bett": {
@@ -1803,7 +1803,7 @@ test("tbr PM CLEAR ×5 are local Next / Rituals binds, never Featured", () => {
 test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
   const expect = {
     "a-group-of-noble-dames": { opening: "King's-Hintock Court (said the narrator, turning over his memoranda for reference)--King's-Hintock C", breaths: 1152, scenes: 10, gutenberg: 3049 },
-    "captain-craig": { opening: "I doubt if ten men in all Tilbury Town Had ever shaken hands with Captain Craig, Or called him by hi", breaths: 258, scenes: 16, gutenberg: 77544 },
+    "captain-craig": { opening: "I doubt if ten men in all Tilbury Town Had ever shaken hands with Captain Craig, Or called him by hi", breaths: 256, scenes: 16, gutenberg: 77544 },
     "daniel-deronda": { opening: "Men can do nothing without the make-believe of a beginning. Even science, the strict measurer, is ob", breaths: 4304, scenes: 70, gutenberg: 7469 },
     "day-and-night-stories": { opening: "\"*Je suis la première au rendez-vous. Je vous attends.*\"", breaths: 995, scenes: 15, gutenberg: 45964 },
     "fifty-one-tales": { opening: "Fame singing in the highways, and trifling as she sang, with sordid adventurers, passed the poet by.", breaths: 451, scenes: 49, gutenberg: 7838 },
@@ -1815,9 +1815,9 @@ test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "salammbo": { opening: "It was at Megara, a suburb of Carthage, in the gardens of Hamilcar. The soldiers whom he had command", breaths: 1924, scenes: 15, gutenberg: 1290 },
     "smoke-bellew": { opening: "I.", breaths: 1255, scenes: 6, gutenberg: 1596 },
     "songs-from-vagabondia": { opening: "VAGABONDIA.", breaths: 306, scenes: 7, gutenberg: 18238 },
-    "songs-of-childhood": { opening: "As I lay awake in the white moonlight, I heard a sweet singing in the wood-- 'Out of bed, Sleepyhead", breaths: 332, scenes: 43, gutenberg: 23545 },
-    "ten-minute-stories": { opening: "At the moorland cross-roads Martin stood examining the sign-post for several minutes in some bewilde", breaths: 833, scenes: 28, gutenberg: 72928 },
-    "the-everlasting-mercy": { opening: "From ’41 to ’51 I was my folk’s contrary son; I bit my father’s hand right through And broke my mother’s heart in two.", breaths: 128, scenes: 2, gutenberg: 41467 },
+    "songs-of-childhood": { opening: "As I lay awake in the white moonlight, I heard a sweet singing in the wood-- 'Out of bed, Sleepyhead", breaths: 331, scenes: 43, gutenberg: 23545 },
+    "ten-minute-stories": { opening: "At the moorland cross-roads Martin stood examining the sign-post for several minutes in some bewilde", breaths: 832, scenes: 28, gutenberg: 72928 },
+    "the-everlasting-mercy": { opening: "From ’41 to ’51 I was my folk’s contrary son; I bit my father’s hand right through And broke my mother’s heart in two.", breaths: 119, scenes: 2, gutenberg: 41467 },
     "the-golden-bowl": { opening: "The Prince had always liked his London, when it had come to him; he was one of the modern Romans who", breaths: 2497, scenes: 42, gutenberg: 4264 },
     "the-rainbow": { opening: "Chapter I. HOW TOM BRANGWEN MARRIED A POLISH LADY", breaths: 4518, scenes: 101, gutenberg: 28948 },
     "the-sword-of-welleran": { opening: "Where the great plain of Tarphet runs up, as the sea in estuaries, among the Cyresian mountains, the", breaths: 434, scenes: 11, gutenberg: 10806 },
@@ -1875,16 +1875,16 @@ test("BATCH-5 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "filipino-popular-tales": { opening: "There was once an old woman who had an only son named Suan.", breaths: 1868, scenes: 82, gutenberg: 8299 },
     "lost-illusions": { opening: "At the time when this story opens, the Stanhope press and the ink-distributing roller were not as yet in general use in ", breaths: 660, scenes: 12, gutenberg: 13159 },
     "mogens": { opening: "SUMMER it was; in the middle of the day; in a corner of the enclosure. Immediately in front of it stood an old oaktree, ", breaths: 477, scenes: 4, gutenberg: 6765 },
-    "more-songs-from-vagabondia": { opening: "What is the stir in the street? Hurry of feet! And after, A sound as of pipes and of tabers!", breaths: 385, scenes: 44, gutenberg: 18007 },
+    "more-songs-from-vagabondia": { opening: "What is the stir in the street? Hurry of feet! And after, A sound as of pipes and of tabers!", breaths: 384, scenes: 44, gutenberg: 18007 },
     "rhymes-of-a-red-cross-man": { opening: "With flowers of flame festoon the night.", breaths: 345, scenes: 62, gutenberg: 315 },
     "rhymes-of-a-rolling-stone": { opening: "_I sing no idle songs of dalliance days, No dreams Elysian inspire my rhyming; I have no Celia to enchant my lays, No pi", breaths: 339, scenes: 52, gutenberg: 309 },
     "songs-of-travel": { opening: "Give to me the life I love, Let the lave go by me, Give the jolly heaven above And the byway nigh me. Bed in the bush wi", breaths: 147, scenes: 37, gutenberg: 487 },
     "the-faith-of-men": { opening: "I wash my hands of him at the start. I cannot father his tales, nor will I be responsible for them. I make these prelimi", breaths: 781, scenes: 8, gutenberg: 1096 },
-    "the-golden-whales-of-california": { opening: "Once, in the city of Kalamazoo, The gods went walking, two and two, With the friendly phœnix, the stars of Orion, The sp", breaths: 431, scenes: 47, gutenberg: 69969 },
+    "the-golden-whales-of-california": { opening: "Once, in the city of Kalamazoo, The gods went walking, two and two, With the friendly phœnix, the stars of Orion, The sp", breaths: 430, scenes: 47, gutenberg: 69969 },
     "the-hermit-and-the-wild-woman": { opening: "THE Hermit lived in a cave in the hollow of a hill. Below him was a glen, with a stream in a coppice of oaks and alders,", breaths: 1228, scenes: 7, gutenberg: 4533 },
     "the-princess-casamassima": { opening: "“Oh yes, I dare say I can find the child, if you would like to see him,” Miss Pynsent said; she had a fluttering wish to", breaths: 2952, scenes: 47, gutenberg: 64599 },
     "the-son-of-the-wolf": { opening: "'Carmen won't last more than a couple of days.' Mason spat out a chunk of ice and surveyed the poor animal ruefully, the", breaths: 742, scenes: 9, gutenberg: 2377 },
-    "the-stolen-bacillus": { opening: "\"This again,\" said the Bacteriologist, slipping a glass slide under the microscope, \"is a preparation of the celebrated ", breaths: 790, scenes: 15, gutenberg: 12750 },
+    "the-stolen-bacillus": { opening: "\"This again,\" said the Bacteriologist, slipping a glass slide under the microscope, \"is a preparation of the celebrated ", breaths: 765, scenes: 15, gutenberg: 12750 },
     "the-tragic-muse": { opening: "The people of France have made it no secret that those of England, as a general thing, are to their perception an inexpr", breaths: 3936, scenes: 51, gutenberg: 20085 },
     "toilers-of-the-sea": { opening: "Christmas Day in the year 182- was somewhat remarkable in the island of Guernsey. Snow fell on that day. In the Channel ", breaths: 3289, scenes: 95, gutenberg: 32338 },
     "toward-the-gulf": { opening: "DEAR OLD DICK THE ROOM OF MIRRORS THE LETTER CANTICLE OF THE RACE BLACK EAGLE RETURNS TO ST. JOE MY LIGHT WITH YOURS THE", breaths: 660, scenes: 43, gutenberg: 7845 },
@@ -1936,7 +1936,7 @@ test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "a-house-of-gentlefolk": { opening: "A bright spring day was fading into evening. High overhead in the clear heavens small rosy clouds se", breaths: 1083, scenes: 45, gutenberg: 5721 },
     "artists-wives": { opening: "*Stretched at full length, on the great divan of a studio, cigar in mouth, two friends--a poet and a", breaths: 337, scenes: 13, gutenberg: 22522 },
     "blix": { opening: "It had just struck nine from the cuckoo clock that hung over the mantelpiece in the dining-room, whe", breaths: 1234, scenes: 14, gutenberg: 401 },
-    "emaux-et-camees": { opening: "(1794-1894)", breaths: 675, scenes: 62, gutenberg: 37733 },
+    "emaux-et-camees": { opening: "(1794-1894)", breaths: 657, scenes: 59, gutenberg: 37733 },
     "eves-ransom": { opening: "On the station platform at Dudley Port, in the dusk of a February afternoon, half-a-dozen people wai", breaths: 1861, scenes: 27, gutenberg: 4297 },
     "fraternity": { opening: "In the afternoon of the last day of April, 190--, a billowy sea of little broken clouds crowned the ", breaths: 2812, scenes: 41, gutenberg: 2773 },
     "hania": { opening: "When old Mikolai on his death-bed left Hania to my guardianship and conscience, I was sixteen years of age;", breaths: 1090, scenes: 12, gutenberg: 36583 },
@@ -2015,11 +2015,11 @@ test("BATCH-9 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "smoke": { opening: "On the 10th of August 1862, at four o'clock in the afternoon, a great number of people were throngin", breaths: 1238, scenes: 28, gutenberg: 40813 },
     "the-fortune-of-the-rougons": { opening: "On quitting Plassans by the Rome Gate, on the southern side of the town, you will find, on the right", breaths: 1429, scenes: 7, gutenberg: 5135 },
     "the-paying-guest": { opening: "It was Mumford who saw the advertisement and made the suggestion. His wife gave him a startled look.", breaths: 631, scenes: 9, gutenberg: 4298 },
-    "the-triumph-of-death": { opening: "When she perceived a group of men leaning against the parapet and looking down into the street below", breaths: 2667, scenes: 43, gutenberg: 54272 },
+    "the-triumph-of-death": { opening: "When she perceived a group of men leaning against the parapet and looking down into the street below", breaths: 2639, scenes: 43, gutenberg: 54272 },
     "the-witch-and-other-stories": { opening: "IT was approaching nightfall. The sexton, Savely Gykin, was lying in his huge bed in the hut adjoini", breaths: 1584, scenes: 15, gutenberg: 1944 },
     "therese-raquin": { opening: "Au bout de la rue Guénégaud, lorsqu'on vient des quais, on trouve le passage du Pont-Neuf, une sorte", breaths: 972, scenes: 32, gutenberg: 7461 },
     "tradiciones-peruanas": { opening: "Esta tradición no tiene otra fuente de autoridad que el relato del pueblo. Todos la conocen en el Cu", breaths: 1031, scenes: 23, gutenberg: 21282 },
-    "watch-and-ward": { opening: "Roger Lawrence had come to town for the express purpose of doing a certain act, but as the hour for ", breaths: 663, scenes: 11, gutenberg: 72355 },
+    "watch-and-ward": { opening: "Roger Lawrence had come to town for the express purpose of doing a certain act, but as the hour for ", breaths: 662, scenes: 11, gutenberg: 72355 },
   } as const;
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
   const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
@@ -2212,7 +2212,7 @@ test("BATCH-15 CLEAR inventory binds are local Next / before-sleep sits, never F
 test("BATCH-16 CLEAR inventory binds are local Next / before-sleep sits, never Featured", () => {
   const expect = {
     "self-determining-haiti": { opening: "To know the reasons for the present political situation in Haiti, to understand why the United State", breaths: 22, scenes: 1, gutenberg: 35025 },
-    "leon-roch-vol-2": { opening: "The crisis through which the house of Telleria was passing remained unsolved. In fact the catastroph", breaths: 1624, scenes: 25, gutenberg: 49272 },
+    "leon-roch-vol-2": { opening: "The crisis through which the house of Telleria was passing remained unsolved. In fact the catastroph", breaths: 1547, scenes: 25, gutenberg: 49272 },
     "miss-julia": { opening: "(A large kitchen: the ceiling and the side walls are hidden by draperies and hangings. The rear wall runs diagonally across the stage, from the left side and away from the spectato", breaths: 612, scenes: 3, gutenberg: 14347 },
     "in-midsummer-days": { opening: "In Midsummer days when in the countries of the North the earth is a bride, when the ground is full o", breaths: 78, scenes: 1, gutenberg: 6694 },
     "the-chinese-fairy-book": { opening: "Once upon a time there were two brothers, who lived in the same house. And the big brother listened ", breaths: 19, scenes: 1, gutenberg: 29939 },
@@ -2600,7 +2600,7 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-cabin": { opening: "The vast plain stretched out under the blue splendour of dawn, a broad sash of light which appeared ", breaths: 1205, scenes: 10, gutenberg: 38165 },
     "les-chants-de-maldoror": { opening: "Pl\u00fbt au ciel que le lecteur, enhardi et devenu momentan\u00e9ment f\u00e9roce comme ce qu'il lit, trouve, sans", breaths: 189, scenes: 6, gutenberg: 12005 },
     "pan-tadeusz": { opening: "GOSPODARSTWO.", breaths: 424, scenes: 5, gutenberg: 31536 },
-    "the-red-laugh": { opening: "..... Horror and madness.", breaths: 459, scenes: 19, gutenberg: 62460 },
+    "the-red-laugh": { opening: "..... Horror and madness.", breaths: 458, scenes: 19, gutenberg: 62460 },
   } as const;
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
   const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
@@ -2664,11 +2664,11 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     "casmurro": { opening: "Do titulo.", breaths: 1631, scenes: 90, gutenberg: 55752, scene: "Chapter I" },
     "les-civilises": { opening: "«Cap'taine Torral,» grogna Mévil à ses coureurs en redescendant.", breaths: 1844, scenes: 35, gutenberg: 47712, scene: "Chapter II" },
     "ein-landarzt": { opening: "Wir haben einen neuen Advokaten, den Dr. Bucephalus. In seinem Äußern erinnert wenig an die Zeit, da er noch Streitroß A", breaths: 120, scenes: 14, gutenberg: 21989, scene: "Der neue Advokat" },
-    "hien-le-maboul": { opening: "Le clairon traversa la route, s’avança jusqu’au bord de la digue de pierres sèches et sonna le réveil. Les notes alertes", breaths: 1177, scenes: 22, gutenberg: 68588, scene: "Chapter II · Le clairon traversa la route, s’avança jusqu’au bord de la digue de" },
+    "hien-le-maboul": { opening: "Le clairon traversa la route, s’avança jusqu’au bord de la digue de pierres sèches et sonna le réveil. Les notes alertes", breaths: 1174, scenes: 22, gutenberg: 68588, scene: "Chapter II · Le clairon traversa la route, s’avança jusqu’au bord de la digue de" },
     "knulp": { opening: "Anfang der neunziger Jahre mußte unser Freund Knulp einmal mehrere Wochen im Spital liegen, und als er entlassen wurde, ", breaths: 648, scenes: 3, gutenberg: 17622, scene: "Vorfrühling" },
     "iracema": { opening: "Iracema passou entre as arvores, silenciosa como uma sombra: seu olhar scintillante coava entre as folhas, quaes frouxos", breaths: 968, scenes: 27, gutenberg: 67740, scene: "Chapter VII" },
     "tristana": { opening: "Resignada en absoluto no, porque más de una vez, en aquel año que precedió a lo que se va a referir, la linda figurilla ", breaths: 627, scenes: 28, gutenberg: 66979, scene: "Chapter II · Resignada en absoluto no, porque más de una vez, en aquel año que" },
-    "niels": { opening: "She had the black, luminous eyes of the Blid family with delicate, straight eyebrows; she had their boldly shaped nose, ", breaths: 933, scenes: 14, gutenberg: 55389, scene: "Chapter I" },
+    "niels": { opening: "She had the black, luminous eyes of the Blid family with delicate, straight eyebrows; she had their boldly shaped nose, ", breaths: 896, scenes: 14, gutenberg: 55389, scene: "Chapter I" },
     "amor-de-perdicao": { opening: "Domingos José Correia Botelho de Mesquita e Menezes, fidalgo de linhagem, e um dos mais antigos solarengos de Villa Real", breaths: 1569, scenes: 19, gutenberg: 16425, scene: "Part 1 · Chapter I" },
     "das-stunden-buch": { opening: "Da neigt sich die Stunde und rührt mich an mit klarem metallenem Schlag: mir zittern die Sinne.", breaths: 429, scenes: 309, gutenberg: 24288, scene: "Book I · Das Stunden-Buch" },
     "misericordia": { opening: "Dos caras, como algunas personas, tiene la parroquia de San Sebastián... mejor será decir la iglesia... dos caras que se", breaths: 1500, scenes: 40, gutenberg: 21831, scene: "Chapter I" },
@@ -2723,7 +2723,7 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
   assert.equal(french.language, "French");
   assert.equal(french.gutenberg, 5781);
   assert.equal(french.opening, "Il arriva chez nous un dimanche de novembre 189...");
-  assert.equal(french.breaths, 1486);
+  assert.equal(french.breaths, 1472);
   assert.equal(next.includes("meaulnes"), false);
   assert.equal(forYou.workIds.includes("meaulnes"), false);
   for (const lane of RITUAL_LANES) {
@@ -2737,7 +2737,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
   const expect = {
     "bay-a-book-of-poems": {
       opening: "SHADES SHALL I tell you, then, how it is?--",
-      breaths: 178,
+      breaths: 175,
       scenes: 6,
       gutenberg: 22734,
     },
@@ -2758,7 +2758,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "hugh-selwyn-mauberley": {
       opening:
         'FOR three years, out of key with his time, He strove to resuscitate the dead art Of poetry; to maintain "the sublime" In the old sense.',
-      breaths: 88,
+      breaths: 84,
       scenes: 11,
       gutenberg: 23538,
     },
@@ -2786,7 +2786,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-hesperides-and-noble-numbers": {
       opening:
         "I sing of brooks, of blossoms, birds and bowers, Of April, May, of June and July-flowers; I sing of May-poles, hock-carts, wassails, wakes, Of bridegrooms, brides and of their bridal cakes; I write of youth, of love, and",
-      breaths: 6805,
+      breaths: 6639,
       scenes: 504,
       gutenberg: 22421,
     },
@@ -2869,7 +2869,7 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
   const expect = {
     "jewish-children": {
       opening: "Busie is a name; it is the short for Esther-Liba: Libusa: Busie. She is a year older than I, perhaps two years. And both of us together are no more than twenty ",
-      breaths: 1432,
+      breaths: 1419,
       scenes: 19,
       gutenberg: 27001,
     },
@@ -2881,7 +2881,7 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "tragic-sense-of-life": {
       opening: "*Homo sum; nihil humani a me alienum puto*, said the Latin playwright. And I would rather say, *Nullum hominem a me alienum puto*: I am a man; no other man do I",
-      breaths: 1080,
+      breaths: 1058,
       scenes: 12,
       gutenberg: 14636,
     },
@@ -2899,14 +2899,14 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "the-sweet-miracle": {
       opening: "luminous margins of the Lake of Tiberias; but the news of his miracles had already penetrated as far as Enganim, a rich city of strong battlements set among vin",
-      breaths: 16,
+      breaths: 15,
       scenes: 1,
       gutenberg: 74802,
     },
     "red-oleanders": {
       opening: "*The Curtain rises on a window covered by a network of intricate pattern in front of the Palace.*",
-      breaths: 1724,
-      scenes: 50,
+      breaths: 1674,
+      scenes: 48,
       gutenberg: 77892,
     },
     "stories-from-tagore": {
@@ -2923,7 +2923,7 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "nationalism": {
       opening: "Man's history is being shaped according to the difficulties it encounters. These have offered us problems and claimed their solutions from us, the penalty of no",
-      breaths: 181,
+      breaths: 180,
       scenes: 4,
       gutenberg: 40766,
     },
@@ -2935,7 +2935,7 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
     },
     "creative-unity": {
       opening: "Civility is beauty of behaviour. It requires for its perfection patience, self-control, and an environment of leisure. For genuine courtesy is a creation, like ",
-      breaths: 428,
+      breaths: 379,
       scenes: 10,
       gutenberg: 23136,
     },
