@@ -383,7 +383,7 @@ export const STORED_PREFACES: Record<string, string> = {
   "our-mr-wrenn": `Our Mr. Wrenn (1914): American professions as a hustle you can still try to stay honest inside. Sit with the world a moment before the first breath.`,
   "our-mutual-friend": `A drowned man, a dust heap, and London’s money in the river. Sit with the world a moment before the first breath.`,
   "pan": `Knut Hamsun’s 1894 novel Pan. Sit with the world a moment before the first breath.`,
-  "pan-tadeusz": `Adam Mickiewicz’s 1834 poems: Pan Tadeusz. Let the first line arrive when you are ready.`,
+  "pan-tadeusz": `Adam Mickiewicz’s 1834 poem: Pan Tadeusz. Let the first line arrive when you are ready.`,
   "papeis-avulsos": `Machado de Assis’s 1882 stories, gathered as Papéis Avulsos. Enter one room at a time.`,
   "papeis-avulsos-incl-the-alienist": `Machado de Assis’s 1882 stories, gathered as Papéis Avulsos, including The Alienist. Enter one room at a time.`,
   "paradise-lost": `John Milton’s 1667 poems: Paradise Lost. Let the first line arrive when you are ready.`,

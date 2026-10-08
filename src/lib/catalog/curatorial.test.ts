@@ -49,6 +49,7 @@ const CARD_PASS_PRINTED_ABOVE: Readonly<Record<string, number>> = {
   "leon-roch": 1, // letter dateline
   "gentlemen-prefer-blondes": 1, // diary date "March 16th:"
   "st-peter-s-umbrella": 1, // chapter title
+  "pan-tadeusz": 1, // Book I's printed argument (Noyes)
 };
 
 function cardOnFirstBreath(full: unknown, opening: string, id: string) {
@@ -306,6 +307,7 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "the-complete-original-short-stories",
     "the-cabin",
     "les-chants-de-maldoror",
+    "pan-tadeusz",
     "the-red-laugh",
     "before-adam",
     "bruges-la-morte",
@@ -2668,6 +2670,7 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-complete-original-short-stories": { opening: "For several days in succession fragments of a defeated army had passed through the town. They were m", breaths: 13590, scenes: 186, gutenberg: 3090 },
     "the-cabin": { opening: "The vast plain stretched out under the blue splendour of dawn, a broad sash of light which appeared ", breaths: 1205, scenes: 10, gutenberg: 38165 },
     "les-chants-de-maldoror": { opening: "Pl\u00fbt au ciel que le lecteur, enhardi et devenu momentan\u00e9ment f\u00e9roce comme ce qu'il lit, trouve, sans", breaths: 189, scenes: 6, gutenberg: 12005 },
+    "pan-tadeusz": { opening: "LITHUANIA, my country, thou art like health; how much thou shouldst be prized only he can learn who has lost thee.", breaths: 1106, scenes: 12, gutenberg: 28240 },
     "the-red-laugh": { opening: "..... Horror and madness.", breaths: 458, scenes: 19, gutenberg: 62460 },
   } as const;
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
@@ -2675,7 +2678,7 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
   assert.ok(sleep);
   assert.ok(forYou);
-  assert.equal(Object.keys(expect).length, 17);
+  assert.equal(Object.keys(expect).length, 18);
   assert.deepEqual(forYou.workIds.slice(0, 3), [
     "the-house-of-mirth",
     "quicksand",

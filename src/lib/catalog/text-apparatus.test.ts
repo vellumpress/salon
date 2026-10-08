@@ -641,3 +641,79 @@ test("front-matter patterns catch what they were written for, and spare the book
   assert.ok(DRAWING_CAPTION.test("_From a drawing by J. Wagrez_."));
   assert.ok(!DRAWING_CAPTION.test("He made a drawing by candlelight."));
 });
+
+/**
+ * PAN-TADEUSZ (Noyes, PG 28240): the Gutenberg file glues the end-note
+ * numbers 1–231 onto words ("mazurka.71", "Wojewoda,26", "BOOK VI.—THE
+ * HAMLET102", "_skartabell_196", "war11—") and once sets one off by a space
+ * ("a mile 158 in"). The notes are cut, so a number left behind points at
+ * nothing. Any digit run in the reader text must be a real number in the
+ * printed text, listed here with its reason.
+ */
+const PAN_TADEUSZ_NOTE_COUNT = 231;
+const GLUED_NOTE_REF = /(?<=[\p{L}.,;:!?’”)\]_*—])(\d{1,3})(?!\d)/gu;
+const PAN_TADEUSZ_REAL_NUMBERS: Readonly<Record<string, string>> = {
+  "s10#Article 3": "the Chamberlain reads Article 3 of the decree aloud; a printed article number",
+  "s10#The Year 1812": "Book XI's printed title, THE YEAR 1812",
+};
+
+function glueHits(text: string) {
+  return [...text.matchAll(GLUED_NOTE_REF)]
+    .map((m) => Number(m[1]))
+    .filter((n) => n >= 1 && n <= PAN_TADEUSZ_NOTE_COUNT);
+}
+
+test("PAN-TADEUSZ: no note number is glued to a word in any breath or scene title", () => {
+  const book = JSON.parse(readFileSync(new URL("./texts/pan-tadeusz.json", import.meta.url), "utf8")) as {
+    note: string;
+    scenes: { id: string; title: string; reentry?: string }[];
+    breaths: { id: string; sceneId: string; text: string }[];
+  };
+  assert.equal(book.note, "Project Gutenberg 28240");
+  assert.equal(book.scenes.length, 12);
+  const glued: string[] = [];
+  const digits: string[] = [];
+  const used = new Set<string>();
+  const check = (sceneId: string, where: string, text: string) => {
+    for (const n of glueHits(text)) glued.push(`${where}: ${n}`);
+    for (const m of text.matchAll(/\d+/g)) {
+      const before = text.slice(Math.max(0, (m.index ?? 0) - 12), m.index).split(/\s+/).pop() ?? "";
+      const key = Object.keys(PAN_TADEUSZ_REAL_NUMBERS).find(
+        (k) => k.startsWith(`${sceneId}#`) && k.endsWith(` ${m[0]}`) && text.includes(k.slice(sceneId.length + 1)),
+      );
+      if (key) used.add(key);
+      else digits.push(`${where}: ${before}${m[0]}`);
+    }
+  };
+  for (const scene of book.scenes) {
+    check(scene.id, `${scene.id} title`, scene.title);
+    check(scene.id, `${scene.id} reentry`, scene.reentry ?? "");
+  }
+  for (const breath of book.breaths) check(breath.sceneId, breath.id, breath.text);
+  assert.deepEqual(glued, [], `note numbers glued to words:\n${glued.join("\n")}`);
+  assert.deepEqual(digits, [], `unlisted numbers (a spaced note marker?):\n${digits.join("\n")}`);
+  for (const key of Object.keys(PAN_TADEUSZ_REAL_NUMBERS)) {
+    assert.ok(used.has(key), `allowlisted number no longer in the text: ${key}`);
+    assert.ok(PAN_TADEUSZ_REAL_NUMBERS[key].length > 10, `${key} needs a reason`);
+  }
+});
+
+test("PAN-TADEUSZ: the glued-note pattern catches the source's markers and spares real numbers", () => {
+  for (const t of [
+    "BOOK VI.—THE HAMLET102",
+    "hear Dombrowski’s old mazurka.71",
+    "a member of the household of the Wojewoda,26",
+    "and _skartabell_196 if he spread calumny",
+    "born at the time of the war11—“it is good",
+    "Robak softly spoke these words:—156",
+    "Thus the son of Maciej was always called Bardomiej,115 and",
+    "That is the Pulawskis’213 thrust!",
+    "“Am I Cybulski,”215 answered",
+    "that all of you might read.231",
+  ]) {
+    assert.ok(glueHits(t).length > 0, `missed: ${t}`);
+  }
+  for (const t of ["Article 3 is likewise binding", "Book XI · The Year 1812", "a mile in advance", "To-day"]) {
+    assert.deepEqual(glueHits(t), [], `too wide: ${t}`);
+  }
+});
