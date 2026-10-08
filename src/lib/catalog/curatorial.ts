@@ -636,7 +636,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-complete-original-short-stories",
   "the-cabin",
   "les-chants-de-maldoror",
-  "pan-tadeusz",
   "the-red-laugh",
   // Mira BATCH-10 CLEAR (Sep 22) — after All Quiet. Never Featured. Not For you.
   "before-adam",

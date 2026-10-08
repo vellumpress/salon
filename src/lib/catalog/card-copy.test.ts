@@ -63,15 +63,52 @@ function textWork(id: string) {
 }
 
 /**
+ * CARD-PASS: cards are the book's first real lines as printed. Where the
+ * printed text puts an argument, an epigraph, a story or chapter title or a
+ * source note above them, the card sits that many breaths past the Sit start
+ * (`id` → [offset, what sits above]). The pending list is the same shape for
+ * books whose bind still opens on residue (contents lists, editorial
+ * introductions bound as text) and need a structural re-bind before the
+ * fresh Sit reaches the card.
+ */
+const CARD_AFTER_PRINTED_APPARATUS: Readonly<Record<string, readonly [number, string]>> = {
+  "ara-vus-prec": [3, "Gerontion's Measure for Measure epigraph, three lines"],
+  "pudd-nhead-wilson": [2, "chapter title and the Pudd'nhead Wilson's Calendar epigraph"],
+  redburn: [2, "CHAPTER I. and its long printed chapter title"],
+  shadowings: [1, "Hearn's printed source note to the first story"],
+  "south-african-folk-tales": [1, "the first tale's printed title"],
+  "the-aeneid": [2, "Dryden's 'The Argument.' and the argument"],
+  "the-beetle": [4, "BOOK I., its title, the narration subtitle and CHAPTER I."],
+  "the-king-of-schnorrers-grotesques-and-fantasies": [1, "the first chapter's long printed title"],
+  "the-songs-of-bilitis": [5, "section title, Greek epigraph, its translation and citation, poem title"],
+  "young-adventure": [1, "The Drug-Shop's printed prose epigraph"],
+  "red-chamber": [1, "Chapter I's printed argument"],
+  "can-such-things-be": [8, "story title, I, the Hali epigraph (bound twice: a fragment, then whole); flagged duplicate"],
+  "the-celestial-omnibus-and-other-stories": [3, "story title, I, and a truncated duplicate of the first line; flagged duplicate"],
+  "the-romance-of-a-shop": [5, "CHAPTER I., its title and the epigraph (bound twice: as lines, then whole); flagged duplicate"],
+};
+const CARD_OPENING_STRUCTURE_PENDING: Readonly<Record<string, readonly [number, string]>> = {
+  "the-man-who-laughs": [28, "contents list bound as the first 26 breaths"],
+  "fantastic-fables": [126, "fable titles bound as breaths ahead of the text; whole bind misaligned"],
+  "the-gods-of-pegana": [21, "contents bound inside The Chaunt scene"],
+  "the-ramayan-of-valmiki": [15, "a contents list opens each Book"],
+  "pierre-or-the-ambiguities": [4, "contents residue above Book I"],
+  "the-luck-of-roaring-camp-and-other-tales": [14, "contents and Harte's General Introduction bound as text"],
+  "under-the-greenwood-tree": [15, "Preface and broken scene titles above Chapter I"],
+};
+
+/**
  * The card opening is the line a fresh Sit opens on: breath 0, or, when the
  * leading scenes are tagged front matter, the first line after them (a short
  * printed heading may sit between). Front matter stays in the book, so saved
- * breath indexes never move.
+ * breath indexes never move. Pass `id` to honour the CARD-PASS registries.
  */
-function opensOnFirstLine(full: unknown, opening: string) {
+function opensOnFirstLine(full: unknown, opening: string, id?: string) {
   const work = full as Work;
   if ((work.breaths[0]?.text ?? "").startsWith(opening)) return true;
   const at = openingBreathIndex(work);
+  const listed = id ? CARD_AFTER_PRINTED_APPARATUS[id] ?? CARD_OPENING_STRUCTURE_PENDING[id] : undefined;
+  if (listed) return (work.breaths[at + listed[0]]?.text ?? "").startsWith(opening);
   for (let i = at; i <= at + 2 && i < work.breaths.length; i++) {
     const text = work.breaths[i]?.text ?? "";
     if (text.startsWith(opening)) return true;
@@ -1781,7 +1818,7 @@ test("Tier B batches 1–2 are local format-min binds, never Featured", () => {
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000", id), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
@@ -1878,12 +1915,11 @@ test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
     } else if ((POETRY_REBIND_IDS as readonly string[]).includes(id)) {
       // Re-bound poetry keeps its front matter (dedication, persons, argument)
       // tagged front; the card is the first line a fresh Sit opens on.
-      assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
+      assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000", id), `${id} shelf opening`);
     } else {
-      assert.ok(
-        (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),
-        `${id} shelf opening`,
-      );
+      // CARD-PASS: the card is the first real line; a short printed title
+      // (Leaves of Grass's "One’s-Self I Sing") may sit above it.
+      assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000", id), `${id} shelf opening`);
     }
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
@@ -1961,7 +1997,7 @@ test("Tier B batches 3–4 are local format-min binds, never Featured", () => {
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000", id), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
@@ -2044,7 +2080,7 @@ test("Tier B batches 5–6 are local format-min binds, never Featured", () => {
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000", id), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
@@ -2131,7 +2167,7 @@ test("Tier B batches 11–12 are local format-min binds, never Featured", () => 
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000", id), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
@@ -2202,7 +2238,7 @@ test("Tier B batches 9–10 are local format-min binds, never Featured", () => {
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000", id), `${id} shelf opening`);
     // Re-bound books carry real minutes (words/200); poetry-bind.test.ts pins them.
     if (!REAL_MINUTES_IDS.includes(id)) {
       assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
@@ -2283,7 +2319,7 @@ test("Tier B batches 13–14 are local format-min binds, never Featured", () => 
     assert.ok(
       (CARD_AFTER_PRINTED_NOTE_IDS as readonly string[]).includes(id)
         ? opensAfterPrintedNote(full, opening)
-        : opensOnFirstLine(full, opening),
+        : opensOnFirstLine(full, opening, id),
       `${id} shelf opening`,
     );
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
@@ -2354,7 +2390,7 @@ test("Tier B batches 15–16 are local format-min binds, never Featured", () => 
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
-    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000", id), `${id} shelf opening`);
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });
@@ -2417,8 +2453,8 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     const full = textWork(id);
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
-    const first = (full.breaths[0]?.text ?? "").replace(/\s+/g, " ").trim();
-    assert.ok(first.startsWith(work!.opening ?? ""), id);
+    // CARD-PASS: the card is the first real line, below any short printed chapter title.
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000", id), id);
     assert.ok((work!.intro ?? "").length >= 24, id);
     assert.equal(sentenceCount(blurbFor(work!)), 1, id);
     assert.ok(countryFor(work!), id);
@@ -2471,8 +2507,8 @@ test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => 
     const full = textWork(id);
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
-    const first = (full.breaths[0]?.text ?? "").replace(/\s+/g, " ").trim();
-    assert.ok(first.startsWith(work!.opening ?? ""), id);
+    // CARD-PASS: the card is the first real line, below any short printed chapter title.
+    assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000", id), id);
     assert.ok((work!.intro ?? "").length >= 24, id);
     assert.equal(sentenceCount(blurbFor(work!)), 1, id);
     assert.ok(countryFor(work!), id);
@@ -2483,14 +2519,11 @@ test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => 
  * OPEN-FIX: a card is never a contents line, a note, a title-page line or a
  * dedication, and a fresh Sit never opens on one. These cards still open on a
  * printed heading or editorial introduction and wait on an editorial call
- * (scene structure, not just the card): `id` → why.
+ * (scene structure, not just the card): `id` → why. Empty since CARD-PASS;
+ * the mechanism stays for the next book that needs one.
  */
 const CARD_APPARATUS_PENDING: Readonly<Record<string, string>> = {
-  "red-chamber": "translator's Preface sits in the scene titled Book I; needs the Book I heading moved to the chapters",
-  "drum-taps": "editorial Introduction sits in a scene titled from a newspaper supplement; poem scenes are titled by stray lines",
-  she: "Haggard's fictional editor's Introduction is part of the novel; card is its heading",
-  "toward-the-gulf":
-    "card is the tail of the contents list, filed as the scene Draw the Sword, O Republic, whose poem is bound inside another scene; needs a re-bind",
+  // CARD-PASS cleared red-chamber, drum-taps, she and toward-the-gulf.
 };
 const CARD_APPARATUS =
   /^(?:Chap\.|Contents\b|Table of Contents\b|Page\b|N\.\s?B\.)|^(?:Preface|Introduction|Note|In Memoriam|Dedication|Contents)\.?$/i;
@@ -2527,12 +2560,16 @@ test("OPEN-FIX: The House of the Dead opens on its first chapter, contents cut",
   assert.equal(full.scenes[12]!.title, "Part II · Chapter I");
   assert.equal(full.scenes.at(-1)!.title, "Part II · Chapter X");
   assert.equal(openingBreathIndex(full), 0);
-  assert.equal(full.breaths[0]!.text, "Ten Years a Convict");
+  // CARD-PASS: the printed title breath was deleted (ids kept, no renumber),
+  // so the chapter opens on its first line.
+  assert.ok(!full.breaths.some((breath) => breath.text === "Ten Years a Convict"), "title breath removed");
+  assert.equal(full.breaths.length, 1763);
+  assert.equal(full.breaths[0]!.id, "s2-1");
   assert.equal(
     work.opening,
     "In the midst of the steppes, of the mountains, of the impenetrable forests of the desert regions of Siberia, one meets from time to time with little towns of a thousand or two inhabitants, built entirely of wood, very ugly, with two churches--one in the centre of the town, the other in the cemetery--in a word, towns which bear much more resemblance to a good-sized village in the suburbs of Moscow than to a town properly so called.",
   );
-  assert.ok(full.breaths[1]!.text.startsWith(work.opening!));
+  assert.ok(full.breaths[0]!.text.startsWith(work.opening!));
   assert.equal(work.breaths, full.breaths.length);
   assert.equal(work.minutes, full.minutes);
 });
@@ -2559,4 +2596,185 @@ test("OPEN-FIX: a fresh Sit skips a leading note or dedication and the card is t
   }
   const pym = SHELF.find((item) => item.id === "the-narrative-of-arthur-gordon-pym-of-nantucket")!;
   assert.ok((textWork(pym.id) as Work).breaths[0]!.text.startsWith(pym.opening!), "Pym card is the first printed line, not the title page");
+});
+
+/**
+ * CARD-PASS: a card is the book's first real line as printed, never a
+ * heading. The detector flags a card that is a chapter/book/part heading, a
+ * bare numeral, a contents run, a scene or book title, a short all-caps line,
+ * or a short title-cased breath on its own.
+ */
+type W = { title?: string; scenes: { title: string }[]; breaths: { text: string }[] };
+const normCard = (s: string) =>
+  s.toLowerCase().replace(/\[[^\]]*\]/g, "").replace(/[^\p{L}\p{N}_]+/gu, " ").trim();
+const CARD_HEADING =
+  /^(?:chapter|chap\.|book|part|canto|act|section|stave|volume|letter|scene)\s+(?:[ivxlcdm]+|\d+|the\s+\w+|one|two|first)\b/i;
+const CARD_NUMERAL = /^[[(]?[IVXLCDM]+[.)\]]?$/;
+function titleCased(card: string) {
+  const t = card.replace(/[*_[\]()“”"‘’']/g, "").trim();
+  if (/[?!]/.test(t) || /[,:;]$/.test(t) || t.includes("--")) return false;
+  const words = t.match(/\p{L}[\p{L}\p{N}_'’]*(?:-[\p{L}\p{N}_'’]+)*/gu) ?? [];
+  const big = words.filter((w) => w.length >= 4);
+  if (big.length === 1 && words.length > 2) return false;
+  return words.length > 0 && words.length <= 9 && big.every((w) => w[0] === w[0]!.toUpperCase());
+}
+function headingOnlyCard(card: string, work: W): string | null {
+  const c = card.trim();
+  const n = normCard(c);
+  const titles = new Set([...work.scenes.map((s) => normCard(s.title)), normCard(work.title ?? "")]);
+  const bare = c.replace(/^[*_<>i/ ]+/, "");
+  if (CARD_HEADING.test(bare)) return "chapter, book or part heading";
+  if (CARD_NUMERAL.test(c)) return "bare numeral";
+  if ((c.match(/\b(?:chapter|canto|book)\s+[ivxlcdm\d]+/gi) ?? []).length >= 2) return "contents run";
+  if (titles.has(n) && !(/[.!?]["”’*]*$/.test(c) && !titleCased(c))) return "scene or book title";
+  const letters = c.replace(/[^\p{L}]/gu, "");
+  if (letters && c.length <= 60 && letters === letters.toUpperCase() && letters !== letters.toLowerCase()) return "short all-caps heading";
+  const whole = work.breaths.slice(0, 60).some((b) => b.text.trim() === c);
+  if (whole && c.length <= 60 && titleCased(c)) return "title-cased heading breath";
+  return null;
+}
+
+/** Cards that trip the detector but are the printed first line: `id` → why. */
+const CARD_HEADING_KEEP: Readonly<Record<string, string>> = {
+  "colonel-chabert": "the novel opens on the clerk's shout “HULLO! ...”",
+  "caesar-or-nothing": "the novel opens on the exclamation *MARSEILLES!* as printed",
+  "lucky-pehr": "the play opens on its stage direction (*Scene: ...*)",
+  "post-office": "the play opens on its setting direction [MADHAV'S House]",
+};
+/** Heading cards still waiting on a fix; each must still trip. */
+const CARD_HEADING_PENDING: Readonly<Record<string, string>> = {};
+
+test("CARD-PASS: no card is only a heading, a title or a numeral", () => {
+  const hits: string[] = [];
+  for (const work of SHELF) {
+    if (!work.local || !work.opening || work.id in CARD_HEADING_KEEP || work.id in CARD_HEADING_PENDING) continue;
+    if (!existsSync(new URL(`./texts/${work.id}.json`, import.meta.url))) continue;
+    const why = headingOnlyCard(work.opening, textWork(work.id) as never);
+    if (why) hits.push(`${work.id} [${why}]: ${work.opening.slice(0, 80)}`);
+  }
+  assert.deepEqual(hits, []);
+  for (const id of [...Object.keys(CARD_HEADING_KEEP), ...Object.keys(CARD_HEADING_PENDING)]) {
+    const work = SHELF.find((item) => item.id === id)!;
+    assert.ok(headingOnlyCard(work.opening ?? "", textWork(id) as never), `${id} no longer trips; drop it from the allowlist`);
+  }
+  const fixture = (text: string, title = "Chapter I") => ({ title: "Book", scenes: [{ title }], breaths: [{ text }] });
+  for (const card of ["CHAPTER I.", "Chapter One", "Book II", "IV.", "Preface", "TYPHOON", "The Blue Cross", "Canto I Canto II Canto III"]) {
+    assert.ok(headingOnlyCard(card, fixture(card, card === "Preface" ? "Preface" : "Chapter I")), `detector catches ${card}`);
+  }
+  for (const card of ["It was dawn on the first of May, 1877.", "The night was cold and the sea was calm.", "Hog Butcher for the World,"]) {
+    assert.equal(headingOnlyCard(card, fixture(card)), null, `detector passes ${card}`);
+  }
+});
+
+test("CARD-PASS: every local card is printed text from its book", () => {
+  // Gösta Berling's bind lacks the Introduction chapters (The Priest, The
+  // Beggar); its card is the book's real first line and waits on a re-bind.
+  const pending = new Set(["the-story-of-gosta-berling"]);
+  const misses: string[] = [];
+  for (const work of SHELF) {
+    if (!work.local || !work.opening || pending.has(work.id)) continue;
+    if (!existsSync(new URL(`./texts/${work.id}.json`, import.meta.url))) continue;
+    const full = textWork(work.id);
+    if (!full.breaths.some((breath) => breath.text.startsWith(work.opening!))) misses.push(`${work.id}: ${work.opening.slice(0, 80)}`);
+  }
+  assert.deepEqual(misses, []);
+  const gosta = SHELF.find((item) => item.id === "the-story-of-gosta-berling")!;
+  assert.equal(gosta.opening, "At last the minister stood in the pulpit.");
+});
+
+test("CARD-PASS: cards past a printed argument, epigraph or title sit exactly there", () => {
+  for (const [id, [offset, why]] of [
+    ...Object.entries(CARD_AFTER_PRINTED_APPARATUS),
+    ...Object.entries(CARD_OPENING_STRUCTURE_PENDING),
+  ]) {
+    const work = SHELF.find((item) => item.id === id)!;
+    const full = textWork(id) as Work;
+    const at = openingBreathIndex(full);
+    assert.ok(offset > 0, id);
+    assert.ok(full.breaths[at + offset]!.text.startsWith(work.opening!), `${id}: card follows ${why}`);
+    assert.ok(!full.breaths.slice(at, at + offset).some((breath) => breath.text.startsWith(work.opening!)), `${id} offset is the first hit`);
+  }
+  for (const id of Object.keys(CARD_OPENING_STRUCTURE_PENDING)) {
+    assert.ok(!(id in CARD_AFTER_PRINTED_APPARATUS), id);
+  }
+});
+
+test("CARD-PASS: re-binds keep the whole book, one scene per poem, card on the first real line", () => {
+  const cases: Array<[string, number, number, string[], string, string]> = [
+    ["toward-the-gulf", 47, 776, ["To William Marion Reedy"], "Toward the Gulf", "From the Cordilleran Highlands, / From the Height of Land / Far north."],
+    [
+      "young-adventure",
+      35,
+      306,
+      ["Dedication", "Foreword by Chauncey Brewster Tinker", "Prefatory Note"],
+      "The Drug-Shop, or, Endymion in Edmonstoun",
+      "Night falls; the great jars glow against the dark, / Dark green, dusk red, and, like a coiling snake, / Writhing eternally in smoky gyres, / Great ropes of gorgeous vapor twist and turn / Within them.",
+    ],
+    [
+      "drum-taps",
+      45,
+      183,
+      ["Note", "Introduction"],
+      "First O Songs for a Prelude",
+      "First O songs for a prelude, / Lightly strike on the stretch'd tympanum pride and joy in my city,",
+    ],
+    ["red-chamber", 25, 2684, ["Preface"], "Book I · Chapter I", "This is the opening section; this the first chapter."],
+  ];
+  for (const [id, scenes, breaths, front, first, card] of cases) {
+    const work = SHELF.find((item) => item.id === id)!;
+    const full = textWork(id) as Work;
+    assert.equal(full.scenes.length, scenes, id);
+    assert.equal(full.breaths.length, breaths, id);
+    assert.equal(work.breaths, breaths, `${id} shelf breaths`);
+    assert.equal(work.minutes, full.minutes, `${id} shelf minutes`);
+    assert.deepEqual(full.scenes.slice(0, front.length).map((scene) => [scene.title, scene.front]), front.map((title) => [title, true]), id);
+    const opener = full.scenes[front.length]!;
+    assert.equal(opener.title, first, id);
+    assert.equal(work.opening, card, id);
+    const at = openingBreathIndex(full);
+    assert.equal(full.breaths[at]!.sceneId, opener.id, `${id} fresh Sit opens on ${first}`);
+    assert.ok(full.breaths.slice(at, at + 3).some((breath) => breath.text.startsWith(card)), `${id} card within the first sit`);
+    assert.ok(!full.breaths.some((breath) => /^(?:contents|table of contents)\.?$/i.test(breath.text.trim())), `${id} contents cut`);
+  }
+  const gulf = textWork("toward-the-gulf") as Work;
+  assert.equal(gulf.breaths[openingBreathIndex(gulf)]!.text, "*Dedicated to Theodore Roosevelt*");
+  assert.ok(gulf.scenes.some((scene) => scene.title === "Draw the Sword, O Republic!"));
+  const taps = textWork("drum-taps") as Work;
+  assert.ok(taps.scenes.every((scene) => !/\.$/.test(scene.title)), "drum-taps poem titles as printed, no trailing period");
+});
+
+test("CARD-PASS: She opens on the Introduction; Chapter I's editor note follows its paragraph", () => {
+  const work = SHELF.find((item) => item.id === "she")!;
+  const full = textWork("she") as Work;
+  assert.equal(full.scenes.length, 59);
+  assert.equal(full.scenes[0]!.title, "INTRODUCTION");
+  assert.ok(!full.scenes.some((scene) => scene.id === "s1"), "footnote pseudo-scene s1 folded back");
+  assert.equal(openingBreathIndex(full), 0);
+  assert.ok(full.breaths[0]!.text.startsWith(work.opening!) || full.breaths[1]!.text.startsWith(work.opening!));
+  assert.match(work.opening!, /^In giving to the world the record of what/);
+  const at = full.breaths.findIndex((breath) => breath.id === "s0-57");
+  assert.equal(full.breaths[at]!.text, "Horace Holly.");
+  assert.deepEqual(full.breaths[at + 1], {
+    id: "s1-0",
+    sceneId: "s0",
+    text: "Note: This name is varied throughout in accordance with the writer’s request.—Editor.",
+  });
+  assert.equal(work.breaths, full.breaths.length);
+});
+
+test("CARD-PASS: The House of the Dead remap lands on the new first breath, no chain", () => {
+  const remap = JSON.parse(readFileSync(new URL("./at-remap.json", import.meta.url), "utf8")) as Record<string, Record<string, string>>;
+  const full = textWork("the-house-of-the-dead") as Work;
+  const ids = new Set(full.breaths.map((breath) => breath.id));
+  const map = remap["the-house-of-the-dead"]!;
+  for (const old of ["s0-0", "s0-1", "s1-0", "s1-1", "s2-0"]) assert.equal(map[old], "s2-1", old);
+  for (const id of ["the-house-of-the-dead", "toward-the-gulf", "young-adventure", "drum-taps"]) {
+    const ids2 = new Set((textWork(id) as Work).breaths.map((breath) => breath.id));
+    // Lookup is single-step: every target must be a live breath id. (A key
+    // that still exists maps to where its old text now sits.)
+    for (const [from, to] of Object.entries(remap[id] ?? {})) {
+      assert.ok(ids2.has(to), `${id} ${from} → ${to} is a live id`);
+    }
+  }
+  assert.ok(ids.has("s2-1") && !ids.has("s2-0"));
 });

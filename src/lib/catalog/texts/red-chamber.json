@@ -10,176 +10,177 @@
   "scenes": [
     {
       "id": "s0",
-      "title": "Book I",
-      "place": "Book I",
-      "reentry": "Preface.",
-      "prompt": "A word from this stretch."
+      "title": "Preface",
+      "place": "Preface",
+      "reentry": "This translation was suggested not by any pretensions to range myself among the ranks of the body of sinologues, but by the perplexities and difficulties experienced by me as a student in Peking, when, at the completion of the Tzu Erh Chi, I had to plunge in the maze of the Hung Lou Meng.",
+      "prompt": "A word from this stretch.",
+      "front": true
     },
     {
       "id": "s1",
-      "title": "Chapter I",
-      "place": "Chapter I",
+      "title": "Book I · Chapter I",
+      "place": "Book I · Chapter I",
       "reentry": "Chen Shih-yin, in a vision, apprehends perception and spirituality. Chia Yue-ts'un, in the (windy and dusty) world, cherishes fond thoughts of a beautiful maiden.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s2",
-      "title": "Chapter II",
-      "place": "Chapter II",
+      "title": "Book I · Chapter II",
+      "place": "Book I · Chapter II",
       "reentry": "The spirit of Mrs. Chia Shih-yin departs from the town of Yang Chou. Leng Tzu-hsing dilates upon the Jung Kuo Mansion.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s3",
-      "title": "Chapter III",
-      "place": "Chapter III",
+      "title": "Book I · Chapter III",
+      "place": "Book I · Chapter III",
       "reentry": "Lin Ju-hai appeals to his brother-in-law, Chia Cheng, recommending Yue-ts'un, his daughter's tutor, to his consideration. Dowager lady Chia sends to fetch her granddaughter, out of commiseration for her being a motherless child.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s4",
-      "title": "Chapter IV",
-      "place": "Chapter IV",
+      "title": "Book I · Chapter IV",
+      "place": "Book I · Chapter IV",
       "reentry": "An ill-fated girl happens to meet an ill-fated young man. The Hu Lu Bonze adjudicates the Hu Lu case.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s5",
-      "title": "Chapter V",
-      "place": "Chapter V",
+      "title": "Book I · Chapter V",
+      "place": "Book I · Chapter V",
       "reentry": "The spirit of Chia Pao-yue visits the confines of the Great Void. The Monitory Vision Fairy expounds, in ballads, the Dream of the Red Chamber.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s6",
-      "title": "Chapter VI",
-      "place": "Chapter VI",
+      "title": "Book I · Chapter VI",
+      "place": "Book I · Chapter VI",
       "reentry": "Chia Pao-yue reaps his first experience in licentious love. Old Goody Liu pays a visit to the Jung Kuo Mansion.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s7",
-      "title": "Chapter VII",
-      "place": "Chapter VII",
+      "title": "Book I · Chapter VII",
+      "place": "Book I · Chapter VII",
       "reentry": "Presentation of artificial flowers made in the Palace. Chia Lien disports himself with Hsi-feng. Pao-yue meets Ch'in Chung at a family party.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s8",
-      "title": "Chapter VIII",
-      "place": "Chapter VIII",
+      "title": "Book I · Chapter VIII",
+      "place": "Book I · Chapter VIII",
       "reentry": "By a strange coincidence, Chia Pao-yue becomes acquainted with the golden clasp. In an unexpected meeting, Hsueeh Pao-ch'ai sees the jade of spiritual perception.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s9",
-      "title": "Chapter IX",
-      "place": "Chapter IX",
+      "title": "Book I · Chapter IX",
+      "place": "Book I · Chapter IX",
       "reentry": "Chia Cheng gives good advice to his wayward son. Li Kuei receives a reprimand. Chia Jui and Li Kuei rebuke the obstinate youths! Ming Yen causes trouble in the school-room.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s10",
-      "title": "Chapter X",
-      "place": "Chapter X",
+      "title": "Book I · Chapter X",
+      "place": "Book I · Chapter X",
       "reentry": "Widow Chin, prompted by a desire to reap advantage, puts up temporarily with an insult. Dr. Chang in discussing Mrs. Chin's illness minutely exhausts its origin.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s11",
-      "title": "Chapter XI",
-      "place": "Chapter XI",
+      "title": "Book I · Chapter XI",
+      "place": "Book I · Chapter XI",
       "reentry": "In honour of Chia Ching's birthday, a family banquet is spread in the Ning Mansion. At the sight of Hsi-feng, Chia Jui entertains feelings of licentious love.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s12",
-      "title": "Chapter XII",
-      "place": "Chapter XII",
+      "title": "Book I · Chapter XII",
+      "place": "Book I · Chapter XII",
       "reentry": "Wang Hsi-feng maliciously lays a trap for Chia Jui, under pretence that his affection is reciprocated. Chia T'ien-hsiang gazes at the face of the mirror of Voluptuousness.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s13",
-      "title": "Chapter XIII",
-      "place": "Chapter XIII",
+      "title": "Book I · Chapter XIII",
+      "place": "Book I · Chapter XIII",
       "reentry": "Ch'in K'o-ch'ing dies, and Chia Jung is invested with the rank of military officer to the Imperial Body-guard. Wang Hsi-feng lends her help in the management of the Jung Kuo Mansion.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s14",
-      "title": "Chapter XIV",
-      "place": "Chapter XIV",
+      "title": "Book I · Chapter XIV",
+      "place": "Book I · Chapter XIV",
       "reentry": "Lin Ju-hai dies in the City of Yang Chou. Chia Pao-yue meets the Prince of Pei Ching on the way.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s15",
-      "title": "Chapter XV",
-      "place": "Chapter XV",
+      "title": "Book I · Chapter XV",
+      "place": "Book I · Chapter XV",
       "reentry": "Lady Peng, nee Wang, exercises her authority in the Iron Fence Temple. Ch'in Ching-ch'ing (Ch'ing Chung) amuses himself in the Man-t'ou (Bread) nunnery.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s16",
-      "title": "Chapter XVI",
-      "place": "Chapter XVI",
+      "title": "Book I · Chapter XVI",
+      "place": "Book I · Chapter XVI",
       "reentry": "Chia Yuan-ch'un is, on account of her talents, selected to enter the Feng Ts'ao Palace. Ch'in Ching-ch'ing departs, in the prime of life, by the yellow spring road.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s17",
-      "title": "Chapter XVII",
-      "place": "Chapter XVII",
+      "title": "Book I · Chapter XVII",
+      "place": "Book I · Chapter XVII",
       "reentry": "In the Ta Kuan Garden, (Broad Vista,) the merits of Pao-yue are put to the test, by his being told to write devices for scrolls and tablets. Yuan Ch'un returns to the Jung Kuo mansion, on a visit to her parents, and offers her congratulatio",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s18",
-      "title": "Chapter XVIII",
-      "place": "Chapter XVIII",
+      "title": "Book I · Chapter XVIII",
+      "place": "Book I · Chapter XVIII",
       "reentry": "His Majesty shows magnanimous bounty. The Imperial consort Yuan pays a visit to her parents. The happiness of a family gathering. Pao-yue displays his polished talents.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s19",
-      "title": "Chapter XIX",
-      "place": "Chapter XIX",
+      "title": "Book I · Chapter XIX",
+      "place": "Book I · Chapter XIX",
       "reentry": "In the vehemence of her feelings, Hua (Hsi Jen) on a quiet evening admonishes Pao-yue. While (the spell) of affection continues unbroken, Pao-yue, on a still day, perceives the fragrance emitted from Tai-yue's person.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s20",
-      "title": "Chapter XX",
-      "place": "Chapter XX",
+      "title": "Book I · Chapter XX",
+      "place": "Book I · Chapter XX",
       "reentry": "Wang Hsi-feng with earnest words upbraids Mrs. Chao's jealous notions. Lin Tai-yue uses specious language to make sport of Shih Hsiang-yuen's querulous tone of voice.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s21",
-      "title": "Chapter XXI",
-      "place": "Chapter XXI",
+      "title": "Book I · Chapter XXI",
+      "place": "Book I · Chapter XXI",
       "reentry": "The eminent Hsi Jen, with winsome ways, rails at Pao-yue, with a view to exhortation. The beauteous P'ing Erh, with soft words, screens Chia Lien.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s22",
-      "title": "Chapter XXII",
-      "place": "Chapter XXII",
+      "title": "Book I · Chapter XXII",
+      "place": "Book I · Chapter XXII",
       "reentry": "Upon hearing the text of the stanza, Pao-yue comprehends the Buddhistic spells. While the enigmas for the lanterns are being devised, Chia Cheng is grieved by a prognostic.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s23",
-      "title": "Chapter XXIII",
-      "place": "Chapter XXIII",
+      "title": "Book I · Chapter XXIII",
+      "place": "Book I · Chapter XXIII",
       "reentry": "Pao-yue and Tai-yue make use of some beautiful passages from the Record of the Western Side-building to bandy jokes. The excellent ballads sung in the Peony Pavilion touch the tender heart of Tai-yue.",
       "prompt": "A word from this stretch."
     },
     {
       "id": "s24",
-      "title": "Chapter XXIV",
-      "place": "Chapter XXIV",
+      "title": "Book I · Chapter XXIV",
+      "place": "Book I · Chapter XXIV",
       "reentry": "The drunken Chin Kang makes light of lucre and shows a preference for generosity. The foolish girl mislays her handkerchief and arouses mutual thoughts.",
       "prompt": "A word from this stretch."
     }

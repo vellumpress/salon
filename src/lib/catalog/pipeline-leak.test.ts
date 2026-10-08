@@ -720,10 +720,12 @@ test("the numeral gate trips on title-cased numerals and passes printed ones", (
 
 /**
  * A card opening is a line of the book, not a contents run ("I. LIFE OF … II.
- * … III. …"). The Ramayan card still opens on its canto list; it is listed
- * here until its contents are tagged front.
+ * … III. …"). Works still carding a contents run wait here (empty since
+ * CARD-PASS).
  */
-const CONTENTS_OPENING_PENDING = new Set<string>(["the-ramayan-of-valmiki"]);
+// CARD-PASS: the Rámáyan card is now its first verse line (the per-Book
+// contents still wait on a re-bind; see card-copy CARD_OPENING_STRUCTURE_PENDING).
+const CONTENTS_OPENING_PENDING = new Set<string>([]);
 
 test("card openings are not a run of contents entries", () => {
   const hits: string[] = [];

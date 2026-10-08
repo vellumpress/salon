@@ -41,6 +41,24 @@ function opensOnFirstLine(full: unknown, opening: string) {
 }
 
 /**
+ * CARD-PASS: the card is the book's first real line as printed. These books
+ * print a dateline, a diary date, a chapter title or an argument above it, so
+ * the card sits that many breaths past the Sit start (`id` → offset).
+ */
+const CARD_PASS_PRINTED_ABOVE: Readonly<Record<string, number>> = {
+  "leon-roch": 1, // letter dateline
+  "gentlemen-prefer-blondes": 1, // diary date "March 16th:"
+  "st-peter-s-umbrella": 1, // chapter title
+};
+
+function cardOnFirstBreath(full: unknown, opening: string, id: string) {
+  const work = full as Work;
+  const offset = CARD_PASS_PRINTED_ABOVE[id];
+  if (offset === undefined) return (work.breaths[0]?.text ?? "").startsWith(opening);
+  return (work.breaths[openingBreathIndex(work) + offset]?.text ?? "").startsWith(opening);
+}
+
+/**
  * Bind-note metadata (texts/openings JSON `note`). Inventory and PG
  * reading-ease figures are kept here for the pipeline; reader copy no
  * longer carries them (see pipeline-leak.test.ts).
@@ -288,7 +306,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "the-complete-original-short-stories",
     "the-cabin",
     "les-chants-de-maldoror",
-    "pan-tadeusz",
     "the-red-laugh",
     "before-adam",
     "bruges-la-morte",
@@ -1865,13 +1882,13 @@ test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "over-the-brazier": { opening: "The youngest poet down the shelves was fumbling In a dim library, just behind the chair From which t", breaths: 89, scenes: 20, gutenberg: 47144 },
     "rolling-stones": { opening: "[This was the last work of O. Henry. The *Cosmopolitan Magazine* had ordered it from him and, after", breaths: 1496, scenes: 21, gutenberg: 3815 },
     "salammbo": { opening: "It was at Megara, a suburb of Carthage, in the gardens of Hamilcar. The soldiers whom he had command", breaths: 1924, scenes: 15, gutenberg: 1290 },
-    "smoke-bellew": { opening: "I.", breaths: 1255, scenes: 6, gutenberg: 1596 },
-    "songs-from-vagabondia": { opening: "VAGABONDIA.", breaths: 306, scenes: 7, gutenberg: 18238 },
+    "smoke-bellew": { opening: "In the beginning he was Christopher Bellew.", breaths: 1255, scenes: 6, gutenberg: 1596 },
+    "songs-from-vagabondia": { opening: "Off with the fetters That chafe and restrain!", breaths: 306, scenes: 7, gutenberg: 18238 },
     "songs-of-childhood": { opening: "As I lay awake in the white moonlight, I heard a sweet singing in the wood-- 'Out of bed, Sleepyhead", breaths: 331, scenes: 43, gutenberg: 23545 },
     "ten-minute-stories": { opening: "At the moorland cross-roads Martin stood examining the sign-post for several minutes in some bewilde", breaths: 832, scenes: 28, gutenberg: 72928 },
     "the-everlasting-mercy": { opening: "From ’41 to ’51 I was my folk’s contrary son; I bit my father’s hand right through And broke my mother’s heart in two.", breaths: 115, scenes: 2, gutenberg: 41467 },
     "the-golden-bowl": { opening: "The Prince had always liked his London, when it had come to him; he was one of the modern Romans who", breaths: 2497, scenes: 42, gutenberg: 4264 },
-    "the-rainbow": { opening: "Chapter I. HOW TOM BRANGWEN MARRIED A POLISH LADY", breaths: 4518, scenes: 101, gutenberg: 28948 },
+    "the-rainbow": { opening: "The Brangwens had lived for generations on the Marsh Farm, in the meadows where the Erewash twisted sluggishly through alder trees, separating Derbyshire from Nottinghamshire.", breaths: 4518, scenes: 101, gutenberg: 28948 },
     "the-sword-of-welleran": { opening: "Where the great plain of Tarphet runs up, as the sea in estuaries, among the Cyresian mountains, the", breaths: 434, scenes: 11, gutenberg: 10806 },
     "time-and-the-gods": { opening: "Once when the gods were young and only Their swarthy servant Time was without age, the gods lay slee", breaths: 677, scenes: 20, gutenberg: 8183 },
   } as const;
@@ -1939,7 +1956,7 @@ test("BATCH-5 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "the-stolen-bacillus": { opening: "\"This again,\" said the Bacteriologist, slipping a glass slide under the microscope, \"is a preparation of the celebrated ", breaths: 765, scenes: 15, gutenberg: 12750 },
     "the-tragic-muse": { opening: "The people of France have made it no secret that those of England, as a general thing, are to their perception an inexpr", breaths: 3936, scenes: 51, gutenberg: 20085 },
     "toilers-of-the-sea": { opening: "Christmas Day in the year 182- was somewhat remarkable in the island of Guernsey. Snow fell on that day. In the Channel ", breaths: 3289, scenes: 95, gutenberg: 32338 },
-    "toward-the-gulf": { opening: "DEAR OLD DICK THE ROOM OF MIRRORS THE LETTER CANTICLE OF THE RACE BLACK EAGLE RETURNS TO ST. JOE MY LIGHT WITH YOURS THE", breaths: 660, scenes: 43, gutenberg: 7845 },
+    "toward-the-gulf": { opening: "From the Cordilleran Highlands, / From the Height of Land / Far north.", breaths: 776, scenes: 47, gutenberg: 7845 },
   } as const;
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
   const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
@@ -1994,14 +2011,14 @@ test("BATCH-8 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     "hania": { opening: "When old Mikolai on his death-bed left Hania to my guardianship and conscience, I was sixteen years of age;", breaths: 1090, scenes: 12, gutenberg: 36583 },
     "indian-summer": { opening: "Midway of the Ponte Vecchio at Florence, where three arches break the lines of the little jewellers'", breaths: 2495, scenes: 24, gutenberg: 7359 },
     "les-heures-claires": { opening: "Tissée en or dans l'air de soie!", breaths: 121, scenes: 30, gutenberg: 10061 },
-    "les-trophees": { opening: "À Leconte de L'Isle", breaths: 663, scenes: 81, gutenberg: 14805 },
+    "les-trophees": { opening: "Le temple est en ruine au haut du promontoire.", breaths: 663, scenes: 81, gutenberg: 14805 },
     "numa-roumestan": { opening: "That Sunday--it was a scorching hot Sunday in July at the time of the yearly competitions for the department--there was a great open-air festival held in the ancient amphitheatre of Aps in Provence.", breaths: 1651, scenes: 20, gutenberg: 69808 },
     "royal-highness": { opening: "The scene is the Albrechtstrasse, the main artery of the capital, which runs from Albrechtsplatz and the Old Schloss to", breaths: 1407, scenes: 10, gutenberg: 36028 },
     "the-emancipated": { opening: "By a window looking from Posillipo upon the Bay of Naples sat an English lady, engaged in letter-wri", breaths: 3897, scenes: 33, gutenberg: 4311 },
     "the-great-hunger": { opening: "For sheer havoc, there is no gale like a good northwester, when it roars in, through the long winter", breaths: 1744, scenes: 27, gutenberg: 2943 },
     "the-patrician": { opening: "Light, entering the vast room—a room so high that its carved ceiling refused itself to exact scrutin", breaths: 2176, scenes: 51, gutenberg: 2774 },
     "the-price-of-love": { opening: "In the evening dimness of old Mrs. Maldon's sitting-room stood the youthful virgin, Rachel Louisa Fl", breaths: 2475, scenes: 19, gutenberg: 12912 },
-    "the-private-papers-of-henry-ryecroft": { opening: "I.", breaths: 480, scenes: 4, gutenberg: 1463 },
+    "the-private-papers-of-henry-ryecroft": { opening: "For more than a week my pen has lain untouched.", breaths: 480, scenes: 4, gutenberg: 1463 },
     "unhuman-tour-kusamakura": { opening: "Climbing the mountain, I was caught up into a train of thought.", breaths: 972, scenes: 13, gutenberg: 73131 },
   } as const;
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
@@ -2178,7 +2195,7 @@ test("BATCH-13 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
     assert.ok(full.breaths.length >= 3, id);
-    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+    assert.ok(cardOnFirstBreath(full, want.opening, id), id);
   }
 });
 
@@ -2195,7 +2212,7 @@ test("BATCH-15 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-inferno": { opening: "An American critic says \"Strindberg is the greatest subjectivist of all time.\" Certainly neither Aug", breaths: 650, scenes: 17, gutenberg: 44108, scene: "Introduction" },
     "trafalgar": { opening: "I trust that, before relating the important events of which I have been an eye-witness, I may be all", breaths: 556, scenes: 17, gutenberg: 47980, scene: "Chapter I" },
     "saragossa": { opening: "It was, I believe, the evening of the eighteenth when we saw Saragossa in the distance. As we entere", breaths: 1034, scenes: 31, gutenberg: 47769, scene: "Chapter I" },
-    "leon-roch": { opening: "“*Ugoibea*, AUGUST 30th.", breaths: 1334, scenes: 32, gutenberg: 48752, scene: "Chapter I" },
+    "leon-roch": { opening: "“DEAR LEON: Think no more of my letter of yesterday; it must have crossed yours, which I have just received.", breaths: 1334, scenes: 32, gutenberg: 48752, scene: "Chapter I" },
     "yiddish-short-stories": { opening: "Somewhere many and many a year ago, a Jew breathed his last.", breaths: 94, scenes: 4, gutenberg: 77680, scene: "The Scales of Justice" },
     "tales-of-old-japan": { opening: "The books which have been written of late years about Japan have either been compiled from official ", breaths: 75, scenes: 2, gutenberg: 13015, scene: "The Forty-seven Rônins" },
     "chinese-literature": { opening: "\"To learn,\" said the Master, \"and then to practise opportunely what one has learnt--does not this br", breaths: 875, scenes: 5, gutenberg: 10056, scene: "Analects · Book I" },
@@ -2253,7 +2270,7 @@ test("BATCH-15 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.equal(full.breaths.length, want.breaths, id);
     assert.ok(full.breaths.length >= 3, id);
     assert.equal(full.scenes[0]?.title, want.scene, id);
-    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+    assert.ok(cardOnFirstBreath(full, want.opening, id), id);
   }
   const inferno = SHELF.find((item) => item.id === "the-inferno");
   assert.equal(inferno?.author.startsWith("August Strindberg"), true);
@@ -2332,7 +2349,7 @@ test("BATCH-16 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
     assert.ok(full.breaths.length >= 3, id);
-    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+    assert.ok(cardOnFirstBreath(full, want.opening, id), id);
   }
 });
 
@@ -2418,7 +2435,7 @@ test("EXTRACTABLE-8 CLEAR inventory binds are local Next / before-sleep sits, ne
     assert.equal(full.breaths.length, want.breaths, id);
     assert.ok(full.breaths.length >= 3, id);
     assert.equal(full.scenes[0]?.title, want.scene, id);
-    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+    assert.ok(cardOnFirstBreath(full, want.opening, id), id);
     assert.equal(JSON.stringify(full).includes("gutenberg.org"), false, id);
   }
   const birds = SHELF.find((item) => item.id === "conference");
@@ -2431,7 +2448,7 @@ test("EXTRACTABLE-8 CLEAR inventory binds are local Next / before-sleep sits, ne
 test("Mira 8AM CLEAR ×5 are Recommend-only local binds, never Featured", () => {
   const nextExpect = {
     "gentlemen-prefer-blondes": {
-      opening: "March 16th:",
+      opening: "A gentleman friend and I were dining at the Ritz last evening and he said that if I took a pencil and a paper and put down all of my thoughts it would make a book.",
       breaths: 280,
       scenes: 6,
       gutenberg: 66829,
@@ -2520,7 +2537,7 @@ test("Mira 8AM CLEAR ×5 are Recommend-only local binds, never Featured", () => 
     assert.equal(full.breaths.length, want.breaths, id);
     assert.ok(full.breaths.length >= 3, id);
     assert.equal(full.scenes[0]?.title, want.scene, id);
-    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+    assert.ok(cardOnFirstBreath(full, want.opening, id), id);
     assert.equal(JSON.stringify(full).includes("gutenberg.org"), false, id);
   }
   assert.equal(next.indexOf("gentlemen-prefer-blondes") < next.indexOf("of-one-blood"), true);
@@ -2644,14 +2661,13 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
     "the-red-and-the-black": { opening: "Put thousands together less bad, But the cage less gay.--*Hobbes*.", breaths: 3449, scenes: 74, gutenberg: 44747 },
     "alcools": { opening: "\u00c0 la fin tu es las de ce monde ancien", breaths: 542, scenes: 44, gutenberg: 15462 },
     "petersburg": { opening: "Apollon Apollonowitsch Ableuchow war von h\u00f6chst w\u00fcrdiger Abstammung: er hatte Adam zum Vorfahren geh", breaths: 4563, scenes: 8, gutenberg: 39919 },
-    "st-peter-s-umbrella": { opening: "LITTLE VERONICA IS TAKEN AWAY.", breaths: 1856, scenes: 17, gutenberg: 31945 },
+    "st-peter-s-umbrella": { opening: "The schoolmaster's widow at the Halap was dead.", breaths: 1856, scenes: 17, gutenberg: 31945 },
     "caesar-or-nothing": { opening: "*MARSEILLES!*", breaths: 3586, scenes: 46, gutenberg: 8444 },
     "calligrammes": { opening: "Comme c'\u00e9tait la veille du quatorze juillet Vers les quatre heures de l'apr\u00e8s-midi Je descendis dans", breaths: 424, scenes: 15, gutenberg: 55569 },
     "martin-fierro": { opening: "1 Aqu\u00ed me pongo a cantar Al comp\u00e1s de la vig\u00fcela, Que el hombre que lo desvela Una pena estraordinar", breaths: 395, scenes: 12, gutenberg: 14765 },
     "the-complete-original-short-stories": { opening: "For several days in succession fragments of a defeated army had passed through the town. They were m", breaths: 13590, scenes: 186, gutenberg: 3090 },
     "the-cabin": { opening: "The vast plain stretched out under the blue splendour of dawn, a broad sash of light which appeared ", breaths: 1205, scenes: 10, gutenberg: 38165 },
     "les-chants-de-maldoror": { opening: "Pl\u00fbt au ciel que le lecteur, enhardi et devenu momentan\u00e9ment f\u00e9roce comme ce qu'il lit, trouve, sans", breaths: 189, scenes: 6, gutenberg: 12005 },
-    "pan-tadeusz": { opening: "GOSPODARSTWO.", breaths: 424, scenes: 5, gutenberg: 31536 },
     "the-red-laugh": { opening: "..... Horror and madness.", breaths: 458, scenes: 19, gutenberg: 62460 },
   } as const;
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
@@ -2659,7 +2675,7 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
   assert.ok(sleep);
   assert.ok(forYou);
-  assert.equal(Object.keys(expect).length, 18);
+  assert.equal(Object.keys(expect).length, 17);
   assert.deepEqual(forYou.workIds.slice(0, 3), [
     "the-house-of-mirth",
     "quicksand",
@@ -2697,7 +2713,7 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.equal(full.scenes.length, want.scenes, id);
     assert.equal(full.breaths.length, want.breaths, id);
     assert.ok(full.breaths.length >= 3, id);
-    assert.ok(full.breaths[0]?.text.startsWith(want.opening), id);
+    assert.ok(cardOnFirstBreath(full, want.opening, id), id);
   }
   for (const held of ["three-hundred-tang-poems", "the-bronze-horseman"]) {
     const work = SHELF.find((item) => item.id === held);
@@ -2728,7 +2744,7 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
     "policarpo": { opening: "Como de habito, Polycarpo Quaresma, mais conhecido por major Quaresma, bateu em casa ás 4 e 15 da tarde. Havia mais de v", breaths: 1966, scenes: 15, gutenberg: 67535, scene: "Part I · Chapter I · A Lição De Violão" },
     "quincas": { opening: "Rubião fitava a enseada,--eram oito horas da manhã. Quem o visse, com os polegares mettidos no cordão do chambre, á jane", breaths: 1829, scenes: 201, gutenberg: 55682, scene: "Chapter I" },
     "marianela": { opening: "The sun had set. After the brief interval of twilight the night fell calm and dark, and in its gloomy bosom the last sounds of a sleepy world died gently away. The traveller went forward on his way, hastening his step as night came on; the path he followed was narrow and worn by the constant tread of men and beasts, and led gently up a hill on whose verdant slopes grew picturesque clumps of wild cherry trees, beeches and oaks.--The reader perceives that we are in the north of Spain.", breaths: 1138, scenes: 22, gutenberg: 48818, scene: "Chapter I · Gone Astray" },
-    "pepita-jimenez": { opening: "*22 de Marzo*.", breaths: 850, scenes: 3, gutenberg: 17223, scene: "Chapter I · Cartas de mi sobrino" },
+    "pepita-jimenez": { opening: "Querido tío y venerado maestro: Hace cuatro días que llegué con toda felicidad a este lugar de mi nacimiento, donde he hallado bien de salud a mi padre, al señor vicario y a los amigos y parientes.", breaths: 850, scenes: 3, gutenberg: 17223, scene: "Chapter I · Cartas de mi sobrino" },
   } as const;
   assert.equal(Object.keys(expect).length, 18);
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
@@ -4220,7 +4236,7 @@ test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Feature
 
   const nabob = SHELF.find((item) => item.id === "a-hungarian-nabob");
   assert.equal(nabob?.gutenberg, 20978);
-  assert.equal(nabob?.opening, "An Oddity, 1822.");
+  assert.equal(nabob?.opening, "It is nasty, dirty weather outside there on the *puszta*; the sky is cloudy, the earth muddy, the rain has been falling for two weeks incessantly, as if by special command.");
   assert.equal(nabob?.breaths, 2337);
   assert.equal(curatorialTrack("a-hungarian-nabob"), "next");
   assert.equal(RITUAL_SIT_MINUTES["a-hungarian-nabob"], 8);
@@ -4416,7 +4432,7 @@ test("Mira Thu eve 24 Sep CLEAR sits on Next, Rituals, and For you, never a new 
     ) as PackedSit;
     assert.equal(full.title, want.title, id);
     assert.equal(full.breaths[0]?.text, opened.breaths[0]?.text, id);
-    assert.equal(full.breaths[0]?.text.startsWith(want.opening.slice(0, 24)), true, id);
+    assert.equal(cardOnFirstBreath(full, want.opening.slice(0, 24), id), true, id);
     const joined = opened.breaths.map((breath) => breath.text).join("\n");
     assert.equal(joined.includes("_"), false, id);
     assert.doesNotMatch(opened.note ?? "", /Salon|Vellum/);
@@ -4571,7 +4587,7 @@ test("Mira Emmeline FULL EN sits on Next, Rituals, and For you, never Featured",
     assert.equal(work.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > opened.breaths.length, id);
     assert.equal(full.breaths[0]?.text, opened.breaths[0]?.text, id);
-    assert.equal(full.breaths[0]?.text.startsWith(want.opening.slice(0, 24)), true, id);
+    assert.equal(cardOnFirstBreath(full, want.opening.slice(0, 24), id), true, id);
     const joined = opened.breaths.map((breath) => breath.text).join("\n");
     assert.equal(joined.includes("_"), false, id);
     assert.ok(opened.breaths.length <= 48, id);
@@ -6632,7 +6648,7 @@ test("Mira Sun AM CLEAR is Next lead Marrow, then Zuleika, Eugenie, and Seven Br
   assert.equal(curatorialTrack("seven-brothers"), "next");
   assert.equal(curatorialTrack("laos-folk-lore"), "later");
   const priorLaos = SHELF.find((item) => item.id === "laos-folk-lore-of-farther-india");
-  assert.equal(priorLaos?.opening, "Tales of the Jungle");
+  assert.equal(priorLaos?.opening, "Deep in the forest of the North there is a large village of jungle people, and, among them is one old woman, who is held in reverence by all.");
   assert.equal(priorLaos?.breaths, 1113);
 
   const lanes = {
