@@ -1,5 +1,8 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
+import { SHELF } from "./catalog/shelf.ts";
+import { FEATURED_CAROUSEL_IDS } from "./catalog/pitches.ts";
 import {
   asKeptRecord,
   keptIdsNeedRemap,
@@ -85,7 +88,7 @@ test("with no breath id, a re-bind scales by the old breath count", () => {
 
   const fromRemap = reanchorProgress({ breathIndex: savedAt }, nextBreaths, parseBreathRemap({
     falcon: { fromCount: 9, "s1-1": "s1-0" },
-  }), "falcon");
+  }), "falcon", {});
   assert.equal(nextBreaths[fromRemap.index]?.sceneId, "s1");
 });
 
@@ -96,6 +99,7 @@ test("when the id and the count are both gone, the reader returns to that chapte
     nextBreaths,
     undefined,
     "falcon",
+    {},
   );
   assert.equal(next.index, nextBreaths.findIndex((breath) => breath.sceneId === "s1"));
   assert.equal(nextBreaths[next.index]?.id, "s1-0");
@@ -109,7 +113,7 @@ test("an in-range save with no stamp does not open the remap", () => {
 
 test("an index saved against the current bind is left where it is", () => {
   const breaths = sentenceBind();
-  const next = reanchorProgress({ breathIndex: savedAt }, breaths, undefined, "falcon");
+  const next = reanchorProgress({ breathIndex: savedAt }, breaths, undefined, "falcon", {});
   assert.equal(next.moved, false);
   assert.equal(next.index, savedAt);
   assert.equal(next.breathId, "s1-1");
@@ -117,7 +121,7 @@ test("an index saved against the current bind is left where it is", () => {
 });
 
 test("a legacy unstamped index on a listed re-bind scales instead of trusting 1000", () => {
-  assert.deepEqual(REBOUND_FROM_COUNT, {});
+  assert.deepEqual(REBOUND_FROM_COUNT, { falcon: 6154 });
   const oldCount = 6154;
   const count = 2280;
   const breaths = Array.from({ length: count }, (_, n) => ({
@@ -129,8 +133,9 @@ test("a legacy unstamped index on a listed re-bind scales instead of trusting 10
   const table = { falcon: oldCount };
 
   assert.equal(scaleBreathIndex(1000, oldCount, count), 370);
-  assert.equal(shouldLoadBindRemap(stored, breaths, "falcon"), false);
-  assert.equal(shouldLoadBindRemap(stored, breaths, "falcon", REBOUND_FROM_COUNT), false);
+  assert.equal(shouldLoadBindRemap(stored, breaths, "the-goose-man"), false);
+  assert.equal(shouldLoadBindRemap(stored, breaths, "falcon"), true);
+  assert.equal(shouldLoadBindRemap(stored, breaths, "falcon", REBOUND_FROM_COUNT), true);
   assert.equal(shouldLoadBindRemap(stored, breaths, "falcon", table), true);
 
   const next = reanchorProgress(stored, breaths, undefined, "falcon", table);
@@ -159,7 +164,8 @@ test("an id-only kept line on a listed re-bind follows the remap, then stays sta
   ];
   const table = { falcon: 6154 };
   assert.equal(keptIdsNeedRemap(["s0-0"], breaths, "falcon", table), true);
-  assert.equal(keptIdsNeedRemap(["s0-0"], breaths, "falcon", REBOUND_FROM_COUNT), false);
+  assert.equal(keptIdsNeedRemap(["s0-0"], breaths, "the-goose-man", REBOUND_FROM_COUNT), false);
+  assert.equal(keptIdsNeedRemap(["s0-0"], breaths, "falcon", REBOUND_FROM_COUNT), true);
 
   const work = {
     title: "The Maltese Falcon",
@@ -206,4 +212,68 @@ test("an id-only kept line opens the paragraph the remap names", async () => {
   });
   assert.equal(opened.at, breaths.findIndex((breath) => breath.id === "s1-0"));
   assert.equal(opened.nextId, "s1-0");
+});
+
+test("Falcon's sentence bind re-anchors through the remap and no other book moves", () => {
+  assert.deepEqual(REBOUND_FROM_COUNT, { falcon: 6154 });
+  assert.equal((FEATURED_CAROUSEL_IDS as readonly string[]).includes("falcon"), false);
+
+  const full = JSON.parse(readFileSync(new URL("./catalog/texts/falcon.json", import.meta.url), "utf8")) as {
+    minutes: number;
+    breaths: { id: string; sceneId: string; text: string }[];
+  };
+  const opening = JSON.parse(readFileSync(new URL("./catalog/openings/falcon.json", import.meta.url), "utf8")) as {
+    breaths: { id: string; text: string }[];
+  };
+  const raw = JSON.parse(readFileSync(new URL("./catalog/at-remap.json", import.meta.url), "utf8")) as Record<string, Record<string, string>>;
+  const remap = parseBreathRemap(raw);
+  const work = SHELF.find((item) => item.id === "falcon");
+  const card = "SAMUEL SPADE’S jaw was long and bony, his chin a jutting v under the more flexible v of his mouth.";
+
+  assert.equal(full.breaths.length, 2280);
+  assert.equal(full.minutes, 334);
+  assert.equal(work?.breaths, 2280);
+  assert.equal(work?.minutes, 334);
+  assert.equal(work?.opening, card);
+  assert.ok(full.breaths[0]?.text.startsWith(card));
+  assert.equal(opening.breaths.length, 35);
+  assert.equal(opening.breaths[0]?.id, "s0-0");
+  assert.equal(opening.breaths.at(-1)?.id, "s0-34");
+  assert.ok(opening.breaths.at(-1)?.text.endsWith("as the door opened."));
+  assert.equal(full.breaths.slice(0, 35).map((breath) => breath.id).join(" "), opening.breaths.map((breath) => breath.id).join(" "));
+
+  const stored = { breathIndex: 3000 };
+  assert.equal(shouldLoadBindRemap(stored, full.breaths, "falcon"), true);
+  const next = reanchorProgress(stored, full.breaths, remap, "falcon");
+  assert.equal(next.moved, true);
+  assert.notEqual(next.index, scaleBreathIndex(3000, 6154, 2280));
+  assert.equal(full.breaths[next.index]?.id, "s10-104");
+  assert.match(full.breaths[next.index]?.text ?? "", /I don\u2019t like him/);
+  assert.equal(next.breathCount, 2280);
+
+  const stamped = reanchorProgress(
+    { breathIndex: next.index, breathId: next.breathId, breathCount: next.breathCount, bindHash: next.bindHash },
+    full.breaths,
+    remap,
+    "falcon",
+  );
+  assert.equal(stamped.moved, false);
+  assert.equal(stamped.index, next.index);
+
+  const byId = reanchorProgress(
+    { breathIndex: 1200, breathId: "s4-46", breathCount: 6154 },
+    full.breaths,
+    remap,
+    "falcon",
+  );
+  assert.equal(byId.moved, true);
+  assert.equal(full.breaths[byId.index]?.id, "s4-14");
+  assert.match(full.breaths[byId.index]?.text ?? "", /Samuel Spade’s name and the addresses of his office and his apartment/);
+
+  const other = { breathIndex: 12 };
+  assert.equal(shouldLoadBindRemap(other, full.breaths, "the-goose-man"), false);
+  const stayed = reanchorProgress(other, full.breaths, remap, "the-goose-man");
+  assert.equal(stayed.moved, false);
+  assert.equal(stayed.index, 12);
+  assert.equal(stayed.breathId, full.breaths[12]?.id);
 });

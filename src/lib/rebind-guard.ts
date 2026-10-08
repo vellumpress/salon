@@ -2,12 +2,14 @@ import { remapBreathId, type BreathRemap } from "./kept-lines.ts";
 
 /**
  * Breath count of the bind a re-bind replaces, keyed by shelf work id
- * (`falcon`, not the title). Empty until that book's pack lands:
- * `falcon: 6154`. Tiny on purpose, so a legacy index can notice the
- * re-bind without parsing the remap file. Once the save is stamped with
- * the new count, this row is ignored.
+ * (`falcon`, not the title). `falcon: 6154` is the sentence bind the
+ * paragraph bind replaced. Tiny on purpose, so a legacy index can notice
+ * the re-bind without parsing the remap file. Once the save is stamped
+ * with the new count, this row is ignored.
  */
-export const REBOUND_FROM_COUNT: Readonly<Record<string, number>> = {};
+export const REBOUND_FROM_COUNT: Readonly<Record<string, number>> = {
+  falcon: 6154,
+};
 
 export type FromCountTable = Readonly<Record<string, number>>;
 
@@ -94,6 +96,83 @@ function chapterStart(breaths: readonly PlaceBreath[], sceneId: string): number 
   return at >= 0 ? at : 0;
 }
 
+function parseSceneBreath(id: string): [number, number] | null {
+  const match = /^s(\d+)-(\d+)$/.exec(id);
+  if (!match) return null;
+  return [Number(match[1]), Number(match[2])];
+}
+
+/** Earliest index from which breath ids increase by scene, then number. */
+function sortedSuffixStart(keys: readonly string[]): number {
+  let start = keys.length;
+  let next: [number, number] | null = null;
+  for (let i = keys.length - 1; i >= 0; i -= 1) {
+    const cur = parseSceneBreath(keys[i] ?? "");
+    if (!cur) break;
+    if (next && (cur[0] > next[0] || (cur[0] === next[0] && cur[1] > next[1]))) break;
+    start = i;
+    next = cur;
+  }
+  return start;
+}
+
+const legacyOrderCache = new WeakMap<object, readonly string[] | null>();
+
+/**
+ * Old breath ids in reading order, rebuilt from a remap whose entries were
+ * written in that order after a short chain prefix. Ids the remap omits
+ * (a paragraph that kept its sentence id) are filled back into the gaps.
+ * Returns null when that order is not the old bind's length.
+ */
+function legacyBreathOrder(table: Readonly<Record<string, string>>, oldCount: number): readonly string[] | null {
+  const cached = legacyOrderCache.get(table);
+  if (cached !== undefined) return cached && cached.length === oldCount ? cached : null;
+  const keys = Object.keys(table);
+  const ordered = keys.slice(sortedSuffixStart(keys));
+  const known = new Set(keys);
+  const seq: string[] = [];
+  let prev: [number, number] | null = null;
+  for (const key of ordered) {
+    const parsed = parseSceneBreath(key);
+    if (!parsed) {
+      legacyOrderCache.set(table, null);
+      return null;
+    }
+    const from = !prev || prev[0] !== parsed[0] ? 0 : prev[1] + 1;
+    for (let n = from; n < parsed[1]; n += 1) {
+      const id = `s${parsed[0]}-${n}`;
+      if (!known.has(id)) seq.push(id);
+    }
+    seq.push(key);
+    prev = parsed;
+  }
+  legacyOrderCache.set(table, seq);
+  return seq.length === oldCount ? seq : null;
+}
+
+/**
+ * The paragraph that holds the sentence a legacy index was on.
+ * Falls through when the remap cannot rebuild that old bind.
+ */
+function legacyParagraphIndex(
+  remap: BreathRemap | undefined,
+  workId: string,
+  index: number,
+  breaths: readonly PlaceBreath[],
+  oldCount: number,
+): number | undefined {
+  const table = workId ? remap?.byWork[workId] : undefined;
+  if (!table || oldCount <= 0) return undefined;
+  const order = legacyBreathOrder(table, oldCount);
+  if (!order) return undefined;
+  const at = Math.max(0, Math.min(oldCount - 1, Math.floor(index)));
+  const oldId = order[at];
+  if (!oldId) return undefined;
+  const mapped = remapBreathId(remap, workId, oldId) ?? oldId;
+  const found = breaths.findIndex((breath) => breath.id === mapped);
+  return found >= 0 ? found : undefined;
+}
+
 /** Map an index from the old bind onto the new one, by proportion. */
 export function scaleBreathIndex(index: number, oldCount: number, newCount: number): number {
   if (newCount <= 0) return 0;
@@ -130,8 +209,8 @@ function finish(
 
 /**
  * The saved index is trusted only while the bind's id and count still match.
- * After a re-bind: follow the remap, then the breath id, then scale by the
- * old count, then the start of that chapter.
+ * After a re-bind: follow the remap, then the breath id, then the paragraph
+ * that held that sentence, then scale by the old count, then the chapter start.
  */
 export function reanchorProgress(
   stored: StoredPlace | undefined,
@@ -167,6 +246,11 @@ export function reanchorProgress(
       const at = breaths.findIndex((breath) => breath.id === breathId);
       if (at >= 0) return finish(breaths, at, at !== raw);
     }
+  }
+
+  if (!breathId && oldCount != null && oldCount > 0) {
+    const fromRemap = legacyParagraphIndex(remap, workId, raw, breaths, oldCount);
+    if (fromRemap != null) return finish(breaths, fromRemap, fromRemap !== raw);
   }
 
   if (oldCount != null && oldCount > 0 && count > 0) {
