@@ -1857,6 +1857,10 @@ test("Tier B batches 7–8 are local format-min binds, never Featured", () => {
       const at = full.breaths.findIndex((breath) => (breath.text ?? "").startsWith(work!.opening ?? "\u0000"));
       assert.ok(at > 0 && at <= 3, `${id} shelf opening`);
       assert.ok(full.breaths.slice(0, at).every((breath) => breath.text.length <= 40), `${id} headings only`);
+    } else if ((POETRY_REBIND_IDS as readonly string[]).includes(id)) {
+      // Re-bound poetry keeps its front matter (dedication, persons, argument)
+      // tagged front; the card is the first line a fresh Sit opens on.
+      assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
     } else {
       assert.ok(
         (full.breaths[0]?.text ?? "").startsWith(work!.opening ?? "\u0000"),

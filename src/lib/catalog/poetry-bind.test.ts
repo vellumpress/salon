@@ -335,7 +335,7 @@ test("The Pier-Glass binds all 25 poems of the 1921 Secker edition, one breath e
 });
 
 test("Mira poetry re-bind pack: one scene per printed poem, counts and card from the bind", () => {
-  assert.equal(POETRY_REBIND_IDS.length, 20);
+  assert.equal(POETRY_REBIND_IDS.length, 36);
   for (const id of POETRY_REBIND_IDS) {
     const full = load("texts", id);
     assert.ok(full, id);
@@ -411,11 +411,17 @@ const REBIND_LONG_STANZAS: Readonly<Record<string, string>> = {
   "rhymes-of-a-red-cross-man#s51-0": "Afternoon Tea: one printed verse paragraph, 41 lines / 489 words",
   "rhymes-of-a-red-cross-man#s51-1": "Afternoon Tea: one printed verse paragraph, 49 lines / 624 words",
   "cathay#s9-2": "The Seafarer: one printed verse paragraph, 77 lines / 525 words",
-  "lamia#s0-0": "Part 1: one printed verse paragraph, 46 lines / 357 words",
-  "lamia#s0-2": "Part 1: one printed verse paragraph, 78 lines / 598 words",
-  "lamia#s0-5": "Part 1: one printed verse paragraph, 150 lines / 1164 words",
-  "lamia#s1-1": "Part 2: one printed verse paragraph, 90 lines / 692 words",
-  "lamia#s1-6": "Part 2: one printed verse paragraph, 73 lines / 550 words",
+  "kalevala#s1-19": "Preface: one prose paragraph, 382 words",
+  "kalevala#s1-47": "Preface: one prose paragraph, 375 words",
+  "idylls-of-the-king#s3-21": "The Marriage of Geraint: one printed verse paragraph with no sentence break that keeps both parts under the cap, 43 lines / 364 words",
+  "idylls-of-the-king#s13-1": "To the Queen: one printed verse paragraph with no sentence break that keeps both parts under the cap, 41 lines / 323 words",
+  "the-defence-of-guenevere-and-other-poems#s4-57": "Sir Peter Harpdon's End: one printed verse paragraph, 42 lines / 332 words",
+  "the-defence-of-guenevere-and-other-poems#s4-59": "Sir Peter Harpdon's End: one printed verse paragraph, 63 lines / 470 words",
+  "the-defence-of-guenevere-and-other-poems#s4-73": "Sir Peter Harpdon's End: one printed verse paragraph, 46 lines / 369 words",
+  "atalanta-in-calydon#s3-0": "The Argument: one prose paragraph, 395 words",
+  "atalanta-in-calydon#s4-72": "Atalanta in Calydon: one printed verse paragraph with no sentence break that keeps both parts under the cap, 42 lines / 345 words",
+  "atalanta-in-calydon#s4-163": "Atalanta in Calydon: one printed verse paragraph with no sentence break that keeps both parts under the cap, 43 lines / 359 words",
+  "heliodora-and-other-poems#s29-3": "Charioteer: one printed stanza, 41 lines / 150 words",
 };
 
 function breathSize(text: string) {
@@ -440,5 +446,39 @@ test("Mira poetry re-bind pack: no breath over the phone cap unless it is one pr
   assert.deepEqual(over, []);
   for (const key of Object.keys(REBIND_LONG_STANZAS)) {
     assert.ok(stillOver.has(key), `${key} is no longer over the cap; drop it from REBIND_LONG_STANZAS`);
+  }
+});
+
+test("Mira poetry re-bind pack 2: epics bind one scene per printed canto, rune or section", () => {
+  const kalevala = load("texts", "kalevala")!;
+  assert.equal(kalevala.scenes.length, 55);
+  assert.deepEqual(
+    kalevala.scenes.slice(2, 4).map((scene) => scene.title),
+    ["Proem", "Rune I. Birth of Wainamoinen"],
+  );
+  assert.equal(kalevala.scenes.at(-2)?.title, "Epilogue");
+  const donJuan = load("texts", "don-juan")!;
+  assert.equal(donJuan.scenes.length, 18);
+  assert.equal(donJuan.scenes[1]?.title, "Canto the First");
+  assert.equal(donJuan.scenes.at(-1)?.title, "Canto the Seventeenth");
+  const idylls = load("texts", "idylls-of-the-king")!;
+  assert.equal(idylls.scenes.length, 14);
+  assert.equal(idylls.scenes[1]?.title, "The Coming of Arthur");
+  const domesday = load("texts", "domesday-book")!;
+  assert.equal(domesday.scenes.length, 40);
+  assert.equal(domesday.scenes.at(-1)?.title, "The Verdict");
+});
+
+test("Mira poetry re-bind pack 2: verse drama speaks as “Speaker: line”, Lamia fits the cap", () => {
+  const atalanta = load("texts", "atalanta-in-calydon")!;
+  const play = atalanta.scenes.find((scene) => scene.title === "Atalanta in Calydon")!;
+  const lines = atalanta.breaths.filter((breath) => breath.sceneId === play.id).map((b) => b.text);
+  assert.match(lines[0] ?? "", /^Chief Huntsman: Maiden, and mistress of the months and stars/);
+  assert.ok(lines.some((text) => text.startsWith("Chorus: When the hounds of spring are on winter's traces")));
+  const lamia = load("texts", "lamia")!;
+  assert.deepEqual(lamia.scenes.map((scene) => scene.title), ["Part 1", "Part 2"]);
+  for (const breath of lamia.breaths) {
+    const { lines: n, words } = breathSize(breath.text);
+    assert.ok(n <= REBIND_BREATH_MAX_LINES && words <= REBIND_BREATH_MAX_WORDS, `lamia#${breath.id}`);
   }
 });

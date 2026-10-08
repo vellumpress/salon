@@ -100,13 +100,6 @@
       "prompt": "A word from this stretch."
     },
     {
-      "id": "s13",
-      "title": "Our Own Times, in a Small Italian Town,",
-      "place": "Our Own Times, in a Small Italian Town,",
-      "reentry": "The Capital of a Province.",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s14",
       "title": "Act I",
       "place": "Act I",
@@ -6340,8 +6333,8 @@
     },
     {
       "id": "s13-0",
-      "sceneId": "s13",
-      "text": "The Capital of a Province."
+      "sceneId": "s12",
+      "text": "Our Own Times, in a Small Italian Town, The Capital of a Province."
     },
     {
       "id": "s14-0",

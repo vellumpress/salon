@@ -405,8 +405,6 @@ export const SCENE_TITLE_PATTERNS: { name: string; pattern: RegExp; frontOnly?: 
 
 /** `textId#sceneId` (or `textId#*` for every scene of a book) → reason. */
 export const SCENE_TITLE_ALLOWLIST: Readonly<Record<string, string>> = {
-  "don-juan#s1847":
-    "a real line of Byron's verse (“Death to his publisher, to him ’tis sport;”); it is one of the verse-line titles counted in VERSE_LINE_TITLE_BASELINE, not an imprint",
   "the-red-room#s4": "Wells's printed chapter title “At the Publisher's”",
   "revolt-of-the-angels#s15":
     "Anatole France's printed chapter heading ends “…Is Illustrated by the Terrible Example of”; story text, not an illustration credit",
@@ -422,54 +420,20 @@ export const SCENE_TITLE_ALLOWLIST: Readonly<Record<string, string>> = {
  * listed must have none, and a listed count must match exactly so the
  * baseline is lowered when a book is rebound. Frozen at 13,298 titles in 65
  * books; the poetry re-bind pack cleared 20 books (1,123 titles), leaving
- * 12,175 in 45.
+ * 12,175 in 45; the second pack (16 verse re-binds plus printed-title and
+ * stray-line fixes in 19 prose books) leaves 740 in 10.
  */
 export const VERSE_LINE_TITLE_BASELINE: Readonly<Record<string, number>> = {
-  "a-diversity-of-creatures": 2,
-  "amores": 134,
-  "atalanta-in-calydon": 266,
-  "barrack-room-ballads": 172,
-  "birds-beasts-and-flowers": 310,
-  "bruges-la-morte": 1,
-  "bunner-sisters": 1,
-  "country-sentiment": 166,
-  "domesday-book": 931,
-  "don-juan": 1692,
-  "hajji-baba": 5,
-  "heliodora-and-other-poems": 140,
-  "idylls-of-the-king": 1145,
-  "in-a-glass-darkly": 1,
   "in-the-seven-woods": 69,
-  "kalevala": 4886,
-  "les-civilises": 1,
-  "liaisons": 4,
-  "misericordia": 1,
-  "nights": 1,
   "pictures-of-the-floating-world": 2,
-  "reincarnations": 65,
-  "revolt-of-the-angels": 1,
-  "silhouettes": 2,
-  "six-characters": 1,
-  "spectra-a-book-of-poetic-experiments": 77,
   "stray-birds": 1,
-  "the-defence-of-guenevere-and-other-poems": 533,
-  "the-emperor-of-portugallia": 1,
-  "the-flowers-of-evil": 172,
   "the-forerunner-his-parables-and-poems": 7,
-  "the-garden-of-bright-waters": 119,
   "the-gardener": 1,
   "the-green-helmet-and-other-poems": 39,
-  "the-hesperides-and-noble-numbers": 1,
   "the-literature-of-arabia": 145,
-  "the-nibelungenlied": 5,
   "the-persian-mystics-jalalu-d-din-rumi": 60,
-  "the-poems-of-giacomo-leopardi": 593,
   "the-poetic-edda": 327,
   "the-spell-of-the-yukon-and-other-verses": 89,
-  "three-plays-incl-henry-iv": 1,
-  "tristana": 2,
-  "venus-in-furs": 1,
-  "white-jacket": 2,
 };
 
 /** Lines that belong to a title page or imprint, not to the book. */

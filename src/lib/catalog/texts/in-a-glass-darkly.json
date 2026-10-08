@@ -234,13 +234,6 @@
       "prompt": "A word from this stretch."
     },
     {
-      "id": "s33",
-      "title": "Elijah Harbottle,",
-      "place": "Elijah Harbottle,",
-      "reentry": "*One of his Majesty’s Justices of* *the Honourable Court of Common Pleas.*",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s34",
       "title": "Arrested",
       "place": "Arrested",
@@ -3536,133 +3529,138 @@
       "text": "The Judge had received the letter; had he known from whom it came, he would no doubt have read it instantaneously. As it was he simply read the direction:"
     },
     {
+      "id": "s33-t",
+      "sceneId": "s32",
+      "text": "*To the Honourable* *The Lord Justice* *Elijah Harbottle*,"
+    },
+    {
       "id": "s33-0",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "*One of his Majesty’s Justices of* *the Honourable Court of Common Pleas.*"
     },
     {
       "id": "s33-1",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "It remained forgotten in his pocket till he reached home."
     },
     {
       "id": "s33-2",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "When he pulled out that and others from the capacious pocket of his coat, it had its turn, as he sat in his library in his thick silk dressing-gown; and then he found its contents to be a closely-written letter, in a clerk’s hand, and an enclosure in ‘secretary hand,’ as I believe the angular scrivinary of law-writings in those days was termed, engrossed on a bit of parchment about the size of this page. The letter said:"
     },
     {
       "id": "s33-3",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“Mr. Justice Harbottle,—My Lord,"
     },
     {
       "id": "s33-4",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“I am ordered by the High Court of Appeal to acquaint your lordship, in order to your better preparing yourself for your trial, that a true bill hath been sent down, and the indictment lieth against your lordship for the murder of one Lewis Pyneweck of Shrewsbury, citizen, wrongfully executed for the forgery of a bill of exchange, on the—the day of —— last, by reason of the wilful perversion of the evidence, and the undue pressure put upon the jury, together with the illegal admission of evidence by your lordship, well knowing the same to be illegal, by all which the promoter of the prosecution of the said indictment, before the High Court of Appeal, hath lost his life."
     },
     {
       "id": "s33-5",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“And the trial of the said indictment, I am farther ordered to acquaint your lordship is fixed for the 10th day of —— next ensuing, by the right honourable the Lord Chief-Justice Twofold, of the court aforesaid, to wit, the High Court of Appeal, on which day it will most certainly take place. And I am farther to acquaint your lordship, to prevent any surprise or miscarriage, that your case stands first for the said day, and that the said High Court of Appeal sits day and night, and never rises; and herewith, by order of the said court, I furnish your lordship with a copy (extract) of the record in this case, except of the indictment, whereof, notwithstanding, the substance and effect is supplied to your lordship in this Notice. And farther I am to inform you, that in case the jury then to try your lordship should find you guilty, the right honourable the Lord Chief-Justice will, in passing sentence of death upon you, fix the day of execution for the 10th day of ——, being one calendar month from the day of your trial.”"
     },
     {
       "id": "s33-6",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "It was signed by “Caleb Searcher,"
     },
     {
       "id": "s33-7",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“Officer of the Crown Solicitor in the “Kingdom of Life and Death.”"
     },
     {
       "id": "s33-8",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "The Judge glanced through the parchment."
     },
     {
       "id": "s33-9",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“’Sblood! Do they think a man like me is to be bamboozled by their buffoonery?”"
     },
     {
       "id": "s33-10",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "The Judge’s coarse features were wrung into one of his sneers; but he was pale. Possibly, after all, there was a conspiracy on foot. It was queer. Did they mean to pistol him in his carriage? or did they only aim at frightening him?"
     },
     {
       "id": "s33-11",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "Judge Harbottle had more than enough of animal courage. He was not afraid of highwaymen, and he had fought more than his share of duels, being a foul-mouthed advocate while he held briefs at the bar. No one questioned his fighting qualities. But with respect to this particular case of Pyneweck, he lived in a house of glass. Was there not his pretty, dark-eyed, over-dressed housekeeper, Mrs. Flora Carwell? Very easy for people who knew Shrewsbury to identify Mrs. Pyneweck, if once put upon the scent; and had he not stormed and worked hard in that case? Had he not made it hard sailing for the prisoner? Did he not know very well what the bar thought of it? It would be the worst scandal that ever blasted judge."
     },
     {
       "id": "s33-12",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "So much there was intimidating in the matter, but nothing more. The Judge was a little bit gloomy for a day or two after, and more testy with every one than usual."
     },
     {
       "id": "s33-13",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "He locked up the papers; and about a week after he asked his housekeeper, one day, in the library:"
     },
     {
       "id": "s33-14",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“Had your husband never a brother?”"
     },
     {
       "id": "s33-15",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "Mrs. Carwell squalled on this sudden introduction of the funereal topic, and cried exemplary “piggins full,” as the Judge used pleasantly to say. But he was in no mood for trifling now, and he said sternly:"
     },
     {
       "id": "s33-16",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“Come, madam! this wearies me. Do it another time; and give me an answer to my question.” So she did."
     },
     {
       "id": "s33-17",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "Pyneweck had no brother living. He once had one; but he died in Jamaica."
     },
     {
       "id": "s33-18",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“How do you know he is dead?” asked the Judge."
     },
     {
       "id": "s33-19",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“Because he told me so.”"
     },
     {
       "id": "s33-20",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“Not the dead man?”"
     },
     {
       "id": "s33-21",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“Pyneweck told me so.”"
     },
     {
       "id": "s33-22",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "“Is that all?” sneered the Judge."
     },
     {
       "id": "s33-23",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "He pondered this matter; and time went on. The Judge was growing a little morose, and less enjoying. The subject struck nearer to his thoughts than he fancied it could have done. But so it is with most undivulged vexations, and there was no one to whom he could tell this one."
     },
     {
       "id": "s33-24",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "It was now the ninth; and Mr. Justice Harbottle was glad. He knew nothing would come of it. Still it bothered him; and to-morrow would see it well over."
     },
     {
       "id": "s33-25",
-      "sceneId": "s33",
+      "sceneId": "s32",
       "text": "[What of the paper, I have cited? No one saw it during his life; no one, after his death. He spoke of it to Dr. Hedstone; and what purported to be “a copy,” in the old Judge’s hand-writing, was found. The original was nowhere. Was it a copy of an illusion, incident to brain disease? Such is my belief.]"
     },
     {

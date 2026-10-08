@@ -37,13 +37,6 @@
       "prompt": "A word from this stretch."
     },
     {
-      "id": "s4",
-      "title": "When It Was the Fifth Night,",
-      "place": "When It Was the Fifth Night,",
-      "reentry": "Her sister said, \"Do you finish for us thy story if thou be not sleepy,\" and she resumed:—It hath reached me, O auspicious King and mighty Monarch, that King Yunan said to his Minister, \"O Wazir, thou art one whom the evil spirit of envy ha",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s5",
       "title": "Adding:—",
       "place": "Adding:—",
@@ -336,403 +329,408 @@
       "text": "Now when the Sage ceased reciting, the King rose quickly to his feet and fell on his neck; then, seating him by his side he bade dress him in a sumptuous dress; for it had so happened that when the King left the Hammam he looked on his body and saw no trace of leprosy: the skin was all clean as virgin silver. He joyed thereat with exceeding joy, his breast broadened[FN#83] with delight and he felt thoroughly happy. Presently, when it was full day he entered his audience hall and sat upon the throne of his kingship whereupon his Chamberlains and Grandees flocked to the presence and with them the Sage Duban. Seeing the leach the King rose to him in honour and seated him by his side; then the food trays furnished with the daintiest viands were brought and the physician ate with the King, nor did he cease companying him all that day. Moreover, at nightfall he gave the physician Duban two thousand gold pieces, besides the usual dress of honour and other gifts galore, and sent him home on his own steed. After the Sage had fared forth King Yunan again expressed his amazement at the leach's art, saying, \"This man medicined my body from without nor anointed me with aught of ointments: by Allah, surely this is none other than consummate skill! I am bound to honour such a man with rewards and distinction, and take him to my companion and my friend during the remainder of my days.\" So King Yunan passed the night in joy and gladness for that his body had been made whole and had thrown off so pernicious a malady. On the morrow the King went forth from his Serraglio and sat upon his throne, and the Lords of Estate stood about him, and the Emirs and Wazirs sat as was their wont on his right hand and on his left. Then he asked for the Sage Duban, who came in and kissed the ground before him, when the King rose to greet him and, seating him by his side, ate with him and wished him long life. Moreover he robed him and gave him gifts, and ceased not conversing with him until night approached. Then the King ordered him, by way of salary, five dresses of honour and a thousand dinars.[FN#84] The physician returned to his own house full of gratitude to the King. Now when next morning dawned the King repaired to his audience hall, and his Lords and Nobles surrounded him and his Chamberlains and his Ministers, as the white encloseth the black of the eye.[FN#85] Now the King had a Wazir among his Wazirs, unsightly to look upon, an ill omened spectacle; sordid, ungenerous, full of envy and evil will. When this Minister saw the King place the physician near him and give him all these gifts, he jaloused him and planned to do him a harm, as in the saying on such subject, \"Envy lurks in every body;\" and the saying, \"Oppression hideth in every heart: power revealeth it and weakness concealeth it.\" Then the Minister came before the King and, kissing the ground between his hands, said, \"O King of the age and of all time, thou in whose benefits I have grown to manhood, I have weighty advice to offer thee, and if I withhold it I were a son of adultery and no true born man; wherefore an thou order me to disclose it I will so do forthwith.\" Quoth the King (and he was troubled at the words of the Minister), \"And what is this counsel of thine?\" Quoth he, \"O glorious monarch, the wise of old have said:—Whoso regardeth not the end, hath not Fortune to friend; and indeed I have lately seen the King on far other than the right way; for he lavisheth largesse on his enemy, on one whose object is the decline and fall of his kingship: to this man he hath shown favour, honouring him with over honour and making of him an intimate. Wherefore I fear for the King's life.\" The King, who was much troubled and changed colour, asked, \"Whom dost thou suspect and anent whom doest thou hint?\" and the Minister answered, \"O King, an thou be asleep, wake up! I point to the physician Duban.\" Rejoined the King, \"Fie upon thee! This is a true friend who is favoured by me above all men, because he cured me with something which I held in my hand, and he healed my leprosy which had baffled all physicians; indeed he is one whose like may not be found in these days—no, not in the whole world from furthest east to utmost west! And it is of such a man thou sayest such hard sayings. Now from this day forward I allot him a settled solde and allowances, every month a thousand gold pieces; and, were I to share with him my realm 'twere but a little matter. Perforce I must suspect that thou speakest on this wise from mere envy and jealousy as they relate of the King Sindibad.\"—And Shahrazad perceived the dawn of day, and ceased saying her permitted say. Then quoth Dunyazad, \"O my sister, how pleasant is thy tale, and how tasteful, how sweet, and how grateful!\" She replied, \"And where is this compared with what I could tell thee on the coming night if the King deign spare my life?\" Then said the King in himself, \"By Allah, I will not slay her until I hear the rest of her tale, for truly it is wondrous.\" So they rested that night in mutual embrace until the dawn. Then the King went forth to his Hall of Rule, and the Wazir and the troops came in, and the audience chamber was thronged and the King gave orders and judged and appointed and deposed and bade and forbade during the rest of that day till the Court broke up, and King Shahryar returned to his palace."
     },
     {
+      "id": "s4-t",
+      "sceneId": "s3",
+      "text": "When It Was The Fifth Night,"
+    },
+    {
       "id": "s4-0",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Her sister said, \"Do you finish for us thy story if thou be not sleepy,\" and she resumed:—It hath reached me, O auspicious King and mighty Monarch, that King Yunan said to his Minister, \"O Wazir, thou art one whom the evil spirit of envy hath possessed because of this physician, and thou plottest for my putting him to death, after which I should repent me full sorely, even as repented King Sindibad for killing his falcon.\" Quoth the Wazir, Pardon me, O King of the age, how was that?\" So the King began the story of"
     },
     {
       "id": "s4-1",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "King Sindibad and his Falcon."
     },
     {
       "id": "s4-2",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "It is said (but Allah is All knowing![FN#86]) that there was a King of the Kings of Fars, who was fond of pleasuring and diversion, especially coursing end hunting. He had reared a falcon which he carried all night on his fist, and whenever he went a chasing he took with him this bird; and he bade make for her a golden cuplet hung around her neck to give her drink therefrom. One day as the King was sitting quietly in his palace, behold, the high falconer of the household suddenly addressed him, \"O King of the age, this is indeed a day fit for birding.\" The King gave orders accordingly and set out taking the hawk on fist; and they fared merrily forwards till they made a Wady[FN#87] where they planted a circle of nets for the chase; when lo! a gazelle came within the toils and the King cried, \"Whoso alloweth yon gazelle to spring over his head and loseth her, that man will I surely slay.\" They narrowed the nets about the gazelle when she drew near the King's station; and, planting herself on her hind quarter, crossed her forehand over her breast, as if about to kiss the earth before the King. He bowed his brow low in acknowledgment to the beast; when she bounded high over his head and took the way of the waste. Thereupon the King turned towards his troops and seeing them winking and pointing at him, he asked, \"O Wazir, what are my men saying?\" and the Minister answered, \"They say thou didst proclaim that whoso alloweth the gazelle to spring over his head, that man shall be put to death.\" Quoth the King, \"Now, by the life of my head! I will follow her up till I bring her back.\" So he set off gallopping on the gazelle's trail and gave not over tracking till he reached the foot hills of a mountain chain where the quarry made for a cave. Then the King cast off at it the falcon which presently caught it up and, swooping down, drove her talons into its eyes, bewildering and blinding it;[FN#88] and the King drew his mace and struck a blow which rolled the game over. He then dismounted; and, after cutting the antelope's throat and flaying the body, hung it to the pommel of his saddle. Now the time was that of the siesta[FN#89] and the wold was parched and dry, nor was any water to be found anywhere; and the King thirsted and his horse also; so he went about searching till he saw a tree dropping water, as it were melted butter, from its boughs. Thereupon the King who wore gauntlets of skin to guard him against poisons took the cup from the hawk's neck, and filling it with the water set it before the bird, and lo! the falcon struck it with her pounces and upset the liquid. The King filled it a second time with the dripping drops, thinking his hawk was thirsty; but the bird again struck at the cup with her talons and overturned it. Then the King waxed wroth with the hawk and filling the cup a third time offered it to his horse: but the hawk upset it with a flirt of wings. Quoth the King, \"Allah confound thee, thou unluckiest of flying things! thou keepest me from drinking, and thou deprivest thyself also, and the horse.\" So he struck the falcon with his sword and cut off her wing; but the bird raised her head and said by signs, \"Look at that which hangeth on the tree!\" The King lifted up his eyes accordingly and caught sight of a brood of vipers, whose poison drops he mistook for water; thereupon he repented him of having struck off his falcon's wing, and mounting horse, fared on with the dead gazelle, till he arrived at the camp, his starting place. He threw the quarry to the cook saying, Take and broil it,\" and sat down on his chair, the falcon being still on his fist when suddenly the bird gasped and died; whereupon the King cried out in sorrow and remorse for having slain that falcon which had saved his life. Now this is what occurred in the case of King Sindibad; and I am assured that were I to do as thou desirest I should repent even as the man who killed his parrot.\" Quoth the Wazir, \"And how was that?\" And the King began to tell"
     },
     {
       "id": "s4-3",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "The Tale of the Husband and the Parrot.[FN#90]"
     },
     {
       "id": "s4-4",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "A certain man and a merchant to boot had married a fair wife, a woman of perfect beauty and grace, symmetry and loveliness, of whom he was mad-jealous, and who contrived successfully to keep him from travel. At last an occasion compelling him to leave her, he went to the bird market and bought him for one hundred gold pieces a she parrot which he set in his house to act as duenna, expecting her to acquaint him on his return with what had passed during the whole time of his absence; for the bird was kenning and cunning and never forgot what she had seen and heard. Now his fair wife had fallen in love with a young Turk, [FN#91] who used to visit her, and she feasted him by day and lay with him by night. When the man had made his journey and won his wish he came home; and, at once causing the Parrot be brought to him, questioned her concerning the conduct of his consort whilst he was in foreign parts. Quoth she, \"Thy wife hath a man friend who passed every night with her during thine absence.\" Thereupon the husband went to his wife in a violent rage and bashed her with a bashing severe enough to satisfy any body. The woman, suspecting that one of the slave girls had been tattling to the master, called them together and questioned them upon their oaths, when all swore that they had kept the secret, but that the Parrot had not, adding, \"And we heard her with our own ears.\" Upon this the woman bade one of the girls to set a hand mill under the cage and grind therewith and a second to sprinkle water through the cage roof and a third to run about, right and left, flashing a mirror of bright steel through the livelong night. Next morning when the husband returned home after being entertained by one of his friends, he bade bring the Parrot before him and asked what had taken place whilst he was away. \"Pardon me, O my master,\" quoth the bird, \"I could neither hear nor see aught by reason of the exceeding murk and the thunder and lightning which lasted throughout the night.\" As it happened to be the summer tide the master was astounded and cried, \"But we are now in mid Tammuz,[FN#92] and this is not the time for rains and storms.\" \"Ay, by Allah,\" rejoined the bird, \"I saw with these eyes what my tongue hath told thee.\" Upon this the man, not knowing the case nor smoking the plot, waxed exceeding wroth; and, holding that his wife had been wrongously accused, put forth his hand and pulling the Parrot from her cage dashed her upon the ground with such force that he killed her on the spot. Some days afterwards one of his slave girls confessed to him the whole truth,[FN#93] yet would he not believe it till he saw the young Turk, his wife's lover, coming out of her chamber, when he bared his blade [FN#94] and slew him by a blow on the back of the neck; and he did the same by the adulteress; and thus the twain, laden with mortal sin, went straightways to Eternal Fire. Then the merchant knew that the Parrot had told him the truth anent all she had seen and he mourned grievously for her loss, when mourning availed him not. The Minister, hearing the words of King Yunan, rejoined, 'O Monarch, high in dignity, and what harm have I done him, or what evil have I seen from him that I should compass his death? I would not do this thing, save to serve thee, and soon shalt thou sight that it is right; and if thou accept my advice thou shalt be saved, otherwise thou shalt be destroyed even as a certain Wazir who acted treacherously by the young Prince.\" Asked the King, \"How was that?\" and the Minister thus began"
     },
     {
       "id": "s4-5",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "The Tale of the Prince and the Ogress."
     },
     {
       "id": "s4-6",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "A certain King, who had a son over much given to hunting and coursing, ordered one of his Wazirs to be in attendance upon him whithersoever he might wend. One day the youth set out for the chase accompanied by his father's Minister; and, as they jogged on together, a big wild beast came in sight. Cried the Wazir to the King's son, \"Up and at yon noble quarry!\" So the Prince followed it until he was lost to every eye and the chase got away from him in the waste; whereby he was confused and he knew not which way to turn, when lo! a damsel appeared ahead and she was in tears. The King's son asked, \"Who art thou?\" and she answered, \"I am daughter to a King among the Kings of Hind, and I was travelling with a caravan in the desert when drowsiness overcame me, and I fell from my beast unwittingly whereby I am cut off from my people and sore bewildered.\" The Prince, hearing these words, pitied her case and, mounting her on his horse's crupper, travelled until he passed by an old ruin [FN#95], when the damsel said to him, \"O my master, I wish to obey a call of nature\": he therefore set her down at the ruin where she delayed so long that the King's son thought that she was only wasting time; so he followed her without her knowledge and behold, she was a Ghulah,[FN#96] a wicked Ogress, who was saying to her brood, \"O my children, this day I bring you a fine fat youth, [FN#97] for dinner;\" whereto they answered, \"Bring him quick to us, O our mother, that we may browse upon him our bellies full.\" The Prince hearing their talk, made sure of death and his side muscles quivered in fear for his life, so he turned away and was about to fly. The Ghulah came out and seeing him in sore affright (for he was trembling in every limb? cried, \"Wherefore art thou afraid?\" and he replied, \"I have hit upon an enemy whom I greatly fear.\" Asked the Ghulah, \"Diddest thou not say:—I am a King's son?\" and he answered, \"Even so.\" Then quoth she, \"Why dost not give thine enemy something of money and so satisfy him?\" Quoth he, \"He will not be satisfied with my purse but only with my life, and I mortally fear him and am a man under oppression.\" She replied, \"If thou be so distressed, as thou deemest, ask aid against him from Allah, who will surely protect thee from his ill doing and from the evil whereof thou art afraid.\" Then the Prince raised his eyes heavenwards and cried, \"O Thou who answerest the necessitous when he calleth upon Thee and dispellest his distress; O my God ! grant me victory over my foe and turn him from me, for Thou over all things art Almighty.\" The Ghulah, hearing his prayer, turned away from him, and the Prince returned to his father, and told him the tale of the Wazir; whereupon the King summoned the Minister to his presence and then and there slew him. Thou likewise, O King, if thou continue to trust this leach, shalt be made to die the worst of deaths. He verily thou madest much of and whom thou entreatedest as an intimate, will work thy destruction. Seest thou not how he healed the disease from outside thy body by something grasped in thy hand? Be not assured that he will not destroy thee by something held in like manner! Replied King Yunan, \"Thou hast spoken sooth, O Wazir, it may well be as thou hintest O my well advising Minister; and belike this Sage hath come as a spy searching to put me to death; for assuredly if he cured me by a something held in my hand, he can kill me by a something given me to smell.\" Then asked King Yunan, \"O Minister, what must be done with him?\" and the Wazir answered, \"Send after him this very instant and summon him to thy presence; and when he shall come strike him across the neck; and thus shalt thou rid thyself of him and his wickedness, and deceive him ere he can deceive thee.\" 'Thou hast again spoken sooth, O Wazir,\" said the King and sent one to call the Sage who came in joyful mood for he knew not what had appointed for him the Compassionate; as a certain poet saith by way of illustration:—"
     },
     {
       "id": "s4-7",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "O Thou who fearest Fate, confiding fare * Trust all to Him who built the world and wait: What Fate saith \"Be\" perforce must be, my lord! * And safe art thou from th’ undecreed of Fate."
     },
     {
       "id": "s4-8",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "As Duban the physician entered he addressed the King in these lines:—"
     },
     {
       "id": "s4-9",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "An fail I of my thanks to thee nor thank thee day by day * For whom composed I prose and verse, for whom my say and lay? Thou lavishedst thy generous gifts ere they were craved by me * Thou lavishedst thy boons unsought sans pretext or delay: How shall I stint my praise of thee, how shall I cease to laud * The grace of thee in secresy and patentest display? Nay; I will thank thy benefits, for aye thy favours lie * Light on my thought and tongue, though heavy on my back they weigh."
     },
     {
       "id": "s4-10",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "And he said further on the same theme:—"
     },
     {
       "id": "s4-11",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Turn thee from grief nor care a jot! * Commit thy needs to Fate and Lot! Enjoy the Present passing well * And let the Past be clean forgot For whatso haply seemeth worse * Shall work thy weal as Allah wot Allah shall do whate'er He wills * And in His will oppose Him not."
     },
     {
       "id": "s4-12",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "And further still.—"
     },
     {
       "id": "s4-13",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "To th' All wise Subtle One trust worldly things * Rest thee from all whereto the worldling clings: Learn wisely well naught cometh by thy will * But e'en as willeth Allah, King of Kings."
     },
     {
       "id": "s4-14",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "And lastly.—"
     },
     {
       "id": "s4-15",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Gladsome and gay forget thine every grief * Full often grief the wisest hearts outwore: Thought is but folly in the feeble slave * Shun it and so be saved evermore."
     },
     {
       "id": "s4-16",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Said the King for sole return, \"Knowest thou why I have summoned thee?\" and the Sage replied, \"Allah Most Highest alone kenneth hidden things!\" But the King rejoined, \"I summoned thee only to take thy life and utterly to destroy thee.\" Duban the Wise wondered at this strange address with exceeding wonder and asked, \"O King, and wherefore wouldest thou slay me, and what ill have I done thee?\" and the King answered, \"Men tell me thou art a spy sent hither with intent to slay me; and lo! I will kill thee ere I be killed by thee;\" then he called to his Sworder, and said, \"Strike me off the head of this traitor and deliver us from his evil practices.\" Quoth the Sage, \"Spare me and Allah will spare thee; slay me not or Allah shall slay thee.\" And he repeated to him these very words, even as I to thee, O Ifrit, and yet thou wouldst not let me go, being bent upon my death. King Yunan only rejoined, \"I shall not be safe without slaying thee; for, as thou healedst me by something held in hand, so am I not secure against thy killing me by something given me to smell or otherwise.\" Said the physician, \"This then, O King, is thy requital and reward; thou returnest only evil for good.\" The King replied, \"There is no help for it; die thou must and without delay.\" Now when the physician was certified that the King would slay him without waiting, he wept and regretted the good he had done to other than the good. As one hath said on this subject:—"
     },
     {
       "id": "s4-17",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Of wit and wisdom is Maymunah[FN#98] bare * Whose sire in wisdom all the wits outstrippeth: Man may not tread on mud or dust or clay * Save by good sense, else trippeth he and slippeth."
     },
     {
       "id": "s4-18",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Hereupon the Sworder stepped forward and bound the Sage Duban's eyes and bared his blade, saying to the King, \"By thy leave;\" while the physician wept and cried, \"Spare me and Allah will spare thee, and slay me not or Allah shall slay thee,\" and began repeating:—"
     },
     {
       "id": "s4-19",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "I was kind and 'scaped not, they were cruel and escaped; * And my kindness only led me to Ruination Hall, If I live I'll ne'er be kind; if I die, then all be damned * Who follow me, and curses their kindliness befal."
     },
     {
       "id": "s4-20",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "\"Is this,\" continued Duban, \"the return I meet from thee? Thou givest me, meseems, but crocodile boon.\" Quoth the King,\"What is the tale of the crocodile?\", and quoth the physician, \"Impossible for me to tell it in this my state; Allah upon thee, spare me, as thou hopest Allah shall spare thee.\" And he wept with exceeding weeping. Then one of the King's favourites stood up and said, \"O King! grant me the blood of this physician; we have never seen him sin against thee, or doing aught save healing thee from a disease which baffled every leach and man of science.\" Said the King, \"Ye wot not the cause of my putting to death this physician, and this it is. If I spare him, I doom myself to certain death; for one who healed me of such a malady by something held in my hand, surely can slay me by something held to my nose; and I fear lest he kill me for a price, since haply he is some spy whose sole purpose in coming hither was to compass my destruction. So there is no help for it; die he must, and then only shall I be sure of my own life.\" Again cried Duban, \"Spare me and Allah shall spare thee; and slay me not or Allah shall slay thee.\" But it was in vain. Now when the physician, O Ifrit, knew for certain that the King would kill him, he said, \"O King, if there be no help but I must die, grant me some little delay that I may go down to my house and release myself from mine obligations and direct my folk and my neighbours where to bury me and distribute my books of medicine. Amongst these I have one, the rarest of rarities, which I would present to thee as an offering: keep it as a treasure in thy treasury.\" \"And what is in the book?\" asked the King and the Sage answered, \"Things beyond compt; and the least of secrets is that if, directly after thou hast cut off my head, thou open three leaves and read three lines of the page to thy left hand, my head shall speak and answer every question thou deignest ask of it.\" The King wondered with exceeding wonder and shaking[FN#99] with delight at the novelty, said, \"O physician, dost thou really tell me that when I cut off thy head it will speak to me?\" He replied, \"Yes, O King!\" Quoth the King, \"This is indeed a strange matter!\" and forthwith sent him closely guarded to his house, and Duban then and there settled all his obligations. Next day he went up to the King's audience hall, where Emirs and Wazirs, Chamberlains and Nabobs, Grandees and Lords of Estate were gathered together, making the presence chamber gay as a garden of flower beds. And lo! the physician came up and stood before the King, bearing a worn old volume and a little etui of metal full of powder, like that used for the eyes.[FN#100] Then he sat down and said, \"Give me a tray.\" So they brought him one and he poured the powder upon it and levelled it and lastly spake as follows: \"O King, take this book but do not open it till my head falls; then set it upon this tray, and bid press it down upon the powder, when forthright the blood will cease flowing. That is the time to open the book.\" The King thereupon took the book and made a sign to the Sworder, who arose and struck off the physician's head, and placing it on the middle of the tray, pressed it down upon the powder. The blood stopped flowing, and the Sage Duban unclosed his eyes and said, \"Now open the book, O King!\" The King opened the book, and found the leaves stuck together; so he put his finger to his mouth and, by moistening it, he easily turned over the first leaf, and in like way the second, and the third, each leaf opening with much trouble; and when he had unstuck six leaves he looked over them and, finding nothing written thereon, said, \"O physician, there is no writing here!\" Duban re plied, \"Turn over yet more;\" and he turned over three others in the same way. Now the book was poisoned; and before long the venom penetrated his system, and he fell into strong convulsions and he cried out, \"The poison hath done its work!\" Whereupon the Sage Duban's head began to improvise:—"
     },
     {
       "id": "s4-21",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "There be rulers who have ruled with a foul tyrannic sway * But they soon became as though they had never, never been: Just, they had won justice: they oppressed and were opprest * By Fortune, who requited them with ban and bane and teen: So they faded like the morn, and the tongue of things repeats * \"Take this for that, nor vent upon Fortune's ways thy spleen.\""
     },
     {
       "id": "s4-22",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "No sooner had the head ceased speaking than the King rolled over dead. Now I would have thee know, O Ifrit, that if King Yunan had spared the Sage Duban, Allah would have spared him, but he refused so to do and decreed to do him dead, wherefore Allah slew him; and thou too, O Ifrit, if thou hadst spared me, Allah would have spared thee. And Shahrazad perceived the dawn of day and ceased saying her permitted say: then quoth Dunyazad, \"O my sister, how pleasant is thy tale, and how tasteful; how sweet, and how grateful!\" She replied, \"And where is this compared with what I could tell thee this coming night, if I live and the King spare me?\" Said the King in himself, \"By Allah, I will not slay her until I hear the rest of her story, for truly it is wondrous.\" They rested that night in mutual embrace until dawn: then the King went forth to his Darbar; the Wazirs and troops came in and the audience hall was crowded; so the King gave orders and judged and appointed and deposed and bade and forbade the rest of that day, when the court broke up, and King Shahryar entered his palace,"
     },
     {
       "id": "s4-23",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "When it was the Sixth Night,"
     },
     {
       "id": "s4-24",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Her sister, Dunyazad, said to her,\"Pray finish for us thy story;\" and she answered, \"I will if the King give me leave.\" \"Say on,\" quoth the King. And she continued:—It hath reached me, O auspicious King, that when the Fisherman said to the Ifrit, \"If thou hadst spared me I would have spared thee, but nothing would satisfy thee save my death; so now I will do thee die by jailing thee in this jar and I will hurl thee into this sea.\" Then the Marid roared aloud and cried, \"Allah upon thee, O Fisherman, don't! Spare me, and pardon my past doings; and, as I have been tyrannous, so be thou generous, for it is said among sayings that go current:—O thou who doest good to him who hath done thee evil, suffice for the ill doer his ill deeds, and do not deal with me as did Umamah to 'Atikah.\"[FN#101] Asked the Fisherman, \"And what was their case?\" and the Ifrit answered, \"This is not the time for story telling and I in this prison; but set me free and I will tell thee the tale.\" Quoth the Fisherman, \"Leave this language: there is no help but that thou be thrown back into the sea nor is there any way for thy getting out of it for ever and ever. Vainly I placed myself under thy protection,[FN#102] and I humbled myself to thee with weeping, while thou soughtest only to slay me, who had done thee no injury deserving this at thy hands; nay, so far from injuring thee by any evil act, I worked thee nought but weal in releasing thee from that jail of thine. Now I knew thee to be an evil doer when thou diddest to me what thou didst, and know, that when I have cast thee back into the sea, I will warn whomsoever may fish thee up of what hath befallen me with thee, and I will advise him to toss thee back again; so shalt thou abide here under these waters till the End of Time shall make an end of thee.\" But the Ifrit cried aloud, \"Set me free; this is a noble occasion for generosity and I make covenant with thee and vow never to do thee hurt and harm; nay, I will help thee to what shall put thee out of want.\" The Fisherman accepted his promises on both conditions, not to trouble him as before, but on the contrary to do him service; and, after making firm the plight and swearing him a solemn oath by Allah Most Highest he opened the cucurbit. Thereupon the pillar of smoke rose up till all of it was fully out; then it thickened and once more became an Ifrit of hideous presence, who forthright administered a kick to the bottle and sent it flying into the sea. The Fisherman, seeing how the cucurbit was treated and making sure of his own death, piddled in his clothes and said to himself, \"This promiseth badly;\" but he fortified his heart, and cried, \"O Ifrit, Allah hath said[FN#103]:—Perform your covenant; for the performance of your covenant shall be inquired into hereafter. Thou hast made a vow to me and hast sworn an oath not to play me false lest Allah play thee false, for verily he is a jealous God who respiteth the sinner, but letteth him not escape. I say to thee as said the Sage Duban to King Yunan, \"Spare me so Allah may spare thee!\" The Ifrit burst into laughter and stalked away, saying to the Fisherman, \"Follow me;\" and the man paced after him at a safe distance (for he was not assured of escape) till they had passed round the suburbs of the city. Thence they struck into the uncultivated grounds, and crossing them descended into a broad wilderness, and lo! in the midst of it stood a mountain tarn. The Ifrit waded in to the middle and again cried, \"Follow me;\" and when this was done he took his stand in the centre and bade the man cast his net and catch his fish. The Fisherman looked into the water and was much astonished to see therein vari coloured fishes, white and red, blue and yellow; however he cast his net and, hauling it in, saw that he had netted four fishes, one of each colour. Thereat he rejoiced greatly and more when the Ifrit said to him, \"Carry these to the Sultan and set them in his presence; then he will give thee what shall make thee a wealthy man; and now accept my excuse, for by Allah at this time I wot none other way of benefiting thee, inasmuch I have lain in this sea eighteen hundred years and have not seen the face of the world save within this hour. But I would not have thee fish here save once a day.\" The Ifrit then gave him Godspeed, saying, Allah grant we meet again;\"[FN#104] and struck the earth with one foot, whereupon the ground clove asunder and swallowed him up. The Fisherman, much marvelling at what had happened to him with the Ifrit, took the fish and made for the city; and as soon as he reached home he filled an earthen bowl with water and therein threw the fish which began to struggle and wriggle about. Then he bore off the bowl upon his head and repairing to the King's palace (even as the Ifrit had bidden him) laid the fish before the presence; and the King wondered with exceeding wonder at the sight, for never in his lifetime had' he seen fishes like these in quality or in conformation. So he said, \"Give those fish to the stranger slave girl who now cooketh for us,\" meaning the bond maiden whom the King of Roum had sent to him only three days before, so that he had not yet made trial of her talents in the dressing of meat. Thereupon the Wazir carried the fish to the cook and bade her fry them[FN#105] saying, \"O damsel, the King sendeth this say to thee:—I have not treasured thee, O tear o' me! save for stress time of me; approve, then, to us this day thy delicate handiwork and thy savoury cooking; for this dish of fish is a present sent to the Sultan and evidently a rarity.\" The Wazir, after he had carefully charged her, returned to the King, who commanded him to give the Fisherman four hundred dinars: he gave them accordingly, and the man took them to his bosom and ran off home stumbling and falling and rising again and deeming the whole thing to be a dream. However, he bought for his family all they wanted and lastly he went to his wife in huge joy and gladness. So far concerning him; but as regards the cookmaid, she took the fish and cleansed them and set them in the frying pan, basting them with oil till one side was dressed. Then she turned them over and, behold, the kitchen wall crave asunder, and therefrom came a young lady, fair of form, oval of face, perfect in grace, with eyelids which Kohl lines enchase.[FN#106] Her dress was a silken head kerchief fringed and tasseled with blue: a large ring hung from either ear; a pair of bracelets adorned her wrists; rings with bezels of priceless gems were on her fingers; and she hent in hand a long rod of rattan cane which she thrust into the frying pan, saying, \"O fish! O fish! be ye constant to your covenant?\" When the cookmaiden saw this apparition she swooned away. The young lady repeated her words a second time and a third time, and at last the fishes raised their heads from the pan, and saying in articulate speech \"Yes! Yes!\" began with one voice to recite:—"
     },
     {
       "id": "s4-25",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Come back and so will I! Keep faith and so will I! * And if ye fain forsake, I'll requite till quits we cry!"
     },
     {
       "id": "s4-26",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "After this the young lady upset the frying pan and went forth by the way she came in and the kitchen wall closed upon her. When the cook maiden recovered from her fainting fit, she saw the four fishes charred black as charcoal, and crying out, \"His staff brake in his first bout,\"[FN#107] she again fell swooning to the ground. Whilst she was in this case the Wazir came for the fish and looking upon her as insensible she lay, not knowing Sunday from Thursday, shoved her with his foot and said, \"Bring the fish for the Sultan!\" Thereupon recovering from her fainting fit she wept and informed him of her case and all that had befallen her. The Wazir marvelled greatly and exclaiming, \"This is none other than a right strange matter!\", he sent after the Fisherman and said to him, \"Thou, O Fisherman, must needs fetch us four fishes like those thou broughtest before.\" Thereupon the man repaired to the tarn and cast his net; and when he landed it, lo! four fishes were therein exactly like the first. These he at once carried to the Wazir, who went in with them to the cook maiden and said, \"Up with thee and fry these in my presence, that I may see this business.\" The damsel arose and cleansed the fish, and set them in the frying pan over the fire; however they remained there but a little while ere the wall clave asunder and the young lady appeared, clad as before and holding in hand the wand which she again thrust into the frying pan, saying, \"O fish! O fish! be ye constant to your olden covenant?\" And behold, the fish lifted their heads, and repeated \"Yes! Yes!\" and recited this couplet:"
     },
     {
       "id": "s4-27",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Come back and so will I! Keep faith and so will I! * But if ye fain forsake, I'll requite till quits we cry!"
     },
     {
       "id": "s4-28",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "And Shahrazad perceived the dawn of day and ceased saying her permitted say."
     },
     {
       "id": "s4-29",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "When it was the Seventh Night,"
     },
     {
       "id": "s4-30",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "She continued, It hath reached me, O auspicious King, that when the fishes spoke, and the young lady upset the frying pan with her rod, and went forth by the way she came and the wall closed up, the Wazir cried out, \"This is a thing not to be hidden from the King.\" So he went and told him what had happened, where upon quoth the King, \"There is no help for it but that I see this with mine own eyes.\" Then he sent for the Fisherman and commanded him to bring four other fish like the first and to take with him three men as witnesses. The Fisherman at once brought the fish: and the King, after ordering them to give him four hundred gold pieces, turned to the Wazir and said, \"Up and fry me the fishes here before me!\" The Minister, replying \"To hear is to obey,\" bade bring the frying pan, threw therein the cleansed fish and set it over the fire; when lo! the wall clave asunder, and out burst a black slave like a huge rock or a remnant of the tribe Ad[FN#108] bearing in hand a branch of a green tree; and he cried in loud and terrible tones, \"O fish! O fish! be ye all constant to your antique covenant?\" whereupon the fishes lifted their heads from the frying pan and said, \"Yes! Yes ! we be true to our vow;\" and they again recited the couplet:"
     },
     {
       "id": "s4-31",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Come back and so will I! Keep faith and so will I! * But if ye fain forsake, I'll requite till quits we cry!"
     },
     {
       "id": "s4-32",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Then the huge blackamoor approached the frying pan and upset it with the branch and went forth by the way he came in. When he vanished from their sight the King inspected the fish; and finding them all charred black as charcoal, was utterly bewildered and said to the Wazir, \"Verily this is a matter whereanent silence cannot be kept, and as for the fishes, assuredly some marvellous adventure connects with them.\" So he bade bring the Fisherman and asked him, saying \"Fie on thee, fellow! whence came these fishes?\" and he answered, \"From a tarn between four heights lying behind this mountain which is in sight of thy city.\" Quoth the King, \"How many days' march?\" Quoth he, \"O our lord the Sultan, a walk of half hour.\" The King wondered and, straight way ordering his men to march and horsemen to mount, led off the Fisherman who went before as guide, privily damning the Ifrit. They fared on till they had climbed the mountain and descended unto a great desert which they had never seen during all their lives; and the Sultan and his merry men marvelled much at the wold set in the midst of four mountains, and the tarn and its fishes of four colours, red and white, yellow and blue. The King stood fixed to the spot in wonderment and asked his troops and all present, \"Hath any one among you ever seen this piece of water before now?\" and all made answer, \"O King of the age never did we set eyes upon it during all our days.\" They also questioned the oldest inhabitants they met, men well stricken in years, but they replied, each and every, \"A lakelet like this we never saw in this place.\" Thereupon quoth the King, \"By Allah I will neither return to my capital nor sit upon the throne of my forbears till I learn the truth about this tarn and the fish therein.\" He then ordered his men to dismount and bivouac all around the mountain; which they did; and summoning his Wazir, a Minister of much experience, sagacious, of penetrating wit and well versed in affairs, said to him, \"'Tis in my mind to do a certain thing whereof I will inform thee; my heart telleth me to fare forth alone this night and root out the mystery of this tarn and its fishes. Do thou take thy seat at my tent door, and say to the Emirs and Wazirs, the Nabobs and the Chamberlains, in fine to all who ask thee:—The Sultan is ill at ease, and he hath ordered me to refuse all admittance;[FN#109] and be careful thou let none know my design.\" And the Wazir could not oppose him. Then the King changed his dress and ornaments and, slinging his sword over his shoulder, took a path which led up one of the mountains and marched for the rest of the night till morning dawned; nor did he cease wayfaring till the heat was too much for him. After his long walk he rested for a while, and then resumed his march and fared on through the second night till dawn, when suddenly there appeared a black point in the far distance. Hereat he rejoiced and said to himself, \"Haply some one here shall acquaint me with the mystery of the tarn and its fishes.\" Presently drawing near the dark object he found it a palace built of swart stone plated with iron; and, while one leaf of the gate stood wide open, the other was shut, The King's spirits rose high as he stood before the gate and rapped a light rap; but hearing no answer he knocked a second knock and a third; yet there came no sign. Then he knocked his loudest but still no answer, so he said, \"Doubtless 'tis empty.\" Thereupon he mustered up resolution and boldly walked through the main gate into the great hall and there cried out aloud, \"Holla, ye people of the palace! I am a stranger and a wayfarer; have you aught here of victual?\" He repeated his cry a second time and a third but still there came no reply; so strengthening his heart and making up his mind he stalked through the vestibule into the very middle of the palace and found no man in it. Yet it was furnished with silken stuffs gold starred; and the hangings were let down over the door ways. In the midst was a spacious court off which set four open saloons each with its raised dais, saloon facing saloon; a canopy shaded the court and in the centre was a jetting fount with four figures of lions made of red gold, spouting from their mouths water clear as pearls and diaphanous gems. Round about the palace birds were let loose and over it stretched a net of golden wire, hindering them from flying off; in brief there was everything but human beings. The King marvelled mightily thereat, yet felt he sad at heart for that he saw no one to give him account of the waste and its tarn, the fishes, the mountains and the palace itself. Presently as he sat between the doors in deep thought behold, there came a voice of lament, as from a heart grief spent and he heard the voice chanting these verses:—"
     },
     {
       "id": "s4-33",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "I hid what I endured of him[FN#110] and yet it came to light, * And nightly sleep mine eyelids fled and changed to sleepless night: Oh world! Oh Fate! withhold thy hand and cease thy hurt and harm * Look and behold my hapless sprite in colour and affright: Wilt ne'er show ruth to highborn youth who lost him on the way * Of Love, and fell from wealth and fame to lowest basest wight. Jealous of Zephyr's breath was I as on your form he breathed * But whenas Destiny descends she blindeth human sight[FN#111] What shall the hapless archer do who when he fronts his foe * And bends his bow to shoot the shaft shall find his string undight? When cark and care so heavy bear on youth[FN#112] of generous soul * How shall he 'scape his lot and where from Fate his place of flight?"
     },
     {
       "id": "s4-34",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Now when the Sultan heard the mournful voice he sprang to his feet; and, following the sound, found a curtain let down over a chamber door. He raised it and saw behind it a young man sitting upon a couch about a cubit above the ground; and he fair to the sight, a well shaped wight, with eloquence dight; his forehead was flower white, his cheek rosy bright, and a mole on his cheek breadth like an ambergris mite; even as the poet doth indite:—"
     },
     {
       "id": "s4-35",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "A youth slim waisted from whose locks and brow * The world in blackness and in light is set. Throughout Creation's round no fairer show * No rarer sight thine eye hath ever met: A nut brown mole sits throned upon a cheek * Of rosiest red beneath an eye of jet.[FN#113]"
     },
     {
       "id": "s4-36",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "The King rejoiced and saluted him, but he remained sitting in his caftan of silken stuff purfled with Egyptian gold and his crown studded with gems of sorts; but his face was sad with the traces of sorrow. He returned the royal salute in most courteous wise adding, \"O my lord, thy dignity demandeth my rising to thee; and my sole excuse is to crave thy pardon.\"[FN#114] Quoth the King, \"Thou art excused, O youth; so look upon me as thy guest come hither on an especial object. I would thou acquaint me with the secrets of this tarn and its fishes and of this palace and thy loneliness therein and the cause of thy groaning and wailing.\" When the young man heard these words he wept with sore weeping;[FN#115] till his bosom was drenched with tears and began reciting—"
     },
     {
       "id": "s4-37",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Say him who careless sleeps what while the shaft of Fortune flies * How many cloth this shifting world lay low and raise to rise? Although thine eye be sealed in sleep, sleep not th' Almighty's eyes * And who hath found Time ever fair, or Fate in constant guise?"
     },
     {
       "id": "s4-38",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Then he sighed a long fetched sigh and recited:—"
     },
     {
       "id": "s4-39",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Confide thy case to Him, the Lord who made mankind; * Quit cark and care and cultivate content of mind; Ask not the Past or how or why it came to pass: * All human things by Fate and Destiny were designed!"
     },
     {
       "id": "s4-40",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "The King marvelled and asked him, \"What maketh thee weep, O young man?\" and he answered, \"How should I not weep, when this is my case!\" Thereupon he put out his hand and raised the skirt of his garment, when lo! the lower half of him appeared stone down to his feet while from his navel to the hair of his head he was man. The King, seeing this his plight, grieved with sore grief and of his compassion cried, \"Alack and well away! in very sooth, O youth, thou heapest sorrow upon my sorrow. I was minded to ask thee the mystery of the fishes only: whereas now I am concerned to learn thy story as well as theirs. But there is no Majesty and there is no Might save in Allah, the Glorious, the Great![FN#116] Lose no time, O youth, but tell me forthright thy whole tale.\" Quoth he, \"Lend me thine ears, thy sight and thine insight;\" and quoth the King, \"All are at thy service!\" Thereupon the youth began, \"Right wondrous and marvellous is my case and that of these fishes; and were it graven with gravers upon the eye corners it were a warner to whoso would be warned.\" \"How is that?\" asked the King, and the young man began to tell"
     },
     {
       "id": "s4-41",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "The Tale of the Ensorcelled Prince."
     },
     {
       "id": "s4-42",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Know then, O my lord, that whilome my sire was King of this city, and his name was Mahmud, entitled Lord of the Black Islands, and owner of what are now these four mountains. He ruled three score and ten years, after which he went to the mercy of the Lord and I reigned as Sultan in his stead. I took to wife my cousin, the daughter of my paternal uncle,[FN#117] and she loved me with such abounding love that whenever I was absent she ate not and she drank not until she saw me again. She cohabited with me for five years till a certain day when she went forth to the Hammam bath; and I bade the cook hasten to get ready all requisites for our supper. And I entered this palace and lay down on the bed where I was wont to sleep and bade two damsels to fan my face, one sitting by my head and the other at my feet. But I was troubled and made restless by my wife's absence and could not sleep; for although my eyes were closed my mind and thoughts were wide awake. Presently I heard the slave girl at my head say to her at my feet, \"O Mas'udah, how miserable is our master and how wasted in his youth and oh! the pity of his being so betrayed by our mistress, the accursed whore!\"[FN#118] The other replied, \"Yes indeed: Allah curse all faithless women and adulterous; but the like of our master, with his fair gifts, deserveth something better than this harlot who lieth abroad every night.\" Then quoth she who sat by my head, \"Is our lord dumb or fit only for bubbling that he questioneth her not!\" and quoth the other, \"Fie on thee! doth our lord know her ways or doth she allow him his choice? Nay, more, doth she not drug every night the cup she giveth him to drink before sleep time, and put Bhang[FN#119] into it? So he sleepeth and wotteth not whither she goeth, nor what she doeth; but we know that after giving him the drugged wine, she donneth her richest raiment and perfumeth herself and then she fareth out from him to be away till break of day; then she cometh to him, and burneth a pastile under his nose and he awaketh from his deathlike sleep.\" When I heard the slave girl's words, the light became black before my sight and I thought night would never-fall. Presently the daughter of my uncle came from the baths; and they set the table for us and we ate and sat together a fair half hour quaffing our wine as was ever our wont. Then she called for the particular wine I used to drink before sleeping and reached me the cup; but, seeming to drink it according to my wont, I poured the contents into my bosom; and, lying down, let her hear that I was asleep. Then, behold, she cried, \"Sleep out the night, and never wake again: by Allah, I loathe thee and I loathe thy whole body, and my soul turneth in disgust from cohabiting with thee; and I see not the moment when Allah shall snatch away thy life!\" Then she rose and donned her fairest dress and perfumed her person and slung my sword over her shoulder; and, opening the gates of the palace, went her ill way. I rose and followed her as she left the palace and she threaded the streets until she came to the city gate, where she spoke words I understood not, and the padlocks dropped of themselves as if broken and the gate leaves opened. She went forth (and I after her without her noticing aught) till she came at last to the outlying mounds[FN#120] and a reed fence built about a round roofed hut of mud bricks. As she entered the door, I climbed upon the roof which commanded a view of the interior, and lo! my fair cousin had gone in to a hideous negro slave with his upper lip like the cover of a pot, and his lower like an open pot; lips which might sweep up sand from the gravel-floor of the cot. He was to boot a leper and a paralytic, lying upon a strew of sugar cane trash and wrapped in an old blanket and the foulest rags and tatters. She kissed the earth before him, and he raised his head so as to see her and said, \"Woe to thee! what call hadst thou to stay away all this time? Here have been with me sundry of the black brethren, who drank their wine and each had his young lady, and I was not content to drink because of thine absence.\" Then she, \"O my lord, my heart's love and coolth of my eyes,[FN#121] knowest thou not that I am married to my cousin whose very look I loathe, and hate myself when in his company? And did not I fear for thy sake, I would not let a single sun arise before making his city a ruined heap wherein raven should croak and howlet hoot, and jackal and wolf harbour and loot; nay I had removed its very stones to the back side of Mount Kaf.\" [FN#122] Rejoined the slave, Thou liest, damn thee! Now I swear an oath by the valour and honour of blackamoor men (and deem not our manliness to be ; the poor manliness of white men), from today forth if thou stay away till this hour, I will not keep company with thee nor will I glue my body with thy body and strum and belly bump Dost play fast and loose with us, thou cracked pot, that we may satisfy thy dirty lusts? stinkard! bitch! vilest of the vile whites!\" When I heard his words, and saw with my own eyes what passed between these two wretches, the world waxed dark before my face and my soul knew not in what place it was. But , my wife humbly stood up weeping before and wheedling the slave, and saying, O my beloved, and very fruit of my heart, there is none left to cheer me but thy dear self; and, if thou cast me off who shall take me in, O my beloved, O light of my eyes?\" And she ceased not weeping and abasing herself to him until he deigned be reconciled with her. Then was she right glad and stood up and doffed her clothes, even to her petticoat trousers, and said, \"0 my master what hast thou here for thy handmaiden to eat? Uncover the basin,\" he grumbled, \"and thou shalt find at the bottom the broiled bones of some rats we dined on, pick at them, and then go to that slop pot where thou shalt find some leavings of beer [FN#123] which thou mayest drink.\" So she ate and drank and washed her hands, and went and lay down by the side of the slave, upon the cane trash and, stripping herself stark naked, she crept in with him under his foul coverlet and his rags and tatters. When I saw my wife, my cousin, the daughter of my uncle, do this deed[FN#124] I clean lost my wits, and climbing down from the roof, I entered and took the sword which she had with her and drew it, determined to cut down the twain. I first struck at the slave's neck and thought that the death decree had fallen on him:\"And Shahrazad perceived the dawn of day and ceased to say her permitted say."
     },
     {
       "id": "s4-43",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "When it was the Eighth Night,"
     },
     {
       "id": "s4-44",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "She continued, It hath reached me, O auspicious King, that the young ensorcelled Prince said to the King, \"When I smote the slave with intent to strike off his head, I thought that I had slain him; for he groaned a loud hissing groan, but I had cut only the skin and flesh of the gullet and the two arteries! It awoke the daughter of my uncle, so I sheathed the sword and fared forth for the city; and, entering the palace, lay upon my bed and slept till morning when my wife aroused me and I saw that she had cut off her hair and had donned mourning garments. Quoth she:—O son of my uncle, blame me not for what I do; it hath just reached me that my mother is dead, and my father hath been killed in holy war, and of my brothers one hath lost his life by a snake sting and the other by falling down some precipice; and I can and should do naught save weep and lament. When I heard her words I refrained from all reproach and said only:—Do as thou list; I certainly will not thwart thee. She continued sorrowing, weeping and wailing one whole year from the beginning of its circle to the end, and when it was finished she said to me.—I wish to build me in thy palace a tomb with a cupola, which I will set apart for my mourning and will name the House of Lamentations.[FN#125] Quoth I again:—Do as thou list! Then she builded for herself a cenotaph wherein to mourn, and set on its centre a dome under which showed a tomb like a Santon's sepulchre. Thither she carried the slave and lodged him; but he was exceeding weak by reason of his wound, and unable to do her love service; he could only drink wine and from the day of his hurt he spake not a word, yet he lived on because his appointed hour[FN#126] was not come. Every day, morning and evening, my wife went to him and wept and wailed over him and gave him wine and strong soups, and left not off doing after this manner a second year; and I bore with her patiently and paid no heed to her. One day, however, I went in to her unawares; and I found her weeping and beating her face and crying:—Why art thou absent from my sight, O my heart's delight? Speak to me, O my life; talk with me, O my love? Then she recited these verses:—"
     },
     {
       "id": "s4-45",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "For your love my patience fails and albeit you forget * I may not, nor to other love my heart can make reply: Bear my body, bear my soul wheresoever you may fare * And where you pitch the camp let my body buried lie: Cry my name above my grave, and an answer shall return * The moaning of my bones responsive to your cry.[FN#127]"
     },
     {
       "id": "s4-46",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Then she recited, weeping bitterly the while:—"
     },
     {
       "id": "s4-47",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "The day of my delight is the day when draw you near * And the day of mine affright is the day you turn away: Though I tremble through the night in my bitter dread of death * When I hold you in my arms I am free from all affray"
     },
     {
       "id": "s4-48",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Once more she began reciting:—"
     },
     {
       "id": "s4-49",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Though a morn I may awake with all happiness in hand * Though the world all be mine and like Kisra-kings[FN#128] I reign; To me they had the worth of the winglet of the gnat * When I fail to see thy form, when I look for thee in vain"
     },
     {
       "id": "s4-50",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "When she had ended for a time her words and her weeping I said to her—O my cousin, let this thy mourning suffice, for in pouring forth tears there is little profit! Thwart me not, answered she, in aught I do, or I will lay violent hands on myself! So I held my peace and left her to go her own way; and she ceased not to cry and keen and indulge her affliction for yet another year. At the end of the third year I waxed aweary of this longsome mourning, and one day I happened to enter the cenotaph when vexed and angry with some matter which had thwarted me, and suddenly I heard her say:—O my lord, I never hear thee vouch safe a single word to me! Why dost thou not answer me, O my master? and she began reciting:—"
     },
     {
       "id": "s4-51",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "O thou tomb! O, thou tomb! be his beauty set in shade? * Hast thou darkened that countenance all sheeny as the noon? O thou tomb! neither earth nor yet heaven art to me * Then how cometh it in thee are conjoined my sun and moon?"
     },
     {
       "id": "s4-52",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "When I heard such verses as these rage was heaped upon my rage I cried out:—Well away! how long is this sorrow to last? and I began repeating:—"
     },
     {
       "id": "s4-53",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "O thou tomb! O thou tomb! be his horrors set in blight? * Hast thou darkenèd his countenance that sickeneth the soul? O thou tomb! neither cess pool nor pipkin art to me * Then how cometh it in thee are conjoined soil and coal?"
     },
     {
       "id": "s4-54",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "When she heard my words she sprang to her feet crying.—Fie upon thee, thou cur! all this is of thy doings; thou hast wounded my heart s darling and thereby worked me sore woe and thou hast wasted his youth so that these three years he hath lain abed more dead than alive! In my wrath I cried:—O thou foulest of harlots and filthiest of whores ever futtered by negro slaves who are hired to have at thee![FN#129] Yes indeed it was I who did this good deed; and snatching up my sword I drew it and made at her to cut her down. But she laughed my words and mine intent to scorn crying: To heel, hound that thou art! Alas[FN#130] for the past which shall no more come to pass nor shall any one avail the dead to raise. Allah hath indeed now given into my hand him who did to me this thing, a deed that hath burned my heart with a fire which died not and a flame which might not be quenched! Then she stood up; and, pronouncing some words to me unintelligible, she said:— By virtue of my egromancy become thou half stone and half man; whereupon I became what thou seest, unable to rise or to sit, and neither dead nor alive. Moreover she ensorcelled the city with all its streets and garths, and she turned by her gramarye the four islands into four mountains around the tarn whereof thou questionest me; and the citizens, who were of four different faiths, Moslem, Nazarene, Jew and Magian, she transformed by her enchantments into fishes; the Moslems are the white, the Magians red, the Christians blue and the Jews yellow.[FN#131] And every day she tortureth me and scourgeth me with an hundred stripes, each of which draweth floods of blood and cutteth the skin of my shoulders to strips; and lastly she clotheth my upper half with a hair cloth and then throweth over them these robes.\" Hereupon the young man again shed tears and began reciting:—"
     },
     {
       "id": "s4-55",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "In patience, O my God, I endure my lot and fate; * I will bear at will of Thee whatsoever be my state: They oppress me; they torture me; they make my life a woe * Yet haply Heaven's happiness shall compensate my strait: Yea, straitened is my life by the bane and hate o' foes * But Mustafa and Murtaza[FN#132] shall ope me Heaven's gate."
     },
     {
       "id": "s4-56",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "After this the Sultan turned towards the young Prince and said, \"O youth, thou hast removed one grief only to add another grief; but now, O my friend, where is she; and where is the mausoleum wherein lieth the wounded slave?\" \"The slave lieth under yon dome,\" quoth the young man, \"and she sitteth in the chamber fronting yonder door. And every day at sunrise she cometh forth, and first strippeth me, and whippeth me with an hundred strokes of the leathern scourge, and I weep and shriek; but there is no power of motion in my lower limbs to keep her off me. After ending her tormenting me she visiteth the slave, bringing him wine and boiled meats. And to morrow at an early hour she will be here.\" Quoth the King, \"By Allah, O youth, I will assuredly do thee a good deed which the world shall not willingly let die, and an act of derring do which shall be chronicled long after I am dead and gone by.\" Then the King sat him by the side of the young Prince and talked till nightfall, when he lay down and slept; but, as soon as the false dawn[FN#133] showed, he arose and doffing his outer garments[FN#134] bared his blade and hastened to the place wherein lay the slave. Then was he ware of lighted candles and lamps, and the perfume of incenses and unguents, and directed by these, he made for the slave and struck him one stroke killing him on the spot: after which he lifted him on his back and threw him into a well that was in the palace. Presentry he returned and, donning the slave's gear, lay down at length within the mausoleum with the drawn sword laid close to and along his side. After an hour or so the accursed witch came; and, first going to her husband, she stripped off his clothes and, taking a whip, flogged him cruelly while he cried out, \"Ah! enough for me the case I am in! take pity on me, O my cousin!' But she replied, \"Didst thou take pity on me and spare the life of my true love on whom I coated?\" Then she drew the cilice over his raw and bleeding skin and threw the robe upon all and went down to the slave with a goblet of wine and a bowl of meat broth in her hands. She entered under the dome weeping and wailing, \"Well-away!\" and crying, \"O my lord! speak a word to me! O my master! talk awhile with me!\" and began to recite these couplets.—"
     },
     {
       "id": "s4-57",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "How long this harshness, this unlove, shall bide? * Suffice thee not tear floods thou hast espied? Thou dost prolong our parting purposely * And if wouldst please my foe, thou'rt satisfied!"
     },
     {
       "id": "s4-58",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Then she wept again and said, \"O my lord! speak to me, talk with me!\" The King lowered his voice and, twisting his tongue, spoke after the fashion of the blackamoors and said \"'lack! 'lack! there be no Ma'esty and there be no Might save in Allauh, the Gloriose, the Great!\" Now when she heard these words she shouted for joy, and fell to the ground fainting; and when her senses returned she asked, \"O my lord, can it be true that thou hast power of speech?\" and the King making his voice small and faint answered, \"O my cuss! dost thou deserve that I talk to thee and speak with thee?\" \"Why and wherefore?\" rejoined she; and he replied \"The why is that all the livelong day thou tormentest thy hubby; and he keeps calling on 'eaven for aid until sleep is strange to me even from evenin' till mawnin', and he prays and damns, cussing us two, me and thee, causing me disquiet and much bother: were this not so, I should long ago have got my health; and it is this which prevents my answering thee.\" Quoth she, \"With thy leave I will release him from what spell is on him;\"and quoth the King, \"Release him and let's have some rest!\" She cried, \"To hear is to obey;\" and, going from the cenotaph to the palace, she took a metal bowl and filled it with water and spake over it certain words which made the contents bubble and boil as a cauldron seetheth over the fire. With this she sprinkled her husband saying, \"By virtue of the dread words I have spoken, if thou becamest thus by my spells, come forth out of that form into thine own former form.\" And lo and behold! the young man shook and trembled; then he rose to his feet and, rejoicing at his deliverance, cried aloud, \"I testify that there is no god but the God, and in very truth Mohammed is His Apostle, whom Allah bless and keep!\" Then she said to him, \"Go forth and return not hither, for if thou do I will surely slay thee;\" screaming these words in his face. So he went from between her hands; and she returned to the dome and, going down to the sepulchre, she said, \"O my lord, come forth to me that I may look upon thee and thy goodliness!\" The King replied in faint low words, \"What[FN#135] thing hast thou done? Thou hast rid me of the branch but not of the root.\" She asked, \"O my darling! O my negroling! what is the root?\" And he answered, \"Fie on thee, O my cuss! The people of this city and of the four islands every night when it's half passed lift their heads from the tank in which thou hast turned them to fishes and cry to Heaven and call down its anger on me and thee; and this is the reason why my body's baulked from health. Go at once and set them free then come to me and take my hand, and raise me up, for a little strength is already back in me.\" When she heard the King's words (and she still supposed him to be the slave) she cried joyously, “O my master, on my head and on my eyes be thy command, Bismillah[FN#136]!” So she sprang to her feet and, full of joy and gladness, ran down to the tarn and took a little of its water in the palm of her hand—And Shahrazad perceived the dawn of day and ceased to say her permitted say."
     },
     {
       "id": "s4-59",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "When it Was the Ninth Night,"
     },
     {
       "id": "s4-60",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "She said, It hath reached me, O auspicious King, that when the young woman, the sorceress, took in hand some of the tarn water and spake over it words not to be understood, the fishes lifted their heads and stood up on the instant like men, the spell on the people of the city having been removed. What was the lake again became a crowded capital; the bazars were thronged with folk who bought and sold; each citizen was occupied with his own calling and the four hills became islands as they were whilome. Then the young woman, that wicked sorceress, returned to the King and (still thinking he was the negro) said to him, O my love! stretch forth thy honoured hand that I may assist thee to rise.\" \"Nearer to me,\" quoth the King in a faint and feigned tone. She came close as to embrace him when he took up the sword lying hid by his side and smote her across the breast, so that the point showed gleaming behind her back. Then he smote her a second time and cut her in twain and cast her to the ground in two halves. After which he fared forth and found the young man, now freed from the spell, awaiting him and gave him joy of his happy release while the Prince kissed his hand with abundant thanks. Quoth the King, \"Wilt thou abide in this city or go with me to my capital?\" Quoth the youth, \"O King of the age, wottest thou not what journey is between thee and thy city?\" \"Two days and a half,\" answered he, whereupon said the other, \"An thou be sleeping, O King, awake! Between thee and thy city is a year's march for a well girt walker, and thou haddest not come hither in two days and a half save that the city was under enchantment. And I, O King, will never part from thee; no, not even for the twinkling of an eye.\" The King rejoiced at his words and said, \"Thanks be to Allah who hath bestowed thee upon me! From this hour thou art my son and my only son, for that in all my life I have never been blessed with issue.\" Thereupon they embraced and joyed with exceeding great joy; and, reaching the palace, the Prince who had been spell bound informed his lords and his grandees that he was about to visit the Holy Places as a pilgrim, and bade them get ready all things necessary for the occasion. The preparations lasted ten days, after which he set out with the Sultan, whose heart burned in yearning for his city whence he had been absent a whole twelvemonth. They journeyed with an escort of Mamelukes[FN#137] carrying all manners of precious gifts and rarities, nor stinted they wayfaring day and night for a full year until they approached the Sultan's capital, and sent on messengers to announce their coming. Then the Wazir and the whole army came out to meet him in joy and gladness, for they had given up all hope of ever seeing their King; and the troops kissed the ground before him and wished him joy of his safety. He entered and took seat upon his throne and the Minister came before him and, when acquainted with all that had befallen the young Prince, he congratulated him on his narrow escape. When order was restored throughout the land the King gave largesse to many of his people, and said to the Wazir, \"Hither the Fisherman who brought us the fishes!\" So he sent for the man who had been the first cause of the city and the citizens being delivered from enchantment and, when he came into the presence, the Sultan bestowed upon him a dress of honour, and questioned him of his condition and whether he had children. The Fisherman gave him to know that he had two daughters and a son, so the King sent for them and, taking one daughter to wife, gave the other to the young Prince and made the son his head treasurer. Furthermore he invested his Wazir with the Sultanate of the City in the Black Islands whilome belonging to the young Prince, and dispatched with him the escort of fifty armed slaves together with dresses of honour for all the Emirs and Grandees. The Wazir kissed hands and fared forth on his way; while the Sultan and the Prince abode at home in all the solace and the delight of life; and the Fisherman became the richest man of his age, and his daughters wived with the Kings, until death came to them. And yet, O King! this is not more wondrous than the story of"
     },
     {
       "id": "s4-61",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "The Porter and the Three Ladies of Baghdad."
     },
     {
       "id": "s4-62",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Once upon a time there was a Porter in Baghdad, who was a bachelor and who would remain unmarried. It came to pass on a certain day, as he stood about the street leaning idly upon his crate, behold, there stood before him an honourable woman in a mantilla of Mosul[FN#138] silk, broidered with gold and bordered with brocade; her walking shoes were also purfled with gold and her hair floated in long plaits. She raised her face veil[FN#139] and, showing two black eyes fringed with jetty lashes, whose glances were soft and languishing and whose perfect beauty was ever blandishing, she accosted the Porter and said in the suavest tones and choicest language, \"Take up thy crate and follow me.\" The Porter was so dazzled he could hardly believe that he heard her aright, but he shouldered his basket in hot haste saying in himself, \"O day of good luck! O day of Allah's grace!\" and walked after her till she stopped at the door of a house. There she rapped, and presently came out to her an old man, a Nazarene, to whom she gave a gold piece, receiving from him in return what she required of strained wine clear as olive oil; and she set it safely in the hamper, saying \"Lift and follow.\" Quoth the Porter, \"This, by Allah, is indeed an auspicious day, a day propitious for the granting of all a man wisheth.\" He again hoisted up the crate and followed her; till she stopped at a fruiterer's shop and bought from him Shami[FN#140] apples and Osmani quinces and Omani[FN#141] peaches, and cucumbers of Nile growth, and Egyptian limes and Sultani oranges and citrons; besides Aleppine jasmine, scented myrtle berries, Damascene nenuphars, flower of privet[FN#142] and camomile, blood red anemones, violets, and pomegranate bloom, eglantine and narcissus, and set the whole in the Porter's crate, saying, \"Up with it.\" So he lifted and followed her till she stopped at a butcher's booth and said, \"Cut me off ten pounds of mutton.\" She paid him his price and he wrapped it in a banana leaf, whereupon she laid it in the crate and said \"Hoist, O Porter.\" He hoisted accordingly, and followed her as she walked on till she stopped at a grocer's, where she bought dry fruits and pistachio kernels, Tihamah raisins, shelled almonds and all wanted for dessert, and said to the Porter, \"Lift and follow me.\" So he up with his hamper and after her till she stayed at the confectioner's, and she bought an earthen platter, and piled it with all kinds of sweetmeats in his shop, open worked tarts and fritters scented with musk and \"soap cakes,\" and lemon loaves and melon preserves,[FN#143] and \"Zaynab's combs,\" and \"ladies' fingers,\" and \"Kazi's tit-bits\" and goodies of every description; and placed the platter in the Porter's crate. Thereupon quoth he (being a merry man), \"Thou shouldest have told me, and I would have brought with me a pony or a she camel to carry all this market stuff.\" She smiled and gave him a little cuff on the nape saying, \"Step out and exceed not in words for (Allah willing!) thy wage will not be wanting.\" Then she stopped at a perfumer's and took from him ten sorts of waters, rose scented with musk, orange-flower, water-lily, willow-flower, violet and five others; and she also bought two loaves of sugar, a bottle for perfume spraying, a lump of male incense, aloe-wood, ambergris and musk, with candles of Alexandria wax; and she put the whole into the basket, saying, \"Up with thy crate and after me.\" He did so and followed until she stood before the greengrocer's, of whom she bought pickled safflower and olives, in brine and in oil; with tarragon and cream cheese and hard Syrian cheese; and she stowed them away in the crate saying to the Porter, \"Take up thy basket and follow me.\" He did so and went after her till she came to a fair mansion fronted by a spacious court, a tall, fine place to which columns gave strength and grace: and the gate thereof had two leaves of ebony inlaid with plates of red gold. The lady stopped at the door and, turning her face veil sideways, knocked softly with her knuckles whilst the Porter stood behind her, thinking of naught save her beauty and loveliness. Presently the door swung back and both leaves were opened, whereupon he looked to see who had opened it; and behold, it was a lady of tall figure, some five feet high; a model of beauty and loveliness, brilliance and symmetry and perfect grace. Her forehead was flower white; her cheeks like the anemone ruddy bright; her eyes were those of the wild heifer or the gazelle, with eyebrows like the crescent moon which ends Sha'aban and begins Ramazan;[FN#144] her mouth was the ring of Sulayman,[FN#145] her lips coral red, and her teeth like a line of strung pearls or of camomile petals. Her throat recalled the antelope's, and her breasts, like two pomegranates of even size, stood at bay as it were,[FN#146] her body rose and fell in waves below her dress like the rolls of a piece of brocade, and her navel[FN#147] would hold an ounce of benzoin ointment. In fine she was like her of whom the poet said:—"
     },
     {
       "id": "s4-63",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "On Sun and Moon of palace cast thy sight * Enjoy her flower like face, her fragrant light: Thine eyes shall never see in hair so black * Beauty encase a brow so purely white: The ruddy rosy cheek proclaims her claim * Though fail her name whose beauties we indite: As sways her gait I smile at hips so big * And weep to see the waist they bear so slight."
     },
     {
       "id": "s4-64",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "When the Porter looked upon her his wits were waylaid, and his senses were stormed so that his crate went nigh to fall from his head, and he said to himself, \"Never have I in my life seen a day more blessed than this day!\" Then quoth the lady portress to the lady cateress, \"Come in from the gate and relieve this poor man of his load.\" So the provisioner went in followed by the portress and the Porter and went on till they reached a spacious ground floor hall,[FN#148] built with admirable skill and beautified with all manner colours and carvings; with upper balconies and groined arches and galleries and cupboards and recesses whose curtains hung before them. In the midst stood a great basin full of water surrounding a fine fountain, and at the upper end on the raised dais was a couch of juniper wood set with gems and pearls, with a canopy like mosquito curtains of red satin silk looped up with pearls as big as filberts and bigger. Thereupon sat a lady bright of blee, with brow beaming brilliancy, the dream of philosophy, whose eyes were fraught with Babel's gramarye[FN#149] and her eye brows were arched as for archery; her breath breathed ambergris and perfumery and her lips were sugar to taste and carnelian to see. Her stature was straight as the letter I[FN#150] and her face shamed the noon sun's radiancy; and she was even as a galaxy, or a dome with golden marquetry or a bride displayed in choicest finery or a noble maid of Araby.[FN#151] Right well of her sang the bard when he said:—"
     },
     {
       "id": "s4-65",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Her smiles twin rows of pearls display * Chamomile-buds or rimey spray Her tresses stray as night let down * And shames her light the dawn o' day."
     },
     {
       "id": "s4-66",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "[FN#152]The third lady rising from the couch stepped forward with grace ful swaying gait till she reached the middle of the saloon, when she said to her sisters, \"Why stand ye here? take it down from this poor man's head!\" Then the cateress went and stood before him, and the portress behind him while the third helped them, and they lifted the load from the Porter's head; and, emptying it of all that was therein, set everything in its place. Lastly they gave him two gold pieces, saying, \"Wend thy ways, O Porter.\" But he went not, for he stood looking at the ladies and admiring what uncommon beauty was theirs, and their pleasant manners and kindly dispositions (never had he seen goodlier); and he gazed wistfully at that good store of wines and sweet scented flowers and fruits and other matters. Also he marvelled with exceeding marvel, especially to see no man in the place and delayed his going; whereupon quoth the eldest lady, \"What aileth thee that goest not; haply thy wage be too little?\" And, turning to her sister the cateress, she said, \"Give him another diner!\" But the Porter answered, \"By Allah, my lady, it is not for the wage; my hire is never more than two dirhams; but in very sooth my heart and my soul are taken up with you and your condition. I wonder to see you single with ne'er a man about you and not a soul to bear you company; and well you wot that the minaret toppleth o'er unless it stand upon four, and you want this same fourth; and women's pleasure without man is short of measure, even as the poet said:—"
     },
     {
       "id": "s4-67",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Seest not we want for joy four things all told * The harp and lute, the flute and flageolet; And be they companied with scents four fold * Rose, myrtle, anemone and violet Nor please all eight an four thou wouldst withhold * Good wine and youth and gold and pretty pet."
     },
     {
       "id": "s4-68",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "You be three and want a fourth who shall be a person of good sense and prudence; smart witted, and one apt to keep careful counsel.\" His words pleased and amused them much; and they laughed at him and said, \"And who is to assure us of that? We are maidens and we fear to entrust our secret where it may not be kept, for we have read in a certain chronicle the lines of one Ibn al-Sumam:—"
     },
     {
       "id": "s4-69",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Hold fast thy secret and to none unfold * Lost is a secret when that secret's told An fail thy breast thy secret to conceal * How canst thou hope another's breast shall hold?"
     },
     {
       "id": "s4-70",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "And Abu Nowás[FN#153] said well on the same subject:—"
     },
     {
       "id": "s4-71",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Who trusteth secret to another's hand * Upon his brow deserveth burn of brand!\""
     },
     {
       "id": "s4-72",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "When the Porter heard their words he rejoined, \"By your lives! I am a man of sense and a discreet, who hath read books and perused chronicles; I reveal the fair and conceal the foul and I act as the poet adviseth:—"
     },
     {
       "id": "s4-73",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "None but the good a secret keep * And good men keep it unrevealed: It is to me a well shut house * With keyless locks and door ensealed\"[FN#154]"
     },
     {
       "id": "s4-74",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "When the maidens heard his verse and its poetical application addressed to them they said, \"Thou knowest that we have laid out all our monies on this place. Now say, hast thou aught to offer us in return for entertainment? For surely we will not suffer thee to sit in our company and be our cup companion, and gaze upon our faces so fair and so rare without paying a round sum.[FN#155] Wottest thou not the saying:—"
     },
     {
       "id": "s4-75",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Sans hope of gain Love's not worth a grain?\""
     },
     {
       "id": "s4-76",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "Whereto the lady portress added, \"If thou bring anything thou art a something; if no thing, be off with thee, thou art a nothing;\" but the procuratrix interposed, saying, \"Nay, O my sisters, leave teasing him for by Allah he hath not failed us this day, and had he been other he never had kept patience with me, so whatever be his shot and scot I will take it upon myself.\" The Porter, over joyed, kissed the ground before her and thanked her saying, \"By Allah, these monies are the first fruits this day hath given me.\" Hearing this they said, \"Sit thee down and welcome to thee,\" and the eldest lady added, \"By Allah, we may not suffer thee to join us save on one condition, and this it is, that no questions be asked as to what concerneth thee not, and frowardness shall be soundly flogged.\" Answered the Porter, \"I agree to this, O my lady, on my head and my eyes be it! Lookye, I am dumb, I have no tongue. Then arose the provisioneress and tightening her girdle set the table by the fountain and put the flowers and sweet herbs in their jars, and strained the wine and ranged the flasks in row and made ready every requisite. Then sat she down, she and her sisters, placing amidst them the Porter who kept deeming himself in a dream; and she took up the wine flagon, and poured out the first cup and drank it off, and likewise a second and a third.[FN#156] After this she filled a fourth cup which she handed to one of her sisters; and, lastly, she crowned a goblet and passed it to the Porter, saying:—"
     },
     {
       "id": "s4-77",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "\"Drink the dear draught, drink free and fain * What healeth every grief and pain.\""
     },
     {
       "id": "s4-78",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "He took the cup in his hand and, louting low, returned his best thanks and improvised:—"
     },
     {
       "id": "s4-79",
-      "sceneId": "s4",
+      "sceneId": "s3",
       "text": "“Drain not the bowl save with a trusty friend * A man of worth whose good old blood all know: For wine, like wind, sucks sweetness from the sweet * And stinks when over stench it haply blow:”"
     },
     {

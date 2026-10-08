@@ -16,41 +16,6 @@
       "prompt": "What does the poem hold?"
     },
     {
-      "id": "s1",
-      "title": "Ez wuochs in Burgonden   ein edel magedin,",
-      "place": "Ez wuochs in Burgonden   ein edel magedin,",
-      "reentry": "daz in allen landen niht schoeners mohte sin, Kriemhild geheizen; si wart ein scoene wip, darambe muosen degene vil verliesen den lip.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s2",
-      "title": "Der minneclichen meide   triuten wol gezam,",
-      "place": "Der minneclichen meide   triuten wol gezam,",
-      "reentry": "ir muotten kuene recken, niemen was ir gram, ane ma zen schoene so was ir edel lip; der iunevrouwen tugende zierten anderiu wip.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s3",
-      "title": "Ir pflagen drie künege   edel unde rich,",
-      "place": "Ir pflagen drie künege   edel unde rich,",
-      "reentry": "Gunther unde Gernot, die recken lobelich, und Giselher der iunge, ein uz erwelter degen, diu frouwe was ir swester, die fu'rsten hetens in ir pflegen.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s4",
-      "title": "Die herren waren milte,   von arde hohe erborn,",
-      "place": "Die herren waren milte,   von arde hohe erborn,",
-      "reentry": "mit kraft unmazen kuene, die recken uz erkorn, dazen Burgonden so was ir lant genant, si framden starkiu wunder sit in Etzelen lant.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s5",
-      "title": "Ze Wormze bidem Rine   si wenden mit ir kraft,",
-      "place": "Ze Wormze bidem Rine   si wenden mit ir kraft,",
-      "reentry": "in diende von ir landen stolziu ritterscaft mit lobelichen eren unz an ir endes zit, sit sturben si inemerliche von zweier edelen frouwen nit.",
-      "prompt": "What does the poem hold?"
-    },
-    {
       "id": "s6",
       "title": "Endnotes:",
       "place": "Endnotes:",
@@ -1004,52 +969,52 @@
     },
     {
       "id": "s1-0",
-      "sceneId": "s1",
-      "text": "daz in allen landen niht schoeners mohte sin, Kriemhild geheizen; si wart ein scoene wip, darambe muosen degene vil verliesen den lip."
+      "sceneId": "s0",
+      "text": "Ez wuochs in Burgonden ein edel magedin, daz in allen landen niht schoeners mohte sin, Kriemhild geheizen; si wart ein scoene wip, darambe muosen degene vil verliesen den lip."
     },
     {
       "id": "s2-0",
-      "sceneId": "s2",
-      "text": "ir muotten kuene recken, niemen was ir gram, ane ma zen schoene so was ir edel lip; der iunevrouwen tugende zierten anderiu wip."
+      "sceneId": "s0",
+      "text": "Der minneclichen meide triuten wol gezam, ir muotten kuene recken, niemen was ir gram, ane ma zen schoene so was ir edel lip; der iunevrouwen tugende zierten anderiu wip."
     },
     {
       "id": "s3-0",
-      "sceneId": "s3",
-      "text": "Gunther unde Gernot, die recken lobelich, und Giselher der iunge, ein uz erwelter degen, diu frouwe was ir swester, die fu'rsten hetens in ir pflegen."
+      "sceneId": "s0",
+      "text": "Ir pflagen drie künege edel unde rich, Gunther unde Gernot, die recken lobelich, und Giselher der iunge, ein uz erwelter degen, diu frouwe was ir swester, die fu'rsten hetens in ir pflegen."
     },
     {
       "id": "s4-0",
-      "sceneId": "s4",
-      "text": "mit kraft unmazen kuene, die recken uz erkorn, dazen Burgonden so was ir lant genant, si framden starkiu wunder sit in Etzelen lant."
+      "sceneId": "s0",
+      "text": "Die herren waren milte, von arde hohe erborn, mit kraft unmazen kuene, die recken uz erkorn, dazen Burgonden so was ir lant genant, si framden starkiu wunder sit in Etzelen lant."
     },
     {
       "id": "s5-0",
-      "sceneId": "s5",
-      "text": "in diende von ir landen stolziu ritterscaft mit lobelichen eren unz an ir endes zit, sit sturben si inemerliche von zweier edelen frouwen nit."
+      "sceneId": "s0",
+      "text": "Ze Wormze bidem Rine si wenden mit ir kraft, in diende von ir landen stolziu ritterscaft mit lobelichen eren unz an ir endes zit, sit sturben si inemerliche von zweier edelen frouwen nit."
     },
     {
       "id": "s5-1",
-      "sceneId": "s5",
+      "sceneId": "s0",
       "text": "Some of the final rhymes with proper names, such as \"Hagene\": \"degene\" (str. 84) or \"Hagene\": \"tragene\" (str. 300) appear to be feminine, but it is really the final \"e\" that rhymes, and a scansion of the line in question shows that the three accents are not complete without this final \"e\". In this respect our poem differs from most of the Middle High German poems, as this practice of using the final \"e\" in rhyme began to die out in the twelfth century, though occasionally found throughout the period. The rhymes are, as a rule, quite exact, the few cases of impure rhymes being mainly those in which short and long vowels are rhymed together, e.g. \"mich\": \"rich\" or \"man\": \"han\". Caesural rhymes are frequently met with, and were considered by Lachmann to be the marks of interpolated strophes, a view no longer held. A further peculiarity of the \"Nibelungen\" strophe is the frequent omission of the unaccented syllable in the second half of the last line of the strophe between the second and third stresses. Examples of this will be found in the second, third, and fifth strophes of the passage given above."
     },
     {
       "id": "s5-2",
-      "sceneId": "s5",
+      "sceneId": "s0",
       "text": "The language of the \"Nibelungenlied\" is the so-called Middle High German, that is, the High German written and spoken in the period between 1100 and 1500, the language of the great romances of chivalry and of the \"Minnesingers\". More exactly, the poem is written in the Austrian dialect of the close of the twelfth century, but contains many archaisms, which point to the fact of its having undergone a number of revisions."
     },
     {
       "id": "s5-3",
-      "sceneId": "s5",
+      "sceneId": "s0",
       "text": "In closing this brief study of the \"Nibelungenlied\", just a word or two further with reference to the poem, its character, and its place in German literature. Its theme is the ancient Teutonic ideal of \"Treue\" (faithfulness or fidelity), which has found here its most magnificent portrayal; faithfulness unto death, the loyalty of the vassal for his lord, as depicted in Hagen, the fidelity of the wife for her husband, as shown by Kriemhild, carried out with unhesitating consistency to the bitter end. This is not the gallantry of medieval chivalry, which colors so largely the opening scenes of the poem, but the heroic valor, the death-despising stoicism of the ancient Germans, before which the masters of the world, the all-conquering Romans, were compelled to bow."
     },
     {
       "id": "s5-4",
-      "sceneId": "s5",
+      "sceneId": "s0",
       "text": "In so far as the \"Nibelungenlied\" has forgotten most of the history of the youthful Siegfried, and knows nothing of his love for Brunhild, it is a torso, but so grand withal, that one hardly regrets the loss of these integral elements of the old saga. As it is a working over of originally separate lays, it is not entirely homogeneous, and contains not a few contradictions. In spite of these faults, however, which a close study reveals, it is nevertheless the grandest product of Middle High German epic poetry, and deservedly the most popular poem of older German literature. It lacks, to be sure, the grace of diction found in Gottfried von Strassburg's \"Tristan und Isolde\", the detailed and often magnificent descriptions of armor and dress to be met with in the epics of Hartman von Ouwe; it is wanting in the lofty philosophy of Wolfram von Eschenbach's \"Parzival\", and does not, as this latter, lead the reader into the realms of religious doubts and struggles. It is imposing through its very simplicity, through the grandeur of the story, which it does not seek to adorn and decorate. It nowhere pauses to analyze motives nor to give us a picture of inner conflict as modern authors are fond of doing. Its characters are impulsive and prompt in action, and when they have once acted, waste no time in useless regret or remorse."
     },
     {
       "id": "s5-5",
-      "sceneId": "s5",
+      "sceneId": "s0",
       "text": "It resembles the older \"Spielmannsdichtung\", or minstrel poetry, in the terseness and vigor of its language and in the lack of poetic imagery, but it is free from the coarseness and vulgar and grotesque humor of the latter. It approaches the courtly epic in its introduction of the pomp of courtly ceremonial, but this veneer of chivalry is very thin, and beneath the outward polish of form the heart beats as passionately and wildly as in the days of Herman, the Cheruscan chief. There are perhaps greater poems in literature than the \"Nibelungenlied\", but few so majestic in conception, so sublime in their tragedy, so simple in their execution, and so national in their character, as this great popular epic of German literature."
     },
     {

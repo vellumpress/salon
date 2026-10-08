@@ -65,6 +65,24 @@ export const POETRY_REBIND_IDS = [
   "war-is-kind",
   "lamia",
   "tortoises",
+  // Pack 2: longer verse books and verse drama (epics one scene per printed
+  // canto, rune or section; dialogue as "Speaker: line").
+  "barrack-room-ballads",
+  "the-flowers-of-evil",
+  "country-sentiment",
+  "kalevala",
+  "don-juan",
+  "idylls-of-the-king",
+  "the-defence-of-guenevere-and-other-poems",
+  "birds-beasts-and-flowers",
+  "atalanta-in-calydon",
+  "amores",
+  "reincarnations",
+  "heliodora-and-other-poems",
+  "spectra-a-book-of-poetic-experiments",
+  "the-poems-of-giacomo-leopardi",
+  "the-garden-of-bright-waters",
+  "domesday-book",
 ] as const;
 
 /** Waley 1918 headings from Winter Night through Last Poem (PG 42290). */

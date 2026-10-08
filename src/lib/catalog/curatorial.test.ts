@@ -2787,7 +2787,8 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
       opening:
         "I sing of brooks, of blossoms, birds and bowers, Of April, May, of June and July-flowers; I sing of May-poles, hock-carts, wassails, wakes, Of bridegrooms, brides and of their bridal cakes; I write of youth, of love, and",
       breaths: 6639,
-      scenes: 504,
+      // 503: a stray verse line titled as its own scene is merged back (pack 2).
+      scenes: 503,
       gutenberg: 22421,
     },
     "the-horse-stealers-and-other-stories": {

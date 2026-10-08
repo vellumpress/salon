@@ -93,13 +93,6 @@
       "prompt": "A word from this stretch."
     },
     {
-      "id": "s12",
-      "title": "Madam,",
-      "place": "Madam,",
-      "reentry": "My Mamma is indisposed; she will not go out to-day, and I must keep her company: thus I am deprived the honour of attending you to the opera. I assure you I regret more the loss of your company than the performance. I hope you are persuaded",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s13",
       "title": "Letter XIII",
       "place": "Letter XIII",
@@ -1325,13 +1318,6 @@
       "prompt": "A word from this stretch."
     },
     {
-      "id": "s188",
-      "title": "Madam,",
-      "place": "Madam,",
-      "reentry": "It is with the greatest grief I find myself obliged to fulfil my duty, by giving you an intelligence that will cause you so much affliction. Permit me first to recommend the exertion of that pious resignation which every one has so often ad",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s189",
       "title": "Letter CLXIV",
       "place": "Letter CLXIV",
@@ -1360,13 +1346,6 @@
       "prompt": "A word from this stretch."
     },
     {
-      "id": "s193",
-      "title": "Madam,",
-      "place": "Madam,",
-      "reentry": "In consequence of the orders you honoured me with, I waited on M. the President de ——, and communicated your letter to him, informing him at the same time, as you desired, I should do nothing without his advice. This respectable magistrate ",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s194",
       "title": "Letter CLXVII",
       "place": "Letter CLXVII",
@@ -1392,13 +1371,6 @@
       "title": "Letter CLXIX",
       "place": "Letter CLXIX",
       "reentry": "*The* Chevalier Danceny *to* Madame de Rosemonde.",
-      "prompt": "A word from this stretch."
-    },
-    {
-      "id": "s198",
-      "title": "Madam,",
-      "place": "Madam,",
-      "reentry": "You will perhaps think the step I now take very extraordinary; but I beseech you to hear before you condemn me, and do not look for either audacity or rashness, where there is nothing but respect and confidence. I will not dissemble the inj",
       "prompt": "A word from this stretch."
     },
     {
@@ -1782,13 +1754,18 @@
       "text": "Cecilia Volanges *to the* Marchioness de Merteuil."
     },
     {
+      "id": "s12-t",
+      "sceneId": "s11",
+      "text": "Madam,"
+    },
+    {
       "id": "s12-0",
-      "sceneId": "s12",
+      "sceneId": "s11",
       "text": "My Mamma is indisposed; she will not go out to-day, and I must keep her company: thus I am deprived the honour of attending you to the opera. I assure you I regret more the loss of your company than the performance. I hope you are persuaded of this, for I have a great affection for you. Be so good to tell the Chevalier Danceny, I have not yet got the collection which he mentioned, and that if he can bring it himself to-morrow, I shall be obliged to him. If he comes to-day, he will be told we are not at home; but the reason is, Mamma sees no company. I hope she will be better to-morrow."
     },
     {
       "id": "s12-1",
-      "sceneId": "s12",
+      "sceneId": "s11",
       "text": "I have the honour, &c."
     },
     {
@@ -8687,38 +8664,43 @@
       "text": "M. Bertrand *to* Madame de Rosemonde."
     },
     {
+      "id": "s188-t",
+      "sceneId": "s187",
+      "text": "Madam,"
+    },
+    {
       "id": "s188-0",
-      "sceneId": "s188",
+      "sceneId": "s187",
       "text": "It is with the greatest grief I find myself obliged to fulfil my duty, by giving you an intelligence that will cause you so much affliction. Permit me first to recommend the exertion of that pious resignation which every one has so often admired in you, and which alone can support us among the evils of this miserable life."
     },
     {
       "id": "s188-1",
-      "sceneId": "s188",
+      "sceneId": "s187",
       "text": "M. your nephew—Good God! must I afflict so respectable a lady! M. your nephew, had the misfortune to fall this morning in a duel he fought with M. the Chevalier Danceny. I am entirely unacquainted with the cause of the quarrel: but it appears, by the note which I found in M. the Viscount’s pocket, and which I have the honour to send you; it appears, I say, he was not the aggressor: and yet heaven permitted him to fall!"
     },
     {
       "id": "s188-2",
-      "sceneId": "s188",
+      "sceneId": "s187",
       "text": "I was at M. the Viscount’s, waiting for him, at the very time he was brought back to his hotel. You cannot conceive the shock I received, seeing M. your nephew brought in by two of his servants, bathed in blood. He had two thrusts of a sword in his body, and was very weak. M. Danceny was also there, and even wept. Ah! certainly he ought to weep—it is a pretty time to cry when one has been the cause of an irreparable misfortune!"
     },
     {
       "id": "s188-3",
-      "sceneId": "s188",
+      "sceneId": "s187",
       "text": "For my part, I could not contain myself; and notwithstanding my insignificancy, I could not help telling him my thoughts. But it was then M. the Viscount showed himself truly great: he commanded me to hold my tongue; and he even took his murderer by the hand, called him his friend, embraced him before us three, and said to us, “I command you to have for this gentleman all the respect that is due to a brave and gallant man.” Moreover, he ordered to be given him, in my presence, some very voluminous papers, that I know nothing of, but which I know he set a value on. Then he desired they should be left together for a little while; however, I sent immediately for assistance, as well spiritual as temporal: but, alas! the evil was without remedy. In less than half an hour after, M. the Viscount was insensible. He could only receive the extreme unction; and the ceremony was scarcely over, before he breathed his last."
     },
     {
       "id": "s188-4",
-      "sceneId": "s188",
+      "sceneId": "s187",
       "text": "Great God! when I received in my arms at his birth this precious prop of so illustrious a family, could I ever have thought he would expire in my arms, and that I should deplore his death! A death so sudden, and so unfortunate—my tears flow in spite of me. I ask pardon, Madam, for taking the liberty of mingling my sorrows with yours: but in every station, tenderness and sensibility will operate; and I should be very ungrateful if I did not lament, during my life, a nobleman who was so kind, and placed such a confidence in me."
     },
     {
       "id": "s188-5",
-      "sceneId": "s188",
+      "sceneId": "s187",
       "text": "To-morrow, when the body will be removed, I will order every thing to be sealed, and you may depend on my care entirely in every thing. I need not inform you, Madam, this unhappy event puts an end to the entail, and leaves you entirely at liberty. If I can be of any service, I beg, Madam, you will give me your orders, which will be executed with the greatest zeal and utmost punctuality."
     },
     {
       "id": "s188-6",
-      "sceneId": "s188",
+      "sceneId": "s187",
       "text": "I am, with the most profound respect, Madam, your most humble Bertrand."
     },
     {
@@ -8822,28 +8804,33 @@
       "text": "M. Bertrand *to* Madame de Rosemonde."
     },
     {
+      "id": "s193-t",
+      "sceneId": "s192",
+      "text": "Madam,"
+    },
+    {
       "id": "s193-0",
-      "sceneId": "s193",
+      "sceneId": "s192",
       "text": "In consequence of the orders you honoured me with, I waited on M. the President de ——, and communicated your letter to him, informing him at the same time, as you desired, I should do nothing without his advice. This respectable magistrate commanded me to observe to you, the prosecution you intended against M. the Chevalier Danceny would equally affect the memory of Monsieur your nephew, and his honour would necessarily be tainted by the decree of the court; which would be, doubtless, a very great misfortune. His opinion is, then, that you do not make any stir about the matter: but, on the contrary, that you should endeavour as much as possible to prevent the public officers from taking cognisance of this unfortunate business, which has already made too much noise."
     },
     {
       "id": "s193-1",
-      "sceneId": "s193",
+      "sceneId": "s192",
       "text": "These observations, so replete with wisdom, oblige me to wait your farther orders."
     },
     {
       "id": "s193-2",
-      "sceneId": "s193",
+      "sceneId": "s192",
       "text": "Permit me, Madam, to request, when you honour me with them, you will mention a word concerning your state of health, which, I dread much, so many crosses have impaired."
     },
     {
       "id": "s193-3",
-      "sceneId": "s193",
+      "sceneId": "s192",
       "text": "I hope you will pardon the liberty I take, as it proceeds from my zeal and attachment."
     },
     {
       "id": "s193-4",
-      "sceneId": "s193",
+      "sceneId": "s192",
       "text": "I am, with great respect, Madam, your, &c. *Paris, Dec.* 10, 17—."
     },
     {
@@ -8937,58 +8924,63 @@
       "text": "*The* Chevalier Danceny *to* Madame de Rosemonde."
     },
     {
+      "id": "s198-t",
+      "sceneId": "s197",
+      "text": "Madam,"
+    },
+    {
       "id": "s198-0",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "You will perhaps think the step I now take very extraordinary; but I beseech you to hear before you condemn me, and do not look for either audacity or rashness, where there is nothing but respect and confidence. I will not dissemble the injury I have done you; and during my whole life I should never forgive myself, if I could for one moment think it had been possible for me to avoid it; I also beg, Madam, you will be persuaded, although I feel myself exempt from reproach, I am not exempt from sorrow; and I can with the greatest sincerity add, those I have caused you have a great share in those I feel. To believe in those sentiments which I now presume to assure you of, it will be enough you do yourself justice, and know, that without the honour of being known to you, yet I have that of knowing you."
     },
     {
       "id": "s198-1",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "Still whilst I lament the fatality which has caused at once your grief and my misfortune, I am taught to believe, that totally taken up with a thirst for revenge, you sought means to satiate it even in the severity of the laws."
     },
     {
       "id": "s198-2",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "Permit me first to observe on this subject, that here your grief deceives you; for my interest in this circumstance is so intimately linked with M. de Valmont’s, that his memory would be involved in the same sentence you would have excited against me. I should then reasonably suppose, Madam, I should rather expect assistance than obstacles from you, in the endeavours I should be obliged to make, that this unhappy event should remain buried in oblivion."
     },
     {
       "id": "s198-3",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "But this resource of complicity, which is equally favourable to the innocent and guilty, is not sufficient to satisfy my delicacy; in wishing to set you aside as a party, I call on you as my judge: the esteem of those I respect is too dear, to suffer me to lose yours without defending it, and I think I am furnished with the means."
     },
     {
       "id": "s198-4",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "For if you will only agree, that revenge is permitted, or rather, that a man owes it to himself, when he is betrayed in his love, in his friendship, and still more, in his confidence. If you agree to this, the wrongs I have done will disappear: I do not ask you to believe what I say; but read, if you have the resolution, the deposit I put into your hands[1]; the number of original letters seem to authenticate those, of which there is only copies. Moreover, I received those letters, as I have the honour to transmit them to you, from M. de Valmont himself. I have not added to them, nor have I taken any from them but two letters, which I thought proper to publish."
     },
     {
       "id": "s198-5",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "The one was necessary to the mutual vengeance of M. de Valmont and myself, to which we had an equal right, and of which he expressly gave me a charge. I moreover thought, it would be doing an essential service to society, to unmask a woman so really dangerous as Madame de Merteuil is, and who, as you see, is the only, the true cause, of what happened between M. de Valmont and me."
     },
     {
       "id": "s198-6",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "A sentiment of justice induced me to publish the second, for the justification of M. de Prevan, whom I scarcely know; but who did not in the least deserve the rigorous treatment he has met, nor the severity of the public opinion, still more formidable, under which he has languished so long, without being able to make any defence."
     },
     {
       "id": "s198-7",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "You will only find copies of those two letters, as I make it a point to keep the originals. I do not think I can put into safer hands a deposit, which, perhaps, I think of consequence to me not to be destroyed, but which I should be ashamed to abuse. I think, confiding those papers to you, Madam, I serve those who are interested, as well as if I returned them to themselves, and I preserve them from the embarrassment of receiving them from me, and of knowing I am no stranger to events, which undoubtedly they wish all the world to be unacquainted with."
     },
     {
       "id": "s198-8",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "I should, however, inform you, the annexed correspondence is only a part of a much more voluminous collection from which M. de Valmont drew it in my presence, and which you will find at the taking off the seals, entitled as I saw, *An open account between the Marchioness de Merteuil and Viscount de Valmont*. On this you will take what measures your prudence will suggest. I am with great respect,"
     },
     {
       "id": "s198-9",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "Madam, &c."
     },
     {
       "id": "s198-10",
-      "sceneId": "s198",
+      "sceneId": "s197",
       "text": "P. S. Some advices I have received, and the opinion of some friends, have made me resolve to leave Paris for some time; but the place of my retreat, which is secret to every one, must not be so to you. If you do me the honour of an answer, I beg you will direct it to the commandery of —— by P.—and under cover, to M. the Commander of ——. It is from his house I have the honour to write to you."
     },
     {

@@ -205,13 +205,6 @@
       "prompt": "A word from this stretch."
     },
     {
-      "id": "s28",
-      "title": "Austria, Portugal, Metz, Japan,",
-      "place": "Austria, Portugal, Metz, Japan,",
-      "reentry": "Read the newspapers, if you can. Boom, boom, boom, and roll. Boom, boom.",
-      "prompt": "A word from this stretch."
-    },
-    {
       "id": "s29",
       "title": "The Seventeenth of August",
       "place": "The Seventeenth of August",
@@ -3949,37 +3942,37 @@
     },
     {
       "id": "s28-0",
-      "sceneId": "s28",
-      "text": "Read the newspapers, if you can. Boom, boom, boom, and roll. Boom, boom."
+      "sceneId": "s27",
+      "text": "Austria, Portugal, Metz, Japan, Read the newspapers, if you can. Boom, boom, boom, and roll. Boom, boom."
     },
     {
       "id": "s28-1",
-      "sceneId": "s28",
+      "sceneId": "s27",
       "text": "No gun be his but a sword of gold; Now a crown for a cap on his head behold! Austria, Portugal, Metz, Japan, Read the newspapers, if you can. Boom, boom, boom, and roll. Boom, boom."
     },
     {
       "id": "s28-2",
-      "sceneId": "s28",
+      "sceneId": "s27",
       "text": "Golden apples are his meat, No more of turnips shall he eat. Austria, Portugal, Metz, Japan, Read the newspapers, if you can. Boom, boom, boom, and roll. Boom, boom."
     },
     {
       "id": "s28-3",
-      "sceneId": "s28",
+      "sceneId": "s27",
       "text": "Court ladies clothed in bright array Bow as he passes on his way. Austria, Portugal, Metz, Japan, Read the newspapers, if you can. Boom, boom, boom, and roll. Boom, boom."
     },
     {
       "id": "s28-4",
-      "sceneId": "s28",
+      "sceneId": "s27",
       "text": "When he the forest proudly treads, All the tree-tops nod their heads. Austria, Portugal, Metz, Japan, Read the newspapers, if you can. Boom, boom, boom, and roll. Boom, boom."
     },
     {
       "id": "s28-5",
-      "sceneId": "s28",
+      "sceneId": "s27",
       "text": "It was just this \"boom, boom\" that had sounded best of all to him. With every boom he struck the ground hard with his stick and made his voice as deep and strong as he could. He sang the song over and over again, till the forest fairly rang with it."
     },
     {
       "id": "s28-6",
-      "sceneId": "s28",
+      "sceneId": "s27",
       "text": "But then the way in which it had been composed was so out of the common! And the fact that this was the first and only time in his life he had been able to catch and carry a tune was in itself a proof of its merit."
     },
     {
