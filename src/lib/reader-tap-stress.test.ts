@@ -5,6 +5,7 @@ import { dirname, join } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
+import { readableIds } from "./catalog/shelf.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const LOCAL_ORIGIN = !process.env.READER_ORIGIN;
@@ -48,9 +49,14 @@ function rng(seed: number) {
 }
 
 function catalogIds() {
-  return readdirSync(join(repoRoot, "src/lib/catalog/texts"))
-    .filter((name) => name.endsWith(".json"))
-    .map((name) => name.slice(0, -5))
+  const onDisk = new Set(
+    readdirSync(join(repoRoot, "src/lib/catalog/texts"))
+      .filter((name) => name.endsWith(".json"))
+      .map((name) => name.slice(0, -5)),
+  );
+  // A text file can outlive the shelf. The reader will not open those.
+  return readableIds()
+    .filter((id) => onDisk.has(id))
     .sort();
 }
 
