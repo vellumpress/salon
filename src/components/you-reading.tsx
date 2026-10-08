@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { FavoriteWorks } from "@/components/favorite-works";
 import { useKeptLines } from "@/components/kept-sentences";
 import { KeptSentences } from "@/components/kept-sentences";
+import { ScoreHourglass } from "@/components/score-hourglass";
 import { LaneStrip, YouActivity } from "@/components/you-stats";
 import {
   CONTRIBUTOR_IDS,
@@ -291,7 +292,7 @@ function Today({
     <>
       <section className="border-b border-ink bg-paper px-4 py-6 text-ink">
         <p className="type-kicker text-muted">{handle || "This sitting"}</p>
-        <ScoreRing model={model} hide={scoreHide} paused={paused} />
+        <ScoreHourglass model={model} hide={scoreHide} paused={paused} />
         {paused ? (
           <p className="type-pitch mx-auto mt-4 max-w-sm text-center text-ink/80">
             Scoring is paused. Baselines stay where they were, so coming back won’t look like a decline.
@@ -320,59 +321,6 @@ function Today({
       <LineOfDay progress={progress} hydrated={hydrated} />
     </>
   );
-}
-
-function ScoreRing({ model, hide, paused }: { model: ReadingModel; hide: boolean; paused: boolean }) {
-  const daily = model.daily;
-  const scored = daily.contributors.filter((part) => part.status === "scored" && part.value != null);
-  const weight = scored.reduce((sum, part) => sum + CONTRIBUTOR_WEIGHTS[part.id], 0);
-  const r = 46;
-  const c = 2 * Math.PI * r;
-  let offset = 0;
-  const showNumber = daily.kind === "reading" && !hide;
-  const center = paused && !showNumber ? "Paused" : showNumber ? String(daily.total) : daily.label;
-  return (
-    <figure className="relative mx-auto mt-4 h-52 w-52">
-      <svg viewBox="0 0 120 120" className="h-full w-full" role="img" aria-label={ringLabel(model, hide, paused)}>
-        <circle cx="60" cy="60" r={r} fill="none" stroke="var(--color-paper-deep)" strokeWidth="10" />
-        {daily.kind === "reading"
-          ? scored.map((part) => {
-              const frac = weight > 0 ? CONTRIBUTOR_WEIGHTS[part.id] / weight : 0;
-              const dash = Math.max(0, frac * c - 1.5);
-              const node = (
-                <circle
-                  key={part.id}
-                  cx="60"
-                  cy="60"
-                  r={r}
-                  fill="none"
-                  stroke={COLOR[part.id]}
-                  strokeWidth="10"
-                  strokeDasharray={`${dash} ${c - dash}`}
-                  strokeDashoffset={-offset}
-                  transform="rotate(-90 60 60)"
-                />
-              );
-              offset += frac * c;
-              return node;
-            })
-          : null}
-      </svg>
-      <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-8 text-center">
-        <span className="type-title tabular-nums text-ink">
-          {center}
-        </span>
-        {showNumber ? <span className="type-kicker mt-2 text-ink/70">{daily.label}</span> : null}
-      </div>
-    </figure>
-  );
-}
-
-function ringLabel(model: ReadingModel, hide: boolean, paused: boolean) {
-  if (paused) return "Scoring is paused";
-  if (model.daily.kind !== "reading") return model.daily.label;
-  if (hide) return model.daily.label;
-  return `Reading score ${model.daily.total}, ${model.daily.label}`;
 }
 
 function versusCopy(delta: number) {
