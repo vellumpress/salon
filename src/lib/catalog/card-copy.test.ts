@@ -12,6 +12,7 @@ import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import { curatorialTrack, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES } from "./rituals.ts";
 import { openingBreathIndex } from "../opening-scene.ts";
+import { POETRY_REBIND_IDS } from "./poetry-bind.ts";
 import type { Work } from "../literature.ts";
 
 /** Full local novels whose stub openings were deleted so Pages cannot strand readers. */
@@ -2012,7 +2013,10 @@ test("Tier B batches 5–6 are local format-min binds, never Featured", () => {
     } else {
       assert.equal(curatorialTrack(id), "later", id);
       assertNoStubOpening(id);
-      assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
+      // Re-bound poetry books carry real minutes (words/200); poetry-bind.test.ts pins them.
+      if (!(POETRY_REBIND_IDS as readonly string[]).includes(id)) {
+        assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
+      }
     }
     assert.equal(FEATURED_CAROUSEL_IDS.includes(id), false, id);
     const full = textWork(id);
@@ -2097,7 +2101,10 @@ test("Tier B batches 11–12 are local format-min binds, never Featured", () => 
       assert.equal(curatorialTrack(id), "later", id);
       assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), false, id);
       assertNoStubOpening(id);
-      assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
+      // Re-bound poetry books carry real minutes (words/200); poetry-bind.test.ts pins them.
+      if (!(POETRY_REBIND_IDS as readonly string[]).includes(id)) {
+        assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
+      }
     }
     const full = textWork(id);
     assert.equal(work!.breaths, full.breaths.length, id);
@@ -2174,7 +2181,10 @@ test("Tier B batches 9–10 are local format-min binds, never Featured", () => {
     assert.equal(work!.breaths, full.breaths.length, id);
     assert.ok(full.breaths.length > 1, id);
     assert.ok(opensOnFirstLine(full, work!.opening ?? "\u0000"), `${id} shelf opening`);
-    assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
+    // Re-bound poetry books carry real minutes (words/200); poetry-bind.test.ts pins them.
+    if (!(POETRY_REBIND_IDS as readonly string[]).includes(id)) {
+      assert.equal(work!.minutes === 80 || work!.minutes === 90 || work!.minutes === 160, true, id);
+    }
     assert.doesNotMatch(`${work!.intro ?? ""}\n${work!.opening ?? ""}`, /\bFeatured(?:-track)?\b|\bFEATURED\b/, id);
   }
 });

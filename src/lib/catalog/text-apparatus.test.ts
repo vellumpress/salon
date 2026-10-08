@@ -420,7 +420,9 @@ export const SCENE_TITLE_ALLOWLIST: Readonly<Record<string, string>> = {
  * Verse lines promoted to scene titles ("Sighing for Lebanon,") are a
  * rebind problem in the poetry binds below. Counts may only fall: a book not
  * listed must have none, and a listed count must match exactly so the
- * baseline is lowered when a book is rebound.
+ * baseline is lowered when a book is rebound. Frozen at 13,298 titles in 65
+ * books; the poetry re-bind pack cleared 20 books (1,123 titles), leaving
+ * 12,175 in 45.
  */
 export const VERSE_LINE_TITLE_BASELINE: Readonly<Record<string, number>> = {
   "a-diversity-of-creatures": 2,
@@ -430,11 +432,7 @@ export const VERSE_LINE_TITLE_BASELINE: Readonly<Record<string, number>> = {
   "birds-beasts-and-flowers": 310,
   "bruges-la-morte": 1,
   "bunner-sisters": 1,
-  "cathay": 49,
-  "charmides-and-other-poems": 34,
   "country-sentiment": 166,
-  "das-stunden-buch": 137,
-  "dauber": 1,
   "domesday-book": 931,
   "don-juan": 1692,
   "hajji-baba": 5,
@@ -443,26 +441,17 @@ export const VERSE_LINE_TITLE_BASELINE: Readonly<Record<string, number>> = {
   "in-a-glass-darkly": 1,
   "in-the-seven-woods": 69,
   "kalevala": 4886,
-  "lamia": 79,
   "les-civilises": 1,
   "liaisons": 4,
   "misericordia": 1,
-  "motley-and-other-poems": 100,
   "nights": 1,
-  "peacock-pie": 38,
   "pictures-of-the-floating-world": 2,
-  "poems-of-passion": 190,
-  "prosas-profanas": 21,
   "reincarnations": 65,
   "revolt-of-the-angels": 1,
-  "rhymes-of-a-red-cross-man": 4,
-  "salt-water-ballads": 64,
   "silhouettes": 2,
   "six-characters": 1,
-  "songs-and-satires": 26,
   "spectra-a-book-of-poetic-experiments": 77,
   "stray-birds": 1,
-  "the-ballad-of-the-white-horse": 60,
   "the-defence-of-guenevere-and-other-poems": 533,
   "the-emperor-of-portugallia": 1,
   "the-flowers-of-evil": 172,
@@ -476,17 +465,10 @@ export const VERSE_LINE_TITLE_BASELINE: Readonly<Record<string, number>> = {
   "the-persian-mystics-jalalu-d-din-rumi": 60,
   "the-poems-of-giacomo-leopardi": 593,
   "the-poetic-edda": 327,
-  "the-rime-of-the-ancient-mariner": 71,
   "the-spell-of-the-yukon-and-other-verses": 89,
-  "the-three-taverns": 32,
-  "the-town-down-the-river": 32,
-  "the-veil-and-other-poems": 23,
-  "the-waste-land": 19,
   "three-plays-incl-henry-iv": 1,
-  "tortoises": 74,
   "tristana": 2,
   "venus-in-furs": 1,
-  "war-is-kind": 69,
   "white-jacket": 2,
 };
 

@@ -4,1310 +4,267 @@
   "author": "Stephen Crane",
   "year": "1899",
   "note": "Project Gutenberg 9870",
-  "minutes": 90,
+  "minutes": 17,
   "cover": "",
   "coverAlt": "",
   "scenes": [
     {
       "id": "s0",
-      "title": "Swift blazing flag of the regiment,",
-      "place": "Swift blazing flag of the regiment,",
-      "reentry": "Eagle with crest of red and gold, These men were born to drill and die.",
+      "title": "Do not weep, maiden, for war is kind",
+      "place": "Do not weep, maiden, for war is kind",
+      "reentry": "Do not weep, maiden, for war is kind. / Because your lover threw wild hands toward the sky / And the affrighted steed ran on alone, / Do not weep. / War is kind. / Hoarse, booming drums of the regiment, / Little souls who thirst for fight, / These men were born to drill and die. / The unexplained glory files above them, / Great is the battle-god, great, and his kingdom-- / A field where a thousand corpses lie. / Do not weep, babe, for war is kind. / Because your father tumbled in the yellow trenches, / Raged at his breast, gulped and died, / Do not weep. / War is kind. / Swift blazing flag of the regiment, / Eagle with crest of red and gold, / These men were born to drill and die. / Point for them the virtue of the slaughter, / Make plain to them the excellence of killing / And a field where a thousand corpses lie. / Mother whose heart hung humble as a button / On the bright splendid shroud of your son, / Do not weep. / War is kind.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s1",
-      "title": "Point for them the virtue of the slaughter,",
-      "place": "Point for them the virtue of the slaughter,",
-      "reentry": "Make plain to them the excellence of killing And a field where a thousand corpses lie.",
+      "title": "What says the sea, little shell",
+      "place": "What says the sea, little shell",
+      "reentry": "What says the sea, little shell? / \"What says the sea? / \"Long has our brother been silent to us, / \"Kept his message for the ships, / \"Awkward ships, stupid ships.\" / \"The sea bids you mourn, O Pines, / \"Sing low in the moonlight. / \"He sends tale of the land of doom, / \"Of place where endless falls / \"A rain of women's tears, / \"And men in grey robes-- / \"Men in grey robes-- / \"Chant the unknown pain.\" / \"What says the sea, little shell? / \"What says the sea? / \"Long has our brother been silent to us, / \"Kept is message for the ships, / \"Puny ships, silly ships.\" / \"The sea bids you teach, O Pines, / \"Sing low in the moonlight; / \"Teach the gold of patience, / \"Cry gospel of gentle hands, / \"Cry a brotherhood of hearts. / \"The sea bids you teach, O Pines.\" / \"And where is the reward, little shell? / \"What says the sea? / \"Long has our brother been silent to us, / \"Kept his message for the ships, / \"Puny ships, silly ships.\" / \"No word says the sea, O Pines, / \"No word says the sea. / \"Long will your brother be silent to you, / \"Keep his message for the ships, / \"O puny ships, silly pines.\"",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s2",
-      "title": "Mother whose heart hung humble as a button",
-      "place": "Mother whose heart hung humble as a button",
-      "reentry": "On the bright splendid shroud of your son, Do not weep.",
+      "title": "To the maiden",
+      "place": "To the maiden",
+      "reentry": "To the maiden / The sea was blue meadow, / Alive with little froth-people / Singing. / To the sailor, wrecked, / The sea was dead grey walls / Superlative in vacancy, / Upon which nevertheless at fateful time / Was written / The grim hatred of nature.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s3",
-      "title": "What says the sea, little shell?",
-      "place": "What says the sea, little shell?",
-      "reentry": "\"What says the sea? \"Long has our brother been silent to us, \"Kept his message for the ships, \"Awkward ships, stupid ships.\"",
+      "title": "A little ink more or less",
+      "place": "A little ink more or less",
+      "reentry": "A little ink more or less! / It surely can't matter? / Even the sky and the opulent sea, / The plains and the hills, aloof, / Hear the uproar of all these books. / But it is only a little ink more or less. / What? / You define me God with these trinkets? / Can my misery meal on an ordered walking / Of surpliced numskulls? / And a fanfare of lights? / Or even upon the measured pulpitings / Of the familiar false and true? / Is this God? / Where, then is hell? / Show me some bastard mushrooms / Sprung from a pollution of blood. / It is better. / Where is God?",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s4",
-      "title": "To the maiden",
-      "place": "To the maiden",
-      "reentry": "The sea was blue meadow, Alive with little froth-people Singing.",
+      "title": "Have you ever made a just man",
+      "place": "Have you ever made a just man",
+      "reentry": "\"Have you ever made a just man?\" / \"Oh, I have made three,\" answered / God, / \"But two of them are dead, / \"And the third-- / \"Listen! Listen! / \"And you will hear the thud of his defeat.\"",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s5",
-      "title": "To the sailor, wrecked,",
-      "place": "To the sailor, wrecked,",
-      "reentry": "The sea was dead grey walls Superlative in vacancy,",
+      "title": "I explain the silvered passing of a ship at night",
+      "place": "I explain the silvered passing of a ship at night",
+      "reentry": "I explain the silvered passing of a ship at night, / The sweep of each sad lost wave, / The dwindling boom of the steel thing's striving, / The little cry of a man to a man, / A shadow falling across the greyer night, / And the sinking of the small star; / Then the waste, the far waste of waters, / And the soft lashing of black waves / For long and in loneliness. / Remember, thou, O ship of love, / Thou leavest a far waste of waters, / And the soft lashing of black waves / For long and in loneliness.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s6",
-      "title": "Upon which nevertheless at fateful time",
-      "place": "Upon which nevertheless at fateful time",
-      "reentry": "Was written The grim hatred of nature.",
+      "title": "I have heard the sunset song of the birches",
+      "place": "I have heard the sunset song of the birches",
+      "reentry": "\"I have heard the sunset song of the birches, / \"A white melody in the silence, / \"I have seen a quarrel of the pines. / \"At nightfall / \"The little grasses have rushed by me / \"With the wind men. / \"These things have I lived,\" quoth the maniac, / \"Possessing only eyes and ears. / \"But you-- / \"You don green spectacles before you look at roses.\"",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s7",
-      "title": "A little ink more or less!",
-      "place": "A little ink more or less!",
-      "reentry": "It surely can't matter? Even the sky and the opulent sea,",
+      "title": "Fast rode the knight",
+      "place": "Fast rode the knight",
+      "reentry": "Fast rode the knight / With spurs, hot and reeking, / Ever waving an eager sword, / \"To save my lady!\" / Fast rode the knight, / And leaped from saddle to war. / Men of steel flickered and gleamed / Like riot of silver lights, / And the gold of the knight's good banner / Still waved on a castle wall. / . . . . . . . / A horse, / Blowing, staggering, bloody thing, / Forgotten at foot of castle wall. / A horse / Dead at foot of castle wall.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s8",
-      "title": "The plains and the hills, aloof,",
-      "place": "The plains and the hills, aloof,",
-      "reentry": "Hear the uproar of all these books. But it is only a little ink more or less.",
+      "title": "Forth went the candid man",
+      "place": "Forth went the candid man",
+      "reentry": "Forth went the candid man / And spoke freely to the wind-- / When he looked about him he was in a far strange country. / Forth went the candid man / And spoke freely to the stars-- / Yellow light tore sight from his eye. / \"My good fool,\" said a learned bystander, / \"Your operations are mad.\" / \"You are too candid,\" cried the candid man. / And when his stick left the head of the learned bystander / It was two sticks.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s9",
-      "title": "You define me God with these trinkets?",
-      "place": "You define me God with these trinkets?",
-      "reentry": "Can my misery meal on an ordered walking Of surpliced numskulls?",
+      "title": "You tell me this is God",
+      "place": "You tell me this is God",
+      "reentry": "You tell me this is God? / I tell you this is a printed list, / A burning candle and an ass.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s10",
-      "title": "And a fanfare of lights?",
-      "place": "And a fanfare of lights?",
-      "reentry": "Or even upon the measured pulpitings Of the familiar false and true?",
+      "title": "On the desert",
+      "place": "On the desert",
+      "reentry": "On the desert / A silence from the moon's deepest valley. / Fire rays fall athwart the robes / Of hooded men, squat and dumb. / Before them, a woman / Moves to the blowing of shrill whistles / And distant thunder of drums, / While mystic things, sinuous, dull with terrible color, / Sleepily fondle her body / Or move at her will, swishing stealthily over the sand. / The snakes whisper softly; / The whispering, whispering snakes, / Dreaming and swaying and staring, / But always whispering, softly whispering. / The wind streams from the lone reaches / Of Arabia, solemn with night, / And the wild fire makes shimmer of blood / Over the robes of the hooded men / Squat and dumb. / Bands of moving bronze, emerald, yellow, / Circle the throat and arms of her, / And over the sands serpents move warily / Slow, menacing and submissive, / Swinging to the whistles and drums, / The whispering, whispering snakes, / Dreaming and swaying and staring, / But always whispering, softly whispering. / The dignity of the accursed; / The glory of slavery, despair, death, / Is in the dance of the whispering snakes.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s11",
-      "title": "Is this God?",
-      "place": "Is this God?",
-      "reentry": "Where, then is hell? Show me some bastard mushrooms",
+      "title": "A newspaper is a collection of half-injustices",
+      "place": "A newspaper is a collection of half-injustices",
+      "reentry": "A newspaper is a collection of half-injustices / Which, bawled by boys from mile to mile, / Spreads its curious opinion / To a million merciful and sneering men, / While families cuddle the joys of the fireside / When spurred by tale of dire lone agony. / A newspaper is a court / Where every one is kindly and unfairly tried / By a squalor of honest men. / A newspaper is a market / Where wisdom sells its freedom / And melons are crowned by the crowd. / A newspaper is a game / Where his error scores the player victory / While another's skill wins death. / A newspaper is a symbol; / It is fetless life's chronical, / A collection of loud tales / Concentrating eternal stupidities, / That in remote ages lived unhaltered, / Roaming through a fenceless world.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s12",
-      "title": "Sprung from a pollution of blood",
-      "place": "Sprung from a pollution of blood",
-      "reentry": "It is better.",
+      "title": "The wayfarer",
+      "place": "The wayfarer",
+      "reentry": "The wayfarer, / Perceiving the pathway to truth, / Was struck with astonishment. / It was thickly grown with weeds. / \"Ha,\" he said, / \"I see that none has passed here / \"In a long time.\" / Later he saw that each weed / Was a singular knife. / \"Well,\" he mumbled at last, / \"Doubtless there are other roads.\"",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s13",
-      "title": "Where is God?",
-      "place": "Where is God?",
-      "reentry": "\"Have you ever made a just man?\" \"Oh, I have made three,\" answered God, \"But two of them are dead, \"And the third-- \"Listen! Listen! \"And you will hear the thud of his defeat.\"",
+      "title": "A slant of sun on dull brown walls",
+      "place": "A slant of sun on dull brown walls",
+      "reentry": "A slant of sun on dull brown walls, / A forgotten sky of bashful blue. / Toward God a mighty hymn, / A song of collisions and cries, / Rumbling wheels, hoof-beats, bells, / Welcomes, farewells, love-calls, final moans, / Voices of joy, idiocy, warning, despair, / The unknown appeals of brutes, / The chanting of flowers, / The screams of cut trees, / The senseless babble of hens and wise men-- / A cluttered incoherency that says at the stars; / \"O God, save us!\"",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s14",
-      "title": "I explain the silvered passing of a ship",
-      "place": "I explain the silvered passing of a ship",
-      "reentry": "at night, The sweep of each sad lost wave,",
+      "title": "Once a man clambering to the housetops",
+      "place": "Once a man clambering to the housetops",
+      "reentry": "Once a man clambering to the housetops / Appealed to the heavens. / With a strong voice he called to the deaf spheres; / A warrior's shout he raised to the suns. / Lo, at last, there was a dot on the clouds, / And--at last and at last-- / --God--the sky was filled with armies.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s15",
-      "title": "The dwindling boom of the steel thing's striving,",
-      "place": "The dwindling boom of the steel thing's striving,",
-      "reentry": "The little cry of a man to a man, A shadow falling across the greyer night,",
+      "title": "There was a man with tongue of wood",
+      "place": "There was a man with tongue of wood",
+      "reentry": "There was a man with tongue of wood / Who essayed to sing, / And in truth it was lamentable. / But there was one who heard / The clip-clapper of this tongue of wood / And knew what the man / Wished to sing, / And with that the singer was content.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s16",
-      "title": "And the sinking of the small star;",
-      "place": "And the sinking of the small star;",
-      "reentry": "Then the waste, the far waste of waters,",
+      "title": "The successful man has thrust himself",
+      "place": "The successful man has thrust himself",
+      "reentry": "The successful man has thrust himself / Through the water of the years, / Reeking wet with mistakes,-- / Bloody mistakes; / Slimed with victories over the lesser, / A figure thankful on the shore of money. / Then, with the bones of fools / He buys silken banners / Limned with his triumphant face; / With the skins of wise men / He buys the trivial bows of all. / Flesh painted with marrow / Contributes a coverlet, / A coverlet for his contented slumber. / In guiltless ignorance, in ignorant guilt, / He delivered his secrets to the riven multitude. / \"Thus I defended: Thus I wrought.\" / Complacent, smiling, / He stands heavily on the dead. / Erect on a pillar of skulls / He declaims his trampling of babes; / Smirking, fat, dripping, / He makes speech in guiltless ignorance, / Innocence.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s17",
-      "title": "And the soft lashing of black waves",
-      "place": "And the soft lashing of black waves",
-      "reentry": "For long and in loneliness.",
+      "title": "In the night",
+      "place": "In the night",
+      "reentry": "In the night / Grey heavy clouds muffled the valleys, / And the peaks looked toward God alone. / \"O Master that movest the wind with a / finger, / \"Humble, idle, futile peaks are we. / \"Grant that we may run swiftly across the world / \"To huddle in worship at Thy feet.\" / In the morning / A noise of men at work came the clear blue miles, / And the little black cities were apparent. / \"O Master that knowest the meaning of raindrops, / \"Humble, idle, futile peaks are we. / \"Give voice to us, we pray, O Lord, / \"That we may sing Thy goodness to the sun.\" / In the evening / The far valleys were sprinkled with tiny lights. / \"O Master, / \"Thou that knowest the value of kings and birds, / \"Thou hast made us humble, idle, futile peaks. / \"Thous only needest eternal patience; / \"We bow to Thy wisdom, O Lord-- / \"Humble, idle, futile peaks.\" / In the night / Grey heavy clouds muffles the valleys, / And the peaks looked toward God alone.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s18",
-      "title": "Remember, thou, O ship of love,",
-      "place": "Remember, thou, O ship of love,",
-      "reentry": "Thou leavest a far waste of waters, And the soft lashing of black waves",
+      "title": "The chatter of a death-demon from a tree-top",
+      "place": "The chatter of a death-demon from a tree-top",
+      "reentry": "The chatter of a death-demon from a tree-top. / Blood--blood and torn grass-- / Had marked the rise of his agony-- / This lone hunter. / The grey-green woods impassive / Had watched the threshing of his limbs. / A canoe with flashing paddle, / A girl with soft searching eyes, / A call: \"John!\" / . . . . . . . / Come, arise, hunter! / Can you not hear? / The chatter of a death-demon from a tree- top.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s19",
-      "title": "For long and in loneliness",
-      "place": "For long and in loneliness",
-      "reentry": "\"I have heard the sunset song of the birches, \"A white melody in the silence, \"I have seen a quarrel of the pines. \"At nightfall \"The little grasses have rushed by me \"With the wind men. \"These things have I lived,\" quoth the maniac, \"Posse",
+      "title": "The impact of a dollar upon the heart",
+      "place": "The impact of a dollar upon the heart",
+      "reentry": "The impact of a dollar upon the heart / Smiles warm red light, / Sweeping from the hearth rosily upon the white table, / With the hanging cool velvet shadows / Moving softly upon the door. / The impact of a million dollars / Is a crash of flunkys, / And yawning emblems of Persia / Cheeked against oak, France and a sabre, / The outcry of old beauty / Whored by pimping merchants / To submission before wine and chatter. / Silly rich peasants stamp the carpets of men, / Dead men who dreamed fragrance and light / Into their woof, their lives; / The rug of an honest bear / Under the feet of a cryptic slave / Who speaks always of baubles, / Forgetting state, multitude, work, and state, / Champing and mouthing of hats, / Making ratful squeak of hats, / Hats.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s20",
-      "title": "Fast rode the knight",
-      "place": "Fast rode the knight",
-      "reentry": "With spurs, hot and reeking, Ever waving an eager sword, \"To save my lady!\"",
+      "title": "A man said to the universe",
+      "place": "A man said to the universe",
+      "reentry": "A man said to the universe: / \"Sir, I exist!\" / \"However,\" replied the universe, / \"The fact has not created in me / \"A sense of obligation.\"",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s21",
-      "title": "Fast rode the knight,",
-      "place": "Fast rode the knight,",
-      "reentry": "And leaped from saddle to war. Men of steel flickered and gleamed",
+      "title": "When the prophet, a complacent fat man",
+      "place": "When the prophet, a complacent fat man",
+      "reentry": "When the prophet, a complacent fat man, / Arrived at the mountain-top, / He cried: \"Woe to my knowledge! / \"I intended to see good white lands / \"And bad black lands, / \"But the scene is grey.\"",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s22",
-      "title": "Like riot of silver lights,",
-      "place": "Like riot of silver lights,",
-      "reentry": "And the gold of the knight's good banner Still waved on a castle wall. . . . . . . .",
+      "title": "There was a land where lived no",
+      "place": "There was a land where lived no",
+      "reentry": "There was a land where lived no / violets. / A traveller at once demanded: \"Why?\" / The people told him: / \"Once the violets of this place spoke thus: / \"'Until some woman freely give her lover / \"'To another woman / \"'We will fight in bloody scuffle.'\" / Sadly the people added: / \"There are no violets here.\"",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s23",
-      "title": "A horse,",
-      "place": "A horse,",
-      "reentry": "Blowing, staggering, bloody thing, Forgotten at foot of castle wall.",
+      "title": "There was one I met upon the road",
+      "place": "There was one I met upon the road",
+      "reentry": "There was one I met upon the road / Who looked at me with kind eyes. / He said: \"Show me of your wares.\" / And I did, / Holding forth one, / He said: \"It is a sin.\" / Then I held forth another. / He said: \"It is a sin.\" / Then I held forth another. / He said: \"It is a sin.\" / And so to the end. / Always He said: \"It is a sin.\" / At last, I cried out: / \"But I have non other.\" / He looked at me / With kinder eyes. / \"Poor soul,\" he said.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s24",
-      "title": "A horse",
-      "place": "A horse",
-      "reentry": "Dead at foot of castle wall.",
+      "title": "Aye, workman, make me a dream",
+      "place": "Aye, workman, make me a dream",
+      "reentry": "Aye, workman, make me a dream, / A dream for my love. / Cunningly weave sunlight, / Breezes, and flowers. / Let it be of the cloth of meadows. / And--good workman-- / And let there be a man walking thereon.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s25",
-      "title": "Forth went the candid man",
-      "place": "Forth went the candid man",
-      "reentry": "And spoke freely to the wind-- When he looked about him he was in a far strange country.",
+      "title": "Each small gleam was a voice",
+      "place": "Each small gleam was a voice",
+      "reentry": "Each small gleam was a voice, / A lantern voice-- / In little songs of carmine, violet, green, gold. / A chorus of colors came over the water; / The wondrous leaf-shadow no longer wavered, / No pines crooned on the hills, / The blue night was elsewhere a silence, / When the chorus of colors came over the water, / Little songs of carmine, violet, green, gold. / Small glowing pebbles / Thrown on the dark plane of evening / Sing good ballads of God / And eternity, with soul's rest. / Little priests, little holy fathers, / None can doubt the truth of hour hymning. / When the marvellous chorus comes over the water, / Songs of carmine, violet, green, gold.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s26",
-      "title": "Forth went the candid man",
-      "place": "Forth went the candid man",
-      "reentry": "And spoke freely to the stars-- Yellow light tore sight from his eye.",
+      "title": "The trees in the garden rained flowers",
+      "place": "The trees in the garden rained flowers",
+      "reentry": "The trees in the garden rained flowers. / Children ran there joyously. / They gathered the flowers / Each to himself. / Now there were some / Who gathered great heaps-- / Having opportunity and skill-- / Until, behold, only chance blossoms / Remained for the feeble. / Then a little spindling tutor / Ran importantly to the father, crying: / \"Pray, come hither! / \"See this unjust thing in your garden!\" / But when the father had surveyed, / He admonished the tutor: / \"Not so, small sage! / \"This thing is just. / \"For, look you, / \"Are not they who possess the flowers / \"Stronger, bolder, shrewder / \"Than they who have none? / \"Why should the strong-- / \"The beautiful strong-- / \"Why should they not have the flowers? / Upon reflection, the tutor bowed to the ground. / \"My lord,\" he said, / \"The stars are displaced / \"By this towering wisdom.\"",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s27",
-      "title": "And when his stick left the head of the",
-      "place": "And when his stick left the head of the",
-      "reentry": "learned bystander It was two sticks.",
+      "title": "Thou art my love",
+      "place": "Thou art my love",
+      "reentry": "Intrigue",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s28",
-      "title": "You tell me this is God?",
-      "place": "You tell me this is God?",
-      "reentry": "I tell you this is a printed list, A burning candle and an ass.",
+      "title": "Love, forgive me if I wish you grief",
+      "place": "Love, forgive me if I wish you grief",
+      "reentry": "Love, forgive me if I wish you grief, / For in your grief / You huddle to my breast, / And for it / Would I pay the price of your grief. / You walk among men / And all men do not surrender, / And thus I understand / That love reaches his hand / In mercy to me. / He had your picture in his room, / A scurvy traitor picture, / And he smiled / --Merely a fat complacence of men who know fine women-- / And thus I divided with him / A part of my love. / Fool, not to know that thy little shoe / Can make men weep! / --Some men weep. / I weep and I gnash, / And I love the little shoe, / The little, little shoe. / God give me medals, / God give me loud honors, / That I may strut before you, sweetheart, / And be worthy of-- / The love I bear you. / Now let me crunch you / With full weight of affrighted love. / I doubted you / --I doubted you-- / And in this short doubting / My love grew like a genie / For my further undoing. / Beware of my friends, / Be not in speech too civil, / For in all courtesy / My weak heart sees spectres, / Mists of desire / Arising from the lips of my chosen; / Be not civil. / The flower I gave thee once / Was incident to a stride, / A detail of a gesture, / But search those pale petals / And see engraven thereon / A record of my intention.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s29",
-      "title": "On the desert",
-      "place": "On the desert",
-      "reentry": "A silence from the moon's deepest valley.",
+      "title": "Ah, God, the way your little finger moved",
+      "place": "Ah, God, the way your little finger moved",
+      "reentry": "Ah, God, the way your little finger moved, / As you thrust a bare arm backward / And made play with your hair / And a comb, a silly gilt comb / --Ah, God--that I should suffer / Because of the way a little finger moved.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s30",
-      "title": "Fire rays fall athwart the robes",
-      "place": "Fire rays fall athwart the robes",
-      "reentry": "Of hooded men, squat and dumb. Before them, a woman",
+      "title": "Once I saw thee idly rocking",
+      "place": "Once I saw thee idly rocking",
+      "reentry": "Once I saw thee idly rocking / --Idly rocking-- / And chattering girlishly to other girls, / Bell-voiced, happy, / Careless with the stout heart of unscarred womanhood, / And life to thee was all light melody. / I thought of the great storms of love as I knew it, / Torn, miserable, and ashamed of my open sorrow, / I thought of the thunders that lived in my head, / And I wish to be an ogre, / And hale and haul my beloved to a castle, / And make her mourn with my mourning.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s31",
-      "title": "Moves to the blowing of shrill whistles",
-      "place": "Moves to the blowing of shrill whistles",
-      "reentry": "And distant thunder of drums, While mystic things, sinuous, dull with terrible color,",
+      "title": "Tell me why, behind thee",
+      "place": "Tell me why, behind thee",
+      "reentry": "Tell me why, behind thee, / I see always the shadow of another lover? / Is it real, / Or is this the thrice damned memory of a better happiness? / Plague on him if he be dead, / Plague on him if he be alive-- / A swinish numskull / To intrude his shade / Always between me and my peace!",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s32",
-      "title": "Sleepily fondle her body",
-      "place": "Sleepily fondle her body",
-      "reentry": "Or move at her will, swishing stealthily over the sand.",
+      "title": "And yet I have seen thee happy with me",
+      "place": "And yet I have seen thee happy with me",
+      "reentry": "And yet I have seen thee happy with me. / I am no fool / To poll stupidly into iron. / I have heard your quick breaths / And seen your arms writhe toward me; / At those times / --God help us-- / I was impelled to be a grand knight, / And swagger and snap my fingers, / And explain my mind finely. / Oh, lost sweetheart, / I would that I had not been a grand knight. / I said: \"Sweetheart.\" / Thou said'st: \"Sweetheart.\" / And we preserved an admirable mimicry / Without heeding the drip of the blood / From my heart.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s33",
-      "title": "The snakes whisper softly;",
-      "place": "The snakes whisper softly;",
-      "reentry": "The whispering, whispering snakes, Dreaming and swaying and staring,",
+      "title": "I heard thee laugh",
+      "place": "I heard thee laugh",
+      "reentry": "I heard thee laugh, / And in this merriment / I defined the measure of my pain; / I knew that I was alone, / Alone with love, / Poor shivering love, / And he, little sprite, / Came to watch with me, / And at midnight, / We were like two creatures by a dead camp-fire.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s34",
-      "title": "But always whispering, softly whispering",
-      "place": "But always whispering, softly whispering",
-      "reentry": "The wind streams from the lone reaches Of Arabia, solemn with night,",
+      "title": "I wonder if sometimes in the dusk",
+      "place": "I wonder if sometimes in the dusk",
+      "reentry": "I wonder if sometimes in the dusk, / When the brave lights that gild thy evenings / Have not yet been touched with flame, / I wonder if sometimes in the dusk / Thou rememberest a time, / A time when thou loved me / And our love was to thee thy all? / Is the memory rubbish now? / An old gown / Worn in an age of other fashions? / Woe is me, oh, lost one, / For that love is now to me / A supernal dream, / White, white, white with many suns.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s35",
-      "title": "And the wild fire makes shimmer of blood",
-      "place": "And the wild fire makes shimmer of blood",
-      "reentry": "Over the robes of the hooded men Squat and dumb.",
+      "title": "Love met me at noonday",
+      "place": "Love met me at noonday",
+      "reentry": "Love met me at noonday, / --Reckless imp, / To leave his shaded nights / And brave the glare,-- / And I saw him then plainly / For a bungler, / A stupid, simpering, eyeless bungler, / Breaking the hearts of brave people / As the snivelling idiot-boy cracks his bowl, / And I cursed him, / Cursed him to and fro, back and forth, / Into all the silly mazes of his mind, / But in the end / He laughed and pointed to my breast, / Where a heart still beat for thee, beloved.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s36",
-      "title": "Bands of moving bronze, emerald, yellow,",
-      "place": "Bands of moving bronze, emerald, yellow,",
-      "reentry": "Circle the throat and arms of her, And over the sands serpents move warily",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s37",
-      "title": "Slow, menacing and submissive,",
-      "place": "Slow, menacing and submissive,",
-      "reentry": "Swinging to the whistles and drums, The whispering, whispering snakes,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s38",
-      "title": "Dreaming and swaying and staring,",
-      "place": "Dreaming and swaying and staring,",
-      "reentry": "But always whispering, softly whispering. The dignity of the accursed;",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s39",
-      "title": "The glory of slavery, despair, death,",
-      "place": "The glory of slavery, despair, death,",
-      "reentry": "Is in the dance of the whispering snakes.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s40",
-      "title": "A newspaper is a collection of half-injustices",
-      "place": "A newspaper is a collection of half-injustices",
-      "reentry": "Which, bawled by boys from mile to mile, Spreads its curious opinion",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s41",
-      "title": "To a million merciful and sneering men,",
-      "place": "To a million merciful and sneering men,",
-      "reentry": "While families cuddle the joys of the fireside When spurred by tale of dire lone agony.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s42",
-      "title": "A newspaper is a court",
-      "place": "A newspaper is a court",
-      "reentry": "Where every one is kindly and unfairly tried By a squalor of honest men.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s43",
-      "title": "A newspaper is a market",
-      "place": "A newspaper is a market",
-      "reentry": "Where wisdom sells its freedom And melons are crowned by the crowd.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s44",
-      "title": "A newspaper is a game",
-      "place": "A newspaper is a game",
-      "reentry": "Where his error scores the player victory While another's skill wins death.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s45",
-      "title": "A newspaper is a symbol;",
-      "place": "A newspaper is a symbol;",
-      "reentry": "It is fetless life's chronical, A collection of loud tales",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s46",
-      "title": "Concentrating eternal stupidities,",
-      "place": "Concentrating eternal stupidities,",
-      "reentry": "That in remote ages lived unhaltered, Roaming through a fenceless world.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s47",
-      "title": "The wayfarer,",
-      "place": "The wayfarer,",
-      "reentry": "Perceiving the pathway to truth, Was struck with astonishment.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s48",
-      "title": "It was thickly grown with weeds",
-      "place": "It was thickly grown with weeds",
-      "reentry": "\"Ha,\" he said, \"I see that none has passed here \"In a long time.\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s49",
-      "title": "Later he saw that each weed",
-      "place": "Later he saw that each weed",
-      "reentry": "Was a singular knife. \"Well,\" he mumbled at last, \"Doubtless there are other roads.\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s50",
-      "title": "A slant of sun on dull brown walls,",
-      "place": "A slant of sun on dull brown walls,",
-      "reentry": "A forgotten sky of bashful blue.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s51",
-      "title": "Toward God a mighty hymn,",
-      "place": "Toward God a mighty hymn,",
-      "reentry": "A song of collisions and cries, Rumbling wheels, hoof-beats, bells,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s52",
-      "title": "Welcomes, farewells, love-calls, final moans,",
-      "place": "Welcomes, farewells, love-calls, final moans,",
-      "reentry": "Voices of joy, idiocy, warning, despair, The unknown appeals of brutes,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s53",
-      "title": "The chanting of flowers,",
-      "place": "The chanting of flowers,",
-      "reentry": "The screams of cut trees, The senseless babble of hens and wise men--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s54",
-      "title": "A cluttered incoherency that says at the",
-      "place": "A cluttered incoherency that says at the",
-      "reentry": "stars; \"O God, save us!\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s55",
-      "title": "Once a man clambering to the housetops",
-      "place": "Once a man clambering to the housetops",
-      "reentry": "Appealed to the heavens. With a strong voice he called to the deaf spheres;",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s56",
-      "title": "A warrior's shout he raised to the suns",
-      "place": "A warrior's shout he raised to the suns",
-      "reentry": "Lo, at last, there was a dot on the clouds, And--at last and at last-- --God--the sky was filled with armies.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s57",
-      "title": "There was a man with tongue of wood",
-      "place": "There was a man with tongue of wood",
-      "reentry": "Who essayed to sing, And in truth it was lamentable.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s58",
-      "title": "But there was one who heard",
-      "place": "But there was one who heard",
-      "reentry": "The clip-clapper of this tongue of wood And knew what the man",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s59",
-      "title": "Wished to sing,",
-      "place": "Wished to sing,",
-      "reentry": "And with that the singer was content.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s60",
-      "title": "The successful man has thrust himself",
-      "place": "The successful man has thrust himself",
-      "reentry": "Through the water of the years, Reeking wet with mistakes,--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s61",
-      "title": "Bloody mistakes;",
-      "place": "Bloody mistakes;",
-      "reentry": "Slimed with victories over the lesser, A figure thankful on the shore of money.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s62",
-      "title": "Then, with the bones of fools",
-      "place": "Then, with the bones of fools",
-      "reentry": "He buys silken banners Limned with his triumphant face;",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s63",
-      "title": "With the skins of wise men",
-      "place": "With the skins of wise men",
-      "reentry": "He buys the trivial bows of all. Flesh painted with marrow",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s64",
-      "title": "Contributes a coverlet,",
-      "place": "Contributes a coverlet,",
-      "reentry": "A coverlet for his contented slumber. In guiltless ignorance, in ignorant guilt,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s65",
-      "title": "He delivered his secrets to the riven multitude",
-      "place": "He delivered his secrets to the riven multitude",
-      "reentry": "\"Thus I defended: Thus I wrought.\" Complacent, smiling,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s66",
-      "title": "He stands heavily on the dead",
-      "place": "He stands heavily on the dead",
-      "reentry": "Erect on a pillar of skulls He declaims his trampling of babes;",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s67",
-      "title": "Smirking, fat, dripping,",
-      "place": "Smirking, fat, dripping,",
-      "reentry": "He makes speech in guiltless ignorance, Innocence.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s68",
-      "title": "In the night",
-      "place": "In the night",
-      "reentry": "Grey heavy clouds muffled the valleys, And the peaks looked toward God alone. \"O Master that movest the wind with a finger, \"Humble, idle, futile peaks are we. \"Grant that we may run swiftly across the world \"To huddle in worship at Thy fee",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s69",
-      "title": "In the morning",
-      "place": "In the morning",
-      "reentry": "A noise of men at work came the clear blue miles, And the little black cities were apparent. \"O Master that knowest the meaning of raindrops, \"Humble, idle, futile peaks are we. \"Give voice to us, we pray, O Lord, \"That we may sing Thy good",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s70",
-      "title": "In the evening",
-      "place": "In the evening",
-      "reentry": "The far valleys were sprinkled with tiny lights. \"O Master, \"Thou that knowest the value of kings and birds, \"Thou hast made us humble, idle, futile peaks. \"Thous only needest eternal patience; \"We bow to Thy wisdom, O Lord-- \"Humble, idle,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s71",
-      "title": "In the night",
-      "place": "In the night",
-      "reentry": "Grey heavy clouds muffles the valleys, And the peaks looked toward God alone.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s72",
-      "title": "The chatter of a death-demon from a tree-top",
-      "place": "The chatter of a death-demon from a tree-top",
-      "reentry": "Blood--blood and torn grass--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s73",
-      "title": "Had marked the rise of his agony--",
-      "place": "Had marked the rise of his agony--",
-      "reentry": "This lone hunter. The grey-green woods impassive",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s74",
-      "title": "Had watched the threshing of his limbs",
-      "place": "Had watched the threshing of his limbs",
-      "reentry": "A canoe with flashing paddle,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s75",
-      "title": "A girl with soft searching eyes,",
-      "place": "A girl with soft searching eyes,",
-      "reentry": "A call: \"John!\" . . . . . . .",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s76",
-      "title": "Come, arise, hunter!",
-      "place": "Come, arise, hunter!",
-      "reentry": "Can you not hear?",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s77",
-      "title": "The chatter of a death-demon from a tree-",
-      "place": "The chatter of a death-demon from a tree-",
-      "reentry": "top.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s78",
-      "title": "The impact of a dollar upon the heart",
-      "place": "The impact of a dollar upon the heart",
-      "reentry": "Smiles warm red light, Sweeping from the hearth rosily upon the white table,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s79",
-      "title": "With the hanging cool velvet shadows",
-      "place": "With the hanging cool velvet shadows",
-      "reentry": "Moving softly upon the door.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s80",
-      "title": "The impact of a million dollars",
-      "place": "The impact of a million dollars",
-      "reentry": "Is a crash of flunkys, And yawning emblems of Persia",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s81",
-      "title": "Cheeked against oak, France and a sabre,",
-      "place": "Cheeked against oak, France and a sabre,",
-      "reentry": "The outcry of old beauty Whored by pimping merchants",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s82",
-      "title": "To submission before wine and chatter",
-      "place": "To submission before wine and chatter",
-      "reentry": "Silly rich peasants stamp the carpets of men, Dead men who dreamed fragrance and light",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s83",
-      "title": "Into their woof, their lives;",
-      "place": "Into their woof, their lives;",
-      "reentry": "The rug of an honest bear Under the feet of a cryptic slave",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s84",
-      "title": "Who speaks always of baubles,",
-      "place": "Who speaks always of baubles,",
-      "reentry": "Forgetting state, multitude, work, and state, Champing and mouthing of hats,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s85",
-      "title": "Making ratful squeak of hats,",
-      "place": "Making ratful squeak of hats,",
-      "reentry": "Hats.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s86",
-      "title": "A man said to the universe:",
-      "place": "A man said to the universe:",
-      "reentry": "\"Sir, I exist!\" \"However,\" replied the universe, \"The fact has not created in me \"A sense of obligation.\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s87",
-      "title": "When the prophet, a complacent fat",
-      "place": "When the prophet, a complacent fat",
-      "reentry": "man, Arrived at the mountain-top,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s88",
-      "title": "He cried: \"Woe to my knowledge!",
-      "place": "He cried: \"Woe to my knowledge!",
-      "reentry": "\"I intended to see good white lands \"And bad black lands, \"But the scene is grey.\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s89",
-      "title": "There was a land where lived no",
-      "place": "There was a land where lived no",
-      "reentry": "violets. A traveller at once demanded: \"Why?\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s90",
-      "title": "The people told him:",
-      "place": "The people told him:",
-      "reentry": "\"Once the violets of this place spoke thus: \"'Until some woman freely give her lover \"'To another woman \"'We will fight in bloody scuffle.'\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s91",
-      "title": "Sadly the people added:",
-      "place": "Sadly the people added:",
-      "reentry": "\"There are no violets here.\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s92",
-      "title": "There was one I met upon the road",
-      "place": "There was one I met upon the road",
-      "reentry": "Who looked at me with kind eyes. He said: \"Show me of your wares.\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s93",
-      "title": "And I did,",
-      "place": "And I did,",
-      "reentry": "Holding forth one, He said: \"It is a sin.\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s94",
-      "title": "Then I held forth another",
-      "place": "Then I held forth another",
-      "reentry": "He said: \"It is a sin.\" Then I held forth another.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s95",
-      "title": "He said: \"It is a sin.\"",
-      "place": "He said: \"It is a sin.\"",
-      "reentry": "And so to the end. Always He said: \"It is a sin.\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s96",
-      "title": "At last, I cried out:",
-      "place": "At last, I cried out:",
-      "reentry": "\"But I have non other.\" He looked at me",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s97",
-      "title": "With kinder eyes",
-      "place": "With kinder eyes",
-      "reentry": "\"Poor soul,\" he said.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s98",
-      "title": "Aye, workman, make me a dream,",
-      "place": "Aye, workman, make me a dream,",
-      "reentry": "A dream for my love. Cunningly weave sunlight,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s99",
-      "title": "Breezes, and flowers",
-      "place": "Breezes, and flowers",
-      "reentry": "Let it be of the cloth of meadows. And--good workman--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s100",
-      "title": "Each small gleam was a voice,",
-      "place": "Each small gleam was a voice,",
-      "reentry": "A lantern voice-- In little songs of carmine, violet, green, gold.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s101",
-      "title": "A chorus of colors came over the water;",
-      "place": "A chorus of colors came over the water;",
-      "reentry": "The wondrous leaf-shadow no longer wavered, No pines crooned on the hills,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s102",
-      "title": "The blue night was elsewhere a silence,",
-      "place": "The blue night was elsewhere a silence,",
-      "reentry": "When the chorus of colors came over the water,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s103",
-      "title": "Little songs of carmine, violet, green, gold",
-      "place": "Little songs of carmine, violet, green, gold",
-      "reentry": "Small glowing pebbles",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s104",
-      "title": "Thrown on the dark plane of evening",
-      "place": "Thrown on the dark plane of evening",
-      "reentry": "Sing good ballads of God And eternity, with soul's rest.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s105",
-      "title": "Little priests, little holy fathers,",
-      "place": "Little priests, little holy fathers,",
-      "reentry": "None can doubt the truth of hour hymning. When the marvellous chorus comes over the water,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s106",
-      "title": "The trees in the garden rained flowers",
-      "place": "The trees in the garden rained flowers",
-      "reentry": "Children ran there joyously. They gathered the flowers",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s107",
-      "title": "Each to himself",
-      "place": "Each to himself",
-      "reentry": "Now there were some Who gathered great heaps--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s108",
-      "title": "Having opportunity and skill--",
-      "place": "Having opportunity and skill--",
-      "reentry": "Until, behold, only chance blossoms Remained for the feeble.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s109",
-      "title": "Then a little spindling tutor",
-      "place": "Then a little spindling tutor",
-      "reentry": "Ran importantly to the father, crying: \"Pray, come hither! \"See this unjust thing in your garden!\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s110",
-      "title": "But when the father had surveyed,",
-      "place": "But when the father had surveyed,",
-      "reentry": "He admonished the tutor: \"Not so, small sage! \"This thing is just. \"For, look you, \"Are not they who possess the flowers \"Stronger, bolder, shrewder \"Than they who have none? \"Why should the strong-- \"The beautiful strong-- \"Why should they",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s111",
-      "title": "Upon reflection, the tutor bowed to the",
-      "place": "Upon reflection, the tutor bowed to the",
-      "reentry": "ground. \"My lord,\" he said, \"The stars are displaced \"By this towering wisdom.\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s112",
-      "title": "Intrigue",
-      "place": "Intrigue",
-      "reentry": "Thou art my love,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s113",
-      "title": "And thou art the peace of sundown",
-      "place": "And thou art the peace of sundown",
-      "reentry": "When the blue shadows soothe, And the grasses and the leaves sleep",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s114",
-      "title": "To the song of the little brooks,",
-      "place": "To the song of the little brooks,",
-      "reentry": "Woe is me.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s115",
-      "title": "Thou art my love,",
-      "place": "Thou art my love,",
-      "reentry": "And thou art a strorm That breaks black in the sky,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s116",
-      "title": "And, sweeping headlong,",
-      "place": "And, sweeping headlong,",
-      "reentry": "Drenches and cowers each tree, And at the panting end",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s117",
-      "title": "There is no sound",
-      "place": "There is no sound",
-      "reentry": "Save the melancholy cry of a single owl-- Woe is me!",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s118",
-      "title": "Thou are my love,",
-      "place": "Thou are my love,",
-      "reentry": "And thou art a tinsel thing, And I in my play",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s119",
-      "title": "Broke thee easily,",
-      "place": "Broke thee easily,",
-      "reentry": "And from the little fragments Arose my long sorrow--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s120",
-      "title": "Woe is me",
-      "place": "Woe is me",
-      "reentry": "Thou art my love,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s121",
-      "title": "And thou art a wary violet,",
-      "place": "And thou art a wary violet,",
-      "reentry": "Drooping from sun-caresses, Answering mine carelessly--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s122",
-      "title": "Woe is me",
-      "place": "Woe is me",
-      "reentry": "Thou art my love,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s123",
-      "title": "And thou art the ashes of other men's love,",
-      "place": "And thou art the ashes of other men's love,",
-      "reentry": "And I bury my face in these ashes, And I love them--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s124",
-      "title": "Woe is me",
-      "place": "Woe is me",
-      "reentry": "Thou art my love,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s125",
-      "title": "And thou art the beard",
-      "place": "And thou art the beard",
-      "reentry": "On another man's face-- Woe is me.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s126",
-      "title": "Thou art my love,",
-      "place": "Thou art my love,",
-      "reentry": "And thou art a temple, And in this temple is an altar,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s127",
-      "title": "And on this altar is my heart--",
-      "place": "And on this altar is my heart--",
-      "reentry": "Woe is me.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s128",
-      "title": "Thou art my love,",
-      "place": "Thou art my love,",
-      "reentry": "And thou art a wretch. Let these sacred love-lies choke thee,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s129",
-      "title": "From I am come to where I know your lies",
-      "place": "From I am come to where I know your lies",
-      "reentry": "as truth And you truth as lies--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s130",
-      "title": "Woe is me",
-      "place": "Woe is me",
-      "reentry": "Thou art my love,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s131",
-      "title": "And thou art a priestess,",
-      "place": "And thou art a priestess,",
-      "reentry": "And in they hand is a bloody dagger, And my doom comes to me surely--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s132",
-      "title": "Woe is me",
-      "place": "Woe is me",
-      "reentry": "Thou art my love,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s133",
-      "title": "And thou art a skull with ruby eyes,",
-      "place": "And thou art a skull with ruby eyes,",
-      "reentry": "And I love thee-- Woe is me.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s134",
-      "title": "Thou art my love,",
-      "place": "Thou art my love,",
-      "reentry": "And I doubt thee. And if peace came with thy murder",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s135",
-      "title": "Then would I murder--",
-      "place": "Then would I murder--",
-      "reentry": "Woe is me.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s136",
-      "title": "Thou art my love,",
-      "place": "Thou art my love,",
-      "reentry": "And thou art death, Aye, thou art death",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s137",
-      "title": "Black and yet black,",
-      "place": "Black and yet black,",
-      "reentry": "But I love thee, I love thee--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s138",
-      "title": "Love, forgive me if I wish you grief,",
-      "place": "Love, forgive me if I wish you grief,",
-      "reentry": "For in your grief You huddle to my breast,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s139",
-      "title": "And for it",
-      "place": "And for it",
-      "reentry": "Would I pay the price of your grief.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s140",
-      "title": "You walk among men",
-      "place": "You walk among men",
-      "reentry": "And all men do not surrender, And thus I understand",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s141",
-      "title": "That love reaches his hand",
-      "place": "That love reaches his hand",
-      "reentry": "In mercy to me.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s142",
-      "title": "He had your picture in his room,",
-      "place": "He had your picture in his room,",
-      "reentry": "A scurvy traitor picture, And he smiled --Merely a fat complacence of men who know fine women--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s143",
-      "title": "And thus I divided with him",
-      "place": "And thus I divided with him",
-      "reentry": "A part of my love.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s144",
-      "title": "Fool, not to know that thy little shoe",
-      "place": "Fool, not to know that thy little shoe",
-      "reentry": "Can make men weep! --Some men weep.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s145",
-      "title": "I weep and I gnash,",
-      "place": "I weep and I gnash,",
-      "reentry": "And I love the little shoe, The little, little shoe.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s146",
-      "title": "God give me medals,",
-      "place": "God give me medals,",
-      "reentry": "God give me loud honors, That I may strut before you, sweetheart,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s147",
-      "title": "And be worthy of--",
-      "place": "And be worthy of--",
-      "reentry": "The love I bear you.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s148",
-      "title": "Now let me crunch you",
-      "place": "Now let me crunch you",
-      "reentry": "With full weight of affrighted love. I doubted you --I doubted you--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s149",
-      "title": "And in this short doubting",
-      "place": "And in this short doubting",
-      "reentry": "My love grew like a genie For my further undoing.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s150",
-      "title": "Beware of my friends,",
-      "place": "Beware of my friends,",
-      "reentry": "Be not in speech too civil, For in all courtesy",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s151",
-      "title": "My weak heart sees spectres,",
-      "place": "My weak heart sees spectres,",
-      "reentry": "Mists of desire Arising from the lips of my chosen;",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s152",
-      "title": "Be not civil",
-      "place": "Be not civil",
-      "reentry": "The flower I gave thee once",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s153",
-      "title": "Was incident to a stride,",
-      "place": "Was incident to a stride,",
-      "reentry": "A detail of a gesture, But search those pale petals",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s154",
-      "title": "And see engraven thereon",
-      "place": "And see engraven thereon",
-      "reentry": "A record of my intention.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s155",
-      "title": "Ah, God, the way your little finger moved,",
-      "place": "Ah, God, the way your little finger moved,",
-      "reentry": "As you thrust a bare arm backward And made play with your hair",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s156",
-      "title": "And a comb, a silly gilt comb",
-      "place": "And a comb, a silly gilt comb",
-      "reentry": "--Ah, God--that I should suffer Because of the way a little finger moved.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s157",
-      "title": "Once I saw thee idly rocking",
-      "place": "Once I saw thee idly rocking",
-      "reentry": "--Idly rocking-- And chattering girlishly to other girls,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s158",
-      "title": "Bell-voiced, happy,",
-      "place": "Bell-voiced, happy,",
-      "reentry": "Careless with the stout heart of unscarred womanhood,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s159",
-      "title": "And life to thee was all light melody",
-      "place": "And life to thee was all light melody",
-      "reentry": "I thought of the great storms of love as I knew it,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s160",
-      "title": "Torn, miserable, and ashamed of my open",
-      "place": "Torn, miserable, and ashamed of my open",
-      "reentry": "sorrow, I thought of the thunders that lived in my head,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s161",
-      "title": "And I wish to be an ogre,",
-      "place": "And I wish to be an ogre,",
-      "reentry": "And hale and haul my beloved to a castle, And make her mourn with my mourning.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s162",
-      "title": "Tell me why, behind thee,",
-      "place": "Tell me why, behind thee,",
-      "reentry": "I see always the shadow of another lover? Is it real,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s163",
-      "title": "Or is this the thrice damned memory of a",
-      "place": "Or is this the thrice damned memory of a",
-      "reentry": "better happiness? Plague on him if he be dead,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s164",
-      "title": "Plague on him if he be alive--",
-      "place": "Plague on him if he be alive--",
-      "reentry": "A swinish numskull To intrude his shade",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s165",
-      "title": "And yet I have seen thee happy with me",
-      "place": "And yet I have seen thee happy with me",
-      "reentry": "I am no fool To poll stupidly into iron.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s166",
-      "title": "I have heard your quick breaths",
-      "place": "I have heard your quick breaths",
-      "reentry": "And seen your arms writhe toward me; At those times --God help us--",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s167",
-      "title": "I was impelled to be a grand knight,",
-      "place": "I was impelled to be a grand knight,",
-      "reentry": "And swagger and snap my fingers, And explain my mind finely.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s168",
-      "title": "Oh, lost sweetheart,",
-      "place": "Oh, lost sweetheart,",
-      "reentry": "I would that I had not been a grand knight. I said: \"Sweetheart.\"",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s169",
-      "title": "Thou said'st: \"Sweetheart.\"",
-      "place": "Thou said'st: \"Sweetheart.\"",
-      "reentry": "And we preserved an admirable mimicry Without heeding the drip of the blood",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s170",
-      "title": "I heard thee laugh,",
-      "place": "I heard thee laugh,",
-      "reentry": "And in this merriment I defined the measure of my pain;",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s171",
-      "title": "I knew that I was alone,",
-      "place": "I knew that I was alone,",
-      "reentry": "Alone with love, Poor shivering love,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s172",
-      "title": "And he, little sprite,",
-      "place": "And he, little sprite,",
-      "reentry": "Came to watch with me, And at midnight,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s173",
-      "title": "I wonder if sometimes in the dusk,",
-      "place": "I wonder if sometimes in the dusk,",
-      "reentry": "When the brave lights that gild thy evenings",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s174",
-      "title": "Have not yet been touched with flame,",
-      "place": "Have not yet been touched with flame,",
-      "reentry": "I wonder if sometimes in the dusk Thou rememberest a time,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s175",
-      "title": "A time when thou loved me",
-      "place": "A time when thou loved me",
-      "reentry": "And our love was to thee thy all? Is the memory rubbish now?",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s176",
-      "title": "An old gown",
-      "place": "An old gown",
-      "reentry": "Worn in an age of other fashions? Woe is me, oh, lost one,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s177",
-      "title": "For that love is now to me",
-      "place": "For that love is now to me",
-      "reentry": "A supernal dream, White, white, white with many suns.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s178",
-      "title": "Love met me at noonday,",
-      "place": "Love met me at noonday,",
-      "reentry": "--Reckless imp, To leave his shaded nights",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s179",
-      "title": "And brave the glare,--",
-      "place": "And brave the glare,--",
-      "reentry": "And I saw him then plainly For a bungler,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s180",
-      "title": "A stupid, simpering, eyeless bungler,",
-      "place": "A stupid, simpering, eyeless bungler,",
-      "reentry": "Breaking the hearts of brave people As the snivelling idiot-boy cracks his bowl,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s181",
-      "title": "And I cursed him,",
-      "place": "And I cursed him,",
-      "reentry": "Cursed him to and fro, back and forth, Into all the silly mazes of his mind,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s182",
-      "title": "But in the end",
-      "place": "But in the end",
-      "reentry": "He laughed and pointed to my breast, Where a heart still beat for thee, beloved.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s183",
       "title": "I have seen thy face aflame",
       "place": "I have seen thy face aflame",
-      "reentry": "For love of me, Thy fair arms go mad,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s184",
-      "title": "Thy lips tremble and mutter and rave",
-      "place": "Thy lips tremble and mutter and rave",
-      "reentry": "And--surely-- This should leave a man content?",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s185",
-      "title": "Thou lovest not me now,",
-      "place": "Thou lovest not me now,",
-      "reentry": "But thou didst love me, And in loving me once Thou gavest me an eternal privilege, For I can think of thee.",
+      "reentry": "I have seen thy face aflame / For love of me, / Thy fair arms go mad, / Thy lips tremble and mutter and rave. / And--surely-- / This should leave a man content? / Thou lovest not me now, / But thou didst love me, / And in loving me once / Thou gavest me an eternal privilege, / For I can think of thee.",
       "prompt": "What does the poem hold?"
     }
   ],
@@ -1315,972 +272,202 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "Eagle with crest of red and gold, These men were born to drill and die."
+      "text": "Do not weep, maiden, for war is kind. / Because your lover threw wild hands toward the sky / And the affrighted steed ran on alone, / Do not weep. / War is kind. / Hoarse, booming drums of the regiment, / Little souls who thirst for fight, / These men were born to drill and die. / The unexplained glory files above them, / Great is the battle-god, great, and his kingdom-- / A field where a thousand corpses lie. / Do not weep, babe, for war is kind. / Because your father tumbled in the yellow trenches, / Raged at his breast, gulped and died, / Do not weep. / War is kind. / Swift blazing flag of the regiment, / Eagle with crest of red and gold, / These men were born to drill and die. / Point for them the virtue of the slaughter, / Make plain to them the excellence of killing / And a field where a thousand corpses lie. / Mother whose heart hung humble as a button / On the bright splendid shroud of your son, / Do not weep. / War is kind."
     },
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "Make plain to them the excellence of killing And a field where a thousand corpses lie."
+      "text": "What says the sea, little shell? / \"What says the sea? / \"Long has our brother been silent to us, / \"Kept his message for the ships, / \"Awkward ships, stupid ships.\" / \"The sea bids you mourn, O Pines, / \"Sing low in the moonlight. / \"He sends tale of the land of doom, / \"Of place where endless falls / \"A rain of women's tears, / \"And men in grey robes-- / \"Men in grey robes-- / \"Chant the unknown pain.\" / \"What says the sea, little shell? / \"What says the sea? / \"Long has our brother been silent to us, / \"Kept is message for the ships, / \"Puny ships, silly ships.\" / \"The sea bids you teach, O Pines, / \"Sing low in the moonlight; / \"Teach the gold of patience, / \"Cry gospel of gentle hands, / \"Cry a brotherhood of hearts. / \"The sea bids you teach, O Pines.\" / \"And where is the reward, little shell? / \"What says the sea? / \"Long has our brother been silent to us, / \"Kept his message for the ships, / \"Puny ships, silly ships.\" / \"No word says the sea, O Pines, / \"No word says the sea. / \"Long will your brother be silent to you, / \"Keep his message for the ships, / \"O puny ships, silly pines.\""
     },
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "On the bright splendid shroud of your son, Do not weep."
+      "text": "To the maiden / The sea was blue meadow, / Alive with little froth-people / Singing. / To the sailor, wrecked, / The sea was dead grey walls / Superlative in vacancy, / Upon which nevertheless at fateful time / Was written / The grim hatred of nature."
     },
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "\"What says the sea? \"Long has our brother been silent to us, \"Kept his message for the ships, \"Awkward ships, stupid ships.\""
-    },
-    {
-      "id": "s3-1",
-      "sceneId": "s3",
-      "text": "\"The sea bids you mourn, O Pines, \"Sing low in the moonlight. \"He sends tale of the land of doom, \"Of place where endless falls \"A rain of women's tears, \"And men in grey robes-- \"Men in grey robes-- \"Chant the unknown pain.\""
-    },
-    {
-      "id": "s3-2",
-      "sceneId": "s3",
-      "text": "\"What says the sea, little shell? \"What says the sea? \"Long has our brother been silent to us, \"Kept is message for the ships, \"Puny ships, silly ships.\""
-    },
-    {
-      "id": "s3-3",
-      "sceneId": "s3",
-      "text": "\"The sea bids you teach, O Pines, \"Sing low in the moonlight; \"Teach the gold of patience, \"Cry gospel of gentle hands, \"Cry a brotherhood of hearts. \"The sea bids you teach, O Pines.\""
-    },
-    {
-      "id": "s3-4",
-      "sceneId": "s3",
-      "text": "\"And where is the reward, little shell? \"What says the sea? \"Long has our brother been silent to us, \"Kept his message for the ships, \"Puny ships, silly ships.\""
-    },
-    {
-      "id": "s3-5",
-      "sceneId": "s3",
-      "text": "\"No word says the sea, O Pines, \"No word says the sea. \"Long will your brother be silent to you, \"Keep his message for the ships, \"O puny ships, silly pines.\""
+      "text": "A little ink more or less! / It surely can't matter? / Even the sky and the opulent sea, / The plains and the hills, aloof, / Hear the uproar of all these books. / But it is only a little ink more or less. / What? / You define me God with these trinkets? / Can my misery meal on an ordered walking / Of surpliced numskulls? / And a fanfare of lights? / Or even upon the measured pulpitings / Of the familiar false and true? / Is this God? / Where, then is hell? / Show me some bastard mushrooms / Sprung from a pollution of blood. / It is better. / Where is God?"
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "The sea was blue meadow, Alive with little froth-people Singing."
+      "text": "\"Have you ever made a just man?\" / \"Oh, I have made three,\" answered / God, / \"But two of them are dead, / \"And the third-- / \"Listen! Listen! / \"And you will hear the thud of his defeat.\""
     },
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "The sea was dead grey walls Superlative in vacancy,"
+      "text": "I explain the silvered passing of a ship at night, / The sweep of each sad lost wave, / The dwindling boom of the steel thing's striving, / The little cry of a man to a man, / A shadow falling across the greyer night, / And the sinking of the small star; / Then the waste, the far waste of waters, / And the soft lashing of black waves / For long and in loneliness. / Remember, thou, O ship of love, / Thou leavest a far waste of waters, / And the soft lashing of black waves / For long and in loneliness."
     },
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "Was written The grim hatred of nature."
+      "text": "\"I have heard the sunset song of the birches, / \"A white melody in the silence, / \"I have seen a quarrel of the pines. / \"At nightfall / \"The little grasses have rushed by me / \"With the wind men. / \"These things have I lived,\" quoth the maniac, / \"Possessing only eyes and ears. / \"But you-- / \"You don green spectacles before you look at roses.\""
     },
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "It surely can't matter? Even the sky and the opulent sea,"
+      "text": "Fast rode the knight / With spurs, hot and reeking, / Ever waving an eager sword, / \"To save my lady!\" / Fast rode the knight, / And leaped from saddle to war. / Men of steel flickered and gleamed / Like riot of silver lights, / And the gold of the knight's good banner / Still waved on a castle wall. / . . . . . . . / A horse, / Blowing, staggering, bloody thing, / Forgotten at foot of castle wall. / A horse / Dead at foot of castle wall."
     },
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "Hear the uproar of all these books. But it is only a little ink more or less."
-    },
-    {
-      "id": "s8-1",
-      "sceneId": "s8",
-      "text": "What?"
+      "text": "Forth went the candid man / And spoke freely to the wind-- / When he looked about him he was in a far strange country. / Forth went the candid man / And spoke freely to the stars-- / Yellow light tore sight from his eye. / \"My good fool,\" said a learned bystander, / \"Your operations are mad.\" / \"You are too candid,\" cried the candid man. / And when his stick left the head of the learned bystander / It was two sticks."
     },
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "Can my misery meal on an ordered walking Of surpliced numskulls?"
+      "text": "You tell me this is God? / I tell you this is a printed list, / A burning candle and an ass."
     },
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "Or even upon the measured pulpitings Of the familiar false and true?"
+      "text": "On the desert / A silence from the moon's deepest valley. / Fire rays fall athwart the robes / Of hooded men, squat and dumb. / Before them, a woman / Moves to the blowing of shrill whistles / And distant thunder of drums, / While mystic things, sinuous, dull with terrible color, / Sleepily fondle her body / Or move at her will, swishing stealthily over the sand. / The snakes whisper softly; / The whispering, whispering snakes, / Dreaming and swaying and staring, / But always whispering, softly whispering. / The wind streams from the lone reaches / Of Arabia, solemn with night, / And the wild fire makes shimmer of blood / Over the robes of the hooded men / Squat and dumb. / Bands of moving bronze, emerald, yellow, / Circle the throat and arms of her, / And over the sands serpents move warily / Slow, menacing and submissive, / Swinging to the whistles and drums, / The whispering, whispering snakes, / Dreaming and swaying and staring, / But always whispering, softly whispering. / The dignity of the accursed; / The glory of slavery, despair, death, / Is in the dance of the whispering snakes."
     },
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "Where, then is hell? Show me some bastard mushrooms"
+      "text": "A newspaper is a collection of half-injustices / Which, bawled by boys from mile to mile, / Spreads its curious opinion / To a million merciful and sneering men, / While families cuddle the joys of the fireside / When spurred by tale of dire lone agony. / A newspaper is a court / Where every one is kindly and unfairly tried / By a squalor of honest men. / A newspaper is a market / Where wisdom sells its freedom / And melons are crowned by the crowd. / A newspaper is a game / Where his error scores the player victory / While another's skill wins death. / A newspaper is a symbol; / It is fetless life's chronical, / A collection of loud tales / Concentrating eternal stupidities, / That in remote ages lived unhaltered, / Roaming through a fenceless world."
     },
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "It is better."
+      "text": "The wayfarer, / Perceiving the pathway to truth, / Was struck with astonishment. / It was thickly grown with weeds. / \"Ha,\" he said, / \"I see that none has passed here / \"In a long time.\" / Later he saw that each weed / Was a singular knife. / \"Well,\" he mumbled at last, / \"Doubtless there are other roads.\""
     },
     {
       "id": "s13-0",
       "sceneId": "s13",
-      "text": "\"Have you ever made a just man?\" \"Oh, I have made three,\" answered God, \"But two of them are dead, \"And the third-- \"Listen! Listen! \"And you will hear the thud of his defeat.\""
+      "text": "A slant of sun on dull brown walls, / A forgotten sky of bashful blue. / Toward God a mighty hymn, / A song of collisions and cries, / Rumbling wheels, hoof-beats, bells, / Welcomes, farewells, love-calls, final moans, / Voices of joy, idiocy, warning, despair, / The unknown appeals of brutes, / The chanting of flowers, / The screams of cut trees, / The senseless babble of hens and wise men-- / A cluttered incoherency that says at the stars; / \"O God, save us!\""
     },
     {
       "id": "s14-0",
       "sceneId": "s14",
-      "text": "at night, The sweep of each sad lost wave,"
+      "text": "Once a man clambering to the housetops / Appealed to the heavens. / With a strong voice he called to the deaf spheres; / A warrior's shout he raised to the suns. / Lo, at last, there was a dot on the clouds, / And--at last and at last-- / --God--the sky was filled with armies."
     },
     {
       "id": "s15-0",
       "sceneId": "s15",
-      "text": "The little cry of a man to a man, A shadow falling across the greyer night,"
+      "text": "There was a man with tongue of wood / Who essayed to sing, / And in truth it was lamentable. / But there was one who heard / The clip-clapper of this tongue of wood / And knew what the man / Wished to sing, / And with that the singer was content."
     },
     {
       "id": "s16-0",
       "sceneId": "s16",
-      "text": "Then the waste, the far waste of waters,"
+      "text": "The successful man has thrust himself / Through the water of the years, / Reeking wet with mistakes,-- / Bloody mistakes; / Slimed with victories over the lesser, / A figure thankful on the shore of money. / Then, with the bones of fools / He buys silken banners / Limned with his triumphant face; / With the skins of wise men / He buys the trivial bows of all. / Flesh painted with marrow / Contributes a coverlet, / A coverlet for his contented slumber. / In guiltless ignorance, in ignorant guilt, / He delivered his secrets to the riven multitude. / \"Thus I defended: Thus I wrought.\" / Complacent, smiling, / He stands heavily on the dead. / Erect on a pillar of skulls / He declaims his trampling of babes; / Smirking, fat, dripping, / He makes speech in guiltless ignorance, / Innocence."
     },
     {
       "id": "s17-0",
       "sceneId": "s17",
-      "text": "For long and in loneliness."
+      "text": "In the night / Grey heavy clouds muffled the valleys, / And the peaks looked toward God alone. / \"O Master that movest the wind with a / finger, / \"Humble, idle, futile peaks are we. / \"Grant that we may run swiftly across the world / \"To huddle in worship at Thy feet.\" / In the morning / A noise of men at work came the clear blue miles, / And the little black cities were apparent. / \"O Master that knowest the meaning of raindrops, / \"Humble, idle, futile peaks are we. / \"Give voice to us, we pray, O Lord, / \"That we may sing Thy goodness to the sun.\" / In the evening / The far valleys were sprinkled with tiny lights. / \"O Master, / \"Thou that knowest the value of kings and birds, / \"Thou hast made us humble, idle, futile peaks. / \"Thous only needest eternal patience; / \"We bow to Thy wisdom, O Lord-- / \"Humble, idle, futile peaks.\" / In the night / Grey heavy clouds muffles the valleys, / And the peaks looked toward God alone."
     },
     {
       "id": "s18-0",
       "sceneId": "s18",
-      "text": "Thou leavest a far waste of waters, And the soft lashing of black waves"
+      "text": "The chatter of a death-demon from a tree-top. / Blood--blood and torn grass-- / Had marked the rise of his agony-- / This lone hunter. / The grey-green woods impassive / Had watched the threshing of his limbs. / A canoe with flashing paddle, / A girl with soft searching eyes, / A call: \"John!\" / . . . . . . . / Come, arise, hunter! / Can you not hear? / The chatter of a death-demon from a tree- top."
     },
     {
       "id": "s19-0",
       "sceneId": "s19",
-      "text": "\"I have heard the sunset song of the birches, \"A white melody in the silence, \"I have seen a quarrel of the pines. \"At nightfall \"The little grasses have rushed by me \"With the wind men. \"These things have I lived,\" quoth the maniac, \"Possessing only eyes and ears. \"But you-- \"You don green spectacles before you look at roses.\""
+      "text": "The impact of a dollar upon the heart / Smiles warm red light, / Sweeping from the hearth rosily upon the white table, / With the hanging cool velvet shadows / Moving softly upon the door. / The impact of a million dollars / Is a crash of flunkys, / And yawning emblems of Persia / Cheeked against oak, France and a sabre, / The outcry of old beauty / Whored by pimping merchants / To submission before wine and chatter. / Silly rich peasants stamp the carpets of men, / Dead men who dreamed fragrance and light / Into their woof, their lives; / The rug of an honest bear / Under the feet of a cryptic slave / Who speaks always of baubles, / Forgetting state, multitude, work, and state, / Champing and mouthing of hats, / Making ratful squeak of hats, / Hats."
     },
     {
       "id": "s20-0",
       "sceneId": "s20",
-      "text": "With spurs, hot and reeking, Ever waving an eager sword, \"To save my lady!\""
+      "text": "A man said to the universe: / \"Sir, I exist!\" / \"However,\" replied the universe, / \"The fact has not created in me / \"A sense of obligation.\""
     },
     {
       "id": "s21-0",
       "sceneId": "s21",
-      "text": "And leaped from saddle to war. Men of steel flickered and gleamed"
+      "text": "When the prophet, a complacent fat man, / Arrived at the mountain-top, / He cried: \"Woe to my knowledge! / \"I intended to see good white lands / \"And bad black lands, / \"But the scene is grey.\""
     },
     {
       "id": "s22-0",
       "sceneId": "s22",
-      "text": "And the gold of the knight's good banner Still waved on a castle wall. . . . . . . ."
+      "text": "There was a land where lived no / violets. / A traveller at once demanded: \"Why?\" / The people told him: / \"Once the violets of this place spoke thus: / \"'Until some woman freely give her lover / \"'To another woman / \"'We will fight in bloody scuffle.'\" / Sadly the people added: / \"There are no violets here.\""
     },
     {
       "id": "s23-0",
       "sceneId": "s23",
-      "text": "Blowing, staggering, bloody thing, Forgotten at foot of castle wall."
+      "text": "There was one I met upon the road / Who looked at me with kind eyes. / He said: \"Show me of your wares.\" / And I did, / Holding forth one, / He said: \"It is a sin.\" / Then I held forth another. / He said: \"It is a sin.\" / Then I held forth another. / He said: \"It is a sin.\" / And so to the end. / Always He said: \"It is a sin.\" / At last, I cried out: / \"But I have non other.\" / He looked at me / With kinder eyes. / \"Poor soul,\" he said."
     },
     {
       "id": "s24-0",
       "sceneId": "s24",
-      "text": "Dead at foot of castle wall."
+      "text": "Aye, workman, make me a dream, / A dream for my love. / Cunningly weave sunlight, / Breezes, and flowers. / Let it be of the cloth of meadows. / And--good workman-- / And let there be a man walking thereon."
     },
     {
       "id": "s25-0",
       "sceneId": "s25",
-      "text": "And spoke freely to the wind-- When he looked about him he was in a far strange country."
+      "text": "Each small gleam was a voice, / A lantern voice-- / In little songs of carmine, violet, green, gold. / A chorus of colors came over the water; / The wondrous leaf-shadow no longer wavered, / No pines crooned on the hills, / The blue night was elsewhere a silence, / When the chorus of colors came over the water, / Little songs of carmine, violet, green, gold. / Small glowing pebbles / Thrown on the dark plane of evening / Sing good ballads of God / And eternity, with soul's rest. / Little priests, little holy fathers, / None can doubt the truth of hour hymning. / When the marvellous chorus comes over the water, / Songs of carmine, violet, green, gold."
     },
     {
       "id": "s26-0",
       "sceneId": "s26",
-      "text": "And spoke freely to the stars-- Yellow light tore sight from his eye."
-    },
-    {
-      "id": "s26-1",
-      "sceneId": "s26",
-      "text": "\"My good fool,\" said a learned bystander, \"Your operations are mad.\""
-    },
-    {
-      "id": "s26-2",
-      "sceneId": "s26",
-      "text": "\"You are too candid,\" cried the candid man."
+      "text": "The trees in the garden rained flowers. / Children ran there joyously. / They gathered the flowers / Each to himself. / Now there were some / Who gathered great heaps-- / Having opportunity and skill-- / Until, behold, only chance blossoms / Remained for the feeble. / Then a little spindling tutor / Ran importantly to the father, crying: / \"Pray, come hither! / \"See this unjust thing in your garden!\" / But when the father had surveyed, / He admonished the tutor: / \"Not so, small sage! / \"This thing is just. / \"For, look you, / \"Are not they who possess the flowers / \"Stronger, bolder, shrewder / \"Than they who have none? / \"Why should the strong-- / \"The beautiful strong-- / \"Why should they not have the flowers? / Upon reflection, the tutor bowed to the ground. / \"My lord,\" he said, / \"The stars are displaced / \"By this towering wisdom.\""
     },
     {
       "id": "s27-0",
       "sceneId": "s27",
-      "text": "learned bystander It was two sticks."
+      "text": "Intrigue"
+    },
+    {
+      "id": "s27-1",
+      "sceneId": "s27",
+      "text": "Thou art my love, / And thou art the peace of sundown / When the blue shadows soothe, / And the grasses and the leaves sleep / To the song of the little brooks, / Woe is me. / Thou art my love, / And thou art a strorm / That breaks black in the sky, / And, sweeping headlong, / Drenches and cowers each tree, / And at the panting end / There is no sound / Save the melancholy cry of a single owl-- / Woe is me! / Thou are my love, / And thou art a tinsel thing, / And I in my play / Broke thee easily, / And from the little fragments / Arose my long sorrow-- / Woe is me. / Thou art my love, / And thou art a wary violet, / Drooping from sun-caresses, / Answering mine carelessly-- / Woe is me. / Thou art my love, / And thou art the ashes of other men's love, / And I bury my face in these ashes, / And I love them-- / Woe is me."
+    },
+    {
+      "id": "s27-2",
+      "sceneId": "s27",
+      "text": "Thou art my love, / And thou art the beard / On another man's face-- / Woe is me. / Thou art my love, / And thou art a temple, / And in this temple is an altar, / And on this altar is my heart-- / Woe is me. / Thou art my love, / And thou art a wretch. / Let these sacred love-lies choke thee, / From I am come to where I know your lies as truth / And you truth as lies-- / Woe is me. / Thou art my love, / And thou art a priestess, / And in they hand is a bloody dagger, / And my doom comes to me surely-- / Woe is me. / Thou art my love, / And thou art a skull with ruby eyes, / And I love thee-- / Woe is me. / Thou art my love, / And I doubt thee. / And if peace came with thy murder / Then would I murder-- / Woe is me. / Thou art my love, / And thou art death, / Aye, thou art death / Black and yet black, / But I love thee, / I love thee-- / Woe, welcome woe, to me."
     },
     {
       "id": "s28-0",
       "sceneId": "s28",
-      "text": "I tell you this is a printed list, A burning candle and an ass."
+      "text": "Love, forgive me if I wish you grief, / For in your grief / You huddle to my breast, / And for it / Would I pay the price of your grief. / You walk among men / And all men do not surrender, / And thus I understand / That love reaches his hand / In mercy to me. / He had your picture in his room, / A scurvy traitor picture, / And he smiled / --Merely a fat complacence of men who know fine women-- / And thus I divided with him / A part of my love. / Fool, not to know that thy little shoe / Can make men weep! / --Some men weep. / I weep and I gnash, / And I love the little shoe, / The little, little shoe."
+    },
+    {
+      "id": "s28-1",
+      "sceneId": "s28",
+      "text": "God give me medals, / God give me loud honors, / That I may strut before you, sweetheart, / And be worthy of-- / The love I bear you. / Now let me crunch you / With full weight of affrighted love. / I doubted you / --I doubted you-- / And in this short doubting / My love grew like a genie / For my further undoing. / Beware of my friends, / Be not in speech too civil, / For in all courtesy / My weak heart sees spectres, / Mists of desire / Arising from the lips of my chosen; / Be not civil. / The flower I gave thee once / Was incident to a stride, / A detail of a gesture, / But search those pale petals / And see engraven thereon / A record of my intention."
     },
     {
       "id": "s29-0",
       "sceneId": "s29",
-      "text": "A silence from the moon's deepest valley."
+      "text": "Ah, God, the way your little finger moved, / As you thrust a bare arm backward / And made play with your hair / And a comb, a silly gilt comb / --Ah, God--that I should suffer / Because of the way a little finger moved."
     },
     {
       "id": "s30-0",
       "sceneId": "s30",
-      "text": "Of hooded men, squat and dumb. Before them, a woman"
+      "text": "Once I saw thee idly rocking / --Idly rocking-- / And chattering girlishly to other girls, / Bell-voiced, happy, / Careless with the stout heart of unscarred womanhood, / And life to thee was all light melody. / I thought of the great storms of love as I knew it, / Torn, miserable, and ashamed of my open sorrow, / I thought of the thunders that lived in my head, / And I wish to be an ogre, / And hale and haul my beloved to a castle, / And make her mourn with my mourning."
     },
     {
       "id": "s31-0",
       "sceneId": "s31",
-      "text": "And distant thunder of drums, While mystic things, sinuous, dull with terrible color,"
+      "text": "Tell me why, behind thee, / I see always the shadow of another lover? / Is it real, / Or is this the thrice damned memory of a better happiness? / Plague on him if he be dead, / Plague on him if he be alive-- / A swinish numskull / To intrude his shade / Always between me and my peace!"
     },
     {
       "id": "s32-0",
       "sceneId": "s32",
-      "text": "Or move at her will, swishing stealthily over the sand."
+      "text": "And yet I have seen thee happy with me. / I am no fool / To poll stupidly into iron. / I have heard your quick breaths / And seen your arms writhe toward me; / At those times / --God help us-- / I was impelled to be a grand knight, / And swagger and snap my fingers, / And explain my mind finely. / Oh, lost sweetheart, / I would that I had not been a grand knight. / I said: \"Sweetheart.\" / Thou said'st: \"Sweetheart.\" / And we preserved an admirable mimicry / Without heeding the drip of the blood / From my heart."
     },
     {
       "id": "s33-0",
       "sceneId": "s33",
-      "text": "The whispering, whispering snakes, Dreaming and swaying and staring,"
+      "text": "I heard thee laugh, / And in this merriment / I defined the measure of my pain; / I knew that I was alone, / Alone with love, / Poor shivering love, / And he, little sprite, / Came to watch with me, / And at midnight, / We were like two creatures by a dead camp-fire."
     },
     {
       "id": "s34-0",
       "sceneId": "s34",
-      "text": "The wind streams from the lone reaches Of Arabia, solemn with night,"
+      "text": "I wonder if sometimes in the dusk, / When the brave lights that gild thy evenings / Have not yet been touched with flame, / I wonder if sometimes in the dusk / Thou rememberest a time, / A time when thou loved me / And our love was to thee thy all? / Is the memory rubbish now? / An old gown / Worn in an age of other fashions? / Woe is me, oh, lost one, / For that love is now to me / A supernal dream, / White, white, white with many suns."
     },
     {
       "id": "s35-0",
       "sceneId": "s35",
-      "text": "Over the robes of the hooded men Squat and dumb."
+      "text": "Love met me at noonday, / --Reckless imp, / To leave his shaded nights / And brave the glare,-- / And I saw him then plainly / For a bungler, / A stupid, simpering, eyeless bungler, / Breaking the hearts of brave people / As the snivelling idiot-boy cracks his bowl, / And I cursed him, / Cursed him to and fro, back and forth, / Into all the silly mazes of his mind, / But in the end / He laughed and pointed to my breast, / Where a heart still beat for thee, beloved."
     },
     {
       "id": "s36-0",
       "sceneId": "s36",
-      "text": "Circle the throat and arms of her, And over the sands serpents move warily"
-    },
-    {
-      "id": "s37-0",
-      "sceneId": "s37",
-      "text": "Swinging to the whistles and drums, The whispering, whispering snakes,"
-    },
-    {
-      "id": "s38-0",
-      "sceneId": "s38",
-      "text": "But always whispering, softly whispering. The dignity of the accursed;"
-    },
-    {
-      "id": "s39-0",
-      "sceneId": "s39",
-      "text": "Is in the dance of the whispering snakes."
-    },
-    {
-      "id": "s40-0",
-      "sceneId": "s40",
-      "text": "Which, bawled by boys from mile to mile, Spreads its curious opinion"
-    },
-    {
-      "id": "s41-0",
-      "sceneId": "s41",
-      "text": "While families cuddle the joys of the fireside When spurred by tale of dire lone agony."
-    },
-    {
-      "id": "s42-0",
-      "sceneId": "s42",
-      "text": "Where every one is kindly and unfairly tried By a squalor of honest men."
-    },
-    {
-      "id": "s43-0",
-      "sceneId": "s43",
-      "text": "Where wisdom sells its freedom And melons are crowned by the crowd."
-    },
-    {
-      "id": "s44-0",
-      "sceneId": "s44",
-      "text": "Where his error scores the player victory While another's skill wins death."
-    },
-    {
-      "id": "s45-0",
-      "sceneId": "s45",
-      "text": "It is fetless life's chronical, A collection of loud tales"
-    },
-    {
-      "id": "s46-0",
-      "sceneId": "s46",
-      "text": "That in remote ages lived unhaltered, Roaming through a fenceless world."
-    },
-    {
-      "id": "s47-0",
-      "sceneId": "s47",
-      "text": "Perceiving the pathway to truth, Was struck with astonishment."
-    },
-    {
-      "id": "s48-0",
-      "sceneId": "s48",
-      "text": "\"Ha,\" he said, \"I see that none has passed here \"In a long time.\""
-    },
-    {
-      "id": "s49-0",
-      "sceneId": "s49",
-      "text": "Was a singular knife. \"Well,\" he mumbled at last, \"Doubtless there are other roads.\""
-    },
-    {
-      "id": "s50-0",
-      "sceneId": "s50",
-      "text": "A forgotten sky of bashful blue."
-    },
-    {
-      "id": "s51-0",
-      "sceneId": "s51",
-      "text": "A song of collisions and cries, Rumbling wheels, hoof-beats, bells,"
-    },
-    {
-      "id": "s52-0",
-      "sceneId": "s52",
-      "text": "Voices of joy, idiocy, warning, despair, The unknown appeals of brutes,"
-    },
-    {
-      "id": "s53-0",
-      "sceneId": "s53",
-      "text": "The screams of cut trees, The senseless babble of hens and wise men--"
-    },
-    {
-      "id": "s54-0",
-      "sceneId": "s54",
-      "text": "stars; \"O God, save us!\""
-    },
-    {
-      "id": "s55-0",
-      "sceneId": "s55",
-      "text": "Appealed to the heavens. With a strong voice he called to the deaf spheres;"
-    },
-    {
-      "id": "s56-0",
-      "sceneId": "s56",
-      "text": "Lo, at last, there was a dot on the clouds, And--at last and at last-- --God--the sky was filled with armies."
-    },
-    {
-      "id": "s57-0",
-      "sceneId": "s57",
-      "text": "Who essayed to sing, And in truth it was lamentable."
-    },
-    {
-      "id": "s58-0",
-      "sceneId": "s58",
-      "text": "The clip-clapper of this tongue of wood And knew what the man"
-    },
-    {
-      "id": "s59-0",
-      "sceneId": "s59",
-      "text": "And with that the singer was content."
-    },
-    {
-      "id": "s60-0",
-      "sceneId": "s60",
-      "text": "Through the water of the years, Reeking wet with mistakes,--"
-    },
-    {
-      "id": "s61-0",
-      "sceneId": "s61",
-      "text": "Slimed with victories over the lesser, A figure thankful on the shore of money."
-    },
-    {
-      "id": "s62-0",
-      "sceneId": "s62",
-      "text": "He buys silken banners Limned with his triumphant face;"
-    },
-    {
-      "id": "s63-0",
-      "sceneId": "s63",
-      "text": "He buys the trivial bows of all. Flesh painted with marrow"
-    },
-    {
-      "id": "s64-0",
-      "sceneId": "s64",
-      "text": "A coverlet for his contented slumber. In guiltless ignorance, in ignorant guilt,"
-    },
-    {
-      "id": "s65-0",
-      "sceneId": "s65",
-      "text": "\"Thus I defended: Thus I wrought.\" Complacent, smiling,"
-    },
-    {
-      "id": "s66-0",
-      "sceneId": "s66",
-      "text": "Erect on a pillar of skulls He declaims his trampling of babes;"
-    },
-    {
-      "id": "s67-0",
-      "sceneId": "s67",
-      "text": "He makes speech in guiltless ignorance, Innocence."
-    },
-    {
-      "id": "s68-0",
-      "sceneId": "s68",
-      "text": "Grey heavy clouds muffled the valleys, And the peaks looked toward God alone. \"O Master that movest the wind with a finger, \"Humble, idle, futile peaks are we. \"Grant that we may run swiftly across the world \"To huddle in worship at Thy feet.\""
-    },
-    {
-      "id": "s69-0",
-      "sceneId": "s69",
-      "text": "A noise of men at work came the clear blue miles, And the little black cities were apparent. \"O Master that knowest the meaning of raindrops, \"Humble, idle, futile peaks are we. \"Give voice to us, we pray, O Lord, \"That we may sing Thy goodness to the sun.\""
-    },
-    {
-      "id": "s70-0",
-      "sceneId": "s70",
-      "text": "The far valleys were sprinkled with tiny lights. \"O Master, \"Thou that knowest the value of kings and birds, \"Thou hast made us humble, idle, futile peaks. \"Thous only needest eternal patience; \"We bow to Thy wisdom, O Lord-- \"Humble, idle, futile peaks.\""
-    },
-    {
-      "id": "s71-0",
-      "sceneId": "s71",
-      "text": "Grey heavy clouds muffles the valleys, And the peaks looked toward God alone."
-    },
-    {
-      "id": "s72-0",
-      "sceneId": "s72",
-      "text": "Blood--blood and torn grass--"
-    },
-    {
-      "id": "s73-0",
-      "sceneId": "s73",
-      "text": "This lone hunter. The grey-green woods impassive"
-    },
-    {
-      "id": "s74-0",
-      "sceneId": "s74",
-      "text": "A canoe with flashing paddle,"
-    },
-    {
-      "id": "s75-0",
-      "sceneId": "s75",
-      "text": "A call: \"John!\" . . . . . . ."
-    },
-    {
-      "id": "s76-0",
-      "sceneId": "s76",
-      "text": "Can you not hear?"
-    },
-    {
-      "id": "s77-0",
-      "sceneId": "s77",
-      "text": "top."
-    },
-    {
-      "id": "s78-0",
-      "sceneId": "s78",
-      "text": "Smiles warm red light, Sweeping from the hearth rosily upon the white table,"
-    },
-    {
-      "id": "s79-0",
-      "sceneId": "s79",
-      "text": "Moving softly upon the door."
-    },
-    {
-      "id": "s80-0",
-      "sceneId": "s80",
-      "text": "Is a crash of flunkys, And yawning emblems of Persia"
-    },
-    {
-      "id": "s81-0",
-      "sceneId": "s81",
-      "text": "The outcry of old beauty Whored by pimping merchants"
-    },
-    {
-      "id": "s82-0",
-      "sceneId": "s82",
-      "text": "Silly rich peasants stamp the carpets of men, Dead men who dreamed fragrance and light"
-    },
-    {
-      "id": "s83-0",
-      "sceneId": "s83",
-      "text": "The rug of an honest bear Under the feet of a cryptic slave"
-    },
-    {
-      "id": "s84-0",
-      "sceneId": "s84",
-      "text": "Forgetting state, multitude, work, and state, Champing and mouthing of hats,"
-    },
-    {
-      "id": "s85-0",
-      "sceneId": "s85",
-      "text": "Hats."
-    },
-    {
-      "id": "s86-0",
-      "sceneId": "s86",
-      "text": "\"Sir, I exist!\" \"However,\" replied the universe, \"The fact has not created in me \"A sense of obligation.\""
-    },
-    {
-      "id": "s87-0",
-      "sceneId": "s87",
-      "text": "man, Arrived at the mountain-top,"
-    },
-    {
-      "id": "s88-0",
-      "sceneId": "s88",
-      "text": "\"I intended to see good white lands \"And bad black lands, \"But the scene is grey.\""
-    },
-    {
-      "id": "s89-0",
-      "sceneId": "s89",
-      "text": "violets. A traveller at once demanded: \"Why?\""
-    },
-    {
-      "id": "s90-0",
-      "sceneId": "s90",
-      "text": "\"Once the violets of this place spoke thus: \"'Until some woman freely give her lover \"'To another woman \"'We will fight in bloody scuffle.'\""
-    },
-    {
-      "id": "s91-0",
-      "sceneId": "s91",
-      "text": "\"There are no violets here.\""
-    },
-    {
-      "id": "s92-0",
-      "sceneId": "s92",
-      "text": "Who looked at me with kind eyes. He said: \"Show me of your wares.\""
-    },
-    {
-      "id": "s93-0",
-      "sceneId": "s93",
-      "text": "Holding forth one, He said: \"It is a sin.\""
-    },
-    {
-      "id": "s94-0",
-      "sceneId": "s94",
-      "text": "He said: \"It is a sin.\" Then I held forth another."
-    },
-    {
-      "id": "s95-0",
-      "sceneId": "s95",
-      "text": "And so to the end. Always He said: \"It is a sin.\""
-    },
-    {
-      "id": "s96-0",
-      "sceneId": "s96",
-      "text": "\"But I have non other.\" He looked at me"
-    },
-    {
-      "id": "s97-0",
-      "sceneId": "s97",
-      "text": "\"Poor soul,\" he said."
-    },
-    {
-      "id": "s98-0",
-      "sceneId": "s98",
-      "text": "A dream for my love. Cunningly weave sunlight,"
-    },
-    {
-      "id": "s99-0",
-      "sceneId": "s99",
-      "text": "Let it be of the cloth of meadows. And--good workman--"
-    },
-    {
-      "id": "s100-0",
-      "sceneId": "s100",
-      "text": "A lantern voice-- In little songs of carmine, violet, green, gold."
-    },
-    {
-      "id": "s101-0",
-      "sceneId": "s101",
-      "text": "The wondrous leaf-shadow no longer wavered, No pines crooned on the hills,"
-    },
-    {
-      "id": "s102-0",
-      "sceneId": "s102",
-      "text": "When the chorus of colors came over the water,"
-    },
-    {
-      "id": "s103-0",
-      "sceneId": "s103",
-      "text": "Small glowing pebbles"
-    },
-    {
-      "id": "s104-0",
-      "sceneId": "s104",
-      "text": "Sing good ballads of God And eternity, with soul's rest."
-    },
-    {
-      "id": "s105-0",
-      "sceneId": "s105",
-      "text": "None can doubt the truth of hour hymning. When the marvellous chorus comes over the water,"
-    },
-    {
-      "id": "s106-0",
-      "sceneId": "s106",
-      "text": "Children ran there joyously. They gathered the flowers"
-    },
-    {
-      "id": "s107-0",
-      "sceneId": "s107",
-      "text": "Now there were some Who gathered great heaps--"
-    },
-    {
-      "id": "s108-0",
-      "sceneId": "s108",
-      "text": "Until, behold, only chance blossoms Remained for the feeble."
-    },
-    {
-      "id": "s109-0",
-      "sceneId": "s109",
-      "text": "Ran importantly to the father, crying: \"Pray, come hither! \"See this unjust thing in your garden!\""
-    },
-    {
-      "id": "s110-0",
-      "sceneId": "s110",
-      "text": "He admonished the tutor: \"Not so, small sage! \"This thing is just. \"For, look you, \"Are not they who possess the flowers \"Stronger, bolder, shrewder \"Than they who have none? \"Why should the strong-- \"The beautiful strong-- \"Why should they not have the flowers?"
-    },
-    {
-      "id": "s111-0",
-      "sceneId": "s111",
-      "text": "ground. \"My lord,\" he said, \"The stars are displaced \"By this towering wisdom.\""
-    },
-    {
-      "id": "s112-0",
-      "sceneId": "s112",
-      "text": "Thou art my love,"
-    },
-    {
-      "id": "s113-0",
-      "sceneId": "s113",
-      "text": "When the blue shadows soothe, And the grasses and the leaves sleep"
-    },
-    {
-      "id": "s114-0",
-      "sceneId": "s114",
-      "text": "Woe is me."
-    },
-    {
-      "id": "s115-0",
-      "sceneId": "s115",
-      "text": "And thou art a strorm That breaks black in the sky,"
-    },
-    {
-      "id": "s116-0",
-      "sceneId": "s116",
-      "text": "Drenches and cowers each tree, And at the panting end"
-    },
-    {
-      "id": "s117-0",
-      "sceneId": "s117",
-      "text": "Save the melancholy cry of a single owl-- Woe is me!"
-    },
-    {
-      "id": "s118-0",
-      "sceneId": "s118",
-      "text": "And thou art a tinsel thing, And I in my play"
-    },
-    {
-      "id": "s119-0",
-      "sceneId": "s119",
-      "text": "And from the little fragments Arose my long sorrow--"
-    },
-    {
-      "id": "s120-0",
-      "sceneId": "s120",
-      "text": "Thou art my love,"
-    },
-    {
-      "id": "s121-0",
-      "sceneId": "s121",
-      "text": "Drooping from sun-caresses, Answering mine carelessly--"
-    },
-    {
-      "id": "s122-0",
-      "sceneId": "s122",
-      "text": "Thou art my love,"
-    },
-    {
-      "id": "s123-0",
-      "sceneId": "s123",
-      "text": "And I bury my face in these ashes, And I love them--"
-    },
-    {
-      "id": "s124-0",
-      "sceneId": "s124",
-      "text": "Thou art my love,"
-    },
-    {
-      "id": "s125-0",
-      "sceneId": "s125",
-      "text": "On another man's face-- Woe is me."
-    },
-    {
-      "id": "s126-0",
-      "sceneId": "s126",
-      "text": "And thou art a temple, And in this temple is an altar,"
-    },
-    {
-      "id": "s127-0",
-      "sceneId": "s127",
-      "text": "Woe is me."
-    },
-    {
-      "id": "s128-0",
-      "sceneId": "s128",
-      "text": "And thou art a wretch. Let these sacred love-lies choke thee,"
-    },
-    {
-      "id": "s129-0",
-      "sceneId": "s129",
-      "text": "as truth And you truth as lies--"
-    },
-    {
-      "id": "s130-0",
-      "sceneId": "s130",
-      "text": "Thou art my love,"
-    },
-    {
-      "id": "s131-0",
-      "sceneId": "s131",
-      "text": "And in they hand is a bloody dagger, And my doom comes to me surely--"
-    },
-    {
-      "id": "s132-0",
-      "sceneId": "s132",
-      "text": "Thou art my love,"
-    },
-    {
-      "id": "s133-0",
-      "sceneId": "s133",
-      "text": "And I love thee-- Woe is me."
-    },
-    {
-      "id": "s134-0",
-      "sceneId": "s134",
-      "text": "And I doubt thee. And if peace came with thy murder"
-    },
-    {
-      "id": "s135-0",
-      "sceneId": "s135",
-      "text": "Woe is me."
-    },
-    {
-      "id": "s136-0",
-      "sceneId": "s136",
-      "text": "And thou art death, Aye, thou art death"
-    },
-    {
-      "id": "s137-0",
-      "sceneId": "s137",
-      "text": "But I love thee, I love thee--"
-    },
-    {
-      "id": "s138-0",
-      "sceneId": "s138",
-      "text": "For in your grief You huddle to my breast,"
-    },
-    {
-      "id": "s139-0",
-      "sceneId": "s139",
-      "text": "Would I pay the price of your grief."
-    },
-    {
-      "id": "s140-0",
-      "sceneId": "s140",
-      "text": "And all men do not surrender, And thus I understand"
-    },
-    {
-      "id": "s141-0",
-      "sceneId": "s141",
-      "text": "In mercy to me."
-    },
-    {
-      "id": "s142-0",
-      "sceneId": "s142",
-      "text": "A scurvy traitor picture, And he smiled --Merely a fat complacence of men who know fine women--"
-    },
-    {
-      "id": "s143-0",
-      "sceneId": "s143",
-      "text": "A part of my love."
-    },
-    {
-      "id": "s144-0",
-      "sceneId": "s144",
-      "text": "Can make men weep! --Some men weep."
-    },
-    {
-      "id": "s145-0",
-      "sceneId": "s145",
-      "text": "And I love the little shoe, The little, little shoe."
-    },
-    {
-      "id": "s146-0",
-      "sceneId": "s146",
-      "text": "God give me loud honors, That I may strut before you, sweetheart,"
-    },
-    {
-      "id": "s147-0",
-      "sceneId": "s147",
-      "text": "The love I bear you."
-    },
-    {
-      "id": "s148-0",
-      "sceneId": "s148",
-      "text": "With full weight of affrighted love. I doubted you --I doubted you--"
-    },
-    {
-      "id": "s149-0",
-      "sceneId": "s149",
-      "text": "My love grew like a genie For my further undoing."
-    },
-    {
-      "id": "s150-0",
-      "sceneId": "s150",
-      "text": "Be not in speech too civil, For in all courtesy"
-    },
-    {
-      "id": "s151-0",
-      "sceneId": "s151",
-      "text": "Mists of desire Arising from the lips of my chosen;"
-    },
-    {
-      "id": "s152-0",
-      "sceneId": "s152",
-      "text": "The flower I gave thee once"
-    },
-    {
-      "id": "s153-0",
-      "sceneId": "s153",
-      "text": "A detail of a gesture, But search those pale petals"
-    },
-    {
-      "id": "s154-0",
-      "sceneId": "s154",
-      "text": "A record of my intention."
-    },
-    {
-      "id": "s155-0",
-      "sceneId": "s155",
-      "text": "As you thrust a bare arm backward And made play with your hair"
-    },
-    {
-      "id": "s156-0",
-      "sceneId": "s156",
-      "text": "--Ah, God--that I should suffer Because of the way a little finger moved."
-    },
-    {
-      "id": "s157-0",
-      "sceneId": "s157",
-      "text": "--Idly rocking-- And chattering girlishly to other girls,"
-    },
-    {
-      "id": "s158-0",
-      "sceneId": "s158",
-      "text": "Careless with the stout heart of unscarred womanhood,"
-    },
-    {
-      "id": "s159-0",
-      "sceneId": "s159",
-      "text": "I thought of the great storms of love as I knew it,"
-    },
-    {
-      "id": "s160-0",
-      "sceneId": "s160",
-      "text": "sorrow, I thought of the thunders that lived in my head,"
-    },
-    {
-      "id": "s161-0",
-      "sceneId": "s161",
-      "text": "And hale and haul my beloved to a castle, And make her mourn with my mourning."
-    },
-    {
-      "id": "s162-0",
-      "sceneId": "s162",
-      "text": "I see always the shadow of another lover? Is it real,"
-    },
-    {
-      "id": "s163-0",
-      "sceneId": "s163",
-      "text": "better happiness? Plague on him if he be dead,"
-    },
-    {
-      "id": "s164-0",
-      "sceneId": "s164",
-      "text": "A swinish numskull To intrude his shade"
-    },
-    {
-      "id": "s165-0",
-      "sceneId": "s165",
-      "text": "I am no fool To poll stupidly into iron."
-    },
-    {
-      "id": "s166-0",
-      "sceneId": "s166",
-      "text": "And seen your arms writhe toward me; At those times --God help us--"
-    },
-    {
-      "id": "s167-0",
-      "sceneId": "s167",
-      "text": "And swagger and snap my fingers, And explain my mind finely."
-    },
-    {
-      "id": "s168-0",
-      "sceneId": "s168",
-      "text": "I would that I had not been a grand knight. I said: \"Sweetheart.\""
-    },
-    {
-      "id": "s169-0",
-      "sceneId": "s169",
-      "text": "And we preserved an admirable mimicry Without heeding the drip of the blood"
-    },
-    {
-      "id": "s170-0",
-      "sceneId": "s170",
-      "text": "And in this merriment I defined the measure of my pain;"
-    },
-    {
-      "id": "s171-0",
-      "sceneId": "s171",
-      "text": "Alone with love, Poor shivering love,"
-    },
-    {
-      "id": "s172-0",
-      "sceneId": "s172",
-      "text": "Came to watch with me, And at midnight,"
-    },
-    {
-      "id": "s173-0",
-      "sceneId": "s173",
-      "text": "When the brave lights that gild thy evenings"
-    },
-    {
-      "id": "s174-0",
-      "sceneId": "s174",
-      "text": "I wonder if sometimes in the dusk Thou rememberest a time,"
-    },
-    {
-      "id": "s175-0",
-      "sceneId": "s175",
-      "text": "And our love was to thee thy all? Is the memory rubbish now?"
-    },
-    {
-      "id": "s176-0",
-      "sceneId": "s176",
-      "text": "Worn in an age of other fashions? Woe is me, oh, lost one,"
-    },
-    {
-      "id": "s177-0",
-      "sceneId": "s177",
-      "text": "A supernal dream, White, white, white with many suns."
-    },
-    {
-      "id": "s178-0",
-      "sceneId": "s178",
-      "text": "--Reckless imp, To leave his shaded nights"
-    },
-    {
-      "id": "s179-0",
-      "sceneId": "s179",
-      "text": "And I saw him then plainly For a bungler,"
-    },
-    {
-      "id": "s180-0",
-      "sceneId": "s180",
-      "text": "Breaking the hearts of brave people As the snivelling idiot-boy cracks his bowl,"
-    },
-    {
-      "id": "s181-0",
-      "sceneId": "s181",
-      "text": "Cursed him to and fro, back and forth, Into all the silly mazes of his mind,"
-    },
-    {
-      "id": "s182-0",
-      "sceneId": "s182",
-      "text": "He laughed and pointed to my breast, Where a heart still beat for thee, beloved."
-    },
-    {
-      "id": "s183-0",
-      "sceneId": "s183",
-      "text": "For love of me, Thy fair arms go mad,"
-    },
-    {
-      "id": "s184-0",
-      "sceneId": "s184",
-      "text": "And--surely-- This should leave a man content?"
-    },
-    {
-      "id": "s185-0",
-      "sceneId": "s185",
-      "text": "But thou didst love me, And in loving me once Thou gavest me an eternal privilege, For I can think of thee."
+      "text": "I have seen thy face aflame / For love of me, / Thy fair arms go mad, / Thy lips tremble and mutter and rave. / And--surely-- / This should leave a man content? / Thou lovest not me now, / But thou didst love me, / And in loving me once / Thou gavest me an eternal privilege, / For I can think of thee."
     }
   ]
 }

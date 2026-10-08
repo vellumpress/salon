@@ -4,890 +4,582 @@
   "author": "Walter de la Mare",
   "year": "1913",
   "note": "Project Gutenberg 3753",
-  "minutes": 39,
+  "minutes": 44,
   "cover": "",
   "coverAlt": "",
   "scenes": [
     {
       "id": "s0",
-      "title": "Off the Ground",
-      "place": "Off the Ground",
-      "reentry": "The Thief at Robin's Castle",
+      "title": "The Horseman",
+      "place": "The Horseman",
+      "reentry": "I heard a horseman / Ride over the hill; / The moon shone clear, / The night was still; / His helm was silver, / And pale was he; / And the horse he rode / Was of ivory.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s1",
-      "title": "Places and People",
-      "place": "Places and People",
-      "reentry": "A Widow's Weeds 'Sooeep!' Mrs. MacQueen The Little Green Orchard Poor Miss 7 Sam Andy Battle The Old Soldier The Picture The Little Old Cupid King David The Old House",
+      "title": "Up and Down",
+      "place": "Up and Down",
+      "reentry": "Down the Hill of Ludgate, / Up the Hill of Fleet, / To and fro and East and West / With people flows the street; / Even the King of England / On Temple Bar must beat / For leave to ride to Ludgate / Down the Hill of Fleet.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s2",
-      "title": "Can tan my skin, and tire my toes,",
-      "place": "Can tan my skin, and tire my toes,",
-      "reentry": "But all that I'm thinking of, ever shall think, Why, either knows.",
+      "title": "Mrs. Earth",
+      "place": "Mrs. Earth",
+      "reentry": "Mrs. Earth makes silver black, / Mrs. Earth makes iron red / But Mrs. Earth can not stain gold, / Nor ruby red. / Mrs. earth the slenderest bone / Whitens in her bosom cold, / But Mrs. Earth can change my dreams / No more than ruby or gold. / Mrs. Earth and Mr. Sun / Can tan my skin, and tire my toes, / But all that I'm thinking of, ever shall think, / Why, either knows.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s3",
-      "title": "Ann, Ann!",
-      "place": "Ann, Ann!",
-      "reentry": "Come! Quick as you can! There's a fish that talks In the frying-pan. Out of the fat, As clear as glass,",
+      "title": "Alas, Alack",
+      "place": "Alas, Alack",
+      "reentry": "Ann, Ann! / Come! Quick as you can! / There's a fish that talks / In the frying-pan. / Out of the fat, / As clear as glass, / He put up his mouth / And moaned 'Alas!' / Oh, most mournful, / 'Alas, alack!' / Then turned to his sizzling, / And sank him back.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s4",
-      "title": "Oh, most mournful,",
-      "place": "Oh, most mournful,",
-      "reentry": "'Alas, alack!' Then turned to his sizzling,",
+      "title": "Tired Tim",
+      "place": "Tired Tim",
+      "reentry": "Poor Tired Tim! It's sad for him. / He lags the long bright morning through, / Ever so tired of nothing to do; / He moons and mopes the livelong day, / Nothing to think about, nothing to say; / Up to bed with his candle to creep, / Too tired to yawn, too tired to sleep: / Poor Tired Tim! It's sad for him.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s5",
-      "title": "Tired Tim",
-      "place": "Tired Tim",
-      "reentry": "Poor Tired Tim! It's sad for him. He lags the long bright morning through,",
+      "title": "Mima",
+      "place": "Mima",
+      "reentry": "Jemima is my name, / But oh, I have another; / My father always calls me Meg, / And so do Bob and mother; / Only my sister, jealous of / The strands of my bright hair, / 'Jemima - Mima - Mima!' / Calls, mocking, up the stair.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s6",
-      "title": "Too tired to yawn, too tired to sleep:",
-      "place": "Too tired to yawn, too tired to sleep:",
-      "reentry": "Poor Tired Tim! It's sad for him.",
+      "title": "The Huntsmen",
+      "place": "The Huntsmen",
+      "reentry": "Three jolly gentlemen, / In coats of red, / Rode their horses / Up to bed. / Three jolly gentlemen / Snored till morn, / Their horses champing / The golden corn. / Three jolly gentlemen, / At break of day, / Came clitter-clatter down the stairs / And galloped away.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s7",
-      "title": "'Jemima - Mima - Mima!'",
-      "place": "'Jemima - Mima - Mima!'",
-      "reentry": "Calls, mocking, up the stair.",
+      "title": "The Bandog",
+      "place": "The Bandog",
+      "reentry": "Has anybody seen my Mopser? -- / A comely dog is he, / With hair of the colour of a Charles the Fifth, / And teeth like ships at sea, / His tail it curls straight upwards, / His ears stand two abreast, / And he answers to the simple name of Mopser / When civilly addressed.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s8",
-      "title": "And he answers to the simple name of Mopser",
-      "place": "And he answers to the simple name of Mopser",
-      "reentry": "When civilly addressed.",
+      "title": "I Can't Abear",
+      "place": "I Can't Abear",
+      "reentry": "I can't abear a Butcher, / I can't abide his meat, / The ugliest shop of all is his, / The ugliest in the street; / Bakers' are warm, cobblers' dark, / Chemists' burn watery lights; / But oh, the sawdust butcher's shop, / That ugliest of sights!",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s9",
-      "title": "Why does the sun so silent shine? --",
-      "place": "Why does the sun so silent shine? --",
-      "reentry": "And what do I care if it does?",
+      "title": "The Dunce",
+      "place": "The Dunce",
+      "reentry": "Why does he still keep ticking? / Why does his round white face / Stare at me over the books and ink, / And mock at my disgrace? / Why does that thrush call, 'Dunce, dunce, dunce!'? / Why does that bluebottle buzz? / Why does the sun so silent shine? -- / And what do I care if it does?",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s10",
-      "title": "Like feathers blown in a great wind,",
-      "place": "Like feathers blown in a great wind,",
-      "reentry": "They came at Bessie's call.",
+      "title": "Chicken",
+      "place": "Chicken",
+      "reentry": "Clapping her platter stood plump Bess, / And all across the green / Came scampering in, on wing and claw, / Chicken fat and lean: / Dorking, Spaniard, Cochin China, / Bantams sleek and small, / Like feathers blown in a great wind, / They came at Bessie's call.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s11",
-      "title": "Bread and Cherries",
-      "place": "Bread and Cherries",
-      "reentry": "'Cherries, ripe cherries!' The old woman cried, In her snowy white apron, And basket beside; And the little boys came, Eyes shining, cheeks red, To buy a bag of cherries, To eat with their bread.",
+      "title": "Some One",
+      "place": "Some One",
+      "reentry": "Some one came knocking / At my wee, small door; / Some one came knocking, / I'm sure - sure - sure; / I listened, I opened, / I looked to left and right, / But naught there was a-stirring / In the still dark night; / Only the busy beetle / Tap-tapping in the wall, / Only from the forest / The screech-owl's call, / Only the cricket whistling / While the dewdrops fall, / So I know not who came knocking, / At all, at all, at all.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s12",
-      "title": "Come!' said Old Shellover",
-      "place": "Come!' said Old Shellover",
-      "reentry": "'Aye!' said Creep.",
+      "title": "Bread and Cherries",
+      "place": "Bread and Cherries",
+      "reentry": "'Cherries, ripe cherries!' / The old woman cried, / In her snowy white apron, / And basket beside; / And the little boys came, / Eyes shining, cheeks red, / To buy a bag of cherries, / To eat with their bread.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s13",
-      "title": "Had they bitten finger and thumb,",
-      "place": "Had they bitten finger and thumb,",
-      "reentry": "Not to such ill hap I had come.",
+      "title": "Old Shellover",
+      "place": "Old Shellover",
+      "reentry": "'Come!' said Old Shellover. / 'What?' says Creep. / 'The horny old Gardener's fast asleep; / The fat cock Thrush / To his nest has gone; / And the dew shines bright / In the rising Moon; / Old Sallie Worm from her hole doth peep: / Come!' said Old Shellover. / 'Aye!' said Creep.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s14",
-      "title": "In from the dark ivy hopped a",
-      "place": "In from the dark ivy hopped a",
-      "reentry": "Wee small bird: and that was Me.",
+      "title": "Hapless",
+      "place": "Hapless",
+      "reentry": "Hapless, hapless, I must be / All the hours of life I see, / Since my foolish nurse did once / Bed me on her leggen bones; / Since my mother did not weel / To snip my nails with blades of steel. / Had they laid me on a pillow / In a cot of water willow, / Had they bitten finger and thumb, / Not to such ill hap I had come.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s15",
-      "title": "He'd nod and say,",
-      "place": "He'd nod and say,",
-      "reentry": "'Cake and sack For King Caraway!'",
+      "title": "The Little Bird",
+      "place": "The Little Bird",
+      "reentry": "My dear Daddie bought a mansion / For to bring my Mammie to, / In a hat with a long feather, / And a trailing gown of blue; / And a company of fiddlers / And a rout of maids and men / Danced the clock round to the morning, / In a gay house-warming then. / And when all the guests were gone, and / All was still as still can be, / In from the dark ivy hopped a / Wee small bird: and that was Me.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s16",
-      "title": "And nine and ninety monkeys",
-      "place": "And nine and ninety monkeys",
-      "reentry": "Were all her jovial crew. From bo'sun to the cabin boy, From quarter to caboose, There weren't a stitch of calico To breech 'em - tight or loose; From spar to deck, from deck to keel, From barnacle to shroud, There weren't one pair of reach",
+      "title": "Cake and Sack",
+      "place": "Cake and Sack",
+      "reentry": "Old King Caraway / Supped on cake, / And a cup of sack / His thirst to slake; / Bird in arras / And hound in hall / Watched very softly / Or not at all; / Fire in the middle, / Stone all round / Changed not, heeded not, / Made no sound; / All by himself / At the Table High / He'd nibble and sip / While his dreams slipped by; / And when he had finished, / He'd nod and say, / 'Cake and sack / For King Caraway!'",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s17",
-      "title": "To see them all a-scampering skip",
-      "place": "To see them all a-scampering skip",
-      "reentry": "For nuts across the sand!",
+      "title": "The Ship of Rio",
+      "place": "The Ship of Rio",
+      "reentry": "There was a ship of Rio / Sailed out into the blue, / And nine and ninety monkeys / Were all her jovial crew. / From bo'sun to the cabin boy, / From quarter to caboose, / There weren't a stitch of calico / To breech 'em - tight or loose; / From spar to deck, from deck to keel, / From barnacle to shroud, / There weren't one pair of reach-me-downs / To all that jabbering crowd. / But wasn't it a gladsome sight, / When roared the deep sea gales, / To see them reef her fore and aft / A-swinging by their tails! / Oh, wasn't it a gladsome sight, / When glassy calm did come, / To see them squatting tailor-wise / Around a keg of rum! / Oh, wasn't it a gladsome sight, / When in she sailed to land, / To see them all a-scampering skip / For nuts across the sand!",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s18",
-      "title": "Do a-moaning come,",
-      "place": "Do a-moaning come,",
-      "reentry": "'Tis poor old Tillie Sick for home; And oh, when a voice In the mist do sigh, Old Tillie Turveycombe's Floating by.",
+      "title": "Tillie",
+      "place": "Tillie",
+      "reentry": "Old Tillie Turveycombe / Sat to sew, / Just where a patch of fern did grow; / There, as she yawned, / And yawn wide did she, / Floated some seed / Down her gull-e-t; / And look you once, / And look you twice, / Poor old Tillie / Was gone in a trice. / But oh, when the wind / Do a-moaning come, / 'Tis poor old Tillie / Sick for home; / And oh, when a voice / In the mist do sigh, / Old Tillie Turveycombe's / Floating by.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s19",
-      "title": "And stuck was Jim",
-      "place": "And stuck was Jim",
-      "reentry": "Like a rusty pin... We pulled and we pulled From seven till twelve, Jim, too frightened To help himself. But all in vain. The clock struck one, And there was Jim A little bit gone. At half-past five You scarce could see",
+      "title": "Jim Jay",
+      "place": "Jim Jay",
+      "reentry": "Do diddle di do, / Poor Jim Jay / Got stuck fast / In Yesterday. / Squinting he was, / On Cross-legs bent, / Never heeding / The wind was spent. / Round veered the weathercock, / The sun drew in - / And stuck was Jim / Like a rusty pin... / We pulled and we pulled / From seven till twelve, / Jim, too frightened / To help himself. / But all in vain. / The clock struck one, / And there was Jim / A little bit gone. / At half-past five / You scarce could see / A glimpse of his flapping / Handkerchee. / And when came noon, / And we climbed sky-high, / Jim was a speck / Slip - slipping by. / Come to-morrow, / The neighbours say, / He'll be past crying for; / Poor Jim Jay.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s20",
-      "title": "Jim was a speck",
-      "place": "Jim was a speck",
-      "reentry": "Slip - slipping by. Come to-morrow, The neighbours say, He'll be past crying for; Poor Jim Jay.",
+      "title": "Miss T.",
+      "place": "Miss T.",
+      "reentry": "It's a very odd thing ----- / As odd as can be --- / That whatever Miss T. eats / Turns into Miss T.; / Porridge and apples, / Mince, muffins and mutton, / Jam, junket, jumbles ---- / Not a rap, not a button / It matters; the moment / They're out of her plate, / Though shared by Miss Butcher / And sour Mr. Bate; / Tiny and cheerful, / And neat as can be, / Whatever Miss T. eats / Turns into Miss T.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s21",
-      "title": "That whatever Miss T. eats",
-      "place": "That whatever Miss T. eats",
-      "reentry": "Turns into Miss T.; Porridge and apples, Mince, muffins and mutton, Jam, junket, jumbles ---- Not a rap, not a button It matters; the moment",
+      "title": "The Cupboard",
+      "place": "The Cupboard",
+      "reentry": "I know a little cupboard, / With a teeny tiny key, / And there's a jar of Lollypops / For me, me, me. / It has a little shelf, my dear, / As dark as dark can be, / And there's a dish of Banbury Cakes / For me, me, me. / I have a small fat grandmamma, / With a very slippery knee, / And she's the Keeper of the Cupboard / With the key, key, key. / And I'm very good, my dear, / As good as good can be, / There's Branbury Cakes, and Lollypops / For me, me, me.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s22",
-      "title": "And neat as can be,",
-      "place": "And neat as can be,",
-      "reentry": "Whatever Miss T. eats Turns into Miss T.",
+      "title": "The Barber's",
+      "place": "The Barber's",
+      "reentry": "Gold locks, and black locks, / Red locks and brown, / Topknot to love-curl / The hair wisps down; / Straight above the clear eyes, / Rounded round the ears, / Snip-snap and snick-a-snick, / Clash the Barber's shears; / Us, in the looking-glass, / Footsteps in the street, / Over, under, to and fro, / The lean blades meet; / Bay Rum or Bear's Grease, / A silver groat to pay - / Then out a-shin-shan-shining / In the bright, blue day.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s23",
-      "title": "And she's the Keeper of the Cupboard",
-      "place": "And she's the Keeper of the Cupboard",
-      "reentry": "With the key, key, key.",
+      "title": "Hide and Seek",
+      "place": "Hide and Seek",
+      "reentry": "Hide and seek, says the Wind, / In the shade of the woods; / Hide and seek, says the Moon, / To the hazel buds; / Hide and seek, says the Cloud, / Star on to star; / Hide and seek, says the Wave, / At the harbour bar; / Hide and seek, say I, / To myself, and step / Out of the dream of Wake / Into the dream of Sleep.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s24",
-      "title": "Then out a-shin-shan-shining",
-      "place": "Then out a-shin-shan-shining",
-      "reentry": "In the bright, blue day.",
+      "title": "Then",
+      "place": "Then",
+      "reentry": "Boys and Girls",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s25",
-      "title": "Out of the dream of Wake",
-      "place": "Out of the dream of Wake",
-      "reentry": "Into the dream of Sleep.",
+      "title": "The Window",
+      "place": "The Window",
+      "reentry": "Behind the blinds I sit and watch / The people passing - passing by; / And not a single one can see / My tiny watching eye. / They cannot see my little room, / All yellowed with the shaded sun; / They do not even know I'm here; / Nor'll guess when I am gone.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s26",
-      "title": "A faint and shaken voice would shout,",
-      "place": "A faint and shaken voice would shout,",
-      "reentry": "'Three! And a storm of hail!'",
+      "title": "Poor Henry",
+      "place": "Poor Henry",
+      "reentry": "Thick in its glass / The physic stands, / Poor Henry lifts / Distracted hands; / His round cheek wans / In the candlelight, / To smell that smell! / To see that sight! / Finger and thumb / Clinch his small nose, / A gurgle, a gasp, / And down it goes; / Scowls Henry now; / But mark that cheek, / Sleek with the bloom / Of health next week!",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s27",
-      "title": "They do not even know I'm here;",
-      "place": "They do not even know I'm here;",
-      "reentry": "Nor'll guess when I am gone.",
+      "title": "Full Moon",
+      "place": "Full Moon",
+      "reentry": "One night as Dick lay half asleep, / Into his drowsy eyes / A great still light begins to creep / From out the silent skies. / It was lovely moon's, for when / He raised his dreamy head, / Her surge of silver filled the pane / And streamed across his bed. / So, for a while, each gazed at each - / Dick and the solemn moon - / Till, climbing slowly on her way, / She vanished, and was gone.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s28",
-      "title": "In the candlelight,",
-      "place": "In the candlelight,",
-      "reentry": "To smell that smell! To see that sight!",
+      "title": "The Bookworm",
+      "place": "The Bookworm",
+      "reentry": "'I'm tired - Oh, tired of books,' said Jack, / 'I long for meadows green, / And woods, where shadowy violets / Nod their cool leaves between; / I long to see the ploughman stride / His darkening acres o'er, / To hear the hoarse sea-waters drive / Their billows 'gainst the shore; / I long to watch the sea-mew wheel / Back to her rock-perched mate; / Or, where the breathing cows are housed, / Lean dreaming o'er the gate. / Something has gone, and ink and print / Will never bring it back; / I long for the green fields again, / I'm tired of books,' said Jack.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s29",
-      "title": "Sleek with the bloom",
-      "place": "Sleek with the bloom",
-      "reentry": "Of health next week!",
+      "title": "The Quartette",
+      "place": "The Quartette",
+      "reentry": "Tom sang for joy and Ned sang for joy and old Sam sang for joy; / All we four boys piped up loud, just like one boy; / And the ladies that sate with the Squire - their cheeks were all wet, / For the noise of the voice of us boys, when we sang our Quartette. / Tom he piped low and Ned he piped low and old Sam he piped low; / Into a sorrowful fall did our music flow; / And the ladies that sate with the Squire vowed they'd never forget / How the eyes of them cried for delight, when we sang our Quartette.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s30",
-      "title": "'I'm tired - Oh, tired of books,' said Jack,",
-      "place": "'I'm tired - Oh, tired of books,' said Jack,",
-      "reentry": "'I long for meadows green, And woods, where shadowy violets Nod their cool leaves between; I long to see the ploughman stride His darkening acres o'er,",
+      "title": "Mistletoe",
+      "place": "Mistletoe",
+      "reentry": "Sitting under the mistletoe / (Pale-green, fairy mistletoe), / One last candle burning low, / All the sleepy dancers gone, / Just one candle burning on, / Shadows lurking everywhere: / Some one came, and kissed me there. / Tired I was; my head would go / Nodding under the mistletoe / (Pale-green, fairy mistletoe), / No footsteps came, no voice, but only, / Just as I sat there, sleepy, lonely, / Stooped in the still and shadowy air / Lips unseen - and kissed me there.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s31",
-      "title": "The Quartette",
-      "place": "The Quartette",
-      "reentry": "Tom sang for joy and Ned sang for joy and old Sam sang for joy;",
+      "title": "The Lost Shoe",
+      "place": "The Lost Shoe",
+      "reentry": "Poor little Lucy / By some mischance, / Lost her shoe / As she did dance - / 'Twas not on the stairs, / Not in the hall; / Not where they sat / At supper at all. / She looked in the garden, / But there it was not; / Henhouse, or kennel, / Or high dovecote. / Dairy and meadow, / And wild woods through / Showed not a trace / Of Lucy's shoe. / Bird nor bunny / Nor glimmering moon / Breathed a whisper / Of where 'twas gone. / It was cried and cried, / Oyez and Oyez! / In French, Dutch, Latin, / And Portuguese. / Ships the dark seas / Went plunging through, / But none brought news / Of Lucy's shoe; / And still she patters / In silk and leather, / O'er snow, sand, shingle, / In every weather; / Spain, and Africa, / Hindustan, / Java, China, / And lamped Japan; / Plain and desert, / She hops-hops through, / Pernambuco / To gold Peru; / Mountain and forest, / And river too, / All the world over / For her lost shoe.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s32",
-      "title": "All we four boys piped up loud, just like one boy;",
-      "place": "All we four boys piped up loud, just like one boy;",
-      "reentry": "And the ladies that sate with the Squire - their cheeks were all wet, For the noise of the voice of us boys, when we sang our Quartette.",
+      "title": "The Truants",
+      "place": "The Truants",
+      "reentry": "Ere my heart beats too coldly and faintly / To remember sad things, yet be gay, / I would sing a brief song of the world's little children / Magic hath stolen away. / The primroses scattered by April, / The stars of the wide Milky Way, / Cannot outnumber the hosts of the children / Magic hath stolen away. / The buttercup green of the meadows, / The snow of the blossoming may, / Lovelier are not than the legions of children / Magic hath stolen away. / The waves tossing surf in the moonbeam, / The albatross lone on the spray, / Alone know the tears wept in vain for the children / Magic hath stolen away. / In vain: for at hush of the evening, / When the stars twinkle into the grey, / Seems to echo the far-away calling of children / Magic hath stolen away.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s33",
-      "title": "Into a sorrowful fall did our music flow;",
-      "place": "Into a sorrowful fall did our music flow;",
-      "reentry": "And the ladies that sate with the Squire vowed they'd never forget How the eyes of them cried for delight, when we sang our Quartette.",
+      "title": "Berries",
+      "place": "Berries",
+      "reentry": "Three Queer Tales",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s34",
-      "title": "Shadows lurking everywhere:",
-      "place": "Shadows lurking everywhere:",
-      "reentry": "Some one came, and kissed me there.",
+      "title": "Off the Ground",
+      "place": "Off the Ground",
+      "reentry": "Three jolly Farmers / Once bet a pound / Each dance the others would / Off the ground. / Out of their coats / They slipped right soon, / And neat and nicesome, / Put each his shoon. / One - Two - Three! - / And away they go, / Not too fast, / And not too slow; / Out from the elm-tree's / Noonday shadow, / Into the sun / And across the meadow. / Past the schoolroom, / With knees well bent / Fingers a-flicking, / They dancing went. / Up sides and over, / And round and round, / They crossed click-clacking, / The Parish bound, / By Tupman's meadow / They did their mile, / Tee-t-tum / On a three-barred stile. / Then straight through Whipham, / Downhill to Week, / Footing it lightsome, / But not too quick, / Up fields to Watchet, / And on through Wye, / Till seven fine churches / They'd seen skip by - / Seven fine churches, / And five old mills, / Farms in the valley, / And sheep on the hills; / Old Man's Acre / And Dead Man's Pool / All left behind, / As they danced through Wool. / And Wool gone by, / Like tops that seem / To spin in sleep / They danced in dream; / Withy - Wellover - / Wassop-Wo- / Like an old clock / Their heels did go. / A league and a league / And a league they went, / And not one weary, / And not one spent. / And Io, and behold! / Past Willow-cum-Leigh / Stretched with its waters / The great green sea. / Says Farmer Bates, / I puffs and I blows, / What's under the water, / Why, no man knows!' / Says Farmer Giles, / 'My wind comes weak, / And a good man drownded / Is far to seek.' / But Farmer Turvey, / On twirling toes / Up's with his gaiters, / And in he goes: / Down where the mermaids / Pluck and play / On their twangling harps / In a sea-green day; / Down where the mermaids, / Finned and fair, / Sleek with their combs / Their yellow hair.... / Bates and Giles- / On the shingle sat, / Gazing at Turvey's / Floating hat. / But never a ripple / Nor bubble told / Where he was supping / Off plates of gold. / Never an echo / Rilled through the sea / Of the feasting and dancing / And minstrelsy. / They called-called-called: / Came no reply: / Nought but the ripples' / Sandy sigh. / Then glum and silent / They sat instead, / Vacantly brooding / On home and bed, / Till both together / Stood up and said.- / 'Us knows not, dreams not, / Where you be, / Turvey, unless / In the deep blue sea; / But axcusing silver- / And it comes most willing - / Here's us two paying / Our forty shilling; / For it's sartin sure, Turvey, / Safe and sound, / You danced us square, Turvey, / Off the ground!'",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s35",
-      "title": "Stooped in the still and shadowy air",
-      "place": "Stooped in the still and shadowy air",
-      "reentry": "Lips unseen - and kissed me there.",
+      "title": "The Thief at Robin's Castle",
+      "place": "The Thief at Robin's Castle",
+      "reentry": "There came a Thief one night to Robin's Castle, / He climbed up into a Tree; / And sitting with his head among the branches, / A wondrous Sight did see. / For there was Robin supping at his table, / With Candles of pure Wax, / His Dame and his two beauteous little Children, / With Velvet on their backs. / Platters for each there were shin-shining, / Of Silver many a pound, / And all of beaten Gold, three brimming Goblets, / Standing the table round. / The smell that rose up richly from the Baked Meats / Came thinning amid the boughs, / And much that greedy Thief who snuffed the night air- / His Hunger did arouse. / He watched them eating, drinking, laughing, talking, / Busy with finger and spoon, / While three most cunning Fiddlers, clad in crimson, / Played them a supper-tune. / And he waited in the tree-top like a Starling, / Till the Moon was gotten low; / When all the windows in the walls were darkened, / He softly in did go. / There Robin and his Dame in bed were sleeping, / And his Children young and fair; / Only Robin's Hounds from their warm kennels / Yelped as he climbed the stair. / All, all were sleeping, page and fiddler, / Cook, scullion, free from care; / Only Robin's Stallions from their stables / Neighed as he climbed the stair. / A wee wan light the Moon did shed him, / Hanging above the sea, / And he counted into his bag (of beaten Silver) / Platters thirty-three. / Of Spoons three score; of jolly golden Goblets / He stowed in four save one, / And six fine three-branched Cupid Candlesticks, / Before his work was done. / Nine bulging bags of Money in a cupboard, / Two Snuffers, and a Dish / He found, the last all studded with great Garnets / And shapen like a Fish. / Then tiptoe up he stole into a Chamber, / Where on Tasselled Pillows lay / Robin and his Daule in dreaming slumbers / Tired with the summer's day. / That Thief he mimbled round him in the gloaming, / Their treasure for to spy, / Combs, Brooches, Chains, and, Rings, and Pins and Buckles / All higgledy, Piggle-dy. / A Watch shaped in the shape of a flat Apple / In purest crystal set / He lifted from the hook where it was ticking / And crammed in his Pochette. / He heaped the pretty Baubles on the table, / Trinketsi Knick-knackerie, / Pearls, Diamonds, Sapphires, Topazes, and Opals- / All in his bag put he. / And there in night's pale Gloom was Robin dreaming / He was hunting the mountain Bear, / While his Dame in peaceful slumber in no wise heeded / A greedy Thief was there. / And that ravenous Thief he climbed up even higher, / Till into a chamber small / He crept where lay poor Robin's beauteous Children, / Lovelier in sleep withal. / Oh, fairer was their Hair than Gold of Goblet, / 'Yond Silver their Cheeks did shine, / And their little hands that lay upon the linen / Made that Thief's hard heart to pine. / But though a moment there his hard heart faltered, / Eftsoones be took them twain, / And slipped them into his Bag with all his Plunder, / And soft stole down again. / Spoon, Platter, Goblet, Ducats, Dishes, Trinkets, / And those two Children dear, / A-quaking in the clinking and the clanking, / And half bemused with fear, / He carried down the stairs into the Courtyard, / But there he made no stay, / He just tied up his Garters, took a deep breath, / And ran like the wind away. / Past Forest, River, Mountain, River, Forest- / He coursed the whole night through, / Till morning found him come into a Country, / Where none his bad face knew. / Past Mountain, River, Forest, River, Mountain- / That Thief's lean shanks sped on, / Till Evening found him knocking at a Dark House, / His breath now well-nigh gone. / There came a little maid and asked his Business; / A Cobbler dwelt within; / And though she much misliked the Bag he carried, / She led the Bad Man in. / He bargained with the Cobbler for a lodging / And soft laid down his Sack- / In the Dead of Night, with none to spy or listen- / From off his weary back. / And he taught the little Chicks to call him Father, / And he sold his stolen Pelf, / And bought a Palace, Horses, Slaves, and Peacocks / To ease his wicked self. / And though the Children never really loved him, / He was rich past all belief; / While Robin and his Dame o'er Delf and Pewter / Spent all their Days in Grief.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s36",
-      "title": "As she did dance -",
-      "place": "As she did dance -",
-      "reentry": "'Twas not on the stairs, Not in the hall; Not where they sat At supper at all. She looked in the garden, But there it was not; Henhouse, or kennel, Or high dovecote. Dairy and meadow, And wild woods through",
+      "title": "A Widow's Weeds",
+      "place": "A Widow's Weeds",
+      "reentry": "Places and People",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s37",
-      "title": "Breathed a whisper",
-      "place": "Breathed a whisper",
-      "reentry": "Of where 'twas gone. It was cried and cried, Oyez and Oyez! In French, Dutch, Latin, And Portuguese. Ships the dark seas Went plunging through, But none brought news Of Lucy's shoe; And still she patters In silk and leather, O'er snow, sand",
+      "title": "'Sooeep!'",
+      "place": "'Sooeep!'",
+      "reentry": "Black as a chimney is his face, / And ivory white his teeth, / And in his brass-bound cart he rides, / The chestnut blooms beneath. / 'Sooeep, Sooeep!' he cries, and brightly peers / This way and that, to see / With his two light-blue shining eyes / What custom there may be. / And once inside the house, he'll squat, / And drive his rods on high, / Till twirls his sudden sooty brush / Against the morning sky. / Then, 'mid his bulging bags of soot, / With half the world asleep, / His small cart wheels him off again, / Still hoarsely bawling, 'Sooeep!'",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s38",
-      "title": "I would sing a brief song of the world's little children",
-      "place": "I would sing a brief song of the world's little children",
-      "reentry": "Magic hath stolen away.",
+      "title": "Mrs. MacQueen",
+      "place": "Mrs. MacQueen",
+      "reentry": "With glass like a bull's-eye, / And shutters of green, / Down on the cobbles / Lives Mrs. MacQueen, / At six she rises; / At nine you see / Her candle shine out / In the linden tree: / And at half-past nine / Not a sound is nigh / But the bright moon's creeping / Across the sky; / Or a far dog baying; / Or a twittering bird / In its drowsy nest, / In the darkness stirred; / Or like the roar / Of a distant sea / A long-drawn S-s-sh / In the linden tree.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s39",
-      "title": "Cannot outnumber the hosts of the children",
-      "place": "Cannot outnumber the hosts of the children",
-      "reentry": "Magic hath stolen away.",
+      "title": "The Little Green Orchard",
+      "place": "The Little Green Orchard",
+      "reentry": "Some one is always sitting there, / In the little green orchard; / Even when the sun is high / In noon's unclouded sky, / And faintly droning goes / The bee from rose to rose, / Some one in shadow is sitting there / In the little green orchard. / Yes, when the twilight's falling softly / In the little green orchard; / When the grey dew distills / And every flower-cup fills; / When the last blackbird says, / 'What - what!' and goes her way - ssh! / I have heard voices calling softly / In the little green orchard / Not that I am afraid of being there, / In the little green orchard; / Why, when the moon's been bright, / Shedding her lonesome light, / And moths like ghosties come, / And the horned snail leaves home: / I've sat there, whispering and listening there, / In the little green orchard. / Only it's strange to be feeling there, / In the little green orchard; / Whether you paint or draw, / Dig, hammer, chop or saw; / When you are most alone, / All but the silence gone... / Some one is watching and waiting there, / In the little green orchard.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s40",
-      "title": "Lovelier are not than the legions of children",
-      "place": "Lovelier are not than the legions of children",
-      "reentry": "Magic hath stolen away.",
+      "title": "Poor Miss 7",
+      "place": "Poor Miss 7",
+      "reentry": "Lone and alone she lies, / Poor Miss 7, / Five steep flights from the earth, / And one from heaven; / Dark hair and dark brown eyes, - / Not to be sad she tries, / Still - still it's lonely lies / Poor Miss 7. / One day-long watch hath she, / Poor Miss 7, / Not in some orchard sweet / In April Devon - / Just four blank walls to see, / And dark come shadowily, / No moon, no stars, ah me! / Poor Miss 7. / And then to wake again, / Poor Miss 7, / To the cold night, to have / Sour physic given; / Out of some dream of pain, / Then strive long hours in vain / Deep dreamless sleep to gain: / Poor Miss 7. / Yet memory softly sings / Poor Miss 7 / Songs full of love and peace / And gladness even; / Clear flowers and tiny wings, / All tender, lovely things, / Hope to her bosom brings - / Happy Miss 7.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s41",
-      "title": "Seems to echo the far-away calling of children",
-      "place": "Seems to echo the far-away calling of children",
-      "reentry": "Magic hath stolen away.",
+      "title": "Sam",
+      "place": "Sam",
+      "reentry": "When Sam goes back in memory, / It is to where the sea / Breaks on the shingle, emerald-green, / In white foam, endlessly; / He says - with small brown eye on mine- / 'I used to keep awake, / And lean from my window in the moon, / Watching those billows break. / And half a million tiny hands, / And eyes, like sparks of frost, / Would dance and come tumbling into the moon, / On every breaker tossed. / And all across from star to star, / I've seen the watery sea, / With not a single ship in sight, / Just ocean there, and me; / And heard my father snore. And once, / As sure as I'm alive, / Out of those wallowing, moon-flecked waves / I saw a mermaid dive; / Head and shoulders above the wave, / Plain as I now see you, / Combing her hair, now back, now front, / Her two eyes peeping through; / Calling me, 'Sam!' -quietlike- 'Sam!'... / But me .... I never went, / Making believe I kind of thought / 'Twas some one else she meant.... / Wonderful lovely there she sat, / Singing the night away, / All in the solitudinous sea / Of that there lonely bay. / P'raps,' and he'd smooth his hairless mouth, / 'P'raps, if 'twere now, my son, / Praps, if I heard a voice say, 'Sam!'... / Morning would find we gone.'",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s42",
-      "title": "Along the hedges",
-      "place": "Along the hedges",
-      "reentry": "From Weep to Wicking. -",
+      "title": "Andy Battle",
+      "place": "Andy Battle",
+      "reentry": "Once and there was a young sailor, yeo ho! / And he sailed out over the say / For the isles where pink coral and palm branches blow, / And the fire-flies turn night into day, / Yeo ho! / And the fire-flies turn night into day. / But the Dolphin went down in a tempest, yeo ho! / And with three forsook sailors ashore, / The portingales took him wh'ere sugar-canes grow, / Their slave for to be evermore, / Yeo ho! / Their slave for to be evermore. / With his musket for mother and brother, yeo ho! / He warred with the Cannibals drear, / in forests where panthers pad soft to and fro, / And the Pongo shakes noonday with fear, / Yeo ho! / And the Pongo shakes noonday with fear. / Now lean with long travail, all wasted with woe, / With a monkey for messmate and friend, / He sits 'neath the Cross in the cankering snow, / And waites for his sorrowful end, / Yeo ho! / And waits for his sorrowful end.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s43",
-      "title": "Be off,' says the Fairy,",
-      "place": "Be off,' says the Fairy,",
-      "reentry": "'As quick as you can, Over the meadows To the little green lane That dips to the hayfields Of Farmer Grimes:",
+      "title": "The Old Soldier",
+      "place": "The Old Soldier",
+      "reentry": "There came an Old Soldier to my door, / Asked a crust, and asked no more; / The wars had thinned him very bare, / Fighting and marching everywhere, / With a Fol rol dol rol di do. / With nose stuck out, and cheek sunk in, / A bristling beard upon his chin - / Powder and bullets and wounds and drums / Had come to that Soldier as suchlike comes - / With a Fol rol dol rol di do. / 'Twas sweet and fresh with buds of May, / Flowers springing from every spray; / And when he had supped the Old Soldier trolled / The song of youth that never grows old, / Called Fol rol dol rol di do. / Most of him rags, and all of him lean, / And the belt round his belly drawn tightsome in / He lifted his peaked old grizzled head, / And these were the very same words he said- / A Fol-rol-dol-rol-di-do.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s44",
-      "title": "Then lo, and behold!",
-      "place": "Then lo, and behold!",
-      "reentry": "She had faded in air.",
+      "title": "The Picture",
+      "place": "The Picture",
+      "reentry": "Here is a sea-legged sailor, / Come to this tottering Inn, / Just when the bronze on its signboard is fading, / And the black shades of evening begin. / With his head on thick paws sleeps a sheep-dog, / There stoops the Shepherd, and see, / All follow-my-leader the ducks waddle homeward, / Under the sycamore tree. / Very brown is the face of the Sailor, / His bundle is crimson, and green / Are the thick leafy boughs that hang dense o'er the Tavern, / And blue the far meadows between. / But the Crust, Ale and Cheese of the Sailor, / His Mug and his platter of Delf, / And the crescent to light home the Shepherd and Sheep-dog / The painter has kept to himself.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s45",
-      "title": "So tired with her basket",
-      "place": "So tired with her basket",
-      "reentry": "She scarce could creep.",
+      "title": "The Little Old Cupid",
+      "place": "The Little Old Cupid",
+      "reentry": "'Twas a very small garden; / The paths were of stone, / Scattered with leaves, / With moss overgrown; / And a little old Cupid / Stood under a tree, / With a small broken bow / He stood aiming at me. / The dog-rose in briars / Hung over the weeds, / The air was aflock / With the floating of seed, / And a little old Cupid / Stood under a tree, / With a small broken bow / He stood aiming at me. / The dovecote was tumbling, / The fountain dry, / A wind in the orchard / Went whispering by; / And a little old Cupid / Stood under a tree, / With a small broken bow / He stood aiming at me.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s46",
-      "title": "For syrup and jelly",
-      "place": "For syrup and jelly",
-      "reentry": "And blackberry jam.",
+      "title": "King David",
+      "place": "King David",
+      "reentry": "King David was a sorrowful man: / No cause for his sorrow had he; / And he called for the music of a hundred harps, / To ease his melancholy. / They played till they all fell silent: / Played-and play sweet did they; / But the sorrow that haunted the heart of King David / They could not charm away. / He rose; and in his garden / Walked by the moon alone, / A nightingale hidden in a cypress-tree / Jargoned on and on. / King David lifted his sad eyes / Into the dark-boughed tree- / ''Tell me, thou little bird that singest, / Who taught my grief to thee?' / But the bird in no wise heeded / And the king in the cool of the moon / Hearkened to the nightingale's sorrowfulness, / Till all his own was gone.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s47",
-      "title": "Half way over",
-      "place": "Half way over",
-      "reentry": "From Wicking to Weep.",
+      "title": "The Old House",
+      "place": "The Old House",
+      "reentry": "A very, very old house I know- / And ever so many people go, / Past the small lodge, forlorn and still, / Under the heavy branches, till / Comes the blank wall, and there's the door. / Go in they do; come out no more. / No voice says aught; no spark of light / Across that threshold cheers the sight; / Only the evening star on high / Less lonely makes a lonely sky, / As, one by one, the people go / Into that very old house I know.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s48",
-      "title": "Put each his shoon",
-      "place": "Put each his shoon",
-      "reentry": "One - Two - Three! - And away they go,",
+      "title": "Unstooping",
+      "place": "Unstooping",
+      "reentry": "Beasts",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s49",
-      "title": "Into the sun",
-      "place": "Into the sun",
-      "reentry": "And across the meadow. Past the schoolroom, With knees well bent Fingers a-flicking, They dancing went. Up sides and over, And round and round,",
+      "title": "All But Blind",
+      "place": "All But Blind",
+      "reentry": "All but blind / In his cambered hole / Gropes for worms / The four-clawed Mole. / All but blind / In the evening sky / The hooded Bat / Twirls softly by. / All but blind / In the burning day / The Barn-Owl blunders / On her way. / And blind as are / These three to me, / So blind to someone / I must be.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s50",
-      "title": "Tee-t-tum",
-      "place": "Tee-t-tum",
-      "reentry": "On a three-barred stile. Then straight through Whipham, Downhill to Week, Footing it lightsome, But not too quick, Up fields to Watchet, And on through Wye, Till seven fine churches They'd seen skip by - Seven fine churches, And five old mi",
+      "title": "Nicholas Nye",
+      "place": "Nicholas Nye",
+      "reentry": "Thistle and darnell and dock grew there, / And a bush, in the corner, of may, / On the orchard wall I used to sprawl / In the blazing heat of the day; / Half asleep and half awake, / While the birds went twittering by, / And nobody there my lone to share / But Nicholas Nye. / Nicholas Nye was lean and gray, / Lame of leg and old, / More than a score of donkey's years / He had been since he was foaled; / He munched the thistles, purple and spiked, / Would sometimes stoop and sigh, / And turn to his head, as if he said, / \"Poor Nicholas Nye!\" / Alone with his shadow he'd drowse in the meadow, / Lazily swinging his tail, / At break of day he used to bray,-- / Not much too hearty and hale; / But a wonderful gumption was under his skin, / And a clean calm light in his eye, / And once in a while; he'd smile:-- / Would Nicholas Nye. / Seem to be smiling at me, he would, / From his bush in the corner, of may,-- / Bony and ownerless, widowed and worn, / Knobble-kneed, lonely and gray; / And over the grass would seem to pass / 'Neath the deep dark blue of the sky, / Something much better than words between me / And Nicholas Nye. / But dusk would come in the apple boughs, / The green of the glow-worm shine, / The birds in nest would crouch to rest, / And home I'd trudge to mine; / And there, in the moonlight, dark with dew, / Asking not wherefore nor why, / Would brood like a ghost, and as still as a post, / Old Nicholas Nye.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s51",
-      "title": "All left behind,",
-      "place": "All left behind,",
-      "reentry": "As they danced through Wool. And Wool gone by, Like tops that seem",
+      "title": "The Pigs and The Charcoal Burner",
+      "place": "The Pigs and The Charcoal Burner",
+      "reentry": "The old Pig said to the little pigs, / 'In the forest is truffles and mast, / Follow me then, all ye little pigs, / Follow me fast!' / The Charcoal-burner sat in the shade / With his chin on his thumb, / And saw the big Pig and the little pigs, / Chuffling come. / He watched 'neath a green and giant bough, / And the pigs in the ground / Made a wonderful grizzling and gruzzling / And a greedy sound. / And when, full-fed they were gone, and Night / Walked her starry ways, / He stared with his cheeks in his hands / At his sullen blaze.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s52",
-      "title": "Says Farmer Giles,",
-      "place": "Says Farmer Giles,",
-      "reentry": "'My wind comes weak, And a good man drownded Is far to seek.' But Farmer Turvey, On twirling toes Up's with his gaiters, And in he goes: Down where the mermaids Pluck and play",
+      "title": "Five Eyes",
+      "place": "Five Eyes",
+      "reentry": "In Hans' old Mill his three black cats / Watch the bins for the thieving rats. / Whisker and claw, they crouch in the night, / Their five eyes smouldering green and bright: / Squeaks from the flour sacks, squeaks from where / The cold wind stirs on the empty stair, / Squeaking and scampering, everywhere. / Then down they pounce, now in, now out, / At whisking tail, and sniffing snout; / While lean old Hans he snores away / Till peep of light at break of day; / Then up he climbs to his creaking mill, / Out come his cats all grey with meal -- / Jekkel, and Jessup, and one-eyed Jill.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s53",
-      "title": "Sleek with their combs",
-      "place": "Sleek with their combs",
-      "reentry": "Their yellow hair.... Bates and Giles- On the shingle sat,",
+      "title": "Grim",
+      "place": "Grim",
+      "reentry": "Beside the blaze of forty fires / Giant Grim doth sit, / Roasting a thick-woolled mountain sheep / Upon an iron spit. / Above him wheels the winter sky, / Beneath him, fathoms deep, / Lies hidden in the valley mists / A village fast asleep --- / Save for one restive hungry dog / That, snuffing towards the height, / Smells Grim's broiled supper-meat, and spies / His watch-fire twinkling bright.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s54",
-      "title": "Where he was supping",
-      "place": "Where he was supping",
-      "reentry": "Off plates of gold. Never an echo Rilled through the sea Of the feasting and dancing And minstrelsy. They called-called-called: Came no reply: Nought but the ripples' Sandy sigh.",
+      "title": "Tit for Tat",
+      "place": "Tit for Tat",
+      "reentry": "Have you been catching of fish, Tom Noddy? / Have you snared a weeping hare? / Have you whistled, 'No Nunny,'and gunned a poor / bunny, / Or a blinded bird of the air? / Have you trod like a murderer through the green / woods, / Through the dewy deep dingles and glooms, / While every small creature screamed shrill to Dame / Nature, / 'He comes --and he comes!'? / Wonder I very much do, Tom Noddy, / If ever, when you are a-roam, / An Ogre from space will stoop a lean face / And lug you home: / Lug you home over his fence, Tom Noddy, / Of thorn-sticks nine yards high, / With your bent knees strung round his old iron gun / And your head dan-dangling by: / And hang you up stiff on a hook, Tom Noddy, / From a stone-cold pantry shelf, / Whence your eyes will glare in an empty stare, / Till you're cooked yourself!",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s55",
-      "title": "Stood up and said.-",
-      "place": "Stood up and said.-",
-      "reentry": "'Us knows not, dreams not, Where you be, Turvey, unless In the deep blue sea; But axcusing silver- And it comes most willing - Here's us two paying Our forty shilling; For it's sartin sure, Turvey, Safe and sound, You danced us square, Turv",
+      "title": "Summer Evening",
+      "place": "Summer Evening",
+      "reentry": "The sandy cat by the Farmer's chair / Mews at his knee for dainty fare; / Old Rover in his moss-greened house / Mumbles a bone, and barks at a mouse / In the dewy fields the cattle lie / Chewing the cud 'neath a fading sky / Dobbin at manger pulls his hay: / Gone is another summer's day.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s56",
-      "title": "While Robin and his Dame o'er Delf and Pewter",
-      "place": "While Robin and his Dame o'er Delf and Pewter",
-      "reentry": "Spent all their Days in Grief.",
+      "title": "Earth Folk",
+      "place": "Earth Folk",
+      "reentry": "The cat she walks on padded claws, / The wolf on the hills lays stealthy paws, / Feathered birds in the rain-sweet sky / At their ease in the air, flit low, flit high. / The oak's blind, tender roots pierce deep, / His green crest towers, dimmed in sleep, / Under the stars whose thrones are set / Where never prince hath journeyed yet.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s57",
-      "title": "And now all summer she sits and sews",
-      "place": "And now all summer she sits and sews",
-      "reentry": "Where willow herb, comfrey, bugloss blows,",
+      "title": "At the Keyhole",
+      "place": "At the Keyhole",
+      "reentry": "Witches and Fairies",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s58",
-      "title": "Down on the cobbles",
-      "place": "Down on the cobbles",
-      "reentry": "Lives Mrs. MacQueen,",
+      "title": "The Old Stone House",
+      "place": "The Old Stone House",
+      "reentry": "Nothing on the grey roof, nothing on the brown, / Only a little greening where the rain drips down; / Nobody at the window, nobody at the door, / Only a little hollow which a foot once wore; / But still I tread on tiptoe, still tiptoe on I go, / Past nettles, porch, and weedy well, for oh, I know / A friendless face is peering, and a still clear eye / Peeps closely through the casement / as my step goes by.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s59",
-      "title": "A long-drawn S-s-sh",
-      "place": "A long-drawn S-s-sh",
-      "reentry": "In the linden tree.",
+      "title": "The Ruin",
+      "place": "The Ruin",
+      "reentry": "When the last colours of the day / Have from their burning ebbed away, / About that ruin, cold and lone, / The cricket shrills from stone to stone; / And scattering o'er its darkened green, / Bands of the fairies may be seen, / Chattering like grasshoppers, their feet / Dancing a thistledown dance round it: / While the great gold of the mild moon / Tinges their tiny acorn shoon.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s60",
-      "title": "Some one in shadow is sitting there",
-      "place": "Some one in shadow is sitting there",
-      "reentry": "In the little green orchard.",
+      "title": "The Ride-by-Nights",
+      "place": "The Ride-by-Nights",
+      "reentry": "Up on their brooms the Witches stream, / Crooked and black in the crescent's gleam; / One foot high, and one foot low, / Bearded, cloaked, and cowled, they go, / 'Neath Charlie's Wain they twitter and tweet, / And away they swarm 'neath the Dragon's feet, / With a whoop and a flutter they swing and sway, / And surge pell-mell down the Milky Way. / Betwixt the legs of the glittering Chair / They hover and squeak in the empty air. / Then round they swoop past the glimmering Lion / To where Sirius barks behind huge Orion; / Up, then, and over to wheel amain, / Under the silver, and home again.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s61",
-      "title": "Yes, when the twilight's falling softly",
-      "place": "Yes, when the twilight's falling softly",
-      "reentry": "In the little green orchard;",
+      "title": "Peak and Puke",
+      "place": "Peak and Puke",
+      "reentry": "From his cradle in the glamourie / They have stolen my wee brother, / Housed a changeling in his swaddlings / For to fret my own poor mother. / Pules it in the candle light / Wi' a cheek so lean and white, / Chinkling up its eyne so wee / Wailing shrill at her an' me. / It we'll neither rock nor tend / Till the Silent Silent send, / Lapping in their awesome arms / Him they stole with spells and charms, / Till they take this changeling creature / Back to its own fairy nature -- / Cry! Cry! As long as may be, / Ye shall ne'er be woman's baby!",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s62",
-      "title": "When the last blackbird says,",
-      "place": "When the last blackbird says,",
-      "reentry": "'What - what!' and goes her way - ssh! I have heard voices calling softly In the little green orchard",
+      "title": "The Changeling",
+      "place": "The Changeling",
+      "reentry": "'Ahoy, and ahoy!' / 'Twixt mocking and merry -- / 'Ahoy and ahoy, there, / Young man of the ferry!' / She stood on the steps / In the watery gloom --- / That Changeling --'Ahoy, there!' / She called him to come. / He came on the green wave, / He came on the grey, / Where stooped that sweet lady / That still summer's day. / He fell in a dream / Of her beautiful face, / As she sat on the thwart / And smiled in her place. / No echo his oar woke, / Float silent did they, / Past low-grazing cattle / In the sweet of the hay. / And still in a dream / At her beauty sat he, / Drifting stern foremost / Down -- down to the sea. / Come you, then: call, / When the twilight apace / Brings shadow to brood / On the loveliest face; / You shall hear o'er the water / Ring faint in the grey --- / 'Ahoy, and ahoy, there!' / And tremble away; / 'Ahoy, and ahoy!...' / And tremble away.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s63",
-      "title": "I've sat there, whispering and listening there,",
-      "place": "I've sat there, whispering and listening there,",
-      "reentry": "In the little green orchard.",
+      "title": "The Mocking Fairy",
+      "place": "The Mocking Fairy",
+      "reentry": "'Won't you look out of your window, Mrs. Gill?' / Quoth the Fairy, niddling, nodding in the garden; / 'Can't you look out of your window, Mrs. Gill?' / Quoth the Fairy, laughing softly in the garden; / But the air was still, the cherry boughs were still, / And the ivy-tod 'neath the empty sill, / And never from her window looked out Mrs. Gill / On the Fairy shrilly mocking in the garden. / 'What have they done with you, you poor Mrs. Gill?' / Quoth the Fairy brightly glancing in the garden; / 'Where have they hidden you, you poor old Mrs. Gill?' / Quoth the Fairy dancing lightly in the garden; / But night's faint veil now wrapped the hill, / Stark 'neath the stars stood the dead-still Mill, / And out of her cold cottage never answered Mrs. Gill / The Fairy mimbling, mambling in the garden.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s64",
-      "title": "Some one is watching and waiting there,",
-      "place": "Some one is watching and waiting there,",
-      "reentry": "In the little green orchard.",
+      "title": "Bewitched",
+      "place": "Bewitched",
+      "reentry": "I have heard a lady this night, / Lissom and jimp and slim, / Calling me -- calling me over the heather, / 'Neath the beech boughs dusk and dim. / I have followed a lady this night, / Followed her far and lone, / Fox and adder and weasel know / The ways that we have gone. / I sit at my supper 'mid honest faces, / And crumble my crust and say / Naught in the long-drawn drawl of the voices / Talking the hours away. / I'll go to my chamber under the gable, / And the moon will lift her light / In at my lattice from over the moorland / Hollow and still and bright. / And I know she will shine on a lady of witchcraft, / Gladness and grief to see, / Who has taken my heart with her nimble fingers, / Calls in my dreams to me; / Who has led me a dance by dell and dingle / My human soul to win, / Made me a changeling to my own, own mother, / A stranger to my kin.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s65",
-      "title": "And dark come shadowily,",
-      "place": "And dark come shadowily,",
-      "reentry": "No moon, no stars, ah me! Poor Miss 7.",
+      "title": "The Honey Robbers",
+      "place": "The Honey Robbers",
+      "reentry": "There were two Fairies, Gimmul and Mel, / Loved Earth Man's honey passing well; / Oft at the hives of his tame bees / They would their sugary thirst appease. / When dusk began to darken to night, / They would hie along in the fading light, / With elf-locked hair and scarlet lips, / And small stone knives to slit the skeps, / So softly not a bee inside / Should hear the woven straw divide: / And then with sly and greedy thumbs / Would rifle the sweet honeycombs. / And drowsily drone to drone would say, / 'A cold, cold wind blows in this way'; / And the great Queen would turn her head / From face to face, astonished, / And, though her maids with comb and brush / Would comb and soothe and whisper, 'Hush!' / About the hive would shrilly go / A keening -- keening, to and fro; / At which those robbers 'neath the trees / Would taunt and mock the honey-bees, / And through their sticky teeth would buzz / Just as an angry hornet does. / And when this Gimmul and this Mel / Had munched and sucked and swilled their fill, / Or ever Man's first cock could crow / Back to their Faerie Mounds they'd go; / Edging across the twilight air, / Thieves of a guise remotely fair.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s66",
-      "title": "As sure as I'm alive,",
-      "place": "As sure as I'm alive,",
-      "reentry": "Out of those wallowing, moon-flecked waves",
+      "title": "Longlegs",
+      "place": "Longlegs",
+      "reentry": "Longlegs -- he yelled 'Coo-ee!' / And all across the combe / Shrill and shrill it rang -- rang through / The clear green gloom. / Fairies there were a-spinning, / And a white tree-maid / Lifted her eyes, and listened / In her rain-sweet glade. / Bunnie to bunnie stamped; old Wat / Chin-deep in bracken sate; / A throstle piped, 'I'm by, I'm by!' / Clear to his timid mate. / And there was Longlegs, straddling, / And hearkening was he, / To distant Echo thrilling back / A thin 'Coo-ee!'",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s67",
-      "title": "And the fire-flies turn night into day,",
-      "place": "And the fire-flies turn night into day,",
-      "reentry": "Yeo ho!",
+      "title": "Melmillo",
+      "place": "Melmillo",
+      "reentry": "Three and thirty birds there stood / In an elder in a wood; / Called Melmillo -- flew off three, / Leaving thirty in the tree; / Called Melmillo -- nine now gone, / And the boughs held twenty-one; / Called Melmillo -- and eighteen / Left but three to nod and preen; / Called Melmillo -- three -- two -- one / Now of birds were feathers none. / Then stole Melmillo in / To that wood all dusk and green, / And with lean long palms outspread / Softly a strange dance did tread; / Not a note of music she / Had for echoing company; / All the birds were flown to rest / In the hollow of her breast; / In the wood -- thorn, elder, willow -- / Danced alone -- lone danced Melmillo.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s68",
-      "title": "Their slave for to be evermore,",
-      "place": "Their slave for to be evermore,",
-      "reentry": "Yeo ho!",
+      "title": "Trees",
+      "place": "Trees",
+      "reentry": "Earth and Air",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s69",
-      "title": "And the Pongo shakes noonday with fear,",
-      "place": "And the Pongo shakes noonday with fear,",
-      "reentry": "Yeo ho!",
+      "title": "Silver",
+      "place": "Silver",
+      "reentry": "Slowly, silently, now the moon / Walks the night in her silver shoon: / This way, and that, she peers and sees / Silver fruit upon silver trees; / One by one the casements catch / Her beams beneath the silvery thatch; / Couched in his kennel, like a log, / With paws of silver sleeps the dog / From their shadowy cote the white breasts peep / Of doves in a silver-feathered sleep; / A harvest mouse goes scampering by, / With silver claws and silver eye; / And moveless fish in the water gleam / By silver reeds in a silver stream.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s70",
-      "title": "Yeo ho!",
-      "place": "Yeo ho!",
-      "reentry": "And waits for his sorrowful end.",
+      "title": "Nobody Knows",
+      "place": "Nobody Knows",
+      "reentry": "Often I've heard the Wind sigh / By the ivied orchard wall, / Over the leaves in the dark night, / Breathe a sighing call, / And faint away in the silence / While I, in my bed, / Wondered, 'twixt dreaming and waking, / What it said. / Nobody knows what the Wind is, / Under the height of the sky, / Where the hosts of the stars keep far away house / And its wave sweeps by -- / Just a great wave of the air, / Tossing the leaves in its sea, / And foaming under the eaves of the roof / That covers me. / And so we live under deep water, / All of us, beasts and men, / And our bodies are buried down under the sand, / When we go again; / And leave, like the fishes, our shells, / And float on the Wind and away, / To where, o'er the marvellous tides of the air, / Burns day.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s71",
-      "title": "Fighting and marching everywhere,",
-      "place": "Fighting and marching everywhere,",
-      "reentry": "With a Fol rol dol rol di do.",
+      "title": "Wanderers",
+      "place": "Wanderers",
+      "reentry": "Wide are the meadows of night, / And daisies are shining there, / Tossing their lovely dews, / Lustrous and fair; / And through these sweet fields go, / Wanderers amid the stars -- / Venus, Mercury, Uranus, Neptune, / Saturn, Jupiter, Mars. / 'Tired in their silver, they move, / And circling, whisper and say, / Fair are the blossoming meads of delight / Through which we stray.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s72",
-      "title": "And these were the very same words he said-",
-      "place": "And these were the very same words he said-",
-      "reentry": "A Fol-rol-dol-rol-di-do.",
+      "title": "Many a Mickle",
+      "place": "Many a Mickle",
+      "reentry": "A little sound --- / Only a little, a little --- / The breath in a reed, / A trembling fiddle; / A trumpet's ring, / The shuddering drum; / So all the glory, bravery, hush / Of music come. / A little sound --- / Only a stir and a sigh / Of each green leaf / Its fluttering neighbor by; / Oak on to oak, / The wide dark forest through --- / So o'er the watery wheeling world / The night winds go. / A little sound, / Only a little, a little --- / The thin high drone / Of the simmering kettle, / The gathering frost, / The click of needle and thread; / Mother, the fading wall, the dream, / The drowsy bed.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s73",
-      "title": "The Little Old Cupid",
-      "place": "The Little Old Cupid",
-      "reentry": "'Twas a very small garden; The paths were of stone,",
+      "title": "Will Ever?",
+      "place": "Will Ever?",
+      "reentry": "Will he ever be weary of wandering, / The flaming sun? / Ever weary of waning in lovelight, / The white still moon? / Will ever a shepherd come / With a crook of simple gold, / And lead all the little stars / Like lambs to the fold? / Will ever the Wanderer sail / From over the sea, / Up the river of water, / To the stones to me? / Will he take us all into his ship, / Dreaming, and waft us far, / To where in the clouds of the West / The Islands are?",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s74",
-      "title": "With moss overgrown;",
-      "place": "With moss overgrown;",
-      "reentry": "And a little old Cupid Stood under a tree, With a small broken bow He stood aiming at me.",
+      "title": "The Song of the Secret",
+      "place": "The Song of the Secret",
+      "reentry": "Songs",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s75",
-      "title": "With the floating of seed,",
-      "place": "With the floating of seed,",
-      "reentry": "And a little old Cupid Stood under a tree, With a small broken bow He stood aiming at me.",
+      "title": "The Song of Soldiers",
+      "place": "The Song of Soldiers",
+      "reentry": "As I sat musing by the frozen dyke, / There was a man marching with a bright steel pike, / Marching in the dayshine like a ghost came he, / And behind me was the moaning and the murmur / Of the sea. / As I sat musing, 'twas not one but ten --- / Rank on rank of ghostly soldiers marching o'er the fen, / Marching in the misty air they showed in dreams to me, / And behind me was the shouting and the shattering / of the sea. / As I sat musing, 'twas a host in dark array, / With their horses and their cannon wheeling onward / to the fray, / Moving like a shadow to the fate the brave must dree, / And behind me roared the drums, rang the trumpets / of the sea.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s76",
-      "title": "With a small broken bow",
-      "place": "With a small broken bow",
-      "reentry": "He stood aiming at me.",
+      "title": "The Bees' Song",
+      "place": "The Bees' Song",
+      "reentry": "Thousandz of thornz there be / On the Rozez where gozez / The Zebra of Zee: / Sleek, striped, and hairy, / The steed of the Fairy / Princess of Zee. / Heavy with blossomz be / The Rozez that growzez / In the thickets of Zee. / Where grazez the Zebra, / Marked Abracadeeebra, / Of the Princess of Zee. / And he nozez that poziez / Of the Rozez that grozez / So luvez'm and free, / With an eye, dark and wary, / In search of a Fairy, / Whose Rozez he knowzez / Were not honeyed for he, / But to breathe a sweet incense / To solace the Princess / Of far-away Zee.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s77",
-      "title": "Hearkened to the nightingale's sorrowfulness,",
-      "place": "Hearkened to the nightingale's sorrowfulness,",
-      "reentry": "Till all his own was gone.",
+      "title": "A Song of Enchantment",
+      "place": "A Song of Enchantment",
+      "reentry": "A Song of Enchantment I sang me there, / In a green --green wood, by waters fair, / Just as the words came up to me / I sang it under the wildwood tree. / Widdershins turned I, singing it low, / Watching the wild birds come and go; / No cloud in the deep dark blue to be seen / Under the thick-thatched branches green. / Twilight came; silence came; / The planet of Evening's silver flame; / By darkening paths I wandered through / Thickets trembling with drops of dew. / But the music is lost and the words are gone / Of the song I sang as I sat alone, / Ages and ages have fallen on me-- / On the wood and the pool and the elder tree.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s78",
-      "title": "Comes the blank wall, and there's the door",
-      "place": "Comes the blank wall, and there's the door",
-      "reentry": "Go in they do; come out no more.",
+      "title": "Dream-Song",
+      "place": "Dream-Song",
+      "reentry": "Sunlight, moonlight, / Twilight, starlight- / Gloaming at the close of day, / And an owl calling, / Cool dews falling / In a wood of oak and may. / Lantern-light, taper-light, / Torchlight, no-light: / Darkness at the shut of day, / And lions roaring, / Their wrath pouring / In wild waste places far away. / Elf-light, bat-light, / Touchwood-light and toad-light, / And the sea a shimmering gloom of grey, / And a small face smiling / In a dream's beguiling / In a world of wonders far away.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s79",
-      "title": "As, one by one, the people go",
-      "place": "As, one by one, the people go",
-      "reentry": "Into that very old house I know.",
+      "title": "The Song of Shadows",
+      "place": "The Song of Shadows",
+      "reentry": "Sweep thy faint Strings, Musician, / With thy long lean hand; / Downward the starry tapers burn, / Sinks soft the waning sand; / The old hound whimpers couched in sleep, / The embers smoulder low; / Across the walls the shadows / Come, and go. / Sweep softly thy strings, Musician, / The minutes mount to hours; / Frost on the windless casement weaves / A labyrinth of flowers; / Ghosts linger in the darkening air, / Hearken at the open door; / Music hath called them, dreaming, / Home once more.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s80",
-      "title": "Uplifted o'er the four-foot beasts,",
-      "place": "Uplifted o'er the four-foot beasts,",
-      "reentry": "Unstooping, to and fro.",
+      "title": "The Song of the Mad prince",
+      "place": "The Song of the Mad prince",
+      "reentry": "Who said, 'Peacock Pie?' / The old King to the sparrow: / Who said, 'Crops are ripe?' / Rust to the harrow: / Who said, 'Where sleeps she now?' / Where rests she now her head, / Bathed in eve's loveliness'? --- / That's what I said. / Who said, 'Ay, mum's the word'? / Sexton to willow: / Who said, 'Green duck for dreams, / Moss for a pillow'? / Who said, 'All Time's delight / Hath she for narrow bed; / Life's troubled bubble broken'? --- / That's what I said.",
       "prompt": "What does the poem hold?"
     },
     {
       "id": "s81",
-      "title": "Gropes for worms",
-      "place": "Gropes for worms",
-      "reentry": "The four-clawed Mole.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s82",
-      "title": "And once in a while; he'd smile:--",
-      "place": "And once in a while; he'd smile:--",
-      "reentry": "Would Nicholas Nye.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s83",
-      "title": "'Neath the deep dark blue of the sky,",
-      "place": "'Neath the deep dark blue of the sky,",
-      "reentry": "Something much better than words between me And Nicholas Nye.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s84",
-      "title": "Asking not wherefore nor why,",
-      "place": "Asking not wherefore nor why,",
-      "reentry": "Would brood like a ghost, and as still as a post, Old Nicholas Nye.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s85",
-      "title": "The old Pig said to the little pigs,",
-      "place": "The old Pig said to the little pigs,",
-      "reentry": "'In the forest is truffles and mast, Follow me then, all ye little pigs, Follow me fast!'",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s86",
-      "title": "He stared with his cheeks in his hands",
-      "place": "He stared with his cheeks in his hands",
-      "reentry": "At his sullen blaze.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s87",
-      "title": "The cold wind stirs on the empty stair,",
-      "place": "The cold wind stirs on the empty stair,",
-      "reentry": "Squeaking and scampering, everywhere. Then down they pounce, now in, now out,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s88",
-      "title": "Out come his cats all grey with meal --",
-      "place": "Out come his cats all grey with meal --",
-      "reentry": "Jekkel, and Jessup, and one-eyed Jill.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s89",
-      "title": "Whence your eyes will glare in an empty stare,",
-      "place": "Whence your eyes will glare in an empty stare,",
-      "reentry": "Till you're cooked yourself!",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s90",
-      "title": "Dobbin at manger pulls his hay:",
-      "place": "Dobbin at manger pulls his hay:",
-      "reentry": "Gone is another summer's day.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s91",
-      "title": "Under the stars whose thrones are set",
-      "place": "Under the stars whose thrones are set",
-      "reentry": "Where never prince hath journeyed yet.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s92",
-      "title": "At the Keyhole",
-      "place": "At the Keyhole",
-      "reentry": "'Grill me some bones,' said the Cobbler,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s93",
-      "title": "And a sheet webbed over my candle, Susie, ---",
-      "place": "And a sheet webbed over my candle, Susie, ---",
-      "reentry": "Grill me some bones!'",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s94",
-      "title": "Peeps closely through the casement",
-      "place": "Peeps closely through the casement",
-      "reentry": "as my step goes by.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s95",
-      "title": "While the great gold of the mild moon",
-      "place": "While the great gold of the mild moon",
-      "reentry": "Tinges their tiny acorn shoon.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s96",
-      "title": "Up, then, and over to wheel amain,",
-      "place": "Up, then, and over to wheel amain,",
-      "reentry": "Under the silver, and home again.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s97",
-      "title": "Chinkling up its eyne so wee",
-      "place": "Chinkling up its eyne so wee",
-      "reentry": "Wailing shrill at her an' me. It we'll neither rock nor tend",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s98",
-      "title": "Drifting stern foremost",
-      "place": "Drifting stern foremost",
-      "reentry": "Down -- down to the sea.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s99",
-      "title": "And tremble away;",
-      "place": "And tremble away;",
-      "reentry": "'Ahoy, and ahoy!...'",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s100",
-      "title": "And out of her cold cottage never answered Mrs. Gill",
-      "place": "And out of her cold cottage never answered Mrs. Gill",
-      "reentry": "The Fairy mimbling, mambling in the garden.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s101",
-      "title": "Made me a changeling to my own, own mother,",
-      "place": "Made me a changeling to my own, own mother,",
-      "reentry": "A stranger to my kin.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s102",
-      "title": "A throstle piped, 'I'm by, I'm by!'",
-      "place": "A throstle piped, 'I'm by, I'm by!'",
-      "reentry": "Clear to his timid mate. And there was Longlegs, straddling, And hearkening was he, To distant Echo thrilling back A thin 'Coo-ee!'",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s103",
-      "title": "Called Melmillo -- three -- two -- one",
-      "place": "Called Melmillo -- three -- two -- one",
-      "reentry": "Now of birds were feathers none.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s104",
-      "title": "In the wood -- thorn, elder, willow --",
-      "place": "In the wood -- thorn, elder, willow --",
-      "reentry": "Danced alone -- lone danced Melmillo.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s105",
-      "title": "Trees",
-      "place": "Trees",
-      "reentry": "Of all the trees in England,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s106",
-      "title": "Burns fierce while it is green",
-      "place": "Burns fierce while it is green",
-      "reentry": "Of all the trees in England,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s107",
-      "title": "Beneath the driving rain",
-      "place": "Beneath the driving rain",
-      "reentry": "Of all the trees in England,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s108",
-      "title": "The Yew alone burns lamps of peace",
-      "place": "The Yew alone burns lamps of peace",
-      "reentry": "For them that lie forlorn.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s109",
-      "title": "And moveless fish in the water gleam",
-      "place": "And moveless fish in the water gleam",
-      "reentry": "By silver reeds in a silver stream.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s110",
-      "title": "Under the height of the sky,",
-      "place": "Under the height of the sky,",
-      "reentry": "Where the hosts of the stars keep far away house And its wave sweeps by -- Just a great wave of the air, Tossing the leaves in its sea,",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s111",
-      "title": "And float on the Wind and away,",
-      "place": "And float on the Wind and away,",
-      "reentry": "To where, o'er the marvellous tides of the air, Burns day.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s112",
-      "title": "Fair are the blossoming meads of delight",
-      "place": "Fair are the blossoming meads of delight",
-      "reentry": "Through which we stray.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s113",
-      "title": "So o'er the watery wheeling world",
-      "place": "So o'er the watery wheeling world",
-      "reentry": "The night winds go.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s114",
-      "title": "Up the river of water,",
-      "place": "Up the river of water,",
-      "reentry": "To the stones to me? Will he take us all into his ship, Dreaming, and waft us far, To where in the clouds of the West The Islands are?",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s115",
-      "title": "Trembling down,",
-      "place": "Trembling down,",
-      "reentry": "Into the pathless deeps of the sea. Gone, gone Is beauty from me.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s116",
-      "title": "And behind me was the moaning and the murmur",
-      "place": "And behind me was the moaning and the murmur",
-      "reentry": "Of the sea.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s117",
-      "title": "Moving like a shadow to the fate the brave must dree,",
-      "place": "Moving like a shadow to the fate the brave must dree,",
-      "reentry": "And behind me roared the drums, rang the trumpets of the sea.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s118",
-      "title": "Marked Abracadeeebra,",
-      "place": "Marked Abracadeeebra,",
-      "reentry": "Of the Princess of Zee.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s119",
-      "title": "Ages and ages have fallen on me--",
-      "place": "Ages and ages have fallen on me--",
-      "reentry": "On the wood and the pool and the elder tree.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s120",
-      "title": "Cool dews falling",
-      "place": "Cool dews falling",
-      "reentry": "In a wood of oak and may.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s121",
-      "title": "Their wrath pouring",
-      "place": "Their wrath pouring",
-      "reentry": "In wild waste places far away.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s122",
-      "title": "In a dream's beguiling",
-      "place": "In a dream's beguiling",
-      "reentry": "In a world of wonders far away.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s123",
-      "title": "Life's troubled bubble broken'? ---",
-      "place": "Life's troubled bubble broken'? ---",
-      "reentry": "That's what I said.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s124",
-      "title": "And his horse turned head and whinnied",
-      "place": "And his horse turned head and whinnied",
-      "reentry": "As the twain stood there alone.",
-      "prompt": "What does the poem hold?"
-    },
-    {
-      "id": "s125",
-      "title": "Charged with his challenge into space:",
-      "place": "Charged with his challenge into space:",
-      "reentry": "And quiet did quiet remain.",
+      "title": "The Song of Finis",
+      "place": "The Song of Finis",
+      "reentry": "AT the edge of All the Ages / A Knight sate on his steed, / His armor red and thin with rust / His soul from sorrow freed; / And he lifted up his visor / From a face of skin and bone, / And his horse turned head and whinnied / As the twain stood there alone. / No bird above that steep of time / Sang of a livelong quest; / No wind breathed, / Rest: / \"Lone for an end!\" cried Knight to steed, / Loosed an eager rein-- / Charged with his challenge into space: / And quiet did quiet remain.",
       "prompt": "What does the poem hold?"
     }
   ],
@@ -895,1242 +587,467 @@
     {
       "id": "s0-0",
       "sceneId": "s0",
-      "text": "The Thief at Robin's Castle"
+      "text": "I heard a horseman / Ride over the hill; / The moon shone clear, / The night was still; / His helm was silver, / And pale was he; / And the horse he rode / Was of ivory."
     },
     {
       "id": "s1-0",
       "sceneId": "s1",
-      "text": "A Widow's Weeds 'Sooeep!' Mrs. MacQueen The Little Green Orchard Poor Miss 7 Sam Andy Battle The Old Soldier The Picture The Little Old Cupid King David The Old House"
-    },
-    {
-      "id": "s1-1",
-      "sceneId": "s1",
-      "text": "Beasts Unstooping All But Blind Nicholas Nye The Pigs and The Charcoal Burner Five Eyes Grim Tit for Tat Summer Evening Earth Folk"
-    },
-    {
-      "id": "s1-2",
-      "sceneId": "s1",
-      "text": "WITCHES AND FAIRIES At the Keyhole The Old Stone House The Ruin The Ride-by-Nights Peak and Puke The Changeling The Mocking Fairy Bewitched The Honey Robbers Longlegs Melmillo"
-    },
-    {
-      "id": "s1-3",
-      "sceneId": "s1",
-      "text": "Earth and Air Trees Silver Nobody Knows Wanderers Many a Mickle Will Ever?"
-    },
-    {
-      "id": "s1-4",
-      "sceneId": "s1",
-      "text": "Songs The Song of the Secret The Song of Soldiers The Bees' Song A Song of Enchantment Dream-Song The Song of Shadows The Song of the Mad prince The Song of Finis"
-    },
-    {
-      "id": "s1-5",
-      "sceneId": "s1",
-      "text": "The Horseman"
-    },
-    {
-      "id": "s1-6",
-      "sceneId": "s1",
-      "text": "I heard a horseman Ride over the hill; The moon shone clear, The night was still; His helm was silver, And pale was he; And the horse he rode Was of ivory."
-    },
-    {
-      "id": "s1-7",
-      "sceneId": "s1",
-      "text": "Up and Down"
-    },
-    {
-      "id": "s1-8",
-      "sceneId": "s1",
-      "text": "Down the Hill of Ludgate, Up the Hill of Fleet, To and fro and East and West With people flows the street; Even the King of England On Temple Bar must beat For leave to ride to Ludgate Down the Hill of Fleet."
-    },
-    {
-      "id": "s1-9",
-      "sceneId": "s1",
-      "text": "Mrs. Earth"
-    },
-    {
-      "id": "s1-10",
-      "sceneId": "s1",
-      "text": "Mrs. Earth makes silver black, Mrs. Earth makes iron red But Mrs. Earth can not stain gold, Nor ruby red. Mrs. earth the slenderest bone"
+      "text": "Down the Hill of Ludgate, / Up the Hill of Fleet, / To and fro and East and West / With people flows the street; / Even the King of England / On Temple Bar must beat / For leave to ride to Ludgate / Down the Hill of Fleet."
     },
     {
       "id": "s2-0",
       "sceneId": "s2",
-      "text": "But all that I'm thinking of, ever shall think, Why, either knows."
+      "text": "Mrs. Earth makes silver black, / Mrs. Earth makes iron red / But Mrs. Earth can not stain gold, / Nor ruby red. / Mrs. earth the slenderest bone / Whitens in her bosom cold, / But Mrs. Earth can change my dreams / No more than ruby or gold. / Mrs. Earth and Mr. Sun / Can tan my skin, and tire my toes, / But all that I'm thinking of, ever shall think, / Why, either knows."
     },
     {
       "id": "s3-0",
       "sceneId": "s3",
-      "text": "Come! Quick as you can! There's a fish that talks In the frying-pan. Out of the fat, As clear as glass,"
+      "text": "Ann, Ann! / Come! Quick as you can! / There's a fish that talks / In the frying-pan. / Out of the fat, / As clear as glass, / He put up his mouth / And moaned 'Alas!' / Oh, most mournful, / 'Alas, alack!' / Then turned to his sizzling, / And sank him back."
     },
     {
       "id": "s4-0",
       "sceneId": "s4",
-      "text": "'Alas, alack!' Then turned to his sizzling,"
+      "text": "Poor Tired Tim! It's sad for him. / He lags the long bright morning through, / Ever so tired of nothing to do; / He moons and mopes the livelong day, / Nothing to think about, nothing to say; / Up to bed with his candle to creep, / Too tired to yawn, too tired to sleep: / Poor Tired Tim! It's sad for him."
     },
     {
       "id": "s5-0",
       "sceneId": "s5",
-      "text": "Poor Tired Tim! It's sad for him. He lags the long bright morning through,"
+      "text": "Jemima is my name, / But oh, I have another; / My father always calls me Meg, / And so do Bob and mother; / Only my sister, jealous of / The strands of my bright hair, / 'Jemima - Mima - Mima!' / Calls, mocking, up the stair."
     },
     {
       "id": "s6-0",
       "sceneId": "s6",
-      "text": "Poor Tired Tim! It's sad for him."
-    },
-    {
-      "id": "s6-1",
-      "sceneId": "s6",
-      "text": "Mima"
-    },
-    {
-      "id": "s6-2",
-      "sceneId": "s6",
-      "text": "Jemima is my name, But oh, I have another;"
+      "text": "Three jolly gentlemen, / In coats of red, / Rode their horses / Up to bed. / Three jolly gentlemen / Snored till morn, / Their horses champing / The golden corn. / Three jolly gentlemen, / At break of day, / Came clitter-clatter down the stairs / And galloped away."
     },
     {
       "id": "s7-0",
       "sceneId": "s7",
-      "text": "Calls, mocking, up the stair."
-    },
-    {
-      "id": "s7-1",
-      "sceneId": "s7",
-      "text": "The Huntsmen"
-    },
-    {
-      "id": "s7-2",
-      "sceneId": "s7",
-      "text": "Three jolly gentlemen, In coats of red, Rode their horses Up to bed."
-    },
-    {
-      "id": "s7-3",
-      "sceneId": "s7",
-      "text": "Three jolly gentlemen Snored till morn, Their horses champing The golden corn."
-    },
-    {
-      "id": "s7-4",
-      "sceneId": "s7",
-      "text": "Three jolly gentlemen, At break of day, Came clitter-clatter down the stairs And galloped away."
-    },
-    {
-      "id": "s7-5",
-      "sceneId": "s7",
-      "text": "The Bandog"
-    },
-    {
-      "id": "s7-6",
-      "sceneId": "s7",
-      "text": "Has anybody seen my Mopser? -- A comely dog is he,"
+      "text": "Has anybody seen my Mopser? -- / A comely dog is he, / With hair of the colour of a Charles the Fifth, / And teeth like ships at sea, / His tail it curls straight upwards, / His ears stand two abreast, / And he answers to the simple name of Mopser / When civilly addressed."
     },
     {
       "id": "s8-0",
       "sceneId": "s8",
-      "text": "When civilly addressed."
-    },
-    {
-      "id": "s8-1",
-      "sceneId": "s8",
-      "text": "I Can't Abear"
-    },
-    {
-      "id": "s8-2",
-      "sceneId": "s8",
-      "text": "I can't abear a Butcher, I can't abide his meat, The ugliest shop of all is his, The ugliest in the street; Bakers' are warm, cobblers' dark, Chemists' burn watery lights; But oh, the sawdust butcher's shop, That ugliest of sights!"
-    },
-    {
-      "id": "s8-3",
-      "sceneId": "s8",
-      "text": "The Dunce"
-    },
-    {
-      "id": "s8-4",
-      "sceneId": "s8",
-      "text": "Why does he still keep ticking? Why does his round white face"
+      "text": "I can't abear a Butcher, / I can't abide his meat, / The ugliest shop of all is his, / The ugliest in the street; / Bakers' are warm, cobblers' dark, / Chemists' burn watery lights; / But oh, the sawdust butcher's shop, / That ugliest of sights!"
     },
     {
       "id": "s9-0",
       "sceneId": "s9",
-      "text": "And what do I care if it does?"
-    },
-    {
-      "id": "s9-1",
-      "sceneId": "s9",
-      "text": "Chicken"
-    },
-    {
-      "id": "s9-2",
-      "sceneId": "s9",
-      "text": "Clapping her platter stood plump Bess, And all across the green"
+      "text": "Why does he still keep ticking? / Why does his round white face / Stare at me over the books and ink, / And mock at my disgrace? / Why does that thrush call, 'Dunce, dunce, dunce!'? / Why does that bluebottle buzz? / Why does the sun so silent shine? -- / And what do I care if it does?"
     },
     {
       "id": "s10-0",
       "sceneId": "s10",
-      "text": "They came at Bessie's call."
-    },
-    {
-      "id": "s10-1",
-      "sceneId": "s10",
-      "text": "Some One"
-    },
-    {
-      "id": "s10-2",
-      "sceneId": "s10",
-      "text": "Some one came knocking At my wee, small door; Some one came knocking, I'm sure - sure - sure; I listened, I opened, I looked to left and right, But naught there was a-stirring In the still dark night; Only the busy beetle Tap-tapping in the wall, Only from the forest The screech-owl's call,"
+      "text": "Clapping her platter stood plump Bess, / And all across the green / Came scampering in, on wing and claw, / Chicken fat and lean: / Dorking, Spaniard, Cochin China, / Bantams sleek and small, / Like feathers blown in a great wind, / They came at Bessie's call."
     },
     {
       "id": "s11-0",
       "sceneId": "s11",
-      "text": "'Cherries, ripe cherries!' The old woman cried, In her snowy white apron, And basket beside; And the little boys came, Eyes shining, cheeks red, To buy a bag of cherries, To eat with their bread."
-    },
-    {
-      "id": "s11-1",
-      "sceneId": "s11",
-      "text": "Old Shellover"
-    },
-    {
-      "id": "s11-2",
-      "sceneId": "s11",
-      "text": "'Come!' said Old Shellover. 'What?' says Creep. 'The horny old Gardener's fast asleep; The fat cock Thrush"
+      "text": "Some one came knocking / At my wee, small door; / Some one came knocking, / I'm sure - sure - sure; / I listened, I opened, / I looked to left and right, / But naught there was a-stirring / In the still dark night; / Only the busy beetle / Tap-tapping in the wall, / Only from the forest / The screech-owl's call, / Only the cricket whistling / While the dewdrops fall, / So I know not who came knocking, / At all, at all, at all."
     },
     {
       "id": "s12-0",
       "sceneId": "s12",
-      "text": "'Aye!' said Creep."
-    },
-    {
-      "id": "s12-1",
-      "sceneId": "s12",
-      "text": "Hapless"
-    },
-    {
-      "id": "s12-2",
-      "sceneId": "s12",
-      "text": "Hapless, hapless, I must be All the hours of life I see, Since my foolish nurse did once Bed me on her leggen bones;"
+      "text": "'Cherries, ripe cherries!' / The old woman cried, / In her snowy white apron, / And basket beside; / And the little boys came, / Eyes shining, cheeks red, / To buy a bag of cherries, / To eat with their bread."
     },
     {
       "id": "s13-0",
       "sceneId": "s13",
-      "text": "Not to such ill hap I had come."
-    },
-    {
-      "id": "s13-1",
-      "sceneId": "s13",
-      "text": "The Little Bird"
-    },
-    {
-      "id": "s13-2",
-      "sceneId": "s13",
-      "text": "My dear Daddie bought a mansion For to bring my Mammie to, In a hat with a long feather, And a trailing gown of blue; And a company of fiddlers And a rout of maids and men"
+      "text": "'Come!' said Old Shellover. / 'What?' says Creep. / 'The horny old Gardener's fast asleep; / The fat cock Thrush / To his nest has gone; / And the dew shines bright / In the rising Moon; / Old Sallie Worm from her hole doth peep: / Come!' said Old Shellover. / 'Aye!' said Creep."
     },
     {
       "id": "s14-0",
       "sceneId": "s14",
-      "text": "Wee small bird: and that was Me."
-    },
-    {
-      "id": "s14-1",
-      "sceneId": "s14",
-      "text": "Cake and Sack"
-    },
-    {
-      "id": "s14-2",
-      "sceneId": "s14",
-      "text": "Old King Caraway Supped on cake, And a cup of sack His thirst to slake; Bird in arras And hound in hall Watched very softly Or not at all; Fire in the middle, Stone all round Changed not, heeded not, Made no sound; All by himself"
+      "text": "Hapless, hapless, I must be / All the hours of life I see, / Since my foolish nurse did once / Bed me on her leggen bones; / Since my mother did not weel / To snip my nails with blades of steel. / Had they laid me on a pillow / In a cot of water willow, / Had they bitten finger and thumb, / Not to such ill hap I had come."
     },
     {
       "id": "s15-0",
       "sceneId": "s15",
-      "text": "'Cake and sack For King Caraway!'"
+      "text": "My dear Daddie bought a mansion / For to bring my Mammie to, / In a hat with a long feather, / And a trailing gown of blue; / And a company of fiddlers / And a rout of maids and men / Danced the clock round to the morning, / In a gay house-warming then. / And when all the guests were gone, and / All was still as still can be, / In from the dark ivy hopped a / Wee small bird: and that was Me."
     },
     {
       "id": "s16-0",
       "sceneId": "s16",
-      "text": "Were all her jovial crew. From bo'sun to the cabin boy, From quarter to caboose, There weren't a stitch of calico To breech 'em - tight or loose; From spar to deck, from deck to keel, From barnacle to shroud, There weren't one pair of reach-me-downs To all that jabbering crowd. But wasn't it a gladsome sight, When roared the deep sea gales, To see them reef her fore and aft A-swinging by their tails! Oh, wasn't it a gladsome sight, When glassy calm did come,"
+      "text": "Old King Caraway / Supped on cake, / And a cup of sack / His thirst to slake; / Bird in arras / And hound in hall / Watched very softly / Or not at all; / Fire in the middle, / Stone all round / Changed not, heeded not, / Made no sound; / All by himself / At the Table High / He'd nibble and sip / While his dreams slipped by; / And when he had finished, / He'd nod and say, / 'Cake and sack / For King Caraway!'"
     },
     {
       "id": "s17-0",
       "sceneId": "s17",
-      "text": "For nuts across the sand!"
-    },
-    {
-      "id": "s17-1",
-      "sceneId": "s17",
-      "text": "Tillie"
-    },
-    {
-      "id": "s17-2",
-      "sceneId": "s17",
-      "text": "Old Tillie Turveycombe Sat to sew, Just where a patch of fern did grow; There, as she yawned, And yawn wide did she, Floated some seed Down her gull-e-t; And look you once,"
+      "text": "There was a ship of Rio / Sailed out into the blue, / And nine and ninety monkeys / Were all her jovial crew. / From bo'sun to the cabin boy, / From quarter to caboose, / There weren't a stitch of calico / To breech 'em - tight or loose; / From spar to deck, from deck to keel, / From barnacle to shroud, / There weren't one pair of reach-me-downs / To all that jabbering crowd. / But wasn't it a gladsome sight, / When roared the deep sea gales, / To see them reef her fore and aft / A-swinging by their tails! / Oh, wasn't it a gladsome sight, / When glassy calm did come, / To see them squatting tailor-wise / Around a keg of rum! / Oh, wasn't it a gladsome sight, / When in she sailed to land, / To see them all a-scampering skip / For nuts across the sand!"
     },
     {
       "id": "s18-0",
       "sceneId": "s18",
-      "text": "'Tis poor old Tillie Sick for home; And oh, when a voice In the mist do sigh, Old Tillie Turveycombe's Floating by."
-    },
-    {
-      "id": "s18-1",
-      "sceneId": "s18",
-      "text": "JIM JAY"
-    },
-    {
-      "id": "s18-2",
-      "sceneId": "s18",
-      "text": "Do diddle di do, Poor Jim Jay Got stuck fast In Yesterday. Squinting he was, On Cross-legs bent,"
+      "text": "Old Tillie Turveycombe / Sat to sew, / Just where a patch of fern did grow; / There, as she yawned, / And yawn wide did she, / Floated some seed / Down her gull-e-t; / And look you once, / And look you twice, / Poor old Tillie / Was gone in a trice. / But oh, when the wind / Do a-moaning come, / 'Tis poor old Tillie / Sick for home; / And oh, when a voice / In the mist do sigh, / Old Tillie Turveycombe's / Floating by."
     },
     {
       "id": "s19-0",
       "sceneId": "s19",
-      "text": "Like a rusty pin... We pulled and we pulled From seven till twelve, Jim, too frightened To help himself. But all in vain. The clock struck one, And there was Jim A little bit gone. At half-past five You scarce could see"
+      "text": "Do diddle di do, / Poor Jim Jay / Got stuck fast / In Yesterday. / Squinting he was, / On Cross-legs bent, / Never heeding / The wind was spent. / Round veered the weathercock, / The sun drew in - / And stuck was Jim / Like a rusty pin... / We pulled and we pulled / From seven till twelve, / Jim, too frightened / To help himself. / But all in vain. / The clock struck one, / And there was Jim / A little bit gone. / At half-past five / You scarce could see / A glimpse of his flapping / Handkerchee. / And when came noon, / And we climbed sky-high, / Jim was a speck / Slip - slipping by. / Come to-morrow, / The neighbours say, / He'll be past crying for; / Poor Jim Jay."
     },
     {
       "id": "s20-0",
       "sceneId": "s20",
-      "text": "Slip - slipping by. Come to-morrow, The neighbours say, He'll be past crying for; Poor Jim Jay."
+      "text": "It's a very odd thing ----- / As odd as can be --- / That whatever Miss T. eats / Turns into Miss T.; / Porridge and apples, / Mince, muffins and mutton, / Jam, junket, jumbles ---- / Not a rap, not a button / It matters; the moment / They're out of her plate, / Though shared by Miss Butcher / And sour Mr. Bate; / Tiny and cheerful, / And neat as can be, / Whatever Miss T. eats / Turns into Miss T."
     },
     {
       "id": "s21-0",
       "sceneId": "s21",
-      "text": "Turns into Miss T.; Porridge and apples, Mince, muffins and mutton, Jam, junket, jumbles ---- Not a rap, not a button It matters; the moment"
+      "text": "I know a little cupboard, / With a teeny tiny key, / And there's a jar of Lollypops / For me, me, me. / It has a little shelf, my dear, / As dark as dark can be, / And there's a dish of Banbury Cakes / For me, me, me. / I have a small fat grandmamma, / With a very slippery knee, / And she's the Keeper of the Cupboard / With the key, key, key. / And I'm very good, my dear, / As good as good can be, / There's Branbury Cakes, and Lollypops / For me, me, me."
     },
     {
       "id": "s22-0",
       "sceneId": "s22",
-      "text": "Whatever Miss T. eats Turns into Miss T."
-    },
-    {
-      "id": "s22-1",
-      "sceneId": "s22",
-      "text": "The Cupboard"
-    },
-    {
-      "id": "s22-2",
-      "sceneId": "s22",
-      "text": "I know a little cupboard, With a teeny tiny key, And there's a jar of Lollypops For me, me, me."
-    },
-    {
-      "id": "s22-3",
-      "sceneId": "s22",
-      "text": "It has a little shelf, my dear, As dark as dark can be, And there's a dish of Banbury Cakes"
+      "text": "Gold locks, and black locks, / Red locks and brown, / Topknot to love-curl / The hair wisps down; / Straight above the clear eyes, / Rounded round the ears, / Snip-snap and snick-a-snick, / Clash the Barber's shears; / Us, in the looking-glass, / Footsteps in the street, / Over, under, to and fro, / The lean blades meet; / Bay Rum or Bear's Grease, / A silver groat to pay - / Then out a-shin-shan-shining / In the bright, blue day."
     },
     {
       "id": "s23-0",
       "sceneId": "s23",
-      "text": "With the key, key, key."
-    },
-    {
-      "id": "s23-1",
-      "sceneId": "s23",
-      "text": "And I'm very good, my dear, As good as good can be, There's Branbury Cakes, and Lollypops For me, me, me."
-    },
-    {
-      "id": "s23-2",
-      "sceneId": "s23",
-      "text": "The Barber's"
-    },
-    {
-      "id": "s23-3",
-      "sceneId": "s23",
-      "text": "Gold locks, and black locks, Red locks and brown, Topknot to love-curl The hair wisps down; Straight above the clear eyes, Rounded round the ears, Snip-snap and snick-a-snick, Clash the Barber's shears; Us, in the looking-glass, Footsteps in the street,"
+      "text": "Hide and seek, says the Wind, / In the shade of the woods; / Hide and seek, says the Moon, / To the hazel buds; / Hide and seek, says the Cloud, / Star on to star; / Hide and seek, says the Wave, / At the harbour bar; / Hide and seek, say I, / To myself, and step / Out of the dream of Wake / Into the dream of Sleep."
     },
     {
       "id": "s24-0",
       "sceneId": "s24",
-      "text": "In the bright, blue day."
+      "text": "Boys and Girls"
     },
     {
       "id": "s24-1",
       "sceneId": "s24",
-      "text": "Hide and Seek"
-    },
-    {
-      "id": "s24-2",
-      "sceneId": "s24",
-      "text": "Hide and seek, says the Wind, In the shade of the woods; Hide and seek, says the Moon, To the hazel buds; Hide and seek, says the Cloud, Star on to star;"
+      "text": "Twenty, forty, sixty, eighty / A hundred years ago, / All through the night with lantern bright / The Watch trudged to and fro, / And little boys tucked snug abed / Would wake from dreams to hear - / 'Two o' the morning by the clock, / And the stars a-shining clear!' / Or, when across the chimney-tops / Screamed shrill a North-East gale, / A faint and shaken voice would shout, / 'Three! And a storm of hail!'"
     },
     {
       "id": "s25-0",
       "sceneId": "s25",
-      "text": "Into the dream of Sleep."
-    },
-    {
-      "id": "s25-1",
-      "sceneId": "s25",
-      "text": "Boys and Girls"
-    },
-    {
-      "id": "s25-2",
-      "sceneId": "s25",
-      "text": "Then"
-    },
-    {
-      "id": "s25-3",
-      "sceneId": "s25",
-      "text": "Twenty, forty, sixty, eighty A hundred years ago, All through the night with lantern bright The Watch trudged to and fro, And little boys tucked snug abed Would wake from dreams to hear -"
+      "text": "Behind the blinds I sit and watch / The people passing - passing by; / And not a single one can see / My tiny watching eye. / They cannot see my little room, / All yellowed with the shaded sun; / They do not even know I'm here; / Nor'll guess when I am gone."
     },
     {
       "id": "s26-0",
       "sceneId": "s26",
-      "text": "'Three! And a storm of hail!'"
+      "text": "Thick in its glass / The physic stands, / Poor Henry lifts / Distracted hands; / His round cheek wans / In the candlelight, / To smell that smell! / To see that sight! / Finger and thumb / Clinch his small nose, / A gurgle, a gasp, / And down it goes; / Scowls Henry now; / But mark that cheek, / Sleek with the bloom / Of health next week!"
     },
     {
       "id": "s27-0",
       "sceneId": "s27",
-      "text": "Nor'll guess when I am gone."
-    },
-    {
-      "id": "s27-1",
-      "sceneId": "s27",
-      "text": "Poor Henry"
-    },
-    {
-      "id": "s27-2",
-      "sceneId": "s27",
-      "text": "Thick in its glass"
+      "text": "One night as Dick lay half asleep, / Into his drowsy eyes / A great still light begins to creep / From out the silent skies. / It was lovely moon's, for when / He raised his dreamy head, / Her surge of silver filled the pane / And streamed across his bed. / So, for a while, each gazed at each - / Dick and the solemn moon - / Till, climbing slowly on her way, / She vanished, and was gone."
     },
     {
       "id": "s28-0",
       "sceneId": "s28",
-      "text": "To smell that smell! To see that sight!"
-    },
-    {
-      "id": "s28-1",
-      "sceneId": "s28",
-      "text": "Finger and thumb Clinch his small nose,"
+      "text": "'I'm tired - Oh, tired of books,' said Jack, / 'I long for meadows green, / And woods, where shadowy violets / Nod their cool leaves between; / I long to see the ploughman stride / His darkening acres o'er, / To hear the hoarse sea-waters drive / Their billows 'gainst the shore; / I long to watch the sea-mew wheel / Back to her rock-perched mate; / Or, where the breathing cows are housed, / Lean dreaming o'er the gate. / Something has gone, and ink and print / Will never bring it back; / I long for the green fields again, / I'm tired of books,' said Jack."
     },
     {
       "id": "s29-0",
       "sceneId": "s29",
-      "text": "Of health next week!"
+      "text": "Tom sang for joy and Ned sang for joy and old Sam sang for joy; / All we four boys piped up loud, just like one boy; / And the ladies that sate with the Squire - their cheeks were all wet, / For the noise of the voice of us boys, when we sang our Quartette. / Tom he piped low and Ned he piped low and old Sam he piped low; / Into a sorrowful fall did our music flow; / And the ladies that sate with the Squire vowed they'd never forget / How the eyes of them cried for delight, when we sang our Quartette."
     },
     {
       "id": "s30-0",
       "sceneId": "s30",
-      "text": "'I long for meadows green, And woods, where shadowy violets Nod their cool leaves between; I long to see the ploughman stride His darkening acres o'er,"
+      "text": "Sitting under the mistletoe / (Pale-green, fairy mistletoe), / One last candle burning low, / All the sleepy dancers gone, / Just one candle burning on, / Shadows lurking everywhere: / Some one came, and kissed me there. / Tired I was; my head would go / Nodding under the mistletoe / (Pale-green, fairy mistletoe), / No footsteps came, no voice, but only, / Just as I sat there, sleepy, lonely, / Stooped in the still and shadowy air / Lips unseen - and kissed me there."
     },
     {
       "id": "s31-0",
       "sceneId": "s31",
-      "text": "Tom sang for joy and Ned sang for joy and old Sam sang for joy;"
+      "text": "Poor little Lucy / By some mischance, / Lost her shoe / As she did dance - / 'Twas not on the stairs, / Not in the hall; / Not where they sat / At supper at all. / She looked in the garden, / But there it was not; / Henhouse, or kennel, / Or high dovecote. / Dairy and meadow, / And wild woods through / Showed not a trace / Of Lucy's shoe. / Bird nor bunny / Nor glimmering moon / Breathed a whisper / Of where 'twas gone. / It was cried and cried, / Oyez and Oyez! / In French, Dutch, Latin, / And Portuguese. / Ships the dark seas / Went plunging through, / But none brought news / Of Lucy's shoe; / And still she patters / In silk and leather, / O'er snow, sand, shingle, / In every weather; / Spain, and Africa, / Hindustan, / Java, China, / And lamped Japan; / Plain and desert, / She hops-hops through, / Pernambuco / To gold Peru; / Mountain and forest, / And river too, / All the world over / For her lost shoe."
     },
     {
       "id": "s32-0",
       "sceneId": "s32",
-      "text": "And the ladies that sate with the Squire - their cheeks were all wet, For the noise of the voice of us boys, when we sang our Quartette."
-    },
-    {
-      "id": "s32-1",
-      "sceneId": "s32",
-      "text": "Tom he piped low and Ned he piped low and old Sam he piped low;"
+      "text": "Ere my heart beats too coldly and faintly / To remember sad things, yet be gay, / I would sing a brief song of the world's little children / Magic hath stolen away. / The primroses scattered by April, / The stars of the wide Milky Way, / Cannot outnumber the hosts of the children / Magic hath stolen away. / The buttercup green of the meadows, / The snow of the blossoming may, / Lovelier are not than the legions of children / Magic hath stolen away. / The waves tossing surf in the moonbeam, / The albatross lone on the spray, / Alone know the tears wept in vain for the children / Magic hath stolen away. / In vain: for at hush of the evening, / When the stars twinkle into the grey, / Seems to echo the far-away calling of children / Magic hath stolen away."
     },
     {
       "id": "s33-0",
       "sceneId": "s33",
-      "text": "And the ladies that sate with the Squire vowed they'd never forget How the eyes of them cried for delight, when we sang our Quartette."
+      "text": "Three Queer Tales"
     },
     {
       "id": "s33-1",
       "sceneId": "s33",
-      "text": "Mistletoe"
+      "text": "There was an old woman / Went blackberry picking / Along the hedges / From Weep to Wicking. - / Half a pottle- / No more she had got, / When out steps a Fairy / From her green grot; / And says, 'Well, Jill, / Would 'ee pick ee mo?' / And Jill, she curtseys, / And looks just so. / Be off,' says the Fairy, / 'As quick as you can, / Over the meadows / To the little green lane / That dips to the hayfields / Of Farmer Grimes: / I've berried those hedges / A score of times; / Bushel on bushel / I'll promise'ee, Jill, / This side of supper / If'ee pick with a will.' / She glints very bright, / And speaks her fair; / Then lo, and behold! / She had faded in air."
     },
     {
       "id": "s33-2",
       "sceneId": "s33",
-      "text": "Sitting under the mistletoe (Pale-green, fairy mistletoe),"
+      "text": "Be sure Old Goodie / She trots betimes / Over the meadows / To Farmer Grimes. / And never was queen / With jewelry rich / As those same hedges / From twig to ditch; / Like Dutchmen's coffers, / Fruit, thorn, and flower - / They shone like William / And Mary's bower. / And be sure Old Goodie / Went back to Weep, / So tired with her basket / She scarce could creep."
+    },
+    {
+      "id": "s33-3",
+      "sceneId": "s33",
+      "text": "When she comes in the dusk / To her cottage door, / There's Towser wagging / As never before, / To see his Missus / So glad to be / Come from her fruit-picking / Back to he. / As soon as next morning / Dawn was grey, / The pot on the hob / Was simmering away; / And all in a stew / And a hugger-mugger / Towser and Jill / A-boiling of sugar, / And the dark clear fruit / That from Faerie came, / For syrup and jelly / And blackberry jam. / Twelve jolly gallipots / Jill put by; / And one little teeny one, / One inch high; / And that she's hidden / A good thumb deep, / Half way over / From Wicking to Weep."
     },
     {
       "id": "s34-0",
       "sceneId": "s34",
-      "text": "Some one came, and kissed me there."
-    },
-    {
-      "id": "s34-1",
-      "sceneId": "s34",
-      "text": "Tired I was; my head would go"
+      "text": "Three jolly Farmers / Once bet a pound / Each dance the others would / Off the ground. / Out of their coats / They slipped right soon, / And neat and nicesome, / Put each his shoon. / One - Two - Three! - / And away they go, / Not too fast, / And not too slow; / Out from the elm-tree's / Noonday shadow, / Into the sun / And across the meadow. / Past the schoolroom, / With knees well bent / Fingers a-flicking, / They dancing went. / Up sides and over, / And round and round, / They crossed click-clacking, / The Parish bound, / By Tupman's meadow / They did their mile, / Tee-t-tum / On a three-barred stile. / Then straight through Whipham, / Downhill to Week, / Footing it lightsome, / But not too quick, / Up fields to Watchet, / And on through Wye, / Till seven fine churches / They'd seen skip by - / Seven fine churches, / And five old mills, / Farms in the valley, / And sheep on the hills; / Old Man's Acre / And Dead Man's Pool / All left behind, / As they danced through Wool. / And Wool gone by, / Like tops that seem / To spin in sleep / They danced in dream; / Withy - Wellover - / Wassop-Wo- / Like an old clock / Their heels did go. / A league and a league / And a league they went, / And not one weary, / And not one spent. / And Io, and behold! / Past Willow-cum-Leigh / Stretched with its waters / The great green sea. / Says Farmer Bates, / I puffs and I blows, / What's under the water, / Why, no man knows!' / Says Farmer Giles, / 'My wind comes weak, / And a good man drownded / Is far to seek.' / But Farmer Turvey, / On twirling toes / Up's with his gaiters, / And in he goes: / Down where the mermaids / Pluck and play / On their twangling harps / In a sea-green day; / Down where the mermaids, / Finned and fair, / Sleek with their combs / Their yellow hair.... / Bates and Giles- / On the shingle sat, / Gazing at Turvey's / Floating hat. / But never a ripple / Nor bubble told / Where he was supping / Off plates of gold. / Never an echo / Rilled through the sea / Of the feasting and dancing / And minstrelsy. / They called-called-called: / Came no reply: / Nought but the ripples' / Sandy sigh. / Then glum and silent / They sat instead, / Vacantly brooding / On home and bed, / Till both together / Stood up and said.- / 'Us knows not, dreams not, / Where you be, / Turvey, unless / In the deep blue sea; / But axcusing silver- / And it comes most willing - / Here's us two paying / Our forty shilling; / For it's sartin sure, Turvey, / Safe and sound, / You danced us square, Turvey, / Off the ground!'"
     },
     {
       "id": "s35-0",
       "sceneId": "s35",
-      "text": "Lips unseen - and kissed me there."
+      "text": "There came a Thief one night to Robin's Castle, / He climbed up into a Tree; / And sitting with his head among the branches, / A wondrous Sight did see. / For there was Robin supping at his table, / With Candles of pure Wax, / His Dame and his two beauteous little Children, / With Velvet on their backs. / Platters for each there were shin-shining, / Of Silver many a pound, / And all of beaten Gold, three brimming Goblets, / Standing the table round. / The smell that rose up richly from the Baked Meats / Came thinning amid the boughs, / And much that greedy Thief who snuffed the night air- / His Hunger did arouse. / He watched them eating, drinking, laughing, talking, / Busy with finger and spoon, / While three most cunning Fiddlers, clad in crimson, / Played them a supper-tune. / And he waited in the tree-top like a Starling, / Till the Moon was gotten low; / When all the windows in the walls were darkened, / He softly in did go. / There Robin and his Dame in bed were sleeping, / And his Children young and fair; / Only Robin's Hounds from their warm kennels / Yelped as he climbed the stair. / All, all were sleeping, page and fiddler, / Cook, scullion, free from care; / Only Robin's Stallions from their stables / Neighed as he climbed the stair. / A wee wan light the Moon did shed him, / Hanging above the sea, / And he counted into his bag (of beaten Silver) / Platters thirty-three."
     },
     {
       "id": "s35-1",
       "sceneId": "s35",
-      "text": "The Lost Shoe"
+      "text": "Of Spoons three score; of jolly golden Goblets / He stowed in four save one, / And six fine three-branched Cupid Candlesticks, / Before his work was done. / Nine bulging bags of Money in a cupboard, / Two Snuffers, and a Dish / He found, the last all studded with great Garnets / And shapen like a Fish. / Then tiptoe up he stole into a Chamber, / Where on Tasselled Pillows lay / Robin and his Daule in dreaming slumbers / Tired with the summer's day. / That Thief he mimbled round him in the gloaming, / Their treasure for to spy, / Combs, Brooches, Chains, and, Rings, and Pins and Buckles / All higgledy, Piggle-dy. / A Watch shaped in the shape of a flat Apple / In purest crystal set / He lifted from the hook where it was ticking / And crammed in his Pochette. / He heaped the pretty Baubles on the table, / Trinketsi Knick-knackerie, / Pearls, Diamonds, Sapphires, Topazes, and Opals- / All in his bag put he. / And there in night's pale Gloom was Robin dreaming / He was hunting the mountain Bear, / While his Dame in peaceful slumber in no wise heeded / A greedy Thief was there. / And that ravenous Thief he climbed up even higher, / Till into a chamber small / He crept where lay poor Robin's beauteous Children, / Lovelier in sleep withal. / Oh, fairer was their Hair than Gold of Goblet, / 'Yond Silver their Cheeks did shine, / And their little hands that lay upon the linen / Made that Thief's hard heart to pine."
+    },
+    {
+      "id": "s35-2",
+      "sceneId": "s35",
+      "text": "But though a moment there his hard heart faltered, / Eftsoones be took them twain, / And slipped them into his Bag with all his Plunder, / And soft stole down again. / Spoon, Platter, Goblet, Ducats, Dishes, Trinkets, / And those two Children dear, / A-quaking in the clinking and the clanking, / And half bemused with fear, / He carried down the stairs into the Courtyard, / But there he made no stay, / He just tied up his Garters, took a deep breath, / And ran like the wind away. / Past Forest, River, Mountain, River, Forest- / He coursed the whole night through, / Till morning found him come into a Country, / Where none his bad face knew. / Past Mountain, River, Forest, River, Mountain- / That Thief's lean shanks sped on, / Till Evening found him knocking at a Dark House, / His breath now well-nigh gone. / There came a little maid and asked his Business; / A Cobbler dwelt within; / And though she much misliked the Bag he carried, / She led the Bad Man in. / He bargained with the Cobbler for a lodging / And soft laid down his Sack- / In the Dead of Night, with none to spy or listen- / From off his weary back. / And he taught the little Chicks to call him Father, / And he sold his stolen Pelf, / And bought a Palace, Horses, Slaves, and Peacocks / To ease his wicked self. / And though the Children never really loved him, / He was rich past all belief; / While Robin and his Dame o'er Delf and Pewter / Spent all their Days in Grief."
     },
     {
       "id": "s36-0",
       "sceneId": "s36",
-      "text": "'Twas not on the stairs, Not in the hall; Not where they sat At supper at all. She looked in the garden, But there it was not; Henhouse, or kennel, Or high dovecote. Dairy and meadow, And wild woods through"
+      "text": "Places and People"
+    },
+    {
+      "id": "s36-1",
+      "sceneId": "s36",
+      "text": "A poor old Widow in her weeds / Sowed her garden with wild-flower seeds; / Not too shallow, and not too deep, / And down came April -- drip -- drip -- drip. / Up shone May, like gold, and soon / Green as an arbour grew leafy June. / And now all summer she sits and sews / Where willow herb, comfrey, bugloss blows, / Teasle and pansy, meadowsweet, / Campion, toadflax, and rough hawksbit; / Brown bee orchis, and Peals of Bells; / Clover, burnet, and thyme she smells; / Like Oberon's meadows her garden is / Drowsy from dawn to dusk with bees. / Weeps she never, but sometimes sighs, / And peeps at her garden with bright brown eyes; / And all she has is all she needs -- / A poor Old Widow in her weeds."
     },
     {
       "id": "s37-0",
       "sceneId": "s37",
-      "text": "Of where 'twas gone. It was cried and cried, Oyez and Oyez! In French, Dutch, Latin, And Portuguese. Ships the dark seas Went plunging through, But none brought news Of Lucy's shoe; And still she patters In silk and leather, O'er snow, sand, shingle, In every weather; Spain, and Africa, Hindustan, Java, China, And lamped Japan; Plain and desert, She hops-hops through, Pernambuco To gold Peru; Mountain and forest, And river too, All the world over"
+      "text": "Black as a chimney is his face, / And ivory white his teeth, / And in his brass-bound cart he rides, / The chestnut blooms beneath. / 'Sooeep, Sooeep!' he cries, and brightly peers / This way and that, to see / With his two light-blue shining eyes / What custom there may be. / And once inside the house, he'll squat, / And drive his rods on high, / Till twirls his sudden sooty brush / Against the morning sky. / Then, 'mid his bulging bags of soot, / With half the world asleep, / His small cart wheels him off again, / Still hoarsely bawling, 'Sooeep!'"
     },
     {
       "id": "s38-0",
       "sceneId": "s38",
-      "text": "Magic hath stolen away."
+      "text": "With glass like a bull's-eye, / And shutters of green, / Down on the cobbles / Lives Mrs. MacQueen, / At six she rises; / At nine you see / Her candle shine out / In the linden tree: / And at half-past nine / Not a sound is nigh / But the bright moon's creeping / Across the sky; / Or a far dog baying; / Or a twittering bird / In its drowsy nest, / In the darkness stirred; / Or like the roar / Of a distant sea / A long-drawn S-s-sh / In the linden tree."
     },
     {
       "id": "s39-0",
       "sceneId": "s39",
-      "text": "Magic hath stolen away."
+      "text": "Some one is always sitting there, / In the little green orchard; / Even when the sun is high / In noon's unclouded sky, / And faintly droning goes / The bee from rose to rose, / Some one in shadow is sitting there / In the little green orchard. / Yes, when the twilight's falling softly / In the little green orchard; / When the grey dew distills / And every flower-cup fills; / When the last blackbird says, / 'What - what!' and goes her way - ssh! / I have heard voices calling softly / In the little green orchard / Not that I am afraid of being there, / In the little green orchard; / Why, when the moon's been bright, / Shedding her lonesome light, / And moths like ghosties come, / And the horned snail leaves home: / I've sat there, whispering and listening there, / In the little green orchard. / Only it's strange to be feeling there, / In the little green orchard; / Whether you paint or draw, / Dig, hammer, chop or saw; / When you are most alone, / All but the silence gone... / Some one is watching and waiting there, / In the little green orchard."
     },
     {
       "id": "s40-0",
       "sceneId": "s40",
-      "text": "Magic hath stolen away."
+      "text": "Lone and alone she lies, / Poor Miss 7, / Five steep flights from the earth, / And one from heaven; / Dark hair and dark brown eyes, - / Not to be sad she tries, / Still - still it's lonely lies / Poor Miss 7. / One day-long watch hath she, / Poor Miss 7, / Not in some orchard sweet / In April Devon - / Just four blank walls to see, / And dark come shadowily, / No moon, no stars, ah me! / Poor Miss 7. / And then to wake again, / Poor Miss 7, / To the cold night, to have / Sour physic given; / Out of some dream of pain, / Then strive long hours in vain / Deep dreamless sleep to gain: / Poor Miss 7. / Yet memory softly sings / Poor Miss 7 / Songs full of love and peace / And gladness even; / Clear flowers and tiny wings, / All tender, lovely things, / Hope to her bosom brings - / Happy Miss 7."
     },
     {
       "id": "s41-0",
       "sceneId": "s41",
-      "text": "Magic hath stolen away."
-    },
-    {
-      "id": "s41-1",
-      "sceneId": "s41",
-      "text": "Three Queer Tales"
+      "text": "When Sam goes back in memory, / It is to where the sea / Breaks on the shingle, emerald-green, / In white foam, endlessly; / He says - with small brown eye on mine- / 'I used to keep awake, / And lean from my window in the moon, / Watching those billows break. / And half a million tiny hands, / And eyes, like sparks of frost, / Would dance and come tumbling into the moon, / On every breaker tossed. / And all across from star to star, / I've seen the watery sea, / With not a single ship in sight, / Just ocean there, and me; / And heard my father snore. And once, / As sure as I'm alive, / Out of those wallowing, moon-flecked waves / I saw a mermaid dive; / Head and shoulders above the wave, / Plain as I now see you, / Combing her hair, now back, now front, / Her two eyes peeping through; / Calling me, 'Sam!' -quietlike- 'Sam!'... / But me .... I never went, / Making believe I kind of thought / 'Twas some one else she meant.... / Wonderful lovely there she sat, / Singing the night away, / All in the solitudinous sea / Of that there lonely bay. / P'raps,' and he'd smooth his hairless mouth, / 'P'raps, if 'twere now, my son, / Praps, if I heard a voice say, 'Sam!'... / Morning would find we gone.'"
     },
     {
       "id": "s42-0",
       "sceneId": "s42",
-      "text": "From Weep to Wicking. -"
+      "text": "Once and there was a young sailor, yeo ho! / And he sailed out over the say / For the isles where pink coral and palm branches blow, / And the fire-flies turn night into day, / Yeo ho! / And the fire-flies turn night into day. / But the Dolphin went down in a tempest, yeo ho! / And with three forsook sailors ashore, / The portingales took him wh'ere sugar-canes grow, / Their slave for to be evermore, / Yeo ho! / Their slave for to be evermore. / With his musket for mother and brother, yeo ho! / He warred with the Cannibals drear, / in forests where panthers pad soft to and fro, / And the Pongo shakes noonday with fear, / Yeo ho! / And the Pongo shakes noonday with fear. / Now lean with long travail, all wasted with woe, / With a monkey for messmate and friend, / He sits 'neath the Cross in the cankering snow, / And waites for his sorrowful end, / Yeo ho! / And waits for his sorrowful end."
     },
     {
       "id": "s43-0",
       "sceneId": "s43",
-      "text": "'As quick as you can, Over the meadows To the little green lane That dips to the hayfields Of Farmer Grimes:"
+      "text": "There came an Old Soldier to my door, / Asked a crust, and asked no more; / The wars had thinned him very bare, / Fighting and marching everywhere, / With a Fol rol dol rol di do. / With nose stuck out, and cheek sunk in, / A bristling beard upon his chin - / Powder and bullets and wounds and drums / Had come to that Soldier as suchlike comes - / With a Fol rol dol rol di do. / 'Twas sweet and fresh with buds of May, / Flowers springing from every spray; / And when he had supped the Old Soldier trolled / The song of youth that never grows old, / Called Fol rol dol rol di do. / Most of him rags, and all of him lean, / And the belt round his belly drawn tightsome in / He lifted his peaked old grizzled head, / And these were the very same words he said- / A Fol-rol-dol-rol-di-do."
     },
     {
       "id": "s44-0",
       "sceneId": "s44",
-      "text": "She had faded in air."
-    },
-    {
-      "id": "s44-1",
-      "sceneId": "s44",
-      "text": "Be sure Old Goodie She trots betimes Over the meadows To Farmer Grimes. And never was queen With jewelry rich As those same hedges From twig to ditch; Like Dutchmen's coffers, Fruit, thorn, and flower -"
+      "text": "Here is a sea-legged sailor, / Come to this tottering Inn, / Just when the bronze on its signboard is fading, / And the black shades of evening begin. / With his head on thick paws sleeps a sheep-dog, / There stoops the Shepherd, and see, / All follow-my-leader the ducks waddle homeward, / Under the sycamore tree. / Very brown is the face of the Sailor, / His bundle is crimson, and green / Are the thick leafy boughs that hang dense o'er the Tavern, / And blue the far meadows between. / But the Crust, Ale and Cheese of the Sailor, / His Mug and his platter of Delf, / And the crescent to light home the Shepherd and Sheep-dog / The painter has kept to himself."
     },
     {
       "id": "s45-0",
       "sceneId": "s45",
-      "text": "She scarce could creep."
-    },
-    {
-      "id": "s45-1",
-      "sceneId": "s45",
-      "text": "When she comes in the dusk To her cottage door, There's Towser wagging As never before, To see his Missus So glad to be Come from her fruit-picking Back to he. As soon as next morning Dawn was grey, The pot on the hob Was simmering away; And all in a stew And a hugger-mugger"
+      "text": "'Twas a very small garden; / The paths were of stone, / Scattered with leaves, / With moss overgrown; / And a little old Cupid / Stood under a tree, / With a small broken bow / He stood aiming at me. / The dog-rose in briars / Hung over the weeds, / The air was aflock / With the floating of seed, / And a little old Cupid / Stood under a tree, / With a small broken bow / He stood aiming at me. / The dovecote was tumbling, / The fountain dry, / A wind in the orchard / Went whispering by; / And a little old Cupid / Stood under a tree, / With a small broken bow / He stood aiming at me."
     },
     {
       "id": "s46-0",
       "sceneId": "s46",
-      "text": "And blackberry jam."
-    },
-    {
-      "id": "s46-1",
-      "sceneId": "s46",
-      "text": "Twelve jolly gallipots Jill put by;"
+      "text": "King David was a sorrowful man: / No cause for his sorrow had he; / And he called for the music of a hundred harps, / To ease his melancholy. / They played till they all fell silent: / Played-and play sweet did they; / But the sorrow that haunted the heart of King David / They could not charm away. / He rose; and in his garden / Walked by the moon alone, / A nightingale hidden in a cypress-tree / Jargoned on and on. / King David lifted his sad eyes / Into the dark-boughed tree- / ''Tell me, thou little bird that singest, / Who taught my grief to thee?' / But the bird in no wise heeded / And the king in the cool of the moon / Hearkened to the nightingale's sorrowfulness, / Till all his own was gone."
     },
     {
       "id": "s47-0",
       "sceneId": "s47",
-      "text": "From Wicking to Weep."
-    },
-    {
-      "id": "s47-1",
-      "sceneId": "s47",
-      "text": "Off the Ground"
-    },
-    {
-      "id": "s47-2",
-      "sceneId": "s47",
-      "text": "Three jolly Farmers Once bet a pound"
+      "text": "A very, very old house I know- / And ever so many people go, / Past the small lodge, forlorn and still, / Under the heavy branches, till / Comes the blank wall, and there's the door. / Go in they do; come out no more. / No voice says aught; no spark of light / Across that threshold cheers the sight; / Only the evening star on high / Less lonely makes a lonely sky, / As, one by one, the people go / Into that very old house I know."
     },
     {
       "id": "s48-0",
       "sceneId": "s48",
-      "text": "One - Two - Three! - And away they go,"
+      "text": "Beasts"
+    },
+    {
+      "id": "s48-1",
+      "sceneId": "s48",
+      "text": "Low on his fours the Lion / Treads with the surly Bear', / But Men straight upward from the dust / Walk with their heads in air; / The free sweet winds of heaven, / The sunlight from on high / Beat on their clear bright cheeks and brows / As they go striding by; / The doors of all their houses / They arch so they may go, / Uplifted o'er the four-foot beasts, / Unstooping, to and fro."
     },
     {
       "id": "s49-0",
       "sceneId": "s49",
-      "text": "And across the meadow. Past the schoolroom, With knees well bent Fingers a-flicking, They dancing went. Up sides and over, And round and round,"
+      "text": "All but blind / In his cambered hole / Gropes for worms / The four-clawed Mole. / All but blind / In the evening sky / The hooded Bat / Twirls softly by. / All but blind / In the burning day / The Barn-Owl blunders / On her way. / And blind as are / These three to me, / So blind to someone / I must be."
     },
     {
       "id": "s50-0",
       "sceneId": "s50",
-      "text": "On a three-barred stile. Then straight through Whipham, Downhill to Week, Footing it lightsome, But not too quick, Up fields to Watchet, And on through Wye, Till seven fine churches They'd seen skip by - Seven fine churches, And five old mills,"
+      "text": "Thistle and darnell and dock grew there, / And a bush, in the corner, of may, / On the orchard wall I used to sprawl / In the blazing heat of the day; / Half asleep and half awake, / While the birds went twittering by, / And nobody there my lone to share / But Nicholas Nye. / Nicholas Nye was lean and gray, / Lame of leg and old, / More than a score of donkey's years / He had been since he was foaled; / He munched the thistles, purple and spiked, / Would sometimes stoop and sigh, / And turn to his head, as if he said, / \"Poor Nicholas Nye!\" / Alone with his shadow he'd drowse in the meadow, / Lazily swinging his tail, / At break of day he used to bray,-- / Not much too hearty and hale; / But a wonderful gumption was under his skin, / And a clean calm light in his eye, / And once in a while; he'd smile:-- / Would Nicholas Nye. / Seem to be smiling at me, he would, / From his bush in the corner, of may,-- / Bony and ownerless, widowed and worn, / Knobble-kneed, lonely and gray; / And over the grass would seem to pass / 'Neath the deep dark blue of the sky, / Something much better than words between me / And Nicholas Nye. / But dusk would come in the apple boughs, / The green of the glow-worm shine, / The birds in nest would crouch to rest, / And home I'd trudge to mine; / And there, in the moonlight, dark with dew, / Asking not wherefore nor why, / Would brood like a ghost, and as still as a post, / Old Nicholas Nye."
     },
     {
       "id": "s51-0",
       "sceneId": "s51",
-      "text": "As they danced through Wool. And Wool gone by, Like tops that seem"
+      "text": "The old Pig said to the little pigs, / 'In the forest is truffles and mast, / Follow me then, all ye little pigs, / Follow me fast!' / The Charcoal-burner sat in the shade / With his chin on his thumb, / And saw the big Pig and the little pigs, / Chuffling come. / He watched 'neath a green and giant bough, / And the pigs in the ground / Made a wonderful grizzling and gruzzling / And a greedy sound. / And when, full-fed they were gone, and Night / Walked her starry ways, / He stared with his cheeks in his hands / At his sullen blaze."
     },
     {
       "id": "s52-0",
       "sceneId": "s52",
-      "text": "'My wind comes weak, And a good man drownded Is far to seek.' But Farmer Turvey, On twirling toes Up's with his gaiters, And in he goes: Down where the mermaids Pluck and play"
+      "text": "In Hans' old Mill his three black cats / Watch the bins for the thieving rats. / Whisker and claw, they crouch in the night, / Their five eyes smouldering green and bright: / Squeaks from the flour sacks, squeaks from where / The cold wind stirs on the empty stair, / Squeaking and scampering, everywhere. / Then down they pounce, now in, now out, / At whisking tail, and sniffing snout; / While lean old Hans he snores away / Till peep of light at break of day; / Then up he climbs to his creaking mill, / Out come his cats all grey with meal -- / Jekkel, and Jessup, and one-eyed Jill."
     },
     {
       "id": "s53-0",
       "sceneId": "s53",
-      "text": "Their yellow hair.... Bates and Giles- On the shingle sat,"
+      "text": "Beside the blaze of forty fires / Giant Grim doth sit, / Roasting a thick-woolled mountain sheep / Upon an iron spit. / Above him wheels the winter sky, / Beneath him, fathoms deep, / Lies hidden in the valley mists / A village fast asleep --- / Save for one restive hungry dog / That, snuffing towards the height, / Smells Grim's broiled supper-meat, and spies / His watch-fire twinkling bright."
     },
     {
       "id": "s54-0",
       "sceneId": "s54",
-      "text": "Off plates of gold. Never an echo Rilled through the sea Of the feasting and dancing And minstrelsy. They called-called-called: Came no reply: Nought but the ripples' Sandy sigh."
+      "text": "Have you been catching of fish, Tom Noddy? / Have you snared a weeping hare? / Have you whistled, 'No Nunny,'and gunned a poor / bunny, / Or a blinded bird of the air? / Have you trod like a murderer through the green / woods, / Through the dewy deep dingles and glooms, / While every small creature screamed shrill to Dame / Nature, / 'He comes --and he comes!'? / Wonder I very much do, Tom Noddy, / If ever, when you are a-roam, / An Ogre from space will stoop a lean face / And lug you home: / Lug you home over his fence, Tom Noddy, / Of thorn-sticks nine yards high, / With your bent knees strung round his old iron gun / And your head dan-dangling by: / And hang you up stiff on a hook, Tom Noddy, / From a stone-cold pantry shelf, / Whence your eyes will glare in an empty stare, / Till you're cooked yourself!"
     },
     {
       "id": "s55-0",
       "sceneId": "s55",
-      "text": "'Us knows not, dreams not, Where you be, Turvey, unless In the deep blue sea; But axcusing silver- And it comes most willing - Here's us two paying Our forty shilling; For it's sartin sure, Turvey, Safe and sound, You danced us square, Turvey,"
+      "text": "The sandy cat by the Farmer's chair / Mews at his knee for dainty fare; / Old Rover in his moss-greened house / Mumbles a bone, and barks at a mouse / In the dewy fields the cattle lie / Chewing the cud 'neath a fading sky / Dobbin at manger pulls his hay: / Gone is another summer's day."
     },
     {
       "id": "s56-0",
       "sceneId": "s56",
-      "text": "Spent all their Days in Grief."
-    },
-    {
-      "id": "s56-1",
-      "sceneId": "s56",
-      "text": "Places and People"
+      "text": "The cat she walks on padded claws, / The wolf on the hills lays stealthy paws, / Feathered birds in the rain-sweet sky / At their ease in the air, flit low, flit high. / The oak's blind, tender roots pierce deep, / His green crest towers, dimmed in sleep, / Under the stars whose thrones are set / Where never prince hath journeyed yet."
     },
     {
       "id": "s57-0",
       "sceneId": "s57",
-      "text": "Where willow herb, comfrey, bugloss blows,"
+      "text": "Witches and Fairies"
+    },
+    {
+      "id": "s57-1",
+      "sceneId": "s57",
+      "text": "'Grill me some bones,' said the Cobbler, / 'Some bones, my pretty Sue; / I'm tired of my lonesome with heels and soles, / Springsides and uppers too; / A mouse in the wainscot is nibbling; / A wind in the keyhole drones; / And a sheet webbed over my candle, Susie, --- / Grill me some bones!' / 'Grill me some bones,' said the Cobbler, / I sat at my tic-tac-to; / And a footstep came to my door and stopped, / And a hand groped to and fro; / And I peered up over my boot and last; / And my feet went cold as stones: / I saw an eye at the keyhole, Susie! --- / Grill me some bones!'"
     },
     {
       "id": "s58-0",
       "sceneId": "s58",
-      "text": "Lives Mrs. MacQueen,"
-    },
-    {
-      "id": "s58-1",
-      "sceneId": "s58",
-      "text": "At six she rises; At nine you see Her candle shine out In the linden tree:"
-    },
-    {
-      "id": "s58-2",
-      "sceneId": "s58",
-      "text": "And at half-past nine Not a sound is nigh But the bright moon's creeping Across the sky;"
-    },
-    {
-      "id": "s58-3",
-      "sceneId": "s58",
-      "text": "Or a far dog baying; Or a twittering bird In its drowsy nest,"
+      "text": "Nothing on the grey roof, nothing on the brown, / Only a little greening where the rain drips down; / Nobody at the window, nobody at the door, / Only a little hollow which a foot once wore; / But still I tread on tiptoe, still tiptoe on I go, / Past nettles, porch, and weedy well, for oh, I know / A friendless face is peering, and a still clear eye / Peeps closely through the casement / as my step goes by."
     },
     {
       "id": "s59-0",
       "sceneId": "s59",
-      "text": "In the linden tree."
-    },
-    {
-      "id": "s59-1",
-      "sceneId": "s59",
-      "text": "The Little Green Orchard"
-    },
-    {
-      "id": "s59-2",
-      "sceneId": "s59",
-      "text": "Some one is always sitting there, In the little green orchard;"
+      "text": "When the last colours of the day / Have from their burning ebbed away, / About that ruin, cold and lone, / The cricket shrills from stone to stone; / And scattering o'er its darkened green, / Bands of the fairies may be seen, / Chattering like grasshoppers, their feet / Dancing a thistledown dance round it: / While the great gold of the mild moon / Tinges their tiny acorn shoon."
     },
     {
       "id": "s60-0",
       "sceneId": "s60",
-      "text": "In the little green orchard."
+      "text": "Up on their brooms the Witches stream, / Crooked and black in the crescent's gleam; / One foot high, and one foot low, / Bearded, cloaked, and cowled, they go, / 'Neath Charlie's Wain they twitter and tweet, / And away they swarm 'neath the Dragon's feet, / With a whoop and a flutter they swing and sway, / And surge pell-mell down the Milky Way. / Betwixt the legs of the glittering Chair / They hover and squeak in the empty air. / Then round they swoop past the glimmering Lion / To where Sirius barks behind huge Orion; / Up, then, and over to wheel amain, / Under the silver, and home again."
     },
     {
       "id": "s61-0",
       "sceneId": "s61",
-      "text": "In the little green orchard;"
+      "text": "From his cradle in the glamourie / They have stolen my wee brother, / Housed a changeling in his swaddlings / For to fret my own poor mother. / Pules it in the candle light / Wi' a cheek so lean and white, / Chinkling up its eyne so wee / Wailing shrill at her an' me. / It we'll neither rock nor tend / Till the Silent Silent send, / Lapping in their awesome arms / Him they stole with spells and charms, / Till they take this changeling creature / Back to its own fairy nature -- / Cry! Cry! As long as may be, / Ye shall ne'er be woman's baby!"
     },
     {
       "id": "s62-0",
       "sceneId": "s62",
-      "text": "'What - what!' and goes her way - ssh! I have heard voices calling softly In the little green orchard"
-    },
-    {
-      "id": "s62-1",
-      "sceneId": "s62",
-      "text": "Not that I am afraid of being there, In the little green orchard;"
+      "text": "'Ahoy, and ahoy!' / 'Twixt mocking and merry -- / 'Ahoy and ahoy, there, / Young man of the ferry!' / She stood on the steps / In the watery gloom --- / That Changeling --'Ahoy, there!' / She called him to come. / He came on the green wave, / He came on the grey, / Where stooped that sweet lady / That still summer's day. / He fell in a dream / Of her beautiful face, / As she sat on the thwart / And smiled in her place. / No echo his oar woke, / Float silent did they, / Past low-grazing cattle / In the sweet of the hay. / And still in a dream / At her beauty sat he, / Drifting stern foremost / Down -- down to the sea. / Come you, then: call, / When the twilight apace / Brings shadow to brood / On the loveliest face; / You shall hear o'er the water / Ring faint in the grey --- / 'Ahoy, and ahoy, there!' / And tremble away; / 'Ahoy, and ahoy!...' / And tremble away."
     },
     {
       "id": "s63-0",
       "sceneId": "s63",
-      "text": "In the little green orchard."
+      "text": "'Won't you look out of your window, Mrs. Gill?' / Quoth the Fairy, niddling, nodding in the garden; / 'Can't you look out of your window, Mrs. Gill?' / Quoth the Fairy, laughing softly in the garden; / But the air was still, the cherry boughs were still, / And the ivy-tod 'neath the empty sill, / And never from her window looked out Mrs. Gill / On the Fairy shrilly mocking in the garden. / 'What have they done with you, you poor Mrs. Gill?' / Quoth the Fairy brightly glancing in the garden; / 'Where have they hidden you, you poor old Mrs. Gill?' / Quoth the Fairy dancing lightly in the garden; / But night's faint veil now wrapped the hill, / Stark 'neath the stars stood the dead-still Mill, / And out of her cold cottage never answered Mrs. Gill / The Fairy mimbling, mambling in the garden."
     },
     {
       "id": "s64-0",
       "sceneId": "s64",
-      "text": "In the little green orchard."
-    },
-    {
-      "id": "s64-1",
-      "sceneId": "s64",
-      "text": "Poor 'Miss 7'"
-    },
-    {
-      "id": "s64-2",
-      "sceneId": "s64",
-      "text": "Lone and alone she lies, Poor Miss 7, Five steep flights from the earth, And one from heaven; Dark hair and dark brown eyes, - Not to be sad she tries, Still - still it's lonely lies Poor Miss 7."
-    },
-    {
-      "id": "s64-3",
-      "sceneId": "s64",
-      "text": "One day-long watch hath she,"
+      "text": "I have heard a lady this night, / Lissom and jimp and slim, / Calling me -- calling me over the heather, / 'Neath the beech boughs dusk and dim. / I have followed a lady this night, / Followed her far and lone, / Fox and adder and weasel know / The ways that we have gone. / I sit at my supper 'mid honest faces, / And crumble my crust and say / Naught in the long-drawn drawl of the voices / Talking the hours away. / I'll go to my chamber under the gable, / And the moon will lift her light / In at my lattice from over the moorland / Hollow and still and bright. / And I know she will shine on a lady of witchcraft, / Gladness and grief to see, / Who has taken my heart with her nimble fingers, / Calls in my dreams to me; / Who has led me a dance by dell and dingle / My human soul to win, / Made me a changeling to my own, own mother, / A stranger to my kin."
     },
     {
       "id": "s65-0",
       "sceneId": "s65",
-      "text": "No moon, no stars, ah me! Poor Miss 7."
-    },
-    {
-      "id": "s65-1",
-      "sceneId": "s65",
-      "text": "And then to wake again, Poor Miss 7, To the cold night, to have Sour physic given; Out of some dream of pain, Then strive long hours in vain Deep dreamless sleep to gain: Poor Miss 7."
-    },
-    {
-      "id": "s65-2",
-      "sceneId": "s65",
-      "text": "Yet memory softly sings Poor Miss 7 Songs full of love and peace And gladness even; Clear flowers and tiny wings, All tender, lovely things, Hope to her bosom brings - Happy Miss 7."
-    },
-    {
-      "id": "s65-3",
-      "sceneId": "s65",
-      "text": "SAM"
+      "text": "There were two Fairies, Gimmul and Mel, / Loved Earth Man's honey passing well; / Oft at the hives of his tame bees / They would their sugary thirst appease. / When dusk began to darken to night, / They would hie along in the fading light, / With elf-locked hair and scarlet lips, / And small stone knives to slit the skeps, / So softly not a bee inside / Should hear the woven straw divide: / And then with sly and greedy thumbs / Would rifle the sweet honeycombs. / And drowsily drone to drone would say, / 'A cold, cold wind blows in this way'; / And the great Queen would turn her head / From face to face, astonished, / And, though her maids with comb and brush / Would comb and soothe and whisper, 'Hush!' / About the hive would shrilly go / A keening -- keening, to and fro; / At which those robbers 'neath the trees / Would taunt and mock the honey-bees, / And through their sticky teeth would buzz / Just as an angry hornet does. / And when this Gimmul and this Mel / Had munched and sucked and swilled their fill, / Or ever Man's first cock could crow / Back to their Faerie Mounds they'd go; / Edging across the twilight air, / Thieves of a guise remotely fair."
     },
     {
       "id": "s66-0",
       "sceneId": "s66",
-      "text": "Out of those wallowing, moon-flecked waves"
+      "text": "Longlegs -- he yelled 'Coo-ee!' / And all across the combe / Shrill and shrill it rang -- rang through / The clear green gloom. / Fairies there were a-spinning, / And a white tree-maid / Lifted her eyes, and listened / In her rain-sweet glade. / Bunnie to bunnie stamped; old Wat / Chin-deep in bracken sate; / A throstle piped, 'I'm by, I'm by!' / Clear to his timid mate. / And there was Longlegs, straddling, / And hearkening was he, / To distant Echo thrilling back / A thin 'Coo-ee!'"
     },
     {
       "id": "s67-0",
       "sceneId": "s67",
-      "text": "Yeo ho!"
+      "text": "Three and thirty birds there stood / In an elder in a wood; / Called Melmillo -- flew off three, / Leaving thirty in the tree; / Called Melmillo -- nine now gone, / And the boughs held twenty-one; / Called Melmillo -- and eighteen / Left but three to nod and preen; / Called Melmillo -- three -- two -- one / Now of birds were feathers none. / Then stole Melmillo in / To that wood all dusk and green, / And with lean long palms outspread / Softly a strange dance did tread; / Not a note of music she / Had for echoing company; / All the birds were flown to rest / In the hollow of her breast; / In the wood -- thorn, elder, willow -- / Danced alone -- lone danced Melmillo."
     },
     {
       "id": "s68-0",
       "sceneId": "s68",
-      "text": "Yeo ho!"
+      "text": "Earth and Air"
+    },
+    {
+      "id": "s68-1",
+      "sceneId": "s68",
+      "text": "Of all the trees in England, / Her sweet three corners in, / Only the Ash, the bonnie Ash / Burns fierce while it is green. / Of all the trees in England, / From sea to sea again, / The Willow loveliest stoops her boughs / Beneath the driving rain. / Of all the trees in England, / Past frankincense and myrrh, / There's none for smell, of bloom and smoke, / Like Lime and Juniper. / Of all the trees in England, / Oak, Elder, Elm and Thorn, / The Yew alone burns lamps of peace / For them that lie forlorn."
     },
     {
       "id": "s69-0",
       "sceneId": "s69",
-      "text": "Yeo ho!"
+      "text": "Slowly, silently, now the moon / Walks the night in her silver shoon: / This way, and that, she peers and sees / Silver fruit upon silver trees; / One by one the casements catch / Her beams beneath the silvery thatch; / Couched in his kennel, like a log, / With paws of silver sleeps the dog / From their shadowy cote the white breasts peep / Of doves in a silver-feathered sleep; / A harvest mouse goes scampering by, / With silver claws and silver eye; / And moveless fish in the water gleam / By silver reeds in a silver stream."
     },
     {
       "id": "s70-0",
       "sceneId": "s70",
-      "text": "And waits for his sorrowful end."
-    },
-    {
-      "id": "s70-1",
-      "sceneId": "s70",
-      "text": "The Old Soldier"
+      "text": "Often I've heard the Wind sigh / By the ivied orchard wall, / Over the leaves in the dark night, / Breathe a sighing call, / And faint away in the silence / While I, in my bed, / Wondered, 'twixt dreaming and waking, / What it said. / Nobody knows what the Wind is, / Under the height of the sky, / Where the hosts of the stars keep far away house / And its wave sweeps by -- / Just a great wave of the air, / Tossing the leaves in its sea, / And foaming under the eaves of the roof / That covers me. / And so we live under deep water, / All of us, beasts and men, / And our bodies are buried down under the sand, / When we go again; / And leave, like the fishes, our shells, / And float on the Wind and away, / To where, o'er the marvellous tides of the air, / Burns day."
     },
     {
       "id": "s71-0",
       "sceneId": "s71",
-      "text": "With a Fol rol dol rol di do."
+      "text": "Wide are the meadows of night, / And daisies are shining there, / Tossing their lovely dews, / Lustrous and fair; / And through these sweet fields go, / Wanderers amid the stars -- / Venus, Mercury, Uranus, Neptune, / Saturn, Jupiter, Mars. / 'Tired in their silver, they move, / And circling, whisper and say, / Fair are the blossoming meads of delight / Through which we stray."
     },
     {
       "id": "s72-0",
       "sceneId": "s72",
-      "text": "A Fol-rol-dol-rol-di-do."
+      "text": "A little sound --- / Only a little, a little --- / The breath in a reed, / A trembling fiddle; / A trumpet's ring, / The shuddering drum; / So all the glory, bravery, hush / Of music come. / A little sound --- / Only a stir and a sigh / Of each green leaf / Its fluttering neighbor by; / Oak on to oak, / The wide dark forest through --- / So o'er the watery wheeling world / The night winds go. / A little sound, / Only a little, a little --- / The thin high drone / Of the simmering kettle, / The gathering frost, / The click of needle and thread; / Mother, the fading wall, the dream, / The drowsy bed."
     },
     {
       "id": "s73-0",
       "sceneId": "s73",
-      "text": "'Twas a very small garden; The paths were of stone,"
+      "text": "Will he ever be weary of wandering, / The flaming sun? / Ever weary of waning in lovelight, / The white still moon? / Will ever a shepherd come / With a crook of simple gold, / And lead all the little stars / Like lambs to the fold? / Will ever the Wanderer sail / From over the sea, / Up the river of water, / To the stones to me? / Will he take us all into his ship, / Dreaming, and waft us far, / To where in the clouds of the West / The Islands are?"
     },
     {
       "id": "s74-0",
       "sceneId": "s74",
-      "text": "And a little old Cupid Stood under a tree, With a small broken bow He stood aiming at me."
+      "text": "Songs"
     },
     {
       "id": "s74-1",
       "sceneId": "s74",
-      "text": "The dog-rose in briars Hung over the weeds,"
+      "text": "Where is beauty? / Gone, gone: / The cold winds have taken it / With their faint moan; / The white stars have shaken it, / Trembling down, / Into the pathless deeps of the sea. / Gone, gone / Is beauty from me. / The clear naked flower / Is faded and dead; / The green-leafed willow, / Drooping her head, / Whispers low to the shade / Of her boughs in the stream, / Sighing a beauty, / Secret as dream."
     },
     {
       "id": "s75-0",
       "sceneId": "s75",
-      "text": "And a little old Cupid Stood under a tree, With a small broken bow He stood aiming at me."
-    },
-    {
-      "id": "s75-1",
-      "sceneId": "s75",
-      "text": "The dovecote was tumbling, The fountain dry,"
+      "text": "As I sat musing by the frozen dyke, / There was a man marching with a bright steel pike, / Marching in the dayshine like a ghost came he, / And behind me was the moaning and the murmur / Of the sea. / As I sat musing, 'twas not one but ten --- / Rank on rank of ghostly soldiers marching o'er the fen, / Marching in the misty air they showed in dreams to me, / And behind me was the shouting and the shattering / of the sea. / As I sat musing, 'twas a host in dark array, / With their horses and their cannon wheeling onward / to the fray, / Moving like a shadow to the fate the brave must dree, / And behind me roared the drums, rang the trumpets / of the sea."
     },
     {
       "id": "s76-0",
       "sceneId": "s76",
-      "text": "He stood aiming at me."
+      "text": "Thousandz of thornz there be / On the Rozez where gozez / The Zebra of Zee: / Sleek, striped, and hairy, / The steed of the Fairy / Princess of Zee. / Heavy with blossomz be / The Rozez that growzez / In the thickets of Zee. / Where grazez the Zebra, / Marked Abracadeeebra, / Of the Princess of Zee. / And he nozez that poziez / Of the Rozez that grozez / So luvez'm and free, / With an eye, dark and wary, / In search of a Fairy, / Whose Rozez he knowzez / Were not honeyed for he, / But to breathe a sweet incense / To solace the Princess / Of far-away Zee."
     },
     {
       "id": "s77-0",
       "sceneId": "s77",
-      "text": "Till all his own was gone."
-    },
-    {
-      "id": "s77-1",
-      "sceneId": "s77",
-      "text": "The Old House"
+      "text": "A Song of Enchantment I sang me there, / In a green --green wood, by waters fair, / Just as the words came up to me / I sang it under the wildwood tree. / Widdershins turned I, singing it low, / Watching the wild birds come and go; / No cloud in the deep dark blue to be seen / Under the thick-thatched branches green. / Twilight came; silence came; / The planet of Evening's silver flame; / By darkening paths I wandered through / Thickets trembling with drops of dew. / But the music is lost and the words are gone / Of the song I sang as I sat alone, / Ages and ages have fallen on me-- / On the wood and the pool and the elder tree."
     },
     {
       "id": "s78-0",
       "sceneId": "s78",
-      "text": "Go in they do; come out no more."
+      "text": "Sunlight, moonlight, / Twilight, starlight- / Gloaming at the close of day, / And an owl calling, / Cool dews falling / In a wood of oak and may. / Lantern-light, taper-light, / Torchlight, no-light: / Darkness at the shut of day, / And lions roaring, / Their wrath pouring / In wild waste places far away. / Elf-light, bat-light, / Touchwood-light and toad-light, / And the sea a shimmering gloom of grey, / And a small face smiling / In a dream's beguiling / In a world of wonders far away."
     },
     {
       "id": "s79-0",
       "sceneId": "s79",
-      "text": "Into that very old house I know."
-    },
-    {
-      "id": "s79-1",
-      "sceneId": "s79",
-      "text": "Beasts"
-    },
-    {
-      "id": "s79-2",
-      "sceneId": "s79",
-      "text": "Unstooping"
-    },
-    {
-      "id": "s79-3",
-      "sceneId": "s79",
-      "text": "Low on his fours the Lion"
+      "text": "Sweep thy faint Strings, Musician, / With thy long lean hand; / Downward the starry tapers burn, / Sinks soft the waning sand; / The old hound whimpers couched in sleep, / The embers smoulder low; / Across the walls the shadows / Come, and go. / Sweep softly thy strings, Musician, / The minutes mount to hours; / Frost on the windless casement weaves / A labyrinth of flowers; / Ghosts linger in the darkening air, / Hearken at the open door; / Music hath called them, dreaming, / Home once more."
     },
     {
       "id": "s80-0",
       "sceneId": "s80",
-      "text": "Unstooping, to and fro."
-    },
-    {
-      "id": "s80-1",
-      "sceneId": "s80",
-      "text": "All but Blind"
+      "text": "Who said, 'Peacock Pie?' / The old King to the sparrow: / Who said, 'Crops are ripe?' / Rust to the harrow: / Who said, 'Where sleeps she now?' / Where rests she now her head, / Bathed in eve's loveliness'? --- / That's what I said. / Who said, 'Ay, mum's the word'? / Sexton to willow: / Who said, 'Green duck for dreams, / Moss for a pillow'? / Who said, 'All Time's delight / Hath she for narrow bed; / Life's troubled bubble broken'? --- / That's what I said."
     },
     {
       "id": "s81-0",
       "sceneId": "s81",
-      "text": "The four-clawed Mole."
-    },
-    {
-      "id": "s81-1",
-      "sceneId": "s81",
-      "text": "All but blind In the evening sky The hooded Bat Twirls softly by."
-    },
-    {
-      "id": "s81-2",
-      "sceneId": "s81",
-      "text": "All but blind In the burning day The Barn-Owl blunders On her way."
-    },
-    {
-      "id": "s81-3",
-      "sceneId": "s81",
-      "text": "And blind as are These three to me, So blind to someone I must be."
-    },
-    {
-      "id": "s81-4",
-      "sceneId": "s81",
-      "text": "Nicholas Nye"
-    },
-    {
-      "id": "s81-5",
-      "sceneId": "s81",
-      "text": "Thistle and darnell and dock grew there, And a bush, in the corner, of may, On the orchard wall I used to sprawl In the blazing heat of the day; Half asleep and half awake, While the birds went twittering by, And nobody there my lone to share But Nicholas Nye."
-    },
-    {
-      "id": "s82-0",
-      "sceneId": "s82",
-      "text": "Would Nicholas Nye."
-    },
-    {
-      "id": "s83-0",
-      "sceneId": "s83",
-      "text": "Something much better than words between me And Nicholas Nye."
-    },
-    {
-      "id": "s84-0",
-      "sceneId": "s84",
-      "text": "Would brood like a ghost, and as still as a post, Old Nicholas Nye."
-    },
-    {
-      "id": "s85-0",
-      "sceneId": "s85",
-      "text": "'In the forest is truffles and mast, Follow me then, all ye little pigs, Follow me fast!'"
-    },
-    {
-      "id": "s86-0",
-      "sceneId": "s86",
-      "text": "At his sullen blaze."
-    },
-    {
-      "id": "s87-0",
-      "sceneId": "s87",
-      "text": "Squeaking and scampering, everywhere. Then down they pounce, now in, now out,"
-    },
-    {
-      "id": "s88-0",
-      "sceneId": "s88",
-      "text": "Jekkel, and Jessup, and one-eyed Jill."
-    },
-    {
-      "id": "s88-1",
-      "sceneId": "s88",
-      "text": "Grim"
-    },
-    {
-      "id": "s88-2",
-      "sceneId": "s88",
-      "text": "Beside the blaze of forty fires Giant Grim doth sit, Roasting a thick-woolled mountain sheep Upon an iron spit. Above him wheels the winter sky,"
-    },
-    {
-      "id": "s89-0",
-      "sceneId": "s89",
-      "text": "Till you're cooked yourself!"
-    },
-    {
-      "id": "s89-1",
-      "sceneId": "s89",
-      "text": "Summer Evening"
-    },
-    {
-      "id": "s89-2",
-      "sceneId": "s89",
-      "text": "The sandy cat by the Farmer's chair Mews at his knee for dainty fare;"
-    },
-    {
-      "id": "s90-0",
-      "sceneId": "s90",
-      "text": "Gone is another summer's day."
-    },
-    {
-      "id": "s91-0",
-      "sceneId": "s91",
-      "text": "Where never prince hath journeyed yet."
-    },
-    {
-      "id": "s92-0",
-      "sceneId": "s92",
-      "text": "'Grill me some bones,' said the Cobbler,"
-    },
-    {
-      "id": "s93-0",
-      "sceneId": "s93",
-      "text": "Grill me some bones!'"
-    },
-    {
-      "id": "s94-0",
-      "sceneId": "s94",
-      "text": "as my step goes by."
-    },
-    {
-      "id": "s94-1",
-      "sceneId": "s94",
-      "text": "The Ruin"
-    },
-    {
-      "id": "s94-2",
-      "sceneId": "s94",
-      "text": "When the last colours of the day Have from their burning ebbed away, About that ruin, cold and lone, The cricket shrills from stone to stone;"
-    },
-    {
-      "id": "s95-0",
-      "sceneId": "s95",
-      "text": "Tinges their tiny acorn shoon."
-    },
-    {
-      "id": "s96-0",
-      "sceneId": "s96",
-      "text": "Under the silver, and home again."
-    },
-    {
-      "id": "s97-0",
-      "sceneId": "s97",
-      "text": "Wailing shrill at her an' me. It we'll neither rock nor tend"
-    },
-    {
-      "id": "s98-0",
-      "sceneId": "s98",
-      "text": "Down -- down to the sea."
-    },
-    {
-      "id": "s98-1",
-      "sceneId": "s98",
-      "text": "Come you, then: call,"
-    },
-    {
-      "id": "s99-0",
-      "sceneId": "s99",
-      "text": "'Ahoy, and ahoy!...'"
-    },
-    {
-      "id": "s100-0",
-      "sceneId": "s100",
-      "text": "The Fairy mimbling, mambling in the garden."
-    },
-    {
-      "id": "s101-0",
-      "sceneId": "s101",
-      "text": "A stranger to my kin."
-    },
-    {
-      "id": "s102-0",
-      "sceneId": "s102",
-      "text": "Clear to his timid mate. And there was Longlegs, straddling, And hearkening was he, To distant Echo thrilling back A thin 'Coo-ee!'"
-    },
-    {
-      "id": "s102-1",
-      "sceneId": "s102",
-      "text": "Melmillo"
-    },
-    {
-      "id": "s102-2",
-      "sceneId": "s102",
-      "text": "Three and thirty birds there stood In an elder in a wood; Called Melmillo -- flew off three, Leaving thirty in the tree;"
-    },
-    {
-      "id": "s103-0",
-      "sceneId": "s103",
-      "text": "Now of birds were feathers none."
-    },
-    {
-      "id": "s103-1",
-      "sceneId": "s103",
-      "text": "Then stole Melmillo in To that wood all dusk and green, And with lean long palms outspread Softly a strange dance did tread;"
-    },
-    {
-      "id": "s104-0",
-      "sceneId": "s104",
-      "text": "Danced alone -- lone danced Melmillo."
-    },
-    {
-      "id": "s104-1",
-      "sceneId": "s104",
-      "text": "Earth and Air"
-    },
-    {
-      "id": "s105-0",
-      "sceneId": "s105",
-      "text": "Of all the trees in England,"
-    },
-    {
-      "id": "s106-0",
-      "sceneId": "s106",
-      "text": "Of all the trees in England,"
-    },
-    {
-      "id": "s107-0",
-      "sceneId": "s107",
-      "text": "Of all the trees in England,"
-    },
-    {
-      "id": "s108-0",
-      "sceneId": "s108",
-      "text": "For them that lie forlorn."
-    },
-    {
-      "id": "s108-1",
-      "sceneId": "s108",
-      "text": "Silver"
-    },
-    {
-      "id": "s108-2",
-      "sceneId": "s108",
-      "text": "Slowly, silently, now the moon Walks the night in her silver shoon: This way, and that, she peers and sees"
-    },
-    {
-      "id": "s109-0",
-      "sceneId": "s109",
-      "text": "By silver reeds in a silver stream."
-    },
-    {
-      "id": "s109-1",
-      "sceneId": "s109",
-      "text": "Nobody Knows"
-    },
-    {
-      "id": "s109-2",
-      "sceneId": "s109",
-      "text": "Often I've heard the Wind sigh By the ivied orchard wall, Over the leaves in the dark night, Breathe a sighing call, And faint away in the silence While I, in my bed,"
-    },
-    {
-      "id": "s110-0",
-      "sceneId": "s110",
-      "text": "Where the hosts of the stars keep far away house And its wave sweeps by -- Just a great wave of the air, Tossing the leaves in its sea,"
-    },
-    {
-      "id": "s111-0",
-      "sceneId": "s111",
-      "text": "To where, o'er the marvellous tides of the air, Burns day."
-    },
-    {
-      "id": "s111-1",
-      "sceneId": "s111",
-      "text": "Wanderers"
-    },
-    {
-      "id": "s111-2",
-      "sceneId": "s111",
-      "text": "Wide are the meadows of night, And daisies are shining there,"
-    },
-    {
-      "id": "s112-0",
-      "sceneId": "s112",
-      "text": "Through which we stray."
-    },
-    {
-      "id": "s112-1",
-      "sceneId": "s112",
-      "text": "Many A Mickle A little sound --- Only a little, a little --- The breath in a reed, A trembling fiddle; A trumpet's ring, The shuddering drum; So all the glory, bravery, hush Of music come."
-    },
-    {
-      "id": "s112-2",
-      "sceneId": "s112",
-      "text": "A little sound --- Only a stir and a sigh"
-    },
-    {
-      "id": "s113-0",
-      "sceneId": "s113",
-      "text": "The night winds go."
-    },
-    {
-      "id": "s113-1",
-      "sceneId": "s113",
-      "text": "A little sound, Only a little, a little --- The thin high drone Of the simmering kettle, The gathering frost, The click of needle and thread; Mother, the fading wall, the dream, The drowsy bed."
-    },
-    {
-      "id": "s114-0",
-      "sceneId": "s114",
-      "text": "To the stones to me? Will he take us all into his ship, Dreaming, and waft us far, To where in the clouds of the West The Islands are?"
-    },
-    {
-      "id": "s114-1",
-      "sceneId": "s114",
-      "text": "Songs"
-    },
-    {
-      "id": "s114-2",
-      "sceneId": "s114",
-      "text": "The Song of the Secret"
-    },
-    {
-      "id": "s114-3",
-      "sceneId": "s114",
-      "text": "Where is beauty?"
-    },
-    {
-      "id": "s115-0",
-      "sceneId": "s115",
-      "text": "Into the pathless deeps of the sea. Gone, gone Is beauty from me."
-    },
-    {
-      "id": "s115-1",
-      "sceneId": "s115",
-      "text": "The clear naked flower Is faded and dead; The green-leafed willow, Drooping her head, Whispers low to the shade Of her boughs in the stream, Sighing a beauty, Secret as dream."
-    },
-    {
-      "id": "s116-0",
-      "sceneId": "s116",
-      "text": "Of the sea."
-    },
-    {
-      "id": "s117-0",
-      "sceneId": "s117",
-      "text": "And behind me roared the drums, rang the trumpets of the sea."
-    },
-    {
-      "id": "s117-1",
-      "sceneId": "s117",
-      "text": "The Bees' Song"
-    },
-    {
-      "id": "s117-2",
-      "sceneId": "s117",
-      "text": "Thousandz of thornz there be On the Rozez where gozez The Zebra of Zee: Sleek, striped, and hairy,"
-    },
-    {
-      "id": "s118-0",
-      "sceneId": "s118",
-      "text": "Of the Princess of Zee."
-    },
-    {
-      "id": "s118-1",
-      "sceneId": "s118",
-      "text": "And he nozez that poziez Of the Rozez that grozez So luvez'm and free, With an eye, dark and wary, In search of a Fairy, Whose Rozez he knowzez Were not honeyed for he, But to breathe a sweet incense To solace the Princess Of far-away Zee."
-    },
-    {
-      "id": "s119-0",
-      "sceneId": "s119",
-      "text": "On the wood and the pool and the elder tree."
-    },
-    {
-      "id": "s119-1",
-      "sceneId": "s119",
-      "text": "Dream Song"
-    },
-    {
-      "id": "s120-0",
-      "sceneId": "s120",
-      "text": "In a wood of oak and may."
-    },
-    {
-      "id": "s121-0",
-      "sceneId": "s121",
-      "text": "In wild waste places far away."
-    },
-    {
-      "id": "s122-0",
-      "sceneId": "s122",
-      "text": "In a world of wonders far away."
-    },
-    {
-      "id": "s122-1",
-      "sceneId": "s122",
-      "text": "The Song of Shadows"
-    },
-    {
-      "id": "s122-2",
-      "sceneId": "s122",
-      "text": "Sweep thy faint Strings, Musician, With thy long lean hand; Downward the starry tapers burn, Sinks soft the waning sand; The old hound whimpers couched in sleep, The embers smoulder low; Across the walls the shadows Come, and go."
-    },
-    {
-      "id": "s122-3",
-      "sceneId": "s122",
-      "text": "Sweep softly thy strings, Musician, The minutes mount to hours; Frost on the windless casement weaves A labyrinth of flowers; Ghosts linger in the darkening air, Hearken at the open door; Music hath called them, dreaming,"
-    },
-    {
-      "id": "s123-0",
-      "sceneId": "s123",
-      "text": "That's what I said."
-    },
-    {
-      "id": "s123-1",
-      "sceneId": "s123",
-      "text": "The Song of Finis"
-    },
-    {
-      "id": "s123-2",
-      "sceneId": "s123",
-      "text": "AT the edge of All the Ages A Knight sate on his steed,"
-    },
-    {
-      "id": "s124-0",
-      "sceneId": "s124",
-      "text": "As the twain stood there alone."
-    },
-    {
-      "id": "s125-0",
-      "sceneId": "s125",
-      "text": "And quiet did quiet remain."
+      "text": "AT the edge of All the Ages / A Knight sate on his steed, / His armor red and thin with rust / His soul from sorrow freed; / And he lifted up his visor / From a face of skin and bone, / And his horse turned head and whinnied / As the twain stood there alone. / No bird above that steep of time / Sang of a livelong quest; / No wind breathed, / Rest: / \"Lone for an end!\" cried Knight to steed, / Loosed an eager rein-- / Charged with his challenge into space: / And quiet did quiet remain."
     }
   ]
 }
