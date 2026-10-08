@@ -528,6 +528,19 @@ function readCachedShellHtml() {
     return isAppShell(html) ? html : null;
   }).catch(function () { return null; });
 }
+function withFreshParam(href, now) {
+  var url;
+  try { url = new URL(href); } catch (err) { return href; }
+  if (url.search.length > 1 && url.search.charAt(1) === "/") {
+    var parts = url.search.slice(1).split("&").filter(function (part) {
+      return part && part.indexOf("__fresh=") !== 0;
+    });
+    parts.push("__fresh=" + now);
+    return url.origin + url.pathname + "?" + parts.join("&") + url.hash;
+  }
+  url.searchParams.set("__fresh", String(now));
+  return url.href;
+}
 function reloadOpenClients() {
   return self.clients.matchAll({ type: "window", includeUncontrolled: true }).then(function (list) {
     var now = Date.now();
@@ -546,9 +559,8 @@ function reloadOpenClients() {
         return client.navigate(url.origin + url.pathname + url.hash);
       }
       reloadedClients[client.id] = now;
-      url.searchParams.set("__fresh", String(now));
       if (!client.navigate) return Promise.resolve();
-      return client.navigate(url.href);
+      return client.navigate(withFreshParam(url.href, now));
     }));
   }).catch(function () {});
 }

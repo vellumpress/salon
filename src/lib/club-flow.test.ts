@@ -9,8 +9,16 @@ import {
   canReadClubRow,
   canReadProgress,
   canWriteProgress,
+  clubDirectoryMessage,
   mergeClubMessages,
   shouldAutoJoin,
+  SIGN_IN_ADD_SITTING,
+  SIGN_IN_EDIT_CLUB,
+  SIGN_IN_JOIN_CLUB,
+  SIGN_IN_LEAVE_CLUB,
+  SIGN_IN_OPEN_CLUB,
+  SIGN_IN_START_CLUB,
+  SIGN_IN_WRITE_CLUB,
   type ClubActor,
 } from "./club-flow.ts";
 
@@ -18,6 +26,21 @@ const owner: ClubActor = { userId: "owner", ownerId: "owner", member: true };
 const member: ClubActor = { userId: "member", ownerId: "owner", member: true };
 const stranger: ClubActor = { userId: "stranger", ownerId: "owner", member: false };
 const ownerLeft: ClubActor = { userId: "owner", ownerId: "owner", member: false };
+
+test("club errors keep the action that failed", () => {
+  assert.equal(clubDirectoryMessage(new Error("Sign in to leave a club")), SIGN_IN_LEAVE_CLUB);
+  assert.equal(clubDirectoryMessage({ code: "P0001", message: "Sign in to join a club" }), SIGN_IN_JOIN_CLUB);
+  assert.equal(clubDirectoryMessage(new Error("Sign in to edit a club.")), SIGN_IN_EDIT_CLUB);
+  assert.equal(clubDirectoryMessage(new Error("Sign in to write in a club.")), SIGN_IN_WRITE_CLUB);
+  assert.equal(clubDirectoryMessage(new Error("Sign in to add a sitting")), SIGN_IN_ADD_SITTING);
+  assert.equal(clubDirectoryMessage(new Error("Sign in to start a club")), SIGN_IN_START_CLUB);
+  assert.equal(
+    clubDirectoryMessage({ code: "PGRST301", message: "JWT expired" }, SIGN_IN_LEAVE_CLUB),
+    SIGN_IN_LEAVE_CLUB,
+  );
+  assert.equal(clubDirectoryMessage({ code: "PGRST301", message: "JWT expired" }), SIGN_IN_OPEN_CLUB);
+  assert.equal(clubDirectoryMessage(new Error("Join the club first")), "Join the club first");
+});
 
 test("members read chat and progress; strangers do not", () => {
   assert.equal(canReadClubMessages(member), true);

@@ -1,4 +1,4 @@
-import { createFileRoute, Link, Navigate } from "@tanstack/react-router";
+import { createFileRoute, Link, Navigate, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { claimStaff } from "@/lib/account";
 import {
@@ -63,7 +63,7 @@ function LoginHeader() {
 
 function LoginPage() {
   const { door, next } = Route.useSearch();
-  const after = next || (door === "staff" ? "/desk" : "/profile");
+  const navigate = useNavigate();
   const { identity, isPending, hasAccounts, storeHandle, createAccount, signIn } =
     useReaderSession();
   const [mode, setMode] = useState<ReaderAuthMode>(hasAccounts ? "in" : "up");
@@ -96,10 +96,7 @@ function LoginPage() {
   }, [door]);
 
   if (leave && identity && !busy && !hold) {
-    if (next) {
-      window.location.replace(withBase(next));
-      return null;
-    }
+    if (next) return <Navigate to="/" href={next} />;
     return <Navigate to={door === "staff" ? "/desk" : "/profile"} />;
   }
 
@@ -115,8 +112,9 @@ function LoginPage() {
         setBusy(null);
         return;
       }
+      setBusy(null);
       setHold(false);
-      window.location.assign(withBase(after));
+      setLeave(true);
     } catch (err) {
       setLeave(false);
       setHold(false);
@@ -137,8 +135,9 @@ function LoginPage() {
         setBusy(null);
         return;
       }
+      setBusy(null);
       setHold(false);
-      window.location.assign(withBase(after));
+      setLeave(true);
     } catch (err) {
       setLeave(false);
       setHold(false);
@@ -235,7 +234,11 @@ function LoginPage() {
         {hold ? (
           <button
             type="button"
-            onClick={() => window.location.assign(withBase("/profile"))}
+            onClick={() => {
+              setBusy(null);
+              setHold(false);
+              void navigate({ to: "/profile" });
+            }}
             className="flex h-14 w-full items-center justify-center border-b border-ink bg-paper font-sans text-sm"
           >
             Continue on this phone

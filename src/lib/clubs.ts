@@ -10,7 +10,17 @@ import { fillOf, type Fill } from "@/lib/mondrian";
 import { isOffline } from "@/lib/net";
 import { getSupabase } from "@/lib/supabase";
 import { CLUBS } from "@/lib/social";
-import { mergeClubMessages } from "./club-flow";
+import {
+  clubDirectoryMessage,
+  mergeClubMessages,
+  SIGN_IN_ADD_SITTING,
+  SIGN_IN_EDIT_CLUB,
+  SIGN_IN_JOIN_CLUB,
+  SIGN_IN_LEAVE_CLUB,
+  SIGN_IN_OPEN_CLUB,
+  SIGN_IN_START_CLUB,
+  SIGN_IN_WRITE_CLUB,
+} from "./club-flow";
 import {
   asClubFill,
   asClubId,
@@ -23,6 +33,16 @@ import {
 } from "./club-time";
 
 export type { Fill };
+export {
+  clubDirectoryMessage,
+  SIGN_IN_ADD_SITTING,
+  SIGN_IN_EDIT_CLUB,
+  SIGN_IN_JOIN_CLUB,
+  SIGN_IN_LEAVE_CLUB,
+  SIGN_IN_OPEN_CLUB,
+  SIGN_IN_START_CLUB,
+  SIGN_IN_WRITE_CLUB,
+};
 export {
   asClubFill,
   asClubId,
@@ -240,24 +260,8 @@ function toUpcoming(club: BookClubView): UpcomingSit[] {
     });
 }
 
-export function clubDirectoryMessage(error: unknown) {
-  const row = error as { code?: string; message?: string } | null;
-  const message = row?.message ?? (error instanceof Error ? error.message : String(error ?? ""));
-  if (
-    row?.code === "42P01" ||
-    row?.code === "PGRST205" ||
-    /schema cache|does not exist|relation .*clubs/i.test(message)
-  ) {
-    return `Book clubs are not on the directory yet. Apply ${MIGRATION}.`;
-  }
-  if (/sign in/i.test(message) || row?.code === "PGRST301") {
-    return "Sign in to open a club.";
-  }
-  return message || "The club would not open.";
-}
-
-function raise(error: unknown): never {
-  throw new Error(clubDirectoryMessage(error));
+function raise(error: unknown, fallback?: string): never {
+  throw new Error(clubDirectoryMessage(error, fallback));
 }
 
 export async function hostedUserId(): Promise<string | null> {
@@ -267,16 +271,16 @@ export async function hostedUserId(): Promise<string | null> {
   return data.session?.user?.id ?? null;
 }
 
-async function requireUserId() {
+async function requireUserId(message = SIGN_IN_OPEN_CLUB) {
   if (isOffline()) throw new Error("Offline");
   const id = await hostedUserId();
-  if (!id) throw new Error("Sign in to open a club.");
+  if (!id) throw new Error(message);
   return id;
 }
 
 export async function createClub(input: z.input<typeof createInput>): Promise<BookClubView> {
   const data = createInput.parse(input);
-  const ownerId = await requireUserId();
+  const ownerId = await requireUserId(SIGN_IN_START_CLUB);
   const plan = data.serializePlanId ? serializePlan(data.serializePlanId) : null;
   const serial = serializeView(plan?.id ?? null, data.startEpisode ?? null, 0);
   const label = serial.serializeLabel ?? "";
@@ -300,7 +304,7 @@ export async function createClub(input: z.input<typeof createInput>): Promise<Bo
     .insert(record)
     .select("*")
     .single();
-  if (error) raise(error);
+  if (error) raise(error, SIGN_IN_START_CLUB);
   return toClub(inserted as ClubRecord);
 }
 
@@ -372,7 +376,7 @@ export async function addClubSession(input: {
     p_label: label,
   });
   if (!rpc.error && rpc.data && typeof rpc.data === "object") return toClub(rpc.data as ClubRecord);
-  if (rpc.error && rpc.error.code !== "PGRST202") raise(rpc.error);
+  if (rpc.error && rpc.error.code !== "PGRST202") raise(rpc.error, SIGN_IN_ADD_SITTING);
   const nextId = club.sessions.reduce((max, session) => Math.max(max, session.id), 0) + 1;
   const sittings = [
     ...club.sessions,
@@ -384,26 +388,52 @@ export async function addClubSession(input: {
     .eq("id", club.id)
     .select("*")
     .single();
-  if (error) raise(error);
+  if (error) raise(error, SIGN_IN_ADD_SITTING);
   return toClub(data as ClubRecord);
+}
+
+const editInput = z.object({
+  id: z.string().min(1).max(16),
+  name: z.string().trim().min(1).max(80),
+  note: z.string().max(240).optional(),
+});
+
+export async function updateClub(input: z.input<typeof editInput>): Promise<BookClubView> {
+  const data = editInput.parse(input);
+  const id = asClubId(data.id);
+  if (!id) throw new Error("This club would not come.");
+  await requireUserId(SIGN_IN_EDIT_CLUB);
+  const { data: row, error } = await getSupabase()
+    .from("clubs")
+    .update({ name: data.name, note: data.note?.trim() ?? "" })
+    .eq("id", id)
+    .select("*")
+    .single();
+  if (error) {
+    if (error.code === "PGRST116" || error.code === "42501") {
+      throw new Error("Only the host can edit this club.");
+    }
+    raise(error, SIGN_IN_EDIT_CLUB);
+  }
+  return toClub(row as ClubRecord);
 }
 
 export async function leaveClub(clubId: string): Promise<void> {
   const parsed = asClubId(clubId);
   if (!parsed) return;
-  await requireUserId();
+  await requireUserId(SIGN_IN_LEAVE_CLUB);
   const { error } = await getSupabase().rpc("leave_club", { p_club: parsed });
   if (!error) return;
   if (error.code === "PGRST202") return;
-  raise(error);
+  raise(error, SIGN_IN_LEAVE_CLUB);
 }
 
 export async function joinClubByInvite(token: string): Promise<BookClubView | null> {
   const parsed = asInviteToken(token);
   if (!parsed) return null;
-  await requireUserId();
+  await requireUserId(SIGN_IN_JOIN_CLUB);
   const { data, error } = await getSupabase().rpc("join_club_by_invite", { p_token: parsed });
-  if (error) raise(error);
+  if (error) raise(error, SIGN_IN_JOIN_CLUB);
   if (!data || typeof data !== "object") return null;
   return toClub(data as ClubRecord);
 }
@@ -534,13 +564,13 @@ export async function postClubMessage(clubId: string, body: string): Promise<Clu
   const parsed = asClubId(clubId);
   const text = body.trim().slice(0, 500);
   if (!parsed || !text) throw new Error("Write a line first.");
-  const userId = await requireUserId();
+  const userId = await requireUserId(SIGN_IN_WRITE_CLUB);
   const { data, error } = await getSupabase()
     .from("club_messages")
     .insert({ club_id: parsed, user_id: userId, body: text })
     .select("id, club_id, user_id, body, created_at")
     .single();
-  if (error) raise(error);
+  if (error) raise(error, SIGN_IN_WRITE_CLUB);
   return toMessage(data);
 }
 

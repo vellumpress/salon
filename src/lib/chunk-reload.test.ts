@@ -5,11 +5,23 @@ import {
   CHUNK_RELOAD_WINDOW_MS,
   chunkReloadBlocked,
   forceChunkReload,
+  freshReloadHref,
   isChunkLoadError,
   isOfflineNow,
   recoverFromChunkLoad,
   resetChunkReloadForTests,
 } from "./chunk-reload.ts";
+
+test("a fresh reload keeps the Pages shim path", () => {
+  assert.equal(
+    freshReloadHref("https://vellumpress.github.io/salon/?/club/invite/AbcdEfgh12", 99),
+    "/salon/?/club/invite/AbcdEfgh12&__fresh=99",
+  );
+  assert.equal(
+    freshReloadHref("https://vellumpress.github.io/salon/read/passing", 99),
+    "/salon/read/passing?__fresh=99",
+  );
+});
 
 test("matches Safari, Chrome, Firefox, and webpack chunk failures", () => {
   assert.equal(isChunkLoadError(new Error("Importing a module script failed.")), true);
