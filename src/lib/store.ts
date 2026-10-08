@@ -45,7 +45,7 @@ import {
   type KeptStored,
 } from "./kept-lines.ts";
 import { canonicalWorkId, remapAliasedWorkIds } from "./work-id-alias.ts";
-import type { PlaceStamp } from "./rebind-guard.ts";
+import { REBOUND_FROM_COUNT, type PlaceStamp } from "./rebind-guard.ts";
 
 export { dayKey };
 
@@ -1020,7 +1020,8 @@ async function backfillKeptLines() {
     if (!fresh || JSON.stringify(fresh.kept ?? []) !== before) continue;
     if (
       work &&
-      (needsKeptBackfill(fresh.kept) || keptIdsNeedRemap(fresh.kept, work.breaths)) &&
+      (needsKeptBackfill(fresh.kept) ||
+        keptIdsNeedRemap(fresh.kept, work.breaths, workId, REBOUND_FROM_COUNT)) &&
       !breathRemapLoaded()
     ) {
       remap = await loadBreathRemap();

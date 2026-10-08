@@ -135,13 +135,19 @@ export function normalizeKeptText(text: string): string {
 export function keptIdsNeedRemap(
   kept: readonly unknown[] | undefined,
   breaths: readonly { id: string }[] | undefined,
+  workId = "",
+  fromCounts?: Readonly<Record<string, number>>,
 ): boolean {
   if (!kept?.length || !breaths?.length) return false;
   const live = new Set(breaths.map((breath) => breath.id));
+  const listed = fromCounts?.[workId];
+  const rebound = listed != null && listed > 0 && listed !== breaths.length;
   return kept.some((entry) => {
     const id = keptBreathId(entry);
     if (!id) return false;
     if (!live.has(id)) return true;
+    // A re-bind can reuse the id. Only listed works pay for the remap file.
+    if (!rebound) return false;
     return asKeptRecord(entry) === null;
   });
 }

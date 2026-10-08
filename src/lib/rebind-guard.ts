@@ -1,6 +1,32 @@
 import { remapBreathId, type BreathRemap } from "./kept-lines.ts";
 
 /**
+ * Breath count of the bind a re-bind replaces, keyed by shelf work id
+ * (`falcon`, not the title). Empty until that book's pack lands:
+ * `falcon: 6154`. Tiny on purpose, so a legacy index can notice the
+ * re-bind without parsing the remap file. Once the save is stamped with
+ * the new count, this row is ignored.
+ */
+export const REBOUND_FROM_COUNT: Readonly<Record<string, number>> = {};
+
+export type FromCountTable = Readonly<Record<string, number>>;
+
+export function reboundFromCount(workId: string, table: FromCountTable = REBOUND_FROM_COUNT): number | undefined {
+  const n = table[workId];
+  if (n == null || !Number.isFinite(n) || n <= 0) return undefined;
+  return Math.floor(n);
+}
+
+/** A save from before the guard: index only, no breath id, count, or hash. */
+export function isUnstampedPlace(stored: StoredPlace | undefined): boolean {
+  if (!stored) return true;
+  if (stored.bindHash) return false;
+  if (stored.breathId?.trim()) return false;
+  if (stored.breathCount != null && stored.breathCount > 0) return false;
+  return true;
+}
+
+/**
  * Where a reader was, plus the bind that index belonged to.
  * Older saves have only `breathIndex`.
  */
@@ -77,8 +103,17 @@ export function scaleBreathIndex(index: number, oldCount: number, newCount: numb
   return Math.max(0, Math.min(newCount - 1, scaled));
 }
 
-function oldCountOf(stored: StoredPlace | undefined, remap: BreathRemap | undefined, workId: string): number | undefined {
+function oldCountOf(
+  stored: StoredPlace | undefined,
+  remap: BreathRemap | undefined,
+  workId: string,
+  fromCounts?: FromCountTable,
+): number | undefined {
+  // A stamp is the bind this index was saved against. It wins over the
+  // table so a reader who already moved is not migrated again.
   if (stored?.breathCount != null && stored.breathCount > 0) return stored.breathCount;
+  const listed = reboundFromCount(workId, fromCounts);
+  if (listed != null) return listed;
   const declared = remap?.fromCount?.[workId];
   if (declared != null && declared > 0) return declared;
   return undefined;
@@ -103,11 +138,12 @@ export function reanchorProgress(
   breaths: readonly PlaceBreath[],
   remap?: BreathRemap,
   workId = "",
+  fromCounts?: FromCountTable,
 ): ReanchorResult {
   const count = breaths.length;
   const hash = bindHash(breaths);
   const raw = Number.isFinite(stored?.breathIndex) ? Math.floor(stored?.breathIndex ?? 0) : 0;
-  const oldCount = oldCountOf(stored, remap, workId);
+  const oldCount = oldCountOf(stored, remap, workId, fromCounts);
   const countMismatch = oldCount != null && oldCount !== count;
   const hashMismatch = Boolean(stored?.bindHash && stored.bindHash !== hash);
   const breathId = stored?.breathId?.trim() ?? "";
@@ -144,12 +180,14 @@ export function reanchorProgress(
 
 /**
  * Load the remap only when this save cannot belong to the open bind.
- * An in-range index with no stamp is the current book: hashing and saving
- * it must not parse the remap on the tap that follows.
+ * An in-range index with no stamp is the current book, unless that work
+ * is listed in `REBOUND_FROM_COUNT` with a different breath count.
  */
 export function shouldLoadBindRemap(
   stored: StoredPlace | undefined,
   breaths: readonly { id: string }[],
+  workId = "",
+  fromCounts?: FromCountTable,
 ): boolean {
   if (!stored) return false;
   const count = breaths.length;
@@ -160,6 +198,10 @@ export function shouldLoadBindRemap(
   if (stored.breathId) {
     const at = count > 0 ? Math.max(0, Math.min(count - 1, raw)) : 0;
     if (breaths[at]?.id !== stored.breathId) return true;
+  }
+  if (isUnstampedPlace(stored)) {
+    const listed = reboundFromCount(workId, fromCounts);
+    if (listed != null && listed !== count) return true;
   }
   return false;
 }

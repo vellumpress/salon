@@ -280,7 +280,7 @@ export function TbrReader({
       const prior = useTbr.getState().progress[book.id];
       if (!prior?.entered) return;
       let remap = readBreathRemap();
-      if (shouldLoadBindRemap(prior, book.breaths) && !breathRemapLoaded()) {
+      if (shouldLoadBindRemap(prior, book.breaths, book.id) && !breathRemapLoaded()) {
         remap = await loadBreathRemap();
       }
       if (cancel) return;

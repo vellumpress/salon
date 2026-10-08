@@ -7,6 +7,7 @@ import { fillClass, fillInk, mosaicFills } from "@/lib/mondrian";
 import { cn } from "@/lib/utils";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { breathRemapLoaded, loadBreathRemap, readBreathRemap } from "@/lib/breath-remap";
+import { REBOUND_FROM_COUNT } from "@/lib/rebind-guard";
 import {
   asKeptRecord,
   keptBreathId,
@@ -61,7 +62,7 @@ export function useKeptLines(
     function warmRemap() {
       if (breathRemapLoaded()) return;
       const missing = workIds.some((id) =>
-        keptIdsNeedRemap(progress[id]?.kept, peekWork(id)?.breaths),
+        keptIdsNeedRemap(progress[id]?.kept, peekWork(id)?.breaths, id, REBOUND_FROM_COUNT),
       );
       if (!missing) return;
       void loadBreathRemap().then(() => {
