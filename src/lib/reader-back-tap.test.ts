@@ -236,6 +236,15 @@ async function breathIndex(page: Page) {
   return Number(raw);
 }
 
+async function frames(page: Page) {
+  await page.evaluate(
+    () =>
+      new Promise<void>((resolve) => {
+        requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
+      }),
+  );
+}
+
 async function settle(page: Page, expected: number) {
   await page.waitForFunction(
     (want) =>
@@ -244,8 +253,9 @@ async function settle(page: Page, expected: number) {
     expected,
     { timeout: 4000 },
   );
-  // Long enough for a delayed compatibility click to step again if it is not swallowed.
-  await page.waitForTimeout(360);
+  // A compatibility click is swallowed whenever it arrives. Two frames let a
+  // click already queued in this turn run; the index, not a clock, is the check.
+  await frames(page);
   assert.equal(await breathIndex(page), expected);
   const bar = await page.locator("[data-reader-bar]").getAttribute("data-reader-bar");
   assert.equal(bar, "closed", "a page tap opened Keep/Send");
@@ -323,7 +333,7 @@ test(
       const first = await spots(page);
       assert.equal(first.look, 0);
       await page.touchscreen.tap(first.x, first.justAbove);
-      await page.waitForTimeout(400);
+      await frames(page);
       assert.equal(await breathIndex(page), 0, "back from the first sentence moved");
       assert.equal(
         await page.locator("[data-reader-bar]").getAttribute("data-reader-bar"),
@@ -354,7 +364,7 @@ test(
           { timeout: 4000 },
         );
       }
-      await page.waitForTimeout(1000);
+      await frames(page);
       assert.equal(await breathIndex(page), rapidStart - 12, "rapid back taps did not all land");
 
       const beforeDouble = await breathIndex(page);
@@ -413,7 +423,7 @@ test(
       assert.equal(start.index, 0);
       assert.equal(start.look, 0);
       await page.touchscreen.tap(start.x, start.justAbove);
-      await page.waitForTimeout(400);
+      await frames(page);
       assert.equal(await breathIndex(page), 0, "back from the first imported sentence moved");
 
       for (let i = 0; i < 70; i += 1) {
@@ -427,7 +437,7 @@ test(
           { timeout: 4000 },
         );
       }
-      await page.waitForTimeout(1000);
+      await frames(page);
       assert.equal(await breathIndex(page), 70);
 
       await backSeries(page, "justAbove", BACKS);

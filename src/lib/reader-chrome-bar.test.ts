@@ -161,7 +161,6 @@ test(
       assert.equal(afterNext.opacity, "0");
       assert.equal(afterNext.glassOpacity, "1");
 
-      await page.waitForTimeout(180);
       await page.getByRole("button", { name: "Previous sentence" }).click();
       await page.waitForFunction(
         (prev) => document.querySelector(".breath-now")?.textContent !== prev,
@@ -304,8 +303,6 @@ test(
       assert.notEqual(afterBack.text, spot.text, "tap above the focus did not go back");
       assert.equal(afterBack.state, "closed", "back tap opened the bar");
 
-      // Advance ignores taps inside the short lock that a retreat just set.
-      await page.waitForTimeout(200);
       const nextSpot = await page.evaluate(() => {
         const row = document.querySelector(".breath-now")?.getBoundingClientRect();
         if (!row) return null;
@@ -348,7 +345,12 @@ test(
       });
       assert.ok(first.text.length > 0);
       await page.touchscreen.tap(first.x, first.y);
-      await page.waitForTimeout(400);
+      await page.evaluate(
+        () =>
+          new Promise<void>((resolve) => {
+            requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
+          }),
+      );
       const stayed = await bar(page);
       assert.equal(stayed.text, first.text, "back from the first sentence changed the line");
       assert.equal(stayed.state, "closed", "no-op back tap opened the bar");

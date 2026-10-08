@@ -64,7 +64,12 @@ import {
   upcomingBreaths,
   upcomingOpacity,
 } from "@/lib/center-line";
-import { turnZone } from "@/lib/reader-turn";
+import {
+  breathPageTop,
+  classifyTurnGesture,
+  ghostMousePointer,
+  turnZone,
+} from "@/lib/reader-turn";
 import { useCenterLine } from "@/lib/use-center-line";
 
 type Overlay =
@@ -156,7 +161,6 @@ export function TbrReader({
   const navReveal = bar.navReveal;
   const [overflows, setOverflows] = useState(false);
   const [atEnd, setAtEnd] = useState(true);
-  const [lookbackPx, setLookbackPx] = useState(0);
   /** Top of the focus line, relative to the reading column. Taps above it go back. */
   const [prevZonePx, setPrevZonePx] = useState(0);
   const [sandCue, setSandCue] = useState(false);
@@ -173,11 +177,38 @@ export function TbrReader({
   const centerLine = useCenterLine();
   const centerOn = centerLine.enabled;
   const turnHostRef = useRef<HTMLDivElement>(null);
-  /** One finger-down. The matching pointerup is the only turn. */
-  const gestureRef = useRef<{ id: number; x: number; y: number; t: number } | null>(null);
-  /** iOS sends a click after pointerup. That click must not turn again. */
-  const swallowClickRef = useRef(false);
-  const swallowTimerRef = useRef(0);
+  /**
+   * One finger-down. The matching pointerup is the only turn.
+   * A ghost mouse sequence after the touch must not start another one.
+   */
+  const gestureRef = useRef<{
+    id: number;
+    x: number;
+    y: number;
+    lastX: number;
+    lastY: number;
+    t: number;
+    pointerType: string;
+    scrollTop: number;
+    scrolled: boolean;
+    turned: boolean;
+  } | null>(null);
+  /** Clicks owed to pointer gestures. Each one is swallowed, not turned. */
+  const owedClicksRef = useRef(0);
+  /** Last real touch, so the synthesized mouse that follows is ignored. */
+  const lastTouchAtRef = useRef(0);
+  /**
+   * Landed split between back and forward, in host pixels.
+   * The column animates after this is stored, so a tap during the slide
+   * uses the sentence the reader is landing on.
+   */
+  const zoneRef = useRef<{ tall: boolean; split: number; ready: boolean }>({
+    tall: false,
+    split: 0,
+    ready: false,
+  });
+  /** Where a tall breath should open when the index changes. */
+  const landRef = useRef<{ index: number; edge: "start" | "end" } | null>(null);
   const overlayRef = useRef(overlay);
   overlayRef.current = overlay;
   const booted = useRef(false);
@@ -289,9 +320,21 @@ export function TbrReader({
     document.documentElement.classList.add("sitting");
     return () => {
       document.documentElement.classList.remove("sitting");
-      window.clearTimeout(swallowTimerRef.current);
     };
   }, []);
+
+  useEffect(() => {
+    const host = turnHostRef.current;
+    if (!host) return;
+    const blockCallout = (event: TouchEvent) => {
+      if (event.touches.length !== 1) return;
+      const target = event.target;
+      if (target instanceof Element && target.closest("a[href], input, textarea, select")) return;
+      if (event.cancelable) event.preventDefault();
+    };
+    host.addEventListener("touchstart", blockCallout, { passive: false });
+    return () => host.removeEventListener("touchstart", blockCallout);
+  }, [centerOn, overlay]);
 
   // Idle, background, and the threshold / timer sheets are not reading.
   // The anchor is cleared so the next advance cannot claim that gap.
@@ -389,10 +432,12 @@ export function TbrReader({
   }
 
   function advance() {
+    landRef.current = { index: liveIndex() + 1, edge: "start" };
     stepBy(1);
   }
 
   function retreat() {
+    landRef.current = { index: liveIndex() - 1, edge: "end" };
     stepBy(-1);
   }
 
@@ -771,23 +816,48 @@ export function TbrReader({
     if (!slot) {
       setOverflows(false);
       setAtEnd(true);
+      zoneRef.current = { tall: false, split: 0, ready: false };
       return;
     }
-    slot.scrollTop = 0;
+    const land = landRef.current?.index === index ? landRef.current.edge : "start";
+    let didLand = false;
+    const landScroll = (tall: boolean) => {
+      if (didLand) return;
+      didLand = true;
+      if (tall && land === "end") {
+        slot.scrollTop = slot.scrollHeight;
+      } else {
+        slot.scrollTop = 0;
+      }
+    };
+    const rememberZone = (tall: boolean) => {
+      const host = turnHostRef.current;
+      const line = slot.querySelector(".breath-now");
+      if (!host || !line) {
+        zoneRef.current = { tall, split: 0, ready: false };
+        return 0;
+      }
+      const hostRect = host.getBoundingClientRect();
+      const lineRect = line.getBoundingClientRect();
+      const split = Math.max(
+        0,
+        Math.min(Math.round(hostRect.height), Math.round(lineRect.top - hostRect.top)),
+      );
+      zoneRef.current = { tall, split, ready: true };
+      return split;
+    };
 
     if (!centerOn) {
       let live = true;
       const measure = () => {
         if (!live) return;
         const next = slot.scrollHeight - slot.clientHeight > 1;
+        landScroll(next);
         setOverflows((prev) => (prev === next ? prev : next));
         const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
         setAtEnd((prev) => (prev === end ? prev : end));
-        const look = lookbackSlotRef.current;
-        if (look) {
-          const height = Math.round(look.getBoundingClientRect().height);
-          setLookbackPx((prev) => (prev === height ? prev : height));
-        }
+        const split = rememberZone(next);
+        setPrevZonePx((prev) => (prev === split ? prev : split));
       };
       measure();
       const ro = new ResizeObserver(measure);
@@ -847,6 +917,7 @@ export function TbrReader({
         if (ahead) ahead.style.display = "";
         if (look) void look.offsetHeight;
       }
+      landScroll(tooTall);
 
       const trackRect = track.getBoundingClientRect();
       const targetRect = line.getBoundingClientRect();
@@ -887,6 +958,7 @@ export function TbrReader({
       const zone = hostRect
         ? Math.max(0, Math.min(Math.round(hostRect.height), Math.round(focusTop)))
         : 0;
+      zoneRef.current = { tall: tooTall, split: zone, ready: true };
       setPrevZonePx((prev) => (prev === zone ? prev : zone));
       if (motion) {
         // Land on the true center, but start one breath lower so the column
@@ -910,11 +982,10 @@ export function TbrReader({
       }
 
       const overflowsNow = tooTall || slot.scrollHeight - slot.clientHeight > 1;
+      if (overflowsNow !== tooTall) zoneRef.current = { ...zoneRef.current, tall: true };
       setOverflows((prev) => (prev === overflowsNow ? prev : overflowsNow));
       const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
       setAtEnd((prev) => (prev === end ? prev : end));
-      const lookHeight = tooTall || !look ? 0 : Math.round(look.getBoundingClientRect().height);
-      setLookbackPx((prev) => (prev === lookHeight ? prev : lookHeight));
       layoutSig = sigNow();
     };
 
@@ -1044,94 +1115,210 @@ export function TbrReader({
   );
   const breathClass = cn("breath-slot", overflows && "overflows", atEnd && "at-end");
 
-  function armSwallowClick() {
-    swallowClickRef.current = true;
-    window.clearTimeout(swallowTimerRef.current);
-    swallowTimerRef.current = window.setTimeout(() => {
-      swallowClickRef.current = false;
-    }, 900);
+  function noteOwed(by: number) {
+    owedClicksRef.current = Math.max(0, owedClicksRef.current + by);
+    turnHostRef.current?.setAttribute("data-swallow-owed", String(owedClicksRef.current));
+  }
+
+  function ghostPointer(e: ReactPointerEvent<HTMLDivElement>) {
+    return ghostMousePointer({
+      pointerType: e.pointerType,
+      firesTouchEvents: Boolean(
+        (e.nativeEvent as { sourceCapabilities?: { firesTouchEvents?: boolean } }).sourceCapabilities
+          ?.firesTouchEvents,
+      ),
+      now: performance.now(),
+      lastTouchAt: lastTouchAtRef.current,
+    });
+  }
+
+  function columnScrolls() {
+    const slot = breathSlotRef.current;
+    if (!slot) return false;
+    return zoneRef.current.tall || slot.scrollHeight - slot.clientHeight > 2;
   }
 
   function zoneAt(x: number, y: number) {
     const host = turnHostRef.current;
     if (!host) return null;
-    const line = breathSlotRef.current?.querySelector(".breath-now");
     const hostRect = host.getBoundingClientRect();
+    const box = {
+      left: hostRect.left,
+      top: hostRect.top,
+      right: hostRect.right,
+      bottom: hostRect.bottom,
+      width: hostRect.width,
+    };
+    if (columnScrolls()) {
+      return turnZone({ x, y, host: box, focusTop: null, focusBottom: null, tall: true });
+    }
+    const zone = zoneRef.current;
+    if (zone.ready) {
+      const focusTop = hostRect.top + zone.split;
+      return turnZone({
+        x,
+        y,
+        host: box,
+        focusTop,
+        focusBottom: focusTop + 1,
+      });
+    }
+    const line = breathSlotRef.current?.querySelector(".breath-now");
     const lineRect = line?.getBoundingClientRect();
     return turnZone({
       x,
       y,
-      host: {
-        left: hostRect.left,
-        top: hostRect.top,
-        right: hostRect.right,
-        bottom: hostRect.bottom,
-        width: hostRect.width,
-      },
+      host: box,
       focusTop: lineRect ? lineRect.top : null,
       focusBottom: lineRect ? lineRect.bottom : null,
     });
   }
 
+  function pageBreath(direction: 1 | -1) {
+    const slot = breathSlotRef.current;
+    if (!slot || !columnScrolls()) return false;
+    const top = breathPageTop({
+      scrollTop: slot.scrollTop,
+      clientHeight: slot.clientHeight,
+      scrollHeight: slot.scrollHeight,
+      direction,
+    });
+    if (top == null) return false;
+    slot.scrollTop = top;
+    const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
+    setAtEnd(end);
+    return true;
+  }
+
   function turnAt(x: number, y: number) {
     const zone = zoneAt(x, y);
     if (!zone) return;
-    armSwallowClick();
-    if (zone === "prev") retreat();
-    else advance();
+    if (zone === "prev") {
+      if (!pageBreath(-1)) retreat();
+    } else if (!pageBreath(1)) advance();
     setBar((state) => reduceReaderBar(state, "page"));
   }
 
   function beginTurn(e: ReactPointerEvent<HTMLDivElement>) {
-    if (e.button !== 0) return;
+    if (e.button !== 0 || !e.isPrimary) return;
+    if (ghostPointer(e)) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
     const host = turnHostRef.current;
     if (!host) return;
-    gestureRef.current = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now() };
-    const target = e.target as HTMLElement | null;
-    const scrolling = Boolean(target?.closest?.(".breath-slot.overflows"));
-    if (scrolling) return;
+    const target = e.target;
+    if (
+      target instanceof Element &&
+      target.closest("a[href], input, textarea, select, label")
+    ) {
+      return;
+    }
+    if (e.pointerType === "touch") lastTouchAtRef.current = performance.now();
+    const slot = breathSlotRef.current;
+    // Arm before the lift. iOS can deliver the compatibility click before
+    // pointerup; that click must not turn, and the lift still does.
+    noteOwed(1);
+    gestureRef.current = {
+      id: e.pointerId,
+      x: e.clientX,
+      y: e.clientY,
+      lastX: e.clientX,
+      lastY: e.clientY,
+      t: performance.now(),
+      pointerType: e.pointerType,
+      scrollTop: slot?.scrollTop ?? 0,
+      scrolled: false,
+      turned: false,
+    };
     try {
       host.setPointerCapture(e.pointerId);
     } catch {
       /* the pointer already ended */
     }
-    // Stops the text callout and the extra click iOS fires after a tap.
+    // Stops the text callout, native scrolling, and the extra click after a tap.
     e.preventDefault();
   }
 
-  function endTurn(e: ReactPointerEvent<HTMLDivElement>) {
+  function moveTurn(e: ReactPointerEvent<HTMLDivElement>) {
     const start = gestureRef.current;
-    gestureRef.current = null;
-    if (!start || start.id !== e.pointerId) return;
-    const dx = e.clientX - start.x;
+    if (!start || start.id !== e.pointerId || ghostPointer(e)) return;
+    start.lastX = e.clientX;
+    start.lastY = e.clientY;
+    const slot = breathSlotRef.current;
+    if (!slot || !columnScrolls()) return;
     const dy = e.clientY - start.y;
-    const dt = performance.now() - start.t;
-    if (dt > 900) {
-      armSwallowClick();
+    const dx = e.clientX - start.x;
+    if (!start.scrolled) {
+      if (Math.abs(dy) < 10 || Math.abs(dy) < Math.abs(dx)) return;
+      start.scrolled = true;
+      start.scrollTop = slot.scrollTop;
+    }
+    slot.scrollTop = start.scrollTop - (e.clientY - start.y);
+    if (e.cancelable) e.preventDefault();
+  }
+
+  function finishTurn(e: ReactPointerEvent<HTMLDivElement>, cancelled: boolean) {
+    if (ghostPointer(e)) {
+      e.preventDefault();
       return;
     }
-    // A shaky finger is still a tap. Only a real sideways flick swipes.
-    if (Math.abs(dx) >= 56 && Math.abs(dx) > Math.abs(dy) * 1.25) {
-      armSwallowClick();
-      if (dx < 0) advance();
-      else retreat();
+    const start = gestureRef.current;
+    if (!start || start.id !== e.pointerId) return;
+    gestureRef.current = null;
+    if (start.turned) return;
+    if (start.pointerType === "touch") lastTouchAtRef.current = performance.now();
+    if (start.scrolled) return;
+    const dx = (cancelled ? start.lastX : e.clientX) - start.x;
+    const dy = (cancelled ? start.lastY : e.clientY) - start.y;
+    const dt = performance.now() - start.t;
+    const kind = classifyTurnGesture({
+      dx,
+      dy,
+      dt,
+      canScroll: columnScrolls(),
+      scrolled: false,
+    });
+    if (cancelled && kind !== "tap") return;
+    if (kind === "swipe-next") {
+      if (!pageBreath(1)) advance();
       setBar((state) => reduceReaderBar(state, "page"));
       return;
     }
-    if (Math.hypot(dx, dy) > 44) {
-      armSwallowClick();
+    if (kind === "swipe-prev") {
+      if (!pageBreath(-1)) retreat();
+      setBar((state) => reduceReaderBar(state, "page"));
       return;
     }
-    turnAt(e.clientX, e.clientY);
+    if (kind !== "tap") return;
+    turnAt(start.x, start.y);
+  }
+
+  function endTurn(e: ReactPointerEvent<HTMLDivElement>) {
+    finishTurn(e, false);
+  }
+
+  function cancelTurn(e: ReactPointerEvent<HTMLDivElement>) {
+    finishTurn(e, true);
   }
 
   function onTurnClick(e: ReactMouseEvent<HTMLDivElement>) {
-    if (swallowClickRef.current) {
-      e.preventDefault();
-      e.stopPropagation();
+    e.preventDefault();
+    e.stopPropagation();
+    const start = gestureRef.current;
+    // The compatibility click can beat pointerup. One open gesture means
+    // this click is that finger: turn now, and let the lift do nothing.
+    if (start && !start.turned && owedClicksRef.current === 1) {
+      start.turned = true;
+      noteOwed(-1);
+      if (!start.scrolled) turnAt(start.x, start.y);
       return;
     }
-    e.preventDefault();
+    if (owedClicksRef.current > 0) {
+      noteOwed(-1);
+      return;
+    }
     turnAt(e.clientX, e.clientY);
   }
 
@@ -1139,13 +1326,14 @@ export function TbrReader({
     <div
       ref={turnHostRef}
       data-reader-text
+      data-swallow-owed="0"
       className={cn("reader-turn relative flex min-h-0 flex-1", !together && "reader-turn-bleed")}
       onPointerDownCapture={beginTurn}
+      onPointerMoveCapture={moveTurn}
       onPointerUpCapture={endTurn}
-      onPointerCancelCapture={() => {
-        gestureRef.current = null;
-      }}
+      onPointerCancelCapture={cancelTurn}
       onClickCapture={onTurnClick}
+      onContextMenu={(e) => e.preventDefault()}
     >
       <button
         type="button"
@@ -1154,9 +1342,9 @@ export function TbrReader({
         aria-label="Previous sentence"
         className={cn(
           "absolute top-0 z-10 cursor-w-resize",
-          overflows ? "left-0 w-1/3" : "inset-x-0",
+          overflows ? "left-0 h-full w-1/3" : "inset-x-0",
         )}
-        style={{ height: overflows ? lookbackPx : Math.max(0, prevZonePx) }}
+        style={overflows ? undefined : { height: Math.max(0, prevZonePx) }}
         onMouseDown={(e) => e.preventDefault()}
       />
       <button
@@ -1166,9 +1354,9 @@ export function TbrReader({
         aria-label="Next sentence"
         className={cn(
           "absolute z-10 cursor-e-resize",
-          overflows ? "right-0 top-0 w-2/3" : "inset-x-0 bottom-0",
+          overflows ? "top-0 right-0 h-full w-2/3" : "inset-x-0 bottom-0",
         )}
-        style={overflows ? { height: lookbackPx } : { top: Math.max(0, prevZonePx) }}
+        style={overflows ? undefined : { top: Math.max(0, prevZonePx) }}
         onMouseDown={(e) => e.preventDefault()}
       />
 
