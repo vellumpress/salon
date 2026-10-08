@@ -507,11 +507,16 @@ const COUNTRY_PLACE: Record<string, WorkPlace> = {
 };
 
 /**
- * Chip-only settings: a printed place label with no country key and no silhouette (Launch, POST-#225).
- * placeFor() stays null for these ids; PlaceChip shows the label alone.
+ * Chip-only settings: a printed place label with no silhouette (Launch, POST-#225).
+ * placeFor() stays null for these ids, even when countryFor() has an origin
+ * country; PlaceChip shows the label alone.
  */
 export const CHIP_ONLY_PLACE: Record<string, string> = {
   "mary-magdalen": "Tiberias, Galilee",
+  // PAN-TADEUSZ: the poem's setting as it names it. The silhouettes are hand-drawn
+  // (see region-shapes.ts) and there is no Lithuania shape; never draw one ad hoc.
+  // countryFor() stays Poland (origin) for the Map.
+  "pan-tadeusz": "Lithuania",
 };
 
 /**
@@ -533,6 +538,7 @@ function withShape(place: WorkPlace | undefined): WorkPlace | null {
 }
 
 export function placeFor(work: PlaceRef): WorkPlace | null {
+  if (CHIP_ONLY_PLACE[work.id]) return null;
   const curated = withShape(WORK_PLACE[work.id]);
   if (curated) return curated;
   const country = countryFor(work);

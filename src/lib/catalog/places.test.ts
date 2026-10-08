@@ -5,6 +5,7 @@ import { ADAPTED_BY_SALON_IDS, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { RITUAL_LANES } from "./rituals.ts";
 import { SHELF, shelfWork } from "./shelf.ts";
 import { REGION_SHAPES } from "./region-shapes.ts";
+import { countryFor } from "./countries.ts";
 import { chipOnlyLabel, CHIP_ONLY_PLACE, NO_PRINTED_PLACE, placeFor, placeForId, surfacedPlaceWorkIds } from "./places.ts";
 
 test("named settings keep reader-friendly labels and real regions", () => {
@@ -406,7 +407,7 @@ test("POST-#225 places reuse Peru and Russia; no new region key", () => {
 });
 
 test("chip-only settings carry a label but no country key and no silhouette", () => {
-  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee" });
+  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania" });
   const mary = shelfWork("mary-magdalen");
   assert.ok(mary);
   assert.equal(placeFor(mary!), null);
@@ -526,4 +527,14 @@ test("Wed 7 Oct PM Strait Is the Gate place reuses fr; Fongueusemare; no new reg
   assert.ok(REGION_SHAPES.fr?.d, "fr shape");
   assert.deepEqual(placeFor(shelfWork("strait-is-the-gate")!), { label: "Fongueusemare", region: "fr" });
   assert.equal(CHIP_ONLY_PLACE["strait-is-the-gate"], undefined);
+});
+
+test("PAN-TADEUSZ: the chip is the poem's own Lithuania, label only, with no borrowed silhouette", () => {
+  const pan = shelfWork("pan-tadeusz");
+  assert.ok(pan);
+  assert.equal(placeFor(pan!), null);
+  assert.equal(placeForId("pan-tadeusz"), null);
+  assert.equal(chipOnlyLabel("pan-tadeusz"), "Lithuania");
+  assert.equal("lt" in REGION_SHAPES, false); // shapes are hand-drawn; none is drawn ad hoc for a chip
+  assert.equal(countryFor(pan!), "Poland"); // origin for the Map is unchanged
 });

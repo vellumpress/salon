@@ -73,6 +73,7 @@ function textWork(id: string) {
  */
 const CARD_AFTER_PRINTED_APPARATUS: Readonly<Record<string, readonly [number, string]>> = {
   "ara-vus-prec": [3, "Gerontion's Measure for Measure epigraph, three lines"],
+  "pan-tadeusz": [1, "Book I's printed argument"],
   "pudd-nhead-wilson": [2, "chapter title and the Pudd'nhead Wilson's Calendar epigraph"],
   redburn: [2, "CHAPTER I. and its long printed chapter title"],
   shadowings: [1, "Hearn's printed source note to the first story"],
