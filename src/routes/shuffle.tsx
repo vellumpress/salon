@@ -12,6 +12,7 @@ import {
 import { boardWork } from "@/lib/mondrian";
 import { useTbr } from "@/lib/store";
 import { APP_NAME, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
+import { formatHandle, normalizeHandle } from "@/lib/social";
 import { prefetchWork } from "@/lib/prefetch-work";
 
 export const Route = createFileRoute("/shuffle")({
@@ -39,6 +40,8 @@ function ShufflePage() {
   const [pair, setPair] = useState<string | null>(null);
   const [href, setHref] = useState("");
   const [copied, setCopied] = useState(false);
+  const [withHandle, setWithHandle] = useState("");
+  const [handleNote, setHandleNote] = useState("");
   const [canShare, setCanShare] = useState(false);
   const [ready, setReady] = useState(false);
   const stepRef = useRef<Step>(step);
@@ -106,10 +109,23 @@ function ShufflePage() {
     });
   }
 
+  function keepHandle(raw: string) {
+    setWithHandle(raw);
+    const clean = normalizeHandle(raw);
+    if (clean.length < 2) {
+      setHandleNote("");
+      return;
+    }
+    const result = useTbr.getState().addContact({ handle: clean });
+    setHandleNote(result.ok ? `The link names ${formatHandle(clean)}.` : result.error);
+  }
+
   async function sendLink() {
+    const clean = normalizeHandle(withHandle);
+    const named = clean.length >= 2 ? ` for ${formatHandle(clean)}` : "";
     const result = await shareOrCopy({
       title: salonShareTitle(meta?.title ?? APP_NAME),
-      text: salonShareText(meta?.title ?? "A sitting"),
+      text: salonShareText(`${meta?.title ?? "A sitting"}${named}.`),
       url: href,
     });
     if (result === "copied") {
@@ -211,6 +227,20 @@ function ShufflePage() {
               <p className="mt-5 break-all font-sans text-xs leading-relaxed tracking-wide text-ink">
                 {href}
               </p>
+              <label className="mt-5 flex items-center border border-ink bg-paper">
+                <span className="px-3 font-sans text-sm text-ink/70">@</span>
+                <input
+                  value={withHandle}
+                  onChange={(event) => keepHandle(event.target.value)}
+                  placeholder="name, or just send the link"
+                  autoCapitalize="none"
+                  autoCorrect="off"
+                  spellCheck={false}
+                  aria-label="Friend @name"
+                  className="h-12 min-w-0 flex-1 border-0 bg-transparent font-serif text-lg text-ink focus-visible:outline-none"
+                />
+              </label>
+              {handleNote ? <p className="mt-3 font-sans text-sm text-ink/70">{handleNote}</p> : null}
             </div>
             <div className="flex shrink-0 flex-col gap-rule bg-ink">
               <button

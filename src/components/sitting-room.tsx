@@ -3,6 +3,21 @@ import { useP2PRoom, type PeerInfo } from "@/lib/multiplayer";
 import { ComingSoon } from "@/components/coming-soon";
 import { fillClass, hashSeed, type Fill } from "@/lib/mondrian";
 import { HoldLeave } from "@/components/hourglass";
+import { publishClubProgress } from "@/lib/clubs";
+import { asClubId } from "@/lib/club-time";
+import { formatHandle } from "@/lib/social";
+import { useTbr } from "@/lib/store";
+import {
+  chatLineId,
+  isLivePeer,
+  mergeSitLines,
+  peerAside,
+  shouldSyncNewcomer,
+  sitStatusLabel,
+  SIT_REACTIONS,
+  type SitLine,
+  type SitReaction,
+} from "@/lib/multiplayer/sit-logic";
 import { enterTogetherCompose, exitTogetherCompose } from "@/lib/vvh";
 import { cn } from "@/lib/utils";
 
@@ -12,12 +27,7 @@ export function markOf(id: string): Fill {
   return MARKS[hashSeed(id) % MARKS.length] ?? "ink";
 }
 
-export type ChatLine = {
-  id: string;
-  from: string;
-  text: string;
-  at: number;
-};
+export type ChatLine = SitLine;
 
 type HereNote = { breath: number; place: string };
 
@@ -152,17 +162,20 @@ export function useSittingLock(onLeave: () => void) {
   return { hold, startHold, clearHold, leave };
 }
 
-export function useSittingChat(pair: string, place: string, breathIndex: number) {
+export function useSittingChat(pair: string, place: string, breathIndex: number, workId = "") {
+  const handle = useTbr((s) => s.handle) ?? "";
+  const joined = useTbr((s) => s.joined) ?? [];
   const p2p = useP2PRoom({
     room: `sit-${pair}`.slice(0, 64),
-    name: "",
+    name: handle,
   });
   const [lines, setLines] = useState<ChatLine[]>([]);
   const [here, setHere] = useState<Record<string, HereNote>>({});
   const [draft, setDraft] = useState("");
-  const snap = useRef({ lines, breathIndex, place, selfId: p2p.selfId });
-  snap.current = { lines, breathIndex, place, selfId: p2p.selfId };
+  const snap = useRef({ lines, breathIndex, place, selfId: p2p.selfId, workId });
+  snap.current = { lines, breathIndex, place, selfId: p2p.selfId, workId };
   const prevConnected = useRef(new Set<string>());
+  const progressTimer = useRef<number | null>(null);
 
   useEffect(
     () =>
@@ -171,11 +184,7 @@ export function useSittingChat(pair: string, place: string, breathIndex: number)
           const text = data.text.trim().slice(0, 280);
           if (!text) return;
           const at = typeof data.at === "number" ? data.at : Date.now();
-          setLines((prev) => {
-            const id = `${from}-${at}`;
-            if (prev.some((line) => line.id === id)) return prev;
-            return [...prev, { id, from, text, at }].slice(-16);
-          });
+          setLines((prev) => mergeSitLines(prev, [{ id: chatLineId(from, at), from, text, at }]));
           return;
         }
         if (isHere(data)) {
@@ -183,6 +192,18 @@ export function useSittingChat(pair: string, place: string, breathIndex: number)
             ...prev,
             [from]: { breath: Number(data.breath) || 0, place: data.place.slice(0, 80) },
           }));
+          return;
+        }
+        if (data && typeof data === "object" && (data as { t?: string }).t === "hello") {
+          if (snap.current.lines.length === 0) return;
+          p2p.send(
+            {
+              t: "sync",
+              chat: snap.current.lines,
+              here: { breath: snap.current.breathIndex, place: snap.current.place },
+            },
+            from,
+          );
           return;
         }
         if (isSync(data)) {
@@ -202,20 +223,16 @@ export function useSittingChat(pair: string, place: string, breathIndex: number)
               at: line.at || Date.now(),
             }));
           if (incoming.length === 0) return;
-          setLines((prev) => {
-            const seen = new Set(prev.map((line) => line.id));
-            const next = [...prev];
-            for (const line of incoming) {
-              if (seen.has(line.id) || !line.text) continue;
-              seen.add(line.id);
-              next.push(line);
-            }
-            return next.sort((a, b) => a.at - b.at).slice(-16);
-          });
+          setLines((prev) => mergeSitLines(prev, incoming));
         }
       }),
     [p2p.onMessage],
   );
+
+  useEffect(() => {
+    if (!p2p.joined) return;
+    p2p.send({ t: "hello" });
+  }, [p2p.joined, p2p.send]);
 
   const connectedKey = p2p.peers
     .filter((peer) => peer.connectionState === "connected")
@@ -223,15 +240,33 @@ export function useSittingChat(pair: string, place: string, breathIndex: number)
     .join();
 
   useEffect(() => {
-    p2p.broadcast({ t: "here", breath: breathIndex, place });
-  }, [breathIndex, place, connectedKey, p2p.broadcast]);
+    p2p.setMeta({
+      name: handle,
+      breath: breathIndex,
+      place,
+      workId,
+    });
+    p2p.broadcast({ t: "here", breath: breathIndex, place, workId });
+  }, [breathIndex, place, workId, handle, connectedKey, p2p.broadcast, p2p.setMeta]);
+
+  useEffect(() => {
+    const clubId = asClubId(pair);
+    if (!clubId || !workId || !joined.includes(clubId)) return;
+    if (progressTimer.current) window.clearTimeout(progressTimer.current);
+    progressTimer.current = window.setTimeout(() => {
+      void publishClubProgress(clubId, { workId, breathIndex, place });
+    }, 1200);
+    return () => {
+      if (progressTimer.current) window.clearTimeout(progressTimer.current);
+    };
+  }, [pair, workId, breathIndex, place, joined]);
 
   useEffect(() => {
     const connected = new Set(connectedKey.split(",").filter(Boolean));
     const newcomers = [...connected].filter((id) => !prevConnected.current.has(id));
-    const incumbents = [snap.current.selfId, ...prevConnected.current];
+    const incumbents = [...prevConnected.current];
     for (const id of newcomers) {
-      if (incumbents.slice().sort()[0] !== snap.current.selfId) continue;
+      if (!shouldSyncNewcomer(snap.current.selfId, incumbents)) continue;
       p2p.send(
         {
           t: "sync",
@@ -258,66 +293,61 @@ export function useSittingChat(pair: string, place: string, breathIndex: number)
     const text = draft.trim().slice(0, 280);
     if (!text) return;
     const at = Date.now();
+    const from = p2p.selfId;
     p2p.send({ t: "chat", text, at });
-    setLines((prev) =>
-      [...prev, { id: `${p2p.selfId}-${at}`, from: p2p.selfId, text, at }].slice(-16),
-    );
+    setLines((prev) => mergeSitLines(prev, [{ id: chatLineId(from, at), from, text, at }]));
     setDraft("");
   }, [draft, p2p]);
+
+  const sendReaction = useCallback(
+    (word: SitReaction) => {
+      const at = Date.now();
+      const from = p2p.selfId;
+      p2p.send({ t: "chat", text: word, at });
+      setLines((prev) => mergeSitLines(prev, [{ id: chatLineId(from, at), from, text: word, at }]));
+    },
+    [p2p],
+  );
 
   return {
     selfId: p2p.selfId,
     peers: p2p.peers,
     joined: p2p.joined,
     unavailable: p2p.unavailable,
+    link: p2p.link,
     lines,
     here,
     draft,
     setDraft,
     sendChat,
+    sendReaction,
   };
 }
 
-function isPresent(peer: PeerInfo, here: Record<string, HereNote>, lines: ChatLine[]) {
-  if (peer.connectionState === "connected") return true;
-  if (peer.rttMs != null) return true;
-  if (here[peer.id]) return true;
-  return lines.some((line) => line.from === peer.id);
-}
-
-function presenceLabel(joined: boolean, present: number, peers: PeerInfo[], offline?: boolean) {
-  if (present > 0) return "";
-  if (offline && !joined) return "needs a server";
-  if (!joined) return "sitting";
-  const failed = peers.filter((peer) => peer.connectionState === "failed");
-  if (failed.length > 0 && failed.length === peers.length) return "can't reach";
-  return "waiting";
+function isPresent(peer: PeerInfo) {
+  return isLivePeer(peer.connectionState);
 }
 
 export function TogetherShell({
   pair,
   place,
   breathIndex,
+  workId = "",
   onLeave,
   children,
 }: {
   pair: string;
   place: string;
   breathIndex: number;
+  workId?: string;
   onLeave: () => void;
   children: ReactNode;
 }) {
   const lock = useSittingLock(onLeave);
-  const chat = useSittingChat(pair, place, breathIndex);
+  const chat = useSittingChat(pair, place, breathIndex, workId);
   const [live, setLive] = useState(false);
-  const [offline, setOffline] = useState(false);
   const dockRef = useRef<HTMLDivElement>(null);
   useEffect(() => setLive(true), []);
-  useEffect(() => {
-    if (chat.joined) return;
-    const timer = window.setTimeout(() => setOffline(true), 4000);
-    return () => window.clearTimeout(timer);
-  }, [chat.joined]);
   useEffect(() => () => exitTogetherCompose(), []);
 
   const beginCompose = useCallback(() => {
@@ -331,15 +361,25 @@ export function TogetherShell({
     });
   }, []);
 
-  const present = chat.peers.filter((peer) => isPresent(peer, chat.here, chat.lines));
-  const status = chat.unavailable
-    ? ""
-    : presenceLabel(chat.joined, present.length, chat.peers, offline);
+  const present = chat.peers.filter((peer) => isPresent(peer));
+  const status = chat.unavailable ? "" : sitStatusLabel(chat.link, chat.joined, present.length);
   const elsewhere = [
     ...new Set(
       present
-        .map((peer) => chat.here[peer.id]?.place)
-        .filter((item): item is string => Boolean(item) && item !== place),
+        .map((peer) => {
+          const note = peerAside({
+            selfPlace: place,
+            selfWorkId: workId,
+            peerPlace: peer.place || chat.here[peer.id]?.place || "",
+            peerWorkId: peer.workId || "",
+            selfBreath: breathIndex,
+            peerBreath: peer.breath ?? chat.here[peer.id]?.breath ?? breathIndex,
+          });
+          if (!note) return "";
+          const who = peer.name ? formatHandle(peer.name) : "";
+          return who ? `${who} · ${note}` : note;
+        })
+        .filter(Boolean),
     ),
   ];
   const visible = chat.lines.slice(-6);
@@ -361,7 +401,7 @@ export function TogetherShell({
                   key={peer.id}
                   className={cn(
                     "size-2.5 shrink-0",
-                    isPresent(peer, chat.here, chat.lines)
+                    isPresent(peer)
                       ? fillClass(markOf(peer.id))
                       : peer.connectionState === "failed"
                         ? "bg-ink/30"
@@ -373,8 +413,14 @@ export function TogetherShell({
           {chat.unavailable ? (
             <span className="type-kicker">Coming soon</span>
           ) : status ? (
-            <span className="type-kicker text-muted">{status}</span>
-          ) : null}
+            <span className="type-kicker text-muted" data-sit-status={status}>
+              {status}
+            </span>
+          ) : (
+            <span className="sr-only" data-sit-status="here">
+              here
+            </span>
+          )}
         </div>
       </header>
       {children}
@@ -391,7 +437,7 @@ export function TogetherShell({
         <div className="chat-slot" aria-live="polite">
           {elsewhere.map((item) => (
             <p key={item} className="chat-aside">
-              at {item}
+              {item}
             </p>
           ))}
           {visible.map((line, i) => {
@@ -404,6 +450,18 @@ export function TogetherShell({
               </p>
             );
           })}
+        </div>
+        <div className="flex overflow-x-auto border-t border-ink">
+          {SIT_REACTIONS.map((word) => (
+            <button
+              key={word}
+              type="button"
+              className="h-11 min-w-0 flex-1 border-l border-ink font-sans text-sm text-ink first:border-l-0"
+              onClick={() => chat.sendReaction(word)}
+            >
+              {word}
+            </button>
+          ))}
         </div>
         <form
           className="chat-compose"

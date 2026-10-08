@@ -3,19 +3,30 @@ import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from "re
 import { getClub, getReader } from "@/lib/social";
 import { clubPair, shareOrCopy } from "@/lib/shuffle";
 import { fillClass, fillInk } from "@/lib/mondrian";
+import { usePersistHydrated } from "@/components/resume-link";
 import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import {
   addClubSession,
   getBookClub,
+  getClubByInvite,
+  hostedUserId,
   joinClubByInvite,
+  leaveClub,
   listClubMessages,
+  listClubRoster,
+  mergeClubMessages,
   postClubMessage,
   subscribeClubMessages,
   type BookClubView,
+  type ClubMemberView,
   type ClubMessage,
   clubInviteUrl,
 } from "@/lib/clubs";
+import { shouldAutoJoin } from "@/lib/club-flow";
+import { formatHandle } from "@/lib/social";
+
+const NO_CLUBS: string[] = [];
 import { defaultSitClock, etWallToIso, formatClubWhenLong } from "@/lib/club-time";
 import { serializeClubReadSearch } from "@/lib/catalog/serialize";
 import { salonShareText, salonShareTitle } from "@/lib/site";
@@ -37,17 +48,26 @@ function ClubPage() {
     }
     let alive = true;
     setLoaded(false);
-    void getBookClub(clubId)
-      .then((club) => {
+    void (async () => {
+      try {
+        const club = await getBookClub(clubId);
         if (!alive) return;
-        setLive(club);
+        if (club) {
+          setLive(club);
+          setLoaded(true);
+          return;
+        }
+        const token = useTbr.getState().clubInvites?.[clubId];
+        const invited = token ? await getClubByInvite(token) : null;
+        if (!alive) return;
+        setLive(invited && invited.id === clubId ? invited : null);
         setLoaded(true);
-      })
-      .catch(() => {
+      } catch {
         if (!alive) return;
         setLive(null);
         setLoaded(true);
-      });
+      }
+    })();
     return () => {
       alive = false;
     };
@@ -235,11 +255,11 @@ function LiveClub({
   onClub: (club: BookClubView) => void;
 }) {
   const joined = useTbr((s) => s.joined) ?? [];
+  const leftClubs = useTbr((s) => s.leftClubs) ?? NO_CLUBS;
   const clubInvites = useTbr((s) => s.clubInvites) ?? {};
-  const toggleJoin = useTbr((s) => s.toggleJoin);
   const joinClub = useTbr((s) => s.joinClub);
+  const leaveClubLocal = useTbr((s) => s.leaveClubLocal);
   const rememberInvite = useTbr((s) => s.rememberInvite);
-  const [hydrated, setHydrated] = useState(false);
   const [copied, setCopied] = useState(false);
   const [adding, setAdding] = useState(false);
   const [error, setError] = useState("");
@@ -247,16 +267,53 @@ function LiveClub({
   const [date, setDate] = useState(clock.date);
   const [time, setTime] = useState(clock.time);
   const [saving, setSaving] = useState(false);
-  useEffect(() => setHydrated(true), []);
+  const [leaving, setLeaving] = useState(false);
+  const [signedIn, setSignedIn] = useState<boolean | null>(null);
+  const storeReady = usePersistHydrated();
   useEffect(() => {
+    let live = true;
+    void hostedUserId().then((id) => {
+      if (live) setSignedIn(Boolean(id));
+    });
+    return () => {
+      live = false;
+    };
+  }, [club.id]);
+  useEffect(() => {
+    if (!storeReady) return;
     rememberInvite(club.id, club.inviteToken);
+    if (!shouldAutoJoin(leftClubs, club.id)) return;
     joinClub(club.id);
     void joinClubByInvite(club.inviteToken).catch(() => undefined);
-  }, [club.id, club.inviteToken, joinClub, rememberInvite]);
+  }, [storeReady, club.id, club.inviteToken, joinClub, rememberInvite, leftClubs]);
 
-  const isIn = hydrated && joined.includes(club.id);
+  const isIn = storeReady && joined.includes(club.id) && shouldAutoJoin(leftClubs, club.id);
   const token = clubInvites[club.id] ?? club.inviteToken;
   const when = club.nextSession ? formatClubWhenLong(club.nextSession.startsAt) : "";
+
+  async function onLeave() {
+    setLeaving(true);
+    setError("");
+    leaveClubLocal(club.id);
+    try {
+      await leaveClub(club.id);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Could not leave just yet.");
+    } finally {
+      setLeaving(false);
+    }
+  }
+
+  async function onJoin() {
+    setError("");
+    joinClub(club.id);
+    try {
+      const next = await joinClubByInvite(club.inviteToken);
+      if (next) onClub(next);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Sign in to join this club.");
+    }
+  }
 
   async function share() {
     const result = await shareOrCopy({
@@ -295,13 +352,14 @@ function LiveClub({
       action={
         <button
           type="button"
-          onClick={() => toggleJoin(club.id)}
+          disabled={leaving}
+          onClick={() => void (isIn ? onLeave() : onJoin())}
           className={cn(
-            "inline-flex h-12 shrink-0 items-center justify-center border-l border-ink px-4 font-sans text-sm",
+            "inline-flex h-12 shrink-0 items-center justify-center border-l border-ink px-4 font-sans text-sm disabled:opacity-60",
             isIn ? "bg-paper text-ink" : "bg-red text-paper",
           )}
         >
-          {isIn ? "Leave" : "Join"}
+          {leaving ? "Leaving" : isIn ? "Leave" : "Join"}
         </button>
       }
     >
@@ -318,7 +376,9 @@ function LiveClub({
         to="/read/$workId"
         params={{ workId: club.workId }}
         search={clubPageReadSearch(club)}
-        onClick={() => joinClub(club.id)}
+        onClick={() => {
+          if (!isIn) void onJoin();
+        }}
         className="flex h-14 items-center justify-center bg-ink font-sans text-sm text-paper"
       >
         Sit together
@@ -330,11 +390,22 @@ function LiveClub({
       >
         {copied ? "Copied" : "Invite"}
       </button>
+      {signedIn === false ? (
+        <Link
+          to="/login"
+          search={{ next: `/club/${club.id}` }}
+          className="flex h-14 items-center justify-center border-b border-ink bg-yellow font-sans text-sm text-ink"
+        >
+          Sign in to join. You’ll return here.
+        </Link>
+      ) : null}
+      {error ? <p className="border-b border-ink bg-yellow px-5 py-3 font-sans text-sm text-ink">{error}</p> : null}
       {club.note ? (
         <div className="border-b border-ink px-5 py-6 sm:px-8">
           <p className="type-lede">{club.note}</p>
         </div>
       ) : null}
+      <ClubRoster clubId={club.id} />
       <ClubThread clubId={club.id} />
       <div className="border-b border-ink px-5 py-5 sm:px-8">
         <p className="mb-4 type-kicker text-muted">Sittings</p>
@@ -415,27 +486,88 @@ function LiveClub({
   );
 }
 
+function ClubRoster({ clubId }: { clubId: string }) {
+  const [people, setPeople] = useState<ClubMemberView[]>([]);
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    let live = true;
+    const load = () => {
+      void listClubRoster(clubId)
+        .then((rows) => {
+          if (!live) return;
+          setPeople(rows);
+          setReady(true);
+        })
+        .catch(() => {
+          if (live) setReady(true);
+        });
+    };
+    load();
+    const timer = window.setInterval(load, 8000);
+    return () => {
+      live = false;
+      window.clearInterval(timer);
+    };
+  }, [clubId]);
+  return (
+    <div className="border-b border-ink px-5 py-5 sm:px-8">
+      <p className="mb-4 type-kicker text-muted">Members</p>
+      {!ready ? <p className="font-serif text-lg text-ink/70">Opening the room</p> : null}
+      {ready && people.length === 0 ? (
+        <p className="font-serif text-lg text-ink/70">No one else is listed yet.</p>
+      ) : null}
+      {people.map((person) => (
+        <div key={person.userId} className="flex items-baseline justify-between gap-3 py-2">
+          <span className="type-lede">{person.handle ? formatHandle(person.handle) : "A member"}</span>
+          <span className="type-kicker text-muted">
+            {person.place
+              ? person.place
+              : person.breathIndex != null
+                ? "in the book"
+                : "in the club"}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function ClubThread({ clubId }: { clubId: string }) {
   const [lines, setLines] = useState<ClubMessage[]>([]);
+  const [ready, setReady] = useState(false);
   const [draft, setDraft] = useState("");
   const [note, setNote] = useState("");
   const [sending, setSending] = useState(false);
 
   useEffect(() => {
     let live = true;
-    void listClubMessages(clubId)
-      .then((rows) => {
-        if (live) setLines(rows);
-      })
-      .catch((err) => {
-        if (live) setNote(err instanceof Error ? err.message : "");
-      });
+    const load = () => {
+      void listClubMessages(clubId)
+        .then((rows) => {
+          if (!live) return;
+          setLines((prev) => mergeClubMessages(prev, rows));
+          setReady(true);
+        })
+        .catch((err) => {
+          if (!live) return;
+          setReady(true);
+          setNote(err instanceof Error ? err.message : "");
+        });
+    };
+    load();
     const stop = subscribeClubMessages(clubId, (message) => {
-      setLines((prev) => (prev.some((row) => row.id === message.id) ? prev : [...prev, message]));
+      setLines((prev) => mergeClubMessages(prev, [message]));
     });
+    const timer = window.setInterval(load, 5000);
+    const onVisible = () => {
+      if (!document.hidden) load();
+    };
+    document.addEventListener("visibilitychange", onVisible);
     return () => {
       live = false;
       stop();
+      window.clearInterval(timer);
+      document.removeEventListener("visibilitychange", onVisible);
     };
   }, [clubId]);
 
@@ -447,7 +579,7 @@ function ClubThread({ clubId }: { clubId: string }) {
     setNote("");
     try {
       const message = await postClubMessage(clubId, text);
-      setLines((prev) => (prev.some((row) => row.id === message.id) ? prev : [...prev, message]));
+      setLines((prev) => mergeClubMessages(prev, [message]));
       setDraft("");
     } catch (err) {
       setNote(err instanceof Error ? err.message : "The line would not send.");
@@ -460,17 +592,29 @@ function ClubThread({ clubId }: { clubId: string }) {
     <div className="border-b border-ink">
       <p className="px-5 pt-5 type-kicker text-muted sm:px-8">The room</p>
       <div className="flex flex-col gap-3 px-5 py-4 sm:px-8">
-        {lines.length === 0 ? (
+        {!ready ? <p className="font-serif text-lg text-ink/70">Opening the room</p> : null}
+        {ready && lines.length === 0 ? (
           <p className="font-serif text-lg text-ink/70">No lines yet. Members can write here.</p>
-        ) : (
-          lines.slice(-12).map((line) => (
-            <p key={line.id} className="font-serif text-lg leading-snug">
-              {line.body}
-            </p>
-          ))
-        )}
+        ) : null}
+        {lines.slice(-40).map((line) => (
+          <p key={line.id} className="font-serif text-lg leading-snug">
+            {line.handle ? (
+              <span className="type-kicker text-muted">{formatHandle(line.handle)} </span>
+            ) : null}
+            {line.body}
+          </p>
+        ))}
       </div>
-      {note ? <p className="bg-yellow px-5 py-3 font-sans text-sm text-ink">{note}</p> : null}
+      {note ? (
+        <p className="bg-yellow px-5 py-3 font-sans text-sm text-ink">
+          {note}{" "}
+          {/sign in/i.test(note) ? (
+            <Link to="/login" search={{ next: `/club/${clubId}` }} className="underline">
+              Sign in
+            </Link>
+          ) : null}
+        </p>
+      ) : null}
       <form onSubmit={(event) => void send(event)} className="flex items-stretch border-t border-ink">
         <input
           value={draft}

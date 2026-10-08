@@ -39,6 +39,10 @@ export interface PeerInfo {
   candidateType: string | null;
   /** Data-channel ping RTT (ms), measured every 2s once connected. */
   rttMs: number | null;
+  /** Sitting position, when the room is a live read. */
+  breath?: number;
+  place?: string;
+  workId?: string;
 }
 
 export interface P2PRoomOptions {

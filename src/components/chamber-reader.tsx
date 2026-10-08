@@ -1229,6 +1229,7 @@ export function TbrReader({
           pair={pair}
           place={nightChrome || placeLabel}
           breathIndex={index}
+          workId={work.id}
           onLeave={leaveTogether}
         >
           {pane}

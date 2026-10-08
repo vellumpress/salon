@@ -21,10 +21,12 @@ import {
 import {
   createClub,
   getClubByInvite,
+  hostedUserId,
   joinClubByInvite,
   listBookClubs,
   listUpcomingSessions,
   asInviteToken,
+  clubInvitePath,
   clubInviteUrl,
   type BookClubView,
   type UpcomingSit,
@@ -83,6 +85,7 @@ function TogetherPage() {
   const [created, setCreated] = useState<BookClubView | null>(null);
   const [welcome, setWelcome] = useState<BookClubView | null>(null);
   const [joinMissing, setJoinMissing] = useState(false);
+  const [joinSignIn, setJoinSignIn] = useState("");
 
   useEffect(() => setHydrated(true), []);
 
@@ -127,9 +130,13 @@ function TogetherPage() {
     if (!join) {
       setWelcome(null);
       setJoinMissing(false);
+      setJoinSignIn("");
       return;
     }
-    if (isOffline()) return;
+    if (isOffline()) {
+      setBoardNote("Offline");
+      return;
+    }
     let live = true;
     void getClubByInvite(join)
       .then(async (club) => {
@@ -137,16 +144,26 @@ function TogetherPage() {
         if (!club) {
           setJoinMissing(true);
           setWelcome(null);
+          setJoinSignIn("");
           return;
         }
-        joinClub(club.id);
         rememberInvite(club.id, club.inviteToken);
         setWelcome(club);
         setJoinMissing(false);
+        const userId = await hostedUserId();
+        if (!live) return;
+        if (!userId) {
+          setJoinSignIn(clubInvitePath(club.inviteToken));
+          return;
+        }
         try {
           await joinClubByInvite(club.inviteToken);
-        } catch {
-          /* logged-out join still holds locally */
+          joinClub(club.id);
+          setJoinSignIn("");
+        } catch (err) {
+          const message = err instanceof Error ? err.message : "";
+          if (/sign in/i.test(message)) setJoinSignIn(clubInvitePath(club.inviteToken));
+          else setBoardNote(message);
         }
       })
       .catch((err) => {
@@ -188,21 +205,21 @@ function TogetherPage() {
         >
           Home
         </Link>
-        <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
+        <h1 className="type-mark flex min-w-0 flex-1 items-center truncate px-3 sm:px-4">
           Read together
         </h1>
         <ResumeLink className="h-12 border-l border-ink" />
         <Link
           to="/friends"
           preload="intent"
-          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-3 text-ink sm:px-4"
         >
           Friends
         </Link>
         <Link
           to="/profile"
           preload="intent"
-          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
+          className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-3 text-ink sm:px-4"
         >
           You
         </Link>
@@ -301,6 +318,16 @@ function TogetherPage() {
 
           {boardNote ? (
             <p className="border-b border-ink bg-yellow px-5 py-3 font-sans text-sm text-ink">{boardNote}</p>
+          ) : null}
+
+          {joinSignIn ? (
+            <Link
+              to="/login"
+              search={{ next: joinSignIn }}
+              className="flex h-14 items-center justify-center border-b border-ink bg-yellow font-sans text-sm text-ink"
+            >
+              Sign in to join. You’ll return here.
+            </Link>
           ) : null}
 
           {joinMissing ? (
@@ -639,7 +666,14 @@ function StartClubForm({
           </p>
         </div>
         {error ? (
-          <p className="border-t border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">{error}</p>
+          <p className="border-t border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">
+            {error}{" "}
+            {/sign in/i.test(error) ? (
+              <Link to="/login" search={{ next: "/together?start=1" }} className="underline">
+                Sign in
+              </Link>
+            ) : null}
+          </p>
         ) : null}
         <ComposeField fill="paper" label="Club">
           <input
