@@ -9,6 +9,14 @@ export type PrefaceProgress = {
   completedAt?: number | null;
 };
 
+/**
+ * A sit already started on this phone. A reload must keep that sentence.
+ * A later visit with no open clock still crosses the gate.
+ */
+export function openSitInProgress(progress?: PrefaceProgress | null) {
+  return typeof progress?.sittingStartedAt === "number" && progress.sittingStartedAt > 0;
+}
+
 /** First sit: no stored progress. Resume once the reader has entered the work. */
 export function shouldShowPreface(progress?: PrefaceProgress | null) {
   if (!progress) return true;
@@ -33,7 +41,7 @@ export function thresholdKind(input: {
   gateMode?: "full" | "length" | "share";
   progress?: PrefaceProgress | null;
 }): ThresholdKind {
-  if (input.skipGate) return "none";
+  if (input.skipGate || openSitInProgress(input.progress)) return "none";
   if (input.gateMode === "share") return "share";
   if (shouldShowPreface(input.progress)) return "preface";
   return "sit-gate";

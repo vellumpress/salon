@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { SHELF } from "./catalog/shelf.ts";
 import {
+  openSitInProgress,
   shouldShowPreface,
   thresholdKind,
   thresholdPreface,
@@ -38,6 +39,20 @@ test("resume skips preface", () => {
   assert.equal(shouldShowPreface(prior), false);
   assert.equal(thresholdPreface(work("of-human-bondage"), prior), "");
   assert.equal(thresholdKind({ progress: prior, gateMode: "full" }), "sit-gate");
+});
+
+test("an open sit skips the gate and keeps the breath", () => {
+  const mid = {
+    entered: true,
+    breathIndex: 10,
+    lastOpenedAt: 1_700_000_000_000,
+    sittingStartedAt: 1_700_000_100_000,
+  };
+  assert.equal(openSitInProgress(mid), true);
+  assert.equal(openSitInProgress({ entered: true, breathIndex: 10, sittingStartedAt: null }), false);
+  assert.equal(openSitInProgress({ entered: true, breathIndex: 10 }), false);
+  assert.equal(thresholdKind({ progress: mid, gateMode: "full" }), "none");
+  assert.equal(thresholdKind({ progress: { entered: true, breathIndex: 10, lastOpenedAt: 1 }, gateMode: "full" }), "sit-gate");
 });
 
 test("deep link and pair+sit skip the whole gate", () => {

@@ -226,8 +226,10 @@ export const FONT_FILES = [
  * Repeat launches paint the cached shell. The network is given a short race
  * (`SHELL_RACE_MS`). If that response's asset list differs from the cached
  * shell — the build manifest — the new document is painted immediately.
- * A slower response still commits, and open clients are sent through `__fresh`
- * once so a stale shell cannot keep lazy-importing deleted chunks. The new
+ * A slower response still commits. Open clients are sent through `__fresh`
+ * only when a cached shell's asset list differs from the new one. A first
+ * install has no cached shell, so a reader already on a sentence is not
+ * reloaded once precaching finishes. The new
  * service worker takes over with skipWaiting and clients.claim. Hashes the
  * cached shell still references, including lazy chunks recorded while it was
  * current, stay in the asset cache until that shell is replaced.
@@ -370,7 +372,10 @@ function sameAssetSet(a, b) {
   return true;
 }
 function shellAssetsDiffer(prevHtml, nextHtml) {
-  if (!prevHtml || !nextHtml) return true;
+  // Missing HTML is not a new build. The first install has no cached shell,
+  // and the open page is already this build. Reloading it drops a mid-sit
+  // reader onto the sit gate once precache finishes.
+  if (!prevHtml || !nextHtml) return false;
   return !sameAssetSet(extractAssetUrls(prevHtml), extractAssetUrls(nextHtml));
 }
 function criticalUrls(urls) {
@@ -704,6 +709,10 @@ function handleNavigate(event) {
   } else {
     decided = readCachedShellHtml().then(function (prevHtml) {
       return withTimeout(incoming, SHELL_RACE_MS).then(function (html) {
+        if (html && !prevHtml) {
+          event.waitUntil(enqueueCommit(html));
+          return shellResponse(html);
+        }
         if (html && shellAssetsDiffer(prevHtml, html)) {
           event.waitUntil(enqueueCommit(html));
           return shellResponse(html);
