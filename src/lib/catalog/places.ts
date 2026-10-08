@@ -204,6 +204,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-mist": { label: "the glade", region: "dk" },
   "strait-is-the-gate": { label: "Fongueusemare", region: "fr" },
   "fraulein-schmidt-and-mr-anstruther": { label: "Jena", region: "de" },
+  "the-goose-man": { label: "Nuremberg", region: "de" },
   "a-japanese-blossom": { label: "Japan", region: "jp" },
   "the-spoilt-child": { label: "Vaidyabati", region: "in" },
   "winnie-the-pooh": { label: "the forest", region: "gb" },
