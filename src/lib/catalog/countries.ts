@@ -413,6 +413,7 @@ const AUTHORS_BY_COUNTRY: Record<string, readonly string[]> = {
     "Armando Palacio Valdés (trans. Minna Caroline Smith)",
     "Armando Palacio Valdés (trans. Nathan Haskell Dole)",
     "Benito Pérez Galdós",
+    "Benito Pérez Galdós (tr. Mary J. Serrano)",
     "Emilia Pardo Bazán",
     "Emilia Pardo Bazán (tr. Mary J. Serrano)",
     "Federico García Lorca",

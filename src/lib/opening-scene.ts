@@ -60,3 +60,25 @@ export function openingBreathIndex(work: Work) {
   }
   return 0;
 }
+
+/**
+ * Books whose printed "Introduction" chapters are the story itself, not
+ * editorial front matter. chapterStartIndex skips scenes titled
+ * "Introduction"; for these books a fresh Sit opens on the first of them.
+ * Keep this list narrow: one id per book, with the reason beside it.
+ */
+export const STORY_INTRODUCTION_IDS: ReadonlySet<string> = new Set([
+  // Lagerlöf's Introduction (I. The Priest, II. The Beggar) is the opening of the saga.
+  "the-story-of-gosta-berling",
+]);
+
+/** First breath of the first "Introduction" scene for a listed book; null otherwise. */
+export function storyIntroductionStartIndex(work: Work): number | null {
+  if (!STORY_INTRODUCTION_IDS.has(work.id)) return null;
+  for (const scene of work.scenes) {
+    if (!/^introduction\b/i.test(scene.title.trim())) continue;
+    const start = work.breaths.findIndex((breath) => breath.sceneId === scene.id);
+    if (start >= 0) return start;
+  }
+  return null;
+}

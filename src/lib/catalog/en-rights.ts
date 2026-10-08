@@ -73,7 +73,7 @@ export const EN_OFF_READABLE_IDS = new Set<string>([
   "libro-de-poemas",
   "misericordia",
   "martin-fierro",
-  "dona-perfecta",
+  // dona-perfecta left this set in DONA-PERFECTA: PG 2462 is Mary J. Serrano's English.
 ]);
 
 export function isEnReadableOff(id: string) {
