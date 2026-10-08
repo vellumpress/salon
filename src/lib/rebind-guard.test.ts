@@ -6,7 +6,7 @@ import {
   parseBreathRemap,
   resolveKeptOpen,
 } from "./kept-lines.ts";
-import { placeStamp, reanchorProgress, scaleBreathIndex } from "./rebind-guard.ts";
+import { placeStamp, reanchorProgress, scaleBreathIndex, shouldLoadBindRemap } from "./rebind-guard.ts";
 
 /**
  * Nine sentences, three chapters. The reader is on the middle sentence of
@@ -92,6 +92,12 @@ test("when the id and the count are both gone, the reader returns to that chapte
   );
   assert.equal(next.index, nextBreaths.findIndex((breath) => breath.sceneId === "s1"));
   assert.equal(nextBreaths[next.index]?.id, "s1-0");
+});
+
+test("an in-range save with no stamp does not open the remap", () => {
+  const breaths = sentenceBind();
+  assert.equal(shouldLoadBindRemap({ breathIndex: savedAt }, breaths), false);
+  assert.equal(shouldLoadBindRemap({ breathIndex: breaths.length + 4 }, breaths), true);
 });
 
 test("an index saved against the current bind is left where it is", () => {

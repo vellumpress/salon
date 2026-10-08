@@ -142,7 +142,11 @@ export function reanchorProgress(
   return finish(breaths, scene, scene !== raw);
 }
 
-/** Load the remap before re-anchoring when this save may belong to another bind. */
+/**
+ * Load the remap only when this save cannot belong to the open bind.
+ * An in-range index with no stamp is the current book: hashing and saving
+ * it must not parse the remap on the tap that follows.
+ */
 export function shouldLoadBindRemap(
   stored: StoredPlace | undefined,
   breaths: readonly { id: string }[],
@@ -150,9 +154,12 @@ export function shouldLoadBindRemap(
   if (!stored) return false;
   const count = breaths.length;
   const raw = Number.isFinite(stored.breathIndex) ? Math.floor(stored.breathIndex ?? 0) : 0;
-  if (!stored.bindHash) return raw > 0 || Boolean(stored.breathId);
+  if (count > 0 && (raw < 0 || raw >= count)) return true;
   if (stored.breathCount != null && stored.breathCount !== count) return true;
-  if (stored.bindHash !== bindHash(breaths)) return true;
-  if (raw < 0 || raw >= count) return true;
+  if (stored.bindHash && stored.bindHash !== bindHash(breaths)) return true;
+  if (stored.breathId) {
+    const at = count > 0 ? Math.max(0, Math.min(count - 1, raw)) : 0;
+    if (breaths[at]?.id !== stored.breathId) return true;
+  }
   return false;
 }

@@ -11,7 +11,7 @@ import {
   type Work,
 } from "@/lib/works";
 import { breathRemapLoaded, loadBreathRemap, readBreathRemap } from "@/lib/breath-remap";
-import { placeStamp, reanchorProgress, shouldLoadBindRemap } from "@/lib/rebind-guard";
+import { bindHash, reanchorProgress, shouldLoadBindRemap } from "@/lib/rebind-guard";
 import { anchorKeptLine, keptBreathId, keptIncludes, type KeptStored } from "@/lib/kept-lines";
 import { chapterPlace, spineChapters } from "@/lib/spine-nav";
 import { useTbr } from "@/lib/store";
@@ -243,9 +243,18 @@ export function TbrReader({
     return shelf?.breaths != null && shelf.breaths === book.breaths.length;
   }
 
+  const editionHash = useMemo(
+    () => (fullBind(work) ? bindHash(work.breaths) : ""),
+    [work],
+  );
+
   function stampAt(book: Work, index: number) {
     if (!fullBind(book) || index < 0 || index >= book.breaths.length) return undefined;
-    return placeStamp(book.breaths, index);
+    return {
+      breathId: book.breaths[index]?.id ?? "",
+      breathCount: book.breaths.length,
+      bindHash: editionHash,
+    };
   }
 
   useLayoutEffect(() => {
