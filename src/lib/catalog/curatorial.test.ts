@@ -10,7 +10,7 @@ import {
   NEXT_FEATURED_TRACK_IDS,
 } from "./curatorial.ts";
 import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES, RITUAL_PITCHES, RITUAL_SIT_MINUTES, ritualPitchFor } from "./rituals.ts";
-import { SHELF, shelfWork } from "./shelf.ts";
+import { SHELF, searchShelf, shelfWork } from "./shelf.ts";
 import { canonicalWorkId, remapAliasedWorkIds } from "../work-id-alias.ts";
 import { blurbFor } from "./blurbs.ts";
 import { STORED_PREFACES } from "./prefaces-stored.ts";
@@ -355,7 +355,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "essays-and-soliloquies",
     "tragic-sense-of-life",
     "white-buildings",
-    "three-plays",
     "the-sweet-miracle",
     "red-oleanders",
     "stories-from-tagore",
@@ -1062,6 +1061,59 @@ test("immoralist alias keeps saved progress, Kept lines, and the read link", () 
   assert.equal(remapped.togetherKeeps?.[0]?.workId, "the-immoralist");
   assert.equal(remapped.hostedSits?.[0]?.workId, "the-immoralist");
   assert.equal(ritualPitchFor("immoralist"), RITUAL_PITCHES["the-immoralist"]);
+});
+
+test("three-plays redirects to the anthology and search lists one Three Plays", () => {
+  const work = SHELF.find((item) => item.id === "three-plays-incl-henry-iv");
+  assert.ok(work);
+  assert.equal(SHELF.filter((item) => item.id === "three-plays").length, 0);
+  assert.equal(
+    SHELF.filter((item) => /^Three Plays\b/.test(item.title)).map((item) => item.id).join(","),
+    "three-plays-incl-henry-iv",
+  );
+  assert.equal(canonicalWorkId("three-plays"), "three-plays-incl-henry-iv");
+  assert.equal(canonicalWorkId("three-plays-incl-henry-iv"), "three-plays-incl-henry-iv");
+  assert.equal(`/read/${canonicalWorkId("three-plays")}`, "/read/three-plays-incl-henry-iv");
+  assert.equal(shelfWork("three-plays")?.id, work.id);
+  assert.equal(shelfWork("three-plays"), work);
+  assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("three-plays"), false);
+  for (const lane of RITUAL_LANES) {
+    assert.equal(lane.workIds.includes("three-plays"), false, lane.id);
+  }
+  assert.equal(RITUAL_SIT_MINUTES["three-plays"], undefined);
+  assert.doesNotMatch(work.opening ?? "", /N\.B\./);
+  const found = searchShelf("Three Plays");
+  assert.deepEqual(
+    found.map((item) => item.id),
+    ["three-plays-incl-henry-iv"],
+  );
+  const remapped = remapAliasedWorkIds({
+    progress: {
+      "three-plays": { lastOpenedAt: 20, kept: ["curtain", "manager"] },
+      "three-plays-incl-henry-iv": { lastOpenedAt: 5, kept: ["manager", "henry"] },
+    },
+    favorites: ["three-plays", "three-plays-incl-henry-iv", "six-characters"],
+    lastShuffle: "three-plays",
+    readingNow: { id: "three-plays" },
+    worksTouchedByDay: { "2026-10-08": ["three-plays", "three-plays-incl-henry-iv"] },
+    sitHistory: [{ workId: "three-plays" }],
+    togetherKeeps: [{ workId: "three-plays" }],
+    hostedSits: [{ workId: "three-plays" }],
+  });
+  assert.deepEqual(Object.keys(remapped.progress ?? {}), ["three-plays-incl-henry-iv"]);
+  assert.equal(remapped.progress?.["three-plays-incl-henry-iv"]?.lastOpenedAt, 20);
+  assert.deepEqual(remapped.progress?.["three-plays-incl-henry-iv"]?.kept, [
+    "curtain",
+    "manager",
+    "henry",
+  ]);
+  assert.deepEqual(remapped.favorites, ["three-plays-incl-henry-iv", "six-characters"]);
+  assert.equal(remapped.lastShuffle, "three-plays-incl-henry-iv");
+  assert.equal(remapped.readingNow?.id, "three-plays-incl-henry-iv");
+  assert.deepEqual(remapped.worksTouchedByDay?.["2026-10-08"], ["three-plays-incl-henry-iv"]);
+  assert.equal(remapped.sitHistory?.[0]?.workId, "three-plays-incl-henry-iv");
+  assert.equal(remapped.togetherKeeps?.[0]?.workId, "three-plays-incl-henry-iv");
+  assert.equal(remapped.hostedSits?.[0]?.workId, "three-plays-incl-henry-iv");
 });
 
 test("Letters of a Javanese Princess is a local waking bind on Next, not locked recommend", () => {
@@ -2892,12 +2944,6 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
       scenes: 23,
       gutenberg: 77837,
     },
-    "three-plays": {
-      opening: "*N.B. The Comedy is without acts or scenes. The performance is interrupted once, without the curtain being lowered, when the manager and the chief characters wi",
-      breaths: 2733,
-      scenes: 9,
-      gutenberg: 42148,
-    },
     "the-sweet-miracle": {
       opening: "luminous margins of the Lake of Tiberias; but the news of his miracles had already penetrated as far as Enganim, a rich city of strong battlements set among vin",
       breaths: 15,
@@ -2952,7 +2998,7 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
   const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
   assert.ok(sleep);
   assert.ok(forYou);
-  assert.equal(Object.keys(expect).length, 13);
+  assert.equal(Object.keys(expect).length, 12);
   assert.deepEqual(forYou.workIds.slice(0, 3), [
     "the-house-of-mirth",
     "quicksand",

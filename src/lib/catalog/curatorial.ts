@@ -706,7 +706,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "essays-and-soliloquies",
   "tragic-sense-of-life",
   "white-buildings",
-  "three-plays",
   // our-lady-of-the-pillar leaves this inventory seat for Rituals (POST-#184, Host-only).
   "the-sweet-miracle",
   "red-oleanders",

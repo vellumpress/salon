@@ -5,6 +5,8 @@ import { SHELF } from "./shelf.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import {
   FIRST_SCENE_TITLE,
+  CARD_AFTER_PRINTED_NOTE_IDS,
+  PLAY_AND_STORY_REBIND_IDS,
   POETRY_REBIND_IDS,
   TIMED_SIT_TITLE,
   fixPoetryOcr,
@@ -335,7 +337,7 @@ test("The Pier-Glass binds all 25 poems of the 1921 Secker edition, one breath e
 });
 
 test("Mira poetry re-bind pack: one scene per printed poem, counts and card from the bind", () => {
-  assert.equal(POETRY_REBIND_IDS.length, 36);
+  assert.equal(POETRY_REBIND_IDS.length, 40);
   for (const id of POETRY_REBIND_IDS) {
     const full = load("texts", id);
     assert.ok(full, id);
@@ -481,4 +483,105 @@ test("Mira poetry re-bind pack 2: verse drama speaks as “Speaker: line”, Lam
     const { lines: n, words } = breathSize(breath.text);
     assert.ok(n <= REBIND_BREATH_MAX_LINES && words <= REBIND_BREATH_MAX_WORDS, `lamia#${breath.id}`);
   }
+});
+
+test("Mira re-bind pack 3: sayings and prose poems bind by printed number or title", () => {
+  const birds = load("texts", "stray-birds")!;
+  assert.equal(birds.scenes[0]?.title, "Dedication");
+  assert.equal(birds.scenes.length, 34);
+  assert.deepEqual(
+    [birds.scenes[1]?.title, birds.scenes[2]?.title, birds.scenes.at(-1)?.title],
+    ["1–10", "11–20", "321–326"],
+  );
+  const sayings = birds.breaths.filter((breath) => breath.sceneId !== birds.scenes[0]!.id);
+  assert.equal(sayings.length, 326);
+  sayings.forEach((breath, i) => assert.ok(breath.text.startsWith(`${i + 1} `), `stray-birds#${breath.id}`));
+  const gardener = load("texts", "the-gardener")!;
+  const poems = gardener.scenes.filter((scene) => !scene.front);
+  assert.deepEqual(
+    poems.map((scene) => scene.title),
+    Array.from({ length: 85 }, (_, i) => String(i + 1)),
+  );
+  assert.ok(gardener.breaths.some((breath) => breath.text === "Servant: Have mercy upon your servant, my queen!"));
+  const forerunner = load("texts", "the-forerunner-his-parables-and-poems")!;
+  assert.equal(forerunner.scenes.length, 25);
+  assert.deepEqual(
+    forerunner.scenes.slice(0, 3).map((scene) => scene.title),
+    ["The Forerunner", "God’s Fool", "Love"],
+  );
+  assert.equal(forerunner.scenes.at(-1)?.title, "The Last Watch");
+  const yukon = load("texts", "the-spell-of-the-yukon-and-other-verses")!;
+  assert.equal(yukon.scenes.length, 35);
+  assert.equal(yukon.scenes[1]?.title, "The Land God Forgot");
+  assert.equal(yukon.scenes.at(-1)?.title, "L'Envoi");
+  const mcgrew = yukon.scenes.find((scene) => scene.title === "The Shooting of Dan McGrew")!;
+  const first = yukon.breaths.find((breath) => breath.sceneId === mcgrew.id)!.text;
+  assert.ok(
+    first.startsWith(
+      "A bunch of the boys were whooping it up in the Malamute saloon; / The kid that handles the music-box was hitting a jag-time tune;",
+    ),
+    first.slice(0, 160),
+  );
+});
+
+test("Mira re-bind pack 3: plays bind every act as “Character: dialogue”, stories by printed title", () => {
+  for (const id of PLAY_AND_STORY_REBIND_IDS) {
+    const full = load("texts", id)!;
+    const work = SHELF.find((item) => item.id === id)!;
+    const words = full.breaths
+      .flatMap((breath) => breath.text.split(/\s+/))
+      .filter((word) => word && word !== "/").length;
+    assert.equal(work.breaths, full.breaths.length, `${id} shelf breaths`);
+    assert.equal(work.minutes, Math.round(words / 200), `${id} shelf minutes = words/200`);
+    assert.equal(full.minutes, work.minutes, `${id} text minutes`);
+    const start = openingBreathIndex(full);
+    const cardAt = (CARD_AFTER_PRINTED_NOTE_IDS as readonly string[]).includes(id) ? start + 1 : start;
+    assert.ok((full.breaths[cardAt]?.text ?? "").startsWith(work.opening ?? "\u0000"), `${id} card is the first real lines`);
+    assert.doesNotMatch(work.opening ?? "", /N\.B\./, `${id} card is not the printed N.B.`);
+    for (const scene of full.scenes) {
+      assert.doesNotMatch(scene.title, /,\s*$|\d{3}$/, `${id}#${scene.id} title`);
+    }
+  }
+  const six = load("texts", "six-characters")!;
+  assert.deepEqual(six.scenes.map((scene) => scene.title), ["Characters", "Act I", "Act II", "Act III"]);
+  assert.equal(six.scenes[0]?.front, true);
+  const act1 = six.breaths.filter((breath) => breath.sceneId === six.scenes[1]!.id).map((b) => b.text);
+  assert.match(act1[0] ?? "", /^\*N\.B\. The Comedy is without acts or scenes\./);
+  for (const id of CARD_AFTER_PRINTED_NOTE_IDS) {
+    assert.equal(
+      SHELF.find((item) => item.id === id)!.opening,
+      "*The spectators will find the curtain raised and the stage as it usually is during the day time.",
+      `${id} card opens on the stage direction after the N.B.`,
+    );
+  }
+  assert.ok(act1.includes("The Manager: (*throwing a letter down on the table*) I can't see (*to Property Man*). Let's have a little light, please!"));
+  assert.ok(act1.includes("The Father: No, for Heaven's sake, what are you saying? We bring you a drama, sir."));
+  const three = load("texts", "three-plays-incl-henry-iv")!;
+  assert.deepEqual(
+    three.scenes.filter((scene) => / · Act /.test(scene.title)).map((scene) => scene.title),
+    ["Six Characters in Search of an Author", "Henry IV", "Right You Are! (If You Think So)"].flatMap((play) =>
+      ["I", "II", "III"].map((act) => `${play} · Act ${act}`),
+    ),
+  );
+  assert.deepEqual(
+    six.breaths.filter((b) => b.sceneId !== "s0").map((b) => b.text),
+    three.breaths.filter((b) => ["s2", "s3", "s4"].includes(b.sceneId)).map((b) => b.text),
+  );
+  const henry = three.breaths.filter((b) => b.sceneId === three.scenes.find((s) => s.title === "Henry IV · Act I")!.id);
+  assert.ok(henry.some((b) => b.text === "Landolph: (*to Berthold as if explaining*) And this is the throne room."));
+  const visible = load("texts", "visible-and-invisible")!;
+  assert.deepEqual(visible.scenes.map((scene) => scene.title), [
+    "“And the Dead Spake----”",
+    "The Outcast",
+    "The Horror-Horn",
+    "Machaon",
+    "Negotium Perambulans....",
+    "At the Farmhouse",
+    "Inscrutable Decrees",
+    "The Gardener",
+    "Mr. Tilly’s Séance",
+    "Mrs. Amworth",
+    "In the Tube",
+    "Roderick’s Story",
+  ]);
 });

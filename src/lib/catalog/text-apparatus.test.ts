@@ -410,8 +410,6 @@ export const SCENE_TITLE_ALLOWLIST: Readonly<Record<string, string>> = {
     "Anatole France's printed chapter heading ends “…Is Illustrated by the Terrible Example of”; story text, not an illustration credit",
   "tono-bungay#s56":
     "the CONTENTS. heading belongs to the magazine page Wells sets inside the novel (Book III), not to the book's own contents",
-  "visible-and-invisible#s0":
-    "all six scenes carry the last line of a lost contents page (“RODERICK’S STORY 269”, then “… · 2” to “… · 6”); the story titles and boundaries need a rebind from the source, flagged in the front-matter pack",
 };
 
 /**
@@ -421,19 +419,17 @@ export const SCENE_TITLE_ALLOWLIST: Readonly<Record<string, string>> = {
  * baseline is lowered when a book is rebound. Frozen at 13,298 titles in 65
  * books; the poetry re-bind pack cleared 20 books (1,123 titles), leaving
  * 12,175 in 45; the second pack (16 verse re-binds plus printed-title and
- * stray-line fixes in 19 prose books) leaves 740 in 10.
+ * stray-line fixes in 19 prose books) leaves 740 in 10; the third pack
+ * (Stray Birds, The Gardener, The Forerunner and The Spell of the Yukon
+ * re-bound) leaves 642 in 6.
  */
 export const VERSE_LINE_TITLE_BASELINE: Readonly<Record<string, number>> = {
   "in-the-seven-woods": 69,
   "pictures-of-the-floating-world": 2,
-  "stray-birds": 1,
-  "the-forerunner-his-parables-and-poems": 7,
-  "the-gardener": 1,
   "the-green-helmet-and-other-poems": 39,
   "the-literature-of-arabia": 145,
   "the-persian-mystics-jalalu-d-din-rumi": 60,
   "the-poetic-edda": 327,
-  "the-spell-of-the-yukon-and-other-verses": 89,
 };
 
 /** Lines that belong to a title page or imprint, not to the book. */

@@ -83,7 +83,36 @@ export const POETRY_REBIND_IDS = [
   "the-poems-of-giacomo-leopardi",
   "the-garden-of-bright-waters",
   "domesday-book",
+  // Pack 3: format calls on sayings and prose poems (Stray Birds in scenes of
+  // ten by printed number; The Gardener one scene per numbered poem; The
+  // Forerunner one scene per printed parable) and The Spell of the Yukon with
+  // the transcriber's metre breaks rejoined.
+  "stray-birds",
+  "the-gardener",
+  "the-forerunner-his-parables-and-poems",
+  "the-spell-of-the-yukon-and-other-verses",
 ] as const;
+
+/**
+ * Mira re-bind pack 3, plays and stories bound in full from source: plays as
+ * "Character: dialogue", one speech per breath, stage directions in italics as
+ * their own breaths, one scene per printed act (an anthology titles each act
+ * "Play · Act I"); stories one scene per printed story title.
+ */
+export const PLAY_AND_STORY_REBIND_IDS = [
+  "six-characters",
+  "three-plays-incl-henry-iv",
+  "visible-and-invisible",
+] as const;
+
+/**
+ * Six Characters' Act I opens on the printed "N.B. The Comedy is without acts
+ * or scenes…" note. The note stays in the book as Act I's first breath, but
+ * the shelf card is the first real lines of the play after it (the opening
+ * stage direction, cut at its first sentence), so a reader never sees the
+ * note on the card with "Act I" below it.
+ */
+export const CARD_AFTER_PRINTED_NOTE_IDS = ["six-characters", "three-plays-incl-henry-iv"] as const;
 
 /** Waley 1918 headings from Winter Night through Last Poem (PG 42290). */
 const WALEY_TITLES = [
