@@ -4,12 +4,11 @@ import {
   GLASS,
   GLASS_LOWER_CLIP,
   GLASS_UPPER_CLIP,
-  SCORE_TRACK,
   SETTLE_MS,
   easeSettle,
   hourglassCopy,
   sandBands,
-  sandLayers,
+  sandGrains,
 } from "@/lib/score-hourglass";
 
 function prefersReducedMotion(): boolean {
@@ -18,8 +17,7 @@ function prefersReducedMotion(): boolean {
 }
 
 /**
- * Today's score as an hourglass. Same box as the old ring (`h-52 w-52`) so
- * the contributor rows stay where they were. The number, or a state word,
+ * Today's score as a small classical hourglass. The number, or a state word,
  * sits under the glass in Cormorant and does not cross the sand.
  */
 export function ScoreHourglass({
@@ -69,12 +67,11 @@ export function ScoreHourglass({
     return () => cancelAnimationFrame(frame);
   }, [target]);
 
-  const layers =
-    shown == null ? { upper: [], lower: [] } : sandLayers(shown, bands);
+  const grains = shown == null ? [] : sandGrains(shown);
 
   return (
     <figure
-      className="score-glass mx-auto mt-4 flex h-52 w-52 flex-col items-center justify-center"
+      className="score-glass mx-auto mt-3 flex w-full max-w-xs flex-col items-center"
       data-score-glass={copy.state}
       data-sand={copy.sand == null ? "empty" : String(copy.sand)}
     >
@@ -92,13 +89,21 @@ export function ScoreHourglass({
             <polygon points={GLASS_LOWER_CLIP} />
           </clipPath>
         </defs>
-        <polygon points={GLASS_UPPER_CLIP} fill={SCORE_TRACK} />
-        <polygon points={GLASS_LOWER_CLIP} fill={SCORE_TRACK} />
-        {layers.upper.map((layer) => (
-          <polygon key={layer.id} points={layer.points} fill={layer.color} clipPath={`url(#${upperClip})`} />
-        ))}
-        {layers.lower.map((layer) => (
-          <polygon key={layer.id} points={layer.points} fill={layer.color} clipPath={`url(#${lowerClip})`} />
+        {grains.map((grain) => (
+          <circle
+            key={grain.id}
+            cx={grain.cx}
+            cy={grain.cy}
+            r={grain.r}
+            fill="currentColor"
+            clipPath={
+              grain.id.startsWith("neck-")
+                ? undefined
+                : grain.cy <= GLASS.upper.apexY
+                  ? `url(#${upperClip})`
+                  : `url(#${lowerClip})`
+            }
+          />
         ))}
         <polygon
           points={GLASS.outline}

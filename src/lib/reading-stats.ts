@@ -385,11 +385,12 @@ export function timeOfDayPattern(
 }
 
 export function hostedSitsAttended(sits: HostedSit[], handle: string): number {
+  const rows = Array.isArray(sits) ? sits.filter((sit) => sit && typeof sit === "object") : [];
   const me = normalizeHandle(handle);
-  if (!me) return sits.length;
-  return sits.filter((sit) => {
+  if (!me) return rows.length;
+  return rows.filter((sit) => {
     if (sit.hostHandle === me) return true;
-    return sit.rsvps.some((row) => row.handle === me && row.status === "yes");
+    return Array.isArray(sit.rsvps) && sit.rsvps.some((row) => row.handle === me && row.status === "yes");
   }).length;
 }
 
@@ -545,6 +546,7 @@ function workSnapshots(
     if (sit.workId && !isDeviceImport(sit.workId)) ids.add(sit.workId);
   }
   for (const list of Object.values(touched)) {
+    if (!Array.isArray(list)) continue;
     for (const id of list) if (id && !isDeviceImport(id)) ids.add(id);
   }
   return [...ids].map((id) => {
@@ -628,7 +630,126 @@ function deskWorks(progress: Record<string, WorkProgress>): DeskWork[] {
     .slice(0, 4);
 }
 
-export function deriveReadingStats(input: {
+function asRecord(value: unknown): Record<string, unknown> {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return {};
+  return value as Record<string, unknown>;
+}
+
+function finiteOr(value: unknown, fallback = 0): number {
+  const n = typeof value === "number" ? value : typeof value === "string" && value.trim() ? Number(value) : NaN;
+  return Number.isFinite(n) ? n : fallback;
+}
+
+function numberLedger(value: unknown): Record<string, number> {
+  const out: Record<string, number> = {};
+  for (const [key, raw] of Object.entries(asRecord(value))) {
+    const n = typeof raw === "number" ? raw : typeof raw === "string" ? Number(raw) : NaN;
+    if (Number.isFinite(n)) out[key] = n;
+  }
+  return out;
+}
+
+function idLedger(value: unknown): Record<string, string[]> {
+  const out: Record<string, string[]> = {};
+  for (const [key, raw] of Object.entries(asRecord(value))) {
+    if (!Array.isArray(raw)) continue;
+    const ids = raw.filter((id): id is string => typeof id === "string" && id.length > 0);
+    if (ids.length > 0) out[key] = ids;
+  }
+  return out;
+}
+
+function stringList(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+  return value.filter((id): id is string => typeof id === "string" && id.length > 0);
+}
+
+function progressMap(value: unknown): Record<string, WorkProgress> {
+  const out: Record<string, WorkProgress> = {};
+  for (const [id, raw] of Object.entries(asRecord(value))) {
+    if (!raw || typeof raw !== "object" || Array.isArray(raw)) continue;
+    const row = raw as WorkProgress;
+    const completed = row.completedAt == null ? null : finiteOr(row.completedAt, 0) || null;
+    out[id] = {
+      ...row,
+      breathIndex: finiteOr(row.breathIndex, 0),
+      lastOpenedAt: finiteOr(row.lastOpenedAt, 0),
+      kept: Array.isArray(row.kept) ? row.kept : [],
+      entered: Boolean(row.entered),
+      completedAt: completed,
+    };
+  }
+  return out;
+}
+
+function cleanSits(value: unknown): SitSession[] {
+  if (!Array.isArray(value)) return [];
+  const out: SitSession[] = [];
+  for (const raw of value) {
+    if (!raw || typeof raw !== "object") continue;
+    const row = raw as SitSession;
+    out.push({
+      ...row,
+      workId: typeof row.workId === "string" ? row.workId : "",
+      minutes: finiteOr(row.minutes, 0),
+      endedAt: finiteOr(row.endedAt, 0),
+    });
+  }
+  return out;
+}
+
+function cleanKeeps(value: unknown): TogetherKeep[] {
+  if (!Array.isArray(value)) return [];
+  return value.filter((row): row is TogetherKeep => Boolean(row) && typeof row === "object");
+}
+
+function cleanHosted(value: unknown): HostedSit[] {
+  if (!Array.isArray(value)) return [];
+  const out: HostedSit[] = [];
+  for (const raw of value) {
+    if (!raw || typeof raw !== "object") continue;
+    const row = raw as HostedSit;
+    out.push({
+      ...row,
+      workId: typeof row.workId === "string" ? row.workId : "",
+      createdAt: finiteOr(row.createdAt, 0),
+      rsvps: Array.isArray(row.rsvps) ? row.rsvps : [],
+    });
+  }
+  return out;
+}
+
+/** Drop null rows, non-arrays, and NaN ledgers so a legacy phone still gets a score. */
+function sanitizeReadingInput<T extends Parameters<typeof deriveReadingStatsFrom>[0]>(input: T): T {
+  const paused = input.pausedAt;
+  return {
+    ...input,
+    progress: progressMap(input.progress),
+    favorites: stringList(input.favorites),
+    readingMinutesByDay: numberLedger(input.readingMinutesByDay),
+    advancesByDay: numberLedger(input.advancesByDay),
+    sceneCrossesByDay: numberLedger(input.sceneCrossesByDay),
+    keepsByDay: numberLedger(input.keepsByDay),
+    worksTouchedByDay: idLedger(input.worksTouchedByDay),
+    hostOpensByDay: numberLedger(input.hostOpensByDay),
+    sitsByDay: numberLedger(input.sitsByDay),
+    clubTouchesByDay: numberLedger(input.clubTouchesByDay),
+    lastActiveReadAt: finiteOr(input.lastActiveReadAt, 0),
+    sitHistory: cleanSits(input.sitHistory),
+    togetherKeeps: cleanKeeps(input.togetherKeeps),
+    hostedSits: cleanHosted(input.hostedSits),
+    handle: typeof input.handle === "string" ? input.handle : "",
+    sittingMinutes:
+      input.sittingMinutes == null ? input.sittingMinutes : finiteOr(input.sittingMinutes, 20),
+    now: input.now == null ? input.now : finiteOr(input.now, Date.now()),
+    joined: stringList(input.joined),
+    pausedAt: typeof paused === "number" && Number.isFinite(paused) ? paused : paused == null ? null : null,
+    ignoredDays: stringList(input.ignoredDays),
+    dismissedInsights: stringList(input.dismissedInsights),
+  };
+}
+
+function deriveReadingStatsFrom(input: {
   progress: Record<string, WorkProgress>;
   favorites: string[];
   readingMinutesByDay?: Record<string, number>;
@@ -945,6 +1066,15 @@ export function deriveReadingStats(input: {
     }),
     desk,
   };
+}
+
+export function deriveReadingStats(input: Parameters<typeof deriveReadingStatsFrom>[0]): ReadingStats {
+  const now = input && typeof input.now === "number" && Number.isFinite(input.now) ? input.now : undefined;
+  try {
+    return deriveReadingStatsFrom(sanitizeReadingInput(input));
+  } catch {
+    return deriveReadingStatsFrom(sanitizeReadingInput({ progress: {}, favorites: [], now }));
+  }
 }
 
 export function formatMinutes(n: number) {

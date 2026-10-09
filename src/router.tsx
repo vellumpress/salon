@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, createRouter } from "@tanstack/react-router";
+import { PagesShell } from "@/components/pages-shell";
 import { Wordmark } from "@/components/wordmark";
 import { installChunkReloadGuard } from "@/lib/chunk-reload";
 import { AppErrorComponent } from "@/lib/error-component";
@@ -10,24 +11,12 @@ import { routeTree } from "./routeTree.gen";
 // after hydration, which the boot watch no longer treats as a stuck boot.
 installChunkReloadGuard();
 
-/**
- * The Pages shell prerenders this mark. The first client paint of a missing
- * route must match it, or React hydration error #418 fires (text mismatch).
- */
-function ShelfMark() {
-  return (
-    <div className="flex min-h-svh items-end bg-paper p-8 text-ink">
-      <Wordmark />
-    </div>
-  );
-}
-
 function NotFoundPage() {
   const [shown, setShown] = useState(false);
   useEffect(() => {
     setShown(true);
   }, []);
-  if (!shown) return <ShelfMark />;
+  if (!shown) return <PagesShell />;
   return (
     <div className="flex min-h-svh flex-col justify-end bg-paper p-8 text-ink">
       <Wordmark />
@@ -48,7 +37,7 @@ export function getRouter() {
     basepath: APP_BASE_PATH,
     defaultErrorComponent: AppErrorComponent,
     defaultNotFoundComponent: NotFoundPage,
-    defaultPendingComponent: ShelfMark,
+    defaultPendingComponent: PagesShell,
     defaultPreload: "intent",
     defaultPendingMs: 0,
     defaultPendingMinMs: 0,

@@ -231,7 +231,8 @@ function lastCalendarDays(endTs: number, count: number): string[] {
 }
 
 function minutesOf(ledgers: DayLedgers, key: string): number {
-  return Math.max(0, ledgers.readingMinutesByDay?.[key] ?? 0);
+  const raw = ledgers.readingMinutesByDay?.[key] ?? 0;
+  return Number.isFinite(raw) ? Math.max(0, raw) : 0;
 }
 
 function advancesOf(ledgers: DayLedgers, key: string): number {
@@ -456,6 +457,10 @@ function returnFor(sits: SitPoint[], focusTs: number): { raw: number | null; sta
   };
 }
 
+function listOrEmpty(value: unknown): string[] {
+  return Array.isArray(value) ? value.filter((id): id is string => typeof id === "string" && id.length > 0) : [];
+}
+
 function eraOf(year: number): string {
   if (year < 1500) return "to-1500";
   if (year < 1800) return "1500-1799";
@@ -481,7 +486,7 @@ function rangeFor(
   const cursor = noon(focusTs);
   for (let i = 0; i < 28; i++) {
     const key = dayKey(cursor.getTime());
-    for (const id of ledgers.worksTouchedByDay?.[key] ?? []) {
+    for (const id of listOrEmpty(ledgers.worksTouchedByDay?.[key])) {
       if (id) touched.add(id);
     }
     cursor.setDate(cursor.getDate() - 1);
@@ -1134,7 +1139,7 @@ function yearView(
   }
   const touched = new Set<string>();
   for (const [key, ids] of Object.entries(ledgers.worksTouchedByDay ?? {})) {
-    if (!key.startsWith(prefix)) continue;
+    if (!key.startsWith(prefix) || !Array.isArray(ids)) continue;
     for (const id of ids) if (id) touched.add(id);
   }
   const byId = new Map(works.map((work) => [work.id, work]));
@@ -1362,7 +1367,7 @@ function keptWaiting(
   if (count <= 0) return null;
   const titles = new Set<string>();
   for (const key of days) {
-    for (const id of ledgers.worksTouchedByDay?.[key] ?? []) {
+    for (const id of listOrEmpty(ledgers.worksTouchedByDay?.[key])) {
       const title = works.find((work) => work.id === id)?.title;
       if (title) titles.add(title);
     }
@@ -1389,9 +1394,9 @@ export function dayScoreInput(ledgers: DayLedgers, key: string): {
   clubTouches: number;
   worksTouched: number;
 } {
-  const works = ledgers.worksTouchedByDay?.[key] ?? [];
+  const works = listOrEmpty(ledgers.worksTouchedByDay?.[key]);
   return {
-    minutes: ledgers.readingMinutesByDay?.[key] ?? 0,
+    minutes: minutesOf(ledgers, key),
     advances: ledgers.advancesByDay?.[key] ?? 0,
     sceneCrosses: ledgers.sceneCrossesByDay?.[key] ?? 0,
     keeps: ledgers.keepsByDay?.[key] ?? 0,

@@ -7,14 +7,13 @@ import {
   GLASS_LOWER_CLIP,
   GLASS_UPPER_CLIP,
   SCORE_SAND_COLOR,
-  SCORE_TRACK,
   SETTLE_MS,
   easeSettle,
   hourglassCopy,
   polygonArea,
   sandBands,
+  sandGrains,
   sandHeight,
-  sandLayers,
 } from "./score-hourglass.ts";
 
 function part(
@@ -34,56 +33,62 @@ const scoredParts: ContributorResult[] = [
   part("connection", "scored", 75),
 ];
 
-test("the score glass is the reader bowtie, opened to the ring's square", () => {
+test("the score glass is the reader bowtie, with a bar at each end", () => {
   const reader = readFileSync(new URL("../components/hourglass.tsx", import.meta.url), "utf8");
   assert.match(reader, /16,12 104,12 60,110 104,208 16,208 60,110/);
+  assert.equal(GLASS.outline, "16,12 104,12 60,110 104,208 16,208 60,110");
   const pts = GLASS.outline.split(" ");
   assert.equal(pts.length, 6);
   assert.equal(pts[2], pts[5]);
   assert.equal(GLASS.upper.apexY - GLASS.upper.top, GLASS.lower.bottom - GLASS.lower.apexY);
-  assert.match(GLASS_UPPER_CLIP, /26,22 174,22 100,98/);
-  assert.match(GLASS_LOWER_CLIP, /100,112/);
+  assert.match(GLASS_UPPER_CLIP, /22,22 98,22 60,108/);
+  assert.match(GLASS_LOWER_CLIP, /60,112/);
+  assert.equal(GLASS.viewW, 120);
+  assert.equal(GLASS.viewH, 220);
 });
 
-test("sand level tracks the score: 0 on top, 100 on the bottom, 50 split by height", () => {
+test("stippled sand tracks the score: 0 on top, 100 on the bottom, 50 split", () => {
+  const turned = sandGrains(0);
+  assert.ok(turned.some((grain) => grain.id.startsWith("upper")));
+  assert.equal(turned.some((grain) => grain.id.startsWith("lower")), false);
+  const full = sandHeight(turned.filter((grain) => grain.id.startsWith("upper")));
+  assert.ok(full > 60, `expected a full upper bulb, got ${full}`);
+
+  const read = sandGrains(100);
+  assert.equal(read.some((grain) => grain.id.startsWith("upper")), false);
+  assert.ok(read.some((grain) => grain.id.startsWith("lower")));
+  assert.ok(Math.abs(sandHeight(read.filter((grain) => grain.id.startsWith("lower"))) - full) < 8);
+
+  const running = sandGrains(50);
+  const upper = sandHeight(running.filter((grain) => grain.id.startsWith("upper")));
+  const lower = sandHeight(running.filter((grain) => grain.id.startsWith("lower")));
+  assert.ok(Math.abs(upper - full / 2) < 12, `upper ${upper}`);
+  assert.ok(Math.abs(lower - full / 2) < 12, `lower ${lower}`);
+  assert.ok(running.some((grain) => grain.id.startsWith("neck")));
+
+  const nearly = sandGrains(80);
+  const nearlyUpper = sandHeight(nearly.filter((grain) => grain.id.startsWith("upper")));
+  const nearlyLower = sandHeight(nearly.filter((grain) => grain.id.startsWith("lower")));
+  assert.ok(nearlyLower > nearlyUpper * 2, `lower ${nearlyLower} upper ${nearlyUpper}`);
+  assert.equal(sandGrains(Number.NaN).length, 0);
+});
+
+test("grain is ink, and contributor colors stay on the rows", () => {
   const bands = sandBands(scoredParts);
   assert.equal(bands.some((band) => band.id === "rhythm"), false);
-  const full = sandHeight(sandLayers(0, bands).upper);
-  assert.ok(full > 70, `expected a full upper bulb, got ${full}`);
-
-  const empty = sandLayers(0, bands);
-  assert.equal(sandHeight(empty.lower), 0);
-  assert.ok(Math.abs(sandHeight(empty.upper) - full) < 1);
-
-  const done = sandLayers(100, bands);
-  assert.equal(sandHeight(done.upper), 0);
-  assert.ok(Math.abs(sandHeight(done.lower) - full) < 1.5);
-
-  const half = sandLayers(50, bands);
-  const upper = sandHeight(half.upper);
-  const lower = sandHeight(half.lower);
-  assert.ok(Math.abs(upper - full / 2) < 1.5, `upper ${upper}`);
-  assert.ok(Math.abs(lower - full / 2) < 1.5, `lower ${lower}`);
-
-  const mostly = sandLayers(80, bands);
-  assert.ok(sandHeight(mostly.lower) > sandHeight(mostly.upper) * 3);
-});
-
-test("sand keeps the ring's contributor colors, track stays paper-deep", () => {
-  const bands = sandBands(scoredParts);
   assert.deepEqual(
     bands.map((band) => band.color),
     ["immersion", "return", "range", "restfulness", "connection"].map((id) => SCORE_SAND_COLOR[id as keyof typeof SCORE_SAND_COLOR]),
   );
-  assert.equal(SCORE_TRACK, "var(--color-paper-deep)");
   assert.equal(SCORE_SAND_COLOR.immersion, "var(--color-forest)");
   assert.equal(SCORE_SAND_COLOR.return, "var(--color-blue)");
   assert.equal(SCORE_SAND_COLOR.range, "var(--color-red)");
   assert.equal(SCORE_SAND_COLOR.restfulness, "var(--color-ink)");
   assert.equal(SCORE_SAND_COLOR.connection, "var(--color-navy)");
-  const layers = sandLayers(83, bands);
-  const colors = new Set([...layers.upper, ...layers.lower].map((layer) => layer.color));
-  assert.equal(colors.size, bands.length);
+  const glass = readFileSync(new URL("../components/score-hourglass.tsx", import.meta.url), "utf8");
+  assert.match(glass, /<circle/);
+  assert.match(glass, /fill="currentColor"/);
+  assert.doesNotMatch(glass, /SCORE_TRACK|paper-deep/);
   const weightSum = bands.reduce((sum, band) => sum + band.weight, 0);
   assert.equal(weightSum, 80);
   assert.equal(CONTRIBUTOR_WEIGHTS.rhythm, 20);
@@ -120,7 +125,7 @@ test("a quick visit is an empty glass labeled Quick visit", () => {
   assert.equal(copy.sand, null);
   assert.equal(copy.primary, "Quick visit");
   assert.equal(copy.secondary, null);
-  assert.equal(sandLayers(0, []).upper.length, 0);
+  assert.equal(sandGrains(0).some((grain) => grain.id.startsWith("lower")), false);
 });
 
 test("still learning keeps the number and names the state under it", () => {
@@ -223,7 +228,7 @@ test("settle runs once for about 600ms and eases from empty-bottom to the score"
   assert.ok(late < 80);
 });
 
-test("You renders the hourglass in the ring's box and does not draw the ring", () => {
+test("You renders a small stippled hourglass and does not draw the ring", () => {
   const page = readFileSync(new URL("../components/you-reading.tsx", import.meta.url), "utf8");
   const glass = readFileSync(new URL("../components/score-hourglass.tsx", import.meta.url), "utf8");
   const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
@@ -231,14 +236,15 @@ test("You renders the hourglass in the ring's box and does not draw the ring", (
   assert.doesNotMatch(page, /<circle/);
   assert.doesNotMatch(page, /strokeDasharray/);
   assert.doesNotMatch(page, /ScoreRing/);
-  assert.match(glass, /h-52 w-52/);
+  assert.doesNotMatch(glass, /h-52 w-52/);
   assert.match(glass, /type-title/);
   assert.match(glass, /prefers-reduced-motion/);
   assert.match(glass, /SETTLE_MS/);
-  assert.match(css, /\.score-glass-svg\s*\{[^}]*height:\s*10rem/);
+  assert.match(glass, /sandGrains/);
+  assert.match(css, /\.score-glass-svg\s*\{[^}]*height:\s*6\.5rem/);
+  assert.doesNotMatch(css, /\.score-glass-svg\s*\{[^}]*height:\s*10rem/);
   assert.match(css, /\.score-glass-label\s*\{/);
   for (const id of CONTRIBUTOR_IDS) {
-    assert.match(glass, /sandBands|sandLayers/);
     assert.ok(SCORE_SAND_COLOR[id].startsWith("var(--color-"));
   }
 });
