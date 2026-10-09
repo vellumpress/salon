@@ -1,10 +1,20 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
+import {
+  CATALOG_WALK_ANCHORS,
+  CATALOG_WALK_SAMPLE_SIZE,
+  catalogIdsFromDiff,
+  catalogWalkMode,
+  isPageGotoTimeout,
+  resolveEpochDay,
+  selectCatalogWalk,
+  usableDiffBase,
+} from "./catalog-walk.ts";
 import { readableIds } from "./catalog/shelf.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 
@@ -688,34 +698,179 @@ test(
   },
 );
 
-test(
-  "every catalog book steps one sentence back and forward",
-  { timeout: 2_700_000 },
-  async () => {
-    const stop = await ensureServer();
-    const browser = await launchChromium();
+function gitNameDiff(from: string) {
+  const rev = usableDiffBase(from);
+  if (!rev) return { ok: false, text: "" };
+  try {
+    return {
+      ok: true,
+      text: execFileSync(
+        "git",
+        ["diff", "--name-status", "--diff-filter=ACDMRT", rev, "HEAD", "--", "src/lib/catalog/texts"],
+        { cwd: repoRoot, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] },
+      ),
+    };
+  } catch {
+    return { ok: false, text: "" };
+  }
+}
+
+/** Books whose text this push added, edited, renamed, or removed. */
+function changedBooksInPush() {
+  const parts: string[] = [];
+  const tip = gitNameDiff("HEAD^");
+  if (tip.ok) parts.push(tip.text);
+  const base = usableDiffBase(process.env.CATALOG_DIFF_BASE);
+  if (base && base !== "HEAD^") {
+    const pushed = gitNameDiff(base);
+    if (pushed.ok) parts.push(pushed.text);
+    else console.log(`catalog diff from ${base} unavailable; using the latest commit`);
+  }
+  return catalogIdsFromDiff(parts.join("\n"));
+}
+
+/**
+ * One navigation. A page.goto timeout is thrown as Playwright sent it, so the
+ * caller can retry that book once. A sentence that never binds fails here.
+ */
+async function openCatalogOnce(page: Page, id: string, at: number) {
+  await page.evaluate(() => sessionStorage.removeItem("keep-progress")).catch(() => undefined);
+  let last: unknown;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
-      const page = await phone(browser);
-      const ids = catalogIds();
-      let seen = 0;
-      for (const id of ids) {
-        const length = breathCount(id);
-        if (length < 2) continue;
-        const bound = chapterOpen(id);
-        const at = bound > 0 ? Math.min(bound, length - 1) : Math.min(4, length - 1);
-        await openAt(page, id, at);
-        if (at > 0) {
-          await step(page, -1, at - 1, `${id} back`);
-          await step(page, 1, at, `${id} forward`);
-        }
-        seen += 1;
-        if (seen % 100 === 0) console.log(`catalog taps ${seen}/${ids.length}`);
+      await page.goto(`${ORIGIN}/salon/read/${id}?at=${at}`, {
+        waitUntil: "domcontentloaded",
+        timeout: 30_000,
+      });
+      await page.locator(".breath-now").waitFor({ timeout: 30_000 });
+      await page.waitForFunction(
+        (want) => {
+          const frame = document.querySelector(".reader-frame");
+          const full = frame?.getAttribute("data-bound") === "full";
+          const index = frame?.getAttribute("data-breath-index");
+          return full && index === String(want) && !document.querySelector(".veil");
+        },
+        at,
+        { timeout: 30_000 },
+      );
+      return;
+    } catch (error) {
+      last = error;
+      if (isPageGotoTimeout(error)) throw error;
+      if (!readerDown(error) || attempt >= 2) break;
+      await ensureServer();
+    }
+  }
+  const message = last instanceof Error ? last.message.split("\n")[0] : String(last);
+  throw new Error(`${id} at ${at} did not open (${message})`);
+}
+
+/** A goto timeout gets one fresh page. A step miss is never retried. */
+async function openCatalogWithRetry(browser: Browser, page: Page, id: string, at: number) {
+  try {
+    await openCatalogOnce(page, id, at);
+    return page;
+  } catch (error) {
+    if (!isPageGotoTimeout(error)) throw error;
+    console.log(`page.goto timed out on ${id} at ${at}; retrying once`);
+    await Promise.race([
+      page.context().close().catch(() => undefined),
+      new Promise((resolve) => setTimeout(resolve, 5_000)),
+    ]);
+    await new Promise((resolve) => setTimeout(resolve, 1_000));
+    const fresh = await phone(browser);
+    try {
+      await openCatalogOnce(fresh, id, at);
+    } catch (retryError) {
+      if (isPageGotoTimeout(retryError)) {
+        throw new Error(`${id} at ${at} did not open (page.goto: Timeout 30000ms exceeded.)`);
       }
-      assert.ok(seen > 1000, `only ${seen} catalog books were tappable`);
-      await page.close();
+      throw retryError;
+    }
+    console.log(`page.goto retry opened ${id} at ${at}`);
+    return fresh;
+  }
+}
+
+function writeCatalogWalkFailure(error: unknown, mode: "sample" | "full") {
+  const file = process.env.CATALOG_WALK_FAILURE_FILE;
+  if (!file || mode !== "full") return;
+  const message = error instanceof Error ? error.stack || error.message : String(error);
+  try {
+    writeFileSync(file, JSON.stringify({ message, mode }, null, 2));
+  } catch (writeError) {
+    console.error("could not record catalog walk failure", writeError);
+  }
+}
+
+async function walkCatalog(browser: Browser, mode: "sample" | "full") {
+  let page = await phone(browser);
+  const ids = catalogIds();
+  for (const anchor of CATALOG_WALK_ANCHORS) {
+    assert.ok(ids.includes(anchor), `anchor ${anchor} is not in the catalog`);
+  }
+  const epochDay = resolveEpochDay(process.env.CATALOG_WALK_EPOCH_DAY);
+  const changed = mode === "sample" ? changedBooksInPush() : [];
+  const planned = mode === "full" ? ids : selectCatalogWalk({ ids, changed, epochDay, mode: "sample" });
+  if (mode === "full") {
+    console.log(`catalog walk full: ${planned.length} books`);
+  } else {
+    console.log(changed.length ? `catalog changed books: ${changed.join(" ")}` : "catalog changed books: none");
+    console.log(`catalog walk sample: ${planned.length} books on epoch day ${epochDay}`);
+    console.log(`catalog sample: ${planned.join(" ")}`);
+  }
+  let seen = 0;
+  const stepped = new Set<string>();
+  for (const id of planned) {
+    const length = breathCount(id);
+    if (length < 2) continue;
+    const bound = chapterOpen(id);
+    const at = bound > 0 ? Math.min(bound, length - 1) : Math.min(4, length - 1);
+    page = await openCatalogWithRetry(browser, page, id, at);
+    if (at > 0) {
+      await step(page, -1, at - 1, `${id} back`);
+      await step(page, 1, at, `${id} forward`);
+    }
+    seen += 1;
+    stepped.add(id);
+    if (mode === "full" && seen % 100 === 0) console.log(`catalog taps ${seen}/${ids.length}`);
+  }
+  if (mode === "full") {
+    assert.ok(seen > 1000, `only ${seen} catalog books were tappable`);
+  } else {
+    for (const anchor of CATALOG_WALK_ANCHORS) {
+      assert.ok(stepped.has(anchor), `anchor ${anchor} was not walked`);
+    }
+    for (const id of changed) {
+      if (!ids.includes(id) || breathCount(id) < 2) continue;
+      assert.ok(stepped.has(id), `changed book ${id} was not walked`);
+    }
+    const walkable = planned.filter((id) => breathCount(id) >= 2);
+    assert.equal(stepped.size, walkable.length, "sample missed a walkable book");
+    const least = Math.min(CATALOG_WALK_SAMPLE_SIZE, ids.length);
+    assert.ok(planned.length >= least, `sample planned ${planned.length}, expected at least ${least}`);
+    console.log(`catalog sample taps ${seen}`);
+  }
+  await page.close();
+}
+
+test(
+  "catalog books step one sentence back and forward",
+  { timeout: catalogWalkMode(process.env.CATALOG_WALK) === "sample" ? 600_000 : 2_700_000 },
+  async () => {
+    const mode = catalogWalkMode(process.env.CATALOG_WALK);
+    let stop: (() => Promise<void>) | undefined;
+    let browser: Browser | undefined;
+    try {
+      stop = await ensureServer();
+      browser = await launchChromium();
+      await walkCatalog(browser, mode);
+    } catch (error) {
+      writeCatalogWalkFailure(error, mode);
+      throw error;
     } finally {
-      await browser.close();
-      await stop();
+      await browser?.close();
+      await stop?.();
     }
   },
 );

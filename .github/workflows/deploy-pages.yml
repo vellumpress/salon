@@ -21,6 +21,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # The parent commit, so the sample walk can see books this push changed.
+          fetch-depth: 2
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -34,8 +37,18 @@ jobs:
       - name: Install browser
         run: npx playwright install --with-deps chromium
 
+      - name: Fetch the start of this push
+        if: github.event_name == 'push' && github.event.before != '0000000000000000000000000000000000000000'
+        run: git fetch --no-tags --depth=1 origin "${{ github.event.before }}" || true
+
       - name: Test
         run: npm test
+        env:
+          # Every other test still runs. The catalog walk is the day's window,
+          # books changed in this push, and the anchor books. The full walk is
+          # the catalog-walk workflow, and it does not block this deploy.
+          CATALOG_WALK: sample
+          CATALOG_DIFF_BASE: ${{ github.event.before }}
 
       - name: Typecheck
         run: npm run typecheck
