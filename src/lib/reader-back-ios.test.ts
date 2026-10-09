@@ -42,6 +42,18 @@ function fixturePdf(count: number): Uint8Array {
   return new TextEncoder().encode(pdf);
 }
 
+async function webkitInstalled() {
+  try {
+    const browser = await webkit.launch();
+    await browser.close();
+    return true;
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    if (!/Executable doesn't exist|browserType\.launch/.test(message)) throw error;
+    return false;
+  }
+}
+
 async function launch(): Promise<Browser> {
   return webkit.launch();
 }
@@ -186,7 +198,11 @@ async function mouseLift(page: Page, x: number, y: number) {
 test(
   "WebKit: a mouse back tap just after a forward touch goes back one sentence",
   { timeout: 120_000 },
-  async () => {
+  async (t) => {
+    if (!(await webkitInstalled())) {
+      t.skip("WebKit is not installed");
+      return;
+    }
     const stop = await ensureReaderServer();
     const browser = await launch();
     try {
@@ -218,7 +234,11 @@ test(
 test(
   "WebKit: a mouse pointerup finishes a back touch that never got pointerup",
   { timeout: 120_000 },
-  async () => {
+  async (t) => {
+    if (!(await webkitInstalled())) {
+      t.skip("WebKit is not installed");
+      return;
+    }
     const stop = await ensureReaderServer();
     const browser = await launch();
     try {
@@ -242,7 +262,11 @@ test(
 test(
   "WebKit: Prev goes back when the click never arrives",
   { timeout: 120_000 },
-  async () => {
+  async (t) => {
+    if (!(await webkitInstalled())) {
+      t.skip("WebKit is not installed");
+      return;
+    }
     const stop = await ensureReaderServer();
     const browser = await launch();
     try {
@@ -301,7 +325,11 @@ test(
 test(
   "WebKit: a tall sentence returns to its top before the next back tap steps",
   { timeout: 120_000 },
-  async () => {
+  async (t) => {
+    if (!(await webkitInstalled())) {
+      t.skip("WebKit is not installed");
+      return;
+    }
     const stop = await ensureReaderServer();
     const browser = await launch();
     try {
@@ -368,7 +396,11 @@ test(
 test(
   "WebKit: an imported PDF mouse back tap just after a forward touch goes back",
   { timeout: 180_000 },
-  async () => {
+  async (t) => {
+    if (!(await webkitInstalled())) {
+      t.skip("WebKit is not installed");
+      return;
+    }
     const stop = await ensureReaderServer();
     const browser = await launch();
     try {
