@@ -88,6 +88,19 @@ test("the anchor stays at 64% of the area above the hourglass", () => {
   assert.equal(focusAnchorPx(Number.NaN, 10), 0);
 });
 
+test("a top lead keeps the focus in the same place inside the reading area", () => {
+  const bottom = 82;
+  const lead = 96;
+  const oldPane = 700;
+  const oldAnchor = focusAnchorPx(oldPane, bottom);
+  const withLead = focusAnchorPx(oldPane + lead, bottom, CENTER_LINE_ANCHOR, lead);
+  assert.equal(withLead, oldAnchor + lead);
+  assert.equal(withLead - lead, (oldPane - bottom) * CENTER_LINE_ANCHOR);
+  assert.equal(focusAnchorPx(800, 80, CENTER_LINE_ANCHOR, Number.NaN), 720 * CENTER_LINE_ANCHOR);
+  assert.equal(focusAnchorPx(100, 40, CENTER_LINE_ANCHOR, 80), 60);
+  assert.equal(focusAnchorPx(100, 40, CENTER_LINE_ANCHOR, -10), 60 * CENTER_LINE_ANCHOR);
+});
+
 test("upcoming window fills a tall phone below the focus, including the hourglass", () => {
   const phone = 956;
   const header = 48;

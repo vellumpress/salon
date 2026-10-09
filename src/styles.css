@@ -1734,15 +1734,35 @@ html[data-status-motion="1"] .status-bar-fill::before {
   background-color: transparent;
 }
 
-/* The column runs to the screen bottom, under the hourglass and the
-   home indicator. The negative margin matches the footer (3rem row plus
-   safe-area padding). Text in that band stays behind the hourglass. */
+/* The column runs to both screen edges.
+   Bottom: under the hourglass and the home indicator. The negative margin
+   matches the footer (3rem row plus safe-area padding). Text in that band
+   stays behind the hourglass.
+   Top: under the mark row and the status bar, the same way. The header keeps
+   its own safe-area padding so Home / Rituals stay clear of the clock when
+   the bar is open. When the bar is hidden the header is transparent, and
+   past lines continue to the top edge. The 1px is the header rule. */
 .reader-frame:not(.together-lock) {
+  --reader-top-lead: calc(3rem + 1px + env(safe-area-inset-top, 0px));
+  padding-top: 0;
   padding-bottom: 0;
 }
 
+.reader-frame:not(.together-lock) > header {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
 .reader-turn-bleed {
+  margin-top: calc(-1 * var(--reader-top-lead, 0px));
   margin-bottom: calc(-1 * (3rem + env(safe-area-inset-bottom, 0px)));
+}
+
+/* The status-bar fill is a solid band so other pages have an edge to sample.
+   On the solo reader that band covers the past lines. Paint it behind the
+   column. html/body still paint --status-page, and theme-color stays the
+   Daylight tint. */
+html:has(.reader-frame:not(.together-lock)) .status-bar-fill {
+  z-index: 0;
 }
 
 .reader-frame:not(.together-lock) > footer {
