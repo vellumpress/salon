@@ -627,6 +627,10 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: an old banker dies of shock in the opening pages, a suicide is reported later, and there is gossip about 'Jewish blood'. Part Two makes sweeping racial claims about Greek bankers, describes 'big black satyrs' grunting like pigs, and prints the word 'negro' twice, all left as printed.",
   "a-monkey":
     "A heads-up before you start: this is one long comic monologue of exam-night nerves, with four short translator notes on the grading set in as you go.",
+  "the-little-clay-cart":
+    "A hungry stage-director comes home to find the house full of food for his wife’s fast, and goes out to invite a Brahman to dinner.",
+  "zanzibar-tales":
+    "Kee'ma the monkey and Pa'pa the shark are great friends, and this reading is their tale only.",
   "the-dancing-master":
     "A heads-up before you start: frank period talk of sizing up a partner's figure. Backstage at the opera, a dancing-master dressed as a bishop explains why France needs more waltzing.",
   "the-golden-age":

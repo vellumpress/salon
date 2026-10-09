@@ -1,0 +1,223 @@
+{
+  "id": "the-little-clay-cart",
+  "title": "The Little Clay Cart",
+  "author": "Shudraka (tr. Arthur William Ryder)",
+  "year": "1905",
+  "note": "Opening sit: the Prologue, from the benediction to the stage-director's exit.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Prologue · Benediction upon the audience",
+      "place": "Prologue · Benediction upon the audience",
+      "reentry": "His bended knees the knotted girdle holds, / Fashioned by doubling of a serpent's folds; / His sensive organs, so he checks his breath, / Are numbed, till consciousness seems sunk in death; / Within himself, with eye of truth, he sees / The",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Prologue",
+      "place": "Prologue",
+      "reentry": "Stage-director: Enough of this tedious work, which fritters away the interest of the audience! Let me then most reverently salute the honorable gentlemen, and announce our intention to produce a drama called \"The Little Clay Cart.\" Its auth",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "His bended knees the knotted girdle holds, / Fashioned by doubling of a serpent's folds; / His sensive organs, so he checks his breath, / Are numbed, till consciousness seems sunk in death; / Within himself, with eye of truth, he sees / The All-soul, free from all activities. / May His, may Shiva's meditation be / Your strong defense; on the Great Self thinks he, / Knowing full well the world's vacuity."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "And again:"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "May Shiva's neck shield you from every harm, / That seems a threatening thunder-cloud, whereon, / Bright as the lightning-flash, lies Gauri's arm."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Stage-director: Enough of this tedious work, which fritters away the interest of the audience! Let me then most reverently salute the honorable gentlemen, and announce our intention to produce a drama called \"The Little Clay Cart.\" Its author was a man / Who vied with elephants in lordly grace; / Whose eyes were those of the chakora bird / That feeds on moonbeams; glorious his face / As the full moon; his person, all have heard, / Was altogether lovely. First in worth / Among the twice-born was this poet, known / As Shudraka far over all the earth, / His virtue's depth unfathomed and alone. / And again: / The Samaveda, the Rigveda too, / The science mathematical, he knew; / The arts wherein fair courtezans excel, / And all the lore of elephants as well. / Through Shiva's grace, his eye was never dim; / He saw his son a king in place of him. / The difficult horse-sacrifice he tried / Successfully; entered the fiery tide, / One hundred years and ten days old, and died. / And yet again: / Eager for battle; sloth's determined foe; / Of scholars chief, who to the Veda cling; / Rich in the riches that ascetics know; / Glad, gainst the foeman's elephant to show / His valor;--such was Shudraka, the king. / And in this work of his, / Within the town, Avanti named, / Dwells one called Charudatta, famed / No less for youth than poverty; / A merchant's son and Brahman, he. / His virtues have the power to move / Vasantasena's inmost love; / Fair as the springtime's radiancy, / And yet a courtezan is she. / So here king Shudraka the tale imparts / Of love's pure festival in these two hearts, / Of prudent acts, a lawsuit's wrong and hate, / A rascal's nature, and the course of fate. / [*He walks about and looks around him.*] Why, this music-room of ours is empty. I wonder where the actors have gone. [*Reflecting.*] Ah, I understand."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Stage-director: Empty his house, to whom no child was born; / Thrice empty his, who lacks true friends and sure; / To fools, the world is empty and forlorn; / But all that is, is empty to the poor. / I have finished the concert. And I've been practising so long that the pupils of my eyes are dancing, and I'm so hungry that my eyes are crackling like a lotus-seed, dried up by the fiercest rays of the summer sun. I'll just call my wife and ask whether there is anything for breakfast or not. Hello! here I am--but no! Both the particular occasion and the general custom demand that I speak Prakrit. [*Speaking in Prakrit.*] Confound it! I've been practising so long and I'm so hungry that my limbs are as weak as dried-up lotus-stalks. Suppose I go home and see whether my good wife has got anything ready or not. [*He walks about and looks around him.*] Here I am at home. I'll just go in. [*He enters and looks about.*] Merciful heavens! Why in the world is everything in our house turned upside down? A long stream of rice-water is flowing down the street. The ground, spotted black where the iron kettle has been rubbed clean, is as lovely as a girl with the beauty-marks of black cosmetic on her face. It smells so good that my hunger seems to blaze up and hurts me more than ever. Has some hidden treasure come to light? or am I hungry enough to think the whole world is made of rice? There surely isn't any breakfast in our house, and I'm starved to death. But everything seems topsyturvy here. One girl is preparing cosmetics, another is weaving garlands of flowers. [*Reflecting.*] What does it all mean? Well, I'll call my good wife and learn the truth. [*He looks toward the dressing-room.*] Mistress, will you come here a moment?"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "[*Enter an actress.*]"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Actress: Here I am, sir."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Director: You are very welcome, mistress."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Actress: Command me, sir. What am I to do?"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Director: Mistress, I've been practising so long and I'm so hungry that my limbs are as weak as dried-up lotus-stalks. Is there anything to eat in the house or not?"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Actress: There's everything, sir."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Director: Well, what?"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Actress: For instance--there's rice with sugar, melted butter, curdled milk, rice; and, all together, it makes you a dish fit for heaven. May the gods always be thus gracious to you!"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Director: All that in our house? or are you joking?"
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "Actress: [*Aside.*] Yes, I will have my joke. [*Aloud.*] It's in the market-place, sir."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Director: [*Angrily.*] You wretched woman, thus shall your own hope be cut off! And death shall find you out! For my expectations, like a scaffolding, have been raised so high, only to fall again."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "Actress: Forgive me, sir, forgive me! It was only a joke."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Director: But what do these unusual preparations mean? One girl is preparing cosmetics, another is weaving garlands, and the very ground is adorned with sacrificial flowers of five different colors."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "Actress: This is a fast day, sir."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "Director: What fast?"
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "Actress: The fast for a handsome husband."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "Director: In this world, mistress, or the next?"
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "Actress: In the next world, sir."
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Director: [*Wrathfully.*] Gentlemen! look at this. She is sacrificing my food to get herself a husband in the next world."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "Actress: Don't be angry, sir. I am fasting in the hope that you may be my husband in my next birth, too."
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "Director: But who suggested this fast to you?"
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "Actress: Your own dear friend Jurnavriddha."
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "Director: [*Angrily.*] Ah, Jurnavriddha, son of a slave-wench! When, oh, when shall I see King Palaka angry with you? Then you will be parted, as surely as the scented hair of some young bride."
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "Actress: Don't be angry, sir. It is only that I may have you in the next world that I celebrate this fast. [*She falls at his feet.*]"
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "Director: Stand up, mistress, and tell me who is to officiate at this fast."
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "Actress: Some Brahman of our own sort whom we must invite."
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "Director: You may go then. And I will invite some Brahman of our own sort."
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "Actress: Very well, sir. [*Exit.*]"
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "Director: [*Walking about.*] Good heavens! In this rich city of Ujjayini how am I to find a Brahman of our own sort? [*He looks about him.*] Ah, here comes Charudatta's friend Maitreya. Good! I'll ask him. Maitreya, you must be the first to break bread in our house to-day."
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "A Voice behind the Scenes: You must invite some other Brahman. I am busy."
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "Director: But, man, the feast is set and you have it all to yourself. Besides, you shall have a present."
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "The Voice: I said no once. Why should you keep on urging me?"
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "Director: He says no. Well, I must invite some other Brahman."
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "[*Exit.*]"
+    }
+  ]
+}

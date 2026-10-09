@@ -199,6 +199,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "love-s-shadow": { label: "Knightsbridge, London", region: "gb" },
   "lewis-and-irene": { label: "Paris", region: "fr" },
   "a-monkey": { label: "Christiania", region: "no" },
+  "the-little-clay-cart": { label: "Ujjayini", region: "in" },
   "the-dancing-master": { label: "Paris", region: "fr" },
   "the-golden-age": { label: "England", region: "gb" },
   "the-mist": { label: "the glade", region: "dk" },
@@ -518,6 +519,9 @@ export const CHIP_ONLY_PLACE: Record<string, string> = {
   // (see region-shapes.ts) and there is no Lithuania shape; never draw one ad hoc.
   // countryFor() stays Poland (origin) for the Map.
   "pan-tadeusz": "Lithuania",
+  // Mira Thu 8 Oct 2026 MID: the tales are told on the Zanzibar coast. There is no
+  // Tanzania / East Africa shape; never draw one ad hoc. countryFor() is Tanzania.
+  "zanzibar-tales": "Zanzibar",
 };
 
 /**

@@ -124,6 +124,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "lewis-and-irene": { label: "Paris", region: "fr" },
     "a-monkey": { label: "Christiania", region: "no" },
     "the-dancing-master": { label: "Paris", region: "fr" },
+    "the-little-clay-cart": { label: "Ujjayini", region: "in" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
     "strait-is-the-gate": { label: "Fongueusemare", region: "fr" },
@@ -407,7 +408,7 @@ test("POST-#225 places reuse Peru and Russia; no new region key", () => {
 });
 
 test("chip-only settings carry a label but no country key and no silhouette", () => {
-  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania" });
+  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar" });
   const mary = shelfWork("mary-magdalen");
   assert.ok(mary);
   assert.equal(placeFor(mary!), null);
@@ -537,4 +538,19 @@ test("PAN-TADEUSZ: the chip is the poem's own Lithuania, label only, with no bor
   assert.equal(chipOnlyLabel("pan-tadeusz"), "Lithuania");
   assert.equal("lt" in REGION_SHAPES, false); // shapes are hand-drawn; none is drawn ad hoc for a chip
   assert.equal(countryFor(pan!), "Poland"); // origin for the Map is unchanged
+});
+
+test("Thu 8 Oct MID The Little Clay Cart place reuses in; Ujjayini; no new region key", () => {
+  assert.ok(REGION_SHAPES.in?.d, "in shape");
+  assert.deepEqual(placeFor(shelfWork("the-little-clay-cart")!), { label: "Ujjayini", region: "in" });
+  assert.equal(CHIP_ONLY_PLACE["the-little-clay-cart"], undefined);
+});
+
+test("Thu 8 Oct MID Zanzibar Tales is a chip-only Zanzibar; no Tanzania shape is drawn", () => {
+  const work = shelfWork("zanzibar-tales");
+  assert.ok(work);
+  assert.equal(placeFor(work!), null);
+  assert.equal(chipOnlyLabel("zanzibar-tales"), "Zanzibar");
+  assert.equal(countryFor(work!), "Tanzania");
+  assert.equal((REGION_SHAPES as Record<string, unknown>).tz, undefined);
 });

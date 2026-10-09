@@ -1195,6 +1195,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Thu 8 Oct 2026 AM GOOSE-MAN — The Goose Man follows Fräulein Schmidt, Next carefully only (the content notes are on the card). Never Featured.
   // Off every Ritual lane; the opening sit (Chapter I, §§ I–III) is never unwind or before-sleep.
   "the-goose-man",
+  // Mira Thu 8 Oct 2026 MID — The Little Clay Cart follows The Goose Man, plain Next (no heads-up card). Never Featured. Off every Ritual lane.
+  "the-little-clay-cart",
 ] as const;
 
 /**

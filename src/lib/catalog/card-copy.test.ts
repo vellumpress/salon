@@ -310,6 +310,8 @@ test("known origin overrides", () => {
     "lewis-and-irene": "France",
     "a-monkey": "Norway",
     "the-dancing-master": "France",
+    "the-little-clay-cart": "India",
+    "zanzibar-tales": "Tanzania",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",
     "strait-is-the-gate": "France",
