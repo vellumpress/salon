@@ -13,6 +13,8 @@ import { curatorialTrack, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { FIRST_SESSION_RITUAL_IDS, RITUAL_LANES } from "./rituals.ts";
 import { openingBreathIndex } from "../opening-scene.ts";
 import { CARD_AFTER_PRINTED_NOTE_IDS, MIXED_REBIND_IDS, POETRY_REBIND_IDS } from "./poetry-bind.ts";
+import { anchorKeptLine, parseBreathRemap } from "../kept-lines.ts";
+import { isSectionBreak } from "../emphasized-text.ts";
 
 /** Re-bound books carry real minutes (words/200); poetry-bind.test.ts pins them. */
 /** OPEN-FIX-2 structural re-binds whose minutes are now words/200. */
@@ -2972,17 +2974,19 @@ test("DONA-PERFECTA: Serrano's English from PG 2462 replaces the Spanish student
 
 test("GOOSE-MAN furniture: stranded chapter numbers, page numbers and running heads are cut; ids map to the breath before", () => {
   const remap = JSON.parse(readFileSync(new URL("./at-remap.json", import.meta.url), "utf8")) as Record<string, Record<string, string>>;
-  const check = (id: string, cuts: Record<string, string>, breaths: number) => {
+  // rebound: the book was later re-bound by paragraph, reusing sN-N ids, so an old id may be live again.
+  const check = (id: string, cuts: Record<string, string>, breaths: number, rebound = false) => {
     const full = textWork(id) as Work;
     const ids = new Set(full.breaths.map((breath) => breath.id));
     const map = remap[id]!;
     for (const [from, to] of Object.entries(cuts)) {
-      assert.equal(ids.has(from), false, `${id} ${from}`);
+      if (!rebound) assert.equal(ids.has(from), false, `${id} ${from}`);
       assert.equal(map[from], to, `${id} ${from}`);
       assert.equal(ids.has(to), true, `${id} ${to}`);
     }
     for (const [from, to] of Object.entries(map)) {
-      assert.equal(ids.has(from), false, `${id} ${from}`);
+      if (!rebound) assert.equal(ids.has(from), false, `${id} ${from}`);
+      assert.notEqual(from, to, `${id} ${from}`);
       assert.equal(ids.has(to), true, `${id} ${from} → ${to}`);
     }
     for (const scene of full.scenes) assert.ok(full.breaths.some((breath) => breath.sceneId === scene.id), `${id}#${scene.id} empty`);
@@ -2991,14 +2995,17 @@ test("GOOSE-MAN furniture: stranded chapter numbers, page numbers and running he
     return full;
   };
   // The Maltese Falcon: chapters 10–20 no longer end on their own number; no chapter opens on one either.
-  const falconCuts: Record<string, string> = { "s4-46": "s4-45" };
-  for (const [scene, last] of [[8, 212], [9, 340], [10, 336], [11, 273], [12, 250], [13, 250], [14, 295], [15, 314], [16, 356], [17, 407], [18, 566]] as const) {
-    falconCuts[`s${scene}-${last}`] = `s${scene}-${last - 1}`;
+  // FALCON re-bound the book by printed paragraph, so each cut now lands on the paragraph holding the sentence before it.
+  const falconCuts: Record<string, string> = { "s4-46": "s4-14" };
+  for (const [scene, last, para] of [[8, 212, 98], [9, 340, 130], [10, 336, 109], [11, 273, 115], [12, 250, 78], [13, 250, 100], [14, 295, 118], [15, 314, 97], [16, 356, 123], [17, 407, 116], [18, 566, 175]] as const) {
+    falconCuts[`s${scene}-${last}`] = `s${scene}-${para}`;
+    assert.equal(remap.falcon![`s${scene}-${last - 1}`], `s${scene}-${para}`, `falcon s${scene}-${last - 1}`);
   }
-  const falcon = check("falcon", falconCuts, 6154);
+  assert.equal(remap.falcon!["s4-45"], "s4-14");
+  const falcon = check("falcon", falconCuts, 2280, true);
   assert.equal(falcon.breaths.some((breath) => /^\d+$/.test(breath.text.trim())), false);
-  assert.ok(falcon.breaths.find((breath) => breath.id === "s4-45")!.text.endsWith("a Shanghai insurance-broker’s business-card; and four sheets of Hotel Belvedere writing paper, on one of which was written in small precise letters Samuel Spade’s name and the addresses of his office and his apartment."));
-  assert.equal(falcon.breaths.find((breath) => breath.id === "s18-565")!.text, "I leave you the _rara avis_ on the table as a little memento.”");
+  assert.ok(falcon.breaths.find((breath) => breath.id === "s4-14")!.text.endsWith("a Shanghai insurance-broker’s business-card; and four sheets of Hotel Belvedere writing paper, on one of which was written in small precise letters Samuel Spade’s name and the addresses of his office and his apartment."));
+  assert.ok(falcon.breaths.find((breath) => breath.id === "s18-175")!.text.endsWith("I leave you the *rara avis* on the table as a little memento.”"));
   assert.equal(falcon.breaths.find((breath) => breath.sceneId === "s9")!.text.startsWith("BEGINNING day had reduced night"), true);
   // Munshi Abdullah: the OCR running heads and bare page numbers are gone (chapter numbers stay).
   const munshiHeads = ["s0-59", "s3-21", "s6-12", "s7-12", "s8-37", "s10-16", "s10-43", "s18-42", "s19-12", "s20-14", "s22-31", "s24-31", "s28-13", "s29-61", "s30-14", "s30-15", "s30-37", "s31-35", "s33-18", "s33-47", "s34-25", "s34-43", "s35-19", "s37-10", "s39-16", "s40-16", "s40-62", "s40-76", "s41-11", "s44-20", "s46-10", "s46-11", "s48-10", "s49-12"];
@@ -3035,4 +3042,69 @@ test("GOOSE-MAN furniture: stranded chapter numbers, page numbers and running he
   assert.equal(copper.breaths[cambridge - 1]!.text, "grow.");
   assert.equal(copper.breaths[cambridge + 1]!.text, "(With grateful appreciation to Robert S. Hillyer)");
   assert.equal(copper.breaths.some((breath) => /Hoy\s+pets|^\W*\|\W*$|^i\s+\|$/.test(breath.text.trim())), false);
+});
+
+test("FALCON: The Maltese Falcon is bound one breath per printed paragraph (PG 77600, Knopf 1930)", () => {
+  const work = SHELF.find((item) => item.id === "falcon")!;
+  const full = textWork("falcon") as Work;
+  const opening = JSON.parse(readFileSync(openingUrl("falcon"), "utf8")) as Work;
+  const raw = JSON.parse(readFileSync(new URL("./at-remap.json", import.meta.url), "utf8")) as Record<string, Record<string, string>>;
+  const map = raw.falcon!;
+  assert.deepEqual(full.scenes.map((scene) => scene.title), [
+    "Spade & Archer", "Death in the Fog", "Three Women", "The Black Bird", "The Levantine",
+    "The Undersized Shadow", "G in the Air", "Horse Feathers", "Brigid", "The Belvedere Divan",
+    "The Fat Man", "Merry-Go-Round", "The Emperor’s Gift", "La Paloma", "Every Crackpot",
+    "The Third Murder", "Saturday Night", "The Fall-Guy", "The Russian’s Hand", "If They Hang You",
+  ]);
+  for (const scene of full.scenes) {
+    assert.equal(scene.place, scene.title);
+    assert.equal(scene.reentry, full.breaths.find((breath) => breath.sceneId === scene.id)!.text.slice(0, 240));
+  }
+  // Printed paragraphs per chapter, section breaks included.
+  assert.deepEqual(full.scenes.map((scene) => full.breaths.filter((breath) => breath.sceneId === scene.id).length),
+    [80, 154, 102, 156, 61, 108, 141, 95, 99, 131, 110, 116, 79, 101, 119, 98, 124, 117, 176, 113]);
+  assert.equal(full.breaths.length, 2280);
+  assert.equal(work.breaths, 2280);
+  const words = full.breaths.filter((breath) => !isSectionBreak(breath.text)).reduce((sum, breath) => sum + breath.text.split(/\s+/).filter((w) => w && w !== "/").length, 0);
+  assert.equal(work.minutes, Math.round(words / 200));
+  assert.equal((full as Work & { minutes: number }).minutes, work.minutes);
+  // The printed section breaks: 37, never first or last in a chapter.
+  const breaks = full.breaths.map((breath, i) => (isSectionBreak(breath.text) ? i : -1)).filter((i) => i >= 0);
+  assert.equal(breaks.length, 37);
+  for (const i of breaks) {
+    assert.equal(full.breaths[i]!.text, "* * * * *");
+    assert.equal(full.breaths[i - 1]!.sceneId, full.breaths[i]!.sceneId);
+    assert.equal(full.breaths[i + 1]!.sceneId, full.breaths[i]!.sceneId);
+  }
+  // Front matter, the dedication and the transcriber's notes are gone; italics are *x*.
+  const all = full.breaths.map((breath) => breath.text).join("\n");
+  assert.doesNotMatch(all, /KNOPF|COPYRIGHT|Printed in the United States|JOSE|THE END|Gutenberg|Transcriber/);
+  assert.doesNotMatch(all, /_/);
+  // Two indented ship lists stay one printed block each.
+  const lists = full.breaths.filter((breath) => breath.text.includes(" / "));
+  assert.deepEqual(lists.map((breath) => [breath.id, breath.text.split(" / ").length]), [["s13-70", 3], ["s13-81", 6]]);
+  // Card: the first printed sentence of chapter 1, unchanged.
+  assert.equal(work.opening, "SAMUEL SPADE’S jaw was long and bony, his chin a jutting v under the more flexible v of his mouth.");
+  assert.ok(full.breaths[0]!.text.startsWith(work.opening!));
+  assert.equal(openingBreathIndex(full), 0);
+  assert.equal(full.breaths.at(-1)!.id, "s19-112");
+  assert.ok(full.breaths.at(-1)!.text.endsWith("“Well, send her in.”"));
+  // Opening sit: chapter 1 up to its first printed break.
+  assert.deepEqual(opening.breaths, full.breaths.slice(0, 35));
+  assert.deepEqual(opening.scenes, [full.scenes[0]]);
+  assert.ok(opening.breaths.at(-1)!.text.endsWith("as the door opened."));
+  assert.ok(isSectionBreak(full.breaths[35]!.text));
+  // Every old sentence id maps to the paragraph that holds it.
+  const ids = new Set(full.breaths.map((breath) => breath.id));
+  assert.equal(Object.keys(map).length, 6142);
+  for (const [from, to] of Object.entries(map)) {
+    assert.notEqual(from, to);
+    assert.ok(ids.has(to), `${from} → ${to}`);
+  }
+  assert.equal(map["s0-95"], "s0-30");
+  assert.ok(full.breaths[30]!.text.startsWith("Spade nodded again. His frown went away."));
+  assert.equal(map["s19-419"], "s19-112");
+  const remap = parseBreathRemap({ falcon: map });
+  const kept = anchorKeptLine({ id: "s0-95", text: "Spade nodded again." }, full.breaths, remap, "falcon");
+  assert.equal(kept.breathId, "s0-30");
 });
