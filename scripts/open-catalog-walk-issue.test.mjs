@@ -19,6 +19,19 @@ test("a goto timeout that survived the retry is named as such", () => {
   assert.doesNotMatch(body, /sentence step failed/);
 });
 
+test("a sentence that never paints is not described as a step miss", () => {
+  const body = buildIssueBody({
+    message:
+      "fraulein-schmidt-and-mr-anstruther at 12 did not open (locator.waitFor: Timeout 30000ms exceeded.) — page: Fräulein Schmidt and Mr. Anstruther Opening",
+    runUrl: "https://github.com/vellumpress/salon/actions/runs/3",
+    sha: "aaa1111",
+  });
+  assert.match(body, /never painted/);
+  assert.match(body, /not retried/);
+  assert.match(body, /Opening/);
+  assert.doesNotMatch(body, /sentence step failed/);
+});
+
 test("a real step failure is not described as a timeout flake", () => {
   const body = buildIssueBody({
     message: "gods-trombones back: index 7 scroll 0, expected 7 after 1 (from 8)",

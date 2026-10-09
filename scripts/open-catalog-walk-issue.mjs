@@ -18,6 +18,8 @@ export function buildIssueBody({ message, runUrl, sha }) {
   let kind = "The walk failed.";
   if (/page\.goto: Timeout \d+ms exceeded/.test(text)) {
     kind = "A book still did not open after one retry of a page.goto timeout.";
+  } else if (/locator\.waitFor: Timeout/.test(text)) {
+    kind = "The sentence never painted. That miss is not retried. What was on the page is included when the walk could read it.";
   } else if (/\b(?:back|forward): index /.test(text)) {
     kind = "A sentence step failed. That is a real failure, and it is not retried.";
   }

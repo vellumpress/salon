@@ -1,5 +1,6 @@
-# Every catalog book, after the deploy has already shipped.
-# A failure turns the workflow red and opens (or comments on) an issue.
+# After the Pages deploy has already been queued: every catalog book, and the
+# ten-run tap stress. Neither blocks the deploy. A walk failure turns this
+# workflow red and opens (or comments on) an issue. A stress failure turns it red.
 name: Catalog walk
 
 on:
@@ -31,11 +32,45 @@ jobs:
           node-version: 22
           cache: npm
 
+      - name: Cache node_modules
+        id: modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
       - name: Install
+        if: steps.modules.outputs.cache-hit != 'true'
         run: npm ci
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
 
       - name: Install browser
         run: npx playwright install --with-deps chromium
+
+      - name: Build the Pages site
+        run: npm run build
+        env:
+          GITHUB_PAGES: "1"
+          VITE_AUTH_ENABLED: "false"
+          VITE_LIVE_BACKEND: "false"
+
+      - name: Start one preview
+        run: |
+          node scripts/preview-pages.mjs > preview.log 2>&1 &
+          for _ in $(seq 1 50); do
+            if curl -sf -o /dev/null http://127.0.0.1:8081/salon/; then
+              exit 0
+            fi
+            sleep 0.2
+          done
+          echo "preview did not start"
+          cat preview.log
+          exit 1
 
       - name: Walk every catalog book
         run: |
@@ -48,6 +83,7 @@ jobs:
           fi
           exit "$status"
         env:
+          READER_ORIGIN: http://127.0.0.1:8081
           CATALOG_WALK: full
           CATALOG_WALK_FAILURE_FILE: ${{ github.workspace }}/catalog-walk-failure.json
 
@@ -57,3 +93,62 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           CATALOG_WALK_FAILURE_FILE: ${{ github.workspace }}/catalog-walk-failure.json
         run: node scripts/open-catalog-walk-issue.mjs
+
+  stress:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Cache node_modules
+        id: modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.modules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Build the Pages site
+        run: npm run build
+        env:
+          GITHUB_PAGES: "1"
+          VITE_AUTH_ENABLED: "false"
+          VITE_LIVE_BACKEND: "false"
+
+      - name: Start one preview
+        run: |
+          node scripts/preview-pages.mjs > preview.log 2>&1 &
+          for _ in $(seq 1 50); do
+            if curl -sf -o /dev/null http://127.0.0.1:8081/salon/; then
+              exit 0
+            fi
+            sleep 0.2
+          done
+          echo "preview did not start"
+          cat preview.log
+          exit 1
+
+      - name: Ten-run tap stress
+        run: node --experimental-strip-types --test --test-name-pattern "five hundred mixed taps" src/lib/reader-tap-stress.test.ts
+        env:
+          READER_ORIGIN: http://127.0.0.1:8081
+          STRESS_RUNS: "10"
