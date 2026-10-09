@@ -631,6 +631,8 @@ const BLURBS: Record<string, string> = {
     "A hungry stage-director comes home to find the house full of food for his wife’s fast, and goes out to invite a Brahman to dinner.",
   "zanzibar-tales":
     "Kee'ma the monkey and Pa'pa the shark are great friends, and this reading is their tale only.",
+  "the-steel-flea":
+    "A homesick Cossack, an amiable Tsar and the gunsmiths of Tula take on the marvels of England.",
   "the-dancing-master":
     "A heads-up before you start: frank period talk of sizing up a partner's figure. Backstage at the opera, a dancing-master dressed as a bishop explains why France needs more waltzing.",
   "the-golden-age":

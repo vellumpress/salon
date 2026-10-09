@@ -125,6 +125,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "a-monkey": { label: "Christiania", region: "no" },
     "the-dancing-master": { label: "Paris", region: "fr" },
     "the-little-clay-cart": { label: "Ujjayini", region: "in" },
+    "the-steel-flea": { label: "Tula", region: "ru" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
     "strait-is-the-gate": { label: "Fongueusemare", region: "fr" },
@@ -553,4 +554,10 @@ test("Thu 8 Oct MID Zanzibar Tales is a chip-only Zanzibar; no Tanzania shape is
   assert.equal(chipOnlyLabel("zanzibar-tales"), "Zanzibar");
   assert.equal(countryFor(work!), "Tanzania");
   assert.equal((REGION_SHAPES as Record<string, unknown>).tz, undefined);
+});
+
+test("Fri 9 Oct AM The Steel Flea place reuses ru; Tula; no new region key", () => {
+  assert.ok(REGION_SHAPES.ru?.d, "ru shape");
+  assert.deepEqual(placeFor(shelfWork("the-steel-flea")!), { label: "Tula", region: "ru" });
+  assert.equal(CHIP_ONLY_PLACE["the-steel-flea"], undefined);
 });

@@ -200,6 +200,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "lewis-and-irene": { label: "Paris", region: "fr" },
   "a-monkey": { label: "Christiania", region: "no" },
   "the-little-clay-cart": { label: "Ujjayini", region: "in" },
+  "the-steel-flea": { label: "Tula", region: "ru" },
   "the-dancing-master": { label: "Paris", region: "fr" },
   "the-golden-age": { label: "England", region: "gb" },
   "the-mist": { label: "the glade", region: "dk" },

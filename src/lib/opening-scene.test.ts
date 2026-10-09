@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 import type { Work } from "./literature.ts";
 import { breathsFor } from "./literature.ts";
-import { openingBreathIndex, STORY_INTRODUCTION_IDS, storyIntroductionStartIndex } from "./opening-scene.ts";
+import { openingBreathIndex, STORY_INTRODUCTION_IDS, STORY_PREFACE_IDS, storyIntroductionStartIndex, storyPrefaceStartIndex } from "./opening-scene.ts";
 
 function load(id: string): Work {
   return JSON.parse(readFileSync(new URL(`./catalog/texts/${id}.json`, import.meta.url), "utf8")) as Work;
@@ -111,4 +111,22 @@ test("story-introduction exception is per book: other books still skip an editor
   ]);
   assert.equal(storyIntroductionStartIndex(sample), null);
   assert.equal(storyIntroductionStartIndex({ ...sample, id: "the-story-of-gosta-berling" }), 0);
+});
+
+test("The Steel Flea: a fresh Sit opens on Leskov's own Preface, the narrator's frame for the legend", () => {
+  const flea = load("the-steel-flea");
+  assert.deepEqual([...STORY_PREFACE_IDS], ["the-steel-flea"]);
+  const at = storyPrefaceStartIndex(flea);
+  assert.equal(at, 0);
+  assert.equal(flea.scenes[0]?.title, "Preface");
+  assert.equal(flea.scenes[1]?.title, "Chapter I");
+  assert.ok(flea.breaths[0]!.text.startsWith("I cannot tell precisely where the first germ of the Legend concerning the Steel Flea"));
+  assert.equal(openingBreathIndex(flea), 0);
+  // Other books keep skipping a scene titled Preface.
+  assert.equal(storyPrefaceStartIndex(load("steppenwolf")), null);
+  assert.equal(storyPrefaceStartIndex(load("the-story-of-gosta-berling")), null);
+  const shape = readFileSync(new URL("./work-shape.ts", import.meta.url), "utf8");
+  const body = shape.slice(shape.indexOf("export function chapterStartIndex"));
+  assert.ok(body.indexOf("storyPrefaceStartIndex(work)") >= 0, "chapterStartIndex honours the exception");
+  assert.ok(body.indexOf("storyPrefaceStartIndex(work)") < body.indexOf("const skip ="), "before the Preface skip");
 });

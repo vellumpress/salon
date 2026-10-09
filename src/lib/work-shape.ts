@@ -2,7 +2,7 @@ import type { Breath, Scene, Work } from "./literature";
 import { breathsFor } from "./literature";
 import type { ShelfWork } from "./catalog/shelf";
 import { isChapterHeading, isChapterOne, isFrontMatter, repairLines } from "./sentences";
-import { storyIntroductionStartIndex } from "./opening-scene";
+import { storyIntroductionStartIndex, storyPrefaceStartIndex } from "./opening-scene";
 
 export type { Breath, Scene, Work } from "./literature";
 export { breathsFor } from "./literature";
@@ -90,6 +90,9 @@ export function chapterStartIndex(work: Work) {
   // Per-book exception: an "Introduction" that is the story (STORY_INTRODUCTION_IDS).
   const storyIntro = storyIntroductionStartIndex(work);
   if (storyIntro !== null) return storyIntro;
+  // Per-book exception: an author's "Preface" that is the story (STORY_PREFACE_IDS).
+  const storyPreface = storyPrefaceStartIndex(work);
+  if (storyPreface !== null) return storyPreface;
   const skip = /contents|dedication|preface|foreword|epigraph|title|introduction|introducing/i;
   // Only honor "Chapter I" / "Part I" near the front. Late part-markers
   // (e.g. How I Found America → Part I) used to skip earlier stories.

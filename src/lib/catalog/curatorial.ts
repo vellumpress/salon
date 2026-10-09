@@ -1197,6 +1197,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-goose-man",
   // Mira Thu 8 Oct 2026 MID — The Little Clay Cart follows The Goose Man, plain Next (no heads-up card). Never Featured. Off every Ritual lane.
   "the-little-clay-cart",
+  // Mira Fri 9 Oct 2026 AM STEEL-FLEA — The Steel Flea follows The Little Clay Cart, plain Next (no heads-up card). Never Featured. Off every Ritual lane.
+  "the-steel-flea",
 ] as const;
 
 /**

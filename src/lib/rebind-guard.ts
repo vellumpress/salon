@@ -3,12 +3,14 @@ import { remapBreathId, type BreathRemap } from "./kept-lines.ts";
 /**
  * Breath count of the bind a re-bind replaces, keyed by shelf work id
  * (`falcon`, not the title). `falcon: 6154` is the sentence bind the
- * paragraph bind replaced. Tiny on purpose, so a legacy index can notice
- * the re-bind without parsing the remap file. Once the save is stamped
- * with the new count, this row is ignored.
+ * paragraph bind replaced; `"lady-macbeth": 649` is the OCR bind the
+ * proofread Chamot bind replaced. Tiny on purpose, so a legacy index can
+ * notice the re-bind without parsing the remap file. Once the save is
+ * stamped with the new count, this row is ignored.
  */
 export const REBOUND_FROM_COUNT: Readonly<Record<string, number>> = {
   falcon: 6154,
+  "lady-macbeth": 649,
 };
 
 export type FromCountTable = Readonly<Record<string, number>>;
