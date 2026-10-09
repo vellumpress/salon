@@ -72,7 +72,7 @@ const ABOUT: Record<ContributorId, { evidence: string; about: string; why: strin
     about: "A regular habit, measured gently over two weeks.",
     why: "Habits form through a repeated cue. One miss doesn’t undo them, so a missed day is a small dip, not a reset.",
     try: "A ten-minute sit tonight picks the thread back up.",
-    how: "Each of the last 14 days counts a little less than the day after it. That weight is compared with how often you read over the previous eight weeks. A quick visit — under three focused minutes — neither helps nor hurts. There is no streak.",
+    how: "Each of the last 14 days counts a little less than the day after it. That weight is compared with how often you read over the previous eight weeks. Any reading counts, however short. A day with nothing is a small dip, not a reset. There is no streak.",
   },
   return: {
     evidence: "Moderate",

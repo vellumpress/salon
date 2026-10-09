@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
+import { hourglassCopy } from "./score-hourglass.ts";
 import {
   buildReadingScore,
   dailyScoreGlance,
@@ -70,25 +71,73 @@ test("example day lands on 81, Settled, with Connection left out", () => {
   assert.equal(scoreLabel(100), "Deep");
 });
 
-test("one tap then close is a quick visit and does not score", () => {
+test("a one-minute day scores, and rows that are not ready stay learning", () => {
   const model = buildReadingScore({
     now: NOW,
     sittingMinutes: 20,
     ledgers: {
-      readingMinutesByDay: { [keyAt(0)]: 1.5 },
+      readingMinutesByDay: { [keyAt(0)]: 1 },
       advancesByDay: { [keyAt(0)]: 1 },
       sitsByDay: { [keyAt(0)]: 1 },
     },
-    sits: [{ workId: "the-house-of-mirth", minutes: 1.5, endedAt: atHour(0, 21, 5) }],
+    sits: [{ workId: "the-house-of-mirth", minutes: 1, endedAt: atHour(0, 21, 5) }],
   });
-  assert.equal(model.daily.kind, "quick-visit");
-  assert.equal(model.daily.total, 0);
-  assert.equal(model.daily.hasSignal, false);
-  assert.equal(dailyScoreGlance(model.daily), "—");
-  assert.equal(model.daily.label, "Quick visit");
+  assert.equal(model.daily.kind, "reading");
+  assert.equal(Number.isFinite(model.daily.total), true);
+  assert.ok(model.daily.total > 0 && model.daily.total <= 100, `total ${model.daily.total}`);
+  assert.equal(model.daily.hasSignal, true);
+  assert.equal(dailyScoreGlance(model.daily), String(model.daily.total));
+  assert.notEqual(model.daily.label, "Rest");
+  assert.equal(model.month.score, model.daily.total);
+
+  const immersion = model.daily.contributors.find((part) => part.id === "immersion");
+  assert.equal(immersion?.status, "scored");
+  assert.ok((immersion?.value ?? 0) > 0 && (immersion?.value ?? 0) < 50);
+
+  const learning = model.daily.contributors.filter((part) => part.status === "learning");
+  assert.ok(learning.length > 0, "expected at least one still-learning row");
+  for (const part of learning) {
+    assert.equal(part.value, null);
+    assert.match(part.note, /still learning/i);
+  }
+
+  const copy = hourglassCopy({
+    kind: model.daily.kind,
+    total: model.daily.total,
+    label: model.daily.label,
+    hide: false,
+    paused: false,
+    learning: Boolean(model.daily.learningNote),
+    scored: model.daily.contributors.some((part) => part.status === "scored" && part.value != null),
+  });
+  assert.equal(copy.sand, model.daily.total);
+  assert.equal(copy.primary, String(model.daily.total));
+  assert.equal(copy.secondary, "Still learning");
+  assert.notEqual(copy.state, "rest");
+
+  const rest = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers: { readingMinutesByDay: { [keyAt(0)]: 0 } },
+  });
+  assert.equal(rest.daily.kind, "rest");
+  assert.equal(rest.daily.total, 0);
+  assert.equal(rest.daily.label, "Rest");
+  assert.equal(dailyScoreGlance(rest.daily), "—");
+  const restGlass = hourglassCopy({
+    kind: rest.daily.kind,
+    total: rest.daily.total,
+    label: rest.daily.label,
+    hide: false,
+    paused: false,
+    learning: Boolean(rest.daily.learningNote),
+    scored: false,
+  });
+  assert.equal(restGlass.sand, null);
+  assert.equal(restGlass.primary, "Rest");
 });
 
-test("skimming 20 breaths in a minute does not score", () => {
+test("a one-minute burst still scores when pace is unknown", () => {
   const model = buildReadingScore({
     now: NOW,
     sittingMinutes: 20,
@@ -98,9 +147,10 @@ test("skimming 20 breaths in a minute does not score", () => {
       sitsByDay: { [keyAt(0)]: 1 },
     },
   });
-  assert.equal(model.daily.kind, "quick-visit");
-  assert.equal(model.daily.total, 0);
-  assert.equal(dailyScoreGlance(model.daily), "—");
+  assert.equal(model.daily.kind, "reading");
+  assert.ok(model.daily.total > 0 && model.daily.total <= 100);
+  assert.equal(dailyScoreGlance(model.daily), String(model.daily.total));
+  assert.equal(model.daily.skimmed, false);
 });
 
 test("a longer skim against a slow baseline does not score high", () => {
@@ -196,7 +246,7 @@ test("a missed day costs a daily reader about 2 points", () => {
   assert.notEqual(missed.daily.label, "Full");
 });
 
-test("quick visits do not credit or penalise rhythm", () => {
+test("a one-minute day counts as reading for rhythm, a blank day does not", () => {
   const ledgers = fillDays(70, 20, 16);
   const yesterday = keyAt(1);
   ledgers.readingMinutesByDay[yesterday] = 1;
