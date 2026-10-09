@@ -1,4 +1,7 @@
 # Static SPA at https://vellumpress.github.io/salon/ (Vite base /salon/).
+# Unit tests, the reader smoke, and the production build run together.
+# Deploy waits for all three. The ten-run tap stress and the full catalog
+# walk run after this, in the catalog-walk workflow, and do not block it.
 name: Deploy GitHub Pages
 
 on:
@@ -16,8 +19,45 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  unit:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Cache node_modules
+        id: modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.modules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Unit tests
+        run: npm run test:unit
+        env:
+          TEST_CONCURRENCY: "4"
+
+      - name: Typecheck
+        run: npm run typecheck
+
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ["1/2", "2/2"]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,8 +71,23 @@ jobs:
           node-version: 22
           cache: npm
 
+      - name: Cache node_modules
+        id: modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
       - name: Install
+        if: steps.modules.outputs.cache-hit != 'true'
         run: npm ci
+
+      - name: Cache Playwright browsers
+        id: playwright
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
 
       - name: Install browser
         run: npx playwright install --with-deps chromium
@@ -41,17 +96,40 @@ jobs:
         if: github.event_name == 'push' && github.event.before != '0000000000000000000000000000000000000000'
         run: git fetch --no-tags --depth=1 origin "${{ github.event.before }}" || true
 
-      - name: Test
-        run: npm test
+      - name: Reader smoke
+        run: npm run test:smoke
         env:
-          # Every other test still runs. The catalog walk is the day's window,
-          # books changed in this push, and the anchor books. The full walk is
-          # the catalog-walk workflow, and it does not block this deploy.
+          # Taps, sits, score, share, and the catalog sample. The ten-run
+          # stress is skipped here and runs after deploy.
+          TEST_SHARD: ${{ matrix.shard }}
+          TEST_CONCURRENCY: "4"
+          TAP_STRESS: skip
           CATALOG_WALK: sample
           CATALOG_DIFF_BASE: ${{ github.event.before }}
 
-      - name: Typecheck
-        run: npm run typecheck
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Cache node_modules
+        id: modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.modules.outputs.cache-hit != 'true'
+        run: npm ci
 
       - name: Build
         run: npm run build
@@ -72,8 +150,9 @@ jobs:
           path: dist
 
   deploy:
-    needs: build
+    needs: [unit, smoke, build]
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

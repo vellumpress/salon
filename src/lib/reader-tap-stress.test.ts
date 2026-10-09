@@ -618,7 +618,11 @@ async function importPdf(page: Page) {
 
 test(
   "five hundred mixed taps step exactly one sentence, ten runs",
-  { timeout: 1_800_000 },
+  {
+    timeout: 1_800_000,
+    // Pre-deploy smoke skips this. The after-deploy workflow runs it in full.
+    ...(process.env.TAP_STRESS === "skip" ? { skip: "runs after deploy" } : {}),
+  },
   async () => {
     const stop = await ensureServer();
     const browser = await launchChromium();
@@ -762,7 +766,25 @@ async function openCatalogOnce(page: Page, id: string, at: number) {
     }
   }
   const message = last instanceof Error ? last.message.split("\n")[0] : String(last);
-  throw new Error(`${id} at ${at} did not open (${message})`);
+  let onPage = "";
+  try {
+    const text = await page.evaluate(() =>
+      (document.body?.innerText || "").replace(/\s+/g, " ").trim().slice(0, 160),
+    );
+    if (text) onPage = ` — page: ${text}`;
+  } catch {
+    /* the page is already gone */
+  }
+  throw new Error(`${id} at ${at} did not open (${message})${onPage}`);
+}
+
+/** A long walk keeps one tab. A fresh tab drops the book modules that tab has parsed. */
+async function freshPage(browser: Browser, page: Page) {
+  await Promise.race([
+    page.context().close().catch(() => undefined),
+    new Promise((resolve) => setTimeout(resolve, 5_000)),
+  ]);
+  return phone(browser);
 }
 
 /** A goto timeout gets one fresh page. A step miss is never retried. */
@@ -822,6 +844,9 @@ async function walkCatalog(browser: Browser, mode: "sample" | "full") {
   let seen = 0;
   const stepped = new Set<string>();
   for (const id of planned) {
+    if (mode === "full" && seen > 0 && seen % 40 === 0) {
+      page = await freshPage(browser, page);
+    }
     const length = breathCount(id);
     if (length < 2) continue;
     const bound = chapterOpen(id);
