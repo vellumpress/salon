@@ -52,7 +52,7 @@ class FakeCaches {
   }
 }
 
-function loadWorker({ onLine = false, fetchImpl, clients = [] } = {}) {
+function loadWorker({ onLine = false, fetchImpl, clients = [], manifest } = {}) {
   const caches = new FakeCaches();
   const listeners = {};
   const sandbox = {
@@ -64,6 +64,9 @@ function loadWorker({ onLine = false, fetchImpl, clients = [] } = {}) {
     Promise,
     setTimeout,
     clearTimeout,
+    setInterval,
+    clearInterval,
+    AbortController,
     RegExp,
     JSON,
     Date,
@@ -94,7 +97,7 @@ function loadWorker({ onLine = false, fetchImpl, clients = [] } = {}) {
   sandbox.globalThis = sandbox;
   vm.createContext(sandbox);
   vm.runInContext(
-    `${renderShellServiceWorker()}\nglobalThis.__tbr = { handleNavigate: handleNavigate, dropShellForRecovery: dropShellForRecovery, offlinePage: offlinePage, warmFonts: warmFonts, isStaticAsset: isStaticAsset, withFreshParam: withFreshParam };`,
+    `${renderShellServiceWorker(manifest)}\nglobalThis.__tbr = { handleNavigate: handleNavigate, dropShellForRecovery: dropShellForRecovery, offlinePage: offlinePage, warmFonts: warmFonts, isStaticAsset: isStaticAsset, withFreshParam: withFreshParam, fillCatalog: fillCatalog };`,
     sandbox,
   );
   return { caches, api: sandbox.__tbr, sandbox, listeners };
@@ -371,6 +374,19 @@ async function runActivate(worker) {
   await pending;
 }
 
+/** Rejects if `task` is still pending after `ms`, and cancels the timer when it wins. */
+async function within(ms, task, label) {
+  let timer;
+  const timeout = new Promise((_, reject) => {
+    timer = setTimeout(() => reject(new Error(label)), ms);
+  });
+  try {
+    return await Promise.race([Promise.resolve(task), timeout]);
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 test("a first install does not reload a reader who is already mid-sit", async () => {
   const { client, navigated } = openReader();
   const html = shellHtml("/salon/assets/index-roOwEHpA.js");
@@ -380,6 +396,7 @@ test("a first install does not reload a reader who is already mid-sit", async ()
     clients: [client],
   });
   await runActivate(worker);
+  await worker.api.fillCatalog();
   assert.deepEqual(navigated, []);
   const cache = await worker.caches.open("tbr-shell-v3");
   const stored = await cache.match(SHELL_URL);
@@ -397,6 +414,7 @@ test("a shell commit of the same build does not reload an open reader", async ()
   });
   await putShell(worker.caches, "tbr-shell-v3", html);
   await runActivate(worker);
+  await worker.api.fillCatalog();
   assert.deepEqual(navigated, []);
 });
 
@@ -409,10 +427,77 @@ test("a new build reloads an open reader through __fresh and keeps the sit query
   });
   await putShell(worker.caches, "tbr-shell-v3", shellHtml("/salon/assets/index-roOwEHpA.js"));
   await runActivate(worker);
+  await worker.api.fillCatalog();
   assert.equal(navigated.length, 1);
   assert.match(navigated[0], /\/salon\/read\/the-house-of-mirth/);
   assert.match(navigated[0], /sit=5/);
   assert.match(navigated[0], /__fresh=/);
+});
+
+test("__fresh navigation is not held behind precache", async () => {
+  const books = Array.from({ length: 24 }, (_, i) => `/salon/assets/book-${i}.js`);
+  const boot = ["/salon/assets/index-live.js"];
+  const html = shellHtml("/salon/assets/index-live.js");
+  let startedBooks = 0;
+  const worker = loadWorker({
+    onLine: true,
+    manifest: { precache: boot.concat(books), boot },
+    fetchImpl(input) {
+      const url = String(input && input.url ? input.url : input);
+      let path = "";
+      try { path = new URL(url).pathname; } catch { path = ""; }
+      if (path === "/salon" || path === "/salon/" || path === "/salon/index.html") {
+        return Promise.resolve(new Response(html, {
+          status: 200,
+          headers: { "content-type": "text/html; charset=utf-8" },
+        }));
+      }
+      if (path === "/salon/assets/index-live.js" || path.endsWith(".css")) {
+        const type = path.endsWith(".css") ? "text/css" : "text/javascript";
+        return Promise.resolve(new Response("/* live */", { status: 200, headers: { "content-type": type } }));
+      }
+      if (/\/salon\/assets\/book-\d+\.js$/.test(path)) {
+        startedBooks += 1;
+        return new Promise(() => {});
+      }
+      return Promise.resolve(new Response("", { status: 200, headers: { "content-type": "text/plain" } }));
+    },
+  });
+
+  await within(2000, runActivate(worker), "activate held the worker");
+  let poll;
+  const precacheInFlight = new Promise((resolve) => {
+    poll = setInterval(() => {
+      if (startedBooks >= 5) resolve(startedBooks);
+    }, 10);
+  });
+  try {
+    assert.ok(await within(2000, precacheInFlight, "precache never started") >= 5);
+  } finally {
+    clearInterval(poll);
+  }
+
+  const event = {
+    request: {
+      url: `${ORIGIN}/salon/read/the-house-of-mirth?sit=5&__fresh=99`,
+      method: "GET",
+      mode: "navigate",
+    },
+    waitUntil() {},
+    preloadResponse: Promise.resolve(undefined),
+    respondWith(promise) {
+      event.result = promise;
+    },
+  };
+  const hung = startedBooks;
+  worker.listeners.fetch(event);
+  const res = await within(2000, event.result, "navigation held behind precache");
+  assert.equal(res.status, 200);
+  const body = await res.text();
+  assert.match(body, /index-live/);
+  assert.match(body, /data-spa-pages-restore/);
+  assert.doesNotMatch(body, /Offline/);
+  assert.ok(startedBooks >= hung, "book downloads were still unfinished when the page was answered");
 });
 
 test("a shell refresh keeps the Pages shim query", () => {
