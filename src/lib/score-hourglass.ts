@@ -1,37 +1,28 @@
 /**
- * Score hourglass geometry. Same drawing as the reader hourglass in
- * `components/hourglass.tsx` — flat caps, straight bulbs, one neck — opened
- * wider so it holds the ring's square. Fill height follows the score the way
- * the reader glass fills: 0 keeps the top bulb full, 100 leaves the sand
- * in the bottom.
+ * Score hourglass geometry. The same classical drawing as the reader
+ * hourglass in `components/hourglass.tsx`: thin bowtie, a bar at each end.
+ * Sand is stippled grain. 0 keeps the top bulb full, 100 leaves the sand
+ * in the bottom. A rest day draws the glass empty.
  */
 
 import { CONTRIBUTOR_WEIGHTS, type ContributorId, type ContributorResult, type DayKind } from "./reading-score.ts";
 
-/**
- * Reader bowtie, widened for the ring's square. Same parts: flat caps,
- * two straight bulbs, a single neck. The timer icon stays narrow
- * (`16,12 104,12 60,110 …`); this one is the same drawing opened up so
- * it holds the 13rem box.
- */
+/** Reader bowtie, unchanged: `16,12 104,12 60,110 104,208 16,208 60,110`. */
 export const GLASS = {
-  viewW: 200,
-  viewH: 206,
-  outline: "18,14 182,14 100,105 182,196 18,196 100,105",
-  stroke: 2.5,
-  cap: { x: 12, width: 176, height: 6, top: 6, bottom: 198 },
+  viewW: 120,
+  viewH: 220,
+  outline: "16,12 104,12 60,110 104,208 16,208 60,110",
+  stroke: 3,
+  cap: { x: 10, width: 100, height: 8, top: 8, bottom: 204 },
   /** Sand field, just inside the stroke. Both bulbs are the same height. */
-  upper: { left: 26, right: 174, top: 22, apexX: 100, apexY: 98 },
-  lower: { left: 26, right: 174, bottom: 188, apexX: 100, apexY: 112 },
+  upper: { left: 22, right: 98, top: 22, apexX: 60, apexY: 108 },
+  lower: { left: 22, right: 98, bottom: 198, apexX: 60, apexY: 112 },
 } as const;
 
 export const GLASS_UPPER_CLIP = `${GLASS.upper.left},${GLASS.upper.top} ${GLASS.upper.right},${GLASS.upper.top} ${GLASS.upper.apexX},${GLASS.upper.apexY}`;
 export const GLASS_LOWER_CLIP = `${GLASS.lower.apexX},${GLASS.lower.apexY} ${GLASS.lower.right},${GLASS.lower.bottom} ${GLASS.lower.left},${GLASS.lower.bottom}`;
 
-/** Empty glass. Same neutral the score ring used for its track. */
-export const SCORE_TRACK = "var(--color-paper-deep)";
-
-/** Contributor colors, in the same order and variables as the old ring. */
+/** Contributor colors stay on the score rows. The glass itself is ink on paper. */
 export const SCORE_SAND_COLOR: Record<ContributorId, string> = {
   immersion: "var(--color-forest)",
   rhythm: "var(--color-yellow)",
@@ -92,6 +83,7 @@ export function hourglassCopy(input: {
   else primary = input.label;
 
   const secondary = showNumber ? (input.learning ? "Still learning" : input.label) : null;
+  if (!primary || primary === "NaN") primary = input.kind === "rest" ? "Rest" : "Still learning";
 
   let aria: string;
   if (input.paused) aria = "Scoring is paused";
@@ -121,93 +113,107 @@ export function sandBands(parts: ContributorResult[]): SandBand[] {
   return bands;
 }
 
-export type SandLayer = {
-  id: string;
-  color: string;
-  points: string;
-};
-
 type Bulb = "upper" | "lower";
 
 function round(n: number): number {
   return Math.round(n * 100) / 100;
 }
 
-/** `t` is 0 at the neck (apex) and 1 at the wide end of that bulb. */
-function edge(bulb: Bulb, t: number): { xL: number; xR: number; y: number } {
-  const u = Math.max(0, Math.min(1, t));
-  if (bulb === "upper") {
-    const { left, right, top, apexX, apexY } = GLASS.upper;
-    return {
-      y: round(apexY + (top - apexY) * u),
-      xL: round(apexX + (left - apexX) * u),
-      xR: round(apexX + (right - apexX) * u),
-    };
-  }
-  const { left, right, bottom, apexX, apexY } = GLASS.lower;
-  return {
-    y: round(apexY + (bottom - apexY) * u),
-    xL: round(apexX + (left - apexX) * u),
-    xR: round(apexX + (right - apexX) * u),
-  };
+export type SandGrain = {
+  id: string;
+  cx: number;
+  cy: number;
+  r: number;
+};
+
+const UPPER_TRI = [
+  [GLASS.upper.left, GLASS.upper.top],
+  [GLASS.upper.right, GLASS.upper.top],
+  [GLASS.upper.apexX, GLASS.upper.apexY],
+] as const;
+
+const LOWER_TRI = [
+  [GLASS.lower.apexX, GLASS.lower.apexY],
+  [GLASS.lower.right, GLASS.lower.bottom],
+  [GLASS.lower.left, GLASS.lower.bottom],
+] as const;
+
+function grainHash(n: number): number {
+  const x = Math.sin(n * 127.1) * 43758.5453;
+  return x - Math.floor(x);
 }
 
-function trapezoid(bulb: Bulb, t0: number, t1: number): string {
-  const a = edge(bulb, t0);
-  const b = edge(bulb, t1);
-  return [
-    [a.xL, a.y],
-    [a.xR, a.y],
-    [b.xR, b.y],
-    [b.xL, b.y],
-  ]
-    .map(([x, y]) => `${x},${y}`)
-    .join(" ");
+function insideTriangle(
+  x: number,
+  y: number,
+  tri: readonly (readonly [number, number])[],
+  margin: number,
+): boolean {
+  const [a, b, c] = tri;
+  if (!a || !b || !c) return false;
+  const v0x = c[0] - a[0];
+  const v0y = c[1] - a[1];
+  const v1x = b[0] - a[0];
+  const v1y = b[1] - a[1];
+  const v2x = x - a[0];
+  const v2y = y - a[1];
+  const dot00 = v0x * v0x + v0y * v0y;
+  const dot01 = v0x * v1x + v0y * v1y;
+  const dot02 = v0x * v2x + v0y * v2y;
+  const dot11 = v1x * v1x + v1y * v1y;
+  const dot12 = v1x * v2x + v1y * v2y;
+  const denom = dot00 * dot11 - dot01 * dot01;
+  if (!(denom > 0)) return false;
+  const inv = 1 / denom;
+  const u = (dot11 * dot02 - dot01 * dot12) * inv;
+  const v = (dot00 * dot12 - dot01 * dot02) * inv;
+  return u >= margin && v >= margin && u + v <= 1 - margin;
 }
 
 /**
- * Split a bulb's sand into contributor bands.
- * `fraction` is the share of that bulb's height that holds sand (0–1).
+ * Stipple one bulb. `fraction` is how much of that bulb holds sand.
  * Upper sand sits on the neck; lower sand sits on the base.
- * Height tracks the score, so 80 reads as a nearly full bottom bulb.
  */
-function bulbLayers(bulb: Bulb, fraction: number, bands: SandBand[]): SandLayer[] {
-  if (!(fraction > 0) || bands.length === 0) return [];
-  const f = Math.min(1, fraction);
-  const t0 = bulb === "upper" ? 0 : 1 - f;
-  const t1 = bulb === "upper" ? f : 1;
-  const span = t1 - t0;
-  if (!(span > 0)) return [];
-  const weightSum = bands.reduce((sum, band) => sum + band.weight, 0);
-  if (!(weightSum > 0)) return [];
-  // Gravity: the first contributor rests nearest the neck in the top bulb
-  // and nearest the base in the bottom bulb, so the pile reads as one stack.
-  const ordered = bulb === "lower" ? [...bands].reverse() : bands;
-  let cursor = t0;
-  const layers: SandLayer[] = [];
-  for (const band of ordered) {
-    const next = cursor + span * (band.weight / weightSum);
-    if (next - cursor > 0.004) {
-      layers.push({
-        id: `${bulb}-${band.id}`,
-        color: band.color,
-        points: trapezoid(bulb, cursor, next),
+function bulbGrains(bulb: Bulb, fraction: number): SandGrain[] {
+  if (!(fraction > 0.015)) return [];
+  const tri = bulb === "upper" ? UPPER_TRI : LOWER_TRI;
+  const top = Math.min(...tri.map((point) => point[1]));
+  const bottom = Math.max(...tri.map((point) => point[1]));
+  const height = bottom - top;
+  const sandTop = bulb === "upper" ? bottom - fraction * height : top;
+  const sandBottom = bulb === "upper" ? bottom : top + fraction * height;
+  const grains: SandGrain[] = [];
+  const step = 6.4;
+  let n = bulb === "upper" ? 11 : 410;
+  for (let y = top + 2.2; y <= bottom - 1.2; y += step) {
+    for (let x = GLASS.upper.left; x <= GLASS.upper.right; x += step) {
+      n += 1;
+      const cx = x + (grainHash(n) - 0.5) * 1.4;
+      const cy = y + (grainHash(n + 17) - 0.5) * 1.2;
+      if (cy < sandTop || cy > sandBottom) continue;
+      if (!insideTriangle(cx, cy, tri, 0.02)) continue;
+      grains.push({
+        id: `${bulb}-${grains.length}`,
+        cx: round(cx),
+        cy: round(cy),
+        r: round(1.55 + grainHash(n + 29) * 0.55),
       });
     }
-    cursor = next;
   }
-  return layers;
+  return grains;
 }
 
-export function sandLayers(
-  score: number,
-  bands: SandBand[],
-): { upper: SandLayer[]; lower: SandLayer[] } {
+/** Fine grain for a 0–100 sand level. Empty when there is nothing to pour. */
+export function sandGrains(score: number): SandGrain[] {
+  if (!Number.isFinite(score)) return [];
   const settled = Math.max(0, Math.min(1, score / 100));
-  return {
-    upper: bulbLayers("upper", 1 - settled, bands),
-    lower: bulbLayers("lower", settled, bands),
-  };
+  const grains = [...bulbGrains("upper", 1 - settled), ...bulbGrains("lower", settled)];
+  if (settled > 0.06 && settled < 0.94) {
+    for (let i = 0; i < 3; i++) {
+      grains.push({ id: `neck-${i}`, cx: GLASS.upper.apexX, cy: round(109.2 + i * 1.5), r: 1.35 });
+    }
+  }
+  return grains;
 }
 
 /** Shoelace area. */
@@ -231,16 +237,13 @@ export function polygonArea(points: string): number {
 }
 
 /** Vertical span of a sand pile, in viewBox units. */
-export function sandHeight(layers: SandLayer[]): number {
+export function sandHeight(grains: { cy: number }[]): number {
   let min = Infinity;
   let max = -Infinity;
-  for (const layer of layers) {
-    for (const pair of layer.points.split(" ")) {
-      const y = Number(pair.split(",")[1]);
-      if (!Number.isFinite(y)) continue;
-      min = Math.min(min, y);
-      max = Math.max(max, y);
-    }
+  for (const grain of grains) {
+    if (!Number.isFinite(grain.cy)) continue;
+    min = Math.min(min, grain.cy);
+    max = Math.max(max, grain.cy);
   }
   if (!Number.isFinite(min) || !Number.isFinite(max)) return 0;
   return max - min;

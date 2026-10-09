@@ -170,7 +170,9 @@ export function migrateReadingClock<T extends ReadingClockState>(
   return {
     ...state,
     readingMinutesByDay: {},
-    sitHistory: (state.sitHistory ?? []).map((row) => ({ ...row, minutes: 0 })),
+      sitHistory: (Array.isArray(state.sitHistory) ? state.sitHistory : []).flatMap((row) =>
+        row && typeof row === "object" ? [{ ...row, minutes: 0 }] : [],
+      ),
     advancesByDay: {},
     lastActiveReadAt: 0,
     activeReadVersion: ACTIVE_READ_VERSION,

@@ -1,23 +1,19 @@
+import { Component, lazy, Suspense, useLayoutEffect, useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useMemo, useState } from "react";
-import { getMe, pushReading, saveSettings, type Me } from "@/lib/account";
-import { SIT_PRESETS } from "@/lib/sitting";
-import { ReaderAuthForm } from "@/components/reader-auth-form";
-import { SignOutMark } from "@/components/sign-out";
+import { PagesShell } from "@/components/pages-shell";
 import { YouReading } from "@/components/you-reading";
+import { useLastRead, usePersistHydrated } from "@/components/resume-link";
+import { RITUAL_LANES, worksForRitualLane } from "@/lib/catalog/rituals";
+import { readDaylightEnabled } from "@/lib/daylight-colors";
+import { deriveReadingStats } from "@/lib/reading-stats";
+import { mixSeed, takeShuffled } from "@/lib/recommend";
 import { formatHandle } from "@/lib/social";
 import { useTbr } from "@/lib/store";
-import { deriveReadingStats } from "@/lib/reading-stats";
-import { readDaylightEnabled } from "@/lib/daylight-colors";
-import { RITUAL_LANES, worksForRitualLane } from "@/lib/catalog/rituals";
-import { useLastRead } from "@/components/resume-link";
-import { cn } from "@/lib/utils";
-import { mixSeed, takeShuffled } from "@/lib/recommend";
-import { useFavoriteSync } from "@/lib/use-favorite-sync";
-import { liveBackendEnabled } from "@/lib/site";
-import { confirmEmailMessage } from "@/lib/remote-auth";
-import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { useVisitSeed } from "@/lib/use-visit-seed";
+
+const YouAccountShell = lazy(() =>
+  import("@/components/you-account").then((mod) => ({ default: mod.YouAccountShell })),
+);
 
 export const Route = createFileRoute("/profile/")({
   component: ProfilePage,
@@ -53,44 +49,31 @@ function dayPrompt() {
   };
 }
 
+/**
+ * Direct /you HTML is the wordmark. Matching it on the first client render
+ * avoids hydration error #422, which was leaving the score unmounted on iPhone.
+ * The layout effect then paints Today from local data before the browser paints.
+ */
 function ProfilePage() {
-  const session = useReaderSession();
-  if (session.isPending) {
-    return (
-      <div className="frame-screen bg-paper text-ink">
-        <header className="flex shrink-0 items-stretch border-b border-ink">
-          <Link
-            to="/"
-            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center bg-ink px-4 text-paper"
-          >
-            Home
-          </Link>
-          <h1 className="type-mark flex min-w-0 flex-1 items-center px-4">
-            You
-          </h1>
-          <Link
-            to="/friends"
-            className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-paper px-4 text-ink"
-          >
-            Friends
-          </Link>
-        </header>
-        <div className="flex min-h-36 flex-col justify-end border-b border-ink bg-paper p-5 text-ink sm:p-8">
-          <p className="type-kicker text-muted">This sitting</p>
-          <p className="mt-2 type-title">You</p>
-        </div>
-      </div>
-    );
-  }
-  return <ProfileBody session={session} />;
+  const [booted, setBooted] = useState(false);
+  useLayoutEffect(() => {
+    setBooted(true);
+  }, []);
+  if (!booted) return <PagesShell />;
+  return <ProfileBody />;
 }
 
-function ProfileBody({
-  session,
-}: {
-  session: ReturnType<typeof useReaderSession>;
-}) {
-  const { identity, liveUser, hasAccounts, storeHandle, createAccount, signIn } = session;
+class AccountBoundary extends Component<{ children: ReactNode; fallback: ReactNode }, { failed: boolean }> {
+  state = { failed: false };
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+  render() {
+    return this.state.failed ? this.props.fallback : this.props.children;
+  }
+}
+
+function ProfileBody() {
   const progress = useTbr((s) => s.progress);
   const joined = useTbr((s) => s.joined) ?? [];
   const sittingMinutes = useTbr((s) => s.sittingMinutes);
@@ -111,65 +94,11 @@ function ProfileBody({
   const insightDismissed = useTbr((s) => s.insightDismissed);
   const insightSeen = useTbr((s) => s.insightSeen);
   const handle = useTbr((s) => s.handle) ?? "";
-  const setTaste = useTbr((s) => s.setTaste);
-  const setSittingMinutes = useTbr((s) => s.setSittingMinutes);
-  const { hydrated, favorites } = useFavoriteSync(liveUser);
+  const favorites = useTbr((s) => s.favorites) ?? [];
+  const hydrated = usePersistHydrated();
   const visit = useVisitSeed();
-  const [me, setMe] = useState<Me | null>(null);
-  const [name, setName] = useState(identity?.displayName ?? "");
-  const [sit, setSit] = useState<number>(sittingMinutes);
-  const [saved, setSaved] = useState(false);
-  const [error, setError] = useState("");
-  const [saving, setSaving] = useState(false);
-  const [authMode, setAuthMode] = useState<ReaderAuthMode>(hasAccounts ? "in" : "up");
-  const [authError, setAuthError] = useState("");
-  const [authBusy, setAuthBusy] = useState(false);
-  const [confirmNote, setConfirmNote] = useState("");
-
-  useEffect(() => {
-    if (hasAccounts) setAuthMode("in");
-  }, [hasAccounts]);
-
-  useEffect(() => {
-    if (!liveUser || !liveBackendEnabled) return;
-    let alive = true;
-    void getMe({ data: { name: liveUser.displayName ?? "" } })
-      .then((row) => {
-        if (!alive) return;
-        setMe(row);
-        setName(row.name || liveUser.displayName || "");
-        setSit(row.sittingMinutes);
-        setSittingMinutes(row.sittingMinutes);
-        setTaste(row.taste);
-      })
-      .catch((err: unknown) => {
-        if (!alive) return;
-        if (err instanceof Error && err.message !== "Unauthorized") {
-          setError(err.message);
-        }
-      });
-    return () => {
-      alive = false;
-    };
-  }, [liveUser, setSittingMinutes, setTaste]);
-
-  useEffect(() => {
-    if (!hydrated || !liveUser || !liveBackendEnabled) return;
-    const entries = Object.entries(progress)
-      .filter(([id, item]) => item.entered && id !== "page" && !id.startsWith("import-"))
-      .slice(0, 80)
-      .map(([id, item]) => ({
-        workId: id,
-        breathIndex: item.breathIndex,
-        kept: item.kept?.length ?? 0,
-        completed: Boolean(item.completedAt),
-        lastOpenedAt: item.lastOpenedAt || Date.now(),
-      }));
-    if (entries.length === 0) return;
-    void pushReading({ data: { entries } }).catch(() => undefined);
-  }, [hydrated, progress, liveUser]);
-
   const last = useLastRead();
+
   const reading = useMemo(
     () =>
       deriveReadingStats({
@@ -229,177 +158,38 @@ function ProfileBody({
     return { ...base, work: pick };
   }, [visit]);
 
-  const shownHandle = formatHandle(identity?.handle || handle);
+  const signIn = (
+    <Link
+      to="/login"
+      className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
+    >
+      Sign in
+    </Link>
+  );
+  const localSettings = (
+    <section>
+      <p className="border-b border-ink px-4 py-3 type-kicker text-muted">A sitting</p>
+      <p className="px-4 py-4 type-lede">Still learning</p>
+    </section>
+  );
 
-  async function submitCreate(input: { handle: string; email: string; password: string }) {
-    setAuthBusy(true);
-    setAuthError("");
-    try {
-      const result = await createAccount(input);
-      if (result.confirmEmail) setConfirmNote(confirmEmailMessage(result.handle));
-      else if (result.notice) setConfirmNote(result.notice);
-    } catch (err) {
-      setAuthError(err instanceof Error ? err.message : "Could not create the account");
-    } finally {
-      setAuthBusy(false);
-    }
-  }
-
-  async function submitSignIn(input: { email: string; password: string }) {
-    setAuthBusy(true);
-    setAuthError("");
-    try {
-      const result = await signIn(input);
-      if (result.confirmEmail) setConfirmNote(confirmEmailMessage(result.handle));
-      else if (result.notice) setConfirmNote(result.notice);
-    } catch (err) {
-      setAuthError(err instanceof Error ? err.message : "Could not sign in");
-    } finally {
-      setAuthBusy(false);
-    }
-  }
-
-  async function save() {
-    if (!identity) return;
-    setSaving(true);
-    setError("");
-    setSaved(false);
-    try {
-      setSittingMinutes(sit);
-      if (liveUser && liveBackendEnabled) {
-        const row = await saveSettings({
-          data: {
-            name: name.trim().slice(0, 80),
-            sittingMinutes: sit,
-            taste: me?.taste ?? "",
-          },
-        });
-        setMe(row);
-        setSittingMinutes(row.sittingMinutes);
-        setTaste(row.taste);
-      }
-      setSaved(true);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Could not keep that");
-    } finally {
-      setSaving(false);
-    }
-  }
-
-  return (
+  const renderPage = (slots: {
+    headerEnd: ReactNode;
+    settings: ReactNode;
+    handle?: string;
+    notice?: string;
+  }) => (
     <div className="frame-screen bg-paper text-ink">
       <YouReading
         reading={reading}
         hydrated={hydrated}
-        handle={shownHandle}
+        handle={slots.handle || formatHandle(handle)}
         progress={progress}
         favorites={favorites}
         last={last}
-        notice={confirmNote || undefined}
-        headerEnd={
-          <>
-            {me?.role === "staff" ? (
-              <Link
-                to="/desk"
-                className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
-              >
-                Desk
-              </Link>
-            ) : null}
-            {identity ? <SignOutMark className="border-l border-paper" /> : null}
-            {!identity ? (
-              <Link
-                to="/login"
-                className="type-chrome inline-flex h-12 shrink-0 items-center justify-center border-l border-ink bg-red px-4 text-paper"
-              >
-                Sign in
-              </Link>
-            ) : null}
-          </>
-        }
-        settings={
-          <>
-            {!identity ? (
-              <section>
-                <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-                  {authMode === "up" ? "Create an account" : "Sign in"}
-                </p>
-                <ReaderAuthForm
-                  mode={authMode}
-                  onMode={setAuthMode}
-                  defaultHandle={storeHandle}
-                  busy={authBusy}
-                  error={authError}
-                  onCreate={(input) => void submitCreate(input)}
-                  onSignIn={(input) => void submitSignIn(input)}
-                />
-              </section>
-            ) : (
-              <section>
-                <div className="flex items-stretch border-b border-ink">
-                  <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
-                    @name
-                  </span>
-                  <span className="type-lede flex h-12 min-w-0 flex-1 items-center">
-                    {formatHandle(identity.handle)}
-                  </span>
-                </div>
-                <div className="flex items-stretch border-b border-ink">
-                  <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">
-                    Email
-                  </span>
-                  <span className="type-lede flex h-12 min-w-0 flex-1 items-center">
-                    {identity.email}
-                  </span>
-                </div>
-                <p className="border-b border-ink px-4 py-3 type-kicker text-muted">
-                  A sitting
-                </p>
-                <div className="rail" role="list" aria-label="A sitting">
-                  {SIT_PRESETS.map((option, i) => {
-                    const fills = [
-                      "bg-red text-paper",
-                      "bg-blue text-paper",
-                      "bg-yellow text-ink",
-                      "bg-forest text-paper",
-                      "bg-ink text-paper",
-                      "bg-paper-deep text-ink",
-                    ];
-                    return (
-                      <button
-                        key={option.minutes}
-                        type="button"
-                        role="listitem"
-                        onClick={() => setSit(option.minutes)}
-                        className={cn(
-                          "you-tile is-sit font-sans text-sm",
-                          fills[i % fills.length],
-                          sit === option.minutes ? "opacity-100" : "opacity-55",
-                        )}
-                      >
-                        {option.label}
-                      </button>
-                    );
-                  })}
-                </div>
-                {error ? (
-                  <p className="border-b border-ink bg-yellow px-4 py-3 font-sans text-sm text-ink">
-                    {error}
-                  </p>
-                ) : null}
-                <button
-                  type="button"
-                  disabled={saving}
-                  onClick={() => void save()}
-                  className="flex h-14 w-full items-center justify-center bg-ink font-sans text-sm text-paper disabled:opacity-60"
-                >
-                  {saving ? "Keeping…" : saved ? "Kept" : "Keep"}
-                </button>
-                <SignOutMark className="h-14 w-full border-0" />
-              </section>
-            )}
-          </>
-        }
+        notice={slots.notice}
+        headerEnd={slots.headerEnd}
+        settings={slots.settings}
         trendsEnd={
           <section>
             <p className="border-b border-ink px-4 py-3 type-kicker text-muted">For now</p>
@@ -430,5 +220,15 @@ function ProfileBody({
         }
       />
     </div>
+  );
+
+  const local = renderPage({ headerEnd: signIn, settings: localSettings });
+
+  return (
+    <AccountBoundary fallback={local}>
+      <Suspense fallback={local}>
+        <YouAccountShell page={renderPage} />
+      </Suspense>
+    </AccountBoundary>
   );
 }
