@@ -728,6 +728,8 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-little-clay-cart": "India",
   "zanzibar-tales": "Tanzania",
   "the-steel-flea": "Russia",
+  "comedies-incl-jeppe-of-the-hill": "Denmark",
+  "tales-from-the-fjeld": "Norway",
   "the-dancing-master": "France",
   "the-golden-age": "United Kingdom",
   "the-mist": "Denmark",

@@ -1199,6 +1199,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-little-clay-cart",
   // Mira Fri 9 Oct 2026 AM STEEL-FLEA — The Steel Flea follows The Little Clay Cart, plain Next (no heads-up card). Never Featured. Off every Ritual lane.
   "the-steel-flea",
+  // Mira Fri 9 Oct 2026 MID HOLBERG-FJELD — Comedies (incl. Jeppe of the Hill) follows The Steel Flea, plain Next (no heads-up card). Never Featured.
+  // Off every Ritual lane. Tales from the Fjeld is Later (not here); its first tale sits on unwind and before-sleep.
+  "comedies-incl-jeppe-of-the-hill",
 ] as const;
 
 /**

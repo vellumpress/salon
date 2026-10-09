@@ -633,6 +633,10 @@ const BLURBS: Record<string, string> = {
     "Kee'ma the monkey and Pa'pa the shark are great friends, and this reading is their tale only.",
   "the-steel-flea":
     "A homesick Cossack, an amiable Tsar and the gunsmiths of Tula take on the marvels of England.",
+  "comedies-incl-jeppe-of-the-hill":
+    "A henpecked peasant is sent to town for soap, and Jacob Shoemaker’s inn is on the way.",
+  "tales-from-the-fjeld":
+    "Storm-bound in a Norwegian mountain shieling, a guide and the two girls who keep it trade folk tales by the fire.",
   "the-dancing-master":
     "A heads-up before you start: frank period talk of sizing up a partner's figure. Backstage at the opera, a dancing-master dressed as a bishop explains why France needs more waltzing.",
   "the-golden-age":

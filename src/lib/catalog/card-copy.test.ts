@@ -313,6 +313,8 @@ test("known origin overrides", () => {
     "the-little-clay-cart": "India",
     "zanzibar-tales": "Tanzania",
     "the-steel-flea": "Russia",
+    "comedies-incl-jeppe-of-the-hill": "Denmark",
+    "tales-from-the-fjeld": "Norway",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",
     "strait-is-the-gate": "France",
