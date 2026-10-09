@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type TouchEvent as ReactTouchEvent } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { openingBreathIndex } from "@/lib/opening-scene";
@@ -216,6 +216,10 @@ export function TbrReader({
   /** Last real touch, so the synthesized mouse that follows is ignored. */
   const lastTouchAtRef = useRef(0);
   const lastTouchPointRef = useRef<{ x: number; y: number } | null>(null);
+  const lastTouchZoneRef = useRef<"prev" | "next" | null>(null);
+  /** Nav Prev/Next: one step per finger, even when iOS never fires click. */
+  const navGestureRef = useRef<number | null>(null);
+  const navTouchAtRef = useRef(0);
   const touchPlacesRef = useRef<{ x: number; y: number; t: number }[]>([]);
   /**
    * Fallback split when the focus line has no box yet.
@@ -535,6 +539,13 @@ export function TbrReader({
   }
 
   function retreat() {
+    const slot = breathSlotRef.current;
+    // One tap on a tall sentence that is not at its top returns to the top.
+    // The next tap steps back. A pixel of leftover scroll still steps.
+    if (slot && slot.scrollTop > 3 && slot.scrollHeight - slot.clientHeight > 3) {
+      slot.scrollTop = 0;
+      return;
+    }
     stepBy(-1);
   }
 
@@ -1232,7 +1243,7 @@ export function TbrReader({
     touchPlacesRef.current = places.slice(-24);
   }
 
-  function ghostPointer(e: ReactPointerEvent<HTMLDivElement>) {
+  function ghostPointer(e: ReactPointerEvent<HTMLElement>) {
     return ghostMousePointer({
       pointerType: e.pointerType,
       firesTouchEvents: Boolean(
@@ -1284,6 +1295,43 @@ export function TbrReader({
     const track = trackRef.current;
     if (!track) return false;
     return track.getAnimations().some((anim) => anim.playState === "running");
+  }
+
+  function zoneFrom(target: EventTarget | null, x: number, y: number) {
+    if (target instanceof Element) {
+      const which = target.closest("[data-turn]")?.getAttribute("data-turn");
+      if (which === "prev" || which === "next") return which;
+    }
+    return zoneAt(x, y);
+  }
+
+  /**
+   * A mouse event in the other zone, clearly away from the last finger, is a
+   * new tap. iOS delivers a quick second tap that way, and the 1.5s ghost
+   * window must not swallow it.
+   */
+  function differentZoneTap(target: EventTarget | null, x: number, y: number) {
+    const zone = zoneFrom(target, x, y);
+    const last = lastTouchZoneRef.current;
+    const lastPoint = lastTouchPointRef.current;
+    return Boolean(
+      zone &&
+        last &&
+        zone !== last &&
+        lastPoint &&
+        Math.hypot(x - lastPoint.x, y - lastPoint.y) > 8,
+    );
+  }
+
+  /**
+   * The mouse echo of the finger already down is ignored. A later tap in the
+   * other zone is not that finger.
+   */
+  function swallowMouse(e: ReactPointerEvent<HTMLElement>) {
+    if (!ghostPointer(e)) return false;
+    if (gestureRef.current) return true;
+    if (differentZoneTap(e.target, e.clientX, e.clientY)) return false;
+    return true;
   }
 
   function zoneAt(x: number, y: number) {
@@ -1343,13 +1391,46 @@ export function TbrReader({
     setBar((state) => reduceReaderBar(state, "page"));
   }
 
-  function turnAt(x: number, y: number) {
-    stepZone(zoneAt(x, y));
+  function completeGesture(
+    start: NonNullable<(typeof gestureRef)["current"]>,
+    x: number,
+    y: number,
+    cancelled: boolean,
+  ) {
+    if (start.turned) return;
+    start.turned = true;
+    if (gestureRef.current === start) gestureRef.current = null;
+    turnedAtRef.current = performance.now();
+    if (start.pointerType === "touch") rememberTouch(x, y);
+    const slot = breathSlotRef.current;
+    const moved = Boolean(slot && Math.abs(slot.scrollTop - start.scrollTop) > 3);
+    // A drag that actually moved the sentence is a scroll. A drag that
+    // clamped (top of a tall sentence, or a pixel that never stuck) is still
+    // the tap the finger started as.
+    if (start.scrolled && moved) return;
+    const kind = classifyTurnGesture({
+      dx: x - start.x,
+      dy: y - start.y,
+      dt: performance.now() - start.t,
+      canScroll: start.scrolled ? false : columnScrolls(),
+      scrolled: false,
+    });
+    if (cancelled && kind !== "tap") return;
+    if (kind === "swipe-next") {
+      stepZone("next");
+      return;
+    }
+    if (kind === "swipe-prev") {
+      stepZone("prev");
+      return;
+    }
+    if (kind !== "tap") return;
+    stepZone(start.zone);
   }
 
   function beginTurn(e: ReactPointerEvent<HTMLDivElement>) {
     if (e.button !== 0 || !e.isPrimary) return;
-    if (ghostPointer(e)) {
+    if (swallowMouse(e)) {
       e.preventDefault();
       e.stopPropagation();
       return;
@@ -1363,12 +1444,15 @@ export function TbrReader({
     ) {
       return;
     }
-    if (e.pointerType === "touch") rememberTouch(e.clientX, e.clientY);
+    const zone = zoneFrom(target, e.clientX, e.clientY);
+    if (e.pointerType === "touch") {
+      rememberTouch(e.clientX, e.clientY);
+      lastTouchZoneRef.current = zone;
+    }
     const slot = breathSlotRef.current;
     // Arm before the lift. iOS can deliver the compatibility click before
     // pointerup; that click must not turn, and the lift still does.
     noteOwed(1);
-    const zone = zoneAt(e.clientX, e.clientY);
     gestureRef.current = {
       id: e.pointerId,
       x: e.clientX,
@@ -1412,40 +1496,30 @@ export function TbrReader({
   }
 
   function finishTurn(e: ReactPointerEvent<HTMLDivElement>, cancelled: boolean) {
-    if (ghostPointer(e)) {
+    // iOS can drop the touch pointerup and deliver the lift as a mouse
+    // pointerup. That used to return here and leave the sentence unmoved.
+    if (swallowMouse(e)) {
+      const start = gestureRef.current;
+      if (start && !start.turned && (start.pointerType === "touch" || start.id === e.pointerId)) {
+        const fromTouch = start.pointerType === "touch" && start.id !== e.pointerId;
+        completeGesture(
+          start,
+          fromTouch || cancelled ? start.lastX : e.clientX,
+          fromTouch || cancelled ? start.lastY : e.clientY,
+          cancelled,
+        );
+      }
       e.preventDefault();
       return;
     }
     const start = gestureRef.current;
     if (!start || start.id !== e.pointerId) return;
-    gestureRef.current = null;
-    if (start.turned) return;
-    turnedAtRef.current = performance.now();
-    if (start.pointerType === "touch") {
-      rememberTouch(cancelled ? start.lastX : e.clientX, cancelled ? start.lastY : e.clientY);
-    }
-    if (start.scrolled) return;
-    const dx = (cancelled ? start.lastX : e.clientX) - start.x;
-    const dy = (cancelled ? start.lastY : e.clientY) - start.y;
-    const dt = performance.now() - start.t;
-    const kind = classifyTurnGesture({
-      dx,
-      dy,
-      dt,
-      canScroll: columnScrolls(),
-      scrolled: false,
-    });
-    if (cancelled && kind !== "tap") return;
-    if (kind === "swipe-next") {
-      stepZone("next");
-      return;
-    }
-    if (kind === "swipe-prev") {
-      stepZone("prev");
-      return;
-    }
-    if (kind !== "tap") return;
-    stepZone(start.zone);
+    completeGesture(
+      start,
+      cancelled ? start.lastX : e.clientX,
+      cancelled ? start.lastY : e.clientY,
+      cancelled,
+    );
   }
 
   function endTurn(e: ReactPointerEvent<HTMLDivElement>) {
@@ -1463,10 +1537,8 @@ export function TbrReader({
     // The compatibility click can beat pointerup. One open gesture means
     // this click is that finger: turn now, and let the lift do nothing.
     if (start && !start.turned && owedClicksRef.current === 1) {
-      start.turned = true;
-      turnedAtRef.current = performance.now();
       noteOwed(-1);
-      if (!start.scrolled) stepZone(start.zone);
+      completeGesture(start, start.lastX, start.lastY, false);
       return;
     }
     if (owedClicksRef.current > 0) {
@@ -1474,13 +1546,66 @@ export function TbrReader({
       return;
     }
     // The phone's extra click can land after the sentence has moved, on the
-    // same spot, and step forward. That undoes the back tap. A mouse click
-    // somewhere else still turns.
-    if (ghostClick(e.clientX, e.clientY)) return;
+    // same spot, and step forward. That undoes the back tap. A click in the
+    // other zone is a new tap, including one iOS delivered only as a click.
+    if (ghostClick(e.clientX, e.clientY)) {
+      if (differentZoneTap(e.target, e.clientX, e.clientY)) {
+        stepZone(zoneFrom(e.target, e.clientX, e.clientY));
+      }
+      return;
+    }
     if (turnedAtRef.current > 0 && performance.now() - turnedAtRef.current < GHOST_MOUSE_MS) {
       return;
     }
-    turnAt(e.clientX, e.clientY);
+    stepZone(zoneFrom(e.target, e.clientX, e.clientY));
+  }
+
+  function onTouchEnd(e: ReactTouchEvent<HTMLDivElement>) {
+    const start = gestureRef.current;
+    if (!start || start.turned) return;
+    const touch = e.changedTouches[0];
+    if (!touch) return;
+    completeGesture(start, touch.clientX, touch.clientY, false);
+  }
+
+  function navDown(e: ReactPointerEvent<HTMLButtonElement>) {
+    if (e.button !== 0 || !e.isPrimary) return;
+    // The compatibility mouse after a touch must not arm a second step.
+    // A new touch does: that is a real second tap on Previous.
+    if (e.pointerType !== "touch" && performance.now() - navTouchAtRef.current < 700) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+    e.preventDefault();
+    e.stopPropagation();
+    navGestureRef.current = e.pointerId;
+  }
+
+  function navUp(e: ReactPointerEvent<HTMLButtonElement>, go: () => void) {
+    if (navGestureRef.current !== e.pointerId) return;
+    navGestureRef.current = null;
+    if (e.pointerType === "touch") navTouchAtRef.current = performance.now();
+    e.preventDefault();
+    e.stopPropagation();
+    go();
+  }
+
+  function navCancel(e: ReactPointerEvent<HTMLButtonElement>) {
+    if (navGestureRef.current === e.pointerId) navGestureRef.current = null;
+  }
+
+  function navClick(e: ReactMouseEvent<HTMLButtonElement>, go: () => void) {
+    e.preventDefault();
+    e.stopPropagation();
+    // Pointerup already stepped and cleared the id. Keyboard activation
+    // (detail 0) never had a pointer.
+    if (navGestureRef.current != null) {
+      navGestureRef.current = null;
+      go();
+      return;
+    }
+    if (e.detail === 0) go();
   }
 
   const pane = (
@@ -1494,6 +1619,7 @@ export function TbrReader({
       onPointerUpCapture={endTurn}
       onPointerCancelCapture={cancelTurn}
       onClickCapture={onTurnClick}
+      onTouchEndCapture={onTouchEnd}
       onContextMenu={(e) => e.preventDefault()}
     >
       <button
@@ -1643,8 +1769,10 @@ export function TbrReader({
                 <button
                   type="button"
                   tabIndex={-1}
-                  onMouseDown={(e) => e.preventDefault()}
-                  onClick={retreat}
+                  onPointerDown={navDown}
+                  onPointerUp={(e) => navUp(e, retreat)}
+                  onPointerCancel={navCancel}
+                  onClick={(e) => navClick(e, retreat)}
                   className="nav-reveal-btn"
                 >
                   Prev
@@ -1652,8 +1780,10 @@ export function TbrReader({
                 <button
                   type="button"
                   tabIndex={-1}
-                  onMouseDown={(e) => e.preventDefault()}
-                  onClick={advance}
+                  onPointerDown={navDown}
+                  onPointerUp={(e) => navUp(e, advance)}
+                  onPointerCancel={navCancel}
+                  onClick={(e) => navClick(e, advance)}
                   className="nav-reveal-btn nav-reveal-btn-ink"
                 >
                   Next
