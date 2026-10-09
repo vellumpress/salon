@@ -1,0 +1,59 @@
+# Every catalog book, after the deploy has already shipped.
+# A failure turns the workflow red and opens (or comments on) an issue.
+name: Catalog walk
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "15 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: catalog-walk
+  cancel-in-progress: false
+
+jobs:
+  walk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Walk every catalog book
+        run: |
+          set +e
+          node --experimental-strip-types --test --test-name-pattern "catalog books step one sentence back and forward" src/lib/reader-tap-stress.test.ts 2>&1 | tee catalog-walk.log
+          status=${PIPESTATUS[0]}
+          if ! grep -q "catalog walk full:" catalog-walk.log; then
+            echo "full catalog walk did not start"
+            status=1
+          fi
+          exit "$status"
+        env:
+          CATALOG_WALK: full
+          CATALOG_WALK_FAILURE_FILE: ${{ github.workspace }}/catalog-walk-failure.json
+
+      - name: Open an issue when a book breaks
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CATALOG_WALK_FAILURE_FILE: ${{ github.workspace }}/catalog-walk-failure.json
+        run: node scripts/open-catalog-walk-issue.mjs

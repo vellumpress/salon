@@ -10,3 +10,5 @@ public/pdf.worker.min.js
 
 # Never commit Vercel build output (forces stale PWA)
 .vercel/output/
+catalog-walk-failure.json
+catalog-walk.log
