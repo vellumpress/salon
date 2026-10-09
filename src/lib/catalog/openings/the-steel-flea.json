@@ -1,0 +1,195 @@
+{
+  "id": "the-steel-flea",
+  "title": "The Steel Flea",
+  "author": "Nikolai Leskov (tr. Isabel F. Hapgood)",
+  "year": "1881",
+  "note": "Opening sit: Leskov's Preface and Chapters I–II, ending “that they deprived Platoff of all his fantasy.”",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Preface",
+      "place": "Preface",
+      "reentry": "I cannot tell precisely where the first germ of the Legend concerning the Steel Flea had its birth--that is to say, whether it originated in Tula, the Izhma, or Sestroryetzk; but, evidently, it came from one of these places.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "When the Emperor Alexander Pavlovitch had finished the Congress of Vienna he took a fancy to travel all over Europe and view the marvels of the different realms. He journeyed through all lands, and everywhere, by reason of his amiability, h",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "On the following day the Emperor and Platoff went to the museum. The Emperor took none of the other Russians with him, because he had been provided only with a two-seated carriage.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I cannot tell precisely where the first germ of the Legend concerning the Steel Flea had its birth--that is to say, whether it originated in Tula, the Izhma, or Sestroryetzk; but, evidently, it came from one of these places."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "In any case, the tale of the Steel Flea is a legend which distinctly belongs to the Armorers' Guild and expresses the pride of Russian gunsmiths. It depicts a contest between our workmen and English workmen, from which our artisans emerged the victors, having utterly routed and humiliated the Englishmen."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Herein, also, is explained a certain secret cause of military disasters in the Crimea."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "I jotted down this Legend in Sestroryetzk from the lips of an aged gunsmith, an emigrant from Tula, who had removed to the Sestra River during the reign of Alexander the First. The narrator was still hale and hearty two years ago, and of sound memory; he was fond of recalling the days of yore, cherished great respect for the Emperor Nikolai Pavlovitch, lived \"according to the ancient faith,\" read devout books, and bred canary-birds. People treated him with much consideration."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "When the Emperor Alexander Pavlovitch had finished the Congress of Vienna he took a fancy to travel all over Europe and view the marvels of the different realms. He journeyed through all lands, and everywhere, by reason of his amiability, he always held the most internecine discussions with all men, and all amazed him by one means or another and sought to incline him to their side. But he had a Cossack of the Don, named Platoff, attached to his personal service, who did not like this inclination, and, being homesick for his own hearthstone, he constantly sought to lure the Emperor to his home."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "So, as soon as Platoff perceived that the Emperor took a deep interest in any foreign thing and all his suite held their peace, he began to say immediately: \"Thus and so, and we have the same thing of our own at home, not a whit worse,\"--and then he would turn him aside in one way or another."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "The English people were aware of this, and had prepared various cunning devices against the Emperor's arrival, to the end that they might captivate him with foreign things, and in many cases they attained their object, especially in the great assemblies where Platoff could not express himself perfectly in French; but he did not mind that over-much because he was a married man, and regarded all French conversation as mere emptiness, unworthy of his imagination."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "But when the English began to invite the Emperor to all their arsenals, armories, shops, and soap-sawing factories, in order to demonstrate their superiority over us in all things, Platoff said to himself: \"Come, there has been enough of this sort of thing. Up to this point I have endured in patience, but beyond this 'tis impossible. I may manage to say the right thing or I may not, but I won't betray my own people.\""
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "And no sooner had he uttered these words to himself than the Emperor said to him: \"Thus and so. To-morrow you and I will go to inspect their arsenal museum. There,\" says he, \"exist such perfections of nature, that when you look upon them you will no longer dispute the fact that we Russians, in spite of all our self-importance, are of no account whatever.\""
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Platoff made no reply, but merely buried his hooked nose in his shaggy felt cloak, retired to his quarters, commanded his orderly to fetch a flask of Caucasian brandy--*kizlyarki*--from the cellaret, tossed off a bumper, prayed to God before a holy picture which folded up for travelling, wrapped himself in his thick felt mantle, and began to snore so that not a single Englishman in all the house was able to sleep."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "He said to himself: \"The morning is wiser than the evening.\""
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "On the following day the Emperor and Platoff went to the museum. The Emperor took none of the other Russians with him, because he had been provided only with a two-seated carriage."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "They drive up to a smallish building--the entrance indescribable, corridors stretching out interminably, and a row of chambers one after another, and, at last, in the chief hall of all, divers huge busts, and in the centre, under a canopy, stands the Abolo Polveder."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "The Emperor casts a glance at Platoff, to see whether he is much amazed, and what he is gazing at, but Platoff is walking along with downcast eyes as though he beholds nothing, and is merely twisting his mustaches into rings."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "The Englishmen immediately begin to exhibit divers marvels and explain to what ends they are adapted in military matters--sea buremeters, mamel's hair mantals of the infantry regiments, and for the cavalry tarred waterproofs. All this delights the Emperor greatly--everything seems to him very good, but Platoff preserves his apathy, and nothing has any significance in his opinion."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "The Emperor says: \"How is this possible--why is there such unfeelingness in thee? Is there really nothing here that astonishes thee?\""
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "And Platoff replies: \"One thing only here astonishes me, that my dashing lads of the Don made war without all this and conquered a dozen nations.\""
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "The Emperor says: \"This is folly.\""
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Platoff replies: \"I know not to what to attribute it, but I dare not to dispute and must needs hold my tongue.\""
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "But the Englishmen, beholding such a discussion between him and the Emperor, immediately led them to the Abolo Polveder himself, and took from one of his hands a Mortimer gun, and from the other a pistol."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "\"Here,\" said they, \"this is the sort of manufactures we have,\" and they gave him the gun."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "The Emperor gazed calmly on the Mortimer gun, because he has such in Tzarskoe Selo, and then they gave him the pistol, and said: \"This pistol is of unknown, inimitable workmanship--our Admiral plucked it from the belt of a bandit chief in Candelabria.\""
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "The Emperor looked at the pistol, and could not tear his eyes from it. He gave vent to terrible \"ahs!\""
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "\"Ah, ah, ah!\" says he, \"what a weapon is this!... how is it possible to work so delicately?\" And he turns to Platoff and says in Russian: \"There now, if I had but one such artisan in Russia, I should be extremely happy and proud, and I would instantly make that man a noble.\""
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "But the very minute Platoff hears these words, he thrusts his hands into his voluminous trousers and draws thence a gunsmith's screw-driver."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "\"This does not unscrew,\" say the Englishmen. But he, paying no heed, picks away at the lock. He gives it one turn, he gives it another,--and takes out the lock. Platoff shows the catch to the Emperor, and there, on the curve, stands a Russian inscription: \"Ivan Moskvin in the town of Tula.\""
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "The Englishmen marvelled, and nudged one another: \"Oh, alas! we have blundered!\""
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "But the Emperor says sadly to Platoff: \"Why hast thou covered them with such confusion? Now I am very sorry for them. Let us go.\""
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "They took their places again in the same two-seated carriage, and drove away; and that day the Emperor went to a ball, but Platoff gulped down a still mightier bumper of kizil vodka, and slept a mighty Cossack sleep."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "He rejoiced that he had put the Englishmen to confusion, and had placed the Tula artisan in the proper light, but he was also vexed. Why had the Emperor felt pity for the Englishmen on such an occasion?"
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "\"For what reason did the Emperor grieve?\" thought Platoff. \"I don't understand it at all;\" and, engaged in this meditation, he twice arose, crossed himself, and drank vodka until, by sheer force, he brought upon himself a profound sleep."
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "But the Englishmen were not asleep at that time, either, because their heads were whirling round with dizziness. While the Emperor was enjoying himself at the ball, they prepared for him such a fresh marvel that they deprived Platoff of all his fantasy."
+    }
+  ]
+}

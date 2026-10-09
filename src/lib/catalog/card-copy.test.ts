@@ -312,6 +312,7 @@ test("known origin overrides", () => {
     "the-dancing-master": "France",
     "the-little-clay-cart": "India",
     "zanzibar-tales": "Tanzania",
+    "the-steel-flea": "Russia",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",
     "strait-is-the-gate": "France",
@@ -3109,4 +3110,61 @@ test("FALCON: The Maltese Falcon is bound one breath per printed paragraph (PG 7
   const remap = parseBreathRemap({ falcon: map });
   const kept = anchorKeptLine({ id: "s0-95", text: "Spade nodded again." }, full.breaths, remap, "falcon");
   assert.equal(kept.breathId, "s0-30");
+});
+
+test("LADY-MACBETH: Chamot's 1923 text, proofread from the Knopf scan, one breath per printed paragraph", () => {
+  const work = SHELF.find((item) => item.id === "lady-macbeth")!;
+  const full = textWork("lady-macbeth") as Work;
+  const opening = JSON.parse(readFileSync(openingUrl("lady-macbeth"), "utf8")) as Work;
+  const raw = JSON.parse(readFileSync(new URL("./at-remap.json", import.meta.url), "utf8")) as Record<string, Record<string, string>>;
+  const map = raw["lady-macbeth"]!;
+  const roman = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV"];
+  // Chapter III was bound inside Chapter II when its heading was read as "Ill"; all fifteen are scenes now.
+  assert.deepEqual(full.scenes.map((scene) => scene.title), roman.map((n) => `Chapter ${n}`));
+  for (const scene of full.scenes) {
+    assert.equal(scene.place, scene.title);
+    assert.equal(scene.reentry, full.breaths.find((breath) => breath.sceneId === scene.id)!.text.slice(0, 240));
+  }
+  assert.deepEqual(full.scenes.map((scene) => full.breaths.filter((breath) => breath.sceneId === scene.id).length),
+    [6, 40, 32, 20, 4, 77, 93, 26, 24, 47, 39, 22, 24, 59, 56]);
+  assert.equal(full.breaths.length, 569);
+  assert.equal(work.breaths, 569);
+  const words = full.breaths.reduce((sum, breath) => sum + breath.text.split(/\s+/).filter((w) => w && w !== "/").length, 0);
+  assert.equal(work.minutes, Math.round(words / 200));
+  assert.equal(work.minutes, 85);
+  assert.equal((full as Work & { minutes: number }).minutes, work.minutes);
+  // One novella, not a collection.
+  assert.equal(work.form, "novel");
+  const scene = (n: number) => full.breaths.filter((breath) => breath.sceneId === `s${n}`);
+  assert.ok(scene(2)[0]!.text.startsWith("A WARM milky twilight hung over the town."));
+  assert.ok(scene(1).at(-1)!.text.endsWith("See how bold he is!”"));
+  // Chapter IV opens on its drop-capped first line, which the OCR had lost.
+  assert.ok(scene(3)[0]!.text.startsWith("FOR more than a week Zinovey Borisych did not return, and the whole time his wife spent every night, till the white dawn, with Sergei."));
+  assert.equal(full.breaths.at(-1)!.id, "s14-55");
+  assert.ok(full.breaths.at(-1)!.text.endsWith("threw herself on Sonetka like a strong pike on a soft-finned minnow, and neither appeared again."));
+  // No running heads, page numbers or OCR debris; the title appears once, in the printed first paragraph.
+  const all = full.breaths.map((breath) => breath.text).join("\n");
+  assert.equal(all.split("Lady Macbeth").length - 1, 1);
+  assert.doesNotMatch(all, /[<>^°£»«|*_%]|\s[.,;:!?]|“\s|\s”/);
+  for (const breath of full.breaths) assert.equal(breath.text.split("“").length, breath.text.split("”").length, breath.id);
+  // Sergei's song stays one printed block.
+  assert.deepEqual(full.breaths.filter((breath) => breath.text.includes(" / ")).map((breath) => [breath.id, breath.text.split(" / ").length]), [["s14-25", 3]]);
+  // Card and opening sit: Chapter I, unchanged card.
+  assert.equal(work.opening, "In our part of the country you sometimes meet people of whom, even many years after you have seen them, you are unable to think without a certain inward shudder.");
+  assert.ok(full.breaths[0]!.text.startsWith(work.opening!));
+  assert.deepEqual(opening.breaths.map((breath) => breath.text), scene(0).map((breath) => breath.text));
+  assert.equal(opening.scenes[0]!.id, "sit-0");
+  // Every old id that moved maps forward to the paragraph that holds its text.
+  const ids = new Set(full.breaths.map((breath) => breath.id));
+  assert.equal(Object.keys(map).length, 645);
+  for (const [from, to] of Object.entries(map)) {
+    assert.notEqual(from, to);
+    assert.ok(ids.has(to), `${from} → ${to}`);
+  }
+  assert.equal(map["s2-0"], "s3-0");
+  assert.equal(map["s13-62"], "s14-55");
+  const remap = parseBreathRemap({ "lady-macbeth": map });
+  const kept = anchorKeptLine({ id: "s8-30", text: "They were both silent." }, full.breaths, remap, "lady-macbeth");
+  assert.equal(kept.breathId, "s9-23");
+  assert.equal(anchorKeptLine({ id: "s4-26" }, full.breaths, remap, "lady-macbeth").breathId, "s5-19");
 });

@@ -1,0 +1,1666 @@
+{
+  "id": "the-steel-flea",
+  "title": "The Steel Flea",
+  "author": "Nikolai Leskov (tr. Isabel F. Hapgood)",
+  "year": "1881",
+  "note": "Project Gutenberg 61172. Isabel F. Hapgood, privately printed at The Merrymount Press, Boston, 1916. Leskov's own Preface is kept as the opening of the tale. The title page, copyright line, decorations, the forty translator's and author's footnotes with their markers, and the printer's colophon are cut. The narrator's misspellings are as printed.",
+  "minutes": 63,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Preface",
+      "place": "Preface",
+      "reentry": "I cannot tell precisely where the first germ of the Legend concerning the Steel Flea had its birth--that is to say, whether it originated in Tula, the Izhma, or Sestroryetzk; but, evidently, it came from one of these places.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "When the Emperor Alexander Pavlovitch had finished the Congress of Vienna he took a fancy to travel all over Europe and view the marvels of the different realms. He journeyed through all lands, and everywhere, by reason of his amiability, h",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "On the following day the Emperor and Platoff went to the museum. The Emperor took none of the other Russians with him, because he had been provided only with a two-seated carriage.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "Chapter III",
+      "place": "Chapter III",
+      "reentry": "The next day, when Platoff presented himself to the Emperor to wish him good-morning, the latter said to him: \"Let the two-seated carriage be put to immediately, and let us look at more museums.\"",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Chapter IV",
+      "place": "Chapter IV",
+      "reentry": "The wonderful flea, of burnished English steel, remained in Alexander Pavlovitch's casket beneath the fish's bone until he died in Taganrog, he having given it to Priest Feodot to transmit to the Empress later, when she should have grown ca",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "Chapter V",
+      "place": "Chapter V",
+      "reentry": "Platoff took the steel flea, and as he passed through Tula on his way to the Don he showed it to the Tula gunsmiths and repeated to them the Emperor's words, and they asked: \"And now, what shall we do about it, Orthodox believers?\"",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "Chapter VI",
+      "place": "Chapter VI",
+      "reentry": "Platoff departed from Tula; and three of the gunsmiths, the most skilful of them all--one a squint-eyed, left-handed smith with a birth-mark on his cheek and the hair upon his temples plucked out in the course of his apprenticeship--bade th",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Chapter VII",
+      "place": "Chapter VII",
+      "reentry": "The men of Tula, clever fellows and well versed in the art of metals, are also renowned as the finest judges in religious matters. Their fame in this respect has filled not only their native land, but even holy Mount Athos. They are not onl",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "Chapter VIII",
+      "place": "Chapter VIII",
+      "reentry": "Platoff travelled very swiftly, and in state: he himself sat in the calash, and on the box sat two Cossacks of the Imperial Suite with *nagaikas*, one on each side of the coachman, whom they belabored unmercifully, so that he should drive a",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "Chapter IX",
+      "place": "Chapter IX",
+      "reentry": "The Tula artisans, who had executed a marvellous bit of business, had only just completed their work. The Cossacks of the Suite dashed up to them breathless, and the simple members of the curious public never arrived at all, because, throug",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s10",
+      "title": "Chapter X",
+      "place": "Chapter X",
+      "reentry": "The Suite-Cossacks dashed up to Platoff and said: \"Here they are themselves!\"",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s11",
+      "title": "Chapter XI",
+      "place": "Chapter XI",
+      "reentry": "Platoff was afraid to present himself before the eyes of the Emperor, because Nikolai Pavlovitch was a terribly remarkable man, with a long memory--he never forgot anything. Platoff knew that he would, infallibly, question him about the fle",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s12",
+      "title": "Chapter XII",
+      "place": "Chapter XII",
+      "reentry": "They fetched out the casket from behind the stove, removed its cloth case, opened the golden snuff-box and the diamond walnut, and there lay the flea, just as it had lain before.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s13",
+      "title": "Chapter XIII",
+      "place": "Chapter XIII",
+      "reentry": "When Platoff reported the left-handed man's words to the Emperor, the latter instantly exclaimed with joy: \"I knew that my Russian people had not betrayed me!\" and he ordered a melkoscope to be brought on a cushion.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s14",
+      "title": "Chapter XIV",
+      "place": "Chapter XIV",
+      "reentry": "All began to approach and look; the flea was actually shod with real shoes on all its feet, and the left-handed man declared that even this did not constitute the whole marvel.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s15",
+      "title": "Chapter XV",
+      "place": "Chapter XV",
+      "reentry": "The Courier travelled so very swiftly with the left-handed man, that they halted nowhere to rest between Petrograd and London, but merely drew their belts tighter at every posting-station, so that their bowels and their lungs might not get ",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s16",
+      "title": "Chapter XVI",
+      "place": "Chapter XVI",
+      "reentry": "The Englishmen took charge of the left-handed man, but sent the Russian Courier back to Russia. Although the Courier had a rank and was skilled in divers languages, they took no interest in him, but they did find the left-handed man interes",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s17",
+      "title": "Chapter XVII",
+      "place": "Chapter XVII",
+      "reentry": "Their wager began on the Dryland Sea, and they drank until they came to Dunamund on the Gulf of Riga, but they always kept even, and did not yield to each other; and they kept so accurately even that when one of them, gazing at the sea, beh",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s18",
+      "title": "Chapter XVIII",
+      "place": "Chapter XVIII",
+      "reentry": "When the Englishman was brought to the Embassy, they immediately summoned to him a medical man and an apothecary. The medical man ordered him to be placed in a warm bath, while the apothecary instantly rolled a gutta-percha pill, and thrust",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s19",
+      "title": "Chapter XIX",
+      "place": "Chapter XIX",
+      "reentry": "By some wonderful means the half-skipper found the left-handed man rather speedily, only they had not yet put him to bed, but he still lay on the floor of the corridor and complained to the Englishman: \"I must say a couple of words to the E",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s20",
+      "title": "Chapter XX",
+      "place": "Chapter XX",
+      "reentry": "And now all this is \"a matter of bygone days\" and \"traditions of the olden times,\" albeit they are not so very ancient. But there is no need to make haste to forget these traditions, in spite of the fabulous style of the legend, and the epi",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I cannot tell precisely where the first germ of the Legend concerning the Steel Flea had its birth--that is to say, whether it originated in Tula, the Izhma, or Sestroryetzk; but, evidently, it came from one of these places."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "In any case, the tale of the Steel Flea is a legend which distinctly belongs to the Armorers' Guild and expresses the pride of Russian gunsmiths. It depicts a contest between our workmen and English workmen, from which our artisans emerged the victors, having utterly routed and humiliated the Englishmen."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Herein, also, is explained a certain secret cause of military disasters in the Crimea."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "I jotted down this Legend in Sestroryetzk from the lips of an aged gunsmith, an emigrant from Tula, who had removed to the Sestra River during the reign of Alexander the First. The narrator was still hale and hearty two years ago, and of sound memory; he was fond of recalling the days of yore, cherished great respect for the Emperor Nikolai Pavlovitch, lived \"according to the ancient faith,\" read devout books, and bred canary-birds. People treated him with much consideration."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "When the Emperor Alexander Pavlovitch had finished the Congress of Vienna he took a fancy to travel all over Europe and view the marvels of the different realms. He journeyed through all lands, and everywhere, by reason of his amiability, he always held the most internecine discussions with all men, and all amazed him by one means or another and sought to incline him to their side. But he had a Cossack of the Don, named Platoff, attached to his personal service, who did not like this inclination, and, being homesick for his own hearthstone, he constantly sought to lure the Emperor to his home."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "So, as soon as Platoff perceived that the Emperor took a deep interest in any foreign thing and all his suite held their peace, he began to say immediately: \"Thus and so, and we have the same thing of our own at home, not a whit worse,\"--and then he would turn him aside in one way or another."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "The English people were aware of this, and had prepared various cunning devices against the Emperor's arrival, to the end that they might captivate him with foreign things, and in many cases they attained their object, especially in the great assemblies where Platoff could not express himself perfectly in French; but he did not mind that over-much because he was a married man, and regarded all French conversation as mere emptiness, unworthy of his imagination."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "But when the English began to invite the Emperor to all their arsenals, armories, shops, and soap-sawing factories, in order to demonstrate their superiority over us in all things, Platoff said to himself: \"Come, there has been enough of this sort of thing. Up to this point I have endured in patience, but beyond this 'tis impossible. I may manage to say the right thing or I may not, but I won't betray my own people.\""
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "And no sooner had he uttered these words to himself than the Emperor said to him: \"Thus and so. To-morrow you and I will go to inspect their arsenal museum. There,\" says he, \"exist such perfections of nature, that when you look upon them you will no longer dispute the fact that we Russians, in spite of all our self-importance, are of no account whatever.\""
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Platoff made no reply, but merely buried his hooked nose in his shaggy felt cloak, retired to his quarters, commanded his orderly to fetch a flask of Caucasian brandy--*kizlyarki*--from the cellaret, tossed off a bumper, prayed to God before a holy picture which folded up for travelling, wrapped himself in his thick felt mantle, and began to snore so that not a single Englishman in all the house was able to sleep."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "He said to himself: \"The morning is wiser than the evening.\""
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "On the following day the Emperor and Platoff went to the museum. The Emperor took none of the other Russians with him, because he had been provided only with a two-seated carriage."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "They drive up to a smallish building--the entrance indescribable, corridors stretching out interminably, and a row of chambers one after another, and, at last, in the chief hall of all, divers huge busts, and in the centre, under a canopy, stands the Abolo Polveder."
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "The Emperor casts a glance at Platoff, to see whether he is much amazed, and what he is gazing at, but Platoff is walking along with downcast eyes as though he beholds nothing, and is merely twisting his mustaches into rings."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "The Englishmen immediately begin to exhibit divers marvels and explain to what ends they are adapted in military matters--sea buremeters, mamel's hair mantals of the infantry regiments, and for the cavalry tarred waterproofs. All this delights the Emperor greatly--everything seems to him very good, but Platoff preserves his apathy, and nothing has any significance in his opinion."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "The Emperor says: \"How is this possible--why is there such unfeelingness in thee? Is there really nothing here that astonishes thee?\""
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "And Platoff replies: \"One thing only here astonishes me, that my dashing lads of the Don made war without all this and conquered a dozen nations.\""
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "The Emperor says: \"This is folly.\""
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "Platoff replies: \"I know not to what to attribute it, but I dare not to dispute and must needs hold my tongue.\""
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "But the Englishmen, beholding such a discussion between him and the Emperor, immediately led them to the Abolo Polveder himself, and took from one of his hands a Mortimer gun, and from the other a pistol."
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "\"Here,\" said they, \"this is the sort of manufactures we have,\" and they gave him the gun."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "The Emperor gazed calmly on the Mortimer gun, because he has such in Tzarskoe Selo, and then they gave him the pistol, and said: \"This pistol is of unknown, inimitable workmanship--our Admiral plucked it from the belt of a bandit chief in Candelabria.\""
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "The Emperor looked at the pistol, and could not tear his eyes from it. He gave vent to terrible \"ahs!\""
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "\"Ah, ah, ah!\" says he, \"what a weapon is this!... how is it possible to work so delicately?\" And he turns to Platoff and says in Russian: \"There now, if I had but one such artisan in Russia, I should be extremely happy and proud, and I would instantly make that man a noble.\""
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "But the very minute Platoff hears these words, he thrusts his hands into his voluminous trousers and draws thence a gunsmith's screw-driver."
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "\"This does not unscrew,\" say the Englishmen. But he, paying no heed, picks away at the lock. He gives it one turn, he gives it another,--and takes out the lock. Platoff shows the catch to the Emperor, and there, on the curve, stands a Russian inscription: \"Ivan Moskvin in the town of Tula.\""
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "The Englishmen marvelled, and nudged one another: \"Oh, alas! we have blundered!\""
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "But the Emperor says sadly to Platoff: \"Why hast thou covered them with such confusion? Now I am very sorry for them. Let us go.\""
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "They took their places again in the same two-seated carriage, and drove away; and that day the Emperor went to a ball, but Platoff gulped down a still mightier bumper of kizil vodka, and slept a mighty Cossack sleep."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "He rejoiced that he had put the Englishmen to confusion, and had placed the Tula artisan in the proper light, but he was also vexed. Why had the Emperor felt pity for the Englishmen on such an occasion?"
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "\"For what reason did the Emperor grieve?\" thought Platoff. \"I don't understand it at all;\" and, engaged in this meditation, he twice arose, crossed himself, and drank vodka until, by sheer force, he brought upon himself a profound sleep."
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "But the Englishmen were not asleep at that time, either, because their heads were whirling round with dizziness. While the Emperor was enjoying himself at the ball, they prepared for him such a fresh marvel that they deprived Platoff of all his fantasy."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "The next day, when Platoff presented himself to the Emperor to wish him good-morning, the latter said to him: \"Let the two-seated carriage be put to immediately, and let us look at more museums.\""
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "Platoff went so far as to suggest: \"Had they not seen enough foreign products, and would it not be better to betake themselves to Russia?\" but the Emperor says: \"No, I desire to behold still other novelties. They have boasted to me that they make the very finest sort of sugar here.\""
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "They drove off."
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "The Englishmen kept showing the Emperor the different prime products they had, but Platoff stared and stared, and suddenly said: \"Show us your manufactures of *molva* sugar.\""
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "But the Englishmen did not even know what *molva* was. They whispered together, and winked at one another, and kept repeating \"*Molva*, *molva*\" but they could not understand that such a sugar was made in our parts, and were obliged to confess that they had all sorts of sugar, but not *molva*."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "Platoff says: \"Well, then, you have nothing to brag about. Come to us, and we will treat you to tea with real *molva* from the Bobrinsky factories.\""
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "But the Emperor plucked him by the sleeve, and said softly: \"Please don't ruin my politics.\""
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "Then the Englishmen invited the Emperor to the last museum of all, where were collected all the mineral stones and nymfozoria from the whole world, beginning with the hugest Egyptian Keramids, and going down to the subcutaneous flea, which cannot be seen by the eye, though its bite is between the skin and the body."
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "The Emperor went."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "They had inspected the Keramids and all sorts of stuffed animals, and were on their way out, and Platoff thinks to himself: \"Now, glory to God, all is well--the Emperor admires nothing!\""
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "But no sooner had they reached the very last room, when lo! there stood workmen in their every-day waistcoats and aprons, holding a salver on which there was nothing at all. And the Emperor began to wonder what they were giving him on the empty salver."
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "\"What is the meaning of this?\" he asks."
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "And the English artisans reply: \"This is a respectful gift from us to Your Majesty.\""
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "\"But what is it?\""
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "\"Here,\" they say, \"please to observe this tiny speck.\""
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "The Emperor looked and saw that the tiniest sort of a speck really was lying upon the salver."
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "The workmen say: \"Please spit on your finger, and take it in your palm.\""
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "\"But what am I to do with this speck?\""
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "\"It is not a speck,\" they answer, \"but a nymfozoria.\""
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "\"Is it alive?\""
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "\"Not at all,\" they reply; \"it is not alive, but it has been forged by us in the image of a flea, out of pure English steel, and in the middle of it are works and a spring. Please wind it up with the little key; it will immediately begin to dance.\""
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "The Emperor's curiosity was aroused, and he asked: \"And where is the little key?\""
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "And the Englishmen said: \"Here is the key, right before your eyes.\""
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "\"Why do not I see it?\" says the Emperor."
+    },
+    {
+      "id": "s3-24",
+      "sceneId": "s3",
+      "text": "\"Because,\" they reply, \"a melkoscope is necessary.\""
+    },
+    {
+      "id": "s3-25",
+      "sceneId": "s3",
+      "text": "They gave him the melkoscope, and the Emperor saw that, beside the flea, on the silver salver, there actually lay a tiny key."
+    },
+    {
+      "id": "s3-26",
+      "sceneId": "s3",
+      "text": "\"Please take it in your palm,\" said they. \"There is a hole in its little belly to wind it, and the key must be turned seven times, and then it will begin to dance.\""
+    },
+    {
+      "id": "s3-27",
+      "sceneId": "s3",
+      "text": "With difficulty did the Emperor grasp the tiny key, and with difficulty did he hold it between his finger and thumb; and with the other forefinger and thumb he gripped the flea. And no sooner had he applied the little key than it began to move its feelers; next it began to wriggle its legs, and at last it gave a sudden skip, and in one bound it made a straight dance and two variations to one side, then to the other, and thus danced out an entire quadrille in three figures."
+    },
+    {
+      "id": "s3-28",
+      "sceneId": "s3",
+      "text": "The Emperor immediately commanded that a million be given to the artisans, in any money they preferred--in silver five-kopek pieces, if they liked, or in small bank-bills, if they liked that."
+    },
+    {
+      "id": "s3-29",
+      "sceneId": "s3",
+      "text": "The Englishmen requested that silver money be issued to them because they did not understand paper money; and then they immediately exhibited another cunning device of theirs: they had made a present of the flea, but had brought no case for it. But without a case it was impossible to keep either the flea or the key, because they would get lost, and be thrown out into the dust-heap. Yet they had made a case for it, fashioned out of a solid diamond, the size of a walnut, and its place was hollowed out in the centre. This they did not present, because, said they, the case was the property of the Crown, and they were held to strict account for Crown property, and they could not make a gift of it even to the Emperor."
+    },
+    {
+      "id": "s3-30",
+      "sceneId": "s3",
+      "text": "Platoff came near getting into a great rage, because, says he: \"Why such rascality? They have made a gift, and received a million for it, and all that is not enough! The case always goes with every article.\""
+    },
+    {
+      "id": "s3-31",
+      "sceneId": "s3",
+      "text": "But the Emperor said: \"Stop that, please,\" says he. \"This is no business of thine; don't spoil my politics. They have their own customs.\" And he inquires: \"What is the value of this walnut, in which the flea is lodged?\""
+    },
+    {
+      "id": "s3-32",
+      "sceneId": "s3",
+      "text": "The Englishmen rated it at five thousand more."
+    },
+    {
+      "id": "s3-33",
+      "sceneId": "s3",
+      "text": "\"Pay them,\" said the Emperor Alexander Pavlovitch; and himself dropped the tiny flea into the little nut, and the key with it; and in order that he might not lose the walnut itself, he placed it in his gold snuff-box, and ordered the snuff-box to be placed in his travelling-casket, which was all encrusted with mother of pearl and fish-bone. And the Emperor dismissed the English workmen with honor, and said to them: \"You are the finest artisans in the world, and my people can do nothing in comparison with you.\""
+    },
+    {
+      "id": "s3-34",
+      "sceneId": "s3",
+      "text": "They were highly pleased with this, and Platoff could utter nothing contrary to the Emperor's words. Only, he took the melkoscope, and without uttering a syllable, he dropped it into his pocket, \"because it belongs here, also,\" says he, \"and you have taken enough money from us already, anyway.\""
+    },
+    {
+      "id": "s3-35",
+      "sceneId": "s3",
+      "text": "The Emperor did not know of this until his arrival in Russia, but they went away speedily, because melancholy had seized upon the Emperor on account of military affairs, and he desired to make his spiritual confession to Priest Feodot in Taganrog."
+    },
+    {
+      "id": "s3-36",
+      "sceneId": "s3",
+      "text": "During the journey there was very little agreeable conversation between him and Platoff, because they had formed entirely different opinions; the Emperor thought that Englishmen had no equals in art, while Platoff insisted that our men had only to look at a thing and they could make everything,--only, they lacked good instruction. And he expounded to the Emperor that the English workmen had entirely different rules of life for everything, and different sciences and materials, and that each man of them had all absolute circumstances before him, and hence a wholly different understanding of things."
+    },
+    {
+      "id": "s3-37",
+      "sceneId": "s3",
+      "text": "The Emperor was not willing to listen long to this, but Platoff would get out at every posting-station, and drink a beer-glass of vodka through vexation, and eat a little round salted cracknel, and light his birch-root pipe, which held a whole pound of Zhukoff tobacco at one filling. And then he would take his place, and sit in silence beside the Tzar in the carriage. The Emperor gazed in one direction, while Platoff thrust his pipe out of the opposite window and smoked away in the breeze. And thus they journeyed until they reached Petrograd; and the Emperor did not take Platoff to Priest Feodot with him."
+    },
+    {
+      "id": "s3-38",
+      "sceneId": "s3",
+      "text": "\"Thou art intemperate in spiritual converse,\" said he, \"and thou smokest so excessively that soot has settled in my head from thy fumes.\""
+    },
+    {
+      "id": "s3-39",
+      "sceneId": "s3",
+      "text": "Platoff was offended, and lay upon the couch of vexation at home. And there he lay incessantly, and smoked Zhukoff tobacco without intermission."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "The wonderful flea, of burnished English steel, remained in Alexander Pavlovitch's casket beneath the fish's bone until he died in Taganrog, he having given it to Priest Feodot to transmit to the Empress later, when she should have grown calm. The Empress Alexandra Alexyevna looked at the flea's variations, and burst out laughing, but she did not occupy herself with it."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "\"My state is now that of a widow,\" said she, \"and no sort of amusement is seductive to me;\" and on her return to Petrograd, she gave this marvel and all the other treasures in the inheritance to the new Emperor."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "The Emperor Nikolai Pavlovitch also paid no heed to the flea at first, because there was a disturbance at his accession to the throne. But later on, one day, he began to inspect the casket which had come to him from his brother, and from it he drew forth the snuff-box, and from the snuff-box the diamond as big as a walnut, and in it he found the steel flea, which had not been wound up for a long time, and therefore did not work, but lay as though petrified."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "The Emperor gazed at it and marvelled. \"What sort of a nonsensical trifle is this? and why did my brother preserve it so carefully?\""
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "The courtiers wanted to fling it away, but the Emperor said: \"No, this has some meaning.\""
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "They summoned a chemist from the apothecary's shop at the Anitchkoff Bridge, who was accustomed to weigh out poisons on the tiniest of scales, and showed it to him; and he immediately took the flea, and placed it on his tongue, and said: \"I feel a chill, as from some strong metal.\" And then he bit it gently with his teeth, and announced: \"You may say what you please, this is not a real flea, but a nymfozoria, and 'tis made of metal, and the work is not ours, not Russian.\""
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "The Emperor ordered that they should instantly find out whence came this thing, and what was the meaning of it."
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "They flew to look in the archives and lists, but nothing was recorded in the archives. They began to question first one person and then another--no one knew anything about it. But, happily, that Cossack of the Don, Platoff, was still alive, and even still reclining on his couch of vexation and smoking his pipe. When he heard the uproar in the palace, he rose immediately from his couch, flung away his pipe, and presented himself before the Emperor in all his Orders."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "The Emperor says; \"What dost thou want from me, valiant old man?\""
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "And Platoff answers: \"I want nothing from Your Majesty for myself, since I eat and drink what I please, and am content with all things: but I am come to report to you concerning that nymfozoria which has been found. It was thus and so,\" says he, \"and this is what took place before my own eyes in England--and there is a tiny key with it, and I have the very melkoscope with which it can be seen, and with the key the nymfozoria can be wound up through its belly, and it will skip over any space you like, and make variations in all directions.\""
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "They wound it up, and it began to leap, and Platoff says: \"This, Your Majesty, is really a very delicate and interesting bit of work, but it is not meet that we should view it with ecstasy of spirit only; we must also submit it to Russian inspection in Tula or in Sesterbek,\"--Sesthoryetzk was still called Sesterbek at that time,--\"to see whether our artisans cannot surpass this, so that the English may not exalt themselves above the Russians.\""
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "\"Thou sayest well, valiant old man, and I commission thee to establish this matter. This little box I do not want at present, in all my anxieties, therefore do thou take it with thee; and stretch thyself not again upon thy couch of vexation, but go thou to the peaceful Don, and hold there with my men of the Don internecine converse with regard to their life and loyalty, and as to what pleaseth them. And when thou shalt pass through Tula, show thou this nymfozoria to my Tula artisans, and bid them meditate upon it. Say to them from me that my brother marvelled at this thing and praised the people who made the nymfozoria above all others; but I am convinced that my own people are no worse than they. They will not let my words pass unheeded, but will make something.\""
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Platoff took the steel flea, and as he passed through Tula on his way to the Don he showed it to the Tula gunsmiths and repeated to them the Emperor's words, and they asked: \"And now, what shall we do about it, Orthodox believers?\""
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "The gunsmiths replied: \"We are touched by the gracious word of the Emperor, *batiushka*, and we can never forget him, because he places reliance upon his own people; but what we must do in the present case we cannot say in one minute, because the English nation also is not stupid, but even tolerably cunning, and their art hath much sensible contrivance. With that,\" said they, \"we must cope after due reflection, and with the blessing of God. But if thou, gracious master, like unto our gracious Sovereign, hast confidence in us, then do thou go to thy home on the quiet Don, but leave this flea with us, just as it is, in its case, and in the Imperial golden snuff-box. Take thy pleasure upon the Don, and heal the wounds which thou hast accepted for the sake of the Fatherland, and when thou returnest through Tula, halt and send for us. By that time, God granting, we shall have devised something.\""
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "Platoff was not wholly satisfied that the men of Tula should demand so much time, and moreover, that they should not say plainly just what they intended to make. He questioned them this way and that, and craftily engaged them in conversation in all sorts of manners, after the fashion of the Don; but the Tula men did not yield to him one whit in cunning, for they had suddenly caught an idea which they could not even hope that Platoff would believe in, and they desired to execute fully their daring plan, and then hand it over."
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "Said they: \"We do not ourselves know, as yet, what thing we shall undertake; only, trust in God, and perchance the Imperial word will not be put to shame through us.\" And thus did Platoff use crafty mental shifts, and the men of Tula likewise."
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "Platoff shifted and shuffled, shifted and shuffled, and perceived, at last, that to out-shift and out-shuffle a Tula man was beyond his powers; so he gave them the snuff-box with the nymfozoria, and said: \"Well, there's nothing else to be done; be it according to your will. I know you--what sort of fellows ye are--but there's nothing else to be done; I trust you, only look to it that you will not exchange the diamond, and will not spoil the delicate English work, and that you will not be long about the job, for I travel fast; two weeks will not have passed before I shall return from the quiet Don to Petrograd, and then you must, without fail, let me have something to show to the Emperor.\""
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "The gunsmiths reassured him fully."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "\"We will not injure the delicate work,\" said they, \"and we will not exchange the diamond, and two weeks is time enough for us; and against that occasion of your return you shall have *something* worthy to show to the Emperor's Magnificence.\" But, all the same, they did not say precisely what that *something* was to be."
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Platoff departed from Tula; and three of the gunsmiths, the most skilful of them all--one a squint-eyed, left-handed smith with a birth-mark on his cheek and the hair upon his temples plucked out in the course of his apprenticeship--bade their comrades and their households farewell, and saying nothing to any one, took their wallets, placed therein the necessary food, and disappeared from the town. The only point about them which was remarked was, that they did not proceed towards the Moscow barrier, but in the opposite direction, towards Kieff; and it was supposed that they had betaken themselves to Kieff in order to do reverence to the departed Saints, or to take counsel there with some of the living holy men who are always present in Kieff, in vast abundance."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "But this was only approximately true, not the truth itself. Neither the time nor the distance allowed of the Tula artisans making the three weeks' trip on foot to Kieff, and afterwards executing a piece of work which should put the English nation to shame. Better would it have been to go to Moscow, which is distant only \"twice ninety versts,\" to pray, since departed Saints not a few repose there, also. But in the other direction, Oryol lies another \"twice ninety versts,\" and from Oryol to Kieff is a good five hundred versts more. Such a road is not to be speedily traversed, and having traversed it, one recovers not quickly--the feet will remain like glass, and the hands will tremble for a long time thereafter."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "Some persons even thought that the gunsmiths had been over-boastful in the presence of Platoff, and that afterwards, when they had bethought themselves, they had lost their courage, and had now decamped for good, carrying off with them the imperial gold snuff-box, and the diamond, and the English steel flea, which had caused them this trouble, in its case."
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "But this supposition, also, was utterly without foundation, and unworthy of the clever men upon whom the hope of the nation now rested."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "The men of Tula, clever fellows and well versed in the art of metals, are also renowned as the finest judges in religious matters. Their fame in this respect has filled not only their native land, but even holy Mount Athos. They are not only experts at singing from the obscure ancient notes, but they also know how the holy picture of \"the evening chime\" should be painted; and if any one of them dedicates himself to the great service and enters the monastic life, such men have the reputation of making the best Monastery stewards, and they turn out the most capable collectors. It is well known on holy Mount Athos that the men of Tula are a most profitable race, and were it not for them, many remote corners of Russia would, assuredly, never have beheld very many of the sacred things of the Far East, and Athos would have been deprived of many useful contributions from Russian bounty and piety."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Nowadays the \"Athos Tulans\" carry about sacred things throughout the whole of our native land, and collect contributions in the most masterly manner, even in places where there is nothing to be got. The Tula man is full of ecclesiastical piety, and very knowing in that line; therefore those three workmen who had undertaken to uphold Platoff, and with him all Russia, committed no error in directing their course not Moscow-wards but towards the South."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "They were bound not for Kieff, but for Mtzensk, a county town in the Government of Oryol, in which stands the ancient \"stone-carved\" holy image of Saint Nikolai, which had floated thither, in the most remote times, upon a great cross, also of stone, down the river Zusha. This is a holy image \"of menacing and most terrible aspect,\"--the Prelate of Myra-in-Lycia is therein depicted \"full-length,\" all clad in vestments of silver brocade, but dark of countenance; and in one hand he holds a temple, in the other a sword--\"symbolizing conquest.\" And precisely in this \"conquest\" lies the whole gist of the matter. Saint Nikolai is the Patron of mercantile and military matters in general, but the \"Nikolai of Mtzensk\" is so in particular, and to him the men of Tula hied them to pay their reverence. They caused a service of prayer to be celebrated before the holy image itself, and then before the stone cross, and at last they returned home, \"by night,\" and telling no one anything about it, they set to work with direful secrecy."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "All three assembled in a small house belonging to the left-handed man, locked the door, closed the shutters over the windows, lighted the sacred lamp before the holy picture of Nikolai, and set to work."
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "One day, two days, three days they sat, and went out nowhere, but kept tapping away with their little hammers. They were forging something--but what they were forging, no one knew."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Every one was curious, but no one could find out, because the workers said nothing and did not show themselves out of doors. Divers persons went to the cottage, and knocked at the door, under various pretexts, to ask for fire or salt; but the three artist-smiths unbolted for no questions, and it was not even known on what food they subsisted. An attempt was made to frighten them, and they were told that a house in the vicinity was on fire--to see whether they would not run out in their alarm, and then it would be revealed what they had forged; but no one could entrap these cunning artisans. On that occasion only the left-handed man did thrust himself out to the extent of his shoulders, and shout: \"Burn by yourselves, but we have no time!\"--and thereupon he hid his plucked pate again, clapped the shutter to, and proceeded with his business."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "Only, it could be seen through tiny cracks, that a small fire was glowing in the house, and the delicate little hammers could be heard tapping away on the resonant anvils."
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "In a word, the whole affair was conducted with such fearful secrecy that it was impossible to find out anything at all, and, moreover, this continued up to the very moment of Cossack Platoff's return from the quiet Don to the Emperor; and during all that time these artisans saw no one and talked with no one."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "Platoff travelled very swiftly, and in state: he himself sat in the calash, and on the box sat two Cossacks of the Imperial Suite with *nagaikas*, one on each side of the coachman, whom they belabored unmercifully, so that he should drive at a gallop. And if one of these Cossacks fell into a doze, Platoff kicked him out of the calash, and they drove on harder than ever. These means of encouragement operated so efficaciously that it was impossible to bring the horses to a halt at a single posting-station, and they always over-ran the stopping-place by a hundred leaps. Then the Suite-Cossack would work upon the coachman in the opposite quarter again, and they would return to the entrance."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "And in this same fashion did they roll into Tula; at first they flew a hundred leaps beyond the Moscow barrier, and then the Cossack worked upon the coachman in the opposite quarter, with his nagaika, and fresh horses were put in at the porch."
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "Platoff did not alight from the calash himself, but merely commanded a Suite-Cossack to bring to him, as speedily as possible, the master-workman with whom he had left the flea."
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "One Suite-Cossack ran to make them fetch the work which was to put the English to shame, as quickly as possible, and his Cossack had barely departed when Platoff despatched after him courier after courier, that all possible haste might be made."
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "When he had sent off all the Cossacks of the Suite on the run, he began to despatch simple members of the curious public, and even thrust his own legs out of the calash in his impatience, and was on the point of rushing off himself, and fairly gnashed his teeth--everything seemed so slow to him."
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "Such, at that time, was the demand that everything should be very quick and exact, that not a single moment might be wasted to Russian usefulness."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "The Tula artisans, who had executed a marvellous bit of business, had only just completed their work. The Cossacks of the Suite dashed up to them breathless, and the simple members of the curious public never arrived at all, because, through lack of practice, they flung their feet widely over the road, and tumbled down, whereupon they fled homewards, and hid themselves in the first place that offered, through fear of encountering Platoff's eye."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "But as soon as the Cossacks of the Suite rushed up, they instantly began to shout, and when they saw that the men did not open to them, they immediately proceeded to tear at the bolts and shutters, without ceremony. But the bolts were so stout that they did not yield in the least, and they wrenched at the door; but the door was backed up inside by oaken bars. Then the Cossacks picked up a beam in the street, fixed it under the roof-frame, after the fashion customary at conflagrations, and tipped the whole roof off the little house at one toss. But no sooner had they removed the roof than they instantly tumbled over backwards themselves, for such a spiral of sweat arose from the artisans in their confined quarters, caused by their unresting toil, that it was impossible for an unaccustomed man, coming directly from the fresh air, to breathe it all at once."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "The messengers shouted: \"What are you doing, you scoundrels, you thus and so? And how dare you to infect us with such a spiral, to boot? After this, God is not with you!\""
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "But they replied: \"We will instantly drive in the last little nail, and when that is in place, we will bring out our work.\""
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "But the messengers said: \"He'll devour us alive before that time, and leave not enough to remember our souls by.\""
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "But the gunsmiths replied: \"He will not succeed in swallowing you, because, lo! while you have been speaking we have already driven in that last tiny nail. Run and say that we will bring it immediately.\""
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "The Suite-Cossacks ran, but not with confidence--they thought the gunsmiths were deceiving them; therefore, while they ran as hard as they could, they kept glancing back. But the workmen followed them, and made such extreme haste that they did not manage to get their clothes quite on, as was meet before presenting themselves to such an important personage, but fastened the hooks of their kaftans as they ran. Two of them had nothing in their hands, but the third, the left-handed man, held the Imperial casket with the English steel flea, in a green case."
+    },
+    {
+      "id": "s10-0",
+      "sceneId": "s10",
+      "text": "The Suite-Cossacks dashed up to Platoff and said: \"Here they are themselves!\""
+    },
+    {
+      "id": "s10-1",
+      "sceneId": "s10",
+      "text": "Platoff immediately addressed the artisans: \"Ready?\""
+    },
+    {
+      "id": "s10-2",
+      "sceneId": "s10",
+      "text": "\"Quite ready,\" they replied."
+    },
+    {
+      "id": "s10-3",
+      "sceneId": "s10",
+      "text": "\"Hand it over.\""
+    },
+    {
+      "id": "s10-4",
+      "sceneId": "s10",
+      "text": "They gave it to him."
+    },
+    {
+      "id": "s10-5",
+      "sceneId": "s10",
+      "text": "The carriage was already harnessed, and the coachman and the postillion were in their places. The Cossacks immediately seated themselves beside the coachman, and raised their whips over him, and, after executing a flourish, held them so."
+    },
+    {
+      "id": "s10-6",
+      "sceneId": "s10",
+      "text": "Platoff tore off the green case, opened the casket, drew the golden snuff-box from the soft cotton, and from the snuff-box the diamond as big as a walnut, and beheld the English flea lying there exactly as before, and nothing else whatever."
+    },
+    {
+      "id": "s10-7",
+      "sceneId": "s10",
+      "text": "Says Platoff: \"What's this? And where is your work, wherewith you wished to solace the Emperor?\""
+    },
+    {
+      "id": "s10-8",
+      "sceneId": "s10",
+      "text": "The gunsmiths reply: \"Our work is here, also.\""
+    },
+    {
+      "id": "s10-9",
+      "sceneId": "s10",
+      "text": "Platoff inquires: \"Wherein does it consist?\""
+    },
+    {
+      "id": "s10-10",
+      "sceneId": "s10",
+      "text": "And the gunsmiths reply: \"Why declare that? All is here, before your eyes--and you can look.\""
+    },
+    {
+      "id": "s10-11",
+      "sceneId": "s10",
+      "text": "Platoff shrugged his shoulders and shouted: \"Where is the key to the flea?\""
+    },
+    {
+      "id": "s10-12",
+      "sceneId": "s10",
+      "text": "\"Here, also,\" they answered. \"Where the flea is, there, also, is the key, in one and the same walnut.\""
+    },
+    {
+      "id": "s10-13",
+      "sceneId": "s10",
+      "text": "Platoff tried to grasp the key, but his fingers were blunt; he fumbled and fumbled, but could not manage to get hold either of the flea, or of the key which projected from the machinery in its belly, and all at once he flew into a rage, and began to curse in words after the Cossack fashion. He shouted: \"What do you mean, you rascals? You have made nothing, and have spoiled the whole thing, to boot! I'll cut your heads off!\""
+    },
+    {
+      "id": "s10-14",
+      "sceneId": "s10",
+      "text": "But the men of Tula made reply: \"Without cause do you thus abuse us. We must suffer all insults from you, as from the Emperor's emissary, but just because you have doubted us and have thought that we are capable of deceiving even the Imperial name, we will not tell you our secret, but you will please to carry it to the Emperor. He will see what sort of people he has in us, and whether he will suffer shame because of us.\""
+    },
+    {
+      "id": "s10-15",
+      "sceneId": "s10",
+      "text": "But Platoff roared: \"Come, you are lying, you rascals! I'll not part from you, but one of you shall go to Petrograd with me, and there I will put him to the question as to the nature of your cunning devices.\""
+    },
+    {
+      "id": "s10-16",
+      "sceneId": "s10",
+      "text": "Thereupon, he stretched out his hand, seized the squint-eyed, left-handed smith by the collar with his stubby fingers, so that all the hooks flew off the man's coat, and flung him at his feet in the calash."
+    },
+    {
+      "id": "s10-17",
+      "sceneId": "s10",
+      "text": "\"Sit here,\" says he, \"in the manner of a poodle, until we get to Petrograd--you shall answer to me for all of them. And you,\" says he to the Cossacks of the Suite, \"whip up, there! Don't dawdle! See that you get me to the Emperor in Petrograd the day after to-morrow.\""
+    },
+    {
+      "id": "s10-18",
+      "sceneId": "s10",
+      "text": "The artisans merely ventured to say to him, on behalf of their comrade: \"How can you take him from us thus without a tugament? He will not be able to come back.\""
+    },
+    {
+      "id": "s10-19",
+      "sceneId": "s10",
+      "text": "But Platoff, in place of answer, showed them his fist,--such a horrible fist,--dark red and all slashed, seemingly grown together here and there--and menacing them, he said: \"Here's his tugament for you!\""
+    },
+    {
+      "id": "s10-20",
+      "sceneId": "s10",
+      "text": "And to the Cossacks he said: \"Whip up, my lads!\""
+    },
+    {
+      "id": "s10-21",
+      "sceneId": "s10",
+      "text": "Cossacks, coachman, and horses all began to work simultaneously, and bore away the left-handed man without his tugament; and the next day but one, as Platoff had commanded, they whirled him up to the Emperor's palace, and even, having over-galloped as was befitting, they drove past the columns."
+    },
+    {
+      "id": "s10-22",
+      "sceneId": "s10",
+      "text": "Platoff rose, fastened on his Orders, and went to the Emperor, commanding the Cossacks of the Suite to stand guard at the entrance over the squint-eyed, left-handed smith."
+    },
+    {
+      "id": "s11-0",
+      "sceneId": "s11",
+      "text": "Platoff was afraid to present himself before the eyes of the Emperor, because Nikolai Pavlovitch was a terribly remarkable man, with a long memory--he never forgot anything. Platoff knew that he would, infallibly, question him about the flea. And so he, who feared no enemy in all the world, lost his courage there. He entered the palace with the casket, and slily thrust it behind the stove in the hall. Having thus concealed the casket, Platoff presented himself before the Emperor in his study, and began, with all possible speed, to report the internecine conversation of the Cossacks on the quiet Don. He reasoned thus: that he would engage the Emperor's attention in this manner, and then, if the Emperor himself remembered and mentioned the flea, it would be necessary to hand it over and answer for it; but if the Emperor should not refer to it, then he would hold his own tongue: he would order the valet attached to the study to put the casket away out of sight, and would confine the left-handed Tula man in a casemate of the fortress for an indefinite period, and allow him to sit there until he was needed."
+    },
+    {
+      "id": "s11-1",
+      "sceneId": "s11",
+      "text": "But the Emperor Nikolai Pavlovitch had forgotten nothing, and Platoff had barely terminated his internecine conversations, when he immediately inquired: \"Well, and how have my Tula artisans justified themselves against the English nymfozoria?\""
+    },
+    {
+      "id": "s11-2",
+      "sceneId": "s11",
+      "text": "\"The nymfozoria, Your Majesty,\" says he, \"is still in the same space, and I have brought it back, for the Tula artisans could make nothing more marvellous.\""
+    },
+    {
+      "id": "s11-3",
+      "sceneId": "s11",
+      "text": "The Emperor replied: \"Thou art a valiant old man, but that which thou hast just reported to me cannot be.\""
+    },
+    {
+      "id": "s11-4",
+      "sceneId": "s11",
+      "text": "Platoff began to assure him, and related the whole course of the matter; and when he had reached the point where the men of Tula entreated him that the flea might be shown to the Emperor, Nikolai Pavlovitch slapped him on the back and said: \"Give it here! I know that my own people cannot deceive me. Something beyond comprehension has been done here.\""
+    },
+    {
+      "id": "s12-0",
+      "sceneId": "s12",
+      "text": "They fetched out the casket from behind the stove, removed its cloth case, opened the golden snuff-box and the diamond walnut, and there lay the flea, just as it had lain before."
+    },
+    {
+      "id": "s12-1",
+      "sceneId": "s12",
+      "text": "The Emperor gazed and said: \"How clever!\" but his faith in the Russian workmen was not diminished, and he ordered that his favorite daughter, Alexandra Nikolaevna, be summoned, and commanded her: \"Thou hast delicate fingers on thy hands--take the little key and wind up the belly machine of this nymfozoria as speedily as possible.\""
+    },
+    {
+      "id": "s12-2",
+      "sceneId": "s12",
+      "text": "The Princess began to turn the key, and the flea instantly began to move its feelers, but did not stir its legs. Alexandra Nikolaevna wound up the whole machinery, but still the nymfozoria neither executed its dance nor performed a single variation, as in former times."
+    },
+    {
+      "id": "s12-3",
+      "sceneId": "s12",
+      "text": "Platoff turned all green, and cried; \"Ah! the rascally dogs! Now I understand why they would not tell me anything there. 'Tis well that I fetched one of the fools along with me.\""
+    },
+    {
+      "id": "s12-4",
+      "sceneId": "s12",
+      "text": "With these words, he rushed out upon the porch, seized the left-handed man by the hair, and began to hurl him about hither and thither, until the tufts flew. But when Platoff ceased to beat him, the man recovered himself and said: \"My hair has already been all pulled out, during my apprenticeship, and now I do not know for what necessity such a repetition has descended.\""
+    },
+    {
+      "id": "s12-5",
+      "sceneId": "s12",
+      "text": "\"'Tis because I had set my hopes upon you,\" said Platoff, \"and had gone surety for you, and you have spoiled a valuable thing.\""
+    },
+    {
+      "id": "s12-6",
+      "sceneId": "s12",
+      "text": "The left-handed man replied: \"We are greatly satisfied that you went surety for us, but as for spoiling--we have spoiled nothing: take and look through the very strongest melkoscope.\""
+    },
+    {
+      "id": "s12-7",
+      "sceneId": "s12",
+      "text": "Platoff ran back, told about the melkoscope, and merely threatened the left-handed man."
+    },
+    {
+      "id": "s12-8",
+      "sceneId": "s12",
+      "text": "\"I'll give it to you well, yet,\" says he, \"you thus-and-thus-and-so!\" And he ordered the Cossacks of the Suite to fasten the left-handed man's elbows still more strongly behind him, and himself mounted the stairs, fuming and reciting a prayer in one breath: \"Blessed Mother of the Blessed King, pure, all-pure,\" and so on, as is proper. And all the courtiers who were standing on the stairs turned away from him and thought: \"Platoff is caught, at last, and in a few moments he will be driven from the palace,\"--for they could not endure him on account of his bravery."
+    },
+    {
+      "id": "s13-0",
+      "sceneId": "s13",
+      "text": "When Platoff reported the left-handed man's words to the Emperor, the latter instantly exclaimed with joy: \"I knew that my Russian people had not betrayed me!\" and he ordered a melkoscope to be brought on a cushion."
+    },
+    {
+      "id": "s13-1",
+      "sceneId": "s13",
+      "text": "The melkoscope was brought that very minute, and the Emperor took the flea, and placed it under the glass, first with its back, then with its side, then with its belly upward,--in short, he turned it on all sides, but nothing was to be seen. But even then the Emperor did not lose faith, and said merely: \"Bring hither instantly that gunsmith who is downstairs.\""
+    },
+    {
+      "id": "s13-2",
+      "sceneId": "s13",
+      "text": "Platoff announced: \"His clothing must be changed. I took him just as he was, and now he is in very evil plight.\""
+    },
+    {
+      "id": "s13-3",
+      "sceneId": "s13",
+      "text": "But the Emperor replied: \"Bring him just as he is.\""
+    },
+    {
+      "id": "s13-4",
+      "sceneId": "s13",
+      "text": "Platoff said: \"Here now, you thus-and-so, go yourself and make answer before the eyes of the Emperor.\""
+    },
+    {
+      "id": "s13-5",
+      "sceneId": "s13",
+      "text": "And the left-handed man replied: \"Assuredly I will go and will make answer.\""
+    },
+    {
+      "id": "s13-6",
+      "sceneId": "s13",
+      "text": "So he goes, just as he is, in his voluminous trousers, one leg tucked into his boot, the other flapping unrestrainedly, and his old kaftan, whose hooks would not fasten because they were lost, and which had a rent on the stomach; but he took no heed of this--he felt no confusion."
+    },
+    {
+      "id": "s13-7",
+      "sceneId": "s13",
+      "text": "\"What of it?\" he said to himself. \"If it pleases the Emperor to see me, I must go; and if I have no tugament with me, I am not to blame, and I will tell how the matter came about.\""
+    },
+    {
+      "id": "s13-8",
+      "sceneId": "s13",
+      "text": "When the left-handed man entered and made his obeisance, the Emperor immediately said to him: \"What is the meaning of this, my good man, that we have examined it thus and thus, and have placed it under the melkoscope, and can descry nothing noteworthy?\""
+    },
+    {
+      "id": "s13-9",
+      "sceneId": "s13",
+      "text": "And the left-handed man replied: \"Did Your Majesty deign to look at it in the right way?\""
+    },
+    {
+      "id": "s13-10",
+      "sceneId": "s13",
+      "text": "The grandees made signs to him, \"Don't speak so!\" but he did not understand that one must express one's self in the Court fashion, flatteringly, or with craft, and he spoke simply."
+    },
+    {
+      "id": "s13-11",
+      "sceneId": "s13",
+      "text": "The Emperor said: \"Stop your prudent interference with him; let him answer as he pleases.\""
+    },
+    {
+      "id": "s13-12",
+      "sceneId": "s13",
+      "text": "And immediately he said to him: \"This is the way we placed it,\" and laid the flea under the melkoscope. \"Look for yourself,\" said he, \"there is nothing to be seen.\""
+    },
+    {
+      "id": "s13-13",
+      "sceneId": "s13",
+      "text": "The left-handed man replies: \"In that manner it is impossible to see anything, Your Majesty, because our work is far more secret, in comparison with such proportions.\""
+    },
+    {
+      "id": "s13-14",
+      "sceneId": "s13",
+      "text": "The Emperor asked: \"But how, then, must one do it?\""
+    },
+    {
+      "id": "s13-15",
+      "sceneId": "s13",
+      "text": "\"It is necessary,\" says he, \"to bring only one of its feet, in detail, under the melkoscope, and to scrutinize separately every heel wherewith it walks.\""
+    },
+    {
+      "id": "s13-16",
+      "sceneId": "s13",
+      "text": "\"Really, you don't say so,\" says the Emperor. \"That is very powerfully small.\""
+    },
+    {
+      "id": "s13-17",
+      "sceneId": "s13",
+      "text": "\"It cannot be helped,\" replies the left-handed man, \"if our work is only to be observed thus; and then all the marvel of it will be displayed.\""
+    },
+    {
+      "id": "s13-18",
+      "sceneId": "s13",
+      "text": "They placed it as the left-handed man directed, and no sooner had the Emperor peeped through the upper glass, than he fairly beamed all over, took the left-handed man just as he was--unkempt, dusty, unwashed--into his arms, embraced him, and kissed him, and then turned to all the courtiers and said: \"Do you see? I knew better than any one else that my Russians would not fail me. Please to look, for these rascals have shod the English flea with horse-shoes!\""
+    },
+    {
+      "id": "s14-0",
+      "sceneId": "s14",
+      "text": "All began to approach and look; the flea was actually shod with real shoes on all its feet, and the left-handed man declared that even this did not constitute the whole marvel."
+    },
+    {
+      "id": "s14-1",
+      "sceneId": "s14",
+      "text": "\"If you had a better melkoscope,\" said he, \"which would magnify five million times, then you might deign to perceive that the maker's name is stamped upon each shoe.\""
+    },
+    {
+      "id": "s14-2",
+      "sceneId": "s14",
+      "text": "\"And is your name there?\" asked the Emperor."
+    },
+    {
+      "id": "s14-3",
+      "sceneId": "s14",
+      "text": "\"Not at all,\" replies the left-handed man. \"I worked at something finer than those horse-shoes. I forged the tiny nails with which the shoes are fastened on; for that no melkoscope whatever can be used.\""
+    },
+    {
+      "id": "s14-4",
+      "sceneId": "s14",
+      "text": "The Emperor said: \"Where is your melkoscope with which you could produce this marvel?\""
+    },
+    {
+      "id": "s14-5",
+      "sceneId": "s14",
+      "text": "And the left-handed man replied: \"We are poor folk, and because of our poverty we have no melkoscope, but we have trained eyes.\""
+    },
+    {
+      "id": "s14-6",
+      "sceneId": "s14",
+      "text": "Then other courtiers still, perceiving that the left-handed man's case had proved auspicious, began to kiss him, and Platoff gave him a hundred rubles and said: \"Forgive me, good brother, for hauling you by the hair.\""
+    },
+    {
+      "id": "s14-7",
+      "sceneId": "s14",
+      "text": "The left-handed man replied: \"God forgives--this is not the first time that that sort of thing has happened to me.\""
+    },
+    {
+      "id": "s14-8",
+      "sceneId": "s14",
+      "text": "And he said no more, neither was there any time for him to speak at length, for the Emperor commanded that this shod nymfozoria should immediately be packed up and sent back to England, in the guise of a gift, so that they might understand there that this was in no way astonishing to us. And the Emperor ordered that a special Courier should carry the flea, a man learned in all tongues, and that the left-handed man should go with him, and that he himself should exhibit his handiwork to the Englishmen, and show what workmen we have in Tula."
+    },
+    {
+      "id": "s14-9",
+      "sceneId": "s14",
+      "text": "Platoff made the sign of the cross over him: \"May a blessing rest upon thee!\" said he; \"and I will send thee my own Caucasian vodka,--my *kizlyarki*--for the journey. Drink not a little, drink not much, but drink moderately.\""
+    },
+    {
+      "id": "s14-10",
+      "sceneId": "s14",
+      "text": "And so he did--he sent it."
+    },
+    {
+      "id": "s14-11",
+      "sceneId": "s14",
+      "text": "And Count Kiselvrode ordered that the left-handed man should be washed in the Tulyakoff public bath, that his hair and beard should be trimmed in a hairdresser's shop, and that he should be clothed in a State kaftan taken from a Court singer, so that he might make a good appearance, and have some sort of rank conferred upon him."
+    },
+    {
+      "id": "s14-12",
+      "sceneId": "s14",
+      "text": "When they had re-uniformed him in this manner, treated him to tea with Platoff's vodka for the journey, and had drawn in his leather belt as snugly as possible, in order that his bowels might not shake, they took him to London. And there foreign things happened to the left-handed man."
+    },
+    {
+      "id": "s15-0",
+      "sceneId": "s15",
+      "text": "The Courier travelled so very swiftly with the left-handed man, that they halted nowhere to rest between Petrograd and London, but merely drew their belts tighter at every posting-station, so that their bowels and their lungs might not get mixed up together; but, as an allowance of liquor at will had been appointed to the left-handed man after his interview with the Emperor, at Platoffs instance, he sustained himself on that alone, without eating, and sang Russian songs all through Europe, making only a refrain in foreign fashion, \"Aï, people, *c'est très juli*.\""
+    },
+    {
+      "id": "s15-1",
+      "sceneId": "s15",
+      "text": "As soon as the Courier brought him to London, he presented himself to the proper persons and delivered the casket, but placed the left-handed man in a chamber at a hotel; but there the latter speedily grew bored, and felt a desire to eat. He knocked on the door, and pointed out his mouth to the servant who waited on him, and the man immediately conducted him to the food-reception room."
+    },
+    {
+      "id": "s15-2",
+      "sceneId": "s15",
+      "text": "There the left-handed man seated himself at the table, and sat, and sat; but how to ask for anything in English he did not know. But after a while he found out. Again he simply tapped upon the table with his finger, and pointed at his mouth; the Englishmen guessed, and served him, only they did not always bring what he wanted, but he did not take what did not suit him. They brought him a hot studing in fire of their preparation. Says he, \"I know not whether that can be eaten,\" and he would not taste it; so they changed it, and brought him another dish. And thus, also, he would not drink their brandy, because it was green, as though mixed with copperas, but chose the most natural things of all, and waited for the Courier in the coolness behind the bottle-room."
+    },
+    {
+      "id": "s15-3",
+      "sceneId": "s15",
+      "text": "And those persons to whom the Courier had delivered the nymfozoria examined it that very moment with the most powerful melkoscopes, and immediately put a description in the public news, so that an announcement of it might come to general notice on the following day."
+    },
+    {
+      "id": "s15-4",
+      "sceneId": "s15",
+      "text": "\"And we wish to see that master-workman himself at once,\" said they."
+    },
+    {
+      "id": "s15-5",
+      "sceneId": "s15",
+      "text": "The Courier led them to the chamber, and thence to the food-reception room, where our left-handed man had already grown fairly red in the face, and said: \"Here he is!\""
+    },
+    {
+      "id": "s15-6",
+      "sceneId": "s15",
+      "text": "The Englishmen immediately began to clap the left-handed man on the shoulder, *slap-slap*, and on the hands, as with an equal."
+    },
+    {
+      "id": "s15-7",
+      "sceneId": "s15",
+      "text": "\"Comrade,\" said they, \"comrade,--good master,--we will talk with thee hereafter, in due time, but now we will drink to thy success.\""
+    },
+    {
+      "id": "s15-8",
+      "sceneId": "s15",
+      "text": "They called for a great deal of liquor, and gave the first glass to the left-handed man, but he would not drink first: \"Perhaps they wish to poison me out of vexation,\" he thought."
+    },
+    {
+      "id": "s15-9",
+      "sceneId": "s15",
+      "text": "\"No,\" says he, \"that is not proper etiquette. Even in Poland no one is greater than the host--drink first yourselves.\""
+    },
+    {
+      "id": "s15-10",
+      "sceneId": "s15",
+      "text": "The Englishmen tested all the liquors in his presence, and then began to pour out for him. He rose, crossed himself with his left hand, and drank to the health of them all."
+    },
+    {
+      "id": "s15-11",
+      "sceneId": "s15",
+      "text": "They noticed that he crossed himself with his left hand, and asked the Courier: \"What is he--a Lutheran or a Protestant?\""
+    },
+    {
+      "id": "s15-12",
+      "sceneId": "s15",
+      "text": "The Courier replied: \"No, he is neither a Lutheran nor a Protestant, but of the Russian faith.\""
+    },
+    {
+      "id": "s15-13",
+      "sceneId": "s15",
+      "text": "\"But why does he cross himself with his left hand?\""
+    },
+    {
+      "id": "s15-14",
+      "sceneId": "s15",
+      "text": "The Courier said: \"He's left-handed, and does everything with his left hand.\""
+    },
+    {
+      "id": "s15-15",
+      "sceneId": "s15",
+      "text": "The Englishmen began to be more amazed than ever, and set to pouring liquor into the left-handed man and the Courier, and thus they went on for three days, and then they said: \"Now, that's enough.\""
+    },
+    {
+      "id": "s15-16",
+      "sceneId": "s15",
+      "text": "But they took a symphony of water with airfixe, and having completely freshened themselves up, they began to interrogate the left-handed man; Where and what he had studied, and to what point he was acquainted with arithmetic?"
+    },
+    {
+      "id": "s15-17",
+      "sceneId": "s15",
+      "text": "The left-handed man replied: \"Our learning is single: we can read the Psalter and the Polusonnik, but we know no arithmetic whatever.\""
+    },
+    {
+      "id": "s15-18",
+      "sceneId": "s15",
+      "text": "The Englishmen exchanged glances and said: \"This is astounding!\""
+    },
+    {
+      "id": "s15-19",
+      "sceneId": "s15",
+      "text": "But the left-handed man replied: \"That's the way with us everywhere.\""
+    },
+    {
+      "id": "s15-20",
+      "sceneId": "s15",
+      "text": "\"But,\" they inquire, \"what sort of a book in Russia is that 'Polusonnik'?\""
+    },
+    {
+      "id": "s15-21",
+      "sceneId": "s15",
+      "text": "\"That,\" says he, \"is a book concerned with this--that if there is anything touching on fortune-telling which King David has not clearly set forth in the Psalter, then people are able to divine the completion in the Polusonnik.\""
+    },
+    {
+      "id": "s15-22",
+      "sceneId": "s15",
+      "text": "They say: \"That's a pity; 't would be better if you knew at least the four ordinary rules of arithmetic,--they would be far more useful to you than the entire Polusonnik. Then you would be able to grasp the fact that in every machine there is a calculation of powers, and although you are very clever with your hands, you have not taken into consideration that such a tiny machine as the nymfozoria is calculated with the most exact accuracy, and that it cannot carry its shoes.\""
+    },
+    {
+      "id": "s15-23",
+      "sceneId": "s15",
+      "text": "To that the left-handed man agreed. \"As to that,\" says he, \"there is no dispute--that we have not gone in for science, but only we are faithfully loyal to our Fatherland.\""
+    },
+    {
+      "id": "s15-24",
+      "sceneId": "s15",
+      "text": "But the Englishmen say to him; \"Stay with us, we will transmit to you great instruction, and you will turn out a wonderful master-expert.\""
+    },
+    {
+      "id": "s15-25",
+      "sceneId": "s15",
+      "text": "But to that the left-handed man did not agree: \"I have parents at home,\" says he."
+    },
+    {
+      "id": "s15-26",
+      "sceneId": "s15",
+      "text": "The Englishmen offered to send his parents money, but the left-handed man would not accept it."
+    },
+    {
+      "id": "s15-27",
+      "sceneId": "s15",
+      "text": "\"We,\" says he, \"are devoted to our country, and my daddy is already an old man, and my mother is an old woman, and they are used to going to church in their own parish, and besides, I should be very lonely all by myself, for I am still in the vocation of a bachelor.\""
+    },
+    {
+      "id": "s15-28",
+      "sceneId": "s15",
+      "text": "\"You'll get used to it,\" say they,--\"accept our law and we will marry you off.\""
+    },
+    {
+      "id": "s15-29",
+      "sceneId": "s15",
+      "text": "\"That,\" replies the left-handed man, \"can never be.\""
+    },
+    {
+      "id": "s15-30",
+      "sceneId": "s15",
+      "text": "\"Why so?\""
+    },
+    {
+      "id": "s15-31",
+      "sceneId": "s15",
+      "text": "\"Because,\" he replies, \"our Russian faith is the most correct, and as the ancestors have believed, so, also, should the descendants believe.\""
+    },
+    {
+      "id": "s15-32",
+      "sceneId": "s15",
+      "text": "\"You do not know our faith,\" say the Englishmen; \"we hold to the same Christian law and the same Gospels.\""
+    },
+    {
+      "id": "s15-33",
+      "sceneId": "s15",
+      "text": "\"The Gospels,\" replies the left-handed man, \"are, indeed, the same among all, but our books are thicker than yours, and our faith is more complete, also.\""
+    },
+    {
+      "id": "s15-34",
+      "sceneId": "s15",
+      "text": "\"How do you make that out?\""
+    },
+    {
+      "id": "s15-35",
+      "sceneId": "s15",
+      "text": "\"Because,\" he replies, \"we possess all the visible proofs.\""
+    },
+    {
+      "id": "s15-36",
+      "sceneId": "s15",
+      "text": "\"What proofs?\""
+    },
+    {
+      "id": "s15-37",
+      "sceneId": "s15",
+      "text": "\"These,\" says he: \"that we have God-sent holy images, and grave-oozing heads, and relics, but you have nothing, and even no extra holidays, nothing beyond Sunday; and for the second reason, even if I were married to an Englishwoman, it would confuse me to live with her.\""
+    },
+    {
+      "id": "s15-38",
+      "sceneId": "s15",
+      "text": "\"Why so?\" they ask. \"Do not scorn her--our women also dress very neatly and are good housewives.\""
+    },
+    {
+      "id": "s15-39",
+      "sceneId": "s15",
+      "text": "But the left-handed man says: \"I don't know them.\""
+    },
+    {
+      "id": "s15-40",
+      "sceneId": "s15",
+      "text": "The Englishmen reply: \"That's not a weighty matter--you can learn to know them: we will arrange a grendezvous for you.\""
+    },
+    {
+      "id": "s15-41",
+      "sceneId": "s15",
+      "text": "The left-handed man was abashed. \"Why,\" says he, \"worry the girls vainly?\" and he refused. \"A grendezvous,\" says he, \"is a matter for the gentry, and not suitable for such as me, and if folks were to hear of that at home, in Tula, they would ridicule me greatly.\""
+    },
+    {
+      "id": "s15-42",
+      "sceneId": "s15",
+      "text": "The Englishmen became curious: \"But if you don't have grendezvous,\" say they, \"how do you manage in such cases to make a pleasing choice?\""
+    },
+    {
+      "id": "s15-43",
+      "sceneId": "s15",
+      "text": "The left-handed man explained to them our position. \"With us,\" says he, \"when a man wishes to display a more particular intention with regard to a girl, he sends the confabulation-woman, and when she makes the proposal, then we go together, very politely, to the house, and we look the girl over, not in secrecy, but in the presence of all her relatives.\""
+    },
+    {
+      "id": "s15-44",
+      "sceneId": "s15",
+      "text": "They understood, but answered that they had no confabulation-women, and such a custom was not in practice, but the left-handed man said: \"That's all the more agreeable, because if you are going to occupy yourself with such a matter, it must be with a definite intention, and as I do not feel that towards a foreign nation, then why torment the girls?\""
+    },
+    {
+      "id": "s15-45",
+      "sceneId": "s15",
+      "text": "He pleased the Englishmen in these arguments, also, so that they again began to clap him on the shoulders and the knees, with pleasantness, and asked: \"We would just like to know, out of mere curiosity: what defect have you observed in our girls, and why do you shun them?\""
+    },
+    {
+      "id": "s15-46",
+      "sceneId": "s15",
+      "text": "Thereupon the left-handed man answered them frankly: \"I accuse them of no defect, but what does not please me is that their dress sort of flutters about them, and one cannot make out what they have on, and for what purpose; first there is some sort of thing or other, and underneath there's another pinned on, and on their arms are some sort of leglets or other. Their plush cloak is exactly like an ape--a sapajou.\""
+    },
+    {
+      "id": "s15-47",
+      "sceneId": "s15",
+      "text": "The Englishmen burst out laughing and say: \"Where's the objection in that?\""
+    },
+    {
+      "id": "s15-48",
+      "sceneId": "s15",
+      "text": "\"There's no objection,\" replies the left-handed man, \"only I'm afraid it would make me blush to watch and wait while she is getting herself out of all that.\""
+    },
+    {
+      "id": "s15-49",
+      "sceneId": "s15",
+      "text": "\"Is it possible,\" say they, \"that your fashion is better?\""
+    },
+    {
+      "id": "s15-50",
+      "sceneId": "s15",
+      "text": "\"Our fashion,\" he replies, \"in Tula is simple: every woman wears a roundabout, and even the greatest ladies wear our roundabouts.\""
+    },
+    {
+      "id": "s15-51",
+      "sceneId": "s15",
+      "text": "They also showed him to their ladies, and there they poured tea for him, and inquired: \"Why do you frown?\""
+    },
+    {
+      "id": "s15-52",
+      "sceneId": "s15",
+      "text": "He replies: \"Because,\" says he, \"we are not used to taking it very sweet.\""
+    },
+    {
+      "id": "s15-53",
+      "sceneId": "s15",
+      "text": "Then they gave him a lump of sugar to nibble at, in Russian fashion."
+    },
+    {
+      "id": "s15-54",
+      "sceneId": "s15",
+      "text": "They argued with him that it could not be as nice that way, but he said: \"To our taste it is more tasty thus.\""
+    },
+    {
+      "id": "s15-55",
+      "sceneId": "s15",
+      "text": "In no way could the English disconcert him, or make him feel attracted by their manner of life, and merely succeeded in persuading him to remain their guest for a short time, by promising that during that time they would take him about to divers factories, and show him all their art."
+    },
+    {
+      "id": "s15-56",
+      "sceneId": "s15",
+      "text": "\"And then,\" said they, \"we will take him to his ship, and *deliver him alive in Petrograd*.\""
+    },
+    {
+      "id": "s15-57",
+      "sceneId": "s15",
+      "text": "To this he agreed."
+    },
+    {
+      "id": "s16-0",
+      "sceneId": "s16",
+      "text": "The Englishmen took charge of the left-handed man, but sent the Russian Courier back to Russia. Although the Courier had a rank and was skilled in divers languages, they took no interest in him, but they did find the left-handed man interesting, and set about taking him everywhere and showing him everything."
+    },
+    {
+      "id": "s16-1",
+      "sceneId": "s16",
+      "text": "He inspected all their products, and their metal foundries, and their soap and saw-mills, and all their domestic arrangements pleased him exceedingly, especially those pertaining to the maintenance of the workingman. Every laborer among them is always well fed, clothed not in rags but each in a capable every-day waistcoat, and shod with stout boots with iron caps, so that their feet might never receive any shock from anything. And they work not at haphazard but after training, and understand their business. In front of every one of them hangs a multiplication table, and close by his hand is an erasing-board; whenever an artisan does anything, he looks at the multiplication table, and verifies it with surety, and then writes down one thing on the board and erases another, and brings it into accuracy: what is written in figures turns out just so in fact. And when a holiday comes, they assemble in pairs, each takes a slender rod in his hand, and they go off to enjoy themselves in honorably dignified fashion, as is fitting."
+    },
+    {
+      "id": "s16-2",
+      "sceneId": "s16",
+      "text": "The left-handed man gazed his fill at their manner of life and all their labors, but devoted most attention of all to one object which caused the Englishmen great amazement. He was not so much absorbed in their manner of making new guns as in the condition of the old ones. He kept going about and uttering praises, and saying: \"And this, also, we can do.\" But when he came across an old gun, he would thrust his finger into the barrel, draw it along the walls, and sigh; \"This,\" says he, \"is incomparably finer than ours.\""
+    },
+    {
+      "id": "s16-3",
+      "sceneId": "s16",
+      "text": "The Englishmen could by no means divine what it was that the left-handed man was commenting upon, but he inquired: \"Cannot I find out whether our Generals ever beheld this or not?\""
+    },
+    {
+      "id": "s16-4",
+      "sceneId": "s16",
+      "text": "They say to him: \"Some of them have been over here, and they must have seen it.\""
+    },
+    {
+      "id": "s16-5",
+      "sceneId": "s16",
+      "text": "\"But how were they,\" says he, \"with gloves or without gloves?\""
+    },
+    {
+      "id": "s16-6",
+      "sceneId": "s16",
+      "text": "\"Your Generals,\" say they, \"are always in full dress; they always go about in gloves, and, of course, they did so here, also.\""
+    },
+    {
+      "id": "s16-7",
+      "sceneId": "s16",
+      "text": "The left-handed man said nothing, but all at once he began to get uneasy and bored. He pined, and pined, and said to the Englishmen: \"I thank you sincerely for all your hospitality, and I am very content here with you, and all that it was necessary for me to see I have seen, and now I desire to return home as speedily as possible.\""
+    },
+    {
+      "id": "s16-8",
+      "sceneId": "s16",
+      "text": "They could by no means detain him longer. It was impossible to let him go home by land, because he did not know all the languages, and it was not good to sail upon the sea, because it was the autumn season, and stormy; but he insisted: \"Let me go.\""
+    },
+    {
+      "id": "s16-9",
+      "sceneId": "s16",
+      "text": "\"We have looked at the buremeter,\" they said. \"There is going to be a storm--you may be drowned: for this is not like your Gulf of Finland, but this is the regular Dryland Sea.\""
+    },
+    {
+      "id": "s16-10",
+      "sceneId": "s16",
+      "text": "\"That makes no difference,\" he replied: \"'t is all the same to me where I die; God's will be done. But I desire to return to my native land as speedily as may be, because otherwise I may acquire a sort of madness.\""
+    },
+    {
+      "id": "s16-11",
+      "sceneId": "s16",
+      "text": "They did not detain him by force; they crammed him with food, rewarded him with money, gave him gifts to remember them by--a golden watch with a repeater--and against the sea chill on his late autumn road they gave him a frieze great-coat, with a weather-hood for his head. They clothed the left-handed man very warmly, and conducted him to a ship which was due to sail for Russia. There they installed the left-handed man in the very best manner, like a real gentleman; but he did not like it, and was ashamed to sit shut up with the other gentle-folk; so he went off to the deck, sat down under the tarpaulin, and asked: \"Where is our Russia?\""
+    },
+    {
+      "id": "s16-12",
+      "sceneId": "s16",
+      "text": "The Englishman whom he asked pointed or nodded his head in the right direction, and he turned his face thither and gazed impatiently towards his native land."
+    },
+    {
+      "id": "s16-13",
+      "sceneId": "s16",
+      "text": "When they emerged from the harbor into the Dryland Sea, his longing for Russia became so great that it was impossible to soothe him in any way whatever. The dash of the waves became terrible, but still the left-handed man would not go below to the cabin--he sat there under the tarpaulin, pulled up his hood, and gazed towards his Fatherland. Many times did the Englishmen approach to invite him to come below to a warm place; but he, in order that they might not annoy him, even began to fend them off by means of a lie."
+    },
+    {
+      "id": "s16-14",
+      "sceneId": "s16",
+      "text": "\"No,\" he answered, \"I feel better outside--but under cover the rolling of the ship gives me porpoises.\""
+    },
+    {
+      "id": "s16-15",
+      "sceneId": "s16",
+      "text": "Thus he never went below the whole time, until a certain occasion, and thereby greatly pleased a certain half-skipper, who, to the misfortune of our left-handed man, was able to speak Russian. This half-skipper could never overcome his amazement that a Russian landlubber could so withstand all rough weather."
+    },
+    {
+      "id": "s16-16",
+      "sceneId": "s16",
+      "text": "\"Fine fellow!\" says he. \"Russian--let's have a drink!\" The left-handed man drank. And the half-skipper says: \"Again!\""
+    },
+    {
+      "id": "s16-17",
+      "sceneId": "s16",
+      "text": "So the left-handed man drank once more, and they became tipsy."
+    },
+    {
+      "id": "s16-18",
+      "sceneId": "s16",
+      "text": "And the half-skipper questions him: \"What secret are you carrying from our kingdom to Russia?\""
+    },
+    {
+      "id": "s16-19",
+      "sceneId": "s16",
+      "text": "The left-handed man replies: \"That is my affair.\""
+    },
+    {
+      "id": "s16-20",
+      "sceneId": "s16",
+      "text": "\"If that is so,\" replies the half-skipper, \"then let's make a bet after the English fashion.\""
+    },
+    {
+      "id": "s16-21",
+      "sceneId": "s16",
+      "text": "The left-handed man asks: \"What sort of a bet?\""
+    },
+    {
+      "id": "s16-22",
+      "sceneId": "s16",
+      "text": "\"This sort: That neither of us shall drink anything alone, but always together, evenly; what one drinks, that the other also must drink, without fail, and the one who outdrinks the other wins.\""
+    },
+    {
+      "id": "s16-23",
+      "sceneId": "s16",
+      "text": "The left-handed man reflects: \"The sky is clouded, my belly is swelling; I am greatly bored; the way is long, and my native land is not visible beyond the waves; 't will be more merry to make this wager.\""
+    },
+    {
+      "id": "s16-24",
+      "sceneId": "s16",
+      "text": "\"Good,\" says he; \"done!\""
+    },
+    {
+      "id": "s16-25",
+      "sceneId": "s16",
+      "text": "\"Only, it must be on honor.\""
+    },
+    {
+      "id": "s16-26",
+      "sceneId": "s16",
+      "text": "\"Don't bother yourself on that score.\""
+    },
+    {
+      "id": "s16-27",
+      "sceneId": "s16",
+      "text": "So they agreed, and shook hands on it."
+    },
+    {
+      "id": "s17-0",
+      "sceneId": "s17",
+      "text": "Their wager began on the Dryland Sea, and they drank until they came to Dunamund on the Gulf of Riga, but they always kept even, and did not yield to each other; and they kept so accurately even that when one of them, gazing at the sea, beheld an imp crawling out of the water, the same thing instantly revealed itself to the other. Only, the half-skipper beheld a red-headed imp, whereas the left-handed man declared that he was as swarthy as a Moor."
+    },
+    {
+      "id": "s17-1",
+      "sceneId": "s17",
+      "text": "The left-handed man said: \"Cross yourself and turn away--here is a friend from the Abyss;\" and the Englishman disputed, and declared that it was a \"sea-puss.\""
+    },
+    {
+      "id": "s17-2",
+      "sceneId": "s17",
+      "text": "\"If you like,\" says he, \"I'll toss you into the sea, and be not afraid--it will give you back to me immediately.\""
+    },
+    {
+      "id": "s17-3",
+      "sceneId": "s17",
+      "text": "And the left-handed man replied: \"If that is so, then throw me.\""
+    },
+    {
+      "id": "s17-4",
+      "sceneId": "s17",
+      "text": "The half-skipper took him by the slack of the breeches, and carried him to the rail."
+    },
+    {
+      "id": "s17-5",
+      "sceneId": "s17",
+      "text": "The sailors saw this, stopped them, and reported to the Captain, and he ordered them both to be locked up downstairs, and that they should be given rum and liquor and cold food, so that they might eat and drink and carry out their wager; but hot studing with fire was not to be given to them because it might set fire to the spirits inside them."
+    },
+    {
+      "id": "s17-6",
+      "sceneId": "s17",
+      "text": "And thus they were brought, in confinement, to Petrograd, and neither had won the wager from the other; and there they were placed on separate carts, and the Englishman was carried to the house of the Ambassador, on the English Quay, while the left-handed man was taken to the police station."
+    },
+    {
+      "id": "s17-7",
+      "sceneId": "s17",
+      "text": "And from that time on their fates began to differ greatly."
+    },
+    {
+      "id": "s18-0",
+      "sceneId": "s18",
+      "text": "When the Englishman was brought to the Embassy, they immediately summoned to him a medical man and an apothecary. The medical man ordered him to be placed in a warm bath, while the apothecary instantly rolled a gutta-percha pill, and thrust it into his mouth, and then they took hold of him, and laid him on a feather-bed and covered him with a fur coat, and left him to sweat; and that no one might disturb him, orders were issued throughout the whole Embassy that no one should dare so much as to sneeze. The medical man and the apothecary waited until the half-skipper had fallen asleep, and then they prepared another gutta-percha pill for him, laid it on a small table by the head of his bed, and went away."
+    },
+    {
+      "id": "s18-1",
+      "sceneId": "s18",
+      "text": "But the left-handed man was tumbled down on the floor of the police station, and asked: \"Who are you, and whence come you, and have you a passport or any other tugament?\""
+    },
+    {
+      "id": "s18-2",
+      "sceneId": "s18",
+      "text": "But he, from illness, drinking, and the long pitching on the ship, had grown so weak that he answered not a word, but only groaned."
+    },
+    {
+      "id": "s18-3",
+      "sceneId": "s18",
+      "text": "Then they immediately searched him, took his motley garment off of him, and seized his money and his repeater-watch, and the Inspector ordered that he be taken, gratis, to the hospital, by the first cabman who happened along."
+    },
+    {
+      "id": "s18-4",
+      "sceneId": "s18",
+      "text": "A policeman led the left-handed man out to place him in a sledge, but for a long time he could not catch one, because cabmen shun the police. And all this time the left-handed man lay on the cold pavement; then the policeman caught a sledge, only without a warm laprobe, because on such occasions cabmen hide their laprobes in the sledges under them, in order that the policeman's feet may get chilled the more quickly. So they carried the left-handed man uncovered, and when they began to shift him from one sledge to another they kept dropping him, and when they picked him up they tweaked his ears to bring him to his senses. They carried him to one hospital, but there they would not take him in because he had no tugament. They carried him to another, and there, also, they would not receive him, and so, also, at a third, and a fourth; they dragged him about until morning dawned, through all the most tangled and distant ways, and kept shifting him incessantly, so that they completely wore him out. Then one assistant medical man told the policeman to take him to the Obukhoff hospital for common people, where they receive all people of unknown rank to die."
+    },
+    {
+      "id": "s18-5",
+      "sceneId": "s18",
+      "text": "There they ordered a receipt to be given, and the left-handed man to be set upon the floor in the corridor until he should be examined."
+    },
+    {
+      "id": "s18-6",
+      "sceneId": "s18",
+      "text": "But at the same hour on the following day, the English half-skipper rose, swallowed the second gutta-percha pill, ate a light breakfast of chicken and rice, drank airfixe, and said: \"Where is my Russian comrade? I will go and seek him.\""
+    },
+    {
+      "id": "s18-7",
+      "sceneId": "s18",
+      "text": "He dressed himself and sallied forth."
+    },
+    {
+      "id": "s19-0",
+      "sceneId": "s19",
+      "text": "By some wonderful means the half-skipper found the left-handed man rather speedily, only they had not yet put him to bed, but he still lay on the floor of the corridor and complained to the Englishman: \"I must say a couple of words to the Emperor without fail.\""
+    },
+    {
+      "id": "s19-1",
+      "sceneId": "s19",
+      "text": "The Englishman hastened to Count Kleinmichel and made a row: \"How can they treat him so? He has a human soul,\" says he, \"even if he has only a sheepskin coat.\""
+    },
+    {
+      "id": "s19-2",
+      "sceneId": "s19",
+      "text": "For this bit of reasoning they immediately chased the Englishman away,--because he had dared to mention the human soul. And then some one said to him: \"You had better go to Cossack Platoff--he has simple feelings.\""
+    },
+    {
+      "id": "s19-3",
+      "sceneId": "s19",
+      "text": "The Englishman got at Platoff, who was now reclining on his couch once more. Platoff listened to him and recalled the left-handed man."
+    },
+    {
+      "id": "s19-4",
+      "sceneId": "s19",
+      "text": "\"Certainly, my friend,\" says he, \"I am very intimately acquainted with him--I have even tweaked him by the hair--only I know not how I can assist him in his present unhappy plight, because I am now entirely out of the service and have received full pension, so they no longer respect me; but do you run quickly to Commandant Skobeleff; he is in power, and also experienced in this sort of thing--he will do something.\""
+    },
+    {
+      "id": "s19-5",
+      "sceneId": "s19",
+      "text": "And the half-skipper went to Skobeleff, and told him everything; what the left-handed man's illness was, and how he had contracted it. Says Skobeleff: \"I understand this complaint, only the Germans cannot cure it; but some sort of a doctor of the ecclesiastical vocation is needed here, because those fellows have been reared on such examples, and they can give aid. I will immediately send thither the Russian doctor, Martyn-Solsky.\""
+    },
+    {
+      "id": "s19-6",
+      "sceneId": "s19",
+      "text": "But when Martyn-Solsky arrived, the left-handed man was breathing his last, because he had cracked his neck on the pavement, and could utter intelligibly only these words: \"Tell the Emperor that the English do not clean their guns with brick-dust. Let them not clean their guns so among us; otherwise--God preserve us from war--they will not be fit to fire.\" And with this assurance the left-handed man crossed himself and died."
+    },
+    {
+      "id": "s19-7",
+      "sceneId": "s19",
+      "text": "Then Martyn-Solsky immediately went and reported this to Count Tchernyscheff in order that he might announce it to the Emperor. But Count Tchernyscheff shouted at him: \"Stick to your emetics and cathartics and don't meddle in what is none of your business--we have Generals in Russia to attend to that!\""
+    },
+    {
+      "id": "s19-8",
+      "sceneId": "s19",
+      "text": "And so they did not tell the Emperor, and this mode of cleaning continued down to the very date of the Crimean campaign. At that time, when they began to load their guns the bullets rattled about in them, because they had been cleaned with brick-dust. Then Martyn-Solsky reminded Count Tchernyscheff of the left-handed man, and Count Tchernyscheff said: \"Go to the devil, you windbag! Don't meddle with what does not concern you, or I'll deny that I ever heard anything about this from you--and won't you just catch it!\""
+    },
+    {
+      "id": "s19-9",
+      "sceneId": "s19",
+      "text": "Martyn-Solsky reflected: \"He actually will deny it,\" and so he held his tongue."
+    },
+    {
+      "id": "s19-10",
+      "sceneId": "s19",
+      "text": "But if he had reported the left-handed man's words to the Emperor in season, the war with the enemy in the Crimea would have taken quite a different turn."
+    },
+    {
+      "id": "s20-0",
+      "sceneId": "s20",
+      "text": "And now all this is \"a matter of bygone days\" and \"traditions of the olden times,\" albeit they are not so very ancient. But there is no need to make haste to forget these traditions, in spite of the fabulous style of the legend, and the epic character of its principal hero. The actual name of that hero, like the names of many of the greatest geniuses, is forever lost to posterity; but, considered as a myth personified by popular fancy, it is interesting, and his deeds may serve as a memorial of the epoch of which the general spirit has been faithfully and accurately caught."
+    },
+    {
+      "id": "s20-1",
+      "sceneId": "s20",
+      "text": "Of course, there are no longer any such master-workmen in Tula as this fabulous, left-handed man; machines have evened up the inequalities of talents and gifts, and genius is not eager to struggle against industry and accuracy. Machines, while favorable to a rise in wages, are not favorable to artistic enterprise, which formerly exceeded measure, inspiring the popular fancy to the fabrication of legends similar to the one in hand."
+    },
+    {
+      "id": "s20-2",
+      "sceneId": "s20",
+      "text": "Workmen, naturally, understand how to prize the benefits which have accrued to them from the practical adjustments of mechanical science, but they allude to the days that are past with pride and affection. This is their epos, and it has, moreover, a great deal of the \"human soul\" about it."
+    }
+  ]
+}

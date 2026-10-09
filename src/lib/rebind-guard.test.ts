@@ -121,7 +121,7 @@ test("an index saved against the current bind is left where it is", () => {
 });
 
 test("a legacy unstamped index on a listed re-bind scales instead of trusting 1000", () => {
-  assert.deepEqual(REBOUND_FROM_COUNT, { falcon: 6154 });
+  assert.deepEqual(REBOUND_FROM_COUNT, { falcon: 6154, "lady-macbeth": 649 });
   const oldCount = 6154;
   const count = 2280;
   const breaths = Array.from({ length: count }, (_, n) => ({
@@ -214,8 +214,8 @@ test("an id-only kept line opens the paragraph the remap names", async () => {
   assert.equal(opened.nextId, "s1-0");
 });
 
-test("Falcon's sentence bind re-anchors through the remap and no other book moves", () => {
-  assert.deepEqual(REBOUND_FROM_COUNT, { falcon: 6154 });
+test("Falcon's sentence bind re-anchors through the remap and no unlisted book moves", () => {
+  assert.deepEqual(REBOUND_FROM_COUNT, { falcon: 6154, "lady-macbeth": 649 });
   assert.equal((FEATURED_CAROUSEL_IDS as readonly string[]).includes("falcon"), false);
 
   const full = JSON.parse(readFileSync(new URL("./catalog/texts/falcon.json", import.meta.url), "utf8")) as {
@@ -276,4 +276,37 @@ test("Falcon's sentence bind re-anchors through the remap and no other book move
   assert.equal(stayed.moved, false);
   assert.equal(stayed.index, 12);
   assert.equal(stayed.breathId, full.breaths[12]?.id);
+});
+
+test("Lady Macbeth's OCR bind re-anchors through the remap onto the proofread bind", () => {
+  const full = JSON.parse(readFileSync(new URL("./catalog/texts/lady-macbeth.json", import.meta.url), "utf8")) as {
+    breaths: { id: string; sceneId: string; text: string }[];
+  };
+  const raw = JSON.parse(readFileSync(new URL("./catalog/at-remap.json", import.meta.url), "utf8")) as Record<string, Record<string, string>>;
+  const remap = parseBreathRemap(raw);
+  assert.equal(REBOUND_FROM_COUNT["lady-macbeth"], 649);
+  assert.equal(full.breaths.length, 569);
+  assert.equal(SHELF.find((item) => item.id === "lady-macbeth")?.breaths, 569);
+
+  // A legacy index (old breath 400, "They were both silent.") lands on the same paragraph.
+  const stored = { breathIndex: 400 };
+  assert.equal(shouldLoadBindRemap(stored, full.breaths, "lady-macbeth"), true);
+  const next = reanchorProgress(stored, full.breaths, remap, "lady-macbeth");
+  assert.equal(next.moved, true);
+  assert.equal(full.breaths[next.index]?.id, "s9-23");
+  assert.equal(full.breaths[next.index]?.text, "They were both silent.");
+
+  // A stamped save on an old id follows the remap: old Chapter "IV" opened mid-sentence on s2-0.
+  const byId = reanchorProgress({ breathIndex: 78, breathId: "s2-0", breathCount: 649 }, full.breaths, remap, "lady-macbeth");
+  assert.equal(full.breaths[byId.index]?.id, "s3-0");
+  assert.match(full.breaths[byId.index]?.text ?? "", /^FOR more than a week Zinovey Borisych did not return/);
+
+  const stamped = reanchorProgress(
+    { breathIndex: next.index, breathId: next.breathId, breathCount: next.breathCount, bindHash: next.bindHash },
+    full.breaths,
+    remap,
+    "lady-macbeth",
+  );
+  assert.equal(stamped.moved, false);
+  assert.equal(stamped.index, next.index);
 });

@@ -72,6 +72,28 @@ export const STORY_INTRODUCTION_IDS: ReadonlySet<string> = new Set([
   "the-story-of-gosta-berling",
 ]);
 
+/**
+ * Books whose printed "Preface" is the author's own story text, not
+ * front matter. chapterStartIndex skips scenes titled "Preface"; for these
+ * books a fresh Sit opens on it. Keep this list narrow: one id per book,
+ * with the reason beside it.
+ */
+export const STORY_PREFACE_IDS: ReadonlySet<string> = new Set([
+  // Leskov's Preface is the narrator's frame for the legend; the tale opens on it.
+  "the-steel-flea",
+]);
+
+/** First breath of the first "Preface" scene for a listed book; null otherwise. */
+export function storyPrefaceStartIndex(work: Work): number | null {
+  if (!STORY_PREFACE_IDS.has(work.id)) return null;
+  for (const scene of work.scenes) {
+    if (!/^preface\b/i.test(scene.title.trim())) continue;
+    const start = work.breaths.findIndex((breath) => breath.sceneId === scene.id);
+    if (start >= 0) return start;
+  }
+  return null;
+}
+
 /** First breath of the first "Introduction" scene for a listed book; null otherwise. */
 export function storyIntroductionStartIndex(work: Work): number | null {
   if (!STORY_INTRODUCTION_IDS.has(work.id)) return null;
