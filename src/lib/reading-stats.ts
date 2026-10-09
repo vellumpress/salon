@@ -953,9 +953,7 @@ function deriveReadingStatsFrom(input: {
     const trend = readingModel.week.days.find((row) => row.key === day.key);
     const score =
       day.key === dayKey(now)
-        ? dailyScore.kind === "reading"
-          ? dailyScore.total
-          : 0
+        ? dailyScore.total
         : (trend?.score ?? 0);
     return {
       ...day,

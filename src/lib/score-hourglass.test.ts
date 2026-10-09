@@ -111,21 +111,20 @@ test("a scored day shows the number under the glass and keeps the score word", (
   assert.equal(copy.aria, "Reading score 83, Settled");
 });
 
-test("a quick visit is an empty glass labeled Quick visit", () => {
+test("a short day shows its number, never Quick visit", () => {
   const copy = hourglassCopy({
     kind: "quick-visit",
-    total: 0,
-    label: "Quick visit",
+    total: 4,
+    label: "Light",
     hide: false,
     paused: false,
     learning: false,
-    scored: false,
+    scored: true,
   });
-  assert.equal(copy.state, "quick-visit");
-  assert.equal(copy.sand, null);
-  assert.equal(copy.primary, "Quick visit");
-  assert.equal(copy.secondary, null);
-  assert.equal(sandGrains(0).some((grain) => grain.id.startsWith("lower")), false);
+  assert.equal(copy.primary, "4");
+  assert.equal(copy.sand, 4);
+  assert.notEqual(copy.primary, "Quick visit");
+  assert.equal(copy.secondary, "Light");
 });
 
 test("still learning keeps the number and names the state under it", () => {
@@ -145,7 +144,7 @@ test("still learning keeps the number and names the state under it", () => {
   assert.match(copy.aria, /Still learning/);
 });
 
-test("a reading day with nothing scored yet is an empty glass", () => {
+test("a reading day with nothing scored yet still shows a low number", () => {
   const copy = hourglassCopy({
     kind: "reading",
     total: 0,
@@ -156,24 +155,26 @@ test("a reading day with nothing scored yet is an empty glass", () => {
     scored: false,
   });
   assert.equal(copy.state, "learning");
-  assert.equal(copy.sand, null);
-  assert.equal(copy.primary, "Still learning");
+  assert.equal(copy.sand, 1);
+  assert.equal(copy.primary, "1");
+  assert.equal(copy.secondary, "Still learning");
 });
 
-test("no data is a rest day: empty glass, label Rest", () => {
+test("no reading shows a low number, not a numberless Rest", () => {
   const copy = hourglassCopy({
     kind: "rest",
-    total: 0,
-    label: "Rest",
+    total: 1,
+    label: "Light",
     hide: false,
     paused: false,
     learning: false,
     scored: false,
   });
-  assert.equal(copy.state, "rest");
-  assert.equal(copy.sand, null);
-  assert.equal(copy.primary, "Rest");
-  assert.equal(copy.aria, "Rest");
+  assert.equal(copy.sand, 1);
+  assert.equal(copy.primary, "1");
+  assert.equal(copy.secondary, "Light");
+  assert.match(copy.aria, /Reading score 1/);
+  assert.notEqual(copy.primary, "Rest");
 });
 
 test("hiding the score keeps the sand and swaps the number for the word", () => {
@@ -193,9 +194,9 @@ test("hiding the score keeps the sand and swaps the number for the word", () => 
 
 test("pause replaces the word, not a visible number", () => {
   const pausedVisit = hourglassCopy({
-    kind: "quick-visit",
-    total: 0,
-    label: "Quick visit",
+    kind: "rest",
+    total: 1,
+    label: "Light",
     hide: false,
     paused: true,
     learning: false,

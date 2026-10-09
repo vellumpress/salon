@@ -326,14 +326,10 @@ function Today({
             {versusCopy(daily.versusUsual)}
           </p>
         ) : null}
-        {!readingDay ? (
-          <p className="type-pitch mx-auto mt-4 max-w-sm text-center text-ink/80">
-            {daily.line}
-            {model.week.score != null ? ` This week is ${model.week.score}.` : ""}
-          </p>
-        ) : (
-          <p className="type-pitch mx-auto mt-3 max-w-sm text-center text-ink/75">{daily.line}</p>
-        )}
+        <p className="type-pitch mx-auto mt-4 max-w-sm text-center text-ink/80">
+          {daily.line}
+          {!readingDay && model.week.score != null ? ` This week is ${model.week.score}.` : ""}
+        </p>
       </section>
       <ContributorBars parts={daily.contributors} onOpen={onOpen} />
       {model.insight ? <InsightCard card={model.insight} onDismiss={onDismiss} /> : null}
@@ -565,7 +561,7 @@ function WeekTrend({ model }: { model: ReadingModel }) {
 
 function WeekBar({ day, band }: { day: TrendDay; band: { low: number; high: number } | null }) {
   const height = day.score != null ? Math.max(12, Math.round((day.score / 100) * 88)) : 8;
-  const label = day.kind === "reading" ? String(day.score) : day.kind === "quick-visit" ? "visit" : day.kind === "paused" ? "pause" : "rest";
+  const label = day.kind === "paused" ? "pause" : String(day.score ?? "");
   return (
     <div className={cn("flex min-h-36 flex-col justify-end px-1 py-2", day.kind === "reading" ? "bg-paper text-ink" : "bg-paper-deep text-ink/70")}>
       <span className="relative mx-auto mb-2 w-3 flex-1">

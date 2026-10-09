@@ -3,6 +3,7 @@ import test from "node:test";
 import { readFileSync } from "node:fs";
 import { hourglassCopy } from "./score-hourglass.ts";
 import {
+  QUIET_DAY_SCORE,
   buildReadingScore,
   dailyScoreGlance,
   deriveWindowScores,
@@ -121,20 +122,108 @@ test("a one-minute day scores, and rows that are not ready stay learning", () =>
     ledgers: { readingMinutesByDay: { [keyAt(0)]: 0 } },
   });
   assert.equal(rest.daily.kind, "rest");
-  assert.equal(rest.daily.total, 0);
-  assert.equal(rest.daily.label, "Rest");
-  assert.equal(dailyScoreGlance(rest.daily), "—");
-  const restGlass = hourglassCopy({
-    kind: rest.daily.kind,
-    total: rest.daily.total,
-    label: rest.daily.label,
+  assert.equal(rest.daily.total, QUIET_DAY_SCORE);
+  assert.equal(dailyScoreGlance(rest.daily), String(QUIET_DAY_SCORE));
+  assert.notEqual(rest.daily.label, "Rest");
+});
+
+test("a zero-reading day shows a very low number", () => {
+  const ledgers = fillDays(30, 20, 16);
+  ledgers.readingMinutesByDay[keyAt(0)] = 0;
+  const model = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers,
+    works: [novel],
+  });
+  assert.equal(model.daily.kind, "rest");
+  assert.equal(model.daily.total, QUIET_DAY_SCORE);
+  assert.ok(model.daily.total > 0 && model.daily.total < 15);
+  assert.equal(dailyScoreGlance(model.daily), String(model.daily.total));
+  assert.doesNotMatch(model.daily.line, /isn.t scored|Quick visit/);
+  assert.notEqual(model.daily.label, "Rest");
+  assert.ok((model.week.score ?? 0) > model.daily.total, "the week stays higher than a quiet day");
+  const copy = hourglassCopy({
+    kind: model.daily.kind,
+    total: model.daily.total,
+    label: model.daily.label,
     hide: false,
     paused: false,
-    learning: Boolean(rest.daily.learningNote),
+    learning: Boolean(model.daily.learningNote),
+    scored: model.daily.contributors.some((part) => part.status === "scored" && part.value != null),
+  });
+  assert.match(copy.primary, /^\d+$/);
+  assert.equal(copy.primary, String(model.daily.total));
+  assert.equal(copy.sand, model.daily.total);
+  assert.notEqual(copy.primary, "Rest");
+  assert.notEqual(copy.primary, "Quick visit");
+});
+
+test("a one-minute day shows a number from the minutes", () => {
+  const model = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers: {
+      readingMinutesByDay: { [keyAt(0)]: 1 },
+      advancesByDay: { [keyAt(0)]: 1 },
+    },
+  });
+  const quiet = buildReadingScore({ now: NOW, sittingMinutes: 20, ledgers: {} });
+  assert.equal(model.daily.kind, "reading");
+  assert.ok(model.daily.total > quiet.daily.total, `${model.daily.total} should beat a quiet ${quiet.daily.total}`);
+  assert.equal(dailyScoreGlance(model.daily), String(model.daily.total));
+  const copy = hourglassCopy({
+    kind: model.daily.kind,
+    total: model.daily.total,
+    label: model.daily.label,
+    hide: false,
+    paused: false,
+    learning: Boolean(model.daily.learningNote),
+    scored: true,
+  });
+  assert.match(copy.primary, /^\d+$/);
+  assert.equal(copy.sand, model.daily.total);
+});
+
+test("a brand-new reader with no history shows a number", () => {
+  const model = buildReadingScore({ now: NOW, ledgers: {}, sittingMinutes: 20 });
+  assert.equal(model.daily.total, QUIET_DAY_SCORE);
+  assert.equal(dailyScoreGlance(model.daily), String(QUIET_DAY_SCORE));
+  assert.doesNotMatch(`${model.daily.label} ${model.daily.line}`, /Quick visit|isn.t scored|^Rest$/);
+  const learning = model.daily.contributors.filter((part) => part.status === "learning");
+  assert.ok(learning.length > 0);
+  for (const part of learning) {
+    assert.equal(part.value, null);
+    assert.match(part.note, /still learning/i);
+  }
+  const copy = hourglassCopy({
+    kind: model.daily.kind,
+    total: model.daily.total,
+    label: model.daily.label,
+    hide: false,
+    paused: false,
+    learning: Boolean(model.daily.learningNote),
     scored: false,
   });
-  assert.equal(restGlass.sand, null);
-  assert.equal(restGlass.primary, "Rest");
+  assert.equal(copy.primary, String(QUIET_DAY_SCORE));
+  assert.equal(copy.sand, QUIET_DAY_SCORE);
+  assert.equal(copy.secondary, "Still learning");
+});
+
+test("under a minute scores from the minutes", () => {
+  const half = buildReadingScore({
+    now: NOW,
+    sittingMinutes: 20,
+    ledgers: {
+      readingMinutesByDay: { [keyAt(0)]: 0.5 },
+      advancesByDay: { [keyAt(0)]: 1 },
+    },
+  });
+  const none = buildReadingScore({ now: NOW, sittingMinutes: 20, ledgers: {} });
+  assert.equal(half.daily.kind, "reading");
+  assert.ok(half.daily.total > none.daily.total);
+  assert.equal(dailyScoreGlance(half.daily), String(half.daily.total));
+  assert.doesNotMatch(half.daily.line, /isn.t scored|Quick visit/);
 });
 
 test("a one-minute burst still scores when pace is unknown", () => {
@@ -373,16 +462,15 @@ test("skim pace scales minutes and a slow pace does not", () => {
   assert.equal(steady.minutes, 20);
 });
 
-test("rest day and empty glance stay a dash, never zero", () => {
+test("a missing score object stays a dash, and a quiet day does not", () => {
   const rest = buildReadingScore({ now: NOW, ledgers: {}, sittingMinutes: 20 });
-  assert.equal(rest.daily.kind, "rest");
-  assert.equal(rest.daily.total, 0);
-  assert.equal(dailyScoreGlance(rest.daily), "—");
+  assert.equal(rest.daily.total, QUIET_DAY_SCORE);
+  assert.equal(dailyScoreGlance(rest.daily), String(QUIET_DAY_SCORE));
   assert.equal(dailyScoreGlance(null), "—");
   assert.equal(dailyScoreGlance({ total: 0, hasSignal: true }), "—");
 });
 
-test("homepage glance matches the You-page daily total and stays soft at zero", () => {
+test("homepage glance matches the You-page daily total, including a quiet day", () => {
   const now = Date.parse("2026-09-22T15:00:00");
   const today = dayKey(now);
   const reading = deriveReadingStats({
@@ -401,8 +489,8 @@ test("homepage glance matches the You-page daily total and stays soft at zero", 
   assert.equal(dailyScoreGlance(reading.dailyScore), String(reading.dailyScore.total));
 
   const empty = deriveReadingStats({ progress: {}, favorites: [], now });
-  assert.equal(empty.dailyScore.total, 0);
-  assert.equal(dailyScoreGlance(empty.dailyScore), "—");
+  assert.equal(empty.dailyScore.total, QUIET_DAY_SCORE);
+  assert.equal(dailyScoreGlance(empty.dailyScore), String(empty.dailyScore.total));
 });
 
 test("homepage score tile sits beside the resume column and reuses the You daily score", () => {
