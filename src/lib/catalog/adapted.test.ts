@@ -386,7 +386,7 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   // OPEN-FIX-2 language sweep: 42 non-English binds off (EN_OFF_READABLE_IDS).
   // pan-tadeusz stays on the shelf, so the pin is 1151; DONA-PERFECTA brings Doña Perfecta back (1152).
   // GOOSE-MAN adds the-goose-man (1153).
-  assert.equal(LOCAL_WORKS.length, 1153);
+  assert.equal(LOCAL_WORKS.length, 1155);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 

@@ -1,0 +1,3809 @@
+{
+  "id": "zanzibar-tales",
+  "title": "Zanzibar Tales",
+  "author": "Anonymous (tr. George W. Bateman)",
+  "year": "1901",
+  "note": "Project Gutenberg 37472. George W. Bateman, Chicago: A. C. McClurg & Co., 1901. Bateman's preface \"To my Readers\", the contents and the list of illustrations are cut.",
+  "minutes": 120,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Monkey, the Shark, and the Washerman's Donkey",
+      "place": "The Monkey, the Shark, and the Washerman's Donkey",
+      "reentry": "Once upon a time Kee'ma, the monkey, and Pa'pa, the shark, became great friends.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "The Hare and the Lion",
+      "place": "The Hare and the Lion",
+      "reentry": "One day Soongoo'ra, the hare, roaming through the forest in search of food, glanced up through the boughs of a very large calabash tree, and saw that a great hole in the upper part of the trunk was inhabited by bees; thereupon he returned t",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "The Lion, the Hyena, and the Rabbit",
+      "place": "The Lion, the Hyena, and the Rabbit",
+      "reentry": "Once upon a time Sim'ba, the lion, Fee'see, the hyena, and Keetee'tee, the rabbit, made up their minds to go in for a little farming. So they went into the country, made a garden, planted all kinds of seeds, and then came home and rested qu",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s3",
+      "title": "The Kites and the Crows",
+      "place": "The Kites and the Crows",
+      "reentry": "One day Koongoo'roo, sultan of the crows, sent a letter to Mway'way, sultan of the kites, containing these few words: \"I want you folks to be my soldiers.\"",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s4",
+      "title": "Goso, the Teacher",
+      "place": "Goso, the Teacher",
+      "reentry": "Once there was a man named Go'so, who taught children to read, not in a schoolhouse, but under a calabash tree. One evening, while Goso was sitting under the tree deep in the study of the next day's lessons, Paa, the gazelle, climbed up the",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s5",
+      "title": "The Ape, the Snake, and the Lion",
+      "place": "The Ape, the Snake, and the Lion",
+      "reentry": "Long, long ago there lived, in a village called Keejee'jee, a woman whose husband died, leaving her with a little baby boy. She worked hard all day to get food for herself and child, but they lived very poorly and were most of the time half",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s6",
+      "title": "Haamdaanee",
+      "place": "Haamdaanee",
+      "reentry": "Once there was a very poor man, named Haamdaa'nee, who begged from door to door for his living, sometimes taking things before they were offered him. After a while people became suspicious of him, and stopped giving him anything, in order t",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s7",
+      "title": "Mkaaah Jeechonee, the Boy Hunter",
+      "place": "Mkaaah Jeechonee, the Boy Hunter",
+      "reentry": "Sultan Maaj'noon had seven sons and a big cat, of all of whom he was very proud.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s8",
+      "title": "The Magician and the Sultan's Son",
+      "place": "The Magician and the Sultan's Son",
+      "reentry": "There was once a sultan who had three little sons, and no one seemed to be able to teach them anything; which greatly grieved both the sultan and his wife.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s9",
+      "title": "The Physician's Son and the King of the Snakes",
+      "place": "The Physician's Son and the King of the Snakes",
+      "reentry": "Once there was a very learned physician, who died leaving his wife with a little baby boy, whom, when he was old enough, she named, according to his father's wish, Hassee'boo Kareem' Ed Deen'.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Once upon a time Kee'ma, the monkey, and Pa'pa, the shark, became great friends."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The monkey lived in an immense mkooyoo tree which grew by the margin of the sea--half of its branches being over the water and half over the land."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Every morning, when the monkey was breakfasting on the kooyoo nuts, the shark would put in an appearance under the tree and call out, \"Throw me some food, my friend;\" with which request the monkey complied most willingly."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "This continued for many months, until one day Papa said, \"Keema, you have done me many kindnesses: I would like you to go with me to my home, that I may repay you.\""
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"How can I go?\" said the monkey; \"we land beasts can not go about in the water.\""
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"Don't trouble yourself about that,\" replied the shark; \"I will carry you. Not a drop of water shall get to you.\""
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"Oh, all right, then,\" said Mr. Keema; \"let's go.\""
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "When they had gone about half-way the shark stopped, and said: \"You are my friend. I will tell you the truth.\""
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"Why, what is there to tell?\" asked the monkey, with surprise."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Well, you see, the fact is that our sultan is very sick, and we have been told that the only medicine that will do him any good is a monkey's heart.\""
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"Well,\" exclaimed Keema, \"you were very foolish not to tell me that before we started!\""
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"How so?\" asked Papa."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "But the monkey was busy thinking up some means of saving himself, and made no reply."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"Well?\" said the shark, anxiously; \"why don't you speak?\""
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"Oh, I've nothing to say now. It's too late. But if you had told me this before we started, I might have brought my heart with me.\""
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "\"What? haven't you your heart here?\""
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"Huh!\" ejaculated Keema; \"don't you know about us? When we go out we leave our hearts in the trees, and go about with only our bodies. But I see you don't believe me. You think I'm scared. Come on; let's go to your home, where you can kill me and search for my heart in vain.\""
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "The shark did believe him, though, and exclaimed, \"Oh, no; let's go back and get your heart.\""
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"Indeed, no,\" protested Keema; \"let us go on to your home.\""
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "But the shark insisted that they should go back, get the heart, and start afresh."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "At last, with great apparent reluctance, the monkey consented, grumbling sulkily at the unnecessary trouble he was being put to."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "When they got back to the tree, he climbed up in a great hurry, calling out, \"Wait there, Papa, my friend, while I get my heart, and we'll start off properly next time.\""
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "When he had got well up among the branches, he sat down and kept quite still."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "After waiting what he considered a reasonable length of time, the shark called, \"Come along, Keema!\" But Keema just kept still and said nothing."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "In a little while he called again: \"Oh, Keema! let's be going.\""
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "At this the monkey poked his head out from among the upper branches and asked, in great surprise, \"Going? Where?\""
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "\"To my home, of course.\""
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "\"Are you mad?\" queried Keema."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"Mad? Why, what do you mean?\" cried Papa."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "\"What's the matter with you?\" said the monkey. \"Do you take me for a washerman's donkey?\""
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"What peculiarity is there about a washerman's donkey?\""
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "\"It is a creature that has neither heart nor ears.\""
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "The shark, his curiosity overcoming his haste, thereupon begged to be told the story of the washerman's donkey, which the monkey related as follows:"
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"A washerman owned a donkey, of which he was very fond. One day, however, it ran away, and took up its abode in the forest, where it led a lazy life, and consequently grew very fat."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "\"At length Soongoo'ra, the hare, by chance passed that way, and saw Poon'da, the donkey."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"Now, the hare is the most cunning of all beasts--if you look at his mouth you will see that he is always talking to himself about everything."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "\"So when Soongoora saw Poonda he said to himself, 'My, this donkey is fat!' Then he went and told Sim'ba, the lion."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "\"As Simba was just recovering from a severe illness, he was still so weak that he could not go hunting. He was consequently pretty hungry."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "\"Said Mr. Soongoora, 'I'll bring enough meat to-morrow for both of us to have a great feast, but you'll have to do the killing.'"
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "\"'All right, good friend,' exclaimed Simba, joyfully; 'you're very kind.'"
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "\"So the hare scampered off to the forest, found the donkey, and said to her, in his most courtly manner, 'Miss Poonda, I am sent to ask your hand in marriage.'"
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "\"'By whom?' simpered the donkey."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "\"'By Simba, the lion.'"
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "\"The donkey was greatly elated at this, and exclaimed: 'Let's go at once. This is a first-class offer.'"
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "\"They soon arrived at the lion's home, were cordially invited in, and sat down. Soongoora gave Simba a signal with his eyebrow, to the effect that this was the promised feast, and that he would wait outside. Then he said to Poonda: 'I must leave you for a while to attend to some private business. You stay here and converse with your husband that is to be.'"
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "\"As soon as Soongoora got outside, the lion sprang at Poonda, and they had a great fight. Simba was kicked very hard, and he struck with his claws as well as his weak health would permit him. At last the donkey threw the lion down, and ran away to her home in the forest."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "\"Shortly after, the hare came back, and called, 'Haya! Simba! have you got it?'"
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "\"'I have not got it,' growled the lion; 'she kicked me and ran away; but I warrant you I made her feel pretty sore, though I'm not strong.'"
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "\"'Oh, well,' remarked Soongoora; 'don't put yourself out of the way about it.'"
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "\"Then Soongoora waited many days, until the lion and the donkey were both well and strong, when he said: 'What do you think now, Simba? Shall I bring you your meat?'"
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "\"'Ay,' growled the lion, fiercely; 'bring it to me. I'll tear it in two pieces!'"
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "\"So the hare went off to the forest, where the donkey welcomed him and asked the news."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "\"'You are invited to call again and see your lover,' said Soongoora."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "\"'Oh, dear!' cried Poonda; 'that day you took me to him he scratched me awfully. I'm afraid to go near him now.'"
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "\"'Ah, pshaw!' said Soongoora; 'that's nothing. That's only Simba's way of caressing.'"
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "\"'Oh, well,' said the donkey, 'let's go.'"
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "\"So off they started again; but as soon as the lion caught sight of Poonda he sprang upon her and tore her in two pieces."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "\"When the hare came up, Simba said to him: 'Take this meat and roast it. As for myself, all I want is the heart and ears.'"
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "\"'Thanks,' said Soongoora. Then he went away and roasted the meat in a place where the lion could not see him, and he took the heart and ears and hid them. Then he ate all the meat he needed, and put the rest away."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "\"Presently the lion came to him and said, 'Bring me the heart and ears.'"
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "\"'Where are they?' said the hare."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "\"'What does this mean?' growled Simba."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "\"'Why, didn't you know this was a washerman's donkey?'"
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "\"'Well, what's that to do with there being no heart or ears?'"
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "\"'For goodness' sake, Simba, aren't you old enough to know that if this beast had possessed a heart and ears it wouldn't have come back the second time?'"
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "\"Of course the lion had to admit that what Soongoora, the hare, said was true."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "\"And now,\" said Keema to the shark, \"you want to make a washerman's donkey of me. Get out of there, and go home by yourself. You are not going to get me again, and our friendship is ended. Good-bye, Papa.\""
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "One day Soongoo'ra, the hare, roaming through the forest in search of food, glanced up through the boughs of a very large calabash tree, and saw that a great hole in the upper part of the trunk was inhabited by bees; thereupon he returned to town in search of some one to go with him and help to get the honey."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "As he was passing the house of Boo'koo, the big rat, that worthy gentleman invited him in. So he went in, sat down, and remarked: \"My father has died, and has left me a hive of honey. I would like you to come and help me to eat it.\""
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Of course Bookoo jumped at the offer, and he and the hare started off immediately."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "When they arrived at the great calabash tree, Soongoora pointed out the bees' nest and said, \"Go on; climb up.\" So, taking some straw with them, they climbed up to the nest, lit the straw, smoked out the bees, put out the fire, and set to work eating the honey."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "In the midst of the feast, who should appear at the foot of the tree but Sim'ba, the lion? Looking up, and seeing them eating, he asked, \"Who are you?\""
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Then Soongoora whispered to Bookoo, \"Hold your tongue; that old fellow is crazy.\" But in a very little while Simba roared out angrily: \"Who are you, I say? Speak, I tell you!\" This made Bookoo so scared that he blurted out, \"It's only us!\""
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Upon this the hare said to him: \"You just wrap me up in this straw, call to the lion to keep out of the way, and then throw me down. Then you'll see what will happen.\""
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "So Bookoo, the big rat, wrapped Soongoora, the hare, in the straw, and then called to Simba, the lion, \"Stand back; I'm going to throw this straw down, and then I'll come down myself.\" When Simba stepped back out of the way, Bookoo threw down the straw, and as it lay on the ground Soongoora crept out and ran away while the lion was looking up."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "After waiting a minute or two, Simba roared out, \"Well, come down, I say!\" and, there being no help for it, the big rat came down."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "As soon as he was within reach, the lion caught hold of him, and asked, \"Who was up there with you?\""
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "\"Why,\" said Bookoo, \"Soongoora, the hare. Didn't you see him when I threw him down?\""
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "\"Of course I didn't see him,\" replied the lion, in an incredulous tone, and, without wasting further time, he ate the big rat, and then searched around for the hare, but could not find him."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Three days later, Soongoora called on his acquaintance, Ko'bay, the tortoise, and said to him, \"Let us go and eat some honey.\""
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "\"Whose honey?\" inquired Kobay, cautiously."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "\"My father's,\" Soongoora replied."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "\"Oh, all right; I'm with you,\" said the tortoise, eagerly; and away they went."
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "When they arrived at the great calabash tree they climbed up with their straw, smoked out the bees, sat down, and began to eat."
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "Just then Mr. Simba, who owned the honey, came out again, and, looking up, inquired, \"Who are you, up there?\""
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "Soongoora whispered to Kobay, \"Keep quiet;\" but when the lion repeated his question angrily, Kobay became suspicious, and said: \"I will speak. You told me this honey was yours; am I right in suspecting that it belongs to Simba?\""
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "So, when the lion asked again, \"Who are you?\" he answered, \"It's only us.\" The lion said, \"Come down, then;\" and the tortoise answered, \"We're coming.\""
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Now, Simba had been keeping an eye open for Soongoora since the day he caught Bookoo, the big rat, and, suspecting that he was up there with Kobay, he said to himself, \"I've got him this time, sure.\""
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "Seeing that they were caught again, Soongoora said to the tortoise: \"Wrap me up in the straw, tell Simba to stand out of the way, and then throw me down. I'll wait for you below. He can't hurt you, you know.\""
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "\"All right,\" said Kobay; but while he was wrapping the hare up he said to himself: \"This fellow wants to run away, and leave me to bear the lion's anger. He shall get caught first.\" Therefore, when he had bundled him up, he called out, \"Soongoora is coming!\" and threw him down."
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "So Simba caught the hare, and, holding him with his paw, said, \"Now, what shall I do with you?\" The hare replied, \"It's of no use for you to try to eat me; I'm awfully tough.\" \"What would be the best thing to do with you, then?\" asked Simba."
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "\"I think,\" said Soongoora, \"you should take me by the tail, whirl me around, and knock me against the ground. Then you may be able to eat me.\""
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "So the lion, being deceived, took him by the tail and whirled him around, but just as he was going to knock him on the ground he slipped out of his grasp and ran away, and Simba had the mortification of losing him again."
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "Angry and disappointed, he turned to the tree and called to Kobay, \"You come down, too.\""
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "When the tortoise reached the ground, the lion said, \"You're pretty hard; what can I do to make you eatable?\""
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "\"Oh, that's easy,\" laughed Kobay; \"just put me in the mud and rub my back with your paw until my shell comes off.\""
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "Immediately on hearing this, Simba carried Kobay to the water, placed him in the mud, and began, as he supposed, to rub his back; but the tortoise had slipped away, and the lion continued rubbing on a piece of rock until his paws were raw. When he glanced down at them he saw they were bleeding, and, realizing that he had again been outwitted, he said, \"Well, the hare has done me to-day, but I'll go hunting now until I find him.\""
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "So Simba, the lion, set out immediately in search of Soongoora, the hare, and as he went along he inquired of every one he met, \"Where is the house of Soongoora?\" But each person he asked answered, \"I do not know.\" For the hare had said to his wife, \"Let us remove from this house.\" Therefore the folks in that neighborhood had no knowledge of his whereabouts. Simba, however, went along, continuing his inquiries, until presently one answered, \"That is his house on the top of the mountain.\""
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "Without loss of time the lion climbed the mountain, and soon arrived at the place indicated, only to find that there was no one at home. This, however, did not trouble him; on the contrary, saying to himself, \"I'll hide myself inside, and when Soongoora and his wife come home I'll eat them both,\" he entered the house and lay down, awaiting their arrival."
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "Pretty soon along came the hare with his wife, not thinking of any danger; but he very soon discovered the marks of the lion's paws on the steep path. Stopping at once, he said to Mrs. Soongoora: \"You go back, my dear. Simba, the lion, has passed this way, and I think he must be looking for me.\""
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "But she replied, \"I will not go back; I will follow you, my husband.\""
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "Although greatly pleased at this proof of his wife's affection, Soongoora said firmly: \"No, no; you have friends to go to. Go back.\""
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "So he persuaded her, and she went back; but he kept on, following the footmarks, and saw--as he had suspected--that they went into his house."
+    },
+    {
+      "id": "s1-36",
+      "sceneId": "s1",
+      "text": "\"Ah!\" said he to himself, \"Mr. Lion is inside, is he?\" Then, cautiously going back a little way, he called out: \"How d'ye do, house? How d'ye do?\" Waiting a moment, he remarked loudly: \"Well, this is very strange! Every day, as I pass this place, I say, 'How d'ye do, house?' and the house always answers, 'How d'ye do?' There must be some one inside to-day.\""
+    },
+    {
+      "id": "s1-37",
+      "sceneId": "s1",
+      "text": "When the lion heard this he called out, \"How d'ye do?\""
+    },
+    {
+      "id": "s1-38",
+      "sceneId": "s1",
+      "text": "Then Soongoora burst out laughing, and shouted: \"Oho, Mr. Simba! You're inside, and I'll bet you want to eat me; but first tell me where you ever heard of a house talking!\""
+    },
+    {
+      "id": "s1-39",
+      "sceneId": "s1",
+      "text": "Upon this the lion, seeing how he had been fooled, replied angrily, \"You wait until I get hold of you; that's all.\""
+    },
+    {
+      "id": "s1-40",
+      "sceneId": "s1",
+      "text": "\"Oh, I think you'll have to do the waiting,\" cried the hare; and then he ran away, the lion following."
+    },
+    {
+      "id": "s1-41",
+      "sceneId": "s1",
+      "text": "But it was of no use. Soongoora completely tired out old Simba, who, saying, \"That rascal has beaten me; I don't want to have anything more to do with him,\" returned to his home under the great calabash tree."
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Once upon a time Sim'ba, the lion, Fee'see, the hyena, and Keetee'tee, the rabbit, made up their minds to go in for a little farming. So they went into the country, made a garden, planted all kinds of seeds, and then came home and rested quite a while."
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Then, when the time came when their crops should be about ripe and ready for harvesting, they began to say to each other, \"Let's go over to the farm, and see how our crops are coming along.\""
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "So one morning, early, they started, and, as the garden was a long way off, Keeteetee, the rabbit, made this proposition: \"While we are going to the farm, let us not stop on the road; and if any one does stop, let him be eaten.\" His companions, not being so cunning as he, and knowing they could outwalk him, readily consented to this arrangement."
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "Well, off they went; but they had not gone very far when the rabbit stopped."
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "\"Hullo!\" said Feesee, the hyena; \"Keeteetee has stopped. He must be eaten.\""
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "\"That's the bargain,\" agreed Simba, the lion."
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "\"Well,\" said the rabbit, \"I happened to be thinking.\""
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "\"What about?\" cried his partners, with great curiosity."
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "\"I'm thinking,\" said he, with a grave, philosophical air, \"about those two stones, one big and one little; the little one does not go up, nor does the big one go down.\""
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "The lion and the hyena, having stopped to look at the stones, could only say, \"Why, really, it's singular; but it's just as you say;\" and they all resumed their journey, the rabbit being by this time well rested."
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "When they had gone some distance the rabbit stopped again."
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "\"Aha!\" said Feesee; \"Keeteetee has stopped again. Now he must be eaten.\""
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "\"I rather think so,\" assented Simba."
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "\"Well,\" said the rabbit, \"I was thinking again.\""
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "Their curiosity once more aroused, his comrades begged him to tell them his think."
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "\"Why,\" said he, \"I was thinking this: When people like us put on new coats, where do the old ones go to?\""
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "Both Simba and Feesee, having stopped a moment to consider the matter, exclaimed together, \"Well, I wonder!\" and the three went on, the rabbit having again had a good rest."
+    },
+    {
+      "id": "s2-17",
+      "sceneId": "s2",
+      "text": "After a little while the hyena, thinking it about time to show off a little of his philosophy, suddenly stopped."
+    },
+    {
+      "id": "s2-18",
+      "sceneId": "s2",
+      "text": "\"Here,\" growled Simba, \"this won't do; I guess we'll have to eat you, Feesee.\""
+    },
+    {
+      "id": "s2-19",
+      "sceneId": "s2",
+      "text": "\"Oh, no,\" said the hyena; \"I'm thinking.\""
+    },
+    {
+      "id": "s2-20",
+      "sceneId": "s2",
+      "text": "\"What are you thinking about?\" they inquired."
+    },
+    {
+      "id": "s2-21",
+      "sceneId": "s2",
+      "text": "\"I'm thinking about nothing at all,\" said he, imagining himself very smart and witty."
+    },
+    {
+      "id": "s2-22",
+      "sceneId": "s2",
+      "text": "\"Ah, pshaw!\" cried Keeteetee; \"we won't be fooled that way.\""
+    },
+    {
+      "id": "s2-23",
+      "sceneId": "s2",
+      "text": "So he and Simba ate the hyena."
+    },
+    {
+      "id": "s2-24",
+      "sceneId": "s2",
+      "text": "When they had finished eating their friend, the lion and the rabbit proceeded on their way, and presently came to a place where there was a cave, and here the rabbit stopped."
+    },
+    {
+      "id": "s2-25",
+      "sceneId": "s2",
+      "text": "\"H'm!\" ejaculated Simba; \"I'm not so hungry as I was this morning, but I guess I'll have to find room for you, little Keeteetee.\""
+    },
+    {
+      "id": "s2-26",
+      "sceneId": "s2",
+      "text": "\"Oh, I believe not,\" replied Keeteetee; \"I'm thinking again.\""
+    },
+    {
+      "id": "s2-27",
+      "sceneId": "s2",
+      "text": "\"Well,\" said the lion, \"what is it this time?\""
+    },
+    {
+      "id": "s2-28",
+      "sceneId": "s2",
+      "text": "Said the rabbit: \"I'm thinking about that cave. In olden times our ancestors used to go in here, and go out there, and I think I'll try and follow in their footsteps.\""
+    },
+    {
+      "id": "s2-29",
+      "sceneId": "s2",
+      "text": "So he went in at one end and out at the other end several times."
+    },
+    {
+      "id": "s2-30",
+      "sceneId": "s2",
+      "text": "Then he said to the lion, \"Simba, old fellow, let's see you try to do that;\" and the lion went into the cave, but he stuck fast, and could neither go forward nor back out."
+    },
+    {
+      "id": "s2-31",
+      "sceneId": "s2",
+      "text": "In a moment Keeteetee was on Simba's back, and began eating him."
+    },
+    {
+      "id": "s2-32",
+      "sceneId": "s2",
+      "text": "After a little time the lion cried, \"Oh, brother, be impartial; come and eat some of the front part of me.\""
+    },
+    {
+      "id": "s2-33",
+      "sceneId": "s2",
+      "text": "But the rabbit replied, \"Indeed, I can't come around in front; I'm ashamed to look you in the face.\""
+    },
+    {
+      "id": "s2-34",
+      "sceneId": "s2",
+      "text": "So, having eaten all he was able to, he left the lion there, and went and became sole owner of the farm and its crops."
+    },
+    {
+      "id": "s3-0",
+      "sceneId": "s3",
+      "text": "One day Koongoo'roo, sultan of the crows, sent a letter to Mway'way, sultan of the kites, containing these few words: \"I want you folks to be my soldiers.\""
+    },
+    {
+      "id": "s3-1",
+      "sceneId": "s3",
+      "text": "To this brief message Mwayway at once wrote this short reply: \"I should say not.\""
+    },
+    {
+      "id": "s3-2",
+      "sceneId": "s3",
+      "text": "Thereupon, thinking to scare Mwayway, the sultan of the crows sent him word, \"If you refuse to obey me I'll make war upon you.\""
+    },
+    {
+      "id": "s3-3",
+      "sceneId": "s3",
+      "text": "To which the sultan of the kites replied, \"That suits me; let us fight, and if you beat us we will obey you, but if we are victors you shall be our servants.\""
+    },
+    {
+      "id": "s3-4",
+      "sceneId": "s3",
+      "text": "So they gathered their forces and engaged in a great battle, and in a little while it became evident that the crows were being badly beaten."
+    },
+    {
+      "id": "s3-5",
+      "sceneId": "s3",
+      "text": "As it appeared certain that, if something were not done pretty quickly, they would all be killed, one old crow, named Jeeoo'see, suddenly proposed that they should fly away."
+    },
+    {
+      "id": "s3-6",
+      "sceneId": "s3",
+      "text": "Directly the suggestion was made it was acted upon, and the crows left their homes and flew far away, where they set up another town. So, when the kites entered the place, they found no one there, and they took up their residence in Crowtown."
+    },
+    {
+      "id": "s3-7",
+      "sceneId": "s3",
+      "text": "One day, when the crows had gathered in council, Koongooroo stood up and said: \"My people, do as I command you, and all will be well. Pluck out some of my feathers and throw me into the town of the kites; then come back and stay here until you hear from me.\""
+    },
+    {
+      "id": "s3-8",
+      "sceneId": "s3",
+      "text": "Without argument or questioning the crows obeyed their sultan's command."
+    },
+    {
+      "id": "s3-9",
+      "sceneId": "s3",
+      "text": "Koongooroo had lain in the street but a short time, when some passing kites saw him and inquired threateningly, \"What are you doing here in our town?\""
+    },
+    {
+      "id": "s3-10",
+      "sceneId": "s3",
+      "text": "With many a moan he replied, \"My companions have beaten me and turned me out of their town because I advised them to obey Mwayway, sultan of the kites.\""
+    },
+    {
+      "id": "s3-11",
+      "sceneId": "s3",
+      "text": "When they heard this they picked him up and took him before the sultan, to whom they said, \"We found this fellow lying in the street, and he attributes his involuntary presence in our town to so singular a circumstance that we thought you should hear his story.\""
+    },
+    {
+      "id": "s3-12",
+      "sceneId": "s3",
+      "text": "Koongooroo was then bidden to repeat his statement, which he did, adding the remark that, much as he had suffered, he still held to his opinion that Mwayway was his rightful sultan."
+    },
+    {
+      "id": "s3-13",
+      "sceneId": "s3",
+      "text": "This, of course, made a very favorable impression, and the sultan said, \"You have more sense than all the rest of your tribe put together; I guess you can stay here and live with us.\""
+    },
+    {
+      "id": "s3-14",
+      "sceneId": "s3",
+      "text": "So Koongooroo, expressing much gratitude, settled down, apparently, to spend the remainder of his life with the kites."
+    },
+    {
+      "id": "s3-15",
+      "sceneId": "s3",
+      "text": "One day his neighbors took him to church with them, and when they returned home they asked him, \"Who have the best kind of religion, the kites or the crows?\""
+    },
+    {
+      "id": "s3-16",
+      "sceneId": "s3",
+      "text": "To which crafty old Koongooroo replied, with great enthusiasm, \"Oh, the kites, by long odds!\""
+    },
+    {
+      "id": "s3-17",
+      "sceneId": "s3",
+      "text": "This answer tickled the kites like anything, and Koongooroo was looked upon as a bird of remarkable discernment."
+    },
+    {
+      "id": "s3-18",
+      "sceneId": "s3",
+      "text": "When almost another week had passed, the sultan of the crows slipped away in the night, went to his own town, and called his people together."
+    },
+    {
+      "id": "s3-19",
+      "sceneId": "s3",
+      "text": "\"To-morrow,\" said he, \"is the great annual religious festival of the kites, and they will all go to church in the morning. Go, now, and get some wood and some fire, and wait near their town until I call you; then come quickly and set fire to the church.\""
+    },
+    {
+      "id": "s3-20",
+      "sceneId": "s3",
+      "text": "Then he hurried back to Mwayway's town."
+    },
+    {
+      "id": "s3-21",
+      "sceneId": "s3",
+      "text": "The crows were very busy indeed all that night, and by dawn they had an abundance of wood and fire at hand, and were lying in wait near the town of their victorious enemies."
+    },
+    {
+      "id": "s3-22",
+      "sceneId": "s3",
+      "text": "So in the morning every kite went to church. There was not one person left at home except old Koongooroo."
+    },
+    {
+      "id": "s3-23",
+      "sceneId": "s3",
+      "text": "When his neighbors called for him they found him lying down. \"Why!\" they exclaimed with surprise, \"are you not going to church to-day?\""
+    },
+    {
+      "id": "s3-24",
+      "sceneId": "s3",
+      "text": "\"Oh,\" said he, \"I wish I could; but my stomach aches so badly I can't move!\" And he groaned dreadfully."
+    },
+    {
+      "id": "s3-25",
+      "sceneId": "s3",
+      "text": "\"Ah, poor fellow!\" said they; \"you will be better in bed;\" and they left him to himself."
+    },
+    {
+      "id": "s3-26",
+      "sceneId": "s3",
+      "text": "As soon as everybody was out of sight he flew swiftly to his soldiers and cried, \"Come on; they're all in the church.\""
+    },
+    {
+      "id": "s3-27",
+      "sceneId": "s3",
+      "text": "Then they all crept quickly but quietly to the church, and while some piled wood about the door, others applied fire."
+    },
+    {
+      "id": "s3-28",
+      "sceneId": "s3",
+      "text": "The wood caught readily, and the fire was burning fiercely before the kites were aware of their danger; but when the church began to fill with smoke, and tongues of flame shot through the cracks, they tried to escape through the windows. The greater part of them, however, were suffocated, or, having their wings singed, could not fly away, and so were burned to death, among them their sultan, Mwayway; and Koongooroo and his crows got their old town back again."
+    },
+    {
+      "id": "s3-29",
+      "sceneId": "s3",
+      "text": "From that day to this the kites fly away from the crows."
+    },
+    {
+      "id": "s4-0",
+      "sceneId": "s4",
+      "text": "Once there was a man named Go'so, who taught children to read, not in a schoolhouse, but under a calabash tree. One evening, while Goso was sitting under the tree deep in the study of the next day's lessons, Paa, the gazelle, climbed up the tree very quietly to steal some fruit, and in so doing shook off a calabash, which, in falling, struck the teacher on the head and killed him."
+    },
+    {
+      "id": "s4-1",
+      "sceneId": "s4",
+      "text": "When his scholars came in the morning and found their teacher lying dead, they were filled with grief; so, after giving him a decent burial, they agreed among themselves to find the one who had killed Goso, and put him to death."
+    },
+    {
+      "id": "s4-2",
+      "sceneId": "s4",
+      "text": "After talking the matter over they came to the conclusion that the south wind was the offender."
+    },
+    {
+      "id": "s4-3",
+      "sceneId": "s4",
+      "text": "So they caught the south wind and beat it."
+    },
+    {
+      "id": "s4-4",
+      "sceneId": "s4",
+      "text": "But the south wind cried: \"Here! I am Koo'see, the south wind. Why are you beating me? What have I done?\""
+    },
+    {
+      "id": "s4-5",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Koosee; it was you who threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-6",
+      "sceneId": "s4",
+      "text": "But Koosee said, \"If I were so powerful would I be stopped by a mud wall?\""
+    },
+    {
+      "id": "s4-7",
+      "sceneId": "s4",
+      "text": "So they went to the mud wall and beat it."
+    },
+    {
+      "id": "s4-8",
+      "sceneId": "s4",
+      "text": "But the mud wall cried: \"Here! I am Keeyambaa'za, the mud wall. Why are you beating me? What have I done?\""
+    },
+    {
+      "id": "s4-9",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Keeyambaaza; it was you who stopped Koosee, the south wind; and Koosee, the south wind, threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-10",
+      "sceneId": "s4",
+      "text": "But Keeyambaaza said, \"If I were so powerful would I be bored through by the rat?\""
+    },
+    {
+      "id": "s4-11",
+      "sceneId": "s4",
+      "text": "So they went and caught the rat and beat it."
+    },
+    {
+      "id": "s4-12",
+      "sceneId": "s4",
+      "text": "But the rat cried: \"Here! I am Paan'ya, the rat. Why are you beating me? What have I done?\""
+    },
+    {
+      "id": "s4-13",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Paanya; it was you who bored through Keeyambaaza, the mud wall; which stopped Koosee, the south wind; and Koosee, the south wind, threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-14",
+      "sceneId": "s4",
+      "text": "But Paanya said, \"If I were so powerful would I be eaten by a cat?\""
+    },
+    {
+      "id": "s4-15",
+      "sceneId": "s4",
+      "text": "So they hunted for the cat, caught it, and beat it."
+    },
+    {
+      "id": "s4-16",
+      "sceneId": "s4",
+      "text": "But the cat cried: \"Here! I am Paa'ka, the cat. Why do you beat me? What have I done?\""
+    },
+    {
+      "id": "s4-17",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Paaka; it is you that eats Paanya, the rat; who bores through Keeyambaaza, the mud wall; which stopped Koosee, the south wind; and Koosee, the south wind, threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-18",
+      "sceneId": "s4",
+      "text": "But Paaka said, \"If I were so powerful would I be tied by a rope?\""
+    },
+    {
+      "id": "s4-19",
+      "sceneId": "s4",
+      "text": "So they took the rope and beat it."
+    },
+    {
+      "id": "s4-20",
+      "sceneId": "s4",
+      "text": "But the rope cried: \"Here! I am Kaam'ba, the rope. Why do you beat me? What have I done?\""
+    },
+    {
+      "id": "s4-21",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Kaamba; it is you that ties Paaka, the cat; who eats Paanya, the rat; who bores through Keeyambaaza, the mud wall; which stopped Koosee, the south wind; and Koosee, the south wind, threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-22",
+      "sceneId": "s4",
+      "text": "But Kaamba said, \"If I were so powerful would I be cut by a knife?\""
+    },
+    {
+      "id": "s4-23",
+      "sceneId": "s4",
+      "text": "So they took the knife and beat it."
+    },
+    {
+      "id": "s4-24",
+      "sceneId": "s4",
+      "text": "But the knife cried: \"Here! I am Kee'soo, the knife. Why do you beat me? What have I done?\""
+    },
+    {
+      "id": "s4-25",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Keesoo; you cut Kaamba, the rope; that ties Paaka, the cat; who eats Paanya, the rat; who bores through Keeyambaaza, the mud wall; which stopped Koosee, the south wind; and Koosee, the south wind, threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-26",
+      "sceneId": "s4",
+      "text": "But Keesoo said, \"If I were so powerful would I be burned by the fire?\""
+    },
+    {
+      "id": "s4-27",
+      "sceneId": "s4",
+      "text": "And they went and beat the fire."
+    },
+    {
+      "id": "s4-28",
+      "sceneId": "s4",
+      "text": "But the fire cried: \"Here! I am Mo'to, the fire. Why do you beat me? What have I done?\""
+    },
+    {
+      "id": "s4-29",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Moto; you burn Keesoo, the knife; that cuts Kaamba, the rope; that ties Paaka, the cat; who eats Paanya, the rat; who bores through Keeyambaaza, the mud wall; which stopped Koosee, the south wind; and Koosee, the south wind, threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-30",
+      "sceneId": "s4",
+      "text": "But Moto said, \"If I were so powerful would I be put out by water?\""
+    },
+    {
+      "id": "s4-31",
+      "sceneId": "s4",
+      "text": "And they went to the water and beat it."
+    },
+    {
+      "id": "s4-32",
+      "sceneId": "s4",
+      "text": "But the water cried: \"Here! I am Maa'jee, the water. Why do you beat me? What have I done?\""
+    },
+    {
+      "id": "s4-33",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Maajee; you put out Moto, the fire; that burns Keesoo, the knife; that cuts Kaamba, the rope; that ties Paaka, the cat; who eats Paanya, the rat; who bores through Keeyambaaza, the mud wall; which stopped Koosee, the south wind; and Koosee, the south wind, threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-34",
+      "sceneId": "s4",
+      "text": "But Maajee said, \"If I were so powerful would I be drunk by the ox?\""
+    },
+    {
+      "id": "s4-35",
+      "sceneId": "s4",
+      "text": "And they went to the ox and beat it."
+    },
+    {
+      "id": "s4-36",
+      "sceneId": "s4",
+      "text": "But the ox cried: \"Here! I am Ng'om'bay, the ox. Why do you beat me? What have I done?\""
+    },
+    {
+      "id": "s4-37",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Ng'ombay; you drink Maajee, the water; that puts out Moto, the fire; that burns Keesoo, the knife; that cuts Kaamba, the rope; that ties Paaka, the cat; who eats Paanya, the rat; who bores through Keeyambaaza, the mud wall; which stopped Koosee, the south wind; and Koosee, the south wind, threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-38",
+      "sceneId": "s4",
+      "text": "But Ng'ombay said, \"If I were so powerful would I be tormented by the fly?\""
+    },
+    {
+      "id": "s4-39",
+      "sceneId": "s4",
+      "text": "And they caught a fly and beat it."
+    },
+    {
+      "id": "s4-40",
+      "sceneId": "s4",
+      "text": "But the fly cried: \"Here! I am Een'zee, the fly. Why do you beat me? What have I done?\""
+    },
+    {
+      "id": "s4-41",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Eenzee; you torment Ng'ombay, the ox; who drinks Maajee, the water; that puts out Moto, the fire; that burns Keesoo, the knife; that cuts Kaamba, the rope; that ties Paaka, the cat; who eats Paanya, the rat; who bores through Keeyambaaza, the mud wall; which stopped Koosee, the south wind; and Koosee, the south wind, threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-42",
+      "sceneId": "s4",
+      "text": "But Eenzee said, \"If I were so powerful would I be eaten by the gazelle?\""
+    },
+    {
+      "id": "s4-43",
+      "sceneId": "s4",
+      "text": "And they searched for the gazelle, and when they found it they beat it."
+    },
+    {
+      "id": "s4-44",
+      "sceneId": "s4",
+      "text": "But the gazelle said: \"Here! I am Paa, the gazelle. Why do you beat me? What have I done?\""
+    },
+    {
+      "id": "s4-45",
+      "sceneId": "s4",
+      "text": "And they said: \"Yes, we know you are Paa; you eat Eenzee, the fly; that torments Ng'ombay, the ox; who drinks Maajee, the water; that puts out Moto, the fire; that burns Keesoo, the knife; that cuts Kaamba, the rope; that ties Paaka, the cat; who eats Paanya, the rat; who bores through Keeyambaaza, the mud wall; which stopped Koosee, the south wind; and Koosee, the south wind, threw down the calabash that struck our teacher Goso. You should not have done it.\""
+    },
+    {
+      "id": "s4-46",
+      "sceneId": "s4",
+      "text": "The gazelle, through surprise at being found out and fear of the consequences of his accidental killing of the teacher, while engaged in stealing, was struck dumb."
+    },
+    {
+      "id": "s4-47",
+      "sceneId": "s4",
+      "text": "Then the scholars said: \"Ah! he hasn't a word to say for himself. This is the fellow who threw down the calabash that struck our teacher Goso. We will kill him.\""
+    },
+    {
+      "id": "s4-48",
+      "sceneId": "s4",
+      "text": "So they killed Paa, the gazelle, and avenged the death of their teacher."
+    },
+    {
+      "id": "s5-0",
+      "sceneId": "s5",
+      "text": "Long, long ago there lived, in a village called Keejee'jee, a woman whose husband died, leaving her with a little baby boy. She worked hard all day to get food for herself and child, but they lived very poorly and were most of the time half-starved."
+    },
+    {
+      "id": "s5-1",
+      "sceneId": "s5",
+      "text": "When the boy, whose name was 'Mvoo' Laa'na, began to get big, he said to his mother, one day: \"Mother, we are always hungry. What work did my father do to support us?\""
+    },
+    {
+      "id": "s5-2",
+      "sceneId": "s5",
+      "text": "His mother replied: \"Your father was a hunter. He set traps, and we ate what he caught in them.\""
+    },
+    {
+      "id": "s5-3",
+      "sceneId": "s5",
+      "text": "\"Oho!\" said 'Mvoo Laana; \"that's not work; that's fun. I, too, will set traps, and see if we can't get enough to eat.\""
+    },
+    {
+      "id": "s5-4",
+      "sceneId": "s5",
+      "text": "The next day he went into the forest and cut branches from the trees, and returned home in the evening."
+    },
+    {
+      "id": "s5-5",
+      "sceneId": "s5",
+      "text": "The second day he spent making the branches into traps."
+    },
+    {
+      "id": "s5-6",
+      "sceneId": "s5",
+      "text": "The third day he twisted cocoanut fiber into ropes."
+    },
+    {
+      "id": "s5-7",
+      "sceneId": "s5",
+      "text": "The fourth day he set up as many traps as time would permit."
+    },
+    {
+      "id": "s5-8",
+      "sceneId": "s5",
+      "text": "The fifth day he set up the remainder of the traps."
+    },
+    {
+      "id": "s5-9",
+      "sceneId": "s5",
+      "text": "The sixth day he went to examine the traps, and they had caught so much game, beside what they needed for themselves, that he took a great quantity to the big town of Oongoo'ja, where he sold it and bought corn and other things, and the house was full of food; and, as this good fortune continued, he and his mother lived very comfortably."
+    },
+    {
+      "id": "s5-10",
+      "sceneId": "s5",
+      "text": "But after a while, when he went to his traps he found nothing in them day after day."
+    },
+    {
+      "id": "s5-11",
+      "sceneId": "s5",
+      "text": "One morning, however, he found that an ape had been caught in one of the traps, and he was about to kill it, when it said: \"Son of Adam, I am Neea'nee, the ape; do not kill me. Take me out of this trap and let me go. Save me from the rain, that I may come and save you from the sun some day.\""
+    },
+    {
+      "id": "s5-12",
+      "sceneId": "s5",
+      "text": "So 'Mvoo Laana took him out of the trap and let him go."
+    },
+    {
+      "id": "s5-13",
+      "sceneId": "s5",
+      "text": "When Neeanee had climbed up in a tree, he sat on a branch and said to the youth: \"For your kindness I will give you a piece of advice: Believe me, men are all bad. Never do a good turn for a man; if you do, he will do you harm at the first opportunity.\""
+    },
+    {
+      "id": "s5-14",
+      "sceneId": "s5",
+      "text": "The second day, 'Mvoo Laana found a snake in the same trap. He started to the village to give the alarm, but the snake shouted: \"Come back, son of Adam; don't call the people from the village to come and kill me. I am Neeo'ka, the snake. Let me out of this trap, I pray you. Save me from the rain to-day, that I may be able to save you from the sun to-morrow, if you should be in need of help.\""
+    },
+    {
+      "id": "s5-15",
+      "sceneId": "s5",
+      "text": "So the youth let him go; and as he went he said, \"I will return your kindness if I can, but do not trust any man; if you do him a kindness he will do you an injury in return at the first opportunity.\""
+    },
+    {
+      "id": "s5-16",
+      "sceneId": "s5",
+      "text": "The third day, 'Mvoo Laana found a lion in the same trap that had caught the ape and the snake, and he was afraid to go near it. But the lion said: \"Don't run away; I am Sim'ba Kong'way, the very old lion. Let me out of this trap, and I will not hurt you. Save me from the rain, that I may save you from the sun if you should need help.\""
+    },
+    {
+      "id": "s5-17",
+      "sceneId": "s5",
+      "text": "So 'Mvoo Laana believed him and let him out of the trap, and Simba Kongway, before going his way, said: \"Son of Adam, you have been kind to me, and I will repay you with kindness if I can; but never do a kindness to a man, or he will pay you back with unkindness.\""
+    },
+    {
+      "id": "s5-18",
+      "sceneId": "s5",
+      "text": "The next day a man was caught in the same trap, and when the youth released him, he repeatedly assured him that he would never forget the service he had done him in restoring his liberty and saving his life."
+    },
+    {
+      "id": "s5-19",
+      "sceneId": "s5",
+      "text": "Well, it seemed that he had caught all the game that could be taken in traps, and 'Mvoo Laana and his mother were hungry every day, with nothing to satisfy them, as they had been before. At last he said to his mother, one day: \"Mother, make me seven cakes of the little meal we have left, and I will go hunting with my bow and arrows.\" So she baked him the cakes, and he took them and his bow and arrows and went into the forest."
+    },
+    {
+      "id": "s5-20",
+      "sceneId": "s5",
+      "text": "The youth walked and walked, but could see no game, and finally he found that he had lost his way, and had eaten all his cakes but one."
+    },
+    {
+      "id": "s5-21",
+      "sceneId": "s5",
+      "text": "And he went on and on, not knowing whether he was going away from his home or toward it, until he came to the wildest and most desolate looking wood he had ever seen. He was so wretched and tired that he felt he must lie down and die, when suddenly he heard some one calling him, and looking up he saw Neeanee, the ape, who said, \"Son of Adam, where are you going?\""
+    },
+    {
+      "id": "s5-22",
+      "sceneId": "s5",
+      "text": "\"I don't know,\" replied 'Mvoo Laana, sadly; \"I'm lost.\""
+    },
+    {
+      "id": "s5-23",
+      "sceneId": "s5",
+      "text": "\"Well, well,\" said the ape; \"don't worry. Just sit down here and rest yourself until I come back, and I will repay with kindness the kindness you once showed me.\""
+    },
+    {
+      "id": "s5-24",
+      "sceneId": "s5",
+      "text": "Then Neeanee went away off to some gardens and stole a whole lot of ripe paw-paws and bananas, and brought them to 'Mvoo Laana, and said: \"Here's plenty of food for you. Is there anything else you want? Would you like a drink?\" And before the youth could answer he ran off with a calabash and brought it back full of water. So the youth ate heartily, and drank all the water he needed, and then each said to the other, \"Good-bye, till we meet again,\" and went their separate ways."
+    },
+    {
+      "id": "s5-25",
+      "sceneId": "s5",
+      "text": "When 'Mvoo Laana had walked a great deal farther without finding which way he should go, he met Simba Kongway, who asked, \"Where are you going, son of Adam?\""
+    },
+    {
+      "id": "s5-26",
+      "sceneId": "s5",
+      "text": "And the youth answered, as dolefully as before, \"I don't know; I'm lost.\""
+    },
+    {
+      "id": "s5-27",
+      "sceneId": "s5",
+      "text": "\"Come, cheer up,\" said the very old lion, \"and rest yourself here a little. I want to repay with kindness to-day the kindness you showed me on a former day.\""
+    },
+    {
+      "id": "s5-28",
+      "sceneId": "s5",
+      "text": "So 'Mvoo Laana sat down. Simba Kongway went away, but soon returned with some game he had caught, and then he brought some fire, and the young man cooked the game and ate it. When he had finished he felt a great deal better, and they bade each other good-bye for the present, and each went his way."
+    },
+    {
+      "id": "s5-29",
+      "sceneId": "s5",
+      "text": "After he had traveled another very long distance the youth came to a farm, and was met by a very, very old woman, who said to him: \"Stranger, my husband has been taken very sick, and I am looking for some one to make him some medicine. Won't you make it?\" But he answered: \"My good woman, I am not a doctor, I am a hunter, and never used medicine in my life. I can not help you.\""
+    },
+    {
+      "id": "s5-30",
+      "sceneId": "s5",
+      "text": "When he came to the road leading to the principal city he saw a well, with a bucket standing near it, and he said to himself: \"That's just what I want. I'll take a drink of nice well-water. Let me see if the water can be reached.\""
+    },
+    {
+      "id": "s5-31",
+      "sceneId": "s5",
+      "text": "As he peeped over the edge of the well, to see if the water was high enough, what should he behold but a great big snake, which, directly it saw him, said, \"Son of Adam, wait a moment.\" Then it came out of the well and said: \"How? Don't you know me?\""
+    },
+    {
+      "id": "s5-32",
+      "sceneId": "s5",
+      "text": "\"I certainly do not,\" said the youth, stepping back a little."
+    },
+    {
+      "id": "s5-33",
+      "sceneId": "s5",
+      "text": "\"Well, well!\" said the snake; \"I could never forget you. I am Neeoka, whom you released from the trap. You know I said, 'Save me from the rain, and I will save you from the sun.' Now, you are a stranger in the town to which you are going; therefore hand me your little bag, and I will place in it the things that will be of use to you when you arrive there.\""
+    },
+    {
+      "id": "s5-34",
+      "sceneId": "s5",
+      "text": "So 'Mvoo Laana gave Neeoka the little bag, and he filled it with chains of gold and silver, and told him to use them freely for his own benefit. Then they parted very cordially."
+    },
+    {
+      "id": "s5-35",
+      "sceneId": "s5",
+      "text": "When the youth reached the city, the first man he met was he whom he had released from the trap, who invited him to go home with him, which he did, and the man's wife made him supper."
+    },
+    {
+      "id": "s5-36",
+      "sceneId": "s5",
+      "text": "As soon as he could get away unobserved, the man went to the sultan and said: \"There is a stranger come to my house with a bag full of chains of silver and gold, which he says he got from a snake that lives in a well. But although he pretends to be a man, I know that he is a snake who has power to look like a man.\""
+    },
+    {
+      "id": "s5-37",
+      "sceneId": "s5",
+      "text": "When the sultan heard this he sent some soldiers who brought 'Mvoo Laana and his little bag before him. When they opened the little bag, the man who was released from the trap persuaded the people that some evil would come out of it, and affect the children of the sultan and the children of the vizir."
+    },
+    {
+      "id": "s5-38",
+      "sceneId": "s5",
+      "text": "Then the people became excited, and tied the hands of 'Mvoo Laana behind him."
+    },
+    {
+      "id": "s5-39",
+      "sceneId": "s5",
+      "text": "But the great snake had come out of the well and arrived at the town just about this time, and he went and lay at the feet of the man who had said all those bad things about 'Mvoo Laana, and when the people saw this they said to that man: \"How is this? There is the great snake that lives in the well, and he stays by you. Tell him to go away.\""
+    },
+    {
+      "id": "s5-40",
+      "sceneId": "s5",
+      "text": "But Neeoka would not stir. So they untied the young man's hands, and tried in every way to make amends for having suspected him of being a wizard."
+    },
+    {
+      "id": "s5-41",
+      "sceneId": "s5",
+      "text": "Then the sultan asked him, \"Why should this man invite you to his home and then speak ill of you?\""
+    },
+    {
+      "id": "s5-42",
+      "sceneId": "s5",
+      "text": "And 'Mvoo Laana related all that had happened to him, and how the ape, the snake, and the lion had cautioned him about the results of doing any kindness for a man."
+    },
+    {
+      "id": "s5-43",
+      "sceneId": "s5",
+      "text": "And the sultan said: \"Although men are often ungrateful, they are not always so; only the bad ones. As for this fellow, he deserves to be put in a sack and drowned in the sea. He was treated kindly, and returned evil for good.\""
+    },
+    {
+      "id": "s6-0",
+      "sceneId": "s6",
+      "text": "Once there was a very poor man, named Haamdaa'nee, who begged from door to door for his living, sometimes taking things before they were offered him. After a while people became suspicious of him, and stopped giving him anything, in order to keep him away from their houses. So at last he was reduced to the necessity of going every morning to the village dust heap, and picking up and eating the few grains of the tiny little millet seed that he might find there."
+    },
+    {
+      "id": "s6-1",
+      "sceneId": "s6",
+      "text": "One day, as he was scratching and turning over the heap, he found a dime, which he tied up in a corner of his ragged dress, and continued to hunt for millet grains, but could not find one."
+    },
+    {
+      "id": "s6-2",
+      "sceneId": "s6",
+      "text": "\"Oh, well,\" said he, \"I've got a dime now; I'm pretty well fixed. I'll go home and take a nap instead of a meal.\""
+    },
+    {
+      "id": "s6-3",
+      "sceneId": "s6",
+      "text": "So he went to his hut, took a drink of water, put some tobacco in his mouth, and went to sleep."
+    },
+    {
+      "id": "s6-4",
+      "sceneId": "s6",
+      "text": "The next morning, as he scratched in the dust heap, he saw a countryman going along, carrying a basket made of twigs, and he called to him: \"Hi, there, countryman! What have you in that cage?\""
+    },
+    {
+      "id": "s6-5",
+      "sceneId": "s6",
+      "text": "The countryman, whose name was Moohaad'eem, replied, \"Gazelles.\""
+    },
+    {
+      "id": "s6-6",
+      "sceneId": "s6",
+      "text": "And Haamdaanee called: \"Bring them here. Let me see them.\""
+    },
+    {
+      "id": "s6-7",
+      "sceneId": "s6",
+      "text": "Now there were three well-to-do men standing near; and when they saw the countryman coming to Haamdaanee they smiled, and said, \"You're taking lots of trouble for nothing, Moohaadeem.\""
+    },
+    {
+      "id": "s6-8",
+      "sceneId": "s6",
+      "text": "\"How's that, gentlemen?\" he inquired."
+    },
+    {
+      "id": "s6-9",
+      "sceneId": "s6",
+      "text": "\"Why,\" said they, \"that poor fellow has nothing at all. Not a cent.\""
+    },
+    {
+      "id": "s6-10",
+      "sceneId": "s6",
+      "text": "\"Oh, I don't know that,\" said the countryman; \"he may have plenty, for all I know.\""
+    },
+    {
+      "id": "s6-11",
+      "sceneId": "s6",
+      "text": "\"Not he,\" said they."
+    },
+    {
+      "id": "s6-12",
+      "sceneId": "s6",
+      "text": "\"Don't you see for yourself,\" continued one of them, \"that he is on the dust heap? Every day he scratches there like a hen, trying to get enough grains of millet to keep himself alive. If he had any money, wouldn't he buy a square meal, for once in his life? Do you think he would want to buy a gazelle? What would he do with it? He can't find enough food for himself, without looking for any for a gazelle.\""
+    },
+    {
+      "id": "s6-13",
+      "sceneId": "s6",
+      "text": "But Moohaadeem said: \"Gentlemen, I have brought some goods here to sell. I answer all who call me, and if any one says 'Come,' I go to him. I don't favor one and slight another; therefore, as this man called me, I'm going to him.\""
+    },
+    {
+      "id": "s6-14",
+      "sceneId": "s6",
+      "text": "\"All right,\" said the first man; \"you don't believe us. Well, we know where he lives, and all about him, and we know that he can't buy anything.\""
+    },
+    {
+      "id": "s6-15",
+      "sceneId": "s6",
+      "text": "\"That's so,\" said the second man. \"Perhaps, however, you will see that we were right, after you have a talk with him.\""
+    },
+    {
+      "id": "s6-16",
+      "sceneId": "s6",
+      "text": "To which the third man added, \"Clouds are a sign of rain, but we have seen no signs of his being about to spend any money.\""
+    },
+    {
+      "id": "s6-17",
+      "sceneId": "s6",
+      "text": "\"All right, gentlemen,\" said Moohaadeem; \"many better-looking people than he call me, and when I show them my gazelles they say, 'Oh, yes, they're very beautiful, but awfully dear; take them away.' So I shall not be disappointed if this man says the same thing. I shall go to him, anyhow.\""
+    },
+    {
+      "id": "s6-18",
+      "sceneId": "s6",
+      "text": "Then one of the three men said, \"Let us go with this man, and see what the beggar will buy.\""
+    },
+    {
+      "id": "s6-19",
+      "sceneId": "s6",
+      "text": "\"Pshaw!\" said another; \"buy! You talk foolishly. He has not had a good meal in three years, to my knowledge; and a man in his condition doesn't have money to buy gazelles. However, let's go; and if he makes this poor countryman carry his load over there just for the fun of looking at the gazelles, let each of us give him a good hard whack with our walking-sticks, to teach him how to behave toward honest merchants.\""
+    },
+    {
+      "id": "s6-20",
+      "sceneId": "s6",
+      "text": "So, when they came near him, one of those three men said: \"Well, here are the gazelles; now buy one. Here they are, you old hypocrite; you'll feast your eyes on them, but you can't buy them.\""
+    },
+    {
+      "id": "s6-21",
+      "sceneId": "s6",
+      "text": "But Haamdaanee, paying no attention to the men, said to Moohaadeem, \"How much for one of your gazelles?\""
+    },
+    {
+      "id": "s6-22",
+      "sceneId": "s6",
+      "text": "Then another of those men broke in: \"You're very innocent, aren't you? You know, as well as I do, that gazelles are sold every day at two for a quarter.\""
+    },
+    {
+      "id": "s6-23",
+      "sceneId": "s6",
+      "text": "Still taking no notice of these outsiders, Haamdaanee continued, \"I'd like to buy one for a dime.\""
+    },
+    {
+      "id": "s6-24",
+      "sceneId": "s6",
+      "text": "\"One for a dime!\" laughed the men; \"of course you'd like to buy one for a dime. Perhaps you'd also like to have the dime to buy with.\""
+    },
+    {
+      "id": "s6-25",
+      "sceneId": "s6",
+      "text": "Then one of them gave him a push on the cheek."
+    },
+    {
+      "id": "s6-26",
+      "sceneId": "s6",
+      "text": "At this Haamdaanee turned and said: \"Why do you push me on the cheek, when I've done nothing to you? I do not know you. I call this man, to transact some business with him, and you, who are strangers, step in to spoil our trade.\""
+    },
+    {
+      "id": "s6-27",
+      "sceneId": "s6",
+      "text": "He then untied the knot in the corner of his ragged coat, produced the dime, and, handing it to Moohaadeem, said, \"Please, good man, let me have a gazelle for that.\""
+    },
+    {
+      "id": "s6-28",
+      "sceneId": "s6",
+      "text": "At this, the countryman took a small gazelle out of the cage and handed it to him, saying, \"Here, master, take this one. I call it Keejee'paa.\" Then turning to those three men, he laughed, and said: \"Ehe! How's this? You, with your white robes, and turbans, and swords, and daggers, and sandals on your feet--you gentlemen of property, and no mistake--you told me this man was too poor to buy anything; yet he has bought a gazelle for a dime, while you fine fellows, I think, haven't enough money among you to buy half a gazelle, if they were five cents each.\""
+    },
+    {
+      "id": "s6-29",
+      "sceneId": "s6",
+      "text": "Then Moohaadeem and the three men went their several ways."
+    },
+    {
+      "id": "s6-30",
+      "sceneId": "s6",
+      "text": "As for Haamdaanee, he stayed at the dust heap until he found a few grains of millet for himself and a few for Keejeepaa, the gazelle, and then went to his hut, spread his sleeping mat, and he and the gazelle slept together."
+    },
+    {
+      "id": "s6-31",
+      "sceneId": "s6",
+      "text": "This going to the dust heap for a few grains of millet and then going home to bed continued for about a week."
+    },
+    {
+      "id": "s6-32",
+      "sceneId": "s6",
+      "text": "Then one night Haamdaanee was awakened by some one calling, \"Master!\" Sitting up, he answered: \"Here I am. Who calls?\" The gazelle answered, \"I do!\""
+    },
+    {
+      "id": "s6-33",
+      "sceneId": "s6",
+      "text": "Upon this, the beggar man became so scared that he did not know whether he should faint or get up and run away."
+    },
+    {
+      "id": "s6-34",
+      "sceneId": "s6",
+      "text": "Seeing him so overcome, Keejeepaa asked, \"Why, master, what's the matter?\""
+    },
+    {
+      "id": "s6-35",
+      "sceneId": "s6",
+      "text": "\"Oh, gracious!\" he gasped; \"what a wonder I see!\""
+    },
+    {
+      "id": "s6-36",
+      "sceneId": "s6",
+      "text": "\"A wonder?\" said the gazelle, looking all around; \"why, what is this wonder, that makes you act as if you were all broken up?\""
+    },
+    {
+      "id": "s6-37",
+      "sceneId": "s6",
+      "text": "\"Why, it's so wonderful, I can hardly believe I'm awake!\" said his master. \"Who in the world ever before knew of a gazelle that could speak?\""
+    },
+    {
+      "id": "s6-38",
+      "sceneId": "s6",
+      "text": "\"Oho!\" laughed Keejeepaa; \"is that all? There are many more wonderful things than that. But now, listen, while I tell you why I called you.\""
+    },
+    {
+      "id": "s6-39",
+      "sceneId": "s6",
+      "text": "\"Certainly; I'll listen to every word,\" said the man. \"I can't help listening!\""
+    },
+    {
+      "id": "s6-40",
+      "sceneId": "s6",
+      "text": "\"Well, you see, it's just this way,\" said Keejeepaa; \"I've allowed you to become my master, and I can not run away from you; so I want you to make an agreement with me, and I will make you a promise, and keep it.\""
+    },
+    {
+      "id": "s6-41",
+      "sceneId": "s6",
+      "text": "\"Say on,\" said his master."
+    },
+    {
+      "id": "s6-42",
+      "sceneId": "s6",
+      "text": "\"Now,\" continued the gazelle, \"one doesn't have to be acquainted with you long, in order to discover that you are very poor. This scratching a few grains of millet from the dust heap every day, and managing to subsist upon them, is all very well for you--you're used to it, because it's a matter of necessity with you; but if I keep it up much longer, you won't have any gazelle--Keejeepaa will die of starvation. Therefore, I want to go away every day and feed on my own kind of food; and I promise you I will return every evening.\""
+    },
+    {
+      "id": "s6-43",
+      "sceneId": "s6",
+      "text": "\"Well, I guess I'll have to give my consent,\" said the man, in no very cheerful tone."
+    },
+    {
+      "id": "s6-44",
+      "sceneId": "s6",
+      "text": "As it was now dawn, Keejeepaa jumped up and ran out of the door, Haamdaanee following him. The gazelle ran very fast, and his master stood watching him until he disappeared. Then tears started in the man's eyes, and, raising his hands, he cried, \"Oh, my mother!\" Then he cried, \"Oh, my father!\" Then he cried, \"Oh, my gazelle! It has run away!\""
+    },
+    {
+      "id": "s6-45",
+      "sceneId": "s6",
+      "text": "Some of his neighbors, who heard him carrying on in this manner, took the opportunity to inform him that he was a fool, an idiot, and a dissipated fellow."
+    },
+    {
+      "id": "s6-46",
+      "sceneId": "s6",
+      "text": "Said one of them: \"You hung around that dust heap, goodness knows how long, scratching like a hen, till fortune gave you a dime. You hadn't sense enough to go and buy some decent food; you had to buy a gazelle. Now you've let the creature run away. What are you crying about? You brought all your trouble on yourself.\""
+    },
+    {
+      "id": "s6-47",
+      "sceneId": "s6",
+      "text": "All this, of course, was very comforting to Haamdaanee, who slunk off to the dust heap, got a few grains of millet, and came back to his hut, which now seemed meaner and more desolate than ever."
+    },
+    {
+      "id": "s6-48",
+      "sceneId": "s6",
+      "text": "At sunset, however, Keejeepaa came trotting in; and the beggar was happy again, and said, \"Ah, my friend, you have returned to me.\""
+    },
+    {
+      "id": "s6-49",
+      "sceneId": "s6",
+      "text": "\"Of course,\" said the gazelle; \"didn't I promise you? You see, I feel that when you bought me you gave all the money you had in the world, even though it was only a dime. Why, then, should I grieve you? I couldn't do it. If I go and get myself some food, I'll always come back evenings.\""
+    },
+    {
+      "id": "s6-50",
+      "sceneId": "s6",
+      "text": "When the neighbors saw the gazelle come home every evening and run off every morning, they were greatly surprised, and began to suspect that Haamdaanee was a wizard."
+    },
+    {
+      "id": "s6-51",
+      "sceneId": "s6",
+      "text": "Well, this coming and going continued for five days, the gazelle telling its master each night what fine places it had been to, and what lots of food it had eaten."
+    },
+    {
+      "id": "s6-52",
+      "sceneId": "s6",
+      "text": "On the sixth day it was feeding among some thorn bushes in a thick wood, when, scratching away some bitter grass at the foot of a big tree, it saw an immense diamond of intense brightness."
+    },
+    {
+      "id": "s6-53",
+      "sceneId": "s6",
+      "text": "\"Oho!\" said Keejeepaa, in great astonishment; \"here's property, and no mistake! This is worth a kingdom! If I take it to my master he will be killed; for, being a poor man, if they say to him, 'Where did you get it?' and he answers, 'I picked it up,' they will not believe him; if he says, 'It was given to me,' they will not believe him either. It will not do for me to get my master into difficulties. I know what I'll do. I'll seek some powerful person; he will use it properly.\""
+    },
+    {
+      "id": "s6-54",
+      "sceneId": "s6",
+      "text": "So Keejeepaa started off through the forest, holding the diamond in his mouth, and ran, and ran, but saw no town that day; so he slept in the forest, and arose at dawn and pursued his way. And the second day passed like the first."
+    },
+    {
+      "id": "s6-55",
+      "sceneId": "s6",
+      "text": "On the third day the gazelle had traveled from dawn until between eight and nine o'clock, when he began to see scattered houses, getting larger in size, and knew he was approaching a town. In due time he found himself in the main street of a large city, leading direct to the sultan's palace, and began to run as fast as he could. People passing along stopped to look at the strange sight of a gazelle running swiftly along the main street with something wrapped in green leaves between its teeth."
+    },
+    {
+      "id": "s6-56",
+      "sceneId": "s6",
+      "text": "The sultan was sitting at the door of his palace, when Keejeepaa, stopping a little way off, dropped the diamond from its mouth, and, lying down beside it, panting, called out: \"Ho, there! Ho, there!\" which is a cry every one makes in that part of the world when wishing to enter a house, remaining outside until the cry is answered."
+    },
+    {
+      "id": "s6-57",
+      "sceneId": "s6",
+      "text": "After the cry had been repeated several times, the sultan said to his attendants, \"Who is doing all that calling?\""
+    },
+    {
+      "id": "s6-58",
+      "sceneId": "s6",
+      "text": "And one answered, \"Master, it's a gazelle that's calling, 'Ho, there!'\""
+    },
+    {
+      "id": "s6-59",
+      "sceneId": "s6",
+      "text": "\"Ho-ho!\" said the sultan; \"Ho-ho! Invite the gazelle to come near.\""
+    },
+    {
+      "id": "s6-60",
+      "sceneId": "s6",
+      "text": "Then three attendants ran to Keejeepaa and said: \"Come, get up. The sultan commands you to come near.\""
+    },
+    {
+      "id": "s6-61",
+      "sceneId": "s6",
+      "text": "So the gazelle arose, picked up the diamond, and, approaching the sultan, laid the jewel at his feet, saying, \"Master, good afternoon!\" To which the sultan replied: \"May God make it good! Come near.\""
+    },
+    {
+      "id": "s6-62",
+      "sceneId": "s6",
+      "text": "The sultan ordered his attendants to bring a carpet and a large cushion, and desired the gazelle to rest upon them. When it protested that it was comfortable as it was, he insisted, and Keejeepaa had to allow himself to be made a very honored guest. Then they brought milk and rice, and the sultan would hear nothing until the gazelle had fed and rested."
+    },
+    {
+      "id": "s6-63",
+      "sceneId": "s6",
+      "text": "At last, when everything had been disposed of, the sultan said, \"Well, now, my friend, tell me what news you bring.\""
+    },
+    {
+      "id": "s6-64",
+      "sceneId": "s6",
+      "text": "And Keejeepaa said: \"Master, I don't exactly know how you will like the news I bring. The fact is, I'm sent here to insult you! I've come to try and pick a quarrel with you! In fact, I'm here to propose a family alliance with you!\""
+    },
+    {
+      "id": "s6-65",
+      "sceneId": "s6",
+      "text": "At this the sultan exclaimed: \"Oh, come! for a gazelle, you certainly know how to talk! Now, the fact of it is, I'm looking for some one to insult me. I'm just aching to have some one pick a quarrel with me. I'm impatient for a family alliance. Go on with your message.\""
+    },
+    {
+      "id": "s6-66",
+      "sceneId": "s6",
+      "text": "Then Keejeepaa said, \"You don't bear any ill will against me, who am only a messenger?\""
+    },
+    {
+      "id": "s6-67",
+      "sceneId": "s6",
+      "text": "And the sultan said, \"None at all.\""
+    },
+    {
+      "id": "s6-68",
+      "sceneId": "s6",
+      "text": "\"Well,\" said Keejeepaa, \"look at this pledge I bring;\" dropping the diamond wrapped in leaves into the sultan's lap."
+    },
+    {
+      "id": "s6-69",
+      "sceneId": "s6",
+      "text": "When the sultan opened the leaves and saw the great, sparkling jewel, he was overcome with astonishment. At last he said, \"Well?\""
+    },
+    {
+      "id": "s6-70",
+      "sceneId": "s6",
+      "text": "\"I have brought this pledge,\" said the gazelle, \"from my master, Sultan Daaraa'ee. He has heard that you have a daughter, so he sent you this jewel, hoping you will forgive him for not sending something more worthy of your acceptance than this trifle.\""
+    },
+    {
+      "id": "s6-71",
+      "sceneId": "s6",
+      "text": "\"Goodness!\" said the sultan to himself; \"he calls this a trifle!\" Then to the gazelle: \"Oh, that's all right; that's all right. I'm satisfied. The Sultan Daaraaee has my consent to marry my daughter, and I don't want a single thing from him. Let him come empty-handed. If he has more of these trifles, let him leave them at home. This is my message, and I hope you will make it perfectly clear to your master.\""
+    },
+    {
+      "id": "s6-72",
+      "sceneId": "s6",
+      "text": "The gazelle assured him that he would explain everything satisfactorily, adding: \"And now, master, I take my leave. I go straight to our own town, and hope that in about eleven days we shall return to be your guests.\" So, with mutual compliments, they parted."
+    },
+    {
+      "id": "s6-73",
+      "sceneId": "s6",
+      "text": "In the meantime, Haamdaanee was having an exceedingly tough time. Keejeepaa having disappeared, he wandered about the town moaning, \"Oh, my poor gazelle! my poor gazelle!\" while the neighbors laughed and jeered at him, until, between them and his loss, he was nearly out of his mind."
+    },
+    {
+      "id": "s6-74",
+      "sceneId": "s6",
+      "text": "But one evening, when he had gone to bed, Keejeepaa walked in. Up he jumped, and began to embrace the gazelle, and weep over it, and carry on at a great rate."
+    },
+    {
+      "id": "s6-75",
+      "sceneId": "s6",
+      "text": "When he thought there had been about enough of this kind of thing, the gazelle said: \"Come, come; keep quiet, my master. I've brought you good news.\" But the beggar man continued to cry and fondle, and declare that he had thought his gazelle was dead."
+    },
+    {
+      "id": "s6-76",
+      "sceneId": "s6",
+      "text": "At last Keejeepaa said: \"Oh, well, master, you see I'm all right. You must brace up, and prepare to hear my news, and do as I advise you.\""
+    },
+    {
+      "id": "s6-77",
+      "sceneId": "s6",
+      "text": "\"Go on; go on,\" replied his master; \"explain what you will, I'll do whatever you require me to do. If you were to say, 'Lie down on your back, that I may roll you over the side of the hill,' I would lie down.\""
+    },
+    {
+      "id": "s6-78",
+      "sceneId": "s6",
+      "text": "\"Well,\" said the gazelle, \"there is not much to explain just now, but I'll tell you this: I've seen many kinds of food, food that is desirable and food that is objectionable, but this food I'm about to offer you is very sweet indeed.\""
+    },
+    {
+      "id": "s6-79",
+      "sceneId": "s6",
+      "text": "\"What?\" said Haamdaanee. \"Is it possible that in this world there is anything that is positively good? There must be good and bad in everything. Food that is both sweet and bitter is good food, but if food were nothing but sweetness would it not be injurious?\""
+    },
+    {
+      "id": "s6-80",
+      "sceneId": "s6",
+      "text": "\"H'm!\" yawned the gazelle; \"I'm too tired to talk philosophy. Let's go to sleep now, and when I call you in the morning, all you have to do is to get up and follow me.\""
+    },
+    {
+      "id": "s6-81",
+      "sceneId": "s6",
+      "text": "So at dawn they set forth, the gazelle leading the way, and for five days they journeyed through the forest."
+    },
+    {
+      "id": "s6-82",
+      "sceneId": "s6",
+      "text": "On the fifth day they came to a stream, and Keejeepaa said to his master, \"Lie down here.\" When he had done so, the gazelle set to and beat him so soundly that he cried out: \"Oh, let up, I beg of you!\""
+    },
+    {
+      "id": "s6-83",
+      "sceneId": "s6",
+      "text": "\"Now,\" said the gazelle, \"I'm going away, and when I return I expect to find you right here; so don't you leave this spot on any account.\" Then he ran away, and about ten o'clock that morning he arrived at the house of the sultan."
+    },
+    {
+      "id": "s6-84",
+      "sceneId": "s6",
+      "text": "Now, ever since the day Keejeepaa left the town, soldiers had been placed along the road to watch for and announce the approach of Sultan Daaraaee; so one of them, when he saw the gazelle in the distance, rushed up and cried to the sultan, \"Sultan Daaraaee is coming! I've seen the gazelle running as fast as it can in this direction.\""
+    },
+    {
+      "id": "s6-85",
+      "sceneId": "s6",
+      "text": "The sultan and his attendants immediately set out to meet his guests; but when they had gone a little way beyond the town they met the gazelle coming along alone, who, on reaching the sultan, said, \"Good day, my master.\" The sultan replied in kind, and asked the news, but Keejeepaa said: \"Ah, do not ask me. I can scarcely walk, and my news is bad!\""
+    },
+    {
+      "id": "s6-86",
+      "sceneId": "s6",
+      "text": "\"Why, how is that?\" asked the sultan."
+    },
+    {
+      "id": "s6-87",
+      "sceneId": "s6",
+      "text": "\"Oh, dear!\" sighed the gazelle; \"such misfortune and misery! You see, Sultan Daaraaee and I started alone to come here, and we got along all right until we came to the thick part of the forest yonder, when we were met by robbers, who seized my master, bound him, beat him, and took everything he had, even stripping off every stitch of his clothing. Oh, dear! oh, dear!\""
+    },
+    {
+      "id": "s6-88",
+      "sceneId": "s6",
+      "text": "\"Dear me!\" said the sultan; \"we must attend to this at once.\" So, hurrying back with his attendants to his house, he called a groom, to whom he said, \"Saddle the best horse in my stable, and put on him my finest harness.\" Then he directed a woman servant to open the big inlaid chest and bring him a bag of clothes. When she brought it he picked out a loin-cloth, and a long white robe, and a black overjacket, and a shawl for the waist, and a turban cloth, all of the very finest. Then he sent for a curved sword with a gold hilt, and a curved dagger with gold filigree, and a pair of elegant sandals, and a fine walking-cane."
+    },
+    {
+      "id": "s6-89",
+      "sceneId": "s6",
+      "text": "Then the sultan said to Keejeepaa, \"Take some of my soldiers, and let them convey these things to Sultan Daaraaee, that he may dress himself and come to me.\""
+    },
+    {
+      "id": "s6-90",
+      "sceneId": "s6",
+      "text": "But the gazelle answered: \"Ah, my master, can I take these soldiers with me and put Sultan Daaraaee to shame? There he lies, beaten and robbed, and I would not have any one see him. I can take everything by myself.\""
+    },
+    {
+      "id": "s6-91",
+      "sceneId": "s6",
+      "text": "\"Why,\" exclaimed the sultan, \"here is a horse, and there are clothes and arms. I don't see how a little gazelle can manage all those things.\""
+    },
+    {
+      "id": "s6-92",
+      "sceneId": "s6",
+      "text": "But the gazelle had them fasten everything on the horse's back, and tie the end of the bridle around his own neck, and then he set off alone, amidst the wonder and admiration of the people of that city, high and low."
+    },
+    {
+      "id": "s6-93",
+      "sceneId": "s6",
+      "text": "When he arrived at the place where he had left the beggar-man, he found him lying waiting for him, and overjoyed at his return."
+    },
+    {
+      "id": "s6-94",
+      "sceneId": "s6",
+      "text": "\"Now,\" said he, \"I have brought you the sweet food I promised. Come, get up and bathe yourself.\""
+    },
+    {
+      "id": "s6-95",
+      "sceneId": "s6",
+      "text": "With the hesitation of a person long unaccustomed to such a thing, the man stepped into the stream and began to wet himself a little."
+    },
+    {
+      "id": "s6-96",
+      "sceneId": "s6",
+      "text": "\"Oh,\" said the gazelle, impatiently, \"a little water like that won't do you much good; get out into the deep pool.\""
+    },
+    {
+      "id": "s6-97",
+      "sceneId": "s6",
+      "text": "\"Dear me!\" said the man, timidly; \"there is so much water there; and where there is much water there are sure to be horrible animals.\""
+    },
+    {
+      "id": "s6-98",
+      "sceneId": "s6",
+      "text": "\"Animals! What kind of animals?\""
+    },
+    {
+      "id": "s6-99",
+      "sceneId": "s6",
+      "text": "\"Well, crocodiles, water lizards, snakes, and, at any rate, frogs; and they bite people, and I'm terribly afraid of all of them.\""
+    },
+    {
+      "id": "s6-100",
+      "sceneId": "s6",
+      "text": "\"Oh, well,\" said Keejeepaa, \"do the best you can in the stream; but rub yourself well with earth, and, for goodness' sake, scrub your teeth well with sand; they are awfully dirty.\""
+    },
+    {
+      "id": "s6-101",
+      "sceneId": "s6",
+      "text": "So the man obeyed, and soon made quite a change in his appearance."
+    },
+    {
+      "id": "s6-102",
+      "sceneId": "s6",
+      "text": "Then the gazelle said: \"Here, hurry up and put on these things. The sun has gone down, and we ought to have started before this.\""
+    },
+    {
+      "id": "s6-103",
+      "sceneId": "s6",
+      "text": "So the man dressed himself in the fine clothes the sultan had sent, and then he mounted the horse, and they started; the gazelle trotting on ahead."
+    },
+    {
+      "id": "s6-104",
+      "sceneId": "s6",
+      "text": "When they had gone some distance, the gazelle stopped, and said, \"See here: nobody who sees you now would suspect that you are the man who scratched in the dust heap yesterday. Even if we were to go back to our town the neighbors would not recognize you, if it were only for the fact that your face is clean and your teeth are white. Your appearance is all right, but I have a caution to give you. Over there, where we are going, I have procured for you the sultan's daughter for a wife, with all the usual wedding gifts. Now, you must keep quiet. Say nothing except, 'How d'ye do?' and 'What's the news?' Let me do the talking.\""
+    },
+    {
+      "id": "s6-105",
+      "sceneId": "s6",
+      "text": "\"All right,\" said the man; \"that suits me exactly.\""
+    },
+    {
+      "id": "s6-106",
+      "sceneId": "s6",
+      "text": "\"Do you know what your name is?\""
+    },
+    {
+      "id": "s6-107",
+      "sceneId": "s6",
+      "text": "\"Of course I do.\""
+    },
+    {
+      "id": "s6-108",
+      "sceneId": "s6",
+      "text": "\"Indeed? Well, what is it?\""
+    },
+    {
+      "id": "s6-109",
+      "sceneId": "s6",
+      "text": "\"Why, my name is Haamdaanee.\""
+    },
+    {
+      "id": "s6-110",
+      "sceneId": "s6",
+      "text": "\"Not much,\" laughed Keejeepaa; \"your name is Sultan Daaraaee.\""
+    },
+    {
+      "id": "s6-111",
+      "sceneId": "s6",
+      "text": "\"Oh, is it?\" said his master. \"That's good.\""
+    },
+    {
+      "id": "s6-112",
+      "sceneId": "s6",
+      "text": "So they started forward again, and in a little while they saw soldiers running in every direction, and fourteen of these joined them to escort them. Then they saw ahead of them the sultan, and the vizirs, and the emirs, and the judges, and the great men of the city, coming to meet them."
+    },
+    {
+      "id": "s6-113",
+      "sceneId": "s6",
+      "text": "\"Now, then,\" said Keejeepaa, \"get off your horse and salute your father-in-law. That's him in the middle, wearing the sky-blue jacket.\""
+    },
+    {
+      "id": "s6-114",
+      "sceneId": "s6",
+      "text": "\"All right,\" said the man, jumping off his horse, which was then led by a soldier."
+    },
+    {
+      "id": "s6-115",
+      "sceneId": "s6",
+      "text": "So the two met, and the sultans shook hands, and kissed each other, and walked up to the palace together."
+    },
+    {
+      "id": "s6-116",
+      "sceneId": "s6",
+      "text": "Then they had a great feast, and made merry and talked until night, at which time Sultan Daaraaee and the gazelle were put into an inner room, with three soldiers at the door to guard and attend upon them."
+    },
+    {
+      "id": "s6-117",
+      "sceneId": "s6",
+      "text": "When the morning came, Keejeepaa went to the sultan and said: \"Master, we wish to attend to the business which brought us here. We want to marry your daughter, and the sooner the ceremony takes place, the better it will please the Sultan Daaraaee.\""
+    },
+    {
+      "id": "s6-118",
+      "sceneId": "s6",
+      "text": "\"Why, that's all right,\" said the sultan; \"the bride is ready. Let some one call the teacher, Mwaalee'moo, and tell him to come at once.\""
+    },
+    {
+      "id": "s6-119",
+      "sceneId": "s6",
+      "text": "When Mwaaleemoo arrived, the sultan said, \"See here, we want you to marry this gentleman to my daughter right away.\""
+    },
+    {
+      "id": "s6-120",
+      "sceneId": "s6",
+      "text": "\"All right; I'm ready,\" said the teacher. So they were married."
+    },
+    {
+      "id": "s6-121",
+      "sceneId": "s6",
+      "text": "Early the next morning the gazelle said to his master: \"Now I'm off on a journey. I shall be gone about a week; but however long I am gone, don't you leave the house till I return. Good-bye.\""
+    },
+    {
+      "id": "s6-122",
+      "sceneId": "s6",
+      "text": "Then he went to the real sultan and said: \"Good master, Sultan Daaraaee has ordered me to return to our town and put his house in order; he commands me to be here again in a week; if I do not return by that time, he will stay here until I come.\""
+    },
+    {
+      "id": "s6-123",
+      "sceneId": "s6",
+      "text": "The sultan asked him if he would not like to have some soldiers go with him; but the gazelle replied that he was quite competent to take care of himself, as his previous journeys had proved, and he preferred to go alone; so with mutual good wishes they parted."
+    },
+    {
+      "id": "s6-124",
+      "sceneId": "s6",
+      "text": "But Keejeepaa did not go in the direction of the old village. He struck off by another road through the forest, and after a time came to a very fine town, of large, handsome houses. As he went through the principal street, right to the far end, he was greatly astonished to observe that the town seemed to have no inhabitants, for he saw neither man, woman, nor child in all the place."
+    },
+    {
+      "id": "s6-125",
+      "sceneId": "s6",
+      "text": "At the end of the main street he came upon the largest and most beautiful house he had ever seen, built of sapphire, and turquoise, and costly marbles."
+    },
+    {
+      "id": "s6-126",
+      "sceneId": "s6",
+      "text": "\"Oh, my!\" said the gazelle; \"this house would just suit my master. I'll have to pluck up my courage and see whether this is deserted like the other houses in this mysterious town.\""
+    },
+    {
+      "id": "s6-127",
+      "sceneId": "s6",
+      "text": "So Keejeepaa knocked at the door, and called, \"Hullo, there!\" several times; but no one answered. And he said to himself: \"This is strange! If there were no one inside, the door would be fastened on the outside. Perhaps they are in another part of the house, or asleep. I'll call again, louder.\""
+    },
+    {
+      "id": "s6-128",
+      "sceneId": "s6",
+      "text": "So he called again, very loud and long, \"Hul-lo, th-e-re! Hul-lo!\" And directly an old woman inside answered, \"Who is that calling so loudly?\""
+    },
+    {
+      "id": "s6-129",
+      "sceneId": "s6",
+      "text": "\"It is I, your grandchild, good mistress,\" said Keejeepaa."
+    },
+    {
+      "id": "s6-130",
+      "sceneId": "s6",
+      "text": "\"If you are my grandchild,\" replied the old woman, \"go back to your home at once; don't come and die here, and bring me to my death also.\""
+    },
+    {
+      "id": "s6-131",
+      "sceneId": "s6",
+      "text": "\"Oh, come,\" said he, \"open the door, mistress; I have just a few words I wish to say to you.\""
+    },
+    {
+      "id": "s6-132",
+      "sceneId": "s6",
+      "text": "\"My dear grandson,\" she replied, \"the only reason why I do not open the door is because I fear to endanger both your life and my own.\""
+    },
+    {
+      "id": "s6-133",
+      "sceneId": "s6",
+      "text": "\"Oh, don't worry about that; I guess your life and mine are safe enough for a while. Open the door, anyhow, and hear the little I have to say.\""
+    },
+    {
+      "id": "s6-134",
+      "sceneId": "s6",
+      "text": "So the old woman opened the door."
+    },
+    {
+      "id": "s6-135",
+      "sceneId": "s6",
+      "text": "Then they exchanged salutations and compliments, after which she asked the gazelle, \"What's the news from your place, grandson?\""
+    },
+    {
+      "id": "s6-136",
+      "sceneId": "s6",
+      "text": "\"Oh, everything is going along pretty well,\" said he; \"what's the news around here?\""
+    },
+    {
+      "id": "s6-137",
+      "sceneId": "s6",
+      "text": "\"Ah!\" sighed the old creature; \"the news here is very bad. If you're looking for a place to die in, you've struck it here. I've not the slightest doubt you'll see all you want of death this very day.\""
+    },
+    {
+      "id": "s6-138",
+      "sceneId": "s6",
+      "text": "\"Huh!\" replied Keejeepaa, lightly; \"for a fly to die in honey is not bad for the fly, and doesn't injure the honey.\""
+    },
+    {
+      "id": "s6-139",
+      "sceneId": "s6",
+      "text": "\"It may be all very well for you to be easy about it,\" persisted the old person; \"but if people with swords and shields did not escape, how can a little thing like you avoid danger? I must again beg of you to go back to the place you came from. Your safety seems of more interest to me than it is to you.\""
+    },
+    {
+      "id": "s6-140",
+      "sceneId": "s6",
+      "text": "\"Well, you see, I can't go back just now; and besides, I want to find out more about this place. Who owns it?\""
+    },
+    {
+      "id": "s6-141",
+      "sceneId": "s6",
+      "text": "\"Ah, grandson, in this house are enormous wealth, numbers of people, hundreds of horses, and the owner is Neeo'ka Mkoo', the wonderfully big snake. He owns this whole town, also.\""
+    },
+    {
+      "id": "s6-142",
+      "sceneId": "s6",
+      "text": "\"Oho! Is that so?\" said Keejeepaa. \"Look here, old lady; can't you put me on to some plan of getting near this big snake, that I may kill him?\""
+    },
+    {
+      "id": "s6-143",
+      "sceneId": "s6",
+      "text": "\"Mercy!\" cried the old woman, in affright; \"don't talk like that. You've put my life in danger already, for I'm sure Neeoka Mkoo can hear what is said in this house, wherever he is. You see I'm a poor old woman, and I have been placed here, with those pots and pans, to cook for him. Well, when the big snake is coming, the wind begins to blow and the dust flies as it would do in a great storm. Then, when he arrives in the courtyard, he eats until he is full, and after that, goes inside there to drink water. When he has finished, he goes away again. This occurs every other day, just when the sun is overhead. I may add that Neeoka Mkoo has seven heads. Now, then, do you think yourself a match for him?\""
+    },
+    {
+      "id": "s6-144",
+      "sceneId": "s6",
+      "text": "\"Look here, mother,\" said the gazelle, \"don't you worry about me. Has this big snake a sword?\""
+    },
+    {
+      "id": "s6-145",
+      "sceneId": "s6",
+      "text": "\"He has. This is it,\" said she, taking from its peg a very keen and beautiful blade, and handing it to him; \"but what's the use in bothering about it? We are dead already.\""
+    },
+    {
+      "id": "s6-146",
+      "sceneId": "s6",
+      "text": "\"We shall see about that,\" said Keejeepaa."
+    },
+    {
+      "id": "s6-147",
+      "sceneId": "s6",
+      "text": "Just at that moment the wind began to blow, and the dust to fly, as if a great storm were approaching."
+    },
+    {
+      "id": "s6-148",
+      "sceneId": "s6",
+      "text": "\"Do you hear the great one coming?\" cried the old woman."
+    },
+    {
+      "id": "s6-149",
+      "sceneId": "s6",
+      "text": "\"Pshaw!\" said the gazelle; \"I'm a great one also--and I have the advantage of being on the inside. Two bulls can't live in one cattle-pen. Either he will live in this house, or I will.\""
+    },
+    {
+      "id": "s6-150",
+      "sceneId": "s6",
+      "text": "Notwithstanding the terror the old lady was in, she had to smile at the assurance of this little undersized gazelle, and repeated over again her account of the people with swords and shields who had been killed by the big snake."
+    },
+    {
+      "id": "s6-151",
+      "sceneId": "s6",
+      "text": "\"Ah, stop your gabbling!\" said the gazelle; \"you can't always judge a banana by its color or size. Wait and see, grandma.\""
+    },
+    {
+      "id": "s6-152",
+      "sceneId": "s6",
+      "text": "In a very little while the big snake, Neeoka Mkoo, came into the courtyard, and went around to all the pots and ate their contents. Then he came to the door."
+    },
+    {
+      "id": "s6-153",
+      "sceneId": "s6",
+      "text": "\"Hullo, old lady,\" said he; \"how is it I smell a new kind of odor inside there?\""
+    },
+    {
+      "id": "s6-154",
+      "sceneId": "s6",
+      "text": "\"Oh, that's nothing, good master,\" replied the old woman; \"I've been so busy around here lately I haven't had time to look after myself; but this morning I used some perfume, and that's what you smell.\""
+    },
+    {
+      "id": "s6-155",
+      "sceneId": "s6",
+      "text": "Now, Keejeepaa had drawn the sword, and was standing just inside the doorway; so, when the big snake put his head in, it was cut off so quickly that its owner did not know it was gone. When he put in his second head it was cut off with the same quickness; and, feeling a little irritation, he exclaimed, \"Who's inside there, scratching me?\" He then thrust in his third head, and that was cut off also."
+    },
+    {
+      "id": "s6-156",
+      "sceneId": "s6",
+      "text": "This continued until six heads had been disposed of, when Neeoka Mkoo unfolded his rings and lashed around so that the gazelle and the old woman could not see one another through the dust."
+    },
+    {
+      "id": "s6-157",
+      "sceneId": "s6",
+      "text": "Then the snake thrust in his seventh head, and the gazelle, crying: \"Now your time has come; you've climbed many trees, but this you can not climb,\" severed it, and immediately fell down in a fainting fit."
+    },
+    {
+      "id": "s6-158",
+      "sceneId": "s6",
+      "text": "Well, that old woman, although she was seventy-five years of age, jumped, and shouted, and laughed, like a girl of nine. Then she ran and got water, and sprinkled the gazelle, and turned him this way and that way, until at last he sneezed; which greatly pleased the old person, who fanned him and tended him until he was quite recovered."
+    },
+    {
+      "id": "s6-159",
+      "sceneId": "s6",
+      "text": "\"Oh, my!\" said she; \"who would have thought you could be a match for him, my grandson?\""
+    },
+    {
+      "id": "s6-160",
+      "sceneId": "s6",
+      "text": "\"Well, well,\" said Keejeepaa; \"that's all over. Now show me everything around this place.\""
+    },
+    {
+      "id": "s6-161",
+      "sceneId": "s6",
+      "text": "So she showed him everything, from top to bottom: store-rooms full of goods, chambers full of expensive foods, rooms containing handsome people who had been kept prisoners for a long time, slaves, and everything."
+    },
+    {
+      "id": "s6-162",
+      "sceneId": "s6",
+      "text": "Next he asked her if there was any person who was likely to lay claim to the place or make any trouble; and she answered: \"No one; everything here belongs to you.\""
+    },
+    {
+      "id": "s6-163",
+      "sceneId": "s6",
+      "text": "\"Very well, then,\" said he, \"you stay here and take care of these things until I bring my master. This place belongs to him now.\""
+    },
+    {
+      "id": "s6-164",
+      "sceneId": "s6",
+      "text": "Keejeepaa stayed three days examining the house, and said to himself: \"Well, when my master comes here he will be much pleased with what I have done for him, and he'll appreciate it after the life he's been accustomed to. As to his father-in-law, there is not a house in his town that can compare with this.\""
+    },
+    {
+      "id": "s6-165",
+      "sceneId": "s6",
+      "text": "On the fourth day he departed, and in due time arrived at the town where the sultan and his master lived. Then there were great rejoicings; the sultan being particularly pleased at his return, while his master felt as if he had received a new lease of life."
+    },
+    {
+      "id": "s6-166",
+      "sceneId": "s6",
+      "text": "After everything had settled down a little, Keejeepaa told his master he must be ready to go, with his wife, to his new home after four days. Then he went and told the sultan that Sultan Daaraaee desired to take his wife to his own town in four days; to which the sultan strongly objected; but the gazelle said it was his master's wish, and at last everything was arranged."
+    },
+    {
+      "id": "s6-167",
+      "sceneId": "s6",
+      "text": "On the day of the departure a great company assembled to escort Sultan Daaraaee and his bride. There were the bride's ladies-in-waiting, and slaves, and horsemen, and Keejeepaa leading them all."
+    },
+    {
+      "id": "s6-168",
+      "sceneId": "s6",
+      "text": "So they traveled three days, resting when the sun was overhead, and stopping each evening about five o'clock to eat and sleep; arising next morning at day-break, eating, and going forward again. And all this time the gazelle took very little rest, going all through the company, from the ladies to the slaves, and seeing that every one was well supplied with food and quite comfortable; therefore the entire company loved him and valued him like the apples of their eyes."
+    },
+    {
+      "id": "s6-169",
+      "sceneId": "s6",
+      "text": "On the fourth day, during the afternoon, many houses came into view, and some of the folks called Keejeepaa's attention to them. \"Certainly,\" said he; \"that is our town, and that house you see yonder is the palace of Sultan Daaraaee.\""
+    },
+    {
+      "id": "s6-170",
+      "sceneId": "s6",
+      "text": "So they went on, and all the company filed into the courtyard, while the gazelle and his master went into the house."
+    },
+    {
+      "id": "s6-171",
+      "sceneId": "s6",
+      "text": "When the old woman saw Keejeepaa, she began to dance, and shout, and carry on, just as she did when he killed Neeoka Mkoo, and taking up his foot she kissed it; but Keejeepaa said: \"Old lady, let me alone; the one to be made much of is this my master, Sultan Daaraaee. Kiss his feet; he has the first honors whenever he is present.\""
+    },
+    {
+      "id": "s6-172",
+      "sceneId": "s6",
+      "text": "The old woman excused herself for not knowing the master, and then Sultan Daaraaee and the gazelle went around on a tour of inspection. The sultan ordered all the prisoners to be released, the horses to be sent out to pasture, all the rooms to be swept, the furniture to be dusted, and, in the meantime, servants were busy preparing food. Then every one had apartments assigned to him, and all were satisfied."
+    },
+    {
+      "id": "s6-173",
+      "sceneId": "s6",
+      "text": "After they had remained there some time, the ladies who had accompanied the bride expressed a desire to return to their own homes. Keejeepaa begged them not to hurry away, but after a while they departed, each loaded with gifts by the gazelle, for whom they had a thousand times more affection than for his master. Then things settled down to their regular routine."
+    },
+    {
+      "id": "s6-174",
+      "sceneId": "s6",
+      "text": "One day the gazelle said to the old woman: \"I think the conduct of my master is very singular. I have done nothing but good for him all the time I have been with him. I came to this town and braved many dangers for him, and when all was over I gave everything to him. Yet he has never asked: 'How did you get this house? How did you get this town? Who is the owner of this house? Have you rented all these things, or have they been given you? What has become of the inhabitants of the place?' I don't understand him. And further: although I have done nothing but good for him, he has never done one good thing for me. Nothing here is really his. He never saw such a house or town as this since the day he was born, and he doesn't own anything of it. I believe the old folks were right when they said, 'If you want to do any person good, don't do too much; do him a little harm occasionally, and he'll think more of you.' However, I've done all I can now, and I'd like to see him make some little return.\""
+    },
+    {
+      "id": "s6-175",
+      "sceneId": "s6",
+      "text": "Next morning the old woman was awakened early by the gazelle calling, \"Mother! Mother!\" When she went to him she found he was sick in his stomach, feverish, and all his legs ached."
+    },
+    {
+      "id": "s6-176",
+      "sceneId": "s6",
+      "text": "\"Go,\" said he, \"and tell my master I am very ill.\""
+    },
+    {
+      "id": "s6-177",
+      "sceneId": "s6",
+      "text": "So she went upstairs and found the master and mistress sitting on a marble couch, covered with a striped silk scarf from India."
+    },
+    {
+      "id": "s6-178",
+      "sceneId": "s6",
+      "text": "\"Well,\" said the master, \"what do you want, old woman?\""
+    },
+    {
+      "id": "s6-179",
+      "sceneId": "s6",
+      "text": "\"Oh, my master,\" cried she, \"Keejeepaa is sick!\""
+    },
+    {
+      "id": "s6-180",
+      "sceneId": "s6",
+      "text": "The mistress started and said: \"Dear me! What is the matter with him?\""
+    },
+    {
+      "id": "s6-181",
+      "sceneId": "s6",
+      "text": "\"All his body pains him. He is sick all over.\""
+    },
+    {
+      "id": "s6-182",
+      "sceneId": "s6",
+      "text": "\"Oh, well,\" said the master, \"what can I do? Go and get some of that red millet, that is too common for our use, and make him some gruel.\""
+    },
+    {
+      "id": "s6-183",
+      "sceneId": "s6",
+      "text": "\"Gracious!\" exclaimed his wife, staring at him in amazement; \"do you wish her to feed our friend with stuff that a horse would not eat if he were ever so hungry? This is not right of you.\""
+    },
+    {
+      "id": "s6-184",
+      "sceneId": "s6",
+      "text": "\"Ah, get out!\" said he, \"you're crazy. We eat rice; isn't red millet good enough for a gazelle that cost only a dime?\""
+    },
+    {
+      "id": "s6-185",
+      "sceneId": "s6",
+      "text": "\"Oh, but he is no ordinary gazelle. He should be as dear to you as the apple of your eye. If sand got in your eye it would trouble you.\""
+    },
+    {
+      "id": "s6-186",
+      "sceneId": "s6",
+      "text": "\"You talk too much,\" returned her husband; then, turning to the old woman, he said, \"Go and do as I told you.\""
+    },
+    {
+      "id": "s6-187",
+      "sceneId": "s6",
+      "text": "So the old woman went downstairs, and when she saw the gazelle, she began to cry, and say, \"Oh, dear! oh, dear!\""
+    },
+    {
+      "id": "s6-188",
+      "sceneId": "s6",
+      "text": "It was a long while before the gazelle could persuade her to tell him what had passed upstairs, but at last she told him all. When he had heard it, he said: \"Did he really tell you to make me red millet gruel?\""
+    },
+    {
+      "id": "s6-189",
+      "sceneId": "s6",
+      "text": "\"Ah,\" cried she, \"do you think I would say such a thing if it were not so?\""
+    },
+    {
+      "id": "s6-190",
+      "sceneId": "s6",
+      "text": "\"Well,\" said Keejeepaa, \"I believe what the old folks said was right. However, we'll give him another chance. Go up to him again, and tell him I am very sick, and that I can't eat that gruel.\""
+    },
+    {
+      "id": "s6-191",
+      "sceneId": "s6",
+      "text": "So she went upstairs, and found the master and mistress sitting by the window, drinking coffee."
+    },
+    {
+      "id": "s6-192",
+      "sceneId": "s6",
+      "text": "The master, looking around and seeing her, said: \"What's the matter now, old woman?\""
+    },
+    {
+      "id": "s6-193",
+      "sceneId": "s6",
+      "text": "And she said: \"Master, I am sent by Keejeepaa. He is very sick indeed, and has not taken the gruel you told me to make for him.\""
+    },
+    {
+      "id": "s6-194",
+      "sceneId": "s6",
+      "text": "\"Oh, bother!\" he exclaimed. \"Hold your tongue, and keep your feet still, and shut your eyes, and stop your ears with wax; then, if that gazelle tells you to come up here, say that your legs are stiff; and if he tells you to listen, say your ears are deaf; and if he tells you to look, say your sight has failed you; and if he wants you to talk, tell him your tongue is paralyzed.\""
+    },
+    {
+      "id": "s6-195",
+      "sceneId": "s6",
+      "text": "When the old woman heard these words, she stood and stared, and was unable to move. As for his wife, her face became sad, and the tears began to start from her eyes; observing which, her husband said, sharply, \"What's the matter with you, sultan's daughter?\""
+    },
+    {
+      "id": "s6-196",
+      "sceneId": "s6",
+      "text": "The lady replied, \"A man's madness is his undoing.\""
+    },
+    {
+      "id": "s6-197",
+      "sceneId": "s6",
+      "text": "\"Why do you say that, mistress?\" he inquired."
+    },
+    {
+      "id": "s6-198",
+      "sceneId": "s6",
+      "text": "\"Ah,\" said she, \"I am grieved, my husband, at your treatment of Keejeepaa. Whenever I say a good word for the gazelle you dislike to hear it. I pity you that your understanding is gone.\""
+    },
+    {
+      "id": "s6-199",
+      "sceneId": "s6",
+      "text": "\"What do you mean by talking in that manner to me?\" he blustered."
+    },
+    {
+      "id": "s6-200",
+      "sceneId": "s6",
+      "text": "\"Why, advice is a blessing, if properly taken. A husband should advise with his wife, and a wife with her husband; then they are both blessed.\""
+    },
+    {
+      "id": "s6-201",
+      "sceneId": "s6",
+      "text": "\"Oh, stop,\" said her husband, impatiently; \"it's evident you've lost your senses. You should be chained up.\" Then he said to the old woman: \"Never mind her talk; and as to this gazelle, tell him to stop bothering me and putting on style, as if he were the sultan. I can't eat, I can't drink, I can't sleep, because of that gazelle worrying me with his messages. First, the gazelle is sick; then, the gazelle doesn't like what he gets to eat. Confound it! If he likes to eat, let him eat; if he doesn't like to eat, let him die and be out of the way. My mother is dead, and my father is dead, and I still live and eat; shall I be put out of my way by a gazelle, that I bought for a dime, telling me he wants this thing or that thing? Go and tell him to learn how to behave himself toward his superiors.\""
+    },
+    {
+      "id": "s6-202",
+      "sceneId": "s6",
+      "text": "When the old woman went downstairs, she found the gazelle was bleeding at the mouth, and in a very bad way. All she could say was, \"My son, the good you did is all lost; but be patient.\""
+    },
+    {
+      "id": "s6-203",
+      "sceneId": "s6",
+      "text": "And the gazelle wept with the old woman when she told him all that had passed, and he said, \"Mother, I am dying, not only from sickness, but from shame and anger at this man's ingratitude.\""
+    },
+    {
+      "id": "s6-204",
+      "sceneId": "s6",
+      "text": "After a while Keejeepaa told the old woman to go and tell the master that he believed he was dying. When she went upstairs she found Daaraaee chewing sugar-cane, and she said to him, \"Master, the gazelle is worse; we think him nearer to dying than getting well.\""
+    },
+    {
+      "id": "s6-205",
+      "sceneId": "s6",
+      "text": "To which he answered: \"Haven't I told you often enough not to bother me?\""
+    },
+    {
+      "id": "s6-206",
+      "sceneId": "s6",
+      "text": "Then his wife said: \"Oh, husband, won't you go down and see the poor gazelle? If you don't like to go, let me go and see him. He never gets a single good thing from you.\""
+    },
+    {
+      "id": "s6-207",
+      "sceneId": "s6",
+      "text": "But he turned to the old woman and said, \"Go and tell that nuisance of a gazelle to die eleven times if he chooses to.\""
+    },
+    {
+      "id": "s6-208",
+      "sceneId": "s6",
+      "text": "\"Now, husband,\" persisted the lady, \"what has Keejeepaa done to you? Has he done you any wrong? Such words as yours people use to their enemies only. Surely the gazelle is not your enemy. All the people who know him, great and lowly, love him dearly, and they will think it very wrong of you if you neglect him. Now, do be kind to him, Sultan Daaraaee.\""
+    },
+    {
+      "id": "s6-209",
+      "sceneId": "s6",
+      "text": "But he only repeated his assertion that she had lost her wits, and would have nothing further of argument."
+    },
+    {
+      "id": "s6-210",
+      "sceneId": "s6",
+      "text": "So the old woman went down and found the gazelle worse than ever."
+    },
+    {
+      "id": "s6-211",
+      "sceneId": "s6",
+      "text": "In the meantime Sultan Daaraaee's wife managed to give some rice to a servant to cook for the gazelle, and also sent him a soft shawl to cover him and a pillow to lie upon. She also sent him a message that if he wished, she would have her father's best physicians attend him."
+    },
+    {
+      "id": "s6-212",
+      "sceneId": "s6",
+      "text": "All this was too late, however, for just as these good things arrived, Keejeepaa died."
+    },
+    {
+      "id": "s6-213",
+      "sceneId": "s6",
+      "text": "When the people heard he was dead, they went running around crying and having an awful time; and when Sultan Daaraaee found out what all the commotion was about he was very indignant, remarking, \"Why, you are making as much fuss as if I were dead, and all over a gazelle that I bought for a dime!\""
+    },
+    {
+      "id": "s6-214",
+      "sceneId": "s6",
+      "text": "But his wife said: \"Husband, it was this gazelle that came to ask me of my father, it was he who brought me from my father's, and it was to him I was given by my father. He gave you everything good, and you do not possess a thing that he did not procure for you. He did everything he could to help you, and you not only returned him unkindness, but now he is dead you have ordered people to throw him into the well. Let us alone, that we may weep.\""
+    },
+    {
+      "id": "s6-215",
+      "sceneId": "s6",
+      "text": "But the gazelle was taken and thrown into the well."
+    },
+    {
+      "id": "s6-216",
+      "sceneId": "s6",
+      "text": "Then the lady wrote a letter telling her father to come to her directly, and despatched it by trusty messengers; upon the receipt of which the sultan and his attendants started hurriedly to visit his daughter."
+    },
+    {
+      "id": "s6-217",
+      "sceneId": "s6",
+      "text": "When they arrived, and heard that the gazelle was dead and had been thrown into the well, they wept very much; and the sultan, and the vizir, and the judges, and the rich chief men, all went down into the well and brought up the body of Keejeepaa, and took it away with them and buried it."
+    },
+    {
+      "id": "s6-218",
+      "sceneId": "s6",
+      "text": "Now, that night the lady dreamt that she was at home at her father's house; and when dawn came she awoke and found she was in her own bed in her own town again."
+    },
+    {
+      "id": "s6-219",
+      "sceneId": "s6",
+      "text": "And her husband dreamed that he was on the dust heap, scratching; and when he awoke there he was, with both hands full of dust, looking for grains of millet. Staring wildly he looked around to the right and left, saying: \"Oh, who has played this trick on me? How did I get back here, I wonder?\""
+    },
+    {
+      "id": "s6-220",
+      "sceneId": "s6",
+      "text": "Just then the children going along, and seeing him, laughed and hooted at him, calling out: \"Hullo, Haamdaanee, where have you been? Where do you come from? We thought you were dead long ago.\""
+    },
+    {
+      "id": "s6-221",
+      "sceneId": "s6",
+      "text": "So the sultan's daughter lived in happiness with her people until the end, and that beggar-man continued to scratch for grains of millet in the dust heap until he died."
+    },
+    {
+      "id": "s6-222",
+      "sceneId": "s6",
+      "text": "If this story is good, the goodness belongs to all; if it is bad, the badness belongs only to him who told it."
+    },
+    {
+      "id": "s7-0",
+      "sceneId": "s7",
+      "text": "Sultan Maaj'noon had seven sons and a big cat, of all of whom he was very proud."
+    },
+    {
+      "id": "s7-1",
+      "sceneId": "s7",
+      "text": "Everything went well until one day the cat went and caught a calf. When they told the sultan he said, \"Well, the cat is mine, and the calf is mine.\" So they said, \"Oh, all right, master,\" and let the matter drop."
+    },
+    {
+      "id": "s7-2",
+      "sceneId": "s7",
+      "text": "A few days later the cat caught a goat; and when they told the sultan he said, \"The cat is mine, and the goat is mine;\" and so that settled it again."
+    },
+    {
+      "id": "s7-3",
+      "sceneId": "s7",
+      "text": "Two days more passed, and the cat caught a cow. They told the sultan, and he shut them up with \"My cat, and my cow.\""
+    },
+    {
+      "id": "s7-4",
+      "sceneId": "s7",
+      "text": "After another two days the cat caught a donkey; same result."
+    },
+    {
+      "id": "s7-5",
+      "sceneId": "s7",
+      "text": "Next it caught a horse; same result."
+    },
+    {
+      "id": "s7-6",
+      "sceneId": "s7",
+      "text": "The next victim was a camel; and when they told the sultan he said: \"What's the matter with you folks? It was my cat, and my camel. I believe you don't like my cat, and want it killed, bringing me tales about it every day. Let it eat whatever it wants to.\""
+    },
+    {
+      "id": "s7-7",
+      "sceneId": "s7",
+      "text": "In a very short time it caught a child, and then a full-grown man; but each time the sultan remarked that both the cat and its victim were his, and thought no more of it."
+    },
+    {
+      "id": "s7-8",
+      "sceneId": "s7",
+      "text": "Meantime the cat grew bolder, and hung around a low, open place near the town, pouncing on people going for water, or animals out at pasture, and eating them."
+    },
+    {
+      "id": "s7-9",
+      "sceneId": "s7",
+      "text": "At last some of the people plucked up courage; and, going to the sultan, said: \"How is this, master? As you are our sultan you are our protector,--or ought to be,--yet you have allowed this cat to do as it pleases, and now it lives just out of town there, and kills everything living that goes that way, while at night it comes into town and does the same thing. Now, what on earth are we to do?\""
+    },
+    {
+      "id": "s7-10",
+      "sceneId": "s7",
+      "text": "But Maajnoon only replied: \"I really believe you hate my cat. I suppose you want me to kill it; but I shall do no such thing. Everything it eats is mine.\""
+    },
+    {
+      "id": "s7-11",
+      "sceneId": "s7",
+      "text": "Of course the folks were astonished at this result of the interview, and, as no one dared to kill the cat, they all had to remove from the vicinity where it lived. But this did not mend matters, because, when it found no one came that way, it shifted its quarters likewise."
+    },
+    {
+      "id": "s7-12",
+      "sceneId": "s7",
+      "text": "So complaints continued to pour in, until at last Sultan Maajnoon gave orders that if any one came to make accusations against the cat, he was to be informed that the master could not be seen."
+    },
+    {
+      "id": "s7-13",
+      "sceneId": "s7",
+      "text": "When things got so that people neither let their animals out nor went out themselves, the cat went farther into the country, killing and eating cattle, and fowls, and everything that came its way."
+    },
+    {
+      "id": "s7-14",
+      "sceneId": "s7",
+      "text": "One day the sultan said to six of his sons, \"I'm going to look at the country to-day; come along with me.\""
+    },
+    {
+      "id": "s7-15",
+      "sceneId": "s7",
+      "text": "The seventh son was considered too young to go around anywhere, and was always left at home with the women folk, being called by his brothers Mkaa'ah Jeecho'nee, which means Mr. Sit-in-the-kitchen."
+    },
+    {
+      "id": "s7-16",
+      "sceneId": "s7",
+      "text": "Well, they went, and presently came to a thicket. The father was in front and the six sons following him, when the cat jumped out and killed three of the latter."
+    },
+    {
+      "id": "s7-17",
+      "sceneId": "s7",
+      "text": "The attendants shouted, \"The cat! the cat!\" and the soldiers asked permission to search for and kill it, which the sultan readily granted, saying: \"This is not a cat, it is a noon'dah. It has taken from me my own sons.\""
+    },
+    {
+      "id": "s7-18",
+      "sceneId": "s7",
+      "text": "Now, nobody had ever seen a noondah, but they all knew it was a terrible beast that could kill and eat all other living things."
+    },
+    {
+      "id": "s7-19",
+      "sceneId": "s7",
+      "text": "When the sultan began to bemoan the loss of his sons, some of those who heard him said: \"Ah, master, this noondah does not select his prey. He doesn't say: 'This is my master's son, I'll leave him alone,' or, 'This is my master's wife, I won't eat her.' When we told you what the cat had done, you always said it was your cat, and what it ate was yours, and now it has killed your sons, and we don't believe it would hesitate to eat even you.\""
+    },
+    {
+      "id": "s7-20",
+      "sceneId": "s7",
+      "text": "And he said, \"I fear you are right.\""
+    },
+    {
+      "id": "s7-21",
+      "sceneId": "s7",
+      "text": "As for the soldiers who tried to get the cat, some were killed and the remainder ran away, and the sultan and his living sons took the dead bodies home and buried them."
+    },
+    {
+      "id": "s7-22",
+      "sceneId": "s7",
+      "text": "Now when Mkaaah Jeechonee, the seventh son, heard that his brothers had been killed by the noondah, he said to his mother, \"I, too, will go, that it may kill me as well as my brothers, or I will kill it.\""
+    },
+    {
+      "id": "s7-23",
+      "sceneId": "s7",
+      "text": "But his mother said: \"My son, I do not like to have you go. Those three are already dead; and if you are killed also, will not that be one wound upon another to my heart?\""
+    },
+    {
+      "id": "s7-24",
+      "sceneId": "s7",
+      "text": "\"Nevertheless,\" said he, \"I can not help going; but do not tell my father.\""
+    },
+    {
+      "id": "s7-25",
+      "sceneId": "s7",
+      "text": "So his mother made him some cakes, and sent some attendants with him; and he took a great spear, as sharp as a razor, and a sword, bade her farewell, and departed."
+    },
+    {
+      "id": "s7-26",
+      "sceneId": "s7",
+      "text": "As he had always been left at home, he had no very clear idea what he was going to hunt for; so he had not gone far beyond the suburbs, when, seeing a very large dog, he concluded that this was the animal he was after; so he killed it, tied a rope to it, and dragged it home, singing,"
+    },
+    {
+      "id": "s7-27",
+      "sceneId": "s7",
+      "text": "\"Oh, mother, I have killed / The noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-28",
+      "sceneId": "s7",
+      "text": "When his mother, who was upstairs, heard him, she looked out of the window, and, seeing what he had brought, said, \"My son, this is not the noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-29",
+      "sceneId": "s7",
+      "text": "So he left the carcass outside and went in to talk about it, and his mother said, \"My dear boy, the noondah is a much larger animal than that; but if I were you, I'd give the business up and stay at home.\""
+    },
+    {
+      "id": "s7-30",
+      "sceneId": "s7",
+      "text": "\"No, indeed,\" he exclaimed; \"no staying at home for me until I have met and fought the noondah.\""
+    },
+    {
+      "id": "s7-31",
+      "sceneId": "s7",
+      "text": "So he set out again, and went a great deal farther than he had gone on the former day. Presently he saw a civet cat, and, believing it to be the animal he was in search of, he killed it, bound it, and dragged it home, singing,"
+    },
+    {
+      "id": "s7-32",
+      "sceneId": "s7",
+      "text": "\"Oh, mother, I have killed / The noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-33",
+      "sceneId": "s7",
+      "text": "When his mother saw the civet cat, she said, \"My son, this is not the noondah, eater of the people.\" And he threw it away."
+    },
+    {
+      "id": "s7-34",
+      "sceneId": "s7",
+      "text": "Again his mother entreated him to stay at home, but he would not listen to her, and started off again."
+    },
+    {
+      "id": "s7-35",
+      "sceneId": "s7",
+      "text": "This time he went away off into the forest, and seeing a bigger cat than the last one, he killed it, bound it, and dragged it home, singing,"
+    },
+    {
+      "id": "s7-36",
+      "sceneId": "s7",
+      "text": "\"Oh, mother, I have killed / The noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-37",
+      "sceneId": "s7",
+      "text": "But directly his mother saw it, she had to tell him, as before, \"My son, this is not the noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-38",
+      "sceneId": "s7",
+      "text": "He was, of course, very much troubled at this; and his mother said, \"Now, where do you expect to find this noondah? You don't know where it is, and you don't know what it looks like. You'll get sick over this; you're not looking so well now as you did. Come, stay at home.\""
+    },
+    {
+      "id": "s7-39",
+      "sceneId": "s7",
+      "text": "But he said: \"There are three things, one of which I shall do: I shall die; I shall find the noondah and kill it; or I shall return home unsuccessful. In any case, I'm off again.\""
+    },
+    {
+      "id": "s7-40",
+      "sceneId": "s7",
+      "text": "This time he went farther than before, saw a zebra, killed it, bound it, and dragged it home, singing,"
+    },
+    {
+      "id": "s7-41",
+      "sceneId": "s7",
+      "text": "\"Oh, mother, I have killed / The noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-42",
+      "sceneId": "s7",
+      "text": "Of course his mother had to tell him, once again, \"My son, this is not the noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-43",
+      "sceneId": "s7",
+      "text": "After a good deal of argument, in which his mother's persuasion, as usual, was of no avail, he went off again, going farther than ever, when he caught a giraffe; and when he had killed it he said: \"Well, this time I've been successful. This must be the noondah.\" So he dragged it home, singing,"
+    },
+    {
+      "id": "s7-44",
+      "sceneId": "s7",
+      "text": "\"Oh, mother, I have killed / The noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-45",
+      "sceneId": "s7",
+      "text": "Again his mother had to assure him, \"My son, this is not the noondah, eater of the people.\" She then pointed out to him that his brothers were not running about hunting for the noondah, but staying at home attending to their own business. But, remarking that all brothers were not alike, he expressed his determination to stick to his task until it came to a successful termination, and went off again, a still greater distance than before."
+    },
+    {
+      "id": "s7-46",
+      "sceneId": "s7",
+      "text": "While going through the wilderness he espied a rhinoceros asleep under a tree, and turning to his attendants he exclaimed, \"At last I see the noondah.\""
+    },
+    {
+      "id": "s7-47",
+      "sceneId": "s7",
+      "text": "\"Where, master?\" they all cried, eagerly."
+    },
+    {
+      "id": "s7-48",
+      "sceneId": "s7",
+      "text": "\"There, under the tree.\""
+    },
+    {
+      "id": "s7-49",
+      "sceneId": "s7",
+      "text": "\"Oh-h! What shall we do?\" they asked."
+    },
+    {
+      "id": "s7-50",
+      "sceneId": "s7",
+      "text": "And he answered: \"First of all, let us eat our fill, then we will attack it. We have found it in a good place, though if it kills us, we can't help it.\""
+    },
+    {
+      "id": "s7-51",
+      "sceneId": "s7",
+      "text": "So they all took out their arrowroot cakes and ate till they were satisfied."
+    },
+    {
+      "id": "s7-52",
+      "sceneId": "s7",
+      "text": "Then Mkaaah Jeechonee said, \"Each of you take two guns; lay one beside you and take the other in your hands, and at the proper time let us all fire at once.\""
+    },
+    {
+      "id": "s7-53",
+      "sceneId": "s7",
+      "text": "And they said, \"All right, master.\""
+    },
+    {
+      "id": "s7-54",
+      "sceneId": "s7",
+      "text": "So they crept cautiously through the bushes and got around to the other side of the tree, at the back of the rhinoceros; then they closed up till they were quite near it, and all fired together. The beast jumped up, ran a little way, and then fell down dead."
+    },
+    {
+      "id": "s7-55",
+      "sceneId": "s7",
+      "text": "They bound it, and dragged it for two whole days, until they reached the town, when Mkaaah Jeechonee began singing,"
+    },
+    {
+      "id": "s7-56",
+      "sceneId": "s7",
+      "text": "\"Oh, mother, I have killed / The noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-57",
+      "sceneId": "s7",
+      "text": "But he received the same answer from his mother: \"My son, this is not the noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-58",
+      "sceneId": "s7",
+      "text": "And many persons came and looked at the rhinoceros, and felt very sorry for the young man. As for his father and mother, they both begged of him to give up, his father offering to give him anything he possessed if he would only stay at home. But he said, \"I don't hear what you are saying; good-bye,\" and was off again."
+    },
+    {
+      "id": "s7-59",
+      "sceneId": "s7",
+      "text": "This time he still further increased the distance from his home, and at last he saw an elephant asleep at noon in the forest. Thereupon he said to his attendants, \"Now we have found the noondah.\""
+    },
+    {
+      "id": "s7-60",
+      "sceneId": "s7",
+      "text": "\"Ah, where is he?\" said they."
+    },
+    {
+      "id": "s7-61",
+      "sceneId": "s7",
+      "text": "\"Yonder, in the shade. Do you see it?\""
+    },
+    {
+      "id": "s7-62",
+      "sceneId": "s7",
+      "text": "\"Oh, yes, master; shall we march up to it?\""
+    },
+    {
+      "id": "s7-63",
+      "sceneId": "s7",
+      "text": "\"If we march up to it, and it is looking this way, it will come at us, and if it does that, some of us will be killed. I think we had best let one man steal up close and see which way its face is turned.\""
+    },
+    {
+      "id": "s7-64",
+      "sceneId": "s7",
+      "text": "As every one thought this was a good idea, a slave named Keerobo'to crept on his hands and knees, and had a good look at it. When he returned in the same manner, his master asked: \"Well, what's the news? Is it the noondah?\""
+    },
+    {
+      "id": "s7-65",
+      "sceneId": "s7",
+      "text": "\"I do not know,\" replied Keeroboto; \"but I think there is very little doubt that it is. It is broad, with a very big head, and, goodness, I never saw such large ears!\""
+    },
+    {
+      "id": "s7-66",
+      "sceneId": "s7",
+      "text": "\"All right,\" said Mkaaah Jeechonee; \"let us eat, and then go for it.\""
+    },
+    {
+      "id": "s7-67",
+      "sceneId": "s7",
+      "text": "So they took their arrowroot cakes, and their molasses cakes, and ate until they were quite full."
+    },
+    {
+      "id": "s7-68",
+      "sceneId": "s7",
+      "text": "Then the youth said to them: \"My people, to-day is perhaps the last we shall ever see; so we will take leave of each other. Those who are to escape will escape, and those who are to die will die; but if I die, let those who escape tell my mother and father not to grieve for me.\""
+    },
+    {
+      "id": "s7-69",
+      "sceneId": "s7",
+      "text": "But his attendants said, \"Oh, come along, master; none of us will die, please God.\""
+    },
+    {
+      "id": "s7-70",
+      "sceneId": "s7",
+      "text": "So they went on their hands and knees till they were close up, and then they said to Mkaaah Jeechonee, \"Give us your plan, master;\" but he said, \"There is no plan, only let all fire at once.\""
+    },
+    {
+      "id": "s7-71",
+      "sceneId": "s7",
+      "text": "Well, they fired all at once, and immediately the elephant jumped up and charged at them. Then such a helter-skelter flight as there was! They threw away their guns and everything they carried, and made for the trees, which they climbed with surprising alacrity."
+    },
+    {
+      "id": "s7-72",
+      "sceneId": "s7",
+      "text": "As to the elephant, he kept straight ahead until he fell down some distance away."
+    },
+    {
+      "id": "s7-73",
+      "sceneId": "s7",
+      "text": "They all remained in the trees from three until six o'clock in the morning, without food and without clothing."
+    },
+    {
+      "id": "s7-74",
+      "sceneId": "s7",
+      "text": "The young man sat in his tree and wept bitterly, saying, \"I don't exactly know what death is, but it seems to me this must be very like it.\" As no one could see any one else, he did not know where his attendants were, and though he wished to come down from the tree, he thought, \"Maybe the noondah is down below there, and will eat me.\""
+    },
+    {
+      "id": "s7-75",
+      "sceneId": "s7",
+      "text": "Each attendant was in exactly the same fix, wishing to come down, but afraid the noondah was waiting to eat him."
+    },
+    {
+      "id": "s7-76",
+      "sceneId": "s7",
+      "text": "Keeroboto had seen the elephant fall, but was afraid to get down by himself, saying, \"Perhaps, though it has fallen down, it is not dead.\" But presently he saw a dog go up to it and smell it, and then he was sure it was dead. Then he got down from the tree as fast as he could and gave a signal cry, which was answered; but not being sure from whence the answer came, he repeated the cry, listening intently. When it was answered he went straight to the place from which the sound proceeded, and found two of his companions in one tree. To them he said, \"Come on; get down; the noondah is dead.\" So they got down quickly and hunted around until they found their master. When they told him the news, he came down also; and after a little the attendants had all gathered together and had picked up their guns and their clothes, and were all right again. But they were all weak and hungry, so they rested and ate some food, after which they went to examine their prize."
+    },
+    {
+      "id": "s7-77",
+      "sceneId": "s7",
+      "text": "As soon as Mkaaah Jeechonee saw it he said, \"Ah, this is the noondah! This is it! This is it!\" And they all agreed that it was it."
+    },
+    {
+      "id": "s7-78",
+      "sceneId": "s7",
+      "text": "So they dragged the elephant three days to their town, and then the youth began singing,"
+    },
+    {
+      "id": "s7-79",
+      "sceneId": "s7",
+      "text": "\"Oh, mother, this is he, / The noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-80",
+      "sceneId": "s7",
+      "text": "He was, naturally, quite upset when his mother replied, \"My son, this is not the noondah, eater of the people.\" She further said: \"Poor boy! what trouble you have been through. All the people are astonished that one so young should have such a great understanding!\""
+    },
+    {
+      "id": "s7-81",
+      "sceneId": "s7",
+      "text": "Then his father and mother began their entreaties again, and finally it was agreed that this next trip should be his last, whatever the result might be."
+    },
+    {
+      "id": "s7-82",
+      "sceneId": "s7",
+      "text": "Well, they started off again, and went on and on, past the forest, until they came to a very high mountain, at the foot of which they camped for the night."
+    },
+    {
+      "id": "s7-83",
+      "sceneId": "s7",
+      "text": "In the morning they cooked their rice and ate it, and then Mkaaah Jeechonee said: \"Let us now climb the mountain, and look all over the country from its peak.\" And they went and they went, until after a long, weary while, they reached the top, where they sat down to rest and form their plans."
+    },
+    {
+      "id": "s7-84",
+      "sceneId": "s7",
+      "text": "Now, one of the attendants, named Shindaa'no, while walking about, cast his eyes down the side of the mountain, and suddenly saw a great beast about half way down; but he could not make out its appearance distinctly, on account of the distance and the trees. Calling his master, he pointed it out to him, and something in Mkaaah Jeechonee's heart told him that it was the noondah. To make sure, however, he took his gun and his spear and went partly down the mountain to get a better view."
+    },
+    {
+      "id": "s7-85",
+      "sceneId": "s7",
+      "text": "\"Ah,\" said he, \"this must be the noondah. My mother told me its ears were small, and those are small; she told me the noondah is broad and short, and so is this; she said it has two blotches, like a civet cat, and there are the blotches; she told me the tail is thick, and there is a thick tail. It must be the noondah.\""
+    },
+    {
+      "id": "s7-86",
+      "sceneId": "s7",
+      "text": "Then he went back to his attendants and bade them eat heartily, which they did. Next he told them to leave every unnecessary thing behind, because if they had to run they would be better without encumbrance, and if they were victorious they could return for their goods."
+    },
+    {
+      "id": "s7-87",
+      "sceneId": "s7",
+      "text": "When they had made all their arrangements they started down the mountain, but when they had got about half way down Keeroboto and Shindaano were afraid. Then the youth said to them: \"Oh, let's go on; don't be afraid. We all have to live and die. What are you frightened about?\" So, thus encouraged, they went on."
+    },
+    {
+      "id": "s7-88",
+      "sceneId": "s7",
+      "text": "When they came near the place, Mkaaah Jeechonee ordered them to take off all their clothing except one piece, and to place that tightly on their bodies, so that if they had to run they would not be caught by thorns or branches."
+    },
+    {
+      "id": "s7-89",
+      "sceneId": "s7",
+      "text": "So when they came close to the beast, they saw that it was asleep, and all agreed that it was the noondah."
+    },
+    {
+      "id": "s7-90",
+      "sceneId": "s7",
+      "text": "Then the young man said, \"Now the sun is setting, shall we fire at it, or let be till morning?\""
+    },
+    {
+      "id": "s7-91",
+      "sceneId": "s7",
+      "text": "And they all wished to fire at once, and see what the result would be without further tax on their nerves; therefore they arranged that they should all fire together."
+    },
+    {
+      "id": "s7-92",
+      "sceneId": "s7",
+      "text": "They all crept up close, and when the master gave the word, they discharged their guns together. The noondah did not move; that one dose had been sufficient. Nevertheless, they all turned and scampered up to the top of the mountain. There they ate and rested for the night."
+    },
+    {
+      "id": "s7-93",
+      "sceneId": "s7",
+      "text": "In the morning they ate their rice, and then went down to see how matters were, when they found the beast lying dead."
+    },
+    {
+      "id": "s7-94",
+      "sceneId": "s7",
+      "text": "After resting and eating, they started homeward, dragging the dead beast with them. On the fourth day it began to give indications of decay, and the attendants wished to abandon it; but Mkaaah Jeechonee said they would continue to drag it if there was only one bone left."
+    },
+    {
+      "id": "s7-95",
+      "sceneId": "s7",
+      "text": "When they came near the town he began to sing,"
+    },
+    {
+      "id": "s7-96",
+      "sceneId": "s7",
+      "text": "\"Mother, mother, I have come / From the evil spirits, home. / Mother, listen while I sing; / While I tell you what I bring. / Oh, mother, I have killed / The noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-97",
+      "sceneId": "s7",
+      "text": "And when his mother looked out, she cried, \"My son, this is the noondah, eater of the people.\""
+    },
+    {
+      "id": "s7-98",
+      "sceneId": "s7",
+      "text": "Then all the people came out to welcome him, and his father was overcome with joy, and loaded him with honors, and procured him a rich and beautiful wife; and when he died Mkaaah Jeechonee became sultan, and lived long and happily, beloved by all the people."
+    },
+    {
+      "id": "s8-0",
+      "sceneId": "s8",
+      "text": "There was once a sultan who had three little sons, and no one seemed to be able to teach them anything; which greatly grieved both the sultan and his wife."
+    },
+    {
+      "id": "s8-1",
+      "sceneId": "s8",
+      "text": "One day a magician came to the sultan and said, \"If I take your three boys and teach them to read and write, and make great scholars of them, what will you give me?\""
+    },
+    {
+      "id": "s8-2",
+      "sceneId": "s8",
+      "text": "And the sultan said, \"I will give you half of my property.\""
+    },
+    {
+      "id": "s8-3",
+      "sceneId": "s8",
+      "text": "\"No,\" said the magician; \"that won't do.\""
+    },
+    {
+      "id": "s8-4",
+      "sceneId": "s8",
+      "text": "\"I'll give you half of the towns I own.\""
+    },
+    {
+      "id": "s8-5",
+      "sceneId": "s8",
+      "text": "\"No; that will not satisfy me.\""
+    },
+    {
+      "id": "s8-6",
+      "sceneId": "s8",
+      "text": "\"What do you want, then?\""
+    },
+    {
+      "id": "s8-7",
+      "sceneId": "s8",
+      "text": "\"When I have made them scholars and bring them back to you, choose two of them for yourself and give me the third; for I want to have a companion of my own.\""
+    },
+    {
+      "id": "s8-8",
+      "sceneId": "s8",
+      "text": "\"Agreed,\" said the sultan."
+    },
+    {
+      "id": "s8-9",
+      "sceneId": "s8",
+      "text": "So the magician took them away, and in a remarkably short time taught them to read, and to make letters, and made them quite good scholars. Then he took them back to the sultan and said: \"Here are the children. They are all equally good scholars. Choose.\""
+    },
+    {
+      "id": "s8-10",
+      "sceneId": "s8",
+      "text": "So the sultan took the two he preferred, and the magician went away with the third, whose name was Keejaa'naa, to his own house, which was a very large one."
+    },
+    {
+      "id": "s8-11",
+      "sceneId": "s8",
+      "text": "When they arrived, Mchaa'wee, the magician, gave the youth all the keys, saying, \"Open whatever you wish to.\" Then he told him that he was his father, and that he was going away for a month."
+    },
+    {
+      "id": "s8-12",
+      "sceneId": "s8",
+      "text": "When he was gone, Keejaanaa took the keys and went to examine the house. He opened one door, and saw a room full of liquid gold. He put his finger in, and the gold stuck to it, and, wipe and rub as he would, the gold would not come off; so he wrapped a piece of rag around it, and when his supposed father came home and saw the rag, and asked him what he had been doing to his finger, he was afraid to tell him the truth, so he said that he had cut it."
+    },
+    {
+      "id": "s8-13",
+      "sceneId": "s8",
+      "text": "Not very long after, Mchaawee went away again, and the youth took the keys and continued his investigations."
+    },
+    {
+      "id": "s8-14",
+      "sceneId": "s8",
+      "text": "The first room he opened was filled with the bones of goats, the next with sheep's bones, the next with the bones of oxen, the fourth with the bones of donkeys, the fifth with those of horses, the sixth contained men's skulls, and in the seventh was a live horse."
+    },
+    {
+      "id": "s8-15",
+      "sceneId": "s8",
+      "text": "\"Hullo!\" said the horse; \"where do you come from, you son of Adam?\""
+    },
+    {
+      "id": "s8-16",
+      "sceneId": "s8",
+      "text": "\"This is my father's house,\" said Keejaanaa."
+    },
+    {
+      "id": "s8-17",
+      "sceneId": "s8",
+      "text": "\"Oh, indeed!\" was the reply. \"Well, you've got a pretty nice parent! Do you know that he occupies himself with eating people, and donkeys, and horses, and oxen and goats and everything he can lay his hands on? You and I are the only living things left.\""
+    },
+    {
+      "id": "s8-18",
+      "sceneId": "s8",
+      "text": "This scared the youth pretty badly, and he faltered, \"What are we to do?\""
+    },
+    {
+      "id": "s8-19",
+      "sceneId": "s8",
+      "text": "\"What's your name?\" said the horse."
+    },
+    {
+      "id": "s8-20",
+      "sceneId": "s8",
+      "text": "\"Keejaanaa.\""
+    },
+    {
+      "id": "s8-21",
+      "sceneId": "s8",
+      "text": "\"Well, I'm Faaraa'see. Now, Keejaanaa, first of all, come and unfasten me.\""
+    },
+    {
+      "id": "s8-22",
+      "sceneId": "s8",
+      "text": "The youth did so at once."
+    },
+    {
+      "id": "s8-23",
+      "sceneId": "s8",
+      "text": "\"Now, then, open the door of the room with the gold in it, and I will swallow it all; then I'll go and wait for you under the big tree down the road a little way. When the magician comes home, he will say to you, 'Let us go for firewood;' then you answer, 'I don't understand that work;' and he will go by himself. When he comes back, he will put a great big pot on the hook and will tell you to make a fire under it. Tell him you don't know how to make a fire, and he will make it himself."
+    },
+    {
+      "id": "s8-24",
+      "sceneId": "s8",
+      "text": "\"Then he will bring a large quantity of butter, and while it is getting hot he will put up a swing and say to you, 'Get up there, and I'll swing you.' But you tell him you never played at that game, and ask him to swing first, that you may see how it is done. Then he will get up to show you; and you must push him into the big pot, and then come to me as quickly as you can.\""
+    },
+    {
+      "id": "s8-25",
+      "sceneId": "s8",
+      "text": "Then the horse went away."
+    },
+    {
+      "id": "s8-26",
+      "sceneId": "s8",
+      "text": "Now, Mchaawee had invited some of his friends to a feast at his house that evening; so, returning home early, he said to Keejaanaa, \"Let us go for firewood;\" but the youth answered, \"I don't understand that work.\" So he went by himself and brought the wood."
+    },
+    {
+      "id": "s8-27",
+      "sceneId": "s8",
+      "text": "Then he hung up the big pot and said, \"Light the fire;\" but the youth said, \"I don't know how to do it.\" So the magician laid the wood under the pot and lighted it himself."
+    },
+    {
+      "id": "s8-28",
+      "sceneId": "s8",
+      "text": "Then he said, \"Put all that butter in the pot;\" but the youth answered, \"I can't lift it; I'm not strong enough.\" So he put in the butter himself."
+    },
+    {
+      "id": "s8-29",
+      "sceneId": "s8",
+      "text": "Next Mchaawee said, \"Have you seen our country game?\" And Keejaanaa answered, \"I think not.\""
+    },
+    {
+      "id": "s8-30",
+      "sceneId": "s8",
+      "text": "\"Well,\" said the magician, \"let's play at it while the butter is getting hot.\""
+    },
+    {
+      "id": "s8-31",
+      "sceneId": "s8",
+      "text": "So he tied up the swing and said to Keejaanaa, \"Get up here, and learn the game.\" But the youth said: \"You get up first and show me. I'll learn quicker that way.\""
+    },
+    {
+      "id": "s8-32",
+      "sceneId": "s8",
+      "text": "The magician got into the swing, and just as he got started Keejaanaa gave him a push right into the big pot; and as the butter was by this time boiling, it not only killed him, but cooked him also."
+    },
+    {
+      "id": "s8-33",
+      "sceneId": "s8",
+      "text": "As soon as the youth had pushed the magician into the big pot, he ran as fast as he could to the big tree, where the horse was waiting for him."
+    },
+    {
+      "id": "s8-34",
+      "sceneId": "s8",
+      "text": "\"Come on,\" said Faaraasee; \"jump on my back and let's be going.\""
+    },
+    {
+      "id": "s8-35",
+      "sceneId": "s8",
+      "text": "So he mounted and they started off."
+    },
+    {
+      "id": "s8-36",
+      "sceneId": "s8",
+      "text": "When the magician's guests arrived they looked everywhere for him, but, of course, could not find him. Then, after waiting a while, they began to be very hungry; so, looking around for something to eat, they saw that the stew in the big pot was done, and, saying to each other, \"Let's begin, anyway,\" they started in and ate the entire contents of the pot. After they had finished, they searched for Mchaawee again, and finding lots of provisions in the house, they thought they would stay there until he came; but after they had waited a couple of days and eaten all the food in the place, they gave him up and returned to their homes."
+    },
+    {
+      "id": "s8-37",
+      "sceneId": "s8",
+      "text": "Meanwhile Keejaanaa and the horse continued on their way until they had gone a great distance, and at last they stopped near a large town."
+    },
+    {
+      "id": "s8-38",
+      "sceneId": "s8",
+      "text": "\"Let us stay here,\" said the youth, \"and build a house.\""
+    },
+    {
+      "id": "s8-39",
+      "sceneId": "s8",
+      "text": "As Faaraasee was agreeable, they did so. The horse coughed up all the gold he had swallowed, with which they purchased slaves, and cattle, and everything they needed."
+    },
+    {
+      "id": "s8-40",
+      "sceneId": "s8",
+      "text": "When the people of the town saw the beautiful new house and all the slaves, and cattle, and riches it contained, they went and told their sultan, who at once made up his mind that the owner of such a place must be of sufficient importance to be visited and taken notice of, as an acquisition to the neighborhood."
+    },
+    {
+      "id": "s8-41",
+      "sceneId": "s8",
+      "text": "So he called on Keejaanaa, and inquired who he was."
+    },
+    {
+      "id": "s8-42",
+      "sceneId": "s8",
+      "text": "\"Oh, I'm just an ordinary being, like other people.\""
+    },
+    {
+      "id": "s8-43",
+      "sceneId": "s8",
+      "text": "\"Are you a traveler?\""
+    },
+    {
+      "id": "s8-44",
+      "sceneId": "s8",
+      "text": "\"Well, I have been; but I like this place, and think I'll settle down here.\""
+    },
+    {
+      "id": "s8-45",
+      "sceneId": "s8",
+      "text": "\"Why don't you come and walk in our town?\""
+    },
+    {
+      "id": "s8-46",
+      "sceneId": "s8",
+      "text": "\"I should like to very much, but I need some one to show me around.\""
+    },
+    {
+      "id": "s8-47",
+      "sceneId": "s8",
+      "text": "\"Oh, I'll show you around,\" said the sultan, eagerly, for he was quite taken with the young man."
+    },
+    {
+      "id": "s8-48",
+      "sceneId": "s8",
+      "text": "After this Keejaanaa and the sultan became great friends; and in the course of time the young man married the sultan's daughter, and they had one son."
+    },
+    {
+      "id": "s8-49",
+      "sceneId": "s8",
+      "text": "They lived very happily together, and Keejaanaa loved Faaraasee as his own soul."
+    },
+    {
+      "id": "s9-0",
+      "sceneId": "s9",
+      "text": "Once there was a very learned physician, who died leaving his wife with a little baby boy, whom, when he was old enough, she named, according to his father's wish, Hassee'boo Kareem' Ed Deen'."
+    },
+    {
+      "id": "s9-1",
+      "sceneId": "s9",
+      "text": "When the boy had been to school, and had learned to read, his mother sent him to a tailor, to learn his trade, but he could not learn it. Then he was sent to a silversmith, but he could not learn his trade either. After that he tried many trades, but could learn none of them. At last his mother said, \"Well, stay at home for a while;\" and that seemed to suit him."
+    },
+    {
+      "id": "s9-2",
+      "sceneId": "s9",
+      "text": "One day he asked his mother what his father's business had been, and she told him he was a very great physician."
+    },
+    {
+      "id": "s9-3",
+      "sceneId": "s9",
+      "text": "\"Where are his books?\" he asked."
+    },
+    {
+      "id": "s9-4",
+      "sceneId": "s9",
+      "text": "\"Well, it's a long time since I saw them,\" replied his mother, \"but I think they are behind there. Look and see.\""
+    },
+    {
+      "id": "s9-5",
+      "sceneId": "s9",
+      "text": "So he hunted around a little and at last found them, but they were almost ruined by insects, and he gained little from them."
+    },
+    {
+      "id": "s9-6",
+      "sceneId": "s9",
+      "text": "At last, four of the neighbors came to his mother and said, \"Let your boy go along with us and cut wood in the forest.\" It was their business to cut wood, load it on donkeys, and sell it in the town for making fires."
+    },
+    {
+      "id": "s9-7",
+      "sceneId": "s9",
+      "text": "\"All right,\" said she; \"to-morrow I'll buy him a donkey, and he can start fair with you.\""
+    },
+    {
+      "id": "s9-8",
+      "sceneId": "s9",
+      "text": "So the next day Hasseeboo, with his donkey, went off with those four persons, and they worked very hard and made a lot of money that day. This continued for six days, but on the seventh day it rained heavily, and they had to get under the rocks to keep dry."
+    },
+    {
+      "id": "s9-9",
+      "sceneId": "s9",
+      "text": "Now, Hasseeboo sat in a place by himself, and, having nothing else to do, he picked up a stone and began knocking on the ground with it. To his surprise the ground gave forth a hollow sound, and he called to his companions, saying, \"There seems to be a hole under here.\""
+    },
+    {
+      "id": "s9-10",
+      "sceneId": "s9",
+      "text": "Upon hearing him knock again, they decided to dig and see what was the cause of the hollow sound; and they had not gone very deep before they broke into a large pit, like a well, which was filled to the top with honey."
+    },
+    {
+      "id": "s9-11",
+      "sceneId": "s9",
+      "text": "They didn't do any firewood chopping after that, but devoted their entire attention to the collection and sale of the honey."
+    },
+    {
+      "id": "s9-12",
+      "sceneId": "s9",
+      "text": "With a view to getting it all out as quickly as possible, they told Hasseeboo to go down into the pit and dip out the honey, while they put it in vessels and took it to town for sale. They worked for three days, making a great deal of money."
+    },
+    {
+      "id": "s9-13",
+      "sceneId": "s9",
+      "text": "At last there was only a little honey left at the very bottom of the pit, and they told the boy to scrape that together while they went to get a rope to haul him out."
+    },
+    {
+      "id": "s9-14",
+      "sceneId": "s9",
+      "text": "But instead of getting the rope, they decided to let him remain in the pit, and divide the money among themselves. So, when he had gathered the remainder of the honey together, and called for the rope, he received no answer; and after he had been alone in the pit for three days he became convinced that his companions had deserted him."
+    },
+    {
+      "id": "s9-15",
+      "sceneId": "s9",
+      "text": "Then those four persons went to his mother and told her that they had become separated in the forest, that they had heard a lion roaring, and that they could find no trace of either her son or his donkey."
+    },
+    {
+      "id": "s9-16",
+      "sceneId": "s9",
+      "text": "His mother, of course, cried very much, and the four neighbors pocketed her son's share of the money."
+    },
+    {
+      "id": "s9-17",
+      "sceneId": "s9",
+      "text": "To return to Hasseeboo."
+    },
+    {
+      "id": "s9-18",
+      "sceneId": "s9",
+      "text": "He passed the time walking about the pit, wondering what the end would be, eating scraps of honey, sleeping a little, and sitting down to think."
+    },
+    {
+      "id": "s9-19",
+      "sceneId": "s9",
+      "text": "While engaged in the last occupation, on the fourth day, he saw a scorpion fall to the ground--a large one, too--and he killed it."
+    },
+    {
+      "id": "s9-20",
+      "sceneId": "s9",
+      "text": "Then suddenly he thought to himself, \"Where did that scorpion come from? There must be a hole somewhere. I'll search, anyhow.\""
+    },
+    {
+      "id": "s9-21",
+      "sceneId": "s9",
+      "text": "So he searched around until he saw light through a tiny crack; and he took his knife and scooped and scooped, until he had made a hole big enough to pass through; then he went out, and came upon a place he had never seen before."
+    },
+    {
+      "id": "s9-22",
+      "sceneId": "s9",
+      "text": "Seeing a path, he followed it until he came to a very large house, the door of which was not fastened. So he went inside, and saw golden doors, with golden locks, and keys of pearl, and beautiful chairs inlaid with jewels and precious stones, and in a reception room he saw a couch covered with a splendid spread, upon which he lay down."
+    },
+    {
+      "id": "s9-23",
+      "sceneId": "s9",
+      "text": "Presently he found himself being lifted off the couch and put in a chair, and heard some one saying: \"Do not hurt him; wake him gently,\" and on opening his eyes he found himself surrounded by numbers of snakes, one of them wearing beautiful royal colors."
+    },
+    {
+      "id": "s9-24",
+      "sceneId": "s9",
+      "text": "\"Hullo!\" he cried; \"who are you?\""
+    },
+    {
+      "id": "s9-25",
+      "sceneId": "s9",
+      "text": "\"I am Sulta'nee Waa' Neeo'ka, king of the snakes, and this is my house. Who are you?\""
+    },
+    {
+      "id": "s9-26",
+      "sceneId": "s9",
+      "text": "\"I am Hasseeboo Kareem Ed Deen.\""
+    },
+    {
+      "id": "s9-27",
+      "sceneId": "s9",
+      "text": "\"Where do you come from?\""
+    },
+    {
+      "id": "s9-28",
+      "sceneId": "s9",
+      "text": "\"I don't know where I come from, or where I'm going.\""
+    },
+    {
+      "id": "s9-29",
+      "sceneId": "s9",
+      "text": "\"Well, don't bother yourself just now. Let's eat; I guess you are hungry, and I know I am.\""
+    },
+    {
+      "id": "s9-30",
+      "sceneId": "s9",
+      "text": "Then the king gave orders, and some of the other snakes brought the finest fruits, and they ate and drank and conversed."
+    },
+    {
+      "id": "s9-31",
+      "sceneId": "s9",
+      "text": "When the repast was ended, the king desired to hear Hasseeboo's story; so he told him all that had happened, and then asked to hear the story of his host."
+    },
+    {
+      "id": "s9-32",
+      "sceneId": "s9",
+      "text": "\"Well,\" said the king of the snakes, \"mine is rather a long story, but you shall hear it. A long time ago I left this place, to go and live in the mountains of Al Kaaf', for the change of air. One day I saw a stranger coming along, and I said to him, 'Where are you from?' and he said, 'I am wandering in the wilderness.' 'Whose son are you?' I asked. 'My name is Bolookee'a. My father was a sultan; and when he died I opened a small chest, inside of which I found a bag, which contained a small brass box; when I had opened this I found some writing tied up in a woolen cloth, and it was all in praise of a prophet. He was described as such a good and wonderful man, that I longed to see him; but when I made inquiries concerning him I was told he was not yet born. Then I vowed I would wander until I should see him. So I left our town, and all my property, and I am wandering, but I have not yet seen that prophet.'"
+    },
+    {
+      "id": "s9-33",
+      "sceneId": "s9",
+      "text": "\"Then I said to him, 'Where do you expect to find him, if he's not yet born? Perhaps if you had some serpent's water you might keep on living until you find him. But it's of no use talking about that; the serpent's water is too far away.'"
+    },
+    {
+      "id": "s9-34",
+      "sceneId": "s9",
+      "text": "\"'Well,' he said, 'good-bye. I must wander on.' So I bade him farewell, and he went his way."
+    },
+    {
+      "id": "s9-35",
+      "sceneId": "s9",
+      "text": "\"Now, when that man had wandered until he reached Egypt, he met another man, who asked him, 'Who are you?'"
+    },
+    {
+      "id": "s9-36",
+      "sceneId": "s9",
+      "text": "\"'I am Bolookeea. Who are you?'"
+    },
+    {
+      "id": "s9-37",
+      "sceneId": "s9",
+      "text": "\"'My name is Al Faan'. Where are you going?'"
+    },
+    {
+      "id": "s9-38",
+      "sceneId": "s9",
+      "text": "\"'I have left my home, and my property, and I am seeking the prophet."
+    },
+    {
+      "id": "s9-39",
+      "sceneId": "s9",
+      "text": "\"'H'm!' said Al Faan; 'I can tell you of a better occupation than looking for a man that is not born yet. Let us go and find the king of the snakes and get him to give us a charm medicine; then we will go to King Solomon and get his rings, and we shall be able to make slaves of the genii and order them to do whatever we wish.'"
+    },
+    {
+      "id": "s9-40",
+      "sceneId": "s9",
+      "text": "\"And Bolookeea said, 'I have seen the king of the snakes in the mountain of Al Kaaf.'"
+    },
+    {
+      "id": "s9-41",
+      "sceneId": "s9",
+      "text": "\"'All right,' said Al Faan; 'let's go.'"
+    },
+    {
+      "id": "s9-42",
+      "sceneId": "s9",
+      "text": "\"Now, Al Faan wanted the ring of Solomon that he might be a great magician and control the genii and the birds, while all Bolookeea wanted was to see the great prophet."
+    },
+    {
+      "id": "s9-43",
+      "sceneId": "s9",
+      "text": "\"As they went along, Al Faan said to Bolookeea, 'Let us make a cage and entice the king of the snakes into it; then we will shut the door and carry him off.'"
+    },
+    {
+      "id": "s9-44",
+      "sceneId": "s9",
+      "text": "\"'All right,' said Bolookeea."
+    },
+    {
+      "id": "s9-45",
+      "sceneId": "s9",
+      "text": "\"So they made a cage, and put therein a cup of milk and a cup of wine, and brought it to Al Kaaf; and I, like a fool, went in, drank up all the wine and became drunk. Then they fastened the door and took me away with them."
+    },
+    {
+      "id": "s9-46",
+      "sceneId": "s9",
+      "text": "\"When I came to my senses I found myself in the cage, and Bolookeea carrying me, and I said, 'The sons of Adam are no good. What do you want from me?' And they answered, 'We want some medicine to put on our feet, so that we may walk upon the water whenever it is necessary in the course of our journey.' 'Well,' said I, 'go along.'"
+    },
+    {
+      "id": "s9-47",
+      "sceneId": "s9",
+      "text": "\"We went on until we came to a place where there were a great number and variety of trees; and when those trees saw me, they said, 'I am medicine for this;' 'I am medicine for that;' 'I am medicine for the head;' 'I am medicine for the feet;' and presently one tree said, 'If any one puts my medicine upon his feet he can walk on water.'"
+    },
+    {
+      "id": "s9-48",
+      "sceneId": "s9",
+      "text": "\"When I told that to those men they said, 'That is what we want;' and they took a great deal of it."
+    },
+    {
+      "id": "s9-49",
+      "sceneId": "s9",
+      "text": "\"Then they took me back to the mountain and set me free; and we said good-bye and parted."
+    },
+    {
+      "id": "s9-50",
+      "sceneId": "s9",
+      "text": "\"When they left me, they went on their way until they reached the sea, when they put the medicine on their feet and walked over. Thus they went many days, until they came near to the place of King Solomon, where they waited while Al Faan prepared his medicines."
+    },
+    {
+      "id": "s9-51",
+      "sceneId": "s9",
+      "text": "\"When they arrived at King Solomon's place, he was sleeping, and was being watched by genii, and his hand lay on his chest, with the ring on his finger."
+    },
+    {
+      "id": "s9-52",
+      "sceneId": "s9",
+      "text": "\"As Bolookeea drew near, one of the genii said to him 'Where are you going?' And he answered, 'I'm here with Al Faan; he's going to take that ring.' 'Go back,' said the genie; 'keep out of the way. That man is going to die.'"
+    },
+    {
+      "id": "s9-53",
+      "sceneId": "s9",
+      "text": "\"When Al Faan had finished his preparations, he said to Bolookeea, 'Wait here for me.' Then he went forward to take the ring, when a great cry arose, and he was thrown by some unseen force a considerable distance."
+    },
+    {
+      "id": "s9-54",
+      "sceneId": "s9",
+      "text": "\"Picking himself up, and still believing in the power of his medicines, he approached the ring again, when a strong breath blew upon him and he was burnt to ashes in a moment."
+    },
+    {
+      "id": "s9-55",
+      "sceneId": "s9",
+      "text": "\"While Bolookeea was looking at all this, a voice said, 'Go your way; this wretched being is dead.' So he returned; and when he got to the sea again he put the medicine upon his feet and passed over, and continued to wander for many years."
+    },
+    {
+      "id": "s9-56",
+      "sceneId": "s9",
+      "text": "\"One morning he saw a man sitting down, and said 'Good-morning,' to which the man replied. Then Bolookeea asked him, 'Who are you?' and he answered: 'My name is Jan Shah. Who are you?' So Bolookeea told him who he was, and asked him to tell him his history. The man, who was weeping and smiling by turns, insisted upon hearing Bolookeea's story first. After he had heard it he said:"
+    },
+    {
+      "id": "s9-57",
+      "sceneId": "s9",
+      "text": "\"'Well, sit down, and I'll tell you my story from beginning to end. My name is Jan Shah, and my father is Tooeegha'mus, a great sultan. He used to go every day into the forest to shoot game; so one day I said to him, \"Father, let me go with you into the forest to-day;\" but he said, \"Stay at home. You are better there.\" Then I cried bitterly, and as I was his only child, whom he loved dearly, he couldn't stand my tears, so he said: \"Very well; you shall go. Don't cry.\""
+    },
+    {
+      "id": "s9-58",
+      "sceneId": "s9",
+      "text": "\"'Thus we went to the forest, and took many attendants with us; and when we reached the place we ate and drank, and then every one set out to hunt."
+    },
+    {
+      "id": "s9-59",
+      "sceneId": "s9",
+      "text": "\"'I and my seven slaves went on until we saw a beautiful gazelle, which we chased as far as the sea without capturing it. When the gazelle took to the water I and four of my slaves took a boat, the other three returning to my father, and we chased that gazelle until we lost sight of the shore, but we caught it and killed it. Just then a great wind began to blow, and we lost our way."
+    },
+    {
+      "id": "s9-60",
+      "sceneId": "s9",
+      "text": "\"'When the other three slaves came to my father, he asked them, \"Where is your master?\" and they told him about the gazelle and the boat. Then he cried, \"My son is lost! My son is lost!\" and returned to the town and mourned for me as one dead."
+    },
+    {
+      "id": "s9-61",
+      "sceneId": "s9",
+      "text": "\"'After a time we came to an island, where there were a great many birds. We found fruit and water, we ate and drank, and at night we climbed into a tree and slept till morning."
+    },
+    {
+      "id": "s9-62",
+      "sceneId": "s9",
+      "text": "\"'Then we rowed to a second island, and, seeing no one around, we gathered fruit, ate and drank, and climbed a tree as before. During the night we heard many savage beasts howling and roaring near us."
+    },
+    {
+      "id": "s9-63",
+      "sceneId": "s9",
+      "text": "\"'In the morning we got away as soon as possible, and came to a third island. Looking around for food, we saw a tree full of fruit like red-streaked apples; but, as we were about to pick some, we heard a voice say, \"Don't touch this tree; it belongs to the king.\" Toward night a number of monkeys came, who seemed much pleased to see us, and they brought us all the fruit we could eat."
+    },
+    {
+      "id": "s9-64",
+      "sceneId": "s9",
+      "text": "\"'Presently I heard one of them say, \"Let us make this man our sultan.\" Then another one said: \"What's the use? They'll all run away in the morning.\" But a third one said, \"Not if we smash their boat.\" Sure enough, when we started to leave in the morning, our boat was broken in pieces. So there was nothing for it but to stay there and be entertained by the monkeys, who seemed to like us very much."
+    },
+    {
+      "id": "s9-65",
+      "sceneId": "s9",
+      "text": "\"'One day, while strolling about, I came upon a great stone house, having an inscription on the door, which said, \"When any man comes to this island, he will find it difficult to leave, because the monkeys desire to have a man for their king. If he looks for a way to escape, he will think there is none; but there is one outlet, which lies to the north. If you go in that direction you will come to a great plain, which is infested with lions, leopards, and snakes. You must fight all of them; and if you overcome them you can go forward. You will then come to another great plain, inhabited by ants as big as dogs; their teeth are like those of dogs, and they are very fierce. You must fight these also, and if you overcome them, the rest of the way is clear.\""
+    },
+    {
+      "id": "s9-66",
+      "sceneId": "s9",
+      "text": "\"'I consulted with my attendants over this information, and we came to the conclusion that, as we could only die, anyhow, we might as well risk death to gain our freedom."
+    },
+    {
+      "id": "s9-67",
+      "sceneId": "s9",
+      "text": "\"'As we all had weapons, we set forth; and when we came to the first plain we fought, and two of my slaves were killed. Then we went on to the second plain, fought again; my other two slaves were killed, and I alone escaped."
+    },
+    {
+      "id": "s9-68",
+      "sceneId": "s9",
+      "text": "\"'After that I wandered on for many days, living on whatever I could find, until at last I came to a town, where I stayed for some time, looking for employment but finding none."
+    },
+    {
+      "id": "s9-69",
+      "sceneId": "s9",
+      "text": "\"'One day a man came up to me and said, \"Are you looking for work?\" \"I am,\" said I. \"Come with me, then,\" said he; and we went to his house."
+    },
+    {
+      "id": "s9-70",
+      "sceneId": "s9",
+      "text": "\"'When we got there he produced a camel's skin, and said, \"I shall put you in this skin, and a great bird will carry you to the top of yonder mountain. When he gets you there, he will tear this skin off you. You must then drive him away and push down the precious stones you will find there. When they are all down, I will get you down.\""
+    },
+    {
+      "id": "s9-71",
+      "sceneId": "s9",
+      "text": "\"'So he put me in the skin; the bird carried me to the top of the mountain and was about to eat me, when I jumped up, scared him away, and then pushed down many precious stones. Then I called out to the man to take me down, but he never answered me, and went away."
+    },
+    {
+      "id": "s9-72",
+      "sceneId": "s9",
+      "text": "\"'I gave myself up for a dead man, but went wandering about, until at last, after passing many days in a great forest, I came to a house, all by itself; the old man who lived in it gave me food and drink, and I was revived."
+    },
+    {
+      "id": "s9-73",
+      "sceneId": "s9",
+      "text": "\"'I remained there a long time, and that old man loved me as if I were his own son."
+    },
+    {
+      "id": "s9-74",
+      "sceneId": "s9",
+      "text": "\"'One day he went away, and giving me the keys, told me I could open the door of every room except one which he pointed out to me."
+    },
+    {
+      "id": "s9-75",
+      "sceneId": "s9",
+      "text": "\"'Of course, when he was gone, this was the first door I opened. I saw a large garden, through which a stream flowed. Just then three birds came and alighted by the side of the stream. Immediately they changed to three most beautiful women. When they had finished bathing, they put on their clothes, and, as I stood watching them, they changed into birds again and flew away."
+    },
+    {
+      "id": "s9-76",
+      "sceneId": "s9",
+      "text": "\"'I locked the door, and went away; but my appetite was gone, and I wandered about aimlessly. When the old man came back, he saw there was something wrong with me, and asked me what was the matter. Then I told him I had seen those beautiful maidens, that I loved one of them very much, and that if I could not marry her I should die."
+    },
+    {
+      "id": "s9-77",
+      "sceneId": "s9",
+      "text": "\"'The old man told me I could not possibly have my wish. He said the three lovely beings were the daughters of the sultan of the genii, and that their home was a journey of three years from where we then were."
+    },
+    {
+      "id": "s9-78",
+      "sceneId": "s9",
+      "text": "\"'I told him I couldn't help that. He must get her for my wife, or I should die. At last he said, \"Well, wait till they come again, then hide yourself and steal the clothes of the one you love so dearly.\""
+    },
+    {
+      "id": "s9-79",
+      "sceneId": "s9",
+      "text": "\"'So I waited, and when they came again I stole the clothes of the youngest, whose name was Sayadaa'tee Shems."
+    },
+    {
+      "id": "s9-80",
+      "sceneId": "s9",
+      "text": "\"'When they came out of the water, this one could not find her clothes. Then I stepped forward and said, \"I have them.\" \"Ah,\" she begged, \"give them to me, their owner; I want to go away.\" But I said to her, \"I love you very much. I want to marry you.\" \"I want to go to my father,\" she replied. \"You cannot go,\" said I."
+    },
+    {
+      "id": "s9-81",
+      "sceneId": "s9",
+      "text": "\"'Then her sisters flew away, and I took her into the house, where the old man married us. He told me not to give her those clothes I had taken, but to hide them; because if she ever got them she would fly away to her old home. So I dug a hole in the ground and buried them."
+    },
+    {
+      "id": "s9-82",
+      "sceneId": "s9",
+      "text": "\"'But one day, when I was away from home, she dug them up and put them on; then, saying to the slave I had given her for an attendant, \"When your master returns tell him I have gone home; if he really loves me he will follow me,\" she flew away."
+    },
+    {
+      "id": "s9-83",
+      "sceneId": "s9",
+      "text": "\"'When I came home they told me this, and I wandered, searching for her, many years. At last I came to a town where one asked me, \"Who are you?\" and I answered, \"I am Jan Shah.\" \"What was your father's name?\" \"Taaeeghamus.\" \"Are you the man who married our mistress?\" \"Who is your mistress?\" \"Sayadaatee Shems.\" \"I am he!\" I cried with delight."
+    },
+    {
+      "id": "s9-84",
+      "sceneId": "s9",
+      "text": "\"'They took me to their mistress, and she brought me to her father and told him I was her husband; and everybody was happy."
+    },
+    {
+      "id": "s9-85",
+      "sceneId": "s9",
+      "text": "\"'Then we thought we should like to visit our old home, and her father's genii carried us there in three days. We stayed there a year and then returned, but in a short time my wife died. Her father tried to comfort me, and wanted me to marry another of his daughters, but I refused to be comforted, and have mourned to this day. That is my story.'"
+    },
+    {
+      "id": "s9-86",
+      "sceneId": "s9",
+      "text": "\"Then Bolookeea went on his way, and wandered till he died.\""
+    },
+    {
+      "id": "s9-87",
+      "sceneId": "s9",
+      "text": "Next Sultaanee Waa Neeoka said to Hasseeboo, \"Now, when you go home you will do me injury.\""
+    },
+    {
+      "id": "s9-88",
+      "sceneId": "s9",
+      "text": "Hasseeboo was very indignant at the idea, and said, \"I could not be induced to do you an injury. Pray, send me home.\""
+    },
+    {
+      "id": "s9-89",
+      "sceneId": "s9",
+      "text": "\"I will send you home,\" said the king; \"but I am sure that you will come back and kill me.\""
+    },
+    {
+      "id": "s9-90",
+      "sceneId": "s9",
+      "text": "\"Why, I dare not be so ungrateful,\" exclaimed Hasseeboo. \"I swear I could not hurt you.\""
+    },
+    {
+      "id": "s9-91",
+      "sceneId": "s9",
+      "text": "\"Well,\" said the king of the snakes, \"bear this in mind: when you go home, do not go to bathe where there are many people.\""
+    },
+    {
+      "id": "s9-92",
+      "sceneId": "s9",
+      "text": "And he said, \"I will remember.\" So the king sent him home, and he went to his mother's house, and she was overjoyed to find that he was not dead."
+    },
+    {
+      "id": "s9-93",
+      "sceneId": "s9",
+      "text": "Now, the sultan of the town was very sick; and it was decided that the only thing that could cure him would be to kill the king of the snakes, boil him, and give the soup to the sultan."
+    },
+    {
+      "id": "s9-94",
+      "sceneId": "s9",
+      "text": "For a reason known only to himself, the vizir had placed men at the public baths with this instruction: \"If any one who comes to bathe here has a mark on his stomach, seize him and bring him to me.\""
+    },
+    {
+      "id": "s9-95",
+      "sceneId": "s9",
+      "text": "When Hasseeboo had been home three days he forgot the warning of Sultaanee Waa Neeoka, and went to bathe with the other people. All of a sudden he was seized by some soldiers, and brought before the vizir, who said, \"Take us to the home of the king of the snakes.\""
+    },
+    {
+      "id": "s9-96",
+      "sceneId": "s9",
+      "text": "\"I don't know where it is,\" said Hasseeboo."
+    },
+    {
+      "id": "s9-97",
+      "sceneId": "s9",
+      "text": "\"Tie him up,\" commanded the vizir."
+    },
+    {
+      "id": "s9-98",
+      "sceneId": "s9",
+      "text": "So they tied him up and beat him until his back was all raw, and being unable to stand the pain he cried, \"Let up! I will show you the place.\""
+    },
+    {
+      "id": "s9-99",
+      "sceneId": "s9",
+      "text": "So he led them to the house of the king of the snakes, who, when he saw him, said, \"Didn't I tell you you would come back to kill me?\""
+    },
+    {
+      "id": "s9-100",
+      "sceneId": "s9",
+      "text": "\"How could I help it?\" cried Hasseeboo. \"Look at my back!\""
+    },
+    {
+      "id": "s9-101",
+      "sceneId": "s9",
+      "text": "\"Who has beaten you so dreadfully?\" asked the king."
+    },
+    {
+      "id": "s9-102",
+      "sceneId": "s9",
+      "text": "\"The vizir.\""
+    },
+    {
+      "id": "s9-103",
+      "sceneId": "s9",
+      "text": "\"Then there's no hope for me. But you must carry me yourself.\""
+    },
+    {
+      "id": "s9-104",
+      "sceneId": "s9",
+      "text": "As they went along, the king said to Hasseeboo, \"When we get to your town I shall be killed and cooked. The first skimming the vizir will offer to you, but don't you drink it; put it in a bottle and keep it. The second skimming you must drink, and you will become a great physician. The third skimming is the medicine that will cure your sultan. When the vizir asks you if you drank that first skimming say, 'I did.' Then produce the bottle containing the first, and say, 'This is the second, and it is for you.' The vizir will take it, and as soon as he drinks it he will die, and both of us will have our revenge.\""
+    },
+    {
+      "id": "s9-105",
+      "sceneId": "s9",
+      "text": "Everything happened as the king had said. The vizir died, the sultan recovered, and Hasseeboo was loved by all as a great physician."
+    }
+  ]
+}

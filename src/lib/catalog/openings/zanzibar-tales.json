@@ -1,0 +1,356 @@
+{
+  "id": "zanzibar-tales",
+  "title": "Zanzibar Tales",
+  "author": "Anonymous (tr. George W. Bateman)",
+  "year": "1901",
+  "note": "Opening sit: The Monkey, the Shark, and the Washerman's Donkey, the whole tale.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Monkey, the Shark, and the Washerman's Donkey",
+      "place": "The Monkey, the Shark, and the Washerman's Donkey",
+      "reentry": "Once upon a time Kee'ma, the monkey, and Pa'pa, the shark, became great friends.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Once upon a time Kee'ma, the monkey, and Pa'pa, the shark, became great friends."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The monkey lived in an immense mkooyoo tree which grew by the margin of the sea--half of its branches being over the water and half over the land."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Every morning, when the monkey was breakfasting on the kooyoo nuts, the shark would put in an appearance under the tree and call out, \"Throw me some food, my friend;\" with which request the monkey complied most willingly."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "This continued for many months, until one day Papa said, \"Keema, you have done me many kindnesses: I would like you to go with me to my home, that I may repay you.\""
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"How can I go?\" said the monkey; \"we land beasts can not go about in the water.\""
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"Don't trouble yourself about that,\" replied the shark; \"I will carry you. Not a drop of water shall get to you.\""
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"Oh, all right, then,\" said Mr. Keema; \"let's go.\""
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "When they had gone about half-way the shark stopped, and said: \"You are my friend. I will tell you the truth.\""
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"Why, what is there to tell?\" asked the monkey, with surprise."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Well, you see, the fact is that our sultan is very sick, and we have been told that the only medicine that will do him any good is a monkey's heart.\""
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"Well,\" exclaimed Keema, \"you were very foolish not to tell me that before we started!\""
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"How so?\" asked Papa."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "But the monkey was busy thinking up some means of saving himself, and made no reply."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"Well?\" said the shark, anxiously; \"why don't you speak?\""
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"Oh, I've nothing to say now. It's too late. But if you had told me this before we started, I might have brought my heart with me.\""
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "\"What? haven't you your heart here?\""
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"Huh!\" ejaculated Keema; \"don't you know about us? When we go out we leave our hearts in the trees, and go about with only our bodies. But I see you don't believe me. You think I'm scared. Come on; let's go to your home, where you can kill me and search for my heart in vain.\""
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "The shark did believe him, though, and exclaimed, \"Oh, no; let's go back and get your heart.\""
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"Indeed, no,\" protested Keema; \"let us go on to your home.\""
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "But the shark insisted that they should go back, get the heart, and start afresh."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "At last, with great apparent reluctance, the monkey consented, grumbling sulkily at the unnecessary trouble he was being put to."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "When they got back to the tree, he climbed up in a great hurry, calling out, \"Wait there, Papa, my friend, while I get my heart, and we'll start off properly next time.\""
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "When he had got well up among the branches, he sat down and kept quite still."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "After waiting what he considered a reasonable length of time, the shark called, \"Come along, Keema!\" But Keema just kept still and said nothing."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "In a little while he called again: \"Oh, Keema! let's be going.\""
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "At this the monkey poked his head out from among the upper branches and asked, in great surprise, \"Going? Where?\""
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "\"To my home, of course.\""
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "\"Are you mad?\" queried Keema."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"Mad? Why, what do you mean?\" cried Papa."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "\"What's the matter with you?\" said the monkey. \"Do you take me for a washerman's donkey?\""
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"What peculiarity is there about a washerman's donkey?\""
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "\"It is a creature that has neither heart nor ears.\""
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "The shark, his curiosity overcoming his haste, thereupon begged to be told the story of the washerman's donkey, which the monkey related as follows:"
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"A washerman owned a donkey, of which he was very fond. One day, however, it ran away, and took up its abode in the forest, where it led a lazy life, and consequently grew very fat."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "\"At length Soongoo'ra, the hare, by chance passed that way, and saw Poon'da, the donkey."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"Now, the hare is the most cunning of all beasts--if you look at his mouth you will see that he is always talking to himself about everything."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "\"So when Soongoora saw Poonda he said to himself, 'My, this donkey is fat!' Then he went and told Sim'ba, the lion."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "\"As Simba was just recovering from a severe illness, he was still so weak that he could not go hunting. He was consequently pretty hungry."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "\"Said Mr. Soongoora, 'I'll bring enough meat to-morrow for both of us to have a great feast, but you'll have to do the killing.'"
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "\"'All right, good friend,' exclaimed Simba, joyfully; 'you're very kind.'"
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "\"So the hare scampered off to the forest, found the donkey, and said to her, in his most courtly manner, 'Miss Poonda, I am sent to ask your hand in marriage.'"
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "\"'By whom?' simpered the donkey."
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "\"'By Simba, the lion.'"
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "\"The donkey was greatly elated at this, and exclaimed: 'Let's go at once. This is a first-class offer.'"
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "\"They soon arrived at the lion's home, were cordially invited in, and sat down. Soongoora gave Simba a signal with his eyebrow, to the effect that this was the promised feast, and that he would wait outside. Then he said to Poonda: 'I must leave you for a while to attend to some private business. You stay here and converse with your husband that is to be.'"
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "\"As soon as Soongoora got outside, the lion sprang at Poonda, and they had a great fight. Simba was kicked very hard, and he struck with his claws as well as his weak health would permit him. At last the donkey threw the lion down, and ran away to her home in the forest."
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "\"Shortly after, the hare came back, and called, 'Haya! Simba! have you got it?'"
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "\"'I have not got it,' growled the lion; 'she kicked me and ran away; but I warrant you I made her feel pretty sore, though I'm not strong.'"
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "\"'Oh, well,' remarked Soongoora; 'don't put yourself out of the way about it.'"
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "\"Then Soongoora waited many days, until the lion and the donkey were both well and strong, when he said: 'What do you think now, Simba? Shall I bring you your meat?'"
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "\"'Ay,' growled the lion, fiercely; 'bring it to me. I'll tear it in two pieces!'"
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "\"So the hare went off to the forest, where the donkey welcomed him and asked the news."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "\"'You are invited to call again and see your lover,' said Soongoora."
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "\"'Oh, dear!' cried Poonda; 'that day you took me to him he scratched me awfully. I'm afraid to go near him now.'"
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "\"'Ah, pshaw!' said Soongoora; 'that's nothing. That's only Simba's way of caressing.'"
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "\"'Oh, well,' said the donkey, 'let's go.'"
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "\"So off they started again; but as soon as the lion caught sight of Poonda he sprang upon her and tore her in two pieces."
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "\"When the hare came up, Simba said to him: 'Take this meat and roast it. As for myself, all I want is the heart and ears.'"
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "\"'Thanks,' said Soongoora. Then he went away and roasted the meat in a place where the lion could not see him, and he took the heart and ears and hid them. Then he ate all the meat he needed, and put the rest away."
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "\"Presently the lion came to him and said, 'Bring me the heart and ears.'"
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "\"'Where are they?' said the hare."
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "\"'What does this mean?' growled Simba."
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "\"'Why, didn't you know this was a washerman's donkey?'"
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "\"'Well, what's that to do with there being no heart or ears?'"
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "\"'For goodness' sake, Simba, aren't you old enough to know that if this beast had possessed a heart and ears it wouldn't have come back the second time?'"
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "\"Of course the lion had to admit that what Soongoora, the hare, said was true."
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "\"And now,\" said Keema to the shark, \"you want to make a washerman's donkey of me. Get out of there, and go home by yourself. You are not going to get me again, and our friendship is ended. Good-bye, Papa.\""
+    }
+  ]
+}

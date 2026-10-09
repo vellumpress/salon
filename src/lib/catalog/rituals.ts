@@ -604,6 +604,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `The Triad came into my life as I walked underneath the arch by which the sentinels sit in Olympian state upon their rather long-legged chargers, receiving, as is their due, the silent homage of the passing nurserymaids. This reading is just “Elysium” — a soldier just back from the Flanders front walks home through St. James's with his sweetheart on one arm and his sister on the other, past the clubs and two old colonels on the steps, wrapped apart from the whole world. This reading is the whole sketch, ending “for five long days.” A heads-up before you start: the First World War sits just behind this story. The soldier is home from the front in Flanders on five days' leave. From Brought Forward. Quiet and tender, for the last minutes before sleep. Pall Mall, London.`,
   "the-golden-age":
     `“Alarums and Excursions” is one complete story from The Golden Age — on a hot June day three children are playing at knights in the orchard when a troop of soldiers jingles past the hedge, and the narrator and his little brother Harold chase it across country, sure a battle lies ahead. It ends “…to the fact that the battle had been postponed.” A heads-up before you start: on the way the narrator tells Harold that Indians scalp and burn their prisoners, a schoolboy notion of the period, left as printed; and the boys get lost in the rain before the old doctor drives them home. Bright and comic, made for walking. An English village and the fields beyond it.`,
+  "zanzibar-tales":
+    `Once upon a time Kee'ma, the monkey, and Pa'pa, the shark, became great friends. This reading is just The Monkey, the Shark, and the Washerman’s Donkey — a great tree by the sea, a shark, and a ride through the water. George W. Bateman’s 1901 book. The other tales follow in the book.`,
   "the-dancing-master":
     `“The Dancing-Master” is one complete story from Parisian Points of View — asked by a hostess to engage old Morin, a dancing-master, for her little girls, a guest goes behind the scenes at the opera one February night in 1881, finds him on stage as a bishop in “The Prophet,” and in the wings gets an earnest lecture on why France needs more dancing. It ends “…withstood the shock of this avalanche of dancers.” A heads-up before you start: the old teacher talks frankly, in the manner of his day, about sizing up a partner's figure while waltzing. Amused and brisk, for a walk. Paris.`,
   "winnie-the-pooh":
@@ -1459,6 +1461,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-fresco",
       // Mira Tue 6 Oct 2026 PM — The Mist: one story from The Spider and Other Tales; before-sleep only.
       "the-mist",
+      // Mira Thu 8 Oct 2026 MID — Zanzibar Tales also sits here: the same tale, the whole of it. Before-sleep and unwind.
+      "zanzibar-tales",
     ],
   },
   {
@@ -1960,6 +1964,8 @@ export const RITUAL_LANES: RitualLane[] = [
       // Mira Sun 4 Oct 2026 mid Rituals — Elysium does not sit here: Host-only on before-sleep (never unwind).
       // Mira Mon 5 Oct 2026 PM Ritual — The Taoist Priest of Lao-shan is the Host-only story and sits here only (never before-sleep / on-a-walk). Never Featured, no Next.
       "the-taoist-priest-of-lao-shan",
+      // Mira Thu 8 Oct 2026 MID — Zanzibar Tales: The Monkey, the Shark, and the Washerman's Donkey is the reading (whole tale). Unwind and before-sleep; never Next or Featured.
+      "zanzibar-tales",
     ],
   },
   {
@@ -2442,6 +2448,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-mist": 9,
   "winnie-the-pooh": 7,
   "the-golden-age": 9,
+  "zanzibar-tales": 7,
   "the-dancing-master": 10,
   "growth-of-the-soil": 2,
   "nada-the-lily": 2,
