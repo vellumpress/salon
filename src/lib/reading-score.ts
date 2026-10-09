@@ -3,9 +3,10 @@
  * baseline. Weights: Immersion 35, Rhythm 20, Return 15, Range 10,
  * Restfulness 10, Connection 10.
  *
- * A reading day needs at least three focused minutes. Anything shorter is a
- * quick visit: no score, no rhythm credit, no penalty. Missed days are a
- * small dip in Rhythm, never a streak reset.
+ * Any reading is a reading day and gets a score. A day with no minutes is
+ * rest: no number, and the hourglass stays empty. Missed days are a small
+ * dip in Rhythm, never a streak reset. Pace and usual-sit baselines still
+ * wait for a few substantial days so one short visit does not rewrite them.
  *
  * Contributors that existing ledgers cannot support are "still learning"
  * and drop out; the remaining weights scale so they still sum to 100%.
@@ -315,10 +316,10 @@ function usualMinutes(prior: number[], sittingMinutes: number): { usual: number;
   return { usual: Math.max(floor, median(prior)), learning: false };
 }
 
-function dayKind(raw: number, plausible: number): DayKind {
+/** Positive minutes score. Zero stays rest. Length does not gate the day. */
+function dayKind(raw: number): DayKind {
   if (!(raw > 0)) return "rest";
-  if (plausible >= READING_DAY_MINUTES) return "reading";
-  return "quick-visit";
+  return "reading";
 }
 
 type RhythmResult = {
@@ -328,12 +329,7 @@ type RhythmResult = {
   note: string;
 };
 
-function rhythmFor(
-  focusTs: number,
-  ledgers: DayLedgers,
-  skip: Set<string>,
-  paceSec: number | null,
-): RhythmResult {
+function rhythmFor(focusTs: number, ledgers: DayLedgers, skip: Set<string>): RhythmResult {
   const window = calendarDaysEnding(focusTs, 14, skip);
   if (window.length === 0) {
     return { raw: null, status: "learning", rate: null, note: "Still learning." };
@@ -343,11 +339,7 @@ function rhythmFor(
   window.forEach((key, index) => {
     const age = window.length - 1 - index;
     const weight = 0.9 ** age;
-    const kind = dayKind(
-      minutesOf(ledgers, key),
-      plausibleMinutes(minutesOf(ledgers, key), advancesOf(ledgers, key), paceSec).minutes,
-    );
-    if (kind === "quick-visit") return;
+    const kind = dayKind(minutesOf(ledgers, key));
     den += weight;
     if (kind === "reading") num += weight;
   });
@@ -361,11 +353,7 @@ function rhythmFor(
   let eligible = 0;
   let read = 0;
   for (const key of eligibleKeys) {
-    const kind = dayKind(
-      minutesOf(ledgers, key),
-      plausibleMinutes(minutesOf(ledgers, key), advancesOf(ledgers, key), paceSec).minutes,
-    );
-    if (kind === "quick-visit") continue;
+    const kind = dayKind(minutesOf(ledgers, key));
     eligible += 1;
     if (kind === "reading") read += 1;
   }
@@ -755,7 +743,7 @@ export function buildReadingScore(input: ReadingScoreInput): ReadingModel {
     const advances = advancesOf(ledgers, key);
     const paceSec = usualPaceSec(ledgers, key, skip);
     const plausible = plausibleMinutes(rawMinutes, advances, paceSec);
-    const kind = dayKind(rawMinutes, plausible.minutes);
+    const kind = dayKind(rawMinutes);
     const prior = priorReadingMinutes(ledgers, key, skip, 28);
     const usual = usualMinutes(prior, sittingMinutes);
     const capped = Math.min(plausible.minutes, usual.usual * 1.5);
@@ -771,7 +759,7 @@ export function buildReadingScore(input: ReadingScoreInput): ReadingModel {
           : "Focused minutes against your usual. Unbroken runs and times you left the app are still learning.",
     );
 
-    const rhythm = rhythmFor(focusTs, ledgers, skip, paceSec);
+    const rhythm = rhythmFor(focusTs, ledgers, skip);
     const bonus = rhythm.status === "scored" ? timeBonus(sits, focusTs) : 0;
     const rhythmPart = contributor(
       "rhythm",
@@ -904,7 +892,7 @@ export function buildReadingScore(input: ReadingScoreInput): ReadingModel {
       today.kind === "reading"
         ? readingLine(today.total)
         : today.kind === "quick-visit"
-          ? "A quick visit. Under three focused minutes, so this one isn’t scored and it isn’t a miss."
+          ? "A short visit still counts. Rows that need more days say they are still learning."
           : "Rest day. Nothing is lost — the week keeps its shape.",
     hasSignal: today.kind === "reading" && today.total > 0,
     contributors: today.kind === "reading" ? today.contributors : weekContributors,
@@ -1034,7 +1022,7 @@ function monthScoreFrom(
   for (const key of keys) {
     if (skip.has(key)) continue;
     const raw = key === todayKey ? today.minutes : minutesOf(ledgers, key);
-    if (raw < READING_DAY_MINUTES) continue;
+    if (!(raw > 0)) continue;
     const day = key === todayKey ? today : compute(endOfKey(key));
     if (day.kind === "reading") days.push(day);
   }
