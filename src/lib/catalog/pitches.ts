@@ -396,6 +396,8 @@ export const PITCHES: Record<string, string> = {
     "Once upon a time Kee'ma, the monkey, and Pa'pa, the shark, became great friends. This reading is just The Monkey, the Shark, and the Washerman’s Donkey — a great tree by the sea, a shark, and a ride through the water. The other tales follow in the book.",
   "tales-from-the-fjeld":
     "We were up on the Fjeld, Edward and I and Anders our guide, in quest of reindeer. A storm shuts them into a mountain shieling, and by the fire Anders and the girls take turns telling the old tales, from Osborn’s Pipe to the Pancake. More tales of beasts, Boots and trolls follow on their own.",
+  "tales-by-polish-authors":
+    "My hero's name was Bartek Slowik; but owing to his habit of staring when spoken to, the neighbours called him 'Bartek Goggle-Eyes.' Called up when war with the French comes, Bartek leaves Magda, the cottage and the piebald horse behind. Tales by Zeromski, Szymanski and Sieroszewski follow, from a Polish country estate to the exiles of Yakutsk.",
   "the-dancing-master":
     `“The Dancing-Master” is one complete story from Parisian Points of View — asked by a hostess to engage old Morin, a dancing-master, for her little girls, a guest goes behind the scenes at the opera one February night in 1881, finds him on stage as a bishop in “The Prophet,” and in the wings gets an earnest lecture on why France needs more dancing. It ends “…withstood the shock of this avalanche of dancers.” A heads-up before you start: the old teacher talks frankly, in the manner of his day, about sizing up a partner's figure while waltzing. Amused and brisk, for a walk. Paris.`,
   "the-golden-age":

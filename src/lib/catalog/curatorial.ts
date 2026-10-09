@@ -1202,6 +1202,10 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Fri 9 Oct 2026 MID HOLBERG-FJELD — Comedies (incl. Jeppe of the Hill) follows The Steel Flea, plain Next (no heads-up card). Never Featured.
   // Off every Ritual lane. Tales from the Fjeld is Later (not here); its first tale sits on unwind and before-sleep.
   "comedies-incl-jeppe-of-the-hill",
+  // Mira Fri 9 Oct 2026 PM AKSAKOV-ZEROMSKI — A Russian Gentleman follows Comedies (incl. Jeppe of the Hill), Next carefully only (the heads-up is on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (Fragment I, The Migration, to the departure for Ufa) is never unwind or before-sleep.
+  // Tales by Polish Authors is Later (not here); its Temptation sits on unwind and before-sleep.
+  "a-russian-gentleman",
 ] as const;
 
 /**

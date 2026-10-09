@@ -128,6 +128,8 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "the-steel-flea": { label: "Tula", region: "ru" },
     "comedies-incl-jeppe-of-the-hill": { label: "Denmark", region: "dk" },
     "tales-from-the-fjeld": { label: "Norway", region: "no" },
+    "a-russian-gentleman": { label: "Simbirsk", region: "ru" },
+    "tales-by-polish-authors": { label: "Poland", region: "pl" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
     "strait-is-the-gate": { label: "Fongueusemare", region: "fr" },
@@ -572,4 +574,14 @@ test("Fri 9 Oct MID HOLBERG-FJELD places reuse dk and no; Denmark and Norway; no
   assert.deepEqual(placeFor(shelfWork("tales-from-the-fjeld")!), { label: "Norway", region: "no" });
   assert.equal(CHIP_ONLY_PLACE["comedies-incl-jeppe-of-the-hill"], undefined);
   assert.equal(CHIP_ONLY_PLACE["tales-from-the-fjeld"], undefined);
+});
+
+test("Fri 9 Oct PM AKSAKOV-ZEROMSKI places reuse ru and pl; Simbirsk and Poland; no new region key", () => {
+  assert.ok(REGION_SHAPES.ru?.d, "ru shape");
+  assert.ok(REGION_SHAPES.pl?.d, "pl shape");
+  // The opening sit is set on the Simbirsk estate and ends as the grandfather leaves for the district of Ufa.
+  assert.deepEqual(placeFor(shelfWork("a-russian-gentleman")!), { label: "Simbirsk", region: "ru" });
+  assert.deepEqual(placeFor(shelfWork("tales-by-polish-authors")!), { label: "Poland", region: "pl" });
+  assert.equal(CHIP_ONLY_PLACE["a-russian-gentleman"], undefined);
+  assert.equal(CHIP_ONLY_PLACE["tales-by-polish-authors"], undefined);
 });

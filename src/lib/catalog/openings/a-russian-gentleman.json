@@ -1,0 +1,46 @@
+{
+  "id": "a-russian-gentleman",
+  "title": "A Russian Gentleman",
+  "author": "Sergei Aksakov (tr. J. D. Duff)",
+  "year": "1856",
+  "note": "Opening sit: Fragment I, 1. The Migration, to the grandfather's departure for the district of Ufa.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Fragment I · Stepan Mihailovitch Bagroff · 1. The Migration",
+      "place": "Fragment I · Stepan Mihailovitch Bagroff · 1. The Migration",
+      "reentry": "When my grandfather lived in the Government of Simbirsk, on the ancestral estate granted to his forefathers by the Tsars of Muscovy, he felt cramped and confined. Not that there was really want of room; for he had arable land and pasture, t",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "When my grandfather lived in the Government of Simbirsk, on the ancestral estate granted to his forefathers by the Tsars of Muscovy, he felt cramped and confined. Not that there was really want of room; for he had arable land and pasture, timber and other necessaries in abundance; but the trouble was, that the estate which his great-grandfather had held in absolute possession, had ceased to belong to one owner. This happened quite simply: for three successive generations the family consisted of one son and several daughters; and, when some of these daughters were married, their portions took the shape of a certain number of serfs and a certain amount of land. Though their shares were not large, yet, as the land had never been properly surveyed, at this time four intruders asserted their right to share in the management of it. To my grandfather, life under these conditions was intolerable: there was no patience in his passionate temperament; he loved plain dealing and hated complications and wrangles with his kith and kin."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "For some time past, he had heard frequent reports about the district of Ufa--how there was land there without limit for the plough and for stock, with an indescribable abundance of game and fish and all the fruit of the earth; and how easy it was to acquire whole tracts of land for a very trifling sum of money. If tales were true, you had only to invite a dozen of the native Bashkir chiefs in certain districts to partake of your hospitality; you provided two or three fat sheep, for them to kill and dress in their own fashion; you produced a bucket of whisky, with several buckets of strong fermented Bashkir mead and a barrel of home-made country beer--which proves, by the way, that even in old days the Bashkirs were not strict Mahometans--and the rest was as simple as A B C. It was said, indeed, that an entertainment of this kind might last a week or even a fortnight: it was impossible for Bashkirs to do business in a hurry, and every day it was necessary to ask the question, \"Well, good friend, is it time now to discuss my business?\" The guests had been eating and drinking, without exaggeration, all day and all night; but, if they were not completely satisfied with the entertainment, if they had not had enough of their monotonous singing and playing on the pipe, and their singular dances in which they stood up or crouched down on the same spot of ground, then the greatest of the chiefs, clicking his tongue and wagging his head, would answer with much dignity and without looking his questioner in the face: \"The time has not come; bring us another sheep!\" The sheep was forthcoming, as a matter of course, with fresh supplies of beer and spirits; and the tipsy Bashkirs began again to sing and dance, dropping off to sleep wherever they felt inclined."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "But everything in the world has an end; and a day came at last when the chief would look his host straight in the face and say: \"We are obliged to you, *batyushka*, ever so much obliged! And now, what is it that you want?\" The rest of the transaction followed a regular fashion. The customer began with the shrewdness native to your true Russian: he assured the Bashkir that he did not want anything at all; but, having heard that the Bashkirs were exceedingly kind people, he had come to Ufa on purpose to form a friendship with them, and so on. Then the conversation would somehow come round to the vast extent of the Bashkir territory and the unsatisfactory ways of the present tenants, who might pay their rent for a year or two and then pay no more and yet continue to live on the land, as if they were its rightful owners; it was rash to evict them, and a lawsuit became unavoidable. These remarks, which were true enough to the facts, were followed up by an obliging offer to relieve the kind Bashkirs of some part of the land which was such a burden to them; and in the end whole districts were bought and sold for a mere song. The bargain was clinched by a legal document, but the amount of land was never stated in it, and could not be, as it had never been surveyed. As a rule, the boundaries were settled by landmarks of this kind: \"from the mouth of such and such a stream as far as the dead beech-tree on the wolf-track, and from the dead beech-tree in a bee-line to the watershed, and from the watershed to the fox-earths, and from the fox-earths to the hollow tree at Soltamratka,\" and so on. So precise and permanent were the boundaries enclosing ten or twenty or thirty thousand *dessyatines* of land! And the price of all this might be about one hundred *roubles* and presents worth another hundred, not including the cost of the entertainments."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Stories of this kind had a great attraction for my grandfather. As a man of strict integrity, he disapproved of the deception practised on the simple Bashkirs; but he considered that the harm lay, not in the business itself, but in the method of transacting it, and believed that it was possible to deal fairly and yet to buy a great stretch of land at a low price. In that case he could migrate with his family and transfer half of his serfs to the new estate; and thus he would secure the main object of this design. For the fact was, that for some time past he had been so much worried by unending disputes over the management of the land--disputes between himself and the relations who owned a small part of it--that his desire to leave the place where his ancestors had lived and he himself was born, had become a fixed idea. There was no other means of securing a quiet life; and to him, now that his youth was past, a quiet life seemed more desirable than anything else."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "So he scraped together several thousand *roubles*, and said good-bye to his wife, whom he called Arisha when he was in a good humour and Arina when he was not; he kissed his children and gave them his blessing--his four young daughters and the infant son who was the single scion and sole hope of an ancient and noble family. The daughters he thought of no importance: \"What's the good of them? They look out of the house, not in; if their name is Bagroff to-day, it may be anything on earth to-morrow; my hopes rest entirely on my boy, Alexyei\"--such were my grandfather's parting words, when he started to cross the Volga on his way to the district of Ufa."
+    }
+  ]
+}
