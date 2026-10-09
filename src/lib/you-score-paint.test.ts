@@ -21,14 +21,17 @@ function paint(input: Parameters<typeof deriveReadingStats>[0]) {
   assert.equal(daily.contributors.length, 6);
   assert.ok(copy.primary.trim().length > 0, `empty primary for ${daily.kind}`);
   assert.notEqual(copy.primary, "NaN");
-  assert.ok(copy.primary === "Rest" || copy.primary === "Still learning" || copy.primary === "Quick visit" || copy.primary === "Paused" || /^\d+$/.test(copy.primary));
+  assert.ok(copy.primary === "Still learning" || copy.primary === "Paused" || /^\d+$/.test(copy.primary), copy.primary);
+  assert.notEqual(copy.primary, "Rest");
+  assert.notEqual(copy.primary, "Quick visit");
   return copy;
 }
 
 test("a missing or empty history still paints a score", () => {
   const empty = paint({ progress: {}, favorites: [] });
-  assert.equal(empty.primary, "Rest");
-  assert.equal(empty.sand, null);
+  assert.match(empty.primary, /^\d+$/);
+  assert.equal(empty.primary, "1");
+  assert.equal(empty.sand, 1);
 
   paint({
     progress: undefined as never,
@@ -51,7 +54,7 @@ test("legacy null rows, a NaN ledger, and a non-array history still paint a scor
     hostedSits: [null as never, { workId: "passing" } as never],
     joined: null as never,
   });
-  assert.ok(copy.primary === "Rest" || copy.primary === "Still learning" || /^\d+$/.test(copy.primary));
+  assert.match(copy.primary, /^\d+$/);
 });
 
 test("a corrupt saved snapshot migrates without throwing", () => {

@@ -3,10 +3,11 @@
  * baseline. Weights: Immersion 35, Rhythm 20, Return 15, Range 10,
  * Restfulness 10, Connection 10.
  *
- * Any reading is a reading day and gets a score. A day with no minutes is
- * rest: no number, and the hourglass stays empty. Missed days are a small
- * dip in Rhythm, never a streak reset. Pace and usual-sit baselines still
- * wait for a few substantial days so one short visit does not rewrite them.
+ * Every day has a visible score. Any minutes, even under one, score from
+ * those minutes. A day with none still shows a very low number. Missed days
+ * are a small dip in Rhythm, never a streak reset. Pace and usual-sit
+ * baselines still wait for a few substantial days so one short visit does
+ * not rewrite them.
  *
  * Contributors that existing ledgers cannot support are "still learning"
  * and drop out; the remaining weights scale so they still sum to 100%.
@@ -21,6 +22,8 @@ const MS_DAY = 24 * 60 * 60 * 1000;
 const MS_HOUR = 60 * 60 * 1000;
 
 export const READING_DAY_MINUTES = 3;
+/** Shown when today has no reading. Low, and still a number. */
+export const QUIET_DAY_SCORE = 1;
 export const CONTRIBUTOR_WEIGHTS = {
   immersion: 35,
   rhythm: 20,
@@ -58,7 +61,7 @@ export type DailyScore = {
   kind: DayKind;
   label: string;
   line: string;
-  /** True only on a scored reading day. Homepage glance stays a dash otherwise. */
+  /** True when today's number should show. A quiet day still counts. */
   hasSignal: boolean;
   contributors: ContributorResult[];
   /** Today minus the median of recent reading-day scores. Null while learning. */
@@ -750,8 +753,8 @@ export function buildReadingScore(input: ReadingScoreInput): ReadingModel {
     const time = usual.usual > 0 ? Math.min(1, capped / usual.usual) : 0;
     const immersion = contributor(
       "immersion",
-      kind === "reading" ? time * 100 : null,
-      kind === "reading" ? "scored" : "excluded",
+      time > 0 ? time * 100 : QUIET_DAY_SCORE,
+      "scored",
       paceSec == null
         ? "Focused minutes against your sit length. Per-breath pace, unbroken runs, and times you left the app are still learning."
         : plausible.skimmed
@@ -777,10 +780,10 @@ export function buildReadingScore(input: ReadingScoreInput): ReadingModel {
     const contributors: ContributorResult[] = [
       immersion,
       rhythmPart,
-      contributor("return", kind === "reading" ? returned.raw : null, kind === "reading" ? returned.status : "excluded", returned.note),
-      contributor("range", kind === "reading" ? range.raw : null, kind === "reading" ? range.status : "excluded", range.note),
-      contributor("restfulness", kind === "reading" ? rest.raw : null, kind === "reading" ? rest.status : "excluded", rest.note),
-      contributor("connection", kind === "reading" ? connection.raw : null, kind === "reading" ? connection.status : "excluded", connection.note),
+      contributor("return", returned.raw, returned.status, returned.note),
+      contributor("range", range.raw, range.status, range.note),
+      contributor("restfulness", rest.raw, rest.status, rest.note),
+      contributor("connection", connection.raw, connection.status, connection.note),
     ];
 
     let continuityTitle: string | null = null;
@@ -861,7 +864,7 @@ export function buildReadingScore(input: ReadingScoreInput): ReadingModel {
       key,
       label: weekdayLetter(key),
       kind: day.kind,
-      score: day.kind === "reading" ? day.total : null,
+      score: day.kind === "reading" ? Math.max(QUIET_DAY_SCORE, day.total) : QUIET_DAY_SCORE,
       minutes: day.minutes,
     };
   });
@@ -879,23 +882,22 @@ export function buildReadingScore(input: ReadingScoreInput): ReadingModel {
   const month = monthView(now, ledgers, skip, compute, todayKey, today);
   const year = yearView(now, ledgers, works, skip, compute, todayKey, today);
 
-  const learningNote =
-    today.kind === "reading" && today.baselineLearning
-      ? `Learning your rhythm — ${Math.max(1, 4 - today.priorCount)} more reading day${4 - today.priorCount === 1 ? "" : "s"}.`
-      : null;
+  const learningNote = today.baselineLearning
+    ? `Learning your rhythm — ${Math.max(1, 4 - today.priorCount)} more reading day${4 - today.priorCount === 1 ? "" : "s"}.`
+    : null;
+
+  const quiet = today.kind !== "reading";
+  const total = quiet ? QUIET_DAY_SCORE : Math.max(QUIET_DAY_SCORE, today.total);
 
   const daily: DailyScore = {
-    total: today.kind === "reading" ? today.total : 0,
+    total,
     kind: today.kind,
-    label: today.kind === "reading" ? scoreLabel(today.total) : today.kind === "quick-visit" ? "Quick visit" : "Rest",
-    line:
-      today.kind === "reading"
-        ? readingLine(today.total)
-        : today.kind === "quick-visit"
-          ? "A short visit still counts. Rows that need more days say they are still learning."
-          : "Rest day. Nothing is lost — the week keeps its shape.",
-    hasSignal: today.kind === "reading" && today.total > 0,
-    contributors: today.kind === "reading" ? today.contributors : weekContributors,
+    label: scoreLabel(total),
+    line: quiet
+      ? "A quiet day. Nothing is lost — the week keeps its shape."
+      : readingLine(total),
+    hasSignal: true,
+    contributors: today.contributors,
     versusUsual,
     learningNote,
     minutes: today.minutes,
@@ -1366,9 +1368,7 @@ function keptWaiting(
 export function dailyScoreGlance(
   score: Pick<DailyScore, "total" | "hasSignal"> & { kind?: DayKind } | null | undefined,
 ): string {
-  if (!score) return "—";
-  if (score.kind && score.kind !== "reading") return "—";
-  if (!score.hasSignal || !(score.total > 0)) return "—";
+  if (!score || !score.hasSignal || !(score.total > 0)) return "—";
   return String(score.total);
 }
 

@@ -64,7 +64,7 @@ test("empty stats invite a first sit", () => {
   assert.equal(reading.rings.length, 5);
   assert.equal(reading.radar.length, 6);
   assert.equal(reading.sits, 0);
-  assert.equal(reading.dailyScore.total, 0);
+  assert.equal(reading.dailyScore.total, 1);
   assert.equal(reading.weeklyScore.total, 0);
   assert.equal(reading.monthlyScore.total, 0);
 });

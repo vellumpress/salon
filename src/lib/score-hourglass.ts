@@ -2,7 +2,7 @@
  * Score hourglass geometry. The same classical drawing as the reader
  * hourglass in `components/hourglass.tsx`: thin bowtie, a bar at each end.
  * Sand is stippled grain. 0 keeps the top bulb full, 100 leaves the sand
- * in the bottom. A rest day draws the glass empty.
+ * in the bottom. A quiet day keeps a little sand, matching its low number.
  */
 
 import { CONTRIBUTOR_WEIGHTS, type ContributorId, type ContributorResult, type DayKind } from "./reading-score.ts";
@@ -66,32 +66,35 @@ export function hourglassCopy(input: {
   scored: boolean;
 }): HourglassCopy {
   const total = clampScore(input.total);
-  const showNumber = input.kind === "reading" && !input.hide && input.scored;
-  const sand = input.kind === "reading" && input.scored ? total : null;
+  const scoredReading = input.kind === "reading" && input.scored && total > 0;
+  const pausedWithoutNumber = input.paused && !scoredReading;
+  const display = total > 0 ? total : 1;
+  const showNumber = !input.hide && !pausedWithoutNumber;
+  const sand = showNumber || scoredReading ? display : null;
 
   let state: HourglassState;
-  if (input.paused && !showNumber) state = "paused";
-  else if (input.kind === "quick-visit") state = "quick-visit";
-  else if (input.kind === "rest") state = "rest";
-  else if (input.learning || !input.scored) state = "learning";
-  else state = "scored";
+  if (pausedWithoutNumber) state = "paused";
+  else if (showNumber && input.learning) state = "learning";
+  else if (showNumber || scoredReading) state = "scored";
+  else state = "rest";
 
   let primary: string;
-  if (input.paused && !showNumber) primary = "Paused";
-  else if (showNumber) primary = String(total);
-  else if (input.kind === "reading" && !input.scored) primary = "Still learning";
-  else primary = input.label;
+  if (pausedWithoutNumber) primary = "Paused";
+  else if (showNumber) primary = String(display);
+  else if (input.hide && input.label) primary = input.label;
+  else primary = "Still learning";
+  if (!primary || primary === "NaN" || primary === "Quick visit" || primary === "Rest") {
+    primary = String(display);
+  }
 
   const secondary = showNumber ? (input.learning ? "Still learning" : input.label) : null;
-  if (!primary || primary === "NaN") primary = input.kind === "rest" ? "Rest" : "Still learning";
 
   let aria: string;
   if (input.paused) aria = "Scoring is paused";
-  else if (input.kind !== "reading") aria = input.label;
-  else if (!input.scored) aria = "Still learning";
+  else if (showNumber && input.learning) aria = `Reading score ${display}, ${input.label}. Still learning`;
+  else if (showNumber) aria = `Reading score ${display}, ${input.label}`;
   else if (input.hide) aria = input.learning ? `${input.label}. Still learning` : input.label;
-  else if (input.learning) aria = `Reading score ${total}, ${input.label}. Still learning`;
-  else aria = `Reading score ${total}, ${input.label}`;
+  else aria = primary;
 
   return { state, sand, primary, secondary, aria };
 }
