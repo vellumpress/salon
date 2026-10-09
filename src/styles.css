@@ -1731,6 +1731,9 @@ html[data-status-motion="1"] .status-bar-fill::before {
 .reader-turn [data-turn] {
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
   background-color: transparent;
 }
 

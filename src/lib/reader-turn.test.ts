@@ -4,6 +4,10 @@ import {
   breathPageTop,
   classifyTurnGesture,
   ghostMousePointer,
+  HOLD_ARM_MS,
+  HOLD_RAMP_MS,
+  holdStepCount,
+  holdStepIntervalMs,
   turnZone,
 } from "./reader-turn.ts";
 
@@ -222,4 +226,17 @@ test("a tall breath pages before it steps", () => {
     breathPageTop({ scrollTop: 0, clientHeight: 400, scrollHeight: 402, direction: 1 }),
     null,
   );
+});
+
+test("a hold starts at four sentences a second and climbs to twelve", () => {
+  assert.equal(Math.round(1000 / holdStepIntervalMs(0)), 4);
+  assert.equal(Math.round(1000 / holdStepIntervalMs(HOLD_RAMP_MS)), 12);
+  const mid = holdStepIntervalMs(HOLD_RAMP_MS / 2);
+  assert.ok(mid < holdStepIntervalMs(0), `mid interval ${mid} was not faster than the start`);
+  assert.ok(mid > holdStepIntervalMs(HOLD_RAMP_MS), `mid interval ${mid} was already at full speed`);
+  assert.equal(holdStepIntervalMs(-40), holdStepIntervalMs(0));
+  assert.equal(holdStepCount(HOLD_ARM_MS - 1), 0);
+  assert.equal(holdStepCount(HOLD_ARM_MS), 1);
+  const constant = 1 + Math.floor((2000 - HOLD_ARM_MS) / (1000 / 4));
+  assert.ok(holdStepCount(2000) > constant, "two seconds of holding did not speed up");
 });
