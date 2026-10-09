@@ -1756,11 +1756,17 @@ html[data-status-motion="1"] .status-bar-fill::before {
   margin-bottom: calc(-1 * (3rem + env(safe-area-inset-bottom, 0px)));
 }
 
-/* The pane, not the tap column, runs up through the mark row and the status
-   bar. The column's box stays under the header, so a back tap at the top of
-   the page still hits the sentences when the bar is open. */
+/* The pane paints up through the mark row and the status bar. The side
+   controls follow it, so the left third behind the clock is still back and
+   the right side is still forward. The header sits above them while it is
+   open, and drops its pointer events when it fades. */
 .reader-turn-bleed > .reading-pane {
   margin-top: calc(-1 * var(--reader-top-lead, 0px));
+}
+
+.reader-turn-bleed > .reader-side {
+  top: calc(-1 * var(--reader-top-lead, 0px));
+  height: calc(100% + var(--reader-top-lead, 0px));
 }
 
 /* The status-bar fill is a solid band so other pages have an edge to sample.

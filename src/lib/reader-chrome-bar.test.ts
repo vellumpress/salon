@@ -196,7 +196,7 @@ async function focusInPane(page: Page) {
 }
 
 test(
-  "a touch on the already-read lines goes back and does not open the bar",
+  "a touch on the left third goes back and does not open the bar",
   { timeout: 240_000 },
   async () => {
     const stop = await ensureServer();
@@ -229,8 +229,8 @@ test(
         const glass = document.querySelector(".reader-glass")?.getBoundingClientRect();
         return {
           text: line.textContent ?? "",
-          backX: Math.round(window.innerWidth * 0.72),
-          backY: Math.round(row.top - 28),
+          backX: Math.round(window.innerWidth * 0.12),
+          backY: Math.round(row.top + Math.max(8, row.height / 2)),
           lowest,
           innerHeight: window.innerHeight,
           paneBottom: pane.getBoundingClientRect().bottom,
@@ -256,7 +256,7 @@ test(
         spot.text,
       );
       const afterBack = await bar(page);
-      assert.notEqual(afterBack.text, spot.text, "tap above the focus did not go back");
+      assert.notEqual(afterBack.text, spot.text, "left-side tap did not go back");
       assert.equal(afterBack.state, "closed", "back tap opened the bar");
 
       const nextSpot = await page.evaluate(() => {
@@ -264,7 +264,7 @@ test(
         if (!row) return null;
         const y = Math.min(window.innerHeight - 72, Math.max(row.top + 8, row.bottom + 28));
         return {
-          x: Math.round(window.innerWidth * 0.28),
+          x: Math.round(window.innerWidth * 0.72),
           y: Math.round(y),
         };
       });
@@ -275,7 +275,7 @@ test(
         afterBack.text,
       );
       const afterForward = await bar(page);
-      assert.equal(afterForward.text, spot.text, "tap below the focus did not advance");
+      assert.equal(afterForward.text, spot.text, "right-side tap did not advance");
       assert.equal(afterForward.state, "closed", "forward tap opened the bar");
 
       assert.ok(spot.glass, "hourglass missing");
@@ -295,8 +295,8 @@ test(
         const row = line?.getBoundingClientRect();
         return {
           text: line?.textContent ?? "",
-          x: Math.round(window.innerWidth * 0.62),
-          y: row ? Math.round(row.top - 24) : 80,
+          x: Math.round(window.innerWidth * 0.12),
+          y: row ? Math.round(Math.max(row.top + 8, row.bottom - 8)) : 200,
         };
       });
       assert.ok(first.text.length > 0);

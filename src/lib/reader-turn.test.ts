@@ -9,28 +9,25 @@ import {
 
 const host = { left: 0, top: 49, right: 390, bottom: 844, width: 390 };
 
-test("a tap on the already-read lines goes back, including the right side", () => {
+test("the left third goes back at every height", () => {
   const focusTop = 520;
   const focusBottom = 560;
-  assert.equal(
-    turnZone({ x: 300, y: focusTop - 24, host, focusTop, focusBottom }),
-    "prev",
-  );
-  assert.equal(
-    turnZone({ x: 40, y: focusTop - 80, host, focusTop, focusBottom }),
-    "prev",
-  );
-  assert.equal(
-    turnZone({ x: 200, y: 60, host, focusTop, focusBottom }),
-    "prev",
-  );
+  const split = host.left + host.width / 3;
+  assert.equal(turnZone({ x: split - 2, y: focusTop - 24, host, focusTop, focusBottom }), "prev");
+  assert.equal(turnZone({ x: 40, y: focusTop + 8, host, focusTop, focusBottom }), "prev");
+  assert.equal(turnZone({ x: 40, y: 800, host, focusTop, focusBottom }), "prev");
+  assert.equal(turnZone({ x: 20, y: host.top + 4, host, focusTop, focusBottom }), "prev");
+  assert.equal(turnZone({ x: split + 2, y: focusTop - 24, host, focusTop, focusBottom }), "next");
+  assert.equal(turnZone({ x: 300, y: focusTop + 4, host, focusTop, focusBottom }), "next");
+  assert.equal(turnZone({ x: 200, y: 60, host, focusTop, focusBottom }), "next");
 });
 
-test("a tap on the focus line or the preview goes forward", () => {
+test("the center and the right side go forward, including above the sentence", () => {
   const focusTop = 520;
   const focusBottom = 560;
+  assert.equal(turnZone({ x: 300, y: focusTop - 40, host, focusTop, focusBottom }), "next");
   assert.equal(turnZone({ x: 300, y: focusTop + 4, host, focusTop, focusBottom }), "next");
-  assert.equal(turnZone({ x: 40, y: focusBottom + 30, host, focusTop, focusBottom }), "next");
+  assert.equal(turnZone({ x: 160, y: focusBottom + 30, host, focusTop, focusBottom }), "next");
   assert.equal(turnZone({ x: 360, y: 800, host, focusTop, focusBottom }), "next");
 });
 
@@ -45,7 +42,7 @@ test("taps outside the reading column do not turn the page", () => {
   );
 });
 
-test("with the focus off the column, the left third is still back", () => {
+test("the left third stays back when the line is off the column or taller than it", () => {
   assert.equal(
     turnZone({ x: 40, y: 400, host, focusTop: 2000, focusBottom: 2040 }),
     "prev",
@@ -54,9 +51,6 @@ test("with the focus off the column, the left third is still back", () => {
     turnZone({ x: 300, y: 400, host, focusTop: null, focusBottom: null }),
     "next",
   );
-});
-
-test("a tall breath keeps a back zone on the sentence itself", () => {
   assert.equal(
     turnZone({ x: 40, y: 700, host, focusTop: 60, focusBottom: 1400, tall: true }),
     "prev",

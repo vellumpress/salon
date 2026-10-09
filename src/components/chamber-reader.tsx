@@ -176,8 +176,6 @@ export function TbrReader({
   const navReveal = bar.navReveal;
   const [overflows, setOverflows] = useState(false);
   const [atEnd, setAtEnd] = useState(true);
-  /** Top of the focus line, relative to the reading column. Taps above it go back. */
-  const [prevZonePx, setPrevZonePx] = useState(0);
   const [sandCue, setSandCue] = useState(false);
   const [customSit, setCustomSit] = useState("");
   /** threshold: full = length+company; length = pair already set, sit missing; share = invite friend */
@@ -222,16 +220,16 @@ export function TbrReader({
   const navTouchAtRef = useRef(0);
   const touchPlacesRef = useRef<{ x: number; y: number; t: number }[]>([]);
   /**
-   * Fallback split when the focus line has no box yet.
-   * A tap uses the line on screen at finger-down, and the sentence index
-   * comes from the store, never from how far the column has scrolled.
+   * The page split is the left third, not the focus line. This only records
+   * whether the sentence is taller than the column. The sentence index comes
+   * from the store, never from how far the column has scrolled.
    */
   const zoneRef = useRef<{ tall: boolean; split: number; ready: boolean }>({
     tall: false,
     split: 0,
     ready: false,
   });
-  /** While the sentence is still sliding, taps use the rested split. */
+  /** While the sentence is still sliding, a tap still uses the side it landed on. */
   const slidingUntilRef = useRef(0);
   const overlayRef = useRef(overlay);
   overlayRef.current = overlay;
@@ -539,13 +537,6 @@ export function TbrReader({
   }
 
   function retreat() {
-    const slot = breathSlotRef.current;
-    // One tap on a tall sentence that is not at its top returns to the top.
-    // The next tap steps back. A pixel of leftover scroll still steps.
-    if (slot && slot.scrollTop > 3 && slot.scrollHeight - slot.clientHeight > 3) {
-      slot.scrollTop = 0;
-      return;
-    }
     stepBy(-1);
   }
 
@@ -967,8 +958,7 @@ export function TbrReader({
         setOverflows((prev) => (prev === next ? prev : next));
         const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
         setAtEnd((prev) => (prev === end ? prev : end));
-        const split = rememberZone(next);
-        setPrevZonePx((prev) => (prev === split ? prev : split));
+        rememberZone(next);
       };
       measure();
       const ro = new ResizeObserver(measure);
@@ -1052,9 +1042,9 @@ export function TbrReader({
         !tooTall &&
         travel > 1 &&
         track.dataset.ready === "1";
-      // Measure the landed line, not the first frame of the slide. A zone
-      // taken mid-animation sits below the sentence the reader sees, and the
-      // next-sentence button then covers the back area until the next resize.
+      // Measure the landed line, not the first frame of the slide. The back
+      // side is the left third at every height, so a sliding sentence cannot
+      // move that side.
       const previousTransition = track.style.transition;
       track.style.transition = "none";
       track.dataset.ready = "0";
@@ -1072,7 +1062,6 @@ export function TbrReader({
         ? Math.max(0, Math.min(Math.round(hostRect.height), Math.round(focusTop)))
         : 0;
       zoneRef.current = { tall: tooTall, split: zone, ready: true };
-      setPrevZonePx((prev) => (prev === zone ? prev : zone));
       if (motion) {
         // Land on the true center, but start one breath lower so the column
         // moves up. Windowed lookback can change height by much more than a
@@ -1273,28 +1262,10 @@ export function TbrReader({
     });
   }
 
-  function pinnedToTop() {
-    const slot = breathSlotRef.current;
-    const host = turnHostRef.current;
-    if (!slot || !host) return false;
-    const line = slot.querySelector(".breath-now");
-    if (!line) return zoneRef.current.tall;
-    // Scene-length lines are pinned under the header. Nothing sits above
-    // them, so the left third is the back tap even when they do not scroll.
-    return line.getBoundingClientRect().top <= host.getBoundingClientRect().top + 12;
-  }
-
   function columnScrolls() {
     const slot = breathSlotRef.current;
     if (!slot) return false;
     return slot.scrollHeight - slot.clientHeight > 24;
-  }
-
-  function lineIsSliding() {
-    if (performance.now() < slidingUntilRef.current) return true;
-    const track = trackRef.current;
-    if (!track) return false;
-    return track.getAnimations().some((anim) => anim.playState === "running");
   }
 
   function zoneFrom(target: EventTarget | null, x: number, y: number) {
@@ -1338,50 +1309,22 @@ export function TbrReader({
     const host = turnHostRef.current;
     if (!host) return null;
     const hostRect = host.getBoundingClientRect();
-    const box = {
-      left: hostRect.left,
-      top: hostRect.top,
-      right: hostRect.right,
-      bottom: hostRect.bottom,
-      width: hostRect.width,
-    };
-    if (pinnedToTop()) {
-      return turnZone({ x, y, host: box, focusTop: null, focusBottom: null, tall: true });
-    }
-    // The sentence on screen is the boundary once it has settled.
-    // While it is still sliding, the moving box sits lower than the rested
-    // line, and a second tap on the same spot would reverse the first.
-    const line = breathSlotRef.current?.querySelector(".breath-now");
-    const lineRect = line?.getBoundingClientRect();
-    const lineInColumn =
-      lineRect &&
-      lineRect.height > 0 &&
-      lineRect.bottom > hostRect.top &&
-      lineRect.top < hostRect.bottom;
-    if (!lineIsSliding() && lineInColumn && lineRect) {
-      return turnZone({
-        x,
-        y,
-        host: box,
-        focusTop: lineRect.top,
-        focusBottom: lineRect.bottom,
-      });
-    }
-    const zone = zoneRef.current;
-    if (zone.ready && zone.tall) {
-      return turnZone({ x, y, host: box, focusTop: null, focusBottom: null, tall: true });
-    }
-    if (zone.ready) {
-      const focusTop = hostRect.top + zone.split;
-      return turnZone({
-        x,
-        y,
-        host: box,
-        focusTop,
-        focusBottom: focusTop + 1,
-      });
-    }
-    return turnZone({ x, y, host: box, focusTop: null, focusBottom: null });
+    const pane = readingPaneRef.current;
+    const paneTop = pane ? Number.parseFloat(getComputedStyle(pane).marginTop) : 0;
+    const lead = Number.isFinite(paneTop) && paneTop < 0 ? -paneTop : 0;
+    return turnZone({
+      x,
+      y,
+      host: {
+        left: hostRect.left,
+        top: hostRect.top - lead,
+        right: hostRect.right,
+        bottom: hostRect.bottom,
+        width: hostRect.width,
+      },
+      focusTop: null,
+      focusBottom: null,
+    });
   }
 
   function stepZone(zone: "prev" | "next" | null) {
@@ -1416,6 +1359,12 @@ export function TbrReader({
       scrolled: false,
     });
     if (cancelled && kind !== "tap") return;
+    // The left side is always one sentence back. A tall sentence must not
+    // turn that tap into a scroll, and a shaky finger must not drop it.
+    if (start.zone === "prev" && kind !== "swipe-next") {
+      stepZone("prev");
+      return;
+    }
     if (kind === "swipe-next") {
       stepZone("next");
       return;
@@ -1464,8 +1413,8 @@ export function TbrReader({
       scrollTop: slot?.scrollTop ?? 0,
       scrolled: false,
       turned: false,
-      // Frozen at finger-down. The sentence keeps sliding after the touch,
-      // and reading the line again on the lift flips a back tap into forward.
+      // Frozen at finger-down. The left third stays back even while the
+      // sentence is still sliding.
       zone,
     };
     try {
@@ -1482,6 +1431,7 @@ export function TbrReader({
     if (!start || start.id !== e.pointerId || ghostPointer(e)) return;
     start.lastX = e.clientX;
     start.lastY = e.clientY;
+    if (start.zone === "prev") return;
     const slot = breathSlotRef.current;
     if (!slot || !columnScrolls()) return;
     const dy = e.clientY - start.y;
@@ -1627,11 +1577,7 @@ export function TbrReader({
         data-turn="prev"
         tabIndex={-1}
         aria-label="Previous sentence"
-        className={cn(
-          "absolute top-0 z-10 cursor-w-resize",
-          overflows ? "left-0 h-full w-1/3" : "inset-x-0",
-        )}
-        style={overflows ? undefined : { height: Math.max(0, prevZonePx) }}
+        className="reader-side absolute left-0 top-0 z-10 h-full w-1/3 cursor-w-resize"
         onMouseDown={(e) => e.preventDefault()}
       />
       <button
@@ -1639,11 +1585,7 @@ export function TbrReader({
         data-turn="next"
         tabIndex={-1}
         aria-label="Next sentence"
-        className={cn(
-          "absolute z-10 cursor-e-resize",
-          overflows ? "top-0 right-0 h-full w-2/3" : "inset-x-0 bottom-0",
-        )}
-        style={overflows ? undefined : { top: Math.max(0, prevZonePx) }}
+        className="reader-side absolute top-0 right-0 z-10 h-full w-2/3 cursor-e-resize"
         onMouseDown={(e) => e.preventDefault()}
       />
 

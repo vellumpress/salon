@@ -233,33 +233,11 @@ async function column(page: Page): Promise<Column> {
   return spot;
 }
 
-function lineAtTop(spot: Column) {
-  return spot.lineTop <= spot.host.top + 12;
-}
-
 function backPoint(spot: Column) {
   const limit = Math.min(spot.host.bottom - 8, spot.footerTop - 12);
-  // A sentence pinned to the top has no band above the words. The left third
-  // is back, including while a taller line is still arriving.
-  if (lineAtTop(spot)) {
-    // Near the top, not the middle. A line can sit under the header for a
-    // frame and then drop to the center; a point halfway down would land on
-    // the words and step forward.
-    return {
-      x: Math.round(spot.host.left + Math.max(12, spot.host.width * 0.12)),
-      y: Math.round(Math.min(limit, spot.host.top + 16)),
-    };
-  }
-  const band = spot.lineTop - spot.host.top;
-  // Stay near the top of the column. A line still below the screen makes the
-  // gap look huge, and a point halfway down that gap is on the sentence once
-  // it comes to rest.
-  const y = Math.round(
-    Math.min(limit - 1, spot.lineTop - 8, spot.host.top + Math.max(12, Math.min(band - 8, 18))),
-  );
   return {
-    x: Math.round(spot.host.left + spot.host.width * 0.72),
-    y: Math.max(Math.round(spot.host.top + 4), y),
+    x: Math.round(spot.host.left + Math.max(12, spot.host.width * 0.12)),
+    y: Math.round(Math.min(limit - 1, Math.max(spot.host.top + 8, spot.host.top + spot.host.height * 0.42))),
   };
 }
 

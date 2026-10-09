@@ -141,14 +141,15 @@ async function phonePage(browser: Browser) {
 type Spot = {
   index: number;
   look: number;
-  x: number;
-  justAbove: number;
+  backX: number;
+  forwardX: number;
+  high: number;
   middle: number;
-  nearTop: number;
+  low: number;
   onLine: number;
   below: number;
-  focusTop: number;
-  hostTop: number;
+  hostLeft: number;
+  hostWidth: number;
   bar: string | null;
 };
 
@@ -161,27 +162,28 @@ async function spots(page: Page): Promise<Spot> {
     const h = host.getBoundingClientRect();
     const row = line.getBoundingClientRect();
     const footer = document.querySelector("footer")?.getBoundingClientRect();
+    const limit = Math.min(h.bottom - 8, (footer?.top ?? h.bottom) - 12);
     const preview = row.bottom + 28;
     const aboveFooter = !footer || preview < footer.top - 6;
     return {
       index: Number(frame.getAttribute("data-breath-index")),
       look: document.querySelectorAll(".lookback-slot .look-line").length,
-      x: Math.round(h.left + h.width * 0.72),
-      justAbove: Math.round(row.top - 10),
-      middle: Math.round(h.top + (row.top - h.top) / 2),
-      nearTop: Math.round(h.top + 14),
-      onLine: Math.round(row.top + Math.min(12, Math.max(4, row.height / 2))),
-      below: Math.round(aboveFooter ? preview : row.top + 8),
-      focusTop: row.top,
-      hostTop: h.top,
+      backX: Math.round(h.left + Math.max(12, h.width * 0.12)),
+      forwardX: Math.round(h.left + h.width * 0.72),
+      high: Math.round(Math.min(limit - 1, h.top + 18)),
+      middle: Math.round(Math.min(limit - 1, h.top + h.height * 0.45)),
+      low: Math.round(Math.min(limit - 1, h.top + h.height * 0.78)),
+      onLine: Math.round(Math.min(limit - 1, row.top + Math.min(12, Math.max(4, row.height / 2)))),
+      below: Math.round(Math.min(limit - 1, aboveFooter ? preview : row.top + 8)),
+      hostLeft: h.left,
+      hostWidth: h.width,
       bar: document.querySelector("[data-reader-bar]")?.getAttribute("data-reader-bar") ?? null,
     };
   });
   assert.ok(spot, "focus line missing");
-  assert.ok(spot.justAbove < spot.focusTop, "just-above spot is not above the focus line");
-  assert.ok(spot.middle < spot.focusTop, "middle spot is not above the focus line");
-  assert.ok(spot.nearTop < spot.focusTop, "top spot is not above the focus line");
-  assert.ok(spot.nearTop >= spot.hostTop, "top spot is outside the reading column");
+  assert.ok(spot.backX < spot.hostLeft + spot.hostWidth / 3, "back spot is not in the left third");
+  assert.ok(spot.forwardX >= spot.hostLeft + spot.hostWidth / 3, "forward spot is still on the left");
+  assert.ok(spot.high < spot.middle && spot.middle < spot.low, "left taps do not cover the column");
   return spot;
 }
 
@@ -236,27 +238,23 @@ async function settle(page: Page, expected: number) {
   assert.equal(bar, "closed", "a page tap opened Keep/Send");
 }
 
-async function tapBack(page: Page, where: "justAbove" | "middle" | "nearTop") {
+async function tapBack(page: Page, where: "high" | "middle" | "low") {
   const spot = await spots(page);
   const y = spot[where];
   const hit = await page.evaluate(
     ({ x, y }) => {
       const el = document.elementFromPoint(x, y);
-      return Boolean(el?.closest("[data-reader-text]"));
+      return el?.closest("[data-turn]")?.getAttribute("data-turn") ?? "";
     },
-    { x: spot.x, y },
+    { x: spot.backX, y },
   );
-  assert.equal(hit, true, `${where} tap is not on the reading column`);
+  assert.equal(hit, "prev", `${where} tap is not the back side`);
   const next = spot.index - 1;
-  await page.touchscreen.tap(spot.x, y);
+  await page.touchscreen.tap(spot.backX, y);
   await settle(page, next);
 }
 
-async function backSeries(
-  page: Page,
-  where: "justAbove" | "middle" | "nearTop",
-  count: number,
-) {
+async function backSeries(page: Page, where: "high" | "middle" | "low", count: number) {
   for (let i = 0; i < count; i += 1) {
     await tapBack(page, where);
   }
@@ -292,7 +290,7 @@ async function openCatalog(page: Page, at: number) {
 }
 
 test(
-  "iPhone taps above the focus go back one sentence on a catalog sit",
+  "Chromium: the left third goes back one sentence on a catalog sit",
   { timeout: 360_000 },
   async () => {
     const stop = await ensureServer();
@@ -301,7 +299,7 @@ test(
       const page = await phonePage(browser);
       const boundary = mirthSceneStart();
       await openCatalog(page, 80);
-      await backSeries(page, "justAbove", BACKS);
+      await backSeries(page, "high", BACKS);
       assert.equal(await breathIndex(page), 80 - BACKS);
 
       await openCatalog(page, 80);
@@ -312,13 +310,13 @@ test(
       const opened = await spots(page);
       assert.equal(opened.look, 0, "a chapter's first sentence still shows already-read lines");
       assert.equal(opened.index, boundary);
-      await backSeries(page, "nearTop", BACKS);
+      await backSeries(page, "low", BACKS);
       assert.equal(await breathIndex(page), boundary - BACKS);
 
       await openCatalog(page, 0);
       const first = await spots(page);
       assert.equal(first.look, 0);
-      await page.touchscreen.tap(first.x, first.justAbove);
+      await page.touchscreen.tap(first.backX, first.high);
       await frames(page);
       assert.equal(await breathIndex(page), 0, "back from the first sentence moved");
       assert.equal(
@@ -329,19 +327,19 @@ test(
       await openCatalog(page, 24);
       for (let i = 0; i < 8; i += 1) {
         const spot = await spots(page);
-        await page.touchscreen.tap(spot.x, spot.onLine);
+        await page.touchscreen.tap(spot.forwardX, spot.onLine);
         await settle(page, spot.index + 1);
       }
       const beforePreview = await spots(page);
-      await page.touchscreen.tap(beforePreview.x, beforePreview.below);
+      await page.touchscreen.tap(beforePreview.forwardX, beforePreview.below);
       await settle(page, beforePreview.index + 1);
 
       await openCatalog(page, 40);
       const rapidStart = 40;
       for (let i = 0; i < 12; i += 1) {
         const spot = await spots(page);
-        // The top of the column stays above the focus line while it slides.
-        await page.touchscreen.tap(spot.x, spot.nearTop);
+        // The left third stays back while the sentence is still sliding.
+        await page.touchscreen.tap(spot.backX, spot.low);
         await page.waitForFunction(
           (want) =>
             document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
@@ -374,7 +372,7 @@ test(
           host.dispatchEvent(new PointerEvent("pointerup", base));
           host.dispatchEvent(new MouseEvent("click", base));
         },
-        { x: spot.x, y: spot.justAbove },
+        { x: spot.backX, y: spot.high },
       );
       await settle(page, beforeDouble - 1);
     } finally {
@@ -385,7 +383,147 @@ test(
 );
 
 test(
-  "iPhone taps above the focus go back one sentence in an imported PDF",
+  "Chromium: twenty left-side taps each go back one, and the right side above the sentence goes forward",
+  { timeout: 180_000 },
+  async () => {
+    const stop = await ensureServer();
+    const browser = await launchBrowser();
+    try {
+      const page = await phonePage(browser);
+      await openCatalog(page, 24);
+      const opened = await spots(page);
+      const above = await page.evaluate(() => {
+        const host = document.querySelector("[data-reader-text]");
+        if (!host) return null;
+        const box = host.getBoundingClientRect();
+        return {
+          x: Math.round(box.left + box.width * 0.72),
+          y: Math.round(box.top + 18),
+        };
+      });
+      assert.ok(above, "reading column missing");
+      assert.ok(above.x >= opened.hostLeft + opened.hostWidth / 3);
+      const forwardHit = await page.evaluate(
+        ({ x, y }) => document.elementFromPoint(x, y)?.closest("[data-turn]")?.getAttribute("data-turn") ?? "",
+        above,
+      );
+      assert.equal(forwardHit, "next", "right side above the sentence is not forward");
+      await page.touchscreen.tap(above.x, above.y);
+      await page.waitForFunction(
+        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "25",
+        undefined,
+        { timeout: 4000 },
+      );
+
+      for (let i = 0; i < 20; i += 1) {
+        await spots(page);
+        const xs = [0.08, 0.18, 0.28];
+        const ys = [0.12, 0.28, 0.46, 0.64, 0.82];
+        const point = await page.evaluate(
+          ({ xi, yi }) => {
+            const host = document.querySelector("[data-reader-text]");
+            if (!host) return null;
+            const box = host.getBoundingClientRect();
+            const footer = document.querySelector("footer")?.getBoundingClientRect();
+            const limit = Math.min(box.bottom - 8, (footer?.top ?? box.bottom) - 12);
+            const x = Math.round(box.left + box.width * xi);
+            const y = Math.round(Math.min(limit - 1, box.top + box.height * yi));
+            const hit = document.elementFromPoint(x, y)?.closest("[data-turn]")?.getAttribute("data-turn") ?? "";
+            return { x, y, hit, split: box.left + box.width / 3 };
+          },
+          { xi: xs[i % xs.length]!, yi: ys[i % ys.length]! },
+        );
+        assert.ok(point, "reading column missing");
+        assert.ok(point.x < point.split, `tap ${i} left the left third`);
+        assert.equal(point.hit, "prev", `tap ${i} is not the back side`);
+        await page.touchscreen.tap(point.x, point.y);
+        await page.waitForFunction(
+          (want) =>
+            document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === String(want),
+          24 - i,
+          { timeout: 4000 },
+        );
+      }
+      assert.equal(await breathIndex(page), 5);
+
+      await page.goto(`${ORIGIN}/salon/read/lamia?at=5`, { waitUntil: "domcontentloaded" });
+      await page.locator(".breath-now").waitFor();
+      await page.waitForFunction(
+        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "5",
+        undefined,
+        { timeout: 30_000 },
+      );
+      const tall = await page.evaluate(() => {
+        const host = document.querySelector("[data-reader-text]");
+        const slot = document.querySelector(".breath-slot");
+        if (!(host instanceof HTMLElement) || !(slot instanceof HTMLElement)) return null;
+        const box = host.getBoundingClientRect();
+        return {
+          overflows: slot.scrollHeight - slot.clientHeight > 24,
+          scrollTop: slot.scrollTop,
+          x: Math.round(box.left + box.width * 0.7),
+          y: Math.round(box.top + box.height * 0.72),
+          backX: Math.round(box.left + box.width * 0.12),
+          backY: Math.round(box.top + box.height * 0.72),
+        };
+      });
+      assert.ok(tall, "lamia column missing");
+      assert.equal(tall.overflows, true, "lamia 5 is not taller than the column");
+      assert.ok(tall.scrollTop < 4);
+      await page.evaluate(({ x, y }) => {
+        const host = document.querySelector("[data-reader-text]");
+        if (!host) throw new Error("missing reading column");
+        const fire = (type: string, py: number) => {
+          host.dispatchEvent(
+            new PointerEvent(type, {
+              bubbles: true,
+              cancelable: true,
+              clientX: x,
+              clientY: py,
+              pointerId: 9,
+              button: 0,
+              buttons: type === "pointerup" ? 0 : 1,
+              pointerType: "touch",
+              isPrimary: true,
+            }),
+          );
+        };
+        fire("pointerdown", y);
+        fire("pointermove", y - 40);
+        fire("pointermove", y - 90);
+        fire("pointerup", y - 90);
+      }, { x: tall.x, y: tall.y });
+      const scrolled = await page.evaluate(() => {
+        const slot = document.querySelector(".breath-slot");
+        const frame = document.querySelector("[data-breath-index]");
+        return {
+          index: frame?.getAttribute("data-breath-index"),
+          scrollTop: slot instanceof HTMLElement ? slot.scrollTop : 0,
+        };
+      });
+      assert.equal(scrolled.index, "5");
+      assert.ok(scrolled.scrollTop > 20, "drag did not leave the top of the sentence");
+      await page.touchscreen.tap(tall.backX, tall.backY);
+      await page.waitForFunction(
+        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "4",
+        undefined,
+        { timeout: 4000 },
+      );
+      const landed = await page.evaluate(() => {
+        const slot = document.querySelector(".breath-slot");
+        return slot instanceof HTMLElement ? slot.scrollTop : 99;
+      });
+      assert.equal(await breathIndex(page), 4);
+      assert.ok(landed < 4, "the previous sentence did not open at its start");
+    } finally {
+      await browser.close();
+      await stop();
+    }
+  },
+);
+
+test(
+  "Chromium: the left third goes back one sentence in an imported PDF",
   { timeout: 360_000 },
   async () => {
     const stop = await ensureServer();
@@ -409,13 +547,13 @@ test(
       const start = await spots(page);
       assert.equal(start.index, 0);
       assert.equal(start.look, 0);
-      await page.touchscreen.tap(start.x, start.justAbove);
+      await page.touchscreen.tap(start.backX, start.high);
       await frames(page);
       assert.equal(await breathIndex(page), 0, "back from the first imported sentence moved");
 
       for (let i = 0; i < 70; i += 1) {
         const spot = await spots(page);
-        await page.touchscreen.tap(spot.x, spot.onLine);
+        await page.touchscreen.tap(spot.forwardX, spot.onLine);
         await page.waitForFunction(
           (want) =>
             document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
@@ -428,12 +566,12 @@ test(
       assert.equal(await breathIndex(page), 70);
       await lineSettled(page);
 
-      await backSeries(page, "justAbove", BACKS);
+      await backSeries(page, "high", BACKS);
       assert.equal(await breathIndex(page), 70 - BACKS);
 
       for (let i = 0; i < BACKS; i += 1) {
         const spot = await spots(page);
-        await page.touchscreen.tap(spot.x, spot.onLine);
+        await page.touchscreen.tap(spot.forwardX, spot.onLine);
         await page.waitForFunction(
           (want) =>
             document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
@@ -448,7 +586,7 @@ test(
 
       for (let i = 0; i < BACKS; i += 1) {
         const spot = await spots(page);
-        await page.touchscreen.tap(spot.x, spot.onLine);
+        await page.touchscreen.tap(spot.forwardX, spot.onLine);
         await page.waitForFunction(
           (want) =>
             document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
@@ -458,10 +596,10 @@ test(
         );
       }
       // Part breaks every 20 sentences. Step onto one, then back across it.
-      // The top of the column stays a back tap while the line is still sliding.
+      // The left third stays a back tap while the line is still sliding.
       while ((await breathIndex(page)) > 40) {
         const spot = await spots(page);
-        await page.touchscreen.tap(spot.x, spot.nearTop);
+        await page.touchscreen.tap(spot.backX, spot.low);
         await page.waitForFunction(
           (want) =>
             document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
@@ -473,7 +611,7 @@ test(
       const edge = await spots(page);
       assert.equal(edge.index, 40);
       assert.equal(edge.look, 0, "first sentence of an imported part still shows read lines");
-      await backSeries(page, "nearTop", BACKS);
+      await backSeries(page, "low", BACKS);
       assert.equal(await breathIndex(page), 40 - BACKS);
     } finally {
       await browser.close();
