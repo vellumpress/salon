@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import test from "node:test";
+import test, { type TestContext } from "node:test";
 import { devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 
@@ -42,8 +42,20 @@ function fixturePdf(count: number): Uint8Array {
   return new TextEncoder().encode(pdf);
 }
 
-async function launch(): Promise<Browser> {
-  return webkit.launch();
+async function launch(): Promise<Browser | null> {
+  try {
+    return await webkit.launch();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    if (!/Executable doesn't exist|browserType\.launch/.test(message)) throw error;
+    return null;
+  }
+}
+
+async function requireWebKit(t: TestContext): Promise<Browser | null> {
+  const browser = await launch();
+  if (!browser) t.skip("WebKit is not installed");
+  return browser;
 }
 
 async function phone(browser: Browser) {
@@ -186,9 +198,10 @@ async function mouseLift(page: Page, x: number, y: number) {
 test(
   "WebKit: a mouse back tap just after a forward touch goes back one sentence",
   { timeout: 120_000 },
-  async () => {
+  async (t) => {
+    const browser = await requireWebKit(t);
+    if (!browser) return;
     const stop = await ensureReaderServer();
-    const browser = await launch();
     try {
       const page = await phone(browser);
       await openAt(page, "the-house-of-mirth", 12);
@@ -218,9 +231,10 @@ test(
 test(
   "WebKit: a mouse pointerup finishes a back touch that never got pointerup",
   { timeout: 120_000 },
-  async () => {
+  async (t) => {
+    const browser = await requireWebKit(t);
+    if (!browser) return;
     const stop = await ensureReaderServer();
-    const browser = await launch();
     try {
       const page = await phone(browser);
       await openAt(page, "the-house-of-mirth", 12);
@@ -242,9 +256,10 @@ test(
 test(
   "WebKit: Prev goes back when the click never arrives",
   { timeout: 120_000 },
-  async () => {
+  async (t) => {
+    const browser = await requireWebKit(t);
+    if (!browser) return;
     const stop = await ensureReaderServer();
-    const browser = await launch();
     try {
       const page = await phone(browser);
       await openAt(page, "the-house-of-mirth", 12);
@@ -301,9 +316,10 @@ test(
 test(
   "WebKit: a tall sentence returns to its top before the next back tap steps",
   { timeout: 120_000 },
-  async () => {
+  async (t) => {
+    const browser = await requireWebKit(t);
+    if (!browser) return;
     const stop = await ensureReaderServer();
-    const browser = await launch();
     try {
       const page = await phone(browser);
       await openAt(page, "lamia", 5);
@@ -368,9 +384,10 @@ test(
 test(
   "WebKit: an imported PDF mouse back tap just after a forward touch goes back",
   { timeout: 180_000 },
-  async () => {
+  async (t) => {
+    const browser = await requireWebKit(t);
+    if (!browser) return;
     const stop = await ensureReaderServer();
-    const browser = await launch();
     try {
       const page = await phone(browser);
       await page.goto(`${ORIGIN}/salon/page`, { waitUntil: "domcontentloaded" });
