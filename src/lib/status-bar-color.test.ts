@@ -234,8 +234,10 @@ test("the solo reader runs past lines through the status bar without covering th
   assert.match(header, /padding-top:\s*env\(safe-area-inset-top,\s*0px\)/);
 
   const bleed = cssBlock(css, ".reader-turn-bleed");
-  assert.match(bleed, /margin-top:\s*calc\(-1 \* var\(--reader-top-lead,\s*0px\)\)/);
   assert.match(bleed, /margin-bottom:\s*calc\(-1 \* \(3rem \+ env\(safe-area-inset-bottom,\s*0px\)\)\)/);
+  assert.doesNotMatch(bleed, /margin-top/);
+  const paneBleed = cssBlock(css, ".reader-turn-bleed > .reading-pane");
+  assert.match(paneBleed, /margin-top:\s*calc\(-1 \* var\(--reader-top-lead,\s*0px\)\)/);
 
   const dropped = cssBlock(css, "html:has(.reader-frame:not(.together-lock)) .status-bar-fill");
   assert.match(dropped, /z-index:\s*0/);

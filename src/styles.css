@@ -1753,8 +1753,14 @@ html[data-status-motion="1"] .status-bar-fill::before {
 }
 
 .reader-turn-bleed {
-  margin-top: calc(-1 * var(--reader-top-lead, 0px));
   margin-bottom: calc(-1 * (3rem + env(safe-area-inset-bottom, 0px)));
+}
+
+/* The pane, not the tap column, runs up through the mark row and the status
+   bar. The column's box stays under the header, so a back tap at the top of
+   the page still hits the sentences when the bar is open. */
+.reader-turn-bleed > .reading-pane {
+  margin-top: calc(-1 * var(--reader-top-lead, 0px));
 }
 
 /* The status-bar fill is a solid band so other pages have an edge to sample.

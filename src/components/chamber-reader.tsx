@@ -996,7 +996,8 @@ export function TbrReader({
       const host = turnHostRef.current;
       const bleed = columnBleed(host);
       const overlap = bleed.bottom;
-      const lead = bleed.top;
+      const paneTop = Number.parseFloat(getComputedStyle(pane).marginTop);
+      const lead = Number.isFinite(paneTop) && paneTop < 0 ? -paneTop : 0;
       const readingHeight = Math.max(0, height - overlap - lead);
       const anchorPx = focusAnchorPx(height, overlap, CENTER_LINE_ANCHOR, lead);
       const tooTall = breathTooTall(line.scrollHeight, readingHeight || height);
@@ -1094,7 +1095,9 @@ export function TbrReader({
     const sigNow = () => {
       const lineNow = slot.querySelector<HTMLElement>(".breath-now");
       const bleedNow = columnBleed(turnHostRef.current);
-      return `${Math.round(pane.clientHeight)}:${lineNow?.clientHeight ?? 0}:${lookbackSlotRef.current?.offsetHeight ?? 0}:${upcomingSlotRef.current?.offsetHeight ?? 0}:${Math.round(bleedNow.bottom)}:${Math.round(bleedNow.top)}`;
+      const paneTopNow = Number.parseFloat(getComputedStyle(pane).marginTop);
+      const leadNow = Number.isFinite(paneTopNow) && paneTopNow < 0 ? Math.round(-paneTopNow) : 0;
+      return `${Math.round(pane.clientHeight)}:${lineNow?.clientHeight ?? 0}:${lookbackSlotRef.current?.offsetHeight ?? 0}:${upcomingSlotRef.current?.offsetHeight ?? 0}:${Math.round(bleedNow.bottom)}:${leadNow}`;
     };
 
     place(true);
