@@ -323,7 +323,7 @@ test(
 );
 
 test(
-  "WebKit: a tall sentence returns to its top before the next back tap steps",
+  "WebKit: a left tap on a scrolled tall sentence goes back one",
   { timeout: 120_000 },
   async (t) => {
     if (!(await webkitInstalled())) {
@@ -366,26 +366,66 @@ test(
       const scrolled = await column(page);
       assert.equal(scrolled.index, 5);
       assert.ok(scrolled.scrollTop > 20, "drag did not leave the top of the sentence");
-      const back = { x: Math.round(scrolled.host.left + 20), y: Math.round(scrolled.host.top + scrolled.host.height * 0.4) };
-      await page.touchscreen.tap(back.x, back.y);
-      await page.waitForFunction(
-        () => {
-          const slot = document.querySelector(".breath-slot") as HTMLElement | null;
-          return slot != null && slot.scrollTop < 4;
-        },
-        undefined,
-        { timeout: 2000 },
-      );
-      const topped = await column(page);
-      assert.equal(topped.index, 5, "first back tap left the tall sentence");
-      assert.ok(topped.scrollTop < 4, "first back tap did not reach the top");
+      const back = {
+        x: Math.round(scrolled.host.left + scrolled.host.width * 0.12),
+        y: Math.round(scrolled.host.top + scrolled.host.height * 0.72),
+      };
       await page.touchscreen.tap(back.x, back.y);
       await page.waitForFunction(
         () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "4",
         undefined,
         { timeout: 2000 },
       );
-      assert.equal(await breathIndex(page), 4);
+      const landed = await column(page);
+      assert.equal(landed.index, 4);
+      assert.ok(landed.scrollTop < 4, "the previous sentence did not open at its start");
+    } finally {
+      await browser.close();
+      await stop();
+    }
+  },
+);
+
+test(
+  "WebKit: twenty left-side taps each go back one sentence",
+  { timeout: 180_000 },
+  async (t) => {
+    if (!(await webkitInstalled())) {
+      t.skip("WebKit is not installed");
+      return;
+    }
+    const stop = await ensureReaderServer();
+    const browser = await launch();
+    try {
+      const page = await phone(browser);
+      await openAt(page, "the-house-of-mirth", 24);
+      const opened = await column(page);
+      const forward = {
+        x: Math.round(opened.host.left + opened.host.width * 0.72),
+        y: Math.round(opened.host.top + 18),
+      };
+      await page.touchscreen.tap(forward.x, forward.y);
+      await page.waitForFunction(
+        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "25",
+        undefined,
+        { timeout: 4000 },
+      );
+      for (let i = 0; i < 20; i += 1) {
+        const spot = await column(page);
+        const xs = [0.08, 0.18, 0.28];
+        const ys = [0.12, 0.28, 0.46, 0.64, 0.82];
+        const x = Math.round(spot.host.left + spot.host.width * xs[i % xs.length]!);
+        const y = Math.round(spot.host.top + Math.min(spot.host.height - 12, spot.host.height * ys[i % ys.length]!));
+        assert.ok(x < spot.host.left + spot.host.width / 3, "tap left the left third");
+        await page.touchscreen.tap(x, y);
+        await page.waitForFunction(
+          (want) =>
+            document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === String(want),
+          24 - i,
+          { timeout: 4000 },
+        );
+      }
+      assert.equal(await breathIndex(page), 5);
     } finally {
       await browser.close();
       await stop();

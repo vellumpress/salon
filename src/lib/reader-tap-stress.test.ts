@@ -342,27 +342,12 @@ async function aim(
       const footer = document.querySelector("footer")?.getBoundingClientRect();
       const limit = Math.min(host.bottom - 8, (footer?.top ?? host.bottom) - 12);
       const pinned = row.top <= host.top + 12;
-      let x = host.left + host.width * 0.62;
-      let y = host.top + 16;
-      // Stable bands. A burst of taps reuses one point while the sentence
-      // slides, so the point has to stay on the same side of the words.
-      if (pinned) {
-        x = direction < 0 ? host.left + Math.max(12, host.width * 0.12) : host.left + host.width * 0.72;
-        y = Math.min(limit - 1, host.top + Math.max(24, host.height * 0.45));
-      } else if (direction < 0) {
-        // A line that rests just under the header still has a back band above
-        // the words. Keep the tap in the left third too, so a tall sentence's
-        // back control and a short sentence's above-the-line zone agree.
-        y = Math.min(row.top - 4, host.top + 12);
-        if (!(y >= host.top && y < row.top && y < limit)) {
-          return { ok: false as const, reason: "no back band" };
-        }
-        x = host.left + Math.max(12, host.width * 0.12);
-      } else {
-        y = Math.min(limit - 1, host.bottom - 20);
-        if (!(y >= row.top)) return { ok: false as const, reason: "no forward band" };
-      }
-      if (!(x >= host.left && x < host.right && y >= host.top && y < host.bottom)) {
+      const x =
+        direction < 0
+          ? host.left + Math.max(12, host.width * 0.12)
+          : host.left + host.width * 0.72;
+      const y = Math.min(limit - 1, host.top + (direction < 0 ? host.height * 0.42 : host.height * 0.62));
+      if (!(x >= host.left && x < host.right && y >= host.top && y < host.bottom && y < limit)) {
         return { ok: false as const, reason: "point outside" };
       }
       const index = Number(frame.getAttribute("data-breath-index"));
