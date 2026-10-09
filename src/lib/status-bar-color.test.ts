@@ -223,6 +223,31 @@ test("html and body backgrounds resolve through --status-page", () => {
   assert.match(cssBlock(css, ".cell-mark"), /background:\s*var\(--color-paper\)/);
 });
 
+test("the solo reader runs past lines through the status bar without covering them", () => {
+  const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
+  const frame = cssBlock(css, ".reader-frame:not(.together-lock)");
+  assert.match(frame, /--reader-top-lead:\s*calc\(3rem \+ 1px \+ env\(safe-area-inset-top,\s*0px\)\)/);
+  assert.match(frame, /padding-top:\s*0/);
+  assert.match(frame, /padding-bottom:\s*0/);
+
+  const header = cssBlock(css, ".reader-frame:not(.together-lock) > header");
+  assert.match(header, /padding-top:\s*env\(safe-area-inset-top,\s*0px\)/);
+
+  const bleed = cssBlock(css, ".reader-turn-bleed");
+  assert.match(bleed, /margin-bottom:\s*calc\(-1 \* \(3rem \+ env\(safe-area-inset-bottom,\s*0px\)\)\)/);
+  assert.doesNotMatch(bleed, /margin-top/);
+  const paneBleed = cssBlock(css, ".reader-turn-bleed > .reading-pane");
+  assert.match(paneBleed, /margin-top:\s*calc\(-1 \* var\(--reader-top-lead,\s*0px\)\)/);
+
+  const dropped = cssBlock(css, "html:has(.reader-frame:not(.together-lock)) .status-bar-fill");
+  assert.match(dropped, /z-index:\s*0/);
+  assert.doesNotMatch(dropped, /backdrop-filter|-webkit-backdrop-filter/);
+
+  const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
+  assert.match(reader, /focusAnchorPx\(height,\s*overlap,\s*CENTER_LINE_ANCHOR,\s*lead\)/);
+  assert.match(reader, /!together && "reader-turn-bleed"/);
+});
+
 test("the status-bar edge is solid page color and has no backdrop-filter", () => {
   const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
   const fill = cssBlock(css, ".status-bar-fill");

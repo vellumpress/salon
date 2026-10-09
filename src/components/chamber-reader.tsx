@@ -60,6 +60,7 @@ import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
 import {
   breathTooTall,
+  CENTER_LINE_ANCHOR,
   centerLineOffset,
   focusAnchorPx,
   upcomingBreaths,
@@ -96,6 +97,18 @@ function EmphasizedText({ text }: { text: string }) {
   return splitEmphasis(text).map((part, i) =>
     part.type === "em" ? <em key={i}>{part.value}</em> : part.value,
   );
+}
+
+/** Negative margin that lets the column run under chrome. Positive margins are not bleed. */
+function columnBleed(host: HTMLElement | null): { top: number; bottom: number } {
+  if (!host) return { top: 0, bottom: 0 };
+  const style = getComputedStyle(host);
+  const top = Number.parseFloat(style.marginTop);
+  const bottom = Number.parseFloat(style.marginBottom);
+  return {
+    top: Number.isFinite(top) && top < 0 ? -top : 0,
+    bottom: Number.isFinite(bottom) && bottom < 0 ? -bottom : 0,
+  };
 }
 
 export function TbrReader({
@@ -981,10 +994,12 @@ export function TbrReader({
       if (!line) return;
       const height = pane.clientHeight;
       const host = turnHostRef.current;
-      const marginBottom = host ? Number.parseFloat(getComputedStyle(host).marginBottom) : 0;
-      const overlap = Number.isFinite(marginBottom) && marginBottom < 0 ? -marginBottom : 0;
-      const readingHeight = Math.max(0, height - overlap);
-      const anchorPx = focusAnchorPx(height, overlap);
+      const bleed = columnBleed(host);
+      const overlap = bleed.bottom;
+      const paneTop = Number.parseFloat(getComputedStyle(pane).marginTop);
+      const lead = Number.isFinite(paneTop) && paneTop < 0 ? -paneTop : 0;
+      const readingHeight = Math.max(0, height - overlap - lead);
+      const anchorPx = focusAnchorPx(height, overlap, CENTER_LINE_ANCHOR, lead);
       const tooTall = breathTooTall(line.scrollHeight, readingHeight || height);
       const look = lookbackSlotRef.current;
       const ahead = upcomingSlotRef.current;
@@ -1079,10 +1094,10 @@ export function TbrReader({
 
     const sigNow = () => {
       const lineNow = slot.querySelector<HTMLElement>(".breath-now");
-      const hostEl = turnHostRef.current;
-      const margin = hostEl ? Number.parseFloat(getComputedStyle(hostEl).marginBottom) : 0;
-      const overlapNow = Number.isFinite(margin) && margin < 0 ? Math.round(-margin) : 0;
-      return `${Math.round(pane.clientHeight)}:${lineNow?.clientHeight ?? 0}:${lookbackSlotRef.current?.offsetHeight ?? 0}:${upcomingSlotRef.current?.offsetHeight ?? 0}:${overlapNow}`;
+      const bleedNow = columnBleed(turnHostRef.current);
+      const paneTopNow = Number.parseFloat(getComputedStyle(pane).marginTop);
+      const leadNow = Number.isFinite(paneTopNow) && paneTopNow < 0 ? Math.round(-paneTopNow) : 0;
+      return `${Math.round(pane.clientHeight)}:${lineNow?.clientHeight ?? 0}:${lookbackSlotRef.current?.offsetHeight ?? 0}:${upcomingSlotRef.current?.offsetHeight ?? 0}:${Math.round(bleedNow.bottom)}:${leadNow}`;
     };
 
     place(true);

@@ -83,14 +83,24 @@ export function upcomingBreaths(work: Work, index: number, limit = UPCOMING_WIND
  * 90% of the pane — it scrolls in place instead of clipping.
  */
 /**
- * Y of the focus anchor inside a pane that may run behind the hourglass.
- * `overlapPx` is that band (hourglass row plus the home indicator). The
- * anchor stays 64% of the reading area above the band.
+ * Y of the focus anchor inside a pane that may run behind the hourglass
+ * and up through the status bar.
+ * `overlapPx` is the bottom band (hourglass row plus the home indicator).
+ * `leadPx` is the top band (mark row plus the status-bar inset). The anchor
+ * stays 64% of the reading area between those bands, so extending the column
+ * does not move the focus line.
  */
-export function focusAnchorPx(paneHeight: number, overlapPx = 0, anchor = CENTER_LINE_ANCHOR): number {
+export function focusAnchorPx(
+  paneHeight: number,
+  overlapPx = 0,
+  anchor = CENTER_LINE_ANCHOR,
+  leadPx = 0,
+): number {
   if (!Number.isFinite(paneHeight) || paneHeight <= 0) return 0;
   const overlap = Number.isFinite(overlapPx) ? Math.min(paneHeight, Math.max(0, overlapPx)) : 0;
-  return (paneHeight - overlap) * anchor;
+  const room = paneHeight - overlap;
+  const lead = Number.isFinite(leadPx) ? Math.min(room, Math.max(0, leadPx)) : 0;
+  return lead + (room - lead) * anchor;
 }
 
 export function breathTooTall(scrollHeight: number, paneHeight: number, anchor = CENTER_LINE_ANCHOR): boolean {
