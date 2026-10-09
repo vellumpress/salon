@@ -315,6 +315,8 @@ test("known origin overrides", () => {
     "the-steel-flea": "Russia",
     "comedies-incl-jeppe-of-the-hill": "Denmark",
     "tales-from-the-fjeld": "Norway",
+    "a-russian-gentleman": "Russia",
+    "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",
     "strait-is-the-gate": "France",

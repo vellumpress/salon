@@ -637,6 +637,10 @@ const BLURBS: Record<string, string> = {
     "A henpecked peasant is sent to town for soap, and Jacob Shoemaker’s inn is on the way.",
   "tales-from-the-fjeld":
     "Storm-bound in a Norwegian mountain shieling, a guide and the two girls who keep it trade folk tales by the fire.",
+  "a-russian-gentleman":
+    "A heads-up before you start: this memoir shows the Bashkirs in the light of its time and a husband who beats his wife, and its second Fragment tells plainly of a landowner’s floggings, torture and killings of his serfs.",
+  "tales-by-polish-authors":
+    "A Polish peasant marches off to war with the French, and three more Polish writers follow, from a country estate to Siberian exile.",
   "the-dancing-master":
     "A heads-up before you start: frank period talk of sizing up a partner's figure. Backstage at the opera, a dancing-master dressed as a bishop explains why France needs more waltzing.",
   "the-golden-age":
