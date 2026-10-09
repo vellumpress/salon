@@ -229,13 +229,17 @@ export const FONT_FILES = [
  * A slower response still commits. Open clients are sent through `__fresh`
  * only when a cached shell's asset list differs from the new one. A first
  * install has no cached shell, so a reader already on a sentence is not
- * reloaded once precaching finishes. The new
+ * reloaded once precaching finishes. Activate claims clients and returns.
+ * The book catalog is filled afterwards and pauses while a navigation is
+ * in flight, so a `__fresh` reload is not held behind that download. The new
  * service worker takes over with skipWaiting and clients.claim. Hashes the
  * cached shell still references, including lazy chunks recorded while it was
  * current, stay in the asset cache until that shell is replaced.
  *
  * A navigation whose query contains `__fresh=` prefers the network, then the
- * cached shell (current, then retired), then a small offline page. The
+ * cached shell (current, then retired), then a small offline page. It answers
+ * within a couple of seconds: the catalog download does not sit in front of
+ * it. The
  * promise passed to respondWith never rejects — an offline `fetch` must not
  * surface as Safari "cannot open page".
  *
@@ -264,8 +268,12 @@ var BOOT = ${boot};
 var EXTRAS = ${extras};
 var FONT_FILES = ${fontFiles};
 var SHELL_RACE_MS = 600;
+var NAV_ANSWER_MS = 2000;
 var commitChain = Promise.resolve();
 var reloadedClients = {};
+var navDepth = 0;
+var precacheCtrl = null;
+var fillPromise = null;
 
 function shellUrl() {
   return new URL("/salon/", self.location.origin).href;
@@ -462,8 +470,6 @@ function commitShell(html) {
       return warmAssets(urls);
     }).then(function () {
       return pruneToGenerations(urls);
-    }).then(function () {
-      return precacheBuild();
     }).then(function () { return true; });
   });
 }
@@ -490,7 +496,7 @@ function readPreload(event) {
 function networkShell(event) {
   return withTimeout(readPreload(event).then(function (html) {
     if (html) return html;
-    return fetch(shellUrl(), { cache: "no-store" }).then(function (res) {
+    return fetch(shellUrl(), { cache: "no-store", priority: "high" }).then(function (res) {
       if (!res || !res.ok) return null;
       return res.text();
     }).then(function (text) {
@@ -610,30 +616,81 @@ function precacheHrefs() {
 function extraHrefs() {
   return absList(EXTRAS);
 }
+function abortPrecache() {
+  if (!precacheCtrl) return;
+  try { precacheCtrl.abort(); } catch (err) {}
+  precacheCtrl = null;
+}
+function precacheSignal() {
+  if (typeof AbortController !== "function") return undefined;
+  if (!precacheCtrl || precacheCtrl.signal.aborted) precacheCtrl = new AbortController();
+  return precacheCtrl.signal;
+}
+function waitUntilNavigationsClear() {
+  if (navDepth === 0) return Promise.resolve();
+  return new Promise(function (resolve) {
+    var timer = setInterval(function () {
+      if (navDepth !== 0) return;
+      clearInterval(timer);
+      resolve();
+    }, 20);
+  });
+}
+function holdNavigation(factory) {
+  navDepth += 1;
+  abortPrecache();
+  var result;
+  try {
+    result = factory();
+  } catch (err) {
+    navDepth -= 1;
+    return Promise.resolve(offlinePage());
+  }
+  return Promise.resolve(result).then(function (res) {
+    navDepth -= 1;
+    return res || offlinePage();
+  }, function () {
+    navDepth -= 1;
+    return offlinePage();
+  });
+}
 function precacheBatched(urls) {
   var i = 0;
   var stopped = false;
   function next() {
     if (stopped || i >= urls.length) return Promise.resolve();
+    if (navDepth > 0) return waitUntilNavigationsClear().then(next);
+    var start = i;
     var slice = urls.slice(i, i + 6);
-    i += 6;
+    i += slice.length;
+    var opts = { cache: "no-cache", priority: "low" };
+    var signal = precacheSignal();
+    if (signal) opts.signal = signal;
     return caches.open(ASSETS).then(function (cache) {
       return Promise.all(slice.map(function (url) {
         return cache.match(url).then(function (hit) {
           if (hit && isServableCode(hit)) return "ok";
-          return fetch(url, { cache: "no-cache" }).then(function (res) {
+          return fetch(url, opts).then(function (res) {
             if (!res || !res.ok || res.type === "opaque" || !isServableCode(res)) return "skip";
             return cache.put(url, res.clone()).then(function () { return "ok"; }, function (err) {
               var name = err && err.name ? String(err.name) : "";
               if (name === "QuotaExceededError" || /quota/i.test(String(err && err.message || err))) return "quota";
               return "skip";
             });
-          }).catch(function () { return "skip"; });
+          }).catch(function (err) {
+            if (err && err.name === "AbortError") return "retry";
+            return "skip";
+          });
         });
       })).then(function (flags) {
         var j;
-        for (j = 0; j < flags.length; j++) if (flags[j] === "quota") stopped = true;
-        return next();
+        var retry = false;
+        for (j = 0; j < flags.length; j++) {
+          if (flags[j] === "quota") stopped = true;
+          if (flags[j] === "retry") retry = true;
+        }
+        if (retry && !stopped) i = start;
+        return waitUntilNavigationsClear().then(next);
       });
     }).catch(function () {});
   }
@@ -665,6 +722,23 @@ function warmFonts() {
 }
 function bootHrefs() {
   return absList(BOOT);
+}
+function fillCatalog() {
+  if (fillPromise) return fillPromise;
+  // After claim, not inside activate's waitUntil. A navigation that arrives
+  // while the catalog is downloading must be answered first.
+  fillPromise = waitUntilNavigationsClear().then(function () {
+    return networkShell(null).then(function (html) {
+      if (!html) return precacheBuild();
+      return readCachedShellHtml().then(function (prev) {
+        var changed = shellAssetsDiffer(prev, html);
+        return enqueueCommit(html).then(function () {
+          if (changed) return reloadOpenClients();
+        }).then(function () { return precacheBuild(); });
+      });
+    });
+  }).catch(function () {});
+  return fillPromise;
 }
 function precacheBuild() {
   var boot = bootHrefs();
@@ -701,10 +775,21 @@ function handleNavigate(event) {
   var incoming = networkShell(event);
   var decided;
   if (fresh) {
-    decided = incoming.then(function (html) {
-      if (!html) return fallbackShell();
-      event.waitUntil(enqueueCommit(html));
-      return shellResponse(html);
+    decided = withTimeout(incoming, NAV_ANSWER_MS).then(function (html) {
+      if (html) {
+        event.waitUntil(enqueueCommit(html));
+        return shellResponse(html);
+      }
+      event.waitUntil(incoming.then(function (later) {
+        if (later) return enqueueCommit(later);
+      }).catch(function () {}));
+      return readCachedShell().then(function (hit) {
+        if (hit) return hit;
+        return incoming.then(function (later) {
+          if (later) return shellResponse(later);
+          return fallbackShell();
+        });
+      });
     });
   } else {
     decided = readCachedShellHtml().then(function (prevHtml) {
@@ -841,20 +926,11 @@ self.addEventListener("activate", function (event) {
       if (self.registration.navigationPreload) return self.registration.navigationPreload.enable();
     }).then(function () {
       return self.clients.claim();
-    }).then(function () {
-      return precacheBuild();
-    }).then(function () {
-      return networkShell(null).then(function (html) {
-        if (!html) return;
-        return readCachedShellHtml().then(function (prev) {
-          var changed = shellAssetsDiffer(prev, html);
-          return enqueueCommit(html).then(function () {
-            if (changed) return reloadOpenClients();
-          });
-        });
-      });
     }),
   );
+  // Catalog fill keeps the worker busy for a long time. It must not extend
+  // the activating state: the browser holds navigations until that settles.
+  fillCatalog();
 });
 self.addEventListener("message", function (event) {
   var data = event.data || {};
@@ -902,7 +978,8 @@ self.addEventListener("fetch", function (event) {
   if (req.mode !== "navigate") return;
   if (url.origin !== self.location.origin) return;
   if (url.pathname !== "/salon" && url.pathname.indexOf("/salon/") !== 0) return;
-  event.respondWith(handleNavigate(event).catch(function () { return offlinePage(); }));
+  event.respondWith(holdNavigation(function () { return handleNavigate(event); }));
+  event.waitUntil(fillCatalog());
 });
 `;
 }
