@@ -70,6 +70,8 @@ import {
   classifyTurnGesture,
   GHOST_MOUSE_MS,
   ghostMousePointer,
+  HOLD_ARM_MS,
+  holdStepIntervalMs,
   SCROLL_ARM_PX,
   turnZone,
 } from "@/lib/reader-turn";
@@ -207,6 +209,14 @@ export function TbrReader({
     turned: boolean;
     zone: "prev" | "next" | null;
   } | null>(null);
+  /** Pending press-and-hold. Cleared on release so the repeat stops on that frame. */
+  const holdTimerRef = useRef(0);
+  useEffect(
+    () => () => {
+      if (holdTimerRef.current) window.clearTimeout(holdTimerRef.current);
+    },
+    [],
+  );
   /** Clicks owed to pointer gestures. Each one is swallowed, not turned. */
   const owedClicksRef = useRef(0);
   /** When a pointer gesture last turned. A click in this window is that finger. */
@@ -1334,13 +1344,52 @@ export function TbrReader({
     setBar((state) => reduceReaderBar(state, "page"));
   }
 
+  function clearHoldTimer() {
+    if (!holdTimerRef.current) return;
+    window.clearTimeout(holdTimerRef.current);
+    holdTimerRef.current = 0;
+  }
+
+  function fingerSlipped(start: NonNullable<(typeof gestureRef)["current"]>) {
+    return Math.hypot(start.lastX - start.x, start.lastY - start.y) >= SCROLL_ARM_PX;
+  }
+
+  /**
+   * Keep stepping while the finger stays still. The first step is the arm,
+   * not an extra tap on the way down. Book start, book end, and an open
+   * gate stop the repeat. The lift does not step again.
+   */
+  function pumpHold(start: NonNullable<(typeof gestureRef)["current"]>) {
+    holdTimerRef.current = 0;
+    if (gestureRef.current !== start || start.scrolled || fingerSlipped(start)) return;
+    const zone = start.zone;
+    if (!zone) return;
+    start.turned = true;
+    turnedAtRef.current = performance.now();
+    if (overlayRef.current !== "none") return;
+    const before = liveIndex();
+    stepZone(zone);
+    if (overlayRef.current !== "none" || liveIndex() === before) return;
+    const held = performance.now() - start.t - HOLD_ARM_MS;
+    holdTimerRef.current = window.setTimeout(() => pumpHold(start), holdStepIntervalMs(held));
+  }
+
+  function armHold(start: NonNullable<(typeof gestureRef)["current"]>) {
+    clearHoldTimer();
+    if (!start.zone) return;
+    holdTimerRef.current = window.setTimeout(() => pumpHold(start), HOLD_ARM_MS);
+  }
+
   function completeGesture(
     start: NonNullable<(typeof gestureRef)["current"]>,
     x: number,
     y: number,
     cancelled: boolean,
   ) {
-    if (start.turned) return;
+    if (start.turned) {
+      if (gestureRef.current === start) gestureRef.current = null;
+      return;
+    }
     start.turned = true;
     if (gestureRef.current === start) gestureRef.current = null;
     turnedAtRef.current = performance.now();
@@ -1402,7 +1451,7 @@ export function TbrReader({
     // Arm before the lift. iOS can deliver the compatibility click before
     // pointerup; that click must not turn, and the lift still does.
     noteOwed(1);
-    gestureRef.current = {
+    const gesture = {
       id: e.pointerId,
       x: e.clientX,
       y: e.clientY,
@@ -1417,6 +1466,8 @@ export function TbrReader({
       // sentence is still sliding.
       zone,
     };
+    gestureRef.current = gesture;
+    armHold(gesture);
     try {
       host.setPointerCapture(e.pointerId);
     } catch {
@@ -1431,6 +1482,7 @@ export function TbrReader({
     if (!start || start.id !== e.pointerId || ghostPointer(e)) return;
     start.lastX = e.clientX;
     start.lastY = e.clientY;
+    if (fingerSlipped(start)) clearHoldTimer();
     if (start.zone === "prev") return;
     const slot = breathSlotRef.current;
     if (!slot || !columnScrolls()) return;
@@ -1446,6 +1498,7 @@ export function TbrReader({
   }
 
   function finishTurn(e: ReactPointerEvent<HTMLDivElement>, cancelled: boolean) {
+    clearHoldTimer();
     // iOS can drop the touch pointerup and deliver the lift as a mouse
     // pointerup. That used to return here and leave the sentence unmoved.
     if (swallowMouse(e)) {

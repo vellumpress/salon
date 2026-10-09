@@ -19,6 +19,42 @@ export const TAP_MS = 350;
 export const SCROLL_ARM_PX = 24;
 
 /**
+ * A still finger becomes a repeat after this long. A lift before it is one tap.
+ * The repeat starts at a reading pace and speeds up while the finger stays down.
+ */
+export const HOLD_ARM_MS = 350;
+export const HOLD_START_PER_SEC = 4;
+export const HOLD_MAX_PER_SEC = 12;
+/** How long the repeat takes to climb from the slow pace to the fast one. */
+export const HOLD_RAMP_MS = 1500;
+
+/**
+ * Milliseconds until the next sentence while a finger is held.
+ * At the start of the repeat this is 4 a second. After the ramp it is 12.
+ */
+export function holdStepIntervalMs(heldAfterArmMs: number): number {
+  const t = Math.min(1, Math.max(0, heldAfterArmMs) / HOLD_RAMP_MS);
+  const eased = t * t * (3 - 2 * t);
+  const rate = HOLD_START_PER_SEC + (HOLD_MAX_PER_SEC - HOLD_START_PER_SEC) * eased;
+  return 1000 / rate;
+}
+
+/**
+ * Auto-steps a still hold produces. The lift does not add another.
+ * Shorter than the arm is a tap, counted by the caller, not here.
+ */
+export function holdStepCount(holdMs: number): number {
+  if (!(holdMs >= HOLD_ARM_MS)) return 0;
+  let steps = 0;
+  let t = HOLD_ARM_MS;
+  while (t <= holdMs + 0.001 && steps < 10_000) {
+    steps += 1;
+    t += holdStepIntervalMs(t - HOLD_ARM_MS);
+  }
+  return steps;
+}
+
+/**
  * Ghost mouse that iOS and Chromium synthesize after a touch.
  * The click itself is swallowed by a counter, not this clock. The window
  * only drops the extra pointerup, which can land late when the main thread
