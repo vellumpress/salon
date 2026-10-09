@@ -6,11 +6,10 @@ import type { ShelfWork } from "@/lib/catalog/shelf";
 import {
   RITUAL_LANES,
   defaultRitualLaneId,
-  estimateRitualMinutes,
+  ritualCardSearch,
   ritualDurationLabel,
   ritualLaneStack,
   ritualPitchFor,
-  ritualStartAt,
 } from "@/lib/catalog/rituals";
 import {
   SERIALIZE_LANE_ID,
@@ -22,7 +21,6 @@ import {
   serializeTonight,
   type SerializePlan,
 } from "@/lib/catalog/serialize";
-import { nearestSitPreset } from "@/lib/sitting";
 import { FavoriteMark } from "@/components/favorite-mark";
 import { PlaceChip, RegionSilhouette } from "@/components/place-chip";
 import { placeForId } from "@/lib/catalog/places";
@@ -453,16 +451,11 @@ function BookCell({
   duration: string;
 }) {
   const fill = fillProp ?? "paper";
-  // A reading bound mid-book (printed order) opens on its own first breath.
-  const startAt = ritualStartAt(item.id);
   return (
     <Link
       to="/read/$workId"
       params={{ workId: item.id }}
-      search={{
-        sit: nearestSitPreset(estimateRitualMinutes(item)),
-        ...(startAt !== undefined ? { at: startAt } : {}),
-      }}
+      search={ritualCardSearch(item)}
       onPointerDown={() => prefetchWork(item.id)}
       onFocus={() => prefetchWork(item.id)}
       className={cn(

@@ -2,6 +2,7 @@ import { SHELF, type ShelfWork } from "./shelf.ts";
 import { isLocalBound } from "./full-pdf.ts";
 import { mixSeed, pinThenShuffle } from "../recommend.ts";
 import { canonicalWorkId } from "../work-id-alias.ts";
+import { nearestSitPreset } from "../sitting.ts";
 import { SERIALIZE_LANE_ID } from "./serialize.ts";
 
 /** Ritual lanes — LE-polished local binds only (Gutenberg-only stay searchable elsewhere). */
@@ -2321,6 +2322,7 @@ export const RITUAL_LANES: RitualLane[] = [
  */
 export const RITUAL_START_AT: Record<string, number> = {
   // Mira Fri 9 Oct 2026 MID HOLBERG-FJELD — scene s51, "The Sheep and the Pig who Set up House" (the book binds in printed order).
+  // The card keeps this tale's own 8 minutes (ritualCardSit). The shared preset would make it 12 and run into the next tale.
   "tales-from-the-fjeld": 1658,
   // Mira Fri 9 Oct 2026 PM AKSAKOV-ZEROMSKI — scene s11, Stefan Zeromski · "Temptation" (the book binds in printed order).
   "tales-by-polish-authors": 569,
@@ -2886,6 +2888,30 @@ export function ritualLaneStack(lane: RitualLane, visit: number): ShelfWork[] {
     FIRST_SESSION_RITUAL_IDS,
     (work) => work.id,
   );
+}
+
+/**
+ * Rituals whose card link keeps the exact sitting length instead of the
+ * shared preset. Tales from the Fjeld estimates 8, and nearestSitPreset
+ * maps 8–14 onto 12. That 12-minute clock starts at "The Sheep and the Pig"
+ * and runs into the next tale. Only this id is exempt.
+ */
+const EXACT_RITUAL_CARD_SIT = new Set(["tales-from-the-fjeld"]);
+
+/** Minutes on a Ritual card's read link. */
+export function ritualCardSit(work: ShelfWork): number {
+  if (EXACT_RITUAL_CARD_SIT.has(work.id)) {
+    const exact = RITUAL_SIT_MINUTES[work.id];
+    if (typeof exact === "number" && exact > 0) return exact;
+  }
+  return nearestSitPreset(estimateRitualMinutes(work));
+}
+
+/** Search for a Ritual card: preset sit, plus `at` when the reading starts mid-book. */
+export function ritualCardSearch(work: ShelfWork): { sit: number; at?: number } {
+  const at = ritualStartAt(work.id);
+  const sit = ritualCardSit(work);
+  return at === undefined ? { sit } : { sit, at };
 }
 
 /** Coarse sitting-length label for Ritual cards (honest, not precise). */
