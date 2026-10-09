@@ -387,7 +387,8 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   // pan-tadeusz stays on the shelf, so the pin is 1151; DONA-PERFECTA brings Doña Perfecta back (1152).
   // GOOSE-MAN adds the-goose-man (1153).
   // CLAY-ZANZIBAR adds two (1155); STEEL-FLEA adds the-steel-flea (1156).
-  assert.equal(LOCAL_WORKS.length, 1156);
+  // HOLBERG-FJELD adds two (1158).
+  assert.equal(LOCAL_WORKS.length, 1158);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 

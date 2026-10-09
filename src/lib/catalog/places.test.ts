@@ -126,6 +126,8 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "the-dancing-master": { label: "Paris", region: "fr" },
     "the-little-clay-cart": { label: "Ujjayini", region: "in" },
     "the-steel-flea": { label: "Tula", region: "ru" },
+    "comedies-incl-jeppe-of-the-hill": { label: "Denmark", region: "dk" },
+    "tales-from-the-fjeld": { label: "Norway", region: "no" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
     "strait-is-the-gate": { label: "Fongueusemare", region: "fr" },
@@ -560,4 +562,14 @@ test("Fri 9 Oct AM The Steel Flea place reuses ru; Tula; no new region key", () 
   assert.ok(REGION_SHAPES.ru?.d, "ru shape");
   assert.deepEqual(placeFor(shelfWork("the-steel-flea")!), { label: "Tula", region: "ru" });
   assert.equal(CHIP_ONLY_PLACE["the-steel-flea"], undefined);
+});
+
+test("Fri 9 Oct MID HOLBERG-FJELD places reuse dk and no; Denmark and Norway; no new region key", () => {
+  assert.ok(REGION_SHAPES.dk?.d, "dk shape");
+  assert.ok(REGION_SHAPES.no?.d, "no shape");
+  // Jeppe's village is printed only as "A village road"; the play names no island, so the chip is the country.
+  assert.deepEqual(placeFor(shelfWork("comedies-incl-jeppe-of-the-hill")!), { label: "Denmark", region: "dk" });
+  assert.deepEqual(placeFor(shelfWork("tales-from-the-fjeld")!), { label: "Norway", region: "no" });
+  assert.equal(CHIP_ONLY_PLACE["comedies-incl-jeppe-of-the-hill"], undefined);
+  assert.equal(CHIP_ONLY_PLACE["tales-from-the-fjeld"], undefined);
 });

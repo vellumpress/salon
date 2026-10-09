@@ -1,0 +1,279 @@
+{
+  "id": "comedies-incl-jeppe-of-the-hill",
+  "title": "Comedies (incl. Jeppe of the Hill)",
+  "author": "Ludvig Holberg (tr. Oscar James Campbell, Jr. and Frederic Schenck)",
+  "year": "1722",
+  "note": "Opening sit: Jeppe of the Hill, Act I, Scenes 1–4, ending as Jacob goes back into the inn.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Jeppe of the Hill · Dramatis Personae",
+      "place": "Jeppe of the Hill · Dramatis Personae",
+      "reentry": "Dramatis Personae",
+      "prompt": "A word from this stretch.",
+      "front": true
+    },
+    {
+      "id": "s1",
+      "title": "Jeppe of the Hill · Act I",
+      "place": "Jeppe of the Hill · Act I",
+      "reentry": "Scene 1",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Dramatis Personae"
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Jeppe of the Hill, a peasant. Nille, his wife. Jacob Shoemaker, an innkeeper. Baron Nilus, lord of the district. Secretary to the Baron. Eric, a lackey. A Valet. Magnus, the village gossip. A Judge, two Lawyers, two Doctors, a Bailiff and his Wife, Lackeys, Retainers, and others."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Acts I, IV, and V"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Scene: A village road; on the left, Jeppe's house; on the right, Jacob Shoemaker's inn. The court in Act IV is held in the open, and a tree is used for the gallows in Act V."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Act II"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "A bedroom in the Baron's castle."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Act III"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Dining-room in the same."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Scene 1"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "(*Nille, alone.*)"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Nille: I hardly believe there's such another lazy lout in all the village as my husband, it's as much as I can do to get him up in the morning by pulling him out of bed by the hair. The scoundrel knows to-day is market-day, and yet he lies there asleep at this hour of the morning. The pastor said to me the other day, \"Nille, you are much too hard on your husband; he is and he ought to be the master of the house.\" But I answered him, \"No, my good pastor! If I should let my husband have his way in the household for a year, the gentry wouldn't get their rent nor the pastor his offering, for in that length of time he would turn all there was in the place into drink. Ought I let a man rule the household who is perfectly ready to sell his belongings and wife and children and even himself for brandy?\" The pastor had nothing to say to that, but stood there stroking his chin. The bailiff agrees with me, and says, \"My dear woman, pay no attention to the pastor. It's in the wedding-service, to be sure, that you must honor and obey your husband, but it's in your lease, which is more recent than the service, that you shall keep up your farm and meet your rent--a thing you can never do unless you haul your husband about by the hair every day and beat him to his work.\""
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "Nille: I pulled him out of bed just now and went out to the barn to see how things were getting along, when I came in again, he was sitting on a chair, asleep, with his breeches--saving your presence--pulled on one leg; so the switch had to come down from the hook, and my good Jeppe got a basting till he was wide awake again. The only thing he is afraid of is \"Master Eric,\" as I call the switch. Hey, Jeppe, you cur, haven't you got into your clothes yet? Would you like to talk to Master Eric some more? Hey, Jeppe! Come in here!"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Scene 2"
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "(*Enter Jeppe.*)"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Jeppe: I've got to have time to get dressed, Nille! I can't go to town like a hog without my breeches or my jacket."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Nille: Scurvy-neck! Haven't you had time to put on ten pairs of breeches since I waked you this morning?"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Jeppe: Have you put away Master Eric, Nille?"
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Nille: Yes, I have, but I know mighty well where to find him again, if you don't step lively. Come here!--See how he crawls.--Come here! You must go to town and buy me two pounds of soft soap, here's the money for it. But see here, if you're not back on this very spot inside of four hours, Master Eric will dance the polka on your back."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Jeppe: How can I walk four leagues in four hours, Nille?"
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "Nille: Who said anything about walking, you cuckold? You run. I've said my say once for all, now do as you like. [*Exit Nille.*]"
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Scene 3"
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "Jeppe: Now the sow's going in to eat her breakfast, while I, poor devil, must walk four leagues without bite or sup. Could any man have such a damnable wife as I have? I honestly think she's own cousin to Lucifer. Folks in the village say that Jeppe drinks, but they don't say why Jeppe drinks: I didn't get as many blows in all the ten years I was in the militia as I get in one day from my malicious wife. She beats me, the bailiff drives me to work as if I were an animal, and the deacon makes a cuckold of me. Haven't I good reason to drink? Don't I have to use the means nature gives us to drive away our troubles? If I were a dolt, I shouldn't take it to heart so, and I shouldn't drink so much, either; but it's a well-known fact that I am an intelligent man; so I feel such things more than others would, and that's why I have to drink. My neighbor Moens Christoffersen often says to me, speaking as my good friend, \"May the devil gnaw your fat belly, Jeppe! You must hit back, if you want your old woman to behave.\" But I can't do anything to protect myself, for three reasons: in the the first place, because I haven't any courage; in the second, because of that damned Master Eric hanging behind the bed, which my back can't think of without blubbering; and thirdly, because I am, if I do say it who shouldn't, a meek soul and a good Christian, who never tries to revenge himself, even on the deacon who puts one horn on me after another. I put my mite in the plate for him on the three holy-days, although he hasn't the decency to give me so much as one mug of ale all the year round. Nothing ever wounded me more deeply than the cutting speech he made me last year: I was telling how once a savage bull, that had never been afraid of any man, took fright at the sight of me; and he answered, \"Don't you see how that happened, Jeppe? The bull saw that you had bigger horns than he, so he didn't think it prudent to lock horns with his superior.\" I call you to witness, good people, if such words would not pierce an honorable man to the marrow of his bones. Still, I am so gentle that I have never even wished my wife dead. On the contrary, when she lay sick of a jaundice last year, I hoped she might live; for as hell is already full of bad women, Lucifer might send her back again, and then she'd be worse than ever. But if the deacon should die, I should be glad, for my own sake and for others' as well, for he does me nothing but evil and is no use to the parish. He's an ignorant devil, for he can't sing a note, much less mould a decent wax candle. Oh, but his predecessor, Christoffer, was a different sort of fellow. He had such a voice in his time that he sang down twelve deacons in the Credo. Once I started to quarrel openly with the deacon, when Nille herself heard him call me a cuckold. I said, \"May the devil be your cuckold, deacon!\" But what good did it do? Master Eric came right down off the wall to stop the quarrel, and my back got such a drubbing that I had to ask the deacon's leave to thank him, that he, as a well-educated man, should do such an honor to our house. Since that time I haven't thought of making any opposition. Yes, yes, Moens Christoffersen! You and the other peasants can very well talk, because your wives haven't any Master Eric hanging behind the bed. If I had one wish in the world, it would be either that my wife had no arms, or that I had no back. She may use her mouth as much as she pleases. But I must stop at Jacob Shoemaker's on the way--he'll surely let me have a pennyworth of brandy on credit--for I must have something to quench my thirst. Hey, Jacob Shoemaker! Are you up yet? Open the door, Jacob!"
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Scene 4"
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "(*Enter Jacob Shoemaker, in his shirt.*)"
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "Jacob: Who the dickens wants to get in so early?"
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "Jeppe: Good morning to you, Jacob Shoemaker."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "Jacob: Thank you, Jeppe! You are up and about bright and early to-day."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "Jeppe: Let us have a pennyworth of brandy, Jacob!"
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Jacob: With all my heart, when you show me the penny."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "Jeppe: I'll give it to you when I come back here tomorrow."
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "Jacob: Jacob Shoemaker doesn't give credit, I know you must have a penny or two about you to pay with."
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "Jeppe: Honestly, Jacob, I have nothing but what my wife gave me to spend in town for her."
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "Jacob: You can easily beat them down a few pence on what you buy. What is it you're to get her?"
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "Jeppe: I have to buy two pounds of soft soap."
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "Jacob: Why, can't you tell her the soap cost a penny or two more than you give for it?"
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "Jeppe: I'm so afraid my wife would find out about it, and then I'd be in trouble."
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "Jacob: Nonsense! How could she find out? Can't you swear that you paid out all the money? You're as stupid as an ox."
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "Jeppe: That's true, Jacob! I can do that well enough."
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "Jacob: Out with your penny."
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "Jeppe: Here you are, but you must give me a penny change."
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "Jacob: (*coming in with the glass; drinks to him*) Your health, Jeppe!"
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "Jeppe: What a lot you take, you rogue!"
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "Jacob: Oh, yes, but it's the custom for the host to drink his guest's health."
+    },
+    {
+      "id": "s1-35",
+      "sceneId": "s1",
+      "text": "Jeppe: I know it is, but bad luck to the man that started the custom. Your health, Jacob!"
+    },
+    {
+      "id": "s1-36",
+      "sceneId": "s1",
+      "text": "Jacob: Thanks, Jeppe! You'll drink the other pennyworth next, so there's no use your troubling about change. Or do you want a glass to your credit when you come again? For I give you my word I haven't any change."
+    },
+    {
+      "id": "s1-37",
+      "sceneId": "s1",
+      "text": "Jeppe: I'm damned if I do! If it's got to be spent, it might as well be spent now, so that I can feel I have something under my belt; but if you drink any of it, I won't pay."
+    },
+    {
+      "id": "s1-38",
+      "sceneId": "s1",
+      "text": "Jacob: Your health!"
+    },
+    {
+      "id": "s1-39",
+      "sceneId": "s1",
+      "text": "Jeppe: God save our friends and ill befall our enemies. That does my belly good. Um-m-m."
+    },
+    {
+      "id": "s1-40",
+      "sceneId": "s1",
+      "text": "Jacob: Good luck on your way, Jeppe."
+    },
+    {
+      "id": "s1-41",
+      "sceneId": "s1",
+      "text": "Jeppe: Thanks, Jacob Shoemaker. (*Exit Jacob.*)"
+    }
+  ]
+}

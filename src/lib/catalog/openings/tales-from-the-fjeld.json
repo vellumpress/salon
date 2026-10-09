@@ -1,0 +1,51 @@
+{
+  "id": "tales-from-the-fjeld",
+  "title": "Tales from the Fjeld",
+  "author": "Peter Christen Asbjørnsen (tr. G. W. Dasent)",
+  "year": "1874",
+  "note": "Opening sit: Tales from the Fjeld, the opening frame chapter, ending as Anders offers to tell the tale of Osborn's Pipe.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Tales from the Fjeld",
+      "place": "Tales from the Fjeld",
+      "reentry": "We were up on the Fjeld, Edward and I and Anders our guide, in quest of reindeer. How long ago it was we will not ask; for after all it was not so very long ago. How did we get there? Well; if you must know we went up to the head of the Sog",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "We were up on the Fjeld, Edward and I and Anders our guide, in quest of reindeer. How long ago it was we will not ask; for after all it was not so very long ago. How did we get there? Well; if you must know we went up to the head of the Sogne Fjord in a boat, and then we drove up the valley in carioles till we were tired, and then we took to our legs, and, now, about three P.M., we were on the Fjeld making for the *Soeter* or Shieling, where we were to pass the night. On this our first day, we did not expect to meet deer, so on we plodded over the stony soil slanting across the Fjeld which showed its long shoulder above us, while far off glared the snowy peaks, and the glaciers stooped down to meet the Fjeld, for as the Norse proverb says, if the dale won't come to the mountain, the mountain must meet the dale. On we went, Anders cheering the way by stories of *Huldror* and Trolls, and running off hither and thither to fetch us Alpine plants and flowers. All at once, in one of these flights which had brought him up to the very edge of the shoulder above us, we saw his tall form stiffen as it were against the sky, and, in another moment, he had fallen flat, beckoning us to come cautiously to him. As we reached him stooping and running, he whispered \"There they are, away yonder;\" and sure enough, about half a mile further on, close under the shoulder, which broke off into an immense circular valley or combe, we could make out two stags, three hinds, and some fawns, at play. It was a strange sight to see the low, thick-set stags with their heavy palmated antlers, leaping over one another and over the hinds, and the hinds and fawns in turn following their example. \"A sure sign of rain and wind,\" said Anders. \"It will blow a hurricane and pour in torrents to-morrow, mark my words. I never looked to find them so low down; let us try to get at them.\" We crept down then, well under cover of the shoulder, and, led by Anders, went on till he said we were opposite the spot where the deer were at play. \"But, by all the powers,\" said he, \"be sure to take good aim both of you, and bring down each a stag. I will take one of the hinds, but I will not fire before you.\" And now began the real stalk; we had about three hundred yards against the wind to crawl on our hands and feet over stones, and gravel, and dry grass, and brambles, and dwarf willow, before we could get to the edge of the shoulder, and look down on the deer. For nearly the whole distance all went well, our bellies clove to the dust like snakes, as we wormed our way. But, alas! when we were not ten yards from the edge, Edward uttered a cry and sprang to his feet. Anders and I did the same without the cry, only to see the deer off at full speed down the combe, followed by a volley of oaths and a billetless bullet from the old flint rifle which Anders carried. For myself I turned to Edward and felt very much as though I should like to send my bullet through him."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "\"Why, in the name of all that is unholy, did you utter that yell and scare them away.\""
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "\"Oh, I am very sorry,\" he said, \"but I came across this thing like a bramble, only the prickles are much sharper, and it tore me so I couldn't bear it;\" and, as he spoke, he pointed to a stout trailing *Rubus arcticus* over which he had crawled, and which had taken toll both of his clothing and flesh."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Anders looked at him with unutterable scorn. \"When the gentleman next goes after reindeer, he had better take Osborn's Pipe with him. Come along, no more reindeer for us to-day; no, nor to-morrow either. The peaks are going to put on their nightcaps; we must try to get to the *Soeter* before the storm comes on.\" After a tough walk, during which Anders said little or nothing, we got to the shieling, where two girls, a cousin of Anders and his sister, met us with bright hearty faces. They had been up there looking after the cattle since June, and it was now August, and they had made heaps of butter and cheese. There were three rooms in the *Soeter*, a living-room in the middle, and on either hand a room for the men and another for the women. There were outhouses for the butter, and cheese, and milk, and cream. We had sent up some creature comforts, and with these and the butter, cream, and cheese, we made a good supper; and now we are sitting over the fire smoking our pipes, and listening to the rain as it patters on the roof, and to the wind as it howls round the building. Under the influence of tobacco and cognac Anders was more happy, and got even reconciled to Edward, whom he regarded as a muff. Looking at him mockingly, he said again, \"What a pity you had not Osborn's Pipe.\""
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"And, pray, what was that?\" asked Edward; \"was it anything like this?\" holding out his cutty pipe."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"God forgive us,\" said Anders; \"there are pipes and pipes, and Osborn's Pipe was not a tobacco-pipe, but a playing pipe or whistle. At least so my grandmother said, for she said her grandmother knew a very old woman down at the head of the lake, who had known Osborn and seen his pipe. But, if you like, I'll tell you the story. The girls are gone to bed, and so they won't trouble us, though there's a good bit of kissing in the story, and, when you hear it, you'll both say we should have been lucky if we had only had Osborn's Pipe when the gentleman scared away the deer. But here goes.\""
+    }
+  ]
+}
