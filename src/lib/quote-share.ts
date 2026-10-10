@@ -77,8 +77,10 @@ function localPreviewHost(hostname: string) {
 }
 
 /**
- * Link crawlers fetch. On a local server this is `/og/<token>`, which returns
- * the sentence in the HTML. On Pages it is the Supabase share-card function.
+ * Link a person opens. On a local server this is `/og/<token>`, which returns
+ * the sentence in the HTML. On Pages it is the sitting at `/s/<token>`.
+ * The shared Supabase domain serves HTML as text/plain, so the function stays
+ * the picture (`quoteImageUrl`) and not the address in the message.
  */
 export function quoteShareUrl(token: string): string {
   const override = unfurlOverride();
@@ -89,15 +91,19 @@ export function quoteShareUrl(token: string): string {
   if (typeof window !== "undefined" && localPreviewHost(window.location.hostname)) {
     return publicUrl(`/og/${encodeURIComponent(token)}`);
   }
-  return `${SHARE_CARD_FUNCTION}?t=${encodeURIComponent(token)}`;
+  return publicUrl(quoteLandingPath(token));
 }
 
+/** PNG the preview points at. The function answers image/png; it does not answer HTML. */
 export function quoteImageUrl(token: string): string {
   const page = quoteShareUrl(token);
   if (page.includes("/functions/v1/share-card")) {
     return `${page}${page.includes("?") ? "&" : "?"}img=1`;
   }
-  return page.replace(/\/?$/, "") + ".png";
+  if (page.includes("/og/")) {
+    return page.replace(/\/?$/, "") + ".png";
+  }
+  return `${SHARE_CARD_FUNCTION}?t=${encodeURIComponent(token)}&img=1`;
 }
 
 function canShareFiles(files: File[]) {

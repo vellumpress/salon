@@ -69,6 +69,51 @@ export function restoreSpaRedirectPath(loc) {
   return `${base}${decoded}${hash}`;
 }
 
+/**
+ * Sets og tags for a shared sentence from the token in the address.
+ * The picture is the share-card function (image/png). The page itself is
+ * this site, because the shared Supabase domain will not serve text/html.
+ * Crawlers that do not run script still see only the shell. Per-token tags
+ * in the first HTML byte need a host that returns text/html.
+ */
+export function renderShareCardMetaScript() {
+  return `(function () {
+  var raw = (location.pathname || "") + (location.search || "");
+  var found = raw.match(/\\/s\\/([A-Za-z0-9_-]{8,2400})/);
+  if (found) {
+    var token = found[1];
+    var image = "https://thuxsshowkxacbfjdaks.supabase.co/functions/v1/share-card?t=" + encodeURIComponent(token) + "&img=1";
+    var card = null;
+    try {
+      var b64 = token.replace(/-/g, "+").replace(/_/g, "/");
+      while (b64.length % 4) b64 += "=";
+      card = JSON.parse(atob(b64));
+    } catch (err) {
+      card = null;
+    }
+    var title = card && card.n ? String(card.n) : "tbr";
+    if (card && card.a) title = title + " · " + String(card.a);
+    var description = card && card.t ? String(card.t) : "";
+    function upsert(attr, key, content) {
+      if (content) {
+        var el = document.querySelector("meta[" + attr + "=\\"" + key + "\\"]");
+        if (!el) {
+          el = document.createElement("meta");
+          el.setAttribute(attr, key);
+          document.head.appendChild(el);
+        }
+        el.setAttribute("content", content);
+      }
+    }
+    upsert("property", "og:title", title);
+    upsert("property", "og:description", description);
+    upsert("property", "og:image", image);
+    upsert("name", "twitter:card", "summary_large_image");
+    upsert("name", "twitter:image", image);
+  }
+})();`;
+}
+
 export function renderSpaRestoreScript() {
   return `<script ${SPA_RESTORE_ATTR} type="text/javascript">
 /* spa-github-pages restore — https://github.com/rafgraph/spa-github-pages */
@@ -86,6 +131,7 @@ export function renderSpaRestoreScript() {
   }
   window.history.replaceState(null, "", next);
 }(window.location));
+${renderShareCardMetaScript()}
 </script>`;
 }
 
@@ -104,6 +150,7 @@ export function renderSpa404Html() {
       // /salon/?/read/enchanted-april&at=3#n so Pages can serve index.html.
       // Must stay >512 bytes for legacy IE custom-404 handling.
       var pathSegmentsToKeep = ${PATH_SEGMENTS_TO_KEEP};
+      ${renderShareCardMetaScript()}
 
       var l = window.location;
       // Static files (the web manifest especially) must stay files.
