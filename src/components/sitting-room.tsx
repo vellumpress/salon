@@ -10,11 +10,15 @@ import { useTbr } from "@/lib/store";
 import {
   chatLineId,
   isLivePeer,
+  marginMarkFromChat,
+  marksOnSentence,
+  mergeMarginMarks,
   mergeSitLines,
   peerAside,
   shouldSyncNewcomer,
   sitStatusLabel,
   SIT_REACTIONS,
+  type MarginMark,
   type SitLine,
   type SitReaction,
 } from "@/lib/multiplayer/sit-logic";
@@ -32,11 +36,11 @@ export type ChatLine = SitLine;
 type HereNote = { breath: number; place: string };
 
 type Wire =
-  | { t: "chat"; text: string; at: number }
+  | { t: "chat"; text: string; at: number; breath?: number }
   | { t: "here"; breath: number; place: string }
-  | { t: "sync"; chat: ChatLine[]; here: HereNote };
+  | { t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[] };
 
-function isChat(data: unknown): data is { t: "chat"; text: string; at: number } {
+function isChat(data: unknown): data is { t: "chat"; text: string; at: number; breath?: number } {
   if (!data || typeof data !== "object") return false;
   const msg = data as Wire;
   return msg.t === "chat" && typeof msg.text === "string";
@@ -48,7 +52,7 @@ function isHere(data: unknown): data is { t: "here"; breath: number; place: stri
   return msg.t === "here" && typeof msg.place === "string";
 }
 
-function isSync(data: unknown): data is { t: "sync"; chat: ChatLine[]; here: HereNote } {
+function isSync(data: unknown): data is { t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[] } {
   if (!data || typeof data !== "object") return false;
   const msg = data as Wire;
   return msg.t === "sync" && Array.isArray(msg.chat);
@@ -172,10 +176,11 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     attempt,
   });
   const [lines, setLines] = useState<ChatLine[]>([]);
+  const [marks, setMarks] = useState<MarginMark[]>([]);
   const [here, setHere] = useState<Record<string, HereNote>>({});
   const [draft, setDraft] = useState("");
-  const snap = useRef({ lines, breathIndex, place, selfId: p2p.selfId, workId });
-  snap.current = { lines, breathIndex, place, selfId: p2p.selfId, workId };
+  const snap = useRef({ lines, marks, breathIndex, place, selfId: p2p.selfId, workId });
+  snap.current = { lines, marks, breathIndex, place, selfId: p2p.selfId, workId };
   const prevConnected = useRef(new Set<string>());
   const progressTimer = useRef<number | null>(null);
 
@@ -186,7 +191,16 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
           const text = data.text.trim().slice(0, 280);
           if (!text) return;
           const at = typeof data.at === "number" ? data.at : Date.now();
-          setLines((prev) => mergeSitLines(prev, [{ id: chatLineId(from, at), from, text, at }]));
+          const id = chatLineId(from, at);
+          setLines((prev) => mergeSitLines(prev, [{ id, from, text, at }]));
+          const mark = marginMarkFromChat({
+            from,
+            text,
+            at,
+            breath: data.breath,
+            id,
+          });
+          if (mark) setMarks((prev) => mergeMarginMarks(prev, [mark]));
           return;
         }
         if (isHere(data)) {
@@ -197,11 +211,12 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
           return;
         }
         if (data && typeof data === "object" && (data as { t?: string }).t === "hello") {
-          if (snap.current.lines.length === 0) return;
+          if (snap.current.lines.length === 0 && snap.current.marks.length === 0) return;
           p2p.send(
             {
               t: "sync",
               chat: snap.current.lines,
+              marks: snap.current.marks,
               here: { breath: snap.current.breathIndex, place: snap.current.place },
             },
             from,
@@ -224,8 +239,9 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
               text: line.text.trim().slice(0, 280),
               at: line.at || Date.now(),
             }));
-          if (incoming.length === 0) return;
-          setLines((prev) => mergeSitLines(prev, incoming));
+          if (incoming.length > 0) setLines((prev) => mergeSitLines(prev, incoming));
+          const syncedMarks = Array.isArray(data.marks) ? mergeMarginMarks([], data.marks) : [];
+          if (syncedMarks.length > 0) setMarks((prev) => mergeMarginMarks(prev, syncedMarks));
         }
       }),
     [p2p.onMessage],
@@ -273,6 +289,7 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
         {
           t: "sync",
           chat: snap.current.lines,
+          marks: snap.current.marks,
           here: { breath: snap.current.breathIndex, place: snap.current.place },
         },
         id,
@@ -305,10 +322,13 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     (word: SitReaction) => {
       const at = Date.now();
       const from = p2p.selfId;
-      p2p.send({ t: "chat", text: word, at });
-      setLines((prev) => mergeSitLines(prev, [{ id: chatLineId(from, at), from, text: word, at }]));
+      const id = chatLineId(from, at);
+      p2p.send({ t: "chat", text: word, at, breath: breathIndex });
+      setLines((prev) => mergeSitLines(prev, [{ id, from, text: word, at }]));
+      const mark = marginMarkFromChat({ from, text: word, at, breath: breathIndex, id });
+      if (mark) setMarks((prev) => mergeMarginMarks(prev, [mark]));
     },
-    [p2p],
+    [breathIndex, p2p],
   );
   const retry = useCallback(() => setAttempt((n) => n + 1), []);
 
@@ -319,6 +339,7 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     unavailable: p2p.unavailable,
     link: p2p.link,
     lines,
+    marks,
     here,
     draft,
     setDraft,
@@ -330,6 +351,20 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
 
 function isPresent(peer: PeerInfo) {
   return isLivePeer(peer.connectionState);
+}
+
+function MarginReactions({ marks }: { marks: MarginMark[] }) {
+  if (marks.length === 0) return null;
+  return (
+    <div className="margin-reactions" data-margin-reactions={marks.length} aria-label="In the margin">
+      {marks.map((mark) => (
+        <span key={mark.id} className="margin-reaction text-ink" data-reaction={mark.word}>
+          <span className={cn("mr-1 inline-block size-1.5 align-middle", fillClass(markOf(mark.from)))} />
+          {mark.word}
+        </span>
+      ))}
+    </div>
+  );
 }
 
 export function TogetherShell({
@@ -461,6 +496,7 @@ export function TogetherShell({
           ) : null}
         </div>
       </header>
+      <MarginReactions marks={marksOnSentence(chat.marks, breathIndex)} />
       {children}
       {chat.unavailable ? (
         <button

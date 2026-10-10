@@ -10,6 +10,73 @@ export const SIT_REACTIONS = ["yes", "hmm", "oh", "again"] as const;
 
 export type SitReaction = (typeof SIT_REACTIONS)[number];
 
+/** A short word left in the margin of one sentence. One per person per sentence. */
+export type MarginMark = {
+  id: string;
+  from: string;
+  word: SitReaction;
+  breath: number;
+  at: number;
+};
+
+export function isSitReaction(text: string): text is SitReaction {
+  return (SIT_REACTIONS as readonly string[]).includes(text);
+}
+
+export function marginMarkFromChat(input: {
+  from: string;
+  text: string;
+  at: number;
+  breath?: number;
+  id?: string;
+}): MarginMark | null {
+  const word = input.text.trim();
+  if (!isSitReaction(word)) return null;
+  if (typeof input.breath !== "number" || !Number.isFinite(input.breath) || input.breath < 0) return null;
+  const from = input.from.trim();
+  if (!from) return null;
+  const breath = Math.floor(input.breath);
+  const at = Number.isFinite(input.at) ? input.at : 0;
+  return {
+    id: input.id || `${from}-${breath}`,
+    from,
+    word,
+    breath,
+    at,
+  };
+}
+
+/** Latest word from each person on each sentence. */
+export function mergeMarginMarks(prev: MarginMark[], incoming: MarginMark[], cap = 32): MarginMark[] {
+  const byKey = new Map<string, MarginMark>();
+  for (const mark of [...prev, ...incoming]) {
+    const word = typeof mark.word === "string" ? mark.word.trim() : "";
+    if (!isSitReaction(word)) continue;
+    if (!Number.isFinite(mark.breath) || mark.breath < 0) continue;
+    const from = mark.from.trim();
+    if (!from) continue;
+    const breath = Math.floor(mark.breath);
+    const at = Number.isFinite(mark.at) ? mark.at : 0;
+    const key = `${from}:${breath}`;
+    const kept = byKey.get(key);
+    if (kept && kept.at > at) continue;
+    byKey.set(key, {
+      id: mark.id || `${key}-${at}`,
+      from,
+      word,
+      breath,
+      at,
+    });
+  }
+  return [...byKey.values()].sort((a, b) => a.at - b.at || a.id.localeCompare(b.id)).slice(-cap);
+}
+
+export function marksOnSentence(marks: MarginMark[], breath: number): MarginMark[] {
+  if (!Number.isFinite(breath)) return [];
+  const index = Math.floor(breath);
+  return marks.filter((mark) => mark.breath === index);
+}
+
 const SELF_ID = /^p-[a-z0-9]{6,12}$/;
 
 export function chatLineId(from: string, at: number) {

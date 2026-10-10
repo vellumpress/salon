@@ -3,7 +3,11 @@ import test from "node:test";
 import {
   gapLabel,
   isLivePeer,
+  isSitReaction,
   keepSitIdentity,
+  marginMarkFromChat,
+  marksOnSentence,
+  mergeMarginMarks,
   mergeSitLines,
   peerAside,
   reconnectDelay,
@@ -93,6 +97,53 @@ test("reconnect waits and the same tab keeps its seat", () => {
 
 test("reactions stay a fixed short set", () => {
   assert.deepEqual([...SIT_REACTIONS], ["yes", "hmm", "oh", "again"]);
+  assert.equal(isSitReaction("yes"), true);
+  assert.equal(isSitReaction("hello"), false);
+});
+
+test("a reaction word stays in the margin of that sentence", () => {
+  const mark = marginMarkFromChat({
+    from: "p-aaaaaa",
+    text: " yes ",
+    at: 10,
+    breath: 4,
+  });
+  assert.ok(mark);
+  assert.equal(mark?.word, "yes");
+  assert.equal(mark?.breath, 4);
+  assert.equal(marginMarkFromChat({ from: "p-aaaaaa", text: "hello", at: 11, breath: 4 }), null);
+  assert.equal(marginMarkFromChat({ from: "p-aaaaaa", text: "yes", at: 11 }), null);
+  const next = mergeMarginMarks(mark ? [mark] : [], [
+    {
+      id: "later",
+      from: "p-aaaaaa",
+      word: "oh",
+      breath: 4,
+      at: 12,
+    },
+    {
+      id: "other",
+      from: "p-bbbbbb",
+      word: "hmm",
+      breath: 4,
+      at: 13,
+    },
+    {
+      id: "elsewhere",
+      from: "p-bbbbbb",
+      word: "again",
+      breath: 9,
+      at: 14,
+    },
+  ]);
+  assert.deepEqual(
+    marksOnSentence(next, 4).map((item) => item.word),
+    ["oh", "hmm"],
+  );
+  assert.deepEqual(
+    marksOnSentence(next, 9).map((item) => item.word),
+    ["again"],
+  );
 });
 
 test("five racing sends keep one copy of each line", () => {
