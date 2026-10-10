@@ -16,6 +16,7 @@ export default tseslint.config(
       "node_modules/**",
       "src/routeTree.gen.ts",
       "supabase/functions/share-card/resvg-wasm.ts",
+      "supabase/functions/share-card/html-fonts.ts",
     ],
   },
   js.configs.recommended,

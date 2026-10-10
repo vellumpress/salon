@@ -6,6 +6,7 @@
 import satori from "satori";
 import { initWasm, Resvg } from "@resvg/resvg-wasm";
 import { cormorantItalic, cormorantRegular, outfitMedium } from "./fonts.ts";
+import { UNFURL_FONT_CSS } from "./html-fonts.ts";
 import { resvgWasmBytes } from "./resvg-wasm.ts";
 
 const CARD_W = 1080;
@@ -35,9 +36,6 @@ export type QuoteCard = {
   n: string;
   a: string;
 };
-
-const FONT_HREF =
-  "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap";
 
 function hashSeed(seed: string) {
   let h = 2166136261;
@@ -145,7 +143,7 @@ export function renderQuoteHtml(
 <head>
 <meta charset="utf-8">
 <title>${title}</title>
-<link rel="stylesheet" href="${FONT_HREF}">
+<style>${UNFURL_FONT_CSS}</style>
 <meta name="description" content="${description}">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${description}">
@@ -156,12 +154,12 @@ export function renderQuoteHtml(
 <meta name="twitter:description" content="${description}">
 <meta name="twitter:image" content="${image}">
 </head>
-<body style="margin:0;background:${PAPER};color:${INK};font-family:'Cormorant Garamond',serif">
+<body style="margin:0;background:${PAPER};color:${INK};font-family:&quot;Cormorant Garamond&quot;;font-weight:400;font-style:normal">
 <main style="max-width:36rem;margin:0 auto;padding:2.5rem 1.25rem">
-<p style="letter-spacing:.14em;text-transform:uppercase;font-family:Outfit,sans-serif;font-weight:500;font-size:.75rem">tbr</p>
-<h1 style="font-weight:400;font-size:2rem;margin:.5rem 0">${title}</h1>
-<blockquote style="font-size:1.35rem;font-style:italic;line-height:1.45;margin:1.5rem 0">${description}</blockquote>
-<p><a href="${open}" style="color:${INK};font-family:Outfit,sans-serif;font-size:.875rem;letter-spacing:.02em;text-decoration:none">Open the sitting</a></p>
+<p style="letter-spacing:.14em;text-transform:uppercase;font-family:&quot;Outfit&quot;;font-weight:500;font-size:.75rem">tbr</p>
+<h1 style="font-family:&quot;Cormorant Garamond&quot;;font-weight:400;font-style:normal;font-size:2rem;margin:.5rem 0">${title}</h1>
+<blockquote style="font-family:&quot;Cormorant Garamond&quot;;font-weight:400;font-style:italic;font-size:1.35rem;line-height:1.45;margin:1.5rem 0">${description}</blockquote>
+<p><a href="${open}" style="color:${INK};font-family:&quot;Outfit&quot;;font-weight:500;font-size:.875rem;letter-spacing:.02em;text-decoration:none">Open the sitting</a></p>
 </main>
 </body>
 </html>`;

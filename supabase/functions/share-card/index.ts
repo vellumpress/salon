@@ -9,6 +9,7 @@
 //   index.ts
 //   card.ts
 //   fonts.ts
+//   html-fonts.ts
 //   resvg-wasm.ts
 //   deno.json
 //   fonts/CormorantGaramond-Regular.ttf

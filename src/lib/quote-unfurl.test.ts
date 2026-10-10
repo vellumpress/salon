@@ -29,9 +29,11 @@ test("unfurl HTML carries the sentence in title, description, and image", () => 
   assert.match(html ?? "", /property="og:description" content="The envelope is still unopened\."/);
   assert.match(html ?? "", /property="og:image" content="https:\/\/example\.test\/card\.png"/);
   assert.match(html ?? "", /twitter:card" content="summary_large_image"/);
-  assert.match(html ?? "", /Cormorant\+Garamond/);
-  assert.match(html ?? "", /Outfit/);
-  assert.doesNotMatch(html ?? "", /Georgia|font8x8/);
+  assert.match(html ?? "", /font-family:"Outfit"/);
+  assert.match(html ?? "", /font-family:"Cormorant Garamond"/);
+  assert.match(html ?? "", /data:font\/woff2;base64,/);
+  assert.doesNotMatch(html ?? "", /fonts\.googleapis\.com|fonts\.gstatic\.com/);
+  assert.doesNotMatch(html ?? "", /font-family:[^;}]*\b(?:serif|sans-serif|Georgia|Arial|system-ui|font8x8)\b/);
 });
 
 test("the function reads the same sentence the app encoded", () => {
