@@ -6,6 +6,7 @@ import { HoldLeave } from "@/components/hourglass";
 import { publishClubProgress } from "@/lib/clubs";
 import { asClubId } from "@/lib/club-time";
 import { formatHandle } from "@/lib/social";
+import { dayKey } from "@/lib/day-key";
 import { useTbr } from "@/lib/store";
 import {
   chatLineId,
@@ -406,6 +407,10 @@ export function TogetherShell({
   }, []);
 
   const present = chat.peers.filter((peer) => isPresent(peer));
+  useEffect(() => {
+    if (present.length === 0) return;
+    useTbr.getState().noteJointDay(dayKey(Date.now()));
+  }, [present.length]);
   const heardIds = Object.keys(chat.here).filter((id) => id !== chat.selfId);
   const followNote = heardIds
     .map((id) => chat.here[id])

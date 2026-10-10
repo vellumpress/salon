@@ -40,6 +40,8 @@ import { HostSitForm } from "@/components/host-sit-form";
 import { LiveRoomForm } from "@/components/live-room-form";
 import { encodeHostedSit, sitDurationLabel, sitInvolves, sitPhase } from "@/lib/hosted-sit";
 import { formatHandle } from "@/lib/social";
+import { dayKey } from "@/lib/day-key";
+import { jointStreakCount, jointStreakLabel } from "@/lib/joint-streak";
 
 type TogetherSearch = { join?: string; start?: boolean; host?: boolean };
 
@@ -74,6 +76,7 @@ function TogetherPage() {
   const lastShuffle = useTbr((s) => s.lastShuffle);
   const handle = useTbr((s) => s.handle) ?? "";
   const hostedSits = useTbr((s) => s.hostedSits) ?? [];
+  const jointDays = useTbr((s) => s.jointDays) ?? [];
   const toggleJoin = useTbr((s) => s.toggleJoin);
   const joinClub = useTbr((s) => s.joinClub);
   const rememberInvite = useTbr((s) => s.rememberInvite);
@@ -197,6 +200,9 @@ function TogetherPage() {
   }, [upcoming]);
 
   const defaultWork = lastShuffle && isLocalBound(lastShuffle) ? lastShuffle : "passing";
+  const jointLabel = hydrated
+    ? jointStreakLabel(jointStreakCount(jointDays, dayKey(Date.now())))
+    : "";
 
   return (
     <div className="frame-screen bg-paper text-ink">
@@ -259,6 +265,11 @@ function TogetherPage() {
               Share a link. Name a night. The room holds both of you — two phones, one hour,
               live chat on the page.
             </p>
+            {jointLabel ? (
+              <p className="type-kicker mt-3" data-joint-streak>
+                {jointLabel}
+              </p>
+            ) : null}
           </div>
 
           <div className="grid grid-cols-1 border-b border-ink sm:grid-cols-2">

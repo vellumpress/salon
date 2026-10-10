@@ -20,6 +20,7 @@ import {
 import { mergePledge, type SitPledge, type SitPledgeStatus } from "./sit-pledge.ts";
 import { sameTogetherPair, type TogetherKeep } from "./together-keep.ts";
 import { dayKey } from "./day-key.ts";
+import { addJointDay } from "./joint-streak.ts";
 import {
   ACTIVE_READ_VERSION,
   addMinutes,
@@ -163,6 +164,9 @@ type TbrState = {
   streakFreezeBanked: number;
   streakFreezeUsedOn: string | null;
   streakReminder: { enabled: boolean; hour: number; minute: number } | null;
+  /** Calendar days when another reader was in the room. */
+  jointDays: string[];
+  noteJointDay: (day: string) => void;
   setStreakFreeze: (banked: number, usedOn: string | null) => void;
   setStreakReminder: (reminder: { enabled: boolean; hour: number; minute: number } | null) => void;
   rememberTogetherKeep: (pair: TogetherKeep) => void;
@@ -473,6 +477,16 @@ export const useTbr = create<TbrState>()(
       streakFreezeBanked: 1,
       streakFreezeUsedOn: null,
       streakReminder: null,
+      jointDays: [],
+      noteJointDay: (day) =>
+        set((state) => {
+          const jointDays = addJointDay(state.jointDays, day);
+          const previous = state.jointDays ?? [];
+          if (jointDays.length === previous.length && jointDays.every((item, i) => item === previous[i])) {
+            return {};
+          }
+          return { jointDays };
+        }),
       setStreakFreeze: (banked, usedOn) =>
         set({
           streakFreezeBanked: banked > 0 ? 1 : 0,
@@ -1000,6 +1014,7 @@ export const useTbr = create<TbrState>()(
         streakFreezeBanked: state.streakFreezeBanked,
         streakFreezeUsedOn: state.streakFreezeUsedOn,
         streakReminder: state.streakReminder,
+        jointDays: state.jointDays,
       }),
     },
   ),
