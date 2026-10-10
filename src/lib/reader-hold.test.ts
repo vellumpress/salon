@@ -241,10 +241,12 @@ test(
       const held = await breathIndex(page);
       const marks = await holdMarks(page);
       await pointerUp(page, forward.x, forward.y);
+      const atLift = await breathIndex(page);
       await page.waitForTimeout(450);
       const released = await breathIndex(page);
       assert.ok(held >= before + 4, `hold only reached ${held} from ${before}`);
-      assert.equal(released, held, "release added a sentence after the hold");
+      assert.ok(atLift >= held, `the hold moved backward on the way up (${atLift} from ${held})`);
+      assert.equal(released, atLift, "release added a sentence after the hold");
       assert.ok(marks.length >= 4, `hold recorded ${marks.length} steps`);
       assert.ok(marks[0]!.t >= 250, `first repeat landed at ${marks[0]!.t}ms`);
       const firstGap = marks[1]!.t - marks[0]!.t;
@@ -420,9 +422,11 @@ test(
       const held = await breathIndex(page);
       const marks = await holdMarks(page);
       await pointerUp(page, back.x, back.y);
+      const atLift = await breathIndex(page);
       await page.waitForTimeout(450);
       assert.ok(held <= 31 - 3, `hold only reached ${held}`);
-      assert.equal(await breathIndex(page), held, "release added a sentence after the hold");
+      assert.ok(atLift <= held, `the hold moved forward on the way up (${atLift} from ${held})`);
+      assert.equal(await breathIndex(page), atLift, "release added a sentence after the hold");
       assert.ok(marks.length >= 3, `hold recorded ${marks.length} steps`);
       assert.ok(marks[0]!.t >= 250, `first repeat landed at ${marks[0]!.t}ms`);
       if (marks.length >= 4) {
