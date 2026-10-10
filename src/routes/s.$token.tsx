@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { getSentenceShare } from "@/lib/sentence-share";
+import { decodeQuoteCard } from "@/lib/quote-share";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { useChromeStatusBar } from "@/lib/use-reader-daylight";
 
@@ -19,10 +20,24 @@ function ShareLanding() {
         workId: string;
         breathIndex: number;
         sentenceText: string;
+        title?: string;
+        author?: string;
       }
   >({ status: "loading" });
 
   useEffect(() => {
+    const card = decodeQuoteCard(token);
+    if (card) {
+      setState({
+        status: "ready",
+        workId: card.w,
+        breathIndex: card.i,
+        sentenceText: card.t,
+        title: card.n,
+        author: card.a,
+      });
+      return;
+    }
     let live = true;
     void getSentenceShare({ data: { token } })
       .then((row) => {
@@ -85,6 +100,8 @@ function ShareLanding() {
   }
 
   const meta = shelfWork(state.workId);
+  const author = state.author || meta?.author || "";
+  const title = state.title || meta?.title || "A shared sentence";
 
   return (
     <div className="frame-screen bg-paper text-ink">
@@ -97,8 +114,8 @@ function ShareLanding() {
         </Link>
       </header>
       <div className="flex min-h-0 flex-1 flex-col justify-end p-5 sm:p-8">
-        <p className="type-kicker text-muted">{meta?.author ?? ""}</p>
-        <p className="mt-2 type-title">{meta?.title ?? "A shared sentence"}</p>
+        <p className="type-kicker text-muted">{author}</p>
+        <p className="mt-2 type-title">{title}</p>
         <blockquote className="mt-6 border-l-2 border-ink pl-4 font-serif text-lg leading-relaxed text-ink/80 sm:text-xl">
           {state.sentenceText}
         </blockquote>

@@ -27,9 +27,9 @@ import {
 } from "@/lib/clubs";
 import { shouldAutoJoin } from "@/lib/club-flow";
 import { formatHandle } from "@/lib/social";
+import { defaultSitClock, formatClubWhenLong, wallToIso, zoneClockLabel } from "@/lib/club-time";
 
 const NO_CLUBS: string[] = [];
-import { defaultSitClock, etWallToIso, formatClubWhenLong } from "@/lib/club-time";
 import { serializeClubReadSearch } from "@/lib/catalog/serialize";
 import { salonShareText, salonShareTitle } from "@/lib/site";
 
@@ -342,9 +342,9 @@ function LiveClub({
   }
 
   async function addSitting() {
-    const startsAt = etWallToIso(date, time);
+    const startsAt = wallToIso(date, time);
     if (!startsAt) {
-      setError("Pick a day and time in Eastern time.");
+      setError("Pick a day and time.");
       return;
     }
     setSaving(true);
@@ -524,7 +524,7 @@ function LiveClub({
                   />
                 </label>
                 <label className="flex min-w-0 flex-col">
-                  <span className="px-4 pt-3 type-kicker text-muted">Time · ET</span>
+                  <span className="px-4 pt-3 type-kicker text-muted">{zoneClockLabel()}</span>
                   <input
                     type="time"
                     value={time}

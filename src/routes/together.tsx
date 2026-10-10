@@ -31,12 +31,13 @@ import {
   type BookClubView,
   type UpcomingSit,
 } from "@/lib/clubs";
-import { defaultSitClock, etWallToIso, formatClubWhen, formatClubWhenLong } from "@/lib/club-time";
+import { defaultSitClock, formatClubWhen, formatClubWhenLong, wallToIso, zoneClockLabel } from "@/lib/club-time";
 import { enterClubCompose, exitClubCompose, syncVisualViewport } from "@/lib/vvh";
 import { isOffline } from "@/lib/net";
 import { salonShareText, salonShareTitle, staticActionMiss } from "@/lib/site";
 import { useShelfSearch } from "@/components/shelf-search";
 import { HostSitForm } from "@/components/host-sit-form";
+import { LiveRoomForm } from "@/components/live-room-form";
 import { encodeHostedSit, sitDurationLabel, sitInvolves, sitPhase } from "@/lib/hosted-sit";
 import { formatHandle } from "@/lib/social";
 
@@ -58,7 +59,7 @@ export const Route = createFileRoute("/together")({
       {staticActionMiss(error) ? (
         <ComingSoon
           className="mt-4 border-t"
-          detail="Clubs and live sitting are coming soon."
+          detail="A book club needs a signed-in account. A live room with a friend is on this page."
         />
       ) : (
         <p className="type-pitch mt-2.5 max-w-md px-5 text-ink/70">{error.message}</p>
@@ -82,6 +83,7 @@ function TogetherPage() {
   const [creating, setCreating] = useState(Boolean(start));
   const [boardNote, setBoardNote] = useState("");
   const [hosting, setHosting] = useState(Boolean(host));
+  const [rooming, setRooming] = useState(false);
   const [created, setCreated] = useState<BookClubView | null>(null);
   const [welcome, setWelcome] = useState<BookClubView | null>(null);
   const [joinMissing, setJoinMissing] = useState(false);
@@ -225,7 +227,9 @@ function TogetherPage() {
         </Link>
       </header>
 
-      {hosting ? (
+      {rooming ? (
+        <LiveRoomForm defaultWorkId={defaultWork} onClose={() => setRooming(false)} />
+      ) : hosting ? (
         <HostSitForm onClose={() => setHosting(false)} />
       ) : creating ? (
         <StartClubForm
@@ -257,19 +261,26 @@ function TogetherPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 border-b border-ink sm:grid-cols-3">
+          <div className="grid grid-cols-1 border-b border-ink sm:grid-cols-2">
+            <button
+              type="button"
+              onClick={() => setRooming(true)}
+              className="flex h-14 items-center justify-center bg-ink font-sans text-sm text-paper"
+            >
+              Open a room
+            </button>
             <Link
               to="/shuffle"
               search={{ together: true }}
               preload="intent"
-              className="flex h-14 items-center justify-center bg-ink font-sans text-sm text-paper"
+              className="flex h-14 items-center justify-center border-t border-ink bg-paper font-sans text-sm text-ink sm:border-l sm:border-t-0"
             >
               Sit with a friend
             </Link>
             <button
               type="button"
               onClick={() => setHosting(true)}
-              className="flex h-14 items-center justify-center border-t border-ink bg-forest font-sans text-sm text-paper sm:border-l sm:border-t-0"
+              className="flex h-14 items-center justify-center border-t border-ink bg-forest font-sans text-sm text-paper"
             >
               Host a sit
             </button>
@@ -348,7 +359,7 @@ function TogetherPage() {
                 Day and time, already named.
               </p>
               <p className="mt-2 max-w-xl font-serif text-base leading-snug text-paper/85 sm:text-lg">
-                Book clubs keep an Eastern hour. Walk in when it starts — or sooner. The door
+                Times show on your own clock. Walk in when it starts — or sooner. The door
                 stays open.
               </p>
             </div>
@@ -598,9 +609,9 @@ function StartClubForm({
         return;
       }
     }
-    const startsAt = etWallToIso(date, time);
+    const startsAt = wallToIso(date, time);
     if (!startsAt) {
-      setError("Pick a day and time in Eastern time.");
+      setError("Pick a day and time.");
       return;
     }
     setSaving(true);
@@ -662,7 +673,7 @@ function StartClubForm({
             Name a night. Send the door.
           </p>
           <p className="mt-2 max-w-xl font-serif text-base leading-snug text-paper/85">
-            Times are Eastern. Friends walk in with the invite — chat is already on the page.
+            Times follow the clock on this phone. Friends walk in with the invite — chat is already on the page.
           </p>
         </div>
         {error ? (
@@ -800,7 +811,7 @@ function StartClubForm({
               className={composeDateClass}
             />
           </ComposeField>
-          <ComposeField fill="yellow" label="Time · ET" stacked className="border-t-0">
+          <ComposeField fill="yellow" label={zoneClockLabel()} stacked className="border-t-0">
             <input
               type="time"
               value={time}

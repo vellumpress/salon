@@ -5,3 +5,8 @@
 
 [functions.import-url]
 verify_jwt = true
+
+# Public HTML for per-sentence link previews. Do not deploy from Pages CI.
+# Deploy by hand: supabase functions deploy share-card --no-verify-jwt
+[functions.share-card]
+verify_jwt = false

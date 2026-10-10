@@ -108,6 +108,10 @@ export const allTsFiles = [
   "src/lib/social-rooms.e2e.test.ts",
   "src/lib/you-score-paint.test.ts",
   "src/lib/you-score-open.test.ts",
+  "src/lib/streak-freeze.test.ts",
+  "src/lib/quote-share.test.ts",
+  "src/lib/quote-unfurl.test.ts",
+  "src/lib/streak-notify.test.ts",
 ];
 
 const smokeSet = new Set(smokeFiles);

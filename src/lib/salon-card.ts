@@ -114,7 +114,7 @@ export function paintSalonCard(
   const bandTop = height - 220;
   ctx.fillStyle = INK;
   ctx.fillRect(rule, bandTop, width - rule * 2, rule);
-  ctx.fillStyle = fill === "blue" ? FOREST : fill === "forest" ? BLUE : fill === "red" ? INK : RED;
+  ctx.fillStyle = accent;
   ctx.fillRect(rule, bandTop + rule, 160, height - bandTop - rule * 2);
   ctx.fillStyle = PAPER;
   ctx.fillRect(rule + 160, bandTop + rule, width - rule * 2 - 160, height - bandTop - rule * 2);

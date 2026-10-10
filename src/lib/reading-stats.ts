@@ -4,6 +4,7 @@ import { shelfWork, type ShelfForm } from "./catalog/shelf.ts";
 import { sitInvolves, type HostedSit } from "./hosted-sit.ts";
 import { formatHandle, normalizeHandle } from "./social.ts";
 import { dayKey } from "./day-key.ts";
+import { resolveStreak } from "./streak-freeze.ts";
 import { isDeviceImport } from "./import/private.ts";
 import type { SitSession, WorkProgress } from "./store.ts";
 import type { TogetherKeep } from "./together-keep.ts";
@@ -87,6 +88,10 @@ export type ReadingStats = {
   minutesAll: number;
   minutesAreEstimated: boolean;
   streak: number;
+  /** Banked freezes still available. One covers a single missed day. */
+  freezeBanked: number;
+  /** Local day the freeze stood in for, if it has been used. */
+  freezeUsedOn: string | null;
   pace: PaceInfo;
   forms: FormCount[];
   origins: OriginCount[];
@@ -773,6 +778,8 @@ function deriveReadingStatsFrom(input: {
   ignoredDays?: string[];
   dismissedInsights?: string[];
   lastInsight?: { id: string; day: string } | null;
+  freezeBanked?: number;
+  freezeUsedOn?: string | null;
 }): ReadingStats {
   const progress = input.progress ?? {};
   const favorites = input.favorites ?? [];
@@ -836,8 +843,30 @@ function deriveReadingStatsFrom(input: {
   const sitsRecorded = Math.max(sitHistory.length, ledgerSits);
   // Opening a book stamps lastOpenedAt. That is not a sit, so a day with
   // zero sits does not start a streak of 1.
-  const streak =
+  const plainStreak =
     sitsRecorded > 0 ? Math.max(progressStreak(progress, now), minutesStreak(byDay, now)) : 0;
+  let freezeBanked = (input.freezeBanked ?? 1) > 0 ? 1 : 0;
+  let freezeUsedOn = input.freezeUsedOn ?? null;
+  let streak = plainStreak;
+  if (sitsRecorded > 0) {
+    const days = new Set<string>();
+    for (const [key, minutes] of Object.entries(byDay)) {
+      if ((minutes ?? 0) > 0) days.add(key);
+    }
+    for (const item of Object.values(progress)) {
+      if (!item?.entered || !item.lastOpenedAt) continue;
+      days.add(dayKey(item.lastOpenedAt));
+    }
+    const resolved = resolveStreak({
+      hasDay: (key) => days.has(key),
+      now,
+      banked: freezeBanked,
+      usedOn: freezeUsedOn,
+    });
+    freezeBanked = resolved.banked;
+    freezeUsedOn = resolved.usedOn;
+    if (resolved.spent || resolved.usedOn) streak = Math.max(plainStreak, resolved.streak);
+  }
   const forms = topForms([...workIds], progress, favSet, minutesByWork);
   const origins = topOrigins([...workIds], progress, favSet, minutesByWork);
   const pace = paceFrom(sitHistory, progress, minutesAll, avgGapSec);
@@ -1030,6 +1059,8 @@ function deriveReadingStatsFrom(input: {
     minutesAll,
     minutesAreEstimated,
     streak,
+    freezeBanked,
+    freezeUsedOn,
     pace,
     forms,
     origins,
@@ -1138,8 +1169,18 @@ export function formatActivityWhen(at: number, now = Date.now()) {
   });
 }
 
-export function streakLine(streak: number) {
-  if (streak <= 0) return "No run just now — a sit can start one.";
-  if (streak === 1) return "A sitting today. Tomorrow can join it, if you like.";
-  return `A quiet run of ${streak} days.`;
+export function streakLine(
+  streak: number,
+  freeze?: { banked: number; covered: boolean },
+) {
+  const base =
+    streak <= 0
+      ? "No run just now — a sit can start one."
+      : streak === 1
+        ? "A sitting today. Tomorrow can join it, if you like."
+        : `A quiet run of ${streak} days.`;
+  if (!freeze) return base;
+  if (freeze.covered) return `${base} A freeze covered a missed day.`;
+  if (freeze.banked > 0) return `${base} One freeze is banked.`;
+  return base;
 }

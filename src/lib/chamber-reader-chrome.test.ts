@@ -108,11 +108,10 @@ test("Send Share uses a local deep link and native share, not a blocking phone p
   const sendAt = reader.indexOf("async function sendKeptLine(");
   assert.ok(sendAt > -1, "sendKeptLine helper missing");
   const sendFn = reader.slice(sendAt, reader.indexOf("function beginFromGate("));
-  const shareAt = sendFn.indexOf("shareOrCopy(");
+  const shareAt = sendFn.indexOf("shareQuoteCard(");
   const persistAt = sendFn.indexOf("createSentenceShare(");
-  assert.ok(shareAt > -1, "Share must call shareOrCopy");
-  assert.match(sendFn, /cardReadUrl/);
-  assert.match(sendFn, /salonShareTitle/);
+  assert.ok(shareAt > -1, "Share must call shareQuoteCard");
+  assert.match(sendFn, /workId: work.id/);
   if (persistAt > -1) {
     assert.ok(shareAt < persistAt, "native share must run before optional persist");
     assert.match(sendFn, /liveBackendEnabled/);

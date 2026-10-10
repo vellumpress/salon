@@ -5,6 +5,7 @@ import {
   asClubFill,
   asClubId,
   asInviteToken,
+  CLUB_TZ,
   clubInvitePath,
   clubInviteUrl,
   clubJoinPath,
@@ -12,6 +13,7 @@ import {
   etWallToIso,
   formatClubWhen,
   formatClubWhenLong,
+  wallToIso,
 } from "./club-time.ts";
 
 test("etWallToIso maps Eastern wall time to UTC", () => {
@@ -28,12 +30,28 @@ test("default sit is tomorrow at 7pm ET", () => {
   assert.equal(addCalendarDays("2026-09-20", 1), "2026-09-21");
 });
 
-test("formats Eastern sitting times", () => {
-  const when = formatClubWhen("2026-09-20T23:00:00.000Z", new Date("2026-09-19T12:00:00.000Z"));
+test("formats a sitting in the zone you pass", () => {
+  const when = formatClubWhen(
+    "2026-09-20T23:00:00.000Z",
+    new Date("2026-09-19T12:00:00.000Z"),
+    CLUB_TZ,
+  );
   assert.match(when, /Sep/);
-  assert.match(when, /ET/);
-  const long = formatClubWhenLong("2026-09-20T23:00:00.000Z");
+  assert.match(when, /E[DS]T/);
+  const long = formatClubWhenLong("2026-09-20T23:00:00.000Z", CLUB_TZ);
   assert.match(long, /September/);
+  assert.match(long, /E[DS]T/);
+  const pacific = formatClubWhen(
+    "2026-09-20T23:00:00.000Z",
+    new Date("2026-09-19T12:00:00.000Z"),
+    "America/Los_Angeles",
+  );
+  assert.match(pacific, /P[DS]T/);
+  assert.doesNotMatch(pacific, /E[DS]T/);
+});
+
+test("wallToIso follows the reader's zone, not a fixed Eastern hour", () => {
+  assert.equal(wallToIso("2026-09-20", "19:00", "America/Los_Angeles"), "2026-09-21T02:00:00.000Z");
 });
 
 test("invite tokens and club ids stay strict", () => {
