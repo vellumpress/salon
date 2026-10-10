@@ -44,7 +44,7 @@ export function LiveRoomForm({
 
   async function openRoom() {
     if (!isLocalBound(workId) || !selected) {
-      setError("Pick a bound book from the shelf.");
+      setError("Pick a book from the shelf.");
       return;
     }
     setError("");
