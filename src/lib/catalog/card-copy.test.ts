@@ -317,6 +317,7 @@ test("known origin overrides", () => {
     "tales-from-the-fjeld": "Norway",
     "a-russian-gentleman": "Russia",
     "walter-pieterse": "Netherlands",
+    "froth": "Spain",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",

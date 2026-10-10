@@ -1208,6 +1208,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "a-russian-gentleman",
   // Mira Sat 10 Oct 2026 MID WALTER-PIETERSE — Walter Pieterse follows A Russian Gentleman, plain Next. Never Featured, off every Ritual lane.
   "walter-pieterse",
+  // Mira Sat 10 Oct 2026 PM FROTH — Froth follows Walter Pieterse, Next carefully only (the heads-up is on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (Chapter I, to the banker's door) is never unwind or before-sleep.
+  "froth",
 ] as const;
 
 /**
