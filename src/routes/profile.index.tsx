@@ -1,6 +1,7 @@
-import { Component, lazy, Suspense, useLayoutEffect, useMemo, useState, type ReactNode } from "react";
+import { Component, lazy, Suspense, useEffect, useLayoutEffect, useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PagesShell } from "@/components/pages-shell";
+import { StreakCare } from "@/components/streak-care";
 import { YouReading } from "@/components/you-reading";
 import { useLastRead, usePersistHydrated } from "@/components/resume-link";
 import { RITUAL_LANES, worksForRitualLane } from "@/lib/catalog/rituals";
@@ -96,6 +97,9 @@ function ProfileBody() {
   const handle = useTbr((s) => s.handle) ?? "";
   const favorites = useTbr((s) => s.favorites) ?? [];
   const hydrated = usePersistHydrated();
+  const streakFreezeBanked = useTbr((s) => s.streakFreezeBanked);
+  const streakFreezeUsedOn = useTbr((s) => s.streakFreezeUsedOn);
+  const setStreakFreeze = useTbr((s) => s.setStreakFreeze);
   const visit = useVisitSeed();
   const last = useLastRead();
 
@@ -124,6 +128,8 @@ function ProfileBody() {
         ignoredDays: scoreIgnoredDays,
         dismissedInsights: insightDismissed,
         lastInsight: insightSeen,
+        freezeBanked: streakFreezeBanked,
+        freezeUsedOn: streakFreezeUsedOn,
       }),
     [
       progress,
@@ -147,8 +153,28 @@ function ProfileBody() {
       scoreIgnoredDays,
       insightDismissed,
       insightSeen,
+      streakFreezeBanked,
+      streakFreezeUsedOn,
     ],
   );
+
+  useEffect(() => {
+    if (!hydrated) return;
+    if (
+      reading.freezeBanked === streakFreezeBanked &&
+      reading.freezeUsedOn === streakFreezeUsedOn
+    ) {
+      return;
+    }
+    setStreakFreeze(reading.freezeBanked, reading.freezeUsedOn);
+  }, [
+    hydrated,
+    reading.freezeBanked,
+    reading.freezeUsedOn,
+    setStreakFreeze,
+    streakFreezeBanked,
+    streakFreezeUsedOn,
+  ]);
 
   const prompt = useMemo(() => {
     const base = dayPrompt();
@@ -190,6 +216,7 @@ function ProfileBody() {
         notice={slots.notice}
         headerEnd={slots.headerEnd}
         settings={slots.settings}
+        todayEnd={hydrated ? <StreakCare streak={reading.streak} /> : null}
         trendsEnd={
           <section>
             <p className="border-b border-ink px-4 py-3 type-kicker text-muted">For now</p>

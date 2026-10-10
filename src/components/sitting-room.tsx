@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { useP2PRoom, type PeerInfo } from "@/lib/multiplayer";
-import { ComingSoon } from "@/components/coming-soon";
+import { shareOrCopy } from "@/lib/invite-share";
 import { fillClass, hashSeed, type Fill } from "@/lib/mondrian";
 import { HoldLeave } from "@/components/hourglass";
 import { publishClubProgress } from "@/lib/clubs";
@@ -165,9 +165,11 @@ export function useSittingLock(onLeave: () => void) {
 export function useSittingChat(pair: string, place: string, breathIndex: number, workId = "") {
   const handle = useTbr((s) => s.handle) ?? "";
   const joined = useTbr((s) => s.joined) ?? [];
+  const [attempt, setAttempt] = useState(0);
   const p2p = useP2PRoom({
     room: `sit-${pair}`.slice(0, 64),
     name: handle,
+    attempt,
   });
   const [lines, setLines] = useState<ChatLine[]>([]);
   const [here, setHere] = useState<Record<string, HereNote>>({});
@@ -308,6 +310,7 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     },
     [p2p],
   );
+  const retry = useCallback(() => setAttempt((n) => n + 1), []);
 
   return {
     selfId: p2p.selfId,
@@ -321,6 +324,7 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     setDraft,
     sendChat,
     sendReaction,
+    retry,
   };
 }
 
@@ -334,6 +338,8 @@ export function TogetherShell({
   breathIndex,
   workId = "",
   onLeave,
+  inviteUrl,
+  onFollow,
   children,
 }: {
   pair: string;
@@ -341,11 +347,14 @@ export function TogetherShell({
   breathIndex: number;
   workId?: string;
   onLeave: () => void;
+  inviteUrl?: string;
+  onFollow?: (breath: number) => void;
   children: ReactNode;
 }) {
   const lock = useSittingLock(onLeave);
   const chat = useSittingChat(pair, place, breathIndex, workId);
   const [live, setLive] = useState(false);
+  const [copied, setCopied] = useState(false);
   const dockRef = useRef<HTMLDivElement>(null);
   useEffect(() => setLive(true), []);
   useEffect(() => () => exitTogetherCompose(), []);
@@ -362,7 +371,24 @@ export function TogetherShell({
   }, []);
 
   const present = chat.peers.filter((peer) => isPresent(peer));
+  const heardIds = Object.keys(chat.here).filter((id) => id !== chat.selfId);
+  const followNote = heardIds
+    .map((id) => chat.here[id])
+    .find((note) => note && note.breath !== breathIndex);
   const status = chat.unavailable ? "" : sitStatusLabel(chat.link, chat.joined, present.length);
+
+  async function sendInvite() {
+    if (!inviteUrl) return;
+    const result = await shareOrCopy({
+      title: "Sit together",
+      text: "The same page, live.",
+      url: inviteUrl,
+    });
+    if (result === "copied" || result === "shared") {
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1400);
+    }
+  }
   const elsewhere = [
     ...new Set(
       present
@@ -410,6 +436,13 @@ export function TogetherShell({
                 />
               ))
             : null}
+          {live
+            ? heardIds
+                .filter((id) => !chat.peers.some((peer) => peer.id === id))
+                .map((id) => (
+                  <span key={id} className={cn("size-2.5 shrink-0", fillClass(markOf(id)))} />
+                ))
+            : null}
           {chat.unavailable ? (
             <span className="type-kicker">Coming soon</span>
           ) : status ? (
@@ -421,12 +454,23 @@ export function TogetherShell({
               here
             </span>
           )}
+          {inviteUrl ? (
+            <button type="button" className="type-kicker" onClick={() => void sendInvite()}>
+              {copied ? "Copied" : "Invite"}
+            </button>
+          ) : null}
         </div>
       </header>
       {children}
       {chat.unavailable ? (
-        <ComingSoon detail="A live room with a friend is coming soon. This page is still yours to read." />
-      ) : (
+        <button
+          type="button"
+          onClick={chat.retry}
+          className="flex h-11 w-full shrink-0 items-center justify-center border-b border-ink bg-yellow font-sans text-sm text-ink"
+        >
+          The room is quiet. Try again.
+        </button>
+      ) : null}
       <div
         ref={dockRef}
         className="together-dock"
@@ -434,6 +478,15 @@ export function TogetherShell({
         onFocusCapture={beginCompose}
         onBlurCapture={(event) => endCompose(event.currentTarget)}
       >
+        {followNote && onFollow ? (
+          <button
+            type="button"
+            className="flex h-11 w-full items-center justify-center border-t border-ink bg-yellow font-sans text-sm text-ink"
+            onClick={() => onFollow(followNote.breath)}
+          >
+            Read there{followNote.place ? ` · ${followNote.place}` : ""}
+          </button>
+        ) : null}
         <div className="chat-slot" aria-live="polite">
           {elsewhere.map((item) => (
             <p key={item} className="chat-aside">
@@ -489,7 +542,6 @@ export function TogetherShell({
           </button>
         </form>
       </div>
-      )}
     </>
   );
 }

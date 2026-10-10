@@ -250,7 +250,12 @@ export function WeekActivity({ reading }: { reading: ReadingStats }) {
         <div className="bg-paper text-ink">
           <span className="type-kicker text-muted">Streak</span>
           <span className="mt-1 type-lede">{reading.streak || "—"}</span>
-          <span className="mt-1 font-sans text-xs text-ink/65">{streakLine(reading.streak)}</span>
+          <span className="mt-1 font-sans text-xs text-ink/65">
+            {streakLine(reading.streak, {
+              banked: reading.freezeBanked,
+              covered: Boolean(reading.freezeUsedOn),
+            })}
+          </span>
         </div>
         <div className="bg-blue text-paper">
           <span className="type-kicker opacity-80">When</span>

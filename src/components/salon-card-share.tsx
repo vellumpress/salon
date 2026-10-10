@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { cardReadUrl, type SalonCardInput } from "@/lib/salon-card";
-import { clipLine } from "@/lib/share-codec";
-import { APP_NAME, liveBackendEnabled, salonShareText, salonShareTitle } from "@/lib/site";
+import type { SalonCardInput } from "@/lib/salon-card";
+import { shareQuoteCard, type QuoteShareResult } from "@/lib/quote-share";
+import { APP_NAME, liveBackendEnabled } from "@/lib/site";
 import { createSentenceShare } from "@/lib/sentence-share";
-import { shareOrCopy } from "@/lib/shuffle";
+import { clipLine } from "@/lib/share-codec";
 import { cn } from "@/lib/utils";
 
 export function SalonCardShare({
@@ -11,6 +11,7 @@ export function SalonCardShare({
   at,
   text,
   title,
+  author,
   className,
   compact = false,
 }: SalonCardInput & {
@@ -19,19 +20,12 @@ export function SalonCardShare({
   className?: string;
   compact?: boolean;
 }) {
-  const [state, setState] = useState<"idle" | "busy" | "shared" | "copied">("idle");
+  const [state, setState] = useState<"idle" | "busy" | QuoteShareResult>("idle");
 
   async function share() {
     if (state === "busy") return;
     setState("busy");
-    const shareUrl = cardReadUrl({ workId, at });
-    const snippet = clipLine(text, 160);
-    const name = title || APP_NAME;
-    const result = await shareOrCopy({
-      title: salonShareTitle(name),
-      text: salonShareText(snippet),
-      url: shareUrl,
-    });
+    const result = await shareQuoteCard({ workId, at, text, title, author });
     if (liveBackendEnabled) {
       void createSentenceShare({
         data: {
@@ -41,24 +35,25 @@ export function SalonCardShare({
         },
       }).catch(() => undefined);
     }
-    if (result === "shared") setState("shared");
-    else if (result === "copied") setState("copied");
-    else setState("idle");
-    if (result === "shared" || result === "copied") {
+    if (result === "aborted" || result === "failed") setState("idle");
+    else setState(result);
+    if (result === "shared" || result === "copied" || result === "downloaded") {
       window.setTimeout(() => setState("idle"), 1600);
     }
   }
 
   const label =
     state === "busy"
-      ? "Sharing…"
+      ? "Drawing…"
       : state === "shared"
         ? "Shared"
         : state === "copied"
           ? "Copied"
-          : compact
-            ? "Card"
-            : `${APP_NAME} card`;
+          : state === "downloaded"
+            ? "Saved"
+            : compact
+              ? "Card"
+              : `${APP_NAME} card`;
 
   return (
     <button

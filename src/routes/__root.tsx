@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { AuthProvider } from "@/lib/auth/provider";
 import { DeferredRemoteSync } from "@/components/deferred-remote-sync";
 import { OfflineMark } from "@/components/offline-mark";
+import { StreakReminderHost } from "@/components/streak-reminder-host";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { APP_DESCRIPTION, APP_NAME, WORDMARK, withBase } from "@/lib/site";
 import {
@@ -146,6 +147,7 @@ export const Route = createRootRoute({
         <VisualViewport />
         <DeferredRemoteSync />
         <OfflineMark />
+        <StreakReminderHost />
         <AuthProvider>
           <Outlet />
         </AuthProvider>

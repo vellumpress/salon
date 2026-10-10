@@ -37,8 +37,16 @@ export function clubInviteUrl(token: string) {
   return publicUrl(clubInvitePath(token));
 }
 
-/** Scheduled sits are authored and shown in Eastern Time. */
+/** Legacy authoring zone. Display uses the reader's zone unless a caller passes one. */
 export const CLUB_TZ = "America/New_York";
+
+export function readerTimeZone() {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+  } catch {
+    return "UTC";
+  }
+}
 
 export type EtParts = {
   year: number;
@@ -87,8 +95,8 @@ export function zonedParts(date: Date, timeZone = CLUB_TZ): EtParts {
   };
 }
 
-/** Interpret a wall-clock date + time as America/New_York and return UTC ISO. */
-export function etWallToIso(date: string, time: string): string | null {
+/** Interpret a wall-clock date + time in `timeZone` and return UTC ISO. */
+export function wallToIso(date: string, time: string, timeZone = readerTimeZone()): string | null {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return null;
   if (!/^\d{2}:\d{2}$/.test(time)) return null;
   const [year, month, day] = date.split("-").map(Number);
@@ -99,11 +107,11 @@ export function etWallToIso(date: string, time: string): string | null {
   const want = Date.UTC(year, month - 1, day, hour, minute, 0);
   let utc = want;
   for (let i = 0; i < 4; i += 1) {
-    const got = zonedParts(new Date(utc));
+    const got = zonedParts(new Date(utc), timeZone);
     const gotUtc = Date.UTC(got.year, got.month - 1, got.day, got.hour, got.minute, 0);
     utc += want - gotUtc;
   }
-  const check = zonedParts(new Date(utc));
+  const check = zonedParts(new Date(utc), timeZone);
   if (
     check.year !== year ||
     check.month !== month ||
@@ -116,36 +124,55 @@ export function etWallToIso(date: string, time: string): string | null {
   return new Date(utc).toISOString();
 }
 
-export function defaultSitClock(now = new Date()) {
-  const parts = zonedParts(now);
+/** Eastern wall time. Kept for callers that still name an Eastern hour. */
+export function etWallToIso(date: string, time: string): string | null {
+  return wallToIso(date, time, CLUB_TZ);
+}
+
+export function defaultSitClock(now = new Date(), timeZone = readerTimeZone()) {
+  const parts = zonedParts(now, timeZone);
   const today = calendarDate(parts.year, parts.month, parts.day);
   return { date: addCalendarDays(today, 1), time: "19:00" };
 }
 
-/** Short Eastern listing: "Sun, Sep 21 · 7:00 PM ET". */
-export function formatClubWhen(iso: string, now = new Date()) {
+export function zoneShortName(timeZone = readerTimeZone(), now = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone,
+    hour: "numeric",
+    timeZoneName: "short",
+  }).formatToParts(now);
+  return parts.find((part) => part.type === "timeZoneName")?.value ?? "";
+}
+
+export function zoneClockLabel(timeZone = readerTimeZone(), now = new Date()) {
+  const name = zoneShortName(timeZone, now);
+  return name ? `Time · ${name}` : "Time";
+}
+
+/** Short listing in the reader's zone: "Sun, Sep 21 · 7:00 PM PDT". */
+export function formatClubWhen(iso: string, now = new Date(), timeZone = readerTimeZone()) {
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return "";
   const when = new Intl.DateTimeFormat("en-US", {
-    timeZone: CLUB_TZ,
+    timeZone,
     weekday: "short",
     month: "short",
     day: "numeric",
     hour: "numeric",
     minute: "2-digit",
+    timeZoneName: "short",
   }).format(date);
   const start = date.getTime();
   const age = now.getTime() - start;
-  if (age >= 0 && age < 8 * 60 * 60 * 1000) return `${when} ET · sitting`;
-  if (start > now.getTime()) return `${when} ET`;
-  return `${when} ET`;
+  if (age >= 0 && age < 8 * 60 * 60 * 1000) return `${when} · sitting`;
+  return when;
 }
 
-export function formatClubWhenLong(iso: string) {
+export function formatClubWhenLong(iso: string, timeZone = readerTimeZone()) {
   const date = new Date(iso);
   if (Number.isNaN(date.getTime())) return "";
   return new Intl.DateTimeFormat("en-US", {
-    timeZone: CLUB_TZ,
+    timeZone,
     weekday: "long",
     month: "long",
     day: "numeric",

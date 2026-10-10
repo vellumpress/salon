@@ -41,7 +41,6 @@ import {
 import { clipLine } from "@/lib/share-codec";
 import { liveBackendEnabled, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
 import { createSentenceShare } from "@/lib/sentence-share";
-import { cardReadUrl } from "@/lib/salon-card";
 import {
   SIT_PRESETS,
   asSittingMinutes,
@@ -171,7 +170,7 @@ export function TbrReader({
   const [overlay, setOverlay] = useState<Overlay>("none");
   const [sendPhone, setSendPhone] = useState("");
   const [sendBusy, setSendBusy] = useState(false);
-  const [sendResult, setSendResult] = useState<"shared" | "copied" | null>(null);
+  const [sendResult, setSendResult] = useState<"shared" | "copied" | "downloaded" | null>(null);
   const [canShare, setCanShare] = useState(false);
   const [bar, setBar] = useState<ReaderBarState>(closedReaderBar);
   const still = bar.still;
@@ -606,11 +605,13 @@ export function TbrReader({
     if (sendBusy || !breath) return;
     setSendBusy(true);
     setSendResult(null);
-    const url = cardReadUrl({ workId: work.id, at: index });
-    const result = await shareOrCopy({
-      title: salonShareTitle(work.title),
-      text: salonShareText(clipLine(breath.text, 160)),
-      url,
+    const { shareQuoteCard } = await import("@/lib/quote-share");
+    const result = await shareQuoteCard({
+      workId: work.id,
+      at: index,
+      text: breath.text,
+      title: work.title,
+      author: work.author,
     });
     if (liveBackendEnabled) {
       void createSentenceShare({
@@ -622,7 +623,7 @@ export function TbrReader({
         },
       }).catch(() => undefined);
     }
-    if (result === "shared" || result === "copied") {
+    if (result === "shared" || result === "copied" || result === "downloaded") {
       setSendResult(result);
     }
     setSendBusy(false);
@@ -1701,6 +1702,8 @@ export function TbrReader({
           place={nightChrome || placeLabel}
           breathIndex={index}
           workId={work.id}
+          inviteUrl={publicUrl(sittingSharePath(work.id, asSittingMinutes(sittingMinutes), pair, serializeEp?.n))}
+          onFollow={(breath) => goTo(breath)}
           onLeave={leaveTogether}
         >
           {pane}
@@ -2318,8 +2321,10 @@ export function TbrReader({
                 ? "Making link…"
                 : sendResult === "shared"
                   ? "Shared"
-                  : sendResult === "copied"
-                    ? "Copied"
+                : sendResult === "copied"
+                  ? "Copied"
+                  : sendResult === "downloaded"
+                    ? "Saved"
                     : canShare
                       ? "Share"
                       : "Copy private link"}

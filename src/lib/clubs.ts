@@ -367,7 +367,7 @@ export async function addClubSession(input: {
   const club = await getClubByInvite(token);
   if (!club) throw new Error("This invite would not come.");
   const startsAt = new Date(input.startsAt);
-  if (Number.isNaN(startsAt.getTime())) throw new Error("Pick a day and time in Eastern time.");
+  if (Number.isNaN(startsAt.getTime())) throw new Error("Pick a day and time.");
   const serial = serializeView(club.serializePlanId, club.startEpisode, club.sessions.length);
   const label = input.label?.trim() || serial.serializeLabel || "";
   const rpc = await getSupabase().rpc("add_club_sitting", {

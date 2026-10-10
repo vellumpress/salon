@@ -159,6 +159,12 @@ type TbrState = {
   togetherKeeps: TogetherKeep[];
   hostedSits: HostedSit[];
   sitPledges: SitPledge[];
+  /** 1 when a missed day can be covered. 0 after it has been spent. */
+  streakFreezeBanked: number;
+  streakFreezeUsedOn: string | null;
+  streakReminder: { enabled: boolean; hour: number; minute: number } | null;
+  setStreakFreeze: (banked: number, usedOn: string | null) => void;
+  setStreakReminder: (reminder: { enabled: boolean; hour: number; minute: number } | null) => void;
   rememberTogetherKeep: (pair: TogetherKeep) => void;
   rememberHostedSit: (sit: HostedSit) => void;
   rsvpSit: (sitId: string, guest: { handle: string; name?: string; status: SitRsvp }) => void;
@@ -464,6 +470,15 @@ export const useTbr = create<TbrState>()(
       togetherKeeps: [],
       hostedSits: [],
       sitPledges: [],
+      streakFreezeBanked: 1,
+      streakFreezeUsedOn: null,
+      streakReminder: null,
+      setStreakFreeze: (banked, usedOn) =>
+        set({
+          streakFreezeBanked: banked > 0 ? 1 : 0,
+          streakFreezeUsedOn: usedOn,
+        }),
+      setStreakReminder: (reminder) => set({ streakReminder: reminder }),
       rememberTogetherKeep: (pair) =>
         set((state) => {
           const togetherKeeps = state.togetherKeeps ?? [];
@@ -982,6 +997,9 @@ export const useTbr = create<TbrState>()(
         togetherKeeps: state.togetherKeeps,
         hostedSits: state.hostedSits,
         sitPledges: state.sitPledges,
+        streakFreezeBanked: state.streakFreezeBanked,
+        streakFreezeUsedOn: state.streakFreezeUsedOn,
+        streakReminder: state.streakReminder,
       }),
     },
   ),

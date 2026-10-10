@@ -942,6 +942,12 @@ self.addEventListener("message", function (event) {
     event.waitUntil(dropShellForRecovery());
     return;
   }
+  if (data.type === "show-reminder") {
+    var title = String(data.title || "tbr");
+    var body = String(data.body || "A sitting is waiting, if you like.");
+    event.waitUntil(self.registration.showNotification(title, { body: body, tag: "tbr-streak" }));
+    return;
+  }
   if (data.type !== "warm-assets" || !data.urls || !data.urls.length) return;
   var urls = [];
   var i;
@@ -954,6 +960,27 @@ self.addEventListener("message", function (event) {
   event.waitUntil(warmAssets(urls).then(function () { return networkShell(null).then(function (html) {
     if (html) return enqueueCommit(html);
   }); }).then(function () { return precacheBuild(); }));
+});
+self.addEventListener("push", function (event) {
+  var payload = {};
+  try {
+    payload = event.data ? event.data.json() : {};
+  } catch (err) {
+    payload = { body: event.data ? event.data.text() : "" };
+  }
+  var title = payload.title || "tbr";
+  var body = payload.body || "A sitting is waiting, if you like.";
+  event.waitUntil(self.registration.showNotification(title, { body: body, tag: "tbr-streak" }));
+});
+self.addEventListener("notificationclick", function (event) {
+  event.notification.close();
+  event.waitUntil(self.clients.matchAll({ type: "window", includeUncontrolled: true }).then(function (list) {
+    var i;
+    for (i = 0; i < list.length; i++) {
+      if (list[i].focus) return list[i].focus();
+    }
+    if (self.clients.openWindow) return self.clients.openWindow("/salon/");
+  }));
 });
 self.addEventListener("fetch", function (event) {
   var req = event.request;

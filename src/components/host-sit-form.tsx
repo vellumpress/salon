@@ -102,6 +102,7 @@ export function HostSitForm({ onClose }: { onClose: () => void }) {
               ? ` · ${hosted.invitees.map((row) => formatHandle(row)).join(" · ")}`
               : ""}
           </p>
+          <p className="mt-3 break-all font-sans text-sm text-paper/90">{hostedSitUrl(hosted)}</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2">
           <Link

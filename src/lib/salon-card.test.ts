@@ -30,17 +30,15 @@ test("cardReadUrl is absolute under the Pages base", () => {
 });
 
 test("paintSalonCard draws a framed card without throwing", () => {
-  const calls: string[] = [];
+  const fills: string[] = [];
   const ctx = {
     fillStyle: "",
     font: "",
     textBaseline: "alphabetic",
-    fillRect: () => {
-      calls.push("rect");
+    fillRect() {
+      fills.push(String(ctx.fillStyle));
     },
-    fillText: () => {
-      calls.push("text");
-    },
+    fillText: () => {},
     measureText: (text: string) => ({ width: text.length * 20 }),
   } as unknown as CanvasRenderingContext2D;
   paintSalonCard(
@@ -54,16 +52,14 @@ test("paintSalonCard draws a framed card without throwing", () => {
     CARD_WIDTH,
     CARD_HEIGHT,
   );
-  assert.ok(calls.includes("rect"));
-  assert.ok(calls.includes("text"));
+  assert.equal(fills.filter((color) => color === "#c41230").length, 2);
 });
 
-test("tbr card share opens native share before any hosted persist", () => {
+test("tbr card share paints an image before any hosted persist", () => {
   const source = readFileSync(new URL("../components/salon-card-share.tsx", import.meta.url), "utf8");
-  const shareAt = source.indexOf("shareOrCopy(");
+  const shareAt = source.indexOf("shareQuoteCard(");
   const persistAt = source.indexOf("createSentenceShare(");
   assert.ok(shareAt > -1);
-  assert.match(source, /cardReadUrl/);
   if (persistAt > -1) {
     assert.ok(shareAt < persistAt);
     assert.match(source, /liveBackendEnabled/);

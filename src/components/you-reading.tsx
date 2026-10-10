@@ -117,6 +117,7 @@ export function YouReading({
   notice,
   headerEnd,
   settings,
+  todayEnd,
   trendsEnd,
 }: {
   reading: ReadingStats;
@@ -128,6 +129,7 @@ export function YouReading({
   notice?: string;
   headerEnd?: ReactNode;
   settings: ReactNode;
+  todayEnd?: ReactNode;
   trendsEnd?: ReactNode;
 }) {
   const model = reading.readingModel;
@@ -231,18 +233,21 @@ export function YouReading({
                 </Suspense>
               </LinesBoundary>
             ) : (
-              <Today
-                reading={reading}
-                model={model}
-                handle={handle}
-                last={last}
-                progress={progress}
-                hydrated={hydrated}
-                scoreHide={scoreHide}
-                paused={scorePausedAt != null}
-                onOpen={setDetail}
-                onDismiss={(id) => dismissInsight(id)}
-              />
+              <>
+                <Today
+                  reading={reading}
+                  model={model}
+                  handle={handle}
+                  last={last}
+                  progress={progress}
+                  hydrated={hydrated}
+                  scoreHide={scoreHide}
+                  paused={scorePausedAt != null}
+                  onOpen={setDetail}
+                  onDismiss={(id) => dismissInsight(id)}
+                />
+                {todayEnd}
+              </>
             )}
           </>
         )}

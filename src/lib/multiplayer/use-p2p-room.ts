@@ -14,6 +14,8 @@ export interface UseP2PRoomOptions {
   name?: string;
   /** False skips the Realtime channel (tests and offline shells). */
   enabled?: boolean;
+  /** Bump to rejoin the same room after a quiet line. */
+  attempt?: number;
 }
 
 export interface P2PRoomHandle {
@@ -55,6 +57,7 @@ function sitSelfId(room: string): string {
 
 export function useP2PRoom(options: UseP2PRoomOptions = {}): P2PRoomHandle {
   const enabled = options.enabled !== false;
+  const attempt = options.attempt ?? 0;
   const [room] = useState(() => options.room ?? defaultRoom());
   const [selfId] = useState(() => sitSelfId(options.room ?? defaultRoom()));
   const [name] = useState(() => options.name ?? "");
@@ -69,6 +72,8 @@ export function useP2PRoom(options: UseP2PRoomOptions = {}): P2PRoomHandle {
 
   useEffect(() => {
     if (!enabled) return;
+    setUnavailable(false);
+    setJoined(false);
     const p2p = new RealtimeSitRoom({
       room,
       selfId,
@@ -90,7 +95,7 @@ export function useP2PRoom(options: UseP2PRoomOptions = {}): P2PRoomHandle {
       roomRef.current = null;
       p2p.close();
     };
-  }, [enabled, room, selfId, name]);
+  }, [enabled, room, selfId, name, attempt]);
 
   const setMeta = useCallback((meta: SitMeta) => roomRef.current?.setMeta(meta), []);
   const broadcast = useCallback((data: unknown) => roomRef.current?.broadcast(data), []);
