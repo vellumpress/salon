@@ -119,6 +119,77 @@ test("a share link opens that sentence", async () => {
   }
 });
 
+test("a mid-book at link paints the target sentence first", async () => {
+  await ensureReaderServer();
+  const browser = await launchBrowser();
+  const rituals = [
+    {
+      id: "tales-from-the-fjeld",
+      at: 1658,
+      sit: 8,
+      line: /Once on a time there was a sheep/,
+      start: /We were up on the Fjeld/,
+    },
+    {
+      id: "tales-by-polish-authors",
+      at: 569,
+      sit: 5,
+      line: /Countess Anna Krzywosad/,
+      start: /My hero's name was Bartek/,
+    },
+  ];
+  try {
+    for (const ritual of rituals) {
+      const page = await phonePage(browser, saved(null));
+      await page.addInitScript(() => {
+        const paints: string[] = [];
+        const note = () => {
+          const text = document.querySelector(".breath-now")?.textContent?.replace(/\s+/g, " ").trim() ?? "";
+          if (!text || paints[paints.length - 1] === text) return;
+          paints.push(text);
+        };
+        const arm = () => {
+          note();
+          const obs = new MutationObserver(note);
+          obs.observe(document.documentElement, {
+            subtree: true,
+            childList: true,
+            characterData: true,
+          });
+          const sample = () => {
+            note();
+            requestAnimationFrame(sample);
+          };
+          requestAnimationFrame(sample);
+        };
+        if (document.documentElement) arm();
+        else document.addEventListener("DOMContentLoaded", arm);
+        (window as unknown as { __breathPaints?: string[] }).__breathPaints = paints;
+      });
+      await page.goto(
+        `${ORIGIN}/salon/read/${ritual.id}?sit=${ritual.sit}&at=${ritual.at}`,
+        { waitUntil: "domcontentloaded" },
+      );
+      await page.locator(".breath-now").waitFor({ timeout: 20_000 });
+      await page.waitForFunction(
+        (want) => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === String(want),
+        ritual.at,
+        { timeout: 20_000 },
+      );
+      const paints = await page.evaluate(
+        () => (window as unknown as { __breathPaints?: string[] }).__breathPaints ?? [],
+      );
+      assert.ok(paints.length > 0, `${ritual.id} painted no sentence`);
+      assert.match(paints[0] ?? "", ritual.line, `${ritual.id} first paint`);
+      assert.equal(paints.some((text) => ritual.start.test(text)), false, `${ritual.id} flashed the book start`);
+      assert.match(await page.locator(".breath-now").innerText(), ritual.line);
+      await page.close();
+    }
+  } finally {
+    await browser.close();
+  }
+});
+
 test("a book with no open sit still shows the gate", async () => {
   await ensureReaderServer();
   const browser = await launchBrowser();

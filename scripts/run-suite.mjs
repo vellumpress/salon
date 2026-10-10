@@ -32,6 +32,7 @@ export const allTsFiles = [
   "src/lib/reader-intro.test.ts",
   "src/lib/emphasized-text.test.ts",
   "src/lib/reader-threshold.test.ts",
+  "src/lib/deep-link-breath.test.ts",
   "src/lib/reader-sit-resume.test.ts",
   "src/lib/catalog/rituals-duration.test.ts",
   "src/lib/catalog/rituals-lead.test.ts",

@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type TouchEvent as ReactTouchEvent } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
+import { firstPaintIndex } from "@/lib/deep-link-breath";
 import { openingBreathIndex } from "@/lib/opening-scene";
 import {
   chapterStartIndex,
@@ -243,6 +244,8 @@ export function TbrReader({
   const overlayRef = useRef(overlay);
   overlayRef.current = overlay;
   const booted = useRef(false);
+  /** False until boot writes `at` into the store, so the first paint is that breath. */
+  const linkApplied = useRef(false);
   const seenBreaths = useRef(0);
   /** Share link past the opening excerpt. Applied when the rest of the book arrives. */
   const awaitingAt = useRef<number | null>(
@@ -347,6 +350,7 @@ export function TbrReader({
         if (grew && waiting !== null && waiting < work.breaths.length) {
           if (cancel) return;
           awaitingAt.current = null;
+          linkApplied.current = true;
           startSitting(work.id);
           setBreath(work.id, waiting, stampAt(work, waiting));
           setShowPreface(false);
@@ -369,6 +373,7 @@ export function TbrReader({
       const firstSit = shouldShowPreface(prior);
       setShowPreface(firstSit);
       if (shuffle) {
+        linkApplied.current = true;
         useTbr.getState().startShuffle(work.id);
         setShowPreface(false);
         setOverlay("none");
@@ -379,6 +384,7 @@ export function TbrReader({
       }
       if (deepLink !== null) {
         awaitingAt.current = null;
+        linkApplied.current = true;
         startSitting(work.id);
         setBreath(work.id, deepLink, stampAt(work, deepLink));
         setShowPreface(false);
@@ -472,7 +478,12 @@ export function TbrReader({
   }, []);
 
   const lastBreath = Math.max(0, work.breaths.length - 1);
-  const index = Math.min(lastBreath, Math.max(0, progress?.breathIndex ?? 0));
+  const index = firstPaintIndex({
+    at,
+    breathCount: work.breaths.length,
+    storedIndex: progress?.breathIndex ?? 0,
+    linkApplied: linkApplied.current,
+  });
   const breath = work.breaths[index];
   const scene = breath ? sceneOf(work, breath.sceneId) : work.scenes[0];
   const placeLabel = chapterPlace(work.id, scene);
