@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 /**
- * Rasterize public/favicon.svg — the shelf, ruled — into home-screen PNGs.
- * The SVG is the source of truth (navy t, paper b, forest r, square oxblood stop).
+ * Rasterize public/favicon.svg — the shelf, ruled — into home-screen PNGs
+ * and favicon.ico. The SVG is the source of truth (navy t, paper b, forest r,
+ * square oxblood stop). The letters are Cormorant Garamond outlines, so the
+ * mark does not fall back to a system serif.
  */
 import { spawnSync } from "node:child_process";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -62,4 +64,20 @@ raster(180, join(publicDir, "icon-180.png"));
 raster(192, join(publicDir, "icon-192.png"));
 raster(512, join(publicDir, "icon-512.png"));
 raster(180, join(publicDir, "__grok", "icon-180.png"));
+
+const icoPng = join(tmpdir(), "tbr-favicon-32.png");
+raster(32, icoPng);
+const png = readFileSync(icoPng);
+const ico = Buffer.alloc(6 + 16 + png.length);
+ico.writeUInt16LE(0, 0);
+ico.writeUInt16LE(1, 2);
+ico.writeUInt16LE(1, 4);
+ico.writeUInt8(32, 6);
+ico.writeUInt8(32, 7);
+ico.writeUInt16LE(1, 10);
+ico.writeUInt16LE(32, 12);
+ico.writeUInt32LE(png.length, 14);
+ico.writeUInt32LE(22, 18);
+png.copy(ico, 22);
+writeFileSync(join(publicDir, "favicon.ico"), ico);
 console.log("wrote tbr shelf icons");
