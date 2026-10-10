@@ -166,9 +166,11 @@ export function grokPwaPlugin() {
       return `export const grokOgIdentity = ${JSON.stringify(snapshotOgIdentity(root))};`;
     },
     transformIndexHtml(html) {
+      const pages = process.env.GITHUB_PAGES === "1" && !process.env.VITE_PUBLIC_HOSTNAME;
       return injectGrokPwaHead(html, {
-        host: process.env.VITE_PUBLIC_HOSTNAME ?? "",
+        host: process.env.VITE_PUBLIC_HOSTNAME || (pages ? "vellumpress.github.io" : ""),
         cwd: root,
+        basePath: pages ? "/salon" : "",
       });
     },
     configureServer(server) {

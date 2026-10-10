@@ -127,6 +127,23 @@ test("does not duplicate twitter:card or og:title", () => {
   assert.equal(twice.split('property="og:title"').length - 1, 1);
 });
 
+test("Pages base prefixes the custom card", () => {
+  const out = injectGrokPwaHead("<html><head></head></html>", {
+    host: "vellumpress.github.io",
+    cwd: mkdtempSync(join(tmpdir(), "grok-og-pages-")),
+    basePath: "/salon",
+    site: { title: "tbr", image: "/og.jpg", card: "custom" },
+  });
+  assert.match(
+    out,
+    /property="og:image" content="https:\/\/vellumpress\.github\.io\/salon\/og\.jpg"/,
+  );
+  assert.match(
+    out,
+    /name="twitter:image" content="https:\/\/vellumpress\.github\.io\/salon\/og\.jpg"/,
+  );
+});
+
 test("a baked site.image is treated as a custom card", () => {
   const out = injectGrokPwaHead("<html><head></head></html>", {
     host: "wild-race.grok.me",
