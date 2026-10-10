@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { estimateRitualMinutes, ritualDurationLabel } from "./rituals.ts";
+import { estimateRitualMinutes, ritualCardSearch, ritualCardSit, ritualDurationLabel } from "./rituals.ts";
+import { nearestSitPreset } from "../sitting.ts";
 import type { ShelfWork } from "./shelf";
 
 function work(
@@ -576,4 +577,39 @@ test("Trooper Peter Halket before-sleep sit is the kopje-fire cut, not the novel
   });
   assert.equal(estimateRitualMinutes(item), 4);
   assert.equal(ritualDurationLabel(item), "~5 min");
+});
+
+test("Tales from the Fjeld ritual link carries sit=8, not the 12-minute preset", () => {
+  const fjeld = work({
+    id: "tales-from-the-fjeld",
+    form: "stories",
+    breaths: 2355,
+    minutes: 488,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(fjeld), 8);
+  assert.equal(nearestSitPreset(estimateRitualMinutes(fjeld)), 12);
+  assert.equal(ritualCardSit(fjeld), 8);
+  assert.deepEqual(ritualCardSearch(fjeld), { sit: 8, at: 1658 });
+
+  const april = work({
+    id: "enchanted-april",
+    form: "novel",
+    minutes: 80,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(april), 8);
+  assert.equal(ritualCardSit(april), 12);
+  assert.deepEqual(ritualCardSearch(april), { sit: 12 });
+
+  const polish = work({
+    id: "tales-by-polish-authors",
+    form: "stories",
+    breaths: 1008,
+    minutes: 202,
+    local: true,
+  });
+  assert.equal(estimateRitualMinutes(polish), 6);
+  assert.equal(ritualCardSit(polish), 5);
+  assert.deepEqual(ritualCardSearch(polish), { sit: 5, at: 569 });
 });
