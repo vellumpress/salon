@@ -205,6 +205,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "tales-from-the-fjeld": { label: "Norway", region: "no" },
   "a-russian-gentleman": { label: "Simbirsk", region: "ru" },
   "walter-pieterse": { label: "Amsterdam", region: "nl" },
+  "froth": { label: "Madrid", region: "es" },
   "tales-by-polish-authors": { label: "Poland", region: "pl" },
   "the-dancing-master": { label: "Paris", region: "fr" },
   "the-golden-age": { label: "England", region: "gb" },

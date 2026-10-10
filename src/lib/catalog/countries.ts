@@ -732,6 +732,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "tales-from-the-fjeld": "Norway",
   "a-russian-gentleman": "Russia",
   "walter-pieterse": "Netherlands",
+  "froth": "Spain",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",
   "the-golden-age": "United Kingdom",

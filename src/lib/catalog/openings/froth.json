@@ -1,0 +1,91 @@
+{
+  "id": "froth",
+  "title": "Froth",
+  "author": "Armando Palacio Valdés (tr. Clara Bell)",
+  "year": "1891",
+  "note": "Opening sit: Chapter I, from the Calle de Serrano to the banker's door, ending \"...a servant in livery was awaiting her.\"",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I · Dramatis Personæ",
+      "place": "Chapter I · Dramatis Personæ",
+      "reentry": "At three in the afternoon the sun was pouring its rays on the Calle de Serrano, bathing it in bright orange light which hurt the eyes of those who went down the left-hand side where the houses stood closest. But as the cold was intense the ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "At three in the afternoon the sun was pouring its rays on the Calle de Serrano, bathing it in bright orange light which hurt the eyes of those who went down the left-hand side where the houses stood closest. But as the cold was intense the pedestrian was not eager to cross to the other pavement in search of shade, preferring to face the sunbeams which, though blinding, were at any rate warming. At this hour, tripping slowly and daintily along, her muff of handsome otter-skin held up to shade her eyes, an elegantly dressed woman was making her way down the street, leaving behind her a wake of perfume which the shopmen standing at their doors sniffed up with enjoyment, as they gazed in rapture at the being who exhaled such a delightful fragrance."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "For the Calle de Serrano, albeit the widest and handsomest in Madrid, has an essentially provincial stamp; little traffic, shops devoid of display, and dedicated for the most part to the sale of the necessaries of life, children playing in front of the houses, door-keepers seated in committee and discussing matters at the top of their voices with the unemployed butchers' boys, fishmongers, and grocers. Hence a well-dressed woman could not pass unremarked, as she might in the more central parts of the town. The glances of the passers-by, as well as of the loungers, rested on her with pleasure; the women commented on the quality of the clothes she wore, and horrible jests were uttered by the dreadful apprentices, provoking their companions to outbursts of brutal glee. One of the most ruffianly and greasy looking threw out as she passed one of those coarse remarks which would bring the colour to the smooth cheek of an English Miss, and make her call the policeman, and almost exact an apology. But our valiant Spanish lady, her soul above prudery, did not even wince, but went on her triumphant way with the dainty and hesitating step of a woman who rarely sets foot in the dust of the highway."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "For that hers was a triumphant progress there could be no doubt; no one could look at her without admiration, not so much of her luxurious attire, as of the severe beauty of her face and the distinction of her figure. She was five-and-thirty at least. There was something extremely original in the type of her features. Her complexion was clear and dark, her eyes, blue, her hair coppery red. Such a strange mingling of different races is rarely seen in a face: if it showed a stronger dash of one than another, it was of the Italian. It was one of those faces which suggest an English lady burnt under a Neapolitan sun. In some of Raphael's pictures we see heads which may give some notion of our fair pedestrian."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Her predominant expression at the present moment was one of proud disdain, to which perhaps the sun contributed by making her knit her smooth and delicate brows. There was not, it must be confessed, any sweetness in this face; its firm and regular lines betrayed a haughty spirit devoid of tenderness; those blue eyes had not the limpid serenity which lends perfect harmony to a certain virginal style of countenance, occasionally seen and admired in Spain, but more frequently in the north of Europe. They were made to express the tumult of vehement and violent passions, among which ardent love might, perhaps, have its turn, but never that humble and silent devotion which would consent to die unspoken."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "She wore a high red hat, and a short thin veil, also red, reaching only to her lips. The hue of this veil contributed to lend her face that singular tinge which caught the eye of every one who met her. Her wrapper was a handsome fur cloak, over a dress of the same shade as her hat, with an overskirt of lace or grenadine such as was then the fashion."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "She held up her muff, as has been said, to shade her eyes, and kept her eyes fixed on the ground as one who does not care to see or heed anything which may come in her way. Consequently, till she came to the Calle de Jorge Juan, she did not detect the presence of a young man, who, keeping pace with her on the opposite side of the way, gazed at her with even more admiration than curiosity. But on reaching the corner, without knowing why, she raised her head, and her eyes met those of her admirer. A very perceptible shade of annoyance clouded her face; she frowned with greater severity, and the haughty expression of her eyes was more marked than before. She walked a little faster, and, on reaching the Calle de Villanueva, she stood still, and looked down the street, hoping, no doubt, to see a tramcar. The youth dared not do the same; he went on his way, not without sending certain eager and significant glances after the graceful figure, to which she vouchsafed no notice. The car at last arrived; the lady stepped in, showing, as she did so, a pretty foot shod in a kid boot, and took her seat in the farthest corner. Finding herself safe from indiscreet observation, her eyes by degrees grew more serene, and rested with indifference on the few persons who were with her in the vehicle; still the cloud of anxious thought did not altogether disappear from her face, nor the touch of disdain which lent dignity to her beauty."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Her youthful admirer had not resigned himself to losing sight of her. He went on confidently down the Calle de Villanueva; but as the tramcar went by he nimbly caught it up, and got on the step without being observed. And contriving to place himself where the lady could not see him, behind other persons standing on the platform, he was able to gaze at her by stealth, with an enthusiasm which would have made any looker-on smile."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "For the difference between their ages was considerable. Our young friend looked about eighteen; his face was as beardless, as fresh and as rosy as a girl's, his hair red, his eyes blue, gentle, and melancholy. Though he wore an overcoat and a felt hat, his appearance was that of a gentleman; he was in the deepest mourning, which contrasted strongly with the fairness of his complexion. Under the magnetic influence of a firm gaze, which we all have experienced, our heroine ere long turned her eyes to the spot whence the young man fired darts of passionate admiration. Her face grew dark again, and her lips twitched with impatience, as though the poor boy's adoration was an aggression. And she began to show signs of feeling ill at ease in the coach, turning her pretty head now this way and now that, with an evident desire to escape. However, she did not alight till they reached the church of San José, where she stopped the car and got out, passing her persecutor with a look of proud disdain, which might have annihilated him."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "He must have been a very bold man, or quite devoid of shame, to jump out after her as he did, and follow her along the Calle del Caballero de Gracia, taking the opposite side-walk to be able to stare more at his ease on the face which had so taken possession of him. The lady proceeded at a leisurely pace, and every man who passed her turned to gaze. Her step was that of a goddess who condescends to quit her throne of clouds for an hour, to rejoice and fascinate mortal men, who, as they behold her, are enraptured and stumble in their walk."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Merciful Virgin, what a woman!\" exclaimed a young officer in a loud voice, clinging to his companion as if he were about to faint with surprise."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "The fair one could not help smiling very slightly, and the flash of that smile seemed to light up her exceptional loveliness. Presently two gentlemen in an open carriage bowed respectfully to her, and she responded with an almost imperceptible nod. When she reached the corner where the streets part by San Luis she hesitated and paused, looking in every direction, and again catching sight of the red-haired youth, she turned her back on him with marked contempt, and went on at a more rapid pace down the Calle de la Montera, where her appearance caused the same excitement in the passers-by. Three or four times she stopped in front of the shop windows, though evidently she did so less out of curiosity than in consequence of the nervous state into which the youth's unrelenting pursuit had plunged her."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Near the Puerta del Sol, to avoid him no doubt, she made up her mind to go into Marbini's jewel shop. Seating herself with an air of indifference, she raised her veil a little, and began to examine without much attention the latest importations in gems which the shopman displayed before her. She could not have done worse by way of releasing herself from the observations of her boyish admirer, since he could pursue them at his leisure and with the greatest ease through the plate glass windows, and did so with a persistency which enraged her more and more every minute."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "In point of fact, the elegantly decorated shop, glittering in every corner with precious stones and metals, was a worthy shrine for her beauty, the setting best fitted for so delicate a gem. And so the youth was thinking, to judge from the impassioned ecstasy of his eyes and the statue-like fixity of his attitude. At last, unable any longer to control her irritation, the lady abruptly rose, and with a brief \"Good morning\" to the attendant, who treated her with extraordinary deference, she quitted the shop, and set off as fast as she could walk, towards the Puerta del Sol."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Here she stopped; then she went a little way towards a hackney cab, as though intending to take it; but, suddenly changing her mind, she turned with a determined step towards the Calle Mayor, still escorted by the youth at no great distance. Half-way down the street she vanished into a handsome house, not without sending a hasty but furious glance at her follower, who took it with perfect and wonderful coolness. The porter who was standing in the portico, gravely clipping his bushy black whiskers, hastily pulled off his braided cap, made her a low bow, and flew to open the glass door to the staircase, pressing, as he did so, the button of an electric bell. She slowly mounted the carpeted steps, and by the time she reached the first floor the door was already open, and a servant in livery was awaiting her."
+    }
+  ]
+}

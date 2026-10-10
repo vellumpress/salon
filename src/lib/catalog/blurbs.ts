@@ -641,6 +641,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: this memoir shows the Bashkirs in the light of its time and a husband who beats his wife, and its second Fragment tells plainly of a landowner’s floggings, torture and killings of his serfs.",
   "walter-pieterse":
     "In old Amsterdam, a dreamy shopkeeper’s boy falls in love with a sawmill, and with everything else the grown-ups think is nonsense.",
+  "froth":
+    "A heads-up before you start: this novel turns on adultery, and it tells plainly of a child tortured by her mother, held over a sink until she faints and beaten nearly to death. Later chapters show miners and boys poisoned by mercury, a man who once sold an enslaved woman and their children, and a slow death and a slide into madness.",
   "tales-by-polish-authors":
     "A Polish peasant marches off to war with the French, and three more Polish writers follow, from a country estate to Siberian exile.",
   "the-dancing-master":
