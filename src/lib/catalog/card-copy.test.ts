@@ -316,6 +316,7 @@ test("known origin overrides", () => {
     "comedies-incl-jeppe-of-the-hill": "Denmark",
     "tales-from-the-fjeld": "Norway",
     "a-russian-gentleman": "Russia",
+    "walter-pieterse": "Netherlands",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",

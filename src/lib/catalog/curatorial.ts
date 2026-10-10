@@ -1206,6 +1206,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Off every Ritual lane; the opening sit (Fragment I, The Migration, to the departure for Ufa) is never unwind or before-sleep.
   // Tales by Polish Authors is Later (not here); its Temptation sits on unwind and before-sleep.
   "a-russian-gentleman",
+  // Mira Sat 10 Oct 2026 MID WALTER-PIETERSE — Walter Pieterse follows A Russian Gentleman, plain Next. Never Featured, off every Ritual lane.
+  "walter-pieterse",
 ] as const;
 
 /**

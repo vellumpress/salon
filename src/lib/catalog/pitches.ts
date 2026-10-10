@@ -398,6 +398,8 @@ export const PITCHES: Record<string, string> = {
     "We were up on the Fjeld, Edward and I and Anders our guide, in quest of reindeer. A storm shuts them into a mountain shieling, and by the fire Anders and the girls take turns telling the old tales, from Osborn’s Pipe to the Pancake. More tales of beasts, Boots and trolls follow on their own.",
   "tales-by-polish-authors":
     "My hero's name was Bartek Slowik; but owing to his habit of staring when spoken to, the neighbours called him 'Bartek Goggle-Eyes.' Called up when war with the French comes, Bartek leaves Magda, the cottage and the piebald horse behind. Tales by Zeromski, Szymanski and Sieroszewski follow, from a Polish country estate to the exiles of Yakutsk.",
+  "walter-pieterse":
+    "I don't know the year; but, since the reader will be interested to know the time when this story begins, I will give him a few facts to serve as landmarks. In the Hartenstraat of old Amsterdam, small Walter Pieterse falls in love with a sawmill, a book of knights and a dream he calls Fancy, while the grown-ups around him call it all nonsense.",
   "the-dancing-master":
     `“The Dancing-Master” is one complete story from Parisian Points of View — asked by a hostess to engage old Morin, a dancing-master, for her little girls, a guest goes behind the scenes at the opera one February night in 1881, finds him on stage as a bishop in “The Prophet,” and in the wings gets an earnest lecture on why France needs more dancing. It ends “…withstood the shock of this avalanche of dancers.” A heads-up before you start: the old teacher talks frankly, in the manner of his day, about sizing up a partner's figure while waltzing. Amused and brisk, for a walk. Paris.`,
   "the-golden-age":

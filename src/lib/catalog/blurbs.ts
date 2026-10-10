@@ -639,6 +639,8 @@ const BLURBS: Record<string, string> = {
     "Storm-bound in a Norwegian mountain shieling, a guide and the two girls who keep it trade folk tales by the fire.",
   "a-russian-gentleman":
     "A heads-up before you start: this memoir shows the Bashkirs in the light of its time and a husband who beats his wife, and its second Fragment tells plainly of a landowner’s floggings, torture and killings of his serfs.",
+  "walter-pieterse":
+    "In old Amsterdam, a dreamy shopkeeper’s boy falls in love with a sawmill, and with everything else the grown-ups think is nonsense.",
   "tales-by-polish-authors":
     "A Polish peasant marches off to war with the French, and three more Polish writers follow, from a country estate to Siberian exile.",
   "the-dancing-master":
