@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 import { decodeQuoteCard, encodeQuoteCard } from "./quote-share.ts";
 import { fillOf } from "./mondrian.ts";
 import { cardFill, decodeQuoteToken, renderQuoteHtml, renderQuotePng, shareCardFunctionUrl } from "./quote-unfurl-server.ts";
+import { cormorantItalic, cormorantRegular, outfitMedium } from "../../supabase/functions/share-card/fonts.ts";
 
 const sentence = "The envelope is still unopened.";
 
@@ -87,6 +88,63 @@ test("share-card does not import a wasm module", () => {
     assert.doesNotMatch(source, /index_bg\.wasm/);
     assert.doesNotMatch(source, /import\s*\(\s*["'][^"']+\.wasm["']/);
     assert.doesNotMatch(source, /from\s+["'][^"']+\.wasm["']/);
+  }
+});
+
+function glyphId(bytes: Uint8Array, codePoint: number): number {
+  const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+  const numTables = view.getUint16(4);
+  let cmapOffset = -1;
+  for (let i = 0; i < numTables; i++) {
+    const rec = 12 + i * 16;
+    const tag = String.fromCharCode(bytes[rec]!, bytes[rec + 1]!, bytes[rec + 2]!, bytes[rec + 3]!);
+    if (tag === "cmap") cmapOffset = view.getUint32(rec + 8);
+  }
+  if (cmapOffset < 0) return 0;
+  const count = view.getUint16(cmapOffset + 2);
+  for (let i = 0; i < count; i++) {
+    const start = cmapOffset + 4 + i * 8;
+    const formatOff = cmapOffset + view.getUint32(start + 4);
+    const format = view.getUint16(formatOff);
+    if (format === 12) {
+      const groups = view.getUint32(formatOff + 12);
+      for (let g = 0; g < groups; g++) {
+        const at = formatOff + 16 + g * 12;
+        const first = view.getUint32(at);
+        const last = view.getUint32(at + 4);
+        if (codePoint < first || codePoint > last) continue;
+        return view.getUint32(at + 8) + (codePoint - first);
+      }
+    }
+    if (format === 4 && codePoint <= 0xffff) {
+      const segCount = view.getUint16(formatOff + 6) / 2;
+      const endBase = formatOff + 14;
+      const startBase = endBase + segCount * 2 + 2;
+      const deltaBase = startBase + segCount * 2;
+      const offsetBase = deltaBase + segCount * 2;
+      for (let s = 0; s < segCount; s++) {
+        const end = view.getUint16(endBase + s * 2);
+        const startCp = view.getUint16(startBase + s * 2);
+        if (codePoint < startCp || codePoint > end) continue;
+        const delta = view.getInt16(deltaBase + s * 2);
+        const rangeOff = view.getUint16(offsetBase + s * 2);
+        if (rangeOff === 0) return (codePoint + delta) & 0xffff;
+        const glyphOff = offsetBase + s * 2 + rangeOff + (codePoint - startCp) * 2;
+        const glyph = view.getUint16(glyphOff);
+        if (glyph === 0) return 0;
+        return (glyph + delta) & 0xffff;
+      }
+    }
+  }
+  return 0;
+}
+
+test("share-card fonts include Latin Extended-A for the shelf", () => {
+  const needed = ["Wacław", "Żeromski", "Nasławska"].join("");
+  for (const face of [outfitMedium, cormorantRegular, cormorantItalic]) {
+    for (const char of needed) {
+      assert.ok(glyphId(face, char.codePointAt(0)!) > 0, char);
+    }
   }
 });
 
