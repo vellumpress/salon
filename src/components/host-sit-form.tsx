@@ -62,7 +62,7 @@ export function HostSitForm({ onClose }: { onClose: () => void }) {
       return;
     }
     if (!isLocalBound(workId)) {
-      setError("Pick a bound book from the shelf.");
+      setError("Pick a book from the shelf.");
       return;
     }
     const next = createHostedSit({

@@ -610,13 +610,13 @@ function StartClubForm({
       return;
     }
     if (!isLocalBound(workId)) {
-      setError("Pick a bound book from the shelf.");
+      setError("Pick a book from the shelf.");
       return;
     }
     if (serializePlanId) {
       const plan = serializePlan(serializePlanId);
       if (!plan || !isSerializeBound(plan) || plan.shelfWorkId !== workId) {
-        setError("Pick a bound series from the shelf.");
+        setError("Pick a series.");
         return;
       }
     }

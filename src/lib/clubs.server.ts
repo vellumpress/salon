@@ -166,7 +166,7 @@ async function loadClubByToken(token: string): Promise<BookClubView | null> {
 
 function requireLocalWork(workId: string) {
   if (!isLocalBound(workId)) {
-    throw new Error("Pick a bound book from the shelf");
+    throw new Error("Pick a book from the shelf");
   }
 }
 
@@ -177,7 +177,7 @@ function requireSerialize(workId: string, planId?: string, startEpisode?: number
   const plan = serializePlan(planId);
   if (!plan) throw new Error("That series is not on the board");
   if (!isSerializeBound(plan) || plan.shelfWorkId !== workId) {
-    throw new Error("Pick a bound series from the shelf");
+    throw new Error("Pick a series");
   }
   const start = Math.min(plan.nights, Math.max(1, startEpisode ?? 1));
   return { serializePlanId: plan.id, startEpisode: start };

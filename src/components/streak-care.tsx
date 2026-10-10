@@ -37,7 +37,7 @@ export function StreakCare({ streak }: { streak: number }) {
       } else if (native.scheduled) {
         setNote("This phone will nudge you at that hour, even if tbr is closed.");
       } else if (push) {
-        setNote("This install can take a nudge. A sender still has to be turned on.");
+        setNote("Nudges aren't on for this phone yet.");
       } else {
         setNote("While tbr is open, it will nudge you at that hour.");
       }
