@@ -1,7 +1,17 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { cardFill, cardReadPath, cardReadUrl, CARD_HEIGHT, CARD_WIDTH, paintSalonCard } from "./salon-card.ts";
+import {
+  CARD_FONT_LOADS,
+  CARD_HEIGHT,
+  CARD_WIDTH,
+  cardFill,
+  cardFontSample,
+  cardReadPath,
+  cardReadUrl,
+  loadCardFonts,
+  paintSalonCard,
+} from "./salon-card.ts";
 
 test("cardFill follows the work's Mondrian plane", () => {
   assert.equal(cardFill({ text: "x", title: "Passing", author: "Nella Larsen", workId: "passing" }), "red");
@@ -27,6 +37,38 @@ test("cardReadUrl is absolute under the Pages base", () => {
     if (prev === undefined) delete (globalThis as { window?: unknown }).window;
     else (globalThis as { window: unknown }).window = prev;
   }
+});
+
+test("the canvas loads Outfit 500 and the Cormorant faces before paint", async () => {
+  const sample = cardFontSample({
+    text: "Żeromski",
+    title: "Nasławska",
+    author: "Wacław",
+  });
+  assert.match(sample, /Wacław/);
+  assert.match(sample, /Żeromski/);
+  const seen: string[] = [];
+  const prev = globalThis.document;
+  Object.assign(globalThis, {
+    document: {
+      fonts: {
+        load: async (spec: string, text: string) => {
+          seen.push(`${spec}|${text}`);
+          return [];
+        },
+      },
+    },
+  });
+  try {
+    await loadCardFonts(sample);
+  } finally {
+    Object.assign(globalThis, { document: prev });
+  }
+  assert.deepEqual(
+    seen,
+    CARD_FONT_LOADS.map((spec) => `${spec}|${sample}`),
+  );
+  assert.equal(CARD_FONT_LOADS.length, 4);
 });
 
 test("paintSalonCard draws a framed card without throwing", () => {

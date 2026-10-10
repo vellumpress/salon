@@ -126,6 +126,24 @@ export function paintSalonCard(
   ctx.fillText(clipLine(input.title || "A sitting", 42), inset + 160, bandTop + 132);
 }
 
+/** Faces the canvas paints. Load them with the card text so a first draw is not a fallback. */
+export const CARD_FONT_LOADS = [
+  '500 28px "Outfit"',
+  '500 22px "Outfit"',
+  'italic 64px "Cormorant Garamond"',
+  '400 40px "Cormorant Garamond"',
+] as const;
+
+export function cardFontSample(input: SalonCardInput): string {
+  return [APP_NAME, input.text, input.author, input.title].filter(Boolean).join(" ");
+}
+
+export async function loadCardFonts(sample: string): Promise<void> {
+  const fonts = typeof document === "undefined" ? undefined : document.fonts;
+  if (!fonts?.load) return;
+  await Promise.all(CARD_FONT_LOADS.map((spec) => fonts.load(spec, sample)));
+}
+
 export async function renderSalonCard(input: SalonCardInput): Promise<Blob> {
   const canvas = document.createElement("canvas");
   canvas.width = CARD_WIDTH;
@@ -133,9 +151,9 @@ export async function renderSalonCard(input: SalonCardInput): Promise<Blob> {
   const ctx = canvas.getContext("2d");
   if (!ctx) throw new Error("The card would not draw.");
   try {
-    await document.fonts?.ready;
+    await loadCardFonts(cardFontSample(input));
   } catch {
-    /* the card still draws if the face list is unavailable */
+    /* the card still draws if a face cannot be fetched */
   }
   paintSalonCard(ctx, input);
   return new Promise((resolve, reject) => {
