@@ -5,7 +5,8 @@ import { shelfWork } from "@/lib/catalog/shelf";
 import { canonicalWorkId } from "@/lib/work-id-alias";
 import { getImport } from "@/lib/import/idb";
 import { isDeviceImport } from "@/lib/import/private";
-import { loadWork, peekWork, type Work } from "@/lib/works";
+import { holdOpeningForAt } from "@/lib/deep-link-breath";
+import { loadWork, peekWork, workIsComplete, type Work } from "@/lib/works";
 import { useTbr } from "@/lib/store";
 import { asSittingMinutes } from "@/lib/sitting";
 import { asPairCode, searchFlag } from "@/lib/shuffle";
@@ -91,6 +92,13 @@ function ReadGate({ children }: { children: ReactNode }) {
   );
 }
 
+/** Opening excerpt that does not contain `at` must not paint breath 0. */
+function workReadyForAt(book: Work | null | undefined, at: number | undefined) {
+  if (!book) return book;
+  if (holdOpeningForAt(at, book.breaths.length, workIsComplete(book.id))) return undefined;
+  return book;
+}
+
 function ReadPage() {
   const { workId } = Route.useParams();
   const { shuffle, sit, pair, at, episode, echo, hosted } = Route.useSearch();
@@ -98,7 +106,7 @@ function ReadPage() {
   const device = isDeviceImport(workId);
   const meta = workId === "page" ? pageWork : shelfWork(workId);
   const [work, setWork] = useState<Work | null | undefined>(() =>
-    workId === "page" ? pageWork : device ? undefined : (peekWork(workId) ?? undefined),
+    workId === "page" ? pageWork : device ? undefined : workReadyForAt(peekWork(workId), at),
   );
 
   useEffect(() => {
@@ -117,22 +125,27 @@ function ReadPage() {
       };
     }
     let live = true;
-    const cached = peekWork(workId);
+    const cached = workReadyForAt(peekWork(workId), at);
     if (cached) setWork(cached);
     else setWork(undefined);
     void loadWork(workId, (next) => {
-      if (live) setWork(next);
+      const ready = workReadyForAt(next, at);
+      if (live && ready) setWork(ready);
     })
       .then((next) => {
-        if (live) setWork(next ?? null);
+        if (!live) return;
+        const ready = workReadyForAt(next, at);
+        setWork(ready ?? next ?? null);
       })
       .catch(() => {
-        if (live) setWork(peekWork(workId) ?? null);
+        if (!live) return;
+        const ready = workReadyForAt(peekWork(workId), at);
+        setWork(ready ?? peekWork(workId) ?? null);
       });
     return () => {
       live = false;
     };
-  }, [workId, pageWork, device]);
+  }, [workId, pageWork, device, at]);
 
   if (work === undefined) {
     return (
