@@ -1,11 +1,26 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { getSentenceShare } from "@/lib/sentence-share";
-import { decodeQuoteCard } from "@/lib/quote-share";
+import { decodeQuoteCard, quoteImageUrl } from "@/lib/quote-share";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { useChromeStatusBar } from "@/lib/use-reader-daylight";
 
 export const Route = createFileRoute("/s/$token")({
+  head: ({ params }) => {
+    const card = decodeQuoteCard(params.token);
+    const image = quoteImageUrl(params.token);
+    const title = card?.n ? (card.a ? `${card.n} · ${card.a}` : card.n) : "tbr";
+    return {
+      meta: [
+        { title },
+        { property: "og:title", content: title },
+        { property: "og:description", content: card?.t ?? "" },
+        { property: "og:image", content: image },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:image", content: image },
+      ],
+    };
+  },
   component: ShareLanding,
 });
 
