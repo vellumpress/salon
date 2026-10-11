@@ -418,6 +418,33 @@ test("a shell commit of the same build does not reload an open reader", async ()
   assert.deepEqual(navigated, []);
 });
 
+test("an older cached shell reloads open phones even when the network shell misses", async () => {
+  const { client, navigated } = openReader();
+  const worker = loadWorker({
+    onLine: true,
+    fetchImpl: () => Promise.reject(new TypeError("Failed to fetch")),
+    clients: [client],
+    manifest: { boot: ["/salon/assets/index-newBuild.js"], precache: ["/salon/assets/index-newBuild.js"] },
+  });
+  await putShell(worker.caches, "tbr-shell-v3", shellHtml("/salon/assets/index-roOwEHpA.js"));
+  await runActivate(worker);
+  assert.equal(navigated.length, 1);
+  assert.match(navigated[0], /__fresh=/);
+  assert.match(navigated[0], /sit=5/);
+});
+
+test("a phone that is offline keeps the shell it already has", async () => {
+  const { client, navigated } = openReader();
+  const worker = loadWorker({
+    onLine: false,
+    clients: [client],
+    manifest: { boot: ["/salon/assets/index-newBuild.js"] },
+  });
+  await putShell(worker.caches, "tbr-shell-v3", shellHtml("/salon/assets/index-roOwEHpA.js"));
+  await runActivate(worker);
+  assert.deepEqual(navigated, []);
+});
+
 test("a new build reloads an open reader through __fresh and keeps the sit query", async () => {
   const { client, navigated } = openReader();
   const worker = loadWorker({

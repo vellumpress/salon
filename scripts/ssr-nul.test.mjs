@@ -12,6 +12,7 @@ import {
   collectShellPrecache,
   FONT_FILES,
   renderBootWatchScript,
+  renderShellNetworkHints,
   renderShellServiceWorker,
   rewriteDehydrateSsrMatchId,
   stripHtmlNulBytes,
@@ -143,6 +144,11 @@ test("a new shell is stored only after its entry assets exist", () => {
   assert.match(sw, /skipWaiting/);
   assert.match(sw, /clients\.claim/);
   assert.match(sw, /reloadOpenClients/);
+  assert.match(sw, /shellBehindWorker/);
+  assert.match(sw, /clients\.claim\(\)[\s\S]{0,400}shellBehindWorker/);
+  const hints = renderShellNetworkHints();
+  assert.match(hints, /reg\.update\(\)/);
+  assert.match(hints, /skip-waiting/);
   const commit = sw.slice(sw.indexOf("function commitShell"));
   const warmAt = commit.indexOf("warmAssets(critical)");
   const putAt = commit.indexOf("cache.put(shellUrl()");

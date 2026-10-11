@@ -12,6 +12,7 @@ export function ReaderAuthForm({
   error = "",
   onCreate,
   onSignIn,
+  onMagicLink,
 }: {
   mode: ReaderAuthMode;
   onMode: (mode: ReaderAuthMode) => void;
@@ -20,6 +21,7 @@ export function ReaderAuthForm({
   error?: string;
   onCreate: (input: { handle: string; email: string; password: string }) => void;
   onSignIn: (input: { email: string; password: string }) => void;
+  onMagicLink?: (email: string) => void;
 }) {
   const [handle, setHandle] = useState(defaultHandle);
   const [email, setEmail] = useState("");
@@ -127,12 +129,22 @@ export function ReaderAuthForm({
       ) : null}
 
       {mode === "in" ? (
-        <Link
-          to="/forgot-password"
-          className="flex h-12 items-center justify-center border-b border-ink bg-paper font-sans text-sm text-ink"
-        >
-          Forgot password?
-        </Link>
+        <>
+          <Link
+            to="/forgot-password"
+            className="flex h-12 items-center justify-center border-b border-ink bg-paper font-sans text-sm text-ink"
+          >
+            Forgot password?
+          </Link>
+          <button
+            type="button"
+            disabled={busy || !email.trim()}
+            onClick={() => onMagicLink?.(email)}
+            className="flex h-12 items-center justify-center border-b border-ink bg-paper font-sans text-sm text-ink disabled:opacity-60"
+          >
+            Email me a sign-in link
+          </button>
+        </>
       ) : null}
 
       {error ? (

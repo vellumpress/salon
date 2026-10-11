@@ -1,9 +1,10 @@
 import { useEffect, useRef } from "react";
 import { usePersistHydrated } from "@/components/resume-link";
-import { draftsFromLocal } from "@/lib/remote-activity";
+import { draftsFromLocal, publishingHandle } from "@/lib/remote-activity";
 import { ensureProfile } from "@/lib/remote-auth";
 import {
   dropFollows,
+  planFollowSync,
   publishActivity,
   pullFollows,
   pushFollows,
@@ -14,6 +15,7 @@ import {
   subscribeFriendActivity,
   wantedFollowHandles,
 } from "@/lib/remote-directory";
+import { readReaderVault, sessionFromVault } from "@/lib/reader-account";
 import { normalizeHandle } from "@/lib/social";
 import { isOffline } from "@/lib/net";
 import { getSupabase } from "@/lib/supabase";
@@ -25,7 +27,8 @@ import { useTbr } from "@/lib/store";
  */
 export function RemoteSync() {
   const hydrated = usePersistHydrated();
-  const seenFollows = useRef<Set<string> | null>(null);
+  const seenFollows = useRef<string[] | null>(null);
+  const emptyFollowStreak = useRef(0);
   const followSignature = useRef("");
 
   useEffect(() => {
@@ -78,12 +81,10 @@ export function RemoteSync() {
           if (contacts.some((row) => row.handle === profile.handle)) continue;
           useTbr.getState().addContact({ handle: profile.handle, name: profile.name || undefined });
         }
-        const previous = seenFollows.current;
-        if (previous) {
-          const dropped = [...previous].filter((row) => !wanted.has(row));
-          if (dropped.length) await dropFollows(session.user.id, dropped);
-        }
-        seenFollows.current = wanted;
+        const plan = planFollowSync(seenFollows.current, wanted, emptyFollowStreak.current);
+        emptyFollowStreak.current = plan.emptyStreak;
+        if (plan.drop.length) await dropFollows(session.user.id, plan.drop);
+        seenFollows.current = plan.next;
       }
       if (!cancel && (refreshActivity || followsChanged)) {
         await refreshFollowedActivity(session.user.id);
@@ -118,8 +119,14 @@ export function RemoteSync() {
           const session = data.session;
           if (cancel || !session) return;
           const state = useTbr.getState();
+          const seated = sessionFromVault(readReaderVault())?.handle ?? "";
+          const share = publishingHandle(state.handle ?? "", seated);
+          if (share.length >= 2 && normalizeHandle(state.handle ?? "") !== share) {
+            useTbr.getState().setHandle(share);
+            void ensureProfile(share);
+          }
           const drafts = draftsFromLocal({
-            handle: state.handle ?? "",
+            handle: share,
             progress: state.progress,
             sitHistory: state.sitHistory ?? [],
             hostedSits: state.hostedSits ?? [],

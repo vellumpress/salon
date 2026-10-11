@@ -552,6 +552,24 @@ function withFreshParam(href, now) {
   url.searchParams.set("__fresh", String(now));
   return url.href;
 }
+function shellBehindWorker() {
+  // A first install has no cached shell. The open page is already this build,
+  // and reloading it would drop a reader who is mid-sit.
+  if (self.navigator && self.navigator.onLine === false) return Promise.resolve(false);
+  return readCachedShellHtml().then(function (prev) {
+    if (!prev) return false;
+    var have = {};
+    var urls = extractAssetUrls(prev);
+    var want = bootHrefs();
+    var i;
+    if (!want.length) return false;
+    for (i = 0; i < urls.length; i++) have[urls[i]] = 1;
+    for (i = 0; i < want.length; i++) {
+      if (!have[want[i]]) return true;
+    }
+    return false;
+  }).catch(function () { return false; });
+}
 function reloadOpenClients() {
   return self.clients.matchAll({ type: "window", includeUncontrolled: true }).then(function (list) {
     var now = Date.now();
@@ -926,6 +944,13 @@ self.addEventListener("activate", function (event) {
       if (self.registration.navigationPreload) return self.registration.navigationPreload.enable();
     }).then(function () {
       return self.clients.claim();
+    }).then(function () {
+      return shellBehindWorker();
+    }).then(function (stale) {
+      // The cached document is an older build. Open phones are still running
+      // that copy until something navigates them. Do it here so they publish
+      // the book they already have, without a manual refresh.
+      if (stale) return reloadOpenClients();
     }),
   );
   // Catalog fill keeps the worker busy for a long time. It must not extend
@@ -1102,7 +1127,7 @@ export function renderBootWatchScript() {
 }
 
 export function renderShellNetworkHints() {
-  return `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">${renderBootWatchScript()}<script ${SHELL_CACHE_ATTR} type="module">if("serviceWorker"in navigator){navigator.serviceWorker.register("/salon/sw.js",{scope:"/salon/",updateViaCache:"none"}).then(function(reg){function collect(){var urls=[];var seen={};function add(href){if(!href||href.indexOf("/salon/assets/")===-1||seen[href])return;seen[href]=1;urls.push(href)}var nodes=document.querySelectorAll("script[src],link[rel=stylesheet][href],link[rel=modulepreload][href]");for(var i=0;i<nodes.length;i++)add(nodes[i].src||nodes[i].href||"");if(window.performance&&performance.getEntriesByType){var entries=performance.getEntriesByType("resource");for(var j=0;j<entries.length;j++)add(entries[j].name||"")}return urls}function send(){var worker=reg.active;if(!worker)return;worker.postMessage({type:"warm-assets",urls:collect()})}function whenReady(){if(reg.active)return Promise.resolve();var sw=reg.installing||reg.waiting;if(!sw)return Promise.resolve();return new Promise(function(resolve){sw.addEventListener("statechange",function(){if(sw.state==="activated")resolve()})})}function kick(){whenReady().then(send)}if(document.readyState==="complete")kick();else window.addEventListener("load",kick)}).catch(function(){})}</script>`;
+  return `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">${renderBootWatchScript()}<script ${SHELL_CACHE_ATTR} type="module">if("serviceWorker"in navigator){navigator.serviceWorker.register("/salon/sw.js",{scope:"/salon/",updateViaCache:"none"}).then(function(reg){function collect(){var urls=[];var seen={};function add(href){if(!href||href.indexOf("/salon/assets/")===-1||seen[href])return;seen[href]=1;urls.push(href)}var nodes=document.querySelectorAll("script[src],link[rel=stylesheet][href],link[rel=modulepreload][href]");for(var i=0;i<nodes.length;i++)add(nodes[i].src||nodes[i].href||"");if(window.performance&&performance.getEntriesByType){var entries=performance.getEntriesByType("resource");for(var j=0;j<entries.length;j++)add(entries[j].name||"")}return urls}function send(){var worker=reg.active;if(!worker)return;worker.postMessage({type:"warm-assets",urls:collect()})}function whenReady(){if(reg.active)return Promise.resolve();var sw=reg.installing||reg.waiting;if(!sw)return Promise.resolve();return new Promise(function(resolve){sw.addEventListener("statechange",function(){if(sw.state==="activated")resolve()})})}function kick(){whenReady().then(send)}function claimUpdate(){try{reg.update()}catch(e){}if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"});var installing=reg.installing;if(installing)installing.addEventListener("statechange",function(){if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"})})}claimUpdate();if(document.readyState==="complete")kick();else window.addEventListener("load",kick)}).catch(function(){})}</script>`;
 }
 
 /** @param {string} html */

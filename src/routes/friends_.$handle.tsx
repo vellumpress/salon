@@ -14,8 +14,8 @@ import {
 import { contactId } from "@/lib/friends";
 import { fillClass, fillInk, planeOf } from "@/lib/mondrian";
 import { streakLine } from "@/lib/reading-stats";
-import { withRemoteActivity } from "@/lib/remote-activity";
-import { fetchProfile, refreshFollowedActivity, useRemoteBundle, type DirectoryProfile } from "@/lib/remote-directory";
+import { EMPTY_FRIEND_BOOK, withRemoteActivity } from "@/lib/remote-activity";
+import { fetchProfile, refreshHandlesActivity, useRemoteBundle, type DirectoryProfile } from "@/lib/remote-directory";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { APP_NAME, publicUrl, salonShareText, salonShareTitle } from "@/lib/site";
 import { isPledgePending } from "@/lib/sit-pledge";
@@ -69,11 +69,11 @@ function FriendProfilePage() {
       .catch(() => {
         if (!cancel) setLookup("done");
       });
-    if (remote.userId) void refreshFollowedActivity(remote.userId).catch(() => undefined);
+    void refreshHandlesActivity([lookedUp]).catch(() => undefined);
     return () => {
       cancel = true;
     };
-  }, [lookedUp, remote.userId]);
+  }, [lookedUp]);
 
   const hosted = directory ?? fetched;
 
@@ -311,28 +311,23 @@ function FriendProfilePage() {
           detail={[profile.readingNow.author, profile.readingNow.progress].filter(Boolean).join(" · ")}
         />
       ) : (
-        <p className="border-b border-ink px-4 py-5 font-serif text-lg text-ink/70">
-          No open book on this phone.
+        <p className="border-b border-ink px-4 py-5 font-serif text-base text-ink/70">
+          {profile.isSelf ? "No open book on this phone." : EMPTY_FRIEND_BOOK}
         </p>
       )}
 
       <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Activity</p>
       {activity.length === 0 ? (
         <div className="border-b border-ink px-4 py-6">
-          <p className="font-serif text-lg leading-snug text-ink/70">
-            No sits, keeps, or tonight-notes
-            {profile.isSelf ? " yet." : " have reached this phone."}
+          <p className="font-serif text-base leading-snug text-ink/70">
+            No sits, keeps, or tonight-notes yet.
           </p>
           {profile.isSelf ? null : (
             <>
               <p className="mt-2 font-serif text-base leading-snug text-ink/70">
                 {hosted
-                  ? profile.following
-                    ? profile.readingNow
-                      ? "The open book is synced. Sits and keeps show here when they happen."
-                      : "Nothing synced yet."
-                    : "Follow them to see what they're reading."
-                  : "Sign in and follow them to see the book and the lines they keep."}
+                  ? "Their book is on this page. Sits and kept lines show when they have them."
+                  : "No account yet."}
               </p>
               <button
                 type="button"
@@ -372,7 +367,7 @@ function FriendProfilePage() {
         {profile.isSelf
           ? "Your sits, keeps, and notes stay on this phone, and sync when you are signed in."
           : hosted
-            ? `This profile is on ${APP_NAME}. Activity shows for people you follow.`
+            ? `This profile is on ${APP_NAME}. The book and kept lines are here.`
             : "Only what this phone already has from a shared link or sit."}
       </p>
     </ProfileFrame>
