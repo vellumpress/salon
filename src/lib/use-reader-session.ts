@@ -91,10 +91,8 @@ export function useReaderSession() {
   const identity = useMemo<ReaderIdentity | null>(() => {
     if (liveUser) {
       const email = (liveUser.primaryEmail ?? localSession?.email ?? "").trim().toLowerCase();
-      const handle =
-        localSession?.handle ||
-        storeHandle ||
-        normalizeHandle(liveUser.displayName ?? email.split("@")[0] ?? "");
+      const named = normalizeHandle(liveUser.displayName ?? "");
+      const handle = localSession?.handle || storeHandle || (named.length >= 2 ? named : "");
       return identityFromSession(
         {
           email,
@@ -161,9 +159,8 @@ export function useReaderSession() {
         return;
       }
       const preferred =
-        local?.handle ||
-        normalizeHandle(String(session.user.user_metadata?.handle ?? "")) ||
-        normalizeHandle(email.split("@")[0] ?? "");
+        local?.handle || normalizeHandle(String(session.user.user_metadata?.handle ?? ""));
+      if (preferred.length < 2) return;
       try {
         await adoptHosted(email, preferred, local?.name ?? "");
       } catch {
@@ -171,12 +168,16 @@ export function useReaderSession() {
       }
     };
     if (!isOffline()) {
-      void getSupabase()
-        .auth.getSession()
-        .then(({ data }) => apply(data.session));
+      window.setTimeout(() => {
+        void getSupabase()
+          .auth.getSession()
+          .then(({ data }) => apply(data.session));
+      }, 0);
     }
     const { data } = getSupabase().auth.onAuthStateChange((event, session) => {
-      void apply(session, event);
+      window.setTimeout(() => {
+        void apply(session, event);
+      }, 0);
     });
     return () => {
       ignore = true;
@@ -239,9 +240,7 @@ export function useReaderSession() {
       if (!local.ok && local.error !== "No account for that email. Create one." && !phonePasswordMiss) {
         throw new Error(local.error);
       }
-      const preferred = local.ok
-        ? local.session.handle
-        : storeHandle || normalizeHandle(email.split("@")[0] ?? "");
+      const preferred = local.ok ? local.session.handle : storeHandle;
       let remote = await connectHostedAccount({
         mode: "in",
         email,

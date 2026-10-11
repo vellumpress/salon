@@ -83,6 +83,55 @@ async function fulfill(route: Route) {
   const userId = userFrom(request);
 
   if (url.pathname.startsWith("/auth/v1/")) {
+    if (request.method() === "POST" && url.pathname.endsWith("/token")) {
+      let body: { email?: string; password?: string; refresh_token?: string; grant_type?: string } = {};
+      try {
+        body = (request.postDataJSON() ?? {}) as typeof body;
+      } catch {
+        body = {};
+      }
+      const grant = url.searchParams.get("grant_type") || body.grant_type || "";
+      if (grant === "password") {
+        const email = (body.email ?? "").trim().toLowerCase();
+        const profile = [...profiles.values()].find((item) => `${item.handle}@example.com` === email);
+        if (!profile || body.password !== "sitquietly") {
+          await route.fulfill({
+            status: 400,
+            contentType: "application/json",
+            body: JSON.stringify({
+              code: "invalid_credentials",
+              error_description: "Invalid login credentials",
+            }),
+          });
+          return;
+        }
+        await route.fulfill({
+          status: 200,
+          contentType: "application/json",
+          body: JSON.stringify(sessionFor(profile)),
+        });
+        return;
+      }
+      if (grant === "refresh_token") {
+        const refresh = body.refresh_token ?? "";
+        const id = refresh.startsWith("refresh.") ? refresh.slice("refresh.".length) : "";
+        const profile = profiles.get(id);
+        if (!profile) {
+          await route.fulfill({
+            status: 400,
+            contentType: "application/json",
+            body: JSON.stringify({ code: "invalid_credentials" }),
+          });
+          return;
+        }
+        await route.fulfill({
+          status: 200,
+          contentType: "application/json",
+          body: JSON.stringify(sessionFor(profile)),
+        });
+        return;
+      }
+    }
     const token = (request.headers().authorization ?? "").replace(/^Bearer\s+/i, "");
     const id = token.startsWith("access.") ? token.slice(7) : "";
     const profile = profiles.get(id);
@@ -425,6 +474,68 @@ test("a friend's existing book reaches Mike, and an empty friend stays empty", {
     await guestPage.getByText("Passing").waitFor({ timeout: 20000 });
     assert.equal(await guestPage.getByText("Sign in to see").count(), 0);
     assert.equal(await mikePage.getByText("Passing").count(), 1);
+  } finally {
+    await browser.close();
+  }
+});
+
+test("a signed-in reader reloads into an active Friends list", { timeout: 120_000 }, async () => {
+  reset();
+  const bea = seat("00000000-0000-4000-8000-0000000000b1", "beareader");
+  const mike = seat("00000000-0000-4000-8000-0000000000c1", "mikereader");
+  const cy = seat("00000000-0000-4000-8000-0000000000d1", "cyreader");
+  const opened = Date.now() - 60 * 60 * 1000;
+  activity.push({
+    id: activitySeq,
+    user_id: bea.id,
+    kind: "reading",
+    book_id: "passing",
+    payload: {
+      atIndex: 18,
+      workTitle: "Passing",
+      author: "Nella Larsen",
+      summary: "Opened Passing",
+    },
+    created_at: new Date(opened).toISOString(),
+  });
+  activitySeq += 1;
+
+  await ensureDev();
+  const browser = await launchBrowser();
+  const context = await browser.newContext({ ...PHONE });
+  try {
+    context.setDefaultTimeout(30_000);
+    context.setDefaultNavigationTimeout(30_000);
+    await context.route(/supabase\.co/, (route) => fulfill(route));
+    await context.route(/supabase\.co\/realtime/, (route) => route.abort());
+    const page = await context.newPage();
+    await page.goto(`${APP}/login`, { waitUntil: "domcontentloaded" });
+    await page.getByRole("button", { name: "Sign in", exact: true }).click();
+    await page.locator('input[name="email"]').fill("mikereader@example.com");
+    await page.locator('input[name="password"]').fill("sitquietly");
+    await page.locator('button[type="submit"]').click();
+    await page.waitForURL(/\/profile/, { timeout: 20_000 });
+
+    await page.goto(`${APP}/friends`, { waitUntil: "domcontentloaded" });
+    await page.getByPlaceholder("Find @handle").fill("beareader");
+    await page
+      .locator("section")
+      .filter({ has: page.getByPlaceholder("Find @handle") })
+      .getByRole("button", { name: "Follow", exact: true })
+      .click();
+    await page.locator("article", { hasText: "@beareader" }).getByText("Passing").waitFor({ timeout: 20_000 });
+
+    await page.reload({ waitUntil: "domcontentloaded" });
+    await page.locator("article", { hasText: "@beareader" }).getByText("Passing").waitFor({ timeout: 20_000 });
+    assert.equal(page.url().includes("/friends"), true);
+    const stored = await page.evaluate(() => window.localStorage.getItem("tbr-supabase-auth"));
+    assert.equal(Boolean(stored && stored.includes(mike.id)), true);
+
+    await page.getByPlaceholder("Find @handle").fill("cyreader");
+    await page.getByRole("button", { name: "Follow", exact: true }).click();
+    await waitFor("reload did not keep the signed-in follow", () =>
+      follows.some((row) => row.followerId === mike.id && row.followeeId === cy.id),
+    );
   } finally {
     await browser.close();
   }
