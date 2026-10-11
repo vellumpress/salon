@@ -10,6 +10,7 @@ import {
   HANDLE_TAKEN_MESSAGE,
   isNetworkError,
   MAGIC_LINK_SENT,
+  signInCodeError,
   MAIL_RATE_MESSAGE,
   mapAuthError,
   PASSWORD_MISMATCH_MESSAGE,
@@ -61,6 +62,8 @@ test("a wrong password is not told that the email already exists", () => {
   assert.equal(authReturnUrl("/login", "http://127.0.0.1:8080"), "http://127.0.0.1:8080/salon/login");
   assert.equal(authReturnUrl("/reset-password", "https://vellumpress.github.io"), "https://vellumpress.github.io/salon/reset-password");
   assert.equal(MAGIC_LINK_SENT, "Check your email. The link brings you back here.");
+  assert.equal(signInCodeError("12345"), "The code is six digits.");
+  assert.equal(signInCodeError("123 456"), null);
   assert.match(MAIL_RATE_MESSAGE, /Wait a little/);
 });
 
@@ -85,6 +88,8 @@ test("sign-in offers forgot password and the reset pages call Supabase", () => {
   const session = readFileSync(new URL("./use-reader-session.ts", import.meta.url), "utf8");
   assert.match(form, /Forgot password\?/);
   assert.match(form, /Email me a sign-in link/);
+  assert.match(form, /Use code/);
+  assert.match(form, /one-time-code/);
   assert.match(forgot, /authReturnUrl\("\/reset-password"\)/);
   assert.match(form, /to="\/forgot-password"/);
   assert.match(forgot, /resetPasswordForEmail/);

@@ -5,6 +5,14 @@
  * data.
  */
 export const NETWORK_TIMEOUT_MS = 4_000;
+/** Token refresh and mail links can take longer than a shelf fetch. */
+export const AUTH_TIMEOUT_MS = 20_000;
+
+export function networkTimeoutMs(input: RequestInfo | URL) {
+  const url =
+    typeof input === "string" ? input : input instanceof URL ? input.href : input.url;
+  return url.includes("/auth/v1/") ? AUTH_TIMEOUT_MS : NETWORK_TIMEOUT_MS;
+}
 
 export function isOffline(): boolean {
   return typeof navigator !== "undefined" && navigator.onLine === false;
@@ -13,7 +21,7 @@ export function isOffline(): boolean {
 export function networkFetch(input: RequestInfo | URL, init?: RequestInit): Promise<Response> {
   if (isOffline()) return Promise.reject(new TypeError("Failed to fetch"));
   const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), NETWORK_TIMEOUT_MS);
+  const timer = setTimeout(() => ctrl.abort(), networkTimeoutMs(input));
   const outer = init?.signal;
   if (outer) {
     if (outer.aborted) ctrl.abort();

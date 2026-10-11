@@ -263,6 +263,65 @@ function idle(step: AuthStep): HostedConnect {
   return step;
 }
 
+export function signInCodeError(token: string) {
+  const code = token.replace(/\s/g, "");
+  if (!/^\d{6,8}$/.test(code)) return "The code is six digits.";
+  return null;
+}
+
+/**
+ * Finish a sign-in from the code in the email. Does not create an account.
+ * A session with no @name yet is left for the claim field.
+ */
+export async function confirmSignInCode(
+  email: string,
+  token: string,
+): Promise<
+  | { ok: true; handle: string }
+  | { ok: false; needsHandle: true; message: string }
+  | { ok: false; needsHandle?: false; message: string }
+> {
+  const fail = signInCodeError(token);
+  if (fail) return { ok: false, message: fail };
+  const code = token.replace(/\s/g, "");
+  try {
+    const supabase = getSupabase();
+    const { data, error } = await supabase.auth.verifyOtp({
+      email,
+      token: code,
+      type: "email",
+    });
+    if (error || !data.session) {
+      const notice = resetEmailNotice(error);
+      if (notice.tone === "rate") return { ok: false, message: MAIL_RATE_MESSAGE };
+      const message = error?.message ?? "";
+      if (/expired|invalid|otp/i.test(message)) {
+        return { ok: false, message: "That code has expired. Ask for a new one." };
+      }
+      return { ok: false, message: message || "That code did not work." };
+    }
+    const existing = await supabase
+      .from("profiles")
+      .select("handle")
+      .eq("id", data.session.user.id)
+      .maybeSingle();
+    const seated = normalizeHandle(existing.data?.handle ?? "");
+    if (seated.length >= 2) return { ok: true, handle: seated };
+    const meta = normalizeHandle(String(data.session.user.user_metadata?.handle ?? ""));
+    if (meta.length >= 2) {
+      const claimed = await ensureProfile(meta);
+      if (claimed.ok) return { ok: true, handle: claimed.handle };
+      if (claimed.error === HANDLE_TAKEN_MESSAGE) {
+        return { ok: false, needsHandle: true, message: "That @name is taken. Pick another." };
+      }
+    }
+    return { ok: false, needsHandle: true, message: "Pick an @name to finish." };
+  } catch (error) {
+    if (isNetworkError(error)) return { ok: false, message: "Could not reach tbr." };
+    return { ok: false, message: "That code did not work." };
+  }
+}
+
 /** Email a one-time sign-in link. Does not create a second account. */
 export async function sendSignInLink(
   email: string,

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { isOffline, networkFetch } from "./net.ts";
+import { AUTH_TIMEOUT_MS, isOffline, NETWORK_TIMEOUT_MS, networkFetch, networkTimeoutMs } from "./net.ts";
 
 function withNavigator(value: unknown, run: () => Promise<void> | void) {
   const previous = Object.getOwnPropertyDescriptor(globalThis, "navigator");
@@ -25,6 +25,12 @@ function withNavigator(value: unknown, run: () => Promise<void> | void) {
     throw err;
   }
 }
+
+test("auth calls get a longer cutoff than the shelf", () => {
+  assert.equal(networkTimeoutMs("https://example.supabase.co/rest/v1/activity"), NETWORK_TIMEOUT_MS);
+  assert.equal(networkTimeoutMs("https://example.supabase.co/auth/v1/token"), AUTH_TIMEOUT_MS);
+  assert.equal(AUTH_TIMEOUT_MS > NETWORK_TIMEOUT_MS, true);
+});
 
 test("isOffline follows navigator.onLine", () => {
   withNavigator({ onLine: false }, () => {
