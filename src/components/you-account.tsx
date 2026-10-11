@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { ReaderAuthForm } from "@/components/reader-auth-form";
 import { SignOutMark } from "@/components/sign-out";
 import { getMe, pushReading, saveSettings, type Me } from "@/lib/account";
-import { confirmEmailMessage } from "@/lib/remote-auth";
+import { confirmEmailMessage, sendSignInLink } from "@/lib/remote-auth";
 import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { useFavoriteSync } from "@/lib/use-favorite-sync";
 import { liveBackendEnabled } from "@/lib/site";
@@ -27,7 +27,7 @@ export function YouAccountShell({
   }) => ReactNode;
 }) {
   const session = useReaderSession();
-  const { identity, liveUser, hasAccounts, storeHandle, createAccount, signIn } = session;
+  const { identity, liveUser, hasAccounts, storeHandle, createAccount, signIn, signInWithCode } = session;
   const progress = useTbr((s) => s.progress);
   const sittingMinutes = useTbr((s) => s.sittingMinutes);
   const handle = useTbr((s) => s.handle) ?? "";
@@ -100,6 +100,35 @@ export function YouAccountShell({
       else if (result.notice) setConfirmNote(result.notice);
     } catch (err) {
       setAuthError(err instanceof Error ? err.message : "Could not create the account");
+    } finally {
+      setAuthBusy(false);
+    }
+  }
+
+  async function submitMagic(address: string) {
+    setAuthBusy(true);
+    setAuthError("");
+    try {
+      const result = await sendSignInLink(address.trim().toLowerCase());
+      setAuthError(result.message);
+    } catch (err) {
+      setAuthError(err instanceof Error ? err.message : "Could not send the link.");
+    } finally {
+      setAuthBusy(false);
+    }
+  }
+
+  async function submitCode(input: { email: string; token: string }) {
+    setAuthBusy(true);
+    setAuthError("");
+    try {
+      const result = await signInWithCode(input);
+      if (result.notice) {
+        setAuthError(result.notice);
+        if (!result.handle) setAuthMode("up");
+      }
+    } catch (err) {
+      setAuthError(err instanceof Error ? err.message : "That code did not work.");
     } finally {
       setAuthBusy(false);
     }
@@ -183,6 +212,8 @@ export function YouAccountShell({
             error={authError}
             onCreate={(input) => void submitCreate(input)}
             onSignIn={(input) => void submitSignIn(input)}
+            onMagicLink={(address) => void submitMagic(address)}
+            onCode={(input) => void submitCode(input)}
           />
         </section>
       ) : (

@@ -4,6 +4,8 @@ import test from "node:test";
 import {
   authFailureMessage,
   authLinkNotice,
+  canClaimHandle,
+  handleAvailabilityLine,
   authReturnUrl,
   confirmEmailMessage,
   EMAIL_EXISTS_MESSAGE,
@@ -65,6 +67,15 @@ test("a wrong password is not told that the email already exists", () => {
   assert.equal(signInCodeError("12345"), "The code is six digits.");
   assert.equal(signInCodeError("123 456"), null);
   assert.match(MAIL_RATE_MESSAGE, /Wait a little/);
+  assert.equal(handleAvailabilityLine("a", ""), "Use at least two letters.");
+  assert.equal(handleAvailabilityLine("mina", "free"), "@mina is free.");
+  assert.equal(handleAvailabilityLine("mina", "taken"), "Someone already sits as that name.");
+  assert.equal(handleAvailabilityLine("mina", "unknown"), "Could not check that name.");
+  assert.equal(handleAvailabilityLine("mina", ""), "Checking…");
+  assert.equal(canClaimHandle("mina", "free"), true);
+  assert.equal(canClaimHandle("mina", "taken"), false);
+  assert.equal(canClaimHandle("mina", "unknown"), true);
+  assert.equal(canClaimHandle("a", "free"), false);
 });
 
 test("sign-out leaves the phone library, and a stale phone password still asks the server", () => {
@@ -90,6 +101,13 @@ test("sign-in offers forgot password and the reset pages call Supabase", () => {
   assert.match(form, /Email me a sign-in link/);
   assert.match(form, /Use code/);
   assert.match(form, /one-time-code/);
+  assert.match(form, /hostedHandleStatus/);
+  assert.match(form, /text-base/);
+  assert.doesNotMatch(form, /text-xl/);
+  const login = readFileSync(new URL("../routes/login.tsx", import.meta.url), "utf8");
+  assert.match(login, /type-mark/);
+  assert.doesNotMatch(login, /type-title/);
+  assert.match(login, /Pick an @name once/);
   assert.match(forgot, /authReturnUrl\("\/reset-password"\)/);
   assert.match(form, /to="\/forgot-password"/);
   assert.match(forgot, /resetPasswordForEmail/);

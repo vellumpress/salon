@@ -1,6 +1,12 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { Link } from "@tanstack/react-router";
-import { formatHandle, handleError, normalizeHandle } from "@/lib/social";
+import {
+  canClaimHandle,
+  handleAvailabilityLine,
+  hostedHandleStatus,
+  type HandleAvailability,
+} from "@/lib/remote-auth";
+import { handleError, normalizeHandle } from "@/lib/social";
 import { cn } from "@/lib/utils";
 import type { ReaderAuthMode } from "@/lib/use-reader-session";
 
@@ -29,12 +35,34 @@ export function ReaderAuthForm({
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [code, setCode] = useState("");
+  const [availability, setAvailability] = useState<HandleAvailability>("");
 
   useEffect(() => {
     if (defaultHandle && !handle) setHandle(defaultHandle);
   }, [defaultHandle, handle]);
-  const hint = handleError(handle || "ab");
-  const shown = normalizeHandle(handle);
+
+  useEffect(() => {
+    if (mode !== "up") return;
+    const clean = normalizeHandle(handle);
+    if (!clean || handleError(clean)) {
+      setAvailability("invalid");
+      return;
+    }
+    setAvailability("");
+    let cancel = false;
+    const timer = window.setTimeout(() => {
+      void hostedHandleStatus(clean).then((status) => {
+        if (!cancel) setAvailability(status);
+      });
+    }, 350);
+    return () => {
+      cancel = true;
+      window.clearTimeout(timer);
+    };
+  }, [handle, mode]);
+
+  const hint = mode === "up" ? handleAvailabilityLine(handle, availability) : "";
+  const createBlocked = mode === "up" && !canClaimHandle(handle, availability);
 
   function submit(event: FormEvent) {
     event.preventDefault();
@@ -76,7 +104,7 @@ export function ReaderAuthForm({
             @name
           </span>
           <span className="flex min-w-0 flex-1 items-center">
-            <span className="font-serif text-xl text-muted">@</span>
+            <span className="font-serif text-base text-muted">@</span>
             <input
               name="handle"
               autoCapitalize="none"
@@ -86,7 +114,7 @@ export function ReaderAuthForm({
               value={handle}
               onChange={(event) => setHandle(event.target.value)}
               placeholder="mina"
-              className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink placeholder:text-muted focus-visible:outline-none"
+              className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-base text-ink placeholder:text-muted focus-visible:outline-none"
             />
           </span>
         </label>
@@ -103,7 +131,7 @@ export function ReaderAuthForm({
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           placeholder="you@email.com"
-          className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink placeholder:text-muted focus-visible:outline-none"
+          className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-base text-ink placeholder:text-muted focus-visible:outline-none"
         />
       </label>
       <label className="flex items-stretch border-b border-ink">
@@ -117,18 +145,12 @@ export function ReaderAuthForm({
           value={password}
           onChange={(event) => setPassword(event.target.value)}
           placeholder="Eight at least"
-          className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink placeholder:text-muted focus-visible:outline-none"
+          className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-base text-ink placeholder:text-muted focus-visible:outline-none"
         />
       </label>
 
-      {mode === "up" && hint && handle ? (
-        <p className="border-b border-ink px-4 py-3 font-sans text-sm text-ink/70">
-          {hint}
-        </p>
-      ) : mode === "up" && shown ? (
-        <p className="border-b border-ink px-4 py-3 font-sans text-sm text-ink/70">
-          Friends will find you as {formatHandle(shown)}.
-        </p>
+      {mode === "up" && hint ? (
+        <p className="border-b border-ink px-4 py-3 font-sans text-sm text-ink/70">{hint}</p>
       ) : null}
 
       {mode === "in" ? (
@@ -178,7 +200,7 @@ export function ReaderAuthForm({
 
       <button
         type="submit"
-        disabled={busy}
+        disabled={busy || createBlocked}
         className="flex h-16 items-center justify-center bg-ink font-sans text-sm text-paper disabled:opacity-60"
       >
         {busy
