@@ -4,6 +4,44 @@ import { getSupabase } from "./supabase.ts";
 
 export const HANDLE_TAKEN_MESSAGE = "That @handle is taken.";
 
+export type HandleAvailability = "free" | "taken" | "unknown" | "invalid" | "";
+
+/** The line under the @name field. A name is asked for once, on create. */
+export function handleAvailabilityLine(handle: string, status: HandleAvailability): string {
+  const clean = normalizeHandle(handle);
+  if (!clean) return "";
+  const invalid = handleError(clean);
+  if (invalid) return invalid;
+  if (status === "taken") return "Someone already sits as that name.";
+  if (status === "free") return `${formatHandle(clean)} is free.`;
+  if (status === "unknown") return "Could not check that name.";
+  return "Checking…";
+}
+
+export function canClaimHandle(handle: string, status: HandleAvailability) {
+  const clean = normalizeHandle(handle);
+  if (handleError(clean)) return false;
+  return status === "free" || status === "unknown";
+}
+
+/** Live check against public profiles. This reader's own name stays free. */
+export async function hostedHandleStatus(handle: string): Promise<Exclude<HandleAvailability, "">> {
+  const clean = normalizeHandle(handle);
+  if (handleError(clean)) return "invalid";
+  try {
+    const supabase = getSupabase();
+    const session = await supabase.auth.getSession();
+    const { data, error } = await supabase.from("profiles").select("id").eq("handle", clean).maybeSingle();
+    if (error) return "unknown";
+    if (!data?.id) return "free";
+    if (session.data.session?.user.id === data.id) return "free";
+    return "taken";
+  } catch (error) {
+    if (isNetworkError(error)) return "unknown";
+    return "unknown";
+  }
+}
+
 export function confirmEmailMessage(handle = "") {
   const name = formatHandle(handle);
   if (!name) {

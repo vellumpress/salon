@@ -227,13 +227,15 @@ function LoginPage() {
     <div className="frame-screen bg-paper text-ink">
       <LoginHeader />
       <div className="min-h-0 flex-1 overflow-y-auto">
-        <div className="flex min-h-36 flex-col justify-end bg-ink p-5 text-paper sm:p-8">
+        <div className="flex flex-col justify-end bg-ink px-5 py-5 text-paper">
           <p className="type-kicker opacity-80">This sitting</p>
-          <p className="mt-2 type-title">
+          <p className="mt-2 type-mark">
             {mode === "up" ? "Create an account" : "Sign in"}
           </p>
-          <p className="type-pitch mt-2.5 max-w-xl text-paper/70">
-            An @name, an email, a password. No staff door for readers.
+          <p className="mt-2 max-w-xl font-serif text-base text-paper/80">
+            {mode === "up"
+              ? "Pick an @name once. Then an email and a password."
+              : "Email and password, or a code from your email."}
           </p>
         </div>
 
@@ -300,9 +302,9 @@ function LoginPage() {
               className="flex min-h-36 flex-col justify-end bg-red p-5 text-paper sm:p-8"
             >
               <p className="type-kicker opacity-80">Staff</p>
-              <p className="mt-2 type-title">The desk</p>
-              <p className="mt-3 max-w-xl font-serif text-lg text-paper/80">
-                A vellum.press email, then the shelf. Readers do not need this door.
+              <p className="mt-2 type-mark">The desk</p>
+              <p className="mt-2 max-w-xl font-serif text-base text-paper/80">
+                A vellum.press email. Readers do not need this door.
               </p>
             </div>
             {liveAuthAvailable ? (
@@ -379,7 +381,7 @@ function StaffForm({
           autoComplete="email"
           value={email}
           onChange={(event) => onEmail(event.target.value)}
-          className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink placeholder:text-muted focus-visible:outline-none"
+          className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-base text-ink placeholder:text-muted focus-visible:outline-none"
           placeholder="you@vellum.press"
         />
       </label>
@@ -393,7 +395,7 @@ function StaffForm({
           autoComplete="current-password"
           value={password}
           onChange={(event) => onPassword(event.target.value)}
-          className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-xl text-ink placeholder:text-muted focus-visible:outline-none"
+          className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-base text-ink placeholder:text-muted focus-visible:outline-none"
           placeholder="Eight at least"
         />
       </label>
