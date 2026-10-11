@@ -9,10 +9,16 @@ import {
 } from "@/lib/friend-profile";
 import { boardKeptLines, type BoardKeptLine } from "@/lib/friends";
 import { mergeDirectorySearch, searchHandles } from "@/lib/handle-search";
-import { shelfFromActivity, withRemoteActivity } from "@/lib/remote-activity";
+import { EMPTY_FRIEND_BOOK, readingForCard, shelfFromActivity, withRemoteActivity } from "@/lib/remote-activity";
 import { updateHostedHandle } from "@/lib/remote-auth";
 import { isOffline } from "@/lib/net";
-import { refreshFollowedActivity, useRemoteBundle, useRemoteHandleSearch } from "@/lib/remote-directory";
+import {
+  refreshHandlesActivity,
+  suggestActiveReaders,
+  useRemoteBundle,
+  useRemoteHandleSearch,
+  type ActiveReader,
+} from "@/lib/remote-directory";
 import { renameActiveHandle } from "@/lib/reader-account";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useTbr } from "@/lib/store";
@@ -48,11 +54,8 @@ function FriendsPage() {
   const [message, setMessage] = useState("");
   const remote = useRemoteBundle();
   const remoteSearch = useRemoteHandleSearch(query);
-
-  useEffect(() => {
-    if (!remote.userId || isOffline()) return;
-    void refreshFollowedActivity(remote.userId).catch(() => undefined);
-  }, [remote.userId]);
+  const [suggestions, setSuggestions] = useState<ActiveReader[]>([]);
+  const [suggestReady, setSuggestReady] = useState(false);
 
   const { lines: kept } = useKeptLines(progress, hydrated);
   const shelves = useMemo(() => {
@@ -130,6 +133,34 @@ function FriendsPage() {
   );
   const me = normalizeHandle(handle);
   const people = rows.filter((row) => !row.isSelf && row.following);
+  const peopleKey = people.map((row) => row.handle).join("|");
+
+  useEffect(() => {
+    if (!hydrated || isOffline() || !peopleKey) return;
+    void refreshHandlesActivity(peopleKey.split("|")).catch(() => undefined);
+  }, [hydrated, peopleKey]);
+
+  useEffect(() => {
+    if (!hydrated || isOffline() || peopleKey) {
+      setSuggestions([]);
+      setSuggestReady(false);
+      return;
+    }
+    let cancel = false;
+    setSuggestReady(false);
+    void suggestActiveReaders([handle])
+      .then((rows) => {
+        if (cancel) return;
+        setSuggestions(rows);
+        setSuggestReady(true);
+      })
+      .catch(() => {
+        if (!cancel) setSuggestReady(true);
+      });
+    return () => {
+      cancel = true;
+    };
+  }, [hydrated, peopleKey, handle]);
   const keptLines = useMemo(
     () =>
       hydrated
@@ -184,11 +215,13 @@ function FriendsPage() {
       return;
     }
     setQuery("");
-    setMessage(
-      remote.signedIn
-        ? `Following ${formatHandle(search.offer)}.`
-        : `Following ${formatHandle(search.offer)} on this phone. Sign in to see their book and kept lines.`,
-    );
+    setMessage(`Following ${formatHandle(search.offer)}.`);
+  }
+
+  function followSuggestion(person: ActiveReader) {
+    const result = addContact({ handle: person.handle, name: person.name || undefined });
+    if (!result.ok) setMessage(result.error);
+    else setMessage(`Following ${formatHandle(person.handle)}.`);
   }
 
   function onFollow(row: FriendRow) {
@@ -294,9 +327,7 @@ function FriendsPage() {
                 <span className="min-w-0 flex-1">
                   <span className="block font-serif text-base leading-snug">Follow {formatHandle(search.offer)}</span>
                   <span className="mt-1 block font-sans text-sm text-ink/70">
-                    {remote.signedIn
-                      ? "Their open book and kept lines show here."
-                      : "Sign in to see their open book and kept lines."}
+                    Their open book and kept lines show here.
                   </span>
                 </span>
               </button>
@@ -312,28 +343,40 @@ function FriendsPage() {
           </section>
         ) : null}
 
-        {hydrated && !remote.signedIn && people.length > 0 ? (
-          <p className="border-b border-ink px-4 py-3 font-sans text-sm text-ink/70">
-            Sign in to see their books and the lines they keep.
-          </p>
-        ) : null}
-
         {hydrated ? (
           <section aria-label="Friends">
             {people.length === 0 ? (
-              <p className="border-b border-ink px-4 py-8 font-serif text-base leading-snug text-ink/70">
-                Follow someone by @handle. Their book and the lines they keep show here.
-              </p>
+              <div>
+                <h2 className="type-kicker border-b border-ink px-4 py-3 text-muted">Readers to follow</h2>
+                {suggestions.length > 0
+                  ? suggestions.map((person) => (
+                      <SuggestRow
+                        key={person.handle}
+                        handle={person.handle}
+                        onFollow={() => followSuggestion(person)}
+                      />
+                    ))
+                  : suggestReady
+                    ? (
+                      <p className="border-b border-ink px-4 py-8 font-serif text-base leading-snug text-ink/70">
+                        Follow someone by @handle. Their book and the lines they keep show here.
+                      </p>
+                    )
+                    : null}
+              </div>
             ) : (
-              people.map((row) => (
-                <FriendFeed
-                  key={row.handle}
-                  row={row}
-                  reading={shelves.get(row.handle)?.reading}
-                  lines={keptLines.filter((line) => line.handle === row.handle).slice(0, 3)}
-                  onFollow={() => onFollow(row)}
-                />
-              ))
+              people.map((row) => {
+                const lines = keptLines.filter((line) => line.handle === row.handle).slice(0, 3);
+                return (
+                  <FriendFeed
+                    key={row.handle}
+                    row={row}
+                    reading={readingForCard(shelves.get(row.handle)?.reading, lines)}
+                    lines={lines}
+                    onFollow={() => onFollow(row)}
+                  />
+                );
+              })
             )}
           </section>
         ) : null}
@@ -345,6 +388,27 @@ function FriendsPage() {
           Rooms
         </Link>
       </div>
+    </div>
+  );
+}
+
+function SuggestRow({ handle, onFollow }: { handle: string; onFollow: () => void }) {
+  return (
+    <div className="flex min-h-12 items-center border-b border-ink">
+      <Link
+        to="/friends/$handle"
+        params={{ handle }}
+        className="flex min-w-0 flex-1 items-center px-4 py-3 font-serif text-base"
+      >
+        {formatHandle(handle)}
+      </Link>
+      <button
+        type="button"
+        onClick={onFollow}
+        className="inline-flex h-12 shrink-0 items-center px-4 font-sans text-sm"
+      >
+        Follow
+      </button>
     </div>
   );
 }
@@ -409,7 +473,7 @@ function FriendFeed({
               {detail ? <span className="mt-1 block font-serif text-sm text-ink/70">{detail}</span> : null}
             </Link>
           ) : (
-            <p className="mt-2 font-serif text-base text-ink/70">No open book</p>
+            <p className="mt-2 font-serif text-base text-ink/70">{EMPTY_FRIEND_BOOK}</p>
           )}
         </div>
         <button

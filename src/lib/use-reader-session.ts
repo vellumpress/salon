@@ -9,6 +9,7 @@ import {
   openSessionForEmail,
   persistReaderVault,
   readReaderVault,
+  rehashVaultPassword,
   renameVaultHandle,
   sessionFromVault,
   signInReaderAccount,
@@ -232,7 +233,9 @@ export function useReaderSession() {
       const current = readReaderVault();
       const email = normalizeEmail(input.email);
       const local = await signInReaderAccount(input, current);
-      if (!local.ok && local.error !== "No account for that email. Create one.") {
+      // A stale phone password must not hide a good hosted password.
+      const phonePasswordMiss = !local.ok && local.error === "That password does not match.";
+      if (!local.ok && local.error !== "No account for that email. Create one." && !phonePasswordMiss) {
         throw new Error(local.error);
       }
       const preferred = local.ok
@@ -261,6 +264,24 @@ export function useReaderSession() {
       if (liveAuthAvailable && authEnabled) {
         await authClient.signIn.email({ email, password: input.password });
       }
+      if (phonePasswordMiss && remote.status === "session") {
+        commit(await rehashVaultPassword(readReaderVault(), email, input.password));
+        const claimed = setHandle(remote.handle);
+        if (!claimed.ok) throw new Error(claimed.error);
+        return {
+          email,
+          handle: remote.handle,
+          name: "",
+          confirmEmail: false,
+          notice: "",
+        };
+      }
+      if (phonePasswordMiss && remote.status === "confirm_email") throw new Error(confirmEmailMessage(preferred));
+      if (phonePasswordMiss && remote.status === "offline") throw new Error("Could not reach tbr.");
+      if (phonePasswordMiss && (remote.status === "error" || remote.status === "handle_taken")) {
+        throw new Error(remote.message);
+      }
+      if (phonePasswordMiss) throw new Error(local.error);
       if (local.ok) {
         const handle = remote.status === "session" ? remote.handle : local.session.handle;
         commit(local.vault);

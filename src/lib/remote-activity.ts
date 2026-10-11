@@ -78,15 +78,27 @@ export function draftsFromLocal(input: LocalHistory): ActivityDraft[] {
     if (!item.completedAt && item.lastOpenedAt) {
       const bucket = Math.floor(item.lastOpenedAt / READING_BUCKET_MS);
       const atIndex = Math.max(0, item.breathIndex ?? 0);
+      const cue = lastReadCue(atIndex, meta.breaths);
+      const readingPayload = bookPayload(meta, `reading ${meta.workTitle || workId}`, {
+        atIndex,
+        progress: cue,
+      });
       drafts.push({
         key: `reading:${workId}:${bucket}`,
         kind: "reading",
         bookId: meta.workId,
         at: item.lastOpenedAt,
-        payload: bookPayload(meta, `reading ${meta.workTitle || workId}`, {
-          atIndex,
-          progress: lastReadCue(atIndex, meta.breaths),
-        }),
+        payload: readingPayload,
+      });
+      // A phone that already published the five-minute bucket, before progress
+      // was stored, will not write that key again. This key is the current
+      // sentence, so the next launch shares the book already on the phone.
+      drafts.push({
+        key: `reading-shelf:${workId}:${atIndex}`,
+        kind: "reading",
+        bookId: meta.workId,
+        at: item.lastOpenedAt,
+        payload: readingPayload,
       });
     }
     if (item.completedAt) {
@@ -211,6 +223,14 @@ export function draftsFromLocal(input: LocalHistory): ActivityDraft[] {
   return drafts.sort((a, b) => a.at - b.at || a.key.localeCompare(b.key));
 }
 
+/** Store handle, or the signed-in name when the phone never wrote one. */
+export function publishingHandle(storeHandle: string, seatedHandle = ""): string {
+  const local = normalizeHandle(storeHandle);
+  if (local.length >= 2) return local;
+  const seated = normalizeHandle(seatedHandle);
+  return seated.length >= 2 ? seated : "";
+}
+
 export type ActivityRow = {
   id: number;
   user_id: string;
@@ -253,11 +273,13 @@ export function activityFromRow(row: ActivityRow): FriendActivity | null {
   const at = Date.parse(row.created_at);
   const atIndex = numberOf(payload.atIndex);
   const storedProgress = text(payload.progress);
-  const progress =
-    storedProgress ||
-    (atIndex !== undefined && (kind === "reading" || kind === "finished")
+  const computed =
+    atIndex !== undefined && (kind === "reading" || kind === "finished")
       ? lastReadCue(atIndex, meta?.breaths)
-      : "");
+      : "";
+  // A stored "Sentence N" is a weaker cue than the catalog percent. Reading
+  // rows keep the computed cue whenever the sentence index is known.
+  const progress = kind === "reading" && computed ? computed : storedProgress || computed;
   return {
     id: `remote:${row.id}`,
     at: Number.isFinite(at) ? at : 0,
@@ -284,12 +306,35 @@ export type SharedKeptLine = {
   at: number;
 };
 
+export const EMPTY_FRIEND_BOOK = "Hasn't opened a book on tbr yet";
+
+/** The open book, or the book a kept line already names. */
+export function readingForCard(
+  remote: FriendReadingNow | undefined,
+  lines: Array<{ workId?: string; workTitle?: string; author?: string; atIndex?: number; at?: number }>,
+): FriendReadingNow | undefined {
+  if (remote?.workId && remote.workTitle) return remote;
+  const line = lines.find((row) => row.workId && row.workTitle);
+  if (!line?.workId || !line.workTitle) return undefined;
+  const meta = metaFor(line.workId, line.workTitle, line.author ?? "");
+  const atIndex = typeof line.atIndex === "number" ? Math.max(0, Math.floor(line.atIndex)) : 0;
+  const workTitle = meta.workTitle || line.workTitle;
+  if (!workTitle) return undefined;
+  return {
+    workId: meta.workId || line.workId,
+    workTitle,
+    author: meta.author || line.author || "",
+    progress: lastReadCue(atIndex, meta.breaths),
+    atIndex,
+    at: line.at ?? 0,
+  };
+}
+
 /** Current book plus the sentences worth showing on a friend's card. */
 export function shelfFromActivity(events: FriendActivity[]): {
   reading?: FriendReadingNow;
   kept: SharedKeptLine[];
 } {
-  const reading = openReadingFromActivity(events);
   const kept = events
     .filter((event) => event.kind === "kept" && event.line && event.workId)
     .sort((a, b) => b.at - a.at || a.id.localeCompare(b.id))
@@ -303,6 +348,7 @@ export function shelfFromActivity(events: FriendActivity[]): {
       breathId: event.breathId,
       at: event.at,
     }));
+  const reading = readingForCard(openReadingFromActivity(events), kept);
   return { reading, kept };
 }
 

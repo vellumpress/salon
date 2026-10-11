@@ -27,9 +27,42 @@ type AuthStep =
   | { status: "exists" }
   | { status: "error"; message: string };
 
+/** Production links return to the Pages app. Local checks stay on this origin. */
+export function authReturnUrl(path: string, origin?: string) {
+  const suffix = path.startsWith("/") ? path : `/${path}`;
+  const here = origin ?? (typeof window === "undefined" ? "" : window.location.origin);
+  if (/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(here)) {
+    return `${here}${withBase(suffix)}`;
+  }
+  return `https://vellumpress.github.io/salon${suffix}`;
+}
+
 function emailRedirectTo() {
   if (typeof window === "undefined") return undefined;
-  return `${window.location.origin}${withBase("/login")}`;
+  return authReturnUrl("/login");
+}
+
+export const PASSWORD_MISMATCH_MESSAGE = "That email and password did not match.";
+export const EMAIL_EXISTS_MESSAGE = "That email already sits on tbr. Sign in.";
+export const MAGIC_LINK_SENT = "Check your email. The link brings you back here.";
+export const MAIL_RATE_MESSAGE = "Too many emails just now. Wait a little, then ask again.";
+
+export function authFailureMessage(status: "invalid" | "exists" | "session") {
+  if (status === "exists") return EMAIL_EXISTS_MESSAGE;
+  if (status === "invalid") return PASSWORD_MISMATCH_MESSAGE;
+  return "Could not claim the @name.";
+}
+
+/** Expired confirm or sign-in links. A missing link is not an error. */
+export function authLinkNotice(search: string, hash: string) {
+  const query = new URLSearchParams(search.startsWith("?") ? search.slice(1) : search);
+  const hashParams = new URLSearchParams(hash.startsWith("#") ? hash.slice(1) : hash);
+  const code =
+    query.get("error_code") || hashParams.get("error_code") || query.get("error") || hashParams.get("error") || "";
+  if (code === "otp_expired" || code === "access_denied") {
+    return "That link has expired. Ask for a new one.";
+  }
+  return "";
 }
 
 export const RESET_EMAIL_SUCCESS =
@@ -142,7 +175,7 @@ async function signUpPassword(
   if (data.user && identities.length === 0) {
     const signed = await signInPassword(email, password);
     if (signed.status === "invalid") {
-      return { status: "error", message: "That email already sits on tbr. Sign in." };
+      return { status: "error", message: EMAIL_EXISTS_MESSAGE };
     }
     return signed;
   }
@@ -224,11 +257,38 @@ export async function connectHostedAccount(input: {
 }
 
 function idle(step: AuthStep): HostedConnect {
-  if (step.status === "session") return { status: "error", message: "Could not claim the @name." };
-  if (step.status === "invalid" || step.status === "exists") {
-    return { status: "error", message: "That email already sits on tbr. Sign in." };
+  if (step.status === "session" || step.status === "invalid" || step.status === "exists") {
+    return { status: "error", message: authFailureMessage(step.status) };
   }
   return step;
+}
+
+/** Email a one-time sign-in link. Does not create a second account. */
+export async function sendSignInLink(
+  email: string,
+): Promise<{ ok: true; message: string } | { ok: false; message: string }> {
+  try {
+    const { error } = await getSupabase().auth.signInWithOtp({
+      email,
+      options: {
+        emailRedirectTo: authReturnUrl("/login"),
+        shouldCreateUser: false,
+      },
+    });
+    if (!error) return { ok: true, message: MAGIC_LINK_SENT };
+    const notice = resetEmailNotice(error);
+    if (notice.tone === "rate") return { ok: false, message: MAIL_RATE_MESSAGE };
+    const mapped = mapAuthError(error);
+    if (mapped.status === "invalid" || /not found|signups not allowed|user/i.test(error.message ?? "")) {
+      return { ok: false, message: "No account for that email. Create one." };
+    }
+    if (mapped.status === "offline") return { ok: false, message: "Could not reach tbr." };
+    if (mapped.status === "error") return { ok: false, message: mapped.message };
+    return { ok: false, message: error.message || "Could not send the link." };
+  } catch (error) {
+    if (isNetworkError(error)) return { ok: false, message: "Could not reach tbr." };
+    return { ok: false, message: "Could not send the link." };
+  }
 }
 
 export async function updateHostedHandle(

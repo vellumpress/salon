@@ -61,9 +61,33 @@ export function setRemoteSession(userId: string | null) {
   patch({
     signedIn: Boolean(userId),
     userId,
-    byHandle: userId ? bundle.byHandle : {},
-    followMissing: userId ? bundle.followMissing : [],
   });
+}
+
+/** QA and probe handles stay out of "Readers to follow". */
+export function isQaHandle(handle: string) {
+  return normalizeHandle(handle).startsWith("qa");
+}
+
+export type ActiveReader = { handle: string; name: string; at: number };
+
+/** Newest reading row per handle, QA and the viewer left out. */
+export function rankActiveReaders(
+  rows: Array<{ handle: string; name?: string; at: number }>,
+  exclude: Iterable<string>,
+  limit = 6,
+): ActiveReader[] {
+  const skip = new Set([...exclude].map((handle) => normalizeHandle(handle)));
+  const best = new Map<string, ActiveReader>();
+  for (const row of rows) {
+    const handle = normalizeHandle(row.handle);
+    if (handle.length < 2 || skip.has(handle) || isQaHandle(handle)) continue;
+    const at = Number.isFinite(row.at) ? row.at : 0;
+    const prev = best.get(handle);
+    if (prev && prev.at >= at) continue;
+    best.set(handle, { handle, name: (row.name ?? "").trim(), at });
+  }
+  return [...best.values()].sort((a, b) => b.at - a.at || a.handle.localeCompare(b.handle)).slice(0, limit);
 }
 
 export function rememberProfile(profile: DirectoryProfile) {
@@ -129,6 +153,34 @@ function asProfile(row: {
     handle,
     name: (row.display_name ?? "").trim(),
     bio: (row.bio ?? "").trim(),
+  };
+}
+
+/**
+ * Handles to delete on the server after a local unfollow.
+ * An empty wanted list on the first pass is a hydrate blip, not "unfollow everyone".
+ * A second empty pass in a row is a real unfollow of the last person.
+ */
+export function planFollowSync(
+  previous: Iterable<string> | null,
+  wanted: Iterable<string>,
+  emptyStreak: number,
+): { drop: string[]; next: string[]; emptyStreak: number } {
+  const clean = (rows: Iterable<string>) =>
+    [...new Set([...rows].map((handle) => normalizeHandle(handle)).filter((handle) => handle.length >= 2))];
+  const next = clean(wanted);
+  const prev = previous ? clean(previous) : null;
+  if (next.length === 0) {
+    const streak = emptyStreak + 1;
+    if (!prev || prev.length === 0 || streak < 2) {
+      return { drop: [], next: prev ?? [], emptyStreak: streak };
+    }
+    return { drop: prev, next: [], emptyStreak: streak };
+  }
+  return {
+    drop: prev ? prev.filter((handle) => !next.includes(handle)) : [],
+    next,
+    emptyStreak: 0,
   };
 }
 
@@ -291,6 +343,101 @@ export async function refreshFollowedActivity(userId: string) {
     byHandle[handle] = list;
   }
   patch({ profiles: nextProfiles, byHandle });
+}
+
+/** Books and kept lines for these handles. No session required. */
+export async function refreshHandlesActivity(handles: Iterable<string>) {
+  if (isOffline()) return;
+  const wanted = [
+    ...new Set([...handles].map((handle) => normalizeHandle(handle)).filter((handle) => handle.length >= 2)),
+  ];
+  if (!wanted.length) return;
+  const supabase = getSupabase();
+  const profiles = await supabase
+    .from("profiles")
+    .select("id, handle, display_name, bio")
+    .in("handle", wanted);
+  if (profiles.error) return;
+  const ids: string[] = [];
+  const handleById = new Map<string, string>();
+  const nextProfiles = { ...bundle.profiles };
+  const found = new Set<string>();
+  for (const row of profiles.data ?? []) {
+    const profile = asProfile(row);
+    if (!profile) continue;
+    ids.push(profile.id);
+    handleById.set(profile.id, profile.handle);
+    nextProfiles[profile.handle] = profile;
+    found.add(profile.handle);
+  }
+  const byHandle = { ...bundle.byHandle };
+  for (const handle of wanted) {
+    if (found.has(handle)) byHandle[handle] = [];
+  }
+  if (!ids.length) {
+    patch({ profiles: nextProfiles, byHandle });
+    return;
+  }
+  const activitySelect = "id, user_id, kind, book_id, payload, created_at";
+  const [feed, rest] = await Promise.all([
+    supabase
+      .from("activity")
+      .select(activitySelect)
+      .in("user_id", ids)
+      .in("kind", [...FOLLOWED_FEED_KINDS])
+      .order("created_at", { ascending: false })
+      .limit(120),
+    supabase
+      .from("activity")
+      .select(activitySelect)
+      .in("user_id", ids)
+      .not("kind", "in", `(${FOLLOWED_FEED_KINDS.join(",")})`)
+      .order("created_at", { ascending: false })
+      .limit(40),
+  ]);
+  if (feed.error) return;
+  const seenIds = new Set<number>();
+  const rows = [...(feed.data ?? []), ...(rest.error ? [] : (rest.data ?? []))] as ActivityRow[];
+  for (const row of rows) {
+    if (seenIds.has(row.id)) continue;
+    seenIds.add(row.id);
+    const handle = handleById.get(row.user_id);
+    const event = activityFromRow(row);
+    if (!handle || !event) continue;
+    const list = byHandle[handle] ?? [];
+    list.push(event);
+    byHandle[handle] = list;
+  }
+  patch({ profiles: nextProfiles, byHandle });
+}
+
+/** People with a real handle and a recent open book. QA handles are left out. */
+export async function suggestActiveReaders(exclude: Iterable<string>): Promise<ActiveReader[]> {
+  if (isOffline()) return [];
+  const supabase = getSupabase();
+  const activity = await supabase
+    .from("activity")
+    .select("user_id, created_at")
+    .eq("kind", "reading")
+    .order("created_at", { ascending: false })
+    .limit(80);
+  if (activity.error || !activity.data?.length) return [];
+  const ids = [...new Set(activity.data.map((row) => row.user_id as string).filter(Boolean))];
+  if (!ids.length) return [];
+  const profiles = await supabase.from("profiles").select("id, handle, display_name").in("id", ids);
+  if (profiles.error || !profiles.data) return [];
+  const byId = new Map<string, DirectoryProfile>();
+  for (const row of profiles.data) {
+    const profile = asProfile(row);
+    if (profile) byId.set(profile.id, profile);
+  }
+  const ranked = activity.data.flatMap((row) => {
+    const profile = byId.get(row.user_id as string);
+    if (!profile) return [];
+    const at = Date.parse(String(row.created_at ?? ""));
+    return [{ handle: profile.handle, name: profile.name, at: Number.isFinite(at) ? at : 0 }];
+  });
+  return rankActiveReaders(ranked, exclude);
 }
 
 export async function publishActivity(

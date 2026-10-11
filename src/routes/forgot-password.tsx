@@ -2,8 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { Wordmark } from "@/components/wordmark";
 import { emailError, normalizeEmail } from "@/lib/reader-account";
-import { resetEmailNotice } from "@/lib/remote-auth";
-import { withBase } from "@/lib/site";
+import { authReturnUrl, resetEmailNotice } from "@/lib/remote-auth";
 import { getSupabase } from "@/lib/supabase";
 
 export const Route = createFileRoute("/forgot-password")({
@@ -30,7 +29,7 @@ function ForgotPasswordPage() {
     const address = normalizeEmail(email);
     try {
       const { error } = await getSupabase().auth.resetPasswordForEmail(address, {
-        redirectTo: window.location.origin + withBase("/reset-password"),
+        redirectTo: authReturnUrl("/reset-password"),
       });
       const notice = resetEmailNotice(error);
       if (notice.tone === "rate") setRate(notice.text);

@@ -10,7 +10,7 @@ import { ReaderAuthForm } from "@/components/reader-auth-form";
 import { Wordmark } from "@/components/wordmark";
 import { liveAuthAvailable, withBase } from "@/lib/site";
 import { safeAuthNext } from "@/lib/auth-return";
-import { confirmEmailMessage } from "@/lib/remote-auth";
+import { authLinkNotice, confirmEmailMessage, sendSignInLink } from "@/lib/remote-auth";
 import { useReaderSession, type ReaderAuthMode } from "@/lib/use-reader-session";
 import { cn } from "@/lib/utils";
 
@@ -83,6 +83,11 @@ function LoginPage() {
   }, [hasAccounts]);
 
   useEffect(() => {
+    const notice = authLinkNotice(window.location.search, window.location.hash);
+    if (notice) setError(notice);
+  }, []);
+
+  useEffect(() => {
     if (!isPending && identity && !hold) setLeave(true);
   }, [identity, isPending, hold]);
 
@@ -123,6 +128,23 @@ function LoginPage() {
     }
   }
 
+  async function withMagicLink(address: string) {
+    setBusy("reader");
+    setError("");
+    setHold(true);
+    try {
+      const result = await sendSignInLink(address.trim().toLowerCase());
+      setLeave(false);
+      setError(result.message);
+      setBusy(null);
+    } catch (err) {
+      setLeave(false);
+      setHold(false);
+      setError(err instanceof Error ? err.message : "Could not send the link.");
+      setBusy(null);
+    }
+  }
+
   async function withReaderSignIn(input: { email: string; password: string }) {
     setBusy("reader");
     setError("");
@@ -157,7 +179,7 @@ function LoginPage() {
       return;
     }
     if (!liveAuthAvailable) {
-      setStaffError("The desk needs a hosted backend.");
+      setStaffError("The desk is closed here.");
       return;
     }
     setBusy(staffMode);
@@ -230,6 +252,7 @@ function LoginPage() {
           error={error}
           onCreate={(input) => void withReaderCreate(input)}
           onSignIn={(input) => void withReaderSignIn(input)}
+          onMagicLink={(address) => void withMagicLink(address)}
         />
         {hold ? (
           <button
@@ -272,7 +295,7 @@ function LoginPage() {
               />
             ) : (
               <p className="border-b border-ink px-5 py-6 font-serif text-lg text-ink/70">
-                Staff accounts need a hosted backend. This Pages build keeps the desk closed.
+                The desk is closed here.
               </p>
             )}
           </>

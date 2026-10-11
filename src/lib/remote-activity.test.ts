@@ -2,7 +2,16 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { asContact } from "./friends.ts";
 import { listFriends } from "./friend-profile.ts";
-import { activityFromRow, draftsFromLocal, shelfFromActivity, withRemoteActivity } from "./remote-activity.ts";
+import {
+  activityFromRow,
+  draftsFromLocal,
+  EMPTY_FRIEND_BOOK,
+  publishingHandle,
+  readingForCard,
+  shelfFromActivity,
+  withRemoteActivity,
+} from "./remote-activity.ts";
+import { canReadActivity, canWriteActivity } from "./friend-access.ts";
 import type { WorkProgress } from "./store.ts";
 
 const progress = (partial: Partial<WorkProgress> = {}): WorkProgress => ({
@@ -40,8 +49,12 @@ test("local history becomes hosted activity drafts without dropping the handle",
   assert.ok(keptDraft);
   assert.equal(keptDraft.payload.breathId, "line-1");
   assert.equal(keptDraft.payload.line, undefined);
-  const reading = drafts.find((row) => row.kind === "reading" && row.bookId === "passing");
+  const reading = drafts.find((row) => row.kind === "reading" && row.key.startsWith("reading:passing:"));
   assert.match(String(reading?.payload.progress ?? ""), /sentence|%|Opened/);
+  const shelfKey = drafts.find((row) => row.key === "reading-shelf:passing:4");
+  assert.ok(shelfKey);
+  assert.equal(shelfKey.kind, "reading");
+  assert.equal(shelfKey.payload.atIndex, 4);
   assert.equal(
     drafts.some((row) => row.kind === "sit"),
     true,
@@ -166,6 +179,98 @@ test("a reading row without a progress label still shows how far in", () => {
   assert.equal(shelf.reading?.workId, "passing");
   assert.equal(shelf.kept.length, 1);
   assert.equal(shelf.kept[0]?.line, "She wrote the letter.");
+});
+
+test("a stored sentence cue yields to the catalog place when the index is known", () => {
+  const event = activityFromRow({
+    id: 14,
+    user_id: "user",
+    kind: "reading",
+    book_id: "passing",
+    payload: {
+      summary: "reading Passing",
+      workTitle: "Passing",
+      author: "Nella Larsen",
+      atIndex: 18,
+      progress: "Sentence 19",
+    },
+    created_at: "2026-10-11T17:37:26.000Z",
+  });
+  assert.match(event?.progress ?? "", /% in · sentence 19/);
+  assert.equal(publishingHandle("", "ipohboi"), "ipohboi");
+  assert.equal(publishingHandle("Mina", ""), "mina");
+  assert.equal(publishingHandle("x", "ipohboi"), "ipohboi");
+});
+
+test("the card uses a kept line's book, and says so when there is nothing", () => {
+  const fromLine = readingForCard(undefined, [
+    {
+      workId: "passing",
+      workTitle: "Passing",
+      author: "Nella Larsen",
+      atIndex: 18,
+    },
+  ]);
+  assert.equal(fromLine?.workTitle, "Passing");
+  assert.match(fromLine?.progress ?? "", /sentence 19/);
+  assert.equal(readingForCard(undefined, []), undefined);
+  assert.equal(EMPTY_FRIEND_BOOK, "Hasn't opened a book on tbr yet");
+  const keptOnly = shelfFromActivity([
+    {
+      id: "remote:20",
+      at: 30,
+      kind: "kept",
+      label: "Kept",
+      summary: "kept a line from Passing",
+      line: "A line kept on the phone already.",
+      workId: "passing",
+      workTitle: "Passing",
+      author: "Nella Larsen",
+      atIndex: 18,
+    },
+  ]);
+  assert.equal(keptOnly.reading?.workId, "passing");
+  assert.equal(keptOnly.kept.length, 1);
+});
+
+test("a friend phone's existing book is readable without a sign-in", () => {
+  const drafts = draftsFromLocal({
+    handle: "bea",
+    progress: {
+      passing: progress({
+        entered: true,
+        breathIndex: 18,
+        lastOpenedAt: 1_700_000_000_000,
+      }),
+    },
+    sitHistory: [],
+    hostedSits: [],
+    sitPledges: [],
+    togetherKeeps: [],
+  });
+  const shelfDraft = drafts.find((row) => row.key.startsWith("reading-shelf:"));
+  assert.ok(shelfDraft);
+  const event = activityFromRow({
+    id: 30,
+    user_id: "bea-id",
+    kind: shelfDraft.kind,
+    book_id: shelfDraft.bookId,
+    payload: shelfDraft.payload,
+    created_at: new Date(shelfDraft.at).toISOString(),
+  });
+  assert.equal(event?.workTitle, "Passing");
+  assert.match(event?.progress ?? "", /sentence 19/);
+  const follows = [{ followerId: "mike-id", followeeId: "bea-id" }];
+  assert.equal(canReadActivity("bea-id", "bea-id", []), true);
+  assert.equal(canReadActivity("mike-id", "bea-id", follows), true);
+  assert.equal(canReadActivity("stranger-id", "bea-id", follows), true);
+  assert.equal(canReadActivity(null, "bea-id", follows), true);
+  assert.equal(canReadActivity("mike-id", "bea-id", []), true);
+  assert.equal(canWriteActivity("stranger-id", "bea-id"), false);
+  assert.equal(canWriteActivity(null, "bea-id"), false);
+  const shelf = shelfFromActivity(event ? [event] : []);
+  assert.equal(shelf.reading?.workTitle, "Passing");
+  assert.equal(readingForCard(undefined, []), undefined);
 });
 
 function emptyHistory() {

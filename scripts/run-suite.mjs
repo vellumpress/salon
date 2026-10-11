@@ -24,6 +24,7 @@ export const smokeFiles = [
   "src/lib/reader-tap-stress.test.ts",
   "src/lib/reader-back-ios.test.ts",
   "src/lib/you-score-open.test.ts",
+  "src/lib/friend-feed.e2e.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -96,6 +97,7 @@ export const allTsFiles = [
   "src/lib/you-radar.test.ts",
   "src/lib/site.test.ts",
   "src/lib/chunk-reload.test.ts",
+  "src/lib/shell-update.test.ts",
   "src/lib/net.test.ts",
   "src/lib/invite-share.test.ts",
   "src/lib/import/pdf-text.test.ts",
@@ -108,6 +110,7 @@ export const allTsFiles = [
   "src/lib/club-flow.test.ts",
   "src/lib/multiplayer/sit-logic.test.ts",
   "src/lib/social-rooms.e2e.test.ts",
+  "src/lib/friend-feed.e2e.test.ts",
   "src/lib/you-score-paint.test.ts",
   "src/lib/you-score-open.test.ts",
   "src/lib/streak-freeze.test.ts",

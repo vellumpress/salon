@@ -123,6 +123,10 @@ test("the friends page is a vertical feed, and leftover rails do not paint an in
   const friends = readFileSync(new URL("../routes/friends.tsx", import.meta.url), "utf8");
   assert.match(friends, /Find @handle/);
   assert.match(friends, /shelfFromActivity/);
+  assert.match(friends, /EMPTY_FRIEND_BOOK/);
+  assert.match(friends, /Readers to follow/);
+  assert.match(friends, /refreshHandlesActivity/);
+  assert.doesNotMatch(friends, /Sign in to see/);
   assert.match(friends, /to="\/together"/);
   assert.match(friends, /Rooms/);
   assert.doesNotMatch(friends, /className="rail-clip"/);
