@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import { usePersistHydrated } from "@/components/resume-link";
+import { sessionFromAuthEvent } from "@/lib/auth-session";
+import { pushCurrentShelf, reconcileShelf, shelfPatch, type ReaderShelf } from "@/lib/library-sync";
 import { draftsFromLocal, publishingHandle } from "@/lib/remote-activity";
 import { ensureProfile } from "@/lib/remote-auth";
 import {
@@ -150,6 +152,87 @@ export function RemoteSync() {
     return () => {
       cancel = true;
       window.clearTimeout(timer);
+      unsub();
+    };
+  }, [hydrated]);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    let cancel = false;
+    let timer = 0;
+    let syncedFor = "";
+    let userId = "";
+    let merging = "";
+    let applying = false;
+
+    const readShelf = () => useTbr.getState();
+    const writeShelf = (shelf: ReaderShelf) => {
+      applying = true;
+      useTbr.setState(shelfPatch(shelf) as Partial<ReturnType<typeof useTbr.getState>>);
+      applying = false;
+    };
+
+    const mergeNow = (id: string) => {
+      if (!id || merging === id || syncedFor === id) return;
+      merging = id;
+      window.clearTimeout(timer);
+      void (async () => {
+        if (cancel || isOffline()) {
+          merging = "";
+          return;
+        }
+        const handle = normalizeHandle(useTbr.getState().handle ?? "");
+        if (handle.length >= 2) await ensureProfile(handle);
+        const result = await reconcileShelf(id, readShelf, writeShelf);
+        if (merging === id) merging = "";
+        if (cancel) return;
+        if (result === "synced" || result === "skipped") syncedFor = id;
+      })();
+    };
+
+    const schedulePush = (id: string) => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        if (cancel || syncedFor !== id || applying) return;
+        void pushCurrentShelf(id, readShelf, writeShelf);
+      }, 700);
+    };
+
+    const { data } = getSupabase().auth.onAuthStateChange((event, session) => {
+      const next = sessionFromAuthEvent(event, session?.user.id, userId || null);
+      userId = next.userId ?? "";
+      if (!next.userId) {
+        syncedFor = "";
+        return;
+      }
+      if (!next.sync || syncedFor === next.userId) return;
+      window.setTimeout(() => mergeNow(next.userId!), 0);
+    });
+
+    if (!isOffline()) {
+      window.setTimeout(() => {
+        void getSupabase().auth.getSession().then(({ data: sessionData }) => {
+          const id = sessionData.session?.user.id ?? "";
+          if (cancel || !id || syncedFor === id) return;
+          userId = id;
+          mergeNow(id);
+        });
+      }, 0);
+    }
+
+    const unsub = useTbr.subscribe(() => {
+      if (!userId || applying) return;
+      if (syncedFor !== userId) {
+        mergeNow(userId);
+        return;
+      }
+      schedulePush(userId);
+    });
+
+    return () => {
+      cancel = true;
+      window.clearTimeout(timer);
+      data.subscription.unsubscribe();
       unsub();
     };
   }, [hydrated]);
