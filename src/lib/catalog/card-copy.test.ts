@@ -319,6 +319,7 @@ test("known origin overrides", () => {
     "walter-pieterse": "Netherlands",
     "froth": "Spain",
     "moby-dick": "United States",
+    "marie-claire": "France",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",

@@ -1213,6 +1213,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "froth",
   // Mira Sun 11 Oct 2026 PRIORITY MOBY-DICK — Moby-Dick follows Froth, plain Next. Never Featured, off every Ritual lane.
   "moby-dick",
+  // Mira Sun 11 Oct 2026 PM MARIE-CLAIRE — Marie Claire follows Moby-Dick, Next carefully only (the heads-up is on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (Part I, to the hollow of the nun's desk) is never unwind or before-sleep.
+  "marie-claire",
 ] as const;
 
 /**
