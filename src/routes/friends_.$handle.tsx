@@ -332,7 +332,7 @@ function FriendProfilePage() {
                       ? "The open book is synced. Sits and keeps show here when they happen."
                       : "Nothing synced yet."
                     : "Follow them to see what they're reading."
-                  : "Their activity appears once you share a sit or invite link with them."}
+                  : "Sign in and follow them to see the book and the lines they keep."}
               </p>
               <button
                 type="button"

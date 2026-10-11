@@ -11,6 +11,7 @@ import {
   refreshFollowedActivity,
   rememberPublishedKeys,
   setRemoteSession,
+  subscribeFriendActivity,
   wantedFollowHandles,
 } from "@/lib/remote-directory";
 import { normalizeHandle } from "@/lib/social";
@@ -42,6 +43,16 @@ export function RemoteSync() {
   useEffect(() => {
     if (!hydrated) return;
     let cancel = false;
+    let watched = "";
+    let stopWatch: () => void = () => undefined;
+    const ensureWatch = (userId: string) => {
+      if (!userId || watched === userId) return;
+      stopWatch();
+      watched = userId;
+      stopWatch = subscribeFriendActivity(userId, () => {
+        void refreshFollowedActivity(userId);
+      });
+    };
 
     const claimAndFollow = async (refreshActivity: boolean) => {
       if (isOffline()) return;
@@ -53,6 +64,7 @@ export function RemoteSync() {
       const { data } = await getSupabase().auth.getSession();
       const session = data.session;
       if (cancel || !session) return;
+      ensureWatch(session.user.id);
       const followsChanged = signature !== followSignature.current;
       if (followsChanged) {
         followSignature.current = signature;
@@ -88,6 +100,7 @@ export function RemoteSync() {
       window.clearInterval(timer);
       window.removeEventListener("focus", onFocus);
       unsub();
+      stopWatch();
     };
   }, [hydrated]);
 

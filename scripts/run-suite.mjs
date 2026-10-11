@@ -57,6 +57,7 @@ export const allTsFiles = [
   "src/lib/friend-profile.test.ts",
   "src/lib/notable-authors.test.ts",
   "src/lib/remote-activity.test.ts",
+  "src/lib/remote-directory.test.ts",
   "src/lib/remote-auth.test.ts",
   "src/lib/favorites.test.ts",
   "src/lib/auth/gate-identity.test.ts",
