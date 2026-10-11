@@ -19,6 +19,7 @@ import {
 } from "@/lib/reader-account";
 import {
   confirmEmailMessage,
+  confirmSignInCode,
   connectHostedAccount,
   ensureProfile,
   shouldPreserveRecoverySession,
@@ -327,6 +328,24 @@ export function useReaderSession() {
     [commit, setHandle, storeHandle],
   );
 
+  const signInWithCode = useCallback(
+    async (input: { email: string; token: string }): Promise<ReaderAuthResult> => {
+      const result = await confirmSignInCode(input.email, input.token);
+      const email = normalizeEmail(input.email);
+      if (!result.ok) {
+        if (result.needsHandle) {
+          return { email, handle: "", name: "", confirmEmail: false, notice: result.message };
+        }
+        throw new Error(result.message);
+      }
+      commit(openSessionForEmail(readReaderVault(), email, result.handle));
+      const claimed = setHandle(result.handle);
+      if (!claimed.ok) throw new Error(claimed.error);
+      return { email, handle: result.handle, name: "", confirmEmail: false, notice: "" };
+    },
+    [commit, setHandle],
+  );
+
   const signOut = useCallback(
     async (redirectTo = "/") => {
       commit(signOutReaderVault(readReaderVault()));
@@ -373,6 +392,7 @@ export function useReaderSession() {
     storeHandle,
     createAccount,
     signIn,
+    signInWithCode,
     signOut,
     syncHandle,
   };

@@ -13,6 +13,7 @@ export function ReaderAuthForm({
   onCreate,
   onSignIn,
   onMagicLink,
+  onCode,
 }: {
   mode: ReaderAuthMode;
   onMode: (mode: ReaderAuthMode) => void;
@@ -22,10 +23,12 @@ export function ReaderAuthForm({
   onCreate: (input: { handle: string; email: string; password: string }) => void;
   onSignIn: (input: { email: string; password: string }) => void;
   onMagicLink?: (email: string) => void;
+  onCode?: (input: { email: string; token: string }) => void;
 }) {
   const [handle, setHandle] = useState(defaultHandle);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [code, setCode] = useState("");
 
   useEffect(() => {
     if (defaultHandle && !handle) setHandle(defaultHandle);
@@ -143,6 +146,26 @@ export function ReaderAuthForm({
             className="flex h-12 items-center justify-center border-b border-ink bg-paper font-sans text-sm text-ink disabled:opacity-60"
           >
             Email me a sign-in link
+          </button>
+          <label className="flex items-stretch border-b border-ink">
+            <span className="flex w-24 shrink-0 items-center px-4 type-kicker text-muted">Code</span>
+            <input
+              name="code"
+              inputMode="numeric"
+              autoComplete="one-time-code"
+              value={code}
+              onChange={(event) => setCode(event.target.value)}
+              placeholder="From the email"
+              className="h-14 min-w-0 flex-1 border-0 bg-transparent font-serif text-base text-ink placeholder:text-muted focus-visible:outline-none"
+            />
+          </label>
+          <button
+            type="button"
+            disabled={busy || !email.trim() || !code.trim()}
+            onClick={() => onCode?.({ email, token: code })}
+            className="flex h-12 items-center justify-center border-b border-ink bg-paper font-sans text-sm text-ink disabled:opacity-60"
+          >
+            Use code
           </button>
         </>
       ) : null}

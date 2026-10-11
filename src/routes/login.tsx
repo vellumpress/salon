@@ -64,7 +64,7 @@ function LoginHeader() {
 function LoginPage() {
   const { door, next } = Route.useSearch();
   const navigate = useNavigate();
-  const { identity, isPending, hasAccounts, storeHandle, createAccount, signIn } =
+  const { identity, isPending, hasAccounts, storeHandle, createAccount, signIn, signInWithCode } =
     useReaderSession();
   const [mode, setMode] = useState<ReaderAuthMode>(hasAccounts ? "in" : "up");
   const [staffEmail, setStaffEmail] = useState("");
@@ -141,6 +141,30 @@ function LoginPage() {
       setLeave(false);
       setHold(false);
       setError(err instanceof Error ? err.message : "Could not send the link.");
+      setBusy(null);
+    }
+  }
+
+  async function withCode(input: { email: string; token: string }) {
+    setBusy("reader");
+    setError("");
+    setHold(true);
+    try {
+      const result = await signInWithCode(input);
+      if (result.notice) {
+        setLeave(false);
+        setError(result.notice);
+        if (!result.handle) setMode("up");
+        setBusy(null);
+        return;
+      }
+      setBusy(null);
+      setHold(false);
+      setLeave(true);
+    } catch (err) {
+      setLeave(false);
+      setHold(false);
+      setError(err instanceof Error ? err.message : "That code did not work.");
       setBusy(null);
     }
   }
@@ -253,6 +277,7 @@ function LoginPage() {
           onCreate={(input) => void withReaderCreate(input)}
           onSignIn={(input) => void withReaderSignIn(input)}
           onMagicLink={(address) => void withMagicLink(address)}
+          onCode={(input) => void withCode(input)}
         />
         {hold ? (
           <button
