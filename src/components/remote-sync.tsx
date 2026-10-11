@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePersistHydrated } from "@/components/resume-link";
 import { sessionFromAuthEvent } from "@/lib/auth-session";
 import { pushCurrentShelf, reconcileShelf, shelfPatch, type ReaderShelf } from "@/lib/library-sync";
@@ -32,16 +32,30 @@ export function RemoteSync() {
   const seenFollows = useRef<string[] | null>(null);
   const emptyFollowStreak = useRef(0);
   const followSignature = useRef("");
+  const sessionId = useRef<string | null>(null);
+  const [sessionTick, setSessionTick] = useState(0);
 
   useEffect(() => {
     const supabase = getSupabase();
-    const apply = (id: string | null) => setRemoteSession(id);
-    if (!isOffline()) {
-      void supabase.auth.getSession().then(({ data }) => apply(data.session?.user.id ?? null));
-    }
-    const { data } = supabase.auth.onAuthStateChange((_event, session) => {
-      apply(session?.user.id ?? null);
+    const apply = (id: string | null) => {
+      sessionId.current = id;
+      setRemoteSession(id);
+      setSessionTick((tick) => tick + 1);
+    };
+    const { data } = supabase.auth.onAuthStateChange((event, session) => {
+      const next = sessionFromAuthEvent(event, session?.user.id, sessionId.current);
+      if (event !== "SIGNED_OUT" && !next.sync) return;
+      apply(next.userId);
     });
+    if (!isOffline()) {
+      window.setTimeout(() => {
+        void supabase.auth.getSession().then(({ data: sessionData }) => {
+          const id = sessionData.session?.user.id ?? null;
+          if (!id || sessionId.current === id) return;
+          apply(id);
+        });
+      }, 0);
+    }
     return () => data.subscription.unsubscribe();
   }, []);
 
@@ -105,7 +119,7 @@ export function RemoteSync() {
       unsub();
       stopWatch();
     };
-  }, [hydrated]);
+  }, [hydrated, sessionTick]);
 
   useEffect(() => {
     if (!hydrated) return;
