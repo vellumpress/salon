@@ -1213,27 +1213,38 @@ export function TbrReader({
   const readLines = lookback.map((item, i) => {
     const last = lookback.length - 1;
     const opacity = last <= 0 ? 0.38 : 0.1 + (i / last) * 0.4;
+    const sentence = work.breaths.indexOf(item);
     return (
-      <p key={item.id} className="look-line text-ink" style={{ opacity }}>
+      <p
+        key={item.id}
+        className="look-line text-ink"
+        style={{ opacity }}
+        data-sentence={sentence >= 0 ? sentence : undefined}
+      >
         <EmphasizedText text={item.text} />
       </p>
     );
   });
-  const previewLines = upcoming.map((item, i) => (
-    <p
-      key={item.id}
-      className="look-line text-ink"
-      style={{ opacity: upcomingOpacity(i, upcoming.length) }}
-    >
-      <EmphasizedText text={item.text} />
-    </p>
-  ));
+  const previewLines = upcoming.map((item, i) => {
+    const sentence = work.breaths.indexOf(item);
+    return (
+      <p
+        key={item.id}
+        className="look-line text-ink"
+        style={{ opacity: upcomingOpacity(i, upcoming.length) }}
+        data-sentence={sentence >= 0 ? sentence : undefined}
+      >
+        <EmphasizedText text={item.text} />
+      </p>
+    );
+  });
   const currentLine = (
     <p
       className={cn(
         "breath-now relative z-[1] font-serif",
         isKept && "border-l-2 border-red pl-4",
       )}
+      data-sentence={index}
     >
       <EmphasizedText text={breath.text} />
     </p>

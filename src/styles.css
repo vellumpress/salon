@@ -1896,22 +1896,53 @@ html.together-compose .upcoming-slot {
 .margin-reactions {
   pointer-events: none;
   position: absolute;
-  top: calc(env(safe-area-inset-top, 0px) + 3.6rem);
-  right: 0.7rem;
+  inset: 0;
   z-index: 20;
-  display: flex;
-  max-width: 4.75rem;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.2rem;
+  overflow: hidden;
 }
 
 .margin-reaction {
+  pointer-events: none;
+  position: absolute;
+  right: 0.75rem;
+  display: flex;
+  max-width: 7.25rem;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  background: color-mix(in srgb, var(--color-paper) 90%, transparent);
+  padding: 0.1rem 0.2rem;
+  color: var(--color-ink);
   font-family: var(--font-sans);
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  line-height: 1.2;
-  text-transform: lowercase;
+  font-size: var(--text-chrome);
+  font-weight: 400;
+  letter-spacing: var(--tracking-chrome);
+  line-height: var(--text-chrome--line-height);
+  text-align: right;
+}
+
+.margin-dot {
+  width: 0.375rem;
+  height: 0.375rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.margin-reaction[data-margin-place="passed"] {
+  max-width: 12rem;
+}
+
+.margin-who {
+  max-width: 4.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* A quiet column for the mark, so it sits beside the sentence. */
+.together-lock .look-line,
+.together-lock .breath-now {
+  padding-right: 7.5rem;
 }
 
 .chat-slot {
@@ -3260,6 +3291,11 @@ html.together-compose.together-kb .reader-daylight .chat-field {
 
 .reader-daylight .chat-line {
   color: var(--reader-ink);
+}
+
+.reader-daylight .margin-reaction {
+  color: var(--reader-ink);
+  background-color: color-mix(in srgb, var(--reader-bg) 90%, transparent);
 }
 
 .daylight-switch {

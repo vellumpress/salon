@@ -1,19 +1,24 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  chatWithoutMargin,
   gapLabel,
   isLivePeer,
   isSitReaction,
   keepSitIdentity,
   marginMarkFromChat,
+  marginPlace,
+  marginReaderName,
   marksOnSentence,
   mergeMarginMarks,
   mergeSitLines,
+  passedReactionNote,
   peerAside,
   reconnectDelay,
   shouldSyncNewcomer,
   sitStatusLabel,
   SIT_REACTIONS,
+  type MarginMark,
 } from "./sit-logic.ts";
 
 test("chat merges without duplicates across sync and live send", () => {
@@ -96,53 +101,95 @@ test("reconnect waits and the same tab keeps its seat", () => {
 });
 
 test("reactions stay a fixed short set", () => {
-  assert.deepEqual([...SIT_REACTIONS], ["yes", "hmm", "oh", "again"]);
-  assert.equal(isSitReaction("yes"), true);
+  assert.deepEqual([...SIT_REACTIONS], ["love", "?", "lol", "wow"]);
+  assert.equal(isSitReaction("lol"), true);
+  assert.equal(isSitReaction("?"), true);
+  assert.equal(isSitReaction("yes"), false);
+  assert.equal(isSitReaction("again"), false);
   assert.equal(isSitReaction("hello"), false);
 });
 
 test("a reaction word stays in the margin of that sentence", () => {
   const mark = marginMarkFromChat({
     from: "p-aaaaaa",
-    text: " yes ",
+    text: " love ",
     at: 10,
     breath: 4,
+    name: "mira",
   });
   assert.ok(mark);
-  assert.equal(mark?.word, "yes");
+  assert.equal(mark?.word, "love");
   assert.equal(mark?.breath, 4);
+  assert.equal(mark?.name, "mira");
   assert.equal(marginMarkFromChat({ from: "p-aaaaaa", text: "hello", at: 11, breath: 4 }), null);
-  assert.equal(marginMarkFromChat({ from: "p-aaaaaa", text: "yes", at: 11 }), null);
+  assert.equal(marginMarkFromChat({ from: "p-aaaaaa", text: "lol", at: 11 }), null);
   const next = mergeMarginMarks(mark ? [mark] : [], [
     {
       id: "later",
       from: "p-aaaaaa",
-      word: "oh",
+      word: "wow",
       breath: 4,
       at: 12,
     },
     {
       id: "other",
       from: "p-bbbbbb",
-      word: "hmm",
+      word: "?",
       breath: 4,
       at: 13,
+      name: "bea",
     },
     {
       id: "elsewhere",
       from: "p-bbbbbb",
-      word: "again",
+      word: "lol",
       breath: 9,
       at: 14,
     },
   ]);
   assert.deepEqual(
     marksOnSentence(next, 4).map((item) => item.word),
-    ["oh", "hmm"],
+    ["wow", "?"],
   );
+  assert.equal(marksOnSentence(next, 4).find((item) => item.from === "p-aaaaaa")?.name, "mira");
   assert.deepEqual(
     marksOnSentence(next, 9).map((item) => item.word),
-    ["again"],
+    ["lol"],
+  );
+});
+
+test("older reaction words still display, and a passed sentence says how far", () => {
+  const kept = mergeMarginMarks([], [
+    { id: "a", from: "p-aaaaaa", word: "yes", breath: 2, at: 1 },
+    { id: "b", from: "p-bbbbbb", word: "hmm", breath: 2, at: 2 },
+    { id: "c", from: "p-cccccc", word: "oh", breath: 3, at: 3 },
+    { id: "d", from: "p-dddddd", word: "again", breath: 4, at: 4 },
+    { id: "e", from: "p-eeeeee", word: "nope", breath: 4, at: 5 },
+  ] as MarginMark[]);
+  assert.deepEqual(
+    kept.map((item) => item.word),
+    ["yes", "hmm", "oh", "again"],
+  );
+  assert.equal(marginMarkFromChat({ from: "p-aaaaaa", text: "again", at: 6, breath: 1 })?.word, "again");
+  assert.equal(passedReactionNote("again", 1), "again, a sentence back");
+  assert.equal(passedReactionNote("lol", 3), "lol, 3 sentences back");
+  assert.equal(passedReactionNote("love", 0), "love");
+  assert.equal(marginPlace(4, 4, [4]), "beside");
+  assert.equal(marginPlace(3, 4, [3, 4]), "beside");
+  assert.equal(marginPlace(2, 4, [4]), "passed");
+  assert.equal(marginPlace(8, 4, [4]), "waiting");
+  assert.equal(marginReaderName({ from: "p-aaaaaa", selfId: "p-aaaaaa", name: "mira" }), "you");
+  assert.equal(marginReaderName({ from: "p-bbbbbb", selfId: "p-aaaaaa", name: "@bea" }), "@bea");
+  assert.equal(marginReaderName({ from: "p-bbbbbb", selfId: "p-aaaaaa" }), "them");
+  const lines = [
+    { id: "p-bbbbbb-9", from: "p-bbbbbb", text: "lol", at: 9 },
+    { id: "p-bbbbbb-10", from: "p-bbbbbb", text: "the envelope", at: 10 },
+  ];
+  assert.deepEqual(
+    chatWithoutMargin(lines, [
+      { id: "p-bbbbbb-9", from: "p-bbbbbb", word: "lol", breath: 4, at: 9 },
+    ]).map((line) => line.text),
+    ["the envelope"],
   );
 });
 

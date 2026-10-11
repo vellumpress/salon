@@ -5,22 +5,46 @@ export type SitLine = {
   at: number;
 };
 
-/** Short words the room can send without typing. */
-export const SIT_REACTIONS = ["yes", "hmm", "oh", "again"] as const;
+/** Words a reader can leave on the sentence in front of them. */
+export const SIT_REACTIONS = ["love", "?", "lol", "wow"] as const;
 
 export type SitReaction = (typeof SIT_REACTIONS)[number];
+
+/**
+ * The previous four words. A mark already in a room still shows the word
+ * that was left, so an old "oh" does not vanish or turn into a new one.
+ */
+export const LEGACY_REACTIONS = ["yes", "hmm", "oh", "again"] as const;
+
+export type LegacyReaction = (typeof LEGACY_REACTIONS)[number];
+
+export type MarginWord = SitReaction | LegacyReaction;
 
 /** A short word left in the margin of one sentence. One per person per sentence. */
 export type MarginMark = {
   id: string;
   from: string;
-  word: SitReaction;
+  word: MarginWord;
   breath: number;
   at: number;
+  /** Handle sent with the mark, when the reader had one. */
+  name?: string;
 };
 
 export function isSitReaction(text: string): text is SitReaction {
   return (SIT_REACTIONS as readonly string[]).includes(text);
+}
+
+export function isLegacyReaction(text: string): text is LegacyReaction {
+  return (LEGACY_REACTIONS as readonly string[]).includes(text);
+}
+
+export function isMarginWord(text: string): text is MarginWord {
+  return isSitReaction(text) || isLegacyReaction(text);
+}
+
+function cleanMarginName(value: unknown): string {
+  return typeof value === "string" ? value.trim().slice(0, 40) : "";
 }
 
 export function marginMarkFromChat(input: {
@@ -29,20 +53,23 @@ export function marginMarkFromChat(input: {
   at: number;
   breath?: number;
   id?: string;
+  name?: string;
 }): MarginMark | null {
   const word = input.text.trim();
-  if (!isSitReaction(word)) return null;
+  if (!isMarginWord(word)) return null;
   if (typeof input.breath !== "number" || !Number.isFinite(input.breath) || input.breath < 0) return null;
   const from = input.from.trim();
   if (!from) return null;
   const breath = Math.floor(input.breath);
   const at = Number.isFinite(input.at) ? input.at : 0;
+  const name = cleanMarginName(input.name);
   return {
     id: input.id || `${from}-${breath}`,
     from,
     word,
     breath,
     at,
+    ...(name ? { name } : {}),
   };
 }
 
@@ -51,7 +78,7 @@ export function mergeMarginMarks(prev: MarginMark[], incoming: MarginMark[], cap
   const byKey = new Map<string, MarginMark>();
   for (const mark of [...prev, ...incoming]) {
     const word = typeof mark.word === "string" ? mark.word.trim() : "";
-    if (!isSitReaction(word)) continue;
+    if (!isMarginWord(word)) continue;
     if (!Number.isFinite(mark.breath) || mark.breath < 0) continue;
     const from = mark.from.trim();
     if (!from) continue;
@@ -60,12 +87,14 @@ export function mergeMarginMarks(prev: MarginMark[], incoming: MarginMark[], cap
     const key = `${from}:${breath}`;
     const kept = byKey.get(key);
     if (kept && kept.at > at) continue;
+    const name = cleanMarginName(mark.name) || (kept ? cleanMarginName(kept.name) : "");
     byKey.set(key, {
       id: mark.id || `${key}-${at}`,
       from,
       word,
       breath,
       at,
+      ...(name ? { name } : {}),
     });
   }
   return [...byKey.values()].sort((a, b) => a.at - b.at || a.id.localeCompare(b.id)).slice(-cap);
@@ -75,6 +104,47 @@ export function marksOnSentence(marks: MarginMark[], breath: number): MarginMark
   if (!Number.isFinite(breath)) return [];
   const index = Math.floor(breath);
   return marks.filter((mark) => mark.breath === index);
+}
+
+/**
+ * Beside the sentence while it is on screen. Once the reader has moved on
+ * and that sentence is gone, the mark says how far back it sits.
+ * A sentence still ahead, and not on screen, waits.
+ */
+export function marginPlace(
+  markBreath: number,
+  viewerBreath: number,
+  onScreen: readonly number[],
+): "beside" | "passed" | "waiting" {
+  const breath = Math.floor(markBreath);
+  const viewer = Math.floor(viewerBreath);
+  if (!Number.isFinite(breath) || !Number.isFinite(viewer)) return "waiting";
+  if (onScreen.some((item) => Math.floor(item) === breath)) return "beside";
+  if (breath < viewer) return "passed";
+  return "waiting";
+}
+
+/** "lol, a sentence back" — the word, then how far the reader has moved on. */
+export function passedReactionNote(word: string, sentencesBack: number): string {
+  const clean = word.trim();
+  const back = Math.floor(sentencesBack);
+  if (!clean || !Number.isFinite(back) || back <= 0) return clean;
+  const gap = back === 1 ? "a sentence back" : `${back} sentences back`;
+  return `${clean}, ${gap}`;
+}
+
+/** Chat stays for typed lines. A margin mark with the same id is not a second copy. */
+export function chatWithoutMargin(lines: SitLine[], marks: MarginMark[]): SitLine[] {
+  if (marks.length === 0) return lines;
+  const ids = new Set(marks.map((mark) => mark.id));
+  return lines.filter((line) => !ids.has(line.id));
+}
+
+/** "you" for this reader. Everyone else keeps the name that arrived with the mark. */
+export function marginReaderName(input: { from: string; selfId: string; name?: string }): string {
+  if (input.from && input.from === input.selfId) return "you";
+  const named = cleanMarginName(input.name);
+  return named || "them";
 }
 
 const SELF_ID = /^p-[a-z0-9]{6,12}$/;

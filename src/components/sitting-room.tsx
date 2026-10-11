@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 import { useP2PRoom, type PeerInfo } from "@/lib/multiplayer";
 import { shareOrCopy } from "@/lib/invite-share";
 import { fillClass, hashSeed, type Fill } from "@/lib/mondrian";
@@ -10,11 +10,14 @@ import { dayKey } from "@/lib/day-key";
 import { useTbr } from "@/lib/store";
 import {
   chatLineId,
+  chatWithoutMargin,
   isLivePeer,
   marginMarkFromChat,
-  marksOnSentence,
+  marginPlace,
+  marginReaderName,
   mergeMarginMarks,
   mergeSitLines,
+  passedReactionNote,
   peerAside,
   shouldSyncNewcomer,
   sitStatusLabel,
@@ -37,11 +40,11 @@ export type ChatLine = SitLine;
 type HereNote = { breath: number; place: string };
 
 type Wire =
-  | { t: "chat"; text: string; at: number; breath?: number }
+  | { t: "chat"; text: string; at: number; breath?: number; name?: string }
   | { t: "here"; breath: number; place: string }
   | { t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[] };
 
-function isChat(data: unknown): data is { t: "chat"; text: string; at: number; breath?: number } {
+function isChat(data: unknown): data is { t: "chat"; text: string; at: number; breath?: number; name?: string } {
   if (!data || typeof data !== "object") return false;
   const msg = data as Wire;
   return msg.t === "chat" && typeof msg.text === "string";
@@ -193,15 +196,19 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
           if (!text) return;
           const at = typeof data.at === "number" ? data.at : Date.now();
           const id = chatLineId(from, at);
-          setLines((prev) => mergeSitLines(prev, [{ id, from, text, at }]));
           const mark = marginMarkFromChat({
             from,
             text,
             at,
             breath: data.breath,
             id,
+            name: data.name,
           });
-          if (mark) setMarks((prev) => mergeMarginMarks(prev, [mark]));
+          if (mark) {
+            setMarks((prev) => mergeMarginMarks(prev, [mark]));
+            return;
+          }
+          setLines((prev) => mergeSitLines(prev, [{ id, from, text, at }]));
           return;
         }
         if (isHere(data)) {
@@ -240,9 +247,10 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
               text: line.text.trim().slice(0, 280),
               at: line.at || Date.now(),
             }));
-          if (incoming.length > 0) setLines((prev) => mergeSitLines(prev, incoming));
           const syncedMarks = Array.isArray(data.marks) ? mergeMarginMarks([], data.marks) : [];
           if (syncedMarks.length > 0) setMarks((prev) => mergeMarginMarks(prev, syncedMarks));
+          const spoken = chatWithoutMargin(incoming, syncedMarks);
+          if (spoken.length > 0) setLines((prev) => mergeSitLines(prev, spoken));
         }
       }),
     [p2p.onMessage],
@@ -324,12 +332,18 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
       const at = Date.now();
       const from = p2p.selfId;
       const id = chatLineId(from, at);
-      p2p.send({ t: "chat", text: word, at, breath: breathIndex });
-      setLines((prev) => mergeSitLines(prev, [{ id, from, text: word, at }]));
-      const mark = marginMarkFromChat({ from, text: word, at, breath: breathIndex, id });
+      p2p.send({ t: "chat", text: word, at, breath: breathIndex, name: handle });
+      const mark = marginMarkFromChat({
+        from,
+        text: word,
+        at,
+        breath: breathIndex,
+        id,
+        name: handle,
+      });
       if (mark) setMarks((prev) => mergeMarginMarks(prev, [mark]));
     },
-    [breathIndex, p2p],
+    [breathIndex, handle, p2p],
   );
   const retry = useCallback(() => setAttempt((n) => n + 1), []);
 
@@ -354,14 +368,157 @@ function isPresent(peer: PeerInfo) {
   return isLivePeer(peer.connectionState);
 }
 
-function MarginReactions({ marks }: { marks: MarginMark[] }) {
-  if (marks.length === 0) return null;
+type PlacedMark = {
+  id: string;
+  top: number;
+  name: string;
+  text: string;
+  word: string;
+  from: string;
+  place: "beside" | "passed";
+};
+
+function samePlace(prev: PlacedMark[], next: PlacedMark[]) {
+  if (prev.length !== next.length) return false;
+  return prev.every((item, index) => {
+    const other = next[index];
+    return (
+      other &&
+      item.id === other.id &&
+      item.top === other.top &&
+      item.text === other.text &&
+      item.name === other.name &&
+      item.place === other.place &&
+      item.word === other.word
+    );
+  });
+}
+
+function readerName(mark: MarginMark, selfId: string, peers: PeerInfo[]) {
+  if (mark.from === selfId) return "you";
+  const peer = peers.find((item) => item.id === mark.from);
+  const raw = mark.name || peer?.name || "";
+  const named = raw ? formatHandle(raw) : "";
+  return marginReaderName({ from: mark.from, selfId, name: named });
+}
+
+function MarginReactions({
+  marks,
+  breathIndex,
+  selfId,
+  peers,
+}: {
+  marks: MarginMark[];
+  breathIndex: number;
+  selfId: string;
+  peers: PeerInfo[];
+}) {
+  const rootRef = useRef<HTMLDivElement>(null);
+  const [placed, setPlaced] = useState<PlacedMark[]>([]);
+  const liveRef = useRef({ marks, breathIndex, selfId, peers });
+  liveRef.current = { marks, breathIndex, selfId, peers };
+  const markKey = marks.map((mark) => `${mark.id}:${mark.word}:${mark.breath}:${mark.name ?? ""}`).join("|");
+  const nameKey = `${selfId}:${peers.map((peer) => `${peer.id}:${peer.name}`).join("|")}`;
+
+  useLayoutEffect(() => {
+    const root = rootRef.current;
+    const frame = root?.parentElement;
+    if (!root || !frame) return;
+    let frameId = 0;
+    const measure = () => {
+      const { marks: current, breathIndex: viewer, selfId: me, peers: room } = liveRef.current;
+      const pane = frame.querySelector(".reading-pane");
+      const paneBox = pane?.getBoundingClientRect();
+      const frameBox = frame.getBoundingClientRect();
+      const anchors = new Map<number, number>();
+      if (pane && paneBox) {
+        for (const node of pane.querySelectorAll<HTMLElement>("[data-sentence]")) {
+          const breath = Number(node.getAttribute("data-sentence"));
+          if (!Number.isInteger(breath) || breath < 0) continue;
+          const box = node.getBoundingClientRect();
+          const visible = Math.min(box.bottom, paneBox.bottom) - Math.max(box.top, paneBox.top);
+          if (visible < 12) continue;
+          const top = Math.round(Math.max(box.top, paneBox.top) - frameBox.top);
+          const previous = anchors.get(breath);
+          if (previous == null || top < previous) anchors.set(breath, top);
+        }
+      }
+      const onScreen = [...anchors.keys()];
+      const besideCount = new Map<number, number>();
+      const passed: MarginMark[] = [];
+      const next: PlacedMark[] = [];
+      for (const mark of current) {
+        const place = marginPlace(mark.breath, viewer, onScreen);
+        if (place === "waiting") continue;
+        if (place === "passed") {
+          passed.push(mark);
+          continue;
+        }
+        const count = besideCount.get(mark.breath) ?? 0;
+        besideCount.set(mark.breath, count + 1);
+        const top = (anchors.get(mark.breath) ?? 0) + count * 22;
+        next.push({
+          id: mark.id,
+          top,
+          name: readerName(mark, me, room),
+          text: mark.word,
+          word: mark.word,
+          from: mark.from,
+          place: "beside",
+        });
+      }
+      const nearest = passed.sort((a, b) => b.breath - a.breath || b.at - a.at).slice(0, 4);
+      nearest.forEach((mark, index) => {
+        next.push({
+          id: mark.id,
+          top: 8 + index * 22,
+          name: readerName(mark, me, room),
+          text: passedReactionNote(mark.word, viewer - mark.breath),
+          word: mark.word,
+          from: mark.from,
+          place: "passed",
+        });
+      });
+      setPlaced((prev) => (samePlace(prev, next) ? prev : next));
+    };
+    const schedule = () => {
+      cancelAnimationFrame(frameId);
+      frameId = requestAnimationFrame(measure);
+    };
+    schedule();
+    const ro = new ResizeObserver(schedule);
+    ro.observe(frame);
+    const pane = frame.querySelector(".reading-pane");
+    if (pane) ro.observe(pane);
+    pane?.addEventListener("scroll", schedule, true);
+    window.addEventListener("resize", schedule);
+    return () => {
+      cancelAnimationFrame(frameId);
+      ro.disconnect();
+      pane?.removeEventListener("scroll", schedule, true);
+      window.removeEventListener("resize", schedule);
+    };
+  }, [markKey, nameKey, breathIndex]);
+
   return (
-    <div className="margin-reactions" data-margin-reactions={marks.length} aria-label="In the margin">
-      {marks.map((mark) => (
-        <span key={mark.id} className="margin-reaction text-ink" data-reaction={mark.word}>
-          <span className={cn("mr-1 inline-block size-1.5 align-middle", fillClass(markOf(mark.from)))} />
-          {mark.word}
+    <div
+      ref={rootRef}
+      className="margin-reactions"
+      data-margin-reactions={marks.length}
+      aria-live="polite"
+      aria-label="In the margin"
+    >
+      {placed.map((mark) => (
+        <span
+          key={mark.id}
+          className="margin-reaction"
+          style={{ top: mark.top }}
+          data-reaction={mark.word}
+          data-margin-place={mark.place}
+        >
+          <span className={cn("margin-dot", fillClass(markOf(mark.from)))} />
+          <span className="margin-who">{mark.name}</span>
+          <span className="margin-word">{mark.text}</span>
         </span>
       ))}
     </div>
@@ -448,7 +605,7 @@ export function TogetherShell({
         .filter(Boolean),
     ),
   ];
-  const visible = chat.lines.slice(-6);
+  const visible = chatWithoutMargin(chat.lines, chat.marks).slice(-6);
 
   return (
     <>
@@ -501,8 +658,15 @@ export function TogetherShell({
           ) : null}
         </div>
       </header>
-      <MarginReactions marks={marksOnSentence(chat.marks, breathIndex)} />
-      {children}
+      <div className="relative flex min-h-0 flex-1 flex-col">
+        {children}
+        <MarginReactions
+          marks={chat.marks}
+          breathIndex={breathIndex}
+          selfId={chat.selfId}
+          peers={chat.peers}
+        />
+      </div>
       {chat.unavailable ? (
         <button
           type="button"
@@ -545,17 +709,22 @@ export function TogetherShell({
             );
           })}
         </div>
-        <div className="flex overflow-x-auto border-t border-ink">
-          {SIT_REACTIONS.map((word) => (
-            <button
-              key={word}
-              type="button"
-              className="h-11 min-w-0 flex-1 border-l border-ink font-sans text-sm text-ink first:border-l-0"
-              onClick={() => chat.sendReaction(word)}
-            >
-              {word}
-            </button>
-          ))}
+        <div className="border-t border-ink bg-paper">
+          <p id="margin-word-label" className="type-kicker px-3 pb-1 pt-2 text-ink">
+            A word on this sentence
+          </p>
+          <div className="flex" role="group" aria-labelledby="margin-word-label">
+            {SIT_REACTIONS.map((word) => (
+              <button
+                key={word}
+                type="button"
+                className="h-11 min-w-0 flex-1 border-l border-ink font-sans text-sm text-ink first:border-l-0"
+                onClick={() => chat.sendReaction(word)}
+              >
+                {word}
+              </button>
+            ))}
+          </div>
         </div>
         <form
           className="chat-compose"
