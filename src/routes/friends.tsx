@@ -11,7 +11,7 @@ import {
 import { useFollowedAuthors } from "@/lib/followed-authors";
 import { boardKeptLines, fitRailHeight, friendsFeed, youCard, type BoardKeptLine } from "@/lib/friends";
 import { mergeDirectorySearch, searchHandles } from "@/lib/handle-search";
-import { withRemoteActivity } from "@/lib/remote-activity";
+import { shelfFromActivity, withRemoteActivity } from "@/lib/remote-activity";
 import { updateHostedHandle } from "@/lib/remote-auth";
 import { isOffline } from "@/lib/net";
 import { refreshFollowedActivity, useRemoteBundle, useRemoteHandleSearch } from "@/lib/remote-directory";
@@ -91,6 +91,31 @@ function FriendsPage() {
   const [pledgeTo, setPledgeTo] = useState("");
   const [pledgeWindow, setPledgeWindow] = useState<EveningWindow>("tonight");
   const { lines: kept } = useKeptLines(progress, hydrated);
+  const shelves = useMemo(() => {
+    const map = new Map<string, ReturnType<typeof shelfFromActivity>>();
+    for (const [handle, events] of Object.entries(remote.byHandle)) {
+      map.set(normalizeHandle(handle), shelfFromActivity(events));
+    }
+    return map;
+  }, [remote.byHandle]);
+  const remoteKept = useMemo(() => {
+    const lines: Array<{
+      handle: string;
+      name: string;
+      line: string;
+      workId: string;
+      workTitle: string;
+      atIndex: number;
+      breathId?: string;
+    }> = [];
+    for (const [handle, shelf] of shelves) {
+      const name = remote.profiles[handle]?.name || formatHandle(handle);
+      for (const line of shelf.kept) {
+        lines.push({ handle, name, ...line });
+      }
+    }
+    return lines;
+  }, [shelves, remote.profiles]);
 
   const graph = useMemo<FriendGraph>(
     () =>
@@ -163,9 +188,10 @@ function FriendsPage() {
             selfLines: kept,
             togetherKeeps,
             hostedSits,
+            remoteKept,
           })
         : [],
-    [hydrated, handle, kept, togetherKeeps, hostedSits],
+    [hydrated, handle, kept, togetherKeeps, hostedSits, remoteKept],
   );
   const pendingPledges = useMemo(
     () =>
@@ -249,7 +275,11 @@ function FriendsPage() {
       setMessage(result.error);
       return;
     }
-    setMessage(`Following ${formatHandle(search.offer)}.`);
+    setMessage(
+      remote.signedIn
+        ? `Following ${formatHandle(search.offer)}.`
+        : `Following ${formatHandle(search.offer)} on this phone. Sign in to see their book and kept lines.`,
+    );
   }
 
   async function invite() {
@@ -525,13 +555,21 @@ function FriendsPage() {
                     Follow {formatHandle(search.offer)}
                   </span>
                   <span className="mt-1 block font-serif text-sm leading-snug text-ink/70">
-                    Their activity appears once you share a sit or invite link with them.
+                    {remote.signedIn
+                      ? "Their open book and kept lines show here."
+                      : "Sign in to see their open book and kept lines."}
                   </span>
                 </span>
               </button>
             ) : null}
             {search.message ? (
               <p className="border-b border-ink px-4 py-3 font-serif text-sm text-ink/70">{search.message}</p>
+            ) : null}
+            {remote.followMissing.length > 0 ? (
+              <p className="border-b border-ink px-4 py-3 font-serif text-sm text-ink/70">
+                No account yet for {remote.followMissing.map((row) => formatHandle(row)).join(", ")}. Their book
+                shows once they claim that name.
+              </p>
             ) : null}
           </section>
         ) : null}
@@ -568,7 +606,11 @@ function FriendsPage() {
             <SectionTitle>Friends are reading</SectionTitle>
             {reading.length === 0 ? (
               <>
-                <EmptyCopy>No open book from anyone on this phone.</EmptyCopy>
+                <EmptyCopy>
+                  {remote.signedIn
+                    ? "No open book from anyone you follow."
+                    : "No open book from anyone on this phone."}
+                </EmptyCopy>
                 <TextButton onClick={() => void invite()}>Invite a friend</TextButton>
               </>
             ) : (
@@ -584,6 +626,7 @@ function FriendsPage() {
                       workId={row.reading}
                       workTitle={row.workTitle}
                       author={row.author}
+                      progress={shelves.get(row.handle)?.reading?.progress ?? ""}
                       latest={latestByHandle.get(row.handle) ?? ""}
                       line={line}
                     />
@@ -599,7 +642,9 @@ function FriendsPage() {
             <SectionTitle>Kept lines</SectionTitle>
             {keptLines.length === 0 ? (
               <>
-                <EmptyCopy>No kept lines on this phone yet.</EmptyCopy>
+                <EmptyCopy>
+                  {remote.signedIn ? "No kept lines from you or the people you follow." : "No kept lines on this phone yet."}
+                </EmptyCopy>
                 {you.reading ? (
                   <Link
                     to="/read/$workId"
@@ -911,6 +956,7 @@ function ReadingCard({
   workId,
   workTitle,
   author,
+  progress,
   latest,
   line,
 }: {
@@ -918,6 +964,7 @@ function ReadingCard({
   workId: string;
   workTitle: string;
   author: string;
+  progress: string;
   latest: string;
   line?: BoardKeptLine;
 }) {
@@ -937,7 +984,11 @@ function ReadingCard({
       <Link to="/friends/$handle" params={{ handle }} className="you-tile-link">
         <span className="type-kicker opacity-80">{formatHandle(handle)}</span>
         <span className="mt-1 type-lede">{workTitle || "Open book"}</span>
-        {author ? <span className="mt-1 font-serif text-sm opacity-80">{author}</span> : null}
+        {author || progress ? (
+          <span className="mt-1 font-serif text-sm opacity-80">
+            {[author, progress].filter(Boolean).join(" · ")}
+          </span>
+        ) : null}
         {line ? <span className="mt-2 font-serif text-base italic leading-snug">{line.line}</span> : null}
         {latest ? <span className="mt-1 type-kicker opacity-70">{latest}</span> : null}
         <span className="mt-2 font-sans text-xs opacity-80">Open</span>

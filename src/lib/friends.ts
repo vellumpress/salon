@@ -146,6 +146,16 @@ export function boardKeptLines(input: {
   }>;
   togetherKeeps?: TogetherKeep[];
   hostedSits?: HostedSit[];
+  /** Kept lines synced from people this phone follows. */
+  remoteKept?: Array<{
+    handle: string;
+    name?: string;
+    line: string;
+    workId: string;
+    workTitle?: string;
+    atIndex?: number;
+    breathId?: string;
+  }>;
 }): BoardKeptLine[] {
   const self = normalizeHandle(input.selfHandle);
   const rows: BoardKeptLine[] = [];
@@ -204,6 +214,19 @@ export function boardKeptLines(input: {
         breathId: keep.breathId,
       });
     }
+  }
+
+  for (const line of input.remoteKept ?? []) {
+    push({
+      id: `remote:${line.handle}:${line.workId}:${line.breathId || line.line}`,
+      handle: line.handle,
+      name: line.name ?? "",
+      line: line.line,
+      workId: line.workId,
+      workTitle: line.workTitle ?? "",
+      atIndex: line.atIndex ?? 0,
+      breathId: line.breathId,
+    });
   }
 
   return rows;

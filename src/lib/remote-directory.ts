@@ -17,6 +17,8 @@ export type RemoteBundle = {
   userId: string | null;
   byHandle: Record<string, FriendActivity[]>;
   profiles: Record<string, DirectoryProfile>;
+  /** Handles this phone follows that have no hosted account yet. */
+  followMissing: string[];
 };
 
 const EMPTY: RemoteBundle = {
@@ -24,7 +26,11 @@ const EMPTY: RemoteBundle = {
   userId: null,
   byHandle: {},
   profiles: {},
+  followMissing: [],
 };
+
+/** Kinds a follower needs. Sits must not crowd these out of the cap. */
+export const FOLLOWED_FEED_KINDS = ["reading", "kept", "finished"] as const;
 
 let bundle: RemoteBundle = EMPTY;
 const listeners = new Set<() => void>();
@@ -56,6 +62,7 @@ export function setRemoteSession(userId: string | null) {
     signedIn: Boolean(userId),
     userId,
     byHandle: userId ? bundle.byHandle : {},
+    followMissing: userId ? bundle.followMissing : [],
   });
 }
 
@@ -145,22 +152,59 @@ export function wantedFollowHandles(
   return wanted;
 }
 
+export function planFollowInserts(
+  userId: string,
+  wanted: Iterable<string>,
+  profiles: Array<{ id: string; handle: string }>,
+  already: Iterable<string>,
+) {
+  const byHandle = new Map(
+    profiles.map((row) => [normalizeHandle(row.handle), row.id] as const),
+  );
+  const have = new Set(already);
+  const rows: Array<{ follower_id: string; followee_id: string }> = [];
+  const missing: string[] = [];
+  const seen = new Set<string>();
+  for (const raw of wanted) {
+    const handle = normalizeHandle(raw);
+    if (handle.length < 2 || seen.has(handle)) continue;
+    seen.add(handle);
+    const followee = byHandle.get(handle);
+    if (!followee) {
+      missing.push(handle);
+      continue;
+    }
+    if (followee === userId || have.has(followee)) continue;
+    rows.push({ follower_id: userId, followee_id: followee });
+    have.add(followee);
+  }
+  return { rows, missing };
+}
+
 /** Push local follows up. Never deletes — a new phone must not wipe the hosted list. */
-export async function pushFollows(userId: string, handles: Iterable<string>) {
+export async function pushFollows(userId: string, handles: Iterable<string>): Promise<string[]> {
   const wanted = [...handles].map((handle) => normalizeHandle(handle)).filter((handle) => handle.length >= 2);
-  if (!wanted.length) return;
+  if (!wanted.length) {
+    patch({ followMissing: [] });
+    return [];
+  }
   const supabase = getSupabase();
   const profiles = await supabase.from("profiles").select("id, handle").in("handle", wanted);
-  if (profiles.error) return;
+  if (profiles.error) return bundle.followMissing;
   const existing = await supabase.from("follows").select("followee_id").eq("follower_id", userId);
-  if (existing.error) return;
-  const have = new Set((existing.data ?? []).map((row) => row.followee_id as string));
-  for (const row of profiles.data ?? []) {
-    const followee = row.id as string;
-    if (!followee || followee === userId || have.has(followee)) continue;
-    const inserted = await supabase.from("follows").insert({ follower_id: userId, followee_id: followee });
-    if (!inserted.error || inserted.error.code === "23505") have.add(followee);
+  if (existing.error) return bundle.followMissing;
+  const plan = planFollowInserts(
+    userId,
+    wanted,
+    (profiles.data ?? []).map((row) => ({ id: row.id as string, handle: row.handle as string })),
+    (existing.data ?? []).map((row) => row.followee_id as string),
+  );
+  for (const row of plan.rows) {
+    const inserted = await supabase.from("follows").insert(row);
+    if (inserted.error && inserted.error.code !== "23505") continue;
   }
+  patch({ followMissing: plan.missing });
+  return plan.missing;
 }
 
 export async function pullFollows(userId: string): Promise<DirectoryProfile[]> {
@@ -206,16 +250,25 @@ export async function refreshFollowedActivity(userId: string) {
     patch({ byHandle: {} });
     return;
   }
-  const [profiles, activity] = await Promise.all([
+  const activitySelect = "id, user_id, kind, book_id, payload, created_at";
+  const [profiles, feed, rest] = await Promise.all([
     supabase.from("profiles").select("id, handle, display_name, bio").in("id", ids),
     supabase
       .from("activity")
-      .select("id, user_id, kind, book_id, payload, created_at")
+      .select(activitySelect)
       .in("user_id", ids)
+      .in("kind", [...FOLLOWED_FEED_KINDS])
       .order("created_at", { ascending: false })
-      .limit(80),
+      .limit(120),
+    supabase
+      .from("activity")
+      .select(activitySelect)
+      .in("user_id", ids)
+      .not("kind", "in", `(${FOLLOWED_FEED_KINDS.join(",")})`)
+      .order("created_at", { ascending: false })
+      .limit(40),
   ]);
-  if (profiles.error || activity.error) return;
+  if (profiles.error || feed.error) return;
   const handleById = new Map<string, string>();
   const nextProfiles = { ...bundle.profiles };
   for (const row of profiles.data ?? []) {
@@ -225,7 +278,11 @@ export async function refreshFollowedActivity(userId: string) {
     nextProfiles[profile.handle] = profile;
   }
   const byHandle: Record<string, FriendActivity[]> = {};
-  for (const row of (activity.data ?? []) as ActivityRow[]) {
+  const seenIds = new Set<number>();
+  const rows = [...(feed.data ?? []), ...(rest.error ? [] : (rest.data ?? []))] as ActivityRow[];
+  for (const row of rows) {
+    if (seenIds.has(row.id)) continue;
+    seenIds.add(row.id);
     const handle = handleById.get(row.user_id);
     const event = activityFromRow(row);
     if (!handle || !event) continue;
@@ -265,6 +322,38 @@ export async function publishActivity(
     if (!one.error) saved.push(pending[index]!.key);
   }
   return saved;
+}
+
+/** Live inserts for the signed-in follower. Polling remains the fallback. */
+export function subscribeFriendActivity(userId: string, onChange: () => void) {
+  if (!userId) return () => undefined;
+  let closed = false;
+  const channel = getSupabase()
+    .channel(`friends-activity:${userId}:${Math.random().toString(36).slice(2, 8)}`)
+    .on(
+      "postgres_changes",
+      { event: "INSERT", schema: "public", table: "activity" },
+      () => {
+        if (!closed) onChange();
+      },
+    )
+    .on(
+      "postgres_changes",
+      {
+        event: "*",
+        schema: "public",
+        table: "follows",
+        filter: `follower_id=eq.${userId}`,
+      },
+      () => {
+        if (!closed) onChange();
+      },
+    )
+    .subscribe();
+  return () => {
+    closed = true;
+    void getSupabase().removeChannel(channel);
+  };
 }
 
 const PUBLISHED_KEY = "tbr-activity-published";

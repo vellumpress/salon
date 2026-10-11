@@ -1,4 +1,5 @@
 import { shelfWork } from "./catalog/shelf.ts";
+import { lastReadCue } from "./continuity.ts";
 import { isDeviceImport } from "./import/private.ts";
 import { asKeptRecord, keptBreathId } from "./kept-lines.ts";
 import {
@@ -6,6 +7,7 @@ import {
   type FriendActivity,
   type FriendActivityKind,
   type FriendGraph,
+  type FriendReadingNow,
 } from "./friend-profile.ts";
 import type { HostedSit } from "./hosted-sit.ts";
 import { normalizeHandle } from "./social.ts";
@@ -36,7 +38,7 @@ const LABELS: Record<ActivityKind, string> = {
   finished: "Finished",
 };
 
-type ShelfMeta = { workId: string; workTitle: string; author: string };
+type ShelfMeta = { workId: string; workTitle: string; author: string; breaths?: number };
 
 function metaFor(workId: string, fallbackTitle = "", fallbackAuthor = ""): ShelfMeta {
   const work = workId ? shelfWork(workId) : undefined;
@@ -44,6 +46,7 @@ function metaFor(workId: string, fallbackTitle = "", fallbackAuthor = ""): Shelf
     workId: work?.id ?? workId,
     workTitle: work?.title ?? fallbackTitle,
     author: work?.author ?? fallbackAuthor,
+    breaths: work?.breaths,
   };
 }
 
@@ -74,13 +77,15 @@ export function draftsFromLocal(input: LocalHistory): ActivityDraft[] {
     const meta = metaFor(workId);
     if (!item.completedAt && item.lastOpenedAt) {
       const bucket = Math.floor(item.lastOpenedAt / READING_BUCKET_MS);
+      const atIndex = Math.max(0, item.breathIndex ?? 0);
       drafts.push({
         key: `reading:${workId}:${bucket}`,
         kind: "reading",
         bookId: meta.workId,
         at: item.lastOpenedAt,
         payload: bookPayload(meta, `reading ${meta.workTitle || workId}`, {
-          atIndex: Math.max(0, item.breathIndex ?? 0),
+          atIndex,
+          progress: lastReadCue(atIndex, meta.breaths),
         }),
       });
     }
@@ -246,6 +251,13 @@ export function activityFromRow(row: ActivityRow): FriendActivity | null {
   const meta = bookId ? metaFor(bookId, text(payload.workTitle), text(payload.author)) : null;
   const summary = text(payload.summary) || defaultSummary(kind, meta?.workTitle || bookId);
   const at = Date.parse(row.created_at);
+  const atIndex = numberOf(payload.atIndex);
+  const storedProgress = text(payload.progress);
+  const progress =
+    storedProgress ||
+    (atIndex !== undefined && (kind === "reading" || kind === "finished")
+      ? lastReadCue(atIndex, meta?.breaths)
+      : "");
   return {
     id: `remote:${row.id}`,
     at: Number.isFinite(at) ? at : 0,
@@ -256,10 +268,42 @@ export function activityFromRow(row: ActivityRow): FriendActivity | null {
     workId: meta?.workId || undefined,
     workTitle: meta?.workTitle || undefined,
     author: meta?.author || undefined,
-    atIndex: numberOf(payload.atIndex),
+    atIndex,
     breathId: text(payload.breathId) || undefined,
-    progress: text(payload.progress) || undefined,
+    progress: progress || undefined,
   };
+}
+
+export type SharedKeptLine = {
+  line: string;
+  workId: string;
+  workTitle: string;
+  author: string;
+  atIndex: number;
+  breathId?: string;
+  at: number;
+};
+
+/** Current book plus the sentences worth showing on a friend's card. */
+export function shelfFromActivity(events: FriendActivity[]): {
+  reading?: FriendReadingNow;
+  kept: SharedKeptLine[];
+} {
+  const reading = openReadingFromActivity(events);
+  const kept = events
+    .filter((event) => event.kind === "kept" && event.line && event.workId)
+    .sort((a, b) => b.at - a.at || a.id.localeCompare(b.id))
+    .slice(0, 8)
+    .map((event) => ({
+      line: event.line ?? "",
+      workId: event.workId ?? "",
+      workTitle: event.workTitle ?? "",
+      author: event.author ?? "",
+      atIndex: event.atIndex ?? 0,
+      breathId: event.breathId,
+      at: event.at,
+    }));
+  return { reading, kept };
 }
 
 function defaultSummary(kind: ActivityKind, title: string) {

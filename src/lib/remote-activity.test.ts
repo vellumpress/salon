@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { asContact } from "./friends.ts";
 import { listFriends } from "./friend-profile.ts";
-import { activityFromRow, draftsFromLocal, withRemoteActivity } from "./remote-activity.ts";
+import { activityFromRow, draftsFromLocal, shelfFromActivity, withRemoteActivity } from "./remote-activity.ts";
 import type { WorkProgress } from "./store.ts";
 
 const progress = (partial: Partial<WorkProgress> = {}): WorkProgress => ({
@@ -40,6 +40,8 @@ test("local history becomes hosted activity drafts without dropping the handle",
   assert.ok(keptDraft);
   assert.equal(keptDraft.payload.breathId, "line-1");
   assert.equal(keptDraft.payload.line, undefined);
+  const reading = drafts.find((row) => row.kind === "reading" && row.bookId === "passing");
+  assert.match(String(reading?.payload.progress ?? ""), /sentence|%|Opened/);
   assert.equal(
     drafts.some((row) => row.kind === "sit"),
     true,
@@ -124,6 +126,46 @@ test("a kept line syncs its sentence without requiring it on older rows", () => 
   });
   assert.equal(older?.breathId, "s0-1");
   assert.equal(older?.line, undefined);
+});
+
+test("a reading row without a progress label still shows how far in", () => {
+  const event = activityFromRow({
+    id: 11,
+    user_id: "user",
+    kind: "reading",
+    book_id: "passing",
+    payload: { summary: "reading Passing", workTitle: "Passing", author: "Nella Larsen", atIndex: 12 },
+    created_at: "2026-10-11T12:00:00.000Z",
+  });
+  assert.match(event?.progress ?? "", /%|sentence|Opened/);
+  const shelf = shelfFromActivity([
+    event!,
+    {
+      id: "remote:12",
+      at: 20,
+      kind: "kept",
+      label: "Kept",
+      summary: "kept a line from Passing",
+      line: "She wrote the letter.",
+      workId: "passing",
+      workTitle: "Passing",
+      author: "Nella Larsen",
+      breathId: "s0-1",
+      atIndex: 12,
+    },
+    {
+      id: "remote:13",
+      at: 21,
+      kind: "sit",
+      label: "Sit",
+      summary: "sat with Passing",
+      workId: "passing",
+      workTitle: "Passing",
+    },
+  ]);
+  assert.equal(shelf.reading?.workId, "passing");
+  assert.equal(shelf.kept.length, 1);
+  assert.equal(shelf.kept[0]?.line, "She wrote the letter.");
 });
 
 function emptyHistory() {

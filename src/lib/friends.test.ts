@@ -69,6 +69,26 @@ test("boardKeptLines stays empty until this phone has a real line", () => {
   );
 });
 
+test("boardKeptLines includes a followed reader's kept sentence", () => {
+  const lines = boardKeptLines({
+    selfHandle: "ada",
+    remoteKept: [
+      {
+        handle: "mina",
+        name: "Mina",
+        line: "She wrote the letter.",
+        workId: "passing",
+        workTitle: "Passing",
+        atIndex: 4,
+        breathId: "s0-1",
+      },
+    ],
+  });
+  assert.equal(lines.length, 1);
+  assert.equal(lines[0]?.handle, "mina");
+  assert.equal(lines[0]?.line, "She wrote the letter.");
+});
+
 test("boardKeptLines keeps a together line and drops blanks", () => {
   const pair: TogetherKeep = {
     id: "tk1",
