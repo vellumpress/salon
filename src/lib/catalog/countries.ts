@@ -733,6 +733,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "a-russian-gentleman": "Russia",
   "walter-pieterse": "Netherlands",
   "froth": "Spain",
+  "moby-dick": "United States",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",
   "the-golden-age": "United Kingdom",
