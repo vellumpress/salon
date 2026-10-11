@@ -40,7 +40,7 @@ export function useKeptLines(
     }
     let live = true;
     const workIds = Object.entries(progress)
-      .filter(([id, item]) => !isDeviceImport(id) && (item.kept?.length ?? 0) > 0)
+      .filter(([id, item]) => !isDeviceImport(id) && (item?.kept?.length ?? 0) > 0)
       .map(([id]) => id);
 
     function paint() {
