@@ -25,6 +25,7 @@ import { FavoriteMark } from "@/components/favorite-mark";
 import { PlaceChip, RegionSilhouette } from "@/components/place-chip";
 import { placeForId } from "@/lib/catalog/places";
 import { ResumeLink } from "@/components/resume-link";
+import { StreakCare } from "@/components/streak-care";
 import {
   ShelfSearchBar,
   ShelfSearchHits,
@@ -43,9 +44,17 @@ export const Route = createFileRoute("/rituals")({
 function RitualsPage() {
   const progress = useTbr((s) => s.progress);
   const visit = useVisitSeed();
+  const [nudgeReady, setNudgeReady] = useState(false);
   const [hydrated, setHydrated] = useState(false);
   const { query, setQuery, searching, matches, poolSize } = useShelfSearch("local");
   useEffect(() => setHydrated(true), []);
+  useEffect(() => {
+    if (useTbr.persist.hasHydrated()) {
+      setNudgeReady(true);
+      return;
+    }
+    return useTbr.persist.onFinishHydration(() => setNudgeReady(true));
+  }, []);
 
   return (
     <main
@@ -73,6 +82,8 @@ function RitualsPage() {
           Together
         </Link>
       </div>
+
+      {nudgeReady ? <StreakCare /> : null}
 
       {searching ? (
         <ShelfSearchHits matches={matches} query={query} />

@@ -117,7 +117,6 @@ export function YouReading({
   notice,
   headerEnd,
   settings,
-  todayEnd,
   trendsEnd,
 }: {
   reading: ReadingStats;
@@ -129,7 +128,6 @@ export function YouReading({
   notice?: string;
   headerEnd?: ReactNode;
   settings: ReactNode;
-  todayEnd?: ReactNode;
   trendsEnd?: ReactNode;
 }) {
   const model = reading.readingModel;
@@ -246,7 +244,6 @@ export function YouReading({
                   onOpen={setDetail}
                   onDismiss={(id) => dismissInsight(id)}
                 />
-                {todayEnd}
               </>
             )}
           </>
