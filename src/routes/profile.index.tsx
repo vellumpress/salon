@@ -1,7 +1,6 @@
 import { Component, lazy, Suspense, useEffect, useLayoutEffect, useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PagesShell } from "@/components/pages-shell";
-import { StreakCare } from "@/components/streak-care";
 import { YouReading } from "@/components/you-reading";
 import { useLastRead, usePersistHydrated } from "@/components/resume-link";
 import { RITUAL_LANES, worksForRitualLane } from "@/lib/catalog/rituals";
@@ -216,7 +215,6 @@ function ProfileBody() {
         notice={slots.notice}
         headerEnd={slots.headerEnd}
         settings={slots.settings}
-        todayEnd={hydrated ? <StreakCare streak={reading.streak} /> : null}
         trendsEnd={
           <section>
             <p className="border-b border-ink px-4 py-3 type-kicker text-muted">For now</p>

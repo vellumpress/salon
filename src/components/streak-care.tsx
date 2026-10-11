@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { readDaylightEnabled } from "@/lib/daylight-colors";
+import { deriveReadingStats } from "@/lib/reading-stats";
 import {
   clockValue,
   enableReminderPermission,
@@ -9,7 +11,38 @@ import {
 } from "@/lib/streak-notify";
 import { useTbr } from "@/lib/store";
 
-export function StreakCare({ streak }: { streak: number }) {
+/** Same run the You page would have handed this control. */
+function nudgeStreak() {
+  const state = useTbr.getState();
+  return deriveReadingStats({
+    progress: state.progress,
+    favorites: state.favorites ?? [],
+    readingMinutesByDay: state.readingMinutesByDay ?? {},
+    advancesByDay: state.advancesByDay,
+    sceneCrossesByDay: state.sceneCrossesByDay,
+    keepsByDay: state.keepsByDay,
+    worksTouchedByDay: state.worksTouchedByDay,
+    hostOpensByDay: state.hostOpensByDay,
+    sitsByDay: state.sitsByDay,
+    clubTouchesByDay: state.clubTouchesByDay,
+    lastActiveReadAt: state.lastActiveReadAt,
+    sitHistory: state.sitHistory ?? [],
+    togetherKeeps: state.togetherKeeps ?? [],
+    hostedSits: state.hostedSits ?? [],
+    handle: state.handle ?? "",
+    sittingMinutes: state.sittingMinutes,
+    joined: state.joined ?? [],
+    daylight: readDaylightEnabled(),
+    pausedAt: state.scorePausedAt,
+    ignoredDays: state.scoreIgnoredDays,
+    dismissedInsights: state.insightDismissed,
+    lastInsight: state.insightSeen,
+    freezeBanked: state.streakFreezeBanked,
+    freezeUsedOn: state.streakFreezeUsedOn,
+  }).streak;
+}
+
+export function StreakCare() {
   const reminder = useTbr((s) => s.streakReminder);
   const setStreakReminder = useTbr((s) => s.setStreakReminder);
   const [clock, setClock] = useState(clockValue(reminder?.hour ?? 21, reminder?.minute ?? 0));
@@ -21,6 +54,7 @@ export function StreakCare({ streak }: { streak: number }) {
     const minute = match ? Number(match[2]) : 0;
     if (hour > 23 || minute > 59) return;
     const next = { enabled, hour, minute };
+    const streak = nudgeStreak();
     if (enabled) {
       const permission = await enableReminderPermission();
       const native = await scheduleCapacitorReminder(next, reminderBody(streak));
@@ -42,17 +76,17 @@ export function StreakCare({ streak }: { streak: number }) {
         setNote("While tbr is open, it will nudge you at that hour.");
       }
     } else {
-      await scheduleCapacitorReminder({ ...next, enabled: false }, reminderBody(streak));
+      await scheduleCapacitorReminder({ ...next, enabled: false }, reminderBody(nudgeStreak()));
       setNote("");
     }
     setStreakReminder(enabled ? next : null);
   }
 
   return (
-    <section>
-      <p className="border-b border-ink px-4 py-3 type-kicker text-muted">Return</p>
-      <div className="border-b border-ink px-4 py-4">
-        <p className="font-serif text-lg">A nudge at the hour you pick.</p>
+    <section className="cell-nudge bg-paper text-ink">
+      <p className="border-b border-ink px-4 py-3 type-kicker">Nudge</p>
+      <div className="px-4 py-4">
+        <p className="type-card">A nudge at the hour you pick.</p>
         <p className="mt-1 max-w-md font-sans text-sm text-ink/70">
           Opt in. One freeze is banked for a missed day. The hour stays on this phone.
         </p>
@@ -75,7 +109,7 @@ export function StreakCare({ streak }: { streak: number }) {
           </button>
           <button
             type="button"
-            onClick={() => void showStreakNotification(reminderBody(streak))}
+            onClick={() => void showStreakNotification(reminderBody(nudgeStreak()))}
             className="h-12 bg-yellow px-4 font-sans text-sm text-ink"
           >
             Try the nudge

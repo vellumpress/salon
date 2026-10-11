@@ -1255,7 +1255,8 @@ html[data-status-motion="1"] .status-bar-fill::before {
 
 .cell-wide,
 .cell-band,
-.cell-search {
+.cell-search,
+.cell-nudge {
   grid-column: 1 / -1;
 }
 
@@ -1427,6 +1428,7 @@ html[data-status-motion="1"] .status-bar-fill::before {
   .cell-wide,
   .cell-band,
   .cell-search,
+  .cell-nudge,
   .cell-notice,
   .cell-more,
   .cell-ritual-lanes,
