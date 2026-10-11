@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { dayKey } from "@/lib/day-key";
-import { armStreakReminder, reminderBody } from "@/lib/streak-notify";
+import { armStreakReminder } from "@/lib/streak-notify";
 import { useTbr } from "@/lib/store";
 
 /** Keeps an opted-in nudge alive on whatever page is open. */
@@ -15,7 +15,6 @@ export function StreakReminderHost() {
     return armStreakReminder({
       reminder,
       readToday,
-      body: reminderBody(0),
     });
   }, [reminder, minutes, sits]);
 

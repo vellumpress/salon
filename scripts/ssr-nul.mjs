@@ -943,8 +943,8 @@ self.addEventListener("message", function (event) {
     return;
   }
   if (data.type === "show-reminder") {
-    var title = String(data.title || "tbr");
-    var body = String(data.body || "A sitting is waiting, if you like.");
+    var title = String(data.title || "Night reading");
+    var body = String(data.body || "Your tbr is calling. Five minutes?");
     event.waitUntil(self.registration.showNotification(title, { body: body, tag: "tbr-streak" }));
     return;
   }
@@ -968,8 +968,8 @@ self.addEventListener("push", function (event) {
   } catch (err) {
     payload = { body: event.data ? event.data.text() : "" };
   }
-  var title = payload.title || "tbr";
-  var body = payload.body || "A sitting is waiting, if you like.";
+  var title = payload.title || "Night reading";
+  var body = payload.body || "Your tbr is calling. Five minutes?";
   event.waitUntil(self.registration.showNotification(title, { body: body, tag: "tbr-streak" }));
 });
 self.addEventListener("notificationclick", function (event) {
