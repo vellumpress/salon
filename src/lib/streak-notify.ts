@@ -4,7 +4,34 @@ export const NUDGE_STORAGE_KEY = "tbr-streak-nudge";
 export const PUSH_STORAGE_KEY = "tbr-push-subscription";
 const NUDGE_ID = 7101;
 
-export type ReminderClock = { enabled: boolean; hour: number; minute: number };
+export const DEFAULT_RITUAL_NAME = "Night reading";
+export const RITUAL_NAME_MAX = 24;
+
+/** Casual reminder lines. `tbr` stays lowercase and is never spelled out. */
+export const TBR_LINES = [
+  "Your tbr is calling. Five minutes?",
+  "tbr o'clock. Pick up where you left off.",
+  "Your tbr pile misses you.",
+] as const;
+
+export type ReminderClock = {
+  enabled: boolean;
+  hour: number;
+  minute: number;
+  name?: string;
+};
+
+export function ritualName(value: string | null | undefined) {
+  const clean = (value ?? "").replace(/\s+/g, " ").trim().slice(0, RITUAL_NAME_MAX);
+  return clean || DEFAULT_RITUAL_NAME;
+}
+
+/** One line a day, cycling the casual notes. */
+export function reminderLine(now = Date.now()) {
+  const day = Math.floor(now / 86_400_000);
+  const index = ((day % TBR_LINES.length) + TBR_LINES.length) % TBR_LINES.length;
+  return TBR_LINES[index]!;
+}
 
 type LocalNote = {
   requestPermissions: () => Promise<{ display?: string }>;
@@ -28,12 +55,6 @@ function bridge(): CapacitorBridge | null {
   if (typeof window === "undefined") return null;
   const cap = (window as Window & { Capacitor?: CapacitorBridge }).Capacitor;
   return cap ?? null;
-}
-
-export function reminderBody(streak: number) {
-  if (streak >= 2) return `A quiet run of ${streak} days. The page is here, if you like.`;
-  if (streak === 1) return "Yesterday sat with you. The page is here, if you like.";
-  return "A sitting is waiting, if you like.";
 }
 
 export function parseClock(value: string): { hour: number; minute: number } | null {
@@ -132,7 +153,7 @@ export async function scheduleCapacitorReminder(clock: ReminderClock, body: stri
     notifications: [
       {
         id: NUDGE_ID,
-        title: "tbr",
+        title: ritualName(clock.name),
         body,
         schedule: {
           on: { hour: clock.hour, minute: clock.minute },
@@ -145,18 +166,19 @@ export async function scheduleCapacitorReminder(clock: ReminderClock, body: stri
   return { scheduled: true as const, reason: "capacitor" as const };
 }
 
-export async function showStreakNotification(body: string) {
+export async function showStreakNotification(title: string, body: string) {
+  const heading = ritualName(title);
   if (typeof navigator !== "undefined" && navigator.serviceWorker?.controller) {
     navigator.serviceWorker.controller.postMessage({
       type: "show-reminder",
-      title: "tbr",
+      title: heading,
       body,
       url: "/salon/",
     });
     return;
   }
   if (typeof Notification !== "undefined" && Notification.permission === "granted") {
-    new Notification("tbr", { body });
+    new Notification(heading, { body });
   }
 }
 
@@ -171,7 +193,6 @@ export async function enableReminderPermission() {
 export function armStreakReminder(input: {
   reminder: ReminderClock | null;
   readToday: boolean;
-  body: string;
 }) {
   if (typeof window === "undefined" || !input.reminder?.enabled) return () => undefined;
   const tick = () => {
@@ -187,7 +208,7 @@ export function armStreakReminder(input: {
       return;
     }
     markFired();
-    void showStreakNotification(input.body);
+    void showStreakNotification(ritualName(input.reminder?.name), reminderLine());
   };
   tick();
   const id = window.setInterval(tick, 30_000);

@@ -20,6 +20,7 @@ import {
 import { mergePledge, type SitPledge, type SitPledgeStatus } from "./sit-pledge.ts";
 import { sameTogetherPair, type TogetherKeep } from "./together-keep.ts";
 import { dayKey } from "./day-key.ts";
+import type { ReminderClock } from "./streak-notify.ts";
 import { addJointDay } from "./joint-streak.ts";
 import {
   ACTIVE_READ_VERSION,
@@ -163,12 +164,12 @@ type TbrState = {
   /** 1 when a missed day can be covered. 0 after it has been spent. */
   streakFreezeBanked: number;
   streakFreezeUsedOn: string | null;
-  streakReminder: { enabled: boolean; hour: number; minute: number } | null;
+  streakReminder: ReminderClock | null;
   /** Calendar days when another reader was in the room. */
   jointDays: string[];
   noteJointDay: (day: string) => void;
   setStreakFreeze: (banked: number, usedOn: string | null) => void;
-  setStreakReminder: (reminder: { enabled: boolean; hour: number; minute: number } | null) => void;
+  setStreakReminder: (reminder: ReminderClock | null) => void;
   rememberTogetherKeep: (pair: TogetherKeep) => void;
   rememberHostedSit: (sit: HostedSit) => void;
   rsvpSit: (sitId: string, guest: { handle: string; name?: string; status: SitRsvp }) => void;
