@@ -60,6 +60,8 @@ export const allTsFiles = [
   "src/lib/remote-activity.test.ts",
   "src/lib/remote-directory.test.ts",
   "src/lib/remote-auth.test.ts",
+  "src/lib/auth-session.test.ts",
+  "src/lib/library-sync.test.ts",
   "src/lib/favorites.test.ts",
   "src/lib/auth/gate-identity.test.ts",
   "src/lib/auth/start-cookie-options.test.ts",
