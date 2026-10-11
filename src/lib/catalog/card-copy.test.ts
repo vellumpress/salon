@@ -318,6 +318,7 @@ test("known origin overrides", () => {
     "a-russian-gentleman": "Russia",
     "walter-pieterse": "Netherlands",
     "froth": "Spain",
+    "moby-dick": "United States",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",

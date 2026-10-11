@@ -389,7 +389,8 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   // CLAY-ZANZIBAR adds two (1155); STEEL-FLEA adds the-steel-flea (1156).
   // HOLBERG-FJELD adds two (1158); AKSAKOV-ZEROMSKI adds two (1160); WALTER-PIETERSE adds one (1161).
   // FROTH adds one (1162).
-  assert.equal(LOCAL_WORKS.length, 1162);
+  // MOBY-DICK adds one (1163).
+  assert.equal(LOCAL_WORKS.length, 1163);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 

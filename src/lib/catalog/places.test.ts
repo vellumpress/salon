@@ -131,6 +131,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "a-russian-gentleman": { label: "Simbirsk", region: "ru" },
     "walter-pieterse": { label: "Amsterdam", region: "nl" },
     "froth": { label: "Madrid", region: "es" },
+    "moby-dick": { label: "New York", region: "us" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
@@ -598,4 +599,10 @@ test("Sat 10 Oct PM FROTH place reuses es: Madrid; no new region key", () => {
   assert.ok(REGION_SHAPES.es?.d, "es shape");
   assert.deepEqual(placeFor(shelfWork("froth")!), { label: "Madrid", region: "es" });
   assert.equal(CHIP_ONLY_PLACE["froth"], undefined);
+});
+
+test("Sun 11 Oct PRIORITY MOBY-DICK place reuses us: New York (the opening sit is Manhattan); no new region key", () => {
+  assert.ok(REGION_SHAPES.us?.d, "us shape");
+  assert.deepEqual(placeFor(shelfWork("moby-dick")!), { label: "New York", region: "us" });
+  assert.equal(CHIP_ONLY_PLACE["moby-dick"], undefined);
 });

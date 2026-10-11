@@ -416,7 +416,7 @@ const BLURBS: Record<string, string> = {
   maggie: "A girl of the New York streets, written without the usual apology.",
   "the-red-badge-of-courage": "A boy goes to war to feel a wound that would prove he was there.",
   "the-scarlet-letter": "A Massachusetts scaffold, a child, and a letter that will not come off.",
-  "moby-dick": "A captain hunts a whale and takes the ship with him.",
+  "moby-dick": "A restless young man with a drizzly November in his soul signs on to a Nantucket whaler, under a captain he has yet to meet.",
   "the-adventures-of-huckleberry-finn":
     "A boy and a man on a raft, heading south through a country that will not let them be.",
   "pride-and-prejudice": "A country dance, a proud man, and the long work of being wrong about someone.",
