@@ -207,6 +207,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "walter-pieterse": { label: "Amsterdam", region: "nl" },
   "froth": { label: "Madrid", region: "es" },
   "moby-dick": { label: "New York", region: "us" },
+  "marie-claire": { label: "Berry", region: "fr" },
   "tales-by-polish-authors": { label: "Poland", region: "pl" },
   "the-dancing-master": { label: "Paris", region: "fr" },
   "the-golden-age": { label: "England", region: "gb" },

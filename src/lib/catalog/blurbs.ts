@@ -417,6 +417,8 @@ const BLURBS: Record<string, string> = {
   "the-red-badge-of-courage": "A boy goes to war to feel a wound that would prove he was there.",
   "the-scarlet-letter": "A Massachusetts scaffold, a child, and a letter that will not come off.",
   "moby-dick": "A restless young man with a drizzly November in his soul signs on to a Nantucket whaler, under a captain he has yet to meet.",
+  "marie-claire":
+    "A heads-up before you start: the book opens on a mother’s death, seen by her five-year-old daughter, and a drunk father who stands the child on a wine-shop table, where men kiss her and try to make her drink. Later there are a nun’s threats and a blow at the orphanage, a chicken and a pig slaughtered on the page, wolves killing sheep, a little girl badly burned, and more deaths, told quietly.",
   "the-adventures-of-huckleberry-finn":
     "A boy and a man on a raft, heading south through a country that will not let them be.",
   "pride-and-prejudice": "A country dance, a proud man, and the long work of being wrong about someone.",
