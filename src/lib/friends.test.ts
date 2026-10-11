@@ -118,13 +118,16 @@ test("youCard uses last-read as currently sitting", () => {
   assert.equal(you.workTitle, "Passing");
 });
 
-test("friends rails hug the cards and do not paint an ink plate", () => {
+test("the friends page is a vertical feed, and leftover rails do not paint an ink plate", () => {
   const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
   const friends = readFileSync(new URL("../routes/friends.tsx", import.meta.url), "utf8");
-  assert.match(friends, /className="rail-clip"/);
-  assert.match(friends, /className="rail-hug"/);
-  assert.doesNotMatch(friends, /className="rail hug"/);
-  assert.match(friends, /fitRailHeight/);
+  assert.match(friends, /Find @handle/);
+  assert.match(friends, /shelfFromActivity/);
+  assert.match(friends, /to="\/together"/);
+  assert.match(friends, /Rooms/);
+  assert.doesNotMatch(friends, /className="rail-clip"/);
+  assert.doesNotMatch(friends, /Notable people/);
+  assert.doesNotMatch(friends, /Club rooms/);
   const clip = css.match(/\.rail-clip\s*\{([^}]+)\}/);
   assert.ok(clip, "missing .rail-clip");
   assert.match(clip[1], /overflow-x:\s*auto/);

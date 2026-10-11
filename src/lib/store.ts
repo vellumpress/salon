@@ -7,7 +7,7 @@ import {
   contactId,
   type FriendContact,
 } from "./friends.ts";
-import { handlesInVault } from "./reader-account.ts";
+import { handlesInVault, readReaderVault, sessionFromVault } from "./reader-account.ts";
 import { handleError, normalizeHandle } from "./social.ts";
 import {
   addSitKeep,
@@ -604,9 +604,10 @@ export const useTbr = create<TbrState>()(
         }),
       setHandle: (raw) => {
         const handle = normalizeHandle(raw);
+        const seated = normalizeHandle(sessionFromVault(readReaderVault())?.handle ?? "");
         const taken = [
           ...(get().contacts ?? []).map((row) => row.handle),
-          ...handlesInVault().filter((row) => row !== get().handle),
+          ...handlesInVault().filter((row) => row !== get().handle && row !== seated),
         ];
         const error = handleError(handle, taken);
         if (error) return { ok: false as const, error };
