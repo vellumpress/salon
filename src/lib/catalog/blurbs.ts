@@ -1087,6 +1087,81 @@ const BLURBS: Record<string, string> = {
   "in-a-german-pension": "Mansfield’s first book: a New Zealander watching Germans at table.",
   "the-imported-bridegroom-and-other-stories-of-the-new-york-ghetto":
     "Cahan’s East Side: a Talmudist imported for a daughter, and the America that unmakes him.",
+  // Mira Mon 12 Oct 2026 PITCHES-1 — same sentence as the ritual pitch.
+  "a-book-barnes":
+    "At dusk a man in a frock coat and top hat creeps through the underbrush by the Buckler farm corral, and on the other side of the fence the horses have gone wild for summer.",
+  "a-changed-man":
+    "From an oriel window at Top o’ Town a neighbour watches the High Street as a crack regiment of Hussars arrives at the barracks with a splendid band.",
+  "a-diversity-of-creatures":
+    "In August 2065 Northern Illinois cuts itself off from the planet, and the Board’s reporter is rushed aboard a new airship with four members to find out why.",
+  "a-group-of-noble-dames":
+    "On a still winter night at King’s-Hintock Court a girl of twelve leans out of a window, hands over her eyes, while her parents quarrel next door over whom she will marry.",
+  "a-history-of-chinese-literature":
+    "Giles starts before the beginning, with Nothing taking the form of a point in a circle, then walks down to the feudal states of the eighth century B.C.",
+  "a-house-of-gentlefolk":
+    "A spring evening in 1842 fades over a provincial town, and two women sit at an open window, one a widow of fifty, the other an old lady of seventy.",
+  "a-spring-time-case":
+    "On a sleeting winter evening at the Suruga-ya pawnshop, the clerk Shinsuké sends the apprentice out for hot macaroni and locks up while the master is away.",
+  "artists-wives":
+    "After dinner in a lamplit studio, a poet asks his happily married friend to find him a wife, and the painter says artists ought never to marry.",
+  "auguste-rodin":
+    "Rilke begins with Rodin alone before fame and after it, and with the hands that raised a whole forest of forms.",
+  "ballads-of-a-bohemian":
+    "A street minstrel raises his glass to the mansard days of youth, then sits by his last faggots of fire in a Montparnasse attic in April 1914.",
+  "ballads-of-a-cheechako":
+    "Service sings the men of the High North: auroras over the Yukon, spruce-bough beds in the snow, and beans fried at forty below.",
+  "baudelaire-prose-and-poetry":
+    "The Moon looks in on a child asleep in its cradle and leaves her colours on its face, a gift that is half kiss and half poison.",
+  "bay-a-book-of-poems":
+    "Lawrence watches a still red line of guards in Hyde Park heave into a march, then hears the church clock strike eight over children in the hay.",
+  "before-adam":
+    "A city boy dreams every night of forests he has never seen, and the fear in those dreams is older than anything in his waking life.",
+  "blix":
+    "Nine strikes from the cuckoo clock on the Washington Street hill, and Mr. Bessemer starts his Sunday watermelon without waiting, the whole Bay out the window.",
+  "bontshe-the-silent":
+    "Bontzye Shweig lives and dies so quietly that the wind blows the board off his grave and nobody remembers where he lies.",
+  "caesar-or-nothing":
+    "The Paris-Ventimiglia express stops at Marseilles on a freezing winter morning, and Cæsar and his sister Laura warm up over café-au-lait in the dining car.",
+  "captain-craig":
+    "Old, cold and hungry in Tilbury Town, Captain Craig tells a passing sleeve that he must eat, and five or six young men find the spark in him.",
+  "charmides-and-other-poems":
+    "A Grecian lad home from Sicily with figs and wine climbs to Athena’s temple at dusk and hides until the priests put out the fires.",
+  "chinese-literature":
+    "The Master asks whether learning, then practising what you have learnt, is not a satisfaction, and his disciples add what they examine in themselves each day.",
+  "creative-unity":
+    "Tagore begins with civility as a kind of beauty, and the empty kerosene can as its rude opposite.",
+  "crucial-instances":
+    "An old guide shows a visitor the shuttered villa above Vicenza where nothing in the Duchess’s rooms has changed in two hundred years.",
+  "dauber":
+    "At sunset on a swift ship out of the tropics, the despised young ship’s painter tells the apprentice Si why he came to sea.",
+  "daniel-deronda":
+    "In a hazy, gilded casino on a September afternoon, Daniel Deronda can’t stop looking at a young woman at the roulette table, or decide whether she is beautiful.",
+  "day-and-night-stories":
+    "Fifteen years after a promise made on a steamer deck, a man steps off at a little country station to knock at her garden gate, as he said he would.",
+  "essays-and-soliloquies":
+    "The introduction sketches Unamuno’s Bilbao boyhood, from the Carlist siege of 1874 to a twopenny notebook of his own philosophy.",
+  "eugene-onegin":
+    "A young dandy races by post to his dying uncle’s bedside, and Pushkin turns back to tell how Onegin grew up beside the Neva.",
+  "eves-ransom":
+    "On a wet February dusk at Dudley Port station, two men who half recognise each other board the same third-class carriage for Birmingham.",
+  "fairies-and-fusiliers":
+    "Graves tells an ungentle critic he will keep his old sunsets, then an old centurion over his wine watches the new legion march by.",
+  "faust-part-i":
+    "Goethe greets the hovering forms of his youth again, then a theatre manager, a poet and a clown argue over what the crowd wants.",
+  "fifty-one-tales":
+    "Fame passes the poet by and promises to meet him in a hundred years, and Charon rows on across the river with a single shivering ghost.",
+  "fir-flower-tablets":
+    "The Shu Road climbs by bird-tracks, sky-ladders and nine turns to a hundred steps, and the traveller on it only wants to go home.",
+  "fraternity":
+    "On the last afternoon of April in Kensington, a woman at a shop window wonders whether she ought to buy a gentian-blue gown, and an old newspaper seller watches her.",
+  "glimpses-of-unfamiliar-japan":
+    "Hearn’s first morning in Japan is a kuruma ride out of Yokohama’s European quarter, under blue roofs and blue shop-cloths, in clear spring air off Fuji.",
+  "gods-trombones":
+    "An old preacher’s prayer opens the book, knee-bowed and body-bent, and then God steps out on space and says he is lonely and will make a world.",
+  "hebrew-literature":
+    "The Mishnah opens on a night question, from what hour to say the evening Shemah, and the sages argue it out until the pillar of the morn.",
+  "hugh-selwyn-mauberley":
+    "For three years, out of key with his time, a poet tries to bring a dead art back, and the age demands a plaster mould instead.",
 };
 
 /** Concrete author-level line when a work has no curated sentence. */
