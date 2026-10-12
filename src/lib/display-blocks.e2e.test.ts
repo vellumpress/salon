@@ -430,3 +430,113 @@ test(
     }
   },
 );
+
+test(
+  "standalone resume still splits when the viewport height arrives without a resize",
+  { timeout: 120_000 },
+  async () => {
+    const stop = await ensureReaderServer();
+    const browser = await launch();
+    try {
+      const saved = JSON.stringify({
+        state: {
+          sittingMinutes: 0,
+          progress: {
+            "moby-dick": {
+              breathIndex: 28,
+              breathId: "s3-0",
+              breathCount: 2472,
+              lastOpenedAt: Date.now(),
+              sittingStartedAt: Date.now() - 60_000,
+              keywords: {},
+              kept: [],
+              completedAt: null,
+              entered: true,
+            },
+          },
+        },
+        version: 2,
+      });
+      async function openBlind(url: string, index: string) {
+        const context = await browser.newContext({
+          viewport: PHONE_VIEW,
+          screen: PHONE_VIEW,
+          hasTouch: true,
+          isMobile: true,
+          deviceScaleFactor: PHONE.deviceScaleFactor,
+          userAgent: PHONE.userAgent,
+        });
+        const page = await context.newPage();
+        await page.addInitScript((raw) => {
+          Object.defineProperty(window.navigator, "standalone", {
+            configurable: true,
+            get: () => true,
+          });
+          const media = window.matchMedia.bind(window);
+          window.matchMedia = (query: string) => {
+            if (String(query).includes("display-mode") && String(query).includes("standalone")) {
+              return {
+                matches: true,
+                media: String(query),
+                onchange: null,
+                addListener() {},
+                removeListener() {},
+                addEventListener() {},
+                removeEventListener() {},
+                dispatchEvent() {
+                  return false;
+                },
+              } as MediaQueryList;
+            }
+            return media(query);
+          };
+          localStorage.setItem("vellum-v1", raw);
+          Object.defineProperty(window, "innerHeight", { configurable: true, get: () => 0 });
+          const visual = window.visualViewport;
+          if (visual) Object.defineProperty(visual, "height", { configurable: true, get: () => 0 });
+        }, saved);
+        await page.goto(url, { waitUntil: "domcontentloaded" });
+        await page.waitForFunction(
+          (want) => {
+            const frame = document.querySelector(".reader-frame");
+            return (
+              frame?.getAttribute("data-bound") === "full" &&
+              frame.getAttribute("data-breath-index") === want &&
+              document.querySelector(".breath-now .breath-block")
+            );
+          },
+          index,
+          { timeout: 30_000 },
+        );
+        const blind = await blocks(page);
+        assert.ok(blind.length > 0, `${url} painted no blocks while the viewport was 0`);
+        for (const spot of blind) {
+          assert.equal(
+            spot.sentences,
+            1,
+            `${url} grouped ${spot.sentences} sentences before the viewport had a height`,
+          );
+        }
+        await page.evaluate(() => {
+          Object.defineProperty(window, "innerHeight", { configurable: true, get: () => 844 });
+          const visual = window.visualViewport;
+          if (visual) Object.defineProperty(visual, "height", { configurable: true, get: () => 844 });
+        });
+        await page.waitForFunction(
+          () => document.querySelector("[data-display-blocks]")?.getAttribute("data-display-blocks") === "ready",
+          null,
+          { timeout: 8_000 },
+        );
+        const shown = await blocks(page);
+        assertBlockHeights(shown, url);
+        assert.ok(shown.length > 1, `${url} stayed one block after the viewport arrived`);
+        await context.close();
+      }
+      await openBlind(`${ORIGIN}/salon/read/moby-dick`, "28");
+      await openBlind(`${ORIGIN}/salon/read/moby-dick?at=0`, "0");
+    } finally {
+      await browser.close();
+      await stop();
+    }
+  },
+);

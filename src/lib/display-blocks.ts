@@ -19,6 +19,8 @@ export type DisplayMetrics = {
   fontStyle: string;
   lineHeight: string;
   letterSpacing: string;
+  /** False while the reading face is still loading. The CSS family string does not change when it arrives. */
+  faceReady: boolean;
 };
 
 /**
@@ -55,6 +57,24 @@ export function packDisplayBlocks(
     });
     from = next;
   }
+  if (blocks.map((block) => block.text).join("") !== text) {
+    return [{ text, sentences: spans.length }];
+  }
+  return blocks;
+}
+
+/**
+ * Before the column has a real height, show one sentence per block.
+ * The whole paragraph as one block is what fills the phone.
+ */
+export function unmeasuredBlocks(text: string): DisplayBlock[] {
+  if (!text) return [{ text, sentences: 1 }];
+  const spans = sentenceSpans(text);
+  if (spans.length <= 1) return [{ text, sentences: Math.max(1, spans.length) }];
+  const blocks = spans.map((span) => ({
+    text: text.slice(span.start, span.end),
+    sentences: 1,
+  }));
   if (blocks.map((block) => block.text).join("") !== text) {
     return [{ text, sentences: spans.length }];
   }
@@ -131,6 +151,7 @@ function styleKey(metrics: DisplayMetrics) {
     metrics.lineHeight,
     metrics.letterSpacing,
     metrics.fontFamily,
+    metrics.faceReady ? 1 : 0,
   ].join("|");
 }
 
@@ -143,7 +164,14 @@ function calibrate(metrics: DisplayMetrics) {
   const key = styleKey(metrics);
   const hit = calibration.get(key);
   if (hit) return hit;
-  const line = Math.max(1, measureStyledHeight("ABCDEFGHIJKLMNOPQRSTUVWXYZ", metrics));
+  const fontPx = Number.parseFloat(metrics.fontSize);
+  const measured = measureStyledHeight("ABCDEFGHIJKLMNOPQRSTUVWXYZ", metrics);
+  // A face that has not painted yet reports a collapsed line. Do not cache that:
+  // it treats hundreds of characters as one line and the paragraph stays whole.
+  if (!(measured > 0) || (fontPx > 0 && measured < fontPx * 0.45)) {
+    return { line: Math.max(16, fontPx > 0 ? fontPx * 1.45 : 24), chars: 22 };
+  }
+  const line = measured;
   const sample = "n".repeat(480);
   const block = Math.max(line, measureStyledHeight(sample, metrics));
   const lines = Math.max(1, Math.round(block / line));
@@ -181,6 +209,7 @@ export function metricsEqual(a: DisplayMetrics | null, b: DisplayMetrics): boole
     a.fontWeight === b.fontWeight &&
     a.fontStyle === b.fontStyle &&
     a.lineHeight === b.lineHeight &&
-    a.letterSpacing === b.letterSpacing
+    a.letterSpacing === b.letterSpacing &&
+    a.faceReady === b.faceReady
   );
 }

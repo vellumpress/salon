@@ -2,16 +2,28 @@ import { useLayoutEffect, useMemo, useRef, useState, type RefObject } from "reac
 import {
   metricsEqual,
   resolveDisplayBlocks,
+  unmeasuredBlocks,
   VIEWPORT_BLOCK_FRACTION,
   type DisplayBlock,
   type DisplayMetrics,
 } from "./display-blocks.ts";
-import { sentenceSpans } from "./sentences.ts";
 
 function viewportHeight() {
   const visual = window.visualViewport?.height;
   if (visual && visual > 32) return Math.round(visual);
   return Math.round(window.innerHeight);
+}
+
+function faceSettled(style: CSSStyleDeclaration): boolean {
+  const fonts = document.fonts;
+  if (!fonts) return true;
+  try {
+    const spec = `${style.fontWeight || "400"} ${style.fontSize || "16px"} ${style.fontFamily || "serif"}`;
+    if (fonts.check(spec)) return true;
+  } catch {
+    /* the family string can be a list the checker rejects */
+  }
+  return fonts.status === "loaded";
 }
 
 function readMetrics(node: HTMLElement, tighten: number): DisplayMetrics | null {
@@ -31,12 +43,8 @@ function readMetrics(node: HTMLElement, tighten: number): DisplayMetrics | null 
     fontStyle: style.fontStyle,
     lineHeight: style.lineHeight,
     letterSpacing: style.letterSpacing,
+    faceReady: faceSettled(style),
   };
-}
-
-function fallbackBlock(text: string): DisplayBlock[] {
-  const spans = sentenceSpans(text);
-  return [{ text, sentences: Math.max(1, spans.length) }];
 }
 
 /**
@@ -54,6 +62,7 @@ export function useDisplayBlocks(
   const [tick, setTick] = useState(0);
   const tightenRef = useRef(0);
   const viewportSeen = useRef(0);
+  const blindSince = useRef(0);
 
   useLayoutEffect(() => {
     const bump = () => setTick((n) => n + 1);
@@ -61,23 +70,40 @@ export function useDisplayBlocks(
     window.visualViewport?.addEventListener("resize", bump);
     document.fonts?.addEventListener("loadingdone", bump);
     void document.fonts?.ready.then(bump);
+    // A home-screen launch can grow the layout after the first paint without a
+    // window resize. The document element does fire when that height arrives.
+    const observer = typeof ResizeObserver === "function" ? new ResizeObserver(bump) : null;
+    observer?.observe(document.documentElement);
     return () => {
       window.removeEventListener("resize", bump);
       window.visualViewport?.removeEventListener("resize", bump);
       document.fonts?.removeEventListener("loadingdone", bump);
+      observer?.disconnect();
     };
   }, []);
 
   useLayoutEffect(() => {
     const node = sourceRef.current;
-    if (!node) return;
+    const retry = () => {
+      const now = Date.now();
+      if (blindSince.current === 0) blindSince.current = now;
+      if (now - blindSince.current > 8000) return;
+      const id = window.setTimeout(() => setTick((n) => n + 1), 100);
+      return () => window.clearTimeout(id);
+    };
+    if (!node) return retry();
     const viewport = viewportHeight();
     if (viewportSeen.current !== viewport) {
       viewportSeen.current = viewport;
       tightenRef.current = 0;
     }
     const next = readMetrics(node, tightenRef.current);
-    if (!next) return;
+    if (!next) {
+      // Standalone can report a 0 viewport on the first frames and then the
+      // real height, with no resize event. Keep looking for a few seconds.
+      return retry();
+    }
+    blindSince.current = 0;
     setMetrics((prev) => (metricsEqual(prev, next) ? prev : next));
   }, [sourceRef, tick, texts, layoutKey]);
 
@@ -126,7 +152,7 @@ export function useDisplayBlocks(
 
   return {
     blocksFor(text: string): DisplayBlock[] {
-      return packed.get(text) ?? fallbackBlock(text);
+      return packed.get(text) ?? unmeasuredBlocks(text);
     },
     ready: readyKey !== "" && readyKey === settled,
     viewport: metrics?.viewport ?? 0,

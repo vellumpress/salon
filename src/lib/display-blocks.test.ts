@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { packDisplayBlocks, VIEWPORT_BLOCK_FRACTION } from "./display-blocks.ts";
+import { packDisplayBlocks, unmeasuredBlocks, VIEWPORT_BLOCK_FRACTION } from "./display-blocks.ts";
 import { sentenceSpans } from "./sentences.ts";
 
 function loadBreath(id: string, index: number) {
@@ -89,6 +89,14 @@ test("a short paragraph is left whole", () => {
   const blocks = assertPacked(text);
   assert.equal(blocks.length, 1);
   assert.equal(blocks[0]?.text, text);
+});
+
+test("an unmeasured paragraph is one sentence per block", () => {
+  const text = loadBreath("moby-dick", 0);
+  const blocks = unmeasuredBlocks(text);
+  assert.ok(blocks.length > 1);
+  assert.equal(blocks.map((block) => block.text).join(""), text);
+  for (const block of blocks) assert.equal(block.sentences, 1);
 });
 
 test("the block limit is one third of the viewport", () => {

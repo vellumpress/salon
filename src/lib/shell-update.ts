@@ -36,10 +36,29 @@ export function markWorkerReload(storage: SwReloadStorage, now = Date.now()) {
 
 let listening = false;
 
+function reloadForNewWorker() {
+  let storage: SwReloadStorage;
+  try {
+    storage = sessionStorage;
+  } catch {
+    return;
+  }
+  if (workerReloadBlocked(storage)) return;
+  markWorkerReload(storage);
+  window.location.reload();
+}
+
 export async function nudgeServiceWorker(): Promise<void> {
   if (typeof navigator === "undefined" || !navigator.serviceWorker) return;
   if (isOfflineNow()) return;
   const hadController = Boolean(navigator.serviceWorker.controller);
+  // Listen before update(). A waiting worker can take over during that
+  // await, and the change event does not replay.
+  if (hadController && !listening) {
+    listening = true;
+    navigator.serviceWorker.addEventListener("controllerchange", reloadForNewWorker);
+  }
+  const before = navigator.serviceWorker.controller;
   let reg: ServiceWorkerRegistration | undefined;
   try {
     reg = await navigator.serviceWorker.getRegistration("/salon/");
@@ -57,17 +76,7 @@ export async function nudgeServiceWorker(): Promise<void> {
   };
   skip();
   reg.installing?.addEventListener("statechange", skip);
-  if (!hadController || listening) return;
-  listening = true;
-  navigator.serviceWorker.addEventListener("controllerchange", () => {
-    let storage: SwReloadStorage;
-    try {
-      storage = sessionStorage;
-    } catch {
-      return;
-    }
-    if (workerReloadBlocked(storage)) return;
-    markWorkerReload(storage);
-    window.location.reload();
-  });
+  if (hadController && navigator.serviceWorker.controller && navigator.serviceWorker.controller !== before) {
+    reloadForNewWorker();
+  }
 }
