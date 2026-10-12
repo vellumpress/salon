@@ -58,6 +58,7 @@ import {
 import { decodeHostedSit } from "@/lib/hosted-sit";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
+import { useDisplayBlocks } from "@/lib/use-display-blocks";
 import {
   breathTooTall,
   CENTER_LINE_ANCHOR,
@@ -252,6 +253,7 @@ export function TbrReader({
     typeof at === "number" && Number.isFinite(at) && at >= 0 ? Math.floor(at) : null,
   );
   const breathSlotRef = useRef<HTMLDivElement>(null);
+  const breathLineRef = useRef<HTMLDivElement>(null);
   const lookbackSlotRef = useRef<HTMLDivElement>(null);
   const readingPaneRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -499,8 +501,20 @@ export function TbrReader({
     () => (centerOn ? upcomingBreaths(work, index) : []),
     [centerOn, index, work],
   );
+  const displayTexts = useMemo(() => {
+    const list: string[] = [];
+    if (breath) list.push(breath.text);
+    for (const item of lookback) list.push(item.text);
+    for (const item of upcoming) list.push(item.text);
+    return list;
+  }, [breath, lookback, upcoming]);
   const kept = progress?.kept ?? [];
   const isKept = breath ? keptIncludes(kept, breath.id) : false;
+  const display = useDisplayBlocks(
+    breathLineRef,
+    displayTexts,
+    `${together ? 1 : 0}:${centerOn ? 1 : 0}:${isKept ? 1 : 0}:${index}`,
+  );
   const plane: Fill = planeOf(breath?.sceneId ?? work.id);
   const intro = showPreface ? readerIntro(work) : "";
   const palimpsest = progress?.keywords[breath?.sceneId ?? ""] ?? "";
@@ -1210,44 +1224,51 @@ export function TbrReader({
     );
   }
 
-  const readLines = lookback.map((item, i) => {
+  const readLines = lookback.flatMap((item, i) => {
     const last = lookback.length - 1;
     const opacity = last <= 0 ? 0.38 : 0.1 + (i / last) * 0.4;
     const sentence = work.breaths.indexOf(item);
-    return (
+    return display.blocksFor(item.text).map((block, bi) => (
       <p
-        key={item.id}
+        key={`${item.id}-${bi}`}
         className="look-line text-ink"
         style={{ opacity }}
         data-sentence={sentence >= 0 ? sentence : undefined}
+        data-block-sentences={block.sentences}
       >
-        <EmphasizedText text={item.text} />
+        <EmphasizedText text={block.text} />
       </p>
-    );
+    ));
   });
-  const previewLines = upcoming.map((item, i) => {
+  const previewLines = upcoming.flatMap((item, i) => {
     const sentence = work.breaths.indexOf(item);
-    return (
+    return display.blocksFor(item.text).map((block, bi) => (
       <p
-        key={item.id}
+        key={`${item.id}-${bi}`}
         className="look-line text-ink"
         style={{ opacity: upcomingOpacity(i, upcoming.length) }}
         data-sentence={sentence >= 0 ? sentence : undefined}
+        data-block-sentences={block.sentences}
       >
-        <EmphasizedText text={item.text} />
+        <EmphasizedText text={block.text} />
       </p>
-    );
+    ));
   });
   const currentLine = (
-    <p
+    <div
+      ref={breathLineRef}
       className={cn(
         "breath-now relative z-[1] font-serif",
         isKept && "border-l-2 border-red pl-4",
       )}
       data-sentence={index}
     >
-      <EmphasizedText text={breath.text} />
-    </p>
+      {display.blocksFor(breath.text).map((block, bi) => (
+        <p key={bi} className="breath-block" data-block-sentences={block.sentences}>
+          <EmphasizedText text={block.text} />
+        </p>
+      ))}
+    </div>
   );
   const breathClass = cn("breath-slot", overflows && "overflows", atEnd && "at-end");
 
@@ -1716,6 +1737,8 @@ export function TbrReader({
       data-bound={workIsComplete(work.id) ? "full" : "opening"}
       data-breath-index={index}
       data-breath-count={work.breaths.length}
+      data-display-blocks={display.ready ? "ready" : "pending"}
+      data-block-viewport={display.ready ? String(display.viewport) : ""}
     >
       <h1 className="sr-only">{work.title}</h1>
       {together && pair ? (

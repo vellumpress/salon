@@ -189,6 +189,43 @@ function isAbbreviation(word: string, after: string) {
   return false;
 }
 
+export type SentenceSpan = { start: number; end: number };
+
+/**
+ * Sentence ranges in the original string. Slices joined back together are
+ * the same characters; nothing is rewritten, dropped, or re-hyphenated.
+ * Boundaries follow the same abbreviation and capital-after-period rules
+ * as the importer.
+ */
+export function sentenceSpans(text: string): SentenceSpan[] {
+  if (!text) return [{ start: 0, end: 0 }];
+  const spans: SentenceSpan[] = [];
+  const re = /[.!?…]["”']*/g;
+  let start = 0;
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(text))) {
+    const end = match.index + match[0].length;
+    const before = text.slice(start, end);
+    const after = text.slice(end);
+    const word = (before.match(/(\S+)$/) ?? [])[1] ?? "";
+    if (isAbbreviation(word, after)) continue;
+    if (after.length > 0 && !/^\s+($|[A-Z“"‘(\[]|\d)/.test(after)) continue;
+    if (before.trim().length <= 1) continue;
+    spans.push({ start, end });
+    start = end;
+  }
+  if (start < text.length) {
+    const tail = text.slice(start);
+    if (spans.length > 0 && tail.trim().length === 0) {
+      spans[spans.length - 1]!.end = text.length;
+    } else {
+      spans.push({ start, end: text.length });
+    }
+  }
+  if (spans.length === 0) spans.push({ start: 0, end: text.length });
+  return spans;
+}
+
 function isNoise(text: string) {
   const t = text.trim();
   if (isChapterHeading(t) || isFrontMatter(t)) return false;
