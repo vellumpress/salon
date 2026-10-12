@@ -26,6 +26,7 @@ export const smokeFiles = [
   "src/lib/you-score-open.test.ts",
   "src/lib/friend-feed.e2e.test.ts",
   "src/lib/display-blocks.e2e.test.ts",
+  "src/lib/reader-sentence-tap.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -94,6 +95,8 @@ export const allTsFiles = [
   "src/lib/reader-back-tap.test.ts",
   "src/lib/reader-back-ios.test.ts",
   "src/lib/reader-tap-matrix.test.ts",
+  "src/lib/reader-sentence-tap.test.ts",
+  "src/lib/sentence-step.test.ts",
   "src/lib/catalog-walk.test.ts",
   "src/lib/reader-tap-stress.test.ts",
   "src/lib/spine-nav.test.ts",

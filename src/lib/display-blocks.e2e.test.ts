@@ -254,9 +254,26 @@ test(
         x: Math.round(spot.left + spot.width * 0.72),
         y: Math.round(spot.top + spot.height * 0.42),
       };
+      const beforeTap = await page.evaluate(() => {
+        const frame = document.querySelector(".reader-frame");
+        return {
+          index: frame?.getAttribute("data-breath-index") ?? "0",
+          cursor: frame?.getAttribute("data-sentence-at") ?? "0",
+          count: frame?.getAttribute("data-sentence-count") ?? "1",
+        };
+      });
       await page.touchscreen.tap(forward.x, forward.y);
       await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "1",
+        (prev) => {
+          const frame = document.querySelector(".reader-frame");
+          const index = frame?.getAttribute("data-breath-index");
+          const cursor = frame?.getAttribute("data-sentence-at");
+          const count = Number(prev.count);
+          const at = Number(prev.cursor);
+          if (at + 1 < count) return index === prev.index && cursor === String(at + 1);
+          return index === String(Number(prev.index) + 1) && cursor === "0";
+        },
+        beforeTap,
         { timeout: 4000 },
       );
       const back = {
@@ -265,12 +282,28 @@ test(
       };
       const again = await column(page);
       assert.ok(again);
+      const beforeBack = await page.evaluate(() => {
+        const frame = document.querySelector(".reader-frame");
+        return {
+          index: frame?.getAttribute("data-breath-index") ?? "0",
+          cursor: frame?.getAttribute("data-sentence-at") ?? "0",
+          count: frame?.getAttribute("data-sentence-count") ?? "1",
+        };
+      });
       await page.touchscreen.tap(
         Math.round(again.left + Math.max(12, again.width * 0.12)),
         Math.round(again.top + again.height * 0.42),
       );
       await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "0",
+        (prev) => {
+          const frame = document.querySelector(".reader-frame");
+          const index = frame?.getAttribute("data-breath-index");
+          const cursor = frame?.getAttribute("data-sentence-at");
+          const at = Number(prev.cursor);
+          if (at > 0) return index === prev.index && cursor === String(at - 1);
+          return index === String(Number(prev.index) - 1);
+        },
+        beforeBack,
         { timeout: 4000 },
       );
       assert.equal(back.x > 0, true);
