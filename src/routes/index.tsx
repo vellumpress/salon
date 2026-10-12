@@ -17,6 +17,7 @@ import { useVisitSeed } from "@/lib/use-visit-seed";
 import { prefetchOpening } from "@/lib/prefetch-work";
 import { Wordmark } from "@/components/wordmark";
 import { HomeImport } from "@/components/home-import";
+import { HomeScreenHint } from "@/components/home-screen-hint";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
@@ -120,6 +121,8 @@ function Home() {
         <ResumeLink />
         <YouFriendsMark showScore={hydrated && !showResume} />
       </div>
+
+      {searching ? null : <HomeScreenHint />}
 
       {searching ? (
         <ShelfSearchHits matches={matches} query={query} />
