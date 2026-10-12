@@ -1628,6 +1628,22 @@ html[data-status-motion="1"] .status-bar-fill::before {
   hyphens: manual;
 }
 
+/* Long paragraphs are several blocks. The gap is between blocks, not inside one. */
+.breath-now {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.breath-block {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: manual;
+}
+
 .breath-slot {
   position: relative;
   z-index: 1;
