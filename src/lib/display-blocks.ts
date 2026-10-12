@@ -4,6 +4,21 @@ import { sentenceSpans } from "./sentences.ts";
 /** A displayed block may be this fraction of the viewport, and no taller. */
 export const VIEWPORT_BLOCK_FRACTION = 1 / 3;
 
+/** Phone column used before the live face has been measured. */
+export const PHONE_VIEWPORT = 844;
+export const PHONE_CHARS_PER_LINE = 29.5;
+export const PHONE_LINE_PX = 29;
+
+export function phoneBlockLimit(viewport = PHONE_VIEWPORT) {
+  return Math.floor(viewport * VIEWPORT_BLOCK_FRACTION);
+}
+
+/** Character estimate of a block on a phone, in pixels. */
+export function phoneLineMeasure(text: string) {
+  const chars = text.replace(/\s+/g, " ").trim().length || 1;
+  return Math.ceil(chars / PHONE_CHARS_PER_LINE) * PHONE_LINE_PX;
+}
+
 export type DisplayBlock = {
   text: string;
   sentences: number;
@@ -50,11 +65,12 @@ export type DisplayMetrics = {
 
 /**
  * Group sentence slices so each block measures within `limitPx`.
- * A sentence that is taller on its own stays whole, and so does a quote
- * that never closes. Verse is one block even when it holds many sentences.
- * Prose slices joined together are the original string. A play speech
- * repeats "Speaker:" on every block after the first; the slices underneath
- * still join back to the original.
+ * A sentence that is taller on its own stays whole. A quotation stays
+ * whole too, even when that one block is taller than the third: a cut
+ * inside it would take the words out of the speech. Verse is one block
+ * even when it holds many sentences. Prose slices joined together are
+ * the original string. A play speech repeats "Speaker:" on every block
+ * after the first; the slices underneath still join back to the original.
  */
 export function packDisplayBlocks(
   text: string,
@@ -106,21 +122,11 @@ function rawSlice(
 }
 
 /**
- * Before the column has a real height, show one sentence per block.
- * The whole paragraph as one block is what fills the phone.
+ * Before the column has a real height, pack with the phone estimate.
+ * One block per sentence is what flashes and then jumps once the face is measured.
  */
 export function unmeasuredBlocks(text: string, kind: DisplayKind = "prose"): DisplayBlock[] {
-  if (!text) return [{ text, sentences: 1 }];
-  if (kind === "verse") return [{ text, sentences: 1 }];
-  const speaker = kind === "speech" ? speakerPrefix(text) : null;
-  const spans = sentenceSpans(text);
-  if (spans.length <= 1) return [{ text, sentences: 1 }];
-  const raws = spans.map((span) => text.slice(span.start, span.end));
-  if (raws.join("") !== text) return [{ text, sentences: Math.max(1, spans.length) }];
-  return raws.map((raw, index) => ({
-    text: showBlock(raw, speaker, index === 0),
-    sentences: 1,
-  }));
+  return packDisplayBlocks(text, phoneLineMeasure, phoneBlockLimit(), kind);
 }
 
 let probe: HTMLParagraphElement | null = null;

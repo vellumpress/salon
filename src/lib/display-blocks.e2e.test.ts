@@ -4,6 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { isLocalBound } from "./catalog/full-pdf.ts";
+import { unmeasuredBlocks } from "./display-blocks.ts";
 import { sentenceSpans } from "./sentences.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 
@@ -131,16 +132,17 @@ async function openAt(page: Page, id: string, at: number) {
   throw new Error(`${id} @ ${at} (${JSON.stringify(state)}): ${message}`);
 }
 
-async function blocks(page: Page): Promise<BlockSpot[]> {
-  return page.evaluate(() => {
+async function blocks(page: Page, root = ""): Promise<BlockSpot[]> {
+  return page.evaluate((selector) => {
     const viewport = window.visualViewport?.height || window.innerHeight;
-    return [...document.querySelectorAll<HTMLElement>("[data-block-sentences]")].map((node) => ({
+    const host = selector ? document.querySelector(selector) : document;
+    return [...(host?.querySelectorAll<HTMLElement>("[data-block-sentences]") ?? [])].map((node) => ({
       sentences: Number(node.getAttribute("data-block-sentences")),
       height: node.offsetHeight,
       viewport,
       text: node.textContent ?? "",
     }));
-  });
+  }, root);
 }
 
 function assertBlockHeights(spots: BlockSpot[], label: string) {
@@ -461,7 +463,7 @@ test(
         },
         version: 2,
       });
-      async function openBlind(url: string, index: string) {
+      async function openBlind(url: string, index: string, text: string) {
         const context = await browser.newContext({
           viewport: PHONE_VIEW,
           screen: PHONE_VIEW,
@@ -512,15 +514,22 @@ test(
           index,
           { timeout: 30_000 },
         );
-        const blind = await blocks(page);
+        const blind = await blocks(page, ".breath-now");
+        const packed = unmeasuredBlocks(text);
         assert.ok(blind.length > 0, `${url} painted no blocks while the viewport was 0`);
-        for (const spot of blind) {
-          assert.equal(
-            spot.sentences,
-            1,
-            `${url} grouped ${spot.sentences} sentences before the viewport had a height`,
+        assert.deepEqual(
+          blind.map((spot) => spot.sentences),
+          packed.map((block) => block.sentences),
+          `${url} first paint did not use the phone packing`,
+        );
+        if (index === "0") {
+          assert.deepEqual(
+            blind.map((spot) => spot.sentences),
+            [2, 1, 1, 3, 1],
+            `${url} flashed one block per sentence`,
           );
         }
+        for (const spot of blind) assert.doesNotMatch(spot.text, /^\s/);
         await page.evaluate(() => {
           Object.defineProperty(window, "innerHeight", { configurable: true, get: () => 844 });
           const visual = window.visualViewport;
@@ -536,8 +545,9 @@ test(
         assert.ok(shown.length > 1, `${url} stayed one block after the viewport arrived`);
         await context.close();
       }
-      await openBlind(`${ORIGIN}/salon/read/moby-dick`, "28");
-      await openBlind(`${ORIGIN}/salon/read/moby-dick?at=0`, "0");
+      const moby = loadWork("moby-dick");
+      await openBlind(`${ORIGIN}/salon/read/moby-dick`, "28", moby.breaths[28]?.text ?? "");
+      await openBlind(`${ORIGIN}/salon/read/moby-dick?at=0`, "0", moby.breaths[0]?.text ?? "");
     } finally {
       await browser.close();
       await stop();

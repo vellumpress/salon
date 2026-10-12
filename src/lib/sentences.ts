@@ -267,8 +267,11 @@ function closesOpenQuote(state: QuoteState, text: string, index: number) {
  * the same characters; nothing is rewritten, dropped, or re-hyphenated.
  * A break needs the same abbreviation and capital-after-period rules as
  * the importer, and it is refused while a double or single quote is still
- * open. The space after a break stays on the earlier slice, so the next
- * one does not start with a blank.
+ * open, including a single quote nested inside a double. A quotation that
+ * runs past a third of the screen stays one slice: cutting it would take
+ * the line out of the speech. Mr., Mrs., Dr., and St. are abbreviations
+ * even when a quote mark sits on the front of the word. The space after a
+ * break stays on the earlier slice, so the next one does not start with a blank.
  */
 export function sentenceSpans(text: string): SentenceSpan[] {
   if (!text) return [{ start: 0, end: 0 }];
@@ -295,7 +298,9 @@ export function sentenceSpans(text: string): SentenceSpan[] {
         const before = text.slice(start, end);
         const word = (before.match(/(\S+)$/) ?? [])[1] ?? "";
         const follows = after.length === 0 || /^\s+($|[A-Z“"‘(\[]|\d)/.test(after);
-        if (!isAbbreviation(word, after) && follows && before.trim().length > 1) {
+        // A leading quote is not part of the abbreviation: “Mr. is still Mr.
+        // The importer keeps the older check, so stored breaths do not move.
+        if (!isAbbreviation(word.replace(/^["“”'‘’]+/, ""), after) && follows && before.trim().length > 1) {
           while (end < text.length && /\s/.test(text[end]!)) end += 1;
           spans.push({ start, end });
           for (let k = i; k < end; k += 1) feedQuote(state, text, k);
@@ -318,6 +323,77 @@ export function sentenceSpans(text: string): SentenceSpan[] {
   }
   if (spans.length === 0) spans.push({ start: 0, end: text.length });
   return spans;
+}
+
+function freshQuotes(): QuoteState {
+  return {
+    curlyDouble: false,
+    curlySingle: false,
+    straightDouble: false,
+    straightSingle: false,
+  };
+}
+
+/**
+ * Display breaks that still fall while a quote is open. The end of a
+ * quotation is not one of these: closers that ride with the punctuation
+ * are already inside the earlier slice.
+ */
+export function interiorQuoteBreaks(text: string): number {
+  const spans = sentenceSpans(text);
+  if (spans.length <= 1) return 0;
+  const bounds = new Set<number>();
+  for (let i = 0; i < spans.length - 1; i += 1) bounds.add(spans[i]!.end);
+  const state = freshQuotes();
+  let count = 0;
+  for (let i = 0; i < text.length; i += 1) {
+    if (bounds.has(i) && quotesOpen(state)) count += 1;
+    feedQuote(state, text, i);
+  }
+  if (bounds.has(text.length) && quotesOpen(state)) count += 1;
+  return count;
+}
+
+/**
+ * Breaks the older splitter would make while a quote is still open.
+ * That splitter is `.!?…` plus a capital, and it ignores quotes. A closer
+ * that belongs to the punctuation is consumed before the count, so the
+ * end of a quotation is not an interior break.
+ */
+export function legacyInteriorQuoteBreaks(text: string): number {
+  if (!text) return 0;
+  const re = /[.!?…]["”']*/g;
+  const state = freshQuotes();
+  let count = 0;
+  let start = 0;
+  let cursor = 0;
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(text))) {
+    const stop = match.index;
+    while (cursor < stop) {
+      feedQuote(state, text, cursor);
+      cursor += 1;
+    }
+    const end = stop + match[0].length;
+    const before = text.slice(start, end);
+    const after = text.slice(end);
+    const word = (before.match(/(\S+)$/) ?? [])[1] ?? "";
+    const follows = after.length === 0 || /^\s+($|[A-Z“"‘(\[]|\d)/.test(after);
+    const breaks = !isAbbreviation(word, after) && follows && before.trim().length > 1;
+    const probe = { ...state };
+    let closeAt = stop + 1;
+    while (closeAt < text.length && closesOpenQuote(probe, text, closeAt)) {
+      feedQuote(probe, text, closeAt);
+      closeAt += 1;
+    }
+    if (breaks && quotesOpen(probe)) count += 1;
+    if (breaks) start = end;
+    while (cursor < end) {
+      feedQuote(state, text, cursor);
+      cursor += 1;
+    }
+  }
+  return count;
 }
 
 function isNoise(text: string) {
