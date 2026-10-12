@@ -7,7 +7,7 @@
 import assert from "node:assert/strict";
 import { createServer } from "node:http";
 import { chromium } from "playwright";
-import { renderShellServiceWorker } from "./ssr-nul.mjs";
+import { renderShellServiceWorker, SHELL_ASSET_CACHE_NAME, SHELL_CACHE_NAME } from "./ssr-nul.mjs";
 
 const PORT = 4178;
 const ORIGIN = `http://127.0.0.1:${PORT}`;
@@ -133,9 +133,9 @@ try {
   await page.waitForFunction(() => navigator.serviceWorker.controller, null, { timeout: 10000 });
   await page.goto(`${ORIGIN}/salon/#warm`, { waitUntil: "domcontentloaded", timeout: 20000 });
   await page.waitForFunction(
-    async () => {
-      const shellCache = await caches.open("tbr-shell-v3");
-      const assetCache = await caches.open("tbr-assets");
+    async ({ shellName, assetName }) => {
+      const shellCache = await caches.open(shellName);
+      const assetCache = await caches.open(assetName);
       const shellKeys = await shellCache.keys();
       const assetKeys = await assetCache.keys();
       return (
@@ -143,7 +143,7 @@ try {
         assetKeys.some((key) => key.url.includes("index-AAAA.js"))
       );
     },
-    null,
+    { shellName: SHELL_CACHE_NAME, assetName: SHELL_ASSET_CACHE_NAME },
     { timeout: 10000 },
   );
   await page.waitForFunction(() => (document.body.textContent || "").includes("warm-a"), null, {
@@ -167,8 +167,8 @@ try {
   assert.equal(body.includes("Something went wrong"), false);
   assert.notEqual(body, "Reload");
 
-  const poisoned = await page.evaluate(async () => {
-    const cache = await caches.open("tbr-assets");
+  const poisoned = await page.evaluate(async (assetName) => {
+    const cache = await caches.open(assetName);
     await cache.put(
       `${location.origin}/salon/assets/route-BBBB.js`,
       new Response("<!DOCTYPE html><title>stale</title>", {
@@ -182,7 +182,7 @@ try {
       type: res.headers.get("content-type") || "",
       text: await res.text(),
     };
-  });
+  }, SHELL_ASSET_CACHE_NAME);
   assert.equal(poisoned.status, 200);
   assert.equal(poisoned.type.includes("text/html"), false);
   assert.match(poisoned.text, /Build B/);

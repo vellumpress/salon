@@ -168,18 +168,18 @@ export function stripNulBytesInHtmlTree(destDir) {
 
 export const SHELL_CACHE_ATTR = "data-shell-network";
 /**
- * Pages shell cache. v3 starts empty. `tbr-shell-v2` is the offline fallback
- * until a v3 document commits, then it is deleted. Older names (`tbr-shell`,
- * `vellum-shell`) are dropped on activate.
+ * Pages shell cache. v4 starts empty. Activate deletes v3 and every older
+ * shell name (`tbr-shell`, `vellum-shell`) so a phone cannot keep painting
+ * the previous document.
  */
-export const SHELL_CACHE_NAME = "tbr-shell-v3";
+export const SHELL_CACHE_NAME = "tbr-shell-v4";
 /**
- * Hashed js/css only. Book JSON stays on the network so a long novel cannot
- * evict the shell. The activate handler must not delete this cache.
+ * Hashed js/css for this build. Install fills this cache. The previous
+ * unversioned `tbr-assets` cache is deleted on activate.
  */
-export const SHELL_ASSET_CACHE_NAME = "tbr-assets";
-/** Previous shell cache. Kept as an offline fallback until a v3 shell commits. */
-export const RETIRED_SHELL_CACHE_NAME = "tbr-shell-v2";
+export const SHELL_ASSET_CACHE_NAME = "tbr-assets-v4";
+/** Previous shell cache. Readable only until activate deletes it. */
+export const RETIRED_SHELL_CACHE_NAME = "tbr-shell-v3";
 /**
  * Icons, manifest, favicon, and font files. Not hashed, so they update in
  * place (stale-while-revalidate). Activate must not delete this cache.
@@ -258,7 +258,7 @@ export function renderShellServiceWorker(manifest = {}) {
   const boot = JSON.stringify(bootList);
   const extras = JSON.stringify(Array.isArray(manifest.extras) ? manifest.extras : []);
   const fontFiles = JSON.stringify(FONT_FILES);
-  return `/* tbr shell: cached HTML for repeat launches; hashed js/css are cache-first. A new deploy swaps the shell when its asset manifest differs. Navigations never reject: cached shell, then retired shell, then an offline page. */
+  return `/* tbr shell: cached HTML for repeat launches; hashed js/css are cache-first. A new deploy swaps the shell when its asset manifest differs. Activate deletes previous shell and asset caches. Navigations never reject: cached shell, then a previous shell if it is still stored, then an offline page. */
 var SHELL = "${SHELL_CACHE_NAME}";
 var ASSETS = "${SHELL_ASSET_CACHE_NAME}";
 var RETIRED = "${RETIRED_SHELL_CACHE_NAME}";
@@ -946,10 +946,12 @@ self.addEventListener("activate", function (event) {
   var current = SHELL;
   var assets = ASSETS;
   var stat = STATIC;
+  var droppedLegacy = false;
   event.waitUntil(
     caches.keys().then(function (keys) {
       return Promise.all(keys.map(function (key) {
-        if (key === current || key === assets || key === RETIRED || key === stat) return Promise.resolve();
+        if (key === current || key === assets || key === stat) return Promise.resolve();
+        droppedLegacy = true;
         return caches.delete(key);
       }));
     }).then(function () {
@@ -959,10 +961,11 @@ self.addEventListener("activate", function (event) {
     }).then(function () {
       return shellBehindWorker();
     }).then(function (stale) {
-      // The cached document is an older build. Open phones are still running
-      // that copy until something navigates them. Do it here so they publish
-      // the book they already have, without a manual refresh.
-      if (stale) return reloadOpenClients();
+      // Offline: leave the open page where it is. Online: a previous cache,
+      // or a shell whose assets are behind this worker, reloads the open
+      // page into this build. The saved place is outside these caches.
+      if (self.navigator && self.navigator.onLine === false) return;
+      if (stale || droppedLegacy) return reloadOpenClients();
     }),
   );
   // Catalog fill keeps the worker busy for a long time. It must not extend
@@ -1139,7 +1142,7 @@ export function renderBootWatchScript() {
 }
 
 export function renderShellNetworkHints() {
-  return `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">${renderBootWatchScript()}<script ${SHELL_CACHE_ATTR} type="module">if("serviceWorker"in navigator){navigator.serviceWorker.addEventListener("controllerchange",function(){var now=Date.now();try{var at=parseInt(sessionStorage.getItem("tbr-sw-reload")||"0",10);if(at&&now-at<20000)return;sessionStorage.setItem("tbr-sw-reload",String(now))}catch(e){return}location.reload()});navigator.serviceWorker.addEventListener("message",function(ev){var data=ev.data||{};if(data.type==="shell-reload"){var now=Date.now();try{var at=parseInt(sessionStorage.getItem("tbr-sw-reload")||"0",10);if(at&&now-at<20000)return;sessionStorage.setItem("tbr-sw-reload",String(now))}catch(e){return}location.reload()}});navigator.serviceWorker.register("/salon/sw.js",{scope:"/salon/",updateViaCache:"none"}).then(function(reg){function collect(){var urls=[];var seen={};function add(href){if(!href||href.indexOf("/salon/assets/")===-1||seen[href])return;seen[href]=1;urls.push(href)}var nodes=document.querySelectorAll("script[src],link[rel=stylesheet][href],link[rel=modulepreload][href]");for(var i=0;i<nodes.length;i++)add(nodes[i].src||nodes[i].href||"");if(window.performance&&performance.getEntriesByType){var entries=performance.getEntriesByType("resource");for(var j=0;j<entries.length;j++)add(entries[j].name||"")}return urls}function send(){var worker=reg.active;if(!worker)return;worker.postMessage({type:"warm-assets",urls:collect()})}function whenReady(){if(reg.active)return Promise.resolve();var sw=reg.installing||reg.waiting;if(!sw)return Promise.resolve();return new Promise(function(resolve){sw.addEventListener("statechange",function(){if(sw.state==="activated")resolve()})})}function kick(){whenReady().then(send)}function claimUpdate(){try{reg.update()}catch(e){}if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"});var installing=reg.installing;if(installing)installing.addEventListener("statechange",function(){if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"})})}claimUpdate();if(document.readyState==="complete")kick();else window.addEventListener("load",kick)}).catch(function(){})}</script>`;
+  return `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">${renderBootWatchScript()}<script ${SHELL_CACHE_ATTR} type="module">if("serviceWorker"in navigator){navigator.serviceWorker.addEventListener("controllerchange",function(){var now=Date.now();try{var at=parseInt(sessionStorage.getItem("tbr-sw-reload")||"0",10);if(at&&now-at<20000)return;sessionStorage.setItem("tbr-sw-reload",String(now))}catch(e){return}location.reload()});navigator.serviceWorker.addEventListener("message",function(ev){var data=ev.data||{};if(data.type==="shell-reload"){var now=Date.now();try{var at=parseInt(sessionStorage.getItem("tbr-sw-reload")||"0",10);if(at&&now-at<20000)return;sessionStorage.setItem("tbr-sw-reload",String(now))}catch(e){return}location.reload()}});navigator.serviceWorker.register("/salon/sw.js",{scope:"/salon/",updateViaCache:"none"}).then(function(reg){function collect(){var urls=[];var seen={};function add(href){if(!href||href.indexOf("/salon/assets/")===-1||seen[href])return;seen[href]=1;urls.push(href)}var nodes=document.querySelectorAll("script[src],link[rel=stylesheet][href],link[rel=modulepreload][href]");for(var i=0;i<nodes.length;i++)add(nodes[i].src||nodes[i].href||"");if(window.performance&&performance.getEntriesByType){var entries=performance.getEntriesByType("resource");for(var j=0;j<entries.length;j++)add(entries[j].name||"")}return urls}function send(){var worker=reg.active;if(!worker)return;worker.postMessage({type:"warm-assets",urls:collect()})}function whenReady(){if(reg.active)return Promise.resolve();var sw=reg.installing||reg.waiting;if(!sw)return Promise.resolve();return new Promise(function(resolve){sw.addEventListener("statechange",function(){if(sw.state==="activated")resolve()})})}function kick(){whenReady().then(send)}function claimUpdate(){try{reg.update()}catch(e){}if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"});var installing=reg.installing;if(installing)installing.addEventListener("statechange",function(){if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"})})}claimUpdate();function onFore(){if(document.visibilityState==="hidden")return;claimUpdate()}document.addEventListener("visibilitychange",onFore);window.addEventListener("pageshow",onFore);if(document.readyState==="complete")kick();else window.addEventListener("load",kick)}).catch(function(){})}</script>`;
 }
 
 /** @param {string} html */

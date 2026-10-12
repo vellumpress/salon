@@ -1,8 +1,10 @@
 /**
  * Old phones keep the previous JavaScript until the service worker that
- * controls them is replaced. Ask for that check on every boot. Reload only
- * when a worker was already in charge and a newer one takes over, so the
- * first install does not kick a reader out of a sit.
+ * controls them is replaced. Ask for that check on every launch, and again
+ * when the app comes back to the foreground mid-sit. Reload when a worker
+ * was already in charge and a newer one takes over, or when the open
+ * document's entry script is behind the one on the network. The saved place
+ * stays in local storage.
  */
 
 import { isOfflineNow } from "./chunk-reload.ts";
@@ -32,6 +34,34 @@ export function markWorkerReload(storage: SwReloadStorage, now = Date.now()) {
   } catch {
     /* private mode */
   }
+}
+
+/** `index-AbCdEf12.js` from a script URL or an HTML shell. */
+export function shellEntryName(value: string): string | null {
+  const match = value.match(/index-[A-Za-z0-9_-]{8}\.js/);
+  return match ? match[0] : null;
+}
+
+export function shellEntryDiffers(runningSrc: string, html: string): boolean {
+  const live = shellEntryName(html);
+  const running = shellEntryName(runningSrc);
+  if (!live || !running) return false;
+  return live !== running;
+}
+
+/** Keep a Pages `?/path` query intact while adding the fresh-shell flag. */
+export function freshShellHref(href: string, now: number): string {
+  const url = new URL(href);
+  if (url.search.length > 1 && url.search.charAt(1) === "/") {
+    const parts = url.search
+      .slice(1)
+      .split("&")
+      .filter((part) => part && !part.startsWith("__fresh="));
+    parts.push(`__fresh=${now}`);
+    return `${url.origin}${url.pathname}?${parts.join("&")}${url.hash}`;
+  }
+  url.searchParams.set("__fresh", String(now));
+  return url.href;
 }
 
 let listening = false;
@@ -79,4 +109,48 @@ export async function nudgeServiceWorker(): Promise<void> {
   if (hadController && navigator.serviceWorker.controller && navigator.serviceWorker.controller !== before) {
     reloadForNewWorker();
   }
+}
+
+async function reloadIfDocumentIsStale(): Promise<void> {
+  if (typeof document === "undefined" || typeof fetch !== "function") return;
+  if (isOfflineNow()) return;
+  const running =
+    document.querySelector("script[type='module'][src*='/assets/index-']")?.getAttribute("src") ||
+    "";
+  let html = "";
+  try {
+    const res = await fetch("/salon/", { cache: "no-store" });
+    if (!res.ok) return;
+    html = await res.text();
+  } catch {
+    return;
+  }
+  if (!shellEntryDiffers(running, html)) return;
+  let storage: SwReloadStorage;
+  try {
+    storage = sessionStorage;
+  } catch {
+    return;
+  }
+  if (workerReloadBlocked(storage)) return;
+  markWorkerReload(storage);
+  const next = freshShellHref(window.location.href, Date.now());
+  if (next === window.location.href) return;
+  window.location.replace(next);
+}
+
+let watching = false;
+
+export function watchShellUpdates(): void {
+  if (watching || typeof window === "undefined" || typeof document === "undefined") return;
+  watching = true;
+  const kick = () => {
+    void nudgeServiceWorker();
+    void reloadIfDocumentIsStale();
+  };
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") kick();
+  });
+  window.addEventListener("pageshow", kick);
+  kick();
 }
