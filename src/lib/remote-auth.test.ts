@@ -108,6 +108,9 @@ test("sign-in offers forgot password and the reset pages call Supabase", () => {
   assert.match(login, /type-mark/);
   assert.doesNotMatch(login, /type-title/);
   assert.match(login, /Pick an @name once/);
+  assert.doesNotMatch(login, /Staff desk/);
+  assert.match(login, /door === "staff"/);
+  assert.match(login, /id="staff"/);
   assert.match(forgot, /authReturnUrl\("\/reset-password"\)/);
   assert.match(form, /to="\/forgot-password"/);
   assert.match(forgot, /resetPasswordForEmail/);
