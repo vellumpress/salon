@@ -2851,7 +2851,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.ok(at > next.indexOf("all-quiet-on-the-western-front"), `${id} follows All Quiet on Next`);
     assert.ok(at > prev, `${id} follows BATCH-9 on Next`);
     prev = at;
-    const sleepAt = sleep.workIds.indexOf(id);
+    const sleepAt: number = sleep.workIds.indexOf(id);
     // PITCHES-1: a horror ending leaves Before sleep. The bind stays on Next.
     if (id === "black-spirits-and-white-a-book-of-ghost-stories") {
       assert.equal(sleepAt, -1, `${id} leaves Before sleep`);
