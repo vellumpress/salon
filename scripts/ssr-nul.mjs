@@ -570,8 +570,15 @@ function shellBehindWorker() {
     return false;
   }).catch(function () { return false; });
 }
-function reloadOpenClients() {
+function reloadOpenClients(attempt) {
+  var n = attempt || 0;
   return self.clients.matchAll({ type: "window", includeUncontrolled: true }).then(function (list) {
+    // claim() can report no windows for a moment. A home-screen page stays
+    // on the previous script if that empty list is the only check.
+    if (!list || !list.length) {
+      if (n < 5) setTimeout(function () { reloadOpenClients(n + 1); }, 80 * (n + 1));
+      return;
+    }
     var now = Date.now();
     return Promise.all(list.map(function (client) {
       if (!client) return Promise.resolve();
@@ -588,8 +595,13 @@ function reloadOpenClients() {
         return client.navigate(url.origin + url.pathname + url.hash);
       }
       reloadedClients[client.id] = now;
-      if (!client.navigate) return Promise.resolve();
-      return client.navigate(withFreshParam(url.href, now));
+      if (!client.navigate) {
+        try { client.postMessage({ type: "shell-reload" }); } catch (err) {}
+        return Promise.resolve();
+      }
+      return client.navigate(withFreshParam(url.href, now)).catch(function () {
+        try { client.postMessage({ type: "shell-reload" }); } catch (err) {}
+      });
     }));
   }).catch(function () {});
 }
@@ -1127,7 +1139,7 @@ export function renderBootWatchScript() {
 }
 
 export function renderShellNetworkHints() {
-  return `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">${renderBootWatchScript()}<script ${SHELL_CACHE_ATTR} type="module">if("serviceWorker"in navigator){navigator.serviceWorker.register("/salon/sw.js",{scope:"/salon/",updateViaCache:"none"}).then(function(reg){function collect(){var urls=[];var seen={};function add(href){if(!href||href.indexOf("/salon/assets/")===-1||seen[href])return;seen[href]=1;urls.push(href)}var nodes=document.querySelectorAll("script[src],link[rel=stylesheet][href],link[rel=modulepreload][href]");for(var i=0;i<nodes.length;i++)add(nodes[i].src||nodes[i].href||"");if(window.performance&&performance.getEntriesByType){var entries=performance.getEntriesByType("resource");for(var j=0;j<entries.length;j++)add(entries[j].name||"")}return urls}function send(){var worker=reg.active;if(!worker)return;worker.postMessage({type:"warm-assets",urls:collect()})}function whenReady(){if(reg.active)return Promise.resolve();var sw=reg.installing||reg.waiting;if(!sw)return Promise.resolve();return new Promise(function(resolve){sw.addEventListener("statechange",function(){if(sw.state==="activated")resolve()})})}function kick(){whenReady().then(send)}function claimUpdate(){try{reg.update()}catch(e){}if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"});var installing=reg.installing;if(installing)installing.addEventListener("statechange",function(){if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"})})}claimUpdate();if(document.readyState==="complete")kick();else window.addEventListener("load",kick)}).catch(function(){})}</script>`;
+  return `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">${renderBootWatchScript()}<script ${SHELL_CACHE_ATTR} type="module">if("serviceWorker"in navigator){navigator.serviceWorker.addEventListener("controllerchange",function(){var now=Date.now();try{var at=parseInt(sessionStorage.getItem("tbr-sw-reload")||"0",10);if(at&&now-at<20000)return;sessionStorage.setItem("tbr-sw-reload",String(now))}catch(e){return}location.reload()});navigator.serviceWorker.addEventListener("message",function(ev){var data=ev.data||{};if(data.type==="shell-reload"){var now=Date.now();try{var at=parseInt(sessionStorage.getItem("tbr-sw-reload")||"0",10);if(at&&now-at<20000)return;sessionStorage.setItem("tbr-sw-reload",String(now))}catch(e){return}location.reload()}});navigator.serviceWorker.register("/salon/sw.js",{scope:"/salon/",updateViaCache:"none"}).then(function(reg){function collect(){var urls=[];var seen={};function add(href){if(!href||href.indexOf("/salon/assets/")===-1||seen[href])return;seen[href]=1;urls.push(href)}var nodes=document.querySelectorAll("script[src],link[rel=stylesheet][href],link[rel=modulepreload][href]");for(var i=0;i<nodes.length;i++)add(nodes[i].src||nodes[i].href||"");if(window.performance&&performance.getEntriesByType){var entries=performance.getEntriesByType("resource");for(var j=0;j<entries.length;j++)add(entries[j].name||"")}return urls}function send(){var worker=reg.active;if(!worker)return;worker.postMessage({type:"warm-assets",urls:collect()})}function whenReady(){if(reg.active)return Promise.resolve();var sw=reg.installing||reg.waiting;if(!sw)return Promise.resolve();return new Promise(function(resolve){sw.addEventListener("statechange",function(){if(sw.state==="activated")resolve()})})}function kick(){whenReady().then(send)}function claimUpdate(){try{reg.update()}catch(e){}if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"});var installing=reg.installing;if(installing)installing.addEventListener("statechange",function(){if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"})})}claimUpdate();if(document.readyState==="complete")kick();else window.addEventListener("load",kick)}).catch(function(){})}</script>`;
 }
 
 /** @param {string} html */
