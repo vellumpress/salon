@@ -391,6 +391,19 @@ html.together-compose.together-kb .chat-slot {
   gap: var(--spacing-rule);
 }
 
+/* iPhone Safari, one time, above the search row and the home indicator. */
+.home-screen-hint {
+  position: fixed;
+  z-index: 40;
+  right: 0;
+  bottom: calc(3rem + var(--spacing-chrome));
+  left: 0;
+  border-top: 1px solid var(--color-ink);
+  background: var(--color-yellow);
+  color: var(--color-ink);
+  padding: 1rem;
+}
+
 .cell-mark {
   grid-column: 1 / -1;
   box-sizing: border-box;
