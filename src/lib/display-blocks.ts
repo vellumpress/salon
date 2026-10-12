@@ -9,6 +9,31 @@ export type DisplayBlock = {
   sentences: number;
 };
 
+/** Verse stays one block. A play repeats the speaker on every piece of a speech. */
+export type DisplayKind = "prose" | "verse" | "speech";
+
+const NOT_A_SPEAKER = new Set(["Note", "Notes", "Footnote", "N.B", "N.B.", "P.S", "P.S."]);
+
+/** House form: "Character: dialogue", the same label the plays are bound with. */
+const SPEAKER_LABEL = /^([A-Z][\w’'.-]*(?: [A-Z][\w’'.-]*){0,3}): \S/;
+
+export function displayKindForForm(form: string | undefined | null): DisplayKind {
+  if (form === "poem") return "verse";
+  if (form === "play") return "speech";
+  return "prose";
+}
+
+function speakerPrefix(text: string): string | null {
+  const label = SPEAKER_LABEL.exec(text)?.[1] ?? null;
+  if (!label || NOT_A_SPEAKER.has(label)) return null;
+  return label;
+}
+
+function showBlock(raw: string, speaker: string | null, first: boolean) {
+  if (first || !speaker) return raw;
+  return `${speaker}: ${raw.replace(/^\s+/, "")}`;
+}
+
 export type DisplayMetrics = {
   width: number;
   viewport: number;
@@ -25,60 +50,77 @@ export type DisplayMetrics = {
 
 /**
  * Group sentence slices so each block measures within `limitPx`.
- * A sentence that is taller on its own stays whole.
- * The blocks' text joined together is the original string.
+ * A sentence that is taller on its own stays whole, and so does a quote
+ * that never closes. Verse is one block even when it holds many sentences.
+ * Prose slices joined together are the original string. A play speech
+ * repeats "Speaker:" on every block after the first; the slices underneath
+ * still join back to the original.
  */
 export function packDisplayBlocks(
   text: string,
   measure: (sample: string) => number,
   limitPx: number,
+  kind: DisplayKind = "prose",
 ): DisplayBlock[] {
   if (!text) return [{ text, sentences: 1 }];
+  if (kind === "verse") return [{ text, sentences: 1 }];
+  const speaker = kind === "speech" ? speakerPrefix(text) : null;
   const spans = sentenceSpans(text);
   if (spans.length <= 1 || !(limitPx > 0)) {
-    return [{ text, sentences: Math.max(1, spans.length) }];
+    return [{ text, sentences: 1 }];
   }
-  const blocks: DisplayBlock[] = [];
+  const raws: string[] = [];
+  const counts: number[] = [];
   let from = 0;
   while (from < spans.length) {
     let lo = from;
     let hi = spans.length - 1;
     while (lo < hi) {
       const mid = Math.floor((lo + hi + 1) / 2);
-      const sample = text.slice(spans[from]!.start, spans[mid]!.end);
+      const sample = showBlock(rawSlice(text, spans, from, mid + 1), speaker, from === 0);
       if (measure(sample) <= limitPx) lo = mid;
       else hi = mid - 1;
     }
     const next = lo + 1;
-    const sliceEnd = next < spans.length ? spans[next]!.start : text.length;
-    blocks.push({
-      text: text.slice(spans[from]!.start, sliceEnd),
-      sentences: next - from,
-    });
+    raws.push(rawSlice(text, spans, from, next));
+    counts.push(next - from);
     from = next;
   }
-  if (blocks.map((block) => block.text).join("") !== text) {
-    return [{ text, sentences: spans.length }];
+  if (raws.join("") !== text) {
+    return [{ text, sentences: Math.max(1, spans.length) }];
   }
-  return blocks;
+  return raws.map((raw, index) => ({
+    text: showBlock(raw, speaker, index === 0),
+    sentences: counts[index] ?? 1,
+  }));
+}
+
+function rawSlice(
+  text: string,
+  spans: { start: number; end: number }[],
+  from: number,
+  next: number,
+) {
+  const sliceEnd = next < spans.length ? spans[next]!.start : text.length;
+  return text.slice(spans[from]!.start, sliceEnd);
 }
 
 /**
  * Before the column has a real height, show one sentence per block.
  * The whole paragraph as one block is what fills the phone.
  */
-export function unmeasuredBlocks(text: string): DisplayBlock[] {
+export function unmeasuredBlocks(text: string, kind: DisplayKind = "prose"): DisplayBlock[] {
   if (!text) return [{ text, sentences: 1 }];
+  if (kind === "verse") return [{ text, sentences: 1 }];
+  const speaker = kind === "speech" ? speakerPrefix(text) : null;
   const spans = sentenceSpans(text);
-  if (spans.length <= 1) return [{ text, sentences: Math.max(1, spans.length) }];
-  const blocks = spans.map((span) => ({
-    text: text.slice(span.start, span.end),
+  if (spans.length <= 1) return [{ text, sentences: 1 }];
+  const raws = spans.map((span) => text.slice(span.start, span.end));
+  if (raws.join("") !== text) return [{ text, sentences: Math.max(1, spans.length) }];
+  return raws.map((raw, index) => ({
+    text: showBlock(raw, speaker, index === 0),
     sentences: 1,
   }));
-  if (blocks.map((block) => block.text).join("") !== text) {
-    return [{ text, sentences: spans.length }];
-  }
-  return blocks;
 }
 
 let probe: HTMLParagraphElement | null = null;
@@ -181,15 +223,19 @@ function calibrate(metrics: DisplayMetrics) {
   return value;
 }
 
-export function resolveDisplayBlocks(text: string, metrics: DisplayMetrics): DisplayBlock[] {
-  const key = `${styleKey(metrics)}|${metrics.limit}|${text}`;
+export function resolveDisplayBlocks(
+  text: string,
+  metrics: DisplayMetrics,
+  kind: DisplayKind = "prose",
+): DisplayBlock[] {
+  const key = `${styleKey(metrics)}|${metrics.limit}|${kind}|${text}`;
   const hit = cache.get(key);
   if (hit) return hit;
   const fit = calibrate(metrics);
   const blocks = packDisplayBlocks(text, (sample) => {
     const chars = sample.replace(/\s+/g, " ").trim().length || 1;
     return Math.ceil(chars / fit.chars) * fit.line;
-  }, metrics.limit);
+  }, metrics.limit, kind);
   cache.set(key, blocks);
   if (cache.size > 80) {
     const oldest = cache.keys().next().value;

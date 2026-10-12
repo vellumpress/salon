@@ -191,28 +191,122 @@ function isAbbreviation(word: string, after: string) {
 
 export type SentenceSpan = { start: number; end: number };
 
+type QuoteState = {
+  curlyDouble: boolean;
+  curlySingle: boolean;
+  straightDouble: boolean;
+  straightSingle: boolean;
+};
+
+/** A leading apostrophe, not an opening quote: 'tis, 'em, 'gainst. */
+const LEADING_APOSTROPHE =
+  /^(?:tis|twas|twere|twill|twould|twixt|em|gainst|neath|mid|midst|cause|ere|round)\b/i;
+
+function isLetter(ch: string) {
+  return /\p{L}/u.test(ch);
+}
+
+function quotesOpen(state: QuoteState) {
+  return state.curlyDouble || state.curlySingle || state.straightDouble || state.straightSingle;
+}
+
+function isStraightApostrophe(text: string, index: number) {
+  const prev = index > 0 ? text[index - 1]! : "";
+  const next = index + 1 < text.length ? text[index + 1]! : "";
+  if (isLetter(prev) && isLetter(next)) return true;
+  if (/\d/.test(prev)) return true;
+  if (!isLetter(prev) && LEADING_APOSTROPHE.test(text.slice(index + 1))) return true;
+  return false;
+}
+
+function feedQuote(state: QuoteState, text: string, index: number) {
+  const ch = text[index]!;
+  if (ch === "\u201C") {
+    state.curlyDouble = true;
+    return;
+  }
+  if (ch === "\u201D") {
+    state.curlyDouble = false;
+    return;
+  }
+  if (ch === "\u2018") {
+    state.curlySingle = true;
+    return;
+  }
+  if (ch === "\u2019") {
+    if (state.curlySingle) state.curlySingle = false;
+    return;
+  }
+  if (ch === '"') {
+    const prev = index > 0 ? text[index - 1]! : "";
+    if (/\d/.test(prev)) return;
+    state.straightDouble = !state.straightDouble;
+    return;
+  }
+  if (ch === "'") {
+    if (isStraightApostrophe(text, index)) return;
+    state.straightSingle = !state.straightSingle;
+  }
+}
+
+function isStop(ch: string) {
+  return ch === "." || ch === "!" || ch === "?" || ch === "\u2026";
+}
+
+function closesOpenQuote(state: QuoteState, text: string, index: number) {
+  const ch = text[index]!;
+  if (ch === "\u201D" && state.curlyDouble) return true;
+  if (ch === "\u2019" && state.curlySingle) return true;
+  if (ch === '"' && state.straightDouble) return true;
+  if (ch === "'" && state.straightSingle && !isStraightApostrophe(text, index)) return true;
+  return false;
+}
+
 /**
  * Sentence ranges in the original string. Slices joined back together are
  * the same characters; nothing is rewritten, dropped, or re-hyphenated.
- * Boundaries follow the same abbreviation and capital-after-period rules
- * as the importer.
+ * A break needs the same abbreviation and capital-after-period rules as
+ * the importer, and it is refused while a double or single quote is still
+ * open. The space after a break stays on the earlier slice, so the next
+ * one does not start with a blank.
  */
 export function sentenceSpans(text: string): SentenceSpan[] {
   if (!text) return [{ start: 0, end: 0 }];
   const spans: SentenceSpan[] = [];
-  const re = /[.!?…]["”']*/g;
+  const state: QuoteState = {
+    curlyDouble: false,
+    curlySingle: false,
+    straightDouble: false,
+    straightSingle: false,
+  };
   let start = 0;
-  let match: RegExpExecArray | null;
-  while ((match = re.exec(text))) {
-    const end = match.index + match[0].length;
-    const before = text.slice(start, end);
-    const after = text.slice(end);
-    const word = (before.match(/(\S+)$/) ?? [])[1] ?? "";
-    if (isAbbreviation(word, after)) continue;
-    if (after.length > 0 && !/^\s+($|[A-Z“"‘(\[]|\d)/.test(after)) continue;
-    if (before.trim().length <= 1) continue;
-    spans.push({ start, end });
-    start = end;
+  let i = 0;
+  while (i < text.length) {
+    const ch = text[i]!;
+    if (isStop(ch)) {
+      let end = i + 1;
+      const probe: QuoteState = { ...state };
+      while (end < text.length && closesOpenQuote(probe, text, end)) {
+        feedQuote(probe, text, end);
+        end += 1;
+      }
+      if (!quotesOpen(probe)) {
+        const after = text.slice(end);
+        const before = text.slice(start, end);
+        const word = (before.match(/(\S+)$/) ?? [])[1] ?? "";
+        const follows = after.length === 0 || /^\s+($|[A-Z“"‘(\[]|\d)/.test(after);
+        if (!isAbbreviation(word, after) && follows && before.trim().length > 1) {
+          while (end < text.length && /\s/.test(text[end]!)) end += 1;
+          spans.push({ start, end });
+          for (let k = i; k < end; k += 1) feedQuote(state, text, k);
+          start = end;
+          i = end;
+          continue;
+        }
+      }
+    }
+    feedQuote(state, text, i);
+    i += 1;
   }
   if (start < text.length) {
     const tail = text.slice(start);

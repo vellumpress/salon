@@ -5,6 +5,7 @@ import {
   unmeasuredBlocks,
   VIEWPORT_BLOCK_FRACTION,
   type DisplayBlock,
+  type DisplayKind,
   type DisplayMetrics,
 } from "./display-blocks.ts";
 
@@ -56,6 +57,7 @@ export function useDisplayBlocks(
   sourceRef: RefObject<HTMLElement | null>,
   texts: readonly string[],
   layoutKey: string,
+  kind: DisplayKind = "prose",
 ) {
   const [metrics, setMetrics] = useState<DisplayMetrics | null>(null);
   const [settled, setSettled] = useState("");
@@ -112,10 +114,10 @@ export function useDisplayBlocks(
     if (!metrics) return map;
     for (const text of texts) {
       if (map.has(text)) continue;
-      map.set(text, resolveDisplayBlocks(text, metrics));
+      map.set(text, resolveDisplayBlocks(text, metrics, kind));
     }
     return map;
-  }, [metrics, texts]);
+  }, [metrics, texts, kind]);
 
   useLayoutEffect(() => {
     if (!metrics) return;
@@ -152,7 +154,7 @@ export function useDisplayBlocks(
 
   return {
     blocksFor(text: string): DisplayBlock[] {
-      return packed.get(text) ?? unmeasuredBlocks(text);
+      return packed.get(text) ?? unmeasuredBlocks(text, kind);
     },
     ready: readyKey !== "" && readyKey === settled,
     viewport: metrics?.viewport ?? 0,
