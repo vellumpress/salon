@@ -59,6 +59,7 @@ import {
 import { decodeHostedSit } from "@/lib/hosted-sit";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
+import { displayKindForForm } from "@/lib/display-blocks";
 import { useDisplayBlocks } from "@/lib/use-display-blocks";
 import { FittedCopy } from "@/components/fitted-copy";
 import {
@@ -512,10 +513,12 @@ export function TbrReader({
   }, [breath, lookback, upcoming]);
   const kept = progress?.kept ?? [];
   const isKept = breath ? keptIncludes(kept, breath.id) : false;
+  const displayKind = displayKindForForm(shelfWork(work.id)?.form);
   const display = useDisplayBlocks(
     breathLineRef,
     displayTexts,
     `${together ? 1 : 0}:${centerOn ? 1 : 0}:${isKept ? 1 : 0}:${index}`,
+    displayKind,
   );
   const plane: Fill = planeOf(breath?.sceneId ?? work.id);
   const intro = showPreface ? readerIntro(work) : "";

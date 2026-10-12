@@ -204,15 +204,13 @@ test(
         assertBlockHeights(shown, visit.label);
         const book = loadWork(visit.id).breaths[visit.index]?.text ?? "";
         assert.ok(sentenceSpans(book).length > 1, `${visit.label} is one sentence`);
-        const focus = await page.evaluate(() =>
-          [...document.querySelectorAll(".breath-now .breath-block")]
-            .map((node) => node.textContent ?? "")
-            .join(""),
+        const focus = await page.evaluate(
+          () => document.querySelector(".breath-now .breath-block")?.textContent ?? "",
         );
         const normalized = (value: string) => value.replace(/\s+/g, " ").trim();
         assert.ok(focus.length > 40, `${visit.label} focus was empty`);
         assert.ok(
-          normalized(book).includes(normalized(focus).slice(0, 48)),
+          normalized(book).startsWith(normalized(focus).slice(0, 48)),
           `${visit.label} focus is not the book text`,
         );
         const focusCount = await page.locator(".breath-now .breath-block").count();
