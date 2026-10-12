@@ -74,7 +74,7 @@ function LoginPage() {
   );
   const [error, setError] = useState("");
   const [staffError, setStaffError] = useState("");
-  const [showStaff, setShowStaff] = useState(door === "staff");
+  const showStaff = door === "staff";
   const [leave, setLeave] = useState(false);
   const [hold, setHold] = useState(false);
 
@@ -93,7 +93,6 @@ function LoginPage() {
 
   useEffect(() => {
     if (door !== "staff") return;
-    setShowStaff(true);
     const jump = () => document.getElementById("staff")?.scrollIntoView({ block: "start" });
     jump();
     const id = window.requestAnimationFrame(jump);
@@ -326,15 +325,7 @@ function LoginPage() {
               </p>
             )}
           </>
-        ) : (
-          <button
-            type="button"
-            onClick={() => setShowStaff(true)}
-            className="flex h-12 w-full items-center justify-center border-b border-ink font-sans text-xs uppercase tracking-chrome text-muted"
-          >
-            Staff desk
-          </button>
-        )}
+        ) : null}
       </div>
     </div>
   );
