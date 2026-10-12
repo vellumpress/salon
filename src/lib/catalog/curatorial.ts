@@ -1218,6 +1218,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "marie-claire",
   // Mira Mon 12 Oct 2026 AM CRANFORD — Cranford follows Marie Claire, plain Next. Never Featured, off every Ritual lane.
   "cranford",
+  // Mira Mon 12 Oct 2026 PM ANNALS — Annals of the Parish follows Cranford, Next carefully only (the heads-up is on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (the whole of Chapter I, 1760) is never unwind or before-sleep.
+  "annals-of-the-parish",
 ] as const;
 
 /**
