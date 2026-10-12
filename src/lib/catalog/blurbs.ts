@@ -420,6 +420,8 @@ const BLURBS: Record<string, string> = {
   "marie-claire":
     "A heads-up before you start: the book opens on a mother’s death, seen by her five-year-old daughter, and a drunk father who stands the child on a wine-shop table, where men kiss her and try to make her drink. Later there are a nun’s threats and a blow at the orphanage, a chicken and a pig slaughtered on the page, wolves killing sheep, a little girl badly burned, and more deaths, told quietly.",
   cranford: "In a small English town run almost entirely by genteel ladies, a young visitor keeps a fond and sharp eye on their economies, rivalries and kindnesses.",
+  "annals-of-the-parish":
+    "A heads-up before you start: there are some old Scots words, and brief period language about Irish, Black and Jewish characters.",
   "the-adventures-of-huckleberry-finn":
     "A boy and a man on a raft, heading south through a country that will not let them be.",
   "pride-and-prejudice": "A country dance, a proud man, and the long work of being wrong about someone.",
