@@ -133,6 +133,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "froth": { label: "Madrid", region: "es" },
     "moby-dick": { label: "New York", region: "us" },
     "marie-claire": { label: "Berry", region: "fr" },
+    cranford: { label: "Cranford", region: "gb" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
@@ -612,4 +613,10 @@ test("Sun 11 Oct PM MARIE-CLAIRE place reuses fr: Berry (the opening sit's villa
   assert.ok(REGION_SHAPES.fr?.d, "fr shape");
   assert.deepEqual(placeFor(shelfWork("marie-claire")!), { label: "Berry", region: "fr" });
   assert.equal(CHIP_ONLY_PLACE["marie-claire"], undefined);
+});
+
+test("Mon 12 Oct AM CRANFORD place follows the fictional-town precedent (Coketown, Marygreen, Iping): Cranford on gb; no new region key", () => {
+  assert.ok(REGION_SHAPES.gb?.d, "gb shape");
+  assert.deepEqual(placeFor(shelfWork("cranford")!), { label: "Cranford", region: "gb" });
+  assert.equal(CHIP_ONLY_PLACE["cranford"], undefined);
 });

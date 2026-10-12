@@ -735,6 +735,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "froth": "Spain",
   "moby-dick": "United States",
   "marie-claire": "France",
+  cranford: "United Kingdom",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",
   "the-golden-age": "United Kingdom",
