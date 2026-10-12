@@ -419,6 +419,12 @@ const BLURBS: Record<string, string> = {
   "moby-dick": "A restless young man with a drizzly November in his soul signs on to a Nantucket whaler, under a captain he has yet to meet.",
   "marie-claire":
     "A heads-up before you start: the book opens on a mother’s death, seen by her five-year-old daughter, and a drunk father who stands the child on a wine-shop table, where men kiss her and try to make her drink. Later there are a nun’s threats and a blow at the orphanage, a chicken and a pig slaughtered on the page, wolves killing sheep, a little girl badly burned, and more deaths, told quietly.",
+  "easter":
+    "On the Thursday before Easter the sun is back in the Heyst flat, and Elis, a schoolmaster whose father’s trial has shamed the family, hopes hard luck is tired of them.",
+  "trafalgar":
+    "An old man looks back on his boyhood along the Cadiz waterfront, and on the October day in 1805 when his master, an old sea captain, asks him if he is a brave man.",
+  "the-ballad-of-the-white-horse":
+    "With the Northmen over all of Wessex, King Alfred hides on the island of Athelney, and Mary comes to him by the river with nothing for his comfort.",
   cranford: "In a small English town run almost entirely by genteel ladies, a young visitor keeps a fond and sharp eye on their economies, rivalries and kindnesses.",
   "annals-of-the-parish":
     "A heads-up before you start: there are some old Scots words, and brief period language about Irish, Black and Jewish characters.",

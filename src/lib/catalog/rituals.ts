@@ -175,6 +175,12 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `One convert in three years on Fanua—and the Reverend Timothy Fortune is not flustered. Humility has made him easy-going.`,
   "the-bridge-of-san-luis-rey":
     `Five travellers fall from a Peruvian bridge — Wilder asks whether those lives were accident or intention.`,
+  "easter":
+    `On the Thursday before Easter the sun is back in the Heyst flat, and Elis, a schoolmaster whose father’s trial has shamed the family, hopes hard luck is tired of them.`,
+  "trafalgar":
+    `An old man looks back on his boyhood along the Cadiz waterfront, and on the October day in 1805 when his master, an old sea captain, asks him if he is a brave man.`,
+  "the-ballad-of-the-white-horse":
+    `With the Northmen over all of Wessex, King Alfred hides on the island of Athelney, and Mary comes to him by the river with nothing for his comfort.`,
   quicksand:
     `Eight in the evening, soft gloom, one shaded lamp—Helga Crane sits alone in her Naxos room and will not open the door. Quicksand begins in intentional isolation after a taxing day among an unkind faculty. Nella Larsen’s 1928 novel is the full book — Chapter I through XXV — with Copenhagen ahead.`,
   "attendants-confession":
@@ -2583,7 +2589,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "small-souls": 7,
   "songs-and-satires": 5,
   "tess-of-the-durbervilles": 6,
-  "the-ballad-of-the-white-horse": 5,
+  // Mira Mon 12 Oct 2026 BLURBS-3 — measured from the bound text: Book I, The Vision of the King, 1,742 words not counting the line slashes (9 min).
+  "the-ballad-of-the-white-horse": 9,
   "the-book-of-wonder": 9,
   "the-colonel-s-dream": 5,
   "the-comedienne": 6,
@@ -2798,9 +2805,11 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "lucky-pehr": 5,
   "the-dream-play": 5,
   "the-father": 5,
-  "easter": 5,
+  // Mira Mon 12 Oct 2026 BLURBS-3 — measured: Act I, 6,081 words (30 min).
+  "easter": 30,
   "the-inferno": 5,
-  "trafalgar": 5,
+  // Mira Mon 12 Oct 2026 BLURBS-3 — measured: Chapter I, 2,736 words (14 min).
+  "trafalgar": 14,
   "saragossa": 5,
   "leon-roch": 5,
   "yiddish-short-stories": 5,
