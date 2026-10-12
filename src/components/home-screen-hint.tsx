@@ -35,11 +35,13 @@ export function HomeScreenHint() {
 
   return (
     <aside className="home-screen-hint" aria-label="Add to Home Screen">
-      <p className="type-lede">Keep tbr on your home screen</p>
-      <p className="type-pitch mt-2">Tap Share, then Add to Home Screen.</p>
+      <div className="min-w-0">
+        <p className="type-pitch">Keep tbr on your home screen</p>
+        <p className="type-pitch">Tap Share, then Add to Home Screen.</p>
+      </div>
       <button
         type="button"
-        className="mt-4 flex h-12 w-full items-center justify-center bg-ink font-sans text-sm text-paper"
+        className="flex h-12 shrink-0 items-center justify-center bg-ink px-4 font-sans text-sm text-paper"
         onClick={() => {
           let storage: Storage | null = null;
           try {

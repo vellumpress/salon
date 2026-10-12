@@ -391,17 +391,24 @@ html.together-compose.together-kb .chat-slot {
   gap: var(--spacing-rule);
 }
 
-/* iPhone Safari, one time, above the search row and the home indicator. */
+/* iPhone Safari, one time, a shelf row under the wordmark. */
 .home-screen-hint {
-  position: fixed;
-  z-index: 40;
-  right: 0;
-  bottom: calc(3rem + var(--spacing-chrome));
-  left: 0;
-  border-top: 1px solid var(--color-ink);
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   background: var(--color-yellow);
   color: var(--color-ink);
-  padding: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.board.board-doors:has(.home-screen-hint) {
+  grid-template-rows: var(--mark-row, 3rem) auto minmax(8rem, 1fr) minmax(8rem, 1fr) auto auto auto;
+}
+
+.board.board-doors.has-resume:has(.home-screen-hint) {
+  grid-template-rows: var(--mark-row, 3rem) auto minmax(8.25rem, auto) minmax(6.5rem, 1fr) minmax(6.5rem, 1fr) auto auto auto;
 }
 
 .cell-mark {
@@ -1483,6 +1490,12 @@ html[data-status-motion="1"] .status-bar-fill::before {
   }
   .board.board-doors.has-resume {
     grid-template-rows: var(--mark-row, 3rem) minmax(10rem, auto) minmax(12rem, 1fr) minmax(12rem, 1fr) auto auto auto;
+  }
+  .board.board-doors:has(.home-screen-hint) {
+    grid-template-rows: var(--mark-row, 3rem) auto minmax(12rem, 1fr) minmax(12rem, 1fr) auto auto auto;
+  }
+  .board.board-doors.has-resume:has(.home-screen-hint) {
+    grid-template-rows: var(--mark-row, 3rem) auto minmax(10rem, auto) minmax(10rem, 1fr) minmax(10rem, 1fr) auto auto auto;
   }
   .board.board-doors > .cell-resume {
     grid-column: 1 / 13;
