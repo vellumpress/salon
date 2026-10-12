@@ -1,8 +1,14 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import test from "node:test";
-import { packDisplayBlocks, unmeasuredBlocks, VIEWPORT_BLOCK_FRACTION } from "./display-blocks.ts";
-import { sentenceSpans } from "./sentences.ts";
+import {
+  packDisplayBlocks,
+  phoneBlockLimit,
+  phoneLineMeasure,
+  unmeasuredBlocks,
+  VIEWPORT_BLOCK_FRACTION,
+} from "./display-blocks.ts";
+import { interiorQuoteBreaks, legacyInteriorQuoteBreaks, sentenceSpans, splitSentences } from "./sentences.ts";
 
 function breathById(id: string, breathId: string) {
   const work = JSON.parse(
@@ -35,14 +41,12 @@ function loadBreath(id: string, index: number) {
   return work.breaths[index]?.text ?? "";
 }
 
-/** Rough phone column: about 34 characters a line, 29px a line, third of 844. */
+/** Phone column: 29.5 characters a line, 29px a line, third of 844. */
 function lineMeasure(text: string) {
-  const chars = text.replace(/\s+/g, " ").trim().length;
-  const lines = Math.max(1, Math.ceil(chars / 34));
-  return lines * 29;
+  return phoneLineMeasure(text);
 }
 
-const PHONE_THIRD = Math.floor(844 * VIEWPORT_BLOCK_FRACTION);
+const PHONE_THIRD = phoneBlockLimit(844);
 
 function assertPacked(text: string, limit = PHONE_THIRD) {
   const blocks = packDisplayBlocks(text, lineMeasure, limit);
@@ -115,12 +119,14 @@ test("a short paragraph is left whole", () => {
   assert.equal(blocks[0]?.text, text);
 });
 
-test("an unmeasured paragraph is one sentence per block", () => {
+test("an unmeasured paragraph uses the same chunks as the phone estimate", () => {
   const text = loadBreath("moby-dick", 0);
   const blocks = unmeasuredBlocks(text);
-  assert.ok(blocks.length > 1);
+  const fitted = packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD);
+  assert.deepEqual(blocks, fitted);
   assert.equal(blocks.map((block) => block.text).join(""), text);
-  for (const block of blocks) assert.equal(block.sentences, 1);
+  assert.ok(blocks.length < sentenceSpans(text).length);
+  for (const block of blocks) assert.doesNotMatch(block.text, /^\s/);
 });
 
 test("the block limit is one third of the viewport", () => {
@@ -238,8 +244,12 @@ test("a play speech repeats the speaker on every block", () => {
     }
     assert.equal(recoverSpeech(blocks, speaker), text);
     const cold = unmeasuredBlocks(text, "speech");
+    assert.deepEqual(cold, packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, "speech"));
     assert.ok(cold.length > 1, `${id} ${breathId} unmeasured stayed whole`);
-    for (const block of cold) assert.match(block.text, new RegExp(`^${speaker}: `));
+    for (const block of cold) {
+      assert.match(block.text, new RegExp(`^${speaker}: `));
+      assert.doesNotMatch(block.text, /^\s/);
+    }
     assert.equal(recoverSpeech(cold, speaker), text);
   }
   const maitreya = breathById("the-little-clay-cart", "s2-1");
@@ -250,4 +260,153 @@ test("a play speech repeats the speaker on every block", () => {
   assert.ok(notes.length > 1);
   assert.match(notes[0]?.text ?? "", /^Note: /);
   assert.doesNotMatch(notes[1]?.text ?? "", /^Note: /);
+});
+
+const NESTED_QUOTE =
+  "He leaned back. “My father used to say to me, ‘Never lend money to a friend. You will lose the money. You will lose the friend. And worst of all you will lose your good opinion of yourself.’ I did not listen to him, of course. Nobody listens to fathers. That is what fathers are for, I suppose, to be ignored until it is too late to matter.” He laughed.";
+
+const NESTED_STRAIGHT =
+  "He leaned back. \"My father used to say to me, 'Never lend money to a friend. You will lose the money. You will lose the friend. And worst of all you will lose your good opinion of yourself.' I did not listen to him, of course. Nobody listens to fathers. That is what fathers are for, I suppose, to be ignored until it is too late to matter.\" He laughed.";
+
+test("the phone estimate is a third of 844 at 29.5 characters a line", () => {
+  assert.equal(PHONE_THIRD, 281);
+  assert.equal(phoneLineMeasure("n".repeat(29)), 29);
+  assert.equal(phoneLineMeasure("n".repeat(30)), 58);
+});
+
+test("Mr. Mrs. Dr. and St. do not end a sentence, in or out of quotes", () => {
+  const outside = [
+    "I met Mrs. Reed in town. She waved.",
+    "I met Dr. Reed in town. She waved.",
+    "I met St. Paul from the train. She waved.",
+    "I met Mr. Smith in town. He waved.",
+  ];
+  for (const text of outside) {
+    const slices = parts(text);
+    assert.equal(slices.length, 2, text);
+    assert.match(slices[0] ?? "", /(?:Mr|Mrs|Dr|St)\. \p{L}/u);
+    assert.doesNotMatch(slices[0] ?? "", /(?:Mr|Mrs|Dr|St)\.\s*$/);
+  }
+  const inside = [
+    "She said “Mrs. Reed is here. Come in.” He nodded.",
+    "She said “Dr. Reed is here. Come in.” He nodded.",
+    "She said “St. Paul is far. Come in.” He nodded.",
+    "She said “Mr. Home is here. Come in.” He nodded.",
+    "Ask “Mr.” Home about the door. Then leave.",
+    "Ask “Mrs.” Reed about the door. Then leave.",
+    "Ask “Dr.” Reed about the door. Then leave.",
+    "Ask “St.” Paul about the door. Then leave.",
+  ];
+  for (const text of inside) {
+    assert.equal(interiorQuoteBreaks(text), 0, text);
+    const held = parts(text).find((slice) => /(?:Mr|Mrs|Dr|St)\./.test(slice));
+    assert.ok(held, text);
+    assert.match(held ?? "", /(?:Mr|Mrs|Dr|St)\.(?:”|\s+\p{L})/u);
+    assert.doesNotMatch(held ?? "", /(?:Mr|Mrs|Dr|St)\.\s*$/);
+  }
+  const villette = breathById("villette", "s0-32");
+  assert.ok(legacyInteriorQuoteBreaks(villette) > 0);
+  assert.equal(interiorQuoteBreaks(villette), 0);
+  const home = parts(villette).find((slice) => slice.includes("Mr."));
+  assert.match(home ?? "", /Mr\. Home/);
+  assert.doesNotMatch(home ?? "", /Mr\.\s*$/);
+  const blocks = assertPacked(villette);
+  for (const block of blocks) assert.doesNotMatch(block.text, /^\s/);
+  const bound = splitSentences("See “Mr. Home today. He left the room.");
+  assert.ok(bound.some((chunk) => /Mr\.$/.test(chunk)));
+});
+
+test("a nested quotation is not cut inside either quote", () => {
+  for (const text of [NESTED_QUOTE, NESTED_STRAIGHT]) {
+    assert.equal(interiorQuoteBreaks(text), 0);
+    assert.ok(legacyInteriorQuoteBreaks(text) > 0, "the older splitter did not cut this quote");
+    const speech = parts(text).find((slice) => slice.includes("Never lend"));
+    assert.match(speech ?? "", /You will lose the money/);
+    assert.match(speech ?? "", /good opinion of yourself/);
+    assert.match(speech ?? "", /too late to matter/);
+    const blocks = assertPacked(text);
+    const holding = blocks.filter((block) => block.text.includes("Never lend"));
+    assert.equal(holding.length, 1);
+    assert.match(holding[0]?.text ?? "", /too late to matter/);
+    for (const block of blocks) assert.doesNotMatch(block.text, /^\s/);
+    assert.deepEqual(unmeasuredBlocks(text), packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD));
+  }
+});
+
+test("moby-dick s3-32 does not flash one block per sentence", () => {
+  const text = breathById("moby-dick", "s3-32");
+  const cold = unmeasuredBlocks(text);
+  assert.deepEqual(cold, packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD));
+  assert.notEqual(cold.length, 3);
+  assert.equal(cold.filter((block) => block.text.includes("worm. But")).length, 1);
+  const many = Array.from({ length: 12 }, (_, index) => `Sentence ${index} is short.`).join(" ");
+  const coldMany = unmeasuredBlocks(many);
+  assert.ok(sentenceSpans(many).length >= 12);
+  assert.ok(coldMany.length < sentenceSpans(many).length);
+  assert.deepEqual(coldMany, packDisplayBlocks(many, phoneLineMeasure, PHONE_THIRD));
+});
+
+test("phone-height repros keep quotes, verse, and speakers whole", () => {
+  const quotes = [
+    ["moby-dick", "s3-32"],
+    ["moby-dick", "s3-6"],
+    ["cranford", "s0-14"],
+    ["cranford", "s2-4"],
+  ] as const;
+  for (const [id, breathId] of quotes) {
+    const text = breathById(id, breathId);
+    assert.equal(interiorQuoteBreaks(text), 0, `${id} ${breathId}`);
+    const blocks = assertPacked(text);
+    for (const block of blocks) assert.doesNotMatch(block.text, /^\s/);
+    assert.deepEqual(unmeasuredBlocks(text), blocks);
+  }
+  for (const [id, breathId] of [
+    ["a-shropshire-lad", "s4-3"],
+    ["leaves-of-grass", "s0-10"],
+  ] as const) {
+    const text = breathById(id, breathId);
+    const blocks = packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, "verse");
+    assert.equal(blocks.length, 1, id);
+    assert.equal(blocks[0]?.sentences, 1);
+    assert.equal(blocks[0]?.text, text);
+    assert.deepEqual(unmeasuredBlocks(text, "verse"), blocks);
+  }
+  for (const [id, breathId, speaker] of [
+    ["the-father", "s0-51", "Captain"],
+    ["the-little-clay-cart", "s2-1", "Maitreya"],
+    ["the-little-clay-cart", "s1-30", "Director"],
+  ] as const) {
+    const text = breathById(id, breathId);
+    const blocks = packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, "speech");
+    assert.deepEqual(unmeasuredBlocks(text, "speech"), blocks);
+    for (const block of blocks) {
+      assert.match(block.text, new RegExp(`^${speaker}: `));
+      assert.doesNotMatch(block.text, /^\s/);
+    }
+    assert.equal(recoverSpeech(blocks, speaker), text);
+  }
+});
+
+test("the catalog no longer splits inside an open quote", () => {
+  const dir = new URL("./catalog/texts/", import.meta.url);
+  let before = 0;
+  let after = 0;
+  let books = 0;
+  for (const name of readdirSync(dir)) {
+    if (!name.endsWith(".json")) continue;
+    const work = JSON.parse(readFileSync(new URL(name, dir), "utf8")) as {
+      breaths?: { text?: string }[];
+    };
+    books += 1;
+    for (const breath of work.breaths ?? []) {
+      const text = breath.text;
+      if (!text) continue;
+      before += legacyInteriorQuoteBreaks(text);
+      after += interiorQuoteBreaks(text);
+    }
+  }
+  console.log(`quote splits inside an open quote: before ${before}, after ${after}, books ${books}`);
+  assert.ok(books > 1000, `catalog has ${books} books`);
+  assert.equal(after, 0);
+  assert.ok(before > after);
 });
