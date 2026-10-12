@@ -1644,6 +1644,13 @@ html[data-status-motion="1"] .status-bar-fill::before {
   hyphens: manual;
 }
 
+.fitted-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
 .breath-slot {
   position: relative;
   z-index: 1;
@@ -3024,6 +3031,17 @@ html.together-compose .chat-field {
   align-self: stretch;
 }
 
+/* No pitch: the title is the card. The shared min-height left a blank where a paragraph would be. */
+.ritual-card-title {
+  min-height: 0;
+}
+
+.ritual-card-title .type-card {
+  margin-top: 0.7rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid color-mix(in srgb, currentColor 32%, transparent);
+}
+
 .board-alive .ritual-stack > * {
   animation: tbr-settle 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -3047,6 +3065,10 @@ html.together-compose .chat-field {
 @media (min-width: 768px) {
   .ritual-card {
     min-height: 12.5rem;
+  }
+
+  .ritual-card-title {
+    min-height: 0;
   }
 }
 

@@ -59,6 +59,7 @@ import { decodeHostedSit } from "@/lib/hosted-sit";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
 import { useDisplayBlocks } from "@/lib/use-display-blocks";
+import { FittedCopy } from "@/components/fitted-copy";
 import {
   breathTooTall,
   CENTER_LINE_ANCHOR,
@@ -2039,7 +2040,9 @@ export function TbrReader({
                 </p>
                 <PlaceChip workId={work.id} tone="accent" className="mt-2" />
                 <h1 className="veil-title">{nightChrome || work.title}</h1>
-                {intro ? <p className="veil-note veil-preface-note">{intro}</p> : null}
+                {intro ? (
+                  <FittedCopy text={intro} className="veil-note veil-preface-note" />
+                ) : null}
                 {gateMode === "length" ? (
                   <>
                     <p className="mt-8 type-kicker text-muted">How long will you sit</p>
@@ -2175,7 +2178,9 @@ export function TbrReader({
           <div className="veil-body text-left">
             <span className={cn("mb-4 block h-2 w-10", fillClass(plane))} />
             <h2 className="veil-title">{placeLabel}</h2>
-            <p className="veil-note">{scene.reentry}</p>
+            {scene.reentry ? (
+              <FittedCopy text={scene.reentry} className="veil-note" />
+            ) : null}
           </div>
           <span className="veil-action-full">Continue</span>
         </button>

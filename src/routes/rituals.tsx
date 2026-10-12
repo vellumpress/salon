@@ -472,6 +472,7 @@ function BookCell({
       className={cn(
         "relative flex min-h-0 flex-col justify-end overflow-hidden p-4 sm:p-5",
         "ritual-card",
+        !pitch && "ritual-card-title",
         fillClass(fill),
         fillInk(fill),
       )}
