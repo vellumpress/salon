@@ -39,6 +39,7 @@ export const allTsFiles = [
   "src/lib/display-blocks.e2e.test.ts",
   "src/lib/reader-sit-resume.test.ts",
   "src/lib/catalog/rituals-duration.test.ts",
+  "src/lib/catalog/ritual-sit.test.ts",
   "src/lib/catalog/rituals-lead.test.ts",
   "src/lib/catalog/serialize.test.ts",
   "src/lib/catalog/en-rights.test.ts",

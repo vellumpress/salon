@@ -4161,7 +4161,7 @@ test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Feature
   assert.equal(peasants?.opening, "“Praised be Jesus Christ!”");
   assert.equal(peasants?.breaths, 2772);
   assert.equal(curatorialTrack("the-peasants"), "next");
-  assert.equal(RITUAL_SIT_MINUTES["the-peasants"], 2);
+  assert.equal(RITUAL_SIT_MINUTES["the-peasants"], 10);
   const peasantsOpen = JSON.parse(
     readFileSync(new URL("./openings/the-peasants.json", import.meta.url), "utf8"),
   ) as { breaths: { text: string }[] };
@@ -4172,7 +4172,7 @@ test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Feature
   assert.equal(nabob?.opening, "It is nasty, dirty weather outside there on the *puszta*; the sky is cloudy, the earth muddy, the rain has been falling for two weeks incessantly, as if by special command.");
   assert.equal(nabob?.breaths, 2337);
   assert.equal(curatorialTrack("a-hungarian-nabob"), "next");
-  assert.equal(RITUAL_SIT_MINUTES["a-hungarian-nabob"], 8);
+  assert.equal(RITUAL_SIT_MINUTES["a-hungarian-nabob"], 17);
   const nabobOpen = JSON.parse(
     readFileSync(new URL("./openings/a-hungarian-nabob.json", import.meta.url), "utf8"),
   ) as { breaths: { text: string }[] };
@@ -4187,7 +4187,7 @@ test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Feature
   assert.equal(iceland?.author, "Pierre Loti");
   assert.equal(iceland?.breaths, 952);
   assert.equal(curatorialTrack("an-iceland-fisherman"), "next");
-  assert.equal(RITUAL_SIT_MINUTES["an-iceland-fisherman"], 5);
+  assert.equal(RITUAL_SIT_MINUTES["an-iceland-fisherman"], 14);
   const icelandOpen = JSON.parse(
     readFileSync(new URL("./openings/an-iceland-fisherman.json", import.meta.url), "utf8"),
   ) as { note?: string; breaths: { text: string }[] };
@@ -4201,7 +4201,7 @@ test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Feature
   assert.equal(flower?.gutenberg, 12935);
   assert.equal(flower?.author, "Johannes Linnankoski");
   assert.equal(curatorialTrack("the-song-of-the-blood-red-flower"), "next");
-  assert.equal(RITUAL_SIT_MINUTES["the-song-of-the-blood-red-flower"], 8);
+  assert.equal(RITUAL_SIT_MINUTES["the-song-of-the-blood-red-flower"], 6);
   const flowerOpen = JSON.parse(
     readFileSync(new URL("./openings/the-song-of-the-blood-red-flower.json", import.meta.url), "utf8"),
   ) as { note?: string; author?: string; breaths: { text: string }[] };
@@ -4221,7 +4221,7 @@ test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Feature
   const irish = SHELF.find((item) => item.id === "irish-fairy-tales");
   assert.equal(irish?.gutenberg, 2892);
   assert.equal(curatorialTrack("irish-fairy-tales"), "later");
-  assert.equal(RITUAL_SIT_MINUTES["irish-fairy-tales"], 5);
+  assert.equal(RITUAL_SIT_MINUTES["irish-fairy-tales"], 2);
   const irishOpen = JSON.parse(
     readFileSync(new URL("./openings/irish-fairy-tales.json", import.meta.url), "utf8"),
   ) as { scenes: { title: string }[]; breaths: { text: string }[] };
@@ -4543,7 +4543,7 @@ test("Mira Emmeline FULL EN sits on Next, Rituals, and For you, never Featured",
   assert.equal(curatorialTrack("a-lost-lady"), "next");
   assert.equal(curatorialTrack("the-last-man"), "later");
   assert.equal(curatorialTrack("basilio"), "next");
-  assert.equal(RITUAL_SIT_MINUTES["lady-macbeth"], 5);
+  assert.equal(RITUAL_SIT_MINUTES["lady-macbeth"], 4);
   const basilio = SHELF.find((item) => item.id === "basilio");
   assert.equal(basilio?.gutenberg, 74442);
   assert.equal(basilio?.title, "Dragon’s Teeth");
@@ -4830,7 +4830,7 @@ test("Mira Fri ~2:04 noon CLEAR is Next lead Man of Property, then Awakening and
       year: 1867,
       breaths: 1150,
       scenes: 32,
-      minutes: 5,
+      minutes: 8,
       opening: "At the end of the Rue Guénégaud",
       stop: "disdainful indifference.",
     },
@@ -5646,7 +5646,7 @@ test("Mira Sat AM CLEAR is Next lead Moon and Sixpence, then Brilliant Career, P
       year: 1921,
       breaths: 365,
       scenes: 6,
-      minutes: 12,
+      minutes: 19,
       opening: "Hamlet observes to Horatio",
       stop: "Villela made no reply",
     },
@@ -6212,7 +6212,7 @@ test("Mira Sat EVENING CLEAR is Next lead Road to the Open, then Calvary, Anna, 
       year: 1894,
       breaths: 3115,
       scenes: 26,
-      minutes: 12,
+      minutes: 13,
       opening: "Down here, in \\*this\\* world, Bontzye Shweig",
       stop: "the prosecutor laughed",
     },
@@ -6846,7 +6846,7 @@ test("Mira POST-#169 CLEAR is Next lead Born in Exile, then Four Horsemen, After
       year: 1920,
       breaths: 1554,
       scenes: 10,
-      minutes: 12,
+      minutes: 32,
       opening: "My heart chokes in me like in a prison",
       stop: "opened the wings of your soul",
       firstWords: 31,
@@ -7279,7 +7279,7 @@ test("Mira POST-#171 CLEAR is Next lead Royal Highness, then Ramona, Almayer’s
       year: 1923,
       breaths: 1504,
       scenes: 18,
-      minutes: 12,
+      minutes: 48,
       opening: "Having pocketed his fare",
       stop: "But he does not do so",
       firstWords: 123,
@@ -7492,7 +7492,7 @@ test("Mira POST-#172 CLEAR is Next lead Daisy Miller, then South Wind, The Villa
       year: 1920,
       breaths: 2180,
       scenes: 8,
-      minutes: 12,
+      minutes: 43,
       opening: "After dark on Saturday night",
       stop: "moonlit street",
       firstWords: 78,
@@ -7934,7 +7934,7 @@ test("Mira POST-#174 CLEAR is Next lead Erewhon, then Ann Veronica, The Great Hu
       year: 1902,
       breaths: 1029,
       scenes: 10,
-      minutes: 12,
+      minutes: 14,
       opening: "Old Koskoosh listened greedily",
       stop: "law of life",
       firstWords: 121,
@@ -8160,7 +8160,7 @@ test("Mira POST-#175 CLEAR is Next lead The Poison Tree, then Cosmopolis, The Wo
       year: 1895,
       breaths: 807,
       scenes: 22,
-      minutes: 12,
+      minutes: 13,
       opening: "A quarter of a century ago",
       stop: "killed her",
       firstWords: 63,
@@ -8620,7 +8620,7 @@ test("Mira POST-#177 CLEAR is Next lead Tess, then Captains Courageous, Numa Rou
       year: 1907,
       breaths: 91,
       scenes: 1,
-      minutes: 8,
+      minutes: 9,
       opening: "When Elias Goldenberg",
       stop: "My angel",
       firstWords: 41,
@@ -8833,7 +8833,7 @@ test("Mira POST-#178 CLEAR is Next lead Seven Gables, then Heart of Darkness, To
       year: 1916,
       breaths: 63,
       scenes: 1,
-      minutes: 12,
+      minutes: 19,
       opening: "The farther I go back in my memory",
       stop: "truly Slav soul",
       firstWords: 123,
@@ -9065,7 +9065,7 @@ test("Mira POST-#179 CLEAR is Next lead Cabbages and Kings, then Dorian Gray, Th
       year: 1894,
       breaths: 171,
       scenes: 1,
-      minutes: 12,
+      minutes: 35,
       opening: "The rather flat notes of a man's voice",
       stop: "do it myself",
       firstWords: 63,
@@ -9297,7 +9297,7 @@ test("Mira POST-#180 CLEAR is Next lead The Shadow of the Cathedral, then Way of
       year: 1911,
       breaths: 567,
       scenes: 12,
-      minutes: 12,
+      minutes: 8,
       opening: "The three or four",
       stop: "mortuary lay that way",
       firstWords: 157,
@@ -9539,7 +9539,7 @@ test("Mira POST-#181 CLEAR is Next lead Typee, then Kangaroo, Casanova’s Homec
       year: 1891,
       breaths: 226,
       scenes: 6,
-      minutes: 12,
+      minutes: 17,
       opening: "It was Lady Windermere",
       stop: "nonsense in all my life",
       firstWords: 162,
@@ -9777,7 +9777,7 @@ test("Mira POST-#182 CLEAR is Next lead Three Soldiers, then Doctor Pascal, In t
       year: 1913,
       breaths: 28,
       scenes: 1,
-      minutes: 12,
+      minutes: 19,
       opening: "In the days of King Sung-jong",
       stop: "high office",
       firstWords: 50,
@@ -10030,7 +10030,7 @@ test("Mira POST-#183 CLEAR is Next lead Sister Carrie, then Antic Hay, A spring-
       year: 1916,
       breaths: 55,
       scenes: 1,
-      minutes: 12,
+      minutes: 24,
       opening: "returning to Calcutta from our Puja trip",
       stop: "theosophist kinsman",
       firstWords: 277,
@@ -10275,7 +10275,7 @@ test("Mira POST-#184 CLEAR is Next lead Smoke, then Niels Lyhne, The Emancipated
       year: 1906,
       breaths: 28,
       scenes: 4,
-      minutes: 12,
+      minutes: 8,
       opening: "In 1474",
       stop: "rulers of Castile",
       firstWords: 49,
@@ -10784,7 +10784,7 @@ test("Mira POST-#186 CLEAR is Next lead Une Vie, then My Ántonia, Look Back on 
       year: 1916,
       breaths: 42,
       scenes: 1,
-      minutes: 12,
+      minutes: 16,
       opening: "Sweet human hearts",
       stop: "fragrantly than I",
       firstWords: 64,
@@ -11031,7 +11031,7 @@ test("Mira POST-#187 CLEAR is Next lead Crime and Punishment, then Uncle Silas, 
       year: 1893,
       breaths: 246,
       scenes: 1,
-      minutes: 12,
+      minutes: 61,
       opening: "Island of Hawaii",
       stop: "Bright House",
       firstWords: 116,
@@ -11278,7 +11278,7 @@ test("Mira POST-#188 CLEAR is Next lead Death in Venice, then Elmer Gantry, The 
       year: 1894,
       breaths: 318,
       scenes: 8,
-      minutes: 12,
+      minutes: 15,
       shelfMinutes: 12,
       opening: "glad you came",
       stop: "her companions",
@@ -11523,7 +11523,7 @@ test("Mira POST-#189 CLEAR is Next lead Manalive, then Captain Blood, The Monoma
       year: 1895,
       breaths: 307,
       scenes: 17,
-      minutes: 12,
+      minutes: 7,
       shelfMinutes: 12,
       opening: "Time Traveller",
       stop: "heart of man",
@@ -11761,7 +11761,7 @@ test("Mira POST-#190 CLEAR is Next lead The Prisoner of Zenda, then Kidnapped, T
       year: 1897,
       breaths: 1111,
       scenes: 29,
-      minutes: 12,
+      minutes: 10,
       shelfMinutes: 12,
       opening: "Bramblehurst",
       stop: "until he dies",
@@ -12014,7 +12014,7 @@ test("Mira POST-#191 CLEAR is Next lead The Village in the Jungle, then Ribot, S
       year: null,
       breaths: 40,
       scenes: 2,
-      minutes: 12,
+      minutes: 7,
       shelfMinutes: 12,
       opening: "dark autumn night",
       stop: "fireproof safe",
@@ -12572,7 +12572,7 @@ test("Mira POST-#197 CLEAR is Next lead A Farewell to Arms, then Alice Adams, Qu
       year: 1912,
       breaths: 56,
       scenes: 4,
-      minutes: 8,
+      minutes: 4,
       shelfMinutes: 8,
       opening: "half white, half Chinese",
       stop: "was comforted",
@@ -12810,7 +12810,7 @@ test("Mira POST-#204 CLEAR is Next lead Java Head, then Sunshine Sketches, Guest
       year: 1922,
       breaths: 2973,
       scenes: 41,
-      minutes: 12,
+      minutes: 15,
       shelfMinutes: 526,
       opening: "Snow, snow, snow!",
       stop: "feeling of manhood, of responsibility",
@@ -12844,7 +12844,7 @@ test("Mira POST-#204 CLEAR is Next lead Java Head, then Sunshine Sketches, Guest
       year: 1925,
       breaths: 87,
       scenes: 2,
-      minutes: 10,
+      minutes: 2,
       shelfMinutes: 10,
       opening: "The brook laughed and sang",
       stop: "loved you and me, somehow",
@@ -13133,7 +13133,7 @@ test("Mira POST-#206 CLEAR is Next lead In the Mountains, then The Two Countesse
       year: 1915,
       breaths: 45,
       scenes: 1,
-      minutes: 10,
+      minutes: 13,
       shelfMinutes: 10,
       shelfOpening: "devil of a scapegrace",
       firstBreath: "devil of a scapegrace",

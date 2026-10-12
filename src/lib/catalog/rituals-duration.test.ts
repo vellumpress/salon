@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { estimateRitualMinutes, ritualCardSearch, ritualCardSit, ritualDurationLabel } from "./rituals.ts";
+import { RITUAL_SIT_MINUTES, estimateRitualMinutes, ritualCardSearch, ritualCardSit, ritualDurationLabel } from "./rituals.ts";
 import { nearestSitPreset } from "../sitting.ts";
 import type { ShelfWork } from "./shelf";
 
@@ -17,7 +17,15 @@ function work(
   };
 }
 
-test("short poem pamphlet lands near ~12 min", () => {
+function assertMeasuredSit(item: ShelfWork) {
+  const minutes = estimateRitualMinutes(item);
+  assert.equal(minutes, RITUAL_SIT_MINUTES[item.id], item.id);
+  assert.equal(ritualDurationLabel(item), `~${minutes} min`, item.id);
+  assert.equal(ritualCardSit(item), minutes, item.id);
+  assert.equal(ritualCardSearch(item).sit, minutes, item.id);
+}
+
+test("short poem pamphlet uses its measured sit, not a breath guess", () => {
   const item = work({
     id: "second-april",
     form: "poem",
@@ -25,8 +33,8 @@ test("short poem pamphlet lands near ~12 min", () => {
     minutes: 43,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 12);
-  assert.equal(ritualDurationLabel(item), "~12 min");
+  assertMeasuredSit(item);
+  assert.notEqual(ritualDurationLabel(item), "~5 min");
 });
 
 test("Figs before-sleep sit is First Fig and Recuerdo", () => {
@@ -37,11 +45,10 @@ test("Figs before-sleep sit is First Fig and Recuerdo", () => {
     minutes: 20,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 5);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
-test("Yellow Wallpaper is about a half hour", () => {
+test("Yellow Wallpaper uses its measured sit", () => {
   const item = work({
     id: "wallpaper",
     form: "other",
@@ -49,11 +56,10 @@ test("Yellow Wallpaper is about a half hour", () => {
     minutes: 49,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 35);
-  assert.equal(ritualDurationLabel(item), "~30 min");
+  assertMeasuredSit(item);
 });
 
-test("long novel becomes several sittings", () => {
+test("a long novel's card names the opening sit, not the whole book", () => {
   const item = work({
     id: "orlando",
     form: "novel",
@@ -61,11 +67,11 @@ test("long novel becomes several sittings", () => {
     minutes: 406,
     local: true,
   });
-  assert.ok(estimateRitualMinutes(item) > 90);
-  assert.equal(ritualDurationLabel(item), "Several sittings");
+  assertMeasuredSit(item);
+  assert.ok(estimateRitualMinutes(item) < item.minutes);
 });
 
-test("medium poetry collection is one sitting", () => {
+test("a poetry collection's card names the measured sit", () => {
   const item = work({
     id: "the-wild-swans-at-coole",
     form: "poem",
@@ -73,18 +79,16 @@ test("medium poetry collection is one sitting", () => {
     minutes: 179,
     local: true,
   });
-  assert.equal(ritualDurationLabel(item), "One sitting");
+  assertMeasuredSit(item);
 });
 
-test("form heuristic when breaths are missing", () => {
-  assert.equal(
-    ritualDurationLabel(work({ id: "x-poem", form: "poem", minutes: 160 })),
-    "~20 min",
-  );
-  assert.equal(
-    ritualDurationLabel(work({ id: "x-novel", form: "novel", minutes: 160 })),
-    "Several sittings",
-  );
+test("form heuristic when breaths are missing names the estimate", () => {
+  const poem = work({ id: "x-poem", form: "poem", minutes: 160 });
+  assert.equal(estimateRitualMinutes(poem), 18);
+  assert.equal(ritualDurationLabel(poem), "~18 min");
+  const novel = work({ id: "x-novel", form: "novel", minutes: 160 });
+  assert.equal(estimateRitualMinutes(novel), 100);
+  assert.equal(ritualDurationLabel(novel), "~100 min");
 });
 
 test("bite-sized ritual sits use short overrides", () => {
@@ -95,8 +99,7 @@ test("bite-sized ritual sits use short overrides", () => {
     minutes: 197,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 5);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Quicksand before-sleep sit is a short evening room, not the whole novel", () => {
@@ -107,8 +110,7 @@ test("Quicksand before-sleep sit is a short evening room, not the whole novel", 
     minutes: 160,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 5);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("The Attendant’s Confession before-sleep sit is the human document, not the whole story", () => {
@@ -119,8 +121,7 @@ test("The Attendant’s Confession before-sleep sit is the human document, not t
     minutes: 31,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Rashōmon before-sleep sit is the empty gate, not the whole story", () => {
@@ -131,8 +132,7 @@ test("Rashōmon before-sleep sit is the empty gate, not the whole story", () => 
     minutes: 14,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("A High Wind in Jamaica before-sleep sit is the rank-plant cut, not the novel", () => {
@@ -143,8 +143,7 @@ test("A High Wind in Jamaica before-sleep sit is the rank-plant cut, not the nov
     minutes: 3,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 5);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Noli Me Tangere unwind sit is the dinner announcement, not the novel", () => {
@@ -155,8 +154,7 @@ test("Noli Me Tangere unwind sit is the dinner announcement, not the novel", () 
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Botchan first-session sit is the scar beat, not the novel", () => {
@@ -167,8 +165,7 @@ test("Botchan first-session sit is the scar beat, not the novel", () => {
     minutes: 384,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 5);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Vera before-sleep sit is the cliff-gate cut, not the novel", () => {
@@ -179,8 +176,7 @@ test("Vera before-sleep sit is the cliff-gate cut, not the novel", () => {
     minutes: 4,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 6);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("On a Chinese Screen waking sit is the Parlour cut, not the book", () => {
@@ -191,8 +187,7 @@ test("On a Chinese Screen waking sit is the Parlour cut, not the book", () => {
     minutes: 5,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 5);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Futility Next sit is the Simbirsk table-cloth cut, not the novel", () => {
@@ -203,8 +198,7 @@ test("Futility Next sit is the Simbirsk table-cloth cut, not the novel", () => {
     minutes: 4,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 6);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("The Poison Tree unwind sit is the storm cut, not the novel", () => {
@@ -215,8 +209,7 @@ test("The Poison Tree unwind sit is the storm cut, not the novel", () => {
     minutes: 5,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 5);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Enchanted April waking sit is the first-session dripping-street cut, not the novel", () => {
@@ -227,8 +220,7 @@ test("Enchanted April waking sit is the first-session dripping-street cut, not t
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 8);
-  assert.equal(ritualDurationLabel(item), "~12 min");
+  assertMeasuredSit(item);
 });
 
 test("Mr. Fortune’s Maggot unwind sit is the Fanua-call cut, not the novel", () => {
@@ -239,8 +231,7 @@ test("Mr. Fortune’s Maggot unwind sit is the Fanua-call cut, not the novel", (
     minutes: 329,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 5);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("The Home and the World before-sleep sit is the mirror-prayer cut", () => {
@@ -251,8 +242,7 @@ test("The Home and the World before-sleep sit is the mirror-prayer cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 6);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Where Angels Fear to Tread waking sit is the platform cut", () => {
@@ -263,8 +253,7 @@ test("Where Angels Fear to Tread waking sit is the platform cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 4);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("The Immoralist before-sleep sit is the freedom-line cut", () => {
@@ -275,8 +264,7 @@ test("The Immoralist before-sleep sit is the freedom-line cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Letters of a Javanese Princess waking sit is the cloistered-arms cut", () => {
@@ -287,8 +275,7 @@ test("Letters of a Javanese Princess waking sit is the cloistered-arms cut", () 
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("The Painted Veil before-sleep sit is the door cut", () => {
@@ -299,8 +286,7 @@ test("The Painted Veil before-sleep sit is the door cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("The Good Soldier before-sleep sit is the Nauheim cut", () => {
@@ -311,8 +297,7 @@ test("The Good Soldier before-sleep sit is the Nauheim cut", () => {
     minutes: 4,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 4);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Growth of the Soil waking sit is the first-sack cut", () => {
@@ -323,8 +308,7 @@ test("Growth of the Soil waking sit is the first-sack cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("All Quiet on the Western Front before-sleep sit is the double-rations cut", () => {
@@ -335,8 +319,7 @@ test("All Quiet on the Western Front before-sleep sit is the double-rations cut"
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("We waking sit is the wisest-of-lines cut", () => {
@@ -347,8 +330,7 @@ test("We waking sit is the wisest-of-lines cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("The Story of Gösta Berling before-sleep sit is the pulpit cut", () => {
@@ -359,8 +341,7 @@ test("The Story of Gösta Berling before-sleep sit is the pulpit cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Demian before-sleep sit is the two-worlds cut", () => {
@@ -371,8 +352,7 @@ test("Demian before-sleep sit is the two-worlds cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Death Comes for the Archbishop waking sit is the red-hills cut", () => {
@@ -383,8 +363,7 @@ test("Death Comes for the Archbishop waking sit is the red-hills cut", () => {
     minutes: 457,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Bliss before-sleep sit is the radiant-mirror cut", () => {
@@ -395,8 +374,7 @@ test("Bliss before-sleep sit is the radiant-mirror cut", () => {
     minutes: 45,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("A Hundred and Seventy Chinese Poems before-sleep sit is the Winter Night cut", () => {
@@ -407,8 +385,7 @@ test("A Hundred and Seventy Chinese Poems before-sleep sit is the Winter Night c
     minutes: 112,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Dubliners Rituals sit is the Araby cut", () => {
@@ -419,8 +396,7 @@ test("Dubliners Rituals sit is the Araby cut", () => {
     minutes: 25,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 12);
-  assert.equal(ritualDurationLabel(item), "~12 min");
+  assertMeasuredSit(item);
 });
 
 test("Gitanjali before-sleep sit is the poem-1 cut", () => {
@@ -431,8 +407,7 @@ test("Gitanjali before-sleep sit is the poem-1 cut", () => {
     minutes: 94,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Harmonium before-sleep sit is The Snow Man cut", () => {
@@ -443,8 +418,7 @@ test("Harmonium before-sleep sit is The Snow Man cut", () => {
     minutes: 293,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Martin Birck's Youth before-sleep sit is the childhood-garden cut", () => {
@@ -455,8 +429,7 @@ test("Martin Birck's Youth before-sleep sit is the childhood-garden cut", () => 
     minutes: 221,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("The Getting of Wisdom waking sit is the dirty-sheet cut", () => {
@@ -467,8 +440,7 @@ test("The Getting of Wisdom waking sit is the dirty-sheet cut", () => {
     minutes: 461,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Thaïs before-sleep sit is the Nile-huts cut", () => {
@@ -479,8 +451,7 @@ test("Thaïs before-sleep sit is the Nile-huts cut", () => {
     minutes: 8,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 8);
-  assert.equal(ritualDurationLabel(item), "~12 min");
+  assertMeasuredSit(item);
 });
 
 test("Nada the Lily before-sleep sit is the hidden-name cut", () => {
@@ -491,8 +462,7 @@ test("Nada the Lily before-sleep sit is the hidden-name cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Blood and Sand waking sit is the fight-day breakfast cut", () => {
@@ -503,8 +473,7 @@ test("Blood and Sand waking sit is the fight-day breakfast cut", () => {
     minutes: 2,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("The Gadfly before-sleep sit is the Fragola cut, not the novel", () => {
@@ -515,8 +484,7 @@ test("The Gadfly before-sleep sit is the Fragola cut, not the novel", () => {
     minutes: 832,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Nacha Regules unwind sit is the mandola cut", () => {
@@ -527,8 +495,7 @@ test("Nacha Regules unwind sit is the mandola cut", () => {
     minutes: 160,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Krakatit before-sleep sit is the fog-and-eyes cut", () => {
@@ -539,8 +506,7 @@ test("Krakatit before-sleep sit is the fog-and-eyes cut", () => {
     minutes: 160,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("The Peasants waking sit is the roadside greeting cut", () => {
@@ -551,8 +517,7 @@ test("The Peasants waking sit is the roadside greeting cut", () => {
     minutes: 160,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 2);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Cane Rituals sit is the Karintha sketch", () => {
@@ -563,8 +528,7 @@ test("Cane Rituals sit is the Karintha sketch", () => {
     minutes: 80,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 4);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Trooper Peter Halket before-sleep sit is the kopje-fire cut, not the novel", () => {
@@ -575,8 +539,7 @@ test("Trooper Peter Halket before-sleep sit is the kopje-fire cut, not the novel
     minutes: 4,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(item), 4);
-  assert.equal(ritualDurationLabel(item), "~5 min");
+  assertMeasuredSit(item);
 });
 
 test("Tales from the Fjeld ritual link carries sit=8, not the 12-minute preset", () => {
@@ -598,9 +561,11 @@ test("Tales from the Fjeld ritual link carries sit=8, not the 12-minute preset",
     minutes: 80,
     local: true,
   });
-  assert.equal(estimateRitualMinutes(april), 8);
-  assert.equal(ritualCardSit(april), 12);
-  assert.deepEqual(ritualCardSearch(april), { sit: 12 });
+  assert.equal(estimateRitualMinutes(april), 13);
+  assert.equal(ritualDurationLabel(april), "~13 min");
+  assert.equal(nearestSitPreset(13), 12);
+  assert.equal(ritualCardSit(april), 13);
+  assert.deepEqual(ritualCardSearch(april), { sit: 13 });
 
   const polish = work({
     id: "tales-by-polish-authors",
@@ -610,6 +575,8 @@ test("Tales from the Fjeld ritual link carries sit=8, not the 12-minute preset",
     local: true,
   });
   assert.equal(estimateRitualMinutes(polish), 6);
-  assert.equal(ritualCardSit(polish), 5);
-  assert.deepEqual(ritualCardSearch(polish), { sit: 5, at: 569 });
+  assert.equal(ritualDurationLabel(polish), "~6 min");
+  assert.equal(nearestSitPreset(6), 5);
+  assert.equal(ritualCardSit(polish), 6);
+  assert.deepEqual(ritualCardSearch(polish), { sit: 6, at: 569 });
 });
