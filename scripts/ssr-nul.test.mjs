@@ -5,6 +5,8 @@ import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 import { test } from "node:test";
 import {
+  RETIRED_SHELL_CACHE_NAME,
+  SHELL_ASSET_CACHE_NAME,
   SHELL_CACHE_ATTR,
   SHELL_CACHE_NAME,
   applyPagesHtmlSafety,
@@ -132,9 +134,14 @@ test("pages safety strips index and 404 without touching hashed assets", () => {
 
 test("a new shell is stored only after its entry assets exist", () => {
   const sw = renderShellServiceWorker();
-  assert.equal(SHELL_CACHE_NAME, "tbr-shell-v3");
+  assert.equal(SHELL_CACHE_NAME, "tbr-shell-v4");
+  assert.equal(SHELL_ASSET_CACHE_NAME, "tbr-assets-v4");
+  assert.equal(RETIRED_SHELL_CACHE_NAME, "tbr-shell-v3");
+  assert.match(sw, /tbr-shell-v4/);
+  assert.match(sw, /tbr-assets-v4/);
   assert.match(sw, /tbr-shell-v3/);
-  assert.match(sw, /tbr-shell-v2/);
+  assert.match(sw, /droppedLegacy/);
+  assert.doesNotMatch(sw, /key === current \|\| key === assets \|\| key === RETIRED/);
   assert.match(sw, /__fresh=/);
   assert.match(sw, /recover-shell/);
   assert.match(sw, /withTimeout/);
@@ -149,6 +156,8 @@ test("a new shell is stored only after its entry assets exist", () => {
   const hints = renderShellNetworkHints();
   assert.match(hints, /reg\.update\(\)/);
   assert.match(hints, /skip-waiting/);
+  assert.match(hints, /visibilitychange/);
+  assert.match(hints, /pageshow/);
   const commit = sw.slice(sw.indexOf("function commitShell"));
   const warmAt = commit.indexOf("warmAssets(critical)");
   const putAt = commit.indexOf("cache.put(shellUrl()");

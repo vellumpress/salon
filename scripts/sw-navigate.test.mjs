@@ -1,7 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import vm from "node:vm";
-import { FONT_FILES, renderShellServiceWorker } from "./ssr-nul.mjs";
+import {
+  FONT_FILES,
+  RETIRED_SHELL_CACHE_NAME,
+  SHELL_ASSET_CACHE_NAME,
+  SHELL_CACHE_NAME,
+  renderShellServiceWorker,
+} from "./ssr-nul.mjs";
 
 const ORIGIN = "https://vellumpress.github.io";
 const SHELL_URL = `${ORIGIN}/salon/`;
@@ -174,7 +180,7 @@ function sandboxOffline(listeners) {
 
 test("a __fresh navigation offline falls back to the cached shell", async () => {
   const { caches, api } = loadWorker({ onLine: false });
-  await putShell(caches, "tbr-shell-v3", shellHtml());
+  await putShell(caches, SHELL_CACHE_NAME, shellHtml());
   const res = await api.handleNavigate(navEvent(`${SHELL_URL}?__fresh=171000`));
   assert.equal(res.status, 200);
   const text = await res.text();
@@ -184,7 +190,7 @@ test("a __fresh navigation offline falls back to the cached shell", async () => 
 
 test("a __fresh navigation offline uses the retired shell, then an inline page", async () => {
   const retired = loadWorker({ onLine: false });
-  await putShell(retired.caches, "tbr-shell-v2", shellHtml("/salon/assets/index-old.js"));
+  await putShell(retired.caches, RETIRED_SHELL_CACHE_NAME, shellHtml("/salon/assets/index-old.js"));
   const fromRetired = await retired.api.handleNavigate(navEvent(`${SHELL_URL}?__fresh=2`));
   assert.match(await fromRetired.text(), /index-old\.js/);
 
@@ -199,7 +205,7 @@ test("a __fresh navigation offline uses the retired shell, then an inline page",
 
 test("a normal navigation offline never rejects respondWith", async () => {
   const cached = loadWorker({ onLine: false });
-  await putShell(cached.caches, "tbr-shell-v3");
+  await putShell(cached.caches, SHELL_CACHE_NAME);
   const hit = await cached.api.handleNavigate(navEvent(`${SHELL_URL}read/passing`));
   assert.match(await hit.text(), /data-spa-pages-restore/);
 
@@ -214,18 +220,18 @@ test("a normal navigation offline never rejects respondWith", async () => {
 
 test("recover-shell does not delete a cached shell while offline or while the network fails", async () => {
   const offline = loadWorker({ onLine: false });
-  await putShell(offline.caches, "tbr-shell-v3");
-  await putShell(offline.caches, "tbr-shell-v2");
+  await putShell(offline.caches, SHELL_CACHE_NAME);
+  await putShell(offline.caches, RETIRED_SHELL_CACHE_NAME);
   assert.equal(await offline.api.dropShellForRecovery(), false);
-  const current = await offline.caches.open("tbr-shell-v3");
-  const retired = await offline.caches.open("tbr-shell-v2");
+  const current = await offline.caches.open(SHELL_CACHE_NAME);
+  const retired = await offline.caches.open(RETIRED_SHELL_CACHE_NAME);
   assert.ok(await current.match(SHELL_URL));
   assert.ok(await retired.match(SHELL_URL));
 
   const failed = loadWorker({ onLine: true });
-  await putShell(failed.caches, "tbr-shell-v3");
+  await putShell(failed.caches, SHELL_CACHE_NAME);
   assert.equal(await failed.api.dropShellForRecovery(), false);
-  const still = await failed.caches.open("tbr-shell-v3");
+  const still = await failed.caches.open(SHELL_CACHE_NAME);
   assert.ok(await still.match(SHELL_URL));
 });
 
@@ -261,7 +267,7 @@ test("a navigation to the web app manifest is not claimed by the shell", async (
       return Promise.reject(new TypeError("Failed to fetch"));
     },
   });
-  await putShell(caches, "tbr-shell-v3");
+  await putShell(caches, SHELL_CACHE_NAME);
 
   const event = {
     request: {
@@ -398,7 +404,7 @@ test("a first install does not reload a reader who is already mid-sit", async ()
   await runActivate(worker);
   await worker.api.fillCatalog();
   assert.deepEqual(navigated, []);
-  const cache = await worker.caches.open("tbr-shell-v3");
+  const cache = await worker.caches.open(SHELL_CACHE_NAME);
   const stored = await cache.match(SHELL_URL);
   assert.ok(stored);
   assert.match(await stored.text(), /index-roOwEHpA\.js/);
@@ -412,7 +418,7 @@ test("a shell commit of the same build does not reload an open reader", async ()
     fetchImpl: shellFetch(html),
     clients: [client],
   });
-  await putShell(worker.caches, "tbr-shell-v3", html);
+  await putShell(worker.caches, SHELL_CACHE_NAME, html);
   await runActivate(worker);
   await worker.api.fillCatalog();
   assert.deepEqual(navigated, []);
@@ -426,7 +432,7 @@ test("an older cached shell reloads open phones even when the network shell miss
     clients: [client],
     manifest: { boot: ["/salon/assets/index-newBuild.js"], precache: ["/salon/assets/index-newBuild.js"] },
   });
-  await putShell(worker.caches, "tbr-shell-v3", shellHtml("/salon/assets/index-roOwEHpA.js"));
+  await putShell(worker.caches, SHELL_CACHE_NAME, shellHtml("/salon/assets/index-roOwEHpA.js"));
   await runActivate(worker);
   assert.equal(navigated.length, 1);
   assert.match(navigated[0], /__fresh=/);
@@ -440,9 +446,41 @@ test("a phone that is offline keeps the shell it already has", async () => {
     clients: [client],
     manifest: { boot: ["/salon/assets/index-newBuild.js"] },
   });
-  await putShell(worker.caches, "tbr-shell-v3", shellHtml("/salon/assets/index-roOwEHpA.js"));
+  await putShell(worker.caches, SHELL_CACHE_NAME, shellHtml("/salon/assets/index-roOwEHpA.js"));
+  await putShell(worker.caches, "tbr-shell-v3", shellHtml("/salon/assets/index-old.js"));
+  await putShell(worker.caches, "tbr-shell-v2", shellHtml("/salon/assets/index-older.js"));
+  await putShell(worker.caches, "tbr-assets", shellHtml("/salon/assets/moby-dick-old.js"));
   await runActivate(worker);
   assert.deepEqual(navigated, []);
+  assert.equal(await worker.caches.has(SHELL_CACHE_NAME), true);
+  assert.equal(await worker.caches.has("tbr-shell-v3"), false);
+  assert.equal(await worker.caches.has("tbr-shell-v2"), false);
+  assert.equal(await worker.caches.has("tbr-assets"), false);
+  const kept = await worker.caches.open(SHELL_CACHE_NAME);
+  const stored = await kept.match(SHELL_URL);
+  assert.ok(stored);
+  assert.match(await stored.text(), /index-roOwEHpA/);
+});
+
+test("an old Moby-Dick cache is deleted on activate and an online phone reloads", async () => {
+  const { client, navigated } = openReader();
+  const worker = loadWorker({
+    onLine: true,
+    clients: [client],
+  });
+  await putShell(worker.caches, "tbr-shell-v3", shellHtml("/salon/assets/moby-dick-DoX0Aou2.js"));
+  await putShell(worker.caches, "tbr-shell-v2", shellHtml("/salon/assets/index-older.js"));
+  await putShell(worker.caches, "tbr-assets", shellHtml("/salon/assets/read._workId-DaIcRdjK.js"));
+  await putShell(worker.caches, SHELL_ASSET_CACHE_NAME, shellHtml("/salon/assets/index-newBuild.js"));
+  await runActivate(worker);
+  assert.equal(await worker.caches.has("tbr-shell-v3"), false);
+  assert.equal(await worker.caches.has("tbr-shell-v2"), false);
+  assert.equal(await worker.caches.has("tbr-assets"), false);
+  assert.equal(await worker.caches.has(SHELL_ASSET_CACHE_NAME), true);
+  assert.equal(navigated.length, 1);
+  assert.match(navigated[0], /__fresh=/);
+  assert.match(navigated[0], /sit=5/);
+  assert.match(navigated[0], /the-house-of-mirth/);
 });
 
 test("a new build reloads an open reader through __fresh and keeps the sit query", async () => {
@@ -452,7 +490,7 @@ test("a new build reloads an open reader through __fresh and keeps the sit query
     fetchImpl: shellFetch(shellHtml("/salon/assets/index-newBuild.js")),
     clients: [client],
   });
-  await putShell(worker.caches, "tbr-shell-v3", shellHtml("/salon/assets/index-roOwEHpA.js"));
+  await putShell(worker.caches, SHELL_CACHE_NAME, shellHtml("/salon/assets/index-roOwEHpA.js"));
   await runActivate(worker);
   await worker.api.fillCatalog();
   assert.equal(navigated.length, 1);
@@ -563,11 +601,11 @@ test("recover-shell may replace the shell only after a new document is fetched",
       return Promise.reject(new TypeError("Failed to fetch"));
     },
   });
-  await putShell(caches, "tbr-shell-v3", shellHtml("/salon/assets/index-old.js"));
+  await putShell(caches, SHELL_CACHE_NAME, shellHtml("/salon/assets/index-old.js"));
   const replaced = await api.dropShellForRecovery();
   assert.equal(replaced, true);
   assert.ok(shellFetches >= 1);
-  const cache = await caches.open("tbr-shell-v3");
+  const cache = await caches.open(SHELL_CACHE_NAME);
   const stored = await cache.match(SHELL_URL);
   assert.ok(stored);
   assert.match(await stored.text(), /index-new\.js/);

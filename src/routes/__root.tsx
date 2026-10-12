@@ -17,7 +17,7 @@ import {
   applyStatusBarColorToDocument,
   readChromeBackground,
 } from "@/lib/status-bar-color";
-import { nudgeServiceWorker } from "@/lib/shell-update";
+import { watchShellUpdates } from "@/lib/shell-update";
 import { attachVisualViewport } from "@/lib/vvh";
 import appCss from "../styles.css?url";
 
@@ -33,7 +33,7 @@ function VisualViewport() {
 function BootMark() {
   useEffect(() => {
     document.documentElement.setAttribute("data-boot", "ready");
-    void nudgeServiceWorker();
+    watchShellUpdates();
   }, []);
   return null;
 }

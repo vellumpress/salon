@@ -22,6 +22,8 @@ import { ssrMatchIdNulPlugin } from "./scripts/ssr-nul.mjs";
 import { pdfWorkerUrlPlugin } from "./scripts/pdf-worker-url-plugin.mjs";
 // @ts-expect-error JS plugin alongside the TS vite config
 import { stripBindNotesPlugin } from "./scripts/strip-bind-notes.mjs";
+// @ts-expect-error JS plugin alongside the TS vite config
+import { mobyReplantPlugin } from "./scripts/moby-replant.mjs";
 import { quoteOgPlugin } from "./scripts/quote-og-plugin.mjs";
 
 /** The files `src/lib/db.ts` globs — same directory, same non-recursive scope. */
@@ -237,6 +239,7 @@ export default defineConfig(({ command, isPreview }) => {
             ]
         : []),
       viteReact(),
+      mobyReplantPlugin(),
       spaFallback404(),
     ],
   };
