@@ -120,6 +120,7 @@ export const allTsFiles = [
   "src/lib/quote-share.test.ts",
   "src/lib/quote-unfurl.test.ts",
   "src/lib/streak-notify.test.ts",
+  "src/lib/home-screen-hint.test.ts",
 ];
 
 const smokeSet = new Set(smokeFiles);
