@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import { readFileSync, readdirSync } from "node:fs";
 import test from "node:test";
-import { devices, webkit, type Browser, type Page } from "playwright";
+import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { isLocalBound } from "./catalog/full-pdf.ts";
 import { sentenceSpans } from "./sentences.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
@@ -53,14 +53,24 @@ function catalogLongest(max: number) {
   return picks.slice(0, max);
 }
 
+/**
+ * WebKit is the phone check. The Pages smoke job only installs Chromium,
+ * so that layout runs there when WebKit cannot start.
+ */
 async function launch() {
   try {
     return await webkit.launch();
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    if (!/Executable doesn't exist|browserType\.launch/.test(message)) throw error;
-    execFileSync("npx", ["playwright", "install", "webkit"], { stdio: "inherit", timeout: 180_000 });
-    return webkit.launch();
+    if (!/Executable doesn't exist|browserType\.launch|missing dependencies|shared libraries/.test(message)) {
+      throw error;
+    }
+    try {
+      execFileSync("npx", ["playwright", "install", "webkit"], { stdio: "inherit", timeout: 180_000 });
+      return await webkit.launch();
+    } catch {
+      return chromium.launch();
+    }
   }
 }
 
