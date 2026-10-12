@@ -320,6 +320,7 @@ test("known origin overrides", () => {
     "froth": "Spain",
     "moby-dick": "United States",
     "marie-claire": "France",
+    cranford: "United Kingdom",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",
