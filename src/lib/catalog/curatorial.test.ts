@@ -17983,10 +17983,24 @@ test("Mira Mon 12 Oct PM ANNALS: Annals of the Parish is Next carefully after Cr
   assert.equal(work.local, true);
   assert.equal(work.title, "Annals of the Parish");
   assert.equal(work.author, "John Galt");
-  // Year 1821: Blackwood Edinburgh first-edition title page, archive.org dli.bengal.10689.20260, PDF p.6.
+  // Year 1821 only on the card. Primary: Blackwood Edinburgh, archive.org dli.bengal.10689.20260, PDF p.6.
+  // Backup: Carey & Sons Philadelphia 1821, archive.org annalsparishorc00galtgoog, leaf n5.
   assert.equal(work.year, 1821);
-  assert.match(bindNote(id), /dli\.bengal\.10689\.20260/);
-  assert.match(bindNote(id), /PDF p\.6/);
+  const provenance = bindNote(id);
+  assert.match(provenance, /primary source/);
+  assert.match(provenance, /backup source/);
+  assert.match(provenance, /dli\.bengal\.10689\.20260/);
+  assert.match(provenance, /PDF p\.6/);
+  assert.match(provenance, /annalsparishorc00galtgoog/);
+  assert.match(provenance, /leaf n5/);
+  assert.ok(
+    provenance.indexOf("dli.bengal.10689.20260") < provenance.indexOf("annalsparishorc00galtgoog"),
+    "Blackwood is the primary citation; Carey is the backup",
+  );
+  assert.doesNotMatch(
+    `${work.author} ${work.title} ${work.opening} ${work.intro ?? ""}`,
+    /Blackwood|Carey|archive\.org|annalsparishorc|dli\.bengal/,
+  );
   assert.equal(work.form, "novel");
   assert.equal(work.gutenberg, 1310);
   assert.equal(work.breaths, 355);
