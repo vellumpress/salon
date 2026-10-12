@@ -60,6 +60,7 @@ import { decodeHostedSit } from "@/lib/hosted-sit";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
 import { displayKindForForm } from "@/lib/display-blocks";
+import { blockSentencePieces, breathSentenceCount, stepSentencePlace } from "@/lib/sentence-step";
 import { useDisplayBlocks } from "@/lib/use-display-blocks";
 import { FittedCopy } from "@/components/fitted-copy";
 import {
@@ -263,7 +264,16 @@ export function TbrReader({
   const topPadRef = useRef<HTMLDivElement>(null);
   const bottomPadRef = useRef<HTMLDivElement>(null);
   const upcomingSlotRef = useRef<HTMLDivElement>(null);
-  const placedIndex = useRef<number | null>(null);
+  const placedIndex = useRef<{ index: number; cursor: number } | null>(null);
+  /**
+   * Which sentence of the current breath is on the focus line.
+   * Not stored: a saved place still opens on the first sentence.
+   * Split paragraphs used to center the whole stack, so the focus line
+   * sat on a later sentence and a left tap skipped the ones above it.
+   */
+  const cursorRef = useRef(0);
+  const [cursor, setCursor] = useState(0);
+  const ownedIndexRef = useRef<number | null>(null);
   const motionArmed = useRef(false);
   /** Height of the breath just read, plus the gap under it. Advance travels up by this. */
   const lastTravel = useRef(0);
@@ -556,19 +566,35 @@ export function TbrReader({
     } else setBreath(work.id, next, stampAt(work, next));
   }
 
+  function rememberSentence(nextIndex: number, nextCursor: number) {
+    ownedIndexRef.current = nextIndex;
+    cursorRef.current = nextCursor;
+    setCursor(nextCursor);
+  }
+
   function stepBy(delta: 1 | -1) {
     if (overlayRef.current !== "none") return;
     const at = liveIndex();
-    const next = at + delta;
-    if (next < 0) return;
-    if (next >= work.breaths.length) {
+    const text = work.breaths[at]?.text ?? "";
+    const here = breathSentenceCount(text, displayKind);
+    const moved = stepSentencePlace({
+      index: at,
+      cursor: cursorRef.current,
+      delta,
+      here,
+      prevCount: at > 0 ? breathSentenceCount(work.breaths[at - 1]?.text ?? "", displayKind) : 1,
+      breathCount: work.breaths.length,
+    });
+    if (moved === "start") return;
+    if (moved === "end") {
       if (delta > 0 && workIsComplete(work.id)) {
         complete(work.id);
         setOverlay("end");
       }
       return;
     }
-    goTo(next);
+    rememberSentence(moved.index, moved.cursor);
+    if (moved.index !== at) goTo(moved.index);
   }
 
   function advance() {
@@ -578,6 +604,15 @@ export function TbrReader({
   function retreat() {
     stepBy(-1);
   }
+
+  useEffect(() => {
+    if (ownedIndexRef.current === index) return;
+    ownedIndexRef.current = index;
+    if (cursorRef.current !== 0) {
+      cursorRef.current = 0;
+      setCursor(0);
+    }
+  }, [index]);
 
   function beginFromReentry() {
     setSandCue(false);
@@ -956,9 +991,12 @@ export function TbrReader({
 
   useLayoutEffect(() => {
     const slot = breathSlotRef.current;
+    const previous = placedIndex.current;
     const stepped =
-      placedIndex.current !== null && Math.abs(index - placedIndex.current) === 1;
-    placedIndex.current = index;
+      previous !== null &&
+      (Math.abs(index - previous.index) === 1 ||
+        (index === previous.index && Math.abs(cursor - previous.cursor) === 1));
+    placedIndex.current = { index, cursor };
     if (!slot) {
       setOverflows(false);
       setAtEnd(true);
@@ -1042,7 +1080,11 @@ export function TbrReader({
       const lead = Number.isFinite(paneTop) && paneTop < 0 ? -paneTop : 0;
       const readingHeight = Math.max(0, height - overlap - lead);
       const anchorPx = focusAnchorPx(height, overlap, CENTER_LINE_ANCHOR, lead);
-      const tooTall = breathTooTall(line.scrollHeight, readingHeight || height);
+      const focus = line.querySelector<HTMLElement>("[data-focus-sentence]");
+      const alone = line.querySelectorAll("[data-sentence-index]").length <= 1;
+      // A split paragraph centers the sentence on the focus line, not the
+      // middle of the stack. Only a breath that is one tall sentence scrolls.
+      const tooTall = alone && breathTooTall(line.scrollHeight, readingHeight || height);
       const look = lookbackSlotRef.current;
       const ahead = upcomingSlotRef.current;
       if (tooTall) {
@@ -1064,7 +1106,8 @@ export function TbrReader({
       landScroll();
 
       const trackRect = track.getBoundingClientRect();
-      const targetRect = line.getBoundingClientRect();
+      const target = !alone && !tooTall && focus ? focus : line;
+      const targetRect = target.getBoundingClientRect();
       const lineTop = targetRect.top - trackRect.top;
       const shift = tooTall
         ? 0
@@ -1092,7 +1135,7 @@ export function TbrReader({
       track.style.transform = `translate3d(0, ${shift}px, 0)`;
       void track.offsetHeight;
       const aheadLine = ahead?.querySelector<HTMLElement>(".look-line");
-      const lineRect = line.getBoundingClientRect();
+      const lineRect = (focus ?? line).getBoundingClientRect();
       const gapPx = aheadLine
         ? Math.max(0, aheadLine.getBoundingClientRect().top - lineRect.bottom)
         : 10;
@@ -1177,7 +1220,7 @@ export function TbrReader({
       ro.disconnect();
       slot.removeEventListener("scroll", onScroll);
     };
-  }, [index, breath?.text, together, overlay, centerOn]);
+  }, [index, cursor, breath?.text, together, overlay, centerOn]);
 
   const durationMs = sittingMinutes > 0 ? sittingMinutes * 60 * 1000 : 0;
   const endsAt =
@@ -1259,6 +1302,9 @@ export function TbrReader({
       </p>
     ));
   });
+  const sentenceCount = breathSentenceCount(breath.text, displayKind);
+  const atSentence = Math.min(sentenceCount - 1, Math.max(0, cursor));
+  let sentenceBase = 0;
   const currentLine = (
     <div
       ref={breathLineRef}
@@ -1267,12 +1313,35 @@ export function TbrReader({
         isKept && "border-l-2 border-red pl-4",
       )}
       data-sentence={index}
+      data-sentence-count={sentenceCount}
     >
-      {display.blocksFor(breath.text).map((block, bi) => (
-        <p key={bi} className="breath-block" data-block-sentences={block.sentences}>
-          <EmphasizedText text={block.text} />
-        </p>
-      ))}
+      {display.blocksFor(breath.text).map((block, bi) => {
+        const base = sentenceBase;
+        sentenceBase += block.sentences;
+        const pieces = blockSentencePieces(block.text, block.sentences);
+        const split = pieces.length === block.sentences;
+        return (
+          <p key={bi} className="breath-block" data-block-sentences={block.sentences}>
+            {pieces.map((piece, pi) => {
+              const at = split ? base + pi : base;
+              return (
+                <span
+                  key={pi}
+                  className={cn(
+                    "breath-sentence",
+                    split && at < atSentence && "is-past",
+                    split && at > atSentence && "is-ahead",
+                  )}
+                  data-sentence-index={at}
+                  data-focus-sentence={at === atSentence ? "" : undefined}
+                >
+                  <EmphasizedText text={piece} />
+                </span>
+              );
+            })}
+          </p>
+        );
+      })}
     </div>
   );
   const breathClass = cn("breath-slot", overflows && "overflows", atEnd && "at-end");
@@ -1416,9 +1485,9 @@ export function TbrReader({
     start.turned = true;
     turnedAtRef.current = performance.now();
     if (overlayRef.current !== "none") return;
-    const before = liveIndex();
+    const before = `${liveIndex()}:${cursorRef.current}`;
     stepZone(zone);
-    if (overlayRef.current !== "none" || liveIndex() === before) return;
+    if (overlayRef.current !== "none" || `${liveIndex()}:${cursorRef.current}` === before) return;
     const held = performance.now() - start.t - HOLD_ARM_MS;
     holdTimerRef.current = window.setTimeout(() => pumpHold(start), holdStepIntervalMs(held));
   }
@@ -1742,6 +1811,8 @@ export function TbrReader({
       data-bound={workIsComplete(work.id) ? "full" : "opening"}
       data-breath-index={index}
       data-breath-count={work.breaths.length}
+      data-sentence-at={breath ? Math.min(breathSentenceCount(breath.text, displayKind) - 1, Math.max(0, cursor)) : 0}
+      data-sentence-count={breath ? breathSentenceCount(breath.text, displayKind) : 1}
       data-display-blocks={display.ready ? "ready" : "pending"}
       data-block-viewport={display.ready ? String(display.viewport) : ""}
     >

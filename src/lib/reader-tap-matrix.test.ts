@@ -3,7 +3,10 @@ import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 import test, { type TestContext } from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
+import { shelfWork } from "./catalog/shelf.ts";
+import { displayKindForForm } from "./display-blocks.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { breathSentenceCount, repeatSentenceStep, type SentencePlace } from "./sentence-step.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -269,6 +272,61 @@ async function breathIndex(page: Page) {
   return Number(raw);
 }
 
+async function readSentence(page: Page) {
+  return page.evaluate(() => {
+    const frame = document.querySelector(".reader-frame");
+    return {
+      index: Number(frame?.getAttribute("data-breath-index") ?? 0),
+      cursor: Number(frame?.getAttribute("data-sentence-at") ?? 0),
+      count: Number(frame?.getAttribute("data-sentence-count") ?? 1),
+      total: Number(frame?.getAttribute("data-breath-count") ?? 0),
+    };
+  });
+}
+
+function bookId(page: Page) {
+  const parts = new URL(page.url()).pathname.split("/").filter(Boolean);
+  return decodeURIComponent(parts[parts.length - 1] ?? "");
+}
+
+function sentenceCounts(id: string): number[] | null {
+  try {
+    const work = loadWork(id);
+    const kind = displayKindForForm(shelfWork(id)?.form);
+    return work.breaths.map((breath) => breathSentenceCount(breath.text, kind));
+  } catch {
+    return null;
+  }
+}
+
+function expectStep(
+  id: string,
+  place: { index: number; cursor: number; count: number; total: number },
+  direction: 1 | -1,
+): SentencePlace | null {
+  const counts = sentenceCounts(id);
+  const countAt = (index: number) => counts?.[index] ?? (index === place.index ? place.count : 1);
+  const breathCount = counts?.length || place.total || place.index + 2;
+  const moved = repeatSentenceStep(place, direction, 1, countAt, breathCount);
+  if (moved === "start" || moved === "end") return null;
+  return moved;
+}
+
+function walkBook(id: string, index: number, cursor: number, direction: 1 | -1, steps: number) {
+  const counts = sentenceCounts(id);
+  assert.ok(counts, `${id} has no sentence counts`);
+  const moved = repeatSentenceStep(
+    { index, cursor },
+    direction,
+    steps,
+    (at) => counts[at] ?? 1,
+    counts.length,
+  );
+  assert.notEqual(moved, "start");
+  assert.notEqual(moved, "end");
+  return moved as SentencePlace;
+}
+
 async function waitIndex(page: Page, expected: number) {
   await page.waitForFunction(
     (want) =>
@@ -365,6 +423,37 @@ async function sameSpotTwice(
   assert.equal(bar, "closed", `${label} opened Keep/Send`);
 }
 
+async function tapSentence(
+  page: Page,
+  point: { x: number; y: number },
+  expected: SentencePlace,
+  label: string,
+) {
+  await assertOnColumn(page, point, label);
+  await page.touchscreen.tap(point.x, point.y);
+  try {
+    await page.waitForFunction(
+      (want) => {
+        const frame = document.querySelector(".reader-frame");
+        return (
+          frame?.getAttribute("data-breath-index") === String(want.index) &&
+          frame?.getAttribute("data-sentence-at") === String(want.cursor)
+        );
+      },
+      expected,
+      { timeout: 4000 },
+    );
+  } catch (error) {
+    const now = await readSentence(page);
+    throw new Error(
+      `${label}: at ${now.index}:${now.cursor}, expected ${expected.index}:${expected.cursor} (${error instanceof Error ? error.message : error})`,
+    );
+  }
+  await frames(page);
+  const bar = await page.locator("[data-reader-bar]").getAttribute("data-reader-bar");
+  assert.equal(bar, "closed", `${label} opened Keep/Send`);
+}
+
 async function burst(
   page: Page,
   direction: 1 | -1,
@@ -372,17 +461,19 @@ async function burst(
   gapMs: number,
   label: string,
 ) {
-  const start = await breathIndex(page);
+  const id = bookId(page);
   for (let i = 0; i < count; i += 1) {
+    const before = await readSentence(page);
+    const expected = expectStep(id, before, direction);
+    assert.ok(expected, `${label} step ${i + 1} walked off the book`);
     const spot = await column(page);
     const point = direction < 0 ? backPoint(spot) : forwardPoint(spot);
     const began = Date.now();
-    await tapIndex(page, point, start + direction * (i + 1), `${label} step ${i + 1}`);
+    await tapSentence(page, point, expected, `${label} step ${i + 1}`);
     const spent = Date.now() - began;
     if (spent < gapMs) await new Promise((resolve) => setTimeout(resolve, gapMs - spent));
   }
   await frames(page);
-  assert.equal(await breathIndex(page), start + direction * count, label);
 }
 
 async function slowBack(page: Page, label: string) {
@@ -462,6 +553,22 @@ async function dispatchGhost(page: Page, x: number, y: number, clickBeforeUp: bo
 
 async function tallSteps(page: Page, id: string, at: number, label: string) {
   await openAt(page, id, at);
+  const place = await readSentence(page);
+  if (place.count > 1) {
+    assert.equal(place.index, at);
+    assert.equal(place.cursor, 0, `${label} did not open on its first sentence`);
+    const opened = await column(page);
+    const forward = expectStep(id, place, 1);
+    assert.ok(forward, `${label} has no next sentence`);
+    await tapSentence(page, forwardPoint(opened), forward, `${label} forward one sentence`);
+    const mid = await readSentence(page);
+    const back = expectStep(id, mid, -1);
+    assert.ok(back, `${label} cannot step back`);
+    await tapSentence(page, backPoint(await column(page)), back, `${label} back one sentence`);
+    assert.equal(back.index, at, `${label} back left the paragraph`);
+    assert.equal(back.cursor, 0, `${label} back skipped a sentence`);
+    return;
+  }
   const opened = await column(page);
   assert.equal(opened.overflows, true, `${label} is not taller than the column`);
   assert.ok(opened.scrollTop < 4, `${label} did not open at the start`);
@@ -528,9 +635,12 @@ async function runReaderMatrix(name: EngineName) {
     assert.equal(touch.htmlTouch, "manipulation", `${tag} page still allows double-tap zoom`);
     assert.equal(touch.touchAction, "manipulation", `${tag} column still allows double-tap zoom`);
     await burst(page, -1, 20, 100, `${tag} passing rapid back`);
-    assert.equal(await breathIndex(page), 842, `${tag} twenty backs`);
+    const backed = walkBook("passing", 862, 0, -1, 20);
+    assert.equal(await breathIndex(page), backed.index, `${tag} twenty backs`);
+    assert.equal((await readSentence(page)).cursor, backed.cursor, `${tag} twenty backs sentence`);
     await burst(page, 1, 20, 100, `${tag} passing rapid forward`);
     assert.equal(await breathIndex(page), 862, `${tag} twenty forwards did not return`);
+    assert.equal((await readSentence(page)).cursor, 0, `${tag} twenty forwards sentence`);
 
     await openAt(page, "passing", 120);
     await sameSpotTwice(page, -1, `${tag} passing double back on one spot`);

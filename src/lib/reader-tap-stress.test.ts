@@ -15,8 +15,10 @@ import {
   selectCatalogWalk,
   usableDiffBase,
 } from "./catalog-walk.ts";
-import { readableIds } from "./catalog/shelf.ts";
+import { readableIds, shelfWork } from "./catalog/shelf.ts";
+import { displayKindForForm } from "./display-blocks.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { breathSentenceCount, repeatSentenceStep } from "./sentence-step.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -428,6 +430,64 @@ async function aim(
   return shot;
 }
 
+const sentenceCountCache = new Map<string, number[] | null>();
+
+function bookIdOf(page: Page) {
+  const parts = new URL(page.url()).pathname.split("/").filter(Boolean);
+  return decodeURIComponent(parts[parts.length - 1] ?? "");
+}
+
+function countsFor(id: string): number[] | null {
+  if (sentenceCountCache.has(id)) return sentenceCountCache.get(id) ?? null;
+  if (id === "page") {
+    sentenceCountCache.set(id, null);
+    return null;
+  }
+  try {
+    const work = readWork(id);
+    const kind = displayKindForForm(shelfWork(id)?.form);
+    const counts = (work.breaths ?? []).map((breath) => breathSentenceCount(breath.text ?? "", kind));
+    sentenceCountCache.set(id, counts);
+    return counts;
+  } catch {
+    sentenceCountCache.set(id, null);
+    return null;
+  }
+}
+
+async function readSentence(page: Page) {
+  return page.evaluate(() => {
+    const frame = document.querySelector(".reader-frame");
+    const slot = document.querySelector(".breath-slot");
+    return {
+      index: Number(frame?.getAttribute("data-breath-index") ?? 0),
+      cursor: Number(frame?.getAttribute("data-sentence-at") ?? 0),
+      count: Number(frame?.getAttribute("data-sentence-count") ?? 1),
+      total: Number(frame?.getAttribute("data-breath-count") ?? 0),
+      scrollTop: slot instanceof HTMLElement ? slot.scrollTop : 0,
+    };
+  });
+}
+
+function predictPlace(
+  id: string,
+  place: { index: number; cursor: number; count: number; total: number },
+  direction: 1 | -1,
+  jumps: number,
+) {
+  const counts = countsFor(id);
+  const countAt = (index: number) => {
+    if (counts) return counts[index] ?? 1;
+    return index === place.index ? Math.max(1, place.count) : 1;
+  };
+  const breathCount = counts?.length || place.total || place.index + jumps + 2;
+  const moved = repeatSentenceStep(place, direction, jumps, countAt, breathCount);
+  if (moved === "start" || moved === "end") {
+    throw new Error(`${id} walked off the book from ${place.index}:${place.cursor}`);
+  }
+  return moved;
+}
+
 async function step(
   page: Page,
   direction: 1 | -1,
@@ -448,6 +508,13 @@ async function step(
       .catch(() => undefined);
   }
   const burst = mode === "burst" ? 3 : 1;
+  const before = await readSentence(page);
+  const predicted = predictPlace(bookIdOf(page), before, direction, burst);
+  assert.equal(
+    predicted.index,
+    expected,
+    `${label} expected breath ${expected}, one sentence per tap lands on ${predicted.index}:${predicted.cursor}`,
+  );
   let shot: Shot | null = null;
   for (let attempt = 0; attempt < 25; attempt += 1) {
     shot = await aim(page, direction, mode === "screen" ? "point" : mode);
@@ -464,29 +531,30 @@ async function step(
   try {
     await page.waitForFunction(
       (want) => {
-        const frame = document.querySelector("[data-breath-index]");
+        const frame = document.querySelector(".reader-frame");
         const slot = document.querySelector(".breath-slot");
         return (
-          frame?.getAttribute("data-breath-index") === String(want) &&
+          frame?.getAttribute("data-breath-index") === String(want.index) &&
+          frame?.getAttribute("data-sentence-at") === String(want.cursor) &&
           slot instanceof HTMLElement &&
           slot.scrollTop < 4
         );
       },
-      expected,
+      predicted,
       { timeout: 4000 },
     );
   } catch (error) {
-    const now = await page.locator("[data-breath-index]").getAttribute("data-breath-index");
-    const scroll = await page.locator(".breath-slot").evaluate((el) => (el as HTMLElement).scrollTop);
+    const now = await readSentence(page);
     const from = shot ? shot.from : "?";
     throw new Error(
-      `${label}: index ${now} scroll ${scroll}, expected ${expected} after ${burst} (from ${from} pinned=${shot?.pinned} line=${shot?.lineTop} host=${shot?.hostTop} x=${shot?.x} y=${shot?.y}; ${error instanceof Error ? error.message : error})`,
+      `${label}: index ${now.index}:${now.cursor} scroll ${now.scrollTop}, expected ${predicted.index}:${predicted.cursor} after ${burst} (from ${from} pinned=${shot?.pinned} line=${shot?.lineTop} host=${shot?.hostTop} x=${shot?.x} y=${shot?.y}; ${error instanceof Error ? error.message : error})`,
     );
   }
   return shot;
 }
 
 async function lateGhost(page: Page, shot: Shot, expected: number, label: string) {
+  const cursor = (await readSentence(page)).cursor;
   await page.evaluate(
     ({ x, y }) => {
       const marker = window as Window & { __ghostDone?: boolean };
@@ -518,8 +586,9 @@ async function lateGhost(page: Page, shot: Shot, expected: number, label: string
   await page.waitForFunction(() => (window as Window & { __ghostDone?: boolean }).__ghostDone === true, {
     timeout: 8000,
   });
-  const now = await page.locator("[data-breath-index]").getAttribute("data-breath-index");
-  assert.equal(Number(now), expected, `${label}: late click undid the tap`);
+  const now = await readSentence(page);
+  assert.equal(now.index, expected, `${label}: late click undid the tap`);
+  assert.equal(now.cursor, cursor, `${label}: late click stepped a sentence`);
 }
 
 async function mix(
@@ -534,6 +603,7 @@ async function mix(
   const random = rng(seed);
   const gaps = [0, 0, 0, 12, 16, 40, 90, 180];
   let index = start;
+  let cursor = 0;
   const low = 1;
   const high = Math.max(low, length - 2);
   let n = 0;
@@ -574,9 +644,15 @@ async function mix(
       mode = "ghost";
     }
     const jump = mode === "burst" ? 3 : 1;
-    const next = index + direction * jump;
-    const shot = await step(page, direction, next, `${label} ${id} tap ${n} ${mode}`, mode);
-    index = next;
+    const next = predictPlace(
+      id,
+      { index, cursor, count: countsFor(id)?.[index] ?? 1, total: length },
+      direction,
+      jump,
+    );
+    const shot = await step(page, direction, next.index, `${label} ${id} tap ${n} ${mode}`, mode);
+    index = next.index;
+    cursor = next.cursor;
     n += jump;
     if (mode === "touch" && late < 4 && random() < 0.5) {
       await lateGhost(page, shot, index, `${label} ${id} tap ${n}`);

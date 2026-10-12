@@ -1644,6 +1644,14 @@ html[data-status-motion="1"] .status-bar-fill::before {
   hyphens: manual;
 }
 
+.breath-sentence.is-past {
+  opacity: 0.5;
+}
+
+.breath-sentence.is-ahead {
+  opacity: 0.42;
+}
+
 .fitted-copy {
   display: flex;
   flex-direction: column;
