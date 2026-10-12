@@ -17983,8 +17983,10 @@ test("Mira Mon 12 Oct PM ANNALS: Annals of the Parish is Next carefully after Cr
   assert.equal(work.local, true);
   assert.equal(work.title, "Annals of the Parish");
   assert.equal(work.author, "John Galt");
-  // Year withheld until the title page is checked. Do not invent one.
-  assert.equal(work.year, null);
+  // Year 1821: Blackwood Edinburgh first-edition title page, archive.org dli.bengal.10689.20260, PDF p.6.
+  assert.equal(work.year, 1821);
+  assert.match(bindNote(id), /dli\.bengal\.10689\.20260/);
+  assert.match(bindNote(id), /PDF p\.6/);
   assert.equal(work.form, "novel");
   assert.equal(work.gutenberg, 1310);
   assert.equal(work.breaths, 355);
@@ -18000,8 +18002,8 @@ test("Mira Mon 12 Oct PM ANNALS: Annals of the Parish is Next carefully after Cr
   assert.doesNotMatch(work.intro ?? "", /\bFeatured\b|\bHost\b|Gutenberg|Vellum|Salon|Mira|Thea|Foulis|footnote/);
   const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
   const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as Work;
-  assert.equal(full.year, "");
-  assert.equal(opened.year, "");
+  assert.equal(full.year, "1821");
+  assert.equal(opened.year, "1821");
   assert.equal(full.breaths.length, 355);
   // The Introduction and fifty-one chapters, one year each, 1760 to 1810.
   assert.equal(full.scenes.length, 52);

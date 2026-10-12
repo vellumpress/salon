@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import { creditLine } from "./credit-line.ts";
 import {
   CARD_FONT_LOADS,
   CARD_HEIGHT,
@@ -12,6 +13,14 @@ import {
   loadCardFonts,
   paintSalonCard,
 } from "./salon-card.ts";
+
+test("a credit is the author, then the year, and a blank year leaves no separator", () => {
+  assert.equal(creditLine("John Galt", 1821), "John Galt · 1821");
+  assert.equal(creditLine("John Galt", "1821"), "John Galt · 1821");
+  assert.equal(creditLine("John Galt", null), "John Galt");
+  assert.equal(creditLine("John Galt", ""), "John Galt");
+  assert.equal(creditLine("Elizabeth Gaskell", 1853), "Elizabeth Gaskell · 1853");
+});
 
 test("cardFill follows the work's Mondrian plane", () => {
   assert.equal(cardFill({ text: "x", title: "Passing", author: "Nella Larsen", workId: "passing" }), "red");

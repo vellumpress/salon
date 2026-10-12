@@ -50,6 +50,7 @@ import {
   sitLabel,
 } from "@/lib/sitting";
 import { SalonCardShare } from "@/components/salon-card-share";
+import { creditLine } from "@/lib/credit-line";
 import {
   decodeEchoInvite,
   findEchoBreath,
@@ -2007,7 +2008,7 @@ export function TbrReader({
           {gateMode === "share" ? (
             <>
               <div className="veil-body">
-                <p className="mb-3 type-kicker text-muted">{work.author}</p>
+                <p className="mb-3 type-kicker text-muted">{creditLine(work.author, work.year)}</p>
                 <h1 className="veil-title">{work.title}</h1>
                 <p className="veil-note">They sit the same hour. The page holds both of you.</p>
                 <p className="mt-5 break-all font-sans text-xs leading-relaxed tracking-wide text-ink">
@@ -2035,7 +2036,7 @@ export function TbrReader({
             <>
               <div className="veil-body veil-preface">
                 <p className="type-kicker text-muted">
-                  {nightChrome ? `${work.title} · ${work.author}` : work.author}
+                  {nightChrome ? `${work.title} · ${creditLine(work.author, work.year)}` : creditLine(work.author, work.year)}
                 </p>
                 <PlaceChip workId={work.id} tone="accent" className="mt-2" />
                 <h1 className="veil-title">{nightChrome || work.title}</h1>
@@ -2090,7 +2091,7 @@ export function TbrReader({
               <div className="veil-body">
                 <h1 className="veil-title">{nightChrome || work.title}</h1>
                 <p className="mt-3 font-sans text-sm text-muted">
-                  {nightChrome ? `${work.title} · ${work.author}` : work.author}
+                  {nightChrome ? `${work.title} · ${creditLine(work.author, work.year)}` : creditLine(work.author, work.year)}
                 </p>
                 <PlaceChip workId={work.id} tone="accent" className="mt-2" />
                 <p className="mt-8 type-kicker text-muted">How long will you sit</p>

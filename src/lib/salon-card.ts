@@ -1,3 +1,4 @@
+import { creditLine } from "./credit-line.ts";
 import type { Fill } from "./mondrian.ts";
 import { fillOf } from "./mondrian.ts";
 import { clipLine } from "./share-codec.ts";
@@ -25,6 +26,7 @@ export type SalonCardInput = {
   text: string;
   title: string;
   author: string;
+  year?: number | string | null;
   workId?: string;
   fill?: Fill;
 };
@@ -121,7 +123,7 @@ export function paintSalonCard(
 
   ctx.fillStyle = INK;
   ctx.font = '500 22px "Outfit"';
-  ctx.fillText((input.author || "Anonymous").toUpperCase(), inset + 160, bandTop + 78);
+  ctx.fillText(creditLine(input.author || "Anonymous", input.year).toUpperCase(), inset + 160, bandTop + 78);
   ctx.font = '400 40px "Cormorant Garamond"';
   ctx.fillText(clipLine(input.title || "A sitting", 42), inset + 160, bandTop + 132);
 }
@@ -135,7 +137,7 @@ export const CARD_FONT_LOADS = [
 ] as const;
 
 export function cardFontSample(input: SalonCardInput): string {
-  return [APP_NAME, input.text, input.author, input.title].filter(Boolean).join(" ");
+  return [APP_NAME, input.text, creditLine(input.author, input.year), input.title].filter(Boolean).join(" ");
 }
 
 export async function loadCardFonts(sample: string): Promise<void> {

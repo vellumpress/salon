@@ -1,3 +1,4 @@
+import { shelfWork } from "./catalog/shelf.ts";
 import { cardFileName, downloadBlob, renderSalonCard } from "./salon-card.ts";
 import { clipLine, decodeShare, encodeShare } from "./share-codec.ts";
 import { shareOrCopy, type ShareOrCopyResult } from "./invite-share.ts";
@@ -133,6 +134,7 @@ export async function shareQuoteCard(input: {
       text: input.text,
       title: input.title,
       author: input.author,
+      year: shelfWork(input.workId)?.year,
       workId: input.workId,
     });
     file = new File([blob], `${cardFileName(input.title)}.png`, { type: "image/png" });
