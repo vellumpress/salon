@@ -60,7 +60,7 @@ import { decodeHostedSit } from "@/lib/hosted-sit";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
 import { displayKindForForm } from "@/lib/display-blocks";
-import { blockSentencePieces, breathSentenceCount, stepSentencePlace } from "@/lib/sentence-step";
+import { breathSentenceCount, focusPieces, stepSentencePlace } from "@/lib/sentence-step";
 import { useDisplayBlocks } from "@/lib/use-display-blocks";
 import { FittedCopy } from "@/components/fitted-copy";
 import {
@@ -1377,7 +1377,8 @@ export function TbrReader({
   });
   const sentenceCount = breathSentenceCount(breath.text, displayKind);
   const atSentence = Math.min(sentenceCount - 1, Math.max(0, cursor));
-  let sentenceBase = 0;
+  const breathBlocks = display.blocksFor(breath.text);
+  const focused = focusPieces(breath.text, breathBlocks, displayKind);
   const currentLine = (
     <div
       ref={breathLineRef}
@@ -1388,30 +1389,24 @@ export function TbrReader({
       data-sentence={index}
       data-sentence-count={sentenceCount}
     >
-      {display.blocksFor(breath.text).map((block, bi) => {
-        const base = sentenceBase;
-        sentenceBase += block.sentences;
-        const pieces = blockSentencePieces(block.text, block.sentences);
-        const split = pieces.length === block.sentences;
+      {breathBlocks.map((block, bi) => {
+        const pieces = focused[bi] ?? [{ text: block.text, sentence: 0 }];
         return (
           <p key={bi} className="breath-block" data-block-sentences={block.sentences}>
-            {pieces.map((piece, pi) => {
-              const at = split ? base + pi : base;
-              return (
-                <span
-                  key={pi}
-                  className={cn(
-                    "breath-sentence",
-                    split && at < atSentence && "is-past",
-                    split && at > atSentence && "is-ahead",
-                  )}
-                  data-sentence-index={at}
-                  data-focus-sentence={at === atSentence ? "" : undefined}
-                >
-                  <EmphasizedText text={piece} />
-                </span>
-              );
-            })}
+            {pieces.map((piece, pi) => (
+              <span
+                key={pi}
+                className={cn(
+                  "breath-sentence",
+                  piece.sentence < atSentence && "is-past",
+                  piece.sentence > atSentence && "is-ahead",
+                )}
+                data-sentence-index={piece.sentence}
+                data-focus-sentence={piece.sentence === atSentence ? "" : undefined}
+              >
+                <EmphasizedText text={piece.text} />
+              </span>
+            ))}
           </p>
         );
       })}

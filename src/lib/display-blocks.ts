@@ -174,7 +174,36 @@ function foldShortTail(
  * sentences. Prose slices joined together are the original string. A play
  * speech repeats "Speaker:" on every block after the first; the slices
  * underneath still join back to the original.
+ * A block's sentence count is the closed sentences a tap can land on.
+ * In-quote breaks only decide where a tall quotation may split.
  */
+function closedSentences(sample: string) {
+  return Math.max(1, sentenceSpans(sample).length);
+}
+
+/**
+ * How many closed sentences begin in each slice.
+ * A quotation broken across blocks is still one tap, so only the first
+ * slice counts it. The slices are the original characters, before a play
+ * repeats its speaker.
+ */
+function closedSentenceCounts(text: string, parts: string[]): number[] {
+  const closed = sentenceSpans(text);
+  let offset = 0;
+  const ranges = parts.map((part) => {
+    const start = offset;
+    offset += part.length;
+    return { start, end: start + part.length };
+  });
+  const counts = ranges.map(() => 0);
+  for (const span of closed) {
+    let index = ranges.findIndex((range) => span.start >= range.start && span.start < range.end);
+    if (index < 0) index = Math.max(0, ranges.length - 1);
+    counts[index] = (counts[index] ?? 0) + 1;
+  }
+  return counts;
+}
+
 export function packDisplayBlocks(
   text: string,
   measure: (sample: string) => number,
@@ -186,11 +215,11 @@ export function packDisplayBlocks(
   const speaker = kind === "speech" ? speakerPrefix(text) : null;
   const spans = sentenceSpans(text, "in-quotes");
   if (spans.length <= 1 || !(limitPx > 0)) {
-    return [{ text, sentences: 1 }];
+    return [{ text, sentences: closedSentences(text) }];
   }
   const units = unitsForPack(text, spans, measure, limitPx, speaker);
   if (units.length <= 1) {
-    return [{ text, sentences: Math.max(1, units[0]?.sentences ?? spans.length) }];
+    return [{ text, sentences: closedSentences(text) }];
   }
   const ranges: UnitRange[] = [];
   let from = 0;
@@ -208,19 +237,16 @@ export function packDisplayBlocks(
   }
   foldShortTail(text, units, ranges, measure, limitPx, speaker);
   const raws: string[] = [];
-  const counts: number[] = [];
   for (const range of ranges) {
-    let sentences = 0;
-    for (let u = range.from; u < range.to; u += 1) sentences += units[u]!.sentences;
     raws.push(text.slice(units[range.from]!.start, units[range.to - 1]!.end));
-    counts.push(Math.max(1, sentences));
   }
   if (raws.join("") !== text) {
-    return [{ text, sentences: Math.max(1, spans.length) }];
+    return [{ text, sentences: closedSentences(text) }];
   }
+  const counts = closedSentenceCounts(text, raws);
   return raws.map((raw, index) => ({
     text: showBlock(raw, speaker, index === 0),
-    sentences: counts[index] ?? 1,
+    sentences: counts[index] ?? 0,
   }));
 }
 

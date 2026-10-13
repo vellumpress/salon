@@ -657,16 +657,16 @@ test(
       }
       const presence = s24.find((spot) => spot.text.includes("august presence"));
       const aristocracy = s24.find((spot) => spot.text.includes("British aristocracy"));
-      assert.equal(presence?.sentences, 1);
-      assert.equal(aristocracy?.sentences, 1);
+      assert.ok((presence?.sentences ?? 2) <= 1);
+      assert.ok((aristocracy?.sentences ?? 2) <= 1);
       assert.ok((presence?.height ?? 0) <= third);
       assert.ok((aristocracy?.height ?? 0) <= third);
       const tail = s24[s24.length - 1];
       const before = s24[s24.length - 2];
       assert.match(tail?.text ?? "", /mundane failings/);
       if ((tail?.height ?? 0) < tailMin) {
-        assert.equal(tail?.sentences, 1);
-        assert.equal(before?.sentences, 1);
+        assert.ok((tail?.sentences ?? 2) <= 1);
+        assert.ok((before?.sentences ?? 2) <= 1);
         assert.ok((before?.height ?? 0) + (tail?.height ?? 0) > third);
       }
 
