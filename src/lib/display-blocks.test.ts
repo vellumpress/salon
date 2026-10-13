@@ -21,6 +21,21 @@ function breathById(id: string, breathId: string) {
   return found.text;
 }
 
+/** Verse repros follow the stanza. A poetry rebind moves breath ids. */
+const VERSE_REPROS = [
+  ["a-shropshire-lad", "Oh, look in my eyes"],
+  ["leaves-of-grass", "Then falter not O book"],
+] as const;
+
+function breathByText(id: string, opening: string) {
+  const work = JSON.parse(
+    readFileSync(new URL(`./catalog/texts/${id}.json`, import.meta.url), "utf8"),
+  ) as { breaths: { id: string; text: string }[] };
+  const found = work.breaths.filter((item) => item.text.includes(opening));
+  if (found.length !== 1) throw new Error(`${id} ${opening}: ${found.length} breaths`);
+  return found[0]!.text;
+}
+
 function parts(text: string) {
   return sentenceSpans(text).map((span) => text.slice(span.start, span.end));
 }
@@ -315,15 +330,11 @@ test("a quotation that fits is not cut, and a short tail folds upward", () => {
   assert.ok(tall.some((block) => lineMeasure(block.text) > 400 && lineMeasure(block.text) < 500));
 });
 
-// POETRY-REBIND: the same stanzas after the rebind ("Oh, look in my eyes" and "Then falter not O book") are now a-shropshire-lad s5-3 and leaves-of-grass s3-2.
 test("poetry stays one block", () => {
-  for (const [id, breathId] of [
-    ["a-shropshire-lad", "s5-3"],
-    ["leaves-of-grass", "s3-2"],
-  ] as const) {
-    const text = breathById(id, breathId);
+  for (const [id, opening] of VERSE_REPROS) {
+    const text = breathByText(id, opening);
     // The rebind keeps line breaks as " / ", which sentenceSpans reads as one span; count marks on the joined lines.
-    assert.ok(sentenceSpans(text.replaceAll(" / ", " ")).length > 1, `${id} ${breathId} has no sentence marks`);
+    assert.ok(sentenceSpans(text.replaceAll(" / ", " ")).length > 1, `${id} ${opening} has no sentence marks`);
     const blocks = packDisplayBlocks(text, lineMeasure, 40, "verse");
     assert.equal(blocks.length, 1, id);
     assert.equal(blocks[0]?.sentences, 1);
@@ -529,11 +540,8 @@ test("phone-height repros keep quotes, verse, and speakers whole", () => {
     for (const block of blocks) assert.doesNotMatch(block.text, /^\s/);
     assert.deepEqual(unmeasuredBlocks(text), blocks);
   }
-  for (const [id, breathId] of [
-    ["a-shropshire-lad", "s5-3"],
-    ["leaves-of-grass", "s3-2"],
-  ] as const) {
-    const text = breathById(id, breathId);
+  for (const [id, opening] of VERSE_REPROS) {
+    const text = breathByText(id, opening);
     const blocks = packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, "verse");
     assert.equal(blocks.length, 1, id);
     assert.equal(blocks[0]?.sentences, 1);
@@ -594,8 +602,6 @@ const PHONE_REPROS = [
   ["cranford", "s2-4"],
   ["new-grub-street", "s7-85"],
   ["villette", "s0-32"],
-  ["a-shropshire-lad", "s5-3"],
-  ["leaves-of-grass", "s3-2"],
   ["the-father", "s0-51"],
   ["the-little-clay-cart", "s2-1"],
   ["the-little-clay-cart", "s1-30"],
@@ -621,10 +627,13 @@ test("phone repros stay within a third except for a single sentence", () => {
       assert.equal(blocks[0]?.sentences, 1);
       assert.equal(interiorQuoteBreaks(text), 0);
     }
-    if (kind === "verse") {
-      assert.equal(blocks.length, 1);
-      assert.equal(blocks[0]?.text, text);
-    }
+  }
+  for (const [id, opening] of VERSE_REPROS) {
+    const text = breathByText(id, opening);
+    const blocks = packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, "verse");
+    assert.equal(blocks.length, 1, `${id} ${opening}`);
+    assert.equal(blocks[0]?.text, text);
+    assert.equal(blocks[0]?.sentences, 1);
   }
 });
 
