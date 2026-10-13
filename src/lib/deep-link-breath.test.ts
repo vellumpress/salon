@@ -48,6 +48,9 @@ test("a tap during boot is not overwritten by the link or the chapter start", ()
   assert.match(reader, /data-breath-index/);
   assert.match(reader, /steppedPlace/);
   assert.match(reader, /if \(!movedWhileSettling\) setBreath\(work\.id, deepLink/);
+  assert.match(reader, /userStepped\.current \|\|/);
+  assert.match(reader, /function ownTap\(\)/);
+  assert.match(reader, /if \(!userStepped\.current\) \{\s*const index = useTbr/);
   const route = readFileSync(new URL("../routes/read.$workId.tsx", import.meta.url), "utf8");
   assert.match(route, /atFromLocationSearch\(window\.location\.search\)/);
 });
