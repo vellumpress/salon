@@ -62,6 +62,22 @@ function heldQuoteOnly(text: string, limit = PHONE_THIRD) {
   return true;
 }
 
+/**
+ * A block may pass the limit when it is one fitting quotation, or when a
+ * tail under a third of the limit was folded upward and the block above
+ * that tail was itself allowed.
+ */
+function overLimitAllowed(text: string, limit = PHONE_THIRD): boolean {
+  if (heldQuoteOnly(text, limit)) return true;
+  const spans = sentenceSpans(text, "in-quotes");
+  if (spans.length < 2) return false;
+  const last = spans[spans.length - 1]!;
+  if (lineMeasure(text.slice(last.start, last.end)) >= limit / 3) return false;
+  const rest = text.slice(0, last.start);
+  if (lineMeasure(rest) <= limit) return true;
+  return overLimitAllowed(rest, limit);
+}
+
 function assertPacked(text: string, limit = PHONE_THIRD) {
   const blocks = packDisplayBlocks(text, lineMeasure, limit);
   assert.equal(blocks.map((block) => block.text).join(""), text);
@@ -69,7 +85,7 @@ function assertPacked(text: string, limit = PHONE_THIRD) {
     assert.ok(block.sentences >= 0);
     if (block.sentences > 1 && lineMeasure(block.text) > limit) {
       assert.ok(
-        heldQuoteOnly(block.text, limit),
+        overLimitAllowed(block.text, limit),
         `multi-sentence block measured ${lineMeasure(block.text)} over ${limit}: ${block.text.slice(0, 80)}`,
       );
     }
@@ -224,11 +240,12 @@ test("cranford s2-4 breaks the letter at sentence ends inside the quote", () => 
   assert.ok(blocks.length > 1);
   assert.equal(blocks.map((block) => block.text).join(""), text);
   assert.deepEqual(unmeasuredBlocks(text), blocks);
+  const mundane = blocks.filter((block) => block.text.includes("mundane failings"));
+  assert.equal(mundane.length, 1);
+  assert.match(mundane[0]?.text ?? "", /British aristocracy/);
+  assert.ok(lineMeasure(mundane[0]?.text ?? "") > PHONE_THIRD);
   const tail = blocks[blocks.length - 1]?.text ?? "";
-  if (lineMeasure(tail) < PHONE_THIRD / 3 && blocks.length >= 2) {
-    const prev = blocks[blocks.length - 2]?.text ?? "";
-    assert.ok(lineMeasure(prev + tail) > PHONE_THIRD, "a short tail should have folded into the block above");
-  }
+  assert.ok(lineMeasure(tail) >= PHONE_THIRD / 3, "a tail under a third of the limit should have folded upward");
 });
 
 test("a quotation that fits is not cut, and a short tail folds upward", () => {
@@ -273,6 +290,23 @@ test("a quotation that fits is not cut, and a short tail folds upward", () => {
   assert.ok((wideMeasure.get(rebalanced[1]?.text ?? "") ?? 0) >= tailMin);
   assert.ok((wideMeasure.get(rebalanced[1]?.text ?? "") ?? 0) <= limit);
   assert.match(rebalanced[1]?.text ?? "", /^BBBBBBBBBB\. CCCCC\./);
+  const stuck = "SENTENCE. STUB.";
+  const stuckMeasure = new Map<string, number>([
+    ["SENTENCE. ", 264],
+    ["STUB.", 59],
+    ["SENTENCE. STUB.", 323],
+  ]);
+  const absorbed = packDisplayBlocks(stuck, (sample) => stuckMeasure.get(sample) ?? 999, limit);
+  assert.equal(absorbed.length, 1, "a 59px stub folds into the sentence above even past the third");
+  assert.match(absorbed[0]?.text ?? "", /SENTENCE\. STUB\./);
+  const kept = "LEFTSIDE. RIGHTSIDE.";
+  const keptMeasure = new Map<string, number>([
+    ["LEFTSIDE. ", 200],
+    ["RIGHTSIDE.", 150],
+    ["LEFTSIDE. RIGHTSIDE.", 350],
+  ]);
+  const apart = packDisplayBlocks(kept, (sample) => keptMeasure.get(sample) ?? 999, limit);
+  assert.equal(apart.length, 2, "a block already past the stub line stays on its own");
   const moby = breathById("moby-dick", "s46-1");
   const mobyBlocks = assertPacked(moby);
   const tall = mobyBlocks.filter((block) => block.sentences === 1 && lineMeasure(block.text) > limit);
@@ -522,6 +556,18 @@ test("phone-height repros keep quotes, verse, and speakers whole", () => {
   }
 });
 
+test("a straight quotation that fits stays whole when the sentence around it does not", () => {
+  const text = breathById("a-book-of-ghosts", "s1-254");
+  const quote = quoteIntervals(text).find((range) => text.slice(range.start, range.end).includes("right as a trivet"));
+  assert.ok(quote, "the trivet speech was not found");
+  assert.ok(lineMeasure(text.slice(quote.start, quote.end)) <= PHONE_THIRD);
+  assert.ok(lineMeasure(text) > PHONE_THIRD);
+  const blocks = assertPacked(text);
+  assert.equal(blocks.length, 1);
+  assert.match(blocks[0]?.text ?? "", /"Oh!" said the girl, "I am as right as a trivet/);
+  assert.match(blocks[0]?.text ?? "", /postpone our return\."$/);
+});
+
 test("a quotation that fits in the third is not broken", () => {
   const text = "She said “Go home now. Then stay with me. Leave in the morning.” He nodded.";
   assert.ok(lineMeasure(text) <= PHONE_THIRD);
@@ -566,7 +612,7 @@ test("phone repros stay within a third except for a single sentence", () => {
     assert.equal(shown, text, `${id} ${breathId}`);
     for (const block of blocks) {
       if (block.sentences > 1 && phoneLineMeasure(block.text) > PHONE_THIRD) {
-        assert.ok(heldQuoteOnly(block.text), `${id} ${breathId} split a quotation that fits`);
+        assert.ok(overLimitAllowed(block.text), `${id} ${breathId} split a quotation that fits`);
       }
       assert.doesNotMatch(block.text, /^\s/);
     }
@@ -628,7 +674,7 @@ test("the catalog has no multi-sentence block taller than a third of the phone",
         if (sentenceSpans(slice, "in-quotes").length > 1 && phoneLineMeasure(slice) > PHONE_THIRD) before += 1;
       }
       for (const block of packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, kind)) {
-        if (block.sentences > 1 && phoneLineMeasure(block.text) > PHONE_THIRD && !heldQuoteOnly(block.text)) {
+        if (block.sentences > 1 && phoneLineMeasure(block.text) > PHONE_THIRD && !overLimitAllowed(block.text)) {
           after += 1;
         }
       }
