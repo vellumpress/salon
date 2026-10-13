@@ -88,6 +88,10 @@ test("a burst keeps the store once the link is applied, and the first tap can us
     65,
   );
   assert.equal(
+    adoptFrameIndex({ storeIndex: 0, frameIndex: 118, linkApplied: true, breathCount: 3046 }),
+    118,
+  );
+  assert.equal(
     adoptFrameIndex({ storeIndex: 65, frameIndex: 65, linkApplied: false, breathCount: 200 }),
     65,
   );
