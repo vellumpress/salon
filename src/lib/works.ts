@@ -1,5 +1,5 @@
 import { isLocalBound } from "./catalog/full-pdf";
-import { readableIds } from "./catalog/shelf";
+import { readableIds, shelfWork } from "./catalog/shelf";
 import { canonicalWorkId } from "./work-id-alias";
 import { fetchShelfWork } from "./fetch-work";
 import type { Work } from "./literature";
@@ -38,6 +38,21 @@ export function catalogIds() {
   return readableIds();
 }
 
+/** A short opening is not the book the shelf counted. `?at=` past it must keep waiting. */
+function editionCoversShelf(id: string, work: Work | undefined) {
+  if (!work) return false;
+  const expected = shelfWork(id)?.breaths;
+  return expected == null || work.breaths.length >= expected;
+}
+
+function storeEdition(id: string, work: Work, claimedComplete: boolean) {
+  const chosen = preferLoadedWork(cache.get(id), work) ?? work;
+  if (cache.get(id) !== chosen) cache.set(id, chosen);
+  if (claimedComplete && editionCoversShelf(id, chosen)) complete.set(id, true);
+  else if (!complete.get(id)) complete.set(id, false);
+  return chosen;
+}
+
 async function pullRemote(id: string, opening: boolean) {
   let packed;
   try {
@@ -51,10 +66,7 @@ async function pullRemote(id: string, opening: boolean) {
   if (prior && !packed.complete && prior.breaths.length > work.breaths.length) {
     return prior;
   }
-  cache.set(id, work);
-  if (packed.complete) complete.set(id, true);
-  else if (!complete.get(id)) complete.set(id, false);
-  return work;
+  return storeEdition(id, work, Boolean(packed.complete));
 }
 
 function hydrateLocal(id: string) {
@@ -65,12 +77,7 @@ function hydrateLocal(id: string) {
   const waiting = localWait.get(id);
   if (waiting) return waiting;
   const pending = loader()
-    .then((raw) => {
-      const work = raw as Work;
-      cache.set(id, work);
-      complete.set(id, true);
-      return work;
-    })
+    .then((raw) => storeEdition(id, raw as Work, true))
     .finally(() => localWait.delete(id));
   localWait.set(id, pending);
   return pending;
@@ -113,7 +120,9 @@ function loadFull(id: string) {
   if (waiting) return waiting;
   const pending = pullRemote(id, false)
     .then((work) => {
-      if (!work && cache.has(id)) complete.set(id, true);
+      const cached = cache.get(id);
+      // A missed full fetch must not promote the opening into the whole book.
+      if (!work && editionCoversShelf(id, cached)) complete.set(id, true);
       return work;
     })
     .finally(() => fullWait.delete(id));
@@ -169,6 +178,14 @@ async function loadWorkInner(
         full = await hydrateLocal(id);
       } catch {
         full = undefined;
+      }
+    }
+    if (!complete.get(id)) {
+      await new Promise<void>((resolve) => setTimeout(resolve, 600));
+      try {
+        full = (await hydrateLocal(id)) ?? full;
+      } catch {
+        full = full ?? cache.get(id);
       }
     }
     const next = preferLoadedWork(opened, full ?? cache.get(id));

@@ -149,13 +149,12 @@ function ReadBody() {
     })
       .then((next) => {
         if (!live) return;
-        const ready = workReadyForAt(next, at);
-        setWork(ready ?? next ?? null);
+        // Falling through to the opening painted breath 0 when `at` sat past it.
+        setWork(workReadyForAt(next, at) ?? null);
       })
       .catch(() => {
         if (!live) return;
-        const ready = workReadyForAt(peekWork(workId), at);
-        setWork(ready ?? peekWork(workId) ?? null);
+        setWork(workReadyForAt(peekWork(workId), at) ?? null);
       });
     return () => {
       live = false;
