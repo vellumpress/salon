@@ -282,6 +282,8 @@ export function TbrReader({
   const cursorRef = useRef(0);
   const [cursor, setCursor] = useState(0);
   const ownedIndexRef = useRef<number | null>(null);
+  /** Sentence a tap landed on. A store flicker must not drop it. */
+  const sentenceOwned = useRef<{ index: number; cursor: number } | null>(null);
   const motionArmed = useRef(false);
   /** Height of the breath just read, plus the gap under it. Advance travels up by this. */
   const lastTravel = useRef(0);
@@ -307,6 +309,22 @@ export function TbrReader({
     };
   }
 
+  /**
+   * A tap during the opening still names the breath. The full book can then
+   * follow that id. Stamping the short count on every boot write would scale
+   * a saved place; only a tap takes this stamp.
+   */
+  function stampTap(book: Work, index: number) {
+    if (index < 0 || index >= book.breaths.length) return undefined;
+    const breathId = book.breaths[index]?.id ?? "";
+    if (!breathId) return stampAt(book, index);
+    return {
+      breathId,
+      breathCount: book.breaths.length,
+      bindHash: fullBind(book) ? editionHash : "",
+    };
+  }
+
   useLayoutEffect(() => {
     let cancel = false;
     const grew = work.breaths.length > seenBreaths.current;
@@ -325,6 +343,16 @@ export function TbrReader({
       if (!fullBind(book)) return;
       const prior = useTbr.getState().progress[book.id];
       if (!prior?.entered) return;
+      // A tap owns its breath. Follow that id into the full book, and do not
+      // scale an opening index or jump back to the link.
+      if (userStepped.current) {
+        const id = prior.breathId?.trim() ?? "";
+        if (!id) return;
+        const found = book.breaths.findIndex((breath) => breath.id === id);
+        if (found < 0 || found === prior.breathIndex) return;
+        useTbr.getState().setBreath(book.id, found, stampAt(book, found));
+        return;
+      }
       let remap = readBreathRemap();
       if (shouldLoadBindRemap(prior, book.breaths, book.id) && !breathRemapLoaded()) {
         remap = await loadBreathRemap();
@@ -369,7 +397,7 @@ export function TbrReader({
       if (tappedDuringBoot !== null && tappedDuringBoot >= 0 && tappedDuringBoot < work.breaths.length) {
         booted.current = true;
         awaitingAt.current = null;
-        setBreath(work.id, tappedDuringBoot, stampAt(work, tappedDuringBoot));
+        setBreath(work.id, tappedDuringBoot, stampTap(work, tappedDuringBoot));
         linkApplied.current = true;
         startSitting(work.id);
         setShowPreface(false);
@@ -380,7 +408,9 @@ export function TbrReader({
       // Hydration itself is not a tap, and must not count as one.
       const settledAt = placeNow();
       const tappedSinceHydration = () =>
-        bootShouldKeepPlace(settledAt, placeNow()) || steppedPlace.current !== null;
+        userStepped.current ||
+        bootShouldKeepPlace(settledAt, placeNow()) ||
+        steppedPlace.current !== null;
       ensure(work.id);
       if (sit !== undefined) {
         useTbr.getState().setSittingMinutes(sit);
@@ -397,7 +427,7 @@ export function TbrReader({
           awaitingAt.current = null;
           startSitting(work.id);
           if (!tapped) setBreath(work.id, waiting, stampAt(work, waiting));
-          if (!tapped || steppedPlace.current !== null) linkApplied.current = true;
+          if (!tapped || userStepped.current || steppedPlace.current !== null) linkApplied.current = true;
           setShowPreface(false);
           setOverlay("none");
           return;
@@ -411,7 +441,7 @@ export function TbrReader({
           awaitingAt.current = null;
           startSitting(work.id);
           if (!tapped) setBreath(work.id, deepLink, stampAt(work, deepLink));
-          if (!tapped || steppedPlace.current !== null) linkApplied.current = true;
+          if (!tapped || userStepped.current || steppedPlace.current !== null) linkApplied.current = true;
           setShowPreface(false);
           setOverlay("none");
           return;
@@ -419,9 +449,11 @@ export function TbrReader({
         if (grew && !shuffle && deepLink === null) {
           await settlePlace(work);
           if (cancel) return;
-          const index = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
-          const frontAt = openingBreathIndex(work);
-          if (index < frontAt) setBreath(work.id, frontAt, stampAt(work, frontAt));
+          if (!userStepped.current) {
+            const index = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
+            const frontAt = openingBreathIndex(work);
+            if (index < frontAt) setBreath(work.id, frontAt, stampAt(work, frontAt));
+          }
         }
         return;
       }
@@ -446,7 +478,9 @@ export function TbrReader({
         awaitingAt.current = null;
         startSitting(work.id);
         if (!movedWhileSettling) setBreath(work.id, deepLink, stampAt(work, deepLink));
-        if (!movedWhileSettling || steppedPlace.current !== null) linkApplied.current = true;
+        if (!movedWhileSettling || userStepped.current || steppedPlace.current !== null) {
+          linkApplied.current = true;
+        }
         setShowPreface(false);
         setOverlay("none");
         return;
@@ -619,15 +653,23 @@ export function TbrReader({
     if (next === at + 1) {
       advanceBreath(work.id, next, {
         crossedScene: Boolean(from && to && from.sceneId !== to.sceneId),
-        place: stampAt(work, next),
+        place: stampTap(work, next),
       });
-    } else setBreath(work.id, next, stampAt(work, next));
+    } else setBreath(work.id, next, stampTap(work, next));
   }
 
   function rememberSentence(nextIndex: number, nextCursor: number) {
     ownedIndexRef.current = nextIndex;
+    sentenceOwned.current = { index: nextIndex, cursor: nextCursor };
     cursorRef.current = nextCursor;
     setCursor(nextCursor);
+  }
+
+  /** The tap owns the breath. A later full bind must not write `?at=` back. */
+  function ownTap() {
+    userStepped.current = true;
+    linkApplied.current = true;
+    awaitingAt.current = null;
   }
 
   function stepBy(delta: 1 | -1) {
@@ -641,7 +683,7 @@ export function TbrReader({
       linkApplied: linkApplied.current,
       breathCount: work.breaths.length,
     });
-    if (at !== liveIndex()) setBreath(work.id, at, stampAt(work, at));
+    if (at !== liveIndex()) setBreath(work.id, at, stampTap(work, at));
     const text = work.breaths[at]?.text ?? "";
     const here = breathSentenceCount(text, displayKind);
     const moved = stepSentencePlace({
@@ -653,18 +695,18 @@ export function TbrReader({
       breathCount: work.breaths.length,
     });
     if (moved === "start") {
-      userStepped.current = true;
+      ownTap();
       return;
     }
     if (moved === "end") {
-      userStepped.current = true;
+      ownTap();
       if (delta > 0 && workIsComplete(work.id)) {
         complete(work.id);
         setOverlay("end");
       }
       return;
     }
-    userStepped.current = true;
+    ownTap();
     if (!booted.current) steppedPlace.current = moved.index;
     rememberSentence(moved.index, moved.cursor);
     if (moved.index !== at) goTo(moved.index);
@@ -679,6 +721,15 @@ export function TbrReader({
   }
 
   useEffect(() => {
+    const owned = sentenceOwned.current;
+    if (userStepped.current && owned && owned.index === index) {
+      ownedIndexRef.current = index;
+      if (cursorRef.current !== owned.cursor) {
+        cursorRef.current = owned.cursor;
+        setCursor(owned.cursor);
+      }
+      return;
+    }
     if (ownedIndexRef.current === index) return;
     ownedIndexRef.current = index;
     if (cursorRef.current !== 0) {
