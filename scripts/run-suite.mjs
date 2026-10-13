@@ -107,6 +107,7 @@ export const allTsFiles = [
   "src/lib/site.test.ts",
   "src/lib/chunk-reload.test.ts",
   "src/lib/shell-update.test.ts",
+  "src/lib/wordmark-shell.test.ts",
   "src/lib/net.test.ts",
   "src/lib/invite-share.test.ts",
   "src/lib/import/pdf-text.test.ts",

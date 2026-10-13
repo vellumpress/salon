@@ -1,6 +1,8 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useState, type ReactNode } from "react";
 import { createFileRoute, Link, redirect } from "@tanstack/react-router";
+import { PagesShell } from "@/components/pages-shell";
 import { TbrReader } from "@/components/chamber-reader";
+import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { canonicalWorkId } from "@/lib/work-id-alias";
 import { getImport } from "@/lib/import/idb";
@@ -74,6 +76,19 @@ export const Route = createFileRoute("/read/$workId")({
   component: ReadPage,
 });
 
+function ReadPage() {
+  // A warm reader chunk paints this page into the wordmark document and
+  // WebKit raises hydration error #418. The recovered tree then drops `?at=`.
+  const [booted, setBooted] = useState(
+    () => typeof document !== "undefined" && !documentIsWordmarkShell(document),
+  );
+  useLayoutEffect(() => {
+    setBooted(true);
+  }, []);
+  if (!booted) return <PagesShell />;
+  return <ReadBody />;
+}
+
 /**
  * Loading and error frames sit on the same daylight path as `TbrReader`.
  * A device import paints this gate first; when the reader mounts it reuses
@@ -99,7 +114,7 @@ function workReadyForAt(book: Work | null | undefined, at: number | undefined) {
   return book;
 }
 
-function ReadPage() {
+function ReadBody() {
   const { workId } = Route.useParams();
   const { shuffle, sit, pair, at, episode, echo, hosted } = Route.useSearch();
   const pageWork = useTbr((s) => s.pageWork);
