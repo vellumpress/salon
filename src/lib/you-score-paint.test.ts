@@ -97,3 +97,11 @@ test("You paints the score from local data and does not blank the first view", (
   assert.doesNotMatch(you, /from "@\/lib\/use-reader-session"/);
   assert.doesNotMatch(you, /kept-sentences/);
 });
+
+test("a direct /you open paints the shell instead of throwing a redirect", () => {
+  const page = readFileSync(new URL("../routes/you.tsx", import.meta.url), "utf8");
+  const route = page.slice(page.indexOf("export const Route"));
+  assert.match(page, /return <PagesShell/);
+  assert.doesNotMatch(route, /beforeLoad/);
+  assert.doesNotMatch(page, /throw redirect/);
+});
