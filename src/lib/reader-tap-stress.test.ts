@@ -11,6 +11,7 @@ import {
   catalogIdsFromDiff,
   catalogWalkMode,
   isPageGotoTimeout,
+  isRetryableCatalogOpen,
   resolveEpochDay,
   selectCatalogWalk,
   usableDiffBase,
@@ -836,7 +837,7 @@ async function openCatalogOnce(page: Page, id: string, at: number) {
       return;
     } catch (error) {
       last = error;
-      if (isPageGotoTimeout(error)) throw error;
+      if (isRetryableCatalogOpen(error)) throw error;
       if (!readerDown(error) || attempt >= 2) break;
       await ensureServer();
     }
@@ -878,7 +879,7 @@ async function openCatalogWithRetry(browser: Browser, page: Page, id: string, at
     await openCatalogOnce(page, id, at);
     return page;
   } catch (error) {
-    if (!isPageGotoTimeout(error)) throw error;
+    if (!isRetryableCatalogOpen(error)) throw error;
     console.log(`page.goto timed out on ${id} at ${at}; retrying once`);
     await Promise.race([
       page.context().close().catch(() => undefined),
