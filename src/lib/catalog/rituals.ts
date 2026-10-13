@@ -926,6 +926,71 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Four escaped prisoners walk into Saragossa at ten at night with thirty-one cuartos between them and eat dry bread under the leaning tower.",
   "lady-into-fox":
     "Wonderful events are irregular — then Mrs. Tebrick’s change into a vixen is an established fact.",
+  // Mira Tue 13 Oct 2026 PITCHES-3 — The Underdogs (Unwind, On a walk, Before sleep) and the next Before sleep cards with no pitch. Each line is drawn from the card’s opening sit.
+  "underdogs":
+    "A dog barks in the sierra and Demetrio is told to hide from the soldiers.",
+  "siddhartha":
+    "In the shade of the fig tree by the river, the Brahman’s handsome son learns to speak the Om silently, and his friend Govinda means to follow him anywhere.",
+  "smoke-bellew":
+    "Kit Bellew walks into the office of a San Francisco society weekly to pass on a friend’s advice, and walks out an unpaid editor with a serial to write.",
+  "song-of-songs":
+    "In Solomon’s royal tent, the Shulamite longs for the shepherd she loves and turns away the king’s golden promises.",
+  "songs-and-satires":
+    "Masters lists the silences, of the stars, the sea, a man and a maid, and an old soldier asked by a boy how he lost his leg.",
+  "songs-from-vagabondia":
+    "Off with the fetters: the vagabond poets claim art, letters, music and wine, and the comrade heart that outlasts them all.",
+  "songs-of-childhood":
+    "A child wakes in white moonlight to the gnomies singing in the wood, and by the time the shoes are on, a robin is singing of buttercups and dew.",
+  "songs-of-travel":
+    "Give me the life I love, sings the vagabond: the jolly heaven above, a bed in the bush with stars to see, and the road before him.",
+  "south-sea-tales":
+    "An overloaded schooner of pearl buyers, deck passengers, pigs and bananas sails from Rangiroa for Tahiti and lies becalmed on a glassy sea.",
+  "st-peter-s-umbrella":
+    "The schoolmaster’s widow at Halap leaves only a goat, a fattening goose and a two-year-old girl, and the village gives her a very decent funeral.",
+  "stories-from-tagore":
+    "Five-year-old Mini chatters through her father’s seventeenth chapter, then runs to the window shouting at a Cabuliwallah passing in the road.",
+  "tales-grotesque-and-curious":
+    "Everyone at Ike-no-O knows the nose of the priest Zenchi Naigu, five or six inches long, and he pretends not to mind it.",
+  "ten-minute-stories":
+    "At a moorland crossroads at dusk a walker can’t make his map match the signpost, and takes the arm that reads Over Litacy Hill.",
+  "the-black-monk-and-other-stories":
+    "Worn out and on his doctor’s advice, Kovrin drives in spring to his old guardian’s estate, where the gardens bloom with more flowers than he has ever seen.",
+  "the-cabin":
+    "Dawn comes over the huerta near Valencia: the last nightingales, the sparrows off the thatch, and carts creeping toward the city like files of ants.",
+  "the-chinese-fairy-book":
+    "A little brother sows cooked grain, and the single seed that sprouts grows an ear of millet so huge that a Roc flies off with it to an isle of gold.",
+  "the-civilization-of-china":
+    "Giles asks what people mean by China, and shows that asking a returning traveller how he liked it is like asking how one liked Europe.",
+  "the-colonel-s-dream":
+    "One March morning on lower Broadway, two partners watch the clock and wait for word on the sale that will make them rich or ruin them.",
+  "the-complete-original-short-stories":
+    "For days the scattered remnants of a beaten army trail through Rouen, and the town waits for the Prussians to come in.",
+  "conference":
+    "From all the seven circles the birds flock into a great divan to choose a king, and Tajidar the Wise rises, weeping, to speak first.",
+  "the-crescent-moon":
+    "On the seashore of endless worlds the children meet, building houses of sand and floating boats of withered leaves.",
+  "the-cycle-of-spring":
+    "The King’s court is in an uproar because the Queen found two grey hairs behind his ear, and to him they ring like a bell.",
+  "the-divine-comedy":
+    "Midway on the journey of his life Dante finds himself in a dark wood, and at the foot of a hill a panther blocks his way.",
+  "the-dream-play":
+    "The Daughter of Indra follows a ray of lightning down through the clouds toward the earth, and her father warns her what its people are like.",
+  "the-faith-of-men":
+    "A traveller in the far North washes his hands of Thomas Stevens, the mighty hunter who once strolled into his camp to borrow a pinch of soda.",
+  "the-father":
+    "In the Captain’s lamplit sitting room, the trooper Nöjd is called in before the Pastor to say whether he is the father of the servant-girl’s child.",
+  "the-fortune-of-the-rougons":
+    "Outside the Rome Gate of Plassans lies the Aire Saint-Mittre, an old cemetery gone wild with weeds and pear-trees nobody will pick.",
+  "the-fugitive":
+    "Tagore addresses the Eternal Fugitive sweeping on through space, then stops at a crossroads to bid a friend farewell.",
+  "the-gods-of-pegana":
+    "Before Olympus, Mana-Yood-Sushai made the gods and rested, and Skarl the drummer beats on so that he will not wake.",
+  "the-golden-bowl":
+    "On an August afternoon in Bond Street, the Prince wanders past shop windows, his marriage settled at three o’clock and dinner with his bride at half-past eight.",
+  "the-golden-whales-of-california":
+    "Once in Kalamazoo the gods went walking two by two, for a girl with an innocent heart lived there in a cottage apart.",
+  "the-grand-babylon-hotel":
+    "At 7.45 on a sultry June night, a stranger in the smoking-room of the Grand Babylon asks the great head waiter Jules for an Angel Kiss.",
 };
 
 /** Default Rituals chip — first-session / stranger lead, never Serialize. */
@@ -1029,7 +1094,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-three-impostors",
       "reginald",
       "last-poems-housman",
-      "the-dynamiter",
+      // Mira PITCHES-3 — these leave Unwind and Before sleep. The shelf rows stay. Underdogs stays on On a walk.
       "candide",
       "trooper-peter-halket-of-mashonaland",
       "the-toys-of-peace",
@@ -1091,7 +1156,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-colonel-s-dream",
       "the-comedienne",
       "the-crux",
-      "the-dream",
       "the-gods-of-pegana",
       "the-grand-babylon-hotel",
       "the-hidden-force",
@@ -1130,7 +1194,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "songs-from-vagabondia",
       "songs-of-childhood",
       "ten-minute-stories",
-      "the-everlasting-mercy",
       "the-golden-bowl",
       "the-rainbow",
       "the-sword-of-welleran",
@@ -1199,9 +1262,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "faust-part-i",
       "the-divine-comedy",
       "eugene-onegin",
-      "gilgamesh",
       "bontshe-the-silent",
-      "shahnameh",
       "song-of-songs",
       "baudelaire-prose-and-poetry",
       "tales-grotesque-and-curious",
@@ -1232,10 +1293,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "saragossa",
       "leon-roch",
       "yiddish-short-stories",
-      "tales-of-old-japan",
       "chinese-literature",
       "the-prose-tales",
-      "self-determining-haiti",
       "leon-roch-vol-2",
       "in-midsummer-days",
       "the-chinese-fairy-book",
@@ -1250,7 +1309,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "hebrew-literature",
       "the-history-of-yiddish-literature",
       "korean-folk-tales",
-      "smoke-and-steel",
       "gods-trombones",
       "lady-macbeth",
       "conference",
@@ -1273,7 +1331,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "anandamath",
       "enchanted-april",
       "quicksand",
-      "underdogs",
       "kwaidan-stories-and-studies-of-strange-things",
       "thais",
       "lolly-willowes",
@@ -1763,7 +1820,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "of-human-bondage",
       "death-comes-for-the-archbishop",
       "enchanted-april",
-      "underdogs",
       "lolly-willowes",
       "cheri",
       "all-quiet-on-the-western-front",
