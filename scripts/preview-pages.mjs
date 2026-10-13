@@ -9,6 +9,7 @@ import { createServer } from "node:http";
 import { extname, join, normalize } from "node:path";
 import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { isStaticPublicPath } from "./spa-pages-fallback.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dist = join(root, "dist");
@@ -66,6 +67,15 @@ const server = createServer((req, res) => {
   }
   if (existsSync(file) && statSync(file).isFile()) {
     send(res, 200, file, TYPES[extname(file)] ?? "application/octet-stream");
+    return;
+  }
+  // GitHub Pages answers this with 404.html, which immediately
+  // location.replace's into /?/<route>. That client redirect aborts
+  // Playwright's page.goto (net::ERR_ABORTED) once every few hundred books.
+  // The walk is tapping the reader, so a document miss is the shell itself.
+  // A missing script or font still falls through 404.html.
+  if (!isStaticPublicPath(path)) {
+    send(res, 200, join(dist, "index.html"), TYPES[".html"]);
     return;
   }
   send(res, 404, join(dist, "404.html"), TYPES[".html"]);

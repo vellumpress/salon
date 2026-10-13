@@ -11,6 +11,7 @@ import {
   catalogIdsFromDiff,
   catalogWalkMode,
   isPageGotoTimeout,
+  isRetryableCatalogOpen,
   resolveEpochDay,
   rotatingSample,
   selectCatalogWalk,
@@ -160,6 +161,22 @@ test("a page.goto timeout is retryable and a step miss is not", () => {
   assert.equal(isPageGotoTimeout(new Error("locator.waitFor: Timeout 30000ms exceeded.")), false);
   assert.equal(
     isPageGotoTimeout(new Error("page.waitForFunction: Timeout 30000ms exceeded.")),
+    false,
+  );
+  assert.equal(
+    isRetryableCatalogOpen(
+      new Error(
+        "page.goto: net::ERR_ABORTED at http://127.0.0.1:8081/salon/read/a-boy-s-will?at=4",
+      ),
+    ),
+    true,
+  );
+  assert.equal(
+    isRetryableCatalogOpen(new Error("Execution context was destroyed, most likely because of a navigation")),
+    true,
+  );
+  assert.equal(
+    isRetryableCatalogOpen(new Error("passing back: index 0:0, expected 117:0")),
     false,
   );
 });

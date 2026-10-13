@@ -111,3 +111,17 @@ export function isPageGotoTimeout(error: unknown): boolean {
   const message = error instanceof Error ? error.message : String(error);
   return /page\.goto: Timeout \d+ms exceeded/.test(message);
 }
+
+/**
+ * A catalog open can be retried. A sentence-step miss cannot.
+ * `ERR_ABORTED` is the 404 shim's `location.replace` cutting off `page.goto`,
+ * or a service-worker reload landing mid-navigation. The book is opened again
+ * on a fresh tab.
+ */
+export function isRetryableCatalogOpen(error: unknown): boolean {
+  if (isPageGotoTimeout(error)) return true;
+  const message = error instanceof Error ? error.message : String(error);
+  return /net::ERR_ABORTED|Execution context was destroyed|frame was detached|Navigation interrupted|Target page, context or browser has been closed/i.test(
+    message,
+  );
+}
