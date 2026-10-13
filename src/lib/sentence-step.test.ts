@@ -65,7 +65,7 @@ test("moby-dick s3-32 steps one sentence, including the continuation and the bre
   const blocks = packDisplayBlocks(work.breaths[at]!.text, phoneLineMeasure, phoneBlockLimit(), "prose");
   assert.deepEqual(
     blocks.map((block) => block.sentences),
-    [1, 1],
+    [1, 2],
   );
   const onContinuation = stepSentencePlace({
     index: at,

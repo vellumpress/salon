@@ -1,5 +1,5 @@
 import { isSectionBreak, splitEmphasis } from "./emphasized-text.ts";
-import { sentenceSpans } from "./sentences.ts";
+import { quoteIntervals, sentenceSpans, type SentenceSpan } from "./sentences.ts";
 
 /** A displayed block may be this fraction of the viewport, and no taller. */
 export const VIEWPORT_BLOCK_FRACTION = 1 / 3;
@@ -63,14 +63,66 @@ export type DisplayMetrics = {
   faceReady: boolean;
 };
 
+type PackUnit = { start: number; end: number; sentences: number };
+
+/**
+ * A quotation that fits in the third stays one unit, including a nested
+ * quote that fits inside a taller one. A quotation past the third is left
+ * in sentences so the packer can break at those ends.
+ */
+function unitsForPack(
+  text: string,
+  spans: SentenceSpan[],
+  measure: (sample: string) => number,
+  limitPx: number,
+  speaker: string | null,
+): PackUnit[] {
+  // A quote is held together only when the block that would contain it,
+  // from the sentence that opens it, still fits. A later speech repeats the
+  // speaker, so that label counts too. A taller quote is left in sentences.
+  const fits = (sample: string) => {
+    if (measure(sample) > limitPx) return false;
+    if (!speaker) return true;
+    return measure(showBlock(sample, speaker, false)) <= limitPx;
+  };
+  const held = quoteIntervals(text).filter((range) => fits(text.slice(range.start, range.end)));
+  const units: PackUnit[] = [];
+  let i = 0;
+  while (i < spans.length) {
+    let j = i;
+    let end = spans[i]!.end;
+    let sentences = 1;
+    let grew = true;
+    while (grew) {
+      grew = false;
+      for (const range of held) {
+        if (!(range.start < end && range.end > spans[i]!.start && range.end > end)) continue;
+        let k = j;
+        while (k + 1 < spans.length && spans[k]!.end < range.end) k += 1;
+        const candidateEnd = spans[k]!.end;
+        if (!fits(text.slice(spans[i]!.start, candidateEnd))) continue;
+        end = candidateEnd;
+        j = k;
+        sentences = k - i + 1;
+        grew = true;
+      }
+    }
+    units.push({ start: spans[i]!.start, end, sentences });
+    i = j + 1;
+  }
+  return units;
+}
+
 /**
  * Group sentence slices so each block measures within `limitPx`.
- * A sentence that is taller on its own stays whole. A quotation stays
- * whole too, even when that one block is taller than the third: a cut
- * inside it would take the words out of the speech. Verse is one block
- * even when it holds many sentences. Prose slices joined together are
- * the original string. A play speech repeats "Speaker:" on every block
- * after the first; the slices underneath still join back to the original.
+ * A sentence that is taller on its own stays whole. A quotation that fits
+ * in the third stays whole, including one nested inside a taller quote.
+ * A quotation past the third breaks at sentence ends inside it, and each
+ * of those blocks stays within the third unless it is a single sentence.
+ * Abbreviations are not breaks. Verse is one block even when it holds many
+ * sentences. Prose slices joined together are the original string. A play
+ * speech repeats "Speaker:" on every block after the first; the slices
+ * underneath still join back to the original.
  */
 export function packDisplayBlocks(
   text: string,
@@ -81,25 +133,31 @@ export function packDisplayBlocks(
   if (!text) return [{ text, sentences: 1 }];
   if (kind === "verse") return [{ text, sentences: 1 }];
   const speaker = kind === "speech" ? speakerPrefix(text) : null;
-  const spans = sentenceSpans(text);
+  const spans = sentenceSpans(text, "in-quotes");
   if (spans.length <= 1 || !(limitPx > 0)) {
     return [{ text, sentences: 1 }];
+  }
+  const units = unitsForPack(text, spans, measure, limitPx, speaker);
+  if (units.length <= 1) {
+    return [{ text, sentences: Math.max(1, units[0]?.sentences ?? spans.length) }];
   }
   const raws: string[] = [];
   const counts: number[] = [];
   let from = 0;
-  while (from < spans.length) {
+  while (from < units.length) {
     let lo = from;
-    let hi = spans.length - 1;
+    let hi = units.length - 1;
     while (lo < hi) {
       const mid = Math.floor((lo + hi + 1) / 2);
-      const sample = showBlock(rawSlice(text, spans, from, mid + 1), speaker, from === 0);
+      const sample = showBlock(text.slice(units[from]!.start, units[mid]!.end), speaker, from === 0);
       if (measure(sample) <= limitPx) lo = mid;
       else hi = mid - 1;
     }
     const next = lo + 1;
-    raws.push(rawSlice(text, spans, from, next));
-    counts.push(next - from);
+    let sentences = 0;
+    for (let u = from; u < next; u += 1) sentences += units[u]!.sentences;
+    raws.push(text.slice(units[from]!.start, units[next - 1]!.end));
+    counts.push(Math.max(1, sentences));
     from = next;
   }
   if (raws.join("") !== text) {
@@ -109,16 +167,6 @@ export function packDisplayBlocks(
     text: showBlock(raw, speaker, index === 0),
     sentences: counts[index] ?? 1,
   }));
-}
-
-function rawSlice(
-  text: string,
-  spans: { start: number; end: number }[],
-  from: number,
-  next: number,
-) {
-  const sliceEnd = next < spans.length ? spans[next]!.start : text.length;
-  return text.slice(spans[from]!.start, sliceEnd);
 }
 
 /**
