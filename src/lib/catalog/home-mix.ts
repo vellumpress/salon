@@ -1,18 +1,35 @@
 import { hashSeed } from "../mondrian.ts";
 import { shuffleWithSeed } from "../recommend.ts";
 import { blurbFor } from "./blurbs.ts";
+import { isAdaptedBySalon } from "./curatorial.ts";
+import { isBoundLocal, isEnReadableOff } from "./en-rights.ts";
 import { CLASSIC_LOCAL_WORKS } from "./full-pdf.ts";
 import { chipOnlyLabel, placeFor } from "./places.ts";
 import type { PlaceRegion } from "./region-shapes.ts";
-import type { ShelfForm, ShelfWork } from "./shelf.ts";
+import { SHELF, type ShelfForm, type ShelfWork } from "./shelf.ts";
 
 /** Home stays a short shelf: personal rows first, then a few daily shelves. */
 export const HOME_MIX_MAX_ROWS = 8;
 export const HOME_MIX_CARD_CAP = 12;
 const MIN_PERSONAL = 4;
-const MIN_CATALOG = 5;
+const MIN_GENRE = 5;
+/** A place row needs a real shelf, not a handful of titles. */
+const MIN_PLACE = 6;
 const MIN_BLURB = 24;
 const BECAUSE_CAP = 2;
+
+/**
+ * Soft hold, and the Japanese catalog alias of the same book.
+ * Unhuman Tour (Kusamakura) stays off every row: its generated line still
+ * repeats Botchan's plot. The book text is left as stored.
+ */
+const MIX_UNRELEASED_IDS = new Set<string>([
+  "unhuman-tour-kusamakura",
+  "kusamakura-unhuman-tour",
+]);
+
+/** Broad place rows a new reader can start from. Niche countries come later. */
+const LEAD_PLACES = ["place:fr", "place:jp"] as const;
 
 export type MixHistory = {
   opened: string[];
@@ -217,6 +234,7 @@ export function homeMixRows(
   pool: readonly ShelfWork[] = CLASSIC_LOCAL_WORKS,
 ): MixRow[] {
   const ready = pool.flatMap((work) => {
+    if (!releasedForMix(work)) return [];
     const card = toCard(work);
     return card ? [card] : [];
   });
@@ -233,6 +251,7 @@ export function homeMixRows(
         [seed],
         [...profiles.values()],
         new Set([seed.work.id, ...history.finished]),
+        blurbKeysOf([seed.work]),
         laneSeed(day, `because:${seed.work.id}`),
         HOME_MIX_CARD_CAP,
       );
@@ -254,6 +273,7 @@ export function homeMixRows(
         finished,
         [...profiles.values()],
         new Set(history.finished),
+        blurbKeysOf(finished.map((profile) => profile.work)),
         laneSeed(day, "finish"),
         HOME_MIX_CARD_CAP,
       );
@@ -284,27 +304,12 @@ export function homeMixRows(
     for (const card of row.cards) used.add(card.work.id);
   }
 
-  const catalog = catalogCandidates(ready.map((card) => card.work));
-  const genres = shuffleWithSeed(
-    catalog.filter((row) => row.kind === "genre"),
-    laneSeed(day, "genre-order"),
-  );
-  const places = shuffleWithSeed(
-    catalog.filter((row) => row.kind === "place"),
-    laneSeed(day, "place-order"),
-  );
-  const ordered: { id: string; title: string; works: ShelfWork[] }[] = [];
-  const span = Math.max(genres.length, places.length);
-  for (let i = 0; i < span; i++) {
-    const genre = genres[i];
-    const place = places[i];
-    if (genre) ordered.push(genre);
-    if (place) ordered.push(place);
-  }
-  for (const candidate of ordered) {
+  const catalog = orderedCatalog(catalogCandidates(ready.map((card) => card.work)), day);
+  for (const candidate of catalog) {
     if (rows.length >= HOME_MIX_MAX_ROWS) break;
-    const cards = takeShelf(candidate.works, laneSeed(day, candidate.id), used);
-    if (cards.length < MIN_CATALOG) continue;
+    const minimum = candidate.kind === "place" ? MIN_PLACE : MIN_GENRE;
+    const cards = takeShelf(candidate.works, laneSeed(day, candidate.id), used, minimum);
+    if (cards.length < minimum) continue;
     rows.push({ id: candidate.id, title: candidate.title, cards });
     for (const card of cards) used.add(card.work.id);
   }
@@ -364,16 +369,16 @@ function catalogCandidates(works: ShelfWork[]) {
   const forms: ShelfForm[] = ["novel", "stories", "poem", "play"];
   for (const form of forms) {
     const shelf = works.filter((work) => work.form === form);
-    if (shelf.length >= MIN_CATALOG) {
+    if (shelf.length >= MIN_GENRE) {
       rows.push({ id: `form:${form}`, title: FORM_TITLE[form], kind: "genre", works: shelf });
     }
   }
   const ghosts = works.filter(isGhostStories);
-  if (ghosts.length >= MIN_CATALOG) {
+  if (ghosts.length >= MIN_GENRE) {
     rows.push({ id: "genre:ghost", title: "Ghost stories", kind: "genre", works: ghosts });
   }
   const seas = works.filter(isSeaWork);
-  if (seas.length >= MIN_CATALOG) {
+  if (seas.length >= MIN_GENRE) {
     rows.push({ id: "genre:sea", title: "Sea stories", kind: "genre", works: seas });
   }
   const byRegion = new Map<string, ShelfWork[]>();
@@ -385,7 +390,7 @@ function catalogCandidates(works: ShelfWork[]) {
     byRegion.set(region, list);
   }
   for (const [region, shelf] of byRegion) {
-    if (shelf.length < MIN_CATALOG) continue;
+    if (shelf.length < MIN_PLACE) continue;
     rows.push({
       id: `place:${region}`,
       title: REGION_LABEL[region as PlaceRegion],
@@ -396,10 +401,44 @@ function catalogCandidates(works: ShelfWork[]) {
   return rows;
 }
 
+function orderedCatalog(
+  catalog: { id: string; title: string; kind: "genre" | "place"; works: ShelfWork[] }[],
+  day: string,
+) {
+  const byId = new Map(catalog.map((row) => [row.id, row]));
+  const taken = new Set<string>();
+  const ordered: typeof catalog = [];
+  const take = (id: string | undefined) => {
+    if (!id || taken.has(id)) return;
+    const row = byId.get(id);
+    if (!row) return;
+    taken.add(id);
+    ordered.push(row);
+  };
+  take("form:stories");
+  take("form:novel");
+  const lead = shuffleWithSeed(
+    LEAD_PLACES.flatMap((id) => {
+      const row = byId.get(id);
+      return row ? [row] : [];
+    }),
+    laneSeed(day, "lead-place"),
+  )[0];
+  if (lead) take(lead.id);
+  ordered.push(
+    ...shuffleWithSeed(
+      catalog.filter((row) => !taken.has(row.id)),
+      laneSeed(day, "rest-order"),
+    ),
+  );
+  return ordered;
+}
+
 function rankCards(
   targets: Profile[],
   pool: Profile[],
   exclude: Set<string>,
+  seedBlurbs: Set<string>,
   seed: number,
   limit: number,
 ) {
@@ -424,7 +463,8 @@ function rankCards(
   }
   return picked.flatMap((row) => {
     const card = toCard(row.item.work);
-    return card ? [card] : [];
+    if (!card || seedBlurbs.has(blurbKey(card.blurb)) || sharesDescription(card.work.id, card.blurb)) return [];
+    return [card];
   });
 }
 
@@ -451,9 +491,9 @@ function bestTier(targets: Profile[], item: Profile) {
   return tier;
 }
 
-function takeShelf(works: ShelfWork[], seed: number, used: Set<string>) {
+function takeShelf(works: ShelfWork[], seed: number, used: Set<string>, minimum: number) {
   const fresh = works.filter((work) => !used.has(work.id));
-  const source = fresh.length >= MIN_CATALOG ? fresh : works;
+  const source = fresh.length >= minimum ? fresh : works;
   return shuffleWithSeed(source, seed)
     .slice(0, HOME_MIX_CARD_CAP)
     .flatMap((work) => {
@@ -561,7 +601,75 @@ function toCard(work: ShelfWork): MixCard | null {
   const blurb = blurbFor(work).replace(/\s+/g, " ").trim();
   const time = mixTimeLabel(work.minutes);
   if (!work.title.trim() || !work.author.trim() || blurb.length < MIN_BLURB || !time) return null;
+  if (sharesDescription(work.id, blurb)) return null;
   return { work, blurb, time };
+}
+
+/** Held, draft, catalog-only, and soft-hold titles never join a row. */
+function releasedForMix(work: ShelfWork) {
+  if (MIX_UNRELEASED_IDS.has(work.id)) return false;
+  if (isEnReadableOff(work.id)) return false;
+  if (!isBoundLocal(work)) return false;
+  if (isAdaptedBySalon(work.id)) return false;
+  if (work.author === "tbr" || work.author === "Salon") return false;
+  return true;
+}
+
+let ownersByBlurb: Map<string, string[]> | null = null;
+
+function ownersMap() {
+  if (ownersByBlurb) return ownersByBlurb;
+  const map = new Map<string, string[]>();
+  for (const work of SHELF) {
+    const key = blurbKey(blurbFor(work));
+    if (key.length < MIN_BLURB) continue;
+    const list = map.get(key) ?? [];
+    list.push(work.id);
+    map.set(key, list);
+  }
+  ownersByBlurb = map;
+  return map;
+}
+
+/** Shelf ids whose description is this exact line. */
+export function descriptionOwners(blurb: string): string[] {
+  return ownersMap().get(blurbKey(blurb)) ?? [];
+}
+
+/** Ids that would show a line already used by a different book. */
+export function sharedDescriptionIds(cards: { id: string; blurb: string }[]): Set<string> {
+  const owners = new Map<string, string[]>();
+  for (const card of cards) {
+    const key = blurbKey(card.blurb);
+    if (key.length < MIN_BLURB) continue;
+    const list = owners.get(key) ?? [];
+    list.push(card.id);
+    owners.set(key, list);
+  }
+  const shared = new Set<string>();
+  for (const ids of owners.values()) {
+    if (ids.length < 2) continue;
+    for (const id of ids) shared.add(id);
+  }
+  return shared;
+}
+
+function sharesDescription(id: string, blurb: string) {
+  const owners = descriptionOwners(blurb);
+  return owners.length !== 1 || owners[0] !== id;
+}
+
+function blurbKeysOf(works: ShelfWork[]) {
+  const keys = new Set<string>();
+  for (const work of works) {
+    const key = blurbKey(blurbFor(work));
+    if (key.length >= MIN_BLURB) keys.add(key);
+  }
+  return keys;
+}
+
+function blurbKey(text: string) {
+  return text.replace(/\s+/g, " ").trim().toLowerCase();
 }
 
 function overlap(left: string[], right: string[]) {

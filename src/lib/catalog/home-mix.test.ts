@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { CLASSIC_LOCAL_WORKS } from "./full-pdf.ts";
+import { blurbFor } from "./blurbs.ts";
 import {
+  descriptionOwners,
   emptyMixHistory,
   homeMixRows,
   HOME_MIX_MAX_ROWS,
@@ -9,9 +11,10 @@ import {
   isSeaWork,
   mixHistoryFromState,
   mixTimeLabel,
+  sharedDescriptionIds,
   type MixHistory,
 } from "./home-mix.ts";
-import { shelfWork } from "./shelf.ts";
+import { SHELF, shelfWork } from "./shelf.ts";
 
 const DAY = "2026-10-13";
 
@@ -55,6 +58,16 @@ test("a new reader gets a starter row and no personal shelf", () => {
   const rows = homeMixRows(emptyMixHistory(), DAY);
   assert.equal(rows[0]?.title, "Start here");
   assert.equal(rows[0]?.id, "start");
+  assert.equal(rows[1]?.title, "Short stories");
+  assert.equal(rows[2]?.title, "Novels");
+  assert.ok(["Stories from Japan", "France"].includes(rows[3]?.title ?? ""), rows[3]?.title);
+  const leadPlace = rows.findIndex((row) => row.id === "place:jp" || row.id === "place:fr");
+  const hungary = rows.findIndex((row) => row.id === "place:hu");
+  assert.equal(leadPlace, 3);
+  if (hungary >= 0) assert.ok(hungary > leadPlace);
+  for (const row of rows) {
+    if (row.id.startsWith("place:")) assert.ok(row.cards.length >= 6, row.title);
+  }
   assert.ok(rows.length >= 6 && rows.length <= HOME_MIX_MAX_ROWS);
   assert.equal(
     rows.some((row) => /because you read|more like what you finish/i.test(row.title)),
@@ -85,6 +98,52 @@ test("the same day repeats and the next day moves", () => {
   assert.deepEqual(again, first);
   const next = homeMixRows(history, "2026-10-14").map((row) => `${row.title}:${row.cards.map((card) => card.work.id).join(",")}`);
   assert.notDeepEqual(next, first);
+});
+
+test("held and unreleased titles stay off every row", () => {
+  const held = new Set(["unhuman-tour-kusamakura", "kusamakura-unhuman-tour"]);
+  for (const day of [DAY, "2026-10-14", "2026-01-01"]) {
+    for (const history of [emptyMixHistory(), readThree()]) {
+      for (const row of homeMixRows(history, day)) {
+        for (const card of row.cards) {
+          assert.equal(held.has(card.work.id), false, `${day} ${row.title}`);
+        }
+      }
+    }
+  }
+});
+
+test("a repeated description, or the seed book's own line, never lands on a card", () => {
+  const shared = sharedDescriptionIds([
+    { id: "a", blurb: "A hot-headed teacher who refuses the provincial game." },
+    { id: "b", blurb: "A hot-headed teacher who refuses the provincial game." },
+    { id: "c", blurb: "A mountain walk that keeps its own sentence." },
+  ]);
+  assert.equal(shared.has("a"), true);
+  assert.equal(shared.has("b"), true);
+  assert.equal(shared.has("c"), false);
+
+  const key = (text: string) => text.replace(/\s+/g, " ").trim().toLowerCase();
+  for (const history of [emptyMixHistory(), readThree()]) {
+    for (const row of homeMixRows(history, DAY)) {
+      const seen = new Set<string>();
+      for (const card of row.cards) {
+        const owners = descriptionOwners(card.blurb);
+        assert.deepEqual(owners, [card.work.id], card.work.id);
+        assert.equal(seen.has(key(card.blurb)), false, row.title);
+        seen.add(key(card.blurb));
+      }
+      if (!row.id.startsWith("because:")) continue;
+      const seedId = row.id.slice("because:".length);
+      const seed = SHELF.find((work) => work.id === seedId);
+      assert.ok(seed, seedId);
+      const seedLine = key(blurbFor(seed!));
+      for (const card of row.cards) {
+        assert.notEqual(card.work.id, seedId);
+        assert.notEqual(key(card.blurb), seedLine, card.work.id);
+      }
+    }
+  }
 });
 
 test("every card has a description and a real time", () => {

@@ -1303,7 +1303,7 @@ html[data-status-motion="1"] .status-bar-fill::before {
 
 .curated-row-title {
   margin: 0;
-  padding: 0.85rem 1.35rem 0.15rem;
+  padding: 0.4rem 1.35rem 0;
   color: var(--color-ink);
 }
 
@@ -1312,7 +1312,27 @@ html[data-status-motion="1"] .status-bar-fill::before {
 }
 
 .curated-lane .works-scroller {
-  padding-inline: 1.5rem;
+  padding: 0.4rem 1.5rem 0.45rem;
+}
+
+/* Phone: row rhythm matches the shelf's own padding, without a second band of paper. */
+@media (max-width: 767px) {
+  .curated-head {
+    padding-top: 0.55rem;
+  }
+
+  .curated-row-title {
+    padding: 0.55rem 1.35rem 0;
+  }
+
+  .curated-lane .works-scroller {
+    padding-block: 0.35rem 0.55rem;
+  }
+
+  .works-card.has-detail {
+    min-height: 0;
+    padding-bottom: 0.15rem;
+  }
 }
 
 .curated-lane.cell-works::before,
