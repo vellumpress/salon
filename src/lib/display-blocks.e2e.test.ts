@@ -638,7 +638,9 @@ test(
 
       await openAt(page, "cranford", 46);
       const face = await faceOf();
-      assert.equal(face.family, "Cormorant Garamond");
+      // CI WebKit quotes the computed family. Local WebKit does not.
+      const primary = face.family.replace(/["']/g, "").split(",")[0]?.trim();
+      assert.equal(primary, "Cormorant Garamond");
       assert.equal(face.check, true);
       assert.equal(face.face, "yes");
       assert.equal(face.viewport, 844);
