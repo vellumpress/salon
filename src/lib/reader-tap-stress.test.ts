@@ -944,13 +944,24 @@ async function walkCatalog(browser: Browser, mode: "sample" | "full") {
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
         // A late hydration can paint breath 0 over the chapter the frame was on.
+        // A service-worker reload can also destroy the page mid-step.
         // Open that chapter again and take the one step back once more.
-        if (!/index 0:0/.test(message)) throw error;
-        console.log(`${id} back fell to 0:0; opening ${at} again`);
+        // A wrong sentence is not retried.
+        if (!/index 0:0/.test(message) && !isRetryableCatalogOpen(error)) throw error;
+        console.log(`${id} back interrupted (${message.split("\n")[0]}); opening ${at} again`);
         page = await openCatalogWithRetry(browser, page, id, at);
         await step(page, -1, at - 1, `${id} back`);
       }
-      await step(page, 1, at, `${id} forward`);
+      try {
+        await step(page, 1, at, `${id} forward`);
+      } catch (error) {
+        if (!isRetryableCatalogOpen(error)) throw error;
+        const message = error instanceof Error ? error.message : String(error);
+        console.log(`${id} forward interrupted (${message.split("\n")[0]}); opening ${at} again`);
+        page = await openCatalogWithRetry(browser, page, id, at);
+        await step(page, -1, at - 1, `${id} back`);
+        await step(page, 1, at, `${id} forward`);
+      }
     }
     seen += 1;
     stepped.add(id);
