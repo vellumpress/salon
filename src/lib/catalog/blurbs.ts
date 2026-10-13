@@ -1287,6 +1287,81 @@ const BLURBS: Record<string, string> = {
     "Once in Kalamazoo the gods went walking two by two, for a girl with an innocent heart lived there in a cottage apart.",
   "the-grand-babylon-hotel":
     "At 7.45 on a sultry June night, a stranger in the smoking-room of the Grand Babylon asks the great head waiter Jules for an Angel Kiss.",
+  // Mira Tue 13 Oct 2026 PITCHES-4 — same sentence as the ritual pitch.
+  "young-adventure":
+    "Night falls in the drug-shop, the great jars glow, and Benét retells the fisherman who hauls a brass-bound jar from the sea.",
+  "the-napoleon-of-notting-hill":
+    "Chesterton explains the game of Cheat the Prophet: humanity listens to the clever men, waits till they are dead, and does something else.",
+  "the-reign-of-greed":
+    "One December morning the round, slow steamer Tabo climbs the winding Pasig, whistling, with the bamboo rustling on its banks.",
+  "the-rise-of-david-levinsky":
+    "A cloak-and-suit millionaire looks back at the Antomir boy who landed in America with four cents in his pocket.",
+  "the-romance-of-the-milky-way":
+    "On the seventh night of the seventh month the birds of heaven make a bridge across the River of Heaven, so the Weaving-Lady can meet her husband.",
+  "the-three-taverns":
+    "Robinson walks the Valley of the Shadow, past faces to remember and faces to forget, thwarted clerks and fiddlers, and daughters of the silence.",
+  "the-town-down-the-river":
+    "Robinson’s gentlemen who jeered at Lincoln look back at the mild, untamable face that was learning them while they laughed.",
+  "the-veil-and-other-poems":
+    "At twilight an old angler fishes a willow-hung pool with an empty creel, until his float slides gently under.",
+  "the-wonderful-adventures-of-nils":
+    "On a Sunday morning in March, a lazy fourteen-year-old is left at home with the church service to read while his parents go to church.",
+  "twilight-sleep":
+    "Nona Manford asks to be squeezed in between her mother’s facial massage, her psycho-analysis and the man with the Persian miniatures.",
+  "wanderers":
+    "A red-haired painter chopping old Gunhild’s firewood turns out to be Grindhusen, who mended roads with the narrator long ago at Skreia.",
+  "yekl":
+    "On a sweltering midsummer noon in an idle cloak-shop, Jake holds forth on why Boston beats New York.",
+  "the-rainbow":
+    "For generations the Brangwens have farmed the Marsh where the Erewash winds through the alders, looking up from the fields at Ilkeston’s church tower.",
+  "the-sword-of-welleran":
+    "Merimna, city of bronze heroes and marble fountains, has forgotten war, and its unarmed guard sings of Welleran around the walls each night.",
+  "time-and-the-gods":
+    "When the gods were young they lay sleeping by a river and dreamed in marble, and when they woke, there stood Sardathrion.",
+  "the-stolen-bacillus":
+    "A Bacteriologist shows a pale, nervous visitor a slide of cholera, then a sealed tube of the living thing.",
+  "the-tragic-muse":
+    "In the sculpture garden of the great Paris exhibition, an English mother, her two daughters and her son sit in perfect silence on a green bench.",
+  "the-patrician":
+    "Dawn light travels over the great dining hall at Monkland Court, where the Caradocs have kept the trophies of their centuries.",
+  "the-price-of-love":
+    "In old Mrs. Maldon’s dim sitting-room, Rachel, in her blue pinafore-apron, stands on a footstool to light the gas.",
+  "the-private-papers-of-henry-ryecroft":
+    "For more than a week Ryecroft’s old penholder has lain untouched, and for once he is happy to let it gather dust.",
+  "kusamakura-unhuman-tour":
+    "A painter climbing a mountain path muses that this is a hard world to live in, and that art is how we make it bearable.",
+  "unhuman-tour-kusamakura":
+    "A painter climbing a mountain path muses that this is a hard world to live in, and that art is how we make it bearable.",
+  "the-red-and-the-black":
+    "White houses with red-tiled roofs climb the hillside of Verrières above the Doubs, and the nail factory on the Grande-Rue belongs to M. the Mayor.",
+  "the-paying-guest":
+    "Mumford spots an advertisement from a young lady seeking a home in the suburbs, and Emmeline wonders whether they would quite do.",
+  "the-witch-and-other-stories":
+    "On a night of thaw and blizzard, the sexton lies awake listening to the storm, sure he knows whose work it is, while his wife sews sacks by the lamp.",
+  "the-heart-of-happy-hollow":
+    "Robinson Asbury rises from bootblack to owner of the Equal Rights Barber-Shop, where the men of the quarter gather on Saturday nights.",
+  "the-horse-stealers-and-other-stories":
+    "Lost in a Christmas-week snowstorm on the doctor’s best horse, the hospital assistant Yergunov knocks at a lonely tavern with a bad name.",
+  "the-mystery-of-choice":
+    "Casting for sea-trout on a Breton stream, Darrel argues flies with the Purple Emperor, the butterfly collector who scoffs at everything he tries.",
+  "the-poems-of-emma-lazarus-volume-1":
+    "Under a stainless June sky, Lazarus watches the old earth renew her youth, and thin summer rain gray the far hills.",
+  "weird-tales":
+    "Councillor Krespel builds his house without a plan, walking at the walls until he finds where the door should go.",
+  "tragic-sense-of-life":
+    "Unamuno sets aside humanity in the abstract for the man of flesh and bone, who eats, sleeps, thinks, wills and dies.",
+  "white-buildings":
+    "Hart Crane begins with a legend of the moth and the flame, and remembers his grandmother’s letters, brown and soft as snow under the roof.",
+  "the-lonely-way":
+    "Felix comes home on furlough in his uhlan uniform and talks with his sister Johanna in their father’s little walled garden.",
+  "the-inferno":
+    "A translator introduces Strindberg, who laid his soul bare, and the autobiography that follows his long struggle with doubt and fear.",
+  "yiddish-short-stories":
+    "A plain man’s soul arrives at Judgment and watches the angels pour out his good deeds and his bad onto the scales.",
+  "the-prose-tales":
+    "Young Grineff learns his letters from the gamekeeper Savelitch, and French, in theory, from Monsieur Beaupré, who would rather learn Russian.",
+  "the-history-of-yiddish-literature":
+    "Wiener starts with the bilingual Middle Ages, when Latin held learning and the Jews turned to Hebrew, and the old romances still pleased them.",
 };
 
 /** Concrete author-level line when a work has no curated sentence. */
