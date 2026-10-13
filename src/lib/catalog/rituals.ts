@@ -861,6 +861,71 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "For three years, out of key with his time, a poet tries to bring a dead art back, and the age demands a plaster mould instead.",
   "gentlemen-prefer-blondes":
     "March 16th at the Ritz — Lorelei’s diary opens on diamonds, brains, and the joke that starts the reading.",
+  // Mira Mon 12 Oct 2026 PITCHES-2 — Before sleep cards with no pitch, second batch. Each line is drawn from the card’s opening sit.
+  "in-midsummer-days":
+    "On Midsummer Eve a ninety-year-old granny lies by her rainbow-stained window, turning her head to make the world summer or winter, while a dove sings outside.",
+  "japanese-fairy-world":
+    "On the seventh night of the seventh month the Herd-boy star and the Spinning Maiden star cross the Milky Way to meet, and old Japan hangs its poems on bamboo.",
+  "japanese-literature":
+    "At the court of an Emperor whose name is lost, a lady of no high birth holds all his favour, and the great ladies watch her with malignant eyes.",
+  "jewish-children":
+    "Busie is a year or two older than the boy who tells this, and he can hardly wait for Passover, when he will show her the ducks on the river.",
+  "kimiko":
+    "Down the Street of the Geisha the paper lanterns make a half-mile litany of names, and one of them belongs to Kimiko, the second of that name.",
+  "korean-folk-tales":
+    "At the Governor’s birthday feast in Pyong-an, his gifted sixteen-year-old son dances with Charan, the brightest dancing girl in the province.",
+  "lady-windermeres-fan":
+    "On her birthday morning Lady Windermere arranges roses in a blue bowl, shows Lord Darlington her husband’s gift of a fan, and tells him he annoyed her last night.",
+  "last-poems-housman":
+    "At sundown a soldier tells his comrade not to look on the west, and the long cloud and the single pine stand sentinel on the ending line.",
+  "leon-roch":
+    "A young woman writes to Leon on the thirtieth of August, laughing at her own jealous letter of the day before and asking him to forgive her.",
+  "leon-roch-vol-2":
+    "The house of Telleria is ruined and pretends to be ill, and its evenings now pass in the Marquesa de San Salomó’s quiet, very pious drawing-room.",
+  "lost-illusions":
+    "In an Angoulême printing house the old wooden press still groans, and Jerome-Nicolas Sechard, a pressman who cannot read, becomes its master in 1793.",
+  "lucky-pehr":
+    "On Christmas Eve, high in the church tower, an old bell-ringer sets out porridge for the elf and a trap for the rats, and a voice tells him not to curse Christmas.",
+  "mogens":
+    "On a stifling summer noon a young man lies under an old oak, and when the rain comes at last he stands bareheaded in it and sings.",
+  "more-songs-from-vagabondia":
+    "Pipes and tabors sound in the street, and the poets call everyone down from ledgers and shovels to hear the strolling singers.",
+  "nationalism":
+    "Tagore starts with the problems each people is given, and names India’s from the beginning: many races in close contact, and how to live together.",
+  "niels":
+    "At seventeen she has the black, luminous eyes of the Blid family, but none of their practical calm, and no one at home quite knows her.",
+  "on-the-eve":
+    "On one of the hottest days of 1853, two young men lie in the shade of a lime-tree by the Moskva, one awkward and thoughtful, one fair and charming.",
+  "over-the-brazier":
+    "The youngest poet in a dim library slips a green book of poems down his neck, takes it to bed, and fills the nursery with words no one understands.",
+  "pan-tadeusz":
+    "Mickiewicz calls home Lithuania, then shows a wooden manor on a low hill by a brook, its gate wide open to every passing guest.",
+  "pans-garden":
+    "Sanderson paints trees so that you can almost hear them rustle, and old David Bittacy has one of his cedars framed above his study table.",
+  "peacock-pie":
+    "A horseman rides over the hill under a clear moon, and then come Ludgate Hill, Mrs. Earth, a talking fish and poor Tired Tim.",
+  "piping-hot":
+    "On a dull November afternoon Octave Mouret’s cab, with his three trunks, pulls up at a new four-storey house in the Rue de Choiseul.",
+  "poems-by-emily-dickinson-series-one":
+    "Success is counted sweetest by those who never succeed, and then Dickinson takes her share of night, and her share of morning.",
+  "red-oleanders":
+    "Kishôr, a digger boy, steals time from the gold mines to bring Nandini red oleanders from the one tree he has found behind a rubbish heap.",
+  "rhymes-of-a-rolling-stone":
+    "Service promises no idle songs of dalliance, only a lusty love of life, and then sets out a-wandering with the mountains a part of him.",
+  "romances-of-old-japan":
+    "Through a tempest in old Yedo, Jurobei, a retainer sent away in disgrace, hurries after Shusen, the lord he still serves, sure that a rival means him harm.",
+  "rootabaga-pigeons":
+    "Blixie Bimber’s mother breaks the hash hatchet, so Blixie goes downtown with fifteen cents and finds the Potato Face Blind Man talking with a green rat.",
+  "rootabaga-stories":
+    "Gimme the Ax lives in a house where everything is the same as it always was, so he lets his children name themselves.",
+  "salammbo":
+    "At Megara, in Hamilcar’s gardens outside Carthage, the soldiers he led in Sicily feast at sunset while their master is away.",
+  "salt-water-ballads":
+    "Masefield sings the ranker, the stoker and the tired look-out, then spins the yarn of the clipper Loch Achray towing out to sea.",
+  "saragossa":
+    "Four escaped prisoners walk into Saragossa at ten at night with thirty-one cuartos between them and eat dry bread under the leaning tower.",
+  "lady-into-fox":
+    "Wonderful events are irregular — then Mrs. Tebrick’s change into a vixen is an established fact.",
 };
 
 /** Default Rituals chip — first-session / stranger lead, never Serialize. */
@@ -1014,13 +1079,11 @@ export const RITUAL_LANES: RitualLane[] = [
       "charmides-and-other-poems",
       "dauber",
       "eugenie-grandet",
-      "in-a-glass-darkly",
+      // Mira PITCHES-2 — these eight leave Unwind and Before sleep. The shelf rows stay.
       "indiana",
       "lady-windermeres-fan",
       "pans-garden",
       "peacock-pie",
-      "rosmersholm",
-      "salome",
       "salt-water-ballads",
       "songs-and-satires",
       "the-ballad-of-the-white-horse",
@@ -1062,7 +1125,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "fifty-one-tales",
       "jude-the-obscure",
       "over-the-brazier",
-      "rolling-stones",
       "salammbo",
       "smoke-bellew",
       "songs-from-vagabondia",
@@ -1081,7 +1143,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "lost-illusions",
       "mogens",
       "more-songs-from-vagabondia",
-      "rhymes-of-a-red-cross-man",
       "rhymes-of-a-rolling-stone",
       "songs-of-travel",
       "the-faith-of-men",
@@ -1176,7 +1237,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-prose-tales",
       "self-determining-haiti",
       "leon-roch-vol-2",
-      "miss-julia",
       "in-midsummer-days",
       "the-chinese-fairy-book",
       "japanese-fairy-world",
@@ -1193,10 +1253,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "smoke-and-steel",
       "gods-trombones",
       "lady-macbeth",
-      "layla",
       "conference",
       "gentlemen-prefer-blondes",
-      "of-one-blood",
       "lady-into-fox",
       "african-farm",
       "a-passage-to-india",

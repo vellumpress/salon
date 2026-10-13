@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { ritualCardPitch } from "./blurbs.ts";
 import { nearestSitPreset } from "../sitting.ts";
+import { shelfWork } from "./shelf.ts";
 import {
   RITUAL_LANES,
   RITUAL_SIT_MINUTES,
@@ -11,6 +12,7 @@ import {
   ritualCardSearch,
   ritualCardSit,
   ritualDurationLabel,
+  ritualPitchFor,
   worksForRitualLane,
 } from "./rituals.ts";
 import { measureRitualSit, ritualBookCards } from "./ritual-sit-measure.ts";
@@ -107,6 +109,33 @@ test("Quicksand opens Chapter I, not the five-minute placeholder", () => {
   assert.equal(ritualDurationLabel(work), "~17 min");
   assert.equal(ritualCardSit(work), 17);
   assert.equal(isPlaceholderRitualLabel("~5 min", sit.minutes), true);
+});
+
+test("PITCHES-2 drops eight sits from Unwind and Before sleep without emptying either lane", () => {
+  const gone = [
+    "in-a-glass-darkly",
+    "of-one-blood",
+    "rosmersholm",
+    "miss-julia",
+    "rolling-stones",
+    "salome",
+    "rhymes-of-a-red-cross-man",
+    "layla",
+  ];
+  for (const laneId of ["unwind", "before-sleep"] as const) {
+    const lane = RITUAL_LANES.find((item) => item.id === laneId);
+    assert.ok(lane);
+    const empty: string[] = [];
+    for (const id of lane.workIds) {
+      if (!shelfWork(id) || !ritualCardPitch(id).trim()) empty.push(id);
+    }
+    assert.deepEqual(empty, [], laneId);
+    for (const id of gone) assert.equal(lane.workIds.includes(id), false, `${laneId}:${id}`);
+  }
+  for (const id of gone) {
+    assert.ok(shelfWork(id), id);
+    assert.equal(ritualPitchFor(id), undefined, id);
+  }
 });
 
 test("a mid-book tale keeps its own minutes instead of the shared preset", () => {

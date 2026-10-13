@@ -1887,7 +1887,12 @@ test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     assert.equal(curatorialTrack(id), "next", id);
     assert.equal(isAdaptedBySalon(id), false, id);
     assert.equal(forYou!.workIds.includes(id), false, id);
-    assert.ok(sleep!.workIds.includes(id), id);
+    // PITCHES-2: Rolling Stones leaves Before sleep. The bind stays on Next.
+    if (id === "rolling-stones") {
+      assert.equal(sleep!.workIds.includes(id), false, id);
+    } else {
+      assert.ok(sleep!.workIds.includes(id), id);
+    }
     const at = next.indexOf(id);
     assert.ok(at > prev, `${id} follows Tier A on Next`);
     prev = at;
@@ -1953,7 +1958,12 @@ test("BATCH-5 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     assert.equal(curatorialTrack(id), "next", id);
     assert.equal(isAdaptedBySalon(id), false, id);
     assert.equal(forYou!.workIds.includes(id), false, id);
-    assert.ok(sleep!.workIds.includes(id), id);
+    // PITCHES-2: Rhymes of a Red Cross Man leaves Before sleep. The bind stays on Next.
+    if (id === "rhymes-of-a-red-cross-man") {
+      assert.equal(sleep!.workIds.includes(id), false, id);
+    } else {
+      assert.ok(sleep!.workIds.includes(id), id);
+    }
     const at = next.indexOf(id);
     assert.ok(at > prev, `${id} follows BATCH-4 on Next`);
     prev = at;
@@ -2145,7 +2155,7 @@ test("BATCH-13 CLEAR inventory binds are local Next / before-sleep sits, never F
     const at = next.indexOf(id);
     assert.ok(at > prev, `${id} follows All Quiet on Next`);
     prev = at;
-    const sit = sleep!.workIds.indexOf(id);
+    const sit: number = sleep!.workIds.indexOf(id);
     assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
     sleepAt = sit;
     assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
@@ -2219,9 +2229,14 @@ test("BATCH-15 CLEAR inventory binds are local Next / before-sleep sits, never F
     const at = next.indexOf(id);
     assert.ok(at > prev, `${id} follows All Quiet on Next`);
     prev = at;
-    const sit = sleep!.workIds.indexOf(id);
-    assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
-    sleepAt = sit;
+    const sit: number = sleep!.workIds.indexOf(id);
+    // PITCHES-2: Miss Julia leaves Before sleep. The bind stays on Next.
+    if (id === "miss-julia") {
+      assert.equal(sit, -1, `${id} leaves Before sleep`);
+    } else {
+      assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
+      sleepAt = sit;
+    }
     assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
     const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
       scenes: { title: string }[];
@@ -2299,9 +2314,14 @@ test("BATCH-16 CLEAR inventory binds are local Next / before-sleep sits, never F
     const at = next.indexOf(id);
     assert.ok(at > prev, `${id} follows All Quiet on Next`);
     prev = at;
-    const sit = sleep!.workIds.indexOf(id);
-    assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
-    sleepAt = sit;
+    const sit: number = sleep!.workIds.indexOf(id);
+    // PITCHES-2: Miss Julia leaves Before sleep. The bind stays on Next.
+    if (id === "miss-julia") {
+      assert.equal(sit, -1, `${id} leaves Before sleep`);
+    } else {
+      assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
+      sleepAt = sit;
+    }
     assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
     const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
       scenes: unknown[];
@@ -2383,9 +2403,14 @@ test("EXTRACTABLE-8 CLEAR inventory binds are local Next / before-sleep sits, ne
     const at = next.indexOf(id);
     assert.ok(at > prev, `${id} follows All Quiet on Next`);
     prev = at;
-    const sit = sleep!.workIds.indexOf(id);
-    assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
-    sleepAt = sit;
+    const sit: number = sleep!.workIds.indexOf(id);
+    // PITCHES-2: Layla leaves Before sleep. The bind stays on Next.
+    if (id === "layla") {
+      assert.equal(sit, -1, `${id} leaves Before sleep`);
+    } else {
+      assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
+      sleepAt = sit;
+    }
     assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
     const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
       title: string;
@@ -2481,9 +2506,14 @@ test("Mira 8AM CLEAR ×5 are Recommend-only local binds, never Featured", () => 
     const at = next.indexOf(id);
     assert.ok(at > prev, `${id} follows EXTRACTABLE-8 on Next`);
     prev = at;
-    const sit = sleep!.workIds.indexOf(id);
-    assert.ok(sit > sleepAt, `${id} follows EXTRACTABLE-8 on before-sleep`);
-    sleepAt = sit;
+    const sit: number = sleep!.workIds.indexOf(id);
+    // PITCHES-2: Of One Blood leaves Before sleep. The bind stays on Next.
+    if (id === "of-one-blood") {
+      assert.equal(sit, -1, `${id} leaves Before sleep`);
+    } else {
+      assert.ok(sit > sleepAt, `${id} follows EXTRACTABLE-8 on before-sleep`);
+      sleepAt = sit;
+    }
     assert.equal(
       existsSync(new URL(`./openings/${id}.json`, import.meta.url)),
       id === "maria-chapdelaine",
@@ -2656,7 +2686,7 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
     const at = next.indexOf(id);
     assert.ok(at > prev, `${id} follows All Quiet on Next`);
     prev = at;
-    const sit = sleep!.workIds.indexOf(id);
+    const sit: number = sleep!.workIds.indexOf(id);
     assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
     sleepAt = sit;
     assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
