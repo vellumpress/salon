@@ -189,6 +189,18 @@ function isAbbreviation(word: string, after: string) {
   return false;
 }
 
+/**
+ * The word the reader abbreviation check should see. A leading quote is not
+ * part of the title, and neither is a word glued on by an em dash, en dash,
+ * or a run of hyphens: back—Dr. is still Dr. A single hyphen stays, so
+ * hall-like is one word. The importer keeps the older token, so stored
+ * breaths do not move.
+ */
+function abbreviationToken(word: string) {
+  const segments = word.split(/(?:\u2014|\u2013|-{2,})+/);
+  return (segments[segments.length - 1] ?? word).replace(/^["“”'‘’]+/, "");
+}
+
 export type SentenceSpan = { start: number; end: number };
 
 type QuoteState = {
@@ -271,8 +283,9 @@ function closesOpenQuote(state: QuoteState, text: string, index: number) {
  * closed slice. Display blocks pass `"in-quotes"` so a quotation taller
  * than a third of the screen can break at those same sentence ends.
  * Mr., Mrs., Dr., and St. are abbreviations even when a quote mark sits on
- * the front of the word. The space after a break stays on the earlier
- * slice, so the next one does not start with a blank.
+ * the front of the word, or when an em dash, en dash, or double hyphen
+ * glues the previous word to the title. The space after a break stays on
+ * the earlier slice, so the next one does not start with a blank.
  */
 export function sentenceSpans(text: string, mode: "closed" | "in-quotes" = "closed"): SentenceSpan[] {
   if (!text) return [{ start: 0, end: 0 }];
@@ -299,9 +312,7 @@ export function sentenceSpans(text: string, mode: "closed" | "in-quotes" = "clos
         const before = text.slice(start, end);
         const word = (before.match(/(\S+)$/) ?? [])[1] ?? "";
         const follows = after.length === 0 || /^\s+($|[A-Z“"‘(\[]|\d)/.test(after);
-        // A leading quote is not part of the abbreviation: “Mr. is still Mr.
-        // The importer keeps the older check, so stored breaths do not move.
-        if (!isAbbreviation(word.replace(/^["“”'‘’]+/, ""), after) && follows && before.trim().length > 1) {
+        if (!isAbbreviation(abbreviationToken(word), after) && follows && before.trim().length > 1) {
           while (end < text.length && /\s/.test(text[end]!)) end += 1;
           spans.push({ start, end });
           for (let k = i; k < end; k += 1) feedQuote(state, text, k);
