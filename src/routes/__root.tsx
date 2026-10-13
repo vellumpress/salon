@@ -5,13 +5,12 @@ import {
   Scripts,
   useRouterState,
 } from "@tanstack/react-router";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect } from "react";
 import { AuthProvider } from "@/lib/auth/provider";
 import { DeferredRemoteSync } from "@/components/deferred-remote-sync";
 import { OfflineMark } from "@/components/offline-mark";
 import { StreakReminderHost } from "@/components/streak-reminder-host";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
-import { PagesShell } from "@/components/pages-shell";
 import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import { APP_DESCRIPTION, APP_NAME, WORDMARK, withBase } from "@/lib/site";
 import {
@@ -22,22 +21,6 @@ import {
 import { watchShellUpdates } from "@/lib/shell-update";
 import { attachVisualViewport } from "@/lib/vvh";
 import appCss from "../styles.css?url";
-
-/**
- * A service-worker navigation reuses the wordmark document. The first client
- * render has to be that mark; the layout effect then paints the route.
- * A prerendered page already has its own markup, so it paints immediately.
- */
-function OutletGate() {
-  const [showRoute, setShowRoute] = useState(
-    () => !documentIsWordmarkShell(typeof document === "undefined" ? null : document),
-  );
-  useLayoutEffect(() => {
-    setShowRoute(true);
-  }, []);
-  if (!showRoute) return <PagesShell />;
-  return <Outlet />;
-}
 
 function VisualViewport() {
   useEffect(() => attachVisualViewport(), []);
@@ -102,6 +85,18 @@ function StatusBarSync() {
 }
 
 export const Route = createRootRoute({
+  beforeLoad: () => {
+    // The Pages document is the wordmark, inside the router's pending
+    // boundary. A warm chunk would paint the route into that shell and
+    // WebKit raises hydration error #418. Stay pending for one frame so
+    // the first client render is the same shell. A prerendered route
+    // already has its markup, so it is not held.
+    if (typeof document === "undefined") return;
+    if (!documentIsWordmarkShell(document)) return;
+    return new Promise<void>((resolve) => {
+      setTimeout(resolve, 1);
+    });
+  },
   head: () => ({
     meta: [
       { charSet: "utf-8" },
@@ -173,7 +168,7 @@ export const Route = createRootRoute({
         <OfflineMark />
         <StreakReminderHost />
         <AuthProvider>
-          <OutletGate />
+          <Outlet />
         </AuthProvider>
         <Scripts />
       </body>
