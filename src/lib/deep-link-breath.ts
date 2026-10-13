@@ -43,3 +43,22 @@ export function firstPaintIndex(input: {
   if (link !== null && !input.linkApplied) return link;
   return stored;
 }
+
+/**
+ * `?at=` from the address. A recovered router tree can drop the search
+ * param while the bar still has it. `0` is a real breath.
+ */
+export function atFromLocationSearch(search: string): number | null {
+  const match = /(?:^|[?&])at=(\d+)(?:&|$)/.exec(search);
+  if (!match) return null;
+  return Number.parseInt(match[1]!, 10);
+}
+
+/**
+ * The boot effect waits for the saved place before it writes `at`.
+ * A tap in that gap has already moved the store. Writing the link, or the
+ * chapter start, over that tap jumps the book back to the link or to 0.
+ */
+export function bootShouldKeepPlace(before: number, after: number): boolean {
+  return after !== before;
+}

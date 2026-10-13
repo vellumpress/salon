@@ -1,7 +1,13 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { firstPaintIndex, holdOpeningForAt, pendingLinkAt } from "./deep-link-breath.ts";
+import {
+  atFromLocationSearch,
+  bootShouldKeepPlace,
+  firstPaintIndex,
+  holdOpeningForAt,
+  pendingLinkAt,
+} from "./deep-link-breath.ts";
 
 test("a mid-book at link is not in the opening, and the first paint is that breath", () => {
   assert.equal(holdOpeningForAt(1658, 6, false), true);
@@ -30,6 +36,28 @@ test("once the link is in the store, taps and a reload without at keep the store
   assert.equal(holdOpeningForAt(undefined, 6, false), false);
   assert.equal(pendingLinkAt(undefined, 2355), null);
   assert.equal(firstPaintIndex({ at: 0, breathCount: 40, storedIndex: 0, linkApplied: false }), 0);
+});
+
+test("a tap during boot is not overwritten by the link or the chapter start", () => {
+  assert.equal(bootShouldKeepPlace(0, 0), false);
+  assert.equal(bootShouldKeepPlace(118, 117), true);
+  assert.equal(bootShouldKeepPlace(0, 62), true);
+  const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
+  assert.match(reader, /bootShouldKeepPlace/);
+  assert.match(reader, /data-breath-index/);
+  assert.match(reader, /steppedPlace/);
+  assert.match(reader, /if \(!movedWhileSettling\) setBreath\(work\.id, deepLink/);
+  const route = readFileSync(new URL("../routes/read.$workId.tsx", import.meta.url), "utf8");
+  assert.match(route, /atFromLocationSearch\(window\.location\.search\)/);
+});
+
+test("the address keeps at when the router search dropped it", () => {
+  assert.equal(atFromLocationSearch("?at=136"), 136);
+  assert.equal(atFromLocationSearch("?sit=20&at=118"), 118);
+  assert.equal(atFromLocationSearch("?/read/fraternity&at=136"), 136);
+  assert.equal(atFromLocationSearch("?at=0"), 0);
+  assert.equal(atFromLocationSearch(""), null);
+  assert.equal(atFromLocationSearch("?at=nope"), null);
 });
 
 test("a link past the opening is not painted as breath 0, and a short cache is not the whole book", () => {
