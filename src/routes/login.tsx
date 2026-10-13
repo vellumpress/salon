@@ -1,5 +1,5 @@
 import { createFileRoute, Link, Navigate, useNavigate } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { claimStaff } from "@/lib/account";
 import {
   GROK_PROVIDERS,
@@ -7,7 +7,9 @@ import {
   signIn as signInProvider,
 } from "@/lib/auth/client";
 import { ReaderAuthForm } from "@/components/reader-auth-form";
+import { PagesShell } from "@/components/pages-shell";
 import { Wordmark } from "@/components/wordmark";
+import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import { liveAuthAvailable, withBase } from "@/lib/site";
 import { safeAuthNext } from "@/lib/auth-return";
 import { authLinkNotice, confirmEmailMessage, sendSignInLink } from "@/lib/remote-auth";
@@ -62,6 +64,19 @@ function LoginHeader() {
 }
 
 function LoginPage() {
+  // A warm login chunk paints this form into the wordmark document and
+  // WebKit raises hydration error #418. Match that document first.
+  const [booted, setBooted] = useState(
+    () => typeof document !== "undefined" && !documentIsWordmarkShell(document),
+  );
+  useLayoutEffect(() => {
+    setBooted(true);
+  }, []);
+  if (!booted) return <PagesShell />;
+  return <LoginBody />;
+}
+
+function LoginBody() {
   const { door, next } = Route.useSearch();
   const navigate = useNavigate();
   const { identity, isPending, hasAccounts, storeHandle, createAccount, signIn, signInWithCode } =
