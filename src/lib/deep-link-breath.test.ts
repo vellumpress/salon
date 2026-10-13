@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import { firstPaintIndex, holdOpeningForAt, pendingLinkAt } from "./deep-link-breath.ts";
 
@@ -29,4 +30,14 @@ test("once the link is in the store, taps and a reload without at keep the store
   assert.equal(holdOpeningForAt(undefined, 6, false), false);
   assert.equal(pendingLinkAt(undefined, 2355), null);
   assert.equal(firstPaintIndex({ at: 0, breathCount: 40, storedIndex: 0, linkApplied: false }), 0);
+});
+
+test("a link past the opening is not painted as breath 0, and a short cache is not the whole book", () => {
+  const route = readFileSync(new URL("../routes/read.$workId.tsx", import.meta.url), "utf8");
+  assert.doesNotMatch(route, /setWork\(ready \?\? next/);
+  assert.match(route, /setWork\(workReadyForAt\(next, at\) \?\? null\)/);
+  const works = readFileSync(new URL("./works.ts", import.meta.url), "utf8");
+  assert.match(works, /function editionCoversShelf/);
+  assert.match(works, /if \(!work && editionCoversShelf\(id, cached\)\) complete\.set\(id, true\)/);
+  assert.match(works, /claimedComplete && editionCoversShelf\(id, chosen\)/);
 });
