@@ -187,7 +187,11 @@ test("boot watch reloads once when the entry module never hydrates", () => {
   assert.match(script, /\/salon\/assets\//);
   assert.match(script, /20000/);
   assert.match(script, /navigator\.onLine === false/);
+  assert.match(script, /\.reader-frame/);
   assert.doesNotMatch(script, /type="module"/);
+  const hints = renderShellNetworkHints();
+  assert.match(hints, /hadController=Boolean\(navigator\.serviceWorker\.controller\)/);
+  assert.match(hints, /if\(!hadController\)\{hadController=true;return\}/);
 });
 
 test("the built asset manifest is precached with the shell", () => {

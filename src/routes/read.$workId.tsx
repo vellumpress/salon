@@ -7,7 +7,7 @@ import { shelfWork } from "@/lib/catalog/shelf";
 import { canonicalWorkId } from "@/lib/work-id-alias";
 import { getImport } from "@/lib/import/idb";
 import { isDeviceImport } from "@/lib/import/private";
-import { holdOpeningForAt } from "@/lib/deep-link-breath";
+import { atFromLocationSearch, holdOpeningForAt } from "@/lib/deep-link-breath";
 import { loadWork, peekWork, workIsComplete, type Work } from "@/lib/works";
 import { useTbr } from "@/lib/store";
 import { asSittingMinutes } from "@/lib/sitting";
@@ -116,7 +116,14 @@ function workReadyForAt(book: Work | null | undefined, at: number | undefined) {
 
 function ReadBody() {
   const { workId } = Route.useParams();
-  const { shuffle, sit, pair, at, episode, echo, hosted } = Route.useSearch();
+  const { shuffle, sit, pair, at: routeAt, episode, echo, hosted } = Route.useSearch();
+  // Hydration recovery can drop `at` from the router while the address keeps it.
+  // Painting that as breath 0 is the catalog walk's "opened on chapter I".
+  const at =
+    routeAt ??
+    (typeof window !== "undefined"
+      ? (atFromLocationSearch(window.location.search) ?? undefined)
+      : undefined);
   const pageWork = useTbr((s) => s.pageWork);
   const device = isDeviceImport(workId);
   const meta = workId === "page" ? pageWork : shelfWork(workId);

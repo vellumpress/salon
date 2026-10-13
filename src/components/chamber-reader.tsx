@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type TouchEvent as ReactTouchEvent } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
-import { firstPaintIndex } from "@/lib/deep-link-breath";
+import { bootShouldKeepPlace, firstPaintIndex } from "@/lib/deep-link-breath";
 import { openingBreathIndex } from "@/lib/opening-scene";
 import {
   chapterStartIndex,
@@ -251,6 +251,12 @@ export function TbrReader({
   const booted = useRef(false);
   /** False until boot writes `at` into the store, so the first paint is that breath. */
   const linkApplied = useRef(false);
+  /**
+   * A tap can land while boot is still waiting for the saved place.
+   * Hydration then replaces the store, which used to wipe that tap and
+   * leave the frame on breath 0. The place is applied again after hydration.
+   */
+  const steppedPlace = useRef<number | null>(null);
   const seenBreaths = useRef(0);
   /** Share link past the opening excerpt. Applied when the rest of the book arrives. */
   const awaitingAt = useRef<number | null>(
@@ -338,6 +344,8 @@ export function TbrReader({
       });
     }
 
+    const placeNow = () => useTbr.getState().progress[work.id]?.breathIndex ?? 0;
+
     void (async () => {
       if (!useTbr.persist.hasHydrated()) {
         await new Promise<void>((resolve) => {
@@ -352,6 +360,25 @@ export function TbrReader({
         });
       }
       if (cancel) return;
+      // A tap during the hydration wait already chose a breath. Hydration
+      // replaces the store, so write that breath again or the frame falls
+      // back to 0 while the catalog walk is still on the old page.
+      const tappedDuringBoot = steppedPlace.current;
+      if (tappedDuringBoot !== null && tappedDuringBoot >= 0 && tappedDuringBoot < work.breaths.length) {
+        booted.current = true;
+        awaitingAt.current = null;
+        setBreath(work.id, tappedDuringBoot, stampAt(work, tappedDuringBoot));
+        linkApplied.current = true;
+        startSitting(work.id);
+        setShowPreface(false);
+        setOverlay("none");
+        return;
+      }
+      // Snapshot after hydration. A tap during a later await moves this.
+      // Hydration itself is not a tap, and must not count as one.
+      const settledAt = placeNow();
+      const tappedSinceHydration = () =>
+        bootShouldKeepPlace(settledAt, placeNow()) || steppedPlace.current !== null;
       ensure(work.id);
       if (sit !== undefined) {
         useTbr.getState().setSittingMinutes(sit);
@@ -367,19 +394,20 @@ export function TbrReader({
           awaitingAt.current = null;
           linkApplied.current = true;
           startSitting(work.id);
-          setBreath(work.id, waiting, stampAt(work, waiting));
+          if (!tappedSinceHydration()) setBreath(work.id, waiting, stampAt(work, waiting));
           setShowPreface(false);
           setOverlay("none");
           return;
         }
         // The shell can boot before the route search arrives. A later `at`
         // still has to land on that breath and take the sit gate down.
+        // A tap that already left the hydrated place is kept.
         if (!linkApplied.current && deepLink !== null) {
           if (cancel) return;
           awaitingAt.current = null;
           linkApplied.current = true;
           startSitting(work.id);
-          setBreath(work.id, deepLink, stampAt(work, deepLink));
+          if (!tappedSinceHydration()) setBreath(work.id, deepLink, stampAt(work, deepLink));
           setShowPreface(false);
           setOverlay("none");
           return;
@@ -395,6 +423,7 @@ export function TbrReader({
       }
       if (!shuffle && deepLink === null) await settlePlace(work);
       if (cancel) return;
+      const movedWhileSettling = tappedSinceHydration();
       booted.current = true;
       const prior = useTbr.getState().progress[work.id];
       const firstSit = shouldShowPreface(prior);
@@ -413,7 +442,7 @@ export function TbrReader({
         awaitingAt.current = null;
         linkApplied.current = true;
         startSitting(work.id);
-        setBreath(work.id, deepLink, stampAt(work, deepLink));
+        if (!movedWhileSettling) setBreath(work.id, deepLink, stampAt(work, deepLink));
         setShowPreface(false);
         setOverlay("none");
         return;
@@ -428,7 +457,7 @@ export function TbrReader({
       const chapterAt = chapterStartIndex(work);
       const startAt = Math.max(chapterAt, openingBreathIndex(work));
       const index = prior?.breathIndex ?? 0;
-      if (!prior?.entered || index < startAt) {
+      if (!movedWhileSettling && (!prior?.entered || index < startAt)) {
         useTbr.getState().setBreath(work.id, startAt, stampAt(work, startAt));
       }
       // Friend already joining with pair+sit — skip the gate.
@@ -586,7 +615,17 @@ export function TbrReader({
 
   function stepBy(delta: 1 | -1) {
     if (overlayRef.current !== "none") return;
-    const at = liveIndex();
+    // The frame can show `?at=` before the store has that breath. Stepping
+    // from the store then walks off breath 0, or does nothing, and the next
+    // paint snaps to the start.
+    let at = liveIndex();
+    const frameAt = Number(
+      turnHostRef.current?.closest(".reader-frame")?.getAttribute("data-breath-index"),
+    );
+    if (Number.isFinite(frameAt) && frameAt !== at && frameAt >= 0 && frameAt < work.breaths.length) {
+      at = frameAt;
+      setBreath(work.id, at, stampAt(work, at));
+    }
     const text = work.breaths[at]?.text ?? "";
     const here = breathSentenceCount(text, displayKind);
     const moved = stepSentencePlace({
@@ -605,6 +644,7 @@ export function TbrReader({
       }
       return;
     }
+    if (!booted.current) steppedPlace.current = moved.index;
     rememberSentence(moved.index, moved.cursor);
     if (moved.index !== at) goTo(moved.index);
   }
