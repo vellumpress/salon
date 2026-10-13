@@ -48,7 +48,6 @@ export function useKeptLines(
       const all = visibleKeptLines(progress, (id) => peekWork(id), {
         remap: readBreathRemap(),
         complete: workIsComplete,
-        skip: isDeviceImport,
         meta: (id) => {
           const shelf = shelfWork(id);
           return shelf ? { title: shelf.title, author: shelf.author } : undefined;
