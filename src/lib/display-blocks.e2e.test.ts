@@ -702,9 +702,7 @@ test(
       assert.ok((right[0]?.height ?? 0) <= third);
       for (const spot of s785) {
         assert.ok(spot.sentences >= 1, `s7-85 sentence count ${spot.sentences}`);
-        if (spot.sentences > 1 && spot.height > third) {
-          assert.ok(heldQuote(spot.text), `${spot.height}px ${spot.text.slice(0, 40)}`);
-        }
+        if (spot.sentences > 1) assert.ok(spot.height <= third, `${spot.height}px ${spot.text.slice(0, 40)}`);
       }
 
       await openAt(page, "moby-dick", 867);

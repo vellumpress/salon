@@ -579,6 +579,100 @@ test("a straight quotation that fits stays whole when the sentence around it doe
   assert.match(blocks[0]?.text ?? "", /postpone our return\."$/);
 });
 
+test("an unmatched straight closer does not invert the quotes after it", () => {
+  const text = "They say, He has brought a note.' 'Give me the note,' I say. So it is from a patient.";
+  const quotes = quoteIntervals(text).map((range) => text.slice(range.start, range.end));
+  assert.deepEqual(quotes, ["'Give me the note,'"]);
+  const crossed = '"She began.\n\n"He answered on the next page. The road ran on.';
+  const crossedQuotes = quoteIntervals(crossed).map((range) => crossed.slice(range.start, range.end));
+  assert.equal(crossedQuotes.length, 0);
+});
+
+test("a mis-paired straight quote is not one block taller than a third", () => {
+  for (const [id, breathId] of [
+    ["best-russian-short-stories", "s5-147"],
+    ["the-professor", "s18-16"],
+    ["the-professor", "s18-40"],
+    ["the-professor", "s17-56"],
+  ] as const) {
+    const text = breathById(id, breathId);
+    const blocks = assertPacked(text);
+    for (const block of blocks) {
+      if (block.sentences <= 1) continue;
+      assert.ok(
+        lineMeasure(block.text) <= PHONE_THIRD,
+        `${id} ${breathId} ${lineMeasure(block.text)}px ${block.text.slice(0, 60)}`,
+      );
+    }
+    assert.ok(blocks.length > 1, `${id} ${breathId}`);
+  }
+});
+
+test("a quote block is sized by the measured height, and a stub rebalances", () => {
+  const body = Array.from({ length: 8 }, (_, index) => `Sentence ${index} of the quotation stays here.`).join(" ");
+  const text = `Before the remark. “My dear fellow,” he might say, “do you suppose ${body}” The man would be abundantly right.`;
+  const spans = sentenceSpans(text, "in-quotes");
+  assert.equal(spans.length, 10);
+  const heights = [40, 40, 40, 40, 40, 40, 40, 40, 20, 29];
+  const known = new Map<string, number>();
+  for (let i = 0; i < spans.length; i += 1) {
+    for (let j = i; j < spans.length; j += 1) {
+      const slice = text.slice(spans[i]!.start, spans[j]!.end);
+      const sum = heights.slice(i, j + 1).reduce((total, height) => total + height, 0);
+      known.set(slice, sum);
+    }
+  }
+  const quote = quoteIntervals(text).find((range) => text.slice(range.start, range.end).includes("do you suppose"));
+  assert.ok(quote);
+  assert.ok(phoneLineMeasure(text.slice(quote.start, quote.end)) > PHONE_THIRD);
+  known.set(text.slice(quote.start, quote.end), 264);
+  known.set(text.slice(spans[1]!.start, quote.end), 294);
+  const blocks = packDisplayBlocks(text, (sample) => known.get(sample) ?? 999, PHONE_THIRD);
+  assert.equal(blocks.map((block) => block.text).join(""), text);
+  for (const block of blocks) {
+    assert.ok(block.sentences >= 1, block.text.slice(0, 40));
+    const height = known.get(block.text) ?? 999;
+    if (block.sentences > 1) assert.ok(height <= PHONE_THIRD, `${height}px ${block.text.slice(0, 40)}`);
+  }
+  const fellow = blocks.find((block) => block.text.includes("My dear fellow"));
+  assert.ok(fellow);
+  assert.ok((known.get(fellow.text) ?? 999) <= PHONE_THIRD, "opener and quote must not paint as one 294px block");
+  assert.doesNotMatch(fellow.text, /abundantly right/);
+  const tail = blocks[blocks.length - 1]?.text ?? "";
+  assert.match(tail, /abundantly right/);
+  assert.ok((known.get(tail) ?? 0) > 29, "a 29px tail rebalances with the block above");
+  assert.ok((known.get(tail) ?? 999) <= PHONE_THIRD);
+});
+
+test("a short tail that cannot merge is split evenly with the block above", () => {
+  const parts = ["AAAA. ", "BBBB. ", "CCCC. ", "DDDD. ", "EE."];
+  const text = parts.join("");
+  const heights = [50, 50, 50, 50, 40];
+  const known = new Map<string, number>();
+  let cursor = 0;
+  const spans = parts.map((part, index) => {
+    const start = cursor;
+    cursor += part.length;
+    return { start, end: cursor, height: heights[index]! };
+  });
+  for (let i = 0; i < spans.length; i += 1) {
+    for (let j = i; j < spans.length; j += 1) {
+      const slice = text.slice(spans[i]!.start, spans[j]!.end);
+      const sum = heights.slice(i, j + 1).reduce((total, height) => total + height, 0);
+      known.set(slice, sum);
+    }
+  }
+  const limit = 200;
+  const blocks = packDisplayBlocks(text, (sample) => known.get(sample) ?? 999, limit);
+  assert.equal(blocks.map((block) => block.text).join(""), text);
+  assert.deepEqual(
+    blocks.map((block) => block.text),
+    ["AAAA. BBBB. ", "CCCC. DDDD. EE."],
+  );
+  assert.equal(known.get(blocks[0]?.text ?? ""), 100);
+  assert.equal(known.get(blocks[1]?.text ?? ""), 140);
+});
+
 test("a quotation that fits in the third is not broken", () => {
   const text = "She said “Go home now. Then stay with me. Leave in the morning.” He nodded.";
   assert.ok(lineMeasure(text) <= PHONE_THIRD);
@@ -696,7 +790,7 @@ test("the catalog has no multi-sentence block taller than a third of the phone",
         const end = offset + raw.length;
         offset = end;
         const closedStarts = closed.filter((span) => span.start >= start && span.start < end).length;
-        if (closedStarts > 1 && phoneLineMeasure(block.text) > PHONE_THIRD && !overLimitAllowed(block.text)) {
+        if (closedStarts > 1 && phoneLineMeasure(block.text) > PHONE_THIRD) {
           after += 1;
         }
       }

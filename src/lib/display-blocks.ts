@@ -66,8 +66,9 @@ export type DisplayMetrics = {
 type PackUnit = { start: number; end: number; sentences: number };
 
 /**
- * A quotation is one unit when the quotation itself fits in the third.
- * The sentence that opens it comes along, because a sentence cannot break.
+ * A quotation is one unit when the quotation itself fits in the third and
+ * the block that would hold it still measures within the third. The sentence
+ * that opens it comes along only when that combined block still fits.
  * A nested quote that fits stays whole even when the outer quote does not.
  * A quotation past the third is left in sentences so the packer can break
  * at those ends. A later speech repeats the speaker, so that label counts.
@@ -111,11 +112,17 @@ function unitsForPack(
         if (candidateEnd <= end) continue;
         const opener = text[range.start];
         // shoot '450 is a digit after an apostrophe, not a quotation.
-        // A real quotation that fits stays whole, and the sentence that
-        // opens or closes it comes along, even when that sentence runs
-        // past the third.
         if (opener === "'" && /\d/.test(text[range.start + 1] ?? "")) {
           if (!fits(text.slice(spans[i]!.start, candidateEnd))) continue;
+        }
+        // Size the block that will paint. A single tap may still pass the
+        // third, because it cannot be split. A taller quotation can.
+        const candidate = text.slice(spans[i]!.start, candidateEnd);
+        if (!fits(candidate)) {
+          const tapsInside = tapSpans(text).filter(
+            (span) => span.start >= spans[i]!.start && span.start < candidateEnd,
+          ).length;
+          if (tapsInside > 1) continue;
         }
         end = candidateEnd;
         j = k;
@@ -157,31 +164,68 @@ function foldShortTail(
       absorb();
       continue;
     }
-    // Otherwise move the boundary back until the tail is tall enough
-    // and still within the third.
-    while (prev.to - prev.from >= 2 && height(last, false) < tailMin) {
-      const taken = { from: prev.to - 1, to: last.to };
-      if (height(taken, false) > limitPx) break;
-      prev.to -= 1;
-      last.from = prev.to;
-    }
-    if (height(last, false) >= tailMin) continue;
-    // Merging would pass the third. The short tail stays its own block.
     break;
   }
+  if (ranges.length < 2) return;
+  const last = ranges[ranges.length - 1]!;
+  const prev = ranges[ranges.length - 2]!;
+  if (height(last, false) >= tailMin) return;
+  // Merging would pass the third. Split the last two blocks at the sentence
+  // boundary that makes them most even, and keep both within the third.
+  // A glued quotation opens back into its sentences so a stub can borrow one.
+  const taps = tapSpans(text);
+  const pieces: PackUnit[] = [];
+  for (let u = prev.from; u < last.to; u += 1) {
+    const unit = units[u]!;
+    const covered = taps.filter((span) => span.start >= unit.start && span.start < unit.end);
+    if (covered.length <= 1) {
+      pieces.push(unit);
+      continue;
+    }
+    for (let n = 0; n < covered.length; n += 1) {
+      const start = n === 0 ? unit.start : covered[n]!.start;
+      const end = n + 1 < covered.length ? covered[n + 1]!.start : unit.end;
+      pieces.push({ start, end, sentences: 1 });
+    }
+  }
+  if (pieces.length < 2) return;
+  const pieceHeight = (from: number, to: number, first: boolean) =>
+    measure(showBlock(text.slice(pieces[from]!.start, pieces[to - 1]!.end), speaker, first));
+  let best = -1;
+  let bestDiff = Number.POSITIVE_INFINITY;
+  let bestRight = -1;
+  for (let cut = 1; cut < pieces.length; cut += 1) {
+    const leftH = pieceHeight(0, cut, prev.from === 0);
+    const rightH = pieceHeight(cut, pieces.length, false);
+    if (leftH > limitPx || rightH > limitPx || rightH < tailMin) continue;
+    const diff = Math.abs(leftH - rightH);
+    if (diff < bestDiff || (diff === bestDiff && rightH > bestRight)) {
+      bestDiff = diff;
+      best = cut;
+      bestRight = rightH;
+    }
+  }
+  if (best < 0) return;
+  const before = units.slice(0, prev.from);
+  const after = units.slice(last.to);
+  units.splice(0, units.length, ...before, ...pieces, ...after);
+  prev.to = prev.from + best;
+  last.from = prev.to;
+  last.to = prev.from + pieces.length;
 }
 
 /**
  * Group sentence slices so each block measures within `limitPx`.
  * A sentence that is taller on its own stays whole. A quotation stays whole
  * when the quotation itself fits in the third, including one nested inside
- * a taller quote, and the sentence that opens or closes it comes along.
+ * a taller quote. The sentence that opens or closes it comes along only
+ * when the block that holds both still measures within the third.
  * A quotation past the third breaks at sentence ends inside it. Sentences
  * then pack greedily up to the limit. A tail shorter than a third of the
  * limit folds into the block above only when the merged block still fits
- * in the third. Otherwise the boundary moves back until the tail is tall
- * enough and still within the third. When that merge would pass the third,
- * the short tail stays its own block.
+ * in the third. When that merge would pass the third, the last two blocks
+ * are split again so their heights are as even as possible and both stay
+ * within the third. A single sentence that cannot move stays where it is.
  * Abbreviations are not breaks. Verse is one block even when it holds many
  * sentences. Prose slices joined together are the original string. A play
  * speech repeats "Speaker:" on every block after the first; the slices

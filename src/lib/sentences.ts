@@ -231,6 +231,34 @@ function isStraightApostrophe(text: string, index: number) {
   return false;
 }
 
+/** A blank line. Straight quotes pair inside one paragraph and do not cross it. */
+function isParagraphBoundary(text: string, index: number) {
+  return text[index] === "\n" && (text[index - 1] === "\n" || text[index + 1] === "\n");
+}
+
+function looksLikeStraightOpener(text: string, index: number) {
+  const prev = index > 0 ? text[index - 1]! : "";
+  const next = index + 1 < text.length ? text[index + 1]! : "";
+  if (!next || /\s/.test(next) || /\d/.test(next) || /\d/.test(prev)) return false;
+  if (index === 0) return true;
+  return /[\s(\[\{"'“‘—–,:;]/.test(prev);
+}
+
+/**
+ * An unmatched closer is not a quote. `patient.' 'Give me the note,'`
+ * must not open on the first mark, or every later quote is inverted and
+ * the narration between them is held as one quotation.
+ */
+function feedStraight(state: QuoteState, key: "straightDouble" | "straightSingle", text: string, index: number) {
+  if (state[key]) {
+    state[key] = false;
+    return;
+  }
+  // A closer with no open quote, or a digit like shoot '450, is not a quote.
+  if (!looksLikeStraightOpener(text, index)) return;
+  state[key] = true;
+}
+
 function feedQuote(state: QuoteState, text: string, index: number) {
   const ch = text[index]!;
   if (ch === "\u201C") {
@@ -252,7 +280,7 @@ function feedQuote(state: QuoteState, text: string, index: number) {
   if (ch === '"') {
     const prev = index > 0 ? text[index - 1]! : "";
     if (/\d/.test(prev)) return;
-    state.straightDouble = !state.straightDouble;
+    feedStraight(state, "straightDouble", text, index);
     return;
   }
   if (ch === "'") {
@@ -261,7 +289,7 @@ function feedQuote(state: QuoteState, text: string, index: number) {
     // gettin' / o' / ha' is a trailing apostrophe. It is not the opening
     // of a quotation; an opener has a space or punctuation before it.
     if (!state.straightSingle && isLetter(prev)) return;
-    state.straightSingle = !state.straightSingle;
+    feedStraight(state, "straightSingle", text, index);
   }
 }
 
@@ -303,6 +331,10 @@ export function sentenceSpans(text: string, mode: "closed" | "in-quotes" = "clos
   let start = 0;
   let i = 0;
   while (i < text.length) {
+    if (isParagraphBoundary(text, i)) {
+      state.straightDouble = false;
+      state.straightSingle = false;
+    }
     const ch = text[i]!;
     if (isStop(ch)) {
       let end = i + 1;
@@ -346,7 +378,9 @@ export type QuoteInterval = { start: number; end: number };
 /**
  * Each quotation, from its opening mark through its closer.
  * A single nested inside a double is its own interval, and so is the double.
- * An unclosed mark runs to the end of the text.
+ * Straight quotes pair inside one paragraph. An unmatched straight mark is
+ * not a quote: it does not run on to the end of the text. An unclosed curly
+ * mark still runs to the end of the text.
  */
 export function quoteIntervals(text: string): QuoteInterval[] {
   const state = freshQuotes();
@@ -354,6 +388,15 @@ export function quoteIntervals(text: string): QuoteInterval[] {
   const ranges: QuoteInterval[] = [];
   const kinds = ["curlyDouble", "curlySingle", "straightDouble", "straightSingle"] as const;
   for (let i = 0; i < text.length; i += 1) {
+    if (isParagraphBoundary(text, i)) {
+      for (let k = open.length - 1; k >= 0; k -= 1) {
+        const kind = open[k]!.kind;
+        if (kind !== "straightDouble" && kind !== "straightSingle") continue;
+        open.splice(k, 1);
+        state[kind] = false;
+      }
+      continue;
+    }
     const prev: QuoteState = { ...state };
     feedQuote(state, text, i);
     for (const kind of kinds) {
@@ -372,7 +415,10 @@ export function quoteIntervals(text: string): QuoteInterval[] {
       }
     }
   }
-  for (const item of open) ranges.push({ start: item.start, end: text.length });
+  for (const item of open) {
+    if (item.kind === "straightDouble" || item.kind === "straightSingle") continue;
+    ranges.push({ start: item.start, end: text.length });
+  }
   return ranges;
 }
 
