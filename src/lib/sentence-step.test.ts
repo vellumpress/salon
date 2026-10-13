@@ -63,7 +63,7 @@ test("moby-dick s3-32 steps one sentence, including the continuation and the bre
   assert.equal(here, 2);
   assert.equal(prev, 2);
   const blocks = packDisplayBlocks(work.breaths[at]!.text, phoneLineMeasure, phoneBlockLimit(), "prose");
-  // The quote holds an interior stop, so it is one closed sentence, not two.
+  // The quote fits, so an interior stop stays inside that one sentence.
   assert.deepEqual(
     blocks.map((block) => block.sentences),
     [1, 1],
@@ -131,17 +131,44 @@ test("the first sentence of a continuation block steps back into the block above
     assert.equal(shown.filter((piece) => piece.sentence >= base).length, block.sentences);
     base += block.sentences;
   });
-  assert.equal(base, sentenceSpans(text).length);
+  assert.equal(base, breathSentenceCount(text, "prose"));
   const letter = JSON.parse(readFileSync(new URL("./catalog/texts/cranford.json", import.meta.url), "utf8")) as {
     breaths: { id: string; text: string }[];
   };
   const quote = letter.breaths.find((breath) => breath.id === "s2-4")?.text ?? "";
   const quoteBlocks = packDisplayBlocks(quote, phoneLineMeasure, phoneBlockLimit(), "prose");
   const quotePieces = focusPieces(quote, quoteBlocks);
+  const quoteSentences = sentenceSpans(quote, "in-quotes").length;
   assert.ok(quoteBlocks.length > 1);
-  assert.equal(quoteBlocks.reduce((sum, block) => sum + block.sentences, 0), 1);
-  assert.ok(quotePieces.flat().every((piece) => piece.sentence === 0));
+  assert.equal(breathSentenceCount(quote, "prose"), quoteSentences);
+  assert.ok(quoteBlocks.every((block) => block.sentences >= 1));
+  assert.equal(
+    quoteBlocks.reduce((sum, block) => sum + block.sentences, 0),
+    quoteSentences,
+  );
+  assert.deepEqual(
+    quotePieces.flat().map((piece) => piece.sentence),
+    quotePieces.flat().map((_, index) => index),
+  );
   assert.equal(quotePieces.flat().map((piece) => piece.text).join(""), quote);
+  const forward = stepSentencePlace({
+    index: 46,
+    cursor: 0,
+    delta: 1,
+    here: quoteSentences,
+    prevCount: 1,
+    breathCount: letter.breaths.length,
+  });
+  assert.deepEqual(forward, { index: 46, cursor: 1 });
+  const backInsideQuote = stepSentencePlace({
+    index: 46,
+    cursor: 1,
+    delta: -1,
+    here: quoteSentences,
+    prevCount: 1,
+    breathCount: letter.breaths.length,
+  });
+  assert.deepEqual(backInsideQuote, { index: 46, cursor: 0 });
 });
 
 test("a play speech steps sentences and keeps the speaker pieces intact", () => {

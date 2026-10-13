@@ -1,14 +1,15 @@
-import type { DisplayKind } from "./display-blocks.ts";
+import { tapSpans, type DisplayKind } from "./display-blocks.ts";
 import { sentenceSpans } from "./sentences.ts";
 
 /**
  * How many taps a breath contains.
  * Verse is one step: a stanza is not a row of sentences.
- * Prose and speeches follow the display sentence breaks.
+ * A quotation that fits is one step. A quotation past a third of the
+ * phone counts each sentence inside it.
  */
 export function breathSentenceCount(text: string, kind: DisplayKind = "prose"): number {
   if (kind === "verse" || !text) return 1;
-  const count = sentenceSpans(text).length;
+  const count = tapSpans(text).length;
   return count > 0 ? count : 1;
 }
 
@@ -31,10 +32,11 @@ export function blockSentencePieces(text: string, expected: number): string[] {
 export type FocusPiece = { text: string; sentence: number };
 
 /**
- * Pieces of each display block, tagged with the closed sentence a tap lands on.
- * A quotation split across blocks stays on that one sentence, including the
- * tail of it when the next block also begins a new sentence. Verse is one step.
- * A repeated speaker label stays on the first piece of its block.
+ * Pieces of each display block, tagged with the sentence a tap lands on.
+ * A quotation past a third of the phone gives each of its sentences its own
+ * step, including a block that continues the quotation. A quotation that
+ * fits stays one step. Verse is one step. A repeated speaker label stays
+ * on the first piece of its block.
  */
 export function focusPieces(
   text: string,
@@ -53,14 +55,14 @@ export function focusPieces(
   if (raws.join("") !== text) {
     return blocks.map((block) => [{ text: block.text, sentence: 0 }]);
   }
-  const closed = sentenceSpans(text);
+  const taps = tapSpans(text);
   let offset = 0;
   return raws.map((raw, index) => {
     const start = offset;
     const end = offset + raw.length;
     offset = end;
     const pieces: FocusPiece[] = [];
-    closed.forEach((span, sentence) => {
+    taps.forEach((span, sentence) => {
       const from = Math.max(span.start, start);
       const to = Math.min(span.end, end);
       if (to > from) pieces.push({ text: text.slice(from, to), sentence });

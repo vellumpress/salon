@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { isLocalBound } from "./catalog/full-pdf.ts";
-import { phoneLineMeasure, unmeasuredBlocks } from "./display-blocks.ts";
+import { unmeasuredBlocks } from "./display-blocks.ts";
 import { quoteIntervals, sentenceSpans } from "./sentences.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 
@@ -158,23 +158,6 @@ function heldQuote(text: string) {
   return true;
 }
 
-/**
- * A tail under about a third of the limit folds upward. Cormorant paints
- * shorter than the 29.5-character estimate, so a folded tail can estimate
- * one line past that third.
- */
-function foldedStub(text: string, limit: number): boolean {
-  const spans = sentenceSpans(text, "in-quotes");
-  if (spans.length < 2) return false;
-  const last = spans[spans.length - 1]!;
-  if (phoneLineMeasure(text.slice(last.start, last.end)) > 116) return false;
-  const rest = text.slice(0, last.start);
-  if (sentenceSpans(rest, "in-quotes").length <= 1) return true;
-  if (heldQuote(rest)) return true;
-  if (phoneLineMeasure(rest) <= limit) return true;
-  return foldedStub(rest, limit);
-}
-
 function assertBlockHeights(spots: BlockSpot[], label: string) {
   const laid = spots.filter((spot) => spot.height > 0);
   assert.ok(laid.length > 0, `${label} rendered no blocks`);
@@ -185,7 +168,7 @@ function assertBlockHeights(spots: BlockSpot[], label: string) {
     if (spot.sentences <= 1) continue;
     if (spot.height <= limit + 1) continue;
     assert.ok(
-      heldQuote(spot.text) || foldedStub(spot.text, limit),
+      heldQuote(spot.text),
       `${label} multi-sentence block is ${spot.height}px, past a third of ${viewport}px, and it is not one quotation: ${spot.text.slice(0, 80)}`,
     );
   }
@@ -666,25 +649,27 @@ test(
       assert.ok(face.width > 320 && face.width < 360, `column ${face.width}`);
 
       const third = 281;
-      const tailMin = third / 3;
       const s24 = await blocks(page, ".breath-now");
       assert.ok(s24.length > 1);
       assert.match(s24[0]?.text ?? "", /Lord Mauleverer/);
       assert.match(s24[0]?.text ?? "", /little town/);
+      const mundane = s24.filter((spot) => spot.text.includes("mundane failings"));
+      const aristocracy = s24.find((spot) => spot.text.includes("British aristocracy"));
+      assert.equal(mundane.length, 1);
+      assert.doesNotMatch(mundane[0]?.text ?? "", /British aristocracy/);
+      assert.equal(mundane[0]?.sentences, 1);
+      assert.ok((mundane[0]?.height ?? 0) <= third);
+      assert.ok(aristocracy);
+      assert.doesNotMatch(aristocracy?.text ?? "", /mundane failings/);
+      assert.ok((aristocracy?.height ?? 999) <= third, `aristocracy ${aristocracy?.height}px`);
       for (const spot of s24) {
+        assert.ok(spot.sentences >= 1, `s2-4 sentence count ${spot.sentences}`);
         if (spot.sentences > 1) assert.ok(spot.height <= third, `${spot.height}px ${spot.text.slice(0, 40)}`);
       }
-      const presence = s24.find((spot) => spot.text.includes("august presence"));
-      const aristocracy = s24.find((spot) => spot.text.includes("British aristocracy"));
-      assert.ok((presence?.sentences ?? 2) <= 1);
-      assert.ok((aristocracy?.sentences ?? 2) <= 1);
-      assert.ok((presence?.height ?? 0) <= third);
-      assert.match(aristocracy?.text ?? "", /mundane failings/);
-      assert.equal(s24.filter((spot) => spot.text.includes("mundane failings")).length, 1);
-      for (const spot of s24) {
-        if (spot === aristocracy) continue;
-        assert.ok(spot.height >= tailMin, `${spot.height}px stub ${spot.text.slice(0, 40)}`);
-      }
+      assert.equal(
+        s24.reduce((sum, spot) => sum + spot.sentences, 0),
+        Number(await page.locator(".breath-now").getAttribute("data-sentence-count")),
+      );
 
       await openAt(page, "cranford", 14);
       const s014 = await blocks(page, ".breath-now");
@@ -708,14 +693,18 @@ test(
       await openAt(page, "new-grub-street", 511);
       const s785 = await blocks(page, ".breath-now");
       const fellow = s785.filter((spot) => spot.text.includes("do you suppose"));
+      const right = s785.filter((spot) => spot.text.includes("abundantly right"));
       assert.equal(fellow.length, 1);
-      assert.match(fellow[0]?.text ?? "", /your concern/);
-      assert.match(fellow[0]?.text ?? "", /abundantly right/);
-      assert.equal(s785.filter((spot) => spot.text.includes("abundantly right")).length, 1);
+      assert.doesNotMatch(fellow[0]?.text ?? "", /abundantly right/);
+      assert.equal(right.length, 1);
+      assert.doesNotMatch(right[0]?.text ?? "", /do you suppose/);
+      assert.equal(right[0]?.sentences, 1);
+      assert.ok((right[0]?.height ?? 0) <= third);
       for (const spot of s785) {
-        if (spot === fellow[0]) continue;
-        if (spot.sentences > 1) assert.ok(spot.height <= third, spot.text.slice(0, 40));
-        assert.ok(spot.height >= tailMin, `${spot.height}px stub ${spot.text.slice(0, 40)}`);
+        assert.ok(spot.sentences >= 1, `s7-85 sentence count ${spot.sentences}`);
+        if (spot.sentences > 1 && spot.height > third) {
+          assert.ok(heldQuote(spot.text), `${spot.height}px ${spot.text.slice(0, 40)}`);
+        }
       }
 
       await openAt(page, "moby-dick", 867);

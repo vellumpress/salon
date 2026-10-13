@@ -346,6 +346,155 @@ async function runSplitTaps(name: "chromium" | "webkit") {
   }
 }
 
+const HOLD_MS = 15_000;
+
+async function blockSpots(page: Page) {
+  return page.evaluate(() =>
+    [...document.querySelectorAll(".breath-now .breath-block")].map((node) => ({
+      sentences: Number(node.getAttribute("data-block-sentences")),
+      height: (node as HTMLElement).offsetHeight,
+      text: node.textContent ?? "",
+    })),
+  );
+}
+
+async function holdPlace(page: Page, label: string) {
+  const start = await place(page);
+  const steps = Math.ceil(HOLD_MS / 1000);
+  for (let i = 0; i < steps; i += 1) {
+    await page.waitForTimeout(1000);
+    const now = await place(page);
+    assert.equal(now.index, start.index, `${label} reverted after ${i + 1}s`);
+    assert.equal(now.cursor, start.cursor, `${label} reverted after ${i + 1}s`);
+    assert.equal(now.text, start.text, `${label} focus reverted after ${i + 1}s`);
+  }
+}
+
+async function walkQuote(
+  page: Page,
+  name: string,
+  id: string,
+  at: number,
+  opening: RegExp,
+) {
+  await openAt(page, id, at);
+  const opened = await place(page);
+  assert.equal(opened.index, at, `${name} ${id}`);
+  assert.equal(opened.cursor, 0, `${name} ${id} did not open on the first sentence`);
+  assert.ok(opened.count > 1, `${name} ${id} is one sentence`);
+  assert.match(opened.text, opening);
+  const spots = await blockSpots(page);
+  assert.ok(spots.length > 1, `${name} ${id} did not split`);
+  assert.ok(
+    spots.every((spot) => spot.sentences >= 1),
+    `${name} ${id} sentence counts ${spots.map((spot) => spot.sentences).join(",")}`,
+  );
+  assert.equal(
+    spots.reduce((sum, spot) => sum + spot.sentences, 0),
+    opened.count,
+    `${name} ${id} block sentences do not add up to the breath`,
+  );
+  for (const spot of spots) {
+    assert.ok(spot.height > 0, `${name} ${id} painted an empty block`);
+  }
+  let previous = opened.text;
+  for (let cursor = 1; cursor < opened.count; cursor += 1) {
+    await tapSide(page, "next");
+    const now = await place(page);
+    assert.equal(now.index, at, `${name} ${id} skipped ahead at sentence ${cursor}`);
+    assert.equal(now.cursor, cursor, `${name} ${id} cursor ${now.cursor}, wanted ${cursor}`);
+    assert.notEqual(now.text, previous, `${name} ${id} focus stalled at sentence ${cursor}`);
+    assert.ok(now.text.length > 0, `${name} ${id} empty focus at sentence ${cursor}`);
+    previous = now.text;
+  }
+  await tapSide(page, "next");
+  const left = await place(page);
+  assert.equal(left.index, at + 1, `${name} ${id} stalled on the last sentence`);
+  assert.equal(left.cursor, 0);
+  await tapSide(page, "prev");
+  const returned = await place(page);
+  assert.equal(returned.index, at, `${name} ${id} left tap did not return`);
+  assert.equal(returned.cursor, opened.count - 1, `${name} ${id} left tap skipped a sentence`);
+  assert.equal(returned.text, previous);
+  await holdPlace(page, `${name} ${id} left tap`);
+  for (let cursor = returned.cursor; cursor > 0; cursor -= 1) {
+    await tapSide(page, "prev");
+    const now = await place(page);
+    assert.equal(now.index, at, `${name} ${id} skipped back at sentence ${cursor - 1}`);
+    assert.equal(now.cursor, cursor - 1, `${name} ${id} back cursor ${now.cursor}, wanted ${cursor - 1}`);
+    assert.notEqual(now.text, previous, `${name} ${id} back focus stalled at sentence ${cursor - 1}`);
+    previous = now.text;
+  }
+  const home = await place(page);
+  assert.equal(home.cursor, 0);
+  assert.match(home.text, opening);
+}
+
+async function runQuoteTaps(name: "chromium" | "webkit") {
+  const browser = await launch(name);
+  try {
+    const page = await phone(browser);
+    const viewport = page.viewportSize();
+    assert.equal(viewport?.width, 390);
+    assert.equal(viewport?.height, 844);
+    await walkQuote(page, name, "cranford", 46, /Honourable Mrs Jamieson/);
+    const cranford = await blockSpots(page);
+    const mundane = cranford.filter((spot) => spot.text.includes("mundane failings"));
+    assert.equal(mundane.length, 1, `${name} mundane failings`);
+    assert.doesNotMatch(mundane[0]?.text ?? "", /British aristocracy/);
+    const aristocracy = cranford.find((spot) => spot.text.includes("British aristocracy"));
+    assert.ok(aristocracy, `${name} aristocracy block`);
+    assert.doesNotMatch(aristocracy?.text ?? "", /mundane failings/);
+    assert.ok((aristocracy?.height ?? 999) <= 281);
+
+    await walkQuote(page, name, "new-grub-street", 511, /can’t pretend/);
+    const grub = await blockSpots(page);
+    const right = grub.filter((spot) => spot.text.includes("abundantly right"));
+    assert.equal(right.length, 1, `${name} abundantly right`);
+    assert.doesNotMatch(right[0]?.text ?? "", /do you suppose/);
+    assert.ok((right[0]?.height ?? 999) <= 281);
+    const fellow = grub.find((spot) => spot.text.includes("do you suppose"));
+    assert.ok(fellow, `${name} do you suppose`);
+    assert.doesNotMatch(fellow?.text ?? "", /abundantly right/);
+    await page.close();
+  } finally {
+    await browser.close();
+  }
+}
+
+test(
+  "Chromium standalone: quote sentences step one at a time and a left tap holds",
+  { timeout: 240_000 },
+  async () => {
+    const stop = await ensureReaderServer();
+    try {
+      await runQuoteTaps("chromium");
+    } finally {
+      await stop();
+    }
+  },
+);
+
+test(
+  "WebKit standalone: quote sentences step one at a time and a left tap holds",
+  { timeout: 240_000 },
+  async (t) => {
+    try {
+      const probe = await webkit.launch();
+      await probe.close();
+    } catch {
+      t.skip("WebKit is not installed");
+      return;
+    }
+    const stop = await ensureReaderServer();
+    try {
+      await runQuoteTaps("webkit");
+    } finally {
+      await stop();
+    }
+  },
+);
+
 test(
   "Chromium standalone: a left tap goes back one sentence inside a split paragraph",
   { timeout: 180_000 },

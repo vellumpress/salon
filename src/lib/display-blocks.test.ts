@@ -77,27 +77,16 @@ function heldQuoteOnly(text: string, limit = PHONE_THIRD) {
   return true;
 }
 
-/**
- * A block may pass the limit when it is one fitting quotation, or when a
- * tail under a third of the limit was folded upward and the block above
- * that tail was itself allowed.
- */
+/** A block may pass the limit when every sentence join sits inside a quotation that itself fits. */
 function overLimitAllowed(text: string, limit = PHONE_THIRD): boolean {
-  if (heldQuoteOnly(text, limit)) return true;
-  const spans = sentenceSpans(text, "in-quotes");
-  if (spans.length < 2) return false;
-  const last = spans[spans.length - 1]!;
-  if (lineMeasure(text.slice(last.start, last.end)) >= limit / 3) return false;
-  const rest = text.slice(0, last.start);
-  if (lineMeasure(rest) <= limit) return true;
-  return overLimitAllowed(rest, limit);
+  return heldQuoteOnly(text, limit);
 }
 
 function assertPacked(text: string, limit = PHONE_THIRD) {
   const blocks = packDisplayBlocks(text, lineMeasure, limit);
   assert.equal(blocks.map((block) => block.text).join(""), text);
   for (const block of blocks) {
-    assert.ok(block.sentences >= 0);
+    assert.ok(block.sentences >= 1);
     if (block.sentences > 1 && lineMeasure(block.text) > limit) {
       assert.ok(
         overLimitAllowed(block.text, limit),
@@ -257,10 +246,19 @@ test("cranford s2-4 breaks the letter at sentence ends inside the quote", () => 
   assert.deepEqual(unmeasuredBlocks(text), blocks);
   const mundane = blocks.filter((block) => block.text.includes("mundane failings"));
   assert.equal(mundane.length, 1);
-  assert.match(mundane[0]?.text ?? "", /British aristocracy/);
-  assert.ok(lineMeasure(mundane[0]?.text ?? "") > PHONE_THIRD);
+  assert.doesNotMatch(mundane[0]?.text ?? "", /British aristocracy/);
+  assert.equal(mundane[0]?.sentences, 1);
+  const aristocracy = blocks.find((block) => block.text.includes("British aristocracy"));
+  assert.ok(aristocracy);
+  assert.doesNotMatch(aristocracy?.text ?? "", /mundane failings/);
+  assert.ok(blocks.every((block) => block.sentences >= 1));
+  assert.equal(
+    blocks.reduce((sum, block) => sum + block.sentences, 0),
+    sentenceSpans(text, "in-quotes").length,
+  );
   const tail = blocks[blocks.length - 1]?.text ?? "";
-  assert.ok(lineMeasure(tail) >= PHONE_THIRD / 3, "a tail under a third of the limit should have folded upward");
+  assert.match(tail, /mundane failings/);
+  assert.ok(lineMeasure(tail) < PHONE_THIRD / 3, "the short tail stays separate when merging would pass the third");
 });
 
 test("a quotation that fits is not cut, and a short tail folds upward", () => {
@@ -311,9 +309,14 @@ test("a quotation that fits is not cut, and a short tail folds upward", () => {
     ["STUB.", 59],
     ["SENTENCE. STUB.", 323],
   ]);
-  const absorbed = packDisplayBlocks(stuck, (sample) => stuckMeasure.get(sample) ?? 999, limit);
-  assert.equal(absorbed.length, 1, "a 59px stub folds into the sentence above even past the third");
-  assert.match(absorbed[0]?.text ?? "", /SENTENCE\. STUB\./);
+  const keptTail = packDisplayBlocks(stuck, (sample) => stuckMeasure.get(sample) ?? 999, limit);
+  assert.equal(keptTail.length, 2, "a 59px stub stays separate when the merge would be 323px");
+  assert.equal(keptTail[0]?.text, "SENTENCE. ");
+  assert.equal(keptTail[1]?.text, "STUB.");
+  assert.deepEqual(
+    keptTail.map((block) => block.sentences),
+    [1, 1],
+  );
   const kept = "LEFTSIDE. RIGHTSIDE.";
   const keptMeasure = new Map<string, number>([
     ["LEFTSIDE. ", 200],
@@ -682,8 +685,18 @@ test("the catalog has no multi-sentence block taller than a third of the phone",
         const slice = text.slice(span.start, span.end);
         if (sentenceSpans(slice, "in-quotes").length > 1 && phoneLineMeasure(slice) > PHONE_THIRD) before += 1;
       }
-      for (const block of packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, kind)) {
-        if (block.sentences > 1 && phoneLineMeasure(block.text) > PHONE_THIRD && !overLimitAllowed(block.text)) {
+      const closed = sentenceSpans(text);
+      const speaker = kind === "speech" ? text.match(/^([^:]{1,80}): /)?.[1] : undefined;
+      const prefix = speaker ? `${speaker}: ` : "";
+      let offset = 0;
+      for (const [index, block] of packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, kind).entries()) {
+        const raw =
+          index > 0 && prefix && block.text.startsWith(prefix) ? block.text.slice(prefix.length) : block.text;
+        const start = offset;
+        const end = offset + raw.length;
+        offset = end;
+        const closedStarts = closed.filter((span) => span.start >= start && span.start < end).length;
+        if (closedStarts > 1 && phoneLineMeasure(block.text) > PHONE_THIRD && !overLimitAllowed(block.text)) {
           after += 1;
         }
       }
