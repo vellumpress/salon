@@ -6097,7 +6097,7 @@ test("Mira Sat AFTERNOON CLEAR is Next lead Hill of Dreams, then African Farm, T
   assert.ok(mogensCycle.scenes.some((scene) => scene.title === "The Plague in Bergamo"));
   assert.ok(mogensCycle.scenes.some((scene) => scene.title === "There Should Have Been Roses"));
   assert.ok(mogensCycle.scenes.some((scene) => scene.title === "Mrs. Fonss"));
-  assert.equal(mogensCycle.year, "1882 / 1921");
+  assert.equal(mogensCycle.year, "1882");
 });
 
 test("Mira Sat EVENING CLEAR is Next lead Road to the Open, then Calvary, Anna, and Small Souls, with Bontzye on Rituals", () => {
@@ -6490,7 +6490,7 @@ test("Mira Sat 6PM CLEAR is Next lead White Jacket, then Nightingale, Chapdelain
   const mariaFull = JSON.parse(
     readFileSync(new URL("./texts/maria-chapdelaine.json", import.meta.url), "utf8"),
   ) as { year?: string };
-  assert.equal(mariaFull.year, "1913 / 1921");
+  assert.equal(mariaFull.year, "1913");
   const medlarOpen = JSON.parse(
     readFileSync(new URL("./openings/the-house-by-the-medlar-tree.json", import.meta.url), "utf8"),
   ) as PackedSit;
@@ -6498,7 +6498,7 @@ test("Mira Sat 6PM CLEAR is Next lead White Jacket, then Nightingale, Chapdelain
   const medlarFull = JSON.parse(
     readFileSync(new URL("./texts/the-house-by-the-medlar-tree.json", import.meta.url), "utf8"),
   ) as { year?: string };
-  assert.equal(medlarFull.year, "1881 / 1890");
+  assert.equal(medlarFull.year, "1881");
   const suan = JSON.parse(
     readFileSync(new URL("./openings/filipino-popular-tales.json", import.meta.url), "utf8"),
   ) as PackedSit & { scenes: { title?: string }[] };
@@ -6720,7 +6720,7 @@ test("Mira Sun AM CLEAR is Next lead Marrow, then Zuleika, Eugenie, and Seven Br
   const brothersFull = JSON.parse(
     readFileSync(new URL("./texts/seven-brothers.json", import.meta.url), "utf8"),
   ) as { year?: string };
-  assert.equal(brothersFull.year, "1870 / 1929");
+  assert.equal(brothersFull.year, "1870");
   assert.doesNotMatch(SHELF.find((item) => item.id === "seven-brothers")?.intro ?? "", /do not inflate/);
   const laos = JSON.parse(
     readFileSync(new URL("./openings/laos-folk-lore.json", import.meta.url), "utf8"),
@@ -6924,19 +6924,19 @@ test("Mira POST-#169 CLEAR is Next lead Born in Exile, then Four Horsemen, After
     readFileSync(new URL("./openings/the-four-horsemen-of-the-apocalypse.json", import.meta.url), "utf8"),
   ) as PackedSit & { scenes: { title?: string }[]; year?: string };
   assert.match(horsemen.scenes[0]?.title ?? "", /Madariaga/);
-  assert.equal(horsemen.year, "1916 / 1918");
+  assert.equal(horsemen.year, "1916");
   assert.equal(horsemen.breaths.length, 14);
   const horsemenFull = JSON.parse(
     readFileSync(new URL("./texts/the-four-horsemen-of-the-apocalypse.json", import.meta.url), "utf8"),
   ) as PackedSit & { scenes: { title?: string }[]; year?: string };
   assert.match(horsemenFull.scenes[0]?.title ?? "", /Tryst/);
-  assert.equal(horsemenFull.year, "1916 / 1918");
+  assert.equal(horsemenFull.year, "1916");
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-four-horsemen-of-the-apocalypse")?.intro ?? "", /not Uruguay/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "the-four-horsemen-of-the-apocalypse")?.intro ?? "", /do not inflate/);
   const divorce = JSON.parse(
     readFileSync(new URL("./texts/after-the-divorce.json", import.meta.url), "utf8"),
   ) as { year?: string };
-  assert.equal(divorce.year, "1902 / 1905");
+  assert.equal(divorce.year, "1902");
   assert.doesNotMatch(SHELF.find((item) => item.id === "after-the-divorce")?.intro ?? "", /not Sicily/);
   assert.doesNotMatch(SHELF.find((item) => item.id === "after-the-divorce")?.intro ?? "", /No score is invented/);
   const soil = JSON.parse(
