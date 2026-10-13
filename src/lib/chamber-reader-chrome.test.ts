@@ -5,6 +5,12 @@ import test from "node:test";
 const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
 const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
 
+test("a deep link that arrives after boot still opens that breath", () => {
+  const boot = reader.slice(reader.indexOf("if (booted.current)"), reader.indexOf("if (!shuffle && deepLink === null)"));
+  assert.match(boot, /!linkApplied\.current && deepLink !== null/);
+  assert.match(boot, /setOverlay\("none"\)/);
+});
+
 test("reader lookback sits on scene boundaries", () => {
   assert.match(reader, /lookbackBreaths/);
 });
