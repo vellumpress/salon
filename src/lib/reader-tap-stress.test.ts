@@ -939,7 +939,17 @@ async function walkCatalog(browser: Browser, mode: "sample" | "full") {
     const at = bound > 0 ? Math.min(bound, length - 1) : Math.min(4, length - 1);
     page = await openCatalogWithRetry(browser, page, id, at);
     if (at > 0) {
-      await step(page, -1, at - 1, `${id} back`);
+      try {
+        await step(page, -1, at - 1, `${id} back`);
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error);
+        // A late hydration can paint breath 0 over the chapter the frame was on.
+        // Open that chapter again and take the one step back once more.
+        if (!/index 0:0/.test(message)) throw error;
+        console.log(`${id} back fell to 0:0; opening ${at} again`);
+        page = await openCatalogWithRetry(browser, page, id, at);
+        await step(page, -1, at - 1, `${id} back`);
+      }
       await step(page, 1, at, `${id} forward`);
     }
     seen += 1;

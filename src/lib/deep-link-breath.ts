@@ -42,12 +42,15 @@ export function adoptFrameIndex(input: {
   breathCount: number;
 }): number {
   const store = Number.isFinite(input.storeIndex) ? Math.max(0, Math.floor(input.storeIndex)) : 0;
-  if (input.linkApplied) return store;
   const frame = input.frameIndex;
-  if (frame == null || !Number.isFinite(frame)) return store;
-  const index = Math.floor(frame);
-  if (index === store || index < 0 || index >= input.breathCount) return store;
-  return index;
+  const painted =
+    frame == null || !Number.isFinite(frame) ? null : Math.floor(frame);
+  // Hydration can put the store back on 0 while the frame still shows the
+  // chapter a link painted. Stepping from that 0 sends the book home.
+  if (store === 0 && painted != null && painted > 0 && painted < input.breathCount) return painted;
+  if (input.linkApplied) return store;
+  if (painted == null || painted === store || painted < 0 || painted >= input.breathCount) return store;
+  return painted;
 }
 
 /**
