@@ -1,6 +1,6 @@
 import { splitSentences } from "../sentences.ts";
 import { PITCHES } from "./pitches.ts";
-import { RITUAL_PITCHES } from "./rituals.ts";
+import { RITUAL_PITCHES, ritualPitchFor } from "./rituals.ts";
 import { shelfWork, type ShelfForm, type ShelfWork } from "./shelf.ts";
 
 const MIN_BLURB = 24;
@@ -1440,6 +1440,13 @@ export function blurbFor(work: ShelfWork | string): string {
   const fromIntro = oneSentence(item.intro ?? "");
   if (fromIntro) return fromIntro;
   return generatedBlurb(item);
+}
+
+/** Line under a Ritual title. A card with no ritual pitch uses the shelf blurb. */
+export function ritualCardPitch(id: string): string {
+  const pitch = ritualPitchFor(id)?.replace(/\s+/g, " ").trim();
+  if (pitch) return pitch;
+  return blurbFor(id);
 }
 
 export function sentenceCount(text: string) {
