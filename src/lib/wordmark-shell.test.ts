@@ -31,6 +31,13 @@ test("rituals matches the wordmark document before painting the lanes", () => {
   assert.doesNotMatch(root, /beforeLoad|OutletGate/);
 });
 
+test("the You layout holds the wordmark until the score can paint", () => {
+  const page = readFileSync(new URL("../routes/profile.tsx", import.meta.url), "utf8");
+  assert.match(page, /if \(!booted\) return <PagesShell \/>/);
+  assert.match(page, /hydration error\s*\n\s*#418|#418/);
+  assert.match(page, /return <Outlet \/>/);
+});
+
 test("login matches the wordmark document before painting the form", () => {
   const page = readFileSync(new URL("../routes/login.tsx", import.meta.url), "utf8");
   const gate = page.slice(page.indexOf("function LoginPage"), page.indexOf("function LoginBody"));
