@@ -28,6 +28,7 @@ export const smokeFiles = [
   "src/lib/display-blocks.e2e.test.ts",
   "src/lib/reader-sentence-tap.test.ts",
   "src/lib/reader-left-hold.test.ts",
+  "src/lib/reader-tap-guard.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -69,6 +70,7 @@ export const allTsFiles = [
   "src/lib/remote-auth.test.ts",
   "src/lib/auth-session.test.ts",
   "src/lib/library-sync.test.ts",
+  "src/lib/place-guard.test.ts",
   "src/lib/favorites.test.ts",
   "src/lib/auth/gate-identity.test.ts",
   "src/lib/auth/start-cookie-options.test.ts",
@@ -99,6 +101,7 @@ export const allTsFiles = [
   "src/lib/reader-tap-matrix.test.ts",
   "src/lib/reader-sentence-tap.test.ts",
   "src/lib/reader-left-hold.test.ts",
+  "src/lib/reader-tap-guard.test.ts",
   "src/lib/sentence-step.test.ts",
   "src/lib/catalog-walk.test.ts",
   "src/lib/reader-tap-stress.test.ts",

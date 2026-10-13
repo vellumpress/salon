@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEven
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { adoptFrameIndex, bootShouldKeepPlace, firstPaintIndex, pendingLinkAt } from "@/lib/deep-link-breath";
+import { noteUserMove, readUserMove, tapOwnsVisit } from "@/lib/place-guard";
 import { openingBreathIndex } from "@/lib/opening-scene";
 import {
   chapterStartIndex,
@@ -377,6 +378,13 @@ export function TbrReader({
     const placeNow = () => useTbr.getState().progress[work.id]?.breathIndex ?? 0;
 
     void (async () => {
+      const href = `${window.location.pathname}${window.location.search}`;
+      const visit = readUserMove();
+      if (visit && tapOwnsVisit(visit, work.id, href) && steppedPlace.current === null) {
+        userStepped.current = true;
+        awaitingAt.current = null;
+        steppedPlace.current = visit.index;
+      }
       if (!useTbr.persist.hasHydrated()) {
         await new Promise<void>((resolve) => {
           const unsub = useTbr.persist.onFinishHydration(() => {
@@ -397,7 +405,14 @@ export function TbrReader({
       if (tappedDuringBoot !== null && tappedDuringBoot >= 0 && tappedDuringBoot < work.breaths.length) {
         booted.current = true;
         awaitingAt.current = null;
+        const owned = readUserMove();
+        if (owned && owned.workId === work.id && owned.index === tappedDuringBoot) {
+          useTbr.getState().stampUserMove(work.id, owned.at);
+        }
         setBreath(work.id, tappedDuringBoot, stampTap(work, tappedDuringBoot));
+        if (owned && owned.workId === work.id && owned.index === tappedDuringBoot) {
+          rememberSentence(owned.index, owned.cursor);
+        }
         linkApplied.current = true;
         startSitting(work.id);
         setShowPreface(false);
@@ -530,6 +545,16 @@ export function TbrReader({
   // and a chapter past the opening (Banjo at 314) stays on chapter I.
   useLayoutEffect(() => {
     if (userStepped.current || steppedPlace.current !== null) return;
+    const href = `${window.location.pathname}${window.location.search}`;
+    const visit = readUserMove();
+    if (visit && tapOwnsVisit(visit, work.id, href)) {
+      userStepped.current = true;
+      awaitingAt.current = null;
+      if ((useTbr.getState().progress[work.id]?.breathIndex ?? 0) === visit.index) {
+        linkApplied.current = true;
+      }
+      return;
+    }
     const want = pendingLinkAt(at, work.breaths.length);
     if (want === null) return;
     if (liveIndex() !== want) setBreath(work.id, want, stampAt(work, want));
@@ -642,8 +667,22 @@ export function TbrReader({
     return Math.min(last, Math.max(0, Math.floor(raw)));
   }
 
-  function goTo(next: number) {
+  function markUserPlace(index: number, cursor: number) {
+    const atMs = Date.now();
+    noteUserMove({
+      workId: work.id,
+      index,
+      cursor,
+      at: atMs,
+      href: `${window.location.pathname}${window.location.search}`,
+      breathId: work.breaths[index]?.id ?? "",
+    });
+    useTbr.getState().stampUserMove(work.id, atMs);
+  }
+
+  function goTo(next: number, sentence = 0) {
     if (next < 0 || next >= work.breaths.length) return;
+    markUserPlace(next, sentence);
     const at = liveIndex();
     const from = work.breaths[at];
     const to = work.breaths[next];
@@ -696,10 +735,12 @@ export function TbrReader({
     });
     if (moved === "start") {
       ownTap();
+      markUserPlace(at, cursorRef.current);
       return;
     }
     if (moved === "end") {
       ownTap();
+      markUserPlace(at, cursorRef.current);
       if (delta > 0 && workIsComplete(work.id)) {
         complete(work.id);
         setOverlay("end");
@@ -709,7 +750,8 @@ export function TbrReader({
     ownTap();
     if (!booted.current) steppedPlace.current = moved.index;
     rememberSentence(moved.index, moved.cursor);
-    if (moved.index !== at) goTo(moved.index);
+    if (moved.index !== at) goTo(moved.index, moved.cursor);
+    else markUserPlace(moved.index, moved.cursor);
   }
 
   function advance() {
@@ -721,6 +763,17 @@ export function TbrReader({
   }
 
   useEffect(() => {
+    const href = `${window.location.pathname}${window.location.search}`;
+    const visit = readUserMove();
+    if (visit && tapOwnsVisit(visit, work.id, href) && visit.index === index) {
+      ownedIndexRef.current = index;
+      sentenceOwned.current = { index: visit.index, cursor: visit.cursor };
+      if (cursorRef.current !== visit.cursor) {
+        cursorRef.current = visit.cursor;
+        setCursor(visit.cursor);
+      }
+      return;
+    }
     const owned = sentenceOwned.current;
     if (userStepped.current && owned && owned.index === index) {
       ownedIndexRef.current = index;
@@ -736,7 +789,7 @@ export function TbrReader({
       cursorRef.current = 0;
       setCursor(0);
     }
-  }, [index]);
+  }, [index, work.id]);
 
   function beginFromReentry() {
     setSandCue(false);
@@ -886,7 +939,10 @@ export function TbrReader({
     if (anchor.index == null) return;
     setOverlay("none");
     if (anchor.index < work.breaths.length) goTo(anchor.index);
-    else setBreath(work.id, anchor.index, stampAt(work, anchor.index));
+    else {
+      markUserPlace(anchor.index, 0);
+      setBreath(work.id, anchor.index, stampAt(work, anchor.index));
+    }
   }
 
   function keepCurrent() {
