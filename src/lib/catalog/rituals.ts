@@ -764,8 +764,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Those privileged to be present at a family festival of the Forsytes have seen an upper middle-class family in full plumage. This reading runs through Aunt Ann’s grey hat. Galsworthy’s 1906 novel, Volume 1 only.",
   "theresa-raquin":
     "The Arcade of the Pont Neuf is a damp corridor of dumpy shops. It opens at Chapter I. Vizetelly’s English of Zola’s 1867 novel continues.",
-  "trooper-peter-halket-of-mashonaland":
-    "A dark night on a Mashonaland kopje, Trooper Peter Halket’s fire quivering, a burnt kraal already in the dark. It opens at Chapter I. Schreiner’s 1897 novella keeps the Chartered Company frame, left as printed.",
   "the-late-mattia-pascal":
     "One of the few things he was sure of was his name: Mattia Pascal — the library at Miragno. Livingston’s 1923 English. Comic self-narration.",
   basilio:
@@ -1151,9 +1149,9 @@ export const RITUAL_LANES: RitualLane[] = [
       "quicksand",
       "attendants-confession",
       "rashomon",
-      "high-wind-jamaica",
+      // LANE-FIX — High Wind leaves Before sleep. It stays on On a walk.
       "vera",
-      "trooper-peter-halket",
+      // LANE-FIX — Trooper Peter Halket leaves Before sleep. The full shelf row stays.
       "the-home-and-the-world",
       "the-immoralist",
       "a-hero-of-our-time",
@@ -1171,7 +1169,7 @@ export const RITUAL_LANES: RitualLane[] = [
       // Mira PITCHES-4 — these seventeen leave Before sleep. The shelf rows stay.
       // Mira PITCHES-3 — these leave Unwind and Before sleep. The shelf rows stay. Underdogs stays on On a walk.
       "candide",
-      "trooper-peter-halket-of-mashonaland",
+      // LANE-FIX — the short Trooper slug leaves Before sleep. Links resolve to the full novel.
       "the-toys-of-peace",
       "the-black-dog",
       "children-of-the-frost",
@@ -1443,8 +1441,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-home-and-the-world",
       "hunger",
       "jude-the-obscure",
-      // Mira Fri 25 Sep 2026 ~6PM CLEAR — High Wind leads. Never Featured.
-      "high-wind-jamaica",
+      // LANE-FIX — High Wind leaves Before sleep. It stays on On a walk.
       "vera",
       "futility",
       "the-comedienne",
@@ -1914,7 +1911,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-home-and-the-world",
       "hunger",
       "jude-the-obscure",
-      "high-wind-jamaica",
+      // LANE-FIX — High Wind leaves Unwind. It stays on On a walk.
       "vera",
       "futility",
       "the-comedienne",
@@ -2640,7 +2637,8 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "on-a-chinese-screen": 3,
   futility: 6,
   "poison-tree": 9,
-  "trooper-peter-halket": 87,
+  // Chapter I of the full novel is 87 minutes. The kopje-fire cut is one minute.
+  "trooper-peter-halket": 1,
   "the-home-and-the-world": 6,
   "where-angels-fear-to-tread": 4,
   "the-gadfly": 7,
@@ -2797,7 +2795,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-cabala": 1,
   "reuben-sachs": 1,
   "the-sun-also-rises": 1,
-  "trooper-peter-halket-of-mashonaland": 1,
   "the-garden-party-and-other-stories": 5,
   cane: 4,
   "a-hero-of-our-time": 11,

@@ -531,15 +531,17 @@ test("Cane Rituals sit is the Karintha sketch", () => {
   assertMeasuredSit(item);
 });
 
-test("Trooper Peter Halket before-sleep sit is the kopje-fire cut, not the novel", () => {
+test("Trooper Peter Halket sit is the one-minute kopje-fire cut, not Chapter I", () => {
   const item = work({
     id: "trooper-peter-halket",
     form: "novel",
-    breaths: 16,
-    minutes: 4,
+    breaths: 1181,
+    minutes: 148,
     local: true,
   });
+  assert.equal(RITUAL_SIT_MINUTES["trooper-peter-halket"], 1);
   assertMeasuredSit(item);
+  assert.notEqual(estimateRitualMinutes(item), 87);
 });
 
 test("Tales from the Fjeld ritual link carries sit=8, not the 12-minute preset", () => {

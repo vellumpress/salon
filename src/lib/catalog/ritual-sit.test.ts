@@ -1,7 +1,10 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
-import { ritualCardPitch } from "./blurbs.ts";
+import { blurbFor, ritualCardPitch } from "./blurbs.ts";
+import { NEXT_CAREFULLY_IDS, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { nearestSitPreset } from "../sitting.ts";
+import { openingBreathIndex } from "../opening-scene.ts";
 import { shelfWork } from "./shelf.ts";
 import {
   RITUAL_LANES,
@@ -13,9 +16,11 @@ import {
   ritualCardSit,
   ritualDurationLabel,
   ritualPitchFor,
+  ritualStartAt,
   worksForRitualLane,
 } from "./rituals.ts";
 import { measureRitualSit, ritualBookCards } from "./ritual-sit-measure.ts";
+import type { Work } from "../literature.ts";
 import type { ShelfWork } from "./shelf.ts";
 
 function card(id: string): ShelfWork {
@@ -203,6 +208,28 @@ test("PITCHES-4 drops seventeen sits from Before sleep without emptying the lane
   }
   assert.ok(sleep.workIds.includes("unhuman-tour-kusamakura"));
   assert.ok(ritualPitchFor("unhuman-tour-kusamakura")?.includes("painter climbing"));
+});
+
+test("no ritual starts at the opening sit of a Next-carefully book", () => {
+  const bad: string[] = [];
+  for (const id of NEXT_CAREFULLY_IDS) {
+    assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes(id), true, id);
+    assert.match(blurbFor(id), /^A heads-up before you start\b/, id);
+    const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
+    const openingSit = openingBreathIndex(full);
+    const sceneTitle = (index: number) =>
+      full.scenes.find((scene) => scene.id === full.breaths[index]?.sceneId)?.title ?? "";
+    for (const lane of RITUAL_LANES) {
+      if (lane.id === "serialize" || !lane.workIds.includes(id)) continue;
+      const at = ritualStartAt(id) ?? openingSit;
+      if (id === "the-golden-age") {
+        assert.equal(sceneTitle(at), "Alarums and Excursions", lane.id);
+        continue;
+      }
+      if (at === openingSit) bad.push(`${lane.id}:${id}`);
+    }
+  }
+  assert.deepEqual(bad, []);
 });
 
 test("a mid-book tale keeps its own minutes instead of the shared preset", () => {

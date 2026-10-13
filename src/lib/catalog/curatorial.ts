@@ -487,8 +487,7 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "last-poems-housman",
   "the-dynamiter",
   "candide",
-  // Full Trooper bind is Rituals (Fri ~10:04 CLEAR), not this Next seat.
-  // The short trooper-peter-halket card stays. Africa novels stay their own pile.
+  // The short Trooper slug redirects to trooper-peter-halket. Africa novels stay their own pile.
   "the-toys-of-peace",
   "the-black-dog",
   "children-of-the-frost",
@@ -1223,6 +1222,27 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "annals-of-the-parish",
   // Mira Mon 12 Oct 2026 PM DEEPHAVEN — Deephaven (Jewett, 1877) follows Annals, plain Next, no heads-up. Never Featured, off every Ritual lane.
   "deephaven",
+] as const;
+
+/**
+ * Next carefully: the content-note books. A Ritual card must not open on
+ * their opening sit. The Golden Age walk is the one exception, and only
+ * because Alarums and Excursions was seated as that opening.
+ */
+export const NEXT_CAREFULLY_IDS = [
+  "lewis-and-irene",
+  "the-counterfeiters",
+  "therese",
+  "maximina",
+  "the-golden-age",
+  "the-spoilt-child",
+  "a-japanese-blossom",
+  "strait-is-the-gate",
+  "the-goose-man",
+  "a-russian-gentleman",
+  "froth",
+  "marie-claire",
+  "annals-of-the-parish",
 ] as const;
 
 /**

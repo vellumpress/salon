@@ -53,8 +53,6 @@ const BLURBS: Record<string, string> = {
     "The Simbirsk vanishes toward Shanghai, and the hotel room still has a dirty table-cloth.",
   "poison-tree":
     "His wife makes him promise: if a storm rises, leave the boat—and on the Ganges in Joisto the weather keeps that promise.",
-  "trooper-peter-halket-of-mashonaland":
-    "A dark night on a Mashonaland kopje, a quivering fire, and a burnt kraal already in the dark.",
   "trooper-peter-halket":
     "Alone on a kopje with a fire that only quivers—Trooper Peter Halket has lost his column, and the dark starts inventing fortunes for him.",
   "the-home-and-the-world":

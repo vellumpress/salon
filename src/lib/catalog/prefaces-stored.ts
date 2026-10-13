@@ -799,7 +799,6 @@ export const STORED_PREFACES: Record<string, string> = {
   "trial": `Franz Kafka’s 1925 novel The Trial. Sit with the world a moment before the first breath.`,
   "tristana": `Benito Pérez Galdós’s 1892 novel Tristana. Sit with the world a moment before the first breath.`,
   "trooper-peter-halket": `A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the opening already frames colonial scouting; missionary and racial language harden after the night watch, before the stranger arrives.`,
-  "trooper-peter-halket-of-mashonaland": `A dark night on a Mashonaland kopje, the fire quivering, a burnt kraal already in the dark. It opens at Chapter I. The Chartered Company frame is left as printed.`,
   "the-cabala": `The train that first carried me into Rome was late, across the Campagna in a Virgilian sigh, and this reading stops when the air of Naples generates legend.`,
   "the-garden-party-and-other-stories": `Very early morning. Crescent Bay is hidden under a white sea-mist until the shepherd is out of sight. At the Bay, part I only.`,
   "twelve-stories-and-a-dream": `More Wells: inventions, hauntings, and the scientific romance in short. Enter one room at a time.`,

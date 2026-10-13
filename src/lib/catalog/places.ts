@@ -369,7 +369,6 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "songs-of-kabir": { label: "India", region: "in" },
   "pictures-of-the-floating-world": { label: "Japan", region: "jp" },
   "the-garden-party-and-other-stories": { label: "Crescent Bay", region: "nz" },
-  "trooper-peter-halket-of-mashonaland": { label: "Mashonaland", region: "za" },
   "bliss-and-other-stories": { label: "New Zealand", region: "nz" },
   "body-of-this-death": { label: "United States", region: "us" },
   orlando: { label: "England", region: "gb" },
