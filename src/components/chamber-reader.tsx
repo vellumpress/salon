@@ -372,6 +372,18 @@ export function TbrReader({
           setOverlay("none");
           return;
         }
+        // The shell can boot before the route search arrives. A later `at`
+        // still has to land on that breath and take the sit gate down.
+        if (!linkApplied.current && deepLink !== null) {
+          if (cancel) return;
+          awaitingAt.current = null;
+          linkApplied.current = true;
+          startSitting(work.id);
+          setBreath(work.id, deepLink, stampAt(work, deepLink));
+          setShowPreface(false);
+          setOverlay("none");
+          return;
+        }
         if (grew && !shuffle && deepLink === null) {
           await settlePlace(work);
           if (cancel) return;
