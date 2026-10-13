@@ -88,6 +88,17 @@ test("Easter, Trafalgar, and The Ballad of the White Horse keep Mira's measured 
   assert.equal(nearestSitPreset(9), 12);
 });
 
+test("Botchan's ritual sit is the scar passage, about one minute", () => {
+  const sit = measureRitualSit("botchan");
+  assert.equal(sit.source, "opening");
+  assert.equal(sit.words, 260);
+  assert.equal(sit.minutes, 1);
+  const work = card("botchan");
+  assert.equal(ritualDurationLabel(work), "~1 min");
+  assert.equal(ritualCardSit(work), 1);
+  assert.equal(ritualCardSearch(work).sit, 1);
+});
+
 test("Quicksand opens Chapter I, not the five-minute placeholder", () => {
   const work = card("quicksand");
   const sit = measureRitualSit("quicksand");
