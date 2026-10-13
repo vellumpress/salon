@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { ritualCardPitch } from "./blurbs.ts";
 import { nearestSitPreset } from "../sitting.ts";
 import {
+  RITUAL_LANES,
   RITUAL_SIT_MINUTES,
   estimateRitualMinutes,
   isPlaceholderRitualLabel,
@@ -9,6 +11,7 @@ import {
   ritualCardSearch,
   ritualCardSit,
   ritualDurationLabel,
+  worksForRitualLane,
 } from "./rituals.ts";
 import { measureRitualSit, ritualBookCards } from "./ritual-sit-measure.ts";
 import type { ShelfWork } from "./shelf.ts";
@@ -18,6 +21,17 @@ function card(id: string): ShelfWork {
   assert.ok(work, id);
   return work;
 }
+
+test("every ritual card has a pitch", () => {
+  const blank: string[] = [];
+  for (const lane of RITUAL_LANES) {
+    if (lane.id === "serialize") continue;
+    for (const work of worksForRitualLane(lane)) {
+      if (!ritualCardPitch(work.id).trim()) blank.push(`${lane.id}:${work.id}`);
+    }
+  }
+  assert.deepEqual(blank, []);
+});
 
 test("ritual card labels match the measured sit and are not placeholders", () => {
   const failures: string[] = [];

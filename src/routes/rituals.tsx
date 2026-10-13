@@ -9,8 +9,8 @@ import {
   ritualCardSearch,
   ritualDurationLabel,
   ritualLaneStack,
-  ritualPitchFor,
 } from "@/lib/catalog/rituals";
+import { ritualCardPitch } from "@/lib/catalog/blurbs";
 import {
   SERIALIZE_LANE_ID,
   SERIALIZE_PLANS,
@@ -243,7 +243,7 @@ function RitualsSection({
                 key={`ritual-${active.id}-${item.id}`}
                 item={item}
                 fill={fills[i]}
-                pitch={ritualPitchFor(item.id)}
+                pitch={ritualCardPitch(item.id)}
                 duration={ritualDurationLabel(item)}
                 ratio={hydrated ? progressRatio(progress[item.id], item.breaths) : 0}
               />
