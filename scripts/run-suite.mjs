@@ -48,6 +48,7 @@ export const allTsFiles = [
   "src/lib/catalog/serialize.test.ts",
   "src/lib/catalog/en-rights.test.ts",
   "src/lib/catalog/card-copy.test.ts",
+  "src/lib/catalog/blurb-preface-gate.test.ts",
   "src/lib/catalog/poetry-bind.test.ts",
   "src/lib/catalog/curatorial.test.ts",
   "src/lib/catalog/adapted.test.ts",

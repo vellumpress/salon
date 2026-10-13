@@ -1364,7 +1364,10 @@ const BLURBS: Record<string, string> = {
     "Wiener starts with the bilingual Middle Ages, when Latin held learning and the Jews turned to Hebrew, and the old romances still pleased them.",
 };
 
-/** Concrete author-level line when a work has no curated sentence. */
+/**
+ * Author-level color written for one portrait, then reused on that author's
+ * other books. Never a blurb or a preface. A book keeps its own sentence.
+ */
 const AUTHOR_HOOK: Record<string, string> = {
   "Edith Wharton": "New York manners, money, and the social misstep that becomes a life",
   "Joseph Conrad": "exile, ships, and men tested past the language they brought aboard",
@@ -1602,43 +1605,122 @@ function yearPhrase(work: ShelfWork) {
   return work.year == null ? "" : `${work.year} `;
 }
 
-function generatedBlurb(work: ShelfWork): string {
-  const hook = AUTHOR_HOOK[work.author];
-  if (hook) {
-    const dated = work.year == null ? work.title : `${work.title} (${work.year})`;
-    return oneSentence(`${dated}: ${hook}.`);
+const INVITE_NORMS = [
+  "sit with the world a moment before the first breath",
+  "enter one room at a time",
+  "let the first line arrive when you are ready",
+  "the house is still dark",
+  "a first sitting. start here",
+  "a night sitting — let the dark arrive first",
+  "a morning sitting — start before the day has an opinion",
+  "a quiet sitting — no hurry toward the first line",
+  "sit in the body a moment before the first line",
+  "read as if walking — one sentence, then the next",
+  "a soft sitting. nothing here asks you to be finished",
+  "a short sitting. the door is close",
+].map((line) => normCopy(line));
+
+const HOOK_NORMS = new Set(Object.values(AUTHOR_HOOK).map((hook) => normCopy(hook)));
+
+function normCopy(text: string) {
+  return text
+    .replace(/[’‘]/g, "'")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase()
+    .replace(/[.!?…]+$/g, "")
+    .trim();
+}
+
+function withoutInvitations(text: string) {
+  let rest = normCopy(text);
+  for (let i = 0; i < 4; i += 1) {
+    const invite = INVITE_NORMS.find((line) => rest.endsWith(line));
+    if (!invite) break;
+    rest = rest.slice(0, -invite.length).trim().replace(/[.!?…]+$/g, "").trim();
   }
+  return rest;
+}
+
+/** A label plus an author hook, or the hook alone. Not this book's own sentence. */
+export function isAuthorHookLine(text: string): boolean {
+  const rest = withoutInvitations(text);
+  if (!rest) return false;
+  if (HOOK_NORMS.has(rest)) return true;
+  const colon = rest.lastIndexOf(": ");
+  if (colon < 0) return false;
+  const prefix = rest.slice(0, colon);
+  const body = rest.slice(colon + 2);
+  return HOOK_NORMS.has(body) && prefix.length > 0 && prefix.length <= 120 && !prefix.includes(". ");
+}
+
+/**
+ * A template slot was left blank: "poems: .", "gathered as .", an empty author.
+ * Ordinary possessives ("life's", "father's") are not empty slots.
+ */
+export function hasEmptyInterpolation(text: string): boolean {
+  const copy = text.replace(/\s+/g, " ").trim();
+  if (!copy) return false;
+  return (
+    /:\s*[.!?…](?:\s|$)/.test(copy) ||
+    /gathered as\s*[.!?…]/i.test(copy) ||
+    /^['’]s\b/.test(copy) ||
+    /\(\s*\)/.test(copy)
+  );
+}
+
+function generatedBlurb(work: ShelfWork): string {
   const who = shortAuthor(work.author);
+  const title = work.title.replace(/\s+/g, " ").trim();
+  if (!who || !title) return "";
   const form = formPhrase(work.form);
   const year = yearPhrase(work);
-  if (work.form === "stories") {
-    return oneSentence(`${who}’s ${year}${form}, gathered as ${work.title}.`);
-  }
-  if (work.form === "poem") {
-    return oneSentence(`${who}’s ${year}poems: ${work.title}.`);
-  }
-  if (work.form === "play") {
-    return oneSentence(`${who}’s ${year}play ${work.title}.`);
-  }
-  return oneSentence(`${who}’s ${year}${form} ${work.title}.`);
+  let line = `${who}’s ${year}${form} ${title}.`;
+  if (work.form === "stories") line = `${who}’s ${year}${form}, gathered as ${title}.`;
+  else if (work.form === "poem") line = `${who}’s ${year}poems: ${title}.`;
+  else if (work.form === "play") line = `${who}’s ${year}play ${title}.`;
+  if (hasEmptyInterpolation(line)) return "";
+  return oneSentence(line);
+}
+
+/** Keep a book's own sentence. Drop a borrowed author tagline or a blank slot. */
+export function publishableCopy(text: string): string {
+  const copy = text.replace(/\s+/g, " ").trim();
+  if (!copy || isAuthorHookLine(copy) || hasEmptyInterpolation(copy)) return "";
+  return copy;
+}
+
+function firstSentence(text: string): string {
+  const sentence = oneSentence(text);
+  if (!sentence || hasEmptyInterpolation(sentence)) return "";
+  return sentence;
 }
 
 export function blurbFor(work: ShelfWork | string): string {
   const item = typeof work === "string" ? shelfWork(work) : work;
   if (!item) return "";
-  const curated = BLURBS[item.id];
+  const curated = publishableCopy(BLURBS[item.id] ?? "");
   if (curated) {
-    const copy = curated.replace(/\s+/g, " ").trim();
     // Content notes are the card, including a second sentence ("left as printed").
-    if (/^A heads-up before you start\b/.test(copy)) return copy;
-    return oneSentence(copy);
+    if (/^A heads-up before you start\b/.test(curated)) return curated;
+    const sentence = firstSentence(curated);
+    if (sentence) return sentence;
   }
-  const fromPitch = oneSentence(PITCHES[item.id] ?? "");
-  if (fromPitch) return fromPitch;
-  const fromRitual = oneSentence(RITUAL_PITCHES[item.id] ?? "");
-  if (fromRitual) return fromRitual;
-  const fromIntro = oneSentence(item.intro ?? "");
-  if (fromIntro) return fromIntro;
+  const fromPitch = publishableCopy(PITCHES[item.id] ?? "");
+  if (fromPitch) {
+    const sentence = firstSentence(fromPitch);
+    if (sentence) return sentence;
+  }
+  const fromRitual = publishableCopy(RITUAL_PITCHES[item.id] ?? "");
+  if (fromRitual) {
+    const sentence = firstSentence(fromRitual);
+    if (sentence) return sentence;
+  }
+  const fromIntro = publishableCopy(item.intro ?? "");
+  if (fromIntro) {
+    const sentence = firstSentence(fromIntro);
+    if (sentence) return sentence;
+  }
   return generatedBlurb(item);
 }
 
