@@ -5,12 +5,14 @@ import {
   Scripts,
   useRouterState,
 } from "@tanstack/react-router";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { AuthProvider } from "@/lib/auth/provider";
 import { DeferredRemoteSync } from "@/components/deferred-remote-sync";
 import { OfflineMark } from "@/components/offline-mark";
 import { StreakReminderHost } from "@/components/streak-reminder-host";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
+import { PagesShell } from "@/components/pages-shell";
+import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import { APP_DESCRIPTION, APP_NAME, WORDMARK, withBase } from "@/lib/site";
 import {
   PAGE_PAPER,
@@ -20,6 +22,22 @@ import {
 import { watchShellUpdates } from "@/lib/shell-update";
 import { attachVisualViewport } from "@/lib/vvh";
 import appCss from "../styles.css?url";
+
+/**
+ * A service-worker navigation reuses the wordmark document. The first client
+ * render has to be that mark; the layout effect then paints the route.
+ * A prerendered page already has its own markup, so it paints immediately.
+ */
+function OutletGate() {
+  const [showRoute, setShowRoute] = useState(
+    () => !documentIsWordmarkShell(typeof document === "undefined" ? null : document),
+  );
+  useLayoutEffect(() => {
+    setShowRoute(true);
+  }, []);
+  if (!showRoute) return <PagesShell />;
+  return <Outlet />;
+}
 
 function VisualViewport() {
   useEffect(() => attachVisualViewport(), []);
@@ -155,7 +173,7 @@ export const Route = createRootRoute({
         <OfflineMark />
         <StreakReminderHost />
         <AuthProvider>
-          <Outlet />
+          <OutletGate />
         </AuthProvider>
         <Scripts />
       </body>
