@@ -347,7 +347,18 @@ async function aim(
   mode: "ghost" | "click-first" | "touch" | "burst" | "point",
 ): Promise<Shot | null> {
   const burst = mode === "burst" ? 3 : 1;
-  const shot = await page.evaluate(
+  const shot = await aimShot(page, direction, mode, burst);
+  if (!shot.ok) return null;
+  return shot;
+}
+
+async function aimShot(
+  page: Page,
+  direction: 1 | -1,
+  mode: "ghost" | "click-first" | "touch" | "burst" | "point",
+  burst: number,
+) {
+  return page.evaluate(
     ({ direction, mode, burst }) => {
       const hostEl = document.querySelector("[data-reader-text]");
       const line = document.querySelector(".breath-now");
@@ -433,8 +444,6 @@ async function aim(
     },
     { direction, mode, burst },
   );
-  if (!shot.ok) return null;
-  return shot;
 }
 
 const sentenceCountCache = new Map<string, number[] | null>();
@@ -523,41 +532,65 @@ async function step(
     `${label} expected breath ${expected}, one sentence per tap lands on ${predicted.index}:${predicted.cursor}`,
   );
   let shot: Shot | null = null;
-  for (let attempt = 0; attempt < 25; attempt += 1) {
-    shot = await aim(page, direction, mode === "screen" ? "point" : mode);
-    if (shot) break;
-    await page.evaluate(
-      () =>
-        new Promise<void>((resolve) => {
-          requestAnimationFrame(() => resolve());
-        }),
-    );
-  }
-  if (!shot) throw new Error(`${label}: no tappable ${direction < 0 ? "back" : "forward"} band`);
-  if (mode === "screen") await page.touchscreen.tap(shot.x, shot.y);
-  try {
-    await page.waitForFunction(
-      (want) => {
-        const frame = document.querySelector(".reader-frame");
-        const slot = document.querySelector(".breath-slot");
-        return (
-          frame?.getAttribute("data-breath-index") === String(want.index) &&
-          frame?.getAttribute("data-sentence-at") === String(want.cursor) &&
-          slot instanceof HTMLElement &&
-          slot.scrollTop < 4
+  let lastError: unknown;
+  for (let nav = 0; nav < 2; nav += 1) {
+    try {
+      shot = null;
+      for (let attempt = 0; attempt < 25; attempt += 1) {
+        shot = await aim(page, direction, mode === "screen" ? "point" : mode);
+        if (shot) break;
+        await page.evaluate(
+          () =>
+            new Promise<void>((resolve) => {
+              requestAnimationFrame(() => resolve());
+            }),
         );
-      },
-      predicted,
-      { timeout: 4000 },
-    );
-  } catch (error) {
-    const now = await readSentence(page);
-    const from = shot ? shot.from : "?";
-    throw new Error(
-      `${label}: index ${now.index}:${now.cursor} scroll ${now.scrollTop}, expected ${predicted.index}:${predicted.cursor} after ${burst} (from ${from} pinned=${shot?.pinned} line=${shot?.lineTop} host=${shot?.hostTop} x=${shot?.x} y=${shot?.y}; ${error instanceof Error ? error.message : error})`,
-    );
+      }
+      if (!shot) throw new Error(`${label}: no tappable ${direction < 0 ? "back" : "forward"} band`);
+      if (mode === "screen") await page.touchscreen.tap(shot.x, shot.y);
+      await page.waitForFunction(
+        (want) => {
+          const frame = document.querySelector(".reader-frame");
+          const slot = document.querySelector(".breath-slot");
+          return (
+            frame?.getAttribute("data-breath-index") === String(want.index) &&
+            frame?.getAttribute("data-sentence-at") === String(want.cursor) &&
+            slot instanceof HTMLElement &&
+            slot.scrollTop < 4
+          );
+        },
+        predicted,
+        { timeout: 4000 },
+      );
+      return shot;
+    } catch (error) {
+      lastError = error;
+      const destroyed = isRetryableCatalogOpen(error);
+      if (destroyed && nav === 0) {
+        // The shell reload can land after the tap, or instead of it.
+        // Keep the sentence if it already moved. Aim again only when it did not.
+        await page.locator(".breath-now").waitFor({ timeout: 15_000 }).catch(() => undefined);
+        const now = await readSentence(page).catch(() => null);
+        if (
+          now &&
+          now.index === predicted.index &&
+          now.cursor === predicted.cursor &&
+          now.scrollTop < 4
+        ) {
+          const point = await aim(page, direction, "point").catch(() => null);
+          if (point) return point;
+        }
+        if (now && now.index === before.index && now.cursor === before.cursor) continue;
+      }
+      if (destroyed) throw error;
+      const now = await readSentence(page).catch(() => null);
+      const from = shot ? shot.from : "?";
+      throw new Error(
+        `${label}: index ${now ? `${now.index}:${now.cursor}` : "?"} scroll ${now?.scrollTop ?? "?"}, expected ${predicted.index}:${predicted.cursor} after ${burst} (from ${from} pinned=${shot?.pinned} line=${shot?.lineTop} host=${shot?.hostTop} x=${shot?.x} y=${shot?.y}; ${error instanceof Error ? error.message : error})`,
+      );
+    }
   }
-  return shot;
+  throw lastError instanceof Error ? lastError : new Error(`${label}: tap interrupted`);
 }
 
 async function lateGhost(page: Page, shot: Shot, expected: number, label: string) {
