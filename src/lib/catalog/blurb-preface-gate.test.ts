@@ -28,6 +28,8 @@ test("an author tagline that describes one book is not another book's blurb or p
     assert.doesNotMatch(blurbFor(id), BORROWED_KING, `${id} blurb`);
     assert.doesNotMatch(prefaceFor(id) ?? "", BORROWED_KING, `${id} preface`);
   }
+  assert.match(blurbFor("the-mystery-of-choice"), /Purple Emperor/);
+  assert.match(prefaceFor("the-mystery-of-choice") ?? "", /Purple Emperor/);
   assert.match(blurbFor("the-king-in-yellow"), /stories that catch the yellow stain/);
   assert.match(prefaceFor("the-king-in-yellow") ?? "", /stories that catch the yellow stain/);
 });
