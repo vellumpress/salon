@@ -30,3 +30,11 @@ test("rituals matches the wordmark document before painting the lanes", () => {
   const root = readFileSync(new URL("../routes/__root.tsx", import.meta.url), "utf8");
   assert.doesNotMatch(root, /beforeLoad|OutletGate/);
 });
+
+test("the reader matches the wordmark document before painting a breath", () => {
+  const page = readFileSync(new URL("../routes/read.$workId.tsx", import.meta.url), "utf8");
+  const gate = page.slice(page.indexOf("function ReadPage"), page.indexOf("function ReadBody"));
+  assert.match(gate, /documentIsWordmarkShell\(document\)/);
+  assert.match(gate, /if \(!booted\) return <PagesShell \/>/);
+  assert.match(gate, /hydration error #418/);
+});
