@@ -1,4 +1,4 @@
-import { blurbFor } from "./blurbs.ts";
+import { blurbFor, hasEmptyInterpolation, publishableCopy } from "./blurbs.ts";
 import { RITUAL_LANES } from "./rituals.ts";
 import { SERIALIZE_LANE_ID } from "./serialize.ts";
 import { shelfWork, type ShelfForm, type ShelfWork } from "./shelf.ts";
@@ -375,10 +375,13 @@ export function composePreface(work: ShelfWork): string {
 
 export function prefaceFor(id: string): string | undefined {
   const key = canonicalWorkId(id);
-  const tuned = PREFACES[key];
+  const tuned = publishableCopy(PREFACES[key] ?? "");
   if (tuned) return tuned;
-  const stored = STORED_PREFACES[key];
+  const stored = publishableCopy(STORED_PREFACES[key] ?? "");
   if (stored) return stored;
   const shelf = shelfWork(key);
-  return shelf ? composePreface(shelf) : undefined;
+  if (!shelf) return undefined;
+  const composed = composePreface(shelf).replace(/\s+/g, " ").trim();
+  if (!composed || hasEmptyInterpolation(composed)) return undefined;
+  return composed;
 }
