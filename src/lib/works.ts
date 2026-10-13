@@ -31,7 +31,7 @@ export function peekWork(id: string) {
 }
 
 export function workIsComplete(id: string) {
-  return complete.get(canonicalWorkId(id)) === true;
+  return editionReady(canonicalWorkId(id));
 }
 
 export function catalogIds() {
@@ -45,10 +45,16 @@ function editionCoversShelf(id: string, work: Work | undefined) {
   return expected == null || work.breaths.length >= expected;
 }
 
+/** The complete flag counts only when the cached bind actually covers the shelf. */
+function editionReady(id: string) {
+  return complete.get(id) === true && editionCoversShelf(id, cache.get(id));
+}
+
 function storeEdition(id: string, work: Work, claimedComplete: boolean) {
   const chosen = preferLoadedWork(cache.get(id), work) ?? work;
   if (cache.get(id) !== chosen) cache.set(id, chosen);
   if (claimedComplete && editionCoversShelf(id, chosen)) complete.set(id, true);
+  else if (!editionCoversShelf(id, chosen)) complete.set(id, false);
   else if (!complete.get(id)) complete.set(id, false);
   return chosen;
 }
@@ -73,7 +79,7 @@ function hydrateLocal(id: string) {
   if (!isLocalBound(id)) return Promise.resolve(undefined);
   const loader = files[`./catalog/texts/${id}.json`];
   if (typeof loader !== "function") return Promise.resolve(undefined);
-  if (complete.get(id)) return Promise.resolve(cache.get(id));
+  if (editionReady(id)) return Promise.resolve(cache.get(id));
   const waiting = localWait.get(id);
   if (waiting) return waiting;
   const pending = loader()
@@ -93,7 +99,7 @@ function loadLocalOpening(id: string) {
   if (waiting) return waiting;
   const pending = loader()
     .then((raw) => {
-      if (complete.get(id)) return cache.get(id);
+      if (editionReady(id)) return cache.get(id);
       const chosen = preferLoadedWork(cache.get(id), raw as Work);
       if (chosen && cache.get(id) !== chosen) cache.set(id, chosen);
       if (!complete.has(id)) complete.set(id, false);
@@ -115,7 +121,7 @@ function loadOpening(id: string) {
 }
 
 function loadFull(id: string) {
-  if (complete.get(id)) return Promise.resolve(cache.get(id));
+  if (editionReady(id)) return Promise.resolve(cache.get(id));
   const waiting = fullWait.get(id);
   if (waiting) return waiting;
   const pending = pullRemote(id, false)
@@ -153,7 +159,7 @@ async function loadWorkInner(
   if (!id || deviceImport(id)) return undefined;
   const cached = cache.get(id);
   if (cached) onUpdate?.(cached);
-  if (cached && complete.get(id)) return cached;
+  if (cached && editionReady(id)) return cached;
 
   const localLoader = isLocalBound(id) ? files[`./catalog/texts/${id}.json`] : undefined;
   if (typeof localLoader === "function") {
@@ -161,7 +167,7 @@ async function loadWorkInner(
     const opened = cached ?? (await loadLocalOpening(id));
     // The full bind can land while the opening is parsing. Publish that,
     // not the sit, or the reader stays on the first pages.
-    if (complete.get(id)) {
+    if (editionReady(id)) {
       const ready = preferLoadedWork(opened, cache.get(id));
       if (ready) onUpdate?.(ready);
       return ready;
@@ -196,7 +202,7 @@ async function loadWorkInner(
   const opened = cached ?? (await loadOpening(id));
   if (!opened) return undefined;
   onUpdate?.(opened);
-  if (complete.get(id)) return opened;
+  if (editionReady(id)) return opened;
 
   if (typeof requestAnimationFrame === "function") {
     await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));

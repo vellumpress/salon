@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type TouchEvent as ReactTouchEvent } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
-import { bootShouldKeepPlace, firstPaintIndex } from "@/lib/deep-link-breath";
+import { adoptFrameIndex, bootShouldKeepPlace, firstPaintIndex, pendingLinkAt } from "@/lib/deep-link-breath";
 import { openingBreathIndex } from "@/lib/opening-scene";
 import {
   chapterStartIndex,
@@ -257,6 +257,8 @@ export function TbrReader({
    * leave the frame on breath 0. The place is applied again after hydration.
    */
   const steppedPlace = useRef<number | null>(null);
+  /** A real tap owns the breath. A later full bind must not jump back to `?at=`. */
+  const userStepped = useRef(false);
   const seenBreaths = useRef(0);
   /** Share link past the opening excerpt. Applied when the rest of the book arrives. */
   const awaitingAt = useRef<number | null>(
@@ -391,10 +393,11 @@ export function TbrReader({
         const waiting = awaitingAt.current;
         if (grew && waiting !== null && waiting < work.breaths.length) {
           if (cancel) return;
+          const tapped = tappedSinceHydration();
           awaitingAt.current = null;
-          linkApplied.current = true;
           startSitting(work.id);
-          if (!tappedSinceHydration()) setBreath(work.id, waiting, stampAt(work, waiting));
+          if (!tapped) setBreath(work.id, waiting, stampAt(work, waiting));
+          if (!tapped || steppedPlace.current !== null) linkApplied.current = true;
           setShowPreface(false);
           setOverlay("none");
           return;
@@ -404,10 +407,11 @@ export function TbrReader({
         // A tap that already left the hydrated place is kept.
         if (!linkApplied.current && deepLink !== null) {
           if (cancel) return;
+          const tapped = tappedSinceHydration();
           awaitingAt.current = null;
-          linkApplied.current = true;
           startSitting(work.id);
-          if (!tappedSinceHydration()) setBreath(work.id, deepLink, stampAt(work, deepLink));
+          if (!tapped) setBreath(work.id, deepLink, stampAt(work, deepLink));
+          if (!tapped || steppedPlace.current !== null) linkApplied.current = true;
           setShowPreface(false);
           setOverlay("none");
           return;
@@ -440,9 +444,9 @@ export function TbrReader({
       }
       if (deepLink !== null) {
         awaitingAt.current = null;
-        linkApplied.current = true;
         startSitting(work.id);
         if (!movedWhileSettling) setBreath(work.id, deepLink, stampAt(work, deepLink));
+        if (!movedWhileSettling || steppedPlace.current !== null) linkApplied.current = true;
         setShowPreface(false);
         setOverlay("none");
         return;
@@ -486,6 +490,19 @@ export function TbrReader({
       cancel = true;
     };
   }, [at, echoAt, ensure, hostedSit, pair, rememberHostedSit, setBreath, shuffle, sit, startSitting, work]);
+
+  // The frame paints `?at=` only while the link is unapplied. If boot marks
+  // the link applied without writing the store, the next paint is breath 0
+  // and a chapter past the opening (Banjo at 314) stays on chapter I.
+  useLayoutEffect(() => {
+    if (userStepped.current || steppedPlace.current !== null) return;
+    const want = pendingLinkAt(at, work.breaths.length);
+    if (want === null) return;
+    if (liveIndex() !== want) setBreath(work.id, want, stampAt(work, want));
+    if (liveIndex() === want) linkApplied.current = true;
+    setShowPreface(false);
+    setOverlay("none");
+  }, [at, setBreath, work]);
 
   useEffect(() => {
     document.documentElement.classList.add("sitting");
@@ -615,17 +632,16 @@ export function TbrReader({
 
   function stepBy(delta: 1 | -1) {
     if (overlayRef.current !== "none") return;
-    // The frame can show `?at=` before the store has that breath. Stepping
-    // from the store then walks off breath 0, or does nothing, and the next
-    // paint snaps to the start.
-    let at = liveIndex();
-    const frameAt = Number(
+    const frameRaw = Number(
       turnHostRef.current?.closest(".reader-frame")?.getAttribute("data-breath-index"),
     );
-    if (Number.isFinite(frameAt) && frameAt !== at && frameAt >= 0 && frameAt < work.breaths.length) {
-      at = frameAt;
-      setBreath(work.id, at, stampAt(work, at));
-    }
+    const at = adoptFrameIndex({
+      storeIndex: liveIndex(),
+      frameIndex: Number.isFinite(frameRaw) ? frameRaw : null,
+      linkApplied: linkApplied.current,
+      breathCount: work.breaths.length,
+    });
+    if (at !== liveIndex()) setBreath(work.id, at, stampAt(work, at));
     const text = work.breaths[at]?.text ?? "";
     const here = breathSentenceCount(text, displayKind);
     const moved = stepSentencePlace({
@@ -636,14 +652,19 @@ export function TbrReader({
       prevCount: at > 0 ? breathSentenceCount(work.breaths[at - 1]?.text ?? "", displayKind) : 1,
       breathCount: work.breaths.length,
     });
-    if (moved === "start") return;
+    if (moved === "start") {
+      userStepped.current = true;
+      return;
+    }
     if (moved === "end") {
+      userStepped.current = true;
       if (delta > 0 && workIsComplete(work.id)) {
         complete(work.id);
         setOverlay("end");
       }
       return;
     }
+    userStepped.current = true;
     if (!booted.current) steppedPlace.current = moved.index;
     rememberSentence(moved.index, moved.cursor);
     if (moved.index !== at) goTo(moved.index);
