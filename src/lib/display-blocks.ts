@@ -66,9 +66,11 @@ export type DisplayMetrics = {
 type PackUnit = { start: number; end: number; sentences: number };
 
 /**
- * A quotation that fits in the third stays one unit, including a nested
- * quote that fits inside a taller one. A quotation past the third is left
- * in sentences so the packer can break at those ends.
+ * A quotation is one unit when the quotation itself fits in the third.
+ * The sentence that opens it comes along, because a sentence cannot break.
+ * A nested quote that fits stays whole even when the outer quote does not.
+ * A quotation past the third is left in sentences so the packer can break
+ * at those ends. A later speech repeats the speaker, so that label counts.
  */
 function unitsForPack(
   text: string,
@@ -77,21 +79,27 @@ function unitsForPack(
   limitPx: number,
   speaker: string | null,
 ): PackUnit[] {
-  // A quote is held together only when the block that would contain it,
-  // from the sentence that opens it, still fits. A later speech repeats the
-  // speaker, so that label counts too. A taller quote is left in sentences.
   const fits = (sample: string) => {
     if (measure(sample) > limitPx) return false;
     if (!speaker) return true;
     return measure(showBlock(sample, speaker, false)) <= limitPx;
   };
-  const held = quoteIntervals(text).filter((range) => fits(text.slice(range.start, range.end)));
+  const fitting = quoteIntervals(text).filter((range) => fits(text.slice(range.start, range.end)));
+  const held = fitting.filter(
+    (range) =>
+      !fitting.some(
+        (other) =>
+          other !== range &&
+          other.start <= range.start &&
+          other.end >= range.end &&
+          (other.start < range.start || other.end > range.end),
+      ),
+  );
   const units: PackUnit[] = [];
   let i = 0;
   while (i < spans.length) {
     let j = i;
     let end = spans[i]!.end;
-    let sentences = 1;
     let grew = true;
     while (grew) {
       grew = false;
@@ -100,25 +108,68 @@ function unitsForPack(
         let k = j;
         while (k + 1 < spans.length && spans[k]!.end < range.end) k += 1;
         const candidateEnd = spans[k]!.end;
-        if (!fits(text.slice(spans[i]!.start, candidateEnd))) continue;
+        if (candidateEnd <= end) continue;
+        const opener = text[range.start];
+        const curly = opener === "\u201C" || opener === "\u2018";
+        // A curly quotation that fits stays whole even when the sentence
+        // around it runs past the third. A straight mark is often an
+        // apostrophe; glue those sentences only when the result still fits.
+        if (!curly && !fits(text.slice(spans[i]!.start, candidateEnd))) continue;
         end = candidateEnd;
         j = k;
-        sentences = k - i + 1;
         grew = true;
       }
     }
-    units.push({ start: spans[i]!.start, end, sentences });
+    units.push({ start: spans[i]!.start, end, sentences: j - i + 1 });
     i = j + 1;
   }
   return units;
 }
 
+type UnitRange = { from: number; to: number };
+
+/** A last block shorter than a third of the limit is a stub. Fold it upward. */
+function foldShortTail(
+  text: string,
+  units: PackUnit[],
+  ranges: UnitRange[],
+  measure: (sample: string) => number,
+  limitPx: number,
+  speaker: string | null,
+) {
+  const tailMin = limitPx / 3;
+  const height = (range: UnitRange, first: boolean) =>
+    measure(showBlock(text.slice(units[range.from]!.start, units[range.to - 1]!.end), speaker, first));
+  while (ranges.length >= 2) {
+    const last = ranges[ranges.length - 1]!;
+    const prev = ranges[ranges.length - 2]!;
+    if (height(last, false) >= tailMin) break;
+    if (height({ from: prev.from, to: last.to }, prev.from === 0) <= limitPx) {
+      prev.to = last.to;
+      ranges.pop();
+      continue;
+    }
+    if (prev.to - prev.from < 2) break;
+    let moved = false;
+    while (prev.to - prev.from >= 2 && height(last, false) < tailMin) {
+      const taken = { from: prev.to - 1, to: last.to };
+      if (height(taken, false) > limitPx) break;
+      prev.to -= 1;
+      last.from = prev.to;
+      moved = true;
+    }
+    if (!moved) break;
+  }
+}
+
 /**
  * Group sentence slices so each block measures within `limitPx`.
- * A sentence that is taller on its own stays whole. A quotation that fits
- * in the third stays whole, including one nested inside a taller quote.
- * A quotation past the third breaks at sentence ends inside it, and each
- * of those blocks stays within the third unless it is a single sentence.
+ * A sentence that is taller on its own stays whole. A quotation stays whole
+ * when the quotation itself fits in the third, including one nested inside
+ * a taller quote. A quotation past the third breaks at sentence ends inside
+ * it. Sentences then pack greedily up to the limit. A tail shorter than a
+ * third of the limit folds into the block above when that still fits, and
+ * otherwise the boundary moves back until the tail is tall enough.
  * Abbreviations are not breaks. Verse is one block even when it holds many
  * sentences. Prose slices joined together are the original string. A play
  * speech repeats "Speaker:" on every block after the first; the slices
@@ -141,8 +192,7 @@ export function packDisplayBlocks(
   if (units.length <= 1) {
     return [{ text, sentences: Math.max(1, units[0]?.sentences ?? spans.length) }];
   }
-  const raws: string[] = [];
-  const counts: number[] = [];
+  const ranges: UnitRange[] = [];
   let from = 0;
   while (from < units.length) {
     let lo = from;
@@ -153,12 +203,17 @@ export function packDisplayBlocks(
       if (measure(sample) <= limitPx) lo = mid;
       else hi = mid - 1;
     }
-    const next = lo + 1;
+    ranges.push({ from, to: lo + 1 });
+    from = lo + 1;
+  }
+  foldShortTail(text, units, ranges, measure, limitPx, speaker);
+  const raws: string[] = [];
+  const counts: number[] = [];
+  for (const range of ranges) {
     let sentences = 0;
-    for (let u = from; u < next; u += 1) sentences += units[u]!.sentences;
-    raws.push(text.slice(units[from]!.start, units[next - 1]!.end));
+    for (let u = range.from; u < range.to; u += 1) sentences += units[u]!.sentences;
+    raws.push(text.slice(units[range.from]!.start, units[range.to - 1]!.end));
     counts.push(Math.max(1, sentences));
-    from = next;
   }
   if (raws.join("") !== text) {
     return [{ text, sentences: Math.max(1, spans.length) }];
@@ -252,9 +307,10 @@ function styleKey(metrics: DisplayMetrics) {
 }
 
 /**
- * One measured sample per column, then a character estimate.
- * The estimate wraps a little early so a block stays inside the third;
- * the reader tightens again if a real line still overflows.
+ * Before the reading face has loaded, one measured sample per column, then
+ * a character estimate. Once Cormorant is ready, each candidate is measured
+ * in that face: the estimate wraps wider than the real column and both cuts
+ * quotations that fit and packs blocks past the third.
  */
 function calibrate(metrics: DisplayMetrics) {
   const key = styleKey(metrics);
@@ -285,11 +341,18 @@ export function resolveDisplayBlocks(
   const key = `${styleKey(metrics)}|${metrics.limit}|${kind}|${text}`;
   const hit = cache.get(key);
   if (hit) return hit;
-  const fit = calibrate(metrics);
-  const blocks = packDisplayBlocks(text, (sample) => {
-    const chars = sample.replace(/\s+/g, " ").trim().length || 1;
-    return Math.ceil(chars / fit.chars) * fit.line;
-  }, metrics.limit, kind);
+  const blocks = packDisplayBlocks(
+    text,
+    metrics.faceReady
+      ? (sample) => measureStyledHeight(sample, metrics)
+      : (sample) => {
+          const fit = calibrate(metrics);
+          const chars = sample.replace(/\s+/g, " ").trim().length || 1;
+          return Math.ceil(chars / fit.chars) * fit.line;
+        },
+    metrics.limit,
+    kind,
+  );
   cache.set(key, blocks);
   if (cache.size > 80) {
     const oldest = cache.keys().next().value;

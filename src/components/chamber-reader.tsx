@@ -1887,7 +1887,10 @@ export function TbrReader({
       data-sentence-at={breath ? Math.min(breathSentenceCount(breath.text, displayKind) - 1, Math.max(0, cursor)) : 0}
       data-sentence-count={breath ? breathSentenceCount(breath.text, displayKind) : 1}
       data-display-blocks={display.ready ? "ready" : "pending"}
-      data-block-viewport={display.ready ? String(display.viewport) : ""}
+      data-face-ready={display.faceReady ? "yes" : "no"}
+      data-block-viewport={display.viewport ? String(display.viewport) : ""}
+      data-block-limit={display.limit ? String(display.limit) : ""}
+      data-block-width={display.width ? String(display.width) : ""}
     >
       <h1 className="sr-only">{work.title}</h1>
       {together && pair ? (

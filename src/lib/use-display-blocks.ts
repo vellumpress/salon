@@ -64,6 +64,7 @@ export function useDisplayBlocks(
   const [tick, setTick] = useState(0);
   const tightenRef = useRef(0);
   const viewportSeen = useRef(0);
+  const faceSeen = useRef(false);
   const blindSince = useRef(0);
 
   useLayoutEffect(() => {
@@ -99,11 +100,22 @@ export function useDisplayBlocks(
       viewportSeen.current = viewport;
       tightenRef.current = 0;
     }
-    const next = readMetrics(node, tightenRef.current);
+    let next = readMetrics(node, tightenRef.current);
     if (!next) {
       // Standalone can report a 0 viewport on the first frames and then the
       // real height, with no resize event. Keep looking for a few seconds.
       return retry();
+    }
+    // A tighten learned from the character estimate must not survive the
+    // real face. That estimate runs tall, and the lowered limit then cuts
+    // quotations that fit in a third of the phone.
+    if (!next.faceReady) faceSeen.current = false;
+    else if (!faceSeen.current) {
+      faceSeen.current = true;
+      if (tightenRef.current !== 0) {
+        tightenRef.current = 0;
+        next = readMetrics(node, 0) ?? next;
+      }
     }
     blindSince.current = 0;
     setMetrics((prev) => (metricsEqual(prev, next) ? prev : next));
@@ -125,14 +137,20 @@ export function useDisplayBlocks(
     if (!root) return;
     const cap = metrics.viewport * VIEWPORT_BLOCK_FRACTION;
     let overflow = 0;
-    for (const node of root.querySelectorAll<HTMLElement>("[data-block-sentences]")) {
-      const count = Number(node.getAttribute("data-block-sentences"));
-      if (!(count > 1)) continue;
-      if (node.getClientRects().length === 0) continue;
-      const height = node.offsetHeight;
-      if (height > cap + 0.5) overflow = Math.max(overflow, height - cap);
+    // Once Cormorant is measured, a block past the third is one sentence or
+    // a quotation that fits only with the sentence that opens it. Lowering
+    // the limit cannot split those, and it cuts quotations that do fit.
+    // Lookback lines are not the breath being read.
+    if (!metrics.faceReady) {
+      for (const node of root.querySelectorAll<HTMLElement>(".breath-now [data-block-sentences]")) {
+        const count = Number(node.getAttribute("data-block-sentences"));
+        if (!(count > 1)) continue;
+        if (node.getClientRects().length === 0) continue;
+        const height = node.offsetHeight;
+        if (height > cap + 0.5) overflow = Math.max(overflow, height - cap);
+      }
     }
-    const key = `${metrics.viewport}|${metrics.width}|${metrics.limit}|${metrics.fontSize}|${metrics.lineHeight}`;
+    const key = `${metrics.viewport}|${metrics.width}|${metrics.limit}|${metrics.fontSize}|${metrics.lineHeight}|${metrics.faceReady ? 1 : 0}`;
     if (overflow > 0.5 && tightenRef.current < cap * 0.5) {
       tightenRef.current = Math.min(
         Math.floor(cap * 0.5),
@@ -149,14 +167,17 @@ export function useDisplayBlocks(
   }, [metrics, packed, sourceRef]);
 
   const readyKey = metrics
-    ? `${metrics.viewport}|${metrics.width}|${metrics.limit}|${metrics.fontSize}|${metrics.lineHeight}`
+    ? `${metrics.viewport}|${metrics.width}|${metrics.limit}|${metrics.fontSize}|${metrics.lineHeight}|${metrics.faceReady ? 1 : 0}`
     : "";
 
   return {
     blocksFor(text: string): DisplayBlock[] {
       return packed.get(text) ?? unmeasuredBlocks(text, kind);
     },
-    ready: readyKey !== "" && readyKey === settled,
+    ready: readyKey !== "" && readyKey === settled && metrics?.faceReady === true,
+    faceReady: metrics?.faceReady === true,
+    limit: metrics?.limit ?? 0,
+    width: metrics?.width ?? 0,
     viewport: metrics?.viewport ?? 0,
   };
 }
