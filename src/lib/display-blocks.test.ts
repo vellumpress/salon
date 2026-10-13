@@ -316,6 +316,52 @@ test("Mr. Mrs. Dr. and St. do not end a sentence, in or out of quotes", () => {
   assert.ok(bound.some((chunk) => /Mr\.$/.test(chunk)));
 });
 
+test("a title joined to the previous word by a dash is not a sentence end", () => {
+  const joined = [
+    "He waited—Mr. Home came in.",
+    "He waited–Mr. Home came in.",
+    "He waited--Mr. Home came in.",
+  ];
+  for (const text of joined) {
+    for (const mode of ["closed", "in-quotes"] as const) {
+      const spans = sentenceSpans(text, mode);
+      const slices = spans.map((span) => text.slice(span.start, span.end));
+      assert.equal(slices.length, 1, `${mode} ${text}`);
+      assert.equal(slices.join(""), text);
+      assert.match(slices[0] ?? "", /Mr\. Home/);
+    }
+  }
+  const followed = "He waited—Mr. Home came in. She left.";
+  const followedParts = parts(followed);
+  assert.equal(followedParts.length, 2);
+  assert.match(followedParts[0] ?? "", /Mr\. Home came in\./);
+  assert.equal(followedParts[1], "She left.");
+  const hyphen = parts("The hall-like room was quiet. She left.");
+  assert.equal(hyphen.length, 2);
+  assert.match(hyphen[0] ?? "", /hall-like room was quiet\./);
+  const quoted = "She said “He waited—Dr. John came in. Then sit.” He nodded.";
+  for (const mode of ["closed", "in-quotes"] as const) {
+    const slices = sentenceSpans(quoted, mode).map((span) => quoted.slice(span.start, span.end));
+    const held = slices.find((slice) => slice.includes("Dr."));
+    assert.match(held ?? "", /Dr\. John came in\./, mode);
+    assert.doesNotMatch(held ?? "", /Dr\.\s*$/);
+  }
+  for (const [breathId, title, name] of [
+    ["s19-41", "Dr.", "John"],
+    ["s24-18", "Mrs.", "Bretton"],
+  ] as const) {
+    const text = breathById("villette", breathId);
+    for (const mode of ["closed", "in-quotes"] as const) {
+      const spans = sentenceSpans(text, mode);
+      const slices = spans.map((span) => text.slice(span.start, span.end));
+      assert.equal(slices.length, 1, `${breathId} ${mode}`);
+      assert.equal(slices.join(""), text);
+      assert.match(slices[0] ?? "", new RegExp(`${title.replace(".", "\\.")} ${name}`));
+      assert.doesNotMatch(slices[0] ?? "", new RegExp(`${title.replace(".", "\\.")}\\s*$`));
+    }
+  }
+});
+
 test("a nested quotation keeps the inner quote together and splits the outer one", () => {
   for (const text of [NESTED_QUOTE, NESTED_STRAIGHT]) {
     assert.equal(interiorQuoteBreaks(text), 0);
