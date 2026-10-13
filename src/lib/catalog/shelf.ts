@@ -2110,22 +2110,6 @@ export const SHELF: ShelfWork[] = [
     breaths: 3855,
   },
   { id: "the-secret-rose", title: "The Secret Rose", author: "W. B. Yeats", year: 1897, form: "stories", language: "English", minutes: 80, local: true, opening: "A man, with thin brown hair and a pale face, half ran, half walked, along the road that wound from the south to the town of Sligo. Many called him Cumhal, the son of Cormac, and", breaths: 154, gutenberg: 5795 },
-  {
-    id: "trooper-peter-halket-of-mashonaland",
-    title: "Trooper Peter Halket of Mashonaland",
-    author: "Olive Schreiner",
-    year: 1897,
-    form: "novel",
-    language: "English",
-    minutes: 80,
-    local: true,
-    gutenberg: 1431,
-    opening:
-      "It was a dark night; a chill breath was coming from the east; not enough to disturb the blaze of Trooper Peter Halket’s fire, yet enough to make it quiver. He sat alone beside it on the top of a kopje.",
-    breaths: 411,
-    intro:
-      "A lone trooper sits by a quivering fire on a Mashonaland kopje. It opens at Chapter I; the full novel follows.",
-  },
   { id: "the-days-work", title: "The Day's Work", author: "Rudyard Kipling", year: 1898, form: "stories", language: "English", minutes: 80, local: true, opening: "･007 the Maltese Cat “Bread Upon the Waters” an Error in the Fourth Dimension My Sunday at Home the Brushwood Boy", breaths: 2091, gutenberg: 2569 },
   { id: "ghetto-tragedies", title: "Ghetto Tragedies", author: "Israel Zangwill", year: 1899, form: "stories", language: "English", minutes: 80, gutenberg: 35076,
     local: true,

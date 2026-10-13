@@ -7,6 +7,8 @@ import { mergeKept, type KeptStored } from "./kept-lines.ts";
 export const WORK_ID_ALIASES: Readonly<Record<string, string>> = {
   immoralist: "the-immoralist",
   "three-plays": "three-plays-incl-henry-iv",
+  // The shorter Mashonaland bind. Saved progress and links follow the full novel.
+  "trooper-peter-halket-of-mashonaland": "trooper-peter-halket",
 };
 
 export function canonicalWorkId(id: string): string {
