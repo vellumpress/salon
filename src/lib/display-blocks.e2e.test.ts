@@ -698,8 +698,12 @@ test(
       assert.doesNotMatch(fellow[0]?.text ?? "", /abundantly right/);
       assert.equal(right.length, 1);
       assert.doesNotMatch(right[0]?.text ?? "", /do you suppose/);
-      assert.equal(right[0]?.sentences, 1);
-      assert.ok((right[0]?.height ?? 0) <= third);
+      assert.ok((right[0]?.sentences ?? 0) >= 1);
+      assert.ok((right[0]?.height ?? 0) <= third, `abundantly ${right[0]?.height}px`);
+      assert.ok(
+        (right[0]?.height ?? 0) >= third / 3,
+        `abundantly tail stayed a stub at ${right[0]?.height}px`,
+      );
       for (const spot of s785) {
         assert.ok(spot.sentences >= 1, `s7-85 sentence count ${spot.sentences}`);
         if (spot.sentences > 1) assert.ok(spot.height <= third, `${spot.height}px ${spot.text.slice(0, 40)}`);
