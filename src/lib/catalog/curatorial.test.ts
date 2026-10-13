@@ -1888,7 +1888,8 @@ test("BATCH-4 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     assert.equal(isAdaptedBySalon(id), false, id);
     assert.equal(forYou!.workIds.includes(id), false, id);
     // PITCHES-2: Rolling Stones leaves Before sleep. The bind stays on Next.
-    if (id === "rolling-stones") {
+    // PITCHES-3: The Everlasting Mercy leaves Before sleep. The bind stays on Next.
+    if (id === "rolling-stones" || id === "the-everlasting-mercy") {
       assert.equal(sleep!.workIds.includes(id), false, id);
     } else {
       assert.ok(sleep!.workIds.includes(id), id);
@@ -2156,8 +2157,13 @@ test("BATCH-13 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.ok(at > prev, `${id} follows All Quiet on Next`);
     prev = at;
     const sit: number = sleep!.workIds.indexOf(id);
-    assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
-    sleepAt = sit;
+    // PITCHES-3: Gilgamesh and the Shahnameh leave Before sleep. The binds stay on Next.
+    if (id === "gilgamesh" || id === "shahnameh") {
+      assert.equal(sit, -1, `${id} leaves Before sleep`);
+    } else {
+      assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
+      sleepAt = sit;
+    }
     assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
     const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
       scenes: unknown[];
@@ -2231,7 +2237,8 @@ test("BATCH-15 CLEAR inventory binds are local Next / before-sleep sits, never F
     prev = at;
     const sit: number = sleep!.workIds.indexOf(id);
     // PITCHES-2: Miss Julia leaves Before sleep. The bind stays on Next.
-    if (id === "miss-julia") {
+    // PITCHES-3: Tales of Old Japan leaves Before sleep. The bind stays on Next.
+    if (id === "miss-julia" || id === "tales-of-old-japan") {
       assert.equal(sit, -1, `${id} leaves Before sleep`);
     } else {
       assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
@@ -2316,7 +2323,8 @@ test("BATCH-16 CLEAR inventory binds are local Next / before-sleep sits, never F
     prev = at;
     const sit: number = sleep!.workIds.indexOf(id);
     // PITCHES-2: Miss Julia leaves Before sleep. The bind stays on Next.
-    if (id === "miss-julia") {
+    // PITCHES-3: Self-Determining Haiti leaves Before sleep. The bind stays on Next.
+    if (id === "miss-julia" || id === "self-determining-haiti") {
       assert.equal(sit, -1, `${id} leaves Before sleep`);
     } else {
       assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
@@ -2405,7 +2413,8 @@ test("EXTRACTABLE-8 CLEAR inventory binds are local Next / before-sleep sits, ne
     prev = at;
     const sit: number = sleep!.workIds.indexOf(id);
     // PITCHES-2: Layla leaves Before sleep. The bind stays on Next.
-    if (id === "layla") {
+    // PITCHES-3: Smoke and Steel leaves Before sleep. The bind stays on Next.
+    if (id === "layla" || id === "smoke-and-steel") {
       assert.equal(sit, -1, `${id} leaves Before sleep`);
     } else {
       assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
@@ -3718,13 +3727,13 @@ test("Mira Noon Wed 23 Sep CLEAR sits on Next, For you, and Rituals, never a new
   assert.equal(next.includes("kwaidan-stories-and-studies-of-strange-things"), false);
   assert.equal(next.includes("thais"), false);
   const noonSleep = sleep!.workIds.lastIndexOf("enchanted-april");
-  assert.deepEqual(sleep?.workIds.slice(noonSleep, noonSleep + 5), [
+  assert.deepEqual(sleep?.workIds.slice(noonSleep, noonSleep + 4), [
     "enchanted-april",
     "quicksand",
-    "underdogs",
     "kwaidan-stories-and-studies-of-strange-things",
     "thais",
   ]);
+  assert.equal(sleep?.workIds.includes("underdogs"), false);
   const noonWalk = walk!.workIds.lastIndexOf("enchanted-april");
   assert.deepEqual(walk?.workIds.slice(noonWalk, noonWalk + 3), [
     "enchanted-april",
@@ -3734,8 +3743,9 @@ test("Mira Noon Wed 23 Sep CLEAR sits on Next, For you, and Rituals, never a new
   const noonUnwind = unwind!.workIds.lastIndexOf("enchanted-april");
   assert.deepEqual(unwind?.workIds.slice(noonUnwind, noonUnwind + 2), [
     "enchanted-april",
-    "underdogs",
+    "lolly-willowes",
   ]);
+  assert.equal(unwind?.workIds.includes("underdogs"), false);
   assert.equal(bite?.workIds.includes("kwaidan-stories-and-studies-of-strange-things"), true);
   assert.equal(forYou?.workIds.includes("enchanted-april"), false);
   assert.equal(forYou?.workIds.includes("underdogs"), false);

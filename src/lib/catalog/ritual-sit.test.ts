@@ -138,6 +138,37 @@ test("PITCHES-2 drops eight sits from Unwind and Before sleep without emptying e
   }
 });
 
+test("PITCHES-3 drops eight wind-down sits and keeps Underdogs on On a walk", () => {
+  const gone = [
+    "self-determining-haiti",
+    "shahnameh",
+    "smoke-and-steel",
+    "tales-of-old-japan",
+    "the-dream",
+    "the-everlasting-mercy",
+    "gilgamesh",
+    "the-dynamiter",
+  ];
+  for (const laneId of ["unwind", "before-sleep"] as const) {
+    const lane = RITUAL_LANES.find((item) => item.id === laneId);
+    assert.ok(lane);
+    const empty: string[] = [];
+    for (const id of lane.workIds) {
+      if (!shelfWork(id) || !ritualCardPitch(id).trim()) empty.push(id);
+    }
+    assert.deepEqual(empty, [], laneId);
+    for (const id of gone) assert.equal(lane.workIds.includes(id), false, `${laneId}:${id}`);
+    assert.equal(lane.workIds.includes("underdogs"), false, laneId);
+  }
+  const walk = RITUAL_LANES.find((item) => item.id === "on-a-walk");
+  assert.ok(walk?.workIds.includes("underdogs"));
+  assert.ok(ritualPitchFor("underdogs"));
+  for (const id of gone) {
+    assert.ok(shelfWork(id), id);
+    assert.equal(ritualPitchFor(id), undefined, id);
+  }
+});
+
 test("a mid-book tale keeps its own minutes instead of the shared preset", () => {
   const fjeld = card("tales-from-the-fjeld");
   assert.equal(estimateRitualMinutes(fjeld), 8);

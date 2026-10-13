@@ -1226,6 +1226,67 @@ const BLURBS: Record<string, string> = {
     "Masefield sings the ranker, the stoker and the tired look-out, then spins the yarn of the clipper Loch Achray towing out to sea.",
   "saragossa":
     "Four escaped prisoners walk into Saragossa at ten at night with thirty-one cuartos between them and eat dry bread under the leaning tower.",
+  // Mira Tue 13 Oct 2026 PITCHES-3 — same sentence as the ritual pitch.
+  "siddhartha":
+    "In the shade of the fig tree by the river, the Brahman’s handsome son learns to speak the Om silently, and his friend Govinda means to follow him anywhere.",
+  "smoke-bellew":
+    "Kit Bellew walks into the office of a San Francisco society weekly to pass on a friend’s advice, and walks out an unpaid editor with a serial to write.",
+  "song-of-songs":
+    "In Solomon’s royal tent, the Shulamite longs for the shepherd she loves and turns away the king’s golden promises.",
+  "songs-and-satires":
+    "Masters lists the silences, of the stars, the sea, a man and a maid, and an old soldier asked by a boy how he lost his leg.",
+  "songs-from-vagabondia":
+    "Off with the fetters: the vagabond poets claim art, letters, music and wine, and the comrade heart that outlasts them all.",
+  "songs-of-childhood":
+    "A child wakes in white moonlight to the gnomies singing in the wood, and by the time the shoes are on, a robin is singing of buttercups and dew.",
+  "songs-of-travel":
+    "Give me the life I love, sings the vagabond: the jolly heaven above, a bed in the bush with stars to see, and the road before him.",
+  "south-sea-tales":
+    "An overloaded schooner of pearl buyers, deck passengers, pigs and bananas sails from Rangiroa for Tahiti and lies becalmed on a glassy sea.",
+  "st-peter-s-umbrella":
+    "The schoolmaster’s widow at Halap leaves only a goat, a fattening goose and a two-year-old girl, and the village gives her a very decent funeral.",
+  "stories-from-tagore":
+    "Five-year-old Mini chatters through her father’s seventeenth chapter, then runs to the window shouting at a Cabuliwallah passing in the road.",
+  "tales-grotesque-and-curious":
+    "Everyone at Ike-no-O knows the nose of the priest Zenchi Naigu, five or six inches long, and he pretends not to mind it.",
+  "ten-minute-stories":
+    "At a moorland crossroads at dusk a walker can’t make his map match the signpost, and takes the arm that reads Over Litacy Hill.",
+  "the-black-monk-and-other-stories":
+    "Worn out and on his doctor’s advice, Kovrin drives in spring to his old guardian’s estate, where the gardens bloom with more flowers than he has ever seen.",
+  "the-cabin":
+    "Dawn comes over the huerta near Valencia: the last nightingales, the sparrows off the thatch, and carts creeping toward the city like files of ants.",
+  "the-chinese-fairy-book":
+    "A little brother sows cooked grain, and the single seed that sprouts grows an ear of millet so huge that a Roc flies off with it to an isle of gold.",
+  "the-civilization-of-china":
+    "Giles asks what people mean by China, and shows that asking a returning traveller how he liked it is like asking how one liked Europe.",
+  "the-colonel-s-dream":
+    "One March morning on lower Broadway, two partners watch the clock and wait for word on the sale that will make them rich or ruin them.",
+  "the-complete-original-short-stories":
+    "For days the scattered remnants of a beaten army trail through Rouen, and the town waits for the Prussians to come in.",
+  "conference":
+    "From all the seven circles the birds flock into a great divan to choose a king, and Tajidar the Wise rises, weeping, to speak first.",
+  "the-crescent-moon":
+    "On the seashore of endless worlds the children meet, building houses of sand and floating boats of withered leaves.",
+  "the-cycle-of-spring":
+    "The King’s court is in an uproar because the Queen found two grey hairs behind his ear, and to him they ring like a bell.",
+  "the-divine-comedy":
+    "Midway on the journey of his life Dante finds himself in a dark wood, and at the foot of a hill a panther blocks his way.",
+  "the-dream-play":
+    "The Daughter of Indra follows a ray of lightning down through the clouds toward the earth, and her father warns her what its people are like.",
+  "the-faith-of-men":
+    "A traveller in the far North washes his hands of Thomas Stevens, the mighty hunter who once strolled into his camp to borrow a pinch of soda.",
+  "the-father":
+    "In the Captain’s lamplit sitting room, the trooper Nöjd is called in before the Pastor to say whether he is the father of the servant-girl’s child.",
+  "the-fortune-of-the-rougons":
+    "Outside the Rome Gate of Plassans lies the Aire Saint-Mittre, an old cemetery gone wild with weeds and pear-trees nobody will pick.",
+  "the-fugitive":
+    "Tagore addresses the Eternal Fugitive sweeping on through space, then stops at a crossroads to bid a friend farewell.",
+  "the-gods-of-pegana":
+    "Before Olympus, Mana-Yood-Sushai made the gods and rested, and Skarl the drummer beats on so that he will not wake.",
+  "the-golden-whales-of-california":
+    "Once in Kalamazoo the gods went walking two by two, for a girl with an innocent heart lived there in a cottage apart.",
+  "the-grand-babylon-hotel":
+    "At 7.45 on a sultry June night, a stranger in the smoking-room of the Grand Babylon asks the great head waiter Jules for an Angel Kiss.",
 };
 
 /** Concrete author-level line when a work has no curated sentence. */
