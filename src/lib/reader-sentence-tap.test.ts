@@ -456,6 +456,7 @@ async function runQuoteTaps(name: "chromium" | "webkit") {
     const fellow = grub.find((spot) => spot.text.includes("do you suppose"));
     assert.ok(fellow, `${name} do you suppose`);
     assert.doesNotMatch(fellow?.text ?? "", /abundantly right/);
+    assert.ok((fellow?.height ?? 999) <= 281, `${name} suppose block ${fellow?.height}px`);
     await page.close();
   } finally {
     await browser.close();
