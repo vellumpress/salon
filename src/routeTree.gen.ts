@@ -19,6 +19,7 @@ import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
 import { Route as FormRouteImport } from './routes/form'
 import { Route as FriendsRouteImport } from './routes/friends'
 import { Route as GlassRouteImport } from './routes/glass'
+import { Route as ImportRouteImport } from './routes/import'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as MapRouteImport } from './routes/map'
 import { Route as PageRouteImport } from './routes/page'
@@ -32,6 +33,7 @@ import { Route as YouRouteImport } from './routes/you'
 import { Route as ApiRtcRouteImport } from './routes/api/rtc'
 import { Route as ClubClubIdRouteImport } from './routes/club.$clubId'
 import { Route as CuratedSlugRouteImport } from './routes/curated_.$slug'
+import { Route as CuratedListsRouteImport } from './routes/curated_.lists'
 import { Route as FriendsHandleRouteImport } from './routes/friends_.$handle'
 import { Route as PledgeTokenRouteImport } from './routes/pledge.$token'
 import { Route as ProfileIndexRouteImport } from './routes/profile.index'
@@ -92,6 +94,11 @@ const FriendsRoute = FriendsRouteImport.update({
 const GlassRoute = GlassRouteImport.update({
   id: '/glass',
   path: '/glass',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImportRoute = ImportRouteImport.update({
+  id: '/import',
+  path: '/import',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LoginRoute = LoginRouteImport.update({
@@ -157,6 +164,11 @@ const ClubClubIdRoute = ClubClubIdRouteImport.update({
 const CuratedSlugRoute = CuratedSlugRouteImport.update({
   id: '/curated_/$slug',
   path: '/curated/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CuratedListsRoute = CuratedListsRouteImport.update({
+  id: '/curated_/lists',
+  path: '/curated/lists',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FriendsHandleRoute = FriendsHandleRouteImport.update({
@@ -226,6 +238,7 @@ export interface FileRoutesByFullPath {
   '/form': typeof FormRoute
   '/friends': typeof FriendsRoute
   '/glass': typeof GlassRoute
+  '/import': typeof ImportRoute
   '/login': typeof LoginRoute
   '/map': typeof MapRoute
   '/page': typeof PageRoute
@@ -239,6 +252,7 @@ export interface FileRoutesByFullPath {
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
   '/curated/$slug': typeof CuratedSlugRoute
+  '/curated/lists': typeof CuratedListsRoute
   '/friends/$handle': typeof FriendsHandleRoute
   '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
@@ -262,6 +276,7 @@ export interface FileRoutesByTo {
   '/form': typeof FormRoute
   '/friends': typeof FriendsRoute
   '/glass': typeof GlassRoute
+  '/import': typeof ImportRoute
   '/login': typeof LoginRoute
   '/map': typeof MapRoute
   '/page': typeof PageRoute
@@ -274,6 +289,7 @@ export interface FileRoutesByTo {
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
   '/curated/$slug': typeof CuratedSlugRoute
+  '/curated/lists': typeof CuratedListsRoute
   '/friends/$handle': typeof FriendsHandleRoute
   '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
@@ -298,6 +314,7 @@ export interface FileRoutesById {
   '/form': typeof FormRoute
   '/friends': typeof FriendsRoute
   '/glass': typeof GlassRoute
+  '/import': typeof ImportRoute
   '/login': typeof LoginRoute
   '/map': typeof MapRoute
   '/page': typeof PageRoute
@@ -311,6 +328,7 @@ export interface FileRoutesById {
   '/api/rtc': typeof ApiRtcRoute
   '/club/$clubId': typeof ClubClubIdRoute
   '/curated_/$slug': typeof CuratedSlugRoute
+  '/curated_/lists': typeof CuratedListsRoute
   '/friends_/$handle': typeof FriendsHandleRoute
   '/pledge/$token': typeof PledgeTokenRoute
   '/profile/collection': typeof ProfileCollectionRoute
@@ -336,6 +354,7 @@ export interface FileRouteTypes {
     | '/form'
     | '/friends'
     | '/glass'
+    | '/import'
     | '/login'
     | '/map'
     | '/page'
@@ -349,6 +368,7 @@ export interface FileRouteTypes {
     | '/api/rtc'
     | '/club/$clubId'
     | '/curated/$slug'
+    | '/curated/lists'
     | '/friends/$handle'
     | '/pledge/$token'
     | '/profile/collection'
@@ -372,6 +392,7 @@ export interface FileRouteTypes {
     | '/form'
     | '/friends'
     | '/glass'
+    | '/import'
     | '/login'
     | '/map'
     | '/page'
@@ -384,6 +405,7 @@ export interface FileRouteTypes {
     | '/api/rtc'
     | '/club/$clubId'
     | '/curated/$slug'
+    | '/curated/lists'
     | '/friends/$handle'
     | '/pledge/$token'
     | '/profile/collection'
@@ -407,6 +429,7 @@ export interface FileRouteTypes {
     | '/form'
     | '/friends'
     | '/glass'
+    | '/import'
     | '/login'
     | '/map'
     | '/page'
@@ -420,6 +443,7 @@ export interface FileRouteTypes {
     | '/api/rtc'
     | '/club/$clubId'
     | '/curated_/$slug'
+    | '/curated_/lists'
     | '/friends_/$handle'
     | '/pledge/$token'
     | '/profile/collection'
@@ -444,6 +468,7 @@ export interface RootRouteChildren {
   FormRoute: typeof FormRoute
   FriendsRoute: typeof FriendsRoute
   GlassRoute: typeof GlassRoute
+  ImportRoute: typeof ImportRoute
   LoginRoute: typeof LoginRoute
   MapRoute: typeof MapRoute
   PageRoute: typeof PageRoute
@@ -457,6 +482,7 @@ export interface RootRouteChildren {
   ApiRtcRoute: typeof ApiRtcRoute
   ClubClubIdRoute: typeof ClubClubIdRoute
   CuratedSlugRoute: typeof CuratedSlugRoute
+  CuratedListsRoute: typeof CuratedListsRoute
   FriendsHandleRoute: typeof FriendsHandleRoute
   PledgeTokenRoute: typeof PledgeTokenRoute
   ReadWorkIdRoute: typeof ReadWorkIdRoute
@@ -538,6 +564,13 @@ declare module '@tanstack/react-router' {
       path: '/glass'
       fullPath: '/glass'
       preLoaderRoute: typeof GlassRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/import': {
+      id: '/import'
+      path: '/import'
+      fullPath: '/import'
+      preLoaderRoute: typeof ImportRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/login': {
@@ -629,6 +662,13 @@ declare module '@tanstack/react-router' {
       path: '/curated/$slug'
       fullPath: '/curated/$slug'
       preLoaderRoute: typeof CuratedSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/curated_/lists': {
+      id: '/curated_/lists'
+      path: '/curated/lists'
+      fullPath: '/curated/lists'
+      preLoaderRoute: typeof CuratedListsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/friends_/$handle': {
@@ -735,6 +775,7 @@ const rootRouteChildren: RootRouteChildren = {
   FormRoute: FormRoute,
   FriendsRoute: FriendsRoute,
   GlassRoute: GlassRoute,
+  ImportRoute: ImportRoute,
   LoginRoute: LoginRoute,
   MapRoute: MapRoute,
   PageRoute: PageRoute,
@@ -748,6 +789,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiRtcRoute: ApiRtcRoute,
   ClubClubIdRoute: ClubClubIdRoute,
   CuratedSlugRoute: CuratedSlugRoute,
+  CuratedListsRoute: CuratedListsRoute,
   FriendsHandleRoute: FriendsHandleRoute,
   PledgeTokenRoute: PledgeTokenRoute,
   ReadWorkIdRoute: ReadWorkIdRoute,

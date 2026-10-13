@@ -4,7 +4,6 @@ import { DailyScoreChip } from "@/components/daily-score-chip";
 import { ResumeLink, useLastRead, usePersistHydrated } from "@/components/resume-link";
 import { YouFriendsMark } from "@/components/you-friends-mark";
 import { CuratedStrip } from "@/components/curated-strip";
-import { WorksStrip } from "@/components/works-strip";
 import {
   ShelfSearchBar,
   ShelfSearchHits,
@@ -16,7 +15,6 @@ import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
 import { useVisitSeed } from "@/lib/use-visit-seed";
 import { prefetchOpening } from "@/lib/prefetch-work";
 import { Wordmark } from "@/components/wordmark";
-import { HomeImport } from "@/components/home-import";
 import { HomeScreenHint } from "@/components/home-screen-hint";
 import { cn } from "@/lib/utils";
 
@@ -53,7 +51,7 @@ function Home() {
   // Fresh Mondrian palette every full open/reload (visit seed).
   // Order: [resume?, door0, door1] — neighbors avoid the same fill.
   const blockFills = useMemo(() => {
-    const count = (last ? 1 : 0) + DOORS.length;
+    const count = (last ? 1 : 0) + DOORS.length + 1;
     return mosaicFills(count, `home-doors-${visit || "pending"}`);
   }, [last, visit]);
 
@@ -74,6 +72,8 @@ function Home() {
         () => router.preloadRoute({ to: "/friends" }),
         () => router.preloadRoute({ to: "/profile" }),
         () => router.preloadRoute({ to: "/curated" }),
+        () => router.preloadRoute({ to: "/curated/lists" }),
+        () => router.preloadRoute({ to: "/import" }),
         () => router.preloadRoute({ to: "/login" }),
         () => router.preloadRoute({ to: "/shuffle", search: { together: true } }),
         () => {
@@ -125,7 +125,9 @@ function Home() {
       {searching ? null : <HomeScreenHint />}
 
       {searching ? (
-        <ShelfSearchHits matches={matches} query={query} />
+        <div className="home-search-hits">
+          <ShelfSearchHits matches={matches} query={query} />
+        </div>
       ) : (
         <>
           {showResume && last && resumeFill ? (
@@ -193,19 +195,22 @@ function Home() {
             );
           })}
 
-          <CuratedStrip />
-          <WorksStrip />
+          <CuratedStrip fill={doorFills[DOORS.length] ?? "yellow"} />
         </>
       )}
 
-      <ShelfSearchBar
-        id="home-shelf-search"
-        query={query}
-        setQuery={setQuery}
-        count={searching ? matches.length : catalogCount()}
-      />
+      <div className="home-dock">
+        <ShelfSearchBar
+          id="home-shelf-search"
+          query={query}
+          setQuery={setQuery}
+          count={searching ? matches.length : catalogCount()}
+        />
+        <Link to="/import" preload="intent" className="home-dock-import type-kicker">
+          Import
+        </Link>
+      </div>
     </main>
-    <HomeImport />
     </>
   );
 }

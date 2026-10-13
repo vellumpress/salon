@@ -41,7 +41,7 @@ function CuratedListPage() {
         </span>
         <ResumeLink />
         <Link
-          to="/curated"
+          to="/curated/lists"
           preload="intent"
           className="type-chrome flex h-full shrink-0 items-center self-stretch border-l border-ink/15 bg-paper px-4 text-ink"
         >
@@ -99,7 +99,7 @@ function CuratedListPage() {
         <div className="cell-adapted-intro">
           <span className="type-kicker opacity-70">Curated</span>
           <span className="type-lede mt-1">That list isn’t here.</span>
-          <Link to="/curated" className="type-chrome mt-4 inline-flex min-h-11 items-center">
+          <Link to="/curated/lists" className="type-chrome mt-4 inline-flex min-h-11 items-center">
             Guest lists
           </Link>
         </div>

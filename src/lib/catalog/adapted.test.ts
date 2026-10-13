@@ -426,7 +426,7 @@ test("homepage Curated is the only curated block; Adapted stays a deep link", ()
   assert.doesNotMatch(src, /to=["']\/read\/\$workId["']/);
   assert.doesNotMatch(src, /FEATURED_CAROUSEL|NEXT_FEATURED|CLASSIC_LOCAL_WORKS|ADAPTED_WORKS/);
   assert.doesNotMatch(home, /FeaturedStrip|featured-strip|cell-featured|Featured|AdaptedStrip|NextStrip/);
-  assert.match(home, /<CuratedStrip \/>/);
+  assert.match(home, /<CuratedStrip /);
   assert.match(home, /Rituals/);
   assert.match(home, /Read together/);
   assert.doesNotMatch(css, /\.cell-featured|\.featured-kicker/);
