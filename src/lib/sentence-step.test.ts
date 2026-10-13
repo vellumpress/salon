@@ -5,8 +5,8 @@ import { displayKindForForm, packDisplayBlocks, phoneBlockLimit, phoneLineMeasur
 import { shelfWork } from "./catalog/shelf.ts";
 import { sentenceSpans } from "./sentences.ts";
 import {
-  blockSentencePieces,
   breathSentenceCount,
+  focusPieces,
   repeatSentenceStep,
   stepSentencePlace,
 } from "./sentence-step.ts";
@@ -63,9 +63,18 @@ test("moby-dick s3-32 steps one sentence, including the continuation and the bre
   assert.equal(here, 2);
   assert.equal(prev, 2);
   const blocks = packDisplayBlocks(work.breaths[at]!.text, phoneLineMeasure, phoneBlockLimit(), "prose");
+  // The quote holds an interior stop, so it is one closed sentence, not two.
   assert.deepEqual(
     blocks.map((block) => block.sentences),
-    [1, 2],
+    [1, 1],
+  );
+  const pieces = focusPieces(work.breaths[at]!.text, blocks);
+  assert.equal(pieces[0]?.[0]?.sentence, 0);
+  assert.equal(pieces[1]?.every((piece) => piece.sentence === 1), true);
+  assert.match(pieces[1]?.map((piece) => piece.text).join("") ?? "", /No,/);
+  assert.equal(
+    pieces.flat().map((piece) => piece.text).join(""),
+    work.breaths[at]!.text,
   );
   const onContinuation = stepSentencePlace({
     index: at,
@@ -115,13 +124,24 @@ test("the first sentence of a continuation block steps back into the block above
   });
   assert.deepEqual(back, { index: 0, cursor: continuation - 1 });
   let base = 0;
-  for (const block of blocks) {
-    const pieces = blockSentencePieces(block.text, block.sentences);
-    assert.equal(pieces.length, block.sentences);
-    assert.equal(pieces.join(""), block.text);
+  const pieces = focusPieces(text, blocks);
+  blocks.forEach((block, index) => {
+    const shown = pieces[index] ?? [];
+    assert.equal(shown.map((piece) => piece.text).join(""), block.text);
+    assert.equal(shown.filter((piece) => piece.sentence >= base).length, block.sentences);
     base += block.sentences;
-  }
+  });
   assert.equal(base, sentenceSpans(text).length);
+  const letter = JSON.parse(readFileSync(new URL("./catalog/texts/cranford.json", import.meta.url), "utf8")) as {
+    breaths: { id: string; text: string }[];
+  };
+  const quote = letter.breaths.find((breath) => breath.id === "s2-4")?.text ?? "";
+  const quoteBlocks = packDisplayBlocks(quote, phoneLineMeasure, phoneBlockLimit(), "prose");
+  const quotePieces = focusPieces(quote, quoteBlocks);
+  assert.ok(quoteBlocks.length > 1);
+  assert.equal(quoteBlocks.reduce((sum, block) => sum + block.sentences, 0), 1);
+  assert.ok(quotePieces.flat().every((piece) => piece.sentence === 0));
+  assert.equal(quotePieces.flat().map((piece) => piece.text).join(""), quote);
 });
 
 test("a play speech steps sentences and keeps the speaker pieces intact", () => {
@@ -136,9 +156,11 @@ test("a play speech steps sentences and keeps the speaker pieces intact", () => 
   assert.ok(firstBlock >= 1);
   const onContinuation = firstBlock;
   assert.equal(blocks.slice(0, 1).reduce((sum, block) => sum + block.sentences, 0), onContinuation);
-  for (const block of blocks) {
-    assert.equal(blockSentencePieces(block.text, block.sentences).join(""), block.text);
-  }
+  const spoken = focusPieces(text, blocks, "speech");
+  blocks.forEach((block, index) => {
+    assert.equal(spoken[index]?.map((piece) => piece.text).join(""), block.text);
+  });
+  assert.match(spoken[1]?.[0]?.text ?? "", /^Captain:/);
   assert.deepEqual(
     stepSentencePlace({
       index: at,

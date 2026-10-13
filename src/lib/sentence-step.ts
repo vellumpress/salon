@@ -28,6 +28,50 @@ export function blockSentencePieces(text: string, expected: number): string[] {
   });
 }
 
+export type FocusPiece = { text: string; sentence: number };
+
+/**
+ * Pieces of each display block, tagged with the closed sentence a tap lands on.
+ * A quotation split across blocks stays on that one sentence, including the
+ * tail of it when the next block also begins a new sentence. Verse is one step.
+ * A repeated speaker label stays on the first piece of its block.
+ */
+export function focusPieces(
+  text: string,
+  blocks: readonly { text: string }[],
+  kind: DisplayKind = "prose",
+): FocusPiece[][] {
+  if (kind === "verse" || blocks.length === 0) {
+    return blocks.map((block) => [{ text: block.text, sentence: 0 }]);
+  }
+  const speaker = kind === "speech" ? blocks[0]?.text.match(/^([^:]{1,80}): /)?.[1] : undefined;
+  const prefix = speaker ? `${speaker}: ` : "";
+  const raws = blocks.map((block, index) => {
+    if (index > 0 && prefix && block.text.startsWith(prefix)) return block.text.slice(prefix.length);
+    return block.text;
+  });
+  if (raws.join("") !== text) {
+    return blocks.map((block) => [{ text: block.text, sentence: 0 }]);
+  }
+  const closed = sentenceSpans(text);
+  let offset = 0;
+  return raws.map((raw, index) => {
+    const start = offset;
+    const end = offset + raw.length;
+    offset = end;
+    const pieces: FocusPiece[] = [];
+    closed.forEach((span, sentence) => {
+      const from = Math.max(span.start, start);
+      const to = Math.min(span.end, end);
+      if (to > from) pieces.push({ text: text.slice(from, to), sentence });
+    });
+    if (pieces.length === 0) pieces.push({ text: raw, sentence: 0 });
+    const first = pieces[0];
+    if (index > 0 && prefix && first) pieces[0] = { text: prefix + first.text, sentence: first.sentence };
+    return pieces;
+  });
+}
+
 export type SentencePlace = { index: number; cursor: number };
 
 /**

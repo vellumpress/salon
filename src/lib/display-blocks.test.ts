@@ -66,7 +66,7 @@ function assertPacked(text: string, limit = PHONE_THIRD) {
   const blocks = packDisplayBlocks(text, lineMeasure, limit);
   assert.equal(blocks.map((block) => block.text).join(""), text);
   for (const block of blocks) {
-    assert.ok(block.sentences >= 1);
+    assert.ok(block.sentences >= 0);
     if (block.sentences > 1 && lineMeasure(block.text) > limit) {
       assert.ok(
         heldQuoteOnly(block.text, limit),
