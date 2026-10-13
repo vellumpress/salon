@@ -3069,7 +3069,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "flame-and-shadow": 3,
   "garden-party-barcelona": 4,
   "harlem-shadows": 3,
-  "helen-of-troy-and-other-poems": 4,
+  "helen-of-troy-and-other-poems": 25,
   "last-poems-housman": 1,
   "late-season": 3,
   "love-songs": 3,

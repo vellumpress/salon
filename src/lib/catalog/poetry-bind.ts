@@ -115,6 +115,19 @@ export const POETRY_REBIND_IDS = [
   "the-black-christ-and-other-poems",
   "poems-jessie-lemont-translation",
   "poems-hot-houses-bernard-miall",
+  // POETRY-REBIND: verse books the live spot-check found with several poems in
+  // one scene or lines flattened to prose, re-bound from their Gutenberg texts
+  // (Leaves of Grass PG 1322, A Shropshire Lad PG 5720, Helen of Troy PG 400,
+  // The Man Against the Sky PG 1035, The Man from Snowy River PG 213) one scene
+  // per printed poem, a breath per printed stanza, section numbers as their own
+  // breaths; contents lists, footnotes and advertisements cut; transcriber's
+  // wrapped lines rejoined; dedications, notes, prefaces and introductions
+  // tagged front. Saved places follow at-remap.json and REBOUND_FROM_COUNT.
+  "leaves-of-grass",
+  "a-shropshire-lad",
+  "helen-of-troy-and-other-poems",
+  "the-man-against-the-sky",
+  "the-man-from-snowy-river",
 ] as const;
 
 /**
