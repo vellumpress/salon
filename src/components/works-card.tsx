@@ -5,17 +5,26 @@ import { prefetchWork } from "@/lib/prefetch-work";
 
 /**
  * Homepage carousel card: title, author, country outline.
- * Curated sections reuse this exact mark — do not fork the layout.
+ * Curated rows add the shelf blurb and the catalog time on the same mark.
  */
 export function WorksCard({
   work,
   title = work.title,
   author = work.author,
+  blurb,
+  time,
 }: {
   work: ShelfWork;
   title?: string;
   author?: string;
+  blurb?: string;
+  time?: string;
 }) {
+  const detail = blurb !== undefined || time !== undefined;
+  const copy = blurb?.replace(/\s+/g, " ").trim() ?? "";
+  const when = time?.trim() ?? "";
+  if (detail && (!title.trim() || !copy || !when)) return null;
+
   return (
     <Link
       to="/read/$workId"
@@ -23,11 +32,18 @@ export function WorksCard({
       preload="intent"
       onPointerDown={() => prefetchWork(work.id)}
       onFocus={() => prefetchWork(work.id)}
-      className="works-card"
+      className={detail ? "works-card has-detail" : "works-card"}
+      data-work={work.id}
     >
       <span className="works-title">{title}</span>
       <span className="works-author">{author}</span>
       <PlaceChip work={work} tone="accent" className="works-place" />
+      {detail ? (
+        <>
+          <span className="works-blurb type-pitch">{copy}</span>
+          <span className="works-time type-kicker">{when}</span>
+        </>
+      ) : null}
     </Link>
   );
 }
