@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { isLocalBound } from "./catalog/full-pdf.ts";
-import { unmeasuredBlocks } from "./display-blocks.ts";
+import { phoneLineMeasure, unmeasuredBlocks } from "./display-blocks.ts";
 import { quoteIntervals, sentenceSpans } from "./sentences.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 
@@ -158,6 +158,23 @@ function heldQuote(text: string) {
   return true;
 }
 
+/**
+ * A tail under about a third of the limit folds upward. Cormorant paints
+ * shorter than the 29.5-character estimate, so a folded tail can estimate
+ * one line past that third.
+ */
+function foldedStub(text: string, limit: number): boolean {
+  const spans = sentenceSpans(text, "in-quotes");
+  if (spans.length < 2) return false;
+  const last = spans[spans.length - 1]!;
+  if (phoneLineMeasure(text.slice(last.start, last.end)) > 116) return false;
+  const rest = text.slice(0, last.start);
+  if (sentenceSpans(rest, "in-quotes").length <= 1) return true;
+  if (heldQuote(rest)) return true;
+  if (phoneLineMeasure(rest) <= limit) return true;
+  return foldedStub(rest, limit);
+}
+
 function assertBlockHeights(spots: BlockSpot[], label: string) {
   const laid = spots.filter((spot) => spot.height > 0);
   assert.ok(laid.length > 0, `${label} rendered no blocks`);
@@ -168,7 +185,7 @@ function assertBlockHeights(spots: BlockSpot[], label: string) {
     if (spot.sentences <= 1) continue;
     if (spot.height <= limit + 1) continue;
     assert.ok(
-      heldQuote(spot.text),
+      heldQuote(spot.text) || foldedStub(spot.text, limit),
       `${label} multi-sentence block is ${spot.height}px, past a third of ${viewport}px, and it is not one quotation: ${spot.text.slice(0, 80)}`,
     );
   }
@@ -662,14 +679,11 @@ test(
       assert.ok((presence?.sentences ?? 2) <= 1);
       assert.ok((aristocracy?.sentences ?? 2) <= 1);
       assert.ok((presence?.height ?? 0) <= third);
-      assert.ok((aristocracy?.height ?? 0) <= third);
-      const tail = s24[s24.length - 1];
-      const before = s24[s24.length - 2];
-      assert.match(tail?.text ?? "", /mundane failings/);
-      if ((tail?.height ?? 0) < tailMin) {
-        assert.ok((tail?.sentences ?? 2) <= 1);
-        assert.ok((before?.sentences ?? 2) <= 1);
-        assert.ok((before?.height ?? 0) + (tail?.height ?? 0) > third);
+      assert.match(aristocracy?.text ?? "", /mundane failings/);
+      assert.equal(s24.filter((spot) => spot.text.includes("mundane failings")).length, 1);
+      for (const spot of s24) {
+        if (spot === aristocracy) continue;
+        assert.ok(spot.height >= tailMin, `${spot.height}px stub ${spot.text.slice(0, 40)}`);
       }
 
       await openAt(page, "cranford", 14);
@@ -696,16 +710,12 @@ test(
       const fellow = s785.filter((spot) => spot.text.includes("do you suppose"));
       assert.equal(fellow.length, 1);
       assert.match(fellow[0]?.text ?? "", /your concern/);
-      assert.doesNotMatch(fellow[0]?.text ?? "", /abundantly right/);
+      assert.match(fellow[0]?.text ?? "", /abundantly right/);
+      assert.equal(s785.filter((spot) => spot.text.includes("abundantly right")).length, 1);
       for (const spot of s785) {
         if (spot === fellow[0]) continue;
         if (spot.sentences > 1) assert.ok(spot.height <= third, spot.text.slice(0, 40));
-      }
-      const grubTail = s785[s785.length - 1];
-      assert.match(grubTail?.text ?? "", /abundantly right/);
-      if ((grubTail?.height ?? 0) < tailMin) {
-        assert.equal(grubTail?.sentences, 1);
-        assert.ok((fellow[0]?.height ?? 0) + (grubTail?.height ?? 0) > third);
+        assert.ok(spot.height >= tailMin, `${spot.height}px stub ${spot.text.slice(0, 40)}`);
       }
 
       await openAt(page, "moby-dick", 867);

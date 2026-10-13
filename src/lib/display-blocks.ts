@@ -110,11 +110,13 @@ function unitsForPack(
         const candidateEnd = spans[k]!.end;
         if (candidateEnd <= end) continue;
         const opener = text[range.start];
-        const curly = opener === "\u201C" || opener === "\u2018";
-        // A curly quotation that fits stays whole even when the sentence
-        // around it runs past the third. A straight mark is often an
-        // apostrophe; glue those sentences only when the result still fits.
-        if (!curly && !fits(text.slice(spans[i]!.start, candidateEnd))) continue;
+        // shoot '450 is a digit after an apostrophe, not a quotation.
+        // A real quotation that fits stays whole, and the sentence that
+        // opens or closes it comes along, even when that sentence runs
+        // past the third.
+        if (opener === "'" && /\d/.test(text[range.start + 1] ?? "")) {
+          if (!fits(text.slice(spans[i]!.start, candidateEnd))) continue;
+        }
         end = candidateEnd;
         j = k;
         grew = true;
@@ -140,25 +142,33 @@ function foldShortTail(
   const tailMin = limitPx / 3;
   const height = (range: UnitRange, first: boolean) =>
     measure(showBlock(text.slice(units[range.from]!.start, units[range.to - 1]!.end), speaker, first));
+  const absorb = () => {
+    const last = ranges[ranges.length - 1]!;
+    const prev = ranges[ranges.length - 2]!;
+    prev.to = last.to;
+    ranges.pop();
+  };
   while (ranges.length >= 2) {
     const last = ranges[ranges.length - 1]!;
     const prev = ranges[ranges.length - 2]!;
     if (height(last, false) >= tailMin) break;
+    // Fold into the block above when the two still fit.
     if (height({ from: prev.from, to: last.to }, prev.from === 0) <= limitPx) {
-      prev.to = last.to;
-      ranges.pop();
+      absorb();
       continue;
     }
-    if (prev.to - prev.from < 2) break;
-    let moved = false;
+    // Otherwise move the boundary back until the tail is tall enough
+    // and still within the third.
     while (prev.to - prev.from >= 2 && height(last, false) < tailMin) {
       const taken = { from: prev.to - 1, to: last.to };
       if (height(taken, false) > limitPx) break;
       prev.to -= 1;
       last.from = prev.to;
-      moved = true;
     }
-    if (!moved) break;
+    if (height(last, false) >= tailMin) continue;
+    // The sentence above the stub cannot give up a piece without passing
+    // the third. A one-line stub is the worse break: fold it anyway.
+    absorb();
   }
 }
 
@@ -166,10 +176,13 @@ function foldShortTail(
  * Group sentence slices so each block measures within `limitPx`.
  * A sentence that is taller on its own stays whole. A quotation stays whole
  * when the quotation itself fits in the third, including one nested inside
- * a taller quote. A quotation past the third breaks at sentence ends inside
- * it. Sentences then pack greedily up to the limit. A tail shorter than a
- * third of the limit folds into the block above when that still fits, and
- * otherwise the boundary moves back until the tail is tall enough.
+ * a taller quote, and the sentence that opens or closes it comes along.
+ * A quotation past the third breaks at sentence ends inside it. Sentences
+ * then pack greedily up to the limit. A tail shorter than a third of the
+ * limit folds into the block above when that still fits; otherwise the
+ * boundary moves back until the tail is tall enough. When no sentence
+ * boundary can lift the tail without passing the third, the stub folds
+ * upward anyway.
  * Abbreviations are not breaks. Verse is one block even when it holds many
  * sentences. Prose slices joined together are the original string. A play
  * speech repeats "Speaker:" on every block after the first; the slices
