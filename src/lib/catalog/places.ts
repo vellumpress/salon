@@ -210,6 +210,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "marie-claire": { label: "Berry", region: "fr" },
   cranford: { label: "Cranford", region: "gb" },
   "annals-of-the-parish": { label: "Ayrshire", region: "gb" },
+  deephaven: { label: "Maine", region: "us" },
   "tales-by-polish-authors": { label: "Poland", region: "pl" },
   "the-dancing-master": { label: "Paris", region: "fr" },
   "the-golden-age": { label: "England", region: "gb" },

@@ -1,0 +1,101 @@
+{
+  "id": "deephaven",
+  "title": "Deephaven",
+  "author": "Sarah Orne Jewett",
+  "year": "1877",
+  "note": "Opening sit: Chapter I from the start to Kate's plan, ending \"Do you think it took me long to decide?\"",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Chapter I · Kate Lancaster's plan",
+      "place": "Chapter I · Kate Lancaster's plan",
+      "reentry": "I had been spending the winter in Boston, and Kate Lancaster and I had been together a great deal, for we are the best of friends. It happened that the morning when this story begins I had waked up feeling sorry, and as if something dreadfu",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "I had been spending the winter in Boston, and Kate Lancaster and I had been together a great deal, for we are the best of friends. It happened that the morning when this story begins I had waked up feeling sorry, and as if something dreadful were going to happen. There did not seem to be any good reason for it, so I undertook to discourage myself more by thinking that it would soon be time to leave town, and how much I should miss being with Kate and my other friends. My mind was still disquieted when I went down to breakfast; but beside my plate I found, with a hoped-for letter from my father, a note from Kate. To this day I have never known any explanation of that depression of my spirits, and I hope that the good luck which followed will help some reader to lose fear, and to smile at such shadows if any chance to come."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Kate had evidently written to me in an excited state of mind, for her note was not so trig-looking as usual; but this is what she said:--"
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Dear Helen,--I have a plan--I think it a most delightful plan--in which you and I are chief characters. Promise that you will say yes; if you do not you will have to remember all your life that you broke a girl's heart. Come round early, and lunch with me and dine with me. I'm to be all alone, and it's a long story and will need a great deal of talking over."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "K."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "I showed this note to my aunt, and soon went round, very much interested. My latch-key opened the Lancasters' door, and I hurried to the parlor, where I heard my friend practising with great diligence. I went up to her, and she turned her head and kissed me solemnly. You need not smile; we are not sentimental girls, and are both much averse to indiscriminate kissing, though I have not the adroit habit of shying in which Kate is proficient. It would sometimes be impolite in any one else, but she shies so affectionately."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "\"Won't you sit down, dear?\" she said, with great ceremony, and went on with her playing, which was abominable that morning; her fingers stepped on each other, and, whatever the tune might have been in reality, it certainly had a most remarkable incoherence as I heard it then. I took up the new Littell and made believe read it, and finally threw it at Kate; you would have thought we were two children."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "\"Have you heard that my grand-aunt, Miss Katharine Brandon of Deephaven, is dead?\" I knew that she had died in November, at least six months before."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "\"Don't be nonsensical, Kate!\" said I. \"What is it you are going to tell me?\""
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "\"My grand-aunt died very old, and was the last of her generation. She had a sister and three brothers, one of whom had the honor of being my grandfather. Mamma is sole heir to the family estates in Deephaven, wharf-property and all, and it is a great inconvenience to her. The house is a charming old house, and some of my ancestors who followed the sea brought home the greater part of its furnishings. Miss Katharine was a person who ignored all frivolities, and her house was as sedate as herself. I have been there but little, for when I was a child my aunt found no pleasure in the society of noisy children who upset her treasures, and when I was older she did not care to see strangers, and after I left school she grew more and more feeble; I had not been there for two years when she died. Mamma went down very often. The town is a quaint old place which has seen better days. There are high rocks at the shore, and there is a beach, and there are woods inland, and hills, and there is the sea. It might be dull in Deephaven for two young ladies who were fond of gay society and dependent upon excitement, I suppose; but for two little girls who were fond of each other and could play in the boats, and dig and build houses in the sea-sand, and gather shells, and carry their dolls wherever they went, what could be pleasanter?\""
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "\"Nothing,\" said I, promptly."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "Kate had told this a little at a time, with a few appropriate bars of music between, which suddenly reminded me of the story of a Chinese procession which I had read in one of Marryat's novels when I was a child: \"A thousand white elephants richly caparisoned,--ti-tum tilly-lily,\" and so on, for a page or two. She seemed to have finished her story for that time, and while it was dawning upon me what she meant, she sang a bit from one of Jean Ingelow's verses:--"
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "\"Will ye step aboard, my dearest, / For the high seas lie before us?\""
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "and then came over to sit beside me and tell the whole story in a more sensible fashion."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "\"You know that my father has been meaning to go to England in the autumn? Yesterday he told us that he is to leave in a month and will be away all summer, and mamma is going with him. Jack and Willy are to join a party of their classmates who are to spend nearly the whole of the long vacation at Lake Superior. I don't care to go abroad again now, and I did not like any plan that was proposed to me. Aunt Anna was here all the afternoon, and she is going to take the house at Newport, which is very pleasant and unexpected, for she hates housekeeping. Mamma thought of course that I would go with her, but I did not wish to do that, and it would only result in my keeping house for her visitors, whom I know very little; and she will be much more free and independent by herself. Beside, she can have my room if I am not there. I have promised to make her a long visit in Baltimore next winter instead. I told mamma that I should like to stay here and go away when I choose. There are ever so many visits which I have promised; I could stay with you and your Aunt Mary at Lenox if she goes there, for a while, and I have always wished to spend a summer in town; but mamma did not encourage that at all. In the evening papa gave her a letter which had come from Mr. Dockum, the man who takes care of Aunt Katharine's place, and the most charming idea came into my head, and I said I meant to spend my summer in Deephaven."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "\"At first they laughed at me, and then they said I might go if I chose, and at last they thought nothing could be pleasanter, and mamma wishes she were going herself. I asked if she did not think you would be the best person to keep me company, and she does, and papa announced that he was just going to suggest my asking you. I am to take Ann and Maggie, who will be overjoyed, for they came from that part of the country, and the other servants are to go with Aunt Anna, and old Nora will come to take care of this house, as she always does. Perhaps you and I will come up to town once in a while for a few days. We shall have such jolly housekeeping. Mamma and I sat up very late last night, and everything is planned. Mr. Dockum's house is very near Aunt Katharine's, so we shall not be lonely; though I know you're no more afraid of that than I. O Helen, won't you go?\""
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "Do you think it took me long to decide?"
+    }
+  ]
+}

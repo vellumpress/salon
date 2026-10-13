@@ -322,6 +322,7 @@ test("known origin overrides", () => {
     "marie-claire": "France",
     cranford: "United Kingdom",
     "annals-of-the-parish": "Scotland",
+    deephaven: "United States",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",

@@ -1221,6 +1221,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Mon 12 Oct 2026 PM ANNALS — Annals of the Parish follows Cranford, Next carefully only (the heads-up is on the card). Never Featured.
   // Off every Ritual lane; the opening sit (the whole of Chapter I, 1760) is never unwind or before-sleep.
   "annals-of-the-parish",
+  // Mira Mon 12 Oct 2026 PM DEEPHAVEN — Deephaven (Jewett, 1877) follows Annals, plain Next, no heads-up. Never Featured, off every Ritual lane.
+  "deephaven",
 ] as const;
 
 /**
