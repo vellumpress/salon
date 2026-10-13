@@ -283,8 +283,8 @@ function closesOpenQuote(state: QuoteState, text: string, index: number) {
  * the same characters; nothing is rewritten, dropped, or re-hyphenated.
  * A break needs the same abbreviation and capital-after-period rules as
  * the importer, and it is refused while a double or single quote is still
- * open, including a single quote nested inside a double. Taps follow that
- * closed slice. Display blocks pass `"in-quotes"` so a quotation taller
+ * open, including a single quote nested inside a double. A quotation that
+ * fits is one tap. Display blocks pass `"in-quotes"` so a quotation taller
  * than a third of the screen can break at those same sentence ends.
  * Mr., Mrs., Dr., and St. are abbreviations even when a quote mark sits on
  * the front of the word, or when an em dash, en dash, or double hyphen

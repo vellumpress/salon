@@ -166,9 +166,8 @@ function foldShortTail(
       last.from = prev.to;
     }
     if (height(last, false) >= tailMin) continue;
-    // The sentence above the stub cannot give up a piece without passing
-    // the third. A one-line stub is the worse break: fold it anyway.
-    absorb();
+    // Merging would pass the third. The short tail stays its own block.
+    break;
   }
 }
 
@@ -179,29 +178,57 @@ function foldShortTail(
  * a taller quote, and the sentence that opens or closes it comes along.
  * A quotation past the third breaks at sentence ends inside it. Sentences
  * then pack greedily up to the limit. A tail shorter than a third of the
- * limit folds into the block above when that still fits; otherwise the
- * boundary moves back until the tail is tall enough. When no sentence
- * boundary can lift the tail without passing the third, the stub folds
- * upward anyway.
+ * limit folds into the block above only when the merged block still fits
+ * in the third. Otherwise the boundary moves back until the tail is tall
+ * enough and still within the third. When that merge would pass the third,
+ * the short tail stays its own block.
  * Abbreviations are not breaks. Verse is one block even when it holds many
  * sentences. Prose slices joined together are the original string. A play
  * speech repeats "Speaker:" on every block after the first; the slices
  * underneath still join back to the original.
- * A block's sentence count is the closed sentences a tap can land on.
- * In-quote breaks only decide where a tall quotation may split.
+ * A block's sentence count is the sentences a tap can land on. A quotation
+ * that fits is one sentence. A quotation past the third counts each
+ * sentence inside it, so a split block does not report zero.
  */
-function closedSentences(sample: string) {
-  return Math.max(1, sentenceSpans(sample).length);
+function tapCount(text: string) {
+  const count = tapSpans(text).length;
+  return count > 0 ? count : 1;
 }
 
 /**
- * How many closed sentences begin in each slice.
- * A quotation broken across blocks is still one tap, so only the first
- * slice counts it. The slices are the original characters, before a play
- * repeats its speaker.
+ * Sentences a tap can land on.
+ * A quotation that fits in the third stays one sentence, interior stops
+ * included. A quotation past the third contributes each sentence inside it.
  */
-function closedSentenceCounts(text: string, parts: string[]): number[] {
+export function tapSpans(text: string): SentenceSpan[] {
   const closed = sentenceSpans(text);
+  if (!text) return closed;
+  const limit = phoneBlockLimit();
+  const tall = quoteIntervals(text).filter(
+    (range) => phoneLineMeasure(text.slice(range.start, range.end)) > limit,
+  );
+  if (tall.length === 0) return closed;
+  const inner = sentenceSpans(text, "in-quotes");
+  const spans: SentenceSpan[] = [];
+  for (const span of closed) {
+    const overlapsTall = tall.some((range) => range.start < span.end && range.end > span.start);
+    if (!overlapsTall) {
+      spans.push(span);
+      continue;
+    }
+    const pieces = inner.filter((item) => item.start >= span.start && item.start < span.end);
+    if (pieces.length <= 1) spans.push(span);
+    else spans.push(...pieces);
+  }
+  return spans.length > 0 ? spans : closed;
+}
+
+/**
+ * How many tappable sentences begin in each slice.
+ * The slices are the original characters, before a play repeats its speaker.
+ */
+function tapSentenceCounts(text: string, parts: string[]): number[] {
+  const taps = tapSpans(text);
   let offset = 0;
   const ranges = parts.map((part) => {
     const start = offset;
@@ -209,7 +236,7 @@ function closedSentenceCounts(text: string, parts: string[]): number[] {
     return { start, end: start + part.length };
   });
   const counts = ranges.map(() => 0);
-  for (const span of closed) {
+  for (const span of taps) {
     let index = ranges.findIndex((range) => span.start >= range.start && span.start < range.end);
     if (index < 0) index = Math.max(0, ranges.length - 1);
     counts[index] = (counts[index] ?? 0) + 1;
@@ -228,11 +255,11 @@ export function packDisplayBlocks(
   const speaker = kind === "speech" ? speakerPrefix(text) : null;
   const spans = sentenceSpans(text, "in-quotes");
   if (spans.length <= 1 || !(limitPx > 0)) {
-    return [{ text, sentences: closedSentences(text) }];
+    return [{ text, sentences: tapCount(text) }];
   }
   const units = unitsForPack(text, spans, measure, limitPx, speaker);
   if (units.length <= 1) {
-    return [{ text, sentences: closedSentences(text) }];
+    return [{ text, sentences: tapCount(text) }];
   }
   const ranges: UnitRange[] = [];
   let from = 0;
@@ -254,9 +281,9 @@ export function packDisplayBlocks(
     raws.push(text.slice(units[range.from]!.start, units[range.to - 1]!.end));
   }
   if (raws.join("") !== text) {
-    return [{ text, sentences: closedSentences(text) }];
+    return [{ text, sentences: tapCount(text) }];
   }
-  const counts = closedSentenceCounts(text, raws);
+  const counts = tapSentenceCounts(text, raws);
   return raws.map((raw, index) => ({
     text: showBlock(raw, speaker, index === 0),
     sentences: counts[index] ?? 0,
