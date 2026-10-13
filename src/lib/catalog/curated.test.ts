@@ -191,7 +191,7 @@ test("curated guest lists do not write Recommend or the homepage classics strip"
   const src = readFileSync(new URL("./curated.ts", import.meta.url), "utf8");
   assert.doesNotMatch(src, /FEATURED_CAROUSEL|NEXT_FEATURED|RITUAL_LANES|recommend/);
   const strip = readFileSync(new URL("../../components/curated-strip.tsx", import.meta.url), "utf8");
-  const hub = readFileSync(new URL("../../routes/curated.tsx", import.meta.url), "utf8");
+  const hub = readFileSync(new URL("../../routes/curated_.lists.tsx", import.meta.url), "utf8");
   const list = readFileSync(new URL("../../routes/curated_.$slug.tsx", import.meta.url), "utf8");
   for (const file of [strip, hub, list]) {
     assert.doesNotMatch(file, /\/curator(?!ed)|FEATURED|ADAPTED_WORKS/);
