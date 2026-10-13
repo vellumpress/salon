@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useState } from "react";
+import { PagesShell } from "@/components/pages-shell";
+import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import { useTbr, type WorkProgress } from "@/lib/store";
 import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
 import type { ShelfWork } from "@/lib/catalog/shelf";
@@ -42,6 +44,19 @@ export const Route = createFileRoute("/rituals")({
 });
 
 function RitualsPage() {
+  // A warm rituals chunk paints this page into the wordmark document and
+  // WebKit raises hydration error #418. Match that document first.
+  const [booted, setBooted] = useState(
+    () => typeof document !== "undefined" && !documentIsWordmarkShell(document),
+  );
+  useLayoutEffect(() => {
+    setBooted(true);
+  }, []);
+  if (!booted) return <PagesShell />;
+  return <RitualsBody />;
+}
+
+function RitualsBody() {
   const progress = useTbr((s) => s.progress);
   const visit = useVisitSeed();
   const [nudgeReady, setNudgeReady] = useState(false);
