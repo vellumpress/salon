@@ -5,7 +5,7 @@ import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { isLocalBound } from "./catalog/full-pdf.ts";
 import { unmeasuredBlocks } from "./display-blocks.ts";
-import { sentenceSpans } from "./sentences.ts";
+import { quoteIntervals, sentenceSpans } from "./sentences.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
@@ -102,6 +102,7 @@ async function openAt(page: Page, id: string, at: number) {
             frame?.getAttribute("data-bound") === "full" &&
             frame?.getAttribute("data-breath-index") === String(want) &&
             frame?.getAttribute("data-display-blocks") === "ready" &&
+            frame?.getAttribute("data-face-ready") === "yes" &&
             !document.querySelector(".veil")
           );
         },
@@ -145,17 +146,30 @@ async function blocks(page: Page, root = ""): Promise<BlockSpot[]> {
   }, root);
 }
 
+/** A block may pass the third only when every sentence join sits inside a quotation. */
+function heldQuote(text: string) {
+  const spans = sentenceSpans(text, "in-quotes");
+  if (spans.length <= 1) return true;
+  const quotes = quoteIntervals(text);
+  for (let i = 0; i < spans.length - 1; i += 1) {
+    const boundary = spans[i]!.end;
+    if (!quotes.some((range) => range.start < boundary && range.end > boundary)) return false;
+  }
+  return true;
+}
+
 function assertBlockHeights(spots: BlockSpot[], label: string) {
   const laid = spots.filter((spot) => spot.height > 0);
   assert.ok(laid.length > 0, `${label} rendered no blocks`);
   const viewport = laid[0]?.viewport ?? 0;
   assert.ok(viewport > 200, `${label} viewport ${viewport}`);
+  const limit = Math.floor(viewport / 3);
   for (const spot of laid) {
     if (spot.sentences <= 1) continue;
-    const ratio = spot.height / spot.viewport;
+    if (spot.height <= limit + 1) continue;
     assert.ok(
-      ratio <= 0.34,
-      `${label} multi-sentence block is ${ratio.toFixed(3)} of the viewport (${spot.height}px / ${spot.viewport}px): ${spot.text.slice(0, 80)}`,
+      heldQuote(spot.text),
+      `${label} multi-sentence block is ${spot.height}px, past a third of ${viewport}px, and it is not one quotation: ${spot.text.slice(0, 80)}`,
     );
   }
 }
@@ -581,6 +595,176 @@ test(
       const moby = loadWork("moby-dick");
       await openBlind(`${ORIGIN}/salon/read/moby-dick`, "28", moby.breaths[28]?.text ?? "");
       await openBlind(`${ORIGIN}/salon/read/moby-dick?at=0`, "0", moby.breaths[0]?.text ?? "");
+    } finally {
+      await browser.close();
+      await stop();
+    }
+  },
+);
+
+const NESTED_QUOTE =
+  "He leaned back. “My father used to say to me, ‘Never lend money to a friend. You will lose the money. You will lose the friend. And worst of all you will lose your good opinion of yourself.’ I did not listen to him, of course. Nobody listens to fathers. That is what fathers are for, I suppose, to be ignored until it is too late to matter.” He laughed.";
+
+/**
+ * Mira's 232/116/261/261/377/232/377/58 figures are the character estimate
+ * (ceil(chars / 29.5) * 29). WebKit with the self-hosted Cormorant face
+ * paints a shorter line, so those two "377" sentences fit in the third.
+ */
+test(
+  "a WebKit phone with Cormorant splits a quote only when the quote itself exceeds a third",
+  { timeout: 180_000 },
+  async () => {
+    const stop = await ensureReaderServer();
+    const browser = await launch();
+    try {
+      const page = await phonePage(browser);
+      const faceOf = async () =>
+        page.evaluate(() => {
+          const block = document.querySelector(".breath-now .breath-block");
+          const frame = document.querySelector(".reader-frame");
+          const style = block ? getComputedStyle(block) : null;
+          const viewport = window.visualViewport?.height || window.innerHeight;
+          return {
+            family: style?.fontFamily ?? "",
+            size: Number.parseFloat(style?.fontSize ?? "0"),
+            line: Number.parseFloat(style?.lineHeight ?? "0"),
+            width: block?.clientWidth ?? 0,
+            limit: Number(frame?.getAttribute("data-block-limit") ?? "0"),
+            face: frame?.getAttribute("data-face-ready") ?? "",
+            check: document.fonts.check('400 20px "Cormorant Garamond"'),
+            viewport,
+          };
+        });
+
+      await openAt(page, "cranford", 46);
+      const face = await faceOf();
+      assert.equal(face.family, "Cormorant Garamond");
+      assert.equal(face.check, true);
+      assert.equal(face.face, "yes");
+      assert.equal(face.viewport, 844);
+      assert.equal(face.limit, 281);
+      assert.ok(Math.abs(face.line - face.size * 1.45) < 0.2, `line ${face.line} size ${face.size}`);
+      assert.ok(face.width > 320 && face.width < 360, `column ${face.width}`);
+
+      const third = 281;
+      const tailMin = third / 3;
+      const s24 = await blocks(page, ".breath-now");
+      assert.ok(s24.length > 1);
+      assert.match(s24[0]?.text ?? "", /Lord Mauleverer/);
+      assert.match(s24[0]?.text ?? "", /little town/);
+      for (const spot of s24) {
+        if (spot.sentences > 1) assert.ok(spot.height <= third, `${spot.height}px ${spot.text.slice(0, 40)}`);
+      }
+      const presence = s24.find((spot) => spot.text.includes("august presence"));
+      const aristocracy = s24.find((spot) => spot.text.includes("British aristocracy"));
+      assert.equal(presence?.sentences, 1);
+      assert.equal(aristocracy?.sentences, 1);
+      assert.ok((presence?.height ?? 0) <= third);
+      assert.ok((aristocracy?.height ?? 0) <= third);
+      const tail = s24[s24.length - 1];
+      const before = s24[s24.length - 2];
+      assert.match(tail?.text ?? "", /mundane failings/);
+      if ((tail?.height ?? 0) < tailMin) {
+        assert.equal(tail?.sentences, 1);
+        assert.equal(before?.sentences, 1);
+        assert.ok((before?.height ?? 0) + (tail?.height ?? 0) > third);
+      }
+
+      await openAt(page, "cranford", 14);
+      const s014 = await blocks(page, ".breath-now");
+      const advice = s014.find((spot) => spot.text.includes("kill the poor creature"));
+      assert.match(advice?.text ?? "", /alive\. But my advice is, kill the poor creature at once/);
+      for (const spot of s014) assert.ok(spot.height <= third, `${spot.height}`);
+
+      await openAt(page, "cranford", 59);
+      const s217 = await blocks(page, ".breath-now");
+      assert.equal(s217.length, 1);
+      assert.match(s217[0]?.text ?? "", /Come in—come to my sister/);
+      assert.ok((s217[0]?.height ?? 0) <= third);
+
+      await openAt(page, "cranford", 78);
+      const s236 = await blocks(page, ".breath-now");
+      assert.equal(s236.length, 1);
+      assert.match(s236[0]?.text ?? "", /A light came into Miss Jessie/);
+      assert.match(s236[0]?.text ?? "", /He knows now how you loved him/);
+      assert.ok((s236[0]?.height ?? 0) <= third);
+
+      await openAt(page, "new-grub-street", 511);
+      const s785 = await blocks(page, ".breath-now");
+      const fellow = s785.filter((spot) => spot.text.includes("do you suppose"));
+      assert.equal(fellow.length, 1);
+      assert.match(fellow[0]?.text ?? "", /your concern/);
+      assert.doesNotMatch(fellow[0]?.text ?? "", /abundantly right/);
+      for (const spot of s785) {
+        if (spot === fellow[0]) continue;
+        if (spot.sentences > 1) assert.ok(spot.height <= third, spot.text.slice(0, 40));
+      }
+      const grubTail = s785[s785.length - 1];
+      assert.match(grubTail?.text ?? "", /abundantly right/);
+      if ((grubTail?.height ?? 0) < tailMin) {
+        assert.equal(grubTail?.sentences, 1);
+        assert.ok((fellow[0]?.height ?? 0) + (grubTail?.height ?? 0) > third);
+      }
+
+      await openAt(page, "moby-dick", 867);
+      const s461 = await blocks(page, ".breath-now");
+      const tall = s461.filter((spot) => spot.height > third);
+      assert.ok(tall.length >= 2);
+      for (const spot of tall) assert.equal(spot.sentences, 1);
+      assert.ok(tall.some((spot) => spot.text.includes("than Moby Dick")));
+      assert.ok(tall.some((spot) => spot.text.includes("final dash")));
+
+      const nested = await page.evaluate(async (sample: string) => {
+        const specifier = "/salon/src/lib/" + "display-blocks.ts";
+        const mod = (await import(specifier)) as {
+          measureStyledHeight: (
+            text: string,
+            metrics: {
+              width: number;
+              viewport: number;
+              limit: number;
+              fontFamily: string;
+              fontSize: string;
+              fontWeight: string;
+              fontStyle: string;
+              lineHeight: string;
+              letterSpacing: string;
+              faceReady: boolean;
+            },
+          ) => number;
+          packDisplayBlocks: (
+            text: string,
+            measure: (value: string) => number,
+            limit: number,
+          ) => { text: string; sentences: number }[];
+        };
+        const block = document.querySelector(".breath-now .breath-block");
+        const style = block ? getComputedStyle(block) : null;
+        if (!block || !style) return [];
+        const viewport = window.visualViewport?.height || window.innerHeight;
+        const metrics = {
+          width: block.clientWidth,
+          viewport,
+          limit: Math.floor(viewport / 3),
+          fontFamily: style.fontFamily,
+          fontSize: style.fontSize,
+          fontWeight: style.fontWeight,
+          fontStyle: style.fontStyle,
+          lineHeight: style.lineHeight,
+          letterSpacing: style.letterSpacing,
+          faceReady: true,
+        };
+        return mod
+          .packDisplayBlocks(sample, (value) => mod.measureStyledHeight(value, metrics), metrics.limit)
+          .map((item) => ({
+            sentences: item.sentences,
+            height: Math.round(mod.measureStyledHeight(item.text, metrics)),
+            text: item.text,
+          }));
+      }, NESTED_QUOTE);
+      assert.equal(nested.length, 1);
+      assert.match(nested[0]?.text ?? "", /Nobody listens to fathers\. That is what fathers are for/);
+      assert.ok((nested[0]?.height ?? 0) <= third);
     } finally {
       await browser.close();
       await stop();

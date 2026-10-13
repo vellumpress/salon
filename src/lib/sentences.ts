@@ -257,6 +257,10 @@ function feedQuote(state: QuoteState, text: string, index: number) {
   }
   if (ch === "'") {
     if (isStraightApostrophe(text, index)) return;
+    const prev = index > 0 ? text[index - 1]! : "";
+    // gettin' / o' / ha' is a trailing apostrophe. It is not the opening
+    // of a quotation; an opener has a space or punctuation before it.
+    if (!state.straightSingle && isLetter(prev)) return;
     state.straightSingle = !state.straightSingle;
   }
 }
