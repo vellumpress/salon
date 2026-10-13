@@ -281,13 +281,15 @@ test("a quotation that fits is not cut, and a short tail folds upward", () => {
   assert.ok(tall.some((block) => lineMeasure(block.text) > 400 && lineMeasure(block.text) < 500));
 });
 
+// POETRY-REBIND: the same stanzas after the rebind ("Oh, look in my eyes" and "Then falter not O book") are now a-shropshire-lad s5-3 and leaves-of-grass s3-2.
 test("poetry stays one block", () => {
   for (const [id, breathId] of [
-    ["a-shropshire-lad", "s4-3"],
-    ["leaves-of-grass", "s0-10"],
+    ["a-shropshire-lad", "s5-3"],
+    ["leaves-of-grass", "s3-2"],
   ] as const) {
     const text = breathById(id, breathId);
-    assert.ok(sentenceSpans(text).length > 1, `${id} ${breathId} has no sentence marks`);
+    // The rebind keeps line breaks as " / ", which sentenceSpans reads as one span; count marks on the joined lines.
+    assert.ok(sentenceSpans(text.replaceAll(" / ", " ")).length > 1, `${id} ${breathId} has no sentence marks`);
     const blocks = packDisplayBlocks(text, lineMeasure, 40, "verse");
     assert.equal(blocks.length, 1, id);
     assert.equal(blocks[0]?.sentences, 1);
@@ -494,8 +496,8 @@ test("phone-height repros keep quotes, verse, and speakers whole", () => {
     assert.deepEqual(unmeasuredBlocks(text), blocks);
   }
   for (const [id, breathId] of [
-    ["a-shropshire-lad", "s4-3"],
-    ["leaves-of-grass", "s0-10"],
+    ["a-shropshire-lad", "s5-3"],
+    ["leaves-of-grass", "s3-2"],
   ] as const) {
     const text = breathById(id, breathId);
     const blocks = packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, "verse");
@@ -546,8 +548,8 @@ const PHONE_REPROS = [
   ["cranford", "s2-4"],
   ["new-grub-street", "s7-85"],
   ["villette", "s0-32"],
-  ["a-shropshire-lad", "s4-3"],
-  ["leaves-of-grass", "s0-10"],
+  ["a-shropshire-lad", "s5-3"],
+  ["leaves-of-grass", "s3-2"],
   ["the-father", "s0-51"],
   ["the-little-clay-cart", "s2-1"],
   ["the-little-clay-cart", "s1-30"],

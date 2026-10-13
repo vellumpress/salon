@@ -340,7 +340,7 @@ test("The Pier-Glass binds all 25 poems of the 1921 Secker edition, one breath e
 });
 
 test("Mira poetry re-bind pack: one scene per printed poem, counts and card from the bind", () => {
-  assert.equal(POETRY_REBIND_IDS.length, 51);
+  assert.equal(POETRY_REBIND_IDS.length, 56);
   for (const id of POETRY_REBIND_IDS) {
     const full = load("texts", id);
     assert.ok(full, id);
@@ -428,6 +428,33 @@ const REBIND_LONG_STANZAS: Readonly<Record<string, string>> = {
   "atalanta-in-calydon#s4-163": "Atalanta in Calydon: one printed verse paragraph with no sentence break that keeps both parts under the cap, 43 lines / 359 words",
   "heliodora-and-other-poems#s29-3": "Charioteer: one printed stanza, 41 lines / 150 words",
   "drum-taps#s1-21": "Introduction (The Times Literary Supplement): one prose paragraph, 396 words",
+  // POETRY-REBIND: stanzas and verse paragraphs printed without a break.
+  "leaves-of-grass#s25-62": "Starting from Paumanok: one printed stanza, 35 lines / 423 words",
+  "leaves-of-grass#s26-93": "Song of Myself: one printed stanza, 66 lines / 904 words",
+  "leaves-of-grass#s26-223": "Song of Myself: one printed stanza, 81 lines / 1059 words",
+  "leaves-of-grass#s26-301": "Song of Myself: one printed stanza, 28 lines / 379 words",
+  "leaves-of-grass#s28-0": "From Pent-Up Aching Rivers: one printed stanza, 57 lines / 610 words",
+  "leaves-of-grass#s29-39": "I Sing the Body Electric: one printed stanza, 36 lines / 415 words",
+  "leaves-of-grass#s31-0": "Spontaneous Me: one printed stanza, 45 lines / 646 words",
+  "leaves-of-grass#s44-0": "Scented Herbage of My Breast: one printed stanza, 38 lines / 525 words",
+  "leaves-of-grass#s47-0": "These I Singing in Spring: one printed stanza, 28 lines / 367 words",
+  "leaves-of-grass#s86-0": "Our Old Feuillage: one printed stanza, 82 lines / 1497 words",
+  "leaves-of-grass#s88-6": "Song of the Broad-Axe: one printed stanza, 69 lines / 856 words",
+  "leaves-of-grass#s91-31": "A Song for Occupations: one printed stanza, 26 lines / 408 words",
+  "leaves-of-grass#s156-0": "Vigil Strange I Kept on the Field One Night: one printed stanza, 26 lines / 356 words",
+  "leaves-of-grass#s168-0": "The Artilleryman’s Vision: one printed stanza, 25 lines / 384 words",
+  "leaves-of-grass#s189-25": "By Blue Ontario’s Shore: one printed stanza, 41 lines / 486 words",
+  "leaves-of-grass#s259-0": "O Magnet-South: one printed stanza, 22 lines / 381 words",
+  "leaves-of-grass#s278-0": "Years of the Modern: one printed stanza, 30 lines / 375 words",
+  "helen-of-troy-and-other-poems#s1-0": "Helen of Troy: one printed stanza, 63 lines / 529 words",
+  "helen-of-troy-and-other-poems#s3-0": "Sappho: one printed stanza, 58 lines / 475 words",
+  "the-man-against-the-sky#s10-0": "Ben Jonson Entertains a Man from Stratford: one printed stanza, 81 lines / 668 words",
+  "the-man-against-the-sky#s10-3": "Ben Jonson Entertains a Man from Stratford: one printed stanza, 77 lines / 639 words",
+  "the-man-against-the-sky#s10-5": "Ben Jonson Entertains a Man from Stratford: one printed stanza, 54 lines / 464 words",
+  "the-man-against-the-sky#s27-5": "The Man against the Sky: one printed stanza, 42 lines / 282 words",
+  "the-man-against-the-sky#s27-6": "The Man against the Sky: one printed stanza, 45 lines / 302 words",
+  "the-man-against-the-sky#s27-7": "The Man against the Sky: one printed stanza, 46 lines / 309 words",
+  "the-man-against-the-sky#s27-8": "The Man against the Sky: one printed stanza, 44 lines / 293 words",
 };
 
 function breathSize(text: string) {

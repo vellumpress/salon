@@ -121,7 +121,15 @@ test("an index saved against the current bind is left where it is", () => {
 });
 
 test("a legacy unstamped index on a listed re-bind scales instead of trusting 1000", () => {
-  assert.deepEqual(REBOUND_FROM_COUNT, { falcon: 6154, "lady-macbeth": 649 });
+  assert.deepEqual(REBOUND_FROM_COUNT, {
+    falcon: 6154,
+    "lady-macbeth": 649,
+    "leaves-of-grass": 2442,
+    "a-shropshire-lad": 294,
+    "helen-of-troy-and-other-poems": 1755,
+    "the-man-against-the-sky": 2028,
+    "the-man-from-snowy-river": 2816,
+  });
   const oldCount = 6154;
   const count = 2280;
   const breaths = Array.from({ length: count }, (_, n) => ({
@@ -215,7 +223,15 @@ test("an id-only kept line opens the paragraph the remap names", async () => {
 });
 
 test("Falcon's sentence bind re-anchors through the remap and no unlisted book moves", () => {
-  assert.deepEqual(REBOUND_FROM_COUNT, { falcon: 6154, "lady-macbeth": 649 });
+  assert.deepEqual(REBOUND_FROM_COUNT, {
+    falcon: 6154,
+    "lady-macbeth": 649,
+    "leaves-of-grass": 2442,
+    "a-shropshire-lad": 294,
+    "helen-of-troy-and-other-poems": 1755,
+    "the-man-against-the-sky": 2028,
+    "the-man-from-snowy-river": 2816,
+  });
   assert.equal((FEATURED_CAROUSEL_IDS as readonly string[]).includes("falcon"), false);
 
   const full = JSON.parse(readFileSync(new URL("./catalog/texts/falcon.json", import.meta.url), "utf8")) as {
@@ -309,4 +325,35 @@ test("Lady Macbeth's OCR bind re-anchors through the remap onto the proofread bi
   );
   assert.equal(stamped.moved, false);
   assert.equal(stamped.index, next.index);
+});
+
+test("POETRY-REBIND: legacy line-bind places land on the same poem's stanza", () => {
+  const raw = JSON.parse(readFileSync(new URL("./catalog/at-remap.json", import.meta.url), "utf8")) as Record<string, Record<string, string>>;
+  const remap = parseBreathRemap(raw);
+  const cases: [string, number, string, string, number][] = [
+    ["leaves-of-grass", 1628, "s197-0", "Courage yet, my brother or my sister!", 2347],
+    ["a-shropshire-lad", 196, "s42-10", "And like the cloudy shadows", 281],
+    ["helen-of-troy-and-other-poems", 1170, "s55-1", "We are anhungered after solitude,", 322],
+    ["the-man-against-the-sky", 1352, "s21-1", "To the lore of no manner of men", 250],
+    ["the-man-from-snowy-river", 1877, "s28-8", "But though they spoilt his game,", 427],
+  ];
+  for (const [id, legacy, breathId, starts, count] of cases) {
+    const full = JSON.parse(readFileSync(new URL(`./catalog/texts/${id}.json`, import.meta.url), "utf8")) as {
+      breaths: { id: string; sceneId: string; text: string }[];
+    };
+    assert.equal(full.breaths.length, count, id);
+    const stored = { breathIndex: legacy };
+    assert.equal(shouldLoadBindRemap(stored, full.breaths, id), true, id);
+    const next = reanchorProgress(stored, full.breaths, remap, id);
+    assert.equal(next.moved, true, id);
+    assert.equal(full.breaths[next.index]?.id, breathId, id);
+    assert.ok(full.breaths[next.index]?.text.startsWith(starts), id);
+    const stamped = reanchorProgress(
+      { breathIndex: next.index, breathId: next.breathId, breathCount: next.breathCount, bindHash: next.bindHash },
+      full.breaths,
+      remap,
+      id,
+    );
+    assert.equal(stamped.moved, false, id);
+  }
 });
