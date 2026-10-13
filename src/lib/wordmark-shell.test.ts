@@ -22,10 +22,11 @@ test("a wordmark-only document holds the shell until after hydration", () => {
   assert.equal(documentIsWordmarkShell(doc([])), false);
 });
 
-test("a wordmark document keeps the root route pending for the first paint", () => {
+test("rituals matches the wordmark document before painting the lanes", () => {
+  const page = readFileSync(new URL("../routes/rituals.tsx", import.meta.url), "utf8");
+  const gate = page.slice(page.indexOf("function RitualsPage"), page.indexOf("function RitualsBody"));
+  assert.match(gate, /documentIsWordmarkShell\(document\)/);
+  assert.match(gate, /if \(!booted\) return <PagesShell \/>/);
   const root = readFileSync(new URL("../routes/__root.tsx", import.meta.url), "utf8");
-  const before = root.slice(root.indexOf("beforeLoad"));
-  assert.match(before, /documentIsWordmarkShell\(document\)/);
-  assert.match(before, /setTimeout\(resolve, 1\)/);
-  assert.doesNotMatch(root, /OutletGate/);
+  assert.doesNotMatch(root, /beforeLoad|OutletGate/);
 });

@@ -11,7 +11,6 @@ import { DeferredRemoteSync } from "@/components/deferred-remote-sync";
 import { OfflineMark } from "@/components/offline-mark";
 import { StreakReminderHost } from "@/components/streak-reminder-host";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
-import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import { APP_DESCRIPTION, APP_NAME, WORDMARK, withBase } from "@/lib/site";
 import {
   PAGE_PAPER,
@@ -85,18 +84,6 @@ function StatusBarSync() {
 }
 
 export const Route = createRootRoute({
-  beforeLoad: () => {
-    // The Pages document is the wordmark, inside the router's pending
-    // boundary. A warm chunk would paint the route into that shell and
-    // WebKit raises hydration error #418. Stay pending for one frame so
-    // the first client render is the same shell. A prerendered route
-    // already has its markup, so it is not held.
-    if (typeof document === "undefined") return;
-    if (!documentIsWordmarkShell(document)) return;
-    return new Promise<void>((resolve) => {
-      setTimeout(resolve, 1);
-    });
-  },
   head: () => ({
     meta: [
       { charSet: "utf-8" },
