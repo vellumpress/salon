@@ -268,9 +268,12 @@ async function passGate(page: Page) {
   // last Sit, which sits under the chips.
   const alone = veil.getByRole("button", { name: "Alone", exact: true });
   const begin = veil.getByRole("button", { name: "Begin", exact: true });
-  if (await alone.count()) await alone.click();
-  else if (await begin.count()) await begin.click();
-  else await veil.getByRole("button", { name: "Sit", exact: true }).last().click();
+  // A shell reload can start during the click. Waiting for that navigation
+  // turns one reload into a 30s timeout. The breath wait below is the gate.
+  const click = { noWaitAfter: true } as const;
+  if (await alone.count()) await alone.click(click);
+  else if (await begin.count()) await begin.click(click);
+  else await veil.getByRole("button", { name: "Sit", exact: true }).last().click(click);
   await page.locator(".breath-now").waitFor({ timeout: 20_000 });
   await page.waitForFunction(() => !document.querySelector(".veil"), { timeout: 15_000 });
 }
@@ -283,8 +286,11 @@ async function resume(page: Page, id: string, at: number) {
       return;
     } catch (error) {
       last = error;
-      if (!readerDown(error) || attempt === 2) break;
-      await ensureServer();
+      const message = error instanceof Error ? error.message : String(error);
+      const retry =
+        readerDown(error) || isRetryableCatalogOpen(error) || /Timeout \d+ms exceeded/.test(message);
+      if (!retry || attempt === 2) break;
+      if (readerDown(error)) await ensureServer();
     }
   }
   throw last;
