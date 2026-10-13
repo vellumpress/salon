@@ -147,10 +147,29 @@ function ReadBody() {
       const ready = workReadyForAt(next, at);
       if (live && ready) setWork(ready);
     })
-      .then((next) => {
+      .then(async (next) => {
         if (!live) return;
-        // Falling through to the opening painted breath 0 when `at` sat past it.
-        setWork(workReadyForAt(next, at) ?? null);
+        let edition = next;
+        const deadline = Date.now() + 20000;
+        while (live) {
+          const ready = workReadyForAt(edition, at);
+          if (ready) {
+            setWork(ready);
+            return;
+          }
+          // The opening is loaded and `at` is still past it. Keep the title
+          // frame and try the full text again instead of painting breath 0.
+          if (Date.now() >= deadline) break;
+          await new Promise<void>((resolve) => setTimeout(resolve, 1000));
+          if (!live) return;
+          try {
+            edition = (await loadWork(workId)) ?? peekWork(workId) ?? edition;
+          } catch {
+            edition = peekWork(workId) ?? edition;
+          }
+        }
+        if (!live) return;
+        setWork(workReadyForAt(edition, at) ?? null);
       })
       .catch(() => {
         if (!live) return;
