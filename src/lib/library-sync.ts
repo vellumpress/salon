@@ -1,5 +1,6 @@
 import { keptBreathId, type KeptStored } from "./kept-lines.ts";
 import { isOffline } from "./net.ts";
+import { tapBeats } from "./place-guard.ts";
 import { getSupabase } from "./supabase.ts";
 
 export const SHELF_VERSION = 1;
@@ -11,6 +12,8 @@ export type ShelfProgress = {
   breathCount?: number;
   bindHash?: string;
   lastOpenedAt: number;
+  /** When the reader last chose this place. Older than a tap, this row loses. */
+  userMovedAt?: number;
   sittingStartedAt: number | null;
   keywords: Record<string, string>;
   kept: KeptStored[];
@@ -224,22 +227,31 @@ function unionKept(local: KeptStored[], remote: KeptStored[]): KeptStored[] {
 function mergeProgress(local: ShelfProgress, remote: ShelfProgress): ShelfProgress {
   const localIndex = local.breathIndex ?? 0;
   const remoteIndex = remote.breathIndex ?? 0;
-  const place =
-    localIndex > remoteIndex
-      ? local
-      : remoteIndex > localIndex
-        ? remote
-        : (local.lastOpenedAt ?? 0) >= (remote.lastOpenedAt ?? 0)
-          ? local
-          : remote;
+  // A left tap lowers the index. The further place must not climb back over it
+  // when that place was saved before the tap. Only a newer tap wins.
+  const localTap = tapBeats(local, remote);
+  const remoteTap = !localTap && tapBeats(remote, local);
+  const place = localTap
+    ? local
+    : remoteTap
+      ? remote
+      : localIndex > remoteIndex
+        ? local
+        : remoteIndex > localIndex
+          ? remote
+          : (local.lastOpenedAt ?? 0) >= (remote.lastOpenedAt ?? 0)
+            ? local
+            : remote;
   const completed = [local.completedAt, remote.completedAt].filter(
     (value): value is number => typeof value === "number" && value > 0,
   );
+  const movedAt = place.userMovedAt ?? 0;
   return {
-    breathIndex: Math.max(localIndex, remoteIndex),
+    breathIndex: place.breathIndex ?? 0,
     ...(place.breathId ? { breathId: place.breathId } : {}),
     ...(place.breathCount ? { breathCount: place.breathCount } : {}),
     ...(place.bindHash ? { bindHash: place.bindHash } : {}),
+    ...(movedAt > 0 ? { userMovedAt: movedAt } : {}),
     lastOpenedAt: Math.max(local.lastOpenedAt ?? 0, remote.lastOpenedAt ?? 0),
     sittingStartedAt: local.sittingStartedAt ?? null,
     keywords: { ...(remote.keywords ?? {}), ...(local.keywords ?? {}) },

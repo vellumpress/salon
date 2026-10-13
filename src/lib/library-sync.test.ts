@@ -94,6 +94,119 @@ test("kept lines union and the further place in the book wins", () => {
   assert.equal(merged.lastActiveReadAt, 100);
 });
 
+test("a tap keeps a lower index when the remote place is older", () => {
+  const local = shelf({
+    progress: {
+      cranford: progress({
+        breathIndex: 2,
+        breathId: "s0-2",
+        lastOpenedAt: 5_000,
+        userMovedAt: 4_000,
+        entered: true,
+      }),
+    },
+  });
+  const remote = shelf({
+    progress: {
+      cranford: progress({
+        breathIndex: 3,
+        breathId: "s0-3",
+        lastOpenedAt: 1_000,
+        entered: true,
+      }),
+    },
+  });
+  const row = mergeShelves(local, remote).progress.cranford!;
+  assert.equal(row.breathIndex, 2);
+  assert.equal(row.breathId, "s0-2");
+  assert.equal(row.userMovedAt, 4_000);
+  assert.equal(row.lastOpenedAt, 5_000);
+});
+
+test("a sit after the tap does not hand the place back to an older shelf", () => {
+  const local = shelf({
+    progress: {
+      cranford: progress({
+        breathIndex: 2,
+        breathId: "s0-2",
+        lastOpenedAt: 9_000,
+        userMovedAt: 4_000,
+        entered: true,
+      }),
+    },
+  });
+  const remote = shelf({
+    progress: {
+      cranford: progress({
+        breathIndex: 3,
+        breathId: "s0-3",
+        lastOpenedAt: 1_000,
+        entered: true,
+      }),
+    },
+  });
+  const row = mergeShelves(local, remote).progress.cranford!;
+  assert.equal(row.breathIndex, 2);
+  assert.equal(row.breathId, "s0-2");
+});
+
+test("a newer tap on the other side wins even when its index is lower", () => {
+  const local = shelf({
+    progress: {
+      cranford: progress({
+        breathIndex: 12,
+        breathId: "s0-12",
+        lastOpenedAt: 1_000,
+        userMovedAt: 1_000,
+        entered: true,
+      }),
+    },
+  });
+  const remote = shelf({
+    progress: {
+      cranford: progress({
+        breathIndex: 4,
+        breathId: "s0-4",
+        lastOpenedAt: 5_000,
+        userMovedAt: 5_000,
+        entered: true,
+      }),
+    },
+  });
+  const row = mergeShelves(local, remote).progress.cranford!;
+  assert.equal(row.breathIndex, 4);
+  assert.equal(row.breathId, "s0-4");
+  assert.equal(row.userMovedAt, 5_000);
+});
+
+test("a remote save newer than the tap still wins when that save is not itself a tap", () => {
+  const local = shelf({
+    progress: {
+      cranford: progress({
+        breathIndex: 2,
+        breathId: "s0-2",
+        lastOpenedAt: 4_000,
+        userMovedAt: 4_000,
+        entered: true,
+      }),
+    },
+  });
+  const remote = shelf({
+    progress: {
+      cranford: progress({
+        breathIndex: 9,
+        breathId: "s0-9",
+        lastOpenedAt: 8_000,
+        entered: true,
+      }),
+    },
+  });
+  const row = mergeShelves(local, remote).progress.cranford!;
+  assert.equal(row.breathIndex, 9);
+  assert.equal(row.breathId, "s0-9");
+  assert.equal(row.userMovedAt, undefined);
+});
+
 test("the shelf snapshot has no email and sign-out does not delete it", () => {
   const snap = shelfFromState({
     favorites: ["quicksand"],

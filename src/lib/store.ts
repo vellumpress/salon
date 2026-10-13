@@ -47,6 +47,7 @@ import {
   type KeptStored,
 } from "./kept-lines.ts";
 import { canonicalWorkId, remapAliasedWorkIds } from "./work-id-alias.ts";
+import { noteUserMove, readUserMove, tapAllowsWrite, tapOwnsVisit } from "./place-guard.ts";
 import { REBOUND_FROM_COUNT, type PlaceStamp } from "./rebind-guard.ts";
 
 export { dayKey };
@@ -62,6 +63,11 @@ export type WorkProgress = {
   breathCount?: number;
   bindHash?: string;
   lastOpenedAt: number;
+  /**
+   * When the reader last chose this place — a tap or a jump.
+   * A sit starting, and a shelf saved before this, must not move the breath.
+   */
+  userMovedAt?: number;
   sittingStartedAt: number | null;
   keywords: Record<string, string>;
   /**
@@ -203,6 +209,8 @@ type TbrState = {
   pushCurator: (turn: CuratorTurn) => void;
   setReadingNow: (now: ReadingNow | null) => void;
   ensure: (workId: string) => WorkProgress;
+  /** Record that the reader chose the current place. Does not move the breath. */
+  stampUserMove: (workId: string, at?: number) => void;
   setBreath: (workId: string, index: number, place?: PlaceStamp) => void;
   /** Forward advance: move to `index` and credit clamped active time. */
   advanceBreath: (
@@ -275,6 +283,31 @@ function flushPersist() {
   if (!persistPending || typeof window === "undefined") return;
   window.localStorage.setItem(persistPending.name, persistPending.value);
   persistPending = null;
+}
+
+function hrefNow() {
+  if (typeof window === "undefined") return "";
+  return `${window.location.pathname}${window.location.search}`;
+}
+
+/**
+ * A tap already chose a breath. Boot, `?at=`, and a late shelf may not leave it.
+ * The same breath id may move when the full book replaces the opening.
+ */
+function commitBreathWrite(workId: string, index: number, breathId?: string) {
+  if (typeof window === "undefined") return true;
+  const href = hrefNow();
+  if (!tapAllowsWrite(workId, index, href, breathId)) return false;
+  if (!breathId) return true;
+  const move = readUserMove();
+  if (!move || move.workId !== workId || move.breathId !== breathId || move.index === index) return true;
+  if (!tapOwnsVisit(move, workId, href)) return true;
+  noteUserMove({ ...move, index });
+  return true;
+}
+
+function flushIfMoved(workId: string) {
+  if ((useTbr.getState().progress[workId]?.userMovedAt ?? 0) > 0) flushPersist();
 }
 
 function schedulePersist() {
@@ -719,9 +752,19 @@ export const useTbr = create<TbrState>()(
           curator: [...(state.curator ?? []), turn].slice(-16),
         })),
       setReadingNow: (readingNow) => set({ readingNow }),
-      startShuffle: (workId) =>
+      startShuffle: (workId) => {
+        const now = Date.now();
+        if (typeof window !== "undefined") {
+          noteUserMove({
+            workId,
+            index: 0,
+            cursor: 0,
+            at: now,
+            href: hrefNow(),
+            breathId: "",
+          });
+        }
         set((state) => {
-          const now = Date.now();
           const current = state.progress[workId] ?? emptyProgress();
           return {
             lastShuffle: workId,
@@ -732,11 +775,14 @@ export const useTbr = create<TbrState>()(
                 breathIndex: 0,
                 completedAt: null,
                 lastOpenedAt: now,
+                userMovedAt: now,
                 entered: true,
               },
             },
           };
-        }),
+        });
+        flushPersist();
+      },
       ensure: (workId) => {
         const existing = get().progress[workId];
         if (existing) return existing;
@@ -746,7 +792,22 @@ export const useTbr = create<TbrState>()(
         }));
         return fresh;
       },
-      setBreath: (workId, index, place) =>
+      stampUserMove: (workId, at) => {
+        const when = typeof at === "number" && at > 0 ? at : Date.now();
+        set((state) => {
+          const current = state.progress[workId] ?? emptyProgress();
+          if ((current.userMovedAt ?? 0) >= when) return {};
+          return {
+            progress: {
+              ...state.progress,
+              [workId]: { ...current, userMovedAt: when, entered: true },
+            },
+          };
+        });
+        flushPersist();
+      },
+      setBreath: (workId, index, place) => {
+        if (!commitBreathWrite(workId, index, place?.breathId)) return;
         set((state) => {
           const now = Date.now();
           const current = state.progress[workId] ?? emptyProgress();
@@ -766,8 +827,11 @@ export const useTbr = create<TbrState>()(
               },
             },
           };
-        }),
-      advanceBreath: (workId, index, opts) =>
+        });
+        flushIfMoved(workId);
+      },
+      advanceBreath: (workId, index, opts) => {
+        if (!commitBreathWrite(workId, index, opts?.place?.breathId)) return;
         set((state) => {
           const now = Date.now();
           const current = state.progress[workId] ?? emptyProgress();
@@ -798,7 +862,9 @@ export const useTbr = create<TbrState>()(
               [workId]: { ...row, ...stamped(index, opts?.place) },
             },
           };
-        }),
+        });
+        flushIfMoved(workId);
+      },
       pauseActiveRead: (workId) =>
         set((state) => {
           const current = state.progress[workId];
