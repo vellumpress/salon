@@ -1996,7 +1996,7 @@ export function TbrReader({
               Keep
             </button>
             {device ? null : <FavoriteMark workId={work.id} className="border-r border-ink" />}
-            {device ? null : isKept ? (
+            {isKept && breath ? (
               <SalonCardShare
                 compact
                 workId={work.id}
@@ -2006,7 +2006,7 @@ export function TbrReader({
                 author={work.author}
                 className="border-r border-ink bg-yellow text-ink"
               />
-            ) : (
+            ) : device ? null : (
               <button
                 type="button"
                 onClick={() => {

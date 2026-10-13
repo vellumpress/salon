@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import {
   anchorKeptLine,
@@ -286,6 +287,35 @@ test("re-anchor updates only the stored id", () => {
   assert.equal(row?.id, "s0-0");
   assert.equal(row?.text, "She wrote the letter.");
   assert.equal(retargetKeptList(kept, "missing", "s0-0"), kept);
+});
+
+test("a line kept from an imported page stays on the shelf", () => {
+  const lines = visibleKeptLines(
+    {
+      page: {
+        lastOpenedAt: 20,
+        kept: [
+          {
+            v: 1,
+            id: "p0",
+            text: "Alpha imported sentence ends here.",
+            workId: "page",
+            title: "sentences.pdf",
+            author: "",
+            savedAt: 20,
+          },
+        ],
+      },
+    },
+    () => undefined,
+  );
+  assert.equal(lines.length, 1);
+  assert.equal(lines[0]?.text, "Alpha imported sentence ends here.");
+  assert.equal(lines[0]?.title, "sentences.pdf");
+  const shelf = readFileSync(new URL("../components/kept-sentences.tsx", import.meta.url), "utf8");
+  assert.doesNotMatch(shelf, /skip:\s*isDeviceImport/);
+  const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
+  assert.match(reader, /isKept && breath \? \([\s\S]*SalonCardShare/);
 });
 
 test("a flat remap file and a list of from/to rows both resolve", () => {
