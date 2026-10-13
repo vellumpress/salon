@@ -1007,10 +1007,12 @@ html[data-status-motion="1"] .status-bar-fill::before {
   min-height: var(--vvh, 100dvh);
   height: var(--vvh, 100dvh);
   max-height: var(--vvh, 100dvh);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   align-content: stretch;
   grid-template-columns: 1fr;
-  /* mark · pillars · adapted · works · bottom search — no extra chrome gap */
+  /* mark · pillars · curated · works · bottom search — the shelf scrolls */
   grid-template-rows: var(--mark-row, 3rem) minmax(10rem, 1fr) minmax(10rem, 1fr) auto auto auto;
   grid-auto-rows: auto;
 }
@@ -1035,6 +1037,12 @@ html[data-status-motion="1"] .status-bar-fill::before {
 .board.board-doors > .cell-search,
 .board.board-rituals > .cell-search {
   grid-column: 1 / -1;
+}
+
+.board.board-doors > .cell-search {
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
 }
 
 .board.board-doors.is-searching {
@@ -1231,6 +1239,105 @@ html[data-status-motion="1"] .status-bar-fill::before {
 
 .place-chip-forest {
   color: var(--color-forest);
+}
+
+.works-card.has-detail {
+  justify-content: flex-start;
+  min-width: 15.5rem;
+  max-width: 17.5rem;
+  min-height: 11.5rem;
+  padding: 0.2rem 0.15rem 0.45rem;
+}
+
+.works-card.has-detail .works-title {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.works-blurb {
+  margin-top: 0.45rem;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: var(--color-ink);
+  opacity: 0.82;
+}
+
+.works-time {
+  margin-top: 0.45rem;
+  color: var(--color-muted);
+}
+
+.cell-curated {
+  grid-column: 1 / -1;
+  min-width: 0;
+  background: var(--color-paper);
+}
+
+.curated-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.75rem;
+  padding: 0.85rem 1.35rem 0.15rem;
+}
+
+.curated-lists {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--color-ink);
+  text-decoration: none;
+  opacity: 0.72;
+}
+
+.curated-lists:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+.curated-row-title {
+  margin: 0;
+  padding: 0.4rem 1.35rem 0;
+  color: var(--color-ink);
+}
+
+.curated-lane {
+  background: transparent;
+}
+
+.curated-lane .works-scroller {
+  padding: 0.4rem 1.5rem 0.45rem;
+}
+
+/* Phone: row rhythm matches the shelf's own padding, without a second band of paper. */
+@media (max-width: 767px) {
+  .curated-head {
+    padding-top: 0.55rem;
+  }
+
+  .curated-row-title {
+    padding: 0.55rem 1.35rem 0;
+  }
+
+  .curated-lane .works-scroller {
+    padding-block: 0.35rem 0.55rem;
+  }
+
+  .works-card.has-detail {
+    min-height: 0;
+    padding-bottom: 0.15rem;
+  }
+}
+
+.curated-lane.cell-works::before,
+.curated-lane.cell-works::after {
+  width: 1rem;
 }
 
 .works-card:focus-visible {
@@ -1439,7 +1546,8 @@ html[data-status-motion="1"] .status-bar-fill::before {
   .cell-map,
   .cell-glass,
   .cell-import,
-  .cell-works {
+  .cell-works,
+  .cell-curated {
     overflow: hidden;
   }
   .cell-mark,
@@ -1505,7 +1613,9 @@ html[data-status-motion="1"] .status-bar-fill::before {
   .board.board-doors > .cell-adapted,
   .cell-adapted,
   .board.board-doors > .cell-works,
-  .cell-works {
+  .cell-works,
+  .board.board-doors > .cell-curated,
+  .cell-curated {
     grid-column: 1 / 13;
   }
   .board.board-doors > .cell-search,
@@ -2620,7 +2730,8 @@ html.together-compose .chat-field {
 .board-alive > .cell-adapted,
 .board-alive > .cell-adapted-intro,
 .board-alive > .cell-adapted-lane,
-.board-alive > .cell-works {
+.board-alive > .cell-works,
+.board-alive > .cell-curated {
   animation: tbr-settle 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -2657,7 +2768,8 @@ html.together-compose .chat-field {
 .board-alive > .cell-adapted-lane {
   animation-delay: 0.14s;
 }
-.board-alive > .cell-works {
+.board-alive > .cell-works,
+.board-alive > .cell-curated {
   animation-delay: 0.22s;
 }
 .board-alive > .cell-search {
