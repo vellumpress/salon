@@ -169,6 +169,42 @@ test("PITCHES-3 drops eight wind-down sits and keeps Underdogs on On a walk", ()
   }
 });
 
+test("PITCHES-4 drops seventeen sits from Before sleep without emptying the lane", () => {
+  const gone = [
+    "the-magic-skin",
+    "the-princess-casamassima",
+    "the-triumph-of-death",
+    "watch-and-ward",
+    "warriors-of-old-japan",
+    "the-jacket",
+    "the-hermit-and-the-wild-woman",
+    "the-octopus",
+    "the-red-laugh",
+    "the-three-impostors",
+    "the-wolves-of-god",
+    "the-party-and-other-stories",
+    "the-tempers",
+    "the-son-of-the-wolf",
+    "toward-the-gulf",
+    "the-hesperides-and-noble-numbers",
+    "the-sweet-miracle",
+  ];
+  const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
+  assert.ok(sleep);
+  const empty: string[] = [];
+  for (const id of sleep.workIds) {
+    if (!shelfWork(id) || !ritualCardPitch(id).trim()) empty.push(id);
+  }
+  assert.deepEqual(empty, []);
+  for (const id of gone) {
+    assert.equal(sleep.workIds.includes(id), false, id);
+    assert.ok(shelfWork(id), id);
+    assert.equal(ritualPitchFor(id), undefined, id);
+  }
+  assert.ok(sleep.workIds.includes("unhuman-tour-kusamakura"));
+  assert.ok(ritualPitchFor("unhuman-tour-kusamakura")?.includes("painter climbing"));
+});
+
 test("a mid-book tale keeps its own minutes instead of the shared preset", () => {
   const fjeld = card("tales-from-the-fjeld");
   assert.equal(estimateRitualMinutes(fjeld), 8);

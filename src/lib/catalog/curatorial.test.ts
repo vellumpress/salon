@@ -1960,7 +1960,14 @@ test("BATCH-5 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     assert.equal(isAdaptedBySalon(id), false, id);
     assert.equal(forYou!.workIds.includes(id), false, id);
     // PITCHES-2: Rhymes of a Red Cross Man leaves Before sleep. The bind stays on Next.
-    if (id === "rhymes-of-a-red-cross-man") {
+    // PITCHES-4: these four leave Before sleep. The binds stay on Next.
+    if (
+      id === "rhymes-of-a-red-cross-man" ||
+      id === "the-hermit-and-the-wild-woman" ||
+      id === "the-princess-casamassima" ||
+      id === "the-son-of-the-wolf" ||
+      id === "toward-the-gulf"
+    ) {
       assert.equal(sleep!.workIds.includes(id), false, id);
     } else {
       assert.ok(sleep!.workIds.includes(id), id);
@@ -2086,11 +2093,16 @@ test("BATCH-9 CLEAR inventory binds are local Next / before-sleep sits, never Fe
     assert.equal(curatorialTrack(id), "next", id);
     assert.equal(isAdaptedBySalon(id), false, id);
     assert.equal(forYou!.workIds.includes(id), false, id);
-    assert.ok(sleep!.workIds.includes(id), id);
     const at = next.indexOf(id);
     assert.ok(at > prev, `${id} follows All Quiet on Next`);
     prev = at;
-    assert.ok(sleep!.workIds.indexOf(id) > sleepAnchor, id);
+    // PITCHES-4: The Triumph of Death and Watch and Ward leave Before sleep. The binds stay on Next.
+    if (id === "the-triumph-of-death" || id === "watch-and-ward") {
+      assert.equal(sleep!.workIds.includes(id), false, id);
+    } else {
+      assert.ok(sleep!.workIds.includes(id), id);
+      assert.ok(sleep!.workIds.indexOf(id) > sleepAnchor, id);
+    }
     assert.equal(
       existsSync(new URL(`./openings/${id}.json`, import.meta.url)),
       id === "an-iceland-fisherman" || id === "ramuntcho" || id === "aphrodite" || id === "smoke",
@@ -2324,7 +2336,8 @@ test("BATCH-16 CLEAR inventory binds are local Next / before-sleep sits, never F
     const sit: number = sleep!.workIds.indexOf(id);
     // PITCHES-2: Miss Julia leaves Before sleep. The bind stays on Next.
     // PITCHES-3: Self-Determining Haiti leaves Before sleep. The bind stays on Next.
-    if (id === "miss-julia" || id === "self-determining-haiti") {
+    // PITCHES-4: Warriors of Old Japan leaves Before sleep. The bind stays on Next.
+    if (id === "miss-julia" || id === "self-determining-haiti" || id === "warriors-of-old-japan") {
       assert.equal(sit, -1, `${id} leaves Before sleep`);
     } else {
       assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
@@ -2696,8 +2709,13 @@ test("BATCH-11 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.ok(at > prev, `${id} follows All Quiet on Next`);
     prev = at;
     const sit: number = sleep!.workIds.indexOf(id);
-    assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
-    sleepAt = sit;
+    // PITCHES-4: The Octopus and The Red Laugh leave Before sleep. The binds stay on Next.
+    if (id === "the-octopus" || id === "the-red-laugh") {
+      assert.equal(sit, -1, `${id} leaves Before sleep`);
+    } else {
+      assert.ok(sit > sleepAt, `${id} follows All Quiet on before-sleep`);
+      sleepAt = sit;
+    }
     assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
     const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
       scenes: unknown[];
@@ -2735,7 +2753,8 @@ test("BATCH-10 CLEAR inventory binds are local Next / before-sleep sits, never F
   assert.ok(inferno && inferno.local !== true && inferno.gutenberg === undefined);
   assert.equal(next.includes("inferno"), false);
   let prev = next.indexOf("the-red-laugh");
-  let sleepPrev = sleep.workIds.indexOf("the-red-laugh");
+  // PITCHES-4: The Red Laugh leaves Before sleep. Pan Tadeusz is the sleeper still ahead of this batch.
+  let sleepPrev = sleep.workIds.indexOf("pan-tadeusz");
   const quiet = next.indexOf("all-quiet-on-the-western-front");
   assert.ok(quiet >= 0 && prev > quiet && sleepPrev > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
   for (const [id, want] of Object.entries(expect)) {
@@ -2872,7 +2891,8 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     "botchan",
   ]);
   let prev = next.indexOf("watch-and-ward");
-  let sleepPrev = sleep.workIds.indexOf("watch-and-ward");
+  // PITCHES-4: Watch and Ward leaves Before sleep. The Witch is the sleeper still ahead of this batch.
+  let sleepPrev = sleep.workIds.indexOf("the-witch-and-other-stories");
   assert.ok(prev > next.indexOf("all-quiet-on-the-western-front"));
   assert.ok(sleepPrev > sleep.workIds.indexOf("all-quiet-on-the-western-front"));
   for (const [id, want] of Object.entries(expect)) {
@@ -2893,7 +2913,7 @@ test("BATCH-12 CLEAR inventory binds are local Next / before-sleep sits, never F
     prev = at;
     const sleepAt: number = sleep.workIds.indexOf(id);
     // PITCHES-1: a horror ending leaves Before sleep. The bind stays on Next.
-    if (id === "black-spirits-and-white-a-book-of-ghost-stories") {
+    if (id === "black-spirits-and-white-a-book-of-ghost-stories" || id === "the-hesperides-and-noble-numbers") {
       assert.equal(sleepAt, -1, `${id} leaves Before sleep`);
     } else {
       assert.ok(sleepAt > sleep.workIds.indexOf("all-quiet-on-the-western-front"), `${id} follows All Quiet before sleep`);
@@ -3018,10 +3038,15 @@ test("BATCH-14 CLEAR inventory binds are local Next / before-sleep sits, never F
     assert.ok(at > next.indexOf("all-quiet-on-the-western-front"), `${id} follows All Quiet on Next`);
     assert.ok(at > prev, `${id} follows BATCH-13 on Next`);
     prev = at;
-    const sleepAt = sleep.workIds.indexOf(id);
-    assert.ok(sleepAt > sleep.workIds.indexOf("all-quiet-on-the-western-front"), `${id} follows All Quiet before sleep`);
-    assert.ok(sleepAt > sleepPrev, `${id} follows BATCH-13 before sleep`);
-    sleepPrev = sleepAt;
+    const sleepAt: number = sleep.workIds.indexOf(id);
+    // PITCHES-4: The Sweet Miracle leaves Before sleep. The bind stays on Next.
+    if (id === "the-sweet-miracle") {
+      assert.equal(sleepAt, -1, `${id} leaves Before sleep`);
+    } else {
+      assert.ok(sleepAt > sleep.workIds.indexOf("all-quiet-on-the-western-front"), `${id} follows All Quiet before sleep`);
+      assert.ok(sleepAt > sleepPrev, `${id} follows BATCH-13 before sleep`);
+      sleepPrev = sleepAt;
+    }
     assert.equal(existsSync(new URL(`./openings/${id}.json`, import.meta.url)), false, id);
     const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
       scenes: unknown[];
