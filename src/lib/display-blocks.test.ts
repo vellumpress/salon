@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import test from "node:test";
+import { shelfWork } from "./catalog/shelf.ts";
 import {
+  displayKindForForm,
   packDisplayBlocks,
   phoneBlockLimit,
   phoneLineMeasure,
@@ -197,17 +199,15 @@ test("cranford s0-14 keeps Captain Brown's advice inside the quote", () => {
   assertPacked(text);
 });
 
-test("cranford s2-4 is one unsplittable letter", () => {
+test("cranford s2-4 breaks the letter at sentence ends inside the quote", () => {
   const text = breathById("cranford", "s2-4");
   assert.equal(sentenceSpans(text).length, 1);
+  assert.ok(sentenceSpans(text, "in-quotes").length > 1);
   assert.ok(lineMeasure(text) > PHONE_THIRD);
   const blocks = assertPacked(text);
-  assert.equal(blocks.length, 1);
-  assert.equal(blocks[0]?.sentences, 1);
-  assert.equal(blocks[0]?.text, text);
-  const cold = unmeasuredBlocks(text);
-  assert.equal(cold.length, 1);
-  assert.equal(cold[0]?.sentences, 1);
+  assert.ok(blocks.length > 1);
+  assert.equal(blocks.map((block) => block.text).join(""), text);
+  assert.deepEqual(unmeasuredBlocks(text), blocks);
 });
 
 test("poetry stays one block", () => {
@@ -316,7 +316,7 @@ test("Mr. Mrs. Dr. and St. do not end a sentence, in or out of quotes", () => {
   assert.ok(bound.some((chunk) => /Mr\.$/.test(chunk)));
 });
 
-test("a nested quotation is not cut inside either quote", () => {
+test("a nested quotation keeps the inner quote together and splits the outer one", () => {
   for (const text of [NESTED_QUOTE, NESTED_STRAIGHT]) {
     assert.equal(interiorQuoteBreaks(text), 0);
     assert.ok(legacyInteriorQuoteBreaks(text) > 0, "the older splitter did not cut this quote");
@@ -327,7 +327,10 @@ test("a nested quotation is not cut inside either quote", () => {
     const blocks = assertPacked(text);
     const holding = blocks.filter((block) => block.text.includes("Never lend"));
     assert.equal(holding.length, 1);
-    assert.match(holding[0]?.text ?? "", /too late to matter/);
+    assert.match(holding[0]?.text ?? "", /good opinion of yourself/);
+    const later = blocks.find((block) => block.text.includes("too late to matter"));
+    assert.ok(later);
+    assert.notEqual(later, holding[0]);
     for (const block of blocks) assert.doesNotMatch(block.text, /^\s/);
     assert.deepEqual(unmeasuredBlocks(text), packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD));
   }
@@ -387,6 +390,69 @@ test("phone-height repros keep quotes, verse, and speakers whole", () => {
   }
 });
 
+test("a quotation that fits in the third is not broken", () => {
+  const text = "She said “Go home now. Then stay with me. Leave in the morning.” He nodded.";
+  assert.ok(lineMeasure(text) <= PHONE_THIRD);
+  assert.ok(sentenceSpans(text, "in-quotes").length > sentenceSpans(text).length);
+  const blocks = assertPacked(text);
+  assert.equal(blocks.length, 1);
+  assert.equal(blocks[0]?.text, text);
+});
+
+test("one long sentence inside a quotation stays one block", () => {
+  const text = `“${"word ".repeat(400)}end.”`;
+  assert.equal(sentenceSpans(text, "in-quotes").length, 1);
+  assert.ok(lineMeasure(text) > PHONE_THIRD);
+  const blocks = assertPacked(text);
+  assert.equal(blocks.length, 1);
+  assert.equal(blocks[0]?.sentences, 1);
+  assert.equal(blocks[0]?.text, text);
+});
+
+const PHONE_REPROS = [
+  ["moby-dick", "s3-32"],
+  ["moby-dick", "s3-6"],
+  ["cranford", "s0-14"],
+  ["cranford", "s2-4"],
+  ["new-grub-street", "s7-85"],
+  ["villette", "s0-32"],
+  ["a-shropshire-lad", "s4-3"],
+  ["leaves-of-grass", "s0-10"],
+  ["the-father", "s0-51"],
+  ["the-little-clay-cart", "s2-1"],
+  ["the-little-clay-cart", "s1-30"],
+] as const;
+
+test("phone repros stay within a third except for a single sentence", () => {
+  for (const [id, breathId] of PHONE_REPROS) {
+    const text = breathById(id, breathId);
+    const kind = displayKindForForm(shelfWork(id)?.form);
+    const blocks = packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, kind);
+    const shown = blocks
+      .map((block, index) => (index === 0 || kind !== "speech" ? block.text : block.text.replace(/^[^:]+: /, "")))
+      .join("");
+    assert.equal(shown, text, `${id} ${breathId}`);
+    for (const block of blocks) {
+      if (block.sentences > 1) {
+        assert.ok(
+          phoneLineMeasure(block.text) <= PHONE_THIRD,
+          `${id} ${breathId} multi-sentence block measured ${phoneLineMeasure(block.text)}`,
+        );
+      }
+      assert.doesNotMatch(block.text, /^\s/);
+    }
+    if (id === "villette" && breathId === "s0-32") {
+      assert.equal(blocks.length, 1);
+      assert.equal(blocks[0]?.sentences, 1);
+      assert.equal(interiorQuoteBreaks(text), 0);
+    }
+    if (kind === "verse") {
+      assert.equal(blocks.length, 1);
+      assert.equal(blocks[0]?.text, text);
+    }
+  }
+});
+
 test("the catalog no longer splits inside an open quote", () => {
   const dir = new URL("./catalog/texts/", import.meta.url);
   let before = 0;
@@ -409,4 +475,36 @@ test("the catalog no longer splits inside an open quote", () => {
   assert.ok(books > 1000, `catalog has ${books} books`);
   assert.equal(after, 0);
   assert.ok(before > after);
+});
+
+test("the catalog has no multi-sentence block taller than a third of the phone", () => {
+  const dir = new URL("./catalog/texts/", import.meta.url);
+  let before = 0;
+  let after = 0;
+  let books = 0;
+  for (const name of readdirSync(dir)) {
+    if (!name.endsWith(".json")) continue;
+    const id = name.slice(0, -5);
+    const work = JSON.parse(readFileSync(new URL(name, dir), "utf8")) as {
+      breaths?: { text?: string }[];
+    };
+    books += 1;
+    const kind = displayKindForForm(shelfWork(id)?.form);
+    if (kind === "verse") continue;
+    for (const breath of work.breaths ?? []) {
+      const text = breath.text;
+      if (!text) continue;
+      for (const span of sentenceSpans(text)) {
+        const slice = text.slice(span.start, span.end);
+        if (sentenceSpans(slice, "in-quotes").length > 1 && phoneLineMeasure(slice) > PHONE_THIRD) before += 1;
+      }
+      for (const block of packDisplayBlocks(text, phoneLineMeasure, PHONE_THIRD, kind)) {
+        if (block.sentences > 1 && phoneLineMeasure(block.text) > PHONE_THIRD) after += 1;
+      }
+    }
+  }
+  console.log(`phone blocks over a third, more than one sentence: before ${before}, after ${after}, books ${books}`);
+  assert.ok(books > 1000, `catalog has ${books} books`);
+  assert.ok(before > 0);
+  assert.equal(after, 0);
 });

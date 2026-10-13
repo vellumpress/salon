@@ -267,13 +267,14 @@ function closesOpenQuote(state: QuoteState, text: string, index: number) {
  * the same characters; nothing is rewritten, dropped, or re-hyphenated.
  * A break needs the same abbreviation and capital-after-period rules as
  * the importer, and it is refused while a double or single quote is still
- * open, including a single quote nested inside a double. A quotation that
- * runs past a third of the screen stays one slice: cutting it would take
- * the line out of the speech. Mr., Mrs., Dr., and St. are abbreviations
- * even when a quote mark sits on the front of the word. The space after a
- * break stays on the earlier slice, so the next one does not start with a blank.
+ * open, including a single quote nested inside a double. Taps follow that
+ * closed slice. Display blocks pass `"in-quotes"` so a quotation taller
+ * than a third of the screen can break at those same sentence ends.
+ * Mr., Mrs., Dr., and St. are abbreviations even when a quote mark sits on
+ * the front of the word. The space after a break stays on the earlier
+ * slice, so the next one does not start with a blank.
  */
-export function sentenceSpans(text: string): SentenceSpan[] {
+export function sentenceSpans(text: string, mode: "closed" | "in-quotes" = "closed"): SentenceSpan[] {
   if (!text) return [{ start: 0, end: 0 }];
   const spans: SentenceSpan[] = [];
   const state: QuoteState = {
@@ -293,7 +294,7 @@ export function sentenceSpans(text: string): SentenceSpan[] {
         feedQuote(probe, text, end);
         end += 1;
       }
-      if (!quotesOpen(probe)) {
+      if (mode === "in-quotes" || !quotesOpen(probe)) {
         const after = text.slice(end);
         const before = text.slice(start, end);
         const word = (before.match(/(\S+)$/) ?? [])[1] ?? "";
@@ -323,6 +324,41 @@ export function sentenceSpans(text: string): SentenceSpan[] {
   }
   if (spans.length === 0) spans.push({ start: 0, end: text.length });
   return spans;
+}
+
+export type QuoteInterval = { start: number; end: number };
+
+/**
+ * Each quotation, from its opening mark through its closer.
+ * A single nested inside a double is its own interval, and so is the double.
+ * An unclosed mark runs to the end of the text.
+ */
+export function quoteIntervals(text: string): QuoteInterval[] {
+  const state = freshQuotes();
+  const open: { kind: keyof QuoteState; start: number }[] = [];
+  const ranges: QuoteInterval[] = [];
+  const kinds = ["curlyDouble", "curlySingle", "straightDouble", "straightSingle"] as const;
+  for (let i = 0; i < text.length; i += 1) {
+    const prev: QuoteState = { ...state };
+    feedQuote(state, text, i);
+    for (const kind of kinds) {
+      if (!prev[kind] && state[kind]) {
+        open.push({ kind, start: i });
+        continue;
+      }
+      if (prev[kind] && !state[kind]) {
+        for (let k = open.length - 1; k >= 0; k -= 1) {
+          if (open[k]!.kind !== kind) continue;
+          const start = open[k]!.start;
+          open.splice(k, 1);
+          ranges.push({ start, end: i + 1 });
+          break;
+        }
+      }
+    }
+  }
+  for (const item of open) ranges.push({ start: item.start, end: text.length });
+  return ranges;
 }
 
 function freshQuotes(): QuoteState {
