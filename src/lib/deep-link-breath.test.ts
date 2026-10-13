@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import {
+  adoptFrameIndex,
   atFromLocationSearch,
   bootShouldKeepPlace,
   firstPaintIndex,
@@ -61,12 +62,37 @@ test("the address keeps at when the router search dropped it", () => {
 });
 
 test("a link past the opening is not painted as breath 0, and a short cache is not the whole book", () => {
+  assert.equal(holdOpeningForAt(314, 96, true, 6090), true);
+  assert.equal(holdOpeningForAt(314, 6090, true, 6090), false);
+  assert.equal(holdOpeningForAt(5, 5, true, 466), true);
   const route = readFileSync(new URL("../routes/read.$workId.tsx", import.meta.url), "utf8");
   assert.doesNotMatch(route, /setWork\(ready \?\? next/);
   assert.match(route, /const deadline = Date\.now\(\) \+ 20000/);
   assert.match(route, /setWork\(workReadyForAt\(edition, at\) \?\? null\)/);
+  assert.match(route, /shelfWork\(book\.id\)\?\.breaths/);
   const works = readFileSync(new URL("./works.ts", import.meta.url), "utf8");
   assert.match(works, /function editionCoversShelf/);
+  assert.match(works, /function editionReady/);
   assert.match(works, /if \(!work && editionCoversShelf\(id, cached\)\) complete\.set\(id, true\)/);
   assert.match(works, /claimedComplete && editionCoversShelf\(id, chosen\)/);
+  assert.match(works, /else if \(!editionCoversShelf\(id, chosen\)\) complete\.set\(id, false\)/);
+});
+
+test("a burst keeps the store once the link is applied, and the first tap can use the frame", () => {
+  assert.equal(
+    adoptFrameIndex({ storeIndex: 64, frameIndex: 65, linkApplied: true, breathCount: 200 }),
+    64,
+  );
+  assert.equal(
+    adoptFrameIndex({ storeIndex: 0, frameIndex: 65, linkApplied: false, breathCount: 200 }),
+    65,
+  );
+  assert.equal(
+    adoptFrameIndex({ storeIndex: 65, frameIndex: 65, linkApplied: false, breathCount: 200 }),
+    65,
+  );
+  const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
+  assert.match(reader, /adoptFrameIndex/);
+  assert.match(reader, /pendingLinkAt\(at, work\.breaths\.length\)/);
+  assert.match(reader, /userStepped/);
 });

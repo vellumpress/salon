@@ -20,10 +20,34 @@ export function holdOpeningForAt(
   at: number | undefined,
   breathCount: number,
   complete: boolean,
+  shelfBreaths?: number,
 ): boolean {
-  if (complete) return false;
   if (typeof at !== "number" || !Number.isFinite(at) || at < 0) return false;
-  return Math.floor(at) >= breathCount;
+  if (Math.floor(at) < breathCount) return false;
+  // A complete flag on a short opening still must not paint breath 0.
+  // The shelf count is the whole book; this bind does not contain `at`.
+  if (complete && (shelfBreaths == null || breathCount >= shelfBreaths)) return false;
+  return true;
+}
+
+/**
+ * Breath a tap should start from. The frame can show `?at=` before the store
+ * has that breath. After the link is in the store, a burst of taps moves the
+ * store before React paints, and the frame is the previous breath.
+ */
+export function adoptFrameIndex(input: {
+  storeIndex: number;
+  frameIndex: number | null;
+  linkApplied: boolean;
+  breathCount: number;
+}): number {
+  const store = Number.isFinite(input.storeIndex) ? Math.max(0, Math.floor(input.storeIndex)) : 0;
+  if (input.linkApplied) return store;
+  const frame = input.frameIndex;
+  if (frame == null || !Number.isFinite(frame)) return store;
+  const index = Math.floor(frame);
+  if (index === store || index < 0 || index >= input.breathCount) return store;
+  return index;
 }
 
 /**

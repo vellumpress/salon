@@ -844,10 +844,19 @@ async function openCatalogOnce(page: Page, id: string, at: number) {
   const message = last instanceof Error ? last.message.split("\n")[0] : String(last);
   let onPage = "";
   try {
-    const text = await page.evaluate(() =>
-      (document.body?.innerText || "").replace(/\s+/g, " ").trim().slice(0, 160),
-    );
-    if (text) onPage = ` — page: ${text}`;
+    const detail = await page.evaluate(() => {
+      const frame = document.querySelector(".reader-frame");
+      const text = (document.body?.innerText || "").replace(/\s+/g, " ").trim().slice(0, 160);
+      return {
+        text,
+        index: frame?.getAttribute("data-breath-index") ?? "",
+        bound: frame?.getAttribute("data-bound") ?? "",
+        count: frame?.getAttribute("data-breath-count") ?? "",
+        href: location.href,
+      };
+    });
+    onPage = ` — index ${detail.index || "?"} bound ${detail.bound || "?"} count ${detail.count || "?"} ${detail.href}`;
+    if (detail.text) onPage += ` — page: ${detail.text}`;
   } catch {
     /* the page is already gone */
   }

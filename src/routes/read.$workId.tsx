@@ -110,7 +110,11 @@ function ReadGate({ children }: { children: ReactNode }) {
 /** Opening excerpt that does not contain `at` must not paint breath 0. */
 function workReadyForAt(book: Work | null | undefined, at: number | undefined) {
   if (!book) return book;
-  if (holdOpeningForAt(at, book.breaths.length, workIsComplete(book.id))) return undefined;
+  if (
+    holdOpeningForAt(at, book.breaths.length, workIsComplete(book.id), shelfWork(book.id)?.breaths)
+  ) {
+    return undefined;
+  }
   return book;
 }
 
