@@ -737,6 +737,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "marie-claire": "France",
   cranford: "United Kingdom",
   "annals-of-the-parish": "Scotland",
+  deephaven: "United States",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",
   "the-golden-age": "United Kingdom",

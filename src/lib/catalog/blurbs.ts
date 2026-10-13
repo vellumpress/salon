@@ -428,6 +428,7 @@ const BLURBS: Record<string, string> = {
   cranford: "In a small English town run almost entirely by genteel ladies, a young visitor keeps a fond and sharp eye on their economies, rivalries and kindnesses.",
   "annals-of-the-parish":
     "A heads-up before you start: there are some old Scots words, and brief period language about Irish, Black and Jewish characters.",
+  deephaven: "Two Boston friends spend a summer keeping house in an old seaport, among retired sea captains, widows and fisher-people, and come to love them all.",
   "the-adventures-of-huckleberry-finn":
     "A boy and a man on a raft, heading south through a country that will not let them be.",
   "pride-and-prejudice": "A country dance, a proud man, and the long work of being wrong about someone.",

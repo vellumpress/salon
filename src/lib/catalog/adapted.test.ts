@@ -393,7 +393,8 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   // MARIE-CLAIRE adds one (1164).
   // CRANFORD adds one (1165).
   // ANNALS adds one (1166).
-  assert.equal(LOCAL_WORKS.length, 1166);
+  // DEEPHAVEN adds one (1167).
+  assert.equal(LOCAL_WORKS.length, 1167);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 
