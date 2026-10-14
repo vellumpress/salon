@@ -1,3 +1,6 @@
+import { applyShellPaint, standaloneShellHeight } from "./bottom-edge.ts";
+import { isStandaloneDisplay } from "./status-bar-color.ts";
+
 /**
  * Visible viewport height for `.frame-screen`.
  *
@@ -322,7 +325,30 @@ export function syncVisualViewport() {
     offsetTop: vv && Number.isFinite(vv.offsetTop) ? vv.offsetTop : 0,
     frozenVvh: restVvhFromDom(root),
   });
+  const nav = window.navigator as Navigator & { standalone?: boolean };
+  const standalone = isStandaloneDisplay(
+    nav,
+    window.matchMedia?.("(display-mode: standalone)")?.matches === true,
+  );
+  const keyboard = vars.kbOpen || fieldFocus || composing || together;
+  if (standalone && !keyboard) {
+    vars.vvh = standaloneShellHeight({
+      base: vars.vvh,
+      screenHeight: window.screen?.height ?? vars.vvh,
+      screenWidth: window.screen?.width ?? window.innerWidth,
+      innerWidth: window.innerWidth,
+      keyboard: false,
+    });
+  }
   applyVars(root, vars);
+  applyShellPaint(root, {
+    standalone,
+    keyboard,
+    screenHeight: window.screen?.height ?? inner,
+    screenWidth: window.screen?.width ?? window.innerWidth,
+    innerWidth: window.innerWidth,
+    innerHeight: inner,
+  });
   /* Fixed pin + overflow clip only after the keyboard is up. Applying them
      on pointerdown moves the field (safe-area vs compose-top) and cancels
      Safari’s focus, so the first tap never opens the keyboard. */
