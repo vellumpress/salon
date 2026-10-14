@@ -737,6 +737,7 @@ const WORK_COUNTRY: Record<string, string> = {
   deephaven: "United States",
   "precious-bane": "England",
   "friendship-village": "United States",
+  "anne-of-green-gables": "Canada",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",
   "the-golden-age": "United Kingdom",

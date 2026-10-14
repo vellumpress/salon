@@ -419,6 +419,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: the narrator is mocked as a witch for her harelip, and the book tells plainly of a bull-baiting with dogs. Later there is a sham conjuring in which a young woman is made to stand naked for a squire to look at, a father who talks of selling his daughter, a son who poisons his mother, drownings, and a mob that tries to duck the narrator as a witch.",
   "friendship-village":
     "One long Middle West street takes in telephones, a new doctor and modern china in its own unhurried way, while Calliope Marsh, mender of lace and music teacher, keeps an eye on it all.",
+  "anne-of-green-gables":
+    "A heads-up before you start: some characters voice the prejudices of their time, about orphans from the city, French-Canadian farm boys, Italians and a Jewish peddler, and the story once describes a French girl the same way. Near the end, a much-loved character dies.",
   "the-adventures-of-huckleberry-finn":
     "A boy and a man on a raft, heading south through a country that will not let them be.",
   "pride-and-prejudice": "A country dance, a proud man, and the long work of being wrong about someone.",
