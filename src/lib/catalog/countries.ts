@@ -1017,7 +1017,6 @@ const WORK_COUNTRY: Record<string, string> = {
   "tess-of-the-durbervilles": "United Kingdom",
   "the-ballad-of-the-white-horse": "United Kingdom",
   "the-book-of-wonder": "Ireland",
-  "the-colonel-s-dream": "United States",
   "the-comedienne": "Poland",
   "the-crux": "United States",
   ramona: "United States",
