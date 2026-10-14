@@ -8,6 +8,7 @@ import {
   firstPaintIndex,
   holdOpeningForAt,
   pendingLinkAt,
+  savedSentenceAt,
 } from "./deep-link-breath.ts";
 
 test("a mid-book at link is not in the opening, and the first paint is that breath", () => {
@@ -102,4 +103,14 @@ test("a burst keeps the store once the link is applied, and the first tap can us
   assert.match(reader, /adoptFrameIndex/);
   assert.match(reader, /pendingLinkAt\(at, work\.breaths\.length\)/);
   assert.match(reader, /userStepped/);
+});
+
+test("a reload restores the saved sentence of this breath, and a missing one is not book start", () => {
+  assert.equal(savedSentenceAt({ breathIndex: 306, sentenceAt: 2 }, 306), 2);
+  assert.equal(savedSentenceAt({ breathIndex: 306, sentenceAt: 0 }, 306), 0);
+  assert.equal(savedSentenceAt({ breathIndex: 306 }, 306), null);
+  assert.equal(savedSentenceAt({ breathIndex: 305, sentenceAt: 2 }, 306), null);
+  assert.equal(savedSentenceAt(null, 306), null);
+  assert.equal(savedSentenceAt({ breathIndex: 306, sentenceAt: -1 }, 306), null);
+  assert.equal(savedSentenceAt({ breathIndex: 4, sentenceAt: 3.8 }, 4), 3);
 });

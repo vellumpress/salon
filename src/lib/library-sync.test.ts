@@ -207,6 +207,53 @@ test("a remote save newer than the tap still wins when that save is not itself a
   assert.equal(row.userMovedAt, undefined);
 });
 
+test("a merged place keeps the sentence inside the winning breath", () => {
+  const local = shelf({
+    progress: {
+      salome: progress({
+        breathIndex: 4,
+        sentenceAt: 3,
+        breathId: "s0-4",
+        lastOpenedAt: 20,
+        userMovedAt: 20,
+        entered: true,
+      }),
+    },
+  });
+  const remote = shelf({
+    progress: {
+      salome: progress({
+        breathIndex: 4,
+        sentenceAt: 1,
+        breathId: "s0-4",
+        lastOpenedAt: 10,
+        userMovedAt: 10,
+        entered: true,
+      }),
+    },
+  });
+  assert.equal(mergeShelves(local, remote).progress.salome?.sentenceAt, 3);
+  const olderLocal = shelf({
+    progress: {
+      salome: progress({
+        breathIndex: 4,
+        breathId: "s0-4",
+        lastOpenedAt: 5,
+        entered: true,
+      }),
+    },
+  });
+  assert.equal(mergeShelves(olderLocal, remote).progress.salome?.sentenceAt, 1);
+  assert.equal(
+    "sentenceAt" in (mergeShelves(olderLocal, shelf({
+      progress: {
+        salome: progress({ breathIndex: 2, breathId: "s0-2", lastOpenedAt: 1, entered: true }),
+      },
+    })).progress.salome ?? {}),
+    false,
+  );
+});
+
 test("the shelf snapshot has no email and sign-out does not delete it", () => {
   const snap = shelfFromState({
     favorites: ["quicksand"],

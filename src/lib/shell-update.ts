@@ -1,13 +1,13 @@
 /**
  * Old phones keep the previous JavaScript until the service worker that
  * controls them is replaced. Ask for that check on every launch, and again
- * when the app comes back to the foreground mid-sit. Reload when a worker
- * was already in charge and a newer one takes over, or when the open
- * document's entry script is behind the one on the network. The saved place
- * stays in local storage.
+ * when the app comes back to the foreground. A newer shell applies on the
+ * next navigation or the next launch. It must not replace the document
+ * while a book is open.
  */
 
 import { isOfflineNow } from "./chunk-reload.ts";
+import { shellMayReload } from "./reader-shell.ts";
 
 export const SW_RELOAD_KEY = "tbr-sw-reload";
 export const SW_RELOAD_WINDOW_MS = 20_000;
@@ -49,6 +49,12 @@ export function shellEntryDiffers(runningSrc: string, html: string): boolean {
   return live !== running;
 }
 
+function documentMayReload(): boolean {
+  if (typeof document === "undefined" || typeof location === "undefined") return true;
+  const frame = Boolean(document.querySelector(".reader-frame"));
+  return shellMayReload(`${location.pathname}${location.search}`, frame);
+}
+
 /** Keep a Pages `?/path` query intact while adding the fresh-shell flag. */
 export function freshShellHref(href: string, now: number): string {
   const url = new URL(href);
@@ -67,6 +73,7 @@ export function freshShellHref(href: string, now: number): string {
 let listening = false;
 
 function reloadForNewWorker() {
+  if (!documentMayReload()) return;
   let storage: SwReloadStorage;
   try {
     storage = sessionStorage;
@@ -114,6 +121,7 @@ export async function nudgeServiceWorker(): Promise<void> {
 async function reloadIfDocumentIsStale(): Promise<void> {
   if (typeof document === "undefined" || typeof fetch !== "function") return;
   if (isOfflineNow()) return;
+  if (!documentMayReload()) return;
   const running =
     document.querySelector("script[type='module'][src*='/assets/index-']")?.getAttribute("src") ||
     "";

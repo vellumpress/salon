@@ -8,6 +8,7 @@ const MAX_SIT_HISTORY = 80;
 
 export type ShelfProgress = {
   breathIndex: number;
+  sentenceAt?: number;
   breathId?: string;
   breathCount?: number;
   bindHash?: string;
@@ -248,6 +249,9 @@ function mergeProgress(local: ShelfProgress, remote: ShelfProgress): ShelfProgre
   const movedAt = place.userMovedAt ?? 0;
   return {
     breathIndex: place.breathIndex ?? 0,
+    ...(typeof place.sentenceAt === "number" && place.sentenceAt >= 0
+      ? { sentenceAt: Math.floor(place.sentenceAt) }
+      : {}),
     ...(place.breathId ? { breathId: place.breathId } : {}),
     ...(place.breathCount ? { breathCount: place.breathCount } : {}),
     ...(place.bindHash ? { bindHash: place.bindHash } : {}),

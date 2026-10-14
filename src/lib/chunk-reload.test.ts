@@ -135,6 +135,89 @@ test("an offline chunk miss does not wipe the shell or navigate", async () => {
   }
 });
 
+test("an open reader is not auto-reloaded when a chunk fails", async () => {
+  let replaced = 0;
+  const previousNavigator = Object.getOwnPropertyDescriptor(globalThis, "navigator");
+  const previous = {
+    window: globalThis.window,
+    sessionStorage: globalThis.sessionStorage,
+    location: globalThis.location,
+    document: globalThis.document,
+    caches: globalThis.caches,
+  };
+  const location = {
+    href: "https://vellumpress.github.io/salon/read/salome",
+    pathname: "/salon/read/salome",
+    search: "",
+    hash: "",
+    replace() {
+      replaced += 1;
+    },
+    reload() {
+      replaced += 1;
+    },
+  };
+  Object.defineProperty(globalThis, "navigator", {
+    configurable: true,
+    writable: true,
+    value: { onLine: true },
+  });
+  Object.assign(globalThis, {
+    window: globalThis,
+    sessionStorage: {
+      getItem: () => null,
+      setItem: () => {},
+      removeItem: () => {},
+      clear: () => {},
+      key: () => null,
+      length: 0,
+    },
+    caches: undefined,
+    location,
+    document: {
+      querySelector() {
+        return null;
+      },
+    },
+  });
+  resetChunkReloadForTests();
+  try {
+    assert.equal(recoverFromChunkLoad(7_000), false);
+    await new Promise((resolve) => setTimeout(resolve, 30));
+    assert.equal(replaced, 0);
+
+    location.href = "https://vellumpress.github.io/salon/?/read/salome";
+    location.pathname = "/salon/";
+    location.search = "?/read/salome";
+    resetChunkReloadForTests();
+    assert.equal(recoverFromChunkLoad(7_100), false);
+
+    location.href = "https://vellumpress.github.io/salon/";
+    location.pathname = "/salon/";
+    location.search = "";
+    Object.assign(globalThis, {
+      document: {
+        querySelector(sel: string) {
+          return sel === ".reader-frame" ? {} : null;
+        },
+      },
+    });
+    resetChunkReloadForTests();
+    assert.equal(recoverFromChunkLoad(7_200), false);
+    await new Promise((resolve) => setTimeout(resolve, 30));
+    assert.equal(replaced, 0);
+
+    forceChunkReload(7_300);
+    await new Promise((resolve) => setTimeout(resolve, 40));
+    assert.equal(replaced, 1);
+  } finally {
+    resetChunkReloadForTests();
+    Object.assign(globalThis, previous);
+    if (previousNavigator) Object.defineProperty(globalThis, "navigator", previousNavigator);
+    else delete (globalThis as { navigator?: unknown }).navigator;
+  }
+});
+
 test("a second document in the window does not auto-reload", async () => {
   const store = new Map<string, string>();
   let replaced = 0;

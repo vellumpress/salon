@@ -89,3 +89,18 @@ export function atFromLocationSearch(search: string): number | null {
 export function bootShouldKeepPlace(before: number, after: number): boolean {
   return after !== before;
 }
+
+/**
+ * Sentence saved on this breath. `null` means this save has no sentence, so
+ * the reader may still open the first sentence of the breath. A saved `0`
+ * is that first sentence, not the start of the book.
+ */
+export function savedSentenceAt(
+  progress: { breathIndex?: number; sentenceAt?: number } | null | undefined,
+  breath: number,
+): number | null {
+  if (!progress || progress.breathIndex !== breath) return null;
+  const at = progress.sentenceAt;
+  if (typeof at !== "number" || !Number.isFinite(at) || at < 0) return null;
+  return Math.floor(at);
+}
