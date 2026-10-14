@@ -47,6 +47,7 @@ export const allTsFiles = [
   "src/lib/catalog/rituals-duration.test.ts",
   "src/lib/catalog/ritual-sit.test.ts",
   "src/lib/catalog/merge-stop-index.test.ts",
+  "src/lib/catalog/merge-stop-layout.test.ts",
   "src/lib/catalog/year-agreement.test.ts",
   "src/lib/catalog/rituals-lead.test.ts",
   "src/lib/catalog/serialize.test.ts",
