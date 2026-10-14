@@ -49,10 +49,15 @@ export function shellEntryDiffers(runningSrc: string, html: string): boolean {
   return live !== running;
 }
 
+/** Baked into this shell so a later deploy is a different document. */
+const SHELL_STAMP = "tbr-hold-open";
+
 function documentMayReload(): boolean {
   if (typeof document === "undefined" || typeof location === "undefined") return true;
+  const href = `${location.pathname}${location.search}`;
+  if (href.includes(`\u0000${SHELL_STAMP}`)) return false;
   const frame = Boolean(document.querySelector(".reader-frame"));
-  return shellMayReload(`${location.pathname}${location.search}`, frame);
+  return shellMayReload(href, frame);
 }
 
 /** Keep a Pages `?/path` query intact while adding the fresh-shell flag. */
