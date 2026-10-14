@@ -738,6 +738,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "precious-bane": "England",
   "friendship-village": "United States",
   "anne-of-green-gables": "Canada",
+  arne: "Norway",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",
   "the-golden-age": "United Kingdom",

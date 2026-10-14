@@ -211,6 +211,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "precious-bane": { label: "Shropshire", region: "gb" },
   "friendship-village": { label: "Wisconsin", region: "us" },
   "anne-of-green-gables": { label: "Avonlea, Prince Edward Island", region: "ca" },
+  arne: { label: "Rural Norway", region: "no" },
   "tales-by-polish-authors": { label: "Poland", region: "pl" },
   "the-dancing-master": { label: "Paris", region: "fr" },
   "the-golden-age": { label: "England", region: "gb" },

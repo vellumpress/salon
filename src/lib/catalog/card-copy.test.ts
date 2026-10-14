@@ -325,6 +325,7 @@ test("known origin overrides", () => {
     "precious-bane": "England",
     "friendship-village": "United States",
     "anne-of-green-gables": "Canada",
+    arne: "Norway",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",

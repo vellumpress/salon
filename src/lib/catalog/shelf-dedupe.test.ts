@@ -74,8 +74,8 @@ function sceneWords(id: string, index = 0) {
 
 test("shelf dupes leave the shelf and follow the keeper", () => {
   assert.equal(RETIRED.length, 29);
-  // ANNE adds one local book after the dedupe (1146).
-  assert.equal(LOCAL_WORKS.length, 1146);
+  // ANNE adds one local book after the dedupe (1146); ARNE adds one more (1147).
+  assert.equal(LOCAL_WORKS.length, 1147);
   for (const [live, retired] of Object.entries(PAIRS)) {
     assert.equal(SHELF.filter((item) => item.id === live).length, 1, live);
     assert.equal(shelfWork(live)?.local, true, live);
