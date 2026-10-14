@@ -567,10 +567,16 @@ async function step(
       lastError = error;
       const destroyed = isRetryableCatalogOpen(error);
       if (destroyed && nav === 0) {
-        // The shell reload can land after the tap, or instead of it.
-        // Keep the sentence if it already moved. Aim again only when it did not.
+        // A service-worker reload destroys the measure. The new document's
+        // init script clears storage, so a chapter opened from saved progress
+        // can come back at the start. Keep a sentence that already moved.
+        // Otherwise reopen that chapter when the tap had been on its first
+        // sentence, then aim once more.
         await page.locator(".breath-now").waitFor({ timeout: 15_000 }).catch(() => undefined);
         const now = await readSentence(page).catch(() => null);
+        console.log(
+          `${label} navigation during tap; before ${before.index}:${before.cursor} now ${now ? `${now.index}:${now.cursor}` : "unread"}`,
+        );
         if (
           now &&
           now.index === predicted.index &&
@@ -581,6 +587,22 @@ async function step(
           if (point) return point;
         }
         if (now && now.index === before.index && now.cursor === before.cursor) continue;
+        if (before.cursor === 0) {
+          let id = "";
+          try {
+            id = bookIdOf(page);
+          } catch {
+            id = "";
+          }
+          if (id && id !== "salon") {
+            try {
+              await openAt(page, id, before.index);
+              continue;
+            } catch {
+              /* the reopen failed; the error below reports it */
+            }
+          }
+        }
       }
       if (destroyed) throw error;
       const now = await readSentence(page).catch(() => null);
