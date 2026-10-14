@@ -13,6 +13,8 @@ export type UserMove = {
   workId: string;
   index: number;
   cursor: number;
+  /** Window inside a sentence taller than three lines. Missing means the first. */
+  window?: number;
   /** `Date.now()` when the reader chose this place. */
   at: number;
   /** Path and query, with a shell `__fresh` reload stripped. */
@@ -52,6 +54,7 @@ export function noteUserMove(move: UserMove, storage?: Storage) {
     workId: move.workId,
     index: Math.floor(move.index),
     cursor: Math.max(0, Math.floor(move.cursor)),
+    window: typeof move.window === "number" && move.window > 0 ? Math.floor(move.window) : undefined,
     at: move.at,
     href: readerHref(move.href),
     breathId: move.breathId,
@@ -72,6 +75,7 @@ export function readUserMove(storage?: Storage): UserMove | null {
       workId: parsed.workId,
       index: Math.floor(parsed.index),
       cursor: typeof parsed.cursor === "number" ? Math.max(0, Math.floor(parsed.cursor)) : 0,
+      window: typeof parsed.window === "number" && parsed.window > 0 ? Math.floor(parsed.window) : 0,
       at: parsed.at,
       href: typeof parsed.href === "string" ? parsed.href : "",
       breathId: typeof parsed.breathId === "string" ? parsed.breathId : "",

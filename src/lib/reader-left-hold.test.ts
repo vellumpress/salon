@@ -1,9 +1,8 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer } from "./reader-dev-server.ts";
-import { breathSentenceCount } from "./sentence-step.ts";
+import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -12,19 +11,6 @@ const AT = 3;
 const HOLD_MS = 15_000;
 
 type Spot = { index: number; cursor: number; bound: string; text: string };
-
-const breaths = (
-  JSON.parse(readFileSync(new URL("./catalog/texts/cranford.json", import.meta.url), "utf8")) as {
-    breaths: { text: string }[];
-  }
-).breaths;
-
-function retreat(index: number, cursor: number) {
-  if (cursor > 0) return { index, cursor: cursor - 1 };
-  const prev = index - 1;
-  assert.ok(prev >= 0, "retreated off the start of the book");
-  return { index: prev, cursor: breathSentenceCount(breaths[prev]?.text ?? "") - 1 };
-}
 
 async function launch(name: "chromium" | "webkit"): Promise<Browser> {
   if (name === "webkit") return webkit.launch();
@@ -153,24 +139,27 @@ async function run(name: "chromium" | "webkit") {
     const duringLoad = opened.bound === "opening";
     assert.equal(duringLoad, heldFull > 0, `${name} full text was not still loading`);
 
-    const once = retreat(AT, 0);
+    const once = await planGroups(page, -1, 1);
+    assert.notEqual(once, "start");
+    assert.notEqual(once, "end");
     await tapLeft(page);
-    await waitPlace(page, once);
+    await waitGroup(page, once as GroupPlace);
     releaseFull();
     await page.waitForFunction(
       () => document.querySelector(".reader-frame")?.getAttribute("data-bound") === "full",
       { timeout: 30_000 },
     );
     const afterFull = await place(page);
-    assert.equal(afterFull.index, once.index, `${name} full text undid the left tap`);
-    assert.equal(afterFull.cursor, once.cursor, `${name} full text moved the sentence`);
-    await holds(page, once, HOLD_MS);
+    assert.equal(afterFull.index, (once as GroupPlace).index, `${name} full text undid the left tap`);
+    assert.equal(afterFull.cursor, (once as GroupPlace).cursor, `${name} full text moved the sentence`);
+    await holds(page, once as GroupPlace, HOLD_MS);
 
-    let rapid = once;
-    for (let i = 0; i < 5; i += 1) rapid = retreat(rapid.index, rapid.cursor);
+    const rapid = await planGroups(page, -1, 5);
+    assert.notEqual(rapid, "start");
+    assert.notEqual(rapid, "end");
     for (let i = 0; i < 5; i += 1) await tapLeft(page);
-    await waitPlace(page, rapid);
-    await holds(page, rapid, 2_000);
+    await waitGroup(page, rapid as GroupPlace);
+    await holds(page, rapid as GroupPlace, 2_000);
 
     await page.reload({ waitUntil: "domcontentloaded" });
     await page.locator(".breath-now").waitFor({ timeout: 30_000 });
@@ -181,15 +170,16 @@ async function run(name: "chromium" | "webkit") {
       },
       { timeout: 30_000 },
     );
-    const reloaded = await place(page);
+    const afterReload = await planGroups(page, -1, 1);
+    assert.notEqual(afterReload, "start");
+    assert.notEqual(afterReload, "end");
     await tapLeft(page);
-    const afterReload = retreat(reloaded.index, reloaded.cursor);
-    await waitPlace(page, afterReload);
+    await waitGroup(page, afterReload as GroupPlace);
     await page.waitForFunction(
       () => document.querySelector(".reader-frame")?.getAttribute("data-bound") === "full",
       { timeout: 30_000 },
     );
-    await holds(page, afterReload, 3_000);
+    await holds(page, afterReload as GroupPlace, 3_000);
   } finally {
     await browser.close();
   }

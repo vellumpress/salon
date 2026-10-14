@@ -61,7 +61,16 @@ import { decodeHostedSit } from "@/lib/hosted-sit";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
 import { displayKindForForm } from "@/lib/display-blocks";
-import { breathSentenceCount, focusPieces, stepSentencePlace } from "@/lib/sentence-step";
+import { breathSentenceCount } from "@/lib/sentence-step";
+import {
+  locateSpotlight,
+  markSpotlight,
+  repeatSpotlight,
+  spotlightGroups,
+  spotlightKey,
+  stepSpotlight,
+  type SpotlightGroup,
+} from "@/lib/spotlight";
 import { useDisplayBlocks } from "@/lib/use-display-blocks";
 import { FittedCopy } from "@/components/fitted-copy";
 import {
@@ -273,18 +282,24 @@ export function TbrReader({
   const topPadRef = useRef<HTMLDivElement>(null);
   const bottomPadRef = useRef<HTMLDivElement>(null);
   const upcomingSlotRef = useRef<HTMLDivElement>(null);
-  const placedIndex = useRef<{ index: number; cursor: number } | null>(null);
+  const placedIndex = useRef<{ index: number; cursor: number; window: number } | null>(null);
   /**
-   * Which sentence of the current breath is on the focus line.
-   * Not stored: a saved place still opens on the first sentence.
-   * Split paragraphs used to center the whole stack, so the focus line
-   * sat on a later sentence and a left tap skipped the ones above it.
+   * Which sentence of the current breath the spotlight starts on.
+   * A saved place still opens on that sentence. A long sentence also
+   * keeps a window, so a reload can return to the same lines.
    */
   const cursorRef = useRef(0);
   const [cursor, setCursor] = useState(0);
+  const windowRef = useRef(0);
+  const [spotWindow, setSpotWindow] = useState(0);
   const ownedIndexRef = useRef<number | null>(null);
   /** Sentence a tap landed on. A store flicker must not drop it. */
-  const sentenceOwned = useRef<{ index: number; cursor: number } | null>(null);
+  const sentenceOwned = useRef<{ index: number; cursor: number; window: number } | null>(null);
+  const groupCache = useRef(new Map<string, SpotlightGroup[]>());
+  const groupCacheKey = useRef("");
+  const groupsAtRef = useRef<(breathIndex: number) => readonly SpotlightGroup[]>(() => []);
+  /** A tap or a hold step, so the column slides. A spine jump does not. */
+  const stepPulse = useRef(false);
   const motionArmed = useRef(false);
   /** Height of the breath just read, plus the gap under it. Advance travels up by this. */
   const lastTravel = useRef(0);
@@ -653,6 +668,33 @@ export function TbrReader({
     `${together ? 1 : 0}:${centerOn ? 1 : 0}:${isKept ? 1 : 0}:${index}`,
     displayKind,
   );
+  const metricsCacheKey = `${display.metricsKey}|${display.limit}|${display.linePx}|${displayKind}|${work.breaths.length}|${work.breaths[0]?.id ?? ""}`;
+  if (groupCacheKey.current !== metricsCacheKey) {
+    groupCacheKey.current = metricsCacheKey;
+    groupCache.current.clear();
+  }
+  function groupsAt(breathIndex: number): readonly SpotlightGroup[] {
+    const item = work.breaths[breathIndex];
+    if (!item) return [];
+    const key = `${metricsCacheKey}|${item.sceneId}`;
+    const hit = groupCache.current.get(key);
+    if (hit) return hit;
+    const scene: { index: number; text: string }[] = [];
+    for (let i = 0; i < work.breaths.length; i += 1) {
+      const breathAt = work.breaths[i];
+      if (breathAt?.sceneId === item.sceneId) scene.push({ index: i, text: breathAt.text });
+    }
+    const groups = spotlightGroups(
+      scene,
+      display.measure,
+      display.limit,
+      display.linePx,
+      displayKind,
+    );
+    groupCache.current.set(key, groups);
+    return groups;
+  }
+  groupsAtRef.current = groupsAt;
   const plane: Fill = planeOf(breath?.sceneId ?? work.id);
   const intro = showPreface ? readerIntro(work) : "";
   const palimpsest = progress?.keywords[breath?.sceneId ?? ""] ?? "";
@@ -673,12 +715,13 @@ export function TbrReader({
     return Math.min(last, Math.max(0, Math.floor(raw)));
   }
 
-  function markUserPlace(index: number, cursor: number) {
+  function markUserPlace(index: number, cursor: number, spotWindow = windowRef.current) {
     const atMs = Date.now();
     noteUserMove({
       workId: work.id,
       index,
       cursor,
+      window: spotWindow,
       at: atMs,
       href: `${window.location.pathname}${window.location.search}`,
       breathId: work.breaths[index]?.id ?? "",
@@ -687,16 +730,16 @@ export function TbrReader({
     useTbr.getState().setSentenceAt(work.id, index, cursor);
   }
 
-  function goTo(next: number, sentence = 0) {
+  function goTo(next: number, sentence = 0, reading = false) {
     if (next < 0 || next >= work.breaths.length) return;
     markUserPlace(next, sentence);
     const at = liveIndex();
     const from = work.breaths[at];
     const to = work.breaths[next];
-    // Only a step onto the next breath is active reading. Retreats, jumps,
-    // and scrolling the line do not add time. The index is read from the
-    // store so a second tap in the same frame moves again.
-    if (next === at + 1) {
+    // A forward step is active reading, including a group that covers more
+    // than one breath. Retreats, jumps, and scrolling the line do not add time.
+    // The index is read from the store so a second tap in the same frame moves again.
+    if (reading ? next > at : next === at + 1) {
       advanceBreath(work.id, next, {
         crossedScene: Boolean(from && to && from.sceneId !== to.sceneId),
         place: stampTap(work, next, sentence),
@@ -704,11 +747,13 @@ export function TbrReader({
     } else setBreath(work.id, next, stampTap(work, next, sentence));
   }
 
-  function rememberSentence(nextIndex: number, nextCursor: number) {
+  function rememberSentence(nextIndex: number, nextCursor: number, nextWindow = 0) {
     ownedIndexRef.current = nextIndex;
-    sentenceOwned.current = { index: nextIndex, cursor: nextCursor };
+    sentenceOwned.current = { index: nextIndex, cursor: nextCursor, window: nextWindow };
     cursorRef.current = nextCursor;
+    windowRef.current = nextWindow;
     setCursor(nextCursor);
+    setSpotWindow(nextWindow);
   }
 
   /** The tap owns the breath. A later full bind must not write `?at=` back. */
@@ -730,24 +775,20 @@ export function TbrReader({
       breathCount: work.breaths.length,
     });
     if (at !== liveIndex()) setBreath(work.id, at, stampTap(work, at));
-    const text = work.breaths[at]?.text ?? "";
-    const here = breathSentenceCount(text, displayKind);
-    const moved = stepSentencePlace({
-      index: at,
-      cursor: cursorRef.current,
+    const moved = stepSpotlight({
+      place: { index: at, cursor: cursorRef.current, window: windowRef.current },
       delta,
-      here,
-      prevCount: at > 0 ? breathSentenceCount(work.breaths[at - 1]?.text ?? "", displayKind) : 1,
+      groupsAt: groupsAtRef.current,
       breathCount: work.breaths.length,
     });
     if (moved === "start") {
       ownTap();
-      markUserPlace(at, cursorRef.current);
+      markUserPlace(at, cursorRef.current, windowRef.current);
       return;
     }
     if (moved === "end") {
       ownTap();
-      markUserPlace(at, cursorRef.current);
+      markUserPlace(at, cursorRef.current, windowRef.current);
       if (delta > 0 && workIsComplete(work.id)) {
         complete(work.id);
         setOverlay("end");
@@ -755,10 +796,11 @@ export function TbrReader({
       return;
     }
     ownTap();
+    stepPulse.current = true;
     if (!booted.current) steppedPlace.current = moved.index;
-    rememberSentence(moved.index, moved.cursor);
-    if (moved.index !== at) goTo(moved.index, moved.cursor);
-    else markUserPlace(moved.index, moved.cursor);
+    rememberSentence(moved.index, moved.cursor, moved.window);
+    if (moved.index !== at) goTo(moved.index, moved.cursor, moved.index > at);
+    else markUserPlace(moved.index, moved.cursor, moved.window);
   }
 
   function advance() {
@@ -774,39 +816,70 @@ export function TbrReader({
     const visit = readUserMove();
     if (visit && tapOwnsVisit(visit, work.id, href) && visit.index === index) {
       ownedIndexRef.current = index;
-      sentenceOwned.current = { index: visit.index, cursor: visit.cursor };
-      if (cursorRef.current !== visit.cursor) {
+      const visitWindow = visit.window ?? 0;
+      sentenceOwned.current = { index: visit.index, cursor: visit.cursor, window: visitWindow };
+      if (cursorRef.current !== visit.cursor || windowRef.current !== visitWindow) {
         cursorRef.current = visit.cursor;
+        windowRef.current = visitWindow;
         setCursor(visit.cursor);
+        setSpotWindow(visitWindow);
       }
       return;
     }
     const saved = savedSentenceAt(progress, index);
     if (saved != null) {
       ownedIndexRef.current = index;
-      sentenceOwned.current = { index, cursor: saved };
-      if (cursorRef.current !== saved) {
+      sentenceOwned.current = { index, cursor: saved, window: 0 };
+      if (cursorRef.current !== saved || windowRef.current !== 0) {
         cursorRef.current = saved;
+        windowRef.current = 0;
         setCursor(saved);
+        setSpotWindow(0);
       }
       return;
     }
     const owned = sentenceOwned.current;
     if (userStepped.current && owned && owned.index === index) {
       ownedIndexRef.current = index;
-      if (cursorRef.current !== owned.cursor) {
+      if (cursorRef.current !== owned.cursor || windowRef.current !== owned.window) {
         cursorRef.current = owned.cursor;
+        windowRef.current = owned.window;
         setCursor(owned.cursor);
+        setSpotWindow(owned.window);
       }
       return;
     }
     if (ownedIndexRef.current === index) return;
     ownedIndexRef.current = index;
-    if (cursorRef.current !== 0) {
+    if (cursorRef.current !== 0 || windowRef.current !== 0) {
       cursorRef.current = 0;
+      windowRef.current = 0;
       setCursor(0);
+      setSpotWindow(0);
     }
   }, [index, progress, work.id]);
+
+  useLayoutEffect(() => {
+    const frame = breathLineRef.current?.closest(".reader-frame");
+    if (!(frame instanceof HTMLElement)) return;
+    const host = frame as HTMLElement & {
+      spotlightStep?: (
+        delta: 1 | -1,
+        steps?: number,
+      ) => ReturnType<typeof repeatSpotlight>;
+    };
+    host.spotlightStep = (delta, steps = 1) =>
+      repeatSpotlight(
+        { index: liveIndex(), cursor: cursorRef.current, window: windowRef.current },
+        delta < 0 ? -1 : 1,
+        steps,
+        groupsAtRef.current,
+        work.breaths.length,
+      );
+    return () => {
+      delete host.spotlightStep;
+    };
+  });
 
   function beginFromReentry() {
     setSandCue(false);
@@ -1188,12 +1261,9 @@ export function TbrReader({
 
   useLayoutEffect(() => {
     const slot = breathSlotRef.current;
-    const previous = placedIndex.current;
-    const stepped =
-      previous !== null &&
-      (Math.abs(index - previous.index) === 1 ||
-        (index === previous.index && Math.abs(cursor - previous.cursor) === 1));
-    placedIndex.current = { index, cursor };
+    const stepped = stepPulse.current;
+    stepPulse.current = false;
+    placedIndex.current = { index, cursor, window: spotWindow };
     if (!slot) {
       setOverflows(false);
       setAtEnd(true);
@@ -1277,10 +1347,20 @@ export function TbrReader({
       const lead = Number.isFinite(paneTop) && paneTop < 0 ? -paneTop : 0;
       const readingHeight = Math.max(0, height - overlap - lead);
       const anchorPx = focusAnchorPx(height, overlap, CENTER_LINE_ANCHOR, lead);
-      const focus = line.querySelector<HTMLElement>("[data-focus-sentence]");
+      const focuses = [...line.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
+      let unionTop = Infinity;
+      let unionBottom = -Infinity;
+      for (const node of focuses) {
+        const rect = node.getBoundingClientRect();
+        if (rect.width === 0 && rect.height === 0) continue;
+        unionTop = Math.min(unionTop, rect.top);
+        unionBottom = Math.max(unionBottom, rect.bottom);
+      }
+      const unionHeight = unionBottom > unionTop ? unionBottom - unionTop : 0;
+      const focus = focuses[0] ?? null;
       const alone = line.querySelectorAll("[data-sentence-index]").length <= 1;
-      // A split paragraph centers the sentence on the focus line, not the
-      // middle of the stack. Only a breath that is one tall sentence scrolls.
+      // A split passage centers the lit lines, not the middle of the stack.
+      // Only a breath that is still one unwindowed block scrolls.
       const tooTall = alone && breathTooTall(line.scrollHeight, readingHeight || height);
       const look = lookbackSlotRef.current;
       const ahead = upcomingSlotRef.current;
@@ -1303,15 +1383,17 @@ export function TbrReader({
       landScroll();
 
       const trackRect = track.getBoundingClientRect();
-      const target = !alone && !tooTall && focus ? focus : line;
-      const targetRect = target.getBoundingClientRect();
-      const lineTop = targetRect.top - trackRect.top;
+      const lineBox = line.getBoundingClientRect();
+      const useUnion = !alone && !tooTall && unionHeight > 0;
+      const targetTop = useUnion ? unionTop : lineBox.top;
+      const targetHeight = useUnion ? unionHeight : lineBox.height;
+      const lineTop = targetTop - trackRect.top;
       const shift = tooTall
         ? 0
         : centerLineOffset({
             paneHeight: height,
             lineTop,
-            lineHeight: targetRect.height,
+            lineHeight: targetHeight,
             anchor: height > 0 ? anchorPx / height : undefined,
           });
       const travel = Math.min(Math.max(0, lastTravel.current), height);
@@ -1332,7 +1414,19 @@ export function TbrReader({
       track.style.transform = `translate3d(0, ${shift}px, 0)`;
       void track.offsetHeight;
       const aheadLine = ahead?.querySelector<HTMLElement>(".look-line");
-      const lineRect = (focus ?? line).getBoundingClientRect();
+      const landed = [...line.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
+      let landedTop = Infinity;
+      let landedBottom = -Infinity;
+      for (const node of landed) {
+        const rect = node.getBoundingClientRect();
+        if (rect.width === 0 && rect.height === 0) continue;
+        landedTop = Math.min(landedTop, rect.top);
+        landedBottom = Math.max(landedBottom, rect.bottom);
+      }
+      const lineRect =
+        landedBottom > landedTop
+          ? { top: landedTop, bottom: landedBottom, height: landedBottom - landedTop }
+          : (focus ?? line).getBoundingClientRect();
       const gapPx = aheadLine
         ? Math.max(0, aheadLine.getBoundingClientRect().top - lineRect.bottom)
         : 10;
@@ -1417,7 +1511,7 @@ export function TbrReader({
       ro.disconnect();
       slot.removeEventListener("scroll", onScroll);
     };
-  }, [index, cursor, breath?.text, together, overlay, centerOn]);
+  }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn]);
 
   const durationMs = sittingMinutes > 0 ? sittingMinutes * 60 * 1000 : 0;
   const endsAt =
@@ -1469,8 +1563,25 @@ export function TbrReader({
     );
   }
 
-  const readLines = lookback.flatMap((item, i) => {
-    const last = lookback.length - 1;
+  const sentenceCount = breathSentenceCount(breath.text, displayKind);
+  const atSentence = Math.min(sentenceCount - 1, Math.max(0, cursor));
+  const sceneGroups = groupsAt(index);
+  const groupAt = sceneGroups.length
+    ? locateSpotlight(sceneGroups, index, atSentence, spotWindow)
+    : 0;
+  const group = sceneGroups[groupAt];
+  const groupStart = group?.index ?? index;
+  const groupEnd = group?.endIndex ?? index;
+  const shownLookback = lookback.filter((item) => {
+    const at = work.breaths.indexOf(item);
+    return at >= 0 && at < groupStart;
+  });
+  const shownUpcoming = upcoming.filter((item) => {
+    const at = work.breaths.indexOf(item);
+    return at > groupEnd;
+  });
+  const readLines = shownLookback.flatMap((item, i) => {
+    const last = shownLookback.length - 1;
     const opacity = last <= 0 ? 0.38 : 0.1 + (i / last) * 0.4;
     const sentence = work.breaths.indexOf(item);
     return display.blocksFor(item.text).map((block, bi) => (
@@ -1485,13 +1596,13 @@ export function TbrReader({
       </p>
     ));
   });
-  const previewLines = upcoming.flatMap((item, i) => {
+  const previewLines = shownUpcoming.flatMap((item, i) => {
     const sentence = work.breaths.indexOf(item);
     return display.blocksFor(item.text).map((block, bi) => (
       <p
         key={`${item.id}-${bi}`}
         className="look-line text-ink"
-        style={{ opacity: upcomingOpacity(i, upcoming.length) }}
+        style={{ opacity: upcomingOpacity(i, shownUpcoming.length) }}
         data-sentence={sentence >= 0 ? sentence : undefined}
         data-block-sentences={block.sentences}
       >
@@ -1499,40 +1610,55 @@ export function TbrReader({
       </p>
     ));
   });
-  const sentenceCount = breathSentenceCount(breath.text, displayKind);
-  const atSentence = Math.min(sentenceCount - 1, Math.max(0, cursor));
-  const breathBlocks = display.blocksFor(breath.text);
-  const focused = focusPieces(breath.text, breathBlocks, displayKind);
+  const passage: number[] = [];
+  for (let breathIndex = groupStart; breathIndex <= groupEnd; breathIndex += 1) {
+    passage.push(breathIndex);
+  }
   const currentLine = (
     <div
       ref={breathLineRef}
       className={cn(
         "breath-now relative z-[1] font-serif",
+        groupEnd > groupStart && "is-passage",
         isKept && "border-l-2 border-red pl-4",
       )}
       data-sentence={index}
       data-sentence-count={sentenceCount}
     >
-      {breathBlocks.map((block, bi) => {
-        const pieces = focused[bi] ?? [{ text: block.text, sentence: 0 }];
-        return (
-          <p key={bi} className="breath-block" data-block-sentences={block.sentences}>
-            {pieces.map((piece, pi) => (
-              <span
-                key={pi}
-                className={cn(
-                  "breath-sentence",
-                  piece.sentence < atSentence && "is-past",
-                  piece.sentence > atSentence && "is-ahead",
-                )}
-                data-sentence-index={piece.sentence}
-                data-focus-sentence={piece.sentence === atSentence ? "" : undefined}
-              >
-                <EmphasizedText text={piece.text} />
-              </span>
-            ))}
-          </p>
-        );
+      {passage.flatMap((breathIndex) => {
+        const item = work.breaths[breathIndex];
+        if (!item) return [];
+        const blocks = display.blocksFor(item.text);
+        const part = group?.parts.find((row) => row.index === breathIndex);
+        const range = part
+          ? { start: part.start, end: part.end }
+          : { start: 0, end: item.text.length };
+        const marked = markSpotlight(item.text, blocks, range, displayKind);
+        return blocks.map((block, bi) => {
+          const pieces = marked[bi] ?? [{ text: block.text, role: "focus" as const }];
+          return (
+            <p
+              key={`${breathIndex}-${bi}`}
+              className="breath-block"
+              data-block-sentences={block.sentences}
+            >
+              {pieces.map((piece, pi) => (
+                <span
+                  key={pi}
+                  className={cn(
+                    "breath-sentence",
+                    piece.role === "past" && "is-past",
+                    piece.role === "ahead" && "is-ahead",
+                  )}
+                  data-sentence-index={piece.role === "focus" ? atSentence : `${piece.role}-${pi}`}
+                  data-focus-sentence={piece.role === "focus" ? "" : undefined}
+                >
+                  <EmphasizedText text={piece.text} />
+                </span>
+              ))}
+            </p>
+          );
+        });
       })}
     </div>
   );
@@ -1677,9 +1803,14 @@ export function TbrReader({
     start.turned = true;
     turnedAtRef.current = performance.now();
     if (overlayRef.current !== "none") return;
-    const before = `${liveIndex()}:${cursorRef.current}`;
+    const before = `${liveIndex()}:${cursorRef.current}:${windowRef.current}`;
     stepZone(zone);
-    if (overlayRef.current !== "none" || `${liveIndex()}:${cursorRef.current}` === before) return;
+    if (
+      overlayRef.current !== "none" ||
+      `${liveIndex()}:${cursorRef.current}:${windowRef.current}` === before
+    ) {
+      return;
+    }
     const held = performance.now() - start.t - HOLD_ARM_MS;
     holdTimerRef.current = window.setTimeout(() => pumpHold(start), holdStepIntervalMs(held));
   }
@@ -2003,8 +2134,10 @@ export function TbrReader({
       data-bound={workIsComplete(work.id) ? "full" : "opening"}
       data-breath-index={index}
       data-breath-count={work.breaths.length}
-      data-sentence-at={breath ? Math.min(breathSentenceCount(breath.text, displayKind) - 1, Math.max(0, cursor)) : 0}
-      data-sentence-count={breath ? breathSentenceCount(breath.text, displayKind) : 1}
+      data-sentence-at={atSentence}
+      data-sentence-count={sentenceCount}
+      data-spotlight-key={spotlightKey({ index, cursor: atSentence, window: spotWindow })}
+      data-spotlight-window={spotWindow}
       data-display-blocks={display.ready ? "ready" : "pending"}
       data-face-ready={display.faceReady ? "yes" : "no"}
       data-block-viewport={display.viewport ? String(display.viewport) : ""}

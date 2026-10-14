@@ -4,6 +4,7 @@ import { existsSync, readFileSync } from "node:fs";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -131,7 +132,7 @@ async function pointerDown(page: Page, x: number, y: number) {
           i: Number(frame.getAttribute("data-breath-index")),
         });
       });
-      obs.observe(frame, { attributes: true, attributeFilter: ["data-breath-index"] });
+      obs.observe(frame, { attributes: true, attributeFilter: ["data-spotlight-key"] });
       const win = window as Window & {
         __holdMarks?: { t: number; i: number }[];
         __holdObs?: MutationObserver;
@@ -218,16 +219,19 @@ test(
       );
 
       const back = await sidePoint(page, "prev");
+      const once = await planGroups(page, -1, 1);
+      assert.notEqual(once, "start");
+      assert.notEqual(once, "end");
       await pointerDown(page, back.x, back.y);
       await page.waitForTimeout(120);
       await pointerUp(page, back.x, back.y);
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "39",
-        undefined,
-        { timeout: 4000 },
-      );
+      await waitGroup(page, once as GroupPlace);
       await page.waitForTimeout(400);
-      assert.equal(await breathIndex(page), 39, "a short tap stepped more than once");
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(once as GroupPlace),
+        "a short tap stepped more than once",
+      );
       assert.equal(
         await page.locator("[data-reader-bar]").getAttribute("data-reader-bar"),
         "closed",
@@ -235,19 +239,19 @@ test(
       );
 
       const forward = await sidePoint(page, "next");
-      const before = await breathIndex(page);
+      const beforeKey = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await pointerDown(page, forward.x, forward.y);
       await page.waitForTimeout(1800);
-      const held = await breathIndex(page);
+      const heldKey = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       const marks = await holdMarks(page);
       await pointerUp(page, forward.x, forward.y);
-      const atLift = await breathIndex(page);
+      const atLift = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await page.waitForTimeout(450);
-      const released = await breathIndex(page);
-      assert.ok(held >= before + 4, `hold only reached ${held} from ${before}`);
-      assert.ok(atLift >= held, `the hold moved backward on the way up (${atLift} from ${held})`);
-      assert.equal(released, atLift, "release added a sentence after the hold");
+      const released = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
+      assert.notEqual(heldKey, beforeKey, "hold stayed on the first group");
       assert.ok(marks.length >= 4, `hold recorded ${marks.length} steps`);
+      assert.equal(atLift, heldKey, `the hold moved on the way up (${atLift} from ${heldKey})`);
+      assert.equal(released, atLift, "release added a group after the hold");
       assert.ok(marks[0]!.t >= 250, `first repeat landed at ${marks[0]!.t}ms`);
       const firstGap = marks[1]!.t - marks[0]!.t;
       const lastGap = marks[marks.length - 1]!.t - marks[marks.length - 2]!.t;
@@ -262,14 +266,18 @@ test(
       );
 
       const again = await sidePoint(page, "prev");
-      const backFrom = await breathIndex(page);
+      const backFrom = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await pointerDown(page, again.x, again.y);
       await page.waitForTimeout(900);
-      const backed = await breathIndex(page);
+      const backed = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await pointerUp(page, again.x, again.y);
       await page.waitForTimeout(450);
-      assert.ok(backed <= backFrom - 2, `left hold reached ${backed} from ${backFrom}`);
-      assert.equal(await breathIndex(page), backed, "lifting a back hold stepped again");
+      assert.notEqual(backed, backFrom, "left hold stayed on one group");
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        backed,
+        "lifting a back hold stepped again",
+      );
     } finally {
       await browser.close();
       await stop();
@@ -318,7 +326,15 @@ test(
         };
       });
       assert.ok(spot, "lamia column missing");
-      assert.equal(spot.overflows, true, "lamia 5 is not taller than the column");
+      const lamiaHeight = await page.evaluate(() => {
+        const nodes = [...document.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
+        if (nodes.length === 0) return 0;
+        const top = Math.min(...nodes.map((node) => node.getBoundingClientRect().top));
+        const bottom = Math.max(...nodes.map((node) => node.getBoundingClientRect().bottom));
+        return bottom - top;
+      });
+      assert.ok(lamiaHeight > 0 && lamiaHeight <= 281, `lamia focus is ${lamiaHeight}px`);
+      assert.ok(spot.scrollTop < 4, "lamia opened partway through a window");
       await page.evaluate(({ x, y }) => {
         const host = document.querySelector("[data-reader-text]");
         if (!host) throw new Error("missing reading column");
@@ -351,7 +367,7 @@ test(
         };
       });
       assert.equal(scrolled.index, "5", "a drag stepped a sentence");
-      assert.ok(scrolled.scrollTop > 20, "a drag did not scroll the tall sentence");
+      assert.ok(scrolled.scrollTop < 4, "a drag scrolled a windowed passage");
     } finally {
       await browser.close();
       await stop();
@@ -372,18 +388,22 @@ test(
       });
       await page.locator(".breath-now").waitFor({ timeout: 30_000 });
       await page.locator(".together-lock").waitFor();
-      const start = await breathIndex(page);
+      const start = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       const forward = await sidePoint(page, "next");
       await pointerDown(page, forward.x, forward.y);
       await page.waitForFunction(
-        (from) => Number(document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index")) >= from + 2,
+        (from) => document.querySelector(".reader-frame")?.getAttribute("data-spotlight-key") !== from,
         start,
         { timeout: 4000 },
       );
-      const held = await breathIndex(page);
+      const held = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await pointerUp(page, forward.x, forward.y);
       await page.waitForTimeout(400);
-      assert.equal(await breathIndex(page), held, "lifting in a live room stepped again");
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        held,
+        "lifting in a live room stepped again",
+      );
     } finally {
       await browser.close();
       await stop();

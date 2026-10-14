@@ -6,7 +6,8 @@ import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { shelfWork } from "./catalog/shelf.ts";
 import { displayKindForForm } from "./display-blocks.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
-import { breathSentenceCount, repeatSentenceStep, type SentencePlace } from "./sentence-step.ts";
+import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
+import { breathSentenceCount } from "./sentence-step.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -278,6 +279,8 @@ async function readSentence(page: Page) {
     return {
       index: Number(frame?.getAttribute("data-breath-index") ?? 0),
       cursor: Number(frame?.getAttribute("data-sentence-at") ?? 0),
+      window: Number(frame?.getAttribute("data-spotlight-window") ?? 0),
+      key: frame?.getAttribute("data-spotlight-key") ?? "",
       count: Number(frame?.getAttribute("data-sentence-count") ?? 1),
       total: Number(frame?.getAttribute("data-breath-count") ?? 0),
     };
@@ -299,34 +302,6 @@ function sentenceCounts(id: string): number[] | null {
   }
 }
 
-function expectStep(
-  id: string,
-  place: { index: number; cursor: number; count: number; total: number },
-  direction: 1 | -1,
-): SentencePlace | null {
-  const counts = sentenceCounts(id);
-  const countAt = (index: number) => counts?.[index] ?? (index === place.index ? place.count : 1);
-  const breathCount = counts?.length || place.total || place.index + 2;
-  const moved = repeatSentenceStep(place, direction, 1, countAt, breathCount);
-  if (moved === "start" || moved === "end") return null;
-  return moved;
-}
-
-function walkBook(id: string, index: number, cursor: number, direction: 1 | -1, steps: number) {
-  const counts = sentenceCounts(id);
-  assert.ok(counts, `${id} has no sentence counts`);
-  const moved = repeatSentenceStep(
-    { index, cursor },
-    direction,
-    steps,
-    (at) => counts[at] ?? 1,
-    counts.length,
-  );
-  assert.notEqual(moved, "start");
-  assert.notEqual(moved, "end");
-  return moved as SentencePlace;
-}
-
 async function waitIndex(page: Page, expected: number) {
   await page.waitForFunction(
     (want) =>
@@ -345,14 +320,25 @@ async function tapIndex(
   expected: number,
   label: string,
 ) {
+  const before = await readSentence(page);
+  const delta: 1 | -1 = expected < before.index ? -1 : 1;
+  const planned = await planGroups(page, delta, 1);
+  assert.notEqual(planned, "start", `${label} walked off the start`);
+  assert.notEqual(planned, "end", `${label} walked off the end`);
+  const next = planned as GroupPlace;
+  assert.notEqual(groupKey(next), before.key, `${label} planned the group already on screen`);
   await assertOnColumn(page, point, label);
   await page.touchscreen.tap(point.x, point.y);
   try {
-    await waitIndex(page, expected);
+    await waitGroup(page, next);
   } catch (error) {
-    const now = await breathIndex(page);
-    throw new Error(`${label}: index ${now}, expected ${expected} (${error instanceof Error ? error.message : error})`);
+    const now = await readSentence(page);
+    throw new Error(
+      `${label}: at ${now.key}, one group is ${groupKey(next)} (${error instanceof Error ? error.message : error})`,
+    );
   }
+  const landed = await readSentence(page);
+  assert.equal(landed.key, groupKey(next), `${label} skipped a group`);
   const bar = await page.locator("[data-reader-bar]").getAttribute("data-reader-bar");
   assert.equal(bar, "closed", `${label} opened Keep/Send`);
 }
@@ -408,17 +394,25 @@ async function sameSpotTwice(
           y: Math.round(Math.min(limit, Math.max(spot.lineTop + 8, spot.host.bottom - 24))),
         };
   await assertOnColumn(page, point, label);
-  const start = spot.index;
+  const once = await planGroups(page, direction, 1);
+  const twice = await planGroups(page, direction, 2);
+  assert.notEqual(once, "start", `${label} walked off the start`);
+  assert.notEqual(once, "end", `${label} walked off the end`);
+  assert.notEqual(twice, "start", `${label} second step walked off the start`);
+  assert.notEqual(twice, "end", `${label} second step walked off the end`);
+  assert.notEqual(groupKey(once as GroupPlace), groupKey(twice as GroupPlace), `${label} second tap is the same group`);
   await page.touchscreen.tap(point.x, point.y);
   await page.touchscreen.tap(point.x, point.y);
   try {
-    await waitIndex(page, start + direction * 2);
+    await waitGroup(page, twice as GroupPlace);
   } catch (error) {
-    const now = await breathIndex(page);
+    const now = await readSentence(page);
     throw new Error(
-      `${label}: index ${now}, expected ${start + direction * 2} (${error instanceof Error ? error.message : error})`,
+      `${label}: at ${now.key}, two groups is ${groupKey(twice as GroupPlace)} (${error instanceof Error ? error.message : error})`,
     );
   }
+  const landed = await readSentence(page);
+  assert.notEqual(landed.key, groupKey(once as GroupPlace), `${label} swallowed the second tap`);
   const bar = await page.locator("[data-reader-bar]").getAttribute("data-reader-bar");
   assert.equal(bar, "closed", `${label} opened Keep/Send`);
 }
@@ -426,27 +420,17 @@ async function sameSpotTwice(
 async function tapSentence(
   page: Page,
   point: { x: number; y: number },
-  expected: SentencePlace,
+  expected: GroupPlace,
   label: string,
 ) {
   await assertOnColumn(page, point, label);
   await page.touchscreen.tap(point.x, point.y);
   try {
-    await page.waitForFunction(
-      (want) => {
-        const frame = document.querySelector(".reader-frame");
-        return (
-          frame?.getAttribute("data-breath-index") === String(want.index) &&
-          frame?.getAttribute("data-sentence-at") === String(want.cursor)
-        );
-      },
-      expected,
-      { timeout: 4000 },
-    );
+    await waitGroup(page, expected);
   } catch (error) {
     const now = await readSentence(page);
     throw new Error(
-      `${label}: at ${now.index}:${now.cursor}, expected ${expected.index}:${expected.cursor} (${error instanceof Error ? error.message : error})`,
+      `${label}: at ${now.key}, one group is ${groupKey(expected)} (${error instanceof Error ? error.message : error})`,
     );
   }
   await frames(page);
@@ -461,15 +445,16 @@ async function burst(
   gapMs: number,
   label: string,
 ) {
-  const id = bookId(page);
   for (let i = 0; i < count; i += 1) {
     const before = await readSentence(page);
-    const expected = expectStep(id, before, direction);
-    assert.ok(expected, `${label} step ${i + 1} walked off the book`);
+    const expected = await planGroups(page, direction, 1);
+    assert.notEqual(expected, "start", `${label} step ${i + 1} walked off the start`);
+    assert.notEqual(expected, "end", `${label} step ${i + 1} walked off the end`);
+    assert.notEqual(groupKey(expected as GroupPlace), before.key, `${label} step ${i + 1} repeated a group`);
     const spot = await column(page);
     const point = direction < 0 ? backPoint(spot) : forwardPoint(spot);
     const began = Date.now();
-    await tapSentence(page, point, expected, `${label} step ${i + 1}`);
+    await tapSentence(page, point, expected as GroupPlace, `${label} step ${i + 1}`);
     const spent = Date.now() - began;
     if (spent < gapMs) await new Promise((resolve) => setTimeout(resolve, gapMs - spent));
   }
@@ -479,6 +464,9 @@ async function burst(
 async function slowBack(page: Page, label: string) {
   const spot = await column(page);
   assert.equal(spot.overflows, false, `${label} is a tall breath`);
+  const planned = await planGroups(page, -1, 1);
+  assert.notEqual(planned, "start", `${label} walked off the start`);
+  assert.notEqual(planned, "end", `${label} walked off the end`);
   const point = backPoint(spot);
   await assertOnColumn(page, point, label);
   await page.evaluate(({ x, y }) => {
@@ -516,8 +504,8 @@ async function slowBack(page: Page, label: string) {
       }),
     );
   }, point);
-  await waitIndex(page, spot.index - 1);
-  assert.equal(await breathIndex(page), spot.index - 1, label);
+  await waitGroup(page, planned as GroupPlace);
+  assert.equal((await readSentence(page)).key, groupKey(planned as GroupPlace), `${label} was not one group`);
 }
 
 async function dispatchGhost(page: Page, x: number, y: number, clickBeforeUp: boolean) {
@@ -551,40 +539,42 @@ async function dispatchGhost(page: Page, x: number, y: number, clickBeforeUp: bo
   );
 }
 
+async function focusHeight(page: Page) {
+  return page.evaluate(() => {
+    const nodes = [...document.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
+    if (nodes.length === 0) return 0;
+    const top = Math.min(...nodes.map((node) => node.getBoundingClientRect().top));
+    const bottom = Math.max(...nodes.map((node) => node.getBoundingClientRect().bottom));
+    return bottom - top;
+  });
+}
+
 async function tallSteps(page: Page, id: string, at: number, label: string) {
   await openAt(page, id, at);
   const place = await readSentence(page);
-  if (place.count > 1) {
-    assert.equal(place.index, at);
-    assert.equal(place.cursor, 0, `${label} did not open on its first sentence`);
-    const opened = await column(page);
-    const forward = expectStep(id, place, 1);
-    assert.ok(forward, `${label} has no next sentence`);
-    await tapSentence(page, forwardPoint(opened), forward, `${label} forward one sentence`);
-    const mid = await readSentence(page);
-    const back = expectStep(id, mid, -1);
-    assert.ok(back, `${label} cannot step back`);
-    await tapSentence(page, backPoint(await column(page)), back, `${label} back one sentence`);
-    assert.equal(back.index, at, `${label} back left the paragraph`);
-    assert.equal(back.cursor, 0, `${label} back skipped a sentence`);
-    return;
-  }
+  assert.equal(place.index, at);
+  assert.equal(place.cursor, 0, `${label} did not open on its first sentence`);
+  const height = await focusHeight(page);
+  assert.ok(height > 0 && height <= 281, `${label} focus is ${height}px`);
   const opened = await column(page);
-  assert.equal(opened.overflows, true, `${label} is not taller than the column`);
   assert.ok(opened.scrollTop < 4, `${label} did not open at the start`);
-  assert.equal(opened.slotTouch, "manipulation", `${label} slot still pans natively`);
-  await tapIndex(page, forwardPoint(opened), at + 1, `${label} forward`);
-  const next = await column(page);
-  assert.ok(next.scrollTop < 4, `${label} next sentence did not open at the start`);
-  await tapIndex(page, backPoint(next), at, `${label} back onto the tall sentence`);
-  const landed = await column(page);
-  assert.equal(landed.index, at, `${label} back skipped or stuck`);
-  assert.ok(landed.scrollTop < 4, `${label} back stopped partway through the sentence`);
+  const forward = await planGroups(page, 1, 1);
+  assert.notEqual(forward, "start", `${label} has no next group`);
+  assert.notEqual(forward, "end", `${label} has no next group`);
+  await tapSentence(page, forwardPoint(opened), forward as GroupPlace, `${label} forward one group`);
+  const back = await planGroups(page, -1, 1);
+  assert.notEqual(back, "start", `${label} cannot step back`);
+  assert.notEqual(back, "end", `${label} cannot step back`);
+  await tapSentence(page, backPoint(await column(page)), back as GroupPlace, `${label} back one group`);
+  const landed = await readSentence(page);
+  assert.equal(landed.key, place.key, `${label} back skipped a group`);
+  assert.ok((await column(page)).scrollTop < 4, `${label} back stopped partway through the passage`);
 }
 
 async function dragTall(page: Page, label: string) {
   const spot = await column(page);
-  assert.equal(spot.overflows, true, label);
+  const before = await readSentence(page);
+  assert.ok((await focusHeight(page)) <= 281, `${label} focus is taller than a third of the screen`);
   const x = Math.round(spot.host.left + spot.host.width * 0.7);
   const y0 = Math.round(spot.host.top + spot.host.height * 0.7);
   const y1 = y0 - 90;
@@ -616,8 +606,10 @@ async function dragTall(page: Page, label: string) {
   );
   await frames(page);
   const after = await column(page);
+  const now = await readSentence(page);
   assert.equal(after.index, spot.index, `${label} drag stepped a breath`);
-  assert.ok(after.scrollTop > spot.scrollTop + 20, `${label} drag did not scroll`);
+  assert.equal(now.key, before.key, `${label} drag stepped a group`);
+  assert.ok(after.scrollTop < 4, `${label} drag scrolled a passage that fits on the anchor`);
 }
 
 async function runReaderMatrix(name: EngineName) {
@@ -634,13 +626,20 @@ async function runReaderMatrix(name: EngineName) {
     assert.equal(touch.sitting, true, `${tag} reader is not in sitting mode`);
     assert.equal(touch.htmlTouch, "manipulation", `${tag} page still allows double-tap zoom`);
     assert.equal(touch.touchAction, "manipulation", `${tag} column still allows double-tap zoom`);
+    const origin = await readSentence(page);
+    const backed = await planGroups(page, -1, 20);
+    assert.notEqual(backed, "start", `${tag} twenty backs walked off the book`);
+    assert.notEqual(backed, "end", `${tag} twenty backs walked off the book`);
     await burst(page, -1, 20, 100, `${tag} passing rapid back`);
-    const backed = walkBook("passing", 862, 0, -1, 20);
-    assert.equal(await breathIndex(page), backed.index, `${tag} twenty backs`);
-    assert.equal((await readSentence(page)).cursor, backed.cursor, `${tag} twenty backs sentence`);
+    assert.equal((await readSentence(page)).key, groupKey(backed as GroupPlace), `${tag} twenty backs`);
+    const returned = await planGroups(page, 1, 20);
+    assert.notEqual(returned, "end", `${tag} twenty forwards walked off the book`);
     await burst(page, 1, 20, 100, `${tag} passing rapid forward`);
-    assert.equal(await breathIndex(page), 862, `${tag} twenty forwards did not return`);
-    assert.equal((await readSentence(page)).cursor, 0, `${tag} twenty forwards sentence`);
+    assert.equal(
+      (await readSentence(page)).key,
+      groupKey(returned as GroupPlace),
+      `${tag} twenty forwards did not return`,
+    );
 
     await openAt(page, "passing", 120);
     await sameSpotTwice(page, -1, `${tag} passing double back on one spot`);
@@ -649,7 +648,6 @@ async function runReaderMatrix(name: EngineName) {
 
     await openAt(page, "passing", 862);
     await slowBack(page, `${tag} passing slow back`);
-    assert.equal(await breathIndex(page), 861);
 
     await openAt(page, "passing", 0);
     const first = await column(page);
@@ -670,27 +668,37 @@ async function runReaderMatrix(name: EngineName) {
     await openAt(page, "passing", 40);
     await page.setViewportSize({ width: 375, height: 667 });
     await frames(page);
-    await tapIndex(page, backPoint(await column(page)), 39, `${tag} back at 375×667`);
+    await tapIndex(page, backPoint(await column(page)), (await breathIndex(page)) - 1, `${tag} back at 375×667`);
     await page.setViewportSize({ width: 320, height: 568 });
     await frames(page);
-    await tapIndex(page, backPoint(await column(page)), 38, `${tag} back at 320×568`);
+    await tapIndex(page, backPoint(await column(page)), (await breathIndex(page)) - 1, `${tag} back at 320×568`);
     await page.setViewportSize({ width: 390, height: 844 });
     await frames(page);
-    await tapIndex(page, forwardPoint(await column(page)), 39, `${tag} forward after resize`);
-    await tapIndex(page, forwardPoint(await column(page)), 40, `${tag} second forward after resize`);
+    await tapIndex(page, forwardPoint(await column(page)), (await breathIndex(page)) + 1, `${tag} forward after resize`);
+    await tapIndex(page, forwardPoint(await column(page)), (await breathIndex(page)) + 1, `${tag} second forward after resize`);
 
     await openAt(page, "passing", 24);
+    const ghostPlan = await planGroups(page, -1, 1);
+    assert.notEqual(ghostPlan, "start", `${tag} ghost walked off the start`);
+    assert.notEqual(ghostPlan, "end", `${tag} ghost walked off the end`);
     const ghostSpot = await column(page);
     const ghostAt = backPoint(ghostSpot);
     await dispatchGhost(page, ghostAt.x, ghostAt.y, false);
-    await waitIndex(page, 23);
+    await waitGroup(page, ghostPlan as GroupPlace);
     await frames(page);
-    assert.equal(await breathIndex(page), 23, `${tag} ghost mouse undid the back tap`);
+    assert.equal((await readSentence(page)).key, groupKey(ghostPlan as GroupPlace), `${tag} ghost mouse undid the back tap`);
+    const ghostPlanAgain = await planGroups(page, -1, 1);
+    assert.notEqual(ghostPlanAgain, "start");
+    assert.notEqual(ghostPlanAgain, "end");
     const ghostAgain = backPoint(await column(page));
     await dispatchGhost(page, ghostAgain.x, ghostAgain.y, true);
-    await waitIndex(page, 22);
+    await waitGroup(page, ghostPlanAgain as GroupPlace);
     await frames(page);
-    assert.equal(await breathIndex(page), 22, `${tag} click-before-up doubled the back tap`);
+    assert.equal(
+      (await readSentence(page)).key,
+      groupKey(ghostPlanAgain as GroupPlace),
+      `${tag} click-before-up doubled the back tap`,
+    );
 
     const books = [
       "passing",
@@ -721,15 +729,21 @@ async function runReaderMatrix(name: EngineName) {
     }
 
     await openAt(page, "don-juan", 50);
+    const juan = await readSentence(page);
+    const juanBack = await planGroups(page, -1, 20);
+    assert.notEqual(juanBack, "start");
+    assert.notEqual(juanBack, "end");
     await burst(page, -1, 20, 40, `${tag} don juan back across stanzas`);
-    assert.equal(await breathIndex(page), 30);
+    assert.equal((await readSentence(page)).key, groupKey(juanBack as GroupPlace), `${tag} don juan backs`);
+    const juanForward = await planGroups(page, 1, 20);
     await burst(page, 1, 20, 40, `${tag} don juan forward across stanzas`);
-    assert.equal(await breathIndex(page), 50);
+    assert.equal((await readSentence(page)).key, juan.key, `${tag} don juan forwards`);
 
     await openAt(page, "miss-julie", 47);
+    const julie = await readSentence(page);
     await burst(page, -1, 8, 40, `${tag} miss julie back`);
     await burst(page, 1, 8, 40, `${tag} miss julie forward`);
-    assert.equal(await breathIndex(page), 47);
+    assert.equal((await readSentence(page)).key, julie.key, `${tag} miss julie`);
 
     await tallSteps(page, "lamia", 5, `${tag} lamia`);
     await openAt(page, "lamia", 5);
@@ -754,7 +768,7 @@ async function runReaderMatrix(name: EngineName) {
       "closed",
       `${tag} back tap left the bar open`,
     );
-    await tapIndex(page, backPoint(await column(page)), beforeGlass.index - 2, `${tag} back with the bar closed`);
+    await tapIndex(page, backPoint(await column(page)), (await breathIndex(page)) - 1, `${tag} back with the bar closed`);
 
     await page.close();
   } finally {
@@ -787,7 +801,7 @@ async function runPdfMatrix(name: EngineName) {
   const tag = name;
   try {
     const page = await phonePage(browser);
-    await importPdf(page, shortPdf(40), "short.pdf");
+    await importPdf(page, shortPdf(90), "short.pdf");
     assert.equal(await breathIndex(page), 0);
     const first = await column(page);
     await page.touchscreen.tap(backPoint(first).x, backPoint(first).y);
@@ -797,11 +811,16 @@ async function runPdfMatrix(name: EngineName) {
       const spot = await column(page);
       await tapIndex(page, forwardPoint(spot), spot.index + 1, `${tag} pdf forward ${i}`);
     }
-    assert.equal(await breathIndex(page), 24);
+    const pdfMid = await readSentence(page);
+    assert.ok(pdfMid.index > 0, `${tag} pdf taps did not advance`);
+    const pdfBack = await planGroups(page, -1, 20);
+    assert.notEqual(pdfBack, "start");
+    assert.notEqual(pdfBack, "end");
     await burst(page, -1, 20, 80, `${tag} pdf rapid back`);
-    assert.equal(await breathIndex(page), 4);
+    assert.equal((await readSentence(page)).key, groupKey(pdfBack as GroupPlace), `${tag} pdf rapid back`);
+    const pdfForward = await planGroups(page, 1, 20);
     await burst(page, 1, 20, 80, `${tag} pdf rapid forward`);
-    assert.equal(await breathIndex(page), 24);
+    assert.equal((await readSentence(page)).key, pdfMid.key, `${tag} pdf rapid forward`);
     const glass = await page.locator(".reader-glass").boundingBox();
     assert.ok(glass, "pdf hourglass missing");
     const before = await breathIndex(page);
@@ -816,24 +835,43 @@ async function runPdfMatrix(name: EngineName) {
     const again = await phonePage(browser);
     await importPdf(again, longParagraphPdf(), "long.pdf");
     let found = -1;
-    for (let i = 0; i < 6; i += 1) {
-      const spot = await column(again);
-      if (spot.overflows) {
-        found = spot.index;
+    for (let i = 0; i < 8; i += 1) {
+      const place = await readSentence(again);
+      const height = await focusHeight(again);
+      assert.ok(height <= 281, `${tag} pdf focus is ${height}px`);
+      const next = await planGroups(again, 1, 1);
+      if (
+        next !== "start" &&
+        next !== "end" &&
+        next.index === place.index &&
+        groupKey(next) !== place.key
+      ) {
+        found = place.index;
         break;
       }
-      if (i === 5) break;
-      await tapIndex(again, forwardPoint(spot), spot.index + 1, `${tag} pdf seek tall ${i}`);
+      if (i === 7 || next === "end" || next === "start") break;
+      const spot = await column(again);
+      await tapIndex(again, forwardPoint(spot), spot.index + 1, `${tag} pdf seek window ${i}`);
     }
-    assert.ok(found >= 0, `${tag} long pdf paragraph did not scroll in place`);
+    assert.ok(found >= 0, `${tag} long pdf sentence was not stepped in windows`);
     const tall = await column(again);
     assert.ok(tall.scrollTop < 4, `${tag} long pdf breath was not at the start`);
-    await tapIndex(again, forwardPoint(tall), found + 1, `${tag} pdf forward off a tall paragraph`);
-    const stepped = await column(again);
-    assert.ok(stepped.scrollTop < 4, `${tag} pdf next sentence opened partway`);
-    await tapIndex(again, backPoint(stepped), found, `${tag} pdf back onto a tall paragraph`);
-    const returned = await column(again);
-    assert.ok(returned.scrollTop < 4, `${tag} pdf back stopped partway through the paragraph`);
+    let place = await readSentence(again);
+    const seenWindows = new Set([place.key]);
+    for (let guard = 0; place.index === found && guard < 60; guard += 1) {
+      const next = await planGroups(again, 1, 1);
+      if (next === "end" || next === "start") break;
+      await tapIndex(again, forwardPoint(await column(again)), next.index, `${tag} pdf window ${guard}`);
+      place = await readSentence(again);
+      assert.ok(!seenWindows.has(place.key), `${tag} pdf window ${guard} did not move`);
+      seenWindows.add(place.key);
+    }
+    assert.notEqual(place.index, found, `${tag} pdf never left the long sentence`);
+    assert.ok((await column(again)).scrollTop < 4, `${tag} pdf next group opened partway`);
+    await tapIndex(again, backPoint(await column(again)), place.index - 1, `${tag} pdf back onto a tall paragraph`);
+    const returned = await readSentence(again);
+    assert.equal(returned.index, found, `${tag} pdf back skipped the long sentence`);
+    assert.ok((await column(again)).scrollTop < 4, `${tag} pdf back stopped partway through the paragraph`);
     await again.close();
   } finally {
     await browser.close();

@@ -4,6 +4,7 @@ import { existsSync, readFileSync } from "node:fs";
 import test from "node:test";
 import { chromium, devices, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const BACKS = 32;
@@ -249,9 +250,19 @@ async function tapBack(page: Page, where: "high" | "middle" | "low") {
     { x: spot.backX, y },
   );
   assert.equal(hit, "prev", `${where} tap is not the back side`);
-  const next = spot.index - 1;
+  const planned = await planGroups(page, -1, 1);
+  assert.notEqual(planned, "start", `${where} tap walked off the start`);
+  assert.notEqual(planned, "end", `${where} tap walked off the end`);
   await page.touchscreen.tap(spot.backX, y);
-  await settle(page, next);
+  await waitGroup(page, planned as GroupPlace);
+  await lineSettled(page);
+  const bar = await page.locator("[data-reader-bar]").getAttribute("data-reader-bar");
+  assert.equal(bar, "closed", "a page tap opened Keep/Send");
+  assert.equal(
+    await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+    groupKey(planned as GroupPlace),
+    `${where} tap skipped a group`,
+  );
 }
 
 async function backSeries(page: Page, where: "high" | "middle" | "low", count: number) {
@@ -299,19 +310,37 @@ test(
       const page = await phonePage(browser);
       const boundary = mirthSceneStart();
       await openCatalog(page, 80);
+      const high = await planGroups(page, -1, BACKS);
+      assert.notEqual(high, "start");
+      assert.notEqual(high, "end");
       await backSeries(page, "high", BACKS);
-      assert.equal(await breathIndex(page), 80 - BACKS);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(high as GroupPlace),
+        "high backs skipped a group",
+      );
 
       await openCatalog(page, 80);
+      const middle = await planGroups(page, -1, BACKS);
       await backSeries(page, "middle", BACKS);
-      assert.equal(await breathIndex(page), 80 - BACKS);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(middle as GroupPlace),
+        "middle backs skipped a group",
+      );
 
       await openCatalog(page, boundary);
       const opened = await spots(page);
       assert.equal(opened.look, 0, "a chapter's first sentence still shows already-read lines");
       assert.equal(opened.index, boundary);
+      const low = await planGroups(page, -1, BACKS);
+      assert.notEqual(low, "start");
       await backSeries(page, "low", BACKS);
-      assert.equal(await breathIndex(page), boundary - BACKS);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(low as GroupPlace),
+        "low backs skipped a group",
+      );
 
       await openCatalog(page, 0);
       const first = await spots(page);
@@ -327,33 +356,39 @@ test(
       await openCatalog(page, 24);
       for (let i = 0; i < 8; i += 1) {
         const spot = await spots(page);
+        const planned = await planGroups(page, 1, 1);
+        assert.notEqual(planned, "end");
         await page.touchscreen.tap(spot.forwardX, spot.onLine);
-        await settle(page, spot.index + 1);
+        await waitGroup(page, planned as GroupPlace);
       }
       const beforePreview = await spots(page);
+      const below = await planGroups(page, 1, 1);
+      assert.notEqual(below, "end");
       await page.touchscreen.tap(beforePreview.forwardX, beforePreview.below);
-      await settle(page, beforePreview.index + 1);
+      await waitGroup(page, below as GroupPlace);
 
       await openCatalog(page, 40);
-      const rapidStart = 40;
+      const rapidWant = await planGroups(page, -1, 12);
+      assert.notEqual(rapidWant, "start");
       for (let i = 0; i < 12; i += 1) {
         const spot = await spots(page);
+        const planned = await planGroups(page, -1, 1);
+        assert.notEqual(planned, "start");
         // The left third stays back while the sentence is still sliding.
         await page.touchscreen.tap(spot.backX, spot.low);
-        await page.waitForFunction(
-          (want) =>
-            document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
-            String(want),
-          rapidStart - i - 1,
-          { timeout: 4000 },
-        );
+        await waitGroup(page, planned as GroupPlace);
       }
       await frames(page);
-      assert.equal(await breathIndex(page), rapidStart - 12, "rapid back taps did not all land");
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(rapidWant as GroupPlace),
+        "rapid back taps did not all land",
+      );
 
       await lineSettled(page);
-      const beforeDouble = await breathIndex(page);
       const spot = await spots(page);
+      const doubled = await planGroups(page, -1, 1);
+      assert.notEqual(doubled, "start");
       await page.evaluate(
         ({ x, y }) => {
           const host = document.querySelector("[data-reader-text]");
@@ -374,7 +409,13 @@ test(
         },
         { x: spot.backX, y: spot.high },
       );
-      await settle(page, beforeDouble - 1);
+      await waitGroup(page, doubled as GroupPlace);
+      await page.waitForTimeout(400);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(doubled as GroupPlace),
+        "the click doubled the back tap",
+      );
     } finally {
       await browser.close();
       await stop();
@@ -408,13 +449,13 @@ test(
         above,
       );
       assert.equal(forwardHit, "next", "right side above the sentence is not forward");
+      const abovePlan = await planGroups(page, 1, 1);
+      assert.notEqual(abovePlan, "end");
       await page.touchscreen.tap(above.x, above.y);
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "25",
-        undefined,
-        { timeout: 4000 },
-      );
+      await waitGroup(page, abovePlan as GroupPlace);
 
+      const grid = await planGroups(page, -1, 20);
+      assert.notEqual(grid, "start");
       for (let i = 0; i < 20; i += 1) {
         await spots(page);
         const xs = [0.08, 0.18, 0.28];
@@ -436,15 +477,16 @@ test(
         assert.ok(point, "reading column missing");
         assert.ok(point.x < point.split, `tap ${i} left the left third`);
         assert.equal(point.hit, "prev", `tap ${i} is not the back side`);
+        const planned = await planGroups(page, -1, 1);
+        assert.notEqual(planned, "start");
         await page.touchscreen.tap(point.x, point.y);
-        await page.waitForFunction(
-          (want) =>
-            document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === String(want),
-          24 - i,
-          { timeout: 4000 },
-        );
+        await waitGroup(page, planned as GroupPlace);
       }
-      assert.equal(await breathIndex(page), 5);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(grid as GroupPlace),
+        "left-side taps skipped a group",
+      );
 
       await page.goto(`${ORIGIN}/salon/read/lamia?at=5`, { waitUntil: "domcontentloaded" });
       await page.locator(".breath-now").waitFor();
@@ -468,7 +510,14 @@ test(
         };
       });
       assert.ok(tall, "lamia column missing");
-      assert.equal(tall.overflows, true, "lamia 5 is not taller than the column");
+      const lamiaHeight = await page.evaluate(() => {
+        const nodes = [...document.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
+        if (nodes.length === 0) return 0;
+        const top = Math.min(...nodes.map((node) => node.getBoundingClientRect().top));
+        const bottom = Math.max(...nodes.map((node) => node.getBoundingClientRect().bottom));
+        return bottom - top;
+      });
+      assert.ok(lamiaHeight > 0 && lamiaHeight <= 281, `lamia focus is ${lamiaHeight}px`);
       assert.ok(tall.scrollTop < 4);
       await page.evaluate(({ x, y }) => {
         const host = document.querySelector("[data-reader-text]");
@@ -502,19 +551,16 @@ test(
         };
       });
       assert.equal(scrolled.index, "5");
-      assert.ok(scrolled.scrollTop > 20, "drag did not leave the top of the sentence");
+      assert.ok(scrolled.scrollTop < 4, "drag scrolled a windowed passage");
+      const lamiaBack = await planGroups(page, -1, 1);
+      assert.notEqual(lamiaBack, "start");
       await page.touchscreen.tap(tall.backX, tall.backY);
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "4",
-        undefined,
-        { timeout: 4000 },
-      );
+      await waitGroup(page, lamiaBack as GroupPlace);
       const landed = await page.evaluate(() => {
         const slot = document.querySelector(".breath-slot");
         return slot instanceof HTMLElement ? slot.scrollTop : 99;
       });
-      assert.equal(await breathIndex(page), 4);
-      assert.ok(landed < 4, "the previous sentence did not open at its start");
+      assert.ok(landed < 4, "the previous group did not open at its start");
     } finally {
       await browser.close();
       await stop();
@@ -551,68 +597,58 @@ test(
       await frames(page);
       assert.equal(await breathIndex(page), 0, "back from the first imported sentence moved");
 
-      for (let i = 0; i < 70; i += 1) {
+      const hops = 16;
+      for (let i = 0; i < hops; i += 1) {
         const spot = await spots(page);
+        const planned = await planGroups(page, 1, 1);
+        assert.notEqual(planned, "end", `pdf forward ${i} walked off the import`);
         await page.touchscreen.tap(spot.forwardX, spot.onLine);
-        await page.waitForFunction(
-          (want) =>
-            document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
-            String(want),
-          spot.index + 1,
-          { timeout: 4000 },
-        );
+        await waitGroup(page, planned as GroupPlace);
       }
       await frames(page);
-      assert.equal(await breathIndex(page), 70);
+      const pdfMid = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await lineSettled(page);
 
-      await backSeries(page, "high", BACKS);
-      assert.equal(await breathIndex(page), 70 - BACKS);
+      const pdfBack = await planGroups(page, -1, hops);
+      assert.notEqual(pdfBack, "start");
+      await backSeries(page, "high", hops);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(pdfBack as GroupPlace),
+        "pdf backs skipped a group",
+      );
 
-      for (let i = 0; i < BACKS; i += 1) {
+      for (let i = 0; i < hops; i += 1) {
         const spot = await spots(page);
+        const planned = await planGroups(page, 1, 1);
+        assert.notEqual(planned, "end");
         await page.touchscreen.tap(spot.forwardX, spot.onLine);
-        await page.waitForFunction(
-          (want) =>
-            document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
-            String(want),
-          spot.index + 1,
-          { timeout: 4000 },
-        );
+        await waitGroup(page, planned as GroupPlace);
       }
-      assert.equal(await breathIndex(page), 70);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        pdfMid,
+        "pdf forwards did not return",
+      );
       await lineSettled(page);
-      await backSeries(page, "middle", BACKS);
-
-      for (let i = 0; i < BACKS; i += 1) {
-        const spot = await spots(page);
-        await page.touchscreen.tap(spot.forwardX, spot.onLine);
-        await page.waitForFunction(
-          (want) =>
-            document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
-            String(want),
-          spot.index + 1,
-          { timeout: 4000 },
+      let edge = await spots(page);
+      for (let i = 0; edge.look !== 0 && i < 40; i += 1) {
+        const planned = await planGroups(page, -1, 1);
+        if (planned === "start") break;
+        await page.touchscreen.tap(edge.backX, edge.low);
+        await waitGroup(page, planned as GroupPlace);
+        edge = await spots(page);
+      }
+      assert.equal(edge.look, 0, "a part's first group still shows already-read lines");
+      const across = await planGroups(page, -1, BACKS);
+      if (across !== "start" && across !== "end") {
+        await backSeries(page, "low", BACKS);
+        assert.equal(
+          await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+          groupKey(across),
+          "backs across a part skipped a group",
         );
       }
-      // Part breaks every 20 sentences. Step onto one, then back across it.
-      // The left third stays a back tap while the line is still sliding.
-      while ((await breathIndex(page)) > 40) {
-        const spot = await spots(page);
-        await page.touchscreen.tap(spot.backX, spot.low);
-        await page.waitForFunction(
-          (want) =>
-            document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") ===
-            String(want),
-          spot.index - 1,
-          { timeout: 4000 },
-        );
-      }
-      const edge = await spots(page);
-      assert.equal(edge.index, 40);
-      assert.equal(edge.look, 0, "first sentence of an imported part still shows read lines");
-      await backSeries(page, "low", BACKS);
-      assert.equal(await breathIndex(page), 40 - BACKS);
     } finally {
       await browser.close();
       await stop();

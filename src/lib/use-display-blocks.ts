@@ -1,6 +1,11 @@
 import { useLayoutEffect, useMemo, useRef, useState, type RefObject } from "react";
 import {
+  displayLinePx,
+  measureDisplaySample,
   metricsEqual,
+  PHONE_LINE_PX,
+  phoneBlockLimit,
+  phoneLineMeasure,
   resolveDisplayBlocks,
   unmeasuredBlocks,
   VIEWPORT_BLOCK_FRACTION,
@@ -174,10 +179,16 @@ export function useDisplayBlocks(
     blocksFor(text: string): DisplayBlock[] {
       return packed.get(text) ?? unmeasuredBlocks(text, kind);
     },
+    measure(sample: string): number {
+      if (!metrics) return phoneLineMeasure(sample);
+      return measureDisplaySample(sample, metrics);
+    },
     ready: readyKey !== "" && readyKey === settled && metrics?.faceReady === true,
     faceReady: metrics?.faceReady === true,
-    limit: metrics?.limit ?? 0,
+    limit: metrics?.limit || phoneBlockLimit(),
+    linePx: metrics ? displayLinePx(metrics) : PHONE_LINE_PX,
     width: metrics?.width ?? 0,
     viewport: metrics?.viewport ?? 0,
+    metricsKey: readyKey,
   };
 }

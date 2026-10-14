@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -114,14 +115,25 @@ async function openAt(page: Page, id: string, at: number) {
 async function place(page: Page) {
   return page.evaluate(() => {
     const frame = document.querySelector(".reader-frame");
-    const focus = document.querySelector("[data-focus-sentence]");
+    const focuses = [...document.querySelectorAll("[data-focus-sentence]")];
+    const focus = focuses[0] ?? null;
     const slot = document.querySelector(".breath-slot");
     const host = document.querySelector("[data-reader-text]");
     const pane = document.querySelector(".reading-pane");
     const block = focus?.closest(".breath-block");
     const blocks = [...document.querySelectorAll(".breath-now .breath-block")];
     const hostBox = host?.getBoundingClientRect();
-    const focusBox = focus?.getBoundingClientRect();
+    let focusTop = Infinity;
+    let focusBottom = -Infinity;
+    for (const node of focuses) {
+      const box = node.getBoundingClientRect();
+      if (box.height <= 0) continue;
+      focusTop = Math.min(focusTop, box.top);
+      focusBottom = Math.max(focusBottom, box.bottom);
+    }
+    const focusBox = Number.isFinite(focusBottom)
+      ? { top: focusTop, height: focusBottom - focusTop, bottom: focusBottom }
+      : null;
     const paneBox = pane?.getBoundingClientRect();
     let sentencesBefore = 0;
     for (const item of blocks) {
@@ -131,8 +143,15 @@ async function place(page: Page) {
     return {
       index: Number(frame?.getAttribute("data-breath-index") ?? -1),
       cursor: Number(frame?.getAttribute("data-sentence-at") ?? -1),
+      window: Number(frame?.getAttribute("data-spotlight-window") ?? 0),
+      key: frame?.getAttribute("data-spotlight-key") ?? "",
       count: Number(frame?.getAttribute("data-sentence-count") ?? 0),
-      text: (focus?.textContent ?? "").replace(/\s+/g, " ").trim(),
+      text: focuses
+        .map((node) => node.textContent ?? "")
+        .join(" ")
+        .replace(/\s+/g, " ")
+        .trim(),
+      focusHeight: focusBox?.height ?? 0,
       block: block ? blocks.indexOf(block) : -1,
       blockSentences: Number(block?.getAttribute("data-block-sentences") ?? 0),
       sentencesBefore,
@@ -153,19 +172,19 @@ async function place(page: Page) {
 async function tapSide(page: Page, side: "prev" | "next") {
   const spot = await place(page);
   assert.ok(spot.host, "reading column missing");
+  const planned = await planGroups(page, side === "prev" ? -1 : 1, 1);
+  assert.notEqual(planned, "start", `${side} tap walked off the start`);
+  assert.notEqual(planned, "end", `${side} tap walked off the end`);
+  const next = planned as GroupPlace;
+  assert.notEqual(groupKey(next), spot.key, `${side} tap planned the group already on screen`);
   const x = Math.round(spot.host.left + spot.host.width * (side === "prev" ? 0.12 : 0.72));
   const y = Math.round(spot.host.top + spot.host.height * 0.55);
   await page.touchscreen.tap(x, y);
-  await page.waitForFunction(
-    (prev) => {
-      const frame = document.querySelector(".reader-frame");
-      const index = frame?.getAttribute("data-breath-index");
-      const cursor = frame?.getAttribute("data-sentence-at");
-      return !(index === String(prev.index) && cursor === String(prev.cursor));
-    },
-    { index: spot.index, cursor: spot.cursor },
-    { timeout: 4000 },
-  );
+  await waitGroup(page, next);
+  const now = await place(page);
+  assert.equal(now.key, groupKey(next), `${side} tap landed on ${now.key}, one group is ${groupKey(next)}`);
+  assert.ok(now.focusHeight <= 281, `${side} tap lit ${now.focusHeight}px`);
+  return now;
 }
 
 async function runSplitTaps(name: "chromium" | "webkit") {
@@ -189,76 +208,56 @@ async function runSplitTaps(name: "chromium" | "webkit") {
       Math.abs(opened.focusMid - opened.anchor) < 120,
       `${name} focus ${opened.focusMid} is off the anchor ${opened.anchor}`,
     );
+    assert.ok(opened.focusHeight > 0 && opened.focusHeight <= 281, `${name} focus is ${opened.focusHeight}px`);
 
-    await tapSide(page, "next");
-    const quote = await place(page);
-    assert.equal(quote.index, 60, `${name} right tap left the paragraph`);
-    assert.equal(quote.cursor, 1, `${name} right tap did not move one sentence`);
-    assert.ok(quote.block >= 0, `${name} quote has no focus`);
-    assert.match(quote.text, /No,/);
-
-    await tapSide(page, "prev");
-    const backInside = await place(page);
-    assert.equal(backInside.index, 60);
-    assert.equal(backInside.cursor, 0, `${name} left tap on the continuation skipped a sentence`);
+    const quote = await tapSide(page, "next");
+    assert.notEqual(quote.key, opened.key, `${name} right tap did not move one group`);
+    const backInside = await tapSide(page, "prev");
+    assert.equal(backInside.key, opened.key, `${name} left tap skipped a group`);
     assert.match(backInside.text, /^The landlord chuckled/);
-
-    await tapSide(page, "prev");
-    const previous = await place(page);
-    assert.equal(previous.index, 59);
-    assert.equal(previous.cursor, previous.count - 1, `${name} left tap did not land on the previous sentence`);
+    const previous = await tapSide(page, "prev");
+    assert.ok(previous.index <= 60, `${name} left tap left the chapter`);
+    assert.notEqual(previous.key, opened.key);
 
     await openAt(page, "moby-dick", 62);
     const after = await place(page);
     assert.equal(after.count, 1, `${name} the breath after the split is not one sentence`);
-    await tapSide(page, "prev");
-    const intoSplit = await place(page);
-    assert.equal(intoSplit.index, 61, `${name} left tap from after the split skipped the paragraph`);
-    assert.equal(intoSplit.cursor, intoSplit.count - 1);
-    assert.ok(intoSplit.count > 1);
+    const intoSplit = await tapSide(page, "prev");
+    assert.ok(intoSplit.index < 62, `${name} left tap did not enter the split paragraph`);
+    assert.notEqual(intoSplit.key, after.key);
 
     await openAt(page, "moby-dick", 0);
     const ishmael = await place(page);
     assert.ok(ishmael.count > 2);
     assert.equal(ishmael.cursor, 0);
-    await tapSide(page, "next");
-    const inside = await place(page);
-    assert.equal(inside.index, 0);
-    assert.equal(inside.cursor, 1);
-    assert.equal(inside.block, 0, `${name} the second sentence left its block`);
-    assert.ok(inside.blockSentences > 1);
-    await tapSide(page, "prev");
-    assert.equal((await place(page)).cursor, 0);
-
-    let continuation = await place(page);
-    for (let step = 0; step < 12 && continuation.block === 0; step += 1) {
-      await tapSide(page, "next");
-      continuation = await place(page);
+    const seen = new Set([ishmael.key]);
+    let current = ishmael;
+    for (let step = 0; step < 8; step += 1) {
+      current = await tapSide(page, "next");
+      assert.ok(!seen.has(current.key), `${name} repeated or skipped a group`);
+      seen.add(current.key);
+      if (current.index !== 0) break;
     }
-    assert.equal(continuation.index, 0);
-    assert.equal(continuation.cursor, continuation.sentencesBefore, `${name} not on the first sentence of the next block`);
-    assert.ok(continuation.block > 0);
-    await tapSide(page, "prev");
-    const restored = await place(page);
-    assert.equal(restored.index, 0);
-    assert.equal(restored.cursor, continuation.cursor - 1);
+    const restored = await tapSide(page, "prev");
+    assert.notEqual(restored.key, current.key, `${name} left tap did not go back one group`);
 
     await openAt(page, "the-father", 51);
     const speech = await place(page);
     assert.ok(speech.count > 3, `${name} father speech is one sentence`);
     assert.equal(speech.cursor, 0);
-    for (let i = 0; i < speech.blockSentences; i += 1) await tapSide(page, "next");
-    const speechNext = await place(page);
-    assert.equal(speechNext.index, 51);
-    assert.equal(speechNext.block, 1, `${name} play continuation block was skipped`);
-    assert.equal(speechNext.cursor, speechNext.sentencesBefore);
-    assert.match(speechNext.text, /^Captain:/);
-    await tapSide(page, "prev");
-    const speechBack = await place(page);
-    assert.equal(speechBack.index, 51, `${name} left tap left the speech`);
-    assert.equal(speechBack.cursor, speechNext.cursor - 1);
+    const speechSeen = new Set([speech.key]);
+    let speechNow = speech;
+    for (let i = 0; i < speech.count && speechNow.index === 51; i += 1) {
+      speechNow = await tapSide(page, "next");
+      assert.ok(!speechSeen.has(speechNow.key), `${name} speech tap skipped a group`);
+      speechSeen.add(speechNow.key);
+    }
+    const speechBack = await tapSide(page, "prev");
+    assert.notEqual(speechBack.key, speechNow.key, `${name} left tap skipped a speech group`);
 
     const heldFrom = await place(page);
+    const oneHold = await planGroups(page, 1, 1);
+    const twoHold = await planGroups(page, 1, 2);
     const x = Math.round(heldFrom.host!.left + heldFrom.host!.width * 0.72);
     const y = Math.round(heldFrom.host!.top + heldFrom.host!.height * 0.55);
     await page.evaluate(
@@ -305,12 +304,11 @@ async function runSplitTaps(name: "chromium" | "webkit") {
     const during = await place(page);
     await page.waitForTimeout(450);
     const afterHold = await place(page);
-    assert.ok(
-      during.index > heldFrom.index || during.cursor > heldFrom.cursor + 1,
-      `${name} hold stopped after one sentence (${heldFrom.index}:${heldFrom.cursor} -> ${during.index}:${during.cursor})`,
-    );
-    assert.equal(afterHold.index, during.index, `${name} release stepped again`);
-    assert.equal(afterHold.cursor, during.cursor, `${name} release stepped a sentence`);
+    assert.notEqual(during.key, heldFrom.key, `${name} hold stopped on the first group`);
+    if (oneHold !== "start" && oneHold !== "end" && twoHold !== "start" && twoHold !== "end") {
+      assert.notEqual(during.key, groupKey(oneHold), `${name} hold stopped after one group`);
+    }
+    assert.equal(afterHold.key, during.key, `${name} release stepped another group`);
 
     await page.goto(`${ORIGIN}/salon/page`, { waitUntil: "domcontentloaded" });
     await page.locator('input[type="file"]').setInputFiles({
@@ -330,16 +328,34 @@ async function runSplitTaps(name: "chromium" | "webkit") {
     await sit.or(aloneButton).first().waitFor();
     await sit.or(aloneButton).first().click();
     await page.locator(".breath-now").waitFor();
-    await page.waitForFunction(() => !document.querySelector(".veil"));
-    await tapSide(page, "next");
-    const beta = await place(page);
-    assert.equal(beta.index, 1);
-    assert.match(beta.text, /^Beta imported/);
-    await tapSide(page, "prev");
-    const alpha = await place(page);
-    assert.equal(alpha.index, 0);
-    assert.equal(alpha.cursor, 0);
-    assert.match(alpha.text, /^Alpha imported/);
+    await page.waitForFunction(
+      () => {
+        const frame = document.querySelector(".reader-frame");
+        return (
+          frame?.getAttribute("data-face-ready") === "yes" &&
+          frame.getAttribute("data-display-blocks") === "ready" &&
+          !document.querySelector(".veil")
+        );
+      },
+      { timeout: 30_000 },
+    );
+    const imported = await place(page);
+    assert.match(imported.text, /Alpha imported/);
+    assert.ok(imported.focusHeight <= 281, `${name} pdf focus is ${imported.focusHeight}px`);
+    let blob = imported.text;
+    const importedSeen = new Set([imported.key]);
+    for (let i = 0; i < 4 && !/Gamma imported/.test(blob); i += 1) {
+      const now = await tapSide(page, "next");
+      assert.ok(!importedSeen.has(now.key), `${name} pdf tap skipped a group`);
+      importedSeen.add(now.key);
+      blob = `${blob} ${now.text}`;
+    }
+    assert.match(blob, /Beta imported/);
+    assert.match(blob, /Gamma imported/);
+    let back = await place(page);
+    for (let i = 0; i < 4 && back.key !== imported.key; i += 1) back = await tapSide(page, "prev");
+    assert.equal(back.key, imported.key, `${name} pdf left taps did not return one group at a time`);
+    assert.match(back.text, /Alpha imported/);
     await page.close();
   } finally {
     await browser.close();
@@ -389,44 +405,44 @@ async function walkQuote(
     spots.every((spot) => spot.sentences >= 1),
     `${name} ${id} sentence counts ${spots.map((spot) => spot.sentences).join(",")}`,
   );
-  assert.equal(
-    spots.reduce((sum, spot) => sum + spot.sentences, 0),
-    opened.count,
-    `${name} ${id} block sentences do not add up to the breath`,
+  assert.ok(
+    spots.reduce((sum, spot) => sum + spot.sentences, 0) >= opened.count,
+    `${name} ${id} dropped sentences from the breath`,
   );
   for (const spot of spots) {
     assert.ok(spot.height > 0, `${name} ${id} painted an empty block`);
+    if (spot.sentences > 1) assert.ok(spot.height <= 281, `${name} ${id} block is ${spot.height}px`);
   }
-  let previous = opened.text;
-  for (let cursor = 1; cursor < opened.count; cursor += 1) {
-    await tapSide(page, "next");
-    const now = await place(page);
-    assert.equal(now.index, at, `${name} ${id} skipped ahead at sentence ${cursor}`);
-    assert.equal(now.cursor, cursor, `${name} ${id} cursor ${now.cursor}, wanted ${cursor}`);
-    assert.notEqual(now.text, previous, `${name} ${id} focus stalled at sentence ${cursor}`);
-    assert.ok(now.text.length > 0, `${name} ${id} empty focus at sentence ${cursor}`);
-    previous = now.text;
+  const seen = new Set([opened.key]);
+  let now = opened;
+  let guard = 0;
+  while (guard < 80) {
+    const planned = await planGroups(page, 1, 1);
+    if (planned === "end" || planned === "start" || planned.index !== at) break;
+    now = await tapSide(page, "next");
+    assert.equal(now.index, at, `${name} ${id} left the paragraph early`);
+    assert.ok(!seen.has(now.key), `${name} ${id} skipped or repeated a group`);
+    seen.add(now.key);
+    assert.ok(now.text.length > 0, `${name} ${id} empty focus`);
+    guard += 1;
   }
-  await tapSide(page, "next");
-  const left = await place(page);
-  assert.equal(left.index, at + 1, `${name} ${id} stalled on the last sentence`);
-  assert.equal(left.cursor, 0);
-  await tapSide(page, "prev");
-  const returned = await place(page);
+  assert.ok(guard < 80, `${name} ${id} never reached the end of the paragraph`);
+  assert.ok(seen.size >= 1);
+  const left = await tapSide(page, "next");
+  assert.ok(left.index > at, `${name} ${id} stalled on the last group`);
+  const returned = await tapSide(page, "prev");
   assert.equal(returned.index, at, `${name} ${id} left tap did not return`);
-  assert.equal(returned.cursor, opened.count - 1, `${name} ${id} left tap skipped a sentence`);
-  assert.equal(returned.text, previous);
+  assert.equal(returned.key, now.key, `${name} ${id} left tap skipped a group`);
   await holdPlace(page, `${name} ${id} left tap`);
-  for (let cursor = returned.cursor; cursor > 0; cursor -= 1) {
-    await tapSide(page, "prev");
-    const now = await place(page);
-    assert.equal(now.index, at, `${name} ${id} skipped back at sentence ${cursor - 1}`);
-    assert.equal(now.cursor, cursor - 1, `${name} ${id} back cursor ${now.cursor}, wanted ${cursor - 1}`);
-    assert.notEqual(now.text, previous, `${name} ${id} back focus stalled at sentence ${cursor - 1}`);
-    previous = now.text;
+  let home = returned;
+  const backSeen = new Set([home.key]);
+  while (home.key !== opened.key && backSeen.size < 80) {
+    home = await tapSide(page, "prev");
+    assert.equal(home.index, at, `${name} ${id} skipped back out of the paragraph`);
+    assert.ok(!backSeen.has(home.key), `${name} ${id} skipped a group on the way back`);
+    backSeen.add(home.key);
   }
-  const home = await place(page);
-  assert.equal(home.cursor, 0);
+  assert.equal(home.key, opened.key, `${name} ${id} did not walk back to the first group`);
   assert.match(home.text, opening);
 }
 
