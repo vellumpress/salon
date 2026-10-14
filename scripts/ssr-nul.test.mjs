@@ -177,6 +177,24 @@ test("a new shell is stored only after its entry assets exist", () => {
   assert.match(asset, /!res\.ok \|\| type\.indexOf\("text\/html"\)/);
 });
 
+test("an open book is not reloaded when the shell worker takes over", () => {
+  const sw = renderShellServiceWorker();
+  const skip = sw.slice(sw.indexOf("An open book keeps this document"));
+  assert.match(skip, /\/\\\/read\\\/\[\^\/\?#&\]\+\/\.test\(url\.pathname \+ url\.search\)/);
+  assert.ok(
+    skip.indexOf("return Promise.resolve()") < skip.indexOf("client.navigate"),
+    "a reader client returns before navigate",
+  );
+  const hints = renderShellNetworkHints();
+  assert.match(hints, /function readerOpen\(\)/);
+  assert.match(hints, /querySelector\("\.reader-frame"\)/);
+  const changeAt = hints.indexOf('addEventListener("controllerchange"');
+  const messageAt = hints.indexOf('addEventListener("message"');
+  assert.ok(changeAt > 0 && messageAt > changeAt);
+  assert.match(hints.slice(changeAt, messageAt), /if\(readerOpen\(\)\)return/);
+  assert.match(hints.slice(messageAt, hints.indexOf("serviceWorker.register")), /if\(readerOpen\(\)\)return/);
+});
+
 test("boot watch reloads once when the entry module never hydrates", () => {
   const script = renderBootWatchScript();
   assert.match(script, /data-boot-watch/);

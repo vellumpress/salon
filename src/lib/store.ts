@@ -49,11 +49,17 @@ import {
 import { canonicalWorkId, remapAliasedWorkIds } from "./work-id-alias.ts";
 import { noteUserMove, readUserMove, tapAllowsWrite, tapOwnsVisit } from "./place-guard.ts";
 import { REBOUND_FROM_COUNT, type PlaceStamp } from "./rebind-guard.ts";
+import { sentenceAtFor } from "./sentence-place.ts";
 
 export { dayKey };
 
 export type WorkProgress = {
   breathIndex: number;
+  /**
+   * Sentence inside `breathIndex`. A reload restores this. Missing on older
+   * saves, which open the first sentence of the saved breath.
+   */
+  sentenceAt?: number;
   /**
    * Breath id at `breathIndex`, and the bind it was saved against.
    * A later re-bind re-anchors from these instead of trusting the index.
@@ -211,12 +217,14 @@ type TbrState = {
   ensure: (workId: string) => WorkProgress;
   /** Record that the reader chose the current place. Does not move the breath. */
   stampUserMove: (workId: string, at?: number) => void;
-  setBreath: (workId: string, index: number, place?: PlaceStamp) => void;
+  setBreath: (workId: string, index: number, place?: BreathPlace) => void;
+  /** Sentence inside the current breath. A reload reads this back. */
+  setSentenceAt: (workId: string, index: number, cursor: number) => void;
   /** Forward advance: move to `index` and credit clamped active time. */
   advanceBreath: (
     workId: string,
     index: number,
-    opts?: { crossedScene?: boolean; place?: PlaceStamp },
+    opts?: { crossedScene?: boolean; place?: BreathPlace },
   ) => void;
   /** Drop the open-sentence anchor (hidden, overlay, leaving). No credit. */
   pauseActiveRead: (workId: string) => void;
@@ -236,6 +244,8 @@ type TbrState = {
   resetWork: (workId: string) => void;
   stale: (workId: string, index: number) => void;
 };
+
+type BreathPlace = PlaceStamp & { sentenceAt?: number };
 
 function stamped(index: number, place?: PlaceStamp): Pick<WorkProgress, "breathIndex" | "breathId" | "breathCount" | "bindHash"> {
   if (!place) return { breathIndex: index };
@@ -265,6 +275,8 @@ const REENTRY_MS = 8 * 60 * 1000;
 let persistTimer = 0;
 let persistIdle = 0;
 let persistPending: { name: string; value: string } | null = null;
+/** Empty boot state must not overwrite a saved sentence before hydration. */
+let persistWrites = false;
 
 function cancelScheduledPersist() {
   if (typeof window === "undefined") return;
@@ -332,6 +344,7 @@ const persistStorage = {
   },
   setItem: (name: string, value: string) => {
     if (typeof window === "undefined") return;
+    if (!persistWrites) return;
     persistPending = { name, value };
     schedulePersist();
   },
@@ -822,6 +835,7 @@ export const useTbr = create<TbrState>()(
               [workId]: {
                 ...writeClock(current, clock),
                 ...stamped(index, place),
+                sentenceAt: sentenceAtFor(current, index, place),
                 lastOpenedAt: now,
                 entered: true,
               },
@@ -829,6 +843,21 @@ export const useTbr = create<TbrState>()(
           };
         });
         flushIfMoved(workId);
+      },
+      setSentenceAt: (workId, index, cursor) => {
+        const at = Math.max(0, Math.floor(cursor));
+        set((state) => {
+          const current = state.progress[workId];
+          if (!current || current.breathIndex !== index) return {};
+          if ((current.sentenceAt ?? 0) === at) return {};
+          return {
+            progress: {
+              ...state.progress,
+              [workId]: { ...current, sentenceAt: at },
+            },
+          };
+        });
+        flushPersist();
       },
       advanceBreath: (workId, index, opts) => {
         if (!commitBreathWrite(workId, index, opts?.place?.breathId)) return;
@@ -845,6 +874,7 @@ export const useTbr = create<TbrState>()(
                 [workId]: {
                   ...writeClock(current, clock),
                   ...stamped(index, opts?.place),
+                  sentenceAt: sentenceAtFor(current, index, opts?.place),
                   lastOpenedAt: now,
                   entered: true,
                 },
@@ -859,7 +889,11 @@ export const useTbr = create<TbrState>()(
             ...credited,
             progress: {
               ...credited.progress,
-              [workId]: { ...row, ...stamped(index, opts?.place) },
+              [workId]: {
+                ...row,
+                ...stamped(index, opts?.place),
+                sentenceAt: sentenceAtFor(current, index, opts?.place),
+              },
             },
           };
         });
@@ -1089,6 +1123,14 @@ export const useTbr = create<TbrState>()(
 );
 
 export const useChamber = useTbr;
+
+if (typeof window !== "undefined") {
+  const armPersist = () => {
+    persistWrites = true;
+  };
+  if (useTbr.persist.hasHydrated()) armPersist();
+  else useTbr.persist.onFinishHydration(armPersist);
+}
 
 let keptBackfillStarted = false;
 

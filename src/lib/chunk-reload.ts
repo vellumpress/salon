@@ -5,6 +5,8 @@
  * sessionStorage window so a still-broken shell cannot loop.
  */
 
+import { shellMayReload } from "./reader-shell.ts";
+
 export const CHUNK_RELOAD_WINDOW_MS = 20_000;
 export const CHUNK_RELOAD_STORAGE_KEY = "tbr-chunk-reload";
 
@@ -137,6 +139,12 @@ export function freshReloadHref(href: string, now: number): string {
   return `${url.pathname}${url.search}${url.hash}`;
 }
 
+function readerIsOpen(): boolean {
+  if (typeof document === "undefined" || typeof location === "undefined") return false;
+  const frame = Boolean(document.querySelector(".reader-frame"));
+  return !shellMayReload(`${location.pathname}${location.search}`, frame);
+}
+
 function hardReload() {
   const now = Date.now();
   try {
@@ -164,6 +172,7 @@ async function runChunkReload() {
 export function recoverFromChunkLoad(now = Date.now()): boolean {
   if (typeof window === "undefined") return false;
   if (isOfflineNow()) return false;
+  if (readerIsOpen()) return false;
   if (startedThisDocument) return true;
   const storage = sessionStore();
   if (chunkReloadBlocked(storage, now)) return false;
