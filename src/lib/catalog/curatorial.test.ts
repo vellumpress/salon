@@ -9083,8 +9083,8 @@ test("Mira POST-#179 CLEAR is Next lead Cabbages and Kings, then Dorian Gray, Th
     "picture-of-dorian-gray": {
       gutenberg: 174,
       year: 1891,
-      breaths: 1491,
-      scenes: 20,
+      breaths: 1498,
+      scenes: 21,
       minutes: 4,
       opening: "The studio was filled with the rich odour of roses",
       stop: "not in the least like him",
@@ -9165,8 +9165,10 @@ test("Mira POST-#179 CLEAR is Next lead Cabbages and Kings, then Dorian Gray, Th
       }
     } else {
       assert.ok(full.breaths.length > opened.breaths.length, id);
+      // DORIAN-PREFACE: Wilde's Preface is a 7-breath front scene; the sit still opens on Chapter I.
+      const at = id === "picture-of-dorian-gray" ? 7 : 0;
       for (let i = 0; i < opened.breaths.length; i += 1) {
-        assert.equal(full.breaths[i]?.text, opened.breaths[i]?.text, `${id} prefix ${i}`);
+        assert.equal(full.breaths[at + i]?.text, opened.breaths[i]?.text, `${id} prefix ${i}`);
       }
     }
     const joined = opened.breaths.map((breath) => breath.text).join("\n");

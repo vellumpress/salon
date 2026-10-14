@@ -18,6 +18,8 @@ export const REBOUND_FROM_COUNT: Readonly<Record<string, number>> = {
   "helen-of-troy-and-other-poems": 1755,
   "the-man-against-the-sky": 2028,
   "the-man-from-snowy-river": 2816,
+  // DORIAN-PREFACE: the 1491-breath bind before Wilde's Preface was added as a front scene.
+  "picture-of-dorian-gray": 1491,
 };
 
 export type FromCountTable = Readonly<Record<string, number>>;

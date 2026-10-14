@@ -17,6 +17,7 @@ import {
   scaleBreathIndex,
   shouldLoadBindRemap,
 } from "./rebind-guard.ts";
+import { openingBreathIndex } from "./opening-scene.ts";
 
 /**
  * Nine sentences, three chapters. The reader is on the middle sentence of
@@ -129,6 +130,7 @@ test("a legacy unstamped index on a listed re-bind scales instead of trusting 10
     "helen-of-troy-and-other-poems": 1755,
     "the-man-against-the-sky": 2028,
     "the-man-from-snowy-river": 2816,
+    "picture-of-dorian-gray": 1491,
   });
   const oldCount = 6154;
   const count = 2280;
@@ -231,6 +233,7 @@ test("Falcon's sentence bind re-anchors through the remap and no unlisted book m
     "helen-of-troy-and-other-poems": 1755,
     "the-man-against-the-sky": 2028,
     "the-man-from-snowy-river": 2816,
+    "picture-of-dorian-gray": 1491,
   });
   assert.equal((FEATURED_CAROUSEL_IDS as readonly string[]).includes("falcon"), false);
 
@@ -356,4 +359,50 @@ test("POETRY-REBIND: legacy line-bind places land on the same poem's stanza", ()
     );
     assert.equal(stamped.moved, false, id);
   }
+});
+
+test("DORIAN-PREFACE: Wilde's Preface is a front scene; the first sit and saved ids stay on Chapter I", () => {
+  const full = JSON.parse(readFileSync(new URL("./catalog/texts/picture-of-dorian-gray.json", import.meta.url), "utf8")) as {
+    minutes: number;
+    scenes: { id: string; title: string; front?: boolean }[];
+    breaths: { id: string; sceneId: string; text: string }[];
+  };
+  const opening = JSON.parse(readFileSync(new URL("./catalog/openings/picture-of-dorian-gray.json", import.meta.url), "utf8")) as {
+    breaths: { id: string; text: string }[];
+  };
+  const work = SHELF.find((item) => item.id === "picture-of-dorian-gray");
+  assert.equal(REBOUND_FROM_COUNT["picture-of-dorian-gray"], 1491);
+  assert.equal(full.breaths.length, 1498);
+  assert.equal(work?.breaths, 1498);
+  assert.equal(full.scenes.length, 21);
+  assert.deepEqual(full.scenes[0], {
+    id: "s0-front",
+    title: "Preface",
+    place: "Preface",
+    reentry: full.breaths[0]!.text.slice(0, 200),
+    prompt: "A word from this stretch.",
+    front: true,
+  });
+  assert.equal(full.scenes[1]?.id, "s0");
+  assert.equal(full.scenes[1]?.title, "Chapter I");
+  // Seven printed paragraphs (PG 174), from "The artist is the creator" to "All art is quite useless."
+  const preface = full.breaths.filter((breath) => breath.sceneId === "s0-front");
+  assert.deepEqual(preface.map((breath) => breath.id), [0, 1, 2, 3, 4, 5, 6].map((n) => `s0-front-${n}`));
+  assert.ok(preface[0]!.text.startsWith("The artist is the creator of beautiful things. To reveal art and conceal the artist is art's aim."));
+  assert.equal(preface.at(-1)!.text, "All art is quite useless.");
+  assert.doesNotMatch(preface.map((breath) => breath.text).join("\n"), /OSCAR WILDE|PREFACE|\[|\d/);
+  // Chapter I is untouched and still opens a fresh sit, same ids and length as the host opening.
+  const start = openingBreathIndex(full as never);
+  assert.equal(start, 7);
+  assert.equal(full.breaths[start]?.id, "s0-0");
+  assert.ok(full.breaths[start]!.text.startsWith("The studio was filled with the rich odour of roses"));
+  assert.equal(opening.breaths[0]?.text, full.breaths[start]!.text);
+  assert.equal(opening.breaths.length, 11);
+  // A stamped place keeps its paragraph by id; an unstamped one is no longer trusted blindly.
+  const stamped = reanchorProgress({ breathIndex: 500, breathId: "s5-10", breathCount: 1491 }, full.breaths, undefined, "picture-of-dorian-gray");
+  assert.equal(full.breaths[stamped.index]?.id, "s5-10");
+  assert.equal(stamped.breathCount, 1498);
+  assert.equal(shouldLoadBindRemap({ breathIndex: 500 }, full.breaths, "picture-of-dorian-gray"), true);
+  const again = reanchorProgress({ breathIndex: stamped.index, breathId: stamped.breathId, breathCount: stamped.breathCount, bindHash: stamped.bindHash }, full.breaths, undefined, "picture-of-dorian-gray");
+  assert.equal(again.moved, false);
 });
