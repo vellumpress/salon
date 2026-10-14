@@ -1225,6 +1225,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Wed 14 Oct 2026 MID ARNE — Arne (Bjørnson, tr. Plesner and Rugeley-Powers, 1866) follows Anne of Green Gables, Next carefully only (the heads-up is on the card). Never Featured.
   // Off every Ritual lane; the opening sit (Chapter I, How the cliff was clad, whole) is never unwind or before-sleep.
   "arne",
+  // Mira Wed 14 Oct 2026 PM GARMAN — Garman and Worse (Kielland, tr. Kettlewell, 1885) follows Arne, plain Next, no heads-up. Never Featured, off every Ritual lane.
+  "garman-and-worse",
 ] as const;
 
 /**
