@@ -30,6 +30,7 @@ export const smokeFiles = [
   "src/lib/reader-sentence-tap.test.ts",
   "src/lib/reader-left-hold.test.ts",
   "src/lib/reader-tap-guard.test.ts",
+  "src/lib/catalog/merge-stop-layout.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -40,10 +41,13 @@ export const allTsFiles = [
   "src/lib/reader-threshold.test.ts",
   "src/lib/deep-link-breath.test.ts",
   "src/lib/display-blocks.test.ts",
+  "src/lib/spotlight.test.ts",
   "src/lib/display-blocks.e2e.test.ts",
   "src/lib/reader-sit-resume.test.ts",
   "src/lib/catalog/rituals-duration.test.ts",
   "src/lib/catalog/ritual-sit.test.ts",
+  "src/lib/catalog/merge-stop-index.test.ts",
+  "src/lib/catalog/merge-stop-layout.test.ts",
   "src/lib/catalog/year-agreement.test.ts",
   "src/lib/catalog/rituals-lead.test.ts",
   "src/lib/catalog/serialize.test.ts",

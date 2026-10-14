@@ -297,10 +297,31 @@ function windowAtom(
 }
 
 /**
- * Groups for one scene, in reading order.
+ * A stop is a breath a passage may include and must not continue past.
+ * Sit ends and ritual ends are stops. Sentences inside the stop still merge.
+ */
+function crossesStop(fromIndex: number, toIndex: number, stops: ReadonlySet<number> | undefined) {
+  if (!stops || stops.size === 0 || toIndex <= fromIndex) return false;
+  for (const stop of stops) {
+    if (fromIndex <= stop && toIndex > stop) return true;
+  }
+  return false;
+}
+
+/** A cut is a character end inside one breath. The next sentence stays out. */
+function crossesCut(from: Atom, to: Atom, cuts: ReadonlyMap<number, number> | undefined) {
+  if (!cuts || from.index !== to.index) return false;
+  const cut = cuts.get(from.index);
+  if (cut === undefined) return false;
+  return from.start < cut && to.start >= cut;
+}
+
+/**
+ * Groups for one stretch of breaths, in reading order.
  * Short sentences merge until the passage is about two or three lines.
  * A sentence taller than that is stepped through in word windows.
- * The caller does not pass breaths from two scenes.
+ * `stops` refuse the breath after a sit or a ritual, including the short-fragment exception.
+ * `cuts` refuse the sentence after a sit that ends inside a longer breath.
  */
 export function spotlightGroups(
   breaths: readonly SpotlightBreath[],
@@ -308,6 +329,8 @@ export function spotlightGroups(
   limitPx: number,
   linePx: number,
   kind: DisplayKind = "prose",
+  stops?: ReadonlySet<number>,
+  cuts?: ReadonlyMap<number, number>,
 ): SpotlightGroup[] {
   const heights = new Map<string, number>();
   const raw = measure;
@@ -353,6 +376,8 @@ export function spotlightGroups(
     let j = i + 1;
     while (j < atoms.length) {
       const next = atoms[j]!;
+      if (crossesStop(atom.index, next.index, stops)) break;
+      if (crossesCut(atom, next, cuts)) break;
       const nextText = texts.get(next.index) ?? "";
       const nextLines = atomLines(next, nextText, measure, linePx);
       if (!fits(nextLines, cap, linePx) && wordPieces(next.text).length > 1) break;
@@ -373,6 +398,38 @@ export function spotlightGroups(
     i = j;
   }
   return groups;
+}
+
+/**
+ * The passage that finishes `stop` must end on `stopLength` (the breath's
+ * last character, or a cut inside that breath) and must not continue past it.
+ * A miss is a short reason.
+ */
+export function passageEndsAtStop(
+  groups: readonly SpotlightGroup[],
+  stop: number,
+  stopLength: number,
+): string | null {
+  for (const group of groups) {
+    let before = false;
+    let past = false;
+    for (const part of group.parts) {
+      if (part.index < stop || (part.index === stop && part.start < stopLength)) before = true;
+      if (part.index > stop || (part.index === stop && part.end > stopLength)) past = true;
+    }
+    if (before && past) {
+      return `a lit passage runs from breath ${group.index} through breath ${group.endIndex}`;
+    }
+  }
+  const finishers = groups.filter((group) =>
+    group.parts.some((part) => part.index === stop && part.end === stopLength),
+  );
+  if (finishers.length === 0) return "no lit passage ends on the stop's last character";
+  const finisher = finishers[finishers.length - 1]!;
+  if (finisher.parts.some((part) => part.index > stop || (part.index === stop && part.end > stopLength))) {
+    return "the last lit passage continues past the stop";
+  }
+  return null;
 }
 
 /** The group a saved sentence belongs to. A window matches exactly, otherwise the first. */
