@@ -1015,7 +1015,7 @@ const BLURBS: Record<string, string> = {
     "Four children on the grass: a fairy-tale princess, and a silk dress already dirty at the hem.",
   "for-the-term-of-his-natural-life":
     "In the breathless stillness of a tropical afternoon the shadow of the Malabar lies on the glittering sea.",
-  "the-man-from-snowy-river": "Paterson’s bush ballads: a ride, a horse, a legend already moving.",
+  "the-man-from-snowy-river": "The colt from old Regret has got away to the wild bush horses, and every rider in the district gathers at the homestead to bring him in.",
   "hajji-baba":
     "Kerbelai Hassan, barber of Ispahan, and a razor that starts the road. Period language stays.",
   "best-russian-short-stories": "Best Russian Short Stories (1917), edited by Thomas Seltzer.",
@@ -1525,6 +1525,26 @@ const BLURBS: Record<string, string> = {
   "the-days-work": "After three years of labour, the engineer Findlayson sits by his great bridge over the Ganges and waits for the flood.",
   "ghetto-tragedies": "After a year of fasting every Monday and Thursday, Zillah gives birth to the son she has prayed for, and her husband Jossel is amazed.",
   "aurora-leigh": "Aurora Leigh sets out to write her story for her better self, from a motherless childhood in Florence to her aunt’s cold house in England.",
+  "a-crystal-age": "A botanist falls into a ravine, comes to under a heap of roots that seem to have grown round him, and climbs out into a country he does not know.",
+  "a-warning-to-the-curious-and-other-ghost-stories": "Mr Davidson, alone in a country town in the first week of January, sets off by train to walk a winter valley; M. R. James’s quiet scholars keep stepping where they should not.",
+  "amores": "Lawrence hands a lover all his keys, then stands naked on a bank above an old sheep-dip, watching his white shadow quiver in the water.",
+  "birds-beasts-and-flowers": "“You tell me I am wrong”: Lawrence opens with pomegranates in Syracuse, Venice and Tuscany, and argues for the fissure in the fruit.",
+  "heliodora-and-other-poems": "H. D. begins with a wash of cold river in a glacial land and a crown of honey-flowers for a holy Satyr, in lines as clear and cold as marble.",
+  "mrs-craddock": "On a cheerless November afternoon Bertha keeps walking down to the gate, while her aunt reads the autumn lists and asks what she finds there.",
+  "new-poems": "A woman washes a dead man with weeping and asks how his mouth, once the first to soften, can lie so hard; Lawrence’s poems of grief and love.",
+  "options": "Old Jerome Warren has a rich house, an adopted painter son and a step-niece, and then a letter from a long-lost brother out West changes the arithmetic.",
+  "prufrock-and-other-observations": "Smoke and fog on a December afternoon, four wax candles, and a lady who has saved the afternoon for you: Eliot’s first book of poems.",
+  "rio-grande-s-last-race-and-other-verses": "A jockey dreams the night before a race that dead men on dead horses ride beside him to give Rio Grande a lead; Paterson’s ballads of the track and the bush.",
+  "rolling-stones": "Murray waits in the cell of the condemned with an ant on his table and eight o’clock coming; O. Henry’s last stories and sketches.",
+  "strictly-business-more-stories-of-the-four-million": "O. Henry starts by puncturing everything you think you know about stage people, and goes on to the shop clerks and stray hearts of New York.",
+  "the-man-who-knew-too-much": "Prince Michael O’Neill, who appears when not wanted and vanishes when the police want him, leaps a farm wall in the sun; Chesterton’s tales of a man who knows too much to act.",
+  "the-trembling-of-a-leaf-little-stories-of-the-south-sea-islands": "The Pacific is inconstant like the soul of man; Maugham sails into its silence and finds the people stranded on its islands.",
+  "the-trespasser": "In a mean house in South London, Helena plays Mozart with her violin muted and says only that she has lately submitted to many things.",
+  "the-trimmed-lamp-and-other-stories-of-the-four-m": "Lou irons in a hand laundry and Nancy sells in a shop; O. Henry introduces two country chums making their way in the big city.",
+  "the-waste-land": "April is the cruellest month: Eliot’s poem moves from lilacs and a sled ride in the mountains to a heap of broken images and fear in a handful of dust.",
+  "the-wife-of-his-youth-and-other-stories-of-the-c": "Mr. Ryder, dean of the Blue Veins, is going to give a ball; Chesnutt’s stories of the color line in a Northern city after the war.",
+  "the-wind-in-the-rose-bush-and-other-stories-of-t": "Rebecca Flint crosses the river by ferry to Ford Village with her bag and lunch basket, holding her rolled shawl on her hip like a child.",
+  "tortoises": "A baby tortoise heaves itself from the shell and takes its first solitary bite; Lawrence’s little Ulysses, no bigger than a thumb-nail.",
 };
 
 /**
