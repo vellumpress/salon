@@ -15,7 +15,7 @@ export const WORK_ID_ALIASES: Readonly<Record<string, string>> = {
   "the-colonels-dream": "colonels-dream",
   // The 160-minute partial bind. The 419-minute book is the novel.
   "the-colonel-s-dream": "colonels-dream",
-  // Shelf dupes. The keeper is the fuller copy. dorian.json stays for the preface pack.
+  // Shelf dupes. The keeper is the fuller copy. dorian stays an alias after its text file is removed.
   crime: "crime-and-punishment",
   niels: "niels-lyhne",
   "african-farm": "the-story-of-an-african-farm",

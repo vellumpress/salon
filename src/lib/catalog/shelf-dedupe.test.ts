@@ -93,7 +93,8 @@ test("shelf dupes leave the shelf and follow the keeper", () => {
       }
     }
   }
-  assert.equal(existsSync(new URL("./texts/dorian.json", import.meta.url)), true);
+  // The preface now lives on the keeper. The retired slug stays an alias only.
+  assert.equal(existsSync(new URL("./texts/dorian.json", import.meta.url)), false);
 });
 
 test("moved sits end on a scene break, and the Mogens and Pan cuts stay unseated", () => {
