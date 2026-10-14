@@ -212,6 +212,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "friendship-village": { label: "Wisconsin", region: "us" },
   "anne-of-green-gables": { label: "Avonlea, Prince Edward Island", region: "ca" },
   arne: { label: "Rural Norway", region: "no" },
+  "garman-and-worse": { label: "Norway", region: "no" },
   "tales-by-polish-authors": { label: "Poland", region: "pl" },
   "the-dancing-master": { label: "Paris", region: "fr" },
   "the-golden-age": { label: "England", region: "gb" },
