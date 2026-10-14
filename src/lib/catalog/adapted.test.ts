@@ -396,7 +396,8 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   // DEEPHAVEN adds one (1167).
   // LANE-FIX drops the short Trooper slug; the full novel stays (1166).
   // PRECIOUS-BANE adds one (1167).
-  assert.equal(LOCAL_WORKS.length, 1167);
+  // FRIENDSHIP-VILLAGE adds one (1168).
+  assert.equal(LOCAL_WORKS.length, 1168);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 

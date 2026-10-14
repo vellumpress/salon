@@ -1,0 +1,136 @@
+{
+  "id": "friendship-village",
+  "title": "Friendship Village",
+  "author": "Zona Gale",
+  "year": "1908",
+  "note": "Opening sit: Chapter I, The side door, whole, ending \"There are vines, with tendrils and flowers and many birds.\"",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Chapter I · The side door",
+      "place": "Chapter I · The side door",
+      "reentry": "It is as if Friendship Village were to say:—",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "It is as if Friendship Village were to say:—"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "\"There is no help for it. A telephone line, antique oak chairs, kitchen cabinets, a new doctor, and the like are upon us. But we shall be mediaeval directly—we and our improvements. Really, we are so now, if you know how to look.\""
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "And are we not so? We are one long street, rambling from sun to sun, inheriting traits of the parent country roads which we unite. And we are cross streets, members of the same family, properly imitative, proving our ancestorship in a primeval genius for trees, or bursting out in inexplicable weaknesses of Court-House, Engine-House, Town Hall, and Telephone Office. Ultimately our stock dwindles out in a slaughter-yard and a few detached houses of milkmen. The cemetery is delicately put behind us, under a hill. There is nothing mediaeval in all this, one would say. But then see how we wear our rue:—"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "When one of us telephones, she will scrupulously ask for the number, not the name, for it says so at the top of every page. \"Give me one-one,\" she will put it, with an impersonality as fine as if she were calling for four figures. And Central will answer:—"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "\"Well, I just saw Mis' Holcomb go 'crost the street. I'll call you, if you want, when she comes back.\""
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "Or, \"I don't think you better ring the Helmans' just now. They were awake 'most all night with one o' Mis' Helman's attacks.\""
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Or, \"Doctor June's invited to Mis' Sykes's for tea. Shall I give him to you there?\""
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "The telephone is modern enough. But in our use of it is there not a flavour as of an Elder Time, to be caught by Them of Many Years from Now? And already we may catch this flavour, as our Britain great-great-lady grandmothers, and more, may have been conscious of the old fashion of sitting in bowers. If only they were conscious like that! To be sure of it would be to touch their hands in the margins of the ballad books."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Or we telephone to the Livery Barn and Boarding Stable for the little blacks, celebrated for their self-control in encounters with the Proudfits' motor-car. The stable-boy answers that the little blacks are at \"the funeral.\" And after he has gone off to ask his employer what is in then, the employer, who in his unofficial moments is our neighbour, our church choir bass, our landlord even, comes and tells us that, after all, we may have the little blacks, and he himself brings them round at once,—the same little blacks that we meant all along. And when, quite naturally, we wonder at the boy's version, we learn: \"Oh, why, the blacks was standin' just acrost the street, waitin' at the church door, hitched to the hearse. I took 'em out an' put in the bays. I says to myself: 'The corp won't care.'\" Someway the Proudfits' car and the stable telephone must themselves have slipped from modernity to old fashion before that incident shall quite come into its own."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "So it is with certain of our domestic ways. For example, Mis' Postmaster Sykes—in Friendship Village every woman assumes for given name the employment of her husband—has some fine modern china and much solid silver in extremely good taste, so much, indeed, that she is wont to confess to having cleaned forty, or sixty, or seventy-five pieces—\"seventy-five pieces of solid silver have I cleaned this morning. You can say what you want to, nice things are a *rill* care.\" Yet—surely this is the proper conjunction—Mis' Sykes is currently reported to rise in the night preceding the days of her house cleaning, and to take her carpets out in the back yard, and there softly to sweep and sweep them so that, at their official cleaning next day, the neighbours may witness how little dirt is whipped out on the line. Ought she not to have old-fashioned silver and egg-shell china and drop-leaf mahogany to fit the practice? Instead of daisy and wild-rose patterns in \"solid,\" and art curtains, and mission chairs, and a white-enamelled refrigerator, and a gas range."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "We have the latest funeral equipment,—black broadcloth-covered supports, a coffin carriage for up-and-down the aisles, natural palms to order, and the pulleys to \"let them down slow\"; and yet our individual funeral capacity has been such that we can tell what every woman who has died in Friendship for years has \"done without\": Mis' Grocer Stew, her of all folks, had done without new-style flat-irons; Mis' Worth had used the bread pan to wash dishes in; Mis' Jeweller Sprague—the *first* Mis' Sprague—had had only six bread and butter knives, her that could get wholesale too.... And we have little maid-servants who answer our bells in caps and trays, so to say; but this savour of jestership is authentic, for any one of them is likely to do as of late did Mis' Holcomb-that-was-Mame-Bliss's maid,—answer, at dinner-with-guests, that there were no more mashed potatoes, \"*or else*, there won't be any left to warm up for your breakfasts.\" ... And though we have our daily newspaper, receiving Associated Press service, yet, as Mis' Amanda Toplady observed, it is \"only *very* lately that they have mentioned in the *Daily* the birth of a child, or anything that had anything of a *tang* to it.\""
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "We put new wine in old bottles, but also we use new bottles to hold our old wine. For, consider the name of our main street: is this Main or Clark or Cook or Grand Street, according to the register of the main streets of towns? Instead, for its half-mile of village life, the Plank Road, macadamized and arc-lighted, is called Daphne Street. Daphne Street! I love to wonder why. Did our dear Doctor June's father name it when he set the five hundred elms and oaks which glorify us? Or did Daphne herself take this way on the day of her flight, so that when they came to draught the town, they recognized that it *was* Daphne Street, and so were spared the trouble of naming it? Or did the Future anonymously toss us back the suggestion, thrifty of some day of her own when she might remember us and say, \"*Daphne Street!*\" Already some of us smile with a secret nod at something when we direct a stranger, \"You will find the Telegraph and Cable Office two blocks down, on Daphne Street.\" \"The Commercial Travellers' House, the Abigail Arnold Home Bakery, the Post-office and Armoury are in the same block on Daphne Street.\" Or, \"The Electric Light Office is at the corner of Dunn and Daphne.\" It is not wonderful that Daphne herself, foreseeing these things, did not stay, but lifted her laurels somewhat nearer Tempe,—although there are those of us who like to fancy that she is here all the time in our Daphne-street magic: the fire bell, the tulip beds, and the twilight bonfires. For how else, in all reason, has the name persisted?"
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Of late a new doctor has appeared—one may say, has abounded: a surgeon who, such is his zeal, will almost perform an operation over the telephone and, we have come somewhat cynically to believe, would prefer doing so to not operating at all. As Calliope Marsh puts it:—"
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "\"He is great on operations, that little doctor. Let him go into any house, an' some o' the family, seems though, has to be operated on, usually inside o' twelve hours. It'll get so that as soon as he strikes the front porch, they'll commence sterilizin' water. I donno but some'll go an' put on the tea-kettle if they even see him drive past.\""
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "*Why* within twelve hours, we wonder when we hear the edict? Why never fourteen hours, or six? How does it happen that no matter at what stage of the malady the new doctor is called, the patient always has to be operated on within twelve hours? Is it that everybody has a bunch and goes about not knowing it until he appears? Or is he a kind of basanite for bunches, and do they come out on us at the sight of him? There are those of us who almost hesitate to take his hand, fearing that he will fix us with his eye, point somewhere about, and tell us, \"Within twelve hours, *if* you want your life your own.\" But in spite of his skill and his modernity, in our midst there persist those who, in a scientific night, would die rather than risk our advantages."
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "Thus the New shoulders the Old, and our transition is still swift enough to be a spectacle, as was its earlier phase which gave over our Middle West to cabins and plough horses, with a tendency away from wigwams and bob-whites. And in this local warfare between Old and New a chief figure is Calliope Marsh—who just said that about the new doctor. She is a little rosy wrinkled creature officially—though no other than officially—pertaining to sixty years; mender of lace, seller of extracts, and music teacher, but of the three she thinks of the last as her true vocation. (\"I come honestly by that,\" she says. \"You know my father before me was rill musical. I was babtized Calliope because a circus with one come through the town the day't I was born.\") And with her, too, the grafting of to-morrow upon yesterday is unconscious; or only momentarily conscious, as when she phrased it:—"
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "\"Land, land, I like New as well as anybody. But I want it should be put in the Old kind o' gentle, like an *i*-dee in your mind, an' not sudden, like a bullet in your brain.\""
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "In her acceptance of innovations Calliope symbolizes the fine Friendship tendency to scientific procedure, to the penetration of the unknown through the known, the explication of mystery by natural law. And when to the bright-figured paper and pictures of her little sitting room she had added a print of the Mona Lisa, she observed:—"
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "\"She sort o' lifts me up, like somethin' I've thought of, myself. But I don't see any sense in raisin' a question about what her smile means. I told the agent so. 'Whenever I set for my photograph,' I says to him, 'I always have that same silly smile on my face.'\""
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "With us all the Friendship idea prevails: we accept what Progress sends, but we regard it in our own fashion. Our improvements, like our entertainments, our funerals, our holidays, and our very loves, are but Friendship Village exponents of the modern spirit. Perhaps, in a tenderer significance than she meant, Calliope characterized us when she said:—"
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "\"This town is more like a back door than a front—or, givin' it full credit, *anyhow*, it's no more'n a side door, with no vines.\""
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "For indeed, we are a kind of middle door to experience, minus the fuss of official arriving and, too, without the old odours of the kitchen savoury beds; but having, instead, a serene side-door existence, partaking of both electric bells and of neighbours with shawls pinned over their heads."
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "Only at one point Calliope was wrong. There are vines, with tendrils and flowers and many birds."
+    }
+  ]
+}

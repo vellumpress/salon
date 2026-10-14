@@ -1225,6 +1225,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Tue 13 Oct 2026 MID PRECIOUS-BANE — Precious Bane follows Deephaven, Next carefully only (the heads-up is on the card). Never Featured.
   // Off every Ritual lane; the opening sit (Book One, Chapter I, Sarn Mere, whole) is never unwind or before-sleep.
   "precious-bane",
+  // Mira Tue 13 Oct 2026 PM FRIENDSHIP-VILLAGE — Friendship Village (Gale, 1908) follows Precious Bane, plain Next, no heads-up. Never Featured, off every Ritual lane.
+  "friendship-village",
 ] as const;
 
 /**
