@@ -370,6 +370,19 @@ function openReader() {
   return { client, navigated };
 }
 
+function openHome() {
+  const navigated = [];
+  const client = {
+    id: "home",
+    url: `${ORIGIN}/salon/`,
+    navigate(href) {
+      navigated.push(href);
+      return Promise.resolve();
+    },
+  };
+  return { client, navigated };
+}
+
 async function runActivate(worker) {
   let pending = Promise.resolve();
   worker.listeners.activate({
@@ -424,19 +437,20 @@ test("a shell commit of the same build does not reload an open reader", async ()
   assert.deepEqual(navigated, []);
 });
 
-test("an older cached shell reloads open phones even when the network shell misses", async () => {
-  const { client, navigated } = openReader();
+test("an older cached shell leaves an open book and reloads the home page", async () => {
+  const reader = openReader();
+  const home = openHome();
   const worker = loadWorker({
     onLine: true,
     fetchImpl: () => Promise.reject(new TypeError("Failed to fetch")),
-    clients: [client],
+    clients: [reader.client, home.client],
     manifest: { boot: ["/salon/assets/index-newBuild.js"], precache: ["/salon/assets/index-newBuild.js"] },
   });
   await putShell(worker.caches, SHELL_CACHE_NAME, shellHtml("/salon/assets/index-roOwEHpA.js"));
   await runActivate(worker);
-  assert.equal(navigated.length, 1);
-  assert.match(navigated[0], /__fresh=/);
-  assert.match(navigated[0], /sit=5/);
+  assert.deepEqual(reader.navigated, []);
+  assert.equal(home.navigated.length, 1);
+  assert.match(home.navigated[0], /__fresh=/);
 });
 
 test("a phone that is offline keeps the shell it already has", async () => {
@@ -462,11 +476,12 @@ test("a phone that is offline keeps the shell it already has", async () => {
   assert.match(await stored.text(), /index-roOwEHpA/);
 });
 
-test("an old Moby-Dick cache is deleted on activate and an online phone reloads", async () => {
-  const { client, navigated } = openReader();
+test("an old Moby-Dick cache is deleted on activate and the home page reloads", async () => {
+  const reader = openReader();
+  const home = openHome();
   const worker = loadWorker({
     onLine: true,
-    clients: [client],
+    clients: [reader.client, home.client],
   });
   await putShell(worker.caches, "tbr-shell-v3", shellHtml("/salon/assets/moby-dick-DoX0Aou2.js"));
   await putShell(worker.caches, "tbr-shell-v2", shellHtml("/salon/assets/index-older.js"));
@@ -477,26 +492,34 @@ test("an old Moby-Dick cache is deleted on activate and an online phone reloads"
   assert.equal(await worker.caches.has("tbr-shell-v2"), false);
   assert.equal(await worker.caches.has("tbr-assets"), false);
   assert.equal(await worker.caches.has(SHELL_ASSET_CACHE_NAME), true);
-  assert.equal(navigated.length, 1);
-  assert.match(navigated[0], /__fresh=/);
-  assert.match(navigated[0], /sit=5/);
-  assert.match(navigated[0], /the-house-of-mirth/);
+  assert.deepEqual(reader.navigated, []);
+  assert.equal(home.navigated.length, 1);
+  assert.match(home.navigated[0], /__fresh=/);
 });
 
-test("a new build reloads an open reader through __fresh and keeps the sit query", async () => {
-  const { client, navigated } = openReader();
+test("a new build leaves an open reader in place and reloads the home page", async () => {
+  const reader = openReader();
+  const pages = {
+    id: "pages-reader",
+    url: `${ORIGIN}/salon/?/read/salome&sit=5`,
+    navigate(href) {
+      reader.navigated.push(href);
+      return Promise.resolve();
+    },
+  };
+  const home = openHome();
   const worker = loadWorker({
     onLine: true,
     fetchImpl: shellFetch(shellHtml("/salon/assets/index-newBuild.js")),
-    clients: [client],
+    clients: [reader.client, pages, home.client],
   });
   await putShell(worker.caches, SHELL_CACHE_NAME, shellHtml("/salon/assets/index-roOwEHpA.js"));
   await runActivate(worker);
   await worker.api.fillCatalog();
-  assert.equal(navigated.length, 1);
-  assert.match(navigated[0], /\/salon\/read\/the-house-of-mirth/);
-  assert.match(navigated[0], /sit=5/);
-  assert.match(navigated[0], /__fresh=/);
+  assert.deepEqual(reader.navigated, []);
+  assert.equal(home.navigated.length, 1);
+  assert.match(home.navigated[0], /__fresh=/);
+  assert.doesNotMatch(home.navigated[0], /\/read\//);
 });
 
 test("__fresh navigation is not held behind precache", async () => {
