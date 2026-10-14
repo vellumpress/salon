@@ -436,8 +436,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Two gentlemen were seated, one March morning in 189--, in the private office of French and Company, Limited, on lower Broadway. Chapter One — Broadway, French and Company, and an electric clock, then Clarendon in the South. Charles W. Chesnutt’s 1905 novel.`,
   "hard-times":
     `'NOW, what I want is, Facts. Teach these boys and girls nothing but Facts. Facts alone are wanted in life. Book the First, Chapter I, The One Thing Needful — a Facts school-room and Gradgrind. Charles Dickens’s 1854 novel.`,
-  "the-great-god-pan":
-    `"I am glad you came, Clarke; very glad indeed. I was not sure you could spare the time." This reading is Chapter I of The Great God Pan — Clarke and the Experiment. This reading ends with the chapter. Arthur Machen’s 1894 novella.`,
   "manalive":
     `A wind sprang high in the west, like a wave of unreasonable happiness, and tore eastward across England, trailing with it the frosty scent of forests and the cold intoxication of the sea. Part I, Chapter I — a great wind, unreasonable happiness, and Beacon House. G. K. Chesterton’s 1912 novel.`,
   "captain-blood":
@@ -1802,8 +1800,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "father-of-yoto",
       // Mira Mon 28 Sep 2026 POST-#187 CLEAR — The Bottle Imp only.
       "bottle-imp",
-      // SHELF-DEDUPE — Chapter I of the novella, and it ends with that chapter.
-      "the-great-god-pan",
+      // SHELF-DEDUPE — the Great God Pan sit stays unseated. The chapter cut is not on the keeper yet.
       // Mira Mon 28 Sep 2026 POST-#189 CLEAR — The Time Machine only.
       "the-time-machine",
       // Mira Mon 28 Sep 2026 POST-#190 CLEAR — The Invisible Man only.
@@ -2634,7 +2631,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "elmer-gantry": 5,
   "colonels-dream": 5,
   "hard-times": 5,
-  "the-great-god-pan": 15,
   manalive: 5,
   "captain-blood": 5,
   "the-monomaniac": 5,

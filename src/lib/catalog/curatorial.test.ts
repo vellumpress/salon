@@ -4211,7 +4211,7 @@ test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Feature
     "the-song-of-the-blood-red-flower",
   ]);
   assert.equal(bite?.workIds.at(-3), "irish-fairy-tales");
-  assert.equal(waking?.workIds.at(-43), "irish-fairy-tales");
+  assert.equal(waking?.workIds.at(-42), "irish-fairy-tales");
   assert.ok((waking?.workIds.indexOf("the-peasants") ?? -1) >= 0);
   assert.equal(waking?.workIds.includes("a-hungarian-nabob"), false);
   for (const id of [
@@ -4348,7 +4348,7 @@ test("Mira Thu eve 24 Sep CLEAR sits on Next, Rituals, and For you, never a new 
   assert.deepEqual(unwind?.workIds.slice(-196, -194), ["basilio", "oblomov"]);
   assert.deepEqual(walk?.workIds.slice(-154, -152), ["basilio", "oblomov"]);
   assert.equal(bite?.workIds.at(-2), "the-lady-with-the-dog-and-other-stories");
-  assert.deepEqual(waking?.workIds.slice(-42, -39), [
+  assert.deepEqual(waking?.workIds.slice(-41, -38), [
     "the-lady-with-the-dog-and-other-stories",
     "zeno",
     "the-book-of-khalid",
@@ -4534,7 +4534,7 @@ test("Mira Emmeline FULL EN sits on Next, Rituals, and For you, never Featured",
   assert.equal(unwind?.workIds.at(-192), "the-wanderer");
   assert.equal(walk?.workIds.at(-150), "the-wanderer");
   assert.equal(bite?.workIds.at(-1), "lady-macbeth");
-  assert.deepEqual(waking?.workIds.slice(-39, -34), [
+  assert.deepEqual(waking?.workIds.slice(-38, -33), [
     "lady-macbeth",
     "summer",
     "jacob-s-room",
@@ -4710,7 +4710,7 @@ test("Mira Fri ~10:04 CLEAR is Next lead Cabala, then Reuben and Sun, with Troop
   assert.equal(unwind?.workIds.at(-189), "the-sun-also-rises");
   assert.equal(walk?.workIds.at(-147), "the-sun-also-rises");
   assert.equal(sleep?.workIds.includes("trooper-peter-halket-of-mashonaland"), false);
-  assert.equal(waking?.workIds.at(-33), "the-garden-party-and-other-stories");
+  assert.equal(waking?.workIds.at(-32), "the-garden-party-and-other-stories");
   assert.equal(unwind?.workIds.includes("the-garden-party-and-other-stories"), true);
   assert.equal(forYou?.workIds.at(-2), "generosity");
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
@@ -4849,8 +4849,8 @@ test("Mira Fri ~2:04 noon CLEAR is Next lead Man of Property, then Awakening and
   ]);
   assert.equal(unwind?.workIds.at(-186), "theresa-raquin");
   assert.equal(walk?.workIds.at(-144), "theresa-raquin");
-  assert.equal(waking?.workIds.at(-32), "cane");
-  assert.equal(waking?.workIds.at(-33), "the-garden-party-and-other-stories");
+  assert.equal(waking?.workIds.at(-31), "cane");
+  assert.equal(waking?.workIds.at(-32), "the-garden-party-and-other-stories");
   assert.equal(forYou?.workIds.at(-1), "where-angels-fear-to-tread");
   assert.equal(forYou?.workIds.at(-2), "generosity");
   assert.equal(forYou?.workIds.includes("cane"), false);
@@ -5013,8 +5013,8 @@ test("Mira Fri ~4:14 afternoon CLEAR is Next lead Confusion, then Pointed Roofs,
   ]);
   assert.equal(unwind?.workIds.at(-182), "indiana");
   assert.equal(walk?.workIds.at(-140), "indiana");
-  assert.equal(waking?.workIds.at(-31), "the-book-of-wonder");
-  assert.equal(waking?.workIds.at(-32), "cane");
+  assert.equal(waking?.workIds.at(-30), "the-book-of-wonder");
+  assert.equal(waking?.workIds.at(-31), "cane");
   assert.equal(curatorialTrack("the-book-of-wonder"), "later");
   assert.equal(featured.includes("mr-fortunes-maggot"), true);
   assert.equal(waking?.workIds.includes("carmilla"), false);
@@ -5191,8 +5191,8 @@ test("Mira Fri ~7:14 evening CLEAR is Next lead Hidden Force, then Home, Hunger,
   assert.equal(unwind?.workIds.at(-178), "jude-the-obscure");
   assert.equal(walk?.workIds.at(-136), "jude-the-obscure");
   assert.equal(unwind?.workIds.at(-182), "indiana");
-  assert.equal(waking?.workIds.at(-30), "dubliners");
-  assert.equal(waking?.workIds.at(-31), "the-book-of-wonder");
+  assert.equal(waking?.workIds.at(-29), "dubliners");
+  assert.equal(waking?.workIds.at(-30), "the-book-of-wonder");
   assert.equal(featured.includes("enchanted-april"), true);
   assert.equal(curatorialTrack("dubliners"), "later");
   assert.equal(curatorialTrack("anandamath"), "later");
@@ -5351,8 +5351,8 @@ test("Mira Fri ~7:14 evening CLEAR is Next lead Hidden Force, then Home, Hunger,
     SHELF.find((item) => item.id === "tess-of-the-durbervilles")?.gutenberg,
   );
   assert.equal(waking?.workIds.includes("irish-fairy-tales"), true);
-  assert.notEqual(waking?.workIds.at(-31), "irish-fairy-tales");
-  assert.equal(waking?.workIds.at(-29), "strange-tales");
+  assert.notEqual(waking?.workIds.at(-30), "irish-fairy-tales");
+  assert.equal(waking?.workIds.at(-28), "strange-tales");
 });
 
 test("Mira Fri ~6PM CLEAR is Next lead High Wind, then Vera, Futility, and The Comedienne, with Strange Tales Painted Wall on Rituals", () => {
@@ -5410,8 +5410,8 @@ test("Mira Fri ~6PM CLEAR is Next lead High Wind, then Vera, Futility, and The C
     "futility",
     "the-comedienne",
   ]);
-  assert.equal(waking?.workIds.at(-29), "strange-tales");
-  assert.equal(waking?.workIds.at(-30), "dubliners");
+  assert.equal(waking?.workIds.at(-28), "strange-tales");
+  assert.equal(waking?.workIds.at(-29), "dubliners");
   assert.equal(curatorialTrack("strange-tales"), "next");
   assert.equal(curatorialTrack("futility"), "next");
   assert.notEqual(
@@ -5629,8 +5629,8 @@ test("Mira Sat AM CLEAR is Next lead Moon and Sixpence, then Brilliant Career, P
     "the-plumed-serpent",
     "the-red-room",
   ]);
-  assert.equal(waking?.workIds.at(-28), "brazilian-tales");
-  assert.equal(waking?.workIds.at(-29), "strange-tales");
+  assert.equal(waking?.workIds.at(-27), "brazilian-tales");
+  assert.equal(waking?.workIds.at(-28), "strange-tales");
   assert.equal(curatorialTrack("the-moon-and-sixpence"), "next");
   assert.equal(curatorialTrack("brazilian-tales"), "later");
   assert.notEqual(
@@ -5827,8 +5827,8 @@ test("Mira Sat MIDDAY CLEAR is Next lead Green Carnation, then Hajji, Purple Lan
     "the-purple-land",
     "the-master-of-ballantrae",
   ]);
-  assert.equal(waking?.workIds.at(-27), "a-set-of-six");
-  assert.equal(waking?.workIds.at(-28), "brazilian-tales");
+  assert.equal(waking?.workIds.at(-26), "a-set-of-six");
+  assert.equal(waking?.workIds.at(-27), "brazilian-tales");
   assert.equal(curatorialTrack("the-green-carnation"), "next");
   assert.equal(curatorialTrack("hajji-baba"), "next");
   assert.equal(curatorialTrack("the-purple-land"), "next");
@@ -6013,7 +6013,7 @@ test("Mira Sat AFTERNOON CLEAR is Next lead Hill of Dreams, then African Farm, T
     "kim",
   ]);
   assert.equal(waking?.workIds.includes("mogens-and-other-stories"), false);
-  assert.equal(waking?.workIds.at(-27), "a-set-of-six");
+  assert.equal(waking?.workIds.at(-26), "a-set-of-six");
   assert.equal(curatorialTrack("the-hill-of-dreams"), "next");
   assert.equal(curatorialTrack("the-story-of-an-african-farm"), "next");
   assert.equal(curatorialTrack("the-imperialist"), "next");
@@ -6204,7 +6204,7 @@ test("Mira Sat EVENING CLEAR is Next lead Road to the Open, then Calvary, Anna, 
     "anna-of-the-five-towns",
     "small-souls",
   ]);
-  assert.equal(waking?.workIds.at(-26), "stories-and-pictures");
+  assert.equal(waking?.workIds.at(-25), "stories-and-pictures");
   assert.equal(waking?.workIds.includes("mogens-and-other-stories"), false);
   assert.equal(curatorialTrack("the-road-to-the-open"), "next");
   assert.equal(curatorialTrack("calvary"), "next");
@@ -6404,8 +6404,8 @@ test("Mira Sat 6PM CLEAR is Next lead White Jacket, then Nightingale, Chapdelain
     "maria-chapdelaine",
     "the-house-by-the-medlar-tree",
   ]);
-  assert.equal(waking?.workIds.at(-25), "filipino-popular-tales");
-  assert.equal(waking?.workIds.at(-26), "stories-and-pictures");
+  assert.equal(waking?.workIds.at(-24), "filipino-popular-tales");
+  assert.equal(waking?.workIds.at(-25), "stories-and-pictures");
   assert.equal(curatorialTrack("white-jacket"), "next");
   assert.equal(curatorialTrack("a-japanese-nightingale"), "next");
   assert.equal(curatorialTrack("maria-chapdelaine"), "next");
@@ -6626,8 +6626,8 @@ test("Mira Sun AM CLEAR is Next lead Marrow, then Zuleika, Eugenie, and Seven Br
   assert.ok((walk?.workIds.indexOf("seven-brothers") ?? -1) < (walk?.workIds.lastIndexOf("seven-brothers") ?? -1));
   assert.ok((waking?.workIds.indexOf("seven-brothers") ?? -1) >= 0);
   assert.equal(waking?.workIds.indexOf("seven-brothers"), waking?.workIds.lastIndexOf("seven-brothers"));
-  assert.equal(waking?.workIds.at(-24), "laos-folk-lore");
-  assert.equal(waking?.workIds.at(-25), "filipino-popular-tales");
+  assert.equal(waking?.workIds.at(-23), "laos-folk-lore");
+  assert.equal(waking?.workIds.at(-24), "filipino-popular-tales");
   assert.equal(curatorialTrack("the-marrow-of-tradition"), "next");
   assert.equal(curatorialTrack("zuleika-dobson"), "next");
   assert.equal(curatorialTrack("eugenie-grandet"), "next");
@@ -6836,8 +6836,8 @@ test("Mira POST-#169 CLEAR is Next lead Born in Exile, then Four Horsemen, After
   assert.ok((sleep?.workIds.indexOf("after-the-divorce") ?? -1) < (sleep?.workIds.lastIndexOf("after-the-divorce") ?? -1));
   assert.ok((unwind?.workIds.indexOf("after-the-divorce") ?? -1) < (unwind?.workIds.lastIndexOf("after-the-divorce") ?? -1));
   assert.ok((walk?.workIds.indexOf("after-the-divorce") ?? -1) < (walk?.workIds.lastIndexOf("after-the-divorce") ?? -1));
-  assert.equal(waking?.workIds.at(-23), "hungry-hearts");
-  assert.equal(waking?.workIds.at(-24), "laos-folk-lore");
+  assert.equal(waking?.workIds.at(-22), "hungry-hearts");
+  assert.equal(waking?.workIds.at(-23), "laos-folk-lore");
   assert.equal(waking?.workIds.indexOf("hungry-hearts"), waking?.workIds.lastIndexOf("hungry-hearts"));
   assert.equal(curatorialTrack("born-in-exile"), "next");
   assert.equal(curatorialTrack("the-four-horsemen-of-the-apocalypse"), "next");
@@ -7059,8 +7059,8 @@ test("Mira POST-#170 CLEAR is Next lead The Sport of the Gods, then Ramuntcho, M
   assert.equal(sleep?.workIds.includes("reginald"), true);
   assert.equal(unwind?.workIds.includes("reginald"), false);
   assert.equal(walk?.workIds.includes("reginald"), false);
-  assert.equal(waking?.workIds.at(-22), "reginald");
-  assert.equal(waking?.workIds.at(-23), "hungry-hearts");
+  assert.equal(waking?.workIds.at(-21), "reginald");
+  assert.equal(waking?.workIds.at(-22), "hungry-hearts");
   assert.equal(waking?.workIds.indexOf("reginald"), waking?.workIds.lastIndexOf("reginald"));
   assert.equal(curatorialTrack("the-sport-of-the-gods"), "next");
   assert.equal(curatorialTrack("ramuntcho"), "next");
@@ -7269,8 +7269,8 @@ test("Mira POST-#171 CLEAR is Next lead Royal Highness, then Ramona, Almayer’s
   assert.equal(sleep?.workIds.includes("the-black-dog"), true);
   assert.equal(unwind?.workIds.includes("the-black-dog"), false);
   assert.equal(walk?.workIds.includes("the-black-dog"), false);
-  assert.equal(waking?.workIds.at(-21), "the-black-dog");
-  assert.equal(waking?.workIds.at(-22), "reginald");
+  assert.equal(waking?.workIds.at(-20), "the-black-dog");
+  assert.equal(waking?.workIds.at(-21), "reginald");
   assert.equal(waking?.workIds.indexOf("the-black-dog"), waking?.workIds.lastIndexOf("the-black-dog"));
   assert.equal(curatorialTrack("royal-highness"), "next");
   assert.equal(curatorialTrack("ramona"), "next");
@@ -7475,8 +7475,8 @@ test("Mira POST-#172 CLEAR is Next lead Daisy Miller, then South Wind, The Villa
   assert.equal(sleep?.workIds.includes("flappers-and-philosophers"), false);
   assert.equal(unwind?.workIds.includes("flappers-and-philosophers"), false);
   assert.equal(walk?.workIds.includes("flappers-and-philosophers"), false);
-  assert.equal(waking?.workIds.at(-20), "flappers-and-philosophers");
-  assert.equal(waking?.workIds.at(-21), "the-black-dog");
+  assert.equal(waking?.workIds.at(-19), "flappers-and-philosophers");
+  assert.equal(waking?.workIds.at(-20), "the-black-dog");
   assert.equal(
     waking?.workIds.indexOf("flappers-and-philosophers"),
     waking?.workIds.lastIndexOf("flappers-and-philosophers"),
@@ -7690,8 +7690,8 @@ test("Mira MIDDAY CLEAR is Next lead Candide, then Iola Leroy, Esther Waters, an
   assert.equal(sleep?.workIds.includes("west-african-folk-tales"), true);
   assert.equal(unwind?.workIds.includes("west-african-folk-tales"), false);
   assert.equal(walk?.workIds.includes("west-african-folk-tales"), false);
-  assert.equal(waking?.workIds.at(-19), "west-african-folk-tales");
-  assert.equal(waking?.workIds.at(-20), "flappers-and-philosophers");
+  assert.equal(waking?.workIds.at(-18), "west-african-folk-tales");
+  assert.equal(waking?.workIds.at(-19), "flappers-and-philosophers");
   assert.ok(
     (waking?.workIds.indexOf("west-african-folk-tales") ?? -1) <
       (waking?.workIds.lastIndexOf("west-african-folk-tales") ?? -1),
@@ -7917,8 +7917,8 @@ test("Mira POST-#174 CLEAR is Next lead Erewhon, then Ann Veronica, The Great Hu
   assert.equal(sleep?.workIds.includes("children-of-the-frost"), true);
   assert.equal(unwind?.workIds.includes("children-of-the-frost"), false);
   assert.equal(walk?.workIds.includes("children-of-the-frost"), false);
-  assert.equal(waking?.workIds.at(-18), "children-of-the-frost");
-  assert.equal(waking?.workIds.at(-19), "west-african-folk-tales");
+  assert.equal(waking?.workIds.at(-17), "children-of-the-frost");
+  assert.equal(waking?.workIds.at(-18), "west-african-folk-tales");
   assert.equal(
     waking?.workIds.indexOf("children-of-the-frost"),
     waking?.workIds.lastIndexOf("children-of-the-frost"),
@@ -8143,8 +8143,8 @@ test("Mira POST-#175 CLEAR is Next lead The Poison Tree, then Cosmopolis, The Wo
   assert.equal(sleep?.workIds.includes("malay-sketches"), false);
   assert.equal(unwind?.workIds.includes("malay-sketches"), false);
   assert.equal(walk?.workIds.includes("malay-sketches"), false);
-  assert.equal(waking?.workIds.at(-17), "malay-sketches");
-  assert.equal(waking?.workIds.at(-18), "children-of-the-frost");
+  assert.equal(waking?.workIds.at(-16), "malay-sketches");
+  assert.equal(waking?.workIds.at(-17), "children-of-the-frost");
   assert.equal(waking?.workIds.indexOf("malay-sketches"), waking?.workIds.lastIndexOf("malay-sketches"));
   assert.equal(curatorialTrack("the-poison-tree"), "next");
   assert.equal(curatorialTrack("cosmopolis"), "next");
@@ -8382,8 +8382,8 @@ test("Mira POST-#176 CLEAR is Next lead Cousin Betty, then Sorrows of Satan, Kin
   assert.equal(sleep?.workIds.indexOf("cousin-betty"), sleep?.workIds.lastIndexOf("cousin-betty"));
   assert.equal(unwind?.workIds.indexOf("hania"), unwind?.workIds.lastIndexOf("hania"));
   assert.equal(walk?.workIds.indexOf("the-king-of-schnorrers"), walk?.workIds.lastIndexOf("the-king-of-schnorrers"));
-  assert.equal(waking?.workIds.at(-16), "the-toys-of-peace");
-  assert.equal(waking?.workIds.at(-17), "malay-sketches");
+  assert.equal(waking?.workIds.at(-15), "the-toys-of-peace");
+  assert.equal(waking?.workIds.at(-16), "malay-sketches");
   assert.equal(curatorialTrack("cousin-betty"), "next");
   assert.equal(curatorialTrack("the-sorrows-of-satan"), "next");
   assert.equal(curatorialTrack("the-king-of-schnorrers"), "next");
@@ -8614,8 +8614,8 @@ test("Mira POST-#177 CLEAR is Next lead Tess, then Captains Courageous, Numa Rou
   assert.equal(sleep?.workIds.indexOf("tess-of-the-durbervilles"), sleep?.workIds.lastIndexOf("tess-of-the-durbervilles"));
   assert.equal(unwind?.workIds.indexOf("numa-roumestan"), unwind?.workIds.lastIndexOf("numa-roumestan"));
   assert.equal(walk?.workIds.indexOf("dracula"), walk?.workIds.lastIndexOf("dracula"));
-  assert.equal(waking?.workIds.at(-15), "the-tug-of-love");
-  assert.equal(waking?.workIds.at(-16), "the-toys-of-peace");
+  assert.equal(waking?.workIds.at(-14), "the-tug-of-love");
+  assert.equal(waking?.workIds.at(-15), "the-toys-of-peace");
   assert.equal(curatorialTrack("tess-of-the-durbervilles"), "next");
   assert.equal(curatorialTrack("captains-courageous"), "next");
   assert.equal(curatorialTrack("numa-roumestan"), "next");
@@ -8827,8 +8827,8 @@ test("Mira POST-#178 CLEAR is Next lead Seven Gables, then Heart of Darkness, To
     assert.equal(unwind?.workIds.indexOf(id), unwind?.workIds.lastIndexOf(id), id);
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
-  assert.equal(waking?.workIds.at(-14), "a-slav-soul");
-  assert.equal(waking?.workIds.at(-15), "the-tug-of-love");
+  assert.equal(waking?.workIds.at(-13), "a-slav-soul");
+  assert.equal(waking?.workIds.at(-14), "the-tug-of-love");
   assert.equal(curatorialTrack("the-house-of-the-seven-gables"), "next");
   assert.equal(curatorialTrack("heart-of-darkness"), "next");
   assert.equal(curatorialTrack("toilers-of-the-sea"), "next");
@@ -9059,8 +9059,8 @@ test("Mira POST-#179 CLEAR is Next lead Cabbages and Kings, then Dorian Gray, Th
     assert.equal(unwind?.workIds.indexOf(id), unwind?.workIds.lastIndexOf(id), id);
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
-  assert.equal(waking?.workIds.at(-13), "a-cross-line");
-  assert.equal(waking?.workIds.at(-14), "a-slav-soul");
+  assert.equal(waking?.workIds.at(-12), "a-cross-line");
+  assert.equal(waking?.workIds.at(-13), "a-slav-soul");
   assert.equal(curatorialTrack("cabbages-and-kings"), "next");
   assert.equal(curatorialTrack("picture-of-dorian-gray"), "next");
   assert.equal(curatorialTrack("the-job"), "next");
@@ -9291,8 +9291,8 @@ test("Mira POST-#180 CLEAR is Next lead The Shadow of the Cathedral, then Way of
     assert.equal(unwind?.workIds.indexOf(id), unwind?.workIds.lastIndexOf(id), id);
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
-  assert.equal(waking?.workIds.at(-12), "widdershins");
-  assert.equal(waking?.workIds.at(-13), "a-cross-line");
+  assert.equal(waking?.workIds.at(-11), "widdershins");
+  assert.equal(waking?.workIds.at(-12), "a-cross-line");
   assert.equal(curatorialTrack("shadow-of-the-cathedral"), "next");
   assert.equal(curatorialTrack("way-of-all-flesh"), "next");
   assert.equal(curatorialTrack("family-at-gilje"), "next");
@@ -9522,8 +9522,8 @@ test("Mira POST-#181 CLEAR is Next lead Typee, then Kangaroo, Casanova’s Homec
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
   assert.equal(bite?.workIds.includes("casanovas-homecoming"), true);
-  assert.equal(waking?.workIds.at(-11), "lord-arthur-saviles-crime");
-  assert.equal(waking?.workIds.at(-12), "widdershins");
+  assert.equal(waking?.workIds.at(-10), "lord-arthur-saviles-crime");
+  assert.equal(waking?.workIds.at(-11), "widdershins");
   assert.equal(curatorialTrack("typee"), "next");
   assert.equal(curatorialTrack("kangaroo"), "next");
   assert.equal(curatorialTrack("casanovas-homecoming"), "next");
@@ -9769,7 +9769,7 @@ test("Mira POST-#182 CLEAR is Next lead Three Soldiers, then Doctor Pascal, In t
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
   assert.equal(waking?.workIds.includes("charan"), false);
-  assert.equal(waking?.workIds.at(-11), "lord-arthur-saviles-crime");
+  assert.equal(waking?.workIds.at(-10), "lord-arthur-saviles-crime");
   assert.equal(curatorialTrack("three-soldiers"), "next");
   assert.equal(curatorialTrack("doctor-pascal"), "next");
   assert.equal(curatorialTrack("in-the-world"), "next");
@@ -9997,7 +9997,7 @@ test("Mira POST-#183 CLEAR is Next lead Sister Carrie, then Antic Hay, A spring-
     assert.equal(unwind?.workIds.indexOf(id), unwind?.workIds.lastIndexOf(id), id);
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
-  assert.equal(waking?.workIds.at(-10), "hungry-stones");
+  assert.equal(waking?.workIds.at(-9), "hungry-stones");
   assert.equal(waking?.workIds.includes("charan"), false);
   assert.equal(curatorialTrack("sister-carrie"), "next");
   assert.equal(curatorialTrack("antic-hay"), "next");
@@ -10246,8 +10246,8 @@ test("Mira POST-#184 CLEAR is Next lead Smoke, then Niels Lyhne, The Emancipated
     assert.equal(unwind?.workIds.indexOf(id), unwind?.workIds.lastIndexOf(id), id);
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
-  assert.equal(waking?.workIds.at(-9), "our-lady-of-the-pillar");
-  assert.equal(waking?.workIds.at(-10), "hungry-stones");
+  assert.equal(waking?.workIds.at(-8), "our-lady-of-the-pillar");
+  assert.equal(waking?.workIds.at(-9), "hungry-stones");
   assert.equal(curatorialTrack("smoke"), "next");
   assert.equal(curatorialTrack("niels-lyhne"), "next");
   assert.equal(curatorialTrack("the-emancipated"), "next");
@@ -10499,8 +10499,8 @@ test("Mira POST-#185 CLEAR is Next lead Kipps, then The Professor, A Room with a
     assert.equal(unwind?.workIds.indexOf(id), unwind?.workIds.lastIndexOf(id), id);
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
-  assert.equal(waking?.workIds.at(-8), "madame-heurtebise");
-  assert.equal(waking?.workIds.at(-9), "our-lady-of-the-pillar");
+  assert.equal(waking?.workIds.at(-7), "madame-heurtebise");
+  assert.equal(waking?.workIds.at(-8), "our-lady-of-the-pillar");
   assert.equal(curatorialTrack("kipps"), "next");
   assert.equal(curatorialTrack("the-professor"), "next");
   assert.equal(curatorialTrack("a-room-with-a-view"), "next");
@@ -10751,8 +10751,8 @@ test("Mira POST-#186 CLEAR is Next lead Une Vie, then My Ántonia, Look Back on 
     assert.equal(unwind?.workIds.indexOf(id), unwind?.workIds.lastIndexOf(id), id);
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
-  assert.equal(waking?.workIds.at(-7), "father-of-yoto");
-  assert.equal(waking?.workIds.at(-8), "madame-heurtebise");
+  assert.equal(waking?.workIds.at(-6), "father-of-yoto");
+  assert.equal(waking?.workIds.at(-7), "madame-heurtebise");
   assert.equal(curatorialTrack("une-vie"), "next");
   assert.equal(curatorialTrack("my-antonia"), "next");
   assert.equal(curatorialTrack("look-back-on-happiness"), "next");
@@ -11001,8 +11001,8 @@ test("Mira POST-#187 CLEAR is Next lead Crime and Punishment, then Uncle Silas, 
     assert.equal(unwind?.workIds.indexOf(id), unwind?.workIds.lastIndexOf(id), id);
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
-  assert.equal(waking?.workIds.at(-6), "bottle-imp");
-  assert.equal(waking?.workIds.at(-7), "father-of-yoto");
+  assert.equal(waking?.workIds.at(-5), "bottle-imp");
+  assert.equal(waking?.workIds.at(-6), "father-of-yoto");
   assert.equal(curatorialTrack("crime-and-punishment"), "next");
   assert.equal(curatorialTrack("uncle-silas"), "next");
   assert.equal(curatorialTrack("rise-of-david-levinsky"), "next");
@@ -11239,8 +11239,8 @@ test("Mira POST-#188 CLEAR is Next lead Death in Venice, then Elmer Gantry, The 
     assert.equal(unwind?.workIds.indexOf(id), unwind?.workIds.lastIndexOf(id), id);
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
-  assert.equal(waking?.workIds.at(-5), "the-great-god-pan");
-  assert.equal(waking?.workIds.at(-6), "bottle-imp");
+  assert.equal(waking?.workIds.includes("the-great-god-pan"), false);
+  assert.equal(waking?.workIds.at(-5), "bottle-imp");
   assert.equal(curatorialTrack("death-in-venice"), "next");
   assert.equal(curatorialTrack("elmer-gantry"), "next");
   assert.equal(curatorialTrack("colonels-dream"), "next");
@@ -11479,7 +11479,7 @@ test("Mira POST-#189 CLEAR is Next lead Manalive, then Captain Blood, The Monoma
     assert.equal(walk?.workIds.indexOf(id), walk?.workIds.lastIndexOf(id), id);
   }
   assert.equal(waking?.workIds.at(-4), "the-time-machine");
-  assert.equal(waking?.workIds.at(-5), "the-great-god-pan");
+  assert.equal(waking?.workIds.includes("the-great-god-pan"), false);
   assert.equal(curatorialTrack("manalive"), "next");
   assert.equal(curatorialTrack("captain-blood"), "next");
   assert.equal(curatorialTrack("the-monomaniac"), "next");
