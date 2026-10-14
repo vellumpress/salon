@@ -206,8 +206,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Sunday after Easter, the last bull-fight of the season in Mexico City, and Kate’s heart sank. It opens at Chapter I. Lawrence’s 1926 novel. Mystic-expat Mexico. Further into the bullfight, “half-savage” and later “aboriginal” are period racial language, left as printed.`,
   "the-red-room":
     `An evening in the beginning of May. The little garden on Moses Height, on the south side of Stockholm, and the wind over the town. It opens at Chapter I. Schleussner’s English (Swedish 1879, English 1913). Stockholm bohemia.`,
-  "african-farm":
-    `The full African moon poured down its light from the blue sky into the wide, lonely plain. Stunted karoo bushes and milk-bushes follow in the white light, then a solitary kopje of ironstones. This reading stops before the farm household takes over.`,
   "a-passage-to-india":
     `Chandrapore presents nothing extraordinary except the Marabar Caves, twenty miles off. This reading stops after the civil station and those extraordinary caves. The novel continues through Mosque, Caves, and Temple.`,
   mhudi:
@@ -222,8 +220,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `The sun had set. After the brief interval of twilight the night fell calm and dark, and in its gloomy bosom the last sounds of a sleepy world died gently away. The traveller went forward on his way, hastening his step as night came on; the path he followed was narrow and worn by the constant tread of men and beasts, and led gently up a hill on whose verdant slopes grew picturesque clumps of wild cherry trees, beeches and oaks.--The reader perceives that we are in the north of Spain.`,
   "on-the-seaboard":
     `A fishing boat lay one May evening to beam-wind, out on Goosestone bay. "Rokarna," known to all on the coast by their three pyramids, were changing to blue, while upon the clear sky clouds were forming just as the sun began to sink. The first reading stops after the Surveyor at the tiller.`,
-  "poison-tree":
-    `His wife makes him promise: if a storm rises, leave the boat. On the Ganges in Joisto, the weather keeps that promise.`,
   "trooper-peter-halket":
     `A lone Chartered Company trooper on a Mashonaland kopje, fire quivering, inventing gold companies in the dark after losing his column. Written in 1897, the opening already frames colonial scouting; missionary and racial language harden after the night watch, before the stranger arrives.`,
   "the-home-and-the-world":
@@ -384,8 +380,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `I went out into the world as shop-boy at a fashionable boot-shop in the main street of the town. Chapter I — the shop-boy, green teeth, and watery eyes. Maksim Gorky, in Gertrude M. Foakes’s English, 1916. First published in Russian in 1916; this translation is from 1917.`,
   "leila":
     `Giovanni the footman calls Signorina from the dining-room, breathless, after the garden and the house. Chapter I, A Mystic Prelude — Signorina Leila, the chestnut grove, and Priaforà. Antonio Fogazzaro, in Mary Prichard Agnetti’s English, 1910. First published in Italian in 1910; this translation is from 1911.`,
-  "charan":
-    `In the days of King Sung-jong one of Korea’s noted men became governor of Pyong-an Province. This reading is just CHARAN — Pyong-an Province, the dancing girl Charan, and the Governor’s son. Im Bang and Yi Ryuk, in James S. Gale’s English, 1913.`,
   "sister-carrie":
     `When Caroline Meeber boarded the afternoon train for Chicago, her total outfit consisted of a small trunk and four dollars. Chapter I — Caroline Meeber, the afternoon train, and August 1889. Theodore Dreiser’s 1900 novel.`,
   "antic-hay":
@@ -442,8 +436,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Two gentlemen were seated, one March morning in 189--, in the private office of French and Company, Limited, on lower Broadway. Chapter One — Broadway, French and Company, and an electric clock, then Clarendon in the South. Charles W. Chesnutt’s 1905 novel.`,
   "hard-times":
     `'NOW, what I want is, Facts. Teach these boys and girls nothing but Facts. Facts alone are wanted in life. Book the First, Chapter I, The One Thing Needful — a Facts school-room and Gradgrind. Charles Dickens’s 1854 novel.`,
-  "great-god-pan":
-    `"I am glad you came, Clarke; very glad indeed. I was not sure you could spare the time." This reading is just The Great God Pan — Clarke and the Experiment. This reading ends with the novella. Arthur Machen’s 1894 novella.`,
+  "the-great-god-pan":
+    `"I am glad you came, Clarke; very glad indeed. I was not sure you could spare the time." This reading is Chapter I of The Great God Pan — Clarke and the Experiment. This reading ends with the chapter. Arthur Machen’s 1894 novella.`,
   "manalive":
     `A wind sprang high in the west, like a wave of unreasonable happiness, and tore eastward across England, trailing with it the frosty scent of forests and the cold intoxication of the sea. Part I, Chapter I — a great wind, unreasonable happiness, and Beacon House. G. K. Chesterton’s 1912 novel.`,
   "captain-blood":
@@ -642,8 +636,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `It would have been idle to inquire into the antecedents of old Mother Beggarlegs. It opens at Chapter I. Duncan’s 1904 novel, Elgin, Ontario.`,
   kim:
     `He sat, in defiance of municipal orders, astride the gun Zam Zammah opposite the Wonder House, as the natives call the Lahore Museum. It opens at Chapter I. Kipling’s 1901 novel. “Half-caste” and “burned black as any native” are period racial language, left as printed.`,
-  "mogens-and-other-stories":
-    `Summer it was, in the middle of the day, in a corner of the enclosure. This reading is just part of Mogens; the whole novella is too long for one sitting. Jacobsen, in Grabow’s 1921 English of the 1882 Danish.`,
   "the-road-to-the-open":
     `George von Wergenthin sat at table quite alone to-day. The empty chair at the top of the table, and the September sun through the open window. It opens at Chapter I. Schnitzler’s novel, Horace Samuel’s English, German 1908 / English 1913.`,
   calvary:
@@ -793,8 +785,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Giles starts before the beginning, with Nothing taking the form of a point in a circle, then walks down to the feudal states of the eighth century B.C.",
   "a-house-of-gentlefolk":
     "A spring evening in 1842 fades over a provincial town, and two women sit at an open window, one a widow of fifty, the other an old lady of seventy.",
-  "a-spring-time-case":
-    "On a sleeting winter evening at the Suruga-ya pawnshop, the clerk Shinsuké sends the apprentice out for hot macaroni and locks up while the master is away.",
   "an-american-tragedy":
     "At dusk on a hot summer night a street-preaching family of six sets up a little organ between two tall buildings, and the eldest girl starts the hymn.",
   "artists-wives":
@@ -890,8 +880,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Pipes and tabors sound in the street, and the poets call everyone down from ledgers and shovels to hear the strolling singers.",
   "nationalism":
     "Tagore starts with the problems each people is given, and names India’s from the beginning: many races in close contact, and how to live together.",
-  "niels":
-    "At seventeen she has the black, luminous eyes of the Blid family, but none of their practical calm, and no one at home quite knows her.",
   "on-the-eve":
     "On one of the hottest days of 1853, two young men lie in the shade of a lime-tree by the Moskva, one awkward and thoughtful, one fair and charming.",
   "over-the-brazier":
@@ -925,8 +913,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
   "lady-into-fox":
     "Wonderful events are irregular — then Mrs. Tebrick’s change into a vixen is an established fact.",
   // Mira Tue 13 Oct 2026 PITCHES-3 — The Underdogs (Unwind, On a walk, Before sleep) and the next Before sleep cards with no pitch. Each line is drawn from the card’s opening sit.
-  "underdogs":
-    "A dog barks in the sierra and Demetrio is told to hide from the soldiers.",
   "siddhartha":
     "In the shade of the fig tree by the river, the Brahman’s handsome son learns to speak the Om silently, and his friend Govinda means to follow him anywhere.",
   "smoke-bellew":
@@ -992,10 +978,6 @@ export const RITUAL_PITCHES: Record<string, string> = {
     "Night falls in the drug-shop, the great jars glow, and Benét retells the fisherman who hauls a brass-bound jar from the sea.",
   "the-napoleon-of-notting-hill":
     "Chesterton explains the game of Cheat the Prophet: humanity listens to the clever men, waits till they are dead, and does something else.",
-  "the-reign-of-greed":
-    "One December morning the round, slow steamer Tabo climbs the winding Pasig, whistling, with the bamboo rustling on its banks.",
-  "the-rise-of-david-levinsky":
-    "A cloak-and-suit millionaire looks back at the Antomir boy who landed in America with four cents in his pocket.",
   "the-romance-of-the-milky-way":
     "On the seventh night of the seventh month the birds of heaven make a bridge across the River of Heaven, so the Weaving-Lady can meet her husband.",
   "the-three-taverns":
@@ -1231,8 +1213,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-man-of-property",
       "the-napoleon-of-notting-hill",
       "the-pit",
-      "the-reign-of-greed",
-      "the-rise-of-david-levinsky",
       "the-rise-of-silas-lapham",
       "the-romance-of-the-milky-way",
       "the-three-taverns",
@@ -1295,7 +1275,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-cabin",
       "pan-tadeusz",
       "before-adam",
-      "niels",
       "marianela",
       "an-iceland-fisherman",
       "aphrodite",
@@ -1323,7 +1302,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "baudelaire-prose-and-poetry",
       "tales-grotesque-and-curious",
       "a-book-barnes",
-      "a-spring-time-case",
       "jewish-children",
       "essays-and-soliloquies",
       "tragic-sense-of-life",
@@ -1368,7 +1346,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "conference",
       "gentlemen-prefer-blondes",
       "lady-into-fox",
-      "african-farm",
       "a-passage-to-india",
       "mhudi",
       "maria",
@@ -1734,7 +1711,6 @@ export const RITUAL_LANES: RitualLane[] = [
       "letters-of-a-javanese-princess",
       "blood-and-sand",
       "an-outcast-of-the-islands",
-      "the-underdogs",
       "diary-of-a-chambermaid",
       "growth-of-the-soil",
       "we",
@@ -1782,8 +1758,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "brazilian-tales",
       // Mira Sat 26 Sep 2026 MIDDAY CLEAR — Gaspar Ruiz only. Not the other five.
       "a-set-of-six",
-      // Mira Sat 26 Sep 2026 AFTERNOON CLEAR — Mogens timed cut only. Not the other three.
-      "mogens-and-other-stories",
+      // SHELF-DEDUPE — the 6-minute Mogens cut is not seated. It would end inside the novella.
       // Mira Sat 26 Sep 2026 EVENING CLEAR — Bontzye Shweig only. Not the other tales.
       "stories-and-pictures",
       // Mira Sat 26 Sep 2026 ~6PM CLEAR — Suan’s Good Luck only. Not the other tales.
@@ -1816,8 +1791,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "widdershins",
       // Mira Sun 27 Sep 2026 POST-#181 CLEAR — Lord Arthur Savile’s Crime only.
       "lord-arthur-saviles-crime",
-      // Mira Sun 27 Sep 2026 POST-#182 CLEAR — CHARAN only.
-      "charan",
+      // SHELF-DEDUPE — CHARAN follows Korean Folk Tales. The Waking up sit is dropped.
       // Mira Mon 28 Sep 2026 POST-#183 CLEAR — The Hungry Stones only.
       "hungry-stones",
       // Mira Mon 28 Sep 2026 POST-#184 CLEAR — Our Lady of the Pillar only.
@@ -1828,8 +1802,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "father-of-yoto",
       // Mira Mon 28 Sep 2026 POST-#187 CLEAR — The Bottle Imp only.
       "bottle-imp",
-      // Mira Mon 28 Sep 2026 POST-#188 CLEAR — The Great God Pan only.
-      "great-god-pan",
+      // SHELF-DEDUPE — Chapter I of the novella, and it ends with that chapter.
+      "the-great-god-pan",
       // Mira Mon 28 Sep 2026 POST-#189 CLEAR — The Time Machine only.
       "the-time-machine",
       // Mira Mon 28 Sep 2026 POST-#190 CLEAR — The Invisible Man only.
@@ -1856,7 +1830,6 @@ export const RITUAL_LANES: RitualLane[] = [
       // do not invent one.
       // Enchanted April also leads the noon Next append and stays a waking sit.
       // Chapter 1 opens in the Woman’s Club; the novel continues.
-      "poison-tree",
       "noli-me-tangere",
       "nacha-regules",
       "songs-of-kabir",
@@ -2263,7 +2236,7 @@ export const RITUAL_LANES: RitualLane[] = [
       "nacha-regules",
       "enchanted-april",
       "quicksand",
-      "underdogs",
+      "the-underdogs",
       "lolly-willowes",
       "cheri",
       "all-quiet-on-the-western-front",
@@ -2633,7 +2606,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   vera: 6,
   "on-a-chinese-screen": 3,
   futility: 6,
-  "poison-tree": 9,
   // Chapter I of the full novel is 87 minutes. The kopje-fire cut is one minute.
   "trooper-peter-halket": 1,
   "the-home-and-the-world": 6,
@@ -2662,7 +2634,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "elmer-gantry": 5,
   "colonels-dream": 5,
   "hard-times": 5,
-  "great-god-pan": 15,
+  "the-great-god-pan": 15,
   manalive: 5,
   "captain-blood": 5,
   "the-monomaniac": 5,
@@ -2759,7 +2731,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   we: 3,
   "the-story-of-gosta-berling": 14,
   thais: 20,
-  underdogs: 5,
   demian: 32,
   "death-comes-for-the-archbishop": 10,
   "the-getting-of-wisdom": 12,
@@ -2809,7 +2780,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-story-of-an-african-farm": 6,
   "the-imperialist": 7,
   kim: 6,
-  "mogens-and-other-stories": 6,
   "anna-of-the-five-towns": 6,
   "stories-and-pictures": 13,
   "there-is-confusion": 8,
@@ -2860,8 +2830,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-party-and-other-stories": 64,
   "the-pit": 6,
   "the-sport-of-the-gods": 5,
-  "the-reign-of-greed": 19,
-  "the-rise-of-david-levinsky": 9,
   "the-rise-of-silas-lapham": 7,
   "the-road-to-the-open": 6,
   "the-romance-of-the-milky-way": 1,
@@ -2951,7 +2919,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "lord-arthur-saviles-crime": 17,
   "doctor-pascal": 4,
   leila: 4,
-  charan: 19,
   "sister-carrie": 4,
   "antic-hay": 4,
   "spring-time-case": 4,
@@ -2987,7 +2954,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "pan-tadeusz": 50,
   "the-red-laugh": 8,
   "before-adam": 9,
-  "niels": 12,
   "marianela": 25,
   "an-iceland-fisherman": 14,
   "aphrodite": 10,
@@ -3034,7 +3000,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "baudelaire-prose-and-poetry": 2,
   "tales-grotesque-and-curious": 15,
   "a-book-barnes": 14,
-  "a-spring-time-case": 21,
   "jewish-children": 13,
   "essays-and-soliloquies": 11,
   "tragic-sense-of-life": 30,
@@ -3095,7 +3060,6 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "maria-chapdelaine": 6,
   "a-japanese-nightingale": 6,
   "lady-into-fox": 18,
-  "african-farm": 8,
   "a-passage-to-india": 7,
   mhudi: 12,
   "bel-ami": 7,

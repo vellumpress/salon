@@ -51,8 +51,6 @@ const BLURBS: Record<string, string> = {
     "She takes a holy temple and papers it into Cheltenham—blue curtains for her eyes, pink stripes, an American stove where the Buddha sat.",
   futility:
     "The Simbirsk vanishes toward Shanghai, and the hotel room still has a dirty table-cloth.",
-  "poison-tree":
-    "His wife makes him promise: if a storm rises, leave the boat—and on the Ganges in Joisto the weather keeps that promise.",
   "trooper-peter-halket":
     "Alone on a kopje with a fire that only quivers—Trooper Peter Halket has lost his column, and the dark starts inventing fortunes for him.",
   "the-home-and-the-world":
@@ -88,10 +86,6 @@ const BLURBS: Record<string, string> = {
     "You ask for the youth of Umslopogaas — Haggard’s late-Victorian imperial romance, not a substitute for Zulu-authored history.",
   gold:
     "Michael Gold’s Lower East Side childhood: tenements, hunger, and a street that never lets a boy stay innocent.",
-  crime:
-    "A student tests the right to kill — and cannot live with the answer.",
-  dorian:
-    "Wilde’s beautiful face stays young while the portrait keeps the score.",
   bovary:
     "Provincial longing, debt, and the romance novels that ruin a life.",
   anna: "Passion against the grain of society — and the train that waits at the end.",
@@ -111,8 +105,6 @@ const BLURBS: Record<string, string> = {
     "A carousel barker, a cheap room, and a day-pass from the dead — Molnár’s rough tenderness.",
   "the-cherry-orchard":
     "A Russian estate in blossom — Chekhov’s family cannot keep the orchard they still call home.",
-  "african-farm":
-    "The full African moon poured down its light from the blue sky into the wide, lonely plain.",
   "on-the-seaboard":
     "A fishing boat lay one May evening to beam-wind, out on Goosestone bay, while Rokarna were changing to blue.",
   marianela:
@@ -177,8 +169,6 @@ const BLURBS: Record<string, string> = {
     "A hot-headed Tokyo teacher is posted to the provinces and refuses to learn the local game.",
   "post-office":
     "A sick boy keeps the village post office of the mind — Tagore’s small play of waiting.",
-  underdogs:
-    "A dog barks in the sierra and Demetrio is told to hide from the soldiers.",
   rur: "A factory makes artificial workers; the workers decide they are the future.",
   "bread-givers":
     "Anzia Yezierska’s 1925 novel opens with potatoes to peel, Bessie home without work, and the landlord hollering for the rent.",
@@ -397,8 +387,6 @@ const BLURBS: Record<string, string> = {
     "A Napoleonic colonel comes back from the dead and finds his wife has spent him.",
   magnhild:
     "The landscape has high, bold mountains, above which are just passing the remnants of a storm.",
-  "the-family-at-gilje":
-    "A Norwegian official’s household where daughters wait on other people’s decisions.",
   "after-the-divorce":
     "Nineteen Hundred and Seven: a woman sits crying in the Porru house’s strangers’ room.",
   "the-lodger":
@@ -481,7 +469,6 @@ const BLURBS: Record<string, string> = {
   "lord-jim": "A jump from a sinking ship that a man spends the rest of his life explaining.",
   nostromo: "A silver mine, a republic, and the men who cannot put the metal down.",
   typhoon: "A steamer into a storm, and a captain too stubborn to have an imagination.",
-  "almayer-s-folly": "A European on a Borneo river, waiting for a fortune that will not come.",
   "under-western-eyes": "A student in Geneva, a betrayal in Russia, and the west watching.",
   "the-shadow-line": "A first command, a becalmed ship, and the line between youth and the job.",
   "the-arrow-of-gold": "Conrad’s Carlist Marseille: a woman, a cause, and streets with a reputation.",
@@ -701,7 +688,6 @@ const BLURBS: Record<string, string> = {
   "death-in-venice": "On a spring afternoon Gustav Aschenbach leaves the Prinzregentenstrasse in Munich, and the reading is already turning toward Venice.",
   "elmer-gantry": "Elmer Gantry leans, eloquently drunk, against the bar of the Old Home Sample Room in Cato, Missouri.",
   "colonels-dream": "Two gentlemen sit in French and Company’s private office on lower Broadway, and Clarendon in the South is where the dream turns.",
-  "great-god-pan": "Clarke comes for the experiment, and this reading stops when the novella ends.",
   manalive: "A wind of unreasonable happiness tears into Beacon House, and the boarding-house garden is already a pantomime.",
   "captain-blood": "Peter Blood tends the geraniums on Water Lane in Bridgewater, and the Caribbean is where the reading turns.",
   "the-monomaniac": "Roubaud sets the loaf and the white wine on the table, and the Paris–Le Havre railway is already in the window.",
@@ -758,7 +744,6 @@ const BLURBS: Record<string, string> = {
   "the-hill-of-dreams": "A furnace-glow sky, and Lucian Taylor loses himself on a Gwent hill lane.",
   "the-story-of-an-african-farm": "The full African moon pours onto a Karoo plain and a solitary kopje.",
   "the-imperialist": "Old Mother Beggarlegs sells gingerbread in the Elgin market.",
-  "mogens-and-other-stories": "Summer it was, in a corner of the enclosure, and this reading is Mogens only.",
   "the-willows": "Two men camp on a Danube island that does not want visitors.",
   "three-john-silence-stories": "Blackwood’s psychic doctor, called in when the house is the patient.",
   "incredible-adventures": "Blackwood’s longer strange journeys — less jump than a slow wrongness.",
@@ -862,7 +847,6 @@ const BLURBS: Record<string, string> = {
   "doctor-pascal": "In the heat of a July afternoon, the closed room is full of a great calm.",
   "in-the-world": "A shop-boy starts at a fashionable boot-shop, under a master with green teeth and watery eyes.",
   "leila": "Giovanni calls for Signorina Leila from the dining-room, and the chestnut grove is already waiting.",
-  "charan": "In Pyong-an Province, the dancing girl Charan meets the Governor’s son.",
   "heart-of-the-west": "O. Henry goes west and still hears New York in the punchline.",
   "the-gentle-grafter": "A con man with manners, working the American joke.",
   "roads-of-destiny": "O. Henry on the roads that fork, then fork again.",
@@ -1028,7 +1012,6 @@ const BLURBS: Record<string, string> = {
   "the-autobiography-of-munshi-abdullah-hikayat-abdullah":
     "Abdullah’s life between Malay courts and the English press.",
   "the-book-of-the-birds-paksi-pakaranam": "A Siamese bird epic, in Crosby’s English.",
-  "laos-folk-lore-of-farther-india": "Fleeson’s Lao tales, collected as if the hills were a library.",
   "jamaican-song-and-story": "Jekyll’s Anansi, songs, and the island talking in two tongues.",
   "jamaica-anansi-stories":
     "One great hungry time — one Anansi tale per reading, and this one is the fish pot.",
@@ -1103,8 +1086,6 @@ const BLURBS: Record<string, string> = {
     "Giles starts before the beginning, with Nothing taking the form of a point in a circle, then walks down to the feudal states of the eighth century B.C.",
   "a-house-of-gentlefolk":
     "A spring evening in 1842 fades over a provincial town, and two women sit at an open window, one a widow of fifty, the other an old lady of seventy.",
-  "a-spring-time-case":
-    "On a sleeting winter evening at the Suruga-ya pawnshop, the clerk Shinsuké sends the apprentice out for hot macaroni and locks up while the master is away.",
   "artists-wives":
     "After dinner in a lamplit studio, a poet asks his happily married friend to find him a wife, and the painter says artists ought never to marry.",
   "auguste-rodin":
@@ -1196,8 +1177,6 @@ const BLURBS: Record<string, string> = {
     "Pipes and tabors sound in the street, and the poets call everyone down from ledgers and shovels to hear the strolling singers.",
   "nationalism":
     "Tagore starts with the problems each people is given, and names India’s from the beginning: many races in close contact, and how to live together.",
-  "niels":
-    "At seventeen she has the black, luminous eyes of the Blid family, but none of their practical calm, and no one at home quite knows her.",
   "on-the-eve":
     "On one of the hottest days of 1853, two young men lie in the shade of a lime-tree by the Moskva, one awkward and thoughtful, one fair and charming.",
   "over-the-brazier":
@@ -1292,10 +1271,6 @@ const BLURBS: Record<string, string> = {
     "Night falls in the drug-shop, the great jars glow, and Benét retells the fisherman who hauls a brass-bound jar from the sea.",
   "the-napoleon-of-notting-hill":
     "Chesterton explains the game of Cheat the Prophet: humanity listens to the clever men, waits till they are dead, and does something else.",
-  "the-reign-of-greed":
-    "One December morning the round, slow steamer Tabo climbs the winding Pasig, whistling, with the bamboo rustling on its banks.",
-  "the-rise-of-david-levinsky":
-    "A cloak-and-suit millionaire looks back at the Antomir boy who landed in America with four cents in his pocket.",
   "the-romance-of-the-milky-way":
     "On the seventh night of the seventh month the birds of heaven make a bridge across the River of Heaven, so the Weaving-Lady can meet her husband.",
   "the-three-taverns":
@@ -1420,8 +1395,6 @@ const BLURBS: Record<string, string> = {
   "papeis-avulsos": "Machado’s loose papers open in Itaguaí, where Dr. Simão Bacamarte builds an asylum, then turn to a father’s lesson in mediocrity, a Turkish slipper and a mirror.",
   "papeis-avulsos-incl-the-alienist":
     "The chronicles of Itaguaí tell of Dr. Simão Bacamarte, the greatest physician in Brazil, who came home to give himself to science.",
-  "inferno-2":
-    "With a feeling of wild joy Strindberg leaves his wife at the Paris station, and sits alone at their old table in the Café de la Régence.",
   "inferno": "Midway upon the journey of his life, Dante finds himself in a dark wood, and the road of the Inferno opens below him.",
   "the-divine-comedy-complete": "Dante’s whole Divine Comedy, from the dark wood down through Hell, up the mountain of Purgatory and into Paradise.",
   "the-epic-of-gilgamesh":
@@ -1434,8 +1407,6 @@ const BLURBS: Record<string, string> = {
     "The Maias come to live in the old Lisbon house called the Ramalhete.",
   "the-people-of-hemso":
     "Carlsson, a farmhand from Värmland, comes out to the island of Hemsö to run Widow Flod’s farm.",
-  "god-s-trombones":
-    "Johnson sets down seven sermons in verse after the old Black preachers, opening with a prayer: Listen, Lord.",
   "amaro":
     "Eça de Queirós’s 1875 novel The Crime of Father Amaro.",
   "madmen": "Erdosain opens the glass door to the manager’s office in Buenos Aires and knows at once he is lost: they have found out what he took.",

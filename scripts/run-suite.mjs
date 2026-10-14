@@ -53,6 +53,7 @@ export const allTsFiles = [
   "src/lib/catalog/curatorial.test.ts",
   "src/lib/catalog/stub-redirect.test.ts",
   "src/lib/catalog/colonel-place.test.ts",
+  "src/lib/catalog/shelf-dedupe.test.ts",
   "src/lib/catalog/adapted.test.ts",
   "src/lib/catalog/pipeline-leak.test.ts",
   "src/lib/catalog/text-apparatus.test.ts",
