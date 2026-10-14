@@ -1219,6 +1219,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "precious-bane",
   // Mira Tue 13 Oct 2026 PM FRIENDSHIP-VILLAGE — Friendship Village (Gale, 1908) follows Precious Bane, plain Next, no heads-up. Never Featured, off every Ritual lane.
   "friendship-village",
+  // Mira Wed 14 Oct 2026 AM ANNE — Anne of Green Gables (Montgomery, 1908) follows Friendship Village, Next carefully only (the heads-up is on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (Chapter I from the top to "Nothing!") is never unwind or before-sleep.
+  "anne-of-green-gables",
 ] as const;
 
 /**
