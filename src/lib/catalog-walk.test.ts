@@ -10,6 +10,7 @@ import {
   bookIdFromCatalogPath,
   catalogIdsFromDiff,
   catalogWalkMode,
+  isDeadDocument,
   isPageGotoTimeout,
   isRetryableCatalogOpen,
   resolveEpochDay,
@@ -179,6 +180,24 @@ test("a page.goto timeout is retryable and a step miss is not", () => {
     isRetryableCatalogOpen(new Error("passing back: index 0:0, expected 117:0")),
     false,
   );
+  assert.equal(
+    isRetryableCatalogOpen(
+      new Error(
+        'page.goto: Navigation to "http://127.0.0.1:8081/salon/read/the-house-of-mirth" is interrupted by another navigation to "http://127.0.0.1:8081/salon/?__fresh=1"',
+      ),
+    ),
+    true,
+  );
+  assert.equal(isDeadDocument(new Error("locator.waitFor: Timeout 30000ms exceeded."), false), true);
+  assert.equal(
+    isDeadDocument(new Error("page.waitForFunction: Timeout 4000ms exceeded."), false),
+    true,
+  );
+  assert.equal(
+    isDeadDocument(new Error("page.waitForFunction: Timeout 4000ms exceeded."), true),
+    false,
+  );
+  assert.equal(isDeadDocument(new Error("salome back: index 3:0, expected 4:0"), false), false);
 });
 
 test("catalog walk anchors are readable books on disk", () => {

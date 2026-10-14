@@ -10,6 +10,7 @@ import {
   CATALOG_WALK_SAMPLE_SIZE,
   catalogIdsFromDiff,
   catalogWalkMode,
+  isDeadDocument,
   isPageGotoTimeout,
   isRetryableCatalogOpen,
   resolveEpochDay,
@@ -253,12 +254,28 @@ async function openAt(page: Page, id: string, at: number) {
     } catch (error) {
       last = error;
       const down = readerDown(error);
-      if (attempt >= (down ? 2 : 1)) break;
+      const retry = down || (await shellReplaced(page, error));
+      if (!retry || attempt >= 2) break;
       if (down) await ensureServer();
     }
   }
   const message = last instanceof Error ? last.message.split("\n")[0] : String(last);
   throw new Error(`${id} at ${at} did not open (${message})`);
+}
+
+/** A reload in flight throws on evaluate. A stuck book still answers. */
+async function documentAnswers(page: Page) {
+  try {
+    await page.evaluate(() => document.readyState);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function shellReplaced(page: Page, error: unknown) {
+  if (isRetryableCatalogOpen(error)) return true;
+  return isDeadDocument(error, await documentAnswers(page));
 }
 
 async function passGate(page: Page) {
@@ -525,7 +542,8 @@ async function step(
   }
   const burst = mode === "burst" ? 3 : 1;
   const before = await readSentence(page);
-  const predicted = predictPlace(bookIdOf(page), before, direction, burst);
+  const openBookId = bookIdOf(page);
+  const predicted = predictPlace(openBookId, before, direction, burst);
   assert.equal(
     predicted.index,
     expected,
@@ -565,7 +583,20 @@ async function step(
       return shot;
     } catch (error) {
       lastError = error;
-      const destroyed = isRetryableCatalogOpen(error);
+      // A graded miss still has a sentence on screen. A shell reload leaves
+      // the page unreadable, and Playwright reports that as a timeout rather
+      // than a destroyed context. Retry that the same way.
+      let destroyed = isRetryableCatalogOpen(error);
+      if (!destroyed) {
+        const graded = await readSentence(page).catch(() => null);
+        if (graded) {
+          const from = shot ? shot.from : "?";
+          throw new Error(
+            `${label}: index ${graded.index}:${graded.cursor} scroll ${graded.scrollTop}, expected ${predicted.index}:${predicted.cursor} after ${burst} (from ${from} pinned=${shot?.pinned} line=${shot?.lineTop} host=${shot?.hostTop} x=${shot?.x} y=${shot?.y}; ${error instanceof Error ? error.message : error})`,
+          );
+        }
+        destroyed = isDeadDocument(error, false);
+      }
       if (destroyed && nav === 0) {
         // A service-worker reload destroys the measure. The new document's
         // init script clears storage, so a chapter opened from saved progress
@@ -587,24 +618,20 @@ async function step(
           if (point) return point;
         }
         if (now && now.index === before.index && now.cursor === before.cursor) continue;
-        if (before.cursor === 0) {
-          let id = "";
+        if (before.cursor === 0 && openBookId && openBookId !== "salon") {
           try {
-            id = bookIdOf(page);
+            await openAt(page, openBookId, before.index);
+            continue;
           } catch {
-            id = "";
-          }
-          if (id && id !== "salon") {
-            try {
-              await openAt(page, id, before.index);
-              continue;
-            } catch {
-              /* the reopen failed; the error below reports it */
-            }
+            /* the reopen failed; the error below reports it */
           }
         }
       }
-      if (destroyed) throw error;
+      if (destroyed) {
+        if (isRetryableCatalogOpen(error)) throw error;
+        const detail = error instanceof Error ? error.message.split("\n")[0] : String(error);
+        throw new Error(`Execution context was destroyed, most likely because of a navigation (${detail})`);
+      }
       const now = await readSentence(page).catch(() => null);
       const from = shot ? shot.from : "?";
       throw new Error(
@@ -898,7 +925,12 @@ async function openCatalogOnce(page: Page, id: string, at: number) {
       return;
     } catch (error) {
       last = error;
-      if (isRetryableCatalogOpen(error)) throw error;
+      if (await shellReplaced(page, error)) {
+        const detail = error instanceof Error ? error.message.split("\n")[0] : String(error);
+        throw new Error(
+          `Execution context was destroyed, most likely because of a navigation (${detail})`,
+        );
+      }
       if (!readerDown(error) || attempt >= 2) break;
       await ensureServer();
     }
@@ -920,7 +952,9 @@ async function openCatalogOnce(page: Page, id: string, at: number) {
     onPage = ` — index ${detail.index || "?"} bound ${detail.bound || "?"} count ${detail.count || "?"} ${detail.href}`;
     if (detail.text) onPage += ` — page: ${detail.text}`;
   } catch {
-    /* the page is already gone */
+    throw new Error(
+      `${id} at ${at} did not open (Execution context was destroyed, most likely because of a navigation (${message}))`,
+    );
   }
   throw new Error(`${id} at ${at} did not open (${message})${onPage}`);
 }
@@ -941,7 +975,7 @@ async function openCatalogWithRetry(browser: Browser, page: Page, id: string, at
     return page;
   } catch (error) {
     if (!isRetryableCatalogOpen(error)) throw error;
-    console.log(`page.goto timed out on ${id} at ${at}; retrying once`);
+    console.log(`open interrupted on ${id} at ${at}; retrying once`);
     await Promise.race([
       page.context().close().catch(() => undefined),
       new Promise((resolve) => setTimeout(resolve, 5_000)),
