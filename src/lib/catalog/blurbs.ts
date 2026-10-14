@@ -798,7 +798,7 @@ const BLURBS: Record<string, string> = {
   "the-house-of-dust-a-symphony": "Aiken’s long poem of a city as a mind.",
   "nets-to-catch-the-wind": "Wylie’s cool lyrics, jeweled and a little cruel.",
   aquarium: "Harold Acton’s early poems — a young aesthete trying the water.",
-  "the-farmer-s-bride": "Charlotte Mew: a marriage, a silence, and a voice that will not soften it.",
+  "the-farmer-s-bride": "A farmer tells how his young wife turned shy as a hare after the wedding, and how in the fall she ran away into the fields.",
   "look-we-have-come-through": "Lawrence’s poems of a marriage that is also a war.",
   "the-white-peacock": "Lawrence’s first novel: Midlands fields and a love that will not sit.",
   "the-lost-girl": "A Midlands woman leaves for Italy and a life the town cannot name.",
@@ -998,7 +998,7 @@ const BLURBS: Record<string, string> = {
   mardi: "Melville’s South Sea allegory, already too strange for the market.",
   "the-narrative-of-arthur-gordon-pym-of-nantucket":
     "Poe’s polar voyage: a ship, a hoax of a narrative, and a white that will not stop.",
-  "tales-volumes-1-2": "Poe’s tales as a set: ratiocination, collapse, and the house that falls.",
+  "tales-volumes-1-2": "Poe’s haunted palaces and sealed rooms, where a raven, a beating heart, or a falling house keeps one burden: never more.",
   "the-sketch-book-of-geoffrey-crayon":
     "Irving’s sketches: Sleepy Hollow weather, English Christmas, a New York already nostalgic.",
   "in-the-midst-of-life-tales-of-soldiers-and-civilians":
@@ -1067,7 +1067,7 @@ const BLURBS: Record<string, string> = {
   "poems-in-prose": "Baudelaire’s Paris in Symons’ English — spleen, crowds, and the gaslight.",
   "poems-hot-houses-bernard-miall": "Maeterlinck’s hothouse poems, glassed in and breathing strangely.",
   "poems-of-emile-verhaeren": "Verhaeren’s Flanders of rain, factories, and the long-drawn line.",
-  "poems-jessie-lemont-translation": "Rilke in Lemont’s English: angels, rooms, and the look that stays.",
+  "poems-jessie-lemont-translation": "Rilke’s early poems in English, from the quiet colours of Evening to the Virgin, the angels, autumn and a silent hour.",
   "ara-vus-prec": "Eliot’s 1920 London poems — quatrains, Sweeney, and the nerves of a city.",
   "the-tower": "Yeats’s later book: a tower, a winding stair, and history at the door.",
   "the-wind-among-the-reeds": "Early Yeats: the sidhe, the reeds, a Ireland still half-myth.",
@@ -1362,6 +1362,167 @@ const BLURBS: Record<string, string> = {
     "Young Grineff learns his letters from the gamekeeper Savelitch, and French, in theory, from Monsieur Beaupré, who would rather learn Russian.",
   "the-history-of-yiddish-literature":
     "Wiener starts with the bilingual Middle Ages, when Latin held learning and the Jews turned to Hebrew, and the old romances still pleased them.",
+  // Mira Tue 13 Oct 2026 BLURB-FIX — own line from each book’s opening, replacing a tagline written for another book.
+  "pierre-or-the-ambiguities":
+    "On a still June morning Pierre walks out under the village elms toward a cottage, and pauses at an open window with a crimson flower against a white pillow.",
+  "the-piazza-tales":
+    "From his country piazza a man watches a far-off window on the mountain, and once rows out to find who lives behind it.",
+  "the-confidence-man":
+    "A mute goes aboard a boat on the Mississippi, and the passengers begin to show their many minds.",
+  "the-mandarin":
+    "A month after his strange night, a weary Lisbon clerk scans the telegrams for news of China and drifts back to his small ambitions.",
+  "married":
+    "A young assistant asks the major for his daughter’s hand, and the major wants figures, not feelings.",
+  "the-imported-bridegroom-and-other-stories-of-the":
+    "On a snowy afternoon in the back parlor, Flora sets down Little Dorrit and watches the scarlet glow of the stove-glass.",
+  "twenty-six-and-one-and-other-stories":
+    "Twenty-six bakers roll dough from dawn to night in a damp cellar, and sometimes one of them starts a song.",
+  "mother":
+    "Every day the factory whistle calls the workers out of the little gray houses, and every evening it lets them go home to supper.",
+  "what-diantha-did":
+    "Under the vines of the mortgaged Warden house in California, Mrs. Warden crochets bright afghans while her four daughters sit around her.",
+  "main-street":
+    "On a hill above the Mississippi, Carol Milford leans into the wind, a girl from Blodgett College drinking the air as she longs to drink life.",
+  "domesday-book":
+    "Masters sets out to trace every ripple from one humble life, that of Elenor Murray, through all the lives it touched.",
+  "free-air":
+    "Claire Boltwood of Brooklyn drives her roadster through Minnesota rain with her father beside her, straight into the prairie gumbo.",
+  "our-mr-wrenn":
+    "A meek sales-entry clerk, called down at the office, walks to Fourteenth Street for the friendly nod of a moving-picture ticket-taker.",
+  "in-search-of-the-unknown":
+    "Safe in his library, a naturalist hesitates before telling what happened after he took charge of the water-fowl at the new Bronx Park zoo.",
+  "moving-the-mountain":
+    "On a cold Tibetan plateau a woman sees an old American belt buckle on a peasant, and calls out to her lost brother.",
+  "fantastic-fables":
+    "A Moral Principle meets a Material Interest on a bridge wide enough for only one.",
+  "the-secret-rose":
+    "A gleeman in a parti-coloured doublet hurries along the road to Sligo, shaking his fist at the crosses on the hill.",
+  "in-the-seven-woods":
+    "Yeats hears the pigeons of the Seven Woods and the bees in the lime flowers, and for a while forgets the old bitterness.",
+  "responsibilities-and-other-poems":
+    "Short poems of a witch, a peacock and a mountain tomb, then a child dancing on the shore with salt in her hair.",
+  "the-green-helmet-and-other-poems":
+    "Yeats dreams he is steering a gaudy ship while the crowd on shore asks about the figure on the bed.",
+  "fifty-years-other-poems":
+    "Johnson waits with the trembling stars for the tropic sun to rise, then drifts into the smoke of the cigarillos.",
+  "self-determining-haiti":
+    "Johnson sets out the banking interests behind the American occupation of Haiti, and the diplomatic letters that came before it.",
+  "toward-the-gulf":
+    "Masters follows the waters from the northern lakes and Itasca’s springs, down through gorges and rills, toward the gulf.",
+  "a-illustre-casa-de-ramires":
+    "On a hot June Sunday the Fidalgo da Torre works at his historical novel, looking out at the ancient black tower of his family.",
+  "roumanian-stories":
+    "At sunset on a lake of reeds, a girl in a boat asks the stranger whether he is not afraid of the fairy of the lake.",
+  "selected-polish-tales":
+    "The river Bialka rises under a hill no bigger than a cottage and runs out across level fields toward the ravines.",
+  "gilgamesh":
+    "Gish tells his mother his dreams, and she says a man born in the field and reared by the mountain is coming to him.",
+  "papeis-avulsos": "Machado’s loose papers open in Itaguaí, where Dr. Simão Bacamarte builds an asylum, then turn to a father’s lesson in mediocrity, a Turkish slipper and a mirror.",
+  "papeis-avulsos-incl-the-alienist":
+    "The chronicles of Itaguaí tell of Dr. Simão Bacamarte, the greatest physician in Brazil, who came home to give himself to science.",
+  "inferno-2":
+    "With a feeling of wild joy Strindberg leaves his wife at the Paris station, and sits alone at their old table in the Café de la Régence.",
+  "inferno": "Midway upon the journey of his life, Dante finds himself in a dark wood, and the road of the Inferno opens below him.",
+  "the-divine-comedy-complete": "Dante’s whole Divine Comedy, from the dark wood down through Hell, up the mountain of Purgatory and into Paradise.",
+  "the-epic-of-gilgamesh":
+    "Gilgamesh, king of Erech, in a 1917 English translation.",
+  "cat":
+    "A cat with no name yet begins the story of his life in a schoolteacher’s house.",
+  "kokoro":
+    "A student remembers the older man he always called Sensei, whom he first met on a beach at Kamakura.",
+  "maias":
+    "The Maias come to live in the old Lisbon house called the Ramalhete.",
+  "the-people-of-hemso":
+    "Carlsson, a farmhand from Värmland, comes out to the island of Hemsö to run Widow Flod’s farm.",
+  "god-s-trombones":
+    "Johnson sets down seven sermons in verse after the old Black preachers, opening with a prayer: Listen, Lord.",
+  "amaro":
+    "Eça de Queirós’s 1875 novel The Crime of Father Amaro.",
+  "madmen": "Erdosain opens the glass door to the manager’s office in Buenos Aires and knows at once he is lost: they have found out what he took.",
+  "the-marriage-of-heaven-and-hell": "Blake walks among the fires of Hell, delighted, collecting its proverbs: in seed-time learn, in harvest teach, in winter enjoy.",
+  "melmoth-the-wanderer": "A Dublin student rides out to the bedside of his dying miser uncle, and finds in a locked closet the portrait of an ancestor whose eyes still live.",
+  "father-goriot": "In a shabby Paris boarding house, the lodgers mock the old vermicelli maker whose money is somehow always going to his two fine daughters.",
+  "poems-ballads-first-series": "Swinburne opens on a plea to blind love that comes by night and casts out rest: lift up thy lips, turn round, look back.",
+  "under-the-greenwood-tree": "To dwellers in a wood every tree has its voice, and down Mellstock Lane on a winter night the old village choir goes out with its fiddles.",
+  "a-pair-of-blue-eyes": "In a remote Cornish rectory, Elfride Swancourt waits for the young architect sent to look over the crumbling church tower.",
+  "some-chinese-ghosts": "The water-clock marks the hour in the Tower of the Great Bell, and the story begins of the casting that would not ring true.",
+  "in-the-midst-of-life-tales-of-soldiers-and-civil": "A young Virginian sentry wakes in a clump of laurel above the valley and sees, on the cliff’s edge, a horseman against the sky.",
+  "bayou-folk": "Two young men on Canal Street talk of a run-down plantation on Red River, and one of them is sent up to look the old Santien place over.",
+  "the-altar-of-the-dead": "George Stransom keeps every year the date of the woman who died before their wedding, and one day lights candles for all his dead.",
+  "what-maisie-knew": "After the divorce a small girl is passed between her father and her mother, six months each, and slowly learns what she must not say.",
+  "in-ghostly-japan": "A breath of incense brings back to Hearn a lotus in a bronze vase, the first thing he saw in a Buddhist temple in Japan.",
+  "the-awkward-age": "On a wet London night Vanderbank brings an old friend home to his rooms, a man back after thirty years who once loved a girl’s grandmother.",
+  "the-octopus": "Presley bicycles down the County Road through the dry California wheat ranches, past Caraher’s saloon, as a far-off steam whistle blows.",
+  "the-sacred-fount": "On the train to a country house party, a guest notices that an old acquaintance looks years younger, and starts to wonder who is paying for it.",
+  "chamber-music": "Strings in the earth and air make music sweet, and Joyce’s young lover wanders the willowed river with love in his head.",
+  "jennie-gerhardt": "A poor mother and her eighteen-year-old daughter ask at the best hotel in Columbus, Ohio, for floors to scrub.",
+  "chance": "In a riverside inn, an old sailor tells two yachting men how he got his first berth, and Marlow begins to piece together a young woman’s story.",
+  "chitra": "A warrior princess raised as a man asks the god of love for one year of beauty, so that the hero Arjuna will look at her.",
+  "the-gardener": "A servant begs the queen for one favour at a late hour: to be the gardener of her flower garden.",
+  "victory": "On an island in the eastern seas, the drifting Swede Heyst sits among the ruins of a failed coal company, alone by his own choice.",
+  "fruit-gathering": "Tagore offers to gather his fruits in full baskets into the courtyard, though some are lost and some not ripe.",
+  "stray-birds": "Stray birds of summer come to the window to sing and fly away, and yellow leaves of autumn fall there with a sigh.",
+  "the-hungry-stones-and-other-stories": "Raicharan, a servant of twelve, is given his master’s baby son to nurse, and loves the boy past everything else he has.",
+  "mashi-and-other-stories": "Dying young, Jotin lies awake and tells his aunt that his wife should go home to her father’s house, and asks her to open the window a little.",
+  "the-triumph-of-the-egg": "Home from Chicago to Willow Springs, Iowa, Rosalind Wescott walks the railroad track one August afternoon with something she cannot tell her mother.",
+  "the-doves-nest-and-other-stories": "The Burnell children are given a doll’s house so big it has to stay in the courtyard, and the whole school wants to see it.",
+  "whilomville-stories": "Summer comes to the little town of Whilomville, and with it a spoiled city child with a fistful of money.",
+  "the-house-of-life": "A sonnet is a moment’s monument, and Rossetti builds a house of them for one love, room by room, from youth to change.",
+  "limehouse-nights": "In the low-lit Causeway by West India Dock they still tell the tale of a gentle Chinese shopkeeper and a beaten London girl.",
+  "rivers-to-the-sea": "The park is filled with night and fog, the lights along the paths are dim and pearled, and Teasdale asks if this is not enough.",
+  "the-monster-and-other-stories": "Little Jim plays at being engine Number 36 on the lawn, while the doctor’s coachman Henry Johnson dresses up for his evening out.",
+  "the-white-company": "The great bell of Beaulieu rings, and the monks turn out a brawling novice and send young Alleyne out of the abbey into the world.",
+  "crome-yellow": "Denis rides the slow train to a country house full of talkers, rehearsing all the way what he will say to Anne.",
+  "new-grub-street": "The Milvains sit down to breakfast as the church clock strikes eight, and Jasper, a young writer on the make, talks about getting on in London.",
+  "roderick-hudson": "A rich idle New Englander sees a statuette by a young Northampton sculptor and decides to carry him off to Rome.",
+  "the-hand-of-ethelberta": "In a wet seaside town a poor music teacher receives a book of poems, Metres by E., and reads in it the woman he once loved.",
+  "life-s-little-ironies": "At a concert by the bandstand, a young widow in a wheeled chair hears a voice behind her she has not heard for years.",
+  "villette": "Lucy Snowe remembers the visits of her girlhood to her godmother’s handsome house in the clean old town of Bretton.",
+  "pierre-and-jean": "Old Roland fishes off Le Havre with his two grown sons, and news of a legacy left to only one of them is waiting at home.",
+  "the-chinese-nightingale-and-other-poems": "Lindsay sings to Peace-of-the-Heart, his love through ancient ages, then walks out of Springfield into a forest age of tigers and parrots.",
+  "babbitt": "The towers of Zenith rise above the morning mist, and on a sleeping porch in Floral Heights, George F. Babbitt wakes up to his alarm-clock.",
+  "omoo": "On a bright tropical afternoon a sailor escapes from his island and boards a dingy whaler with a sick captain and an unruly crew.",
+  "micah-clarke": "An old man tells his grandchildren about his father, Ironside Joe, who fought for Cromwell and raised him in a Hampshire village.",
+  "the-black-riders-and-other-lines": "Black riders come from the sea with a clang of spear and shield, and three little birds in a row watch a man go by.",
+  "the-man-who-was-afraid": "Ignat Gordyeeff rises from water-pumper to rich barge-owner on the Volga, and his son Foma grows up wondering what all of it is for.",
+  "the-scarlet-plague": "An old man and his grandsons walk an overgrown railroad embankment, and he tells them about the world before the plague.",
+  "the-light-that-failed": "Two orphans play with a revolver on the beach as children, and years later Dick Heldar, a war artist in the Sudan, finds Maisie again in London.",
+  "war-is-kind": "Do not weep, maiden, says Crane, for war is kind, as the booming drums of the regiment beat on.",
+  "the-forerunner-his-parables-and-poems": "You are your own forerunner, Gibran begins, and the towers you have built are only the foundation of your giant self.",
+  "reincarnations": "Stephens retells old Irish poets in his own voice, from a grey man refusing a wily woman to the beauty of Mary Hynes of Ballylea.",
+  "the-house-of-pride-and-other-tales-of-hawaii": "Percival Ford, a rich and righteous man of Honolulu, will not dance at the farewell ball, and watches the dancers with disgust.",
+  "the-phantom-rickshaw-and-other-ghost-stories": "Kipling tells what ghosts are found in India, then of a man followed through Simla by a yellow rickshaw no one else can see.",
+  "island-tales-on-the-makaloa-mat": "Under a great hau tree by the sea, an old Hawaiian lady of fortune tells her sister of a love she never spoke of.",
+  "lost-face": "A crowded Yukon steamboat pulls away from the bank while a man shouts after it for a friend left behind with his message.",
+  "life-s-handicap-being-stories-of-mine-own-people": "The Indus rises in flood under the moon, and six bearded men set down the litter of their dying Deputy Commissioner at the bank.",
+  "when-god-laughs-and-other-stories": "In a bungalow shaken by a south-easter, a host laughs through his golden wine and tells how two lovers tried to cheat the gods.",
+  "actions-and-reactions": "A young American couple, George and Sophie, settle into an old English parish, and find the house and the land have a claim on them.",
+  "the-night-born": "Dave Slotter will not leave the outer office until he has seen Mr. Ward, a successful businessman with a secret that is himself.",
+  "the-greater-inclination": "At Villa d’Este a young admirer of a dead poet spends a month with the woman the poet’s letters were written to.",
+  "the-strength-of-gideon-and-other-stories": "Ben Raymond sings as he hoes, because Viney has said yes and the master has given his blessing and a five-dollar bill.",
+  "traffics-and-discoveries": "An old Sikh trooper tells how he rode beside his English officer to a war in South Africa, and how the officer died.",
+  "love-of-life-and-other-stories": "John Messner rubs his frozen cheeks as he drives five dogs and a loaded sled along the Yukon trail, after the wildest stampede of the winter.",
+  "burning-daylight": "On a quiet night in a Circle City saloon, Burning Daylight bursts in on his birthday, ready to dance, gamble and race the winter trail.",
+  "a-dome-of-many-coloured-glass": "Lowell’s first book of poems, from a man bowed before an altar with empty hands to the small bright things of a garden.",
+  "motley-and-other-poems": "De la Mare’s little salamander dreams of going free on a night of stars and snow, and a linnet makes the bramble fair.",
+  "one-of-ours": "Claude Wheeler wakes before sunrise on a Nebraska farm and shakes his brother up to wash the car for the circus.",
+  "the-mothers-recompense": "Kate Clephane, who left her husband and baby years ago, wakes to the Riviera sun in a shabby hotel, and a cable calls her home to New York.",
+  "in-a-glass-darkly": "A young doctor opens the papers of his master, Dr. Martin Hesselius, and the first case is a gentle clergyman who has begun to see a small black monkey.",
+  "the-jacket": "Darrell Standing writes from a prison cell as he waits to be hanged, of the other lives he lived while they laced him in the jacket.",
+  "the-hermit-and-the-wild-woman": "A hermit lives in a cave in a hill across the valley from the town that was burned, until he meets a woman who has run from her convent.",
+  "the-princess-casamassima": "A poor London dressmaker brings the small boy she has raised to see his dying mother in prison.",
+  "the-son-of-the-wolf": "On the long trail in the white silence, Mason bites the ice out of a failing dog’s toes, with his Indian wife and his partner beside him.",
+  "watch-and-ward": "In a hotel, a stranger begs Roger Lawrence for a hundred dollars, is refused, and leaves behind a little daughter.",
+  "atalanta-in-calydon": "The chorus sings that the hounds of spring are on winter’s traces, as the hunt for the great boar of Calydon is made ready.",
+  "felix-holt-the-radical": "An old lodge-keeper opens the gates of Transome Court for the heir coming home from the East, while his mother waits inside.",
+  "soldiers-three": "Far from the officers and the sergeants, Mulvaney, Ortheris and Learoyd sit in an old dry well and tell each other tales.",
+  "the-happy-prince-and-other-tales": "Every afternoon the children play in the Giant’s garden, until the Giant comes home and builds a high wall round it.",
+  "wessex-tales": "In the April water-meadows, the milkers of an eighty-cow dairy whisper that the farmer brings home his new bride tomorrow.",
+  "barrack-room-ballads": "What are the bugles blowing for, asks Files-on-Parade, and the regiment is turned out to watch Danny Deever hanged.",
+  "children-of-the-night": "Robinson’s first poems hold the men of Tilbury Town, from Richard Cory, who glittered when he walked, to Luke Havergal at the western gate.",
+  "the-days-work": "After three years of labour, the engineer Findlayson sits by his great bridge over the Ganges and waits for the flood.",
+  "ghetto-tragedies": "After a year of fasting every Monday and Thursday, Zillah gives birth to the son she has prayed for, and her husband Jossel is amazed.",
+  "aurora-leigh": "Aurora Leigh sets out to write her story for her better self, from a motherless childhood in Florence to her aunt’s cold house in England.",
 };
 
 /**
