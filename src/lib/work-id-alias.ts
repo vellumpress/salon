@@ -9,6 +9,9 @@ export const WORK_ID_ALIASES: Readonly<Record<string, string>> = {
   "three-plays": "three-plays-incl-henry-iv",
   // The shorter Mashonaland bind. Saved progress and links follow the full novel.
   "trooper-peter-halket-of-mashonaland": "trooper-peter-halket",
+  // Textless catalog stubs. Saved progress and links follow the local book.
+  "home-world": "the-home-and-the-world",
+  "the-colonels-dream": "colonels-dream",
 };
 
 export function canonicalWorkId(id: string): string {

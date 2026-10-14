@@ -340,7 +340,23 @@ function schedulePersist() {
 const persistStorage = {
   getItem: (name: string) => {
     if (typeof window === "undefined") return null;
-    return window.localStorage.getItem(name);
+    const raw = window.localStorage.getItem(name);
+    if (!raw) return raw;
+    try {
+      const parsed = JSON.parse(raw) as { state?: ReadingClockState; version?: number };
+      const version = typeof parsed?.version === "number" ? parsed.version : 0;
+      if (!parsed?.state || typeof parsed.state !== "object") return raw;
+      const state =
+        version < 3
+          ? remapAliasedWorkIds(migrateReadingClock(parsed.state, version))
+          : remapAliasedWorkIds(parsed.state);
+      if (version >= 3 && JSON.stringify(state) === JSON.stringify(parsed.state)) return raw;
+      const next = JSON.stringify({ ...parsed, state, version: 3 });
+      window.localStorage.setItem(name, next);
+      return next;
+    } catch {
+      return raw;
+    }
   },
   setItem: (name: string, value: string) => {
     if (typeof window === "undefined") return;
@@ -1072,8 +1088,9 @@ export const useTbr = create<TbrState>()(
     {
       // Persist key stays `vellum-v1`. Renaming it would wipe reading progress on this phone.
       name: "vellum-v1",
-      // v2: active-advance clock. v0/v1 ledgers were open→close wall time.
-      version: 2,
+      // v3: textless stubs follow the local books. v2: active-advance clock.
+      // v0/v1 ledgers were open→close wall time.
+      version: 3,
       migrate: (persisted, version) =>
         remapAliasedWorkIds(
           migrateReadingClock((persisted ?? {}) as ReadingClockState, version),

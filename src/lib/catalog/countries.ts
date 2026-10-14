@@ -908,7 +908,6 @@ const WORK_COUNTRY: Record<string, string> = {
   anandamath: "India",
   "chokher-bali": "India",
   gora: "India",
-  "home-world": "India",
   "the-home-and-the-world": "India",
   "the-immoralist": "France",
   "blood-and-sand": "Spain",

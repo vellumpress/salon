@@ -3174,7 +3174,8 @@ export function worksForRitualLane(lane: RitualLane): ShelfWork[] {
   const byId = new Map(SHELF.map((item) => [item.id, item]));
   const out: ShelfWork[] = [];
   const seen = new Set<string>();
-  for (const id of lane.workIds) {
+  for (const raw of lane.workIds) {
+    const id = canonicalWorkId(raw);
     if (seen.has(id) || !isLocalBound(id)) continue;
     const work = byId.get(id);
     if (!work) continue;

@@ -1,4 +1,5 @@
 import { hashSeed } from "../mondrian.ts";
+import { canonicalWorkId } from "../work-id-alias.ts";
 import { shuffleWithSeed } from "../recommend.ts";
 import { blurbFor } from "./blurbs.ts";
 import { isAdaptedBySalon } from "./curatorial.ts";
@@ -607,6 +608,7 @@ function toCard(work: ShelfWork): MixCard | null {
 
 /** Held, draft, catalog-only, and soft-hold titles never join a row. */
 function releasedForMix(work: ShelfWork) {
+  if (canonicalWorkId(work.id) !== work.id) return false;
   if (MIX_UNRELEASED_IDS.has(work.id)) return false;
   if (isEnReadableOff(work.id)) return false;
   if (!isBoundLocal(work)) return false;

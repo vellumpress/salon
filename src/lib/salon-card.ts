@@ -1,4 +1,5 @@
 import { creditLine } from "./credit-line.ts";
+import { canonicalWorkId } from "./work-id-alias.ts";
 import type { Fill } from "./mondrian.ts";
 import { fillOf } from "./mondrian.ts";
 import { clipLine } from "./share-codec.ts";
@@ -33,13 +34,13 @@ export type SalonCardInput = {
 
 export function cardFill(input: SalonCardInput): Fill {
   if (input.fill) return input.fill;
-  if (input.workId) return fillOf(input.workId);
+  if (input.workId) return fillOf(canonicalWorkId(input.workId));
   return "red";
 }
 
 export function cardReadPath(input: { workId: string; at?: number }): string {
   const at = typeof input.at === "number" && input.at >= 0 ? Math.floor(input.at) : 0;
-  return `/read/${encodeURIComponent(input.workId)}?at=${at}`;
+  return `/read/${encodeURIComponent(canonicalWorkId(input.workId))}?at=${at}`;
 }
 
 export function cardReadUrl(input: { workId: string; at?: number }): string {
