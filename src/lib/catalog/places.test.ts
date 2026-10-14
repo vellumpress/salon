@@ -139,6 +139,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
     "anne-of-green-gables": { label: "Avonlea, Prince Edward Island", region: "ca" },
+    arne: { label: "Rural Norway", region: "no" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
@@ -654,4 +655,10 @@ test("Wed 14 Oct AM ANNE place: Avonlea is fictional, so the chip names it with 
   assert.ok(REGION_SHAPES.ca?.d, "ca shape");
   assert.deepEqual(placeFor(shelfWork("anne-of-green-gables")!), { label: "Avonlea, Prince Edward Island", region: "ca" });
   assert.equal(CHIP_ONLY_PLACE["anne-of-green-gables"], undefined);
+});
+
+test("Wed 14 Oct MID ARNE place: rural Norway on the no shape, country Norway; no new region key", () => {
+  assert.ok(REGION_SHAPES.no?.d, "no shape");
+  assert.deepEqual(placeFor(shelfWork("arne")!), { label: "Rural Norway", region: "no" });
+  assert.equal(CHIP_ONLY_PLACE["arne"], undefined);
 });

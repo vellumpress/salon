@@ -1,0 +1,56 @@
+{
+  "id": "arne",
+  "title": "Arne",
+  "author": "Bjørnstjerne Bjørnson (tr. Augusta Plesner and S. Rugeley-Powers)",
+  "year": "1866",
+  "note": "Opening sit: Chapter I, How the cliff was clad, whole, ending \"This comes of reaching forwards,\" said the Juniper.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I · How the cliff was clad",
+      "place": "Chapter I · How the cliff was clad",
+      "reentry": "Between two cliffs lay a deep ravine, with a full stream rolling heavily through it over boulders and rough ground. It was high and steep, and one side was bare, save at the foot, where clustered a thick, fresh wood, so close to the stream ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Between two cliffs lay a deep ravine, with a full stream rolling heavily through it over boulders and rough ground. It was high and steep, and one side was bare, save at the foot, where clustered a thick, fresh wood, so close to the stream that the mist from the water lay upon the foliage in spring and autumn. The trees stood looking upwards and forwards, unable to move either way."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "\"What if we were to clothe the Cliff?\" said the Juniper one day to the foreign Oak that stood next him. The Oak looked down to find out who was speaking, and then looked up again without answering a word. The Stream worked so hard that it grew white; the Northwind rushed through the ravine, and shrieked in the fissures; and the bare Cliff hung heavily over and felt cold. \"What if we were to clothe the Cliff?\" said the Juniper to the Fir on the other side. \"Well, if anybody is to do it, I suppose we must,\" replied the Fir, stroking his beard; \"what dost thou think?\" he added, looking over to the Birch. \"In God's name, let us clothe it,\" answered the Birch, glancing timidly towards the Cliff, which hung over her so heavily that she felt as if she could scarcely breathe. And thus, although they were but three, they agreed to clothe the Cliff. The Juniper went first."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "When they had gone a little way they met the Heather. The Juniper seemed as though he meant to pass her by. \"Nay, let us take the Heather with us,\" said the Fir. So on went the Heather. Soon the Juniper began to slip. \"Lay hold on me,\" said the Heather. The Juniper did so, and where there was only a little crevice the Heather put in one finger, and where she had got in one finger the Juniper put in his whole hand. They crawled and climbed, the Fir heavily behind with the Birch. \"It is a work of charity,\" said the Birch."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "But the Cliff began to ponder what little things these could be that came clambering up it. And when it had thought over this a few hundred years, it sent down a little Brook to see about it. It was just spring flood, and the Brook rushed on till she met the Heather. \"Dear, dear Heather, canst thou not let me pass? I am so little,\" said the Brook. The Heather, being very busy, only raised herself a little, and worked on. The Brook slipped under her, and ran onwards. \"Dear, dear Juniper, canst thou not let me pass? I am so little,\" said the Brook. The Juniper glanced sharply at her; but as the Heather had let her pass, he thought he might do so as well. The Brook slipped under him, and ran on till she came where the Fir stood panting on a crag. \"Dear, dear Fir, canst thou not let me pass? I am so little,\" the Brook said, fondly kissing the Fir on his foot. The Fir felt bashful and let her pass. But the Birch made way before the Brook asked. \"He, he, he,\" laughed the Brook, as she grew larger. \"Ha, ha, ha,\" laughed the Brook again, pushing Heather and Juniper, Fir and Birch, forwards and backwards, up and down on the great crags. The Cliff sat for many hundred years after, pondering whether it did not smile a little that day."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "It was clear the Cliff did not wish to be clad. The Heather felt so vexed that she turned green again, and then she went on. \"Never mind; take courage!\" said the Heather."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "The Juniper sat up to look at the Heather, and at last he rose to his feet. He scratched his head a moment, and then he too went on again, and clutched so firmly, that he thought the Cliff could not help feeling it. \"If thou wilt not take me, then I will take thee,\" said he. The Fir bent his toes a little to feel if they were whole, lifted one foot, which he found all right, then the other, which was all right too, and then both feet. He first examined the path he had come, then where he had been lying, and at last where he had to go. Then he strode onwards, just as though he had never fallen. The Birch had been splashed very badly, but now she got up and made herself tidy. And so they went rapidly on, upwards and sidewards, in sunshine and rain. \"But what in the world is all this?\" said the Cliff, when the summer sun shone, the dew-drops glittered, the birds sang, the wood-mouse squeaked, the hare bounded, and the weasel hid and screamed among the trees."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Then the day came when the Heather could peep over the Cliff's edge. \"Oh, dear me!\" said she, and over she went. \"What is it the Heather sees, dear?\" said the Juniper, and came forwards till he, too, could peep over. \"Dear me!\" he cried, and over he went. \"What's the matter with the Juniper to-day?\" said the Fir, taking long strides in the hot sun. Soon he, too, by standing on tiptoes could peep over. \"Ah!\"—every branch and prickle stood on end with astonishment. He strode onwards, and over he went. \"What is it they all see, and not I?\" said the Birch, lifting up her skirts, and tripping after. \"Ah!\" said she, putting her head over, \"there is a whole forest, both of Fir and Heather, and Juniper and Birch, waiting for us on the plain;\" and her leaves trembled in the sunshine till the dew-drops fell. \"This comes of reaching forwards,\" said the Juniper."
+    }
+  ]
+}

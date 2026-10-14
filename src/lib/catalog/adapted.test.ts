@@ -399,8 +399,8 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   // FRIENDSHIP-VILLAGE adds one (1168).
   // The partial Colonel's Dream leaves the shelf; the 419-minute book stays (1167).
   // Shelf dedupe retires 22 local duplicate rows; the keepers stay (1145).
-  // ANNE adds one (1146).
-  assert.equal(LOCAL_WORKS.length, 1146);
+  // ANNE adds one (1146); ARNE adds one more (1147).
+  assert.equal(LOCAL_WORKS.length, 1147);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 
