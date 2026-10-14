@@ -137,3 +137,16 @@ export function isDeadDocument(error: unknown, pageReadable: boolean): boolean {
   const message = error instanceof Error ? error.message : String(error);
   return /Timeout \d+ms exceeded/.test(message);
 }
+
+/**
+ * A shell reload opens the book at the first sentence. Landing there from
+ * anywhere else means the tap was not graded.
+ */
+export function jumpedToStart(
+  place: { index: number; cursor: number } | null,
+  before: { index: number; cursor: number },
+): boolean {
+  if (!place) return false;
+  if (place.index !== 0 || place.cursor !== 0) return false;
+  return before.index !== 0 || before.cursor !== 0;
+}
