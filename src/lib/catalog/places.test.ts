@@ -137,6 +137,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "annals-of-the-parish": { label: "Ayrshire", region: "gb" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
+    "friendship-village": { label: "Wisconsin", region: "us" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
@@ -640,4 +641,10 @@ test("Tue 13 Oct MID PRECIOUS-BANE place: Sarn is fictional, so the chip names t
   assert.ok(REGION_SHAPES.gb?.d, "gb shape");
   assert.deepEqual(placeFor(shelfWork("precious-bane")!), { label: "Shropshire", region: "gb" });
   assert.equal(CHIP_ONLY_PLACE["precious-bane"], undefined);
+});
+
+test("Tue 13 Oct PM FRIENDSHIP-VILLAGE place: the fictional river town is filed under its state, Wisconsin, on us; no new region key", () => {
+  assert.ok(REGION_SHAPES.us?.d, "us shape");
+  assert.deepEqual(placeFor(shelfWork("friendship-village")!), { label: "Wisconsin", region: "us" });
+  assert.equal(CHIP_ONLY_PLACE["friendship-village"], undefined);
 });

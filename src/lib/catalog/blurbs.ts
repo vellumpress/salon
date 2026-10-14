@@ -429,6 +429,8 @@ const BLURBS: Record<string, string> = {
   deephaven: "Two Boston friends spend a summer keeping house in an old seaport, among retired sea captains, widows and fisher-people, and come to love them all.",
   "precious-bane":
     "A heads-up before you start: the narrator is mocked as a witch for her harelip, and the book tells plainly of a bull-baiting with dogs. Later there is a sham conjuring in which a young woman is made to stand naked for a squire to look at, a father who talks of selling his daughter, a son who poisons his mother, drownings, and a mob that tries to duck the narrator as a witch.",
+  "friendship-village":
+    "One long Middle West street takes in telephones, a new doctor and modern china in its own unhurried way, while Calliope Marsh, mender of lace and music teacher, keeps an eye on it all.",
   "the-adventures-of-huckleberry-finn":
     "A boy and a man on a raft, heading south through a country that will not let them be.",
   "pride-and-prejudice": "A country dance, a proud man, and the long work of being wrong about someone.",

@@ -212,6 +212,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "annals-of-the-parish": { label: "Ayrshire", region: "gb" },
   deephaven: { label: "Maine", region: "us" },
   "precious-bane": { label: "Shropshire", region: "gb" },
+  "friendship-village": { label: "Wisconsin", region: "us" },
   "tales-by-polish-authors": { label: "Poland", region: "pl" },
   "the-dancing-master": { label: "Paris", region: "fr" },
   "the-golden-age": { label: "England", region: "gb" },
