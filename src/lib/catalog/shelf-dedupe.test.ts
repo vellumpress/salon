@@ -95,21 +95,15 @@ test("shelf dupes leave the shelf and follow the keeper", () => {
   assert.equal(existsSync(new URL("./texts/dorian.json", import.meta.url)), true);
 });
 
-test("moved sits end on a scene break, and the Mogens cut stays unseated", () => {
-  const pan = sceneWords("the-great-god-pan");
-  assert.match(pan.title, /Chapter 1|Chapter I/);
-  assert.equal(pan.words, 3040);
-  assert.equal(pan.minutes, 15);
-  assert.equal(RITUAL_SIT_MINUTES["the-great-god-pan"], 15);
-  assert.match(pan.opening, /glad you came, Clarke/);
-  assert.match(ritualPitchFor("the-great-god-pan") ?? "", /ends with the chapter/);
-  assert.doesNotMatch(ritualPitchFor("the-great-god-pan") ?? "", /ends with the novella/);
+test("moved sits end on a scene break, and the Mogens and Pan cuts stay unseated", () => {
   const waking = RITUAL_LANES.find((lane) => lane.id === "waking-up");
-  assert.equal(waking?.workIds.includes("the-great-god-pan"), true);
   for (const lane of RITUAL_LANES) {
-    if (lane.id === "waking-up") continue;
     assert.equal(lane.workIds.includes("the-great-god-pan"), false, lane.id);
   }
+  assert.equal(RITUAL_SIT_MINUTES["the-great-god-pan"], undefined);
+  assert.equal(RITUAL_SIT_MINUTES["great-god-pan"], undefined);
+  assert.equal(ritualPitchFor("the-great-god-pan"), undefined);
+  assert.equal(existsSync(new URL("./openings/the-great-god-pan.json", import.meta.url)), false);
 
   const dogs = sceneWords("the-underdogs");
   assert.match(dogs.title, /Chapter I/);
