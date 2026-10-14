@@ -1385,6 +1385,140 @@ html:has(.board-doors) body {
   -webkit-box-orient: vertical;
 }
 
+/* Curated page: the same Mondrian board as home. Ink shows through the gap as the rule. */
+.board.board-curated {
+  gap: 0.625rem;
+  padding: 0.625rem;
+  padding-bottom: max(0.625rem, var(--spacing-chrome));
+  background: var(--color-ink);
+}
+
+.curated-mosaic {
+  display: contents;
+}
+
+.curated-lists-block {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.75rem;
+  padding: 0 1.15rem;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.curated-lists-block:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: -2px;
+}
+
+.curated-block {
+  --block-fill: var(--color-paper);
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 0;
+  min-height: 17.25rem;
+  padding: 1rem 0 0.35rem;
+  background: var(--block-fill);
+  color: var(--color-ink);
+}
+
+.curated-block.is-hero {
+  min-height: 24rem;
+}
+
+.curated-block.is-wide {
+  min-height: 21rem;
+}
+
+.curated-block.is-pair-a {
+  min-height: 19rem;
+}
+
+.curated-block.is-pair-b {
+  min-height: 17.25rem;
+}
+
+.curated-block.is-yellow {
+  --block-fill: var(--color-yellow);
+  color: var(--color-ink);
+}
+
+.curated-block.is-paper {
+  --block-fill: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.curated-block.is-red {
+  --block-fill: var(--color-red);
+  color: var(--color-paper);
+}
+
+.curated-block.is-blue {
+  --block-fill: var(--color-blue);
+  color: var(--color-paper);
+}
+
+.curated-block.is-forest {
+  --block-fill: var(--color-forest);
+  color: var(--color-paper);
+}
+
+.curated-block.is-ink {
+  --block-fill: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.curated-block-title {
+  margin: 0;
+  padding: 0 1.15rem 0.15rem;
+  color: inherit;
+}
+
+.curated-block .cell-works {
+  background: transparent;
+}
+
+.curated-block .cell-works::before {
+  background: linear-gradient(to right, var(--block-fill), transparent);
+}
+
+.curated-block .cell-works::after {
+  background: linear-gradient(to left, var(--block-fill), transparent);
+}
+
+.curated-block .works-scroller {
+  touch-action: pan-x pan-y;
+}
+
+.curated-block .works-card,
+.curated-block .works-title,
+.curated-block .works-author,
+.curated-block .works-blurb,
+.curated-block .works-time,
+.curated-block .place-chip,
+.curated-block .place-chip-label {
+  color: inherit;
+}
+
+.curated-block .works-author,
+.curated-block .works-time {
+  opacity: 0.82;
+}
+
+.curated-block .works-blurb {
+  opacity: 0.92;
+}
+
+.curated-block .works-card:focus-visible {
+  outline-color: currentColor;
+}
+
 /* Phone: row rhythm matches the shelf's own padding, without a second band of paper. */
 @media (max-width: 767px) {
   .curated-head {
@@ -1699,6 +1833,26 @@ html:has(.board-doors) body {
     height: var(--vvh, 100dvh);
     max-height: var(--vvh, 100dvh);
     overflow: hidden;
+  }
+  .curated-block.is-pair-a {
+    grid-column: span 7;
+    min-height: 22rem;
+  }
+  .curated-block.is-pair-b {
+    grid-column: span 5;
+    min-height: 22rem;
+  }
+  .curated-block.is-pair-a .works-card.has-detail,
+  .curated-block.is-pair-b .works-card.has-detail {
+    flex-basis: 15.5rem;
+    min-width: 15.5rem;
+    max-width: 17.5rem;
+  }
+  .curated-block.is-hero {
+    min-height: 28rem;
+  }
+  .curated-block.is-wide {
+    min-height: 24rem;
   }
   .daily-score-chip--continue {
     width: 7.5rem;

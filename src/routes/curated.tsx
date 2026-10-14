@@ -8,7 +8,7 @@ export const Route = createFileRoute("/curated")({
 
 function CuratedPage() {
   return (
-    <main className="board board-alive board-adapted">
+    <main className="board board-alive board-adapted board-curated">
       <div className="cell-mark flex bg-paper">
         <Link
           to="/"
