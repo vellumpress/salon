@@ -3050,8 +3050,11 @@ html.together-compose .chat-field {
   animation-delay: 0.38s;
 }
 
-/* Homepage import sits under the door, on the same paper. */
+/* Homepage import sits under the door, on the same paper.
+   Direct child of `.board`: span every track, or the 12-column layout
+   leaves it in one ~84px column and the 2-column layout leaves a black half. */
 .home-import {
+  grid-column: 1 / -1;
   background: var(--color-paper);
   color: var(--color-ink);
   border-top: 1px solid var(--color-ink);
