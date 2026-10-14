@@ -11,6 +11,7 @@ import {
   catalogIdsFromDiff,
   catalogWalkMode,
   isDeadDocument,
+  jumpedToStart,
   isPageGotoTimeout,
   isRetryableCatalogOpen,
   resolveEpochDay,
@@ -589,13 +590,16 @@ async function step(
       let destroyed = isRetryableCatalogOpen(error);
       if (!destroyed) {
         const graded = await readSentence(page).catch(() => null);
-        if (graded) {
+        // 0:0 after a tap from anywhere else is the shell opening the book
+        // again, not the sentence the tap chose. Reopen and aim once more.
+        const wiped = jumpedToStart(graded, before);
+        if (graded && !wiped) {
           const from = shot ? shot.from : "?";
           throw new Error(
             `${label}: index ${graded.index}:${graded.cursor} scroll ${graded.scrollTop}, expected ${predicted.index}:${predicted.cursor} after ${burst} (from ${from} pinned=${shot?.pinned} line=${shot?.lineTop} host=${shot?.hostTop} x=${shot?.x} y=${shot?.y}; ${error instanceof Error ? error.message : error})`,
           );
         }
-        destroyed = isDeadDocument(error, false);
+        destroyed = wiped || isDeadDocument(error, graded != null);
       }
       if (destroyed && nav === 0) {
         // A service-worker reload destroys the measure. The new document's

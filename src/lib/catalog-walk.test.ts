@@ -11,6 +11,7 @@ import {
   catalogIdsFromDiff,
   catalogWalkMode,
   isDeadDocument,
+  jumpedToStart,
   isPageGotoTimeout,
   isRetryableCatalogOpen,
   resolveEpochDay,
@@ -198,6 +199,10 @@ test("a page.goto timeout is retryable and a step miss is not", () => {
     false,
   );
   assert.equal(isDeadDocument(new Error("salome back: index 3:0, expected 4:0"), false), false);
+  assert.equal(jumpedToStart({ index: 0, cursor: 0 }, { index: 306, cursor: 0 }), true);
+  assert.equal(jumpedToStart({ index: 305, cursor: 0 }, { index: 306, cursor: 0 }), false);
+  assert.equal(jumpedToStart({ index: 0, cursor: 0 }, { index: 0, cursor: 0 }), false);
+  assert.equal(jumpedToStart(null, { index: 306, cursor: 0 }), false);
 });
 
 test("catalog walk anchors are readable books on disk", () => {
