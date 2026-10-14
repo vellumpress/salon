@@ -1222,6 +1222,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "annals-of-the-parish",
   // Mira Mon 12 Oct 2026 PM DEEPHAVEN — Deephaven (Jewett, 1877) follows Annals, plain Next, no heads-up. Never Featured, off every Ritual lane.
   "deephaven",
+  // Mira Tue 13 Oct 2026 MID PRECIOUS-BANE — Precious Bane follows Deephaven, Next carefully only (the heads-up is on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (Book One, Chapter I, Sarn Mere, whole) is never unwind or before-sleep.
+  "precious-bane",
 ] as const;
 
 /**
