@@ -3,6 +3,7 @@ import test from "node:test";
 import { phoneBlockLimit, phoneLineMeasure, PHONE_LINE_PX } from "./display-blocks.ts";
 import {
   markSpotlight,
+  passageEndsAtStop,
   placeOf,
   repeatSpotlight,
   spotlightGroups,
@@ -44,6 +45,85 @@ test("short sentences merge into one two-to-three line group", () => {
   assert.ok(linesOf(groups[0]!.sample) >= 1);
   assert.ok(linesOf(groups[0]!.sample) <= 3.4);
   assertGroupFits(groups[0]!);
+});
+
+test("a passage does not merge across a sit or ritual stop", () => {
+  const breaths = [
+    { index: 0, text: "One." },
+    { index: 1, text: "Two." },
+    { index: 2, text: "Three." },
+  ];
+  const open = spotlightGroups(breaths, measure, limit, line);
+  assert.ok(open.some((group) => group.index <= 1 && group.endIndex > 1), "the fixture did not merge across the stop");
+  const stopped = spotlightGroups(breaths, measure, limit, line, "prose", new Set([1]));
+  assert.equal(passageEndsAtStop(stopped, 1, "Two.".length), null);
+  assert.equal(stopped[0]!.index, 0);
+  assert.equal(stopped[0]!.endIndex, 1);
+  assert.equal(stopped[1]!.index, 2);
+  assert.ok(stopped[1]!.endIndex >= 2);
+  assert.ok(stopped.every((group) => group.index > 1 || group.endIndex <= 1));
+});
+
+test("a short fragment does not take the sentence after a stop", () => {
+  const first = "Hi.";
+  const second = "The spare key stayed under the third stair where the landlord had hidden it.";
+  assert.ok(linesOf(first) < 2 - 0.34, `fragment measured ${linesOf(first).toFixed(2)} lines`);
+  assert.ok(linesOf(second) <= 3 + 0.34, `next sentence measured ${linesOf(second).toFixed(2)} lines`);
+  const stacked = linesOf(first) + linesOf(second);
+  assert.ok(stacked > 3 + 0.34, `stacked pair measured ${stacked.toFixed(2)} lines`);
+  assert.ok(stacked * line <= limit + 0.5, `stacked pair measured ${stacked * line}px`);
+  const breaths = [
+    { index: 4, text: first },
+    { index: 5, text: second },
+  ];
+  const open = spotlightGroups(breaths, measure, limit, line);
+  assert.equal(open.length, 1);
+  assert.equal(open[0]!.endIndex, 5);
+  assert.match(open[0]!.sample, /spare key/);
+  const stopped = spotlightGroups(breaths, measure, limit, line, "prose", new Set([4]));
+  assert.equal(passageEndsAtStop(stopped, 4, first.length), null);
+  assert.equal(stopped[0]!.sample, first);
+  assert.equal(stopped[0]!.endIndex, 4);
+  assert.equal(stopped[1]!.index, 5);
+  assert.doesNotMatch(stopped[0]!.sample, /spare/);
+});
+
+test("a sit that ends inside a longer breath does not take the next sentence", () => {
+  const text = "The air of Naples generates legend. Go now.";
+  const cut = text.indexOf("Go now");
+  assert.ok(cut > "legend.".length);
+  const breaths = [
+    { index: 1, text },
+    { index: 2, text: "The next breath starts here." },
+  ];
+  const open = spotlightGroups(breaths, measure, limit, line);
+  assert.notEqual(passageEndsAtStop(open, 1, cut), null);
+  const stopped = spotlightGroups(breaths, measure, limit, line, "prose", new Set([1]), new Map([[1, cut]]));
+  assert.equal(passageEndsAtStop(stopped, 1, cut), null);
+  const finisher = stopped.find((group) => group.parts.some((part) => part.index === 1 && part.end === cut));
+  assert.ok(finisher);
+  assert.match(finisher.sample, /generates legend/);
+  assert.doesNotMatch(finisher.sample, /Go now/);
+  assert.ok(stopped.some((group) => group.sample.includes("Go now")));
+});
+
+test("sentences inside a stop still merge, and the following breath stays out", () => {
+  const text = "Alpha one. Beta two. Gamma three stays here.";
+  const next = "The next paragraph starts after the stop.";
+  const breaths = [
+    { index: 8, text },
+    { index: 9, text: next },
+  ];
+  const groups = spotlightGroups(breaths, measure, limit, line, "prose", new Set([8]));
+  assert.equal(passageEndsAtStop(groups, 8, text.length), null);
+  const finisher = groups.find((group) => group.parts.some((part) => part.index === 8 && part.end === text.length));
+  assert.ok(finisher);
+  assert.match(finisher!.sample, /Alpha one/);
+  assert.match(finisher!.sample, /Gamma three/);
+  assert.equal(finisher!.endIndex, 8);
+  const after = groups.find((group) => group.index === 9);
+  assert.ok(after);
+  assert.match(after!.sample, /next paragraph/);
 });
 
 test("a fragment under two lines takes the next whole sentence inside a third of the screen", () => {

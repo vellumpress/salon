@@ -71,6 +71,7 @@ import {
   stepSpotlight,
   type SpotlightGroup,
 } from "@/lib/spotlight";
+import { cutsForWork, stopsForWork } from "@/lib/catalog/merge-stop-index";
 import { useDisplayBlocks } from "@/lib/use-display-blocks";
 import { FittedCopy } from "@/components/fitted-copy";
 import {
@@ -662,13 +663,16 @@ export function TbrReader({
   const kept = progress?.kept ?? [];
   const isKept = breath ? keptIncludes(kept, breath.id) : false;
   const displayKind = displayKindForForm(shelfWork(work.id)?.form);
+  const mergeStops = useMemo(() => stopsForWork(work.id), [work.id]);
+  const mergeCuts = useMemo(() => cutsForWork(work.id), [work.id]);
+  const mergeStopKey = `${mergeStops ? [...mergeStops].join(",") : ""}|${mergeCuts ? [...mergeCuts].map(([index, end]) => `${index}:${end}`).join(",") : ""}`;
   const display = useDisplayBlocks(
     breathLineRef,
     displayTexts,
     `${together ? 1 : 0}:${centerOn ? 1 : 0}:${isKept ? 1 : 0}:${index}`,
     displayKind,
   );
-  const metricsCacheKey = `${display.metricsKey}|${display.limit}|${display.linePx}|${displayKind}|${work.breaths.length}|${work.breaths[0]?.id ?? ""}`;
+  const metricsCacheKey = `${display.metricsKey}|${display.limit}|${display.linePx}|${displayKind}|${work.breaths.length}|${work.breaths[0]?.id ?? ""}|${mergeStopKey}`;
   if (groupCacheKey.current !== metricsCacheKey) {
     groupCacheKey.current = metricsCacheKey;
     groupCache.current.clear();
@@ -690,6 +694,8 @@ export function TbrReader({
       display.limit,
       display.linePx,
       displayKind,
+      mergeStops,
+      mergeCuts,
     );
     groupCache.current.set(key, groups);
     return groups;
