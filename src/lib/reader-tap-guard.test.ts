@@ -1,9 +1,8 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer } from "./reader-dev-server.ts";
-import { breathSentenceCount } from "./sentence-step.ts";
+import { planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -14,19 +13,6 @@ const USER_ID = "tap-guard-user";
 
 type SpotName = "open" | "mid" | "sit";
 type AuthMode = "out" | "in";
-
-const breaths = (
-  JSON.parse(readFileSync(new URL("./catalog/texts/cranford.json", import.meta.url), "utf8")) as {
-    breaths: { text: string }[];
-  }
-).breaths;
-
-function retreat(index: number, cursor: number) {
-  if (cursor > 0) return { index, cursor: cursor - 1 };
-  const prev = index - 1;
-  assert.ok(prev >= 0, "retreated off the start of the book");
-  return { index: prev, cursor: breathSentenceCount(breaths[prev]?.text ?? "") - 1 };
-}
 
 function spotOf(name: SpotName): { search: string; at: number } {
   if (name === "mid") return { search: "at=40", at: 40 };
@@ -267,11 +253,13 @@ async function holdCase(browser: Browser, engine: "chromium" | "webkit", auth: A
     assert.equal((await page.viewportSize())?.width, 390);
     assert.equal((await page.viewportSize())?.height, 844);
 
-    const once = retreat(at, 0);
+    const once = await planGroups(page, -1, 1);
+    assert.notEqual(once, "start", `${label} walked off the start`);
+    assert.notEqual(once, "end", `${label} walked off the end`);
     tappedAt.current = Date.now();
     await tapLeft(page);
-    await waitPlace(page, once);
-    await holds(page, once, HOLD_MS);
+    await waitGroup(page, once as GroupPlace);
+    await holds(page, once as GroupPlace, HOLD_MS);
 
     if (auth === "in") assert.ok(libraryGets >= 1, `${label} remote shelf never arrived`);
     if (spot !== "mid") {

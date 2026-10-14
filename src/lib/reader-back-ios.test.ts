@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -208,22 +209,25 @@ test(
     try {
       const page = await phone(browser);
       await openAt(page, "the-house-of-mirth", 12);
+      const start = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       const spot = await column(page);
       const fwd = forwardPoint(spot);
+      const forward = await planGroups(page, 1, 1);
+      assert.notEqual(forward, "end");
       await page.touchscreen.tap(fwd.x, fwd.y);
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "13",
-      );
+      await waitGroup(page, forward as GroupPlace);
       const next = await column(page);
       const back = backPoint(next);
       assert.ok(Math.hypot(back.x - fwd.x, back.y - fwd.y) > 24, "back point is still the forward finger");
+      const backPlan = await planGroups(page, -1, 1);
+      assert.notEqual(backPlan, "start");
       await mouseOnlyTap(page, back.x, back.y);
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "12",
-        undefined,
-        { timeout: 2000 },
+      await waitGroup(page, backPlan as GroupPlace);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        start,
+        "mouse back did not return one group",
       );
-      assert.equal(await breathIndex(page), 12);
     } finally {
       await browser.close();
       await stop();
@@ -245,13 +249,14 @@ test(
       const page = await phone(browser);
       await openAt(page, "the-house-of-mirth", 12);
       const back = backPoint(await column(page));
+      const planned = await planGroups(page, -1, 1);
+      assert.notEqual(planned, "start");
       await mouseLift(page, back.x, back.y);
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "11",
-        undefined,
-        { timeout: 2000 },
+      await waitGroup(page, planned as GroupPlace);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(planned as GroupPlace),
       );
-      assert.equal(await breathIndex(page), 11);
     } finally {
       await browser.close();
       await stop();
@@ -276,6 +281,8 @@ test(
       assert.ok(glass, "hourglass missing");
       await page.touchscreen.tap(glass.x + glass.width / 2, glass.y + glass.height / 2);
       await page.getByRole("button", { name: "Prev", exact: true }).waitFor();
+      const planned = await planGroups(page, -1, 1);
+      assert.notEqual(planned, "start");
       await page.evaluate(() => {
         const button = [...document.querySelectorAll("button")].find((node) => node.textContent === "Prev");
         if (!button) throw new Error("Prev missing");
@@ -309,12 +316,11 @@ test(
           }),
         );
       });
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "11",
-        undefined,
-        { timeout: 2000 },
+      await waitGroup(page, planned as GroupPlace);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(planned as GroupPlace),
       );
-      assert.equal(await breathIndex(page), 11);
     } finally {
       await browser.close();
       await stop();
@@ -336,7 +342,14 @@ test(
       const page = await phone(browser);
       await openAt(page, "lamia", 5);
       const opened = await column(page);
-      assert.equal(opened.overflows, true, "lamia 5 is not taller than the column");
+      const lamiaHeight = await page.evaluate(() => {
+        const nodes = [...document.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
+        if (nodes.length === 0) return 0;
+        const top = Math.min(...nodes.map((node) => node.getBoundingClientRect().top));
+        const bottom = Math.max(...nodes.map((node) => node.getBoundingClientRect().bottom));
+        return bottom - top;
+      });
+      assert.ok(lamiaHeight > 0 && lamiaHeight <= 281, `lamia focus is ${lamiaHeight}px`);
       assert.ok(opened.scrollTop < 4);
       const x = Math.round(opened.host.left + opened.host.width * 0.7);
       const y0 = Math.round(opened.host.top + opened.host.height * 0.72);
@@ -365,20 +378,17 @@ test(
       }, { x, y0 });
       const scrolled = await column(page);
       assert.equal(scrolled.index, 5);
-      assert.ok(scrolled.scrollTop > 20, "drag did not leave the top of the sentence");
+      assert.ok(scrolled.scrollTop < 4, "drag scrolled a windowed passage");
       const back = {
         x: Math.round(scrolled.host.left + scrolled.host.width * 0.12),
         y: Math.round(scrolled.host.top + scrolled.host.height * 0.72),
       };
+      const backPlan = await planGroups(page, -1, 1);
+      assert.notEqual(backPlan, "start");
       await page.touchscreen.tap(back.x, back.y);
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "4",
-        undefined,
-        { timeout: 2000 },
-      );
+      await waitGroup(page, backPlan as GroupPlace);
       const landed = await column(page);
-      assert.equal(landed.index, 4);
-      assert.ok(landed.scrollTop < 4, "the previous sentence did not open at its start");
+      assert.ok(landed.scrollTop < 4, "the previous group did not open at its start");
     } finally {
       await browser.close();
       await stop();
@@ -404,12 +414,12 @@ test(
         x: Math.round(opened.host.left + opened.host.width * 0.72),
         y: Math.round(opened.host.top + 18),
       };
+      const forwardPlan = await planGroups(page, 1, 1);
+      assert.notEqual(forwardPlan, "end");
       await page.touchscreen.tap(forward.x, forward.y);
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "25",
-        undefined,
-        { timeout: 4000 },
-      );
+      await waitGroup(page, forwardPlan as GroupPlace);
+      const grid = await planGroups(page, -1, 20);
+      assert.notEqual(grid, "start");
       for (let i = 0; i < 20; i += 1) {
         const spot = await column(page);
         const xs = [0.08, 0.18, 0.28];
@@ -417,15 +427,16 @@ test(
         const x = Math.round(spot.host.left + spot.host.width * xs[i % xs.length]!);
         const y = Math.round(spot.host.top + Math.min(spot.host.height - 12, spot.host.height * ys[i % ys.length]!));
         assert.ok(x < spot.host.left + spot.host.width / 3, "tap left the left third");
+        const planned = await planGroups(page, -1, 1);
+        assert.notEqual(planned, "start");
         await page.touchscreen.tap(x, y);
-        await page.waitForFunction(
-          (want) =>
-            document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === String(want),
-          24 - i,
-          { timeout: 4000 },
-        );
+        await waitGroup(page, planned as GroupPlace);
       }
-      assert.equal(await breathIndex(page), 5);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(grid as GroupPlace),
+        "left-side taps skipped a group",
+      );
     } finally {
       await browser.close();
       await stop();
@@ -449,7 +460,7 @@ test(
       await page.locator('input[type="file"]').setInputFiles({
         name: "fixture.pdf",
         mimeType: "application/pdf",
-        buffer: Buffer.from(fixturePdf(12)),
+        buffer: Buffer.from(fixturePdf(36)),
       });
       await page.waitForURL(/\/read\/page/, { timeout: 30_000 });
       const sit = page.getByRole("button", { name: "Sit", exact: true });
@@ -460,28 +471,27 @@ test(
       for (let i = 0; i < 4; i += 1) {
         const spot = await column(page);
         const fwd = forwardPoint(spot);
+        const planned = await planGroups(page, 1, 1);
+        assert.notEqual(planned, "end");
         await page.touchscreen.tap(fwd.x, fwd.y);
-        await page.waitForFunction(
-          (want) =>
-            document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === String(want),
-          spot.index + 1,
-        );
+        await waitGroup(page, planned as GroupPlace);
       }
-      assert.equal(await breathIndex(page), 4);
       const spot = await column(page);
       const fwd = forwardPoint(spot);
+      const forward = await planGroups(page, 1, 1);
+      assert.notEqual(forward, "end");
       await page.touchscreen.tap(fwd.x, fwd.y);
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "5",
-      );
+      await waitGroup(page, forward as GroupPlace);
       const back = backPoint(await column(page));
+      const backPlan = await planGroups(page, -1, 1);
+      assert.notEqual(backPlan, "start");
       await mouseOnlyTap(page, back.x, back.y);
-      await page.waitForFunction(
-        () => document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === "4",
-        undefined,
-        { timeout: 2000 },
+      await waitGroup(page, backPlan as GroupPlace);
+      assert.equal(
+        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
+        groupKey(backPlan as GroupPlace),
+        "mouse back did not return one group",
       );
-      assert.equal(await breathIndex(page), 4);
     } finally {
       await browser.close();
       await stop();

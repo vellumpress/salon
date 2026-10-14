@@ -7,6 +7,7 @@ import { isLocalBound } from "./catalog/full-pdf.ts";
 import { unmeasuredBlocks } from "./display-blocks.ts";
 import { quoteIntervals, sentenceSpans } from "./sentences.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -268,58 +269,23 @@ test(
         x: Math.round(spot.left + spot.width * 0.72),
         y: Math.round(spot.top + spot.height * 0.42),
       };
-      const beforeTap = await page.evaluate(() => {
-        const frame = document.querySelector(".reader-frame");
-        return {
-          index: frame?.getAttribute("data-breath-index") ?? "0",
-          cursor: frame?.getAttribute("data-sentence-at") ?? "0",
-          count: frame?.getAttribute("data-sentence-count") ?? "1",
-        };
-      });
+      const forwardPlan = await planGroups(page, 1, 1);
+      assert.notEqual(forwardPlan, "end");
       await page.touchscreen.tap(forward.x, forward.y);
-      await page.waitForFunction(
-        (prev) => {
-          const frame = document.querySelector(".reader-frame");
-          const index = frame?.getAttribute("data-breath-index");
-          const cursor = frame?.getAttribute("data-sentence-at");
-          const count = Number(prev.count);
-          const at = Number(prev.cursor);
-          if (at + 1 < count) return index === prev.index && cursor === String(at + 1);
-          return index === String(Number(prev.index) + 1) && cursor === "0";
-        },
-        beforeTap,
-        { timeout: 4000 },
-      );
+      await waitGroup(page, forwardPlan as GroupPlace);
       const back = {
         x: Math.round(spot.left + Math.max(12, spot.width * 0.12)),
         y: forward.y,
       };
       const again = await column(page);
       assert.ok(again);
-      const beforeBack = await page.evaluate(() => {
-        const frame = document.querySelector(".reader-frame");
-        return {
-          index: frame?.getAttribute("data-breath-index") ?? "0",
-          cursor: frame?.getAttribute("data-sentence-at") ?? "0",
-          count: frame?.getAttribute("data-sentence-count") ?? "1",
-        };
-      });
+      const backPlan = await planGroups(page, -1, 1);
+      assert.notEqual(backPlan, "start");
       await page.touchscreen.tap(
         Math.round(again.left + Math.max(12, again.width * 0.12)),
         Math.round(again.top + again.height * 0.42),
       );
-      await page.waitForFunction(
-        (prev) => {
-          const frame = document.querySelector(".reader-frame");
-          const index = frame?.getAttribute("data-breath-index");
-          const cursor = frame?.getAttribute("data-sentence-at");
-          const at = Number(prev.cursor);
-          if (at > 0) return index === prev.index && cursor === String(at - 1);
-          return index === String(Number(prev.index) - 1);
-        },
-        beforeBack,
-        { timeout: 4000 },
-      );
+      await waitGroup(page, backPlan as GroupPlace);
       assert.equal(back.x > 0, true);
 
       await page.close();
@@ -455,26 +421,23 @@ test(
         if (step === breathCount - 1) break;
         const spot = await column(page);
         assert.ok(spot, "pdf column missing");
-        const before = spot.index;
+        const planned = await planGroups(page, 1, 1);
+        if (planned === "end" || planned === "start") break;
+        const before = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
         await page.touchscreen.tap(
           Math.round(spot.left + spot.width * 0.72),
           Math.round(spot.top + spot.height * 0.42),
         );
         try {
-          await page.waitForFunction(
-            (want) =>
-              document.querySelector("[data-breath-index]")?.getAttribute("data-breath-index") === String(want),
-            before + 1,
-            { timeout: 4000 },
-          );
+          await waitGroup(page, planned);
         } catch (error) {
-          const now = await page.locator("[data-breath-index]").getAttribute("data-breath-index");
+          const now = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
           const message = error instanceof Error ? error.message : String(error);
-          throw new Error(`pdf step ${step}: index ${now}, expected ${before + 1} (${message})`);
+          throw new Error(`pdf step ${step}: key ${now}, one group is ${planned.index}:${planned.cursor}:${planned.window} from ${before} (${message})`);
         }
         stepped += 1;
       }
-      assert.ok(stepped >= 8, "pdf taps did not keep moving one breath at a time");
+      assert.ok(stepped >= 4, "pdf taps did not keep moving one group at a time");
       assert.equal(sawSingleTall, true, "pdf single tall sentence was split or shrunk");
       await page.close();
     } finally {
@@ -685,10 +648,10 @@ test(
 
       await openAt(page, "cranford", 78);
       const s236 = await blocks(page, ".breath-now");
-      assert.equal(s236.length, 1);
-      assert.match(s236[0]?.text ?? "", /A light came into Miss Jessie/);
-      assert.match(s236[0]?.text ?? "", /He knows now how you loved him/);
-      assert.ok((s236[0]?.height ?? 0) <= third);
+      const light = s236.filter((spot) => spot.text.includes("A light came into Miss Jessie"));
+      assert.equal(light.length, 1);
+      assert.match(light[0]?.text ?? "", /He knows now how you loved him/);
+      assert.ok((light[0]?.height ?? 0) <= third);
 
       await openAt(page, "new-grub-street", 511);
       const s785 = await blocks(page, ".breath-now");

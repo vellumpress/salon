@@ -443,6 +443,21 @@ function calibrate(metrics: DisplayMetrics) {
   return value;
 }
 
+/** Height of a sample in the reader's measured face, or the character estimate before it loads. */
+export function measureDisplaySample(sample: string, metrics: DisplayMetrics): number {
+  if (metrics.faceReady) return measureStyledHeight(sample, metrics);
+  const fit = calibrate(metrics);
+  const chars = sample.replace(/\s+/g, " ").trim().length || 1;
+  return Math.ceil(chars / fit.chars) * fit.line;
+}
+
+/** One rendered line, in pixels. The live face uses its computed line height. */
+export function displayLinePx(metrics: DisplayMetrics): number {
+  const parsed = Number.parseFloat(metrics.lineHeight);
+  if (metrics.faceReady && parsed > 0) return parsed;
+  return calibrate(metrics).line;
+}
+
 export function resolveDisplayBlocks(
   text: string,
   metrics: DisplayMetrics,

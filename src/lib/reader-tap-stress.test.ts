@@ -5,6 +5,7 @@ import { dirname, join } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
+import { groupKey, planGroups, type GroupPlace } from "./reader-group-tap.ts";
 import {
   CATALOG_WALK_ANCHORS,
   CATALOG_WALK_SAMPLE_SIZE,
@@ -496,6 +497,8 @@ async function readSentence(page: Page) {
     return {
       index: Number(frame?.getAttribute("data-breath-index") ?? 0),
       cursor: Number(frame?.getAttribute("data-sentence-at") ?? 0),
+      window: Number(frame?.getAttribute("data-spotlight-window") ?? 0),
+      key: frame?.getAttribute("data-spotlight-key") ?? "",
       count: Number(frame?.getAttribute("data-sentence-count") ?? 1),
       total: Number(frame?.getAttribute("data-breath-count") ?? 0),
       scrollTop: slot instanceof HTMLElement ? slot.scrollTop : 0,
@@ -544,12 +547,11 @@ async function step(
   const burst = mode === "burst" ? 3 : 1;
   const before = await readSentence(page);
   const openBookId = bookIdOf(page);
-  const predicted = predictPlace(openBookId, before, direction, burst);
-  assert.equal(
-    predicted.index,
-    expected,
-    `${label} expected breath ${expected}, one sentence per tap lands on ${predicted.index}:${predicted.cursor}`,
-  );
+  const planned = await planGroups(page, direction, burst);
+  assert.notEqual(planned, "start", `${label} walked off the start from ${before.key}`);
+  assert.notEqual(planned, "end", `${label} walked off the end from ${before.key}`);
+  const predicted = planned as GroupPlace;
+  assert.notEqual(groupKey(predicted), before.key, `${label} repeated a group`);
   let shot: Shot | null = null;
   let lastError: unknown;
   for (let nav = 0; nav < 2; nav += 1) {
@@ -572,8 +574,7 @@ async function step(
           const frame = document.querySelector(".reader-frame");
           const slot = document.querySelector(".breath-slot");
           return (
-            frame?.getAttribute("data-breath-index") === String(want.index) &&
-            frame?.getAttribute("data-sentence-at") === String(want.cursor) &&
+            frame?.getAttribute("data-spotlight-key") === `${want.index}:${want.cursor}:${want.window}` &&
             slot instanceof HTMLElement &&
             slot.scrollTop < 4
           );
@@ -596,7 +597,7 @@ async function step(
         if (graded && !wiped) {
           const from = shot ? shot.from : "?";
           throw new Error(
-            `${label}: index ${graded.index}:${graded.cursor} scroll ${graded.scrollTop}, expected ${predicted.index}:${predicted.cursor} after ${burst} (from ${from} pinned=${shot?.pinned} line=${shot?.lineTop} host=${shot?.hostTop} x=${shot?.x} y=${shot?.y}; ${error instanceof Error ? error.message : error})`,
+            `${label}: index ${graded.key} scroll ${graded.scrollTop}, one group is ${groupKey(predicted)} after ${burst} (from ${from} pinned=${shot?.pinned} line=${shot?.lineTop} host=${shot?.hostTop} x=${shot?.x} y=${shot?.y}; ${error instanceof Error ? error.message : error})`,
           );
         }
         destroyed = wiped || isDeadDocument(error, graded != null);
@@ -614,14 +615,13 @@ async function step(
         );
         if (
           now &&
-          now.index === predicted.index &&
-          now.cursor === predicted.cursor &&
+          now.key === groupKey(predicted) &&
           now.scrollTop < 4
         ) {
           const point = await aim(page, direction, "point").catch(() => null);
           if (point) return point;
         }
-        if (now && now.index === before.index && now.cursor === before.cursor) continue;
+        if (now && now.key === before.key) continue;
         if (before.cursor === 0 && openBookId && openBookId !== "salon") {
           try {
             await openAt(page, openBookId, before.index);
@@ -737,15 +737,10 @@ async function mix(
       mode = "ghost";
     }
     const jump = mode === "burst" ? 3 : 1;
-    const next = predictPlace(
-      id,
-      { index, cursor, count: countsFor(id)?.[index] ?? 1, total: length },
-      direction,
-      jump,
-    );
-    const shot = await step(page, direction, next.index, `${label} ${id} tap ${n} ${mode}`, mode);
-    index = next.index;
-    cursor = next.cursor;
+    const shot = await step(page, direction, index, `${label} ${id} tap ${n} ${mode}`, mode);
+    const now = await readSentence(page);
+    index = now.index;
+    cursor = now.cursor;
     n += jump;
     if (mode === "touch" && late < 4 && random() < 0.5) {
       await lateGhost(page, shot, index, `${label} ${id} tap ${n}`);
@@ -839,25 +834,43 @@ test(
         assert.equal(left, 0, `${name} run ${run} tapped ${TAPS - left}, not ${TAPS}`);
         await importPdf(page);
         let pdfIndex = 0;
-        let foundTall = false;
-        for (let i = 0; i < 6; i += 1) {
-          const overflows = await page.evaluate(
-            () => document.querySelector(".breath-slot")?.classList.contains("overflows") === true,
-          );
-          if (overflows) {
-            foundTall = true;
+        let foundWindow = false;
+        for (let i = 0; i < 8; i += 1) {
+          const place = await readSentence(page);
+          pdfIndex = place.index;
+          const next = await planGroups(page, 1, 1);
+          const height = await page.evaluate(() => {
+            const nodes = [...document.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
+            if (nodes.length === 0) return 0;
+            const top = Math.min(...nodes.map((node) => node.getBoundingClientRect().top));
+            const bottom = Math.max(...nodes.map((node) => node.getBoundingClientRect().bottom));
+            return bottom - top;
+          });
+          assert.ok(height <= 281, `${name} run ${run} pdf focus is ${height}px`);
+          if (next !== "start" && next !== "end" && next.index === place.index && groupKey(next) !== place.key) {
+            foundWindow = true;
             break;
           }
-          await step(page, 1, pdfIndex + 1, `${name} run ${run} pdf seek ${i}`, "ghost");
-          pdfIndex += 1;
+          if (next === "end" || next === "start") break;
+          await step(page, 1, place.index, `${name} run ${run} pdf seek ${i}`, "ghost");
         }
-        assert.equal(foundTall, true, `${name} run ${run} pdf had no sentence taller than the screen`);
+        assert.equal(foundWindow, true, `${name} run ${run} pdf long sentence was not windowed`);
         const pdfLength = Number(await page.locator(".reader-frame").getAttribute("data-breath-count"));
         assert.ok(pdfLength > pdfIndex + 1, `${name} run ${run} pdf long sentence is the last of ${pdfLength}`);
         const tallTop = await page.locator(".breath-slot").evaluate((el) => (el as HTMLElement).scrollTop);
         assert.ok(tallTop < 4, `${name} run ${run} pdf long sentence opened partway`);
-        await step(page, 1, pdfIndex + 1, `${name} run ${run} pdf off the long sentence`, "ghost");
+        const tallKey = (await readSentence(page)).key;
+        let leftWindow = false;
+        for (let i = 0; i < 16 && !leftWindow; i += 1) {
+          const place = await readSentence(page);
+          await step(page, 1, place.index, `${name} run ${run} pdf off the long sentence`, "ghost");
+          leftWindow = (await readSentence(page)).index !== pdfIndex;
+        }
+        assert.equal(leftWindow, true, `${name} run ${run} pdf stayed inside the long sentence`);
         await step(page, -1, pdfIndex, `${name} run ${run} pdf back onto the long sentence`, "click-first");
+        const backPlace = await readSentence(page);
+        assert.equal(backPlace.index, pdfIndex, `${name} run ${run} pdf back left the long sentence`);
+        assert.notEqual(backPlace.key, tallKey);
         const backTop = await page.locator(".breath-slot").evaluate((el) => (el as HTMLElement).scrollTop);
         assert.ok(backTop < 4, `${name} run ${run} pdf back stopped partway through the long sentence`);
         await mix(page, "page", pdfIndex, 8, 9000 + run, `${name} run ${run} pdf`, pdfLength);

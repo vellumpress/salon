@@ -1990,6 +1990,11 @@ html:has(.board-doors) body {
   min-width: 0;
 }
 
+/* Short breaths gathered into one passage sit on one another, without the block gap. */
+.breath-now.is-passage {
+  gap: 0;
+}
+
 .breath-block {
   margin: 0;
   min-width: 0;
