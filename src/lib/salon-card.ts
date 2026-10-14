@@ -1,4 +1,5 @@
 import { creditLine } from "./credit-line.ts";
+import { placeAliasAt } from "./colonel-place.ts";
 import { canonicalWorkId } from "./work-id-alias.ts";
 import type { Fill } from "./mondrian.ts";
 import { fillOf } from "./mondrian.ts";
@@ -39,7 +40,7 @@ export function cardFill(input: SalonCardInput): Fill {
 }
 
 export function cardReadPath(input: { workId: string; at?: number }): string {
-  const at = typeof input.at === "number" && input.at >= 0 ? Math.floor(input.at) : 0;
+  const at = typeof input.at === "number" && input.at >= 0 ? placeAliasAt(input.workId, input.at) : 0;
   return `/read/${encodeURIComponent(canonicalWorkId(input.workId))}?at=${at}`;
 }
 

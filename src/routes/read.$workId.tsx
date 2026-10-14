@@ -4,6 +4,7 @@ import { PagesShell } from "@/components/pages-shell";
 import { TbrReader } from "@/components/chamber-reader";
 import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import { shelfWork } from "@/lib/catalog/shelf";
+import { placeAliasAt } from "@/lib/colonel-place";
 import { canonicalWorkId } from "@/lib/work-id-alias";
 import { getImport } from "@/lib/import/idb";
 import { isDeviceImport } from "@/lib/import/private";
@@ -42,7 +43,10 @@ export const Route = createFileRoute("/read/$workId")({
       throw redirect({
         to: "/read/$workId",
         params: { workId },
-        search,
+        search:
+          typeof search.at === "number"
+            ? { ...search, at: placeAliasAt(params.workId, search.at) }
+            : search,
       });
     }
   },

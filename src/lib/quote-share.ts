@@ -1,4 +1,5 @@
 import { shelfWork } from "./catalog/shelf.ts";
+import { placeAliasAt } from "./colonel-place.ts";
 import { canonicalWorkId } from "./work-id-alias.ts";
 import { cardFileName, downloadBlob, renderSalonCard } from "./salon-card.ts";
 import { clipLine, decodeShare, encodeShare } from "./share-codec.ts";
@@ -42,7 +43,7 @@ export function encodeQuoteCard(input: {
     v: 1,
     k: "line",
     w: canonicalWorkId(input.workId),
-    i: Math.max(0, Math.floor(input.at ?? 0)),
+    i: placeAliasAt(input.workId, Math.max(0, Math.floor(input.at ?? 0))),
     t: clipLine(input.text, 180),
     n: clipLine(input.title, 80),
     a: clipLine(input.author, 80),
@@ -54,11 +55,13 @@ export function decodeQuoteCard(token: string): QuoteCard | null {
   const card = decodeShare<QuoteCard>(token);
   if (!card || card.v !== 1 || card.k !== "line") return null;
   if (!card.w || !card.t) return null;
+  const rawW = String(card.w).slice(0, 80);
+  const at = Math.max(0, Math.floor(Number(card.i) || 0));
   return {
     v: 1,
     k: "line",
-    w: canonicalWorkId(String(card.w).slice(0, 80)),
-    i: Math.max(0, Math.floor(Number(card.i) || 0)),
+    w: canonicalWorkId(rawW),
+    i: placeAliasAt(rawW, at),
     t: clipLine(String(card.t), 220),
     n: clipLine(String(card.n ?? ""), 80),
     a: clipLine(String(card.a ?? ""), 80),
@@ -66,7 +69,7 @@ export function decodeQuoteCard(token: string): QuoteCard | null {
 }
 
 export function quoteReadPath(card: Pick<QuoteCard, "w" | "i">) {
-  return `/read/${encodeURIComponent(canonicalWorkId(card.w))}?at=${card.i}`;
+  return `/read/${encodeURIComponent(canonicalWorkId(card.w))}?at=${placeAliasAt(card.w, card.i)}`;
 }
 
 /** Same-origin landing. Works on Pages because the sentence is inside the token. */

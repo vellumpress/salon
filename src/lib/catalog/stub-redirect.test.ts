@@ -73,8 +73,7 @@ test("textless stubs are off every list and follow the local book", () => {
   );
   const colonels = searchShelf("The Colonel's Dream").map((item) => item.id);
   assert.equal(colonels.includes("the-colonels-dream"), false);
-  assert.equal(colonels.includes("colonels-dream"), true);
-  assert.equal(colonels.includes("the-colonel-s-dream"), true);
+  assert.deepEqual(colonels, ["colonels-dream"]);
 
   const progress: Record<string, { lastOpenedAt: number; kept: string[] }> = {
     "home-world": { lastOpenedAt: 9, kept: ["mirror"] },

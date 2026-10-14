@@ -1261,8 +1261,6 @@ const BLURBS: Record<string, string> = {
     "A little brother sows cooked grain, and the single seed that sprouts grows an ear of millet so huge that a Roc flies off with it to an isle of gold.",
   "the-civilization-of-china":
     "Giles asks what people mean by China, and shows that asking a returning traveller how he liked it is like asking how one liked Europe.",
-  "the-colonel-s-dream":
-    "One March morning on lower Broadway, two partners watch the clock and wait for word on the sale that will make them rich or ruin them.",
   "the-complete-original-short-stories":
     "For days the scattered remnants of a beaten army trail through Rouen, and the town waits for the Prussians to come in.",
   "conference":

@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useLayoutEffect } from "react";
 import { PagesShell } from "@/components/pages-shell";
+import { placeAliasAt } from "@/lib/colonel-place";
 import { canonicalWorkId } from "@/lib/work-id-alias";
 
 /**
@@ -16,6 +17,10 @@ function BookRedirect() {
   useLayoutEffect(() => {
     const id = canonicalWorkId(workId);
     const url = new URL(window.location.href);
+    const at = url.searchParams.get("at");
+    if (workId !== id && at && /^\d+$/.test(at)) {
+      url.searchParams.set("at", String(placeAliasAt(workId, Number(at))));
+    }
     url.pathname = url.pathname.replace(/\/book\/[^/]+\/?$/, `/read/${id}`);
     window.location.replace(`${url.pathname}${url.search}${url.hash}`);
   }, [workId]);

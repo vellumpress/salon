@@ -194,7 +194,6 @@ test("Next queue no longer lists Mirth or Quicksand", () => {
     "songs-and-satires",
     "tess-of-the-durbervilles",
     "the-ballad-of-the-white-horse",
-    "the-colonel-s-dream",
     "the-comedienne",
     "the-crux",
     "the-dream",

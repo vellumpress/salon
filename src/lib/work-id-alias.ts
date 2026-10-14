@@ -1,3 +1,4 @@
+import { placePartialColonelProgress } from "./colonel-place.ts";
 import { mergeKept, type KeptStored } from "./kept-lines.ts";
 
 /**
@@ -12,6 +13,8 @@ export const WORK_ID_ALIASES: Readonly<Record<string, string>> = {
   // Textless catalog stubs. Saved progress and links follow the local book.
   "home-world": "the-home-and-the-world",
   "the-colonels-dream": "colonels-dream",
+  // The 160-minute partial bind. The 419-minute book is the novel.
+  "the-colonel-s-dream": "colonels-dream",
 };
 
 export function canonicalWorkId(id: string): string {
@@ -20,6 +23,11 @@ export function canonicalWorkId(id: string): string {
 
 type ProgressRow = {
   lastOpenedAt?: number;
+  breathIndex?: number;
+  sentenceAt?: number;
+  breathId?: string;
+  breathCount?: number;
+  bindHash?: string;
   kept?: KeptStored[];
 };
 
@@ -48,8 +56,9 @@ function remapProgress(progress: Record<string, ProgressRow>): Record<string, Pr
   const next: Record<string, ProgressRow> = {};
   for (const [id, row] of Object.entries(progress)) {
     if (!row || typeof row !== "object") continue;
+    const placed = id === "the-colonel-s-dream" ? placePartialColonelProgress(row) : row;
     const key = canonicalWorkId(id);
-    next[key] = preferProgress(next[key], row);
+    next[key] = preferProgress(next[key], placed);
   }
   return next;
 }

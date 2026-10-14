@@ -521,7 +521,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "songs-and-satires",
   "tess-of-the-durbervilles",
   "the-ballad-of-the-white-horse",
-  "the-colonel-s-dream",
   "the-comedienne",
   "the-crux",
   "the-dream",
