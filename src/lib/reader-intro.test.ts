@@ -124,10 +124,10 @@ test("On a Chinese Screen uses the waking Parlour sit", () => {
 });
 
 test("African Farm opens on the Karoo moon, preface skipped", () => {
-  const copy = readerIntro(shelfAsWork("african-farm"));
+  const copy = readerIntro(shelfAsWork("the-story-of-an-african-farm"));
   assert.match(copy, /full African moon/);
   assert.match(copy, /lonely plain/);
-  assert.match(copy, /kopje/);
+  assert.match(copy, /Part I, Chapter I/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|THE STORY OF AN AFRICAN FARM/i);
 });
 
@@ -190,9 +190,9 @@ test("Futility uses the Simbirsk open, preface skipped", () => {
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host-a-sit|Recommend|Wharton/i);
 });
 
-test("The Poison Tree uses the unwind Ganges-storm sit", () => {
-  const copy = readerIntro(shelfAsWork("poison-tree"));
-  assert.match(copy, /leave the boat/);
+test("The Poison Tree uses the Ganges-storm sit", () => {
+  const copy = readerIntro(shelfAsWork("the-poison-tree"));
+  assert.match(copy, /travel by boat/);
   assert.match(copy, /Joisto/);
   assert.doesNotMatch(copy, /gutenberg|public domain|copyright|Featured-track|Host note|Recommend/i);
 });

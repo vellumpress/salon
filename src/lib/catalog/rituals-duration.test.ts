@@ -201,9 +201,9 @@ test("Futility Next sit is the Simbirsk table-cloth cut, not the novel", () => {
   assertMeasuredSit(item);
 });
 
-test("The Poison Tree unwind sit is the storm cut, not the novel", () => {
+test("The Poison Tree sit is the storm cut, not the novel", () => {
   const item = work({
-    id: "poison-tree",
+    id: "the-poison-tree",
     form: "novel",
     breaths: 42,
     minutes: 5,

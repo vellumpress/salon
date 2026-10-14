@@ -166,8 +166,8 @@ test("PITCHES-3 drops eight wind-down sits and keeps Underdogs on On a walk", ()
     assert.equal(lane.workIds.includes("underdogs"), false, laneId);
   }
   const walk = RITUAL_LANES.find((item) => item.id === "on-a-walk");
-  assert.ok(walk?.workIds.includes("underdogs"));
-  assert.ok(ritualPitchFor("underdogs"));
+  assert.ok(walk?.workIds.includes("the-underdogs"));
+  assert.ok(ritualPitchFor("the-underdogs"));
   for (const id of gone) {
     assert.ok(shelfWork(id), id);
     assert.equal(ritualPitchFor(id), undefined, id);

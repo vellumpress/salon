@@ -3,6 +3,7 @@ import test from "node:test";
 import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { SHELF } from "./shelf.ts";
+import { canonicalWorkId } from "../work-id-alias.ts";
 import { LOCAL_WORKS } from "./full-pdf.ts";
 import { countryFor, isCityHubLabel } from "./countries.ts";
 import { chipOnlyLabel, NO_PRINTED_PLACE, placeForId } from "./places.ts";
@@ -60,7 +61,6 @@ const FULL_NOVEL_NO_STUB = [
   "the-getting-of-wisdom",
   "noli-me-tangere",
   "the-story-of-gosta-berling",
-  "poison-tree",
   "trooper-peter-halket",
   "martin-bircks-youth",
   "bliss",
@@ -189,14 +189,13 @@ test("English is not dumped into a single country", () => {
 test("known origin overrides", () => {
   const byId = new Map(SHELF.map((work) => [work.id, work]));
   const expect = {
-    dorian: "Ireland",
+    "picture-of-dorian-gray": "Ireland",
     dubliners: "Ireland",
-    "african-farm": "South Africa",
+    "the-story-of-an-african-farm": "South Africa",
     botchan: "Japan",
     "bel-ami": "France",
     liliom: "Hungary",
     "the-cherry-orchard": "Russia",
-    underdogs: "Mexico",
     madmen: "Argentina",
     wallpaper: "United States",
     gatsby: "United States",
@@ -245,7 +244,7 @@ test("known origin overrides", () => {
     harmonium: "United States",
     "on-a-chinese-screen": "United Kingdom",
     futility: "United Kingdom",
-    "poison-tree": "India",
+    "the-poison-tree": "India",
     "trooper-peter-halket": "South Africa",
     "nacha-regules": "Argentina",
     krakatit: "Czechia",
@@ -425,10 +424,6 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
     futility: {
       scene: /Simbirsk/i,
       opening: /^When the \*Simbirsk\*/,
-    },
-    "poison-tree": {
-      scene: /storm/i,
-      opening: /^Nagendra Natha Datta is about to travel by boat/,
     },
     "trooper-peter-halket": {
       scene: /Kopje fire/i,
@@ -650,9 +645,6 @@ test("2026-09-17 LE binds open at story start, not chrome", () => {
         packed.breaths.map((b) => b.text).join(" "),
         /Wharton|preface/i,
       );
-    }
-    if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "poison-tree") {
-      assert.match(packed.breaths.at(-1)?.text ?? "", /heavy storm of rain\.?$/);
     }
     if (!FULL_NOVEL_NO_STUB_SET.has(id) && id === "trooper-peter-halket") {
       assert.match(packed.breaths.at(-1)?.text ?? "", /keep awake the whole night beside it\.?$/);
@@ -1009,9 +1001,7 @@ test("The Story of Gösta Berling is a full local novel bind, not the pulpit stu
   assert.ok(full.breaths.some((breath) => /long lake, the rich plains and the blue mountains/.test(breath.text)));
   assert.match(full.breaths.at(-1)?.text ?? "", /^THE END$/);
   assert.doesNotMatch(work!.intro ?? "", /Featured-track|Recommend|cold-open/i);
-  const alias = SHELF.find((item) => item.id === "gosta");
-  assert.ok(alias);
-  assert.equal(alias!.local, undefined);
+  assert.equal(SHELF.some((item) => item.id === "gosta"), false);
 });
 
 test("Bliss is the full collection bind; bliss-and-other-stories stays its own shelf row", () => {
@@ -1020,7 +1010,7 @@ test("Bliss is the full collection bind; bliss-and-other-stories stays its own s
   assert.equal(work!.local, true);
   assert.equal(isBoundLocal(work!), true);
   assert.equal(work!.gutenberg, 44385);
-  assert.equal(work!.title, "Bliss");
+  assert.equal(work!.title, "Bliss and Other Stories");
   assert.equal(work!.author, "Katherine Mansfield");
   assert.equal(work!.year, 1920);
   assert.match(work!.opening ?? "", /^Although Bertha Young was thirty/);
@@ -1339,13 +1329,6 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
       scenes: 38,
       last: /^THE END$/,
     },
-    "poison-tree": {
-      gutenberg: 17455,
-      title: "The Poison Tree",
-      author: "Bankim Chandra Chatterjee (tr. Miriam S. Knight)",
-      opening: /^Nagendra Natha Datta is about to travel by boat/,
-      breaths: 3090,
-    },
     "trooper-peter-halket": {
       gutenberg: 1431,
       title: "Trooper Peter Halket of Mashonaland",
@@ -1367,7 +1350,7 @@ test("full local novels have no stub opening; hydrateLocal serves the complete b
     },
     bliss: {
       gutenberg: 44385,
-      title: "Bliss",
+      title: "Bliss and Other Stories",
       author: "Katherine Mansfield",
       year: 1920,
       opening: /^Although Bertha Young was thirty/,
@@ -2144,14 +2127,12 @@ const TIER_B_BATCH_11_12 = [
   "the-deluge",
   "the-duel-and-other-stories",
   "the-kreutzer-sonata",
-  "the-reign-of-greed-el-filibusterismo",
   "without-dogma",
   "a-family-of-noblemen",
   "anna",
   "dona-perfecta", // DONA-PERFECTA: back as Serrano's English (PG 2462)
   "karamazov",
   "l-assommoir",
-  "malavoglia",
   "marie-grubbe",
   "sentimental-education",
   "skipper-worse",
@@ -2162,7 +2143,7 @@ const TIER_B_BATCH_11_12 = [
 ] as const;
 
 test("Tier B batches 11–12 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_11_12.length, 30);
+  assert.equal(TIER_B_BATCH_11_12.length, 28);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",
@@ -2264,9 +2245,11 @@ test("Tier B batches 9–10 are local format-min binds, never Featured", () => {
   ]);
   const forYou = RITUAL_LANES.find((item) => item.id === "for-you");
   assert.ok(forYou);
-  const chambermaid = SHELF.find((item) => item.id === "a-chambermaid-s-diary");
+  assert.equal(SHELF.some((item) => item.id === "a-chambermaid-s-diary"), false);
+  assert.equal(canonicalWorkId("a-chambermaid-s-diary"), "diary-of-a-chambermaid");
+  const chambermaid = SHELF.find((item) => item.id === "diary-of-a-chambermaid");
   assert.ok(chambermaid);
-  assert.equal(chambermaid.local, undefined);
+  assert.equal(chambermaid.local, true);
   for (const id of TIER_B_BATCH_9_10) {
     const work = SHELF.find((item) => item.id === id);
     assert.ok(work, id);
@@ -2294,7 +2277,6 @@ const TIER_B_BATCH_13_14 = [
   "a-sportsman-s-sketches",
   "bovary",
   "camille",
-  "crime",
   "dead-souls",
   "fathers-and-sons",
   "havelaar",
@@ -2320,7 +2302,6 @@ const TIER_B_BATCH_13_14 = [
   "red-chamber",
   "san-kuo-or-romance-of-the-three-kingdoms-vol-1",
   "six-characters",
-  "taras-bulba-and-other-tales",
   "taras-bulba",
   "the-aeneid",
   "the-betrothed",
@@ -2330,11 +2311,10 @@ const TIER_B_BATCH_13_14 = [
   "the-queen-of-spades-and-other-stories",
   "the-queen-of-spades",
   "three-plays-incl-henry-iv",
-  "venice",
 ] as const;
 
 test("Tier B batches 13–14 are local format-min binds, never Featured", () => {
-  assert.equal(TIER_B_BATCH_13_14.length, 40);
+  assert.equal(TIER_B_BATCH_13_14.length, 37);
   assert.deepEqual(FIRST_SESSION_RITUAL_IDS, [
     "the-house-of-mirth",
     "quicksand",
@@ -2457,7 +2437,6 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     "ninety-three": { gutenberg: 49372, form: "novel", scenes: 100, breaths: 3848 },
     "reynard-the-fox": { gutenberg: 38052, form: "poem", scenes: 2, breaths: 240 },
     "the-american": { gutenberg: 177, form: "novel", scenes: 26, breaths: 2678 },
-    "the-way-of-all-flesh": { gutenberg: 2084, form: "novel", scenes: 86, breaths: 1509 },
     "the-wild-knight-and-other-poems": { gutenberg: 12037, form: "poem", scenes: 27, breaths: 497 },
     underwoods: { gutenberg: 438, form: "poem", scenes: 54, breaths: 278 },
     "a-slav-soul": { gutenberg: 57036, form: "stories", scenes: 1, breaths: 63 },
@@ -2471,7 +2450,7 @@ test("Mira BATCH-6 CLEAR ×20 are inventory local binds, never Featured", () => 
     "mr-britling-sees-it-through": { gutenberg: 14060, form: "novel", scenes: 11, breaths: 2602 },
     "notre-dame-de-paris": { gutenberg: 2610, form: "novel", scenes: 59, breaths: 4033 },
   } as const;
-  assert.equal(Object.keys(expect).length, 20);
+  assert.equal(Object.keys(expect).length, 19);
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], [
     "the-house-of-mirth",
     "quicksand",
@@ -2512,10 +2491,8 @@ test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => 
     "the-card": { gutenberg: 12986, form: "novel", scenes: 12, breaths: 1694 },
     "the-flying-inn": { gutenberg: 59239, form: "novel", scenes: 25, breaths: 1414 },
     "the-nabob": { gutenberg: 2077, form: "novel", scenes: 25, breaths: 1949 },
-    "the-shadow-of-the-cathedral": { gutenberg: 12041, form: "novel", scenes: 10, breaths: 1199 },
     thyrza: { gutenberg: 4302, form: "novel", scenes: 41, breaths: 5397 },
     "wine-water-and-song": { gutenberg: 35115, form: "poem", scenes: 16, breaths: 65 },
-    "against-the-grain": { gutenberg: 12341, form: "novel", scenes: 16, breaths: 900 },
     "doctor-pascal": { gutenberg: 10720, form: "novel", scenes: 14, breaths: 1848 },
     "hilda-lessways": { gutenberg: 10658, form: "novel", scenes: 36, breaths: 2117 },
     kangaroo: { gutenberg: 59848, form: "novel", scenes: 18, breaths: 3401 },
@@ -2526,7 +2503,7 @@ test("Mira BATCH-7 CLEAR ×20 are inventory local binds, never Featured", () => 
     "the-reverberator": { gutenberg: 7529, form: "novel", scenes: 14, breaths: 1072 },
     "the-soil": { gutenberg: 56687, form: "novel", scenes: 30, breaths: 3476 },
   } as const;
-  assert.equal(Object.keys(expect).length, 20);
+  assert.equal(Object.keys(expect).length, 18);
   assert.deepEqual([...FIRST_SESSION_RITUAL_IDS], [
     "the-house-of-mirth",
     "quicksand",

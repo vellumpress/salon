@@ -270,8 +270,6 @@ export const PREFACES: Record<string, string> = {
     `Two gentlemen were seated, one March morning in 189--, in the private office of French and Company, Limited, on lower Broadway. Chapter One — Broadway, French and Company, and an electric clock, then Clarendon in the South. Charles W. Chesnutt’s 1905 novel.`,
   "hard-times":
     `'NOW, what I want is, Facts. Teach these boys and girls nothing but Facts. Facts alone are wanted in life. Book the First, Chapter I, The One Thing Needful — a Facts school-room and Gradgrind. Charles Dickens’s 1854 novel.`,
-  "great-god-pan":
-    `"I am glad you came, Clarke; very glad indeed. I was not sure you could spare the time." This reading is just The Great God Pan — Clarke and the Experiment. This reading ends with the novella. Arthur Machen’s 1894 novella.`,
   "manalive":
     `A wind sprang high in the west, like a wave of unreasonable happiness, and tore eastward across England, trailing with it the frosty scent of forests and the cold intoxication of the sea. Part I, Chapter I — a great wind, unreasonable happiness, and Beacon House. G. K. Chesterton’s 1912 novel.`,
   "captain-blood":

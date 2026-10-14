@@ -156,8 +156,6 @@ export const PITCHES: Record<string, string> = {
     "I went out into the world as shop-boy at a fashionable boot-shop in the main street of the town. Chapter I — the shop-boy, green teeth, and watery eyes. Maksim Gorky, in Gertrude M. Foakes’s English, 1916. First published in Russian in 1916; this translation is from 1917.",
   "leila":
     "Giovanni the footman calls Signorina from the dining-room, breathless, after the garden and the house. Chapter I, A Mystic Prelude — Signorina Leila, the chestnut grove, and Priaforà. Antonio Fogazzaro, in Mary Prichard Agnetti’s English, 1910. First published in Italian in 1910; this translation is from 1911.",
-  "charan":
-    "In the days of King Sung-jong one of Korea’s noted men became governor of Pyong-an Province. This reading is just CHARAN — Pyong-an Province, the dancing girl Charan, and the Governor’s son. Im Bang and Yi Ryuk, in James S. Gale’s English, 1913.",
   "sister-carrie":
     "When Caroline Meeber boarded the afternoon train for Chicago, her total outfit consisted of a small trunk and four dollars. Chapter I — Caroline Meeber, the afternoon train, and August 1889. Theodore Dreiser’s 1900 novel.",
   "antic-hay":
@@ -214,8 +212,6 @@ export const PITCHES: Record<string, string> = {
     `Two gentlemen were seated, one March morning in 189--, in the private office of French and Company, Limited, on lower Broadway. Chapter One — Broadway, French and Company, and an electric clock, then Clarendon in the South. Charles W. Chesnutt’s 1905 novel.`,
   "hard-times":
     `'NOW, what I want is, Facts. Teach these boys and girls nothing but Facts. Facts alone are wanted in life. Book the First, Chapter I, The One Thing Needful — a Facts school-room and Gradgrind. Charles Dickens’s 1854 novel.`,
-  "great-god-pan":
-    `"I am glad you came, Clarke; very glad indeed. I was not sure you could spare the time." This reading is just The Great God Pan — Clarke and the Experiment. This reading ends with the novella. Arthur Machen’s 1894 novella.`,
   "manalive":
     `A wind sprang high in the west, like a wave of unreasonable happiness, and tore eastward across England, trailing with it the frosty scent of forests and the cold intoxication of the sea. Part I, Chapter I — a great wind, unreasonable happiness, and Beacon House. G. K. Chesterton’s 1912 novel.`,
   "captain-blood":
@@ -302,10 +298,6 @@ export const PITCHES: Record<string, string> = {
     `Irene Redfield sorts her morning mail in Harlem and finds a thin envelope in purple ink—no return address, a hand she knows at once. Clare Kendry, the childhood friend who slipped into another world, is writing again. Nella Larsen’s 1929 New York novel opens on that letter, still unopened, and the careful life it threatens to unsettle.`,
   gold:
     "Anzia Yezierska’s Lower East Side childhood told hard, funny, and without apology. Hunger, English, and the fight to own your own name.",
-  crime:
-    "A student tests the right to kill — and cannot live with the answer. Dostoevsky’s Petersburg heat: theory first, then the body keeps the receipt.",
-  dorian:
-    "Wilde’s beautiful face stays young while the portrait keeps the score. London drawing rooms, opium dens, and a bargain that looks like taste.",
   bovary:
     "Provincial longing, debt, and the romance novels that ruin a life. Flaubert’s Emma wants a finer plot than the town will sell her.",
   anna:

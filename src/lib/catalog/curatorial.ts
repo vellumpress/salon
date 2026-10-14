@@ -537,8 +537,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-party-and-other-stories",
   "the-pit",
   "the-poison-tree",
-  "the-reign-of-greed",
-  "the-rise-of-david-levinsky",
   "the-rise-of-silas-lapham",
   "the-road-to-the-open",
   "the-romance-of-the-milky-way",
@@ -623,7 +621,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira BATCH-10 CLEAR (Sep 22) — after All Quiet. Never Featured. Not For you.
   "before-adam",
   // French meaulnes (PG 5781) stays catalog-only. EN sit is the-wanderer.
-  "niels",
   "marianela",
   "an-iceland-fisherman",
   "aphrodite",
@@ -659,7 +656,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "baudelaire-prose-and-poetry",
   "tales-grotesque-and-curious",
   "a-book-barnes",
-  "a-spring-time-case",
   "jewish-children",
   "essays-and-soliloquies",
   "tragic-sense-of-life",
@@ -716,8 +712,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "gentlemen-prefer-blondes",
   "of-one-blood",
   "maria-chapdelaine",
-  // Mira NOON2 CLEAR — after 8AM. Never Featured. Not For you.
-  "african-farm",
   // Mira 4PM CLEAR — Passage leads Next. Never Featured. Not For you.
   "a-passage-to-india",
   "mhudi",
@@ -733,7 +727,6 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Noon Wed 23 Sep CLEAR — April leads Next. Never a new Featured pin.
   "enchanted-april",
   "quicksand",
-  "underdogs",
   // Mira ~4:14 Wed 23 Sep CLEAR — Lolly leads Next. Never a new Featured pin.
   // All Quiet is already seated above; this second seat is the cycle order.
   "lolly-willowes",

@@ -398,7 +398,8 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   // PRECIOUS-BANE adds one (1167).
   // FRIENDSHIP-VILLAGE adds one (1168).
   // The partial Colonel's Dream leaves the shelf; the 419-minute book stays (1167).
-  assert.equal(LOCAL_WORKS.length, 1167);
+  // Shelf dedupe retires 22 local duplicate rows; the keepers stay (1145).
+  assert.equal(LOCAL_WORKS.length, 1145);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 
@@ -477,10 +478,10 @@ test("novel-length Adapted remakes are off the live shelf", () => {
   const archive = join(here, "off-shelf", "novel-remakes");
   const classics: Record<string, { id: string; title: string }> = {
     "madame-bovary-tokyo": { id: "bovary", title: "Madame Bovary" },
-    "dorian-gray-shanghai": { id: "dorian", title: "The Picture of Dorian Gray" },
+    "dorian-gray-shanghai": { id: "picture-of-dorian-gray", title: "The Picture of Dorian Gray" },
     "anna-karenina-milan": { id: "anna", title: "Anna Karenina" },
     "dracula-istanbul": { id: "dracula", title: "Dracula" },
-    "crime-punishment-cape-town": { id: "crime", title: "Crime and Punishment" },
+    "crime-punishment-cape-town": { id: "crime-and-punishment", title: "Crime and Punishment" },
     "age-of-innocence-venice": { id: "the-age-of-innocence", title: "The Age of Innocence" },
   };
   assert.equal(NOVEL_REMAKE_IDS.length, 11);
