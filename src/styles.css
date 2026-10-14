@@ -1420,28 +1420,51 @@ html:has(.board-doors) body {
   grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   min-width: 0;
-  min-height: 17.25rem;
-  padding: 1rem 0 0.35rem;
+  min-height: 0;
+  padding: 0.7rem 0 0.45rem;
   background: var(--block-fill);
   color: var(--color-ink);
 }
 
-.curated-block.is-hero {
-  min-height: 24rem;
-}
-
-.curated-block.is-wide {
-  min-height: 21rem;
-}
-
-.curated-block.is-pair-a {
-  min-height: 19rem;
-}
-
+/* Phone pairs share a line. One book fills the tile; the rest swipe through. */
+.curated-block.is-pair-a,
 .curated-block.is-pair-b {
-  min-height: 17.25rem;
+  grid-column: span 1;
+}
+
+/* Two large books at once, so the personal block grows with cards rather than empty color. */
+.curated-block.is-hero .works-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: auto auto;
+  grid-auto-columns: calc(100% - 2.6rem);
+  align-items: start;
+  column-gap: 0.85rem;
+  row-gap: 0.7rem;
+  padding: 0.15rem 1.15rem 0.55rem;
+  scroll-padding-inline: 1.15rem;
+}
+
+.curated-block.is-hero .works-card.has-detail {
+  flex: none;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+}
+
+.curated-block.is-pair-a .works-scroller,
+.curated-block.is-pair-b .works-scroller {
+  padding: 0.35rem 0.7rem 0.5rem;
+  scroll-padding-inline: 0.7rem;
+}
+
+.curated-block.is-pair-a .works-card.has-detail,
+.curated-block.is-pair-b .works-card.has-detail {
+  flex: 0 0 calc(100% - 0.85rem);
+  min-width: calc(100% - 0.85rem);
+  max-width: calc(100% - 0.85rem);
 }
 
 .curated-block.is-yellow {
@@ -1836,23 +1859,18 @@ html:has(.board-doors) body {
   }
   .curated-block.is-pair-a {
     grid-column: span 7;
-    min-height: 22rem;
   }
   .curated-block.is-pair-b {
     grid-column: span 5;
-    min-height: 22rem;
   }
   .curated-block.is-pair-a .works-card.has-detail,
   .curated-block.is-pair-b .works-card.has-detail {
-    flex-basis: 15.5rem;
+    flex: 0 0 15.5rem;
     min-width: 15.5rem;
     max-width: 17.5rem;
   }
-  .curated-block.is-hero {
-    min-height: 28rem;
-  }
-  .curated-block.is-wide {
-    min-height: 24rem;
+  .curated-block.is-hero .works-scroller {
+    grid-auto-columns: min(22rem, calc(46% - 0.5rem));
   }
   .daily-score-chip--continue {
     width: 7.5rem;
