@@ -590,7 +590,7 @@ function reloadOpenClients(attempt) {
       if (url.pathname !== "/salon" && url.pathname.indexOf("/salon/") !== 0) return Promise.resolve();
       if (url.search.indexOf("__fresh=") !== -1) return Promise.resolve();
       // An open book keeps this document. The new shell applies on the next
-      // navigation or the next launch.
+      // navigation or the next launch. tbr-hold-open
       if (/\\/read\\/[^/?#&]+/.test(url.pathname + url.search)) return Promise.resolve();
       if (isWebAppManifest(url)) {
         reloadedClients[client.id] = now;
