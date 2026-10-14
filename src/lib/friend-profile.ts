@@ -316,10 +316,11 @@ export function openReadingFromActivity(events: FriendActivity[]): FriendReading
     .sort((a, b) => b.at - a.at);
   const current = open.find((event) => event.kind === "reading") ?? open[0];
   if (!current?.workId || !current.workTitle) return undefined;
+  const listed = listedActivity(current);
   return {
-    workId: current.workId,
-    workTitle: current.workTitle,
-    author: current.author ?? "",
+    workId: listed.workId ?? current.workId,
+    workTitle: listed.workTitle ?? current.workTitle,
+    author: listed.author ?? "",
     progress: current.progress,
     atIndex: current.atIndex,
     at: current.at,
@@ -418,7 +419,7 @@ function collectActivity(handle: string, graph: FriendGraph, isSelf: boolean): F
       pledgeId: pledge.id,
     });
   }
-  for (const item of graph.remoteActivity?.[handle] ?? []) items.push(item);
+  for (const item of graph.remoteActivity?.[handle] ?? []) items.push(listedActivity(item));
   return items;
 }
 
@@ -559,6 +560,19 @@ function keepActivity(
     author: work.author,
     atIndex: keep.at,
     breathId: keep.breathId,
+  };
+}
+
+/** A retired slug follows the local book, so a list never paints the textless stub. */
+function listedActivity(item: FriendActivity): FriendActivity {
+  if (!item.workId) return item;
+  const work = shelfWork(item.workId);
+  if (!work || work.id === item.workId) return item;
+  return {
+    ...item,
+    workId: work.id,
+    workTitle: work.title,
+    author: work.author,
   };
 }
 

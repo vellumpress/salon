@@ -1020,10 +1020,9 @@ test("The Home and the World is a local before-sleep bind on Next", () => {
   );
   assert.equal(FEATURED_CAROUSEL_IDS.includes("the-home-and-the-world"), false);
   assert.equal(curatorialTrack("the-home-and-the-world"), "next");
-  const stub = SHELF.find((item) => item.id === "home-world");
-  assert.ok(stub);
-  assert.equal(stub.local, undefined);
-  assert.notEqual(stub.id, work.id);
+  assert.equal(SHELF.filter((item) => item.id === "home-world").length, 0);
+  assert.equal(canonicalWorkId("home-world"), work.id);
+  assert.equal(shelfWork("home-world")?.id, work.id);
 });
 
 test("The Immoralist is a local before-sleep bind on Next", () => {
@@ -11317,16 +11316,15 @@ test("Mira POST-#188 CLEAR is Next lead Death in Venice, then Elmer Gantry, The 
   assert.equal(curatorialTrack("hard-times"), "next");
   assert.equal(curatorialTrack("great-god-pan"), "later");
   assert.equal(curatorialTrack("crime-and-punishment"), "next");
-  assert.equal(curatorialTrack("the-colonels-dream"), "later");
+  assert.equal(SHELF.filter((item) => item.id === "the-colonels-dream").length, 0);
+  assert.equal(canonicalWorkId("the-colonels-dream"), "colonels-dream");
   assert.equal(curatorialTrack("the-great-god-pan"), "later");
   assert.equal(SHELF.filter((item) => item.id === "death-in-venice").length, 1);
   assert.equal(SHELF.filter((item) => item.id === "elmer-gantry").length, 1);
   assert.equal(SHELF.filter((item) => item.id === "colonels-dream").length, 1);
   assert.equal(SHELF.filter((item) => item.id === "hard-times").length, 1);
   assert.equal(SHELF.filter((item) => item.id === "great-god-pan").length, 1);
-  assert.equal(SHELF.filter((item) => item.id === "the-colonels-dream").length, 1);
   assert.equal(SHELF.filter((item) => item.id === "the-great-god-pan").length, 1);
-  assert.equal(SHELF.find((item) => item.id === "the-colonels-dream")?.local, undefined);
   assert.equal(SHELF.find((item) => item.id === "the-great-god-pan")?.breaths, 1038);
   assert.equal(SHELF.find((item) => item.id === "the-great-god-pan")?.minutes, 130);
 

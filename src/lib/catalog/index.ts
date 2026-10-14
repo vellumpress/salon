@@ -1,3 +1,4 @@
+import { canonicalWorkId } from "../work-id-alias.ts";
 import { SHELF, type ShelfWork } from "./shelf.ts";
 
 /**
@@ -15,7 +16,7 @@ export const COLLIDED_CATALOG_KEYS = [
 const seen = new Set<string>();
 const works: ShelfWork[] = [];
 for (const work of SHELF) {
-  if (seen.has(work.id)) continue;
+  if (seen.has(work.id) || canonicalWorkId(work.id) !== work.id) continue;
   seen.add(work.id);
   works.push(work);
 }

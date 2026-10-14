@@ -1,5 +1,6 @@
-import { hasFullPdf } from "./catalog/full-pdf";
-import { SHELF, type ShelfWork } from "./catalog/shelf";
+import { hasFullPdf } from "./catalog/full-pdf.ts";
+import { SHELF, type ShelfWork } from "./catalog/shelf.ts";
+import { canonicalWorkId } from "./work-id-alias.ts";
 
 export type GeoRegion = {
   id: string;
@@ -96,7 +97,7 @@ export function placeWork(item: ShelfWork): PlacedWork {
 const placedSeen = new Set<string>();
 export const PLACED_WORKS: PlacedWork[] = [];
 for (const item of SHELF) {
-  if (placedSeen.has(item.id)) continue;
+  if (placedSeen.has(item.id) || canonicalWorkId(item.id) !== item.id) continue;
   placedSeen.add(item.id);
   PLACED_WORKS.push(placeWork(item));
 }

@@ -281,6 +281,36 @@ test("synced activity fills a followed profile and stays off the people list oth
   assert.equal(listFriends(graph).find((item) => item.handle === "mina")?.readingTitle, "Passing");
 });
 
+test("a friend's current read on a textless stub opens the local book", () => {
+  const contact = asContact({ handle: "mina", name: "Mina" });
+  assert.ok(contact);
+  const graph = emptyGraph({
+    selfHandle: "meghan",
+    contacts: [contact],
+    remoteActivity: {
+      mina: [
+        {
+          id: "remote:home",
+          at: NOW,
+          kind: "reading",
+          label: "Reading",
+          summary: "reading The Home and the World",
+          workId: "home-world",
+          workTitle: "The Home and the World",
+          author: "Rabindranath Tagore",
+        },
+      ],
+    },
+  });
+  const profile = friendProfile("mina", graph);
+  assert.equal(profile?.readingNow?.workId, "the-home-and-the-world");
+  assert.match(profile?.readingNow?.author ?? "", /Surendranath Tagore/);
+  assert.equal(
+    profile?.activity.some((item) => item.workId === "home-world"),
+    false,
+  );
+});
+
 test("a followed name with no activity is waiting", () => {
   const contact = asContact({ handle: "new.handle" });
   assert.ok(contact);

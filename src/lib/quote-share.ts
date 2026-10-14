@@ -1,4 +1,5 @@
 import { shelfWork } from "./catalog/shelf.ts";
+import { canonicalWorkId } from "./work-id-alias.ts";
 import { cardFileName, downloadBlob, renderSalonCard } from "./salon-card.ts";
 import { clipLine, decodeShare, encodeShare } from "./share-codec.ts";
 import { shareOrCopy, type ShareOrCopyResult } from "./invite-share.ts";
@@ -40,7 +41,7 @@ export function encodeQuoteCard(input: {
   const card: QuoteCard = {
     v: 1,
     k: "line",
-    w: input.workId,
+    w: canonicalWorkId(input.workId),
     i: Math.max(0, Math.floor(input.at ?? 0)),
     t: clipLine(input.text, 180),
     n: clipLine(input.title, 80),
@@ -56,7 +57,7 @@ export function decodeQuoteCard(token: string): QuoteCard | null {
   return {
     v: 1,
     k: "line",
-    w: String(card.w).slice(0, 80),
+    w: canonicalWorkId(String(card.w).slice(0, 80)),
     i: Math.max(0, Math.floor(Number(card.i) || 0)),
     t: clipLine(String(card.t), 220),
     n: clipLine(String(card.n ?? ""), 80),
@@ -65,7 +66,7 @@ export function decodeQuoteCard(token: string): QuoteCard | null {
 }
 
 export function quoteReadPath(card: Pick<QuoteCard, "w" | "i">) {
-  return `/read/${encodeURIComponent(card.w)}?at=${card.i}`;
+  return `/read/${encodeURIComponent(canonicalWorkId(card.w))}?at=${card.i}`;
 }
 
 /** Same-origin landing. Works on Pages because the sentence is inside the token. */

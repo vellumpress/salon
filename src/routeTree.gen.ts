@@ -31,6 +31,7 @@ import { Route as StoresRouteImport } from './routes/stores'
 import { Route as TogetherRouteImport } from './routes/together'
 import { Route as YouRouteImport } from './routes/you'
 import { Route as ApiRtcRouteImport } from './routes/api/rtc'
+import { Route as BookWorkIdRouteImport } from './routes/book.$workId'
 import { Route as ClubClubIdRouteImport } from './routes/club.$clubId'
 import { Route as CuratedSlugRouteImport } from './routes/curated_.$slug'
 import { Route as CuratedListsRouteImport } from './routes/curated_.lists'
@@ -156,6 +157,11 @@ const ApiRtcRoute = ApiRtcRouteImport.update({
   path: '/api/rtc',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BookWorkIdRoute = BookWorkIdRouteImport.update({
+  id: '/book/$workId',
+  path: '/book/$workId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ClubClubIdRoute = ClubClubIdRouteImport.update({
   id: '/club/$clubId',
   path: '/club/$clubId',
@@ -250,6 +256,7 @@ export interface FileRoutesByFullPath {
   '/together': typeof TogetherRoute
   '/you': typeof YouRoute
   '/api/rtc': typeof ApiRtcRoute
+  '/book/$workId': typeof BookWorkIdRoute
   '/club/$clubId': typeof ClubClubIdRoute
   '/curated/$slug': typeof CuratedSlugRoute
   '/curated/lists': typeof CuratedListsRoute
@@ -287,6 +294,7 @@ export interface FileRoutesByTo {
   '/together': typeof TogetherRoute
   '/you': typeof YouRoute
   '/api/rtc': typeof ApiRtcRoute
+  '/book/$workId': typeof BookWorkIdRoute
   '/club/$clubId': typeof ClubClubIdRoute
   '/curated/$slug': typeof CuratedSlugRoute
   '/curated/lists': typeof CuratedListsRoute
@@ -326,6 +334,7 @@ export interface FileRoutesById {
   '/together': typeof TogetherRoute
   '/you': typeof YouRoute
   '/api/rtc': typeof ApiRtcRoute
+  '/book/$workId': typeof BookWorkIdRoute
   '/club/$clubId': typeof ClubClubIdRoute
   '/curated_/$slug': typeof CuratedSlugRoute
   '/curated_/lists': typeof CuratedListsRoute
@@ -366,6 +375,7 @@ export interface FileRouteTypes {
     | '/together'
     | '/you'
     | '/api/rtc'
+    | '/book/$workId'
     | '/club/$clubId'
     | '/curated/$slug'
     | '/curated/lists'
@@ -403,6 +413,7 @@ export interface FileRouteTypes {
     | '/together'
     | '/you'
     | '/api/rtc'
+    | '/book/$workId'
     | '/club/$clubId'
     | '/curated/$slug'
     | '/curated/lists'
@@ -441,6 +452,7 @@ export interface FileRouteTypes {
     | '/together'
     | '/you'
     | '/api/rtc'
+    | '/book/$workId'
     | '/club/$clubId'
     | '/curated_/$slug'
     | '/curated_/lists'
@@ -480,6 +492,7 @@ export interface RootRouteChildren {
   TogetherRoute: typeof TogetherRoute
   YouRoute: typeof YouRoute
   ApiRtcRoute: typeof ApiRtcRoute
+  BookWorkIdRoute: typeof BookWorkIdRoute
   ClubClubIdRoute: typeof ClubClubIdRoute
   CuratedSlugRoute: typeof CuratedSlugRoute
   CuratedListsRoute: typeof CuratedListsRoute
@@ -650,6 +663,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiRtcRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/book/$workId': {
+      id: '/book/$workId'
+      path: '/book/$workId'
+      fullPath: '/book/$workId'
+      preLoaderRoute: typeof BookWorkIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/club/$clubId': {
       id: '/club/$clubId'
       path: '/club/$clubId'
@@ -787,6 +807,7 @@ const rootRouteChildren: RootRouteChildren = {
   TogetherRoute: TogetherRoute,
   YouRoute: YouRoute,
   ApiRtcRoute: ApiRtcRoute,
+  BookWorkIdRoute: BookWorkIdRoute,
   ClubClubIdRoute: ClubClubIdRoute,
   CuratedSlugRoute: CuratedSlugRoute,
   CuratedListsRoute: CuratedListsRoute,

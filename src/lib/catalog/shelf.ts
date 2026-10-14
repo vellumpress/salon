@@ -246,7 +246,6 @@ export const SHELF: ShelfWork[] = [
     intro:
       "Dog barking in the sierra — tortillas, a *cántaro*, a rifle under the mat — and hoofbeats in the quarry.",
   },
-  { id: "home-world", title: "The Home and the World", author: "Rabindranath Tagore", year: 1916, form: "novel", language: "Bengali", minutes: 160, gutenberg: 7166 },
   {
     id: "the-home-and-the-world",
     title: "The Home and the World",
@@ -2160,7 +2159,6 @@ export const SHELF: ShelfWork[] = [
     opening: "Mount Nelson?",
     breaths: 5274,
   },
-  { id: "the-colonels-dream", title: "The Colonel's Dream", author: "Charles W. Chesnutt", year: 1905, form: "novel", language: "English", minutes: 160, gutenberg: 19746 },
   { id: "love-of-life-and-other-stories", title: "Love of Life, and Other Stories", author: "Jack London", year: 1907, form: "stories", language: "English", minutes: 80, local: true, opening: "It was the gosh-dangdest stampede I ever seen. A thousand dog-teams hittin' the ice. You couldn't see 'm fer smoke. Two white men an' a Swede froze to death that night, an' there", breaths: 844, gutenberg: 710 },
   { id: "the-spell-of-the-yukon-and-other-verses", title: "The Spell of the Yukon and Other Verses", author: "Robert W. Service", year: 1907, form: "poem", language: "English", minutes: 64, local: true, opening: "The lonely sunsets flare forlorn / Down valleys dreadly desolate;", breaths: 55, gutenberg: 207 },
   { id: "options", title: "Options", author: "O. Henry", year: 1909, form: "stories", language: "English", minutes: 403, gutenberg: 1583,
@@ -3195,14 +3193,15 @@ function shelfSearchBlobs() {
 
 export function searchShelf(query: string) {
   const q = foldSearchText(query.trim());
-  if (!q) return SHELF;
+  if (!q) return SHELF.filter((item) => canonicalWorkId(item.id) === item.id);
   const words = q.split(/\s+/);
   const blobs = shelfSearchBlobs();
   const out: ShelfWork[] = [];
   for (let i = 0; i < SHELF.length; i++) {
     const blob = blobs[i] ?? "";
     const item = SHELF[i];
-    if (item && words.every((word) => blob.includes(word))) out.push(item);
+    if (!item || canonicalWorkId(item.id) !== item.id) continue;
+    if (words.every((word) => blob.includes(word))) out.push(item);
   }
   return out;
 }
