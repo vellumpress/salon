@@ -121,7 +121,19 @@ export function isPageGotoTimeout(error: unknown): boolean {
 export function isRetryableCatalogOpen(error: unknown): boolean {
   if (isPageGotoTimeout(error)) return true;
   const message = error instanceof Error ? error.message : String(error);
-  return /net::ERR_ABORTED|Execution context was destroyed|frame was detached|Navigation interrupted|Target page, context or browser has been closed/i.test(
+  return /net::ERR_ABORTED|Execution context was destroyed|frame was detached|Navigation interrupted|interrupted by another navigation|Target page, context or browser has been closed/i.test(
     message,
   );
+}
+
+/**
+ * The shell replaced the document, so this open or tap was not graded.
+ * A timeout whose page still answers is a real miss and stays failed.
+ * `pageReadable` is false when the follow-up read threw.
+ */
+export function isDeadDocument(error: unknown, pageReadable: boolean): boolean {
+  if (isRetryableCatalogOpen(error)) return true;
+  if (pageReadable) return false;
+  const message = error instanceof Error ? error.message : String(error);
+  return /Timeout \d+ms exceeded/.test(message);
 }
