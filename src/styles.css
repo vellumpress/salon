@@ -160,6 +160,7 @@
   html {
     width: 100%;
     min-height: 100%;
+    min-height: -webkit-fill-available;
     min-height: 100dvh;
     overflow-x: clip;
     /* Mark row absorbs the iOS status bar once the page draws underneath it. */
@@ -174,14 +175,18 @@
   #app {
     max-width: 100%;
     min-height: 100%;
+    min-height: -webkit-fill-available;
     min-height: 100dvh;
   }
   body {
     min-height: 100%;
+    min-height: -webkit-fill-available;
     min-height: 100dvh;
     overflow-x: clip;
     overscroll-behavior-x: none;
-    /* iOS 26 tints the status bar from this paint, not from theme-color. */
+    /* iOS 26 tints the status bar from this paint, not from theme-color.
+       The same paint has to reach the home indicator: a short shell leaves
+       this cream in the band the viewport units drop. */
     background: var(--status-page, var(--color-paper));
     color: var(--color-ink);
     font-family: var(--font-sans);
@@ -236,8 +241,26 @@
   overflow: hidden;
   overscroll-behavior: none;
   padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: var(--spacing-chrome);
+  /* No bottom pad on the shell. A safe-area pad here is paper, so a green
+     reader or a yellow card stops short and a cream band shows under it.
+     Controls that must clear the home indicator pad themselves. */
+  padding-bottom: 0;
   background: var(--color-paper);
+}
+
+/* Paints the band under a short shell. Inside the layout viewport when the
+   shell stops early; below it when iOS drops that band from the viewport.
+   The shell paints above this, so reader taps and book text stay put. */
+html::before {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  bottom: calc(-1 * var(--shell-outside, 0px));
+  height: calc(var(--shell-inside, 0px) + var(--shell-outside, 0px));
+  pointer-events: none;
+  background: var(--shell-edge, var(--status-page, var(--color-paper)));
 }
 
 /* Freeze `--vvh` on focus so the keyboard cannot crush this frame.
@@ -382,7 +405,7 @@ html.together-compose.together-kb .chat-slot {
   overflow-x: clip;
   background: var(--color-ink);
   padding: var(--spacing-rule);
-  padding-bottom: max(var(--spacing-rule), var(--spacing-chrome));
+  padding-bottom: var(--spacing-rule);
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(0, auto);
 }
@@ -1012,6 +1035,10 @@ html[data-status-motion="1"] .status-bar-fill::before {
   grid-template-columns: 1fr;
   grid-template-rows: var(--mark-row, 3rem) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) auto;
   grid-auto-rows: minmax(0, auto);
+  /* The 1px ink rule stays on the sides. The bottom is the dock, which
+     carries the home indicator in its own padding so the paper reaches
+     the screen edge. */
+  padding-bottom: 0;
 }
 
 .board.board-doors > .cell-pillar {
@@ -1049,7 +1076,9 @@ html[data-status-motion="1"] .status-bar-fill::before {
   grid-column: 1 / -1;
   display: flex;
   align-items: stretch;
+  box-sizing: border-box;
   min-height: 2.75rem;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   background: var(--color-paper);
   z-index: 2;
 }
@@ -1389,7 +1418,6 @@ html:has(.board-doors) body {
 .board.board-curated {
   gap: 0.625rem;
   padding: 0.625rem;
-  padding-bottom: max(0.625rem, var(--spacing-chrome));
   background: var(--color-ink);
 }
 
@@ -2397,9 +2425,13 @@ html.together-compose .upcoming-slot {
 
 .chat-compose {
   display: flex;
+  box-sizing: border-box;
   flex-shrink: 0;
   align-items: stretch;
   border-top: 1px solid var(--color-ink);
+  /* The shell no longer pads the home indicator. This row keeps the field
+     above it, and the row's own paper fills that band. */
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   background-color: var(--color-paper);
   color-scheme: light;
   opacity: 1;
@@ -3588,6 +3620,7 @@ html.together-compose .chat-field {
 .reader-daylight .bg-paper {
   background-color: var(--reader-bg);
   color: var(--reader-ink);
+  --shell-edge: var(--reader-bg);
 }
 
 .reader-daylight-motion.frame-screen,
@@ -3765,5 +3798,27 @@ html.together-compose.together-kb .reader-daylight .chat-field {
   .reader-frame,
   .reader-frame * {
     transition: none !important;
+  }
+}
+
+/* Home-screen PWA. 100dvh and visualViewport omit the home-indicator band
+   (on recent iPhones, a slice about the size of the top inset). 100vh
+   includes it. Browser tabs stay on 100dvh so the Safari toolbar does not
+   turn into a scrollable void. Keyboard frames keep the frozen --vvh. */
+@media (display-mode: standalone) {
+  html:not(.kb-open):not(.kb-focus):not(.club-compose):not(.together-kb),
+  html:not(.kb-open):not(.kb-focus):not(.club-compose):not(.together-kb) body,
+  html:not(.kb-open):not(.kb-focus):not(.club-compose):not(.together-kb) #app {
+    min-height: 100vh;
+    height: max(var(--vvh, 100dvh), 100vh);
+    max-height: none;
+    background-color: var(--status-page, var(--color-paper));
+  }
+
+  html:not(.kb-open):not(.kb-focus):not(.club-compose):not(.together-kb) .frame-screen,
+  html:not(.kb-open):not(.kb-focus):not(.club-compose):not(.together-kb) .board.board-doors,
+  html:not(.kb-open):not(.kb-focus):not(.club-compose):not(.together-kb) .board.board-doors.is-searching {
+    height: max(var(--vvh, 100dvh), 100vh);
+    max-height: none;
   }
 }
