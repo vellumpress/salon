@@ -1492,6 +1492,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "the-complete-poems-of-paul-laurence-dunbar": [
     94
   ],
+  "the-confession": [
+    21
+  ],
   "the-congo-and-other-poems": [
     95
   ],

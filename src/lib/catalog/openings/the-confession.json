@@ -1,0 +1,131 @@
+{
+  "id": "the-confession",
+  "title": "The Confession",
+  "author": "Maxim Gorky (tr. Rose Strunsky)",
+  "year": "1909",
+  "note": "Opening sit: Chapter I, whole, ending \"The priest would scold and threaten to complain, and the peasants would laugh.\"",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "Let me tell you my life; it won't take much of your time—you ought to know it.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Let me tell you my life; it won't take much of your time—you ought to know it."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "I am a weed, a foundling, an illegitimate being. It isn't known to whom I was born, but I was abandoned on the estate of Mr. Loseff in the village of Sokal, in the district of Krasnoglinsk. My mother left me—or perhaps it was some one else—in the landlord's park, on the steps of the little shrine under which the old landlady Loseff lay buried and where I was found by Danil Vialoff, the gardener. He was walking in the park early in the morning, when he saw a child wrapped in rags lie moving on the steps of the shrine. A smoke-colored cat was walking stealthfully around it."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "I lived with Danil until I was four years old, but as he himself had a large family, I fed myself wherever I happened to be, and when I found nothing I whined and whined, then fell asleep hungry."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "When I was four I was taken by the sexton Larion, a very strange and lonely man; he took me because of his loneliness. He was short of stature, round like a toy balloon and had a round face. His hair was red, his voice thin like a woman's, and his heart was also like a woman's, gentle to everybody. He liked to drink wine and drank much of it; when sober he was silent, his eyes always half-closed, and he had an air of being guilty before all, but when drunk, he sang psalms and hymns in a loud voice, held his head high and smiled at every one."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "He remained apart from people, living in poverty, for he had given away his share to the priest, while he himself fished both summer and winter. And for fun he caught singing birds, teaching me to do the same. He loved birds and they were not afraid of him; it is touching to recall how even the most timid of little birds would run over his red head and get mixed up in his fiery hair. Or the bird would settle on his shoulder and look into his mouth, bending its wise little head to the side. Then again Larion would lie on a bench and sprinkle hempseed in his head and beard, and canaries, goldfinches, tomtits and bullfinches would collect around him, hunting through his hair, creeping over his cheeks, picking his ears, settling on his nose while he lay there roaring with laughter, squinting his eyes and conversing tenderly with them. I envied him for this—of me, the birds were afraid."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Larion was a man of tender soul and all animals recognized it; I can't say the same for men, though I don't mean to blame them for I know man isn't fed by caresses."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "It used to be rather difficult for him in winter; he had no wood and he had nothing to buy it with, having drunk up the money. His little hut was as cold as a cellar, except that the birds chirped and sang, and the two of us would lie on the cold stove, wrapped in everything possible, listening to the singing of the birds. Larion would whistle to them—he could whistle well—looking like a grossbeak, with his large nose, his hooked bill and his red head. Often he would say to me: \"Well, listen, Motka\" (I was baptized Matvei). \"Listen!\""
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "He would lie on his back, his hands under his head, squinting his eyes and singing something from the funeral Liturgy in his thin voice. The birds would then become quiet, stopping to listen, then they themselves would begin to sing one after the other. Larion would try to sing louder than they and they would exert themselves, especially the canaries and goldfinches, or the thrushes and starlings. He would often sing himself up to such a point that the tears from his eyes would trickle from out his lids, wetting his cheeks and washing his face gray."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "This singing sometimes frightened me, and once I said to him in a whisper:"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Uncle, why do you always sing about death?\" He stopped, looked at me and said, smiling,"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"Don't get frightened, silly. It doesn't matter if it is about death; it is pretty. Of the whole church service the funeral mass is the most beautiful. It offers tenderness to man and pity for him. Among us, no one has pity except for the dead.\" These words I remember very well, as I do all his words, but of course at that time I could not understand them. The things of childhood are only understood on the eve of old age, for these are the wisest years of man."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "I remember also that I asked him once, \"Why does God help man so little?\""
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"It's none of His business,\" he explained to me. \"Help yourself, that's why reason was given to you. God is here so that it won't be so terrible to die, but just how to live, that is your affair.\""
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "I soon forgot these words of his, and recalled them too late, and that is why I have suffered much vain sorrow."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "He was a remarkable man! When angling most people never shout and never speak so as not to frighten the fish, but Larion sang unceasingly, or recounted the lives of the saints to me, or spoke to me about God, and yet the fish always flocked to him. Birds must also be caught with care, but he whistled all the time, teased them and talked to them and it never mattered—the birds walked into his traps and nets. The same thing as to bees; when setting a hive or doing anything else, which old bee-keepers do with prayers, and even then don't always succeed, the sexton, when called for the job, would strike the bees, crush them, swear profanely, and yet everything went in the best way possible. He didn't like bees—they blinded a daughter of his once. She found herself in a bee-hive—she was only three at the time—and a bee stung her eye. This eye grew diseased, and then blind, and soon the other eye followed. Later the little girl died from headache, and her mother became insane."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Yes, he never did anything the way other people did, and he was as tender to me as if he were my own mother. They did not treat me with much mercy in the village. Life was hard, and I was a stranger, and a superfluous one.... Suddenly and illegally to be eating the morsel that belonged to some one else!"
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Larion taught me the church service, and I became his helper and sang with him in the choir, lit the censer, and did all that was needed. I helped the watchman Vlassi keep order in the church and I liked doing all this, especially in winter. The church was of brick, they heated it well, and it was warm inside it."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "I liked vespers better than morning mass. In the evening the people were purified by work and were freed of their worries, and they stood quietly and majestically, and their souls shone like wax candles with little flames. It was plain then, that though people had different faces their misery was the same."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Larion liked the church service; he would close his eyes, throw back his red head, stick out his Adam's apple and burst forth into song, losing himself so that he would even start off on some uncalled for hymn and the priest would make signs to him from the altar: \"Where is it taking you?\" He also read beautifully. His voice was singsong and sonorous, and had tenderness in it, and emotion and joy. The priest did not like him, nor did he like the priest. More than once he said to me:"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"That, a priest! He is no priest, he is a drum upon whom need and force of habit beat their sticks. If I were a priest, I would read the service in such a way that not only would I make the people cry, but even the holy images!\""
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "It was true—the priest did not suit his post. He was short-nosed and dark as if he had been singed by gun-powder. His mouth was large and toothless, his beard straggly, his hair thin and bald on top, his arms long. He had a hoarse voice and he panted as if carrying a load that was too much for his strength. He was greedy and always in a bad humor—for his family was large and the village was poor, the land of the peasants bad and there was no business."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "In summer, even when the mosquitoes were thick, Larion and I spent our days and our nights in the woods to hunt for birds or on the river to catch fish. It happened that he would be needed unexpectedly for some religious ceremony and he would not be there, nor would any one know where to find him. All the little boys in the village would scatter to hunt for him, running like hares and crying, \"Sexton! Larion! Come home!\" He would hardly ever be found. The priest would scold and threaten to complain, and the peasants would laugh."
+    }
+  ]
+}

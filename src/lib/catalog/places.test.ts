@@ -143,6 +143,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "garman-and-worse": { label: "Norway", region: "no" },
     "one-of-life-s-slaves": { label: "Christiania", region: "no" },
     fantasy: { label: "Naples", region: "it" },
+    "the-confession": { label: "Russia", region: "ru" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
@@ -684,4 +685,11 @@ test("Thu 15 Oct PM SERAO-FANTASY place: Naples, chipped as Farewell Love!'s cit
   assert.deepEqual(placeFor(shelfWork("fantasy")!), { label: "Naples", region: "it" });
   assert.deepEqual(placeFor(shelfWork("fantasy")!), placeFor(shelfWork("farewell-love")!));
   assert.equal(CHIP_ONLY_PLACE["fantasy"], undefined);
+});
+
+test("Thu 15 Oct EVE GORKY-CONFESSION place: Russia, chipped as In the World is (no city is the centre of the wandering); no new region key", () => {
+  assert.ok(REGION_SHAPES.ru?.d, "ru shape");
+  assert.deepEqual(placeFor(shelfWork("the-confession")!), { label: "Russia", region: "ru" });
+  assert.deepEqual(placeFor(shelfWork("the-confession")!), placeFor(shelfWork("in-the-world")!));
+  assert.equal(CHIP_ONLY_PLACE["the-confession"], undefined);
 });
