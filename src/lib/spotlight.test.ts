@@ -1,9 +1,11 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import { phoneBlockLimit, phoneLineMeasure, PHONE_LINE_PX } from "./display-blocks.ts";
 import {
   markSpotlight,
   passageEndsAtStop,
+  type GroupsAt,
   placeOf,
   repeatSpotlight,
   SPOTLIGHT_LINE_SLOP,
@@ -12,6 +14,7 @@ import {
   spotlightGroups,
   spotlightKey,
   spotlightLineCap,
+  spotlightNear,
   stepSpotlight,
   type SpotlightGroup,
   type SpotlightPlace,
@@ -456,4 +459,166 @@ test("markSpotlight keeps past and ahead and joins back to the block", () => {
     marks[0]!.map((piece) => piece.role),
     ["past", "focus", "ahead"],
   );
+});
+
+function samePlace(a: SpotlightGroup, b: SpotlightGroup) {
+  assert.equal(spotlightKey(placeOf(a)), spotlightKey(placeOf(b)));
+  assert.equal(a.endIndex, b.endIndex);
+  assert.equal(a.endCursor, b.endCursor);
+  assert.equal(a.sample, b.sample);
+}
+
+test("a place grouped on its own matches the chapter, including the step each way", () => {
+  const breaths = [0, 1, 2, 3, 4, 5, 6, 7].map((index) => ({
+    index,
+    text: index % 3 === 0 ? sentenceOf(6, `long${index}`) : sentenceOf(1, `short${index}`),
+  }));
+  const full = spotlightGroups(breaths, measure, limit, line);
+  assert.ok(full.length > 4);
+  const lazy: GroupsAt = (index, query) =>
+    spotlightNear(
+      breaths,
+      { index, cursor: query?.cursor ?? 0, window: query?.window ?? 0 },
+      measure,
+      limit,
+      line,
+      "prose",
+      undefined,
+      undefined,
+      query?.edge ?? "around",
+      query?.after ?? 1,
+    );
+  let place = placeOf(full[0]!);
+  for (let i = 0; i < full.length; i += 1) {
+    const near = spotlightNear(breaths, place, measure, limit, line, "prose", undefined, undefined, "around", 1);
+    const found = near.find(
+      (group) => group.index === place.index && group.cursor === place.cursor && group.window === place.window,
+    );
+    assert.ok(found, `missing ${spotlightKey(place)}`);
+    samePlace(found, full[i]!);
+    if (i === full.length - 1) break;
+    const moved = stepSpotlight({ place, delta: 1, groupsAt: lazy, breathCount: breaths.length });
+    assert.notEqual(moved, "start");
+    assert.notEqual(moved, "end");
+    if (moved === "start" || moved === "end") break;
+    assert.equal(spotlightKey(moved), spotlightKey(placeOf(full[i + 1]!)));
+    place = moved;
+  }
+  for (let i = full.length - 1; i > 0; i -= 1) {
+    const moved = stepSpotlight({ place, delta: -1, groupsAt: lazy, breathCount: breaths.length });
+    assert.notEqual(moved, "start");
+    if (moved === "start" || moved === "end") break;
+    assert.equal(spotlightKey(moved), spotlightKey(placeOf(full[i - 1]!)));
+    place = moved;
+  }
+});
+
+test("the first window of a long sentence matches, and the rest of the sentence can wait", () => {
+  const text = sentenceOf(18, "ramayan");
+  const full = spotlightGroups([{ index: 4, text }], measure, limit, line, "verse");
+  assert.ok(full.length > 3);
+  const open = spotlightNear(
+    [{ index: 4, text }],
+    { index: 4, cursor: 0, window: 0 },
+    measure,
+    limit,
+    line,
+    "verse",
+    undefined,
+    undefined,
+    "around",
+    0,
+  );
+  assert.equal(open.length, 1);
+  samePlace(open[0]!, full[0]!);
+  const later = spotlightNear(
+    [{ index: 4, text }],
+    { index: 4, cursor: 0, window: 2 },
+    measure,
+    limit,
+    line,
+    "verse",
+    undefined,
+    undefined,
+    "around",
+    0,
+  );
+  const third = later.find((group) => group.window === 2);
+  assert.ok(third);
+  samePlace(third!, full[2]!);
+  const tail = spotlightNear(
+    [{ index: 4, text }],
+    { index: 4, cursor: 0, window: 0 },
+    measure,
+    limit,
+    line,
+    "verse",
+    undefined,
+    undefined,
+    "last",
+    0,
+  );
+  assert.equal(tail.length, 1);
+  samePlace(tail[0]!, full[full.length - 1]!);
+});
+
+test("opening the Ramayan groups the passage on screen, not the whole canto", () => {
+  const data = JSON.parse(
+    readFileSync(new URL("./catalog/texts/the-ramayan-of-valmiki.json", import.meta.url), "utf8"),
+  ) as { breaths: { sceneId: string; text: string }[] };
+  const book = data.breaths;
+  const sceneOf = (index: number) => {
+    const id = book[index]?.sceneId;
+    return book.flatMap((breath, at) => (breath.sceneId === id ? [{ index: at, text: breath.text }] : []));
+  };
+  const scene = sceneOf(5);
+  const place = { index: 5, cursor: 0, window: 0 };
+  const started = performance.now();
+  const near = spotlightNear(scene, place, measure, limit, line, "verse", undefined, undefined, "around", 0);
+  const elapsed = performance.now() - started;
+  assert.ok(elapsed < 400, `open grouped in ${elapsed.toFixed(0)}ms`);
+  const fullStarted = performance.now();
+  const full = spotlightGroups(scene, measure, limit, line, "verse");
+  const fullElapsed = performance.now() - fullStarted;
+  assert.ok(full.length > 100, `expected the canto to be many passages, got ${full.length}`);
+  assert.ok(fullElapsed > elapsed * 3, `full canto ${fullElapsed.toFixed(0)}ms was not slower than the open ${elapsed.toFixed(0)}ms`);
+  const found = near.find((group) => group.index === 5 && group.cursor === 0 && group.window === 0);
+  assert.ok(found);
+  samePlace(found!, full[0]!);
+  const lazy: GroupsAt = (index, query) =>
+    spotlightNear(
+      sceneOf(index),
+      { index, cursor: query?.cursor ?? 0, window: query?.window ?? 0 },
+      measure,
+      limit,
+      line,
+      "verse",
+      undefined,
+      undefined,
+      query?.edge ?? "around",
+      query?.after ?? 1,
+    );
+  let cursor = place;
+  const steps = Math.min(12, full.length - 1);
+  for (let i = 0; i < steps; i += 1) {
+    const moved = stepSpotlight({ place: cursor, delta: 1, groupsAt: lazy, breathCount: book.length });
+    assert.notEqual(moved, "start");
+    assert.notEqual(moved, "end");
+    if (moved === "start" || moved === "end") break;
+    assert.equal(spotlightKey(moved), spotlightKey(placeOf(full[i + 1]!)), `forward ${i}`);
+    cursor = moved;
+  }
+  const back = stepSpotlight({ place, delta: -1, groupsAt: lazy, breathCount: book.length });
+  assert.notEqual(back, "start");
+  assert.notEqual(back, "end");
+  if (back !== "start" && back !== "end") {
+    const preface = spotlightGroups(sceneOf(back.index), measure, limit, line, "verse");
+    samePlace(
+      preface[preface.length - 1]!,
+      spotlightNear(sceneOf(back.index), back, measure, limit, line, "verse", undefined, undefined, "around", 0).find(
+        (group) => spotlightKey(placeOf(group)) === spotlightKey(back),
+      )!,
+    );
+    assert.equal(back.index, 4);
+  }
 });
