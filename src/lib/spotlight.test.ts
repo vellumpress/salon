@@ -622,3 +622,77 @@ test("opening the Ramayan groups the passage on screen, not the whole canto", ()
     assert.equal(back.index, 4);
   }
 });
+
+test("sentences that would paint more than four rows stay split", () => {
+  const text = "The Litany ended with the Agnus Dei. Once more all the pupils knelt, and the priest prayed.";
+  const kept = spotlightGroups([{ index: 16, text }], measure, limit, line);
+  assert.equal(kept.length, 1);
+  const cut = text.indexOf("Once");
+  const countRows = (_sample: string, start: number, end: number) => (start < cut && end > cut ? 6 : 3);
+  const groups = spotlightGroups(
+    [{ index: 16, text }],
+    measure,
+    limit,
+    line,
+    "prose",
+    undefined,
+    undefined,
+    countRows,
+  );
+  assert.equal(groups.length, 2);
+  assert.match(groups[0]!.sample, /Agnus Dei/);
+  assert.doesNotMatch(groups[0]!.sample, /knelt/);
+  assert.match(groups[1]!.sample, /^Once more/);
+  assert.equal(groups.map((group) => group.sample).join(""), text);
+});
+
+test("rows add across breaths, and a sit stop still ends the passage", () => {
+  const breaths = [
+    { index: 0, text: "The Litany ended with the Agnus Dei." },
+    { index: 1, text: "Once more all the pupils knelt." },
+    { index: 2, text: sentenceOf(2, "three") },
+  ];
+  const countRows = () => 3;
+  const split = spotlightGroups(breaths, measure, limit, line, "prose", undefined, undefined, countRows);
+  assert.ok(split.every((group) => group.index === group.endIndex));
+  const stopped = spotlightGroups(breaths, measure, limit, line, "prose", new Set([1]), undefined, () => 1);
+  assert.equal(passageEndsAtStop(stopped, 1, breaths[1]!.text.length), null);
+  assert.ok(stopped.every((group) => group.endIndex <= 1 || group.index > 1));
+});
+
+test("a sentence inside the height cap breaks at a semicolon, dash, or comma when it would paint a fifth row", () => {
+  const head = sentenceOf(2, "litany").replace(/\.$/, "");
+  const tail = sentenceOf(2, "agnus").replace(/\.$/, "");
+  assert.ok(linesOf(`${head} ${tail}.`) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  for (const pause of [";", "\u2014", ","] as const) {
+    const text = `${head}${pause} ${tail}.`;
+    const at = text.indexOf(pause);
+    const tailAt = text.indexOf(tail);
+    const countRows = (_sample: string, start: number, end: number) => {
+      const coversHead = start <= at && end > at;
+      const coversTail = end > tailAt;
+      return coversHead && coversTail ? 6 : 3;
+    };
+    const kept = spotlightGroups([{ index: 0, text }], measure, limit, line);
+    assert.equal(kept.length, 1, `${pause} still fits the height cap`);
+    const groups = spotlightGroups(
+      [{ index: 0, text }],
+      measure,
+      limit,
+      line,
+      "prose",
+      undefined,
+      undefined,
+      countRows,
+    );
+    assert.ok(groups.length >= 2, pause);
+    assert.equal(groups.map((group) => group.sample).join(""), text);
+    assert.match(groups[0]!.sample, new RegExp(`${pause}\\s*$`));
+    assert.match(groups[1]!.sample, /^agnus/);
+    for (const group of groups) {
+      const end = text.indexOf(group.sample) + group.sample.length;
+      const start = text.indexOf(group.sample);
+      assert.ok(countRows(text, start, end) <= SPOTLIGHT_MAX_LINES);
+    }
+  }
+});

@@ -1,5 +1,14 @@
-import { tapSpans, type DisplayKind } from "./display-blocks.ts";
-import { PHONE_LINE_PX } from "./display-blocks.ts";
+import {
+  displayLinePx,
+  measureDisplaySample,
+  measureFocusRows,
+  measureStyledHeight,
+  PHONE_LINE_PX,
+  resolveDisplayBlocks,
+  tapSpans,
+  type DisplayKind,
+  type DisplayMetrics,
+} from "./display-blocks.ts";
 import { sentenceSpans } from "./sentences.ts";
 
 /**
@@ -8,12 +17,23 @@ import { sentenceSpans } from "./sentences.ts";
  * being cut, and from swallowing the sentence after it.
  * Whole sentences are kept whenever they land in that window. A sentence
  * taller than four lines breaks at the most natural internal pause.
+ * A row counter, when the reader supplies one, also refuses a fifth painted
+ * row: the next sentence stays out, and a sentence that still paints five
+ * or six rows breaks at a semicolon, dash, or comma.
  */
 export const SPOTLIGHT_MIN_LINES = 2;
 export const SPOTLIGHT_MAX_LINES = 4;
 export const SPOTLIGHT_LINE_SLOP = 0.34;
 
 export type MeasureFn = (sample: string) => number;
+
+/**
+ * Painted rows of one slice inside its breath.
+ * The same characters can paint another row when they continue a line,
+ * or when a display block boundary falls inside the slice.
+ * Counts are non-decreasing as `end` grows.
+ */
+export type CountRows = (breathText: string, start: number, end: number) => number;
 
 export type SpotlightBreath = { index: number; text: string };
 
@@ -203,6 +223,31 @@ function isShortLine(lines: number) {
   return lines < minWindowLines();
 }
 
+function rowsFit(countRows: CountRows | undefined, text: string, start: number, end: number) {
+  if (!countRows) return true;
+  return countRows(text, start, end) <= SPOTLIGHT_MAX_LINES;
+}
+
+/** Rows of a passage. Separate breaths stack, so their rows add. */
+function coveredRows(atoms: readonly Atom[], texts: Map<number, string>, countRows: CountRows) {
+  let rows = 0;
+  let i = 0;
+  while (i < atoms.length) {
+    const index = atoms[i]!.index;
+    const start = atoms[i]!.start;
+    let end = atoms[i]!.end;
+    let j = i + 1;
+    while (j < atoms.length && atoms[j]!.index === index) {
+      end = atoms[j]!.end;
+      j += 1;
+    }
+    rows += countRows(texts.get(index) ?? "", start, end);
+    if (rows > SPOTLIGHT_MAX_LINES) return rows;
+    i = j;
+  }
+  return rows;
+}
+
 function skipSpace(text: string, index: number) {
   let i = index;
   while (i < text.length && /\s/u.test(text[i] ?? "")) i += 1;
@@ -301,11 +346,13 @@ function scoreCut(
   limitPx: number,
   linePx: number,
   target: number,
+  countRows?: CountRows,
 ): ScoredCut | null {
   if (cut <= from || cut >= end) return null;
   const piece = windowLines(breathText, from, cut, measure, linePx);
   if (piece < minWindowLines() || piece > maxWindowLines()) return null;
   if (!fits(piece, limitPx, linePx)) return null;
+  if (!rowsFit(countRows, breathText, from, cut)) return null;
   const rest = windowLines(breathText, cut, end, measure, linePx);
   const restWords = wordCount(breathText.slice(cut, end));
   const restPieces = rest <= maxWindowLines() ? 1 : Math.ceil(rest / SPOTLIGHT_MAX_LINES);
@@ -338,6 +385,7 @@ function wordCutsInWindow(
   measure: MeasureFn,
   limitPx: number,
   linePx: number,
+  countRows?: CountRows,
 ) {
   if (wordCuts.length === 0) return [];
   let low = 0;
@@ -359,7 +407,11 @@ function wordCutsInWindow(
   while (low <= high) {
     const mid = Math.floor((low + high) / 2);
     const lines = windowLines(breathText, from, wordCuts[mid]!, measure, linePx);
-    if (lines <= maxWindowLines() && fits(lines, limitPx, linePx)) {
+    if (
+      lines <= maxWindowLines() &&
+      fits(lines, limitPx, linePx) &&
+      rowsFit(countRows, breathText, from, wordCuts[mid]!)
+    ) {
       right = mid;
       low = mid + 1;
     } else {
@@ -379,6 +431,7 @@ function longestWordFit(
   limitPx: number,
   linePx: number,
   absEnd: number,
+  countRows?: CountRows,
 ) {
   let best = -1;
   let low = 0;
@@ -386,7 +439,7 @@ function longestWordFit(
   while (low <= high) {
     const mid = Math.floor((low + high) / 2);
     const lines = windowLines(breathText, from, wordCuts[mid]!, measure, linePx);
-    if (fits(lines, limitPx, linePx)) {
+    if (fits(lines, limitPx, linePx) && rowsFit(countRows, breathText, from, wordCuts[mid]!)) {
       best = wordCuts[mid]!;
       low = mid + 1;
     } else {
@@ -405,41 +458,51 @@ function pickCut(
   measure: MeasureFn,
   limitPx: number,
   linePx: number,
+  countRows?: CountRows,
 ) {
   const total = windowLines(breathText, from, absEnd, measure, linePx);
   const target = targetLines(total);
   const punct = local.filter((cand) => cand.rank < 3);
   const punctScored: ScoredCut[] = [];
   for (const cand of punct) {
-    const scored = scoreCut(breathText, from, absEnd, cand.end, cand.rank, measure, limitPx, linePx, target);
+    const scored = scoreCut(
+      breathText,
+      from,
+      absEnd,
+      cand.end,
+      cand.rank,
+      measure,
+      limitPx,
+      linePx,
+      target,
+      countRows,
+    );
     if (scored) punctScored.push(scored);
   }
   const goodPunct = punctScored.filter((scored) => scored.remnant === 0);
   if (goodPunct.length > 0) return bestCut(goodPunct).end;
-  const wordCuts = wordCutsInWindow(
-    breathText,
-    from,
-    local.filter((cand) => cand.rank === 3).map((cand) => cand.end),
-    measure,
-    limitPx,
-    linePx,
-  );
+  const wordEnds = local.filter((cand) => cand.rank === 3).map((cand) => cand.end);
+  const wordCuts = wordCutsInWindow(breathText, from, wordEnds, measure, limitPx, linePx, countRows);
   const wordScored: ScoredCut[] = [];
   for (const cut of wordCuts) {
-    const scored = scoreCut(breathText, from, absEnd, cut, 3, measure, limitPx, linePx, target);
+    const scored = scoreCut(breathText, from, absEnd, cut, 3, measure, limitPx, linePx, target, countRows);
     if (scored) wordScored.push(scored);
   }
   const all = punctScored.concat(wordScored);
   if (all.length > 0) return bestCut(all).end;
-  return longestWordFit(
-    breathText,
-    from,
-    local.filter((cand) => cand.rank === 3).map((cand) => cand.end),
-    measure,
-    limitPx,
-    linePx,
-    absEnd,
-  );
+  // A pause shorter than two lines still beats a fifth painted row.
+  if (countRows) {
+    const relaxed: ScoredCut[] = [];
+    for (const cand of punct) {
+      if (cand.end <= from || cand.end >= absEnd) continue;
+      if (!rowsFit(countRows, breathText, from, cand.end)) continue;
+      const piece = windowLines(breathText, from, cand.end, measure, linePx);
+      if (piece > maxWindowLines() || !fits(piece, limitPx, linePx)) continue;
+      relaxed.push({ end: cand.end, rank: cand.rank, remnant: 0, balance: Math.abs(piece - target) });
+    }
+    if (relaxed.length > 0) return bestCut(relaxed).end;
+  }
+  return longestWordFit(breathText, from, wordEnds, measure, limitPx, linePx, absEnd, countRows);
 }
 
 /**
@@ -454,6 +517,7 @@ function balanceTail(
   measure: MeasureFn,
   limitPx: number,
   linePx: number,
+  countRows?: CountRows,
 ) {
   if (cuts.length < 2) return;
   const lastEnd = cuts[cuts.length - 1]!;
@@ -469,6 +533,8 @@ function balanceTail(
     const rest = windowLines(breathText, cand.end, lastEnd, measure, linePx);
     if (piece < minWindowLines() || piece > maxWindowLines()) continue;
     if (!fits(piece, limitPx, linePx) || !fits(rest, limitPx, linePx)) continue;
+    if (!rowsFit(countRows, breathText, prevStart, cand.end)) continue;
+    if (!rowsFit(countRows, breathText, cand.end, lastEnd)) continue;
     if (rest < minWindowLines()) continue;
     const restWords = wordCount(breathText.slice(cand.end, lastEnd));
     if (restWords < 4) continue;
@@ -496,6 +562,7 @@ function splitAtom(
   linePx: number,
   kind: DisplayKind,
   maxWindows?: number,
+  countRows?: CountRows,
 ): SpotlightGroup[] {
   const words = wordPieces(atom.text);
   if (words.length <= 1) return [groupFrom([atom], 0, kind)];
@@ -509,12 +576,13 @@ function splitAtom(
   let from = absStart;
   while (from < absEnd) {
     const restLines = windowLines(breathText, from, absEnd, measure, linePx);
-    if (fits(restLines, limitPx, linePx)) {
+    if (fits(restLines, limitPx, linePx) && rowsFit(countRows, breathText, from, absEnd)) {
       cuts.push(absEnd);
       break;
     }
     const local = cands.filter((cand) => cand.end > from && cand.end < absEnd);
-    let chosen = local.length > 0 ? pickCut(breathText, from, absEnd, local, measure, limitPx, linePx) : absEnd;
+    let chosen =
+      local.length > 0 ? pickCut(breathText, from, absEnd, local, measure, limitPx, linePx, countRows) : absEnd;
     if (chosen <= from || chosen >= absEnd) {
       cuts.push(absEnd);
       break;
@@ -525,13 +593,13 @@ function splitAtom(
     // the tail balance only moves the last pair, and only once the sentence ends.
     if (maxWindows && maxWindows > 0 && cuts.length >= maxWindows) {
       const tail = windowLines(breathText, from, absEnd, measure, linePx);
-      if (fits(tail, limitPx, linePx)) cuts.push(absEnd);
+      if (fits(tail, limitPx, linePx) && rowsFit(countRows, breathText, from, absEnd)) cuts.push(absEnd);
       break;
     }
   }
   if (cuts.length === 0 || (cuts[cuts.length - 1] !== absEnd && !(maxWindows && maxWindows > 0))) cuts.push(absEnd);
   if (cuts[cuts.length - 1] === absEnd) {
-    balanceTail(cuts, breathText, absStart, cands, measure, limitPx, linePx);
+    balanceTail(cuts, breathText, absStart, cands, measure, limitPx, linePx, countRows);
   }
   let cursor = absStart;
   return cuts.map((end, window) => {
@@ -586,9 +654,17 @@ type GroupBound = {
   after: number;
 };
 
-function atomIsTall(atom: Atom, breathText: string, measure: MeasureFn, limitPx: number, linePx: number) {
+function atomIsTall(
+  atom: Atom,
+  breathText: string,
+  measure: MeasureFn,
+  limitPx: number,
+  linePx: number,
+  countRows?: CountRows,
+) {
   if (wordPieces(atom.text).length <= 1) return false;
-  return !fits(atomLines(atom, breathText, measure, linePx), limitPx, linePx);
+  if (!fits(atomLines(atom, breathText, measure, linePx), limitPx, linePx)) return true;
+  return !rowsFit(countRows, breathText, atom.start, atom.end);
 }
 
 /**
@@ -605,6 +681,7 @@ function groupOrigin(
   linePx: number,
   kind: DisplayKind,
   stops?: ReadonlySet<number>,
+  countRows?: CountRows,
 ): { index: number; sentence: number } {
   const focusPos = breaths.findIndex((breath) => breath.index === focus);
   if (focusPos <= 0) return { index: breaths[focusPos]?.index ?? focus, sentence: 0 };
@@ -617,7 +694,7 @@ function groupOrigin(
     const breathText = prev.text ?? "";
     let lastTall = -1;
     for (let i = 0; i < prevAtoms.length; i += 1) {
-      if (atomIsTall(prevAtoms[i]!, breathText, measure, limitPx, linePx)) lastTall = i;
+      if (atomIsTall(prevAtoms[i]!, breathText, measure, limitPx, linePx, countRows)) lastTall = i;
     }
     if (lastTall >= 0) {
       const tail = prevAtoms.slice(lastTall + 1);
@@ -668,7 +745,9 @@ function windowsStillNeeded(groups: readonly SpotlightGroup[], bound: GroupBound
  * the reader passes one scene. `stops` refuse the breath after a sit or a
  * ritual, including that short-line exception. `cuts` refuse the sentence
  * after a sit that ends inside a longer breath. A sentence taller than four
- * lines is split at an internal pause.
+ * lines is split at an internal pause. With `countRows`, a window that would
+ * paint a fifth row stops at the sentence before it, and a single sentence
+ * that still paints five or six rows breaks at a semicolon, dash, or comma.
  * `bound` stops once the passage on screen, and one step past it, is known.
  */
 function groupBreaths(
@@ -679,6 +758,7 @@ function groupBreaths(
   kind: DisplayKind,
   stops: ReadonlySet<number> | undefined,
   cuts: ReadonlyMap<number, number> | undefined,
+  countRows: CountRows | undefined,
   bound: GroupBound | undefined,
   originSentence = 0,
 ): SpotlightGroup[] {
@@ -690,6 +770,22 @@ function groupBreaths(
     heights.set(sample, value);
     return value;
   };
+  const rowCaches = new Map<string, Map<string, number>>();
+  const rows: CountRows | undefined = countRows
+    ? (text, start, end) => {
+        let byText = rowCaches.get(text);
+        if (!byText) {
+          byText = new Map();
+          rowCaches.set(text, byText);
+        }
+        const key = `${start}:${end}`;
+        const hit = byText.get(key);
+        if (hit !== undefined) return hit;
+        const value = countRows(text, start, end);
+        byText.set(key, value);
+        return value;
+      }
+    : undefined;
   const texts = new Map<number, string>();
   const atoms: Atom[] = [];
   breaths.forEach((breath, breathAt) => {
@@ -724,12 +820,13 @@ function groupBreaths(
     const breathText = texts.get(atom.index) ?? "";
     const alone = atomLines(atom, breathText, measure, linePx);
     const words = wordPieces(atom.text);
-    if (!fits(alone, cap, linePx) && words.length > 1) {
+    const aloneRows = rowsFit(rows, breathText, atom.start, atom.end);
+    if ((!fits(alone, cap, linePx) || !aloneRows) && words.length > 1) {
       const maxWindows =
         bound && (bound.edge === "last" || atom.index <= bound.index || !boundSatisfied(groups, bound))
           ? windowsStillNeeded(groups, bound)
           : undefined;
-      groups.push(...splitAtom(atom, breathText, measure, cap, linePx, kind, maxWindows));
+      groups.push(...splitAtom(atom, breathText, measure, cap, linePx, kind, maxWindows, rows));
       i += 1;
       continue;
     }
@@ -741,13 +838,15 @@ function groupBreaths(
       if (crossesCut(prev, next, cuts)) break;
       const nextText = texts.get(next.index) ?? "";
       const nextLines = atomLines(next, nextText, measure, linePx);
-      if (!fits(nextLines, cap, linePx) && wordPieces(next.text).length > 1) break;
+      const nextFitsRows = rowsFit(rows, nextText, next.start, next.end);
+      if ((!fits(nextLines, cap, linePx) || !nextFitsRows) && wordPieces(next.text).length > 1) break;
       const have = mergedLines(atoms.slice(i, j), texts, measure, linePx, kind);
       // A paragraph break (the next breath) stays closed unless this passage
       // is still a single short line.
       if (next.index !== prev.index && !isShortLine(have)) break;
       const lines = mergedLines(atoms.slice(i, j + 1), texts, measure, linePx, kind);
       if (!fits(lines, cap, linePx)) break;
+      if (rows && coveredRows(atoms.slice(i, j + 1), texts, rows) > SPOTLIGHT_MAX_LINES) break;
       j += 1;
     }
     groups.push(groupFrom(atoms.slice(i, j), 0, kind));
@@ -770,8 +869,9 @@ export function spotlightGroups(
   kind: DisplayKind = "prose",
   stops?: ReadonlySet<number>,
   cuts?: ReadonlyMap<number, number>,
+  countRows?: CountRows,
 ): SpotlightGroup[] {
-  return groupBreaths(breaths, measure, limitPx, linePx, kind, stops, cuts, undefined);
+  return groupBreaths(breaths, measure, limitPx, linePx, kind, stops, cuts, countRows, undefined);
 }
 
 /**
@@ -790,14 +890,15 @@ export function spotlightNear(
   cuts?: ReadonlyMap<number, number>,
   edge: SpotlightEdge = "around",
   after = 1,
+  countRows?: CountRows,
 ): SpotlightGroup[] {
   if (breaths.length === 0) return [];
   const focusPos = breaths.findIndex((breath) => breath.index === place.index);
-  if (focusPos < 0) return spotlightGroups(breaths, measure, limitPx, linePx, kind, stops, cuts);
+  if (focusPos < 0) return spotlightGroups(breaths, measure, limitPx, linePx, kind, stops, cuts, countRows);
   const origin =
     edge === "first"
       ? { index: place.index, sentence: 0 }
-      : groupOrigin(breaths, place.index, measure, limitPx, linePx, kind, stops);
+      : groupOrigin(breaths, place.index, measure, limitPx, linePx, kind, stops, countRows);
   const originPos = breaths.findIndex((breath) => breath.index === origin.index);
   const start = originPos >= 0 ? originPos : focusPos;
   // A passage is at most four lines, so the breaths it can touch sit next to it.
@@ -818,6 +919,7 @@ export function spotlightNear(
     kind,
     stops,
     cuts,
+    countRows,
     bound,
     origin.index === slice[0]?.index ? origin.sentence : 0,
   );
@@ -1013,4 +1115,80 @@ export function markSpotlight(
     if (index > 0 && prefix && first) marks[0] = { text: prefix + first.text, role: first.role };
     return marks;
   });
+}
+
+const ROW_BOX_SLACK = 0.08;
+
+function lineBoxes(sample: string, metrics: DisplayMetrics) {
+  const line = displayLinePx(metrics);
+  const height = metrics.faceReady ? measureStyledHeight(sample, metrics) : measureDisplaySample(sample, metrics);
+  if (!(height > 0)) return sample.trim() ? 1 : 0;
+  return Math.max(1, Math.ceil(height / (line > 0 ? line : PHONE_LINE_PX) - ROW_BOX_SLACK));
+}
+
+/**
+ * Painted rows of a lit slice.
+ * One line-box cannot reach a fifth row. A longer slice is counted per display
+ * block: past text can add the shared row and one extra wrap. Four or more
+ * estimated rows are read from the focus spans' client rects, because a block
+ * break can add a row the slice measured on its own does not see.
+ * Books and imported pages share this count.
+ */
+export function countFocusRows(
+  text: string,
+  start: number,
+  end: number,
+  metrics: DisplayMetrics,
+  kind: DisplayKind = "prose",
+): number {
+  if (!(end > start) || !text) return 0;
+  const slice = text.slice(start, end);
+  const alone = lineBoxes(slice, metrics);
+  // One short line, even after past text or a block break, cannot paint a fifth row.
+  if (alone <= 1) return Math.min(SPOTLIGHT_MAX_LINES, alone + (start > 0 ? 2 : 0));
+  const laid = laidFocus(text, start, end, metrics, kind);
+  if (laid.parts.length === 0) return 0;
+  // Four estimated rows still paint once: a block break or the line after the
+  // focus can add a row the slice-alone measure does not see.
+  if (laid.safe < SPOTLIGHT_MAX_LINES || typeof document === "undefined") return laid.safe;
+  return paintedRows(laid.parts, metrics);
+}
+
+/** Client rects of the focus, one block at a time. The gate uses this directly. */
+export function paintFocusRows(
+  text: string,
+  start: number,
+  end: number,
+  metrics: DisplayMetrics,
+  kind: DisplayKind = "prose",
+): number {
+  if (!(end > start) || !text || typeof document === "undefined") return 0;
+  const laid = laidFocus(text, start, end, metrics, kind);
+  if (laid.parts.length === 0) return 0;
+  return paintedRows(laid.parts, metrics);
+}
+
+function laidFocus(text: string, start: number, end: number, metrics: DisplayMetrics, kind: DisplayKind) {
+  const blocks = resolveDisplayBlocks(text, metrics, kind);
+  const marked = markSpotlight(text, blocks, { start, end }, kind);
+  let safe = 0;
+  const parts: { text: string; focus: boolean }[][] = [];
+  for (const pieces of marked) {
+    const focusText = pieces
+      .filter((piece) => piece.role === "focus")
+      .map((piece) => piece.text)
+      .join("");
+    if (!focusText.trim()) continue;
+    const past = pieces.some((piece) => piece.role === "past");
+    const boxes = lineBoxes(focusText, metrics);
+    safe += past ? boxes + 2 : boxes;
+    parts.push(pieces.map((piece) => ({ text: piece.text, focus: piece.role === "focus" })));
+  }
+  return { safe, parts };
+}
+
+function paintedRows(parts: { text: string; focus: boolean }[][], metrics: DisplayMetrics) {
+  let rows = 0;
+  for (const pieces of parts) rows += measureFocusRows(pieces, metrics);
+  return Math.max(rows, 1);
 }

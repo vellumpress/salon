@@ -390,6 +390,11 @@ function fillProbe(text: string) {
 /** Height of one block in the reader's type, at the column width. */
 export function measureStyledHeight(text: string, metrics: DisplayMetrics): number {
   const el = fillProbe(text);
+  applyProbeMetrics(el, metrics);
+  return el.getBoundingClientRect().height;
+}
+
+function applyProbeMetrics(el: HTMLElement, metrics: DisplayMetrics) {
   el.style.width = `${metrics.width}px`;
   el.style.fontFamily = metrics.fontFamily;
   el.style.fontSize = metrics.fontSize;
@@ -397,7 +402,44 @@ export function measureStyledHeight(text: string, metrics: DisplayMetrics): numb
   el.style.fontStyle = metrics.fontStyle;
   el.style.lineHeight = metrics.lineHeight;
   el.style.letterSpacing = metrics.letterSpacing;
-  return el.getBoundingClientRect().height;
+}
+
+/**
+ * Painted rows of the focus spans in one breath block.
+ * Past text stays in the line, so the focus can start mid-line and wrap once more
+ * than the same words measured from the left edge.
+ */
+export function measureFocusRows(
+  pieces: readonly { text: string; focus: boolean }[],
+  metrics: DisplayMetrics,
+): number {
+  const el = probeEl();
+  applyProbeMetrics(el, metrics);
+  el.replaceChildren();
+  const focuses: HTMLSpanElement[] = [];
+  for (const piece of pieces) {
+    const span = document.createElement("span");
+    if (piece.focus) focuses.push(span);
+    for (const part of splitEmphasis(piece.text)) {
+      if (part.type === "em") {
+        const em = document.createElement("em");
+        em.textContent = part.value;
+        span.append(em);
+      } else {
+        span.append(part.value);
+      }
+    }
+    el.append(span);
+  }
+  if (focuses.length === 0) return 0;
+  const tops: number[] = [];
+  for (const span of focuses) {
+    for (const rect of span.getClientRects()) {
+      if (rect.width < 1 || rect.height < 1) continue;
+      if (!tops.some((top) => Math.abs(top - rect.top) < 2)) tops.push(rect.top);
+    }
+  }
+  return tops.length;
 }
 
 const cache = new Map<string, DisplayBlock[]>();

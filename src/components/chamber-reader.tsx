@@ -63,6 +63,7 @@ import { useReaderDaylight } from "@/lib/use-reader-daylight";
 import { displayKindForForm } from "@/lib/display-blocks";
 import { breathSentenceCount } from "@/lib/sentence-step";
 import {
+  countFocusRows,
   locateSpotlight,
   markSpotlight,
   repeatSpotlight,
@@ -702,6 +703,12 @@ export function TbrReader({
     const key = `${metricsCacheKey}|${edge}|${item.sceneId}|${breathIndex}|${cursor}|${spot}|${after}`;
     const hit = groupCache.current.get(key);
     if (hit) return hit;
+    const countRows = (text: string, start: number, end: number) => {
+      if (display.metrics) return countFocusRows(text, start, end, display.metrics, displayKind);
+      const linePx = display.linePx > 0 ? display.linePx : 1;
+      const lines = Math.ceil(display.measure(text.slice(start, end)) / linePx);
+      return lines + (start > 0 ? 1 : 0);
+    };
     const groups = spotlightNear(
       sceneBreaths(item.sceneId),
       { index: breathIndex, cursor, window: spot },
@@ -713,6 +720,7 @@ export function TbrReader({
       mergeCuts,
       edge,
       after,
+      countRows,
     );
     groupCache.current.set(key, groups);
     return groups;

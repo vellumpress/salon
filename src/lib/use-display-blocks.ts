@@ -190,5 +190,6 @@ export function useDisplayBlocks(
     width: metrics?.width ?? 0,
     viewport: metrics?.viewport ?? 0,
     metricsKey: readyKey,
+    metrics,
   };
 }
