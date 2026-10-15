@@ -152,3 +152,46 @@ jobs:
         env:
           READER_ORIGIN: http://127.0.0.1:8081
           STRESS_RUNS: "10"
+
+  rows:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ["0", "1", "2", "3"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Cache node_modules
+        id: modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.modules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+
+      - name: No lit window paints more than four rows
+        run: node --experimental-strip-types --test --test-name-pattern "no lit window paints more than four rows" src/lib/catalog/spotlight-rows.test.ts
+        env:
+          SPOTLIGHT_ROWS_SHARD: ${{ matrix.shard }}
+          SPOTLIGHT_ROWS_SHARDS: "4"
