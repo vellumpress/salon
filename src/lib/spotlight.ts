@@ -1,13 +1,16 @@
 import { tapSpans, type DisplayKind } from "./display-blocks.ts";
 import { PHONE_LINE_PX } from "./display-blocks.ts";
+import { sentenceSpans } from "./sentences.ts";
 
 /**
- * The lit passage is about two or three rendered lines.
+ * The lit passage is two to four rendered lines.
  * A third of a line of slack keeps a sentence that barely wraps from
  * being cut, and from swallowing the sentence after it.
+ * Whole sentences are kept whenever they land in that window. A sentence
+ * taller than four lines breaks at the most natural internal pause.
  */
 export const SPOTLIGHT_MIN_LINES = 2;
-export const SPOTLIGHT_MAX_LINES = 3;
+export const SPOTLIGHT_MAX_LINES = 4;
 export const SPOTLIGHT_LINE_SLOP = 0.34;
 
 export type MeasureFn = (sample: string) => number;
@@ -20,7 +23,7 @@ export type SpotlightPart = { index: number; start: number; end: number };
  * One tap.
  * `index` / `cursor` are the sentence progress lands on: the first sentence
  * of the group, or the sentence a long window belongs to.
- * `window` is 0 unless that sentence is taller than three lines.
+ * `window` is 0 unless that sentence is taller than four lines.
  */
 export type SpotlightGroup = {
   index: number;
@@ -181,15 +184,311 @@ function mergedLines(
 
 /**
  * Lines of a slice on its own. A window never lays out the paragraph above it.
- * Word windows stay on whitespace. A single word stays whole.
- * A last window shorter than two lines borrows a word from the window above
- * when both can still sit inside three lines.
+ * A break is always after a word. A single word stays whole.
  */
 function windowLines(breathText: string, start: number, end: number, measure: MeasureFn, linePx: number) {
   return sampleLines(breathText.slice(start, Math.max(start, end)), measure, linePx);
 }
 
-function windowAtom(
+function minWindowLines() {
+  return SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP;
+}
+
+function maxWindowLines() {
+  return SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP;
+}
+
+/** Under two lines: one short line, which may cross a paragraph to find company. */
+function isShortLine(lines: number) {
+  return lines < minWindowLines();
+}
+
+function skipSpace(text: string, index: number) {
+  let i = index;
+  while (i < text.length && /\s/u.test(text[i] ?? "")) i += 1;
+  return i;
+}
+
+function addBreak(found: Map<number, number>, end: number, rank: number, length: number) {
+  if (end <= 0 || end >= length) return;
+  const prev = found.get(end);
+  if (prev === undefined || rank < prev) found.set(end, rank);
+}
+
+const COMMA_CONJUNCTION =
+  /^(?:and|but|or|nor|for|yet|so|because|although|though|while|whereas|if|when|unless|until|since|before|after)\b/iu;
+
+/**
+ * Internal pauses, best rank first.
+ * -1  a sentence end the tap kept inside one quotation
+ *  0  semicolon, colon, em dash, or a line break
+ *  1  a comma before a conjunction
+ *  2  any other comma
+ *  3  a word boundary
+ * The cut sits on the first character of the next piece, so the pause
+ * and the space after it stay with the earlier piece.
+ */
+function breakCandidates(text: string): { end: number; rank: number }[] {
+  const found = new Map<number, number>();
+  const inner = sentenceSpans(text, "in-quotes");
+  if (inner.length > 1) {
+    for (const span of inner) addBreak(found, span.end, -1, text.length);
+  }
+  for (let i = 0; i < text.length; i += 1) {
+    const ch = text[i] ?? "";
+    if (ch === ";" || ch === "\n") {
+      addBreak(found, skipSpace(text, i + 1), 0, text.length);
+      continue;
+    }
+    if (ch === ":") {
+      const prev = i > 0 ? text[i - 1]! : "";
+      const next = i + 1 < text.length ? text[i + 1]! : "";
+      if (/\d/u.test(prev) && /\d/u.test(next)) continue;
+      addBreak(found, skipSpace(text, i + 1), 0, text.length);
+      continue;
+    }
+    if (ch === "\u2014" || ch === "\u2013") {
+      addBreak(found, skipSpace(text, i + 1), 0, text.length);
+      continue;
+    }
+    if (ch === "-" && text[i + 1] === "-") {
+      let j = i + 2;
+      while (text[j] === "-") j += 1;
+      addBreak(found, skipSpace(text, j), 0, text.length);
+      i = j - 1;
+    }
+  }
+  for (let i = 0; i < text.length; i += 1) {
+    if (text[i] !== ",") continue;
+    const after = skipSpace(text, i + 1);
+    if (after >= text.length) continue;
+    const rank = COMMA_CONJUNCTION.test(text.slice(after)) ? 1 : 2;
+    addBreak(found, after, rank, text.length);
+  }
+  const words = wordPieces(text);
+  for (let i = 0; i < words.length - 1; i += 1) {
+    const next = words[i + 1]!;
+    let at = next.start;
+    while (at < next.end && /\s/u.test(text[at] ?? "")) at += 1;
+    addBreak(found, at, 3, text.length);
+  }
+  const list: { end: number; rank: number }[] = [];
+  for (const [end, rank] of found) list.push({ end, rank });
+  list.sort((a, b) => a.end - b.end);
+  return list;
+}
+
+function wordCount(text: string) {
+  const trimmed = text.trim();
+  if (!trimmed) return 0;
+  return trimmed.split(/\s+/u).length;
+}
+
+function targetLines(total: number) {
+  const pieces = Math.max(1, Math.ceil(total / SPOTLIGHT_MAX_LINES));
+  return total / pieces;
+}
+
+type ScoredCut = { end: number; rank: number; remnant: number; balance: number };
+
+function scoreCut(
+  breathText: string,
+  from: number,
+  end: number,
+  cut: number,
+  rank: number,
+  measure: MeasureFn,
+  limitPx: number,
+  linePx: number,
+  target: number,
+): ScoredCut | null {
+  if (cut <= from || cut >= end) return null;
+  const piece = windowLines(breathText, from, cut, measure, linePx);
+  if (piece < minWindowLines() || piece > maxWindowLines()) return null;
+  if (!fits(piece, limitPx, linePx)) return null;
+  const rest = windowLines(breathText, cut, end, measure, linePx);
+  const restWords = wordCount(breathText.slice(cut, end));
+  const restPieces = rest <= maxWindowLines() ? 1 : Math.ceil(rest / SPOTLIGHT_MAX_LINES);
+  const tail = restPieces <= 1 ? rest : rest / restPieces;
+  const remnant = (restWords > 0 && restWords < 4) || tail < minWindowLines() ? 1 : 0;
+  return { end: cut, rank, remnant, balance: Math.abs(piece - target) };
+}
+
+function betterCut(a: ScoredCut, b: ScoredCut) {
+  if (a.remnant !== b.remnant) return a.remnant - b.remnant;
+  if (a.rank !== b.rank) return a.rank - b.rank;
+  if (a.balance !== b.balance) return a.balance - b.balance;
+  return b.end - a.end;
+}
+
+function bestCut(scored: ScoredCut[]) {
+  let best = scored[0]!;
+  for (let i = 1; i < scored.length; i += 1) {
+    const next = scored[i]!;
+    if (betterCut(next, best) < 0) best = next;
+  }
+  return best;
+}
+
+/** Word cuts whose slice lands in the two-to-four line window. */
+function wordCutsInWindow(
+  breathText: string,
+  from: number,
+  wordCuts: readonly number[],
+  measure: MeasureFn,
+  limitPx: number,
+  linePx: number,
+) {
+  if (wordCuts.length === 0) return [];
+  let low = 0;
+  let high = wordCuts.length - 1;
+  let left = wordCuts.length;
+  while (low <= high) {
+    const mid = Math.floor((low + high) / 2);
+    const lines = windowLines(breathText, from, wordCuts[mid]!, measure, linePx);
+    if (lines >= minWindowLines()) {
+      left = mid;
+      high = mid - 1;
+    } else {
+      low = mid + 1;
+    }
+  }
+  low = left;
+  high = wordCuts.length - 1;
+  let right = left - 1;
+  while (low <= high) {
+    const mid = Math.floor((low + high) / 2);
+    const lines = windowLines(breathText, from, wordCuts[mid]!, measure, linePx);
+    if (lines <= maxWindowLines() && fits(lines, limitPx, linePx)) {
+      right = mid;
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+  if (right < left) return [];
+  return wordCuts.slice(left, right + 1);
+}
+
+/** The longest word cut that still fits, or the first word when nothing does. */
+function longestWordFit(
+  breathText: string,
+  from: number,
+  wordCuts: readonly number[],
+  measure: MeasureFn,
+  limitPx: number,
+  linePx: number,
+  absEnd: number,
+) {
+  let best = -1;
+  let low = 0;
+  let high = wordCuts.length - 1;
+  while (low <= high) {
+    const mid = Math.floor((low + high) / 2);
+    const lines = windowLines(breathText, from, wordCuts[mid]!, measure, linePx);
+    if (fits(lines, limitPx, linePx)) {
+      best = wordCuts[mid]!;
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+  if (best > from) return best;
+  return wordCuts[0] ?? absEnd;
+}
+
+function pickCut(
+  breathText: string,
+  from: number,
+  absEnd: number,
+  local: readonly { end: number; rank: number }[],
+  measure: MeasureFn,
+  limitPx: number,
+  linePx: number,
+) {
+  const total = windowLines(breathText, from, absEnd, measure, linePx);
+  const target = targetLines(total);
+  const punct = local.filter((cand) => cand.rank < 3);
+  const punctScored: ScoredCut[] = [];
+  for (const cand of punct) {
+    const scored = scoreCut(breathText, from, absEnd, cand.end, cand.rank, measure, limitPx, linePx, target);
+    if (scored) punctScored.push(scored);
+  }
+  const goodPunct = punctScored.filter((scored) => scored.remnant === 0);
+  if (goodPunct.length > 0) return bestCut(goodPunct).end;
+  const wordCuts = wordCutsInWindow(
+    breathText,
+    from,
+    local.filter((cand) => cand.rank === 3).map((cand) => cand.end),
+    measure,
+    limitPx,
+    linePx,
+  );
+  const wordScored: ScoredCut[] = [];
+  for (const cut of wordCuts) {
+    const scored = scoreCut(breathText, from, absEnd, cut, 3, measure, limitPx, linePx, target);
+    if (scored) wordScored.push(scored);
+  }
+  const all = punctScored.concat(wordScored);
+  if (all.length > 0) return bestCut(all).end;
+  return longestWordFit(
+    breathText,
+    from,
+    local.filter((cand) => cand.rank === 3).map((cand) => cand.end),
+    measure,
+    limitPx,
+    linePx,
+    absEnd,
+  );
+}
+
+/**
+ * Move the last cut earlier when it would leave a one-line or few-word tail
+ * and some earlier pause keeps both pieces inside the window.
+ */
+function balanceTail(
+  cuts: number[],
+  breathText: string,
+  absStart: number,
+  cands: readonly { end: number; rank: number }[],
+  measure: MeasureFn,
+  limitPx: number,
+  linePx: number,
+) {
+  if (cuts.length < 2) return;
+  const lastEnd = cuts[cuts.length - 1]!;
+  const prevEnd = cuts[cuts.length - 2]!;
+  const prevStart = cuts.length >= 3 ? cuts[cuts.length - 3]! : absStart;
+  const lastLines = windowLines(breathText, prevEnd, lastEnd, measure, linePx);
+  const lastWords = wordCount(breathText.slice(prevEnd, lastEnd));
+  if (lastLines >= minWindowLines() && lastWords >= 4) return;
+  let best: ScoredCut | null = null;
+  for (const cand of cands) {
+    if (cand.end <= prevStart || cand.end >= prevEnd) continue;
+    const piece = windowLines(breathText, prevStart, cand.end, measure, linePx);
+    const rest = windowLines(breathText, cand.end, lastEnd, measure, linePx);
+    if (piece < minWindowLines() || piece > maxWindowLines()) continue;
+    if (!fits(piece, limitPx, linePx) || !fits(rest, limitPx, linePx)) continue;
+    if (rest < minWindowLines()) continue;
+    const restWords = wordCount(breathText.slice(cand.end, lastEnd));
+    if (restWords < 4) continue;
+    const scored: ScoredCut = {
+      end: cand.end,
+      rank: cand.rank,
+      remnant: 0,
+      balance: Math.abs(piece - rest),
+    };
+    if (!best || betterCut(scored, best) < 0) best = scored;
+  }
+  if (best) cuts[cuts.length - 2] = best.end;
+}
+
+/**
+ * A sentence taller than four lines, cut at the best pause inside the window.
+ * Pieces stay between two and four lines when a pause allows it.
+ * Nothing is cut inside a word, and the slices join back to the sentence.
+ */
+function splitAtom(
   atom: Atom,
   breathText: string,
   measure: MeasureFn,
@@ -199,92 +498,35 @@ function windowAtom(
 ): SpotlightGroup[] {
   const words = wordPieces(atom.text);
   if (words.length <= 1) return [groupFrom([atom], 0, kind)];
-  const probeCount = Math.min(words.length, 24);
-  const probeLines = windowLines(
-    breathText,
-    atom.start + words[0]!.start,
-    atom.start + words[probeCount - 1]!.end,
-    measure,
-    linePx,
-  );
-  const budget = Math.max(6, Math.round((probeCount * SPOTLIGHT_MAX_LINES) / Math.max(probeLines, 0.8)));
-  const fitEnd = (from: number, cap: number) => {
-    let low = from + 1;
-    let high = Math.max(low, cap);
-    let best = low;
-    while (low <= high) {
-      const mid = Math.floor((low + high) / 2);
-      const lines = windowLines(
-        breathText,
-        atom.start + words[from]!.start,
-        atom.start + words[mid - 1]!.end,
-        measure,
-        linePx,
-      );
-      if (fits(lines, limitPx, linePx)) {
-        best = mid;
-        low = mid + 1;
-      } else {
-        high = mid - 1;
-      }
+  const absStart = atom.start;
+  const absEnd = atom.end;
+  const cands = breakCandidates(atom.text).map((cand) => ({
+    end: atom.start + cand.end,
+    rank: cand.rank,
+  }));
+  const cuts: number[] = [];
+  let from = absStart;
+  while (from < absEnd) {
+    const restLines = windowLines(breathText, from, absEnd, measure, linePx);
+    if (fits(restLines, limitPx, linePx)) {
+      cuts.push(absEnd);
+      break;
     }
-    return best;
-  };
-  const cuts: { from: number; to: number }[] = [];
-  let i = 0;
-  while (i < words.length) {
-    let cap = Math.min(words.length, i + budget);
-    let j = fitEnd(i, cap);
-    const lines = windowLines(
-      breathText,
-      atom.start + words[i]!.start,
-      atom.start + words[j - 1]!.end,
-      measure,
-      linePx,
-    );
-    if (lines < SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP && j < words.length) {
-      cap = Math.min(words.length, j + budget);
-      j = fitEnd(i, cap);
+    const local = cands.filter((cand) => cand.end > from && cand.end < absEnd);
+    let chosen = local.length > 0 ? pickCut(breathText, from, absEnd, local, measure, limitPx, linePx) : absEnd;
+    if (chosen <= from || chosen >= absEnd) {
+      cuts.push(absEnd);
+      break;
     }
-    cuts.push({ from: i, to: j });
-    i = j;
+    cuts.push(chosen);
+    from = chosen;
   }
-  while (cuts.length >= 2) {
-    const last = cuts[cuts.length - 1]!;
-    const prev = cuts[cuts.length - 2]!;
-    const lastLines = windowLines(
-      breathText,
-      atom.start + words[last.from]!.start,
-      atom.start + words[last.to - 1]!.end,
-      measure,
-      linePx,
-    );
-    if (lastLines >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP) break;
-    if (prev.to - prev.from <= 1) break;
-    const prevNext = { from: prev.from, to: prev.to - 1 };
-    const lastNext = { from: last.from - 1, to: last.to };
-    const prevLines = windowLines(
-      breathText,
-      atom.start + words[prevNext.from]!.start,
-      atom.start + words[prevNext.to - 1]!.end,
-      measure,
-      linePx,
-    );
-    const movedLines = windowLines(
-      breathText,
-      atom.start + words[lastNext.from]!.start,
-      atom.start + words[lastNext.to - 1]!.end,
-      measure,
-      linePx,
-    );
-    if (prevLines < SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP) break;
-    if (!fits(movedLines, limitPx, linePx)) break;
-    prev.to -= 1;
-    last.from -= 1;
-  }
-  return cuts.map((cut, window) => {
-    const start = atom.start + words[cut.from]!.start;
-    const end = atom.start + words[cut.to - 1]!.end;
+  if (cuts.length === 0 || cuts[cuts.length - 1] !== absEnd) cuts.push(absEnd);
+  balanceTail(cuts, breathText, absStart, cands, measure, limitPx, linePx);
+  let cursor = absStart;
+  return cuts.map((end, window) => {
+    const start = cursor;
+    cursor = end;
     const piece: Atom = {
       index: atom.index,
       sentence: atom.sentence,
@@ -318,10 +560,13 @@ function crossesCut(from: Atom, to: Atom, cuts: ReadonlyMap<number, number> | un
 
 /**
  * Groups for one stretch of breaths, in reading order.
- * Short sentences merge until the passage is about two or three lines.
- * A sentence taller than that is stepped through in word windows.
- * `stops` refuse the breath after a sit or a ritual, including the short-fragment exception.
- * `cuts` refuse the sentence after a sit that ends inside a longer breath.
+ * Short sentences in one paragraph merge until the next sentence would pass
+ * four lines. A one-line sentence may take the next paragraph when that still
+ * fits; a longer passage stops at the paragraph. Chapter scope is the caller's:
+ * the reader passes one scene. `stops` refuse the breath after a sit or a
+ * ritual, including that short-line exception. `cuts` refuse the sentence
+ * after a sit that ends inside a longer breath. A sentence taller than four
+ * lines is split at an internal pause.
  */
 export function spotlightGroups(
   breaths: readonly SpotlightBreath[],
@@ -369,30 +614,26 @@ export function spotlightGroups(
     const alone = atomLines(atom, breathText, measure, linePx);
     const words = wordPieces(atom.text);
     if (!fits(alone, cap, linePx) && words.length > 1) {
-      groups.push(...windowAtom(atom, breathText, measure, cap, linePx, kind));
+      groups.push(...splitAtom(atom, breathText, measure, cap, linePx, kind));
       i += 1;
       continue;
     }
     let j = i + 1;
     while (j < atoms.length) {
       const next = atoms[j]!;
-      if (crossesStop(atom.index, next.index, stops)) break;
-      if (crossesCut(atom, next, cuts)) break;
+      const prev = atoms[j - 1]!;
+      if (crossesStop(prev.index, next.index, stops)) break;
+      if (crossesCut(prev, next, cuts)) break;
       const nextText = texts.get(next.index) ?? "";
       const nextLines = atomLines(next, nextText, measure, linePx);
       if (!fits(nextLines, cap, linePx) && wordPieces(next.text).length > 1) break;
-      const lines = mergedLines(atoms.slice(i, j + 1), texts, measure, linePx, kind);
-      if (fits(lines, cap, linePx)) {
-        j += 1;
-        continue;
-      }
-      // A fragment shorter than two lines may take the next whole sentence
-      // when that still fits in a third of the screen. It does not take another.
       const have = mergedLines(atoms.slice(i, j), texts, measure, linePx, kind);
-      const line = linePx > 0 ? linePx : PHONE_LINE_PX;
-      const under = have < SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP;
-      if (under && lines * line <= cap + 0.5) j += 1;
-      break;
+      // A paragraph break (the next breath) stays closed unless this passage
+      // is still a single short line.
+      if (next.index !== prev.index && !isShortLine(have)) break;
+      const lines = mergedLines(atoms.slice(i, j + 1), texts, measure, linePx, kind);
+      if (!fits(lines, cap, linePx)) break;
+      j += 1;
     }
     groups.push(groupFrom(atoms.slice(i, j), 0, kind));
     i = j;
