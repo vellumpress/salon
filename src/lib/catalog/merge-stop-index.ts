@@ -494,6 +494,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "fanshawe": [
     95
   ],
+  "fantasy": [
+    18
+  ],
   "farewell-love": [
     29
   ],

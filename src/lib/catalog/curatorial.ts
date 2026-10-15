@@ -1230,6 +1230,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Thu 15 Oct 2026 AM LIE-SLAVES — One of Life's Slaves (Lie, tr. Muir, 1895) follows Garman and Worse, Next carefully only (the heads-up is on the card). Never Featured.
   // Off every Ritual lane; the opening sit (Chapter I to the first scene break) is never unwind or before-sleep.
   "one-of-life-s-slaves",
+  // Mira Thu 15 Oct 2026 PM SERAO-FANTASY — Fantasy (Serao, tr. Harland and Sylvester, 1890) follows One of Life's Slaves, Next carefully only (the heads-up is on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (Part I, Chapter I to the first scene break) is never unwind or before-sleep.
+  "fantasy",
 ] as const;
 
 /**
