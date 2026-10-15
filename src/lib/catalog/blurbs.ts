@@ -425,6 +425,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: in the early chapters the boy's father, a drunkard, beats the boy's mother and the boy himself, and in one scene the boy stands over his father with an axe, though he does not strike.",
   "garman-and-worse":
     "On a Norwegian coast where the sea is everyone's companion, the old merchant house of Garman and Worse keeps its ships, its secrets and its family in order, while a younger generation begins to want something else.",
+  "one-of-life-s-slaves":
+    "A heads-up before you start: a baby is left to grow up in a drunken lodging-house, there are beatings and a spell in prison, and the book ends with a jealous killing.",
   "the-adventures-of-huckleberry-finn":
     "A boy and a man on a raft, heading south through a country that will not let them be.",
   "pride-and-prejudice": "A country dance, a proud man, and the long work of being wrong about someone.",
