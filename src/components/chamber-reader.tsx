@@ -66,10 +66,12 @@ import {
   locateSpotlight,
   markSpotlight,
   repeatSpotlight,
-  spotlightGroups,
   spotlightKey,
+  spotlightNear,
   stepSpotlight,
+  type GroupsAt,
   type SpotlightGroup,
+  type SpotlightQuery,
 } from "@/lib/spotlight";
 import { cutsForWork, stopsForWork } from "@/lib/catalog/merge-stop-index";
 import { useDisplayBlocks } from "@/lib/use-display-blocks";
@@ -297,8 +299,9 @@ export function TbrReader({
   /** Sentence a tap landed on. A store flicker must not drop it. */
   const sentenceOwned = useRef<{ index: number; cursor: number; window: number } | null>(null);
   const groupCache = useRef(new Map<string, SpotlightGroup[]>());
+  const sceneCache = useRef(new Map<string, { index: number; text: string }[]>());
   const groupCacheKey = useRef("");
-  const groupsAtRef = useRef<(breathIndex: number) => readonly SpotlightGroup[]>(() => []);
+  const groupsAtRef = useRef<GroupsAt>(() => []);
   /** A tap or a hold step, so the column slides. A spine jump does not. */
   const stepPulse = useRef(false);
   const motionArmed = useRef(false);
@@ -676,26 +679,40 @@ export function TbrReader({
   if (groupCacheKey.current !== metricsCacheKey) {
     groupCacheKey.current = metricsCacheKey;
     groupCache.current.clear();
+    sceneCache.current.clear();
   }
-  function groupsAt(breathIndex: number): readonly SpotlightGroup[] {
-    const item = work.breaths[breathIndex];
-    if (!item) return [];
-    const key = `${metricsCacheKey}|${item.sceneId}`;
-    const hit = groupCache.current.get(key);
+  function sceneBreaths(sceneId: string) {
+    const hit = sceneCache.current.get(sceneId);
     if (hit) return hit;
     const scene: { index: number; text: string }[] = [];
     for (let i = 0; i < work.breaths.length; i += 1) {
       const breathAt = work.breaths[i];
-      if (breathAt?.sceneId === item.sceneId) scene.push({ index: i, text: breathAt.text });
+      if (breathAt?.sceneId === sceneId) scene.push({ index: i, text: breathAt.text });
     }
-    const groups = spotlightGroups(
-      scene,
+    sceneCache.current.set(sceneId, scene);
+    return scene;
+  }
+  function groupsAt(breathIndex: number, query?: SpotlightQuery): readonly SpotlightGroup[] {
+    const item = work.breaths[breathIndex];
+    if (!item) return [];
+    const edge = query?.edge ?? "around";
+    const cursor = query?.cursor ?? 0;
+    const spot = query?.window ?? 0;
+    const after = query?.after ?? (edge === "around" ? 1 : 0);
+    const key = `${metricsCacheKey}|${edge}|${item.sceneId}|${breathIndex}|${cursor}|${spot}|${after}`;
+    const hit = groupCache.current.get(key);
+    if (hit) return hit;
+    const groups = spotlightNear(
+      sceneBreaths(item.sceneId),
+      { index: breathIndex, cursor, window: spot },
       display.measure,
       display.limit,
       display.linePx,
       displayKind,
       mergeStops,
       mergeCuts,
+      edge,
+      after,
     );
     groupCache.current.set(key, groups);
     return groups;
@@ -1571,7 +1588,7 @@ export function TbrReader({
 
   const sentenceCount = breathSentenceCount(breath.text, displayKind);
   const atSentence = Math.min(sentenceCount - 1, Math.max(0, cursor));
-  const sceneGroups = groupsAt(index);
+  const sceneGroups = groupsAt(index, { cursor: atSentence, window: spotWindow, edge: "around", after: 0 });
   const groupAt = sceneGroups.length
     ? locateSpotlight(sceneGroups, index, atSentence, spotWindow)
     : 0;

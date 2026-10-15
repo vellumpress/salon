@@ -1,5 +1,5 @@
 import { useEffect, useState, useSyncExternalStore } from "react";
-import { activityFromRow, type ActivityRow } from "./remote-activity.ts";
+import { activityFromRow, readingWriteAction, type ActivityRow } from "./remote-activity.ts";
 import type { FriendActivity } from "./friend-profile.ts";
 import { normalizeHandle } from "./social.ts";
 import { isOffline } from "./net.ts";
@@ -440,21 +440,73 @@ export async function suggestActiveReaders(exclude: Iterable<string>): Promise<A
   return rankActiveReaders(ranked, exclude);
 }
 
+type ActivityDraftRow = {
+  key: string;
+  kind: string;
+  bookId: string;
+  at: number;
+  payload: Record<string, string | number>;
+};
+
+/** Move the book's newest progress row to this sentence. Missing row inserts. */
+async function writeReading(userId: string, draft: ActivityDraftRow): Promise<"saved" | "insert"> {
+  const supabase = getSupabase();
+  const existing = await supabase
+    .from("activity")
+    .select("id, payload")
+    .eq("user_id", userId)
+    .eq("kind", "reading")
+    .eq("book_id", draft.bookId)
+    .order("created_at", { ascending: false })
+    .limit(1);
+  const row = existing.error ? undefined : existing.data?.[0];
+  const storedAt =
+    row && row.payload && typeof row.payload.atIndex === "number" ? row.payload.atIndex : undefined;
+  const nextAt = typeof draft.payload.atIndex === "number" ? draft.payload.atIndex : undefined;
+  const action = readingWriteAction({ hasRow: Boolean(row), storedAt, nextAt });
+  if (action === "skip") return "saved";
+  if (action === "update" && row) {
+    const updated = await supabase
+      .from("activity")
+      .update({
+        payload: draft.payload,
+        created_at: new Date(draft.at || Date.now()).toISOString(),
+      })
+      .eq("id", row.id)
+      .eq("user_id", userId);
+    if (!updated.error) return "saved";
+  }
+  return "insert";
+}
+
 export async function publishActivity(
   userId: string,
-  drafts: Array<{
-    key: string;
-    kind: string;
-    bookId: string;
-    at: number;
-    payload: Record<string, string | number>;
-  }>,
+  drafts: ActivityDraftRow[],
   already: Set<string>,
 ): Promise<string[]> {
   const pending = drafts.filter((row) => row.key && !already.has(row.key)).slice(0, 40);
   if (!pending.length || isOffline()) return [];
   const supabase = getSupabase();
-  const rows = pending.map((row) => ({
+  const saved: string[] = [];
+  const toInsert: ActivityDraftRow[] = [];
+  const seenReading = new Set<string>();
+  for (const row of pending) {
+    if (row.kind === "reading" && row.bookId) {
+      if (seenReading.has(row.bookId)) {
+        saved.push(row.key);
+        continue;
+      }
+      seenReading.add(row.bookId);
+      const wrote = await writeReading(userId, row);
+      if (wrote === "saved") {
+        saved.push(row.key);
+        continue;
+      }
+    }
+    toInsert.push(row);
+  }
+  if (!toInsert.length) return saved;
+  const rows = toInsert.map((row) => ({
     user_id: userId,
     kind: row.kind,
     book_id: row.bookId || null,
@@ -462,11 +514,10 @@ export async function publishActivity(
     created_at: new Date(row.at || Date.now()).toISOString(),
   }));
   const inserted = await supabase.from("activity").insert(rows);
-  if (!inserted.error) return pending.map((row) => row.key);
-  const saved: string[] = [];
-  for (let index = 0; index < pending.length; index += 1) {
+  if (!inserted.error) return [...saved, ...toInsert.map((row) => row.key)];
+  for (let index = 0; index < toInsert.length; index += 1) {
     const one = await supabase.from("activity").insert(rows[index]!);
-    if (!one.error) saved.push(pending[index]!.key);
+    if (!one.error) saved.push(toInsert[index]!.key);
   }
   return saved;
 }

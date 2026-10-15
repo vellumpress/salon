@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { KeptReadLink, useKeptLines } from "@/components/kept-sentences";
 import { usePersistHydrated } from "@/components/resume-link";
 import {
+  collapseReadingRuns,
   compactWhen,
   friendProfilePath,
   localFriendProfiles,
@@ -393,7 +394,11 @@ function profileFromDirectory(
       following.includes(contactId(handle)),
     readingNow,
     score: null,
-    activity: events.filter((item) => !(item.kind === "reading" && item.workId === readingNow?.workId)),
+    activity: collapseReadingRuns(
+      events
+        .filter((item) => !(item.kind === "reading" && item.workId === readingNow?.workId))
+        .sort((a, b) => b.at - a.at || a.id.localeCompare(b.id)),
+    ),
   };
 }
 

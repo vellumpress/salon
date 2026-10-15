@@ -191,9 +191,11 @@ export function friendProfile(rawHandle: string, graph: FriendGraph): FriendProf
   if (!isSelf && !contact && !followed && !knownPeople(graph).has(handle)) return null;
   const name = displayName(handle, graph, contact);
   const current = readingNow(handle, graph, isSelf, contact);
-  const activity = collectActivity(handle, graph, isSelf)
-    .filter((item) => !(item.kind === "reading" && item.workId && item.workId === current?.workId))
-    .sort((a, b) => b.at - a.at || a.id.localeCompare(b.id));
+  const activity = collapseReadingRuns(
+    collectActivity(handle, graph, isSelf)
+      .filter((item) => !(item.kind === "reading" && item.workId && item.workId === current?.workId))
+      .sort((a, b) => b.at - a.at || a.id.localeCompare(b.id)),
+  );
   return {
     id: isSelf ? "you" : contact?.id ?? contactId(handle),
     handle,
@@ -297,6 +299,37 @@ function displayName(handle: string, graph: FriendGraph, contact?: FriendContact
 function named(value: string | undefined, handle: string) {
   const clean = (value ?? "").trim();
   return Boolean(clean) && clean !== formatHandle(handle) && clean.toLowerCase() !== handle;
+}
+
+/**
+ * One progress row per book, the newest sentence. Sits, keeps, and other
+ * books stay. Consecutive House of Mirth rows (sentence 1954, then 1955,
+ * then 1954) become the latest of those positions.
+ */
+export function collapseReadingRuns<T extends { id: string; at: number; kind: string; workId?: string }>(
+  events: readonly T[],
+): T[] {
+  const latest = new Map<string, T>();
+  for (const event of events) {
+    if (event.kind !== "reading" || !event.workId) continue;
+    const prev = latest.get(event.workId);
+    if (!prev || event.at > prev.at || (event.at === prev.at && event.id.localeCompare(prev.id) > 0)) {
+      latest.set(event.workId, event);
+    }
+  }
+  const emitted = new Set<string>();
+  const out: T[] = [];
+  for (const event of events) {
+    if (event.kind !== "reading" || !event.workId) {
+      out.push(event);
+      continue;
+    }
+    const keep = latest.get(event.workId);
+    if (!keep || emitted.has(event.workId) || keep.id !== event.id) continue;
+    emitted.add(event.workId);
+    out.push(event);
+  }
+  return out;
 }
 
 /** Newest open book in a synced activity list. A later finish closes that book. */

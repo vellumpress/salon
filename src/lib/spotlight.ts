@@ -495,6 +495,7 @@ function splitAtom(
   limitPx: number,
   linePx: number,
   kind: DisplayKind,
+  maxWindows?: number,
 ): SpotlightGroup[] {
   const words = wordPieces(atom.text);
   if (words.length <= 1) return [groupFrom([atom], 0, kind)];
@@ -520,9 +521,18 @@ function splitAtom(
     }
     cuts.push(chosen);
     from = chosen;
+    // A reader only needs the window on screen. Earlier cuts stay put:
+    // the tail balance only moves the last pair, and only once the sentence ends.
+    if (maxWindows && maxWindows > 0 && cuts.length >= maxWindows) {
+      const tail = windowLines(breathText, from, absEnd, measure, linePx);
+      if (fits(tail, limitPx, linePx)) cuts.push(absEnd);
+      break;
+    }
   }
-  if (cuts.length === 0 || cuts[cuts.length - 1] !== absEnd) cuts.push(absEnd);
-  balanceTail(cuts, breathText, absStart, cands, measure, limitPx, linePx);
+  if (cuts.length === 0 || (cuts[cuts.length - 1] !== absEnd && !(maxWindows && maxWindows > 0))) cuts.push(absEnd);
+  if (cuts[cuts.length - 1] === absEnd) {
+    balanceTail(cuts, breathText, absStart, cands, measure, limitPx, linePx);
+  }
   let cursor = absStart;
   return cuts.map((end, window) => {
     const start = cursor;
@@ -558,6 +568,98 @@ function crossesCut(from: Atom, to: Atom, cuts: ReadonlyMap<number, number> | un
   return from.start < cut && to.start >= cut;
 }
 
+export type SpotlightEdge = "around" | "first" | "last";
+
+export type SpotlightQuery = {
+  cursor?: number;
+  window?: number;
+  edge?: SpotlightEdge;
+  /** Groups to keep after the one on screen. A tap needs the next one. */
+  after?: number;
+};
+
+type GroupBound = {
+  edge: SpotlightEdge;
+  index: number;
+  cursor: number;
+  window: number;
+  after: number;
+};
+
+function atomIsTall(atom: Atom, breathText: string, measure: MeasureFn, limitPx: number, linePx: number) {
+  if (wordPieces(atom.text).length <= 1) return false;
+  return !fits(atomLines(atom, breathText, measure, linePx), limitPx, linePx);
+}
+
+/**
+ * Where a group that contains `focus` can start.
+ * A tall sentence is split on its own and does not pull the next paragraph,
+ * so the walk stops there. A run of short lines can still cross paragraphs,
+ * and that run is the only lookback opening pays for.
+ */
+function groupOrigin(
+  breaths: readonly SpotlightBreath[],
+  focus: number,
+  measure: MeasureFn,
+  limitPx: number,
+  linePx: number,
+  kind: DisplayKind,
+  stops?: ReadonlySet<number>,
+): { index: number; sentence: number } {
+  const focusPos = breaths.findIndex((breath) => breath.index === focus);
+  if (focusPos <= 0) return { index: breaths[focusPos]?.index ?? focus, sentence: 0 };
+  let pos = focusPos;
+  while (pos > 0) {
+    const prev = breaths[pos - 1]!;
+    const here = breaths[pos]!;
+    if (crossesStop(prev.index, here.index, stops)) break;
+    const prevAtoms = atomsOf(prev, kind);
+    const breathText = prev.text ?? "";
+    let lastTall = -1;
+    for (let i = 0; i < prevAtoms.length; i += 1) {
+      if (atomIsTall(prevAtoms[i]!, breathText, measure, limitPx, linePx)) lastTall = i;
+    }
+    if (lastTall >= 0) {
+      const tail = prevAtoms.slice(lastTall + 1);
+      if (tail.length === 0) break;
+      const texts = new Map([[prev.index, breathText]]);
+      if (!isShortLine(mergedLines(tail, texts, measure, linePx, kind))) break;
+      return { index: prev.index, sentence: tail[0]!.sentence };
+    }
+    const texts = new Map([[prev.index, breathText]]);
+    if (!isShortLine(mergedLines(prevAtoms, texts, measure, linePx, kind))) break;
+    pos -= 1;
+  }
+  return { index: breaths[pos]!.index, sentence: 0 };
+}
+
+function groupCovers(group: SpotlightGroup, place: SpotlightPlace) {
+  if (place.index < group.index || place.index > group.endIndex) return false;
+  if (place.index === group.index && place.cursor < group.cursor) return false;
+  if (place.index === group.endIndex && place.cursor >= group.endCursor) return false;
+  if (group.index === group.endIndex && group.cursor === place.cursor && group.window !== place.window) {
+    return false;
+  }
+  return true;
+}
+
+function boundSatisfied(groups: readonly SpotlightGroup[], bound: GroupBound) {
+  if (bound.edge === "first") return groups.length >= 1;
+  if (bound.edge === "last") return false;
+  const coverAt = groups.findIndex((group) => groupCovers(group, bound));
+  if (coverAt < 0) return false;
+  return groups.length > coverAt + bound.after;
+}
+
+function windowsStillNeeded(groups: readonly SpotlightGroup[], bound: GroupBound | undefined) {
+  if (!bound || bound.edge === "last") return undefined;
+  if (bound.edge === "first") return Math.max(1, 1 + bound.after);
+  const coverAt = groups.findIndex((group) => groupCovers(group, bound));
+  if (coverAt < 0) return bound.window + bound.after + 1;
+  const need = bound.after - (groups.length - (coverAt + 1));
+  return need > 0 ? need : undefined;
+}
+
 /**
  * Groups for one stretch of breaths, in reading order.
  * Short sentences in one paragraph merge until the next sentence would pass
@@ -567,31 +669,38 @@ function crossesCut(from: Atom, to: Atom, cuts: ReadonlyMap<number, number> | un
  * ritual, including that short-line exception. `cuts` refuse the sentence
  * after a sit that ends inside a longer breath. A sentence taller than four
  * lines is split at an internal pause.
+ * `bound` stops once the passage on screen, and one step past it, is known.
  */
-export function spotlightGroups(
+function groupBreaths(
   breaths: readonly SpotlightBreath[],
-  measure: MeasureFn,
+  measureIn: MeasureFn,
   limitPx: number,
   linePx: number,
-  kind: DisplayKind = "prose",
-  stops?: ReadonlySet<number>,
-  cuts?: ReadonlyMap<number, number>,
+  kind: DisplayKind,
+  stops: ReadonlySet<number> | undefined,
+  cuts: ReadonlyMap<number, number> | undefined,
+  bound: GroupBound | undefined,
+  originSentence = 0,
 ): SpotlightGroup[] {
   const heights = new Map<string, number>();
-  const raw = measure;
-  measure = (sample) => {
+  const measure: MeasureFn = (sample) => {
     const hit = heights.get(sample);
     if (hit !== undefined) return hit;
-    const value = raw(sample);
+    const value = measureIn(sample);
     heights.set(sample, value);
     return value;
   };
   const texts = new Map<number, string>();
   const atoms: Atom[] = [];
-  for (const breath of breaths) {
+  breaths.forEach((breath, breathAt) => {
     texts.set(breath.index, breath.text ?? "");
-    atoms.push(...atomsOf(breath, kind));
-  }
+    const made = atomsOf(breath, kind);
+    if (breathAt === 0 && originSentence > 0) {
+      atoms.push(...made.filter((atom) => atom.sentence >= originSentence));
+      return;
+    }
+    atoms.push(...made);
+  });
   if (atoms.length === 0) {
     return [
       {
@@ -610,11 +719,17 @@ export function spotlightGroups(
   let i = 0;
   while (i < atoms.length) {
     const atom = atoms[i]!;
+    if (bound?.edge === "last" && atom.index > bound.index) break;
+    if (bound && bound.edge !== "last" && boundSatisfied(groups, bound)) break;
     const breathText = texts.get(atom.index) ?? "";
     const alone = atomLines(atom, breathText, measure, linePx);
     const words = wordPieces(atom.text);
     if (!fits(alone, cap, linePx) && words.length > 1) {
-      groups.push(...splitAtom(atom, breathText, measure, cap, linePx, kind));
+      const maxWindows =
+        bound && (bound.edge === "last" || atom.index <= bound.index || !boundSatisfied(groups, bound))
+          ? windowsStillNeeded(groups, bound)
+          : undefined;
+      groups.push(...splitAtom(atom, breathText, measure, cap, linePx, kind, maxWindows));
       i += 1;
       continue;
     }
@@ -638,7 +753,74 @@ export function spotlightGroups(
     groups.push(groupFrom(atoms.slice(i, j), 0, kind));
     i = j;
   }
+  if (bound?.edge === "last") {
+    const overlapping = groups.filter((group) => group.index <= bound.index && group.endIndex >= bound.index);
+    const last = overlapping[overlapping.length - 1] ?? groups[groups.length - 1];
+    return last ? [last] : groups;
+  }
+  if (bound?.edge === "first") return groups.slice(0, 1);
   return groups;
+}
+
+export function spotlightGroups(
+  breaths: readonly SpotlightBreath[],
+  measure: MeasureFn,
+  limitPx: number,
+  linePx: number,
+  kind: DisplayKind = "prose",
+  stops?: ReadonlySet<number>,
+  cuts?: ReadonlyMap<number, number>,
+): SpotlightGroup[] {
+  return groupBreaths(breaths, measure, limitPx, linePx, kind, stops, cuts, undefined);
+}
+
+/**
+ * The groups a reader needs for one place: the passage on screen, the step
+ * after it, or the last passage of a breath when stepping backward.
+ * The rest of the chapter is left ungrouped so a long poem can open.
+ */
+export function spotlightNear(
+  breaths: readonly SpotlightBreath[],
+  place: SpotlightPlace,
+  measure: MeasureFn,
+  limitPx: number,
+  linePx: number,
+  kind: DisplayKind = "prose",
+  stops?: ReadonlySet<number>,
+  cuts?: ReadonlyMap<number, number>,
+  edge: SpotlightEdge = "around",
+  after = 1,
+): SpotlightGroup[] {
+  if (breaths.length === 0) return [];
+  const focusPos = breaths.findIndex((breath) => breath.index === place.index);
+  if (focusPos < 0) return spotlightGroups(breaths, measure, limitPx, linePx, kind, stops, cuts);
+  const origin =
+    edge === "first"
+      ? { index: place.index, sentence: 0 }
+      : groupOrigin(breaths, place.index, measure, limitPx, linePx, kind, stops);
+  const originPos = breaths.findIndex((breath) => breath.index === origin.index);
+  const start = originPos >= 0 ? originPos : focusPos;
+  // A passage is at most four lines, so the breaths it can touch sit next to it.
+  const slack = edge === "last" ? 8 : Math.max(after, 0) + 8;
+  const slice = breaths.slice(start, Math.min(breaths.length, focusPos + slack + 1));
+  const bound: GroupBound = {
+    edge,
+    index: place.index,
+    cursor: place.cursor,
+    window: place.window,
+    after,
+  };
+  return groupBreaths(
+    slice,
+    measure,
+    limitPx,
+    linePx,
+    kind,
+    stops,
+    cuts,
+    bound,
+    origin.index === slice[0]?.index ? origin.sentence : 0,
+  );
 }
 
 /**
@@ -718,18 +900,26 @@ export function spotlightKey(place: SpotlightPlace) {
   return `${place.index}:${place.cursor}:${place.window}`;
 }
 
+export type GroupsAt = (breathIndex: number, query?: SpotlightQuery) => readonly SpotlightGroup[];
+
 /**
  * One group forward or back.
- * `groupsAt` returns the scene that contains that breath.
+ * `groupsAt` returns the scene that contains that breath. A query asks for
+ * the passage on screen, the first passage of a breath, or the last one.
  * Off the first group of a scene, the previous scene opens on its last group.
  */
 export function stepSpotlight(input: {
   place: SpotlightPlace;
   delta: 1 | -1;
-  groupsAt: (breathIndex: number) => readonly SpotlightGroup[];
+  groupsAt: GroupsAt;
   breathCount: number;
 }): SpotlightPlace | "start" | "end" {
-  const groups = input.groupsAt(input.place.index);
+  const groups = input.groupsAt(input.place.index, {
+    cursor: input.place.cursor,
+    window: input.place.window,
+    edge: "around",
+    after: 1,
+  });
   if (groups.length === 0) {
     if (input.delta < 0) return input.place.index <= 0 ? "start" : { index: input.place.index - 1, cursor: 0, window: 0 };
     return input.place.index + 1 >= input.breathCount ? "end" : { index: input.place.index + 1, cursor: 0, window: 0 };
@@ -740,7 +930,7 @@ export function stepSpotlight(input: {
     const last = groups[at] ?? groups[groups.length - 1]!;
     const nextIndex = last.endIndex + 1;
     if (nextIndex >= input.breathCount) return "end";
-    const next = input.groupsAt(nextIndex);
+    const next = input.groupsAt(nextIndex, { cursor: 0, window: 0, edge: "first", after: 0 });
     const first = next.find((group) => group.index >= nextIndex) ?? next[0];
     return first ? placeOf(first) : "end";
   }
@@ -748,7 +938,7 @@ export function stepSpotlight(input: {
   const first = groups[0]!;
   const prevIndex = first.index - 1;
   if (prevIndex < 0) return "start";
-  const prev = input.groupsAt(prevIndex);
+  const prev = input.groupsAt(prevIndex, { cursor: 0, window: 0, edge: "last", after: 0 });
   for (let i = prev.length - 1; i >= 0; i -= 1) {
     const group = prev[i]!;
     if (group.endIndex <= prevIndex) return placeOf(group);
@@ -761,7 +951,7 @@ export function repeatSpotlight(
   place: SpotlightPlace,
   delta: 1 | -1,
   steps: number,
-  groupsAt: (breathIndex: number) => readonly SpotlightGroup[],
+  groupsAt: GroupsAt,
   breathCount: number,
 ): SpotlightPlace | "start" | "end" {
   let current = place;

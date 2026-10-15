@@ -90,9 +90,9 @@ export function draftsFromLocal(input: LocalHistory): ActivityDraft[] {
         at: item.lastOpenedAt,
         payload: readingPayload,
       });
-      // A phone that already published the five-minute bucket, before progress
-      // was stored, will not write that key again. This key is the current
-      // sentence, so the next launch shares the book already on the phone.
+      // The five-minute key is not written again, so the sentence has its own
+      // key. Publishing updates the book's one progress row instead of adding
+      // a row per sentence.
       drafts.push({
         key: `reading-shelf:${workId}:${atIndex}`,
         kind: "reading",
@@ -261,6 +261,20 @@ function text(value: unknown) {
 
 function numberOf(value: unknown) {
   return typeof value === "number" && Number.isFinite(value) ? value : undefined;
+}
+
+/**
+ * A book already has a progress row. A new sentence updates that row.
+ * The same sentence does not write again. No row yet means insert.
+ */
+export function readingWriteAction(input: {
+  hasRow: boolean;
+  storedAt?: number;
+  nextAt?: number;
+}): "insert" | "update" | "skip" {
+  if (!input.hasRow) return "insert";
+  if (input.storedAt !== undefined && input.nextAt !== undefined && input.storedAt === input.nextAt) return "skip";
+  return "update";
 }
 
 export function activityFromRow(row: ActivityRow): FriendActivity | null {

@@ -1,13 +1,14 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { asContact } from "./friends.ts";
-import { listFriends } from "./friend-profile.ts";
+import { collapseReadingRuns, listFriends } from "./friend-profile.ts";
 import {
   activityFromRow,
   draftsFromLocal,
   EMPTY_FRIEND_BOOK,
   publishingHandle,
   readingForCard,
+  readingWriteAction,
   shelfFromActivity,
   withRemoteActivity,
 } from "./remote-activity.ts";
@@ -271,6 +272,59 @@ test("a friend phone's existing book is readable without a sign-in", () => {
   const shelf = shelfFromActivity(event ? [event] : []);
   assert.equal(shelf.reading?.workTitle, "Passing");
   assert.equal(readingForCard(undefined, []), undefined);
+});
+
+test("consecutive House of Mirth progress rows collapse to the latest sentence", () => {
+  const mirth = (id: string, at: number, atIndex: number, sentence: number) => ({
+    id,
+    at,
+    kind: "reading" as const,
+    workId: "the-house-of-mirth",
+    workTitle: "The House of Mirth",
+    progress: `34% in · sentence ${sentence}`,
+    atIndex,
+    summary: "reading The House of Mirth",
+    label: "Reading",
+  });
+  const sit = (id: string, at: number) => ({
+    id,
+    at,
+    kind: "sit" as const,
+    workId: "the-house-of-mirth",
+    workTitle: "The House of Mirth",
+    summary: "sat with The House of Mirth",
+    label: "Sit",
+  });
+  const events = [
+    mirth("remote:418", 3_000, 1953, 1954),
+    sit("remote:419", 3_000),
+    sit("remote:417", 2_956),
+    mirth("remote:416", 2_944, 1954, 1955),
+    mirth("remote:415", 2_943, 1953, 1954),
+    {
+      id: "remote:moby",
+      at: 4_000,
+      kind: "reading" as const,
+      workId: "moby-dick",
+      progress: "3% in · sentence 72",
+      atIndex: 71,
+      summary: "reading Moby-Dick",
+      label: "Reading",
+    },
+  ];
+  const collapsed = collapseReadingRuns(events);
+  const readings = collapsed.filter(
+    (item): item is ReturnType<typeof mirth> => item.kind === "reading" && item.workId === "the-house-of-mirth",
+  );
+  assert.equal(readings.length, 1);
+  assert.equal(readings[0]?.id, "remote:418");
+  assert.match(readings[0]?.progress ?? "", /sentence 1954/);
+  assert.equal(readings[0]?.atIndex, 1953);
+  assert.equal(collapsed.filter((item) => item.kind === "sit").length, 2);
+  assert.equal(collapsed.filter((item) => item.workId === "moby-dick").length, 1);
+  assert.equal(readingWriteAction({ hasRow: false }), "insert");
+  assert.equal(readingWriteAction({ hasRow: true, storedAt: 1953, nextAt: 1954 }), "update");
+  assert.equal(readingWriteAction({ hasRow: true, storedAt: 1954, nextAt: 1954 }), "skip");
 });
 
 function emptyHistory() {
