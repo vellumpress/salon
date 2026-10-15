@@ -1043,6 +1043,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "old-creole-days": [
     95
   ],
+  "one-of-life-s-slaves": [
+    42
+  ],
   "on-the-eve": [
     68
   ],

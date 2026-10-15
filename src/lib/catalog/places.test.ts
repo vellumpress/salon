@@ -141,6 +141,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "anne-of-green-gables": { label: "Avonlea, Prince Edward Island", region: "ca" },
     arne: { label: "Rural Norway", region: "no" },
     "garman-and-worse": { label: "Norway", region: "no" },
+    "one-of-life-s-slaves": { label: "Christiania", region: "no" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
@@ -669,4 +670,10 @@ test("Wed 14 Oct PM GARMAN place: the coastal merchant town is unnamed, so the c
   assert.deepEqual(placeFor(shelfWork("garman-and-worse")!), { label: "Norway", region: "no" });
   assert.deepEqual(placeFor(shelfWork("garman-and-worse")!), placeFor(shelfWork("skipper-worse")!));
   assert.equal(CHIP_ONLY_PLACE["garman-and-worse"], undefined);
+});
+
+test("Thu 15 Oct AM LIE-SLAVES place: the town is Christiania, chipped as A Monkey's city is, on the no shape; no new region key", () => {
+  assert.ok(REGION_SHAPES.no?.d, "no shape");
+  assert.deepEqual(placeFor(shelfWork("one-of-life-s-slaves")!), { label: "Christiania", region: "no" });
+  assert.equal(CHIP_ONLY_PLACE["one-of-life-s-slaves"], undefined);
 });
