@@ -684,6 +684,23 @@ async function lateGhost(page: Page, shot: Shot, expected: number, label: string
   assert.equal(now.cursor, cursor, `${label}: late click stepped a sentence`);
 }
 
+async function commitViewport(page: Page, width: number, height: number) {
+  await page.setViewportSize({ width, height });
+  // Chromium applies the new viewport before it delivers resize. The reader's
+  // handler commits that height synchronously, but a plan read in between
+  // still sees the old column and the burst then steps on the new one.
+  await page.waitForFunction(
+    (want) => {
+      const frame = document.querySelector(".reader-frame");
+      return (
+        frame?.getAttribute("data-block-viewport") === want &&
+        frame.getAttribute("data-display-blocks") === "ready"
+      );
+    },
+    String(height),
+    { timeout: 4000 },
+  );
+}
 async function mix(
   page: Page,
   id: string,
@@ -720,8 +737,8 @@ async function mix(
         window.dispatchEvent(new PageTransitionEvent("pageshow", { persisted: true }));
       });
     }
-    if (n === 24) await page.setViewportSize({ width: 390, height: 700 });
-    if (n === 25) await page.setViewportSize({ width: 390, height: 844 });
+    if (n === 24) await commitViewport(page, 390, 700);
+    if (n === 25) await commitViewport(page, 390, 844);
     let direction: 1 | -1 = random() < 0.46 ? -1 : 1;
     if (index <= low) direction = 1;
     if (index >= high) direction = -1;
