@@ -1,4 +1,5 @@
 import { useLayoutEffect, useMemo, useRef, useState, type RefObject } from "react";
+import { flushSync } from "react-dom";
 import {
   displayLinePx,
   measureDisplaySample,
@@ -74,8 +75,13 @@ export function useDisplayBlocks(
 
   useLayoutEffect(() => {
     const bump = () => setTick((n) => n + 1);
-    window.addEventListener("resize", bump);
-    window.visualViewport?.addEventListener("resize", bump);
+    // A viewport change has to commit before the resize event returns.
+    // Otherwise a tap planned on the old windows can step on the new ones.
+    const bumpNow = () => {
+      flushSync(() => setTick((n) => n + 1));
+    };
+    window.addEventListener("resize", bumpNow);
+    window.visualViewport?.addEventListener("resize", bumpNow);
     document.fonts?.addEventListener("loadingdone", bump);
     void document.fonts?.ready.then(bump);
     // A home-screen launch can grow the layout after the first paint without a
@@ -83,8 +89,8 @@ export function useDisplayBlocks(
     const observer = typeof ResizeObserver === "function" ? new ResizeObserver(bump) : null;
     observer?.observe(document.documentElement);
     return () => {
-      window.removeEventListener("resize", bump);
-      window.visualViewport?.removeEventListener("resize", bump);
+      window.removeEventListener("resize", bumpNow);
+      window.visualViewport?.removeEventListener("resize", bumpNow);
       document.fonts?.removeEventListener("loadingdone", bump);
       observer?.disconnect();
     };

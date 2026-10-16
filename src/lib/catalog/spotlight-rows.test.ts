@@ -10,7 +10,9 @@ import { readableIds, shelfWork } from "./shelf.ts";
 /**
  * Every lit window at 390×844, for every readable book.
  * Imported pages use the same packer; this is the catalog gate.
- * A fifth painted row fails. Sit and ritual stops stay in force.
+ * A fifth painted row fails. A window under two rows fails too, except a
+ * book's or chapter's real final line, or a sit or ritual stop.
+ * Sit and ritual stops stay in force.
  * The column limit stays a third of the viewport (281px at 844).
  *
  * Not part of the deploy smoke: a full pass is the separate layout gate.
@@ -86,7 +88,7 @@ async function countOne(
         }
       ).__kit;
       const sample = document.querySelector(".breath-block");
-      if (!sample) return { id: input.id, error: "no column", windows: 0, over: 0, failures: [], litany: [], limit: 0, line: 0, width: 0 };
+      if (!sample) return { id: input.id, error: "no column", windows: 0, over: 0, under: 0, excused: 0, failures: [], litany: [], limit: 0, line: 0, width: 0 };
       const style = getComputedStyle(sample);
       const viewport = Math.round(window.visualViewport?.height || window.innerHeight);
       const column = {
@@ -114,9 +116,13 @@ async function countOne(
         kit.spot.countFocusRows(text, start, end, column, input.kind);
       let windows = 0;
       let over = 0;
+      let under = 0;
+      let excused = 0;
       const failures: { rows: number; index: number; sample: string }[] = [];
       const litany: { rows: number; sample: string }[] = [];
+      const lastIndex = input.breaths.length - 1;
       for (const scene of scenes.values()) {
+        const sceneLast = scene[scene.length - 1]?.index ?? -1;
         const groups = kit.spot.spotlightGroups(
           scene,
           measure,
@@ -139,13 +145,39 @@ async function countOne(
           }
           if (rows > 4) {
             over += 1;
-            if (failures.length < 6) {
+            if (failures.length < 8) {
               failures.push({
                 rows,
                 index: group.index,
                 sample: group.sample.replace(/\s+/g, " ").trim().slice(0, 110),
               });
             }
+          }
+          if (rows >= 2) continue;
+          under += 1;
+          const last = group.parts[group.parts.length - 1];
+          const lastText = last ? (scene.find((breath) => breath.index === last.index)?.text ?? "") : "";
+          const boundary = last && input.cuts.some((cut) => cut[0] === last.index) ? (input.cuts.find((cut) => cut[0] === last.index)?.[1] ?? lastText.length) : lastText.length;
+          const finishesScene = Boolean(last && last.index === sceneLast && last.end >= lastText.length);
+          const finishesBook = Boolean(
+            last && last.index === lastIndex && last.end >= (input.breaths[last.index]?.text ?? "").length,
+          );
+          const finishesStop = Boolean(
+            last &&
+              input.stops.includes(last.index) &&
+              last.end >= boundary &&
+              !group.parts.some((part) => part.index > last.index || (part.index === last.index && part.end > boundary)),
+          );
+          if (finishesScene || finishesBook || finishesStop) {
+            excused += 1;
+            continue;
+          }
+          if (failures.length < 8) {
+            failures.push({
+              rows,
+              index: group.index,
+              sample: group.sample.replace(/\s+/g, " ").trim().slice(0, 110),
+            });
           }
         }
       }
@@ -154,6 +186,8 @@ async function countOne(
         error: "",
         windows,
         over,
+        under,
+        excused,
         failures,
         litany,
         limit: column.limit,
@@ -171,13 +205,15 @@ async function countOne(
   );
 }
 
-test("no lit window paints more than four rows at 390x844", { timeout: 3_600_000 }, async () => {
+test("no lit window paints more than four rows at 390x844", { timeout: 5_400_000 }, async () => {
   const ids = books();
   await ensureReaderServer();
   const browser = await chromium.launch({ args: ["--no-sandbox"] });
   const failures: Fail[] = [];
   let windows = 0;
   let over = 0;
+  let under = 0;
+  let excused = 0;
   let limit = 0;
   let line = 0;
   let width = 0;
@@ -208,6 +244,8 @@ test("no lit window paints more than four rows at 390x844", { timeout: 3_600_000
       if (result.error) failures.push({ id, rows: 0, index: -1, sample: result.error });
       windows += result.windows;
       over += result.over;
+      under += result.under;
+      excused += result.excused;
       limit = result.limit;
       line = result.line;
       width = result.width;
@@ -215,7 +253,7 @@ test("no lit window paints more than four rows at 390x844", { timeout: 3_600_000
       litany.push(...result.litany);
       if ((i + 1) % 25 === 0 || i + 1 === ids.length) {
         console.log(
-          `spotlight rows shard ${SHARD}/${SHARDS} ${i + 1}/${ids.length} over ${over} windows ${windows} ${((Date.now() - started) / 1000).toFixed(0)}s`,
+          `spotlight rows shard ${SHARD}/${SHARDS} ${i + 1}/${ids.length} over ${over} under ${under} excused ${excused} gate ${under - excused} windows ${windows} ${((Date.now() - started) / 1000).toFixed(0)}s`,
         );
       }
     }
@@ -224,7 +262,7 @@ test("no lit window paints more than four rows at 390x844", { timeout: 3_600_000
   }
 
   console.log(
-    `spotlight rows: shard ${SHARD}/${SHARDS} books ${ids.length} windows ${windows} over ${over} width ${width} limit ${limit} line ${line}; failures ${failures.length}`,
+    `spotlight rows: shard ${SHARD}/${SHARDS} books ${ids.length} windows ${windows} over ${over} under ${under} excused ${excused} gate ${under - excused} width ${width} limit ${limit} line ${line}; failures ${failures.length}`,
   );
   if (litany.length > 0) console.log(`spotlight rows litany: ${JSON.stringify(litany)}`);
   assert.equal(limit, 281, "the phone column is still a third of 844");

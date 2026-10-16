@@ -64,6 +64,7 @@ import { displayKindForForm } from "@/lib/display-blocks";
 import { breathSentenceCount } from "@/lib/sentence-step";
 import {
   countFocusRows,
+  groupCovering,
   locateSpotlight,
   markSpotlight,
   repeatSpotlight,
@@ -296,6 +297,10 @@ export function TbrReader({
   const [cursor, setCursor] = useState(0);
   const windowRef = useRef(0);
   const [spotWindow, setSpotWindow] = useState(0);
+  /** First character of the passage on screen. A reflow keeps those words lit. */
+  const litAnchor = useRef<{ index: number; start: number } | null>(null);
+  const anchorPlace = useRef("");
+  const paintedGroupRef = useRef<SpotlightGroup | null>(null);
   const ownedIndexRef = useRef<number | null>(null);
   /** Sentence a tap landed on. A store flicker must not drop it. */
   const sentenceOwned = useRef<{ index: number; cursor: number; window: number } | null>(null);
@@ -911,6 +916,55 @@ export function TbrReader({
       delete host.spotlightStep;
     };
   });
+
+  useLayoutEffect(() => {
+    const group = paintedGroupRef.current;
+    const part = group?.parts[0];
+    if (!part || !group) return;
+    const place = `${index}:${cursor}:${spotWindow}`;
+    if (anchorPlace.current === place) return;
+    anchorPlace.current = place;
+    const held = litAnchor.current;
+    if (held && group.parts.some((p) => p.index === held.index && p.start <= held.start && p.end > held.start)) {
+      return;
+    }
+    litAnchor.current = { index: part.index, start: part.start };
+  }, [index, cursor, spotWindow]);
+
+  useLayoutEffect(() => {
+    const anchor = litAnchor.current;
+    if (!anchor || !display.metrics) return;
+    const item = work.breaths[anchor.index];
+    if (!item) return;
+    const countRows = (text: string, start: number, end: number) =>
+      countFocusRows(text, start, end, display.metrics!, displayKind);
+    const placeIndex = liveIndex();
+    const groups = spotlightNear(
+      sceneBreaths(item.sceneId),
+      { index: placeIndex, cursor: cursorRef.current, window: windowRef.current },
+      display.measure,
+      display.limit,
+      display.linePx,
+      displayKind,
+      mergeStops,
+      mergeCuts,
+      "around",
+      1,
+      countRows,
+    );
+    const hit = groupCovering(groups, anchor.index, anchor.start);
+    if (!hit) return;
+    const at = locateSpotlight(groups, placeIndex, cursorRef.current, windowRef.current);
+    const located = groups[at];
+    if (located && groupCovering([located], anchor.index, anchor.start)) return;
+    // A link can open a sentence inside a window that starts on the previous
+    // breath. That sentence stays put. A resize only rewrites a window of the
+    // same breath, so the next tap is not aimed at a slice that moved.
+    if (hit.index !== placeIndex) return;
+    if (hit.cursor === cursorRef.current && hit.window === windowRef.current) return;
+    rememberSentence(hit.index, hit.cursor, hit.window);
+    markUserPlace(hit.index, hit.cursor, hit.window);
+  }, [metricsCacheKey]);
 
   function beginFromReentry() {
     setSandCue(false);
@@ -1601,6 +1655,7 @@ export function TbrReader({
     ? locateSpotlight(sceneGroups, index, atSentence, spotWindow)
     : 0;
   const group = sceneGroups[groupAt];
+  paintedGroupRef.current = group ?? null;
   const groupStart = group?.index ?? index;
   const groupEnd = group?.endIndex ?? index;
   const shownLookback = lookback.filter((item) => {
