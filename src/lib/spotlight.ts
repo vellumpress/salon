@@ -20,6 +20,10 @@ import { sentenceSpans } from "./sentences.ts";
  * A row counter, when the reader supplies one, also refuses a fifth painted
  * row: the next sentence stays out, and a sentence that still paints five
  * or six rows breaks at a semicolon, dash, or comma.
+ * A window under two rows is rebalanced with its neighbours: the short
+ * sentence moves back when the previous window has room, otherwise the long
+ * neighbour breaks at a semicolon, dash, or comma. A chapter's last line and
+ * a sit or ritual stop may stay short.
  */
 export const SPOTLIGHT_MIN_LINES = 2;
 export const SPOTLIGHT_MAX_LINES = 4;
@@ -65,6 +69,11 @@ type Atom = {
   start: number;
   end: number;
   text: string;
+  /**
+   * Window of a sentence whose opening already lit with the previous group.
+   * The continuation is window 1, 2, … so the opening stays window 0.
+   */
+  windowBase?: number;
 };
 
 export function spotlightLineCap(linePx: number) {
@@ -158,10 +167,11 @@ function partsOf(atoms: readonly Atom[]): SpotlightPart[] {
 function groupFrom(atoms: readonly Atom[], window: number, kind: DisplayKind): SpotlightGroup {
   const first = atoms[0]!;
   const last = atoms[atoms.length - 1]!;
+  const resolved = window > 0 ? window : (first.windowBase ?? 0);
   return {
     index: first.index,
     cursor: first.sentence,
-    window,
+    window: resolved,
     endIndex: last.index,
     endCursor: last.sentence + 1,
     parts: partsOf(atoms),
@@ -221,6 +231,21 @@ function maxWindowLines() {
 /** Under two lines: one short line, which may cross a paragraph to find company. */
 function isShortLine(lines: number) {
   return lines < minWindowLines();
+}
+
+/** A whole breath that still paints as one line. */
+function breathIsShort(
+  breath: SpotlightBreath,
+  measure: MeasureFn,
+  linePx: number,
+  kind: DisplayKind,
+  countRows?: CountRows,
+) {
+  const atoms = atomsOf(breath, kind);
+  const texts = new Map([[breath.index, breath.text ?? ""]]);
+  if (isShortLine(mergedLines(atoms, texts, measure, linePx, kind))) return true;
+  if (!countRows) return false;
+  return coveredRows(atoms, texts, countRows) < SPOTLIGHT_MIN_LINES;
 }
 
 function rowsFit(countRows: CountRows | undefined, text: string, start: number, end: number) {
@@ -602,6 +627,7 @@ function splitAtom(
     balanceTail(cuts, breathText, absStart, cands, measure, limitPx, linePx, countRows);
   }
   let cursor = absStart;
+  const base = atom.windowBase ?? 0;
   return cuts.map((end, window) => {
     const start = cursor;
     cursor = end;
@@ -612,7 +638,7 @@ function splitAtom(
       end,
       text: breathText.slice(start, end),
     };
-    return groupFrom([piece], window, kind);
+    return groupFrom([piece], base + window, kind);
   });
 }
 
@@ -682,6 +708,7 @@ function groupOrigin(
   kind: DisplayKind,
   stops?: ReadonlySet<number>,
   countRows?: CountRows,
+  retreat = true,
 ): { index: number; sentence: number } {
   const focusPos = breaths.findIndex((breath) => breath.index === focus);
   if (focusPos <= 0) return { index: breaths[focusPos]?.index ?? focus, sentence: 0 };
@@ -707,7 +734,28 @@ function groupOrigin(
     if (!isShortLine(mergedLines(prevAtoms, texts, measure, linePx, kind))) break;
     pos -= 1;
   }
-  return { index: breaths[pos]!.index, sentence: 0 };
+  // A one-line sentence can move back into the previous window. Opening has
+  // to see that window, once, or the passage on screen would not match the chapter.
+  const here = breaths[pos]!;
+  if (
+    retreat &&
+    pos > 0 &&
+    breathIsShort(here, measure, linePx, kind, countRows) &&
+    !crossesStop(breaths[pos - 1]!.index, here.index, stops)
+  ) {
+    return groupOrigin(
+      breaths,
+      breaths[pos - 1]!.index,
+      measure,
+      limitPx,
+      linePx,
+      kind,
+      stops,
+      countRows,
+      false,
+    );
+  }
+  return { index: here.index, sentence: 0 };
 }
 
 function groupCovers(group: SpotlightGroup, place: SpotlightPlace) {
@@ -715,6 +763,16 @@ function groupCovers(group: SpotlightGroup, place: SpotlightPlace) {
   if (place.index === group.index && place.cursor < group.cursor) return false;
   if (place.index === group.endIndex && place.cursor >= group.endCursor) return false;
   if (group.index === group.endIndex && group.cursor === place.cursor && group.window !== place.window) {
+    return false;
+  }
+  // A group that starts on an earlier sentence may borrow the opening of its
+  // last sentence. A later window of that sentence is a different passage.
+  if (
+    place.window !== 0 &&
+    place.index === group.endIndex &&
+    place.cursor + 1 === group.endCursor &&
+    !(group.index === place.index && group.cursor === place.cursor && group.window === place.window)
+  ) {
     return false;
   }
   return true;
@@ -748,7 +806,11 @@ function windowsStillNeeded(groups: readonly SpotlightGroup[], bound: GroupBound
  * lines is split at an internal pause. With `countRows`, a window that would
  * paint a fifth row stops at the sentence before it, and a single sentence
  * that still paints five or six rows breaks at a semicolon, dash, or comma.
- * `bound` stops once the passage on screen, and one step past it, is known.
+ * A window that would close under two rows moves back into the previous
+ * window when that still fits, or takes a clause of the next sentence at a
+ * semicolon, dash, or comma. The last line of the scene, and a sit or ritual
+ * stop, may stay on one row. `bound` stops once the passage on screen, and
+ * one step past it, is known.
  */
 function groupBreaths(
   breaths: readonly SpotlightBreath[],
@@ -812,6 +874,130 @@ function groupBreaths(
   }
   const cap = limitPx > 0 ? limitPx : Number.POSITIVE_INFINITY;
   const groups: SpotlightGroup[] = [];
+  const packed: Atom[][] = [];
+
+  function withinCap(slice: readonly Atom[]) {
+    const lines = mergedLines(slice, texts, measure, linePx, kind);
+    if (!fits(lines, cap, linePx)) return false;
+    if (rows && coveredRows(slice, texts, rows) > SPOTLIGHT_MAX_LINES) return false;
+    return true;
+  }
+
+  function tooShort(slice: readonly Atom[]) {
+    if (slice.length === 0) return false;
+    if (isShortLine(mergedLines(slice, texts, measure, linePx, kind))) return true;
+    if (rows && coveredRows(slice, texts, rows) < SPOTLIGHT_MIN_LINES) return true;
+    return false;
+  }
+
+  function canAttach(prev: readonly Atom[], next: readonly Atom[]) {
+    const from = prev[prev.length - 1];
+    const to = next[0];
+    if (!from || !to) return false;
+    if (crossesStop(from.index, to.index, stops)) return false;
+    if (crossesCut(from, to, cuts)) return false;
+    return true;
+  }
+
+  /** The slice finishes a sit or ritual, so it may stay on one row. */
+  function endsAtStop(slice: readonly Atom[]) {
+    const last = slice[slice.length - 1];
+    if (!last || !stops?.has(last.index)) return false;
+    const text = texts.get(last.index) ?? "";
+    const boundary = cuts?.get(last.index) ?? text.length;
+    if (last.end < boundary) return false;
+    return !slice.some((atom) => atom.index > last.index || (atom.index === last.index && atom.end > boundary));
+  }
+
+  function pieceOf(atom: Atom, start: number, end: number): Atom {
+    const text = texts.get(atom.index) ?? "";
+    return {
+      index: atom.index,
+      sentence: atom.sentence,
+      start,
+      end,
+      text: text.slice(start, end),
+    };
+  }
+
+  /**
+   * A prefix of `next` that brings `head` into two to four rows.
+   * A semicolon, dash, or comma wins. A word boundary is only the fallback
+   * when the neighbour has no pause that leaves both sides readable.
+   */
+  function takeClause(head: readonly Atom[], next: Atom): { prefix: Atom; rest: Atom } | null {
+    if (next.end - next.start < 2) return null;
+    const breathText = texts.get(next.index) ?? "";
+    const local = breakCandidates(next.text);
+    const consider = (relEnd: number, rank: number): ScoredCut | null => {
+      const abs = next.start + relEnd;
+      if (abs <= next.start || abs >= next.end) return null;
+      const prefix = pieceOf(next, next.start, abs);
+      const rest = pieceOf(next, abs, next.end);
+      const combined = head.concat(prefix);
+      if (!withinCap(combined) || tooShort(combined)) return null;
+      const restShort = tooShort([rest]);
+      const restTall = atomIsTall(rest, breathText, measure, cap, linePx, rows);
+      const restWords = wordCount(rest.text);
+      const remnant = (restShort && !restTall) || (restWords > 0 && restWords < 4 && !restTall) ? 1 : 0;
+      const lines = mergedLines(combined, texts, measure, linePx, kind);
+      return { end: abs, rank, remnant, balance: Math.abs(lines - 3) };
+    };
+    let best: ScoredCut | null = null;
+    for (const cand of local) {
+      if (cand.rank >= 3) continue;
+      const scored = consider(cand.end, cand.rank);
+      if (scored && (!best || betterCut(scored, best) < 0)) best = scored;
+    }
+    if (!best || best.remnant === 1) {
+      const ends = local.filter((cand) => cand.rank === 3).map((cand) => cand.end);
+      let left = -1;
+      let low = 0;
+      let high = ends.length - 1;
+      while (low <= high) {
+        const mid = Math.floor((low + high) / 2);
+        const abs = next.start + ends[mid]!;
+        const combined = head.concat(pieceOf(next, next.start, abs));
+        if (!tooShort(combined)) {
+          left = mid;
+          high = mid - 1;
+        } else {
+          low = mid + 1;
+        }
+      }
+      let right = -1;
+      if (left >= 0) {
+        low = left;
+        high = ends.length - 1;
+        while (low <= high) {
+          const mid = Math.floor((low + high) / 2);
+          const abs = next.start + ends[mid]!;
+          if (withinCap(head.concat(pieceOf(next, next.start, abs)))) {
+            right = mid;
+            low = mid + 1;
+          } else {
+            high = mid - 1;
+          }
+        }
+      }
+      if (left >= 0 && right >= left) {
+        for (const at of [right, left]) {
+          const scored = consider(ends[at]!, 3);
+          if (scored && (!best || betterCut(scored, best) < 0)) best = scored;
+        }
+      }
+    }
+    if (!best) return null;
+    const rest = pieceOf(next, best.end, next.end);
+    rest.windowBase = (next.windowBase ?? 0) + 1;
+    return { prefix: pieceOf(next, next.start, best.end), rest };
+  }
+
+  function pushSlice(slice: Atom[]) {
+    packed.push(slice);
+    groups.push(groupFrom(slice, 0, kind));
+  }
+
   let i = 0;
   while (i < atoms.length) {
     const atom = atoms[i]!;
@@ -826,7 +1012,23 @@ function groupBreaths(
         bound && (bound.edge === "last" || atom.index <= bound.index || !boundSatisfied(groups, bound))
           ? windowsStillNeeded(groups, bound)
           : undefined;
-      groups.push(...splitAtom(atom, breathText, measure, cap, linePx, kind, maxWindows, rows));
+      const pieces = splitAtom(atom, breathText, measure, cap, linePx, kind, maxWindows, rows);
+      for (const piece of pieces) {
+        const part = piece.parts[0];
+        if (!part) continue;
+        const slice: Atom[] = [
+          {
+            index: part.index,
+            sentence: atom.sentence,
+            start: part.start,
+            end: part.end,
+            text: breathText.slice(part.start, part.end),
+            windowBase: piece.window > 0 ? piece.window : undefined,
+          },
+        ];
+        packed.push(slice);
+        groups.push(piece);
+      }
       i += 1;
       continue;
     }
@@ -849,7 +1051,38 @@ function groupBreaths(
       if (rows && coveredRows(atoms.slice(i, j + 1), texts, rows) > SPOTLIGHT_MAX_LINES) break;
       j += 1;
     }
-    groups.push(groupFrom(atoms.slice(i, j), 0, kind));
+    const slice = atoms.slice(i, j);
+    const next = j < atoms.length ? atoms[j] : undefined;
+    const blocked =
+      !next ||
+      endsAtStop(slice) ||
+      crossesStop(slice[slice.length - 1]!.index, next.index, stops) ||
+      crossesCut(slice[slice.length - 1]!, next, cuts);
+    if (tooShort(slice) && !blocked && next) {
+      const prev = packed[packed.length - 1];
+      const moved = prev && canAttach(prev, slice) ? prev.concat(slice) : null;
+      const movedFits = moved !== null && withinCap(moved) && !tooShort(moved);
+      if (moved && movedFits) {
+        packed[packed.length - 1] = moved;
+        groups[groups.length - 1] = groupFrom(moved, groups[groups.length - 1]!.window, kind);
+        i = j;
+        continue;
+      }
+      const taken = takeClause(slice, next);
+      if (taken) {
+        pushSlice(slice.concat(taken.prefix));
+        atoms[j] = taken.rest;
+        i = j;
+        continue;
+      }
+      if (moved && withinCap(moved)) {
+        packed[packed.length - 1] = moved;
+        groups[groups.length - 1] = groupFrom(moved, groups[groups.length - 1]!.window, kind);
+        i = j;
+        continue;
+      }
+    }
+    pushSlice(slice);
     i = j;
   }
   if (bound?.edge === "last") {
@@ -994,6 +1227,20 @@ export function locateSpotlight(
   return best;
 }
 
+/** The group whose lit range contains this character, if the scene still has it. */
+export function groupCovering(
+  groups: readonly SpotlightGroup[],
+  index: number,
+  start: number,
+): SpotlightGroup | null {
+  for (const group of groups) {
+    for (const part of group.parts) {
+      if (part.index === index && part.start <= start && part.end > start) return group;
+    }
+  }
+  return null;
+}
+
 export function placeOf(group: SpotlightGroup): SpotlightPlace {
   return { index: group.index, cursor: group.cursor, window: group.window };
 }
@@ -1128,10 +1375,12 @@ function lineBoxes(sample: string, metrics: DisplayMetrics) {
 
 /**
  * Painted rows of a lit slice.
- * One line-box cannot reach a fifth row. A longer slice is counted per display
- * block: past text can add the shared row and one extra wrap. Four or more
- * estimated rows are read from the focus spans' client rects, because a block
- * break can add a row the slice measured on its own does not see.
+ * One line that continues earlier words is charged the shared row and one
+ * extra wrap, and that cannot reach a fifth row. Any other slice is counted
+ * per display block. Past text can add the shared row and one extra wrap.
+ * Text still ahead of the cut can push the last focus word onto another row,
+ * and four estimated rows can hide the same extra line, so both are read
+ * from the focus spans' client rects.
  * Books and imported pages share this count.
  */
 export function countFocusRows(
@@ -1144,13 +1393,14 @@ export function countFocusRows(
   if (!(end > start) || !text) return 0;
   const slice = text.slice(start, end);
   const alone = lineBoxes(slice, metrics);
-  // One short line, even after past text or a block break, cannot paint a fifth row.
-  if (alone <= 1) return Math.min(SPOTLIGHT_MAX_LINES, alone + (start > 0 ? 2 : 0));
+  // A one-line continuation is already charged two rows. It cannot paint a fifth.
+  if (alone <= 1 && start > 0) return Math.min(SPOTLIGHT_MAX_LINES, alone + 2);
   const laid = laidFocus(text, start, end, metrics, kind);
-  if (laid.parts.length === 0) return 0;
-  // Four estimated rows still paint once: a block break or the line after the
-  // focus can add a row the slice-alone measure does not see.
-  if (laid.safe < SPOTLIGHT_MAX_LINES || typeof document === "undefined") return laid.safe;
+  if (laid.parts.length === 0) return alone;
+  // The line after the focus, or a block break under a four-row estimate, can
+  // add a row the slice measured on its own does not see.
+  const confirm = laid.ahead || laid.safe >= SPOTLIGHT_MAX_LINES;
+  if (!confirm || typeof document === "undefined") return alone <= 1 ? alone : laid.safe;
   return paintedRows(laid.parts, metrics);
 }
 
@@ -1172,6 +1422,7 @@ function laidFocus(text: string, start: number, end: number, metrics: DisplayMet
   const blocks = resolveDisplayBlocks(text, metrics, kind);
   const marked = markSpotlight(text, blocks, { start, end }, kind);
   let safe = 0;
+  let ahead = false;
   const parts: { text: string; focus: boolean }[][] = [];
   for (const pieces of marked) {
     const focusText = pieces
@@ -1179,12 +1430,13 @@ function laidFocus(text: string, start: number, end: number, metrics: DisplayMet
       .map((piece) => piece.text)
       .join("");
     if (!focusText.trim()) continue;
+    if (pieces.some((piece) => piece.role === "ahead")) ahead = true;
     const past = pieces.some((piece) => piece.role === "past");
     const boxes = lineBoxes(focusText, metrics);
     safe += past ? boxes + 2 : boxes;
     parts.push(pieces.map((piece) => ({ text: piece.text, focus: piece.role === "focus" })));
   }
-  return { safe, parts };
+  return { safe, parts, ahead };
 }
 
 function paintedRows(parts: { text: string; focus: boolean }[][], metrics: DisplayMetrics) {

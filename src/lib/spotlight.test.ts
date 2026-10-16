@@ -309,29 +309,139 @@ test("a one-line sentence crosses a paragraph when the pair stays within four li
   assertGroupFits(groups[0]!);
 });
 
-test("a one-line sentence stays alone when the next sentence would pass four lines", () => {
+test("a one-line sentence rebalances when the next sentence would pass four lines", () => {
   const next = sentenceOf(4, "damson").replace(/^./u, (letter) => letter.toUpperCase());
   const stacked = linesOf("Hi.") + linesOf(next);
   assert.ok(stacked > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP, `stacked ${stacked}`);
+  const breaths = [
+    { index: 0, text: `Hi. ${next}` },
+    { index: 1, text: "Hi." },
+    { index: 2, text: next },
+  ];
+  const groups = spotlightGroups(breaths, measure, limit, line);
+  for (const breath of breaths) {
+    const parts = groups.flatMap((group) => group.parts.filter((part) => part.index === breath.index));
+    assert.ok(parts.length > 0, `missing breath ${breath.index}`);
+    let at = 0;
+    for (const part of parts) {
+      assert.equal(part.start, at, breath.text.slice(Math.max(0, at - 12), at + 12));
+      at = part.end;
+    }
+    assert.equal(at, breath.text.length);
+  }
+  for (const group of groups) {
+    let height = 0;
+    for (const part of group.parts) {
+      const text = breaths.find((breath) => breath.index === part.index)?.text ?? "";
+      height += measure(text.slice(part.start, part.end));
+    }
+    assert.ok(height / line >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP, `window is ${(height / line).toFixed(2)} lines: ${group.sample.slice(0, 48)}`);
+    assert.ok(height / line <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP + 0.05, group.sample.slice(0, 48));
+    assertGroupFits(group);
+  }
+  assert.ok(groups.some((group) => group.sample.includes("Hi.")));
+  assert.ok(groups.every((group) => group.sample.trim() !== "Hi."));
+});
+
+test("a one-line sentence moves back when the previous window has room", () => {
+  const prev = sentenceOf(2, "prior");
+  const tiny = "He was a remarkable man!";
+  const next = sentenceOf(4, "later");
+  assert.ok(linesOf(tiny) < SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(prev) + linesOf(tiny) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(tiny) + linesOf(next) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
   const groups = spotlightGroups(
     [
-      { index: 0, text: `Hi. ${next}` },
-      { index: 1, text: "Hi." },
+      { index: 0, text: prev },
+      { index: 1, text: tiny },
       { index: 2, text: next },
     ],
     measure,
     limit,
     line,
   );
-  const same = groups.find((group) => group.index === 0);
-  assert.ok(same);
-  assert.equal(same!.sample.trim(), "Hi.");
-  assert.equal(same!.endCursor, 1);
-  const across = groups.filter((group) => group.index === 1);
-  assert.equal(across.length, 1);
-  assert.equal(across[0]!.sample.trim(), "Hi.");
-  assert.equal(across[0]!.endIndex, 1);
-  assert.ok(groups.some((group) => group.sample.includes("damson")));
+  const home = groups.find((group) => group.sample.includes("remarkable"));
+  assert.ok(home);
+  assert.match(home!.sample, /prior/);
+  assert.doesNotMatch(home!.sample, /later/);
+  assert.equal(home!.index, 0);
+  assert.equal(home!.endIndex, 1);
+  for (const group of groups) assertGroupFits(group);
+});
+
+test("a one-line sentence breaks the next sentence at a comma when the previous window is full", () => {
+  const prev = sentenceOf(4, "full");
+  const tiny = "He was a remarkable man!";
+  const head = sentenceOf(2, "angle").replace(/\.$/, "");
+  const tail = sentenceOf(2, "fish").replace(/\.$/, "");
+  const next = `${head}, ${tail}.`;
+  assert.ok(linesOf(prev) + linesOf(tiny) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(tiny) + linesOf(next) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  const breaths = [
+    { index: 0, text: prev },
+    { index: 1, text: tiny },
+    { index: 2, text: next },
+  ];
+  const groups = spotlightGroups(breaths, measure, limit, line);
+  const home = groups.find((group) => group.sample.includes("remarkable"));
+  assert.ok(home);
+  assert.match(home!.sample, /angle/);
+  assert.match(home!.sample, /,\s*$/);
+  assert.doesNotMatch(home!.sample, /fish/);
+  assert.doesNotMatch(home!.sample, /full/);
+  const parts = groups.flatMap((group) => group.parts.filter((part) => part.index === 2));
+  let at = 0;
+  for (const part of parts) {
+    assert.equal(part.start, at);
+    at = part.end;
+  }
+  assert.equal(at, next.length);
+  for (const group of groups) {
+    let height = 0;
+    for (const part of group.parts) {
+      const text = breaths.find((breath) => breath.index === part.index)?.text ?? "";
+      height += measure(text.slice(part.start, part.end));
+    }
+    assert.ok(height / line >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP, group.sample.slice(0, 48));
+    assertGroupFits(group);
+  }
+});
+
+test("a borrowed opening still steps back onto that same window", () => {
+  const tiny = "He was a remarkable man!";
+  const head = sentenceOf(2, "angle").replace(/\.$/, "");
+  const tail = sentenceOf(2, "fish").replace(/\.$/, "");
+  const after = sentenceOf(2, "later");
+  const text = `${tiny} ${head}, ${tail}. ${after}`;
+  const breaths = [
+    { index: 4, text },
+    { index: 5, text: sentenceOf(2, "next") },
+  ];
+  const full = spotlightGroups(breaths, measure, limit, line);
+  assert.ok(full.some((group) => group.window > 0), full.map((group) => spotlightKey(placeOf(group))).join(" "));
+  const lazy: GroupsAt = (index, query) =>
+    spotlightNear(
+      breaths,
+      { index, cursor: query?.cursor ?? 0, window: query?.window ?? 0 },
+      measure,
+      limit,
+      line,
+      "prose",
+      undefined,
+      undefined,
+      query?.edge ?? "around",
+      query?.after ?? 1,
+    );
+  let place = placeOf(full[0]!);
+  for (let i = 0; i < full.length; i += 1) {
+    assert.equal(spotlightKey(place), spotlightKey(placeOf(full[i]!)));
+    if (i === full.length - 1) break;
+    const forward = stepSpotlight({ place, delta: 1, groupsAt: lazy, breathCount: breaths.length });
+    assert.equal(spotlightKey(forward as SpotlightPlace), spotlightKey(placeOf(full[i + 1]!)));
+    const back = stepSpotlight({ place: forward as SpotlightPlace, delta: -1, groupsAt: lazy, breathCount: breaths.length });
+    assert.equal(spotlightKey(back as SpotlightPlace), spotlightKey(place), `back from ${spotlightKey(forward as SpotlightPlace)}`);
+    place = forward as SpotlightPlace;
+  }
 });
 
 test("a one-line sentence at the end of the chapter stays alone", () => {
