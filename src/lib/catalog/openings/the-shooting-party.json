@@ -1,0 +1,226 @@
+{
+  "id": "the-shooting-party",
+  "title": "The Shooting Party",
+  "author": "Anton Chekhov (tr. A. E. Chamot)",
+  "year": "1926",
+  "note": "Opening sit: the Prelude from the top to \"…I took up the copy-book and put it away in the table drawer.\"",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Prelude",
+      "place": "Prelude",
+      "reentry": "On an April day of the year 1880 the doorkeeper Andrey came into my private room and told me in a mysterious whisper that a gentleman had come to the editorial office and demanded insistently to see the editor.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "On an April day of the year 1880 the doorkeeper Andrey came into my private room and told me in a mysterious whisper that a gentleman had come to the editorial office and demanded insistently to see the editor."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "“He appears to be a chinovnik,” Andrey added. “He has a cockade. . . .”"
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Note: A government official."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "“Ask him to come another time,” I said, “I am busy to-day. Tell him the editor only receives on Saturdays.”"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "“He was here the day before yesterday and asked for you. He says his business is urgent. He begs, almost with tears in his eyes, to see you. He says he is not free on Saturday. . . . Will you receive him?”"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "I sighed, laid down my pen, and settled myself in my chair to receive the gentleman with the cockade. Young authors, and in general everybody who is not initiated into the secrets of the profession, are generally so overcome by holy awe at the words “editorial office” that they make you wait a considerable time for them. After the editor's “Show him in,” they cough and blow their noses for a long time, open the door very slowly, come into the room still more slowly, and thus rob you of no little time. The gentleman with the cockade did not make me wait. The door had scarcely had time to close after Andrey before I saw in my office a tall, broad-shouldered man holding a paper parcel in one hand and a cap with a cockade in the other."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "This man, who had succeeded in obtaining an interview with me, plays a very prominent part in my story. It is necessary to describe his appearance."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "He was, as I have already said, tall and broad-shouldered and as vigorous as a fine cart horse. His whole body seemed to exhale health and strength. His face was rosy, his hands large, his chest broad and as muscular as a strong boy's. He was over forty. He was dressed with taste, according to the last fashion, in a new tweed suit, evidently just come from the tailor's. A thick gold watch-chain with breloques hung across his chest, and on his little finger a diamond ring sparkled with brilliant tiny stars. But, what is most important, and so essential to the hero of a novel or story, with the slightest pretension to respectability, is that he was extremely handsome. I am neither a woman nor an artist. I have but little understanding of manly beauty, but the appearance of the gentleman with the cockade made an impression on me. His large muscular face remained for ever impressed on my memory. On that face you could see a real Greek nose with a slight hook, thin lips and nice blue eyes from which shone goodness and something else, for which it is difficult to find an appropriate name. That “something” can be seen in the eyes of little animals when they are sad or ill. Something imploring, childish, resignedly suffering. . . . Cunning or very clever people never have such eyes."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "His whole face seemed to breathe candour, a broad, simple nature, and truth. . . . If it be not a falsehood that the face is the mirror of the soul, I could have sworn from the very first day of my acquaintance with the gentleman with the cockade that he was unable to lie. I might even have betted that he could not lie. Whether I should have lost my bet or not, the reader will see further on."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "His chestnut hair and beard were thick and soft as silk. It is often said that soft hair is the sign of a sweet, sensitive, “silken” soul. Criminals and wicked obstinate characters have, in most cases, harsh hair. If this be true or not the reader will also see further on. Neither the expression of his face, nor the softness of his beard was as soft and delicate in this gentleman with the cockade as the movements of his huge form. These movements seemed to denote education, lightness, grace, and if you will forgive the expression, something womanly. It would cause my hero but a slight effort to bend a horseshoe or to flatten out a tin sardine box, with his fist and at the same time not one of his movements showed his physical strength. He took hold of the door handle or of his hat, as if they were butterflies—delicately, carefully, hardly touching them with his fingers. He walked noiselessly, he pressed my hand feebly. When looking at him you forgot that he was as strong as Goliath, and that he could lift with one hand weights that five men like our office servant Andrey could not have moved. Looking at his light movements, it was impossible to believe that he was strong and heavy. Spencer might have called him a model of grace."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "When he entered my office he became confused. His delicate, sensitive nature was probably shocked by my frowning, dissatisfied face."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "“For God's sake forgive me!” he began in a soft, mellow baritone voice. “I have broken in upon you not at the appointed time, and I have forced you to make an exception for me. You are very busy! But, Mr. Editor, you see, this is how the case stands. To-morrow I must start for Odessa on very important business. . . . If I had been able to put off this journey till Saturday, I can assure you I would not have asked you to make this exception for me. I submit to rules because I love order. . . .”"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "“How much he talks!” I thought as I stretched out my hand towards the pen, showing by this movement I was pressed for time. (I was terribly bored by visitors just then.)"
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "“I will only take up a moment of your time,” my hero continued in an apologetic tone. “But first allow me to introduce myself. . . . Ivan Petrovich Kamyshev, Bachelor of Law and former examining magistrate. I have not the honour of belonging to the fellowship of authors, nevertheless I appear before you from motives that are purely those of a writer. Notwithstanding his forty years, you have before you a man who wishes to be a beginner. . . . Better late than never!”"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "“Very pleased. . . . What can I do for you?”"
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The man wishing to be a beginner sat down and continued, looking at the floor with his imploring eyes:"
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "“I have brought you a short story which I would like to see published in your journal. Mr. Editor, I will tell you quite candidly I have not written this story to attain an author's celebrity, nor for the sake of sweet-sounding words. I am too old for these good things. I venture on the writer's path from purely commercial motives. . . . I want to earn something. . . . At the present moment I have absolutely no occupation. I was a magistrate in the S—— district for more than five years, but I did not make a fortune, nor did I keep my innocence either. . . .”"
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "Kamyshev glanced at me with his kind eyes and laughed gently."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "“Service is tiresome. . . . I served and served till I was quite fed up, and chucked it. I have no occupation now, sometimes I have nothing to eat. . . . If, despite its unworthiness, you will publish my story, you will do me more than a great favour. . . . You will help me. . . . A journal is not an alms-house, nor an old-age asylum. . . . I know that, but . . . won't you be so kind. . . .”"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "“He is lying,” I thought."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "The breloques and the diamond ring on his little finger belied his having written for the sake of a piece of bread. Besides, a slight cloud passed over Kamyshev's face such as only an experienced eye can trace on the faces of people who seldom lie."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "“What is the subject of your story?” I asked."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "“The subject? What can I tell you? The subject is not new. . . . Love and murder. . . . But read it, you will see. . . . ‘From the Notes of an Examining Magistrate.’ . . .”"
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "I probably frowned, for Kamyshev looked confused, his eyes began to blink, he started and continued speaking rapidly:"
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "“My story is written in the conventional style of former examining magistrates, but . . . you will find in it facts, the truth. . . . All that is written, from beginning to end, happened before my eyes. . . . Indeed, I was not only a witness but one of the actors.”"
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "“The truth does not matter. . . . It is not absolutely necessary to see a thing to describe it. That is unimportant. The fact is our poor readers have long been fed up with Gaboriau and Shklyarevsky. They are tired of all those mysterious murders, those artful devices of the detectives, and the extraordinary resourcefulness of the examining magistrate. The reading public, of course, varies, but I am talking of the public that reads our newspaper. What is the title of your story?”"
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Note: A. A. Shklyarevsky was a well-known Russian author who wrote a number of novels and tales on criminal and detective subjects in the years 1860–80.—A. Ch."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "“The Shooting Party.”"
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "“Hm! . . . That's not serious, you know. . . . And, to be quite frank with you, I have such an amount of copy on hand that it is quite impossible to accept new things, even if they are of undoubted merit.”"
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "“Pray accept my work, . . . You say it is not serious, but . . . it is difficult to give a title to a thing before you have seen it. . . . Besides, is it possible you cannot admit that an examining magistrate can write serious works?”"
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "All this Kamyshev said stammeringly, twisting a pencil about between his fingers and looking at his feet. He finished by blinking his eyes and becoming exceedingly confused. I was sorry for him."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "“All right, leave it,” I said. “But I can't promise that your story will be read very soon. You will have to wait. . . .”"
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "“How long?”"
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "“I don't know. Look in . . . in about two to three months. . . .”"
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "“That's pretty long. . . . But I dare not insist. . . . Let it be as you say. . . .”"
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "Kamyshev rose and took up his cap."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "“Thank you for the audience,” he said. “I will now go home and dwell in hope. Three months of hope! However, I am boring you. I have the honour to bid you good-bye!”"
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "“One word more, please,” I said as I turned over the pages of his thick copy-book, which were written in a very small handwriting. “You write here in the first person. . . . You therefore mean the examining magistrate to be yourself?”"
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "“Yes, but under another name. The part I play in this story is somewhat scandalous. . . . It would have been awkward to give my own name. . . . In three months, then?”"
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "“Yes, not earlier, please. . . . Good-bye!”"
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "The former examining magistrate bowed gallantly, turned the door handle gingerly, and disappeared, leaving his work on my writing table. I took up the copy-book and put it away in the table drawer."
+    }
+  ]
+}

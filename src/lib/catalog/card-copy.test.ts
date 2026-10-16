@@ -330,6 +330,7 @@ test("known origin overrides", () => {
     "one-of-life-s-slaves": "Norway",
     fantasy: "Italy",
     "the-confession": "Russia",
+    "the-shooting-party": "Russia",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
