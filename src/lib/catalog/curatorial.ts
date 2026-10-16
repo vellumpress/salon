@@ -1233,6 +1233,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Thu 15 Oct 2026 PM SERAO-FANTASY — Fantasy (Serao, tr. Harland and Sylvester, 1890) follows One of Life's Slaves, Next carefully only (the heads-up is on the card). Never Featured.
   // Off every Ritual lane; the opening sit (Part I, Chapter I to the first scene break) is never unwind or before-sleep.
   "fantasy",
+  // Mira Thu 15 Oct 2026 EVE GORKY-CONFESSION — The Confession (Gorky, tr. Strunsky, 1909) follows Fantasy, Next carefully only (the heads-up is on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (Chapter I, whole) is never unwind or before-sleep.
+  "the-confession",
 ] as const;
 
 /**

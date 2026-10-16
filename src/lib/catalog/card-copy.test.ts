@@ -329,6 +329,7 @@ test("known origin overrides", () => {
     "garman-and-worse": "Norway",
     "one-of-life-s-slaves": "Norway",
     fantasy: "Italy",
+    "the-confession": "Russia",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
     "the-mist": "Denmark",

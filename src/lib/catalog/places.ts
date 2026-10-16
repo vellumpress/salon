@@ -215,6 +215,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "garman-and-worse": { label: "Norway", region: "no" },
   "one-of-life-s-slaves": { label: "Christiania", region: "no" },
   fantasy: { label: "Naples", region: "it" },
+  "the-confession": { label: "Russia", region: "ru" },
   "tales-by-polish-authors": { label: "Poland", region: "pl" },
   "the-dancing-master": { label: "Paris", region: "fr" },
   "the-golden-age": { label: "England", region: "gb" },

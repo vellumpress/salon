@@ -429,6 +429,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: a baby is left to grow up in a drunken lodging-house, there are beatings and a spell in prison, and the book ends with a jealous killing.",
   fantasy:
     "A heads-up before you start: the story turns on an affair between two married people, and near the end the wife who has been betrayed takes her own life.",
+  "the-confession":
+    "A heads-up before you start: the narrator turns to theft for a time, his wife and their child die, and two suicides are told secondhand.",
   "the-adventures-of-huckleberry-finn":
     "A boy and a man on a raft, heading south through a country that will not let them be.",
   "pride-and-prejudice": "A country dance, a proud man, and the long work of being wrong about someone.",
