@@ -60,7 +60,7 @@ import {
 import { decodeHostedSit } from "@/lib/hosted-sit";
 import { formatHandle, normalizeHandle } from "@/lib/social";
 import { useReaderDaylight } from "@/lib/use-reader-daylight";
-import { displayKindForForm } from "@/lib/display-blocks";
+import { displayKindForForm, displayLinePx, measureStyledHeight } from "@/lib/display-blocks";
 import { breathSentenceCount } from "@/lib/sentence-step";
 import {
   countFocusRows,
@@ -76,7 +76,7 @@ import {
   type SpotlightQuery,
 } from "@/lib/spotlight";
 import { cutsForWork, stopsForWork } from "@/lib/catalog/merge-stop-index";
-import { useDisplayBlocks } from "@/lib/use-display-blocks";
+import { columnMetricsNow, useDisplayBlocks } from "@/lib/use-display-blocks";
 import { FittedCopy } from "@/components/fitted-copy";
 import {
   breathTooTall,
@@ -705,21 +705,25 @@ export function TbrReader({
     const cursor = query?.cursor ?? 0;
     const spot = query?.window ?? 0;
     const after = query?.after ?? (edge === "around" ? 1 : 0);
-    const key = `${metricsCacheKey}|${edge}|${item.sceneId}|${breathIndex}|${cursor}|${spot}|${after}`;
+    const metrics = columnMetricsNow(breathLineRef.current, display.metrics);
+    const limit = metrics?.limit || display.limit;
+    const linePx = metrics ? displayLinePx(metrics) : display.linePx;
+    const measure = (text: string) => (metrics ? measureStyledHeight(text, metrics) : display.measure(text));
+    const key = `${metricsCacheKey}|${metrics?.viewport ?? 0}|${limit}|${edge}|${item.sceneId}|${breathIndex}|${cursor}|${spot}|${after}`;
     const hit = groupCache.current.get(key);
     if (hit) return hit;
     const countRows = (text: string, start: number, end: number) => {
-      if (display.metrics) return countFocusRows(text, start, end, display.metrics, displayKind);
-      const linePx = display.linePx > 0 ? display.linePx : 1;
-      const lines = Math.ceil(display.measure(text.slice(start, end)) / linePx);
+      if (metrics) return countFocusRows(text, start, end, metrics, displayKind);
+      const line = linePx > 0 ? linePx : 1;
+      const lines = Math.ceil(measure(text.slice(start, end)) / line);
       return lines + (start > 0 ? 1 : 0);
     };
     const groups = spotlightNear(
       sceneBreaths(item.sceneId),
       { index: breathIndex, cursor, window: spot },
-      display.measure,
-      display.limit,
-      display.linePx,
+      measure,
+      limit,
+      linePx,
       displayKind,
       mergeStops,
       mergeCuts,

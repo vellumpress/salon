@@ -159,7 +159,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: ["0", "1", "2", "3"]
+        shard: ["0", "1", "2", "3", "4", "5", "6", "7"]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -194,4 +194,4 @@ jobs:
         run: node --experimental-strip-types --test --test-name-pattern "no lit window paints more than four rows" src/lib/catalog/spotlight-rows.test.ts
         env:
           SPOTLIGHT_ROWS_SHARD: ${{ matrix.shard }}
-          SPOTLIGHT_ROWS_SHARDS: "4"
+          SPOTLIGHT_ROWS_SHARDS: "8"

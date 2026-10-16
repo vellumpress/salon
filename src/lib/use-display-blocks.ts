@@ -21,6 +21,21 @@ function viewportHeight() {
   return Math.round(window.innerHeight);
 }
 
+/**
+ * The window can already be the new height before the resize event commits.
+ * A step taken in that gap has to use the column on screen, not the previous one.
+ */
+export function columnMetricsNow(node: HTMLElement | null, base: DisplayMetrics | null): DisplayMetrics | null {
+  if (!base) return null;
+  const viewport = viewportHeight();
+  if (!(viewport > 32) || Math.abs(viewport - base.viewport) < 40) return base;
+  return {
+    ...base,
+    viewport,
+    limit: Math.max(48, Math.floor(viewport * VIEWPORT_BLOCK_FRACTION)),
+  };
+}
+
 function faceSettled(style: CSSStyleDeclaration): boolean {
   const fonts = document.fonts;
   if (!fonts) return true;
