@@ -1028,6 +1028,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "northanger-abbey": [
     95
   ],
+  "nostalgia": [
+    34
+  ],
   "numa-roumestan": [
     24
   ],

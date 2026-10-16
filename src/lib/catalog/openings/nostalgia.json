@@ -1,0 +1,196 @@
+{
+  "id": "nostalgia",
+  "title": "Nostalgia",
+  "author": "Grazia Deledda (tr. Helen Hester Colvill)",
+  "year": "1905",
+  "note": "Opening sit: Part I, Chapter I from the top to \"…a deputation sent to welcome her—not over-kindly—by the great city to which she was giving herself.\"",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Part I · Chapter I",
+      "place": "Part I · Chapter I",
+      "reentry": "Rome was near.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Rome was near."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The November moon illuminated the Campagna—an immense mother-o'-pearl moon, clear and sad. The violence of the express train was met by the violence of a raging wind."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Regina dozed and was dreaming herself still at home; the rumble of the train seemed the clatter of the mill upon the Po. Suddenly Antonio's hand pressed hers and she awoke with a start."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "\"We are near arriving,\" said the young husband."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Regina sat up, leaned towards the closed window and looked out. The glass reflected the interior of the compartment—the lamp, her own figure wrapped in a long, light-coloured cloak, her face wan with weariness. She half-closed her large, short-sighted eyes, and in the misty moonlight, against the grey background caused by the reflection of her cloak, she made out the landscape—bluish undulations fleeting by, a mysterious pathway, a tree with silver leaves lashed by the wind, and in the distance a long line of aqueducts, the arches of which disappeared into the moonlight and seemed like a row of immense inhospitable doors. This of the aqueducts was no doubt optical illusion; but Regina, who had little confidence in her eyes yet was obstinate in refusing spectacles, felt none the less excited by the sublime visions she believed herself seeing in the dimness of the wind-swept window-pane. Rome! she was filled with childish joy at the mere thought that Rome was near. Rome! the long-dreamed-of wonder city, the world's metropolis, the home of all splendours, all delight—Rome, which was now to become her own! She forgot everything else; fatigue, mourning for the dear things lost, trepidation as to her future, fear of the strangers awaiting her, the embarrassments of the first days of marriage, all sadness, disappointment, delusion—all disappeared in the realisation of her long dream so ardently indulged."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Antonio got up and joined her at the window, which reflected his fine person—tall, fair, easy in attitude, dominant in manner. Regina saw—still in the glass—his long grey eyes looking at her caressingly, his well-shaped mouth smiling and suggesting a kiss, and she felt happy, happy, happy!"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"Think!\" said Antonio, bending over her as if to confide a secret; \"think, my queen! We are at Rome!\""
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "She did not reply. \"Are you thinking of it?\" he insisted."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"Of course I am!\""
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Does your heart beat?\""
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Regina smiled, a trifle contemptuously, not choosing to let him see all her excitement and delight."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Antonio looked at his watch."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"A quarter of an hour more. If there wasn't such a wind, I'd make you look out.\""
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"I will. Put down the glass.\""
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"I tell you there's too much wind.\""
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "\"I'll look out all the same,\" she said, with the obstinacy of a spoilt child."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Antonio tried to open the window, but the wind was really too strong, and Regina changed her mind."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "\"Shut it up! Shut it up!\" she cried."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "He obeyed."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"But think! think!\" he repeated, \"you are at Rome! *They* will be just starting for the station,\" he observed gravely, and advised her to put on her hat and get herself ready. \"Settle your hair,\" he said; \"and where have you put the powder?\""
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"Am I very hideous?\" asked Regina, passing her hand over her face."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "She sat down, opened her dressing-bag, smoothed her hair, powdered her face; then again put on the grey cloak which Antonio held for her, and buttoned it up. Her little face emerged from its sable collar as from a cup. It was pale and tired, all lips and eyes, reminding one of the pretty little face of a kitten."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "\"That's all right!\" said Antonio, surveying her adoringly."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Again she rose and leaned against the door. A long wall was fleeting past the train; then came houses, hedges, gardens, canes bending under the wind, now and then lamps flaring yellow in the great whiteness of the autumn moon."
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "\"San Paolo! The Tiber!\" said Antonio, still at Regina's side."
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "San Paolo! The Tiber! Regina just perceived the sheen of the river and her heart beat strongly. Yet, as often happened to her, after the first moment's wild delight, a shadow of melancholy diffidence stole over her soul."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "\"Yes!\" she thought, \"Rome! the capital, the wonder city; where there is no fog, which is full of sunshine and flowers! But what is there in store for me there? Young, happy, loved, I have come to throw myself into the arms of Rome as I have thrown myself into the arms of Antonio. What will Rome be able to give me? We are not rich, and the great city is like—like *people*, who give little to and care little for those who are not rich. But we aren't poor either!\" she concluded, comforting herself."
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "The engine whistled, and Regina started involuntarily. Behind a wind-blown hedge, straight before her in the moonlight and the glare of the lamps which now had multiplied in number, a small house started into sight for a moment, and vanished as if by magic."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"It might be my home!\" she told herself sadly, remembering the dear maternal nest, planted pleasantly on the high bank of the Po."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "The train shrieked again, beginning to slacken speed."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"Here we are!\" said Antonio; and Regina's recollections dissolved as the apparition of the house had dissolved a moment before."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "After this, notwithstanding her resolution not to be upset, not to be surprised, but to make calm study of her own impressions, she became hopelessly bewildered and saw everything as through a veil."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "Antonio was pulling the light luggage down from the rack; he overturned the bonnet-box containing the bride's beautiful white hat; she stooped to pick it up, flushed with dismay, then returned to the window and rearranged her cloak and fur collar. Lines of monstrous houses, orange against the velvety blue of the sky, fleeted by rapidly; the wind abated, the lamps became innumerable, golden, white, violet—their crude rays vanquishing the melancholy moonlight. The glare grew and grew, became magnificent, pervaded an enclosure into which the train rushed with deafening roar."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Rome!"
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "Hundreds of intent egotistic faces, illuminated by the violet brilliance of the electric light, passed before Regina's agitated gaze. Here and there she distinguished a few figures, a lady with red hair, a man in a check suit, a pale girl with a picture hat, a bald gentleman, a raised stick, a fluttering handkerchief—but she saw nothing distinctly; she had a strange fancy that this unnamed alien crowd was a deputation sent to welcome her—not over-kindly—by the great city to which she was giving herself."
+    }
+  ]
+}

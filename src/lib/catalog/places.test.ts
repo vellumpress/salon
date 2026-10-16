@@ -144,6 +144,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "one-of-life-s-slaves": { label: "Christiania", region: "no" },
     fantasy: { label: "Naples", region: "it" },
     "the-confession": { label: "Russia", region: "ru" },
+    nostalgia: { label: "Rome", region: "it" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
     "the-golden-age": { label: "England", region: "gb" },
     "the-mist": { label: "the glade", region: "dk" },
@@ -692,4 +693,11 @@ test("Thu 15 Oct EVE GORKY-CONFESSION place: Russia, chipped as In the World is 
   assert.deepEqual(placeFor(shelfWork("the-confession")!), { label: "Russia", region: "ru" });
   assert.deepEqual(placeFor(shelfWork("the-confession")!), placeFor(shelfWork("in-the-world")!));
   assert.equal(CHIP_ONLY_PLACE["the-confession"], undefined);
+});
+
+test("Fri 16 Oct MID DELEDDA-NOSTALGIA place: the novel is set in Rome, chipped Rome like Saracinesca and Cosmopolis; no new region key", () => {
+  assert.ok(REGION_SHAPES.it?.d, "it shape");
+  assert.deepEqual(placeFor(shelfWork("nostalgia")!), { label: "Rome", region: "it" });
+  assert.deepEqual(placeFor(shelfWork("nostalgia")!), placeFor(shelfWork("saracinesca")!));
+  assert.equal(CHIP_ONLY_PLACE["nostalgia"], undefined);
 });
