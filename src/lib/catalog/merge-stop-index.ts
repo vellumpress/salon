@@ -1954,6 +1954,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "the-shadow-line": [
     95
   ],
+  "the-shooting-party": [
+    40
+  ],
   "the-sketch-book-of-geoffrey-crayon": [
     95
   ],

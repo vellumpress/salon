@@ -1238,6 +1238,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Thu 15 Oct 2026 EVE GORKY-CONFESSION — The Confession (Gorky, tr. Strunsky, 1909) follows Fantasy, Next carefully only (the heads-up is on the card). Never Featured.
   // Off every Ritual lane; the opening sit (Chapter I, whole) is never unwind or before-sleep.
   "the-confession",
+  // Mira Fri 16 Oct 2026 PM CHEKHOV-SHOOTING-PARTY — The Shooting Party (Chekhov, tr. Chamot, 1926) follows The Confession, Next carefully only (the heads-up is on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (the Prelude to the table drawer) is never unwind or before-sleep.
+  "the-shooting-party",
 ] as const;
 
 /**

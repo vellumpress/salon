@@ -431,6 +431,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: the story turns on an affair between two married people, and near the end the wife who has been betrayed takes her own life.",
   "the-confession":
     "A heads-up before you start: the narrator turns to theft for a time, his wife and their child die, and two suicides are told secondhand.",
+  "the-shooting-party":
+    "A heads-up before you start: a young woman is murdered, the estate runs on heavy drinking and debauchery, and a jealous man turns violent.",
   nostalgia:
     "A young bride from the green banks of the Po comes to Rome full of dreams, and finds a cramped family flat, a tight budget and a dazzling city that will not quite let her in.",
   "the-adventures-of-huckleberry-finn":

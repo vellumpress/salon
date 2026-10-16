@@ -144,6 +144,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "one-of-life-s-slaves": { label: "Christiania", region: "no" },
     fantasy: { label: "Naples", region: "it" },
     "the-confession": { label: "Russia", region: "ru" },
+    "the-shooting-party": { label: "Russia", region: "ru" },
     nostalgia: { label: "Rome", region: "it" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
     "the-golden-age": { label: "England", region: "gb" },
@@ -700,4 +701,11 @@ test("Fri 16 Oct MID DELEDDA-NOSTALGIA place: the novel is set in Rome, chipped 
   assert.deepEqual(placeFor(shelfWork("nostalgia")!), { label: "Rome", region: "it" });
   assert.deepEqual(placeFor(shelfWork("nostalgia")!), placeFor(shelfWork("saracinesca")!));
   assert.equal(CHIP_ONLY_PLACE["nostalgia"], undefined);
+});
+
+test("Fri 16 Oct PM CHEKHOV-SHOOTING-PARTY place: a count's estate in provincial Russia, chipped Russia like The Confession; no new region key", () => {
+  assert.ok(REGION_SHAPES.ru?.d, "ru shape");
+  assert.deepEqual(placeFor(shelfWork("the-shooting-party")!), { label: "Russia", region: "ru" });
+  assert.deepEqual(placeFor(shelfWork("the-shooting-party")!), placeFor(shelfWork("the-confession")!));
+  assert.equal(CHIP_ONLY_PLACE["the-shooting-party"], undefined);
 });
