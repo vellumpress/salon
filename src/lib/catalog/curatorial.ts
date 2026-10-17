@@ -1241,6 +1241,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Fri 16 Oct 2026 PM CHEKHOV-SHOOTING-PARTY — The Shooting Party (Chekhov, tr. Chamot, 1926) follows The Confession, Next carefully only (the heads-up is on the card). Never Featured.
   // Off every Ritual lane; the opening sit (the Prelude to the table drawer) is never unwind or before-sleep.
   "the-shooting-party",
+  // Mira Sat 17 Oct 2026 PM SCHREINER-DREAMS — Dreams (Olive Schreiner, 1890) follows The Shooting Party at the end of Next, plain Next, no heads-up. Never Featured; on Rituals only in Unwind (The Lost Joy whole), never before-sleep.
+  "dreams-schreiner",
 ] as const;
 
 /**

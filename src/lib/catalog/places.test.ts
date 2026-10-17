@@ -145,6 +145,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     fantasy: { label: "Naples", region: "it" },
     "the-confession": { label: "Russia", region: "ru" },
     "the-shooting-party": { label: "Russia", region: "ru" },
+    "dreams-schreiner": { label: "South Africa", region: "za" },
     nostalgia: { label: "Rome", region: "it" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
     "the-golden-age": { label: "England", region: "gb" },
@@ -708,4 +709,10 @@ test("Fri 16 Oct PM CHEKHOV-SHOOTING-PARTY place: a count's estate in provincial
   assert.deepEqual(placeFor(shelfWork("the-shooting-party")!), { label: "Russia", region: "ru" });
   assert.deepEqual(placeFor(shelfWork("the-shooting-party")!), placeFor(shelfWork("the-confession")!));
   assert.equal(CHIP_ONLY_PLACE["the-shooting-party"], undefined);
+});
+
+test("Sat 17 Oct PM SCHREINER-DREAMS place: Dreams opens on an unnamed sea-shore and its desert dreams are African, dated South Africa, so the chip is South Africa like Schreiner's other books; no new region key", () => {
+  assert.ok(REGION_SHAPES.za?.d, "za shape");
+  assert.deepEqual(placeFor(shelfWork("dreams-schreiner")!), { label: "South Africa", region: "za" });
+  assert.equal(CHIP_ONLY_PLACE["dreams-schreiner"], undefined);
 });

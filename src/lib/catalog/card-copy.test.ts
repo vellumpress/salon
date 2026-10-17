@@ -192,6 +192,7 @@ test("known origin overrides", () => {
     "picture-of-dorian-gray": "Ireland",
     dubliners: "Ireland",
     "the-story-of-an-african-farm": "South Africa",
+    "dreams-schreiner": "South Africa",
     botchan: "Japan",
     "bel-ami": "France",
     liliom: "Hungary",

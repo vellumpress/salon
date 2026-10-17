@@ -624,6 +624,7 @@ const WORK_COUNTRY: Record<string, string> = {
   kim: "India",
   "the-hill-of-dreams": "Wales",
   "the-story-of-an-african-farm": "South Africa",
+  "dreams-schreiner": "South Africa",
   "the-imperialist": "Canada",
   "stories-and-pictures": "Poland",
   "plain-tales-from-the-hills": "India",
