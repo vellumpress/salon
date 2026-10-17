@@ -608,6 +608,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Once on a time there was a sheep who stood in the pen to be fattened; so he lived well, and was stuffed and crammed with everything that was good. This reading is just The Sheep and the Pig who Set up House — a well-fed sheep, his old friend the pig, and a house of their own in the wood. G. W. Dasent’s 1874 book. The other tales follow in the book.`,
   "tales-by-polish-authors":
     `Countess Anna Krzywosad--Naslawska's youngest son had decided to take Holy Orders. This reading is just Temptation — home from Rome before his ordination, a young man walks out each morning through the rye to pray in a little chapel by the pine wood. Else C. M. Benecke’s 1915 book. The other tales follow in the book.`,
+  "dreams-schreiner":
+    `All day, where the sunlight played on the sea-shore, Life sat. The Lost Joy — Life waiting on a sea-shore, Love coming to her over the sand, and the small, laughing joy that is born to them. The first reading is The Lost Joy whole. Eleven short dreams, each a few pages, of love, truth, freedom and work, ending with a dream of hell and heaven seen from a London bed. Olive Schreiner’s 1890 book. Easy to read, grave and quiet.`,
   "the-dancing-master":
     `“The Dancing-Master” is one complete story from Parisian Points of View — asked by a hostess to engage old Morin, a dancing-master, for her little girls, a guest goes behind the scenes at the opera one February night in 1881, finds him on stage as a bishop in “The Prophet,” and in the wings gets an earnest lecture on why France needs more dancing. It ends “…withstood the shock of this avalanche of dancers.” A heads-up before you start: the old teacher talks frankly, in the manner of his day, about sizing up a partner's figure while waltzing. Amused and brisk, for a walk. Paris.`,
   "winnie-the-pooh":
@@ -2198,6 +2200,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "tales-from-the-fjeld",
       // Mira Fri 9 Oct 2026 PM AKSAKOV-ZEROMSKI — Tales by Polish Authors: Zeromski's Temptation is the reading (whole tale, RITUAL_START_AT). Unwind and before-sleep; Later, never Next or Featured.
       "tales-by-polish-authors",
+      // Mira Sat 17 Oct 2026 PM SCHREINER-DREAMS — Dreams: The Lost Joy whole is the reading (opening sit). Unwind only; never before-sleep. Plain Next, never Featured.
+      "dreams-schreiner",
     ],
   },
   {
@@ -2720,6 +2724,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "zanzibar-tales": 7,
   "tales-from-the-fjeld": 8,
   "tales-by-polish-authors": 6,
+  "dreams-schreiner": 6,
   "the-dancing-master": 10,
   "growth-of-the-soil": 15,
   "nada-the-lily": 17,

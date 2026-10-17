@@ -79,6 +79,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "a-set-of-six": { label: "Chile", region: "cl" },
   "the-hill-of-dreams": { label: "Wales — Gwent", region: "gb" },
   "the-story-of-an-african-farm": { label: "Karoo", region: "za" },
+  "dreams-schreiner": { label: "South Africa", region: "za" },
   "the-imperialist": { label: "Elgin, Ontario", region: "ca" },
   "mogens": { label: "Denmark", region: "dk" },
   "the-road-to-the-open": { label: "Vienna", region: "at" },

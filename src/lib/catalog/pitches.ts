@@ -390,6 +390,8 @@ export const PITCHES: Record<string, string> = {
     "We were up on the Fjeld, Edward and I and Anders our guide, in quest of reindeer. A storm shuts them into a mountain shieling, and by the fire Anders and the girls take turns telling the old tales, from Osborn’s Pipe to the Pancake. More tales of beasts, Boots and trolls follow on their own.",
   "tales-by-polish-authors":
     "My hero's name was Bartek Slowik; but owing to his habit of staring when spoken to, the neighbours called him 'Bartek Goggle-Eyes.' Called up when war with the French comes, Bartek leaves Magda, the cottage and the piebald horse behind. Tales by Zeromski, Szymanski and Sieroszewski follow, from a Polish country estate to the exiles of Yakutsk.",
+  "dreams-schreiner":
+    "All day, where the sunlight played on the sea-shore, Life sat. The Lost Joy — Life waiting on a sea-shore, Love coming to her over the sand, and the small, laughing joy that is born to them. The first reading is The Lost Joy whole. Eleven short dreams, each a few pages, of love, truth, freedom and work, ending with a dream of hell and heaven seen from a London bed. Olive Schreiner’s 1890 book. Easy to read, grave and quiet.",
   "walter-pieterse":
     "I don't know the year; but, since the reader will be interested to know the time when this story begins, I will give him a few facts to serve as landmarks. In the Hartenstraat of old Amsterdam, small Walter Pieterse falls in love with a sawmill, a book of knights and a dream he calls Fancy, while the grown-ups around him call it all nonsense.",
   "the-dancing-master":
