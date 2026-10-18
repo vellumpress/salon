@@ -1,4 +1,6 @@
+import { isEnReadableOff } from "./catalog/en-rights.ts";
 import { shelfWork } from "./catalog/shelf.ts";
+import { canonicalWorkId } from "./work-id-alias.ts";
 import { isDeviceImport } from "./import/private.ts";
 import { asKeptRecord, keptBreathId } from "./kept-lines.ts";
 import { lastReadCue, lastReadProgress } from "./continuity.ts";
@@ -342,6 +344,7 @@ export function openReadingFromActivity(events: FriendActivity[]): FriendReading
   }
   const open = events
     .filter((event) => event.workId && event.workTitle && event.kind !== "finished")
+    .filter((event) => !isEnReadableOff(canonicalWorkId(event.workId!)))
     .filter((event) => {
       const closed = finished.get(event.workId!);
       return closed === undefined || event.at > closed;
@@ -376,7 +379,13 @@ function readingNow(
     const item = graph.progress[last.id];
     if (item?.completedAt) {
       const open = Object.entries(graph.progress)
-        .filter(([id, row]) => !isDeviceImport(id) && row.entered && !row.completedAt)
+        .filter(
+          ([id, row]) =>
+            !isDeviceImport(id) &&
+            !isEnReadableOff(canonicalWorkId(id)) &&
+            row.entered &&
+            !row.completedAt,
+        )
         .sort((a, b) => (b[1].lastOpenedAt ?? 0) - (a[1].lastOpenedAt ?? 0))[0];
       if (!open) return undefined;
       return readingFromProgress(open[0], open[1]);
@@ -384,7 +393,7 @@ function readingNow(
     return readingFromProgress(last.id, item);
   }
   const workId = contact?.reading?.trim() ?? "";
-  if (!workId) return undefined;
+  if (!workId || isEnReadableOff(canonicalWorkId(workId))) return undefined;
   const meta = workMeta(workId, contact?.workTitle ?? "");
   if (!meta.workTitle) return undefined;
   return {

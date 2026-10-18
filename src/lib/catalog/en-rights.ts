@@ -74,6 +74,16 @@ export const EN_OFF_READABLE_IDS = new Set<string>([
   "misericordia",
   "martin-fierro",
   // dona-perfecta left this set in DONA-PERFECTA: PG 2462 is Mary J. Serrano's English.
+  // STANDING-RULE pull (Oct 2026). Shelf rows, texts, and blurbs stay.
+  // Delete these six ids to put them back on the live shelf.
+  // Father of Yoto and Limehouse Nights are separate rows that share PG 63073.
+  // Twice-Told Tales has no Gutenberg id on the shelf row.
+  "cousin-betty",
+  "the-wisdom-of-father-brown",
+  "limehouse-nights",
+  "father-of-yoto",
+  "the-story-of-an-african-farm",
+  "twice-told-tales",
 ]);
 
 export function isEnReadableOff(id: string) {

@@ -3,6 +3,7 @@ import { createFileRoute, Link, redirect } from "@tanstack/react-router";
 import { PagesShell } from "@/components/pages-shell";
 import { TbrReader } from "@/components/chamber-reader";
 import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
+import { isEnReadableOff } from "@/lib/catalog/en-rights";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { placeAliasAt } from "@/lib/colonel-place";
 import { canonicalWorkId } from "@/lib/work-id-alias";
@@ -134,14 +135,23 @@ function ReadBody() {
       : undefined);
   const pageWork = useTbr((s) => s.pageWork);
   const device = isDeviceImport(workId);
+  const held = !device && workId !== "page" && isEnReadableOff(canonicalWorkId(workId));
   const meta = workId === "page" ? pageWork : shelfWork(workId);
-  const [work, setWork] = useState<Work | null | undefined>(() =>
-    workId === "page" ? pageWork : device ? undefined : workReadyForAt(peekWork(workId), at),
-  );
+  const [work, setWork] = useState<Work | null | undefined>(() => {
+    if (workId === "page") return pageWork;
+    if (device) return undefined;
+    // A held bind stays off the reader. The door's shelf intro is still a line of the book.
+    if (isEnReadableOff(canonicalWorkId(workId))) return null;
+    return workReadyForAt(peekWork(workId), at);
+  });
 
   useEffect(() => {
     if (workId === "page") {
       setWork(pageWork);
+      return;
+    }
+    if (held) {
+      setWork(null);
       return;
     }
     if (device) {
@@ -193,7 +203,7 @@ function ReadBody() {
     return () => {
       live = false;
     };
-  }, [workId, pageWork, device, at]);
+  }, [workId, pageWork, device, held, at]);
 
   if (work === undefined) {
     return (

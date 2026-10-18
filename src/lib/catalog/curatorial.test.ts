@@ -6031,7 +6031,7 @@ test("Mira Sat AFTERNOON CLEAR is Next lead Hill of Dreams, then African Farm, T
   assert.equal(waking?.workIds.includes("mogens-and-other-stories"), false);
   assert.equal(waking?.workIds.at(-26), "a-set-of-six");
   assert.equal(curatorialTrack("the-hill-of-dreams"), "next");
-  assert.equal(curatorialTrack("the-story-of-an-african-farm"), "next");
+  assert.equal(curatorialTrack("the-story-of-an-african-farm"), "later");
   assert.equal(curatorialTrack("the-imperialist"), "next");
   assert.equal(curatorialTrack("kim"), "next");
   assert.equal(curatorialTrack("mogens-and-other-stories"), "later");
@@ -6043,7 +6043,7 @@ test("Mira Sat AFTERNOON CLEAR is Next lead Hill of Dreams, then African Farm, T
 
   const lanes = {
     "the-hill-of-dreams": "next",
-    "the-story-of-an-african-farm": "next",
+    "the-story-of-an-african-farm": "later",
     "the-imperialist": "next",
     kim: "next",
   } as const;
@@ -8400,14 +8400,14 @@ test("Mira POST-#176 CLEAR is Next lead Cousin Betty, then Sorrows of Satan, Kin
   assert.equal(walk?.workIds.indexOf("the-king-of-schnorrers"), walk?.workIds.lastIndexOf("the-king-of-schnorrers"));
   assert.equal(waking?.workIds.at(-15), "the-toys-of-peace");
   assert.equal(waking?.workIds.at(-16), "malay-sketches");
-  assert.equal(curatorialTrack("cousin-betty"), "next");
+  assert.equal(curatorialTrack("cousin-betty"), "later");
   assert.equal(curatorialTrack("the-sorrows-of-satan"), "next");
   assert.equal(curatorialTrack("the-king-of-schnorrers"), "next");
   assert.equal(curatorialTrack("hania"), "next");
   assert.equal(curatorialTrack("the-toys-of-peace"), "next");
 
   const lanes = {
-    "cousin-betty": "next",
+    "cousin-betty": "later",
     "the-sorrows-of-satan": "next",
     "the-king-of-schnorrers": "next",
     hania: "next",
