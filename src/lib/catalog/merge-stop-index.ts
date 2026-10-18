@@ -137,6 +137,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "anandamath": [
     95
   ],
+  "ancient-ballads-and-legends-of-hindustan": [
+    22
+  ],
   "ann-veronica": [
     17
   ],
