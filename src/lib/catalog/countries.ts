@@ -745,6 +745,7 @@ const WORK_COUNTRY: Record<string, string> = {
   fantasy: "Italy",
   "the-confession": "Russia",
   "the-shooting-party": "Russia",
+  "life-and-death-sienkiewicz": "Poland",
   nostalgia: "Italy",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",

@@ -797,6 +797,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "life-and-death-of-harriett-frean": [
     56
   ],
+  "life-and-death-sienkiewicz": [
+    58
+  ],
   "liliecronas-home": [
     35
   ],

@@ -145,6 +145,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     fantasy: { label: "Naples", region: "it" },
     "the-confession": { label: "Russia", region: "ru" },
     "the-shooting-party": { label: "Russia", region: "ru" },
+    "life-and-death-sienkiewicz": { label: "Poland", region: "pl" },
     "dreams-schreiner": { label: "South Africa", region: "za" },
     nostalgia: { label: "Rome", region: "it" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
@@ -715,4 +716,11 @@ test("Sat 17 Oct PM SCHREINER-DREAMS place: Dreams opens on an unnamed sea-shore
   assert.ok(REGION_SHAPES.za?.d, "za shape");
   assert.deepEqual(placeFor(shelfWork("dreams-schreiner")!), { label: "South Africa", region: "za" });
   assert.equal(CHIP_ONLY_PLACE["dreams-schreiner"], undefined);
+});
+
+test("Sat 17 Oct PM SIENKIEWICZ-LIFE-AND-DEATH place: the opening legend has no earthly place and the book's home ground is Poland (the cottage of Is He the Dearest One?, the homesickness of The Cranes), so the chip is Poland like Hania; no new region key", () => {
+  assert.ok(REGION_SHAPES.pl?.d, "pl shape");
+  assert.deepEqual(placeFor(shelfWork("life-and-death-sienkiewicz")!), { label: "Poland", region: "pl" });
+  assert.deepEqual(placeFor(shelfWork("life-and-death-sienkiewicz")!), placeFor(shelfWork("hania")!));
+  assert.equal(CHIP_ONLY_PLACE["life-and-death-sienkiewicz"], undefined);
 });

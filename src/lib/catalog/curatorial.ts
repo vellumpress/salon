@@ -1243,6 +1243,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-shooting-party",
   // Mira Sat 17 Oct 2026 PM SCHREINER-DREAMS — Dreams (Olive Schreiner, 1890) follows The Shooting Party at the end of Next, plain Next, no heads-up. Never Featured; on Rituals only in Unwind (The Lost Joy whole), never before-sleep.
   "dreams-schreiner",
+  // Mira Sat 17 Oct 2026 PM SIENKIEWICZ-LIFE-AND-DEATH — Life and Death, and Other Legends and Stories (Sienkiewicz, tr. Curtin, 1904) follows Dreams at the end of Next, plain Next, no heads-up. Never Featured, off every Ritual lane (the death-as-bliss legend is not for Unwind or Before sleep).
+  "life-and-death-sienkiewicz",
 ] as const;
 
 /**
