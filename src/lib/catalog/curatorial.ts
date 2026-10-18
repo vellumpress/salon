@@ -1245,6 +1245,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "dreams-schreiner",
   // Mira Sat 17 Oct 2026 PM SIENKIEWICZ-LIFE-AND-DEATH — Life and Death, and Other Legends and Stories (Sienkiewicz, tr. Curtin, 1904) follows Dreams at the end of Next, plain Next, no heads-up. Never Featured, off every Ritual lane (the death-as-bliss legend is not for Unwind or Before sleep).
   "life-and-death-sienkiewicz",
+  // Mira Sun 18 Oct 2026 AM DUTT-BALLADS — Ancient Ballads and Legends of Hindustan (Toru Dutt, 1882) follows Life and Death at the end of Next, plain Next, no heads-up. Never Featured, off every Ritual lane (Sindhu and Prehlad are dark legends, not wind-down).
+  "ancient-ballads-and-legends-of-hindustan",
 ] as const;
 
 /**

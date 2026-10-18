@@ -437,6 +437,8 @@ const BLURBS: Record<string, string> = {
     "Eleven short allegories of love, truth and freedom, from Life waiting on a sea-shore to a dream of hell and heaven seen from a London bed.",
   "life-and-death-sienkiewicz":
     "A Hindu legend of why people dread death, two parables of Poland, a memoir of homesickness on the California coast, and Peter and Paul judging the old gods on Olympus.",
+  "ancient-ballads-and-legends-of-hindustan":
+    "Nine legends of India retold in English ballad verse, from Savitri following Death into the forest to the archer Buttoo and the boy Prehlad, then seven shorter poems ending under the casuarina tree of a Bengal garden.",
   nostalgia:
     "A young bride from the green banks of the Po comes to Rome full of dreams, and finds a cramped family flat, a tight budget and a dazzling city that will not quite let her in.",
   "the-adventures-of-huckleberry-finn":

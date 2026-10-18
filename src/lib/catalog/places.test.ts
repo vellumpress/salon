@@ -146,6 +146,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "the-confession": { label: "Russia", region: "ru" },
     "the-shooting-party": { label: "Russia", region: "ru" },
     "life-and-death-sienkiewicz": { label: "Poland", region: "pl" },
+    "ancient-ballads-and-legends-of-hindustan": { label: "India", region: "in" },
     "dreams-schreiner": { label: "South Africa", region: "za" },
     nostalgia: { label: "Rome", region: "it" },
     "tales-by-polish-authors": { label: "Poland", region: "pl" },
@@ -723,4 +724,11 @@ test("Sat 17 Oct PM SIENKIEWICZ-LIFE-AND-DEATH place: the opening legend has no 
   assert.deepEqual(placeFor(shelfWork("life-and-death-sienkiewicz")!), { label: "Poland", region: "pl" });
   assert.deepEqual(placeFor(shelfWork("life-and-death-sienkiewicz")!), placeFor(shelfWork("hania")!));
   assert.equal(CHIP_ONLY_PLACE["life-and-death-sienkiewicz"], undefined);
+});
+
+test("Sun 18 Oct AM DUTT-BALLADS place: the ballads are legends of India and the shorter poems end in the poet's Bengal garden, so the chip is India like Songs of Kabir and A Passage to India; no new region key", () => {
+  assert.ok(REGION_SHAPES.in?.d, "in shape");
+  assert.deepEqual(placeFor(shelfWork("ancient-ballads-and-legends-of-hindustan")!), { label: "India", region: "in" });
+  assert.deepEqual(placeFor(shelfWork("ancient-ballads-and-legends-of-hindustan")!), placeFor(shelfWork("a-passage-to-india")!));
+  assert.equal(CHIP_ONLY_PLACE["ancient-ballads-and-legends-of-hindustan"], undefined);
 });
