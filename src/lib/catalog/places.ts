@@ -218,6 +218,7 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   fantasy: { label: "Naples", region: "it" },
   "the-confession": { label: "Russia", region: "ru" },
   "the-shooting-party": { label: "Russia", region: "ru" },
+  "life-and-death-sienkiewicz": { label: "Poland", region: "pl" },
   nostalgia: { label: "Rome", region: "it" },
   "tales-by-polish-authors": { label: "Poland", region: "pl" },
   "the-dancing-master": { label: "Paris", region: "fr" },

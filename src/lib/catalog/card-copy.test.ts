@@ -332,6 +332,7 @@ test("known origin overrides", () => {
     fantasy: "Italy",
     "the-confession": "Russia",
     "the-shooting-party": "Russia",
+    "life-and-death-sienkiewicz": "Poland",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
