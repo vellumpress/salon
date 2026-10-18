@@ -1241,6 +1241,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "second-april": [
     92
   ],
+  "serbian-lyrics": [
+    20
+  ],
   "seven-brothers": [
     5
   ],
