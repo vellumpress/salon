@@ -158,11 +158,19 @@ async function pointerDown(page: Page, x: number, y: number) {
   );
 }
 
+/**
+ * The place the instant the finger lifts, and the place once that lift's
+ * pointerup and click have run. Sampled in one turn: a hold is still
+ * repeating, and a Playwright round trip is longer than one fast step.
+ */
 async function pointerUp(page: Page, x: number, y: number) {
-  await page.evaluate(
+  return page.evaluate(
     ({ x, y }) => {
+      const frame = document.querySelector(".reader-frame");
       const host = document.querySelector("[data-reader-text]");
-      if (!host) throw new Error("missing reading column");
+      if (!frame || !host) throw new Error("missing reading column");
+      const beforeKey = frame.getAttribute("data-spotlight-key");
+      const beforeIndex = frame.getAttribute("data-breath-index");
       const base = {
         bubbles: true,
         cancelable: true,
@@ -175,6 +183,12 @@ async function pointerUp(page: Page, x: number, y: number) {
       };
       host.dispatchEvent(new PointerEvent("pointerup", { ...base, buttons: 0 }));
       host.dispatchEvent(new MouseEvent("click", base));
+      return {
+        beforeKey,
+        afterKey: frame.getAttribute("data-spotlight-key"),
+        beforeIndex,
+        afterIndex: frame.getAttribute("data-breath-index"),
+      };
     },
     { x, y },
   );
@@ -242,16 +256,18 @@ test(
       const beforeKey = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await pointerDown(page, forward.x, forward.y);
       await page.waitForTimeout(1800);
-      const heldKey = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
+      const lift = await pointerUp(page, forward.x, forward.y);
       const marks = await holdMarks(page);
-      await pointerUp(page, forward.x, forward.y);
-      const atLift = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await page.waitForTimeout(450);
       const released = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
-      assert.notEqual(heldKey, beforeKey, "hold stayed on the first group");
+      assert.notEqual(lift.beforeKey, beforeKey, "hold stayed on the first group");
       assert.ok(marks.length >= 4, `hold recorded ${marks.length} steps`);
-      assert.equal(atLift, heldKey, `the hold moved on the way up (${atLift} from ${heldKey})`);
-      assert.equal(released, atLift, "release added a group after the hold");
+      assert.equal(
+        lift.afterKey,
+        lift.beforeKey,
+        `the hold moved on the way up (${lift.afterKey} from ${lift.beforeKey})`,
+      );
+      assert.equal(released, lift.afterKey, "release added a group after the hold");
       assert.ok(marks[0]!.t >= 250, `first repeat landed at ${marks[0]!.t}ms`);
       const firstGap = marks[1]!.t - marks[0]!.t;
       const lastGap = marks[marks.length - 1]!.t - marks[marks.length - 2]!.t;
@@ -269,13 +285,17 @@ test(
       const backFrom = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await pointerDown(page, again.x, again.y);
       await page.waitForTimeout(900);
-      const backed = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
-      await pointerUp(page, again.x, again.y);
+      const backLift = await pointerUp(page, again.x, again.y);
       await page.waitForTimeout(450);
-      assert.notEqual(backed, backFrom, "left hold stayed on one group");
+      assert.notEqual(backLift.beforeKey, backFrom, "left hold stayed on one group");
+      assert.equal(
+        backLift.afterKey,
+        backLift.beforeKey,
+        `lifting a back hold stepped again (${backLift.afterKey} from ${backLift.beforeKey})`,
+      );
       assert.equal(
         await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
-        backed,
+        backLift.afterKey,
         "lifting a back hold stepped again",
       );
     } finally {
@@ -396,12 +416,16 @@ test(
         start,
         { timeout: 4000 },
       );
-      const held = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
-      await pointerUp(page, forward.x, forward.y);
+      const roomLift = await pointerUp(page, forward.x, forward.y);
       await page.waitForTimeout(400);
       assert.equal(
+        roomLift.afterKey,
+        roomLift.beforeKey,
+        `lifting in a live room stepped on the way up (${roomLift.afterKey} from ${roomLift.beforeKey})`,
+      );
+      assert.equal(
         await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
-        held,
+        roomLift.afterKey,
         "lifting in a live room stepped again",
       );
     } finally {
@@ -439,14 +463,21 @@ test(
       const back = await sidePoint(page, "prev");
       await pointerDown(page, back.x, back.y);
       await page.waitForTimeout(1600);
-      const held = await breathIndex(page);
+      const lift = await pointerUp(page, back.x, back.y);
       const marks = await holdMarks(page);
-      await pointerUp(page, back.x, back.y);
-      const atLift = await breathIndex(page);
+      const held = Number(lift.beforeIndex);
       await page.waitForTimeout(450);
       assert.ok(held <= 31 - 3, `hold only reached ${held}`);
-      assert.ok(atLift <= held, `the hold moved forward on the way up (${atLift} from ${held})`);
-      assert.equal(await breathIndex(page), atLift, "release added a sentence after the hold");
+      assert.equal(
+        lift.afterIndex,
+        lift.beforeIndex,
+        `the hold moved on the way up (${lift.afterIndex} from ${lift.beforeIndex})`,
+      );
+      assert.equal(
+        String(await breathIndex(page)),
+        lift.afterIndex,
+        "release added a sentence after the hold",
+      );
       assert.ok(marks.length >= 3, `hold recorded ${marks.length} steps`);
       assert.ok(marks[0]!.t >= 250, `first repeat landed at ${marks[0]!.t}ms`);
       if (marks.length >= 4) {
