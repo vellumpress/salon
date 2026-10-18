@@ -1,6 +1,8 @@
+import { isEnReadableOff } from "./catalog/en-rights.ts";
 import { isDeviceImport } from "./import/private.ts";
 import { keptBreathId } from "./kept-lines.ts";
 import type { WorkProgress } from "./store";
+import { canonicalWorkId } from "./work-id-alias.ts";
 
 export type LastReadProgress = {
   id: string;
@@ -19,7 +21,12 @@ export function lastReadProgress(
   progress: Record<string, WorkProgress>,
 ): LastReadProgress | null {
   const row = Object.entries(progress)
-    .filter(([id, item]) => Boolean(item?.entered) && !isDeviceImport(id))
+    .filter(
+      ([id, item]) =>
+        Boolean(item?.entered) &&
+        !isDeviceImport(id) &&
+        !isEnReadableOff(canonicalWorkId(id)),
+    )
     .sort((a, b) => (b[1].lastOpenedAt ?? 0) - (a[1].lastOpenedAt ?? 0))[0];
   if (!row) return null;
   const [id, item] = row;

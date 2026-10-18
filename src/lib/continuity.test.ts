@@ -27,6 +27,13 @@ test("lastReadProgress picks the newest entered work", () => {
     })?.id,
     "we",
   );
+  assert.equal(
+    lastReadProgress({
+      "cousin-betty": progress({ entered: true, lastOpenedAt: 90, breathIndex: 400 }),
+      passing: progress({ entered: true, lastOpenedAt: 10, breathIndex: 2 }),
+    })?.id,
+    "passing",
+  );
 });
 
 test("keptRefs lists newest works first and skips page", () => {

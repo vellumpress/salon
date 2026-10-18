@@ -1,3 +1,4 @@
+import { isEnReadableOff } from "./en-rights.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 
 /**
@@ -1311,6 +1312,9 @@ export function isAdaptedBySalon(id: string) {
 }
 
 export function curatorialTrack(id: string): CuratorialTrack {
+  // A held English bind is Later, and not readable. The Next and ritual
+  // seat strings stay so deleting the id from EN_OFF_READABLE_IDS restores it.
+  if (isEnReadableOff(id)) return "later";
   if (ADAPTED.has(id)) return "adapted";
   if (FEATURED.has(id)) return "featured";
   if (NEXT.has(id)) return "next";

@@ -1,4 +1,6 @@
+import { isEnReadableOff } from "./catalog/en-rights.ts";
 import { shelfWork } from "./catalog/shelf.ts";
+import { canonicalWorkId } from "./work-id-alias.ts";
 import { lastReadCue } from "./continuity.ts";
 import { isDeviceImport } from "./import/private.ts";
 import { asKeptRecord, keptBreathId } from "./kept-lines.ts";
@@ -327,8 +329,12 @@ export function readingForCard(
   remote: FriendReadingNow | undefined,
   lines: Array<{ workId?: string; workTitle?: string; author?: string; atIndex?: number; at?: number }>,
 ): FriendReadingNow | undefined {
-  if (remote?.workId && remote.workTitle) return remote;
-  const line = lines.find((row) => row.workId && row.workTitle);
+  if (remote?.workId && remote.workTitle && !isEnReadableOff(canonicalWorkId(remote.workId))) {
+    return remote;
+  }
+  const line = lines.find(
+    (row) => row.workId && row.workTitle && !isEnReadableOff(canonicalWorkId(row.workId)),
+  );
   if (!line?.workId || !line.workTitle) return undefined;
   const meta = metaFor(line.workId, line.workTitle, line.author ?? "");
   const atIndex = typeof line.atIndex === "number" ? Math.max(0, Math.floor(line.atIndex)) : 0;

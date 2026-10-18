@@ -8,9 +8,10 @@ import {
 } from "./en-rights.ts";
 import { existsSync } from "node:fs";
 import { SHELF, searchShelf } from "./shelf.ts";
-import { NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
+import { curatorialTrack, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { RITUAL_LANES, RITUAL_SIT_MINUTES, worksForRitualLane } from "./rituals.ts";
-import { FULL_TEXT_WORKS, LOCAL_WORKS, withFullPdf, withLocalBound } from "./full-pdf.ts";
+import { featuredWorks, FULL_TEXT_WORKS, LOCAL_WORKS, withFullPdf, withLocalBound } from "./full-pdf.ts";
+import { homeMixRows } from "./home-mix.ts";
 
 /** OPEN-FIX-2 language sweep: shelf texts that are 98–100% non-English. Doña Perfecta left in DONA-PERFECTA (English re-bind). */
 const LANGUAGE_SWEEP_OFF_IDS = [
@@ -336,4 +337,57 @@ test("DONA-PERFECTA: the English re-bind (PG 2462, Serrano) is readable again, s
   assert.equal(withLocalBound(searchShelf("Doña Perfecta")).some((item) => item.id === "dona-perfecta"), true);
   assert.equal((NEXT_FEATURED_TRACK_IDS as readonly string[]).includes("dona-perfecta"), false);
   for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes("dona-perfecta"), false, lane.id);
+});
+
+/** Standing-rule pull. Rows and texts stay; readers cannot open them. */
+const STANDING_RULE_OFF_IDS = [
+  "cousin-betty",
+  "the-wisdom-of-father-brown",
+  "limehouse-nights",
+  "father-of-yoto",
+  "the-story-of-an-african-farm",
+  "twice-told-tales",
+] as const;
+
+test("STANDING-RULE pull: six English binds leave every reader surface, rows and texts stay", () => {
+  assert.equal(STANDING_RULE_OFF_IDS.length, 6);
+  const local = new Set(LOCAL_WORKS.map((work) => work.id));
+  const full = new Set(FULL_TEXT_WORKS.map((work) => work.id));
+  const featured = new Set(featuredWorks().map((work) => work.id));
+  for (const id of STANDING_RULE_OFF_IDS) {
+    assert.equal(isEnReadableOff(id), true, id);
+    assert.equal(EN_OFF_READABLE_IDS.has(id), true, id);
+    const work = SHELF.find((item) => item.id === id);
+    assert.ok(work, `${id} catalog row stays`);
+    assert.equal(work!.language, "English", id);
+    assert.equal(work!.local, true, id);
+    assert.equal(isBoundLocal(work!), false, id);
+    assert.equal(isBoundReadable(work!), false, id);
+    assert.ok(existsSync(new URL(`./texts/${id}.json`, import.meta.url)), `${id} text file kept`);
+    assert.equal(local.has(id), false, `${id} LOCAL_WORKS`);
+    assert.equal(full.has(id), false, `${id} FULL_TEXT_WORKS`);
+    assert.equal(featured.has(id), false, `${id} Featured`);
+    assert.equal(curatorialTrack(id), "later", id);
+    const found = searchShelf(work!.title);
+    assert.equal(withLocalBound(found).some((item) => item.id === id), false, `${id} local search`);
+    assert.equal(withFullPdf(found).some((item) => item.id === id), false, `${id} full-text search`);
+    for (const lane of RITUAL_LANES) {
+      assert.equal(worksForRitualLane(lane).some((item) => item.id === id), false, `${id} shown in ${lane.id}`);
+    }
+    const rows = homeMixRows(
+      { opened: [id], finished: [], kept: [id], favorites: [id], minutesByWork: { [id]: 20 } },
+      "2026-10-18",
+    );
+    for (const row of rows) {
+      assert.equal(row.cards.some((card) => card.work.id === id), false, `${id} ${row.id}`);
+      assert.equal(row.title.includes(work!.title), false, `${id} because ${row.title}`);
+    }
+  }
+  assert.equal(SHELF.filter((item) => item.id === "father-of-yoto").length, 1);
+  assert.equal(SHELF.filter((item) => item.id === "limehouse-nights").length, 1);
+  assert.equal(SHELF.find((item) => item.id === "father-of-yoto")?.gutenberg, 63073);
+  assert.equal(SHELF.find((item) => item.id === "limehouse-nights")?.gutenberg, 63073);
+  assert.equal(SHELF.find((item) => item.id === "father-of-yoto")?.breaths, 42);
+  assert.equal(SHELF.find((item) => item.id === "limehouse-nights")?.breaths, 3692);
+  assert.equal(SHELF.find((item) => item.id === "twice-told-tales")?.gutenberg, undefined);
 });
