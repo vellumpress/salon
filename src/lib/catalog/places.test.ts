@@ -433,7 +433,7 @@ test("POST-#225 places reuse Peru and Russia; no new region key", () => {
 });
 
 test("chip-only settings carry a label but no country key and no silhouette", () => {
-  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar" });
+  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar", "serbian-lyrics": "Serbia" });
   const mary = shelfWork("mary-magdalen");
   assert.ok(mary);
   assert.equal(placeFor(mary!), null);
@@ -731,4 +731,13 @@ test("Sun 18 Oct AM DUTT-BALLADS place: the ballads are legends of India and the
   assert.deepEqual(placeFor(shelfWork("ancient-ballads-and-legends-of-hindustan")!), { label: "India", region: "in" });
   assert.deepEqual(placeFor(shelfWork("ancient-ballads-and-legends-of-hindustan")!), placeFor(shelfWork("a-passage-to-india")!));
   assert.equal(CHIP_ONLY_PLACE["ancient-ballads-and-legends-of-hindustan"], undefined);
+});
+
+test("Sun 18 Oct AM SERBIAN-LYRICS place: the songs are set in Serbia, so the chip is a chip-only Serbia like Zanzibar Tales; no Serbia shape is drawn", () => {
+  const work = shelfWork("serbian-lyrics");
+  assert.ok(work);
+  assert.equal(placeFor(work!), null);
+  assert.equal(chipOnlyLabel("serbian-lyrics"), "Serbia");
+  assert.equal(countryFor(work!), "Serbia");
+  assert.equal((REGION_SHAPES as Record<string, unknown>).rs, undefined);
 });

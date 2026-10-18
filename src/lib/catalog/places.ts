@@ -538,6 +538,9 @@ export const CHIP_ONLY_PLACE: Record<string, string> = {
   // Mira Thu 8 Oct 2026 MID: the tales are told on the Zanzibar coast. There is no
   // Tanzania / East Africa shape; never draw one ad hoc. countryFor() is Tanzania.
   "zanzibar-tales": "Zanzibar",
+  // Mira Sun 18 Oct 2026 AM SERBIAN-LYRICS: the songs are set in Serbia (Kossovo, the Morava, Novi-Sad, Mostar). There is
+  // no Serbia shape; never draw one ad hoc. countryFor() is Serbia.
+  "serbian-lyrics": "Serbia",
 };
 
 /**

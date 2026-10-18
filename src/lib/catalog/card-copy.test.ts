@@ -334,6 +334,7 @@ test("known origin overrides", () => {
     "the-shooting-party": "Russia",
     "life-and-death-sienkiewicz": "Poland",
     "ancient-ballads-and-legends-of-hindustan": "India",
+    "serbian-lyrics": "Serbia",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
