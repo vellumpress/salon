@@ -78,11 +78,9 @@ test("a passage does not merge across a sit or ritual stop", () => {
   assert.ok(open.some((group) => group.index <= 1 && group.endIndex > 1), "the fixture did not merge across the stop");
   const stopped = spotlightGroups(breaths, measure, limit, line, "prose", new Set([1]));
   assert.equal(passageEndsAtStop(stopped, 1, "Two.".length), null);
-  assert.equal(stopped[0]!.endIndex, 0);
-  assert.equal(stopped[1]!.index, 1);
-  assert.equal(stopped[1]!.endIndex, 1);
-  assert.equal(stopped[1]!.sample, "Two.");
-  assert.equal(stopped[2]!.index, 2);
+  assert.equal(stopped[0]!.endIndex, 1);
+  assert.match(stopped[0]!.sample, /Two\./);
+  assert.equal(stopped[1]!.index, 2);
   assert.ok(stopped.every((group) => group.index > 1 || group.endIndex <= 1));
 });
 
@@ -446,11 +444,99 @@ test("a borrowed opening still steps back onto that same window", () => {
   }
 });
 
-test("a one-line sentence at the end of the chapter stays alone", () => {
+test("a one-line sentence at the end of the chapter stays alone when nothing precedes it", () => {
   const groups = spotlightGroups([{ index: 6, text: "Hi." }], measure, limit, line);
   assert.equal(groups.length, 1);
   assert.equal(groups[0]!.sample, "Hi.");
   assert.equal(groups[0]!.endIndex, 6);
+});
+
+test("a one-line chapter ending folds into the window before it", () => {
+  const prev = sentenceOf(3, "prior");
+  const tiny = "Hi.";
+  assert.ok(linesOf(tiny) < SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(prev) + linesOf(tiny) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  const groups = spotlightGroups(
+    [
+      { index: 0, text: prev },
+      { index: 1, text: tiny },
+    ],
+    measure,
+    limit,
+    line,
+  );
+  assert.equal(groups.length, 1);
+  assert.match(groups[0]!.sample, /prior0/);
+  assert.match(groups[0]!.sample, /Hi\./);
+  assert.equal(groups[0]!.index, 0);
+  assert.equal(groups[0]!.endIndex, 1);
+  assertGroupFits(groups[0]!);
+});
+
+test("a one-row sentence still ahead folds into the painted window", () => {
+  const breaths = [
+    { index: 0, text: "Hi one." },
+    { index: 1, text: "Hi two." },
+    { index: 2, text: "Hi three." },
+  ];
+  for (const breath of breaths) {
+    assert.ok(linesOf(breath.text) < SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP);
+  }
+  const countRows = () => 1;
+  const near = (index: number, query?: { cursor?: number; window?: number; edge?: "around" | "first" | "last"; after?: number }) =>
+    spotlightNear(
+      breaths,
+      { index, cursor: query?.cursor ?? 0, window: query?.window ?? 0 },
+      measure,
+      limit,
+      line,
+      "prose",
+      undefined,
+      undefined,
+      query?.edge ?? "around",
+      query?.after ?? 1,
+      countRows,
+    );
+  const painted = near(0, { edge: "around", after: 0 });
+  assert.match(painted.map((group) => group.sample).join(" "), /Hi three/);
+  const stepped = repeatSpotlight({ index: 0, cursor: 0, window: 0 }, 1, 1, near, breaths.length);
+  if (stepped !== "end" && stepped !== "start") {
+    assert.match(near(stepped.index, { edge: "around", after: 0 }).map((group) => group.sample).join(" "), /Hi three/);
+  }
+});
+
+test("a one-line chapter ending splits when the fold would pass four rows", () => {
+  const prev = sentenceOf(4, "full");
+  const tiny = "Hi.";
+  assert.ok(linesOf(prev) + linesOf(tiny) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  const breaths = [
+    { index: 0, text: prev },
+    { index: 1, text: tiny },
+  ];
+  const groups = spotlightGroups(breaths, measure, limit, line);
+  assert.ok(groups.length >= 2);
+  assert.match(groups[groups.length - 1]!.sample, /Hi\./);
+  assert.equal(groups.map((group) => group.sample).join("").includes(tiny), true);
+  for (const breath of breaths) {
+    const parts = groups.flatMap((group) => group.parts.filter((part) => part.index === breath.index));
+    let at = 0;
+    for (const part of parts) {
+      assert.equal(part.start, at);
+      at = part.end;
+    }
+    assert.equal(at, breath.text.length);
+  }
+  for (const group of groups) {
+    assert.ok(
+      linesOf(group.sample) >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP,
+      `window is ${linesOf(group.sample).toFixed(2)} lines: ${group.sample.slice(0, 48)}`,
+    );
+    assert.ok(
+      linesOf(group.sample) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP + 0.02,
+      `window is ${linesOf(group.sample).toFixed(2)} lines: ${group.sample.slice(0, 48)}`,
+    );
+    assertGroupFits(group);
+  }
 });
 
 test("a sentence inside four lines stays whole", () => {

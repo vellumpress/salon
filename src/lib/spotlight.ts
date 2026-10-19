@@ -822,9 +822,12 @@ function windowsStillNeeded(groups: readonly SpotlightGroup[], bound: GroupBound
  * that still paints five or six rows breaks at a semicolon, dash, or comma.
  * A window that would close under two rows moves back into the previous
  * window when that still fits, or takes a clause of the next sentence at a
- * semicolon, dash, or comma. The last line of the scene, and a sit or ritual
- * stop, may stay on one row. `bound` stops once the passage on screen, and
- * one step past it, is known.
+ * semicolon, dash, or comma. A lone one-row window folds into the window
+ * just before it. The fold stays inside this scene, so it never crosses a
+ * scene, poem, or chapter, and it never crosses a sit stop or a cut. If the
+ * fold would pass four rows, the two windows split three-and-two, or
+ * two-and-two when that is the cut that fits. `bound` stops once the passage
+ * on screen, and one step past it, is known.
  */
 function groupBreaths(
   breaths: readonly SpotlightBreath[],
@@ -1012,11 +1015,95 @@ function groupBreaths(
     groups.push(groupFrom(slice, 0, kind));
   }
 
+  function spanRows(slice: readonly Atom[]) {
+    if (rows) return coveredRows(slice, texts, rows);
+    return mergedLines(slice, texts, measure, linePx, kind);
+  }
+
+  /** Left piece through `absEnd` inside `combined[at]`, and the piece after it. */
+  function cutCombined(combined: readonly Atom[], at: number, absEnd: number): [Atom[], Atom[]] | null {
+    const atom = combined[at];
+    if (!atom || absEnd <= atom.start || absEnd >= atom.end) return null;
+    const left = combined.slice(0, at).concat(pieceOf(atom, atom.start, absEnd));
+    const right = [pieceOf(atom, absEnd, atom.end)].concat(combined.slice(at + 1));
+    return [left, right];
+  }
+
+  /**
+   * Two windows from a fold that would paint a fifth row.
+   * Three-and-two wins, then two-and-two, then two-and-three.
+   * A stronger pause wins a tie. Both sides stay inside two to four rows.
+   */
+  function balanceSplit(combined: readonly Atom[]): [Atom[], Atom[]] | null {
+    type Cand = { left: Atom[]; right: Atom[]; score: number };
+    const cands: Cand[] = [];
+    const consider = (left: Atom[], right: Atom[], rank: number) => {
+      if (left.length === 0 || right.length === 0) return;
+      if (tooShort(left) || tooShort(right)) return;
+      if (!withinCap(left) || !withinCap(right)) return;
+      const l = spanRows(left);
+      const r = spanRows(right);
+      const floor = minWindowLines();
+      let plan = 5;
+      if (l >= 2.5 && l < 3.6 && r >= floor && r < 2.6) plan = 0;
+      else if (l >= floor && l < 2.6 && r >= floor && r < 2.6) plan = 1;
+      else if (l >= floor && l < 2.6 && r >= 2.5 && r < 3.6) plan = 2;
+      cands.push({ left, right, score: plan * 20 + rank });
+    };
+    for (let n = 0; n < combined.length; n += 1) {
+      const atom = combined[n]!;
+      if (n > 0) consider(combined.slice(0, n), combined.slice(n), 0);
+      for (const cand of breakCandidates(atom.text)) {
+        const pair = cutCombined(combined, n, atom.start + cand.end);
+        if (pair) consider(pair[0], pair[1], cand.rank + 1);
+      }
+    }
+    if (cands.length === 0) return null;
+    cands.sort((a, b) => a.score - b.score);
+    const best = cands[0]!;
+    const right0 = best.right[0]!;
+    const left0 = best.left[0]!;
+    if (right0.index === left0.index) {
+      right0.windowBase = Math.max(right0.windowBase ?? 0, (left0.windowBase ?? 0) + 1, (groups[groups.length - 1]?.window ?? 0) + 1);
+    }
+    return [best.left, best.right];
+  }
+
+  /** Fold one short window into the window before it, or split that pair. */
+  function foldLone(slice: Atom[]) {
+    if (!tooShort(slice)) return false;
+    const prev = packed[packed.length - 1];
+    if (!prev || !canAttach(prev, slice)) return false;
+    const moved = prev.concat(slice);
+    if (withinCap(moved) && !tooShort(moved)) {
+      packed[packed.length - 1] = moved;
+      groups[groups.length - 1] = groupFrom(moved, groups[groups.length - 1]!.window, kind);
+      return true;
+    }
+    if (withinCap(moved)) return false;
+    const split = balanceSplit(moved);
+    if (!split) return false;
+    const window = groups[groups.length - 1]!.window;
+    packed[packed.length - 1] = split[0];
+    groups[groups.length - 1] = groupFrom(split[0], window, kind);
+    pushSlice(split[1]);
+    return true;
+  }
+
   let i = 0;
   while (i < atoms.length) {
     const atom = atoms[i]!;
     if (bound?.edge === "last" && atom.index > bound.index) break;
-    if (bound && bound.edge !== "last" && boundSatisfied(groups, bound)) break;
+    if (bound && bound.edge !== "last" && boundSatisfied(groups, bound)) {
+      // The painted passage stops once it is known. A one-row sentence still
+      // ahead has to fold into that passage now, or the step past it thinks
+      // the sentence was already consumed and the reader cannot reach it.
+      if (tooShort([atom]) && foldLone([atom])) {
+        i += 1;
+        continue;
+      }
+      break;
+    }
     const breathText = texts.get(atom.index) ?? "";
     const alone = atomLines(atom, breathText, measure, linePx);
     const words = wordPieces(atom.text);
@@ -1095,6 +1182,10 @@ function groupBreaths(
         i = j;
         continue;
       }
+    }
+    if (tooShort(slice) && foldLone(slice)) {
+      i = j;
+      continue;
     }
     pushSlice(slice);
     i = j;
