@@ -114,6 +114,7 @@ const CARD_AFTER_PRINTED_APPARATUS: Readonly<Record<string, readonly [number, st
   "the-romance-of-a-shop": [3, "CHAPTER I., its title and the epigraph (OPEN-FIX-2 cut the duplicate lines)"],
   "the-man-who-laughs": [2, "Preliminary Chapter. and its printed title Ursus."],
   "the-ramayan-of-valmiki": [2, "Canto I. Nárad. and the printed OM."],
+  "seven-legends": [2, "Eugenia's printed Deuteronomy epigraph and its citation"],
 };
 // OPEN-FIX-2 re-bound the seven pending books (contents cut, editorial front
 // matter tagged front), so none still opens on residue.
@@ -335,6 +336,7 @@ test("known origin overrides", () => {
     "life-and-death-sienkiewicz": "Poland",
     "ancient-ballads-and-legends-of-hindustan": "India",
     "serbian-lyrics": "Serbia",
+    "seven-legends": "Egypt",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",

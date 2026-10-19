@@ -1,0 +1,156 @@
+{
+  "id": "seven-legends",
+  "title": "Seven Legends",
+  "author": "Gottfried Keller (trans. Martin Wyness)",
+  "year": "1911",
+  "note": "Opening sit: Eugenia from its epigraph to the abbot over seventy good monks.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Eugenia",
+      "place": "Eugenia",
+      "reentry": "The woman shall not wear that which pertaineth unto a man, neither shall a man put on a woman's garment: for all that do so are abomination unto the Lord thy God.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "The woman shall not wear that which pertaineth unto a man, neither shall a man put on a woman's garment: for all that do so are abomination unto the Lord thy God."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Deut. xxii. 5."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "When women renounce their ambition of beauty, grace, and womanly charm in order to distinguish themselves in other directions, it often ends in their disguising themselves in men's clothes and disappearing from the scene."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "The desire to ape the man often emerges even in the pious legendary world of early Christianity, and more than one female saint of those days was impelled by the desire to free herself from the common round of home and society."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "The refined Roman maiden Eugenia offers an example of this kind, with, it must be owned, the not unusual result, that, reduced to the greatest extremity by her masculine predilections, she was forced after all to summon up the resources of her proper sex in order to save herself."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "She was the daughter of a Roman gentleman who resided with his family at Alexandria, a city which swarmed with philosophers and learned men of every description. Accordingly, Eugenia was very carefully educated and instructed, and this was so much to her taste that, as soon as ever she began to grow up, she frequented all schools of philosophers, grammarians and rhetoricians as a student. In those visits she was always attended by a body-guard of two good-looking lads of her own age. They were the sons of two of her father's freedmen, who had been brought up in her company and made to share in all her studies."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Meanwhile she became the fairest maiden that could be found, and her youthful companions, who, strangely enough, were both named Hyacinth, grew likewise to two graceful flowers of youth. Wherever the lovely rose Eugenia appeared, the two Hyacinths were always to be seen rustling along on her right hand and her left, or following gracefully in her train while their mistress maintained a discussion with them as they followed."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "Never were there two better bred companions of a blue-stocking; for they were never of a different opinion from Eugenia, and they always kept a shade behind her in learning, so that she was in the right in every instance, and was never uneasy lest she should say something less clever than her companions."
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "All the bookworms of Alexandria composed elegies and epigrams on this apparition of the Muses, and the good Hyacinths had to inscribe these verses carefully in golden tablets, and carry them after her."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "Every season she became more beautiful and more accomplished, and she had even begun to stray in the mysterious labyrinths of Neoplatonic doctrines, when the young proconsul Aquilinus became enamoured of Eugenia and demanded her of her father to wife. But the latter entertained such a respect for his daughter that, despite his authority as a Roman father, he did not venture to make the slightest suggestion to her, but referred the suitor to her own decision, although no son-in-law could have been more welcome to him than Aquilinus."
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "But Eugenia herself had had her eye upon him secretly for many a long day; for he was the most stately, most illustrious, and most gallant man in Alexandria, and, what was more, had the reputation of a man of intelligence and heart."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "Yet she received the enamoured consul in complete calm and dignity, with her parchment rolls about her, and her Hyacinths behind her chair. The one wore an azure-blue, the other a rose-red, robe, and she herself one of dazzling white. A stranger would have been uncertain whether he saw three fair, tender boys, or three fresh, blooming maidens before him."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Before this tribunal the manly Aquilinus now came in the simple toga of his rank. He would much rather have uttered his passion in more intimate and tender fashion; but, when he saw that Eugenia did not dismiss the young men, he took his seat on a chair facing her, and made his request for her hand in words which it cost him an effort to make few and simple, for he kept his eyes fixed immovably upon her, and beheld her great beauty."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "Eugenia smiled imperceptibly, and never even blushed, so tightly had learning and culture fettered all the finer impulses of ordinary life in her. Instead, she assumed a serious, profound expression, and made answer to him, \"Thy wish, O Aquilinus, to have me for thy wife, honours me in a high degree, but is powerless to induce me to an act of unwisdom; and such it would justly be termed, if we were to follow the first crude impulse without examining ourselves. The first condition which I have to demand from a husband, whoever he be, is that he understand and honour and participate in my intellectual life and aims. So thou wilt be welcome to me if thou choosest to be often in my society, and to exercise thyself in emulation with these my young companions in the investigation of the highest things along with me. By this means we shall not fail to ascertain whether we are suited for each other or not, and, after a period of intellectual activity in common, we shall know each other so as beseems god-created beings who are meant to walk not in the darkness, but in the light.\""
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "To this high-flown demand Aquilinus answered, not without secret indignation, but still with proud tranquillity, \"If I did not know thee, Eugenia, I would not desire thee for my wife; and, as to myself, great Rome knows me, as well as this province. If thy learning does not suffice to recognize what I am by this time, I fear it will never suffice. Besides, I did not come here to go to school again, but to find a helpmeet; and, as for these two children, my first request, if thou gavest me thy hand, would be that thou wouldest let them go and restore them to their parents at last, that they might help them and be of use to them. Now I entreat thee, give me thy decision, not as a person of learning, but as a woman of flesh and blood!\""
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "This time the fair she-philosopher had indeed turned red, red as a carnation, and said with fast-beating heart, \"My answer is soon given, for I gather from thy words that thou dost not love me, Aquilinus. That might be a matter of indifference to me, were it not an outrage for the daughter of a noble Roman to be lied to!\""
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "\"I never lie!\" said Aquilinus coldly. \"Farewell!\""
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "Eugenia turned her back without returning his farewell, and Aquilinus walked slowly out of the house to his own abode. She tried to take up her books as if nothing had happened; but the letters grew blurred before her eyes, and the two Hyacinths had to read to her while she, full of hot indignation, wandered with her thoughts elsewhere."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "For, although up to that day she had regarded the consul as the only one among all her suitors whom she might have taken for a husband, supposing she had been so inclined, he was now become a stone of stumbling which she could not get over."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "Aquilinus for his part attended calmly to his affairs of state, and sighed in secret over his strange folly, which would not suffer him to forget the pedantic beauty."
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Almost two years passed, during which Eugenia became, if possible, more and more notable and a positively brilliant personage, while the two Hyacinths were now two sturdy rustic figures with growing beards. Although people everywhere began to take notice of this strange attachment, and, instead of the admiring epigrams, others in a more satiric vein began to appear, still she could not bring herself to part with her body-guard; for Aquilinus, who had presumed to order her to do so, was still there. He went quietly on his own way, and appeared to concern himself no more about her; but he looked at no other woman, and no other wooing was heard of, so that he also came in for censure, because, being so high an official, he remained unmarried."
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "Eugenia refrained all the more obstinately from offering any outward sign of reconciliation by dismissing her obnoxious companions. Besides, she was charmed to set ordinary custom and public opinion at defiance and be responsible to herself alone, and to preserve the consciousness of a pure life in circumstances which would have been perilous and impossible for any other woman."
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "Such eccentricities were in the air just at that time."
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "All the time Eugenia felt herself anything but well and happy. Her well-trained servitors must needs philosophize through heaven and earth and hell, only to be suddenly interrupted and forced to wander about in the country with her for hours together without being favoured with a single word. One day she was seized with the desire to make an excursion to a country-seat. She herself drove the carriage, and was in an amiable mood, for it was a bright spring day, and the air was full of balmy fragrance. The Hyacinths were delighted at her good humour. So they made their way through a country suburb where the Christians were permitted to hold their worship. They were in the act of celebrating Sunday; from the chapel of a monastery came the tones of a devout hymn. Eugenia checked her horses to listen, and caught the words of the psalm, \"Like as the hart desireth the water-brooks: so longeth my soul after thee, O God. My soul is athirst for the living God.\""
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "At the sound of these words, sung by humble pious lips, her artificial life was made simple at last; her heart was touched, and seemed to realize what it desired; and slowly, without a word, she went on her way to the country-house. There she secretly put on men's clothes, signed to the two Hyacinths to come with her, and left the house unobserved by the menials. She went back to the convent, knocked at the door, and presented herself and her companions to the abbot as three young men who desired to be received into the convent that they might bid farewell to the world and live for eternity. Thanks to her good training, she was able to answer the abbot's searching questions so cleverly that he received all three, whom he could not help taking for refined and distinguished persons, into the convent, and permitted them to assume the monastic habit."
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "Eugenia made a beautiful, almost angelic, monk, and was called Brother Eugenius, while the two Hyacinths found themselves transformed for better or worse into monks; for they were never even consulted, and they had long been accustomed only to live according to the will of their female paragon. Still, they did not find the monkish life amiss; they enjoyed incomparably more peaceful days, did not require to study any more, and found no difficulty in surrendering themselves entirely to a passive obedience."
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "Brother Eugenius, on the other hand, did not remain idle, but became a notable monk, his visage white as marble, but with glowing eyes and the presence of an archangel. He converted many heathen, tended the sick and destitute, became profound in the Scriptures, preached in a golden bell-like voice, and on the abbot's death was actually chosen to be his successor. So now the tender Eugenia became abbot over seventy good monks, great and small."
+    }
+  ]
+}

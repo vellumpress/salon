@@ -289,6 +289,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "iola-leroy": { label: "US South", region: "us-south" },
   "esther-waters": { label: "England", region: "gb" },
   "aphrodite": { label: "Alexandria", region: "eg" },
+  // Mira Sun 18 Oct 2026 PM SEVEN-LEGENDS: Eugenia (the opening) and Vitalis are set in Alexandria, as printed; the chip reuses eg.
+  "seven-legends": { label: "Alexandria", region: "eg" },
   "west-african-folk-tales": { label: "Gold Coast", region: "gh" },
   erewhon: { label: "New Zealand", region: "nz" },
   "ann-veronica": { label: "Morningside Park", region: "gb" },

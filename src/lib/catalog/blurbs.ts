@@ -441,6 +441,8 @@ const BLURBS: Record<string, string> = {
     "Nine legends of India retold in English ballad verse, from Savitri following Death into the forest to the archer Buttoo and the boy Prehlad, then seven shorter poems ending under the casuarina tree of a Bengal garden.",
   "serbian-lyrics":
     "A hundred and seventy Serbian folk songs in English verse: curses and blessings, harvest and wedding songs, laments for brothers and sons, carols, prayers, and love songs from the Mohammedan towns.",
+  "seven-legends":
+    "A heads-up before you start: frank comedy about courtesans and seduction, a false accusation of rape, and a martyr tortured and beheaded.",
   nostalgia:
     "A young bride from the green banks of the Po comes to Rome full of dreams, and finds a cramped family flat, a tight budget and a dazzling city that will not quite let her in.",
   "the-adventures-of-huckleberry-finn":
