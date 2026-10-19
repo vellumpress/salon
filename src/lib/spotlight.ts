@@ -696,8 +696,10 @@ function atomIsTall(
 /**
  * Where a group that contains `focus` can start.
  * A tall sentence is split on its own and does not pull the next paragraph,
- * so the walk stops there. A run of short lines can still cross paragraphs,
- * and that run is the only lookback opening pays for.
+ * so the walk stops at that sentence. A short tail after it stays in the
+ * slice: the tail joins the tall sentence's last window when that window
+ * is present, and joins the next paragraph when the window was dropped.
+ * A run of short lines can still cross paragraphs.
  */
 function groupOrigin(
   breaths: readonly SpotlightBreath[],
@@ -728,7 +730,7 @@ function groupOrigin(
       if (tail.length === 0) break;
       const texts = new Map([[prev.index, breathText]]);
       if (!isShortLine(mergedLines(tail, texts, measure, linePx, kind))) break;
-      return { index: prev.index, sentence: tail[0]!.sentence };
+      return { index: prev.index, sentence: prevAtoms[lastTall]!.sentence };
     }
     const texts = new Map([[prev.index, breathText]]);
     if (!isShortLine(mergedLines(prevAtoms, texts, measure, linePx, kind))) break;
@@ -786,8 +788,20 @@ function boundSatisfied(groups: readonly SpotlightGroup[], bound: GroupBound) {
   return groups.length > coverAt + bound.after;
 }
 
-function windowsStillNeeded(groups: readonly SpotlightGroup[], bound: GroupBound | undefined) {
+/** A sentence that finishes before the place on screen. Its last window is a left tap away. */
+function atomPrecedesPlace(atom: Atom, bound: GroupBound) {
+  if (atom.index < bound.index) return true;
+  if (atom.index > bound.index) return false;
+  return atom.sentence < bound.cursor;
+}
+
+function windowsStillNeeded(groups: readonly SpotlightGroup[], bound: GroupBound | undefined, atom: Atom) {
   if (!bound || bound.edge === "last") return undefined;
+  // The cap is for the sentence on screen: that window, plus one step.
+  // A sentence that already ended has to be cut through to its last window.
+  // Two windows would drop the third and fourth, and one left tap would land
+  // on the second.
+  if (atomPrecedesPlace(atom, bound)) return undefined;
   if (bound.edge === "first") return Math.max(1, 1 + bound.after);
   const coverAt = groups.findIndex((group) => groupCovers(group, bound));
   if (coverAt < 0) return bound.window + bound.after + 1;
@@ -1010,7 +1024,7 @@ function groupBreaths(
     if ((!fits(alone, cap, linePx) || !aloneRows) && words.length > 1) {
       const maxWindows =
         bound && (bound.edge === "last" || atom.index <= bound.index || !boundSatisfied(groups, bound))
-          ? windowsStillNeeded(groups, bound)
+          ? windowsStillNeeded(groups, bound, atom)
           : undefined;
       const pieces = splitAtom(atom, breathText, measure, cap, linePx, kind, maxWindows, rows);
       for (const piece of pieces) {
@@ -1285,6 +1299,23 @@ export function stepSpotlight(input: {
   }
   if (at > 0) return placeOf(groups[at - 1]!);
   const first = groups[0]!;
+  // The slice can open after a tall sentence in this same breath. That
+  // sentence's last window is the passage a left tap needs. The breath
+  // before it is one step further back.
+  if (first.cursor > 0 || first.window > 0) {
+    const prior = input.groupsAt(first.index, { cursor: 0, window: 0, edge: "last", after: 0 });
+    for (let i = prior.length - 1; i >= 0; i -= 1) {
+      const group = prior[i]!;
+      if (group.endIndex > first.index) continue;
+      const key = placeOf(group);
+      const earlier =
+        key.index < input.place.index ||
+        (key.index === input.place.index &&
+          (key.cursor < input.place.cursor ||
+            (key.cursor === input.place.cursor && key.window < input.place.window)));
+      if (earlier) return key;
+    }
+  }
   const prevIndex = first.index - 1;
   if (prevIndex < 0) return "start";
   const prev = input.groupsAt(prevIndex, { cursor: 0, window: 0, edge: "last", after: 0 });

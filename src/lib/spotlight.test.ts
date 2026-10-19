@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { phoneBlockLimit, phoneLineMeasure, PHONE_LINE_PX } from "./display-blocks.ts";
+import { cutsForWork, stopsForWork } from "./catalog/merge-stop-index.ts";
+import { assembleWork } from "./import/assemble.ts";
+import { phoneBlockLimit, phoneLineMeasure, PHONE_LINE_PX, type DisplayKind } from "./display-blocks.ts";
 import {
   markSpotlight,
   passageEndsAtStop,
@@ -805,4 +807,214 @@ test("a sentence inside the height cap breaks at a semicolon, dash, or comma whe
       assert.ok(countRows(text, start, end) <= SPOTLIGHT_MAX_LINES);
     }
   }
+});
+
+type SampleBreath = { index: number; text: string; sceneId: string };
+
+function navOf(
+  breaths: readonly SampleBreath[],
+  kind: DisplayKind = "prose",
+  stops?: ReadonlySet<number>,
+  cuts?: ReadonlyMap<number, number>,
+) {
+  const scenes = new Map<string, { index: number; text: string }[]>();
+  for (const breath of breaths) {
+    const list = scenes.get(breath.sceneId) ?? [];
+    list.push({ index: breath.index, text: breath.text });
+    scenes.set(breath.sceneId, list);
+  }
+  const groupsAt: GroupsAt = (index, query) => {
+    const sceneId = breaths.find((breath) => breath.index === index)?.sceneId;
+    const scene = (sceneId && scenes.get(sceneId)) || [];
+    return spotlightNear(
+      scene,
+      { index, cursor: query?.cursor ?? 0, window: query?.window ?? 0 },
+      measure,
+      limit,
+      line,
+      kind,
+      stops,
+      cuts,
+      query?.edge ?? "around",
+      query?.after ?? 1,
+    );
+  };
+  const ordered: SpotlightGroup[] = [];
+  for (const scene of scenes.values()) {
+    ordered.push(...spotlightGroups(scene, measure, limit, line, kind, stops, cuts));
+  }
+  return { groupsAt, ordered, breathCount: (breaths[breaths.length - 1]?.index ?? 0) + 1 };
+}
+
+function placeBefore(a: SpotlightPlace, b: SpotlightPlace) {
+  if (a.index !== b.index) return a.index < b.index;
+  if (a.cursor !== b.cursor) return a.cursor < b.cursor;
+  return a.window < b.window;
+}
+
+/**
+ * Walk forward one window at a time.
+ * From every window k, the next right tap's left tap returns to k.
+ * A left tap from that next window is the same passage.
+ */
+function assertReversible(label: string, breaths: readonly SampleBreath[], kind?: DisplayKind, stops?: ReadonlySet<number>, cuts?: ReadonlyMap<number, number>) {
+  const { groupsAt, ordered, breathCount } = navOf(breaths, kind, stops, cuts);
+  assert.ok(ordered.length > 1, `${label} has one window`);
+  const widths = new Map<string, number>();
+  let paragraph = false;
+  let chapter = false;
+  let sit = false;
+  let place = placeOf(ordered[0]!);
+  const seen = new Set<string>();
+  for (let step = 0; step < ordered.length + 8; step += 1) {
+    const key = spotlightKey(place);
+    assert.equal(seen.has(key), false, `${label} repeated ${key}`);
+    seen.add(key);
+    const sentence = `${place.index}:${place.cursor}`;
+    widths.set(sentence, (widths.get(sentence) ?? 0) + 1);
+    const forward = stepSpotlight({ place, delta: 1, groupsAt, breathCount });
+    if (forward === "end") break;
+    assert.notEqual(forward, "start", label);
+    if (forward === "start") break;
+    assert.equal(placeBefore(place, forward), true, `${label} right from ${key} landed on ${spotlightKey(forward)}`);
+    const back = stepSpotlight({ place: forward, delta: -1, groupsAt, breathCount });
+    assert.notEqual(back, "start", `${label} left from ${spotlightKey(forward)} walked off the start`);
+    assert.notEqual(back, "end", label);
+    if (back === "start" || back === "end") break;
+    assert.equal(
+      spotlightKey(back),
+      key,
+      `${label} left from ${spotlightKey(forward)} landed on ${spotlightKey(back)}, one window is ${key}`,
+    );
+    if (forward.index !== place.index) paragraph = true;
+    const fromScene = breaths.find((breath) => breath.index === place.index)?.sceneId;
+    const toScene = breaths.find((breath) => breath.index === forward.index)?.sceneId;
+    if (fromScene && toScene && fromScene !== toScene) chapter = true;
+    if (stops && forward.index !== place.index && (stops.has(place.index) || stops.has(forward.index))) sit = true;
+    place = forward;
+  }
+  return { widths: [...widths.values()], paragraph, chapter, sit, steps: seen.size };
+}
+
+function openingBreaths(id: string, scenes: number): SampleBreath[] {
+  const work = JSON.parse(readFileSync(new URL(`./catalog/texts/${id}.json`, import.meta.url), "utf8")) as {
+    breaths: { text: string; sceneId: string }[];
+  };
+  const want = new Set<string>();
+  const breaths: SampleBreath[] = [];
+  let extra: string | null = null;
+  for (let index = 0; index < work.breaths.length; index += 1) {
+    const breath = work.breaths[index]!;
+    if (want.size < scenes) want.add(breath.sceneId);
+    if (want.has(breath.sceneId)) {
+      breaths.push({ index, text: breath.text, sceneId: breath.sceneId });
+      continue;
+    }
+    if (!extra) extra = breath.sceneId;
+    if (breath.sceneId !== extra) break;
+    breaths.push({ index, text: breath.text, sceneId: breath.sceneId });
+    break;
+  }
+  return breaths;
+}
+
+test("a left step into a four-window sentence lands on its last window", () => {
+  const text = `${sentenceOf(13, "Lamp")} ${sentenceOf(4, "Next")}`;
+  const breaths = [{ index: 0, text, sceneId: "s0" }];
+  const { ordered } = navOf(breaths);
+  const sentence = ordered.filter((group) => group.cursor === 0);
+  assert.equal(sentence.length, 4, ordered.map((group) => spotlightKey(placeOf(group))).join(" "));
+  const last = sentence[sentence.length - 1]!;
+  const next = ordered[ordered.indexOf(last) + 1]!;
+  assert.equal(next.cursor, 1);
+  const back = stepSpotlight({
+    place: placeOf(next),
+    delta: -1,
+    groupsAt: navOf(breaths).groupsAt,
+    breathCount: 1,
+  });
+  assert.equal(spotlightKey(back as SpotlightPlace), spotlightKey(placeOf(last)));
+  assert.equal((back as SpotlightPlace).window, 3);
+});
+
+test("a three-window sentence still steps back onto its last window", () => {
+  const text = `${sentenceOf(10, "Lamp")} ${sentenceOf(4, "Next")}`;
+  const breaths = [{ index: 0, text, sceneId: "s0" }];
+  const nav = navOf(breaths);
+  const sentence = nav.ordered.filter((group) => group.cursor === 0);
+  assert.equal(sentence.length, 3, nav.ordered.map((group) => spotlightKey(placeOf(group))).join(" "));
+  const edge = assertReversible("three windows", breaths);
+  assert.ok(edge.widths.includes(3));
+  assert.ok(!edge.widths.some((width) => width >= 4));
+});
+
+test("a right step and a left step return to the same window across splits, paragraphs, chapters, and sits", () => {
+  const widths: number[] = [];
+  let paragraph = false;
+  let chapter = false;
+  let sit = false;
+  const books = [
+    { id: "quicksand", scenes: 1 },
+    { id: "cranford", scenes: 1 },
+    { id: "strange-tales", scenes: 2 },
+  ];
+  const edges = new Map<string, ReturnType<typeof assertReversible>>();
+  for (const book of books) {
+    const breaths = openingBreaths(book.id, book.scenes);
+    const edge = assertReversible(book.id, breaths, "prose", stopsForWork(book.id), cutsForWork(book.id));
+    edges.set(book.id, edge);
+    widths.push(...edge.widths);
+    paragraph = paragraph || edge.paragraph;
+    chapter = chapter || edge.chapter;
+    sit = sit || edge.sit;
+    assert.ok(edge.steps > 4, `${book.id} walked ${edge.steps}`);
+  }
+  const quicksand = edges.get("quicksand")!;
+  assert.equal(quicksand.paragraph, true, "quicksand never crossed a paragraph");
+  assert.equal(quicksand.chapter, true, "quicksand never crossed a chapter");
+  assert.equal(quicksand.sit, true, "quicksand never crossed its sit");
+  const pair = `${sentenceOf(6, "Pair")} ${sentenceOf(3, "Tail")}`;
+  const two = assertReversible("two windows", [{ index: 0, text: pair, sceneId: "s0" }]);
+  widths.push(...two.widths);
+  assert.ok(widths.includes(2), `no 2-window sentence in ${widths.join(",")}`);
+  assert.ok(widths.includes(3), `no 3-window sentence in ${widths.join(",")}`);
+  assert.ok(widths.some((width) => width >= 4), `no 4-window sentence in ${widths.join(",")}`);
+  assert.equal(paragraph, true, "the sample never crossed a paragraph");
+  assert.equal(chapter, true, "the sample never crossed a chapter");
+  assert.equal(sit, true, "the sample never crossed a sit");
+});
+
+test("an imported page steps back one window across two, three, and four window sentences", () => {
+  const work = assembleWork({
+    title: "Imported",
+    author: "Imported",
+    source: "this phone",
+    hadHeading: true,
+    blocks: [
+      {
+        title: "Chapter 1",
+        paragraphs: [
+          sentenceOf(13, "Lamp"),
+          sentenceOf(4, "After"),
+          sentenceOf(10, "Third"),
+          sentenceOf(6, "Pair"),
+        ],
+      },
+      {
+        title: "Chapter 2",
+        paragraphs: [sentenceOf(4, "Chapter")],
+      },
+    ],
+  });
+  const breaths = work.breaths.map((breath, index) => ({
+    index,
+    text: breath.text,
+    sceneId: breath.sceneId,
+  }));
+  const edge = assertReversible("imported page", breaths);
+  assert.ok(edge.widths.includes(2), `imported windows ${edge.widths.join(",")}`);
+  assert.ok(edge.widths.includes(3), `imported windows ${edge.widths.join(",")}`);
+  assert.ok(edge.widths.some((width) => width >= 4), `imported windows ${edge.widths.join(",")}`);
+  assert.equal(edge.paragraph, true);
+  assert.equal(edge.chapter, true);
 });
