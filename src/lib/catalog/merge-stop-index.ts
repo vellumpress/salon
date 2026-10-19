@@ -1242,7 +1242,7 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
     92
   ],
   "serbian-lyrics": [
-    20
+    16
   ],
   "seven-brothers": [
     5
