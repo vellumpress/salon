@@ -10,7 +10,6 @@ import {
   focusAnchorPx,
   readCenterLineEnabled,
   upcomingBreaths,
-  upcomingOpacity,
   writeCenterLineEnabled,
 } from "./center-line.ts";
 import type { Breath, Work } from "./literature.ts";
@@ -184,27 +183,22 @@ test("a long book only walks the upcoming window", () => {
   assert.ok(elapsed < 30, `window took ${elapsed}ms`);
 });
 
-test("upcoming preview stays fainter than the current line and still legible", () => {
-  assert.equal(upcomingOpacity(0, 1), 0.36);
-  const count = UPCOMING_WINDOW;
-  for (let i = 0; i < count; i += 1) {
-    const opacity = upcomingOpacity(i, count);
-    assert.ok(opacity >= 0.3 && opacity <= 0.42, `index ${i} opacity ${opacity}`);
-  }
-  assert.ok(upcomingOpacity(0, count) > upcomingOpacity(count - 1, count));
-  assert.ok(upcomingOpacity(0, count) < 0.44, "nearest preview is a step fainter than before");
-});
-
-test("upcoming preview is one soft blur and the focus line stays sharp", () => {
+test("text after the passage is blurred and washed out, and the focus line stays sharp", () => {
   const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
-  const slot = css.match(/\.upcoming-slot\s*\{[^}]+\}/)?.[0] ?? "";
-  assert.match(slot, /filter:\s*blur\(2px\)/);
+  const slot = css.match(/\.upcoming-slot,\s*\n\.passage-ahead-body\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(slot, /filter:\s*blur\(6px\)/);
   assert.doesNotMatch(slot, /\.breath-now|\.look-line/);
+  assert.match(css, /\.upcoming-far\s*\{[^}]*filter:\s*blur\(14px\)/);
+  assert.match(css, /color-mix\(in srgb, var\(--reader-bg\) 85%, transparent\)/);
+  assert.match(css, /color-mix\(in srgb, var\(--reader-bg\) 90%, transparent\)/);
   const breath = css.match(/\.look-line,\s*\n\.breath-now\s*\{[^}]+\}/)?.[0] ?? "";
   assert.ok(breath.length > 0, "focus line rule missing");
   assert.doesNotMatch(breath, /blur|filter/);
+  assert.match(css, /\.breath-sentence\.is-past\s*\{[^}]*opacity:\s*0\.5/);
+  assert.match(css, /\.breath-sentence\.is-ahead\s*\{[^}]*filter:\s*blur\(10px\)/);
   const transparent = css.slice(css.indexOf("@media (prefers-reduced-transparency: reduce)"));
-  assert.match(transparent, /\.upcoming-slot\s*\{[^}]*filter:\s*none/);
+  assert.match(transparent, /\.upcoming-slot,\s*\n\s*\.passage-ahead-body\s*\{[^}]*filter:\s*none/);
+  assert.match(transparent, /\.upcoming-shade/);
   const motion = css.slice(css.lastIndexOf("@media (prefers-reduced-motion: reduce)"));
   assert.match(motion, /\.reader-frame \*/);
   assert.match(motion, /transition:\s*none\s*!important/);

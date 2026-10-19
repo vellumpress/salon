@@ -132,13 +132,3 @@ export function centerLineOffset(input: {
   return Math.round(anchorY - (lineTop + lineHeight / 2));
 }
 
-/**
- * Preview opacity. The nearest upcoming line is fainter than a just-read
- * line, and a single soft blur on the upcoming slot (styles.css) does the
- * rest of the defocus. The far edge stays a readable shape.
- */
-export function upcomingOpacity(index: number, count: number): number {
-  if (count <= 1) return 0.36;
-  const t = index / (count - 1);
-  return 0.4 - t * 0.1;
-}

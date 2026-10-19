@@ -2035,8 +2035,19 @@ html:has(.board-doors) body {
   opacity: 0.5;
 }
 
+/* Text still ahead inside the lit breath. The glyphs themselves are a blur,
+   and a paper wash sits on the line so the words do not stay readable.
+   The wash fades in over a short run so the cut after the passage is soft. */
 .breath-sentence.is-ahead {
-  opacity: 0.42;
+  color: color-mix(in srgb, var(--reader-ink, var(--color-ink)) 12%, var(--reader-bg));
+  filter: blur(10px);
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--reader-bg) 80%, transparent) 0,
+    color-mix(in srgb, var(--reader-bg) 90%, transparent) 0.55rem
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .fitted-copy {
@@ -2155,16 +2166,59 @@ html:has(.board-doors) body {
   padding: 0;
 }
 
-.upcoming-slot {
+.upcoming-fold,
+.passage-ahead {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.upcoming-slot,
+.passage-ahead-body {
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
   pointer-events: none;
-  /* One layer for the whole preview. A filter on each line re-rasterizes
-     while the track translates on iPhone Safari. The focus line is outside
-     this slot, so it stays sharp. pointer-events stays none so the blur
-     cannot sit above the sentence buttons on iPhone. */
-  filter: blur(2px);
+  /* One blur for the whole run. A filter on each line re-rasterizes
+     while the track translates on iPhone Safari. The focus line sits
+     outside this box, so it stays sharp. */
+  filter: blur(6px);
+}
+
+/* A second copy, faded in over a short run, carries the heavier blur.
+   The wash above it is the page color, so the edge stays soft. */
+.upcoming-far,
+.passage-ahead-blur,
+.upcoming-shade,
+.passage-ahead-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.upcoming-far {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  filter: blur(14px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 0.7rem);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 0.7rem);
+}
+
+.passage-ahead-blur {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0 0 0 / 0.4) 0, #000 0.7rem);
+  mask-image: linear-gradient(to bottom, rgb(0 0 0 / 0.4) 0, #000 0.7rem);
+}
+
+.upcoming-shade,
+.passage-ahead-shade {
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--reader-bg) 85%, transparent) 0,
+    color-mix(in srgb, var(--reader-bg) 90%, transparent) 0.55rem
+  );
 }
 
 .reader-turn {
@@ -2242,8 +2296,19 @@ html:has(.reader-frame:not(.together-lock)) .status-bar-fill {
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  .upcoming-slot {
+  .upcoming-slot,
+  .passage-ahead-body {
     filter: none;
+  }
+  .upcoming-far,
+  .passage-ahead-blur {
+    filter: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .upcoming-shade,
+  .passage-ahead-shade {
+    background: color-mix(in srgb, var(--reader-bg) 92%, transparent);
   }
 }
 
