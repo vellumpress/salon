@@ -469,7 +469,8 @@ test("mid Rituals places reuse gb; no new region key; Elysium is a named chip, n
 });
 
 test("POST-v3 Ritual: NO_PRINTED_PLACE is only Wedding-Day, and it resolves no chip and no country", () => {
-  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day"]);
+  // BAMBI joins: the forest is never named (Mon 19 Oct 2026).
+  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi"]);
   for (const id of NO_PRINTED_PLACE) {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -764,4 +765,14 @@ test("Sun 18 Oct PM The Blue Castle place reuses ca; Deerwood, Muskoka, Ontario;
   assert.deepEqual(placeFor(shelfWork("the-blue-castle")!), { label: "Deerwood, Muskoka, Ontario", region: "ca" });
   assert.equal(CHIP_ONLY_PLACE["the-blue-castle"], undefined);
   assert.equal(countryFor(shelfWork("the-blue-castle")!), "Canada");
+});
+
+test("Mon 19 Oct AM Bambi prints no place: the forest is never named; no chip, no country", () => {
+  const work = shelfWork("bambi")!;
+  assert.ok(work);
+  assert.equal(NO_PRINTED_PLACE.has("bambi"), true);
+  assert.equal(placeFor(work), null);
+  assert.equal(placeForId("bambi"), null);
+  assert.equal(chipOnlyLabel("bambi"), null);
+  assert.equal(countryFor(work), "");
 });
