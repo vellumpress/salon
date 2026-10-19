@@ -19194,3 +19194,26 @@ test("Mira Sun 18 Oct SERBIAN-CREDITS v2: Serbian Lyrics has no one-line breath 
   assert.deepEqual(MERGE_STOP_INDEX[id], [16]);
   opened.breaths.forEach((b, i) => assert.equal(b.text, full.breaths[i]!.text, `open ${i}`));
 });
+
+test("Mira Sun 18 Oct FURNITURE-3: Kalevala opens on the poem without the translator's Preface; the Rámáyan ends on Book VI's last line without the appendix (s12 tail, s13-s15) or the body's (n) markers", () => {
+  const kalevala = JSON.parse(readFileSync(new URL("./texts/kalevala.json", import.meta.url), "utf8")) as Work;
+  assert.deepEqual(kalevala.scenes.slice(0, 3).map((s) => s.title), ["Dedication", "Proem", "Rune I. Birth of Wainamoinen"]);
+  assert.equal(kalevala.scenes.some((s) => s.id === "s1" || s.title === "Preface"), false);
+  assert.equal(kalevala.breaths.some((b) => b.sceneId === "s1"), false);
+  assert.equal(kalevala.breaths.length, 728);
+  assert.equal(openingBreathIndex(kalevala), 1);
+  assert.ok(kalevala.breaths[1]!.text.startsWith(shelfWork("kalevala")!.opening!));
+  assert.doesNotMatch(kalevala.breaths.map((b) => b.text).join("\n"), /John Martin Crawford\.|The following translation was undertaken/);
+  const ramayan = JSON.parse(readFileSync(new URL("./texts/the-ramayan-of-valmiki.json", import.meta.url), "utf8")) as Work;
+  assert.deepEqual(ramayan.scenes.map((s) => s.title), ["Invocation", "Book I", "Book II", "Book III", "Book IV", "Book V", "Book VI"]);
+  assert.equal(ramayan.breaths.length, 2341);
+  // Book VI ends on the poem's last line; the APPENDIX (Section XIII, Carey and Marshman, Schlegel, Gorresio) is cut with the notes.
+  assert.equal(ramayan.breaths.at(-1)!.id, "s12-476");
+  assert.ok(ramayan.breaths.at(-1)!.text.endsWith("Unknown were want, disease, and crime: So calm, so happy was the time."));
+  assert.equal(ramayan.breaths.some((b) => /^Section XIII\. Rávan Doomed\.$|^Gorresio\.$|^Schlegel\.$|^Carey and Marshman\.$|^Caput XIV/.test(b.text)), false);
+  assert.equal(ramayan.breaths.some((b) => /^s1[345]$/.test(b.sceneId)), false);
+  for (const b of ramayan.breaths) assert.doesNotMatch(b.text, /\(\d+\)/, b.id);
+  const joined = ramayan.breaths.map((b) => b.text).join("\n");
+  for (const kept of ["Praise to Válmíki, bird of charming song,", "Glory to him, Prachetas’ holy son!", "Canto I. Nárad."]) assert.ok(joined.includes(kept), kept);
+  assert.doesNotMatch(joined, /^Footnotes$/m);
+});

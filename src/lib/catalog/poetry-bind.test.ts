@@ -416,8 +416,6 @@ const REBIND_LONG_STANZAS: Readonly<Record<string, string>> = {
   "rhymes-of-a-red-cross-man#s51-0": "Afternoon Tea: one printed verse paragraph, 41 lines / 489 words",
   "rhymes-of-a-red-cross-man#s51-1": "Afternoon Tea: one printed verse paragraph, 49 lines / 624 words",
   "cathay#s9-2": "The Seafarer: one printed verse paragraph, 77 lines / 525 words",
-  "kalevala#s1-19": "Preface: one prose paragraph, 382 words",
-  "kalevala#s1-47": "Preface: one prose paragraph, 375 words",
   "idylls-of-the-king#s3-21": "The Marriage of Geraint: one printed verse paragraph with no sentence break that keeps both parts under the cap, 43 lines / 364 words",
   "idylls-of-the-king#s13-1": "To the Queen: one printed verse paragraph with no sentence break that keeps both parts under the cap, 41 lines / 323 words",
   "the-defence-of-guenevere-and-other-poems#s4-57": "Sir Peter Harpdon's End: one printed verse paragraph, 42 lines / 332 words",
@@ -484,9 +482,9 @@ test("Mira poetry re-bind pack: no breath over the phone cap unless it is one pr
 
 test("Mira poetry re-bind pack 2: epics bind one scene per printed canto, rune or section", () => {
   const kalevala = load("texts", "kalevala")!;
-  assert.equal(kalevala.scenes.length, 55);
+  assert.equal(kalevala.scenes.length, 54);
   assert.deepEqual(
-    kalevala.scenes.slice(2, 4).map((scene) => scene.title),
+    kalevala.scenes.slice(1, 3).map((scene) => scene.title),
     ["Proem", "Rune I. Birth of Wainamoinen"],
   );
   assert.equal(kalevala.scenes.at(-2)?.title, "Epilogue");
