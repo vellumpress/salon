@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type TouchEvent as ReactTouchEvent } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type ReactNode, type TouchEvent as ReactTouchEvent } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { adoptFrameIndex, bootShouldKeepPlace, firstPaintIndex, pendingLinkAt, savedSentenceAt } from "@/lib/deep-link-breath";
@@ -86,7 +86,6 @@ import {
   centerLineOffset,
   focusAnchorPx,
   upcomingBreaths,
-  upcomingOpacity,
 } from "@/lib/center-line";
 import {
   classifyTurnGesture,
@@ -1725,20 +1724,20 @@ export function TbrReader({
       </p>
     ));
   });
-  const previewLines = shownUpcoming.flatMap((item, i) => {
-    const sentence = work.breaths.indexOf(item);
-    return display.blocksFor(item.text).map((block, bi) => (
-      <p
-        key={`${item.id}-${bi}`}
-        className="look-line text-ink"
-        style={{ opacity: upcomingOpacity(i, shownUpcoming.length) }}
-        data-sentence={sentence >= 0 ? sentence : undefined}
-        data-block-sentences={block.sentences}
-      >
-        <EmphasizedText text={block.text} />
-      </p>
-    ));
-  });
+  const previewLines = (key: string) =>
+    shownUpcoming.flatMap((item) => {
+      const sentence = work.breaths.indexOf(item);
+      return display.blocksFor(item.text).map((block, bi) => (
+        <p
+          key={`${key}-${item.id}-${bi}`}
+          className="look-line text-ink"
+          data-sentence={sentence >= 0 ? sentence : undefined}
+          data-block-sentences={block.sentences}
+        >
+          <EmphasizedText text={block.text} />
+        </p>
+      ));
+    });
   const passage: number[] = [];
   for (let breathIndex = groupStart; breathIndex <= groupEnd; breathIndex += 1) {
     passage.push(breathIndex);
@@ -1766,41 +1765,64 @@ export function TbrReader({
               <EmphasizedText text={line} />
             </p>
           ))
-        : passage.flatMap((breathIndex) => {
-        const item = work.breaths[breathIndex];
-        if (!item) return [];
-        const blocks = display.blocksFor(item.text);
-        const part = group?.parts.find((row) => row.index === breathIndex);
-        const range = part
-          ? { start: part.start, end: part.end }
-          : { start: 0, end: item.text.length };
-        const marked = markSpotlight(item.text, blocks, range, displayKind);
-        return blocks.map((block, bi) => {
-          const pieces = marked[bi] ?? [{ text: block.text, role: "focus" as const }];
-          return (
-            <p
-              key={`${breathIndex}-${bi}`}
-              className="breath-block"
-              data-block-sentences={block.sentences}
-            >
-              {pieces.map((piece, pi) => (
-                <span
-                  key={pi}
-                  className={cn(
-                    "breath-sentence",
-                    piece.role === "past" && "is-past",
-                    piece.role === "ahead" && "is-ahead",
-                  )}
-                  data-sentence-index={piece.role === "focus" ? atSentence : `${piece.role}-${pi}`}
-                  data-focus-sentence={piece.role === "focus" ? "" : undefined}
-                >
-                  <EmphasizedText text={piece.text} />
-                </span>
-              ))}
-            </p>
-          );
-        });
-      })}
+        : (() => {
+            const nodes: ReactNode[] = [];
+            const ahead: ReactNode[] = [];
+            const flushAhead = () => {
+              if (ahead.length === 0) return;
+              const blocks = ahead.splice(0, ahead.length);
+              nodes.push(
+                <div key={`ahead-${nodes.length}`} className="passage-ahead">
+                  <div className="passage-ahead-body">{blocks}</div>
+                  <div className="passage-ahead-blur" aria-hidden />
+                  <div className="passage-ahead-shade" aria-hidden />
+                </div>,
+              );
+            };
+            for (const breathIndex of passage) {
+              const item = work.breaths[breathIndex];
+              if (!item) continue;
+              const blocks = display.blocksFor(item.text);
+              const part = group?.parts.find((row) => row.index === breathIndex);
+              const range = part
+                ? { start: part.start, end: part.end }
+                : { start: 0, end: item.text.length };
+              const marked = markSpotlight(item.text, blocks, range, displayKind);
+              blocks.forEach((block, bi) => {
+                const pieces = marked[bi] ?? [{ text: block.text, role: "focus" as const }];
+                const onlyAhead = pieces.length > 0 && pieces.every((piece) => piece.role === "ahead");
+                const blockNode = (
+                  <p
+                    key={`${breathIndex}-${bi}`}
+                    className="breath-block"
+                    data-block-sentences={block.sentences}
+                  >
+                    {pieces.map((piece, pi) => (
+                      <span
+                        key={pi}
+                        className={cn(
+                          "breath-sentence",
+                          piece.role === "past" && "is-past",
+                          piece.role === "ahead" && "is-ahead",
+                        )}
+                        data-sentence-index={piece.role === "focus" ? atSentence : `${piece.role}-${pi}`}
+                        data-focus-sentence={piece.role === "focus" ? "" : undefined}
+                      >
+                        <EmphasizedText text={piece.text} />
+                      </span>
+                    ))}
+                  </p>
+                );
+                if (onlyAhead) ahead.push(blockNode);
+                else {
+                  flushAhead();
+                  nodes.push(blockNode);
+                }
+              });
+            }
+            flushAhead();
+            return nodes;
+          })()}
     </div>
   );
   const breathClass = cn("breath-slot", overflows && "overflows", atEnd && "at-end");
@@ -2239,8 +2261,12 @@ export function TbrReader({
               <div ref={breathSlotRef} className={breathClass}>
                 {currentLine}
               </div>
-              <div ref={upcomingSlotRef} className="upcoming-slot" aria-hidden>
-                {previewLines}
+              <div className="upcoming-fold" aria-hidden>
+                <div ref={upcomingSlotRef} className="upcoming-slot">
+                  {previewLines("near")}
+                </div>
+                <div className="upcoming-far">{previewLines("far")}</div>
+                <div className="upcoming-shade" />
               </div>
             </div>
             <div ref={bottomPadRef} className="center-pad" aria-hidden />
