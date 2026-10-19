@@ -13,6 +13,8 @@ import { readableIds, shelfWork } from "./shelf.ts";
  * A fifth painted row fails. A window under two rows fails too.
  * A lone one-row window folds into the window before it, inside the scene.
  * Sit and ritual stops stay in force: the fold does not cross them.
+ * A window that still has no earlier window in the scene takes its scene
+ * title, or is set on two lines, so the count of one-row windows is zero.
  * The column limit stays a third of the viewport (281px at 844, 266px at 800).
  * SPOTLIGHT_ROWS_WIDTH=1280 runs the desktop column.
  *
@@ -74,6 +76,7 @@ async function countOne(
     stops: readonly number[];
     cuts: readonly (readonly [number, number])[];
     breaths: { text: string; sceneId: string }[];
+    titles: Record<string, string>;
   },
 ) {
   return page.evaluate(
@@ -83,6 +86,7 @@ async function countOne(
       stops: readonly number[];
       cuts: readonly (readonly [number, number])[];
       breaths: { text: string; sceneId: string }[];
+      titles: Record<string, string>;
     }) => {
       const kit = (
         globalThis as unknown as {
@@ -127,7 +131,7 @@ async function countOne(
       let sealed = 0;
       const failures: { rows: number; index: number; sample: string }[] = [];
       const litany: { rows: number; sample: string }[] = [];
-      for (const scene of scenes.values()) {
+      for (const [sceneId, scene] of scenes) {
         const groups = kit.spot.spotlightGroups(
           scene,
           measure,
@@ -149,17 +153,37 @@ async function countOne(
           if (input.id === "fantasy" && group.sample.includes("The Litany ended")) {
             litany.push({ rows, sample: group.sample.replace(/\s+/g, " ").trim().slice(0, 180) });
           }
-          if (rows > 4) {
+          const part0 = group.parts[0];
+          const first = scene[0];
+          const opening = Boolean(
+            first && part0 && part0.index === first.index && part0.start === 0 && group.window === 0,
+          );
+          let body = group.sample;
+          if (group.parts.length === 1 && part0) {
+            const text = scene.find((breath) => breath.index === part0.index)?.text ?? "";
+            body = text.slice(part0.start, part0.end);
+          }
+          const shown =
+            rows > 0 && rows < 2
+              ? kit.spot.liftShortWindow({
+                  rows,
+                  title: input.titles[sceneId] ?? "",
+                  body,
+                  opening,
+                  titleRows: (title) => kit.spot.paintFocusRows(title, 0, title.length, column, input.kind),
+                }).rows
+              : rows;
+          if (shown > 4) {
             over += 1;
             if (failures.length < 8) {
               failures.push({
-                rows,
+                rows: shown,
                 index: group.index,
                 sample: group.sample.replace(/\s+/g, " ").trim().slice(0, 110),
               });
             }
           }
-          if (rows >= 2) {
+          if (shown >= 2) {
             previous = group.sample.replace(/\s+/g, " ").trim().slice(0, 80);
             continue;
           }
@@ -198,6 +222,7 @@ async function countOne(
       stops: job.stops,
       cuts: job.cuts,
       breaths: job.breaths,
+      titles: job.titles,
     },
   );
 }
@@ -228,8 +253,13 @@ test("no lit window paints more than four rows at 390x844", { timeout: 5_400_000
     for (let i = 0; i < ids.length; i += 1) {
       const id = ids[i]!;
       const work = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as {
+        scenes?: { id?: string; title?: string }[];
         breaths?: { text?: string; sceneId?: string }[];
       };
+      const titles: Record<string, string> = {};
+      for (const scene of work.scenes ?? []) {
+        if (scene.id) titles[scene.id] = scene.title ?? "";
+      }
       const result = await countOne(page, {
         id,
         form: shelfWork(id)?.form ?? "novel",
@@ -239,6 +269,7 @@ test("no lit window paints more than four rows at 390x844", { timeout: 5_400_000
           text: breath.text ?? "",
           sceneId: breath.sceneId ?? "book",
         })),
+        titles,
       });
       if (result.error) failures.push({ id, rows: 0, index: -1, sample: result.error });
       windows += result.windows;

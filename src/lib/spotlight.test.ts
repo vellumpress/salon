@@ -5,8 +5,10 @@ import { cutsForWork, stopsForWork } from "./catalog/merge-stop-index.ts";
 import { assembleWork } from "./import/assemble.ts";
 import { phoneBlockLimit, phoneLineMeasure, PHONE_LINE_PX, type DisplayKind } from "./display-blocks.ts";
 import {
+  liftShortWindow,
   markSpotlight,
   passageEndsAtStop,
+  SHORT_WINDOW_MARK,
   type GroupsAt,
   placeOf,
   repeatSpotlight,
@@ -442,6 +444,69 @@ test("a borrowed opening still steps back onto that same window", () => {
     assert.equal(spotlightKey(back as SpotlightPlace), spotlightKey(place), `back from ${spotlightKey(forward as SpotlightPlace)}`);
     place = forward as SpotlightPlace;
   }
+});
+
+test("a one-row opening takes its scene title when that line is different", () => {
+  const lift = liftShortWindow({
+    rows: 1,
+    title: "Have cheaply bought, to fling from hence",
+    body: "In idly-asked petition.",
+    opening: true,
+    titleRows: () => 1,
+  });
+  assert.equal(lift.rows, 2);
+  assert.equal(lift.lead, "Have cheaply bought, to fling from hence");
+  assert.equal(lift.lines, null);
+});
+
+test("a one-row opening does not take a title that would pass four rows", () => {
+  const lift = liftShortWindow({
+    rows: 1,
+    title: "A title already four rows deep",
+    body: "South Africa.",
+    opening: true,
+    titleRows: () => 4,
+  });
+  assert.equal(lift.rows, 2);
+  assert.equal(lift.lead, null);
+  assert.deepEqual(lift.lines, ["South", "Africa."]);
+});
+
+test("a one-row line after a stop is set on two lines and does not take the title", () => {
+  const lift = liftShortWindow({
+    rows: 1,
+    title: "Chapter I",
+    body: "with her teeth!",
+    opening: false,
+    titleRows: () => 1,
+  });
+  assert.equal(lift.lead, null);
+  assert.equal(lift.rows, 2);
+  assert.deepEqual(lift.lines, ["with her", "teeth!"]);
+});
+
+test("a one-word section card takes the section mark", () => {
+  const lift = liftShortWindow({
+    rows: 1,
+    title: "Shadows",
+    body: "Shadows",
+    opening: true,
+  });
+  assert.equal(lift.lead, null);
+  assert.deepEqual(lift.lines, ["Shadows", SHORT_WINDOW_MARK]);
+});
+
+test("a window of two rows is left as it was packed", () => {
+  const lift = liftShortWindow({
+    rows: 2,
+    title: "Chapter I",
+    body: "Already two rows.",
+    opening: true,
+    titleRows: () => 1,
+  });
+  assert.equal(lift.rows, 2);
+  assert.equal(lift.lead, null);
+  assert.equal(lift.lines, null);
 });
 
 test("a one-line sentence at the end of the chapter stays alone when nothing precedes it", () => {

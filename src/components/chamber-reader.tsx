@@ -65,8 +65,10 @@ import { breathSentenceCount } from "@/lib/sentence-step";
 import {
   countFocusRows,
   groupCovering,
+  liftShortWindow,
   locateSpotlight,
   markSpotlight,
+  paintFocusRows,
   repeatSpotlight,
   spotlightKey,
   spotlightNear,
@@ -1660,6 +1662,43 @@ export function TbrReader({
     : 0;
   const group = sceneGroups[groupAt];
   paintedGroupRef.current = group ?? null;
+  const metricsNow = columnMetricsNow(breathLineRef.current, display.metrics);
+  let shownRows = 2;
+  if (group && metricsNow) {
+    shownRows = 0;
+    for (const part of group.parts) {
+      const text = work.breaths[part.index]?.text ?? "";
+      shownRows += paintFocusRows(text, part.start, part.end, metricsNow, displayKind);
+    }
+  }
+  const sceneRows = sceneBreaths(breath.sceneId);
+  const firstBreath = sceneRows[0];
+  const openingPart = group?.parts[0];
+  const opening = Boolean(
+    group &&
+      firstBreath &&
+      openingPart &&
+      openingPart.index === firstBreath.index &&
+      openingPart.start === 0 &&
+      group.window === 0,
+  );
+  let windowBody = group?.sample ?? "";
+  if (group?.parts.length === 1 && openingPart) {
+    const text = work.breaths[openingPart.index]?.text ?? "";
+    windowBody = text.slice(openingPart.start, openingPart.end);
+  }
+  const lift = liftShortWindow({
+    rows: shownRows,
+    title: scene.title ?? "",
+    body: windowBody,
+    opening,
+    titleRows: (title) => (metricsNow ? paintFocusRows(title, 0, title.length, metricsNow, displayKind) : 1),
+  });
+  const headerPlace =
+    nightChrome ||
+    (lift.lead && lift.lead.replace(/\s+/g, " ").trim() === placeLabel.replace(/\s+/g, " ").trim()
+      ? work.title
+      : placeLabel);
   const groupStart = group?.index ?? index;
   const groupEnd = group?.endIndex ?? index;
   const shownLookback = lookback.filter((item) => {
@@ -1709,13 +1748,25 @@ export function TbrReader({
       ref={breathLineRef}
       className={cn(
         "breath-now relative z-[1] font-serif",
-        groupEnd > groupStart && "is-passage",
+        (groupEnd > groupStart || lift.lead || lift.lines) && "is-passage",
         isKept && "border-l-2 border-red pl-4",
       )}
       data-sentence={index}
       data-sentence-count={sentenceCount}
+      data-window-lift={lift.lead ? "lead" : lift.lines ? "lines" : "none"}
     >
-      {passage.flatMap((breathIndex) => {
+      {lift.lead ? (
+        <p className="breath-block" data-window-lead="">
+          <EmphasizedText text={lift.lead} />
+        </p>
+      ) : null}
+      {lift.lines
+        ? lift.lines.map((line, lineAt) => (
+            <p key={`lift-${lineAt}`} className="breath-block" data-window-line="">
+              <EmphasizedText text={line} />
+            </p>
+          ))
+        : passage.flatMap((breathIndex) => {
         const item = work.breaths[breathIndex];
         if (!item) return [];
         const blocks = display.blocksFor(item.text);
@@ -2238,7 +2289,7 @@ export function TbrReader({
       {together && pair ? (
         <TogetherShell
           pair={pair}
-          place={nightChrome || placeLabel}
+          place={headerPlace}
           breathIndex={index}
           workId={work.id}
           inviteUrl={publicUrl(sittingSharePath(work.id, asSittingMinutes(sittingMinutes), pair, serializeEp?.n))}
@@ -2262,7 +2313,7 @@ export function TbrReader({
               onClick={() => setOverlay("spine")}
               className="flex min-w-0 flex-1 items-center truncate bg-paper px-2.5 type-kicker text-ink sm:px-4"
             >
-              {nightChrome || placeLabel}
+              {headerPlace}
             </button>
             <Link
               to="/rituals"

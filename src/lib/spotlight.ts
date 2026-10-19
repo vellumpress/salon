@@ -22,8 +22,11 @@ import { sentenceSpans } from "./sentences.ts";
  * or six rows breaks at a semicolon, dash, or comma.
  * A window under two rows is rebalanced with its neighbours: the short
  * sentence moves back when the previous window has room, otherwise the long
- * neighbour breaks at a semicolon, dash, or comma. A chapter's last line and
- * a sit or ritual stop may stay short.
+ * neighbour breaks at a semicolon, dash, or comma. A lone one-row window
+ * folds into the window just before it, and never across a scene, a poem,
+ * or a chapter. A window that still has no earlier window inside that
+ * boundary is set with its scene title, or on two lines, so the page never
+ * keeps a one-row window.
  */
 export const SPOTLIGHT_MIN_LINES = 2;
 export const SPOTLIGHT_MAX_LINES = 4;
@@ -1565,4 +1568,78 @@ function paintedRows(parts: { text: string; focus: boolean }[][], metrics: Displ
   let rows = 0;
   for (const pieces of parts) rows += measureFocusRows(pieces, metrics);
   return Math.max(rows, 1);
+}
+
+/** A one-word section card has no second line of its own. */
+export const SHORT_WINDOW_MARK = "· · ·";
+
+export type ShortWindowLift = {
+  rows: number;
+  /** Scene title drawn above the body. The title belongs to this scene. */
+  lead: string | null;
+  /** Body set on two lines when it cannot take a title. */
+  lines: readonly [string, string] | null;
+};
+
+function splitTwoLines(text: string): [string, string] | null {
+  const breaks: number[] = [];
+  for (let i = 0; i < text.length; i += 1) {
+    if (!/\s/u.test(text[i] ?? "")) continue;
+    let j = i;
+    while (j < text.length && /\s/u.test(text[j] ?? "")) j += 1;
+    const left = text.slice(0, i).trim();
+    const right = text.slice(j).trim();
+    if (left && right) breaks.push(j);
+    i = j - 1;
+  }
+  if (breaks.length === 0) return null;
+  const target = text.length / 2;
+  let best = breaks[0]!;
+  let bestDist = Math.abs(best - target);
+  for (const at of breaks) {
+    const dist = Math.abs(at - target);
+    if (dist < bestDist) {
+      bestDist = dist;
+      best = at;
+    }
+  }
+  const left = text.slice(0, best).trim();
+  const right = text.slice(best).trim();
+  if (!left || !right) return null;
+  return [left, right];
+}
+
+/**
+ * A window the packer could not fold without leaving its scene.
+ * The scene title is the line that belongs above an opening window, when
+ * it is a different line and the two together stay inside four rows.
+ * Anything still on one row is set on two lines. A single word takes the
+ * section mark under it. Sit stops stay where they are: the line after a
+ * stop is set on two lines rather than pulled back across the stop.
+ */
+export function liftShortWindow(input: {
+  rows: number;
+  title: string;
+  body: string;
+  opening: boolean;
+  titleRows?: (title: string) => number;
+}): ShortWindowLift {
+  if (!(input.rows > 0) || input.rows >= SPOTLIGHT_MIN_LINES) {
+    return { rows: input.rows, lead: null, lines: null };
+  }
+  const title = input.title.trim();
+  const titleFlat = title.replace(/\s+/g, " ").trim();
+  const bodyFlat = input.body.replace(/\s+/g, " ").trim();
+  if (input.opening && titleFlat && titleFlat !== bodyFlat) {
+    const titleRows = input.titleRows?.(title) ?? 1;
+    const sum = titleRows + input.rows;
+    if (titleRows >= 1 && sum >= SPOTLIGHT_MIN_LINES && sum <= SPOTLIGHT_MAX_LINES) {
+      return { rows: sum, lead: title, lines: null };
+    }
+  }
+  const pair = splitTwoLines(input.body);
+  if (pair) return { rows: SPOTLIGHT_MIN_LINES, lead: null, lines: pair };
+  const word = bodyFlat || input.body.trim();
+  if (!word) return { rows: input.rows, lead: null, lines: null };
+  return { rows: SPOTLIGHT_MIN_LINES, lead: null, lines: [word, SHORT_WINDOW_MARK] };
 }
