@@ -337,6 +337,7 @@ test("known origin overrides", () => {
     "ancient-ballads-and-legends-of-hindustan": "India",
     "serbian-lyrics": "Serbia",
     "seven-legends": "Egypt",
+    "the-little-barefoot": "Germany",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",

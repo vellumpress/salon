@@ -749,6 +749,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "ancient-ballads-and-legends-of-hindustan": "India",
   "serbian-lyrics": "Serbia",
   "seven-legends": "Egypt",
+  "the-little-barefoot": "Germany",
   nostalgia: "Italy",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",

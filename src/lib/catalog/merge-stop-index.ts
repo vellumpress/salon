@@ -1765,6 +1765,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "the-listeners-and-other-poems": [
     91
   ],
+  "the-little-barefoot": [
+    20
+  ],
   "the-little-clay-cart": [
     38
   ],
