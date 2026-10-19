@@ -43,7 +43,7 @@ import { formatHandle } from "@/lib/social";
 import { dayKey } from "@/lib/day-key";
 import { jointStreakCount, jointStreakLabel } from "@/lib/joint-streak";
 
-type TogetherSearch = { join?: string; start?: boolean; host?: boolean };
+type TogetherSearch = { join?: string; start?: boolean; host?: boolean; room?: boolean };
 
 export const Route = createFileRoute("/together")({
   validateSearch: (search: Record<string, unknown>): TogetherSearch => {
@@ -52,6 +52,7 @@ export const Route = createFileRoute("/together")({
     if (join) next.join = join;
     if (searchFlag(search.start)) next.start = true;
     if (searchFlag(search.host)) next.host = true;
+    if (searchFlag(search.room)) next.room = true;
     return next;
   },
   component: TogetherPage,
@@ -71,7 +72,7 @@ export const Route = createFileRoute("/together")({
 });
 
 function TogetherPage() {
-  const { join, start, host } = Route.useSearch();
+  const { join, start, host, room } = Route.useSearch();
   const joined = useTbr((s) => s.joined) ?? [];
   const lastShuffle = useTbr((s) => s.lastShuffle);
   const handle = useTbr((s) => s.handle) ?? "";
@@ -86,7 +87,7 @@ function TogetherPage() {
   const [creating, setCreating] = useState(Boolean(start));
   const [boardNote, setBoardNote] = useState("");
   const [hosting, setHosting] = useState(Boolean(host));
-  const [rooming, setRooming] = useState(false);
+  const [rooming, setRooming] = useState(Boolean(room));
   const [created, setCreated] = useState<BookClubView | null>(null);
   const [welcome, setWelcome] = useState<BookClubView | null>(null);
   const [joinMissing, setJoinMissing] = useState(false);

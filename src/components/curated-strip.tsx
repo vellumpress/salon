@@ -1,11 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
+import { DoorCarousel } from "@/components/door-carousel";
 import { WorksCard } from "@/components/works-card";
 import { usePersistHydrated } from "@/components/resume-link";
 import { GUEST_CURATORS } from "@/lib/catalog/curated";
 import { homeMixRows, mixHistoryFromState, type MixRow } from "@/lib/catalog/home-mix";
+import { curatedDoorSlides, DOOR_LOOP_SECONDS } from "@/lib/home-doors";
 import { dayKey } from "@/lib/day-key";
-import { fillClass, fillInk, mosaicFills, type Fill } from "@/lib/mondrian";
+import { mosaicFills, type Fill } from "@/lib/mondrian";
 import { useTbr } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -104,25 +106,35 @@ export function curatedBlockFills(count: number, seed: string): Fill[] {
 export function CuratedStrip({ fill }: { fill: Fill }) {
   const { ready, day, rows } = useDailyMix();
   const teaser = mixTeaser(rows);
+  const slides = useMemo(() => curatedDoorSlides(rows), [rows]);
+  const shown =
+    slides.length > 0
+      ? slides
+      : [
+          {
+            id: "today",
+            kicker: "Today",
+            title: "Curated",
+            line: teaser,
+            kind: "curated" as const,
+          },
+        ];
 
   return (
-    <Link
-      to="/curated"
-      preload="intent"
-      aria-label={`Curated. ${teaser}`}
-      data-home-curated=""
-      data-mix-ready={ready ? "1" : "0"}
-      data-mix-day={day ?? ""}
-      className={cn(
-        "cell-pillar cell-curated-door relative flex min-h-0 flex-col justify-end p-5 sm:p-8",
-        fillClass(fill),
-        fillInk(fill),
-      )}
-    >
-      <span className="type-kicker opacity-70">Today</span>
-      <span className="pillar-title mt-1">Curated</span>
-      <span className="type-pitch pillar-pitch curated-teaser mt-2.5">{teaser}</span>
-    </Link>
+    <DoorCarousel
+      door="curated"
+      label="Curated"
+      aria={`Curated. ${teaser}`}
+      fill={fill}
+      seconds={DOOR_LOOP_SECONDS.curated}
+      slides={shown}
+      cta={{ kind: "curated", label: "Today's shelves" }}
+      mark={{
+        "data-home-curated": "",
+        "data-mix-ready": ready ? "1" : "0",
+        "data-mix-day": day ?? "",
+      }}
+    />
   );
 }
 
