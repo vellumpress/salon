@@ -135,6 +135,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "marie-claire": { label: "Berry", region: "fr" },
     cranford: { label: "Cranford", region: "gb" },
     "annals-of-the-parish": { label: "Ayrshire", region: "gb" },
+    "seven-legends": { label: "Alexandria", region: "eg" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -740,4 +741,11 @@ test("Sun 18 Oct AM SERBIAN-LYRICS place: the songs are set in Serbia, so the ch
   assert.equal(chipOnlyLabel("serbian-lyrics"), "Serbia");
   assert.equal(countryFor(work!), "Serbia");
   assert.equal((REGION_SHAPES as Record<string, unknown>).rs, undefined);
+});
+
+test("Sun 18 Oct PM Seven Legends place reuses eg; Alexandria; no new region key", () => {
+  assert.ok(REGION_SHAPES.eg?.d, "eg shape");
+  assert.deepEqual(placeFor(shelfWork("seven-legends")!), { label: "Alexandria", region: "eg" });
+  assert.equal(CHIP_ONLY_PLACE["seven-legends"], undefined);
+  assert.equal(countryFor(shelfWork("seven-legends")!), "Egypt");
 });

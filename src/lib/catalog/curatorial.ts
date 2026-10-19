@@ -1250,6 +1250,9 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "ancient-ballads-and-legends-of-hindustan",
   // Mira Sun 18 Oct 2026 AM SERBIAN-LYRICS — An Anthology of Jugoslav Poetry: Serbian Lyrics (ed. B. Stevenson Stanoyevich, 1920) follows the Dutt ballads at the end of Next, plain Next, no heads-up. Never Featured, off every Ritual lane.
   "serbian-lyrics",
+  // Mira Sun 18 Oct 2026 PM SEVEN-LEGENDS — Seven Legends (Keller, tr. Wyness, 1911) follows Serbian Lyrics at the end of Next, Next carefully only (the heads-up is on the card). Never Featured.
+  // Off every Ritual lane; the opening sit (Eugenia, from its epigraph to the abbot over seventy monks) is never unwind or before-sleep.
+  "seven-legends",
 ] as const;
 
 /**
