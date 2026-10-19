@@ -1462,6 +1462,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "the-blithedale-romance": [
     94
   ],
+  "the-blue-castle": [
+    15
+  ],
   "the-book-of-khalid": [
     12
   ],

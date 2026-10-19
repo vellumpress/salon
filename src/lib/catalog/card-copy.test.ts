@@ -338,6 +338,7 @@ test("known origin overrides", () => {
     "serbian-lyrics": "Serbia",
     "seven-legends": "Egypt",
     "the-little-barefoot": "Germany",
+    "the-blue-castle": "Canada",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",

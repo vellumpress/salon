@@ -137,6 +137,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "annals-of-the-parish": { label: "Ayrshire", region: "gb" },
     "seven-legends": { label: "Alexandria", region: "eg" },
     "the-little-barefoot": { label: "Black Forest", region: "de" },
+    "the-blue-castle": { label: "Deerwood, Muskoka, Ontario", region: "ca" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -756,4 +757,11 @@ test("Sun 18 Oct PM The Little Barefoot place reuses de; Black Forest; no new re
   assert.deepEqual(placeFor(shelfWork("the-little-barefoot")!), { label: "Black Forest", region: "de" });
   assert.equal(CHIP_ONLY_PLACE["the-little-barefoot"], undefined);
   assert.equal(countryFor(shelfWork("the-little-barefoot")!), "Germany");
+});
+
+test("Sun 18 Oct PM The Blue Castle place reuses ca; Deerwood, Muskoka, Ontario; no new region key", () => {
+  assert.ok(REGION_SHAPES.ca?.d, "ca shape");
+  assert.deepEqual(placeFor(shelfWork("the-blue-castle")!), { label: "Deerwood, Muskoka, Ontario", region: "ca" });
+  assert.equal(CHIP_ONLY_PLACE["the-blue-castle"], undefined);
+  assert.equal(countryFor(shelfWork("the-blue-castle")!), "Canada");
 });
