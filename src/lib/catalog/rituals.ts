@@ -614,6 +614,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `“The Dancing-Master” is one complete story from Parisian Points of View — asked by a hostess to engage old Morin, a dancing-master, for her little girls, a guest goes behind the scenes at the opera one February night in 1881, finds him on stage as a bishop in “The Prophet,” and in the wings gets an earnest lecture on why France needs more dancing. It ends “…withstood the shock of this avalanche of dancers.” A heads-up before you start: the old teacher talks frankly, in the manner of his day, about sizing up a partner's figure while waltzing. Amused and brisk, for a walk. Paris.`,
   "the-little-barefoot":
     `Early in the morning of an autumnal day, when the morning mist lay upon the ground, two children, a boy and a girl of six and seven years old, went hand in hand through the back, or garden path, out of the village. The first reading is Chapter I, The Children Knock, whole — every morning orphaned Amrie and her little brother Dami knock at the shut door of their parents’ house and call for father and mother, then skip stones on the pond until the cuckoo clock calls them to school. It ends “…Amrie nodded silently.” A heads-up before you start: both parents have just died of a short illness, and the children grieve. Berthold Auerbach’s village tale in Eliza Buckminster Lee’s 1867 English. Tender and sad, for a quiet hour, not for sleep. The Black Forest.`,
+  "bambi":
+    `He came into the world in the middle of the thicket, in one of those little, hidden forest glades which seem to be entirely open, but are really screened in on all sides. Chapter I and the start of Chapter II. A fawn is born in a hidden glade, a chatty magpie drops by, his mother washes him and whispers his name, and in early summer he follows her down the narrow forest paths, asking question after question. The first reading ends “…and grow silent.” Felix Salten’s 1928 story in Whittaker Chambers’s English. Soft and wondering, for the end of the day. A heads-up for later chapters: hunters come into the woods, and Bambi loses his mother.`,
   "winnie-the-pooh":
     `Edward Bear, known to his friends as Winnie-the-Pooh, or Pooh for short, was walking through the forest one day, humming proudly to himself. “In Which Pooh Goes Visiting and Gets into a Tight Place” is one complete chapter from Winnie-the-Pooh — after morning Stoutness Exercises and a brand-new hum, Pooh calls on Rabbit, stays for honey, and finds the front door a little tight on the way out. It ends “…Silly old Bear!” Bright and comic, made for waking. The forest.`,
   "the-mist":
@@ -1701,6 +1703,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "tales-from-the-fjeld",
       // Mira Fri 9 Oct 2026 PM AKSAKOV-ZEROMSKI — Tales by Polish Authors also sits here: Zeromski's Temptation, the whole tale (RITUAL_START_AT). Before-sleep and unwind.
       "tales-by-polish-authors",
+      // Mira Mon 19 Oct 2026 AM BAMBI — Bambi (Salten, tr. Chambers, 1928): Rituals only, Before sleep only. The first reading (Chapter I and the start of Chapter II, the fawn's birth to "and grow silent.") is the calmest stretch in the book: never unwind; never Next or Featured.
+      "bambi",
     ],
   },
   {
@@ -2731,6 +2735,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "dreams-schreiner": 6,
   "the-dancing-master": 10,
   "the-little-barefoot": 10,
+  "bambi": 6,
   "growth-of-the-soil": 15,
   "nada-the-lily": 17,
   "all-quiet-on-the-western-front": 10,

@@ -1,0 +1,113 @@
+{
+  "id": "bambi",
+  "title": "Bambi: A Life in the Woods",
+  "author": "Felix Salten (tr. Whittaker Chambers)",
+  "year": "1928",
+  "note": "Opening sit: Chapter I whole and the start of Chapter II, to “and grow silent.”",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Chapter I",
+      "place": "Chapter I",
+      "reentry": "He came into the world in the middle of the thicket, in one of those little, hidden forest glades which seem to be entirely open, but are really screened in on all sides. There was very little room in it, scarcely enough for him and his mot",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Chapter II",
+      "place": "Chapter II",
+      "reentry": "In early summer the trees stood still under the blue sky, held their limbs outstretched and received the direct rays of the sun. On the shrubs and bushes in the undergrowth, the flowers unfolded their red, white and yellow stars. On some th",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "He came into the world in the middle of the thicket, in one of those little, hidden forest glades which seem to be entirely open, but are really screened in on all sides. There was very little room in it, scarcely enough for him and his mother."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "He stood there, swaying unsteadily on his thin legs and staring vaguely in front of him with clouded eyes which saw nothing. He hung his head, trembled a great deal, and was still completely stunned."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "“What a beautiful child,” cried the magpie."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "She had flown past, attracted by the deep groans the mother uttered in her labor. The magpie perched on a neighboring branch. “What a beautiful child,” she kept repeating. Receiving no answer, she went on talkatively, “How amazing to think that he should be able to get right up and walk! How interesting! I’ve never seen the like of it before in all my born days. Of course, I’m still young, only a year out of the nest, you might say. But I think it’s wonderful. A child like that, hardly a minute in this world, and beginning to walk already! I call that remarkable. Really, I find that everything you deer do is remarkable. Can he run, too?”"
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "“Of course,” replied the mother softly. “But you must pardon me if I don’t talk with you now. I have so much to do, and I still feel a little faint.”"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "“Don’t put yourself out on my account,” said the magpie. “I have very little time myself. But you don’t see a sight like this every day. Think what a care and bother such things mean to us. The children can’t stir once they are out of the egg but lie helpless in the nest and require an attention, an attention, I repeat, of which you simply can’t have any comprehension. What a labor it is to feed them, what a trouble to watch them. Just think for a moment what a strain it is to hunt food for the children and to have to be eternally on guard lest something happen to them. They are helpless if you are not with them. Isn’t it the truth? And how long it is before they can move, how long it is before they get their feathers and look like anything at all.”"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "“Pardon,” replied the mother, “I wasn’t listening.”"
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "The magpie flew off. “A stupid soul,” she thought to herself, “very nice, but stupid.”"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "The mother scarcely noticed that she was gone. She continued zealously washing her newly-born. She washed him with her tongue, fondling and caressing his body in a sort of warm massage."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "The slight thing staggered a little. Under the strokes of her tongue, which softly touched him here and there, he drew himself together and stood still. His little red coat, that was still somewhat tousled, bore fine white spots, and on his vague baby face there was still a deep, sleepy expression."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Round about grew hazel bushes, dogwoods, black-thorns and young elders. Tall maples, beeches and oaks wove a green roof over the thicket and from the firm, dark-brown earth sprang fern fronds, wood-vetch and sage. Underneath, the leaves of the violets, which had already bloomed, and of the strawberries, which were just beginning, clung to the ground. Through the thick foliage, the early sunlight filtered in a golden web. The whole forest resounded with myriad voices, was penetrated by them in a joyous agitation. The wood-thrush rejoiced incessantly, the doves cooed without stopping, the blackbirds whistled, finches warbled, the tit-mice chirped. Through the midst of these songs the jay flew, uttering its quarrelsome cry, the magpie mocked them, and the pheasants cackled loud and high. At times the shrill exulting of a woodpecker rose above all the other voices. The call of the falcon shrilled, light and piercing, over the tree-tops, and the hoarse crow chorus was heard continuously."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "The little fawn understood not one of the many songs and calls, not a word of the conversations. He did not even listen to them. Nor did he heed any of the odors which blew through the woods. He only heard the soft licking against his coat that washed him and warmed him and kissed him. And he smelled nothing but his mother’s body near him. She smelled good to him and, snuggling closer to her, he hunted eagerly around and found nourishment for his life."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "While he suckled, the mother continued to caress her little one. “Bambi,” she whispered. Every little while she raised her head and, listening, snuffed the wind. Then she kissed her fawn again, reassured and happy."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "“Bambi,” she repeated. “My little Bambi.”"
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "In early summer the trees stood still under the blue sky, held their limbs outstretched and received the direct rays of the sun. On the shrubs and bushes in the undergrowth, the flowers unfolded their red, white and yellow stars. On some the seed pods had begun to appear again. They perched innumerable on the fine tips of the branches, tender and firm and resolute, and seemed like small, clenched fists. Out of the earth came whole troops of flowers, like motley stars, so that the soil of the twilit forest floor shone with a silent, ardent, colorful gladness. Everything smelled of fresh leaves, of blossoms, of moist clods and green wood. When morning broke, or when the sun went down, the whole woods resounded with a thousand voices, and from morning till night, the bees hummed, the wasps droned, and filled the fragrant stillness with their murmur."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "These were the earliest days of Bambi’s life. He walked behind his mother on a narrow track that ran through the midst of the bushes. How pleasant it was to walk there. The thick foliage stroked his flanks softly and bent supplely aside. The track appeared to be barred and obstructed in a dozen places and yet they advanced with the greatest ease. There were tracks like this everywhere, running criss-cross through the whole woods. His mother knew them all, and if Bambi sometimes stopped before a bush as if it were an impenetrable green wall, she always found where the path went through, without hesitation or searching."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "Bambi questioned her. He loved to ask his mother questions. It was the pleasantest thing for him to ask a question and then to hear what answer his mother would give. Bambi was never surprised that question after question should come into his mind continually and without effort. He found it perfectly natural, and it delighted him very much. It was very delightful, too, to wait expectantly till the answer came. If it turned out the way he wanted, he was satisfied. Sometimes of course, he did not understand, but that was pleasant also because he was kept busy picturing what he had not understood, in his own way. Sometimes he felt very sure that his mother was not giving him a complete answer, was intentionally not telling him all she knew. And, at first, that was very pleasant, too. For then there would remain in him such a lively curiosity, such suspicion, mysteriously and joyously flashing through him, such anticipation, that he would become anxious and happy at the same time, and grow silent."
+    }
+  ]
+}

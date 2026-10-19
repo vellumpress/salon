@@ -555,6 +555,7 @@ export const CHIP_ONLY_PLACE: Record<string, string> = {
  */
 export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
   "wedding-day", // story prints no place; never invent one
+  "bambi", // Mira Mon 19 Oct 2026 AM BAMBI: the forest is never named and the front matter names no country; no chip, no country
 ]);
 
 export function chipOnlyLabel(id: string | undefined): string | null {

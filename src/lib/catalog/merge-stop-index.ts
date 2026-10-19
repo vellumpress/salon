@@ -182,6 +182,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "ballads-of-a-cheechako": [
     4
   ],
+  "bambi": [
+    16
+  ],
   "banjo": [
     95
   ],
