@@ -2171,6 +2171,8 @@ html:has(.board-doors) body {
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  /* The blur can paint above the side buttons on iPhone. Hits pass through. */
+  pointer-events: none;
 }
 
 .upcoming-slot,
