@@ -19094,7 +19094,7 @@ test("Mira Sun 18 Oct AM SERBIAN-LYRICS: An Anthology of Jugoslav Poetry: Serbia
   // Leaf n7: "Copyright, 1920, by Richard G. Badger".
   assert.equal(work.year, 1920);
   assert.equal(work.form, "poem");
-  assert.equal(work.breaths, 551);
+  assert.equal(work.breaths, 340);
   assert.equal(work.minutes, 105);
   assert.equal(countryFor(work), "Serbia");
   assert.equal(placeFor(work), null);
@@ -19106,7 +19106,7 @@ test("Mira Sun 18 Oct AM SERBIAN-LYRICS: An Anthology of Jugoslav Poetry: Serbia
   const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
   const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as Work;
   assert.equal(full.year, "1920");
-  assert.equal(full.breaths.length, 551);
+  assert.equal(full.breaths.length, 340);
   assert.equal(full.scenes.length, 170);
   full.scenes.forEach((scene, i) => assert.equal(scene.id, `s${i}`));
   assert.equal(full.scenes[0]!.title, "I. The Curse");
@@ -19117,13 +19117,13 @@ test("Mira Sun 18 Oct AM SERBIAN-LYRICS: An Anthology of Jugoslav Poetry: Serbia
   assert.equal(Math.round(words / 200), work.minutes);
   assert.equal(openingBreathIndex(full), 0);
   assert.ok(full.breaths[0]!.text.startsWith(work.opening + " / "));
-  // Translator initials stay as printed, one line each; the four unsigned poems stay unsigned.
-  const credits = new Set(["S. J. B.", "O. M.", "J. W. W.", "J. W. W", "B. S. S."]);
-  const unsigned = full.scenes.filter((scene) => !full.breaths.some((b) => b.sceneId === scene.id && credits.has(b.text))).map((s) => s.title);
+  // Translator initials stay as printed, as the last line of the breath before them (SERBIAN-CREDITS); the four unsigned poems stay unsigned.
+  const credit = / \/ \(?(S\. J\. B\.|O\. M\.|J\. W\. W\.?|B\. S\. S\.)\)?(?= \/ |$)/;
+  const unsigned = full.scenes.filter((scene) => !full.breaths.some((b) => b.sceneId === scene.id && credit.test(b.text))).map((s) => s.title);
   assert.deepEqual(unsigned, ["IX. Curse", "XI. The Knitter", "XXXIII. Lover Asleep", "LXXXIX. Reminiscences"]);
-  assert.equal(full.breaths.filter((b) => b.text === "J. W. W").length, 1);
+  assert.equal(full.breaths.filter((b) => / \/ J\. W\. W(?= \/ |$)/.test(b.text)).length, 1);
   // Opening sit: poems I-II with their notes (1,329 words, 6.6 min); spans two chapters.
-  assert.equal(opened.breaths.length, 21);
+  assert.equal(opened.breaths.length, 17);
   assert.deepEqual(opened.scenes.map((s) => s.id), ["s0", "s1"]);
   opened.breaths.forEach((b, i) => {
     assert.equal(b.id, full.breaths[i]?.id, `open ${i}`);
@@ -19137,6 +19137,60 @@ test("Mira Sun 18 Oct AM SERBIAN-LYRICS: An Anthology of Jugoslav Poetry: Serbia
   // As the Badger 1920 scan prints them (crops in the pack).
   for (const word of ["Cursing themselves, and others cursing. / A young", "\"'Twas made", "fratricide\"", "affectionate maid.", "stood percht against the blue.", "\"Give me, O grass, my color red!\"", "\"Patternized by Carapića Vasa,", "My mother in the gateway calls to me . . . . \"Come straightway\"", "Frome visions dark", "'O my girl, my soul of me most dearest,", "Note: *Kalfa*, governess. (J. W. W.)"]) assert.ok(joined.includes(word), word);
   assert.doesNotMatch(joined, /Gutenberg|Badger|Gorham|MILIVOY|POEMS TRANSLATED|\[Footnote|\[\d+\]|\[v[csz]\]|_|--/);
-  assert.ok(full.breaths.at(-1)!.text.startsWith("Note: No. 422"));
+  assert.ok(full.breaths.at(-1)!.text.endsWith(" / Note: No. 422 Vol. I. (Edition of 1891)."));
   for (const breath of full.breaths) assert.equal(breath.text.includes("\n"), false);
+});
+
+test("Mira Sun 18 Oct SERBIAN-CREDITS: Serbian Lyrics sets every standalone translator credit, and the one-line mole note signed (Edit.), as the last line of the breath before it, wording as printed; sit still poems I-II, merge stop on its new last breath", () => {
+  const id = "serbian-lyrics";
+  const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
+  const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as Work;
+  // No credit line stands alone any more, in parentheses or not.
+  const alone = /^\(?[A-Z]\. ?[A-Z]\.(?: ?[A-Z]\.?)?\)?$/;
+  assert.deepEqual(full.breaths.filter((b) => alone.test(b.text.trim())).map((b) => b.id), []);
+  // 167 initials joined: S. J. B. 83 (one printed in parentheses), J. W. W. 39 (one printed without its last stop), B. S. S. 31, O. M. 14.
+  const tail = (re: RegExp) => full.breaths.reduce((n, b) => n + (b.text.match(new RegExp(re.source.replace(/\$$/, "(?= \\/ |$)"), "g"))?.length ?? 0), 0);
+  assert.equal(tail(/ \/ S\. J\. B\.$/), 82);
+  assert.equal(tail(/ \/ \(S\. J\. B\.\)$/), 1);
+  assert.equal(tail(/ \/ J\. W\. W\.$/), 38);
+  assert.equal(tail(/ \/ J\. W\. W$/), 1);
+  assert.equal(tail(/ \/ B\. S\. S\.$/), 31);
+  assert.equal(tail(/ \/ O\. M\.$/), 14);
+  assert.equal(full.breaths.length, 340);
+  full.breaths.forEach((b) => assert.match(b.id, /^s\d+-\d+$/));
+  // Poem I: last stanza then its initials; the mole line closes the note before it.
+  assert.ok(full.breaths[0]!.text.endsWith("May it thy suffering son restore!\" / S. J. B."));
+  assert.equal(full.breaths[1]!.text.startsWith("Note: This song as also those signed"), true);
+  assert.ok(full.breaths[12]!.text.endsWith("Finally the child turned to a mole. / Thus became, according to Serbian tradition, the first mole. (Edit.)"));
+  assert.equal(full.breaths[12]!.sceneId, "s0");
+  // Poem II: stanza + initials; the literal translation in the note + its printed "(S. J. B.)".
+  assert.ok(full.breaths[13]!.text.endsWith("So melts my heart in thine, my dear!\" / S. J. B."));
+  assert.ok(full.breaths[16]!.text.endsWith("So my heart within thy heart is melting.\" / (S. J. B.)"));
+  assert.equal(full.breaths[16]!.sceneId, "s1");
+  assert.equal(full.breaths[17]!.sceneId, "s2");
+  // Sit: poems I-II whole, 17 breaths; the merge stop moves from [20] to [16].
+  assert.equal(opened.breaths.length, 17);
+  assert.deepEqual(opened.scenes.map((s) => s.id), ["s0", "s1"]);
+  assert.deepEqual(MERGE_STOP_INDEX[id], [16]);
+  opened.breaths.forEach((b, i) => assert.equal(b.text, full.breaths[i]!.text, `open ${i}`));
+});
+
+test("Mira Sun 18 Oct SERBIAN-CREDITS v2: Serbian Lyrics has no one-line breath left; edition notes, short glossary notes, the Vuk citation and the short stanza close the breath before them, wording as printed", () => {
+  const id = "serbian-lyrics";
+  const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
+  const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as Work;
+  assert.equal(full.breaths.length, 340);
+  // 30 edition notes (CXLI-CLXX), each now the last line of its poem's breath.
+  assert.equal(full.breaths.filter((b) => / \/ Note: No\. \d+ Vol\. [IV]+\. \(Edition of 18\d\d\.?\)\.?$/.test(b.text)).length, 30);
+  assert.equal(full.breaths.some((b) => /^Note: No\. \d+ Vol/.test(b.text)), false);
+  const joined = full.breaths.map((b) => b.text);
+  assert.ok(joined.some((t) => t.endsWith("Pa ce doci u pogane ruke.\" / Vuk i. p. 200")));
+  assert.ok(joined.some((t) => t.includes("O waste not thy time: / Beloved, arise. / Enjoy the sweet bliss / Of a kiss—of a kiss:")));
+  assert.ok(joined.some((t) => t.endsWith(" / S. J. B. / Note: *Zvezda*, star, is of the feminine gender. (S. J. B.) / Note: Sun is feminine in Serbian. (S. J. B.)")));
+  assert.ok(joined.some((t) => t.endsWith(" / Note: *Mlinar*, the miller. (S. J. B.)")));
+  assert.equal(full.breaths.some((b) => b.text === "Vuk i. p. 200" || b.text.startsWith("Note: *Mlinar*")), false);
+  // The sit is untouched: poems I-II, 17 breaths, stop [16].
+  assert.equal(opened.breaths.length, 17);
+  assert.deepEqual(MERGE_STOP_INDEX[id], [16]);
+  opened.breaths.forEach((b, i) => assert.equal(b.text, full.breaths[i]!.text, `open ${i}`));
 });
