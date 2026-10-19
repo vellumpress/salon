@@ -3,7 +3,7 @@
   "title": "The Little Barefoot",
   "author": "Berthold Auerbach (tr. Eliza Buckminster Lee)",
   "year": "1867",
-  "note": "Project Gutenberg 70159, from the first edition of this translation (H. B. Fuller and Company, Boston; HathiTrust hvd.hn24sm). Year 1867 from the title page (seq 13: \"BOSTON: H. B. FULLER AND COMPANY ... 1867.\") and its verso (seq 14: \"Entered ... in the year 1867, by H. B. FULLER\"). All twenty chapters are bound whole, The Children Knock through Family Ways, each with its printed title. The title pages, contents, plate captions and decorative headpieces are cut. The translator's two footnotes are set as Note lines after the paragraph they belong to, markers removed. The songs keep their printed lines with a slash at each line, one breath per stanza. Double hyphens are set as dashes. The whole text was read against the 1867 scan, pages 7 to 275, and follows the print where it differs from the Gutenberg text. Five printer's errors that Gutenberg had silently corrected are restored: breath (for breathe, p. 34), stich (p. 57), Seibenhöfen (p. 185; Siebenhöfen elsewhere), suprise (p. 187) and pentrating (p. 237). Thirteen compounds keep their printed form where Gutenberg had standardized the hyphenation, among them service tree (pp. 57, 59), who ever (p. 82) and school-master (p. 258). Three more readings follow the print, checked on the page images: Haldenbrunn (p. 37; Holdenbrunn elsewhere), Lauterback (p. 152; Lauterbach elsewhere) and \"yon fields\" (p. 224).",
+  "note": "Project Gutenberg 70159, from the first edition of this translation (H. B. Fuller and Company, Boston; HathiTrust hvd.hn24sm). Year 1867 from the title page (seq 13: \"BOSTON: H. B. FULLER AND COMPANY ... 1867.\") and its verso (seq 14: \"Entered ... in the year 1867, by H. B. FULLER\"). All twenty chapters are bound whole, The Children Knock through Family Ways, each with its printed title. The title pages, contents, plate captions and decorative headpieces are cut. The translator's two footnotes are set as Note lines after the paragraph they belong to, markers removed. The songs keep their printed lines with a slash at each line, one breath per stanza. Double hyphens are set as dashes. The whole text was read against the 1867 scan, pages 7 to 275. The print's hyphenation is followed where Gutenberg had standardized it, in thirteen places, among them service tree (pp. 57, 59), who ever (p. 82) and school-master (p. 258), and \"yon fields\" (p. 224) follows the print. Where the print has a typesetting slip, Gutenberg's correction is kept (seven places).",
   "minutes": 306,
   "cover": "",
   "coverAlt": "",
@@ -588,7 +588,7 @@
     {
       "id": "s3-12",
       "sceneId": "s3",
-      "text": "In the winter, Amrie was often at the fireside with Krappenzacher, listening eagerly to his violin. Yes, Krappenzacher once gave her great praise. He said, “Child, you are not stupid;” for after listening a long time Amrie had said, “It is wonderful how a fiddle can hold its breath so long. I cannot do it.” And at home in the quiet winter nights when Brown Mariann related exciting or horrible tales, or magical histories, Amrie, drawing a long breath when they were ended, would say, “Oh, Mariann, I must now take breath, for as long as you are speaking I cannot breath; I must hold my breath.”"
+      "text": "In the winter, Amrie was often at the fireside with Krappenzacher, listening eagerly to his violin. Yes, Krappenzacher once gave her great praise. He said, “Child, you are not stupid;” for after listening a long time Amrie had said, “It is wonderful how a fiddle can hold its breath so long. I cannot do it.” And at home in the quiet winter nights when Brown Mariann related exciting or horrible tales, or magical histories, Amrie, drawing a long breath when they were ended, would say, “Oh, Mariann, I must now take breath, for as long as you are speaking I cannot breathe; I must hold my breath.”"
     },
     {
       "id": "s3-13",
@@ -648,7 +648,7 @@
     {
       "id": "s3-24",
       "sceneId": "s3",
-      "text": "The children had an uncle who lived about seven hours’ journey from Haldenbrunn, a wood-hewer in Fluorn. They had seen him once, at the funeral of their parents; he walked behind the Mayor, who led the children by the hand. Since then the children had often dreamed of their uncle in Fluorn. They were often told that he looked like their father, and since they had given up the hope that father and mother would come back again, they were more curious to see their uncle. But as years passed, and they every year strewed the mountain-ash berries on their graves, and they had learned to read the names of their parents upon the same dark cross, they forgot the uncle in Fluorn. In all these years they had heard nothing of him. Both children were called one day into the house of their guardian. There sat a man large and tall, with a brown complexion."
+      "text": "The children had an uncle who lived about seven hours’ journey from Holdenbrunn, a wood-hewer in Fluorn. They had seen him once, at the funeral of their parents; he walked behind the Mayor, who led the children by the hand. Since then the children had often dreamed of their uncle in Fluorn. They were often told that he looked like their father, and since they had given up the hope that father and mother would come back again, they were more curious to see their uncle. But as years passed, and they every year strewed the mountain-ash berries on their graves, and they had learned to read the names of their parents upon the same dark cross, they forgot the uncle in Fluorn. In all these years they had heard nothing of him. Both children were called one day into the house of their guardian. There sat a man large and tall, with a brown complexion."
     },
     {
       "id": "s3-25",
@@ -1028,7 +1028,7 @@
     {
       "id": "s4-21",
       "sceneId": "s4",
-      "text": "In fact there formed itself in Amrie a disposition to solitary dreaminess, which was rarely interrupted by the occurrences of life. But, as through all the dreaming and observation of nature she continued industriously to knit, and to let no stich drop; and as on the corner by the service tree, the deepening night shadows and the refreshing strawberries were so near each other, that they appeared to sprout from the same root:—thus were the distinct representations of nature and the dreamy twilight of life near each other in the heart of the child."
+      "text": "In fact there formed itself in Amrie a disposition to solitary dreaminess, which was rarely interrupted by the occurrences of life. But, as through all the dreaming and observation of nature she continued industriously to knit, and to let no stitch drop; and as on the corner by the service tree, the deepening night shadows and the refreshing strawberries were so near each other, that they appeared to sprout from the same root:—thus were the distinct representations of nature and the dreamy twilight of life near each other in the heart of the child."
     },
     {
       "id": "s4-22",
@@ -3028,7 +3028,7 @@
     {
       "id": "s9-64",
       "sceneId": "s9",
-      "text": "The night was dark; they had taken long pine-branches as torches, and the young fellows who bore them danced backwards and forwards with them. Scarcely had they gone a few steps, after the music left them, than they cried out, “that the torches dazzled and confused them,” and they were extinguished in a ditch. Now several, both men and women, were missed, and when they were called, answered from a distance. Rose was followed by the son of Farmer Kappel from Lauterback, and scarcely had her companions joined her, when she cried out, “that she would have nothing to do with them.” Some of the young men began to sing, and others joined in, but there was no true harmony. Many jokes were made by the grandson of the Plaster-grinder Monika, of which the young tailor’s apprentice was the principal butt. At length they began singing again, this time in unison, and it sounded full and clear."
+      "text": "The night was dark; they had taken long pine-branches as torches, and the young fellows who bore them danced backwards and forwards with them. Scarcely had they gone a few steps, after the music left them, than they cried out, “that the torches dazzled and confused them,” and they were extinguished in a ditch. Now several, both men and women, were missed, and when they were called, answered from a distance. Rose was followed by the son of Farmer Kappel from Lauterbach, and scarcely had her companions joined her, when she cried out, “that she would have nothing to do with them.” Some of the young men began to sing, and others joined in, but there was no true harmony. Many jokes were made by the grandson of the Plaster-grinder Monika, of which the young tailor’s apprentice was the principal butt. At length they began singing again, this time in unison, and it sounded full and clear."
     },
     {
       "id": "s9-65",
@@ -3738,7 +3738,7 @@
     {
       "id": "s12-7",
       "sceneId": "s12",
-      "text": "“And it would be better,” continued the father, “that you first looked at Amrie of Seibenhöfen. She has land and money. But that need not be thy object. However, I will say no more. You have your eyes in your head. Come, get yourself ready. I will fill your purse. Two hundred crown thalers will be enough; but if you need more, Dominic will lend it to you. Only make yourself known. I cannot understand why you did not at the wedding. Something must have happened there. But I will not inquire about it.”"
+      "text": "“And it would be better,” continued the father, “that you first looked at Amrie of Siebenhöfen. She has land and money. But that need not be thy object. However, I will say no more. You have your eyes in your head. Come, get yourself ready. I will fill your purse. Two hundred crown thalers will be enough; but if you need more, Dominic will lend it to you. Only make yourself known. I cannot understand why you did not at the wedding. Something must have happened there. But I will not inquire about it.”"
     },
     {
       "id": "s12-8",
@@ -3818,7 +3818,7 @@
     {
       "id": "s12-23",
       "sceneId": "s12",
-      "text": "“That, indeed; but I can understand by the expression of the mouth whether one is given to anger and scolding. Ah, if you could only see her weep with anger, or suprise her in a passion, she would betray her true disposition. The hidden temper sometimes shows itself with vultures’ claws, like the spirit of evil itself. Oh, my child, I have learnt and experienced much. I can see by the way she blows out a candle, what her temper is. She who blows it out with a puff, leaving sparks and smoke, has a hasty temper, and does things by halves. She has no true repose of disposition.”"
+      "text": "“That, indeed; but I can understand by the expression of the mouth whether one is given to anger and scolding. Ah, if you could only see her weep with anger, or surprise her in a passion, she would betray her true disposition. The hidden temper sometimes shows itself with vultures’ claws, like the spirit of evil itself. Oh, my child, I have learnt and experienced much. I can see by the way she blows out a candle, what her temper is. She who blows it out with a puff, leaving sparks and smoke, has a hasty temper, and does things by halves. She has no true repose of disposition.”"
     },
     {
       "id": "s12-24",
@@ -5203,7 +5203,7 @@
     {
       "id": "s16-42",
       "sceneId": "s16",
-      "text": "“Your husband has probably business in the town.” To hear John for the first time called her husband, sank deeply into her heart; she could not answer, and the hostess looked at her with astonishment. To escape her curious glances, Amrie went out and sat down upon a pile of boards; the dog sat opposite, waiting for John; she caressed him and looked deeply into his honest eyes. No animal seeks and bears the steady, pentrating eye of man, like the dog, but he also at last turns away."
+      "text": "“Your husband has probably business in the town.” To hear John for the first time called her husband, sank deeply into her heart; she could not answer, and the hostess looked at her with astonishment. To escape her curious glances, Amrie went out and sat down upon a pile of boards; the dog sat opposite, waiting for John; she caressed him and looked deeply into his honest eyes. No animal seeks and bears the steady, penetrating eye of man, like the dog, but he also at last turns away."
     },
     {
       "id": "s16-43",
