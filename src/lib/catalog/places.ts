@@ -112,6 +112,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "diary-of-a-chambermaid": { label: "Paris", region: "fr" },
   "the-painted-veil": { label: "Hong Kong orbit", region: "cn" },
   "the-good-soldier": { label: "Nauheim", region: "de" },
+  // Mira Sun 18 Oct 2026 PM LITTLE-BAREFOOT: the village and the Holder common are in the Black Forest; the chip reuses de.
+  "the-little-barefoot": { label: "Black Forest", region: "de" },
   "une-vie": { label: "Normandy", region: "fr" },
   "crime-and-punishment": { label: "Petersburg", region: "ru" },
   "uncle-silas": { label: "Bartram-Haugh", region: "ie" },

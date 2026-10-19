@@ -612,6 +612,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `All day, where the sunlight played on the sea-shore, Life sat. The Lost Joy — Life waiting on a sea-shore, Love coming to her over the sand, and the small, laughing joy that is born to them. The first reading is The Lost Joy whole. Eleven short dreams, each a few pages, of love, truth, freedom and work, ending with a dream of hell and heaven seen from a London bed. Olive Schreiner’s 1890 book. Easy to read, grave and quiet.`,
   "the-dancing-master":
     `“The Dancing-Master” is one complete story from Parisian Points of View — asked by a hostess to engage old Morin, a dancing-master, for her little girls, a guest goes behind the scenes at the opera one February night in 1881, finds him on stage as a bishop in “The Prophet,” and in the wings gets an earnest lecture on why France needs more dancing. It ends “…withstood the shock of this avalanche of dancers.” A heads-up before you start: the old teacher talks frankly, in the manner of his day, about sizing up a partner's figure while waltzing. Amused and brisk, for a walk. Paris.`,
+  "the-little-barefoot":
+    `Early in the morning of an autumnal day, when the morning mist lay upon the ground, two children, a boy and a girl of six and seven years old, went hand in hand through the back, or garden path, out of the village. The first reading is Chapter I, The Children Knock, whole — every morning orphaned Amrie and her little brother Dami knock at the shut door of their parents’ house and call for father and mother, then skip stones on the pond until the cuckoo clock calls them to school. It ends “…Amrie nodded silently.” A heads-up before you start: both parents have just died of a short illness, and the children grieve. Berthold Auerbach’s village tale in Eliza Buckminster Lee’s 1867 English. Tender and sad, for a quiet hour, not for sleep. The Black Forest.`,
   "winnie-the-pooh":
     `Edward Bear, known to his friends as Winnie-the-Pooh, or Pooh for short, was walking through the forest one day, humming proudly to himself. “In Which Pooh Goes Visiting and Gets into a Tight Place” is one complete chapter from Winnie-the-Pooh — after morning Stoutness Exercises and a brand-new hum, Pooh calls on Rabbit, stays for honey, and finds the front door a little tight on the way out. It ends “…Silly old Bear!” Bright and comic, made for waking. The forest.`,
   "the-mist":
@@ -2531,6 +2533,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "spoon-river-anthology",
       "copper-sun",
       "the-black-christ-and-other-poems",
+      // Mira Sun 18 Oct 2026 PM LITTLE-BAREFOOT — The Little Barefoot (Auerbach, tr. Lee, 1867): Rituals only, Soft mourning only. The first reading (Chapter I, the orphans knocking at their dead parents' door) is grief, not calm: never unwind or before-sleep; never Next or Featured.
+      "the-little-barefoot",
     ],
   },
 ];
@@ -2726,6 +2730,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "tales-by-polish-authors": 6,
   "dreams-schreiner": 6,
   "the-dancing-master": 10,
+  "the-little-barefoot": 10,
   "growth-of-the-soil": 15,
   "nada-the-lily": 17,
   "all-quiet-on-the-western-front": 10,
