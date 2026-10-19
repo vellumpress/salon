@@ -433,11 +433,12 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
 
 test("homepage Curated is the only curated block; Adapted stays a deep link", () => {
   const src = readFileSync(new URL("../../components/curated-strip.tsx", import.meta.url), "utf8");
+  const door = readFileSync(new URL("../../components/door-carousel.tsx", import.meta.url), "utf8");
   const home = readFileSync(new URL("../../routes/index.tsx", import.meta.url), "utf8");
   const lane = readFileSync(new URL("../../routes/adapted.tsx", import.meta.url), "utf8");
   const css = readFileSync(new URL("../../styles.css", import.meta.url), "utf8");
 
-  assert.match(src, /to=["']\/curated["']/);
+  assert.match(`${src}\n${door}`, /to=["']\/curated["']/);
   assert.match(src, /homeMixRows/);
   assert.doesNotMatch(src, /to=["']\/adapted["']/);
   assert.doesNotMatch(src, /STRIP_DRIFT|stripDriftDelta|stripItems|adapted-scroller/);

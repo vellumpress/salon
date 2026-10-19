@@ -39,7 +39,14 @@ import { mixSeed, takeShuffled } from "@/lib/recommend";
 import { useVisitSeed } from "@/lib/use-visit-seed";
 
 
+type RitualsSearch = { lane?: string };
+
 export const Route = createFileRoute("/rituals")({
+  validateSearch: (search: Record<string, unknown>): RitualsSearch => {
+    const lane = typeof search.lane === "string" ? search.lane : "";
+    if (!lane || !RITUAL_LANES.some((row) => row.id === lane)) return {};
+    return { lane };
+  },
   component: RitualsPage,
 });
 
@@ -57,6 +64,7 @@ function RitualsPage() {
 }
 
 function RitualsBody() {
+  const { lane } = Route.useSearch();
   const progress = useTbr((s) => s.progress);
   const visit = useVisitSeed();
   const [nudgeReady, setNudgeReady] = useState(false);
@@ -117,7 +125,12 @@ function RitualsBody() {
             </span>
           </div>
 
-          <RitualsSection progress={progress} hydrated={hydrated} visit={visit} />
+          <RitualsSection
+            progress={progress}
+            hydrated={hydrated}
+            visit={visit}
+            initialLane={lane}
+          />
         </>
       )}
 
@@ -135,10 +148,12 @@ function RitualsSection({
   progress,
   hydrated,
   visit,
+  initialLane,
 }: {
   progress: Record<string, WorkProgress>;
   hydrated: boolean;
   visit: number;
+  initialLane?: string;
 }) {
   const serializeNight = useTbr((s) => s.serializeNight);
   const series = useMemo(
@@ -153,7 +168,11 @@ function RitualsSection({
       })).filter((lane) => lane.id === SERIALIZE_LANE_ID || lane.items.length > 0),
     [visit],
   );
-  const [laneId, setLaneId] = useState(() => defaultRitualLaneId());
+  const [laneId, setLaneId] = useState(() =>
+    initialLane && RITUAL_LANES.some((lane) => lane.id === initialLane)
+      ? initialLane
+      : defaultRitualLaneId(),
+  );
   const [openPlanId, setOpenPlanId] = useState<string | null>(null);
   const [comingId, setComingId] = useState<string | null>(null);
   const active =

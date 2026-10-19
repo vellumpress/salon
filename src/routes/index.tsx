@@ -4,6 +4,9 @@ import { DailyScoreChip } from "@/components/daily-score-chip";
 import { ResumeLink, useLastRead, usePersistHydrated } from "@/components/resume-link";
 import { YouFriendsMark } from "@/components/you-friends-mark";
 import { CuratedStrip } from "@/components/curated-strip";
+import { DoorCarousel } from "@/components/door-carousel";
+import { DOOR_LOOP_SECONDS, ritualDoorSlides, togetherDoorSlides } from "@/lib/home-doors";
+import { useTbr } from "@/lib/store";
 import {
   ShelfSearchBar,
   ShelfSearchHits,
@@ -22,38 +25,27 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const DOORS = [
-  {
-    to: "/rituals" as const,
-    label: "Rituals",
-    kicker: "Timed sits",
-    pitch:
-      "Pick a lane for the hour you are in — before sleep, waking, a walk, unwind. One work. A sitting that ends.",
-    aria: "Rituals — timed reading sits",
-  },
-  {
-    to: "/together" as const,
-    label: "Read together",
-    kicker: "Friends and clubs",
-    pitch:
-      "The same page, a live room. Sit with a friend, or join a club that reads in real time while you talk.",
-    aria: "Read together — friends and book clubs",
-  },
-] as const;
-
 function Home() {
   const router = useRouter();
   const last = useLastRead();
   const hydrated = usePersistHydrated();
   const visit = useVisitSeed();
+  const hostedSits = useTbr((state) => state.hostedSits);
+  const contacts = useTbr((state) => state.contacts);
   const { query, setQuery, searching, matches } = useShelfSearch("local");
 
   // Fresh Mondrian palette every full open/reload (visit seed).
   // Order: [resume?, door0, door1] — neighbors avoid the same fill.
   const blockFills = useMemo(() => {
-    const count = (last ? 1 : 0) + DOORS.length + 1;
+    const count = (last ? 1 : 0) + 3;
     return mosaicFills(count, `home-doors-${visit || "pending"}`);
   }, [last, visit]);
+
+  const ritualSlides = useMemo(() => ritualDoorSlides(visit), [visit]);
+  const togetherSlides = useMemo(
+    () => togetherDoorSlides({ hostedSits, contacts }),
+    [hostedSits, contacts],
+  );
 
   const resumeWork = last ? shelfWork(last.id) : undefined;
   const resumeFill: Fill | undefined = last ? blockFills[0] : undefined;
@@ -172,30 +164,25 @@ function Home() {
             </div>
           ) : null}
 
-          {DOORS.map((door, i) => {
-            const fill = doorFills[i] ?? "yellow";
-            return (
-              <Link
-                key={door.label}
-                to={door.to}
-                preload="intent"
-                aria-label={door.aria}
-                className={cn(
-                  "cell-pillar relative flex min-h-0 flex-col justify-end p-5 sm:p-8",
-                  fillClass(fill),
-                  fillInk(fill),
-                )}
-              >
-                <span className="type-kicker opacity-70">{door.kicker}</span>
-                <span className="pillar-title mt-1">{door.label}</span>
-                <span className="type-pitch pillar-pitch mt-2.5 max-w-md">
-                  {door.pitch}
-                </span>
-              </Link>
-            );
-          })}
-
-          <CuratedStrip fill={doorFills[DOORS.length] ?? "yellow"} />
+          <DoorCarousel
+            door="rituals"
+            label="Rituals"
+            aria="Rituals — timed reading sits"
+            fill={doorFills[0] ?? "yellow"}
+            seconds={DOOR_LOOP_SECONDS.rituals}
+            slides={ritualSlides}
+            cta={{ kind: "rituals", label: "All the lanes" }}
+          />
+          <DoorCarousel
+            door="together"
+            label="Read together"
+            aria="Read together — friends and book clubs"
+            fill={doorFills[1] ?? "yellow"}
+            seconds={DOOR_LOOP_SECONDS.together}
+            slides={togetherSlides}
+            cta={{ kind: "together", label: "Read together" }}
+          />
+          <CuratedStrip fill={doorFills[2] ?? "yellow"} />
         </>
       )}
 
