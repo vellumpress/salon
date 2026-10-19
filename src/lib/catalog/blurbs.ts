@@ -445,6 +445,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: frank comedy about courtesans and seduction, a false accusation of rape, and a martyr tortured and beheaded.",
   "the-little-barefoot":
     "Two orphans of a Black Forest village grow up apart: idle Dami drifts from place to place and at last sets off for America, while barefoot Amrie, goose-girl and farm maid, keeps her pride until a rich farmer's son asks her to dance at a wedding.",
+  "the-blue-castle":
+    "At twenty-nine, timid Valancy Stirling learns she has a year to live, walks out on her overbearing family, and goes looking for the life she has only ever had in her Blue Castle.",
   nostalgia:
     "A young bride from the green banks of the Po comes to Rome full of dreams, and finds a cramped family flat, a tight budget and a dazzling city that will not quite let her in.",
   "the-adventures-of-huckleberry-finn":

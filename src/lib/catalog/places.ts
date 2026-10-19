@@ -81,6 +81,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-story-of-an-african-farm": { label: "Karoo", region: "za" },
   "dreams-schreiner": { label: "South Africa", region: "za" },
   "the-imperialist": { label: "Elgin, Ontario", region: "ca" },
+  // Mira Sun 18 Oct 2026 PM BLUE-CASTLE: Deerwood is Montgomery's Muskoka town (Bracebridge); the chip names the setting and reuses ca.
+  "the-blue-castle": { label: "Deerwood, Muskoka, Ontario", region: "ca" },
   "mogens": { label: "Denmark", region: "dk" },
   "the-road-to-the-open": { label: "Vienna", region: "at" },
   calvary: { label: "Orne", region: "fr" },

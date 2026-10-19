@@ -1253,6 +1253,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   // Mira Sun 18 Oct 2026 PM SEVEN-LEGENDS — Seven Legends (Keller, tr. Wyness, 1911) follows Serbian Lyrics at the end of Next, Next carefully only (the heads-up is on the card). Never Featured.
   // Off every Ritual lane; the opening sit (Eugenia, from its epigraph to the abbot over seventy monks) is never unwind or before-sleep.
   "seven-legends",
+  // Mira Sun 18 Oct 2026 PM BLUE-CASTLE — The Blue Castle (Montgomery, 1926) follows Seven Legends at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "the-blue-castle",
 ] as const;
 
 /**
