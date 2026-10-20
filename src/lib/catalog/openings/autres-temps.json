@@ -1,0 +1,177 @@
+{
+  "id": "autres-temps",
+  "title": "Autres Temps...",
+  "author": "Edith Wharton",
+  "year": "1916",
+  "note": "Opening sit: the arrival off New York, to altogether easier.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "I",
+      "place": "I",
+      "reentry": "Mrs. Lidcote, as the huge menacing mass of New York defined itself far off across the waters, shrank back into her corner of the deck and sat listening with a kind of unreasoning terror to the steady onward drive of the screws.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Mrs. Lidcote, as the huge menacing mass of New York defined itself far off across the waters, shrank back into her corner of the deck and sat listening with a kind of unreasoning terror to the steady onward drive of the screws.",
+      "_end": 52
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "She had set out on the voyage quietly enough,—in what she called her \"reasonable\" mood,—but the week at sea had given her too much time to think of things and had left her too long alone with the past.",
+      "_end": 56
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "When she was alone, it was always the past that occupied her. She couldn't get away from it, and she didn't any longer care to. During her long years of exile she had made her terms with it, had learned to accept the fact that it would always be there, huge, obstructing, encumbering, bigger and more dominant than anything the future could ever conjure up. And, at any rate, she was sure of it, she understood it, knew how to reckon with it; she had learned to screen and manage and protect it as one does an afflicted member of one's family.",
+      "_end": 65
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "There had never been any danger of her being allowed to forget the past. It looked out at her from the face of every acquaintance, it appeared suddenly in the eyes of strangers when a word enlightened them: \"Yes, *the* Mrs. Lidcote, don't you know?\" It had sprung at her the first day out, when, across the dining-room, from the captain's table, she had seen Mrs. Lorin Boulger's revolving eye-glass pause and the eye behind it grow as blank as a dropped blind. The next day, of course, the captain had asked: \"You know your ambassadress, Mrs. Boulger?\" and she had replied that, No, she seldom left Florence, and hadn't been to Rome for more than a day since the Boulgers had been sent to Italy. She was so used to these phrases that it cost her no effort to repeat them. And the captain had promptly changed the subject.",
+      "_end": 78
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "No, she didn't, as a rule, mind the past, because she was used to it and understood it. It was a great concrete fact in her path that she had to walk around every time she moved in any direction. But now, in the light of the unhappy event that had summoned her from Italy,—the sudden unanticipated news of her daughter's divorce from Horace Pursh and remarriage with Wilbour Barkley—the past, her own poor miserable past, started up at her with eyes of accusation, became, to her disordered fancy, like the afflicted relative suddenly breaking away from nurses and keepers and publicly parading the horror and misery she had, all the long years, so patiently screened and secluded.",
+      "_end": 89
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Yes, there it had stood before her through the agitated weeks since the news had come—during her interminable journey from India, where Leila's letter had overtaken her, and the feverish halt in her apartment in Florence, where she had had to stop and gather up her possessions for a fresh start—there it had stood grinning at her with a new balefulness which seemed to say: \"Oh, but you've got to look at me *now*, because I'm not only your own past but Leila's present.\"",
+      "_end": 97
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Certainly it was a master-stroke of those arch-ironists of the shears and spindle to duplicate her own story in her daughter's. Mrs. Lidcote had always somewhat grimly fancied that, having so signally failed to be of use to Leila in other ways, she would at least serve her as a warning. She had even abstained from defending herself, from making the best of her case, had stoically refused to plead extenuating circumstances, lest Leila's impulsive sympathy should lead to deductions that might react disastrously on her own life. And now that very thing had happened, and Mrs. Lidcote could hear the whole of New York saying with one voice: \"Yes, Leila's done just what her mother did. With such an example what could you expect?\"",
+      "_end": 109
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Yet if she had been an example, poor woman, she had been an awful one; she had been, she would have supposed, of more use as a deterrent than a hundred blameless mothers as incentives. For how could any one who had seen anything of her life in the last eighteen years have had the courage to repeat so disastrous an experiment?",
+      "_end": 115
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Well, logic in such cases didn't count, example didn't count, nothing probably counted but having the same impulses in the blood; and that was the dark inheritance she had bestowed upon her daughter. Leila hadn't consciously copied her; she had simply \"taken after\" her, had been a projection of her own long-past rebellion.",
+      "_end": 121
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "Mrs. Lidcote had deplored, when she started, that the *Utopia* was a slow steamer, and would take eight full days to bring her to her unhappy daughter; but now, as the moment of reunion approached, she would willingly have turned the boat about and fled back to the high seas. It was not only because she felt still so unprepared to face what New York had in store for her, but because she needed more time to dispose of what the *Utopia* had already given her. The past was bad enough, but the present and future were worse, because they were less comprehensible, and because, as she grew older, surprises and inconsequences troubled her more than the worst certainties.",
+      "_end": 132
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "There was Mrs. Boulger, for instance. In the light, or rather the darkness, of new developments, it might really be that Mrs. Boulger had not meant to cut her, but had simply failed to recognize her. Mrs. Lidcote had arrived at this hypothesis simply by listening to the conversation of the persons sitting next to her on deck—two lively young women with the latest Paris hats on their heads and the latest New York ideas in them. These ladies, as to whom it would have been impossible for a person with Mrs. Lidcote's old-fashioned categories to determine whether they were married or unmarried, \"nice\" or \"horrid,\" or any one or other of the definite things which young women, in her youth and her society, were conveniently assumed to be, had revealed a familiarity with the world of New York that, again according to Mrs. Lidcote's traditions, should have implied a recognized place in it. But in the present fluid state of manners what did anything imply except what their hats implied—that no one could tell what was coming next?",
+      "_end": 148
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "They seemed, at any rate, to frequent a group of idle and opulent people who executed the same gestures and revolved on the same pivots as Mrs. Lidcote's daughter and her friends: their Coras, Matties and Mabels seemed at any moment likely to reveal familiar patronymics, and once one of the speakers, summing up a discussion of which Mrs. Lidcote had missed the beginning, had affirmed with headlong confidence: \"Leila? Oh, *Leila's* all right.\"",
+      "_end": 156
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "Could it be *her* Leila, the mother had wondered, with a sharp thrill of apprehension? If only they would mention surnames! But their talk leaped elliptically from allusion to allusion, their unfinished sentences dangled over bottomless pits of conjecture, and they gave their bewildered hearer the impression not so much of talking only of their intimates, as of being intimate with every one alive.",
+      "_end": 163
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Her old friend Franklin Ide could have told her, perhaps; but here was the last day of the voyage, and she hadn't yet found courage to ask him. Great as had been the joy of discovering his name on the passenger-list and seeing his friendly bearded face in the throng against the taffrail at Cherbourg, she had as yet said nothing to him except, when they had met: \"Of course I'm going out to Leila.\"",
+      "_end": 170
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "She had said nothing to Franklin Ide because she had always instinctively shrunk from taking him into her confidence. She was sure he felt sorry for her, sorrier perhaps than any one had ever felt; but he had always paid her the supreme tribute of not showing it. His attitude allowed her to imagine that compassion was not the basis of his feeling for her, and it was part of her joy in his friendship that it was the one relation seemingly unconditioned by her state, the only one in which she could think and feel and behave like any other woman.",
+      "_end": 179
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "Now, however, as the problem of New York loomed nearer, she began to regret that she had not spoken, had not at least questioned him about the hints she had gathered on the way. He did not know the two ladies next to her, he did not even, as it chanced, know Mrs. Lorin Boulger; but he knew New York, and New York was the sphinx whose riddle she must read or perish.",
+      "_end": 186
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Almost as the thought passed through her mind his stooping shoulders and grizzled head detached themselves against the blaze of light in the west, and he sauntered down the empty deck and dropped into the chair at her side.",
+      "_end": 191
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "\"You're expecting the Barkleys to meet you, I suppose?\" he asked.",
+      "_end": 193
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "It was the first time she had heard any one pronounce her daughter's new name, and it occurred to her that her friend, who was shy and inarticulate, had been trying to say it all the way over and had at last shot it out at her only because he felt it must be now or never.",
+      "_end": 198
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"I don't know. I cabled, of course. But I believe she's at—they're at—*his* place somewhere.\"",
+      "_end": 201
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"Oh, Barkley's; yes, near Lenox, isn't it? But she's sure to come to town to meet you.\"",
+      "_end": 204
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "He said it so easily and naturally that her own constraint was relieved, and suddenly, before she knew what she meant to do, she had burst out: \"She may dislike the idea of seeing people.\"",
+      "_end": 208
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Ide, whose absent short-sighted gaze had been fixed on the slowly gliding water, turned in his seat to stare at his companion.",
+      "_end": 211
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "\"Who? Leila?\" he said with an incredulous laugh.",
+      "_end": 213
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Mrs. Lidcote flushed to her faded hair and grew pale again. \"It took *me* a long time—to get used to it,\" she said.",
+      "_end": 216
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "His look grew gently commiserating. \"I think you'll find—\" he paused for a word—\"that things are different now—altogether easier.\"",
+      "_end": 219
+    }
+  ]
+}

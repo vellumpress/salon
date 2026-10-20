@@ -340,6 +340,7 @@ test("known origin overrides", () => {
     "the-little-barefoot": "Germany",
     "the-blue-castle": "Canada",
     "four-meetings": "United States",
+    "autres-temps": "United States",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",

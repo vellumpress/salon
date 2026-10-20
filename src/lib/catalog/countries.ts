@@ -752,6 +752,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-little-barefoot": "Germany",
   "the-blue-castle": "Canada",
   "four-meetings": "United States",
+  "autres-temps": "United States",
   nostalgia: "Italy",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",
