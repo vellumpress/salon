@@ -4216,7 +4216,7 @@ test("Mira midday Thu 24 Sep CLEAR sits on Next and Rituals, never a new Feature
     "the-song-of-the-blood-red-flower",
     "irish-fairy-tales",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-201, -197), [
+  assert.deepEqual(unwind?.workIds.slice(-202, -198), [
     "the-peasants",
     "a-hungarian-nabob",
     "an-iceland-fisherman",
@@ -4363,7 +4363,7 @@ test("Mira Thu eve 24 Sep CLEAR sits on Next, Rituals, and For you, never a new 
   assert.equal(next.includes("zeno"), false);
   assert.equal(next.includes("the-book-of-khalid"), false);
   assert.deepEqual(sleep?.workIds.slice(-172, -167), [...order]);
-  assert.deepEqual(unwind?.workIds.slice(-197, -195), ["basilio", "oblomov"]);
+  assert.deepEqual(unwind?.workIds.slice(-198, -196), ["basilio", "oblomov"]);
   assert.deepEqual(walk?.workIds.slice(-154, -152), ["basilio", "oblomov"]);
   assert.equal(bite?.workIds.at(-2), "the-lady-with-the-dog-and-other-stories");
   assert.deepEqual(waking?.workIds.slice(-41, -38), [
@@ -4547,9 +4547,9 @@ test("Mira Emmeline FULL EN sits on Next, Rituals, and For you, never Featured",
     "the-tenant-of-wildfell-hall",
     "herland",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-195, -193), ["blacker", "a-lost-lady"]);
+  assert.deepEqual(unwind?.workIds.slice(-196, -194), ["blacker", "a-lost-lady"]);
   assert.deepEqual(walk?.workIds.slice(-152, -150), ["blacker", "a-lost-lady"]);
-  assert.equal(unwind?.workIds.at(-193), "the-wanderer");
+  assert.equal(unwind?.workIds.at(-194), "the-wanderer");
   assert.equal(walk?.workIds.at(-150), "the-wanderer");
   assert.equal(bite?.workIds.at(-1), "lady-macbeth");
   assert.deepEqual(waking?.workIds.slice(-38, -33), [
@@ -4725,7 +4725,7 @@ test("Mira Fri ~10:04 CLEAR is Next lead Cabala, then Reuben and Sun, with Troop
     "reuben-sachs",
     "the-sun-also-rises",
   ]);
-  assert.equal(unwind?.workIds.at(-190), "the-sun-also-rises");
+  assert.equal(unwind?.workIds.at(-191), "the-sun-also-rises");
   assert.equal(walk?.workIds.at(-147), "the-sun-also-rises");
   assert.equal(sleep?.workIds.includes("trooper-peter-halket-of-mashonaland"), false);
   assert.equal(waking?.workIds.at(-32), "the-garden-party-and-other-stories");
@@ -4865,7 +4865,7 @@ test("Mira Fri ~2:04 noon CLEAR is Next lead Man of Property, then Awakening and
     "the-awakening",
     "theresa-raquin",
   ]);
-  assert.equal(unwind?.workIds.at(-187), "theresa-raquin");
+  assert.equal(unwind?.workIds.at(-188), "theresa-raquin");
   assert.equal(walk?.workIds.at(-144), "theresa-raquin");
   assert.equal(waking?.workIds.at(-31), "cane");
   assert.equal(waking?.workIds.at(-32), "the-garden-party-and-other-stories");
@@ -5029,7 +5029,7 @@ test("Mira Fri ~4:14 afternoon CLEAR is Next lead Confusion, then Pointed Roofs,
     "the-rise-of-silas-lapham",
     "indiana",
   ]);
-  assert.equal(unwind?.workIds.at(-183), "indiana");
+  assert.equal(unwind?.workIds.at(-184), "indiana");
   assert.equal(walk?.workIds.at(-140), "indiana");
   assert.equal(waking?.workIds.at(-30), "the-book-of-wonder");
   assert.equal(waking?.workIds.at(-31), "cane");
@@ -5206,9 +5206,9 @@ test("Mira Fri ~7:14 evening CLEAR is Next lead Hidden Force, then Home, Hunger,
     "hunger",
     "jude-the-obscure",
   ]);
-  assert.equal(unwind?.workIds.at(-179), "jude-the-obscure");
+  assert.equal(unwind?.workIds.at(-180), "jude-the-obscure");
   assert.equal(walk?.workIds.at(-136), "jude-the-obscure");
-  assert.equal(unwind?.workIds.at(-183), "indiana");
+  assert.equal(unwind?.workIds.at(-184), "indiana");
   assert.equal(waking?.workIds.at(-29), "dubliners");
   assert.equal(waking?.workIds.at(-30), "the-book-of-wonder");
   assert.equal(featured.includes("enchanted-april"), true);
@@ -5416,7 +5416,7 @@ test("Mira Fri ~6PM CLEAR is Next lead High Wind, then Vera, Futility, and The C
     "futility",
     "the-comedienne",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-179, -175), [
+  assert.deepEqual(unwind?.workIds.slice(-180, -176), [
     "jude-the-obscure",
     "vera",
     "futility",
@@ -5635,7 +5635,7 @@ test("Mira Sat AM CLEAR is Next lead Moon and Sixpence, then Brilliant Career, P
     "the-plumed-serpent",
     "the-red-room",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-175, -171), [
+  assert.deepEqual(unwind?.workIds.slice(-176, -172), [
     "the-moon-and-sixpence",
     "my-brilliant-career",
     "the-plumed-serpent",
@@ -5833,7 +5833,7 @@ test("Mira Sat MIDDAY CLEAR is Next lead Green Carnation, then Hajji, Purple Lan
     "the-purple-land",
     "the-master-of-ballantrae",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-171, -167), [
+  assert.deepEqual(unwind?.workIds.slice(-172, -168), [
     "the-green-carnation",
     "hajji-baba",
     "the-purple-land",
@@ -6018,7 +6018,7 @@ test("Mira Sat AFTERNOON CLEAR is Next lead Hill of Dreams, then African Farm, T
     "the-imperialist",
     "kim",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-167, -163), [
+  assert.deepEqual(unwind?.workIds.slice(-168, -164), [
     "the-hill-of-dreams",
     "the-story-of-an-african-farm",
     "the-imperialist",
@@ -6210,7 +6210,7 @@ test("Mira Sat EVENING CLEAR is Next lead Road to the Open, then Calvary, Anna, 
     "anna-of-the-five-towns",
     "small-souls",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-163, -159), [
+  assert.deepEqual(unwind?.workIds.slice(-164, -160), [
     "the-road-to-the-open",
     "calvary",
     "anna-of-the-five-towns",
@@ -6410,7 +6410,7 @@ test("Mira Sat 6PM CLEAR is Next lead White Jacket, then Nightingale, Chapdelain
     "maria-chapdelaine",
     "the-house-by-the-medlar-tree",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-159, -155), [
+  assert.deepEqual(unwind?.workIds.slice(-160, -156), [
     "white-jacket",
     "a-japanese-nightingale",
     "maria-chapdelaine",
@@ -6627,7 +6627,7 @@ test("Mira Sun AM CLEAR is Next lead Marrow, then Zuleika, Eugenie, and Seven Br
     "eugenie-grandet",
     "seven-brothers",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-155, -151), [
+  assert.deepEqual(unwind?.workIds.slice(-156, -152), [
     "the-marrow-of-tradition",
     "zuleika-dobson",
     "eugenie-grandet",
@@ -6841,7 +6841,7 @@ test("Mira POST-#169 CLEAR is Next lead Born in Exile, then Four Horsemen, After
   assert.equal(forYou?.workIds.includes("seven-brothers"), true);
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-117, -113), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-151, -147), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-152, -148), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-107, -103), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-121, -117), [
     "the-marrow-of-tradition",
@@ -7068,7 +7068,7 @@ test("Mira POST-#170 CLEAR is Next lead The Sport of the Gods, then Ramuntcho, M
   assert.equal(forYou?.workIds.includes("reginald"), false);
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-113, -109), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-147, -143), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-148, -144), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-103, -99), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-117, -113), [...prior]);
   assert.ok((sleep?.workIds.indexOf("miss-lulu-bett") ?? -1) < (sleep?.workIds.lastIndexOf("miss-lulu-bett") ?? -1));
@@ -7279,7 +7279,7 @@ test("Mira POST-#171 CLEAR is Next lead Royal Highness, then Ramona, Almayer’s
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-109, -105), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-143, -139), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-144, -140), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-99, -95), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-113, -109), [...prior]);
   assert.ok((sleep?.workIds.indexOf("royal-highness") ?? -1) < (sleep?.workIds.lastIndexOf("royal-highness") ?? -1));
@@ -7484,7 +7484,7 @@ test("Mira POST-#172 CLEAR is Next lead Daisy Miller, then South Wind, The Villa
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-105, -101), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-139, -135), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-140, -136), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-95, -91), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-109, -105), [...prior]);
   assert.ok((sleep?.workIds.indexOf("the-village") ?? -1) < (sleep?.workIds.lastIndexOf("the-village") ?? -1));
@@ -7696,10 +7696,10 @@ test("Mira MIDDAY CLEAR is Next lead Candide, then Iola Leroy, Esther Waters, an
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-101, -97), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-135, -131), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-136, -132), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-91, -87), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-105, -101), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-139, -135), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-140, -136), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-95, -91), [...prior]);
   assert.ok((sleep?.workIds.indexOf("candide") ?? -1) < (sleep?.workIds.lastIndexOf("candide") ?? -1));
   assert.ok((sleep?.workIds.indexOf("aphrodite") ?? -1) < (sleep?.workIds.lastIndexOf("aphrodite") ?? -1));
@@ -7924,10 +7924,10 @@ test("Mira POST-#174 CLEAR is Next lead Erewhon, then Ann Veronica, The Great Hu
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-97, -93), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-131, -127), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-132, -128), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-87, -83), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-101, -97), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-135, -131), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-136, -132), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-91, -87), [...prior]);
   assert.ok((sleep?.workIds.indexOf("the-great-hunger") ?? -1) < (sleep?.workIds.lastIndexOf("the-great-hunger") ?? -1));
   assert.equal(unwind?.workIds.indexOf("the-great-hunger"), unwind?.workIds.lastIndexOf("the-great-hunger"));
@@ -8150,10 +8150,10 @@ test("Mira POST-#175 CLEAR is Next lead The Poison Tree, then Cosmopolis, The Wo
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-93, -89), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-127, -123), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-128, -124), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-83, -79), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-97, -93), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-131, -127), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-132, -128), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-87, -83), [...prior]);
   assert.equal(sleep?.workIds.indexOf("the-poison-tree"), sleep?.workIds.lastIndexOf("the-poison-tree"));
   assert.equal(unwind?.workIds.indexOf("cosmopolis"), unwind?.workIds.lastIndexOf("cosmopolis"));
@@ -8392,10 +8392,10 @@ test("Mira POST-#176 CLEAR is Next lead Cousin Betty, then Sorrows of Satan, Kin
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-89, -85), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-123, -119), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-124, -120), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-79, -75), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-93, -89), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-127, -123), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-128, -124), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-83, -79), [...prior]);
   assert.equal(sleep?.workIds.indexOf("cousin-betty"), sleep?.workIds.lastIndexOf("cousin-betty"));
   assert.equal(unwind?.workIds.indexOf("hania"), unwind?.workIds.lastIndexOf("hania"));
@@ -8624,10 +8624,10 @@ test("Mira POST-#177 CLEAR is Next lead Tess, then Captains Courageous, Numa Rou
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-85, -81), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-119, -115), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-120, -116), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-75, -71), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-89, -85), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-123, -119), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-124, -120), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-79, -75), [...prior]);
   assert.equal(sleep?.workIds.indexOf("tess-of-the-durbervilles"), sleep?.workIds.lastIndexOf("tess-of-the-durbervilles"));
   assert.equal(unwind?.workIds.indexOf("numa-roumestan"), unwind?.workIds.lastIndexOf("numa-roumestan"));
@@ -8835,10 +8835,10 @@ test("Mira POST-#178 CLEAR is Next lead Seven Gables, then Heart of Darkness, To
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-81, -77), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-115, -111), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-116, -112), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-71, -67), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-85, -81), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-119, -115), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-120, -116), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-75, -71), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -9067,10 +9067,10 @@ test("Mira POST-#179 CLEAR is Next lead Cabbages and Kings, then Dorian Gray, Th
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-77, -73), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-111, -107), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-112, -108), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-67, -63), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-81, -77), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-115, -111), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-116, -112), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-71, -67), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -9301,10 +9301,10 @@ test("Mira POST-#180 CLEAR is Next lead The Shadow of the Cathedral, then Way of
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-73, -69), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-107, -103), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-108, -104), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-63, -59), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-77, -73), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-111, -107), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-112, -108), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-67, -63), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -9531,10 +9531,10 @@ test("Mira POST-#181 CLEAR is Next lead Typee, then Kangaroo, Casanova’s Homec
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-69, -65), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-103, -99), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-104, -100), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-59, -55), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-73, -69), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-107, -103), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-108, -104), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-63, -59), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -9778,10 +9778,10 @@ test("Mira POST-#182 CLEAR is Next lead Three Soldiers, then Doctor Pascal, In t
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-65, -61), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-99, -95), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-100, -96), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-55, -51), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-69, -65), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-103, -99), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-104, -100), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-59, -55), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -10007,10 +10007,10 @@ test("Mira POST-#183 CLEAR is Next lead Sister Carrie, then Antic Hay, A spring-
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-61, -57), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-95, -91), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-96, -92), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-51, -47), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-65, -61), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-99, -95), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-100, -96), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-55, -51), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -10256,10 +10256,10 @@ test("Mira POST-#184 CLEAR is Next lead Smoke, then Niels Lyhne, The Emancipated
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-57, -53), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-91, -87), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-92, -88), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-47, -43), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-61, -57), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-95, -91), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-96, -92), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-51, -47), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -10509,10 +10509,10 @@ test("Mira POST-#185 CLEAR is Next lead Kipps, then The Professor, A Room with a
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-53, -49), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-87, -83), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-88, -84), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-43, -39), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-57, -53), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-91, -87), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-92, -88), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-47, -43), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -10761,10 +10761,10 @@ test("Mira POST-#186 CLEAR is Next lead Une Vie, then My Ántonia, Look Back on 
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-49, -45), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-83, -79), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-84, -80), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-39, -35), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-53, -49), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-87, -83), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-88, -84), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-43, -39), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -11011,10 +11011,10 @@ test("Mira POST-#187 CLEAR is Next lead Crime and Punishment, then Uncle Silas, 
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-45, -41), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-79, -75), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-80, -76), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-35, -31), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-49, -45), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-83, -79), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-84, -80), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-39, -35), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -11249,10 +11249,10 @@ test("Mira POST-#188 CLEAR is Next lead Death in Venice, then Elmer Gantry, The 
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-41, -37), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-75, -71), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-76, -72), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-31, -27), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-45, -41), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-79, -75), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-80, -76), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-35, -31), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -11488,10 +11488,10 @@ test("Mira POST-#189 CLEAR is Next lead Manalive, then Captain Blood, The Monoma
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-37, -33), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-71, -67), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-72, -68), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-27, -23), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-41, -37), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-75, -71), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-76, -72), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-31, -27), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -11726,10 +11726,10 @@ test("Mira POST-#190 CLEAR is Next lead The Prisoner of Zenda, then Kidnapped, T
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
   assert.deepEqual(sleep?.workIds.slice(-33, -29), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-67, -63), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-68, -64), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-23, -19), [...tail]);
   assert.deepEqual(sleep?.workIds.slice(-37, -33), [...prior]);
-  assert.deepEqual(unwind?.workIds.slice(-71, -67), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-72, -68), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-27, -23), [...prior]);
   for (const id of tail) {
     assert.equal(sleep?.workIds.indexOf(id), sleep?.workIds.lastIndexOf(id), id);
@@ -11981,9 +11981,9 @@ test("Mira POST-#191 CLEAR is Next lead The Village in the Jungle, then Ribot, S
     assert.equal(waking?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-63, -59), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-64, -60), [...tail]);
   assert.deepEqual(walk?.workIds.slice(-19, -15), [...tail]);
-  assert.deepEqual(unwind?.workIds.slice(-67, -63), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-68, -64), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-23, -19), [...prior]);
   assert.deepEqual(sleep?.workIds.slice(-29, -25), [...sleepTail]);
   assert.deepEqual(sleep?.workIds.slice(-33, -29), [...prior]);
@@ -12249,13 +12249,13 @@ test("Mira POST-#192 CLEAR is Next lead The Bitter Tea of General Yen, then Andr
     assert.equal(forYou?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-59, -55), [
+  assert.deepEqual(unwind?.workIds.slice(-60, -56), [
     "the-bitter-tea-of-general-yen",
     "the-woman-of-andros",
     "bella-donna",
     "la-lupa",
   ]);
-  assert.deepEqual(unwind?.workIds.slice(-63, -59), [...prior]);
+  assert.deepEqual(unwind?.workIds.slice(-64, -60), [...prior]);
   assert.deepEqual(walk?.workIds.slice(-15, -13), [
     "the-bitter-tea-of-general-yen",
     "la-lupa",
@@ -12528,7 +12528,7 @@ test("Mira POST-#197 CLEAR is Next lead A Farewell to Arms, then Alice Adams, Qu
     assert.equal(waking?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-55, -50), [
+  assert.deepEqual(unwind?.workIds.slice(-56, -51), [
     "a-farewell-to-arms",
     "alice-adams",
     "quartet",
@@ -12792,7 +12792,7 @@ test("Mira POST-#204 CLEAR is Next lead Java Head, then Sunshine Sketches, Guest
     assert.equal(waking?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-50, -45), [
+  assert.deepEqual(unwind?.workIds.slice(-51, -46), [
     "java-head",
     "sunshine-sketches-of-a-little-town",
     "guest-the-one-eyed",
@@ -13081,7 +13081,7 @@ test("Mira POST-#206 CLEAR is Next lead In the Mountains, then The Two Countesse
     assert.equal(waking?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-45, -41), [
+  assert.deepEqual(unwind?.workIds.slice(-46, -42), [
     "in-the-mountains",
     "the-two-countesses",
     "el-ombu",
@@ -13347,7 +13347,7 @@ test("Mira POST-#210 CLEAR is Next lead Liliecrona's Home, then Doctor Luke, Mor
     assert.equal(waking?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-41, -38), [
+  assert.deepEqual(unwind?.workIds.slice(-42, -39), [
     "liliecronas-home",
     "doctor-luke-of-the-labrador",
     "morrina",
@@ -13608,7 +13608,7 @@ test("Mira POST-#212 CLEAR is Next lead Gone to Earth, then The Real Charlotte, 
     assert.equal(walk?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-38, -34), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-39, -35), [...tail]);
   assert.equal(unwind?.workIds.includes(ritualOnly), false);
   assert.deepEqual(sleep?.workIds.slice(-13, -12), [ritualOnly]);
   for (const id of tail) {
@@ -13875,7 +13875,7 @@ test("Mira POST-#213 CLEAR is Next lead The Will to Live, then Doom Castle, Mayf
     assert.equal(waking?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-34, -30), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-35, -31), [...tail]);
   assert.equal(unwind?.workIds.includes(ritualOnly), false);
   assert.deepEqual(walk?.workIds.slice(-7, -6), ["doom-castle"]);
   for (const id of ["the-will-to-live", "mayflower", "susan-proudleigh", ritualOnly]) {
@@ -14136,7 +14136,7 @@ test("Mira POST-#217 CLEAR is Next lead Life and Death of Harriett Frean, then F
     assert.equal(walk?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-30, -26), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-31, -27), [...tail]);
   assert.equal(unwind?.workIds.includes(ritualOnly), false);
   assert.deepEqual(walk?.workIds.slice(-7, -6), ["doom-castle"]);
   assert.deepEqual(sleep?.workIds.slice(-11, -10), [ritualOnly]);
@@ -14415,7 +14415,7 @@ test("Mira POST-#218 CLEAR is Next lead The Old House, then The Sworn Brothers, 
     assert.equal(waking?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-26, -23), [...unwindTail]);
+  assert.deepEqual(unwind?.workIds.slice(-27, -24), [...unwindTail]);
   assert.equal(unwind?.workIds.includes("christine-of-the-hills"), false);
   assert.equal(unwind?.workIds.includes(ritualOnly), false);
   assert.deepEqual(walk?.workIds.slice(-6, -4), [...commuteTail]);
@@ -14717,7 +14717,7 @@ test("Mira POST-#221 CLEAR is Next lead Daughters of Men, then The Bright Shawl,
     assert.equal(waking?.workIds.includes(id), false, id);
   }
   assert.equal(forYou?.workIds.slice(0, 3).join(), "the-house-of-mirth,quicksand,botchan");
-  assert.deepEqual(unwind?.workIds.slice(-23, -19), [...tail]);
+  assert.deepEqual(unwind?.workIds.slice(-24, -20), [...tail]);
   assert.equal(unwind?.workIds.includes(ritualOnly), false);
   assert.deepEqual(walk?.workIds.slice(-4, -3), [ "the-bright-shawl" ]);
   assert.deepEqual(walk?.workIds.slice(-6, -4), ["the-sworn-brothers", "christine-of-the-hills"]);
@@ -15004,7 +15004,7 @@ test("Mira POST-#222 CLEAR is Next lead The Corsican Brothers, then Jocelyn and 
     assert.equal(waking?.workIds.includes(id), false, id);
     assert.equal(sleep?.workIds.includes(id), false, id);
   }
-  assert.deepEqual(unwind?.workIds.slice(-19, -15), ["the-corsican-brothers", "jocelyn", "the-woman-of-knockaloe", "the-taking-of-the-redoubt"]);
+  assert.deepEqual(unwind?.workIds.slice(-20, -16), ["the-corsican-brothers", "jocelyn", "the-woman-of-knockaloe", "the-taking-of-the-redoubt"]);
   assert.deepEqual(walk?.workIds.slice(-3, -2), ["the-corsican-brothers"]);
   for (const lane of RITUAL_LANES) {
     assert.equal(lane.workIds.includes(ritualOnly), lane.id === "unwind", lane.id);
@@ -15197,7 +15197,7 @@ test("Mira POST-#224 CLEAR is Next lead The Man in the Brown Suit, then Wang the
     assert.equal(waking?.workIds.includes(id), false, id);
     assert.equal(sleep?.workIds.includes(id), false, id);
   }
-  assert.deepEqual(unwind?.workIds.slice(-15, -11), ["the-man-in-the-brown-suit", "wang-the-ninth", "garram-the-hunter", "his-dead-wifes-photograph"]);
+  assert.deepEqual(unwind?.workIds.slice(-16, -12), ["the-man-in-the-brown-suit", "wang-the-ninth", "garram-the-hunter", "his-dead-wifes-photograph"]);
   assert.deepEqual(walk?.workIds.slice(-3, -2), ["the-corsican-brothers"]);
   for (const lane of RITUAL_LANES) {
     for (const id of [...tail, ritualOnly]) {
@@ -15401,7 +15401,7 @@ test("Mira POST-#225 CLEAR is Next lead The Face in the Abyss, then Mary Magdale
     assert.equal(waking?.workIds.includes(id), false, id);
     assert.equal(sleep?.workIds.includes(id), false, id);
   }
-  assert.deepEqual(unwind?.workIds.slice(-11, -8), ["the-face-in-the-abyss", "mary-magdalen", "the-hoop"]);
+  assert.deepEqual(unwind?.workIds.slice(-12, -9), ["the-face-in-the-abyss", "mary-magdalen", "the-hoop"]);
   assert.deepEqual(walk?.workIds.slice(-3, -2), ["the-corsican-brothers"]);
   for (const lane of RITUAL_LANES) {
     for (const id of [...tail, ritualOnly]) {
@@ -15584,7 +15584,7 @@ test("Mira POST-#227 CLEAR is Next lead Love's Shadow, then Lewis and Irene, wit
     assert.equal(waking?.workIds.includes(id), false, id);
     assert.equal(sleep?.workIds.includes(id), false, id);
   }
-  assert.deepEqual(unwind?.workIds.slice(-8, -6), ["love-s-shadow", "a-monkey"]);
+  assert.deepEqual(unwind?.workIds.slice(-9, -7), ["love-s-shadow", "a-monkey"]);
   assert.deepEqual(walk?.workIds.slice(-3, -2), ["the-corsican-brothers"]);
   for (const lane of RITUAL_LANES) {
     for (const id of [...tail, ritualOnly]) {
@@ -15767,7 +15767,7 @@ test("Mira POST-#228 CLEAR is Next carefully lead The Counterfeiters, after Lewi
     assert.equal(waking?.workIds.includes(id), false, id);
     assert.equal(sleep?.workIds.includes(id), false, id);
   }
-  assert.deepEqual(unwind?.workIds.slice(-7, -6), ["a-monkey"]);
+  assert.deepEqual(unwind?.workIds.slice(-8, -7), ["a-monkey"]);
   assert.deepEqual(walk?.workIds.slice(-3, -2), ["the-corsican-brothers"]);
   for (const lane of RITUAL_LANES) {
     for (const id of tail) {
@@ -16000,7 +16000,7 @@ test("Mira POST-v3 Ritual: Wedding-Day is a Host-only unwind story, after A Monk
   const featured = FEATURED_CAROUSEL_IDS as readonly string[];
   const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
   const ritualOnly = "wedding-day";
-  assert.deepEqual(unwind?.workIds.slice(-7, -5), ["a-monkey", ritualOnly]);
+  assert.deepEqual(unwind?.workIds.slice(-8, -6), ["a-monkey", ritualOnly]);
   for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes(ritualOnly), lane.id === "unwind", lane.id);
   assert.equal(next.includes(ritualOnly), false);
   assert.equal(featured.includes(ritualOnly), false);
@@ -16343,7 +16343,7 @@ test("Mira Mon 5 Oct PM Ritual: The Taoist Priest of Lao-shan is a Host-only unw
   const featured = FEATURED_CAROUSEL_IDS as readonly string[];
   const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
   const ritualOnly = "the-taoist-priest-of-lao-shan";
-  assert.deepEqual(unwind?.workIds.slice(-6, -4), ["wedding-day", ritualOnly]);
+  assert.deepEqual(unwind?.workIds.slice(-7, -5), ["wedding-day", ritualOnly]);
   for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes(ritualOnly), lane.id === "unwind", lane.id);
   for (const laneId of ["unwind", "on-a-walk", "before-sleep"]) {
     const lane = RITUAL_LANES.find((item) => item.id === laneId);
@@ -16741,7 +16741,7 @@ test("Mira Tue 6 Oct PM: The Mist is before-sleep only after the-fresco, never F
   assert.equal(featured.includes(id), false);
   assert.equal(curatorialTrack(id), "later");
   // THE FOUR SEASONS (Tue 20 Oct 2026) is the third Ewald on the shelf.
-  assert.deepEqual(SHELF.filter((item) => /Carl Ewald/i.test(item.author)).map((item) => item.id).sort(), ["the-old-room", "the-four-seasons", id].sort());
+  assert.deepEqual(SHELF.filter((item) => /Carl Ewald/i.test(item.author)).map((item) => item.id).sort(), ["the-old-room", "the-four-seasons", "the-old-willow-tree", id].sort());
   assert.equal(SHELF.filter((item) => item.gutenberg === 62910).length, 1);
   const work = SHELF.find((item) => item.id === id);
   assert.ok(work);
@@ -17246,7 +17246,7 @@ test("Mira Thu 8 Oct MID: Zanzibar Tales is Later, unwind and before-sleep, neve
   assert.equal(curatorialTrack(id), "later");
   const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
-  assert.equal(unwind?.workIds.at(-4), id);
+  assert.equal(unwind?.workIds.at(-5), id);
   assert.equal(sleep?.workIds.at(-5), id);
   for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes(id), lane.id === "unwind" || lane.id === "before-sleep", lane.id);
   assert.equal(RITUAL_SIT_MINUTES[id], 7);
@@ -17441,7 +17441,7 @@ test("Mira Fri 9 Oct MID HOLBERG-FJELD: Tales from the Fjeld is Later, unwind an
   assert.equal(curatorialTrack(id), "later");
   const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
-  assert.deepEqual(unwind?.workIds.slice(-4, -2), ["zanzibar-tales", id]);
+  assert.deepEqual(unwind?.workIds.slice(-5, -3), ["zanzibar-tales", id]);
   assert.deepEqual(sleep?.workIds.slice(-5, -3), ["zanzibar-tales", id]);
   for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes(id), lane.id === "unwind" || lane.id === "before-sleep", lane.id);
   assert.equal(RITUAL_SIT_MINUTES[id], 8);
@@ -17621,7 +17621,7 @@ test("Mira Fri 9 Oct PM AKSAKOV-ZEROMSKI: Tales by Polish Authors is Later in pr
   assert.equal(curatorialTrack(id), "later");
   const unwind = RITUAL_LANES.find((item) => item.id === "unwind");
   const sleep = RITUAL_LANES.find((item) => item.id === "before-sleep");
-  assert.deepEqual(unwind?.workIds.slice(-3, -1), ["tales-from-the-fjeld", id]);
+  assert.deepEqual(unwind?.workIds.slice(-4, -2), ["tales-from-the-fjeld", id]);
   assert.deepEqual(sleep?.workIds.slice(-4, -2), ["tales-from-the-fjeld", id]);
   for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes(id), lane.id === "unwind" || lane.id === "before-sleep", lane.id);
   // Not the local Selected Polish Tales (8378: Prus and Rygier-Nalkowska).
@@ -18888,7 +18888,7 @@ test("Mira Sat 17 Oct PM SCHREINER-DREAMS: Dreams is plain Next at the end of Ne
   assert.equal((NEXT_CAREFULLY_IDS as readonly string[]).includes(id), false);
   assert.equal(featured.includes(id), false);
   const unwind = RITUAL_LANES.find((lane) => lane.id === "unwind");
-  assert.deepEqual(unwind?.workIds.slice(-2), ["tales-by-polish-authors", id]);
+  assert.deepEqual(unwind?.workIds.slice(-3, -1), ["tales-by-polish-authors", id]);
   for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes(id), lane.id === "unwind", lane.id);
   assert.equal(ritualStartAt(id), undefined);
   assert.equal(RITUAL_SIT_MINUTES[id], 6);
@@ -19558,5 +19558,78 @@ test("Mira Tue 20 Oct AM EWALD: The Four Seasons is on Rituals only, in Before s
   for (const word of ["deep down in the hill-side,", "Faint starlight on each hollow.", "Faint star-light on each hollow.*", "Hey fol-re-rol-day for Autumn!", "*By the grace of God, conferred on / Princes four, they share Earth’s burden: / Theirs the glory, hers the guerdon.*", "* * *"]) assert.ok(joined.includes(word), word);
   assert.doesNotMatch(joined, /\[Illustration|Illustration|TRANSCRIBER|Gutenberg|TRANSLATOR|Osman Edwards|CONTENTS|THE END|CHAPTER|PROLOGUE|The Four Seasons\*$|_|--/m);
   assert.equal(full.breaths.at(-1)!.text, "The next morning, the four princes rose in their splendour and their might, bowed low to one another and strode slowly away over the earth.");
+  for (const breath of full.breaths) assert.equal(breath.text.includes("\n"), false);
+});
+
+test("Mira Tue 20 Oct PM EWALD: The Old Willow-Tree is on Rituals only, in Unwind only, never Next or Featured; nine tales whole, one scene each; 1921 from the Butterworth verso", () => {
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  const featured = FEATURED_CAROUSEL_IDS as readonly string[];
+  const id = "the-old-willow-tree";
+  const unwind = RITUAL_LANES.find((lane) => lane.id === "unwind");
+  assert.deepEqual(unwind?.workIds.slice(-2), ["dreams-schreiner", id]);
+  for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes(id), lane.id === "unwind", lane.id);
+  assert.equal(next.includes(id), false);
+  assert.equal(featured.includes(id), false);
+  assert.equal((NEXT_CAREFULLY_IDS as readonly string[]).includes(id), false);
+  assert.equal(curatorialTrack(id), "later");
+  assert.equal(ritualStartAt(id), undefined);
+  assert.equal(RITUAL_SIT_MINUTES[id], 7);
+  const pitch = "There are many kinds of willows and they are so unlike that you would hardly believe them to be relations. The Old Willow-Tree, sections 1 and 2. A keeper plants a twig in a gap in the squire’s avenue of proud poplars, thinking it one of them, and it turns out to be a common willow. The poplars agree to put up with him if he grows straight, while out in the field the old oak scoffs and the wild rose-bush sets him right. The first reading ends “…would rather be the wild rose I am.” Carl Ewald’s nine tales of trees, flowers and mice in Alexander Teixeira de Mattos’s 1921 English. Dry and kindly, for winding down.";
+  assert.equal(RITUAL_PITCHES[id], pitch);
+  assert.equal(PREFACES[id], pitch);
+  assert.equal(STORED_PREFACES[id], pitch);
+  assert.equal(PITCHES[id], pitch);
+  assert.equal(SHELF.filter((item) => item.gutenberg === 31167).length, 1);
+  const work = SHELF.find((item) => item.id === id);
+  assert.ok(work);
+  assert.equal(work.intro, pitch);
+  assert.ok(pitch.startsWith(work.opening!));
+  assert.equal(work.local, true);
+  assert.equal(work.title, "The Old Willow-Tree and Other Stories");
+  assert.equal(work.author, "Carl Ewald (tr. Alexander Teixeira de Mattos)");
+  // IA oldwillowtreeoth00ewal verso: "First published October, 1921." (the 1907 notice covers only the three tales from The Spider and Other Tales).
+  assert.equal(work.year, 1921);
+  assert.equal(work.form, "stories");
+  assert.equal(work.breaths, 1067);
+  assert.equal(work.minutes, 170);
+  // The narrator names Denmark twice; The Four Seasons stays chipless (no author-country fallback).
+  assert.deepEqual(placeFor(work), { label: "Denmark", region: "dk" });
+  assert.equal(placeFor(SHELF.find((item) => item.id === "the-four-seasons")!), null);
+  assert.equal(work.opening, "There are many kinds of willows and they are so unlike that you would hardly believe them to be relations.");
+  assert.equal(blurbFor(work), "Nine tales from the woods and fields: a willow planted by mistake among proud poplars, a boastful mistletoe, a sulky lilac root, the beech and the oak, the weeds, the anemones, the wood and the heath, and the country mice who meet their cousin the rat from town.");
+  assert.doesNotMatch(work.intro ?? "", /\bFeatured\b|\bHost\b|Gutenberg|Vellum|Salon|Mira|\bThea\b|\bsit\b|ritual|bind|Internet Archive|Butterworth|Scribner|\blane\b|unwind|before-sleep|Denmark|Danish/i);
+  const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
+  const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as Work;
+  assert.equal(full.year, "1921");
+  assert.equal(opened.year, "1921");
+  assert.equal(full.breaths.length, 1067);
+  assert.deepEqual(full.scenes.map((s) => s.title), ["The Old Willow-Tree", "The Mistletoe", "The Lilac-Bush", "The Beech and the Oak", "The Weeds", "The Anemones", "The Wood and the Heath", "Somewhere in the Wood", "The Cousins"]);
+  full.scenes.forEach((scene, i) => assert.equal(scene.id, `s${i}`));
+  const words = full.breaths.reduce((n, breath) => n + breath.text.trim().split(/\s+/).length, 0);
+  assert.equal(Math.round(words / 200), work.minutes);
+  assert.equal(openingBreathIndex(full), 0);
+  // The printed section number "1" sits above the card's paragraph.
+  assert.equal(full.breaths[0]!.text, "1");
+  assert.equal(full.breaths[1]!.text, work.opening);
+  assert.equal(opened.breaths.length, 41);
+  assert.deepEqual(opened.scenes.map((s) => s.id), ["s0"]);
+  opened.breaths.forEach((b, i) => {
+    assert.equal(b.id, full.breaths[i]?.id, `open ${i}`);
+    assert.equal(b.text, full.breaths[i]?.text, `open ${i}`);
+  });
+  assert.equal(opened.breaths.at(-1)!.text, "\"Yes, I, too, would rather be the wild rose I am,\" said the rose-bush.");
+  assert.equal(full.breaths[opened.breaths.length]!.text, "3");
+  const sitWords = opened.breaths.reduce((n, b) => n + b.text.trim().split(/\s+/).length, 0);
+  assert.equal(sitWords, 1306);
+  assert.ok(sitWords / 200 >= 5 && sitWords / 200 <= 10);
+  assert.deepEqual(MERGE_STOP_INDEX[id], [40]);
+  const lilac = full.breaths.filter((b) => b.sceneId === "s2" && /^\d+$/.test(b.text)).map((b) => b.text);
+  assert.deepEqual(lilac, ["1", "2", "3"]);
+  const cousins = full.breaths.filter((b) => b.sceneId === "s8" && /^\d+$/.test(b.text)).map((b) => b.text);
+  assert.deepEqual(cousins, ["1", "2", "3", "4", "5", "6"]);
+  const joined = full.breaths.map((b) => b.text).join("\n");
+  for (const word of ["Not a leaf was left, except", "before it become too deep.", "A story of the house-mouse, the wood-mouse, the field-mouse, the black rat and the brown rat."]) assert.ok(joined.includes(word), word);
+  assert.doesNotMatch(joined, /was-left|\[Illustration|Illustration|Transcriber|Gutenberg|ROYAL ROAD|CHRISTABEL|BURLEIGH|THE END|CHAPTER|_|--/);
+  assert.equal(full.breaths.at(-1)!.text, "\"Well, bless my soul, after all, what's the objection? The house-mouse will fall to the cat and I to the owl or the fox and the field-mouse to the young forester. Whereas the black rat has remained in the family.\"");
   for (const breath of full.breaths) assert.equal(breath.text.includes("\n"), false);
 });

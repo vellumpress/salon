@@ -451,6 +451,8 @@ const BLURBS: Record<string, string> = {
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
     "In the morning of the world the sun watches the young Earth take shape, and four princes, Winter, Spring, Summer and Autumn, agree to share her: each rules the valley in his turn, with songs, storms, flowers and birds, until they meet again.",
+  "the-old-willow-tree":
+    "Nine tales from the woods and fields: a willow planted by mistake among proud poplars, a boastful mistletoe, a sulky lilac root, the beech and the oak, the weeds, the anemones, the wood and the heath, and the country mice who meet their cousin the rat from town.",
   nostalgia:
     "A young bride from the green banks of the Po comes to Rome full of dreams, and finds a cramped family flat, a tight budget and a dazzling city that will not quite let her in.",
   "the-adventures-of-huckleberry-finn":

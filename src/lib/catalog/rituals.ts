@@ -618,6 +618,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `He came into the world in the middle of the thicket, in one of those little, hidden forest glades which seem to be entirely open, but are really screened in on all sides. Chapter I and the start of Chapter II. A fawn is born in a hidden glade, a chatty magpie drops by, his mother washes him and whispers his name, and in early summer he follows her down the narrow forest paths, asking question after question. The first reading ends “…and grow silent.” Felix Salten’s 1928 story in Whittaker Chambers’s English. Soft and wondering, for the end of the day. A heads-up for later chapters: hunters come into the woods, and Bambi loses his mother.`,
   "the-four-seasons":
     `Lo, nowadays the earth is white or green, according as Winter rules or Spring. The Prologue and Chapter I. The sun watches over the Earth, the youngest of its children, as she cools out of fire and flood into green land. Then two princes come walking over it, old Winter from the North and young Summer from the South, each working his own wonders, and neither can gain ground on the other. The first reading ends “…filled all the fair space around.” Carl Ewald’s fable of the turning year in Alexander Teixeira de Mattos’s 1913 English, with the songs in verse by Osman Edwards. Slow and wondering, for the end of the day.`,
+  "the-old-willow-tree":
+    `There are many kinds of willows and they are so unlike that you would hardly believe them to be relations. The Old Willow-Tree, sections 1 and 2. A keeper plants a twig in a gap in the squire’s avenue of proud poplars, thinking it one of them, and it turns out to be a common willow. The poplars agree to put up with him if he grows straight, while out in the field the old oak scoffs and the wild rose-bush sets him right. The first reading ends “…would rather be the wild rose I am.” Carl Ewald’s nine tales of trees, flowers and mice in Alexander Teixeira de Mattos’s 1921 English. Dry and kindly, for winding down.`,
   "winnie-the-pooh":
     `Edward Bear, known to his friends as Winnie-the-Pooh, or Pooh for short, was walking through the forest one day, humming proudly to himself. “In Which Pooh Goes Visiting and Gets into a Tight Place” is one complete chapter from Winnie-the-Pooh — after morning Stoutness Exercises and a brand-new hum, Pooh calls on Rabbit, stays for honey, and finds the front door a little tight on the way out. It ends “…Silly old Bear!” Bright and comic, made for waking. The forest.`,
   "the-mist":
@@ -2212,6 +2214,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "tales-by-polish-authors",
       // Mira Sat 17 Oct 2026 PM SCHREINER-DREAMS — Dreams: The Lost Joy whole is the reading (opening sit). Unwind only; never before-sleep. Plain Next, never Featured.
       "dreams-schreiner",
+      // Mira Tue 20 Oct 2026 PM EWALD — The Old Willow-Tree (Ewald, tr. Teixeira de Mattos, 1921): Rituals only, Unwind only. The first reading (The Old Willow-Tree, sections 1 and 2: the willow planted among the poplars, the oak and the wild rose) is dry, kindly comedy: never before-sleep (The Four Seasons sits there), never Next or Featured.
+      "the-old-willow-tree",
     ],
   },
   {
@@ -2741,6 +2745,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-little-barefoot": 10,
   "bambi": 6,
   "the-four-seasons": 9,
+  "the-old-willow-tree": 7,
   "growth-of-the-soil": 15,
   "nada-the-lily": 17,
   "all-quiet-on-the-western-front": 10,
