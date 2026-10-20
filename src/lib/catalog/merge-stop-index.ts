@@ -533,6 +533,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "for-the-term-of-his-natural-life": [
     8
   ],
+  "four-meetings": [
+    60
+  ],
   "fraternity": [
     135
   ],

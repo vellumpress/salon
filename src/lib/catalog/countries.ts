@@ -751,6 +751,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "seven-legends": "Egypt",
   "the-little-barefoot": "Germany",
   "the-blue-castle": "Canada",
+  "four-meetings": "United States",
   nostalgia: "Italy",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",

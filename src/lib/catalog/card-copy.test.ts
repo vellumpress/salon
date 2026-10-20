@@ -339,6 +339,7 @@ test("known origin overrides", () => {
     "seven-legends": "Egypt",
     "the-little-barefoot": "Germany",
     "the-blue-castle": "Canada",
+    "four-meetings": "United States",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
