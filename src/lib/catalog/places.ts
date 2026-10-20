@@ -229,6 +229,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-dancing-master": { label: "Paris", region: "fr" },
   "the-golden-age": { label: "England", region: "gb" },
   "the-mist": { label: "the glade", region: "dk" },
+  // Mira Tue 20 Oct 2026 PM EWALD: the narrator names Denmark ("the rarest plant in Denmark", The Mistletoe; "that's what winter is in Denmark", The Cousins).
+  "the-old-willow-tree": { label: "Denmark", region: "dk" },
   "strait-is-the-gate": { label: "Fongueusemare", region: "fr" },
   "fraulein-schmidt-and-mr-anstruther": { label: "Jena", region: "de" },
   "the-goose-man": { label: "Nuremberg", region: "de" },
