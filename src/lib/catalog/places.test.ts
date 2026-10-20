@@ -138,6 +138,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "seven-legends": { label: "Alexandria", region: "eg" },
     "the-little-barefoot": { label: "Black Forest", region: "de" },
     "the-blue-castle": { label: "Deerwood, Muskoka, Ontario", region: "ca" },
+    "four-meetings": { label: "New England", region: "us" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -785,4 +786,11 @@ test("Tue 20 Oct AM The Four Seasons prints no place: a fable on an unnamed eart
   assert.equal(placeFor(work), null);
   assert.equal(placeForId("the-four-seasons"), null);
   assert.equal(chipOnlyLabel("the-four-seasons"), null);
+});
+
+test("Tue 20 Oct PM Four Meetings place reuses us; New England; no new region key", () => {
+  assert.ok(REGION_SHAPES.us?.d, "us shape");
+  assert.deepEqual(placeFor(shelfWork("four-meetings")!), { label: "New England", region: "us" });
+  assert.equal(CHIP_ONLY_PLACE["four-meetings"], undefined);
+  assert.equal(countryFor(shelfWork("four-meetings")!), "United States");
 });

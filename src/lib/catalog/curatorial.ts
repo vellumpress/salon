@@ -1255,6 +1255,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "seven-legends",
   // Mira Sun 18 Oct 2026 PM BLUE-CASTLE — The Blue Castle (Montgomery, 1926) follows Seven Legends at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "the-blue-castle",
+  // Mira Tue 20 Oct 2026 PM FOUR-MEETINGS — Four Meetings (James, 1885) follows The Blue Castle at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "four-meetings",
 ] as const;
 
 /**

@@ -38,6 +38,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-bridge-of-san-luis-rey": { label: "Peru", region: "pe" },
   "mr-fortunes-maggot": { label: "Fanua", region: "ws" },
   "the-house-of-mirth": { label: "New York", region: "us" },
+  // Mira Tue 20 Oct 2026 PM FOUR-MEETINGS: Grimwinter is James's New England village (named as "the depths of New England"); the chip names the region and reuses us.
+  "four-meetings": { label: "New England", region: "us" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

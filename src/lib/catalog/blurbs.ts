@@ -447,6 +447,8 @@ const BLURBS: Record<string, string> = {
     "Two orphans of a Black Forest village grow up apart: idle Dami drifts from place to place and at last sets off for America, while barefoot Amrie, goose-girl and farm maid, keeps her pride until a rich farmer's son asks her to dance at a wedding.",
   "the-blue-castle":
     "At twenty-nine, timid Valancy Stirling learns she has a year to live, walks out on her overbearing family, and goes looking for the life she has only ever had in her Blue Castle.",
+  "four-meetings":
+    "A New England schoolteacher saves for years to see Europe, and a passing traveller watches, in four meetings, what becomes of her dream.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
