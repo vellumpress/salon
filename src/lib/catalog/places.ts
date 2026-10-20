@@ -40,6 +40,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-house-of-mirth": { label: "New York", region: "us" },
   // Mira Tue 20 Oct 2026 PM FOUR-MEETINGS: Grimwinter is James's New England village (named as "the depths of New England"); the chip names the region and reuses us.
   "four-meetings": { label: "New England", region: "us" },
+  // Mira Tue 20 Oct 2026 PM AUTRES-TEMPS: the story opens off New York and ends in a New York hotel; the chip reuses the New York label and us.
+  "autres-temps": { label: "New York", region: "us" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

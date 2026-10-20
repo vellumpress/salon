@@ -449,6 +449,8 @@ const BLURBS: Record<string, string> = {
     "At twenty-nine, timid Valancy Stirling learns she has a year to live, walks out on her overbearing family, and goes looking for the life she has only ever had in her Blue Castle.",
   "four-meetings":
     "A New England schoolteacher saves for years to see Europe, and a passing traveller watches, in four meetings, what becomes of her dream.",
+  "autres-temps":
+    "Called home to New York by her daughter's divorce and remarriage, a woman cut by society for the same offence eighteen years before learns whether the times have really changed.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":

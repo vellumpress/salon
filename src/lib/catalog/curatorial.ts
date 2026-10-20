@@ -1257,6 +1257,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-blue-castle",
   // Mira Tue 20 Oct 2026 PM FOUR-MEETINGS — Four Meetings (James, 1885) follows The Blue Castle at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "four-meetings",
+  // Mira Tue 20 Oct 2026 PM AUTRES-TEMPS — Autres Temps... (Wharton, 1916) follows Four Meetings at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "autres-temps",
 ] as const;
 
 /**
