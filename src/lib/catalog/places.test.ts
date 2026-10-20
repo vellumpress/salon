@@ -470,7 +470,8 @@ test("mid Rituals places reuse gb; no new region key; Elysium is a named chip, n
 
 test("POST-v3 Ritual: NO_PRINTED_PLACE is only Wedding-Day, and it resolves no chip and no country", () => {
   // BAMBI joins: the forest is never named (Mon 19 Oct 2026).
-  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi"]);
+  // THE FOUR SEASONS joins: a cosmic fable on an unnamed earth (Tue 20 Oct 2026).
+  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons"]);
   for (const id of NO_PRINTED_PLACE) {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -775,4 +776,13 @@ test("Mon 19 Oct AM Bambi prints no place: the forest is never named; no chip, n
   assert.equal(placeForId("bambi"), null);
   assert.equal(chipOnlyLabel("bambi"), null);
   assert.equal(countryFor(work), "");
+});
+
+test("Tue 20 Oct AM The Four Seasons prints no place: a fable on an unnamed earth; no chip", () => {
+  const work = shelfWork("the-four-seasons")!;
+  assert.ok(work);
+  assert.equal(NO_PRINTED_PLACE.has("the-four-seasons"), true);
+  assert.equal(placeFor(work), null);
+  assert.equal(placeForId("the-four-seasons"), null);
+  assert.equal(chipOnlyLabel("the-four-seasons"), null);
 });

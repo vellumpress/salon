@@ -616,6 +616,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `Early in the morning of an autumnal day, when the morning mist lay upon the ground, two children, a boy and a girl of six and seven years old, went hand in hand through the back, or garden path, out of the village. The first reading is Chapter I, The Children Knock, whole — every morning orphaned Amrie and her little brother Dami knock at the shut door of their parents’ house and call for father and mother, then skip stones on the pond until the cuckoo clock calls them to school. It ends “…Amrie nodded silently.” A heads-up before you start: both parents have just died of a short illness, and the children grieve. Berthold Auerbach’s village tale in Eliza Buckminster Lee’s 1867 English. Tender and sad, for a quiet hour, not for sleep. The Black Forest.`,
   "bambi":
     `He came into the world in the middle of the thicket, in one of those little, hidden forest glades which seem to be entirely open, but are really screened in on all sides. Chapter I and the start of Chapter II. A fawn is born in a hidden glade, a chatty magpie drops by, his mother washes him and whispers his name, and in early summer he follows her down the narrow forest paths, asking question after question. The first reading ends “…and grow silent.” Felix Salten’s 1928 story in Whittaker Chambers’s English. Soft and wondering, for the end of the day. A heads-up for later chapters: hunters come into the woods, and Bambi loses his mother.`,
+  "the-four-seasons":
+    `Lo, nowadays the earth is white or green, according as Winter rules or Spring. The Prologue and Chapter I. The sun watches over the Earth, the youngest of its children, as she cools out of fire and flood into green land. Then two princes come walking over it, old Winter from the North and young Summer from the South, each working his own wonders, and neither can gain ground on the other. The first reading ends “…filled all the fair space around.” Carl Ewald’s fable of the turning year in Alexander Teixeira de Mattos’s 1913 English, with the songs in verse by Osman Edwards. Slow and wondering, for the end of the day.`,
   "winnie-the-pooh":
     `Edward Bear, known to his friends as Winnie-the-Pooh, or Pooh for short, was walking through the forest one day, humming proudly to himself. “In Which Pooh Goes Visiting and Gets into a Tight Place” is one complete chapter from Winnie-the-Pooh — after morning Stoutness Exercises and a brand-new hum, Pooh calls on Rabbit, stays for honey, and finds the front door a little tight on the way out. It ends “…Silly old Bear!” Bright and comic, made for waking. The forest.`,
   "the-mist":
@@ -1705,6 +1707,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "tales-by-polish-authors",
       // Mira Mon 19 Oct 2026 AM BAMBI — Bambi (Salten, tr. Chambers, 1928): Rituals only, Before sleep only. The first reading (Chapter I and the start of Chapter II, the fawn's birth to "and grow silent.") is the calmest stretch in the book: never unwind; never Next or Featured.
       "bambi",
+      // Mira Tue 20 Oct 2026 AM EWALD — The Four Seasons (Ewald, tr. Teixeira de Mattos, songs Osman Edwards, 1913): Rituals only, Before sleep only. The first reading (the Prologue and Chapter I, the young Earth to Winter's and Summer's first meeting, ending under the moon and the nightingale) is a calm fable: never Next or Featured.
+      "the-four-seasons",
     ],
   },
   {
@@ -2736,6 +2740,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "the-dancing-master": 10,
   "the-little-barefoot": 10,
   "bambi": 6,
+  "the-four-seasons": 9,
   "growth-of-the-soil": 15,
   "nada-the-lily": 17,
   "all-quiet-on-the-western-front": 10,

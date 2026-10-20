@@ -1,0 +1,323 @@
+{
+  "id": "the-four-seasons",
+  "title": "The Four Seasons",
+  "author": "Carl Ewald (tr. Alexander Teixeira de Mattos)",
+  "year": "1913",
+  "note": "Opening sit: the Prologue and Chapter I to the star break, to “filled all the fair space around.”",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Prologue",
+      "place": "Prologue",
+      "reentry": "Lo, nowadays the earth is white or green, according as Winter rules or Spring. The thrush sings in the grove and the canary in his cage, the smoke rises from the house-top and the church-bell tolls for evensong. The monk walks in the meadow",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Chapter I — The First Meeting",
+      "place": "Chapter I — The First Meeting",
+      "reentry": "*By the grace of God, conferred on / Princes four, they share Earth’s burden: / Theirs the glory, hers the guerdon.*",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Lo, nowadays the earth is white or green, according as Winter rules or Spring. The thrush sings in the grove and the canary in his cage, the smoke rises from the house-top and the church-bell tolls for evensong. The monk walks in the meadow and the poet writes verse."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "But once things were different."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Once things were so that, had somebody taken a walk on the earth, nowhere would a dog have run out of a house and barked at him. For there was not upon all the earth a single dog to run out of a house nor a single house for a dog to run out of."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "He would not have come upon a tree nor a flower nor a blade of grass. Nor could he have found a drop of water to quench his thirst with."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "For there was nobody on the earth—nobody and nothing."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "*Had* there been anybody who wanted to take a walk, he simply could not have done so. For the earth was mere vapour and mist, so that he would have fallen plump through her and plunged straight into space, where the stars float."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "And he would not have had much satisfaction from this. For, unless he had been quite round and nice and bright, he would have cut a foolish figure among the stars."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Such was the state of things."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "But the earth quite understood that she could not go on like this for ever. She could not have been intended to be never more than smoke. So she pulled herself together and did her best. But she had to go through a terrible amount and it was a hard time for her, which she never forgot and which she bears the marks of to this day."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "She had to go through fire and through water too."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "For thousands of years, she flew through space like a ball of fire and, when at length she had a stone crust about her, the rain poured down upon her nor stopped until she sailed away like an enormous drop of water."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Meanwhile, the fire in the earth’s interior broke out each moment through the crust, burst it and split it criss-crosswise and flung the pieces higgledy-piggledy to every side."
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "“My poor, dear little Earth!” said the sun and looked at her kindly."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "“Why do you bother about that clot?” asked one of the big stars. “Shine on us, who are worth shining on.”"
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "“The earth is no clot to me,” replied the sun. “She is my child, like yourself and the others. And she is the youngest and therefore nearest to my heart. It is not so very many thousand years ago since she broke loose from me and sallied forth into the universe to tempt fortune single-handed. If only she behaves pluckily and does not lose heart, I shall have pleasure enough in her.”"
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The earth heard this and held out."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "Year by year, the stone crust grew thicker, the water sank gradually into the ground and the land rose to the surface. But, even when the crust became so thick that the fire could not break through it just when and where it pleased, but had to make a regular effort when it wished to create a sensation, even then the earth’s trials were not over."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "There was no order about her at all."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "For instance, it was just as warm in Greenland as in Italy. Plenty of plants grew on the earth, but they were queer ones: ferns and horse-tails as tall as the tallest trees in the forest nowadays. There were animals too, but they were strange and uncanny creatures which we never meet with now except in the old fairy-tales. There were quadrupeds that were thirty yards long and swam in the water; and there were dragons that flew in the air and looked horrid."
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "And so it happened that it became ridiculously cold on the greatest part of the earth. Wherever one looked lay ice and snow; and the animals and plants died."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "But then the fire broke out again, more violently than ever, and overturned hills and dales. Great new lands rose up out of the sea; and the sea swept its broad waves ruthlessly over the old lands."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "No one could conceive what the end would be."
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "“My poor, dear little Earth!” said the sun."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "But how all these things were put in order at last—this you shall read in the fairy-tale of *The Four Seasons*."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "*By the grace of God, conferred on / Princes four, they share Earth’s burden: / Theirs the glory, hers the guerdon.*"
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "It happened one day that two princes came walking over the earth of each in the other’s direction."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "One of them came from the North, the other from the South. They were both tall, taller than men, taller than any champion of romance. They carried their heads royally and high and set their feet firmly upon the ground, as if it belonged to them."
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "The one who came from the North was the elder. He was an old man with a might of white hair and beard; his naked breast was shaggy, shaggy his legs and hands. He looked strong and wild, with cold, stern eyes."
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "The one who came from the South was young, but no less powerful than the other. His face and hands were burned by the sun, his eyes strong and gentle as the sun. Over his shoulder he wore a purple cloak, round his loins a golden girdle. In the girdle was a wonderful red rose."
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "When the princes saw each other from afar, they stopped for a moment and then walked quickly on again, as though they longed to meet. But, when they had come a little closer to each other, they both stood still once more. The young one shivered when he met the old one’s glance; and the sweat sprang to the old one’s brow when the young one looked at him."
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "They stood thus for a time. Then they sat down, each upon a mountain, and gazed at each other and waited for a while in silence."
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "The young one was the first to speak:"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "“You are Winter, I presume?” he asked."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "The old one nodded:"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "“I am Winter, the lord of the earth,” he answered."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "The young one laughed till the mountains rang:"
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "“Are you really?” said he. “And I am Summer, the lord of the earth.”"
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "They sat again for a while and measured each other with angry glances."
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Then Winter said:"
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "“I came out to meet you and talk to you. But I do not like you.”"
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "“I came intending to talk you into your senses,” said Summer. “But I can hardly bear to look at you, you are so grim and ugly.”"
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "“Shall we divide the earth between us?” asked Winter. “You come everywhere with your namby-pamby sunshine and melt my ice and plant your paltry flowers. I retaliate, as you know. I smother your creatures in snow and spoil your pleasure. We are both equally strong: shall we conclude a peace?”"
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "“What would *that* lead to?” asked Summer, suspiciously."
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "“Each of us must keep to his own,” replied Winter. “I have my ice-castle in the North, where you can never come, and you have your sun-palace down in the South, where my sway does not reach. As we cannot bear the sight of each other, we had better lay a broad waste belt between our kingdoms.”"
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "“Nothing shall be waste,” said Summer. “Everything shall be green, as far as I am concerned. I like to wander out of my summer-palace all over the earth and I will carry my light and my heat as far into your ice-fields as I can. I know no greater pleasure than to conjure forth a green spot in your snow ... even though it be but for a day.”"
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "“You are conceited, because you are in luck’s way for the moment,” replied Winter. “But you should remember that the times may change. I *was* the more powerful once and I may become so again. Do not forget that I am born of the eternal, unutterable cold of space.”"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "“And I am the child of the sun and was powerful before you,” said Summer, proudly."
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "Winter passed his fingers through his beard; and an avalanche came rushing down the mountain-side."
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "“Ugh!” said Summer and wrapped himself closer in his purple cloak."
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "“Would you like to see my might?” asked Winter."
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "He raised his arms in the air; and, then and there, the mountain on which he sat was quite transformed. A wild, blustering storm roared over it; and the snow swept down from the sky. A brook which had been leaping gaily over the slope turned suddenly to ice; and the waterfall which sang and hummed over the precipice fell silent at once and its water froze into yard-long icicles. When it ceased snowing, the mountain was white from top to foot."
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "“Now it’s my turn,” said Summer."
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "He took the rose from his girdle and flung it on the mountain whereon he sat; and forthwith the loveliest roses shot up from the ground. They nodded in the breeze from the point of every rock and filled the valleys with their fragrance and their colours. In every bush sat merry nightingales and sang; and from the flower-stalks heavy dew-drops hung and gleamed in the sun."
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "“Well?” said Summer."
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "Winter bent forward and stared hard at the loveliest rose of them all. Then the dew-drop that hung under the flower froze into an icicle. The bird that sat in its branches and sang fell stiff and frozen to the ground; and the rose itself withered and died."
+    },
+    {
+      "id": "s1-31",
+      "sceneId": "s1",
+      "text": "“Well?” said Winter."
+    },
+    {
+      "id": "s1-32",
+      "sceneId": "s1",
+      "text": "But Summer stood up and looked with his gentle eyes at Winter’s mountain, at the place where the snow lay deepest. And, on the spot at which he looked, the snow melted and from out the ground sprang the largest and loveliest Christmas rose that any one could hope to set eyes upon."
+    },
+    {
+      "id": "s1-33",
+      "sceneId": "s1",
+      "text": "In this wise, the two princes could make no way against each other."
+    },
+    {
+      "id": "s1-34",
+      "sceneId": "s1",
+      "text": "The day wore on; evening came and night. The moon shone upon the splendid snow-clad mountain, which gleamed and glittered like diamonds. Across from Summer’s mountain sounded the nightingale’s song; and the scent of the roses filled all the fair space around."
+    }
+  ]
+}

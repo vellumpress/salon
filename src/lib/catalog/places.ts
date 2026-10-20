@@ -556,6 +556,7 @@ export const CHIP_ONLY_PLACE: Record<string, string> = {
 export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
   "wedding-day", // story prints no place; never invent one
   "bambi", // Mira Mon 19 Oct 2026 AM BAMBI: the forest is never named and the front matter names no country; no chip, no country
+  "the-four-seasons", // Mira Tue 20 Oct 2026 AM EWALD: a cosmic fable set on "the earth" and an unnamed valley; Greenland and Italy appear once only as a climate aside in the Prologue; no chip
 ]);
 
 export function chipOnlyLabel(id: string | undefined): string | null {
@@ -570,6 +571,8 @@ function withShape(place: WorkPlace | undefined): WorkPlace | null {
 
 export function placeFor(work: PlaceRef): WorkPlace | null {
   if (CHIP_ONLY_PLACE[work.id]) return null;
+  // A story that prints no place never falls back to its author's country (Mira Tue 20 Oct 2026 EWALD).
+  if (NO_PRINTED_PLACE.has(work.id)) return null;
   const curated = withShape(WORK_PLACE[work.id]);
   if (curated) return curated;
   const country = countryFor(work);
