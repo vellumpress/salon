@@ -186,16 +186,18 @@ test("a long book only walks the upcoming window", () => {
 test("text after the passage is blurred and washed out, and the focus line stays sharp", () => {
   const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
   const slot = css.match(/\.upcoming-slot,\s*\n\.passage-ahead-body\s*\{[^}]+\}/)?.[0] ?? "";
-  assert.match(slot, /filter:\s*blur\(6px\)/);
+  assert.match(slot, /filter:\s*blur\(5px\)/);
   assert.doesNotMatch(slot, /\.breath-now|\.look-line/);
-  assert.match(css, /\.upcoming-far\s*\{[^}]*filter:\s*blur\(14px\)/);
-  assert.match(css, /color-mix\(in srgb, var\(--reader-bg\) 85%, transparent\)/);
-  assert.match(css, /color-mix\(in srgb, var\(--reader-bg\) 90%, transparent\)/);
+  assert.match(css, /\.upcoming-far\s*\{[^}]*filter:\s*blur\(8px\)/);
+  assert.match(
+    css,
+    /\.upcoming-shade,\s*\n\.passage-ahead-shade\s*\{[^}]*color-mix\(in srgb, var\(--reader-bg\) 50%, transparent\)/,
+  );
   const breath = css.match(/\.look-line,\s*\n\.breath-now\s*\{[^}]+\}/)?.[0] ?? "";
   assert.ok(breath.length > 0, "focus line rule missing");
   assert.doesNotMatch(breath, /blur|filter/);
   assert.match(css, /\.breath-sentence\.is-past\s*\{[^}]*opacity:\s*0\.5/);
-  assert.match(css, /\.breath-sentence\.is-ahead\s*\{[^}]*filter:\s*blur\(10px\)/);
+  assert.match(css, /\.breath-sentence\.is-ahead\s*\{[^}]*filter:\s*blur\(8px\)/);
   const transparent = css.slice(css.indexOf("@media (prefers-reduced-transparency: reduce)"));
   assert.match(transparent, /\.upcoming-slot,\s*\n\s*\.passage-ahead-body\s*\{[^}]*filter:\s*none/);
   assert.match(transparent, /\.upcoming-shade/);

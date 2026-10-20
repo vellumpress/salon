@@ -2035,16 +2035,15 @@ html:has(.board-doors) body {
   opacity: 0.5;
 }
 
-/* Text still ahead inside the lit breath. The glyphs themselves are a blur,
-   and a paper wash sits on the line so the words do not stay readable.
-   The wash fades in over a short run so the cut after the passage is soft. */
+/* Text still ahead inside the lit breath. A light blur keeps the words
+   as shapes, and a half-paper wash fades in over a short run so the cut
+   after the passage stays soft. */
 .breath-sentence.is-ahead {
-  color: color-mix(in srgb, var(--reader-ink, var(--color-ink)) 12%, var(--reader-bg));
-  filter: blur(10px);
+  filter: blur(8px);
   background: linear-gradient(
     to right,
-    color-mix(in srgb, var(--reader-bg) 80%, transparent) 0,
-    color-mix(in srgb, var(--reader-bg) 90%, transparent) 0.55rem
+    transparent 0,
+    color-mix(in srgb, var(--reader-bg) 50%, transparent) 0.55rem
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -2184,11 +2183,12 @@ html:has(.board-doors) body {
   /* One blur for the whole run. A filter on each line re-rasterizes
      while the track translates on iPhone Safari. The focus line sits
      outside this box, so it stays sharp. */
-  filter: blur(6px);
+  filter: blur(5px);
 }
 
 /* A second copy, faded in over a short run, carries the heavier blur.
-   The wash above it is the page color, so the edge stays soft. */
+   The wash above it is half the page color, so the shapes stay and the
+   edge stays soft. */
 .upcoming-far,
 .passage-ahead-blur,
 .upcoming-shade,
@@ -2202,7 +2202,7 @@ html:has(.board-doors) body {
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
-  filter: blur(14px);
+  filter: blur(8px);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 0.7rem);
   mask-image: linear-gradient(to bottom, transparent 0, #000 0.7rem);
 }
@@ -2210,16 +2210,16 @@ html:has(.board-doors) body {
 .passage-ahead-blur {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  -webkit-mask-image: linear-gradient(to bottom, rgb(0 0 0 / 0.4) 0, #000 0.7rem);
-  mask-image: linear-gradient(to bottom, rgb(0 0 0 / 0.4) 0, #000 0.7rem);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 0.7rem);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 0.7rem);
 }
 
 .upcoming-shade,
 .passage-ahead-shade {
   background: linear-gradient(
     to bottom,
-    color-mix(in srgb, var(--reader-bg) 85%, transparent) 0,
-    color-mix(in srgb, var(--reader-bg) 90%, transparent) 0.55rem
+    transparent 0,
+    color-mix(in srgb, var(--reader-bg) 50%, transparent) 0.55rem
   );
 }
 
