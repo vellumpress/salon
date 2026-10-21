@@ -44,6 +44,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "autres-temps": { label: "New York", region: "us" },
   // Mira Wed 21 Oct 2026 AM ATHEISTS-MASS: the story is set in Paris (the Hôtel-Dieu, Saint-Sulpice, the Rue des Quatre-Vents); the chip reuses the Paris label and fr.
   "the-atheists-mass": { label: "Paris", region: "fr" },
+  // Mira Wed 21 Oct 2026 PM HEADSWOMAN: St. Radegonde is a fictional French town; the chip reuses the France label and fr.
+  "the-headswoman": { label: "France", region: "fr" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue
