@@ -1263,6 +1263,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-atheists-mass",
   // Mira Wed 21 Oct 2026 PM HEADSWOMAN — The Headswoman (Grahame, 1921 illustrated edition) follows The Atheist's Mass at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "the-headswoman",
+  // Mira Wed 21 Oct 2026 PM PUTOIS — Putois (France, tr. Patten, 1907) follows The Headswoman at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "putois",
 ] as const;
 
 /**

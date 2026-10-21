@@ -455,6 +455,8 @@ const BLURBS: Record<string, string> = {
     "Caught slipping into Saint-Sulpice to hear mass, the boldest atheist among Paris surgeons tells his young protégé about a poor water-carrier and a debt that science cannot settle.",
   "the-headswoman":
     "When the town headsman dies and the post passes by right to his daughter, St. Radegonde finds that Jeanne means to do the job, and do it well.",
+  "putois":
+    "To dodge a tedious Sunday dinner, a mother invents a gardener named Putois, and soon he's stealing melons, terrorising a great-aunt and being spotted all over town.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
