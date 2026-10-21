@@ -42,6 +42,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "four-meetings": { label: "New England", region: "us" },
   // Mira Tue 20 Oct 2026 PM AUTRES-TEMPS: the story opens off New York and ends in a New York hotel; the chip reuses the New York label and us.
   "autres-temps": { label: "New York", region: "us" },
+  // Mira Wed 21 Oct 2026 AM ATHEISTS-MASS: the story is set in Paris (the Hôtel-Dieu, Saint-Sulpice, the Rue des Quatre-Vents); the chip reuses the Paris label and fr.
+  "the-atheists-mass": { label: "Paris", region: "fr" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

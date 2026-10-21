@@ -1417,6 +1417,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "the-aspern-papers": [
     95
   ],
+  "the-atheists-mass": [
+    12
+  ],
   "the-autobiography-of-an-ex-colored-man": [
     95
   ],
