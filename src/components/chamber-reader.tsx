@@ -1655,7 +1655,7 @@ export function TbrReader({
 
   const sentenceCount = breathSentenceCount(breath.text, displayKind);
   const atSentence = Math.min(sentenceCount - 1, Math.max(0, cursor));
-  const sceneGroups = groupsAt(index, { cursor: atSentence, window: spotWindow, edge: "around", after: 0 });
+  const sceneGroups = groupsAt(index, { cursor: atSentence, window: spotWindow, edge: "around", after: 1 });
   const groupAt = sceneGroups.length
     ? locateSpotlight(sceneGroups, index, atSentence, spotWindow)
     : 0;
