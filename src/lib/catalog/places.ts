@@ -46,6 +46,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-atheists-mass": { label: "Paris", region: "fr" },
   // Mira Wed 21 Oct 2026 PM HEADSWOMAN: St. Radegonde is a fictional French town; the chip reuses the France label and fr.
   "the-headswoman": { label: "France", region: "fr" },
+  // Mira Wed 21 Oct 2026 PM PUTOIS: the story is set in Saint-Omer ("All Saint-Omer believes in the existence of Putois"); new label on the existing fr region.
+  "putois": { label: "Saint-Omer", region: "fr" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

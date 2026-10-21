@@ -343,6 +343,7 @@ test("known origin overrides", () => {
     "autres-temps": "United States",
     "the-atheists-mass": "France",
     "the-headswoman": "France",
+    "putois": "France",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
