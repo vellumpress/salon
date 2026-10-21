@@ -417,7 +417,8 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   // THE OLD WILLOW-TREE one more (1157).
   // FOUR-MEETINGS one more (1158).
   // AUTRES-TEMPS one more (1159).
-  assert.equal(LOCAL_WORKS.length, 1159);
+  // ATHEISTS-MASS one more (1160).
+  assert.equal(LOCAL_WORKS.length, 1160);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 

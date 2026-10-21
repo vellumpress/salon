@@ -1259,6 +1259,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "four-meetings",
   // Mira Tue 20 Oct 2026 PM AUTRES-TEMPS — Autres Temps... (Wharton, 1916) follows Four Meetings at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "autres-temps",
+  // Mira Wed 21 Oct 2026 AM ATHEISTS-MASS — The Atheist's Mass (Balzac, tr. Clara Bell, 1896) follows Autres Temps at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "the-atheists-mass",
 ] as const;
 
 /**

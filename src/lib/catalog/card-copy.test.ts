@@ -341,6 +341,7 @@ test("known origin overrides", () => {
     "the-blue-castle": "Canada",
     "four-meetings": "United States",
     "autres-temps": "United States",
+    "the-atheists-mass": "France",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
