@@ -756,6 +756,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "the-atheists-mass": "France",
   "the-headswoman": "France",
   "putois": "France",
+  "a-chair-on-the-boulevard": "France",
   nostalgia: "Italy",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",

@@ -1265,6 +1265,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-headswoman",
   // Mira Wed 21 Oct 2026 PM PUTOIS — Putois (France, tr. Patten, 1907) follows The Headswoman at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "putois",
+  // Mira Wed 21 Oct 2026 PM CHAIR — A Chair on the Boulevard (Merrick, 1921) follows Putois at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "a-chair-on-the-boulevard",
 ] as const;
 
 /**

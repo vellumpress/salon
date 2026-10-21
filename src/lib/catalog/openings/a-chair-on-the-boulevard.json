@@ -1,0 +1,363 @@
+{
+  "id": "a-chair-on-the-boulevard",
+  "title": "A Chair on the Boulevard",
+  "author": "Leonard Merrick",
+  "year": "1921",
+  "note": "Opening sit: The Tragedy of a Comic Song, to My name is Paulette Fleury.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Tragedy of a Comic Song",
+      "place": "The Tragedy of a Comic Song",
+      "reentry": "I like to monopolise a table in a restaurant, unless a friend is with me, so I resented the young man's presence. Besides, he had a melancholy face. If it hadn't been for the piano-organ, I don't suppose I should have spoken to him. As the ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "I like to monopolise a table in a restaurant, unless a friend is with me, so I resented the young man's presence. Besides, he had a melancholy face. If it hadn't been for the piano-organ, I don't suppose I should have spoken to him. As the organ that was afflicting Lisle Street began to volley a comic song of a day that was dead, he started.",
+      "_end": 276
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "\"That tune!\" he murmured in French. If I did not deceive myself, tears sprang to his eyes.",
+      "_end": 279
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "I was curious. Certainly, on both sides of the Channel, we had long ago had more than enough of the tune—no self-respecting organ-grinder rattled it now. That the young Frenchman should wince at the tune I understood. But that he should weep!",
+      "_end": 284
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "I smiled sympathetically. \"We suffered from it over here as well,\" I remarked.",
+      "_end": 287
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"I did not know,\" he said, in English that reproved my French, \"it was sung in London also—'Partant pour le Moulin'?\"",
+      "_end": 290
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"Under another name,\" I told him, \"it was an epidemic.\"",
+      "_end": 292
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Clearly, the organ had stirred distressing memories in him, for though we fell to chatting, I could see that he neither talked nor dined with any relish. As luck would have it, too, the instrument of torture resumed its répertoire well within hearing, and when \"Partant pour le Moulin\" was reached again, he clasped his head.",
+      "_end": 298
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "\"You find it so painful?\" I inquired.",
+      "_end": 300
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"Painful?\" he exclaimed. \"Monsieur, it is my 'istory, that comic tune! It is to me romance, tragedy, ruin. Will you hear? Wait! I shall range my ideas. Listen:\"",
+      "_end": 304
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "* * *",
+      "_end": 306
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "It is Paris, at Montmartre—we are before the door of a laundress. A girl approaches. Her gaze is troubled, she frowns a little. What ails her? I shall tell you: the laundress has refused to deliver her washing until her bill is paid. And the girl cannot pay it—not till Saturday— and she has need of things to put on. It is a moment of anxiety.",
+      "_end": 312
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "She opens the door. Some minutes pass. The girl reappears, holding under her arm a little parcel. Good! she has triumphed. In coming out she sees a young man, pale, abstracted, who stands before the shop. He does not attempt to enter. He stands motionless, regarding the window with an air forlorn.",
+      "_end": 318
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"Ah,\" she says to herself, \"here is another customer who cannot pay his bill!\"",
+      "_end": 321
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "But wait a little. After 'alf an hour what happens? She sees the young man again! This time he stands before a modest restaurant. Does he go in? No, again no! He regards the window sorrowfully. He sighs. The dejection of his attitude would melt a stone.",
+      "_end": 326
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"Poor boy,\" she thought; \"he cannot pay for a dinner either!\"",
+      "_end": 328
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The affair is not finished. How the summer day is beautiful—she will do some footing! Figure yourself that once more she perceives the young man. Now it is before the mont-de-piété, the pawnbroker's. She watches him attentively. Here, at least, he will enter, she does not doubt. She is wrong. It is the same thing—he regards, he laments, he turns away!",
+      "_end": 334
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"Oh, mon Dieu,\" she said. \"Nothing remains to him to pawn even!\"",
+      "_end": 336
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "It is too strong! She addressed him:",
+      "_end": 338
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"Monsieur!\"",
+      "_end": 340
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "But, when she has said \"Monsieur,\" there is the question how she shall continue. Now the young man regards the girl instead of the pawnbroker's. Her features are pretty—or \"pretty well\"; her costume has been made by herself, but it is not bad; and she has chic—above all she has chic. He asks:",
+      "_end": 346
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"What can I have the pleasure to do for you?\"",
+      "_end": 348
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Remark that she is bohemian, and he also.",
+      "_end": 350
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "The conversation was like this:",
+      "_end": 352
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "\"Monsieur, three times this morning I have seen you. It was impossible that I resist speaking. You have grief?\"",
+      "_end": 355
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "\"Frightful!\" he said.",
+      "_end": 357
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "\"Perhaps,\" she added timidly, \"you have hunger also?\"",
+      "_end": 359
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "\"A hunger insupportable, mademoiselle!\"",
+      "_end": 361
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "\"I myself am extremely hard up, monsieur, but will you permit that I offer you what I can?\"",
+      "_end": 364
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"Angel!\" the young man exclaimed. \"There must be wings under your coat. But I beg of you not to fly yet. I shall tell you the reason of my grief. If you will do me the honour to seat yourself at the café opposite, we shall be able to talk more pleasantly.\"",
+      "_end": 369
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "This appeared strange enough, this invitation from a young man who she had supposed was starving; but wait a little! Her amazement increased when, to pay for the wine he had ordered, her companion threw on to the table a bank-note with a gesture absolutely careless.",
+      "_end": 374
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "She was in danger of distrusting her eyes.",
+      "_end": 376
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "\"Is it a dream?\" she cried. \"Is it a vision from the *Thousand and One Nights*, or is it really a bank-note?\"",
+      "_end": 379
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "\"Mademoiselle, it is the mess of pottage,\" the young man answered gloomily. \"It is the cause of my sadness: for that miserable money, and more that is to come, I have sold my birthright.\"",
+      "_end": 383
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "She was on a ship—no, what is it, your expression?—\"at sea\"!",
+      "_end": 385
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "\"I am a poet,\" he explained; \"but perhaps you may not know my work; I am not celebrated. I am Tricotrin, mademoiselle—Gustave Tricotrin, at your feet! For years I have written, aided by ambition, and an uncle who manufactures silk in Lyons. Well, the time is arrived when he is monstrous, this uncle. He says to me, 'Gustave, this cannot last—you make no living, you make nothing but debts. (My tragedies he ignores.) Either you must be a poet who makes money, or you must be a partner who makes silk,' How could I defy him?—he holds the purse. It was unavoidable that I stooped. He has given me a sum to satisfy my creditors, and Monday I depart for Lyons. In the meantime, I take tender farewells of the familiar scenes I shall perhaps never behold again.\"",
+      "_end": 398
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"How I have been mistaken!\" she exclaimed. And then: \"But the hunger you confessed?\"",
+      "_end": 401
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "\"Of the soul, mademoiselle,\" said the poet—\"the most bitter!\"",
+      "_end": 403
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "\"And you have no difficulties with the laundress?\"",
+      "_end": 405
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "\"None,\" he groaned. \"But in the bright days of poverty that have fled for ever, I have had many difficulties with her. This morning I reconstituted the situation—I imagined myself without a sou, and without a collar.\"",
+      "_end": 410
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "\"The little restaurant,\" she questioned, \"where I saw you dining on the odour?\"",
+      "_end": 413
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "\"I figured fondly to myself that I was ravenous and that I dared not enter. It was sublime.\"",
+      "_end": 416
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "\"The mont-de-piété?\"",
+      "_end": 418
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "\"There imagination restored to me the vanished moments when I have mounted with suspense, and my least deplorable suit of clothes.\" His emotion was profound. \"It is my youth to which I am bidding adieu!\" he cried. \"It is more than that—it is my aspirations and my renown!\"",
+      "_end": 423
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "\"But you have said that you have no renown,\" she reminded him.",
+      "_end": 425
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "\"So much the more painful,\" said the young man; \"the hussy we could not win is always the fairest—I part from renown even more despairingly than from youth.\"",
+      "_end": 429
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "She felt an amusement, an interest. But soon it was the turn of him to feel an interest—the interest that had consequences so important, so 'eart-breaking, so *fatales*! He had demanded of her, most naturally, her history, and this she related to him in a style dramatic. Myself, I have not the style dramatic, though I avow to you I admire that.",
+      "_end": 436
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "\"We are in a provincial town,\" she said to the young man, \"we are in Rouen—the workroom of a modiste. Have no embarrassment, monsieur Tricotrin, you, at least, are invisible to the girls who sew! They sew all day and talk little—already they are *tristes*, resigned. Among them sits one who is different—one passionate, ambitious—a girl who burns to be *divette*, singer, who is devoured by longings for applause, fashion, wealth. She has made the acquaintance of a little pastrycook. He has become fascinated, they are affianced. In a month she will be married.\"",
+      "_end": 446
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "The young man, Tricotrin, well understood that the girl she described was herself.",
+      "_end": 449
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "\"What does she consider while she sits sewing?\" she continued. \"That the pastrycook loves her, that he is generous, that she will do her most to be to him a good wife? Not at all. Far from that! She considers, on the contrary, that she was a fool to promise him; she considers how she shall escape—from him, from Rouen, from her ennui— she seeks to fly to Paris. Alas! she has no money, not a franc. And she sews—always she sews in the dull room—and her spirit rebels.\"",
+      "_end": 457
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "\"Good!\" said the poet. \"It is a capital first instalment.\"",
+      "_end": 459
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "\"The time goes on. There remains only a week to the marriage morning. The little home is prepared, the little pastrycook is full of joy. *Alors*, one evening they go out; for her the sole attraction in the town is the hall of varieties. Yes, it is third class, it is not great things; however, it is the only one in Rouen. He purchases two tickets. What a misfortune—it is the last temptation to her! They stroll back; she takes his arm—under the moon, under the stars; but she sees only the lamps of Paris!—she sees only that he can say nothing she cares to hear!\"",
+      "_end": 469
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "\"Ah, unhappy man!\" murmured the poet.",
+      "_end": 471
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "\"They sit at a café table, and he talks, the fiancé, of the bliss that is to come to them. She attends to not a word, not a syllable. While she smiles, she questions herself, frenzied, how she can escape. She has commanded a *sirop*. As she lifts her glass to the syphon, her gaze falls on the ring she wears—the ring of their betrothal. 'To the future, cher ange!' says the fiancé. 'To the future, vieux chéri!' she says. And she laughs in her heart—for she resolves to sell the ring!\"",
+      "_end": 479
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "Tricotrin had become absolutely enthralled.",
+      "_end": 481
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "\"She obtained for the ring forty-five francs the next day—and for the little pastrycook all is finished. She wrote him a letter—'Good-bye.' He has lost his reason. Mad with despair, he has flung himself before an electric car, and is killed.... It is strange,\" she added to the poet, who regarded her with consternation, \"that I did not think sooner of the ring that was always on my finger, n'est-ce-pas? It may be that never before had I felt so furious an impulse to desert him. It may be also—that there was no ring and no pastrycook!\" And she broke into peals of laughter.",
+      "_end": 491
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "\"Ah, mon Dieu,\" exclaimed the young man, \"but you are enchanting! Let us go to breakfast—you are the kindred soul I have looked for all my life. By-the-bye, I may as well know your name?\"",
+      "_end": 495
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "Then, monsieur, this poor girl who had trembled before her laundress, she told him a name which was going, in a while, to crowd the Ambassadeurs and be famous through all Paris—a name which was to mean caprices, folly, extravagance the most wilful and reckless. She answered—and it said nothing yet—\"My name is Paulette Fleury.\"",
+      "_end": 501
+    }
+  ]
+}
