@@ -1678,6 +1678,9 @@ export const MERGE_STOP_INDEX: Readonly<Record<string, readonly number[]>> = {
   "the-harp-weaver-and-other-poems": [
     93
   ],
+  "the-headswoman": [
+    11
+  ],
   "the-heart-of-happy-hollow": [
     191
   ],

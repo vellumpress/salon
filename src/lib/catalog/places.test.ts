@@ -141,6 +141,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "four-meetings": { label: "New England", region: "us" },
     "autres-temps": { label: "New York", region: "us" },
     "the-atheists-mass": { label: "Paris", region: "fr" },
+    "the-headswoman": { label: "France", region: "fr" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -809,4 +810,11 @@ test("Wed 21 Oct AM The Atheist's Mass place reuses fr; Paris; no new region key
   assert.deepEqual(placeFor(shelfWork("the-atheists-mass")!), { label: "Paris", region: "fr" });
   assert.equal(CHIP_ONLY_PLACE["the-atheists-mass"], undefined);
   assert.equal(countryFor(shelfWork("the-atheists-mass")!), "France");
+});
+
+test("Wed 21 Oct PM The Headswoman place reuses fr; France; no new region key", () => {
+  assert.ok(REGION_SHAPES.fr?.d, "fr shape");
+  assert.deepEqual(placeFor(shelfWork("the-headswoman")!), { label: "France", region: "fr" });
+  assert.equal(CHIP_ONLY_PLACE["the-headswoman"], undefined);
+  assert.equal(countryFor(shelfWork("the-headswoman")!), "France");
 });

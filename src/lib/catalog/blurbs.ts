@@ -453,6 +453,8 @@ const BLURBS: Record<string, string> = {
     "Called home to New York by her daughter's divorce and remarriage, a woman cut by society for the same offence eighteen years before learns whether the times have really changed.",
   "the-atheists-mass":
     "Caught slipping into Saint-Sulpice to hear mass, the boldest atheist among Paris surgeons tells his young protégé about a poor water-carrier and a debt that science cannot settle.",
+  "the-headswoman":
+    "When the town headsman dies and the post passes by right to his daughter, St. Radegonde finds that Jeanne means to do the job, and do it well.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
