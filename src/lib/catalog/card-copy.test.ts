@@ -344,6 +344,7 @@ test("known origin overrides", () => {
     "the-atheists-mass": "France",
     "the-headswoman": "France",
     "putois": "France",
+    "a-chair-on-the-boulevard": "France",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",

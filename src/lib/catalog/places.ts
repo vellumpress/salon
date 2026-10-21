@@ -48,6 +48,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-headswoman": { label: "France", region: "fr" },
   // Mira Wed 21 Oct 2026 PM PUTOIS: the story is set in Saint-Omer ("All Saint-Omer believes in the existence of Putois"); new label on the existing fr region.
   "putois": { label: "Saint-Omer", region: "fr" },
+  // Mira Wed 21 Oct 2026 PM CHAIR: the twenty stories are set in Paris and Montmartre; the chip reuses the Paris label and fr.
+  "a-chair-on-the-boulevard": { label: "Paris", region: "fr" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

@@ -457,6 +457,8 @@ const BLURBS: Record<string, string> = {
     "When the town headsman dies and the post passes by right to his daughter, St. Radegonde finds that Jeanne means to do the job, and do it well.",
   "putois":
     "To dodge a tedious Sunday dinner, a mother invents a gardener named Putois, and soon he's stealing melons, terrorising a great-aunt and being spotted all over town.",
+  "a-chair-on-the-boulevard":
+    "A Frenchman in a London restaurant winces at a music-hall tune and tells its story: a broke poet, his composer friend, the seamstress they both loved, and the comic song that made her famous and carried her out of reach of both of them.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
