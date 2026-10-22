@@ -480,7 +480,8 @@ test("POST-v3 Ritual: NO_PRINTED_PLACE is only Wedding-Day, and it resolves no c
   // BAMBI joins: the forest is never named (Mon 19 Oct 2026).
   // THE FOUR SEASONS joins: a cosmic fable on an unnamed earth (Tue 20 Oct 2026).
   // THE WALL OPPOSITE joins: the story names no setting (Thu 22 Oct 2026).
-  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite"]);
+  // A WORK OF ART joins: the town is never named (Thu 22 Oct 2026 PM).
+  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite", "a-work-of-art"]);
   for (const id of NO_PRINTED_PLACE) {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -860,4 +861,14 @@ test("Thu 22 Oct PM A Gentleman Finds a Watch place is Place Blanche as printed;
   assert.deepEqual(placeFor(shelfWork("a-gentleman-finds-a-watch")!), { label: "Place Blanche", region: "fr" });
   assert.equal(CHIP_ONLY_PLACE["a-gentleman-finds-a-watch"], undefined);
   assert.equal(countryFor(shelfWork("a-gentleman-finds-a-watch")!), "France");
+});
+
+test("Thu 22 Oct PM A Work of Art prints no place: no chip, no country", () => {
+  const work = shelfWork("a-work-of-art")!;
+  assert.ok(work);
+  assert.equal(NO_PRINTED_PLACE.has("a-work-of-art"), true);
+  assert.equal(placeFor(work), null);
+  assert.equal(placeForId("a-work-of-art"), null);
+  assert.equal(chipOnlyLabel("a-work-of-art"), null);
+  assert.equal(countryFor(work), "");
 });

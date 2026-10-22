@@ -1,0 +1,309 @@
+{
+  "id": "a-work-of-art",
+  "title": "A Work of Art",
+  "author": "Anton Chekhov (trans. Archibald J. Wolfe)",
+  "year": "1905",
+  "note": "Opening sit: the whole story.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "A Work of Art",
+      "place": "A Work of Art",
+      "reentry": "Alexander Smirnoff, the only son of his mother, holding in his hand some object carefully wrapped in a newspaper, an angelic smile on his youthful face, entered the consulting-room of Dr. Koshelkoff.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Alexander Smirnoff, the only son of his mother, holding in his hand some object carefully wrapped in a newspaper, an angelic smile on his youthful face, entered the consulting-room of Dr. Koshelkoff.",
+      "_end": 6375
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "“Ah, dear youth!” exclaimed the doctor, “how are you? What is the good news?”",
+      "_end": 6378
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Confused and excited, the young man replied:",
+      "_end": 6380
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "“Doctor, my mother is sending her regards—I am her only son, you know—You saved my life. Your skill—We hardly know how to thank you!”",
+      "_end": 6383
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "“Say no more, dear boy!” said the doctor, beaming with delight. “I have only done my duty. Anybody else would have done the same.”",
+      "_end": 6386
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "“I am the only son of my mother. We are poor, and, of course, can not repay you for your labors as you have deserved—and we feel it deeply. At the same time my mother—I am her only son, doctor—my mother humbly begs you to accept as a token of our gratitude a little statuette she values very highly. It is a piece of antique bronze, and a rare work of art.”",
+      "_end": 6393
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "“My good fellow—” commenced the physician.",
+      "_end": 6395
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "“No, doctor, you must not refuse,” continued Alexander, unfolding his parcel. “You will deeply offend mother and myself, too. It is a little beauty. A rare antique. We have kept it in memory of father, who was a dealer in antique bronzes. My mother and myself continue the business.”",
+      "_end": 6400
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "Finally the youth succeeded in freeing his present from its wrappings, and placed it on the table with an air of great solemnity. It was a moderately tall candelabrum of antique bronze and of artistic workmanship. It represented two female figures somewhat scantily attired, and bearing an air of frivolity to describe which I have neither the required daring nor the temperament. The figures smiled coquettishly, and looked as if they were ready to jump on the floor and to engage in some wild frolic, were they not restrained by the task of supporting the candle holder.",
+      "_end": 6410
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "The doctor regarded his present for a few moments in silence, then scratched his head and coughed irresolutely.",
+      "_end": 6413
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "“A beautiful article, to be sure,” he finally said. “But you know—what shall I say? Why, it is hardly the thing, you know. Talk of *déshabillé*! This is beyond the bounds of propriety. The devil!”",
+      "_end": 6417
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "“W-w-why?”",
+      "_end": 6419
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "“Now, how could I put a thing like that on my table? It will corrupt my residence.”",
+      "_end": 6422
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "“Doctor, you surprise me,” answered Alexander, with an offended tone, “What queer views of art! This is a work of art! Look at it! What beauty, what delicacy of workmanship! It fills the soul with joy merely to look at it; it brings tears to one’s eyes. Observe the movement, the atmosphere, the expression!”",
+      "_end": 6428
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "“I fully appreciate it, my boy,” interrupted the physician. “But you know I am a man of family. I have children. A mother-in-law. Ladies call here.”",
+      "_end": 6434
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "“Of course, if you look at it from the point of view of the common herd, you might regard it in a different light. But I beg of you, rise above the mob. Your refusal would hurt the feelings of my mother and of myself. I am her only son. You saved my life. We are asking you to accept something we hold very dear. I only deplore the fact that we have no companion piece to it.”",
+      "_end": 6441
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "“Thank you, dear fellow, and thank your mother. I see that I can not reason with you. But you should have thought of my children, you know, and the ladies. But I fear you will not listen to arguments.”",
+      "_end": 6445
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "“No use arguing, doctor,” replied the grateful patient, made happy by the implied acceptance. “You put it right here, next to the Japanese vase. What a pity I have not the pair. What a pity!”",
+      "_end": 6449
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "When his caller departed the doctor thoughtfully regarded his unwelcome present. He scratched his head and pondered.",
+      "_end": 6452
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "“It is an exquisite thing, without doubt. It would be a pity to throw it into the street. It is quite impossible to leave it here, though. What a dilemma to be in. To whom could I give it? How to get rid of it?”",
+      "_end": 6457
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "Finally he bethought himself of Ukhoff, a dear friend of his school days, and a rising lawyer, who had just successfully represented him in some trifling case.",
+      "_end": 6461
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "“Good,” said the doctor. “As a friend he refused to charge me a fee, and it is perfectly proper that I should make him a present. Besides, he is a single man and tremendously sporty.”",
+      "_end": 6465
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Losing no time, the doctor carefully wrapped up the candlestick and drove to Ukhoff.",
+      "_end": 6468
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "“There, old chap,” he said to the lawyer, whom he happily found at home; “there I have come to thank you for that little favor. You refused to charge me a fee, but you must accept this present in token of my gratitude. Look—what a beauty!”",
+      "_end": 6473
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "On seeing the present the attorney was transported with delight.",
+      "_end": 6475
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "“This beats everything!” he fairly howled. “Hang it all, what inventive genius! Exquisite, immense. Where did you get such a little gem?”",
+      "_end": 6478
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Having expressed his delight, the lawyer anxiously looked at his friend and said:",
+      "_end": 6481
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "“But, you know, you must not leave this thing here. I can not accept it.”",
+      "_end": 6484
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "“Why?” gasped the doctor.",
+      "_end": 6486
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "“You know my mother calls here, clients, I would not dare to look my servants in the face. Take it away.”",
+      "_end": 6489
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "“Never! You must not refuse,” exclaimed the physician with the energy of despair. “Look at the workmanship! Look at the expression! I will not listen to any refusals. I will feel insulted.”",
+      "_end": 6493
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "With these words the doctor hurried out of the house.",
+      "_end": 6495
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "“A white elephant,” the lawyer mumbled sadly, while the doctor, rubbing his hands with glee, drove home with an expression of relief.",
+      "_end": 6498
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "The attorney studied his present at length and wondered what to do with it.",
+      "_end": 6501
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "“It is simply delicious, but I can not keep it. It would be vandalism to throw it away, and the only thing to do is to give it away. But to whom?",
+      "_end": 6505
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "“I have it now,” he fairly shouted. “The very thing, and how appropriate. I will take it to Shashkin, the comedian. The rascal is a connoisseur in such things. And this is the night of his jubilee.”",
+      "_end": 6509
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "In the evening the candelabrum, carefully wrapped, was taken to Shashkin’s dressing-room by a messenger boy. The whole evening that dressing-room was besieged by a crowd of men who came to view the present. An incessant roar of delight was kept up within, sounding like the joyous neighing of many horses. Whenever an actress approached the door leading to the sanctum, and curiously knocked, Shashkin’s hoarse voice was heard in reply:",
+      "_end": 6517
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "“No, my dear, you can’t come in, I am not fully dressed.”",
+      "_end": 6519
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "After the performance Shashkin shrugged his shoulders and said:",
+      "_end": 6521
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "“What on earth shall I do with this disreputable thing? My landlady would not tolerate it in the house. Here actresses call to see me. This is not a photograph, you can’t hide it in the drawer.”",
+      "_end": 6525
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "The hair-dresser listened sympathetically while arranging the comedian’s hair.",
+      "_end": 6528
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "“Why don’t you sell it?” he finally asked the actor. “A neighbor of mine, an old lady, deals in such things, and she will pay you a good price for it. An old woman by the name of Smirnoff, the whole town knows her.”",
+      "_end": 6533
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "Shashkin obeyed.",
+      "_end": 6535
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "* * *",
+      "_end": 6537
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "Two days later Dr. Koshelkoff sat peacefully in his study, enjoying his pipe and thinking of things medical, when suddenly the door of his room flew open, and Alexander Smirnoff burst upon his sight. His face beamed with joy, he fairly shone, and his whole body breathed inexpressible content.",
+      "_end": 6543
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "In his hands he held an object wrapped in a newspaper.",
+      "_end": 6545
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "“Doctor,” he began breathlessly, “imagine my joy! What good fortune! Luckily for you my mother has succeeded in obtaining a companion piece to your candelabrum. You now have the pair complete. Mother is so happy. I am her only son, you know. You saved my life.”",
+      "_end": 6550
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "Trembling with joy and with excess of gratitude, young Smirnoff placed the candelabrum before the doctor. The physician opened his mouth, attempted to say something, but the power of speech failed him—and he said nothing.",
+      "_end": 6555
+    }
+  ]
+}

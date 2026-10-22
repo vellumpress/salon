@@ -576,6 +576,7 @@ export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
   "bambi", // Mira Mon 19 Oct 2026 AM BAMBI: the forest is never named and the front matter names no country; no chip, no country
   "the-four-seasons", // Mira Tue 20 Oct 2026 AM EWALD: a cosmic fable set on "the earth" and an unnamed valley; Greenland and Italy appear once only as a climate aside in the Prologue; no chip
   "the-wall-opposite", // Mira Thu 22 Oct 2026 AM WALL: the story names no setting (a court, an ancestral mansion, "the village"); America appears only as the source of an inheritance; no chip, no country
+  "a-work-of-art", // Mira Thu 22 Oct 2026 PM CHEKHOV: the town is never named ("the whole town knows her"); no chip, no country
 ]);
 
 export function chipOnlyLabel(id: string | undefined): string | null {
