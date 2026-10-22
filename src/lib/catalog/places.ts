@@ -50,6 +50,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "putois": { label: "Saint-Omer", region: "fr" },
   // Mira Wed 21 Oct 2026 PM CHAIR: the twenty stories are set in Paris and Montmartre; the chip reuses the Paris label and fr.
   "a-chair-on-the-boulevard": { label: "Paris", region: "fr" },
+  // Mira Thu 22 Oct 2026 AM BRIC: no town is named; the last visit is "in another corner of Germany" (l.7569); the chip reuses the Germany label and de.
+  "bric-a-brac-and-destinies": { label: "Germany", region: "de" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

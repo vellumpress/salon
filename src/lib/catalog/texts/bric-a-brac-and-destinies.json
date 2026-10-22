@@ -1,0 +1,369 @@
+{
+  "id": "bric-a-brac-and-destinies",
+  "title": "Bric-a-Brac and Destinies",
+  "author": "Gabriele Reuter (trans. Grace Isabel Colbron)",
+  "year": "1907",
+  "note": "Project Gutenberg 73630 (Grace Isabel Colbron's translation), set to the 1907 Collier printing (Short Story Classics (Foreign), Volume Three, P. F. Collier & Son, New York; IA shortstoryclassi03pattrich, pp.929–936). Year 1907 from the story's own foot line (\"Translated by Grace Isabel Colbron. Copyright, 1907, by P. F. Collier & Son.\", leaf n290). Bound whole, one breath per printed paragraph, with the print's two scene breaks. The title, byline and the translator and copyright note are cut. The whole text was read against the 1907 scan. The print is followed where Gutenberg departs from it: \"I had the right\" (Gutenberg \"a right\"), and the print's em dashes for Gutenberg's double hyphens.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Bric-a-Brac and Destinies",
+      "place": "Bric-a-Brac and Destinies",
+      "reentry": "The temptation to wait over a train and visit my old friend in his new home was very strong. I decided to do it.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "The temptation to wait over a train and visit my old friend in his new home was very strong. I decided to do it.",
+      "_end": 7406
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "I found his name on the door of a pretty little villa in an attractive street.",
+      "_end": 7409
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "“Would you wait a little? The doctor is expected home at any moment,” the servant told me, as she ushered me into the drawing-room.",
+      "_end": 7412
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "“Will you give my card to Mrs. Hartens?” I said.",
+      "_end": 7414
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "I was rather curious to see the woman he had chosen, this dear, queer old chap, this enthusiast for Hellenic ideals and the cult of free natural beauty.",
+      "_end": 7418
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "When the servant had left me alone I looked curiously around the room. I saw curtains of expensive plush, carved mahogany furniture, a clean-washed palm, heavy bronze lamps—the usual sort of things that are given for wedding presents among well-to-do people. There was nothing that could be called ugly—and yet—and this was where he lived now? This was the result of all his dreams?",
+      "_end": 7425
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "But why didn’t she come?",
+      "_end": 7427
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "Probably the young wife could not make up her mind whether she ought to receive her husband’s old friend in his absence.",
+      "_end": 7430
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "I yawned a little. Time was flying, and I did not know when I might ever pass through this town again. I looked absent-mindedly over the table beside which I sat. On it there stood a majolica plate holding visiting cards, surrounded by large, handsomely bound books. To the right of the plate there stood a vase with fresh flowers. To the left, slightly to one side, there was a little mother-of-pearl bowl, in which lay an amulet with an engraved stone and a tiny smelling bottle of Venetian glass, the sort of thing that looks expensive and probably costs but a few soldi.",
+      "_end": 7440
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "I heard a noise in the room adjoining, listened impatiently, and then took the amulet in my hand and examined the stone. It bore a finely worked head of Apollo.",
+      "_end": 7444
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "A carriage stopped before the house. A carriage? Then Philip must have a good practise. Strange—I could imagine that he would be more apt to explain to his patients that all medical theory was a swindle anyhow—",
+      "_end": 7448
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "A shout of rejoicing came from the corridor: “Oh, but that’s great! But, dearest, why didn’t you—”",
+      "_end": 7451
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "“I did not think it was right—without you.”",
+      "_end": 7453
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "“Little goosie! Dearest little goosie!”",
+      "_end": 7455
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "Then followed a storm of kisses, interrupted by a reproach: “Oh, Philip, she can hear everything.”",
+      "_end": 7458
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "“Of course she can! Let her!” he cried happily, tore the door open, and pushed a pretty little blond, doll-like creature before him into the room.",
+      "_end": 7462
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "“There—there you are! You must love each other, you two!”",
+      "_end": 7464
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "His delicate, scholarly face shone in purest joy. The young wife held out her hand to me and told me that she was very happy to make my acquaintance, Philip had told her so much about me.",
+      "_end": 7468
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "And yet she kept me waiting for half an hour!",
+      "_end": 7470
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "When she left us to order another plate for the dinner-table, Philip’s eyes followed her, shining with love. And then he explained to me that his choice had been dictated mainly by common sense, because he believed it necessary for his restless experimenting nature to have some one at his side whose character was calm and decided. And his little wife was very firm and decided.",
+      "_end": 7477
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "* * *",
+      "_end": 7479
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Four years had passed before I again found an opportunity to hear anything from the young couple.",
+      "_end": 7482
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "Philip never wrote letters, on principle. I therefore should hardly have felt that I had the right to call him my friend. And yet I made a detour that I might visit him and his wife.",
+      "_end": 7486
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "The silence in the house was noticeable. And the undisturbed order everywhere was almost distressing. It was as if the furniture were never used. A door opened cautiously and was shut again equally carefully. A carefully deadened step approached the room, and Philip entered, alone.",
+      "_end": 7492
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "“This *is* nice! It’s awfully good of you,” he said cordially, giving me both his hands.",
+      "_end": 7495
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "But after the first greeting I noticed an embarrassment in his manner, a something which had never been part of his character before. With a certain formal politeness, he explained to me that his wife was ill, but that he would go and see if she would not feel equal to a word with me.",
+      "_end": 7501
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "After some time he returned, alone, as before. “Theresa asks that you will do us the pleasure of dining with us to-morrow.”",
+      "_end": 7504
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "Then he suggested that he and I should spend the evening in a concert garden.",
+      "_end": 7507
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Several hours passed happily under the green trees, cheered with the sound of pleasantly distant music, and enlivened by one of our old-time conversations. Philip became quite himself again. He had the nature of a poet, who can form anew for himself the ancient dreams of all mankind. And he was something of a reformer also. As he described to me what his ideal of life would be, an existence without family ties, without exacting sentimentality and excitement, a life of pure calm beauty, I could not avoid the question: “But what in the world can you do with all this part of your nature in your present existence?” A second later I was sorry for what I had said; his smile was like an expression of pain.",
+      "_end": 7519
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "Toward noon the following day Philip called on me at the hotel.",
+      "_end": 7521
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "His eyes were dull, his spiritual, mobile features were dead and set in heavy lines.",
+      "_end": 7524
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "“I must ask your pardon,” he murmured. “Theresa does not feel well enough yet to see anybody. I thought as much yesterday.”",
+      "_end": 7527
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "I inquired sympathetically as to the trouble.",
+      "_end": 7529
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "“She could pull herself together perfectly well. But she won’t. She won’t do it, just because it would please me,” he murmured in suppressed anger, throwing back his head impatiently, with a moan as of pain. “And I—I need joy and merriment—and brightness— And—you saw what it was yesterday. That’s the way it always is now—always.”",
+      "_end": 7535
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "“But you are a physician,” I exclaimed. “Can you not give orders? This shutting herself up is all wrong for a young woman like that.”",
+      "_end": 7538
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "He burst out into a loud, bitter laugh. “A physician?— Why, she thinks I’m ill and she is well— And that isn’t all— She never can forgive me for our child’s death—” He stared out ahead of him as if he were looking into a world of misery.",
+      "_end": 7543
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "“But how dare she?” I whispered. “A thing like that—is fate.”",
+      "_end": 7545
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "He shrugged his shoulders. “I am a physician—I should have helped.”",
+      "_end": 7547
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "And then he told me the story in a dull and weary tone. An epidemic of scarlet fever had broken out in the city. His wife had demanded that he should refuse to treat severe cases, in consideration for herself and the child. He would not comply with her wish and brought the infection into the house. “From her point of view, Theresa is quite right in hating me,” he said, thoughtfully. “But she acts and talks as if it were only her child—it was *my* son also.”",
+      "_end": 7555
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "We set out for a restaurant that he had recommended. He was quiet and absent-minded. Suddenly he looked at his watch and said: “You’re an independent woman. You don’t mind going there alone, do you? I have a patient to visit and will meet you there later. Will this suit you?”",
+      "_end": 7560
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "I assented, understanding that he had already repented of his confession and wished to be alone. I waited the rest of the afternoon, but without the hope of seeing him again. He did not come, and I left the town that evening.",
+      "_end": 7565
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "* * *",
+      "_end": 7567
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "It was in quite another city, in another corner of Germany, where I was visiting relatives, when one day some one asked me: “Aren’t you a friend of Dr. Philip Hartens? According to the directory he lives here now, quite near us. Would you want to look him up?”",
+      "_end": 7572
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "“Of course I would.”",
+      "_end": 7574
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "An hour later I might have believed that the six years which had passed between that day and my first visit to the young couple had been a dream only. For I sat beside the very same table at which I had waited before. The friendly spring sunshine shone on the gold lettering of the large books that surrounded the majolica plate, mirrored itself in the vase with fresh flowers, and awoke a delicate play of color from the little mother-of-pearl bowl. There were also the amulet with the head of Apollo and the little glass bottle. The sight of these old friends caused me to smile, just as Theresa entered. The delicate outlines of her figure had not changed, she had become frozen into them, as it were. There was something of the old maid about her, and the stubbornness, which had been a piquant touch in her soft young face, was now hardened into the chief quality of its expression. She took my hand.",
+      "_end": 7589
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "“I’m very sorry to hear that Philip is away.”",
+      "_end": 7591
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "“My husband has left me,” was her short, sharp answer.",
+      "_end": 7593
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "I looked at her, dazed. “Why—?”",
+      "_end": 7595
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "“Yes. I suppose you did not imagine that he would forget himself to that extent?” She smoothed her little black silk apron and looked at me with an expression that was almost scorn.",
+      "_end": 7599
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "“No—I certainly should not have believed that,” I answered candidly. “How could it have happened?”",
+      "_end": 7602
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "Naturally, I did not expect an explanation. But Theresa began of herself to tell me the story of her unhappy marriage; began to tell it with a self-possession which showed that she felt assured of a tribute of sympathy from every one. She told me of her fruitless attempts to make of her husband a sensible, useful, practical husband and citizen. For a time everything seemed to go right—until the child died. But from then on his guilty conscience had drawn him more and more away from her and from her influence. He neglected his practise more and more, he spoke quite openly in terms of scorn about his profession, he fell into bad company, began to go about with people who let their hair grow and didn’t wear shoes—and with them he appeared to have entirely lost all sense of what was decent and sensible.",
+      "_end": 7615
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "I listened in silence, shocked in my inmost heart to see how her hatred seemed to have robbed this woman of all sense of shame.",
+      "_end": 7618
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "“But Philip is a noble and true character,” I said finally. “He goes his own way perhaps— But, believe me, he will come to himself again in solitude.”",
+      "_end": 7622
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "“In solitude?” she queried, with a scornful dropping of the corners of her mouth. “Philip is utterly ruined, I tell you. Because I refused to become a pupil to his immoral theories of life, he sought and found a more credulous companion. He is with her now, in Greece, I believe, or God knows where—”",
+      "_end": 7628
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "The faded eyes in the embittered little face gazed angrily into the distance, as if her spirit followed her husband and the other woman.",
+      "_end": 7631
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "Then her glance fell slowly back to the table, and she noticed that during her narrative I had mechanically taken the amulet from the little pearl bowl and had let it fall upon one of the books.",
+      "_end": 7635
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "Crushing her moistened handkerchief in her left hand, with the right she took up the amulet, laid it back in its place beside the little glass bottle, and pushed the little bowl until it stood just as it had before, to the left side of the majolica plate.",
+      "_end": 7640
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "Then I understood my poor friend, and my heart forgave him.",
+      "_end": 7642
+    }
+  ]
+}

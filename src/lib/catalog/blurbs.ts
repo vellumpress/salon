@@ -461,6 +461,8 @@ const BLURBS: Record<string, string> = {
     "A Frenchman in a London restaurant winces at a music-hall tune and tells its story: a broke poet, his composer friend, the seamstress they both loved, and the comic song that made her famous and carried her out of reach of both of them.",
   "the-wall-opposite":
     "After their fortune fails, three women watch a neighbour's new wall shut out their sky for twenty years, until money comes at last to knock it down.",
+  "bric-a-brac-and-destinies":
+    "A heads-up before you start: a child's death from scarlet fever is reported, not shown. A woman visits an old friend three times over six years and reads the ruin of his marriage in the small things that never move on his parlour table.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
