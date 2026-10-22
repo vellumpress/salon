@@ -753,6 +753,12 @@ async function mix(
     ) {
       mode = "ghost";
     }
+    // Short lines share a lit group. Three groups from a breath that still
+    // looks inland can leave the book; the breath count cannot see that.
+    if (mode === "burst") {
+      const burstPlan = await planGroups(page, direction, 3);
+      if (burstPlan === "start" || burstPlan === "end") mode = "ghost";
+    }
     const jump = mode === "burst" ? 3 : 1;
     const shot = await step(page, direction, index, `${label} ${id} tap ${n} ${mode}`, mode);
     const now = await readSentence(page);
