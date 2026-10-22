@@ -1267,6 +1267,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "putois",
   // Mira Wed 21 Oct 2026 PM CHAIR — A Chair on the Boulevard (Merrick, 1921) follows Putois at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "a-chair-on-the-boulevard",
+  // Mira Thu 22 Oct 2026 AM WALL — The Wall Opposite (Loti, tr. Howes, 1907) follows A Chair on the Boulevard at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "the-wall-opposite",
 ] as const;
 
 /**

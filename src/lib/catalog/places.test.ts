@@ -477,7 +477,8 @@ test("mid Rituals places reuse gb; no new region key; Elysium is a named chip, n
 test("POST-v3 Ritual: NO_PRINTED_PLACE is only Wedding-Day, and it resolves no chip and no country", () => {
   // BAMBI joins: the forest is never named (Mon 19 Oct 2026).
   // THE FOUR SEASONS joins: a cosmic fable on an unnamed earth (Tue 20 Oct 2026).
-  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons"]);
+  // THE WALL OPPOSITE joins: the story names no setting (Thu 22 Oct 2026).
+  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite"]);
   for (const id of NO_PRINTED_PLACE) {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -833,4 +834,14 @@ test("Wed 21 Oct PM A Chair on the Boulevard place reuses fr; Paris; no new regi
   assert.deepEqual(placeFor(shelfWork("a-chair-on-the-boulevard")!), { label: "Paris", region: "fr" });
   assert.equal(CHIP_ONLY_PLACE["a-chair-on-the-boulevard"], undefined);
   assert.equal(countryFor(shelfWork("a-chair-on-the-boulevard")!), "France");
+});
+
+test("Thu 22 Oct AM The Wall Opposite prints no place: no chip, no country", () => {
+  const work = shelfWork("the-wall-opposite")!;
+  assert.ok(work);
+  assert.equal(NO_PRINTED_PLACE.has("the-wall-opposite"), true);
+  assert.equal(placeFor(work), null);
+  assert.equal(placeForId("the-wall-opposite"), null);
+  assert.equal(chipOnlyLabel("the-wall-opposite"), null);
+  assert.equal(countryFor(work), "");
 });
