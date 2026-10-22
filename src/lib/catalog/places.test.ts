@@ -144,6 +144,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "the-headswoman": { label: "France", region: "fr" },
     "putois": { label: "Saint-Omer", region: "fr" },
     "a-chair-on-the-boulevard": { label: "Paris", region: "fr" },
+    "bric-a-brac-and-destinies": { label: "Germany", region: "de" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -844,4 +845,11 @@ test("Thu 22 Oct AM The Wall Opposite prints no place: no chip, no country", () 
   assert.equal(placeForId("the-wall-opposite"), null);
   assert.equal(chipOnlyLabel("the-wall-opposite"), null);
   assert.equal(countryFor(work), "");
+});
+
+test("Thu 22 Oct AM Bric-a-Brac and Destinies place reuses de; Germany; no new region key", () => {
+  assert.ok(REGION_SHAPES.de?.d, "de shape");
+  assert.deepEqual(placeFor(shelfWork("bric-a-brac-and-destinies")!), { label: "Germany", region: "de" });
+  assert.equal(CHIP_ONLY_PLACE["bric-a-brac-and-destinies"], undefined);
+  assert.equal(countryFor(shelfWork("bric-a-brac-and-destinies")!), "Germany");
 });
