@@ -52,6 +52,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "a-chair-on-the-boulevard": { label: "Paris", region: "fr" },
   // Mira Thu 22 Oct 2026 AM BRIC: no town is named; the last visit is "in another corner of Germany" (l.7569); the chip reuses the Germany label and de.
   "bric-a-brac-and-destinies": { label: "Germany", region: "de" },
+  // Mira Thu 22 Oct 2026 PM COURTELINE: the chip is the place as printed, "crossing the Place Blanche" (l.8552; again l.8645, 8668, 8742); no Paris label; fr shape. countries.ts France (card-copy requires a country for every chip; the chip itself is the WORK_PLACE label).
+  "a-gentleman-finds-a-watch": { label: "Place Blanche", region: "fr" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

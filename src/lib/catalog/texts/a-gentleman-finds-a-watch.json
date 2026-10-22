@@ -1,0 +1,519 @@
+{
+  "id": "a-gentleman-finds-a-watch",
+  "title": "A Gentleman Finds a Watch",
+  "author": "Georges Courteline (trans. V. Quiroga)",
+  "year": "1907",
+  "note": "Project Gutenberg 73893 (V. Quiroga's translation), set to the 1907 Collier printing (Short Story Classics (Foreign), Volume Five, P. F. Collier & Son, New York; IA shortstoryclassi05pattrich, pp.1651–1656). Year 1907 from the story's own foot line (\"Translated by V. Quiroga. Copyright, 1907, by P. F. Collier & Son.\", leaf n330). Bound whole, one breath per printed paragraph. The title, byline and translator note are cut; the printed gloss \"[police inspector]\" is kept. The whole text was read against the 1907 scan. The print is followed where Gutenberg departs from it: the opening quote of \"'On the ground?'\", and the print's em dashes for Gutenberg's double hyphens. One editorial fix: a closing quote added after \"She is a married woman.\" (missing in the print as well).",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "A Gentleman Finds a Watch",
+      "place": "A Gentleman Finds a Watch",
+      "reentry": "From the top seats of L'Étoile tram-car I perceived my friend Bréloc, who was just crossing the Place Blanche in such a state of excitement that I descended from the car on purpose to question him.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "From the top seats of L'Étoile tram-car I perceived my friend Bréloc, who was just crossing the Place Blanche in such a state of excitement that I descended from the car on purpose to question him.",
+      "_end": 8553
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "\"Hey! my God! what is the matter, Bréloc? What is the meaning of this face of yours, more mournful than a shop closed on account of a death in the family?\"",
+      "_end": 8557
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "\"Please don't mention it,\" he replied; \"I just had a narrow escape from being put in jail.\"",
+      "_end": 8560
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Which led me to think that he had committed some dishonest action, and I began to ejaculate rather loudly, when he, guessing the turn of my thoughts, exclaimed: \"You don't seem to understand! I was very nearly being put in jail through an unlucky watch that I picked up last night on the Boulevard Saint Michel, and which I honestly deposited in the hands of the commissaire [police inspector] of our ward. Pretty tough, heigh? I feel almost ill from astonishment and fright. But you can judge by yourself. Have you five minutes to spare?\"",
+      "_end": 8569
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"Certainly. Why not?\"",
+      "_end": 8571
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"Then listen, and I hope you may profit by my experience.",
+      "_end": 8573
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"About nine A. M. I presented myself at the police station in the Rue Duperré carrying said watch—a beautiful timepiece, by the way, with gold case and platina monogram—and I asked to be shown to the commissaire. That gentleman had just finished drinking his cup of chocolate, when he gave orders that I should be admitted to his presence, and without deigning to say good day or offer me a seat, he began:",
+      "_end": 8581
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "\"'What do you wish?'",
+      "_end": 8583
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"I had composed my features for the occasion, with the smile of a man who accomplishes a meritorious act for which he expects to be almost crowned with glory. So I answered: \"'Monsieur le Commissaire of Police, I have the honor of depositing into your hands a watch that I found last night, and—'",
+      "_end": 8589
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Without letting me finish the sentence, the commissaire sprang up, repeating the words:",
+      "_end": 8592
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"'A watch! A watch!'",
+      "_end": 8594
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"The gendarmes were playing a game of cards in the next room.",
+      "_end": 8596
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"He hallooed to them:",
+      "_end": 8598
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"'Hey! you there! Close the street door! There is more draft here than in a windmill!' And he remained grumbling until his order had been executed.",
+      "_end": 8602
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"Then, resuming his seat, he proceeded:",
+      "_end": 8604
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "\"'Please give me that article.'",
+      "_end": 8606
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"I handed him the watch, which he began to turn about, examining and turning the winder, opening the case and the chain swivel.",
+      "_end": 8609
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "\"'Yes,' he said gravely, 'it is indeed a watch, there is no denying.'",
+      "_end": 8611
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"Saying which, he deposited the watch in the depths of a very large safe, closing its three locks.",
+      "_end": 8614
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"I looked with astonishment, and he resumed:",
+      "_end": 8616
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"'And where did you find this valuable article?'",
+      "_end": 8618
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "\"'Boulevard Saint Michel, at the corner of Rue Monsieur-le-Prince.'",
+      "_end": 8620
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "\"'On the ground?' asked the commissaire; 'on the sidewalk?'",
+      "_end": 8622
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "\"I answered in the affirmative.",
+      "_end": 8624
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "\"'It is very extraordinary,' he then said with a suspicious look at me; 'the sidewalk is not the usual place to leave a watch.'",
+      "_end": 8627
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "\"I remarked smilingly:",
+      "_end": 8629
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "\"'If I may call your attention—'",
+      "_end": 8631
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "\"Dryly the commissaire said:",
+      "_end": 8633
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"'That will do! You may omit all remarks. I know my business.'",
+      "_end": 8635
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "\"I stopped talking and smiling.",
+      "_end": 8637
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"He resumed: 'In the first place, who are you?'",
+      "_end": 8639
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "\"I gave my name.",
+      "_end": 8641
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "\"'Where do you live?'",
+      "_end": 8643
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"'I have already said that I live at the Place Blanche, 26, second floor.'",
+      "_end": 8646
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "\"'What are your means of living?'",
+      "_end": 8648
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"I explained that I had an income of twelve thousand francs.",
+      "_end": 8650
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "\"'At what time, as near as you can tell, did you find the watch?'",
+      "_end": 8652
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "\"'Three o'clock A. M.'",
+      "_end": 8654
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "\"'Was not it later?' he remarked ironically.",
+      "_end": 8656
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "\"'I don't think it was,' I said candidly.",
+      "_end": 8658
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "\"'Well, I congratulate you,' he said ironically. 'It seems to me that you are leading a somewhat singular existence.'",
+      "_end": 8661
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "\"As I was taking exception on my right to live according to my fancy:",
+      "_end": 8663
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "\"'Admitted!' said the commissaire. 'But I have a right to know what the deuce you could be doing at that hour on the Boulevard Saint Michel, corner of Rue Monsieur-le-Prince, you who *say* that you are living at the Place Blanche?'",
+      "_end": 8668
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "\"'What do you mean by that, I *say*?'",
+      "_end": 8670
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "\"'Yes, you say so.'",
+      "_end": 8672
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "\"'If I say so, it is a fact.'",
+      "_end": 8674
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "\"'That is what we must have proved. Meanwhile, please do not divert from the conversation, and answer courteously to all the questions that I feel duty bound to put to you. I am asking what were you doing at that unearthly hour in a neighborhood that was not your own?'",
+      "_end": 8679
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "\"I explained (as it was true) that I was coming from the house of a lady friend.",
+      "_end": 8682
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "\"'What does she do, your lady friend?'",
+      "_end": 8684
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "\"'She is a married woman.'",
+      "_end": 8686
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "\"'Married. To whom?'",
+      "_end": 8688
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "\"'To a druggist.'",
+      "_end": 8690
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "\"'What is his name?'",
+      "_end": 8692
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "\"'That is none of your business,' I answered, impatiently.",
+      "_end": 8694
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "\"'Is it to me that you are talking like that?' hallooed the commissaire.",
+      "_end": 8696
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "\"'Of course.'",
+      "_end": 8698
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "\"The commissaire's face became purple.",
+      "_end": 8700
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "\"'But, my boy! you will have to alter your tune; that strain of yours does not suit me. And—I fancy that I recollect your features.'",
+      "_end": 8703
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "\"'Oh, bosh!'",
+      "_end": 8705
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "\"'Yes—I do have a recollection—'",
+      "_end": 8707
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "\"There was a moment of silence. Then:",
+      "_end": 8709
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "\"'Have you ever been committed for trial, Bréloc?'",
+      "_end": 8711
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "\"This exhausted my patience.",
+      "_end": 8713
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "\"'And you?' said I.",
+      "_end": 8715
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "\"The commissaire sprang to his feet.",
+      "_end": 8717
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "\"'You are a blackguard!' he cried.",
+      "_end": 8719
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "\"'And you are an idiot!' I retorted.",
+      "_end": 8721
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "\"At that moment I thought my last hour had come. The commissaire bounded toward me, flushed and foaming with rage. Under his bushy eyebrows I could see the glistening of his wild eyes.",
+      "_end": 8725
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "\"'What are you saying?' he stammered. 'What are you saying?'",
+      "_end": 8727
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "\"I attempted to utter a word, but he did not give me a chance.",
+      "_end": 8729
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "\"'And I say this: that I am going to send you to jail; and it will not take a very long time! It is just the hour for the patrol wagon! Who on earth sent me up this dummy? Ah! you want to put on airs! Ah! you want to jeer at me, and at the law that I represent! Very well! you came to the wrong place!'",
+      "_end": 8735
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "\"He brought down his fist violently on the papers lying on his table with each of his sentences, adding:",
+      "_end": 8738
+    },
+    {
+      "id": "s0-72",
+      "sceneId": "s0",
+      "text": "\"'Do I know you? Do I know who you are? You say that your name is Bréloc; I don't know anything about it! You say that you live at the Place Blanche. Where are the proofs of it? You say that you have twelve thousand francs income. Am I bound to believe you? Show me your twelve thousand francs! Hein! you would have a hard job to show them to me.'",
+      "_end": 8744
+    },
+    {
+      "id": "s0-73",
+      "sceneId": "s0",
+      "text": "\"I was stunned.",
+      "_end": 8746
+    },
+    {
+      "id": "s0-74",
+      "sceneId": "s0",
+      "text": "\"'All this is not very clear,' he concluded violently. 'I say, do you understand me, that it is not very clear, and I don't know if you did not steal it, that watch!'",
+      "_end": 8750
+    },
+    {
+      "id": "s0-75",
+      "sceneId": "s0",
+      "text": "\"'Steal it!'",
+      "_end": 8752
+    },
+    {
+      "id": "s0-76",
+      "sceneId": "s0",
+      "text": "\"'Yes, steal it! Anyhow, I am going to find out.'",
+      "_end": 8754
+    },
+    {
+      "id": "s0-77",
+      "sceneId": "s0",
+      "text": "\"The gendarmes, hearing the noise, had come into the room. He called out to them:",
+      "_end": 8757
+    },
+    {
+      "id": "s0-78",
+      "sceneId": "s0",
+      "text": "\"'Search this man!'",
+      "_end": 8759
+    },
+    {
+      "id": "s0-79",
+      "sceneId": "s0",
+      "text": "\"In a second they undressed me completely, even down to my socks.",
+      "_end": 8761
+    },
+    {
+      "id": "s0-80",
+      "sceneId": "s0",
+      "text": "\"'Ah! you want to be smart!' the commissaire repeated mockingly. 'Ah! you want to play smart! Look under his arms,' he said to the gendarmes. 'Search him well!'\"",
+      "_end": 8765
+    },
+    {
+      "id": "s0-81",
+      "sceneId": "s0",
+      "text": "At the recital of these indignities Bréloc's voice became overexcited. But I was laughing, nodding my head approvingly, because I could recognize in his recital the two implacable enemies of honest folk—the administration and the law.",
+      "_end": 8770
+    },
+    {
+      "id": "s0-82",
+      "sceneId": "s0",
+      "text": "\"Let me find another watch!\" roared my unfortunate friend, with a closed fist as if threatening the future.",
+      "_end": 8773
+    }
+  ]
+}

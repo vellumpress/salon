@@ -1271,6 +1271,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-wall-opposite",
   // Mira Thu 22 Oct 2026 AM BRIC — Bric-a-Brac and Destinies (Reuter, tr. Colbron, 1907) follows The Wall Opposite at the end of Next, Next carefully (heads-up on the card: a child’s death from scarlet fever, reported). Never Featured; off every Ritual lane.
   "bric-a-brac-and-destinies",
+  // Mira Thu 22 Oct 2026 PM COURTELINE — A Gentleman Finds a Watch (Courteline, tr. Quiroga, 1907) follows Bric-a-Brac and Destinies at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "a-gentleman-finds-a-watch",
 ] as const;
 
 /**

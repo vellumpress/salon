@@ -145,6 +145,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "putois": { label: "Saint-Omer", region: "fr" },
     "a-chair-on-the-boulevard": { label: "Paris", region: "fr" },
     "bric-a-brac-and-destinies": { label: "Germany", region: "de" },
+    "a-gentleman-finds-a-watch": { label: "Place Blanche", region: "fr" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -852,4 +853,11 @@ test("Thu 22 Oct AM Bric-a-Brac and Destinies place reuses de; Germany; no new r
   assert.deepEqual(placeFor(shelfWork("bric-a-brac-and-destinies")!), { label: "Germany", region: "de" });
   assert.equal(CHIP_ONLY_PLACE["bric-a-brac-and-destinies"], undefined);
   assert.equal(countryFor(shelfWork("bric-a-brac-and-destinies")!), "Germany");
+});
+
+test("Thu 22 Oct PM A Gentleman Finds a Watch place is Place Blanche as printed; fr; France for the Map only", () => {
+  assert.ok(REGION_SHAPES.fr?.d, "fr shape");
+  assert.deepEqual(placeFor(shelfWork("a-gentleman-finds-a-watch")!), { label: "Place Blanche", region: "fr" });
+  assert.equal(CHIP_ONLY_PLACE["a-gentleman-finds-a-watch"], undefined);
+  assert.equal(countryFor(shelfWork("a-gentleman-finds-a-watch")!), "France");
 });
