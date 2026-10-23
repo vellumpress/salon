@@ -469,6 +469,8 @@ const BLURBS: Record<string, string> = {
     "A grateful patient gives his doctor a scandalous bronze candelabrum, and every attempt to pass it on brings it straight back home.",
   "the-accursed-house":
     "A kindly young heir cuts the rents on his late uncle's house in the Rue de la Victoire, and his baffled tenants decide something terrible must be going on.",
+  "teleshov-the-duel":
+    "A heads-up before you start: a young officer is shot dead in a duel in the opening pages, with blood on the snow. On the morning of her son's duel, a mother cannot stop telling his friend about the wedding she is sure is coming, and he cannot bring himself to tell her the truth.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
