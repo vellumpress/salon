@@ -1277,6 +1277,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "a-work-of-art",
   // Mira Thu 22 Oct 2026 PM GABORIAU — The Accursed House (Gaboriau, tr. Waggener, 1891) follows A Work of Art at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "the-accursed-house",
+  // Mira Thu 22 Oct 2026 PM TELESHOV — The Duel (Teleshov, tr. Gorin, 1907) follows The Accursed House at the end of Next, Next carefully (heads-up on the card: a young officer is shot dead in a duel). Distinct from the-duel-and-other-stories (Chekhov). Never Featured; off every Ritual lane.
+  "teleshov-the-duel",
 ] as const;
 
 /**

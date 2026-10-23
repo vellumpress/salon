@@ -1,0 +1,237 @@
+{
+  "id": "teleshov-the-duel",
+  "title": "The Duel",
+  "author": "Nikolai Teleshov (trans. Lizzie B. Gorin)",
+  "year": "1907",
+  "note": "Project Gutenberg 68619 (Lizzie B. Gorin's translation), set to the 1907 Collier printing (Short Story Classics (Foreign), Volume One, P. F. Collier & Son, New York; IA shortstoryclassi01pattrich, pp.263–266). Year 1907 from the story's own foot line (\"Translated by Lizzie B. Gorin. Copyright, 1907, by P. F. Collier & Son.\", leaf n284). Bound whole, one breath per printed paragraph, with the print's one break. The title, byline and translator note are cut. The whole text was read against the scan. The print is followed where Gutenberg departs from it: Vladimir and Ivan without accents, and em dashes for double hyphens. \"became so effected\" is kept as printed.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Duel",
+      "place": "The Duel",
+      "reentry": "It was early morning—",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "It was early morning—",
+      "_end": 7620
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Vladimir Kladunov, a tall, graceful young man, twenty-two years of age, almost boyish in appearance, with a handsome face and thick, fair curls, dressed in the uniform of an officer and in long riding boots, minus overcoat and cap, stood upon a meadow covered with new-fallen snow, and gazed at another officer, a tall, red-faced, mustached man, who faced him at a distance of thirty paces, and was slowly lifting his hand in which he held a revolver, and aimed it straight at Vladimir.",
+      "_end": 7628
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "With his arms crossed over his breast and also holding in one hand a revolver, Kladunov, almost with indifference, awaited the shot of his opponent. His handsome, young face, though a little paler than usual, was alight with courage, and wore a scornful smile. His dangerous position, and the merciless determination of his adversary, the strenuous attention of the seconds who silently stood at one side, and the imminence of death, made the moment one of terrible intensity—mysterious, almost solemn. A question of honor was to be decided. Every one felt the importance of the question; the less they understood what they were doing, the deeper seemed the solemnity of the moment.",
+      "_end": 7640
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "A shot was fired; a shiver ran through all. Vladimir threw his hands about, bent his knees, and fell. He lay upon the snow, shot through the head, his hands apart, his hair, face, and even the snow around his head covered with blood. The seconds ran toward him and lifted him; the doctor certified his death, and the question of honor was solved. It only remained to announce the news to the regiment and to inform, as tenderly and carefully as possible, the mother, who was now left alone in the world, for the boy that had been killed was her only son. Before the duel no one had given her even a thought; but now they all became very thoughtful. All knew and loved her, and recognized the fact that she must be prepared by degrees for the terrible news. At last Ivan Golubenko was chosen as most fit to tell the mother, and smooth out matters as much as possible.",
+      "_end": 7654
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "* * *",
+      "_end": 7656
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Pelageia Petrovna had just risen, and was preparing her morning tea when Ivan Golubenko, gloomy and confused, entered the room.",
+      "_end": 7659
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "“Just in time for tea, Ivan Ivanovich!” amiably exclaimed the old lady, rising to meet her guest. “You have surely called to see Vladimir!”",
+      "_end": 7662
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "“No, I—in passing by—” Golubenko stammered, abashed.",
+      "_end": 7664
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "“You will have to excuse him, he is still asleep. He walked up and down his room the whole of last night, and I told the servant not to wake him, as it is a—holy day. But probably you came on urgent business?”",
+      "_end": 7668
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "“No, I only stepped in for a moment in passing—”",
+      "_end": 7670
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "“If you wish to see him, I will give the order to wake him up.”",
+      "_end": 7672
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "“No, no, do not trouble yourself!”",
+      "_end": 7674
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "But Pelageia Petrovna, believing that he had called to see her son on some business or other, left the room, murmuring to herself.",
+      "_end": 7677
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Golubenko walked excitedly to and fro, wringing his hands, not knowing how to tell her the terrible news. The decisive moment was quickly approaching, but he lost control of himself, was frightened, and cursed fate that had so mixed him up with the whole business.",
+      "_end": 7682
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "“Now! How can a body trust you young people!” good-naturedly exclaimed Pelageia Petrovna to her guest, reentering the room. “Here I have been taking care not to make the least noise with the cups and saucers, and asking you not to wake my boy, and he has long ago departed without leaving a trace! But why do you not take a seat, Ivan Ivanovich, and have a cup of tea? You have been neglecting us terribly lately!”",
+      "_end": 7689
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "She smiled as with a secret joy, and added in a low voice:",
+      "_end": 7691
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "“And we have had so much news during that time!—Vladimir surely could not keep it. He must have told you all about it by this; for he is very straightforward and open-hearted, my Vladimir. I was thinking last night, in my sinful thoughts: ‘Well, when my Vladimir paces the room the whole night—that means that he is dreaming of Lenochka!’ That is always the case with him: if he paces the room the whole night, he will surely leave to-morrow—Ah, Ivan Ivanovich, I only ask the Lord to send me this joy in my old age. What more does an old woman need? I have but one desire, one joy—and it seems to me I shall have nothing more to pray for after Vladimir and Lenochka are married. So joyful and happy it would make me!—I do not need anything besides Vladimir; there is nothing dearer to me than his happiness.”",
+      "_end": 7704
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "The old lady became so effected that she had to wipe away the tears which came to her eyes.",
+      "_end": 7707
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "“Do you remember,” she continued, “things did not go well in the beginning—either between the two or on account of the money—You young officers are not even allowed to marry without bonds—Well, now everything has been arranged: I have obtained the necessary five thousand rubles for Vladimir, and they could go to the altar even to-morrow! Yes, and Lenochka has written such a lovely letter to me—My heart is rejoicing!”",
+      "_end": 7715
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "Continuing to speak, Pelageia Petrovna took a letter out of her pocket, which she showed to Golubenko, and then put back again.",
+      "_end": 7718
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "“She is such a dear girl! And so good!”",
+      "_end": 7720
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Ivan Golubenko, listening to her talk, sat as if on red-hot coals. He wanted to interrupt her flow of words, to tell her that everything was at an end, that her Vladimir was dead, and that in one short hour nothing would remain to her of all her bright hopes; but he listened to her and kept silent. Looking upon her good, gentle face, he felt a convulsive gripping in his throat.",
+      "_end": 7727
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "“But why are you looking so gloomy to-day?” the old lady at last asked. “Why, your face looks as black as night!”",
+      "_end": 7730
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Ivan wanted to say “Yes! And yours will be the same when I tell you!” but instead of telling her anything, he turned his head away, and began to twirl his mustaches.",
+      "_end": 7734
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "Pelageia Petrovna did not notice it, and, wholly absorbed in her own thoughts, continued:",
+      "_end": 7737
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "“I have a greeting for you. Lenochka writes that I should give Ivan Ivanovich her regards, and should compel him to come with Vladimir and pay her a visit—You know yourself how she likes you, Ivan Ivanovich!—No, it seems I am not able to keep it to myself. I must show you the letter. Just see for yourself how loving and sweet it is.”",
+      "_end": 7743
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "And Pelageia Petrovna again took out the package of letters from her pocket, took from it a thin letter-sheet, closely written, and unfolded it before Ivan Golubenko, whose face had become still gloomier, and he tried to push away with his hand the extended note, but Pelageia Petrovna had already started to read:",
+      "_end": 7749
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "“Dear Pelageia Petrovna—When will the time arrive when I will be able to address you, not as above, but as my dear, sweet mother! I am anxiously awaiting the time, and hope so much that it will soon come that even now I do not want to call you otherwise than mama—”",
+      "_end": 7754
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Pelageia Petrovna lifted her head, and, ceasing to read, looked at Golubenko with eyes suffused with tears.",
+      "_end": 7757
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "“You see, Ivan Ivanovich!” she added; but seeing that Golubenko was biting his mustaches, and that his eyes too were moist, she rose, placed a trembling hand upon his hair, and quietly kissed him on the forehead. “Thank you, Ivan Ivanovich,” she whispered, greatly moved. “I always thought that you and Vladimir were more like brothers than like simple friends—Forgive me—I am so very happy, God be thanked!”",
+      "_end": 7764
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "Tears streamed down her cheeks, and Ivan Golubenko was so disturbed and confused that he could only catch in his own her cold, bony hand and cover it with kisses; tears were suffocating him, and he could not utter a word, but in this outburst of motherly love he felt such a terrible reproach to himself that he would have preferred to be lying himself upon the field, shot through the head, than to hear himself praised for his friendship by this woman who would in half an hour find out the whole truth; what would she then think of him? Did not he, the friend, the almost brother, stand quietly by when a revolver was pointed at Vladimir? Did not this brother himself measure the space between the two antagonists and load the revolvers? All this he did himself, did consciously; and now this friend and brother silently sat there without having even the courage to fulfil his duty.",
+      "_end": 7778
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "He was afraid; at this moment he despised himself, but could not prevail upon himself to say even one word. His soul was oppressed by a strange lack of harmony; he felt sick at heart and stifling. And in the meanwhile time flew—he knew it, and the more he knew it the less had he the courage to deprive Pelageia Petrovna of her few last happy moments. What should he say to her? How should he prepare her? Ivan Golubenko lost his head entirely.",
+      "_end": 7786
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "He had had already time enough to curse in his thoughts all duels, all quarrels, every kind of heroism, and all kinds of so-called questions of honor, and he at last rose from his seat ready to confess or to run away. Silently and quickly he caught the hand of Pelageia Petrovna, and stooping over it to touch it with his lips, thus hid his face, over which a torrent of tears suddenly streamed down; impetuously, without another thought, he ran out into the corridor, snatching his great coat, and then out of the house without having said a word.",
+      "_end": 7795
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "Pelageia Petrovna looked after him with astonishment, and thought:",
+      "_end": 7797
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "“He also must be in love, poor fellow—Well, that is their young sorrow—before happiness!” ...",
+      "_end": 7800
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "And she soon forgot him, absorbed in her dreams of the happiness which seemed to her so inviolable and entire.",
+      "_end": 7803
+    }
+  ]
+}

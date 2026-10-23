@@ -482,7 +482,8 @@ test("POST-v3 Ritual: NO_PRINTED_PLACE is only Wedding-Day, and it resolves no c
   // THE FOUR SEASONS joins: a cosmic fable on an unnamed earth (Tue 20 Oct 2026).
   // THE WALL OPPOSITE joins: the story names no setting (Thu 22 Oct 2026).
   // A WORK OF ART joins: the town is never named (Thu 22 Oct 2026 PM).
-  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite", "a-work-of-art"]);
+  // THE DUEL (Teleshov) joins: no place is printed (Thu 22 Oct 2026 PM).
+  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite", "a-work-of-art", "teleshov-the-duel"]);
   for (const id of NO_PRINTED_PLACE) {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -879,4 +880,14 @@ test("Thu 22 Oct PM The Accursed House place is Rue de la Victoire as printed; f
   assert.deepEqual(placeFor(shelfWork("the-accursed-house")!), { label: "Rue de la Victoire", region: "fr" });
   assert.equal(CHIP_ONLY_PLACE["the-accursed-house"], undefined);
   assert.equal(countryFor(shelfWork("the-accursed-house")!), "France");
+});
+
+test("Thu 22 Oct PM The Duel (Teleshov) prints no place: no chip, no country", () => {
+  const work = shelfWork("teleshov-the-duel")!;
+  assert.ok(work);
+  assert.equal(NO_PRINTED_PLACE.has("teleshov-the-duel"), true);
+  assert.equal(placeFor(work), null);
+  assert.equal(placeForId("teleshov-the-duel"), null);
+  assert.equal(chipOnlyLabel("teleshov-the-duel"), null);
+  assert.equal(countryFor(work), "");
 });
