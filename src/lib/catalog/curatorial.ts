@@ -1273,6 +1273,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "bric-a-brac-and-destinies",
   // Mira Thu 22 Oct 2026 PM COURTELINE — A Gentleman Finds a Watch (Courteline, tr. Quiroga, 1907) follows Bric-a-Brac and Destinies at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "a-gentleman-finds-a-watch",
+  // Mira Thu 22 Oct 2026 PM CHEKHOV — A Work of Art (Chekhov, tr. Wolfe, 1905) follows A Gentleman Finds a Watch at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "a-work-of-art",
 ] as const;
 
 /**
