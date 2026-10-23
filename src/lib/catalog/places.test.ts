@@ -146,6 +146,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "a-chair-on-the-boulevard": { label: "Paris", region: "fr" },
     "bric-a-brac-and-destinies": { label: "Germany", region: "de" },
     "a-gentleman-finds-a-watch": { label: "Place Blanche", region: "fr" },
+    "the-accursed-house": { label: "Rue de la Victoire", region: "fr" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -871,4 +872,11 @@ test("Thu 22 Oct PM A Work of Art prints no place: no chip, no country", () => {
   assert.equal(placeForId("a-work-of-art"), null);
   assert.equal(chipOnlyLabel("a-work-of-art"), null);
   assert.equal(countryFor(work), "");
+});
+
+test("Thu 22 Oct PM The Accursed House place is Rue de la Victoire as printed; fr; France", () => {
+  assert.ok(REGION_SHAPES.fr?.d, "fr shape");
+  assert.deepEqual(placeFor(shelfWork("the-accursed-house")!), { label: "Rue de la Victoire", region: "fr" });
+  assert.equal(CHIP_ONLY_PLACE["the-accursed-house"], undefined);
+  assert.equal(countryFor(shelfWork("the-accursed-house")!), "France");
 });

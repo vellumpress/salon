@@ -347,6 +347,7 @@ test("known origin overrides", () => {
     "a-chair-on-the-boulevard": "France",
     "bric-a-brac-and-destinies": "Germany",
     "a-gentleman-finds-a-watch": "France",
+    "the-accursed-house": "France",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
