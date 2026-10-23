@@ -1,0 +1,477 @@
+{
+  "id": "the-accursed-house",
+  "title": "The Accursed House",
+  "author": "Émile Gaboriau (trans. E. C. Waggener)",
+  "year": "1891",
+  "note": "Project Gutenberg 73893 (E. C. Waggener's translation), set to the Collier printing (Short Story Classics (Foreign), Volume Five, P. F. Collier & Son, New York; IA shortstoryclassi05pattrich, pp.1415–1423). Year 1891 from the story's own foot line (\"Translated by E. C. Waggener. Copyright, 1891, by The Current Literature Publishing Company.\", leaf n88). Bound whole, one breath per printed paragraph, with the print's one section break. The title, byline and translator note are cut. The whole text was read against the scan. The print is followed where Gutenberg departs from it: the italic \"There *is* something under all this!\", the 2-em dash in \"B——\", and em dashes for double hyphens. \"Rue de la Victoria\" (once, near the end) is kept as printed.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Accursed House",
+      "place": "The Accursed House",
+      "reentry": "The Vicomte de B——, an amiable and charming young man, was peacefully enjoying an income of 30,000 livres yearly, when, unfortunately for him, his uncle, a miser of the worst species, died, leaving him all his wealth, amounting to nearly tw",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "The Vicomte de B——, an amiable and charming young man, was peacefully enjoying an income of 30,000 livres yearly, when, unfortunately for him, his uncle, a miser of the worst species, died, leaving him all his wealth, amounting to nearly two millions.",
+      "_end": 2364
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "In running through the documents of succession, the Vicomte de B—— learned that he was the proprietor of a house in the Rue de la Victoire. He learned, also, that the unfurnished building, bought in 1849 for 300,000 francs, now brought in, clear of taxes, rentals amounting to 82,000 francs a year.",
+      "_end": 2370
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "\"Too much, too much, entirely,\" thought the generous vicomte, \"my uncle was too hard; to rent at this price is usury, one can not deny it. When one bears a great name like mine, one should not lend himself to such plundering. I will begin to-morrow to lower my rents, and my tenants will bless me.\"",
+      "_end": 2376
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "With this excellent purpose in view, the Vicomte de B—— sent immediately for the *concièrge* of the building, who presented himself as promptly, with back bent like a bow.",
+      "_end": 2380
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"Bernard, my friend,\" said the vicomte, \"go at once from me and notify all your tenants that I lower their rents by one-third.\"",
+      "_end": 2383
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "That unheard-of word \"lower\" fell like a brick on Bernard's head. But he quickly recovered himself; he had heard badly; he had not understood.",
+      "_end": 2386
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"Low—er the rents!\" stammered he. \"Monsieur le Vicomte deigns to jest. Lower! Monsieur, of course means to raise the rents.\"",
+      "_end": 2389
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "\"I was never more serious in my life, my friend,\" the vicomte returned; \"I said, and I repeat it, lower the rents.\"",
+      "_end": 2392
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "This time the *concièrge* was surprised to the point of bewilderment—so thrown off his balance that he forgot himself and lost all restraint.",
+      "_end": 2396
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Monsieur has not reflected,\" persisted he. \"Monsieur will regret this evening. Lower the tenants' rents! Never was such a thing known, monsieur! If the lodgers should learn of it, what would they think of monsieur? What would people say in the neighborhood? Truly—\"",
+      "_end": 2401
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"Monsieur Bernard, my friend,\" dryly interrupted the vicomte, \"I prefer, when I give an order, to be obeyed without reply. You hear me—go!\"",
+      "_end": 2405
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Staggering like a drunken man, Monsieur Bernard went out from the house of his proprietor.",
+      "_end": 2408
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "All his ideas were upset, overthrown, confounded. Was he, or was he not, the plaything of a dream, a ridiculous nightmare? Was he himself Pierre Bernard, or Bernard somebody else?",
+      "_end": 2412
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"Lower his rents! lower his rents!\" repeated he. \"It is not to be believed! If indeed the lodgers had complained! But they have not complained; on the contrary, all are good payers. Ah! if his uncle could only know this, he would rise from the tomb! His nephew has gone mad, 'tis certain! Lower the rents! They should have up this young man before a family council; he will finish badly! Who knows—after this—what he will do next? He lunched too well, perhaps, this morning.\"",
+      "_end": 2420
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "And the worthy Bernard was so pale with emotion when he reentered his lodge, so pale and spent, that on seeing him enter, his wife and daughter Amanda exclaimed as with one voice:",
+      "_end": 2424
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "\"Goodness! what is it? What has happened to you now?\"",
+      "_end": 2426
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"Nothing,\" responded he, with altered voice, \"absolutely nothing.\"",
+      "_end": 2428
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "\"You are deceiving me,\" insisted Madame Bernard, \"you are concealing something from me; do not spare me; speak, I am strong—what did the new proprietor tell you? Does he think of turning us off?\"",
+      "_end": 2432
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"If it were only that! But just think, he told me with his own lips, he told me to—ah! you will never believe me—\"",
+      "_end": 2435
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"Oh, yes; only do go on.\"",
+      "_end": 2437
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"You will have it, then!—Well, then, he told me, he ordered me to notify all the tenants that—*he lowered their rents one-third*! Did you hear what I said?—*lowered* the rents of the tenants—\"",
+      "_end": 2441
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "But neither Madame nor Mademoiselle Bernard heard him out—they were twisting and doubling with convulsive laughter.",
+      "_end": 2444
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "\"Lower!\" repeated they; \"ah! what a good joke, what a droll man! Lower the tenants' rents.\"",
+      "_end": 2447
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "But Bernard, losing his temper and insisting that he must be taken seriously in his own lodge, his wife lost her temper too, and a quarrel followed! Madame Bernard declaring that Monsieur Bernard had, beyond a doubt, taken his fantastic order from the bottom of a litre of wine in the restaurant at the corner.",
+      "_end": 2453
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "But for Mademoiselle Amanda the couple would undoubtedly have come to blows, and finally Madame Bernard, who did not wish to be thought demented, threw a shawl over her head and ran to the proprietor's house. Bernard had spoken truly; with her own two ears, ornamented with big, gilded hoops, she heard the incredible word. Only, as she was a wise and prudent woman, she demanded \"a bit of writing,\" to put, as she said, \"her responsibility under cover.\"",
+      "_end": 2461
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "She, too, returned thunderstruck, and all the evening in the lodge, father, mother, and daughter deliberated.",
+      "_end": 2464
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Should they obey? or should they warn some relative of this mad young man, whose common sense would oppose itself to such insanity?",
+      "_end": 2467
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "They decided to obey.",
+      "_end": 2469
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Next morning, Bernard, buttoning himself into his best frock coat, made the rounds of the three-and-twenty lodges to announce his great news.",
+      "_end": 2472
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "Ten minutes afterward the house in the Rue de la Victoire was in a state of commotion impossible to describe. People who, for forty years had lived on the same floor, and never honored each other with so much as a tip of the hat, now clustered together and chatted eagerly.",
+      "_end": 2477
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"Do you know, monsieur?\"",
+      "_end": 2479
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "\"It is very extraordinary.\"",
+      "_end": 2481
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "\"Simply unheard of!\"",
+      "_end": 2483
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"The proprietor's lowered my rent!\"",
+      "_end": 2485
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "\"One-third, is it not? Mine also.\"",
+      "_end": 2487
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"Astounding! It *must* be a mistake!\"",
+      "_end": 2489
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "And despite the affirmations of the Bernard family, despite even the \"bit of writing,\" \"under cover,\" there were found among the tenants doubting Thomases, who doubted still in the face of everything.",
+      "_end": 2493
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "Three of them actually wrote to the proprietor to tell him what had passed, and to charitably warn him that his *concièrge* had wholly lost his mind. The proprietor responded to these skeptics, confirming what Bernard had said. Doubt, thereafter, was out of the question.",
+      "_end": 2498
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "Then began reflections and commentaries.",
+      "_end": 2500
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "\"*Why* had the proprietor lowered his rents?\"",
+      "_end": 2502
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "\"Yes, *why*?\"",
+      "_end": 2504
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "\"What motives,\" said they all, \"actuate this strange man? For certainly he must have grave reasons for a step like this! An intelligent man, a man of good sense, would never deprive himself of good fat revenues, well secured, for the simple pleasure of depriving himself. One would not conduct himself thus without being forced, constrained by powerful or terrible circumstances.\"",
+      "_end": 2511
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "And each said to himself:",
+      "_end": 2513
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "\"*There is something under all this!*\"",
+      "_end": 2515
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "\"But what?\"",
+      "_end": 2517
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "And from the first floor to the sixth they sought and conjectured and delved in their brains. Every lodger had the preoccupied air of a man that strives with all his wits to solve an impossible cipher, and everywhere there began to be a vague disquiet, as it happens when one finds himself in the presence of a sinister mystery.",
+      "_end": 2523
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "Some one went so far as to hazard:",
+      "_end": 2525
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "\"This man must have committed a great and still hidden crime; remorse pushes him to philanthropy.\"",
+      "_end": 2528
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "\"It was not a pleasant idea, either, the thought of living thus side by side with a rascal; no, by no means; he might be repentant, and all that, but suppose he yielded to temptation once more!\"",
+      "_end": 2532
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "\"The house, perhaps, was badly built?\" questioned another, anxiously.",
+      "_end": 2534
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "\"Hum-m, so-so! no one could tell; but all knew one thing—it was very, very old!\"",
+      "_end": 2537
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "\"True! and it had been necessary to prop it when they dug the drain last year in the month of March.\"",
+      "_end": 2540
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "\"Maybe it was the roof, then, and the house is top-heavy?\" suggested a tenant on the fifth floor.",
+      "_end": 2543
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "\"Or perhaps,\" said a lodger in the garret, \"there is a press for coining counterfeit money in the cellar; I have often heard at night a sound like the dull, muffled thud of a coin-stamper.\"",
+      "_end": 2547
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "The opinion of another was that Russian, maybe Prussian, spies had gained a lodgment in the house, while the gentleman of the first story was inclined to believe that the proprietor purposed to set fire to his house and furniture with the sole object of drawing great sums from the insurance companies.",
+      "_end": 2553
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "Then began to happen, as they all declared, extraordinary and even frightful things. On the sixth and mansard floors it appeared that strange and absolutely inexplicable noises were heard. Then the nurse of the old lady on the fourth story, going one night to steal wine from the cellar, encountered the ghost of the defunct proprietor—he even held in his hand a receipt for rent—by which she knew him!",
+      "_end": 2560
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "And the refrain from loft to cellar was:",
+      "_end": 2562
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "\"There *is* something under all this!\"",
+      "_end": 2564
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "From disquietude it had come to fright; from fright it quickly passed to terror. So that the gentleman of the first floor, who had valuables in his rooms, made up his mind to go, and sent in notice by his clerk.",
+      "_end": 2568
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "Bernard went to inform the proprietor, who responded:",
+      "_end": 2570
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "\"All right, let the fool go!\"",
+      "_end": 2572
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "But next day the chiropodist of the second floor, though he had naught to fear for his valuables, imitated the gentleman beneath him. Then the bachelors and the little households of the fifth story quickly followed this example.",
+      "_end": 2577
+    },
+    {
+      "id": "s0-62",
+      "sceneId": "s0",
+      "text": "From that moment it was a general rout. By the end of the week, everybody had given notice. Every one awaited some frightful catastrophe. They slept no more. They organized patrols. The terrified domestics swore that they too would quit the accursed house and remained temporarily only on tripled wages.",
+      "_end": 2583
+    },
+    {
+      "id": "s0-63",
+      "sceneId": "s0",
+      "text": "Bernard was no more than the ghost of himself; the fever of fear had worn him to a shadow.",
+      "_end": 2586
+    },
+    {
+      "id": "s0-64",
+      "sceneId": "s0",
+      "text": "\"No,\" repeated his wife mournfully at each fresh notification, \"no, it is *not* natural.\"",
+      "_end": 2589
+    },
+    {
+      "id": "s0-65",
+      "sceneId": "s0",
+      "text": "Meanwhile three-and-twenty \"For Rent\" placards swung against the façade of the house, drawing an occasional applicant for lodgings.",
+      "_end": 2592
+    },
+    {
+      "id": "s0-66",
+      "sceneId": "s0",
+      "text": "Bernard—never grumbling now—climbed the staircase and ushered the visitor from apartment to apartment.",
+      "_end": 2595
+    },
+    {
+      "id": "s0-67",
+      "sceneId": "s0",
+      "text": "\"You can have your choice,\" said he to the people that presented themselves, \"the house is entirely vacant; all the tenants have given notice as one man. They do not know why, exactly, but things have happened, oh! yes, *things*! a mystery such as was never before known—*the proprietor has lowered his rents!*\"",
+      "_end": 2601
+    },
+    {
+      "id": "s0-68",
+      "sceneId": "s0",
+      "text": "And the would-be lodgers fled away affrighted.",
+      "_end": 2603
+    },
+    {
+      "id": "s0-69",
+      "sceneId": "s0",
+      "text": "The term ended, three-and-twenty vans carried away the furniture of the three-and-twenty tenants. Everybody left. From top to bottom, from foundations to garret, the house lay empty of lodgers.",
+      "_end": 2607
+    },
+    {
+      "id": "s0-70",
+      "sceneId": "s0",
+      "text": "The rats themselves, finding nothing to live on, abandoned it also.",
+      "_end": 2609
+    },
+    {
+      "id": "s0-71",
+      "sceneId": "s0",
+      "text": "Only the *concièrge* remained, gray green with fear in his lodge. Frightful visions haunted his sleep. He seemed to hear lugubrious howlings and sinister murmurs at night that made his teeth chatter with terror and his hair erect itself under his cotton nightcap. Madame Bernard no more closed an eye than he. And Amanda in her frenzy renounced all thought of the operatic stage and married—for nothing in the world but to quit the paternal lodge—a young barber and hair-dresser whom she had never before been able to abide.",
+      "_end": 2618
+    },
+    {
+      "id": "s0-72",
+      "sceneId": "s0",
+      "text": "At last, one morning, after a more frightful nightmare than usual, Bernard, too, took a great resolution. He went to the proprietor, gave up his keys, and scampered away.",
+      "_end": 2622
+    },
+    {
+      "id": "s0-73",
+      "sceneId": "s0",
+      "text": "* * *",
+      "_end": 2624
+    },
+    {
+      "id": "s0-74",
+      "sceneId": "s0",
+      "text": "And now on the Rue de la Victoria stands the abandoned house, \"The Accursed House,\" whose history I have told you. Dust thickens upon the closed slats, grass grows in the court. No tenant ever presents himself now; and in the quarter, where stands this Accursed House, so funereal is its reputation that even the neighboring houses on either side of it have also depreciated in value.",
+      "_end": 2631
+    },
+    {
+      "id": "s0-75",
+      "sceneId": "s0",
+      "text": "Lower one's rents!! Who would think of such a thing!!!",
+      "_end": 2633
+    }
+  ]
+}

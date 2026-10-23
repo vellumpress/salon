@@ -467,6 +467,8 @@ const BLURBS: Record<string, string> = {
     "A young man hands a watch he found in the street to the police inspector and ends up searched down to his socks as a suspected thief.",
   "a-work-of-art":
     "A grateful patient gives his doctor a scandalous bronze candelabrum, and every attempt to pass it on brings it straight back home.",
+  "the-accursed-house":
+    "A kindly young heir cuts the rents on his late uncle's house in the Rue de la Victoire, and his baffled tenants decide something terrible must be going on.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":

@@ -1275,6 +1275,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "a-gentleman-finds-a-watch",
   // Mira Thu 22 Oct 2026 PM CHEKHOV — A Work of Art (Chekhov, tr. Wolfe, 1905) follows A Gentleman Finds a Watch at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "a-work-of-art",
+  // Mira Thu 22 Oct 2026 PM GABORIAU — The Accursed House (Gaboriau, tr. Waggener, 1891) follows A Work of Art at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "the-accursed-house",
 ] as const;
 
 /**
