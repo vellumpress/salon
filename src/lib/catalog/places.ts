@@ -59,6 +59,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "the-accursed-house": { label: "Rue de la Victoire", region: "fr" },
   // Mira Fri 23 Oct 2026 AM OYSTERS: "one of the more frequented streets of Moscow" (l.1348; again l.1366–1367); Moscow, ru; countries.ts Russia.
   "chekhov-oysters": { label: "Moscow", region: "ru" },
+  // Mira Sat 24 Oct 2026 AM LUZY: "making domiciliary visits and effecting arrests in Paris night and day. It is possible they may force an entrance here" (l.5286–5288); Paris, fr; countries.ts France.
+  "anatole-france-madame-de-luzy": { label: "Paris", region: "fr" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

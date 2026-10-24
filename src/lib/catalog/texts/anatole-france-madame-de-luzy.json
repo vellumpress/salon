@@ -1,0 +1,407 @@
+{
+  "id": "anatole-france-madame-de-luzy",
+  "title": "Madame de Luzy",
+  "author": "Anatole France (trans. Frederic Chapman)",
+  "year": "1908",
+  "note": "Project Gutenberg 58099 (Frederic Chapman's translation), set to the first edition, Mother of Pearl (John Lane, The Bodley Head, London and New York, MCMVIII), pp.243–253. Year 1908 from the title leaf (IA cu31924027269194, n8). Bound whole, one breath per printed paragraph, with the print's three numbered sections as scenes. The half-title, the dedication to Marcel Proust and the title are cut; the dateline, the narrator's manuscript frame, is kept as printed as the opening breath. The author's footnote on the vest (p.249, signed \"(AUTHOR.)\") is kept as a note after its paragraph. The whole text was read against the 1908 scan; it matches, and Gutenberg's ellipses are kept.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "I",
+      "place": "I",
+      "reentry": "(*From a manuscript dated September 15th, 1792.*)",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "II",
+      "place": "II",
+      "reentry": "Madame de Luzy, recognizing Planchonnet, the old philosopher who occupied the neighbouring house, asked him in a whisper—“Has my cook caught sight of you? She is a Jacobin!”",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "III",
+      "place": "III",
+      "reentry": "Lubin was the first to enter. He had his scarf round him, and was followed by a dozen men armed with pikes. Casting his eyes first on Madame de Luzy and then on me—“*Peste!*” he exclaimed. “It seems we are disturbing a pair of lovers. Excus",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "(*From a manuscript dated September 15th, 1792.*)",
+      "_end": 5250
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "As I entered, Pauline de Luzy held out her hand to me. Then for a moment we remained silent. Her scarf and straw hat were thrown carelessly on an arm-chair.",
+      "_end": 5258
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "The prayer from *Orpheus* was open on the spinet. Going towards the window, she watched the sun sinking to the blood-red horizon.",
+      "_end": 5261
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "“Madame,” I said at length, “do you remember the words you said two years ago this very day, at the foot of that hill on the bank of the river towards which at this moment your eyes are turned?",
+      "_end": 5265
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "“Do you remember how, with your hand waving in a prophetic gesture, you called up before me, as in a vision, the coming days of trial, of crime and terror? On my very lips you arrested my confession of love, and bade me live and labour for justice and liberty. Madame, since your hand, which I could not anoint with kisses and tears enough, pointed out the way to me, I have pursued it unfaltering. I have obeyed you; I have written and spoken for the cause. For two years I have withstood the blunder-headed starvelings who are the source of dissension and hate, the demagogues who seduce the people by violent demonstrations of pretended sympathy, and the poltroons who do homage to the coming powers.”",
+      "_end": 5277
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "She stopped me with a motion of her hand, and made a sign to me to listen. Then we heard borne across the scented spaces of the garden, where birds were warbling, distant cries of “Death!” “To the gallows with the aristocrat!” “Set his head on a pike!”",
+      "_end": 5282
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Pale and motionless she held a finger to her lips.",
+      "_end": 5284
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "“It is,” I said, “some unhappy wretch being pursued. They are making domiciliary visits and effecting arrests in Paris night and day. It is possible they may force an entrance here. I ought to withdraw for fear of compromising you. Although I am but little known in this neighbourhood, I am, as times go, a dangerous guest.”",
+      "_end": 5290
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "“Stay!” she adjured me.",
+      "_end": 5292
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "For the second time cries rent the calm evening air. They were mingled now with the tramp of feet and the noise of fire-arms. They came nearer; then we heard a voice shout: “Close the approaches, so that he cannot escape, the scoundrel!”",
+      "_end": 5297
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Madame de Luzy seemed to grow calmer in proportion to the increasing nearness of the danger.",
+      "_end": 5300
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "“Let us go up to the second floor,” she said; “we shall be able to see through the sunblinds what is going on outside.”",
+      "_end": 5303
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "But scarcely had we opened the door when, on the landing, we beheld a half-dressed fugitive, his face blanched with terror, his teeth chattering and his knees knocking together. This apparition murmured in a strangled voice—",
+      "_end": 5308
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "“Save me! Hide me! They are there.... They burst open my gate—overran my garden. They are coming....”",
+      "_end": 5311
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Madame de Luzy, recognizing Planchonnet, the old philosopher who occupied the neighbouring house, asked him in a whisper—“Has my cook caught sight of you? She is a Jacobin!”",
+      "_end": 5319
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "“Nobody has set eyes on me.”",
+      "_end": 5321
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "“God be praised, neighbour!”",
+      "_end": 5323
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "She led him into her bedroom, whither I followed them. A consultation was necessary. Some hiding-place must be hit upon where she could keep Planchonnet concealed for several days, or at least for several hours, whatever time it might take to deceive and tire out the search party. It was agreed that I should keep the approaches under observation, and that when I gave the signal, the unfortunate man should make his escape by the little garden gate.",
+      "_end": 5331
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "Whilst he waited, he was unable to remain standing. He was completely paralysed with terror.",
+      "_end": 5334
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "He endeavoured to make us understand that he was being hounded down for having conspired with Monsieur de Cazotte against the Constitution, and for having on the 10th of August formed one of the defenders of the Tuileries—he, the enemy of priests and kings. It was an infamous calumny. The truth was that Lubin was venting his hate upon him—Lubin, hitherto his butcher, whom he had a hundred times had a mind to lay a stick about to teach him to give better weight, and who was now presiding over the section in which he had formerly been a mere stallholder.",
+      "_end": 5344
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "As he uttered the name in strangled tones, he was persuaded that he actually saw Lubin, and hid his face in his hands. And of a truth there was the sound of footsteps on the stairs. Madame de Luzy shot the bolts and pushed the old man behind a screen. There was a hammering at the door, and Pauline recognized the voice of her cook, who called out to her to open, that the municipal officers were at the gate with the National Guard, and that they had come to make an inspection of the premises.",
+      "_end": 5353
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "“They say,” the woman added, “that Planchonnet is in the house. I know very well that it is not so, of course. I know you would never harbour a scoundrel of that sort; but they won’t believe my word.”",
+      "_end": 5357
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "“Well, well, let them come up,” replied Madame de Luzy through the door. “Let them go all over the house, from cellar to garret.”",
+      "_end": 5360
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "As he listened to this dialogue, the wretched Planchonnet fainted behind the screen, and I had a good deal of trouble in resuscitating him by sprinkling water on his temples. When I had succeeded—",
+      "_end": 5364
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "“My friend,” the young woman whispered to her old neighbour, “trust in me. Remember that women are resourceful.”",
+      "_end": 5367
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "Then, calmly, as though she had been engaged in some daily domestic duty, she drew her bedstead a little out from its alcove, took off the bedclothes, and with my assistance so arranged the three mattresses as to contrive a space next the wall between the highest and the lowest of them.",
+      "_end": 5373
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Whilst she was making these arrangements, a loud noise of shoes, sabots, gunstocks, and raucous voices broke out on the staircase. This was for all three of us a terrible moment; but the noise ascended by little and little to the floor above our heads. We realized that the searchers, under the guidance of the Jacobin cook, were ransacking the garrets first. The ceiling cracked; threats and coarse laughter were audible, and the sound of kicks and bayonet-thrusts against the wainscot. We breathed again, but there was not a second to lose. I helped Planchonnet to slip into the space contrived for him between the mattresses.",
+      "_end": 5383
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "As she watched our efforts, Madame de Luzy shook her head. The bed thus disturbed had a suspicious appearance.",
+      "_end": 5386
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "She endeavoured to give it a finishing touch; but in vain, she could not make it look natural.",
+      "_end": 5389
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "“I shall have to go to bed myself,” she said.",
+      "_end": 5391
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "She looked at the clock; it was exactly seven, and she felt that it would look extraordinary for her to be in bed so early. As to feigning illness, it was useless to think of it: the Jacobin cook would detect the ruse.",
+      "_end": 5396
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "She remained thoughtful for some seconds; then calmly, simply, with royal unconcern, she undressed before me, got into bed, and ordered me to take off my shoes, my coat, and my cravat.",
+      "_end": 5400
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "“There is nothing for it but for you to be my lover, and for them to surprise us together. When they arrive you will not have had time to re-arrange your disordered clothes. You will open the door to them in your vest, with your hair rumpled.”",
+      "_end": 5405
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "Note: The vest was worn under the coat. It was a sort of waistcoat, longer than ours, and provided with sleeves of full length. (AUTHOR.)",
+      "_end": 5412
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "All our arrangements were made when the search party, with many exclamations of “*Sacré!*” and “*Peste!*” descended from the garrets.",
+      "_end": 5417
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "The unfortunate Planchonnet was seized with such a paroxysm of trembling that he shook the whole bed.",
+      "_end": 5420
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "Moreover, his breathing grew so stertorous that it must have been almost audible in the corridor.",
+      "_end": 5423
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "“It’s a pity,” murmured Madame de Luzy. “I was so satisfied with my little artifice. But never mind; we won’t despair. May God be our aid!”",
+      "_end": 5426
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "A heavy fist shook the door.",
+      "_end": 5428
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "“Who knocks?” Pauline inquired.",
+      "_end": 5430
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "“The representatives of the Nation.”",
+      "_end": 5432
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "“Can’t you wait a minute?”",
+      "_end": 5434
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "“Open, or we shall break the door down!”",
+      "_end": 5436
+    },
+    {
+      "id": "s1-29",
+      "sceneId": "s1",
+      "text": "“Go and open the door, my friend.”",
+      "_end": 5438
+    },
+    {
+      "id": "s1-30",
+      "sceneId": "s1",
+      "text": "Suddenly, by a sort of miracle, Planchonnet ceased to tremble and gasp.",
+      "_end": 5440
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Lubin was the first to enter. He had his scarf round him, and was followed by a dozen men armed with pikes. Casting his eyes first on Madame de Luzy and then on me—“*Peste!*” he exclaimed. “It seems we are disturbing a pair of lovers. Excuse us, pretty one!”",
+      "_end": 5449
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Then turning to his followers, he remarked—",
+      "_end": 5451
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "“The *sans-culottes* are the only folks who know how to behave.”",
+      "_end": 5453
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "But despite his theories this encounter had evidently put him in good spirits.",
+      "_end": 5456
+    },
+    {
+      "id": "s2-4",
+      "sceneId": "s2",
+      "text": "He sat down on the bed, and raising the chin of the lovely high-bred woman, said—",
+      "_end": 5459
+    },
+    {
+      "id": "s2-5",
+      "sceneId": "s2",
+      "text": "“It is plain that that pretty mouth wasn’t made to mumble paternosters day and night. It would have been a pity if it were. But the Republic before all things. We are seeking the traitor, Planchonnet. He is here, I’m certain of it. I must have him. I shall get him guillotined. It will make my fortune.”",
+      "_end": 5465
+    },
+    {
+      "id": "s2-6",
+      "sceneId": "s2",
+      "text": "“Search for him, then!”",
+      "_end": 5467
+    },
+    {
+      "id": "s2-7",
+      "sceneId": "s2",
+      "text": "They looked under the chairs and tables, in the cupboards, thrust their pikes under the bed, and probed the mattresses with their bayonets.",
+      "_end": 5470
+    },
+    {
+      "id": "s2-8",
+      "sceneId": "s2",
+      "text": "Lubin scratched his ear and looked at me slily. Madame de Luzy, dreading that I might be subjected to an embarrassing catechism, said—",
+      "_end": 5473
+    },
+    {
+      "id": "s2-9",
+      "sceneId": "s2",
+      "text": "“Dear friend, you know the house as well as I do myself. Take the keys and show Monsieur Lubin all over it. I am sure you will be delighted to act as guide to such patriots.”",
+      "_end": 5477
+    },
+    {
+      "id": "s2-10",
+      "sceneId": "s2",
+      "text": "I led them to the cellars, where they turned over the piles of faggots, and drank a fairly large number of bottles of wine; after which Lubin staved in the full casks with the butt end of his gun, and leaving the cellar flooded with wine, gave the signal of departure. I conducted them out as far as the gate, which I shut on their very heels, and then ran back to let Madame de Luzy know that we were out of danger.",
+      "_end": 5484
+    },
+    {
+      "id": "s2-11",
+      "sceneId": "s2",
+      "text": "When she heard this, she bent her head over the side of the bed next the wall, and called—",
+      "_end": 5487
+    },
+    {
+      "id": "s2-12",
+      "sceneId": "s2",
+      "text": "“Monsieur Planchonnet! Monsieur Planchonnet!”",
+      "_end": 5489
+    },
+    {
+      "id": "s2-13",
+      "sceneId": "s2",
+      "text": "A faint sigh was the response.",
+      "_end": 5491
+    },
+    {
+      "id": "s2-14",
+      "sceneId": "s2",
+      "text": "“God be praised!” she exclaimed. “Monsieur Planchonnet, you occasioned me the most appalling fear. I thought you were dead.”",
+      "_end": 5494
+    },
+    {
+      "id": "s2-15",
+      "sceneId": "s2",
+      "text": "Then turning towards me—",
+      "_end": 5496
+    },
+    {
+      "id": "s2-16",
+      "sceneId": "s2",
+      "text": "“My poor friend, you used to take so much delight in declaring, from time to time, that you loved me; you will never tell me so again!”",
+      "_end": 5499
+    }
+  ]
+}

@@ -148,6 +148,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "a-gentleman-finds-a-watch": { label: "Place Blanche", region: "fr" },
     "the-accursed-house": { label: "Rue de la Victoire", region: "fr" },
     "chekhov-oysters": { label: "Moscow", region: "ru" },
+    "anatole-france-madame-de-luzy": { label: "Paris", region: "fr" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -920,4 +921,12 @@ test("Sat 24 Oct AM NO_PRINTED_PLACE skips the author lookup: A Work of Art, The
   // Live behaviour change: The Four Seasons (NO_PRINTED_PLACE since Tue 20 Oct) loses Denmark from its Carl Ewald author entry.
   assert.equal(countryFor(shelfWork("the-four-seasons")!), "");
   assert.equal(countryFor(shelfWork("the-old-room")!), "Denmark");
+});
+
+test("Sat 24 Oct AM Madame de Luzy place is Paris as printed; fr; France", () => {
+  assert.ok(REGION_SHAPES.fr?.d, "fr shape");
+  assert.deepEqual(placeFor(shelfWork("anatole-france-madame-de-luzy")!), { label: "Paris", region: "fr" });
+  assert.equal(CHIP_ONLY_PLACE["anatole-france-madame-de-luzy"], undefined);
+  assert.equal(NO_PRINTED_PLACE.has("anatole-france-madame-de-luzy"), false);
+  assert.equal(countryFor(shelfWork("anatole-france-madame-de-luzy")!), "France");
 });
