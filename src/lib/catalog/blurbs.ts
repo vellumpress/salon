@@ -475,6 +475,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: this story is told by an eight-year-old who is faint with hunger on a Moscow street while his out-of-work father, ashamed, brings himself to beg passers-by for help. A hungry eight-year-old on a rainy Moscow street spells out a strange word on a restaurant placard while his father works up the courage to beg.",
   "chekhov-a-chameleon":
     "When a dog bites a goldsmith's finger in the market square, a police superintendent's verdict swings back and forth with every guess about who owns it.",
+  "chekhov-bad-weather":
+    "A young wife at a rain-soaked summer villa goes to town to surprise her lonely, overworked husband and finds their flat locked.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":

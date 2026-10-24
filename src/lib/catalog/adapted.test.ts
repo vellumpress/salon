@@ -429,7 +429,8 @@ test("homepage search is local binds only — no Gutenberg-only dead ends", () =
   // TELESHOV one more (1169).
   // OYSTERS one more (1170).
   // CHAMELEON one more (1171).
-  assert.equal(LOCAL_WORKS.length, 1171);
+  // BAD WEATHER one more (1172).
+  assert.equal(LOCAL_WORKS.length, 1172);
   assert.ok(LOCAL_WORKS.every((item) => isBoundLocal(item)));
   assert.ok(FULL_TEXT_WORKS.length > LOCAL_WORKS.length);
 

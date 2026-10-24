@@ -1283,6 +1283,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "chekhov-oysters",
   // Mira Sat 24 Oct 2026 AM CHAMELEON — A Chameleon (Chekhov, tr. Garnett, 1922) follows Oysters at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "chekhov-a-chameleon",
+  // Mira Sat 24 Oct 2026 AM BAD WEATHER — Bad Weather (Chekhov, tr. Garnett, 1920) follows A Chameleon at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "chekhov-bad-weather",
 ] as const;
 
 /**
