@@ -1279,6 +1279,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-accursed-house",
   // Mira Thu 22 Oct 2026 PM TELESHOV — The Duel (Teleshov, tr. Gorin, 1907) follows The Accursed House at the end of Next, Next carefully (heads-up on the card: a young officer is shot dead in a duel). Distinct from the-duel-and-other-stories (Chekhov). Never Featured; off every Ritual lane.
   "teleshov-the-duel",
+  // Mira Fri 23 Oct 2026 AM OYSTERS — Oysters (Chekhov, tr. Garnett, 1922) follows The Duel (Teleshov) at the end of Next, Next carefully (heads-up on the card: a starving child and his father begging). Never Featured; off every Ritual lane.
+  "chekhov-oysters",
 ] as const;
 
 /**

@@ -348,6 +348,7 @@ test("known origin overrides", () => {
     "bric-a-brac-and-destinies": "Germany",
     "a-gentleman-finds-a-watch": "France",
     "the-accursed-house": "France",
+    "chekhov-oysters": "Russia",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",

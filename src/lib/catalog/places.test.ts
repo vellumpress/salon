@@ -147,6 +147,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "bric-a-brac-and-destinies": { label: "Germany", region: "de" },
     "a-gentleman-finds-a-watch": { label: "Place Blanche", region: "fr" },
     "the-accursed-house": { label: "Rue de la Victoire", region: "fr" },
+    "chekhov-oysters": { label: "Moscow", region: "ru" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -890,4 +891,11 @@ test("Thu 22 Oct PM The Duel (Teleshov) prints no place: no chip, no country", (
   assert.equal(placeForId("teleshov-the-duel"), null);
   assert.equal(chipOnlyLabel("teleshov-the-duel"), null);
   assert.equal(countryFor(work), "");
+});
+
+test("Fri 23 Oct AM Oysters place is Moscow; ru; Russia", () => {
+  assert.ok(REGION_SHAPES.ru?.d, "ru shape");
+  assert.deepEqual(placeFor(shelfWork("chekhov-oysters")!), { label: "Moscow", region: "ru" });
+  assert.equal(CHIP_ONLY_PLACE["chekhov-oysters"], undefined);
+  assert.equal(countryFor(shelfWork("chekhov-oysters")!), "Russia");
 });
