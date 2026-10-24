@@ -395,6 +395,22 @@ test("the phone estimate is a third of 844 at 29.5 characters a line", () => {
   assert.equal(phoneLineMeasure("n".repeat(30)), 58);
 });
 
+test("a closer glued to a period still ends the sentence", () => {
+  for (const text of [
+    'Finished." Then she left. He sat.',
+    "Finished.” Then she left. He sat.",
+    "Finished.’ Then she left. He sat.",
+    "Wait... Then he left. He sat.",
+    "What?! He ran. She stayed.",
+    "A. B. Smith came home. He sat.",
+  ]) {
+    const slices = parts(text);
+    assert.ok(slices.length >= 2, `${text} -> ${slices.join(" | ")}`);
+    assert.match(slices[0] ?? "", /(?:Finished|Wait|What|Smith)/);
+    assert.doesNotMatch(slices[0] ?? "", /Then she left|He ran|He sat/);
+  }
+});
+
 test("Mr. Mrs. Dr. and St. do not end a sentence, in or out of quotes", () => {
   const outside = [
     "I met Mrs. Reed in town. She waved.",

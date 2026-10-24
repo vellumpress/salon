@@ -2882,8 +2882,27 @@ html.together-compose .upcoming-slot {
   position: relative;
   z-index: 35;
   touch-action: manipulation;
-  background: var(--color-paper, #f3f1eb);
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
   border: 0;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+/* The hourglass floats. The wash is the page color itself, only more
+   transparent, and it is gone before the button's edge, so no box is drawn. */
+.reader-frame:not(.together-lock) > footer .reader-glass {
+  background-color: transparent;
+  background-image: radial-gradient(
+    circle at center,
+    rgb(from var(--reader-bg, var(--color-paper, #f3f1eb)) r g b / 0.22) 0%,
+    rgb(from var(--reader-bg, var(--color-paper, #f3f1eb)) r g b / 0.05) 28%,
+    rgb(from var(--reader-bg, var(--color-paper, #f3f1eb)) r g b / 0) 46%
+  );
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 .reader-glass-done {
@@ -3686,7 +3705,6 @@ html.together-compose .chat-field {
 .reader-daylight.frame-screen,
 .reader-daylight .reading-pane,
 .reader-daylight .nav-reveal,
-.reader-daylight .reader-glass,
 .reader-daylight .sand-cue,
 .reader-daylight .veil,
 .reader-daylight .bg-paper {
@@ -3698,7 +3716,6 @@ html.together-compose .chat-field {
 .reader-daylight-motion.frame-screen,
 .reader-daylight-motion .reading-pane,
 .reader-daylight-motion .nav-reveal,
-.reader-daylight-motion .reader-glass,
 .reader-daylight-motion .sand-cue,
 .reader-daylight-motion .veil,
 .reader-daylight-motion .bg-paper,
