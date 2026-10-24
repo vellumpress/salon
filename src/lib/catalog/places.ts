@@ -61,6 +61,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "chekhov-oysters": { label: "Moscow", region: "ru" },
   // Mira Sat 24 Oct 2026 AM LUZY: "making domiciliary visits and effecting arrests in Paris night and day. It is possible they may force an entrance here" (l.5286–5288); Paris, fr; countries.ts France.
   "anatole-france-madame-de-luzy": { label: "Paris", region: "fr" },
+  // Mira Sat 24 Oct 2026 PM FOLLY: "There lived in Constantinople an old Hodja" (l.381), "the Mosque Aya Sofia" (l.383); Constantinople as printed, tr; countries.ts Turkey.
+  "better-is-the-folly-of-woman-than-the-wisdom-of-man": { label: "Constantinople", region: "tr" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

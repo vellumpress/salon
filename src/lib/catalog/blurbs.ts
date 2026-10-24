@@ -479,6 +479,8 @@ const BLURBS: Record<string, string> = {
     "A young wife at a rain-soaked summer villa goes to town to surprise her lonely, overworked husband and finds their flat locked.",
   "anatole-france-madame-de-luzy":
     "A heads-up before you start: this story is set during the Terror, as a search party hunts a man through a house with the guillotine waiting for him if he's found. As a Revolutionary search party storms her house, a cool-headed aristocrat hides her terrified neighbour in her own bed and passes off her admirer as her lover.",
+  "better-is-the-folly-of-woman-than-the-wisdom-of-man":
+    "A young scribe in Constantinople hangs out a sign boasting that men are wiser than women, until a clever lady invites him home and fools him and her husband in a single afternoon.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
