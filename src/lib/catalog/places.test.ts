@@ -149,6 +149,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "the-accursed-house": { label: "Rue de la Victoire", region: "fr" },
     "chekhov-oysters": { label: "Moscow", region: "ru" },
     "anatole-france-madame-de-luzy": { label: "Paris", region: "fr" },
+    "better-is-the-folly-of-woman-than-the-wisdom-of-man": { label: "Constantinople", region: "tr" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -929,4 +930,12 @@ test("Sat 24 Oct AM Madame de Luzy place is Paris as printed; fr; France", () =>
   assert.equal(CHIP_ONLY_PLACE["anatole-france-madame-de-luzy"], undefined);
   assert.equal(NO_PRINTED_PLACE.has("anatole-france-madame-de-luzy"), false);
   assert.equal(countryFor(shelfWork("anatole-france-madame-de-luzy")!), "France");
+});
+
+test("Sat 24 Oct PM Better Is the Folly of Woman place is Constantinople as printed; tr; Turkey", () => {
+  assert.ok(REGION_SHAPES.tr?.d, "tr shape");
+  assert.deepEqual(placeFor(shelfWork("better-is-the-folly-of-woman-than-the-wisdom-of-man")!), { label: "Constantinople", region: "tr" });
+  assert.equal(CHIP_ONLY_PLACE["better-is-the-folly-of-woman-than-the-wisdom-of-man"], undefined);
+  assert.equal(NO_PRINTED_PLACE.has("better-is-the-folly-of-woman-than-the-wisdom-of-man"), false);
+  assert.equal(countryFor(shelfWork("better-is-the-folly-of-woman-than-the-wisdom-of-man")!), "Turkey");
 });

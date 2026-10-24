@@ -350,6 +350,7 @@ test("known origin overrides", () => {
     "the-accursed-house": "France",
     "chekhov-oysters": "Russia",
     "anatole-france-madame-de-luzy": "France",
+    "better-is-the-folly-of-woman-than-the-wisdom-of-man": "Turkey",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
