@@ -56,6 +56,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "a-gentleman-finds-a-watch": { label: "Place Blanche", region: "fr" },
   // Mira Thu 22 Oct 2026 PM GABORIAU: the chip is the street as printed, "the Rue de la Victoire" (l.2367–2368, l.2474); the one "Rue de la Victoria" (l.2626) is a printer's slip kept in the text, not the chip; countries.ts France; fr shape.
   "the-accursed-house": { label: "Rue de la Victoire", region: "fr" },
+  // Mira Fri 23 Oct 2026 AM OYSTERS: "one of the more frequented streets of Moscow" (l.1348; again l.1366–1367); Moscow, ru; countries.ts Russia.
+  "chekhov-oysters": { label: "Moscow", region: "ru" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue
