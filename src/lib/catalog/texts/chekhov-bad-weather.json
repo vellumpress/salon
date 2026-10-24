@@ -1,0 +1,321 @@
+{
+  "id": "chekhov-bad-weather",
+  "title": "Bad Weather",
+  "author": "Anton Chekhov (trans. Constance Garnett)",
+  "year": "1920",
+  "note": "Project Gutenberg 13418 (Constance Garnett's translation), set to The Chorus Girl and Other Stories (Macmillan, New York, 1920), pp.269–276. Year 1920 from the title leaf (IA cu31924077101149, n8). Bound whole, one breath per printed paragraph. The title is cut; the small-capital lead word is set in sentence case. The whole text was read against the 1920 scan. The print is followed for \"the air of a man\", for Kvashin's speech closing at \"Nadyusha. . . .\" with a new paragraph at \"And Kvashin\", and for em dashes in place of double hyphens; Gutenberg's ellipses are otherwise kept.",
+  "minutes": 10,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Bad Weather",
+      "place": "Bad Weather",
+      "reentry": "Big raindrops were pattering on the dark windows. It was one of those disgusting summer holiday rains which, when they have begun, last a long time—for weeks, till the frozen holiday maker grows used to it, and sinks into complete apathy. I",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Big raindrops were pattering on the dark windows. It was one of those disgusting summer holiday rains which, when they have begun, last a long time—for weeks, till the frozen holiday maker grows used to it, and sinks into complete apathy. It was cold; there was a feeling of raw, unpleasant dampness. The mother-in-law of a lawyer, called Kvashin, and his wife, Nadyezhda Filippovna, dressed in waterproofs and shawls, were sitting over the dinner table in the dining-room. It was written on the countenance of the elder lady that she was, thank God, well-fed, well-clothed and in good health, that she had married her only daughter to a good man, and now could play her game of patience with an easy conscience; her daughter, a rather short, plump, fair young woman of twenty, with a gentle anæmic face, was reading a book with her elbows on the table; judging from her eyes she was not so much reading as thinking her own thoughts, which were not in the book. Neither of them spoke. There was the sound of the pattering rain, and from the kitchen they could hear the prolonged yawns of the cook.",
+      "_end": 7234
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Kvashin himself was not at home. On rainy days he did not come to the summer villa, but stayed in town; damp, rainy weather affected his bronchitis and prevented him from working. He was of the opinion that the sight of the grey sky and the tears of rain on the windows deprived one of energy and induced the spleen. In the town, where there was greater comfort, bad weather was scarcely noticed.",
+      "_end": 7241
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "After two games of patience, the old lady shuffled the cards and took a glance at her daughter.",
+      "_end": 7244
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "\"I have been trying with the cards whether it will be fine to-morrow, and whether our Alexey Stepanovitch will come,\" she said. \"It is five days since he was here. . . . The weather is a chastisement from God.\"",
+      "_end": 7249
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Nadyezhda Filippovna looked indifferently at her mother, got up, and began walking up and down the room.",
+      "_end": 7252
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"The barometer was rising yesterday,\" she said doubtfully, \"but they say it is falling again to-day.\"",
+      "_end": 7255
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "The old lady laid out the cards in three long rows and shook her head.",
+      "_end": 7258
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "\"Do you miss him?\" she asked, glancing at her daughter.",
+      "_end": 7260
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"Of course.\"",
+      "_end": 7262
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"I see you do. I should think so. He hasn't been here for five days. In May the utmost was two, or at most three days, and now it is serious, five days! I am not his wife, and yet I miss him. And yesterday, when I heard the barometer was rising, I ordered them to kill a chicken and prepare a carp for Alexey Stepanovitch. He likes them. Your poor father couldn't bear fish, but he likes it. He always eats it with relish.\"",
+      "_end": 7270
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"My heart aches for him,\" said the daughter. \"We are dull, but it is duller still for him, you know, mamma.\"",
+      "_end": 7273
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"I should think so! In the law-courts day in and day out, and in the empty flat at night alone like an owl.\"",
+      "_end": 7276
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"And what is so awful, mamma, he is alone there without servants; there is no one to set the samovar or bring him water. Why didn't he engage a valet for the summer months? And what use is the summer villa at all if he does not care for it? I told him there was no need to have it, but no, 'It is for the sake of your health,' he said, and what is wrong with my health? It makes me ill that he should have to put up with so much on my account.\"",
+      "_end": 7284
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Looking over her mother's shoulder, the daughter noticed a mistake in the patience, bent down to the table and began correcting it. A silence followed. Both looked at the cards and imagined how their Alexey Stepanovitch, utterly forlorn, was sitting now in the town in his gloomy, empty study and working, hungry, exhausted, yearning for his family. . . .",
+      "_end": 7291
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"Do you know what, mamma?\" said Nadyezhda Filippovna suddenly, and her eyes began to shine. \"If the weather is the same to-morrow I'll go by the first train and see him in town! Anyway, I shall find out how he is, have a look at him, and pour out his tea.\"",
+      "_end": 7296
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "And both of them began to wonder how it was that this idea, so simple and easy to carry out, had not occurred to them before. It was only half an hour in the train to the town, and then twenty minutes in a cab. They said a little more, and went off to bed in the same room, feeling more contented.",
+      "_end": 7302
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"Oho-ho-ho. . . . Lord, forgive us sinners!\" sighed the old lady when the clock in the hall struck two. \"There is no sleeping.\"",
+      "_end": 7305
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "\"You are not asleep, mamma?\" the daughter asked in a whisper. \"I keep thinking of Alyosha. I only hope he won't ruin his health in town. Goodness knows where he dines and lunches. In restaurants and taverns.\"",
+      "_end": 7310
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"I have thought of that myself,\" sighed the old lady. \"The Heavenly Mother save and preserve him. But the rain, the rain!\"",
+      "_end": 7313
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "In the morning the rain was not pattering on the panes, but the sky was still grey. The trees stood looking mournful, and at every gust of wind they scattered drops. The footprints on the muddy path, the ditches and the ruts were full of water. Nadyezhda Filippovna made up her mind to go.",
+      "_end": 7319
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"Give him my love,\" said the old lady, wrapping her daughter up. \"Tell him not to think too much about his cases. . . . And he must rest. Let him wrap his throat up when he goes out: the weather— God help us! And take him the chicken; food from home, even if cold, is better than at a restaurant.\"",
+      "_end": 7325
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "The daughter went away, saying that she would come back by an evening train or else next morning.",
+      "_end": 7328
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "But she came back long before dinner-time, when the old lady was sitting on her trunk in her bedroom and drowsily thinking what to cook for her son-in-law's supper.",
+      "_end": 7332
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "Going into the room her daughter, pale and agitated, sank on the bed without uttering a word or taking off her hat, and pressed her head into the pillow.",
+      "_end": 7336
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "\"But what is the matter,\" said the old lady in surprise, \"why back so soon? Where is Alexey Stepanovitch?\"",
+      "_end": 7339
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Nadyezhda Filippovna raised her head and gazed at her mother with dry, imploring eyes.",
+      "_end": 7342
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "\"He is deceiving us, mamma,\" she said.",
+      "_end": 7344
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "\"What are you saying? Christ be with you!\" cried the old lady in alarm, and her cap slipped off her head. \"Who is going to deceive us? Lord, have mercy on us!\"",
+      "_end": 7348
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"He is deceiving us, mamma!\" repeated her daughter, and her chin began to quiver.",
+      "_end": 7351
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "\"How do you know?\" cried the old lady, turning pale.",
+      "_end": 7353
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"Our flat is locked up. The porter tells me that Alyosha has not been home once for these five days. He is not living at home! He is not at home, not at home!\"",
+      "_end": 7357
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "She waved her hands and burst into loud weeping, uttering nothing but: \"Not at home! Not at home!\"",
+      "_end": 7360
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "She began to be hysterical.",
+      "_end": 7362
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"What's the meaning of it?\" muttered the old woman in horror. \"Why, he wrote the day before yesterday that he never leaves the flat! Where is he sleeping? Holy Saints!\"",
+      "_end": 7366
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "Nadyezhda Filippovna felt so faint that she could not take off her hat. She looked about her blankly, as though she had been drugged, and convulsively clutched at her mother's arms.",
+      "_end": 7370
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"What a person to trust: a porter!\" said the old lady, fussing round her daughter and crying. \"What a jealous girl you are! He is not going to deceive you, and how dare he? We are not just anybody. Though we are of the merchant class, yet he has no right, for you are his lawful wife! We can take proceedings! I gave twenty thousand roubles with you! You did not want for a dowry!\"",
+      "_end": 7377
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "And the old lady herself sobbed and gesticulated, and she felt faint, too, and lay down on her trunk. Neither of them noticed that patches of blue had made their appearance in the sky, that the clouds were more transparent, that the first sunbeam was cautiously gliding over the wet grass in the garden, that with renewed gaiety the sparrows were hopping about the puddles which reflected the racing clouds.",
+      "_end": 7385
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "Towards evening Kvashin arrived. Before leaving town he had gone to his flat and had learned from the porter that his wife had come in his absence.",
+      "_end": 7389
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "\"Here I am,\" he said gaily, coming into his mother-in-law's room and pretending not to notice their stern and tear-stained faces. \"Here I am! It's five days since we have seen each other!\"",
+      "_end": 7393
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "He rapidly kissed his wife's hand and his mother-in-law's, and with the air of a man delighted at having finished a difficult task, he lolled in an arm-chair.",
+      "_end": 7397
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "\"Ough!\" he said, puffing out all the air from his lungs. \"Here I have been worried to death. I have scarcely sat down. For almost five days now I have been, as it were, bivouacking. I haven't been to the flat once, would you believe it? I have been busy the whole time with the meeting of Shipunov's and Ivantchikov's creditors; I had to work in Galdeyev's office at the shop. . . . I've had nothing to eat or to drink, and slept on a bench, I was chilled through . . . . I hadn't a free minute. I hadn't even time to go to the flat. That's how I came not to be at home, Nadyusha. . . .\"",
+      "_end": 7407
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "And Kvashin, holding his sides as though his back were aching, glanced stealthily at his wife and mother-in-law to see the effect of his lie, or as he called it, diplomacy. The mother-in-law and wife were looking at each other in joyful astonishment, as though beyond all hope and expectation they had found something precious, which they had lost. . . . Their faces beamed, their eyes glowed. . . .",
+      "_end": 7413
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "\"My dear man,\" cried the old lady, jumping up, \"why am I sitting here? Tea! Tea at once! Perhaps you are hungry?\"",
+      "_end": 7416
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "\"Of course he is hungry,\" cried his wife, pulling off her head a bandage soaked in vinegar. \"Mamma, bring the wine, and the savouries. Natalya, lay the table! Oh, my goodness, nothing is ready!\"",
+      "_end": 7420
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "And both of them, frightened, happy, and bustling, ran about the room. The old lady could not look without laughing at her daughter who had slandered an innocent man, and the daughter felt ashamed. . . .",
+      "_end": 7425
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "The table was soon laid. Kvashin, who smelt of madeira and liqueurs and who could scarcely breathe from repletion, complained of being hungry, forced himself to munch and kept on talking of the meeting of Shipunov's and Ivantchikov's creditors, while his wife and mother-in-law could not take their eyes off his face, and both thought:",
+      "_end": 7432
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "\"How clever and kind he is! How handsome!\"",
+      "_end": 7434
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "\"All serene,\" thought Kvashin, as he lay down on the well-filled feather bed. \"Though they are regular tradesmen's wives, though they are Philistines, yet they have a charm of their own, and one can spend a day or two of the week here with enjoyment. . . .\"",
+      "_end": 7439
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "He wrapped himself up, got warm, and as he dozed off, he said to himself:",
+      "_end": 7442
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "\"All serene!\"",
+      "_end": 7444
+    }
+  ]
+}

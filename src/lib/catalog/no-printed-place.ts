@@ -12,4 +12,5 @@ export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
   "a-work-of-art", // Mira Thu 22 Oct 2026 PM CHEKHOV: the town is never named ("the whole town knows her"); no chip, no country
   "teleshov-the-duel", // Mira Thu 22 Oct 2026 PM TELESHOV: no place is printed (a meadow, the regiment, Pelageia Petrovna's room); no chip, no country
   "chekhov-a-chameleon", // Mira Sat 24 Oct 2026 AM CHAMELEON: the market square, the timber-yard and the General's house are unnamed; "Petersburg or Moscow" is only a comparison; no chip, no country
+  "chekhov-bad-weather", // Mira Sat 24 Oct 2026 AM BAD WEATHER: only "the town", the summer villa, the flat and the law-courts; no chip, no country
 ]);
