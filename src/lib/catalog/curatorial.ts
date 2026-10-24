@@ -1281,6 +1281,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "teleshov-the-duel",
   // Mira Fri 23 Oct 2026 AM OYSTERS — Oysters (Chekhov, tr. Garnett, 1922) follows The Duel (Teleshov) at the end of Next, Next carefully (heads-up on the card: a starving child and his father begging). Never Featured; off every Ritual lane.
   "chekhov-oysters",
+  // Mira Sat 24 Oct 2026 AM CHAMELEON — A Chameleon (Chekhov, tr. Garnett, 1922) follows Oysters at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "chekhov-a-chameleon",
 ] as const;
 
 /**

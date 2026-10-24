@@ -1,4 +1,5 @@
 import type { ShelfWork } from "./shelf";
+import { NO_PRINTED_PLACE } from "./no-printed-place.ts";
 
 /**
  * Country of origin for shelf works — literary source, not translation language
@@ -1253,7 +1254,8 @@ const CITY_LABELS = new Set([
 export function countryFor(work: Pick<ShelfWork, "id" | "author" | "language">): string {
   const fromWork = WORK_COUNTRY[work.id];
   if (fromWork) return fromWork;
-  const fromAuthor = AUTHOR_COUNTRY[work.author];
+  // A story that prints no place gets no country from its author (CoS final ruling, Sat 24 Oct 2026 CHAMELEON).
+  const fromAuthor = NO_PRINTED_PLACE.has(work.id) ? undefined : AUTHOR_COUNTRY[work.author];
   if (fromAuthor) return fromAuthor;
   const fromLang = LANG_COUNTRY[work.language];
   if (fromLang) return fromLang;

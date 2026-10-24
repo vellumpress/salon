@@ -1,4 +1,5 @@
 import { countryFor } from "./countries.ts";
+import { NO_PRINTED_PLACE } from "./no-printed-place.ts";
 import { FEATURED_CAROUSEL_IDS } from "./pitches.ts";
 import { ADAPTED_BY_SALON_IDS, NEXT_FEATURED_TRACK_IDS } from "./curatorial.ts";
 import { RITUAL_LANES } from "./rituals.ts";
@@ -571,18 +572,7 @@ export const CHIP_ONLY_PLACE: Record<string, string> = {
   "serbian-lyrics": "Serbia",
 };
 
-/**
- * Works whose text prints no place at all (Mira, POST-v3 Ritual): no chip and no country.
- * placeFor() and countryFor() stay null/empty for these ids; PlaceChip renders nothing.
- */
-export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
-  "wedding-day", // story prints no place; never invent one
-  "bambi", // Mira Mon 19 Oct 2026 AM BAMBI: the forest is never named and the front matter names no country; no chip, no country
-  "the-four-seasons", // Mira Tue 20 Oct 2026 AM EWALD: a cosmic fable set on "the earth" and an unnamed valley; Greenland and Italy appear once only as a climate aside in the Prologue; no chip
-  "the-wall-opposite", // Mira Thu 22 Oct 2026 AM WALL: the story names no setting (a court, an ancestral mansion, "the village"); America appears only as the source of an inheritance; no chip, no country
-  "a-work-of-art", // Mira Thu 22 Oct 2026 PM CHEKHOV: the town is never named ("the whole town knows her"); no chip, no country
-  "teleshov-the-duel", // Mira Thu 22 Oct 2026 PM TELESHOV: no place is printed (a meadow, the regiment, Pelageia Petrovna's room); no chip, no country
-]);
+export { NO_PRINTED_PLACE };
 
 export function chipOnlyLabel(id: string | undefined): string | null {
   return id ? (CHIP_ONLY_PLACE[id] ?? null) : null;

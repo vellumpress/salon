@@ -484,7 +484,8 @@ test("POST-v3 Ritual: NO_PRINTED_PLACE is only Wedding-Day, and it resolves no c
   // THE WALL OPPOSITE joins: the story names no setting (Thu 22 Oct 2026).
   // A WORK OF ART joins: the town is never named (Thu 22 Oct 2026 PM).
   // THE DUEL (Teleshov) joins: no place is printed (Thu 22 Oct 2026 PM).
-  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite", "a-work-of-art", "teleshov-the-duel"]);
+  // A CHAMELEON joins: no place is printed (Sat 24 Oct 2026).
+  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite", "a-work-of-art", "teleshov-the-duel", "chekhov-a-chameleon"]);
   for (const id of NO_PRINTED_PLACE) {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -898,4 +899,23 @@ test("Fri 23 Oct AM Oysters place is Moscow; ru; Russia", () => {
   assert.deepEqual(placeFor(shelfWork("chekhov-oysters")!), { label: "Moscow", region: "ru" });
   assert.equal(CHIP_ONLY_PLACE["chekhov-oysters"], undefined);
   assert.equal(countryFor(shelfWork("chekhov-oysters")!), "Russia");
+});
+
+test("Sat 24 Oct AM NO_PRINTED_PLACE skips the author lookup: A Work of Art, The Duel (Teleshov) and A Chameleon have no country", () => {
+  // CoS final ruling. Bad Weather is not in the repo yet; its own pack adds it here.
+  for (const id of ["a-work-of-art", "teleshov-the-duel", "chekhov-a-chameleon"]) {
+    const work = shelfWork(id)!;
+    assert.ok(work, id);
+    assert.equal(NO_PRINTED_PLACE.has(id), true, id);
+    assert.equal(placeFor(work), null, id);
+    assert.equal(placeForId(id), null, id);
+    assert.equal(chipOnlyLabel(id), null, id);
+    assert.equal(countryFor(work), "", id);
+  }
+  // A Chameleon's author maps to Russia; the lookup is skipped because the story prints no place.
+  assert.equal(shelfWork("chekhov-a-chameleon")!.author, "Anton Chekhov (trans. Constance Garnett)");
+  assert.equal(countryFor(shelfWork("chekhov-oysters")!), "Russia");
+  // Live behaviour change: The Four Seasons (NO_PRINTED_PLACE since Tue 20 Oct) loses Denmark from its Carl Ewald author entry.
+  assert.equal(countryFor(shelfWork("the-four-seasons")!), "");
+  assert.equal(countryFor(shelfWork("the-old-room")!), "Denmark");
 });
