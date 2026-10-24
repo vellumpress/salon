@@ -1,0 +1,201 @@
+{
+  "id": "chekhov-a-chameleon",
+  "title": "A Chameleon",
+  "author": "Anton Chekhov (trans. Constance Garnett)",
+  "year": "1922",
+  "note": "Project Gutenberg 13417 (Constance Garnett's translation), set to the first edition, The Cook's Wedding and Other Stories (Chatto & Windus, London, 1922), pp.207–214. Year 1922 from the title leaf. Bound whole, one breath per printed paragraph. The title is cut; the small-capital lead word is set in sentence case. The whole text was read against the 1922 scan. The print is followed at \"Well, I never! … come on a visit?\" (no stray single quote; closing quote restored); Gutenberg's ellipses are kept.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "A Chameleon",
+      "place": "A Chameleon",
+      "reentry": "The police superintendent Otchumyelov is walking across the market square wearing a new overcoat and carrying a parcel under his arm. A red-haired policeman strides after him with a sieve full of confiscated gooseberries in his hands. There",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "The police superintendent Otchumyelov is walking across the market square wearing a new overcoat and carrying a parcel under his arm. A red-haired policeman strides after him with a sieve full of confiscated gooseberries in his hands. There is silence all around. Not a soul in the square. . . . The open doors of the shops and taverns look out upon God's world disconsolately, like hungry mouths; there is not even a beggar near them.",
+      "_end": 4888
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "\"So you bite, you damned brute?\" Otchumyelov hears suddenly. \"Lads, don't let him go! Biting is prohibited nowadays! Hold him! ah . . . ah!\"",
+      "_end": 4892
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "There is the sound of a dog yelping. Otchumyelov looks in the direction of the sound and sees a dog, hopping on three legs and looking about her, run out of Pitchugin's timber-yard. A man in a starched cotton shirt, with his waistcoat unbuttoned, is chasing her. He runs after her, and throwing his body forward falls down and seizes the dog by her hind legs. Once more there is a yelping and a shout of \"Don't let go!\" Sleepy countenances are protruded from the shops, and soon a crowd, which seems to have sprung out of the earth, is gathered round the timber-yard.",
+      "_end": 4902
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "\"It looks like a row, your honour . . .\" says the policeman.",
+      "_end": 4904
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Otchumyelov makes a half turn to the left and strides towards the crowd.",
+      "_end": 4907
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "He sees the aforementioned man in the unbuttoned waistcoat standing close by the gate of the timber-yard, holding his right hand in the air and displaying a bleeding finger to the crowd. On his half-drunken face there is plainly written: \"I'll pay you out, you rogue!\" and indeed the very finger has the look of a flag of victory. In this man Otchumyelov recognises Hryukin, the goldsmith. The culprit who has caused the sensation, a white borzoy puppy with a sharp muzzle and a yellow patch on her back, is sitting on the ground with her fore-paws outstretched in the middle of the crowd, trembling all over. There is an expression of misery and terror in her tearful eyes.",
+      "_end": 4919
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"What's it all about?\" Otchumyelov inquires, pushing his way through the crowd. \"What are you here for? Why are you waving your finger . . . ? Who was it shouted?\"",
+      "_end": 4923
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "\"I was walking along here, not interfering with anyone, your honour,\" Hryukin begins, coughing into his fist. \"I was talking about firewood to Mitry Mitritch, when this low brute for no rhyme or reason bit my finger. . . . You must excuse me, I am a working man. . . . Mine is fine work. I must have damages, for I shan't be able to use this finger for a week, may be. . . . It's not even the law, your honour, that one should put up with it from a beast. . . . If everyone is going to be bitten, life won't be worth living. . . .\"",
+      "_end": 4932
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"H'm. Very good,\" says Otchumyelov sternly, coughing and raising his eyebrows. \"Very good. Whose dog is it? I won't let this pass! I'll teach them to let their dogs run all over the place! It's time these gentry were looked after, if they won't obey the regulations! When he's fined, the blackguard, I'll teach him what it means to keep dogs and such stray cattle! I'll give him a lesson! . . . Yeldyrin,\" cries the superintendent, addressing the policeman, \"find out whose dog this is and draw up a report! And the dog must be strangled. Without delay! It's sure to be mad. . . . Whose dog is it, I ask?\"",
+      "_end": 4943
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"I fancy it's General Zhigalov's,\" says someone in the crowd.",
+      "_end": 4945
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"General Zhigalov's, h'm. . . . Help me off with my coat, Yeldyrin . . . it's frightfully hot! It must be a sign of rain. . . . There's one thing I can't make out, how it came to bite you?\" Otchumyelov turns to Hryukin. \"Surely it couldn't reach your finger. It's a little dog, and you are a great hulking fellow! You must have scratched your finger with a nail, and then the idea struck you to get damages for it. We all know . . . your sort! I know you devils!\"",
+      "_end": 4953
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"He put a cigarette in her face, your honour, for a joke, and she had the sense to snap at him. . . . He is a nonsensical fellow, your honour!\"",
+      "_end": 4957
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"That's a lie, Squinteye! You didn't see, so why tell lies about it? His honour is a wise gentleman, and will see who is telling lies and who is telling the truth, as in God's sight. . . . And if I am lying let the court decide. It's written in the law. . . . We are all equal nowadays. My own brother is in the gendarmes . . . let me tell you. . . .\"",
+      "_end": 4964
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"Don't argue!\"",
+      "_end": 4966
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"No, that's not the General's dog,\" says the policeman, with profound conviction, \"the General hasn't got one like that. His are mostly setters.\"",
+      "_end": 4970
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "\"Do you know that for a fact?\"",
+      "_end": 4972
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"Yes, your honour.\"",
+      "_end": 4974
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "\"I know it, too. The General has valuable dogs, thoroughbred, and this is goodness knows what! No coat, no shape. . . . A low creature. And to keep a dog like that! . . . where's the sense of it. If a dog like that were to turn up in Petersburg or Moscow, do you know what would happen? They would not worry about the law, they would strangle it in a twinkling! You've been injured, Hryukin, and we can't let the matter drop. . . . We must give them a lesson! It is high time . . . . !\"",
+      "_end": 4983
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"Yet maybe it is the General's,\" says the policeman, thinking aloud. \"It's not written on its face. . . . I saw one like it the other day in his yard.\"",
+      "_end": 4987
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"It is the General's, that's certain!\" says a voice in the crowd.",
+      "_end": 4989
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"H'm, help me on with my overcoat, Yeldyrin, my lad . . . the wind's getting up. . . . I am cold. . . . You take it to the General's, and inquire there. Say I found it and sent it. And tell them not to let it out into the street. . . . It may be a valuable dog, and if every swine goes sticking a cigar in its mouth, it will soon be ruined. A dog is a delicate animal. . . . And you put your hand down, you blockhead. It's no use your displaying your fool of a finger. It's your own fault. . . .\"",
+      "_end": 4998
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "\"Here comes the General's cook, ask him. . . Hi, Prohor! Come here, my dear man! Look at this dog. . . . Is it one of yours?\"",
+      "_end": 5001
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "\"What an idea! We have never had one like that!\"",
+      "_end": 5003
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "\"There's no need to waste time asking,\" says Otchumyelov. \"It's a stray dog! There's no need to waste time talking about it. . . . Since he says it's a stray dog, a stray dog it is. . . . It must be destroyed, that's all about it.\"",
+      "_end": 5008
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "\"It is not our dog,\" Prohor goes on. \"It belongs to the General's brother, who arrived the other day. Our master does not care for hounds. But his honour is fond of them. . . .\"",
+      "_end": 5012
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "\"You don't say his Excellency's brother is here? Vladimir Ivanitch?\" inquires Otchumyelov, and his whole face beams with an ecstatic smile. \"Well, I never! And I didn't know! Has he come on a visit?\"",
+      "_end": 5016
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "\"Yes.\"",
+      "_end": 5018
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "\"Well, I never. . . . He couldn't stay away from his brother. . . . And there I didn't know! So this is his honour's dog? Delighted to hear it. . . . Take it. It's not a bad pup. . . . A lively creature. . . . Snapped at this fellow's finger! Ha-ha-ha. . . . Come, why are you shivering? Rrr . . . Rrrr. . . . The rogue's angry . . . a nice little pup.\"",
+      "_end": 5025
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "Prohor calls the dog, and walks away from the timber-yard with her. The crowd laughs at Hryukin.",
+      "_end": 5028
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "\"I'll make you smart yet!\" Otchumyelov threatens him, and wrapping himself in his greatcoat, goes on his way across the square.",
+      "_end": 5031
+    }
+  ]
+}
