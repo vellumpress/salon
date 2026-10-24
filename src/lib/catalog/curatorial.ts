@@ -1289,6 +1289,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "anatole-france-madame-de-luzy",
   // Mira Sat 24 Oct 2026 PM FOLLY — Better Is the Folly of Woman Than the Wisdom of Man (Told in the Coffee House, tr. Adler & Ramsay, 1898) follows Madame de Luzy at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "better-is-the-folly-of-woman-than-the-wisdom-of-man",
+  // Mira Sat 24 Oct 2026 PM BRAHMADAITYA — The Story of a Brahmadaitya (Folk-Tales of Bengal, tr. Day, 1883) follows Better Is the Folly at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "the-story-of-a-brahmadaitya",
 ] as const;
 
 /**

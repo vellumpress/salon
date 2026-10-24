@@ -488,7 +488,8 @@ test("POST-v3 Ritual: NO_PRINTED_PLACE is only Wedding-Day, and it resolves no c
   // THE DUEL (Teleshov) joins: no place is printed (Thu 22 Oct 2026 PM).
   // A CHAMELEON joins: no place is printed (Sat 24 Oct 2026).
   // BAD WEATHER joins: no place is printed (Sat 24 Oct 2026).
-  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite", "a-work-of-art", "teleshov-the-duel", "chekhov-a-chameleon", "chekhov-bad-weather"]);
+  // THE STORY OF A BRAHMADAITYA joins: only "the village" (Sat 24 Oct 2026 PM).
+  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite", "a-work-of-art", "teleshov-the-duel", "chekhov-a-chameleon", "chekhov-bad-weather", "the-story-of-a-brahmadaitya"]);
   for (const id of NO_PRINTED_PLACE) {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -904,9 +905,9 @@ test("Fri 23 Oct AM Oysters place is Moscow; ru; Russia", () => {
   assert.equal(countryFor(shelfWork("chekhov-oysters")!), "Russia");
 });
 
-test("Sat 24 Oct AM NO_PRINTED_PLACE skips the author lookup: A Work of Art, The Duel (Teleshov), A Chameleon and Bad Weather have no country", () => {
+test("Sat 24 Oct AM NO_PRINTED_PLACE skips the author lookup: A Work of Art, The Duel (Teleshov), A Chameleon, Bad Weather and The Story of a Brahmadaitya have no country", () => {
   // CoS final ruling.
-  for (const id of ["a-work-of-art", "teleshov-the-duel", "chekhov-a-chameleon", "chekhov-bad-weather"]) {
+  for (const id of ["a-work-of-art", "teleshov-the-duel", "chekhov-a-chameleon", "chekhov-bad-weather", "the-story-of-a-brahmadaitya"]) {
     const work = shelfWork(id)!;
     assert.ok(work, id);
     assert.equal(NO_PRINTED_PLACE.has(id), true, id);
@@ -918,6 +919,7 @@ test("Sat 24 Oct AM NO_PRINTED_PLACE skips the author lookup: A Work of Art, The
   // A Chameleon's author maps to Russia; the lookup is skipped because the story prints no place.
   assert.equal(shelfWork("chekhov-a-chameleon")!.author, "Anton Chekhov (trans. Constance Garnett)");
   assert.equal(shelfWork("chekhov-bad-weather")!.author, "Anton Chekhov (trans. Constance Garnett)");
+  assert.equal(shelfWork("the-story-of-a-brahmadaitya")!.author, "Anonymous (tr. Lal Behari Day)");
   assert.equal(countryFor(shelfWork("chekhov-oysters")!), "Russia");
   // Live behaviour change: The Four Seasons (NO_PRINTED_PLACE since Tue 20 Oct) loses Denmark from its Carl Ewald author entry.
   assert.equal(countryFor(shelfWork("the-four-seasons")!), "");
