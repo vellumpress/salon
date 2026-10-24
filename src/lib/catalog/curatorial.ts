@@ -1285,6 +1285,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "chekhov-a-chameleon",
   // Mira Sat 24 Oct 2026 AM BAD WEATHER — Bad Weather (Chekhov, tr. Garnett, 1920) follows A Chameleon at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "chekhov-bad-weather",
+  // Mira Sat 24 Oct 2026 AM LUZY — Madame de Luzy (France, tr. Chapman, 1908) follows Bad Weather at the end of Next, Next carefully (heads-up on the card: the Terror, a search party and the guillotine). Never Featured; off every Ritual lane.
+  "anatole-france-madame-de-luzy",
 ] as const;
 
 /**

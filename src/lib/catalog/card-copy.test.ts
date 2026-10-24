@@ -349,6 +349,7 @@ test("known origin overrides", () => {
     "a-gentleman-finds-a-watch": "France",
     "the-accursed-house": "France",
     "chekhov-oysters": "Russia",
+    "anatole-france-madame-de-luzy": "France",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
