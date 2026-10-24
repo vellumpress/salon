@@ -2559,7 +2559,7 @@ export function TbrReader({
                 toggleNavReveal();
               }}
               className={cn(
-                "reader-glass inline-flex h-12 w-14 shrink-0 items-center justify-center bg-paper text-ink",
+                "reader-glass inline-flex h-12 w-14 shrink-0 items-center justify-center bg-transparent text-ink",
                 sandCue && !navReveal && "reader-glass-done",
               )}
             >

@@ -311,9 +311,10 @@ test("a one-line sentence crosses a paragraph when the pair stays within four li
   assertGroupFits(groups[0]!);
 });
 
-test("a one-line sentence rebalances when the next sentence would pass four lines", () => {
+test("a sentence that fits stays whole beside a one-line sentence", () => {
   const next = sentenceOf(4, "damson").replace(/^./u, (letter) => letter.toUpperCase());
   const stacked = linesOf("Hi.") + linesOf(next);
+  assert.ok(linesOf(next) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
   assert.ok(stacked > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP, `stacked ${stacked}`);
   const breaths = [
     { index: 0, text: `Hi. ${next}` },
@@ -331,18 +332,20 @@ test("a one-line sentence rebalances when the next sentence would pass four line
     }
     assert.equal(at, breath.text.length);
   }
-  for (const group of groups) {
-    let height = 0;
-    for (const part of group.parts) {
-      const text = breaths.find((breath) => breath.index === part.index)?.text ?? "";
-      height += measure(text.slice(part.start, part.end));
-    }
-    assert.ok(height / line >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP, `window is ${(height / line).toFixed(2)} lines: ${group.sample.slice(0, 48)}`);
-    assert.ok(height / line <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP + 0.05, group.sample.slice(0, 48));
+  const intact = groups.filter((group) => group.sample.includes("Damson0"));
+  assert.equal(intact.length, 2);
+  for (const group of intact) {
+    assert.equal(group.sample.trim(), next);
+    assert.doesNotMatch(group.sample, /Hi/);
     assertGroupFits(group);
   }
-  assert.ok(groups.some((group) => group.sample.includes("Hi.")));
-  assert.ok(groups.every((group) => group.sample.trim() !== "Hi."));
+  const shorts = groups.filter((group) => group.sample.includes("Hi."));
+  assert.ok(shorts.length >= 2);
+  for (const group of shorts) {
+    assert.equal(group.sample.trim(), "Hi.");
+    const lift = liftShortWindow({ rows: 1, title: "", body: group.sample, opening: false });
+    assert.equal(lift.rows, SPOTLIGHT_MIN_LINES);
+  }
 });
 
 test("a one-line sentence moves back when the previous window has room", () => {
@@ -371,12 +374,13 @@ test("a one-line sentence moves back when the previous window has room", () => {
   for (const group of groups) assertGroupFits(group);
 });
 
-test("a one-line sentence breaks the next sentence at a comma when the previous window is full", () => {
+test("a sentence that fits is not broken to absorb the one-line sentence before it", () => {
   const prev = sentenceOf(4, "full");
   const tiny = "He was a remarkable man!";
   const head = sentenceOf(2, "angle").replace(/\.$/, "");
   const tail = sentenceOf(2, "fish").replace(/\.$/, "");
   const next = `${head}, ${tail}.`;
+  assert.ok(linesOf(next) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
   assert.ok(linesOf(prev) + linesOf(tiny) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
   assert.ok(linesOf(tiny) + linesOf(next) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
   const breaths = [
@@ -385,26 +389,43 @@ test("a one-line sentence breaks the next sentence at a comma when the previous 
     { index: 2, text: next },
   ];
   const groups = spotlightGroups(breaths, measure, limit, line);
+  assert.equal(groups.map((group) => group.sample).join(""), `${prev}${tiny}${next}`);
   const home = groups.find((group) => group.sample.includes("remarkable"));
+  assert.ok(home);
+  assert.equal(home!.sample.trim(), tiny);
+  assert.equal(home!.index, 1);
+  assert.equal(home!.endIndex, 1);
+  const following = groups.find((group) => group.sample.includes("angle0"));
+  assert.ok(following);
+  assert.match(following!.sample, /fish/);
+  assert.match(following!.sample, /\.\s*$/);
+  assert.equal(following!.sample.trim(), next);
+  const earlier = groups.find((group) => group.sample.includes("full0"));
+  assert.ok(earlier);
+  assert.equal(earlier!.sample.trim(), prev);
+  const lift = liftShortWindow({ rows: 1, title: "", body: tiny, opening: false });
+  assert.equal(lift.rows, SPOTLIGHT_MIN_LINES);
+  for (const group of groups) {
+    if (group.sample.trim() === tiny) continue;
+    assertGroupFits(group);
+  }
+});
+
+test("a one-line sentence borrows a clause only when the next sentence does not fit", () => {
+  const head = sentenceOf(3, "angle").replace(/\.$/, "");
+  const tail = sentenceOf(3, "fish").replace(/\.$/, "");
+  const next = `${head}, ${tail}.`;
+  assert.ok(linesOf(next) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  const text = `Hi. ${next}`;
+  const groups = spotlightGroups([{ index: 0, text }], measure, limit, line);
+  assert.equal(groups.map((group) => group.sample).join(""), text);
+  const home = groups.find((group) => group.sample.includes("Hi."));
   assert.ok(home);
   assert.match(home!.sample, /angle/);
   assert.match(home!.sample, /,\s*$/);
   assert.doesNotMatch(home!.sample, /fish/);
-  assert.doesNotMatch(home!.sample, /full/);
-  const parts = groups.flatMap((group) => group.parts.filter((part) => part.index === 2));
-  let at = 0;
-  for (const part of parts) {
-    assert.equal(part.start, at);
-    at = part.end;
-  }
-  assert.equal(at, next.length);
   for (const group of groups) {
-    let height = 0;
-    for (const part of group.parts) {
-      const text = breaths.find((breath) => breath.index === part.index)?.text ?? "";
-      height += measure(text.slice(part.start, part.end));
-    }
-    assert.ok(height / line >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP, group.sample.slice(0, 48));
+    assert.ok(linesOf(group.sample) >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP, group.sample.slice(0, 48));
     assertGroupFits(group);
   }
 });
@@ -570,7 +591,7 @@ test("a one-row sentence still ahead folds into the painted window", () => {
   }
 });
 
-test("a one-line chapter ending splits when the fold would pass four rows", () => {
+test("a one-line chapter ending stays whole when the fold would pass four rows", () => {
   const prev = sentenceOf(4, "full");
   const tiny = "Hi.";
   assert.ok(linesOf(prev) + linesOf(tiny) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
@@ -579,29 +600,13 @@ test("a one-line chapter ending splits when the fold would pass four rows", () =
     { index: 1, text: tiny },
   ];
   const groups = spotlightGroups(breaths, measure, limit, line);
-  assert.ok(groups.length >= 2);
-  assert.match(groups[groups.length - 1]!.sample, /Hi\./);
-  assert.equal(groups.map((group) => group.sample).join("").includes(tiny), true);
-  for (const breath of breaths) {
-    const parts = groups.flatMap((group) => group.parts.filter((part) => part.index === breath.index));
-    let at = 0;
-    for (const part of parts) {
-      assert.equal(part.start, at);
-      at = part.end;
-    }
-    assert.equal(at, breath.text.length);
-  }
-  for (const group of groups) {
-    assert.ok(
-      linesOf(group.sample) >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP,
-      `window is ${linesOf(group.sample).toFixed(2)} lines: ${group.sample.slice(0, 48)}`,
-    );
-    assert.ok(
-      linesOf(group.sample) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP + 0.02,
-      `window is ${linesOf(group.sample).toFixed(2)} lines: ${group.sample.slice(0, 48)}`,
-    );
-    assertGroupFits(group);
-  }
+  assert.equal(groups.length, 2);
+  assert.equal(groups[0]!.sample.trim(), prev);
+  assert.equal(groups[1]!.sample.trim(), tiny);
+  assert.equal(groups.map((group) => group.sample).join(""), `${prev}${tiny}`);
+  const lift = liftShortWindow({ rows: 1, title: "Chapter", body: tiny, opening: false });
+  assert.equal(lift.rows, SPOTLIGHT_MIN_LINES);
+  assertGroupFits(groups[0]!);
 });
 
 test("a sentence inside four lines stays whole", () => {
@@ -646,6 +651,34 @@ test("a comma before a conjunction beats a later comma", () => {
   assert.doesNotMatch(groups[0]!.sample, /\band\b/);
   assert.match(groups[1]!.sample, /^and\b/);
   assert.equal(groups.map((group) => group.sample).join(""), text);
+});
+
+test("a comma just under two lines beats a cut between words", () => {
+  const text =
+    "Dew had been falling, covering the twilight leaves like myriad faces damp with the perspiration of the struggle for existence, and half a mile away, standing out against the darkness of the night, a grove of white birches shimmered like teeth in a skull.";
+  assert.ok(linesOf(text) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  const groups = spotlightGroups([{ index: 0, text }], measure, limit, line);
+  assert.equal(groups.map((group) => group.sample).join(""), text);
+  for (const group of groups) {
+    assert.match(group.sample, /[,.]\s*$/);
+    assert.ok(
+      linesOf(group.sample) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP + 0.02,
+      group.sample.slice(0, 48),
+    );
+  }
+  assert.match(groups[0]!.sample, /^Dew had been falling,\s*$/);
+  assert.doesNotMatch(groups.map((group) => group.sample).join("\n"), /damp with the $/);
+});
+
+test("a sentence that fits is not broken to fill the line above it", () => {
+  const short = "Hi.";
+  const whole = sentenceOf(4, "stair").replace(/^./u, (letter) => letter.toUpperCase());
+  assert.ok(linesOf(whole) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(`${short} ${whole}`) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  const groups = spotlightGroups([{ index: 0, text: `${short} ${whole}` }], measure, limit, line);
+  assert.equal(groups.at(-1)!.sample.trim(), whole);
+  assert.equal(groups.map((group) => group.sample).join(""), `${short} ${whole}`);
+  assert.equal(groups[0]!.sample.trim(), short);
 });
 
 test("a comma beats a word boundary when no stronger pause is in the window", () => {

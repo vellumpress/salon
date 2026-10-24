@@ -343,6 +343,13 @@ export function sentenceSpans(text: string, mode: "closed" | "in-quotes" = "clos
         feedQuote(probe, text, end);
         end += 1;
       }
+      // A closer glued to the stop still ends the sentence when this slice
+      // never saw the opening mark: Finished." Then she left.
+      while (end < text.length && /["“”‘’']/u.test(text[end] ?? "")) {
+        const next = text[end + 1] ?? "";
+        if (next && !/[\s"“”‘’']/u.test(next)) break;
+        end += 1;
+      }
       if (mode === "in-quotes" || !quotesOpen(probe)) {
         const after = text.slice(end);
         const before = text.slice(start, end);
@@ -351,7 +358,13 @@ export function sentenceSpans(text: string, mode: "closed" | "in-quotes" = "clos
         if (!isAbbreviation(abbreviationToken(word), after) && follows && before.trim().length > 1) {
           while (end < text.length && /\s/.test(text[end]!)) end += 1;
           spans.push({ start, end });
-          for (let k = i; k < end; k += 1) feedQuote(state, text, k);
+          for (let k = i; k < end; k += 1) {
+            const mark = text[k] ?? "";
+            // An unmatched closer was glued to the stop. Feeding it would
+            // open a quote and hide every sentence after it.
+            if (/["“”‘’']/u.test(mark) && !quotesOpen(state)) continue;
+            feedQuote(state, text, k);
+          }
           start = end;
           i = end;
           continue;

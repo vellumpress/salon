@@ -509,6 +509,30 @@ function pickCut(
   }
   const goodPunct = punctScored.filter((scored) => scored.remnant === 0);
   if (goodPunct.length > 0) return bestCut(goodPunct).end;
+  // A comma, dash, or semicolon still beats a cut between words, even when
+  // the pause sits under two lines. The latest pause that stays inside four
+  // lines wins, so a sentence is not sliced mid-clause to look even.
+  if (punctScored.length > 0) return bestCut(punctScored).end;
+  const shortPunct: ScoredCut[] = [];
+  for (const cand of punct) {
+    if (cand.end <= from || cand.end >= absEnd) continue;
+    const piece = windowLines(breathText, from, cand.end, measure, linePx);
+    if (!(piece > 0.4) || piece > maxWindowLines()) continue;
+    if (!fits(piece, limitPx, linePx)) continue;
+    if (!rowsFit(countRows, breathText, from, cand.end)) continue;
+    const rest = windowLines(breathText, cand.end, absEnd, measure, linePx);
+    const restWords = wordCount(breathText.slice(cand.end, absEnd));
+    const remnant = rest <= maxWindowLines() && restWords > 0 && restWords < 4 ? 1 : 0;
+    shortPunct.push({
+      end: cand.end,
+      rank: cand.rank,
+      remnant,
+      balance: Math.abs(piece - maxWindowLines()),
+    });
+  }
+  const shortGood = shortPunct.filter((scored) => scored.remnant === 0);
+  if (shortGood.length > 0) return bestCut(shortGood).end;
+  if (shortPunct.length > 0) return bestCut(shortPunct).end;
   const wordEnds = local.filter((cand) => cand.rank === 3).map((cand) => cand.end);
   const wordCuts = wordCutsInWindow(breathText, from, wordEnds, measure, limitPx, linePx, countRows);
   const wordScored: ScoredCut[] = [];
@@ -556,6 +580,9 @@ function balanceTail(
   if (lastLines >= minWindowLines() && lastWords >= 4) return;
   let best: ScoredCut | null = null;
   for (const cand of cands) {
+    // A one-line tail folds at a semicolon, dash, or comma. A word boundary
+    // would put the break in the middle of a clause.
+    if (cand.rank >= 3) continue;
     if (cand.end <= prevStart || cand.end >= prevEnd) continue;
     const piece = windowLines(breathText, prevStart, cand.end, measure, linePx);
     const rest = windowLines(breathText, cand.end, lastEnd, measure, linePx);
@@ -617,29 +644,60 @@ function splitAtom(
     }
     cuts.push(chosen);
     from = chosen;
-    // A reader only needs the window on screen. Earlier cuts stay put:
-    // the tail balance only moves the last pair, and only once the sentence ends.
-    if (maxWindows && maxWindows > 0 && cuts.length >= maxWindows) {
-      const tail = windowLines(breathText, from, absEnd, measure, linePx);
-      if (fits(tail, limitPx, linePx) && rowsFit(countRows, breathText, from, absEnd)) cuts.push(absEnd);
-      break;
-    }
   }
-  if (cuts.length === 0 || (cuts[cuts.length - 1] !== absEnd && !(maxWindows && maxWindows > 0))) cuts.push(absEnd);
+  if (cuts.length === 0 || cuts[cuts.length - 1] !== absEnd) cuts.push(absEnd);
   if (cuts[cuts.length - 1] === absEnd) {
     balanceTail(cuts, breathText, absStart, cands, measure, limitPx, linePx, countRows);
   }
-  let cursor = absStart;
+  const spans: { start: number; end: number }[] = [];
+  {
+    let cursor = absStart;
+    for (const end of cuts) {
+      if (end > cursor) spans.push({ start: cursor, end });
+      cursor = end;
+    }
+  }
+  // A one-row piece folds into the clause beside it when the join stays
+  // inside four lines. The tail folds back first. A head folds forward.
+  let folded = true;
+  while (folded) {
+    folded = false;
+    for (let i = 0; i < spans.length; i += 1) {
+      const span = spans[i]!;
+      if (windowLines(breathText, span.start, span.end, measure, linePx) >= minWindowLines()) continue;
+      const prev = i > 0 ? spans[i - 1] : undefined;
+      if (
+        prev &&
+        fits(windowLines(breathText, prev.start, span.end, measure, linePx), limitPx, linePx) &&
+        rowsFit(countRows, breathText, prev.start, span.end)
+      ) {
+        spans.splice(i - 1, 2, { start: prev.start, end: span.end });
+        folded = true;
+        break;
+      }
+      const next = spans[i + 1];
+      if (
+        next &&
+        fits(windowLines(breathText, span.start, next.end, measure, linePx), limitPx, linePx) &&
+        rowsFit(countRows, breathText, span.start, next.end)
+      ) {
+        spans.splice(i, 2, { start: span.start, end: next.end });
+        folded = true;
+        break;
+      }
+    }
+  }
   const base = atom.windowBase ?? 0;
-  return cuts.map((end, window) => {
-    const start = cursor;
-    cursor = end;
+  // Folding happens on the whole sentence first, so a lazy query that only
+  // keeps the window on screen still numbers those windows the same way.
+  const shown = maxWindows && maxWindows > 0 ? spans.slice(0, maxWindows) : spans;
+  return shown.map((span, window) => {
     const piece: Atom = {
       index: atom.index,
       sentence: atom.sentence,
-      start,
-      end,
-      text: breathText.slice(start, end),
+      start: span.start,
+      end: span.end,
+      text: breathText.slice(span.start, span.end),
     };
     return groupFrom([piece], base + window, kind);
   });
@@ -942,12 +1000,13 @@ function groupBreaths(
 
   /**
    * A prefix of `next` that brings `head` into two to four rows.
-   * A semicolon, dash, or comma wins. A word boundary is only the fallback
-   * when the neighbour has no pause that leaves both sides readable.
+   * Only a semicolon, dash, or comma. A sentence that already fits in four
+   * lines stays whole, and a cut never falls between words.
    */
   function takeClause(head: readonly Atom[], next: Atom): { prefix: Atom; rest: Atom } | null {
     if (next.end - next.start < 2) return null;
     const breathText = texts.get(next.index) ?? "";
+    if (!atomIsTall(next, breathText, measure, cap, linePx, rows)) return null;
     const local = breakCandidates(next.text);
     const consider = (relEnd: number, rank: number): ScoredCut | null => {
       const abs = next.start + relEnd;
@@ -968,44 +1027,6 @@ function groupBreaths(
       if (cand.rank >= 3) continue;
       const scored = consider(cand.end, cand.rank);
       if (scored && (!best || betterCut(scored, best) < 0)) best = scored;
-    }
-    if (!best || best.remnant === 1) {
-      const ends = local.filter((cand) => cand.rank === 3).map((cand) => cand.end);
-      let left = -1;
-      let low = 0;
-      let high = ends.length - 1;
-      while (low <= high) {
-        const mid = Math.floor((low + high) / 2);
-        const abs = next.start + ends[mid]!;
-        const combined = head.concat(pieceOf(next, next.start, abs));
-        if (!tooShort(combined)) {
-          left = mid;
-          high = mid - 1;
-        } else {
-          low = mid + 1;
-        }
-      }
-      let right = -1;
-      if (left >= 0) {
-        low = left;
-        high = ends.length - 1;
-        while (low <= high) {
-          const mid = Math.floor((low + high) / 2);
-          const abs = next.start + ends[mid]!;
-          if (withinCap(head.concat(pieceOf(next, next.start, abs)))) {
-            right = mid;
-            low = mid + 1;
-          } else {
-            high = mid - 1;
-          }
-        }
-      }
-      if (left >= 0 && right >= left) {
-        for (const at of [right, left]) {
-          const scored = consider(ends[at]!, 3);
-          if (scored && (!best || betterCut(scored, best) < 0)) best = scored;
-        }
-      }
     }
     if (!best) return null;
     const rest = pieceOf(next, best.end, next.end);
@@ -1056,7 +1077,13 @@ function groupBreaths(
     for (let n = 0; n < combined.length; n += 1) {
       const atom = combined[n]!;
       if (n > 0) consider(combined.slice(0, n), combined.slice(n), 0);
-      for (const cand of breakCandidates(atom.text)) {
+      const breathText = texts.get(atom.index) ?? "";
+      // A sentence that already fits stays whole. Only a sentence past four
+      // lines may be opened at a semicolon, dash, or comma.
+      if (!atomIsTall(atom, breathText, measure, cap, linePx, rows)) continue;
+      const pauses = breakCandidates(atom.text);
+      for (const cand of pauses) {
+        if (cand.rank >= 3) continue;
         const pair = cutCombined(combined, n, atom.start + cand.end);
         if (pair) consider(pair[0], pair[1], cand.rank + 1);
       }
