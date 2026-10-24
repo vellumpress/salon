@@ -9,6 +9,7 @@ import {
   type DisplayKind,
   type DisplayMetrics,
 } from "./display-blocks.ts";
+import { isSectionBreak } from "./emphasized-text.ts";
 import { sentenceSpans } from "./sentences.ts";
 
 /**
@@ -1653,6 +1654,13 @@ export function liftShortWindow(input: {
 }): ShortWindowLift {
   if (!(input.rows > 0) || input.rows >= SPOTLIGHT_MIN_LINES) {
     return { rows: input.rows, lead: null, lines: null };
+  }
+  // A printed break (`* * *`) is one row and has no clause to fold.
+  // Splitting it on spaces hands `*` and `* *` to italics, which drop the
+  // marks and leave a focus with no height. Keep the ornament whole.
+  const ornament = input.body.trim();
+  if (isSectionBreak(ornament)) {
+    return { rows: SPOTLIGHT_MIN_LINES, lead: null, lines: [ornament, SHORT_WINDOW_MARK] };
   }
   const title = input.title.trim();
   const titleFlat = title.replace(/\s+/g, " ").trim();

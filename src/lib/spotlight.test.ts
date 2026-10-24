@@ -517,6 +517,22 @@ test("a one-word section card takes the section mark", () => {
   assert.deepEqual(lift.lines, ["Shadows", SHORT_WINDOW_MARK]);
 });
 
+test("a printed section break stays whole when it is the only line", () => {
+  for (const body of ["* * *", "* * * * *", "  ***  "]) {
+    const lift = liftShortWindow({
+      rows: 1,
+      title: "The Duel",
+      body,
+      opening: false,
+    });
+    assert.equal(lift.rows, SPOTLIGHT_MIN_LINES);
+    assert.equal(lift.lead, null);
+    assert.equal(lift.lines?.[0], body.trim());
+    assert.equal(lift.lines?.[1], SHORT_WINDOW_MARK);
+    assert.notEqual(lift.lines?.[0], "*");
+  }
+});
+
 test("a window of two rows is left as it was packed", () => {
   const lift = liftShortWindow({
     rows: 2,
