@@ -574,6 +574,9 @@ export const CHIP_ONLY_PLACE: Record<string, string> = {
   // Mira Sun 18 Oct 2026 AM SERBIAN-LYRICS: the songs are set in Serbia (Kossovo, the Morava, Novi-Sad, Mostar). There is
   // no Serbia shape; never draw one ad hoc. countryFor() is Serbia.
   "serbian-lyrics": "Serbia",
+  // Mira Sat 24 Oct 2026 PM CORMORANTS (CoS, this work only; mary-magdalen precedent): "Outside Andvær lies an island" (l.1873).
+  // There is no shape for it; never draw one ad hoc. countryFor() stays empty: "Jonas Lie (tr. R. Nisbet Bain)" is not in the Norway list, and English has no default.
+  "the-cormorants-of-andvaer": "Andvær",
 };
 
 export { NO_PRINTED_PLACE };
