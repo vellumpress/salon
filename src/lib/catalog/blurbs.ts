@@ -489,6 +489,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: this story includes the sudden drowning of a young man and his father's grief. Over a lifetime of visits to his parish priest, a proud and wealthy farmer learns what it costs to be blessed in a son.",
   "the-hedgehog-the-jackal-and-the-lion":
     "A greedy jackal with a hundred and one tricks needs a hedgehog's half a trick to escape an onion garden, then talks his way into making a lion a very painful pair of shoes.",
+  "do-not-trust-your-friend":
+    "A leopard who cannot catch his dinner learns from a medicine man that his only friend, a wily rat, has been selling his secrets, and plays dead to lure him close.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
