@@ -1293,6 +1293,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-story-of-a-brahmadaitya",
   // Mira Sat 24 Oct 2026 PM CORMORANTS — The Cormorants of Andvær (Lie, tr. Bain, 1893) follows The Story of a Brahmadaitya at the end of Next, Next carefully (heads-up on the card: the bride dies away on the wedding night). Never Featured; off every Ritual lane.
   "the-cormorants-of-andvaer",
+  // Mira Sun 25 Oct 2026 AM FATHER — The Father (Bjørnson, tr. Anderson, 1882) follows The Cormorants of Andvær at the end of Next, Next carefully (heads-up on the card: the son drowns). Never Featured; off every Ritual lane.
+  "bjornson-the-father",
 ] as const;
 
 /**

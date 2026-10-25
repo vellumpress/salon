@@ -485,6 +485,8 @@ const BLURBS: Record<string, string> = {
     "A starving Brahman takes on a haunted banyan for a landlord's bounty, and the courteous Brahman ghost who lives in it sets a hundred spirits to work making him rich.",
   "the-cormorants-of-andvaer":
     "A heads-up before you start: this ghostly love story ends on the wedding night, when the bride dies away on a lonely skerry beside her bridegroom. On a haunted island off a fishing-station, a strange dark-haired girl will marry only the suitor who dares fetch her ring from the skerries, and the shipwrecked sailor she once saved finally does.",
+  "bjornson-the-father":
+    "A heads-up before you start: this story includes the sudden drowning of a young man and his father's grief. Over a lifetime of visits to his parish priest, a proud and wealthy farmer learns what it costs to be blessed in a son.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":

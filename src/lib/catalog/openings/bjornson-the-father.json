@@ -1,0 +1,393 @@
+{
+  "id": "bjornson-the-father",
+  "title": "The Father",
+  "author": "Bjørnstjerne Bjørnson (tr. Rasmus B. Anderson)",
+  "year": "1882",
+  "note": "Opening sit: the whole story.",
+  "minutes": 5,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Father",
+      "place": "The Father",
+      "reentry": "The man whose story is here to be told was the wealthiest and most influential person in his parish; his name was Thord Överaas. He appeared in the priest's study one day, tall and earnest.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "The man whose story is here to be told was the wealthiest and most influential person in his parish; his name was Thord Överaas. He appeared in the priest's study one day, tall and earnest.",
+      "_end": 6607
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "\"I have gotten a son,\" said he, \"and I wish to present him for baptism.\"",
+      "_end": 6609
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "\"What shall his name be?\"",
+      "_end": 6611
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "\"Finn,—after my father.\"",
+      "_end": 6613
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"And the sponsors?\"",
+      "_end": 6615
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "They were mentioned, and proved to be the best men and women of Thord's relations in the parish.",
+      "_end": 6618
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"Is there anything else?\" inquired the priest, and looked up.",
+      "_end": 6620
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "The peasant hesitated a little.",
+      "_end": 6622
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"I should like very much to have him baptized by himself,\" said he, finally.",
+      "_end": 6625
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"That is to say on a week-day?\"",
+      "_end": 6627
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"Next Saturday, at twelve o'clock noon.\"",
+      "_end": 6629
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"Is there anything else?\" inquired the priest.",
+      "_end": 6631
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"There is nothing else;\" and the peasant twirled his cap, as though he were about to go.",
+      "_end": 6634
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "Then the priest rose. \"There is yet this, however,\" said he, and walking toward Thord, he took him by the hand and looked gravely into his eyes: \"God grant that the child may become a blessing to you!\"",
+      "_end": 6638
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "One day sixteen years later, Thord stood once more in the priest's study.",
+      "_end": 6641
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "\"Really, you carry your age astonishingly well, Thord,\" said the priest; for he saw no change whatever in the man.",
+      "_end": 6644
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"That is because I have no troubles,\" replied Thord.",
+      "_end": 6646
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "To this the priest said nothing, but after a while he asked: \"What is your pleasure this evening?\"",
+      "_end": 6649
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"I have come this evening about that son of mine who is to be confirmed to-morrow.\"",
+      "_end": 6652
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"He is a bright boy.\"",
+      "_end": 6654
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"I did not wish to pay the priest until I heard what number the boy would have when he takes his place in church to-morrow.\"",
+      "_end": 6657
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "\"He will stand number one.\"",
+      "_end": 6659
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "\"So I have heard; and here are ten dollars for the priest.\"",
+      "_end": 6661
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "\"Is there anything else I can do for you?\" inquired the priest, fixing his eyes on Thord.",
+      "_end": 6664
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "\"There is nothing else.\"",
+      "_end": 6666
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "Thord went out.",
+      "_end": 6668
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Eight years more rolled by, and then one day a noise was heard outside of the priest's study, for many men were approaching, and at their head was Thord, who entered first.",
+      "_end": 6672
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "The priest looked up and recognized him.",
+      "_end": 6674
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"You come well attended this evening, Thord,\" said he.",
+      "_end": 6676
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "\"I am here to request that the bans may be published for my son: he is about to marry Karen Storliden, daughter of Gudmund, who stands here beside me.\"",
+      "_end": 6680
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"Why, that is the richest girl in the parish.\"",
+      "_end": 6682
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "\"So they say,\" replied the peasant, stroking back his hair with one hand.",
+      "_end": 6685
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "The priest sat a while as if in deep thought, then entered the names in his book, without making any comments, and the men wrote their signatures underneath. Thord laid three dollars on the table.",
+      "_end": 6689
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"One is all I am to have,\" said the priest.",
+      "_end": 6691
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "\"I know that very well; but he is my only child, I want to do it handsomely.\"",
+      "_end": 6694
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "The priest took the money.",
+      "_end": 6696
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "\"This is now the third time, Thord, that you have come here on your son's account.\"",
+      "_end": 6699
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "\"But now I am through with him,\" said Thord, and folding up his pocket-book he said farewell and walked away.",
+      "_end": 6702
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "The men slowly followed him.",
+      "_end": 6704
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "A fortnight later, the father and son were rowing across the lake, one calm, still day, to Storliden to make arrangements for the wedding.",
+      "_end": 6707
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "\"This thwart is not secure,\" said the son, and stood up to straighten the seat on which he was sitting.",
+      "_end": 6710
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "At the same moment the board he was standing on slipped from under him; he threw out his arms, uttered a shriek, and fell overboard.",
+      "_end": 6713
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "\"Take hold of the oar!\" shouted the father, springing to his feet and holding out the oar.",
+      "_end": 6716
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "But when the son had made a couple of efforts he grew stiff.",
+      "_end": 6718
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "\"Wait a moment!\" cried the father, and began to row toward his son.",
+      "_end": 6720
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "Then the son rolled over on his back, gave his father one long look, and sank.",
+      "_end": 6723
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "Thord could scarcely believe it; he held the boat still, and stared at the spot where his son had gone down, as though he must surely come to the surface again. There rose some bubbles, then some more, and finally one large one that burst; and the lake lay there as smooth and bright as a mirror again.",
+      "_end": 6729
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "For three days and three nights people saw the father rowing round and round the spot, without taking either food or sleep; he was dragging the lake for the body of his son. And toward morning of the third day he found it, and carried it in his arms up over the hills to his gard.",
+      "_end": 6734
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "It might have been about a year from that day, when the priest, late one autumn evening, heard some one in the passage outside of the door, carefully trying to find the latch. The priest opened the door, and in walked a tall, thin man, with bowed form and white hair. The priest looked long at him before he recognized him. It was Thord.",
+      "_end": 6740
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "\"Are you out walking so late?\" said the priest, and stood still in front of him.",
+      "_end": 6743
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "\"Ah, yes! it is late,\" said Thord, and took a seat.",
+      "_end": 6745
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "The priest sat down also, as though waiting. A long, long silence followed. At last Thord said,—",
+      "_end": 6748
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "\"I have something with me that I should like to give to the poor; I want it to be invested as a legacy in my son's name.\"",
+      "_end": 6751
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "He rose, laid some money on the table, and sat down again. The priest counted it.",
+      "_end": 6754
+    },
+    {
+      "id": "s0-54",
+      "sceneId": "s0",
+      "text": "\"It is a great deal of money,\" said he.",
+      "_end": 6756
+    },
+    {
+      "id": "s0-55",
+      "sceneId": "s0",
+      "text": "\"It is half the price of my gard. I sold it to-day.\"",
+      "_end": 6758
+    },
+    {
+      "id": "s0-56",
+      "sceneId": "s0",
+      "text": "The priest sat long in silence. At last he asked, but gently,—",
+      "_end": 6760
+    },
+    {
+      "id": "s0-57",
+      "sceneId": "s0",
+      "text": "\"What do you propose to do now, Thord?\"",
+      "_end": 6762
+    },
+    {
+      "id": "s0-58",
+      "sceneId": "s0",
+      "text": "\"Something better.\"",
+      "_end": 6764
+    },
+    {
+      "id": "s0-59",
+      "sceneId": "s0",
+      "text": "They sat there for a while, Thord with downcast eyes, the priest with his eyes fixed on Thord. Presently the priest said, slowly and softly,—",
+      "_end": 6768
+    },
+    {
+      "id": "s0-60",
+      "sceneId": "s0",
+      "text": "\"I think your son has at last brought you a true blessing.\"",
+      "_end": 6770
+    },
+    {
+      "id": "s0-61",
+      "sceneId": "s0",
+      "text": "\"Yes, I think so myself,\" said Thord, looking up, while two big tears coursed slowly down his cheeks.",
+      "_end": 6773
+    }
+  ]
+}
