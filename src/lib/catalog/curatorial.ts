@@ -1291,6 +1291,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "better-is-the-folly-of-woman-than-the-wisdom-of-man",
   // Mira Sat 24 Oct 2026 PM BRAHMADAITYA — The Story of a Brahmadaitya (Folk-Tales of Bengal, tr. Day, 1883) follows Better Is the Folly at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "the-story-of-a-brahmadaitya",
+  // Mira Sat 24 Oct 2026 PM CORMORANTS — The Cormorants of Andvær (Lie, tr. Bain, 1893) follows The Story of a Brahmadaitya at the end of Next, Next carefully (heads-up on the card: the bride dies away on the wedding night). Never Featured; off every Ritual lane.
+  "the-cormorants-of-andvaer",
 ] as const;
 
 /**

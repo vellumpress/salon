@@ -448,7 +448,7 @@ test("POST-#225 places reuse Peru and Russia; no new region key", () => {
 });
 
 test("chip-only settings carry a label but no country key and no silhouette", () => {
-  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar", "serbian-lyrics": "Serbia" });
+  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar", "serbian-lyrics": "Serbia", "the-cormorants-of-andvaer": "Andvær" });
   const mary = shelfWork("mary-magdalen");
   assert.ok(mary);
   assert.equal(placeFor(mary!), null);
@@ -940,4 +940,19 @@ test("Sat 24 Oct PM Better Is the Folly of Woman place is Constantinople as prin
   assert.equal(CHIP_ONLY_PLACE["better-is-the-folly-of-woman-than-the-wisdom-of-man"], undefined);
   assert.equal(NO_PRINTED_PLACE.has("better-is-the-folly-of-woman-than-the-wisdom-of-man"), false);
   assert.equal(countryFor(shelfWork("better-is-the-folly-of-woman-than-the-wisdom-of-man")!), "Turkey");
+});
+
+test("Sat 24 Oct PM The Cormorants of Andvær: chip-only Andvær as printed, no silhouette, no country (CoS, this work only)", () => {
+  const work = shelfWork("the-cormorants-of-andvaer");
+  assert.ok(work);
+  assert.equal(chipOnlyLabel("the-cormorants-of-andvaer"), "Andvær");
+  assert.equal(CHIP_ONLY_PLACE["the-cormorants-of-andvaer"], "Andvær");
+  assert.equal(placeFor(work!), null);
+  assert.equal(placeForId("the-cormorants-of-andvaer"), null);
+  assert.equal(NO_PRINTED_PLACE.has("the-cormorants-of-andvaer"), false);
+  assert.equal(countryFor(work!), "");
+  // The author string is not mapped to Norway; Lie's other books keep their own mapping.
+  assert.equal(work!.author, "Jonas Lie (tr. R. Nisbet Bain)");
+  assert.equal(work!.language, "English");
+  assert.equal(countryFor(shelfWork("family-at-gilje")!), "Norway");
 });

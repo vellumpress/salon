@@ -483,6 +483,8 @@ const BLURBS: Record<string, string> = {
     "A young scribe in Constantinople hangs out a sign boasting that men are wiser than women, until a clever lady invites him home and fools him and her husband in a single afternoon.",
   "the-story-of-a-brahmadaitya":
     "A starving Brahman takes on a haunted banyan for a landlord's bounty, and the courteous Brahman ghost who lives in it sets a hundred spirits to work making him rich.",
+  "the-cormorants-of-andvaer":
+    "A heads-up before you start: this ghostly love story ends on the wedding night, when the bride dies away on a lonely skerry beside her bridegroom. On a haunted island off a fishing-station, a strange dark-haired girl will marry only the suitor who dares fetch her ring from the skerries, and the shipwrecked sailor she once saved finally does.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
