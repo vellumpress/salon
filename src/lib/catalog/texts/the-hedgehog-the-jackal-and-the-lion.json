@@ -1,0 +1,345 @@
+{
+  "id": "the-hedgehog-the-jackal-and-the-lion",
+  "title": "The Hedgehog, the Jackal, and the Lion",
+  "author": "Anonymous (tr. René Basset & Chauncey C. Starkweather)",
+  "year": "1901",
+  "note": "Project Gutenberg 10085, set to Moorish Literature, Revised Edition (The Colonial Press, London and New York), \"Popular Tales of the Berbers\", translated by René Basset and Chauncey C. Starkweather (section half-title), pp.216–219. Year 1901 from the verso, \"Copyright, 1901, By The Colonial Press\"; the title leaf is undated. No original author is printed, so the author field is \"Anonymous\", with the translators credited. Bound whole, one breath per printed paragraph (54). The heading is the scene title; Gutenberg's star separators are cut. No fixes. The whole text was read against the scan; the words match.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Hedgehog, the Jackal, and the Lion",
+      "place": "The Hedgehog, the Jackal, and the Lion",
+      "reentry": "Once upon a time the jackal went in search of the hedgehog and said to it: \"Come along. I know a garden of onions. We will fill our bellies.\"",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Once upon a time the jackal went in search of the hedgehog and said to it: \"Come along. I know a garden of onions. We will fill our bellies.\"",
+      "_end": 9150
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "\"How many tricks have you?\" asked the hedgehog.",
+      "_end": 9152
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "\"I have a hundred and one.\"",
+      "_end": 9154
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "\"And I,\" said the other, \"have one and a half.\"",
+      "_end": 9156
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "They entered the garden and ate a good deal. The hedgehog ate a little and then went to see if he could get out of the entrance or not. When he had eaten enough so that he could just barely slip out, he stopped eating. As for the jackal, he never stopped eating until he was swollen very much.",
+      "_end": 9161
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "As these things were going on, the owner of the garden arrived. The hedgehog saw him and said to his companion:",
+      "_end": 9164
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"Escape! the master is coming.\" He himself took flight. But in spite of his exhortations the jackal couldn't get through the opening. \"It is impossible,\" he said.",
+      "_end": 9168
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "\"Where are those one hundred and one tricks? They don't serve you now.\"",
+      "_end": 9170
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"May God have mercy on your parents, my uncle, lend me your half a trick.\" \"Lie down on the ground,\" answered the hedgehog. \"Play dead, shut your mouth, stretch out your paws as if you were dead, until the master of the garden shall see it and cast you into the street, and then you can run away.\"",
+      "_end": 9176
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "On that the hedgehog departed. The jackal lay down as he had told him until the owner of the garden came with his son and saw him lying as if dead. The child said to his father:",
+      "_end": 9180
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"Here is a dead jackal. He filled his belly with onions until he died.\"",
+      "_end": 9182
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "Said the man, \"Go, drag him outside.\"",
+      "_end": 9184
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"Yes,\" said the child, and he took him and stuck a thorn into him.",
+      "_end": 9186
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"Hold on, enough!\" said the jackal. \"They play with reeds, but this is not sport.\"",
+      "_end": 9189
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "The child ran to his father and said, \"The jackal cried out, 'A reed! a reed!'\"",
+      "_end": 9192
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The father went and looked at the animal, which feigned death. \"Why do you tell me that it still lives?\"",
+      "_end": 9195
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"It surely does.\"",
+      "_end": 9197
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "\"Come away and leave that carrion.\" The child stuck another thorn into the jackal, which cried, \"What, again?\" The child went to his father. \"He has just said, 'What, again?'\"",
+      "_end": 9201
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"Come now,\" said the man, and he sent away his son. The latter took the jackal by the motionless tail and cast him into the street. Immediately the animal jumped up and started to run away. The child threw after him his slippers. The jackal took them, put them on, and departed.",
+      "_end": 9206
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "On the way he met the lion, who said, \"What is that footwear, my dear?\"",
+      "_end": 9208
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"You don't know, my uncle? I am a shoemaker. My father, my uncle, my mother, my brother, my sister, and the little girl who was born at our house last night are all shoemakers.\"",
+      "_end": 9212
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "\"Won't you make me a pair of shoes?\" replied the lion.",
+      "_end": 9214
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "\"I will make you a pair. Bring me two fat camels. I will skin them and make you some good shoes.\"",
+      "_end": 9217
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "The lion went away and brought the two fat camels. \"They are thin,\" said the jackal. \"Go change them for others.\"",
+      "_end": 9220
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "He brought two thin ones.",
+      "_end": 9222
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "\"They are fat,\" said the jackal. He skinned them, cut some thorns from a palm-tree, rolled the leather around the lion's paws and fastened it there with the thorns.",
+      "_end": 9226
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "\"Ouch!\" screamed the lion.",
+      "_end": 9228
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "\"He who wants to look finely ought not to say, 'Ouch.'\"",
+      "_end": 9230
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"Enough, my dear.\"",
+      "_end": 9232
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "\"My uncle, I will give you the rest of the slippers and boots.\" He covered the lion's skin with the leather and stuck in the thorns. When he reached the knees, \"Enough, my dear,\" said the lion. \"What kind of shoes are those?\"",
+      "_end": 9237
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"Keep still, my uncle, these are slippers, boots, breeches, and clothes.\"",
+      "_end": 9239
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "When he came to the girdle the lion said, \"What kind of shoes are those?\"",
+      "_end": 9241
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "\"My uncle, they are slippers, boots, breeches, and clothing.\" In this way he reached the lion's neck. \"Stay here,\" he said, \"until the leather dries. When the sun rises look it in the face. When the moon rises, too, look it in the face.\"",
+      "_end": 9246
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"It is good,\" said the lion, and the jackal went away.",
+      "_end": 9248
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "The lion remained and did as his companion had told him. But his feet began to swell, the leather became hard, and he could not get up. When the jackal came back he asked him, \"How are you, my uncle?\"",
+      "_end": 9252
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"How am I? Wretch, son of a wretch, you have deceived me. Go, go; I will recommend you to my children.\"",
+      "_end": 9255
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "The jackal came near and the lion seized him by the tail. The jackal fled, leaving his tail in the lion's mouth.",
+      "_end": 9258
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "\"Now,\" said the lion, \"you have no tail. When my feet get well I will catch you and eat you up.\"",
+      "_end": 9261
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "The jackal called his cousins and said to them, \"Let us go and fill our bellies with onions in a garden that I know.\" They went with him. Arriving he tied their tails to the branches of a young palm-tree, and twisted them well. \"Who has tied our tails like this?\" they asked. \"No one will come before you have filled your bellies. If you see the master of the garden approach, struggle and fly. You see that I, too, am bound as you are.\" But he had tied an onion-stalk on himself. When the owner of the garden arrived, the jackal saw him coming. They struggled, their tails were all torn out, and stayed behind with the branches to which they were fastened. When the jackal saw the man, he cut the onion stem and escaped the first of all.",
+      "_end": 9273
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "As for the lion, when his feet were cured, he went to take a walk and met his friend the jackal. He seized him and said, \"Now I've got you, son of a wretch.\"",
+      "_end": 9277
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "The other answered, \"What have I done, my uncle?\"",
+      "_end": 9279
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "\"You stuck thorns in my flesh. You said to me, 'I will make you some shoes.' Now what shall I do to you?\"",
+      "_end": 9282
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "\"It was not I,\" said the jackal.",
+      "_end": 9284
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "\"It was you, and the proof is that you have your tail cut off.\"",
+      "_end": 9286
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "\"But all my cousins are without tails, like me.\"",
+      "_end": 9288
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "\"You lie, joker.\"",
+      "_end": 9290
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "\"Let me call them and you will see.\"",
+      "_end": 9292
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "\"Call them.\"",
+      "_end": 9294
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "At his call the jackals ran up, all without tails.",
+      "_end": 9296
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "\"Which of you is a shoemaker?\" asked the lion.",
+      "_end": 9298
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "\"All of us,\" they answered.",
+      "_end": 9300
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "He said to them: \"I am going to bring you some red pepper. You shall eat of it, and the one who says, 'Ouch!' that will be the one I'm looking for.\"",
+      "_end": 9303
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "\"Go and get it.\"",
+      "_end": 9305
+    },
+    {
+      "id": "s0-53",
+      "sceneId": "s0",
+      "text": "He brought them some red pepper, and they were going to eat it when the first jackal made a noise with his shoes, but he said to the lion, \"My uncle, I did not say, 'Ouch!'\" The lion sent them away, and they went about their business.",
+      "_end": 9310
+    }
+  ]
+}

@@ -1295,6 +1295,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-cormorants-of-andvaer",
   // Mira Sun 25 Oct 2026 AM FATHER — The Father (Bjørnson, tr. Anderson, 1882) follows The Cormorants of Andvær at the end of Next, Next carefully (heads-up on the card: the son drowns). Never Featured; off every Ritual lane.
   "bjornson-the-father",
+  // Mira Sun 25 Oct 2026 PM HEDGEHOG — The Hedgehog, the Jackal, and the Lion (Berber tale, tr. Basset & Starkweather, 1901) follows The Father (Bjørnson) at the end of Next, plain Next. Never Featured; off every Ritual lane.
+  "the-hedgehog-the-jackal-and-the-lion",
 ] as const;
 
 /**

@@ -15,4 +15,5 @@ export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
   "chekhov-bad-weather", // Mira Sat 24 Oct 2026 AM BAD WEATHER: only "the town", the summer villa, the flat and the law-courts; no chip, no country
   "the-story-of-a-brahmadaitya", // Mira Sat 24 Oct 2026 PM BRAHMADAITYA: only "the village", its outskirts, the haunted banyan and the vakula-tree; no chip, no country
   "bjornson-the-father", // Mira Sun 25 Oct 2026 AM FATHER: only "his parish", the priest's study, the lake and the gards (Överaas, Storliden); no town or country is printed; no chip, no country
+  "the-hedgehog-the-jackal-and-the-lion", // Mira Sun 25 Oct 2026 PM HEDGEHOG: only "a garden of onions", "the street" and "a young palm-tree"; no town, region or people is named; no chip, no country
 ]);
