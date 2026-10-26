@@ -569,6 +569,12 @@ async function step(
       }
       if (!shot) throw new Error(`${label}: no tappable ${direction < 0 ? "back" : "forward"} band`);
       if (mode === "screen") await page.touchscreen.tap(shot.x, shot.y);
+      // The passage key commits in a microtask (measured under 70ms on WebKit,
+      // including while the CPU is saturated). The tap is not dropped.
+      // Playwright's default poll waits for a paint frame, and WebKit can
+      // withhold that frame for more than four seconds when this suite is
+      // busy — the key is already the next passage. A reader never waits on
+      // that poll. A short timer observes the committed passage instead.
       await page.waitForFunction(
         (want) => {
           const frame = document.querySelector(".reader-frame");
@@ -580,7 +586,7 @@ async function step(
           );
         },
         predicted,
-        { timeout: 4000 },
+        { timeout: 4000, polling: 50 },
       );
       return shot;
     } catch (error) {
@@ -698,7 +704,9 @@ async function commitViewport(page: Page, width: number, height: number) {
       );
     },
     String(height),
-    { timeout: 4000 },
+    // Same frame-poll stall as the passage wait above. The column commits
+    // without waiting for the next paint.
+    { timeout: 4000, polling: 50 },
   );
 }
 async function mix(
