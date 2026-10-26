@@ -10,7 +10,9 @@ import { readableIds, shelfWork } from "./shelf.ts";
 /**
  * Every lit window at 390×844, for every readable book.
  * Imported pages use the same packer; this is the catalog gate.
- * A fifth painted row fails. A window under two rows fails too.
+ * A fifth or sixth painted row fails, unless the window is one whole sentence
+ * or one clause with no earlier semicolon, dash, or comma. A seventh row fails.
+ * A window under two rows fails too.
  * A lone one-row window folds into the window before it, inside the scene.
  * Sit and ritual stops stay in force: the fold does not cross them.
  * A window that still has no earlier window in the scene takes its scene
@@ -173,7 +175,29 @@ async function countOne(
                   titleRows: (title) => kit.spot.paintFocusRows(title, 0, title.length, column, input.kind),
                 }).rows
               : rows;
-          if (shown > 4) {
+          const breathText = group.parts.length === 1 && part0
+            ? (scene.find((breath) => breath.index === part0.index)?.text ?? "")
+            : "";
+          const whole = breathText ? kit.spot.groupIsOneSentence(group, breathText) : false;
+          // A clause of five or six rows is the piece between pauses. An earlier
+          // pause would have painted fewer rows, and that window is still too tall.
+          let closedClause = false;
+          if (!whole && breathText && part0 && group.endCursor === group.cursor + 1 && rows > 4 && rows <= 6) {
+            closedClause = true;
+            for (let i = part0.start; i < part0.end; i += 1) {
+              const ch = breathText[i] ?? "";
+              if (ch !== "," && ch !== ";" && ch !== ":" && ch !== "\u2014" && ch !== "\u2013" && !(ch === "-" && breathText[i + 1] === "-")) continue;
+              let end = i + 1;
+              if (ch === "-") while (breathText[end] === "-") end += 1;
+              const at = kit.spot.paintFocusRows(breathText, part0.start, end, column, input.kind);
+              if (at > 0 && at < rows) {
+                closedClause = false;
+                break;
+              }
+            }
+          }
+          const rowCap = whole || closedClause ? 6 : 4;
+          if (shown > rowCap) {
             over += 1;
             if (failures.length < 8) {
               failures.push({
