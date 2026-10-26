@@ -103,7 +103,10 @@ function stressPdf(): Uint8Array {
   const lines = [
     "Alpha ends here.",
     "Beta ends here.",
-    ...Array.from({ length: 22 }, () => "The river kept its slow green course under the dark trees"),
+    ...Array.from(
+      { length: 22 },
+      (_, i) => `The river kept its slow green course under the dark trees${i % 2 === 1 ? ";" : ""}`,
+    ),
     "until the long sentence of that afternoon finally ended.",
     "Gamma ends here.",
     "Delta ends here.",
