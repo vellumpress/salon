@@ -39,17 +39,13 @@ export function columnMetricsNow(node: HTMLElement | null, base: DisplayMetrics 
 function faceSettled(style: CSSStyleDeclaration): boolean {
   const fonts = document.fonts;
   if (!fonts) return true;
-  // WebKit's check() is true while the webfont is still loading and the
-  // fallback is what is on screen. Centering that face, then letting the
-  // real one arrive, throws a split sentence off the anchor.
-  if (fonts.status !== "loaded") return false;
   try {
     const spec = `${style.fontWeight || "400"} ${style.fontSize || "16px"} ${style.fontFamily || "serif"}`;
     if (fonts.check(spec)) return true;
   } catch {
     /* the family string can be a list the checker rejects */
   }
-  return true;
+  return fonts.status === "loaded";
 }
 
 function readMetrics(node: HTMLElement, tighten: number): DisplayMetrics | null {
