@@ -11,7 +11,9 @@ import { readableIds, shelfWork } from "./shelf.ts";
  * Every lit window at 390×844, for every readable book.
  * Imported pages use the same packer; this is the catalog gate.
  * A fifth or sixth painted row fails, unless the window is one whole sentence
- * or one clause with no earlier semicolon, dash, or comma. A seventh row fails.
+ * or one clause with no earlier semicolon, dash, or comma. A taller window
+ * fails too, unless that same window has no earlier pause: a sentence longer
+ * than six lines breaks only at a pause, and a pause-free stretch stays whole.
  * A window under two rows fails too.
  * A lone one-row window folds into the window before it, inside the scene.
  * Sit and ritual stops stay in force: the fold does not cross them.
@@ -179,11 +181,14 @@ async function countOne(
             ? (scene.find((breath) => breath.index === part0.index)?.text ?? "")
             : "";
           const whole = breathText ? kit.spot.groupIsOneSentence(group, breathText) : false;
-          // A clause of five or six rows is the piece between pauses. An earlier
-          // pause would have painted fewer rows, and that window is still too tall.
-          let closedClause = false;
-          if (!whole && breathText && part0 && group.endCursor === group.cursor + 1 && rows > 4 && rows <= 6) {
-            closedClause = true;
+          // A pause that paints fewer rows is a place the sentence should have
+          // broken. A stretch with no such pause stays one window, even past
+          // six rows: cutting it would be mid-thought.
+          const oneClause = Boolean(
+            breathText && part0 && group.parts.length === 1 && group.endCursor === group.cursor + 1,
+          );
+          let shorterPause = false;
+          if (oneClause && part0 && shown > (whole ? 6 : 4)) {
             for (let i = part0.start; i < part0.end; i += 1) {
               const ch = breathText[i] ?? "";
               if (ch !== "," && ch !== ";" && ch !== ":" && ch !== "\u2014" && ch !== "\u2013" && !(ch === "-" && breathText[i + 1] === "-")) continue;
@@ -191,12 +196,12 @@ async function countOne(
               if (ch === "-") while (breathText[end] === "-") end += 1;
               const at = kit.spot.paintFocusRows(breathText, part0.start, end, column, input.kind);
               if (at > 0 && at < rows) {
-                closedClause = false;
+                shorterPause = true;
                 break;
               }
             }
           }
-          const rowCap = whole || closedClause ? 6 : 4;
+          const rowCap = whole && shown <= 6 ? 6 : oneClause && !shorterPause && shown > 4 ? shown : 4;
           if (shown > rowCap) {
             over += 1;
             if (failures.length < 8) {
