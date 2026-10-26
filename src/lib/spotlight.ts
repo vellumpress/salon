@@ -688,6 +688,48 @@ function splitAtom(
       }
     }
   }
+  // A one-row piece that cannot fold without passing four lines is recut
+  // with its neighbour at a semicolon, dash, or comma, three-and-two or
+  // two-and-two. The recut runs on the whole sentence, so a lazy query
+  // numbers the windows the same way.
+  let recut = true;
+  while (recut) {
+    recut = false;
+    for (let i = 0; i < spans.length; i += 1) {
+      const span = spans[i]!;
+      if (windowLines(breathText, span.start, span.end, measure, linePx) >= minWindowLines()) continue;
+      const neighborAt = i > 0 ? i - 1 : i + 1 < spans.length ? i + 1 : -1;
+      if (neighborAt < 0) break;
+      const neighbor = spans[neighborAt]!;
+      const from = Math.min(span.start, neighbor.start);
+      const to = Math.max(span.end, neighbor.end);
+      let best: { end: number; plan: number; rank: number } | null = null;
+      for (const cand of cands) {
+        if (cand.rank >= 3) continue;
+        if (cand.end <= from || cand.end >= to) continue;
+        const leftLines = windowLines(breathText, from, cand.end, measure, linePx);
+        const rightLines = windowLines(breathText, cand.end, to, measure, linePx);
+        if (leftLines < minWindowLines() || rightLines < minWindowLines()) continue;
+        if (leftLines > maxWindowLines() || rightLines > maxWindowLines()) continue;
+        if (!fits(leftLines, limitPx, linePx) || !fits(rightLines, limitPx, linePx)) continue;
+        if (!rowsFit(countRows, breathText, from, cand.end) || !rowsFit(countRows, breathText, cand.end, to)) continue;
+        let plan = 5;
+        if (leftLines >= 2.5 && leftLines < 3.6 && rightLines < 2.6) plan = 0;
+        else if (leftLines < 2.6 && rightLines < 2.6) plan = 1;
+        else if (leftLines < 2.6 && rightLines >= 2.5 && rightLines < 3.6) plan = 2;
+        if (!best || plan < best.plan || (plan === best.plan && cand.rank < best.rank)) {
+          best = { end: cand.end, plan, rank: cand.rank };
+        }
+      }
+      if (!best) continue;
+      const left = { start: from, end: best.end };
+      const right = { start: best.end, end: to };
+      const at = Math.min(i, neighborAt);
+      spans.splice(at, 2, left, right);
+      recut = true;
+      break;
+    }
+  }
   const base = atom.windowBase ?? 0;
   // Folding happens on the whole sentence first, so a lazy query that only
   // keeps the window on screen still numbers those windows the same way.
@@ -1078,10 +1120,9 @@ function groupBreaths(
     for (let n = 0; n < combined.length; n += 1) {
       const atom = combined[n]!;
       if (n > 0) consider(combined.slice(0, n), combined.slice(n), 0);
-      const breathText = texts.get(atom.index) ?? "";
-      // A sentence that already fits stays whole. Only a sentence past four
-      // lines may be opened at a semicolon, dash, or comma.
-      if (!atomIsTall(atom, breathText, measure, cap, linePx, rows)) continue;
+      // The pair already passed four rows. A sentence that fit on its own
+      // may open here, at a semicolon, dash, or comma. A word boundary stays
+      // closed: the break is never mid-thought.
       const pauses = breakCandidates(atom.text);
       for (const cand of pauses) {
         if (cand.rank >= 3) continue;
@@ -1106,12 +1147,11 @@ function groupBreaths(
     const prev = packed[packed.length - 1];
     if (!prev || !canAttach(prev, slice)) return false;
     const moved = prev.concat(slice);
-    if (withinCap(moved) && !tooShort(moved)) {
+    if (withinCap(moved)) {
       packed[packed.length - 1] = moved;
       groups[groups.length - 1] = groupFrom(moved, groups[groups.length - 1]!.window, kind);
       return true;
     }
-    if (withinCap(moved)) return false;
     const split = balanceSplit(moved);
     if (!split) return false;
     const window = groups[groups.length - 1]!.window;
@@ -1546,8 +1586,17 @@ export function countFocusRows(
   if (!(end > start) || !text) return 0;
   const slice = text.slice(start, end);
   const alone = lineBoxes(slice, metrics);
-  // A one-line continuation is already charged two rows. It cannot paint a fifth.
-  if (alone <= 1 && start > 0) return Math.min(SPOTLIGHT_MAX_LINES, alone + 2);
+  // A continuation measured on its own can hide the row it shares with the
+  // line above. Read the painted rows when the page can. The two-row charge
+  // is only the fallback for a count with no page, and it still cannot
+  // reach a fifth row.
+  if (alone <= 1 && start > 0) {
+    if (typeof document !== "undefined") {
+      const laid = laidFocus(text, start, end, metrics, kind);
+      if (laid.parts.length > 0) return paintedRows(laid.parts, metrics);
+    }
+    return Math.min(SPOTLIGHT_MAX_LINES, alone + 2);
+  }
   const laid = laidFocus(text, start, end, metrics, kind);
   if (laid.parts.length === 0) return alone;
   // The line after the focus, or a block break under a four-row estimate, can
