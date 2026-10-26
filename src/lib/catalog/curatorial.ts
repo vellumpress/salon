@@ -1303,6 +1303,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "when-the-bright-nights-were",
   // Mira Mon 26 Oct 2026 PM SAILOR — The Shipwrecked Sailor (Egyptian tale, tr. Petrie, 1895) follows When the Bright Nights Were at the end of Next, plain Next. Never Featured; off every Ritual lane.
   "the-shipwrecked-sailor",
+  // Mira Mon 26 Oct 2026 PM NEIGHBOURS — The Story of the Two Neighbours (Folk Tales from Tibet, tr. O'Connor, 1906) follows The Shipwrecked Sailor at the end of Next, plain Next. Never Featured; off every Ritual lane.
+  "the-story-of-the-two-neighbours",
 ] as const;
 
 /**
