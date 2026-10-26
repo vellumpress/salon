@@ -448,7 +448,7 @@ test("POST-#225 places reuse Peru and Russia; no new region key", () => {
 });
 
 test("chip-only settings carry a label but no country key and no silhouette", () => {
-  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar", "serbian-lyrics": "Serbia", "the-cormorants-of-andvaer": "Andvær" });
+  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar", "serbian-lyrics": "Serbia", "the-cormorants-of-andvaer": "Andvær", "when-the-bright-nights-were": "Filnbaum Forest" });
   const mary = shelfWork("mary-magdalen");
   assert.ok(mary);
   assert.equal(placeFor(mary!), null);
@@ -967,4 +967,18 @@ test("Sat 24 Oct PM The Cormorants of Andvær: chip-only Andvær as printed, no 
   assert.equal(work!.author, "Jonas Lie (tr. R. Nisbet Bain)");
   assert.equal(work!.language, "English");
   assert.equal(countryFor(shelfWork("family-at-gilje")!), "Norway");
+});
+
+test("Mon 26 Oct AM When the Bright Nights Were: chip-only Filnbaum Forest as printed, no silhouette, no country (Cormorants pattern)", () => {
+  const work = shelfWork("when-the-bright-nights-were");
+  assert.ok(work);
+  assert.equal(chipOnlyLabel("when-the-bright-nights-were"), "Filnbaum Forest");
+  assert.equal(CHIP_ONLY_PLACE["when-the-bright-nights-were"], "Filnbaum Forest");
+  assert.equal(placeFor(work!), null);
+  assert.equal(placeForId("when-the-bright-nights-were"), null);
+  assert.equal(NO_PRINTED_PLACE.has("when-the-bright-nights-were"), false);
+  assert.equal(countryFor(work!), "");
+  // No Rosegger string is in AUTHOR_COUNTRY.
+  assert.equal(work!.author, "Peter Rosegger (tr. Edna Worthley Underwood)");
+  assert.equal(work!.language, "English");
 });
