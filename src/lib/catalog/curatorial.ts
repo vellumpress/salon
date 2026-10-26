@@ -1301,6 +1301,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "do-not-trust-your-friend",
   // Mira Mon 26 Oct 2026 AM BRIGHT NIGHTS — When the Bright Nights Were (Rosegger, tr. Underwood, 1921) follows Do Not Trust Your Friend at the end of Next, plain Next. Never Featured; off every Ritual lane.
   "when-the-bright-nights-were",
+  // Mira Mon 26 Oct 2026 PM SAILOR — The Shipwrecked Sailor (Egyptian tale, tr. Petrie, 1895) follows When the Bright Nights Were at the end of Next, plain Next. Never Featured; off every Ritual lane.
+  "the-shipwrecked-sailor",
 ] as const;
 
 /**
