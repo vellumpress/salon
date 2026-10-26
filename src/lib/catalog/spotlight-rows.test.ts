@@ -192,6 +192,8 @@ async function countOne(
             for (let i = part0.start; i < part0.end; i += 1) {
               const ch = breathText[i] ?? "";
               if (ch !== "," && ch !== ";" && ch !== ":" && ch !== "\u2014" && ch !== "\u2013" && !(ch === "-" && breathText[i + 1] === "-")) continue;
+              // 11:15 is a time, not a pause. The packer skips that colon too.
+              if (ch === ":" && /\d/u.test(breathText[i - 1] ?? "") && /\d/u.test(breathText[i + 1] ?? "")) continue;
               let end = i + 1;
               if (ch === "-") while (breathText[end] === "-") end += 1;
               const at = kit.spot.paintFocusRows(breathText, part0.start, end, column, input.kind);
