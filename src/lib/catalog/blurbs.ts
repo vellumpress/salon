@@ -493,6 +493,8 @@ const BLURBS: Record<string, string> = {
     "A leopard who cannot catch his dinner learns from a medicine man that his only friend, a wily rat, has been selling his secrets, and plays dead to lure him close.",
   "when-the-bright-nights-were":
     "In a summer of drought a fire takes the Filnbaum Forest and climbs toward a boy's mountain home, and what it leaves behind feeds his people for thirty years.",
+  "the-shipwrecked-sailor":
+    "Home from a voyage, a sailor tells his lord how a wave cast him alone on an island of plenty, and how the great golden serpent who ruled it sent him home laden with perfumes.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
