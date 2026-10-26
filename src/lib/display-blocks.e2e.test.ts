@@ -840,7 +840,8 @@ test(
       { name: "chromium", open: () => chromium.launch({ args: ["--no-sandbox"] }) },
     ];
     try {
-      for (const engine of engines) {
+      engineLoop: for (const engine of engines) {
+        for (let attempt = 0; attempt < 2; attempt += 1) {
         let browser: Browser;
         try {
           browser = await engine.open();
@@ -852,12 +853,13 @@ test(
               message,
             )
           ) {
-            continue;
+            continue engineLoop;
           }
           throw error;
         }
         if (engine.name === "webkit") sawWebKit = true;
         let releaseFonts = () => {};
+        let retry = false;
         try {
           const context = await browser.newContext({
             viewport: PHONE_VIEW,
@@ -1049,9 +1051,16 @@ test(
           );
           assert.match(bookBreath.text, /landlord/i);
           assert.ok(bookBreath.differ > 40, `book breath painted only ${bookBreath.differ} pixels`);
+        } catch (error) {
+          const message = error instanceof Error ? error.message : String(error);
+          // A second WebKit in the smoke suite can crash this browser while fonts are withheld.
+          retry = attempt === 0 && /internal error|has been closed/.test(message);
+          if (!retry) throw error;
         } finally {
           releaseFonts();
-          await browser.close();
+          await browser.close().catch(() => {});
+        }
+        if (!retry) break;
         }
       }
     } finally {
