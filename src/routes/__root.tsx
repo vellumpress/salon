@@ -19,6 +19,7 @@ import {
 } from "@/lib/status-bar-color";
 import { watchShellUpdates } from "@/lib/shell-update";
 import { attachVisualViewport } from "@/lib/vvh";
+import { FACE_HOLD_CSS, whenReaderFacesReady } from "@/lib/reader-faces";
 import appCss from "../styles.css?url";
 
 function VisualViewport() {
@@ -34,6 +35,28 @@ function BootMark() {
   useEffect(() => {
     document.documentElement.setAttribute("data-boot", "ready");
     watchShellUpdates();
+  }, []);
+  return null;
+}
+
+/**
+ * Nothing is readable until Outfit and Cormorant have actually loaded.
+ * The hold is paint-only: it does not change face readiness or grouping.
+ */
+function FaceHold() {
+  useEffect(() => {
+    let live = true;
+    void whenReaderFacesReady()
+      .then(() => {
+        if (!live) return;
+        document.documentElement.dataset.faces = "ready";
+      })
+      .catch(() => {
+        /* a missing face stays blank; a fallback glyph is never the substitute */
+      });
+    return () => {
+      live = false;
+    };
   }, []);
   return null;
 }
@@ -144,12 +167,14 @@ export const Route = createRootRoute({
   component: () => (
     <html lang="en" className="antialiased" suppressHydrationWarning>
       <head>
+        <style>{FACE_HOLD_CSS}</style>
         <HeadContent />
       </head>
       <body>
         <PreviewHostBridge />
         <StatusBarSync />
         <BootMark />
+        <FaceHold />
         <VisualViewport />
         <DeferredRemoteSync />
         <OfflineMark />

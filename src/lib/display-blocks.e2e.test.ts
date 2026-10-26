@@ -737,3 +737,326 @@ test(
     }
   },
 );
+
+type GlyphSpot = {
+  selector: string;
+  missing: boolean;
+  differ: number;
+  sampled: number;
+  fill: string;
+  color: string;
+  text: string;
+};
+
+function fillIsClear(value: string) {
+  return value === "transparent" || /rgba\(\s*0\s*,\s*0\s*,\s*0\s*,\s*0\s*\)/.test(value);
+}
+
+/** Pixels in each box that differ from that element's own background. */
+async function glyphSpots(page: Page, selectors: string[]): Promise<GlyphSpot[]> {
+  // Playwright otherwise waits for document.fonts.ready, which never settles while the files are withheld.
+  process.env.PW_TEST_SCREENSHOT_NO_FONTS_READY = "1";
+  const shot = await page.screenshot({ type: "png", scale: "css" });
+  return page.evaluate(
+    async ({ href, selectors: wanted }) => {
+      const img = new Image();
+      img.src = href;
+      await img.decode();
+      const canvas = document.createElement("canvas");
+      canvas.width = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+      const ctx = canvas.getContext("2d", { willReadFrequently: true });
+      if (!ctx) return [];
+      ctx.drawImage(img, 0, 0);
+      const scale = img.naturalWidth / (window.visualViewport?.width || window.innerWidth);
+      const parse = (value: string) => {
+        const match = value.match(
+          /rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)(?:\s*,\s*([\d.]+))?\s*\)/,
+        );
+        if (!match) return null;
+        return [
+          Number(match[1]),
+          Number(match[2]),
+          Number(match[3]),
+          match[4] === undefined ? 1 : Number(match[4]),
+        ] as const;
+      };
+      const backgroundOf = (el: Element) => {
+        let node: Element | null = el;
+        while (node) {
+          const parsed = parse(getComputedStyle(node).backgroundColor);
+          if (parsed && parsed[3] > 0.5) return parsed;
+          node = node.parentElement;
+        }
+        return [243, 241, 235, 1] as const;
+      };
+      return wanted.map((selector) => {
+        const el = document.querySelector(selector);
+        if (!el) {
+          return { selector, missing: true, differ: 0, sampled: 0, fill: "", color: "", text: "" };
+        }
+        const style = getComputedStyle(el);
+        const rect = el.getBoundingClientRect();
+        const inset = 1;
+        const x0 = Math.max(0, Math.floor((rect.x + inset) * scale));
+        const y0 = Math.max(0, Math.floor((rect.y + inset) * scale));
+        const x1 = Math.min(canvas.width, Math.ceil((rect.right - inset) * scale));
+        const y1 = Math.min(canvas.height, Math.ceil((rect.bottom - inset) * scale));
+        const bg = backgroundOf(el);
+        let differ = 0;
+        let sampled = 0;
+        if (x1 > x0 && y1 > y0) {
+          const data = ctx.getImageData(x0, y0, x1 - x0, y1 - y0).data;
+          for (let i = 0; i < data.length; i += 4) {
+            sampled += 1;
+            const dist = Math.hypot(data[i]! - bg[0], data[i + 1]! - bg[1], data[i + 2]! - bg[2]);
+            if (dist > 28) differ += 1;
+          }
+        }
+        return {
+          selector,
+          missing: false,
+          differ,
+          sampled,
+          fill: style.getPropertyValue("-webkit-text-fill-color"),
+          color: style.color,
+          text: (el.textContent ?? "").replace(/\s+/g, " ").trim().slice(0, 80),
+        };
+      });
+    },
+    { href: `data:image/png;base64,${shot.toString("base64")}`, selectors },
+  );
+}
+
+test(
+  "WebKit: withheld webfonts paint no fallback glyphs at 390x844",
+  { timeout: 180_000 },
+  async (t) => {
+    process.env.PW_TEST_SCREENSHOT_NO_FONTS_READY = "1";
+    const stop = await ensureReaderServer();
+    let sawWebKit = false;
+    const engines: { name: "webkit" | "chromium"; open: () => Promise<Browser> }[] = [
+      { name: "webkit", open: () => webkit.launch() },
+      { name: "chromium", open: () => chromium.launch({ args: ["--no-sandbox"] }) },
+    ];
+    try {
+      for (const engine of engines) {
+        let browser: Browser;
+        try {
+          browser = await engine.open();
+        } catch (error) {
+          const message = error instanceof Error ? error.message : String(error);
+          if (
+            engine.name === "webkit" &&
+            /Executable doesn't exist|browserType\.launch|missing dependencies|shared libraries/.test(
+              message,
+            )
+          ) {
+            continue;
+          }
+          throw error;
+        }
+        if (engine.name === "webkit") sawWebKit = true;
+        let releaseFonts = () => {};
+        try {
+          const context = await browser.newContext({
+            viewport: PHONE_VIEW,
+            screen: PHONE_VIEW,
+            hasTouch: true,
+            isMobile: true,
+            deviceScaleFactor: 1,
+            userAgent: PHONE.userAgent,
+          });
+          let held = 0;
+          let open = true;
+          const gate = new Promise<void>((resolve) => {
+            releaseFonts = () => {
+              if (!open) return;
+              open = false;
+              resolve();
+            };
+          });
+          await context.route(/\.woff2(\?|$)/, async (route) => {
+            held += 1;
+            await gate;
+            await route.continue().catch(() => {});
+          });
+          const page = await context.newPage();
+          await page.addInitScript(() => {
+            const leaks: { text: string; fill: string; color: string }[] = [];
+            const clear = (value: string) =>
+              value === "transparent" || /rgba\(\s*0\s*,\s*0\s*,\s*0\s*,\s*0\s*\)/.test(value);
+            const sample = () => {
+              const faces = document.documentElement.dataset.faces ?? "";
+              if (faces === "ready") return;
+              for (const selector of [
+                ".breath-now",
+                ".wordmark-name",
+                ".type-kicker",
+                ".type-chrome",
+              ]) {
+                const el = document.querySelector(selector);
+                const text = (el?.textContent ?? "").replace(/\s+/g, " ").trim();
+                if (!el || text.length < 2) continue;
+                const style = getComputedStyle(el);
+                const fill = style.getPropertyValue("-webkit-text-fill-color");
+                const color = style.color;
+                if (!clear(fill) || !clear(color))
+                  leaks.push({ text: text.slice(0, 60), fill, color });
+              }
+            };
+            const loop = () => {
+              sample();
+              requestAnimationFrame(loop);
+            };
+            requestAnimationFrame(loop);
+            (window as unknown as { __faceLeaks: typeof leaks }).__faceLeaks = leaks;
+          });
+          await page.goto(`${ORIGIN}/salon/read/moby-dick?at=60`, {
+            waitUntil: "domcontentloaded",
+          });
+          await page.waitForFunction(
+            () => (document.body?.innerText ?? "").replace(/\s+/g, " ").trim().length > 2,
+            { timeout: 20_000 },
+          );
+          assert.notEqual(
+            await page.evaluate(() => document.documentElement.dataset.faces ?? ""),
+            "ready",
+            "faces became ready while the font files were still withheld",
+          );
+          assert.ok(held > 0, "no webfont request was withheld");
+          const heldSpots = await glyphSpots(page, [
+            ".wordmark-name",
+            ".breath-now",
+            ".type-kicker",
+          ]);
+          const present = heldSpots.filter((spot) => !spot.missing && spot.text.length > 1);
+          assert.ok(present.length > 0, `nothing to sample: ${JSON.stringify(heldSpots)}`);
+          for (const spot of present) {
+            assert.ok(
+              fillIsClear(spot.fill) && fillIsClear(spot.color),
+              `${spot.selector} fill ${spot.fill} color ${spot.color}`,
+            );
+            assert.ok(
+              spot.differ <= 8,
+              `${spot.selector} painted ${spot.differ} fallback pixels (${spot.text})`,
+            );
+          }
+          const breathHeld = present.find((spot) => spot.selector === ".breath-now");
+          if (breathHeld) assert.match(breathHeld.text, /landlord/i);
+          else {
+            const wordmark = present.find((spot) => spot.selector === ".wordmark-name");
+            assert.ok(
+              wordmark && /tbr/i.test(wordmark.text),
+              `shell missing while the book waited: ${JSON.stringify(heldSpots)}`,
+            );
+          }
+
+          await page.goto(`${ORIGIN}/salon/page`, { waitUntil: "domcontentloaded" });
+          const file = page.locator('input[type="file"]');
+          await file.waitFor({ state: "attached", timeout: 15_000 });
+          const lines = [
+            "The imported paragraph opens on this sentence and keeps going.",
+            "A second sentence follows with enough words to fill another line of the page.",
+          ];
+          await file.setInputFiles({
+            name: "paragraphs.pdf",
+            mimeType: "application/pdf",
+            buffer: Buffer.from(pdfFromLines(lines)),
+          });
+          await page.waitForURL(/\/read\/page/, { timeout: 20_000, waitUntil: "commit" });
+          const sit = page.getByRole("button", { name: "Sit", exact: true });
+          const alone = page.getByRole("button", { name: "Alone", exact: true });
+          await sit.or(alone).first().waitFor({ timeout: 15_000 });
+          await sit.or(alone).first().click();
+          await page
+            .locator(".breath-now")
+            .filter({ hasText: "imported paragraph" })
+            .waitFor({ timeout: 15_000 });
+          assert.notEqual(
+            await page.evaluate(() => document.documentElement.dataset.faces ?? ""),
+            "ready",
+          );
+          const pdfHeld = await glyphSpots(page, [".breath-now"]);
+          const pdfSpot = pdfHeld[0];
+          assert.ok(pdfSpot && !pdfSpot.missing, "imported breath was not on screen");
+          assert.match(pdfSpot.text, /imported paragraph/);
+          assert.ok(fillIsClear(pdfSpot.fill) && fillIsClear(pdfSpot.color), pdfSpot.fill);
+          assert.ok(pdfSpot.differ <= 8, `imported PDF painted ${pdfSpot.differ} fallback pixels`);
+
+          releaseFonts();
+          await page.waitForFunction(
+            () =>
+              document.documentElement.dataset.faces === "ready" &&
+              (document.querySelector(".breath-now")?.textContent ?? "").length > 20,
+            { timeout: 30_000 },
+          );
+          const shown = await glyphSpots(page, [".breath-now"]);
+          const breath = shown[0];
+          assert.ok(breath && !breath.missing, "breath missing after the faces loaded");
+          assert.ok(
+            breath.differ > 40,
+            `ready breath painted only ${breath.differ} pixels (${breath.text})`,
+          );
+          assert.equal(await page.evaluate(() => document.documentElement.dataset.faces), "ready");
+          const leaks = await page.evaluate(
+            () =>
+              (
+                window as unknown as {
+                  __faceLeaks?: { text: string; fill: string; color: string }[];
+                }
+              ).__faceLeaks ?? [],
+          );
+          assert.deepEqual(
+            leaks,
+            [],
+            `fallback ink before the faces were ready: ${JSON.stringify(leaks.slice(0, 4))}`,
+          );
+          const gaps = await page.evaluate(() => {
+            const width = (family: string, style: string) => {
+              const probe = document.createElement("span");
+              probe.textContent = "Hamburgefonts";
+              probe.style.cssText = `position:fixed;visibility:hidden;white-space:nowrap;font-size:100px;font-weight:400;font-style:${style};font-family:${family}`;
+              document.body.appendChild(probe);
+              const value = probe.getBoundingClientRect().width;
+              probe.remove();
+              return value;
+            };
+            return {
+              cormorant: Math.abs(
+                width('"Cormorant Garamond"', "normal") - width("serif", "normal"),
+              ),
+              italic: Math.abs(width('"Cormorant Garamond"', "italic") - width("serif", "italic")),
+              outfit: Math.abs(width('"Outfit"', "normal") - width("sans-serif", "normal")),
+            };
+          });
+          assert.ok(
+            gaps.cormorant >= 6 && gaps.italic >= 6 && gaps.outfit >= 6,
+            JSON.stringify(gaps),
+          );
+          await page.goto(`${ORIGIN}/salon/read/moby-dick?at=60`, {
+            waitUntil: "domcontentloaded",
+          });
+          await page
+            .locator(".breath-now")
+            .filter({ hasText: "landlord" })
+            .waitFor({ timeout: 20_000 });
+          const bookShown = await glyphSpots(page, [".breath-now"]);
+          const bookBreath = bookShown[0];
+          assert.ok(
+            bookBreath && !bookBreath.missing,
+            "book breath missing after the faces loaded",
+          );
+          assert.match(bookBreath.text, /landlord/i);
+          assert.ok(bookBreath.differ > 40, `book breath painted only ${bookBreath.differ} pixels`);
+        } finally {
+          releaseFonts();
+          await browser.close();
+        }
+      }
+    } finally {
+      await stop();
+    }
+    if (!sawWebKit) t.skip("WebKit is not installed");
+  },
+);
