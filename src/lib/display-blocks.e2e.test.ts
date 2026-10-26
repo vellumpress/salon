@@ -222,7 +222,7 @@ test(
         const book = loadWork(visit.id).breaths[visit.index]?.text ?? "";
         assert.ok(sentenceSpans(book).length > 1, `${visit.label} is one sentence`);
         const focus = await page.evaluate(() => {
-          const nodes = [...document.querySelectorAll(".breath-now .breath-block")];
+          const nodes = [...document.querySelectorAll(".breath-now .breath-block:not([data-window-lead])")];
           return {
             first: nodes[0]?.textContent ?? "",
             joined: nodes.map((node) => node.textContent ?? "").join(""),

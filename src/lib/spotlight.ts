@@ -16,11 +16,12 @@ import { sentenceSpans } from "./sentences.ts";
  * The lit passage is two to four rendered lines.
  * A third of a line of slack keeps a sentence that barely wraps from
  * being cut, and from swallowing the sentence after it.
- * Whole sentences are kept whenever they land in that window. A sentence
- * taller than four lines breaks at the most natural internal pause.
- * A row counter, when the reader supplies one, also refuses a fifth painted
- * row: the next sentence stays out, and a sentence that still paints five
- * or six rows breaks at a semicolon, dash, or comma.
+ * Whole sentences are kept whenever they land in that window. One whole
+ * sentence may take up to six lines. Only a sentence taller than six lines
+ * breaks, at a semicolon, dash, or comma, never mid-thought.
+ * A row counter, when the reader supplies one, refuses a fifth painted row
+ * of mixed sentences. A single sentence may paint five or six rows. A
+ * seventh row breaks at a semicolon, dash, or comma.
  * A window under two rows is rebalanced with its neighbours: the short
  * sentence moves back when the previous window has room, otherwise the long
  * neighbour breaks at a semicolon, dash, or comma. A lone one-row window
@@ -31,6 +32,8 @@ import { sentenceSpans } from "./sentences.ts";
  */
 export const SPOTLIGHT_MIN_LINES = 2;
 export const SPOTLIGHT_MAX_LINES = 4;
+/** One whole sentence may fill the spotlight up to this many lines. */
+export const SPOTLIGHT_SENTENCE_MAX_LINES = 6;
 export const SPOTLIGHT_LINE_SLOP = 0.34;
 
 export type MeasureFn = (sample: string) => number;
@@ -51,7 +54,7 @@ export type SpotlightPart = { index: number; start: number; end: number };
  * One tap.
  * `index` / `cursor` are the sentence progress lands on: the first sentence
  * of the group, or the sentence a long window belongs to.
- * `window` is 0 unless that sentence is taller than four lines.
+ * `window` is 0 unless that sentence is taller than six lines.
  */
 export type SpotlightGroup = {
   index: number;
@@ -116,6 +119,18 @@ function fits(lines: number, limitPx: number, linePx: number) {
   if (lines > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP) return false;
   const line = linePx > 0 ? linePx : PHONE_LINE_PX;
   return lines * line <= limitPx + 0.5;
+}
+
+/** A whole sentence may run to six lines. Pieces of a sentence stay at four. */
+function sentenceFits(lines: number, limitPx: number, linePx: number) {
+  if (lines > SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP) return false;
+  const line = linePx > 0 ? linePx : PHONE_LINE_PX;
+  return lines * line <= limitPx + 0.5;
+}
+
+function sentenceRowsFit(countRows: CountRows | undefined, text: string, start: number, end: number) {
+  if (!countRows) return true;
+  return countRows(text, start, end) <= SPOTLIGHT_SENTENCE_MAX_LINES;
 }
 
 function wordPieces(text: string) {
@@ -250,6 +265,15 @@ function breathIsShort(
   if (isShortLine(mergedLines(atoms, texts, measure, linePx, kind))) return true;
   if (!countRows) return false;
   return coveredRows(atoms, texts, countRows) < SPOTLIGHT_MIN_LINES;
+}
+
+/** The atom is one whole sentence, or a verse breath that has not been cut. */
+function atomCoversSentence(atom: Atom, breathText: string, kind: DisplayKind) {
+  if (kind === "verse") return atom.start === 0 && atom.end === breathText.length;
+  const spans = tapSpans(breathText);
+  const span = spans[atom.sentence];
+  if (!span) return false;
+  return atom.start === span.start && atom.end === span.end;
 }
 
 function rowsFit(countRows: CountRows | undefined, text: string, start: number, end: number) {
@@ -406,79 +430,6 @@ function bestCut(scored: ScoredCut[]) {
   return best;
 }
 
-/** Word cuts whose slice lands in the two-to-four line window. */
-function wordCutsInWindow(
-  breathText: string,
-  from: number,
-  wordCuts: readonly number[],
-  measure: MeasureFn,
-  limitPx: number,
-  linePx: number,
-  countRows?: CountRows,
-) {
-  if (wordCuts.length === 0) return [];
-  let low = 0;
-  let high = wordCuts.length - 1;
-  let left = wordCuts.length;
-  while (low <= high) {
-    const mid = Math.floor((low + high) / 2);
-    const lines = windowLines(breathText, from, wordCuts[mid]!, measure, linePx);
-    if (lines >= minWindowLines()) {
-      left = mid;
-      high = mid - 1;
-    } else {
-      low = mid + 1;
-    }
-  }
-  low = left;
-  high = wordCuts.length - 1;
-  let right = left - 1;
-  while (low <= high) {
-    const mid = Math.floor((low + high) / 2);
-    const lines = windowLines(breathText, from, wordCuts[mid]!, measure, linePx);
-    if (
-      lines <= maxWindowLines() &&
-      fits(lines, limitPx, linePx) &&
-      rowsFit(countRows, breathText, from, wordCuts[mid]!)
-    ) {
-      right = mid;
-      low = mid + 1;
-    } else {
-      high = mid - 1;
-    }
-  }
-  if (right < left) return [];
-  return wordCuts.slice(left, right + 1);
-}
-
-/** The longest word cut that still fits, or the first word when nothing does. */
-function longestWordFit(
-  breathText: string,
-  from: number,
-  wordCuts: readonly number[],
-  measure: MeasureFn,
-  limitPx: number,
-  linePx: number,
-  absEnd: number,
-  countRows?: CountRows,
-) {
-  let best = -1;
-  let low = 0;
-  let high = wordCuts.length - 1;
-  while (low <= high) {
-    const mid = Math.floor((low + high) / 2);
-    const lines = windowLines(breathText, from, wordCuts[mid]!, measure, linePx);
-    if (fits(lines, limitPx, linePx) && rowsFit(countRows, breathText, from, wordCuts[mid]!)) {
-      best = wordCuts[mid]!;
-      low = mid + 1;
-    } else {
-      high = mid - 1;
-    }
-  }
-  if (best > from) return best;
-  return wordCuts[0] ?? absEnd;
-}
-
 function pickCut(
   breathText: string,
   from: number,
@@ -534,16 +485,7 @@ function pickCut(
   const shortGood = shortPunct.filter((scored) => scored.remnant === 0);
   if (shortGood.length > 0) return bestCut(shortGood).end;
   if (shortPunct.length > 0) return bestCut(shortPunct).end;
-  const wordEnds = local.filter((cand) => cand.rank === 3).map((cand) => cand.end);
-  const wordCuts = wordCutsInWindow(breathText, from, wordEnds, measure, limitPx, linePx, countRows);
-  const wordScored: ScoredCut[] = [];
-  for (const cut of wordCuts) {
-    const scored = scoreCut(breathText, from, absEnd, cut, 3, measure, limitPx, linePx, target, countRows);
-    if (scored) wordScored.push(scored);
-  }
-  const all = punctScored.concat(wordScored);
-  if (all.length > 0) return bestCut(all).end;
-  // A pause shorter than two lines still beats a fifth painted row.
+  // A pause shorter than two lines still beats a seventh painted row.
   if (countRows) {
     const relaxed: ScoredCut[] = [];
     for (const cand of punct) {
@@ -555,7 +497,19 @@ function pickCut(
     }
     if (relaxed.length > 0) return bestCut(relaxed).end;
   }
-  return longestWordFit(breathText, from, wordEnds, measure, limitPx, linePx, absEnd, countRows);
+  // No pause sits inside two to four lines. The earliest pause still beats
+  // keeping the rest, which can be many lines, and a word boundary stays closed.
+  let earliest: { end: number; rank: number } | null = null;
+  for (const cand of punct) {
+    if (cand.end <= from || cand.end >= absEnd) continue;
+    if (!earliest || cand.end < earliest.end || (cand.end === earliest.end && cand.rank < earliest.rank)) {
+      earliest = cand;
+    }
+  }
+  if (earliest) return earliest.end;
+  // No semicolon, dash, or comma can take the cut. A word boundary would
+  // break the sentence mid-thought, so the rest stays with this piece.
+  return absEnd;
 }
 
 /**
@@ -606,7 +560,7 @@ function balanceTail(
 }
 
 /**
- * A sentence taller than four lines, cut at the best pause inside the window.
+ * A sentence taller than six lines, cut at the best pause inside the window.
  * Pieces stay between two and four lines when a pause allows it.
  * Nothing is cut inside a word, and the slices join back to the sentence.
  */
@@ -793,17 +747,19 @@ function atomIsTall(
   countRows?: CountRows,
 ) {
   if (wordPieces(atom.text).length <= 1) return false;
-  if (!fits(atomLines(atom, breathText, measure, linePx), limitPx, linePx)) return true;
-  return !rowsFit(countRows, breathText, atom.start, atom.end);
+  const lines = atomLines(atom, breathText, measure, linePx);
+  if (!sentenceFits(lines, limitPx, linePx)) return true;
+  return !sentenceRowsFit(countRows, breathText, atom.start, atom.end);
 }
 
 /**
  * Where a group that contains `focus` can start.
- * A tall sentence is split on its own and does not pull the next paragraph,
- * so the walk stops at that sentence. A short tail after it stays in the
- * slice: the tail joins the tall sentence's last window when that window
- * is present, and joins the next paragraph when the window was dropped.
- * A run of short lines can still cross paragraphs.
+ * A sentence that does not fit in four lines is its own passage and does not
+ * pull the next paragraph, so the walk stops at that sentence. Five or six
+ * lines still count: the sentence stays whole, and the walk still stops there.
+ * A short tail after it stays in the slice. The tail joins that sentence's
+ * last window when the window is present, and joins the next paragraph when
+ * the window was dropped. A run of short lines can still cross paragraphs.
  */
 function groupOrigin(
   breaths: readonly SpotlightBreath[],
@@ -825,16 +781,25 @@ function groupOrigin(
     if (crossesStop(prev.index, here.index, stops)) break;
     const prevAtoms = atomsOf(prev, kind);
     const breathText = prev.text ?? "";
-    let lastTall = -1;
+    // Four lines, not six. A five-line sentence is not cut, but it still
+    // refuses the next sentence, and a one-line tail after it can cross
+    // into the next paragraph. The slice has to open on that sentence or a
+    // left tap from the paragraph after lands a passage early.
+    let lastBarrier = -1;
     for (let i = 0; i < prevAtoms.length; i += 1) {
-      if (atomIsTall(prevAtoms[i]!, breathText, measure, limitPx, linePx, countRows)) lastTall = i;
+      const atom = prevAtoms[i]!;
+      if (wordPieces(atom.text).length <= 1) continue;
+      const lines = atomLines(atom, breathText, measure, linePx);
+      const blocks =
+        !fits(lines, limitPx, linePx) || !rowsFit(countRows, breathText, atom.start, atom.end);
+      if (blocks) lastBarrier = i;
     }
-    if (lastTall >= 0) {
-      const tail = prevAtoms.slice(lastTall + 1);
+    if (lastBarrier >= 0) {
+      const tail = prevAtoms.slice(lastBarrier + 1);
       if (tail.length === 0) break;
       const texts = new Map([[prev.index, breathText]]);
       if (!isShortLine(mergedLines(tail, texts, measure, linePx, kind))) break;
-      return { index: prev.index, sentence: prevAtoms[lastTall]!.sentence };
+      return { index: prev.index, sentence: prevAtoms[lastBarrier]!.sentence };
     }
     const texts = new Map([[prev.index, breathText]]);
     if (!isShortLine(mergedLines(prevAtoms, texts, measure, linePx, kind))) break;
@@ -920,10 +885,11 @@ function windowsStillNeeded(groups: readonly SpotlightGroup[], bound: GroupBound
  * fits; a longer passage stops at the paragraph. Chapter scope is the caller's:
  * the reader passes one scene. `stops` refuse the breath after a sit or a
  * ritual, including that short-line exception. `cuts` refuse the sentence
- * after a sit that ends inside a longer breath. A sentence taller than four
- * lines is split at an internal pause. With `countRows`, a window that would
- * paint a fifth row stops at the sentence before it, and a single sentence
- * that still paints five or six rows breaks at a semicolon, dash, or comma.
+ * after a sit that ends inside a longer breath. A sentence taller than six
+ * lines is split at a semicolon, dash, or comma. With `countRows`, a window
+ * of mixed sentences that would paint a fifth row stops at the sentence
+ * before it. One whole sentence may paint five or six rows. A seventh row
+ * breaks at a semicolon, dash, or comma, and never between words.
  * A window that would close under two rows moves back into the previous
  * window when that still fits, or takes a clause of the next sentence at a
  * semicolon, dash, or comma. A lone one-row window folds into the window
@@ -1120,9 +1086,20 @@ function groupBreaths(
     for (let n = 0; n < combined.length; n += 1) {
       const atom = combined[n]!;
       if (n > 0) consider(combined.slice(0, n), combined.slice(n), 0);
-      // The pair already passed four rows. A sentence that fit on its own
-      // may open here, at a semicolon, dash, or comma. A word boundary stays
-      // closed: the break is never mid-thought.
+      // The pair already passed four rows. A sentence inside four lines may
+      // open here, at a semicolon, dash, or comma. A sentence of five or six
+      // lines stays whole. A word boundary stays closed.
+      const ownText = texts.get(atom.index) ?? "";
+      const own = atomLines(atom, ownText, measure, linePx);
+      // A whole sentence of five or six lines stays whole. A fragment of one
+      // may still open, so a borrowed clause does not sit there at six rows.
+      if (
+        atomCoversSentence(atom, ownText, kind) &&
+        own > maxWindowLines() &&
+        own <= SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP
+      ) {
+        continue;
+      }
       const pauses = breakCandidates(atom.text);
       for (const cand of pauses) {
         if (cand.rank >= 3) continue;
@@ -1178,8 +1155,12 @@ function groupBreaths(
     const breathText = texts.get(atom.index) ?? "";
     const alone = atomLines(atom, breathText, measure, linePx);
     const words = wordPieces(atom.text);
-    const aloneRows = rowsFit(rows, breathText, atom.start, atom.end);
-    if ((!fits(alone, cap, linePx) || !aloneRows) && words.length > 1) {
+    const wholeSentence = atomCoversSentence(atom, breathText, kind);
+    const aloneLines = wholeSentence ? sentenceFits(alone, cap, linePx) : fits(alone, cap, linePx);
+    const aloneRows = wholeSentence
+      ? sentenceRowsFit(rows, breathText, atom.start, atom.end)
+      : rowsFit(rows, breathText, atom.start, atom.end);
+    if ((!aloneLines || !aloneRows) && words.length > 1) {
       const maxWindows =
         bound && (bound.edge === "last" || atom.index <= bound.index || !boundSatisfied(groups, bound))
           ? windowsStillNeeded(groups, bound, atom)
@@ -1415,6 +1396,20 @@ export function groupCovering(
     }
   }
   return null;
+}
+
+/** True when the passage is exactly one whole sentence, not a clause of one. */
+export function groupIsOneSentence(group: SpotlightGroup, breathText: string) {
+  if (group.window !== 0 || group.parts.length !== 1) return false;
+  if (group.index !== group.endIndex || group.endCursor !== group.cursor + 1) return false;
+  const part = group.parts[0];
+  if (!part || part.index !== group.index) return false;
+  const spans = tapSpans(breathText);
+  const span = spans[group.cursor];
+  if (span && part.start === span.start && part.end === span.end) return true;
+  // A verse breath is one passage. Prose that merged several sentences has
+  // an end cursor past the next sentence, so it does not land here.
+  return group.cursor === 0 && part.start === 0 && part.end === breathText.length;
 }
 
 export function placeOf(group: SpotlightGroup): SpotlightPlace {

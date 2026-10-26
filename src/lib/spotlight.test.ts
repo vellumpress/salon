@@ -15,9 +15,9 @@ import {
   SPOTLIGHT_LINE_SLOP,
   SPOTLIGHT_MAX_LINES,
   SPOTLIGHT_MIN_LINES,
+  SPOTLIGHT_SENTENCE_MAX_LINES,
   spotlightGroups,
   spotlightKey,
-  spotlightLineCap,
   spotlightNear,
   stepSpotlight,
   type SpotlightGroup,
@@ -52,6 +52,18 @@ function sentenceOf(lines: number, word = "alpha") {
     n += 1;
   }
   return `${text.trim()}.`;
+}
+
+/** The same sentence, opened with a capital so a following sentence can start. */
+function titledSentence(lines: number, word: string) {
+  const raw = sentenceOf(lines, word);
+  return raw.replace(/^./u, (letter) => letter.toUpperCase());
+}
+
+/** `chunks` clauses of about `lines` phone lines, joined at semicolons. */
+function pausedOf(chunks: number, lines: number, word: string) {
+  const parts = Array.from({ length: chunks }, (_, i) => sentenceOf(lines, `${word}${i}`).replace(/\.$/, ""));
+  return `${parts.join("; ")}.`;
 }
 
 test("short sentences in one paragraph merge while they stay within four lines", () => {
@@ -162,31 +174,19 @@ test("a one-line sentence takes the next sentence in the same paragraph when the
   assertGroupFits(groups[0]!);
 });
 
-test("a long sentence with no internal pause steps on word boundaries, two to four lines at a time", () => {
+test("a long sentence with no pause stays one passage and keeps every word whole", () => {
   const words = Array.from({ length: 90 }, (_, i) => `word${i}`);
   const text = `${words.join(" ")}.`;
+  assert.ok(linesOf(text) > SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP);
   const groups = spotlightGroups([{ index: 2, text }], measure, limit, line);
-  assert.ok(groups.length > 1, "a ninety-word sentence stayed one tap");
-  const seen = groups.map((group) => group.sample).join(" ");
-  for (const word of words) assert.match(seen, new RegExp(`\\b${word}\\b`));
-  for (const group of groups) {
-    assert.equal(group.index, 2);
-    assert.equal(group.cursor, 0);
-    assert.equal(group.endCursor, 1);
-    assertGroupFits(group);
-    assert.ok(linesOf(group.sample) <= spotlightLineCap(line) / line + 0.05);
-    const parts = group.sample.trim().split(/\s+/);
-    assert.ok(parts.every((part) => words.includes(part.replace(/\.$/, "")) || part.endsWith(".")));
-  }
-  const windows = groups.map((group) => group.window);
-  assert.deepEqual(windows, windows.map((_, i) => i));
-  assert.equal(groups.map((group) => group.sample).join(""), text);
-  for (const group of groups) {
-    assert.ok(
-      linesOf(group.sample) >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP - 0.05,
-      `window is ${linesOf(group.sample).toFixed(2)} lines: ${group.sample.slice(0, 40)}`,
-    );
-  }
+  assert.equal(groups.length, 1, "a pause-free sentence was cut mid-thought");
+  assert.equal(groups[0]!.sample, text);
+  assert.equal(groups[0]!.index, 2);
+  assert.equal(groups[0]!.cursor, 0);
+  assert.equal(groups[0]!.window, 0);
+  assert.equal(groups[0]!.endCursor, 1);
+  const parts = groups[0]!.sample.trim().split(/\s+/);
+  assert.ok(parts.every((part) => words.includes(part.replace(/\.$/, "")) || part.endsWith(".")));
 });
 
 test("one tap moves one group, and the way back does not skip", () => {
@@ -252,7 +252,7 @@ test("progress stays on the first sentence of the group", () => {
 });
 
 test("sentences in one paragraph keep merging until the next would pass four lines", () => {
-  const sentence = sentenceOf(2, "amber");
+  const sentence = titledSentence(2, "amber");
   assert.ok(linesOf(sentence) >= 2 && linesOf(sentence) <= 2.2, `sentence is ${linesOf(sentence)} lines`);
   const pair = `${sentence} ${sentence}`;
   const triple = `${sentence} ${sentence} ${sentence}`;
@@ -260,13 +260,13 @@ test("sentences in one paragraph keep merging until the next would pass four lin
   assert.ok(linesOf(triple) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
   const merged = spotlightGroups([{ index: 0, text: pair }], measure, limit, line);
   assert.equal(merged.length, 1);
-  assert.match(merged[0]!.sample, /amber0/);
+  assert.match(merged[0]!.sample, /Amber0/);
   const stopped = spotlightGroups([{ index: 0, text: triple }], measure, limit, line);
   assert.equal(stopped.length, 2);
   assert.equal(stopped.map((group) => group.sample).join(""), triple);
   assert.ok(linesOf(stopped[0]!.sample) >= SPOTLIGHT_MIN_LINES);
   assert.ok(linesOf(stopped[0]!.sample) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
-  assert.match(stopped[1]!.sample, /amber/);
+  assert.match(stopped[1]!.sample, /Amber/);
   assertGroupFits(stopped[0]!);
   assertGroupFits(stopped[1]!);
 });
@@ -666,13 +666,68 @@ test("a sentence inside four lines stays whole", () => {
   assert.equal(groups[0]!.window, 0);
 });
 
-test("a sentence longer than four lines prefers a semicolon, colon, or em dash", () => {
-  const head = sentenceOf(3, "fir").replace(/\.$/, "");
+test("a whole sentence of five or six lines stays one passage", () => {
+  const exact = (lines: number, word: string) => {
+    const cap = Math.floor(lines * 29.5);
+    let body = word;
+    let n = 1;
+    while (`${body} ${word}${n}.`.length <= cap) {
+      body = `${body} ${word}${n}`;
+      n += 1;
+    }
+    return `${body}.`;
+  };
+  for (const lines of [5, 6]) {
+    const text = exact(lines, "oak");
+    const height = linesOf(text);
+    assert.ok(height > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP, `${lines} measured ${height}`);
+    assert.ok(height <= SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP, `${lines} measured ${height}`);
+    const groups = spotlightGroups([{ index: 0, text }], measure, limit, line);
+    assert.equal(groups.length, 1, `${lines} lines became ${groups.length}`);
+    assert.equal(groups[0]!.sample, text);
+    assert.equal(groups[0]!.window, 0);
+  }
+});
+
+test("a clause of five lines stays one piece when the sentence breaks at semicolons", () => {
+  const exact = (lines: number, word: string) => {
+    const cap = Math.floor(lines * 29.5);
+    let body = word;
+    let n = 1;
+    while (`${body} ${word}${n}`.length <= cap - 1) {
+      body = `${body} ${word}${n}`;
+      n += 1;
+    }
+    return body;
+  };
+  const head = exact(3, "fir");
+  const mid = exact(5, "gum");
+  const tail = exact(3, "ivy");
+  const text = `${head}; ${mid}; ${tail}.`;
+  assert.ok(linesOf(text) > SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(`${mid};`) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  const groups = spotlightGroups([{ index: 0, text }], measure, limit, line);
+  assert.equal(groups.map((group) => group.sample).join(""), text);
+  const clause = groups.find((group) => /\bgum\b/.test(group.sample));
+  assert.ok(clause);
+  assert.match(clause!.sample, /^gum/);
+  assert.match(clause!.sample, /;\s*$/);
+  assert.ok(linesOf(clause!.sample) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.ok(!clause!.sample.includes("fir"));
+  assert.ok(!clause!.sample.includes("ivy"));
+});
+
+test("a sentence longer than six lines prefers a semicolon, colon, or em dash", () => {
+  const head = sentenceOf(4, "fir").replace(/\.$/, "");
   const tail = sentenceOf(3, "gum").replace(/\.$/, "");
-  assert.ok(linesOf(head) >= 2 && linesOf(head) <= 4);
+  assert.ok(linesOf(head) >= 2 && linesOf(head) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(tail) >= 2 && linesOf(tail) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
   for (const pause of [";", ":", "\u2014"] as const) {
     const text = `${head}${pause} ${tail}.`;
-    assert.ok(linesOf(text) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP, `${pause} total ${linesOf(text)}`);
+    assert.ok(
+      linesOf(text) > SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP,
+      `${pause} total ${linesOf(text)}`,
+    );
     const groups = spotlightGroups([{ index: 0, text }], measure, limit, line);
     assert.ok(groups.length >= 2, pause);
     assert.equal(groups.map((group) => group.sample).join(""), text);
@@ -728,11 +783,11 @@ test("a sentence that fits is not broken to fill the line above it", () => {
   assert.equal(groups[0]!.sample.trim(), short);
 });
 
-test("a comma beats a word boundary when no stronger pause is in the window", () => {
-  const head = sentenceOf(3, "kelp").replace(/\.$/, "");
+test("a comma beats a cut between words when the sentence passes six lines", () => {
+  const head = sentenceOf(4, "kelp").replace(/\.$/, "");
   const tail = sentenceOf(3, "larch").replace(/\.$/, "");
   const text = `${head}, ${tail}.`;
-  assert.ok(linesOf(text) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(text) > SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP);
   const groups = spotlightGroups([{ index: 0, text }], measure, limit, line);
   assert.equal(groups.length, 2);
   assert.match(groups[0]!.sample, /,\s*$/);
@@ -755,13 +810,13 @@ test("a sentence end inside a long quotation beats a comma", () => {
   assert.equal(groups.map((group) => group.sample).join(""), text);
 });
 
-test("a long sentence avoids leaving a one-line remnant", () => {
-  const early = sentenceOf(2, "oak").replace(/\.$/, "");
-  const late = sentenceOf(2, "pine").replace(/\.$/, "");
+test("a sentence longer than six lines avoids leaving a one-line remnant", () => {
+  const early = sentenceOf(3, "oak").replace(/\.$/, "");
+  const late = sentenceOf(3, "pine").replace(/\.$/, "");
   const remnant = sentenceOf(1, "quince").replace(/\.$/, "");
   const text = `${early}, ${late}, ${remnant}.`;
   const whole = linesOf(text);
-  assert.ok(whole > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP, `whole is ${whole} lines`);
+  assert.ok(whole > SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP, `whole is ${whole} lines`);
   const groups = spotlightGroups([{ index: 0, text }], measure, limit, line);
   assert.equal(groups.map((group) => group.sample).join(""), text);
   for (const group of groups) {
@@ -775,18 +830,16 @@ test("a long sentence avoids leaving a one-line remnant", () => {
   assert.ok(linesOf(groups[groups.length - 1]!.sample) >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP);
 });
 
-test("a split never falls in the middle of a word", () => {
+test("a pause-free sentence is never cut inside a word", () => {
   const text = `${Array.from({ length: 40 }, () => "unbreakable").join(" ")}.`;
+  assert.ok(linesOf(text) > SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP);
   const groups = spotlightGroups([{ index: 0, text }], measure, limit, line);
-  assert.ok(groups.length > 1);
-  assert.equal(groups.map((group) => group.sample).join(""), text);
-  for (const group of groups) {
-    const trimmed = group.sample.trim();
-    assert.match(trimmed, /^unbreakable\b/);
-    assert.match(trimmed, /unbreakable\.?$/);
-    assert.ok(trimmed.split(/\s+/).every((part) => part === "unbreakable" || part === "unbreakable."));
-    assertGroupFits(group);
-  }
+  assert.equal(groups.length, 1);
+  assert.equal(groups[0]!.sample, text);
+  const trimmed = groups[0]!.sample.trim();
+  assert.match(trimmed, /^unbreakable\b/);
+  assert.match(trimmed, /unbreakable\.$/);
+  assert.ok(trimmed.split(/\s+/).every((part) => part === "unbreakable" || part === "unbreakable."));
 });
 
 test("markSpotlight keeps past and ahead and joins back to the block", () => {
@@ -857,7 +910,7 @@ test("a place grouped on its own matches the chapter, including the step each wa
 });
 
 test("the first window of a long sentence matches, and the rest of the sentence can wait", () => {
-  const text = sentenceOf(18, "ramayan");
+  const text = pausedOf(5, 3, "ramayan");
   const full = spotlightGroups([{ index: 4, text }], measure, limit, line, "verse");
   assert.ok(full.length > 3);
   const open = spotlightNear(
@@ -1003,7 +1056,7 @@ test("rows add across breaths, and a sit stop still ends the passage", () => {
   assert.ok(stopped.every((group) => group.endIndex <= 1 || group.index > 1));
 });
 
-test("a sentence inside the height cap breaks at a semicolon, dash, or comma when it would paint a fifth row", () => {
+test("one whole sentence may paint five or six rows, and a seventh row breaks at a pause", () => {
   const head = sentenceOf(2, "litany").replace(/\.$/, "");
   const tail = sentenceOf(2, "agnus").replace(/\.$/, "");
   assert.ok(linesOf(`${head} ${tail}.`) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
@@ -1011,13 +1064,27 @@ test("a sentence inside the height cap breaks at a semicolon, dash, or comma whe
     const text = `${head}${pause} ${tail}.`;
     const at = text.indexOf(pause);
     const tailAt = text.indexOf(tail);
-    const countRows = (_sample: string, start: number, end: number) => {
+    const rowsFor = (painted: number) => (_sample: string, start: number, end: number) => {
       const coversHead = start <= at && end > at;
       const coversTail = end > tailAt;
-      return coversHead && coversTail ? 6 : 3;
+      return coversHead && coversTail ? painted : 3;
     };
-    const kept = spotlightGroups([{ index: 0, text }], measure, limit, line);
-    assert.equal(kept.length, 1, `${pause} still fits the height cap`);
+    for (const painted of [5, 6]) {
+      const kept = spotlightGroups(
+        [{ index: 0, text }],
+        measure,
+        limit,
+        line,
+        "prose",
+        undefined,
+        undefined,
+        rowsFor(painted),
+      );
+      assert.equal(kept.length, 1, `${pause} at ${painted} rows stayed whole`);
+      assert.equal(kept[0]!.sample, text);
+      assert.equal(kept[0]!.window, 0);
+    }
+    const countRows = rowsFor(7);
     const groups = spotlightGroups(
       [{ index: 0, text }],
       measure,
@@ -1150,7 +1217,7 @@ function openingBreaths(id: string, scenes: number): SampleBreath[] {
 }
 
 test("a left step into a four-window sentence lands on its last window", () => {
-  const text = `${sentenceOf(13, "Lamp")} ${sentenceOf(4, "Next")}`;
+  const text = `${pausedOf(4, 3, "Lamp")} ${sentenceOf(4, "Next")}`;
   const breaths = [{ index: 0, text, sceneId: "s0" }];
   const { ordered } = navOf(breaths);
   const sentence = ordered.filter((group) => group.cursor === 0);
@@ -1169,7 +1236,7 @@ test("a left step into a four-window sentence lands on its last window", () => {
 });
 
 test("a three-window sentence still steps back onto its last window", () => {
-  const text = `${sentenceOf(10, "Lamp")} ${sentenceOf(4, "Next")}`;
+  const text = `${pausedOf(3, 3, "Lamp")} ${sentenceOf(4, "Next")}`;
   const breaths = [{ index: 0, text, sceneId: "s0" }];
   const nav = navOf(breaths);
   const sentence = nav.ordered.filter((group) => group.cursor === 0);
@@ -1177,6 +1244,43 @@ test("a three-window sentence still steps back onto its last window", () => {
   const edge = assertReversible("three windows", breaths);
   assert.ok(edge.widths.includes(3));
   assert.ok(!edge.widths.some((width) => width >= 4));
+});
+
+test("a left tap steps one passage around a five-line and a six-line sentence", () => {
+  const five = sentenceOf(5, "Five");
+  const six = sentenceOf(6, "Six");
+  assert.ok(linesOf(five) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(five) <= SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(six) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.ok(linesOf(six) <= SPOTLIGHT_SENTENCE_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  const between = [
+    { index: 0, text: `Before this. ${five}`, sceneId: "s0" },
+    { index: 1, text: `${six} After this.`, sceneId: "s0" },
+  ];
+  const groups = spotlightGroups(
+    between.map((breath) => ({ index: breath.index, text: breath.text })),
+    measure,
+    limit,
+    line,
+  );
+  const fiveGroup = groups.find((group) => group.sample.includes("Five0"));
+  const sixGroup = groups.find((group) => group.sample.includes("Six0"));
+  assert.ok(fiveGroup);
+  assert.ok(sixGroup);
+  assert.equal(fiveGroup!.window, 0);
+  assert.equal(sixGroup!.window, 0);
+  assert.equal(linesOf(fiveGroup!.sample) > SPOTLIGHT_MAX_LINES, true);
+  assert.equal(linesOf(sixGroup!.sample) > SPOTLIGHT_MAX_LINES, true);
+  assert.doesNotMatch(fiveGroup!.sample, /Before/);
+  assert.doesNotMatch(sixGroup!.sample, /After/);
+  const edge = assertReversible("five and six", between);
+  assert.ok(edge.widths.includes(1));
+  const crossed = [
+    { index: 0, text: `${six} That was all.`, sceneId: "s0" },
+    { index: 1, text: `${sentenceOf(3, "Next")} They had never liked the engagement.`, sceneId: "s0" },
+  ];
+  const back = assertReversible("six-line tail", crossed);
+  assert.equal(back.paragraph, true);
 });
 
 test("a right step and a left step return to the same window across splits, paragraphs, chapters, and sits", () => {
@@ -1204,9 +1308,16 @@ test("a right step and a left step return to the same window across splits, para
   assert.equal(quicksand.paragraph, true, "quicksand never crossed a paragraph");
   assert.equal(quicksand.chapter, true, "quicksand never crossed a chapter");
   assert.equal(quicksand.sit, true, "quicksand never crossed its sit");
-  const pair = `${sentenceOf(6, "Pair")} ${sentenceOf(3, "Tail")}`;
-  const two = assertReversible("two windows", [{ index: 0, text: pair, sceneId: "s0" }]);
-  widths.push(...two.widths);
+  const fixtures = [
+    { label: "two windows", text: `${pausedOf(2, 4, "Pair")} ${sentenceOf(3, "Tail")}`, width: 2 },
+    { label: "three windows", text: `${pausedOf(3, 3, "Third")} ${sentenceOf(3, "Tail")}`, width: 3 },
+    { label: "four windows", text: `${pausedOf(4, 3, "Fourth")} ${sentenceOf(3, "Tail")}`, width: 4 },
+  ];
+  for (const fixture of fixtures) {
+    const edge = assertReversible(fixture.label, [{ index: 0, text: fixture.text, sceneId: "s0" }]);
+    widths.push(...edge.widths);
+    assert.ok(edge.widths.includes(fixture.width), `${fixture.label} widths ${edge.widths.join(",")}`);
+  }
   assert.ok(widths.includes(2), `no 2-window sentence in ${widths.join(",")}`);
   assert.ok(widths.includes(3), `no 3-window sentence in ${widths.join(",")}`);
   assert.ok(widths.some((width) => width >= 4), `no 4-window sentence in ${widths.join(",")}`);
@@ -1225,10 +1336,10 @@ test("an imported page steps back one window across two, three, and four window 
       {
         title: "Chapter 1",
         paragraphs: [
-          sentenceOf(13, "Lamp"),
+          pausedOf(4, 3, "Lamp"),
           sentenceOf(4, "After"),
-          sentenceOf(10, "Third"),
-          sentenceOf(6, "Pair"),
+          pausedOf(3, 3, "Third"),
+          pausedOf(2, 4, "Pair"),
         ],
       },
       {

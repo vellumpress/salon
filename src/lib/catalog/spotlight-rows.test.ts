@@ -10,7 +10,11 @@ import { readableIds, shelfWork } from "./shelf.ts";
 /**
  * Every lit window at 390×844, for every readable book.
  * Imported pages use the same packer; this is the catalog gate.
- * A fifth painted row fails. A window under two rows fails too.
+ * A fifth or sixth painted row fails, unless the window is one whole sentence
+ * or one clause with no earlier semicolon, dash, or comma. A taller window
+ * fails too, unless that same window has no earlier pause: a sentence longer
+ * than six lines breaks only at a pause, and a pause-free stretch stays whole.
+ * A window under two rows fails too.
  * A lone one-row window folds into the window before it, inside the scene.
  * Sit and ritual stops stay in force: the fold does not cross them.
  * A window that still has no earlier window in the scene takes its scene
@@ -173,7 +177,34 @@ async function countOne(
                   titleRows: (title) => kit.spot.paintFocusRows(title, 0, title.length, column, input.kind),
                 }).rows
               : rows;
-          if (shown > 4) {
+          const breathText = group.parts.length === 1 && part0
+            ? (scene.find((breath) => breath.index === part0.index)?.text ?? "")
+            : "";
+          const whole = breathText ? kit.spot.groupIsOneSentence(group, breathText) : false;
+          // A pause that paints fewer rows is a place the sentence should have
+          // broken. A stretch with no such pause stays one window, even past
+          // six rows: cutting it would be mid-thought.
+          const oneClause = Boolean(
+            breathText && part0 && group.parts.length === 1 && group.endCursor === group.cursor + 1,
+          );
+          let shorterPause = false;
+          if (oneClause && part0 && shown > (whole ? 6 : 4)) {
+            for (let i = part0.start; i < part0.end; i += 1) {
+              const ch = breathText[i] ?? "";
+              if (ch !== "," && ch !== ";" && ch !== ":" && ch !== "\u2014" && ch !== "\u2013" && !(ch === "-" && breathText[i + 1] === "-")) continue;
+              // 11:15 is a time, not a pause. The packer skips that colon too.
+              if (ch === ":" && /\d/u.test(breathText[i - 1] ?? "") && /\d/u.test(breathText[i + 1] ?? "")) continue;
+              let end = i + 1;
+              if (ch === "-") while (breathText[end] === "-") end += 1;
+              const at = kit.spot.paintFocusRows(breathText, part0.start, end, column, input.kind);
+              if (at > 0 && at < rows) {
+                shorterPause = true;
+                break;
+              }
+            }
+          }
+          const rowCap = whole && shown <= 6 ? 6 : oneClause && !shorterPause && shown > 4 ? shown : 4;
+          if (shown > rowCap) {
             over += 1;
             if (failures.length < 8) {
               failures.push({
