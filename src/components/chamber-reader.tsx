@@ -1600,17 +1600,25 @@ export function TbrReader({
     if (line) ro.observe(line);
     if (lookbackSlotRef.current) ro.observe(lookbackSlotRef.current);
     if (upcomingSlotRef.current) ro.observe(upcomingSlotRef.current);
-    if (!motionArmed.current) {
-      void document.fonts?.ready.then(() => {
-        if (live) place(false);
-      });
-    }
+    const onFonts = () => {
+      if (!live) return;
+      // A face that arrives mid-slide has to wait out the breath, or the
+      // correction cancels the step the finger just took.
+      if (performance.now() < slidingUntilRef.current) {
+        window.setTimeout(onFonts, Math.max(16, slidingUntilRef.current - performance.now() + 16));
+        return;
+      }
+      place(false);
+    };
+    document.fonts?.addEventListener("loadingdone", onFonts);
+    if (!motionArmed.current) void document.fonts?.ready.then(onFonts);
     return () => {
       live = false;
+      document.fonts?.removeEventListener("loadingdone", onFonts);
       ro.disconnect();
       slot.removeEventListener("scroll", onScroll);
     };
-  }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn]);
+  }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey]);
 
   const durationMs = sittingMinutes > 0 ? sittingMinutes * 60 * 1000 : 0;
   const endsAt =
