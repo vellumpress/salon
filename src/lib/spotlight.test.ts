@@ -607,10 +607,11 @@ test("a one-row sentence still ahead folds into the painted window", () => {
   }
 });
 
-test("a one-line chapter ending stays whole when the fold would pass four rows", () => {
+test("a one-line chapter ending stays whole when no pause can split the fold", () => {
   const prev = sentenceOf(4, "full");
   const tiny = "Hi.";
   assert.ok(linesOf(prev) + linesOf(tiny) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  assert.equal(prev.includes(","), false);
   const breaths = [
     { index: 0, text: prev },
     { index: 1, text: tiny },
@@ -623,6 +624,36 @@ test("a one-line chapter ending stays whole when the fold would pass four rows",
   const lift = liftShortWindow({ rows: 1, title: "Chapter", body: tiny, opening: false });
   assert.equal(lift.rows, SPOTLIGHT_MIN_LINES);
   assertGroupFits(groups[0]!);
+});
+
+test("a one-line chapter ending splits three-and-two when the fold would pass four rows", () => {
+  const head = sentenceOf(3, "oak").replace(/\.$/, "");
+  const tail = sentenceOf(1, "elm").replace(/\.$/, "");
+  const prev = `${head}; ${tail}.`;
+  const tiny = "Hi.";
+  assert.ok(linesOf(prev) <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP, `prev ${linesOf(prev)}`);
+  assert.ok(linesOf(prev) + linesOf(tiny) > SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP);
+  const groups = spotlightGroups(
+    [
+      { index: 0, text: prev },
+      { index: 1, text: tiny },
+    ],
+    measure,
+    limit,
+    line,
+  );
+  assert.equal(groups.length, 2);
+  assert.equal(groups[0]!.endIndex, 0);
+  assert.equal(groups[1]!.index, 0);
+  assert.equal(groups[1]!.endIndex, 1);
+  for (const group of groups) {
+    const lines = linesOf(group.sample);
+    assert.ok(lines >= SPOTLIGHT_MIN_LINES - SPOTLIGHT_LINE_SLOP, group.sample.slice(0, 60));
+    assert.ok(lines <= SPOTLIGHT_MAX_LINES + SPOTLIGHT_LINE_SLOP + 0.02, group.sample.slice(0, 60));
+    assert.ok(!group.sample.includes("\u0000"));
+  }
+  assert.match(groups[0]!.sample, /;\s*$/);
+  assert.match(groups.at(-1)!.sample, /Hi\./);
 });
 
 test("a sentence inside four lines stays whole", () => {
