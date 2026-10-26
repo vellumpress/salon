@@ -1299,6 +1299,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-hedgehog-the-jackal-and-the-lion",
   // Mira Sun 25 Oct 2026 PM FRIEND — Do Not Trust Your Friend (West African tale, tr. Nassau, 1912) follows The Hedgehog, the Jackal, and the Lion at the end of Next, plain Next. Never Featured; off every Ritual lane.
   "do-not-trust-your-friend",
+  // Mira Mon 26 Oct 2026 AM BRIGHT NIGHTS — When the Bright Nights Were (Rosegger, tr. Underwood, 1921) follows Do Not Trust Your Friend at the end of Next, plain Next. Never Featured; off every Ritual lane.
+  "when-the-bright-nights-were",
 ] as const;
 
 /**

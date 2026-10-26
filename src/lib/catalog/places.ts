@@ -577,6 +577,9 @@ export const CHIP_ONLY_PLACE: Record<string, string> = {
   // Mira Sat 24 Oct 2026 PM CORMORANTS (CoS, this work only; mary-magdalen precedent): "Outside Andvær lies an island" (l.1873).
   // There is no shape for it; never draw one ad hoc. countryFor() stays empty: "Jonas Lie (tr. R. Nisbet Bain)" is not in the Norway list, and English has no default.
   "the-cormorants-of-andvaer": "Andvær",
+  // Mira Mon 26 Oct 2026 AM BRIGHT NIGHTS (Cormorants pattern): the fire takes "the Filnbaum Forest" (l.2836, 2846, 2903, 2954), as printed.
+  // There is no shape for it; never draw one ad hoc. countryFor() stays empty: no Rosegger entry in AUTHOR_COUNTRY, and English has no default.
+  "when-the-bright-nights-were": "Filnbaum Forest",
 };
 
 export { NO_PRINTED_PLACE };
