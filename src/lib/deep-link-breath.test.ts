@@ -8,8 +8,18 @@ import {
   firstPaintIndex,
   holdOpeningForAt,
   pendingLinkAt,
+  resumeTarget,
   savedSentenceAt,
 } from "./deep-link-breath.ts";
+
+test("a saved breath holds the opening when the address has no at", () => {
+  assert.equal(resumeTarget(12, 40), 12);
+  assert.equal(resumeTarget(0, 40), 0);
+  assert.equal(resumeTarget(undefined, 12), 12);
+  assert.equal(resumeTarget(undefined, 0), undefined);
+  assert.equal(resumeTarget(undefined, undefined), undefined);
+  assert.equal(resumeTarget(undefined, 3.8), 3);
+});
 
 test("a mid-book at link is not in the opening, and the first paint is that breath", () => {
   assert.equal(holdOpeningForAt(1658, 6, false), true);
@@ -72,7 +82,8 @@ test("a link past the opening is not painted as breath 0, and a short cache is n
   const route = readFileSync(new URL("../routes/read.$workId.tsx", import.meta.url), "utf8");
   assert.doesNotMatch(route, /setWork\(ready \?\? next/);
   assert.match(route, /const deadline = Date\.now\(\) \+ 20000/);
-  assert.match(route, /setWork\(workReadyForAt\(edition, at\) \?\? null\)/);
+  assert.match(route, /setWork\(workReadyForAt\(edition, place\) \?\? null\)/);
+  assert.match(route, /resumeTarget\(at, hydrated \? savedBreath : undefined\)/);
   assert.match(route, /shelfWork\(book\.id\)\?\.breaths/);
   const works = readFileSync(new URL("./works.ts", import.meta.url), "utf8");
   assert.match(works, /function editionCoversShelf/);

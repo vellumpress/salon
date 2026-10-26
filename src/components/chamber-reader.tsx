@@ -294,8 +294,17 @@ export function TbrReader({
    * A saved place still opens on that sentence. A long sentence also
    * keeps a window, so a reload can return to the same lines.
    */
-  const cursorRef = useRef(0);
-  const [cursor, setCursor] = useState(0);
+  const openingCursor = savedSentenceAt(
+    progress,
+    firstPaintIndex({
+      at,
+      breathCount: work.breaths.length,
+      storedIndex: progress?.breathIndex ?? 0,
+      linkApplied: linkApplied.current,
+    }),
+  ) ?? 0;
+  const cursorRef = useRef(openingCursor);
+  const [cursor, setCursor] = useState(openingCursor);
   const windowRef = useRef(0);
   const [spotWindow, setSpotWindow] = useState(0);
   /** First character of the passage on screen. A reflow keeps those words lit. */

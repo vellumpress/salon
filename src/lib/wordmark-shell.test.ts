@@ -52,4 +52,5 @@ test("the reader matches the wordmark document before painting a breath", () => 
   assert.match(gate, /documentIsWordmarkShell\(document\)/);
   assert.match(gate, /if \(!booted\) return <PagesShell \/>/);
   assert.match(gate, /hydration error #418/);
+  assert.match(page, /directShell && \(!hydrated \|\| work === undefined\)\) return <PagesShell \/>/);
 });

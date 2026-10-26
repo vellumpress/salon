@@ -13,8 +13,22 @@ export function pendingLinkAt(at: number | undefined, breathCount: number): numb
 }
 
 /**
+ * Breath a direct open has to cover before the first paint.
+ * The address wins. A saved place counts when the address has no `at`,
+ * so the opening excerpt is not shown in its place. Breath 0 is the start
+ * of the book, not a saved place to wait for.
+ */
+export function resumeTarget(at: number | undefined, savedBreath: number | undefined): number | undefined {
+  if (typeof at === "number" && Number.isFinite(at) && at >= 0) return Math.floor(at);
+  if (typeof savedBreath === "number" && Number.isFinite(savedBreath) && savedBreath > 0) {
+    return Math.floor(savedBreath);
+  }
+  return undefined;
+}
+
+/**
  * True while this bind is only the opening and `at` falls past it.
- * The reader stays on the title gate instead of painting breath 0.
+ * The reader stays on the shell instead of painting breath 0.
  */
 export function holdOpeningForAt(
   at: number | undefined,
