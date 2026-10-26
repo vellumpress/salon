@@ -190,6 +190,71 @@ test("a mid-book at link paints the target sentence first", async () => {
   }
 });
 
+test("a direct open with a saved sentence does not flash the title", async () => {
+  await ensureReaderServer();
+  const browser = await launchBrowser();
+  const store = JSON.stringify({
+    state: {
+      activeReadVersion: 1,
+      progress: {
+        cranford: {
+          breathIndex: 12,
+          sentenceAt: 2,
+          lastOpenedAt: Date.now(),
+          sittingStartedAt: Date.now(),
+          keywords: {},
+          kept: [],
+          completedAt: null,
+          entered: true,
+          activeAnchorAt: null,
+          activeMs: 0,
+          activeAdvances: 0,
+        },
+      },
+    },
+    version: 3,
+  });
+  try {
+    const page = await phonePage(browser, store);
+    const errors: string[] = [];
+    page.on("pageerror", (err) => errors.push(err.message));
+    page.on("console", (msg) => {
+      if (msg.type() === "error") errors.push(msg.text());
+    });
+    await page.addInitScript(() => {
+      const titles: string[] = [];
+      const note = () => {
+        if (document.querySelector(".breath-now")) return;
+        const title = document.querySelector(".type-title")?.textContent?.replace(/\s+/g, " ").trim() ?? "";
+        if (title && titles[titles.length - 1] !== title) titles.push(title);
+      };
+      const arm = () => {
+        note();
+        const obs = new MutationObserver(note);
+        obs.observe(document.documentElement, { subtree: true, childList: true, characterData: true });
+      };
+      if (document.documentElement) arm();
+      else document.addEventListener("DOMContentLoaded", arm);
+      (window as unknown as { __titleFlash?: string[] }).__titleFlash = titles;
+    });
+    await page.goto(`${ORIGIN}/salon/read/cranford`, { waitUntil: "domcontentloaded" });
+    await page.locator(".breath-now").waitFor({ timeout: 20_000 });
+    await page.waitForFunction(
+      () => document.querySelector(".reader-frame")?.getAttribute("data-spotlight-key") === "12:2:0",
+      { timeout: 15_000 },
+    );
+    const titles = await page.evaluate(
+      () => (window as unknown as { __titleFlash?: string[] }).__titleFlash ?? [],
+    );
+    assert.deepEqual(titles, [], `title flashed before the passage: ${titles.join(" | ")}`);
+    assert.match(await page.locator(".breath-now").innerText(), /economy was always/);
+    const hydration = errors.filter((line) => /418|422|423|425|hydration|Hydration/i.test(line));
+    assert.deepEqual(hydration, [], hydration.join("\n"));
+  } finally {
+    await browser.close();
+  }
+});
+
 test("a book with no open sit still shows the gate", async () => {
   await ensureReaderServer();
   const browser = await launchBrowser();

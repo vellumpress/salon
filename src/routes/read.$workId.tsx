@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useState, type ReactNode } from "react";
 import { createFileRoute, Link, redirect } from "@tanstack/react-router";
 import { PagesShell } from "@/components/pages-shell";
 import { TbrReader } from "@/components/chamber-reader";
+import { usePersistHydrated } from "@/components/resume-link";
 import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import { isEnReadableOff } from "@/lib/catalog/en-rights";
 import { shelfWork } from "@/lib/catalog/shelf";
@@ -9,7 +10,7 @@ import { placeAliasAt } from "@/lib/colonel-place";
 import { canonicalWorkId } from "@/lib/work-id-alias";
 import { getImport } from "@/lib/import/idb";
 import { isDeviceImport } from "@/lib/import/private";
-import { atFromLocationSearch, holdOpeningForAt } from "@/lib/deep-link-breath";
+import { atFromLocationSearch, holdOpeningForAt, resumeTarget } from "@/lib/deep-link-breath";
 import { loadWork, peekWork, workIsComplete, type Work } from "@/lib/works";
 import { useTbr } from "@/lib/store";
 import { asSittingMinutes } from "@/lib/sitting";
@@ -84,14 +85,20 @@ export const Route = createFileRoute("/read/$workId")({
 function ReadPage() {
   // A warm reader chunk paints this page into the wordmark document and
   // WebKit raises hydration error #418. The recovered tree then drops `?at=`.
+  // The title card is a different tree. Painting it before the saved passage
+  // is the recovered mismatch and the flash. Stay on the shell until that
+  // passage can paint.
   const [booted, setBooted] = useState(
     () => typeof document !== "undefined" && !documentIsWordmarkShell(document),
+  );
+  const [directShell] = useState(
+    () => typeof document !== "undefined" && documentIsWordmarkShell(document),
   );
   useLayoutEffect(() => {
     setBooted(true);
   }, []);
   if (!booted) return <PagesShell />;
-  return <ReadBody />;
+  return <ReadBody directShell={directShell} />;
 }
 
 /**
@@ -123,9 +130,11 @@ function workReadyForAt(book: Work | null | undefined, at: number | undefined) {
   return book;
 }
 
-function ReadBody() {
+function ReadBody({ directShell }: { directShell: boolean }) {
   const { workId } = Route.useParams();
   const { shuffle, sit, pair, at: routeAt, episode, echo, hosted } = Route.useSearch();
+  const hydrated = usePersistHydrated();
+  const savedBreath = useTbr((s) => s.progress[workId]?.breathIndex);
   // Hydration recovery can drop `at` from the router while the address keeps it.
   // Painting that as breath 0 is the catalog walk's "opened on chapter I".
   const at =
@@ -137,12 +146,15 @@ function ReadBody() {
   const device = isDeviceImport(workId);
   const held = !device && workId !== "page" && isEnReadableOff(canonicalWorkId(workId));
   const meta = workId === "page" ? pageWork : shelfWork(workId);
+  const place = resumeTarget(at, hydrated ? savedBreath : undefined);
   const [work, setWork] = useState<Work | null | undefined>(() => {
     if (workId === "page") return pageWork;
     if (device) return undefined;
     // A held bind stays off the reader. The door's shelf intro is still a line of the book.
     if (isEnReadableOff(canonicalWorkId(workId))) return null;
-    return workReadyForAt(peekWork(workId), at);
+    if (directShell && !useTbr.persist.hasHydrated()) return undefined;
+    const saved = useTbr.getState().progress[workId]?.breathIndex;
+    return workReadyForAt(peekWork(workId), resumeTarget(at, saved));
   });
 
   useEffect(() => {
@@ -154,6 +166,7 @@ function ReadBody() {
       setWork(null);
       return;
     }
+    if (directShell && !hydrated) return;
     if (device) {
       let live = true;
       setWork(undefined);
@@ -165,11 +178,11 @@ function ReadBody() {
       };
     }
     let live = true;
-    const cached = workReadyForAt(peekWork(workId), at);
+    const cached = workReadyForAt(peekWork(workId), place);
     if (cached) setWork(cached);
     else setWork(undefined);
     void loadWork(workId, (next) => {
-      const ready = workReadyForAt(next, at);
+      const ready = workReadyForAt(next, place);
       if (live && ready) setWork(ready);
     })
       .then(async (next) => {
@@ -177,7 +190,7 @@ function ReadBody() {
         let edition = next;
         const deadline = Date.now() + 20000;
         while (live) {
-          const ready = workReadyForAt(edition, at);
+          const ready = workReadyForAt(edition, place);
           if (ready) {
             setWork(ready);
             return;
@@ -194,16 +207,18 @@ function ReadBody() {
           }
         }
         if (!live) return;
-        setWork(workReadyForAt(edition, at) ?? null);
+        setWork(workReadyForAt(edition, place) ?? null);
       })
       .catch(() => {
         if (!live) return;
-        setWork(workReadyForAt(peekWork(workId), at) ?? null);
+        setWork(workReadyForAt(peekWork(workId), place) ?? null);
       });
     return () => {
       live = false;
     };
-  }, [workId, pageWork, device, held, at]);
+  }, [workId, pageWork, device, held, at, place, hydrated, directShell]);
+
+  if (directShell && (!hydrated || work === undefined)) return <PagesShell />;
 
   if (work === undefined) {
     return (
