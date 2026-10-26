@@ -113,7 +113,8 @@ function longParagraphPdf() {
   ];
   lines.push("The long imported paragraph begins on this line and does not stop");
   for (let i = 1; i <= 70; i += 1) {
-    lines.push(`and clause ${String(i).padStart(2, "0")} keeps the same breath going onward`);
+    const pause = i % 2 === 0 ? ";" : "";
+    lines.push(`and clause ${String(i).padStart(2, "0")} keeps the same breath going onward${pause}`);
   }
   lines.push("until the long imported paragraph finally ends.");
   lines.push("A short imported sentence follows the long one.");

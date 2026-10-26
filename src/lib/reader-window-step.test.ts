@@ -31,6 +31,15 @@ function sentenceOf(lines: number, word: string) {
   return `${text.trim()}.`;
 }
 
+/** One sentence with a semicolon between equal stretches, so it splits into windows. */
+function pausedOf(windows: number, lines: number, word: string) {
+  const parts: string[] = [];
+  for (let w = 0; w < windows; w += 1) {
+    parts.push(sentenceOf(lines, `${word}${w}`).replace(/\.$/, ""));
+  }
+  return `${parts.join("; ")}.`;
+}
+
 function pdfEscape(text: string) {
   return text.replace(/[\\()]/g, (ch) => `\\${ch}`);
 }
@@ -307,9 +316,9 @@ async function run(name: Engine) {
       mimeType: "application/pdf",
       buffer: Buffer.from(
         fixturePdf([
-          sentenceOf(15, "Lamp"),
-          sentenceOf(14, "After"),
-          sentenceOf(10, "Third"),
+          pausedOf(4, 4, "Lamp"),
+          pausedOf(3, 4, "After"),
+          pausedOf(2, 6, "Third"),
           sentenceOf(6, "Pair"),
           "CHAPTER II",
           sentenceOf(4, "Chapter"),
