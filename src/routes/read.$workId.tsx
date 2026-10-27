@@ -175,12 +175,10 @@ function ReadBody({ directShell }: { directShell: boolean }) {
       return;
     }
     if (directShell && !hydrated) return;
-    // Saved breath, not the route. A tap moves it. Reloading on that change
-    // set the import back to undefined and painted Opening for a frame.
-    const place = resumeTarget(
-      at,
-      hydrated ? useTbr.getState().progress[workId]?.breathIndex : undefined,
-    );
+    // Saved breath, not the route. A tap moves it. Reading it from the store
+    // here, not as a render subscription, keeps the open import on screen.
+    const savedBreath = useTbr.getState().progress[workId]?.breathIndex;
+    const place = resumeTarget(at, hydrated ? savedBreath : undefined);
     if (device) {
       let live = true;
       setWork((current) => (current?.id === workId ? current : undefined));
