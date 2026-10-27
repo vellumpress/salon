@@ -186,21 +186,29 @@ test("a long book only walks the upcoming window", () => {
 test("text after the passage is blurred and washed out, and the focus line stays sharp", () => {
   const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
   const slot = css.match(/\.upcoming-slot,\s*\n\.passage-ahead-body\s*\{[^}]+\}/)?.[0] ?? "";
-  assert.match(slot, /filter:\s*blur\(5px\)/);
+  assert.match(slot, /filter:\s*blur\(8px\)/);
   assert.doesNotMatch(slot, /\.breath-now|\.look-line/);
-  assert.match(css, /\.upcoming-far\s*\{[^}]*filter:\s*blur\(8px\)/);
+  assert.match(css, /\.upcoming-far\s*\{[^}]*display:\s*none/);
+  assert.match(css, /\.passage-ahead-blur\s*\{[^}]*display:\s*none/);
+  assert.doesNotMatch(css, /backdrop-filter:\s*blur/);
   assert.match(
     css,
     /\.upcoming-shade,\s*\n\.passage-ahead-shade\s*\{[^}]*color-mix\(in srgb, var\(--reader-bg\) 50%, transparent\)/,
   );
+  const fold = css.match(/\.upcoming-fold,\s*\n\.passage-ahead\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(fold, /margin-inline:\s*calc\(var\(--column-pad\) \* -1\)/);
+  assert.match(fold, /mask-image:\s*linear-gradient/);
+  const ahead = css.match(/\.breath-sentence\.is-ahead\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(ahead, /filter:\s*blur\(8px\)/);
+  assert.doesNotMatch(ahead, /background|box-decoration-break/);
   const breath = css.match(/\.look-line,\s*\n\.breath-now\s*\{[^}]+\}/)?.[0] ?? "";
   assert.ok(breath.length > 0, "focus line rule missing");
   assert.doesNotMatch(breath, /blur|filter/);
   assert.match(css, /\.breath-sentence\.is-past\s*\{[^}]*opacity:\s*0\.5/);
-  assert.match(css, /\.breath-sentence\.is-ahead\s*\{[^}]*filter:\s*blur\(8px\)/);
   const transparent = css.slice(css.indexOf("@media (prefers-reduced-transparency: reduce)"));
   assert.match(transparent, /\.upcoming-slot,\s*\n\s*\.passage-ahead-body\s*\{[^}]*filter:\s*none/);
   assert.match(transparent, /\.upcoming-shade/);
+  assert.match(transparent, /\.breath-sentence\.is-ahead\s*\{[^}]*filter:\s*none/);
   const motion = css.slice(css.lastIndexOf("@media (prefers-reduced-motion: reduce)"));
   assert.match(motion, /\.reader-frame \*/);
   assert.match(motion, /transition:\s*none\s*!important/);
