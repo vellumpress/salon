@@ -7,6 +7,7 @@ import { shelfWork } from "./catalog/shelf.ts";
 import { displayKindForForm } from "./display-blocks.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
+import { skipWithoutWebKit, webKitRequired } from "./require-webkit.ts";
 import { breathSentenceCount } from "./sentence-step.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
@@ -897,7 +898,7 @@ test(
   { timeout: 900_000 },
   async (t: TestContext) => {
     if (!(await webkitInstalled())) {
-      t.skip("WebKit is not installed");
+      skipWithoutWebKit(t);
       return;
     }
     const stop = await ensureServer();
@@ -917,6 +918,7 @@ test(
     try {
       await runPdfMatrix("chromium");
       if (await webkitInstalled()) await runPdfMatrix("webkit");
+      else if (webKitRequired()) throw new Error("WebKit is not installed; REQUIRE_WEBKIT=1");
       else t.diagnostic("WebKit is not installed; PDF matrix ran on Chromium only");
     } finally {
       await stop();

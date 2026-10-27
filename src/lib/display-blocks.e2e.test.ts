@@ -7,6 +7,7 @@ import { isLocalBound } from "./catalog/full-pdf.ts";
 import { unmeasuredBlocks } from "./display-blocks.ts";
 import { quoteIntervals, sentenceSpans } from "./sentences.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { skipWithoutWebKit, webKitRequired } from "./require-webkit.ts";
 import { planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
@@ -56,8 +57,8 @@ function catalogLongest(max: number) {
 }
 
 /**
- * WebKit is the phone check. The Pages smoke job only installs Chromium,
- * so that layout runs there when WebKit cannot start.
+ * WebKit is the phone check. Deploy smoke installs it and sets
+ * REQUIRE_WEBKIT=1, so a missing browser fails instead of falling back.
  */
 async function launch() {
   try {
@@ -67,6 +68,7 @@ async function launch() {
     if (!/Executable doesn't exist|browserType\.launch|missing dependencies|shared libraries/.test(message)) {
       throw error;
     }
+    if (webKitRequired()) throw new Error("WebKit is not installed; REQUIRE_WEBKIT=1");
     try {
       execFileSync("npx", ["playwright", "install", "webkit"], { stdio: "inherit", timeout: 180_000 });
       return await webkit.launch();
@@ -853,6 +855,7 @@ test(
               message,
             )
           ) {
+            if (webKitRequired()) throw new Error("WebKit is not installed; REQUIRE_WEBKIT=1");
             continue engineLoop;
           }
           throw error;
@@ -1066,6 +1069,6 @@ test(
     } finally {
       await stop();
     }
-    if (!sawWebKit) t.skip("WebKit is not installed");
+    if (!sawWebKit) skipWithoutWebKit(t);
   },
 );

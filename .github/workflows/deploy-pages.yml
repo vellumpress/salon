@@ -7,6 +7,7 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -15,7 +16,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  # Main stays one queue. A pull request must not block that deploy.
+  group: ${{ github.event_name == 'pull_request' && format('pages-pr-{0}', github.event.pull_request.number) || 'pages' }}
   cancel-in-progress: false
 
 jobs:
@@ -53,7 +55,7 @@ jobs:
 
   smoke:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     strategy:
       fail-fast: false
       matrix:
@@ -87,10 +89,10 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          key: playwright-${{ runner.os }}-webkit-${{ hashFiles('package-lock.json') }}
 
-      - name: Install browser
-        run: npx playwright install --with-deps chromium
+      - name: Install browsers
+        run: npx playwright install --with-deps chromium webkit
 
       - name: Fetch the start of this push
         if: github.event_name == 'push' && github.event.before != '0000000000000000000000000000000000000000'
@@ -106,6 +108,8 @@ jobs:
           TAP_STRESS: skip
           CATALOG_WALK: sample
           CATALOG_DIFF_BASE: ${{ github.event.before }}
+          # A missing WebKit fails these jobs. Local runs still skip.
+          REQUIRE_WEBKIT: "1"
 
   build:
     runs-on: ubuntu-latest
@@ -150,6 +154,7 @@ jobs:
           path: dist
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: [unit, smoke, build]
     runs-on: ubuntu-latest
     timeout-minutes: 15

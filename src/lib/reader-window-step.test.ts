@@ -4,6 +4,7 @@ import { existsSync } from "node:fs";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { skipWithoutWebKit } from "./require-webkit.ts";
 import { planGroups } from "./reader-group-tap.ts";
 
 /**
@@ -358,7 +359,7 @@ test(
   { timeout: 300_000 },
   async (t) => {
     if (!(await webkitInstalled())) {
-      t.skip("WebKit is not installed");
+      skipWithoutWebKit(t);
       return;
     }
     await ensureReaderServer();

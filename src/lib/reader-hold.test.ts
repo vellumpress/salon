@@ -4,6 +4,7 @@ import { existsSync, readFileSync } from "node:fs";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { skipWithoutWebKit } from "./require-webkit.ts";
 import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
@@ -440,7 +441,7 @@ test(
   { timeout: 180_000 },
   async (t) => {
     if (!(await webkitInstalled())) {
-      t.skip("WebKit is not installed");
+      skipWithoutWebKit(t);
       return;
     }
     const stop = await ensureReaderServer();

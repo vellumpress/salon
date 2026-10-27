@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer } from "./reader-dev-server.ts";
+import { skipWithoutWebKit } from "./require-webkit.ts";
 import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
@@ -205,8 +206,12 @@ test(
     try {
       const probe = await webkit.launch();
       await probe.close();
-    } catch {
-      t.skip("WebKit is not installed");
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      if (!/Executable doesn't exist|browserType\.launch|missing dependencies|shared libraries/.test(message)) {
+        throw error;
+      }
+      skipWithoutWebKit(t);
       return;
     }
     const stop = await ensureReaderServer();
