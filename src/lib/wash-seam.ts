@@ -119,3 +119,83 @@ export function washSeams(
 export function washSeamDetectorSource(): string {
   return DETECT_SOURCE;
 }
+
+/**
+ * Below the lit passage the wash should keep soft shapes: some luminance
+ * variance, and no sharp neighbor steps that would read as letter edges.
+ * A flat field is empty. A stroke of 18 levels or more in one pixel is an
+ * outline. Kept as plain source for node and WebKit.
+ */
+const FIELD_SOURCE = `function judgeWashField(data, width, height, band) {
+  const left = Math.max(0, band.left | 0);
+  const right = Math.min(width - 2, band.right | 0);
+  const top = Math.max(0, band.top | 0);
+  const bottom = Math.min(height - 2, band.bottom | 0);
+  const lum = (x, y) => {
+    const i = (width * y + x) * 4;
+    return 0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2];
+  };
+  let n = 0;
+  let sum = 0;
+  let sum2 = 0;
+  let sharp = 0;
+  let compared = 0;
+  for (let y = top; y < bottom; y += 1) {
+    for (let x = left; x < right; x += 1) {
+      const here = lum(x, y);
+      n += 1;
+      sum += here;
+      sum2 += here * here;
+      const dx = lum(x + 1, y) - here;
+      const dy = lum(x, y + 1) - here;
+      const ax = dx < 0 ? -dx : dx;
+      const ay = dy < 0 ? -dy : dy;
+      compared += 2;
+      if (ax >= 18) sharp += 1;
+      if (ay >= 18) sharp += 1;
+    }
+  }
+  const mean = n ? sum / n : 0;
+  const variance = n ? sum2 / n - mean * mean : 0;
+  const rounded = Math.round(variance * 100) / 100;
+  let verdict = "shapes";
+  if (rounded < 0.8) verdict = "empty";
+  else if (sharp >= 60) verdict = "legible";
+  return {
+    variance: rounded,
+    sharp: sharp,
+    compared: compared,
+    mean: Math.round(mean * 10) / 10,
+    n: n,
+    verdict: verdict,
+  };
+}`;
+
+export type WashField = {
+  variance: number;
+  sharp: number;
+  compared: number;
+  mean: number;
+  n: number;
+  verdict: "empty" | "shapes" | "legible";
+};
+
+const judgeWashField = new Function(`return (${FIELD_SOURCE})`)() as (
+  data: Uint8Array | Uint8ClampedArray,
+  width: number,
+  height: number,
+  band: WashBand,
+) => WashField;
+
+export function washField(
+  data: Uint8Array | Uint8ClampedArray,
+  width: number,
+  height: number,
+  band: WashBand,
+): WashField {
+  return judgeWashField(data, width, height, band);
+}
+
+export function washFieldSource(): string {
+  return FIELD_SOURCE;
+}
