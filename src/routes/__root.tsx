@@ -167,7 +167,12 @@ export const Route = createRootRoute({
   component: () => (
     <html lang="en" className="antialiased" suppressHydrationWarning>
       <head>
-        <style>{FACE_HOLD_CSS}</style>
+        {/*
+          data-face-hold lets the Pages build move this style ahead of the
+          shell paint style. React hydrates its style onto the first <style>
+          in head, and the paint style in front of it is error #418.
+        */}
+        <style data-face-hold="1">{FACE_HOLD_CSS}</style>
         <HeadContent />
       </head>
       <body>

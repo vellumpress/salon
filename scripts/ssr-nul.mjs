@@ -1255,11 +1255,32 @@ export function collectShellPrecache(destDir) {
  * Pages-only: less sticky HTML shell, plus a hard NUL strip of every HTML file.
  * @param {string} destDir
  */
+/**
+ * React hydrates the face-hold style onto the first `<style>` in `<head>`.
+ * The shell paint style is injected at the top, so it has to follow the
+ * face hold. In front of it, every direct open raises hydration error #418
+ * and the client rebuilds the tree.
+ * @param {string} html
+ */
+export function placeFaceHoldStyleFirst(html) {
+  if (typeof html !== "string") return html;
+  const match = html.match(/<style\b[^>]*\bdata-face-hold=(?:"1"|'1')[^>]*>[\s\S]*?<\/style>/);
+  if (!match) return html;
+  const paint = "<style data-shell-paint>";
+  const faceAt = html.indexOf(match[0]);
+  const paintAt = html.indexOf(paint);
+  if (paintAt === -1 || faceAt < paintAt) return html;
+  const without = html.slice(0, faceAt) + html.slice(faceAt + match[0].length);
+  const at = without.indexOf(paint);
+  if (at === -1) return html;
+  return without.slice(0, at) + match[0] + without.slice(at);
+}
+
 export function applyPagesHtmlSafety(destDir) {
   const indexPath = join(destDir, "index.html");
   if (existsSync(indexPath)) {
     const html = readFileSync(indexPath, "utf8");
-    const next = injectShellNetworkHints(html);
+    const next = placeFaceHoldStyleFirst(injectShellNetworkHints(html));
     if (next !== html) writeFileSync(indexPath, next);
   }
   const listed = collectShellPrecache(destDir);

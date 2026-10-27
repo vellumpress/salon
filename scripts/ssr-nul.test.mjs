@@ -11,6 +11,7 @@ import {
   SHELL_CACHE_NAME,
   applyPagesHtmlSafety,
   injectShellNetworkHints,
+  placeFaceHoldStyleFirst,
   collectShellPrecache,
   FONT_FILES,
   renderBootWatchScript,
@@ -130,6 +131,20 @@ test("pages safety strips index and 404 without touching hashed assets", () => {
   assert.match(html, /data-boot-watch/);
   assert.match(html, /data-boot-watch[\s\S]*data-shell-network/);
   assert.doesNotMatch(renderBootWatchScript(), /type="module"/);
+});
+
+test("the face-hold style sits ahead of the shell paint style", () => {
+  const face = `<style data-face-hold="1">html:not([data-faces="ready"]) body { color: transparent !important; }</style>`;
+  const paint = `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style>`;
+  const html = `<head><script data-spa-pages-restore></script>${paint}<title>tbr.</title>${face}</head>`;
+  const next = placeFaceHoldStyleFirst(html);
+  assert.ok(next.indexOf(face) < next.indexOf(paint));
+  assert.equal(placeFaceHoldStyleFirst(next), next);
+  assert.equal(placeFaceHoldStyleFirst(`<head>${paint}</head>`), `<head>${paint}</head>`);
+  assert.equal(
+    placeFaceHoldStyleFirst(`<head>${face}${paint}</head>`),
+    `<head>${face}${paint}</head>`,
+  );
 });
 
 test("a new shell is stored only after its entry assets exist", () => {
