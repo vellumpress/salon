@@ -562,6 +562,12 @@ const COUNTRY_PLACE: Record<string, WorkPlace> = {
  * placeFor() stays null for these ids, even when countryFor() has an origin
  * country; PlaceChip shows the label alone.
  */
+/**
+ * Mira Tue 27 Oct 2026 PM SERVANTS: the chip for The Chief with the Wonderful Servants, as printed ("the lands of Wakea and Papa",
+ * l.1988–89 and l.2011–12). Pending a CoS ruling on the wording; swap it here only.
+ */
+export const CHIEF_SERVANTS_CHIP = "Lands of Wakea and Papa";
+
 export const CHIP_ONLY_PLACE: Record<string, string> = {
   "mary-magdalen": "Tiberias, Galilee",
   // PAN-TADEUSZ: the poem's setting as it names it. The silhouettes are hand-drawn
@@ -580,6 +586,9 @@ export const CHIP_ONLY_PLACE: Record<string, string> = {
   // Mira Mon 26 Oct 2026 AM BRIGHT NIGHTS (Cormorants pattern): the fire takes "the Filnbaum Forest" (l.2836, 2846, 2903, 2954), as printed.
   // There is no shape for it; never draw one ad hoc. countryFor() stays empty: no Rosegger entry in AUTHOR_COUNTRY, and English has no default.
   "when-the-bright-nights-were": "Filnbaum Forest",
+  // Mira Tue 27 Oct 2026 PM SERVANTS (Cormorants pattern): the travellers seek "the lands of Wakea and Papa", the land of the gods; Oahu is only where the chief sets out.
+  // There is no shape for it; never draw one ad hoc. countryFor() stays empty: no Westervelt entry in AUTHOR_COUNTRY and no WORK_COUNTRY entry.
+  "the-chief-with-the-wonderful-servants": CHIEF_SERVANTS_CHIP,
 };
 
 export { NO_PRINTED_PLACE };

@@ -1305,6 +1305,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-shipwrecked-sailor",
   // Mira Mon 26 Oct 2026 PM NEIGHBOURS — The Story of the Two Neighbours (Folk Tales from Tibet, tr. O'Connor, 1906) follows The Shipwrecked Sailor at the end of Next, plain Next. Never Featured; off every Ritual lane.
   "the-story-of-the-two-neighbours",
+  // Mira Tue 27 Oct 2026 PM SERVANTS — The Chief with the Wonderful Servants (Hawaiian legend, tr. Westervelt, 1916) follows The Story of the Two Neighbours at the end of Next, Next carefully (heads-up on the card: an archer knocks down the woman running against them). Never Featured; off every Ritual lane (never Unwind or Before sleep).
+  "the-chief-with-the-wonderful-servants",
 ] as const;
 
 /**

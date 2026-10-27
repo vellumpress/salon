@@ -497,6 +497,8 @@ const BLURBS: Record<string, string> = {
     "Home from a voyage, a sailor tells his lord how a wave cast him alone on an island of plenty, and how the great golden serpent who ruled it sent him home laden with perfumes.",
   "the-story-of-the-two-neighbours":
     "A greedy rich man tries to copy his kind neighbour's good fortune by breaking a sparrow's leg on purpose, and finds himself repaying a debt from a former life.",
+  "the-chief-with-the-wonderful-servants":
+    "A heads-up before you start: to win a race for his chief, an archer shoots at the woman running against them and knocks her down four times, the last with a blow to the chest. A chief sets out for the lands of the gods with six strange companions, one who outruns the sun and others who see, hear and shoot impossibly far, and their gifts help him win a chiefess's riddles.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
