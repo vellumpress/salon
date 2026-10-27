@@ -1,8 +1,10 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useEffect, useState, type DragEvent, type FormEvent } from "react";
+import { useEffect, useLayoutEffect, useState, type DragEvent, type FormEvent } from "react";
+import { PagesShell } from "@/components/pages-shell";
 import { fetchPage } from "@/lib/fetch-page";
 import { useTbr } from "@/lib/store";
 import type { Work } from "@/lib/literature";
+import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import { useChromeStatusBar } from "@/lib/use-reader-daylight";
 
 export const Route = createFileRoute("/page")({
@@ -17,6 +19,19 @@ function looksLikePdf(name: string, type: string) {
 }
 
 function ImportPage() {
+  // A direct open is the wordmark shell. Painting the form into it raises
+  // hydration error #418 on WebKit. Match that document first.
+  const [booted, setBooted] = useState(
+    () => typeof document !== "undefined" && !documentIsWordmarkShell(document),
+  );
+  useLayoutEffect(() => {
+    setBooted(true);
+  }, []);
+  if (!booted) return <PagesShell />;
+  return <ImportFrame />;
+}
+
+function ImportFrame() {
   const [live, setLive] = useState(false);
   useChromeStatusBar();
   useEffect(() => setLive(true), []);

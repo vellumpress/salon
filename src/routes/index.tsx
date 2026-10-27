@@ -1,5 +1,7 @@
 import { createFileRoute, Link, useRouter } from "@tanstack/react-router";
-import { useEffect, useMemo } from "react";
+import { useEffect, useLayoutEffect, useMemo, useState } from "react";
+import { PagesShell } from "@/components/pages-shell";
+import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import { DailyScoreChip } from "@/components/daily-score-chip";
 import { ResumeLink, useLastRead, usePersistHydrated } from "@/components/resume-link";
 import { YouFriendsMark } from "@/components/you-friends-mark";
@@ -26,6 +28,19 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
+  // A direct open is the wordmark shell. Painting the doors into it raises
+  // hydration error #418 on WebKit. Match that document first.
+  const [booted, setBooted] = useState(
+    () => typeof document !== "undefined" && !documentIsWordmarkShell(document),
+  );
+  useLayoutEffect(() => {
+    setBooted(true);
+  }, []);
+  if (!booted) return <PagesShell />;
+  return <HomeBody />;
+}
+
+function HomeBody() {
   const router = useRouter();
   const last = useLastRead();
   const hydrated = usePersistHydrated();
