@@ -6,10 +6,17 @@ import { cn } from "@/lib/utils";
 
 function SlideLink({ slide, children }: { slide: DoorSlide; children: ReactNode }) {
   const className =
-    "door-slide-link flex h-full min-w-0 flex-col justify-end px-5 py-4 text-inherit no-underline sm:px-8 sm:py-5";
+    "door-slide-link flex h-full min-w-0 flex-col justify-end text-inherit no-underline";
   if (slide.kind === "rituals") {
     return (
       <Link to="/rituals" search={{ lane: slide.lane }} preload="intent" className={className}>
+        {children}
+      </Link>
+    );
+  }
+  if (slide.kind === "rituals-home") {
+    return (
+      <Link to="/rituals" preload="intent" className={className}>
         {children}
       </Link>
     );
@@ -104,8 +111,8 @@ function SlideCopy({ slide }: { slide: DoorSlide }) {
   return (
     <>
       <span className="type-kicker opacity-70">{slide.kicker}</span>
-      <span className="pillar-title door-slide-title mt-1">{slide.title}</span>
-      {slide.line ? <span className="type-pitch pillar-pitch door-slide-line mt-2">{slide.line}</span> : null}
+      <span className="pillar-title door-slide-title">{slide.title}</span>
+      {slide.line ? <span className="type-pitch pillar-pitch door-slide-line">{slide.line}</span> : null}
     </>
   );
 }
@@ -155,6 +162,7 @@ export function DoorCarousel({
     const track = trackRef.current;
     if (!node || !track || shown.length < 2) return;
     offsetRef.current = 0;
+    track.style.transform = "translate3d(0,0,0)";
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
     const syncReduced = () => {
       reducedRef.current = media.matches;

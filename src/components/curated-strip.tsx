@@ -107,18 +107,6 @@ export function CuratedStrip({ fill }: { fill: Fill }) {
   const { ready, day, rows } = useDailyMix();
   const teaser = mixTeaser(rows);
   const slides = useMemo(() => curatedDoorSlides(rows), [rows]);
-  const shown =
-    slides.length > 0
-      ? slides
-      : [
-          {
-            id: "today",
-            kicker: "Today",
-            title: "Curated",
-            line: teaser,
-            kind: "curated" as const,
-          },
-        ];
 
   return (
     <DoorCarousel
@@ -127,8 +115,8 @@ export function CuratedStrip({ fill }: { fill: Fill }) {
       aria={`Curated. ${teaser}`}
       fill={fill}
       seconds={DOOR_LOOP_SECONDS.curated}
-      slides={shown}
-      cta={{ kind: "curated", label: "Today's shelves" }}
+      slides={slides}
+      cta={{ kind: "curated", label: "See today's picks" }}
       mark={{
         "data-home-curated": "",
         "data-mix-ready": ready ? "1" : "0",

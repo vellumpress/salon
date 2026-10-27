@@ -167,11 +167,11 @@ function Home() {
           <DoorCarousel
             door="rituals"
             label="Rituals"
-            aria="Rituals — timed reading sits"
+            aria="Rituals"
             fill={doorFills[0] ?? "yellow"}
             seconds={DOOR_LOOP_SECONDS.rituals}
             slides={ritualSlides}
-            cta={{ kind: "rituals", label: "All the lanes" }}
+            cta={{ kind: "rituals", label: "See them all" }}
           />
           <DoorCarousel
             door="together"
@@ -180,7 +180,7 @@ function Home() {
             fill={doorFills[1] ?? "yellow"}
             seconds={DOOR_LOOP_SECONDS.together}
             slides={togetherSlides}
-            cta={{ kind: "together", label: "Read together" }}
+            cta={{ kind: "together", label: "Come read" }}
           />
           <CuratedStrip fill={doorFills[2] ?? "yellow"} />
         </>
