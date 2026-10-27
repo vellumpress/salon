@@ -7,6 +7,7 @@ import { washSeamDetectorSource, washSeams, type WashBand, type WashSeam } from 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
 const BOOK = "/salon/read/the-house-of-mirth?at=2056";
+const MOGENS = "/salon/read/mogens-and-other-stories?at=1";
 
 function paint(width: number, height: number, rgb: [number, number, number]) {
   const data = new Uint8ClampedArray(width * height * 4);
@@ -82,11 +83,11 @@ async function webkitInstalled() {
   }
 }
 
-async function openReader(page: Page, when: string) {
+async function openReader(page: Page, when: string, path = BOOK) {
   let last: unknown;
   for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
-      await page.goto(`${ORIGIN}${BOOK}`, { waitUntil: "domcontentloaded" });
+      await page.goto(`${ORIGIN}${path}`, { waitUntil: "domcontentloaded" });
       const sit = page.locator("button", { hasText: /^Sit$/ }).first();
       if (await sit.count()) await sit.click().catch(() => {});
       await page.locator(".breath-now").waitFor({ timeout: 30_000 });
@@ -279,21 +280,103 @@ async function assertClean(page: Page, label: string) {
   assert.deepEqual(lit, [], `${label} lit passage: ${JSON.stringify(lit)}`);
 }
 
+/** Mogens keeps the rest of the breath in .passage-ahead. That used to be a lighter column. */
+async function assertPageColoredWash(page: Page, label: string) {
+  await openReader(page, label === "off" ? "off" : label, MOGENS);
+  const png = (await page.screenshot({ type: "png" })).toString("base64");
+  const stats = await page.evaluate(
+    async ({ png: source, fn }) => {
+      const blob = await (await fetch(`data:image/png;base64,${source}`)).blob();
+      const bmp = await createImageBitmap(blob);
+      const canvas = document.createElement("canvas");
+      canvas.width = bmp.width;
+      canvas.height = bmp.height;
+      const ctx = canvas.getContext("2d", { willReadFrequently: true });
+      if (!ctx) throw new Error("no canvas");
+      ctx.drawImage(bmp, 0, 0);
+      const image = ctx.getImageData(0, 0, bmp.width, bmp.height);
+      const { data, width, height } = image;
+      const lum = (x: number, y: number) => {
+        const i = (width * y + x) * 4;
+        return 0.2126 * data[i]! + 0.7152 * data[i + 1]! + 0.0722 * data[i + 2]!;
+      };
+      const focus = document.querySelector("[data-focus-sentence]");
+      const rects = focus ? [...focus.getClientRects()].filter((rect) => rect.width > 2 && rect.height > 2) : [];
+      const bottom = rects.reduce((max, rect) => Math.max(max, rect.bottom), 0);
+      const dpr = window.devicePixelRatio;
+      const y0 = Math.min(height - 2, Math.round((bottom + 80) * dpr));
+      const y1 = Math.min(height - 1, Math.round((bottom + 150) * dpr));
+      const mean = (x0: number, x1: number) => {
+        let n = 0;
+        let sum = 0;
+        for (let y = y0; y < y1; y += 2) {
+          for (let x = x0; x < x1; x += 2) {
+            sum += lum(x, y);
+            n += 1;
+          }
+        }
+        return n ? sum / n : -1;
+      };
+      const detect = new Function(
+        "data",
+        "width",
+        "height",
+        "band",
+        `return (${fn})(data, width, height, band)`,
+      ) as (
+        data: Uint8ClampedArray,
+        width: number,
+        height: number,
+        band: WashBand,
+      ) => WashSeam[];
+      const fold = document.querySelector(".passage-ahead, .upcoming-fold");
+      const box = fold?.getBoundingClientRect();
+      const shade = document.querySelector(".passage-ahead-shade, .upcoming-shade");
+      return {
+        margin: mean(Math.round(4 * dpr), Math.round(14 * dpr)),
+        column: mean(Math.round(80 * dpr), Math.round(220 * dpr)),
+        seams: detect(data, width, height, {
+          top: Math.max(1, y0),
+          bottom: y1,
+          left: 8,
+          right: width - 8,
+        }),
+        foldLeft: box?.left ?? null,
+        foldWidth: box?.width ?? null,
+        pane: window.innerWidth,
+        shade: shade ? getComputedStyle(shade).backgroundColor : "",
+      };
+    },
+    { png, fn: washSeamDetectorSource() },
+  );
+  const delta = Math.abs(stats.margin - stats.column);
+  assert.ok(delta < 4, `${label} wash is a patch (${stats.margin.toFixed(1)} vs ${stats.column.toFixed(1)})`);
+  assert.deepEqual(stats.seams, [], `${label} Mogens seam ${JSON.stringify(stats.seams)}`);
+  assert.ok(stats.foldLeft != null && Math.abs(stats.foldLeft) <= 1, `${label} wash inset ${stats.foldLeft}`);
+  assert.ok(
+    stats.foldWidth != null && Math.abs(stats.foldWidth - stats.pane) <= 2,
+    `${label} wash width ${stats.foldWidth}`,
+  );
+  assert.doesNotMatch(stats.shade, /\/\s*0?\.[0-9]/, `${label} shade is translucent ${stats.shade}`);
+}
+
 test(
   "the spotlight wash has no rectangular seam on a phone",
-  { timeout: 180_000 },
+  { timeout: 360_000 },
   async (t) => {
     await ensureReaderServer();
     const browser = await chromium.launch();
     try {
       const evening = await phone(browser, "evening");
       await assertClean(evening, "evening");
+      await assertPageColoredWash(evening, "evening");
       await evening.context().close();
       const paper = await phone(browser, "off");
       await assertClean(paper, "off");
       await paper.context().close();
       const night = await phone(browser, "night");
       await assertClean(night, "night");
+      await assertPageColoredWash(night, "night");
       await night.context().close();
     } finally {
       await browser.close();
@@ -307,12 +390,14 @@ test(
     try {
       const evening = await phone(browserKit, "evening");
       await assertClean(evening, "evening");
+      await assertPageColoredWash(evening, "evening");
       await evening.context().close();
       const paper = await phone(browserKit, "off");
       await assertClean(paper, "off");
       await paper.context().close();
       const night = await phone(browserKit, "night");
       await assertClean(night, "night");
+      await assertPageColoredWash(night, "night");
       await night.context().close();
     } finally {
       await browserKit.close();
