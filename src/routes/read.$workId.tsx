@@ -130,13 +130,22 @@ function workReadyForAt(book: Work | null | undefined, at: number | undefined) {
   return book;
 }
 
+/** A second IndexedDB read is the same sitting. A new object restarts the reader. */
+function sameLoadedImport(current: Work | null | undefined, next: Work | null) {
+  if (!current || !next) return false;
+  if (current.id !== next.id || current.title !== next.title) return false;
+  if (current.breaths.length !== next.breaths.length) return false;
+  return current.breaths[0]?.id === next.breaths[0]?.id;
+}
+
 function ReadBody({ directShell }: { directShell: boolean }) {
   const { workId } = Route.useParams();
   const { shuffle, sit, pair, at: routeAt, episode, echo, hosted } = Route.useSearch();
   const hydrated = usePersistHydrated();
-  const savedBreath = useTbr((s) => s.progress[workId]?.breathIndex);
   // Hydration recovery can drop `at` from the router while the address keeps it.
   // Painting that as breath 0 is the catalog walk's "opened on chapter I".
+  // The saved breath is not read here. A tap writes it, and a subscription
+  // would rebuild the resume target and reload the sitting between taps.
   const at =
     routeAt ??
     (typeof window !== "undefined"
@@ -146,7 +155,6 @@ function ReadBody({ directShell }: { directShell: boolean }) {
   const device = isDeviceImport(workId);
   const held = !device && workId !== "page" && isEnReadableOff(canonicalWorkId(workId));
   const meta = workId === "page" ? pageWork : shelfWork(workId);
-  const place = resumeTarget(at, hydrated ? savedBreath : undefined);
   const [work, setWork] = useState<Work | null | undefined>(() => {
     if (workId === "page") return pageWork;
     if (device) return undefined;
@@ -167,11 +175,19 @@ function ReadBody({ directShell }: { directShell: boolean }) {
       return;
     }
     if (directShell && !hydrated) return;
+    // Saved breath, not the route. A tap moves it. Reloading on that change
+    // set the import back to undefined and painted Opening for a frame.
+    const place = resumeTarget(
+      at,
+      hydrated ? useTbr.getState().progress[workId]?.breathIndex : undefined,
+    );
     if (device) {
       let live = true;
-      setWork(undefined);
+      setWork((current) => (current?.id === workId ? current : undefined));
       void getImport(workId).then((row) => {
-        if (live) setWork(row?.work ?? null);
+        if (!live) return;
+        const next = row?.work ?? null;
+        setWork((current) => (sameLoadedImport(current, next) ? current : next));
       });
       return () => {
         live = false;
@@ -216,7 +232,7 @@ function ReadBody({ directShell }: { directShell: boolean }) {
     return () => {
       live = false;
     };
-  }, [workId, pageWork, device, held, at, place, hydrated, directShell]);
+  }, [workId, pageWork, device, held, at, hydrated, directShell]);
 
   if (directShell && (!hydrated || work === undefined)) return <PagesShell />;
 

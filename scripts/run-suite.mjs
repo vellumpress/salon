@@ -31,6 +31,7 @@ export const smokeFiles = [
   "src/lib/reader-window-step.test.ts",
   "src/lib/reader-left-hold.test.ts",
   "src/lib/reader-tap-guard.test.ts",
+  "src/lib/reader-import-blink.test.ts",
   "src/lib/catalog/merge-stop-layout.test.ts",
 ];
 
@@ -116,6 +117,7 @@ export const allTsFiles = [
   "src/lib/reader-window-step.test.ts",
   "src/lib/reader-left-hold.test.ts",
   "src/lib/reader-tap-guard.test.ts",
+  "src/lib/reader-import-blink.test.ts",
   "src/lib/sentence-step.test.ts",
   "src/lib/catalog-walk.test.ts",
   "src/lib/reader-tap-stress.test.ts",
