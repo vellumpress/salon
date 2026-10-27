@@ -6,7 +6,7 @@ import { RITUAL_LANES } from "./rituals.ts";
 import { SHELF, shelfWork } from "./shelf.ts";
 import { REGION_SHAPES } from "./region-shapes.ts";
 import { countryFor } from "./countries.ts";
-import { chipOnlyLabel, CHIP_ONLY_PLACE, NO_PRINTED_PLACE, placeFor, placeForId, surfacedPlaceWorkIds } from "./places.ts";
+import { CHIEF_SERVANTS_CHIP, chipOnlyLabel, CHIP_ONLY_PLACE, NO_PRINTED_PLACE, placeFor, placeForId, surfacedPlaceWorkIds } from "./places.ts";
 
 test("named settings keep reader-friendly labels and real regions", () => {
   const expect = {
@@ -448,7 +448,7 @@ test("POST-#225 places reuse Peru and Russia; no new region key", () => {
 });
 
 test("chip-only settings carry a label but no country key and no silhouette", () => {
-  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar", "serbian-lyrics": "Serbia", "the-cormorants-of-andvaer": "Andvær", "when-the-bright-nights-were": "Filnbaum Forest" });
+  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar", "serbian-lyrics": "Serbia", "the-cormorants-of-andvaer": "Andvær", "when-the-bright-nights-were": "Filnbaum Forest", "the-chief-with-the-wonderful-servants": CHIEF_SERVANTS_CHIP });
   const mary = shelfWork("mary-magdalen");
   assert.ok(mary);
   assert.equal(placeFor(mary!), null);
@@ -985,4 +985,19 @@ test("Mon 26 Oct AM When the Bright Nights Were: chip-only Filnbaum Forest as pr
   // No Rosegger string is in AUTHOR_COUNTRY.
   assert.equal(work!.author, "Peter Rosegger (tr. Edna Worthley Underwood)");
   assert.equal(work!.language, "English");
+});
+
+test("Tue 27 Oct PM The Chief with the Wonderful Servants: chip-only Lands of Wakea and Papa as printed, no silhouette, no country (Cormorants pattern)", () => {
+  const work = shelfWork("the-chief-with-the-wonderful-servants");
+  assert.ok(work);
+  // The wording may change on a CoS ruling; it lives in one constant.
+  assert.ok(CHIEF_SERVANTS_CHIP.length > 0);
+  assert.equal(chipOnlyLabel("the-chief-with-the-wonderful-servants"), CHIEF_SERVANTS_CHIP);
+  assert.equal(CHIP_ONLY_PLACE["the-chief-with-the-wonderful-servants"], CHIEF_SERVANTS_CHIP);
+  assert.equal(placeFor(work!), null);
+  assert.equal(placeForId("the-chief-with-the-wonderful-servants"), null);
+  assert.equal(NO_PRINTED_PLACE.has("the-chief-with-the-wonderful-servants"), false);
+  assert.equal(countryFor(work!), "");
+  // No Westervelt string is in AUTHOR_COUNTRY.
+  assert.equal(work!.author, "Anonymous (tr. W. D. Westervelt)");
 });
