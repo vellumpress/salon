@@ -12,18 +12,26 @@ import type { HostedSit } from "./hosted-sit.ts";
 const DAY = "2026-10-19";
 
 test("home doors loop at different slow speeds", () => {
-  assert.equal(DOOR_LOOP_SECONDS.rituals, 40);
-  assert.equal(DOOR_LOOP_SECONDS.together, 30);
-  assert.equal(DOOR_LOOP_SECONDS.curated, 50);
+  assert.equal(DOOR_LOOP_SECONDS.rituals, 80);
+  assert.equal(DOOR_LOOP_SECONDS.together, 60);
+  assert.equal(DOOR_LOOP_SECONDS.curated, 100);
 });
 
-test("ritual door shows the hour lanes and a real book on each", () => {
+test("ritual door starts on Rituals, then a real book for each hour", () => {
   const slides = ritualDoorSlides(3);
+  assert.equal(slides[0]?.id, "heading");
+  assert.equal(slides[0]?.title, "Rituals");
+  assert.equal(slides[0]?.kicker, "Right now");
   assert.deepEqual(
-    slides.map((slide) => slide.title),
-    ["Before sleep", "Waking up", "On a walk", "Unwind"],
+    slides.slice(1).map((slide) => slide.title),
+    [
+      "Wind down with a story",
+      "Ease into your morning",
+      "Take a story on your walk",
+      "Let the day go",
+    ],
   );
-  for (const slide of slides) {
+  for (const slide of slides.slice(1)) {
     assert.equal(slide.kind, "rituals");
     if (slide.kind !== "rituals") continue;
     assert.equal(slide.lane, slide.id);
@@ -33,14 +41,21 @@ test("ritual door shows the hour lanes and a real book on each", () => {
   }
 });
 
-test("together door uses live rooms and friends, never a made-up reader", () => {
+test("together door starts on Read together and never invents a reader", () => {
   const cold = togetherDoorSlides({});
+  assert.equal(cold[0]?.title, "Read together");
   assert.deepEqual(
-    cold.map((slide) => slide.title),
-    ["Open a room", "Sit with a friend", "Host a sit", "Start a book club"],
+    cold.slice(1).map((slide) => slide.title),
+    [
+      "Start a reading room",
+      "Read side by side",
+      "Read with a friend tonight",
+      "Start a book club",
+    ],
   );
-  const text = cold.map((slide) => `${slide.title} ${slide.line}`).join(" ");
+  const text = cold.map((slide) => `${slide.kicker} ${slide.title} ${slide.line}`).join(" ");
   assert.doesNotMatch(text, /Ada Voss|Jules Mallard|Nora Chen|Vera S\.|Ivo Reed/);
+  assert.doesNotMatch(text, /\b(sit|sits|sitting|lane|lanes|door|doors)\b|for the hour/i);
 
   const sit: HostedSit = {
     id: "sit-1",
@@ -69,28 +84,31 @@ test("together door uses live rooms and friends, never a made-up reader", () => 
       },
     ],
   });
-  assert.equal(warm[0]?.title, "Passing");
-  assert.equal(warm[0]?.kind, "sit");
-  assert.equal(warm[1]?.title, "Botchan");
-  assert.equal(warm[1]?.kind, "read");
-  assert.equal(warm.length, 4);
+  assert.equal(warm[0]?.title, "Read together");
+  assert.equal(warm[1]?.title, "Passing");
+  assert.equal(warm[1]?.kind, "sit");
+  assert.equal(warm[2]?.title, "Botchan");
+  assert.equal(warm[2]?.kind, "read");
+  assert.equal(warm.length, 5);
 });
 
-test("curated door takes because-you-read, a place, and a genre from the real mix", () => {
+test("curated door starts on Curated, then a place and a shelf from the real mix", () => {
   const cold = curatedDoorSlides(homeMixRows(emptyMixHistory(), DAY));
-  assert.ok(cold.length >= 3 && cold.length <= 4, `cold curated slides ${cold.length}`);
+  assert.equal(cold[0]?.title, "Curated");
+  assert.ok(cold.length >= 4 && cold.length <= 5, `cold curated slides ${cold.length}`);
   assert.equal(
     cold.some((slide) => slide.title.startsWith("Because you read")),
     false,
   );
-  assert.ok(cold.some((slide) => slide.kicker === "A place"));
-  assert.ok(cold.some((slide) => slide.kicker === "A shelf"));
+  assert.ok(cold.some((slide) => slide.title.startsWith("Travel to ")));
+  assert.ok(cold.some((slide) => slide.kicker === "If you like"));
 
   const history = emptyMixHistory();
   history.opened = ["the-house-of-mirth"];
   history.minutesByWork["the-house-of-mirth"] = 40;
   const warm = curatedDoorSlides(homeMixRows(history, DAY));
+  assert.equal(warm[0]?.title, "Curated");
   assert.ok(warm.some((slide) => slide.title.startsWith("Because you read")));
-  assert.ok(warm.some((slide) => slide.kicker === "A place"));
-  assert.ok(warm.length <= 4);
+  assert.ok(warm.some((slide) => slide.title.startsWith("Travel to ")));
+  assert.ok(warm.length <= 5);
 });

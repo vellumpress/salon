@@ -6,9 +6,9 @@ import { shelfWork } from "./catalog/shelf.ts";
 
 /** One full pass of each home door. Different speeds, all slow. */
 export const DOOR_LOOP_SECONDS = {
-  rituals: 40,
-  together: 30,
-  curated: 50,
+  rituals: 80,
+  together: 60,
+  curated: 100,
 } as const;
 
 /** Lanes that name an hour. The home door shows these, not every chip. */
@@ -24,6 +24,7 @@ type SlideCopy = {
 export type DoorSlide = SlideCopy &
   (
     | { kind: "rituals"; lane: string }
+    | { kind: "rituals-home" }
     | { kind: "together" }
     | { kind: "together-room" }
     | { kind: "together-host" }
@@ -43,33 +44,55 @@ export type DoorCta = {
 const TOGETHER_ACTIONS: DoorSlide[] = [
   {
     id: "room",
-    kicker: "Live",
-    title: "Open a room",
-    line: "Two phones, one page, chat while you read.",
+    kicker: "Now",
+    title: "Start a reading room",
+    line: "Two phones, one page, talk as you go.",
     kind: "together-room",
   },
   {
     id: "friend",
-    kicker: "Friends",
-    title: "Sit with a friend",
+    kicker: "A friend",
+    title: "Read side by side",
     line: "Share a link and read the same hour.",
     kind: "shuffle",
   },
   {
     id: "host",
-    kicker: "A night",
-    title: "Host a sit",
-    line: "Name the hour. The door stays open.",
+    kicker: "Tonight",
+    title: "Read with a friend tonight",
+    line: "Pick a time and they can drop in.",
     kind: "together-host",
   },
   {
     id: "club",
     kicker: "A club",
     title: "Start a book club",
-    line: "A standing night, the same book.",
+    line: "Same book, week after week.",
     kind: "together-club",
   },
 ];
+
+const RITUAL_CARD: Record<(typeof RITUAL_DOOR_LANE_IDS)[number], { kicker: string; title: string }> = {
+  "before-sleep": { kicker: "Tonight", title: "Wind down with a story" },
+  "waking-up": { kicker: "Morning", title: "Ease into your morning" },
+  "on-a-walk": { kicker: "Outside", title: "Take a story on your walk" },
+  unwind: { kicker: "Later", title: "Let the day go" },
+};
+
+function headingSlide(
+  door: "rituals" | "together" | "curated",
+  kicker: string,
+  title: string,
+  line: string,
+): DoorSlide {
+  if (door === "rituals") {
+    return { id: "heading", kicker, title, line, kind: "rituals-home" };
+  }
+  if (door === "together") {
+    return { id: "heading", kicker, title, line, kind: "together" };
+  }
+  return { id: "heading", kicker, title, line, kind: "curated" };
+}
 
 function workLine(title: string, author: string) {
   const name = title.trim();
@@ -78,19 +101,27 @@ function workLine(title: string, author: string) {
   return who ? `${name} · ${who}` : name;
 }
 
-/** Before sleep, waking, a walk, unwind — each opens that lane. */
+/** The section itself, then a story for sleep, morning, a walk, or unwinding. */
 export function ritualDoorSlides(visit: number): DoorSlide[] {
-  const slides: DoorSlide[] = [];
+  const slides: DoorSlide[] = [
+    headingSlide(
+      "rituals",
+      "Right now",
+      "Rituals",
+      "Before sleep, waking, a walk, or unwind.",
+    ),
+  ];
   for (const id of RITUAL_DOOR_LANE_IDS) {
     const lane = RITUAL_LANES.find((row) => row.id === id);
-    if (!lane) continue;
+    const copy = RITUAL_CARD[id];
+    if (!lane || !copy) continue;
     const lead = ritualLaneStack(lane, visit)[0];
     const onShelf = lead ? shelfWork(lead.id) : undefined;
     if (!onShelf) continue;
     slides.push({
       id: lane.id,
-      kicker: "For the hour",
-      title: lane.label,
+      kicker: copy.kicker,
+      title: copy.title,
       line: workLine(onShelf.title, onShelf.author),
       kind: "rituals",
       lane: lane.id,
@@ -100,8 +131,9 @@ export function ritualDoorSlides(visit: number): DoorSlide[] {
 }
 
 /**
- * Live rooms and friends' current reads first. When this device has neither,
- * the slides are the real ways to sit with someone — never a made-up reader.
+ * The section itself first, then live rooms and friends' current reads.
+ * When this device has neither, the other slides are the real ways to read
+ * with someone — never a made-up reader.
  */
 export function togetherDoorSlides(input: {
   hostedSits?: HostedSit[] | null;
@@ -111,12 +143,12 @@ export function togetherDoorSlides(input: {
   for (const sit of input.hostedSits ?? []) {
     const title = sit.workTitle?.trim();
     if (!title || !sit.workId) continue;
-    const who = sit.hostName?.trim() || sit.hostHandle?.trim() || "A room";
+    const who = sit.hostName?.trim() || sit.hostHandle?.trim() || "A friend";
     live.push({
       id: `sit:${sit.id}`,
-      kicker: who,
+      kicker: `With ${who}`,
       title,
-      line: sit.author?.trim() ? `Live room · ${sit.author.trim()}` : "Live room",
+      line: sit.author?.trim() || "Come read along.",
       kind: "sit",
       token: encodeHostedSit(sit),
     });
@@ -128,12 +160,20 @@ export function togetherDoorSlides(input: {
       id: `friend:${person.handle}`,
       kicker: person.name,
       title: person.workTitle,
-      line: person.author ? `Reading now · ${person.author}` : "Reading now",
+      line: person.author ? person.author : "Reading this now.",
       kind: "read",
       workId: person.reading,
     });
   }
-  return [...live, ...TOGETHER_ACTIONS].slice(0, 4);
+  return [
+    headingSlide(
+      "together",
+      "Friends and clubs",
+      "Read together",
+      "The same page, together, while you talk.",
+    ),
+    ...[...live, ...TOGETHER_ACTIONS].slice(0, 4),
+  ];
 }
 
 function isBecause(id: string) {
@@ -148,14 +188,45 @@ function isGenre(id: string) {
   return id.startsWith("form:") || id.startsWith("genre:");
 }
 
+function travelTitle(label: string) {
+  const place = label.replace(/^Stories from /i, "").replace(/^The /i, "the ");
+  return `Travel to ${place} tonight`;
+}
+
+function shelfTitle(title: string) {
+  switch (title) {
+    case "Novels":
+      return "A novel for tonight";
+    case "Short stories":
+      return "Short stories for tonight";
+    case "Plays":
+      return "A play for tonight";
+    case "Poetry":
+      return "Poems for tonight";
+    case "Ghost stories":
+      return "A ghost story tonight";
+    case "Sea stories":
+      return "Out on the sea tonight";
+    case "More like what you finish":
+      return "More like the ones you finish";
+    case "Start here":
+      return "A good place to start";
+    case "Other":
+      return "Something a little different";
+    default:
+      return title;
+  }
+}
+
 function curatedSlide(row: MixRow): DoorSlide | null {
   const card = row.cards.find((item) => item.work.title.trim());
   if (!card) return null;
-  const kicker = isBecause(row.id) ? "Because you read" : isPlace(row.id) ? "A place" : "A shelf";
+  const because = isBecause(row.id);
+  const place = isPlace(row.id);
   return {
     id: row.id,
-    kicker,
-    title: row.title,
+    kicker: because ? "For you" : place ? "Tonight" : "If you like",
+    title: because ? row.title : place ? travelTitle(row.title) : shelfTitle(row.title),
     line: workLine(card.work.title, card.work.author),
     kind: "read",
     workId: card.work.id,
@@ -182,8 +253,18 @@ export function curatedDoorSlides(rows: readonly MixRow[]): DoorSlide[] {
     chosen.push(row);
     seen.add(row.id);
   }
-  return chosen.slice(0, 4).flatMap((row) => {
-    const slide = curatedSlide(row);
-    return slide ? [slide] : [];
-  });
+  return [
+    headingSlide(
+      "curated",
+      "Today",
+      "Curated",
+      rows.some((row) => isBecause(row.id))
+        ? rows.find((row) => isBecause(row.id))?.title || "A few shelves for today."
+        : "A few shelves for today.",
+    ),
+    ...chosen.slice(0, 4).flatMap((row) => {
+      const slide = curatedSlide(row);
+      return slide ? [slide] : [];
+    }),
+  ];
 }
