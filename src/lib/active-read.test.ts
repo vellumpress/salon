@@ -62,6 +62,22 @@ test("backgrounding drops the hidden gap", () => {
   assert.equal(next.clock.activeMs, 15_000 + 12_000);
 });
 
+test("one sit keeps its session id, and a cleared start does not close twice", () => {
+  const started = beginSit(emptySitClock(), 1_000, false);
+  assert.equal(typeof started.sitId, "string");
+  assert.ok(started.sitId);
+  const kept = beginSit({ ...started, activeAdvances: 2, activeMs: 30_000 }, 2_000, true);
+  assert.equal(kept.sitId, started.sitId);
+  const restarted = beginSit(started, 3_000, false);
+  assert.notEqual(restarted.sitId, started.sitId);
+  const closed = closeSit(kept);
+  assert.equal(closed.countSit, true);
+  assert.equal(closed.clock.sitId, undefined);
+  const again = closeSit({ ...kept, sittingStartedAt: null });
+  assert.equal(again.countSit, false);
+  assert.equal(again.minutes, 0);
+});
+
 test("pause without a later tap does not invent the idle stretch", () => {
   let clock = beginSit(emptySitClock(), 0, false);
   clock = notePause(clock);

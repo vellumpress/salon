@@ -79,6 +79,7 @@ export const allTsFiles = [
   "src/lib/notable-authors.test.ts",
   "src/lib/remote-activity.test.ts",
   "src/lib/remote-directory.test.ts",
+  "src/lib/activity-publish.test.ts",
   "src/lib/remote-auth.test.ts",
   "src/lib/auth-session.test.ts",
   "src/lib/library-sync.test.ts",

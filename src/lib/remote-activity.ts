@@ -136,8 +136,9 @@ export function draftsFromLocal(input: LocalHistory): ActivityDraft[] {
     if (!sit.workId || !sit.endedAt || isDeviceImport(sit.workId)) continue;
     const meta = metaFor(sit.workId);
     const minutes = sit.minutes > 0 ? Math.max(1, Math.round(sit.minutes)) : 0;
+    const sessionId = typeof sit.id === "string" ? sit.id.trim() : "";
     drafts.push({
-      key: `sit:${sit.workId}:${sit.endedAt}`,
+      key: sessionId ? `sit:${sessionId}` : `sit:${sit.workId}:${sit.endedAt}`,
       kind: "sit",
       bookId: meta.workId,
       at: sit.endedAt,

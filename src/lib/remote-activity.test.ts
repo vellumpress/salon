@@ -57,9 +57,18 @@ test("local history becomes hosted activity drafts without dropping the handle",
   assert.equal(shelfKey.kind, "reading");
   assert.equal(shelfKey.payload.atIndex, 4);
   assert.equal(
-    drafts.some((row) => row.kind === "sit"),
+    drafts.some((row) => row.kind === "sit" && row.key === "sit:passing:1700000100000"),
     true,
   );
+  const session = draftsFromLocal({
+    handle: "meghan",
+    progress: {},
+    sitHistory: [{ workId: "passing", minutes: 12, endedAt: 1_700_000_100_000, id: "sess-1" }],
+    hostedSits: [],
+    sitPledges: [],
+    togetherKeeps: [],
+  });
+  assert.equal(session.find((row) => row.kind === "sit")?.key, "sit:sess-1");
   assert.equal(draftsFromLocal({ ...emptyHistory(), handle: "x" }).length, 0);
 });
 
