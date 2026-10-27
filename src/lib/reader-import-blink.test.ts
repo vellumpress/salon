@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { skipWithoutWebKit } from "./require-webkit.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -308,7 +309,7 @@ test(
   { timeout: 180_000 },
   async (t) => {
     if (!(await webkitInstalled())) {
-      t.skip("WebKit is not installed");
+      skipWithoutWebKit(t);
       return;
     }
     await ensureReaderServer();
@@ -330,7 +331,7 @@ test(
   { timeout: 180_000 },
   async (t) => {
     if (!(await webkitInstalled())) {
-      t.skip("WebKit is not installed");
+      skipWithoutWebKit(t);
       return;
     }
     await ensureReaderServer();

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { webKitRequired } from "./require-webkit.ts";
 import {
   washField,
   washFieldSource,
@@ -419,6 +420,7 @@ test(
     }
 
     if (!(await webkitInstalled())) {
+      if (webKitRequired()) throw new Error("WebKit is not installed; REQUIRE_WEBKIT=1");
       t.diagnostic("WebKit is not installed; chromium still gates the wash");
       return;
     }
