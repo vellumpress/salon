@@ -1487,10 +1487,12 @@ html:has(.board-doors) body {
   -webkit-box-orient: vertical;
 }
 
-/* Curated page: the same Mondrian board as home. Ink shows through the gap as the rule. */
+/* Curated page: the same 1px ink hairline as home. Blocks meet.
+   The bottom rule is dropped so the last shelf reaches the screen edge. */
 .board.board-curated {
-  gap: 0.625rem;
-  padding: 0.625rem;
+  gap: var(--spacing-rule);
+  padding: var(--spacing-rule);
+  padding-bottom: 0;
   background: var(--color-ink);
 }
 
