@@ -110,9 +110,13 @@ function SlideCopy({ slide }: { slide: DoorSlide }) {
   );
 }
 
+/** How long a finger has to be gone before a door starts drifting again. */
+const RESUME_AFTER_MS = 3000;
+
 /**
- * A slow horizontal loop inside one home block. Touch pauses it. A swipe
- * moves the track. Reduced motion leaves the first slide still.
+ * A slow horizontal loop inside one home block. Touch pauses it, and the
+ * drift starts again a few seconds after release. A swipe moves the track.
+ * Reduced motion leaves the slides still and swipeable.
  */
 export function DoorCarousel({
   label,
@@ -137,6 +141,7 @@ export function DoorCarousel({
   const trackRef = useRef<HTMLDivElement>(null);
   const offsetRef = useRef(0);
   const pausedRef = useRef(false);
+  const resumeTimerRef = useRef(0);
   const reducedRef = useRef(false);
   const suppressRef = useRef(false);
   const dragRef = useRef({ id: -1, startX: 0, x: 0, moved: false });
@@ -189,6 +194,8 @@ export function DoorCarousel({
     };
   }, [seconds, slidesKey, shown.length]);
 
+  useEffect(() => () => window.clearTimeout(resumeTimerRef.current), []);
+
   function paintNow() {
     const node = viewportRef.current;
     const track = trackRef.current;
@@ -199,9 +206,21 @@ export function DoorCarousel({
     track.style.transform = `translate3d(${-offsetRef.current}px,0,0)`;
   }
 
+  function holdPause() {
+    window.clearTimeout(resumeTimerRef.current);
+    pausedRef.current = true;
+  }
+
+  function releasePause() {
+    window.clearTimeout(resumeTimerRef.current);
+    resumeTimerRef.current = window.setTimeout(() => {
+      pausedRef.current = false;
+    }, RESUME_AFTER_MS);
+  }
+
   function onDown(event: ReactPointerEvent<HTMLDivElement>) {
     if (event.pointerType === "mouse" && event.button !== 0) return;
-    pausedRef.current = true;
+    holdPause();
     dragRef.current = { id: event.pointerId, startX: event.clientX, x: event.clientX, moved: false };
   }
 
@@ -220,7 +239,7 @@ export function DoorCarousel({
   function onUp(event: ReactPointerEvent<HTMLDivElement>) {
     const drag = dragRef.current;
     if (drag.id !== event.pointerId) return;
-    pausedRef.current = false;
+    releasePause();
     const width = viewportRef.current?.clientWidth ?? 0;
     const travel = event.clientX - drag.startX;
     if (drag.moved) suppressRef.current = true;
