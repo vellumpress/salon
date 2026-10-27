@@ -33,6 +33,7 @@ export const smokeFiles = [
   "src/lib/reader-tap-guard.test.ts",
   "src/lib/reader-import-blink.test.ts",
   "src/lib/catalog/merge-stop-layout.test.ts",
+  "src/lib/wash-seam.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -103,6 +104,7 @@ export const allTsFiles = [
   "src/lib/reader-chrome.test.ts",
   "src/lib/daylight-colors.test.ts",
   "src/lib/center-line.test.ts",
+  "src/lib/wash-seam.test.ts",
   "src/lib/reader-turn.test.ts",
   "src/lib/reader-hold.test.ts",
   "src/lib/status-bar-color.test.ts",

@@ -76,6 +76,7 @@ import {
   stepSpotlight,
   type GroupsAt,
   type SpotlightGroup,
+  type SpotlightMark,
   type SpotlightQuery,
 } from "@/lib/spotlight";
 import { cutsForWork, stopsForWork } from "@/lib/catalog/merge-stop-index";
@@ -110,6 +111,55 @@ type Overlay =
   | "send";
 
 const LOOKBACK = 12;
+
+function PassagePieces({
+  pieces,
+  focusIndex,
+}: {
+  pieces: readonly SpotlightMark[];
+  focusIndex: number;
+}) {
+  const nodes: ReactNode[] = [];
+  let run: { text: string; pi: number }[] = [];
+  const flush = () => {
+    if (run.length === 0) return;
+    const ahead = run;
+    run = [];
+    nodes.push(
+      <span key={`ahead-${ahead[0]!.pi}`} className="ahead-run">
+        <span className="ahead-shade" aria-hidden="true" />
+        {ahead.map((piece) => (
+          <span
+            key={piece.pi}
+            className="breath-sentence is-ahead"
+            data-sentence-index={`ahead-${piece.pi}`}
+          >
+            <EmphasizedText text={piece.text} />
+          </span>
+        ))}
+      </span>,
+    );
+  };
+  pieces.forEach((piece, pi) => {
+    if (piece.role === "ahead") {
+      run.push({ text: piece.text, pi });
+      return;
+    }
+    flush();
+    nodes.push(
+      <span
+        key={pi}
+        className={cn("breath-sentence", piece.role === "past" && "is-past")}
+        data-sentence-index={piece.role === "focus" ? focusIndex : `${piece.role}-${pi}`}
+        data-focus-sentence={piece.role === "focus" ? "" : undefined}
+      >
+        <EmphasizedText text={piece.text} />
+      </span>,
+    );
+  });
+  flush();
+  return nodes;
+}
 
 function EmphasizedText({ text }: { text: string }) {
   if (isSectionBreak(text)) {
@@ -1622,6 +1672,36 @@ export function TbrReader({
     };
   }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey]);
 
+  useLayoutEffect(() => {
+    const host = breathLineRef.current;
+    if (!host) return;
+    let live = true;
+    const placeShades = () => {
+      if (!live) return;
+      for (const run of host.querySelectorAll<HTMLElement>(".ahead-run")) {
+        const shade = run.querySelector<HTMLElement>(".ahead-shade");
+        if (!shade) continue;
+        const rects = run.getClientRects();
+        if (rects.length === 0) continue;
+        let top = rects[0]!.top;
+        let bottom = rects[0]!.bottom;
+        for (const rect of rects) {
+          if (rect.top < top) top = rect.top;
+          if (rect.bottom > bottom) bottom = rect.bottom;
+        }
+        shade.style.top = "0px";
+        shade.style.height = `${Math.max(0, bottom - top)}px`;
+      }
+    };
+    placeShades();
+    const ro = new ResizeObserver(placeShades);
+    ro.observe(host);
+    return () => {
+      live = false;
+      ro.disconnect();
+    };
+  }, [index, cursor, spotWindow, breath?.text, display.faceReady, display.metricsKey, centerOn]);
+
   const durationMs = sittingMinutes > 0 ? sittingMinutes * 60 * 1000 : 0;
   const endsAt =
     durationMs && progress?.sittingStartedAt
@@ -1818,20 +1898,24 @@ export function TbrReader({
                     className="breath-block"
                     data-block-sentences={block.sentences}
                   >
-                    {pieces.map((piece, pi) => (
-                      <span
-                        key={pi}
-                        className={cn(
-                          "breath-sentence",
-                          piece.role === "past" && "is-past",
-                          piece.role === "ahead" && "is-ahead",
-                        )}
-                        data-sentence-index={piece.role === "focus" ? atSentence : `${piece.role}-${pi}`}
-                        data-focus-sentence={piece.role === "focus" ? "" : undefined}
-                      >
-                        <EmphasizedText text={piece.text} />
-                      </span>
-                    ))}
+                    {onlyAhead ? (
+                      pieces.map((piece, pi) => (
+                        <span
+                          key={pi}
+                          className={cn(
+                            "breath-sentence",
+                            piece.role === "past" && "is-past",
+                            piece.role === "ahead" && "is-ahead",
+                          )}
+                          data-sentence-index={piece.role === "focus" ? atSentence : `${piece.role}-${pi}`}
+                          data-focus-sentence={piece.role === "focus" ? "" : undefined}
+                        >
+                          <EmphasizedText text={piece.text} />
+                        </span>
+                      ))
+                    ) : (
+                      <PassagePieces pieces={pieces} focusIndex={atSentence} />
+                    )}
                   </p>
                 );
                 if (onlyAhead) ahead.push(blockNode);
