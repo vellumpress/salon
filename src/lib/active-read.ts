@@ -35,6 +35,11 @@ export type SitClock = {
   activeMs: number;
   /** Forward advances during the open sit. */
   activeAdvances: number;
+  /**
+   * Stable id for this open sit. A second close, a second phone, and a
+   * retried publish all share it, so the sit is one activity row.
+   */
+  sitId?: string;
 };
 
 export const emptySitClock = (): SitClock => ({
@@ -63,12 +68,19 @@ export function addMinutes(previous: number, creditMs: number): number {
   return Math.round(((previous || 0) + creditMs / 60_000) * 1e6) / 1e6;
 }
 
+function newSitId(): string {
+  const cryptoObj = globalThis.crypto;
+  if (cryptoObj && typeof cryptoObj.randomUUID === "function") return cryptoObj.randomUUID();
+  return `sit-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
+}
+
 /** Start or restart the open-sit clock. Does not credit time by itself. */
 export function beginSit(clock: SitClock, now: number, keep: boolean): SitClock {
   if (keep && typeof clock.sittingStartedAt === "number") {
     return {
       ...clock,
       activeAnchorAt: clock.activeAnchorAt ?? now,
+      sitId: clock.sitId || newSitId(),
     };
   }
   return {
@@ -76,6 +88,7 @@ export function beginSit(clock: SitClock, now: number, keep: boolean): SitClock 
     activeAnchorAt: now,
     activeMs: 0,
     activeAdvances: 0,
+    sitId: newSitId(),
   };
 }
 
@@ -119,12 +132,30 @@ export function noteResume(clock: SitClock, now: number): SitClock {
  * tap by tap — never the wall clock from open to close. No advances means no
  * sit and no minutes, including an hourglass that runs out on an idle page.
  */
+/** A second close of the same session replaces the row. It does not add one. */
+export function foldClosedSit<T extends { id?: string }>(
+  history: readonly T[],
+  sit: T,
+  cap: number,
+): { history: T[]; added: boolean } {
+  const same = sit.id ? history.findIndex((row) => row.id === sit.id) : -1;
+  if (same >= 0) {
+    const next = history.slice();
+    next[same] = sit;
+    return { history: next, added: false };
+  }
+  const limit = cap > 0 ? cap : history.length + 1;
+  return { history: [...history, sit].slice(-limit), added: true };
+}
+
 export function closeSit(clock: SitClock): {
   clock: SitClock;
   minutes: number;
   countSit: boolean;
 } {
-  const countSit = clock.activeAdvances > 0;
+  // Advances left behind after the start was cleared are a sit that already
+  // closed. Counting them again wrote the same minutes a second time.
+  const countSit = clock.activeAdvances > 0 && typeof clock.sittingStartedAt === "number";
   const minutes = countSit ? Math.round((clock.activeMs / 60_000) * 1000) / 1000 : 0;
   return {
     countSit,

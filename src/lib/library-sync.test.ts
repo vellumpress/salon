@@ -254,6 +254,45 @@ test("a merged place keeps the sentence inside the winning breath", () => {
   );
 });
 
+test("one sit session survives a second phone and a restored clock", () => {
+  const local = shelf({
+    progress: {
+      "the-house-of-mirth": progress({
+        breathIndex: 4,
+        lastOpenedAt: 200,
+        entered: true,
+        sittingStartedAt: null,
+        activeMs: 0,
+        activeAdvances: 0,
+      }),
+    },
+    sitHistory: [{ id: "sess", workId: "the-house-of-mirth", minutes: 38, endedAt: 200 }],
+  });
+  const remote = shelf({
+    progress: {
+      "the-house-of-mirth": progress({
+        breathIndex: 4,
+        lastOpenedAt: 100,
+        entered: true,
+        sittingStartedAt: 50,
+        sitId: "sess",
+        activeMs: 38 * 60_000,
+        activeAdvances: 4,
+      }),
+    },
+    sitHistory: [{ id: "sess", workId: "the-house-of-mirth", minutes: 38, endedAt: 199 }],
+  });
+  const merged = mergeShelves(local, remote);
+  const row = merged.progress["the-house-of-mirth"]!;
+  assert.equal(row.sittingStartedAt, null);
+  assert.equal(row.activeMs, 0);
+  assert.equal(row.activeAdvances, 0);
+  assert.equal(row.sitId, undefined);
+  assert.equal(merged.sitHistory.length, 1);
+  assert.equal(merged.sitHistory[0]?.id, "sess");
+  assert.equal(merged.sitHistory[0]?.endedAt, 200);
+});
+
 test("the shelf snapshot has no email and sign-out does not delete it", () => {
   const snap = shelfFromState({
     favorites: ["quicksand"],

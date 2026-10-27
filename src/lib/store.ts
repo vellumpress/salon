@@ -27,6 +27,7 @@ import {
   addMinutes,
   beginSit,
   closeSit,
+  foldClosedSit,
   migrateReadingClock,
   type ReadingClockState,
   noteAdvance,
@@ -91,6 +92,8 @@ export type WorkProgress = {
   activeAnchorAt?: number | null;
   activeMs?: number;
   activeAdvances?: number;
+  /** Id of the open sit. Cleared when the sit closes. */
+  sitId?: string;
 };
 
 /** One finished sit — capped history for pace / resonance. */
@@ -98,6 +101,8 @@ export type SitSession = {
   workId: string;
   minutes: number;
   endedAt: number;
+  /** Set when the sit opened. Absent on rows saved before session ids. */
+  id?: string;
 };
 
 const MAX_SIT_HISTORY = 80;
@@ -378,17 +383,21 @@ function clockOf(progress: WorkProgress): SitClock {
     activeAnchorAt: progress.activeAnchorAt ?? null,
     activeMs: progress.activeMs ?? 0,
     activeAdvances: progress.activeAdvances ?? 0,
+    ...(progress.sitId ? { sitId: progress.sitId } : {}),
   };
 }
 
 function writeClock(progress: WorkProgress, clock: SitClock): WorkProgress {
-  return {
+  const next: WorkProgress = {
     ...progress,
     sittingStartedAt: clock.sittingStartedAt,
     activeAnchorAt: clock.activeAnchorAt,
     activeMs: clock.activeMs,
     activeAdvances: clock.activeAdvances,
   };
+  if (clock.sitId) next.sitId = clock.sitId;
+  else delete next.sitId;
+  return next;
 }
 
 /** Clear every open-sentence anchor so a restored page cannot claim hidden time. */
@@ -475,7 +484,9 @@ function applySittingClose(
 ): Pick<ClockSlice, "progress"> &
   Partial<Pick<ClockSlice, "sitHistory" | "sitsByDay" | "worksTouchedByDay">> {
   const current = state.progress[workId] ?? emptyProgress();
-  const closed = closeSit(clockOf(current));
+  const open = clockOf(current);
+  const sessionId = open.sitId;
+  const closed = closeSit(open);
   const progress = {
     ...state.progress,
     [workId]: {
@@ -487,13 +498,17 @@ function applySittingClose(
     return { progress };
   }
   const day = dayKey(endedAt);
-  const sitHistory = [
-    ...(state.sitHistory ?? []),
-    { workId, minutes: closed.minutes, endedAt },
-  ].slice(-MAX_SIT_HISTORY);
+  const nextSit: SitSession = {
+    workId,
+    minutes: closed.minutes,
+    endedAt,
+    ...(sessionId ? { id: sessionId } : {}),
+  };
+  const folded = foldClosedSit(state.sitHistory ?? [], nextSit, MAX_SIT_HISTORY);
+  if (!folded.added) return { progress, sitHistory: folded.history };
   return {
     progress,
-    sitHistory,
+    sitHistory: folded.history,
     sitsByDay: bumpDayCount(state.sitsByDay, day, 1),
     worksTouchedByDay: touchWorkOnDay(state.worksTouchedByDay, day, workId),
   };

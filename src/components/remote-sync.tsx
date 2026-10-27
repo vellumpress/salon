@@ -7,12 +7,13 @@ import { ensureProfile } from "@/lib/remote-auth";
 import {
   dropFollows,
   planFollowSync,
-  publishActivity,
+  enqueueActivityFlush,
   pullFollows,
   pushFollows,
   readPublishedKeys,
   refreshFollowedActivity,
   rememberPublishedKeys,
+  syncActivityDrafts,
   setRemoteSession,
   subscribeFriendActivity,
   wantedFollowHandles,
@@ -129,8 +130,8 @@ export function RemoteSync() {
     const flush = () => {
       window.clearTimeout(timer);
       timer = window.setTimeout(() => {
-        void (async () => {
-          if (isOffline()) return;
+        void enqueueActivityFlush(async () => {
+          if (cancel || isOffline()) return;
           const { data } = await getSupabase().auth.getSession();
           const session = data.session;
           if (cancel || !session) return;
@@ -149,15 +150,14 @@ export function RemoteSync() {
             sitPledges: state.sitPledges ?? [],
             togetherKeeps: state.togetherKeeps ?? [],
           });
-          let guard = 0;
-          while (!cancel && guard < 8) {
-            guard += 1;
-            const saved = await publishActivity(session.user.id, drafts, readPublishedKeys());
-            if (!saved.length) break;
-            rememberPublishedKeys(saved);
-            if (saved.length < 40) break;
-          }
-        })();
+          await syncActivityDrafts({
+            userId: session.user.id,
+            drafts,
+            readKeys: readPublishedKeys,
+            remember: rememberPublishedKeys,
+            cancelled: () => cancel,
+          });
+        });
       }, 400);
     };
 

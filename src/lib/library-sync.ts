@@ -23,9 +23,10 @@ export type ShelfProgress = {
   activeAnchorAt?: number | null;
   activeMs?: number;
   activeAdvances?: number;
+  sitId?: string;
 };
 
-export type ShelfSit = { workId: string; minutes: number; endedAt: number };
+export type ShelfSit = { workId: string; minutes: number; endedAt: number; id?: string };
 export type ShelfRecord = { id: string };
 
 export type ReaderShelf = {
@@ -262,9 +263,26 @@ function mergeProgress(local: ShelfProgress, remote: ShelfProgress): ShelfProgre
     kept: unionKept(local.kept ?? [], remote.kept ?? []),
     completedAt: completed.length ? Math.min(...completed) : null,
     entered: Boolean(local.entered || remote.entered),
-    activeAnchorAt: local.activeAnchorAt ?? null,
+    // A closed phone must not pick the open clock back up from the other
+    // copy. That second close saved the same minutes again.
+    ...clockAfterMerge(local, remote),
+  };
+}
+
+function clockAfterMerge(local: ShelfProgress, remote: ShelfProgress): Pick<
+  ShelfProgress,
+  "activeAnchorAt" | "activeMs" | "activeAdvances" | "sitId"
+> {
+  const open = typeof local.sittingStartedAt === "number";
+  if (!open) {
+    return { activeAnchorAt: null, activeMs: 0, activeAdvances: 0 };
+  }
+  const sitId = local.sitId || remote.sitId;
+  return {
+    activeAnchorAt: local.activeAnchorAt ?? remote.activeAnchorAt ?? null,
     activeMs: Math.max(local.activeMs ?? 0, remote.activeMs ?? 0),
     activeAdvances: Math.max(local.activeAdvances ?? 0, remote.activeAdvances ?? 0),
+    ...(sitId ? { sitId } : {}),
   };
 }
 
@@ -279,12 +297,23 @@ function unionRecords<T extends ShelfRecord>(local: T[], remote: T[]) {
   return out;
 }
 
+function sitMergeKey(sit: ShelfSit): string {
+  return sit.id ? `id:${sit.id}` : `${sit.workId}:${sit.endedAt}`;
+}
+
+function preferSit(current: ShelfSit, next: ShelfSit): ShelfSit {
+  if (next.endedAt > current.endedAt) return next;
+  if (next.endedAt === current.endedAt && next.minutes >= current.minutes) return next;
+  return current;
+}
+
 function mergeSits(local: ShelfSit[], remote: ShelfSit[]) {
   const byKey = new Map<string, ShelfSit>();
   for (const sit of [...local, ...remote]) {
     if (!isSit(sit)) continue;
-    const key = `${sit.workId}:${sit.endedAt}`;
-    if (!byKey.has(key)) byKey.set(key, sit);
+    const key = sitMergeKey(sit);
+    const prev = byKey.get(key);
+    byKey.set(key, prev ? preferSit(prev, sit) : sit);
   }
   return [...byKey.values()].sort((a, b) => a.endedAt - b.endedAt).slice(-MAX_SIT_HISTORY);
 }

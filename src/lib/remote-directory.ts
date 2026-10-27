@@ -1,5 +1,6 @@
 import { useEffect, useState, useSyncExternalStore } from "react";
-import { activityFromRow, readingWriteAction, type ActivityRow } from "./remote-activity.ts";
+import type { SupabaseClient } from "@supabase/supabase-js";
+import { activityFromRow, readingWriteAction, type ActivityDraft, type ActivityRow } from "./remote-activity.ts";
 import type { FriendActivity } from "./friend-profile.ts";
 import { normalizeHandle } from "./social.ts";
 import { isOffline } from "./net.ts";
@@ -448,6 +449,24 @@ type ActivityDraftRow = {
   payload: Record<string, string | number>;
 };
 
+const UNIQUE_VIOLATION = "23505";
+
+function isUniqueViolation(error: { code?: string } | null | undefined) {
+  return error?.code === UNIQUE_VIOLATION;
+}
+
+/** One publish at a time. A second effect must see the keys the first one saved. */
+let activityFlush: Promise<void> = Promise.resolve();
+
+export function enqueueActivityFlush(run: () => Promise<void>): Promise<void> {
+  const next = activityFlush.then(run, run);
+  activityFlush = next.then(
+    () => undefined,
+    () => undefined,
+  );
+  return next;
+}
+
 /** Move the book's newest progress row to this sentence. Missing row inserts. */
 async function writeReading(userId: string, draft: ActivityDraftRow): Promise<"saved" | "insert"> {
   const supabase = getSupabase();
@@ -483,10 +502,16 @@ export async function publishActivity(
   userId: string,
   drafts: ActivityDraftRow[],
   already: Set<string>,
+  client?: SupabaseClient,
 ): Promise<string[]> {
-  const pending = drafts.filter((row) => row.key && !already.has(row.key)).slice(0, 40);
+  const byKey = new Map<string, ActivityDraftRow>();
+  for (const row of drafts) {
+    if (!row.key || already.has(row.key)) continue;
+    byKey.set(row.key, row);
+  }
+  const pending = [...byKey.values()].slice(0, 40);
   if (!pending.length || isOffline()) return [];
-  const supabase = getSupabase();
+  const supabase = client ?? getSupabase();
   const saved: string[] = [];
   const toInsert: ActivityDraftRow[] = [];
   const seenReading = new Set<string>();
@@ -506,20 +531,70 @@ export async function publishActivity(
     toInsert.push(row);
   }
   if (!toInsert.length) return saved;
-  const rows = toInsert.map((row) => ({
+  const rows = toInsert.map((row) => activityInsert(userId, row));
+  const inserted = await supabase.from("activity").insert(rows);
+  if (!inserted.error) return [...saved, ...toInsert.map((row) => row.key)];
+  // The batch can commit and still surface an error, or fail because one key
+  // is already there. Each row is inserted on its own. A unique violation
+  // means that session is already stored: refresh it, and do not add another.
+  for (let index = 0; index < toInsert.length; index += 1) {
+    const row = rows[index]!;
+    const draft = toInsert[index]!;
+    const one = await supabase.from("activity").insert(row);
+    if (!one.error) {
+      saved.push(draft.key);
+      continue;
+    }
+    if (!isUniqueViolation(one.error)) continue;
+    // The row is already there. Refreshing it is best-effort; the key is
+    // saved either way so the next flush does not insert a second copy.
+    await supabase
+      .from("activity")
+      .update({
+        kind: row.kind,
+        book_id: row.book_id,
+        payload: row.payload,
+        created_at: row.created_at,
+      })
+      .eq("user_id", userId)
+      .eq("client_key", row.client_key);
+    saved.push(draft.key);
+  }
+  return saved;
+}
+
+function activityInsert(userId: string, row: ActivityDraftRow) {
+  return {
     user_id: userId,
     kind: row.kind,
     book_id: row.bookId || null,
     payload: row.payload,
     created_at: new Date(row.at || Date.now()).toISOString(),
-  }));
-  const inserted = await supabase.from("activity").insert(rows);
-  if (!inserted.error) return [...saved, ...toInsert.map((row) => row.key)];
-  for (let index = 0; index < toInsert.length; index += 1) {
-    const one = await supabase.from("activity").insert(rows[index]!);
-    if (!one.error) saved.push(toInsert[index]!.key);
+    client_key: row.key,
+  };
+}
+
+/**
+ * Write the drafts that are not already published. Remembers keys even when
+ * the effect has since been cancelled, so the remounted effect does not
+ * insert them again.
+ */
+export async function syncActivityDrafts(input: {
+  userId: string;
+  drafts: ActivityDraft[];
+  readKeys: () => Set<string>;
+  remember: (keys: string[]) => void;
+  client?: SupabaseClient;
+  cancelled?: () => boolean;
+}): Promise<void> {
+  let guard = 0;
+  while (!(input.cancelled?.() ?? false) && guard < 8) {
+    guard += 1;
+    const saved = await publishActivity(input.userId, input.drafts, input.readKeys(), input.client);
+    if (!saved.length) break;
+    input.remember(saved);
+    if (saved.length < 40 || input.cancelled?.()) break;
   }
-  return saved;
 }
 
 /** Live inserts for the signed-in follower. Polling remains the fallback. */
