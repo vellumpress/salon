@@ -193,7 +193,7 @@ test("text after the passage is blurred and washed out, and the focus line stays
   assert.doesNotMatch(css, /backdrop-filter:\s*blur/);
   assert.match(
     css,
-    /\.upcoming-shade,\s*\n\.passage-ahead-shade\s*\{[^}]*background:\s*var\(--reader-bg\)/,
+    /\.upcoming-shade,\s*\n\.passage-ahead-shade\s*\{[^}]*background:\s*color-mix\(in srgb, var\(--reader-bg\) 50%, transparent\)/,
   );
   const fold = css.match(/\.upcoming-fold,\s*\n\.passage-ahead\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(fold, /margin-inline:\s*calc\(var\(--column-pad\) \* -1\)/);

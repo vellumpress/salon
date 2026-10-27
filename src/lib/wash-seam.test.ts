@@ -2,7 +2,14 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
-import { washSeamDetectorSource, washSeams, type WashBand, type WashSeam } from "./wash-seam.ts";
+import {
+  washField,
+  washFieldSource,
+  washSeamDetectorSource,
+  washSeams,
+  type WashBand,
+  type WashSeam,
+} from "./wash-seam.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -69,6 +76,30 @@ test("a straight low-contrast edge is a seam, and a soft wash is not", () => {
   const glyph = paint(1170, 520, [47, 191, 90]);
   for (let y = 80; y < 130; y += 1) shadeColumn(glyph, 1170, 90, y, y + 1, -40);
   assert.deepEqual(washSeams(glyph, 1170, 520, band), []);
+});
+
+const fieldBand: WashBand = { top: 8, bottom: 200, left: 8, right: 360 };
+
+test("a wash field is empty when flat, legible on a stroke, and soft when the shapes fade", () => {
+  const flat = paint(400, 220, [122, 24, 50]);
+  assert.equal(washField(flat, 400, 220, fieldBand).verdict, "empty");
+
+  const stroke = paint(400, 220, [122, 24, 50]);
+  for (let y = 20; y < 180; y += 1) shadeColumn(stroke, 400, 40, y, y + 1, 80);
+  assert.equal(washField(stroke, 400, 220, fieldBand).verdict, "legible");
+
+  const soft = paint(400, 220, [122, 24, 50]);
+  for (let y = 30; y < 170; y += 1) {
+    for (let x = 40; x < 300; x += 1) {
+      const lift = Math.round(14 * Math.exp(-((x - 160) ** 2) / 1800) * (0.65 + 0.35 * Math.sin(y / 9)));
+      const i = (400 * y + x) * 4;
+      soft[i] = Math.min(255, soft[i]! + lift);
+      soft[i + 1] = Math.min(255, soft[i + 1]! + lift);
+      soft[i + 2] = Math.min(255, soft[i + 2]! + lift);
+    }
+  }
+  const judged = washField(soft, 400, 220, fieldBand);
+  assert.equal(judged.verdict, "shapes", JSON.stringify(judged));
 });
 
 async function webkitInstalled() {
@@ -280,12 +311,12 @@ async function assertClean(page: Page, label: string) {
   assert.deepEqual(lit, [], `${label} lit passage: ${JSON.stringify(lit)}`);
 }
 
-/** Mogens keeps the rest of the breath in .passage-ahead. That used to be a lighter column. */
-async function assertPageColoredWash(page: Page, label: string) {
+/** Mogens keeps the rest of the breath under the wash. Shapes stay, letters do not. */
+async function assertFaintShapes(page: Page, label: string) {
   await openReader(page, label === "off" ? "off" : label, MOGENS);
   const png = (await page.screenshot({ type: "png" })).toString("base64");
   const stats = await page.evaluate(
-    async ({ png: source, fn }) => {
+    async ({ png: source, seamFn, fieldFn }) => {
       const blob = await (await fetch(`data:image/png;base64,${source}`)).blob();
       const bmp = await createImageBitmap(blob);
       const canvas = document.createElement("canvas");
@@ -296,68 +327,73 @@ async function assertPageColoredWash(page: Page, label: string) {
       ctx.drawImage(bmp, 0, 0);
       const image = ctx.getImageData(0, 0, bmp.width, bmp.height);
       const { data, width, height } = image;
-      const lum = (x: number, y: number) => {
-        const i = (width * y + x) * 4;
-        return 0.2126 * data[i]! + 0.7152 * data[i + 1]! + 0.0722 * data[i + 2]!;
-      };
       const focus = document.querySelector("[data-focus-sentence]");
       const rects = focus ? [...focus.getClientRects()].filter((rect) => rect.width > 2 && rect.height > 2) : [];
       const bottom = rects.reduce((max, rect) => Math.max(max, rect.bottom), 0);
       const dpr = window.devicePixelRatio;
-      const y0 = Math.min(height - 2, Math.round((bottom + 80) * dpr));
+      const y0 = Math.min(height - 2, Math.round((bottom + 36) * dpr));
       const y1 = Math.min(height - 1, Math.round((bottom + 150) * dpr));
-      const mean = (x0: number, x1: number) => {
-        let n = 0;
-        let sum = 0;
-        for (let y = y0; y < y1; y += 2) {
-          for (let x = x0; x < x1; x += 2) {
-            sum += lum(x, y);
-            n += 1;
-          }
-        }
-        return n ? sum / n : -1;
-      };
       const detect = new Function(
         "data",
         "width",
         "height",
         "band",
-        `return (${fn})(data, width, height, band)`,
+        `return (${seamFn})(data, width, height, band)`,
       ) as (
         data: Uint8ClampedArray,
         width: number,
         height: number,
         band: WashBand,
       ) => WashSeam[];
+      const judge = new Function(
+        "data",
+        "width",
+        "height",
+        "band",
+        `return (${fieldFn})(data, width, height, band)`,
+      ) as (
+        data: Uint8ClampedArray,
+        width: number,
+        height: number,
+        band: WashBand,
+      ) => { verdict: string; variance: number; sharp: number };
+      const seamBand = {
+        top: Math.max(1, y0),
+        bottom: y1,
+        left: 8,
+        right: width - 8,
+      };
+      const shapeBand = {
+        top: y0,
+        bottom: y1,
+        left: Math.round(48 * dpr),
+        right: width - Math.round(48 * dpr),
+      };
       const fold = document.querySelector(".passage-ahead, .upcoming-fold");
       const box = fold?.getBoundingClientRect();
       const shade = document.querySelector(".passage-ahead-shade, .upcoming-shade");
+      const focusFilter = focus ? getComputedStyle(focus).filter : "";
       return {
-        margin: mean(Math.round(4 * dpr), Math.round(14 * dpr)),
-        column: mean(Math.round(80 * dpr), Math.round(220 * dpr)),
-        seams: detect(data, width, height, {
-          top: Math.max(1, y0),
-          bottom: y1,
-          left: 8,
-          right: width - 8,
-        }),
+        seams: detect(data, width, height, seamBand),
+        field: judge(data, width, height, shapeBand),
         foldLeft: box?.left ?? null,
         foldWidth: box?.width ?? null,
         pane: window.innerWidth,
         shade: shade ? getComputedStyle(shade).backgroundColor : "",
+        focusFilter,
       };
     },
-    { png, fn: washSeamDetectorSource() },
+    { png, seamFn: washSeamDetectorSource(), fieldFn: washFieldSource() },
   );
-  const delta = Math.abs(stats.margin - stats.column);
-  assert.ok(delta < 4, `${label} wash is a patch (${stats.margin.toFixed(1)} vs ${stats.column.toFixed(1)})`);
   assert.deepEqual(stats.seams, [], `${label} Mogens seam ${JSON.stringify(stats.seams)}`);
+  assert.equal(stats.field.verdict, "shapes", `${label} wash field ${JSON.stringify(stats.field)}`);
+  assert.equal(stats.focusFilter, "none", `${label} focus is blurred`);
   assert.ok(stats.foldLeft != null && Math.abs(stats.foldLeft) <= 1, `${label} wash inset ${stats.foldLeft}`);
   assert.ok(
     stats.foldWidth != null && Math.abs(stats.foldWidth - stats.pane) <= 2,
     `${label} wash width ${stats.foldWidth}`,
   );
-  assert.doesNotMatch(stats.shade, /\/\s*0?\.[0-9]/, `${label} shade is translucent ${stats.shade}`);
+  assert.match(stats.shade, /0\.5\)/, `${label} shade is not a half wash ${stats.shade}`);
 }
 
 test(
@@ -369,14 +405,14 @@ test(
     try {
       const evening = await phone(browser, "evening");
       await assertClean(evening, "evening");
-      await assertPageColoredWash(evening, "evening");
+      await assertFaintShapes(evening, "evening");
       await evening.context().close();
       const paper = await phone(browser, "off");
       await assertClean(paper, "off");
       await paper.context().close();
       const night = await phone(browser, "night");
       await assertClean(night, "night");
-      await assertPageColoredWash(night, "night");
+      await assertFaintShapes(night, "night");
       await night.context().close();
     } finally {
       await browser.close();
@@ -390,14 +426,14 @@ test(
     try {
       const evening = await phone(browserKit, "evening");
       await assertClean(evening, "evening");
-      await assertPageColoredWash(evening, "evening");
+      await assertFaintShapes(evening, "evening");
       await evening.context().close();
       const paper = await phone(browserKit, "off");
       await assertClean(paper, "off");
       await paper.context().close();
       const night = await phone(browserKit, "night");
       await assertClean(night, "night");
-      await assertPageColoredWash(night, "night");
+      await assertFaintShapes(night, "night");
       await night.context().close();
     } finally {
       await browserKit.close();
