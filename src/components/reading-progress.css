@@ -1,0 +1,85 @@
+/* Bottom reading progress. Out of flow, so the spotlight anchor stays put.
+   No fill behind the title: the page shows through, same as the hourglass. */
+.reading-progress {
+  position: absolute;
+  z-index: 28;
+  left: 1.5rem;
+  right: 3.25rem;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 0.85rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.28rem;
+  min-width: 0;
+  pointer-events: none;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+@media (min-width: 768px) {
+  .reading-progress {
+    left: 2.5rem;
+  }
+}
+
+.reading-progress-title {
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.15;
+  letter-spacing: 0.012em;
+  color: inherit;
+  opacity: 0.88;
+}
+
+.reading-progress-track {
+  position: relative;
+  height: 2px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.reading-progress-rail,
+.reading-progress-fill,
+.reading-progress-tick {
+  position: absolute;
+  background-color: currentColor;
+  pointer-events: none;
+}
+
+.reading-progress-rail,
+.reading-progress-fill {
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.reading-progress-rail {
+  right: 0;
+  opacity: 0.18;
+}
+
+.reading-progress-fill {
+  opacity: 0.5;
+  max-width: 100%;
+}
+
+.reading-progress-tick {
+  top: 50%;
+  width: 1px;
+  height: 5px;
+  border-radius: 1px;
+  opacity: 0.36;
+  transform: translate(-50%, -50%);
+}
