@@ -24,6 +24,7 @@ import { openSitInProgress, shouldShowPreface } from "@/lib/reader-threshold";
 import { FavoriteMark } from "@/components/favorite-mark";
 import { PlaceChip } from "@/components/place-chip";
 import { Hourglass } from "@/components/hourglass";
+import { ReadingProgress } from "@/components/reading-progress";
 import { closedReaderBar, reduceReaderBar, type ReaderBarState } from "@/lib/reader-chrome";
 import { TogetherShell } from "@/components/sitting-room";
 import { estimateRitualMinutes } from "@/lib/catalog/rituals";
@@ -78,6 +79,7 @@ import {
   type SpotlightQuery,
 } from "@/lib/spotlight";
 import { cutsForWork, stopsForWork } from "@/lib/catalog/merge-stop-index";
+import { chapterStartOffsets, readingLength } from "@/lib/reading-progress";
 import { columnMetricsNow, useDisplayBlocks } from "@/lib/use-display-blocks";
 import { FittedCopy } from "@/components/fitted-copy";
 import {
@@ -1672,6 +1674,8 @@ export function TbrReader({
 
   const sentenceCount = breathSentenceCount(breath.text, displayKind);
   const atSentence = Math.min(sentenceCount - 1, Math.max(0, cursor));
+  const progressLength = readingLength(work.id, work.breaths.length, shelfWork(work.id)?.breaths);
+  const chapterStarts = chapterStartOffsets(work.breaths);
   const sceneGroups = groupsAt(index, { cursor: atSentence, window: spotWindow, edge: "around", after: 1 });
   const groupAt = sceneGroups.length
     ? locateSpotlight(sceneGroups, index, atSentence, spotWindow)
@@ -2587,6 +2591,15 @@ export function TbrReader({
               />
             </button>
           </footer>
+          <ReadingProgress
+            title={work.title}
+            index={index}
+            sentenceAt={atSentence}
+            sentenceCount={sentenceCount}
+            window={spotWindow}
+            length={progressLength}
+            chapterStarts={chapterStarts}
+          />
         </>
       )}
 

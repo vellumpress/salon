@@ -107,6 +107,8 @@ export const allTsFiles = [
   "src/lib/status-bar-color.test.ts",
   "src/lib/bottom-edge.test.ts",
   "src/lib/reader-chrome-bar.test.ts",
+  "src/lib/reading-progress.test.ts",
+  "src/lib/reading-progress-bar.test.ts",
   "src/lib/reader-back-tap.test.ts",
   "src/lib/reader-back-ios.test.ts",
   "src/lib/reader-tap-matrix.test.ts",
