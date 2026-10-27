@@ -175,6 +175,27 @@ async function columnBox(page: Page) {
   });
 }
 
+async function assertClearsHourglass(page: Page) {
+  const clearance = await page.evaluate(() => {
+    const track = document.querySelector(".reading-progress-track");
+    const glass = document.querySelector(".reader-glass");
+    const column = document.querySelector(".center-lines");
+    if (!track || !glass || !column) return null;
+    const trackBox = track.getBoundingClientRect();
+    const glassBox = glass.getBoundingClientRect();
+    const columnBox = column.getBoundingClientRect();
+    const pad = Number.parseFloat(getComputedStyle(column).paddingLeft) || 0;
+    return {
+      gap: glassBox.left - trackBox.right,
+      inset: trackBox.left - (columnBox.left + pad),
+    };
+  });
+  assert.ok(clearance, "progress track missing");
+  assert.ok(clearance.gap >= 6, `bar does not stop short of the hourglass (${clearance.gap})`);
+  assert.ok(clearance.gap <= 16, `bar stops too far from the hourglass (${clearance.gap})`);
+  assert.ok(Math.abs(clearance.inset) <= 1, `bar left inset ${clearance.inset}`);
+}
+
 async function progressOf(page: Page) {
   const raw = await page.locator("[data-reading-progress]").getAttribute("data-progress");
   assert.ok(raw, "progress overlay missing");
@@ -267,6 +288,7 @@ test(
       const ticks = await page.locator(".reading-progress-tick").count();
       assert.ok(ticks > 1, "chapter ticks missing");
       await assertOverlayQuiet(page);
+      await assertClearsHourglass(page);
 
       const withOverlay = await spotlightRect(page);
       const columnWith = await columnBox(page);
@@ -313,6 +335,7 @@ test(
         return node.scrollWidth > node.clientWidth + 1;
       });
       assert.equal(long, true, "a long title did not ellipsize");
+      await assertClearsHourglass(page);
       const pdfBefore = await progressOf(page);
       const pdfKey = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await page.getByRole("button", { name: "Next sentence" }).click();
