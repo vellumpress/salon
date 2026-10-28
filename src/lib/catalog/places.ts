@@ -574,6 +574,12 @@ export const CHIEF_SERVANTS_CHIP = "Lands of Wakea and Papa";
  */
 export const SPIDER_CHIP = "Lotus Pond of Paradise";
 
+/**
+ * Mira Wed 28 Oct 2026 PM HONG: the chip for Hong the Currier, as printed ("the town of The-Black-chain", p.61 of the
+ * 1913 Houghton Mifflin edition; PG 37766 l.1306). Swap it here only.
+ */
+export const HONG_CHIP = "The-Black-chain";
+
 export const CHIP_ONLY_PLACE: Record<string, string> = {
   "mary-magdalen": "Tiberias, Galilee",
   // PAN-TADEUSZ: the poem's setting as it names it. The silhouettes are hand-drawn
@@ -598,6 +604,9 @@ export const CHIP_ONLY_PLACE: Record<string, string> = {
   // Mira Wed 28 Oct 2026 AM SPIDER (Cormorants pattern): the Buddha stands on the brink of "the Lotus Pond of Paradise"; Hell lies below it.
   // There is no shape for it; never draw one ad hoc. countryFor() stays empty: the "(tr. Glenn W. Shaw)" author string is not in AUTHOR_COUNTRY and there is no WORK_COUNTRY entry.
   "the-spiders-thread": SPIDER_CHIP,
+  // Mira Wed 28 Oct 2026 PM HONG (Cormorants pattern): the family "came from the town of The-Black-chain in the province of The-Foaming-rivers".
+  // There is no shape for it; never draw one ad hoc. countryFor() stays empty: the "(trans. G. Soulié de Morant)" author string is not in AUTHOR_COUNTRY and there is no WORK_COUNTRY entry (The Fresco's China is its own id entry).
+  "hong-the-currier": HONG_CHIP,
 };
 
 export { NO_PRINTED_PLACE };

@@ -1309,6 +1309,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-chief-with-the-wonderful-servants",
   // Mira Wed 28 Oct 2026 AM SPIDER — The Spider's Thread (Akutagawa, tr. Shaw, 1930) follows The Chief with the Wonderful Servants at the end of Next, Next carefully (heads-up on the card: the Pond of Blood, the sinners, the dying frog). Never Featured; off every Ritual lane (never Unwind or Before sleep).
   "the-spiders-thread",
+  // Mira Wed 28 Oct 2026 PM HONG — Hong the Currier (Pu Songling, trans. Soulié de Morant, 1913) follows The Spider's Thread at the end of Next, plain Next. Never Featured; off every Ritual lane.
+  "hong-the-currier",
 ] as const;
 
 /**

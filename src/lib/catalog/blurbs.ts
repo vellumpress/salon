@@ -501,6 +501,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: to win a race for his chief, an archer shoots at the woman running against them and knocks her down four times, the last with a blow to the chest. A chief sets out for the lands of the gods with six strange companions, one who outruns the sun and others who see, hear and shoot impossibly far, and their gifts help him win a chiefess's riddles.",
   "the-spiders-thread":
     "A heads-up before you start: this story looks down into Hell, where sinners writhe in a Pond of Blood and one of them struggles there like a dying frog. From the edge of a lotus pond in Paradise, the Buddha lowers a single spider's thread to a robber in Hell, and a whole life's worth of mercy comes to hang on one slender strand.",
+  "hong-the-currier":
+    "A poor currier flees his creditors on the last night of the year and shares a mountain cave with a ruined merchant, and one small kindness between them turns into a fortune neither could have found alone.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
