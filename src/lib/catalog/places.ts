@@ -568,6 +568,12 @@ const COUNTRY_PLACE: Record<string, WorkPlace> = {
  */
 export const CHIEF_SERVANTS_CHIP = "Lands of Wakea and Papa";
 
+/**
+ * Mira Wed 28 Oct 2026 AM SPIDER: the chip for The Spider's Thread, as printed ("the Lotus Pond of Paradise", p.73 of the
+ * 1930 first edition; PG 78105 l.1896). Swap it here only.
+ */
+export const SPIDER_CHIP = "Lotus Pond of Paradise";
+
 export const CHIP_ONLY_PLACE: Record<string, string> = {
   "mary-magdalen": "Tiberias, Galilee",
   // PAN-TADEUSZ: the poem's setting as it names it. The silhouettes are hand-drawn
@@ -589,6 +595,9 @@ export const CHIP_ONLY_PLACE: Record<string, string> = {
   // Mira Tue 27 Oct 2026 PM SERVANTS (Cormorants pattern): the travellers seek "the lands of Wakea and Papa", the land of the gods; Oahu is only where the chief sets out.
   // There is no shape for it; never draw one ad hoc. countryFor() stays empty: no Westervelt entry in AUTHOR_COUNTRY and no WORK_COUNTRY entry.
   "the-chief-with-the-wonderful-servants": CHIEF_SERVANTS_CHIP,
+  // Mira Wed 28 Oct 2026 AM SPIDER (Cormorants pattern): the Buddha stands on the brink of "the Lotus Pond of Paradise"; Hell lies below it.
+  // There is no shape for it; never draw one ad hoc. countryFor() stays empty: the "(tr. Glenn W. Shaw)" author string is not in AUTHOR_COUNTRY and there is no WORK_COUNTRY entry.
+  "the-spiders-thread": SPIDER_CHIP,
 };
 
 export { NO_PRINTED_PLACE };
