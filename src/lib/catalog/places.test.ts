@@ -6,7 +6,7 @@ import { RITUAL_LANES } from "./rituals.ts";
 import { SHELF, shelfWork } from "./shelf.ts";
 import { REGION_SHAPES } from "./region-shapes.ts";
 import { countryFor } from "./countries.ts";
-import { CHIEF_SERVANTS_CHIP, chipOnlyLabel, CHIP_ONLY_PLACE, NO_PRINTED_PLACE, placeFor, placeForId, surfacedPlaceWorkIds } from "./places.ts";
+import { CHIEF_SERVANTS_CHIP, chipOnlyLabel, CHIP_ONLY_PLACE, NO_PRINTED_PLACE, SPIDER_CHIP, placeFor, placeForId, surfacedPlaceWorkIds } from "./places.ts";
 
 test("named settings keep reader-friendly labels and real regions", () => {
   const expect = {
@@ -448,7 +448,7 @@ test("POST-#225 places reuse Peru and Russia; no new region key", () => {
 });
 
 test("chip-only settings carry a label but no country key and no silhouette", () => {
-  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar", "serbian-lyrics": "Serbia", "the-cormorants-of-andvaer": "Andvær", "when-the-bright-nights-were": "Filnbaum Forest", "the-chief-with-the-wonderful-servants": CHIEF_SERVANTS_CHIP });
+  assert.deepEqual(CHIP_ONLY_PLACE, { "mary-magdalen": "Tiberias, Galilee", "pan-tadeusz": "Lithuania", "zanzibar-tales": "Zanzibar", "serbian-lyrics": "Serbia", "the-cormorants-of-andvaer": "Andvær", "when-the-bright-nights-were": "Filnbaum Forest", "the-chief-with-the-wonderful-servants": CHIEF_SERVANTS_CHIP, "the-spiders-thread": SPIDER_CHIP });
   const mary = shelfWork("mary-magdalen");
   assert.ok(mary);
   assert.equal(placeFor(mary!), null);
@@ -1000,4 +1000,19 @@ test("Tue 27 Oct PM The Chief with the Wonderful Servants: chip-only Lands of Wa
   assert.equal(countryFor(work!), "");
   // No Westervelt string is in AUTHOR_COUNTRY.
   assert.equal(work!.author, "Anonymous (tr. W. D. Westervelt)");
+});
+
+test("Wed 28 Oct AM The Spider's Thread: chip-only Lotus Pond of Paradise as printed, no silhouette, no country (Cormorants pattern)", () => {
+  const work = shelfWork("the-spiders-thread");
+  assert.ok(work);
+  // The wording lives in one constant.
+  assert.ok(SPIDER_CHIP.length > 0);
+  assert.equal(chipOnlyLabel("the-spiders-thread"), SPIDER_CHIP);
+  assert.equal(CHIP_ONLY_PLACE["the-spiders-thread"], SPIDER_CHIP);
+  assert.equal(placeFor(work!), null);
+  assert.equal(placeForId("the-spiders-thread"), null);
+  assert.equal(NO_PRINTED_PLACE.has("the-spiders-thread"), false);
+  assert.equal(countryFor(work!), "");
+  // The full "(tr. Glenn W. Shaw)" author string is not in AUTHOR_COUNTRY.
+  assert.equal(work!.author, "Ryūnosuke Akutagawa (tr. Glenn W. Shaw)");
 });

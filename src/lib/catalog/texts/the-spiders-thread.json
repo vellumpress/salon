@@ -1,0 +1,245 @@
+{
+  "id": "the-spiders-thread",
+  "title": "The Spider’s Thread",
+  "author": "Ryūnosuke Akutagawa (tr. Glenn W. Shaw)",
+  "year": "1930",
+  "note": "Project Gutenberg 78105, set to Tales Grotesque and Curious, by Ryūnosuke Akutagawa, translated by Glenn W. Shaw (Tokyo, Hokuseido); PG carries the 1938 second edition. Year 1930, from the first edition's verso (\"COPYRIGHT, 1930\"), where the story is on pp.69–73. Bound whole, one breath per printed paragraph (35), in the three printed sections I, II and III. The heading and the section numerals are not part of the text. \"sterioptiscope\" stays as printed. The whole text was read against the first-edition scans; the words match.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "I",
+      "place": "I",
+      "reentry": "One day the Buddha was sauntering alone on the brink of the lotus pond of Paradise.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "II",
+      "place": "II",
+      "reentry": "Here Kandata was rising and sinking with the other sinners in the Pond of Blood on the floor of Hell.",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s2",
+      "title": "III",
+      "place": "III",
+      "reentry": "Standing on the brink of the Lotus Pond of Paradise, the Buddha watched closely all that happened, and when Kandata sank like a stone to the bottom of the Pond of Blood, he began to saunter again with a sad expression on his face.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "One day the Buddha was sauntering alone on the brink of the lotus pond of Paradise.",
+      "_end": 1767
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "The lotus flowers in bloom in the pond were all as white as pearls, and the golden pistils and stamens in their centers ceaselessly filled all the air with ineffable fragrance.",
+      "_end": 1771
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "It was morning in Paradise.",
+      "_end": 1773
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Presently the Buddha stood still on the brink of the pond, and through an opening among the leaves which covered the face of the water, suddenly beheld the scene below.",
+      "_end": 1777
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "As the floor of Hell lay directly beneath the lotus pond of Paradise, the Sanzu-no-Kawa and Hari-no-Yama were distinctly visible through the crystal water, as through a sterioptiscope.",
+      "_end": 1781
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Then his eye fell on a man named Kandata, who was squirming with the other sinners in the bottom of Hell.",
+      "_end": 1784
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "This Kandata was a great robber who had done many evil things, murdering and setting fire to houses, but he had to his credit one good action. Once while on his way through a deep forest, he had noticed a little spider creeping along beside the road.",
+      "_end": 1789
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "So quickly lifting his foot, he was about to trample it to death, when he suddenly thought, “No, no, as small as this thing is, it, too, has a soul: it would be rather a shame to recklessly kill it,” and spared the spider’s life.",
+      "_end": 1794
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "As he looked down into Hell, the Buddha remembered how this Kandata had spared the spider’s life. And in return for that good deed, he thought, if possible, he would like to deliver him out of Hell. Fortunately when he looked around, he saw a spider of Paradise spinning a beautiful silvery thread on the halcyon-colored lotus leaves.",
+      "_end": 1800
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "The Buddha quietly took up the spider’s thread in his hand. And he let it straight down to the bottom of Hell far below through the opening among the pearly white lotus flowers.",
+      "_end": 1804
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "Here Kandata was rising and sinking with the other sinners in the Pond of Blood on the floor of Hell.",
+      "_end": 1810
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "It was pitch black everywhere, and when sometimes a glimpse was caught of something rising from that darkness, it turned out to be the gleam of the needle of the dread Hari-no-Yama, so it was inexpressibly forbidding. Moreover the stillness of the grave reigned everywhere, and the only thing that could at times be heard was the faint sighing of the sinners.",
+      "_end": 1817
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "This was because such sinners as had come down to this spot had already been tired out by the other manifold tortures of Hell and had lost even the strength to cry aloud.",
+      "_end": 1821
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "So, great robber though he was, Kandata, also suffocated with the blood, could do nothing but struggle in the pond like a dying frog.",
+      "_end": 1824
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "But his time came. One day when Kandata lifted his head by chance and looked up at the sky above the Pond of Blood, he saw a silver spider’s thread slipping down toward him from the high, high heavens, glittering slightly in the silent darkness just as if it feared the eyes of man.",
+      "_end": 1829
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "When he saw this, his hands clapped themselves for joy. If, clinging to this thread, he climbed as far as it went, he could surely escape from Hell.",
+      "_end": 1833
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "Nay, if all went well, he might even enter Paradise. Then he would never be driven on to Hari-no-Yama nor sunk in the Pond of Blood.",
+      "_end": 1836
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "As soon as these thoughts came into his mind, he grasped the thread tightly in his two hands and began to climb up and up with all his might.",
+      "_end": 1840
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Because he was a great robber, he had long been thoroughly familiar with such things.",
+      "_end": 1843
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "But Hell is nobody-knows-how-many myriads of miles removed from Paradise and, strive as he might, he could not easily get out. After climbing for a while, he was finally exhausted and could not ascend an inch higher.",
+      "_end": 1848
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "So since he could do nothing else, he stopped to rest and, hanging to the thread, looked far, far down below him. Now since he had climbed with all his might, the Pond of Blood where he had just been was already, much to his surprise, hidden deep down in the darkness. And the dread Hari-no-Yama glittered dimly under him. If he went up at this rate, he might get out of Hell more easily than he had thought.",
+      "_end": 1855
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "With his hand twisted into the spider’s thread, Kandata laughed and cried out in a voice such as he had not uttered during all the years since coming here, “Success! Success!”",
+      "_end": 1859
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "But suddenly he noticed that below on the thread countless sinners were climbing eagerly after him, up and up, just like a procession of ants.",
+      "_end": 1862
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "When he saw this, Kandata simply blinked his eyes for a moment, with his big mouth hanging foolishly open in surprise and terror.",
+      "_end": 1865
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "How could that slender spider’s thread, which seemed as if it must break even with him alone, ever support the weight of all those people?",
+      "_end": 1868
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "If it should break in midair, even he himself, after all his effort in reaching this spot, would have to fall headlong back into Hell. It would be terrible if such a thing happened.",
+      "_end": 1872
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "But meanwhile hundreds and thousands of sinners were squirming out of the dark Pond of Blood and climbing with all their might in a line up the slender glittering thread. If he did not do something quickly, the thread was sure to break in two and fall. So Kandata cried out in a loud voice,",
+      "_end": 1878
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "“Here, you sinners! This spider’s thread is mine. Who on earth gave you permission to come up it? Get down! Get down!”",
+      "_end": 1881
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "Just at that moment, the spider’s thread, which had shown no sign of breaking up to that time, suddenly broke with a snap at the point where Kandata was hanging.",
+      "_end": 1885
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "So he was helpless. Without time to utter a cry, he shot down and fell headlong into the darkness, spinning swiftly round and round like a top.",
+      "_end": 1888
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "Afterwards, only the spider’s thread of Paradise, glittering and slender, hung short in the moonless and starless sky.",
+      "_end": 1891
+    },
+    {
+      "id": "s2-0",
+      "sceneId": "s2",
+      "text": "Standing on the brink of the Lotus Pond of Paradise, the Buddha watched closely all that happened, and when Kandata sank like a stone to the bottom of the Pond of Blood, he began to saunter again with a sad expression on his face.",
+      "_end": 1899
+    },
+    {
+      "id": "s2-1",
+      "sceneId": "s2",
+      "text": "Doubtless Kandata’s cold heart that would have saved only himself from Hell and his having received proper punishment and fallen back into Hell, had appeared to the Buddha’s eyes most pitiful. But the lotuses in the lotus pond of Paradise cared nothing at all about such things.",
+      "_end": 1904
+    },
+    {
+      "id": "s2-2",
+      "sceneId": "s2",
+      "text": "The pearly white flowers were swaying about the Buddha’s feet. As they swayed, from the golden pistils in their centers, their ineffable fragrance ceaselessly filled all the air.",
+      "_end": 1908
+    },
+    {
+      "id": "s2-3",
+      "sceneId": "s2",
+      "text": "It was near noon in Paradise.",
+      "_end": 1910
+    }
+  ]
+}
