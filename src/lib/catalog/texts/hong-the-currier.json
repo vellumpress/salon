@@ -1,0 +1,303 @@
+{
+  "id": "hong-the-currier",
+  "title": "Hong the Currier",
+  "author": "Pu Songling (trans. G. Soulié de Morant)",
+  "year": "1913",
+  "note": "Project Gutenberg 37766 (Pu Songling, Strange Stories from the Lodge of Leisures, translated from the Chinese by George Soulié [G. Soulié de Morant] of the French Consular Service in China; Boston and New York: Houghton Mifflin Company, 1913), the one story \"Hong the Currier\", pp.61–71 (PG l.1297–1491). Year 1913, from the Houghton Mifflin title page; the verso prints no other year. Bound whole, one breath per printed paragraph (47); the heading is the scene title and is not bound. Straight quotes kept as PG has them; PG's ellipsis kept. The whole text was read against the 1913 scans; the words match.",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Hong the Currier",
+      "place": "Hong the Currier",
+      "reentry": "\"In the time when the Justice of Heaven was actively employed with the affairs of the earth, one of my ancestors had an adventure to which we owe our present fortune, and of which few men of to-day have seen the equal.\"",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "\"In the time when the Justice of Heaven was actively employed with the affairs of the earth, one of my ancestors had an adventure to which we owe our present fortune, and of which few men of to-day have seen the equal.\"",
+      "_end": 1300
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Thus began my friend Hong; reclining on the red cushions of the big couch, he fanned himself gracefully with an ivory fan painted all over.",
+      "_end": 1303
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "\"Our family, as you know, originally came from the town of The-Black-chain in the province of The-Foaming-rivers. Our ancestor Hong The-just was a currier by trade; he cut and scraped the skins that were entrusted to him. His family was composed only of his wife, who helped him as well as she could.",
+      "_end": 1309
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "\"Notwithstanding this persistent labour, they were very poor; no furniture ornamented the three rooms in the small house that they hired in the Street-of-the-golden-flowers.",
+      "_end": 1313
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "\"When the last days of the twelfth moon in that year arrived, they found they were owing six strings of copper cash to ten different creditors. With all they possessed, there only remained 400 cash. What were they to do? They reflected for a long time. Hong The-just at last said to his wife:",
+      "_end": 1319
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"'Take these 400 cash; you will be able to buy rice to live on. As to me, as I cannot pay my debts before the first day of the first moon, I am going to leave the town and hide myself in the mountain. My creditors, not seeing me, will believe you when you tell them that I have been to find money in the neighbouring town. Once the first day of the first moon passed, as law ordains to wait till the following term, I shall then come back, and we shall continue to live as well as we can.'",
+      "_end": 1328
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"It was indeed the wisest thing to do. His wife made him a parcel of a blanket and a few dry biscuits. She wept at seeing him go away quite bent, walking with difficulty on the slippery flagstones of the street.",
+      "_end": 1332
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "\"The snow was falling in thick flakes and already covered the grey tiled roofs, when Hong The-just left the city gate and directed his steps to a cave that he knew of in a lonely valley.",
+      "_end": 1336
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"He arrived at last, and, throwing his heavy load on the ground, he glanced around him in order to choose the place where he would sleep.",
+      "_end": 1339
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"An exclamation of stupor escaped from him when he saw, seated motionless on a stone, a man clothed in a long sable cloak, with a cap of the same fur, looking at him in a mournful, indifferent way.",
+      "_end": 1343
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "\"'How strange!' at last said Hong, laughing. 'Dare I ask your noble name and the reason that brings you to this remote refuge? How is it that you are not with your friends, drinking hot wine and rejoicing in the midst of the luxuriance of the tables covered with various eatables and brilliant lights?'",
+      "_end": 1349
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"'My name is Yang Glow-of-dawn. And you, what is your precious name?' replied mechanically the first occupant.",
+      "_end": 1352
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"'I am called Hong The-just, and I am here to escape from my creditors.'",
+      "_end": 1354
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "\"'You, also?' sneered Glow-of-dawn. 'The strokes of Fate do not vary much. As for me, I deal in European goods; my correspondents have not settled my accounts and I am in want of nearly a hundred thousand ounces of silver to close the year. None of my friends could advance me the sum, and here I am, obliged to fly away from my creditors.'",
+      "_end": 1360
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"'A hundred thousand ounces!' cried The-just. 'With a sum like that I should pass the rest of my days in plenty. Anyhow, struck by the same misfortune, we are thus united; let us try to pass cheerfully the last day of the year, and attempt to imagine that these humble cakes are refined food.'",
+      "_end": 1366
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "\"When they were eating their pastry and drinking water from the near torrent, Glow-of-dawn suddenly said:",
+      "_end": 1369
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "\"'But you, how much do you owe? I have here a few ounces of silver; maybe you could balance your accounts with them.'",
+      "_end": 1372
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "\"'My debts do not exceed six strings of copper cash. But how could I dare accept your offer?'",
+      "_end": 1375
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"'Not at all! take these ten ounces; you will pay your debts and bring me here food and wine; that will help me to wait till the end of the festivals.'",
+      "_end": 1379
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "\"The-just, reiterating his thanks, took the ingots that were offered him and went down as quickly as possible towards the town.",
+      "_end": 1382
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"His wife, on seeing him and hearing his story, could not restrain her joy. She hurried to go and buy provisions of all kinds. Her husband tried to light the stove, but they had not lit a fire for a long time; he found the chimney filled with soot and dust.",
+      "_end": 1387
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "\"Hong tried to sweep it with a big broom, but the masonry gave way, filling the room with the bricks and rubbish.",
+      "_end": 1390
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "\"'How very annoying!' grumbled the currier. 'Now the stove is destroyed let us take away what remains, and we will make the fire beneath the opening in the roof!'",
+      "_end": 1394
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "\"When his wife returned, he was still working. She put down her basket and helped to raise a huge stone that formed the bottom of the hearth. What was their astonishment in seeing a chest, half-broken, from which big ingots of gold were falling!",
+      "_end": 1399
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "\"'What are we to do with this?' said his wife. 'If we sell this gold, everybody will think that we have stolen it, and we shall be put in prison.'",
+      "_end": 1403
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "\"'We have only one thing to do,' replied Hong. 'Let us entrust our fortune to my companion in the cave; he is a good man. We shall save him, and he will make our money prosper; I will hurry and tell him.'",
+      "_end": 1407
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "\"When Hong arrived, it was nearly nightfall; Yang was standing under flakes of snow at the entrance of the grotto; he received him with reproaches:",
+      "_end": 1411
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "\"'You have come so late that my eyes are sore in looking out for you in vain!'",
+      "_end": 1414
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "\"'Do not abuse me, Old Uncle; drink this wine and eat these cakes that are still warm, and I will tell you what delayed me.'",
+      "_end": 1417
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "\"And while Glow-of-dawn ate and drank, the other told him of his adventure and of his intentions about the treasure.",
+      "_end": 1420
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "\"Surprised and touched, the merchant did not know how to express his wonder and gratitude. They talked over the best way of proceeding to bring the gold and settle the business.",
+      "_end": 1424
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "\"Then, by the glimmer of a bad lantern, they returned to the town and entered the merchant's house. There the currier washed himself, did his hair, and clothed himself in rich garments. A sedan-chair was waiting for him, followed by sturdy servants; he went away....",
+      "_end": 1429
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "\"The next day Glow-of-dawn's creditors presented themselves at the house of their debtor. He was standing at the entrance, and bowed in wishing them a thousand times happiness. They entered; tea was brought in by busy servants. They at last discussed the settlement of their yearly accounts. The master of the house found out that he owed 180,000 ounces of silver.",
+      "_end": 1436
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "\"'We have been informed that larger sums of silver are due to you, but you know the custom; you must settle everything to-day. In order to save you, we are content to make an estimate of your wealth, your goods and lands.'",
+      "_end": 1441
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "\"'Do not give yourselves such a trouble,' replied the merchant, laughing and waving his hand. 'I thought you would be relentless, so I have been to speak to my elder brother, who has an immense fortune; he has put at my disposal several hundred thousand ounces. But here! I hear the cry of the bearers; it must be him with the chests of white metal.'",
+      "_end": 1447
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"The major domo came hurrying in, carrying high in the air the huge red card with the names and surnames written in black.",
+      "_end": 1450
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "\"'The venerable Old Great Uncle The-just has arrived!'",
+      "_end": 1452
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "\"'Allow me?' said Yang, getting up, and going towards the door, of which both sides were open. Hong entered. They made each other a thousand affectionate greetings, as all brothers do who are animated with right feelings.",
+      "_end": 1457
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "\"'Dear elder brother! here are the gentlemen who have come for the settlement of my accounts about which I spoke to you.'",
+      "_end": 1460
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "\"'Gentlemen!' and the currier bowed, not without a certain grace that his new fortune had already given him. 'Well! how much is the total amount? I have brought you ten thousand ounces of gold, which is nearly 350,000 ounces of silver. Will you have enough?'",
+      "_end": 1465
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "\"While he was speaking, bearers were trooping in, and laid down on the ground heavy chests, the lids of which being raised, one could see the bars of precious metal.",
+      "_end": 1469
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "\"The merchants, thunderstruck by all these riches and generosity, remained silent for a moment; then they bowed low and bade the currier sit in the place of honour.",
+      "_end": 1473
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "\"Many delicate and exquisite dishes were brought in of which The-just did not even know the names; sweet wines were handed round in small transparent china cups.",
+      "_end": 1477
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "\"At last the secretaries counted the ingots, and they all returned home paid. When every one had retired, Glow-of-dawn knelt before the currier and, striking the earth with his forehead, he said:",
+      "_end": 1481
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "\"'Now you are my elder brother. You have rescued me, and I henceforth wish you to live here. My house, my properties, everything I possess belongs to you. Your wife is my sister-in-law.'",
+      "_end": 1485
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "\"The currier hurried to raise him up and, much moved, said:",
+      "_end": 1487
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "\"'I do not forget that it is you who saved me when you were still in misfortune. Your good genius has rewarded you. I am only the instrument of Fate.'\"",
+      "_end": 1491
+    }
+  ]
+}
