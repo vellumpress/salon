@@ -1311,6 +1311,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-spiders-thread",
   // Mira Wed 28 Oct 2026 PM HONG — Hong the Currier (Pu Songling, trans. Soulié de Morant, 1913) follows The Spider's Thread at the end of Next, plain Next. Never Featured; off every Ritual lane.
   "hong-the-currier",
+  // Mira Wed 28 Oct 2026 PM MISER — The Miser's Servant (Santal tale, tr. Bompas, 1909) follows Hong the Currier at the end of Next, Next carefully (heads-up on the card: the little-finger forfeit and the daughter given in marriage). Never Featured; off every Ritual lane (never Unwind or Before sleep).
+  "the-misers-servant",
 ] as const;
 
 /**

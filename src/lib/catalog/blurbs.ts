@@ -503,6 +503,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: this story looks down into Hell, where sinners writhe in a Pond of Blood and one of them struggles there like a dying frog. From the edge of a lotus pond in Paradise, the Buddha lowers a single spider's thread to a robber in Hell, and a whole life's worth of mercy comes to hang on one slender strand.",
   "hong-the-currier":
     "A poor currier flees his creditors on the last night of the year and shares a mountain cave with a ruined merchant, and one small kindness between them turns into a fortune neither could have found alone.",
+  "the-misers-servant":
+    "A heads-up before you start: the bargain at the heart of this tale stakes a man's little finger, and it ends with a daughter given in marriage to cover her father's shame. Hired for one grain of rice and one seed of maize a year, and a single leaf of rice at each meal, a quick-witted farmhand turns a miser's stinginess into his undoing, field by field.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
