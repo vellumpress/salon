@@ -1313,6 +1313,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "hong-the-currier",
   // Mira Wed 28 Oct 2026 PM MISER — The Miser's Servant (Santal tale, tr. Bompas, 1909) follows Hong the Currier at the end of Next, Next carefully (heads-up on the card: the little-finger forfeit and the daughter given in marriage). Never Featured; off every Ritual lane (never Unwind or Before sleep).
   "the-misers-servant",
+  // Mira Thu 29 Oct 2026 PM SHEEP — The Sheep-Brother (Armenian tale, tr. F. B. Collins, 1901) follows The Miser's Servant at the end of Next, Next carefully (heads-up on the card: the children abandoned by their father, and the stepmother and her daughter put to death at a horse's tail). Never Featured; off every Ritual lane (never Unwind or Before sleep).
+  "the-sheep-brother",
 ] as const;
 
 /**

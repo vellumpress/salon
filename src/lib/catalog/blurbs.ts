@@ -505,6 +505,8 @@ const BLURBS: Record<string, string> = {
     "A poor currier flees his creditors on the last night of the year and shares a mountain cave with a ruined merchant, and one small kindness between them turns into a fortune neither could have found alone.",
   "the-misers-servant":
     "A heads-up before you start: the bargain at the heart of this tale stakes a man's little finger, and it ends with a daughter given in marriage to cover her father's shame. Hired for one grain of rice and one seed of maize a year, and a single leaf of rice at each meal, a quick-witted farmhand turns a miser's stinginess into his undoing, field by field.",
+  "the-sheep-brother":
+    "A heads-up before you start: a father abandons his two children in the mountains at their stepmother's urging, and at the end the stepmother and her daughter are put to death, tied to the tail of a horse. Left in the mountains by their father, a girl sees her thirsty little brother drink from a sheep's track and become a sheep, and keeps him with her through a stepmother's schemes, a golden shoe and a great fish.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":

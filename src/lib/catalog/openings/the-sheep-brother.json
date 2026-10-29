@@ -1,0 +1,286 @@
+{
+  "id": "the-sheep-brother",
+  "title": "The Sheep-Brother",
+  "author": "Anonymous (Armenian) (tr. F. B. Collins)",
+  "year": "1901",
+  "note": "Opening sit: the whole story.",
+  "minutes": 9,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Sheep-Brother",
+      "place": "The Sheep-Brother",
+      "reentry": "Once there was a widow and she had a daughter. The widow married a widower who had by his first wife two children, a boy and a girl. The wife was always coaxing her husband: \"Take the children, do, and lead them up into the mountains.\" Her ",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Once there was a widow and she had a daughter. The widow married a widower who had by his first wife two children, a boy and a girl. The wife was always coaxing her husband: \"Take the children, do, and lead them up into the mountains.\" Her husband could not refuse her, and, lo! one day he put some bread in his basket, took the children, and set off for the mountain."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "They went on and on and came to a strange place. Then the father said to the children, \"Rest here a little while,\" and the children sat down to rest. The father turned his face away and wept bitterly, very bitterly. Then he turned again to the children and said, \"Eat something,\" and they ate. Then the boy said, \"Father, dear, I want a drink.\" The father took his staff, stuck it into the ground, threw his coat over it, and said, \"Come here, my son, sit in the shadow of my coat, and I will get you some water.\" The brother and sister stayed and the father went away and forsook his children. Whether they waited a long time or a short time before they saw that their father was not coming back is not known. They wandered here and there looking for him, but saw no human being anywhere."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "At last they came back to the same spot, and, beginning to weep, they said:"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "\"Alas! Alas! See, here is father's staff, and here is his coat, and he comes not, and he comes not.\""
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Whether the brother and sister sat there a long time or a short time is not known. They rose after a while, and one took the staff and the other the coat, and they went away without knowing whither. They went on and on and on, until they saw tracks of horses' hoofs filled with rain-water."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "\"I am going to drink, sister,\" said the brother."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "\"Do not drink, little brother, or you will become a colt,\" said the sister."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "They passed on till they saw tracks of oxen's hoofs."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "\"O sister dear, how thirsty I am!\""
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "\"Do not drink, little brother, or you will be a calf,\" the sister said to him."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "They went on till they saw the tracks of buffalo hoofs."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "\"O sister dear, how thirsty I am!\""
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "\"Drink not, little brother, or you will be a buffalo calf.\""
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "They passed on and saw the tracks of bears' paws."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "\"Oh, I am so thirsty, sister dear.\""
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "\"Drink not, little brother, or you will become a little bear.\""
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "They went on and saw the tracks of swine's trotters."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "\"O sister dear, I am going to drink.\""
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "\"Drink not, little brother, or you will become a little pig.\""
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "They went on and on till they saw the tracks of the pads of wolves."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "\"O sister dear, how thirsty I am!\""
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "\"Do not drink, little brother, or you will become a little wolf.\""
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "They walked on and on till they saw the tracks of sheep's trotters."
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "\"O sister dear, I am almost dying with thirst.\""
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "\"O little brother, you grieve me so! You will, indeed, be a sheep if you drink.\""
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "He could stand it no longer. He drank and turned into a sheep. He began to bleat and ran after his sister. Long they wandered, and at last came home."
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "Then the stepmother began to scheme against them. She edged up to her husband and said: \"Kill your sheep. I want to eat him.\""
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "The sister got her sheep-brother away in the nick of time and drove him back into the mountains. Every day she drove him to the meadows and she spun linen. Once her distaff fell from her hand and rolled into a cavern. The sheep-brother stayed behind grazing while she went to get the distaff."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "She stepped into the cavern and saw lying in a corner a Dew, one thousand years old. She suddenly spied the girl and said: \"Neither the feathered birds nor the crawling serpent can make their way in here; how then hast thou, maiden, dared to enter?\""
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "The girl spoke up in her fright. \"For love of you I came here, dear grandmother.\""
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "The old Dew mother bade the girl come near and asked her this and that. The maiden pleased her very much. \"I will go and bring you a fish,\" she said, \"you are certainly hungry.\" But the fishes were snakes and dragons. The girl was sorely frightened and began to cry with terror. The old Dew said, \"Maiden, why do you weep?\" She answered, \"I have just thought of my mother, and for her sake I weep.\" Then she told the old mother everything that had happened to her. \"If that is so,\" said the Dew, \"sit down here and I will lay my head on your knee and go to sleep.\""
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "She made up the fire, stuck the poker into the stove, and said:"
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "\"When the devil flies by do not waken me. If the rainbow-colored one passes near, take the glowing poker from the stove and lay it on my foot.\""
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "The maiden's heart crept into her heels from fright. What was she to do? She sat down, the Dew laid her head on her knees and slept. Soon she saw a horrible black monster flying by. The maiden was silent. After a while there came flying by a rainbow-colored creature. She seized the glowing poker and threw it on the old Dew's foot. The old mother awoke and said, \"Phew; how the fleas bite.\" She rose and lifted up the maiden. The girl's hair and clothing were turned to gold from the splendor of the rainbow colors. She kissed the old Dew's hand and begged that she might go. She went away, and taking her sheep-brother with her started for home. The stepmother was not there, and the maiden secretly dug a hole, buried her golden dress, and sat down and put on an old one."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "The stepmother came home and saw that the maiden had golden hair."
+    },
+    {
+      "id": "s0-35",
+      "sceneId": "s0",
+      "text": "\"What have you done to your hair to make it like gold?\" she asked. The maiden told her all, how and when. The next day the stepmother sent her own daughter to the same mountain. The stepmother's daughter purposely let her distaff fall and it rolled into the hole. She went in to get it, but the old Dew mother turned her into a scarecrow and sent her home."
+    },
+    {
+      "id": "s0-36",
+      "sceneId": "s0",
+      "text": "About that time there was a wedding in the royal castle; the King was giving one of his sons in marriage, and the people came from all directions to look on and enjoy themselves."
+    },
+    {
+      "id": "s0-37",
+      "sceneId": "s0",
+      "text": "The stepmother threw on a kerchief and smartened up the head of her daughter and took her to see the wedding. The girl with the golden hair did not stay at home, but, putting on her golden dress so that she became from head to foot a gleaming houri, she went after them."
+    },
+    {
+      "id": "s0-38",
+      "sceneId": "s0",
+      "text": "But on the way home, she ran so fast to get there before her stepmother, that she dropped one of her golden shoes in the fountain. When they led the horses of the King's second son to drink, the horses caught sight of the golden shoe in the water and drew back and would not drink. The King caused the wise men to be called, and asked them to make known the reason why the horses would not drink, and they found only the golden shoe. The King sent out his herald to tell the people that he would marry his son to whomsoever this shoe fitted."
+    },
+    {
+      "id": "s0-39",
+      "sceneId": "s0",
+      "text": "He sent people throughout the whole city to try on the shoe, and they came to the house where the sheep-brother was. The stepmother pushed the maiden with the golden locks into the stove, and hid her, and showed only her own daughter."
+    },
+    {
+      "id": "s0-40",
+      "sceneId": "s0",
+      "text": "A cock came up to the threshold and crowed three times, \"Cock-a-doodle doo! The fairest of the fair is in the stove.\" The King's people brushed the stepmother aside and led the maiden with golden hair from the stove, tried on the shoe, which fitted as though moulded to the foot."
+    },
+    {
+      "id": "s0-41",
+      "sceneId": "s0",
+      "text": "\"Now stand up,\" said they, \"and you shall be a royal bride.\""
+    },
+    {
+      "id": "s0-42",
+      "sceneId": "s0",
+      "text": "The maiden put on her golden dress, drove her sheep-brother before her, and went to the castle. She was married to the King's son, and seven days and seven nights they feasted."
+    },
+    {
+      "id": "s0-43",
+      "sceneId": "s0",
+      "text": "Again the stepmother took her daughter and went to the castle to visit her stepdaughter, who in spite of all treated her as her mother and invited her into the castle garden. From the garden they went to the seashore and sat down to rest. The stepmother said, \"Let us bathe in the sea.\" While they were bathing she pushed the wife of the King's son far out into the water, and a great fish came swimming by and swallowed her."
+    },
+    {
+      "id": "s0-44",
+      "sceneId": "s0",
+      "text": "Meanwhile the stepmother put the golden dress on her own daughter and led her to the royal castle and placed her in the seat where the young wife always sat, covering her face and her head so that no one would know her."
+    },
+    {
+      "id": "s0-45",
+      "sceneId": "s0",
+      "text": "The young wife sat in the fish and heard the voice of the bell-ringer. She called to him and pleaded: \"Bell-ringer, O bell-ringer, thou hast called the people to church; cross thyself seven times, and I entreat thee, in the name of heaven, go to the prince and say that they must not slaughter my sheep-brother.\""
+    },
+    {
+      "id": "s0-46",
+      "sceneId": "s0",
+      "text": "Once, twice the bell-ringer heard this voice and told the King's son about it."
+    },
+    {
+      "id": "s0-47",
+      "sceneId": "s0",
+      "text": "The King's son took the bell-ringer with him and went at night to the seashore. The same voice spoke the same words. He knew that it was his dear wife that spoke, and drew his sword and ripped open the fish and helped his loved one out."
+    },
+    {
+      "id": "s0-48",
+      "sceneId": "s0",
+      "text": "They went home, and the prince had the stepmother brought to him, and said to her: \"Mother-in-law, tell me what kind of a present you would like: a horse fed with barley or a knife with a black handle?\""
+    },
+    {
+      "id": "s0-49",
+      "sceneId": "s0",
+      "text": "The stepmother answered: \"Let the knife with a black handle pierce the breast of thine enemy; but give me the horse fed with barley.\""
+    },
+    {
+      "id": "s0-50",
+      "sceneId": "s0",
+      "text": "The King's son commanded them to tie the stepmother and her daughter to the tail of a horse, and to hunt them over mountain and rock till nothing was left of them but their ears and a tuft of hair."
+    },
+    {
+      "id": "s0-51",
+      "sceneId": "s0",
+      "text": "After that the King's son lived happily with his wife and her sheep-brother. The others were punished and she rejoiced."
+    },
+    {
+      "id": "s0-52",
+      "sceneId": "s0",
+      "text": "And three apples fell down from heaven."
+    }
+  ]
+}
