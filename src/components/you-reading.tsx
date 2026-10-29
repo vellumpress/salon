@@ -107,6 +107,16 @@ const ABOUT: Record<ContributorId, { evidence: string; about: string; why: strin
 type View = "today" | "trends" | "lines" | "settings" | "calc";
 type TrendSpan = "week" | "month" | "year";
 
+/**
+ * You paints the score before the account chunk arrives, then that chunk
+ * mounts a second copy. This remembers the open panel so the swap does not
+ * throw away a tap on Settings, Trends, or a contributor.
+ */
+export type YouChrome = {
+  view: View;
+  detail: ContributorId | null;
+};
+
 export function YouReading({
   reading,
   hydrated,
@@ -118,6 +128,7 @@ export function YouReading({
   headerEnd,
   settings,
   trendsEnd,
+  chrome,
 }: {
   reading: ReadingStats;
   hydrated: boolean;
@@ -129,6 +140,7 @@ export function YouReading({
   headerEnd?: ReactNode;
   settings: ReactNode;
   trendsEnd?: ReactNode;
+  chrome?: YouChrome;
 }) {
   const model = reading.readingModel;
   const scoreHide = useTbr((s) => s.scoreHide);
@@ -137,8 +149,16 @@ export function YouReading({
   const setScorePaused = useTbr((s) => s.setScorePaused);
   const dismissInsight = useTbr((s) => s.dismissInsight);
   const noteInsight = useTbr((s) => s.noteInsight);
-  const [view, setView] = useState<View>("today");
-  const [detail, setDetail] = useState<ContributorId | null>(null);
+  const [view, setViewState] = useState<View>(chrome?.view ?? "today");
+  const [detail, setDetailState] = useState<ContributorId | null>(chrome?.detail ?? null);
+  const setView = (next: View) => {
+    if (chrome) chrome.view = next;
+    setViewState(next);
+  };
+  const setDetail = (next: ContributorId | null) => {
+    if (chrome) chrome.detail = next;
+    setDetailState(next);
+  };
   const [span, setSpan] = useState<TrendSpan>("week");
 
   useEffect(() => {

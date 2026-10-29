@@ -1,7 +1,7 @@
-import { Component, lazy, Suspense, useEffect, useLayoutEffect, useMemo, useState, type ReactNode } from "react";
+import { Component, lazy, Suspense, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PagesShell } from "@/components/pages-shell";
-import { YouReading } from "@/components/you-reading";
+import { YouReading, type YouChrome } from "@/components/you-reading";
 import { useLastRead, usePersistHydrated } from "@/components/resume-link";
 import { RITUAL_LANES, worksForRitualLane } from "@/lib/catalog/rituals";
 import { readDaylightEnabled } from "@/lib/daylight-colors";
@@ -74,6 +74,7 @@ class AccountBoundary extends Component<{ children: ReactNode; fallback: ReactNo
 }
 
 function ProfileBody() {
+  const chrome = useRef<YouChrome>({ view: "today", detail: null }).current;
   const progress = useTbr((s) => s.progress);
   const joined = useTbr((s) => s.joined) ?? [];
   const sittingMinutes = useTbr((s) => s.sittingMinutes);
@@ -215,6 +216,7 @@ function ProfileBody() {
         notice={slots.notice}
         headerEnd={slots.headerEnd}
         settings={slots.settings}
+        chrome={chrome}
         trendsEnd={
           <section>
             <p className="border-b border-ink px-4 py-3 type-kicker text-muted">For now</p>

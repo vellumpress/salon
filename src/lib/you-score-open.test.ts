@@ -103,3 +103,51 @@ test(
     }
   },
 );
+
+test(
+  "a Settings tap survives the account chunk replacing the score",
+  { timeout: 120_000 },
+  async () => {
+    await ensureReaderServer();
+    const browser = await launchBrowser();
+    try {
+      const context = await browser.newContext({
+        viewport: {
+          width: READER_PHONE_VIEWPORT.width,
+          height: READER_PHONE_VIEWPORT.height,
+        },
+        hasTouch: READER_PHONE_VIEWPORT.hasTouch,
+        isMobile: READER_PHONE_VIEWPORT.isMobile,
+        deviceScaleFactor: 2,
+      });
+      const page = await context.newPage();
+      const errors: string[] = [];
+      page.on("pageerror", (err) => errors.push(err.message));
+      page.on("console", (msg) => {
+        if (msg.type() === "error") errors.push(msg.text());
+      });
+      await page.addInitScript(() => {
+        localStorage.clear();
+      });
+      let held = 0;
+      await page.route("**/*you-account*", async (route) => {
+        held += 1;
+        await new Promise((resolve) => setTimeout(resolve, 900));
+        await route.continue();
+      });
+      await page.goto(`${ORIGIN}/salon/profile`, { waitUntil: "domcontentloaded", timeout: 45_000 });
+      const settings = page.getByRole("button", { name: "Settings", exact: true });
+      await settings.waitFor({ state: "visible", timeout: 12_000 });
+      await settings.click();
+      assert.equal(await settings.getAttribute("aria-pressed"), "true", "Settings did not open");
+      await page.getByText("Create an account", { exact: true }).waitFor({ timeout: 12_000 });
+      assert.equal(await settings.getAttribute("aria-pressed"), "true", "account chunk closed Settings");
+      assert.ok(held > 0, "the account chunk was not delayed");
+      const hydration = errors.filter((line) => /418|422|hydration|Hydration/i.test(line));
+      assert.deepEqual(hydration, [], hydration.join("\n"));
+      await context.close();
+    } finally {
+      await browser.close();
+    }
+  },
+);
