@@ -1,0 +1,51 @@
+{
+  "id": "the-misers-servant",
+  "title": "The Miser's Servant",
+  "author": "Anonymous (Santal) (tr. Cecil Henry Bompas)",
+  "year": "1909",
+  "note": "Opening sit: the whole story.",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Miser's Servant",
+      "place": "The Miser's Servant",
+      "reentry": "Once there was a rich man who was a miser. Although he kept farm servants they would never stay out the year with him; but ran away in the middle. When the villagers asked why they ran away and so lost their year's wages the servants answer",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "Once there was a rich man who was a miser. Although he kept farm servants they would never stay out the year with him; but ran away in the middle. When the villagers asked why they ran away and so lost their year's wages the servants answered. \"You would do the same in our place: at the busy time of the year he speaks us fair and feeds us well, but directly the crops are gathered he begins to starve us; this year we have had nothing to eat since September.\"",
+      "_end": 1745
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "And the villagers said \"Well, that is a good reason, a man can stand scolding but not starvation; we all work to fill our bellies, hunger is the worst disease of all.\" The news that the miser made his servants work for nothing spread throughout the neighbourhood so he could get no servants near by and when he brought them from a distance they soon heard of his character and ran away. Men would only work for him on daily wages and because of his miserliness they demanded higher wages than usual from him and would not work without. Now there was a young fellow named Kora who heard all this and he said \"If I were that man's servant I would not run away. I would get the better of him; ask him if he wants a servant and if he says, yes, take me to him.\" The man to whom Kora told this went to the miser and informed him that Kora was willing to engage himself to him; so Kora was fetched and they had a drink of rice beer and then the miser asked Kora whether he would work for the full year and not run away in the middle. Kora said that he would stay if he were satisfied with the wages. The master said \"I will fix your wages when I see your work; if you are handy at every thing I will give you 12 _Kats_ of rice and if you are only a moderate worker then 9 or 10 _Kats_ besides your clothes. How much do you ask for?\"",
+      "_end": 1766
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "And Kora said \"Well, listen to me: I hear that your servants run away in the middle of the year because you give them so little to eat, all I ask for my wages is that you give me once a year one grain of rice and I will sow it and you must give me low land to plant all the seed that I get from it; and give me one seed of maize and I will sow it for seed, and you must give me upland to sow all the seed I get from it; and give me the customary quantity of clothes, and for food give me one leaf full of rice three times a day. I only want what will go on a single leaf, you need not sew several leaves together into a plate. I will ask for no second helping but if you do not fill the leaf full I shall have the right to abuse you, and if I do not do all the work you give me properly, then you can abuse me and beat me. If I run away from fear of hard work you may cut off the little finger of my right hand, and if you do not give me the wages we have agreed upon then I shall have the right to cut off the little finger of your hand. What do you say to this proposal: consult your friends and give me your answer.\" Then the miser answered \"I engage you on these terms and if I turn you off without reason you may cut off my little finger.\" Then Kora turned to the man who had fetched him and said \"Listen to all this: if there is any dispute hereafter you will be my witness.\"",
+      "_end": 1787
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "So Kora began to work and the first day they gave him rice on a single _sal_ leaf and he ate it up in one mouthful: but the next day he brought a plantain leaf (_which is some three feet long_) and said \"Give me my rice on this and mind you fill it full.\" And they refused: but he said \"Why not? it is only a single leaf\" and they had to give in because he was within his rights; so he ate as much as he wanted, and every day he brought a plantain leaf till his master's wife got tired and said to her husband \"Why have you got a servant like this—he takes a whole pot of rice to himself every day,\" but he answered \"Never mind: his wages are nothing, he is working for his keep alone;\" so the whole year Kora got his plantain leaf filled and he was never lazy over his work so they could find no fault with him on that score, and when the year was up they gave him one grain of rice and one seed of maize for his wages for the year. Kora kept them carefully, and his master's sons laughed at him and said \"Mind you don't drop them or let a mouse eat them.\"",
+      "_end": 1804
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Kora said nothing but when the time for sowing maize came he took his grain of maize and sowed it by the dung heap, and he called them to see where he sowed it; and at the time of sowing rice he sowed his grain separately, and when the time for transplanting came he planted his rice seedling in a hollow and bade them note it. When the maize ripened it was found that his plant had two big cobs and one small one on it, and his rice seedling sent up a number of ears; and when it ripened he cut it and threshed it and got one _pai_ of rice, and he kept the maize and rice for seed. And the next year also he sowed this seed separately and it produced a big basket of rice and another one of maize, and he kept this also for seed; and in the course of five or six years he had taken all their high lands to sow his seed in and in a few years more he had taken all their rice lands too. Then his master was very miserable but he saw that it was useless to make any complaint and the master became so poor that he had to work as a servant to Kora. At last the miser called the heads of the village together and wept before them, and they had pity on him and interceded for him; but Kora said \"It is God who has punished him and not I; he made poor men work for nothing for so long and now he has to suffer;\" but they asked him to be merciful and give him some land, and he agreed and said \"Cut off his little finger and I will let him off his bargain; and call all the servants whom he has defrauded and I will pay them\" but the miser would not have his finger cut off; then Kora said \"Let him keep his finger and I will give him back half his land.\" The miser agreed to this and promised to treat his servants well in future, and in order to lessen his shame he married his daughter to Kora; and he had to admit that it was by his own folly that this trouble had befallen him.",
+      "_end": 1833
+    }
+  ]
+}
