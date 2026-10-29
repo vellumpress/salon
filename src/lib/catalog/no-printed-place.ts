@@ -20,4 +20,5 @@ export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
   "the-shipwrecked-sailor", // Mira Mon 26 Oct 2026 PM SAILOR: the island is never named ("this isle", "an island", "this isle of the blest"); Wawat, Senmut, Egypt, Punt and the mines are only origins, titles and routes; no chip, no country
   "the-story-of-the-two-neighbours", // Mira Mon 26 Oct 2026 PM NEIGHBOURS: no place is named, only "the same village", "a neighbouring town", the houses, the garden and the school-house; no chip, no country
   "the-misers-servant", // Mira Wed 28 Oct 2026 PM MISER: no place is named, only "the villagers", "the heads of the village", the low land, upland and rice lands; no chip, no country
+  "the-sheep-brother", // Mira Thu 29 Oct 2026 PM SHEEP: no place is named, only "the mountains", "a strange place", "the royal castle", "the seashore" and "the whole city"; no chip, no country
 ]);
