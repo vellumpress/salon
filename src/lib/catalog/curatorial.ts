@@ -1315,6 +1315,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-misers-servant",
   // Mira Thu 29 Oct 2026 PM SHEEP — The Sheep-Brother (Armenian tale, tr. F. B. Collins, 1901) follows The Miser's Servant at the end of Next, Next carefully (heads-up on the card: the children abandoned by their father, and the stepmother and her daughter put to death at a horse's tail). Never Featured; off every Ritual lane (never Unwind or Before sleep).
   "the-sheep-brother",
+  // Mira Fri 30 Oct 2026 AM BINGO — The Story of Bingo (Fan tale, tr. Margery Bianco from Cendrars's Anthologie nègre, 1927) follows The Sheep-Brother at the end of Next, Next carefully (heads-up on the card: the father throws his son down from on high, and the grown hero is killed for his green stone). Never Featured; off every Ritual lane (never Unwind or Before sleep).
+  "the-story-of-bingo",
 ] as const;
 
 /**
