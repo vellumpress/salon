@@ -509,6 +509,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: a father abandons his two children in the mountains at their stepmother's urging, and at the end the stepmother and her daughter are put to death, tied to the tail of a horse. Left in the mountains by their father, a girl sees her thirsty little brother drink from a sheep's track and become a sheep, and keeps him with her through a stepmother's schemes, a golden shoe and a great fish.",
   "the-story-of-bingo":
     "A heads-up before you start: in this tale a father throws his young son down from on high, and at the end men from beyond the mountains kill the grown hero to take his green stone. Thrown down from on high by his angry father Nzame, the boy Bingo is saved by an old fisherman, shielded by a chameleon and a spider, and grows up to teach men to be good.",
+  "a-domestic-animal":
+    "A homely gray stray, pelted with stones and chased by the households of a village estate, outlasts a cold, scanty winter on her own stubborn wits.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":

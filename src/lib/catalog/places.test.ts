@@ -150,6 +150,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "chekhov-oysters": { label: "Moscow", region: "ru" },
     "anatole-france-madame-de-luzy": { label: "Paris", region: "fr" },
     "better-is-the-folly-of-woman-than-the-wisdom-of-man": { label: "Constantinople", region: "tr" },
+    "a-domestic-animal": { label: "Okubo", region: "jp" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -962,6 +963,18 @@ test("Sat 24 Oct PM Better Is the Folly of Woman place is Constantinople as prin
   assert.equal(CHIP_ONLY_PLACE["better-is-the-folly-of-woman-than-the-wisdom-of-man"], undefined);
   assert.equal(NO_PRINTED_PLACE.has("better-is-the-folly-of-woman-than-the-wisdom-of-man"), false);
   assert.equal(countryFor(shelfWork("better-is-the-folly-of-woman-than-the-wisdom-of-man")!), "Turkey");
+});
+
+test("Fri 30 Oct PM A Domestic Animal place is Okubo as printed; jp; Japan from the printed place, not the author lookup", () => {
+  assert.ok(REGION_SHAPES.jp?.d, "jp shape");
+  const work = shelfWork("a-domestic-animal")!;
+  assert.equal(work.author, "Shimazaki Tōson (tr. Torao Taketomo)");
+  assert.deepEqual(placeFor(work), { label: "Okubo", region: "jp" });
+  assert.equal(CHIP_ONLY_PLACE["a-domestic-animal"], undefined);
+  assert.equal(NO_PRINTED_PLACE.has("a-domestic-animal"), false);
+  assert.equal(countryFor(work), "Japan");
+  // The author string is unmapped: Japan comes from the work's printed place only.
+  assert.equal(countryFor({ id: "author-lookup-probe", author: work.author, language: "" }), "");
 });
 
 test("Sat 24 Oct PM The Cormorants of Andvær: chip-only Andvær as printed, no silhouette, no country (CoS, this work only)", () => {

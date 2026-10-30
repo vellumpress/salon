@@ -63,6 +63,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "anatole-france-madame-de-luzy": { label: "Paris", region: "fr" },
   // Mira Sat 24 Oct 2026 PM FOLLY: "There lived in Constantinople an old Hodja" (l.381), "the Mosque Aya Sofia" (l.383); Constantinople as printed, tr; countries.ts Turkey.
   "better-is-the-folly-of-woman-than-the-wisdom-of-man": { label: "Constantinople", region: "tr" },
+  // Mira Fri 30 Oct 2026 PM DOMESTIC: the chip is the place as printed, "the village road of Okubo" (p.118; again "come to Okubo every morning", p.125); jp shape. countries.ts Japan from this printed place (the Courteline mechanism), not the author lookup.
+  "a-domestic-animal": { label: "Okubo", region: "jp" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

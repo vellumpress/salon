@@ -351,6 +351,7 @@ test("known origin overrides", () => {
     "chekhov-oysters": "Russia",
     "anatole-france-madame-de-luzy": "France",
     "better-is-the-folly-of-woman-than-the-wisdom-of-man": "Turkey",
+    "a-domestic-animal": "Japan",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
