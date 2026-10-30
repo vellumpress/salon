@@ -21,4 +21,5 @@ export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
   "the-story-of-the-two-neighbours", // Mira Mon 26 Oct 2026 PM NEIGHBOURS: no place is named, only "the same village", "a neighbouring town", the houses, the garden and the school-house; no chip, no country
   "the-misers-servant", // Mira Wed 28 Oct 2026 PM MISER: no place is named, only "the villagers", "the heads of the village", the low land, upland and rice lands; no chip, no country
   "the-sheep-brother", // Mira Thu 29 Oct 2026 PM SHEEP: no place is named, only "the mountains", "a strange place", "the royal castle", "the seashore" and "the whole city"; no chip, no country
+  "the-story-of-bingo", // Mira Fri 30 Oct 2026 AM BINGO: no place is named, only "a big village", "the river", "the forest", "the cave", "the mountains" and "the country of the white people"; "Fan" in the heading is the people; no chip, no country
 ]);

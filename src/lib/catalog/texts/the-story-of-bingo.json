@@ -1,0 +1,228 @@
+{
+  "id": "the-story-of-bingo",
+  "title": "The Story of Bingo",
+  "author": "Anonymous (Fan) (tr. Margery Bianco)",
+  "year": "1927",
+  "note": "Blaise Cendrars, The African Saga (New York: Payson & Clarke Ltd, 1927), \"4. The Story of Bingo (Fan)\", pp.34–39, from Chapter One, \"Cosmic Legends\". Cendrars compiled the Anthologie nègre (Paris, 1921), from which the book is translated; the title page reads \"TRANSLATED FROM L'ANTHOLOGIE NÈGRE BY MARGERY BIANCO WITH AN INTRODUCTION BY ARTHUR B. SPINGARN\". Year 1927, from the verso \"COPYRIGHT 1927 BY PAYSON & CLARKE LTD / First Printing\" (IA the-african-saga n10). Not on Project Gutenberg: the text was built from the IA scan's OCR (djvu l.1538–1760) and read against the page images (n40–n45); OCR errors go back to the print (8 opening quotes, \"ground.\" on p.37, \"I have\" on p.39). No teller is named, so the author field is \"Anonymous\", with the people named in the heading (Fan) and the translator credited. Bound whole, one breath per printed paragraph (40), in two scenes: the opening, and the printed sub-heading \"Bingo and the Spider\". The heading's number and \"(Fan)\" are not bound. Printed spellings stay (colour, honour, witch-doctor). No changes to the collated text (fix.json []).",
+  "minutes": 8,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "The Story of Bingo",
+      "place": "The Story of Bingo",
+      "reentry": "It happened one day that Nzame came down to earth. Seated in a canoe which went all by itself, without any paddling, he followed the bank of the river. He came to shore near a big village, as he wanted to go up to the council house and spea",
+      "prompt": "A word from this stretch."
+    },
+    {
+      "id": "s1",
+      "title": "Bingo and the Spider",
+      "place": "Bingo and the Spider",
+      "reentry": "In the very depths of the cavern Bingo had taken refuge; the cave was deep and dark. Bingo said in his heart: “Here, I shall be safe.” And he stayed there a long while.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "It happened one day that Nzame came down to earth. Seated in a canoe which went all by itself, without any paddling, he followed the bank of the river. He came to shore near a big village, as he wanted to go up to the council house and speak to the men. But it happened that a young girl came to fetch water from the spring. Nzame saw her and loved her, for she was a good worker and as eager at her task as she was beautiful. He gave her a son and took her away with him, far, very, very far, into the country from which none return. Mboya—for that was the young girl’s name—Mboya never came back from this land again."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "When her time was come Mboya gave birth to a son, and she named him Bingo; I don’t know why and no one ever told me, but it must be one of the names of that country. Bingo grew; he grew bigger every day, and Mboya loved him more than all the world. In his hair she twined the Eleli, the flower which the birds love; through his little nose she passed a twisted string of pearls; his neck and arms were decked with bracelets of copper polished carefully every morning."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "Bingo grew, he grew all the time, and Mboya loved him more than all the world."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "Nzame became very angry at this, and one day, irritated because Bingo had stolen a fish from his own preserve, he fastened Mboya in the hut, seized Bingo and threw him down from on high."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "Bingo fell; he fell for a long time; he was already almost dead, when the waves of the great water beyond the mountains opened beneath his body, luckily for him. Better still, he found himself not far from the shore; a fisherman was there in his boat, with his nets for catching fish. He saved Bingo and took him to his hut. The name of this old man was Otoyom."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "Scarcely had Nzame thrown Bingo over when Mboya rushed to his aid. Have you sometimes seen in the forest, at night, a wandering flame which moves wavering here and there? Have you heard a woman’s voice which goes far off into the distance, calling, calling beneath the branches? Do not be afraid. It is Mboya seeking her child, Mboya who seeks but can never find him. A mother never gives up."
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "Bingo fallen, Mboya gone away, Nzame hastened in his turn. He wanted at all cost to find Bingo again."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "On the sea he sought him. “Sea, sea, have you got Bingo?”"
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "On the earth, he sought him. “Earth, earth, have you got Bingo?”"
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "And the earth and the sea answered: “No, no.”"
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "Impossible to find him. Otoyom, the great witch-doctor, had recognized Bingo’s noble birth and did not want to give him up; he had hidden him carefully away."
+    },
+    {
+      "id": "s1-0",
+      "sceneId": "s1",
+      "text": "In the very depths of the cavern Bingo had taken refuge; the cave was deep and dark. Bingo said in his heart: “Here, I shall be safe.” And he stayed there a long while."
+    },
+    {
+      "id": "s1-1",
+      "sceneId": "s1",
+      "text": "Nzame however continued his frantic hunt, and each day he said: “I will find Bingo again, and then I will eat his heart!” But Bingo was in the deep cave, in the middle of the forest. Nzame came to the forest; he met the chameleon."
+    },
+    {
+      "id": "s1-2",
+      "sceneId": "s1",
+      "text": "“Chameleon, have you seen Bingo?”"
+    },
+    {
+      "id": "s1-3",
+      "sceneId": "s1",
+      "text": "But the chameleon, not wishing to compromise himself, said: “I saw a man pass by, certainly. But how should I know his name?”"
+    },
+    {
+      "id": "s1-4",
+      "sceneId": "s1",
+      "text": "“And which way did he go, where does he live?”"
+    },
+    {
+      "id": "s1-5",
+      "sceneId": "s1",
+      "text": "“He went now this way, now that; his home is on the other side of the forest.”"
+    },
+    {
+      "id": "s1-6",
+      "sceneId": "s1",
+      "text": "“Was it long ago that you saw him?”"
+    },
+    {
+      "id": "s1-7",
+      "sceneId": "s1",
+      "text": "“The days are long; each day is a very long time. Yes, it was a long time ago.”"
+    },
+    {
+      "id": "s1-8",
+      "sceneId": "s1",
+      "text": "Nzame went his way, much annoyed, and while he was searching here and there for Bingo’s tracks the chameleon ran quickly to the cavern."
+    },
+    {
+      "id": "s1-9",
+      "sceneId": "s1",
+      "text": "“Bingo, your father is searching for you; take care!”"
+    },
+    {
+      "id": "s1-10",
+      "sceneId": "s1",
+      "text": "And he ran away a little further, to the top of a high rock."
+    },
+    {
+      "id": "s1-11",
+      "sceneId": "s1",
+      "text": "Bingo, warned, smoothed away carefully all the marks of his footprints from the earth; then, taking a well-trodden path, where the ground was hard, he returned to the cave. But he took care to walk backward, facing the way he had come. He reached the cave and hid himself at the very end, and at the same time Ndanabo, the spider, spun his web across the entrance, a strong thick web, and the chameleon hastily threw flies and other insects into the meshes of the web."
+    },
+    {
+      "id": "s1-12",
+      "sceneId": "s1",
+      "text": "Nzame continued his search; he met Viere, the snake."
+    },
+    {
+      "id": "s1-13",
+      "sceneId": "s1",
+      "text": "“Viere, have you seen Bingo?”"
+    },
+    {
+      "id": "s1-14",
+      "sceneId": "s1",
+      "text": "Viere answered: “Yes, indeed!”"
+    },
+    {
+      "id": "s1-15",
+      "sceneId": "s1",
+      "text": "“Is he in the cave in the forest?”"
+    },
+    {
+      "id": "s1-16",
+      "sceneId": "s1",
+      "text": "“Yes, indeed! Yes!”"
+    },
+    {
+      "id": "s1-17",
+      "sceneId": "s1",
+      "text": "Nzame quickened his steps; he drew near the grotto. “What?” he said. “Here are footprints pointing away!” And then he saw the spider web, with all the flies caught fast in it. “There can’t possibly be anyone here,” he said."
+    },
+    {
+      "id": "s1-18",
+      "sceneId": "s1",
+      "text": "The chameleon called out to him from the top of the rock. “Ah, so you got here! Good-morning!”"
+    },
+    {
+      "id": "s1-19",
+      "sceneId": "s1",
+      "text": "“Good-morning, chameleon. Is this the cave where you saw Bingo?”"
+    },
+    {
+      "id": "s1-20",
+      "sceneId": "s1",
+      "text": "“Yes. But that was a long, long time ago. He has gone away. But I think you can still see his footprints, there on the ground.”"
+    },
+    {
+      "id": "s1-21",
+      "sceneId": "s1",
+      "text": "“True,” said Nzame. “Here they are. I am going to follow them. You have done very well, chameleon.”"
+    },
+    {
+      "id": "s1-22",
+      "sceneId": "s1",
+      "text": "And he went off to continue his hunt."
+    },
+    {
+      "id": "s1-23",
+      "sceneId": "s1",
+      "text": "When he had gone a long, long way off, Bingo came out from the cave."
+    },
+    {
+      "id": "s1-24",
+      "sceneId": "s1",
+      "text": "“Chameleon,” he said, “you have served me very well. This is your reward; henceforward you shall have the power to change your colour at will, and thus you will always escape your enemies.” And the chameleon said: “That’s good!”"
+    },
+    {
+      "id": "s1-25",
+      "sceneId": "s1",
+      "text": "And to the spider Bingo said: “Ndanabo, you have served me faithfully, what shall I do for you?” And Ndanabo answered: “Nothing. I am quite happy as I am.” “Good,” said Bingo. “Your presence shall always bring good fortune.” And he went away. On his way he met Viere the snake, and with one stamp of his heel he crushed Viere’s head."
+    },
+    {
+      "id": "s1-26",
+      "sceneId": "s1",
+      "text": "It happened at last that Nzame, tired of his useless search, went back to heaven and left Bingo in peace. Bingo had learned the arts of his adopted father. When Otoyom died, he washed his body and buried it with every care, but first of all he took the skull, which he kept in the hut that he might honour it, and on all solemn feast-days he rubbed it with red pigments and polished it with oil. And because of this the spirit of Otoyom stayed with Bingo and dwelt with him; it was Bingo who first taught us to preserve, in the Evara, the skulls of our forefathers, that we may honour them and keep their spirits always with us. Shame to him who does not respect the heads of the ancients!"
+    },
+    {
+      "id": "s1-27",
+      "sceneId": "s1",
+      "text": "When he grew up Bingo travelled all over the world; he saw all the people and all the tribes. He was good himself, and he taught men to be good and to do what is right. He performed all kinds of miracles with a green stone which he wore round his neck. On this stone Nzame had written his name, and had given it to Bingo’s mother, Mboya, on the very first day he saw her. And Mboya in her turn had given the green stone to her son. And Bingo could leave his body whenever he wanted to; arrows never touched him, axes could not wound him, the poisoned reeds did not pierce his bare feet and all the treasures of the earth were his. He loved the black men, and the black men loved him. They did just as he wished, and whatever he told them to, and that was a good thing, for Bingo himself was good."
+    },
+    {
+      "id": "s1-28",
+      "sceneId": "s1",
+      "text": "And then Bingo wanted to go away, far away; he set out towards the country which lies on the other side of the mountains (I think it must be the country of the white people), and the men there, having seen how Bingo could open the earth at will, and how he knew all the treasures within it, spied upon him day and night. In the end, for Bingo knew they were wicked and hid himself from them, they surprised him one day with the green stone in his hand. And so as to possess his secret and have the green stone for themselves they killed him, and took the green stone, the green stone which he would have left to us. Ever since that day it is the men beyond the mountains who possess all the riches of the earth; but we, we others, we have preserved the laws of Bingo. Keep the customs of your forefathers, my children, for they are good. I have spoken."
+    }
+  ]
+}
