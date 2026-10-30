@@ -764,6 +764,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "chekhov-oysters": "Russia",
   "anatole-france-madame-de-luzy": "France",
   "better-is-the-folly-of-woman-than-the-wisdom-of-man": "Turkey",
+  "a-domestic-animal": "Japan",
   nostalgia: "Italy",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",

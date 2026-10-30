@@ -1317,6 +1317,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-sheep-brother",
   // Mira Fri 30 Oct 2026 AM BINGO — The Story of Bingo (Fan tale, tr. Margery Bianco from Cendrars's Anthologie nègre, 1927) follows The Sheep-Brother at the end of Next, Next carefully (heads-up on the card: the father throws his son down from on high, and the grown hero is killed for his green stone). Never Featured; off every Ritual lane (never Unwind or Before sleep).
   "the-story-of-bingo",
+  // Mira Fri 30 Oct 2026 PM DOMESTIC — A Domestic Animal (Shimazaki Tōson, tr. Torao Taketomo, Paulownia, 1918) follows The Story of Bingo at the end of Next, plain Next (no heads-up, as cleared). Never Featured; off every Ritual lane.
+  "a-domestic-animal",
 ] as const;
 
 /**
