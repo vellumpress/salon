@@ -186,7 +186,7 @@ function HomeBody() {
             fill={doorFills[0] ?? "yellow"}
             seconds={DOOR_LOOP_SECONDS.rituals}
             slides={ritualSlides}
-            cta={{ kind: "rituals", label: "See them all" }}
+            cta={{ kind: "rituals", label: "Reading rituals" }}
           />
           <DoorCarousel
             door="together"
@@ -195,7 +195,7 @@ function HomeBody() {
             fill={doorFills[1] ?? "yellow"}
             seconds={DOOR_LOOP_SECONDS.together}
             slides={togetherSlides}
-            cta={{ kind: "together", label: "Come read" }}
+            cta={{ kind: "together", label: "Read with others" }}
           />
           <CuratedStrip fill={doorFills[2] ?? "yellow"} />
         </>
