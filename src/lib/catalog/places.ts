@@ -65,6 +65,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "better-is-the-folly-of-woman-than-the-wisdom-of-man": { label: "Constantinople", region: "tr" },
   // Mira Fri 30 Oct 2026 PM DOMESTIC: the chip is the place as printed, "the village road of Okubo" (p.118; again "come to Okubo every morning", p.125); jp shape. countries.ts Japan from this printed place (the Courteline mechanism), not the author lookup.
   "a-domestic-animal": { label: "Okubo", region: "jp" },
+  // Mira Sun 1 Nov 2026 PM THUNDER: the chip is the place as printed, "the town of Fuchū" (p.211, first line); jp shape. countries.ts Japan from the printed place ("in the direction of Tokyo", p.212; the Courteline/Okubo mechanism), not the author lookup.
+  "a-thunderstorm": { label: "Fuchū", region: "jp" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue

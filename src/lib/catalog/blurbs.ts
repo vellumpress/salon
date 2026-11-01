@@ -511,6 +511,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: in this tale a father throws his young son down from on high, and at the end men from beyond the mountains kill the grown hero to take his green stone. Thrown down from on high by his angry father Nzame, the boy Bingo is saved by an old fisherman, shielded by a chameleon and a spider, and grows up to teach men to be good.",
   "a-domestic-animal":
     "A homely gray stray, pelted with stones and chased by the households of a village estate, outlasts a cold, scanty winter on her own stubborn wits.",
+  "a-thunderstorm":
+    "Caught by a thunderstorm on the highway, a middle-aged man in a straw rain-coat trudges on through flashes of purplish lightning toward his home four ri away.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":
