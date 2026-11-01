@@ -1,0 +1,51 @@
+{
+  "id": "a-thunderstorm",
+  "title": "A Thunderstorm",
+  "author": "Tokutomi Roka (tr. Yaichiro Isobe)",
+  "year": "1920",
+  "note": "The Japan Magazine (Tokyo), Vol. XI, No. 4, Aug.–Sept. 1920, \"A Thunderstorm\", pp.211–212 (IA japan-magazine-1920.08-09-v11.4 n35–n36). The byline is printed \"Tr. from Roka Tokutomi, by Yaichiro Isobe\" in small caps (TR. FROM ROKA TOKUTOMI, BY YAICHIRO ISOBE); the credit is given family-first as Tokutomi Roka (tr. Yaichiro Isobe), as cleared. Year 1920, from the masthead \"VOLUME ELEVEN  AUG.—SEPT. 1920  NUMBER FOUR\" (n3). Not on Project Gutenberg: the text was built from the IA scan's OCR (djvu l.2802–2982) and read against both columns of both page images; OCR errors go back to the print. Bound whole, one breath per printed paragraph (6). The italic ri and chō are kept as printed. \"gun-powder\" and \"wood-shed\" break at line ends and appear nowhere else in the issue, so they are closed up (gunpowder, woodshed); mid-line compounds stay (rain-coat, bathing-hat). No changes to the collated text (fix.json []). The chip is the place as printed, \"the town of Fuchū\" (p.211); the country rests on \"in the direction of Tokyo\" (p.212).",
+  "minutes": 6,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "A Thunderstorm",
+      "place": "A Thunderstorm",
+      "reentry": "When he reached the town of Fuchū, the shades of evening had come down, enveloping the world in soot-like gloom. The houses had already been lighted, not so much because of night as because of the darkness of the sky. Patter! Patter! The he",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "When he reached the town of Fuchū, the shades of evening had come down, enveloping the world in soot-like gloom. The houses had already been lighted, not so much because of night as because of the darkness of the sky. Patter! Patter! The heavy drops of rain, the harbinger of a thunderstorm, began to fall. Should he wait there till the storm was over? The hesitation lasted only a moment. His home was four *ri* away, and he was too eager to hasten back to it to wait for the passing of the storm. Moreover, there was no knowing when the storm would pass. He stepped into a shop on the roadside and bought a straw rain-coat. Tying his bathing-hat tightly on his head with a Japanese towel that he had carried in his girdle, he continued his walk speedily, though his legs had fairly stiffened from the fatigue of the day."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "No sooner had he got out of the town than the black cloud overtook him and burst over his head. The downpour was literally a cataract. He wondered if numberless huge tanks of water in heaven had not been simultaneously broken. At the same moment there was a flash of purplish lightning, accompanied by a tremendous peal of thunder, as if a gunpowder magazine had exploded overhead. Almost suffocated with fright, he ran ahead instinctively, but soon slackened his pace, because he saw that he could by no means get out of the range of the thunderstorm. He was now midway between the town and the next village, and there was no single roof for him to take shelter under, nor was a single soul abroad but himself in this strife of the elements. There was a little pause in the rain, but immediately it began to pour down again with a vengeance. Down from the brim of his bathing-hat there fell thick serried lines of little waterfalls. His straw rain-coat availed him nothing, for he was drenched to the skin; both his pockets and his shoes were filled with water. He all but swam in the road, which was positively flooded. In the Cimmerian darkness, flashes of lightning, now purplish, now rosy, revealed strings of bead-like raindrops as thick as corded ropes. To his relief, however, the deafening rolls of thunder weakened into a distant rumbling, but this was of only short duration. As if with revengeful spite particularly directed against him, the thunder soon came back with redoubled force, and burst with a clap right over his head. Frightened out of his senses, he imagined a thousand fire crackers had been lighted all at once. The crash was as loud as if he had been struck with a leather whip of immense size and length. As often as it thundered, he involuntarily came to a standstill in horror. He was persuaded that the lightning was bound to strike at that time. He expected the occurrence every moment, and something within him told him that no doubt he would be the victim. He was the only living being walking on that part of the highway. If a living creature was to be struck by lightning, it would therefore be himself and no one else. After some internal struggle, he was at last reconciled to the idea of being killed by a thunderbolt. He was now ready to give up the ghost. With that resignation the image of his wife, who was at home three *ri* away, showed itself vividly to his mental eye. Quick as lightning, he looked back on the vista of his past life—the life of a middle-aged man, never so beautiful as it might have been. Many debts which he owed to his better half he called to mind; they sprang into his memory like the scarlet letter. He imagined what would be the fate of those bereft by his untimely death. There flashed into his brain that dreadful sentence from the Bible, “The one shall be taken, and the other left.” He protested against the judgment, and yet he knew that all his protests were of no avail. Meanwhile, the peals of thunder had grown louder and louder, and every moment he expected the catastrophe to fall, but presently he was at ease; for his resignation filled him with a peculiar feeling of compassion towards himself and his wife and all living creatures. His spectacles got blurred, not with rain but with teardrops of pity. Thus with thunder as his companion, he trudged in the twilight a distance of two *ri* along the deserted highway."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "By the time he entered the town of Chōfu, the storm had passed him and a distant rumbling of thunder was heard in the direction of Tokyo. The rain too slacked a little and presently it ceased. The twilight sky grew lighter at the same time. Night had not yet fallen. In the town of Chōfu, half a dozen persons, standing in the middle of the street, were noisily talking, with their gaze fixed on the ground. Something like smoke was rising from the earth. Probably lightning had struck there. A housewife, standing at the door of her house, greeted another across the street and said, “The lightning struck just as I went out to take the washing in. I rushed into the woodshed, and I was so terrified that I could not get out of it for a few minutes, try as I might.”"
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "When the storm was over and he was out of danger, he felt excessive weariness all over. He now felt the weight of his foreign clothes which were wet through. He shivered with cold. His feet ached. He was hungry. He dragged his feet heavily along the road. By the time he drew near to Takizaka, a long summer day had closed. It had ceased raining, but flashes of forked lightning were still visible in the northeastern sky."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "When he reached within seven *chō* of his house, he spied something white in the darkness. It was no other than his wife. She had come there to meet her husband, accompanied by their dog, leaving the house with no one to look after it. “As your return was so late,” said she, “I was anxious about your safety.”"
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "The papers the second day afterward reported that lightning had struck a boat on board of which were two men, on the Tama-gawa, a little below the ferry where he had crossed the river that afternoon and that the man sitting in the bow was killed instantly, while the one in the stern was safe. The news reminded him of that awful prophecy in the Scripture, “The one shall be taken, and the other left.”"
+    }
+  ]
+}

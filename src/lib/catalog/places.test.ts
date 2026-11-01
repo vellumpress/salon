@@ -151,6 +151,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "anatole-france-madame-de-luzy": { label: "Paris", region: "fr" },
     "better-is-the-folly-of-woman-than-the-wisdom-of-man": { label: "Constantinople", region: "tr" },
     "a-domestic-animal": { label: "Okubo", region: "jp" },
+    "a-thunderstorm": { label: "Fuchū", region: "jp" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -975,6 +976,19 @@ test("Fri 30 Oct PM A Domestic Animal place is Okubo as printed; jp; Japan from 
   assert.equal(countryFor(work), "Japan");
   // The author string is unmapped: Japan comes from the work's printed place only.
   assert.equal(countryFor({ id: "author-lookup-probe", author: work.author, language: "" }), "");
+});
+
+test("Sun 1 Nov PM A Thunderstorm place is Fuchū as printed; jp; Japan from the printed place, not the author lookup", () => {
+  assert.ok(REGION_SHAPES.jp?.d, "jp shape");
+  const work = shelfWork("a-thunderstorm")!;
+  assert.equal(work.author, "Tokutomi Roka (tr. Yaichiro Isobe)");
+  assert.deepEqual(placeFor(work), { label: "Fuchū", region: "jp" });
+  assert.equal(CHIP_ONLY_PLACE["a-thunderstorm"], undefined);
+  assert.equal(NO_PRINTED_PLACE.has("a-thunderstorm"), false);
+  assert.equal(countryFor(work), "Japan");
+  // The author string is unmapped: Japan comes from the work's printed place only.
+  assert.equal(countryFor({ id: "author-lookup-probe", author: work.author, language: "" }), "");
+  assert.equal(countryFor({ id: "author-lookup-probe", author: "Tokutomi Roka", language: "" }), "");
 });
 
 test("Sat 24 Oct PM The Cormorants of Andvær: chip-only Andvær as printed, no silhouette, no country (CoS, this work only)", () => {

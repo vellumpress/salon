@@ -1319,6 +1319,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-story-of-bingo",
   // Mira Fri 30 Oct 2026 PM DOMESTIC — A Domestic Animal (Shimazaki Tōson, tr. Torao Taketomo, Paulownia, 1918) follows The Story of Bingo at the end of Next, plain Next (no heads-up, as cleared). Never Featured; off every Ritual lane.
   "a-domestic-animal",
+  // Mira Sun 1 Nov 2026 PM THUNDER — A Thunderstorm (Tokutomi Roka, tr. Yaichiro Isobe, The Japan Magazine, 1920) follows A Domestic Animal at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "a-thunderstorm",
 ] as const;
 
 /**

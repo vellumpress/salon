@@ -352,6 +352,7 @@ test("known origin overrides", () => {
     "anatole-france-madame-de-luzy": "France",
     "better-is-the-folly-of-woman-than-the-wisdom-of-man": "Turkey",
     "a-domestic-animal": "Japan",
+    "a-thunderstorm": "Japan",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",
