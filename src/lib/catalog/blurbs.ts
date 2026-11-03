@@ -513,6 +513,8 @@ const BLURBS: Record<string, string> = {
     "A homely gray stray, pelted with stones and chased by the households of a village estate, outlasts a cold, scanty winter on her own stubborn wits.",
   "a-thunderstorm":
     "Caught by a thunderstorm on the highway, a middle-aged man in a straw rain-coat trudges on through flashes of purplish lightning toward his home four ri away.",
+  "withered-leaves":
+    "In late autumn, in an open summer-house in a corner of the garden, a young girl sits on a rush chair while the man leaning with one hand upon her chair does all he can to get the quarrel, so trivial in its origin, adjusted and forgotten.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":

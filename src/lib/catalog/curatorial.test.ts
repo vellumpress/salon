@@ -14044,7 +14044,8 @@ test("Mira POST-#213 CLEAR is Next lead The Will to Live, then Doom Castle, Mayf
     assert.equal(work.minutes, want.shelfMinutes, id);
     assert.equal(RITUAL_SIT_MINUTES[id], want.minutes, id);
     assert.equal(SHELF.filter((item) => item.id === id).length, 1, id);
-    assert.equal(SHELF.filter((item) => item.gutenberg === want.gutenberg).length, 1, id);
+    // WITHERED (Tue 3 Nov 2026) binds Withered Leaves from the same PG 8663 volume as The Peat Moor.
+    assert.equal(SHELF.filter((item) => item.gutenberg === want.gutenberg && item.id !== "withered-leaves").length, 1, id);
     assert.match(work.opening ?? "", new RegExp(want.shelfOpening));
     assert.equal(PITCHES[id], work.intro, id);
     assert.equal(PREFACES[id], work.intro, id);
@@ -15606,7 +15607,8 @@ test("Mira POST-#227 CLEAR is Next lead Love's Shadow, then Lewis and Irene, wit
   assert.equal(next.includes(ritualOnly), false);
   assert.equal(SHELF.filter((item) => item.gutenberg === 14593).length, 1);   // Old Dances (same volume) is not used
   // GARMAN adds Garman and Worse as a fourth Kielland book.
-  assert.equal(SHELF.filter((item) => item.author.startsWith("Alexander Kielland")).length, 4);
+  // WITHERED adds Withered Leaves as a fifth.
+  assert.equal(SHELF.filter((item) => item.author.startsWith("Alexander Kielland")).length, 5);
   for (const id of tail) {
     assert.equal(next.indexOf(id), next.lastIndexOf(id), id);
     assert.equal(curatorialTrack(id), "next", id);
@@ -19331,7 +19333,7 @@ test("Mira Sun 18 Oct PM LITTLE-BAREFOOT: The Little Barefoot is on Rituals only
   const featured = FEATURED_CAROUSEL_IDS as readonly string[];
   const id = "the-little-barefoot";
   const mourning = RITUAL_LANES.find((lane) => lane.id === "soft-mourning");
-  assert.deepEqual(mourning?.workIds.slice(-2), ["the-black-christ-and-other-poems", id]);
+  assert.deepEqual(mourning?.workIds.slice(-3, -1), ["the-black-christ-and-other-poems", id]);
   for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes(id), lane.id === "soft-mourning", lane.id);
   assert.equal(next.includes(id), false);
   assert.equal(featured.includes(id), false);
@@ -21985,6 +21987,77 @@ test("Mira Sun 1 Nov PM THUNDER: A Thunderstorm is plain Next after A Domestic A
   // Line-end breaks closed (no mid-line hyphenated form in the issue); mid-line compounds and italics as printed.
   for (const kept of ["as if a gunpowder magazine", "I rushed into the woodshed", "a straw rain-coat", "his bathing-hat", "four *ri* away", "three *ri* away", "two *ri* along", "seven *chō* of his house", "the town of Fuchū", "in the direction of Tokyo", "his past life—the life of a middle-aged man"]) assert.ok(joined.includes(kept), kept);
   assert.doesNotMatch(joined, /gun-powder|wood-shed/);
+  assert.equal(joined.split("“").length, joined.split("”").length);
+  for (const breath of full.breaths) assert.equal(breath.text.includes("\n"), false);
+});
+
+test("Mira Tue 3 Nov PM WITHERED: Withered Leaves is on Rituals only, in Soft mourning only (never unwind or before-sleep), never Next or Featured; bound whole from PG 8663, 35 printed paragraphs, the sit is the whole sketch; two cleared fixes (rapidily, in -the); NO_PRINTED_PLACE, no chip, no country; Alexander Kielland, tr. William Archer, 1891 from the Harper title page and verso", () => {
+  const next = NEXT_FEATURED_TRACK_IDS as readonly string[];
+  const featured = FEATURED_CAROUSEL_IDS as readonly string[];
+  const id = "withered-leaves";
+  const mourning = RITUAL_LANES.find((lane) => lane.id === "soft-mourning");
+  assert.deepEqual(mourning?.workIds.slice(-2), ["the-little-barefoot", id]);
+  for (const lane of RITUAL_LANES) assert.equal(lane.workIds.includes(id), lane.id === "soft-mourning", lane.id);
+  assert.equal(next.includes(id), false);
+  assert.equal(featured.includes(id), false);
+  assert.equal((NEXT_CAREFULLY_IDS as readonly string[]).includes(id), false);
+  assert.equal(curatorialTrack(id), "later");
+  assert.equal(ritualStartAt(id), undefined);
+  assert.equal(RITUAL_SIT_MINUTES[id], 7);
+  const pitch = "You *may* tire of looking at a single painting, but you *must* tire of looking at many. This reading is just “Withered Leaves” — a little, unconsidered picture of two lovers who had slightly fallen out: an open summer-house in a corner of the garden, late autumn, the fallen leaves scattered all around, and the wind has whirled the loveliest of them together, into a neat little round cairn. From Tales of Two Countries, translated by William Archer.";
+  assert.equal(RITUAL_PITCHES[id], pitch);
+  assert.equal(PREFACES[id], pitch);
+  assert.equal(STORED_PREFACES[id], pitch);
+  assert.equal(PITCHES[id], pitch);
+  // PG 8663 also carries The Peat Moor.
+  assert.deepEqual(SHELF.filter((item) => item.gutenberg === 8663).map((item) => item.id).sort(), ["the-peat-moor", id]);
+  assert.deepEqual(SHELF.filter((item) => /withered leaves/i.test(item.title)).map((item) => item.id), [id]);
+  const work = SHELF.find((item) => item.id === id);
+  assert.ok(work);
+  assert.equal(work.intro, pitch);
+  assert.ok(pitch.startsWith(work.opening!));
+  assert.equal(work.local, true);
+  assert.equal(work.title, "Withered Leaves");
+  // Title page n6 "ALEXANDER KIELLAND … Translated from the Norwegian by WILLIAM ARCHER"; modern form with the translator (the A Monkey form).
+  assert.equal(work.author, "Alexander Kielland (tr. William Archer)");
+  // 1891: IA talesoftwocountr00kieliala n6 "NEW YORK / HARPER AND BROTHERS, PUBLISHERS / 1891"; n7 "Copyright, 1891, by HARPER & BROTHERS."
+  assert.equal(work.year, 1891);
+  assert.equal(work.form, "stories");
+  assert.equal(work.breaths, 35);
+  assert.equal(work.minutes, 7);
+  // NO_PRINTED_PLACE: no chip, no country, and the author lookup is skipped.
+  assert.equal(NO_PRINTED_PLACE.has(id), true);
+  assert.equal(placeFor(work), null);
+  assert.equal(chipOnlyLabel(id), null);
+  assert.equal(countryFor(work), "");
+  assert.equal(work.opening, "You *may* tire of looking at a single painting, but you *must* tire of looking at many.");
+  assert.equal(blurbFor(work), "In late autumn, in an open summer-house in a corner of the garden, a young girl sits on a rush chair while the man leaning with one hand upon her chair does all he can to get the quarrel, so trivial in its origin, adjusted and forgotten.");
+  assert.doesNotMatch(`${work.intro} ${blurbFor(work)}`, /heads-up|\bFeatured\b|\bHost\b|Gutenberg|Vellum|Salon|Mira|\bThea\b|\bsit\b|ritual|bind|as printed|\blane\b|unwind|before-sleep|Harper|empty chair|disappeared|Withered leaves,” said she|scattered with her foot|winter of life/i);
+  const full = JSON.parse(readFileSync(new URL(`./texts/${id}.json`, import.meta.url), "utf8")) as Work;
+  const opened = JSON.parse(readFileSync(new URL(`./openings/${id}.json`, import.meta.url), "utf8")) as Work;
+  assert.equal(full.year, "1891");
+  assert.equal(opened.year, "1891");
+  assert.equal(full.author, work.author);
+  assert.equal(full.breaths.length, 35);
+  assert.deepEqual(full.scenes.map((s) => s.title), ["Withered Leaves"]);
+  const words = full.breaths.reduce((n, breath) => n + breath.text.trim().split(/\s+/).length, 0);
+  assert.equal(words, 1476);
+  assert.equal(Math.round(words / 200), work.minutes);
+  assert.ok(words / 200 >= 5 && words / 200 <= 10, String(words));
+  assert.equal(openingBreathIndex(full), 0);
+  assert.ok(full.breaths[0]!.text.startsWith(work.opening + " "));
+  // Opening sit: the whole sketch, to "…a little cairn of withered leaves.—". No merge stop.
+  assert.equal(opened.breaths.length, full.breaths.length);
+  opened.breaths.forEach((b, i) => {
+    assert.equal(b.id, full.breaths[i]?.id, `open ${i}`);
+    assert.equal(b.text, full.breaths[i]?.text, `open ${i}`);
+  });
+  assert.equal(MERGE_STOP_INDEX[id], undefined);
+  assert.equal(full.breaths.at(-1)!.text, "And in the course of time we all come—each in his turn—to seat ourselves on the empty chair in a corner of the garden and gaze on a little cairn of withered leaves.—");
+  const joined = full.breaths.map((b) => b.text).join("\n");
+  assert.doesNotMatch(joined, /WITHERED LEAVES|TALES OF TWO COUNTRIES|Gutenberg|rapidily|in -the|_|--|\[|\]/);
+  // The two cleared fixes; PG's italics and the print's hyphenation.
+  for (const kept of ["You must rapidly take your bearings", "The only thriving thing in the whole picture", "You *may* tire", "you *must* tire", "picture-gallery", "summer-house", "rust-brown breast—like a withered leaf left hanging—and", "potato-shaws", "spring-time", "“Why, my dear! the whole thing"]) assert.ok(joined.includes(kept), kept);
   assert.equal(joined.split("“").length, joined.split("”").length);
   for (const breath of full.breaths) assert.equal(breath.text.includes("\n"), false);
 });
