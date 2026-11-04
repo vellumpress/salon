@@ -1321,6 +1321,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "a-domestic-animal",
   // Mira Sun 1 Nov 2026 PM THUNDER — A Thunderstorm (Tokutomi Roka, tr. Yaichiro Isobe, The Japan Magazine, 1920) follows A Domestic Animal at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "a-thunderstorm",
+  // Mira Wed 4 Nov 2026 AM THREE-Q — Three Questions (Tolstoy, tr. Louise and Aylmer Maude, Twenty-Three Tales, 1906) follows A Thunderstorm at the end of Next, Next carefully (heads-up on the card: a wounded man bleeds heavily, talk of an execution and a plan to kill). Never Featured; off every Ritual lane (never Unwind or Before sleep).
+  "three-questions",
 ] as const;
 
 /**

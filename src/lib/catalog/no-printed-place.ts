@@ -23,4 +23,5 @@ export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
   "the-sheep-brother", // Mira Thu 29 Oct 2026 PM SHEEP: no place is named, only "the mountains", "a strange place", "the royal castle", "the seashore" and "the whole city"; no chip, no country
   "the-story-of-bingo", // Mira Fri 30 Oct 2026 AM BINGO: no place is named, only "a big village", "the river", "the forest", "the cave", "the mountains" and "the country of the white people"; "Fan" in the heading is the people; no chip, no country
   "withered-leaves", // Mira Tue 3 Nov 2026 PM WITHERED: no place is named, only "the great galleries", "the Salon of 1878" (the exhibition), "a corner of the garden", "the avenue leading to the house"; "the English painter" is a nationality; no chip, no country
+  "three-questions", // Mira Wed 4 Nov 2026 AM THREE-Q: no place is named, only "his kingdom", "a wood", the hermit's hut and cell; no chip, no country
 ]);
