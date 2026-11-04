@@ -536,6 +536,8 @@ export const RITUAL_PITCHES: Record<string, string> = {
     `“I know I ’ave enemies,” said Susan bitterly; “I know I am hated in this low neighbourhood. Book I, Chapter I — in a Kingston lane, proud Susan Proudleigh knows her neighbours are against her. A note on period language: the book is full of the colour and class hierarchy of its day, and it uses the word ‘Chinaman’. It is left as printed. Three books, twenty-six chapters. The Jamaican Creole talk is left as printed. Susan loses her young man and sails for Colón and the Panama Canal works. Ironic and fond.`,
   "the-peat-moor":
     `High over the heathery wastes flew a wise old raven. This reading is just “The Peat Moor” — a wise old raven flies west to the last wild peat moor on the Norwegian coast, to dig up a sow’s ear he buried long ago. This reading stops at “…to unearth a sow’s ear which it had buried.” From Tales of Two Countries, translated by William Archer. Wry and a little sad, and it ends gently, so it suits bedtime.`,
+  "withered-leaves":
+    `You *may* tire of looking at a single painting, but you *must* tire of looking at many. This reading is just “Withered Leaves” — a little, unconsidered picture of two lovers who had slightly fallen out: an open summer-house in a corner of the garden, late autumn, the fallen leaves scattered all around, and the wind has whirled the loveliest of them together, into a neat little round cairn. From Tales of Two Countries, translated by William Archer.`,
   "life-and-death-of-harriett-frean":
     `“Pussycat, Pussycat, where have you been?” Chapter I — a nursery rhyme, a small girl on her father’s knee, and a mother who teaches her that behaving beautifully is everything. The first reading runs on into Chapter II and stops after Harriett’s little talk about God and Jesus, before the walk down Black’s Lane. Fifteen short chapters, a whole life in about an hour and three quarters. Harriett gives up the man she loves to her best friend, and lives on the credit of it. Sharp and sad, and the easiest read here.`,
   "farewell-love":
@@ -2547,6 +2549,8 @@ export const RITUAL_LANES: RitualLane[] = [
       "the-black-christ-and-other-poems",
       // Mira Sun 18 Oct 2026 PM LITTLE-BAREFOOT — The Little Barefoot (Auerbach, tr. Lee, 1867): Rituals only, Soft mourning only. The first reading (Chapter I, the orphans knocking at their dead parents' door) is grief, not calm: never unwind or before-sleep; never Next or Featured.
       "the-little-barefoot",
+      // Mira Tue 3 Nov 2026 PM WITHERED — Withered Leaves (Kielland, tr. William Archer, Tales of Two Countries, 1891): Rituals only, Soft mourning only. The reading is the whole sketch (the picture of two lovers fallen out, the summer-house, the cairn of withered leaves): wistful, a love fading, not calm enough for unwind or before-sleep; never Next or Featured.
+      "withered-leaves",
     ],
   },
 ];
@@ -2701,6 +2705,7 @@ export const RITUAL_SIT_MINUTES: Record<string, number> = {
   "mayflower": 10,
   "susan-proudleigh": 6,
   "the-peat-moor": 7,
+  "withered-leaves": 7,
   "life-and-death-of-harriett-frean": 9,
   "farewell-love": 4,
   "the-son-of-his-mother": 9,

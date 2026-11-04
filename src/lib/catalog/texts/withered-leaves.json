@@ -1,0 +1,196 @@
+{
+  "id": "withered-leaves",
+  "title": "Withered Leaves",
+  "author": "Alexander Kielland (tr. William Archer)",
+  "year": "1891",
+  "note": "Alexander Kielland, Tales of Two Countries (New York: Harper and Brothers, 1891), \"Withered Leaves\", pp.157–163 (IA talesoftwocountr00kieliala n184–n190). The title page (n6) reads \"ALEXANDER KIELLAND / Tales of Two Countries / Translated from the Norwegian by WILLIAM ARCHER. With an Introduction by H. H. BOYESEN / NEW YORK / HARPER AND BROTHERS, PUBLISHERS / 1891\"; the story carries no byline of its own, only the heading \"WITHERED LEAVES.\" (p.157). Year 1891, from the title page and the verso \"Copyright, 1891, by HARPER & BROTHERS.\" (n7); no edition statement. Text from Project Gutenberg 8663 (l.3940–4112), read against the page images word for word; PG matches the print except two plain printer's typos PG corrects (fix.json: p.158 \"rapidily\" to \"rapidly\"; p.160 \"in -the\" to \"in the\"). Bound whole, one breath per printed paragraph (35); PG's _italics_ become emphasis (may, must) and -- an em dash. No place is printed (the 1878 exhibition is named, not its city; \"the English painter\" is the painter's nationality): no chip, no country.",
+  "minutes": 7,
+  "cover": "",
+  "coverAlt": "",
+  "scenes": [
+    {
+      "id": "s0",
+      "title": "Withered Leaves",
+      "place": "Withered Leaves",
+      "reentry": "You *may* tire of looking at a single painting, but you *must* tire of looking at many. That is why the eyelids grow so heavy in the great galleries, and the seats are as closely packed as an omnibus on Sunday.",
+      "prompt": "A word from this stretch."
+    }
+  ],
+  "breaths": [
+    {
+      "id": "s0-0",
+      "sceneId": "s0",
+      "text": "You *may* tire of looking at a single painting, but you *must* tire of looking at many. That is why the eyelids grow so heavy in the great galleries, and the seats are as closely packed as an omnibus on Sunday."
+    },
+    {
+      "id": "s0-1",
+      "sceneId": "s0",
+      "text": "Happy he who has resolution enough to select from the great multitude a small number of pictures, to which he can return every day."
+    },
+    {
+      "id": "s0-2",
+      "sceneId": "s0",
+      "text": "In this way you can appropriate—undetected by the custodians—a little private gallery of your own, distributed through the great halls. Everything which does not belong to this private collection sinks into mere canvas and gilding, a decoration you glance at in passing, but which does not fatigue the eye."
+    },
+    {
+      "id": "s0-3",
+      "sceneId": "s0",
+      "text": "It happens now and then that you discover a picture, hitherto overlooked, which now, after thorough examination, is admitted as one of the select few. The assortment thus steadily increases, and it is even conceivable that by systematically following this method you might make a whole picture-gallery, in this sense, your private property."
+    },
+    {
+      "id": "s0-4",
+      "sceneId": "s0",
+      "text": "But as a rule there is no time for that. You must rapidly take your bearings, putting a cross in the catalogue against the pictures you think of annexing, just as a forester marks his trees as he goes through the wood."
+    },
+    {
+      "id": "s0-5",
+      "sceneId": "s0",
+      "text": "These private collections, as a matter of course, are of many different kinds. One may often search them in vain for the great, recognized masterpieces, while one may find a little, unconsidered picture in the place of honor; and in order to understand the odd arrangement of many of these small collections, one must take as one’s cicerone the person whose choice they represent. Here, now, is a picture from a private gallery.—"
+    },
+    {
+      "id": "s0-6",
+      "sceneId": "s0",
+      "text": "There hung in a corner of the Salon of 1878 a picture by the English painter Mr. Everton Sainsbury. It made no sensation whatever. It was neither large enough nor small enough to arouse idle curiosity, nor was there a trace of modern extravagance either in composition or in color."
+    },
+    {
+      "id": "s0-7",
+      "sceneId": "s0",
+      "text": "As people passed they gave it a sympathetic glance, for it made a harmonious impression, and the subject was familiar and easily understood."
+    },
+    {
+      "id": "s0-8",
+      "sceneId": "s0",
+      "text": "It represented two lovers who had slightly fallen out, and people smiled as each in his own mind thought of those charming little quarrels which are so vehement and so short, which arise from the most improbable and most varied causes, but invariably end in a kiss."
+    },
+    {
+      "id": "s0-9",
+      "sceneId": "s0",
+      "text": "And yet this picture attracted to itself its own special public; you could see that it was adopted into several private collections."
+    },
+    {
+      "id": "s0-10",
+      "sceneId": "s0",
+      "text": "As you made your way towards the well-known corner, you would often find the place occupied by a solitary person standing lost in contemplation. At different times, you would come upon all sorts of different people thus absorbed; but they all had the same peculiar expression before that picture, as if it cast a faded, yellowish reflection."
+    },
+    {
+      "id": "s0-11",
+      "sceneId": "s0",
+      "text": "If you approached, the gazer would probably move away; it seemed as though only one person at a time could enjoy that work of art—as though one must be entirely alone with it.—"
+    },
+    {
+      "id": "s0-12",
+      "sceneId": "s0",
+      "text": "In a corner of the garden, right against the high wall, stands an open summer-house. It is quite simply built of green lattice-work, which forms a large arch backed by the wall. The whole summer-house is covered with a wild vine, which twines itself from the left side over the arched roof, and droops its slender branches on the right."
+    },
+    {
+      "id": "s0-13",
+      "sceneId": "s0",
+      "text": "It is late autumn. The summer-house has already lost its thick roof of foliage. Only the youngest and most delicate tendrils of the wild vine have any leaves left. Before they fall, departing summer lavishes on them all the color it has left; like light sprays of red and yellow flowers, they hang yet a while to enrich the garden with autumn’s melancholy splendor."
+    },
+    {
+      "id": "s0-14",
+      "sceneId": "s0",
+      "text": "The fallen leaves are scattered all around, and right before the summer-house the wind has with great diligence whirled the loveliest of them together, into a neat little round cairn."
+    },
+    {
+      "id": "s0-15",
+      "sceneId": "s0",
+      "text": "The trees are already leafless, and on a naked branch sits the little garden-warbler with its rust-brown breast—like a withered leaf left hanging—and repeats untiringly a little fragment which it remembers of its spring-song."
+    },
+    {
+      "id": "s0-16",
+      "sceneId": "s0",
+      "text": "The only thriving thing in the whole picture is the ivy; for ivy, like sorrow, is fresh both summer and winter."
+    },
+    {
+      "id": "s0-17",
+      "sceneId": "s0",
+      "text": "It comes creeping along with its soft feelers, it thrusts itself into the tiniest chinks, it forces its way through the minutest crannies; and not until it has waxed wide and strong do we realize that it can no longer be rooted up, but will inexorably strangle whatever it has laid its clutches on."
+    },
+    {
+      "id": "s0-18",
+      "sceneId": "s0",
+      "text": "Ivy, however, is like well-bred sorrow; it cloaks its devastations with fair and glossy leaves. Thus people wear a glossy mask of smiles, feigning to be unaware of the ivy-clad ruins among which their lot is cast.—"
+    },
+    {
+      "id": "s0-19",
+      "sceneId": "s0",
+      "text": "In the middle of the open summer-house sits a young girl on a rush chair; both hands rest in her lap. She is sitting with bent head and a strange expression in her beautiful face. It is not vexation or anger, still less is it commonplace sulkiness, that utters itself in her features; it is rather bitter and crushing disappointment. She looks as if she were on the point of letting something slip away from her which she has not the strength to hold fast—as if something were withering between her hands."
+    },
+    {
+      "id": "s0-20",
+      "sceneId": "s0",
+      "text": "The man who is leaning with one hand upon her chair is beginning to understand that the situation is graver than he thought. He has done all he can to get the quarrel, so trivial in its origin, adjusted and forgotten; he has talked reason, he has tried playfulness; he has besought forgiveness, and humbled himself—perhaps more than he intended—but all in vain. Nothing avails to arouse her out of the listless mood into which she has sunk."
+    },
+    {
+      "id": "s0-21",
+      "sceneId": "s0",
+      "text": "Thus it is with an expression of anxiety that he bends down towards her: “But you know that at heart we love each other so much.”"
+    },
+    {
+      "id": "s0-22",
+      "sceneId": "s0",
+      "text": "“Then why do we quarrel so easily, and why do we speak so bitterly and unkindly to each other?”"
+    },
+    {
+      "id": "s0-23",
+      "sceneId": "s0",
+      "text": "“Why, my dear! the whole thing was the merest trifle from the first.”"
+    },
+    {
+      "id": "s0-24",
+      "sceneId": "s0",
+      "text": "“That’s just it! Do you remember what we said to each other? How we vied with each other in trying to find the word we knew would be most wounding? Oh, to think that we used our knowledge of each other’s heart to find out the tenderest points, where an unkind word could strike home! And this we call love!”"
+    },
+    {
+      "id": "s0-25",
+      "sceneId": "s0",
+      "text": "“My dear, don’t take it so solemnly,” he answered, trying a lighter tone. “People may be ever so fond of each other, and yet disagree a little at times; it can’t be otherwise.”"
+    },
+    {
+      "id": "s0-26",
+      "sceneId": "s0",
+      "text": "“Yes, yes!” she cried, “there must be a love for which discord is impossible, or else—or else I have been mistaken, and what we call love is nothing but—”"
+    },
+    {
+      "id": "s0-27",
+      "sceneId": "s0",
+      "text": "“Have no doubts of love!” he interrupted her, eagerly; and he depicted in warm and eloquent words the feeling which ennobles humanity in teaching us to bear with each other’s weaknesses; which confers upon us the highest bliss, since, in spite of all petty disagreements, it unites us by the fairest ties."
+    },
+    {
+      "id": "s0-28",
+      "sceneId": "s0",
+      "text": "She had only half listened to him. Her eyes had wandered over the fading garden, she had inhaled the heavy atmosphere of dying vegetation—and she had been thinking of the spring-time, of hope, of that all-powerful love which was now dying like an autumn flower."
+    },
+    {
+      "id": "s0-29",
+      "sceneId": "s0",
+      "text": "“Withered leaves,” said she, quietly; and rising, she scattered with her foot all the beautiful leaves which the wind had taken such pains to heap together."
+    },
+    {
+      "id": "s0-30",
+      "sceneId": "s0",
+      "text": "She went up the avenue leading to the house; he followed close behind her. He was silent, for he found not a word to say. A drowsy feeling of uneasy languor came over him; he asked himself whether he could overtake her, or whether she were a hundred miles away."
+    },
+    {
+      "id": "s0-31",
+      "sceneId": "s0",
+      "text": "She walked with her head bent, looking down at the flower-beds. There stood the asters like torn paper flowers upon withered potato-shaws; the dahlias hung their stupid, crinkled heads upon their broken stems, and the hollyhocks showed small stunted buds at the top, and great wet, rotting flowers clustering down their stalks."
+    },
+    {
+      "id": "s0-32",
+      "sceneId": "s0",
+      "text": "And disappointment and bitterness cut deep into the young heart. As the flowers were dying, she was ripening for the winter of life."
+    },
+    {
+      "id": "s0-33",
+      "sceneId": "s0",
+      "text": "So they disappeared up the avenue. But the empty chair remained standing in the half-withered summer-house, while the wind busied itself afresh in piling up the leaves in a little cairn."
+    },
+    {
+      "id": "s0-34",
+      "sceneId": "s0",
+      "text": "And in the course of time we all come—each in his turn—to seat ourselves on the empty chair in a corner of the garden and gaze on a little cairn of withered leaves.—"
+    }
+  ]
+}
