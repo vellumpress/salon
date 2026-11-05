@@ -519,6 +519,8 @@ const BLURBS: Record<string, string> = {
     "A heads-up before you start: a wounded man bleeds heavily on the page, and there is talk of an execution and a plan to kill. A king who would know the right time to begin everything, the people he most needs and the most important thing to do puts on simple clothes and goes on alone to a hermit, widely renowned for his wisdom, who is digging the ground in front of his hut.",
   "the-constant-tin-soldier":
     "Of five-and-twenty tin soldiers born of an old tin spoon, only one is a little different, for he has only one leg, yet he stands just as firmly upon his one leg as they do upon their two, and his eyes do not move from the little dancing lady who stands at the open castle door.",
+  "the-bremen-town-musicians":
+    "A donkey whose strength was going runs away and sets out on the road to Bremen to be town-musician, and on the way he finds a hound lying on the road, a cat with a face like three rainy days, and a cock crowing with all his might.",
   "bambi":
     "A fawn born in a hidden forest glade grows up among the deer: his mother shows him the paths and the meadow, the old stag watches from the shadows, and season by season Bambi learns to live alone and alert in the woods.",
   "the-four-seasons":

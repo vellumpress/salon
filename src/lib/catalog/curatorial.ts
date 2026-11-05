@@ -1325,6 +1325,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "three-questions",
   // Mira Wed 4 Nov 2026 NOON TIN-SOLDIER — The Constant Tin Soldier (Andersen, tr. Mary Howitt, Wonderful Stories for Children, 1846) follows Three Questions at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "the-constant-tin-soldier",
+  // Mira Wed 4 Nov 2026 PM BREMEN — The Bremen Town-Musicians (Grimm, tr. Margaret Hunt, Grimm's Household Tales, 1884) follows The Constant Tin Soldier at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
+  "the-bremen-town-musicians",
 ] as const;
 
 /**

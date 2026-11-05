@@ -67,6 +67,8 @@ const WORK_PLACE: Record<string, WorkPlace> = {
   "a-domestic-animal": { label: "Okubo", region: "jp" },
   // Mira Sun 1 Nov 2026 PM THUNDER: the chip is the place as printed, "the town of Fuchū" (p.211, first line); jp shape. countries.ts Japan from the printed place ("in the direction of Tokyo", p.212; the Courteline/Okubo mechanism), not the author lookup.
   "a-thunderstorm": { label: "Fuchū", region: "jp" },
+  // Mira Wed 4 Nov 2026 PM BREMEN: the chip is the place as printed, "the road to Bremen" (p.114); de shape. countries.ts Germany from the printed place (the Courteline/Okubo mechanism), not the author lookup.
+  "the-bremen-town-musicians": { label: "Bremen", region: "de" },
   quicksand: { label: "Naxos / South", region: "us-south" },
 
   // Next / priority Host-a-sit queue
