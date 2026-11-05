@@ -126,7 +126,8 @@ test("shelf dupes leave the shelf and follow the keeper", () => {
   // WITHERED one more (1191).
   // THREE-Q one more (1192).
   // TIN-SOLDIER one more (1193).
-  assert.equal(LOCAL_WORKS.length, 1193);
+  // BREMEN one more (1194).
+  assert.equal(LOCAL_WORKS.length, 1194);
   for (const [live, retired] of Object.entries(PAIRS)) {
     assert.equal(SHELF.filter((item) => item.id === live).length, 1, live);
     assert.equal(shelfWork(live)?.local, true, live);

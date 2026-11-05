@@ -152,6 +152,7 @@ test("named settings keep reader-friendly labels and real regions", () => {
     "better-is-the-folly-of-woman-than-the-wisdom-of-man": { label: "Constantinople", region: "tr" },
     "a-domestic-animal": { label: "Okubo", region: "jp" },
     "a-thunderstorm": { label: "Fuchū", region: "jp" },
+    "the-bremen-town-musicians": { label: "Bremen", region: "de" },
     deephaven: { label: "Maine", region: "us" },
     "precious-bane": { label: "Shropshire", region: "gb" },
     "friendship-village": { label: "Wisconsin", region: "us" },
@@ -995,6 +996,19 @@ test("Sun 1 Nov PM A Thunderstorm place is Fuchū as printed; jp; Japan from the
   // The author string is unmapped: Japan comes from the work's printed place only.
   assert.equal(countryFor({ id: "author-lookup-probe", author: work.author, language: "" }), "");
   assert.equal(countryFor({ id: "author-lookup-probe", author: "Tokutomi Roka", language: "" }), "");
+});
+
+test("Wed 4 Nov PM The Bremen Town-Musicians place is Bremen as printed; de; Germany from the printed place, not the author lookup", () => {
+  assert.ok(REGION_SHAPES.de?.d, "de shape");
+  const work = shelfWork("the-bremen-town-musicians")!;
+  assert.equal(work.author, "Jacob and Wilhelm Grimm (tr. Margaret Hunt)");
+  assert.deepEqual(placeFor(work), { label: "Bremen", region: "de" });
+  assert.equal(CHIP_ONLY_PLACE["the-bremen-town-musicians"], undefined);
+  assert.equal(NO_PRINTED_PLACE.has("the-bremen-town-musicians"), false);
+  assert.equal(countryFor(work), "Germany");
+  // The author string is unmapped: Germany comes from the work's printed place only.
+  assert.equal(countryFor({ id: "author-lookup-probe", author: work.author, language: "" }), "");
+  assert.equal(countryFor({ id: "author-lookup-probe", author: "Jacob and Wilhelm Grimm", language: "" }), "");
 });
 
 test("Sat 24 Oct PM The Cormorants of Andvær: chip-only Andvær as printed, no silhouette, no country (CoS, this work only)", () => {

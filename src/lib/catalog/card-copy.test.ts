@@ -353,6 +353,7 @@ test("known origin overrides", () => {
     "better-is-the-folly-of-woman-than-the-wisdom-of-man": "Turkey",
     "a-domestic-animal": "Japan",
     "a-thunderstorm": "Japan",
+    "the-bremen-town-musicians": "Germany",
     nostalgia: "Italy",
     "tales-by-polish-authors": "Poland",
     "the-golden-age": "United Kingdom",

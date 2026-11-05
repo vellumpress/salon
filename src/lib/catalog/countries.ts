@@ -766,6 +766,7 @@ const WORK_COUNTRY: Record<string, string> = {
   "better-is-the-folly-of-woman-than-the-wisdom-of-man": "Turkey",
   "a-domestic-animal": "Japan",
   "a-thunderstorm": "Japan",
+  "the-bremen-town-musicians": "Germany",
   nostalgia: "Italy",
   "tales-by-polish-authors": "Poland",
   "the-dancing-master": "France",
