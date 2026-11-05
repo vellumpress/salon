@@ -503,7 +503,8 @@ test("POST-v3 Ritual: NO_PRINTED_PLACE is only Wedding-Day, and it resolves no c
   // WITHERED LEAVES joins: only the great galleries, "the Salon of 1878" (the exhibition), a corner of the garden and the avenue leading to the house (Tue 3 Nov 2026 PM).
   // THREE QUESTIONS joins: only "his kingdom", "a wood", the hermit's hut and cell (Wed 4 Nov 2026 AM).
   // THE CONSTANT TIN SOLDIER joins: only the table, the third story, the kennel, a great canal, the kitchen and the parlor (Wed 4 Nov 2026 NOON).
-  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite", "a-work-of-art", "teleshov-the-duel", "chekhov-a-chameleon", "chekhov-bad-weather", "the-story-of-a-brahmadaitya", "bjornson-the-father", "the-hedgehog-the-jackal-and-the-lion", "do-not-trust-your-friend", "the-shipwrecked-sailor", "the-story-of-the-two-neighbours", "the-misers-servant", "the-sheep-brother", "the-story-of-bingo", "withered-leaves", "three-questions", "the-constant-tin-soldier"]);
+  // THE DUN COW joins: only a certain kingdom, a certain land, the heath, the field and the bush (Thu 5 Nov 2026 AM).
+  assert.deepEqual([...NO_PRINTED_PLACE], ["wedding-day", "bambi", "the-four-seasons", "the-wall-opposite", "a-work-of-art", "teleshov-the-duel", "chekhov-a-chameleon", "chekhov-bad-weather", "the-story-of-a-brahmadaitya", "bjornson-the-father", "the-hedgehog-the-jackal-and-the-lion", "do-not-trust-your-friend", "the-shipwrecked-sailor", "the-story-of-the-two-neighbours", "the-misers-servant", "the-sheep-brother", "the-story-of-bingo", "withered-leaves", "three-questions", "the-constant-tin-soldier", "the-dun-cow"]);
   for (const id of NO_PRINTED_PLACE) {
     const work = shelfWork(id);
     assert.ok(work, id);
@@ -921,7 +922,7 @@ test("Fri 23 Oct AM Oysters place is Moscow; ru; Russia", () => {
 
 test("Sat 24 Oct AM NO_PRINTED_PLACE skips the author lookup: A Work of Art, The Duel (Teleshov), A Chameleon, Bad Weather, The Story of a Brahmadaitya, The Father (Bjørnson), The Hedgehog, the Jackal, and the Lion, Do Not Trust Your Friend, The Shipwrecked Sailor, The Story of the Two Neighbours, The Miser's Servant, The Sheep-Brother and The Story of Bingo have no country", () => {
   // CoS final ruling.
-  for (const id of ["a-work-of-art", "teleshov-the-duel", "chekhov-a-chameleon", "chekhov-bad-weather", "the-story-of-a-brahmadaitya", "bjornson-the-father", "the-hedgehog-the-jackal-and-the-lion", "do-not-trust-your-friend", "the-shipwrecked-sailor", "the-story-of-the-two-neighbours", "the-misers-servant", "the-sheep-brother", "the-story-of-bingo", "withered-leaves", "three-questions", "the-constant-tin-soldier"]) {
+  for (const id of ["a-work-of-art", "teleshov-the-duel", "chekhov-a-chameleon", "chekhov-bad-weather", "the-story-of-a-brahmadaitya", "bjornson-the-father", "the-hedgehog-the-jackal-and-the-lion", "do-not-trust-your-friend", "the-shipwrecked-sailor", "the-story-of-the-two-neighbours", "the-misers-servant", "the-sheep-brother", "the-story-of-bingo", "withered-leaves", "three-questions", "the-constant-tin-soldier", "the-dun-cow"]) {
     const work = shelfWork(id)!;
     assert.ok(work, id);
     assert.equal(NO_PRINTED_PLACE.has(id), true, id);
@@ -951,6 +952,7 @@ test("Sat 24 Oct AM NO_PRINTED_PLACE skips the author lookup: A Work of Art, The
   assert.equal(shelfWork("withered-leaves")!.author, "Alexander Kielland (tr. William Archer)");
   assert.equal(shelfWork("three-questions")!.author, "Leo Tolstoy (tr. Louise and Aylmer Maude)");
   assert.equal(shelfWork("the-constant-tin-soldier")!.author, "Hans Christian Andersen (tr. Mary Howitt)");
+  assert.equal(shelfWork("the-dun-cow")!.author, "A. N. Afanas'ev (tr. Leonard A. Magnus)");
   assert.equal(countryFor(shelfWork("chekhov-oysters")!), "Russia");
   // Live behaviour change: The Four Seasons (NO_PRINTED_PLACE since Tue 20 Oct) loses Denmark from its Carl Ewald author entry.
   assert.equal(countryFor(shelfWork("the-four-seasons")!), "");
