@@ -10,6 +10,12 @@ export type MarginEmoji = (typeof MARGIN_EMOJI)[number];
 
 /** How long a reaction glow stays on the sentence. */
 export const PULSE_MS = 3200;
+/** How long the shared "we made it" stays up. */
+export const CHAPTER_TOAST_MS = 2600;
+/** A second tap this soon, in the same place, is a silent clap. */
+export const CLAP_WINDOW_MS = 280;
+/** How long the other reader sees the ripple. */
+export const CLAP_MS = 1800;
 
 export const READ_CAP = 120;
 export const MARK_CAP = 48;
@@ -364,4 +370,134 @@ export function nextEmoji(
   if (index === null || !who || !isMarginEmoji(emoji)) return null;
   const existing = emojiOn(current, index);
   return { id, from: who, breath: index, at, emoji: existing?.emoji === emoji ? "" : emoji };
+}
+
+export type ChapterMark = {
+  id: string;
+  from: string;
+  place: string;
+  at: number;
+};
+
+export type SilentClap = {
+  id: string;
+  from: string;
+  breath: number;
+  at: number;
+};
+
+export type TapPoint = {
+  at: number;
+  x: number;
+  y: number;
+  zone: string;
+  breath: number;
+};
+
+function cleanChapterId(value: unknown) {
+  if (typeof value !== "string") return "";
+  const id = value.trim();
+  if (!id || id.length > 40 || !/^[\w.:-]{1,40}$/.test(id)) return "";
+  return id;
+}
+
+/** The scene you leave by reading forward. A jump back, or the same scene, is not a finish. */
+export function finishedScene(prevScene: string, nextScene: string, prevBreath: number, nextBreath: number) {
+  const prev = prevScene.trim();
+  const next = nextScene.trim();
+  if (!prev || !next || prev === next) return "";
+  if (!Number.isFinite(prevBreath) || !Number.isFinite(nextBreath) || nextBreath <= prevBreath) return "";
+  return prev;
+}
+
+export function cleanChapter(input: unknown, from: string): ChapterMark | null {
+  if (!input || typeof input !== "object") return null;
+  const raw = input as Partial<ChapterMark>;
+  const id = cleanChapterId(raw.id);
+  const who = cleanFrom(from);
+  if (!id || !who) return null;
+  return { id, from: who, place: cleanPlace(raw.place), at: cleanAt(raw.at) };
+}
+
+export function mergeChapters(prev: readonly ChapterMark[], incoming: readonly unknown[], from = ""): ChapterMark[] {
+  const byKey = new Map<string, ChapterMark>();
+  for (const item of prev) byKey.set(`${item.from}:${item.id}`, item);
+  for (const item of incoming) {
+    const mark = cleanChapter(item, from || (item && typeof item === "object" ? String((item as ChapterMark).from ?? "") : ""));
+    if (!mark) continue;
+    const key = `${mark.from}:${mark.id}`;
+    const kept = latestBy(byKey.get(key), mark);
+    byKey.set(key, kept);
+  }
+  return [...byKey.values()].sort((a, b) => a.at - b.at || a.id.localeCompare(b.id)).slice(-24);
+}
+
+/**
+ * One quiet toast when a chapter is newly in every present reader's finished
+ * set. Later calls stay quiet for chapters already celebrated.
+ */
+export function claimChapterToast(
+  self: readonly ChapterMark[],
+  peers: readonly (readonly ChapterMark[])[],
+  seen: Set<string>,
+): ChapterMark | null {
+  if (peers.length === 0) return null;
+  let ids = new Set(self.map((mark) => mark.id));
+  for (const peer of peers) {
+    const have = new Set(peer.map((mark) => mark.id));
+    ids = new Set([...ids].filter((id) => have.has(id)));
+  }
+  const fresh = [...ids].filter((id) => !seen.has(id));
+  for (const id of fresh) seen.add(id);
+  if (fresh.length === 0) return null;
+  const all = [...self, ...peers.flat()];
+  const pick = fresh
+    .map((id) => all.filter((mark) => mark.id === id).sort((a, b) => b.at - a.at)[0])
+    .filter((mark): mark is ChapterMark => Boolean(mark))
+    .sort((a, b) => b.at - a.at)[0];
+  return pick ?? null;
+}
+
+export function cleanClap(input: unknown, from: string): SilentClap | null {
+  if (!input || typeof input !== "object") return null;
+  const raw = input as Partial<SilentClap>;
+  const id = cleanId(raw.id);
+  const who = cleanFrom(from);
+  const breath = cleanBreath(raw.breath);
+  if (!id || !who || breath === null) return null;
+  return { id, from: who, breath, at: cleanAt(raw.at) };
+}
+
+export function clapFresh(clap: SilentClap, now: number, hold = CLAP_MS) {
+  const age = now - clap.at;
+  return age < hold && age > -5000;
+}
+
+export function mergeClaps(prev: readonly SilentClap[], incoming: readonly unknown[], now: number, from = ""): SilentClap[] {
+  const byId = new Map<string, SilentClap>();
+  for (const item of [...prev, ...incoming]) {
+    const clap = cleanClap(item, from || (item && typeof item === "object" ? String((item as SilentClap).from ?? "") : ""));
+    if (!clap || !clapFresh(clap, now)) continue;
+    byId.set(clap.id, clap);
+  }
+  return [...byId.values()].sort((a, b) => a.at - b.at || a.id.localeCompare(b.id)).slice(-12);
+}
+
+/** The sender never sees their own ripple. */
+export function clapForOther(claps: readonly SilentClap[], selfId: string, now: number) {
+  return claps.some((clap) => clap.from !== selfId && clapFresh(clap, now));
+}
+
+/** Two close taps in the same zone. A tap on the other side still turns. */
+export function isSilentClap(
+  pending: TapPoint | null,
+  next: { at: number; x: number; y: number; zone: string },
+  windowMs = CLAP_WINDOW_MS,
+) {
+  if (!pending || !pending.zone || pending.zone !== next.zone) return false;
+  const dt = next.at - pending.at;
+  if (!(dt > 0 && dt <= windowMs)) return false;
+  const dx = next.x - pending.x;
+  const dy = next.y - pending.y;
+  return dx * dx + dy * dy <= 72 * 72;
 }

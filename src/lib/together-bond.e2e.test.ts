@@ -303,7 +303,90 @@ test("shared marks sync across two readers and the pen is gone", { timeout: 180_
     await pageB.locator('[data-emoji="✨"]').waitFor({ timeout: 10_000 });
     assert.equal(await pageA.locator(".passage-ink path").count(), 0);
     await shot(pageB, "read-together-390-score");
+
+    const clapped = await breathOf(pageA);
+    const turn = await pageA.locator(".reader-turn").boundingBox();
+    assert.ok(turn);
+    const clapX = turn.x + turn.width * 0.7;
+    const clapY = turn.y + Math.min(turn.height * 0.42, 180);
+    await pageA.mouse.click(clapX, clapY);
+    await pageA.waitForTimeout(70);
+    await pageA.mouse.click(clapX, clapY);
+    await pageA.waitForTimeout(450);
+    assert.equal(await breathOf(pageA), clapped, "a double tap turned the page");
+    await pageB.locator('[data-clap="on"]').waitFor({ timeout: 5_000 });
+    assert.equal(await pageA.locator('[data-clap="on"]').count(), 0);
+    const ripple = await pageB.locator(".bond-ripple").evaluate((el) => getComputedStyle(el).animationName);
+    assert.equal(ripple, "none");
+    const clappedWidth = await columnBox(pageB);
+    assert.equal(clappedWidth.pad, "0px");
+    assert.equal(clappedWidth.width, together.width);
+    await shot(pageB, "read-together-390-clap");
     await solo.close();
+  } finally {
+    await browser.close();
+    await mirror.close();
+  }
+});
+
+test("both readers see a quiet toast when they finish the same chapter", { timeout: 180_000 }, async () => {
+  await ensureReaderServer();
+  const mirror = await startMirror();
+  const browser: Browser = await chromium.launch({ args: ["--no-sandbox"], headless: true });
+  try {
+    const phone = {
+      viewport: { width: 390, height: 844 },
+      hasTouch: true,
+      isMobile: true,
+      deviceScaleFactor: 1,
+    };
+    const a = await browser.newContext(phone);
+    const b = await browser.newContext({ ...phone, reducedMotion: "reduce" });
+    await a.addInitScript((url) => {
+      (window as unknown as { __TBR_SIT_MIRROR?: string }).__TBR_SIT_MIRROR = url;
+    }, mirror.url);
+    await b.addInitScript((url) => {
+      (window as unknown as { __TBR_SIT_MIRROR?: string }).__TBR_SIT_MIRROR = url;
+    }, mirror.url);
+    await a.route(/supabase\.co/, (route) => route.abort());
+    await b.route(/supabase\.co/, (route) => route.abort());
+    const pageA = await a.newPage();
+    const pageB = await b.newPage();
+    const read = `${APP}/read/the-heavenly-twins?at=0&sit=20&pair=chapterroom`;
+    await Promise.all([
+      pageA.goto(read, { waitUntil: "domcontentloaded" }),
+      pageB.goto(read, { waitUntil: "domcontentloaded" }),
+    ]);
+    await pageA.locator(".chat-field").waitFor({ timeout: 60_000 });
+    await pageB.locator(".chat-field").waitFor({ timeout: 60_000 });
+    await pageA.locator(".reader-frame[data-scene]").waitFor();
+
+    async function leaveScene(page: Page) {
+      const start = await page.locator(".reader-frame").getAttribute("data-scene");
+      assert.ok(start, "the chapter is on the page");
+      for (let step = 0; step < 8; step += 1) {
+        await tapSide(page, "next");
+        await page.waitForTimeout(420);
+        const scene = await page.locator(".reader-frame").getAttribute("data-scene");
+        if (scene && scene !== start) return;
+      }
+      assert.fail(`still in ${start}`);
+    }
+
+    await leaveScene(pageA);
+    await pageA.waitForTimeout(400);
+    assert.equal(await pageA.locator('[data-chapter-toast="on"]').count(), 0);
+    assert.equal(await pageB.locator('[data-chapter-toast="on"]').count(), 0);
+    await leaveScene(pageB);
+    await pageA.locator('[data-chapter-toast="on"]').waitFor({ timeout: 8_000 });
+    await pageB.locator('[data-chapter-toast="on"]').waitFor({ timeout: 8_000 });
+    assert.match(await pageB.locator(".chapter-toast").innerText(), /we made it/i);
+    const motion = await pageB.locator(".chapter-toast").evaluate((el) => getComputedStyle(el).animationName);
+    assert.equal(motion, "none");
+    const column = await columnBox(pageB);
+    assert.equal(column.pad, "0px");
+    assert.ok(column.overflow <= 1);
+    await shot(pageB, "read-together-390-chapter");
   } finally {
     await browser.close();
     await mirror.close();

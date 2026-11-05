@@ -2,8 +2,16 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import {
+  CHAPTER_TOAST_MS,
+  CLAP_MS,
+  CLAP_WINDOW_MS,
   MARGIN_EMOJI,
   PULSE_MS,
+  claimChapterToast,
+  clapForOther,
+  finishedScene,
+  isSilentClap,
+  mergeChapters,
   emojiOn,
   jumpTarget,
   mergeEmoji,
@@ -138,12 +146,51 @@ test("one margin emoji per passage, from a small set", () => {
   assert.equal(emojiOn(both, 8)?.emoji, "🌙");
 });
 
+test("a chapter toast waits until both readers have finished it", () => {
+  assert.equal(finishedScene("s0", "s0", 1, 2), "");
+  assert.equal(finishedScene("s0", "s1", 4, 3), "");
+  assert.equal(finishedScene("", "s1", 1, 2), "");
+  assert.equal(finishedScene("s0", "s1", 4, 5), "s0");
+
+  const seen = new Set<string>();
+  const self = mergeChapters([], [{ id: "s0", from: "p-aaaaaa", place: "Chapter I", at: 10 }]);
+  assert.equal(claimChapterToast(self, [], seen), null);
+  assert.equal(claimChapterToast(self, [[]], seen), null);
+  const peer = mergeChapters([], [{ id: "s0", from: "p-bbbbbb", place: "Chapter I", at: 12 }]);
+  const toast = claimChapterToast(self, [peer], seen);
+  assert.equal(toast?.id, "s0");
+  assert.equal(toast?.place, "Chapter I");
+  assert.equal(claimChapterToast(self, [peer], seen), null);
+  assert.ok(CHAPTER_TOAST_MS >= 2000 && CHAPTER_TOAST_MS <= 4000);
+});
+
+test("a silent clap is a second tap, and only the other reader sees it", () => {
+  const first = { at: 1000, x: 40, y: 80, zone: "next", breath: 3 };
+  assert.equal(isSilentClap(first, { at: 1200, x: 48, y: 84, zone: "next" }, CLAP_WINDOW_MS), true);
+  assert.equal(isSilentClap(first, { at: 1200, x: 200, y: 80, zone: "next" }, CLAP_WINDOW_MS), false);
+  assert.equal(isSilentClap(first, { at: 1200, x: 40, y: 80, zone: "prev" }, CLAP_WINDOW_MS), false);
+  assert.equal(isSilentClap(first, { at: 1000 + CLAP_WINDOW_MS + 40, x: 40, y: 80, zone: "next" }, CLAP_WINDOW_MS), false);
+  assert.equal(isSilentClap(null, { at: 1200, x: 40, y: 80, zone: "next" }), false);
+
+  const now = 5_000;
+  const claps = [
+    { id: "c1", from: "p-aaaaaa", breath: 3, at: now - 200 },
+    { id: "c2", from: "p-bbbbbb", breath: 3, at: now - 100 },
+    { id: "old", from: "p-bbbbbb", breath: 3, at: now - CLAP_MS - 20 },
+  ];
+  assert.equal(clapForOther(claps, "p-aaaaaa", now), true);
+  assert.equal(clapForOther([{ id: "c1", from: "p-aaaaaa", breath: 3, at: now - 200 }], "p-aaaaaa", now), false);
+  assert.equal(clapForOther(claps, "p-cccccc", now + CLAP_MS), false);
+});
+
 test("Read Together keeps the text column and drops the pen", () => {
   const css = readFileSync(new URL("../../styles.css", import.meta.url), "utf8");
   assert.doesNotMatch(css, /\.together-lock \.look-line[\s\S]{0,180}padding-right:\s*7\.5rem/);
   assert.doesNotMatch(css, /\.together-lock \.breath-now[\s\S]{0,80}padding-right:\s*7\.5rem/);
   assert.match(css, /\.passage-bond\s*\{[^}]*pointer-events:\s*none/);
   assert.match(css, /prefers-reduced-motion:\s*reduce\)\s*\{[^}]*\.bond-pulse\s*\{[^}]*animation:\s*none/);
+  assert.match(css, /prefers-reduced-motion:\s*reduce\)\s*\{[^}]*\.bond-ripple\s*\{[^}]*animation:\s*none/);
+  assert.match(css, /prefers-reduced-motion:\s*reduce\)\s*\{[^}]*\.chapter-toast\s*\{[^}]*animation:\s*none/);
   assert.doesNotMatch(css, /\.passage-ink/);
   assert.doesNotMatch(css, /\.ink-pen/);
 
@@ -159,6 +206,7 @@ test("Read Together keeps the text column and drops the pen", () => {
   assert.match(shell, /aria-label="Margin emoji"/);
   assert.match(shell, /PassageBond/);
   assert.match(shell, /This line/);
+  assert.match(shell, /We made it/);
 
   const bond = readFileSync(new URL("../../components/passage-bond.tsx", import.meta.url), "utf8");
   assert.doesNotMatch(bond, /onPointerDown|strokePath|freehand/);
@@ -166,6 +214,7 @@ test("Read Together keeps the text column and drops the pen", () => {
   assert.match(bond, /data-pinned/);
   assert.match(bond, /data-pulse/);
   assert.match(bond, /data-emoji/);
+  assert.match(bond, /data-clap/);
 });
 
 test("underline merge keeps a reader's own later mark", () => {

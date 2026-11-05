@@ -21,22 +21,25 @@ export function PassageBond({
   underlined,
   pinned,
   pulsing,
+  clapping,
   emoji,
 }: {
   breathIndex: number;
   underlined: boolean;
   pinned: boolean;
   pulsing: boolean;
+  clapping: boolean;
   emoji: string;
 }) {
   const rootRef = useRef<HTMLDivElement>(null);
   const lineRef = useRef<HTMLElement>(null);
   const pinRef = useRef<HTMLElement>(null);
   const pulseRef = useRef<HTMLElement>(null);
+  const rippleRef = useRef<HTMLElement>(null);
   const emojiRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (!underlined && !pinned && !pulsing && !emoji) return;
+    if (!underlined && !pinned && !pulsing && !clapping && !emoji) return;
     let frame = 0;
     const place = () => {
       const root = rootRef.current;
@@ -51,6 +54,7 @@ export function PassageBond({
           const line = lineRef.current;
           const pin = pinRef.current;
           const glow = pulseRef.current;
+          const ripple = rippleRef.current;
           const mark = emojiRef.current;
           if (line && phraseBox.width > 0) {
             line.style.left = `${phraseBox.left}px`;
@@ -63,6 +67,12 @@ export function PassageBond({
             glow.style.top = `${phraseBox.top - pad}px`;
             glow.style.width = `${phraseBox.width + pad * 2}px`;
             glow.style.height = `${phraseBox.height + pad * 2}px`;
+          }
+          if (ripple && phraseBox.width > 0) {
+            ripple.style.left = `${phraseBox.left}px`;
+            ripple.style.top = `${phraseBox.top}px`;
+            ripple.style.width = `${phraseBox.width}px`;
+            ripple.style.height = `${phraseBox.height}px`;
           }
           if (pin && passageBox.height > 0) {
             const top = phraseBox.top + Math.max(0, (phraseBox.height - 14) / 2);
@@ -80,7 +90,7 @@ export function PassageBond({
     };
     frame = requestAnimationFrame(place);
     return () => cancelAnimationFrame(frame);
-  }, [breathIndex, underlined, pinned, pulsing, emoji]);
+  }, [breathIndex, underlined, pinned, pulsing, clapping, emoji]);
 
   return (
     <div
@@ -90,8 +100,10 @@ export function PassageBond({
       data-underlined={underlined ? "yes" : "no"}
       data-pinned={pinned ? "yes" : "no"}
       data-pulse={pulsing ? "on" : "off"}
+      data-clap={clapping ? "on" : "off"}
       data-emoji={emoji}
     >
+      {clapping ? <span ref={rippleRef} className="bond-ripple" /> : null}
       {pulsing ? <span ref={pulseRef} className="bond-pulse" /> : null}
       {underlined ? <span ref={lineRef} className="bond-line" /> : null}
       {pinned ? <span ref={pinRef} className="bond-pin" aria-hidden /> : null}

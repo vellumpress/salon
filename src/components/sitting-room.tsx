@@ -23,14 +23,23 @@ import {
   type SitLine,
 } from "@/lib/multiplayer/sit-logic";
 import {
+  CHAPTER_TOAST_MS,
+  CLAP_MS,
   MARGIN_EMOJI,
+  claimChapterToast,
+  clapForOther,
+  cleanChapter,
+  cleanClap,
   cleanEmoji,
   cleanLedger,
   cleanPin,
   cleanPulse,
   cleanUnderline,
+  finishedScene,
   emojiOn,
   jumpTarget,
+  mergeChapters,
+  mergeClaps,
   mergeEmoji,
   mergeLedger,
   mergePins,
@@ -47,10 +56,12 @@ import {
   scoreLabel,
   sharedFinished,
   underlinesOn,
+  type ChapterMark,
   type PassageEmoji,
   type PassagePin,
   type ReactionPulse,
   type ReadLedger,
+  type SilentClap,
   type Underline,
 } from "@/lib/multiplayer/together-bond";
 import { enterTogetherCompose, exitTogetherCompose } from "@/lib/vvh";
@@ -71,6 +82,8 @@ type BondSync = {
   pins?: PassagePin[];
   emoji?: PassageEmoji[];
   pulses?: ReactionPulse[];
+  claps?: SilentClap[];
+  chapters?: ChapterMark[];
   read?: ReadLedger;
 };
 
@@ -82,6 +95,8 @@ type Wire =
   | { t: "pulse"; pulse: ReactionPulse }
   | { t: "emoji"; mark: PassageEmoji }
   | { t: "read"; ledger: ReadLedger }
+  | { t: "chapter"; chapter: ChapterMark }
+  | { t: "clap"; clap: SilentClap }
   | ({ t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[] } & BondSync);
 
 function isChat(data: unknown): data is { t: "chat"; text: string; at: number; breath?: number; name?: string } {
@@ -220,7 +235,14 @@ export function useSittingLock(onLeave: () => void) {
   return { hold, startHold, clearHold, leave };
 }
 
-export function useSittingChat(pair: string, place: string, breathIndex: number, workId = "") {
+export function useSittingChat(
+  pair: string,
+  place: string,
+  breathIndex: number,
+  workId = "",
+  sceneId = "",
+  chapterPlace = "",
+) {
   const handle = useTbr((s) => s.handle) ?? "";
   const joined = useTbr((s) => s.joined) ?? [];
   const [attempt, setAttempt] = useState(0);
@@ -235,6 +257,10 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
   const [pins, setPins] = useState<PassagePin[]>([]);
   const [emoji, setEmoji] = useState<PassageEmoji[]>([]);
   const [pulses, setPulses] = useState<ReactionPulse[]>([]);
+  const [claps, setClaps] = useState<SilentClap[]>([]);
+  const [selfChapters, setSelfChapters] = useState<ChapterMark[]>([]);
+  const [peerChapters, setPeerChapters] = useState<Record<string, ChapterMark[]>>({});
+  const [toastAt, setToastAt] = useState(0);
   const [selfRead, setSelfRead] = useState<number[]>([]);
   const [peerRead, setPeerRead] = useState<Record<string, ReadLedger>>({});
   const [here, setHere] = useState<Record<string, HereNote>>({});
@@ -242,6 +268,8 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
   const [now, setNow] = useState(() => Date.now());
   const readDay = useRef(dayKey(Date.now()));
   const prevBreath = useRef(breathIndex);
+  const prevScene = useRef({ id: sceneId, place: chapterPlace, breath: breathIndex });
+  const seenChapters = useRef(new Set<string>());
   const snap = useRef({
     lines,
     marks,
@@ -249,6 +277,8 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     pins,
     emoji,
     pulses,
+    claps,
+    selfChapters,
     selfRead,
     breathIndex,
     place,
@@ -262,6 +292,8 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     pins,
     emoji,
     pulses,
+    claps,
+    selfChapters,
     selfRead,
     breathIndex,
     place,
@@ -281,6 +313,8 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
       pins: current.pins,
       emoji: current.emoji,
       pulses: current.pulses,
+      claps: current.claps,
+      chapters: current.selfChapters,
       read: {
         from: current.selfId,
         day: readDay.current,
@@ -347,6 +381,22 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
           setEmoji((prev) => mergeEmoji(prev, [mark]));
           return;
         }
+        if (kind === "chapter") {
+          const mark = cleanChapter((data as { chapter?: unknown }).chapter, from);
+          if (!mark) return;
+          setPeerChapters((prev) => ({
+            ...prev,
+            [from]: mergeChapters(prev[from] ?? [], [mark]),
+          }));
+          return;
+        }
+        if (kind === "clap") {
+          const clap = cleanClap((data as { clap?: unknown }).clap, from);
+          if (!clap) return;
+          setClaps((prev) => mergeClaps(prev, [clap], Date.now()));
+          setNow(Date.now());
+          return;
+        }
         if (kind === "read") {
           setPeerRead((prev) => {
             const ledger = mergeLedger(prev[from], (data as { ledger?: unknown }).ledger, from);
@@ -364,6 +414,8 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
             current.pins.length === 0 &&
             current.emoji.length === 0 &&
             current.pulses.length === 0 &&
+            current.claps.length === 0 &&
+            current.selfChapters.length === 0 &&
             current.selfRead.length === 0
           ) {
             return;
@@ -400,6 +452,16 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
           }
           if (Array.isArray(data.pulses) && data.pulses.length > 0) {
             setPulses((prev) => mergePulses(prev, data.pulses ?? [], Date.now()));
+          }
+          if (Array.isArray(data.claps) && data.claps.length > 0) {
+            setClaps((prev) => mergeClaps(prev, data.claps ?? [], Date.now()));
+            setNow(Date.now());
+          }
+          if (Array.isArray(data.chapters) && data.chapters.length > 0) {
+            setPeerChapters((prev) => ({
+              ...prev,
+              [from]: mergeChapters(prev[from] ?? [], data.chapters ?? []),
+            }));
           }
           if (data.read) {
             setPeerRead((prev) => {
@@ -476,6 +538,20 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
   }, [breathIndex]);
 
   useEffect(() => {
+    const prev = prevScene.current;
+    prevScene.current = { id: sceneId, place: chapterPlace, breath: breathIndex };
+    const finished = finishedScene(prev.id, sceneId, prev.breath, breathIndex);
+    if (!finished) return;
+    const mark = cleanChapter(
+      { id: finished, place: prev.place, at: Date.now() },
+      p2p.selfId,
+    );
+    if (!mark) return;
+    setSelfChapters((curr) => mergeChapters(curr, [mark]));
+    p2p.send({ t: "chapter", chapter: mark });
+  }, [sceneId, chapterPlace, breathIndex, p2p.selfId, p2p.send]);
+
+  useEffect(() => {
     const id = window.setInterval(() => {
       const next = dayKey(Date.now());
       if (next === readDay.current) return;
@@ -486,11 +562,24 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
   }, []);
 
   const pulseLive = pulses.some((pulse) => now - pulse.at < 3600 && now - pulse.at > -5000);
+  const clapLive = claps.some((clap) => now - clap.at < CLAP_MS + 400 && now - clap.at > -5000);
+  const toastLive = toastAt > 0 && now - toastAt < CHAPTER_TOAST_MS + 200;
   useEffect(() => {
-    if (!pulseLive) return;
+    if (!pulseLive && !clapLive && !toastLive) return;
     const id = window.setInterval(() => setNow(Date.now()), 150);
     return () => window.clearInterval(id);
-  }, [pulseLive]);
+  }, [pulseLive, clapLive, toastLive]);
+
+  const presentIds = p2p.peers.filter((peer) => isLivePeer(peer.connectionState)).map((peer) => peer.id);
+  const presentKey = presentIds.join();
+  useEffect(() => {
+    if (presentIds.length === 0) return;
+    const peers = presentIds.map((id) => peerChapters[id] ?? []);
+    const next = claimChapterToast(selfChapters, peers, seenChapters.current);
+    if (!next) return;
+    setToastAt(Date.now());
+    setNow(Date.now());
+  }, [selfChapters, peerChapters, presentKey]);
 
   useEffect(() => {
     if (!p2p.joined) return;
@@ -547,11 +636,24 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     [p2p],
   );
 
+  const publishClap = useCallback(
+    (breath: number) => {
+      const at = Date.now();
+      const clap = cleanClap({ id: bondId("clap", p2p.selfId), breath, at }, p2p.selfId);
+      if (!clap) return;
+      setClaps((prev) => mergeClaps(prev, [clap], at));
+      p2p.send({ t: "clap", clap });
+    },
+    [p2p],
+  );
+
   const retry = useCallback(() => setAttempt((n) => n + 1), []);
   const ownLine = underlinesOn(underlines, breathIndex).some((mark) => mark.from === p2p.selfId);
   const ownPin = pinsOn(pins, breathIndex).some((pin) => pin.from === p2p.selfId);
   const passageEmoji = emojiOn(emoji, breathIndex)?.emoji ?? "";
   const glowing = pulsesOn(pulses, breathIndex, now).length > 0;
+  const clapping = clapForOther(claps, p2p.selfId, now);
+  const toastOn = toastAt > 0 && now - toastAt < CHAPTER_TOAST_MS;
 
   return {
     selfId: p2p.selfId,
@@ -575,10 +677,13 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     publishPin,
     publishPulse,
     publishEmoji,
+    publishClap,
     ownLine,
     ownPin,
     passageEmoji,
     glowing,
+    clapping,
+    toastOn,
     now,
     retry,
   };
@@ -595,22 +700,29 @@ export function TogetherShell({
   place,
   breathIndex,
   workId = "",
+  sceneId = "",
+  chapterPlace = "",
   onLeave,
   inviteUrl,
   onFollow,
+  onClap,
   children,
 }: {
   pair: string;
   place: string;
   breathIndex: number;
   workId?: string;
+  sceneId?: string;
+  chapterPlace?: string;
   onLeave: () => void;
   inviteUrl?: string;
   onFollow?: (breath: number) => void;
+  onClap?: { current: (breath: number) => void };
   children: ReactNode;
 }) {
   const lock = useSittingLock(onLeave);
-  const chat = useSittingChat(pair, place, breathIndex, workId);
+  const chat = useSittingChat(pair, place, breathIndex, workId, sceneId, chapterPlace);
+  if (onClap) onClap.current = chat.publishClap;
   const [live, setLive] = useState(false);
   const [copied, setCopied] = useState(false);
   const dockRef = useRef<HTMLDivElement>(null);
@@ -752,8 +864,14 @@ export function TogetherShell({
           underlined={underlined}
           pinned={pinned}
           pulsing={chat.glowing}
+          clapping={chat.clapping}
           emoji={chat.passageEmoji}
         />
+        {chat.toastOn ? (
+          <p className="chapter-toast" data-chapter-toast="on" role="status">
+            We made it
+          </p>
+        ) : null}
       </div>
       {chat.unavailable ? (
         <button
