@@ -34,7 +34,7 @@ export const smokeFiles = [
   "src/lib/reader-import-blink.test.ts",
   "src/lib/catalog/merge-stop-layout.test.ts",
   "src/lib/wash-seam.test.ts",
-  "src/lib/passage-ink.e2e.test.ts",
+  "src/lib/together-bond.e2e.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -145,9 +145,9 @@ export const allTsFiles = [
   "src/lib/auth-return.test.ts",
   "src/lib/club-flow.test.ts",
   "src/lib/multiplayer/sit-logic.test.ts",
-  "src/lib/multiplayer/passage-ink.test.ts",
+  "src/lib/multiplayer/together-bond.test.ts",
   "src/lib/social-rooms.e2e.test.ts",
-  "src/lib/passage-ink.e2e.test.ts",
+  "src/lib/together-bond.e2e.test.ts",
   "src/lib/friend-feed.e2e.test.ts",
   "src/lib/you-score-paint.test.ts",
   "src/lib/you-score-open.test.ts",

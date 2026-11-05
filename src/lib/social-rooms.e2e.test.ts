@@ -637,7 +637,7 @@ async function friendRun(browser: Browser, mirror: string, run: number) {
     await pageA.locator(".chat-field").fill(line);
     await pageA.locator(".chat-send").click();
     await pageB.locator(".chat-line", { hasText: line }).waitFor({ timeout: 10000 });
-    await pageB.getByRole("button", { name: "Pen", exact: true }).waitFor({ timeout: 10000 });
+    await pageB.getByRole("button", { name: "Underline", exact: true }).waitFor({ timeout: 10000 });
     const chat = await pageA.locator(".chat-line").allTextContents();
     assert.equal(
       chat.some((line) => line.toLowerCase().includes("lol")),

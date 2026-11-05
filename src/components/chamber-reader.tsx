@@ -27,6 +27,7 @@ import { Hourglass } from "@/components/hourglass";
 import { ReadingProgress } from "@/components/reading-progress";
 import { closedReaderBar, reduceReaderBar, type ReaderBarState } from "@/lib/reader-chrome";
 import { TogetherShell } from "@/components/sitting-room";
+import { CLAP_WINDOW_MS, isSilentClap, type TapPoint } from "@/lib/multiplayer/together-bond";
 import { estimateRitualMinutes } from "@/lib/catalog/rituals";
 import { shelfWork } from "@/lib/catalog/shelf";
 import { isDeviceImport } from "@/lib/import/private";
@@ -265,6 +266,16 @@ export function TbrReader({
   const centerLine = useCenterLine();
   const centerOn = centerLine.enabled;
   const turnHostRef = useRef<HTMLDivElement>(null);
+  const togetherClapRef = useRef<(breath: number) => void>(() => {});
+  const pendingTapRef = useRef<TapPoint | null>(null);
+  const pendingTapTimerRef = useRef(0);
+  const stepZoneRef = useRef<(zone: "prev" | "next" | null) => void>(() => {});
+  useEffect(
+    () => () => {
+      if (pendingTapTimerRef.current) window.clearTimeout(pendingTapTimerRef.current);
+    },
+    [],
+  );
   /**
    * One finger-down. The matching pointerup is the only turn.
    * A ghost mouse sequence after the touch must not start another one.
@@ -2047,6 +2058,47 @@ export function TbrReader({
     else advance();
     setBar((state) => reduceReaderBar(state, "page"));
   }
+  stepZoneRef.current = stepZone;
+
+  function releaseTap(zone: "prev" | "next" | null, x: number, y: number) {
+    if (!zone) return;
+    if (!together) {
+      stepZone(zone);
+      return;
+    }
+    const now = performance.now();
+    const pending = pendingTapRef.current;
+    if (isSilentClap(pending, { at: now, x, y, zone })) {
+      if (pendingTapTimerRef.current) window.clearTimeout(pendingTapTimerRef.current);
+      pendingTapTimerRef.current = 0;
+      const breath = pending?.breath ?? 0;
+      pendingTapRef.current = null;
+      togetherClapRef.current(breath);
+      return;
+    }
+    if (pendingTapTimerRef.current) {
+      window.clearTimeout(pendingTapTimerRef.current);
+      const earlier = pendingTapRef.current;
+      pendingTapRef.current = null;
+      if (earlier?.zone === "prev" || earlier?.zone === "next") stepZone(earlier.zone);
+    }
+    const frameBreath = Number(
+      turnHostRef.current?.closest(".reader-frame")?.getAttribute("data-breath-index"),
+    );
+    pendingTapRef.current = {
+      at: now,
+      x,
+      y,
+      zone,
+      breath: Number.isFinite(frameBreath) ? frameBreath : index,
+    };
+    pendingTapTimerRef.current = window.setTimeout(() => {
+      pendingTapTimerRef.current = 0;
+      const tapped = pendingTapRef.current;
+      pendingTapRef.current = null;
+      if (tapped?.zone === "prev" || tapped?.zone === "next") stepZoneRef.current(tapped.zone);
+    }, CLAP_WINDOW_MS);
+  }
 
   function clearHoldTimer() {
     if (!holdTimerRef.current) return;
@@ -2120,7 +2172,7 @@ export function TbrReader({
     // The left side is always one sentence back. A tall sentence must not
     // turn that tap into a scroll, and a shaky finger must not drop it.
     if (start.zone === "prev" && kind !== "swipe-next") {
-      stepZone("prev");
+      releaseTap("prev", x, y);
       return;
     }
     if (kind === "swipe-next") {
@@ -2132,7 +2184,7 @@ export function TbrReader({
       return;
     }
     if (kind !== "tap") return;
-    stepZone(start.zone);
+    releaseTap(start.zone, x, y);
   }
 
   function beginTurn(e: ReactPointerEvent<HTMLDivElement>) {
@@ -2405,6 +2457,7 @@ export function TbrReader({
       data-center-line={centerOn ? "on" : "off"}
       data-bound={workIsComplete(work.id) ? "full" : "opening"}
       data-breath-index={index}
+      data-scene={breath?.sceneId ?? ""}
       data-breath-count={work.breaths.length}
       data-sentence-at={atSentence}
       data-sentence-count={sentenceCount}
@@ -2423,8 +2476,11 @@ export function TbrReader({
           place={headerPlace}
           breathIndex={index}
           workId={work.id}
+          sceneId={breath?.sceneId ?? ""}
+          chapterPlace={placeLabel}
           inviteUrl={publicUrl(sittingSharePath(work.id, asSittingMinutes(sittingMinutes), pair, serializeEp?.n))}
           onFollow={(breath) => goTo(breath)}
+          onClap={togetherClapRef}
           onLeave={leaveTogether}
         >
           {pane}
