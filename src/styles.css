@@ -2573,12 +2573,6 @@ html.together-compose .upcoming-slot {
   white-space: nowrap;
 }
 
-/* A quiet column for the mark, so it sits beside the sentence. */
-.together-lock .look-line,
-.together-lock .breath-now {
-  padding-right: 7.5rem;
-}
-
 .chat-slot {
   pointer-events: none;
   display: flex;
@@ -3978,6 +3972,103 @@ html.together-compose.together-kb .reader-daylight .chat-field {
 .reader-daylight .margin-reaction {
   color: var(--reader-ink);
   background-color: color-mix(in srgb, var(--reader-bg) 90%, transparent);
+}
+
+.ink-tools {
+  display: flex;
+  border-top: 1px solid var(--color-ink);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.ink-pen,
+.ink-tool {
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 2.75rem;
+  min-width: 0;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 0;
+  border: 0;
+  border-left: 1px solid var(--color-ink);
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  padding: 0 0.75rem;
+  color: var(--color-ink);
+  -webkit-text-fill-color: var(--color-ink, #111111);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.ink-pen {
+  border-left: 0;
+}
+
+.ink-pen.is-on {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  -webkit-text-fill-color: var(--color-paper, #f3f1eb);
+}
+
+.ink-pen-nib {
+  width: 0.45rem;
+  height: 0.45rem;
+  flex-shrink: 0;
+}
+
+.ink-tool:disabled {
+  opacity: 0.35;
+}
+
+.passage-ink {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.passage-ink-sheet {
+  position: absolute;
+  display: block;
+  overflow: visible;
+  touch-action: none;
+  pointer-events: none;
+}
+
+.passage-ink.is-drawing .passage-ink-sheet {
+  pointer-events: auto;
+}
+
+.passage-ink-sheet path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.reader-daylight .ink-tools {
+  background-color: var(--reader-bg);
+  border-top-color: var(--reader-rule);
+  color: var(--reader-ink);
+}
+
+.reader-daylight .ink-pen,
+.reader-daylight .ink-tool {
+  color: var(--reader-ink);
+  -webkit-text-fill-color: var(--reader-ink);
+  border-left-color: var(--reader-rule);
+}
+
+.reader-daylight .ink-pen.is-on {
+  background-color: var(--reader-ink);
+  color: var(--reader-bg);
+  -webkit-text-fill-color: var(--reader-bg);
 }
 
 .daylight-switch {

@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { useP2PRoom, type PeerInfo } from "@/lib/multiplayer";
 import { shareOrCopy } from "@/lib/invite-share";
 import { fillClass, hashSeed, type Fill } from "@/lib/mondrian";
 import { HoldLeave } from "@/components/hourglass";
+import { PassageInk } from "@/components/passage-ink";
 import { publishClubProgress } from "@/lib/clubs";
 import { asClubId } from "@/lib/club-time";
 import { formatHandle } from "@/lib/social";
@@ -13,19 +14,22 @@ import {
   chatWithoutMargin,
   isLivePeer,
   marginMarkFromChat,
-  marginPlace,
-  marginReaderName,
   mergeMarginMarks,
   mergeSitLines,
-  passedReactionNote,
   peerAside,
   shouldSyncNewcomer,
   sitStatusLabel,
-  SIT_REACTIONS,
   type MarginMark,
   type SitLine,
-  type SitReaction,
 } from "@/lib/multiplayer/sit-logic";
+import {
+  cleanPassageStroke,
+  clearOwnStrokes,
+  mergePassageStrokes,
+  strokesOnPassage,
+  undoOwnStroke,
+  type PassageStroke,
+} from "@/lib/multiplayer/passage-ink";
 import { enterTogetherCompose, exitTogetherCompose } from "@/lib/vvh";
 import { cn } from "@/lib/utils";
 
@@ -42,7 +46,10 @@ type HereNote = { breath: number; place: string };
 type Wire =
   | { t: "chat"; text: string; at: number; breath?: number; name?: string }
   | { t: "here"; breath: number; place: string }
-  | { t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[] };
+  | { t: "ink"; stroke: PassageStroke }
+  | { t: "ink-undo"; id: string; breath: number }
+  | { t: "ink-clear"; breath: number }
+  | { t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[]; strokes?: PassageStroke[] };
 
 function isChat(data: unknown): data is { t: "chat"; text: string; at: number; breath?: number; name?: string } {
   if (!data || typeof data !== "object") return false;
@@ -56,10 +63,29 @@ function isHere(data: unknown): data is { t: "here"; breath: number; place: stri
   return msg.t === "here" && typeof msg.place === "string";
 }
 
-function isSync(data: unknown): data is { t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[] } {
+function isSync(
+  data: unknown,
+): data is { t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[]; strokes?: PassageStroke[] } {
   if (!data || typeof data !== "object") return false;
   const msg = data as Wire;
   return msg.t === "sync" && Array.isArray(msg.chat);
+}
+
+function isInk(data: unknown): data is { t: "ink"; stroke: unknown } {
+  if (!data || typeof data !== "object") return false;
+  return (data as { t?: string }).t === "ink";
+}
+
+function isInkUndo(data: unknown): data is { t: "ink-undo"; id: string; breath: number } {
+  if (!data || typeof data !== "object") return false;
+  const msg = data as { t?: string; id?: unknown };
+  return msg.t === "ink-undo" && typeof msg.id === "string";
+}
+
+function isInkClear(data: unknown): data is { t: "ink-clear"; breath: number } {
+  if (!data || typeof data !== "object") return false;
+  const msg = data as { t?: string; breath?: unknown };
+  return msg.t === "ink-clear" && typeof msg.breath === "number";
 }
 
 export function useSittingLock(onLeave: () => void) {
@@ -181,12 +207,32 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
   });
   const [lines, setLines] = useState<ChatLine[]>([]);
   const [marks, setMarks] = useState<MarginMark[]>([]);
+  const [strokes, setStrokes] = useState<PassageStroke[]>([]);
   const [here, setHere] = useState<Record<string, HereNote>>({});
   const [draft, setDraft] = useState("");
-  const snap = useRef({ lines, marks, breathIndex, place, selfId: p2p.selfId, workId });
-  snap.current = { lines, marks, breathIndex, place, selfId: p2p.selfId, workId };
+  const undone = useRef(new Set<string>());
+  const snap = useRef({ lines, marks, strokes, breathIndex, place, selfId: p2p.selfId, workId });
+  snap.current = { lines, marks, strokes, breathIndex, place, selfId: p2p.selfId, workId };
   const prevConnected = useRef(new Set<string>());
   const progressTimer = useRef<number | null>(null);
+
+  const rememberUndo = useCallback((id: string) => {
+    undone.current.add(id);
+    if (undone.current.size <= 64) return;
+    const first = undone.current.values().next().value;
+    if (first) undone.current.delete(first);
+  }, []);
+
+  const syncPayload = useCallback(
+    () => ({
+      t: "sync" as const,
+      chat: snap.current.lines,
+      marks: snap.current.marks,
+      strokes: snap.current.strokes,
+      here: { breath: snap.current.breathIndex, place: snap.current.place },
+    }),
+    [],
+  );
 
   useEffect(
     () =>
@@ -218,17 +264,38 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
           }));
           return;
         }
+        if (isInk(data)) {
+          const raw = data.stroke;
+          if (!raw || typeof raw !== "object") return;
+          const stroke = cleanPassageStroke({ ...(raw as Record<string, unknown>), from });
+          if (!stroke || undone.current.has(stroke.id)) return;
+          setStrokes((prev) => mergePassageStrokes(prev, [stroke]));
+          return;
+        }
+        if (isInkUndo(data)) {
+          rememberUndo(data.id);
+          setStrokes((prev) => prev.filter((stroke) => !(stroke.id === data.id && stroke.from === from)));
+          return;
+        }
+        if (isInkClear(data)) {
+          setStrokes((prev) => {
+            const next = clearOwnStrokes(prev, from, data.breath);
+            for (const stroke of prev) {
+              if (stroke.from === from && stroke.breath === Math.floor(data.breath)) rememberUndo(stroke.id);
+            }
+            return next;
+          });
+          return;
+        }
         if (data && typeof data === "object" && (data as { t?: string }).t === "hello") {
-          if (snap.current.lines.length === 0 && snap.current.marks.length === 0) return;
-          p2p.send(
-            {
-              t: "sync",
-              chat: snap.current.lines,
-              marks: snap.current.marks,
-              here: { breath: snap.current.breathIndex, place: snap.current.place },
-            },
-            from,
-          );
+          if (
+            snap.current.lines.length === 0 &&
+            snap.current.marks.length === 0 &&
+            snap.current.strokes.length === 0
+          ) {
+            return;
+          }
+          p2p.send(syncPayload(), from);
           return;
         }
         if (isSync(data)) {
@@ -249,11 +316,19 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
             }));
           const syncedMarks = Array.isArray(data.marks) ? mergeMarginMarks([], data.marks) : [];
           if (syncedMarks.length > 0) setMarks((prev) => mergeMarginMarks(prev, syncedMarks));
+          const syncedStrokes = Array.isArray(data.strokes)
+            ? data.strokes.filter((stroke) => {
+                if (!stroke || typeof stroke !== "object") return false;
+                const id = (stroke as { id?: unknown }).id;
+                return typeof id !== "string" || !undone.current.has(id);
+              })
+            : [];
+          if (syncedStrokes.length > 0) setStrokes((prev) => mergePassageStrokes(prev, syncedStrokes));
           const spoken = chatWithoutMargin(incoming, syncedMarks);
           if (spoken.length > 0) setLines((prev) => mergeSitLines(prev, spoken));
         }
       }),
-    [p2p.onMessage],
+    [p2p.onMessage, p2p.send, rememberUndo, syncPayload],
   );
 
   useEffect(() => {
@@ -294,15 +369,7 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     const incumbents = [...prevConnected.current];
     for (const id of newcomers) {
       if (!shouldSyncNewcomer(snap.current.selfId, incumbents)) continue;
-      p2p.send(
-        {
-          t: "sync",
-          chat: snap.current.lines,
-          marks: snap.current.marks,
-          here: { breath: snap.current.breathIndex, place: snap.current.place },
-        },
-        id,
-      );
+      p2p.send(syncPayload(), id);
     }
     for (const id of prevConnected.current) {
       if (!connected.has(id)) {
@@ -315,7 +382,7 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
       }
     }
     prevConnected.current = connected;
-  }, [connectedKey, p2p.send]);
+  }, [connectedKey, p2p.send, syncPayload]);
 
   const sendChat = useCallback(() => {
     const text = draft.trim().slice(0, 280);
@@ -327,25 +394,36 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     setDraft("");
   }, [draft, p2p]);
 
-  const sendReaction = useCallback(
-    (word: SitReaction) => {
-      const at = Date.now();
-      const from = p2p.selfId;
-      const id = chatLineId(from, at);
-      p2p.send({ t: "chat", text: word, at, breath: breathIndex, name: handle });
-      const mark = marginMarkFromChat({
-        from,
-        text: word,
-        at,
-        breath: breathIndex,
-        id,
-        name: handle,
-      });
-      if (mark) setMarks((prev) => mergeMarginMarks(prev, [mark]));
+  const publishInk = useCallback(
+    (stroke: PassageStroke) => {
+      const clean = cleanPassageStroke(stroke);
+      if (!clean || clean.from !== p2p.selfId || undone.current.has(clean.id)) return;
+      setStrokes((prev) => mergePassageStrokes(prev, [clean]));
+      p2p.send({ t: "ink", stroke: clean });
     },
-    [breathIndex, handle, p2p],
+    [p2p],
   );
+
+  const undoInk = useCallback(() => {
+    const { strokes: current, selfId, breathIndex: breath } = snap.current;
+    const result = undoOwnStroke(current, selfId, breath);
+    if (!result.removed) return;
+    rememberUndo(result.removed.id);
+    setStrokes(result.next);
+    p2p.send({ t: "ink-undo", id: result.removed.id, breath });
+  }, [p2p, rememberUndo]);
+
+  const clearInk = useCallback(() => {
+    const { strokes: current, selfId, breathIndex: breath } = snap.current;
+    const removed = current.filter((stroke) => stroke.from === selfId && stroke.breath === breath);
+    if (removed.length === 0) return;
+    for (const stroke of removed) rememberUndo(stroke.id);
+    setStrokes(clearOwnStrokes(current, selfId, breath));
+    p2p.send({ t: "ink-clear", breath });
+  }, [p2p, rememberUndo]);
+
   const retry = useCallback(() => setAttempt((n) => n + 1), []);
+  const ownHere = strokesOnPassage(strokes, breathIndex).some((stroke) => stroke.from === p2p.selfId);
 
   return {
     selfId: p2p.selfId,
@@ -355,11 +433,15 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     link: p2p.link,
     lines,
     marks,
+    strokes,
     here,
     draft,
     setDraft,
     sendChat,
-    sendReaction,
+    publishInk,
+    undoInk,
+    clearInk,
+    ownHere,
     retry,
   };
 }
@@ -368,162 +450,7 @@ function isPresent(peer: PeerInfo) {
   return isLivePeer(peer.connectionState);
 }
 
-type PlacedMark = {
-  id: string;
-  top: number;
-  name: string;
-  text: string;
-  word: string;
-  from: string;
-  place: "beside" | "passed";
-};
 
-function samePlace(prev: PlacedMark[], next: PlacedMark[]) {
-  if (prev.length !== next.length) return false;
-  return prev.every((item, index) => {
-    const other = next[index];
-    return (
-      other &&
-      item.id === other.id &&
-      item.top === other.top &&
-      item.text === other.text &&
-      item.name === other.name &&
-      item.place === other.place &&
-      item.word === other.word
-    );
-  });
-}
-
-function readerName(mark: MarginMark, selfId: string, peers: PeerInfo[]) {
-  if (mark.from === selfId) return "you";
-  const peer = peers.find((item) => item.id === mark.from);
-  const raw = mark.name || peer?.name || "";
-  const named = raw ? formatHandle(raw) : "";
-  return marginReaderName({ from: mark.from, selfId, name: named });
-}
-
-function MarginReactions({
-  marks,
-  breathIndex,
-  selfId,
-  peers,
-}: {
-  marks: MarginMark[];
-  breathIndex: number;
-  selfId: string;
-  peers: PeerInfo[];
-}) {
-  const rootRef = useRef<HTMLDivElement>(null);
-  const [placed, setPlaced] = useState<PlacedMark[]>([]);
-  const liveRef = useRef({ marks, breathIndex, selfId, peers });
-  liveRef.current = { marks, breathIndex, selfId, peers };
-  const markKey = marks.map((mark) => `${mark.id}:${mark.word}:${mark.breath}:${mark.name ?? ""}`).join("|");
-  const nameKey = `${selfId}:${peers.map((peer) => `${peer.id}:${peer.name}`).join("|")}`;
-
-  useLayoutEffect(() => {
-    const root = rootRef.current;
-    const frame = root?.parentElement;
-    if (!root || !frame) return;
-    let frameId = 0;
-    const measure = () => {
-      const { marks: current, breathIndex: viewer, selfId: me, peers: room } = liveRef.current;
-      const pane = frame.querySelector(".reading-pane");
-      const paneBox = pane?.getBoundingClientRect();
-      const frameBox = frame.getBoundingClientRect();
-      const anchors = new Map<number, number>();
-      if (pane && paneBox) {
-        for (const node of pane.querySelectorAll<HTMLElement>("[data-sentence]")) {
-          const breath = Number(node.getAttribute("data-sentence"));
-          if (!Number.isInteger(breath) || breath < 0) continue;
-          const box = node.getBoundingClientRect();
-          const visible = Math.min(box.bottom, paneBox.bottom) - Math.max(box.top, paneBox.top);
-          if (visible < 12) continue;
-          const top = Math.round(Math.max(box.top, paneBox.top) - frameBox.top);
-          const previous = anchors.get(breath);
-          if (previous == null || top < previous) anchors.set(breath, top);
-        }
-      }
-      const onScreen = [...anchors.keys()];
-      const besideCount = new Map<number, number>();
-      const passed: MarginMark[] = [];
-      const next: PlacedMark[] = [];
-      for (const mark of current) {
-        const place = marginPlace(mark.breath, viewer, onScreen);
-        if (place === "waiting") continue;
-        if (place === "passed") {
-          passed.push(mark);
-          continue;
-        }
-        const count = besideCount.get(mark.breath) ?? 0;
-        besideCount.set(mark.breath, count + 1);
-        const top = (anchors.get(mark.breath) ?? 0) + count * 22;
-        next.push({
-          id: mark.id,
-          top,
-          name: readerName(mark, me, room),
-          text: mark.word,
-          word: mark.word,
-          from: mark.from,
-          place: "beside",
-        });
-      }
-      const nearest = passed.sort((a, b) => b.breath - a.breath || b.at - a.at).slice(0, 4);
-      nearest.forEach((mark, index) => {
-        next.push({
-          id: mark.id,
-          top: 8 + index * 22,
-          name: readerName(mark, me, room),
-          text: passedReactionNote(mark.word, viewer - mark.breath),
-          word: mark.word,
-          from: mark.from,
-          place: "passed",
-        });
-      });
-      setPlaced((prev) => (samePlace(prev, next) ? prev : next));
-    };
-    const schedule = () => {
-      cancelAnimationFrame(frameId);
-      frameId = requestAnimationFrame(measure);
-    };
-    schedule();
-    const ro = new ResizeObserver(schedule);
-    ro.observe(frame);
-    const pane = frame.querySelector(".reading-pane");
-    if (pane) ro.observe(pane);
-    pane?.addEventListener("scroll", schedule, true);
-    window.addEventListener("resize", schedule);
-    return () => {
-      cancelAnimationFrame(frameId);
-      ro.disconnect();
-      pane?.removeEventListener("scroll", schedule, true);
-      window.removeEventListener("resize", schedule);
-    };
-  }, [markKey, nameKey, breathIndex]);
-
-  return (
-    <div
-      ref={rootRef}
-      className="margin-reactions"
-      data-margin-reactions={marks.length}
-      aria-live="polite"
-      aria-label="In the margin"
-    >
-      {placed.map((mark) => (
-        <span
-          key={mark.id}
-          className="margin-reaction"
-          style={{ top: mark.top }}
-          data-reaction={mark.word}
-          data-margin-place={mark.place}
-        >
-          <span className={cn("margin-dot", fillClass(markOf(mark.from)))} />
-          <span className="margin-who">{mark.name}</span>
-          <span className="margin-word">{mark.text}</span>
-        </span>
-      ))}
-    </div>
-  );
-}
 
 export function TogetherShell({
   pair,
@@ -548,6 +475,7 @@ export function TogetherShell({
   const chat = useSittingChat(pair, place, breathIndex, workId);
   const [live, setLive] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [drawing, setDrawing] = useState(false);
   const dockRef = useRef<HTMLDivElement>(null);
   useEffect(() => setLive(true), []);
   useEffect(() => () => exitTogetherCompose(), []);
@@ -660,11 +588,12 @@ export function TogetherShell({
       </header>
       <div className="relative flex min-h-0 flex-1 flex-col">
         {children}
-        <MarginReactions
-          marks={chat.marks}
+        <PassageInk
+          strokes={chat.strokes}
           breathIndex={breathIndex}
+          drawing={drawing}
           selfId={chat.selfId}
-          peers={chat.peers}
+          onStroke={chat.publishInk}
         />
       </div>
       {chat.unavailable ? (
@@ -709,22 +638,35 @@ export function TogetherShell({
             );
           })}
         </div>
-        <div className="border-t border-ink bg-paper">
-          <p id="margin-word-label" className="type-kicker px-3 pb-1 pt-2 text-ink">
-            A word on this sentence
-          </p>
-          <div className="flex" role="group" aria-labelledby="margin-word-label">
-            {SIT_REACTIONS.map((word) => (
-              <button
-                key={word}
-                type="button"
-                className="h-11 min-w-0 flex-1 border-l border-ink font-sans text-sm text-ink first:border-l-0"
-                onClick={() => chat.sendReaction(word)}
-              >
-                {word}
-              </button>
-            ))}
-          </div>
+        <div className="ink-tools" role="group" aria-label="Pen">
+          <button
+            type="button"
+            className={cn("ink-pen", drawing && "is-on")}
+            aria-pressed={drawing}
+            aria-label="Pen"
+            onClick={() => setDrawing((on) => !on)}
+          >
+            <span className={cn("ink-pen-nib", fillClass(markOf(chat.selfId)))} aria-hidden />
+            Pen
+          </button>
+          <button
+            type="button"
+            className="ink-tool"
+            aria-label="Undo"
+            onClick={() => chat.undoInk()}
+            disabled={!chat.ownHere}
+          >
+            Undo
+          </button>
+          <button
+            type="button"
+            className="ink-tool"
+            aria-label="Clear"
+            onClick={() => chat.clearInk()}
+            disabled={!chat.ownHere}
+          >
+            Clear
+          </button>
         </div>
         <form
           className="chat-compose"
