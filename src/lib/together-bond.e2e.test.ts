@@ -1,6 +1,6 @@
 /**
- * Two sessions in one sitting: a pen stroke on the passage shows up on the
- * other reader, stays on that passage, and can be undone.
+ * Two sessions in one sitting: a line, a pin, a glow, a margin emoji,
+ * and the shared count show up on the other reader. The pen is gone.
  */
 import assert from "node:assert/strict";
 import { mkdirSync } from "node:fs";
@@ -126,9 +126,11 @@ async function columnBox(page: Page) {
     const block = document.querySelector(".breath-block");
     const line = document.querySelector(".breath-now");
     const style = line ? getComputedStyle(line) : null;
+    const doc = document.documentElement;
     return {
       width: block ? Math.round(block.getBoundingClientRect().width) : 0,
       pad: style?.paddingRight ?? "",
+      overflow: doc.scrollWidth - doc.clientWidth,
     };
   });
 }
@@ -150,11 +152,11 @@ async function shot(page: Page, name: string) {
     mkdirSync(SHOTS, { recursive: true });
     await page.screenshot({ path: `${SHOTS}/${name}.png` });
   } catch {
-    /* artifacts are for the local review pass */
+    /* artifacts are for the review pass */
   }
 }
 
-test("a pen stroke syncs across two readers and stays on the passage", { timeout: 180_000 }, async () => {
+test("shared marks sync across two readers and the pen is gone", { timeout: 180_000 }, async () => {
   await ensureReaderServer();
   const mirror = await startMirror();
   const browser: Browser = await chromium.launch({ args: ["--no-sandbox"], headless: true });
@@ -166,7 +168,7 @@ test("a pen stroke syncs across two readers and stays on the passage", { timeout
       deviceScaleFactor: 1,
     };
     const a = await browser.newContext(phone);
-    const b = await browser.newContext(phone);
+    const b = await browser.newContext({ ...phone, reducedMotion: "reduce" });
     await a.addInitScript((url) => {
       (window as unknown as { __TBR_SIT_MIRROR?: string }).__TBR_SIT_MIRROR = url;
     }, mirror.url);
@@ -179,20 +181,25 @@ test("a pen stroke syncs across two readers and stays on the passage", { timeout
     const pageB = await b.newPage();
     const solo = await browser.newPage({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
     await solo.goto(`${APP}/read/passing?at=0`, { waitUntil: "domcontentloaded" });
-    const read = `${APP}/read/passing?at=0&sit=20&pair=inkroom`;
+    const read = `${APP}/read/passing?at=0&sit=20&pair=bondroom`;
     await Promise.all([
       pageA.goto(read, { waitUntil: "domcontentloaded" }),
       pageB.goto(read, { waitUntil: "domcontentloaded" }),
     ]);
     await pageA.locator(".chat-field").waitFor({ timeout: 60_000 });
     await pageB.locator(".chat-field").waitFor({ timeout: 60_000 });
-    await pageA.locator('[data-draw="off"]').waitFor();
+    await pageA.getByRole("button", { name: "Underline", exact: true }).waitFor();
+    assert.equal(await pageA.getByRole("button", { name: "Pen", exact: true }).count(), 0);
+    assert.equal(await pageA.locator(".passage-ink").count(), 0);
+    assert.equal(await solo.locator(".bond-tools").count(), 0);
+
     const alone = await columnBox(solo);
     const together = await columnBox(pageA);
     assert.equal(together.pad, "0px");
     assert.equal(alone.pad, "0px");
     assert.equal(together.width, alone.width, "together text is narrower than the solo reader");
     assert.ok(together.width > 200);
+    assert.ok(together.overflow <= 1, "the phone page scrolls sideways");
 
     const wide = await browser.newContext({ viewport: { width: 1280, height: 800 } });
     const wideSolo = await wide.newPage();
@@ -202,7 +209,7 @@ test("a pen stroke syncs across two readers and stays on the passage", { timeout
     }, mirror.url);
     await wideSit.route(/supabase\.co/, (route) => route.abort());
     await wideSolo.goto(`${APP}/read/passing?at=0`, { waitUntil: "domcontentloaded" });
-    await wideSit.goto(`${APP}/read/passing?at=0&sit=20&pair=inkwide`, { waitUntil: "domcontentloaded" });
+    await wideSit.goto(`${APP}/read/passing?at=0&sit=20&pair=bondwide`, { waitUntil: "domcontentloaded" });
     await wideSit.locator(".chat-field").waitFor({ timeout: 60_000 });
     const wideAlone = await columnBox(wideSolo);
     const wideTogether = await columnBox(wideSit);
@@ -210,8 +217,7 @@ test("a pen stroke syncs across two readers and stays on the passage", { timeout
     assert.equal(wideTogether.width, wideAlone.width);
     await wide.close();
 
-    await shot(pageA, "read-together-390-draw-off");
-    const note = `ink ${Date.now().toString(36)}`;
+    const note = `bond ${Date.now().toString(36)}`;
     await pageA.locator(".chat-field").fill(note);
     await pageA.locator(".chat-send").click();
     await pageB.locator(".chat-line", { hasText: note }).waitFor({ timeout: 10_000 });
@@ -227,48 +233,76 @@ test("a pen stroke syncs across two readers and stays on the passage", { timeout
       (before) => Number(document.querySelector(".reader-frame")?.getAttribute("data-breath-index")) === before,
       start,
     );
+    assert.equal(await breathOf(pageA), start, "turning the page did not come back");
 
-    await pageA.getByRole("button", { name: "Pen", exact: true }).click();
-    await pageA.locator('[data-draw="on"]').waitFor();
-    await pageA.waitForFunction(() => {
-      const sheet = document.querySelector(".passage-ink-sheet");
-      if (!sheet) return false;
-      const box = sheet.getBoundingClientRect();
-      return box.width > 40 && box.height > 24;
-    });
-    const sheet = await pageA.locator(".passage-ink-sheet").boundingBox();
-    assert.ok(sheet, "the pen has the passage");
+    await pageA.locator('[data-pace="caught-up"]').waitFor({ timeout: 10_000 });
+    await pageB.locator('[data-pace="caught-up"]').waitFor({ timeout: 10_000 });
+    assert.equal(await pageA.locator("[data-shared-read]").getAttribute("data-shared-read"), "0");
+    assert.match(await pageA.locator(".bond-status").innerText(), /we read this far/i);
+
     const held = await breathOf(pageA);
-    await pageA.mouse.move(sheet.x + sheet.width * 0.18, sheet.y + sheet.height * 0.35);
-    await pageA.mouse.down();
-    await pageA.mouse.move(sheet.x + sheet.width * 0.78, sheet.y + sheet.height * 0.42, { steps: 8 });
-    await pageA.mouse.move(sheet.x + sheet.width * 0.42, sheet.y + sheet.height * 0.72, { steps: 8 });
-    await shot(pageA, "read-together-390-drawing");
-    await pageA.mouse.up();
-    assert.equal(await breathOf(pageA), held, "drawing turned the page");
+    await pageA.getByRole("button", { name: "Underline", exact: true }).click();
+    assert.equal(await breathOf(pageA), held, "underlining turned the page");
+    await pageB.locator('[data-underlined="yes"]').waitFor({ timeout: 10_000 });
+    await pageA.locator(".bond-line").waitFor();
+    const lineBox = await pageA.locator(".bond-line").boundingBox();
+    assert.ok(lineBox && lineBox.width > 40, "the underline sits on the phrase");
 
-    const mark = pageB.locator(".passage-ink path[data-stroke]");
-    await mark.waitFor({ timeout: 10_000 });
-    const from = await mark.getAttribute("data-from");
-    const breath = await mark.getAttribute("data-breath");
-    assert.ok(from && from.startsWith("p-"));
-    assert.equal(breath, String(held));
-    await shot(pageB, "read-together-390-other-reader");
+    await pageA.getByRole("button", { name: "Pin", exact: true }).click();
+    await pageB.locator('[data-pinned="yes"]').waitFor({ timeout: 10_000 });
+    const pinBox = await pageB.locator(".bond-pin").boundingBox();
+    assert.ok(pinBox && pinBox.height > 8 && pinBox.height < 24, "the pin is a short mark");
 
-    await pageA.getByRole("button", { name: "Pen", exact: true }).click();
-    await pageA.locator('[data-draw="off"]').waitFor();
+    await pageA.getByRole("button", { name: "Emoji 💛" }).click();
+    await pageB.locator('[data-emoji="💛"]').waitFor({ timeout: 10_000 });
+    await pageA.getByRole("button", { name: "Emoji ✨" }).click();
+    await pageB.locator('[data-emoji="✨"]').waitFor({ timeout: 10_000 });
+    assert.equal(await pageB.locator(".bond-emoji").count(), 1);
+    const marked = await columnBox(pageA);
+    assert.equal(marked.width, together.width, "emoji narrowed the column");
+    assert.equal(marked.pad, "0px");
+    await shot(pageA, "read-together-390-marks");
+    await shot(pageB, "read-together-390-peer");
+
+    await pageA.getByRole("button", { name: "React", exact: true }).click();
+    await pageA.locator('[data-pulse="on"]').waitFor({ timeout: 10_000 });
+    await pageB.locator('[data-pulse="on"]').waitFor({ timeout: 10_000 });
+    const motionA = await pageA.locator(".bond-pulse").evaluate((el) => getComputedStyle(el).animationName);
+    const motionB = await pageB.locator(".bond-pulse").evaluate((el) => getComputedStyle(el).animationName);
+    assert.match(motionA, /bond-heartbeat/);
+    assert.equal(motionB, "none");
+    await shot(pageB, "read-together-390-pulse");
+
+    await tapSide(pageB, "next");
+    await pageB.waitForFunction(
+      (before) => Number(document.querySelector(".reader-frame")?.getAttribute("data-breath-index")) !== before,
+      held,
+    );
+    await pageB.locator('[data-pace="waiting"]').waitFor({ timeout: 10_000 });
+    assert.match(await pageB.locator(".bond-status").innerText(), /waiting here/i);
+    await pageA.locator('[data-pace="quiet"]').waitFor({ timeout: 10_000 });
+    await pageB.locator('[data-shared-read="1"]').waitFor({ timeout: 10_000 });
+    assert.match(await pageB.locator(".bond-status").innerText(), /we read 1 today/i);
+    await shot(pageB, "read-together-390-waiting");
+    assert.equal(await pageB.locator('[data-underlined="yes"]').count(), 0);
+
     await tapSide(pageA, "next");
     await pageA.waitForFunction(
       (before) => Number(document.querySelector(".reader-frame")?.getAttribute("data-breath-index")) !== before,
       held,
     );
-    assert.equal(await pageA.locator(".passage-ink path[data-stroke]").count(), 0);
-    await tapSide(pageA, "prev");
-    await pageA.locator(`.passage-ink path[data-breath="${held}"]`).waitFor({ timeout: 10_000 });
-
-    await pageA.getByRole("button", { name: "Undo", exact: true }).click();
-    await pageB.waitForFunction(() => document.querySelectorAll(".passage-ink path[data-stroke]").length === 0);
-    assert.equal(await pageA.locator(".passage-ink path[data-stroke]").count(), 0);
+    await pageA.getByRole("button", { name: "This line", exact: true }).waitFor({ timeout: 10_000 });
+    await pageB.getByRole("button", { name: "This line", exact: true }).waitFor({ timeout: 10_000 });
+    await pageB.getByRole("button", { name: "This line", exact: true }).click();
+    await pageB.waitForFunction(
+      (breath) => Number(document.querySelector(".reader-frame")?.getAttribute("data-breath-index")) === breath,
+      held,
+    );
+    await pageB.locator('[data-underlined="yes"]').waitFor({ timeout: 10_000 });
+    await pageB.locator('[data-pinned="yes"]').waitFor({ timeout: 10_000 });
+    await pageB.locator('[data-emoji="✨"]').waitFor({ timeout: 10_000 });
+    assert.equal(await pageA.locator(".passage-ink path").count(), 0);
+    await shot(pageB, "read-together-390-score");
     await solo.close();
   } finally {
     await browser.close();

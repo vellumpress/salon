@@ -3,7 +3,7 @@ import { useP2PRoom, type PeerInfo } from "@/lib/multiplayer";
 import { shareOrCopy } from "@/lib/invite-share";
 import { fillClass, hashSeed, type Fill } from "@/lib/mondrian";
 import { HoldLeave } from "@/components/hourglass";
-import { PassageInk } from "@/components/passage-ink";
+import { PassageBond } from "@/components/passage-bond";
 import { publishClubProgress } from "@/lib/clubs";
 import { asClubId } from "@/lib/club-time";
 import { formatHandle } from "@/lib/social";
@@ -23,13 +23,36 @@ import {
   type SitLine,
 } from "@/lib/multiplayer/sit-logic";
 import {
-  cleanPassageStroke,
-  clearOwnStrokes,
-  mergePassageStrokes,
-  strokesOnPassage,
-  undoOwnStroke,
-  type PassageStroke,
-} from "@/lib/multiplayer/passage-ink";
+  MARGIN_EMOJI,
+  cleanEmoji,
+  cleanLedger,
+  cleanPin,
+  cleanPulse,
+  cleanUnderline,
+  emojiOn,
+  jumpTarget,
+  mergeEmoji,
+  mergeLedger,
+  mergePins,
+  mergePulses,
+  mergeUnderlines,
+  nextEmoji,
+  nextPin,
+  nextUnderline,
+  noteFinished,
+  paceCue,
+  paceLabel,
+  pinsOn,
+  pulsesOn,
+  scoreLabel,
+  sharedFinished,
+  underlinesOn,
+  type PassageEmoji,
+  type PassagePin,
+  type ReactionPulse,
+  type ReadLedger,
+  type Underline,
+} from "@/lib/multiplayer/together-bond";
 import { enterTogetherCompose, exitTogetherCompose } from "@/lib/vvh";
 import { cn } from "@/lib/utils";
 
@@ -43,13 +66,23 @@ export type ChatLine = SitLine;
 
 type HereNote = { breath: number; place: string };
 
+type BondSync = {
+  underlines?: Underline[];
+  pins?: PassagePin[];
+  emoji?: PassageEmoji[];
+  pulses?: ReactionPulse[];
+  read?: ReadLedger;
+};
+
 type Wire =
   | { t: "chat"; text: string; at: number; breath?: number; name?: string }
   | { t: "here"; breath: number; place: string }
-  | { t: "ink"; stroke: PassageStroke }
-  | { t: "ink-undo"; id: string; breath: number }
-  | { t: "ink-clear"; breath: number }
-  | { t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[]; strokes?: PassageStroke[] };
+  | { t: "line"; mark: Underline }
+  | { t: "pin"; pin: PassagePin }
+  | { t: "pulse"; pulse: ReactionPulse }
+  | { t: "emoji"; mark: PassageEmoji }
+  | { t: "read"; ledger: ReadLedger }
+  | ({ t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[] } & BondSync);
 
 function isChat(data: unknown): data is { t: "chat"; text: string; at: number; breath?: number; name?: string } {
   if (!data || typeof data !== "object") return false;
@@ -63,29 +96,20 @@ function isHere(data: unknown): data is { t: "here"; breath: number; place: stri
   return msg.t === "here" && typeof msg.place === "string";
 }
 
-function isSync(
-  data: unknown,
-): data is { t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[]; strokes?: PassageStroke[] } {
+function isSync(data: unknown): data is { t: "sync"; chat: ChatLine[]; here: HereNote; marks?: MarginMark[] } & BondSync {
   if (!data || typeof data !== "object") return false;
   const msg = data as Wire;
   return msg.t === "sync" && Array.isArray(msg.chat);
 }
 
-function isInk(data: unknown): data is { t: "ink"; stroke: unknown } {
-  if (!data || typeof data !== "object") return false;
-  return (data as { t?: string }).t === "ink";
+function wireKind(data: unknown) {
+  if (!data || typeof data !== "object") return "";
+  const kind = (data as { t?: unknown }).t;
+  return typeof kind === "string" ? kind : "";
 }
 
-function isInkUndo(data: unknown): data is { t: "ink-undo"; id: string; breath: number } {
-  if (!data || typeof data !== "object") return false;
-  const msg = data as { t?: string; id?: unknown };
-  return msg.t === "ink-undo" && typeof msg.id === "string";
-}
-
-function isInkClear(data: unknown): data is { t: "ink-clear"; breath: number } {
-  if (!data || typeof data !== "object") return false;
-  const msg = data as { t?: string; breath?: unknown };
-  return msg.t === "ink-clear" && typeof msg.breath === "number";
+function bondId(prefix: string, selfId: string) {
+  return `${prefix}-${selfId}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`;
 }
 
 export function useSittingLock(onLeave: () => void) {
@@ -207,32 +231,65 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
   });
   const [lines, setLines] = useState<ChatLine[]>([]);
   const [marks, setMarks] = useState<MarginMark[]>([]);
-  const [strokes, setStrokes] = useState<PassageStroke[]>([]);
+  const [underlines, setUnderlines] = useState<Underline[]>([]);
+  const [pins, setPins] = useState<PassagePin[]>([]);
+  const [emoji, setEmoji] = useState<PassageEmoji[]>([]);
+  const [pulses, setPulses] = useState<ReactionPulse[]>([]);
+  const [selfRead, setSelfRead] = useState<number[]>([]);
+  const [peerRead, setPeerRead] = useState<Record<string, ReadLedger>>({});
   const [here, setHere] = useState<Record<string, HereNote>>({});
   const [draft, setDraft] = useState("");
-  const undone = useRef(new Set<string>());
-  const snap = useRef({ lines, marks, strokes, breathIndex, place, selfId: p2p.selfId, workId });
-  snap.current = { lines, marks, strokes, breathIndex, place, selfId: p2p.selfId, workId };
+  const [now, setNow] = useState(() => Date.now());
+  const readDay = useRef(dayKey(Date.now()));
+  const prevBreath = useRef(breathIndex);
+  const snap = useRef({
+    lines,
+    marks,
+    underlines,
+    pins,
+    emoji,
+    pulses,
+    selfRead,
+    breathIndex,
+    place,
+    selfId: p2p.selfId,
+    workId,
+  });
+  snap.current = {
+    lines,
+    marks,
+    underlines,
+    pins,
+    emoji,
+    pulses,
+    selfRead,
+    breathIndex,
+    place,
+    selfId: p2p.selfId,
+    workId,
+  };
   const prevConnected = useRef(new Set<string>());
   const progressTimer = useRef<number | null>(null);
 
-  const rememberUndo = useCallback((id: string) => {
-    undone.current.add(id);
-    if (undone.current.size <= 64) return;
-    const first = undone.current.values().next().value;
-    if (first) undone.current.delete(first);
-  }, []);
-
-  const syncPayload = useCallback(
-    () => ({
+  const syncPayload = useCallback(() => {
+    const current = snap.current;
+    return {
       t: "sync" as const,
-      chat: snap.current.lines,
-      marks: snap.current.marks,
-      strokes: snap.current.strokes,
-      here: { breath: snap.current.breathIndex, place: snap.current.place },
-    }),
-    [],
-  );
+      chat: current.lines,
+      marks: current.marks,
+      underlines: current.underlines,
+      pins: current.pins,
+      emoji: current.emoji,
+      pulses: current.pulses,
+      read: {
+        from: current.selfId,
+        day: readDay.current,
+        at: Date.now(),
+        breaths: current.selfRead,
+      },
+      here: { breath: current.breathIndex, place: current.place },
+    };
+  }, []);
 
   useEffect(
     () =>
@@ -264,34 +321,50 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
           }));
           return;
         }
-        if (isInk(data)) {
-          const raw = data.stroke;
-          if (!raw || typeof raw !== "object") return;
-          const stroke = cleanPassageStroke({ ...(raw as Record<string, unknown>), from });
-          if (!stroke || undone.current.has(stroke.id)) return;
-          setStrokes((prev) => mergePassageStrokes(prev, [stroke]));
+        const kind = wireKind(data);
+        if (kind === "line") {
+          const mark = cleanUnderline((data as { mark?: unknown }).mark, from);
+          if (!mark) return;
+          setUnderlines((prev) => mergeUnderlines(prev, [mark]));
           return;
         }
-        if (isInkUndo(data)) {
-          rememberUndo(data.id);
-          setStrokes((prev) => prev.filter((stroke) => !(stroke.id === data.id && stroke.from === from)));
+        if (kind === "pin") {
+          const pin = cleanPin((data as { pin?: unknown }).pin, from);
+          if (!pin) return;
+          setPins((prev) => mergePins(prev, [pin]));
           return;
         }
-        if (isInkClear(data)) {
-          setStrokes((prev) => {
-            const next = clearOwnStrokes(prev, from, data.breath);
-            for (const stroke of prev) {
-              if (stroke.from === from && stroke.breath === Math.floor(data.breath)) rememberUndo(stroke.id);
-            }
-            return next;
+        if (kind === "pulse") {
+          const pulse = cleanPulse((data as { pulse?: unknown }).pulse, from);
+          if (!pulse) return;
+          setPulses((prev) => mergePulses(prev, [pulse], Date.now()));
+          setNow(Date.now());
+          return;
+        }
+        if (kind === "emoji") {
+          const mark = cleanEmoji((data as { mark?: unknown }).mark, from);
+          if (!mark) return;
+          setEmoji((prev) => mergeEmoji(prev, [mark]));
+          return;
+        }
+        if (kind === "read") {
+          setPeerRead((prev) => {
+            const ledger = mergeLedger(prev[from], (data as { ledger?: unknown }).ledger, from);
+            if (!ledger || ledger === prev[from]) return prev;
+            return { ...prev, [from]: ledger };
           });
           return;
         }
-        if (data && typeof data === "object" && (data as { t?: string }).t === "hello") {
+        if (kind === "hello") {
+          const current = snap.current;
           if (
-            snap.current.lines.length === 0 &&
-            snap.current.marks.length === 0 &&
-            snap.current.strokes.length === 0
+            current.lines.length === 0 &&
+            current.marks.length === 0 &&
+            current.underlines.length === 0 &&
+            current.pins.length === 0 &&
+            current.emoji.length === 0 &&
+            current.pulses.length === 0 &&
+            current.selfRead.length === 0
           ) {
             return;
           }
@@ -316,19 +389,30 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
             }));
           const syncedMarks = Array.isArray(data.marks) ? mergeMarginMarks([], data.marks) : [];
           if (syncedMarks.length > 0) setMarks((prev) => mergeMarginMarks(prev, syncedMarks));
-          const syncedStrokes = Array.isArray(data.strokes)
-            ? data.strokes.filter((stroke) => {
-                if (!stroke || typeof stroke !== "object") return false;
-                const id = (stroke as { id?: unknown }).id;
-                return typeof id !== "string" || !undone.current.has(id);
-              })
-            : [];
-          if (syncedStrokes.length > 0) setStrokes((prev) => mergePassageStrokes(prev, syncedStrokes));
+          if (Array.isArray(data.underlines) && data.underlines.length > 0) {
+            setUnderlines((prev) => mergeUnderlines(prev, data.underlines ?? []));
+          }
+          if (Array.isArray(data.pins) && data.pins.length > 0) {
+            setPins((prev) => mergePins(prev, data.pins ?? []));
+          }
+          if (Array.isArray(data.emoji) && data.emoji.length > 0) {
+            setEmoji((prev) => mergeEmoji(prev, data.emoji ?? []));
+          }
+          if (Array.isArray(data.pulses) && data.pulses.length > 0) {
+            setPulses((prev) => mergePulses(prev, data.pulses ?? [], Date.now()));
+          }
+          if (data.read) {
+            setPeerRead((prev) => {
+              const ledger = mergeLedger(prev[from], data.read, from);
+              if (!ledger || ledger === prev[from]) return prev;
+              return { ...prev, [from]: ledger };
+            });
+          }
           const spoken = chatWithoutMargin(incoming, syncedMarks);
           if (spoken.length > 0) setLines((prev) => mergeSitLines(prev, spoken));
         }
       }),
-    [p2p.onMessage, p2p.send, rememberUndo, syncPayload],
+    [p2p.onMessage, p2p.send, syncPayload],
   );
 
   useEffect(() => {
@@ -384,6 +468,38 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     prevConnected.current = connected;
   }, [connectedKey, p2p.send, syncPayload]);
 
+  useEffect(() => {
+    const prev = prevBreath.current;
+    prevBreath.current = breathIndex;
+    if (!(breathIndex > prev)) return;
+    setSelfRead((curr) => noteFinished(curr, prev, breathIndex));
+  }, [breathIndex]);
+
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      const next = dayKey(Date.now());
+      if (next === readDay.current) return;
+      readDay.current = next;
+      setSelfRead([]);
+    }, 30_000);
+    return () => window.clearInterval(id);
+  }, []);
+
+  const pulseLive = pulses.some((pulse) => now - pulse.at < 3600 && now - pulse.at > -5000);
+  useEffect(() => {
+    if (!pulseLive) return;
+    const id = window.setInterval(() => setNow(Date.now()), 150);
+    return () => window.clearInterval(id);
+  }, [pulseLive]);
+
+  useEffect(() => {
+    if (!p2p.joined) return;
+    p2p.send({
+      t: "read",
+      ledger: { from: p2p.selfId, day: readDay.current, at: Date.now(), breaths: selfRead },
+    });
+  }, [selfRead, p2p.joined, p2p.selfId, p2p.send]);
+
   const sendChat = useCallback(() => {
     const text = draft.trim().slice(0, 280);
     if (!text) return;
@@ -394,36 +510,48 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     setDraft("");
   }, [draft, p2p]);
 
-  const publishInk = useCallback(
-    (stroke: PassageStroke) => {
-      const clean = cleanPassageStroke(stroke);
-      if (!clean || clean.from !== p2p.selfId || undone.current.has(clean.id)) return;
-      setStrokes((prev) => mergePassageStrokes(prev, [clean]));
-      p2p.send({ t: "ink", stroke: clean });
+  const publishUnderline = useCallback(() => {
+    const { underlines: current, selfId, breathIndex: breath } = snap.current;
+    const mark = nextUnderline(current, selfId, breath, Date.now(), bondId("line", selfId));
+    if (!mark) return;
+    setUnderlines((prev) => mergeUnderlines(prev, [mark]));
+    p2p.send({ t: "line", mark });
+  }, [p2p]);
+
+  const publishPin = useCallback(() => {
+    const { pins: current, selfId, breathIndex: breath, place: herePlace } = snap.current;
+    const pin = nextPin(current, selfId, breath, Date.now(), bondId("pin", selfId), herePlace);
+    if (!pin) return;
+    setPins((prev) => mergePins(prev, [pin]));
+    p2p.send({ t: "pin", pin });
+  }, [p2p]);
+
+  const publishPulse = useCallback(() => {
+    const { selfId, breathIndex: breath } = snap.current;
+    const at = Date.now();
+    const pulse = cleanPulse({ id: bondId("pulse", selfId), breath, at }, selfId);
+    if (!pulse) return;
+    setPulses((prev) => mergePulses(prev, [pulse], at));
+    setNow(at);
+    p2p.send({ t: "pulse", pulse });
+  }, [p2p]);
+
+  const publishEmoji = useCallback(
+    (glyph: (typeof MARGIN_EMOJI)[number]) => {
+      const { emoji: current, selfId, breathIndex: breath } = snap.current;
+      const mark = nextEmoji(current, selfId, breath, glyph, Date.now(), bondId("emoji", selfId));
+      if (!mark) return;
+      setEmoji((prev) => mergeEmoji(prev, [mark]));
+      p2p.send({ t: "emoji", mark });
     },
     [p2p],
   );
 
-  const undoInk = useCallback(() => {
-    const { strokes: current, selfId, breathIndex: breath } = snap.current;
-    const result = undoOwnStroke(current, selfId, breath);
-    if (!result.removed) return;
-    rememberUndo(result.removed.id);
-    setStrokes(result.next);
-    p2p.send({ t: "ink-undo", id: result.removed.id, breath });
-  }, [p2p, rememberUndo]);
-
-  const clearInk = useCallback(() => {
-    const { strokes: current, selfId, breathIndex: breath } = snap.current;
-    const removed = current.filter((stroke) => stroke.from === selfId && stroke.breath === breath);
-    if (removed.length === 0) return;
-    for (const stroke of removed) rememberUndo(stroke.id);
-    setStrokes(clearOwnStrokes(current, selfId, breath));
-    p2p.send({ t: "ink-clear", breath });
-  }, [p2p, rememberUndo]);
-
   const retry = useCallback(() => setAttempt((n) => n + 1), []);
-  const ownHere = strokesOnPassage(strokes, breathIndex).some((stroke) => stroke.from === p2p.selfId);
+  const ownLine = underlinesOn(underlines, breathIndex).some((mark) => mark.from === p2p.selfId);
+  const ownPin = pinsOn(pins, breathIndex).some((pin) => pin.from === p2p.selfId);
+  const passageEmoji = emojiOn(emoji, breathIndex)?.emoji ?? "";
+  const glowing = pulsesOn(pulses, breathIndex, now).length > 0;
 
   return {
     selfId: p2p.selfId,
@@ -433,15 +561,25 @@ export function useSittingChat(pair: string, place: string, breathIndex: number,
     link: p2p.link,
     lines,
     marks,
-    strokes,
+    underlines,
+    pins,
+    emoji,
     here,
+    peerRead,
+    selfRead,
+    day: readDay.current,
     draft,
     setDraft,
     sendChat,
-    publishInk,
-    undoInk,
-    clearInk,
-    ownHere,
+    publishUnderline,
+    publishPin,
+    publishPulse,
+    publishEmoji,
+    ownLine,
+    ownPin,
+    passageEmoji,
+    glowing,
+    now,
     retry,
   };
 }
@@ -475,7 +613,6 @@ export function TogetherShell({
   const chat = useSittingChat(pair, place, breathIndex, workId);
   const [live, setLive] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [drawing, setDrawing] = useState(false);
   const dockRef = useRef<HTMLDivElement>(null);
   useEffect(() => setLive(true), []);
   useEffect(() => () => exitTogetherCompose(), []);
@@ -534,6 +671,28 @@ export function TogetherShell({
     ),
   ];
   const visible = chatWithoutMargin(chat.lines, chat.marks).slice(-6);
+  const peerBreaths = present
+    .map((peer) => {
+      const noted = chat.here[peer.id]?.breath;
+      return typeof noted === "number" ? noted : peer.breath;
+    })
+    .filter((breath): breath is number => typeof breath === "number" && Number.isFinite(breath));
+  const pace = paceCue(breathIndex, peerBreaths);
+  const paceText = paceLabel(pace);
+  const peerLedgers: ReadLedger[] = present.map((peer) => {
+    const got = chat.peerRead[peer.id];
+    if (got && got.day === chat.day) return got;
+    return { from: peer.id, day: chat.day, at: 0, breaths: [] };
+  });
+  const shared = sharedFinished(
+    chat.day,
+    { from: chat.selfId, day: chat.day, at: chat.now, breaths: chat.selfRead },
+    present.length > 0 ? peerLedgers : [],
+  );
+  const jump = jumpTarget(chat.pins, chat.selfId, breathIndex);
+  const showJump = Boolean(jump && onFollow && jump.breath !== followNote?.breath);
+  const underlined = underlinesOn(chat.underlines, breathIndex).length > 0;
+  const pinned = pinsOn(chat.pins, breathIndex).length > 0;
 
   return (
     <>
@@ -588,12 +747,12 @@ export function TogetherShell({
       </header>
       <div className="relative flex min-h-0 flex-1 flex-col">
         {children}
-        <PassageInk
-          strokes={chat.strokes}
+        <PassageBond
           breathIndex={breathIndex}
-          drawing={drawing}
-          selfId={chat.selfId}
-          onStroke={chat.publishInk}
+          underlined={underlined}
+          pinned={pinned}
+          pulsing={chat.glowing}
+          emoji={chat.passageEmoji}
         />
       </div>
       {chat.unavailable ? (
@@ -638,35 +797,53 @@ export function TogetherShell({
             );
           })}
         </div>
-        <div className="ink-tools" role="group" aria-label="Pen">
-          <button
-            type="button"
-            className={cn("ink-pen", drawing && "is-on")}
-            aria-pressed={drawing}
-            aria-label="Pen"
-            onClick={() => setDrawing((on) => !on)}
-          >
-            <span className={cn("ink-pen-nib", fillClass(markOf(chat.selfId)))} aria-hidden />
-            Pen
+        {showJump && jump && onFollow ? (
+          <button type="button" className="bond-jump" data-pin-breath={jump.breath} onClick={() => onFollow(jump.breath)}>
+            This line
           </button>
-          <button
-            type="button"
-            className="ink-tool"
-            aria-label="Undo"
-            onClick={() => chat.undoInk()}
-            disabled={!chat.ownHere}
-          >
-            Undo
-          </button>
-          <button
-            type="button"
-            className="ink-tool"
-            aria-label="Clear"
-            onClick={() => chat.clearInk()}
-            disabled={!chat.ownHere}
-          >
-            Clear
-          </button>
+        ) : null}
+        <div className="bond-status" data-pace={pace || "quiet"} data-shared-read={shared} aria-live="polite">
+          {paceText ? <span>{paceText}</span> : <span className="sr-only">Reading together</span>}
+          <span>{scoreLabel(shared)}</span>
+        </div>
+        <div className="bond-tools">
+          <div className="bond-actions" role="group" aria-label="Together">
+            <button
+              type="button"
+              className={cn("bond-tool", chat.ownLine && "is-on")}
+              aria-pressed={chat.ownLine}
+              aria-label="Underline"
+              onClick={() => chat.publishUnderline()}
+            >
+              Line
+            </button>
+            <button
+              type="button"
+              className={cn("bond-tool", chat.ownPin && "is-on")}
+              aria-pressed={chat.ownPin}
+              aria-label="Pin"
+              onClick={() => chat.publishPin()}
+            >
+              Pin
+            </button>
+            <button type="button" className="bond-tool" aria-label="React" onClick={() => chat.publishPulse()}>
+              Glow
+            </button>
+          </div>
+          <div className="bond-emoji-set" role="group" aria-label="Margin emoji">
+            {MARGIN_EMOJI.map((glyph) => (
+              <button
+                key={glyph}
+                type="button"
+                className={cn("bond-emoji-btn", chat.passageEmoji === glyph && "is-on")}
+                aria-pressed={chat.passageEmoji === glyph}
+                aria-label={`Emoji ${glyph}`}
+                onClick={() => chat.publishEmoji(glyph)}
+              >
+                {glyph}
+              </button>
+            ))}
+          </div>
         </div>
         <form
           className="chat-compose"

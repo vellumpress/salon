@@ -3974,30 +3974,40 @@ html.together-compose.together-kb .reader-daylight .chat-field {
   background-color: color-mix(in srgb, var(--reader-bg) 90%, transparent);
 }
 
-.ink-tools {
+.bond-status {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 2rem;
   border-top: 1px solid var(--color-ink);
   background-color: var(--color-paper);
+  padding: 0.35rem 0.85rem;
   color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-kicker);
+  font-weight: 400;
+  letter-spacing: var(--tracking-kicker);
+  line-height: var(--text-kicker--line-height);
+  text-transform: uppercase;
 }
 
-.ink-pen,
-.ink-tool {
-  box-sizing: border-box;
-  display: inline-flex;
+.bond-status > span:last-child {
+  margin-left: auto;
+}
+
+.bond-jump {
+  display: flex;
   height: 2.75rem;
-  min-width: 0;
-  flex: 1 1 0;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 0.45rem;
-  margin: 0;
   border: 0;
-  border-left: 1px solid var(--color-ink);
+  border-top: 1px solid var(--color-ink);
   border-radius: 0;
   appearance: none;
   -webkit-appearance: none;
-  background: transparent;
+  background: var(--color-yellow);
   padding: 0 0.75rem;
   color: var(--color-ink);
   -webkit-text-fill-color: var(--color-ink, #111111);
@@ -4006,69 +4016,157 @@ html.together-compose.together-kb .reader-daylight .chat-field {
   line-height: 1;
 }
 
-.ink-pen {
+.bond-tools {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-ink);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.bond-actions,
+.bond-emoji-set {
+  display: flex;
+  min-width: 0;
+}
+
+.bond-emoji-set {
+  border-top: 1px solid var(--color-ink);
+}
+
+.bond-tool,
+.bond-emoji-btn {
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 2.75rem;
+  min-width: 0;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: 0;
+  border-left: 1px solid var(--color-ink);
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  padding: 0 0.35rem;
+  color: var(--color-ink);
+  -webkit-text-fill-color: var(--color-ink, #111111);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.bond-tool:first-child,
+.bond-emoji-btn:first-child {
   border-left: 0;
 }
 
-.ink-pen.is-on {
+.bond-emoji-btn {
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.bond-tool.is-on,
+.bond-emoji-btn.is-on {
   background-color: var(--color-ink);
   color: var(--color-paper);
   -webkit-text-fill-color: var(--color-paper, #f3f1eb);
 }
 
-.ink-pen-nib {
-  width: 0.45rem;
-  height: 0.45rem;
-  flex-shrink: 0;
-}
-
-.ink-tool:disabled {
-  opacity: 0.35;
-}
-
-.passage-ink {
+.passage-bond {
   pointer-events: none;
   position: absolute;
   inset: 0;
   z-index: 20;
-  overflow: hidden;
-}
-
-.passage-ink-sheet {
-  position: absolute;
-  display: block;
   overflow: visible;
-  touch-action: none;
-  pointer-events: none;
 }
 
-.passage-ink.is-drawing .passage-ink-sheet {
-  pointer-events: auto;
+.bond-line {
+  position: absolute;
+  height: 1px;
+  background: var(--color-ink);
+  opacity: 0.8;
 }
 
-.passage-ink-sheet path {
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.bond-pin {
+  position: absolute;
+  width: 2px;
+  height: 0.85rem;
+  background: var(--color-red);
 }
 
-.reader-daylight .ink-tools {
+.bond-emoji {
+  position: absolute;
+  font-size: 1rem;
+  line-height: 1;
+  opacity: 0.82;
+}
+
+.bond-pulse {
+  position: absolute;
+  border-radius: 2px;
+  background-color: transparent;
+  animation: bond-heartbeat 1.6s ease-in-out 2;
+}
+
+@keyframes bond-heartbeat {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+    background-color: transparent;
+  }
+
+  35% {
+    box-shadow: 0 0 16px 3px color-mix(in srgb, var(--color-yellow) 80%, transparent);
+    background-color: color-mix(in srgb, var(--color-yellow) 22%, transparent);
+  }
+
+  55% {
+    box-shadow: 0 0 0 0 transparent;
+    background-color: transparent;
+  }
+
+  75% {
+    box-shadow: 0 0 12px 2px color-mix(in srgb, var(--color-yellow) 65%, transparent);
+    background-color: color-mix(in srgb, var(--color-yellow) 14%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bond-pulse {
+    animation: none;
+    box-shadow: none;
+    background-color: color-mix(in srgb, var(--color-yellow) 28%, transparent);
+  }
+}
+
+.reader-daylight .bond-status,
+.reader-daylight .bond-tools {
   background-color: var(--reader-bg);
   border-top-color: var(--reader-rule);
   color: var(--reader-ink);
 }
 
-.reader-daylight .ink-pen,
-.reader-daylight .ink-tool {
+.reader-daylight .bond-tool,
+.reader-daylight .bond-emoji-btn,
+.reader-daylight .bond-jump {
   color: var(--reader-ink);
   -webkit-text-fill-color: var(--reader-ink);
-  border-left-color: var(--reader-rule);
+  border-color: var(--reader-rule);
 }
 
-.reader-daylight .ink-pen.is-on {
+.reader-daylight .bond-tool.is-on,
+.reader-daylight .bond-emoji-btn.is-on {
   background-color: var(--reader-ink);
   color: var(--reader-bg);
   -webkit-text-fill-color: var(--reader-bg);
+}
+
+.reader-daylight .bond-line {
+  background: var(--reader-ink);
 }
 
 .daylight-switch {
