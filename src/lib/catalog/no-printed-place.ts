@@ -25,4 +25,5 @@ export const NO_PRINTED_PLACE: ReadonlySet<string> = new Set([
   "withered-leaves", // Mira Tue 3 Nov 2026 PM WITHERED: no place is named, only "the great galleries", "the Salon of 1878" (the exhibition), "a corner of the garden", "the avenue leading to the house"; "the English painter" is a nationality; no chip, no country
   "three-questions", // Mira Wed 4 Nov 2026 AM THREE-Q: no place is named, only "his kingdom", "a wood", the hermit's hut and cell; no chip, no country
   "the-constant-tin-soldier", // Mira Wed 4 Nov 2026 NOON TIN-SOLDIER: no place is named, only the table, "the third story", the kennel, "a great canal", the kitchen and the parlor; no chip, no country
+  "the-dun-cow", // Mira Thu 5 Nov 2026 AM DUN-COW: no place is named, only "a certain kingdom", "a certain land", the heath, the field and the bush; no chip, no country
 ]);

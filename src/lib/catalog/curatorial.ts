@@ -1327,6 +1327,8 @@ export const NEXT_FEATURED_TRACK_IDS = [
   "the-constant-tin-soldier",
   // Mira Wed 4 Nov 2026 PM BREMEN — The Bremen Town-Musicians (Grimm, tr. Margaret Hunt, Grimm's Household Tales, 1884) follows The Constant Tin Soldier at the end of Next, plain Next (no heads-up). Never Featured; off every Ritual lane.
   "the-bremen-town-musicians",
+  // Mira Thu 5 Nov 2026 AM DUN-COW — The Dun Cow (Afanas'ev, tr. Leonard A. Magnus, Russian Folk-Tales, 1915) follows The Bremen Town-Musicians at the end of Next, Next carefully (heads-up on the card: the cow slain, the woman shot; off NEXT_CAREFULLY_IDS, short-story pattern). Never Featured; off every Ritual lane (never Unwind or Before sleep).
+  "the-dun-cow",
 ] as const;
 
 /**
