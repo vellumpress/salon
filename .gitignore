@@ -12,3 +12,12 @@ public/pdf.worker.min.js
 .vercel/output/
 catalog-walk-failure.json
 catalog-walk.log
+
+# Capacitor iOS shell. The Xcode project is committed; the copied web
+# bundle and any local signing output are not.
+dist-ios/
+ios/App/App/public
+ios/App/Pods
+ios/App/build
+ios/DerivedData
+ios/**/xcuserdata
