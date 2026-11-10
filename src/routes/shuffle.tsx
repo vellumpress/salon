@@ -1,5 +1,7 @@
-import { useEffect, useRef, useState, type PointerEvent } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type PointerEvent } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { PagesShell } from "@/components/pages-shell";
+import { documentIsWordmarkShell } from "@/lib/wordmark-shell";
 import {
   canNativeShare,
   makePair,
@@ -28,6 +30,19 @@ export const Route = createFileRoute("/shuffle")({
 type Step = "length" | "company" | "share";
 
 function ShufflePage() {
+  // A direct open is the wordmark shell. Painting the lengths into it raises
+  // hydration error #418 on WebKit. Match that document first.
+  const [booted, setBooted] = useState(
+    () => typeof document !== "undefined" && !documentIsWordmarkShell(document),
+  );
+  useLayoutEffect(() => {
+    setBooted(true);
+  }, []);
+  if (!booted) return <PagesShell />;
+  return <ShuffleBody />;
+}
+
+function ShuffleBody() {
   const navigate = useNavigate();
   const { except, together } = Route.useSearch();
   const lastShuffle = useTbr((s) => s.lastShuffle);
