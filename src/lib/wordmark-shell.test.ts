@@ -46,12 +46,20 @@ test("login matches the wordmark document before painting the form", () => {
   assert.match(gate, /hydration error #418/);
 });
 
-test("home, curated, and the page import match the wordmark document first", () => {
-  for (const file of ["../routes/index.tsx", "../routes/curated.tsx", "../routes/page.tsx"]) {
+test("home, curated, import, and the page import match the wordmark document first", () => {
+  for (const file of ["../routes/index.tsx", "../routes/curated.tsx", "../routes/page.tsx", "../routes/import.tsx"]) {
     const page = readFileSync(new URL(file, import.meta.url), "utf8");
     assert.match(page, /documentIsWordmarkShell\(document\)/, file);
     assert.match(page, /if \(!booted\) return <PagesShell \/>/, file);
   }
+});
+
+test("a sitting matches the wordmark document before painting the lengths", () => {
+  const page = readFileSync(new URL("../routes/shuffle.tsx", import.meta.url), "utf8");
+  const gate = page.slice(page.indexOf("function ShufflePage"), page.indexOf("function ShuffleBody"));
+  assert.match(gate, /documentIsWordmarkShell\(document\)/);
+  assert.match(gate, /if \(!booted\) return <PagesShell \/>/);
+  assert.match(gate, /hydration error #418/);
 });
 
 test("the reader matches the wordmark document before painting a breath", () => {
