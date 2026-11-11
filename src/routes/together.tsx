@@ -32,6 +32,7 @@ import {
   type UpcomingSit,
 } from "@/lib/clubs";
 import { defaultSitClock, formatClubWhen, formatClubWhenLong, wallToIso, zoneClockLabel } from "@/lib/club-time";
+import { MinuteClock } from "@/components/minute-clock";
 import { enterClubCompose, exitClubCompose, syncVisualViewport } from "@/lib/vvh";
 import { isOffline } from "@/lib/net";
 import { salonShareText, salonShareTitle, staticActionMiss } from "@/lib/site";
@@ -824,10 +825,9 @@ function StartClubForm({
             />
           </ComposeField>
           <ComposeField fill="yellow" label={zoneClockLabel()} stacked className="border-t-0">
-            <input
-              type="time"
+            <MinuteClock
               value={time}
-              onChange={(event) => setTime(event.target.value)}
+              onChange={setTime}
               onFocus={(event) => keepFieldInView(event.currentTarget)}
               className={composeDateClass}
             />

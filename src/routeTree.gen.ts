@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SplatRouteImport } from './routes/$'
 import { Route as AdaptedRouteImport } from './routes/adapted'
 import { Route as ClubsRouteImport } from './routes/clubs'
 import { Route as CuratedRouteImport } from './routes/curated'
@@ -50,6 +51,11 @@ import { Route as FriendsAuthorSlugRouteImport } from './routes/friends_.author.
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SplatRoute = SplatRouteImport.update({
+  id: '/$',
+  path: '/$',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdaptedRoute = AdaptedRouteImport.update({
@@ -235,6 +241,7 @@ const FriendsAuthorSlugRoute = FriendsAuthorSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
   '/adapted': typeof AdaptedRoute
   '/clubs': typeof ClubsRoute
   '/curated': typeof CuratedRoute
@@ -274,6 +281,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
   '/adapted': typeof AdaptedRoute
   '/clubs': typeof ClubsRoute
   '/curated': typeof CuratedRoute
@@ -313,6 +321,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
   '/adapted': typeof AdaptedRoute
   '/clubs': typeof ClubsRoute
   '/curated': typeof CuratedRoute
@@ -354,6 +363,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/$'
     | '/adapted'
     | '/clubs'
     | '/curated'
@@ -393,6 +403,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/$'
     | '/adapted'
     | '/clubs'
     | '/curated'
@@ -431,6 +442,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/$'
     | '/adapted'
     | '/clubs'
     | '/curated'
@@ -471,6 +483,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  SplatRoute: typeof SplatRoute
   AdaptedRoute: typeof AdaptedRoute
   ClubsRoute: typeof ClubsRoute
   CuratedRoute: typeof CuratedRoute
@@ -514,6 +527,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/$': {
+      id: '/$'
+      path: '/$'
+      fullPath: '/$'
+      preLoaderRoute: typeof SplatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/adapted': {
@@ -786,6 +806,7 @@ const ProfileRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  SplatRoute: SplatRoute,
   AdaptedRoute: AdaptedRoute,
   ClubsRoute: ClubsRoute,
   CuratedRoute: CuratedRoute,

@@ -54,6 +54,15 @@ test("home, curated, import, and the page import match the wordmark document fir
   }
 });
 
+test("an unknown address matches the wordmark document before the missing page", () => {
+  const page = readFileSync(new URL("../routes/$.tsx", import.meta.url), "utf8");
+  const gate = page.slice(page.indexOf("function MissingPage"), page.indexOf("if (!booted)"));
+  assert.match(gate, /documentIsWordmarkShell\(document\)/);
+  assert.match(page, /if \(!booted\) return <PagesShell \/>/);
+  assert.match(page, /hydration error #418/);
+  assert.match(page, /This page is not on the shelf/);
+});
+
 test("a sitting matches the wordmark document before painting the lengths", () => {
   const page = readFileSync(new URL("../routes/shuffle.tsx", import.meta.url), "utf8");
   const gate = page.slice(page.indexOf("function ShufflePage"), page.indexOf("function ShuffleBody"));

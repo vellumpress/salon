@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 import { dayKey } from "./day-key.ts";
 import {
+  clockFace,
   parseClock,
   reminderDue,
   reminderLine,
@@ -73,5 +74,10 @@ test("the reminder plays off tbr", () => {
 
 test("clock values stay on a day", () => {
   assert.deepEqual(parseClock("21:05"), { hour: 21, minute: 5 });
+  assert.deepEqual(parseClock("21:05:00"), { hour: 21, minute: 5 });
   assert.equal(parseClock("24:00"), null);
+  assert.equal(parseClock("21:05:99"), null);
+  assert.equal(clockFace("21:00", "en-US"), "9:00 PM");
+  assert.equal(clockFace("09:05", "en-US"), "9:05 AM");
+  assert.doesNotMatch(clockFace("21:00", "en-US"), /\d:\d\d:\d\d/);
 });

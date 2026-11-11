@@ -58,16 +58,29 @@ function bridge(): CapacitorBridge | null {
 }
 
 export function parseClock(value: string): { hour: number; minute: number } | null {
-  const match = /^(\d{2}):(\d{2})$/.exec(value);
+  // WebKit reports a native time as HH:MM:SS. The seconds are not part of the clock.
+  const match = /^(\d{2}):(\d{2})(?::(\d{2}))?$/.exec(value);
   if (!match) return null;
   const hour = Number(match[1]);
   const minute = Number(match[2]);
-  if (hour > 23 || minute > 59) return null;
+  const second = match[3] == null ? 0 : Number(match[3]);
+  if (hour > 23 || minute > 59 || second > 59) return null;
   return { hour, minute };
 }
 
 export function clockValue(hour: number, minute: number) {
   return `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
+}
+
+/** Resting face. Hours and minutes only — no seconds. */
+export function clockFace(value: string, locales?: Intl.LocalesArgument) {
+  const parsed = parseClock(value);
+  if (!parsed) return "";
+  const date = new Date(2000, 0, 1, parsed.hour, parsed.minute, 0, 0);
+  return new Intl.DateTimeFormat(locales, {
+    hour: "numeric",
+    minute: "2-digit",
+  }).format(date);
 }
 
 /** Due once the chosen minute has passed today, and not after a sit today. */

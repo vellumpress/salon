@@ -28,6 +28,7 @@ import {
 import { shouldAutoJoin } from "@/lib/club-flow";
 import { formatHandle } from "@/lib/social";
 import { defaultSitClock, formatClubWhenLong, wallToIso, zoneClockLabel } from "@/lib/club-time";
+import { MinuteClock } from "@/components/minute-clock";
 
 const NO_CLUBS: string[] = [];
 import { serializeClubReadSearch } from "@/lib/catalog/serialize";
@@ -525,11 +526,10 @@ function LiveClub({
                 </label>
                 <label className="flex min-w-0 flex-col">
                   <span className="px-4 pt-3 type-kicker text-muted">{zoneClockLabel()}</span>
-                  <input
-                    type="time"
+                  <MinuteClock
                     value={time}
-                    onChange={(event) => setTime(event.target.value)}
-                    className="h-12 min-w-0 border-0 bg-transparent px-4 font-sans text-base text-ink focus-visible:outline-none"
+                    onChange={setTime}
+                    className="h-12 min-w-0 border-0 bg-transparent px-4 font-sans text-base text-ink"
                   />
                 </label>
               </div>

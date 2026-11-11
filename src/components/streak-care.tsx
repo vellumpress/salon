@@ -12,6 +12,7 @@ import {
   type ReminderClock,
 } from "@/lib/streak-notify";
 import { useTbr } from "@/lib/store";
+import { MinuteClock } from "@/components/minute-clock";
 
 export function StreakCare() {
   const reminder = useTbr((s) => s.streakReminder);
@@ -99,11 +100,10 @@ export function StreakCare() {
           <div className="flex flex-wrap items-center gap-px bg-ink">
             <label className="flex h-12 min-w-0 flex-1 items-center bg-paper px-3">
               <span className="sr-only">Reminder time</span>
-              <input
-                type="time"
+              <MinuteClock
                 value={clock}
-                onChange={(event) => setClock(event.target.value)}
-                className="min-w-0 flex-1 border-0 bg-transparent font-sans text-base text-ink focus-visible:outline-none"
+                onChange={setClock}
+                className="min-w-0 flex-1 border-0 bg-transparent font-sans text-base text-ink"
               />
             </label>
             <button
