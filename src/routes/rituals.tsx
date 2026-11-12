@@ -120,8 +120,7 @@ function RitualsBody() {
               Reading shaped for before sleep, waking, a walk, unwind.
             </span>
             <span className="type-pitch mt-2 max-w-xl opacity-80">
-              Pick a lane. One work at a time — contemporary New York hours, older
-              pages.
+              One at a time. A New York hour, or an older page.
             </span>
           </div>
 
