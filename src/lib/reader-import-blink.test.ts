@@ -132,15 +132,13 @@ async function armProbe(page: Page) {
     sample();
     const obs = new MutationObserver(sample);
     obs.observe(document.body, { childList: true, subtree: true, characterData: true });
-    let running = true;
-    const tick = () => {
-      if (!running) return;
-      sample();
-      requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
+    // A paint-frame loop here starves Playwright's default poll. The loading
+    // gate is a DOM change, so the observer catches it. Styles are sampled
+    // on a short timer instead of every frame.
+    const timer = setInterval(sample, 50);
+    window.__blinkFrames = frames;
     window.__blinkStop = () => {
-      running = false;
+      clearInterval(timer);
       obs.disconnect();
       sample();
       return frames;
@@ -204,16 +202,36 @@ async function tapColumn(page: Page, side: "next" | "prev") {
   const x = box.x + box.width * (side === "next" ? 0.78 : 0.14);
   const y = box.y + box.height * 0.62;
   await page.touchscreen.tap(x, y);
-  await page.waitForFunction(
-    (prev) => {
-      const frame = document.querySelector(".reader-frame");
-      const text = document.querySelector("[data-reader-text]");
-      if (!frame || !(text?.textContent ?? "").trim()) return false;
-      return frame.getAttribute("data-spotlight-key") !== prev;
-    },
-    before,
-    { timeout: 5_000 },
-  );
+  try {
+    // The next key commits in a microtask. Playwright's default poll waits
+    // for a paint frame, and that frame can slip past five seconds while
+    // four browsers share the runner. The key is already the next passage.
+    // A short timer observes it. A dropped reader is still a failure.
+    await page.waitForFunction(
+      (prev) => {
+        const frame = document.querySelector(".reader-frame");
+        const text = document.querySelector("[data-reader-text]");
+        if (!frame || !(text?.textContent ?? "").trim()) return false;
+        return frame.getAttribute("data-spotlight-key") !== prev;
+      },
+      before,
+      { timeout: 5_000, polling: 50 },
+    );
+  } catch (error) {
+    const flashed = await page
+      .evaluate(`(() => {
+        const frames = window.__blinkFrames;
+        if (!Array.isArray(frames)) return "";
+        const hit = frames.find((frame) => frame.opening || frame.reader === false);
+        if (!hit) return "";
+        return hit.opening ? "Opening" : "the reader dropped";
+      })()`)
+      .catch(() => "");
+    if (typeof flashed === "string" && flashed) {
+      throw new Error(`${side} tap flashed the loading gate (${flashed})`, { cause: error });
+    }
+    throw error;
+  }
 }
 
 async function walk(page: Page, label: string) {
