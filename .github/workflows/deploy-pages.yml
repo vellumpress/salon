@@ -92,7 +92,7 @@ jobs:
           key: playwright-${{ runner.os }}-webkit-${{ hashFiles('package-lock.json') }}
 
       - name: Install browsers
-        run: npx playwright install --with-deps chromium webkit
+        run: node scripts/install-browsers.mjs chromium webkit
 
       - name: Fetch the start of this push
         if: github.event_name == 'push' && github.event.before != '0000000000000000000000000000000000000000'
