@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { INSTALL_ATTEMPTS, installBrowsers } from "./install-browsers.mjs";
+import { INSTALL_ATTEMPTS, installArgs, installBrowsers } from "./install-browsers.mjs";
 
 test("a DNS blip on the first install is retried once", async () => {
   const calls = [];
@@ -49,4 +49,15 @@ test("a clean install does not retry", async () => {
 
 test("an install with no browser is refused", async () => {
   await assert.rejects(() => installBrowsers(["", "  "]), /at least one browser/);
+});
+
+test("a forced reinstall passes --force to the project Playwright", () => {
+  assert.deepEqual(installArgs(["chromium", "webkit"], { force: true }), [
+    "install",
+    "--with-deps",
+    "--force",
+    "chromium",
+    "webkit",
+  ]);
+  assert.deepEqual(installArgs(["chromium"]), ["install", "--with-deps", "chromium"]);
 });
