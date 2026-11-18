@@ -831,7 +831,7 @@ test(
       for (let run = 0; run < RUNS; run += 1) {
         const engine = wk && run % 2 === 1 ? wk : browser;
         const name = wk && run % 2 === 1 ? "webkit" : "chromium";
-        const page = await phone(engine);
+        let page = await phone(engine);
         await safeArea(page);
         const random = rng(1000 + run);
         const extra = ids
@@ -858,7 +858,11 @@ test(
             guard <= books.length && bound > 1 && bound < length - 3
               ? bound
               : Math.min(length - 3, 4 + Math.floor(random() * Math.min(30, length - 8)));
-          await openAt(page, id, start);
+          // A page.goto that never reaches the document is this tab, not the
+          // sentence. The catalog walk opens a fresh tab for that. Retrying
+          // the stuck tab only repeats the same 30s timeout.
+          page = await openCatalogWithRetry(engine, page, id, start);
+          await safeArea(page);
           const touch = await page.evaluate(() => getComputedStyle(document.documentElement).touchAction);
           assert.equal(touch, "manipulation", `${name} run ${run} still zooms on double tap`);
           const chunk = Math.min(left, 36);
