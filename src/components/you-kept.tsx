@@ -68,6 +68,24 @@ function cloakLine(text: string) {
   return words.slice(0, words.length - cut).join(" ") + " …";
 }
 
+export function ShelfList({
+  ids,
+  hydrated,
+}: {
+  ids: string[];
+  hydrated: boolean;
+}) {
+  return (
+    <FavoriteWorks
+      ids={ids}
+      hydrated={hydrated}
+      heading="Shelf"
+      empty="Nothing here yet. Open a book and tap Shelf."
+      sectionId="shelf"
+    />
+  );
+}
+
 export function YourLines({
   progress,
   favorites,
@@ -84,8 +102,8 @@ export function YourLines({
         hydrated={hydrated}
         preview
         rail
-        heading="Favorites"
-        empty="Heart a work while reading — it will live here."
+        heading="Shelf"
+        empty="Nothing here yet. Open a book and tap Shelf."
       />
       <KeptSentences
         progress={progress}

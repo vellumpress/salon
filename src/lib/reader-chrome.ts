@@ -1,5 +1,5 @@
 /**
- * Solo reader bottom bar: Keep, heart, Send, kept-sentence squares.
+ * Solo reader bottom bar: Keep, shelf, Send, kept-sentence squares.
  *
  * `still` is the immersive state — the bar is hidden. Page and breath taps
  * must never open it. Only the hourglass toggles it. A tap outside closes

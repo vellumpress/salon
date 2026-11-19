@@ -47,6 +47,7 @@ import {
   toggleKeptList,
   type KeptStored,
 } from "./kept-lines.ts";
+import { toggleShelfId } from "./shelf-list.ts";
 import { canonicalWorkId, remapAliasedWorkIds } from "./work-id-alias.ts";
 import { noteUserMove, readUserMove, tapAllowsWrite, tapOwnsVisit } from "./place-guard.ts";
 import { REBOUND_FROM_COUNT, type PlaceStamp } from "./rebind-guard.ts";
@@ -770,16 +771,7 @@ export const useTbr = create<TbrState>()(
           return { clubInvites: { ...clubInvites, [clubId]: token } };
         }),
       toggleFavorite: (workId) => {
-        const id = canonicalWorkId(workId);
-        if (isDeviceImport(id)) return;
-        set((state) => {
-          const favorites = (state.favorites ?? []).map(canonicalWorkId);
-          return {
-            favorites: favorites.includes(id)
-              ? favorites.filter((item) => item !== id)
-              : [...favorites, id],
-          };
-        });
+        set((state) => ({ favorites: toggleShelfId(state.favorites, workId) }));
       },
       setFavorites: (favorites) =>
         set({

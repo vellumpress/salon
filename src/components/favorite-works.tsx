@@ -37,7 +37,7 @@ export function FavoriteWorks({
       </CollectionHeader>
       {!hydrated ? (
         <p className="border-b border-ink px-4 py-5 font-serif text-sm text-ink/70">
-          Works you heart wait here.
+          Your shelf will show here.
         </p>
       ) : shown.length === 0 ? (
         <p className="border-b border-ink px-4 py-5 font-serif text-lg text-ink/80">
