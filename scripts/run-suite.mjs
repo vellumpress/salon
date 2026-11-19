@@ -35,6 +35,7 @@ export const smokeFiles = [
   "src/lib/catalog/merge-stop-layout.test.ts",
   "src/lib/wash-seam.test.ts",
   "src/lib/together-bond.e2e.test.ts",
+  "src/lib/shelf.e2e.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -86,6 +87,7 @@ export const allTsFiles = [
   "src/lib/library-sync.test.ts",
   "src/lib/place-guard.test.ts",
   "src/lib/favorites.test.ts",
+  "src/lib/shelf-list.test.ts",
   "src/lib/auth/gate-identity.test.ts",
   "src/lib/auth/start-cookie-options.test.ts",
   "src/lib/recommend.test.ts",
@@ -157,6 +159,7 @@ export const allTsFiles = [
   "src/lib/quote-unfurl.test.ts",
   "src/lib/streak-notify.test.ts",
   "src/lib/home-screen-hint.test.ts",
+  "src/lib/shelf.e2e.test.ts",
 ];
 
 const smokeSet = new Set(smokeFiles);

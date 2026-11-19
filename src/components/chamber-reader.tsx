@@ -2780,6 +2780,9 @@ export function TbrReader({
                 </p>
                 <PlaceChip workId={work.id} tone="accent" className="mt-2" />
                 <h1 className="veil-title">{nightChrome || work.title}</h1>
+                {device ? null : (
+                  <FavoriteMark workId={work.id} className="mt-4 border border-ink" />
+                )}
                 {intro ? (
                   <FittedCopy text={intro} className="veil-note veil-preface-note" />
                 ) : null}

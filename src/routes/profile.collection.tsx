@@ -44,15 +44,15 @@ function CollectionPage() {
             Collection
           </p>
           <p className="mt-3 max-w-xl font-serif text-lg text-paper/70">
-            Books you heart. Lines you keep. A private shelf.
+            Books on your shelf. Lines you keep.
           </p>
         </div>
 
         <FavoriteWorks
           ids={favorites}
           hydrated={hydrated}
-          heading="Books"
-          empty="Heart a work while reading — it will live here."
+          heading="Shelf"
+          empty="Nothing here yet. Open a book and tap Shelf."
           sectionId="books"
         />
 

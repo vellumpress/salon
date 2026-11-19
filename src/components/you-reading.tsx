@@ -21,6 +21,9 @@ const LineOfDay = lazy(() =>
 const YourLines = lazy(() =>
   import("@/components/you-kept").then((mod) => ({ default: mod.YourLines })),
 );
+const ShelfList = lazy(() =>
+  import("@/components/you-kept").then((mod) => ({ default: mod.ShelfList })),
+);
 
 class LinesBoundary extends Component<{ children: ReactNode; fallback: ReactNode }, { failed: boolean }> {
   state = { failed: false };
@@ -104,7 +107,7 @@ const ABOUT: Record<ContributorId, { evidence: string; about: string; why: strin
   },
 };
 
-type View = "today" | "trends" | "lines" | "settings" | "calc";
+type View = "today" | "trends" | "shelf" | "lines" | "settings" | "calc";
 type TrendSpan = "week" | "month" | "year";
 
 /**
@@ -244,6 +247,12 @@ export function YouReading({
                 onOpen={setDetail}
                 end={trendsEnd}
               />
+            ) : view === "shelf" ? (
+              <LinesBoundary fallback={<LinesFallback kicker="Shelf" />}>
+                <Suspense fallback={<LinesFallback kicker="Shelf" />}>
+                  <ShelfList ids={favorites} hydrated={hydrated} />
+                </Suspense>
+              </LinesBoundary>
             ) : view === "lines" ? (
               <LinesBoundary fallback={<LinesFallback kicker="Your lines" />}>
                 <Suspense fallback={<LinesFallback kicker="Your lines" />}>
@@ -276,8 +285,9 @@ export function YouReading({
 function YouNav({ view, onView }: { view: View; onView: (view: View) => void }) {
   const tabs: { id: View; label: string }[] = [
     { id: "today", label: "Today" },
+    { id: "shelf", label: "Shelf" },
     { id: "trends", label: "Trends" },
-    { id: "lines", label: "Your lines" },
+    { id: "lines", label: "Lines" },
   ];
   return (
     <nav className="flex border-b border-ink" aria-label="You">
