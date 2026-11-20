@@ -30,6 +30,26 @@ const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "../..");
 const TAPS = 500;
 const RUNS = Math.max(1, Number(process.env.STRESS_RUNS ?? 10));
 
+/**
+ * The ten runs share one job. A slow night used the whole half hour, then the
+ * browser kept the process up until the runner cancelled the job. A shard such
+ * as `1/2` owns the even runs and `2/2` the odd ones, so each job still steps
+ * the same books and the same taps. Odd runs stay the WebKit runs.
+ */
+export function stressRunIndexes(runs: number, shard: string | undefined): number[] {
+  const total = Math.max(0, Math.floor(runs));
+  const all = Array.from({ length: total }, (_, index) => index);
+  const raw = (shard ?? "").trim();
+  if (!raw) return all;
+  const match = /^(\d+)\/(\d+)$/.exec(raw);
+  const index = match ? Number(match[1]) : 0;
+  const parts = match ? Number(match[2]) : 0;
+  if (!match || parts < 1 || index < 1 || index > parts) {
+    throw new Error(`STRESS_SHARD must look like 1/2, got ${raw}`);
+  }
+  return all.filter((run) => run % parts === index - 1);
+}
+
 const CHROME_CANDIDATES = [
   "/opt/google/chrome/chrome",
   "/usr/bin/google-chrome",
@@ -814,6 +834,23 @@ async function importPdf(page: Page) {
   throw last;
 }
 
+test("stress shard keeps every run and leaves odd runs for WebKit", () => {
+  assert.deepEqual(stressRunIndexes(10, undefined), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  assert.deepEqual(stressRunIndexes(10, ""), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  const even = stressRunIndexes(10, "1/2");
+  const odd = stressRunIndexes(10, "2/2");
+  assert.deepEqual(even, [0, 2, 4, 6, 8]);
+  assert.deepEqual(odd, [1, 3, 5, 7, 9]);
+  assert.deepEqual(
+    [...even, ...odd].sort((a, b) => a - b),
+    stressRunIndexes(10, undefined),
+  );
+  assert.ok(odd.every((run) => run % 2 === 1));
+  assert.throws(() => stressRunIndexes(10, "0/2"), /STRESS_SHARD/);
+  assert.throws(() => stressRunIndexes(10, "3/2"), /STRESS_SHARD/);
+  assert.throws(() => stressRunIndexes(10, "both"), /STRESS_SHARD/);
+});
+
 test(
   "five hundred mixed taps step exactly one sentence, ten runs",
   {
@@ -828,9 +865,13 @@ test(
     try {
       const ids = catalogIds();
       assert.ok(ids.length > 1000, "catalog ids missing");
-      for (let run = 0; run < RUNS; run += 1) {
+      const runs = stressRunIndexes(RUNS, process.env.STRESS_SHARD);
+      assert.ok(runs.length > 0, `stress shard ${process.env.STRESS_SHARD ?? "all"} owns no runs`);
+      console.log(`stress shard ${process.env.STRESS_SHARD || "all"} runs ${runs.join(",")}`);
+      for (const run of runs) {
         const engine = wk && run % 2 === 1 ? wk : browser;
         const name = wk && run % 2 === 1 ? "webkit" : "chromium";
+        console.log(`stress run ${run + 1}/${RUNS} ${name} start`);
         let page = await phone(engine);
         await safeArea(page);
         const random = rng(1000 + run);
@@ -913,6 +954,7 @@ test(
         assert.ok(backTop < 4, `${name} run ${run} pdf back stopped partway through the long sentence`);
         await mix(page, "page", pdfIndex, 8, 9000 + run, `${name} run ${run} pdf`, pdfLength);
         await page.close();
+        console.log(`stress run ${run + 1}/${RUNS} ${name} done`);
       }
     } finally {
       await browser.close();
