@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type ReactNode, type TouchEvent as ReactTouchEvent } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type TouchEvent as ReactTouchEvent } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { adoptFrameIndex, bootShouldKeepPlace, firstPaintIndex, pendingLinkAt, savedSentenceAt } from "@/lib/deep-link-breath";
@@ -113,53 +113,30 @@ type Overlay =
 
 const LOOKBACK = 12;
 
+/**
+ * Every sentence is painted the same. The fixed bands, not these nodes,
+ * decide what is faded, sharp, or washed. `markFocus` is off on the blur
+ * mirror so the document only has one current sentence.
+ */
 function PassagePieces({
   pieces,
   focusIndex,
+  markFocus = true,
 }: {
   pieces: readonly SpotlightMark[];
   focusIndex: number;
+  markFocus?: boolean;
 }) {
-  const nodes: ReactNode[] = [];
-  let run: { text: string; pi: number }[] = [];
-  const flush = () => {
-    if (run.length === 0) return;
-    const ahead = run;
-    run = [];
-    nodes.push(
-      <span key={`ahead-${ahead[0]!.pi}`} className="ahead-run">
-        <span className="ahead-shade" aria-hidden="true" />
-        {ahead.map((piece) => (
-          <span
-            key={piece.pi}
-            className="breath-sentence is-ahead"
-            data-sentence-index={`ahead-${piece.pi}`}
-          >
-            <EmphasizedText text={piece.text} />
-          </span>
-        ))}
-      </span>,
-    );
-  };
-  pieces.forEach((piece, pi) => {
-    if (piece.role === "ahead") {
-      run.push({ text: piece.text, pi });
-      return;
-    }
-    flush();
-    nodes.push(
-      <span
-        key={pi}
-        className={cn("breath-sentence", piece.role === "past" && "is-past")}
-        data-sentence-index={piece.role === "focus" ? focusIndex : `${piece.role}-${pi}`}
-        data-focus-sentence={piece.role === "focus" ? "" : undefined}
-      >
-        <EmphasizedText text={piece.text} />
-      </span>,
-    );
-  });
-  flush();
-  return nodes;
+  return pieces.map((piece, pi) => (
+    <span
+      key={pi}
+      className="breath-sentence"
+      data-sentence-index={piece.role === "focus" ? focusIndex : `${piece.role}-${pi}`}
+      data-focus-sentence={markFocus && piece.role === "focus" ? "" : undefined}
+    >
+      <EmphasizedText text={piece.text} />
+    </span>
+  ));
 }
 
 function EmphasizedText({ text }: { text: string }) {
@@ -348,8 +325,9 @@ export function TbrReader({
   const lookbackSlotRef = useRef<HTMLDivElement>(null);
   const readingPaneRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
-  const topPadRef = useRef<HTMLDivElement>(null);
-  const bottomPadRef = useRef<HTMLDivElement>(null);
+  const blurHostRef = useRef<HTMLDivElement>(null);
+  const blurRootRef = useRef<ShadowRoot | null>(null);
+  const blurSigRef = useRef("");
   const upcomingSlotRef = useRef<HTMLDivElement>(null);
   const placedIndex = useRef<{ index: number; cursor: number; window: number } | null>(null);
   /**
@@ -1439,6 +1417,8 @@ export function TbrReader({
       // Every sentence opens on its first line. The index in the store is
       // where we are; scroll position is not another sentence.
       slot.scrollTop = 0;
+      const mirrorSlot = blurRootRef.current?.querySelector<HTMLElement>(".breath-slot");
+      if (mirrorSlot) mirrorSlot.scrollTop = 0;
     };
     const rememberZone = (tall: boolean) => {
       const host = turnHostRef.current;
@@ -1495,11 +1475,65 @@ export function TbrReader({
     let holdMotionUntil = 0;
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+    const shadowCss = () => {
+      const parts: string[] = [];
+      for (const sheet of document.styleSheets) {
+        try {
+          for (const rule of sheet.cssRules) parts.push(rule.cssText);
+        } catch {
+          /* a cross-origin sheet is not the reader */
+        }
+      }
+      return parts.join("\n");
+    };
+
+    const ensureBlurMirror = () => {
+      const host = blurHostRef.current;
+      const source = trackRef.current;
+      if (!host || !source) return null;
+      if (!blurRootRef.current || blurRootRef.current.host !== host) {
+        blurRootRef.current = host.attachShadow({ mode: "closed" });
+        const style = document.createElement("style");
+        style.dataset.focusStyles = "1";
+        style.textContent = shadowCss();
+        blurRootRef.current.appendChild(style);
+        blurSigRef.current = "";
+      }
+      const root = blurRootRef.current;
+      const sig = source.innerHTML;
+      let clone = root.querySelector<HTMLElement>(".center-track");
+      if (!clone || blurSigRef.current !== sig) {
+        const next = source.cloneNode(true) as HTMLElement;
+        next.classList.add("focus-blur-track");
+        for (const node of next.querySelectorAll("[data-focus-sentence]")) {
+          node.removeAttribute("data-focus-sentence");
+        }
+        if (clone) clone.replaceWith(next);
+        else root.appendChild(next);
+        clone = next;
+        blurSigRef.current = sig;
+      }
+      host.dataset.mirrorFilter = getComputedStyle(clone).filter;
+      return clone;
+    };
+
+    const paintTracks = (transform: string, transition: string | null, ready: string | null) => {
+      const mirror = ensureBlurMirror();
+      const nodes = [track, mirror].filter((node): node is HTMLElement => Boolean(node));
+      for (const node of nodes) {
+        if (reduceMotion) node.style.transition = "none";
+        else if (transition != null) node.style.transition = transition;
+        if (ready != null) node.dataset.ready = ready;
+        node.style.transform = transform;
+      }
+      const liveSlot = breathSlotRef.current;
+      const mirrorSlot = mirror?.querySelector<HTMLElement>(".breath-slot");
+      if (liveSlot && mirrorSlot) mirrorSlot.scrollTop = liveSlot.scrollTop;
+    };
+
     const place = (animate: boolean) => {
       if (!live) return;
       const line = slot.querySelector<HTMLElement>(".breath-now");
-      const topPad = topPadRef.current;
-      const bottomPad = bottomPadRef.current;
       if (!line) return;
       const height = pane.clientHeight;
       const host = turnHostRef.current;
@@ -1521,26 +1555,25 @@ export function TbrReader({
       const unionHeight = unionBottom > unionTop ? unionBottom - unionTop : 0;
       const focus = focuses[0] ?? null;
       const alone = line.querySelectorAll("[data-sentence-index]").length <= 1;
-      // A split passage centers the lit lines, not the middle of the stack.
-      // Only a breath that is still one unwindowed block scrolls.
+      // A split passage centers the current sentence, not the middle of the stack.
+      // Only a breath that is still one unwindowed block scrolls inside the slot.
+      // The three bands stay put either way.
       const tooTall = alone && breathTooTall(line.scrollHeight, readingHeight || height);
-      const look = lookbackSlotRef.current;
-      const ahead = upcomingSlotRef.current;
-      if (tooTall) {
-        if (topPad) topPad.style.height = "0px";
-        if (bottomPad) bottomPad.style.height = "0px";
-        slot.style.maxHeight = `${Math.floor(height)}px`;
-        slot.style.overflowY = "auto";
-        if (look) look.style.display = "none";
-        if (ahead) ahead.style.display = "none";
-      } else {
-        if (topPad) topPad.style.height = `${anchorPx}px`;
-        if (bottomPad) bottomPad.style.height = `${Math.max(0, height - anchorPx)}px`;
-        slot.style.maxHeight = "";
-        slot.style.overflowY = "";
-        if (look) look.style.display = "";
-        if (ahead) ahead.style.display = "";
-        if (look) void look.offsetHeight;
+      pane.dataset.focusTall = tooTall ? "1" : "0";
+      pane.style.setProperty("--focus-pad-top", tooTall ? "0px" : `${anchorPx}px`);
+      pane.style.setProperty("--focus-pad-bottom", tooTall ? "0px" : `${Math.max(0, height - anchorPx)}px`);
+      if (tooTall) pane.style.setProperty("--focus-slot-max", `${Math.floor(height)}px`);
+      else pane.style.removeProperty("--focus-slot-max");
+      const mirror = ensureBlurMirror();
+      if (mirror) {
+        for (const node of mirror.querySelectorAll<HTMLElement>(".lookback-slot, .upcoming-fold")) {
+          node.style.display = tooTall ? "none" : "";
+        }
+        const mirrorSlot = mirror.querySelector<HTMLElement>(".breath-slot");
+        if (mirrorSlot) {
+          mirrorSlot.style.maxHeight = tooTall ? `${Math.floor(height)}px` : "";
+          mirrorSlot.style.overflowY = tooTall ? "auto" : "";
+        }
       }
       landScroll();
 
@@ -1571,10 +1604,9 @@ export function TbrReader({
       // side is the left third at every height, so a sliding sentence cannot
       // move that side.
       const previousTransition = track.style.transition;
-      track.style.transition = "none";
-      track.dataset.ready = "0";
-      track.style.transform = `translate3d(0, ${shift}px, 0)`;
+      paintTracks(`translate3d(0, ${shift}px, 0)`, "none", "0");
       void track.offsetHeight;
+      const ahead = upcomingSlotRef.current;
       const aheadLine = ahead?.querySelector<HTMLElement>(".look-line");
       const landed = [...line.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
       let landedTop = Infinity;
@@ -1606,18 +1638,21 @@ export function TbrReader({
         // travels in view.
         holdMotionUntil = performance.now() + 320;
         slidingUntilRef.current = holdMotionUntil;
-        track.style.transform = `translate3d(0, ${shift + travel}px, 0)`;
+        paintTracks(`translate3d(0, ${shift + travel}px, 0)`, "none", "0");
         void track.offsetHeight;
-        track.style.transition = previousTransition;
-        track.dataset.ready = "1";
+        // Arm the ease while the column is still one step low, then move.
+        paintTracks(`translate3d(0, ${shift + travel}px, 0)`, previousTransition, "1");
         void track.offsetHeight;
-        track.style.transform = `translate3d(0, ${shift}px, 0)`;
+        paintTracks(`translate3d(0, ${shift}px, 0)`, null, null);
       } else {
         slidingUntilRef.current = 0;
-        track.style.transition = previousTransition;
+        paintTracks(`translate3d(0, ${shift}px, 0)`, previousTransition, reduceMotion ? "0" : null);
         if (!reduceMotion) {
           requestAnimationFrame(() => {
-            if (live && track.isConnected) track.dataset.ready = "1";
+            if (!live || !track.isConnected) return;
+            track.dataset.ready = "1";
+            const mirror = blurRootRef.current?.querySelector<HTMLElement>(".center-track");
+            if (mirror) mirror.dataset.ready = "1";
           });
         }
       }
@@ -1642,6 +1677,8 @@ export function TbrReader({
       if (!live) return;
       const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
       setAtEnd((prev) => (prev === end ? prev : end));
+      const mirrorSlot = blurRootRef.current?.querySelector<HTMLElement>(".breath-slot");
+      if (mirrorSlot && mirrorSlot.scrollTop !== slot.scrollTop) mirrorSlot.scrollTop = slot.scrollTop;
     };
     slot.addEventListener("scroll", onScroll, { passive: true });
     const ro = new ResizeObserver(() => {
@@ -1682,36 +1719,6 @@ export function TbrReader({
       slot.removeEventListener("scroll", onScroll);
     };
   }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey]);
-
-  useLayoutEffect(() => {
-    const host = breathLineRef.current;
-    if (!host) return;
-    let live = true;
-    const placeShades = () => {
-      if (!live) return;
-      for (const run of host.querySelectorAll<HTMLElement>(".ahead-run")) {
-        const shade = run.querySelector<HTMLElement>(".ahead-shade");
-        if (!shade) continue;
-        const rects = run.getClientRects();
-        if (rects.length === 0) continue;
-        let top = rects[0]!.top;
-        let bottom = rects[0]!.bottom;
-        for (const rect of rects) {
-          if (rect.top < top) top = rect.top;
-          if (rect.bottom > bottom) bottom = rect.bottom;
-        }
-        shade.style.top = "0px";
-        shade.style.height = `${Math.max(0, bottom - top)}px`;
-      }
-    };
-    placeShades();
-    const ro = new ResizeObserver(placeShades);
-    ro.observe(host);
-    return () => {
-      live = false;
-      ro.disconnect();
-    };
-  }, [index, cursor, spotWindow, breath?.text, display.faceReady, display.metricsKey, centerOn]);
 
   const durationMs = sittingMinutes > 0 ? sittingMinutes * 60 * 1000 : 0;
   const endsAt =
@@ -1820,15 +1827,12 @@ export function TbrReader({
     const at = work.breaths.indexOf(item);
     return at > groupEnd;
   });
-  const readLines = shownLookback.flatMap((item, i) => {
-    const last = shownLookback.length - 1;
-    const opacity = last <= 0 ? 0.38 : 0.1 + (i / last) * 0.4;
+  const readLines = shownLookback.flatMap((item) => {
     const sentence = work.breaths.indexOf(item);
     return display.blocksFor(item.text).map((block, bi) => (
       <p
         key={`${item.id}-${bi}`}
         className="look-line text-ink"
-        style={{ opacity }}
         data-sentence={sentence >= 0 ? sentence : undefined}
         data-block-sentences={block.sentences}
       >
@@ -1877,68 +1881,28 @@ export function TbrReader({
               <EmphasizedText text={line} />
             </p>
           ))
-        : (() => {
-            const nodes: ReactNode[] = [];
-            const ahead: ReactNode[] = [];
-            const flushAhead = () => {
-              if (ahead.length === 0) return;
-              const blocks = ahead.splice(0, ahead.length);
-              nodes.push(
-                <div key={`ahead-${nodes.length}`} className="passage-ahead">
-                  <div className="passage-ahead-body">{blocks}</div>
-                  <div className="passage-ahead-blur" aria-hidden />
-                  <div className="passage-ahead-shade" aria-hidden />
-                </div>,
+        : passage.map((breathIndex) => {
+            const item = work.breaths[breathIndex];
+            if (!item) return null;
+            const blocks = display.blocksFor(item.text);
+            const part = group?.parts.find((row) => row.index === breathIndex);
+            const range = part
+              ? { start: part.start, end: part.end }
+              : { start: 0, end: item.text.length };
+            const marked = markSpotlight(item.text, blocks, range, displayKind);
+            return blocks.map((block, bi) => {
+              const pieces = marked[bi] ?? [{ text: block.text, role: "focus" as const }];
+              return (
+                <p
+                  key={`${breathIndex}-${bi}`}
+                  className="breath-block"
+                  data-block-sentences={block.sentences}
+                >
+                  <PassagePieces pieces={pieces} focusIndex={atSentence} />
+                </p>
               );
-            };
-            for (const breathIndex of passage) {
-              const item = work.breaths[breathIndex];
-              if (!item) continue;
-              const blocks = display.blocksFor(item.text);
-              const part = group?.parts.find((row) => row.index === breathIndex);
-              const range = part
-                ? { start: part.start, end: part.end }
-                : { start: 0, end: item.text.length };
-              const marked = markSpotlight(item.text, blocks, range, displayKind);
-              blocks.forEach((block, bi) => {
-                const pieces = marked[bi] ?? [{ text: block.text, role: "focus" as const }];
-                const onlyAhead = pieces.length > 0 && pieces.every((piece) => piece.role === "ahead");
-                const blockNode = (
-                  <p
-                    key={`${breathIndex}-${bi}`}
-                    className="breath-block"
-                    data-block-sentences={block.sentences}
-                  >
-                    {onlyAhead ? (
-                      pieces.map((piece, pi) => (
-                        <span
-                          key={pi}
-                          className={cn(
-                            "breath-sentence",
-                            piece.role === "past" && "is-past",
-                            piece.role === "ahead" && "is-ahead",
-                          )}
-                          data-sentence-index={piece.role === "focus" ? atSentence : `${piece.role}-${pi}`}
-                          data-focus-sentence={piece.role === "focus" ? "" : undefined}
-                        >
-                          <EmphasizedText text={piece.text} />
-                        </span>
-                      ))
-                    ) : (
-                      <PassagePieces pieces={pieces} focusIndex={atSentence} />
-                    )}
-                  </p>
-                );
-                if (onlyAhead) ahead.push(blockNode);
-                else {
-                  flushAhead();
-                  nodes.push(blockNode);
-                }
-              });
-            }
-            flushAhead();
-            return nodes;
-          })()}
+            });
+          })}
     </div>
   );
   const breathClass = cn("breath-slot", overflows && "overflows", atEnd && "at-end");
@@ -2255,6 +2219,8 @@ export function TbrReader({
       start.scrollTop = slot.scrollTop;
     }
     slot.scrollTop = start.scrollTop - (e.clientY - start.y);
+    const mirrorSlot = blurRootRef.current?.querySelector<HTMLElement>(".breath-slot");
+    if (mirrorSlot) mirrorSlot.scrollTop = slot.scrollTop;
     if (e.cancelable) e.preventDefault();
   }
 
@@ -2409,25 +2375,34 @@ export function TbrReader({
       >
         {showPalimpsest ? <p className="palimpsest font-display">{palimpsest}</p> : null}
         {centerOn ? (
-          <div ref={trackRef} className="center-track">
-            <div ref={topPadRef} className="center-pad" aria-hidden />
-            <div className="center-lines">
-              <div ref={lookbackSlotRef} className="lookback-slot" aria-hidden>
-                {readLines}
-              </div>
-              <div ref={breathSlotRef} className={breathClass}>
-                {currentLine}
-              </div>
-              <div className="upcoming-fold" aria-hidden>
-                <div ref={upcomingSlotRef} className="upcoming-slot">
-                  {previewLines("near")}
+          <>
+            <div className="focus-live">
+              <div ref={trackRef} className="center-track">
+                <div className="center-pad center-pad-top" aria-hidden />
+                <div className="center-lines">
+                  <div ref={lookbackSlotRef} className="lookback-slot" aria-hidden>
+                    {readLines}
+                  </div>
+                  <div ref={breathSlotRef} className={breathClass}>
+                    {currentLine}
+                  </div>
+                  <div className="upcoming-fold" aria-hidden>
+                    <div ref={upcomingSlotRef} className="upcoming-slot">
+                      {previewLines("near")}
+                    </div>
+                  </div>
                 </div>
-                <div className="upcoming-far">{previewLines("far")}</div>
-                <div className="upcoming-shade" />
+                <div className="center-pad center-pad-bottom" aria-hidden />
               </div>
             </div>
-            <div ref={bottomPadRef} className="center-pad" aria-hidden />
-          </div>
+            <div ref={blurHostRef} className="focus-blur-clip" aria-hidden="true" />
+            <div className="focus-wash" aria-hidden="true" />
+            <div className="focus-bands" aria-hidden="true">
+              <div className="focus-band focus-band-read" data-focus-band="read" />
+              <div className="focus-band focus-band-now" data-focus-band="now" />
+              <div className="focus-band focus-band-next" data-focus-band="next" />
+            </div>
+          </>
         ) : (
           /* bottom-anchor */
           <>
