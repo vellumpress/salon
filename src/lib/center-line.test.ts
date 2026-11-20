@@ -8,6 +8,7 @@ import {
   breathTooTall,
   centerLineOffset,
   focusAnchorPx,
+  focusBands,
   readCenterLineEnabled,
   upcomingBreaths,
   writeCenterLineEnabled,
@@ -100,6 +101,38 @@ test("a top lead keeps the focus in the same place inside the reading area", () 
   assert.equal(focusAnchorPx(100, 40, CENTER_LINE_ANCHOR, -10), 60 * CENTER_LINE_ANCHOR);
 });
 
+test("the sharp band is the middle third below the status bar and does not change ratio", () => {
+  const screen = 844;
+  const lead = 48 + 1 + 47;
+  const overlap = 48 + 34;
+  const bands = focusBands(screen, lead);
+  const anchor = focusAnchorPx(screen, overlap, CENTER_LINE_ANCHOR, lead);
+  assert.ok(anchor > bands.now.top && anchor < bands.now.bottom, `anchor ${anchor} left the sharp band`);
+  const start = bands.now.top / screen;
+  const end = bands.now.bottom / screen;
+  assert.ok(start > 0.39 && start < 0.46, `sharp band starts at ${start}`);
+  assert.ok(end > 0.67 && end < 0.74, `sharp band ends at ${end}`);
+  assert.equal(bands.read.top, lead);
+  assert.equal(bands.next.bottom, screen);
+  assert.equal(bands.read.bottom, bands.now.top);
+  assert.equal(bands.now.bottom, bands.next.top);
+  for (const height of [640, 800, 956, 1200]) {
+    const next = focusBands(height, lead);
+    const third = (height - lead) / 3;
+    assert.ok(Math.abs(next.read.bottom - next.read.top - third) < 1e-9);
+    assert.ok(Math.abs(next.now.bottom - next.now.top - third) < 1e-9);
+    assert.ok(Math.abs(next.next.bottom - next.next.top - third) < 1e-9);
+  }
+  assert.deepEqual(focusBands(0, 40), {
+    read: { top: 0, bottom: 0 },
+    now: { top: 0, bottom: 0 },
+    next: { top: 0, bottom: 0 },
+  });
+  assert.equal(focusBands(100, 400).read.top, 100);
+  assert.equal(focusBands(100, Number.NaN).read.top, 0);
+  assert.equal(focusBands(Number.NaN, 10).now.bottom, 0);
+});
+
 test("upcoming window fills a tall phone below the focus, including the hourglass", () => {
   const phone = 956;
   const header = 48;
@@ -183,35 +216,63 @@ test("a long book only walks the upcoming window", () => {
   assert.ok(elapsed < 30, `window took ${elapsed}ms`);
 });
 
-test("text after the passage is blurred and washed out, and the focus line stays sharp", () => {
+test("three fixed bands fade the top, keep the middle sharp, and wash the bottom", () => {
   const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
-  const slot = css.match(/\.upcoming-slot,\s*\n\.passage-ahead-body\s*\{[^}]+\}/)?.[0] ?? "";
-  assert.match(slot, /filter:\s*blur\(8px\)/);
-  assert.doesNotMatch(slot, /\.breath-now|\.look-line/);
-  assert.match(css, /\.upcoming-far\s*\{[^}]*display:\s*none/);
-  assert.match(css, /\.passage-ahead-blur\s*\{[^}]*display:\s*none/);
-  assert.doesNotMatch(css, /backdrop-filter:\s*blur/);
+  const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
+  const live = css.match(/\.focus-live\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(live, /position:\s*absolute/);
+  assert.match(live, /rgb\(0 0 0 \/ 0\.5\)/);
+  assert.match(live, /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \/ 3\)/);
   assert.match(
-    css,
-    /\.upcoming-shade,\s*\n\.passage-ahead-shade\s*\{[^}]*background:\s*color-mix\(in srgb, var\(--reader-bg\) 50%, transparent\)/,
+    live,
+    /transparent calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3\)/,
   );
-  const fold = css.match(/\.upcoming-fold,\s*\n\.passage-ahead\s*\{[^}]+\}/)?.[0] ?? "";
-  assert.match(fold, /margin-inline:\s*calc\(var\(--column-pad\) \* -1\)/);
-  assert.match(fold, /mask-image:\s*linear-gradient/);
-  const ahead = css.match(/\.breath-sentence\.is-ahead\s*\{[^}]+\}/)?.[0] ?? "";
-  assert.match(ahead, /filter:\s*blur\(8px\)/);
-  assert.doesNotMatch(ahead, /background|box-decoration-break/);
+  assert.doesNotMatch(live, /border|box-shadow/);
+  const now = css.match(/\.focus-band-now\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(now, /height:\s*calc\(\(100% - var\(--focus-lead\)\) \/ 3\)/);
+  assert.match(now, /top:\s*calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \/ 3\)/);
+  const read = css.match(/\.focus-band-read\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(read, /top:\s*var\(--focus-lead\)/);
+  assert.match(read, /height:\s*calc\(\(100% - var\(--focus-lead\)\) \/ 3\)/);
+  const next = css.match(/\.focus-band-next\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(next, /top:\s*calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3\)/);
+  assert.match(next, /bottom:\s*0/);
+  const band = css.match(/\.focus-band\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(band, /background:\s*none/);
+  assert.match(band, /border:\s*0/);
+  assert.match(band, /box-shadow:\s*none/);
+  assert.doesNotMatch(css, /backdrop-filter:\s*blur/);
+  const blur = css.match(/\.focus-blur-track\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(blur, /filter:\s*blur\(8px\)/);
+  assert.doesNotMatch(blur, /\.breath-now|\.look-line|\.breath-sentence/);
+  const wash = css.match(/\.focus-wash\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(wash, /left:\s*0/);
+  assert.match(wash, /right:\s*0/);
+  assert.match(wash, /border:\s*0/);
+  assert.match(wash, /box-shadow:\s*none/);
+  assert.match(
+    wash,
+    /color-mix\(in srgb, var\(--reader-bg\) 50%, transparent\) var\(--focus-fade\)/,
+  );
+  const slot = css.match(/\.upcoming-slot\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(slot, /filter:\s*none/);
+  assert.doesNotMatch(css, /\.breath-sentence\.is-ahead|\.breath-sentence\.is-past|passage-ahead|ahead-shade/);
+  const sentence = css.match(/\.breath-sentence\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(sentence, /opacity:\s*1/);
+  assert.match(sentence, /filter:\s*none/);
   const breath = css.match(/\.look-line,\s*\n\.breath-now\s*\{[^}]+\}/)?.[0] ?? "";
   assert.ok(breath.length > 0, "focus line rule missing");
   assert.doesNotMatch(breath, /blur|filter/);
-  assert.match(css, /\.breath-sentence\.is-past\s*\{[^}]*opacity:\s*0\.5/);
   const transparent = css.slice(css.indexOf("@media (prefers-reduced-transparency: reduce)"));
-  assert.match(transparent, /\.upcoming-slot,\s*\n\s*\.passage-ahead-body\s*\{[^}]*filter:\s*none/);
-  assert.match(transparent, /\.upcoming-shade/);
-  assert.match(transparent, /\.breath-sentence\.is-ahead\s*\{[^}]*filter:\s*none/);
+  assert.match(transparent, /\.focus-blur-track\s*\{[^}]*filter:\s*none/);
+  assert.match(transparent, /\.focus-wash\s*\{[^}]*background:\s*var\(--reader-bg\)/);
   const motion = css.slice(css.lastIndexOf("@media (prefers-reduced-motion: reduce)"));
   assert.match(motion, /\.reader-frame \*/);
+  assert.match(motion, /\.focus-blur-track/);
   assert.match(motion, /transition:\s*none\s*!important/);
+  assert.match(reader, /data-focus-band="now"/);
+  assert.match(reader, /focus-blur-clip/);
+  assert.doesNotMatch(reader, /is-ahead|is-past|passage-ahead|ahead-shade/);
 });
 
 test("the hourglass sheet toggles Center the line next to Daylight colors", () => {

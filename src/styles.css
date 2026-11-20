@@ -2118,45 +2118,12 @@ html:has(.board-doors) body {
   hyphens: manual;
 }
 
-.breath-sentence.is-past {
-  opacity: 0.5;
-}
-
-/* The lit words and the lines already read stay above the wash. */
-.breath-now .breath-sentence:not(.is-ahead) {
-  position: relative;
-  z-index: 2;
-}
-
-/* Text still ahead inside the lit breath. Blur keeps the words as shapes.
-   The wash itself is the full-width shade, not a background on the line. */
-.breath-sentence.is-ahead {
-  filter: blur(8px);
-}
-
-.passage-ahead .breath-sentence.is-ahead {
+/* Sentences are not dimmed or blurred on their own. A sentence that sits in
+   the sharp band is fully lit, including the part of a neighbor that happens
+   to fall there. The bands below do the fading and the wash. */
+.breath-sentence {
+  opacity: 1;
   filter: none;
-}
-
-.ahead-run {
-  position: relative;
-  z-index: 0;
-}
-
-.ahead-shade {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: -100vw;
-  right: -100vw;
-  height: 100%;
-  pointer-events: none;
-  /* Half the page color, fading in. The lines underneath stay soft shapes. */
-  background: linear-gradient(
-    to bottom,
-    transparent 0,
-    color-mix(in srgb, var(--reader-bg) 50%, transparent) var(--wash-fade, 1.75rem)
-  );
 }
 
 .fitted-copy {
@@ -2221,6 +2188,12 @@ html:has(.board-doors) body {
    transition under .reader-frame. */
 .reading-pane-centered {
   display: block;
+  /* Equal thirds of the pane below the status bar. 100% is the pane, whose
+     top is the screen top. The lead is the status bar plus the mark row. */
+  --focus-lead: var(--reader-top-lead, 0px);
+  --focus-fade: 1.75rem;
+  --focus-pad-top: 0px;
+  --focus-pad-bottom: 0px;
 }
 
 .reading-pane-centered .center-track {
@@ -2241,6 +2214,14 @@ html:has(.board-doors) body {
   pointer-events: none;
 }
 
+.center-pad-top {
+  height: var(--focus-pad-top, 0px);
+}
+
+.center-pad-bottom {
+  height: var(--focus-pad-bottom, 0px);
+}
+
 .center-lines {
   display: flex;
   flex-direction: column;
@@ -2255,6 +2236,12 @@ html:has(.board-doors) body {
   min-height: 0;
   padding: 0;
   gap: 0.65rem;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.reading-pane:not(.reading-pane-centered) .look-line {
+  opacity: 0.5;
 }
 
 /* The bottom-anchor rule collapses lookback while a breath scrolls.
@@ -2275,70 +2262,173 @@ html:has(.board-doors) body {
   padding: 0;
 }
 
-/* One full-width sheet. The top overlaps the lit passage and is masked
-   clear, then the wash fades in. The blur is clipped at the screen edge,
-   so the column inset is not a seam. */
-.upcoming-fold,
-.passage-ahead {
+/* Upcoming lines stay in the column. The fixed bottom band blurs them
+   once they cross it; a line still inside the sharp band stays sharp. */
+.upcoming-fold {
   position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  margin-inline: calc(var(--column-pad) * -1);
-  padding-inline: var(--column-pad);
-  margin-top: calc((var(--stack-gap) + var(--wash-clear)) * -1);
-  padding-top: calc(var(--stack-gap) + var(--wash-clear));
+  pointer-events: none;
+}
+
+.upcoming-slot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  pointer-events: none;
+  filter: none;
+}
+
+.reading-pane-centered[data-focus-tall="1"] .lookback-slot,
+.reading-pane-centered[data-focus-tall="1"] .upcoming-fold {
+  display: none;
+}
+
+.reading-pane-centered[data-focus-tall="1"] .breath-slot {
+  max-height: var(--focus-slot-max, 100%);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* The sharp column. Top third (and the status-bar lead above it) is
+   half opacity. The middle third is solid. The bottom third is clear
+   so the blur mirror shows through. Edges are a short gradient, not a rule. */
+.focus-live {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
   -webkit-mask-image: linear-gradient(
     to bottom,
-    transparent 0,
-    transparent var(--wash-clear),
-    #000 calc(var(--wash-clear) + var(--wash-fade))
+    rgb(0 0 0 / 0.5) 0,
+    rgb(0 0 0 / 0.5) calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
+    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
+    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
+    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
   );
   mask-image: linear-gradient(
     to bottom,
-    transparent 0,
-    transparent var(--wash-clear),
-    #000 calc(var(--wash-clear) + var(--wash-fade))
+    rgb(0 0 0 / 0.5) 0,
+    rgb(0 0 0 / 0.5) calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
+    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
+    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
+    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
   );
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  /* The blur can paint above the side buttons on iPhone. Hits pass through. */
-  pointer-events: none;
 }
 
-.upcoming-slot,
-.passage-ahead-body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-  margin-inline: -2.5rem;
-  padding-inline: 2.5rem;
-  pointer-events: none;
-  /* One blur for the whole run. A filter on each line re-rasterizes
-     while the track translates on iPhone Safari. The focus line sits
-     outside this box, so it stays sharp. */
-  filter: blur(8px);
-}
-
-.upcoming-shade,
-.passage-ahead-shade {
+/* One blur for the mirror of the column. The clip stays put; the text
+   inside it moves. A filter on each line re-rasterizes on iPhone. */
+.focus-blur-clip {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
+    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
+    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
+  );
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.focus-blur-track {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  width: 100%;
+  filter: blur(8px);
+  transition: none;
+}
+
+.focus-blur-track[data-ready="1"] {
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.focus-blur-track .lookback-slot {
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  overflow: visible;
+  min-height: 0;
+  padding: 0;
+  gap: 0.65rem;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.focus-blur-track .breath-slot {
+  flex: 0 0 auto;
+  max-height: none;
+  overflow: visible;
+  padding: 0;
+}
+
+.focus-blur-track .breath-slot.overflows {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.focus-wash {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  top: calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade));
+  bottom: 0;
+  pointer-events: none;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    color-mix(in srgb, var(--reader-bg) 50%, transparent) var(--focus-fade),
+    color-mix(in srgb, var(--reader-bg) 50%, transparent) 100%
+  );
+}
+
+.focus-bands {
+  position: absolute;
+  z-index: 4;
   inset: 0;
   pointer-events: none;
-  /* About half the page's own color, edge to edge. Blurred lines show
-     through as soft shapes. The sheet is the viewport, so there is no
-     column-sized patch, and the mask above keeps the top edge soft. */
-  background: color-mix(in srgb, var(--reader-bg) 50%, transparent);
 }
 
-.upcoming-far {
-  display: none;
+.focus-band {
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  background: none;
+  border: 0;
+  box-shadow: none;
 }
 
-.passage-ahead-blur {
-  display: none;
+.focus-band-read {
+  top: var(--focus-lead);
+  height: calc((100% - var(--focus-lead)) / 3);
+}
+
+.focus-band-now {
+  top: calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3);
+  height: calc((100% - var(--focus-lead)) / 3);
+}
+
+.focus-band-next {
+  top: calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3);
+  bottom: 0;
 }
 
 .reader-turn {
@@ -2416,21 +2506,15 @@ html:has(.reader-frame:not(.together-lock)) .status-bar-fill {
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  .upcoming-slot,
-  .passage-ahead-body {
+  .focus-blur-track {
     filter: none;
   }
-  .upcoming-far,
-  .passage-ahead-blur {
-    display: none;
-  }
-  .breath-sentence.is-ahead {
-    filter: none;
-  }
-  .upcoming-shade,
-  .passage-ahead-shade,
-  .ahead-shade {
+  .focus-wash {
+    background-image: none;
     background: var(--reader-bg);
+  }
+  .breath-sentence {
+    filter: none;
   }
 }
 
@@ -4282,7 +4366,8 @@ html.together-compose.together-kb .reader-daylight .chat-field {
 
 @media (prefers-reduced-motion: reduce) {
   .reader-frame,
-  .reader-frame * {
+  .reader-frame *,
+  .focus-blur-track {
     transition: none !important;
   }
 }

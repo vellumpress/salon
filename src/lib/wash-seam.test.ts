@@ -137,10 +137,16 @@ async function openReader(page: Page, when: string, path = BOOK) {
       );
       await page.waitForFunction(() => {
         const focus = document.querySelector("[data-focus-sentence]");
-        if (!focus) return false;
+        const bands = [...document.querySelectorAll<HTMLElement>("[data-focus-band]")];
+        const mirrorFilter = document.querySelector(".focus-blur-clip")?.getAttribute("data-mirror-filter") ?? "";
+        if (!focus || bands.length !== 3 || !mirrorFilter.includes("blur")) return false;
         const rects = [...focus.getClientRects()].filter((rect) => rect.width > 2 && rect.height > 2);
         if (rects.length === 0) return false;
-        return Math.min(...rects.map((rect) => rect.top)) > 240;
+        const now = document.querySelector<HTMLElement>('[data-focus-band="now"]');
+        if (!now) return false;
+        const box = now.getBoundingClientRect();
+        const mid = rects.reduce((sum, rect) => sum + rect.top + rect.height / 2, 0) / rects.length;
+        return box.height > 80 && mid > box.top && mid < box.bottom;
       }, { timeout: 15_000 });
       return;
     } catch (error) {
@@ -173,6 +179,21 @@ async function phone(browser: Browser, tint: "evening" | "night" | "off") {
   return page;
 }
 
+async function settledInBand(page: Page) {
+  await page.waitForFunction(() => {
+    const track = document.querySelector<HTMLElement>(".focus-live .center-track");
+    const now = document.querySelector("[data-focus-band='now']")?.getBoundingClientRect();
+    const focus = document.querySelector("[data-focus-sentence]");
+    if (!track || !now || !focus || track.dataset.ready !== "1") return false;
+    const rects = [...focus.getClientRects()].filter((rect) => rect.width > 2 && rect.height > 2);
+    if (rects.length === 0) return false;
+    const top = Math.min(...rects.map((rect) => rect.top));
+    const bottom = Math.max(...rects.map((rect) => rect.bottom));
+    const mid = (top + bottom) / 2;
+    return mid > now.top && mid < now.bottom;
+  }, { timeout: 8_000 });
+}
+
 async function stepTo(page: Page, snippet: string) {
   for (let n = 0; n < 6; n += 1) {
     const hit = await page.evaluate(
@@ -180,12 +201,7 @@ async function stepTo(page: Page, snippet: string) {
       snippet,
     );
     if (hit) {
-      await page.waitForFunction(() => {
-        const focus = document.querySelector("[data-focus-sentence]");
-        if (!focus) return false;
-        const rects = [...focus.getClientRects()].filter((rect) => rect.width > 2 && rect.height > 2);
-        return rects.length > 0 && Math.min(...rects.map((rect) => rect.top)) > 240;
-      }, { timeout: 10_000 });
+      await settledInBand(page);
       return;
     }
     await page.locator("[data-turn='next']").click();
@@ -197,58 +213,130 @@ async function stepTo(page: Page, snippet: string) {
   assert.ok(now.includes(snippet), `spotlight never reached “${snippet}”, saw “${now.slice(0, 80)}”`);
 }
 
-async function screenshotSeams(page: Page): Promise<WashSeam[]> {
-  const geom = await page.evaluate(() => {
-    const focus = document.querySelector("[data-focus-sentence]");
-    const rects = focus ? [...focus.getClientRects()] : [];
-    let bottom = 0;
-    for (const rect of rects) bottom = Math.max(bottom, rect.bottom);
-    const fold = document.querySelector(".upcoming-fold");
+async function bandSnapshot(page: Page) {
+  return page.evaluate(() => {
     const pane = document.querySelector(".reading-pane");
-    const breath = document.querySelector(".breath-now");
-    const foldBox = fold?.getBoundingClientRect();
     const paneBox = pane?.getBoundingClientRect();
-    const breathBox = breath?.getBoundingClientRect();
-    const upcoming = document.querySelector(".upcoming-slot .look-line");
-    const upcomingTop = upcoming?.getBoundingClientRect().top ?? null;
-    const root = document.documentElement;
+    const bands = ["read", "now", "next"].map((name) => {
+      const node = document.querySelector<HTMLElement>(`[data-focus-band="${name}"]`);
+      const box = node?.getBoundingClientRect();
+      return box
+        ? { name, top: box.top, bottom: box.bottom, left: box.left, width: box.width, height: box.height }
+        : null;
+    });
+    const focusNodes = [...document.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
+    let focusTop = Infinity;
+    let focusBottom = -Infinity;
+    for (const node of focusNodes) {
+      const box = node.getBoundingClientRect();
+      if (box.height <= 0) continue;
+      focusTop = Math.min(focusTop, box.top);
+      focusBottom = Math.max(focusBottom, box.bottom);
+    }
+    const sentences = [...document.querySelectorAll<HTMLElement>(".focus-live .breath-sentence")].map((node) => {
+      const box = node.getBoundingClientRect();
+      const style = getComputedStyle(node);
+      return {
+        top: box.top,
+        bottom: box.bottom,
+        filter: style.filter,
+        opacity: style.opacity,
+      };
+    });
+    const wash = document.querySelector(".focus-wash");
+    const washBox = wash?.getBoundingClientRect();
+    const mirrorFilter = document.querySelector(".focus-blur-clip")?.getAttribute("data-mirror-filter") ?? "";
+    const breath = document.querySelector(".focus-live .breath-now");
+    const upcoming = document.querySelector(".focus-live .upcoming-slot .look-line");
+    const glass = document.querySelector(".reader-glass");
+    const glassStyle = glass ? getComputedStyle(glass) : null;
     return {
-      bottom,
-      breathBottom: breathBox?.bottom ?? null,
+      pane: paneBox
+        ? { top: paneBox.top, bottom: paneBox.bottom, left: paneBox.left, width: paneBox.width, height: paneBox.height }
+        : null,
+      bands,
+      focusTop: Number.isFinite(focusBottom) ? focusTop : null,
+      focusBottom: Number.isFinite(focusBottom) ? focusBottom : null,
+      focusFilter: focusNodes[0] ? getComputedStyle(focusNodes[0]).filter : "",
+      sentences,
+      wash: washBox
+        ? {
+            left: washBox.left,
+            width: washBox.width,
+            top: washBox.top,
+            image: wash ? getComputedStyle(wash).backgroundImage : "",
+          }
+        : null,
+      mirrorFilter,
+      breathBottom: breath?.getBoundingClientRect().bottom ?? null,
+      upcomingTop: upcoming?.getBoundingClientRect().top ?? null,
+      glassBackdrop: glassStyle?.backdropFilter ?? glassStyle?.getPropertyValue("-webkit-backdrop-filter") ?? "",
+      glassBackground: glassStyle?.backgroundColor ?? "",
       dpr: window.devicePixelRatio,
       innerWidth: window.innerWidth,
       innerHeight: window.innerHeight,
-      scrollWidth: root.scrollWidth,
-      foldLeft: foldBox?.left ?? null,
-      foldWidth: foldBox?.width ?? null,
-      paneWidth: paneBox?.width ?? null,
-      upcomingTop,
-      focusFilter: focus ? getComputedStyle(focus).filter : "",
-      pastOpacity: getComputedStyle(document.querySelector(".breath-sentence.is-past") ?? document.body).opacity,
+      scrollWidth: document.documentElement.scrollWidth,
     };
   });
-  assert.equal(geom.dpr, 3);
-  assert.ok(geom.scrollWidth <= geom.innerWidth + 1, `page scrolls sideways (${geom.scrollWidth})`);
-  assert.equal(geom.focusFilter, "none");
-  if (geom.foldLeft != null && geom.paneWidth != null && geom.foldWidth != null) {
-    assert.ok(Math.abs(geom.foldLeft) <= 1, `wash is inset at ${geom.foldLeft}`);
-    assert.ok(
-      Math.abs(geom.foldWidth - geom.paneWidth) <= 2,
-      `wash width ${geom.foldWidth} != pane ${geom.paneWidth}`,
-    );
+}
+
+function assertBands(geom: Awaited<ReturnType<typeof bandSnapshot>>, label: string) {
+  assert.equal(geom.dpr, 3, label);
+  assert.ok(geom.scrollWidth <= geom.innerWidth + 1, `${label} page scrolls sideways (${geom.scrollWidth})`);
+  assert.equal(geom.focusFilter, "none", `${label} focus sentence is blurred`);
+  assert.ok(geom.pane, `${label} pane missing`);
+  assert.equal(geom.bands.length, 3, label);
+  const [read, now, next] = geom.bands;
+  assert.ok(read && now && next, `${label} a band is missing`);
+  const lead = read.top - geom.pane.top;
+  const span = geom.pane.height - lead;
+  const third = span / 3;
+  for (const band of [read, now, next]) {
+    assert.ok(Math.abs(band.height - third) <= 2, `${label} ${band.name} is ${band.height}px, third is ${third}`);
+    assert.ok(Math.abs(band.left) <= 1, `${label} ${band.name} is inset`);
+    assert.ok(Math.abs(band.width - geom.pane.width) <= 2, `${label} ${band.name} is not the pane width`);
   }
+  assert.ok(Math.abs(now.top - read.bottom) <= 1, `${label} sharp band moved off the read band`);
+  assert.ok(Math.abs(next.top - now.bottom) <= 1, `${label} bottom band moved off the sharp band`);
+  assert.ok(Math.abs(next.bottom - geom.pane.bottom) <= 2, `${label} bottom band stops early`);
+  assert.ok(geom.focusTop != null && geom.focusBottom != null, `${label} focus missing`);
+  const mid = (geom.focusTop + geom.focusBottom) / 2;
+  assert.ok(mid > now.top + 4 && mid < now.bottom - 4, `${label} focus center ${mid} left the sharp band ${now.top}-${now.bottom}`);
+  const inside = geom.sentences.filter((sentence) => sentence.bottom > now.top + 8 && sentence.top < now.bottom - 8);
+  assert.ok(inside.length > 0, `${label} no sentence in the sharp band`);
+  for (const sentence of inside) {
+    assert.equal(sentence.filter, "none", `${label} a sentence inside the sharp band is blurred`);
+    assert.equal(sentence.opacity, "1", `${label} a sentence inside the sharp band is dimmed`);
+  }
+  assert.ok(geom.wash, `${label} wash missing`);
+  assert.ok(Math.abs(geom.wash.left) <= 1, `${label} wash is inset at ${geom.wash.left}`);
+  assert.ok(
+    Math.abs(geom.wash.width - geom.pane.width) <= 2,
+    `${label} wash width ${geom.wash.width} != pane ${geom.pane.width}`,
+  );
+  assert.match(geom.wash.image, /0\.5|50%/, `${label} wash is not half the page color ${geom.wash.image}`);
+  assert.match(geom.mirrorFilter, /blur\(8px\)/, `${label} bottom band is not blurred (${geom.mirrorFilter})`);
+  assert.ok(!/blur\(/.test(geom.glassBackdrop), `${label} hourglass has a backdrop blur`);
+  assert.match(geom.glassBackground, /transparent|rgba\(0,\s*0,\s*0,\s*0\)/, `${label} hourglass has a square ${geom.glassBackground}`);
   if (geom.upcomingTop != null && geom.breathBottom != null) {
     const gap = geom.upcomingTop - geom.breathBottom;
-    assert.ok(gap > 2 && gap < 22, `upcoming text moved, gap ${gap.toFixed(1)}px`);
+    assert.ok(gap > 2 && gap < 28, `${label} upcoming text moved, gap ${gap.toFixed(1)}px`);
   }
+}
 
+async function screenshotSeams(page: Page): Promise<WashSeam[]> {
+  const geom = await bandSnapshot(page);
+  assertBands(geom, "wash");
   const png = (await page.screenshot({ type: "png" })).toString("base64");
-  const top = Math.max(1, Math.round(geom.bottom * geom.dpr) - 6);
+  const now = geom.bands[1];
+  const next = geom.bands[2];
+  assert.ok(now && next);
+  const top = Math.max(1, Math.round((now.bottom - 36) * geom.dpr));
   const height = Math.round(geom.innerHeight * geom.dpr);
   const width = Math.round(geom.innerWidth * geom.dpr);
   const scan: WashBand = {
     top,
-    bottom: height - Math.round(120 * geom.dpr),
+    bottom: Math.min(height - 4, Math.round((next.top + 48) * geom.dpr)),
     left: 8,
     right: width - 8,
   };
@@ -284,37 +372,32 @@ async function screenshotSeams(page: Page): Promise<WashSeam[]> {
 
 async function assertClean(page: Page, label: string) {
   await openReader(page, label === "off" ? "off" : label);
+  const before = await bandSnapshot(page);
   const ahead = await screenshotSeams(page);
   assert.deepEqual(ahead, [], `${label} window with text still ahead: ${JSON.stringify(ahead)}`);
-  const shade = await page.evaluate(() => {
-    const run = document.querySelector(".ahead-run");
-    const veil = run?.querySelector(".ahead-shade");
-    if (!run || !veil) return null;
-    const rects = [...run.getClientRects()];
-    const box = veil.getBoundingClientRect();
-    const top = Math.min(...rects.map((rect) => rect.top));
-    const bottom = Math.max(...rects.map((rect) => rect.bottom));
-    return {
-      covers: box.top <= top + 1 && box.bottom >= bottom - 1,
-      wide: box.width >= window.innerWidth,
-      top: box.top,
-      bottom: box.bottom,
-      runTop: top,
-      runBottom: bottom,
-    };
-  });
-  if (shade) {
-    assert.equal(shade.covers, true, `${label} shade misses the ahead lines ${JSON.stringify(shade)}`);
-    assert.equal(shade.wide, true, `${label} shade is not full width ${JSON.stringify(shade)}`);
-  }
   await stepTo(page, "but her mind shrank");
+  const after = await bandSnapshot(page);
+  assertBands(after, `${label} after a step`);
+  for (let i = 0; i < before.bands.length; i += 1) {
+    const was = before.bands[i];
+    const now = after.bands[i];
+    assert.ok(was && now, `${label} band ${i} disappeared`);
+    assert.ok(Math.abs(was.top - now.top) <= 1, `${label} ${was.name} top moved ${was.top} -> ${now.top}`);
+    assert.ok(
+      Math.abs(was.bottom - now.bottom) <= 1,
+      `${label} ${was.name} bottom moved ${was.bottom} -> ${now.bottom}`,
+    );
+  }
   const lit = await screenshotSeams(page);
   assert.deepEqual(lit, [], `${label} lit passage: ${JSON.stringify(lit)}`);
 }
 
-/** Mogens keeps the rest of the breath under the wash. Shapes stay, letters do not. */
+/** The bottom band keeps shapes, not letters. The middle band stays sharp. */
 async function assertFaintShapes(page: Page, label: string) {
   await openReader(page, label === "off" ? "off" : label, MOGENS);
+  const geom = await bandSnapshot(page);
+  assertBands(geom, `${label} Mogens`);
+  const before = geom.bands.map((band) => (band ? { top: band.top, bottom: band.bottom } : null));
   const png = (await page.screenshot({ type: "png" })).toString("base64");
   const stats = await page.evaluate(
     async ({ png: source, seamFn, fieldFn }) => {
@@ -328,12 +411,11 @@ async function assertFaintShapes(page: Page, label: string) {
       ctx.drawImage(bmp, 0, 0);
       const image = ctx.getImageData(0, 0, bmp.width, bmp.height);
       const { data, width, height } = image;
-      const focus = document.querySelector("[data-focus-sentence]");
-      const rects = focus ? [...focus.getClientRects()].filter((rect) => rect.width > 2 && rect.height > 2) : [];
-      const bottom = rects.reduce((max, rect) => Math.max(max, rect.bottom), 0);
       const dpr = window.devicePixelRatio;
-      const y0 = Math.min(height - 2, Math.round((bottom + 36) * dpr));
-      const y1 = Math.min(height - 1, Math.round((bottom + 150) * dpr));
+      const now = document.querySelector('[data-focus-band="now"]')?.getBoundingClientRect();
+      const next = document.querySelector('[data-focus-band="next"]')?.getBoundingClientRect();
+      const read = document.querySelector('[data-focus-band="read"]')?.getBoundingClientRect();
+      if (!now || !next || !read) throw new Error("bands missing");
       const detect = new Function(
         "data",
         "width",
@@ -358,43 +440,51 @@ async function assertFaintShapes(page: Page, label: string) {
         height: number,
         band: WashBand,
       ) => { verdict: string; variance: number; sharp: number };
-      const seamBand = {
-        top: Math.max(1, y0),
-        bottom: y1,
-        left: 8,
-        right: width - 8,
-      };
-      const shapeBand = {
-        top: y0,
-        bottom: y1,
+      const inset = Math.round(28 * dpr);
+      const column = {
         left: Math.round(48 * dpr),
         right: width - Math.round(48 * dpr),
       };
-      const fold = document.querySelector(".passage-ahead, .upcoming-fold");
-      const box = fold?.getBoundingClientRect();
-      const shade = document.querySelector(".passage-ahead-shade, .upcoming-shade");
-      const focusFilter = focus ? getComputedStyle(focus).filter : "";
+      const sharpBand = {
+        top: Math.round(now.top * dpr) + inset,
+        bottom: Math.round(now.bottom * dpr) - inset,
+        ...column,
+      };
+      const washBand = {
+        top: Math.round(next.top * dpr) + inset,
+        bottom: Math.min(height - 2, Math.round(next.bottom * dpr) - Math.round(80 * dpr)),
+        ...column,
+      };
+      const seamBand = {
+        top: Math.max(1, Math.round(now.bottom * dpr) - inset),
+        bottom: Math.min(height - 1, Math.round(next.top * dpr) + inset),
+        left: 8,
+        right: width - 8,
+      };
+      const focus = document.querySelector("[data-focus-sentence]");
       return {
         seams: detect(data, width, height, seamBand),
-        field: judge(data, width, height, shapeBand),
-        foldLeft: box?.left ?? null,
-        foldWidth: box?.width ?? null,
-        pane: window.innerWidth,
-        shade: shade ? getComputedStyle(shade).backgroundColor : "",
-        focusFilter,
+        sharp: judge(data, width, height, sharpBand),
+        field: judge(data, width, height, washBand),
+        focusFilter: focus ? getComputedStyle(focus).filter : "",
+        readTop: read.top,
       };
     },
     { png, seamFn: washSeamDetectorSource(), fieldFn: washFieldSource() },
   );
   assert.deepEqual(stats.seams, [], `${label} Mogens seam ${JSON.stringify(stats.seams)}`);
+  assert.equal(stats.sharp.verdict, "legible", `${label} sharp band ${JSON.stringify(stats.sharp)}`);
   assert.equal(stats.field.verdict, "shapes", `${label} wash field ${JSON.stringify(stats.field)}`);
   assert.equal(stats.focusFilter, "none", `${label} focus is blurred`);
-  assert.ok(stats.foldLeft != null && Math.abs(stats.foldLeft) <= 1, `${label} wash inset ${stats.foldLeft}`);
-  assert.ok(
-    stats.foldWidth != null && Math.abs(stats.foldWidth - stats.pane) <= 2,
-    `${label} wash width ${stats.foldWidth}`,
-  );
-  assert.match(stats.shade, /0\.5\)/, `${label} shade is not a half wash ${stats.shade}`);
+  await page.locator("[data-turn='next']").click();
+  await settledInBand(page);
+  const after = await bandSnapshot(page);
+  for (let i = 0; i < before.length; i += 1) {
+    const was = before[i];
+    const now = after.bands[i];
+    assert.ok(was && now, `${label} band ${i} disappeared after a step`);
+    assert.ok(Math.abs(was.top - now.top) <= 1 && Math.abs(was.bottom - now.bottom) <= 1, `${label} band moved`);
+  }
 }
 
 test(
