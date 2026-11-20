@@ -101,8 +101,15 @@ jobs:
 
   stress:
     # 26.04 dropped libicudata.so.74, which this Playwright WebKit build needs.
+    # Ten runs in one job used the whole test limit and then stayed up until
+    # the runner cancelled the job. Two shards run the same ten runs. Odd
+    # runs stay the WebKit half.
     runs-on: ubuntu-24.04
     timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ["1/2", "2/2"]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -154,10 +161,13 @@ jobs:
           exit 1
 
       - name: Ten-run tap stress
-        run: node --experimental-strip-types --test --test-name-pattern "five hundred mixed taps" src/lib/reader-tap-stress.test.ts
+        # Force-exit so a timed-out browser reports the failure. Otherwise
+        # the open browser holds the job until the runner cancels it.
+        run: node --experimental-strip-types --test --test-force-exit --test-name-pattern "five hundred mixed taps" src/lib/reader-tap-stress.test.ts
         env:
           READER_ORIGIN: http://127.0.0.1:8081
           STRESS_RUNS: "10"
+          STRESS_SHARD: ${{ matrix.shard }}
 
   rows:
     # 26.04 dropped libicudata.so.74, which this Playwright WebKit build needs.
