@@ -22,6 +22,7 @@ import {
 import { readableIds, shelfWork } from "./catalog/shelf.ts";
 import { displayKindForForm } from "./display-blocks.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
+import { webKitRequired } from "./require-webkit.ts";
 import { breathSentenceCount, repeatSentenceStep } from "./sentence-step.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
@@ -190,7 +191,13 @@ async function launchWebkit(): Promise<Browser | null> {
     return await webkit.launch();
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    if (!/Executable doesn't exist|browserType\.launch/.test(message)) throw error;
+    if (!/Executable doesn't exist|browserType\.launch|missing dependencies|shared libraries/.test(message)) {
+      throw error;
+    }
+    // The odd half is the WebKit half. A missing browser must not pass as Chromium.
+    if (webKitRequired()) {
+      throw new Error(`WebKit did not launch (${message.split("\n")[0]})`);
+    }
     return null;
   }
 }
@@ -849,6 +856,16 @@ test("stress shard keeps every run and leaves odd runs for WebKit", () => {
   assert.throws(() => stressRunIndexes(10, "0/2"), /STRESS_SHARD/);
   assert.throws(() => stressRunIndexes(10, "3/2"), /STRESS_SHARD/);
   assert.throws(() => stressRunIndexes(10, "both"), /STRESS_SHARD/);
+});
+
+test("the odd stress half installs WebKit and cannot pass without it", () => {
+  const yml = readFileSync(new URL("../../.github/workflows/catalog-walk.yml", import.meta.url), "utf8");
+  const stress = yml.slice(yml.indexOf("  stress:"), yml.indexOf("\n  rows:"));
+  assert.match(stress, /install-browsers\.mjs chromium webkit/);
+  assert.match(stress, /REQUIRE_WEBKIT: "1"/);
+  const source = readFileSync(new URL("./reader-tap-stress.test.ts", import.meta.url), "utf8");
+  assert.match(source, /webKitRequired\(\)/);
+  assert.match(source, /cannot pass as Chromium|must not pass as Chromium/);
 });
 
 test(
