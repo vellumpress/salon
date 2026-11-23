@@ -103,7 +103,8 @@ jobs:
     # 26.04 dropped libicudata.so.74, which this Playwright WebKit build needs.
     # Ten runs in one job used the whole test limit and then stayed up until
     # the runner cancelled the job. Two shards run the same ten runs. Odd
-    # runs stay the WebKit half.
+    # runs stay the WebKit half, so this job installs WebKit and fails if
+    # that browser never launches. A Chromium stand-in would hide the miss.
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     strategy:
@@ -137,8 +138,8 @@ jobs:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
 
-      - name: Install browser
-        run: node scripts/install-browsers.mjs chromium
+      - name: Install browsers
+        run: node scripts/install-browsers.mjs chromium webkit
 
       - name: Build the Pages site
         run: npm run build
@@ -168,6 +169,7 @@ jobs:
           READER_ORIGIN: http://127.0.0.1:8081
           STRESS_RUNS: "10"
           STRESS_SHARD: ${{ matrix.shard }}
+          REQUIRE_WEBKIT: "1"
 
   rows:
     # 26.04 dropped libicudata.so.74, which this Playwright WebKit build needs.
