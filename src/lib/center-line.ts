@@ -90,6 +90,30 @@ export function upcomingBreaths(work: Work, index: number, limit = UPCOMING_WIND
  * stays 64% of the reading area between those bands, so extending the column
  * does not move the focus line.
  */
+/**
+ * Three fixed bands of the reader viewport below the status bar.
+ * The ratio does not follow the sentence: each band is one third of the
+ * area under `leadPx`, and the middle band is the sharp one.
+ * On a phone whose status bar and mark row are about 13% of the screen,
+ * that middle band sits near 42% to 70% of the screen height.
+ */
+export function focusBands(
+  paneHeight: number,
+  leadPx = 0,
+): { read: { top: number; bottom: number }; now: { top: number; bottom: number }; next: { top: number; bottom: number } } {
+  const empty = { top: 0, bottom: 0 };
+  if (!Number.isFinite(paneHeight) || paneHeight <= 0) {
+    return { read: empty, now: empty, next: empty };
+  }
+  const lead = Number.isFinite(leadPx) ? Math.min(paneHeight, Math.max(0, leadPx)) : 0;
+  const third = (paneHeight - lead) / 3;
+  return {
+    read: { top: lead, bottom: lead + third },
+    now: { top: lead + third, bottom: lead + 2 * third },
+    next: { top: lead + 2 * third, bottom: paneHeight },
+  };
+}
+
 export function focusAnchorPx(
   paneHeight: number,
   overlapPx = 0,
