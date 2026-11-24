@@ -2,19 +2,21 @@ import { useLayoutEffect, useState } from "react";
 import {
   TEXT_SIZE_DEFAULT,
   TEXT_SIZE_KEY,
+  formatTextSize,
   readTextSize,
   writeTextSize,
-  type TextSizeStep,
 } from "./text-size.ts";
 
 export type TextSizePreference = {
-  /** Persisted step. 2 is the size the page already used. */
-  step: TextSizeStep;
-  setStep: (step: TextSizeStep) => void;
+  /** Persisted multiplier. 1 is the size the page already used. */
+  scale: number;
+  setScale: (scale: number) => void;
 };
 
-function applyTextSize(step: TextSizeStep) {
-  document.documentElement.dataset.textSize = String(step);
+function applyTextSize(scale: number) {
+  const value = formatTextSize(scale);
+  document.documentElement.style.setProperty("--text-size-scale", value);
+  document.documentElement.dataset.textSize = value;
 }
 
 /**
@@ -22,27 +24,28 @@ function applyTextSize(step: TextSizeStep) {
  * The first paint matches the server (the current size). After mount, storage can change it.
  */
 export function useTextSize(): TextSizePreference {
-  const [step, setStepState] = useState<TextSizeStep>(TEXT_SIZE_DEFAULT);
+  const [scale, setScaleState] = useState(TEXT_SIZE_DEFAULT);
 
   useLayoutEffect(() => {
     const stored = readTextSize();
-    setStepState(stored);
+    setScaleState(stored);
     applyTextSize(stored);
     const onStorage = (event: StorageEvent) => {
       if (event.key !== TEXT_SIZE_KEY && event.key !== null) return;
       const next = readTextSize();
-      setStepState(next);
+      setScaleState(next);
       applyTextSize(next);
     };
     window.addEventListener("storage", onStorage);
     return () => window.removeEventListener("storage", onStorage);
   }, []);
 
-  function setStep(next: TextSizeStep) {
-    writeTextSize(next);
-    setStepState(next);
-    applyTextSize(next);
+  function setScale(next: number) {
+    const value = Number(formatTextSize(next));
+    writeTextSize(value);
+    setScaleState(value);
+    applyTextSize(value);
   }
 
-  return { step, setStep };
+  return { scale, setScale };
 }

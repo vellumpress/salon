@@ -1,17 +1,17 @@
 /**
- * Reader text size. Five steps, and the middle one is the size the page
+ * Reader text size. One continuous scale, and 1 is the size the page
  * already used. Stored beside Daylight colors and Center the line.
- * Missing or unreadable values stay on that middle step.
+ * Missing or unreadable values stay on that size.
  */
 
 export const TEXT_SIZE_KEY = "salon-text-size";
-export const TEXT_SIZE_COUNT = 5;
-export const TEXT_SIZE_DEFAULT = 2;
+export const TEXT_SIZE_MIN = 0.72;
+export const TEXT_SIZE_MAX = 1.85;
+export const TEXT_SIZE_STEP = 0.01;
+export const TEXT_SIZE_DEFAULT = 1;
 
-/** Multipliers of the current breath size. Step 2 is 1, so it does not change the page. */
-export const TEXT_SIZE_SCALE = [0.84, 0.92, 1, 1.12, 1.26] as const;
-
-export type TextSizeStep = 0 | 1 | 2 | 3 | 4;
+/** The five steps this control used before it became a slider. */
+const LEGACY_STEP = [0.84, 0.92, 1, 1.12, 1.26] as const;
 
 type Store = {
   getItem(key: string): string | null;
@@ -27,34 +27,51 @@ function defaultStore(): Store | null {
   }
 }
 
-export function isTextSizeStep(value: number): value is TextSizeStep {
-  return Number.isInteger(value) && value >= 0 && value < TEXT_SIZE_COUNT;
+function snap(value: number): number {
+  const snapped = Math.round(value / TEXT_SIZE_STEP) * TEXT_SIZE_STEP;
+  return Number(snapped.toFixed(2));
 }
 
-/** Missing key is the current size. Anything else unreadable is that same step. */
-export function readTextSize(store: Store | null = defaultStore()): TextSizeStep {
+/** Pull a slider value onto the scale. Values outside it sit on the nearer end. */
+export function clampTextSize(value: number): number {
+  if (!Number.isFinite(value)) return TEXT_SIZE_DEFAULT;
+  const next = snap(value);
+  if (next < TEXT_SIZE_MIN) return TEXT_SIZE_MIN;
+  if (next > TEXT_SIZE_MAX) return TEXT_SIZE_MAX;
+  return next;
+}
+
+export function formatTextSize(value: number): string {
+  return clampTextSize(value).toFixed(2);
+}
+
+/**
+ * Missing key is the current size. A single digit 0–4 is a leftover step
+ * from the earlier control. Anything else outside the scale is the current size.
+ */
+export function readTextSize(store: Store | null = defaultStore()): number {
   if (!store) return TEXT_SIZE_DEFAULT;
   try {
     const raw = store.getItem(TEXT_SIZE_KEY);
     if (raw == null) return TEXT_SIZE_DEFAULT;
     const value = raw.trim();
     if (value === "") return TEXT_SIZE_DEFAULT;
-    const step = Number(value);
-    return isTextSizeStep(step) ? step : TEXT_SIZE_DEFAULT;
+    if (/^[0-4]$/.test(value)) return LEGACY_STEP[Number(value)] ?? TEXT_SIZE_DEFAULT;
+    const scale = Number(value);
+    if (!Number.isFinite(scale) || scale < TEXT_SIZE_MIN || scale > TEXT_SIZE_MAX) {
+      return TEXT_SIZE_DEFAULT;
+    }
+    return snap(scale);
   } catch {
     return TEXT_SIZE_DEFAULT;
   }
 }
 
-export function writeTextSize(step: TextSizeStep, store: Store | null = defaultStore()): void {
+export function writeTextSize(scale: number, store: Store | null = defaultStore()): void {
   if (!store) return;
   try {
-    store.setItem(TEXT_SIZE_KEY, String(step));
+    store.setItem(TEXT_SIZE_KEY, formatTextSize(scale));
   } catch {
     /* private mode */
   }
-}
-
-export function textSizeScale(step: TextSizeStep): number {
-  return TEXT_SIZE_SCALE[step];
 }

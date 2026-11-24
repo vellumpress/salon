@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
+import { TEXT_SIZE_MAX, TEXT_SIZE_MIN } from "./text-size.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 import { skipWithoutWebKit, webKitRequired } from "./require-webkit.ts";
 
@@ -68,13 +69,28 @@ async function geometry(page: Page) {
     };
     const breath = document.querySelector(".breath-now");
     const flow = document.querySelector(".focus-live");
+    const sentences = [...document.querySelectorAll(".breath-now [data-focus-sentence]")];
+    const now = band("now");
+    let sentTop = Infinity;
+    let sentBottom = -Infinity;
+    for (const node of sentences) {
+      const rect = node.getBoundingClientRect();
+      if (rect.width === 0 && rect.height === 0) continue;
+      sentTop = Math.min(sentTop, rect.top);
+      sentBottom = Math.max(sentBottom, rect.bottom);
+    }
+    const sentMid = sentBottom > sentTop ? (sentTop + sentBottom) / 2 : 0;
+    const nowMid = now ? (now.top + now.bottom) / 2 : 0;
     return {
       read: band("read"),
-      now: band("now"),
+      now,
       next: band("next"),
       font: breath ? Number.parseFloat(getComputedStyle(breath).fontSize) : 0,
       family: breath ? getComputedStyle(breath).fontFamily : "",
       index: document.querySelector(".reader-frame")?.getAttribute("data-breath-index"),
+      key: document.querySelector(".reader-frame")?.getAttribute("data-spotlight-key"),
+      sentence: sentences.map((node) => node.textContent ?? "").join(" ").replace(/\s+/g, " ").trim().slice(0, 80),
+      delta: sentMid - nowMid,
       scroll: flow instanceof HTMLElement ? flow.scrollTop : 0,
       progress: document.querySelector("[data-reading-progress]")?.getAttribute("data-progress"),
       size: document.documentElement.dataset.textSize ?? "",
@@ -97,19 +113,50 @@ function sameBands(
   }
 }
 
+function placeRank(key: string | null) {
+  const [index = 0, cursor = 0, spot = 0] = (key ?? "").split(":").map(Number);
+  return index * 1_000_000 + cursor * 1_000 + spot;
+}
+
+function sameSentence(
+  before: Awaited<ReturnType<typeof geometry>>,
+  after: Awaited<ReturnType<typeof geometry>>,
+  label: string,
+) {
+  assert.equal(after.key, before.key, `${label} moved off the sentence`);
+  const shorter = before.sentence.length <= after.sentence.length ? before.sentence : after.sentence;
+  const longer = shorter === before.sentence ? after.sentence : before.sentence;
+  assert.ok(longer.startsWith(shorter.slice(0, 24)), `${label} changed the sentence`);
+  assert.ok(
+    Math.abs(after.delta) < 36,
+    `${label} left the sentence ${after.delta}px off the sharp band (scroll ${before.scroll}->${after.scroll}, font ${before.font}->${after.font}, key ${before.key}->${after.key})`,
+  );
+}
+
 async function openSheet(page: Page) {
   await page.locator("button.reader-glass").click();
-  await page.getByRole("group", { name: "Text size" }).waitFor();
+  await page.getByRole("slider", { name: "Text size" }).waitFor();
 }
 
 async function closeSheet(page: Page) {
   await page.getByRole("button", { name: "Close" }).click();
-  await page.getByRole("group", { name: "Text size" }).waitFor({ state: "hidden" });
+  await page.getByRole("slider", { name: "Text size" }).waitFor({ state: "hidden" });
 }
 
-async function chooseSize(page: Page, step: number) {
+async function setScale(page: Page, scale: number) {
   await openSheet(page);
-  await page.locator(`[data-text-step="${step}"]`).click();
+  const slider = page.getByRole("slider", { name: "Text size" });
+  await slider.evaluate((el, value) => {
+    const input = el as HTMLInputElement;
+    const proto = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value");
+    proto?.set?.call(input, value);
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+    input.dispatchEvent(new Event("change", { bubbles: true }));
+  }, scale.toFixed(2));
+  await page.waitForFunction(
+    (value) => document.documentElement.dataset.textSize === value,
+    scale.toFixed(2),
+  );
   await closeSheet(page);
 }
 
@@ -129,29 +176,61 @@ async function checkReader(page: Page, label: string) {
   assert.ok(initial.now && initial.now.height > 80, `${label} sharp band missing`);
   assert.ok(initial.font > 12, `${label} breath has no size`);
   assert.match(initial.family, /Cormorant Garamond/);
+  assert.equal(initial.size, "1.00", `${label} did not open at the current size`);
   assert.ok(initial.progress != null, `${label} progress bar missing`);
 
   await openSheet(page);
-  await page.getByRole("group", { name: "Text size" }).waitFor();
-  assert.equal(await page.locator("[data-text-step]").count(), 5);
+  const slider = page.getByRole("slider", { name: "Text size" });
+  const smallMark = page.locator(".text-size-mark-small");
+  const largeMark = page.locator(".text-size-mark-large");
+  assert.match(await smallMark.evaluate((el) => getComputedStyle(el).fontFamily), /Outfit/);
+  assert.match(await largeMark.evaluate((el) => getComputedStyle(el).fontFamily), /Outfit/);
+  assert.ok(
+    Number.parseFloat(await smallMark.evaluate((el) => getComputedStyle(el).fontSize)) <
+      Number.parseFloat(await largeMark.evaluate((el) => getComputedStyle(el).fontSize)),
+  );
+  const beforeDrag = await geometry(page);
+  const creditedBefore = await advances(page);
+  const box = await slider.boundingBox();
+  assert.ok(box, `${label} slider missing`);
+  const fraction = (1 - TEXT_SIZE_MIN) / (TEXT_SIZE_MAX - TEXT_SIZE_MIN);
+  const startX = box.x + box.width * fraction;
+  await page.mouse.move(startX, box.y + box.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(box.x + box.width - 10, box.y + box.height / 2, { steps: 12 });
+  await page.waitForTimeout(50);
+  const dragging = await geometry(page);
+  assert.ok(dragging.font > beforeDrag.font + 1, `${label} text did not reflow while dragging`);
+  sameSentence(beforeDrag, dragging, `${label} mid-drag`);
+  sameBands(beforeDrag, dragging, `${label} mid-drag`);
+  await page.mouse.up();
+  await page.waitForTimeout(250);
+  const dragged = await geometry(page);
+  sameSentence(beforeDrag, dragged, `${label} after dragging the slider`);
+  sameBands(beforeDrag, dragged, `${label} after dragging the slider`);
+  const creditedAfter = await advances(page);
+  assert.equal(creditedAfter, creditedBefore, `${label} dragging the slider counted as reading`);
   await closeSheet(page);
 
-  await chooseSize(page, 0);
+  await setScale(page, TEXT_SIZE_MIN);
   const small = await geometry(page);
   sameBands(initial, small, `${label} smallest`);
-  assert.ok(small.font < initial.font - 0.5, `${label} smallest did not shrink ${small.font} vs ${initial.font}`);
-  assert.equal(small.size, "0");
+  sameSentence(initial, small, `${label} smallest`);
+  assert.ok(small.font < initial.font - 1, `${label} smallest did not shrink ${small.font} vs ${initial.font}`);
+  assert.equal(small.size, TEXT_SIZE_MIN.toFixed(2));
 
-  await chooseSize(page, 2);
+  await setScale(page, 1);
   const middle = await geometry(page);
   sameBands(initial, middle, `${label} default`);
+  sameSentence(initial, middle, `${label} default`);
   assert.ok(Math.abs(middle.font - initial.font) < 0.6, `${label} default size changed ${middle.font} vs ${initial.font}`);
 
-  await chooseSize(page, 4);
+  await setScale(page, TEXT_SIZE_MAX);
   const large = await geometry(page);
   sameBands(initial, large, `${label} largest`);
-  assert.ok(large.font > initial.font + 0.5, `${label} largest did not grow`);
-  assert.equal(large.size, "4");
+  sameSentence(initial, large, `${label} largest`);
+  assert.ok(large.font > initial.font * 1.5, `${label} largest did not grow`);
+  assert.equal(large.size, TEXT_SIZE_MAX.toFixed(2));
 
   await page.locator("button.reader-glass").click();
   await page.getByRole("button", { name: "20", exact: true }).click();
@@ -159,12 +238,12 @@ async function checkReader(page: Page, label: string) {
   const beforeTap = await geometry(page);
   await page.mouse.click(270, 500);
   await page.waitForFunction(
-    (was) => document.querySelector(".reader-frame")?.getAttribute("data-breath-index") !== was,
-    beforeTap.index,
+    (was) => document.querySelector(".reader-frame")?.getAttribute("data-spotlight-key") !== was,
+    beforeTap.key,
   );
   const tapped = await geometry(page);
   sameBands(initial, tapped, `${label} after a tap`);
-  assert.notEqual(tapped.index, beforeTap.index);
+  assert.ok(placeRank(tapped.key) > placeRank(beforeTap.key), `${label} a forward tap did not move`);
   const credited = await advances(page);
   assert.ok(credited >= 1, `${label} a forward tap did not count sitting time`);
 
@@ -182,25 +261,28 @@ async function checkReader(page: Page, label: string) {
 
   await page.mouse.click(40, 500);
   await page.waitForFunction(
-    (was) => document.querySelector(".reader-frame")?.getAttribute("data-breath-index") !== was,
-    scrolled.index,
+    (was) => document.querySelector(".reader-frame")?.getAttribute("data-spotlight-key") !== was,
+    scrolled.key,
   );
   const back = await geometry(page);
   sameBands(initial, back, `${label} back`);
-  assert.ok(Number(back.index) < Number(scrolled.index), `${label} left tap did not go back`);
+  assert.ok(placeRank(back.key) < placeRank(scrolled.key), `${label} left tap did not go back`);
 
   await page.reload({ waitUntil: "domcontentloaded" });
   await page.locator(".breath-now").waitFor({ timeout: 30_000 });
-  await page.waitForFunction(() => document.documentElement.dataset.textSize === "4");
+  await page.waitForFunction(
+    (value) => document.documentElement.dataset.textSize === value,
+    TEXT_SIZE_MAX.toFixed(2),
+  );
   const kept = await geometry(page);
-  assert.equal(kept.size, "4", `${label} text size did not persist`);
+  assert.equal(kept.size, TEXT_SIZE_MAX.toFixed(2), `${label} text size did not persist`);
   sameBands(initial, kept, `${label} after reload`);
-  assert.ok(kept.font > initial.font + 0.5, `${label} reloaded size shrank`);
+  assert.ok(kept.font > initial.font * 1.5, `${label} reloaded size shrank`);
 }
 
 test(
   "text size keeps the bands fixed in Chromium and WebKit",
-  { timeout: 180_000 },
+  { timeout: 240_000 },
   async (t) => {
     await ensureReaderServer();
     const chrome = await chromium.launch({ args: ["--no-sandbox"] });

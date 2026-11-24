@@ -151,7 +151,8 @@
   --text-pitch: 0.875rem;
   --text-pitch--line-height: 1.5;
   --text-size-base: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
-  --text-breath: var(--text-size-base);
+  --text-size-scale: 1;
+  --text-breath: calc(var(--text-size-scale) * var(--text-size-base));
   --text-breath--line-height: 1.45;
   --text-lookback: 1.02rem;
   --text-lookback--line-height: 1.45;
@@ -3235,7 +3236,7 @@ html.together-compose .upcoming-slot {
 @media (height <= 560px) {
   :root {
     --text-size-base: 1.12rem;
-    --text-breath: var(--text-size-base);
+    --text-breath: calc(var(--text-size-scale) * var(--text-size-base));
     --text-lookback: 0.92rem;
   }
   .lookback-slot {
@@ -3288,7 +3289,7 @@ html.together-compose .upcoming-slot {
 /* Keyboard-open height must not restyle the together reading surface. */
 html.together-compose {
   --text-size-base: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
-  --text-breath: var(--text-size-base);
+  --text-breath: calc(var(--text-size-scale) * var(--text-size-base));
   --text-lookback: 1.02rem;
   --text-breath--line-height: 1.45;
   --text-lookback--line-height: 1.45;
@@ -4038,16 +4039,14 @@ html.together-compose .chat-field {
 
 .reader-daylight .sit-presets,
 .reader-daylight .nav-reveal-nav,
-.reader-daylight .sand-cue-actions,
-.reader-daylight .text-size-steps {
+.reader-daylight .sand-cue-actions {
   background: var(--reader-rule);
   border-color: var(--reader-rule);
 }
 
 .reader-daylight .sit-preset,
 .reader-daylight .nav-reveal-btn,
-.reader-daylight .sand-cue-btn,
-.reader-daylight .text-size-step {
+.reader-daylight .sand-cue-btn {
   background: var(--reader-bg);
   color: var(--reader-ink);
 }
@@ -4055,8 +4054,7 @@ html.together-compose .chat-field {
 .reader-daylight .sit-preset-on,
 .reader-daylight .nav-reveal-btn-ink,
 .reader-daylight .sand-cue-btn-again,
-.reader-daylight .veil-action-full,
-.reader-daylight .text-size-step[aria-pressed="true"] {
+.reader-daylight .veil-action-full {
   background: var(--reader-ink);
   color: var(--reader-bg);
 }
@@ -4421,27 +4419,6 @@ html.together-compose.together-kb .reader-daylight .chat-field {
   border-top-color: var(--reader-rule);
 }
 
-/* Five steps around the size the page already uses. The middle step is 1. */
-html[data-text-size="0"] {
-  --text-breath: calc(0.84 * var(--text-size-base));
-}
-
-html[data-text-size="1"] {
-  --text-breath: calc(0.92 * var(--text-size-base));
-}
-
-html[data-text-size="2"] {
-  --text-breath: calc(1 * var(--text-size-base));
-}
-
-html[data-text-size="3"] {
-  --text-breath: calc(1.12 * var(--text-size-base));
-}
-
-html[data-text-size="4"] {
-  --text-breath: calc(1.26 * var(--text-size-base));
-}
-
 .text-size-row {
   display: flex;
   width: 100%;
@@ -4460,50 +4437,72 @@ html[data-text-size="4"] {
   color: inherit;
 }
 
-.text-size-steps {
-  display: grid;
-  flex: 1;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 1px;
-  border: 1px solid var(--color-ink, #1a1a1a);
-  background: var(--color-ink, #1a1a1a);
-}
-
-.text-size-step {
+.text-size-slider {
   display: flex;
-  min-height: 2.75rem;
+  min-width: 0;
+  flex: 1;
   align-items: center;
-  justify-content: center;
-  background: var(--color-paper, #f4efe6);
-  padding: 0;
-  font-family: var(--font-serif);
+  gap: 0.55rem;
+  touch-action: none;
+}
+
+.text-size-mark {
+  flex: none;
+  font-family: var(--font-sans);
+  font-weight: 500;
   line-height: 1;
-  color: var(--color-ink, #1a1a1a);
+  text-transform: none;
+  letter-spacing: 0;
 }
 
-.text-size-step[data-text-step="0"] {
-  font-size: 0.8rem;
+.text-size-mark-small {
+  font-size: 0.75rem;
 }
 
-.text-size-step[data-text-step="1"] {
-  font-size: 0.95rem;
+.text-size-mark-large {
+  font-size: 1.45rem;
 }
 
-.text-size-step[data-text-step="2"] {
-  font-size: 1.1rem;
+.text-size-slider input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 0;
+  flex: 1;
+  height: 2.75rem;
+  margin: 0;
+  background: transparent;
+  touch-action: none;
+  cursor: pointer;
 }
 
-.text-size-step[data-text-step="3"] {
-  font-size: 1.3rem;
+.text-size-slider input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: currentColor;
 }
 
-.text-size-step[data-text-step="4"] {
-  font-size: 1.5rem;
+.text-size-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-top: -0.6rem;
+  border: 0;
+  border-radius: 0;
+  background: currentColor;
 }
 
-.text-size-step[aria-pressed="true"] {
-  background: var(--color-ink, #1a1a1a);
-  color: var(--color-paper, #f4efe6);
+.text-size-slider input[type="range"]::-moz-range-track {
+  height: 2px;
+  background: currentColor;
+  border: 0;
+}
+
+.text-size-slider input[type="range"]::-moz-range-thumb {
+  width: 1.35rem;
+  height: 1.35rem;
+  border: 0;
+  border-radius: 0;
+  background: currentColor;
 }
 
 @media (prefers-reduced-motion: reduce) {

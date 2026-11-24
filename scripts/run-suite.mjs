@@ -38,6 +38,7 @@ export const smokeFiles = [
   "src/lib/wash-seam.test.ts",
   "src/lib/together-bond.e2e.test.ts",
   "src/lib/shelf.e2e.test.ts",
+  "src/lib/text-size.e2e.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -109,6 +110,7 @@ export const allTsFiles = [
   "src/lib/chamber-reader-chrome.test.ts",
   "src/lib/reader-chrome.test.ts",
   "src/lib/daylight-colors.test.ts",
+  "src/lib/text-size.test.ts",
   "src/lib/center-line.test.ts",
   "src/lib/wash-seam.test.ts",
   "src/lib/reader-turn.test.ts",
@@ -165,6 +167,7 @@ export const allTsFiles = [
   "src/lib/streak-notify.test.ts",
   "src/lib/home-screen-hint.test.ts",
   "src/lib/shelf.e2e.test.ts",
+  "src/lib/text-size.e2e.test.ts",
 ];
 
 const smokeSet = new Set(smokeFiles);
