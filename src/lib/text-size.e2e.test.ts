@@ -113,7 +113,7 @@ function sameBands(
   }
 }
 
-function placeRank(key: string | null) {
+function placeRank(key: string | null | undefined) {
   const [index = 0, cursor = 0, spot = 0] = (key ?? "").split(":").map(Number);
   return index * 1_000_000 + cursor * 1_000 + spot;
 }
