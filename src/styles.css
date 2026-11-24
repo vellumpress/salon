@@ -2288,26 +2288,31 @@ html:has(.board-doors) body {
   overflow-y: auto;
 }
 
-/* The sharp column. Top third (and the status-bar lead above it) is
-   half opacity. The middle third is solid. The bottom third is clear
-   so the blur mirror shows through. Edges are a short gradient, not a rule. */
+/* One continuous page. The sharp text shows only in the middle third.
+   The top and the bottom are clear so the same frosted mirror shows through.
+   The edges are a short gradient, not a cut. */
 .focus-live {
   position: absolute;
   z-index: 1;
   inset: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
   pointer-events: none;
   -webkit-mask-image: linear-gradient(
     to bottom,
-    rgb(0 0 0 / 0.5) 0,
-    rgb(0 0 0 / 0.5) calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
+    transparent 0,
+    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
     transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
   );
   mask-image: linear-gradient(
     to bottom,
-    rgb(0 0 0 / 0.5) 0,
-    rgb(0 0 0 / 0.5) calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
+    transparent 0,
+    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
     transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
@@ -2316,6 +2321,10 @@ html:has(.board-doors) body {
   mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+}
+
+.focus-live::-webkit-scrollbar {
+  display: none;
 }
 
 /* One blur for the mirror of the column. The clip stays put; the text
@@ -2328,13 +2337,17 @@ html:has(.board-doors) body {
   pointer-events: none;
   -webkit-mask-image: linear-gradient(
     to bottom,
-    transparent 0,
+    #000 0,
+    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
+    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
     transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
   );
   mask-image: linear-gradient(
     to bottom,
-    transparent 0,
+    #000 0,
+    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
+    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
     transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
   );
@@ -2380,17 +2393,32 @@ html:has(.board-doors) body {
   overflow-y: auto;
 }
 
-.focus-wash {
+.focus-wash,
+.focus-frost {
   position: absolute;
   z-index: 3;
   left: 0;
   right: 0;
-  top: calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade));
-  bottom: 0;
   pointer-events: none;
   background: none;
   border: 0;
   box-shadow: none;
+}
+
+.focus-frost-read {
+  top: 0;
+  height: calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 + var(--focus-fade));
+  background-image: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--reader-bg) 50%, transparent) 0,
+    color-mix(in srgb, var(--reader-bg) 50%, transparent) calc(100% - var(--focus-fade)),
+    transparent 100%
+  );
+}
+
+.focus-wash {
+  top: calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade));
+  bottom: 0;
   background-image: linear-gradient(
     to bottom,
     transparent 0,
@@ -2509,7 +2537,8 @@ html:has(.reader-frame:not(.together-lock)) .status-bar-fill {
   .focus-blur-track {
     filter: none;
   }
-  .focus-wash {
+  .focus-wash,
+  .focus-frost {
     background-image: none;
     background: var(--reader-bg);
   }
