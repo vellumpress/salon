@@ -802,7 +802,14 @@ function fallbackShell() {
     return hit || offlinePage();
   }).catch(function () { return offlinePage(); });
 }
+function offlineNow() {
+  var nav = typeof navigator !== "undefined" ? navigator : self.navigator;
+  return Boolean(nav && nav.onLine === false);
+}
 function handleNavigate(event) {
+  // WebKit cancels the navigation if respondWith starts a fetch while the
+  // radio is off, even when a shell is already cached. Answer from the cache.
+  if (offlineNow()) return fallbackShell();
   var fresh = false;
   try { fresh = new URL(event.request.url).search.indexOf("__fresh=") !== -1; } catch (err) {}
   var incoming = networkShell(event);
@@ -1050,7 +1057,7 @@ self.addEventListener("fetch", function (event) {
   if (url.origin !== self.location.origin) return;
   if (url.pathname !== "/salon" && url.pathname.indexOf("/salon/") !== 0) return;
   event.respondWith(holdNavigation(function () { return handleNavigate(event); }));
-  event.waitUntil(fillCatalog());
+  if (!offlineNow()) event.waitUntil(fillCatalog());
 });
 `;
 }

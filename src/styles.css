@@ -2599,6 +2599,23 @@ html.together-compose .upcoming-slot {
   pointer-events: none;
 }
 
+/* The mark row stays tappable. The back-tap zone climbs over this band, and
+   a faded header would let that zone take the Home tap. */
+.reader-frame > header.reader-mark {
+  z-index: 40;
+  pointer-events: auto;
+}
+
+.still > header.reader-mark,
+.weigh-on > header.reader-mark {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.reader-turn {
+  z-index: 0;
+}
+
 .chrome-fade {
   opacity: 1;
 }

@@ -20,7 +20,7 @@ test("the reader writes the sentence, and an empty boot does not overwrite it", 
   assert.match(store, /if \(!persistWrites\) return/);
   assert.match(store, /onFinishHydration\(armPersist\)/);
   assert.match(store, /sentenceAt: sentenceAtFor/);
-  assert.match(reader, /setSentenceAt\(work\.id, index, cursor\)/);
+  assert.match(reader, /setSentenceAt\(work\.id, index, cursor, spotWindow\)/);
   assert.match(reader, /savedSentenceAt\(progress, index\)/);
   assert.match(reader, /stampTap\(work, next, sentence\)/);
 });

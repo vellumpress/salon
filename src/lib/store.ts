@@ -62,6 +62,8 @@ export type WorkProgress = {
    * saves, which open the first sentence of the saved breath.
    */
   sentenceAt?: number;
+  /** Window inside that sentence. A reload restores it with `sentenceAt`. */
+  sentenceWindow?: number;
   /**
    * Breath id at `breathIndex`, and the bind it was saved against.
    * A later re-bind re-anchors from these instead of trusting the index.
@@ -225,7 +227,9 @@ type TbrState = {
   stampUserMove: (workId: string, at?: number) => void;
   setBreath: (workId: string, index: number, place?: BreathPlace) => void;
   /** Sentence inside the current breath. A reload reads this back. */
-  setSentenceAt: (workId: string, index: number, cursor: number) => void;
+  setSentenceAt: (workId: string, index: number, cursor: number, sentenceWindow?: number) => void;
+  /** A forward tap that stays inside the breath. Still counts as reading. */
+  creditReadingStep: (workId: string) => void;
   /** Forward advance: move to `index` and credit clamped active time. */
   advanceBreath: (
     workId: string,
@@ -867,21 +871,28 @@ export const useTbr = create<TbrState>()(
         });
         flushIfMoved(workId);
       },
-      setSentenceAt: (workId, index, cursor) => {
+      setSentenceAt: (workId, index, cursor, sentenceWindow = 0) => {
         const at = Math.max(0, Math.floor(cursor));
+        const windowAt = Math.max(0, Math.floor(sentenceWindow));
         set((state) => {
           const current = state.progress[workId];
           if (!current || current.breathIndex !== index) return {};
-          if ((current.sentenceAt ?? 0) === at) return {};
+          if ((current.sentenceAt ?? 0) === at && (current.sentenceWindow ?? 0) === windowAt) return {};
           return {
             progress: {
               ...state.progress,
-              [workId]: { ...current, sentenceAt: at },
+              [workId]: { ...current, sentenceAt: at, sentenceWindow: windowAt },
             },
           };
         });
         flushPersist();
       },
+      creditReadingStep: (workId) =>
+        set((state) => {
+          const current = state.progress[workId];
+          if (!current?.sittingStartedAt) return {};
+          return applyAdvance(state, workId, Date.now());
+        }),
       advanceBreath: (workId, index, opts) => {
         if (!commitBreathWrite(workId, index, opts?.place?.breathId)) return;
         set((state) => {
