@@ -10,10 +10,13 @@ type Box = {
 
 /**
  * A finger that barely moves, and lifts quickly, is a tap.
- * Tall breaths use this same slop so a scroll drag is not a tap.
+ * Anything past this slop is a drag, not a shaky tap.
  */
 export const TAP_SLOP_PX = 10;
-export const TAP_MS = 350;
+export const TAP_MS = 300;
+
+/** After a scroll or a fling stops, a new touch is not a tap until this quiet. */
+export const MOMENTUM_QUIET_MS = 150;
 
 /** A tall sentence starts scrolling only after the finger has clearly dragged. */
 export const SCROLL_ARM_PX = 24;
@@ -128,9 +131,10 @@ export function ghostMousePointer(input: {
 }
 
 /**
- * One lift. A tall breath treats a vertical move as a scroll; a fitted
- * breath keeps a wider slop so a shaky finger still turns. A short, still
- * touch (under 10px and under 350ms) is always a tap.
+ * One lift. A tap is a short, still touch: under 10px and under 300ms,
+ * and not while the page is scrolling or just finished. A drag, a flick,
+ * and a finger that stops a fling are never taps. There is no second,
+ * looser tap for a shaky or slow finger.
  */
 export function classifyTurnGesture(input: {
   dx: number;
@@ -138,8 +142,9 @@ export function classifyTurnGesture(input: {
   dt: number;
   canScroll: boolean;
   scrolled: boolean;
+  momentum?: boolean;
 }): TurnGesture {
-  if (input.scrolled) return "scroll";
+  if (input.scrolled || input.momentum) return "scroll";
   const dist = Math.hypot(input.dx, input.dy);
   if (
     Math.abs(input.dx) >= 56 &&
@@ -156,9 +161,6 @@ export function classifyTurnGesture(input: {
     return "scroll";
   }
   if (dist <= TAP_SLOP_PX && input.dt <= TAP_MS) return "tap";
-  const slop = input.canScroll ? SCROLL_ARM_PX : 44;
-  const limit = input.canScroll ? 700 : 900;
-  if (dist <= slop && input.dt <= limit) return "tap";
   return "ignore";
 }
 

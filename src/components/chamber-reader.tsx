@@ -98,7 +98,9 @@ import {
   ghostMousePointer,
   HOLD_ARM_MS,
   holdStepIntervalMs,
+  MOMENTUM_QUIET_MS,
   SCROLL_ARM_PX,
+  TAP_SLOP_PX,
   turnZone,
 } from "@/lib/reader-turn";
 import { useCenterLine } from "@/lib/use-center-line";
@@ -272,6 +274,8 @@ export function TbrReader({
     scrollTop: number;
     scrolled: boolean;
     turned: boolean;
+    /** This finger landed while a fling was running, or within the quiet after one. */
+    stoppedMomentum: boolean;
     zone: "prev" | "next" | null;
     vy?: number;
     sampleT?: number;
@@ -333,6 +337,8 @@ export function TbrReader({
   const trackRef = useRef<HTMLDivElement>(null);
   const flowRef = useRef<HTMLDivElement>(null);
   const flingRef = useRef(0);
+  /** When a fling or a drag last stopped. A tap inside the quiet after this is ignored. */
+  const momentumUntilRef = useRef(0);
   const scrollLockRef = useRef(false);
   const scrollIgnoreUntilRef = useRef(0);
   /** scrollTop last written to keep the sentence in the sharp band. */
@@ -1983,9 +1989,27 @@ export function TbrReader({
     return flow.scrollHeight - flow.clientHeight > 24;
   }
 
+  function momentumQuiet(now = performance.now()) {
+    return flingRef.current !== 0 || now - momentumUntilRef.current < MOMENTUM_QUIET_MS;
+  }
+
+  function noteMomentumStopped() {
+    if (flingRef.current) {
+      cancelAnimationFrame(flingRef.current);
+      flingRef.current = 0;
+    }
+    momentumUntilRef.current = performance.now();
+  }
+
   function fling(flow: HTMLElement, velocity: number) {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    if (Math.abs(velocity) < 0.05) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      noteMomentumStopped();
+      return;
+    }
+    if (Math.abs(velocity) < 0.05) {
+      noteMomentumStopped();
+      return;
+    }
     cancelAnimationFrame(flingRef.current);
     let v = velocity;
     let last = performance.now();
@@ -1994,7 +2018,12 @@ export function TbrReader({
       last = now;
       flow.scrollTop += v * dt;
       v *= Math.pow(0.9, dt / 16);
-      if (Math.abs(v) > 0.02) flingRef.current = requestAnimationFrame(step);
+      if (Math.abs(v) > 0.02) {
+        flingRef.current = requestAnimationFrame(step);
+        return;
+      }
+      flingRef.current = 0;
+      momentumUntilRef.current = now;
     };
     flingRef.current = requestAnimationFrame(step);
   }
@@ -2163,25 +2192,27 @@ export function TbrReader({
     if (start.pointerType === "touch") rememberTouch(x, y);
     const flow = flowRef.current;
     const moved = Boolean(flow && Math.abs(flow.scrollTop - start.scrollTop) > 3);
+    const dx = x - start.x;
+    const dy = y - start.y;
+    // A finger that caught a fling is only there to stop it.
+    if (start.stoppedMomentum) return;
     // A drag that actually moved the page is a scroll, and it keeps going.
-    if (start.scrolled && moved) {
-      if (flow) fling(flow, start.vy ?? 0);
+    // The lift must not also step a sentence. A gesture dispatched in one
+    // frame has no real velocity, so it does not leave a fling behind.
+    if ((start.scrolled || moved) && (start.scrolled || Math.hypot(dx, dy) > TAP_SLOP_PX)) {
+      const dt = performance.now() - start.t;
+      if (start.scrolled && moved && flow && dt >= 12) fling(flow, start.vy ?? 0);
       return;
     }
     const kind = classifyTurnGesture({
-      dx: x - start.x,
-      dy: y - start.y,
+      dx,
+      dy,
       dt: performance.now() - start.t,
-      canScroll: start.scrolled ? false : columnScrolls(),
-      scrolled: false,
+      canScroll: columnScrolls(),
+      scrolled: start.scrolled || moved,
+      momentum: false,
     });
     if (cancelled && kind !== "tap") return;
-    // The left side is always one sentence back. A tall sentence must not
-    // turn that tap into a scroll, and a shaky finger must not drop it.
-    if (start.zone === "prev" && kind !== "swipe-next") {
-      releaseTap("prev", x, y);
-      return;
-    }
     if (kind === "swipe-next") {
       stepZone("next");
       return;
@@ -2191,6 +2222,7 @@ export function TbrReader({
       return;
     }
     if (kind !== "tap") return;
+    if (momentumQuiet()) return;
     releaseTap(start.zone, x, y);
   }
 
@@ -2216,7 +2248,8 @@ export function TbrReader({
       lastTouchZoneRef.current = zone;
     }
     const flow = flowRef.current;
-    cancelAnimationFrame(flingRef.current);
+    const stoppedMomentum = momentumQuiet();
+    if (stoppedMomentum) noteMomentumStopped();
     scrollLockRef.current = false;
     // Arm before the lift. iOS can deliver the compatibility click before
     // pointerup; that click must not turn, and the lift still does.
@@ -2232,12 +2265,13 @@ export function TbrReader({
       scrollTop: flow?.scrollTop ?? 0,
       scrolled: false,
       turned: false,
+      stoppedMomentum,
       // Frozen at finger-down. The left third stays back even while the
       // sentence is still sliding.
       zone,
     };
     gestureRef.current = gesture;
-    armHold(gesture);
+    if (!stoppedMomentum) armHold(gesture);
     try {
       host.setPointerCapture(e.pointerId);
     } catch {
@@ -2336,6 +2370,7 @@ export function TbrReader({
     if (turnedAtRef.current > 0 && performance.now() - turnedAtRef.current < GHOST_MOUSE_MS) {
       return;
     }
+    if (momentumQuiet()) return;
     stepZone(zoneFrom(e.target, e.clientX, e.clientY));
   }
 

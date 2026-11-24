@@ -172,16 +172,24 @@ test("a short still touch is a tap, and a vertical drag in a tall breath scrolls
     "tap",
   );
   assert.equal(
-    classifyTurnGesture({ dx: 1, dy: 8, dt: 340, canScroll: false, scrolled: false }),
+    classifyTurnGesture({ dx: 1, dy: 8, dt: 280, canScroll: false, scrolled: false }),
     "tap",
+  );
+  assert.equal(
+    classifyTurnGesture({ dx: 1, dy: 8, dt: 340, canScroll: false, scrolled: false }),
+    "ignore",
   );
   assert.equal(
     classifyTurnGesture({ dx: 4, dy: 3, dt: 520, canScroll: false, scrolled: false }),
-    "tap",
+    "ignore",
   );
   assert.equal(
     classifyTurnGesture({ dx: 2, dy: 16, dt: 180, canScroll: true, scrolled: false }),
-    "tap",
+    "ignore",
+  );
+  assert.equal(
+    classifyTurnGesture({ dx: 2, dy: 4, dt: 80, canScroll: true, scrolled: false, momentum: true }),
+    "scroll",
   );
   assert.equal(
     classifyTurnGesture({ dx: 2, dy: 28, dt: 180, canScroll: true, scrolled: false }),
