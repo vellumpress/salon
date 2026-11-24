@@ -150,7 +150,8 @@
   --text-chrome--line-height: 1.25;
   --text-pitch: 0.875rem;
   --text-pitch--line-height: 1.5;
-  --text-breath: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
+  --text-size-base: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
+  --text-breath: var(--text-size-base);
   --text-breath--line-height: 1.45;
   --text-lookback: 1.02rem;
   --text-lookback--line-height: 1.45;
@@ -3233,7 +3234,8 @@ html.together-compose .upcoming-slot {
 
 @media (height <= 560px) {
   :root {
-    --text-breath: 1.12rem;
+    --text-size-base: 1.12rem;
+    --text-breath: var(--text-size-base);
     --text-lookback: 0.92rem;
   }
   .lookback-slot {
@@ -3285,7 +3287,8 @@ html.together-compose .upcoming-slot {
 
 /* Keyboard-open height must not restyle the together reading surface. */
 html.together-compose {
-  --text-breath: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
+  --text-size-base: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
+  --text-breath: var(--text-size-base);
   --text-lookback: 1.02rem;
   --text-breath--line-height: 1.45;
   --text-lookback--line-height: 1.45;
@@ -3986,6 +3989,10 @@ html.together-compose .chat-field {
   color: var(--reader-ink);
 }
 
+.reader-daylight .text-size-row {
+  color: var(--reader-ink);
+}
+
 .reader-daylight .text-muted,
 .reader-daylight .veil-note,
 .reader-daylight .veil-preface-note,
@@ -4031,14 +4038,16 @@ html.together-compose .chat-field {
 
 .reader-daylight .sit-presets,
 .reader-daylight .nav-reveal-nav,
-.reader-daylight .sand-cue-actions {
+.reader-daylight .sand-cue-actions,
+.reader-daylight .text-size-steps {
   background: var(--reader-rule);
   border-color: var(--reader-rule);
 }
 
 .reader-daylight .sit-preset,
 .reader-daylight .nav-reveal-btn,
-.reader-daylight .sand-cue-btn {
+.reader-daylight .sand-cue-btn,
+.reader-daylight .text-size-step {
   background: var(--reader-bg);
   color: var(--reader-ink);
 }
@@ -4046,7 +4055,8 @@ html.together-compose .chat-field {
 .reader-daylight .sit-preset-on,
 .reader-daylight .nav-reveal-btn-ink,
 .reader-daylight .sand-cue-btn-again,
-.reader-daylight .veil-action-full {
+.reader-daylight .veil-action-full,
+.reader-daylight .text-size-step[aria-pressed="true"] {
   background: var(--reader-ink);
   color: var(--reader-bg);
 }
@@ -4406,8 +4416,94 @@ html.together-compose.together-kb .reader-daylight .chat-field {
   color: inherit;
 }
 
-.reader-daylight .daylight-switch {
+.reader-daylight .daylight-switch,
+.reader-daylight .text-size-row {
   border-top-color: var(--reader-rule);
+}
+
+/* Five steps around the size the page already uses. The middle step is 1. */
+html[data-text-size="0"] {
+  --text-breath: calc(0.84 * var(--text-size-base));
+}
+
+html[data-text-size="1"] {
+  --text-breath: calc(0.92 * var(--text-size-base));
+}
+
+html[data-text-size="2"] {
+  --text-breath: calc(1 * var(--text-size-base));
+}
+
+html[data-text-size="3"] {
+  --text-breath: calc(1.12 * var(--text-size-base));
+}
+
+html[data-text-size="4"] {
+  --text-breath: calc(1.26 * var(--text-size-base));
+}
+
+.text-size-row {
+  display: flex;
+  width: 100%;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-top: 1px solid var(--color-ink, #1a1a1a);
+  padding: 0.35rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: var(--text-kicker);
+  font-weight: 400;
+  letter-spacing: var(--tracking-kicker);
+  line-height: var(--text-kicker--line-height);
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.text-size-steps {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--color-ink, #1a1a1a);
+  background: var(--color-ink, #1a1a1a);
+}
+
+.text-size-step {
+  display: flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-paper, #f4efe6);
+  padding: 0;
+  font-family: var(--font-serif);
+  line-height: 1;
+  color: var(--color-ink, #1a1a1a);
+}
+
+.text-size-step[data-text-step="0"] {
+  font-size: 0.8rem;
+}
+
+.text-size-step[data-text-step="1"] {
+  font-size: 0.95rem;
+}
+
+.text-size-step[data-text-step="2"] {
+  font-size: 1.1rem;
+}
+
+.text-size-step[data-text-step="3"] {
+  font-size: 1.3rem;
+}
+
+.text-size-step[data-text-step="4"] {
+  font-size: 1.5rem;
+}
+
+.text-size-step[aria-pressed="true"] {
+  background: var(--color-ink, #1a1a1a);
+  color: var(--color-paper, #f4efe6);
 }
 
 @media (prefers-reduced-motion: reduce) {

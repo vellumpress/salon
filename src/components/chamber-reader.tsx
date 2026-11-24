@@ -102,6 +102,8 @@ import {
   turnZone,
 } from "@/lib/reader-turn";
 import { useCenterLine } from "@/lib/use-center-line";
+import { TEXT_SIZE_COUNT, type TextSizeStep } from "@/lib/text-size";
+import { useTextSize } from "@/lib/use-text-size";
 
 type Overlay =
   | "none"
@@ -243,6 +245,7 @@ export function TbrReader({
   const daylight = useReaderDaylight();
   const centerLine = useCenterLine();
   const centerOn = centerLine.enabled;
+  const textSize = useTextSize();
   const turnHostRef = useRef<HTMLDivElement>(null);
   const togetherClapRef = useRef<(breath: number) => void>(() => {});
   const pendingTapRef = useRef<TapPoint | null>(null);
@@ -740,7 +743,7 @@ export function TbrReader({
   const display = useDisplayBlocks(
     breathLineRef,
     displayTexts,
-    `${together ? 1 : 0}:${centerOn ? 1 : 0}:${isKept ? 1 : 0}:${index}`,
+    `${together ? 1 : 0}:${centerOn ? 1 : 0}:${isKept ? 1 : 0}:${index}:${textSize.step}`,
     displayKind,
   );
   const metricsCacheKey = `${display.metricsKey}|${display.limit}|${display.linePx}|${displayKind}|${work.breaths.length}|${work.breaths[0]?.id ?? ""}|${mergeStopKey}`;
@@ -2639,6 +2642,30 @@ export function TbrReader({
                 <span>Center the line</span>
                 <span aria-hidden="true">{centerLine.enabled ? "On" : "Off"}</span>
               </button>
+              <div className="text-size-row" role="group" aria-label="Text size">
+                <span>Text size</span>
+                <span className="text-size-steps">
+                  {Array.from({ length: TEXT_SIZE_COUNT }, (_, step) => {
+                    const size = step as TextSizeStep;
+                    return (
+                      <button
+                        key={size}
+                        type="button"
+                        className="text-size-step"
+                        data-text-step={size}
+                        aria-pressed={textSize.step === size}
+                        aria-label={`Text size ${size + 1} of ${TEXT_SIZE_COUNT}`}
+                        onClick={(event) => {
+                          event.stopPropagation();
+                          textSize.setStep(size);
+                        }}
+                      >
+                        A
+                      </button>
+                    );
+                  })}
+                </span>
+              </div>
             </div>
           ) : null}
           <footer
