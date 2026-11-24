@@ -221,7 +221,8 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
   const live = css.match(/\.focus-live\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(live, /position:\s*absolute/);
-  assert.match(live, /rgb\(0 0 0 \/ 0\.5\)/);
+  assert.match(live, /overflow-y:\s*auto/);
+  assert.match(live, /transparent 0/);
   assert.match(live, /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \/ 3\)/);
   assert.match(
     live,
@@ -245,13 +246,14 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   const blur = css.match(/\.focus-blur-track\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(blur, /filter:\s*blur\(8px\)/);
   assert.doesNotMatch(blur, /\.breath-now|\.look-line|\.breath-sentence/);
-  const wash = css.match(/\.focus-wash\s*\{[^}]+\}/)?.[0] ?? "";
+  const wash = css.match(/\.focus-wash,\s*\n\.focus-frost\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(wash, /left:\s*0/);
   assert.match(wash, /right:\s*0/);
   assert.match(wash, /border:\s*0/);
   assert.match(wash, /box-shadow:\s*none/);
+  const washFill = css.match(/\.focus-wash\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(
-    wash,
+    washFill,
     /color-mix\(in srgb, var\(--reader-bg\) 50%, transparent\) var\(--focus-fade\)/,
   );
   const slot = css.match(/\.upcoming-slot\s*\{[^}]+\}/)?.[0] ?? "";
@@ -265,13 +267,19 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.doesNotMatch(breath, /blur|filter/);
   const transparent = css.slice(css.indexOf("@media (prefers-reduced-transparency: reduce)"));
   assert.match(transparent, /\.focus-blur-track\s*\{[^}]*filter:\s*none/);
-  assert.match(transparent, /\.focus-wash\s*\{[^}]*background:\s*var\(--reader-bg\)/);
+  assert.match(
+    transparent,
+    /\.focus-wash,\s*\.focus-frost\s*\{[^}]*background:\s*var\(--reader-bg\)/,
+  );
   const motion = css.slice(css.lastIndexOf("@media (prefers-reduced-motion: reduce)"));
   assert.match(motion, /\.reader-frame \*/);
   assert.match(motion, /\.focus-blur-track/);
   assert.match(motion, /transition:\s*none\s*!important/);
+  assert.match(css, /\.focus-frost-read\s*\{[^}]*color-mix\(in srgb, var\(--reader-bg\) 50%, transparent\)/);
+  assert.match(css, /\.focus-blur-clip\s*\{[^}]*#000 0/);
   assert.match(reader, /data-focus-band="now"/);
   assert.match(reader, /focus-blur-clip/);
+  assert.match(reader, /focus-frost-read/);
   assert.doesNotMatch(reader, /is-ahead|is-past|passage-ahead|ahead-shade/);
 });
 

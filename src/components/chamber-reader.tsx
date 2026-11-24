@@ -89,6 +89,7 @@ import {
   CENTER_LINE_ANCHOR,
   centerLineOffset,
   focusAnchorPx,
+  focusBands,
   upcomingBreaths,
 } from "@/lib/center-line";
 import {
@@ -269,6 +270,8 @@ export function TbrReader({
     scrolled: boolean;
     turned: boolean;
     zone: "prev" | "next" | null;
+    vy?: number;
+    sampleT?: number;
   } | null>(null);
   /** Pending press-and-hold. Cleared on release so the repeat stops on that frame. */
   const holdTimerRef = useRef(0);
@@ -325,6 +328,14 @@ export function TbrReader({
   const lookbackSlotRef = useRef<HTMLDivElement>(null);
   const readingPaneRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const flowRef = useRef<HTMLDivElement>(null);
+  const flingRef = useRef(0);
+  const scrollLockRef = useRef(false);
+  const scrollIgnoreUntilRef = useRef(0);
+  /** A finger or wheel scroll owns the column. Taps clear it and recenter. */
+  const userScrolledRef = useRef(false);
+  const placeTokenRef = useRef(0);
+  const appliedTokenRef = useRef(-1);
   const blurHostRef = useRef<HTMLDivElement>(null);
   const blurRootRef = useRef<ShadowRoot | null>(null);
   const blurSigRef = useRef("");
@@ -888,6 +899,8 @@ export function TbrReader({
     }
     ownTap();
     stepPulse.current = true;
+    userScrolledRef.current = false;
+    placeTokenRef.current += 1;
     if (!booted.current) steppedPlace.current = moved.index;
     rememberSentence(moved.index, moved.cursor, moved.window);
     if (moved.index !== at) goTo(moved.index, moved.cursor, moved.index > at);
@@ -1517,18 +1530,11 @@ export function TbrReader({
       return clone;
     };
 
-    const paintTracks = (transform: string, transition: string | null, ready: string | null) => {
+    const syncMirror = (scrollTop: number) => {
       const mirror = ensureBlurMirror();
-      const nodes = [track, mirror].filter((node): node is HTMLElement => Boolean(node));
-      for (const node of nodes) {
-        if (reduceMotion) node.style.transition = "none";
-        else if (transition != null) node.style.transition = transition;
-        if (ready != null) node.dataset.ready = ready;
-        node.style.transform = transform;
-      }
-      const liveSlot = breathSlotRef.current;
-      const mirrorSlot = mirror?.querySelector<HTMLElement>(".breath-slot");
-      if (liveSlot && mirrorSlot) mirrorSlot.scrollTop = liveSlot.scrollTop;
+      if (!mirror) return;
+      mirror.style.transition = "none";
+      mirror.style.transform = `translate3d(0, ${-scrollTop}px, 0)`;
     };
 
     const place = (animate: boolean) => {
@@ -1559,53 +1565,48 @@ export function TbrReader({
       // Only a breath that is still one unwindowed block scrolls inside the slot.
       // The three bands stay put either way.
       const tooTall = alone && breathTooTall(line.scrollHeight, readingHeight || height);
-      pane.dataset.focusTall = tooTall ? "1" : "0";
-      pane.style.setProperty("--focus-pad-top", tooTall ? "0px" : `${anchorPx}px`);
-      pane.style.setProperty("--focus-pad-bottom", tooTall ? "0px" : `${Math.max(0, height - anchorPx)}px`);
-      if (tooTall) pane.style.setProperty("--focus-slot-max", `${Math.floor(height)}px`);
-      else pane.style.removeProperty("--focus-slot-max");
-      const mirror = ensureBlurMirror();
-      if (mirror) {
-        for (const node of mirror.querySelectorAll<HTMLElement>(".lookback-slot, .upcoming-fold")) {
-          node.style.display = tooTall ? "none" : "";
-        }
-        const mirrorSlot = mirror.querySelector<HTMLElement>(".breath-slot");
-        if (mirrorSlot) {
-          mirrorSlot.style.maxHeight = tooTall ? `${Math.floor(height)}px` : "";
-          mirrorSlot.style.overflowY = tooTall ? "auto" : "";
-        }
-      }
+      // The page stays one column. A tall paragraph scrolls with the rest of it.
+      pane.dataset.focusTall = "0";
+      const bands = focusBands(height, lead);
+      const focusY = (bands.now.top + bands.now.bottom) / 2 || anchorPx;
+      pane.style.setProperty("--focus-pad-top", `${Math.round(focusY)}px`);
+      pane.style.setProperty("--focus-pad-bottom", `${Math.round(Math.max(0, height - focusY))}px`);
+      pane.style.removeProperty("--focus-slot-max");
+      ensureBlurMirror();
       landScroll();
 
-      const trackRect = track.getBoundingClientRect();
-      const lineBox = line.getBoundingClientRect();
-      const useUnion = !alone && !tooTall && unionHeight > 0;
-      const targetTop = useUnion ? unionTop : lineBox.top;
-      const targetHeight = useUnion ? unionHeight : lineBox.height;
-      const lineTop = targetTop - trackRect.top;
-      const shift = tooTall
-        ? 0
-        : centerLineOffset({
-            paneHeight: height,
-            lineTop,
-            lineHeight: targetHeight,
-            anchor: height > 0 ? anchorPx / height : undefined,
-          });
-      const travel = Math.min(Math.max(0, lastTravel.current), height);
-      const motion =
-        animate &&
-        motionArmed.current &&
-        stepped &&
-        !reduceMotion &&
-        !tooTall &&
-        travel > 1 &&
-        track.dataset.ready === "1";
-      // Measure the landed line, not the first frame of the slide. The back
-      // side is the left third at every height, so a sliding sentence cannot
-      // move that side.
-      const previousTransition = track.style.transition;
-      paintTracks(`translate3d(0, ${shift}px, 0)`, "none", "0");
-      void track.offsetHeight;
+      const flow = flowRef.current;
+      const tokenMoved = placeTokenRef.current !== appliedTokenRef.current;
+      const shouldStick = tokenMoved || !userScrolledRef.current;
+      if (flow && shouldStick) {
+        if (tokenMoved) appliedTokenRef.current = placeTokenRef.current;
+        void flow.offsetHeight;
+        let top = Infinity;
+        let bottom = -Infinity;
+        for (const node of focuses) {
+          const rect = node.getBoundingClientRect();
+          if (rect.width === 0 && rect.height === 0) continue;
+          top = Math.min(top, rect.top);
+          bottom = Math.max(bottom, rect.bottom);
+        }
+        const lineBox = line.getBoundingClientRect();
+        const targetTop = bottom > top ? top : lineBox.top;
+        const targetHeight = bottom > top ? bottom - top : lineBox.height;
+        const focusMid = targetTop + targetHeight / 2;
+        const flowTop = flow.getBoundingClientRect().top;
+        const delta = focusMid - (flowTop + focusY);
+        const nextTop = Math.max(0, flow.scrollTop + delta);
+        scrollIgnoreUntilRef.current = performance.now() + 180;
+        scrollLockRef.current = true;
+        flow.scrollTop = nextTop;
+        scrollLockRef.current = false;
+        syncMirror(flow.scrollTop);
+        void track.offsetHeight;
+      } else if (flow) {
+        syncMirror(flow.scrollTop);
+        scrollLockRef.current = false;
+      }
+      track.dataset.ready = "1";
       const ahead = upcomingSlotRef.current;
       const aheadLine = ahead?.querySelector<HTMLElement>(".look-line");
       const landed = [...line.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
@@ -1630,32 +1631,11 @@ export function TbrReader({
       const zone = hostRect
         ? Math.max(0, Math.min(Math.round(hostRect.height), Math.round(focusTop)))
         : 0;
-      zoneRef.current = { tall: tooTall, split: zone, ready: true };
-      if (motion) {
-        // Land on the true center, but start one breath lower so the column
-        // moves up. Windowed lookback can change height by much more than a
-        // breath; that jump is applied before paint, and only the breath
-        // travels in view.
-        holdMotionUntil = performance.now() + 320;
-        slidingUntilRef.current = holdMotionUntil;
-        paintTracks(`translate3d(0, ${shift + travel}px, 0)`, "none", "0");
-        void track.offsetHeight;
-        // Arm the ease while the column is still one step low, then move.
-        paintTracks(`translate3d(0, ${shift + travel}px, 0)`, previousTransition, "1");
-        void track.offsetHeight;
-        paintTracks(`translate3d(0, ${shift}px, 0)`, null, null);
-      } else {
-        slidingUntilRef.current = 0;
-        paintTracks(`translate3d(0, ${shift}px, 0)`, previousTransition, reduceMotion ? "0" : null);
-        if (!reduceMotion) {
-          requestAnimationFrame(() => {
-            if (!live || !track.isConnected) return;
-            track.dataset.ready = "1";
-            const mirror = blurRootRef.current?.querySelector<HTMLElement>(".center-track");
-            if (mirror) mirror.dataset.ready = "1";
-          });
-        }
-      }
+      zoneRef.current = { tall: false, split: zone, ready: true };
+      slidingUntilRef.current = 0;
+      void animate;
+      void reduceMotion;
+      void stepped;
 
       const overflowsNow = tooTall || slot.scrollHeight - slot.clientHeight > 1;
       setOverflows((prev) => (prev === overflowsNow ? prev : overflowsNow));
@@ -1673,14 +1653,42 @@ export function TbrReader({
     };
 
     place(true);
+    const flow = flowRef.current;
+    let placeTimer = 0;
     const onScroll = () => {
-      if (!live) return;
-      const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
-      setAtEnd((prev) => (prev === end ? prev : end));
-      const mirrorSlot = blurRootRef.current?.querySelector<HTMLElement>(".breath-slot");
-      if (mirrorSlot && mirrorSlot.scrollTop !== slot.scrollTop) mirrorSlot.scrollTop = slot.scrollTop;
+      if (!live || !flow) return;
+      syncMirror(flow.scrollTop);
+      if (scrollLockRef.current || performance.now() < scrollIgnoreUntilRef.current) return;
+      window.clearTimeout(placeTimer);
+      placeTimer = window.setTimeout(() => {
+        if (!live) return;
+        const box = flow.getBoundingClientRect();
+        const leadNow = Number.parseFloat(getComputedStyle(pane).marginTop);
+        const leadPx = Number.isFinite(leadNow) && leadNow < 0 ? -leadNow : 0;
+        const mid = box.top + (focusBands(box.height, leadPx).now.top + focusBands(box.height, leadPx).now.bottom) / 2;
+        const nodes = [...flow.querySelectorAll<HTMLElement>("[data-sentence]")];
+        let best: HTMLElement | null = null;
+        for (const node of nodes) {
+          const rect = node.getBoundingClientRect();
+          if (rect.height < 2) continue;
+          if (rect.top <= mid && rect.bottom >= mid) best = node;
+        }
+        const next = Number(best?.getAttribute("data-sentence"));
+        if (!Number.isFinite(next)) return;
+        userScrolledRef.current = true;
+        const current = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
+        if (next === current) return;
+        useTbr.getState().setBreath(work.id, next, stampAt(work, next));
+      }, 90);
     };
-    slot.addEventListener("scroll", onScroll, { passive: true });
+    flow?.addEventListener("scroll", onScroll, { passive: true });
+    const onWheel = (event: WheelEvent) => {
+      if (!flow) return;
+      if (Math.abs(event.deltaY) < 1) return;
+      flow.scrollTop += event.deltaY;
+      event.preventDefault();
+    };
+    turnHostRef.current?.addEventListener("wheel", onWheel, { passive: false });
     const ro = new ResizeObserver(() => {
       const finish = () => {
         if (!live) return;
@@ -1716,7 +1724,9 @@ export function TbrReader({
       live = false;
       document.fonts?.removeEventListener("loadingdone", onFonts);
       ro.disconnect();
-      slot.removeEventListener("scroll", onScroll);
+      flow?.removeEventListener("scroll", onScroll);
+      turnHostRef.current?.removeEventListener("wheel", onWheel);
+      window.clearTimeout(placeTimer);
     };
   }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey]);
 
@@ -1870,18 +1880,7 @@ export function TbrReader({
       data-sentence-count={sentenceCount}
       data-window-lift={lift.lead ? "lead" : lift.lines ? "lines" : "none"}
     >
-      {lift.lead ? (
-        <p className="breath-block" data-window-lead="">
-          <EmphasizedText text={lift.lead} />
-        </p>
-      ) : null}
-      {lift.lines
-        ? lift.lines.map((line, lineAt) => (
-            <p key={`lift-${lineAt}`} className="breath-block" data-window-line="">
-              <EmphasizedText text={line} />
-            </p>
-          ))
-        : passage.map((breathIndex) => {
+      {passage.map((breathIndex) => {
             const item = work.breaths[breathIndex];
             if (!item) return null;
             const blocks = display.blocksFor(item.text);
@@ -1952,9 +1951,25 @@ export function TbrReader({
   }
 
   function columnScrolls() {
-    const slot = breathSlotRef.current;
-    if (!slot) return false;
-    return slot.scrollHeight - slot.clientHeight > 24;
+    const flow = flowRef.current;
+    if (!flow) return false;
+    return flow.scrollHeight - flow.clientHeight > 24;
+  }
+
+  function fling(flow: HTMLElement, velocity: number) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (Math.abs(velocity) < 0.05) return;
+    cancelAnimationFrame(flingRef.current);
+    let v = velocity;
+    let last = performance.now();
+    const step = (now: number) => {
+      const dt = Math.min(32, now - last);
+      last = now;
+      flow.scrollTop += v * dt;
+      v *= Math.pow(0.9, dt / 16);
+      if (Math.abs(v) > 0.02) flingRef.current = requestAnimationFrame(step);
+    };
+    flingRef.current = requestAnimationFrame(step);
   }
 
   function zoneFrom(target: EventTarget | null, x: number, y: number) {
@@ -2119,12 +2134,13 @@ export function TbrReader({
     if (gestureRef.current === start) gestureRef.current = null;
     turnedAtRef.current = performance.now();
     if (start.pointerType === "touch") rememberTouch(x, y);
-    const slot = breathSlotRef.current;
-    const moved = Boolean(slot && Math.abs(slot.scrollTop - start.scrollTop) > 3);
-    // A drag that actually moved the sentence is a scroll. A drag that
-    // clamped (top of a tall sentence, or a pixel that never stuck) is still
-    // the tap the finger started as.
-    if (start.scrolled && moved) return;
+    const flow = flowRef.current;
+    const moved = Boolean(flow && Math.abs(flow.scrollTop - start.scrollTop) > 3);
+    // A drag that actually moved the page is a scroll, and it keeps going.
+    if (start.scrolled && moved) {
+      if (flow) fling(flow, start.vy ?? 0);
+      return;
+    }
     const kind = classifyTurnGesture({
       dx: x - start.x,
       dy: y - start.y,
@@ -2172,7 +2188,9 @@ export function TbrReader({
       rememberTouch(e.clientX, e.clientY);
       lastTouchZoneRef.current = zone;
     }
-    const slot = breathSlotRef.current;
+    const flow = flowRef.current;
+    cancelAnimationFrame(flingRef.current);
+    scrollLockRef.current = false;
     // Arm before the lift. iOS can deliver the compatibility click before
     // pointerup; that click must not turn, and the lift still does.
     noteOwed(1);
@@ -2184,7 +2202,7 @@ export function TbrReader({
       lastY: e.clientY,
       t: performance.now(),
       pointerType: e.pointerType,
-      scrollTop: slot?.scrollTop ?? 0,
+      scrollTop: flow?.scrollTop ?? 0,
       scrolled: false,
       turned: false,
       // Frozen at finger-down. The left third stays back even while the
@@ -2205,22 +2223,26 @@ export function TbrReader({
   function moveTurn(e: ReactPointerEvent<HTMLDivElement>) {
     const start = gestureRef.current;
     if (!start || start.id !== e.pointerId || ghostPointer(e)) return;
+    const prevY = start.lastY;
+    const prevT = start.sampleT ?? start.t;
     start.lastX = e.clientX;
     start.lastY = e.clientY;
     if (fingerSlipped(start)) clearHoldTimer();
     if (start.zone === "prev") return;
-    const slot = breathSlotRef.current;
-    if (!slot || !columnScrolls()) return;
+    const flow = flowRef.current;
+    if (!flow || !columnScrolls()) return;
     const dy = e.clientY - start.y;
     const dx = e.clientX - start.x;
     if (!start.scrolled) {
       if (Math.abs(dy) < SCROLL_ARM_PX || Math.abs(dy) < Math.abs(dx)) return;
       start.scrolled = true;
-      start.scrollTop = slot.scrollTop;
+      start.scrollTop = flow.scrollTop;
+      cancelAnimationFrame(flingRef.current);
     }
-    slot.scrollTop = start.scrollTop - (e.clientY - start.y);
-    const mirrorSlot = blurRootRef.current?.querySelector<HTMLElement>(".breath-slot");
-    if (mirrorSlot) mirrorSlot.scrollTop = slot.scrollTop;
+    const now = performance.now();
+    start.sampleT = now;
+    start.vy = (prevY - e.clientY) / Math.max(16, now - prevT);
+    flow.scrollTop = start.scrollTop - (e.clientY - start.y);
     if (e.cancelable) e.preventDefault();
   }
 
@@ -2376,7 +2398,7 @@ export function TbrReader({
         {showPalimpsest ? <p className="palimpsest font-display">{palimpsest}</p> : null}
         {centerOn ? (
           <>
-            <div className="focus-live">
+            <div ref={flowRef} className="focus-live">
               <div ref={trackRef} className="center-track">
                 <div className="center-pad center-pad-top" aria-hidden />
                 <div className="center-lines">
@@ -2396,6 +2418,7 @@ export function TbrReader({
               </div>
             </div>
             <div ref={blurHostRef} className="focus-blur-clip" aria-hidden="true" />
+            <div className="focus-frost focus-frost-read" aria-hidden="true" />
             <div className="focus-wash" aria-hidden="true" />
             <div className="focus-bands" aria-hidden="true">
               <div className="focus-band focus-band-read" data-focus-band="read" />
