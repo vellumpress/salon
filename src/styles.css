@@ -150,7 +150,9 @@
   --text-chrome--line-height: 1.25;
   --text-pitch: 0.875rem;
   --text-pitch--line-height: 1.5;
-  --text-breath: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
+  --text-size-base: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
+  --text-size-scale: 1;
+  --text-breath: calc(var(--text-size-scale) * var(--text-size-base));
   --text-breath--line-height: 1.45;
   --text-lookback: 1.02rem;
   --text-lookback--line-height: 1.45;
@@ -3233,7 +3235,8 @@ html.together-compose .upcoming-slot {
 
 @media (height <= 560px) {
   :root {
-    --text-breath: 1.12rem;
+    --text-size-base: 1.12rem;
+    --text-breath: calc(var(--text-size-scale) * var(--text-size-base));
     --text-lookback: 0.92rem;
   }
   .lookback-slot {
@@ -3285,7 +3288,8 @@ html.together-compose .upcoming-slot {
 
 /* Keyboard-open height must not restyle the together reading surface. */
 html.together-compose {
-  --text-breath: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
+  --text-size-base: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
+  --text-breath: calc(var(--text-size-scale) * var(--text-size-base));
   --text-lookback: 1.02rem;
   --text-breath--line-height: 1.45;
   --text-lookback--line-height: 1.45;
@@ -3986,6 +3990,10 @@ html.together-compose .chat-field {
   color: var(--reader-ink);
 }
 
+.reader-daylight .text-size-row {
+  color: var(--reader-ink);
+}
+
 .reader-daylight .text-muted,
 .reader-daylight .veil-note,
 .reader-daylight .veil-preface-note,
@@ -4406,8 +4414,95 @@ html.together-compose.together-kb .reader-daylight .chat-field {
   color: inherit;
 }
 
-.reader-daylight .daylight-switch {
+.reader-daylight .daylight-switch,
+.reader-daylight .text-size-row {
   border-top-color: var(--reader-rule);
+}
+
+.text-size-row {
+  display: flex;
+  width: 100%;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-top: 1px solid var(--color-ink, #1a1a1a);
+  padding: 0.35rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: var(--text-kicker);
+  font-weight: 400;
+  letter-spacing: var(--tracking-kicker);
+  line-height: var(--text-kicker--line-height);
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.text-size-slider {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  align-items: center;
+  gap: 0.55rem;
+  touch-action: none;
+}
+
+.text-size-mark {
+  flex: none;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.text-size-mark-small {
+  font-size: 0.75rem;
+}
+
+.text-size-mark-large {
+  font-size: 1.45rem;
+}
+
+.text-size-slider input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 0;
+  flex: 1;
+  height: 2.75rem;
+  margin: 0;
+  background: transparent;
+  touch-action: none;
+  cursor: pointer;
+}
+
+.text-size-slider input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background: currentColor;
+}
+
+.text-size-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-top: -0.6rem;
+  border: 0;
+  border-radius: 0;
+  background: currentColor;
+}
+
+.text-size-slider input[type="range"]::-moz-range-track {
+  height: 2px;
+  background: currentColor;
+  border: 0;
+}
+
+.text-size-slider input[type="range"]::-moz-range-thumb {
+  width: 1.35rem;
+  height: 1.35rem;
+  border: 0;
+  border-radius: 0;
+  background: currentColor;
 }
 
 @media (prefers-reduced-motion: reduce) {

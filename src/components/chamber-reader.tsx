@@ -102,6 +102,8 @@ import {
   turnZone,
 } from "@/lib/reader-turn";
 import { useCenterLine } from "@/lib/use-center-line";
+import { TEXT_SIZE_MAX, TEXT_SIZE_MIN, TEXT_SIZE_STEP } from "@/lib/text-size";
+import { useTextSize } from "@/lib/use-text-size";
 
 type Overlay =
   | "none"
@@ -243,6 +245,7 @@ export function TbrReader({
   const daylight = useReaderDaylight();
   const centerLine = useCenterLine();
   const centerOn = centerLine.enabled;
+  const textSize = useTextSize();
   const turnHostRef = useRef<HTMLDivElement>(null);
   const togetherClapRef = useRef<(breath: number) => void>(() => {});
   const pendingTapRef = useRef<TapPoint | null>(null);
@@ -332,6 +335,8 @@ export function TbrReader({
   const flingRef = useRef(0);
   const scrollLockRef = useRef(false);
   const scrollIgnoreUntilRef = useRef(0);
+  /** scrollTop last written to keep the sentence in the sharp band. */
+  const anchoredScrollRef = useRef<number | null>(null);
   /** A finger or wheel scroll owns the column. Taps clear it and recenter. */
   const userScrolledRef = useRef(false);
   const placeTokenRef = useRef(0);
@@ -740,7 +745,7 @@ export function TbrReader({
   const display = useDisplayBlocks(
     breathLineRef,
     displayTexts,
-    `${together ? 1 : 0}:${centerOn ? 1 : 0}:${isKept ? 1 : 0}:${index}`,
+    `${together ? 1 : 0}:${centerOn ? 1 : 0}:${isKept ? 1 : 0}:${index}:${textSize.scale.toFixed(2)}`,
     displayKind,
   );
   const metricsCacheKey = `${display.metricsKey}|${display.limit}|${display.linePx}|${displayKind}|${work.breaths.length}|${work.breaths[0]?.id ?? ""}|${mergeStopKey}`;
@@ -1420,6 +1425,13 @@ export function TbrReader({
   }, []);
 
   useLayoutEffect(() => {
+    // A size change reflows the column. Stick to the sentence already in
+    // the sharp band instead of letting that reflow become a scroll.
+    placeTokenRef.current += 1;
+    userScrolledRef.current = false;
+  }, [textSize.scale]);
+
+  useLayoutEffect(() => {
     const slot = breathSlotRef.current;
     const stepped = stepPulse.current;
     stepPulse.current = false;
@@ -1605,6 +1617,7 @@ export function TbrReader({
         const nextTop = Math.max(0, flow.scrollTop + delta);
         scrollIgnoreUntilRef.current = performance.now() + 180;
         scrollLockRef.current = true;
+        anchoredScrollRef.current = nextTop;
         flow.scrollTop = nextTop;
         scrollLockRef.current = false;
         syncMirror(flow.scrollTop);
@@ -1665,6 +1678,13 @@ export function TbrReader({
     const onScroll = () => {
       if (!live || !flow) return;
       syncMirror(flow.scrollTop);
+      if (
+        anchoredScrollRef.current != null &&
+        Math.abs(flow.scrollTop - anchoredScrollRef.current) <= 1
+      ) {
+        return;
+      }
+      anchoredScrollRef.current = null;
       if (scrollLockRef.current || performance.now() < scrollIgnoreUntilRef.current) return;
       window.clearTimeout(placeTimer);
       placeTimer = window.setTimeout(() => {
@@ -1735,7 +1755,7 @@ export function TbrReader({
       turnHostRef.current?.removeEventListener("wheel", onWheel);
       window.clearTimeout(placeTimer);
     };
-  }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey]);
+  }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey, navReveal]);
 
   const durationMs = sittingMinutes > 0 ? sittingMinutes * 60 * 1000 : 0;
   const endsAt =
@@ -2639,6 +2659,30 @@ export function TbrReader({
                 <span>Center the line</span>
                 <span aria-hidden="true">{centerLine.enabled ? "On" : "Off"}</span>
               </button>
+              <div className="text-size-row">
+                <span id="reader-text-size-label">Text size</span>
+                <span className="text-size-slider">
+                  <span className="text-size-mark text-size-mark-small" aria-hidden="true">
+                    A
+                  </span>
+                  <input
+                    type="range"
+                    min={TEXT_SIZE_MIN}
+                    max={TEXT_SIZE_MAX}
+                    step={TEXT_SIZE_STEP}
+                    value={textSize.scale}
+                    aria-labelledby="reader-text-size-label"
+                    onPointerDown={(event) => event.stopPropagation()}
+                    onChange={(event) => {
+                      event.stopPropagation();
+                      textSize.setScale(Number(event.currentTarget.value));
+                    }}
+                  />
+                  <span className="text-size-mark text-size-mark-large" aria-hidden="true">
+                    A
+                  </span>
+                </span>
+              </div>
             </div>
           ) : null}
           <footer
