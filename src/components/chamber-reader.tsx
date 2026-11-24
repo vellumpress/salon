@@ -829,7 +829,7 @@ export function TbrReader({
       breathId: work.breaths[index]?.id ?? "",
     });
     useTbr.getState().stampUserMove(work.id, atMs);
-    useTbr.getState().setSentenceAt(work.id, index, cursor);
+    useTbr.getState().setSentenceAt(work.id, index, cursor, spotWindow);
   }
 
   function goTo(next: number, sentence = 0, reading = false) {
@@ -904,7 +904,10 @@ export function TbrReader({
     if (!booted.current) steppedPlace.current = moved.index;
     rememberSentence(moved.index, moved.cursor, moved.window);
     if (moved.index !== at) goTo(moved.index, moved.cursor, moved.index > at);
-    else markUserPlace(moved.index, moved.cursor, moved.window);
+    else {
+      markUserPlace(moved.index, moved.cursor, moved.window);
+      if (delta > 0) useTbr.getState().creditReadingStep(work.id);
+    }
   }
 
   function advance() {
@@ -932,13 +935,17 @@ export function TbrReader({
     }
     const saved = savedSentenceAt(progress, index);
     if (saved != null) {
+      const savedWindow =
+        progress?.breathIndex === index && typeof progress.sentenceWindow === "number"
+          ? Math.max(0, Math.floor(progress.sentenceWindow))
+          : 0;
       ownedIndexRef.current = index;
-      sentenceOwned.current = { index, cursor: saved, window: 0 };
-      if (cursorRef.current !== saved || windowRef.current !== 0) {
+      sentenceOwned.current = { index, cursor: saved, window: savedWindow };
+      if (cursorRef.current !== saved || windowRef.current !== savedWindow) {
         cursorRef.current = saved;
-        windowRef.current = 0;
+        windowRef.current = savedWindow;
         setCursor(saved);
-        setSpotWindow(0);
+        setSpotWindow(savedWindow);
       }
       return;
     }

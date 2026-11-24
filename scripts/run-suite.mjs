@@ -15,6 +15,8 @@ export const scriptTests = "scripts/**/*.test.mjs";
  * three-phone sit lead, so they land on different machines. Hold stays with
  * the taps: a busy three-phone sit can make a release look like an extra step. */
 export const smokeFiles = [
+  "src/lib/reader-home-tap.test.ts",
+  "src/lib/reader-quicksand-sit.test.ts",
   "src/lib/reader-back-tap.test.ts",
   "src/lib/social-rooms.e2e.test.ts",
   "src/lib/reader-tap-matrix.test.ts",
@@ -114,6 +116,9 @@ export const allTsFiles = [
   "src/lib/status-bar-color.test.ts",
   "src/lib/bottom-edge.test.ts",
   "src/lib/reader-chrome-bar.test.ts",
+  "src/lib/reader-home-tap.test.ts",
+  "src/lib/reader-quicksand-sit.test.ts",
+  "src/lib/opening-breath.test.ts",
   "src/lib/reading-progress.test.ts",
   "src/lib/reading-progress-bar.test.ts",
   "src/lib/reader-back-tap.test.ts",

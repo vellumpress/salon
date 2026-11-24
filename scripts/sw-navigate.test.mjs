@@ -203,6 +203,24 @@ test("a __fresh navigation offline uses the retired shell, then an inline page",
   assert.match(html, /location\.reload\(\)/);
 });
 
+test("an offline navigation serves the cached shell and does not touch the network", async () => {
+  let fetches = 0;
+  const { caches, api } = loadWorker({
+    onLine: false,
+    fetchImpl: () => {
+      fetches += 1;
+      return Promise.reject(new TypeError("Failed to fetch"));
+    },
+  });
+  await putShell(caches, SHELL_CACHE_NAME, shellHtml());
+  const res = await api.handleNavigate(navEvent(`${SHELL_URL}read/quicksand`));
+  const html = await res.text();
+  assert.equal(fetches, 0);
+  assert.equal(res.status, 200);
+  assert.match(html, /index-abc\.js/);
+  assert.doesNotMatch(html, /Retry/);
+});
+
 test("a normal navigation offline never rejects respondWith", async () => {
   const cached = loadWorker({ onLine: false });
   await putShell(cached.caches, SHELL_CACHE_NAME);
