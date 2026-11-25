@@ -81,7 +81,6 @@ export function ShelfList({
       hydrated={hydrated}
       heading="Shelf"
       empty="Nothing here yet. Open a book and tap Shelf."
-      sectionId="shelf"
     />
   );
 }

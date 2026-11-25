@@ -154,6 +154,10 @@ export function YouReading({
   const noteInsight = useTbr((s) => s.noteInsight);
   const [view, setViewState] = useState<View>(chrome?.view ?? "today");
   const [detail, setDetailState] = useState<ContributorId | null>(chrome?.detail ?? null);
+  // The account chunk can replace this tree between pointerdown and click.
+  // The stable page records the tab on `chrome`; pick it up before paint.
+  if (chrome && chrome.view !== view) setViewState(chrome.view);
+  if (chrome && (chrome.detail ?? null) !== detail) setDetailState(chrome.detail);
   const setView = (next: View) => {
     if (chrome) chrome.view = next;
     setViewState(next);
@@ -248,11 +252,13 @@ export function YouReading({
                 end={trendsEnd}
               />
             ) : view === "shelf" ? (
-              <LinesBoundary fallback={<LinesFallback kicker="Shelf" />}>
-                <Suspense fallback={<LinesFallback kicker="Shelf" />}>
-                  <ShelfList ids={favorites} hydrated={hydrated} />
-                </Suspense>
-              </LinesBoundary>
+              <section id="shelf">
+                <LinesBoundary fallback={<LinesFallback kicker="Shelf" />}>
+                  <Suspense fallback={<LinesFallback kicker="Shelf" />}>
+                    <ShelfList ids={favorites} hydrated={hydrated} />
+                  </Suspense>
+                </LinesBoundary>
+              </section>
             ) : view === "lines" ? (
               <LinesBoundary fallback={<LinesFallback kicker="Your lines" />}>
                 <Suspense fallback={<LinesFallback kicker="Your lines" />}>
@@ -295,6 +301,11 @@ function YouNav({ view, onView }: { view: View; onView: (view: View) => void }) 
         <button
           key={tab.id}
           type="button"
+          data-you-tab={tab.id}
+          onPointerDown={(event) => {
+            if (event.button !== 0) return;
+            onView(tab.id);
+          }}
           onClick={() => onView(tab.id)}
           className={cn(
             "type-kicker min-h-12 flex-1 px-2",
