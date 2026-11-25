@@ -178,7 +178,7 @@ test("a breath that cannot sit on the lower anchor scrolls instead of clipping",
   assert.equal(breathTooTall(0, pane), false);
 });
 
-test("upcoming breaths are a scene-bounded window, not the rest of the book", () => {
+test("upcoming breaths cross into the next chapter and stop at the book", () => {
   const work = workOf([
     { id: "one", count: 4 },
     { id: "two", count: 40 },
@@ -186,20 +186,25 @@ test("upcoming breaths are a scene-bounded window, not the rest of the book", ()
   ]);
   const startOfTwo = 4;
 
-  assert.equal(upcomingBreaths(work, startOfTwo - 1).length, 0);
+  const across = upcomingBreaths(work, startOfTwo - 1);
+  assert.equal(across[0]?.id, "two-0");
+  assert.equal(across[0]?.sceneId, "two");
+  assert.ok(across.length <= UPCOMING_WINDOW);
+
   assert.equal(upcomingBreaths(work, startOfTwo)[0]?.id, "two-1");
 
   const windowed = upcomingBreaths(work, startOfTwo);
   assert.equal(windowed.length, UPCOMING_WINDOW);
-  assert.ok(windowed.every((breath) => breath.sceneId === "two"));
   assert.equal(windowed[0]?.id, "two-1");
   assert.equal(windowed.at(-1)?.id, `two-${UPCOMING_WINDOW}`);
   assert.equal(upcomingBreaths(work, startOfTwo, 3).map((breath) => breath.id).join(","), "two-1,two-2,two-3");
 
   const nearEnd = upcomingBreaths(work, startOfTwo + 37);
-  assert.equal(nearEnd.length, 2);
-  assert.equal(nearEnd.at(-1)?.id, "two-39");
-  assert.equal(upcomingBreaths(work, startOfTwo + 39).length, 0);
+  assert.equal(nearEnd[0]?.id, "two-38");
+  assert.equal(nearEnd[2]?.sceneId, "three");
+  assert.equal(nearEnd.length, 8);
+  assert.equal(upcomingBreaths(work, startOfTwo + 39)[0]?.id, "three-0");
+  assert.equal(upcomingBreaths(work, work.breaths.length - 1).length, 0);
   assert.equal(upcomingBreaths(work, work.breaths.length).length, 0);
   assert.equal(upcomingBreaths(work, -1).length, 0);
   assert.equal(upcomingBreaths(work, startOfTwo, 0).length, 0);

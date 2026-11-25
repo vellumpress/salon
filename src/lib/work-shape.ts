@@ -1,5 +1,6 @@
 import type { Breath, Scene, Work } from "./literature";
 import { breathsFor } from "./literature";
+import { lookbackBreaths as columnLookback } from "./center-line.ts";
 import type { ShelfWork } from "./catalog/shelf";
 import { isChapterHeading, isChapterOne, isFrontMatter, repairLines } from "./sentences";
 import { storyIntroductionStartIndex, storyPrefaceStartIndex } from "./opening-scene";
@@ -66,12 +67,9 @@ export function isLastBreathOfScene(work: Work, index: number) {
   return !next || next.sceneId !== current.sceneId;
 }
 
-/** Prior breaths still in this scene — chapter/poem breaks clear the lookback. */
+/** Prior breaths in the column. Re-exported so the reader keeps one import path. */
 export function lookbackBreaths(work: Work, index: number, limit = 12) {
-  const current = work.breaths[index];
-  if (!current) return [];
-  const start = Math.max(0, index - limit);
-  return work.breaths.slice(start, index).filter((breath) => breath.sceneId === current.sceneId);
+  return columnLookback(work, index, limit);
 }
 
 export function progressInScene(work: Work, index: number) {

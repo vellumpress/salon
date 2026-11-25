@@ -59,8 +59,21 @@ export function writeCenterLineEnabled(on: boolean, store: Store | null = defaul
 }
 
 /**
- * Next breaths in this scene only. Chapter and poem breaks clear the preview
- * the same way they clear lookback, and the scan stops at `limit`.
+ * Prior breaths in the column, including the chapter or poem just above.
+ * The window is still `limit` breaths. A break inside it is a signpost,
+ * not a cut that leaves the page blank.
+ */
+export function lookbackBreaths(work: Work, index: number, limit = 12): Breath[] {
+  const current = work.breaths[index];
+  if (!current) return [];
+  const start = Math.max(0, index - Math.max(0, Math.floor(limit)));
+  return work.breaths.slice(start, index);
+}
+
+/**
+ * The next breaths under the line, including the next chapter or poem.
+ * The scan stops at `limit`, and at the end of the book. A chapter break
+ * is a signpost in the column, not a place the page runs out.
  */
 export function upcomingBreaths(work: Work, index: number, limit = UPCOMING_WINDOW): Breath[] {
   if (!Number.isFinite(limit) || limit <= 0) return [];
@@ -71,7 +84,7 @@ export function upcomingBreaths(work: Work, index: number, limit = UPCOMING_WIND
   const breaths = work.breaths;
   for (let i = index + 1; i < breaths.length && out.length < cap; i += 1) {
     const breath = breaths[i];
-    if (!breath || breath.sceneId !== current.sceneId) break;
+    if (!breath) break;
     out.push(breath);
   }
   return out;

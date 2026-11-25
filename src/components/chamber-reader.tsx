@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type TouchEvent as ReactTouchEvent } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type ReactNode, type TouchEvent as ReactTouchEvent } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { adoptFrameIndex, bootShouldKeepPlace, firstPaintIndex, pendingLinkAt, savedSentenceAt } from "@/lib/deep-link-breath";
@@ -15,7 +15,7 @@ import {
 import { breathRemapLoaded, loadBreathRemap, readBreathRemap } from "@/lib/breath-remap";
 import { bindHash, reanchorProgress, shouldLoadBindRemap } from "@/lib/rebind-guard";
 import { anchorKeptLine, keptBreathId, keptIncludes, type KeptStored } from "@/lib/kept-lines";
-import { chapterPlace, spineChapters } from "@/lib/spine-nav";
+import { chapterPlace, signpostTitle, spineChapters } from "@/lib/spine-nav";
 import { useTbr } from "@/lib/store";
 import { fillClass, planeOf, type Fill } from "@/lib/mondrian";
 import { readerIntro } from "@/lib/reader-intro";
@@ -25,7 +25,16 @@ import { FavoriteMark } from "@/components/favorite-mark";
 import { PlaceChip } from "@/components/place-chip";
 import { Hourglass } from "@/components/hourglass";
 import { ReadingProgress } from "@/components/reading-progress";
-import { closedReaderBar, reduceReaderBar, type ReaderBarState } from "@/lib/reader-chrome";
+import {
+  closedReaderBar,
+  freshReaderMark,
+  markRevealPull,
+  reduceReaderBar,
+  reduceReaderMark,
+  type ReaderBarState,
+  type ReaderMarkEvent,
+  type ReaderMarkState,
+} from "@/lib/reader-chrome";
 import { TogetherShell } from "@/components/sitting-room";
 import { CLAP_WINDOW_MS, isSilentClap, type TapPoint } from "@/lib/multiplayer/together-bond";
 import { estimateRitualMinutes } from "@/lib/catalog/rituals";
@@ -144,6 +153,15 @@ function PassagePieces({
   ));
 }
 
+function ChapterSignpost({ title, label }: { title: string; label: string }) {
+  return (
+    <div className="chapter-signpost" data-chapter-signpost="" data-chapter-label={label}>
+      <p className="chapter-signpost-title">{title}</p>
+      <span className="chapter-signpost-rule" />
+    </div>
+  );
+}
+
 function EmphasizedText({ text }: { text: string }) {
   if (isSectionBreak(text)) {
     return (
@@ -251,6 +269,10 @@ export function TbrReader({
   const [sendResult, setSendResult] = useState<"shared" | "copied" | "downloaded" | null>(null);
   const [canShare, setCanShare] = useState(false);
   const [bar, setBar] = useState<ReaderBarState>(closedReaderBar);
+  const [mark, setMark] = useState<ReaderMarkState>(freshReaderMark);
+  const markRef = useRef(mark);
+  markRef.current = mark;
+  const [passingLabel, setPassingLabel] = useState<string | null>(null);
   const still = bar.still;
   const navReveal = bar.navReveal;
   const [overflows, setOverflows] = useState(false);
@@ -366,6 +388,8 @@ export function TbrReader({
   const anchoredScrollRef = useRef<number | null>(null);
   /** A finger or wheel scroll owns the column. Taps clear it and recenter. */
   const userScrolledRef = useRef(false);
+  /** Breath the finger had under the focus line, so a chapter cross does not jump. */
+  const scrollAnchorRef = useRef<{ sentence: number; top: number } | null>(null);
   const placeTokenRef = useRef(0);
   /** The next place() is a text-size change and must settle after reflow. */
   const resizeAnchorRef = useRef(false);
@@ -901,8 +925,17 @@ export function TbrReader({
     awaitingAt.current = null;
   }
 
+  function noteMark(event: ReaderMarkEvent) {
+    if (together) return;
+    const next = reduceReaderMark(markRef.current, event);
+    markRef.current = next;
+    setMark((prev) => (prev.mark === next.mark && prev.started === next.started ? prev : next));
+  }
+
   function stepBy(delta: 1 | -1) {
     if (overlayRef.current !== "none") return;
+    scrollAnchorRef.current = null;
+    setPassingLabel(null);
     const frameRaw = Number(
       turnHostRef.current?.closest(".reader-frame")?.getAttribute("data-breath-index"),
     );
@@ -947,10 +980,12 @@ export function TbrReader({
   }
 
   function advance() {
+    noteMark("forward");
     stepBy(1);
   }
 
   function retreat() {
+    noteMark("back");
     stepBy(-1);
   }
 
@@ -1725,6 +1760,24 @@ export function TbrReader({
         }
         void track.offsetHeight;
       } else if (flow) {
+        const pending = scrollAnchorRef.current;
+        if (pending && pending.sentence === index) {
+          scrollAnchorRef.current = null;
+          const node = flow.querySelector<HTMLElement>(`[data-sentence="${pending.sentence}"]`);
+          if (node) {
+            const flowTop = flow.getBoundingClientRect().top;
+            const now = node.getBoundingClientRect().top - flowTop + flow.scrollTop;
+            const delta = now - pending.top;
+            if (Math.abs(delta) > 1) {
+              scrollIgnoreUntilRef.current = performance.now() + 180;
+              scrollLockRef.current = true;
+              const nextTop = Math.max(0, flow.scrollTop + delta);
+              anchoredScrollRef.current = nextTop;
+              flow.scrollTop = nextTop;
+              scrollLockRef.current = false;
+            }
+          }
+        }
         syncMirror(flow.scrollTop);
         scrollLockRef.current = false;
       }
@@ -1797,7 +1850,18 @@ export function TbrReader({
         const box = flow.getBoundingClientRect();
         const leadNow = Number.parseFloat(getComputedStyle(pane).marginTop);
         const leadPx = Number.isFinite(leadNow) && leadNow < 0 ? -leadNow : 0;
-        const mid = box.top + (focusBands(box.height, leadPx).now.top + focusBands(box.height, leadPx).now.bottom) / 2;
+        const bandsNow = focusBands(box.height, leadPx);
+        const bandTop = box.top + bandsNow.now.top;
+        const bandBottom = box.top + bandsNow.now.bottom;
+        const mid = (bandTop + bandBottom) / 2;
+        let titled: string | null = null;
+        for (const node of flow.querySelectorAll<HTMLElement>("[data-chapter-signpost]")) {
+          const rect = node.getBoundingClientRect();
+          if (rect.height < 2) continue;
+          const center = (rect.top + rect.bottom) / 2;
+          if (center >= bandTop && center <= bandBottom) titled = node.getAttribute("data-chapter-label");
+        }
+        setPassingLabel((prev) => (prev === titled ? prev : titled));
         const nodes = [...flow.querySelectorAll<HTMLElement>("[data-sentence]")];
         let best: HTMLElement | null = null;
         for (const node of nodes) {
@@ -1810,6 +1874,11 @@ export function TbrReader({
         userScrolledRef.current = true;
         const current = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
         if (next === current) return;
+        const flowTop = flow.getBoundingClientRect().top;
+        scrollAnchorRef.current = {
+          sentence: next,
+          top: best!.getBoundingClientRect().top - flowTop + flow.scrollTop,
+        };
         useTbr.getState().setBreath(work.id, next, stampAt(work, next));
       }, 90);
     };
@@ -1818,6 +1887,8 @@ export function TbrReader({
       if (!flow) return;
       if (Math.abs(event.deltaY) < 1) return;
       flow.scrollTop += event.deltaY;
+      if (event.deltaY <= -120) noteMark("reveal");
+      else noteMark("scroll");
       event.preventDefault();
     };
     turnHostRef.current?.addEventListener("wheel", onWheel, { passive: false });
@@ -1968,6 +2039,7 @@ export function TbrReader({
     (lift.lead && lift.lead.replace(/\s+/g, " ").trim() === placeLabel.replace(/\s+/g, " ").trim()
       ? work.title
       : placeLabel);
+  const shownPlace = passingLabel ?? headerPlace;
   const groupStart = group?.index ?? index;
   const groupEnd = group?.endIndex ?? index;
   const shownLookback = lookback.filter((item) => {
@@ -1978,33 +2050,58 @@ export function TbrReader({
     const at = work.breaths.indexOf(item);
     return at > groupEnd;
   });
-  const readLines = shownLookback.flatMap((item) => {
-    const sentence = work.breaths.indexOf(item);
-    return display.blocksFor(item.text).map((block, bi) => (
-      <p
-        key={`${item.id}-${bi}`}
-        className="look-line text-ink"
-        data-sentence={sentence >= 0 ? sentence : undefined}
-        data-block-sentences={block.sentences}
-      >
-        <EmphasizedText text={block.text} />
-      </p>
-    ));
-  });
-  const previewLines = (key: string) =>
-    shownUpcoming.flatMap((item) => {
-      const sentence = work.breaths.indexOf(item);
-      return display.blocksFor(item.text).map((block, bi) => (
-        <p
-          key={`${key}-${item.id}-${bi}`}
-          className="look-line text-ink"
+  function columnBreaths(
+    items: readonly { id: string; sceneId: string; text: string }[],
+    key: string,
+    previousScene: string | null,
+  ) {
+    const nodes: ReactNode[] = [];
+    let prev = previousScene;
+    for (const item of items) {
+      const sentence = work.breaths.indexOf(item as (typeof work.breaths)[number]);
+      if (prev && item.sceneId !== prev) {
+        const nextScene = sceneOf(work, item.sceneId);
+        nodes.push(
+          <ChapterSignpost
+            key={`${key}-sign-${item.id}`}
+            title={signpostTitle(nextScene)}
+            label={chapterPlace(work.id, nextScene)}
+          />,
+        );
+      }
+      prev = item.sceneId;
+      const blocks = display.blocksFor(item.text);
+      nodes.push(
+        <div
+          key={`${key}-${item.id}`}
+          className="column-breath"
           data-sentence={sentence >= 0 ? sentence : undefined}
-          data-block-sentences={block.sentences}
         >
-          <EmphasizedText text={block.text} />
-        </p>
-      ));
-    });
+          {blocks.map((block, bi) => (
+            <p key={bi} className="look-line text-ink" data-block-sentences={block.sentences}>
+              <EmphasizedText text={block.text} />
+            </p>
+          ))}
+        </div>,
+      );
+    }
+    return nodes;
+  }
+  const priorScene = shownLookback.at(-1)?.sceneId ?? null;
+  const signpostBeforeFocus =
+    priorScene && priorScene !== breath.sceneId ? (
+      <ChapterSignpost
+        key="before-focus"
+        title={signpostTitle(scene)}
+        label={chapterPlace(work.id, scene)}
+      />
+    ) : null;
+  const readLines = columnBreaths(shownLookback, "back", null);
+  const previewLines = columnBreaths(
+    shownUpcoming,
+    "near",
+    work.breaths[groupEnd]?.sceneId ?? breath.sceneId,
+  );
   const passage: number[] = [];
   for (let breathIndex = groupStart; breathIndex <= groupEnd; breathIndex += 1) {
     passage.push(breathIndex);
@@ -2336,6 +2433,8 @@ export function TbrReader({
     // frame has no real velocity, so it does not leave a fling behind.
     if ((start.scrolled || moved) && (start.scrolled || Math.hypot(dx, dy) > TAP_SLOP_PX)) {
       const dt = performance.now() - start.t;
+      if (markRevealPull(dy, dt)) noteMark("reveal");
+      else noteMark("scroll");
       if (start.scrolled && moved && flow && dt >= 12) fling(flow, start.vy ?? 0);
       return;
     }
@@ -2354,6 +2453,10 @@ export function TbrReader({
     }
     if (kind === "swipe-prev") {
       stepZone("prev");
+      return;
+    }
+    if (kind === "scroll") {
+      noteMark("scroll");
       return;
     }
     if (kind !== "tap") return;
@@ -2606,12 +2709,13 @@ export function TbrReader({
                   <div ref={lookbackSlotRef} className="lookback-slot" aria-hidden>
                     {readLines}
                   </div>
+                  {signpostBeforeFocus}
                   <div ref={breathSlotRef} className={breathClass}>
                     {currentLine}
                   </div>
                   <div className="upcoming-fold" aria-hidden>
                     <div ref={upcomingSlotRef} className="upcoming-slot">
-                      {previewLines("near")}
+                      {previewLines}
                     </div>
                   </div>
                 </div>
@@ -2633,6 +2737,7 @@ export function TbrReader({
             <div ref={lookbackSlotRef} className="lookback-slot" aria-hidden>
               {readLines}
             </div>
+            {signpostBeforeFocus}
             <div ref={breathSlotRef} className={breathClass}>
               {currentLine}
             </div>
@@ -2667,12 +2772,30 @@ export function TbrReader({
       data-block-viewport={display.viewport ? String(display.viewport) : ""}
       data-block-limit={display.limit ? String(display.limit) : ""}
       data-block-width={display.width ? String(display.width) : ""}
+      data-mark={together || mark.mark === "shown" ? "on" : "off"}
     >
       <h1 className="sr-only">{work.title}</h1>
+      {!together && mark.mark === "hidden" ? (
+        <button
+          type="button"
+          className="mark-reveal"
+          data-mark-reveal=""
+          aria-label="Show the bar"
+          onPointerDown={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+          }}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            noteMark("reveal");
+          }}
+        />
+      ) : null}
       {together && pair ? (
         <TogetherShell
           pair={pair}
-          place={headerPlace}
+          place={shownPlace}
           breathIndex={index}
           workId={work.id}
           sceneId={breath?.sceneId ?? ""}
@@ -2697,9 +2820,10 @@ export function TbrReader({
             <button
               type="button"
               onClick={() => setOverlay("spine")}
+              data-chapter-label={shownPlace}
               className="flex min-w-0 flex-1 items-center truncate bg-paper px-2.5 type-kicker text-ink sm:px-4"
             >
-              {headerPlace}
+              {shownPlace}
             </button>
             <Link
               to="/rituals"
