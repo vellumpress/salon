@@ -98,7 +98,6 @@ import {
   ghostMousePointer,
   HOLD_ARM_MS,
   holdStepIntervalMs,
-  MOMENTUM_QUIET_MS,
   SCROLL_ARM_PX,
   TAP_SLOP_PX,
   turnZone,
@@ -337,8 +336,6 @@ export function TbrReader({
   const trackRef = useRef<HTMLDivElement>(null);
   const flowRef = useRef<HTMLDivElement>(null);
   const flingRef = useRef(0);
-  /** When a fling or a drag last stopped. A tap inside the quiet after this is ignored. */
-  const momentumUntilRef = useRef(0);
   const scrollLockRef = useRef(false);
   const scrollIgnoreUntilRef = useRef(0);
   /** scrollTop last written to keep the sentence in the sharp band. */
@@ -1989,16 +1986,14 @@ export function TbrReader({
     return flow.scrollHeight - flow.clientHeight > 24;
   }
 
-  function momentumQuiet(now = performance.now()) {
-    return flingRef.current !== 0 || now - momentumUntilRef.current < MOMENTUM_QUIET_MS;
+  function momentumQuiet() {
+    return flingRef.current !== 0;
   }
 
   function noteMomentumStopped() {
-    if (flingRef.current) {
-      cancelAnimationFrame(flingRef.current);
-      flingRef.current = 0;
-    }
-    momentumUntilRef.current = performance.now();
+    if (!flingRef.current) return;
+    cancelAnimationFrame(flingRef.current);
+    flingRef.current = 0;
   }
 
   function fling(flow: HTMLElement, velocity: number) {
@@ -2023,7 +2018,6 @@ export function TbrReader({
         return;
       }
       flingRef.current = 0;
-      momentumUntilRef.current = now;
     };
     flingRef.current = requestAnimationFrame(step);
   }

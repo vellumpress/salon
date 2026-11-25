@@ -3,7 +3,7 @@ import test from "node:test";
 import { devices, webkit, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 import { skipWithoutWebKit } from "./require-webkit.ts";
-import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
+import { groupKey, planGroups, waitForPageRest, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const PHONE = devices["iPhone 12"];
@@ -380,6 +380,7 @@ test(
       const scrolled = await column(page);
       assert.equal(scrolled.index, 5);
       assert.ok(scrolled.scrollTop < 4, "drag scrolled a windowed passage");
+      await waitForPageRest(page);
       const back = {
         x: Math.round(scrolled.host.left + scrolled.host.width * 0.12),
         y: Math.round(scrolled.host.top + scrolled.host.height * 0.72),
