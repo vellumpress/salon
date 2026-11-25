@@ -3,6 +3,7 @@ import test from "node:test";
 import {
   breathPageTop,
   classifyTurnGesture,
+  coastFromSamples,
   ghostMousePointer,
   HOLD_ARM_MS,
   HOLD_RAMP_MS,
@@ -163,6 +164,85 @@ test("a ghost mouse after touch is the same finger", () => {
       ],
     }),
     true,
+  );
+});
+
+test("a coast is movement measured inside the last 100ms", () => {
+  assert.equal(coastFromSamples([], 0), false);
+  assert.equal(coastFromSamples([{ t: 0, top: 40 }], 150), false);
+  assert.equal(
+    coastFromSamples(
+      [
+        { t: 0, top: 40 },
+        { t: 40, top: 48 },
+      ],
+      50,
+    ),
+    true,
+  );
+  assert.equal(
+    coastFromSamples(
+      [
+        { t: 0, top: 40 },
+        { t: 40, top: 48 },
+      ],
+      200,
+    ),
+    false,
+  );
+  assert.equal(
+    coastFromSamples(
+      [
+        { t: 0, top: 100 },
+        { t: 20, top: 100.2 },
+        { t: 40, top: 100.35 },
+        { t: 60, top: 100.55 },
+      ],
+      60,
+    ),
+    true,
+  );
+  assert.equal(
+    coastFromSamples(
+      [
+        { t: 20, top: 100.2 },
+        { t: 40, top: 100.35 },
+        { t: 60, top: 100.55 },
+      ],
+      60,
+    ),
+    false,
+  );
+  assert.equal(
+    coastFromSamples(
+      [
+        { t: 0, top: 10 },
+        { t: 4, top: 10.4 },
+      ],
+      4,
+    ),
+    true,
+  );
+  assert.equal(
+    coastFromSamples(
+      [
+        { t: 0, top: 10 },
+        { t: 40, top: 10.1 },
+      ],
+      40,
+    ),
+    false,
+  );
+  assert.equal(
+    coastFromSamples(
+      [
+        { t: 0, top: 0 },
+        { t: 50, top: 30 },
+        { t: 180, top: 30.05 },
+      ],
+      180,
+    ),
+    false,
   );
 });
 

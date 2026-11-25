@@ -94,11 +94,9 @@ import {
 } from "@/lib/center-line";
 import {
   classifyTurnGesture,
+  coastFromSamples,
   GHOST_MOUSE_MS,
   ghostMousePointer,
-  COAST_MOVE_PX,
-  COAST_VELOCITY,
-  COAST_WINDOW_MS,
   HOLD_ARM_MS,
   holdStepIntervalMs,
   SCROLL_ARM_PX,
@@ -1995,22 +1993,19 @@ export function TbrReader({
   }
 
   function noteScrollMotion(top: number) {
+    if (!Number.isFinite(top)) return;
     const now = performance.now();
     const samples = motionRef.current;
     const prev = samples[samples.length - 1];
-    if (prev && top === prev.top) return;
-    const delta = prev ? top - prev.top : top;
-    const dt = prev ? now - prev.t : 0;
-    const fast = dt > 0 && Math.abs(delta / dt) > COAST_VELOCITY;
-    if (prev && Math.abs(delta) < COAST_MOVE_PX && !fast) return;
+    if (prev && Math.abs(top - prev.top) < 0.01) return;
     samples.push({ t: now, top });
-    const keep = now - COAST_WINDOW_MS - 40;
+    const keep = now - 500;
     while (samples.length > 12 && samples[0].t < keep) samples.shift();
+    (window as Window & { __salonMotionAt?: number }).__salonMotionAt = now;
   }
 
   function pageCoasting() {
-    const newest = motionRef.current[motionRef.current.length - 1];
-    return Boolean(newest && performance.now() - newest.t <= COAST_WINDOW_MS);
+    return coastFromSamples(motionRef.current, performance.now());
   }
 
   function noteMomentumStopped() {
@@ -2029,24 +2024,30 @@ export function TbrReader({
       return;
     }
     cancelAnimationFrame(flingRef.current);
+    userScrolledRef.current = true;
+    noteScrollMotion(flow.scrollTop);
     let v = velocity;
     let last = performance.now();
+    let stuck = 0;
     const step = (now: number) => {
-      const dt = Math.min(32, now - last);
+      if (flingRef.current === 0) return;
+      const dt = Math.min(32, Math.max(0, now - last));
       last = now;
       const before = flow.scrollTop;
-      const next = before + v * dt;
-      // Stamp the move before the scroll event, so a finger that lands in
-      // that event already sees the column as moving.
-      noteScrollMotion(next);
-      flow.scrollTop = next;
+      flow.scrollTop = before + v * dt;
+      // A finger that landed in the scroll event already cancelled this fling.
+      if (flingRef.current === 0) return;
       if (flow.scrollTop === before) {
-        const samples = motionRef.current;
-        const last = samples[samples.length - 1];
-        if (last && last.top === next) samples.pop();
+        stuck += 1;
+        if (stuck < 3) {
+          flingRef.current = requestAnimationFrame(step);
+          return;
+        }
         flingRef.current = 0;
         return;
       }
+      stuck = 0;
+      noteScrollMotion(flow.scrollTop);
       v *= Math.pow(0.9, dt / 16);
       if (Math.abs(v) > 0.02) {
         flingRef.current = requestAnimationFrame(step);
@@ -2332,7 +2333,11 @@ export function TbrReader({
     const now = performance.now();
     start.sampleT = now;
     start.vy = (prevY - e.clientY) / Math.max(16, now - prevT);
+    // The finger owns the column now. A layout pass must not snap it back
+    // under the sentence and turn the coast into a tap.
+    userScrolledRef.current = true;
     flow.scrollTop = start.scrollTop - (e.clientY - start.y);
+    noteScrollMotion(flow.scrollTop);
     if (e.cancelable) e.preventDefault();
   }
 

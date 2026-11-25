@@ -22,6 +22,34 @@ export const COAST_MOVE_PX = 0.5;
 /** Pixels per millisecond. Slower than this is not a coast. */
 export const COAST_VELOCITY = 0.05;
 
+/**
+ * The column is still moving when a finger lands.
+ * `samples` are scroll positions and the times they were measured.
+ * Coasting means the newest one is inside the window and the column
+ * moved at least half a pixel across that window, or the last step
+ * was faster than a slow drift.
+ */
+export function coastFromSamples(
+  samples: readonly { t: number; top: number }[],
+  now: number,
+): boolean {
+  const newest = samples[samples.length - 1];
+  if (!newest || now - newest.t > COAST_WINDOW_MS) return false;
+  let prior = samples[0] ?? newest;
+  const horizon = now - COAST_WINDOW_MS;
+  for (const sample of samples) {
+    if (sample.t <= horizon) prior = sample;
+    else break;
+  }
+  if (Math.abs(newest.top - prior.top) >= COAST_MOVE_PX) return true;
+  const prev = samples[samples.length - 2];
+  if (prev && newest.t > prev.t) {
+    const velocity = Math.abs(newest.top - prev.top) / (newest.t - prev.t);
+    if (velocity > COAST_VELOCITY) return true;
+  }
+  return false;
+}
+
 /** A tall sentence starts scrolling only after the finger has clearly dragged. */
 export const SCROLL_ARM_PX = 24;
 

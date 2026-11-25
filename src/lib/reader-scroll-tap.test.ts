@@ -150,7 +150,7 @@ async function flickThenStop(page: Page, from: { x: number; y: number }, at: { x
           }),
         );
       };
-      const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+      const nextFrame = () => new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
       const before = key();
       await new Promise<void>((resolve) => {
         let top = flow.scrollTop;
@@ -169,44 +169,54 @@ async function flickThenStop(page: Page, from: { x: number; y: number }, at: { x
       });
       const startTop = flow.scrollTop;
       fire("pointerdown", from.x, from.y, 8);
-      await wait(16);
+      await nextFrame();
       fire("pointermove", from.x, from.y - 28, 8);
-      await wait(16);
+      await nextFrame();
       fire("pointermove", from.x, from.y - 70, 8);
-      await wait(8);
+      await nextFrame();
       fire("pointerup", from.x, from.y - 70, 8);
       const lifted = key();
       const atLift = flow.scrollTop;
+      const motionAge = () => {
+        const stamped = (window as Window & { __salonMotionAt?: number }).__salonMotionAt;
+        return stamped == null ? -1 : Math.round(performance.now() - stamped);
+      };
       const stop = await new Promise<{
         moved: boolean;
         beforeStop: string;
         afterStop: string;
         atLift: number;
         end: number;
-        age: string;
-        n: string;
+        age: number;
       }>((resolve) => {
-        const timer = window.setTimeout(() => {
-          flow.removeEventListener("scroll", onScroll);
+        let settled = false;
+        const finish = (moved: boolean) => {
+          if (settled) return;
+          settled = true;
+          window.clearTimeout(timer);
           resolve({
-            moved: false,
+            moved,
             beforeStop: key() ?? "",
             afterStop: key() ?? "",
             atLift,
             end: flow.scrollTop,
-            age: "",
-            n: "",
+            age: motionAge(),
           });
-        }, 1_500);
-        const onScroll = () => {
-          if (Math.abs(flow.scrollTop - atLift) < 0.5) return;
-          flow.removeEventListener("scroll", onScroll);
-          window.clearTimeout(timer);
+        };
+        const timer = window.setTimeout(() => finish(false), 1_500);
+        const watch = () => {
+          if (settled) return;
+          if (Math.abs(flow.scrollTop - atLift) < 0.5) {
+            requestAnimationFrame(watch);
+            return;
+          }
           const beforeStop = key() ?? "";
+          const age = motionAge();
           fire("pointerdown", at.x, at.y, 9);
-          const age = document.documentElement.dataset.coastAge ?? "";
-          const n = document.documentElement.dataset.coastN ?? "";
           fire("pointerup", at.x, at.y, 9);
+          if (settled) return;
+          settled = true;
+          window.clearTimeout(timer);
           resolve({
             moved: true,
             beforeStop,
@@ -214,10 +224,9 @@ async function flickThenStop(page: Page, from: { x: number; y: number }, at: { x
             atLift,
             end: flow.scrollTop,
             age,
-            n,
           });
         };
-        flow.addEventListener("scroll", onScroll);
+        requestAnimationFrame(watch);
       });
       return { before, lifted, startTop, ...stop, after: key() };
     },
@@ -263,7 +272,7 @@ async function check(page: Page, label: string) {
   assert.equal(
     coast.moved,
     true,
-    `${label} the flick never moved the page (scroll ${coast.startTop} -> ${coast.atLift} -> ${coast.end})`,
+    `${label} the flick never moved the page (scroll ${coast.startTop} -> ${coast.atLift} -> ${coast.end}, motion ${coast.age}ms ago)`,
   );
   assert.equal(
     coast.afterStop,
@@ -273,7 +282,7 @@ async function check(page: Page, label: string) {
   assert.equal(
     coast.after,
     coast.beforeStop,
-    `${label} stopping a fling advanced ${coast.beforeStop} to ${coast.after} age=${coast.age} n=${coast.n}`,
+    `${label} stopping a fling advanced ${coast.beforeStop} to ${coast.after} (motion ${coast.age}ms ago)`,
   );
   const afterStop = await readGroup(page);
   assert.equal(afterStop.key, coast.beforeStop, `${label} stopping a fling advanced the sentence`);
