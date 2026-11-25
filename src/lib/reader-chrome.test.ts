@@ -8,6 +8,7 @@ import {
   reduceReaderBar,
   reduceReaderMark,
   readerBarOpen,
+  readerMarkVisible,
 } from "./reader-chrome.ts";
 
 test("a page tap does not open the bar", () => {
@@ -65,6 +66,24 @@ test("the mark row hides when reading starts and comes back on a reveal", () => 
   assert.equal(markRevealPull(40, 200), false);
   assert.equal(markRevealPull(80, 900), false);
   assert.equal(markRevealPull(-80, 120), false);
+});
+
+test("the hourglass brings the mark row back until it closes or reading resumes", () => {
+  const reading = reduceReaderMark(freshReaderMark, "forward");
+  assert.equal(reading.mark, "hidden");
+  assert.equal(readerMarkVisible(reading, false, false), false);
+  assert.equal(readerMarkVisible(reading, true, false), true);
+  assert.equal(readerMarkVisible(reading, false, false), false);
+  assert.equal(readerMarkVisible(reading, true, true), false);
+
+  const revealed = reduceReaderMark(reading, "reveal");
+  assert.equal(readerMarkVisible(revealed, false, false), true);
+  assert.equal(readerMarkVisible(revealed, false, true), true);
+  assert.equal(readerMarkVisible(reduceReaderMark(revealed, "forward"), true, true), false);
+  assert.equal(readerMarkVisible(reduceReaderMark(revealed, "back"), false, false), true);
+
+  assert.equal(readerMarkVisible(freshReaderMark, false, true), true);
+  assert.equal(readerMarkVisible(reduceReaderMark(reading, "scroll"), true, false), true);
 });
 
 test("reader bar checks use a touch-sized phone viewport", () => {
