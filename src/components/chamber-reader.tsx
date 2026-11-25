@@ -1999,24 +1999,18 @@ export function TbrReader({
     const samples = motionRef.current;
     const prev = samples[samples.length - 1];
     if (prev && top === prev.top) return;
+    const delta = prev ? top - prev.top : top;
+    const dt = prev ? now - prev.t : 0;
+    const fast = dt > 0 && Math.abs(delta / dt) > COAST_VELOCITY;
+    if (prev && Math.abs(delta) < COAST_MOVE_PX && !fast) return;
     samples.push({ t: now, top });
     const keep = now - COAST_WINDOW_MS - 40;
     while (samples.length > 12 && samples[0].t < keep) samples.shift();
   }
 
   function pageCoasting() {
-    const now = performance.now();
-    const samples = motionRef.current.filter((sample) => now - sample.t <= COAST_WINDOW_MS);
-    if (samples.length === 0) return false;
-    const newest = samples[samples.length - 1];
-    const all = motionRef.current;
-    const prior = all[all.indexOf(samples[0]) - 1];
-    const from = prior ?? samples[0];
-    const delta = newest.top - from.top;
-    if (Math.abs(delta) >= COAST_MOVE_PX) return true;
-    const previous = samples.length > 1 ? samples[samples.length - 2] : from;
-    const dt = newest.t - previous.t;
-    return dt > 0 && Math.abs((newest.top - previous.top) / dt) > COAST_VELOCITY;
+    const newest = motionRef.current[motionRef.current.length - 1];
+    return Boolean(newest && performance.now() - newest.t <= COAST_WINDOW_MS);
   }
 
   function noteMomentumStopped() {
@@ -2041,12 +2035,18 @@ export function TbrReader({
       const dt = Math.min(32, now - last);
       last = now;
       const before = flow.scrollTop;
-      flow.scrollTop = before + v * dt;
+      const next = before + v * dt;
+      // Stamp the move before the scroll event, so a finger that lands in
+      // that event already sees the column as moving.
+      noteScrollMotion(next);
+      flow.scrollTop = next;
       if (flow.scrollTop === before) {
+        const samples = motionRef.current;
+        const last = samples[samples.length - 1];
+        if (last && last.top === next) samples.pop();
         flingRef.current = 0;
         return;
       }
-      noteScrollMotion(flow.scrollTop);
       v *= Math.pow(0.9, dt / 16);
       if (Math.abs(v) > 0.02) {
         flingRef.current = requestAnimationFrame(step);

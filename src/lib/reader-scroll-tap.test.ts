@@ -152,6 +152,22 @@ async function flickThenStop(page: Page, from: { x: number; y: number }, at: { x
       };
       const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
       const before = key();
+      await new Promise<void>((resolve) => {
+        let top = flow.scrollTop;
+        let since = performance.now();
+        const step = () => {
+          const nowTop = flow.scrollTop;
+          const now = performance.now();
+          if (Math.abs(nowTop - top) >= 0.5) {
+            top = nowTop;
+            since = now;
+          }
+          if (now - since >= 120) resolve();
+          else requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      });
+      const startTop = flow.scrollTop;
       fire("pointerdown", from.x, from.y, 8);
       await wait(16);
       fire("pointermove", from.x, from.y - 28, 8);
@@ -177,7 +193,7 @@ async function flickThenStop(page: Page, from: { x: number; y: number }, at: { x
         };
         flow.addEventListener("scroll", onScroll);
       });
-      return { before, lifted, ...stop, after: key() };
+      return { before, lifted, startTop, ...stop, after: key() };
     },
     { from, at },
   );
@@ -221,10 +237,18 @@ async function check(page: Page, label: string) {
   assert.equal(
     coast.moved,
     true,
-    `${label} the flick never moved the page (scroll ${coast.atLift} -> ${coast.end})`,
+    `${label} the flick never moved the page (scroll ${coast.startTop} -> ${coast.atLift} -> ${coast.end})`,
   );
-  assert.equal(coast.afterStop, coast.beforeStop, `${label} stopping a fling advanced ${coast.beforeStop} to ${coast.afterStop}`);
-  assert.equal(coast.after, coast.beforeStop, `${label} stopping a fling advanced ${coast.beforeStop} to ${coast.after}`);
+  assert.equal(
+    coast.afterStop,
+    coast.beforeStop,
+    `${label} stopping a fling advanced ${coast.beforeStop} to ${coast.afterStop}`,
+  );
+  assert.equal(
+    coast.after,
+    coast.beforeStop,
+    `${label} stopping a fling advanced ${coast.beforeStop} to ${coast.after} age=${coast.age} n=${coast.n}`,
+  );
   const afterStop = await readGroup(page);
   assert.equal(afterStop.key, coast.beforeStop, `${label} stopping a fling advanced the sentence`);
 
