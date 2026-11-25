@@ -331,7 +331,7 @@ test(
 
       await openCatalog(page, boundary);
       const opened = await spots(page);
-      assert.equal(opened.look, 0, "a chapter's first sentence still shows already-read lines");
+      assert.ok(opened.look > 0, "the chapter above is missing from the column");
       assert.equal(opened.index, boundary);
       const low = await planGroups(page, -1, BACKS);
       assert.notEqual(low, "start");
