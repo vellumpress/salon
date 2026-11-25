@@ -200,6 +200,20 @@ async function sampledBands(page: Page) {
           right: Math.round(box.right * dpr) - 8,
         });
       });
+      const readBox = document.querySelector('[data-focus-band="read"]')?.getBoundingClientRect();
+      if (!readBox) throw new Error("missing read");
+      const readTop = readBox.top * dpr + 8 * dpr;
+      const readBottom = readBox.bottom * dpr - fade;
+      const span = Math.max(3, readBottom - readTop);
+      const readStrips = [0, 1, 2].map((i) =>
+        sample(image.data, bmp.width, bmp.height, {
+          name: i === 0 ? "past-top" : i === 1 ? "past-mid" : "past-near",
+          top: Math.round(readTop + (span * i) / 3),
+          bottom: Math.round(readTop + (span * (i + 1)) / 3),
+          left: Math.round(readBox.left * dpr),
+          right: Math.round(readBox.right * dpr) - 8,
+        }),
+      );
       const frost = document.querySelector(".focus-frost");
       const wash = document.querySelector(".focus-wash");
       const clip = document.querySelector(".focus-blur-clip");
@@ -209,6 +223,8 @@ async function sampledBands(page: Page) {
       const clipStyle = styleOf(clip);
       return {
         bands,
+        readStrips,
+        frostImage: frostStyle?.backgroundImage ?? "",
         mirrorInk: clip?.getAttribute("data-mirror-ink") ?? "",
         focusColor: getComputedStyle(document.querySelector("[data-focus-sentence]")!).color,
         wash: washStyle?.backgroundImage ?? "",
@@ -246,11 +262,41 @@ function assertSameInk(samples: BandSample[], label: string) {
   }
 }
 
+function assertPastGradient(
+  strips: BandSample[],
+  focus: BandSample,
+  frostImage: string,
+  label: string,
+) {
+  const top = strips.find((band) => band.name === "past-top");
+  const mid = strips.find((band) => band.name === "past-mid");
+  const near = strips.find((band) => band.name === "past-near");
+  assert.ok(top && mid && near, `${label} past gradient strips missing`);
+  const topSide = Math.abs(luminanceSide(top.glyph, top.background));
+  const midSide = Math.abs(luminanceSide(mid.glyph, mid.background));
+  const nearSide = Math.abs(luminanceSide(near.glyph, near.background));
+  const focusSide = Math.abs(luminanceSide(focus.glyph, focus.background));
+  const measured = `top ${topSide.toFixed(1)} mid ${midSide.toFixed(1)} near ${nearSide.toFixed(1)} focus ${focusSide.toFixed(1)}`;
+  assert.ok(nearSide > midSide, `${label} past lines do not strengthen toward the focus (${measured})`);
+  assert.ok(midSide > topSide, `${label} past lines do not fade toward the top (${measured})`);
+  assert.ok(nearSide > topSide * 2, `${label} the line above the focus is not much clearer than the top (${measured})`);
+  assert.ok(topSide < focusSide * 0.34, `${label} the top of the past is still easy to read (${measured})`);
+  assert.ok(
+    hueCosine(near.glyph, near.background, focus.glyph, focus.background) > 0.8,
+    `${label} the line above the focus left the focus ink ${JSON.stringify(near)}`,
+  );
+  assert.match(frostImage, /0\.96|96%/, `${label} frost does not start heavy ${frostImage}`);
+  assert.match(frostImage, /(?<![0-9.])(?:0\.05|5%)/, `${label} frost does not thin at the focus ${frostImage}`);
+}
+
 async function assertPhase(page: Page, phase: (typeof PHASES)[number], browserName: string) {
   await openReader(page, phase);
   const label = `${browserName} ${phase.id}`;
   const shot = await sampledBands(page);
   assertSameInk(shot.bands, label);
+  const focus = shot.bands.find((band) => band.name === "now");
+  assert.ok(focus, `${label} sharp band missing`);
+  assertPastGradient(shot.readStrips, focus, shot.frostImage, label);
   assert.match(shot.wash, /0\.38|38%/, `${label} frost opacity ${shot.wash}`);
   assert.equal(shot.frostBlend, "normal", `${label} frost blend ${shot.frostBlend}`);
   assert.equal(shot.washBlend, "normal", `${label} wash blend ${shot.washBlend}`);
@@ -262,7 +308,7 @@ async function assertPhase(page: Page, phase: (typeof PHASES)[number], browserNa
 }
 
 test(
-  "frost text keeps the sharp band's ink in every tint, in Chromium and WebKit",
+  "frost text keeps the sharp band's ink and fades up the column in every tint, in Chromium and WebKit",
   { timeout: 240_000 },
   async (t) => {
     await ensureReaderServer();
