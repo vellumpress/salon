@@ -15,6 +15,13 @@ type Box = {
 export const TAP_SLOP_PX = 10;
 export const TAP_MS = 300;
 
+/** A scroll this recent means the column is still coasting. */
+export const COAST_WINDOW_MS = 100;
+/** A smaller jump did not move the column. */
+export const COAST_MOVE_PX = 0.5;
+/** Pixels per millisecond. Slower than this is not a coast. */
+export const COAST_VELOCITY = 0.05;
+
 /** A tall sentence starts scrolling only after the finger has clearly dragged. */
 export const SCROLL_ARM_PX = 24;
 
@@ -129,9 +136,8 @@ export function ghostMousePointer(input: {
 
 /**
  * One lift. A tap is a short, still touch: under 10px and under 300ms,
- * and not while the page is still moving. Once the scroll has stopped,
- * the next still touch is a tap. A drag, a flick, and a finger that
- * stops a fling are never taps. There is no second, looser tap.
+ * and not while the column has moved within the coast window. A drag,
+ * a flick, and a finger that lands on a moving column are never taps.
  */
 export function classifyTurnGesture(input: {
   dx: number;

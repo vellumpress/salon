@@ -42,28 +42,34 @@ export async function readGroup(page: Page): Promise<GroupPlace & { key: string 
 }
 
 /**
- * Wait until a fling has stopped moving the page. A tap before this
- * lands while the scroll is still running.
+ * Wait until the column's scroll position has not changed for longer
+ * than the coast window. The next tap is then a tap, not a stop.
  */
 export async function waitForPageRest(page: Page, timeout = 3000) {
-  const start = Date.now();
-  let last = Number.NaN;
-  let stable = 0;
-  while (Date.now() - start < timeout) {
-    const top = await page.evaluate(() => {
+  await page.evaluate(() => {
+    const flow = document.querySelector(".focus-live");
+    const top = flow instanceof HTMLElement ? flow.scrollTop : 0;
+    (window as unknown as { __salonRest?: { top: number; since: number } }).__salonRest = {
+      top,
+      since: performance.now(),
+    };
+  });
+  await page.waitForFunction(
+    (stillMs: number) => {
       const flow = document.querySelector(".focus-live");
-      return flow instanceof HTMLElement ? flow.scrollTop : 0;
-    });
-    if (Number.isFinite(last) && Math.abs(top - last) < 0.5) {
-      stable += 1;
-      if (stable >= 2) return;
-    } else {
-      stable = 0;
-    }
-    last = top;
-    await page.waitForTimeout(32);
-  }
-  throw new Error("the page was still moving");
+      const top = flow instanceof HTMLElement ? flow.scrollTop : 0;
+      const state = (window as unknown as { __salonRest?: { top: number; since: number } }).__salonRest;
+      if (!state) return false;
+      if (Math.abs(top - state.top) >= 0.5) {
+        state.top = top;
+        state.since = performance.now();
+        return false;
+      }
+      return performance.now() - state.since >= stillMs;
+    },
+    120,
+    { timeout },
+  );
 }
 
 export async function waitGroup(page: Page, place: GroupPlace, timeout = 4000) {
