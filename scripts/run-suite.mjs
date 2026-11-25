@@ -40,6 +40,7 @@ export const smokeFiles = [
   "src/lib/shelf.e2e.test.ts",
   "src/lib/text-size.e2e.test.ts",
   "src/lib/reader-scroll-tap.test.ts",
+  "src/lib/band-ink.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -170,6 +171,7 @@ export const allTsFiles = [
   "src/lib/shelf.e2e.test.ts",
   "src/lib/text-size.e2e.test.ts",
   "src/lib/reader-scroll-tap.test.ts",
+  "src/lib/band-ink.test.ts",
 ];
 
 const smokeSet = new Set(smokeFiles);

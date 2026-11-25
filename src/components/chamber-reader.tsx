@@ -157,6 +157,27 @@ function EmphasizedText({ text }: { text: string }) {
   );
 }
 
+const MIRROR_INK = ".look-line, .breath-now, .breath-block, .breath-sentence, .section-break, em";
+
+/**
+ * The blur mirror is a shadow tree. Daylight selectors in the light DOM do
+ * not reach it, and WebKit paints an inherited color black once `filter`
+ * is set. Stamp the sharp band's resolved ink onto the filtered text.
+ */
+function paintMirrorInk(clone: HTMLElement, source: HTMLElement, host: HTMLElement) {
+  const live = source.querySelector<HTMLElement>(".look-line, .breath-now, .breath-sentence");
+  const ink = getComputedStyle(live ?? source).color;
+  if (!ink || clone.dataset.mirrorInk === ink) return;
+  clone.dataset.mirrorInk = ink;
+  host.dataset.mirrorInk = ink;
+  const apply = (node: HTMLElement) => {
+    node.style.color = ink;
+    node.style.setProperty("-webkit-text-fill-color", ink);
+  };
+  apply(clone);
+  for (const node of clone.querySelectorAll<HTMLElement>(MIRROR_INK)) apply(node);
+}
+
 /** Negative margin that lets the column run under chrome. Positive margins are not bleed. */
 function columnBleed(host: HTMLElement | null): { top: number; bottom: number } {
   if (!host) return { top: 0, bottom: 0 };
@@ -1579,7 +1600,9 @@ export function TbrReader({
         else root.appendChild(next);
         clone = next;
         blurSigRef.current = sig;
+        delete clone.dataset.mirrorInk;
       }
+      paintMirrorInk(clone, source, host);
       host.dataset.mirrorFilter = getComputedStyle(clone).filter;
       return clone;
     };
@@ -1836,6 +1859,15 @@ export function TbrReader({
       window.clearTimeout(placeTimer);
     };
   }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey, navReveal]);
+
+  useLayoutEffect(() => {
+    const host = blurHostRef.current;
+    const root = blurRootRef.current;
+    const source = trackRef.current;
+    const clone = root?.querySelector<HTMLElement>(".focus-blur-track");
+    if (!host || !source || !clone) return;
+    paintMirrorInk(clone, source, host);
+  }, [daylight.sample.ink, daylight.active]);
 
   const durationMs = sittingMinutes > 0 ? sittingMinutes * 60 * 1000 : 0;
   const endsAt =

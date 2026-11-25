@@ -2369,6 +2369,22 @@ html:has(.board-doors) body {
   transition: none;
 }
 
+/* The mirror lives in a shadow tree, so `.reader-daylight .look-line` never
+   matches it and `text-ink` paints #111. Same ink as the sharp band, on the
+   filtered layer itself — WebKit turns an inherited color black under
+   `filter`. No backdrop-filter and no blend; those shift the hue. */
+.focus-blur-track,
+.focus-blur-track .look-line,
+.focus-blur-track .look-line em,
+.focus-blur-track .breath-now,
+.focus-blur-track .breath-now em,
+.focus-blur-track .breath-block,
+.focus-blur-track .breath-sentence,
+.focus-blur-track .section-break {
+  color: var(--reader-ink, var(--color-ink));
+  -webkit-text-fill-color: var(--reader-ink, var(--color-ink));
+}
+
 .focus-blur-track[data-ready="1"] {
   transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -2413,8 +2429,8 @@ html:has(.board-doors) body {
   height: calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 + var(--focus-fade));
   background-image: linear-gradient(
     to bottom,
-    color-mix(in srgb, var(--reader-bg) 50%, transparent) 0,
-    color-mix(in srgb, var(--reader-bg) 50%, transparent) calc(100% - var(--focus-fade)),
+    color-mix(in srgb, var(--reader-bg) 38%, transparent) 0,
+    color-mix(in srgb, var(--reader-bg) 38%, transparent) calc(100% - var(--focus-fade)),
     transparent 100%
   );
 }
@@ -2425,8 +2441,8 @@ html:has(.board-doors) body {
   background-image: linear-gradient(
     to bottom,
     transparent 0,
-    color-mix(in srgb, var(--reader-bg) 50%, transparent) var(--focus-fade),
-    color-mix(in srgb, var(--reader-bg) 50%, transparent) 100%
+    color-mix(in srgb, var(--reader-bg) 38%, transparent) var(--focus-fade),
+    color-mix(in srgb, var(--reader-bg) 38%, transparent) 100%
   );
 }
 
@@ -3950,6 +3966,12 @@ html.together-compose .chat-field {
   syntax: "<color>";
   inherits: true;
   initial-value: #e2c200;
+}
+
+@property --reader-ink {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #111111;
 }
 
 .reader-daylight.frame-screen,

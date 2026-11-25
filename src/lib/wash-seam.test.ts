@@ -314,7 +314,7 @@ function assertBands(geom: Awaited<ReturnType<typeof bandSnapshot>>, label: stri
     Math.abs(geom.wash.width - geom.pane.width) <= 2,
     `${label} wash width ${geom.wash.width} != pane ${geom.pane.width}`,
   );
-  assert.match(geom.wash.image, /0\.5|50%/, `${label} wash is not half the page color ${geom.wash.image}`);
+  assert.match(geom.wash.image, /0\.38|38%/, `${label} wash is not a light frost ${geom.wash.image}`);
   assert.match(geom.mirrorFilter, /blur\(8px\)/, `${label} bottom band is not blurred (${geom.mirrorFilter})`);
   assert.ok(!/blur\(/.test(geom.glassBackdrop), `${label} hourglass has a backdrop blur`);
   assert.match(geom.glassBackground, /transparent|rgba\(0,\s*0,\s*0,\s*0\)/, `${label} hourglass has a square ${geom.glassBackground}`);

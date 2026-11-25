@@ -254,7 +254,7 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   const washFill = css.match(/\.focus-wash\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(
     washFill,
-    /color-mix\(in srgb, var\(--reader-bg\) 50%, transparent\) var\(--focus-fade\)/,
+    /color-mix\(in srgb, var\(--reader-bg\) 38%, transparent\) var\(--focus-fade\)/,
   );
   const slot = css.match(/\.upcoming-slot\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(slot, /filter:\s*none/);
@@ -275,7 +275,16 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.match(motion, /\.reader-frame \*/);
   assert.match(motion, /\.focus-blur-track/);
   assert.match(motion, /transition:\s*none\s*!important/);
-  assert.match(css, /\.focus-frost-read\s*\{[^}]*color-mix\(in srgb, var\(--reader-bg\) 50%, transparent\)/);
+  assert.match(css, /\.focus-frost-read\s*\{[^}]*color-mix\(in srgb, var\(--reader-bg\) 38%, transparent\)/);
+  const mirrorInk =
+    css.match(
+      /\.focus-blur-track,\s*\n\.focus-blur-track \.look-line,[\s\S]*?\.focus-blur-track \.section-break\s*\{[^}]+\}/,
+    )?.[0] ?? "";
+  assert.ok(mirrorInk.length > 0, "blur mirror does not pin its ink");
+  assert.match(mirrorInk, /color:\s*var\(--reader-ink, var\(--color-ink\)\)/);
+  assert.match(mirrorInk, /-webkit-text-fill-color:\s*var\(--reader-ink, var\(--color-ink\)\)/);
+  assert.doesNotMatch(mirrorInk, /backdrop-filter|mix-blend-mode/);
+  assert.match(reader, /paintMirrorInk/);
   assert.match(css, /\.focus-blur-clip\s*\{[^}]*#000 0/);
   assert.match(reader, /data-focus-band="now"/);
   assert.match(reader, /focus-blur-clip/);
