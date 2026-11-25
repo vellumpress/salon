@@ -43,6 +43,7 @@ export const smokeFiles = [
   "src/lib/band-ink.test.ts",
   "src/lib/chapter-flow.e2e.test.ts",
   "src/lib/move-by.e2e.test.ts",
+  "src/lib/hourglass-mark.e2e.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -178,6 +179,7 @@ export const allTsFiles = [
   "src/lib/band-ink.test.ts",
   "src/lib/chapter-flow.e2e.test.ts",
   "src/lib/move-by.e2e.test.ts",
+  "src/lib/hourglass-mark.e2e.test.ts",
 ];
 
 const smokeSet = new Set(smokeFiles);
