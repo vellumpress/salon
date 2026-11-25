@@ -68,6 +68,7 @@ async function openYou(browser: Browser, storage: string | null) {
   });
   await page.addInitScript((raw) => {
     localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
     if (raw) localStorage.setItem("vellum-v1", raw);
   }, storage);
   const started = Date.now();
@@ -128,6 +129,7 @@ test(
       });
       await page.addInitScript(() => {
         localStorage.clear();
+        localStorage.setItem("salon-move-by", "tap");
       });
       let held = 0;
       await page.route("**/*you-account*", async (route) => {

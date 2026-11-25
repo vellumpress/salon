@@ -239,6 +239,7 @@ async function phone(browser: Browser) {
       return media(query);
     };
     localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
     const keep = sessionStorage.getItem("keep-progress");
     if (keep) localStorage.setItem("vellum-v1", keep);
   });

@@ -102,7 +102,10 @@ async function phone(browser: Browser) {
     deviceScaleFactor: 2,
   });
   const page = await context.newPage();
-  await page.addInitScript(() => localStorage.clear());
+  await page.addInitScript(() => {
+    localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
+  });
   return page;
 }
 

@@ -113,7 +113,9 @@ import {
   turnZone,
 } from "@/lib/reader-turn";
 import { useCenterLine } from "@/lib/use-center-line";
+import { fingerScrollTop, isTopEdgeTap, textTapSteps } from "@/lib/move-by";
 import { TEXT_SIZE_MAX, TEXT_SIZE_MIN, TEXT_SIZE_STEP } from "@/lib/text-size";
+import { useMoveBy } from "@/lib/use-move-by";
 import { useTextSize } from "@/lib/use-text-size";
 
 type Overlay =
@@ -291,6 +293,9 @@ export function TbrReader({
   const centerLine = useCenterLine();
   const centerOn = centerLine.enabled;
   const textSize = useTextSize();
+  const moveBy = useMoveBy();
+  const moveByRef = useRef(moveBy.mode);
+  moveByRef.current = moveBy.mode;
   const turnHostRef = useRef<HTMLDivElement>(null);
   const togetherClapRef = useRef<(breath: number) => void>(() => {});
   const pendingTapRef = useRef<TapPoint | null>(null);
@@ -1523,6 +1528,19 @@ export function TbrReader({
   }, [textSize.scale]);
 
   useLayoutEffect(() => {
+    // Tap mode keeps the sentence where the bands put it. A finger drag
+    // from Scroll mode must not stay parked halfway down the column.
+    if (moveBy.mode !== "tap") return;
+    userScrolledRef.current = false;
+    placeTokenRef.current += 1;
+    resizeAnchorRef.current = true;
+    let delta = stickSentenceRef.current();
+    for (let pass = 0; Math.abs(delta) >= 1 && pass < 3; pass += 1) {
+      delta = stickSentenceRef.current();
+    }
+  }, [moveBy.mode]);
+
+  useLayoutEffect(() => {
     const slot = breathSlotRef.current;
     const stepped = stepPulse.current;
     stepPulse.current = false;
@@ -1832,6 +1850,19 @@ export function TbrReader({
     let placeTimer = 0;
     const onScroll = () => {
       if (!live || !flow) return;
+      if (moveByRef.current === "tap") {
+        const gesture = gestureRef.current;
+        if (gesture?.pointerType === "touch") {
+          const back = gesture.scrollTop;
+          if (Math.abs(flow.scrollTop - back) > 1) {
+            scrollLockRef.current = true;
+            flow.scrollTop = back;
+            scrollLockRef.current = false;
+            syncMirror(flow.scrollTop);
+          }
+          return;
+        }
+      }
       syncMirror(flow.scrollTop);
       if (scrollLockRef.current) return;
       const anchored = anchoredScrollRef.current;
@@ -1886,6 +1917,10 @@ export function TbrReader({
     const onWheel = (event: WheelEvent) => {
       if (!flow) return;
       if (Math.abs(event.deltaY) < 1) return;
+      if (moveByRef.current === "tap") {
+        event.preventDefault();
+        return;
+      }
       flow.scrollTop += event.deltaY;
       if (event.deltaY <= -120) noteMark("reveal");
       else noteMark("scroll");
@@ -2382,8 +2417,19 @@ export function TbrReader({
    * not an extra tap on the way down. Book start, book end, and an open
    * gate stop the repeat. The lift does not step again.
    */
+  function topRevealEdge() {
+    const frame = turnHostRef.current?.closest(".reader-frame");
+    const header = frame?.querySelector(":scope > header");
+    if (header instanceof HTMLElement) {
+      const bottom = header.getBoundingClientRect().bottom;
+      if (bottom > 8) return bottom;
+    }
+    return 48;
+  }
+
   function pumpHold(start: NonNullable<(typeof gestureRef)["current"]>) {
     holdTimerRef.current = 0;
+    if (!textTapSteps(moveByRef.current)) return;
     if (gestureRef.current !== start || start.scrolled || fingerSlipped(start)) return;
     const zone = start.zone;
     if (!zone) return;
@@ -2432,12 +2478,20 @@ export function TbrReader({
     // The lift must not also step a sentence. A gesture dispatched in one
     // frame has no real velocity, so it does not leave a fling behind.
     if ((start.scrolled || moved) && (start.scrolled || Math.hypot(dx, dy) > TAP_SLOP_PX)) {
+      // Tap mode: a finger drag is not a way through the text. Put the column back.
+      if (moveByRef.current === "tap" && start.pointerType === "touch") {
+        if (flow) flow.scrollTop = fingerScrollTop(moveByRef.current, start.scrollTop, flow.scrollTop);
+        const dt = performance.now() - start.t;
+        if (markRevealPull(dy, dt)) noteMark("reveal");
+        return;
+      }
       const dt = performance.now() - start.t;
       if (markRevealPull(dy, dt)) noteMark("reveal");
       else noteMark("scroll");
       if (start.scrolled && moved && flow && dt >= 12) fling(flow, start.vy ?? 0);
       return;
     }
+    if (!textTapSteps(moveByRef.current)) return;
     const kind = classifyTurnGesture({
       dx,
       dy,
@@ -2481,6 +2535,11 @@ export function TbrReader({
       return;
     }
     const zone = zoneFrom(target, e.clientX, e.clientY);
+    // Scroll mode still lets a top-edge tap through, so a hidden top bar can
+    // reveal itself. The sentence does not move, and the event is not swallowed.
+    if (!textTapSteps(moveByRef.current) && isTopEdgeTap(e.clientY, topRevealEdge())) {
+      return;
+    }
     if (e.pointerType === "touch") {
       rememberTouch(e.clientX, e.clientY);
       lastTouchZoneRef.current = zone;
@@ -2509,7 +2568,7 @@ export function TbrReader({
       zone,
     };
     gestureRef.current = gesture;
-    if (!stoppedMomentum) armHold(gesture);
+    if (textTapSteps(moveByRef.current) && !stoppedMomentum) armHold(gesture);
     try {
       host.setPointerCapture(e.pointerId);
     } catch {
@@ -2527,6 +2586,20 @@ export function TbrReader({
     start.lastX = e.clientX;
     start.lastY = e.clientY;
     if (fingerSlipped(start)) clearHoldTimer();
+    if (moveByRef.current === "tap" && start.pointerType === "touch") {
+      const dy = e.clientY - start.y;
+      const dx = e.clientX - start.x;
+      if (Math.abs(dy) >= SCROLL_ARM_PX && Math.abs(dy) >= Math.abs(dx)) {
+        start.scrolled = true;
+        clearHoldTimer();
+      }
+      const column = flowRef.current;
+      if (column && Math.abs(column.scrollTop - start.scrollTop) > 0.5) {
+        column.scrollTop = fingerScrollTop("tap", start.scrollTop, column.scrollTop);
+      }
+      if (e.cancelable) e.preventDefault();
+      return;
+    }
     if (start.zone === "prev") return;
     const flow = flowRef.current;
     if (!flow || !columnScrolls()) return;
@@ -2586,6 +2659,18 @@ export function TbrReader({
   }
 
   function onTurnClick(e: ReactMouseEvent<HTMLDivElement>) {
+    if (!textTapSteps(moveByRef.current)) {
+      if (isTopEdgeTap(e.clientY, topRevealEdge())) return;
+      e.preventDefault();
+      e.stopPropagation();
+      if (owedClicksRef.current > 0) noteOwed(-1);
+      const open = gestureRef.current;
+      if (open && !open.turned) {
+        open.turned = true;
+        if (gestureRef.current === open) gestureRef.current = null;
+      }
+      return;
+    }
     e.preventDefault();
     e.stopPropagation();
     const start = gestureRef.current;
@@ -2759,6 +2844,7 @@ export function TbrReader({
       style={daylight.style}
       data-daylight={daylight.active ? daylight.sample.phase : "off"}
       data-center-line={centerOn ? "on" : "off"}
+      data-move-by={moveBy.mode}
       data-bound={workIsComplete(work.id) ? "full" : "opening"}
       data-breath-index={index}
       data-scene={breath?.sceneId ?? ""}
@@ -2979,6 +3065,30 @@ export function TbrReader({
                   <span className="text-size-mark text-size-mark-large" aria-hidden="true">
                     A
                   </span>
+                </span>
+              </div>
+              <div className="move-by-row">
+                <span id="reader-move-by-label">Move by</span>
+                <span className="move-by-choices" role="group" aria-labelledby="reader-move-by-label">
+                  <button
+                    type="button"
+                    aria-pressed={moveBy.mode === "scroll"}
+                    onPointerDown={(event) => event.stopPropagation()}
+                    onClick={() => moveBy.setMode("scroll")}
+                  >
+                    Scroll
+                  </button>
+                  <span className="move-by-slash" aria-hidden="true">
+                    /
+                  </span>
+                  <button
+                    type="button"
+                    aria-pressed={moveBy.mode === "tap"}
+                    onPointerDown={(event) => event.stopPropagation()}
+                    onClick={() => moveBy.setMode("tap")}
+                  >
+                    Tap
+                  </button>
                 </span>
               </div>
             </div>

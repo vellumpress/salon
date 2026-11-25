@@ -33,6 +33,7 @@ async function phone(browser: Browser) {
   await page.addInitScript(() => {
     if (sessionStorage.getItem("salon-test-cleared") === "1") return;
     localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
     sessionStorage.setItem("salon-test-cleared", "1");
   });
   return page;

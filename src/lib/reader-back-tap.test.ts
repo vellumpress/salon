@@ -135,7 +135,10 @@ async function phonePage(browser: Browser) {
   assert.equal(viewport?.height, 844);
   const touchPoints = await page.evaluate(() => navigator.maxTouchPoints);
   assert.ok(touchPoints > 0, "viewport is not touch-capable");
-  await page.addInitScript(() => localStorage.clear());
+  await page.addInitScript(() => {
+    localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
+  });
   return page;
 }
 
