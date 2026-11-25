@@ -2427,10 +2427,17 @@ html:has(.board-doors) body {
 .focus-frost-read {
   top: 0;
   height: calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 + var(--focus-fade));
+  /* The line above the focus stays nearly clear. Each line further up
+     takes more of the page color, until the top of the column is only a trace.
+     The last focus-fade stays empty so the focus line itself is not veiled. */
   background-image: linear-gradient(
     to bottom,
-    color-mix(in srgb, var(--reader-bg) 38%, transparent) 0,
-    color-mix(in srgb, var(--reader-bg) 38%, transparent) calc(100% - var(--focus-fade)),
+    color-mix(in srgb, var(--reader-bg) 96%, transparent) 0,
+    color-mix(in srgb, var(--reader-bg) 92%, transparent) 40%,
+    color-mix(in srgb, var(--reader-bg) 84%, transparent) 62%,
+    color-mix(in srgb, var(--reader-bg) 62%, transparent) calc(100% - var(--focus-fade) - 4.5rem),
+    color-mix(in srgb, var(--reader-bg) 28%, transparent) calc(100% - var(--focus-fade) - 2.25rem),
+    color-mix(in srgb, var(--reader-bg) 5%, transparent) calc(100% - var(--focus-fade)),
     transparent 100%
   );
 }

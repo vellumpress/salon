@@ -280,7 +280,14 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.match(motion, /\.reader-frame \*/);
   assert.match(motion, /\.focus-blur-track/);
   assert.match(motion, /transition:\s*none\s*!important/);
-  assert.match(css, /\.focus-frost-read\s*\{[^}]*color-mix\(in srgb, var\(--reader-bg\) 38%, transparent\)/);
+  const frostRead = css.match(/\.focus-frost-read\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 96%, transparent\) 0/);
+  assert.match(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 92%, transparent\) 40%/);
+  assert.match(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 62%, transparent\) calc\(100% - var\(--focus-fade\) - 4\.5rem\)/);
+  assert.match(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 28%, transparent\) calc\(100% - var\(--focus-fade\) - 2\.25rem\)/);
+  assert.match(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 5%, transparent\) calc\(100% - var\(--focus-fade\)\)/);
+  assert.match(frostRead, /transparent 100%/);
+  assert.doesNotMatch(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 38%, transparent\)/);
   const mirrorInk =
     css.match(
       /\.focus-blur-track,\s*\n\.focus-blur-track \.look-line,[\s\S]*?\.focus-blur-track \.section-break\s*\{[^}]+\}/,
