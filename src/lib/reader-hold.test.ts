@@ -407,11 +407,24 @@ test(
     const browser = await launchChromium();
     try {
       const page = await phone(browser);
-      await page.goto(`${ORIGIN}/salon/read/the-house-of-mirth?sit=20&pair=ab12cd`, {
-        waitUntil: "domcontentloaded",
-      });
-      await page.locator(".breath-now").waitFor({ timeout: 30_000 });
-      await page.locator(".together-lock").waitFor();
+      let last: unknown;
+      for (let attempt = 0; attempt < 2; attempt += 1) {
+        try {
+          await page.goto(`${ORIGIN}/salon/read/the-house-of-mirth?sit=20&pair=ab12cd`, {
+            waitUntil: "domcontentloaded",
+          });
+          await page.locator(".breath-now").waitFor({ timeout: 30_000 });
+          await page.locator(".together-lock").waitFor();
+          last = undefined;
+          break;
+        } catch (error) {
+          last = error;
+          const message = error instanceof Error ? error.message : String(error);
+          if (attempt === 1 || (!readerDown(error) && !/Timeout \d+ms exceeded/.test(message))) break;
+          await ensureReaderServer();
+        }
+      }
+      if (last) throw last;
       const start = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       const forward = await sidePoint(page, "next");
       await pointerDown(page, forward.x, forward.y);
