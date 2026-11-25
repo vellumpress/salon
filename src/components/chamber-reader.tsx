@@ -1602,7 +1602,9 @@ export function TbrReader({
         blurSigRef.current = sig;
         delete clone.dataset.mirrorInk;
       }
-      paintMirrorInk(clone, source, host);
+      // A flick's scroll must not flush layout. Reading the live color here
+      // makes WebKit treat the finger's lift as a tap.
+      if (!clone.dataset.mirrorInk) paintMirrorInk(clone, source, host);
       host.dataset.mirrorFilter = getComputedStyle(clone).filter;
       return clone;
     };
