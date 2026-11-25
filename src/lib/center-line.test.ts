@@ -227,7 +227,9 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   const live = css.match(/\.focus-live\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(live, /position:\s*absolute/);
   assert.match(live, /overflow-y:\s*auto/);
-  assert.match(live, /transparent 0/);
+  assert.match(live, /rgb\(0 0 0 \/ 32%\) 0/);
+  assert.match(live, /rgb\(0 0 0 \/ 32%\) var\(--focus-lead\)/);
+  assert.doesNotMatch(live, /transparent 0/);
   assert.match(live, /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \/ 3\)/);
   assert.match(
     live,
@@ -272,22 +274,15 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.doesNotMatch(breath, /blur|filter/);
   const transparent = css.slice(css.indexOf("@media (prefers-reduced-transparency: reduce)"));
   assert.match(transparent, /\.focus-blur-track\s*\{[^}]*filter:\s*none/);
-  assert.match(
-    transparent,
-    /\.focus-wash,\s*\.focus-frost\s*\{[^}]*background:\s*var\(--reader-bg\)/,
-  );
+  assert.match(transparent, /\.focus-wash\s*\{[^}]*background:\s*var\(--reader-bg\)/);
+  assert.match(transparent, /\.focus-frost\s*\{[^}]*background:\s*none/);
   const motion = css.slice(css.lastIndexOf("@media (prefers-reduced-motion: reduce)"));
   assert.match(motion, /\.reader-frame \*/);
   assert.match(motion, /\.focus-blur-track/);
   assert.match(motion, /transition:\s*none\s*!important/);
   const frostRead = css.match(/\.focus-frost-read\s*\{[^}]+\}/)?.[0] ?? "";
-  assert.match(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 96%, transparent\) 0/);
-  assert.match(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 92%, transparent\) 40%/);
-  assert.match(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 62%, transparent\) calc\(100% - var\(--focus-fade\) - 4\.5rem\)/);
-  assert.match(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 28%, transparent\) calc\(100% - var\(--focus-fade\) - 2\.25rem\)/);
-  assert.match(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 5%, transparent\) calc\(100% - var\(--focus-fade\)\)/);
-  assert.match(frostRead, /transparent 100%/);
-  assert.doesNotMatch(frostRead, /color-mix\(in srgb, var\(--reader-bg\) 38%, transparent\)/);
+  assert.match(frostRead, /background-image:\s*none/);
+  assert.doesNotMatch(frostRead, /color-mix|blur\(/);
   const mirrorInk =
     css.match(
       /\.focus-blur-track,\s*\n\.focus-blur-track \.look-line,[\s\S]*?\.focus-blur-track \.section-break\s*\{[^}]+\}/,
@@ -297,7 +292,13 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.match(mirrorInk, /-webkit-text-fill-color:\s*var\(--reader-ink, var\(--color-ink\)\)/);
   assert.doesNotMatch(mirrorInk, /backdrop-filter|mix-blend-mode/);
   assert.match(reader, /paintMirrorInk/);
-  assert.match(css, /\.focus-blur-clip\s*\{[^}]*#000 0/);
+  const blurClip = css.match(/\.focus-blur-clip\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(blurClip, /transparent 0/);
+  assert.match(
+    blurClip,
+    /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3\)/,
+  );
+  assert.doesNotMatch(blurClip, /#000 0/);
   assert.match(reader, /data-focus-band="now"/);
   assert.match(reader, /focus-blur-clip/);
   assert.match(reader, /focus-frost-read/);

@@ -2290,9 +2290,9 @@ html:has(.board-doors) body {
   overflow-y: auto;
 }
 
-/* One continuous page. The sharp text shows only in the middle third.
-   The top and the bottom are clear so the same frosted mirror shows through.
-   The edges are a short gradient, not a cut. */
+/* One continuous page. Past lines stay sharp, in the focus ink, and ease
+   from nearly full at the focus to about a third at the top. The lines
+   below stay in the frosted mirror. The lower edge is a short gradient. */
 .focus-live {
   position: absolute;
   z-index: 1;
@@ -2306,16 +2306,16 @@ html:has(.board-doors) body {
   pointer-events: none;
   -webkit-mask-image: linear-gradient(
     to bottom,
-    transparent 0,
-    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
+    rgb(0 0 0 / 32%) 0,
+    rgb(0 0 0 / 32%) var(--focus-lead),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
     transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
   );
   mask-image: linear-gradient(
     to bottom,
-    transparent 0,
-    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
+    rgb(0 0 0 / 32%) 0,
+    rgb(0 0 0 / 32%) var(--focus-lead),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
     transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
@@ -2330,8 +2330,9 @@ html:has(.board-doors) body {
   display: none;
 }
 
-/* One blur for the mirror of the column. The clip stays put; the text
-   inside it moves. A filter on each line re-rasterizes on iPhone. */
+/* The blur mirror is only the lines below the focus. Past lines are the
+   sharp text, so this clip stays clear until the lower third. A filter on
+   each line re-rasterizes on iPhone. */
 .focus-blur-clip {
   position: absolute;
   z-index: 2;
@@ -2340,17 +2341,13 @@ html:has(.board-doors) body {
   pointer-events: none;
   -webkit-mask-image: linear-gradient(
     to bottom,
-    #000 0,
-    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
-    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
+    transparent 0,
     transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
   );
   mask-image: linear-gradient(
     to bottom,
-    #000 0,
-    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 - var(--focus-fade)),
-    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
+    transparent 0,
     transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3)
   );
@@ -2427,19 +2424,8 @@ html:has(.board-doors) body {
 .focus-frost-read {
   top: 0;
   height: calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3 + var(--focus-fade));
-  /* The line above the focus stays nearly clear. Each line further up
-     takes more of the page color, until the top of the column is only a trace.
-     The last focus-fade stays empty so the focus line itself is not veiled. */
-  background-image: linear-gradient(
-    to bottom,
-    color-mix(in srgb, var(--reader-bg) 96%, transparent) 0,
-    color-mix(in srgb, var(--reader-bg) 92%, transparent) 40%,
-    color-mix(in srgb, var(--reader-bg) 84%, transparent) 62%,
-    color-mix(in srgb, var(--reader-bg) 62%, transparent) calc(100% - var(--focus-fade) - 4.5rem),
-    color-mix(in srgb, var(--reader-bg) 28%, transparent) calc(100% - var(--focus-fade) - 2.25rem),
-    color-mix(in srgb, var(--reader-bg) 5%, transparent) calc(100% - var(--focus-fade)),
-    transparent 100%
-  );
+  /* No page-color veil. Past lines fade by mask opacity on the sharp text. */
+  background-image: none;
 }
 
 .focus-wash {
@@ -2563,10 +2549,13 @@ html:has(.reader-frame:not(.together-lock)) .status-bar-fill {
   .focus-blur-track {
     filter: none;
   }
-  .focus-wash,
-  .focus-frost {
+  .focus-wash {
     background-image: none;
     background: var(--reader-bg);
+  }
+  .focus-frost {
+    background-image: none;
+    background: none;
   }
   .breath-sentence {
     filter: none;
