@@ -15,6 +15,7 @@ import {
   signInCodeError,
   MAIL_RATE_MESSAGE,
   mapAuthError,
+  noticeAfterLocalSignIn,
   PASSWORD_MISMATCH_MESSAGE,
   recoveryLinkKind,
   RESET_EMAIL_RATE,
@@ -53,6 +54,31 @@ test("password reset mail stays neutral except for the send rate limit", () => {
   assert.equal(shouldPreserveRecoverySession("PASSWORD_RECOVERY", "/salon/login"), true);
   assert.equal(shouldPreserveRecoverySession("SIGNED_IN", "/salon/reset-password"), true);
   assert.equal(shouldPreserveRecoverySession("SIGNED_IN", "/salon/login"), false);
+});
+
+test("a phone password that matches is not blocked by a missing hosted login", () => {
+  assert.equal(
+    noticeAfterLocalSignIn({ status: "error", message: PASSWORD_MISMATCH_MESSAGE }, "mina"),
+    "",
+  );
+  assert.equal(noticeAfterLocalSignIn({ status: "offline" }, "mina"), "");
+  assert.equal(noticeAfterLocalSignIn({ status: "session", handle: "mina" }, "mina"), "");
+  assert.match(noticeAfterLocalSignIn({ status: "confirm_email" }, "mina"), /@mina/);
+  assert.equal(
+    noticeAfterLocalSignIn({ status: "handle_taken", message: HANDLE_TAKEN_MESSAGE }, "mina"),
+    HANDLE_TAKEN_MESSAGE,
+  );
+  assert.equal(
+    noticeAfterLocalSignIn(
+      {
+        status: "error",
+        message:
+          "The confirmation email is catching its breath. You can keep reading on this phone and sign in again shortly.",
+      },
+      "mina",
+    ),
+    "The confirmation email is catching its breath. You can keep reading on this phone and sign in again shortly.",
+  );
 });
 
 test("a wrong password is not told that the email already exists", () => {

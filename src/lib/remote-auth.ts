@@ -91,6 +91,19 @@ export function authFailureMessage(status: "invalid" | "exists" | "session") {
   return "Could not claim the @name.";
 }
 
+/**
+ * The phone password already matched. A hosted "no such login" is not a
+ * second failure: the remote user may never have been created (the confirm
+ * mail was rate-limited, or this phone has not synced). That must not lock
+ * the reader out of the account on this phone.
+ */
+export function noticeAfterLocalSignIn(remote: HostedConnect, handle: string): string {
+  if (remote.status === "confirm_email") return confirmEmailMessage(handle);
+  if (remote.status === "handle_taken") return remote.message;
+  if (remote.status === "error" && remote.message !== PASSWORD_MISMATCH_MESSAGE) return remote.message;
+  return "";
+}
+
 /** Expired confirm or sign-in links. A missing link is not an error. */
 export function authLinkNotice(search: string, hash: string) {
   const query = new URLSearchParams(search.startsWith("?") ? search.slice(1) : search);

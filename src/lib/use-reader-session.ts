@@ -21,6 +21,7 @@ import {
   confirmEmailMessage,
   confirmSignInCode,
   connectHostedAccount,
+  noticeAfterLocalSignIn,
   ensureProfile,
   shouldPreserveRecoverySession,
   signOutHosted,
@@ -295,14 +296,7 @@ export function useReaderSession() {
           handle,
           name: local.session.name,
           confirmEmail: remote.status === "confirm_email",
-          notice:
-            remote.status === "confirm_email"
-              ? confirmEmailMessage(handle)
-              : remote.status === "handle_taken"
-                ? remote.message
-                : remote.status === "error"
-                  ? remote.message
-                  : "",
+          notice: noticeAfterLocalSignIn(remote, handle),
         };
       }
       if (remote.status === "session") {
