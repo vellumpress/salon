@@ -177,10 +177,26 @@ async function flickThenStop(page: Page, from: { x: number; y: number }, at: { x
       fire("pointerup", from.x, from.y - 70, 8);
       const lifted = key();
       const atLift = flow.scrollTop;
-      const stop = await new Promise<{ moved: boolean; beforeStop: string; afterStop: string; atLift: number; end: number }>((resolve) => {
+      const stop = await new Promise<{
+        moved: boolean;
+        beforeStop: string;
+        afterStop: string;
+        atLift: number;
+        end: number;
+        age: string;
+        n: string;
+      }>((resolve) => {
         const timer = window.setTimeout(() => {
           flow.removeEventListener("scroll", onScroll);
-          resolve({ moved: false, beforeStop: key() ?? "", afterStop: key() ?? "", atLift, end: flow.scrollTop });
+          resolve({
+            moved: false,
+            beforeStop: key() ?? "",
+            afterStop: key() ?? "",
+            atLift,
+            end: flow.scrollTop,
+            age: "",
+            n: "",
+          });
         }, 1_500);
         const onScroll = () => {
           if (Math.abs(flow.scrollTop - atLift) < 0.5) return;
@@ -188,8 +204,18 @@ async function flickThenStop(page: Page, from: { x: number; y: number }, at: { x
           window.clearTimeout(timer);
           const beforeStop = key() ?? "";
           fire("pointerdown", at.x, at.y, 9);
+          const age = document.documentElement.dataset.coastAge ?? "";
+          const n = document.documentElement.dataset.coastN ?? "";
           fire("pointerup", at.x, at.y, 9);
-          resolve({ moved: true, beforeStop, afterStop: key() ?? "", atLift, end: flow.scrollTop });
+          resolve({
+            moved: true,
+            beforeStop,
+            afterStop: key() ?? "",
+            atLift,
+            end: flow.scrollTop,
+            age,
+            n,
+          });
         };
         flow.addEventListener("scroll", onScroll);
       });

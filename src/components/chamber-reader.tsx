@@ -1719,7 +1719,7 @@ export function TbrReader({
         useTbr.getState().setBreath(work.id, next, stampAt(work, next));
       }, 90);
     };
-    flow?.addEventListener("scroll", onScroll, { passive: true });
+    flow?.addEventListener("scroll", onScroll, { passive: true, capture: true });
     const onWheel = (event: WheelEvent) => {
       if (!flow) return;
       if (Math.abs(event.deltaY) < 1) return;
@@ -1762,7 +1762,7 @@ export function TbrReader({
       live = false;
       document.fonts?.removeEventListener("loadingdone", onFonts);
       ro.disconnect();
-      flow?.removeEventListener("scroll", onScroll);
+      flow?.removeEventListener("scroll", onScroll, { capture: true });
       turnHostRef.current?.removeEventListener("wheel", onWheel);
       window.clearTimeout(placeTimer);
     };
