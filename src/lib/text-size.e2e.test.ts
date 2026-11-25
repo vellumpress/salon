@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
+import { waitForPageRest } from "./reader-group-tap.ts";
 import { TEXT_SIZE_MAX, TEXT_SIZE_MIN } from "./text-size.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 import { skipWithoutWebKit, webKitRequired } from "./require-webkit.ts";
@@ -258,6 +259,7 @@ async function checkReader(page: Page, label: string) {
   assert.ok(Math.abs(scrolled.scroll - scrolledFrom) > 40, `${label} the page did not scroll`);
   const afterScroll = await advances(page);
   assert.equal(afterScroll, credited, `${label} scrolling added sitting time`);
+  await waitForPageRest(page);
 
   await page.mouse.click(40, 500);
   await page.waitForFunction(
