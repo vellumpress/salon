@@ -89,7 +89,10 @@ test(
       const touchPoints = await page.evaluate(() => navigator.maxTouchPoints);
       assert.ok(touchPoints > 0, "viewport is not touch-capable");
 
-      await page.addInitScript(() => localStorage.clear());
+      await page.addInitScript(() => {
+        localStorage.clear();
+        localStorage.setItem("salon-move-by", "tap");
+      });
       await page.goto(READER, { waitUntil: "domcontentloaded" });
       await page.getByRole("button", { name: "Next sentence" }).waitFor();
       // The opening paints first. The full bind can replace a sentence's
@@ -212,7 +215,10 @@ test(
         deviceScaleFactor: 2,
       });
       const page = await context.newPage();
-      await page.addInitScript(() => localStorage.clear());
+      await page.addInitScript(() => {
+        localStorage.clear();
+        localStorage.setItem("salon-move-by", "tap");
+      });
       await page.goto(READER, { waitUntil: "domcontentloaded" });
       await focusInPane(page);
 
@@ -371,7 +377,10 @@ async function phone(browser: Browser) {
     deviceScaleFactor: 2,
   });
   const page = await context.newPage();
-  await page.addInitScript(() => localStorage.clear());
+  await page.addInitScript(() => {
+    localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
+  });
   return page;
 }
 

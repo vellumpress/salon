@@ -88,7 +88,10 @@ async function phonePage(browser: Browser, viewport = PHONE_VIEW) {
     userAgent: PHONE.userAgent,
   });
   const page = await context.newPage();
-  await page.addInitScript(() => localStorage.clear());
+  await page.addInitScript(() => {
+    localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
+  });
   return page;
 }
 

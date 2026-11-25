@@ -36,6 +36,7 @@ async function phone(browser: Browser) {
     if (sessionStorage.getItem("text-size-booted")) return;
     sessionStorage.setItem("text-size-booted", "1");
     localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
   });
   return page;
 }

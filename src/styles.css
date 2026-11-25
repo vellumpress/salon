@@ -4069,7 +4069,8 @@ html.together-compose .chat-field {
   color: var(--reader-ink);
 }
 
-.reader-daylight .text-size-row {
+.reader-daylight .text-size-row,
+.reader-daylight .move-by-row {
   color: var(--reader-ink);
 }
 
@@ -4494,7 +4495,8 @@ html.together-compose.together-kb .reader-daylight .chat-field {
 }
 
 .reader-daylight .daylight-switch,
-.reader-daylight .text-size-row {
+.reader-daylight .text-size-row,
+.reader-daylight .move-by-row {
   border-top-color: var(--reader-rule);
 }
 
@@ -4582,6 +4584,63 @@ html.together-compose.together-kb .reader-daylight .chat-field {
   border: 0;
   border-radius: 0;
   background: currentColor;
+}
+
+.move-by-row {
+  display: flex;
+  width: 100%;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-top: 1px solid var(--color-ink, #1a1a1a);
+  padding: 0.35rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: none;
+  color: inherit;
+}
+
+.move-by-choices {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.move-by-choices button {
+  min-height: 2.25rem;
+  min-width: 4.25rem;
+  padding: 0.2rem 0.75rem;
+  border: 1px solid currentColor;
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: none;
+  color: inherit;
+}
+
+.move-by-choices button[aria-pressed="true"] {
+  background: var(--color-ink, #1a1a1a);
+  border-color: var(--color-ink, #1a1a1a);
+  color: var(--color-paper, #f4efe6);
+}
+
+.reader-daylight .move-by-choices button[aria-pressed="true"] {
+  background: var(--reader-ink);
+  border-color: var(--reader-ink);
+  color: var(--reader-bg);
+}
+
+.move-by-slash {
+  font-family: var(--font-sans);
+  opacity: 0.55;
 }
 
 @media (prefers-reduced-motion: reduce) {

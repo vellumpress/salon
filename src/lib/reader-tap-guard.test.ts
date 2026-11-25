@@ -123,6 +123,7 @@ async function phone(browser: Browser, auth: AuthMode, at: number) {
       else window.localStorage.removeItem(authKey);
       if (store) window.localStorage.setItem(storeKey, JSON.stringify(store));
       else window.localStorage.removeItem(storeKey);
+      window.localStorage.setItem("salon-move-by", "tap");
     },
     {
       auth: auth === "in" ? sessionFor() : null,

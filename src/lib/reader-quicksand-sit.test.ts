@@ -80,6 +80,9 @@ async function run(browser: Browser, label: string) {
     userAgent: PHONE.userAgent,
   });
   const page = await context.newPage();
+  await page.addInitScript(() => {
+    localStorage.setItem("salon-move-by", "tap");
+  });
   await check(page, label);
   await context.close();
 }

@@ -70,7 +70,10 @@ async function phone(browser: Browser) {
     userAgent: PHONE.userAgent,
   });
   const page = await context.newPage();
-  await page.addInitScript(() => localStorage.clear());
+  await page.addInitScript(() => {
+    localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
+  });
   return page;
 }
 

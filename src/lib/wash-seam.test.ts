@@ -174,6 +174,7 @@ async function phone(browser: Browser, tint: "evening" | "night" | "off") {
   });
   await page.addInitScript((mode) => {
     localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
     if (mode === "off") localStorage.setItem("salon-daylight-colors", "0");
   }, tint);
   return page;

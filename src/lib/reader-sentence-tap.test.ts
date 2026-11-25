@@ -57,6 +57,7 @@ async function phone(browser: Browser) {
   const page = await context.newPage();
   await page.addInitScript(() => {
     localStorage.clear();
+    localStorage.setItem("salon-move-by", "tap");
     Object.defineProperty(window.navigator, "standalone", {
       configurable: true,
       get: () => true,

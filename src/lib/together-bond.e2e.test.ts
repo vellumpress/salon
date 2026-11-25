@@ -171,9 +171,11 @@ test("shared marks sync across two readers and the pen is gone", { timeout: 180_
     const b = await browser.newContext({ ...phone, reducedMotion: "reduce" });
     await a.addInitScript((url) => {
       (window as unknown as { __TBR_SIT_MIRROR?: string }).__TBR_SIT_MIRROR = url;
+      localStorage.setItem("salon-move-by", "tap");
     }, mirror.url);
     await b.addInitScript((url) => {
       (window as unknown as { __TBR_SIT_MIRROR?: string }).__TBR_SIT_MIRROR = url;
+      localStorage.setItem("salon-move-by", "tap");
     }, mirror.url);
     await a.route(/supabase\.co/, (route) => route.abort());
     await b.route(/supabase\.co/, (route) => route.abort());
@@ -206,6 +208,7 @@ test("shared marks sync across two readers and the pen is gone", { timeout: 180_
     const wideSit = await wide.newPage();
     await wideSit.addInitScript((url) => {
       (window as unknown as { __TBR_SIT_MIRROR?: string }).__TBR_SIT_MIRROR = url;
+      localStorage.setItem("salon-move-by", "tap");
     }, mirror.url);
     await wideSit.route(/supabase\.co/, (route) => route.abort());
     await wideSolo.goto(`${APP}/read/passing?at=0`, { waitUntil: "domcontentloaded" });
@@ -344,9 +347,11 @@ test("both readers see a quiet toast when they finish the same chapter", { timeo
     const b = await browser.newContext({ ...phone, reducedMotion: "reduce" });
     await a.addInitScript((url) => {
       (window as unknown as { __TBR_SIT_MIRROR?: string }).__TBR_SIT_MIRROR = url;
+      localStorage.setItem("salon-move-by", "tap");
     }, mirror.url);
     await b.addInitScript((url) => {
       (window as unknown as { __TBR_SIT_MIRROR?: string }).__TBR_SIT_MIRROR = url;
+      localStorage.setItem("salon-move-by", "tap");
     }, mirror.url);
     await a.route(/supabase\.co/, (route) => route.abort());
     await b.route(/supabase\.co/, (route) => route.abort());
