@@ -252,11 +252,17 @@ function assertSameInk(samples: BandSample[], label: string) {
       Math.sign(side) === Math.sign(focusSide),
       `${label} ${band.name} darkened off the ink (side ${side.toFixed(1)}, focus ${focusSide.toFixed(1)})`,
     );
-    if (band.name !== "now") {
+    if (band.name === "next") {
       assert.ok(Math.abs(side) > 8, `${label} ${band.name} text does not show through (${side.toFixed(1)})`);
       assert.ok(
         Math.abs(side) < Math.abs(focusSide) * 0.72,
         `${label} ${band.name} is as sharp as the focus (${side.toFixed(1)} vs ${focusSide.toFixed(1)})`,
+      );
+    }
+    if (band.name === "read") {
+      assert.ok(
+        Math.abs(side) > Math.abs(focusSide) * 0.45,
+        `${label} the line above the focus is not nearly full ink (${side.toFixed(1)} vs ${focusSide.toFixed(1)})`,
       );
     }
   }
@@ -279,14 +285,17 @@ function assertPastGradient(
   const measured = `top ${topSide.toFixed(1)} mid ${midSide.toFixed(1)} near ${nearSide.toFixed(1)} focus ${focusSide.toFixed(1)}`;
   assert.ok(nearSide > midSide, `${label} past lines do not strengthen toward the focus (${measured})`);
   assert.ok(midSide > topSide, `${label} past lines do not fade toward the top (${measured})`);
-  assert.ok(nearSide > topSide * 2, `${label} the line above the focus is not much clearer than the top (${measured})`);
-  assert.ok(topSide < focusSide * 0.34, `${label} the top of the past is still easy to read (${measured})`);
-  assert.ok(
-    hueCosine(near.glyph, near.background, focus.glyph, focus.background) > 0.8,
-    `${label} the line above the focus left the focus ink ${JSON.stringify(near)}`,
-  );
-  assert.match(frostImage, /0\.96|96%/, `${label} frost does not start heavy ${frostImage}`);
-  assert.match(frostImage, /(?<![0-9.])(?:0\.05|5%)/, `${label} frost does not thin at the focus ${frostImage}`);
+  assert.ok(topSide > focusSide * 0.18, `${label} the top of the past is not readable (${measured})`);
+  assert.ok(topSide < focusSide * 0.8, `${label} the top of the past is as hard as the focus (${measured})`);
+  assert.ok(nearSide > focusSide * 0.55, `${label} the line above the focus is not nearly full ink (${measured})`);
+  assert.ok(nearSide > topSide * 1.2, `${label} past lines barely fade (${measured})`);
+  for (const band of [top, near]) {
+    assert.ok(
+      hueCosine(band.glyph, band.background, focus.glyph, focus.background) > 0.8,
+      `${label} ${band.name} left the focus ink ${JSON.stringify(band)}`,
+    );
+  }
+  assert.match(frostImage, /^none$/i, `${label} past lines are still veiled ${frostImage}`);
 }
 
 async function assertPhase(page: Page, phase: (typeof PHASES)[number], browserName: string) {
