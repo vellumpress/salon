@@ -3,7 +3,10 @@ import test from "node:test";
 import {
   READER_PHONE_VIEWPORT,
   closedReaderBar,
+  freshReaderMark,
+  markRevealPull,
   reduceReaderBar,
+  reduceReaderMark,
   readerBarOpen,
 } from "./reader-chrome.ts";
 
@@ -38,6 +41,30 @@ test("a tap outside an open bar closes it and a page tap does not reopen it", ()
 test("Keep and Send live inside the bar, so those taps leave it open", () => {
   const open = reduceReaderBar(closedReaderBar, "hourglass");
   assert.equal(reduceReaderBar(open, "chrome"), open);
+});
+
+test("the mark row hides when reading starts and comes back on a reveal", () => {
+  assert.equal(freshReaderMark.mark, "shown");
+  assert.equal(freshReaderMark.started, false);
+
+  const reading = reduceReaderMark(freshReaderMark, "forward");
+  assert.equal(reading.mark, "hidden");
+  assert.equal(reading.started, true);
+  assert.equal(reduceReaderMark(reading, "back").mark, "hidden");
+  assert.equal(reduceReaderMark(reading, "scroll").mark, "hidden");
+
+  const back = reduceReaderMark(reduceReaderMark(freshReaderMark, "back"), "reveal");
+  assert.equal(back.mark, "shown");
+  assert.equal(reduceReaderMark(back, "back").mark, "shown");
+  assert.equal(reduceReaderMark(back, "forward").mark, "hidden");
+  assert.equal(reduceReaderMark(back, "scroll").mark, "hidden");
+
+  const pulled = reduceReaderMark(reading, "reveal");
+  assert.equal(pulled.mark, "shown");
+  assert.equal(markRevealPull(80, 200), true);
+  assert.equal(markRevealPull(40, 200), false);
+  assert.equal(markRevealPull(80, 900), false);
+  assert.equal(markRevealPull(-80, 120), false);
 });
 
 test("reader bar checks use a touch-sized phone viewport", () => {

@@ -2618,17 +2618,73 @@ html.together-compose .upcoming-slot {
   pointer-events: none;
 }
 
-/* The mark row stays tappable. The back-tap zone climbs over this band, and
-   a faded header would let that zone take the Home tap. */
+/* The mark row stays tappable while it is open. Once reading starts it
+   fades, and the back-tap zone can use that band. A thin strip at the
+   top edge brings the row back. */
 .reader-frame > header.reader-mark {
   z-index: 40;
   pointer-events: auto;
+  transition: opacity 160ms ease;
 }
 
 .still > header.reader-mark,
 .weigh-on > header.reader-mark {
   opacity: 1;
   pointer-events: auto;
+}
+
+.reader-frame[data-mark="off"] > header.reader-mark {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mark-reveal {
+  position: absolute;
+  z-index: 70;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1.75rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.column-breath {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.chapter-signpost {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin-top: 2.75rem;
+  margin-bottom: 1.15rem;
+  pointer-events: none;
+}
+
+.chapter-signpost-title {
+  margin: 0;
+  max-width: 18rem;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.35;
+  text-transform: lowercase;
+  font-variant-caps: all-small-caps;
+}
+
+.chapter-signpost-rule {
+  display: block;
+  width: 2.25rem;
+  height: 1px;
+  background: color-mix(in srgb, var(--color-ink) 40%, transparent);
 }
 
 .reader-turn {

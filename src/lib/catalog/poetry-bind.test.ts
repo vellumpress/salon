@@ -15,13 +15,7 @@ import {
 } from "./poetry-bind.ts";
 import type { Work } from "../literature.ts";
 import { openingBreathIndex } from "../opening-scene.ts";
-
-function lookbackBreaths(work: Work, index: number, limit = 12) {
-  const current = work.breaths[index];
-  if (!current) return [];
-  const start = Math.max(0, index - limit);
-  return work.breaths.slice(start, index).filter((breath) => breath.sceneId === current.sceneId);
-}
+import { lookbackBreaths } from "../center-line.ts";
 
 const LOCAL_POEM_IDS = SHELF.filter((item) => item.form === "poem" && item.local).map(
   (item) => item.id,
@@ -201,19 +195,18 @@ test("called-out local poem collections are poem-per-scene", () => {
   }
 });
 
-test("lookback stays inside the current poem/chapter scene", () => {
+test("lookback reaches the poem just above and stays a short window", () => {
   const work = load("texts", "gitanjali");
   assert.ok(work);
   const startOfTwo = work!.breaths.findIndex((b) => b.sceneId === work!.scenes[1]?.id);
   assert.ok(startOfTwo > 0);
   const prior = lookbackBreaths(work!, startOfTwo, 12);
-  assert.equal(prior.length, 0);
+  assert.ok(prior.length > 0);
+  assert.equal(prior.at(-1)?.sceneId, work!.scenes[0]?.id);
   const later = lookbackBreaths(work!, startOfTwo + 2, 12);
-  assert.ok(later.every((b) => b.sceneId === work!.scenes[1]?.id));
-  assert.equal(
-    later.some((b) => b.sceneId === work!.scenes[0]?.id),
-    false,
-  );
+  assert.ok(later.some((b) => b.sceneId === work!.scenes[0]?.id));
+  assert.ok(later.some((b) => b.sceneId === work!.scenes[1]?.id));
+  assert.ok(later.length <= 12);
 });
 
 test("inscribed OCR is fixed in Pictures of the Floating World", () => {

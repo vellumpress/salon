@@ -26,6 +26,18 @@ export function isSpineEndMatter(scene: Pick<Scene, "title" | "place" | "reentry
 }
 
 /**
+ * The line drawn in the column where a chapter or poem begins.
+ * The printed title when there is one. The place is the fallback.
+ */
+export function signpostTitle(scene: Pick<Scene, "title" | "place"> | undefined) {
+  const title = scene?.title?.replace(/\s+/g, " ").trim() ?? "";
+  if (title && title !== "· · ·") return title;
+  const place = scene?.place?.replace(/\s+/g, " ").trim() ?? "";
+  if (place && place !== "· · ·") return place;
+  return "· · ·";
+}
+
+/**
  * House of Mirth is two books. The bind labeled both "Chapter 1", so Book II
  * looked like a duplicate of the opening.
  */

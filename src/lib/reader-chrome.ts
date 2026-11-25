@@ -29,6 +29,43 @@ export const READER_PHONE_VIEWPORT = {
   isMobile: true,
 } as const;
 
+export type ReaderMark = "shown" | "hidden";
+
+export type ReaderMarkEvent = "forward" | "back" | "scroll" | "reveal";
+
+export type ReaderMarkState = {
+  mark: ReaderMark;
+  /** True after the first tap or scroll. A reveal stays until the next forward step or scroll. */
+  started: boolean;
+};
+
+export const freshReaderMark: ReaderMarkState = {
+  mark: "shown",
+  started: false,
+};
+
+/** A quick pull toward the start of the book. Finger moves down the screen. */
+export const MARK_REVEAL_PULL_PX = 72;
+export const MARK_REVEAL_PULL_MS = 360;
+
+/**
+ * The mark row is up until reading starts.
+ * The first tap or scroll hides it. A top-edge tap or a quick pull
+ * toward the start brings it back. The next forward step, or another
+ * reading scroll, hides it again. A back tap after that reveal leaves
+ * it up, so Home is still there.
+ */
+export function reduceReaderMark(state: ReaderMarkState, event: ReaderMarkEvent): ReaderMarkState {
+  if (event === "reveal") return { mark: "shown", started: true };
+  if (!state.started) return { mark: "hidden", started: true };
+  if (event === "forward" || event === "scroll") return { mark: "hidden", started: true };
+  return state;
+}
+
+export function markRevealPull(dy: number, dt: number) {
+  return dy >= MARK_REVEAL_PULL_PX && dt >= 0 && dt <= MARK_REVEAL_PULL_MS;
+}
+
 export type ReaderBarTap = "page" | "outside" | "hourglass" | "chrome";
 
 export function readerBarOpen(state: ReaderBarState) {

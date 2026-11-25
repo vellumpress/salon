@@ -41,6 +41,7 @@ export const smokeFiles = [
   "src/lib/text-size.e2e.test.ts",
   "src/lib/reader-scroll-tap.test.ts",
   "src/lib/band-ink.test.ts",
+  "src/lib/chapter-flow.e2e.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -114,6 +115,7 @@ export const allTsFiles = [
   "src/lib/daylight-colors.test.ts",
   "src/lib/text-size.test.ts",
   "src/lib/center-line.test.ts",
+  "src/lib/chapter-flow.test.ts",
   "src/lib/wash-seam.test.ts",
   "src/lib/reader-turn.test.ts",
   "src/lib/reader-hold.test.ts",
@@ -172,6 +174,7 @@ export const allTsFiles = [
   "src/lib/text-size.e2e.test.ts",
   "src/lib/reader-scroll-tap.test.ts",
   "src/lib/band-ink.test.ts",
+  "src/lib/chapter-flow.e2e.test.ts",
 ];
 
 const smokeSet = new Set(smokeFiles);
