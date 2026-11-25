@@ -336,6 +336,8 @@ export function TbrReader({
   const trackRef = useRef<HTMLDivElement>(null);
   const flowRef = useRef<HTMLDivElement>(null);
   const flingRef = useRef(0);
+  /** When the page last actually moved. A queued fling frame is not still motion. */
+  const lastScrollMoveRef = useRef(0);
   const scrollLockRef = useRef(false);
   const scrollIgnoreUntilRef = useRef(0);
   /** scrollTop last written to keep the sentence in the sharp band. */
@@ -1986,8 +1988,8 @@ export function TbrReader({
     return flow.scrollHeight - flow.clientHeight > 24;
   }
 
-  function momentumQuiet() {
-    return flingRef.current !== 0;
+  function pageCoasting() {
+    return flingRef.current !== 0 && performance.now() - lastScrollMoveRef.current < 40;
   }
 
   function noteMomentumStopped() {
@@ -2011,7 +2013,13 @@ export function TbrReader({
     const step = (now: number) => {
       const dt = Math.min(32, now - last);
       last = now;
-      flow.scrollTop += v * dt;
+      const before = flow.scrollTop;
+      flow.scrollTop = before + v * dt;
+      if (Math.abs(flow.scrollTop - before) < 0.5) {
+        flingRef.current = 0;
+        return;
+      }
+      lastScrollMoveRef.current = now;
       v *= Math.pow(0.9, dt / 16);
       if (Math.abs(v) > 0.02) {
         flingRef.current = requestAnimationFrame(step);
@@ -2216,7 +2224,7 @@ export function TbrReader({
       return;
     }
     if (kind !== "tap") return;
-    if (momentumQuiet()) return;
+    if (pageCoasting()) return;
     releaseTap(start.zone, x, y);
   }
 
@@ -2242,8 +2250,8 @@ export function TbrReader({
       lastTouchZoneRef.current = zone;
     }
     const flow = flowRef.current;
-    const stoppedMomentum = momentumQuiet();
-    if (stoppedMomentum) noteMomentumStopped();
+    const stoppedMomentum = pageCoasting();
+    if (flingRef.current) noteMomentumStopped();
     scrollLockRef.current = false;
     // Arm before the lift. iOS can deliver the compatibility click before
     // pointerup; that click must not turn, and the lift still does.
@@ -2298,6 +2306,7 @@ export function TbrReader({
     start.sampleT = now;
     start.vy = (prevY - e.clientY) / Math.max(16, now - prevT);
     flow.scrollTop = start.scrollTop - (e.clientY - start.y);
+    lastScrollMoveRef.current = now;
     if (e.cancelable) e.preventDefault();
   }
 
@@ -2364,7 +2373,7 @@ export function TbrReader({
     if (turnedAtRef.current > 0 && performance.now() - turnedAtRef.current < GHOST_MOUSE_MS) {
       return;
     }
-    if (momentumQuiet()) return;
+    if (pageCoasting()) return;
     stepZone(zoneFrom(e.target, e.clientX, e.clientY));
   }
 
