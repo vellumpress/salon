@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
-import { groupKey, planGroups, readGroup, waitGroup } from "./reader-group-tap.ts";
+import { groupKey, planGroups, readGroup, waitForPageRest, waitGroup } from "./reader-group-tap.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 import { skipWithoutWebKit, webKitRequired } from "./require-webkit.ts";
 
@@ -110,6 +110,130 @@ async function stroke(page: Page, points: { x: number; y: number; t: number }[],
   );
 }
 
+async function waitAdvances(page: Page, min: number) {
+  await page.waitForFunction(
+    (floor) => {
+      const raw = localStorage.getItem("vellum-v1");
+      if (!raw) return false;
+      const parsed = JSON.parse(raw) as { state?: { progress?: Record<string, { activeAdvances?: number }> } };
+      return (parsed.state?.progress?.["the-house-of-mirth"]?.activeAdvances ?? 0) > floor;
+    },
+    min,
+    { timeout: 2_500 },
+  );
+}
+
+/**
+ * Flick, then as soon as a scroll event shows the column still moving,
+ * put a finger down and up. Returns the sentence before that finger and after it.
+ */
+async function flickThenStop(page: Page, from: { x: number; y: number }, at: { x: number; y: number }) {
+  return page.evaluate(
+    async ({ from, at }) => {
+      const flow = document.querySelector(".focus-live");
+      const host = document.querySelector("[data-reader-text]");
+      const frame = document.querySelector(".reader-frame");
+      if (!(flow instanceof HTMLElement) || !host || !frame) return null;
+      const key = () => frame.getAttribute("data-spotlight-key");
+      const fire = (type: string, x: number, y: number, pointerId: number) => {
+        host.dispatchEvent(
+          new PointerEvent(type, {
+            bubbles: true,
+            cancelable: true,
+            clientX: x,
+            clientY: y,
+            pointerId,
+            button: 0,
+            buttons: type === "pointerup" ? 0 : 1,
+            pointerType: "touch",
+            isPrimary: true,
+          }),
+        );
+      };
+      const nextFrame = () => new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+      const before = key();
+      await new Promise<void>((resolve) => {
+        let top = flow.scrollTop;
+        let since = performance.now();
+        const step = () => {
+          const nowTop = flow.scrollTop;
+          const now = performance.now();
+          if (Math.abs(nowTop - top) >= 0.5) {
+            top = nowTop;
+            since = now;
+          }
+          if (now - since >= 120) resolve();
+          else requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      });
+      const startTop = flow.scrollTop;
+      fire("pointerdown", from.x, from.y, 8);
+      await nextFrame();
+      fire("pointermove", from.x, from.y - 28, 8);
+      await nextFrame();
+      fire("pointermove", from.x, from.y - 70, 8);
+      await nextFrame();
+      fire("pointerup", from.x, from.y - 70, 8);
+      const lifted = key();
+      const atLift = flow.scrollTop;
+      const motionAge = () => {
+        const stamped = (window as Window & { __salonMotionAt?: number }).__salonMotionAt;
+        return stamped == null ? -1 : Math.round(performance.now() - stamped);
+      };
+      const stop = await new Promise<{
+        moved: boolean;
+        beforeStop: string;
+        afterStop: string;
+        atLift: number;
+        end: number;
+        age: number;
+      }>((resolve) => {
+        let settled = false;
+        const finish = (moved: boolean) => {
+          if (settled) return;
+          settled = true;
+          window.clearTimeout(timer);
+          resolve({
+            moved,
+            beforeStop: key() ?? "",
+            afterStop: key() ?? "",
+            atLift,
+            end: flow.scrollTop,
+            age: motionAge(),
+          });
+        };
+        const timer = window.setTimeout(() => finish(false), 1_500);
+        const watch = () => {
+          if (settled) return;
+          if (Math.abs(flow.scrollTop - atLift) < 0.5) {
+            requestAnimationFrame(watch);
+            return;
+          }
+          const beforeStop = key() ?? "";
+          const age = motionAge();
+          fire("pointerdown", at.x, at.y, 9);
+          fire("pointerup", at.x, at.y, 9);
+          if (settled) return;
+          settled = true;
+          window.clearTimeout(timer);
+          resolve({
+            moved: true,
+            beforeStop,
+            afterStop: key() ?? "",
+            atLift,
+            end: flow.scrollTop,
+            age,
+          });
+        };
+        requestAnimationFrame(watch);
+      });
+      return { before, lifted, startTop, ...stop, after: key() };
+    },
+    { from, at },
+  );
+}
+
 async function check(page: Page, label: string) {
   await openBook(page);
   const origin = await readGroup(page);
@@ -122,7 +246,6 @@ async function check(page: Page, label: string) {
     { x: dragFrom.x, y: dragFrom.y - 18, t: 110 },
     { x: dragFrom.x, y: dragFrom.y - 18, t: 140 },
   ]);
-  await page.waitForTimeout(280);
   const dragged = await readGroup(page);
   assert.equal(dragged.key, origin.key, `${label} a short drag advanced the sentence`);
   assert.equal(await advances(page), credited, `${label} a short drag counted as reading`);
@@ -138,35 +261,41 @@ async function check(page: Page, label: string) {
   if (two !== "end" && two !== "start") {
     assert.notEqual(tapped.key, groupKey(two), `${label} a clean tap advanced two sentences`);
   }
-  await page.waitForTimeout(200);
-  const afterTap = await advances(page);
-  assert.ok(afterTap > credited, `${label} a clean tap did not count as reading`);
+  await waitAdvances(page, credited);
+  await waitForPageRest(page);
 
-  const beforeFlick = await readGroup(page);
   const flickFrom = await point(page, 0.72);
-  await stroke(page, [
-    { ...flickFrom, t: 0 },
-    { x: flickFrom.x, y: flickFrom.y - 28, t: 16 },
-    { x: flickFrom.x, y: flickFrom.y - 70, t: 32 },
-    { x: flickFrom.x, y: flickFrom.y - 70, t: 40 },
-  ], 8);
-  const flicked = await readGroup(page);
-  assert.equal(flicked.key, beforeFlick.key, `${label} a flick's lift advanced the sentence`);
-  await page.waitForTimeout(180);
-  const stopping = await readGroup(page);
   const stopAt = await point(page, 0.7);
-  await stroke(page, [
-    { ...stopAt, t: 0 },
-    { ...stopAt, t: 40 },
-  ], 9);
-  const stopped = await readGroup(page);
-  assert.equal(stopped.key, stopping.key, `${label} stopping a fling advanced the sentence`);
-  await page.waitForTimeout(320);
-  const settled = await readGroup(page);
-  await page.waitForTimeout(250);
-  const later = await readGroup(page);
-  assert.equal(later.key, settled.key, `${label} the scroll's end advanced another sentence`);
-  assert.equal(await advances(page), afterTap, `${label} a scroll counted as reading`);
+  const coast = await flickThenStop(page, flickFrom, stopAt);
+  assert.ok(coast, `${label} could not watch the flick`);
+  assert.equal(coast.lifted, coast.before, `${label} a flick's lift advanced the sentence`);
+  assert.equal(
+    coast.moved,
+    true,
+    `${label} the flick never moved the page (scroll ${coast.startTop} -> ${coast.atLift} -> ${coast.end}, motion ${coast.age}ms ago)`,
+  );
+  assert.equal(
+    coast.afterStop,
+    coast.beforeStop,
+    `${label} stopping a fling advanced ${coast.beforeStop} to ${coast.afterStop}`,
+  );
+  assert.equal(
+    coast.after,
+    coast.beforeStop,
+    `${label} stopping a fling advanced ${coast.beforeStop} to ${coast.after} (motion ${coast.age}ms ago)`,
+  );
+  const afterStop = await readGroup(page);
+  assert.equal(afterStop.key, coast.beforeStop, `${label} stopping a fling advanced the sentence`);
+
+  await waitForPageRest(page);
+  const rested = await readGroup(page);
+  const again = await planGroups(page, 1, 1);
+  assert.ok(again !== "end" && again !== "start", `${label} could not plan a tap after the coast`);
+  const afterRest = await point(page, 0.72);
+  await page.touchscreen.tap(afterRest.x, afterRest.y);
+  await waitGroup(page, again);
+  assert.equal((await readGroup(page)).key, groupKey(again), `${label} a tap after the page stopped did not advance one`);
+  assert.notEqual((await readGroup(page)).key, rested.key);
 
   const back = await planGroups(page, -1, 1);
   if (back !== "start" && back !== "end") {

@@ -94,6 +94,7 @@ import {
 } from "@/lib/center-line";
 import {
   classifyTurnGesture,
+  coastFromSamples,
   GHOST_MOUSE_MS,
   ghostMousePointer,
   HOLD_ARM_MS,
@@ -336,8 +337,8 @@ export function TbrReader({
   const trackRef = useRef<HTMLDivElement>(null);
   const flowRef = useRef<HTMLDivElement>(null);
   const flingRef = useRef(0);
-  /** When the page last actually moved. A queued fling frame is not still motion. */
-  const lastScrollMoveRef = useRef(0);
+  /** Real scroll positions, from scroll events. The newest is the coast signal. */
+  const motionRef = useRef<{ t: number; top: number }[]>([]);
   const scrollLockRef = useRef(false);
   const scrollIgnoreUntilRef = useRef(0);
   /** scrollTop last written to keep the sentence in the sharp band. */
@@ -1683,14 +1684,17 @@ export function TbrReader({
     const onScroll = () => {
       if (!live || !flow) return;
       syncMirror(flow.scrollTop);
-      if (
-        anchoredScrollRef.current != null &&
-        Math.abs(flow.scrollTop - anchoredScrollRef.current) <= 1
-      ) {
-        return;
+      if (scrollLockRef.current) return;
+      const anchored = anchoredScrollRef.current;
+      const top = flow.scrollTop;
+      if (anchored != null && Math.abs(top - anchored) <= 1) {
+        // The tap's own recenter, even if the scroll event arrives late.
+        anchoredScrollRef.current = null;
+      } else {
+        if (anchored != null) anchoredScrollRef.current = null;
+        noteScrollMotion(top);
       }
-      anchoredScrollRef.current = null;
-      if (scrollLockRef.current || performance.now() < scrollIgnoreUntilRef.current) return;
+      if (performance.now() < scrollIgnoreUntilRef.current) return;
       window.clearTimeout(placeTimer);
       placeTimer = window.setTimeout(() => {
         if (!live) return;
@@ -1713,7 +1717,7 @@ export function TbrReader({
         useTbr.getState().setBreath(work.id, next, stampAt(work, next));
       }, 90);
     };
-    flow?.addEventListener("scroll", onScroll, { passive: true });
+    flow?.addEventListener("scroll", onScroll, { passive: true, capture: true });
     const onWheel = (event: WheelEvent) => {
       if (!flow) return;
       if (Math.abs(event.deltaY) < 1) return;
@@ -1756,7 +1760,7 @@ export function TbrReader({
       live = false;
       document.fonts?.removeEventListener("loadingdone", onFonts);
       ro.disconnect();
-      flow?.removeEventListener("scroll", onScroll);
+      flow?.removeEventListener("scroll", onScroll, { capture: true });
       turnHostRef.current?.removeEventListener("wheel", onWheel);
       window.clearTimeout(placeTimer);
     };
@@ -1988,8 +1992,20 @@ export function TbrReader({
     return flow.scrollHeight - flow.clientHeight > 24;
   }
 
+  function noteScrollMotion(top: number) {
+    if (!Number.isFinite(top)) return;
+    const now = performance.now();
+    const samples = motionRef.current;
+    const prev = samples[samples.length - 1];
+    if (prev && Math.abs(top - prev.top) < 0.01) return;
+    samples.push({ t: now, top });
+    const keep = now - 500;
+    while (samples.length > 12 && samples[0].t < keep) samples.shift();
+    (window as Window & { __salonMotionAt?: number }).__salonMotionAt = now;
+  }
+
   function pageCoasting() {
-    return flingRef.current !== 0 && performance.now() - lastScrollMoveRef.current < 40;
+    return coastFromSamples(motionRef.current, performance.now());
   }
 
   function noteMomentumStopped() {
@@ -2008,18 +2024,30 @@ export function TbrReader({
       return;
     }
     cancelAnimationFrame(flingRef.current);
+    userScrolledRef.current = true;
+    noteScrollMotion(flow.scrollTop);
     let v = velocity;
     let last = performance.now();
+    let stuck = 0;
     const step = (now: number) => {
-      const dt = Math.min(32, now - last);
+      if (flingRef.current === 0) return;
+      const dt = Math.min(32, Math.max(0, now - last));
       last = now;
       const before = flow.scrollTop;
       flow.scrollTop = before + v * dt;
-      if (Math.abs(flow.scrollTop - before) < 0.5) {
+      // A finger that landed in the scroll event already cancelled this fling.
+      if (flingRef.current === 0) return;
+      if (flow.scrollTop === before) {
+        stuck += 1;
+        if (stuck < 3) {
+          flingRef.current = requestAnimationFrame(step);
+          return;
+        }
         flingRef.current = 0;
         return;
       }
-      lastScrollMoveRef.current = now;
+      stuck = 0;
+      noteScrollMotion(flow.scrollTop);
       v *= Math.pow(0.9, dt / 16);
       if (Math.abs(v) > 0.02) {
         flingRef.current = requestAnimationFrame(step);
@@ -2305,8 +2333,11 @@ export function TbrReader({
     const now = performance.now();
     start.sampleT = now;
     start.vy = (prevY - e.clientY) / Math.max(16, now - prevT);
+    // The finger owns the column now. A layout pass must not snap it back
+    // under the sentence and turn the coast into a tap.
+    userScrolledRef.current = true;
     flow.scrollTop = start.scrollTop - (e.clientY - start.y);
-    lastScrollMoveRef.current = now;
+    noteScrollMotion(flow.scrollTop);
     if (e.cancelable) e.preventDefault();
   }
 

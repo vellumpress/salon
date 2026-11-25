@@ -15,6 +15,41 @@ type Box = {
 export const TAP_SLOP_PX = 10;
 export const TAP_MS = 300;
 
+/** A scroll this recent means the column is still coasting. */
+export const COAST_WINDOW_MS = 100;
+/** A smaller jump did not move the column. */
+export const COAST_MOVE_PX = 0.5;
+/** Pixels per millisecond. Slower than this is not a coast. */
+export const COAST_VELOCITY = 0.05;
+
+/**
+ * The column is still moving when a finger lands.
+ * `samples` are scroll positions and the times they were measured.
+ * Coasting means the newest one is inside the window and the column
+ * moved at least half a pixel across that window, or the last step
+ * was faster than a slow drift.
+ */
+export function coastFromSamples(
+  samples: readonly { t: number; top: number }[],
+  now: number,
+): boolean {
+  const newest = samples[samples.length - 1];
+  if (!newest || now - newest.t > COAST_WINDOW_MS) return false;
+  let prior = samples[0] ?? newest;
+  const horizon = now - COAST_WINDOW_MS;
+  for (const sample of samples) {
+    if (sample.t <= horizon) prior = sample;
+    else break;
+  }
+  if (Math.abs(newest.top - prior.top) >= COAST_MOVE_PX) return true;
+  const prev = samples[samples.length - 2];
+  if (prev && newest.t > prev.t) {
+    const velocity = Math.abs(newest.top - prev.top) / (newest.t - prev.t);
+    if (velocity > COAST_VELOCITY) return true;
+  }
+  return false;
+}
+
 /** A tall sentence starts scrolling only after the finger has clearly dragged. */
 export const SCROLL_ARM_PX = 24;
 
@@ -129,9 +164,8 @@ export function ghostMousePointer(input: {
 
 /**
  * One lift. A tap is a short, still touch: under 10px and under 300ms,
- * and not while the page is still moving. Once the scroll has stopped,
- * the next still touch is a tap. A drag, a flick, and a finger that
- * stops a fling are never taps. There is no second, looser tap.
+ * and not while the column has moved within the coast window. A drag,
+ * a flick, and a finger that lands on a moving column are never taps.
  */
 export function classifyTurnGesture(input: {
   dx: number;
