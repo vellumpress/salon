@@ -4,7 +4,7 @@ import { existsSync, readFileSync } from "node:fs";
 import test from "node:test";
 import { chromium, devices, type Browser, type Page } from "playwright";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
-import { groupKey, planGroups, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
+import { groupKey, planGroups, waitForPageRest, waitGroup, type GroupPlace } from "./reader-group-tap.ts";
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
 const BACKS = 32;
@@ -552,6 +552,7 @@ test(
       });
       assert.equal(scrolled.index, "5");
       assert.ok(scrolled.scrollTop < 4, "drag scrolled a windowed passage");
+      await waitForPageRest(page);
       const lamiaBack = await planGroups(page, -1, 1);
       assert.notEqual(lamiaBack, "start");
       await page.touchscreen.tap(tall.backX, tall.backY);

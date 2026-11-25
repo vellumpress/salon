@@ -15,9 +15,6 @@ type Box = {
 export const TAP_SLOP_PX = 10;
 export const TAP_MS = 300;
 
-/** After a scroll or a fling stops, a new touch is not a tap until this quiet. */
-export const MOMENTUM_QUIET_MS = 150;
-
 /** A tall sentence starts scrolling only after the finger has clearly dragged. */
 export const SCROLL_ARM_PX = 24;
 
@@ -132,9 +129,9 @@ export function ghostMousePointer(input: {
 
 /**
  * One lift. A tap is a short, still touch: under 10px and under 300ms,
- * and not while the page is scrolling or just finished. A drag, a flick,
- * and a finger that stops a fling are never taps. There is no second,
- * looser tap for a shaky or slow finger.
+ * and not while the page is still moving. Once the scroll has stopped,
+ * the next still touch is a tap. A drag, a flick, and a finger that
+ * stops a fling are never taps. There is no second, looser tap.
  */
 export function classifyTurnGesture(input: {
   dx: number;

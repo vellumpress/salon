@@ -41,6 +41,31 @@ export async function readGroup(page: Page): Promise<GroupPlace & { key: string 
   });
 }
 
+/**
+ * Wait until a fling has stopped moving the page. A tap before this
+ * lands while the scroll is still running.
+ */
+export async function waitForPageRest(page: Page, timeout = 3000) {
+  const start = Date.now();
+  let last = Number.NaN;
+  let stable = 0;
+  while (Date.now() - start < timeout) {
+    const top = await page.evaluate(() => {
+      const flow = document.querySelector(".focus-live");
+      return flow instanceof HTMLElement ? flow.scrollTop : 0;
+    });
+    if (Number.isFinite(last) && Math.abs(top - last) < 0.5) {
+      stable += 1;
+      if (stable >= 2) return;
+    } else {
+      stable = 0;
+    }
+    last = top;
+    await page.waitForTimeout(32);
+  }
+  throw new Error("the page was still moving");
+}
+
 export async function waitGroup(page: Page, place: GroupPlace, timeout = 4000) {
   const key = groupKey(place);
   await page.waitForFunction(
