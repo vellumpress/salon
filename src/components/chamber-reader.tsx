@@ -163,11 +163,21 @@ const MIRROR_INK = ".look-line, .breath-now, .breath-block, .breath-sentence, .s
  * The blur mirror is a shadow tree. Daylight selectors in the light DOM do
  * not reach it, and WebKit paints an inherited color black once `filter`
  * is set. Stamp the sharp band's resolved ink onto the filtered text.
+ * The face hold paints the column transparent. That is not an ink.
  */
+function opaqueInk(color: string): boolean {
+  if (!color || color === "transparent") return false;
+  const match = /rgba?\(\s*[\d.]+[,\s]+[\d.]+[,\s]+[\d.]+(?:[,\s/]+([\d.]+))?\s*\)/.exec(color);
+  if (!match) return true;
+  const alpha = match[1] == null ? 1 : Number(match[1]);
+  return alpha > 0.05;
+}
+
 function paintMirrorInk(clone: HTMLElement, source: HTMLElement, host: HTMLElement) {
   const live = source.querySelector<HTMLElement>(".look-line, .breath-now, .breath-sentence");
   const ink = getComputedStyle(live ?? source).color;
-  if (!ink || clone.dataset.mirrorInk === ink) return;
+  // A transparent stamp overrides the stylesheet and hides the frost lines.
+  if (!opaqueInk(ink) || clone.dataset.mirrorInk === ink) return;
   clone.dataset.mirrorInk = ink;
   host.dataset.mirrorInk = ink;
   const apply = (node: HTMLElement) => {
@@ -1602,9 +1612,6 @@ export function TbrReader({
         blurSigRef.current = sig;
         delete clone.dataset.mirrorInk;
       }
-      // A flick's scroll must not flush layout. Reading the live color here
-      // makes WebKit treat the finger's lift as a tap.
-      if (!clone.dataset.mirrorInk) paintMirrorInk(clone, source, host);
       host.dataset.mirrorFilter = getComputedStyle(clone).filter;
       return clone;
     };
@@ -1651,7 +1658,9 @@ export function TbrReader({
       pane.style.setProperty("--focus-pad-top", `${Math.round(focusY)}px`);
       pane.style.setProperty("--focus-pad-bottom", `${Math.round(Math.max(0, height - focusY))}px`);
       pane.style.removeProperty("--focus-slot-max");
-      ensureBlurMirror();
+      const mirror = ensureBlurMirror();
+      const mirrorHost = blurHostRef.current;
+      if (mirror && mirrorHost) paintMirrorInk(mirror, track, mirrorHost);
       landScroll();
 
       const flow = flowRef.current;
@@ -1863,12 +1872,17 @@ export function TbrReader({
   }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey, navReveal]);
 
   useLayoutEffect(() => {
-    const host = blurHostRef.current;
-    const root = blurRootRef.current;
-    const source = trackRef.current;
-    const clone = root?.querySelector<HTMLElement>(".focus-blur-track");
-    if (!host || !source || !clone) return;
-    paintMirrorInk(clone, source, host);
+    const paint = () => {
+      const host = blurHostRef.current;
+      const source = trackRef.current;
+      const clone = blurRootRef.current?.querySelector<HTMLElement>(".focus-blur-track");
+      if (!host || !source || !clone) return;
+      paintMirrorInk(clone, source, host);
+    };
+    paint();
+    const faces = new MutationObserver(paint);
+    faces.observe(document.documentElement, { attributes: true, attributeFilter: ["data-faces"] });
+    return () => faces.disconnect();
   }, [daylight.sample.ink, daylight.active]);
 
   const durationMs = sittingMinutes > 0 ? sittingMinutes * 60 * 1000 : 0;
