@@ -119,8 +119,13 @@ async function openReader(page: Page, phase: (typeof PHASES)[number]) {
       await page.waitForFunction(() => {
         const focus = document.querySelector("[data-focus-sentence]");
         const now = document.querySelector('[data-focus-band="now"]')?.getBoundingClientRect();
-        const mirror = document.querySelector(".focus-blur-clip")?.getAttribute("data-mirror-filter") ?? "";
+        const clip = document.querySelector(".focus-blur-clip");
+        const mirror = clip?.getAttribute("data-mirror-filter") ?? "";
+        const ink = clip?.getAttribute("data-mirror-ink") ?? "";
+        const focusColor = focus ? getComputedStyle(focus).color : "";
         if (!focus || !now || now.height < 80 || !mirror.includes("blur")) return false;
+        if (!ink || ink === "transparent" || /rgba\(\s*0\s*,\s*0\s*,\s*0\s*,\s*0\s*\)/.test(ink)) return false;
+        if (ink !== focusColor) return false;
         const rects = [...focus.getClientRects()].filter((rect) => rect.width > 2 && rect.height > 2);
         if (rects.length === 0) return false;
         const mid = rects.reduce((sum, rect) => sum + rect.top + rect.height / 2, 0) / rects.length;
