@@ -31,6 +31,7 @@ import {
   markRevealPull,
   reduceReaderBar,
   reduceReaderMark,
+  readerMarkVisible,
   type ReaderBarState,
   type ReaderMarkEvent,
   type ReaderMarkState,
@@ -284,6 +285,9 @@ export function TbrReader({
   const [mark, setMark] = useState<ReaderMarkState>(freshReaderMark);
   const markRef = useRef(mark);
   markRef.current = mark;
+  // A forward step or reading scroll since the hourglass opened. The sheet
+  // can stay up; the mark row follows the reading rules and hides again.
+  const [hourglassRead, setHourglassRead] = useState(false);
   const [passingLabel, setPassingLabel] = useState<string | null>(null);
   const still = bar.still;
   const navReveal = bar.navReveal;
@@ -942,6 +946,7 @@ export function TbrReader({
 
   function noteMark(event: ReaderMarkEvent) {
     if (together) return;
+    if (event === "forward" || event === "scroll") setHourglassRead(true);
     const next = reduceReaderMark(markRef.current, event);
     markRef.current = next;
     setMark((prev) => (prev.mark === next.mark && prev.started === next.started ? prev : next));
@@ -1246,6 +1251,7 @@ export function TbrReader({
 
   function toggleNavReveal() {
     haptic(12);
+    setHourglassRead(false);
     setBar((state) => reduceReaderBar(state, "hourglass"));
   }
 
@@ -2872,10 +2878,10 @@ export function TbrReader({
       data-block-viewport={display.viewport ? String(display.viewport) : ""}
       data-block-limit={display.limit ? String(display.limit) : ""}
       data-block-width={display.width ? String(display.width) : ""}
-      data-mark={together || mark.mark === "shown" ? "on" : "off"}
+      data-mark={together || readerMarkVisible(mark, navReveal, hourglassRead) ? "on" : "off"}
     >
       <h1 className="sr-only">{work.title}</h1>
-      {!together && mark.mark === "hidden" ? (
+      {!together && !readerMarkVisible(mark, navReveal, hourglassRead) ? (
         <button
           type="button"
           className="mark-reveal"

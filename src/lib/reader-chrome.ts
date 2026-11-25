@@ -54,12 +54,29 @@ export const MARK_REVEAL_PULL_MS = 360;
  * toward the start brings it back. The next forward step, or another
  * reading scroll, hides it again. A back tap after that reveal leaves
  * it up, so Home is still there.
+ * Opening the hourglass brings the row back while that sheet is open.
+ * Closing the sheet, or reading again, hides it. See `readerMarkVisible`.
  */
 export function reduceReaderMark(state: ReaderMarkState, event: ReaderMarkEvent): ReaderMarkState {
   if (event === "reveal") return { mark: "shown", started: true };
   if (!state.started) return { mark: "hidden", started: true };
   if (event === "forward" || event === "scroll") return { mark: "hidden", started: true };
   return state;
+}
+
+/**
+ * The hourglass sheet lifts the mark row at the same moment it opens.
+ * The row drops when the sheet closes. A forward step or reading scroll
+ * drops it even if the sheet is still open. A top-edge reveal stays up
+ * on its own, including after the sheet closes.
+ */
+export function readerMarkVisible(
+  state: ReaderMarkState,
+  hourglassOpen: boolean,
+  readingResumed: boolean,
+) {
+  if (state.mark === "shown") return true;
+  return hourglassOpen && !readingResumed;
 }
 
 export function markRevealPull(dy: number, dt: number) {
