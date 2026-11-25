@@ -1,4 +1,15 @@
-import { Component, lazy, Suspense, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import {
+  Component,
+  lazy,
+  Suspense,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  type PointerEvent as ReactPointerEvent,
+  type ReactNode,
+} from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PagesShell } from "@/components/pages-shell";
 import { YouReading, type YouChrome } from "@/components/you-reading";
@@ -73,8 +84,21 @@ class AccountBoundary extends Component<{ children: ReactNode; fallback: ReactNo
   }
 }
 
+function noteYouTab(event: ReactPointerEvent, chrome: YouChrome) {
+  if (event.button !== 0) return false;
+  const target = event.target;
+  if (!(target instanceof Element)) return false;
+  const tab = target.closest("[data-you-tab]")?.getAttribute("data-you-tab");
+  if (tab !== "today" && tab !== "shelf" && tab !== "trends" && tab !== "lines") return false;
+  if (chrome.view === tab && chrome.detail == null) return false;
+  chrome.view = tab;
+  chrome.detail = null;
+  return true;
+}
+
 function ProfileBody() {
   const chrome = useRef<YouChrome>({ view: "today", detail: null }).current;
+  const [, setTabEpoch] = useState(0);
   const progress = useTbr((s) => s.progress);
   const joined = useTbr((s) => s.joined) ?? [];
   const sittingMinutes = useTbr((s) => s.sittingMinutes);
@@ -252,10 +276,16 @@ function ProfileBody() {
   const local = renderPage({ headerEnd: signIn, settings: localSettings });
 
   return (
-    <AccountBoundary fallback={local}>
-      <Suspense fallback={local}>
-        <YouAccountShell page={renderPage} />
-      </Suspense>
-    </AccountBoundary>
+    <div
+      onPointerDownCapture={(event) => {
+        if (noteYouTab(event, chrome)) setTabEpoch((epoch) => epoch + 1);
+      }}
+    >
+      <AccountBoundary fallback={local}>
+        <Suspense fallback={local}>
+          <YouAccountShell page={renderPage} />
+        </Suspense>
+      </AccountBoundary>
+    </div>
   );
 }

@@ -346,6 +346,10 @@ export function TbrReader({
   /** A finger or wheel scroll owns the column. Taps clear it and recenter. */
   const userScrolledRef = useRef(false);
   const placeTokenRef = useRef(0);
+  /** The next place() is a text-size change and must settle after reflow. */
+  const resizeAnchorRef = useRef(false);
+  const anchorGenRef = useRef(0);
+  const stickSentenceRef = useRef<() => number>(() => 0);
   const appliedTokenRef = useRef(-1);
   const blurHostRef = useRef<HTMLDivElement>(null);
   const blurRootRef = useRef<ShadowRoot | null>(null);
@@ -1433,8 +1437,33 @@ export function TbrReader({
   useLayoutEffect(() => {
     // A size change reflows the column. Stick to the sentence already in
     // the sharp band instead of letting that reflow become a scroll.
+    // This runs in the same turn as the font change, before the next read.
     placeTokenRef.current += 1;
     userScrolledRef.current = false;
+    resizeAnchorRef.current = true;
+    let delta = stickSentenceRef.current();
+    for (let pass = 0; Math.abs(delta) >= 1 && pass < 3; pass += 1) {
+      delta = stickSentenceRef.current();
+    }
+    const gen = ++anchorGenRef.current;
+    let cancelled = false;
+    requestAnimationFrame(() => {
+      if (cancelled || anchorGenRef.current !== gen) return;
+      let again = stickSentenceRef.current();
+      for (let pass = 0; Math.abs(again) >= 1 && pass < 2; pass += 1) {
+        again = stickSentenceRef.current();
+      }
+      requestAnimationFrame(() => {
+        if (cancelled || anchorGenRef.current !== gen) return;
+        let left = stickSentenceRef.current();
+        for (let pass = 0; Math.abs(left) >= 1 && pass < 2; pass += 1) {
+          left = stickSentenceRef.current();
+        }
+      });
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [textSize.scale]);
 
   useLayoutEffect(() => {
@@ -1603,30 +1632,72 @@ export function TbrReader({
       const flow = flowRef.current;
       const tokenMoved = placeTokenRef.current !== appliedTokenRef.current;
       const shouldStick = tokenMoved || !userScrolledRef.current;
-      if (flow && shouldStick) {
-        if (tokenMoved) appliedTokenRef.current = placeTokenRef.current;
-        void flow.offsetHeight;
+      // Measure the sentence that is already in the sharp band and put its
+      // middle back on that band. A font change reflows after the first
+      // write, so the same measurement runs until the line stops moving,
+      // and once more on the following frame.
+      const stickSentence = () => {
+        const column = flowRef.current;
+        const lineNow = slot.querySelector<HTMLElement>(".breath-now");
+        if (!column || !lineNow) return 0;
+        void column.offsetHeight;
+        const nodes = [...lineNow.querySelectorAll<HTMLElement>("[data-focus-sentence]")];
         let top = Infinity;
         let bottom = -Infinity;
-        for (const node of focuses) {
+        for (const node of nodes) {
           const rect = node.getBoundingClientRect();
           if (rect.width === 0 && rect.height === 0) continue;
           top = Math.min(top, rect.top);
           bottom = Math.max(bottom, rect.bottom);
         }
-        const lineBox = line.getBoundingClientRect();
+        const lineBox = lineNow.getBoundingClientRect();
         const targetTop = bottom > top ? top : lineBox.top;
         const targetHeight = bottom > top ? bottom - top : lineBox.height;
         const focusMid = targetTop + targetHeight / 2;
-        const flowTop = flow.getBoundingClientRect().top;
-        const delta = focusMid - (flowTop + focusY);
-        const nextTop = Math.max(0, flow.scrollTop + delta);
+        const heightNow = pane.clientHeight;
+        const paneTopNow = Number.parseFloat(getComputedStyle(pane).marginTop);
+        const leadNow = Number.isFinite(paneTopNow) && paneTopNow < 0 ? -paneTopNow : 0;
+        const bandsNow = focusBands(heightNow, leadNow);
+        const focusYNow = (bandsNow.now.top + bandsNow.now.bottom) / 2 || focusY;
+        const flowTop = column.getBoundingClientRect().top;
+        const delta = focusMid - (flowTop + focusYNow);
+        if (Math.abs(delta) < 1) return delta;
+        const nextTop = Math.max(0, column.scrollTop + delta);
         scrollIgnoreUntilRef.current = performance.now() + 180;
         scrollLockRef.current = true;
         anchoredScrollRef.current = nextTop;
-        flow.scrollTop = nextTop;
+        column.scrollTop = nextTop;
         scrollLockRef.current = false;
-        syncMirror(flow.scrollTop);
+        syncMirror(column.scrollTop);
+        void column.offsetHeight;
+        return delta;
+      };
+      stickSentenceRef.current = stickSentence;
+      if (flow && shouldStick) {
+        if (tokenMoved) appliedTokenRef.current = placeTokenRef.current;
+        const fromResize = resizeAnchorRef.current;
+        if (fromResize) resizeAnchorRef.current = false;
+        let delta = stickSentence();
+        for (let pass = 0; Math.abs(delta) >= 1 && pass < 3; pass += 1) {
+          delta = stickSentence();
+        }
+        if (fromResize) {
+          const gen = ++anchorGenRef.current;
+          requestAnimationFrame(() => {
+            if (!live || anchorGenRef.current !== gen) return;
+            let again = stickSentence();
+            for (let pass = 0; Math.abs(again) >= 1 && pass < 2; pass += 1) {
+              again = stickSentence();
+            }
+            requestAnimationFrame(() => {
+              if (!live || anchorGenRef.current !== gen) return;
+              let left = stickSentence();
+              for (let pass = 0; Math.abs(left) >= 1 && pass < 2; pass += 1) {
+                left = stickSentence();
+              }
+            });
+          });
+        }
         void track.offsetHeight;
       } else if (flow) {
         syncMirror(flow.scrollTop);
