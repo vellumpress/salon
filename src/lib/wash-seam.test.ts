@@ -441,7 +441,26 @@ async function assertFaintShapes(page: Page, label: string) {
         height: number,
         band: WashBand,
       ) => { verdict: string; variance: number; sharp: number };
-      const inset = Math.round(28 * dpr);
+      const pane = document.querySelector(".reading-pane");
+      const rootPx = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+      const fadeRaw = pane ? getComputedStyle(pane).getPropertyValue("--focus-fade").trim() : "";
+      const aheadRaw = pane ? getComputedStyle(pane).getPropertyValue("--focus-ahead").trim() : "";
+      const fadeValue = parseFloat(fadeRaw);
+      const aheadValue = parseFloat(aheadRaw);
+      const fadePx = Number.isFinite(fadeValue)
+        ? fadeRaw.endsWith("rem")
+          ? fadeValue * rootPx
+          : fadeValue
+        : 28;
+      const aheadPx = Number.isFinite(aheadValue)
+        ? aheadRaw.endsWith("rem")
+          ? aheadValue * rootPx
+          : aheadValue
+        : fadePx;
+      const inset = Math.round(fadePx * dpr);
+      // The upcoming ramp runs past the lower band. The floor sample starts
+      // one short step after that ramp, where the blur and the veil have settled.
+      const floorInset = Math.round(aheadPx * dpr);
       const column = {
         left: Math.round(48 * dpr),
         right: width - Math.round(48 * dpr),
@@ -452,7 +471,7 @@ async function assertFaintShapes(page: Page, label: string) {
         ...column,
       };
       const washBand = {
-        top: Math.round(next.top * dpr) + inset,
+        top: Math.round(next.top * dpr) + floorInset,
         bottom: Math.min(height - 2, Math.round(next.bottom * dpr) - Math.round(80 * dpr)),
         ...column,
       };
