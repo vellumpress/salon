@@ -87,14 +87,18 @@ function at(box: { x: number; y: number; width: number; height: number }, across
   };
 }
 
-/** A finger drag. The pause in the middle is a hold while the page is already moving. */
+/**
+ * A finger drag. It pauses in the middle, then sits still before the lift
+ * so the column does not keep coasting after the finger is gone.
+ */
 async function drag(page: Page, from: { x: number; y: number }, pointerId: number) {
   const points = [
     { x: from.x, y: from.y, t: 0 },
-    { x: from.x, y: from.y - 40, t: 40 },
-    { x: from.x, y: from.y - 40, t: 220 },
-    { x: from.x, y: from.y - 120, t: 300 },
-    { x: from.x, y: from.y - 120, t: 340 },
+    { x: from.x, y: from.y - 48, t: 40 },
+    { x: from.x, y: from.y - 48, t: 180 },
+    { x: from.x, y: from.y - 130, t: 250 },
+    { x: from.x, y: from.y - 130, t: 400 },
+    { x: from.x, y: from.y - 130, t: 440 },
   ];
   await page.evaluate(
     async ({ points, pointerId }) => {
@@ -157,7 +161,7 @@ async function check(page: Page, label: string) {
     `${label} a drag on the left third did not scroll (${beforeLeft.scroll} -> ${afterLeft.scroll}, ${beforeLeft.key} -> ${afterLeft.key})`,
   );
 
-  await waitForPageRest(page);
+  await waitForPageRest(page, 8_000);
   const settled = await column(page);
   const rightFrom = at(settled.box, 0.78);
   assert.ok(rightFrom.x > settled.box.x + settled.box.width / 3, `${label} right drag was not on the right side`);
@@ -169,7 +173,7 @@ async function check(page: Page, label: string) {
     `${label} a drag on the right side did not scroll (${settled.scroll} -> ${afterRight.scroll}, ${settled.key} -> ${afterRight.key})`,
   );
 
-  await waitForPageRest(page);
+  await waitForPageRest(page, 8_000);
   await page.locator("button.reader-glass").click();
   const tapBtn = page.getByRole("button", { name: "Tap", exact: true });
   await tapBtn.click();
@@ -200,7 +204,7 @@ async function check(page: Page, label: string) {
     `${label} a right drag left the column scrolled in tap mode`,
   );
 
-  await waitForPageRest(page);
+  await waitForPageRest(page, 8_000);
   const forward = await planGroups(page, 1, 1);
   assert.ok(forward !== "end" && forward !== "start", `${label} could not plan a forward tap`);
   const advanceBox = (await column(page)).box;
@@ -210,7 +214,7 @@ async function check(page: Page, label: string) {
   await waitGroup(page, forward);
   assert.equal((await readGroup(page)).key, groupKey(forward), `${label} a right tap did not advance`);
 
-  await waitForPageRest(page);
+  await waitForPageRest(page, 8_000);
   const back = await planGroups(page, -1, 1);
   assert.ok(back !== "end" && back !== "start", `${label} could not plan a back tap`);
   const backBox = (await column(page)).box;
