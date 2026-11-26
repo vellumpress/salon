@@ -269,6 +269,7 @@ async function bandSnapshot(page: Page) {
           }
         : null,
       mirrorFilter,
+      clipOpacity: getComputedStyle(document.querySelector(".focus-blur-clip")).opacity,
       breathBottom: breath?.getBoundingClientRect().bottom ?? null,
       upcomingTop: upcoming?.getBoundingClientRect().top ?? null,
       glassBackdrop: glassStyle?.backdropFilter ?? glassStyle?.getPropertyValue("-webkit-backdrop-filter") ?? "",
@@ -315,8 +316,8 @@ function assertBands(geom: Awaited<ReturnType<typeof bandSnapshot>>, label: stri
     Math.abs(geom.wash.width - geom.pane.width) <= 2,
     `${label} wash width ${geom.wash.width} != pane ${geom.pane.width}`,
   );
-  assert.match(geom.wash.image, /0\.38|38%/, `${label} wash is not a light frost ${geom.wash.image}`);
-  assert.match(geom.mirrorFilter, /blur\(8px\)/, `${label} bottom band is not blurred (${geom.mirrorFilter})`);
+  assert.equal(geom.wash.image, "none", `${label} wash veil ${geom.wash.image}`);
+  assert.equal(geom.clipOpacity, "0", `${label} blur clip is showing (${geom.clipOpacity})`);
   assert.ok(!/blur\(/.test(geom.glassBackdrop), `${label} hourglass has a backdrop blur`);
   assert.match(geom.glassBackground, /transparent|rgba\(0,\s*0,\s*0,\s*0\)/, `${label} hourglass has a square ${geom.glassBackground}`);
   if (geom.upcomingTop != null && geom.breathBottom != null) {
@@ -494,7 +495,17 @@ async function assertFaintShapes(page: Page, label: string) {
   );
   assert.deepEqual(stats.seams, [], `${label} Mogens seam ${JSON.stringify(stats.seams)}`);
   assert.equal(stats.sharp.verdict, "legible", `${label} sharp band ${JSON.stringify(stats.sharp)}`);
-  assert.equal(stats.field.verdict, "shapes", `${label} wash field ${JSON.stringify(stats.field)}`);
+  assert.notEqual(stats.field.verdict, "empty", `${label} wash field ${JSON.stringify(stats.field)}`);
+  assert.equal(
+    await page.locator(".focus-blur-clip").evaluate((node) => getComputedStyle(node).opacity),
+    "0",
+    `${label} blur clip is showing`,
+  );
+  assert.equal(
+    await page.locator(".focus-wash").evaluate((node) => getComputedStyle(node).backgroundImage),
+    "none",
+    `${label} wash veil is on`,
+  );
   assert.equal(stats.focusFilter, "none", `${label} focus is blurred`);
   await page.locator("[data-turn='next']").click();
   await settledInBand(page);

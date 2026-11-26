@@ -2192,12 +2192,18 @@ html:has(.board-doors) body {
   display: block;
   /* Equal thirds of the pane below the status bar. 100% is the pane, whose
      top is the screen top. The lead is the status bar plus the mark row.
-     The upcoming ramp still begins --focus-fade above the lower band, so
-     the blur stays off the current sentence. It then runs --focus-ahead,
-     three times that old one-line drop, and holds the same faint floor. */
+     Upcoming ink steps one line at a time from the focus center, not from
+     a fraction of the screen, so a phone and a desktop share the same
+     per-line fade. --focus-ahead is the pre-#565 one-line reach; the ramp
+     below does not use it to pull extra lines into view. */
   --focus-lead: var(--reader-top-lead, 0px);
   --focus-fade: 1.75rem;
-  --focus-ahead: 5.25rem;
+  --focus-ahead: 1.75rem;
+  --focus-line: calc(var(--text-breath) * var(--text-breath--line-height));
+  --focus-mid: calc(var(--focus-lead) + (100% - var(--focus-lead)) / 2);
+  /* A two-line focus sits on the band center, so the 4th line ends 3 line-boxes below it. */
+  --focus-hold: calc(var(--focus-mid) + 3 * var(--focus-line));
+  --focus-gap: 0.65rem;
   --focus-pad-top: 0px;
   --focus-pad-bottom: 0px;
 }
@@ -2294,12 +2300,12 @@ html:has(.board-doors) body {
   overflow-y: auto;
 }
 
-/* One continuous page. Past lines stay sharp, in the focus ink, and ease
-   from nearly full at the focus to about a third at the top. The lines
-   below stay in the frosted mirror. Their falloff starts where it did and
-   eases over about three lines, still much steeper than the past fade.
-   The mask sits on a frame that does not scroll. Masking the scroller
-   itself makes iPhone Safari re-rasterize the glyphs on every frame. */
+/* One continuous page. Past lines stay sharp and ease from full ink at the
+   focus to about a third at the top. The focus stays at full ink through
+   the 4th line. Only the lines below that ease, about ten points per line,
+   down to a faint floor. The mask sits on a frame that does not scroll.
+   Masking the scroller itself makes iPhone Safari re-rasterize the glyphs
+   on every frame. */
 .focus-fade {
   position: absolute;
   z-index: 1;
@@ -2311,16 +2317,36 @@ html:has(.board-doors) body {
     rgb(0 0 0 / 32%) 0,
     rgb(0 0 0 / 32%) var(--focus-lead),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
-    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
-    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade) + var(--focus-ahead))
+    #000 var(--focus-hold),
+    rgb(0 0 0 / 90%) calc(var(--focus-hold) + 0.5 * var(--focus-line)),
+    rgb(0 0 0 / 80%) calc(var(--focus-hold) + 1.5 * var(--focus-line)),
+    rgb(0 0 0 / 70%) calc(var(--focus-hold) + 2.5 * var(--focus-line)),
+    rgb(0 0 0 / 60%) calc(var(--focus-hold) + 3.5 * var(--focus-line)),
+    rgb(0 0 0 / 50%) calc(var(--focus-hold) + 4.5 * var(--focus-line) + var(--focus-gap)),
+    rgb(0 0 0 / 40%) calc(var(--focus-hold) + 5.5 * var(--focus-line) + var(--focus-gap)),
+    rgb(0 0 0 / 30%) calc(var(--focus-hold) + 6.5 * var(--focus-line) + var(--focus-gap)),
+    rgb(0 0 0 / 20%) calc(var(--focus-hold) + 7.5 * var(--focus-line) + var(--focus-gap)),
+    rgb(0 0 0 / 10%) calc(var(--focus-hold) + 8.5 * var(--focus-line) + 2 * var(--focus-gap)),
+    rgb(0 0 0 / 8%) calc(var(--focus-hold) + 9.5 * var(--focus-line) + 2 * var(--focus-gap)),
+    rgb(0 0 0 / 8%) 100%
   );
   mask-image: linear-gradient(
     to bottom,
     rgb(0 0 0 / 32%) 0,
     rgb(0 0 0 / 32%) var(--focus-lead),
     #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) / 3),
-    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
-    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade) + var(--focus-ahead))
+    #000 var(--focus-hold),
+    rgb(0 0 0 / 90%) calc(var(--focus-hold) + 0.5 * var(--focus-line)),
+    rgb(0 0 0 / 80%) calc(var(--focus-hold) + 1.5 * var(--focus-line)),
+    rgb(0 0 0 / 70%) calc(var(--focus-hold) + 2.5 * var(--focus-line)),
+    rgb(0 0 0 / 60%) calc(var(--focus-hold) + 3.5 * var(--focus-line)),
+    rgb(0 0 0 / 50%) calc(var(--focus-hold) + 4.5 * var(--focus-line) + var(--focus-gap)),
+    rgb(0 0 0 / 40%) calc(var(--focus-hold) + 5.5 * var(--focus-line) + var(--focus-gap)),
+    rgb(0 0 0 / 30%) calc(var(--focus-hold) + 6.5 * var(--focus-line) + var(--focus-gap)),
+    rgb(0 0 0 / 20%) calc(var(--focus-hold) + 7.5 * var(--focus-line) + var(--focus-gap)),
+    rgb(0 0 0 / 10%) calc(var(--focus-hold) + 8.5 * var(--focus-line) + 2 * var(--focus-gap)),
+    rgb(0 0 0 / 8%) calc(var(--focus-hold) + 9.5 * var(--focus-line) + 2 * var(--focus-gap)),
+    rgb(0 0 0 / 8%) 100%
   );
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
@@ -2347,28 +2373,18 @@ html:has(.board-doors) body {
   display: none;
 }
 
-/* The blur mirror is only the lines below the focus. Past lines are the
-   sharp text, so this clip stays clear through the current sentence, then
-   eases in over the same upcoming ramp. A filter on each line
-   re-rasterizes on iPhone. */
+/* The blurred copy doubled the letters (a halo around the sharp ink).
+   Upcoming lines fade by mask opacity only, so this clip stays hidden. */
 .focus-blur-clip {
   position: absolute;
   z-index: 2;
   inset: 0;
   overflow: hidden;
   pointer-events: none;
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0,
-    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
-    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade) + var(--focus-ahead))
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0,
-    transparent calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade)),
-    #000 calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade) + var(--focus-ahead))
-  );
+  opacity: 0;
+  visibility: hidden;
+  -webkit-mask-image: linear-gradient(transparent, transparent);
+  mask-image: linear-gradient(transparent, transparent);
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
@@ -2452,12 +2468,9 @@ html:has(.board-doors) body {
 .focus-wash {
   top: calc(var(--focus-lead) + (100% - var(--focus-lead)) * 2 / 3 - var(--focus-fade));
   bottom: 0;
-  background-image: linear-gradient(
-    to bottom,
-    transparent 0,
-    color-mix(in srgb, var(--reader-bg) 38%, transparent) var(--focus-ahead),
-    color-mix(in srgb, var(--reader-bg) 38%, transparent) 100%
-  );
+  /* No page-color veil. It dimmed the focus band and ghosted the ink. */
+  background-image: none;
+  background: none;
 }
 
 .focus-bands {
