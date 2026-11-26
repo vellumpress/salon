@@ -1081,7 +1081,7 @@ export function TbrReader({
   }, [index, progress, work.id]);
 
   useLayoutEffect(() => {
-    const frame = breathLineRef.current?.closest(".reader-frame");
+    const frame = (breathLineRef.current ?? turnHostRef.current)?.closest(".reader-frame");
     if (!(frame instanceof HTMLElement)) return;
     const host = frame as HTMLElement & {
       spotlightStep?: (
@@ -1574,6 +1574,8 @@ export function TbrReader({
     // from Scroll mode must not stay parked halfway down the column.
     if (moveBy.mode !== "tap") return;
     userScrolledRef.current = false;
+    browsingRef.current = false;
+    setBrowsing(false);
     placeTokenRef.current += 1;
     resizeAnchorRef.current = true;
     let delta = stickSentenceRef.current();
@@ -1969,6 +1971,9 @@ export function TbrReader({
       const wait = Math.max(90, scrollIgnoreUntilRef.current - performance.now() + 40);
       placeTimer = window.setTimeout(() => {
         if (!live) return;
+        // Tap mode keeps the sentence the taps chose. A drag only moves the
+        // column; the next tap is what changes the place.
+        if (moveByRef.current === "tap") return;
         // The finger still owns the column. Commit after the lift so a
         // rebuild does not fight the drag.
         if (gestureRef.current && !gestureRef.current.turned) {
