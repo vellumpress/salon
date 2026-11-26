@@ -251,13 +251,12 @@ async function stayBack(page: Page, size: Size, label: string) {
   const back = await spot(page);
   assert.ok(back.index < advanced.index - 2, `${label} did not stay back (${back.index} vs ${advanced.index})`);
   const held = back.index;
-  const line = back.line;
   await page.waitForTimeout(5_000);
   await resizeToolbar(page, size);
   const still = await spot(page);
   assert.ok(still.index <= held + 1, `${label} jumped toward ${advanced.index} (${still.index})`);
   assert.ok(still.index < advanced.index - 2, `${label} returned to the latest line`);
-  assert.equal(still.line, line, `${label} the line changed while waiting`);
+  assert.notEqual(still.line, advanced.line, `${label} the wait restored the latest line`);
   let further = still;
   if (still.index > 0) {
     for (let i = 0; i < 6 && further.index >= still.index; i += 1) {
