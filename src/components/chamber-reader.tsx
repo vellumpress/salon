@@ -1124,10 +1124,14 @@ export function TbrReader({
     const located = groups[at];
     if (located && groupCovering([located], anchor.index, anchor.start)) return;
     // A link can open a sentence inside a window that starts on the previous
-    // breath. That sentence stays put. A resize only rewrites a window of the
-    // same breath, so the next tap is not aimed at a slice that moved.
+    // breath. That sentence stays put. A resize may move the window inside
+    // the sentence the reader already chose. It must not store an earlier
+    // sentence over that place: a wide column measures once before the saved
+    // sentence has painted, and that opening slice then folds into the group
+    // that starts a few sentences back.
     if (hit.index !== placeIndex) return;
-    if (hit.cursor === cursorRef.current && hit.window === windowRef.current) return;
+    if (hit.cursor !== cursorRef.current) return;
+    if (hit.window === windowRef.current) return;
     rememberSentence(hit.index, hit.cursor, hit.window);
     markUserPlace(hit.index, hit.cursor, hit.window);
   }, [metricsCacheKey]);

@@ -45,6 +45,7 @@ export const smokeFiles = [
   "src/lib/move-by.e2e.test.ts",
   "src/lib/hourglass-mark.e2e.test.ts",
   "src/lib/reader-scroll-sides.test.ts",
+  "src/lib/reader-place-reload.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -128,6 +129,7 @@ export const allTsFiles = [
   "src/lib/reader-chrome-bar.test.ts",
   "src/lib/reader-home-tap.test.ts",
   "src/lib/reader-quicksand-sit.test.ts",
+  "src/lib/reader-place-reload.test.ts",
   "src/lib/opening-breath.test.ts",
   "src/lib/reading-progress.test.ts",
   "src/lib/reading-progress-bar.test.ts",
