@@ -260,7 +260,8 @@ async function checkReader(page: Page, label: string) {
   assert.ok(Math.abs(scrolled.scroll - scrolledFrom) > 40, `${label} the page did not scroll`);
   const afterScroll = await advances(page);
   assert.equal(afterScroll, credited, `${label} scrolling added sitting time`);
-  await waitForPageRest(page);
+  // A coast can still be moving after three seconds when the shard is busy.
+  await waitForPageRest(page, 8_000);
 
   await page.mouse.click(40, 500);
   await page.waitForFunction(

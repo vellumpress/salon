@@ -189,6 +189,14 @@ test("a page.goto timeout is retryable and a step miss is not", () => {
     ),
     true,
   );
+  assert.equal(
+    isRetryableCatalogOpen(
+      new Error(
+        'page.goto: Frame load interrupted\nCall log:\n  - navigating to "http://127.0.0.1:8081/salon/read/the-house-of-mirth", waiting until "domcontentloaded"',
+      ),
+    ),
+    true,
+  );
   assert.equal(isDeadDocument(new Error("locator.waitFor: Timeout 30000ms exceeded."), false), true);
   assert.equal(
     isDeadDocument(new Error("page.waitForFunction: Timeout 4000ms exceeded."), false),
