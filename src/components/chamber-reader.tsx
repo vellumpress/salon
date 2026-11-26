@@ -2620,7 +2620,8 @@ export function TbrReader({
       if (e.cancelable) e.preventDefault();
       return;
     }
-    if (start.zone === "prev") return;
+    // A drag scrolls from either side. The left third is only a short tap
+    // back, and only in Tap mode, so it must not swallow the move.
     const flow = flowRef.current;
     if (!flow || !columnScrolls()) return;
     const dy = e.clientY - start.y;
