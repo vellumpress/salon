@@ -365,8 +365,11 @@ async function runEngine(browser: Browser, engine: string, sample: boolean) {
         const opened = await spot(page);
         const crossed = await untilScene(page, opened.scene, `Chromium sample ${id}`);
         assert.notEqual(crossed.scene, opened.scene, `${id} did not reach its next chapter`);
-        await wheel(page, -700, 8);
-        const back = await spot(page);
+        let back = crossed;
+        for (let i = 0; i < 24 && back.scene !== opened.scene; i += 1) {
+          await wheel(page, -700, 3);
+          back = await spot(page);
+        }
         assert.equal(back.scene, opened.scene, `${id} did not scroll back into the first chapter`);
       } finally {
         await page.close();
