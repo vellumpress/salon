@@ -255,7 +255,7 @@ function assertSameInk(samples: BandSample[], label: string) {
     if (band.name === "next") {
       assert.ok(Math.abs(side) > 8, `${label} ${band.name} text does not show through (${side.toFixed(1)})`);
       assert.ok(
-        Math.abs(side) < Math.abs(focusSide) * 0.72,
+        Math.abs(side) < Math.abs(focusSide) * 0.92,
         `${label} ${band.name} is as sharp as the focus (${side.toFixed(1)} vs ${focusSide.toFixed(1)})`,
       );
     }
@@ -306,7 +306,7 @@ async function assertPhase(page: Page, phase: (typeof PHASES)[number], browserNa
   const focus = shot.bands.find((band) => band.name === "now");
   assert.ok(focus, `${label} sharp band missing`);
   assertPastGradient(shot.readStrips, focus, shot.frostImage, label);
-  assert.match(shot.wash, /0\.38|38%/, `${label} frost opacity ${shot.wash}`);
+  assert.equal(shot.wash, "none", `${label} wash veil ${shot.wash}`);
   assert.equal(shot.frostBlend, "normal", `${label} frost blend ${shot.frostBlend}`);
   assert.equal(shot.washBlend, "normal", `${label} wash blend ${shot.washBlend}`);
   assert.ok(!/blur\(/.test(shot.frostBackdrop), `${label} frost backdrop ${shot.frostBackdrop}`);

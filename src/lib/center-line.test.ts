@@ -245,17 +245,15 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.match(fade, /rgb\(0 0 0 \/ 32%\) var\(--focus-lead\)/);
   assert.doesNotMatch(fade, /transparent 0/);
   assert.match(fade, /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \/ 3\)/);
-  assert.match(
-    fade,
-    /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3 - var\(--focus-fade\)\)/,
-  );
-  assert.match(
-    fade,
-    /transparent calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3 - var\(--focus-fade\) \+ var\(--focus-ahead\)\)/,
-  );
+  assert.match(fade, /#000 var\(--focus-hold\)/);
+  assert.match(fade, /rgb\(0 0 0 \/ 90%\) calc\(var\(--focus-hold\) \+ 0\.5 \* var\(--focus-line\)\)/);
+  assert.match(fade, /rgb\(0 0 0 \/ 8%\) 100%/);
+  assert.doesNotMatch(fade, /focus-ahead/);
   const pane = css.match(/\.reading-pane-centered\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(pane, /--focus-fade:\s*1\.75rem/);
-  assert.match(pane, /--focus-ahead:\s*5\.25rem/);
+  assert.match(pane, /--focus-ahead:\s*1\.75rem/);
+  assert.match(pane, /--focus-line:\s*calc\(var\(--text-breath\) \* var\(--text-breath--line-height\)\)/);
+  assert.match(pane, /--focus-hold:\s*calc\(var\(--focus-mid\) \+ 3 \* var\(--focus-line\)\)/);
   assert.doesNotMatch(live, /border|box-shadow/);
   const now = css.match(/\.focus-band-now\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(now, /height:\s*calc\(\(100% - var\(--focus-lead\)\) \/ 3\)/);
@@ -281,10 +279,8 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.match(wash, /border:\s*0/);
   assert.match(wash, /box-shadow:\s*none/);
   const washFill = css.match(/\.focus-wash\s*\{[^}]+\}/)?.[0] ?? "";
-  assert.match(
-    washFill,
-    /color-mix\(in srgb, var\(--reader-bg\) 38%, transparent\) var\(--focus-ahead\)/,
-  );
+  assert.match(washFill, /background-image:\s*none/);
+  assert.doesNotMatch(washFill, /color-mix/);
   const slot = css.match(/\.upcoming-slot\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(slot, /filter:\s*none/);
   assert.doesNotMatch(css, /\.breath-sentence\.is-ahead|\.breath-sentence\.is-past|passage-ahead|ahead-shade/);
@@ -315,15 +311,10 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.doesNotMatch(mirrorInk, /backdrop-filter|mix-blend-mode/);
   assert.match(reader, /paintMirrorInk/);
   const blurClip = css.match(/\.focus-blur-clip\s*\{[^}]+\}/)?.[0] ?? "";
-  assert.match(blurClip, /transparent 0/);
-  assert.match(
-    blurClip,
-    /transparent calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3 - var\(--focus-fade\)\)/,
-  );
-  assert.match(
-    blurClip,
-    /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3 - var\(--focus-fade\) \+ var\(--focus-ahead\)\)/,
-  );
+  assert.match(blurClip, /opacity:\s*0/);
+  assert.match(blurClip, /visibility:\s*hidden/);
+  assert.match(blurClip, /linear-gradient\(transparent, transparent\)/);
+  assert.doesNotMatch(blurClip, /#000/);
   assert.doesNotMatch(blurClip, /#000 0/);
   assert.match(reader, /data-focus-band="now"/);
   assert.match(reader, /focus-blur-clip/);
