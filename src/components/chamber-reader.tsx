@@ -1971,9 +1971,6 @@ export function TbrReader({
       const wait = Math.max(90, scrollIgnoreUntilRef.current - performance.now() + 40);
       placeTimer = window.setTimeout(() => {
         if (!live) return;
-        // Tap mode keeps the sentence the taps chose. A drag only moves the
-        // column; the next tap is what changes the place.
-        if (moveByRef.current === "tap") return;
         // The finger still owns the column. Commit after the lift so a
         // rebuild does not fight the drag.
         if (gestureRef.current && !gestureRef.current.turned) {
@@ -1995,6 +1992,9 @@ export function TbrReader({
           if (center >= bandTop && center <= bandBottom) titled = node.getAttribute("data-chapter-label");
         }
         setPassingLabel((prev) => (prev === titled ? prev : titled));
+        // Tap mode keeps the sentence the taps chose. A drag only moves the
+        // column; the chapter name can follow what is on screen.
+        if (moveByRef.current === "tap") return;
         const nodes = [...flow.querySelectorAll<HTMLElement>("[data-sentence]")];
         let best: HTMLElement | null = null;
         for (const node of nodes) {
