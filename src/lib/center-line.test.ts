@@ -233,8 +233,15 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.match(live, /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \/ 3\)/);
   assert.match(
     live,
-    /transparent calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3\)/,
+    /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3 - var\(--focus-fade\)\)/,
   );
+  assert.match(
+    live,
+    /transparent calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3 - var\(--focus-fade\) \+ var\(--focus-ahead\)\)/,
+  );
+  const pane = css.match(/\.reading-pane-centered\s*\{[^}]+\}/)?.[0] ?? "";
+  assert.match(pane, /--focus-fade:\s*1\.75rem/);
+  assert.match(pane, /--focus-ahead:\s*5\.25rem/);
   assert.doesNotMatch(live, /border|box-shadow/);
   const now = css.match(/\.focus-band-now\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(now, /height:\s*calc\(\(100% - var\(--focus-lead\)\) \/ 3\)/);
@@ -261,7 +268,7 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   const washFill = css.match(/\.focus-wash\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(
     washFill,
-    /color-mix\(in srgb, var\(--reader-bg\) 38%, transparent\) var\(--focus-fade\)/,
+    /color-mix\(in srgb, var\(--reader-bg\) 38%, transparent\) var\(--focus-ahead\)/,
   );
   const slot = css.match(/\.upcoming-slot\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(slot, /filter:\s*none/);
@@ -296,7 +303,11 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.match(blurClip, /transparent 0/);
   assert.match(
     blurClip,
-    /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3\)/,
+    /transparent calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3 - var\(--focus-fade\)\)/,
+  );
+  assert.match(
+    blurClip,
+    /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3 - var\(--focus-fade\) \+ var\(--focus-ahead\)\)/,
   );
   assert.doesNotMatch(blurClip, /#000 0/);
   assert.match(reader, /data-focus-band="now"/);
