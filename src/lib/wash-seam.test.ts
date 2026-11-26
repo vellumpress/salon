@@ -270,9 +270,9 @@ async function bandSnapshot(page: Page) {
           }
         : null,
       mirrorFilter,
-      clipOpacity: clip ? getComputedStyle(clip).opacity : "",
-      breathBottom: breath?.getBoundingClientRect().bottom ?? null,
-      upcomingTop: upcoming?.getBoundingClientRect().top ?? null,
+      clipOpacity: clip instanceof Element ? getComputedStyle(clip).opacity : "",
+      breathBottom: breath instanceof Element ? breath.getBoundingClientRect().bottom : null,
+      upcomingTop: upcoming instanceof Element ? upcoming.getBoundingClientRect().top : null,
       glassBackdrop: glassStyle?.backdropFilter ?? glassStyle?.getPropertyValue("-webkit-backdrop-filter") ?? "",
       glassBackground: glassStyle?.backgroundColor ?? "",
       dpr: window.devicePixelRatio,
