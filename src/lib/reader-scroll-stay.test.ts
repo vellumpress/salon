@@ -259,11 +259,16 @@ async function stayBack(page: Page, size: Size, label: string) {
   assert.ok(still.index < advanced.index - 2, `${label} returned to the latest line`);
   assert.equal(still.line, line, `${label} the line changed while waiting`);
   let further = still;
-  if (still.index > 2) {
-    if (size.mobile) await drag(page, Math.round(size.height * 0.5), 0.25);
-    else await wheel(page, -700, 4);
-    further = await spot(page);
-    assert.ok(further.index < still.index, `${label} could not scroll further back (${further.index} vs ${still.index})`);
+  if (still.index > 0) {
+    for (let i = 0; i < 6 && further.index >= still.index; i += 1) {
+      if (size.mobile) await drag(page, Math.round(size.height * 0.55), i % 2 === 0 ? 0.22 : 0.78);
+      else await wheel(page, -700, 3);
+      further = await spot(page);
+    }
+    assert.ok(
+      further.index < still.index,
+      `${label} could not scroll further back (${further.index} vs ${still.index})`,
+    );
   }
   await page.reload({ waitUntil: "domcontentloaded" });
   await page.locator(".breath-now").waitFor({ timeout: 30_000 });
