@@ -246,7 +246,8 @@ async function bandSnapshot(page: Page) {
     });
     const wash = document.querySelector(".focus-wash");
     const washBox = wash?.getBoundingClientRect();
-    const mirrorFilter = document.querySelector(".focus-blur-clip")?.getAttribute("data-mirror-filter") ?? "";
+    const clip = document.querySelector(".focus-blur-clip");
+    const mirrorFilter = clip?.getAttribute("data-mirror-filter") ?? "";
     const breath = document.querySelector(".focus-live .breath-now");
     const upcoming = document.querySelector(".focus-live .upcoming-slot .look-line");
     const glass = document.querySelector(".reader-glass");
@@ -269,7 +270,7 @@ async function bandSnapshot(page: Page) {
           }
         : null,
       mirrorFilter,
-      clipOpacity: getComputedStyle(document.querySelector(".focus-blur-clip")).opacity,
+      clipOpacity: clip ? getComputedStyle(clip).opacity : "",
       breathBottom: breath?.getBoundingClientRect().bottom ?? null,
       upcomingTop: upcoming?.getBoundingClientRect().top ?? null,
       glassBackdrop: glassStyle?.backdropFilter ?? glassStyle?.getPropertyValue("-webkit-backdrop-filter") ?? "",
