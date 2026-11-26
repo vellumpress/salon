@@ -67,7 +67,13 @@ export function lookbackBreaths(work: Work, index: number, limit = 12): Breath[]
   const current = work.breaths[index];
   if (!current) return [];
   const start = Math.max(0, index - Math.max(0, Math.floor(limit)));
-  return work.breaths.slice(start, index);
+  const slice = work.breaths.slice(start, index);
+  // The window can end exactly on a chapter's first line. Keep the last
+  // line of the chapter above, so a scroll back is not a wall.
+  const before = start > 0 ? work.breaths[start - 1] : undefined;
+  const first = slice[0];
+  if (before && first && before.sceneId !== first.sceneId) return [before, ...slice];
+  return slice;
 }
 
 /**
@@ -87,6 +93,12 @@ export function upcomingBreaths(work: Work, index: number, limit = UPCOMING_WIND
     if (!breath) break;
     out.push(breath);
   }
+  // A chapter of exactly `cap` breaths ends on the last line of this window.
+  // Shallow Soil's prologue is one of those. Include the next chapter's
+  // first line so the boundary is on the page, not one past it.
+  const edge = breaths[index + 1 + out.length];
+  const last = out[out.length - 1];
+  if (edge && last && edge.sceneId !== last.sceneId) out.push(edge);
   return out;
 }
 

@@ -9,6 +9,7 @@ import {
   centerLineOffset,
   focusAnchorPx,
   focusBands,
+  lookbackBreaths,
   readCenterLineEnabled,
   upcomingBreaths,
   writeCenterLineEnabled,
@@ -208,6 +209,16 @@ test("upcoming breaths cross into the next chapter and stop at the book", () => 
   assert.equal(upcomingBreaths(work, work.breaths.length).length, 0);
   assert.equal(upcomingBreaths(work, -1).length, 0);
   assert.equal(upcomingBreaths(work, startOfTwo, 0).length, 0);
+
+  const prologue = workOf([
+    { id: "s0", count: 21 },
+    { id: "s1", count: 8 },
+  ]);
+  const edge = upcomingBreaths(prologue, 0);
+  assert.equal(edge.at(-1)?.sceneId, "s1");
+  assert.equal(edge.at(-1)?.id, "s1-0");
+  const behind = lookbackBreaths(prologue, 21, 12);
+  assert.equal(behind[0]?.sceneId, "s0");
 });
 
 test("a long book only walks the upcoming window", () => {
@@ -225,18 +236,21 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
   const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
   const live = css.match(/\.focus-live\s*\{[^}]+\}/)?.[0] ?? "";
+  const fade = css.match(/\.focus-fade\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(live, /position:\s*absolute/);
   assert.match(live, /overflow-y:\s*auto/);
-  assert.match(live, /rgb\(0 0 0 \/ 32%\) 0/);
-  assert.match(live, /rgb\(0 0 0 \/ 32%\) var\(--focus-lead\)/);
-  assert.doesNotMatch(live, /transparent 0/);
-  assert.match(live, /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \/ 3\)/);
+  assert.match(live, /mask-image:\s*none/);
+  assert.doesNotMatch(live, /linear-gradient/);
+  assert.match(fade, /rgb\(0 0 0 \/ 32%\) 0/);
+  assert.match(fade, /rgb\(0 0 0 \/ 32%\) var\(--focus-lead\)/);
+  assert.doesNotMatch(fade, /transparent 0/);
+  assert.match(fade, /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \/ 3\)/);
   assert.match(
-    live,
+    fade,
     /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3 - var\(--focus-fade\)\)/,
   );
   assert.match(
-    live,
+    fade,
     /transparent calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \* 2 \/ 3 - var\(--focus-fade\) \+ var\(--focus-ahead\)\)/,
   );
   const pane = css.match(/\.reading-pane-centered\s*\{[^}]+\}/)?.[0] ?? "";
@@ -259,6 +273,7 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.doesNotMatch(css, /backdrop-filter:\s*blur/);
   const blur = css.match(/\.focus-blur-track\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(blur, /filter:\s*blur\(8px\)/);
+  assert.match(blur, /will-change:\s*transform/);
   assert.doesNotMatch(blur, /\.breath-now|\.look-line|\.breath-sentence/);
   const wash = css.match(/\.focus-wash,\s*\n\.focus-frost\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(wash, /left:\s*0/);

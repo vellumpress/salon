@@ -47,7 +47,7 @@ test("every chapter and poem boundary still has a next breath and a way back", (
       const ahead = upcomingBreaths(work, i - 1, 1);
       if (ahead[0]?.id !== next.id) problems.push(`${work.id} upcoming at ${i - 1}`);
       const behind = lookbackBreaths(work, i, 1);
-      if (behind[0]?.id !== prev.id) problems.push(`${work.id} lookback at ${i}`);
+      if (behind.at(-1)?.id !== prev.id) problems.push(`${work.id} lookback at ${i}`);
       if (problems.length > 12) break;
     }
     if (crossed) seen.add(work.id);
@@ -65,6 +65,58 @@ test("every chapter and poem boundary still has a next breath and a way back", (
   assert.match(upcomingBreaths(bridge, 62)[0]?.text ?? "", /Spanish schoolboy/);
   assert.ok(upcomingBreaths(bridge, 62).length <= UPCOMING_WINDOW);
   assert.equal(lookbackBreaths(bridge, 63).at(-1)?.sceneId, "s0");
+});
+
+test("every book can scroll forward and back across every chapter boundary", () => {
+  const names = readdirSync(texts).filter((name) => name.endsWith(".json"));
+  let books = 0;
+  let boundaries = 0;
+  let plainWindowMisses = 0;
+  const failures: string[] = [];
+  for (const name of names) {
+    const work = JSON.parse(readFileSync(new URL(name, texts), "utf8")) as Work;
+    if (!work?.breaths?.length || work.breaths.length < 2) continue;
+    books += 1;
+    const starts: number[] = [];
+    let scene = "";
+    for (let i = 0; i < work.breaths.length; i += 1) {
+      const id = work.breaths[i]?.sceneId ?? "";
+      if (id !== scene) {
+        starts.push(i);
+        scene = id;
+      }
+    }
+    for (let s = 0; s < starts.length - 1; s += 1) {
+      const from = starts[s] ?? 0;
+      const target = starts[s + 1] ?? work.breaths.length;
+      boundaries += 1;
+      const plainLast = Math.min(work.breaths.length - 1, from + UPCOMING_WINDOW);
+      if (plainLast < target) plainWindowMisses += 1;
+      let index = from;
+      let guard = 0;
+      while (index < target && guard < 10000) {
+        const ahead = upcomingBreaths(work, index);
+        const end = ahead.length ? work.breaths.indexOf(ahead[ahead.length - 1]!) : index;
+        if (end <= index) {
+          failures.push(`${work.id} stuck at ${index} before ${target}`);
+          break;
+        }
+        index = end;
+        guard += 1;
+      }
+      if (index < target) failures.push(`${work.id} forward ${from} stopped at ${index}, next chapter is ${target}`);
+      const back = lookbackBreaths(work, target);
+      if (!back.some((breath) => breath.sceneId === work.breaths[from]?.sceneId)) {
+        failures.push(`${work.id} lookback from ${target} missed ${work.breaths[from]?.sceneId}`);
+      }
+      if (failures.length > 12) break;
+    }
+    if (failures.length > 12) break;
+  }
+  assert.deepEqual(failures, []);
+  assert.ok(books > 1000, `only ${books} books`);
+  assert.ok(boundaries > 30000, `only ${boundaries} boundaries`);
+  assert.ok(plainWindowMisses > 1000, `expected chapters longer than the old window, saw ${plainWindowMisses}`);
 });
 
 test("a tap from the last sentence of a part, poem, or book chapter lands in the next one", () => {
