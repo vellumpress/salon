@@ -46,6 +46,8 @@ export const smokeFiles = [
   "src/lib/hourglass-mark.e2e.test.ts",
   "src/lib/reader-scroll-sides.test.ts",
   "src/lib/reader-place-reload.test.ts",
+  "src/lib/reader-scroll-stay.test.ts",
+  "src/lib/reader-scroll-smooth.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -184,6 +186,8 @@ export const allTsFiles = [
   "src/lib/move-by.e2e.test.ts",
   "src/lib/hourglass-mark.e2e.test.ts",
   "src/lib/reader-scroll-sides.test.ts",
+  "src/lib/reader-scroll-stay.test.ts",
+  "src/lib/reader-scroll-smooth.test.ts",
 ];
 
 const smokeSet = new Set(smokeFiles);

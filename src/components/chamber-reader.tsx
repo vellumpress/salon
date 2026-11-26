@@ -128,7 +128,9 @@ type Overlay =
   | "end"
   | "send";
 
-const LOOKBACK = 12;
+const LOOKBACK = 24;
+/** Far enough that a fling stays inside the page already painted. */
+const AHEAD = 36;
 
 /**
  * Every sentence is painted the same. The fixed bands, not these nodes,
@@ -289,6 +291,8 @@ export function TbrReader({
   // can stay up; the mark row follows the reading rules and hides again.
   const [hourglassRead, setHourglassRead] = useState(false);
   const [passingLabel, setPassingLabel] = useState<string | null>(null);
+  const [browsing, setBrowsing] = useState(false);
+  const browsingRef = useRef(false);
   const still = bar.still;
   const navReveal = bar.navReveal;
   const [overflows, setOverflows] = useState(false);
@@ -800,9 +804,15 @@ export function TbrReader({
     [index, work],
   );
   const upcoming = useMemo(
-    () => (centerOn ? upcomingBreaths(work, index) : []),
+    () => (centerOn ? upcomingBreaths(work, index, AHEAD) : []),
     [centerOn, index, work],
   );
+  const browseSlice = useMemo(() => {
+    if (!browsing) return [];
+    const from = Math.max(0, index - LOOKBACK);
+    const to = Math.min(work.breaths.length, index + 1 + AHEAD);
+    return work.breaths.slice(from, to);
+  }, [browsing, index, work]);
   const displayTexts = useMemo(() => {
     const list: string[] = [];
     if (breath) list.push(breath.text);
@@ -913,6 +923,13 @@ export function TbrReader({
 
   function goTo(next: number, sentence = 0, reading = false) {
     if (next < 0 || next >= work.breaths.length) return;
+    // A chapter jump or a tap is a deliberate move. Land on that sentence.
+    // A later scroll is free to leave it.
+    userScrolledRef.current = false;
+    scrollAnchorRef.current = null;
+    browsingRef.current = false;
+    setBrowsing(false);
+    placeTokenRef.current += 1;
     markUserPlace(next, sentence);
     const at = liveIndex();
     const from = work.breaths[at];
@@ -955,6 +972,8 @@ export function TbrReader({
   function stepBy(delta: 1 | -1) {
     if (overlayRef.current !== "none") return;
     scrollAnchorRef.current = null;
+    browsingRef.current = false;
+    setBrowsing(false);
     setPassingLabel(null);
     const frameRaw = Number(
       turnHostRef.current?.closest(".reader-frame")?.getAttribute("data-breath-index"),
@@ -1132,6 +1151,9 @@ export function TbrReader({
     if (hit.index !== placeIndex) return;
     if (hit.cursor !== cursorRef.current) return;
     if (hit.window === windowRef.current) return;
+    // A finger that has already left this sentence owns the column. A
+    // remeasure (the iOS toolbar, a font) must not lock the old line again.
+    if (userScrolledRef.current) return;
     rememberSentence(hit.index, hit.cursor, hit.window);
     markUserPlace(hit.index, hit.cursor, hit.window);
   }, [metricsCacheKey]);
@@ -1676,20 +1698,47 @@ export function TbrReader({
         delete clone.dataset.mirrorInk;
       }
       host.dataset.mirrorFilter = getComputedStyle(clone).filter;
+      clone.style.transition = "none";
       return clone;
     };
 
+    let mirrorEl: HTMLElement | null = null;
     const syncMirror = (scrollTop: number) => {
-      const mirror = ensureBlurMirror();
-      if (!mirror) return;
-      mirror.style.transition = "none";
-      mirror.style.transform = `translate3d(0, ${-scrollTop}px, 0)`;
+      // Transform only. Cloning or reading layout here re-rasterizes the
+      // blur on every frame and the letters shimmer.
+      if (!mirrorEl) return;
+      mirrorEl.style.transform = `translate3d(0, ${-scrollTop}px, 0)`;
     };
 
     const place = (animate: boolean) => {
       if (!live) return;
       const line = slot.querySelector<HTMLElement>(".breath-now");
-      if (!line) return;
+      if (!line) {
+        // A scroll paints one continuous column. Hold the sentence that was
+        // on screen, and do not restyle it into the spotlight.
+        const flowNow = flowRef.current;
+        const pending = scrollAnchorRef.current;
+        if (flowNow && pending) {
+          const node = flowNow.querySelector<HTMLElement>(`[data-sentence="${pending.sentence}"]`);
+          if (node) {
+            const flowTop = flowNow.getBoundingClientRect().top;
+            const now = node.getBoundingClientRect().top - flowTop + flowNow.scrollTop;
+            const delta = now - pending.top;
+            if (Math.abs(delta) > 1) {
+              scrollIgnoreUntilRef.current = performance.now() + 180;
+              scrollLockRef.current = true;
+              const nextTop = Math.max(0, flowNow.scrollTop + delta);
+              anchoredScrollRef.current = nextTop;
+              flowNow.scrollTop = nextTop;
+              scrollLockRef.current = false;
+            }
+          }
+          scrollAnchorRef.current = null;
+        }
+        mirrorEl = ensureBlurMirror();
+        if (flowNow) syncMirror(flowNow.scrollTop);
+        return;
+      }
       const height = pane.clientHeight;
       const host = turnHostRef.current;
       const bleed = columnBleed(host);
@@ -1722,6 +1771,7 @@ export function TbrReader({
       pane.style.setProperty("--focus-pad-bottom", `${Math.round(Math.max(0, height - focusY))}px`);
       pane.style.removeProperty("--focus-slot-max");
       const mirror = ensureBlurMirror();
+      mirrorEl = mirror;
       const mirrorHost = blurHostRef.current;
       if (mirror && mirrorHost) paintMirrorInk(mirror, track, mirrorHost);
       landScroll();
@@ -1734,6 +1784,9 @@ export function TbrReader({
       // write, so the same measurement runs until the line stops moving,
       // and once more on the following frame.
       const stickSentence = () => {
+        // The reader scrolled or dragged away from the focus sentence.
+        // A later measure must not pull that sentence back under the band.
+        if (userScrolledRef.current) return 0;
         const column = flowRef.current;
         const lineNow = slot.querySelector<HTMLElement>(".breath-now");
         if (!column || !lineNow) return 0;
@@ -1886,17 +1939,42 @@ export function TbrReader({
       if (scrollLockRef.current) return;
       const anchored = anchoredScrollRef.current;
       const top = flow.scrollTop;
+      let userMoved = true;
       if (anchored != null && Math.abs(top - anchored) <= 1) {
         // The tap's own recenter, even if the scroll event arrives late.
         anchoredScrollRef.current = null;
+        userMoved = false;
       } else {
         if (anchored != null) anchoredScrollRef.current = null;
+        // Own the column before the debounce. A toolbar resize in that
+        // gap used to recenter the sentence the finger had just left.
+        userScrolledRef.current = true;
         noteScrollMotion(top);
+        if (!browsingRef.current && moveByRef.current === "scroll") {
+          const held = flow.querySelector<HTMLElement>(".breath-now, [data-sentence]");
+          if (held) {
+            const flowTop = flow.getBoundingClientRect().top;
+            const sentence = Number(held.getAttribute("data-sentence"));
+            scrollAnchorRef.current = {
+              sentence: Number.isFinite(sentence) ? sentence : (useTbr.getState().progress[work.id]?.breathIndex ?? 0),
+              top: held.getBoundingClientRect().top - flowTop + flow.scrollTop,
+            };
+          }
+          browsingRef.current = true;
+          setBrowsing(true);
+        }
       }
-      if (performance.now() < scrollIgnoreUntilRef.current) return;
+      if (!userMoved) return;
       window.clearTimeout(placeTimer);
+      const wait = Math.max(90, scrollIgnoreUntilRef.current - performance.now() + 40);
       placeTimer = window.setTimeout(() => {
         if (!live) return;
+        // The finger still owns the column. Commit after the lift so a
+        // rebuild does not fight the drag.
+        if (gestureRef.current && !gestureRef.current.turned) {
+          placeTimer = window.setTimeout(() => onScroll(), 120);
+          return;
+        }
         const box = flow.getBoundingClientRect();
         const leadNow = Number.parseFloat(getComputedStyle(pane).marginTop);
         const leadPx = Number.isFinite(leadNow) && leadNow < 0 ? -leadNow : 0;
@@ -1919,18 +1997,45 @@ export function TbrReader({
           if (rect.height < 2) continue;
           if (rect.top <= mid && rect.bottom >= mid) best = node;
         }
-        const next = Number(best?.getAttribute("data-sentence"));
-        if (!Number.isFinite(next)) return;
-        userScrolledRef.current = true;
         const current = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
-        if (next === current) return;
-        const flowTop = flow.getBoundingClientRect().top;
-        scrollAnchorRef.current = {
-          sentence: next,
-          top: best!.getBoundingClientRect().top - flowTop + flow.scrollTop,
-        };
+        let next = Number(best?.getAttribute("data-sentence"));
+        const roomBelow = flow.scrollHeight - flow.scrollTop - flow.clientHeight;
+        // The band can still be the saved line when the page has hit the
+        // end of the rendered window. Step to the sentence at that edge
+        // so the next chapter, or the one above, can load.
+        if (roomBelow < 48 && !(Number.isFinite(next) && next > current)) {
+          let last = current;
+          for (const node of nodes) {
+            const n = Number(node.getAttribute("data-sentence"));
+            if (Number.isFinite(n) && n > last) last = n;
+          }
+          if (last > current) next = last;
+        }
+        if (flow.scrollTop < 48 && !(Number.isFinite(next) && next < current)) {
+          let first = current;
+          for (const node of nodes) {
+            const n = Number(node.getAttribute("data-sentence"));
+            if (Number.isFinite(n) && n < first) first = n;
+          }
+          if (first < current) next = first;
+        }
+        if (!Number.isFinite(next) || next === current) return;
+        const anchorNode =
+          flow.querySelector<HTMLElement>(`[data-sentence="${next}"]`) ?? best;
+        if (anchorNode) {
+          const flowTop = flow.getBoundingClientRect().top;
+          scrollAnchorRef.current = {
+            sentence: next,
+            top: anchorNode.getBoundingClientRect().top - flowTop + flow.scrollTop,
+          };
+        }
+        // Note the new line first. A chapter jump or a tap owns the old
+        // one, and the store will otherwise refuse to leave it.
+        userScrolledRef.current = true;
+        markUserPlace(next, 0, 0);
         useTbr.getState().setBreath(work.id, next, stampAt(work, next));
-      }, 90);
+        useTbr.getState().setSentenceAt(work.id, next, 0, 0);
+      }, wait);
     };
     flow?.addEventListener("scroll", onScroll, { passive: true, capture: true });
     const onWheel = (event: WheelEvent) => {
@@ -1940,6 +2045,7 @@ export function TbrReader({
         event.preventDefault();
         return;
       }
+      userScrolledRef.current = true;
       flow.scrollTop += event.deltaY;
       if (event.deltaY <= -120) noteMark("reveal");
       else noteMark("scroll");
@@ -1985,7 +2091,7 @@ export function TbrReader({
       turnHostRef.current?.removeEventListener("wheel", onWheel);
       window.clearTimeout(placeTimer);
     };
-  }, [index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey, navReveal]);
+  }, [browsing, index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey, navReveal]);
 
   useLayoutEffect(() => {
     const paint = () => {
@@ -2812,25 +2918,39 @@ export function TbrReader({
         {showPalimpsest ? <p className="palimpsest font-display">{palimpsest}</p> : null}
         {centerOn ? (
           <>
+            <div className="focus-fade">
             <div ref={flowRef} className="focus-live">
               <div ref={trackRef} className="center-track">
                 <div className="center-pad center-pad-top" aria-hidden />
                 <div className="center-lines">
-                  <div ref={lookbackSlotRef} className="lookback-slot" aria-hidden>
-                    {readLines}
-                  </div>
-                  {signpostBeforeFocus}
-                  <div ref={breathSlotRef} className={breathClass}>
-                    {currentLine}
-                  </div>
-                  <div className="upcoming-fold" aria-hidden>
-                    <div ref={upcomingSlotRef} className="upcoming-slot">
-                      {previewLines}
-                    </div>
-                  </div>
+                  {browsing ? (
+                    <>
+                      <div ref={lookbackSlotRef} className="lookback-slot">
+                        {columnBreaths(browseSlice, "page", null)}
+                      </div>
+                      <div ref={breathSlotRef} className="breath-slot" hidden />
+                      <div ref={upcomingSlotRef} className="upcoming-slot" hidden />
+                    </>
+                  ) : (
+                    <>
+                      <div ref={lookbackSlotRef} className="lookback-slot" aria-hidden>
+                        {readLines}
+                      </div>
+                      {signpostBeforeFocus}
+                      <div ref={breathSlotRef} className={breathClass}>
+                        {currentLine}
+                      </div>
+                      <div className="upcoming-fold" aria-hidden>
+                        <div ref={upcomingSlotRef} className="upcoming-slot">
+                          {previewLines}
+                        </div>
+                      </div>
+                    </>
+                  )}
                 </div>
                 <div className="center-pad center-pad-bottom" aria-hidden />
               </div>
+            </div>
             </div>
             <div ref={blurHostRef} className="focus-blur-clip" aria-hidden="true" />
             <div className="focus-frost focus-frost-read" aria-hidden="true" />

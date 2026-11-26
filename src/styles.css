@@ -2297,17 +2297,14 @@ html:has(.board-doors) body {
 /* One continuous page. Past lines stay sharp, in the focus ink, and ease
    from nearly full at the focus to about a third at the top. The lines
    below stay in the frosted mirror. Their falloff starts where it did and
-   eases over about three lines, still much steeper than the past fade. */
-.focus-live {
+   eases over about three lines, still much steeper than the past fade.
+   The mask sits on a frame that does not scroll. Masking the scroller
+   itself makes iPhone Safari re-rasterize the glyphs on every frame. */
+.focus-fade {
   position: absolute;
   z-index: 1;
   inset: 0;
-  overflow-anchor: none;
-  overflow-x: hidden;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  overflow: hidden;
   pointer-events: none;
   -webkit-mask-image: linear-gradient(
     to bottom,
@@ -2329,6 +2326,21 @@ html:has(.board-doors) body {
   mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+}
+
+.focus-live {
+  position: absolute;
+  inset: 0;
+  overflow-anchor: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  pointer-events: none;
+  -webkit-mask-image: none;
+  mask-image: none;
+  transform: translateZ(0);
 }
 
 .focus-live::-webkit-scrollbar {
@@ -2370,6 +2382,9 @@ html:has(.board-doors) body {
   width: 100%;
   filter: blur(8px);
   transition: none;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 }
 
 /* The mirror lives in a shadow tree, so `.reader-daylight .look-line` never
