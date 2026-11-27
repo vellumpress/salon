@@ -128,7 +128,12 @@ export function visualViewportVars(input: {
   const offset = Math.max(0, input.offsetTop ?? 0);
   const frozen = input.frozenVvh && input.frozenVvh > 1 ? input.frozenVvh : 0;
   const reference = frozen > inner ? frozen : inner;
-  const kbOpen = reference - visible > KB_OPEN_PX;
+  // The keyboard covers the layout viewport: visual height drops, innerHeight
+  // stays (resizes-visual). A resize or a turn changes both together. Treating
+  // that as a keyboard left the fade band at the old screen height.
+  const kbOpen = input.together
+    ? reference - visible > KB_OPEN_PX
+    : inner - visible > KB_OPEN_PX;
   const composeBottom: "0px" | "safe-area" = kbOpen ? "0px" : "safe-area";
   const composeGap = Math.round(Math.max(0, inner - offset - visible));
 

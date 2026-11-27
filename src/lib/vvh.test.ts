@@ -78,6 +78,23 @@ test("outside compose, a keyboard-sized shrink freezes --vvh so Mondrian / login
   assert.equal(vars.kbInset, 0);
 });
 
+test("a resize that shortens the window is not a keyboard, so the shell and the fade follow it", () => {
+  const turned = visualViewportVars({
+    innerHeight: 390,
+    visualHeight: 390,
+    frozenVvh: 844,
+  });
+  assert.equal(turned.kbOpen, false);
+  assert.equal(turned.vvh, 390);
+  const shorter = visualViewportVars({
+    innerHeight: 700,
+    visualHeight: 700,
+    frozenVvh: 844,
+  });
+  assert.equal(shorter.kbOpen, false);
+  assert.equal(shorter.vvh, 700);
+});
+
 test("outside compose, a keyboard shrink without a stored rest height still freezes at innerHeight", () => {
   const vars = visualViewportVars({
     innerHeight: 844,

@@ -47,6 +47,7 @@ export const smokeFiles = [
   "src/lib/reader-scroll-sides.test.ts",
   "src/lib/reader-place-reload.test.ts",
   "src/lib/reader-scroll-stay.test.ts",
+  "src/lib/fade-mask-steady.test.ts",
   "src/lib/reader-scroll-smooth.test.ts",
 ];
 
@@ -188,6 +189,7 @@ export const allTsFiles = [
   "src/lib/hourglass-mark.e2e.test.ts",
   "src/lib/reader-scroll-sides.test.ts",
   "src/lib/reader-scroll-stay.test.ts",
+  "src/lib/fade-mask-steady.test.ts",
   "src/lib/reader-scroll-smooth.test.ts",
 ];
 
