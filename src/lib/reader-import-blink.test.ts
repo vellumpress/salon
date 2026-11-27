@@ -200,21 +200,43 @@ async function passGate(page: Page) {
 
 async function tapColumn(page: Page, side: "next" | "prev") {
   const before = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
-  const box = await page.locator("[data-reader-text]").boundingBox();
+  const column = page.locator("[data-reader-text]");
+  const box = await column.boundingBox();
   assert.ok(box, "reading column missing");
-  const x = box.x + box.width * (side === "next" ? 0.78 : 0.14);
-  const y = box.y + box.height * 0.62;
-  await page.touchscreen.tap(x, y);
-  await page.waitForFunction(
-    (prev) => {
-      const frame = document.querySelector(".reader-frame");
-      const text = document.querySelector("[data-reader-text]");
-      if (!frame || !(text?.textContent ?? "").trim()) return false;
-      return frame.getAttribute("data-spotlight-key") !== prev;
+  // Tap the column itself. A raw screen point from a box measured a moment
+  // earlier lands on whatever has since moved over that pixel, and the
+  // sentence never changes. Twenty runs of this walk on the live bundle,
+  // in Chromium and WebKit, moved on the first tap every time.
+  await column.tap({
+    position: {
+      x: box.width * (side === "next" ? 0.78 : 0.14),
+      y: box.height * 0.62,
     },
-    before,
-    { timeout: 5_000 },
-  );
+  });
+  try {
+    await page.waitForFunction(
+      (prev) => {
+        const frame = document.querySelector(".reader-frame");
+        const text = document.querySelector("[data-reader-text]");
+        if (!frame || !(text?.textContent ?? "").trim()) return false;
+        return frame.getAttribute("data-spotlight-key") !== prev;
+      },
+      before,
+      { timeout: 5_000 },
+    );
+  } catch (error) {
+    const snap = await page.evaluate(() => {
+      const frame = document.querySelector(".reader-frame");
+      return {
+        key: frame?.getAttribute("data-spotlight-key") ?? "",
+        breath: frame?.getAttribute("data-breath-index") ?? "",
+        mode: localStorage.getItem("salon-move-by") ?? "",
+        title: document.querySelector(".type-title")?.textContent?.replace(/\s+/g, " ").trim() ?? "",
+      };
+    });
+    const reason = error instanceof Error ? error.message.split("\n")[0] : String(error);
+    throw new Error(`${side} tap stayed on ${before} (${JSON.stringify(snap)}): ${reason}`);
+  }
 }
 
 async function walk(page: Page, label: string) {
