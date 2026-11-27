@@ -198,6 +198,7 @@ async function phonePage(browser: Browser, viewport = { width: 390, height: 844 
   await page.addInitScript(() => {
     localStorage.clear();
     localStorage.setItem("salon-move-by", "tap");
+    localStorage.setItem("salon-text-size", "1.00");
   });
   return page;
 }
