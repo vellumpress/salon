@@ -2192,10 +2192,9 @@ html:has(.board-doors) body {
   display: block;
   /* Equal thirds of the pane below the status bar. 100% is the pane, whose
      top is the screen top. The lead is the status bar plus the mark row.
-     Upcoming ink steps one line at a time from the focus center, not from
-     a fraction of the screen, so a phone and a desktop share the same
-     per-line fade. --focus-ahead is the pre-#565 one-line reach; the ramp
-     below does not use it to pull extra lines into view. */
+     Both sides step one line at a time from the band edges, not from a
+     fraction of the screen and not from --focus-ahead, so a phone and a
+     tall window share the same fade. */
   --focus-lead: var(--reader-top-lead, 0px);
   --focus-fade: 1.75rem;
   --focus-ahead: 1.75rem;
@@ -2298,13 +2297,13 @@ html:has(.board-doors) body {
   overflow-y: auto;
 }
 
-/* One continuous page. The focus paragraph stays at full ink. Each line
-   outward, above and below, steps 90, 79, 70, 60, 50, 40, 30, 20, 10, then
-   8%. The steps are line heights from the paragraph edges, so a phone and
-   a tall window share the same fade. --focus-ink-top/bottom are the
-   paragraph's edges in this frame; JS writes them after layout. The mask
-   sits on a frame that does not scroll. Masking the scroller itself makes
-   iPhone Safari re-rasterize the glyphs on every frame. */
+/* One continuous page. The focus stays at full ink for at most seven
+   lines. Each line outward, above and below, steps 90, 79, 70, 60, 50, 40,
+   30, 20, 10, then 8%. The two ramps share those edges: nothing on the
+   upcoming side, including --focus-ahead, pushes the lower steps down.
+   --focus-ink-top/bottom are those edges in this frame; JS writes them
+   after layout. The mask sits on a frame that does not scroll. Masking the
+   scroller itself makes iPhone Safari re-rasterize the glyphs on every frame. */
 .focus-fade {
   position: absolute;
   z-index: 1;
