@@ -8,7 +8,7 @@ import {
 } from "./text-size.ts";
 
 export type TextSizePreference = {
-  /** Persisted multiplier. 1 is the size the page already used. */
+  /** Persisted multiplier. 0.90 is the size when nothing is saved. */
   scale: number;
   setScale: (scale: number) => void;
 };

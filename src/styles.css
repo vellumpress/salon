@@ -151,7 +151,7 @@
   --text-pitch: 0.875rem;
   --text-pitch--line-height: 1.5;
   --text-size-base: clamp(1.2rem, 0.9rem + 1.5vw, 1.6rem);
-  --text-size-scale: 1;
+  --text-size-scale: 0.9;
   --text-breath: calc(var(--text-size-scale) * var(--text-size-base));
   --text-breath--line-height: 1.45;
   --text-lookback: 1.02rem;
