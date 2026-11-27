@@ -109,7 +109,7 @@ async function readFrames(page: Page, mode: "scroll" | "tap"): Promise<MaskFrame
     requestAnimationFrame(watch);
     const started = performance.now();
     if (kind === "scroll") {
-      while (performance.now() - started < 5_200) {
+      while (performance.now() - started < 3_500) {
         host.dispatchEvent(new WheelEvent("wheel", { deltaY: 160, bubbles: true, cancelable: true }));
         await new Promise((resolve) => requestAnimationFrame(() => resolve(undefined)));
       }
