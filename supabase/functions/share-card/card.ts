@@ -153,6 +153,8 @@ export function renderQuoteHtml(
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${description}">
 <meta name="twitter:image" content="${image}">
+<meta http-equiv="refresh" content="0;url=${open}">
+<script>location.replace(${JSON.stringify(urls.openUrl)})</script>
 </head>
 <body style="margin:0;background:${PAPER};color:${INK};font-family:&quot;Cormorant Garamond&quot;;font-weight:400;font-style:normal">
 <main style="max-width:36rem;margin:0 auto;padding:2.5rem 1.25rem">
