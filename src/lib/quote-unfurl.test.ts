@@ -87,6 +87,14 @@ test("preview image URL keeps https and /functions/v1", () => {
   );
 });
 
+test("the share page keeps a mixed-case HTML type the gateway will not flatten", () => {
+  const index = readFileSync(
+    join(dirname(fileURLToPath(import.meta.url)), "../../supabase/functions/share-card/index.ts"),
+    "utf8",
+  );
+  assert.match(index, /"Content-Type": "Text\/HTML; charset=utf-8"/);
+});
+
 test("share-card does not import a wasm module", () => {
   const dir = join(dirname(fileURLToPath(import.meta.url)), "../../supabase/functions/share-card");
   const card = readFileSync(join(dir, "card.ts"), "utf8");

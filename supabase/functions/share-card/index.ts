@@ -60,16 +60,18 @@ Deno.serve(async (req) => {
     });
   }
   const html = renderQuoteHtml(token, { imageUrl, openUrl });
+  // A lowercase text/html GET on the project host is rewritten to text/plain
+  // and sandboxed, so the browser shows the source and never enters the sitting.
+  // Text/HTML is still HTML, and that rewrite leaves it alone.
+  const htmlHeaders = {
+    "Content-Type": "Text/HTML; charset=utf-8",
+    "Cache-Control": "public, max-age=300",
+  };
   if (!html) {
     return new Response("<!doctype html><title>tbr</title><p>This share would not come</p>", {
       status: 404,
-      headers: { "Content-Type": "text/html; charset=utf-8" },
+      headers: htmlHeaders,
     });
   }
-  return new Response(html, {
-    headers: {
-      "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "public, max-age=300",
-    },
-  });
+  return new Response(html, { headers: htmlHeaders });
 });
