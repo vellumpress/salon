@@ -339,6 +339,7 @@ function rememberAsset(url) {
   }).catch(function () {});
 }
 function rememberOpened(url) {
+  // Book texts are not in PRECACHE. This list is what keeps an opened book.
   if (!url) return Promise.resolve();
   var baked = precacheHrefs();
   var i;
