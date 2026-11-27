@@ -219,9 +219,12 @@ export const FONT_FILES = [
  * Hashed
  * js/css stay cache-first when the cached bytes are real code. A cached HTML
  * body or 404 is never returned for those URLs until the network has been
- * tried. NUL bytes are refused so a poisoned document cannot stick. Book
- * texts ship as hashed chunks under `/salon/assets/` and are precached with
- * the rest of the build manifest; they are not stored in the HTML shell.
+ * tried. While the radio is off, a script or stylesheet is answered from the
+ * cache only: a fetch inside respondWith cancels the load in WebKit. NUL
+ * bytes are refused so a poisoned document cannot stick. Book texts ship as
+ * hashed chunks under `/salon/assets/` and are stored when that book is
+ * opened. They are not part of the install set, and they are not stored in
+ * the HTML shell.
  *
  * Repeat launches paint the cached shell. The network is given a short race
  * (`SHELL_RACE_MS`). If that response's asset list differs from the cached
@@ -244,12 +247,11 @@ export const FONT_FILES = [
  * surface as Safari "cannot open page".
  *
  * @param {{ precache?: string[], boot?: string[], extras?: string[] }} [manifest]
- *   `precache` is every built `/salon/assets/*.(js|mjs|css)`, app shell first
- *   and then book chunks smallest-first. `boot` is the app shell only
- *   (routes, reader, desk, shelf, pdf). Install waits for `boot`. The rest
- *   fills in after claim and stops if the origin cache quota is hit, so a
- *   long novel cannot evict the document needed to launch. `extras` is
- *   same-origin static files (manifest, icons, favicon).
+ *   `precache` is the app's hashed js/css (routes, reader, desk, notes,
+ *   focus styles), not book texts. `boot` is that set minus the breath-id
+ *   map. Install waits for `boot`. Activate fills the rest of `precache`
+ *   after claim. A book chunk is stored only when that book is opened.
+ *   `extras` is same-origin static files (manifest, icons, favicon).
  */
 export function renderShellServiceWorker(manifest = {}) {
   const precacheList = Array.isArray(manifest.precache) ? manifest.precache : [];
@@ -283,6 +285,9 @@ function manifestUrl() {
 }
 function liveUrl() {
   return new URL("/salon/__sw_live", self.location.origin).href;
+}
+function openedUrl() {
+  return new URL("/salon/__sw_opened", self.location.origin).href;
 }
 function hasNul(text) {
   return text.indexOf(String.fromCharCode(0)) !== -1;
@@ -330,6 +335,19 @@ function rememberAsset(url) {
       for (i = 0; i < list.length; i++) if (list[i] === url) return;
       list.push(url);
       return cache.put(liveUrl(), jsonResponse(list));
+    });
+  }).catch(function () {});
+}
+function rememberOpened(url) {
+  if (!url) return Promise.resolve();
+  var baked = precacheHrefs();
+  var i;
+  for (i = 0; i < baked.length; i++) if (baked[i] === url) return Promise.resolve();
+  return caches.open(ASSETS).then(function (cache) {
+    return readManifest(cache, openedUrl()).then(function (list) {
+      for (i = 0; i < list.length; i++) if (list[i] === url) return;
+      list.push(url);
+      return cache.put(openedUrl(), jsonResponse(list));
     });
   }).catch(function () {});
 }
@@ -411,7 +429,9 @@ function warmAssets(urls) {
         return fetch(url, { cache: "no-cache" }).then(function (res) {
           if (!res || !res.ok || res.type === "opaque" || !isServableCode(res)) return false;
           var copy = res.clone();
-          return cache.put(url, copy).then(function () { return true; }, function () { return false; });
+          return cache.put(url, copy).then(function () {
+            return rememberOpened(url);
+          }).then(function () { return true; }, function () { return false; });
         }).catch(function () { return false; });
       });
     })).then(function (flags) {
@@ -430,13 +450,17 @@ function pruneToGenerations(urls) {
       var i;
       var baked = precacheHrefs();
       var hasLive = live.length > 0;
+      var sameShell = !prev.length || sameAssetSet(prev, urls);
       for (i = 0; i < urls.length; i++) keep[urls[i]] = 1;
       for (i = 0; i < prev.length; i++) keep[prev[i]] = 1;
       for (i = 0; i < live.length; i++) keep[live[i]] = 1;
       for (i = 0; i < baked.length; i++) keep[baked[i]] = 1;
+      return readManifest(cache, openedUrl()).then(function (opened) {
+      if (!sameShell) opened = [];
+      for (i = 0; i < opened.length; i++) keep[opened[i]] = 1;
       return cache.keys().then(function (reqs) {
         return Promise.all(reqs.map(function (req) {
-          if (req.url === manifestUrl() || req.url === liveUrl()) return Promise.resolve();
+          if (req.url === manifestUrl() || req.url === liveUrl() || req.url === openedUrl()) return Promise.resolve();
           if (keep[req.url]) return Promise.resolve();
           // No live generation yet: the previous manifest listed only the
           // HTML urls. Keep lazy chunks the cached shell still imports.
@@ -450,7 +474,10 @@ function pruneToGenerations(urls) {
       }).then(function () {
         return cache.put(manifestUrl(), jsonResponse(urls)).then(function () {
           return cache.put(liveUrl(), jsonResponse(urls));
+        }).then(function () {
+          return cache.put(openedUrl(), jsonResponse(opened));
         });
+      });
       });
     });
   });
@@ -610,17 +637,29 @@ function reloadOpenClients(attempt) {
 }
 function cacheFirstAsset(req) {
   var url = new URL(req.url);
+  var offline = offlineNow();
   return caches.open(ASSETS).then(function (cache) {
-    return cache.match(url.href).then(function (hit) {
+    var opts = { ignoreSearch: true, ignoreVary: true };
+    return cache.match(req, opts).then(function (hit) {
+      if (hit) return hit;
+      return cache.match(url.href, opts);
+    }).then(function (hit) {
       var goodHit = isServableCode(hit);
       var drop = !goodHit && hit ? cache.delete(url.href).catch(function () {}) : Promise.resolve();
-      if (goodHit) return hit;
+      if (goodHit) {
+        try { return hit.clone(); } catch (err) { return hit; }
+      }
+      // WebKit cancels the load if respondWith starts a fetch while the
+      // radio is off, even when this function later catches the rejection.
+      if (offline) return plainMiss(504);
       return drop.then(function () {
         return fetch(req, { cache: "no-cache" }).then(function (res) {
           if (isServableCode(res)) {
             var copy = res.clone();
             return cache.put(req.url, copy).then(function () {
               return rememberAsset(url.href);
+            }).then(function () {
+              return rememberOpened(url.href);
             }).then(function () { return res; }, function () { return res; });
           }
           var type = res && res.headers ? (res.headers.get("content-type") || "").toLowerCase() : "";
@@ -1193,7 +1232,7 @@ export function renderBootWatchScript() {
 }
 
 export function renderShellNetworkHints() {
-  return `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">${renderBootWatchScript()}<script ${SHELL_CACHE_ATTR} type="module">if("serviceWorker"in navigator){function readerOpen(){try{if(document.querySelector(".reader-frame"))return true;return /\\/read\\/[^/?#&]+/.test((location.pathname||"")+(location.search||""))}catch(err){return false}}var hadController=Boolean(navigator.serviceWorker.controller);navigator.serviceWorker.addEventListener("controllerchange",function(){if(!hadController){hadController=true;return}if(readerOpen())return;var now=Date.now();try{var at=parseInt(sessionStorage.getItem("tbr-sw-reload")||"0",10);if(at&&now-at<20000)return;sessionStorage.setItem("tbr-sw-reload",String(now))}catch(e){return}location.reload()});navigator.serviceWorker.addEventListener("message",function(ev){var data=ev.data||{};if(data.type==="shell-reload"){if(readerOpen())return;var now=Date.now();try{var at=parseInt(sessionStorage.getItem("tbr-sw-reload")||"0",10);if(at&&now-at<20000)return;sessionStorage.setItem("tbr-sw-reload",String(now))}catch(e){return}location.reload()}});navigator.serviceWorker.register("/salon/sw.js",{scope:"/salon/",updateViaCache:"none"}).then(function(reg){function collect(){var urls=[];var seen={};function add(href){if(!href||href.indexOf("/salon/assets/")===-1||seen[href])return;seen[href]=1;urls.push(href)}var nodes=document.querySelectorAll("script[src],link[rel=stylesheet][href],link[rel=modulepreload][href]");for(var i=0;i<nodes.length;i++)add(nodes[i].src||nodes[i].href||"");if(window.performance&&performance.getEntriesByType){var entries=performance.getEntriesByType("resource");for(var j=0;j<entries.length;j++)add(entries[j].name||"")}return urls}function send(){var worker=reg.active;if(!worker)return;worker.postMessage({type:"warm-assets",urls:collect()})}function whenReady(){if(reg.active)return Promise.resolve();var sw=reg.installing||reg.waiting;if(!sw)return Promise.resolve();return new Promise(function(resolve){sw.addEventListener("statechange",function(){if(sw.state==="activated")resolve()})})}function kick(){whenReady().then(send)}function claimUpdate(){try{reg.update()}catch(e){}if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"});var installing=reg.installing;if(installing)installing.addEventListener("statechange",function(){if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"})})}claimUpdate();function onFore(){if(document.visibilityState==="hidden")return;claimUpdate()}document.addEventListener("visibilitychange",onFore);window.addEventListener("pageshow",onFore);if(document.readyState==="complete")kick();else window.addEventListener("load",kick)}).catch(function(){})}</script>`;
+  return `<style data-shell-paint>html,body{background:#F3F1EB;color:#111111}</style><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">${renderBootWatchScript()}<script ${SHELL_CACHE_ATTR} type="module">if("serviceWorker"in navigator){function readerOpen(){try{if(document.querySelector(".reader-frame"))return true;return /\\/read\\/[^/?#&]+/.test((location.pathname||"")+(location.search||""))}catch(err){return false}}var hadController=Boolean(navigator.serviceWorker.controller);navigator.serviceWorker.addEventListener("controllerchange",function(){if(!hadController){hadController=true;return}if(readerOpen())return;var now=Date.now();try{var at=parseInt(sessionStorage.getItem("tbr-sw-reload")||"0",10);if(at&&now-at<20000)return;sessionStorage.setItem("tbr-sw-reload",String(now))}catch(e){return}location.reload()});navigator.serviceWorker.addEventListener("message",function(ev){var data=ev.data||{};if(data.type==="shell-reload"){if(readerOpen())return;var now=Date.now();try{var at=parseInt(sessionStorage.getItem("tbr-sw-reload")||"0",10);if(at&&now-at<20000)return;sessionStorage.setItem("tbr-sw-reload",String(now))}catch(e){return}location.reload()}});navigator.serviceWorker.register("/salon/sw.js",{scope:"/salon/",updateViaCache:"none"}).then(function(reg){function collect(){var urls=[];var seen={};function add(href){if(!href||href.indexOf("/salon/assets/")===-1||seen[href])return;seen[href]=1;urls.push(href)}var nodes=document.querySelectorAll("script[src],link[rel=stylesheet][href],link[rel=modulepreload][href]");for(var i=0;i<nodes.length;i++)add(nodes[i].src||nodes[i].href||"");if(window.performance&&performance.getEntriesByType){var entries=performance.getEntriesByType("resource");for(var j=0;j<entries.length;j++)add(entries[j].name||"")}return urls}function send(){var worker=reg.active;if(!worker)return;worker.postMessage({type:"warm-assets",urls:collect()})}function whenReady(){if(reg.active)return Promise.resolve();var sw=reg.installing||reg.waiting;if(!sw)return Promise.resolve();return new Promise(function(resolve){sw.addEventListener("statechange",function(){if(sw.state==="activated")resolve()})})}function kick(){whenReady().then(send)}function claimUpdate(){try{reg.update()}catch(e){}if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"});var installing=reg.installing;if(installing)installing.addEventListener("statechange",function(){if(reg.waiting)reg.waiting.postMessage({type:"skip-waiting"})})}claimUpdate();function onFore(){if(document.visibilityState==="hidden")return;claimUpdate()}document.addEventListener("visibilitychange",onFore);window.addEventListener("pageshow",onFore);function arm(){kick();setTimeout(kick,2000);setTimeout(kick,6000)}if(document.readyState==="complete")arm();else window.addEventListener("load",arm)}).catch(function(){})}</script>`;
 }
 
 /** @param {string} html */
@@ -1242,12 +1281,13 @@ const STATIC_SHELL_FILES = [
 ];
 
 /**
- * Every hashed script and stylesheet the build emitted, plus same-origin
- * files the shell requests outside `/assets/` (manifest, icons, favicon).
- * Book texts are `import.meta.glob` chunks under `/salon/assets/`, so they
- * are in `precache`, not a separate JSON fetch. The breath-id map
- * (`at-remap-*.js`) is in that fill too, after install, so a cold launch
- * does not wait on it. The first fetch is also stored by the asset cache.
+ * App scripts and stylesheets the build emitted, plus same-origin files the
+ * shell requests outside `/assets/` (manifest, icons, favicon).
+ * Home, Read, You, Rituals, Together, reader notes, and the focus styles are
+ * in `boot` and are stored during install. The breath-id map
+ * (`at-remap-*.js`) is in `precache` / `fill` but not `boot`, so install
+ * does not wait on it. Book texts are omitted: they are stored when that
+ * book is opened, not for every title in the catalog.
  * @param {string} destDir
  */
 export function collectShellPrecache(destDir) {
@@ -1269,12 +1309,13 @@ export function collectShellPrecache(destDir) {
       });
     }
   }
-  const precache = rows.map((row) => row.path).sort();
-  const boot = rows.filter((row) => !row.book && !row.lazy).map((row) => row.path).sort();
-  const later = rows
-    .filter((row) => row.book || row.lazy)
+  const app = rows.filter((row) => !row.book);
+  const boot = app.filter((row) => !row.lazy).map((row) => row.path).sort();
+  const later = app
+    .filter((row) => row.lazy)
     .sort((a, b) => a.size - b.size || (a.path < b.path ? -1 : 1));
-  const fill = boot.concat(later.map((row) => row.path));
+  const precache = boot.concat(later.map((row) => row.path));
+  const fill = precache.slice();
   const extras = [];
   for (const name of STATIC_SHELL_FILES) {
     if (existsSync(join(destDir, name))) extras.push(`/salon/${name}`);
