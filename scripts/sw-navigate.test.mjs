@@ -676,3 +676,35 @@ test("recover-shell may replace the shell only after a new document is fetched",
   assert.ok(stored);
   assert.match(await stored.text(), /index-new\.js/);
 });
+
+test("an offline route chunk is served from the cache and does not fetch", async () => {
+  let fetches = 0;
+  const { caches, listeners } = loadWorker({
+    onLine: false,
+    fetchImpl() {
+      fetches += 1;
+      return Promise.reject(new TypeError("Failed to fetch"));
+    },
+  });
+  const href = `${ORIGIN}/salon/assets/routes-CdYAzbkJ.js`;
+  const cache = await caches.open(SHELL_ASSET_CACHE_NAME);
+  await cache.put(
+    href,
+    new Response("export default 1", {
+      status: 200,
+      headers: { "content-type": "application/javascript; charset=utf-8", vary: "Accept-Encoding" },
+    }),
+  );
+  const event = {
+    request: { url: href, method: "GET", mode: "cors" },
+    waitUntil() {},
+    respondWith(promise) {
+      event.result = promise;
+    },
+  };
+  listeners.fetch(event);
+  const res = await event.result;
+  assert.equal(res.status, 200);
+  assert.equal(await res.text(), "export default 1");
+  assert.equal(fetches, 0);
+});
