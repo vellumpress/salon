@@ -6,6 +6,7 @@ import {
   followBrowseRange,
   growBrowseRange,
   prefixDropCount,
+  keptScrollTop,
   restoredScrollTop,
   SCROLL_GULP,
 } from "./reader-scroll-window.ts";
@@ -89,6 +90,34 @@ test("a long scroll drops lines above the glass and does not load them straight 
   assert.equal(pulled.from, next.from);
   const back = followBrowseRange(next, 400, { ...edges, scrollTop: 80, scrollHeight: 5000 }, 36, "back");
   assert.ok(back.from < next.from);
+});
+
+test("dropping lines above the glass does not subtract the height twice", () => {
+  // The page was at the bottom. Removing lines above it shrinks the
+  // document, and the browser has already clamped the offset by that amount.
+  assert.equal(
+    keptScrollTop(
+      { scrollTop: 82421, scrollHeight: 83265 },
+      { scrollTop: 76606, scrollHeight: 77450 },
+    ),
+    76606,
+  );
+  // The page was not at the bottom, so the offset has not moved yet.
+  assert.equal(
+    keptScrollTop(
+      { scrollTop: 50000, scrollHeight: 80000 },
+      { scrollTop: 50000, scrollHeight: 74185 },
+    ),
+    44185,
+  );
+  // Lines added above the glass. The offset follows them down.
+  assert.equal(
+    keptScrollTop(
+      { scrollTop: 100, scrollHeight: 5000 },
+      { scrollTop: 100, scrollHeight: 5800 },
+    ),
+    900,
+  );
 });
 
 test("restoring a line uses the scroll offset from before the browser clamped it", () => {

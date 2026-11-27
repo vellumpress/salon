@@ -264,6 +264,81 @@ test(
 );
 
 test(
+  "a fast pass through short poems does not jump the line",
+  { timeout: 120_000 },
+  async () => {
+    await ensureReaderServer();
+    const browser = await launch("chromium");
+    try {
+      const context = await browser.newContext({
+        viewport: { width: 390, height: 844 },
+        hasTouch: true,
+        isMobile: true,
+        deviceScaleFactor: PHONE.deviceScaleFactor,
+        userAgent: PHONE.userAgent,
+      });
+      const page = await context.newPage();
+      await page.addInitScript(() => {
+        localStorage.clear();
+        localStorage.setItem("salon-move-by", "scroll");
+      });
+      await page.goto(`${ORIGIN}/salon/read/birds-beasts-and-flowers`, { waitUntil: "domcontentloaded" });
+      await page.locator(".veil, .breath-now").first().waitFor({ timeout: 30_000 });
+      const sit = page.getByRole("button", { name: /^Sit$/ }).first();
+      if (await sit.isVisible().catch(() => false)) await sit.click();
+      await page.locator(".breath-now").waitFor({ timeout: 30_000 });
+      await page.waitForFunction(() => document.querySelector(".reader-frame")?.getAttribute("data-face-ready") === "yes");
+      const report = await page.evaluate(async () => {
+        const flow = document.querySelector(".focus-live");
+        const host = document.querySelector("[data-reader-text]");
+        if (!(flow instanceof HTMLElement) || !(host instanceof HTMLElement)) throw new Error("reader missing");
+        let worst = 0;
+        let trims = 0;
+        let measured = 0;
+        let first = flow.querySelector("[data-sentence]")?.getAttribute("data-sentence") ?? "";
+        for (let i = 0; i < 400 && trims < 4; i += 1) {
+          const mid = flow.getBoundingClientRect().top + flow.clientHeight * 0.5;
+          const nodes = [...flow.querySelectorAll<HTMLElement>("[data-sentence]")];
+          const hit = nodes.find((node) => {
+            const rect = node.getBoundingClientRect();
+            return rect.height > 2 && rect.top <= mid && rect.bottom >= mid;
+          });
+          const tracked = hit?.getAttribute("data-sentence") ?? "";
+          const before = hit ? hit.getBoundingClientRect().top : null;
+          const top = flow.scrollTop;
+          const heightBefore = flow.scrollHeight;
+          host.dispatchEvent(new WheelEvent("wheel", { deltaY: 360, bubbles: true, cancelable: true }));
+          await new Promise((resolve) => requestAnimationFrame(() => resolve(undefined)));
+          const afterNode = tracked ? flow.querySelector(`[data-sentence="${tracked}"]`) : null;
+          const nextFirst = flow.querySelector("[data-sentence]")?.getAttribute("data-sentence") ?? first;
+          const trimmed = nextFirst !== first;
+          if (trimmed && before != null && afterNode instanceof HTMLElement) {
+            const moved = before - afterNode.getBoundingClientRect().top;
+            const extra = flow.scrollTop - top - (flow.scrollHeight - heightBefore);
+            // A wheel in the same frame may move the line. The trimmed height
+            // must not be subtracted again, which is the jump.
+            const slip = Math.min(Math.abs(extra), Math.abs(extra - 360));
+            worst = Math.max(worst, slip, Math.abs(moved - extra));
+            measured += 1;
+          }
+          if (trimmed) {
+            trims += 1;
+            first = nextFirst;
+          }
+        }
+        return { worst: Math.round(worst), trims, measured };
+      });
+      assert.ok(report.trims >= 1, `the page never dropped lines above the glass (${report.trims})`);
+      assert.ok(report.measured >= 1, "the sentence on the glass was dropped before it could be measured");
+      assert.ok(report.worst < 2, `the line jumped ${report.worst}px while short poems were trimmed`);
+      await context.close();
+    } finally {
+      await browser.close();
+    }
+  },
+);
+
+test(
   "a fling does not remount the text",
   { timeout: 180_000 },
   async (t) => {

@@ -117,6 +117,7 @@ import {
 import {
   browseWindow,
   extendBrowseRange,
+  keptScrollTop,
   prefixDropCount,
   restoredScrollTop,
   SCROLL_GULP,
@@ -1604,33 +1605,38 @@ export function TbrReader({
   }, [moveBy.mode]);
 
   const paintSnapRef = useRef<{ from: number; to: number; height: number; index: number } | null>(null);
+  const rangeShiftRef = useRef<{ scrollTop: number; scrollHeight: number } | null>(null);
+  const noteRangeShift = (flow: HTMLElement) => {
+    rangeShiftRef.current = { scrollTop: flow.scrollTop, scrollHeight: flow.scrollHeight };
+  };
   useLayoutEffect(() => {
     const flow = flowRef.current;
     if (!browsing || !browseRange || !flow) {
       paintSnapRef.current = null;
+      rangeShiftRef.current = null;
       return;
     }
     const prev = paintSnapRef.current;
+    const shift = rangeShiftRef.current;
+    rangeShiftRef.current = null;
     const fromChanged = Boolean(prev && prev.from !== browseRange.from);
     // Lines added or removed above the glass move every offset. Appending
     // below does not, and must not pull the page back to an older scroll.
     if (prev && fromChanged) {
-      // The height change is the lines added or removed above the glass.
-      // Adding it to the scroll offset keeps the sentence still. A sentence
-      // anchor here was replayed later and yanked the page.
-      const delta = flow.scrollHeight - prev.height;
-      if (Math.abs(delta) > 1) {
-        const before = flow.scrollTop;
-        const nextTop = Math.max(0, before + delta);
-        if (Math.abs(before - nextTop) > 1) {
-          scrollIgnoreUntilRef.current = performance.now() + 180;
-          scrollLockRef.current = true;
-          flow.scrollTop = nextTop;
-          lastScrollTopRef.current = nextTop;
-          if (gestureRef.current) gestureRef.current.scrollTop += nextTop - before;
-          anchoredScrollRef.current = nextTop;
-          scrollLockRef.current = false;
-        }
+      // Start from the offset taken before the lines unmounted. The browser
+      // clamps that offset itself when the page was at the bottom, and
+      // subtracting the height again is the jump.
+      const before = shift ?? { scrollTop: flow.scrollTop, scrollHeight: prev.height };
+      const nextTop = keptScrollTop(before, { scrollTop: flow.scrollTop, scrollHeight: flow.scrollHeight });
+      if (Math.abs(flow.scrollTop - nextTop) > 1) {
+        const was = flow.scrollTop;
+        scrollIgnoreUntilRef.current = performance.now() + 180;
+        scrollLockRef.current = true;
+        flow.scrollTop = nextTop;
+        lastScrollTopRef.current = nextTop;
+        if (gestureRef.current) gestureRef.current.scrollTop += nextTop - was;
+        anchoredScrollRef.current = nextTop;
+        scrollLockRef.current = false;
       }
       scrollAnchorRef.current = null;
     }
@@ -2025,6 +2031,7 @@ export function TbrReader({
             AHEAD,
           );
           browseRangeRef.current = range;
+          noteRangeShift(flow);
           setBrowseRange(range);
           browsingRef.current = true;
           setBrowsing(true);
@@ -2047,6 +2054,7 @@ export function TbrReader({
               scrollDirectionRef.current,
             );
             if (nextRange === current) return;
+            if (nextRange.from !== current.from) noteRangeShift(column);
             browseRangeRef.current = nextRange;
             setBrowseRange(nextRange);
           };
@@ -2118,6 +2126,7 @@ export function TbrReader({
               const drop = prefixDropCount(heights, budget, SCROLL_GULP);
               if (drop > 0 && range.to - drop > range.from) {
                 const next = { from: range.from, to: range.to - drop };
+                noteRangeShift(flow);
                 browseRangeRef.current = next;
                 setBrowseRange(next);
               }
@@ -2132,6 +2141,7 @@ export function TbrReader({
               const drop = prefixDropCount(heights, budget, SCROLL_GULP);
               if (drop > 0 && range.from + drop < range.to) {
                 const next = { from: range.from + drop, to: range.to };
+                noteRangeShift(flow);
                 browseRangeRef.current = next;
                 setBrowseRange(next);
               }

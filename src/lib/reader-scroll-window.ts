@@ -149,6 +149,25 @@ export function followBrowseRange(
  * changes length. Browsers clamp scrollTop as soon as those lines unmount,
  * so the correction has to start from the offset taken before the change.
  */
+/**
+ * Scroll offset that keeps the same line still when lines above it change
+ * height. The browser may already have clamped scrollTop, so the answer is
+ * the offset from before the change plus the height difference, and it is
+ * left alone when the page is already there.
+ */
+export function keptScrollTop(
+  before: { scrollTop: number; scrollHeight: number },
+  after: { scrollTop: number; scrollHeight: number },
+): number {
+  const delta = after.scrollHeight - before.scrollHeight;
+  const base = Number.isFinite(before.scrollTop) ? before.scrollTop : after.scrollTop;
+  const needed = Number.isFinite(delta) ? base + delta : base;
+  const next = Math.max(0, needed);
+  if (!Number.isFinite(next)) return Math.max(0, after.scrollTop);
+  if (Math.abs(after.scrollTop - next) <= 1) return after.scrollTop;
+  return next;
+}
+
 export function restoredScrollTop(
   scrollTopNow: number,
   anchor: { top: number; scrollTop: number },
