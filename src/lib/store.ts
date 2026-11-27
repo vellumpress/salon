@@ -236,6 +236,11 @@ type TbrState = {
     index: number,
     opts?: { crossedScene?: boolean; place?: BreathPlace },
   ) => void;
+  /**
+   * Scroll landed on `index`. Each sentence passed during an open sit counts
+   * once. A retreat, or the same sentence, does not.
+   */
+  noteScrolledBreath: (workId: string, index: number, place?: BreathPlace) => void;
   /** Drop the open-sentence anchor (hidden, overlay, leaving). No credit. */
   pauseActiveRead: (workId: string) => void;
   /** Arm the anchor again after a pause, during an open sit. No credit. */
@@ -432,6 +437,39 @@ type ClockSlice = {
 };
 
 type AdvanceOpts = { crossedScene?: boolean };
+
+/**
+ * Sentences a scroll passed during an open sit.
+ * The gap since the last sentence is credited once. Each sentence adds one
+ * advance. The same index, a retreat, or a page with no sit adds nothing.
+ */
+export function creditScrolledSentences(
+  state: ClockSlice,
+  workId: string,
+  toIndex: number,
+  now: number,
+): { slice: ClockSlice; credited: number } {
+  const current = state.progress[workId];
+  const from = current?.breathIndex ?? 0;
+  const to = Math.max(0, Math.floor(toIndex));
+  if (!current?.sittingStartedAt || !(to > from)) return { slice: state, credited: 0 };
+  let slice = state;
+  const steps = to - from;
+  for (let i = 0; i < steps; i += 1) {
+    slice = { ...slice, ...applyAdvance(slice, workId, now) };
+  }
+  const row = slice.progress[workId] ?? emptyProgress();
+  return {
+    credited: steps,
+    slice: {
+      ...slice,
+      progress: {
+        ...slice.progress,
+        [workId]: { ...row, breathIndex: to },
+      },
+    },
+  };
+}
 
 /**
  * Credit one forward advance into the day ledger and the open sit.
@@ -927,6 +965,44 @@ export const useTbr = create<TbrState>()(
                 ...row,
                 ...stamped(index, opts?.place),
                 sentenceAt: sentenceAtFor(current, index, opts?.place),
+              },
+            },
+          };
+        });
+        flushIfMoved(workId);
+      },
+      noteScrolledBreath: (workId, index, place) => {
+        if (!commitBreathWrite(workId, index, place?.breathId)) return;
+        set((state) => {
+          const now = Date.now();
+          const current = state.progress[workId] ?? emptyProgress();
+          const credited = creditScrolledSentences(state, workId, index, now);
+          if (credited.credited === 0) {
+            const clock = current.sittingStartedAt
+              ? noteResume(notePause(clockOf(current)), now)
+              : clockOf(current);
+            return {
+              progress: {
+                ...state.progress,
+                [workId]: {
+                  ...writeClock(current, clock),
+                  ...stamped(index, place),
+                  sentenceAt: sentenceAtFor(current, index, place),
+                  lastOpenedAt: now,
+                  entered: true,
+                },
+              },
+            };
+          }
+          const row = credited.slice.progress[workId] ?? emptyProgress();
+          return {
+            ...credited.slice,
+            progress: {
+              ...credited.slice.progress,
+              [workId]: {
+                ...row,
+                ...stamped(index, place),
+                sentenceAt: sentenceAtFor(current, index, place),
               },
             },
           };
