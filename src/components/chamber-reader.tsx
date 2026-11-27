@@ -125,8 +125,10 @@ import {
 } from "@/lib/reader-scroll-window";
 import { useCenterLine } from "@/lib/use-center-line";
 import { fingerScrollTop, isTopEdgeTap, textTapSteps } from "@/lib/move-by";
+import { FOCUS_MAX, FOCUS_MIN, FOCUS_STEP } from "@/lib/focus-band";
 import { TEXT_SIZE_MAX, TEXT_SIZE_MIN, TEXT_SIZE_STEP } from "@/lib/text-size";
 import { useMoveBy } from "@/lib/use-move-by";
+import { useFocus } from "@/lib/use-focus";
 import { useTextSize } from "@/lib/use-text-size";
 
 type Overlay =
@@ -344,6 +346,7 @@ export function TbrReader({
   const centerLine = useCenterLine();
   const centerOn = centerLine.enabled;
   const textSize = useTextSize();
+  const focus = useFocus();
   const moveBy = useMoveBy();
   const moveByRef = useRef(moveBy.mode);
   moveByRef.current = moveBy.mode;
@@ -3126,7 +3129,7 @@ export function TbrReader({
         {showPalimpsest ? <p className="palimpsest font-display">{palimpsest}</p> : null}
         {centerOn ? (
           <>
-            <div className="focus-fade">
+            <div className="focus-fade" ref={focus.hold}>
             <div ref={flowRef} className="focus-live">
               <div ref={trackRef} className="center-track">
                 <div
@@ -3430,6 +3433,26 @@ export function TbrReader({
                   <span className="text-size-mark text-size-mark-large" aria-hidden="true">
                     A
                   </span>
+                </span>
+              </div>
+              <div className="text-size-row focus-row">
+                <span id="reader-focus-label">Focus</span>
+                <span className="text-size-slider">
+                  <span className="focus-mark">Fewer lines</span>
+                  <input
+                    type="range"
+                    min={FOCUS_MIN}
+                    max={FOCUS_MAX}
+                    step={FOCUS_STEP}
+                    value={focus.value}
+                    aria-labelledby="reader-focus-label"
+                    onPointerDown={(event) => event.stopPropagation()}
+                    onChange={(event) => {
+                      event.stopPropagation();
+                      focus.setValue(Number(event.currentTarget.value));
+                    }}
+                  />
+                  <span className="focus-mark">More lines</span>
                 </span>
               </div>
               <div className="move-by-row">
