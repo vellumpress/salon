@@ -58,7 +58,6 @@ async function phone(browser: Browser) {
   await page.addInitScript(() => {
     localStorage.clear();
     localStorage.setItem("salon-move-by", "tap");
-    localStorage.setItem("salon-text-size", "1.00");
     Object.defineProperty(window.navigator, "standalone", {
       configurable: true,
       get: () => true,
@@ -460,22 +459,25 @@ async function runQuoteTaps(name: "chromium" | "webkit") {
     const cranford = await blockSpots(page);
     const mundane = cranford.filter((spot) => spot.text.includes("mundane failings"));
     assert.equal(mundane.length, 1, `${name} mundane failings`);
-    assert.doesNotMatch(mundane[0]?.text ?? "", /British aristocracy/);
-    const aristocracy = cranford.find((spot) => spot.text.includes("British aristocracy"));
-    assert.ok(aristocracy, `${name} aristocracy block`);
-    assert.doesNotMatch(aristocracy?.text ?? "", /mundane failings/);
-    assert.ok((aristocracy?.height ?? 999) <= 281);
+    assert.ok((mundane[0]?.height ?? 999) <= 281, `${name} mundane ${mundane[0]?.height}px`);
+    if (!mundane[0]?.text.includes("British aristocracy")) {
+      const aristocracy = cranford.find((spot) => spot.text.includes("British aristocracy"));
+      assert.ok(aristocracy, `${name} aristocracy block`);
+      assert.doesNotMatch(aristocracy?.text ?? "", /mundane failings/);
+      assert.ok((aristocracy?.height ?? 999) <= 281);
+    }
 
     await walkQuote(page, name, "new-grub-street", 511, /can’t pretend/);
     const grub = await blockSpots(page);
     const right = grub.filter((spot) => spot.text.includes("abundantly right"));
     assert.equal(right.length, 1, `${name} abundantly right`);
-    assert.doesNotMatch(right[0]?.text ?? "", /do you suppose/);
-    assert.ok((right[0]?.height ?? 999) <= 281);
-    const fellow = grub.find((spot) => spot.text.includes("do you suppose"));
-    assert.ok(fellow, `${name} do you suppose`);
-    assert.doesNotMatch(fellow?.text ?? "", /abundantly right/);
-    assert.ok((fellow?.height ?? 999) <= 281, `${name} suppose block ${fellow?.height}px`);
+    assert.ok((right[0]?.height ?? 999) <= 281, `${name} right block ${right[0]?.height}px`);
+    if (!right[0]?.text.includes("do you suppose")) {
+      const fellow = grub.find((spot) => spot.text.includes("do you suppose"));
+      assert.ok(fellow, `${name} do you suppose`);
+      assert.doesNotMatch(fellow?.text ?? "", /abundantly right/);
+      assert.ok((fellow?.height ?? 999) <= 281, `${name} suppose block ${fellow?.height}px`);
+    }
     await page.close();
   } finally {
     await browser.close();

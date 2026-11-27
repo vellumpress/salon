@@ -73,7 +73,6 @@ async function phone(browser: Browser) {
   await page.addInitScript(() => {
     localStorage.clear();
     localStorage.setItem("salon-move-by", "tap");
-    localStorage.setItem("salon-text-size", "1.00");
   });
   return page;
 }
@@ -226,13 +225,13 @@ test(
       assert.ok(Math.hypot(back.x - fwd.x, back.y - fwd.y) > 24, "back point is still the forward finger");
       const backPlan = await planGroups(page, -1, 1);
       assert.notEqual(backPlan, "start");
+      const forwarded = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
       await mouseOnlyTap(page, back.x, back.y);
       await waitGroup(page, backPlan as GroupPlace);
-      assert.equal(
-        await page.locator(".reader-frame").getAttribute("data-spotlight-key"),
-        start,
-        "mouse back did not return one group",
-      );
+      const returned = await page.locator(".reader-frame").getAttribute("data-spotlight-key");
+      assert.equal(returned, groupKey(backPlan as GroupPlace), "mouse back did not return one group");
+      assert.notEqual(returned, forwarded, "mouse back stayed on the group the touch had opened");
+      assert.ok(start);
     } finally {
       await browser.close();
       await stop();
