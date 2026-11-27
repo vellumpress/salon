@@ -122,7 +122,8 @@ test("pages safety strips index and 404 without touching hashed assets", () => {
   assert.match(sw, /cache:\s*"no-store"/);
   assert.match(sw, /cache\.put\(req\.url/);
   assert.match(sw, /cache\.match\(url\.href\)/);
-  assert.match(sw, /navigationPreload/);
+  assert.match(sw, /navigationPreload\.disable/);
+  assert.doesNotMatch(sw, /navigationPreload\.enable\(/);
   assert.match(sw, /tbr-assets/);
   assert.match(sw, /data-spa-pages-restore/);
   assert.match(sw, /String\.fromCharCode\(0\)/);

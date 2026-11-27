@@ -49,6 +49,7 @@ export const smokeFiles = [
   "src/lib/reader-scroll-stay.test.ts",
   "src/lib/fade-mask-steady.test.ts",
   "src/lib/reader-scroll-smooth.test.ts",
+  "src/lib/webkit-offline-harness.test.ts",
 ];
 
 /** Every TypeScript test, in the historical npm test order. */
@@ -191,6 +192,7 @@ export const allTsFiles = [
   "src/lib/reader-scroll-stay.test.ts",
   "src/lib/fade-mask-steady.test.ts",
   "src/lib/reader-scroll-smooth.test.ts",
+  "src/lib/webkit-offline-harness.test.ts",
 ];
 
 const smokeSet = new Set(smokeFiles);
