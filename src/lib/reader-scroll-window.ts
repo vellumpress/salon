@@ -55,6 +55,56 @@ export function growBrowseRange(
 }
 
 /**
+ * Lines drawn in one gulp. Enough to cover a fast flick, and short enough
+ * that a slow phone does not spend the whole frame on it.
+ */
+export const SCROLL_GULP = 8;
+
+/**
+ * Add a few lines on the side the reader is moving toward.
+ * It does not drop lines. Dropping and adding in the same breath moves the line.
+ */
+export function extendBrowseRange(
+  range: BreathRange,
+  count: number,
+  edges: ScrollEdges,
+  gulp: number,
+  direction: "forward" | "back",
+): BreathRange {
+  const last = Math.max(0, Math.floor(count));
+  let from = Math.max(0, Math.min(range.from, last));
+  let to = Math.max(from, Math.min(range.to, last));
+  if (!(edges.clientHeight > 0) || !(edges.scrollHeight > 0)) return range;
+  const lead = Number.isFinite(edges.lead) ? Math.max(0, edges.lead) : 0;
+  const add = Math.max(1, Math.floor(gulp));
+  const roomBelow = edges.scrollHeight - edges.scrollTop - edges.clientHeight;
+  const roomAbove = edges.scrollTop;
+  if (direction !== "back" && roomBelow < lead && to < last) to = Math.min(last, to + add);
+  else if (direction === "back" && roomAbove < lead && from > 0) from = Math.max(0, from - add);
+  if (from === range.from && to === range.to) return range;
+  return { from, to };
+}
+
+/**
+ * How many leading blocks fit inside `budget` pixels, and no more than `gulp`.
+ * The caller measures those blocks before removing them.
+ */
+export function prefixDropCount(heights: readonly number[], budget: number, gulp: number): number {
+  if (!(budget > 0)) return 0;
+  const cap = Math.max(0, Math.floor(gulp));
+  let used = 0;
+  let count = 0;
+  for (const height of heights) {
+    if (count >= cap) break;
+    if (!(height > 0)) continue;
+    if (used + height > budget) break;
+    used += height;
+    count += 1;
+  }
+  return count;
+}
+
+/**
  * Grow the side the reader is moving toward, and drop lines well behind
  * them. Pulling the other side back in the same breath puts the page in a
  * loop: drop the top, the scroll offset falls, and the page loads the top again.

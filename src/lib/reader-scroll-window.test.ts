@@ -1,6 +1,49 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { browseWindow, followBrowseRange, growBrowseRange, restoredScrollTop } from "./reader-scroll-window.ts";
+import {
+  browseWindow,
+  extendBrowseRange,
+  followBrowseRange,
+  growBrowseRange,
+  prefixDropCount,
+  restoredScrollTop,
+  SCROLL_GULP,
+} from "./reader-scroll-window.ts";
+
+test("a gulp adds a few lines on one side and does not drop the other", () => {
+  assert.equal(SCROLL_GULP, 8);
+  const forward = extendBrowseRange(
+    { from: 10, to: 40 },
+    200,
+    { scrollTop: 3000, scrollHeight: 3800, clientHeight: 800, lead: 1600 },
+    SCROLL_GULP,
+    "forward",
+  );
+  assert.deepEqual(forward, { from: 10, to: 48 });
+  const back = extendBrowseRange(
+    forward,
+    200,
+    { scrollTop: 40, scrollHeight: 5000, clientHeight: 800, lead: 1600 },
+    SCROLL_GULP,
+    "back",
+  );
+  assert.deepEqual(back, { from: 2, to: 48 });
+  const idle = extendBrowseRange(
+    forward,
+    200,
+    { scrollTop: 1000, scrollHeight: 8000, clientHeight: 800, lead: 1600 },
+    SCROLL_GULP,
+    "forward",
+  );
+  assert.equal(idle, forward);
+});
+
+test("lines already above the glass can be dropped only when they fit in that gap", () => {
+  assert.equal(prefixDropCount([100, 120, 80, 90], 250, 4), 2);
+  assert.equal(prefixDropCount([400, 100], 250, 4), 0);
+  assert.equal(prefixDropCount([40, 40, 40, 40, 40], 1000, 4), 4);
+  assert.equal(prefixDropCount([40], 0, 4), 0);
+});
 
 test("a settled page is the breaths around the sentence", () => {
   assert.deepEqual(browseWindow(50, 200, 24, 36), { from: 26, to: 87 });
