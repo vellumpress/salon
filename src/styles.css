@@ -2297,12 +2297,14 @@ html:has(.board-doors) body {
   overflow-y: auto;
 }
 
-/* One continuous page. The sharp band is fixed on the screen, from 43% to
-   73% of the viewport — about nine lines, where the approved still sat.
-   It does not follow the paragraph. Each line outward, above and below,
-   steps 90, 79, 70, 60, 50, 40, 30, 20, 10, then 8%. The text scrolls under
-   the mask. Masking the scroller itself makes iPhone Safari re-rasterize
-   the glyphs on every frame. */
+/* One continuous page. The sharp band is fixed on the screen. With nothing
+   saved it runs from 43% to 73% of the viewport — about nine lines, where
+   the approved still sat. It does not follow the paragraph. Each line
+   outward, above and below, steps 90, 79, 70, 60, 50, 40, 30, 20, 10, then
+   8%. Focus can shorten that band to a few lines, or widen it until only a
+   short fade remains at the edges. The text scrolls under the mask.
+   Masking the scroller itself makes iPhone Safari re-rasterize the glyphs
+   on every frame. */
 .focus-fade {
   position: absolute;
   z-index: 1;
@@ -2311,92 +2313,93 @@ html:has(.board-doors) body {
   pointer-events: none;
   --focus-ink-top: 43%;
   --focus-ink-bottom: 73%;
+  --focus-ramp: 1;
   -webkit-mask-image: linear-gradient(
     to bottom,
     rgb(0 0 0 / 8%) 0,
-    rgb(0 0 0 / 8%) calc(var(--focus-ink-top) - 9 * var(--focus-line)),
-    rgb(0 0 0 / 10%) calc(var(--focus-ink-top) - 9 * var(--focus-line)),
-    rgb(0 0 0 / 10%) calc(var(--focus-ink-top) - 8 * var(--focus-line)),
-    rgb(0 0 0 / 20%) calc(var(--focus-ink-top) - 8 * var(--focus-line)),
-    rgb(0 0 0 / 20%) calc(var(--focus-ink-top) - 7 * var(--focus-line)),
-    rgb(0 0 0 / 30%) calc(var(--focus-ink-top) - 7 * var(--focus-line)),
-    rgb(0 0 0 / 30%) calc(var(--focus-ink-top) - 6 * var(--focus-line)),
-    rgb(0 0 0 / 40%) calc(var(--focus-ink-top) - 6 * var(--focus-line)),
-    rgb(0 0 0 / 40%) calc(var(--focus-ink-top) - 5 * var(--focus-line)),
-    rgb(0 0 0 / 50%) calc(var(--focus-ink-top) - 5 * var(--focus-line)),
-    rgb(0 0 0 / 50%) calc(var(--focus-ink-top) - 4 * var(--focus-line)),
-    rgb(0 0 0 / 60%) calc(var(--focus-ink-top) - 4 * var(--focus-line)),
-    rgb(0 0 0 / 60%) calc(var(--focus-ink-top) - 3 * var(--focus-line)),
-    rgb(0 0 0 / 70%) calc(var(--focus-ink-top) - 3 * var(--focus-line)),
-    rgb(0 0 0 / 70%) calc(var(--focus-ink-top) - 2 * var(--focus-line)),
-    rgb(0 0 0 / 79%) calc(var(--focus-ink-top) - 2 * var(--focus-line)),
-    rgb(0 0 0 / 79%) calc(var(--focus-ink-top) - 1 * var(--focus-line)),
-    rgb(0 0 0 / 90%) calc(var(--focus-ink-top) - 1 * var(--focus-line)),
+    rgb(0 0 0 / 8%) calc(var(--focus-ink-top) - 9 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 10%) calc(var(--focus-ink-top) - 9 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 10%) calc(var(--focus-ink-top) - 8 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 20%) calc(var(--focus-ink-top) - 8 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 20%) calc(var(--focus-ink-top) - 7 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 30%) calc(var(--focus-ink-top) - 7 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 30%) calc(var(--focus-ink-top) - 6 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 40%) calc(var(--focus-ink-top) - 6 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 40%) calc(var(--focus-ink-top) - 5 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 50%) calc(var(--focus-ink-top) - 5 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 50%) calc(var(--focus-ink-top) - 4 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 60%) calc(var(--focus-ink-top) - 4 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 60%) calc(var(--focus-ink-top) - 3 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 70%) calc(var(--focus-ink-top) - 3 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 70%) calc(var(--focus-ink-top) - 2 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 79%) calc(var(--focus-ink-top) - 2 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 79%) calc(var(--focus-ink-top) - 1 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 90%) calc(var(--focus-ink-top) - 1 * var(--focus-line) * var(--focus-ramp)),
     #000 var(--focus-ink-top),
     #000 var(--focus-ink-bottom),
     rgb(0 0 0 / 90%) var(--focus-ink-bottom),
-    rgb(0 0 0 / 90%) calc(var(--focus-ink-bottom) + 1 * var(--focus-line)),
-    rgb(0 0 0 / 79%) calc(var(--focus-ink-bottom) + 1 * var(--focus-line)),
-    rgb(0 0 0 / 79%) calc(var(--focus-ink-bottom) + 2 * var(--focus-line)),
-    rgb(0 0 0 / 70%) calc(var(--focus-ink-bottom) + 2 * var(--focus-line)),
-    rgb(0 0 0 / 70%) calc(var(--focus-ink-bottom) + 3 * var(--focus-line)),
-    rgb(0 0 0 / 60%) calc(var(--focus-ink-bottom) + 3 * var(--focus-line)),
-    rgb(0 0 0 / 60%) calc(var(--focus-ink-bottom) + 4 * var(--focus-line)),
-    rgb(0 0 0 / 50%) calc(var(--focus-ink-bottom) + 4 * var(--focus-line)),
-    rgb(0 0 0 / 50%) calc(var(--focus-ink-bottom) + 5 * var(--focus-line)),
-    rgb(0 0 0 / 40%) calc(var(--focus-ink-bottom) + 5 * var(--focus-line)),
-    rgb(0 0 0 / 40%) calc(var(--focus-ink-bottom) + 6 * var(--focus-line)),
-    rgb(0 0 0 / 30%) calc(var(--focus-ink-bottom) + 6 * var(--focus-line)),
-    rgb(0 0 0 / 30%) calc(var(--focus-ink-bottom) + 7 * var(--focus-line)),
-    rgb(0 0 0 / 20%) calc(var(--focus-ink-bottom) + 7 * var(--focus-line)),
-    rgb(0 0 0 / 20%) calc(var(--focus-ink-bottom) + 8 * var(--focus-line)),
-    rgb(0 0 0 / 10%) calc(var(--focus-ink-bottom) + 8 * var(--focus-line)),
-    rgb(0 0 0 / 10%) calc(var(--focus-ink-bottom) + 9 * var(--focus-line)),
-    rgb(0 0 0 / 8%) calc(var(--focus-ink-bottom) + 9 * var(--focus-line)),
+    rgb(0 0 0 / 90%) calc(var(--focus-ink-bottom) + 1 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 79%) calc(var(--focus-ink-bottom) + 1 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 79%) calc(var(--focus-ink-bottom) + 2 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 70%) calc(var(--focus-ink-bottom) + 2 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 70%) calc(var(--focus-ink-bottom) + 3 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 60%) calc(var(--focus-ink-bottom) + 3 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 60%) calc(var(--focus-ink-bottom) + 4 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 50%) calc(var(--focus-ink-bottom) + 4 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 50%) calc(var(--focus-ink-bottom) + 5 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 40%) calc(var(--focus-ink-bottom) + 5 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 40%) calc(var(--focus-ink-bottom) + 6 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 30%) calc(var(--focus-ink-bottom) + 6 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 30%) calc(var(--focus-ink-bottom) + 7 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 20%) calc(var(--focus-ink-bottom) + 7 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 20%) calc(var(--focus-ink-bottom) + 8 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 10%) calc(var(--focus-ink-bottom) + 8 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 10%) calc(var(--focus-ink-bottom) + 9 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 8%) calc(var(--focus-ink-bottom) + 9 * var(--focus-line) * var(--focus-ramp)),
     rgb(0 0 0 / 8%) 100%
   );
   mask-image: linear-gradient(
     to bottom,
     rgb(0 0 0 / 8%) 0,
-    rgb(0 0 0 / 8%) calc(var(--focus-ink-top) - 9 * var(--focus-line)),
-    rgb(0 0 0 / 10%) calc(var(--focus-ink-top) - 9 * var(--focus-line)),
-    rgb(0 0 0 / 10%) calc(var(--focus-ink-top) - 8 * var(--focus-line)),
-    rgb(0 0 0 / 20%) calc(var(--focus-ink-top) - 8 * var(--focus-line)),
-    rgb(0 0 0 / 20%) calc(var(--focus-ink-top) - 7 * var(--focus-line)),
-    rgb(0 0 0 / 30%) calc(var(--focus-ink-top) - 7 * var(--focus-line)),
-    rgb(0 0 0 / 30%) calc(var(--focus-ink-top) - 6 * var(--focus-line)),
-    rgb(0 0 0 / 40%) calc(var(--focus-ink-top) - 6 * var(--focus-line)),
-    rgb(0 0 0 / 40%) calc(var(--focus-ink-top) - 5 * var(--focus-line)),
-    rgb(0 0 0 / 50%) calc(var(--focus-ink-top) - 5 * var(--focus-line)),
-    rgb(0 0 0 / 50%) calc(var(--focus-ink-top) - 4 * var(--focus-line)),
-    rgb(0 0 0 / 60%) calc(var(--focus-ink-top) - 4 * var(--focus-line)),
-    rgb(0 0 0 / 60%) calc(var(--focus-ink-top) - 3 * var(--focus-line)),
-    rgb(0 0 0 / 70%) calc(var(--focus-ink-top) - 3 * var(--focus-line)),
-    rgb(0 0 0 / 70%) calc(var(--focus-ink-top) - 2 * var(--focus-line)),
-    rgb(0 0 0 / 79%) calc(var(--focus-ink-top) - 2 * var(--focus-line)),
-    rgb(0 0 0 / 79%) calc(var(--focus-ink-top) - 1 * var(--focus-line)),
-    rgb(0 0 0 / 90%) calc(var(--focus-ink-top) - 1 * var(--focus-line)),
+    rgb(0 0 0 / 8%) calc(var(--focus-ink-top) - 9 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 10%) calc(var(--focus-ink-top) - 9 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 10%) calc(var(--focus-ink-top) - 8 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 20%) calc(var(--focus-ink-top) - 8 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 20%) calc(var(--focus-ink-top) - 7 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 30%) calc(var(--focus-ink-top) - 7 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 30%) calc(var(--focus-ink-top) - 6 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 40%) calc(var(--focus-ink-top) - 6 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 40%) calc(var(--focus-ink-top) - 5 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 50%) calc(var(--focus-ink-top) - 5 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 50%) calc(var(--focus-ink-top) - 4 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 60%) calc(var(--focus-ink-top) - 4 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 60%) calc(var(--focus-ink-top) - 3 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 70%) calc(var(--focus-ink-top) - 3 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 70%) calc(var(--focus-ink-top) - 2 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 79%) calc(var(--focus-ink-top) - 2 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 79%) calc(var(--focus-ink-top) - 1 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 90%) calc(var(--focus-ink-top) - 1 * var(--focus-line) * var(--focus-ramp)),
     #000 var(--focus-ink-top),
     #000 var(--focus-ink-bottom),
     rgb(0 0 0 / 90%) var(--focus-ink-bottom),
-    rgb(0 0 0 / 90%) calc(var(--focus-ink-bottom) + 1 * var(--focus-line)),
-    rgb(0 0 0 / 79%) calc(var(--focus-ink-bottom) + 1 * var(--focus-line)),
-    rgb(0 0 0 / 79%) calc(var(--focus-ink-bottom) + 2 * var(--focus-line)),
-    rgb(0 0 0 / 70%) calc(var(--focus-ink-bottom) + 2 * var(--focus-line)),
-    rgb(0 0 0 / 70%) calc(var(--focus-ink-bottom) + 3 * var(--focus-line)),
-    rgb(0 0 0 / 60%) calc(var(--focus-ink-bottom) + 3 * var(--focus-line)),
-    rgb(0 0 0 / 60%) calc(var(--focus-ink-bottom) + 4 * var(--focus-line)),
-    rgb(0 0 0 / 50%) calc(var(--focus-ink-bottom) + 4 * var(--focus-line)),
-    rgb(0 0 0 / 50%) calc(var(--focus-ink-bottom) + 5 * var(--focus-line)),
-    rgb(0 0 0 / 40%) calc(var(--focus-ink-bottom) + 5 * var(--focus-line)),
-    rgb(0 0 0 / 40%) calc(var(--focus-ink-bottom) + 6 * var(--focus-line)),
-    rgb(0 0 0 / 30%) calc(var(--focus-ink-bottom) + 6 * var(--focus-line)),
-    rgb(0 0 0 / 30%) calc(var(--focus-ink-bottom) + 7 * var(--focus-line)),
-    rgb(0 0 0 / 20%) calc(var(--focus-ink-bottom) + 7 * var(--focus-line)),
-    rgb(0 0 0 / 20%) calc(var(--focus-ink-bottom) + 8 * var(--focus-line)),
-    rgb(0 0 0 / 10%) calc(var(--focus-ink-bottom) + 8 * var(--focus-line)),
-    rgb(0 0 0 / 10%) calc(var(--focus-ink-bottom) + 9 * var(--focus-line)),
-    rgb(0 0 0 / 8%) calc(var(--focus-ink-bottom) + 9 * var(--focus-line)),
+    rgb(0 0 0 / 90%) calc(var(--focus-ink-bottom) + 1 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 79%) calc(var(--focus-ink-bottom) + 1 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 79%) calc(var(--focus-ink-bottom) + 2 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 70%) calc(var(--focus-ink-bottom) + 2 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 70%) calc(var(--focus-ink-bottom) + 3 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 60%) calc(var(--focus-ink-bottom) + 3 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 60%) calc(var(--focus-ink-bottom) + 4 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 50%) calc(var(--focus-ink-bottom) + 4 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 50%) calc(var(--focus-ink-bottom) + 5 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 40%) calc(var(--focus-ink-bottom) + 5 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 40%) calc(var(--focus-ink-bottom) + 6 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 30%) calc(var(--focus-ink-bottom) + 6 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 30%) calc(var(--focus-ink-bottom) + 7 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 20%) calc(var(--focus-ink-bottom) + 7 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 20%) calc(var(--focus-ink-bottom) + 8 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 10%) calc(var(--focus-ink-bottom) + 8 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 10%) calc(var(--focus-ink-bottom) + 9 * var(--focus-line) * var(--focus-ramp)),
+    rgb(0 0 0 / 8%) calc(var(--focus-ink-bottom) + 9 * var(--focus-line) * var(--focus-ramp)),
     rgb(0 0 0 / 8%) 100%
   );
   -webkit-mask-size: 100% 100%;
@@ -4151,6 +4154,7 @@ html.together-compose .chat-field {
 }
 
 .reader-daylight .text-size-row,
+.reader-daylight .focus-row,
 .reader-daylight .move-by-row {
   color: var(--reader-ink);
 }
@@ -4577,6 +4581,7 @@ html.together-compose.together-kb .reader-daylight .chat-field {
 
 .reader-daylight .daylight-switch,
 .reader-daylight .text-size-row,
+.reader-daylight .focus-row,
 .reader-daylight .move-by-row {
   border-top-color: var(--reader-rule);
 }
@@ -4665,6 +4670,22 @@ html.together-compose.together-kb .reader-daylight .chat-field {
   border: 0;
   border-radius: 0;
   background: currentColor;
+}
+
+.focus-row {
+  flex-wrap: wrap;
+}
+
+.focus-mark {
+  flex: none;
+  max-width: 4.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: none;
 }
 
 .move-by-row {
