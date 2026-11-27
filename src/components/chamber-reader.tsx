@@ -103,6 +103,7 @@ import {
   upcomingBreaths,
 } from "@/lib/center-line";
 import {
+  armedScrollTop,
   classifyTurnGesture,
   coastFromSamples,
   GHOST_MOUSE_MS,
@@ -113,6 +114,7 @@ import {
   TAP_SLOP_PX,
   turnZone,
 } from "@/lib/reader-turn";
+import { browseWindow, followBrowseRange, restoredScrollTop, type BreathRange } from "@/lib/reader-scroll-window";
 import { useCenterLine } from "@/lib/use-center-line";
 import { fingerScrollTop, isTopEdgeTap, textTapSteps } from "@/lib/move-by";
 import { TEXT_SIZE_MAX, TEXT_SIZE_MIN, TEXT_SIZE_STEP } from "@/lib/text-size";
@@ -293,6 +295,10 @@ export function TbrReader({
   const [passingLabel, setPassingLabel] = useState<string | null>(null);
   const [browsing, setBrowsing] = useState(false);
   const browsingRef = useRef(false);
+  const [browseRange, setBrowseRange] = useState<BreathRange | null>(null);
+  const browseRangeRef = useRef<BreathRange | null>(null);
+  const scrollDirectionRef = useRef<"forward" | "back">("forward");
+  const lastScrollTopRef = useRef(0);
   const still = bar.still;
   const navReveal = bar.navReveal;
   const [overflows, setOverflows] = useState(false);
@@ -412,7 +418,7 @@ export function TbrReader({
   /** A finger or wheel scroll owns the column. Taps clear it and recenter. */
   const userScrolledRef = useRef(false);
   /** Breath the finger had under the focus line, so a chapter cross does not jump. */
-  const scrollAnchorRef = useRef<{ sentence: number; top: number } | null>(null);
+  const scrollAnchorRef = useRef<{ sentence: number; top: number; scrollTop: number } | null>(null);
   const placeTokenRef = useRef(0);
   /** The next place() is a text-size change and must settle after reflow. */
   const resizeAnchorRef = useRef(false);
@@ -809,10 +815,9 @@ export function TbrReader({
   );
   const browseSlice = useMemo(() => {
     if (!browsing) return [];
-    const from = Math.max(0, index - LOOKBACK);
-    const to = Math.min(work.breaths.length, index + 1 + AHEAD);
-    return work.breaths.slice(from, to);
-  }, [browsing, index, work]);
+    const range = browseRange ?? browseWindow(index, work.breaths.length, LOOKBACK, AHEAD);
+    return work.breaths.slice(range.from, range.to);
+  }, [browsing, browseRange, index, work]);
   const displayTexts = useMemo(() => {
     const list: string[] = [];
     if (breath) list.push(breath.text);
@@ -928,7 +933,9 @@ export function TbrReader({
     userScrolledRef.current = false;
     scrollAnchorRef.current = null;
     browsingRef.current = false;
+    browseRangeRef.current = null;
     setBrowsing(false);
+    setBrowseRange(null);
     placeTokenRef.current += 1;
     markUserPlace(next, sentence);
     const at = liveIndex();
@@ -973,7 +980,9 @@ export function TbrReader({
     if (overlayRef.current !== "none") return;
     scrollAnchorRef.current = null;
     browsingRef.current = false;
+    browseRangeRef.current = null;
     setBrowsing(false);
+    setBrowseRange(null);
     setPassingLabel(null);
     const frameRaw = Number(
       turnHostRef.current?.closest(".reader-frame")?.getAttribute("data-breath-index"),
@@ -1575,7 +1584,9 @@ export function TbrReader({
     if (moveBy.mode !== "tap") return;
     userScrolledRef.current = false;
     browsingRef.current = false;
+    browseRangeRef.current = null;
     setBrowsing(false);
+    setBrowseRange(null);
     placeTokenRef.current += 1;
     resizeAnchorRef.current = true;
     let delta = stickSentenceRef.current();
@@ -1583,6 +1594,41 @@ export function TbrReader({
       delta = stickSentenceRef.current();
     }
   }, [moveBy.mode]);
+
+  const paintSnapRef = useRef<{ from: number; to: number; height: number; index: number } | null>(null);
+  useLayoutEffect(() => {
+    const flow = flowRef.current;
+    if (!browsing || !browseRange || !flow) {
+      paintSnapRef.current = null;
+      return;
+    }
+    const prev = paintSnapRef.current;
+    const fromChanged = Boolean(prev && prev.from !== browseRange.from);
+    // Lines added or removed above the glass move every offset. Appending
+    // below does not, and must not pull the page back to an older scroll.
+    if (fromChanged) {
+      const anchor = scrollAnchorRef.current;
+      const node =
+        anchor && flow.querySelector<HTMLElement>(`[data-sentence="${anchor.sentence}"]`);
+      if (anchor && node) {
+        const flowTop = flow.getBoundingClientRect().top;
+        const offsetNow = node.getBoundingClientRect().top - flowTop + flow.scrollTop;
+        const nextTop = restoredScrollTop(flow.scrollTop, anchor, offsetNow);
+        if (Math.abs(flow.scrollTop - nextTop) > 1) {
+          const before = flow.scrollTop;
+          scrollIgnoreUntilRef.current = performance.now() + 180;
+          scrollLockRef.current = true;
+          flow.scrollTop = nextTop;
+          lastScrollTopRef.current = nextTop;
+          if (gestureRef.current) gestureRef.current.scrollTop += nextTop - before;
+          anchoredScrollRef.current = nextTop;
+          scrollLockRef.current = false;
+        }
+      }
+      scrollAnchorRef.current = null;
+    }
+    paintSnapRef.current = { from: browseRange.from, to: browseRange.to, height: flow.scrollHeight, index };
+  }, [browsing, browseRange, index]);
 
   useLayoutEffect(() => {
     const slot = breathSlotRef.current;
@@ -1724,12 +1770,11 @@ export function TbrReader({
           const node = flowNow.querySelector<HTMLElement>(`[data-sentence="${pending.sentence}"]`);
           if (node) {
             const flowTop = flowNow.getBoundingClientRect().top;
-            const now = node.getBoundingClientRect().top - flowTop + flowNow.scrollTop;
-            const delta = now - pending.top;
-            if (Math.abs(delta) > 1) {
+            const offsetNow = node.getBoundingClientRect().top - flowTop + flowNow.scrollTop;
+            const nextTop = restoredScrollTop(flowNow.scrollTop, pending, offsetNow);
+            if (Math.abs(flowNow.scrollTop - nextTop) > 1) {
               scrollIgnoreUntilRef.current = performance.now() + 180;
               scrollLockRef.current = true;
-              const nextTop = Math.max(0, flowNow.scrollTop + delta);
               anchoredScrollRef.current = nextTop;
               flowNow.scrollTop = nextTop;
               scrollLockRef.current = false;
@@ -1858,12 +1903,11 @@ export function TbrReader({
           const node = flow.querySelector<HTMLElement>(`[data-sentence="${pending.sentence}"]`);
           if (node) {
             const flowTop = flow.getBoundingClientRect().top;
-            const now = node.getBoundingClientRect().top - flowTop + flow.scrollTop;
-            const delta = now - pending.top;
-            if (Math.abs(delta) > 1) {
+            const offsetNow = node.getBoundingClientRect().top - flowTop + flow.scrollTop;
+            const nextTop = restoredScrollTop(flow.scrollTop, pending, offsetNow);
+            if (Math.abs(flow.scrollTop - nextTop) > 1) {
               scrollIgnoreUntilRef.current = performance.now() + 180;
               scrollLockRef.current = true;
-              const nextTop = Math.max(0, flow.scrollTop + delta);
               anchoredScrollRef.current = nextTop;
               flow.scrollTop = nextTop;
               scrollLockRef.current = false;
@@ -1952,18 +1996,69 @@ export function TbrReader({
         // gap used to recenter the sentence the finger had just left.
         userScrolledRef.current = true;
         noteScrollMotion(top);
+        if (top < lastScrollTopRef.current - 1) scrollDirectionRef.current = "back";
+        else if (top > lastScrollTopRef.current + 1) scrollDirectionRef.current = "forward";
+        lastScrollTopRef.current = top;
         if (!browsingRef.current && moveByRef.current === "scroll") {
           const held = flow.querySelector<HTMLElement>(".breath-now, [data-sentence]");
+          const stored = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
           if (held) {
             const flowTop = flow.getBoundingClientRect().top;
             const sentence = Number(held.getAttribute("data-sentence"));
             scrollAnchorRef.current = {
-              sentence: Number.isFinite(sentence) ? sentence : (useTbr.getState().progress[work.id]?.breathIndex ?? 0),
+              sentence: Number.isFinite(sentence) ? sentence : stored,
               top: held.getBoundingClientRect().top - flowTop + flow.scrollTop,
+              scrollTop: flow.scrollTop,
             };
           }
+          const range = browseWindow(
+            Number.isFinite(stored) ? stored : 0,
+            work.breaths.length,
+            LOOKBACK,
+            AHEAD,
+          );
+          browseRangeRef.current = range;
+          setBrowseRange(range);
           browsingRef.current = true;
           setBrowsing(true);
+        }
+        if (browsingRef.current && moveByRef.current === "scroll") {
+          const current = browseRangeRef.current;
+          if (current) {
+            const nextRange = followBrowseRange(
+              current,
+              work.breaths.length,
+              {
+                scrollTop: flow.scrollTop,
+                scrollHeight: flow.scrollHeight,
+                clientHeight: flow.clientHeight,
+                lead: Math.max(flow.clientHeight * 2, 900),
+              },
+              AHEAD,
+              scrollDirectionRef.current,
+            );
+            if (nextRange !== current) {
+              let kept: HTMLElement | null = null;
+              for (const node of flow.querySelectorAll<HTMLElement>("[data-sentence]")) {
+                const sentence = Number(node.getAttribute("data-sentence"));
+                if (Number.isFinite(sentence) && sentence >= nextRange.from) {
+                  kept = node;
+                  break;
+                }
+              }
+              if (kept && nextRange.from !== current.from) {
+                const flowTop = flow.getBoundingClientRect().top;
+                const sentence = Number(kept.getAttribute("data-sentence"));
+                scrollAnchorRef.current = {
+                  sentence,
+                  top: kept.getBoundingClientRect().top - flowTop + flow.scrollTop,
+                  scrollTop: flow.scrollTop,
+                };
+              }
+              browseRangeRef.current = nextRange;
+              setBrowseRange(nextRange);
+            }
+          }
         }
       }
       if (!userMoved) return;
@@ -1997,11 +2092,19 @@ export function TbrReader({
         if (moveByRef.current === "tap") return;
         const nodes = [...flow.querySelectorAll<HTMLElement>("[data-sentence]")];
         let best: HTMLElement | null = null;
+        let nearest: HTMLElement | null = null;
+        let closest = Infinity;
         for (const node of nodes) {
           const rect = node.getBoundingClientRect();
           if (rect.height < 2) continue;
           if (rect.top <= mid && rect.bottom >= mid) best = node;
+          const dist = Math.abs((rect.top + rect.bottom) / 2 - mid);
+          if (dist < closest) {
+            closest = dist;
+            nearest = node;
+          }
         }
+        if (!best) best = nearest;
         const current = useTbr.getState().progress[work.id]?.breathIndex ?? 0;
         let next = Number(best?.getAttribute("data-sentence"));
         const roomBelow = flow.scrollHeight - flow.scrollTop - flow.clientHeight;
@@ -2025,17 +2128,9 @@ export function TbrReader({
           if (first < current) next = first;
         }
         if (!Number.isFinite(next) || next === current) return;
-        const anchorNode =
-          flow.querySelector<HTMLElement>(`[data-sentence="${next}"]`) ?? best;
-        if (anchorNode) {
-          const flowTop = flow.getBoundingClientRect().top;
-          scrollAnchorRef.current = {
-            sentence: next,
-            top: anchorNode.getBoundingClientRect().top - flowTop + flow.scrollTop,
-          };
-        }
         // Note the new line first. A chapter jump or a tap owns the old
         // one, and the store will otherwise refuse to leave it.
+        // The painted page stays as it is. Re-centering it here jumped the line.
         userScrolledRef.current = true;
         markUserPlace(next, 0, 0);
         useTbr.getState().setBreath(work.id, next, stampAt(work, next));
@@ -2744,7 +2839,7 @@ export function TbrReader({
     if (!start.scrolled) {
       if (Math.abs(dy) < SCROLL_ARM_PX || Math.abs(dy) < Math.abs(dx)) return;
       start.scrolled = true;
-      start.scrollTop = flow.scrollTop;
+      start.scrollTop = armedScrollTop(flow.scrollTop, e.clientY, start.y);
       cancelAnimationFrame(flingRef.current);
     }
     const now = performance.now();
@@ -2926,7 +3021,11 @@ export function TbrReader({
             <div className="focus-fade">
             <div ref={flowRef} className="focus-live">
               <div ref={trackRef} className="center-track">
-                <div className="center-pad center-pad-top" aria-hidden />
+                <div
+                  className="center-pad center-pad-top"
+                  style={browsing && (browseRange?.from ?? 0) > 0 ? { height: 0 } : undefined}
+                  aria-hidden
+                />
                 <div className="center-lines">
                   {browsing ? (
                     <>
@@ -2953,7 +3052,15 @@ export function TbrReader({
                     </>
                   )}
                 </div>
-                <div className="center-pad center-pad-bottom" aria-hidden />
+                <div
+                  className="center-pad center-pad-bottom"
+                  style={
+                    browsing && (browseRange?.to ?? work.breaths.length) < work.breaths.length
+                      ? { height: 0 }
+                      : undefined
+                  }
+                  aria-hidden
+                />
               </div>
             </div>
             </div>

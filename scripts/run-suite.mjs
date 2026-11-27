@@ -125,6 +125,7 @@ export const allTsFiles = [
   "src/lib/chapter-flow.test.ts",
   "src/lib/wash-seam.test.ts",
   "src/lib/reader-turn.test.ts",
+  "src/lib/reader-scroll-window.test.ts",
   "src/lib/reader-hold.test.ts",
   "src/lib/status-bar-color.test.ts",
   "src/lib/bottom-edge.test.ts",

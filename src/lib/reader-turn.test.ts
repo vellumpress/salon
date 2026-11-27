@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  armedScrollTop,
   breathPageTop,
   classifyTurnGesture,
   coastFromSamples,
@@ -13,6 +14,12 @@ import {
 } from "./reader-turn.ts";
 
 const host = { left: 0, top: 49, right: 390, bottom: 844, width: 390 };
+
+test("arming a drag does not apply the distance the finger already moved", () => {
+  assert.equal(armedScrollTop(500, 400, 370), 530);
+  assert.equal(530 - (400 - 370), 500);
+  assert.equal(armedScrollTop(500, Number.NaN, 370), 500);
+});
 
 test("the left third goes back at every height", () => {
   const focusTop = 520;
