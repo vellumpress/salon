@@ -178,7 +178,7 @@ async function checkReader(page: Page, label: string) {
   assert.ok(initial.now && initial.now.height > 80, `${label} sharp band missing`);
   assert.ok(initial.font > 12, `${label} breath has no size`);
   assert.match(initial.family, /Cormorant Garamond/);
-  assert.equal(initial.size, "1.00", `${label} did not open at the current size`);
+  assert.equal(initial.size, "0.90", `${label} did not open at the current size`);
   assert.ok(initial.progress != null, `${label} progress bar missing`);
 
   await openSheet(page);

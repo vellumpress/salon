@@ -91,6 +91,7 @@ async function phonePage(browser: Browser, viewport = PHONE_VIEW) {
   await page.addInitScript(() => {
     localStorage.clear();
     localStorage.setItem("salon-move-by", "tap");
+    localStorage.setItem("salon-text-size", "1.00");
   });
   return page;
 }

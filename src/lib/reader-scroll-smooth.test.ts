@@ -47,6 +47,7 @@ async function openSoil(page: Page) {
     sessionStorage.setItem("smooth-booted", "1");
     localStorage.clear();
     localStorage.setItem("salon-move-by", "scroll");
+    localStorage.setItem("salon-text-size", "1.00");
   });
   let last: unknown;
   for (let attempt = 0; attempt < 3; attempt += 1) {
@@ -201,6 +202,7 @@ test(
         await page.addInitScript(() => {
           localStorage.clear();
           localStorage.setItem("salon-move-by", "scroll");
+          localStorage.setItem("salon-text-size", "1.00");
         });
         await page.goto(`${ORIGIN}/salon/read/the-house-of-mirth`, { waitUntil: "domcontentloaded" });
         await page.locator(".veil, .breath-now").first().waitFor({ timeout: 30_000 });

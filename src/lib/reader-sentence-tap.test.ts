@@ -58,6 +58,7 @@ async function phone(browser: Browser) {
   await page.addInitScript(() => {
     localStorage.clear();
     localStorage.setItem("salon-move-by", "tap");
+    localStorage.setItem("salon-text-size", "1.00");
     Object.defineProperty(window.navigator, "standalone", {
       configurable: true,
       get: () => true,
