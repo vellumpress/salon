@@ -863,20 +863,49 @@ async function runPdfMatrix(name: EngineName) {
     assert.ok(tall.scrollTop < 4, `${tag} long pdf breath was not at the start`);
     let place = await readSentence(again);
     const seenWindows = new Set([place.key]);
+    let stop = "guard";
     for (let guard = 0; place.index === found && guard < 140; guard += 1) {
       const next = await planGroups(again, 1, 1);
-      if (next === "end" || next === "start") break;
+      if (next === "end" || next === "start") {
+        stop = String(next);
+        break;
+      }
       await tapIndex(again, forwardPoint(await column(again)), next.index, `${tag} pdf window ${guard}`);
       place = await readSentence(again);
       assert.ok(!seenWindows.has(place.key), `${tag} pdf window ${guard} did not move`);
       seenWindows.add(place.key);
     }
-    assert.notEqual(place.index, found, `${tag} pdf never left the long sentence`);
-    assert.ok((await column(again)).scrollTop < 4, `${tag} pdf next group opened partway`);
-    await tapIndex(again, backPoint(await column(again)), place.index - 1, `${tag} pdf back onto a tall paragraph`);
-    const returned = await readSentence(again);
-    assert.equal(returned.index, found, `${tag} pdf back skipped the long sentence`);
-    assert.ok((await column(again)).scrollTop < 4, `${tag} pdf back stopped partway through the paragraph`);
+    const followed = await again.evaluate(() =>
+      [...document.querySelectorAll("[data-focus-sentence]")].some((node) =>
+        (node.textContent ?? "").includes("follows the long one"),
+      ),
+    );
+    assert.ok((await column(again)).scrollTop < 4, `${tag} pdf window opened partway`);
+    assert.ok((await focusHeight(again)) <= 281, `${tag} pdf last window is taller than a third`);
+    if (place.index === found) {
+      // At 0.90 the short sentence after the paragraph fits in the last window.
+      assert.ok(followed, `${tag} the sentence after the long paragraph never came up`);
+      assert.equal(stop, "end", `${tag} a window after the last sentence was still waiting`);
+      assert.ok(seenWindows.size > 2, `${tag} the long sentence was not walked in windows`);
+      const planned = await planGroups(again, -1, 1);
+      assert.notEqual(planned, "start", `${tag} back from the last window walked off the pdf`);
+      assert.notEqual(planned, "end", `${tag} back from the last window walked off the pdf`);
+      const back = planned as GroupPlace;
+      assert.equal(back.index, found, `${tag} back left the long sentence`);
+      assert.ok(back.window < place.window, `${tag} back stayed on the last window`);
+      const spot = backPoint(await column(again));
+      await again.touchscreen.tap(spot.x, spot.y);
+      await waitGroup(again, back);
+      const returned = await readSentence(again);
+      assert.equal(returned.key, groupKey(back), `${tag} pdf back skipped a window of the long sentence`);
+      assert.ok((await column(again)).scrollTop < 4, `${tag} pdf back stopped partway through the paragraph`);
+    } else {
+      assert.ok((await column(again)).scrollTop < 4, `${tag} pdf next group opened partway`);
+      await tapIndex(again, backPoint(await column(again)), place.index - 1, `${tag} pdf back onto a tall paragraph`);
+      const returned = await readSentence(again);
+      assert.equal(returned.index, found, `${tag} pdf back skipped the long sentence`);
+      assert.ok((await column(again)).scrollTop < 4, `${tag} pdf back stopped partway through the paragraph`);
+    }
     await again.close();
   } finally {
     await browser.close();
