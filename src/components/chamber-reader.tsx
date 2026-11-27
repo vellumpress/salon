@@ -1614,7 +1614,7 @@ export function TbrReader({
     const fromChanged = Boolean(prev && prev.from !== browseRange.from);
     // Lines added or removed above the glass move every offset. Appending
     // below does not, and must not pull the page back to an older scroll.
-    if (fromChanged) {
+    if (prev && fromChanged) {
       // The height change is the lines added or removed above the glass.
       // Adding it to the scroll offset keeps the sentence still. A sentence
       // anchor here was replayed later and yanked the page.
