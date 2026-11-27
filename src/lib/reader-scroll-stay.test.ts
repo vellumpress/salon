@@ -383,3 +383,79 @@ async function runEngine(browser: Browser, engine: string, sample: boolean) {
     await context.close();
   }
 }
+
+test("the fade mask stays fixed across thirty sentences and a chapter", { timeout: 120_000 }, async () => {
+  await ensureReaderServer();
+  const browser = await chromium.launch({ args: ["--no-sandbox"] });
+  try {
+    const context = await browser.newContext({
+      viewport: { width: 390, height: 844 },
+      isMobile: true,
+      hasTouch: true,
+    });
+    const page = await context.newPage();
+    await page.addInitScript(() => {
+      localStorage.clear();
+      localStorage.setItem("salon-move-by", "scroll");
+    });
+    await openBook(page, "shallow-soil");
+    const traced = await page.evaluate(async () => {
+      const host = document.querySelector("[data-reader-text]");
+      const fade = document.querySelector(".focus-fade");
+      const frame = document.querySelector(".reader-frame");
+      if (!(host instanceof HTMLElement) || !(fade instanceof HTMLElement) || !frame) {
+        throw new Error("reader missing");
+      }
+      const read = () => {
+        const style = getComputedStyle(fade);
+        const box = fade.getBoundingClientRect();
+        return {
+          top: style.getPropertyValue("--focus-ink-top").trim(),
+          bottom: style.getPropertyValue("--focus-ink-bottom").trim(),
+          center: style.getPropertyValue("--focus-ink-center").trim(),
+          mask: style.maskImage,
+          inline: fade.getAttribute("style") ?? "",
+          boxTop: Math.round(box.top),
+          boxHeight: Math.round(box.height),
+          index: Number(frame.getAttribute("data-breath-index") ?? "-1"),
+          scene: frame.getAttribute("data-scene") ?? "",
+        };
+      };
+      const frames = [read()];
+      const started = performance.now();
+      while (performance.now() - started < 25_000) {
+        for (let step = 0; step < 4; step += 1) {
+          host.dispatchEvent(new WheelEvent("wheel", { deltaY: 240, bubbles: true, cancelable: true }));
+          await new Promise((resolve) => requestAnimationFrame(() => resolve(undefined)));
+          frames.push(read());
+        }
+        await new Promise((resolve) => setTimeout(resolve, 80));
+        frames.push(read());
+        const indexes = frames.map((frame) => frame.index);
+        const span = Math.max(...indexes) - Math.min(...indexes);
+        const scenes = new Set(frames.map((frame) => frame.scene));
+        if (span >= 30 && scenes.size > 1) break;
+      }
+      return frames;
+    });
+    assert.ok(traced.length > 30, `only ${traced.length} frames`);
+    const indexes = traced.map((frame) => frame.index);
+    const span = Math.max(...indexes) - Math.min(...indexes);
+    const scenes = new Set(traced.map((frame) => frame.scene));
+    assert.ok(span >= 30, `crossed only ${span} sentences`);
+    assert.ok(scenes.size > 1, `scenes ${[...scenes].join(",")}`);
+    const first = traced[0];
+    assert.equal(first.inline, "");
+    assert.match(first.center, /56\.6%/);
+    for (const frame of traced) {
+      assert.equal(frame.top, first.top, `ink top moved at sentence ${frame.index}`);
+      assert.equal(frame.bottom, first.bottom, `ink bottom moved at sentence ${frame.index}`);
+      assert.equal(frame.mask, first.mask, `mask moved at sentence ${frame.index}`);
+      assert.equal(frame.inline, "", `inline mask style at sentence ${frame.index}`);
+      assert.equal(frame.boxTop, first.boxTop, `mask box moved at sentence ${frame.index}`);
+      assert.equal(frame.boxHeight, first.boxHeight, `mask box resized at sentence ${frame.index}`);
+    }
+  } finally {
+    await browser.close();
+  }
+});

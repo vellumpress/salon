@@ -1712,88 +1712,6 @@ export function TbrReader({
       mirrorEl.style.transform = `translate3d(0, ${-scrollTop}px, 0)`;
     };
 
-    const lineBoxes = (root: HTMLElement) => {
-      const lines: { top: number; bottom: number }[] = [];
-      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-      let node = walker.nextNode();
-      while (node) {
-        const text = node.textContent ?? "";
-        let i = 0;
-        while (i < text.length) {
-          const range = document.createRange();
-          range.setStart(node, i);
-          range.setEnd(node, i + 1);
-          const first = range.getBoundingClientRect();
-          if (first.height < 1 || first.width < 0.2) {
-            i += 1;
-            continue;
-          }
-          let best = i + 1;
-          let lo = i + 1;
-          let hi = text.length;
-          while (lo <= hi) {
-            const mid = Math.floor((lo + hi) / 2);
-            range.setStart(node, i);
-            range.setEnd(node, mid);
-            const rect = range.getBoundingClientRect();
-            const same = Math.abs(rect.top - first.top) < 2 && rect.height <= first.height + 3;
-            if (same) {
-              best = mid;
-              lo = mid + 1;
-            } else hi = mid - 1;
-          }
-          range.setStart(node, i);
-          range.setEnd(node, best);
-          const rect = range.getBoundingClientRect();
-          if (rect.height > 1 && text.slice(i, best).trim()) {
-            const prev = lines.at(-1);
-            const overlap = prev
-              ? Math.min(prev.bottom, rect.bottom) - Math.max(prev.top, rect.top)
-              : 0;
-            if (prev && overlap > Math.min(prev.bottom - prev.top, rect.height) * 0.45) {
-              prev.top = Math.min(prev.top, rect.top);
-              prev.bottom = Math.max(prev.bottom, rect.bottom);
-            } else lines.push({ top: rect.top, bottom: rect.bottom });
-          }
-          i = best;
-        }
-        node = walker.nextNode();
-      }
-      return lines;
-    };
-
-    const publishInkBand = () => {
-      const fade = pane.querySelector<HTMLElement>(".focus-fade");
-      const track = trackRef.current;
-      if (!fade || !track) return;
-      const group = paintedGroupRef.current;
-      const start = group?.index ?? index;
-      const end = group?.endIndex ?? start;
-      const hosts: HTMLElement[] = [];
-      const breath = track.querySelector<HTMLElement>(".breath-now");
-      const breathRect = breath?.getBoundingClientRect();
-      if (breath && breathRect && breathRect.height > 1 && breathRect.width > 1) hosts.push(breath);
-      else {
-        for (const node of track.querySelectorAll<HTMLElement>("[data-sentence]")) {
-          if (node.closest("[hidden]")) continue;
-          const sentence = Number(node.getAttribute("data-sentence"));
-          if (!Number.isFinite(sentence) || sentence < start || sentence > end) continue;
-          hosts.push(node);
-        }
-      }
-      const lines = hosts.flatMap((host) => lineBoxes(host));
-      // The approved band is about six lines. A longer paragraph must not
-      // hold the lower ramp down: the seventh line is the last at full ink,
-      // and the next line is 90%, matching the line above the band.
-      const kept = lines.slice(0, 7);
-      const top = kept[0]?.top;
-      const bottom = kept.at(-1)?.bottom;
-      if (top == null || bottom == null || !(bottom > top)) return;
-      const host = fade.getBoundingClientRect();
-      fade.style.setProperty("--focus-ink-top", `${top - host.top}px`);
-      fade.style.setProperty("--focus-ink-bottom", `${bottom - host.top}px`);
-    };
-
     const place = (animate: boolean) => {
       if (!live) return;
       const line = slot.querySelector<HTMLElement>(".breath-now");
@@ -1821,7 +1739,6 @@ export function TbrReader({
         }
         mirrorEl = ensureBlurMirror();
         if (flowNow) syncMirror(flowNow.scrollTop);
-        publishInkBand();
         return;
       }
       const height = pane.clientHeight;
@@ -1930,7 +1847,6 @@ export function TbrReader({
               for (let pass = 0; Math.abs(left) >= 1 && pass < 2; pass += 1) {
                 left = stickSentence();
               }
-              publishInkBand();
             });
           });
         }
@@ -1993,7 +1909,6 @@ export function TbrReader({
       const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
       setAtEnd((prev) => (prev === end ? prev : end));
       layoutSig = sigNow();
-      publishInkBand();
     };
 
     const sigNow = () => {
