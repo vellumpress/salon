@@ -255,6 +255,7 @@ test("the focus paragraph stays full ink and lines step away by line height", ()
   assert.doesNotMatch(fade, /100% - var\(--focus-lead\)/);
   assert.match(reader, /--focus-ink-top/);
   assert.match(reader, /--focus-ink-bottom/);
+  assert.match(reader, /lines\.slice\(0,\s*7\)/);
   const pane = css.match(/\.reading-pane-centered\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(pane, /--focus-fade:\s*1\.75rem/);
   assert.match(pane, /--focus-ahead:\s*1\.75rem/);
