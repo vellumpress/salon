@@ -232,7 +232,7 @@ test("a long book only walks the upcoming window", () => {
   assert.ok(elapsed < 30, `window took ${elapsed}ms`);
 });
 
-test("three fixed bands fade the top, keep the middle sharp, and wash the bottom", () => {
+test("the focus paragraph stays full ink and lines step away by line height", () => {
   const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
   const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
   const live = css.match(/\.focus-live\s*\{[^}]+\}/)?.[0] ?? "";
@@ -241,19 +241,24 @@ test("three fixed bands fade the top, keep the middle sharp, and wash the bottom
   assert.match(live, /overflow-y:\s*auto/);
   assert.match(live, /mask-image:\s*none/);
   assert.doesNotMatch(live, /linear-gradient/);
-  assert.match(fade, /rgb\(0 0 0 \/ 32%\) 0/);
-  assert.match(fade, /rgb\(0 0 0 \/ 32%\) var\(--focus-lead\)/);
-  assert.doesNotMatch(fade, /transparent 0/);
-  assert.match(fade, /#000 calc\(var\(--focus-lead\) \+ \(100% - var\(--focus-lead\)\) \/ 3\)/);
-  assert.match(fade, /#000 var\(--focus-hold\)/);
-  assert.match(fade, /rgb\(0 0 0 \/ 90%\) calc\(var\(--focus-hold\) \+ 0\.5 \* var\(--focus-line\)\)/);
+  assert.match(fade, /--focus-ink-top:/);
+  assert.match(fade, /--focus-ink-bottom:/);
+  assert.match(fade, /#000 var\(--focus-ink-top\)/);
+  assert.match(fade, /#000 var\(--focus-ink-bottom\)/);
+  assert.match(fade, /rgb\(0 0 0 \/ 90%\) calc\(var\(--focus-ink-top\) - 1 \* var\(--focus-line\)\)/);
+  assert.match(fade, /rgb\(0 0 0 \/ 79%\) calc\(var\(--focus-ink-top\) - 2 \* var\(--focus-line\)\)/);
+  assert.match(fade, /rgb\(0 0 0 \/ 8%\) calc\(var\(--focus-ink-top\) - 9 \* var\(--focus-line\)\)/);
+  assert.match(fade, /rgb\(0 0 0 \/ 90%\) calc\(var\(--focus-ink-bottom\) \+ 1 \* var\(--focus-line\)\)/);
+  assert.match(fade, /rgb\(0 0 0 \/ 79%\) calc\(var\(--focus-ink-bottom\) \+ 1 \* var\(--focus-line\)\)/);
   assert.match(fade, /rgb\(0 0 0 \/ 8%\) 100%/);
   assert.doesNotMatch(fade, /focus-ahead/);
+  assert.doesNotMatch(fade, /100% - var\(--focus-lead\)/);
+  assert.match(reader, /--focus-ink-top/);
+  assert.match(reader, /--focus-ink-bottom/);
   const pane = css.match(/\.reading-pane-centered\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(pane, /--focus-fade:\s*1\.75rem/);
   assert.match(pane, /--focus-ahead:\s*1\.75rem/);
   assert.match(pane, /--focus-line:\s*calc\(var\(--text-breath\) \* var\(--text-breath--line-height\)\)/);
-  assert.match(pane, /--focus-hold:\s*calc\(var\(--focus-mid\) \+ 3 \* var\(--focus-line\)\)/);
   assert.doesNotMatch(live, /border|box-shadow/);
   const now = css.match(/\.focus-band-now\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(now, /height:\s*calc\(\(100% - var\(--focus-lead\)\) \/ 3\)/);

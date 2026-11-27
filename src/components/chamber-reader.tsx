@@ -1712,6 +1712,37 @@ export function TbrReader({
       mirrorEl.style.transform = `translate3d(0, ${-scrollTop}px, 0)`;
     };
 
+    const publishInkBand = () => {
+      const fade = pane.querySelector<HTMLElement>(".focus-fade");
+      const track = trackRef.current;
+      if (!fade || !track) return;
+      const group = paintedGroupRef.current;
+      const start = group?.index ?? index;
+      const end = group?.endIndex ?? start;
+      let top = Infinity;
+      let bottom = -Infinity;
+      const breath = track.querySelector<HTMLElement>(".breath-now");
+      const breathRect = breath?.getBoundingClientRect();
+      if (breathRect && breathRect.height > 1 && breathRect.width > 1) {
+        top = breathRect.top;
+        bottom = breathRect.bottom;
+      } else {
+        for (const node of track.querySelectorAll<HTMLElement>("[data-sentence]")) {
+          if (node.closest("[hidden]")) continue;
+          const sentence = Number(node.getAttribute("data-sentence"));
+          if (!Number.isFinite(sentence) || sentence < start || sentence > end) continue;
+          const rect = node.getBoundingClientRect();
+          if (rect.height < 1 || rect.width < 1) continue;
+          top = Math.min(top, rect.top);
+          bottom = Math.max(bottom, rect.bottom);
+        }
+      }
+      if (!(bottom > top)) return;
+      const host = fade.getBoundingClientRect();
+      fade.style.setProperty("--focus-ink-top", `${top - host.top}px`);
+      fade.style.setProperty("--focus-ink-bottom", `${bottom - host.top}px`);
+    };
+
     const place = (animate: boolean) => {
       if (!live) return;
       const line = slot.querySelector<HTMLElement>(".breath-now");
@@ -1739,6 +1770,7 @@ export function TbrReader({
         }
         mirrorEl = ensureBlurMirror();
         if (flowNow) syncMirror(flowNow.scrollTop);
+        publishInkBand();
         return;
       }
       const height = pane.clientHeight;
@@ -1847,6 +1879,7 @@ export function TbrReader({
               for (let pass = 0; Math.abs(left) >= 1 && pass < 2; pass += 1) {
                 left = stickSentence();
               }
+              publishInkBand();
             });
           });
         }
@@ -1909,6 +1942,7 @@ export function TbrReader({
       const end = slot.scrollHeight - slot.scrollTop - slot.clientHeight <= 2;
       setAtEnd((prev) => (prev === end ? prev : end));
       layoutSig = sigNow();
+      publishInkBand();
     };
 
     const sigNow = () => {
