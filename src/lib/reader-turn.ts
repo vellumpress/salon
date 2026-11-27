@@ -54,6 +54,16 @@ export function coastFromSamples(
 export const SCROLL_ARM_PX = 24;
 
 /**
+ * Scroll offset at the moment a drag is sure.
+ * The finger has already moved. Applying that distance jumps the page.
+ */
+export function armedScrollTop(scrollTop: number, clientY: number, startY: number): number {
+  if (!Number.isFinite(scrollTop)) return 0;
+  if (!Number.isFinite(clientY) || !Number.isFinite(startY)) return scrollTop;
+  return scrollTop + (clientY - startY);
+}
+
+/**
  * A still finger becomes a repeat after this long. A lift before it is one tap.
  * The repeat starts at a reading pace and speeds up while the finger stays down.
  */

@@ -183,6 +183,81 @@ async function run(browser: Browser, engine: string) {
 }
 
 test(
+  "a fast scroll does not stop at the end of the painted page",
+  { timeout: 180_000 },
+  async (t) => {
+    await ensureReaderServer();
+    async function check(engine: "chromium" | "webkit") {
+      const browser = await launch(engine);
+      try {
+        const context = await browser.newContext({
+          viewport: { width: 390, height: 844 },
+          hasTouch: true,
+          isMobile: true,
+          deviceScaleFactor: PHONE.deviceScaleFactor,
+          userAgent: PHONE.userAgent,
+        });
+        const page = await context.newPage();
+        await page.addInitScript(() => {
+          localStorage.clear();
+          localStorage.setItem("salon-move-by", "scroll");
+        });
+        await page.goto(`${ORIGIN}/salon/read/the-house-of-mirth`, { waitUntil: "domcontentloaded" });
+        await page.locator(".veil, .breath-now").first().waitFor({ timeout: 30_000 });
+        const sit = page.getByRole("button", { name: /^Sit$/ }).first();
+        if (await sit.isVisible().catch(() => false)) await sit.click();
+        await page.locator(".breath-now").waitFor({ timeout: 30_000 });
+        await page.waitForFunction(() => document.querySelector(".reader-frame")?.getAttribute("data-face-ready") === "yes");
+        const report = await page.evaluate(async () => {
+          const flow = document.querySelector(".focus-live");
+          const host = document.querySelector("[data-reader-text]");
+          const frame = document.querySelector(".reader-frame");
+          if (!(flow instanceof HTMLElement) || !(host instanceof HTMLElement) || !frame) {
+            throw new Error("reader missing");
+          }
+          let stalls = 0;
+          let worst = 0;
+          for (let i = 0; i < 36; i += 1) {
+            const beforeTop = flow.scrollTop;
+            const beforeRoom = flow.scrollHeight - flow.scrollTop - flow.clientHeight;
+            host.dispatchEvent(new WheelEvent("wheel", { deltaY: 420, bubbles: true, cancelable: true }));
+            await new Promise((resolve) => requestAnimationFrame(() => resolve(undefined)));
+            const afterTop = flow.scrollTop;
+            const room = flow.scrollHeight - flow.scrollTop - flow.clientHeight;
+            const count = Number(frame.getAttribute("data-breath-count") ?? "0");
+            const index = Number(frame.getAttribute("data-breath-index") ?? "0");
+            if (afterTop <= beforeTop + 2 && beforeRoom < 80 && index < count - 3) {
+              stalls += 1;
+              worst = Math.max(worst, beforeRoom);
+            }
+            void room;
+          }
+          await new Promise((resolve) => setTimeout(resolve, 400));
+          return {
+            stalls,
+            worst,
+            index: Number(frame.getAttribute("data-breath-index") ?? "0"),
+            scene: frame.getAttribute("data-scene") ?? "",
+          };
+        });
+        assert.equal(report.stalls, 0, `${engine} stopped at the painted edge (${report.stalls}, room ${report.worst})`);
+        assert.ok(report.index >= 24, `${engine} never left the first painted page (${report.index})`);
+        await context.close();
+      } finally {
+        await browser.close();
+      }
+    }
+    await check("chromium");
+    if (!(await webkitInstalled())) {
+      if (webKitRequired()) throw new Error("WebKit is not installed; REQUIRE_WEBKIT=1");
+      skipWithoutWebKit(t);
+      return;
+    }
+    await check("webkit");
+  },
+);
+
+test(
   "a fling does not remount the text",
   { timeout: 180_000 },
   async (t) => {
