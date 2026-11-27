@@ -185,7 +185,13 @@ async function prologue(page: Page, size: Size, label: string) {
   await openBook(page, "shallow-soil");
   const opened = await spot(page);
   assert.equal(opened.scene, "s0", `${label} prologue`);
-  const crossed = await untilScene(page, "s0", `${label} prologue`);
+  let crossed = await untilScene(page, "s0", `${label} prologue`);
+  // The scene can change on its first line. Keep reading so that line is not the end of the page.
+  for (let i = 0; i < 6 && crossed.index <= 21 && crossed.scene !== "s0"; i += 1) {
+    await wheel(page, 700, 2);
+    const now = await spot(page);
+    if (now.scene) crossed = now;
+  }
   assert.ok(crossed.index > 21, `${label} stopped on the first line of the next chapter (${crossed.index})`);
   const held = crossed.index;
   const line = crossed.line;

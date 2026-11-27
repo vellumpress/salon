@@ -109,9 +109,24 @@ async function readFrames(page: Page, mode: "scroll" | "tap"): Promise<MaskFrame
     requestAnimationFrame(watch);
     const started = performance.now();
     if (kind === "scroll") {
-      while (performance.now() - started < 3_500) {
+      const flow = document.querySelector(".focus-live");
+      const startTop = flow instanceof HTMLElement ? flow.scrollTop : 0;
+      let stalled = 0;
+      // New lines are drawn when the frame is free. A wheel that reaches
+      // the last drawn line waits, then continues, until the travel is long.
+      while (performance.now() - started < 8_000) {
+        const before = flow instanceof HTMLElement ? flow.scrollTop : startTop;
         host.dispatchEvent(new WheelEvent("wheel", { deltaY: 160, bubbles: true, cancelable: true }));
         await new Promise((resolve) => requestAnimationFrame(() => resolve(undefined)));
+        const top = flow instanceof HTMLElement ? flow.scrollTop : before;
+        if (top - startTop > 1200 && performance.now() - started > 1_500) break;
+        if (Math.abs(top - before) < 1) {
+          stalled += 1;
+          if (stalled > 3) {
+            await new Promise((resolve) => setTimeout(resolve, 90));
+            stalled = 0;
+          }
+        } else stalled = 0;
       }
     } else {
       const box = host.getBoundingClientRect();
