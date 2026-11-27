@@ -25,6 +25,9 @@ import { FavoriteMark } from "@/components/favorite-mark";
 import { PlaceChip } from "@/components/place-chip";
 import { Hourglass } from "@/components/hourglass";
 import { ReadingProgress } from "@/components/reading-progress";
+import { ReaderNotesSheet } from "@/components/reader-notes-sheet";
+import { useReaderNotes } from "@/lib/use-reader-notes";
+import type { NoteColor } from "@/lib/reader-notes";
 import {
   closedReaderBar,
   freshReaderMark,
@@ -195,15 +198,24 @@ const EmphasizedText = memo(function EmphasizedText({ text }: { text: string }) 
 const ColumnBreath = memo(function ColumnBreath({
   sentence,
   blocks,
+  color,
 }: {
   sentence: number;
   blocks: readonly { text: string; sentences: number }[];
+  /** Set only when this sentence is marked, so an unmarked sentence can skip the paint. */
+  color?: "yellow" | "green" | "blue" | "red";
 }) {
   return (
     <div className="column-breath" data-sentence={sentence >= 0 ? sentence : undefined}>
       {blocks.map((block, bi) => (
         <p key={bi} className="look-line text-ink" data-block-sentences={block.sentences}>
-          <EmphasizedText text={block.text} />
+          {color ? (
+            <span className={`note-hl note-hl-${color}`} data-note={color}>
+              <EmphasizedText text={block.text} />
+            </span>
+          ) : (
+            <EmphasizedText text={block.text} />
+          )}
         </p>
       ))}
     </div>
@@ -346,6 +358,8 @@ export function TbrReader({
   const centerLine = useCenterLine();
   const centerOn = centerLine.enabled;
   const textSize = useTextSize();
+  const readerNotes = useReaderNotes(work.id);
+  const [notesOpen, setNotesOpen] = useState(false);
   const focus = useFocus();
   const moveBy = useMoveBy();
   const moveByRef = useRef(moveBy.mode);
@@ -2458,6 +2472,7 @@ export function TbrReader({
           key={`${key}-${item.id}`}
           sentence={sentence}
           blocks={display.blocksFor(item.text)}
+          color={readerNotes.colorAt(sentence)}
         />,
       );
     }
@@ -2503,15 +2518,23 @@ export function TbrReader({
               ? { start: part.start, end: part.end }
               : { start: 0, end: item.text.length };
             const marked = markSpotlight(item.text, blocks, range, displayKind);
+            const hue = readerNotes.colorAt(breathIndex);
             return blocks.map((block, bi) => {
               const pieces = marked[bi] ?? [{ text: block.text, role: "focus" as const }];
+              const body = <PassagePieces pieces={pieces} focusIndex={atSentence} />;
               return (
                 <p
                   key={`${breathIndex}-${bi}`}
                   className="breath-block"
                   data-block-sentences={block.sentences}
                 >
-                  <PassagePieces pieces={pieces} focusIndex={atSentence} />
+                  {hue ? (
+                    <span className={`note-hl note-hl-${hue}`} data-note={hue}>
+                      {body}
+                    </span>
+                  ) : (
+                    body
+                  )}
                 </p>
               );
             });
@@ -3576,6 +3599,45 @@ export function TbrReader({
               />
             </button>
           </footer>
+          {notesOpen && breath ? (
+            <ReaderNotesSheet
+              items={readerNotes.items}
+              here={readerNotes.noteAt(index)}
+              onColor={(color: NoteColor) => {
+                const from = group?.index ?? index;
+                const to = group?.endIndex ?? index;
+                for (let at = from; at <= to; at += 1) {
+                  const item = work.breaths[at];
+                  if (!item) continue;
+                  const current = readerNotes.noteAt(at);
+                  readerNotes.paint(
+                    { breathIndex: at, breathId: item.id, excerpt: item.text },
+                    { color: current?.color === color ? null : color },
+                  );
+                }
+              }}
+              onText={(text) => {
+                if (!breath) return;
+                readerNotes.paint(
+                  { breathIndex: index, breathId: breath.id, excerpt: breath.text },
+                  { text },
+                );
+              }}
+              onSaved={() => {
+                if (!breath) return;
+                const current = readerNotes.noteAt(index);
+                readerNotes.paint(
+                  { breathIndex: index, breathId: breath.id, excerpt: breath.text },
+                  { saved: !current?.saved },
+                );
+              }}
+              onJump={(at) => {
+                goTo(at, 0, false);
+                setNotesOpen(false);
+              }}
+              onClose={() => setNotesOpen(false)}
+            />
+          ) : null}
           <ReadingProgress
             title={work.title}
             index={index}
@@ -3584,6 +3646,8 @@ export function TbrReader({
             window={spotWindow}
             length={progressLength}
             chapterStarts={chapterStarts}
+            notesOpen={notesOpen}
+            onNotes={() => setNotesOpen((open) => !open)}
           />
         </>
       )}
