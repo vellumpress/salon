@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { chromium, devices, webkit, type Browser, type Page } from "playwright";
 import { waitForPageRest } from "./reader-group-tap.ts";
-import { TEXT_SIZE_MAX, TEXT_SIZE_MIN } from "./text-size.ts";
+import { TEXT_SIZE_DEFAULT, TEXT_SIZE_MAX, TEXT_SIZE_MIN } from "./text-size.ts";
 import { ensureReaderServer, readerDown } from "./reader-dev-server.ts";
 import { skipWithoutWebKit, webKitRequired } from "./require-webkit.ts";
 
@@ -221,11 +221,22 @@ async function checkReader(page: Page, label: string) {
   assert.ok(small.font < initial.font - 1, `${label} smallest did not shrink ${small.font} vs ${initial.font}`);
   assert.equal(small.size, TEXT_SIZE_MIN.toFixed(2));
 
-  await setScale(page, 1);
+  await setScale(page, TEXT_SIZE_DEFAULT);
   const middle = await geometry(page);
   sameBands(initial, middle, `${label} default`);
   sameSentence(initial, middle, `${label} default`);
-  assert.ok(Math.abs(middle.font - initial.font) < 0.6, `${label} default size changed ${middle.font} vs ${initial.font}`);
+  assert.equal(middle.size, TEXT_SIZE_DEFAULT.toFixed(2), `${label} did not return to the unread size`);
+  assert.ok(
+    Math.abs(middle.font - initial.font) < 0.6,
+    `${label} unread size changed ${middle.font} vs ${initial.font}`,
+  );
+
+  await setScale(page, 1);
+  const saved = await geometry(page);
+  sameBands(initial, saved, `${label} saved 1.00`);
+  sameSentence(initial, saved, `${label} saved 1.00`);
+  assert.equal(saved.size, "1.00", `${label} a saved 1.00 did not apply`);
+  assert.ok(saved.font > initial.font + 1, `${label} saved 1.00 stayed at the unread size`);
 
   await setScale(page, TEXT_SIZE_MAX);
   const large = await geometry(page);
