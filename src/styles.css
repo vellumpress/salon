@@ -2297,21 +2297,20 @@ html:has(.board-doors) body {
   overflow-y: auto;
 }
 
-/* One continuous page. The focus stays at full ink for at most seven
-   lines. Each line outward, above and below, steps 90, 79, 70, 60, 50, 40,
-   30, 20, 10, then 8%. The two ramps share those edges: nothing on the
-   upcoming side, including --focus-ahead, pushes the lower steps down.
-   --focus-ink-top/bottom are those edges in this frame; JS writes them
-   after layout. The mask sits on a frame that does not scroll. Masking the
-   scroller itself makes iPhone Safari re-rasterize the glyphs on every frame. */
+/* One continuous page. The sharp band is nine line-heights, fixed on the
+   screen where the approved still sat, and it does not follow the paragraph.
+   Each line outward, above and below, steps 90, 79, 70, 60, 50, 40, 30, 20,
+   10, then 8%. The text scrolls under the mask. Masking the scroller itself
+   makes iPhone Safari re-rasterize the glyphs on every frame. */
 .focus-fade {
   position: absolute;
   z-index: 1;
   inset: 0;
   overflow: hidden;
   pointer-events: none;
-  --focus-ink-top: 42%;
-  --focus-ink-bottom: 62%;
+  --focus-ink-center: 56.6%;
+  --focus-ink-top: calc(var(--focus-ink-center) - 4.5 * var(--focus-line));
+  --focus-ink-bottom: calc(var(--focus-ink-center) + 4.5 * var(--focus-line));
   -webkit-mask-image: linear-gradient(
     to bottom,
     rgb(0 0 0 / 8%) 0,

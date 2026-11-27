@@ -241,8 +241,9 @@ test("the focus paragraph stays full ink and lines step away by line height", ()
   assert.match(live, /overflow-y:\s*auto/);
   assert.match(live, /mask-image:\s*none/);
   assert.doesNotMatch(live, /linear-gradient/);
-  assert.match(fade, /--focus-ink-top:/);
-  assert.match(fade, /--focus-ink-bottom:/);
+  assert.match(fade, /--focus-ink-center:\s*56\.6%/);
+  assert.match(fade, /--focus-ink-top:\s*calc\(var\(--focus-ink-center\) - 4\.5 \* var\(--focus-line\)\)/);
+  assert.match(fade, /--focus-ink-bottom:\s*calc\(var\(--focus-ink-center\) \+ 4\.5 \* var\(--focus-line\)\)/);
   assert.match(fade, /#000 var\(--focus-ink-top\)/);
   assert.match(fade, /#000 var\(--focus-ink-bottom\)/);
   assert.match(fade, /rgb\(0 0 0 \/ 90%\) calc\(var\(--focus-ink-top\) - 1 \* var\(--focus-line\)\)/);
@@ -253,9 +254,8 @@ test("the focus paragraph stays full ink and lines step away by line height", ()
   assert.match(fade, /rgb\(0 0 0 \/ 8%\) 100%/);
   assert.doesNotMatch(fade, /focus-ahead/);
   assert.doesNotMatch(fade, /100% - var\(--focus-lead\)/);
-  assert.match(reader, /--focus-ink-top/);
-  assert.match(reader, /--focus-ink-bottom/);
-  assert.match(reader, /lines\.slice\(0,\s*7\)/);
+  assert.doesNotMatch(reader, /--focus-ink-top/);
+  assert.doesNotMatch(reader, /setProperty\("--focus-ink/);
   const pane = css.match(/\.reading-pane-centered\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(pane, /--focus-fade:\s*1\.75rem/);
   assert.match(pane, /--focus-ahead:\s*1\.75rem/);
