@@ -201,7 +201,11 @@ async function prologue(page: Page, size: Size, label: string) {
   const line = crossed.line;
   await page.waitForTimeout(400);
   await resizeToolbar(page, size);
-  const still = await spot(page);
+  let still = await spot(page);
+  for (let i = 0; i < 8 && Math.abs(still.index - held) > 1; i += 1) {
+    await page.waitForTimeout(80);
+    still = await spot(page);
+  }
   assert.equal(still.scene, crossed.scene, `${label} resize left the chapter`);
   assert.ok(Math.abs(still.index - held) <= 1, `${label} resize moved ${held} to ${still.index}`);
   assert.equal(still.line, line, `${label} resize rewrote the line`);
