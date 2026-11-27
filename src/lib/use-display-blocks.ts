@@ -87,6 +87,7 @@ export function useDisplayBlocks(
   const viewportSeen = useRef(0);
   const faceSeen = useRef(false);
   const blindSince = useRef(0);
+  const looseCache = useRef(new Map<string, DisplayBlock[]>());
 
   useLayoutEffect(() => {
     const bump = () => setTick((n) => n + 1);
@@ -198,7 +199,16 @@ export function useDisplayBlocks(
 
   return {
     blocksFor(text: string): DisplayBlock[] {
-      return packed.get(text) ?? unmeasuredBlocks(text, kind);
+      const measured = packed.get(text);
+      if (measured) return measured;
+      // Lines outside the measured window still need the same array on the
+      // next paint, or every sentence re-renders on a scroll.
+      const key = `${kind}\0${text}`;
+      const cached = looseCache.current.get(key);
+      if (cached) return cached;
+      const made = unmeasuredBlocks(text, kind);
+      looseCache.current.set(key, made);
+      return made;
     },
     measure(sample: string): number {
       if (!metrics) return phoneLineMeasure(sample);

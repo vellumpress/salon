@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type ReactNode, type TouchEvent as ReactTouchEvent } from "react";
+import { memo, useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type MouseEvent as ReactMouseEvent, type ReactNode, type TouchEvent as ReactTouchEvent } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { adoptFrameIndex, bootShouldKeepPlace, firstPaintIndex, pendingLinkAt, savedSentenceAt } from "@/lib/deep-link-breath";
@@ -168,16 +168,16 @@ function PassagePieces({
   ));
 }
 
-function ChapterSignpost({ title, label }: { title: string; label: string }) {
+const ChapterSignpost = memo(function ChapterSignpost({ title, label }: { title: string; label: string }) {
   return (
     <div className="chapter-signpost" data-chapter-signpost="" data-chapter-label={label}>
       <p className="chapter-signpost-title">{title}</p>
       <span className="chapter-signpost-rule" />
     </div>
   );
-}
+});
 
-function EmphasizedText({ text }: { text: string }) {
+const EmphasizedText = memo(function EmphasizedText({ text }: { text: string }) {
   if (isSectionBreak(text)) {
     return (
       <span className="section-break" role="separator" aria-label="Section break">
@@ -188,7 +188,25 @@ function EmphasizedText({ text }: { text: string }) {
   return splitEmphasis(text).map((part, i) =>
     part.type === "em" ? <em key={i}>{part.value}</em> : part.value,
   );
-}
+});
+
+const ColumnBreath = memo(function ColumnBreath({
+  sentence,
+  blocks,
+}: {
+  sentence: number;
+  blocks: readonly { text: string; sentences: number }[];
+}) {
+  return (
+    <div className="column-breath" data-sentence={sentence >= 0 ? sentence : undefined}>
+      {blocks.map((block, bi) => (
+        <p key={bi} className="look-line text-ink" data-block-sentences={block.sentences}>
+          <EmphasizedText text={block.text} />
+        </p>
+      ))}
+    </div>
+  );
+});
 
 const MIRROR_INK = ".look-line, .breath-now, .breath-block, .breath-sentence, .section-break, em";
 
@@ -801,6 +819,11 @@ export function TbrReader({
   }, []);
 
   const lastBreath = Math.max(0, work.breaths.length - 1);
+  const breathAt = useMemo(() => {
+    const map = new Map<(typeof work.breaths)[number], number>();
+    work.breaths.forEach((item, at) => map.set(item, at));
+    return map;
+  }, [work]);
   const index = firstPaintIndex({
     at,
     breathCount: work.breaths.length,
@@ -2400,11 +2423,11 @@ export function TbrReader({
   const groupStart = group?.index ?? index;
   const groupEnd = group?.endIndex ?? index;
   const shownLookback = lookback.filter((item) => {
-    const at = work.breaths.indexOf(item);
+    const at = breathAt.get(item) ?? -1;
     return at >= 0 && at < groupStart;
   });
   const shownUpcoming = upcoming.filter((item) => {
-    const at = work.breaths.indexOf(item);
+    const at = breathAt.get(item) ?? -1;
     return at > groupEnd;
   });
   function columnBreaths(
@@ -2415,7 +2438,7 @@ export function TbrReader({
     const nodes: ReactNode[] = [];
     let prev = previousScene;
     for (const item of items) {
-      const sentence = work.breaths.indexOf(item as (typeof work.breaths)[number]);
+      const sentence = breathAt.get(item as (typeof work.breaths)[number]) ?? -1;
       if (prev && item.sceneId !== prev) {
         const nextScene = sceneOf(work, item.sceneId);
         nodes.push(
@@ -2427,19 +2450,12 @@ export function TbrReader({
         );
       }
       prev = item.sceneId;
-      const blocks = display.blocksFor(item.text);
       nodes.push(
-        <div
+        <ColumnBreath
           key={`${key}-${item.id}`}
-          className="column-breath"
-          data-sentence={sentence >= 0 ? sentence : undefined}
-        >
-          {blocks.map((block, bi) => (
-            <p key={bi} className="look-line text-ink" data-block-sentences={block.sentences}>
-              <EmphasizedText text={block.text} />
-            </p>
-          ))}
-        </div>,
+          sentence={sentence}
+          blocks={display.blocksFor(item.text)}
+        />,
       );
     }
     return nodes;
