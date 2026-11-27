@@ -39,6 +39,12 @@ test("matches Safari, Chrome, Firefox, and webpack chunk failures", () => {
   chunk.name = "ChunkLoadError";
   assert.equal(isChunkLoadError(chunk), true);
   assert.equal(isChunkLoadError("ChunkLoadError: Loading chunk 3 failed"), true);
+  assert.equal(
+    isChunkLoadError(
+      new Error("undefined is not an object (evaluating 'e[t??`default`]')"),
+    ),
+    true,
+  );
   assert.equal(isChunkLoadError(new Error("Failed to fetch")), false);
   assert.equal(isChunkLoadError(new Error("Something went wrong")), false);
   assert.equal(isChunkLoadError(null), false);

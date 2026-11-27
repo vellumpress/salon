@@ -11,7 +11,7 @@ export const CHUNK_RELOAD_WINDOW_MS = 20_000;
 export const CHUNK_RELOAD_STORAGE_KEY = "tbr-chunk-reload";
 
 const CHUNK_LOAD_MESSAGE =
-  /Importing a module script failed|Failed to fetch dynamically imported module|error loading dynamically imported module|ChunkLoadError/i;
+  /Importing a module script failed|Failed to fetch dynamically imported module|error loading dynamically imported module|ChunkLoadError|is not an object \(evaluating ['`].*default/i;
 
 export type ChunkReloadStorage = {
   getItem: (key: string) => string | null;
