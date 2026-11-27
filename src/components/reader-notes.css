@@ -1,0 +1,191 @@
+/* Notes sheet and inline marks. The progress bar itself stays pointer-events: none. */
+.reading-progress-head {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.35rem;
+  pointer-events: none;
+}
+
+.reading-progress-mark {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.reading-progress-mark svg {
+  display: block;
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.reading-progress-head .reading-progress-title {
+  flex: 1;
+}
+
+.note-sheet {
+  position: absolute;
+  z-index: 40;
+  left: 1rem;
+  right: 4.5rem;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 4.25rem);
+  display: flex;
+  max-height: min(22rem, 62%);
+  flex-direction: column;
+  gap: 0.7rem;
+  overflow: auto;
+  padding: 0.85rem 0.9rem 1rem;
+  border: 1px solid currentColor;
+  background: var(--color-paper, #fff8e8);
+  color: var(--color-ink, #1a1a1a);
+  font-family: var(--font-sans);
+  pointer-events: auto;
+}
+
+.note-sheet h2,
+.note-sheet button,
+.note-sheet label {
+  font-family: var(--font-sans);
+}
+
+.note-sheet h2 {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.note-colors {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.note-colors button {
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.note-colors button[aria-pressed="true"] {
+  border-color: currentColor;
+}
+
+.note-swatch-yellow { background: #ffe14a; }
+.note-swatch-green { background: #3ddc6a; }
+.note-swatch-blue { background: #4d8dff; }
+.note-swatch-red { background: #ff4b4b; }
+
+.note-dot {
+  flex: none;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+}
+
+.note-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.note-actions button,
+.note-sheet-close {
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.note-draft {
+  width: 100%;
+  min-height: 4.2rem;
+  resize: vertical;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  padding: 0.45rem 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.note-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.note-list button {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  gap: 0.45rem;
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  background: transparent;
+  color: inherit;
+  padding: 0.45rem 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.note-list-text {
+  min-width: 0;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.note-empty {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+}
+
+.note-hl {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  border-radius: 0.12em;
+}
+
+.note-hl-yellow {
+  background: #ffe14a;
+  color: #1a1400;
+  -webkit-text-fill-color: #1a1400;
+}
+
+.note-hl-green {
+  background: #3ddc6a;
+  color: #06210f;
+  -webkit-text-fill-color: #06210f;
+}
+
+.note-hl-blue {
+  background: #4d8dff;
+  color: #061226;
+  -webkit-text-fill-color: #061226;
+}
+
+.note-hl-red {
+  background: #ff4b4b;
+  color: #2a0606;
+  -webkit-text-fill-color: #2a0606;
+}
