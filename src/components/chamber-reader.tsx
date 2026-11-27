@@ -114,7 +114,14 @@ import {
   TAP_SLOP_PX,
   turnZone,
 } from "@/lib/reader-turn";
-import { browseWindow, followBrowseRange, restoredScrollTop, type BreathRange } from "@/lib/reader-scroll-window";
+import {
+  browseWindow,
+  extendBrowseRange,
+  prefixDropCount,
+  restoredScrollTop,
+  SCROLL_GULP,
+  type BreathRange,
+} from "@/lib/reader-scroll-window";
 import { useCenterLine } from "@/lib/use-center-line";
 import { fingerScrollTop, isTopEdgeTap, textTapSteps } from "@/lib/move-by";
 import { TEXT_SIZE_MAX, TEXT_SIZE_MIN, TEXT_SIZE_STEP } from "@/lib/text-size";
@@ -297,6 +304,7 @@ export function TbrReader({
   const browsingRef = useRef(false);
   const [browseRange, setBrowseRange] = useState<BreathRange | null>(null);
   const browseRangeRef = useRef<BreathRange | null>(null);
+  const growIdleRef = useRef(0);
   const scrollDirectionRef = useRef<"forward" | "back">("forward");
   const lastScrollTopRef = useRef(0);
   const still = bar.still;
@@ -1607,15 +1615,14 @@ export function TbrReader({
     // Lines added or removed above the glass move every offset. Appending
     // below does not, and must not pull the page back to an older scroll.
     if (fromChanged) {
-      const anchor = scrollAnchorRef.current;
-      const node =
-        anchor && flow.querySelector<HTMLElement>(`[data-sentence="${anchor.sentence}"]`);
-      if (anchor && node) {
-        const flowTop = flow.getBoundingClientRect().top;
-        const offsetNow = node.getBoundingClientRect().top - flowTop + flow.scrollTop;
-        const nextTop = restoredScrollTop(flow.scrollTop, anchor, offsetNow);
-        if (Math.abs(flow.scrollTop - nextTop) > 1) {
-          const before = flow.scrollTop;
+      // The height change is the lines added or removed above the glass.
+      // Adding it to the scroll offset keeps the sentence still. A sentence
+      // anchor here was replayed later and yanked the page.
+      const delta = flow.scrollHeight - prev.height;
+      if (Math.abs(delta) > 1) {
+        const before = flow.scrollTop;
+        const nextTop = Math.max(0, before + delta);
+        if (Math.abs(before - nextTop) > 1) {
           scrollIgnoreUntilRef.current = performance.now() + 180;
           scrollLockRef.current = true;
           flow.scrollTop = nextTop;
@@ -2023,41 +2030,53 @@ export function TbrReader({
           setBrowsing(true);
         }
         if (browsingRef.current && moveByRef.current === "scroll") {
-          const current = browseRangeRef.current;
-          if (current) {
-            const nextRange = followBrowseRange(
+          const paintMore = () => {
+            const current = browseRangeRef.current;
+            const column = flowRef.current;
+            if (!current || !column) return;
+            const nextRange = extendBrowseRange(
               current,
               work.breaths.length,
               {
-                scrollTop: flow.scrollTop,
-                scrollHeight: flow.scrollHeight,
-                clientHeight: flow.clientHeight,
-                lead: Math.max(flow.clientHeight * 2, 900),
+                scrollTop: column.scrollTop,
+                scrollHeight: column.scrollHeight,
+                clientHeight: column.clientHeight,
+                lead: Math.max(column.clientHeight * 2, 900),
               },
-              AHEAD,
+              SCROLL_GULP,
               scrollDirectionRef.current,
             );
-            if (nextRange !== current) {
-              let kept: HTMLElement | null = null;
-              for (const node of flow.querySelectorAll<HTMLElement>("[data-sentence]")) {
-                const sentence = Number(node.getAttribute("data-sentence"));
-                if (Number.isFinite(sentence) && sentence >= nextRange.from) {
-                  kept = node;
-                  break;
-                }
+            if (nextRange === current) return;
+            browseRangeRef.current = nextRange;
+            setBrowseRange(nextRange);
+          };
+          const room = flow.scrollHeight - flow.scrollTop - flow.clientHeight;
+          const nearTop = flow.scrollTop < flow.clientHeight;
+          // One screen of runway is drawn now, so a fast flick cannot pass it.
+          // The screen beyond that waits until the frame is free.
+          const urgent =
+            (scrollDirectionRef.current !== "back" && room < flow.clientHeight) ||
+            (scrollDirectionRef.current === "back" && nearTop);
+          // Draw the next lines after this frame. Doing it inside the scroll
+          // event is the hitch. If the page is about to run out, draw now.
+          if (urgent) {
+            paintMore();
+          } else if (!growIdleRef.current) {
+            const pump = () => {
+              growIdleRef.current = 0;
+              const before = browseRangeRef.current;
+              paintMore();
+              if (browseRangeRef.current !== before && !growIdleRef.current) {
+                growIdleRef.current =
+                  typeof requestIdleCallback === "function"
+                    ? requestIdleCallback(pump, { timeout: 80 })
+                    : requestAnimationFrame(pump);
               }
-              if (kept && nextRange.from !== current.from) {
-                const flowTop = flow.getBoundingClientRect().top;
-                const sentence = Number(kept.getAttribute("data-sentence"));
-                scrollAnchorRef.current = {
-                  sentence,
-                  top: kept.getBoundingClientRect().top - flowTop + flow.scrollTop,
-                  scrollTop: flow.scrollTop,
-                };
-              }
-              browseRangeRef.current = nextRange;
-              setBrowseRange(nextRange);
-            }
+            };
+            growIdleRef.current =
+              typeof requestIdleCallback === "function"
+                ? requestIdleCallback(pump, { timeout: 80 })
+                : requestAnimationFrame(pump);
           }
         }
       }
@@ -2066,11 +2085,58 @@ export function TbrReader({
       const wait = Math.max(90, scrollIgnoreUntilRef.current - performance.now() + 40);
       placeTimer = window.setTimeout(() => {
         if (!live) return;
+        if (
+          performance.now() < resizeQuietUntil &&
+          Math.abs(flow.scrollTop - scrollAtResize) < flow.clientHeight * 0.35
+        ) {
+          return;
+        }
         // The finger still owns the column. Commit after the lift so a
         // rebuild does not fight the drag.
         if (gestureRef.current && !gestureRef.current.turned) {
           placeTimer = window.setTimeout(() => onScroll(), 120);
           return;
+        }
+        // The finger has stopped. Drop a few lines that are already off the
+        // glass. Their height was measured first, and the scroll offset
+        // follows that height so the sentence does not move.
+        if (flow && !flingRef.current && browseRangeRef.current) {
+          const range = browseRangeRef.current;
+          // A short page stays whole. Dropping lines there shifts the layout
+          // even when the sentence is put back.
+          if (range.to - range.from >= 80) {
+            const goingBack = scrollDirectionRef.current === "back";
+            const painted = [...flow.querySelectorAll<HTMLElement>("[data-sentence]")];
+            const heights: number[] = [];
+            if (goingBack) {
+              for (let i = painted.length - 1; i >= 0 && heights.length < SCROLL_GULP; i -= 1) {
+                const n = Number(painted[i]?.getAttribute("data-sentence"));
+                if (!Number.isFinite(n) || n < range.from || n >= range.to) continue;
+                heights.push(painted[i]!.offsetHeight);
+              }
+              const budget = flow.scrollHeight - flow.scrollTop - flow.clientHeight * 2;
+              const drop = prefixDropCount(heights, budget, SCROLL_GULP);
+              if (drop > 0 && range.to - drop > range.from) {
+                const next = { from: range.from, to: range.to - drop };
+                browseRangeRef.current = next;
+                setBrowseRange(next);
+              }
+            } else {
+              for (const node of painted) {
+                if (heights.length >= SCROLL_GULP) break;
+                const n = Number(node.getAttribute("data-sentence"));
+                if (!Number.isFinite(n) || n < range.from || n >= range.to) continue;
+                heights.push(node.offsetHeight);
+              }
+              const budget = flow.scrollTop - flow.clientHeight;
+              const drop = prefixDropCount(heights, budget, SCROLL_GULP);
+              if (drop > 0 && range.from + drop < range.to) {
+                const next = { from: range.from + drop, to: range.to };
+                browseRangeRef.current = next;
+                setBrowseRange(next);
+              }
+            }
+          }
         }
         const box = flow.getBoundingClientRect();
         const leadNow = Number.parseFloat(getComputedStyle(pane).marginTop);
@@ -2137,6 +2203,16 @@ export function TbrReader({
         useTbr.getState().setSentenceAt(work.id, next, 0, 0);
       }, wait);
     };
+    let resizeQuietUntil = 0;
+    let scrollAtResize = 0;
+    const onResize = () => {
+      // A toolbar or a turn reflows the column. That is not the reader
+      // choosing a new sentence. A later real scroll still counts.
+      scrollAtResize = flow?.scrollTop ?? 0;
+      resizeQuietUntil = performance.now() + 400;
+      window.clearTimeout(placeTimer);
+    };
+    window.addEventListener("resize", onResize);
     flow?.addEventListener("scroll", onScroll, { passive: true, capture: true });
     const onWheel = (event: WheelEvent) => {
       if (!flow) return;
@@ -2187,9 +2263,15 @@ export function TbrReader({
       live = false;
       document.fonts?.removeEventListener("loadingdone", onFonts);
       ro.disconnect();
+      window.removeEventListener("resize", onResize);
       flow?.removeEventListener("scroll", onScroll, { capture: true });
       turnHostRef.current?.removeEventListener("wheel", onWheel);
       window.clearTimeout(placeTimer);
+      if (growIdleRef.current) {
+        if (typeof cancelIdleCallback === "function") cancelIdleCallback(growIdleRef.current);
+        else cancelAnimationFrame(growIdleRef.current);
+        growIdleRef.current = 0;
+      }
     };
   }, [browsing, index, cursor, spotWindow, breath?.text, together, overlay, centerOn, display.metricsKey, navReveal]);
 
