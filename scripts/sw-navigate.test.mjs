@@ -97,7 +97,12 @@ function loadWorker({ onLine = false, fetchImpl, clients = [], manifest } = {}) 
       claim() { return Promise.resolve(); },
       matchAll() { return Promise.resolve(clients); },
     },
-    registration: { navigationPreload: { enable() { return Promise.resolve(); } } },
+    registration: {
+      navigationPreload: {
+        enable() { return Promise.resolve(); },
+        disable() { return Promise.resolve(); },
+      },
+    },
     navigator: { onLine },
   };
   sandbox.globalThis = sandbox;
@@ -201,6 +206,26 @@ test("a __fresh navigation offline uses the retired shell, then an inline page",
   assert.match(html, /Offline/);
   assert.match(html, /Retry/);
   assert.match(html, /location\.reload\(\)/);
+});
+
+test("a cached book opens without fetching while the radio still says online", async () => {
+  let fetches = 0;
+  const { caches, api } = loadWorker({
+    onLine: true,
+    fetchImpl: () => {
+      fetches += 1;
+      return Promise.reject(new TypeError("Load failed"));
+    },
+  });
+  await putShell(caches, SHELL_CACHE_NAME, shellHtml());
+  const res = await api.handleNavigate(navEvent(`${SHELL_URL}read/birds-beasts-and-flowers`));
+  const html = await res.text();
+  assert.equal(fetches, 0);
+  assert.equal(res.status, 200);
+  assert.equal(res.redirected, false);
+  assert.match(html, /index-abc\.js/);
+  assert.doesNotMatch(html, /Retry/);
+  await new Promise((resolve) => setTimeout(resolve, 20));
 });
 
 test("an offline navigation serves the cached shell and does not touch the network", async () => {

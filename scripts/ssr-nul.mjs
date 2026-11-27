@@ -808,10 +808,37 @@ function offlineNow() {
 }
 function handleNavigate(event) {
   // WebKit cancels the navigation if respondWith starts a fetch while the
-  // radio is off, even when a shell is already cached. Answer from the cache.
+  // radio is off, even when a shell is already cached. navigator.onLine
+  // stays true there often enough that the offline check misses it.
+  // Answer from the cache and do not fetch inside this promise.
   if (offlineNow()) return fallbackShell();
   var fresh = false;
   try { fresh = new URL(event.request.url).search.indexOf("__fresh=") !== -1; } catch (err) {}
+  if (!fresh) {
+    return readCachedShellHtml().then(function (prevHtml) {
+      if (!prevHtml) return navigateOnline(event, false);
+      if (event && event.waitUntil) {
+        // After the navigation has its document. A fetch started sooner
+        // cancels the load in WebKit when the radio is already off.
+        event.waitUntil(new Promise(function (resolve) {
+          setTimeout(function () { resolve(refreshShell(prevHtml)); }, 0);
+        }));
+      }
+      return shellResponse(prevHtml);
+    });
+  }
+  return navigateOnline(event, true);
+}
+function refreshShell(prevHtml) {
+  return networkShell(null).then(function (later) {
+    if (!later) return;
+    var changed = shellAssetsDiffer(prevHtml, later);
+    return enqueueCommit(later).then(function () {
+      if (changed) return reloadOpenClients();
+    });
+  }).catch(function () {});
+}
+function navigateOnline(event, fresh) {
   var incoming = networkShell(event);
   var decided;
   if (fresh) {
@@ -965,7 +992,12 @@ self.addEventListener("activate", function (event) {
         return caches.delete(key);
       }));
     }).then(function () {
-      if (self.registration.navigationPreload) return self.registration.navigationPreload.enable();
+      // A preload request is started by the browser before this worker runs.
+      // When that request fails offline, WebKit cancels the navigation even
+      // if we answer from the cache. Leave preload off.
+      if (self.registration.navigationPreload && self.registration.navigationPreload.disable) {
+        return self.registration.navigationPreload.disable();
+      }
     }).then(function () {
       return self.clients.claim();
     }).then(function () {
@@ -1056,6 +1088,11 @@ self.addEventListener("fetch", function (event) {
   if (req.mode !== "navigate") return;
   if (url.origin !== self.location.origin) return;
   if (url.pathname !== "/salon" && url.pathname.indexOf("/salon/") !== 0) return;
+  // Catch a failed preload before respondWith. An unhandled rejection here
+  // is the navigation abort on WebKit.
+  if (event.preloadResponse && event.preloadResponse.then) {
+    event.preloadResponse.then(function () {}, function () {});
+  }
   event.respondWith(holdNavigation(function () { return handleNavigate(event); }));
   if (!offlineNow()) event.waitUntil(fillCatalog());
 });
