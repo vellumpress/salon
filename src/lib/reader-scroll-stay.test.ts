@@ -70,7 +70,11 @@ async function openBook(page: Page, id: string) {
       await page.locator(".breath-now").waitFor({ timeout: 30_000 });
       await page.waitForFunction(() => {
         const frame = document.querySelector(".reader-frame");
-        return frame?.getAttribute("data-face-ready") === "yes" && !document.querySelector(".veil");
+        return (
+          frame?.getAttribute("data-face-ready") === "yes" &&
+          frame.getAttribute("data-bound") === "full" &&
+          !document.querySelector(".veil")
+        );
       });
       return;
     } catch (error) {
