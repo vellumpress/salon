@@ -7,7 +7,8 @@ import { skipWithoutWebKit, webKitRequired } from "./require-webkit.ts";
 /**
  * Scroll, tap, and hold each have to raise today's score.
  * A scroll used to save the place and clear the clock, so the Home chip
- * and the You page stayed put.
+ * and the You page stayed put. On the live bundle that was index-D7MxlJ11,
+ * Botchan moved 125 sentences and the ledger stayed at zero. Tap and hold counted.
  */
 
 const ORIGIN = process.env.READER_ORIGIN ?? "http://127.0.0.1:8080";
