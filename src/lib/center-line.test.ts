@@ -241,9 +241,8 @@ test("the focus paragraph stays full ink and lines step away by line height", ()
   assert.match(live, /overflow-y:\s*auto/);
   assert.match(live, /mask-image:\s*none/);
   assert.doesNotMatch(live, /linear-gradient/);
-  assert.match(fade, /--focus-ink-center:\s*56\.6%/);
-  assert.match(fade, /--focus-ink-top:\s*calc\(var\(--focus-ink-center\) - 4\.5 \* var\(--focus-line\)\)/);
-  assert.match(fade, /--focus-ink-bottom:\s*calc\(var\(--focus-ink-center\) \+ 4\.5 \* var\(--focus-line\)\)/);
+  assert.match(fade, /--focus-ink-top:\s*43%/);
+  assert.match(fade, /--focus-ink-bottom:\s*73%/);
   assert.match(fade, /#000 var\(--focus-ink-top\)/);
   assert.match(fade, /#000 var\(--focus-ink-bottom\)/);
   assert.match(fade, /rgb\(0 0 0 \/ 90%\) calc\(var\(--focus-ink-top\) - 1 \* var\(--focus-line\)\)/);

@@ -182,16 +182,24 @@ async function sampledBands(page: Page) {
       const dpr = bmp.width / window.innerWidth;
       const fade = 28 * dpr;
       const chrome = 72 * dpr;
+      const line = 30 * dpr;
+      const sharpTop = window.innerHeight * 0.43 * dpr;
+      const sharpBottom = window.innerHeight * 0.73 * dpr;
       const bands = ["read", "now", "next"].map((name) => {
         const box = document.querySelector(`[data-focus-band="${name}"]`)?.getBoundingClientRect();
         if (!box) throw new Error(`missing ${name}`);
-        const top = (name === "now" ? box.top * dpr + fade : box.top * dpr + (name === "next" ? fade : 8 * dpr));
+        const top =
+          name === "next"
+            ? Math.max(box.top * dpr, sharpBottom + 2 * line)
+            : name === "now"
+              ? Math.max(box.top * dpr, sharpTop) + fade
+              : box.top * dpr + 8 * dpr;
         const bottom =
           name === "next"
             ? box.bottom * dpr - chrome
             : name === "now"
-              ? box.bottom * dpr - fade
-              : box.bottom * dpr - fade;
+              ? Math.min(box.bottom * dpr, sharpBottom) - fade
+              : Math.min(box.bottom * dpr, sharpTop) - fade;
         return sample(image.data, bmp.width, bmp.height, {
           name,
           top: Math.round(top),

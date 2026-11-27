@@ -412,7 +412,7 @@ test("the fade mask stays fixed across thirty sentences and a chapter", { timeou
         return {
           top: style.getPropertyValue("--focus-ink-top").trim(),
           bottom: style.getPropertyValue("--focus-ink-bottom").trim(),
-          center: style.getPropertyValue("--focus-ink-center").trim(),
+          center: `${style.getPropertyValue("--focus-ink-top").trim()} ${style.getPropertyValue("--focus-ink-bottom").trim()}`,
           mask: style.maskImage,
           inline: fade.getAttribute("style") ?? "",
           boxTop: Math.round(box.top),
@@ -446,7 +446,8 @@ test("the fade mask stays fixed across thirty sentences and a chapter", { timeou
     assert.ok(scenes.size > 1, `scenes ${[...scenes].join(",")}`);
     const first = traced[0];
     assert.equal(first.inline, "");
-    assert.match(first.center, /56\.6%/);
+    assert.match(first.top, /43%/);
+    assert.match(first.bottom, /73%/);
     for (const frame of traced) {
       assert.equal(frame.top, first.top, `ink top moved at sentence ${frame.index}`);
       assert.equal(frame.bottom, first.bottom, `ink bottom moved at sentence ${frame.index}`);
