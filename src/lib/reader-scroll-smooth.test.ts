@@ -47,7 +47,6 @@ async function openSoil(page: Page) {
     sessionStorage.setItem("smooth-booted", "1");
     localStorage.clear();
     localStorage.setItem("salon-move-by", "scroll");
-    localStorage.setItem("salon-text-size", "1.00");
   });
   let last: unknown;
   for (let attempt = 0; attempt < 3; attempt += 1) {
@@ -110,13 +109,19 @@ async function trace(page: Page, mode: "fling" | "cross"): Promise<Trace> {
       const nodes = [...flow.querySelectorAll<HTMLElement>("[data-sentence]")];
       const mid = flow.getBoundingClientRect().top + flow.clientHeight * 0.5;
       let best: HTMLElement | null = null;
+      let closest = Infinity;
       for (const node of nodes) {
         const rect = node.getBoundingClientRect();
-        if (rect.height < 2) continue;
-        if (rect.top <= mid && rect.bottom >= mid) best = node;
+        if (rect.height < 2 || rect.width < 2) continue;
+        const center = rect.top + rect.height / 2;
+        const dist = Math.abs(center - mid);
+        if (dist < closest) {
+          closest = dist;
+          best = node;
+        }
       }
-      const rect = (best ?? nodes[0])?.getBoundingClientRect();
-      return rect ? rect.top : 0;
+      const rect = best?.getBoundingClientRect();
+      return rect ? rect.top + rect.height / 2 : 0;
     };
     const started = performance.now();
     let last = started;
@@ -202,7 +207,6 @@ test(
         await page.addInitScript(() => {
           localStorage.clear();
           localStorage.setItem("salon-move-by", "scroll");
-          localStorage.setItem("salon-text-size", "1.00");
         });
         await page.goto(`${ORIGIN}/salon/read/the-house-of-mirth`, { waitUntil: "domcontentloaded" });
         await page.locator(".veil, .breath-now").first().waitFor({ timeout: 30_000 });

@@ -198,7 +198,6 @@ async function phonePage(browser: Browser, viewport = { width: 390, height: 844 
   await page.addInitScript(() => {
     localStorage.clear();
     localStorage.setItem("salon-move-by", "tap");
-    localStorage.setItem("salon-text-size", "1.00");
   });
   return page;
 }
@@ -864,7 +863,7 @@ async function runPdfMatrix(name: EngineName) {
     assert.ok(tall.scrollTop < 4, `${tag} long pdf breath was not at the start`);
     let place = await readSentence(again);
     const seenWindows = new Set([place.key]);
-    for (let guard = 0; place.index === found && guard < 60; guard += 1) {
+    for (let guard = 0; place.index === found && guard < 140; guard += 1) {
       const next = await planGroups(again, 1, 1);
       if (next === "end" || next === "start") break;
       await tapIndex(again, forwardPoint(await column(again)), next.index, `${tag} pdf window ${guard}`);

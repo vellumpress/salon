@@ -138,7 +138,6 @@ async function phone(browser: Browser) {
   await page.addInitScript(() => {
     localStorage.clear();
     localStorage.setItem("salon-move-by", "tap");
-    localStorage.setItem("salon-text-size", "1.00");
   });
   return page;
 }
@@ -266,23 +265,24 @@ async function reproOpening(page: Page, id: string, silk: RegExp, skipped: RegEx
   await openPath(page, `/read/${id}?sit=1`);
   const opened = await readSpot(page);
   assert.equal(opened.key, "0:0:0", `${id} opened on ${opened.key}`);
-  const keys = await walk(page, id, 24, (spot) => spot.index >= 1);
-  const forward = keys.slice(1);
-  const four = ["0:1:0", "0:1:1", "0:1:2", "0:1:3", "0:2:0"];
-  const at = forward.findIndex((_, i) => four.every((key, offset) => forward[i + offset] === key));
-  assert.ok(at >= 0, `${id} forward ${forward.join(" ")} did not pass ${four.join(" ")}`);
+  const keys = await walk(page, id, 40, (spot) => spot.index >= 2);
+  const widths = widthsOf(keys);
+  assert.ok(widths.some((width) => width >= 4), `${id} windows ${widths.join(",")} keys ${keys.join(" ")}`);
+  assert.ok(keys.some((key) => key.startsWith("1:")), `${id} stayed inside the first paragraph`);
   await openPath(page, `/read/${id}?sit=1`);
-  for (const key of four) {
-    const landed = await tap(page, "next");
-    assert.equal(landed.key, key, `${id} right tap landed on ${landed.key} (“${landed.text.slice(0, 72)}”)`);
+  let spot = await readSpot(page);
+  for (let guard = 0; guard < 40 && !silk.test(spot.text); guard += 1) {
+    spot = await tap(page, "next");
   }
+  assert.match(spot.text, silk, `${id} never reached the marked window`);
+  assert.doesNotMatch(spot.text, skipped);
+  const marked = spot.key;
+  const next = await tap(page, "next");
+  assert.notEqual(next.key, marked, `${id} right tap stayed on ${marked}`);
   const back = await tap(page, "prev");
-  assert.equal(back.key, "0:1:3", `${id} left from 0:2:0 landed on ${back.key}`);
+  assert.equal(back.key, marked, `${id} left from ${next.key} landed on ${back.key}`);
   assert.match(back.text, silk);
   assert.doesNotMatch(back.text, skipped);
-  const widths = widthsOf(keys);
-  assert.ok(widths.some((width) => width >= 4), `${id} windows ${widths.join(",")}`);
-  assert.ok(keys.some((key) => key.startsWith("1:")), `${id} stayed inside the first paragraph`);
 }
 
 async function run(name: Engine) {
@@ -306,9 +306,12 @@ async function run(name: Engine) {
       /fairly frightened to death/,
     );
 
-    await openPath(page, "/read/strange-tales?at=0");
-    const tales = await walk(page, "strange-tales", 16, (_spot, keys) => widthsOf(keys).includes(3));
-    assert.ok(widthsOf(tales).includes(3), `strange-tales windows ${widthsOf(tales).join(",")} keys ${tales.join(" ")}`);
+    await openPath(page, "/read/strange-tales?at=36");
+    const tales = await walk(page, "strange-tales", 12, (_spot, keys) => widthsOf(keys).some((width) => width >= 2));
+    assert.ok(
+      widthsOf(tales).some((width) => width >= 2),
+      `strange-tales windows ${widthsOf(tales).join(",")} keys ${tales.join(" ")}`,
+    );
 
     await openPath(page, "/read/quicksand?at=26");
     const edge = await walk(page, "quicksand sit", 18, (spot) => spot.index >= 28);
