@@ -2249,7 +2249,8 @@ export function TbrReader({
         // The painted page stays as it is. Re-centering it here jumped the line.
         userScrolledRef.current = true;
         markUserPlace(next, 0, 0);
-        useTbr.getState().setBreath(work.id, next, stampAt(work, next));
+        // A forward scroll is reading. setBreath would clear the clock.
+        useTbr.getState().noteScrolledBreath(work.id, next, stampAt(work, next));
         useTbr.getState().setSentenceAt(work.id, next, 0, 0);
       }, wait);
     };
