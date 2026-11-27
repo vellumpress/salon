@@ -29,7 +29,7 @@ function memoryStore(initial?: Record<string, string>) {
 
 test("text size defaults to the current size and persists like the other reader settings", () => {
   const fresh = memoryStore();
-  assert.equal(TEXT_SIZE_DEFAULT, 1);
+  assert.equal(TEXT_SIZE_DEFAULT, 0.9);
   assert.ok(TEXT_SIZE_MIN < 1);
   assert.ok(TEXT_SIZE_MAX > 1.26);
   assert.equal(TEXT_SIZE_STEP, 0.01);
@@ -43,6 +43,8 @@ test("text size defaults to the current size and persists like the other reader 
   assert.equal(readTextSize(memoryStore({ [TEXT_SIZE_KEY]: "-1" })), TEXT_SIZE_DEFAULT);
   assert.equal(readTextSize(memoryStore({ [TEXT_SIZE_KEY]: "9" })), TEXT_SIZE_DEFAULT);
   assert.equal(readTextSize(null), TEXT_SIZE_DEFAULT);
+  assert.equal(readTextSize(memoryStore({ [TEXT_SIZE_KEY]: "1.00" })), 1);
+  assert.equal(readTextSize(memoryStore({ [TEXT_SIZE_KEY]: "1.20" })), 1.2);
 
   writeTextSize(TEXT_SIZE_MIN, fresh);
   assert.equal(fresh.data[TEXT_SIZE_KEY], "0.72");
@@ -65,7 +67,7 @@ test("text size changes the breath size and leaves the three bands fixed", () =>
   const reader = readFileSync(new URL("../components/chamber-reader.tsx", import.meta.url), "utf8");
   const root = css.match(/@theme\s*\{[^}]+\}/)?.[0] ?? "";
   assert.match(root, /--text-size-base:\s*clamp\(1\.2rem,\s*0\.9rem \+ 1\.5vw,\s*1\.6rem\)/);
-  assert.match(root, /--text-size-scale:\s*1;/);
+  assert.match(root, /--text-size-scale:\s*0\.9;/);
   assert.match(root, /--text-breath:\s*calc\(var\(--text-size-scale\) \* var\(--text-size-base\)\)/);
   assert.doesNotMatch(css, /data-text-size=/);
   assert.doesNotMatch(css, /text-size-step/);

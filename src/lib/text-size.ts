@@ -1,14 +1,13 @@
 /**
- * Reader text size. One continuous scale, and 1 is the size the page
- * already used. Stored beside Daylight colors and Center the line.
- * Missing or unreadable values stay on that size.
+ * Reader text size. One continuous scale. 0.90 is the size for a reader
+ * who has not chosen. A saved value is left as it is.
  */
 
 export const TEXT_SIZE_KEY = "salon-text-size";
 export const TEXT_SIZE_MIN = 0.72;
 export const TEXT_SIZE_MAX = 1.85;
 export const TEXT_SIZE_STEP = 0.01;
-export const TEXT_SIZE_DEFAULT = 1;
+export const TEXT_SIZE_DEFAULT = 0.9;
 
 /** The five steps this control used before it became a slider. */
 const LEGACY_STEP = [0.84, 0.92, 1, 1.12, 1.26] as const;
