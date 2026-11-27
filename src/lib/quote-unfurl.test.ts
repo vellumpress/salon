@@ -30,6 +30,14 @@ test("unfurl HTML carries the sentence in title, description, and image", () => 
   assert.match(html ?? "", /property="og:description" content="The envelope is still unopened\."/);
   assert.match(html ?? "", /property="og:image" content="https:\/\/example\.test\/card\.png"/);
   assert.match(html ?? "", /twitter:card" content="summary_large_image"/);
+  assert.match(
+    html ?? "",
+    /http-equiv="refresh" content="0;url=https:\/\/vellumpress\.github\.io\/salon\/read\/passing\?at=2"/,
+  );
+  assert.match(
+    html ?? "",
+    /location\.replace\("https:\/\/vellumpress\.github\.io\/salon\/read\/passing\?at=2"\)/,
+  );
   assert.match(html ?? "", /font-family:"Outfit"/);
   assert.match(html ?? "", /font-family:"Cormorant Garamond"/);
   assert.match(html ?? "", /data:font\/woff2;base64,/);

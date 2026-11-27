@@ -82,10 +82,11 @@ function localPreviewHost(hostname: string) {
 }
 
 /**
- * Link a person opens. On a local server this is `/og/<token>`, which returns
- * the sentence in the HTML. On Pages it is the sitting at `/s/<token>`.
- * The shared Supabase domain serves HTML as text/plain, so the function stays
- * the picture (`quoteImageUrl`) and not the address in the message.
+ * Link a person sends. On a local server this is `/og/<token>`, which returns
+ * the sentence in the HTML. Everywhere else it is the share-card function,
+ * which answers text/html with the title, the sentence, and the picture in
+ * the first bytes. A browser follows that page straight into the sitting.
+ * Old `/s/<token>` links stay on this site.
  */
 export function quoteShareUrl(token: string): string {
   const override = unfurlOverride();
@@ -96,10 +97,10 @@ export function quoteShareUrl(token: string): string {
   if (typeof window !== "undefined" && localPreviewHost(window.location.hostname)) {
     return publicUrl(`/og/${encodeURIComponent(token)}`);
   }
-  return publicUrl(quoteLandingPath(token));
+  return `${SHARE_CARD_FUNCTION}?t=${encodeURIComponent(token)}`;
 }
 
-/** PNG the preview points at. The function answers image/png; it does not answer HTML. */
+/** PNG the preview points at. The same function answers image/png when img=1. */
 export function quoteImageUrl(token: string): string {
   const page = quoteShareUrl(token);
   if (page.includes("/functions/v1/share-card")) {

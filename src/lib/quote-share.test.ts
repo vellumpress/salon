@@ -4,6 +4,7 @@ import {
   decodeQuoteCard,
   encodeQuoteCard,
   quoteImageUrl,
+  quoteLandingPath,
   quoteShareUrl,
   SHARE_CARD_FUNCTION,
 } from "./quote-share.ts";
@@ -45,7 +46,7 @@ test("local preview links unfurl on this origin", () => {
   }
 });
 
-test("Pages links open the sitting and point the picture at the function", () => {
+test("Pages links are the share-card page, and old /s/ links stay", () => {
   const prev = (globalThis as { window?: unknown }).window;
   (globalThis as { window: { location: { origin: string; hostname: string } } }).window = {
     location: { origin: "https://vellumpress.github.io", hostname: "vellumpress.github.io" },
@@ -59,12 +60,13 @@ test("Pages links open the sitting and point the picture at the function", () =>
     });
     const url = quoteShareUrl(token);
     assert.equal(SHARE_CARD_FUNCTION, "https://thuxsshowkxacbfjdaks.supabase.co/functions/v1/share-card");
-    assert.equal(url, `https://vellumpress.github.io/salon/s/${encodeURIComponent(token)}`);
+    assert.equal(url, `${SHARE_CARD_FUNCTION}?t=${encodeURIComponent(token)}`);
     assert.equal(
       quoteImageUrl(token),
       `${SHARE_CARD_FUNCTION}?t=${encodeURIComponent(token)}&img=1`,
     );
-    assert.doesNotMatch(url, /supabase\.co/);
+    assert.equal(quoteLandingPath(token), `/s/${encodeURIComponent(token)}`);
+    assert.doesNotMatch(url, /img=1/);
   } finally {
     if (prev === undefined) delete (globalThis as { window?: unknown }).window;
     else (globalThis as { window: unknown }).window = prev;
